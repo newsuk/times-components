@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -63,10 +63,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/caption": "2.0.2",
-    "@times-components/image": "3.0.2",
+    "@times-components/caption": "2.0.3",
+    "@times-components/image": "3.0.3",
     "@times-components/responsive-styles": "2.0.2",
-    "@times-components/styleguide": "2.0.2",
+    "@times-components/styleguide": "2.1.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

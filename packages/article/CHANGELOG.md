@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/article@3.0.3...@times-components/article@3.1.0) (2018-07-23)
+
+
+### Features
+
+* article key facts ([#1122](https://github.com/newsuk/times-components/issues/1122)) ([76035fa](https://github.com/newsuk/times-components/commit/76035fa))
+
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/newsuk/times-components/compare/@times-components/article@3.0.2...@times-components/article@3.0.3) (2018-07-23)
 
