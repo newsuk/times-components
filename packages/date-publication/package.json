@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.17.2",
+  "version": "0.17.3",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -57,7 +57,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "2.0.2",
+    "@times-components/styleguide": "2.1.0",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-device-info": "0.13.0"

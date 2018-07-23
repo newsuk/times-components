@@ -23,7 +23,18 @@ exports[`multiple paragraphs with ads 1`] = `
     isLoading={false}
     section=""
     slotName="inline-ad"
-    style={85}
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": "30px",
+        "marginTop": "30px",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
+      }
+    }
   />
   <p>
     This is the text for paragraph two
