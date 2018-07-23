@@ -5,7 +5,7 @@ import { renderTree } from "@times-components/markup";
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
 import KeyFactsWrapper from "./key-facts-wrapper";
-import propTypes from "./key-facts-prop-types";
+import { defaultProps, propTypes } from "./key-facts-prop-types";
 import styles from "./styles";
 
 const KeyFacts = ({ ast, onLinkPress }) => {
@@ -68,5 +68,6 @@ const KeyFacts = ({ ast, onLinkPress }) => {
 };
 
 KeyFacts.propTypes = propTypes;
+KeyFacts.defaultProps = defaultProps;
 
 export default KeyFacts;

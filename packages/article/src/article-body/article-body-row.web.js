@@ -101,7 +101,7 @@ const ArticleRow = ({ content: { data, index } }) =>
     },
     keyFacts(key, attributes, renderedChildren, indx, node) {
       return {
-        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        element: <KeyFacts ast={node} key={key} />,
         shouldRenderChildren: false
       };
     },
