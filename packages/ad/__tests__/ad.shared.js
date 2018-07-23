@@ -28,7 +28,7 @@ export default () => {
     )
   );
 
-  it("should render an advert", () => {
+  it("advert", () => {
     const wrapper = shallow(
       <AdComposer adConfig={adConfig}>
         <Fragment>
@@ -37,6 +37,6 @@ export default () => {
       </AdComposer>
     );
 
-    expect(wrapper).toMatchSnapshot("1. advert");
+    expect(wrapper).toMatchSnapshot();
   });
 };

@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "react-native";
 import React from "react";
 import { Article, AuthorProfile, Topic } from "./src/pages";
 

@@ -5,11 +5,9 @@ import sharedAdInitUtils from "../utils/ad-init-utils";
 import sharedGenerateConfig from "../utils/generate-config.shared";
 import sharedPrebidConfig from "../utils/prebid-config";
 
-describe("android", () => {
-  sharedAdInit();
-  sharedAdInitGPT();
-  sharedAdInitPrebid();
-  sharedAdInitUtils();
-  sharedGenerateConfig();
-  sharedPrebidConfig();
-});
+sharedAdInit();
+sharedAdInitGPT();
+sharedAdInitPrebid();
+sharedAdInitUtils();
+sharedGenerateConfig();
+sharedPrebidConfig();

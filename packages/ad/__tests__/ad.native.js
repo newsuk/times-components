@@ -8,6 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
 
@@ -25,45 +26,64 @@ export default () => {
   const articleContextURL =
     "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
-  it("one ad slot", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Ad contextUrl={articleContextURL} section="news" slotName="header" />
-      </AdComposer>
-    );
+  const tests = [
+    {
+      name: "one ad slot",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Ad
+              contextUrl={articleContextURL}
+              section="news"
+              slotName="header"
+            />
+          </AdComposer>
+        );
 
-    expect(testInstance).toMatchSnapshot("1. Advert");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "two ad slots",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Fragment>
+              <Ad
+                contextUrl={articleContextURL}
+                section="news"
+                slotName="header"
+              />
+              <Ad
+                contextUrl={articleContextURL}
+                section="news"
+                slotName="intervention"
+              />
+            </Fragment>
+          </AdComposer>
+        );
 
-  it("two ad slots", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad contextUrl={articleContextURL} section="news" slotName="header" />
-          <Ad
-            contextUrl={articleContextURL}
-            section="news"
-            slotName="intervention"
-          />
-        </Fragment>
-      </AdComposer>
-    );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "ad placeholder when isLoading prop is true",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Ad
+              contextUrl={articleContextURL}
+              isLoading
+              section="news"
+              slotName="header"
+            />
+          </AdComposer>
+        );
 
-    expect(testInstance).toMatchSnapshot("2. Two adverts");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("ad placeholder when isLoading prop is true", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Ad
-          contextUrl={articleContextURL}
-          isLoading
-          section="news"
-          slotName="header"
-        />
-      </AdComposer>
-    );
-
-    expect(testInstance).toMatchSnapshot("3. Advert loading state placeholder");
-  });
+  iterator(tests);
 };

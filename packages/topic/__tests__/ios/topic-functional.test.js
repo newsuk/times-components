@@ -1,5 +1,3 @@
-import sharedFunctional from "../topic-functional";
+import shared from "../topic-functional";
 
-describe("Topic functional tests on ios", () => {
-  sharedFunctional();
-});
+shared();

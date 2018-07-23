@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. multiple adverts 1`] = `
+exports[`1. multiple ad slots 1`] = `
 Array [
   <View
     className="IS4"
@@ -39,7 +39,7 @@ Array [
 ]
 `;
 
-exports[`2. loading state advert shows placeholder only 1`] = `
+exports[`2. placeholder when isloading 1`] = `
 <View
   className="IS2"
 >
@@ -51,4 +51,4 @@ exports[`2. loading state advert shows placeholder only 1`] = `
 </View>
 `;
 
-exports[`3. should not show when loading scripts errored 1`] = `null`;
+exports[`3. return null if there is an error in the loading of scripts 1`] = `null`;

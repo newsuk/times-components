@@ -7,6 +7,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import Gradient from "../src/gradient";
 
 export default () => {
@@ -19,39 +20,56 @@ export default () => {
     )
   );
 
-  it("renders with no angle", () => {
-    const testInstance = TestRenderer.create(<Gradient />);
+  const tests = [
+    {
+      name: "gradient with no angle",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient />);
 
-    expect(testInstance).toMatchSnapshot("1. renders with no angle");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with an angle (-45)",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient degrees={-45} />);
 
-  it("renders with an angle (-45)", () => {
-    const testInstance = TestRenderer.create(<Gradient degrees={-45} />);
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with an angle (45)",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient degrees={45} />);
 
-    expect(testInstance).toMatchSnapshot("2. renders with an angle (-45)");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with an angle (90)",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient degrees={90} />);
 
-  it("renders with an angle (45)", () => {
-    const testInstance = TestRenderer.create(<Gradient degrees={45} />);
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with an angle (180)",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient degrees={180} />);
 
-    expect(testInstance).toMatchSnapshot("3. renders with an angle (45)");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with an angle (270)",
+      test: () => {
+        const testInstance = TestRenderer.create(<Gradient degrees={270} />);
 
-  it("renders with an angle (90)", () => {
-    const testInstance = TestRenderer.create(<Gradient degrees={90} />);
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
 
-    expect(testInstance).toMatchSnapshot("4. renders with an angle (90)");
-  });
-
-  it("renders with an angle (180)", () => {
-    const testInstance = TestRenderer.create(<Gradient degrees={180} />);
-
-    expect(testInstance).toMatchSnapshot("5. renders with an angle (180)");
-  });
-
-  it("renders with an angle (270)", () => {
-    const testInstance = TestRenderer.create(<Gradient degrees={270} />);
-
-    expect(testInstance).toMatchSnapshot("6. renders with an angle (270)");
-  });
+  iterator(tests);
 };

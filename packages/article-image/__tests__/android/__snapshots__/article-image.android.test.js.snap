@@ -4,7 +4,7 @@ exports[`1. does not render an image if display is not received 1`] = `<View />`
 
 exports[`2. does not render an image if ratio is not received 1`] = `<View />`;
 
-exports[`3. renders an image with no caption 1`] = `
+exports[`3. image with no caption 1`] = `
 <View>
   <View>
     <ModalImage
@@ -15,7 +15,7 @@ exports[`3. renders an image with no caption 1`] = `
 </View>
 `;
 
-exports[`4. renders a caption if received 1`] = `
+exports[`4. image with caption 1`] = `
 <View>
   <View>
     <View>
@@ -29,7 +29,7 @@ exports[`4. renders a caption if received 1`] = `
 </View>
 `;
 
-exports[`5. renders a credit if received 1`] = `
+exports[`5. image with credit 1`] = `
 <View>
   <View>
     <View>

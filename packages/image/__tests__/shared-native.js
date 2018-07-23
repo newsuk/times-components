@@ -1,85 +1,112 @@
-/* global context */
 import React from "react";
 import { shallow } from "enzyme";
+import { iterator } from "@times-components/test-utils";
 import Image, { ModalImage } from "../src";
 
 export default () => {
-  context("Native only", () => {
-    const props = {
-      aspectRatio: 3 / 2,
-      uri: "http://example.com/image.jpg"
-    };
+  const props = {
+    aspectRatio: 3 / 2,
+    uri: "http://example.com/image.jpg"
+  };
 
-    it("should return image url with a correctly formatted query string", () => {
-      const wrapper = shallow(<Image {...props} />);
-      expect(wrapper.find("ImageBackground").props().source.uri).toEqual(
-        "http://example.com/image.jpg?resize=1440"
-      );
-    });
+  const tests = [
+    {
+      name: "prepend https schema",
+      test: () => {
+        const wrapper = shallow(
+          <Image {...props} uri="//example.com/image.jpg" />
+        );
 
-    it("should return a data image url without a query string", () => {
-      const dataUri =
-        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-      const wrapper = shallow(<Image {...props} uri={dataUri} />);
-      expect(wrapper.find("ImageBackground").props().source.uri).toEqual(
-        dataUri
-      );
-    });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "image url with a correctly formatted query string",
+      test: () => {
+        const wrapper = shallow(<Image {...props} />);
 
-    it("should handle onPress event on the link", () => {
-      const wrapper = shallow(<ModalImage {...props} />);
-      const imageLink = wrapper
-        .dive()
-        .find("Link")
-        .at(1);
+        expect(wrapper.find("ImageBackground").props().source.uri).toEqual(
+          "http://example.com/image.jpg?resize=1440"
+        );
+      }
+    },
+    {
+      name: "data image url without a query string",
+      test: () => {
+        const dataUri =
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+        const wrapper = shallow(<Image {...props} uri={dataUri} />);
 
-      imageLink.simulate("press");
-      wrapper.update();
+        expect(wrapper.find("ImageBackground").props().source.uri).toEqual(
+          dataUri
+        );
+      }
+    },
+    {
+      name: "handle onPress event on the link",
+      test: () => {
+        const wrapper = shallow(<ModalImage {...props} />);
+        const imageLink = wrapper
+          .dive()
+          .find("Link")
+          .at(1);
 
-      const modal = wrapper.childAt(0);
-      expect(modal.props().visible).toBe(true);
-    });
+        imageLink.simulate("press");
+        wrapper.update();
 
-    it("should handle onPress event on the close button", () => {
-      const wrapper = shallow(<ModalImage {...props} />);
-      wrapper.setState({ showModal: true });
+        const modal = wrapper.childAt(0);
 
-      const closeButton = wrapper
-        .dive()
-        .find("Link")
-        .at(0);
-      closeButton.simulate("press");
-      wrapper.update();
+        expect(modal.props().visible).toBe(true);
+      }
+    },
+    {
+      name: "handle onPress event on the close button",
+      test: () => {
+        const wrapper = shallow(<ModalImage {...props} />);
+        wrapper.setState({ showModal: true });
 
-      const modal = wrapper.childAt(0);
-      expect(modal.props().visible).toBe(false);
-    });
+        const closeButton = wrapper
+          .dive()
+          .find("Link")
+          .at(0);
+        closeButton.simulate("press");
+        wrapper.update();
 
-    it("should show as not loaded when first created", () => {
-      const wrapper = shallow(<Image {...props} />);
-      expect(wrapper.state("isLoaded")).toEqual(false);
-    });
+        const modal = wrapper.childAt(0);
 
-    it("should handle onload event", () => {
-      const wrapper = shallow(<Image {...props} />);
-      wrapper.instance().handleLoad();
-      expect(wrapper.state("isLoaded")).toEqual(true);
-    });
+        expect(modal.props().visible).toBe(false);
+      }
+    },
+    {
+      name: "show as not loaded when first created",
+      test: () => {
+        const wrapper = shallow(<Image {...props} />);
 
-    it("should handle handlePreviewLoad event if it exists", () => {
-      const wrapper = shallow(<Image {...props} />);
-      const { handlePreviewLoad } = wrapper.instance();
-      if (handlePreviewLoad) {
-        handlePreviewLoad();
+        expect(wrapper.state("isLoaded")).toEqual(false);
+      }
+    },
+    {
+      name: "handle onload event",
+      test: () => {
+        const wrapper = shallow(<Image {...props} />);
+        wrapper.instance().handleLoad();
+
         expect(wrapper.state("isLoaded")).toEqual(true);
       }
-    });
+    },
+    {
+      name: "handle handlePreviewLoad event if it exists",
+      test: () => {
+        const wrapper = shallow(<Image {...props} />);
+        const { handlePreviewLoad } = wrapper.instance();
+        if (handlePreviewLoad) {
+          handlePreviewLoad();
 
-    it("should prepend https schema", () => {
-      const wrapper = shallow(
-        <Image {...props} uri="//example.com/image.jpg" />
-      );
-      expect(wrapper).toMatchSnapshot("5. Renders with prepended https schema");
-    });
-  });
+          expect(wrapper.state("isLoaded")).toEqual(true);
+        }
+      }
+    }
+  ];
+
+  iterator(tests);
 };

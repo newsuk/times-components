@@ -41,27 +41,25 @@ const styles = [
   "zIndex"
 ];
 
-describe("web", () => {
-  addSerializers(
-    expect,
-    enzymeTreeSerializer(),
-    compose(
-      stylePrinter,
-      flattenStyleTransform,
-      hoistStyleTransform,
-      minimalWebTransform,
-      replaceTransform({
-        Watermark: propsNoChildren
-      }),
-      rnwTransform(styles)
-    )
+addSerializers(
+  expect,
+  enzymeTreeSerializer(),
+  compose(
+    stylePrinter,
+    flattenStyleTransform,
+    hoistStyleTransform,
+    minimalWebTransform,
+    replaceTransform({
+      Watermark: propsNoChildren
+    }),
+    rnwTransform(styles)
+  )
+);
+
+it("advert placeholder", () => {
+  const wrapper = mount(
+    <AdPlaceholder height={300} style={style} width={970} />
   );
 
-  it("should render an advert placeholder", () => {
-    const wrapper = mount(
-      <AdPlaceholder height={300} style={style} width={970} />
-    );
-
-    expect(wrapper).toMatchSnapshot("1. Advert placeholder");
-  });
+  expect(wrapper).toMatchSnapshot();
 });

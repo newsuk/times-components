@@ -1,5 +1,3 @@
-import sharedStyling from "../topic-head-styling";
+import shared from "../topic-head-styling";
 
-describe("TopicHead styling tests on web", () => {
-  sharedStyling();
-});
+shared();

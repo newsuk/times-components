@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render the default layout 1`] = `
+exports[`1. card default state 1`] = `
 <View
   style={
     Object {
@@ -50,7 +50,7 @@ exports[`1. should render the default layout 1`] = `
 </View>
 `;
 
-exports[`2. should render with reversed layout 1`] = `
+exports[`2. card with reversed state 1`] = `
 <View
   style={
     Object {
@@ -101,7 +101,7 @@ exports[`2. should render with reversed layout 1`] = `
 </View>
 `;
 
-exports[`3. should render a loading state 1`] = `
+exports[`3. card loading state 1`] = `
 <View
   style={
     Object {
@@ -177,7 +177,7 @@ exports[`3. should render a loading state 1`] = `
 </View>
 `;
 
-exports[`4. should render a reversed loading component 1`] = `
+exports[`4. card reversed loading state 1`] = `
 <View
   style={
     Object {

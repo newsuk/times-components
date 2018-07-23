@@ -1,10 +1,11 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import {
   fixtureGenerator,
   MockedProvider
 } from "@times-components/provider-test-tools";
+import { iterator } from "@times-components/test-utils";
 import { delay } from "@times-components/utils";
 import Topic from "../src/topic";
 
@@ -53,56 +54,65 @@ export default () => {
     mockDate.reset();
   });
 
-  it("should render correctly", async () => {
-    const tree = renderer.create(
-      <MockedProvider mocks={mockArticles}>
-        <Topic {...props} page={1} pageSize={pageSize} />
-      </MockedProvider>
-    );
+  const tests = [
+    {
+      name: "topic page",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <MockedProvider mocks={mockArticles}>
+            <Topic {...props} page={1} pageSize={pageSize} />
+          </MockedProvider>
+        );
 
-    await delay(1500);
+        await delay(1500);
 
-    expect(tree).toMatchSnapshot("1. Render a Topic page");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "loading state",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <MockedProvider isLoading mocks={mockArticles}>
+            <Topic {...props} isLoading topic={{}} />
+          </MockedProvider>
+        );
 
-  it("should render the loading state", () => {
-    const tree = renderer.create(
-      <MockedProvider isLoading mocks={mockArticles}>
-        <Topic {...props} isLoading topic={{}} />
-      </MockedProvider>
-    );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "error state with an invalid Topic Query",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Topic {...props} error={{}} refetch={() => null} />
+        );
 
-    expect(tree).toMatchSnapshot("2. Render a topics page loading state");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "send analytics when rendering a topic page",
+      test: () => {
+        const reporter = jest.fn();
 
-  it("should render an error state with an invalid Topic Query", () => {
-    const tree = renderer.create(
-      <Topic {...props} error={{}} refetch={() => null} />
-    );
+        TestRenderer.create(
+          <MockedProvider mocks={mockArticles}>
+            <Topic
+              {...props}
+              analyticsStream={reporter}
+              page={1}
+              pageSize={pageSize}
+            />
+          </MockedProvider>
+        );
 
-    expect(tree).toMatchSnapshot(
-      "3. Render a topics page error state with an invalid Topic Query"
-    );
-  });
+        const call = reporter.mock.calls[0][0];
 
-  it("should send analytics when rendering a topic page", () => {
-    const reporter = jest.fn();
+        expect(call).toMatchSnapshot();
+      }
+    }
+  ];
 
-    renderer.create(
-      <MockedProvider mocks={mockArticles}>
-        <Topic
-          {...props}
-          analyticsStream={reporter}
-          page={1}
-          pageSize={pageSize}
-        />
-      </MockedProvider>
-    );
-
-    const call = reporter.mock.calls[0][0];
-
-    expect(call).toMatchSnapshot(
-      "4. Send analytics when rendering a topics page (with null event time)"
-    );
-  });
+  iterator(tests);
 };

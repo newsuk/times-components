@@ -1,6 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import {
   ListContentContainer,
   ListItemWrapper,
@@ -15,39 +14,47 @@ import {
 describe("ArticleList responsive tests on web", () => {
   it("should render ListContentContainer correctly", () => {
     expect(
-      renderer.create(<ListContentContainer />).toJSON()
+      TestRenderer.create(<ListContentContainer />).toJSON()
     ).toMatchSnapshot();
   });
 
   it("should render ListItemWrapper correctly", () => {
-    expect(renderer.create(<ListItemWrapper />).toJSON()).toMatchSnapshot();
+    expect(TestRenderer.create(<ListItemWrapper />).toJSON()).toMatchSnapshot();
   });
 
   it("should render ListItemLongText correctly", () => {
-    expect(renderer.create(<ListItemLongText />).toJSON()).toMatchSnapshot();
+    expect(
+      TestRenderer.create(<ListItemLongText />).toJSON()
+    ).toMatchSnapshot();
   });
 
   it("should render ListItemShortText correctly", () => {
-    expect(renderer.create(<ListItemShortText />).toJSON()).toMatchSnapshot();
+    expect(
+      TestRenderer.create(<ListItemShortText />).toJSON()
+    ).toMatchSnapshot();
   });
 
   it("should render ListItemSeparator correctly", () => {
-    expect(renderer.create(<ListItemSeparator />).toJSON()).toMatchSnapshot();
+    expect(
+      TestRenderer.create(<ListItemSeparator />).toJSON()
+    ).toMatchSnapshot();
   });
 
   it("should render PageErrorContainer correctly", () => {
-    expect(renderer.create(<PageErrorContainer />).toJSON()).toMatchSnapshot();
+    expect(
+      TestRenderer.create(<PageErrorContainer />).toJSON()
+    ).toMatchSnapshot();
   });
 
   it("should render PageErrorImageContainer correctly", () => {
     expect(
-      renderer.create(<PageErrorImageContainer />).toJSON()
+      TestRenderer.create(<PageErrorImageContainer />).toJSON()
     ).toMatchSnapshot();
   });
 
   it("should render PageErrorContentContainer correctly", () => {
     expect(
-      renderer.create(<PageErrorContentContainer />).toJSON()
+      TestRenderer.create(<PageErrorContentContainer />).toJSON()
     ).toMatchSnapshot();
   });
 });

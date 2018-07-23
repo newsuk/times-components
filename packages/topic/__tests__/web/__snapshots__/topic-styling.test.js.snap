@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic styling tests on web should render styling correctly 1`] = `
+exports[`should render styling correctly 1`] = `
 .c0 {
   width: 100%;
   padding-left: 10px;

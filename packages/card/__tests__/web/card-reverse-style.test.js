@@ -13,20 +13,18 @@ const props = {
   showImage: true
 };
 
-describe("web", () => {
-  jest.useFakeTimers();
+jest.useFakeTimers();
 
-  serializers();
+serializers();
 
-  it("should render with reversed layout", () => {
-    const output = mount(
-      <Card {...props} isReversed>
-        <Text>A card in reverse</Text>
-      </Card>
-    );
+it("card with reversed layout", () => {
+  const wrapper = mount(
+    <Card {...props} isReversed>
+      <Text>A card in reverse</Text>
+    </Card>
+  );
 
-    jest.runTimersToTime();
+  jest.runTimersToTime();
 
-    expect(output).toMatchSnapshot("1. should render with reversed layout");
-  });
+  expect(wrapper).toMatchSnapshot();
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopicHead functional tests on android should render correctly 1`] = `
+exports[`should render correctly 1`] = `
 <View>
   <View>
     <Text
@@ -13,9 +13,9 @@ exports[`TopicHead functional tests on android should render correctly 1`] = `
 </View>
 `;
 
-exports[`TopicHead functional tests on android should render correctly when loading 1`] = `<View />`;
+exports[`should render correctly when loading 1`] = `<View />`;
 
-exports[`TopicHead functional tests on android should render correctly with a description 1`] = `
+exports[`should render correctly with a description 1`] = `
 <View>
   <View>
     <Text

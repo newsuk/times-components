@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render an accessible button 1`] = `
+exports[`accessible button 1`] = `
 <TouchableHighlight
   accessibilityComponentType="button"
   accessibilityLabel="Test button"

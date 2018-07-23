@@ -14,6 +14,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import adInit from "../../src/utils/ad-init";
 import adConfig from "../../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../../src/ad";
@@ -29,80 +30,85 @@ const props = {
   section: "news"
 };
 
-describe("web", () => {
-  addSerializers(
-    expect,
-    enzymeTreeSerializer(),
-    compose(
-      stylePrinter,
-      flattenStyleTransform,
-      hoistStyleTransform,
-      minimalWebTransform,
-      minimaliseTransform((value, key) => key === "adConfig" || key === "data"),
-      replaceTransform({
-        Broadcast: justChildren,
-        Subscriber: justChildren,
-        Watermark: propsNoChildren
-      }),
-      rnwTransform()
-    )
-  );
+addSerializers(
+  expect,
+  enzymeTreeSerializer(),
+  compose(
+    stylePrinter,
+    flattenStyleTransform,
+    hoistStyleTransform,
+    minimalWebTransform,
+    minimaliseTransform((value, key) => key === "adConfig" || key === "data"),
+    replaceTransform({
+      Broadcast: justChildren,
+      Subscriber: justChildren,
+      Watermark: propsNoChildren
+    }),
+    rnwTransform()
+  )
+);
 
-  it("should render multiple ad slots", () => {
-    const wrapper = mount(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} slotName="header" />
-          <Ad {...props} slotName="pixel" />
-          <Ad {...props} slotName="intervention" />
-        </Fragment>
-      </AdComposer>
-    );
+const tests = [
+  {
+    name: "multiple ad slots",
+    test: () => {
+      const wrapper = mount(
+        <AdComposer adConfig={adConfig}>
+          <Fragment>
+            <Ad {...props} slotName="header" />
+            <Ad {...props} slotName="pixel" />
+            <Ad {...props} slotName="intervention" />
+          </Fragment>
+        </AdComposer>
+      );
 
-    wrapper.find("Ad").forEach(node => {
-      node.instance().setAdReady();
-    });
+      wrapper.find("Ad").forEach(node => {
+        node.instance().setAdReady();
+      });
 
-    wrapper.update();
+      wrapper.update();
 
-    expect(wrapper).toMatchSnapshot("1. multiple adverts");
-  });
+      expect(wrapper).toMatchSnapshot();
+    }
+  },
+  {
+    name: "placeholder when isLoading",
+    test: () => {
+      const wrapper = mount(
+        <AdComposer adConfig={adConfig}>
+          <Fragment>
+            <Ad {...props} isLoading slotName="header" />
+          </Fragment>
+        </AdComposer>
+      );
 
-  it("should render only the placeholder when isLoading", () => {
-    const wrapper = mount(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} isLoading slotName="header" />
-        </Fragment>
-      </AdComposer>
-    );
+      const AdComponent = wrapper.find("Ad");
 
-    const AdComponent = wrapper.find("Ad");
+      expect(AdComponent).toMatchSnapshot();
+    }
+  },
+  {
+    name: "nothing if there is an error in the loading of scripts",
+    test: () => {
+      const wrapper = mount(
+        <AdComposer adConfig={adConfig}>
+          <Fragment>
+            <Ad {...props} slotName="header" />
+          </Fragment>
+        </AdComposer>
+      );
 
-    expect(AdComponent).toMatchSnapshot(
-      "2. loading state advert shows placeholder only"
-    );
-  });
+      const AdComponent = wrapper.find("Ad");
 
-  it("should render nothing if there is an error in the loading of scripts", () => {
-    const wrapper = mount(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} slotName="header" />
-        </Fragment>
-      </AdComposer>
-    );
+      AdComponent.at(0)
+        .instance()
+        .setAdError();
 
-    const AdComponent = wrapper.find("Ad");
+      wrapper.update();
 
-    AdComponent.at(0)
-      .instance()
-      .setAdError();
+      expect(AdComponent).toMatchSnapshot();
+    }
+  }
+];
 
-    wrapper.update();
-
-    expect(AdComponent).toMatchSnapshot(
-      "3. should not show when loading scripts errored"
-    );
-  });
-});
+iterator(tests);

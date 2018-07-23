@@ -1,5 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { iterator } from "@times-components/test-utils";
 import ArticleSummary, { ArticleSummaryContent } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 
@@ -13,45 +14,50 @@ export default () => {
   const label = "Test label";
   const paragraph = "Test paragraph";
 
-  it("should render an article summary component with a single paragraph", () => {
-    const testInstance = TestRenderer.create(
-      <ArticleSummary
-        {...defaultFixture({
-          headline,
-          label,
-          paragraph
-        })}
-      />
-    );
+  const tests = [
+    {
+      name: "article summary component with a single paragraph",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummary
+            {...defaultFixture({
+              headline,
+              label,
+              paragraph
+            })}
+          />
+        );
 
-    expect(testInstance.toJSON()).toMatchSnapshot(
-      "1. should render an article summary component with a single paragraph"
-    );
-  });
-
-  it("should render an article summary content component with the given style", () => {
-    const ast = [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Test"
-            },
-            children: []
-          }
-        ]
+        expect(testInstance.toJSON()).toMatchSnapshot();
       }
-    ];
+    },
+    {
+      name: "article summary content component with the given style",
+      test: () => {
+        const ast = [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Test"
+                },
+                children: []
+              }
+            ]
+          }
+        ];
 
-    const testInstance = TestRenderer.create(
-      <ArticleSummaryContent ast={ast} />
-    );
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent ast={ast} />
+        );
 
-    expect(testInstance.toJSON()).toMatchSnapshot(
-      "2. should render an article summary content component with the given style"
-    );
-  });
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
 };

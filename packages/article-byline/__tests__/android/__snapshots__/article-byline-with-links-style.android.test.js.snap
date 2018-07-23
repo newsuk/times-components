@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a single author 1`] = `
+exports[`1. with a single author 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -20,7 +20,7 @@ exports[`1. Render a single author 1`] = `
 </View>
 `;
 
-exports[`2. Render a given section colour 1`] = `
+exports[`2. with a given section colour 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -40,7 +40,7 @@ exports[`2. Render a given section colour 1`] = `
 </View>
 `;
 
-exports[`3. Render an author with given styles 1`] = `
+exports[`3. with given styles 1`] = `
 <View>
   <Text
     accessibilityRole="link"

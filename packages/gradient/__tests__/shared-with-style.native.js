@@ -9,6 +9,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import Gradient from "../src/gradient";
 
 export default () => {
@@ -22,57 +23,68 @@ export default () => {
     )
   );
 
-  it("renders using prop styles", () => {
-    const testInstance = TestRenderer.create(
-      <Gradient
-        style={{
-          height: 200,
-          width: 200
-        }}
-      />
-    );
+  const tests = [
+    {
+      name: "gradient using prop styles",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Gradient
+            style={{
+              height: 200,
+              width: 200
+            }}
+          />
+        );
 
-    expect(testInstance).toMatchSnapshot("1. renders using prop styles");
-  });
-
-  it("renders using array prop styles", () => {
-    const testInstance = TestRenderer.create(
-      <Gradient
-        style={[
-          {
-            height: 300
-          },
-          {
-            width: 400
-          }
-        ]}
-      />
-    );
-
-    expect(testInstance).toMatchSnapshot("2. renders using array prop styles");
-  });
-
-  it("renders using stylesheets", () => {
-    const styles = StyleSheet.create({
-      container: {
-        margin: 10
+        expect(testInstance).toMatchSnapshot();
       }
-    });
+    },
+    {
+      name: "gradient using array prop styles",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Gradient
+            style={[
+              {
+                height: 300
+              },
+              {
+                width: 400
+              }
+            ]}
+          />
+        );
 
-    const testInstance = TestRenderer.create(
-      <Gradient
-        style={[
-          styles.container,
-          {
-            height: 200
-          },
-          {
-            width: 200
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient using stylesheets",
+      test: () => {
+        const styles = StyleSheet.create({
+          container: {
+            margin: 10
           }
-        ]}
-      />
-    );
+        });
 
-    expect(testInstance).toMatchSnapshot("3. renders using stylesheets");
-  });
+        const testInstance = TestRenderer.create(
+          <Gradient
+            style={[
+              styles.container,
+              {
+                height: 200
+              },
+              {
+                width: 200
+              }
+            ]}
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
 };

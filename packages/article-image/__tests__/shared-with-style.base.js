@@ -1,4 +1,5 @@
 import React from "react";
+import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import secondaryImageFixture from "../fixtures/secondary-image";
@@ -28,47 +29,60 @@ const portraitInlineImage = portraitInlineImageFixture(
 );
 
 export default makeTest => {
-  it("renders primary image with caption and credits", () =>
-    expect(
-      makeTest(
-        <ArticleImage
-          captionOptions={primaryImage.captionOptions}
-          imageOptions={primaryImage.imageOptions}
-        />
-      )
-    ).toMatchSnapshot("1. renders primary image with caption and credits"));
+  const tests = [
+    {
+      name: "primary image with caption and credits",
+      test: () => {
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={primaryImage.captionOptions}
+              imageOptions={primaryImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary image with caption and credits",
+      test: () => {
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={secondaryImage.captionOptions}
+              imageOptions={secondaryImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "inline image (landscape) with caption and credits",
+      test: () => {
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={landscapeInlineImage.captionOptions}
+              imageOptions={landscapeInlineImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "inline image (portrait) with caption and credits",
+      test: () => {
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={portraitInlineImage.captionOptions}
+              imageOptions={portraitInlineImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("renders secondary image with caption and credits", () =>
-    expect(
-      makeTest(
-        <ArticleImage
-          captionOptions={secondaryImage.captionOptions}
-          imageOptions={secondaryImage.imageOptions}
-        />
-      )
-    ).toMatchSnapshot("2. renders secondary image with caption and credits"));
-
-  it("renders inline image (landscape) with caption and credits", () =>
-    expect(
-      makeTest(
-        <ArticleImage
-          captionOptions={landscapeInlineImage.captionOptions}
-          imageOptions={landscapeInlineImage.imageOptions}
-        />
-      )
-    ).toMatchSnapshot(
-      "3. renders inline image (landscape) with caption and credits"
-    ));
-
-  it("renders inline image (portrait) with caption and credits", () =>
-    expect(
-      makeTest(
-        <ArticleImage
-          captionOptions={portraitInlineImage.captionOptions}
-          imageOptions={portraitInlineImage.imageOptions}
-        />
-      )
-    ).toMatchSnapshot(
-      "4. renders inline image (portrait) with caption and credits"
-    ));
+  iterator(tests);
 };

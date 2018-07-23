@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render an article summary component with a single paragraph 1`] = `
+exports[`1. article summary component with a single paragraph 1`] = `
 <style>
 {
   "IS1": {
@@ -132,7 +132,7 @@ exports[`1. should render an article summary component with a single paragraph 1
 </div>
 `;
 
-exports[`2. should render an article summary content component with the given style 1`] = `
+exports[`2. article summary content component with the given style 1`] = `
 <style>
 {
   "IS1": {

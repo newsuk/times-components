@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a Topic page 1`] = `
+exports[`1. topic page 1`] = `
 <ArticleList
   articleListHeader={
     <TopicHead
@@ -192,7 +192,7 @@ exports[`1. Render a Topic page 1`] = `
 />
 `;
 
-exports[`2. Render a topics page loading state 1`] = `
+exports[`2. loading state 1`] = `
 <ArticleList
   articleListHeader={
     <TopicHead
@@ -212,9 +212,9 @@ exports[`2. Render a topics page loading state 1`] = `
 />
 `;
 
-exports[`3. Render a topics page error state with an invalid Topic Query 1`] = `<ArticleListPageError />`;
+exports[`3. error state with an invalid topic query 1`] = `<ArticleListPageError />`;
 
-exports[`4. Send analytics when rendering a topics page (with null event time) 1`] = `
+exports[`4. send analytics when rendering a topic page 1`] = `
 Object {
   "action": "Viewed",
   "attrs": Object {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render an article summary component with a single paragraph 1`] = `
+exports[`1. article summary component with a single paragraph 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -66,7 +66,7 @@ exports[`1. should render an article summary component with a single paragraph 1
 </div>
 `;
 
-exports[`2. should render an article summary with opinion byline 1`] = `
+exports[`2. article summary with opinion byline 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -118,7 +118,7 @@ exports[`2. should render an article summary with opinion byline 1`] = `
 </div>
 `;
 
-exports[`3. should render an article summary component with multiple paragraphs 1`] = `
+exports[`3. article summary component with multiple paragraphs 1`] = `
 <div>
   <h3
     aria-level="3"
@@ -167,7 +167,7 @@ exports[`3. should render an article summary component with multiple paragraphs 
 </div>
 `;
 
-exports[`4. should render an article summary component with content including line breaks 1`] = `
+exports[`4. article summary component with content including line breaks 1`] = `
 <div>
   <div>
     <span>
@@ -199,7 +199,7 @@ exports[`4. should render an article summary component with content including li
 </div>
 `;
 
-exports[`5. should render an article summary component containing links 1`] = `
+exports[`5. article summary component containing links 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -236,7 +236,7 @@ exports[`5. should render an article summary component containing links 1`] = `
 </div>
 `;
 
-exports[`6. should render an article summary component with headline and blank content 1`] = `
+exports[`6. article summary component with headline and no content 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -259,7 +259,7 @@ exports[`6. should render an article summary component with headline and blank c
 </div>
 `;
 
-exports[`7. should render an article summary component with empty content at the end trimmed 1`] = `
+exports[`7. article summary component with empty content at the end trimmed 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -317,7 +317,7 @@ exports[`7. should render an article summary component with empty content at the
 </div>
 `;
 
-exports[`8. should render an article summary component with no byline 1`] = `
+exports[`8. article summary component with no byline 1`] = `
 <div>
   <h3
     aria-level="3"
@@ -341,7 +341,7 @@ exports[`8. should render an article summary component with no byline 1`] = `
 </div>
 `;
 
-exports[`9. should render an article summary component with no label 1`] = `
+exports[`9. article summary component with no label 1`] = `
 <div>
   <h3
     aria-level="3"
@@ -386,7 +386,7 @@ exports[`9. should render an article summary component with no label 1`] = `
 </div>
 `;
 
-exports[`10. should render an article summary component with no headline 1`] = `
+exports[`10. article summary component with no headline 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -410,7 +410,7 @@ exports[`10. should render an article summary component with no headline 1`] = `
 </div>
 `;
 
-exports[`11. should render an article summary component with no date publication 1`] = `
+exports[`11. article summary component with no date publication 1`] = `
 <div>
   <div>
     <ArticleLabel
@@ -455,7 +455,7 @@ exports[`11. should render an article summary component with no date publication
 </div>
 `;
 
-exports[`12. should render an article summary component with a video label 1`] = `
+exports[`12. article summary component with a video label 1`] = `
 <div>
   <div>
     <VideoLabel

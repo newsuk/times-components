@@ -1,6 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { mount, shallow } from "enzyme";
 import { AdComposer } from "@times-components/ad";
 import ArticleListPagination from "../src/article-list-pagination";
@@ -13,11 +12,11 @@ const { defaultProps: { adConfig } } = AdComposer;
 
 export default () => {
   it("should render the article list pagination correctly", () => {
-    const tree = renderer.create(
+    const testInstance = TestRenderer.create(
       <ArticleListPagination count={20} page={1} pageSize={10} />
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(testInstance).toMatchSnapshot();
   });
 
   it("should handle the link to an article from an article list", () => {
@@ -70,7 +69,7 @@ export default () => {
   it("should show an advert after the fifth article", () => {
     const pageSize = 6;
     const results = pagedResult(0, pageSize);
-    const tree = renderer.create(
+    const testInstance = TestRenderer.create(
       <ArticleList
         {...articleListProps}
         adConfig={adConfig}
@@ -80,6 +79,6 @@ export default () => {
       />
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(testInstance).toMatchSnapshot();
   });
 };
