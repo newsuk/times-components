@@ -6,6 +6,7 @@ export const query = gql`
     article(id: $id) {
       id
       headline
+      keywords
       publicationName
       publishedTime
       label
