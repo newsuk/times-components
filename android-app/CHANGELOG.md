@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.3.3...@times-components/android-app@0.4.0) (2018-07-23)
+
+
+### Features
+
+* add Android ad config ([#1125](https://github.com/newsuk/times-components/issues/1125)) ([a58795c](https://github.com/newsuk/times-components/commit/a58795c))
+
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.3.2...@times-components/android-app@0.3.3) (2018-07-23)
 

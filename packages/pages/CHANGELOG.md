@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/pages@0.0.8...@times-components/pages@0.1.0) (2018-07-23)
+
+
+### Features
+
+* add Android ad config ([#1125](https://github.com/newsuk/times-components/issues/1125)) ([a58795c](https://github.com/newsuk/times-components/commit/a58795c))
+
+
+
+
 <a name="0.0.8"></a>
 ## [0.0.8](https://github.com/newsuk/times-components/compare/@times-components/pages@0.0.7...@times-components/pages@0.0.8) (2018-07-23)
 
