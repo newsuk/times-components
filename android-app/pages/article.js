@@ -19,37 +19,38 @@ const platformAdConfig = {
   adUnit: "d.thetimes.co.uk",
   networkId: "25436805",
   testMode: "",
-  sectionId: "",
-  sectionName: "",
-  articlePositionInSlot: 0,
-  appVersion: "",
-  operatingSystem: "",
-  operatingSystemVersion: "",
-  cookieEid: "",
-  cookieAcsTnl: "",
-  cookieIamTgt: "",
-  deviceId: "",
-  deviceIdHash: "",
-  environment: "",
-  isLoggedIn: true,
+  appVersion: config.appVersion,
+  operatingSystem: "Android",
+  operatingSystemVersion: config.operatingSystemVersion,
+  environment: config.environment,
+  deviceId: config.deviceId,
+  cookieEid: config.cookieEid,
+  cookieAcsTnl: config.cookieAcsTnl,
+  cookieIamTgt: config.cookieIamTgt,
+  isLoggedIn: config.isLoggedIn,
   platform: "mobile"
 };
 
-const ArticleView = ({ articleId }) => (
-  <ArticlePageView
-    articleId={articleId}
-    analyticsStream={track}
-    onArticlePress={onArticlePress}
-    onAuthorPress={onAuthorPress}
-    onLinkPress={onLinkPress}
-    onVideoPress={onVideoPress}
-    onTopicPress={onTopicPress}
-    platformAdConfig={platformAdConfig}
-  />
-);
+const ArticleView = ({ articleId, sectionName }) => {
+  const adConfig = { ...platformAdConfig, sectionName };
+
+  return (
+    <ArticlePageView
+      articleId={articleId}
+      analyticsStream={track}
+      onArticlePress={onArticlePress}
+      onAuthorPress={onAuthorPress}
+      onLinkPress={onLinkPress}
+      onVideoPress={onVideoPress}
+      onTopicPress={onTopicPress}
+      platformAdConfig={adConfig}
+    />
+  );
+};
 
 ArticleView.propTypes = {
-  articleId: PropTypes.string.isRequired
+  articleId: PropTypes.string.isRequired,
+  sectionName: PropTypes.string.isRequired
 };
 
 export default ArticleView;
