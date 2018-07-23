@@ -42,7 +42,7 @@ const Link = ({
 
 Link.propTypes = {
   url: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
+  onPress: PropTypes.func,
   children: PropTypes.node.isRequired,
   responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
@@ -55,6 +55,7 @@ Link.propTypes = {
 Link.defaultProps = {
   responsiveLinkStyles: null,
   index: "0",
+  onPress: () => {},
   target: null
 };
 

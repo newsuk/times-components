@@ -28,7 +28,7 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
+const ArticleRow = ({ content: { data, index } }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
       return {
@@ -101,7 +101,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
     },
     keyFacts(key, attributes, renderedChildren, indx, node) {
       return {
-        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        element: <KeyFacts ast={node} key={key} />,
         shouldRenderChildren: false
       };
     },
@@ -110,13 +110,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
 
       return {
         element: (
-          <ArticleLink
-            key={key}
-            onPress={e => onLinkPress(e, { href })}
-            target={target}
-            url={href}
-            uuid={index}
-          >
+          <ArticleLink key={key} target={target} url={href} uuid={index}>
             {children}
           </ArticleLink>
         )
@@ -132,8 +126,7 @@ ArticleRow.propTypes = {
       name: PropTypes.string
     }),
     index: PropTypes.number
-  }).isRequired,
-  onLinkPress: PropTypes.func.isRequired
+  }).isRequired
 };
 
 export default ArticleRow;

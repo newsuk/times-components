@@ -1,0 +1,5 @@
+{
+  "maxAttributes": 8,
+  "maxFileSize": 22000,
+  "maxLines": 1010
+}

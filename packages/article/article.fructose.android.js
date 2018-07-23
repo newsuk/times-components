@@ -2,7 +2,7 @@
 import React from "react";
 import Article from "./src/article";
 
-const fullArticleFixture = require("./fixtures/full-article.json");
+const fullArticleFixture = require("./fixtures/full-article.js");
 
 const isComponentDisplayed = async (id, timeout = 2000) => {
   await driver.waitForElementByAccessibilityId(id, timeout);

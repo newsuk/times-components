@@ -9,8 +9,6 @@ import { spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-// To fix a jest coverage issue
-import AspectRatioContainer from "./media-aspect-ratio"; // eslint-disable-line no-unused-vars
 import InsetCaption from "./inset-caption";
 
 const primaryContainer = {

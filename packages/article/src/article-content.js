@@ -13,7 +13,9 @@ const ArticleContent = ({
 }) => (
   <FlatList
     data={data}
-    keyExtractor={item => item.type + item.index || item.type}
+    keyExtractor={item =>
+      item.index ? `${item.type}.${item.index}` : item.type
+    }
     renderItem={({ item }) =>
       renderRow(
         item,

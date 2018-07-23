@@ -9,21 +9,12 @@ import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
 
-import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
-import fullArticleFixture from "./fixtures/full-article.json";
-import fullLongArticleFixture from "./fixtures/full-long-article.json";
+import fullArticleFixture, {
+  bylineWithLink,
+  longContent,
+  videoLeadAsset
+} from "./fixtures/full-article";
 import articleWithKeyFacts from "./fixtures/article-with-key-facts.json";
-import articleWithVideoFixture from "./fixtures/article-with-video-asset.json";
-import articleFixtureBylineAuthor from "./fixtures/article-with-byline-author.json";
-import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
-import articleFixtureNoLabel from "./fixtures/no-label.json";
-import articleFixtureNoAds from "./fixtures/no-ads.json";
-import articleFixtureNoFlags from "./fixtures/no-flags.json";
-import articleFixtureNoStandfirstNoLabel from "./fixtures/no-standfirst-no-label.json";
-import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags.json";
-import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
-import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
-import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
 import articleAdConfig from "./fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
@@ -42,14 +33,18 @@ const mocks = [
         id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       }
     },
-    result: fullArticleTypenameFixture
+    result: {
+      data: {
+        article: fullArticleFixture()
+      }
+    }
   }
 ];
 
 const renderArticle = (
   decorateAction,
   {
-    fixture: { data = {} } = {},
+    fixture,
     isLoading = false,
     analyticsStream = storybookReporter,
     adConfig = articleAdConfig,
@@ -57,9 +52,9 @@ const renderArticle = (
   }
 ) => (
   <Article
-    {...data}
     adConfig={adConfig}
     analyticsStream={analyticsStream}
+    article={fixture}
     error={error}
     isLoading={isLoading}
     onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
@@ -79,13 +74,17 @@ export default {
       type: "story",
       name: "Default",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: fullArticleFixture })
+        renderArticle(decorateAction, { fixture: fullArticleFixture() })
     },
     {
       type: "story",
       name: "Article with video asset",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleWithVideoFixture })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({
+            leadAsset: videoLeadAsset()
+          })
+        })
     },
     {
       type: "story",
@@ -97,7 +96,9 @@ export default {
       type: "story",
       name: "Long Article",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: fullLongArticleFixture })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ content: longContent })
+        })
     },
     {
       type: "story",
@@ -174,7 +175,7 @@ export default {
           >
             Click to render the ads
           </a>
-          {renderArticle(decorateAction, { fixture: fullArticleFixture })}
+          {renderArticle(decorateAction, { fixture: fullArticleFixture() })}
         </div>
       )
     },
@@ -183,44 +184,54 @@ export default {
       name: "Fixtures - Full",
       platform: "native",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: fullArticleFixture })
+        renderArticle(decorateAction, { fixture: fullArticleFixture() })
     },
     {
       type: "story",
       name: "Fixtures - Byline with author profile",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureBylineAuthor })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ byline: bylineWithLink })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No ads",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoAds })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ withAds: false })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No standfirst",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoStandfirst })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ standfirst: null })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No label",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoLabel })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ label: null })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No flags",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoFlags })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ flags: null })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No standfirst, no label",
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, {
-          fixture: articleFixtureNoStandfirstNoLabel
+          fixture: fullArticleFixture({ label: null, standfirst: null })
         })
     },
     {
@@ -228,28 +239,36 @@ export default {
       name: "Fixtures - No standfirst, no flags",
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, {
-          fixture: articleFixtureNoStandfirstNoFlags
+          fixture: fullArticleFixture({ flags: null, standfirst: null })
         })
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoLabelNoFlags })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ flags: null, label: null })
+        })
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags, no standfirst",
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, {
-          fixture: articleFixtureNoLabelNoFlagsNoStandFirst
+          fixture: fullArticleFixture({
+            flags: null,
+            label: null,
+            standfirst: null
+          })
         })
     },
     {
       type: "story",
       name: "Fixtures - No lead asset",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleFixtureNoLeadAsset })
+        renderArticle(decorateAction, {
+          fixture: fullArticleFixture({ leadAsset: null })
+        })
     }
   ]
 };

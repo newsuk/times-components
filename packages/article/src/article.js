@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+
 import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
@@ -20,90 +22,87 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-class ArticlePage extends Component {
-  static renderRow(
-    rowData,
-    onAuthorPress,
-    onLinkPress,
-    onRelatedArticlePress,
-    onTopicPress,
-    onVideoPress
-  ) {
-    switch (rowData.type) {
-      case "leadAsset": {
-        return (
-          <View key="leadAsset" testID="leadAsset">
-            <ArticleLeadAsset
-              data={{ ...rowData.data, onVideoPress }}
-              key={rowData.type}
-            />
-          </View>
-        );
-      }
-
-      case "header": {
-        const { headline, flags, standfirst, label, isVideo } = rowData.data;
-        return (
-          <ArticleHeader
-            flags={flags}
-            headline={headline}
-            isVideo={isVideo}
+const renderRow = analyticsStream => (
+  rowData,
+  onAuthorPress,
+  onLinkPress,
+  onRelatedArticlePress,
+  onTopicPress,
+  onVideoPress
+) => {
+  // eslint-disable-next-line default-case
+  switch (rowData.type) {
+    case "leadAsset": {
+      return (
+        <View key="leadAsset" testID="leadAsset">
+          <ArticleLeadAsset
+            data={{ ...rowData.data, onVideoPress }}
             key={rowData.type}
-            label={label}
-            standfirst={standfirst}
-            style={[styles.articleMainContentRow]}
           />
-        );
-      }
+        </View>
+      );
+    }
 
-      case "middleContainer": {
-        const { byline, publishedTime, publicationName } = rowData.data;
-        return (
-          <ArticleMeta
-            byline={byline}
-            key={rowData.type}
-            onAuthorPress={onAuthorPress}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-          />
-        );
-      }
+    case "header": {
+      const { headline, flags, standfirst, label, isVideo } = rowData.data;
+      return (
+        <ArticleHeader
+          flags={flags}
+          headline={headline}
+          isVideo={isVideo}
+          key={rowData.type}
+          label={label}
+          standfirst={standfirst}
+          style={[styles.articleMainContentRow]}
+        />
+      );
+    }
 
-      case "articleBodyRow": {
-        return (
-          <ArticleRow
-            content={rowData}
-            onLinkPress={onLinkPress}
-            onVideoPress={onVideoPress}
-          />
-        );
-      }
+    case "middleContainer": {
+      const { byline, publishedTime, publicationName } = rowData.data;
+      return (
+        <ArticleMeta
+          byline={byline}
+          key={rowData.type}
+          onAuthorPress={onAuthorPress}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+        />
+      );
+    }
 
-      case "relatedArticles": {
-        const { relatedArticles, relatedArticlesLayout } = rowData.data;
-        return (
-          <RelatedArticles
-            analyticsStream={() => {}}
-            articles={relatedArticles}
-            mainId={relatedArticlesLayout.main}
-            onPress={onRelatedArticlePress}
-            template={relatedArticlesLayout.template}
-          />
-        );
-      }
+    case "articleBodyRow": {
+      return (
+        <ArticleRow
+          content={rowData}
+          onLinkPress={onLinkPress}
+          onVideoPress={onVideoPress}
+        />
+      );
+    }
 
-      case "topics": {
-        return (
-          <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
-        );
-      }
+    case "relatedArticles": {
+      const { relatedArticles, relatedArticlesLayout } = rowData.data;
+      return (
+        <RelatedArticles
+          analyticsStream={analyticsStream}
+          articles={relatedArticles}
+          mainId={relatedArticlesLayout.main}
+          onPress={onRelatedArticlePress}
+          template={relatedArticlesLayout.template}
+        />
+      );
+    }
 
-      default: {
-        return null;
-      }
+    case "topics": {
+      return (
+        <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
+      );
     }
   }
+};
 
+class ArticlePage extends Component {
   constructor(props) {
     super(props);
 
@@ -146,7 +145,7 @@ class ArticlePage extends Component {
         onTopicPress={this.props.onTopicPress}
         onVideoPress={this.props.onVideoPress}
         pageSize={listViewPageSize}
-        renderRow={ArticlePage.renderRow}
+        renderRow={renderRow(this.props.analyticsStream)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );
