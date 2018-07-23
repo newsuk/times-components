@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render with the expected style 1`] = `
+exports[`1. gradient with style 1`] = `
 <style>
 {
   "IS1": {
@@ -17,7 +17,7 @@ exports[`1. should render with the expected style 1`] = `
 />
 `;
 
-exports[`2. should render with a child 1`] = `
+exports[`2. gradient with a child 1`] = `
 <div>
   <div>
     Hello world!

@@ -13,20 +13,18 @@ const props = {
   showImage: true
 };
 
-describe("web", () => {
-  jest.useFakeTimers();
+jest.useFakeTimers();
 
-  serializers();
+serializers();
 
-  it("should render the default layout", () => {
-    const output = mount(
-      <Card {...props}>
-        <Text>A card</Text>
-      </Card>
-    );
+it("card with default layout", () => {
+  const wrapper = mount(
+    <Card {...props}>
+      <Text>A card</Text>
+    </Card>
+  );
 
-    jest.runTimersToTime();
+  jest.runTimersToTime();
 
-    expect(output).toMatchSnapshot("1. should render the default layout");
-  });
+  expect(wrapper).toMatchSnapshot();
 });

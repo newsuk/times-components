@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render the default layout 1`] = `
+exports[`1. card default state 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -20,7 +20,7 @@ exports[`1. should render the default layout 1`] = `
 </FadeIn>
 `;
 
-exports[`2. should pass an empty state to the image component 1`] = `
+exports[`2. pass an empty state to the image component 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -40,7 +40,7 @@ exports[`2. should pass an empty state to the image component 1`] = `
 </FadeIn>
 `;
 
-exports[`4. should render without an image when showImage is false 1`] = `
+exports[`3. card without an image when showimage is false 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -54,7 +54,7 @@ exports[`4. should render without an image when showImage is false 1`] = `
 </FadeIn>
 `;
 
-exports[`5. should pass an empty state to the image component when uri is null 1`] = `
+exports[`4. pass an empty state to the image component when uri is null 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -74,7 +74,7 @@ exports[`5. should pass an empty state to the image component when uri is null 1
 </FadeIn>
 `;
 
-exports[`6. should render with reversed layout 1`] = `
+exports[`5. card with reversed layout 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -94,7 +94,7 @@ exports[`6. should render with reversed layout 1`] = `
 </FadeIn>
 `;
 
-exports[`7. should render with reversed layout and no image 1`] = `
+exports[`6. card with reversed layout and no image 1`] = `
 <FadeIn>
   <div>
     <div>
@@ -108,7 +108,7 @@ exports[`7. should render with reversed layout and no image 1`] = `
 </FadeIn>
 `;
 
-exports[`8. should render a loading state 1`] = `
+exports[`7. card with a loading state 1`] = `
 <div>
   <div>
     <TimesImage
@@ -133,7 +133,7 @@ exports[`8. should render a loading state 1`] = `
 </div>
 `;
 
-exports[`10. should render a loading card with no image 1`] = `
+exports[`8. card with a loading state and no image 1`] = `
 <div>
   <div>
     <Gradient
@@ -152,7 +152,7 @@ exports[`10. should render a loading card with no image 1`] = `
 </div>
 `;
 
-exports[`11. should render a reversed loading component 1`] = `
+exports[`9. card with reversed loading state 1`] = `
 <div>
   <div>
     <Gradient
@@ -177,7 +177,7 @@ exports[`11. should render a reversed loading component 1`] = `
 </div>
 `;
 
-exports[`12. should render a reversed loading component with no image 1`] = `
+exports[`10. card with reversed loading state with no image 1`] = `
 <div>
   <div>
     <Gradient
@@ -196,7 +196,7 @@ exports[`12. should render a reversed loading component with no image 1`] = `
 </div>
 `;
 
-exports[`13. should not re-render when imageRatio prop is changed 1`] = `
+exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -206,7 +206,7 @@ exports[`13. should not re-render when imageRatio prop is changed 1`] = `
 </FadeIn>
 `;
 
-exports[`13. should not re-render when imageRatio prop is changed 2`] = `
+exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -216,7 +216,7 @@ exports[`13. should not re-render when imageRatio prop is changed 2`] = `
 </FadeIn>
 `;
 
-exports[`14. should re-render when image uri changes 1`] = `
+exports[`12. card should re-render when image uri changes 1`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -226,7 +226,7 @@ exports[`14. should re-render when image uri changes 1`] = `
 </FadeIn>
 `;
 
-exports[`14. should re-render when image uri changes 2`] = `
+exports[`12. card should re-render when image uri changes 2`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -236,7 +236,7 @@ exports[`14. should re-render when image uri changes 2`] = `
 </FadeIn>
 `;
 
-exports[`15. should re-render when image size changes 1`] = `
+exports[`13. card should re-render when image size changes 1`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -246,7 +246,7 @@ exports[`15. should re-render when image size changes 1`] = `
 </FadeIn>
 `;
 
-exports[`15. should re-render when image size changes 2`] = `
+exports[`13. card should re-render when image size changes 2`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}
@@ -256,9 +256,9 @@ exports[`15. should re-render when image size changes 2`] = `
 </FadeIn>
 `;
 
-exports[`16. should re-render when loading state changes 1`] = `Array []`;
+exports[`14. card should re-render when loading state changes 1`] = `Array []`;
 
-exports[`16. should re-render when loading state changes 2`] = `
+exports[`14. card should re-render when loading state changes 2`] = `
 <FadeIn>
   <TimesImage
     aspectRatio={0.6666666666666666}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "react-native";
 import { shallow } from "enzyme";
+import { iterator } from "@times-components/test-utils";
 import { AuthorProfileHeadBase as AuthorProfileHeadBaseWithoutTracking } from "../src/author-profile-head-base";
 import AuthorProfileHeadTwitter from "../src/author-profile-head-twitter";
 
@@ -15,55 +16,58 @@ export default () => {
     twitter: "testTwitterHandle"
   };
 
-  it("should not re-render when twitter is changed", () => {
-    const wrapper = shallow(
-      <AuthorProfileHeadBaseWithoutTracking {...headProps} />
-    );
+  const tests = [
+    {
+      name: "should not re-render when twitter is changed",
+      test: () => {
+        const wrapper = shallow(
+          <AuthorProfileHeadBaseWithoutTracking {...headProps} />
+        );
 
-    expect(wrapper.find("AuthorProfileHeadTwitter")).toMatchSnapshot(
-      "1. Should not re-render when twitter prop is changed"
-    );
+        expect(wrapper.find("AuthorProfileHeadTwitter")).toMatchSnapshot();
 
-    wrapper.setProps({
-      twitter: "newTestTwitter"
-    });
+        wrapper.setProps({
+          twitter: "newTestTwitter"
+        });
 
-    expect(wrapper.find("AuthorProfileHeadTwitter")).toMatchSnapshot(
-      "2. Should not re-render when twitter prop is changed"
-    );
-  });
+        expect(wrapper.find("AuthorProfileHeadTwitter")).toMatchSnapshot();
+      }
+    },
+    {
+      name: "should only re-render when isLoading is changed",
+      test: () => {
+        const wrapper = shallow(
+          <AuthorProfileHeadBaseWithoutTracking {...headProps} />
+        );
 
-  it("should only re-render when isLoading is changed", () => {
-    const wrapper = shallow(
-      <AuthorProfileHeadBaseWithoutTracking {...headProps} />
-    );
+        expect(wrapper).toMatchSnapshot();
 
-    expect(wrapper).toMatchSnapshot(
-      "3. Should re-render when isLoading prop is changed"
-    );
+        wrapper.setProps({
+          isLoading: true
+        });
 
-    wrapper.setProps({
-      isLoading: true
-    });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "should handle the twitter link when pressed",
+      test: () => {
+        const mockOnPress = jest.fn();
+        const twitterProps = {
+          isLoading: false,
+          onTwitterLinkPress: mockOnPress,
+          twitter: "testTwitterHandle",
+          url: "https://twitter.com/testTwitterHandle"
+        };
 
-    expect(wrapper).toMatchSnapshot(
-      "4. Should re-render when isLoading prop is changed"
-    );
-  });
+        const wrapper = shallow(<AuthorProfileHeadTwitter {...twitterProps} />);
 
-  const mockOnPress = jest.fn();
-  const twitterProps = {
-    isLoading: false,
-    onTwitterLinkPress: mockOnPress,
-    twitter: "testTwitterHandle",
-    url: "https://twitter.com/testTwitterHandle"
-  };
+        wrapper.find("TextLink").simulate("press");
 
-  it("should handle the twitter link when pressed", () => {
-    const wrapper = shallow(<AuthorProfileHeadTwitter {...twitterProps} />);
+        expect(mockOnPress).toHaveBeenCalled();
+      }
+    }
+  ];
 
-    wrapper.find("TextLink").simulate("press");
-
-    expect(mockOnPress).toHaveBeenCalled();
-  });
+  iterator(tests);
 };

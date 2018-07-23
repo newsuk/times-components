@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import PullQuotes from "./src/pull-quote";
 

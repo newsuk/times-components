@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. advert 1`] = `
+exports[`advert 1`] = `
 <Broadcast
   channel="adConfig"
 >

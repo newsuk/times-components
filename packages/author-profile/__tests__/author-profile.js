@@ -1,7 +1,8 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import { MockedProvider } from "@times-components/provider-test-tools";
+import { iterator } from "@times-components/test-utils";
 import { delay } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 import {
@@ -28,65 +29,74 @@ export default () => {
     mockDate.reset();
   });
 
-  it("should render with images", async () => {
-    const tree = renderer.create(
-      <MockedProvider mocks={mockArticles}>
-        <AuthorProfile {...props} />
-      </MockedProvider>
-    );
+  const tests = [
+    {
+      name: "with images",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <MockedProvider mocks={mockArticles}>
+            <AuthorProfile {...props} />
+          </MockedProvider>
+        );
 
-    await delay(1500);
+        await delay(1500);
 
-    expect(tree).toMatchSnapshot("1. Render an author profile page");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "without images",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <MockedProvider mocks={mockArticlesWithoutImages}>
+            <AuthorProfile {...props} author={mockAuthorWithoutImages} />
+          </MockedProvider>
+        );
 
-  it("should render without images", async () => {
-    const tree = renderer.create(
-      <MockedProvider mocks={mockArticlesWithoutImages}>
-        <AuthorProfile {...props} author={mockAuthorWithoutImages} />
-      </MockedProvider>
-    );
+        await delay(1500);
 
-    await delay(1500);
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "loading state",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <MockedProvider isLoading mocks={mockArticles}>
+            <AuthorProfile {...props} isLoading />
+          </MockedProvider>
+        );
 
-    expect(tree).toMatchSnapshot(
-      "2. Render an author profile page without images"
-    );
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "author profile page error state",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AuthorProfile {...props} error={{}} />
+        );
 
-  it("should render the loading state", () => {
-    const tree = renderer.create(
-      <MockedProvider isLoading mocks={mockArticles}>
-        <AuthorProfile {...props} isLoading />
-      </MockedProvider>
-    );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "send analytics when rendering an author profile page",
+      test: () => {
+        const reporter = jest.fn();
 
-    expect(tree).toMatchSnapshot(
-      "3. Render an author profile page loading state"
-    );
-  });
+        TestRenderer.create(
+          <MockedProvider mocks={mockArticles}>
+            <AuthorProfile {...props} analyticsStream={reporter} />
+          </MockedProvider>
+        );
 
-  it("should render the author page with an article list page error state", () => {
-    const tree = renderer.create(<AuthorProfile {...props} error={{}} />);
+        const call = reporter.mock.calls[0][0];
 
-    expect(tree).toMatchSnapshot(
-      "4. Render an author profile page error state"
-    );
-  });
+        expect(call).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("should send analytics when rendering an Author Profile page", () => {
-    const reporter = jest.fn();
-
-    renderer.create(
-      <MockedProvider mocks={mockArticles}>
-        <AuthorProfile {...props} analyticsStream={reporter} />
-      </MockedProvider>
-    );
-
-    const call = reporter.mock.calls[0][0];
-
-    expect(call).toMatchSnapshot(
-      "5. Send analytics when rendering an Author Profile page"
-    );
-  });
+  iterator(tests);
 };

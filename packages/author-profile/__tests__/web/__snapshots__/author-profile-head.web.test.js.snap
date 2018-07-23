@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Should not re-render when twitter prop is changed 1`] = `
+exports[`1. should not re-render when twitter is changed 1`] = `
 <AuthorProfileHeadTwitter
   twitter="testTwitterHandle"
   url="https://twitter.com/testTwitterHandle"
 />
 `;
 
-exports[`2. Should not re-render when twitter prop is changed 1`] = `
+exports[`1. should not re-render when twitter is changed 2`] = `
 <AuthorProfileHeadTwitter
   twitter="testTwitterHandle"
   url="https://twitter.com/testTwitterHandle"
 />
 `;
 
-exports[`3. Should re-render when isLoading prop is changed 1`] = `
+exports[`2. should only re-render when isloading is changed 1`] = `
 <FadeIn
   style={
     Object {
@@ -45,4 +45,4 @@ exports[`3. Should re-render when isLoading prop is changed 1`] = `
 </FadeIn>
 `;
 
-exports[`4. Should re-render when isLoading prop is changed 1`] = `<AuthorProfileHeadLoading />`;
+exports[`2. should only re-render when isloading is changed 2`] = `<AuthorProfileHeadLoading />`;

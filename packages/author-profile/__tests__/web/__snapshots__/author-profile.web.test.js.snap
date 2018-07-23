@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render an author profile page 1`] = `
+exports[`1. with images 1`] = `
 <div>
   <header
     className="responsive-styles__component-fbPFZZ dornVt"
@@ -618,7 +618,7 @@ exports[`1. Render an author profile page 1`] = `
 </div>
 `;
 
-exports[`2. Render an author profile page without images 1`] = `
+exports[`2. without images 1`] = `
 <div>
   <header
     className="responsive-styles__component-fbPFZZ dornVt"
@@ -1322,7 +1322,7 @@ exports[`2. Render an author profile page without images 1`] = `
 </div>
 `;
 
-exports[`3. Render an author profile page loading state 1`] = `
+exports[`3. loading state 1`] = `
 <div>
   <header
     className="responsive-styles__component-fbPFZZ dornVt"
@@ -1689,7 +1689,7 @@ exports[`3. Render an author profile page loading state 1`] = `
 </div>
 `;
 
-exports[`4. Render an author profile page error state 1`] = `
+exports[`4. author profile page error state 1`] = `
 <div
   className="responsive-styles__component-fbPFZZ NudQU"
 >
@@ -1764,7 +1764,7 @@ exports[`4. Render an author profile page error state 1`] = `
 </div>
 `;
 
-exports[`5. Send analytics when rendering an Author Profile page 1`] = `
+exports[`5. send analytics when rendering an author profile page 1`] = `
 Object {
   "action": "Viewed",
   "attrs": Object {

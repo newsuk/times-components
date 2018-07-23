@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders 1`] = `
+exports[`1. gradient 1`] = `
 <View>
   <ARTSurfaceView>
     <ARTShape
@@ -14,7 +14,7 @@ exports[`1. renders 1`] = `
 </View>
 `;
 
-exports[`2. renders with a child 1`] = `
+exports[`2. gradient with a child 1`] = `
 <View>
   <ARTSurfaceView>
     <ARTShape

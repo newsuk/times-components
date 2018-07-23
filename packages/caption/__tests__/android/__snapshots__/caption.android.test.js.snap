@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders without credits 1`] = `
+exports[`1. caption without credits 1`] = `
 <View>
   <View>
     <Text>
@@ -10,7 +10,7 @@ exports[`1. renders without credits 1`] = `
 </View>
 `;
 
-exports[`2. renders with credits 1`] = `
+exports[`2. caption with credits 1`] = `
 <View>
   <View>
     <Text>
@@ -23,7 +23,7 @@ exports[`2. renders with credits 1`] = `
 </View>
 `;
 
-exports[`3. renders with credits only 1`] = `
+exports[`3. caption with credits only 1`] = `
 <View>
   <View>
     <Text>
@@ -33,7 +33,7 @@ exports[`3. renders with credits only 1`] = `
 </View>
 `;
 
-exports[`4. renders a child 1`] = `
+exports[`4. caption with child 1`] = `
 <View>
   <Text>
     Hello world!

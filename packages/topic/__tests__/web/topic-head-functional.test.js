@@ -1,5 +1,3 @@
-import sharedFunctional from "../topic-head-functional";
+import shared from "../topic-head-functional";
 
-describe("TopicHead functional tests on web", () => {
-  sharedFunctional();
-});
+shared();

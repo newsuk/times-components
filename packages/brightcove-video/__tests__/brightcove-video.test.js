@@ -1,7 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
-
+import TestRenderer from "react-test-renderer";
 import BrightcoveVideo from "../src/brightcove-video";
 
 const policyKey = "[POLICY_KEY]";
@@ -29,36 +27,36 @@ beforeEach(() => {
 });
 
 it("renders poster correctly before launch", () => {
-  const tree = renderer
-    .create(<BrightcoveVideo {...defaultVideoProps} />)
-    .toJSON();
+  const testInstance = TestRenderer.create(
+    <BrightcoveVideo {...defaultVideoProps} />
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("renders poster with custom play icon if specified", () => {
-  const tree = renderer
-    .create(
-      <BrightcoveVideo {...defaultVideoProps} playIcon={playIconEmoji()} />
-    )
-    .toJSON();
+  const testInstance = TestRenderer.create(
+    <BrightcoveVideo {...defaultVideoProps} playIcon={playIconEmoji()} />
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("will launch if play is called", () => {
-  const root = renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
+  const testInstance = TestRenderer.create(
+    <BrightcoveVideo {...defaultVideoProps} />
+  );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.play();
 
-  expect(root.toJSON()).toMatchSnapshot();
+  expect(testInstance.toJSON()).toMatchSnapshot();
 });
 
 it("pauses other playing videos if play is called", () => {
-  renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
-  renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
+  TestRenderer.create(<BrightcoveVideo {...defaultVideoProps} />);
+  TestRenderer.create(<BrightcoveVideo {...defaultVideoProps} />);
 
   const [component1, component2] = BrightcoveVideo.activePlayers;
   jest.spyOn(component1, "pause");
@@ -71,8 +69,8 @@ it("pauses other playing videos if play is called", () => {
 });
 
 it("doesn't hold references to players after they have been unmounted", () => {
-  renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
-  const p2 = renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
+  TestRenderer.create(<BrightcoveVideo {...defaultVideoProps} />);
+  const p2 = TestRenderer.create(<BrightcoveVideo {...defaultVideoProps} />);
 
   expect(BrightcoveVideo.activePlayers.length).toBe(2);
   const [component1] = BrightcoveVideo.activePlayers;
@@ -82,23 +80,23 @@ it("doesn't hold references to players after they have been unmounted", () => {
 });
 
 it("will reset properly", () => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} autoplay />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.reset();
 
-  expect(root.toJSON()).toMatchSnapshot();
+  expect(testInstance.toJSON()).toMatchSnapshot();
 });
 
 it("will reset if 'resetOnFinish' is true & video finishes", done => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} resetOnFinish />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.play();
 
@@ -106,17 +104,17 @@ it("will reset if 'resetOnFinish' is true & video finishes", done => {
 
   // handleFinish calls reset asyc - wait for it
   setTimeout(() => {
-    expect(root.toJSON()).toMatchSnapshot();
+    expect(testInstance.toJSON()).toMatchSnapshot();
     done();
   }, 0);
 });
 
 it("will call child components play and pause methods if child component is ready", () => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} autoplay />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.playerRef = {
     play: jest.fn(),
@@ -135,11 +133,11 @@ it("will call child components play and pause methods if child component is read
 });
 
 it("will call native fullscreen player if 'directToFullscreen option passed'", () => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} directToFullscreen />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   const mockNativeModule = {
     playVideo: jest.fn()
@@ -153,23 +151,23 @@ it("will call native fullscreen player if 'directToFullscreen option passed'", (
 });
 
 it("will handle an error properly", () => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} autoplay />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.handleError({ code: "XxX", message: "a bad booboo occured" });
 
-  expect(root.toJSON()).toMatchSnapshot();
+  expect(testInstance.toJSON()).toMatchSnapshot();
 });
 
 it("the player can trigger errors", () => {
-  const root = renderer.create(
+  const testInstance = TestRenderer.create(
     <BrightcoveVideo {...defaultVideoProps} autoplay />
   );
 
-  const rootInstance = root.getInstance();
+  const rootInstance = testInstance.getInstance();
 
   rootInstance.setState({ isLaunched: true });
 
@@ -180,5 +178,5 @@ it("the player can trigger errors", () => {
     }
   });
 
-  expect(root.toJSON()).toMatchSnapshot();
+  expect(testInstance.toJSON()).toMatchSnapshot();
 });

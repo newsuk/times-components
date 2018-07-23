@@ -9,6 +9,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import adInit from "../src/utils/ad-init";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
@@ -43,51 +44,58 @@ export default () => {
     )
   );
 
-  it("should render multiple ad slots", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} slotName="header" />
-          <Ad {...props} slotName="pixel" />
-        </Fragment>
-      </AdComposer>
-    );
+  const tests = [
+    {
+      name: "multiple ad slots",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Fragment>
+              <Ad {...props} slotName="header" />
+              <Ad {...props} slotName="pixel" />
+            </Fragment>
+          </AdComposer>
+        );
 
-    const AdComponent = testInstance.root.findAllByType(Ad);
-    AdComponent[0].instance.setAdReady();
-    AdComponent[1].instance.setAdReady();
+        const AdComponent = testInstance.root.findAllByType(Ad);
+        AdComponent[0].instance.setAdReady();
+        AdComponent[1].instance.setAdReady();
 
-    expect(testInstance).toMatchSnapshot("1. multiple adverts");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "placeholder when isLoading",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Fragment>
+              <Ad {...props} isLoading slotName="header" />
+            </Fragment>
+          </AdComposer>
+        );
 
-  it("should render only the placeholder when isLoading", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} isLoading slotName="header" />
-        </Fragment>
-      </AdComposer>
-    );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "return null if there is an error in the loading of scripts",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <AdComposer adConfig={adConfig}>
+            <Fragment>
+              <Ad {...props} slotName="header" />
+            </Fragment>
+          </AdComposer>
+        );
 
-    expect(testInstance).toMatchSnapshot(
-      "2. loading state advert shows placeholder only"
-    );
-  });
+        const AdComponent = testInstance.root.findByType(Ad);
+        AdComponent.instance.setAdError();
 
-  it("should return null if there is an error in the loading of scripts", () => {
-    const testInstance = TestRenderer.create(
-      <AdComposer adConfig={adConfig}>
-        <Fragment>
-          <Ad {...props} slotName="header" />
-        </Fragment>
-      </AdComposer>
-    );
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
 
-    const AdComponent = testInstance.root.findByType(Ad);
-    AdComponent.instance.setAdError();
-
-    expect(testInstance).toMatchSnapshot(
-      "3. should not show when loading scripts errored"
-    );
-  });
+  iterator(tests);
 };

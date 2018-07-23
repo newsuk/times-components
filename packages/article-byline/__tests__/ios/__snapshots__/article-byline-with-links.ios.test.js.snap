@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render an inline element 1`] = `
+exports[`1. single inline element 1`] = `
 <View>
   <Text>
     Lindsay McIntosh Scottish Political Editor
@@ -8,7 +8,7 @@ exports[`1. Render an inline element 1`] = `
 </View>
 `;
 
-exports[`2. Render an author first 1`] = `
+exports[`2. with the author in the begining 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -21,7 +21,7 @@ exports[`2. Render an author first 1`] = `
 </View>
 `;
 
-exports[`3. Render an author last 1`] = `
+exports[`3. with the author at the end 1`] = `
 <View>
   <Text>
     RBS Six Nations 
@@ -34,7 +34,7 @@ exports[`3. Render an author last 1`] = `
 </View>
 `;
 
-exports[`4. Render multiple authors separated by commas 1`] = `
+exports[`4. with multiple authors separated by text with commas 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -60,7 +60,7 @@ exports[`4. Render multiple authors separated by commas 1`] = `
 </View>
 `;
 
-exports[`5. Render multiple authors separated by spaces 1`] = `
+exports[`5. with multiple authors separated by spaces 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -86,4 +86,4 @@ exports[`5. Render multiple authors separated by spaces 1`] = `
 </View>
 `;
 
-exports[`6. Render null when AST is empty 1`] = `null`;
+exports[`6. null with an empty ast 1`] = `null`;

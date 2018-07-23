@@ -1,5 +1,3 @@
-import sharedStyling from "../topic-styling";
+import shared from "../topic-styling";
 
-describe("Topic styling tests on web", () => {
-  sharedStyling();
-});
+shared();

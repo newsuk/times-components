@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopicHead styling tests on android should render styling correctly 1`] = `
+exports[`should render styling correctly 1`] = `
 <View
   style={
     Object {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { mount } from "enzyme";
+import { iterator } from "@times-components/test-utils";
 import serializers from "./serializers";
 import Card from "../../src/card";
 
@@ -13,32 +14,37 @@ const props = {
   showImage: true
 };
 
-describe("web", () => {
-  jest.useFakeTimers();
+jest.useFakeTimers();
 
-  serializers();
+serializers();
 
-  it("should render a loading state", () => {
-    const output = mount(
-      <Card {...props} isLoading>
-        <Text>Loading state</Text>
-      </Card>
-    );
+const tests = [
+  {
+    name: "card loading state",
+    test: () => {
+      const wrapper = mount(
+        <Card {...props} isLoading>
+          <Text>Loading state</Text>
+        </Card>
+      );
 
-    expect(output).toMatchSnapshot("1. should render a loading state");
-  });
+      expect(wrapper).toMatchSnapshot();
+    }
+  },
+  {
+    name: "card with reversed loading state",
+    test: () => {
+      const wrapper = mount(
+        <Card {...props} isLoading isReversed>
+          <Text>Loading in reverse</Text>
+        </Card>
+      );
 
-  it("should render a reversed loading component", () => {
-    const output = mount(
-      <Card {...props} isLoading isReversed>
-        <Text>Loading in reverse</Text>
-      </Card>
-    );
+      jest.runTimersToTime();
 
-    jest.runTimersToTime();
+      expect(wrapper).toMatchSnapshot();
+    }
+  }
+];
 
-    expect(output).toMatchSnapshot(
-      "2. should render a reversed loading component"
-    );
-  });
-});
+iterator(tests);

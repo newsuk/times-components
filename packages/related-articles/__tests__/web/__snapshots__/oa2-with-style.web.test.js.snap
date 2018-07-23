@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. default styles 1`] = `
+exports[`default styles 1`] = `
 .c0 .opinionContentContainerClass {
   min-height: 250px;
 }

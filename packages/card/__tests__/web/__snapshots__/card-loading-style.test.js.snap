@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render a loading state 1`] = `
+exports[`1. card loading state 1`] = `
 <style>
 {
   "IS1": {
@@ -269,7 +269,7 @@ exports[`1. should render a loading state 1`] = `
 </div>
 `;
 
-exports[`2. should render a reversed loading component 1`] = `
+exports[`2. card with reversed loading state 1`] = `
 <style>
 {
   "IS1": {

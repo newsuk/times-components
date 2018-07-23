@@ -21,9 +21,9 @@ export default () => {
     )
   );
 
-  it("should render the advert placeholder", () => {
+  it("advert placeholder", () => {
     const wrapper = shallow(<AdPlaceholder height={300} width={970} />);
 
-    expect(wrapper).toMatchSnapshot("1. advert placeholder");
+    expect(wrapper).toMatchSnapshot();
   });
 };

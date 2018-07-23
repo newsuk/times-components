@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
+import { iterator } from "@times-components/test-utils";
 import authorsFixture from "../fixtures/authors.json";
 
 const styles = {
@@ -12,34 +13,46 @@ const styles = {
 
 export default Component => {
   const renderArticleByline = props =>
-    renderer.create(
+    TestRenderer.create(
       <View>
         <Component {...props} />
       </View>
     );
 
-  it("should render with a single author", () => {
-    const tree = renderArticleByline({
-      ast: authorsFixture.singleAuthor
-    });
-    expect(tree).toMatchSnapshot("1. Render a single author");
-  });
+  const tests = [
+    {
+      name: "with a single author",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.singleAuthor
+        });
 
-  it("should render with a given section colour", () => {
-    const tree = renderArticleByline({
-      ast: authorsFixture.singleAuthor,
-      color: "blue"
-    });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "with a given section colour",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.singleAuthor,
+          color: "blue"
+        });
 
-    expect(tree).toMatchSnapshot("2. Render a given section colour");
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "with given styles",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.singleAuthor,
+          style: styles
+        });
 
-  it("should render with given styles", () => {
-    const tree = renderArticleByline({
-      ast: authorsFixture.singleAuthor,
-      style: styles
-    });
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
 
-    expect(tree).toMatchSnapshot("3. Render an author with given styles");
-  });
+  iterator(tests);
 };

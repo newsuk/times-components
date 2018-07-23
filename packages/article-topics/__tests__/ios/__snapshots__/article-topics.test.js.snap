@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a group of topics in the correct order 1`] = `
+exports[`1. group of topics 1`] = `
 <View
   style={
     Object {
@@ -33,7 +33,7 @@ exports[`1. Render a group of topics in the correct order 1`] = `
 </View>
 `;
 
-exports[`2. Render a single topic 1`] = `
+exports[`2. single topic 1`] = `
 <Link
   url="/topic/football"
 >
@@ -67,7 +67,7 @@ exports[`2. Render a single topic 1`] = `
 </Link>
 `;
 
-exports[`Article Topics test on ios:  onPress sends analytics 1`] = `
+exports[`4. onpress sends analytics 1`] = `
 Array [
   Array [
     Object {
