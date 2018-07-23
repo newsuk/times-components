@@ -1,11 +1,12 @@
 import React from "react";
 import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
+import ArticleImage from "@times-components/article-image";
+import KeyFacts from "@times-components/key-facts";
+import { renderTrees } from "@times-components/markup";
+import PullQuote from "@times-components/pull-quote";
 import { spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
-import { renderTrees } from "@times-components/markup";
-import ArticleImage from "@times-components/article-image";
-import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 // To fix a jest coverage issue
@@ -60,6 +61,12 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
             />
           </View>
         )
+      };
+    },
+    keyFacts(key, attributes, renderedChildren, indx, node) {
+      return {
+        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        shouldRenderChildren: false
       };
     },
     link(key, attributes, children) {

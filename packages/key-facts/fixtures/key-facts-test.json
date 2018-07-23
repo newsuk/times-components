@@ -1,0 +1,104 @@
+{
+  "name": "keyFacts",
+  "attributes": {
+    "title": "Example title"
+  },
+  "children": [
+    {
+      "name": "unorderedList",
+      "children": [
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Example bullet text"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "An example "
+              },
+              "children": []
+            },
+            {
+              "name": "link",
+              "attributes": {
+                "href": "https://www.thetimes.co.uk/test/link",
+                "target": "_blank",
+                "type": "topic"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "link"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "More example text."
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Example text "
+              },
+              "children": []
+            },
+            {
+              "name": "bold",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "this is bold "
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "italic",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "this is in italics."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

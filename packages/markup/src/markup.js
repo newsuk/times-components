@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
 import Ad from "@times-components/ad";
+import KeyFacts from "@times-components/key-facts";
 import PullQuote from "@times-components/pull-quote";
 import { colours } from "@times-components/styleguide";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
@@ -61,6 +62,12 @@ const defaultRenderers = {
           {renderedChildren}
         </Text>
       )
+    };
+  },
+  keyFacts(key, attributes, renderedChildren, indx, node) {
+    return {
+      element: <KeyFacts ast={node} key={key} onLinkPress={() => {}} />,
+      shouldRenderChildren: false
     };
   },
   paragraph(key, attributes, renderedChildren) {
