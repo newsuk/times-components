@@ -112,7 +112,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          leadAndTwo1RelatedArticleFixture.data
+          leadAndTwo1RelatedArticleFixture().data
         )
     },
     {
@@ -121,7 +121,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          leadAndTwo2RelatedArticlesFixture.data
+          leadAndTwo2RelatedArticlesFixture().data
         )
     },
     {
@@ -130,7 +130,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          leadAndTwo3RelatedArticlesFixture.data
+          leadAndTwo3RelatedArticlesFixture().data
         )
     },
     {
@@ -139,7 +139,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          opinionAndTwo1RelatedArticleFixture.data
+          opinionAndTwo1RelatedArticleFixture().data
         )
     },
     {
@@ -148,7 +148,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          opinionAndTwo2RelatedArticlesFixture.data
+          opinionAndTwo2RelatedArticlesFixture().data
         )
     },
     {
@@ -157,7 +157,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          opinionAndTwo3RelatedArticlesFixture.data
+          opinionAndTwo3RelatedArticlesFixture().data
         )
     }
   ]
