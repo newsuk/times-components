@@ -14,7 +14,6 @@ import fullArticleFixture, {
   longContent,
   videoLeadAsset
 } from "./fixtures/full-article";
-import articleWithKeyFacts from "./fixtures/article-with-key-facts.json";
 import articleAdConfig from "./fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
@@ -85,12 +84,6 @@ export default {
             leadAsset: videoLeadAsset()
           })
         })
-    },
-    {
-      type: "story",
-      name: "Article with key facts",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: articleWithKeyFacts })
     },
     {
       type: "story",
