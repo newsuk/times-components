@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -50,10 +50,10 @@
     "webpack": "4.6.0"
   },
   "dependencies": {
-    "@times-components/article": "3.1.0",
-    "@times-components/author-profile": "3.0.4",
+    "@times-components/article": "3.1.1",
+    "@times-components/author-profile": "3.0.5",
     "@times-components/provider": "0.38.2",
-    "@times-components/topic": "2.0.4",
+    "@times-components/topic": "2.0.5",
     "@times-components/utils": "2.0.2",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.2",
