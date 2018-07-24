@@ -8,7 +8,6 @@ export default (platformAdConfig, articleAdConfig) => ({
     testmode: platformAdConfig.testMode,
     cont_type: "art",
     av: platformAdConfig.appVersion,
-    ft: "",
     kw: articleAdConfig.keywords.join(),
     st: "Member",
     aid: articleAdConfig.id,

@@ -32,7 +32,8 @@ export default makeTest => {
     };
 
     const articleAdConfig = {
-      headline: ""
+      headline: "This is a headline",
+      keywords: ["this", "is", "a", "headline"]
     };
 
     const adTargetingConfig = getAdTargetingConfig(
