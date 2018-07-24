@@ -3,7 +3,6 @@
 exports[`1. video 1`] = `
 <View
   accessibilityLabel="splash-component"
-  isTVSelectable={true}
   testID="splash-component"
 >
   <View>
@@ -39,7 +38,6 @@ exports[`1. video 1`] = `
 exports[`2. video without a poster image 1`] = `
 <View
   accessibilityLabel="splash-component"
-  isTVSelectable={true}
   testID="splash-component"
 >
   <View>

@@ -2,7 +2,6 @@
 
 exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 <View
-  isTVSelectable={true}
   style={
     Object {
       "opacity": 1,
@@ -17,7 +16,6 @@ exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 
 exports[`Link test on ios Link renders correctly 1`] = `
 <View
-  isTVSelectable={true}
   style={
     Object {
       "opacity": 1,

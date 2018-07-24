@@ -4429,7 +4429,6 @@ exports[`4. author profile page error state 1`] = `
     accessibilityComponentType="button"
     accessibilityLabel="R E T R Y"
     accessibilityTraits="button"
-    isTVSelectable={true}
     style={
       Object {
         "alignItems": "center",
