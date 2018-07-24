@@ -285,7 +285,11 @@ export default () => {
         const setStateSpy = jest.spyOn(ArticleList.prototype, "setState");
 
         const component = mount(
-          <ArticleList {...articleListProps} articles={articleListFixture} />
+          <ArticleList
+            {...articleListProps}
+            articles={articleListFixture.slice(0, 1)}
+            count={1}
+          />
         );
 
         const makeEntries = nodes =>
@@ -329,7 +333,11 @@ export default () => {
         );
 
         const component = mount(
-          <ArticleList {...articleListProps} articles={articleListFixture} />
+          <ArticleList
+            {...articleListProps}
+            articles={articleListFixture.slice(0, 1)}
+            count={1}
+          />
         );
 
         component.unmount();
@@ -345,7 +353,11 @@ export default () => {
         delete window.IntersectionObserver;
 
         const component = mount(
-          <ArticleList {...articleListProps} articles={articleListFixture} />
+          <ArticleList
+            {...articleListProps}
+            articles={articleListFixture.slice(0, 1)}
+            count={1}
+          />
         );
 
         expect(component.unmount.bind(component)).not.toThrow();
