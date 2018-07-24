@@ -6,8 +6,8 @@ import {
 
 export const propTypes = {
   ...basePropTypes,
-  onArticlePress: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired
+  onNext: PropTypes.func.isRequired,
+  onPrev: PropTypes.func.isRequired
 };
 
 export const defaultProps = {

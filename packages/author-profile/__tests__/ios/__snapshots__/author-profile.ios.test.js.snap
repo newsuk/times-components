@@ -212,137 +212,147 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
 `;
 
 exports[`7. an article list header 1`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
+  <View>
+    <View
+      pointerEvents="box-none"
+    >
+      <Image
+        aspectRatio={1}
+        uri="https://image.io"
+      />
+      <Text
+        accessibilityRole="heading"
       >
         Name
-      </h1>
-      <h2
+      </Text>
+      <Text
+        accessibilityRole="heading"
         aria-level="2"
-        role="heading"
       >
         job title
-      </h2>
-      <div>
-        <div>
+      </Text>
+      <View>
+        <View>
           <IconTwitter
             height={15}
             width={15}
           />
-        </div>
+        </View>
         <TextLink
-          testID="twitterLink"
           url="https://twitter.com/twitter"
         >
           @
           twitter
         </TextLink>
-      </div>
-      <div>
-        <div>
+      </View>
+      <View>
+        <Text>
           Camilla Long
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`8. an article list header with no bio, job title, name or twitter 1`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
-    </div>
-  </div>
-</header>
+  <View>
+    <View
+      pointerEvents="box-none"
+    >
+      <Image
+        aspectRatio={1}
+        uri="https://image.io"
+      />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`9. an article list header loading 1`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
+  <View>
+    <View>
       <Gradient />
-    </div>
-  </div>
-</header>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`10. an article list header only changes on loading state change 1`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
+  <View>
+    <View>
       <Gradient />
-    </div>
-  </div>
-</header>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`10. an article list header only changes on loading state change 2`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri=""
-        />
-      </div>
-      <h2
+  <View>
+    <View
+      pointerEvents="box-none"
+    >
+      <Image
+        aspectRatio={1}
+        uri=""
+      />
+      <Text
+        accessibilityRole="heading"
         aria-level="2"
-        role="heading"
       >
         title 1
-      </h2>
-    </div>
-  </div>
-</header>
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`10. an article list header only changes on loading state change 3`] = `
-<header
-  role="banner"
+<View
+  accessibilityRole="banner"
 >
-  <div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri=""
-        />
-      </div>
-      <h2
+  <View>
+    <View
+      pointerEvents="box-none"
+    >
+      <Image
+        aspectRatio={1}
+        uri=""
+      />
+      <Text
+        accessibilityRole="heading"
         aria-level="2"
-        role="heading"
       >
         title 1
-      </h2>
-    </div>
-  </div>
-</header>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`11. twitter link uses ontwitterlinkpress 1`] = `
+Array [
+  Array [
+    "event",
+    Object {
+      "twitter": "twitter",
+      "url": "https://twitter.com/twitter",
+    },
+  ],
+]
 `;
