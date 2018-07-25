@@ -4,6 +4,7 @@ import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
+  minimaliseTransform,
   minimalWebTransform,
   rnwTransform,
   stylePrinter
@@ -32,7 +33,12 @@ const styles = [
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  compose(stylePrinter, minimalWebTransform, rnwTransform(styles))
+  compose(
+    stylePrinter,
+    minimaliseTransform((value, key) => key !== "className"),
+    minimalWebTransform,
+    rnwTransform(styles)
+  )
 );
 
 it("key facts with title", () => {

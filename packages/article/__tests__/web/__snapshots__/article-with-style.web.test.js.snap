@@ -175,7 +175,7 @@ Array [
 
 @media (min-width:768px) {
   .c1 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
@@ -184,7 +184,7 @@ Array [
 
 @media (min-width:1024px) {
   .c1 {
-    width: 58.33333%;
+    width: 56.2%;
     margin-bottom: 15px;
   }
 }
@@ -204,7 +204,7 @@ Array [
 
 @media (min-width:768px) {
   .c4 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
   }
 }
@@ -263,7 +263,7 @@ Array [
 
 @media (min-width:1024px) {
   .c9 {
-    width: 58.33333%;
+    width: 56.2%;
     margin: 0 auto;
     padding-bottom: 20px;
   }
@@ -280,20 +280,20 @@ Array [
 
 @media (min-width:768px) {
   .c12 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
   .c12 {
-    width: 58.33333%;
+    width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
@@ -302,7 +302,7 @@ Array [
 
 @media (min-width:1024px) {
   .c13 {
-    width: 58.33333%;
+    width: 56.2%;
   }
 }
 
@@ -315,7 +315,7 @@ Array [
 
 @media (min-width:768px) {
   .c15 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
@@ -324,7 +324,7 @@ Array [
 
 @media (min-width:1024px) {
   .c15 {
-    width: 58.33333%;
+    width: 56.2%;
   }
 }
 
@@ -348,7 +348,7 @@ Array [
 
 @media (min-width:768px) {
   .c18 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
@@ -357,13 +357,13 @@ Array [
 
 @media (min-width:1024px) {
   .c18 {
-    width: 58.33333%;
+    width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c19 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
@@ -372,7 +372,7 @@ Array [
 
 @media (min-width:1024px) {
   .c19 {
-    width: 58.33333%;
+    width: 56.2%;
   }
 }
 
@@ -962,7 +962,7 @@ Array [
 
 @media (min-width:768px) {
   .c0 {
-    width: 83.33333333%;
+    width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;

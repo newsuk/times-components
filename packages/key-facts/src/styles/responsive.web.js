@@ -8,11 +8,11 @@ export const KeyFactsResponsiveContainer = withResponsiveStyles(
   View,
   {
     base: () => `
-    margin: 0 10px;
+    margin: 5px 10px;
   `,
     mediumUp: () => `
     flex-direction: row;
-    margin: 0 auto;
+    margin: 10px auto;
     width: ${config.mediumBpWidth};
   `,
     wideUp: () => `

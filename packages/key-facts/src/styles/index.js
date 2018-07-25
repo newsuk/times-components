@@ -8,13 +8,15 @@ import {
 
 const styles = StyleSheet.create({
   container: {
+    marginBottom: 5,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
+    marginTop: 5
   },
   bullet: {
     backgroundColor: colours.functional.bullet,
     height: 8,
-    top: 1,
+    top: 2,
     transform: [{ rotate: "45deg" }],
     width: 8
   },
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
     color: colours.functional.primary,
     fontFamily: fonts.body,
     fontSize: fontSizes.secondary,
-    lineHeight: 30,
+    lineHeight: 27,
     marginTop: -8,
     paddingLeft: spacing(3),
     width: "95%"

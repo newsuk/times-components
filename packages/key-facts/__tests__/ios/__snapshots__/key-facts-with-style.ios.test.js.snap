@@ -4,8 +4,10 @@ exports[`key facts with title 1`] = `
 <View
   style={
     Object {
+      "marginBottom": 5,
       "marginLeft": 10,
       "marginRight": 10,
+      "marginTop": 5,
     }
   }
 >
@@ -26,230 +28,194 @@ exports[`key facts with title 1`] = `
     <View
       style={
         Object {
-          "marginLeft": 10,
-          "marginRight": 10,
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
-            "marginBottom": 20,
-            "paddingLeft": 1,
-            "width": "100%",
+            "backgroundColor": "#103546",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#103546",
-              "height": 8,
-              "top": 1,
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 8,
-            }
-          }
-        />
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 30,
-              "marginTop": -8,
-              "paddingLeft": 15,
-              "width": "95%",
-            }
-          }
-        >
-          Example bullet text
-        </Text>
-      </View>
+        Example bullet text
+      </Text>
     </View>
     <View
       style={
         Object {
-          "marginLeft": 10,
-          "marginRight": 10,
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
-            "marginBottom": 20,
-            "paddingLeft": 1,
-            "width": "100%",
+            "backgroundColor": "#103546",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#103546",
-              "height": 8,
-              "top": 1,
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 8,
-            }
-          }
-        />
+        An example 
         <Text
           style={
             Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 30,
-              "marginTop": -8,
-              "paddingLeft": 15,
-              "width": "95%",
+              "color": "#006699",
+              "textDecorationLine": "underline",
             }
           }
         >
-          An example 
-          <Text
-            style={
-              Object {
-                "color": "#006699",
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            link
-          </Text>
+          link
         </Text>
-      </View>
+      </Text>
     </View>
     <View
       style={
         Object {
-          "marginLeft": 10,
-          "marginRight": 10,
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
-            "marginBottom": 20,
-            "paddingLeft": 1,
-            "width": "100%",
+            "backgroundColor": "#103546",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#103546",
-              "height": 8,
-              "top": 1,
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 8,
-            }
-          }
-        />
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 30,
-              "marginTop": -8,
-              "paddingLeft": 15,
-              "width": "95%",
-            }
-          }
-        >
-          More example text.
-        </Text>
-      </View>
+        More example text.
+      </Text>
     </View>
     <View
       style={
         Object {
-          "marginLeft": 10,
-          "marginRight": 10,
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
-            "marginBottom": 20,
-            "paddingLeft": 1,
-            "width": "100%",
+            "backgroundColor": "#103546",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#103546",
-              "height": 8,
-              "top": 1,
-              "transform": Array [
-                Object {
-                  "rotate": "45deg",
-                },
-              ],
-              "width": 8,
-            }
-          }
-        />
+        Example text 
         <Text
           style={
             Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 30,
-              "marginTop": -8,
-              "paddingLeft": 15,
-              "width": "95%",
+              "fontWeight": "bold",
             }
           }
         >
-          Example text 
-          <Text
-            style={
-              Object {
-                "fontWeight": "bold",
-              }
-            }
-          >
-            this is bold 
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontStyle": "italic",
-              }
-            }
-          >
-            this is in italics.
-          </Text>
+          this is bold 
         </Text>
-      </View>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
     </View>
   </View>
 </View>
