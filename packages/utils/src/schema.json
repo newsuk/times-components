@@ -649,7 +649,7 @@
                   "name": "maxCount",
                   "description": "",
                   "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": "5"
+                  "defaultValue": null
                 }
               ],
               "type": {
