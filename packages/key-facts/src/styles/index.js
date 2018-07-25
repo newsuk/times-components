@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   bullet: {
     backgroundColor: colours.functional.bullet,
     height: 8,
-    top: 1,
+    top: 2,
     transform: [{ rotate: "45deg" }],
     width: 8
   },

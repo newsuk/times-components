@@ -46,7 +46,7 @@ exports[`key facts with title 1`] = `
             Object {
               "backgroundColor": "#103546",
               "height": 8,
-              "top": 1,
+              "top": 2,
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -96,7 +96,7 @@ exports[`key facts with title 1`] = `
             Object {
               "backgroundColor": "#103546",
               "height": 8,
-              "top": 1,
+              "top": 2,
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -156,7 +156,7 @@ exports[`key facts with title 1`] = `
             Object {
               "backgroundColor": "#103546",
               "height": 8,
-              "top": 1,
+              "top": 2,
               "transform": Array [
                 Object {
                   "rotate": "45deg",
@@ -206,7 +206,7 @@ exports[`key facts with title 1`] = `
             Object {
               "backgroundColor": "#103546",
               "height": 8,
-              "top": 1,
+              "top": 2,
               "transform": Array [
                 Object {
                   "rotate": "45deg",
