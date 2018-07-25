@@ -1,7 +1,7 @@
+import { config } from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
-const mediumBpWidth = "83.33333333%";
-const wideBpWidth = "58.33333%";
+const { mediumBpWidth, wideBpWidth } = config;
 
 const mediumBpPositioning = `
   width: ${mediumBpWidth};
