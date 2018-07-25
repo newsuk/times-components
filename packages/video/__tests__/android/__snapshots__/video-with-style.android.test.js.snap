@@ -9,7 +9,7 @@ exports[`1. video 1`] = `
     }
   }
 >
-  <PlayIcon
+  <Image
     style={
       Object {
         "height": 200,

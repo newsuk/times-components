@@ -12,7 +12,7 @@ import { iterator } from "@times-components/test-utils";
 import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
-jest.mock("@times-components/image", () => "PlayIcon");
+jest.mock("@times-components/image", () => "Image");
 
 export default () => {
   addSerializers(

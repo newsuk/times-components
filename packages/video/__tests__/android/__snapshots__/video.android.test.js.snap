@@ -5,7 +5,7 @@ exports[`1. video 1`] = `
   accessibilityLabel="splash-component"
   testID="splash-component"
 >
-  <PlayIcon
+  <Image
     uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
   <View>
