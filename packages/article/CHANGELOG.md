@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.5"></a>
+## [3.1.5](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.4...@times-components/article@3.1.5) (2018-07-25)
+
+
+### Bug Fixes
+
+* Android Byline styling fix ([#1142](https://github.com/newsuk/times-components/issues/1142)) ([2c1673f](https://github.com/newsuk/times-components/commit/2c1673f))
+
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.3...@times-components/article@3.1.4) (2018-07-25)
 
