@@ -15,17 +15,9 @@ exports[`1. paidonly video for unpaid users 1`] = `
 `;
 
 exports[`2. paidonly video for paid users 1`] = `
-<div
-  data-testid="video-component"
->
+<div>
   <video
-    className="video-js"
     controls={true}
-    data-account="[account id]"
-    data-application-id={true}
-    data-embed="default"
-    data-player="[player id]"
-    data-video-id="[video id]"
     id="[video id]-[account id]-1"
     poster="b9a31d3949b1882a09ed2f8508d538f3"
   />
@@ -33,17 +25,9 @@ exports[`2. paidonly video for paid users 1`] = `
 `;
 
 exports[`3. non-paidonly video for unpaid users 1`] = `
-<div
-  data-testid="video-component"
->
+<div>
   <video
-    className="video-js"
     controls={true}
-    data-account="[account id]"
-    data-application-id={true}
-    data-embed="default"
-    data-player="[player id]"
-    data-video-id="[video id]"
     id="[video id]-[account id]-2"
     poster="b9a31d3949b1882a09ed2f8508d538f3"
   />
@@ -51,19 +35,20 @@ exports[`3. non-paidonly video for unpaid users 1`] = `
 `;
 
 exports[`4. non-paidonly video for paid users 1`] = `
-<div
-  data-testid="video-component"
->
+<div>
   <video
-    className="video-js"
     controls={true}
-    data-account="[account id]"
-    data-application-id={true}
-    data-embed="default"
-    data-player="[player id]"
-    data-video-id="[video id]"
     id="[video id]-[account id]-3"
     poster="b9a31d3949b1882a09ed2f8508d538f3"
+  />
+</div>
+`;
+
+exports[`5. video without a poster image 1`] = `
+<div>
+  <video
+    controls={true}
+    id="[video id]-[account id]-4"
   />
 </div>
 `;

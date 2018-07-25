@@ -14,6 +14,7 @@ import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/image", () => "PlayIcon");
 
 export default () => {
   addSerializers(
@@ -23,7 +24,10 @@ export default () => {
       print,
       minimalNativeTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key.includes("Class")
+        (value, key) =>
+          key === "style" ||
+          key === "nativeBackgroundAndroid" ||
+          key.includes("Class")
       ),
       replacePropTransform(
         (value, key) => (key === "uri" ? hash(value) : value)

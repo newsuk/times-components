@@ -16,11 +16,15 @@ import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
 
+const omitProps = new Set(["className", "style"]);
+
 addSerializers(
   expect,
   compose(
     stylePrinter,
-    minimaliseTransform((value, key) => key === "style"),
+    minimaliseTransform(
+      (value, key) => omitProps.has(key) || key.includes("data-")
+    ),
     minimalWebTransform,
     replacePropTransform(
       (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
@@ -68,6 +72,18 @@ const tests = [
     name: "non-paidOnly video for paid users",
     test: () => {
       testSubscriberAndVideoPaidStatus({ videoIsPaidOnly: false });
+    }
+  },
+  {
+    name: "video without a poster image",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <IsPaidSubscriber.Provider value>
+          <Video {...defaultVideoProps} paidOnly={false} poster={null} />
+        </IsPaidSubscriber.Provider>
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
     }
   }
 ];
