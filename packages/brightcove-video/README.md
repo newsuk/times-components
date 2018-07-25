@@ -2,7 +2,9 @@
 
 ## Status of this package
 
-This module is deprecated. Please use the [video](https://github.com/newsuk/times-components/tree/master/packages/video) package instead.
+This module is deprecated. Please use the
+[video](https://github.com/newsuk/times-components/tree/master/packages/video)
+package instead.
 
 # Native
 
