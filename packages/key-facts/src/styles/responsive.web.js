@@ -12,7 +12,7 @@ export const KeyFactsResponsiveContainer = withResponsiveStyles(
   `,
     mediumUp: () => `
     flex-direction: row;
-    margin: 0 auto;
+    margin: 10px auto;
     width: ${config.mediumBpWidth};
   `,
     wideUp: () => `
