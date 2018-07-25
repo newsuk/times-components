@@ -120,6 +120,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
                 "lineHeight": 21,
+                "paddingTop": 5,
               }
             }
           >
@@ -887,6 +888,7 @@ exports[`9. an article with updated byline 2`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
                 "lineHeight": 21,
+                "paddingTop": 5,
               }
             }
           >
