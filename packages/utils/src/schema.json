@@ -2,7 +2,7 @@
   "data": {
     "__schema": {
       "queryType": { "name": "Query" },
-      "mutationType": null,
+      "mutationType": { "name": "Mutation" },
       "subscriptionType": null,
       "types": [
         {
@@ -298,7 +298,7 @@
               "name": "slug",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "Slug", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -352,16 +352,12 @@
                 }
               ],
               "type": {
-                "kind": "NON_NULL",
+                "kind": "LIST",
                 "name": null,
                 "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "Article",
-                    "ofType": null
-                  }
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
                 }
               },
               "isDeprecated": false,
@@ -473,7 +469,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -512,6 +508,31 @@
                 "kind": "LIST",
                 "name": null,
                 "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "keywords",
+              "description":
+                "A field that is populated from the article headline, a string delineated with commas such as [\"this,is,a,headline\"]",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -648,7 +669,14 @@
             {
               "name": "topics",
               "description": "Topics that the requested article belong to",
-              "args": [],
+              "args": [
+                {
+                  "name": "maxCount",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": null
+                }
+              ],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -721,6 +749,16 @@
           "name": "String",
           "description":
             "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "UUID",
+          "description": "Represents a UUID",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -906,7 +944,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1023,7 +1061,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1286,6 +1324,11 @@
               "kind": "OBJECT",
               "name": "ObituariesLeadAndTwoSlice",
               "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "OpinionOneAndTwoSlice",
+              "ofType": null
             }
           ]
         },
@@ -1530,7 +1573,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1659,7 +1702,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1807,7 +1850,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1866,7 +1909,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2132,6 +2175,189 @@
           ],
           "inputFields": null,
           "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Mutation",
+          "description": "",
+          "fields": [
+            {
+              "name": "saveBookmarks",
+              "description": "",
+              "args": [
+                {
+                  "name": "bookmarks",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "INPUT_OBJECT",
+                          "name": "BookmarkSaveInput",
+                          "ofType": null
+                        }
+                      }
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INTERFACE",
+                      "name": "Sharable",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "unsaveBookmarks",
+              "description": "",
+              "args": [
+                {
+                  "name": "bookmarks",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "INPUT_OBJECT",
+                          "name": "BookmarkUnsaveInput",
+                          "ofType": null
+                        }
+                      }
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "UUID",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "BookmarkSaveInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": "ID of resource being bookmarked",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "metadata",
+              "description":
+                "information about the bookmark as  key value pairs (e.g. sectionname=News)",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INTERFACE",
+          "name": "Sharable",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "Bookmark", "ofType": null }
+          ]
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "BookmarkUnsaveInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": "ID of resource being unbookmarked",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2921,6 +3147,16 @@
         },
         {
           "kind": "SCALAR",
+          "name": "Dictionary",
+          "description": "An dictionary of string-based key-value pairs",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
           "name": "RichText",
           "description": "An AST representing cross platform UI",
           "fields": null,
@@ -2930,12 +3166,35 @@
           "possibleTypes": null
         },
         {
-          "kind": "SCALAR",
-          "name": "Dictionary",
-          "description": "An dictionary of string-based key-value pairs",
-          "fields": null,
+          "kind": "OBJECT",
+          "name": "Bookmark",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "metadata",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
           "inputFields": null,
-          "interfaces": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Sharable", "ofType": null }
+          ],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3099,7 +3358,7 @@
               "name": "main",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "UUID", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -3107,7 +3366,7 @@
               "name": "lead",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "UUID", "ofType": null },
               "isDeprecated": true,
               "deprecationReason": "use main instead"
             }
@@ -3137,7 +3396,7 @@
               "name": "main",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "UUID", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -3145,7 +3404,7 @@
               "name": "opinion",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "UUID", "ofType": null },
               "isDeprecated": true,
               "deprecationReason": "use main instead"
             }
@@ -3256,7 +3515,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -3826,7 +4085,7 @@
           "kind": "OBJECT",
           "name": "LeadOneAndTwoSlice",
           "description":
-            "A lead article and two supporting articles. This slice can also represent lead and opinion related articles slices of the same name (lead-1-and-2-puffs, related-links-lead-and-2, related-links-opinion-and-2)",
+            "A lead article and two supporting articles. This slice can also represent lead related articles slice of the same name (lead-1-and-2-puffs, related-links-lead-and-2)",
           "fields": [
             {
               "name": "lead",
@@ -4656,7 +4915,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -4833,7 +5092,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -5270,7 +5529,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -5369,7 +5628,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -5428,7 +5687,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -5702,7 +5961,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -5784,6 +6043,1317 @@
           "interfaces": [
             { "kind": "INTERFACE", "name": "Section", "ofType": null }
           ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "OpinionOneAndTwoSlice",
+          "description":
+            "A lead opinion related articles slice (related-links-opinion-and-2)",
+          "fields": [
+            {
+              "name": "opinion",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExpirableFlagInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "type",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "ENUM", "name": "Flag", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "duration",
+              "description":
+                "The number of seconds for which this flag applies following the publishedTime. Null would apply indefinitely.",
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ArticleInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "leadAsset",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "MediaInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "byline",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Markup", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "expirableFlags",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INPUT_OBJECT",
+                      "name": "ExpirableFlagInput",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "headline",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "id",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "label",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "commentsEnabled",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "commercialTags",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "section",
+              "description": "",
+              "type": { "kind": "ENUM", "name": "SectionName", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "publicationName",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "ENUM",
+                  "name": "PublicationName",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "publishedTime",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "DateTime",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "relatedArticleSlice",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ArticleSliceInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "updatedTime",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "DateTime",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "standfirst",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "isLegacy",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "content",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INPUT_OBJECT",
+                      "name": "ContentFragmentInput",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "MediaInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "image",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ImageInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "video",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "VideoInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ImageInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "caption",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "credits",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "crops",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INPUT_OBJECT",
+                      "name": "CropInput",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "CropInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "imageId",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ratio",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Ratio", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "horizontalOffset",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "verticalOffset",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "width",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "height",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "VideoInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "caption",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "brightcovePolicyKey",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "brightcovePlayerId",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "brightcoveVideoId",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "brightcoveAccountId",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "paidOnly",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "skySports",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "posterImage",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ImageInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ArticleSliceInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "standardSlice",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StandardSliceInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "leadOneAndTwoSlice",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "LeadOneAndTwoSliceInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "opinionOneAndTwoSlice",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "OpinionOneAndTwoSliceInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "StandardSliceInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "items",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INPUT_OBJECT",
+                      "name": "TileInput",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "TileInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "articleId",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "headline",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "leadAsset",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "MediaInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "strapline",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "teaser",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "LeadOneAndTwoSliceInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "lead",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "OpinionOneAndTwoSliceInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "opinion",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "TileInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ContentFragmentInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "richText",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "RichTextFragmentInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ImageFragmentInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "video",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "VideoFragmentInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "interactive",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "InteractiveFragmentInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "RichTextFragmentInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "richText",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "RichText",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ImageFragmentInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "metadata",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ContentFragmentMetadataInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ImageInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ContentFragmentMetadataInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "display",
+              "description": "",
+              "type": { "kind": "ENUM", "name": "Display", "ofType": null },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "Display",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": [
+            {
+              "name": "primary",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "inline",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "fullwidth",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "VideoFragmentInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "metadata",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ContentFragmentMetadataInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "video",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "VideoInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "InteractiveFragmentInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "metadata",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ContentFragmentMetadataInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "interactive",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "InteractiveInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "InteractiveInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "caption",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "url",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "element",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "InteractiveElementInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "InteractiveElementInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "attributes",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Dictionary",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "value",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "AuthorCreateInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "name",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "jobTitle",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "biography",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Markup", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": "URL for the image of an author",
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "twitter",
+              "description": "Twitter handle for an author",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "hasLeadAssets",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "AuthorUpdateInput",
+          "description": "",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "name",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "jobTitle",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "biography",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Markup", "ofType": null }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": "URL for the image of an author",
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "twitter",
+              "description": "Twitter handle for an author",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "hasLeadAssets",
+              "description": "",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
         }
