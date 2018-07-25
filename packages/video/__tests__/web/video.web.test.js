@@ -4,15 +4,22 @@ import {
   addSerializers,
   compose,
   minimaliseTransform,
-  print
+  print,
+  replacePropTransform
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components/test-utils";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
 addSerializers(
   expect,
-  compose(print, minimaliseTransform((value, key) => key === "style"))
+  compose(
+    print,
+    minimaliseTransform((value, key) => key === "style"),
+    replacePropTransform(
+      (value, key) => (key === "poster" ? hash(value) : value)
+    )
+  )
 );
 
 const tests = [

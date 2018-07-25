@@ -13,7 +13,7 @@ exports[`1. video 1`] = `
     data-player="[player id]"
     data-video-id="[video id]"
     id="[video id]-[account id]-1"
-    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    poster="b9a31d3949b1882a09ed2f8508d538f3"
   />
 </div>
 `;

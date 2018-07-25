@@ -5,10 +5,11 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  replacePropTransform,
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
@@ -18,9 +19,12 @@ jest.mock("@times-components/image", () => "Image");
 addSerializers(
   expect,
   compose(
-    print,
+    stylePrinter,
     minimaliseTransform((value, key) => key === "style"),
     minimalWebTransform,
+    replacePropTransform(
+      (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
+    ),
     rnwTransform()
   )
 );
