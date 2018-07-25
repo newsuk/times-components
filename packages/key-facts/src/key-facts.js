@@ -19,41 +19,39 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   };
 
   const renderKeyFact = (item, listIndex) => (
-    <View key={`key-facts-${listIndex}`} style={styles.container}>
-      <View style={styles.bulletContainer}>
-        <View style={styles.bullet} />
-        <Text style={styles.text}>
-          {item.children.map((data, listItemIndex) =>
-            renderTree(
-              data,
-              {
-                link(key, attributes, renderedChildren) {
-                  const { canonicalId, href: url, type } = attributes;
-                  return {
-                    element: (
-                      <TextLink
-                        key={key}
-                        onPress={e =>
-                          onLinkPress(e, {
-                            canonicalId,
-                            type,
-                            url
-                          })
-                        }
-                        style={styles.link}
-                        url={url}
-                      >
-                        {renderedChildren}
-                      </TextLink>
-                    )
-                  };
-                }
-              },
-              `key-facts-${listIndex}-${listItemIndex}`
-            )
-          )}
-        </Text>
-      </View>
+    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
+      <View style={styles.bullet} />
+      <Text style={styles.text}>
+        {item.children.map((data, listItemIndex) =>
+          renderTree(
+            data,
+            {
+              link(key, attributes, renderedChildren) {
+                const { canonicalId, href: url, type } = attributes;
+                return {
+                  element: (
+                    <TextLink
+                      key={key}
+                      onPress={e =>
+                        onLinkPress(e, {
+                          canonicalId,
+                          type,
+                          url
+                        })
+                      }
+                      style={styles.link}
+                      url={url}
+                    >
+                      {renderedChildren}
+                    </TextLink>
+                  )
+                };
+              }
+            },
+            `key-facts-${listIndex}-${listItemIndex}`
+          )
+        )}
+      </Text>
     </View>
   );
 
