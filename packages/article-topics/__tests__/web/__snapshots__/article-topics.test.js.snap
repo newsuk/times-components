@@ -7,6 +7,7 @@ exports[`1. group of topics 1`] = `
       "flexDirection": "row",
       "flexWrap": "wrap",
       "justifyContent": "center",
+      "marginBottom": "10px",
     }
   }
 >
@@ -34,40 +35,48 @@ exports[`1. group of topics 1`] = `
 `;
 
 exports[`2. single topic 1`] = `
-<Link
-  index="0"
-  responsiveLinkStyles={null}
-  target={null}
-  url="/topic/football"
->
-  <View
-    style={
-      Object {
-        "borderColor": "#DBDBDB",
-        "borderRadius": 2,
-        "borderWidth": 1,
-        "marginRight": "10px",
-        "marginTop": "10px",
-        "paddingBottom": 12,
-        "paddingLeft": "15px",
-        "paddingRight": "15px",
-        "paddingTop": 12,
-      }
+<View
+  style={
+    Object {
+      "marginRight": "10px",
+      "marginTop": "10px",
     }
+  }
+>
+  <Link
+    index="0"
+    responsiveLinkStyles={null}
+    target={null}
+    url="/topic/football"
   >
-    <Text
+    <View
       style={
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
+          "borderColor": "#DBDBDB",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "paddingBottom": 12,
+          "paddingLeft": "15px",
+          "paddingRight": "15px",
+          "paddingTop": 12,
         }
       }
     >
-      Football
-    </Text>
-  </View>
-</Link>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "paddingTop": "5px",
+          }
+        }
+      >
+        Football
+      </Text>
+    </View>
+  </Link>
+</View>
 `;
 
 exports[`4. onpress sends analytics 1`] = `

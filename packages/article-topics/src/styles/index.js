@@ -1,27 +1,14 @@
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
+import sharedStyles from "./shared";
 
-const styles = {
-  container: {
-    borderColor: colours.functional.keyline,
-    borderRadius: 2,
-    borderWidth: 1,
-    paddingBottom: 12,
-    paddingLeft: spacing(3),
-    paddingRight: spacing(3),
-    paddingTop: 12,
-    marginRight: spacing(2),
-    marginTop: spacing(2)
-  },
+const styles = StyleSheet.create({
+  ...sharedStyles,
   text: {
-    color: colours.functional.secondary,
-    fontFamily: fonts.supporting,
-    fontSize: 13
-  },
-  topicGroup: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center"
+    ...sharedStyles.text,
+    // Gill Sans hack
+    paddingTop: spacing(1)
   }
-};
+});
 
 export default styles;

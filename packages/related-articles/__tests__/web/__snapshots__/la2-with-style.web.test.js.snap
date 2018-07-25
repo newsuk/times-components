@@ -187,9 +187,6 @@ exports[`default styles 1`] = `
     "fontSize": "13px",
     "lineHeight": "15px",
   },
-  "IS6": {
-    "marginTop": "10px",
-  },
   "S1": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
@@ -282,6 +279,7 @@ exports[`default styles 1`] = `
     "border-top-width": "0px",
     "display": "flex",
     "margin-bottom": "0px",
+    "margin-top": "0px",
   },
   "S2": {
     "-ms-flex-align": "center",
@@ -370,7 +368,7 @@ exports[`default styles 1`] = `
 </style>
 
 <div
-  className="S17 IS6"
+  className="S17"
 >
   <div
     className="S2"
