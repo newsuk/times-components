@@ -30,7 +30,7 @@ const styles = {
     color: colours.functional.primary,
     fontFamily: fonts.body,
     fontSize: fontSizes.secondary,
-    lineHeight: 30,
+    lineHeight: 27,
     marginTop: -8,
     paddingLeft: spacing(3),
     width: "95%"
