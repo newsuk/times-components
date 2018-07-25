@@ -1,11 +1,12 @@
 import { Text, View } from "react-native";
 import React from "react";
-import { AdComposer } from "@times-components/ad";
+import { ApolloError } from "apollo-client";
 import articleListNoImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-no-images.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
+import adConfig from "./fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -14,8 +15,6 @@ const preventDefaultedAction = decorateAction =>
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
     }
   ]);
-
-const { defaultProps: { adConfig } } = AdComposer;
 
 const getProps = decorateAction => ({
   adConfig,
@@ -107,8 +106,9 @@ export default {
       name: "Error getting article list data",
       component: (_, { decorateAction }) => (
         <TrackedArticleList
+          adConfig={adConfig}
           analyticsStream={storybookReporter}
-          error
+          error={new ApolloError("Some Error")}
           refetch={preventDefaultedAction(decorateAction)("refetch")}
         />
       )
