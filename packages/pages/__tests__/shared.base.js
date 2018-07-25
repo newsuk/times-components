@@ -3,7 +3,7 @@ import { Article } from "../src/pages";
 import getAdTargetingConfig from "../src/client/ad-targeting-config";
 
 export default makeTest => {
-  it("renders correctly", () => {
+  it("article page", () => {
     const config = {};
     const fetch = () => {};
     const ArticlePageView = Article(config)(fetch);
@@ -32,7 +32,8 @@ export default makeTest => {
     };
 
     const articleAdConfig = {
-      headline: ""
+      headline: "This is a headline",
+      keywords: ["this", "is", "a", "headline"]
     };
 
     const adTargetingConfig = getAdTargetingConfig(
