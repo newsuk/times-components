@@ -17,7 +17,7 @@ exports[`1. key facts with title 1`] = `
       <div>
         An example 
         <a
-          href="https://www.thetimes.co.uk/test/link"
+          href="https://example.io"
           role="link"
         >
           link
@@ -60,7 +60,7 @@ exports[`2. key facts without title 1`] = `
       <div>
         An example 
         <a
-          href="https://www.thetimes.co.uk/test/link"
+          href="https://example.io"
           role="link"
         >
           link

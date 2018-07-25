@@ -30,7 +30,7 @@
             {
               "name": "link",
               "attributes": {
-                "href": "https://www.thetimes.co.uk/test/link",
+                "href": "https://example.io",
                 "target": "_blank",
                 "type": "topic"
               },

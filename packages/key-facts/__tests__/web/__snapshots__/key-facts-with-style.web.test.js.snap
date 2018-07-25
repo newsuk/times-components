@@ -261,8 +261,6 @@ exports[`key facts with title 1`] = `
         An example 
         <a
           className="S6"
-          href="https://www.thetimes.co.uk/test/link"
-          role="link"
         >
           link
         </a>
