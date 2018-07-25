@@ -73,7 +73,7 @@ export const query = gql`
           main
         }
       }
-      topics {
+      topics(maxCount: 5) {
         name
         slug
       }
