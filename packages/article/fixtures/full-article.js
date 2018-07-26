@@ -1660,7 +1660,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
             },
             children: []
           }
@@ -1674,7 +1675,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
             },
             children: []
           }
@@ -1688,7 +1690,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
             },
             children: []
           }
@@ -1702,7 +1705,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
             },
             children: []
           }
@@ -1716,7 +1720,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
             },
             children: []
           }
@@ -1730,7 +1735,8 @@ const defaultRelatedArticles = [
           {
             name: "text",
             attributes: {
-              value: "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
+              value:
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
             },
             children: []
           }
@@ -1742,18 +1748,21 @@ const defaultRelatedArticles = [
         id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
         title: "",
         crop169: {
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+          url:
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
           __typename: "Crop"
         },
         crop32: {
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+          url:
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
           __typename: "Crop"
         },
         __typename: "Image"
       },
       __typename: "Video"
     },
-    url: "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
+    url:
+      "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
     __typename: "Article"
   }
 ];
