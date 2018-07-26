@@ -1171,6 +1171,7 @@ const defaultContent = [
 const defaultFlags = ["NEW", "EXCLUSIVE"];
 const defaultHeadline =
   "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record";
+const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "HURRICANE IRMA";
 const defaultLeadAsset = {
   id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
@@ -1836,6 +1837,7 @@ const makeDefaultConfig = (
     content = defaultContent,
     flags = defaultFlags,
     headline = defaultHeadline,
+    keywords = defaultKeywords,
     label = defaultLabel,
     leadAsset = defaultLeadAsset,
     relatedArticles = defaultRelatedArticles,
@@ -1850,6 +1852,7 @@ const makeDefaultConfig = (
   content,
   flags,
   headline,
+  keywords,
   label,
   leadAsset,
   relatedArticles,
