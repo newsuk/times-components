@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. page error 1`] = `
+<View>
+  <View>
+    <Image
+      accessibilityLabel="Server error"
+      resizeMode="contain"
+      source="90626bc96bb7fbe8283024ef6a680492"
+    />
+    <Text>
+      Something's gone wrong
+    </Text>
+    <Text>
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <Button
+    title="Retry"
+  />
+</View>
+`;
+
+exports[`2. article list 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      ArticleListItem
+      <View>
+        <View />
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <View />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+        />
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

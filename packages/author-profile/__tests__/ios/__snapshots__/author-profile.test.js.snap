@@ -641,7 +641,6 @@ exports[`1. with images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -884,7 +883,6 @@ exports[`1. with images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -1127,7 +1125,6 @@ exports[`1. with images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -2335,7 +2332,6 @@ exports[`2. without images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -2472,7 +2468,6 @@ exports[`2. without images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -2611,7 +2606,6 @@ exports[`2. without images 1`] = `
     </View>
     <View>
       <View
-        isTVSelectable={true}
         style={
           Object {
             "opacity": 1,
@@ -4421,7 +4415,6 @@ exports[`4. author profile page error state 1`] = `
     accessibilityComponentType="button"
     accessibilityLabel="Retry"
     accessibilityTraits="button"
-    isTVSelectable={true}
     style={
       Object {
         "alignItems": "center",

@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. page error 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "space-between",
+      "marginLeft": 10,
+      "marginRight": 10,
+      "paddingBottom": 10,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View>
+    <Image
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 270,
+          "marginBottom": 20,
+          "marginTop": 20,
+          "width": 240,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Something's gone wrong
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 15,
+          "textAlign": "center",
+        }
+      }
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <Button />
+</View>
+`;
+
+exports[`2. article list 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      ArticleListItem
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+        <ActivityIndicator
+          style={
+            Object {
+              "paddingVertical": 25,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

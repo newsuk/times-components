@@ -11,8 +11,8 @@ const RespLink = responsiveLinkStyles =>
 const Link = ({
   index,
   url,
-  onPress,
   children,
+  onPress,
   responsiveLinkStyles,
   target
 }) => {
@@ -41,21 +41,21 @@ const Link = ({
 };
 
 Link.propTypes = {
-  url: PropTypes.string.isRequired,
-  onPress: PropTypes.func,
   children: PropTypes.node.isRequired,
+  onPress: PropTypes.func,
   responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
     medium: PropTypes.string
   }),
   index: PropTypes.string,
-  target: PropTypes.string
+  target: PropTypes.string,
+  url: PropTypes.string.isRequired
 };
 
 Link.defaultProps = {
-  responsiveLinkStyles: null,
   index: "0",
   onPress: () => {},
+  responsiveLinkStyles: null,
   target: null
 };
 
