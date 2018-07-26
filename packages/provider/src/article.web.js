@@ -64,7 +64,7 @@ export const query = gql`
           }
           ... on Video {
             posterImage {
-            	id
+              id
               title
               crop169: crop(ratio: "16:9") {
                 url
