@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. video with data attributes 1`] = `
+<div
+  data-testid="video-component"
+>
+  <video
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+  />
+</div>
+`;

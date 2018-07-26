@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
+  enzymeRenderedSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
   minimalWebTransform,
@@ -29,7 +29,7 @@ const styles = [
 
 addSerializers(
   expect,
-  enzymeTreeSerializer(),
+  enzymeRenderedSerializer(),
   compose(
     stylePrinter,
     flattenStyleTransform,

@@ -3,16 +3,10 @@
 exports[`1. video 1`] = `
 <View
   accessibilityLabel="splash-component"
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
   testID="splash-component"
 >
   <Image
-    uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
   <View>
     <View>
@@ -42,12 +36,6 @@ exports[`1. video 1`] = `
 exports[`2. video without a poster image 1`] = `
 <View
   accessibilityLabel="splash-component"
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
   testID="splash-component"
 >
   <View />

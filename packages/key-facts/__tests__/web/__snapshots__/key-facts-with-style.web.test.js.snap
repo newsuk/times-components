@@ -2,7 +2,7 @@
 
 exports[`key facts with title 1`] = `
 .c0 {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 @media (min-width:768px) {
@@ -10,7 +10,7 @@ exports[`key facts with title 1`] = `
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80.8%;
   }
 }
@@ -47,16 +47,27 @@ exports[`key facts with title 1`] = `
     "padding-left": "0px",
   },
   "S10": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "27px",
     "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
   },
   "S11": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S12": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -68,21 +79,21 @@ exports[`key facts with title 1`] = `
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
-    "top": "1px",
+    "top": "2px",
     "transform": "rotate(45deg)",
     "width": "8px",
   },
-  "S12": {
+  "S13": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
-    "line-height": "30px",
+    "line-height": "27px",
     "margin-bottom": "0px",
     "margin-top": "-8px",
     "padding-left": "15px",
     "width": "95%",
   },
-  "S13": {
+  "S14": {
     "-ms-flex-direction": "row",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "horizontal",
@@ -92,72 +103,25 @@ exports[`key facts with title 1`] = `
     "margin-top": "0px",
     "padding-left": "1px",
     "width": "100%",
-  },
-  "S14": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
   },
   "S15": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
     "flex-direction": "column",
-    "height": "8px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
-    "top": "1px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
   },
   "S16": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "30px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S17": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
-  },
-  "S18": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
     "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S19": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
+    "margin-bottom": "5px",
+    "margin-top": "5px",
     "padding-left": "0px",
   },
   "S2": {
@@ -172,25 +136,15 @@ exports[`key facts with title 1`] = `
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
-    "top": "1px",
+    "top": "2px",
     "transform": "rotate(45deg)",
     "width": "8px",
-  },
-  "S20": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
   },
   "S3": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
-    "line-height": "30px",
+    "line-height": "27px",
     "margin-bottom": "0px",
     "margin-top": "-8px",
     "padding-left": "15px",
@@ -212,12 +166,48 @@ exports[`key facts with title 1`] = `
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
     "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "2px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S6": {
+    "background-color": "transparent",
+    "color": "rgba(0,102,153,1)",
+    "font-family": "inherit",
+    "font-size": "inherit",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
   },
-  "S6": {
+  "S7": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "27px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S8": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S9": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -229,45 +219,15 @@ exports[`key facts with title 1`] = `
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
-    "top": "1px",
+    "top": "2px",
     "transform": "rotate(45deg)",
     "width": "8px",
-  },
-  "S7": {
-    "background-color": "transparent",
-    "color": "rgba(0,102,153,1)",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S8": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "30px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S9": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
   },
 }
 </style>
 
 <div
-  className="c0 S20"
+  className="c0 S16"
 >
   <div
     className="c1 S1"
@@ -275,83 +235,65 @@ exports[`key facts with title 1`] = `
     EXAMPLE TITLE
   </div>
   <div
-    className="c2 S19"
+    className="c2 S15"
   >
     <div
-      className="S5"
+      className="S4"
     >
       <div
-        className="S4"
+        className="S2"
+      />
+      <div
+        className="S3"
       >
-        <div
-          className="S2"
-        />
-        <div
-          className="S3"
-        >
-          Example bullet text
-        </div>
+        Example bullet text
       </div>
     </div>
     <div
-      className="S10"
+      className="S8"
+    >
+      <div
+        className="S5"
+      />
+      <div
+        className="S7"
+      >
+        An example 
+        <a
+          className="S6"
+        >
+          link
+        </a>
+      </div>
+    </div>
+    <div
+      className="S11"
     >
       <div
         className="S9"
+      />
+      <div
+        className="S10"
       >
-        <div
-          className="S6"
-        />
-        <div
-          className="S8"
-        >
-          An example 
-          <a
-            className="S7"
-            href="https://www.thetimes.co.uk/test/link"
-            role="link"
-          >
-            link
-          </a>
-        </div>
+        More example text.
       </div>
     </div>
     <div
       className="S14"
     >
       <div
+        className="S12"
+      />
+      <div
         className="S13"
       >
-        <div
-          className="S11"
-        />
-        <div
-          className="S12"
-        >
-          More example text.
-        </div>
-      </div>
-    </div>
-    <div
-      className="S18"
-    >
-      <div
-        className="S17"
-      >
-        <div
-          className="S15"
-        />
-        <div
-          className="S16"
-        >
-          Example text 
-          <strong>
-            this is bold 
-          </strong>
-          <em>
-            this is in italics.
-          </em>
-        </div>
+        Example text 
+        <strong>
+          this is bold 
+        </strong>
+        <em>
+          this is in italics.
+        </em>
       </div>
     </div>
   </div>

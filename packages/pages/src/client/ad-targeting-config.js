@@ -1,4 +1,4 @@
-export default (platformAdConfig, articleAdConfig) => ({
+export default (platformAdConfig, article) => ({
   networkId: platformAdConfig.networkId,
   adUnit: platformAdConfig.adUnit,
   pageTargeting: {
@@ -8,9 +8,9 @@ export default (platformAdConfig, articleAdConfig) => ({
     testmode: platformAdConfig.testMode,
     cont_type: "art",
     av: platformAdConfig.appVersion,
-    kw: articleAdConfig.headline.toLowerCase().replace(/\s+/g, ","),
+    kw: article.keywords.join(),
     st: "Member",
-    aid: articleAdConfig.id,
+    aid: article.id,
     cos: platformAdConfig.operatingSystem,
     cov: platformAdConfig.operatingSystemVersion,
     cpn: platformAdConfig.cookieEid,

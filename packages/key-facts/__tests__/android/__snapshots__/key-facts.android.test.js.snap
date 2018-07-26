@@ -7,47 +7,39 @@ exports[`1. key facts with title 1`] = `
   </Text>
   <View>
     <View>
-      <View>
-        <View />
-        <Text>
-          Example bullet text
-        </Text>
-      </View>
+      <View />
+      <Text>
+        Example bullet text
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
-        <Text>
-          An example 
-          <Text
-            accessibilityRole="link"
-          >
-            link
-          </Text>
+      <View />
+      <Text>
+        An example 
+        <Text
+          accessibilityRole="link"
+        >
+          link
         </Text>
-      </View>
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
-        <Text>
-          More example text.
-        </Text>
-      </View>
+      <View />
+      <Text>
+        More example text.
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
+      <View />
+      <Text>
+        Example text 
         <Text>
-          Example text 
-          <Text>
-            this is bold 
-          </Text>
-          <Text>
-            this is in italics.
-          </Text>
+          this is bold 
         </Text>
-      </View>
+        <Text>
+          this is in italics.
+        </Text>
+      </Text>
     </View>
   </View>
 </View>
@@ -57,47 +49,39 @@ exports[`2. key facts without title 1`] = `
 <View>
   <View>
     <View>
-      <View>
-        <View />
-        <Text>
-          Example bullet text
-        </Text>
-      </View>
+      <View />
+      <Text>
+        Example bullet text
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
-        <Text>
-          An example 
-          <Text
-            accessibilityRole="link"
-          >
-            link
-          </Text>
+      <View />
+      <Text>
+        An example 
+        <Text
+          accessibilityRole="link"
+        >
+          link
         </Text>
-      </View>
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
-        <Text>
-          More example text.
-        </Text>
-      </View>
+      <View />
+      <Text>
+        More example text.
+      </Text>
     </View>
     <View>
-      <View>
-        <View />
+      <View />
+      <Text>
+        Example text 
         <Text>
-          Example text 
-          <Text>
-            this is bold 
-          </Text>
-          <Text>
-            this is in italics.
-          </Text>
+          this is bold 
         </Text>
-      </View>
+        <Text>
+          this is in italics.
+        </Text>
+      </Text>
     </View>
   </View>
 </View>

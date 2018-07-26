@@ -6,9 +6,10 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalNativeTransform,
-  print
+  print,
+  replacePropTransform
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components/test-utils";
 import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
@@ -22,7 +23,13 @@ export default () => {
       print,
       minimalNativeTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key.includes("Class")
+        (value, key) =>
+          key === "style" ||
+          key === "nativeBackgroundAndroid" ||
+          key.includes("Class")
+      ),
+      replacePropTransform(
+        (value, key) => (key === "uri" ? hash(value) : value)
       )
     )
   );

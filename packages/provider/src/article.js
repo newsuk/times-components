@@ -6,6 +6,7 @@ export const query = gql`
     article(id: $id) {
       id
       headline
+      keywords
       publicationName
       publishedTime
       label
@@ -65,7 +66,7 @@ export const query = gql`
           main
         }
       }
-      topics {
+      topics(maxCount: 5) {
         name
         slug
       }

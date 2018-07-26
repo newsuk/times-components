@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. video 1`] = `
-<Touchable
-  accessibilityLabel="splash-component"
-  testID="splash-component"
+<View
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
 >
   <View
     style={
@@ -13,14 +16,13 @@ exports[`1. video 1`] = `
       }
     }
   >
-    <TimesImage
+    <Image
       style={
         Object {
           "height": 200,
           "width": 300,
         }
       }
-      uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
     />
     <View
       style={
@@ -36,16 +38,24 @@ exports[`1. video 1`] = `
         }
       }
     >
-      <PlayIcon />
+      <View>
+        <svg>
+          <rect />
+          <polygon />
+        </svg>
+      </View>
     </View>
   </View>
-</Touchable>
+</View>
 `;
 
 exports[`2. video without a poster image 1`] = `
-<Touchable
-  accessibilityLabel="splash-component"
-  testID="splash-component"
+<View
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
 >
   <View
     style={
@@ -78,8 +88,13 @@ exports[`2. video without a poster image 1`] = `
         }
       }
     >
-      <PlayIcon />
+      <View>
+        <svg>
+          <rect />
+          <polygon />
+        </svg>
+      </View>
     </View>
   </View>
-</Touchable>
+</View>
 `;

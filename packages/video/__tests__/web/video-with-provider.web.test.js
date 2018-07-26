@@ -5,22 +5,30 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  replacePropTransform,
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
 
+const omitProps = new Set(["className", "style"]);
+
 addSerializers(
   expect,
   compose(
-    print,
-    minimaliseTransform((value, key) => key === "style"),
+    stylePrinter,
+    minimaliseTransform(
+      (value, key) => omitProps.has(key) || key.includes("data-")
+    ),
     minimalWebTransform,
+    replacePropTransform(
+      (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
+    ),
     rnwTransform()
   )
 );
@@ -64,6 +72,18 @@ const tests = [
     name: "non-paidOnly video for paid users",
     test: () => {
       testSubscriberAndVideoPaidStatus({ videoIsPaidOnly: false });
+    }
+  },
+  {
+    name: "video without a poster image",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <IsPaidSubscriber.Provider value>
+          <Video {...defaultVideoProps} paidOnly={false} poster={null} />
+        </IsPaidSubscriber.Provider>
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
     }
   }
 ];

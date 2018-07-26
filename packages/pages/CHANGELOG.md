@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/pages@0.2.1...@times-components/pages@0.2.2) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/pages
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/pages@0.2.0...@times-components/pages@0.2.1) (2018-07-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/pages
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/pages@0.1.4...@times-components/pages@0.2.0) (2018-07-25)
+
+
+### Features
+
+* article keywords native ad brand protection ([#1131](https://github.com/newsuk/times-components/issues/1131)) ([fc06993](https://github.com/newsuk/times-components/commit/fc06993))
+
+
+
+
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/newsuk/times-components/compare/@times-components/pages@0.1.3...@times-components/pages@0.1.4) (2018-07-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/pages
+
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/pages@0.1.2...@times-components/pages@0.1.3) (2018-07-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/pages
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/pages@0.1.1...@times-components/pages@0.1.2) (2018-07-24)
 
