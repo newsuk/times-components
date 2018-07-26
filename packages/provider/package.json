@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.39.1",
+  "version": "0.39.2",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -33,10 +33,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.0.2",
-    "@times-components/provider-test-tools": "0.15.1",
-    "@times-components/storybook": "2.0.4",
-    "@times-components/utils": "2.1.1",
+    "@times-components/jest-configurator": "2.0.3",
+    "@times-components/provider-test-tools": "0.15.2",
+    "@times-components/storybook": "2.0.5",
+    "@times-components/utils": "2.1.2",
     "@times-components/webpack-configurator": "2.0.0",
     "apollo-utilities": "1.0.12",
     "babel-core": "6.26.0",

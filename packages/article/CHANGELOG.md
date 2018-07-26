@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.7"></a>
+## [3.1.7](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.6...@times-components/article@3.1.7) (2018-07-26)
+
+
+### Bug Fixes
+
+* Add missing fixture data ([#1143](https://github.com/newsuk/times-components/issues/1143)) ([b60e207](https://github.com/newsuk/times-components/commit/b60e207))
+
+
+
+
 <a name="3.1.6"></a>
 ## [3.1.6](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.5...@times-components/article@3.1.6) (2018-07-26)
 
