@@ -667,20 +667,24 @@ Object {
       "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
       "label": "Science",
       "leadAsset": Object {
-        "__typename": "Image",
-        "crop169": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
+        "__typename": "Video",
+        "posterImage": Object {
+          "__typename": "Image",
+          "crop169": Object {
+            "__typename": "Crop",
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+            Symbol(id): "$Image:f5eacb2d-2f87-46cb-a36a-225bf9a6482f.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "crop32": Object {
+            "__typename": "Crop",
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+            Symbol(id): "$Image:f5eacb2d-2f87-46cb-a36a-225bf9a6482f.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
+          "title": "",
+          Symbol(id): "Image:f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
         },
-        "crop32": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
-        },
-        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-        "title": "TMS: Pratchett’s law of the jungle",
-        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+        Symbol(id): "$Article:8557a3d2-cb55-11e4-81dd-064fe933cd41.leadAsset",
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:56:09.000Z",
