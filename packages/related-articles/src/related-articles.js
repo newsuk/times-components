@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import {
   StandardSlice,
   LeadAndTwoSlice,
@@ -90,7 +89,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   return (
-    <View style={{ marginTop: spacing(2) }}>
+    <View>
       <RelatedArticlesHeading />
       {renderSlice()}
     </View>
