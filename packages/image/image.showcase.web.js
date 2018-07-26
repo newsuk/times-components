@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import ReactDOMServer from "react-dom/server";
 import Image from "./src/image";
 
@@ -19,6 +19,9 @@ export default {
       name: "Server side rendered Image (web only)",
       platform: "web",
       component: () => {
+        if (!ReactDOMServer)
+          return <Text>This only works with server-side rendering</Text>;
+
         const markup = {
           __html: ReactDOMServer.renderToStaticMarkup(
             <View>
