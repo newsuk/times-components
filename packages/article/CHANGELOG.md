@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.8"></a>
+## [3.1.8](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.7...@times-components/article@3.1.8) (2018-07-26)
+
+
+### Bug Fixes
+
+* Allow poster image to show with lead asset videos ([#1145](https://github.com/newsuk/times-components/issues/1145)) ([9bf5a13](https://github.com/newsuk/times-components/commit/9bf5a13))
+
+
+
+
 <a name="3.1.7"></a>
 ## [3.1.7](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.6...@times-components/article@3.1.7) (2018-07-26)
 
