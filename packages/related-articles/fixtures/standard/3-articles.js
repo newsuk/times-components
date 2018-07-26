@@ -373,18 +373,38 @@ const defaultSecondUrl =
   "https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx";
 
 const defaultThirdCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0";
-const defaultThirdHeadline =
-  "YouTube ignored police pleas to remove threatening videos";
+  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108";
+const defaultThirdHeadline = "Bayeux Tapestry to be displayed in Britain";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is"
         },
         children: []
       }
@@ -394,12 +414,33 @@ const defaultThirdSummary105 = [
 const defaultThirdSummary125 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is expected to be to the"
         },
         children: []
       }
@@ -409,27 +450,87 @@ const defaultThirdSummary125 = [
 const defaultThirdSummary145 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is expected to be to the British Museum in 2022"
         },
         children: []
       }
     ]
+  },
+  {
+    name: "paragraph",
+    attributes: {},
+    children: []
   }
 ];
 const defaultThirdSummary160 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is expected to be to the British Museum in 2022."
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: "Although the"
         },
         children: []
       }
@@ -439,12 +540,46 @@ const defaultThirdSummary160 = [
 const defaultThirdSummary175 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is expected to be to the British Museum in 2022."
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: "Although the museum stopped"
         },
         children: []
       }
@@ -454,21 +589,57 @@ const defaultThirdSummary175 = [
 const defaultThirdSummary225 = [
   {
     name: "paragraph",
+    attributes: {},
     children: [
       {
         name: "text",
         attributes: {
           value:
-            "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "The Times"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", is expected to be to the British Museum in 2022."
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Although the museum stopped short of confirming that it had secured the loan"
         },
         children: []
       }
     ]
   }
 ];
-const defaultThirdTitle = "Some scary people";
+const defaultThirdTitle =
+  "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultThirdUrl =
-  "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23";
+  "https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx";
 
 export default (
   {
@@ -584,11 +755,9 @@ export default (
         id: "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
         publishedTime: "2018-01-17T12:00:00.000Z",
         leadAsset: {
-          posterImage: {
-            title: thirdTitle,
-            crop169: {
-              url: thirdCrop169
-            }
+          title: thirdTitle,
+          crop169: {
+            url: thirdCrop169
           }
         },
         label: "BAYEUX TAPESTRY",

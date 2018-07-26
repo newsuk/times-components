@@ -48,15 +48,11 @@ const RelatedArticleItem = ({
     style: imageStyle = {}
   } = imageConfig;
 
-  const imageUri = leadAsset.posterImage
-    ? get(article, `leadAsset.posterImage.crop${cropSize}.url`)
-    : get(article, `leadAsset.crop${cropSize}.url`);
-
   return (
     <Link onPress={e => onPress(e, { url: article.url })} url={url}>
       <Card
         contentContainerClass={contentContainerClass}
-        image={{ uri: imageUri }}
+        image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
         imageContainerClass={imageContainerClass}
         imageRatio={imageRatio}
         imageStyle={imageStyle}
