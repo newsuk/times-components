@@ -8,6 +8,8 @@ select and serve targeted ads. GPT is an ad tagging
 key details (targeting parameters) such as ad unit name, ad size, and custom
 targeting, builds the request, and displays the ad on web pages.
 
+When an ad is still loading it should show a placeholder image.
+
 ## DFP setup
 
 DFP is used by the commercial team to set up the campaigns. They use this to
@@ -167,8 +169,8 @@ yarn test:web
 ```
 
 Visit the official
-[storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
-to see our available slice templates.
+[storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Primitives%2FAdvertisement&selectedStory=Placeholder&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
+to see our available ads templates.
 
 ## Future
 
