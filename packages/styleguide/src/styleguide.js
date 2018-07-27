@@ -8,16 +8,24 @@ import timesFontSizes from "./fonts/font-sizes";
 
 import timesSpacing from "./spacing";
 
-export const colours = {
+const colours = {
   section: sectionColours,
   functional: functionalColours
 };
 
-export const Animations = {
+const Animations = {
   FadeIn
 };
 
-export const fonts = timesFonts;
-export const fontSizes = timesFontSizes;
+const fonts = timesFonts;
+const fontSizes = timesFontSizes();
 
-export const spacing = timesSpacing;
+const spacing = timesSpacing;
+export { colours, Animations, fonts, fontSizes, spacing };
+export default ({ scale }) => ({
+  colours,
+  Animations,
+  fonts,
+  fontSizes: timesFontSizes(scale),
+  spacing
+});

@@ -9,7 +9,7 @@ const BodyParagraph = props => (
     style={[styles.articleMainContentRow]}
     testID={`paragraph-${props.uid}`}
   >
-    <Text style={styles.articleTextElement}>{props.children}</Text>
+    <Text style={styles("xlarge").articleTextElement}>{props.children}</Text>
   </View>
 );
 
