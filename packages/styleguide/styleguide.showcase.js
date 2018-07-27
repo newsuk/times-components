@@ -1,7 +1,7 @@
 import { ScrollView, Text, View } from "react-native";
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import { Animations, colours, fonts, fontSizes } from "./src/styleguide";
+import timesStyleguide, { Animations, colours, fonts, fontSizes } from "./src/styleguide";
 import styles from "./styleguide.styles";
 
 const ColourBox = ({ name, hex }) => (
@@ -18,7 +18,7 @@ ColourBox.propTypes = {
   hex: PropTypes.string.isRequired
 };
 
-const fontDisplayer = (fontFamily, phrase) =>
+const fontDisplayer = (fontFamily, phrase, fontSizes) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <Text style={styles.subHeadline}>{fontSize}</Text>
@@ -114,13 +114,16 @@ export default {
     {
       type: "story",
       name: "Fonts",
-      component: () => {
+      component: ({ select }) => {
+        const scale = select("Scale", {regular: "Regular", large: "Large", xlarge: "Xlarge"}, "Large");
+        const styleguide = timesStyleguide({scale});
         const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
+
         return (
           <ScrollView>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Body</Text>
-              {fontDisplayer(fonts.body, phrase)}
+              {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
             </View>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Body Regular</Text>
@@ -128,7 +131,7 @@ export default {
                 Used for the body copy of articles or as the teaser copy on
                 article links.
               </Text>
-              {fontDisplayer(fonts.bodyRegular, phrase)}
+              {fontDisplayer(fonts.bodyRegular, phrase, styleguide.fontSizes)}
             </View>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Body Regular Small Caps</Text>
@@ -138,7 +141,7 @@ export default {
                 Journalist pages for the Journalist job title, article flags and
                 show more buttons on the homepage.
               </Text>
-              {fontDisplayer(fonts.bodyRegularSmallCaps, phrase.toLowerCase())}
+              {fontDisplayer(fonts.bodyRegularSmallCaps, phrase.toLowerCase(), styleguide.fontSizes)}
             </View>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Headline</Text>
@@ -146,7 +149,7 @@ export default {
                 Used as the headline for components and articles across the
                 site.
               </Text>
-              {fontDisplayer(fonts.headline, phrase)}
+              {fontDisplayer(fonts.headline, phrase, styleguide.fontSizes)}
             </View>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Headline Regular</Text>
@@ -154,7 +157,7 @@ export default {
                 Used primarily to style subheadings for components and stand
                 firsts on the homepage and articles.
               </Text>
-              {fontDisplayer(fonts.headlineRegular, phrase)}
+              {fontDisplayer(fonts.headlineRegular, phrase, styleguide.fontSizes)}
             </View>
             <View style={styles.showoffFontsContainer}>
               <Text style={styles.headline}>Supporting</Text>
@@ -162,7 +165,7 @@ export default {
                 Used as a supporting typeface in a variety of places including
                 messaging banners, buttons, links, homepage labels and tags.
               </Text>
-              {fontDisplayer(fonts.supporting, phrase)}
+              {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
             </View>
           </ScrollView>
         );
