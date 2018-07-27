@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author       = "News UK"
   s.platform     = :ios
   s.source       = { :git => 'https://github.com/newsuk/times-xnative.git', :tag => '@thetimes/ios-app@0.0.1'}
-  #s.source       = { :git => 'https://github.com/facebook/react-native.git', :tag => "v0.54.2" }
+  #s.source       = { :git => 'https://github.com/facebook/react-native.git', :tag => "v0.55.4" }
   
 
   s.requires_arc = true
