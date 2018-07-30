@@ -35,7 +35,6 @@ const platformAdConfig = {
 class ArticleView extends Component {
   constructor(props) {
     super(props);
-    this.subscription = null;
     this.state = { fontSize: this.props.fontSize };
   }
 
