@@ -39,6 +39,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "collectCoverageFrom": ["**/jest-configurator/src/**"],
     "coverageDirectory": "<rootDir>/packages/jest-configurator/coverage",
     "coveragePathIgnorePatterns": ["react-native-mock-components.js"],
     "transformIgnorePatterns": [
@@ -50,6 +51,7 @@
   },
   "dependencies": {
     "@times-components/jest-serializer": "2.0.3",
+    "@times-components/test-utils": "0.2.3",
     "babel-core": "6.26.0",
     "babel-jest": "23.4.0",
     "babel-preset-jest": "23.2.0",
