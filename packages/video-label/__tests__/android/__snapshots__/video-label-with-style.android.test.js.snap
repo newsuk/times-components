@@ -37,7 +37,7 @@ exports[`1. video label with a title 1`] = `
       }
     }
   >
-    S W I M M I N G
+    SWIMMING
   </Text>
 </Component>
 `;
@@ -79,7 +79,7 @@ exports[`2. video label without a title shows video 1`] = `
       }
     }
   >
-    V I D E O
+    VIDEO
   </Text>
 </Component>
 `;
@@ -121,7 +121,7 @@ exports[`3. video label with the black default colour 1`] = `
       }
     }
   >
-    V I D E O
+    VIDEO
   </Text>
 </Component>
 `;

@@ -34,9 +34,9 @@ exports[`1. button 1`] = `
         "paddingTop": 0,
       }
     }
-    title="T E S T   B U T T O N"
+    title="TEST BUTTON"
   >
-    T E S T   B U T T O N
+    TEST BUTTON
   </Text>
 </TouchableHighlight>
 `;

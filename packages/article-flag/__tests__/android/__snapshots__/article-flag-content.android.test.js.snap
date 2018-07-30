@@ -40,7 +40,7 @@ exports[`1. article flag 1`] = `
     }
     testID="flag-No Colour"
   >
-    n o   c o l o u r
+    no colour
   </Text>
 </Component>
 `;
@@ -85,7 +85,7 @@ exports[`2. red article flag 1`] = `
     }
     testID="flag-Coloured Red"
   >
-    c o l o u r e d   r e d
+    coloured red
   </Text>
 </Component>
 `;
