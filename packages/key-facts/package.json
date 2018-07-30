@@ -43,7 +43,6 @@
     "@times-components/test-utils": "0.2.3",
     "@times-components/webpack-configurator": "2.0.0",
     "babel-cli": "6.26.0",
-    "canvas-prebuilt": "1.6.5-prerelease.1",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "23.3.0",
