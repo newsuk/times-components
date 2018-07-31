@@ -52,18 +52,18 @@ googletag.pubads().getTargeting('example_key');
 These are the params which are specific to each slot on the page. We can have
 more than on the slot on the page.
 
-## Grapeshot & Brand Protection
+## Advert Brand Protection
+
+This mechanism helps us to determine if a certain Ad should not be shown on a
+particular page (e.g. because it contains terror or hate speech related
+content).
+
+### Web - With Grapeshot
 
 We use grapeshot as a Times brand safety mechanism. We send a request to the
 Grapeshot service with the article url and in response we get an array of
 category ids for that page which we then pass to GPT, using the `gs_cat` page
 targeting key.
-
-This mechanism helps us to determine if a certain Ad does should not go on a
-particular page (e.g. because it contains terror or hate speech related
-content).
-
-### Web
 
 For web we send a uri to grapeshot, who scan the page and return a list of
 categories they associate with that web page. These categories are then passed
@@ -72,8 +72,15 @@ to the DFP code via page targeting, which determines whether to show ads or not.
 ### Mobile
 
 For native we do not use grapeshot. Instead, we pass a string of comma-seperated
-keywords to DFP using page targeting, and DFP determines whether to show the
-page from this "list".
+keywords that typically come from TPA. These keywords are then passed to DFP
+using page targeting, and DFP determines whether to show the page from this
+"list".
+
+Example:
+
+```
+googletag.setTargeting("kw", "these,are,my,example,keywords");
+```
 
 ## Ad slots
 
