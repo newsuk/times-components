@@ -5,7 +5,7 @@ features found therein. This package is comprised of numerous other components
 and packages, such as `ArticleHeader`, `ArticleTopics` and `RelatedArticles`,
 all of which are related to a specific article. Some of the components utilised
 in the package are self-contained with the article package itself, and some have
-been split out into separate pacakges. The article data which forms the article
+been split out into separate packages. The article data which forms the article
 content comes from an Abstract Syntax Tree ("AST"). It is this AST, handled in
 the markup package, that forms the majority of the content within the article
 itself.
