@@ -8,7 +8,8 @@ select and serve targeted ads. GPT is an ad tagging
 key details (targeting parameters) such as ad unit name, ad size, and custom
 targeting, builds the request, and displays the ad on web pages.
 
-When an ad is still loading it should show a placeholder image.
+When an ad is still loading or the app is offline, the ad component will show a
+placeholder image.
 
 ## DFP setup
 
@@ -16,27 +17,25 @@ DFP is used by the commercial team to set up the campaigns. They use this to
 configure:
 
 * Ad images of various sizes
-* Type of ad (display/ sponsored etc)
+* Type of ad (display, sponsored, etc)
 * Date range of campaign
-* Target No of impressions
+* Target number of impressions
 * Loading pattern (more impression up front or even spread over time)
 * Creatives per page (i.e. whether to repeat ads on page)
 * Rotation weighting rules (e.g. optimise to place best performing ad more
   often)
-* Freq capping
+* Frequency capping
 * Targeting
 
 ## Targeting
 
-See a
-[list of the parameters](https://docs.google.com/spreadsheets/d/1Fc4dft7q-2SCSM0PV_Xu7lPm82txGUo2SW4dX4B_MkE/edit#gid=2120327720)
-being sent on each of the platforms
+Contact the internal commercial team for a list of targeting keys and their
+relative descriptions.
 
 ### Page config
 
-These are the params which are generic to the page such as the user cookie, page
-title etc. To see the list of the all keys for page targeting execute this
-command in the console:
+These are the parameters which are generic to the page such as the user cookie,
+page title etc. To list all current targeting keys in the console:
 
 ```
 googletag.pubads().getTargetingKeys();
@@ -45,7 +44,7 @@ googletag.pubads().getTargetingKeys();
 To see the value for a specific key:
 
 ```
-googletag.pubads().getTargeting('gs_cat');
+googletag.pubads().getTargeting('example_key');
 ```
 
 ### Slot config
@@ -64,6 +63,18 @@ This mechanism helps us to determine if a certain Ad does should not go on a
 particular page (e.g. because it contains terror or hate speech related
 content).
 
+### Web
+
+For web we send a uri to grapeshot, who scan the page and return a list of
+categories they associate with that web page. These categories are then passed
+to the DFP code via page targeting, which determines whether to show ads or not.
+
+### Mobile
+
+For native we do not use grapeshot. Instead, we pass a string of comma-seperated
+keywords to DFP using page targeting, and DFP determines whether to show the
+page from this "list".
+
 ## Ad slots
 
 We have distinct positions on a page where we can display Ads. We refer to them
@@ -81,17 +92,17 @@ positions uniquely from DFP. Each ad slot allows for certain fixed ad sizes.
 
 To test Ads in general, follow below steps:
 
-1. Goto page where you want to test, and open the console
+1. Goto page where you want to test, and open the console.
 2. Type `googletag.openConsole();` on the console, this will open a DFP console
-   on the page and will display all the info about the ads on the page
-3. To look for all Ad slots on the page use `googletag.pubads().getSlots();`
+   on the page and will display all the info about the ads on the page.
+3. To look for all Ad slots on the page use `googletag.pubads().getSlots();`.
 4. On the network panel, filter for ads?, this is the ad request that gpt makes
    to DFP with all the relevant config.
-5. In the ads request, the config is sent as query params, the cust_params key
-   has the page level config values and prev_scp has the slot level config
+5. In the ads request, the config is sent as query params, the `cust_params` key
+   has the page level config values and `prev_scp` has the slot level config
    values.
 6. On the network panel, filter for grapeshot, the second request has the key
-   values that we get from grapeshot
+   values that we get from grapeshot.
 
 ## Header bidding
 
@@ -136,7 +147,7 @@ which the request is coming)
    domain aax.amazon-adsystem in the network panel. On Console, do
    `apstag.debug('enable');` and refresh page [This forces amazon ads to win]
 9. Write `googletag.pubads().getSlots().map(s=>s.getTargetingMap());` in the
-   console, the key hb_bidder is the winner for the slot
+   console, the key `hb_bidder` is the winner for the slot
 
 ## Contributing
 
