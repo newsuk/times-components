@@ -57,10 +57,8 @@ exports[`3. one opinion related article 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="opinion"
-                >
-                  O P I N I O N
+                <Text>
+                  OPINION
                 </Text>
               </View>
               <Text>
@@ -158,10 +156,8 @@ exports[`5. one opinion and one support related article 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="opinion"
-                >
-                  O P I N I O N
+                <Text>
+                  OPINION
                 </Text>
               </View>
               <Text>
@@ -209,10 +205,8 @@ exports[`5. one opinion and one support related article 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="defence cuts | analysis"
-                >
-                  D E F E N C E   C U T S   |   A N A L Y S I S
+                <Text>
+                  DEFENCE CUTS | ANALYSIS
                 </Text>
               </View>
               <Text
@@ -308,10 +302,8 @@ exports[`7. opinion and two support related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="opinion"
-                >
-                  O P I N I O N
+                <Text>
+                  OPINION
                 </Text>
               </View>
               <Text>
@@ -359,10 +351,8 @@ exports[`7. opinion and two support related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="defence cuts"
-                >
-                  D E F E N C E   C U T S
+                <Text>
+                  DEFENCE CUTS
                 </Text>
               </View>
               <Text
@@ -401,10 +391,8 @@ exports[`7. opinion and two support related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="defence cuts | analysis"
-                >
-                  D E F E N C E   C U T S   |   A N A L Y S I S
+                <Text>
+                  DEFENCE CUTS | ANALYSIS
                 </Text>
               </View>
               <Text
