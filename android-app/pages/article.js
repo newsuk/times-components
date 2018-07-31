@@ -35,7 +35,8 @@ const platformAdConfig = {
 class ArticleView extends Component {
   constructor(props) {
     super(props);
-    this.state = { fontSize: this.props.fontSize };
+    const { fontSize } = this.props;
+    this.state = { fontSize };
   }
 
   componentDidMount() {
@@ -52,17 +53,18 @@ class ArticleView extends Component {
   render() {
     const { articleId, sectionName } = this.props;
     const adConfig = { ...platformAdConfig, sectionName };
+    const { fontSize } = this.state;
 
     return (
       <ArticlePageView
         articleId={articleId}
         analyticsStream={track}
-        fontSize={this.state.fontSize}
+        fontSize={fontSize}
         onArticlePress={onArticlePress}
         onAuthorPress={onAuthorPress}
         onLinkPress={onLinkPress}
-        onVideoPress={onVideoPress}
         onTopicPress={onTopicPress}
+        onVideoPress={onVideoPress}
         platformAdConfig={adConfig}
       />
     );
@@ -71,8 +73,8 @@ class ArticleView extends Component {
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired,
-  fontSize: PropTypes.string
+  fontSize: PropTypes.string,
+  sectionName: PropTypes.string.isRequired
 };
 
 ArticleView.defaultProps = {
