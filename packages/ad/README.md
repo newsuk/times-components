@@ -113,10 +113,9 @@ at the same time, publishers increase their yield and make more money. The
 returned bids are then passed to the ad server.
 
 [Prebid](http://prebid.org/) is a free open source library that helps publishers
-implement header bidding. We add a prebid script on the page which when loads
-adds a pbjs object on the windows. We configure the bidders on the website. The
-gpt request waits for prebid request to fulfill. We have below bidders for Times
-that operate through prebid:
+implement header bidding. We load a prebid script which adds a `pbjs` object
+onto the `window` object. The gpt request waits for prebid request to fulfill.
+These are some of the bidders:
 
 * appnexus
 * Rubicon
