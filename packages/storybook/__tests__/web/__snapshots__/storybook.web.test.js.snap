@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storybook Decorator tests on web should render a Bar Spacing Decorator 1`] = `
+exports[`Bar Spacing Decorator 1`] = `
 <div
   style={
     Object {
@@ -26,7 +26,7 @@ exports[`Storybook Decorator tests on web should render a Bar Spacing Decorator 
 </div>
 `;
 
-exports[`Storybook Decorator tests on web should render a Centered Decorator 1`] = `
+exports[`Centered Decorator 1`] = `
 <div
   style={
     Object {
@@ -69,7 +69,7 @@ exports[`Storybook Decorator tests on web should render a Centered Decorator 1`]
 </div>
 `;
 
-exports[`Storybook Decorator tests on web should render a Lateral Spacing Decorator 1`] = `
+exports[`Lateral Spacing Decorator 1`] = `
 <div
   style={
     Object {
@@ -85,37 +85,6 @@ exports[`Storybook Decorator tests on web should render a Lateral Spacing Decora
       "msFlex": 1,
       "msFlexNegative": "1 !important",
       "msFlexPositive": "1 !important",
-    }
-  }
->
-  <div
-    dir="auto"
-  >
-    I am in Storybook!
-  </div>
-</div>
-`;
-
-exports[`Storybook Decorator tests on web should render a White Background Decorator 1`] = `
-<div
-  style={
-    Object {
-      "WebkitBoxFlex": "1 !important",
-      "WebkitFlex": 1,
-      "WebkitFlexGrow": "1 !important",
-      "WebkitFlexShrink": "1 !important",
-      "backgroundColor": "white",
-      "bottom": "0px",
-      "flex": 1,
-      "flexGrow": "1 !important",
-      "flexShrink": "1 !important",
-      "left": "0px",
-      "msFlex": 1,
-      "msFlexNegative": "1 !important",
-      "msFlexPositive": "1 !important",
-      "position": "absolute",
-      "right": "0px",
-      "top": "0px",
     }
   }
 >
@@ -209,9 +178,7 @@ Array [
 exports[`The showcase converter should provide the action to a story 1`] = `
 Array [
   Object {
-    "component": <div
-      onPress={undefined}
-    >
+    "component": <div>
       Hello World!
     </div>,
     "name": "My Story",
@@ -243,4 +210,35 @@ Array [
     "name": "My Story",
   },
 ]
+`;
+
+exports[`White Background Decorator 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxFlex": "1 !important",
+      "WebkitFlex": 1,
+      "WebkitFlexGrow": "1 !important",
+      "WebkitFlexShrink": "1 !important",
+      "backgroundColor": "white",
+      "bottom": "0px",
+      "flex": 1,
+      "flexGrow": "1 !important",
+      "flexShrink": "1 !important",
+      "left": "0px",
+      "msFlex": 1,
+      "msFlexNegative": "1 !important",
+      "msFlexPositive": "1 !important",
+      "position": "absolute",
+      "right": "0px",
+      "top": "0px",
+    }
+  }
+>
+  <div
+    dir="auto"
+  >
+    I am in Storybook!
+  </div>
+</div>
 `;

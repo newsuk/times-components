@@ -1,14 +1,18 @@
 // @flow
 
 import * as babelJest from "babel-jest";
+import jestPreset from "babel-preset-jest";
+import { transform as babelTransform, util as babelUtil } from "babel-core";
+import babelIstanbulPlugin from "babel-plugin-istanbul";
 import { readFileSync } from "fs";
 import { createHash } from "crypto";
+import path from "path";
 
 const readSource = (filename: string): string =>
   readFileSync(filename).toString();
 
 const isPackageFile = (filename: string): boolean =>
-  filename.includes("@times-components");
+  filename.includes("times-components");
 
 const pointToSource = (filename: string): string =>
   filename.replace("dist", "src");
@@ -21,11 +25,18 @@ const getPackageCacheKey = (filename: string): string =>
     .update(readSource(pointToSource(filename)))
     .digest("hex");
 
+type Config = {
+  cwd: string,
+  coveragePathIgnorePatterns: Array<string>
+};
+
 const getCacheKey = (
   src: string,
   filename: string,
   config: string,
-  cacheOptions: {}
+  cacheOptions: {
+    rootDir: string
+  }
 ): string =>
   isPackageFile(filename)
     ? getPackageCacheKey(filename)
@@ -34,8 +45,7 @@ const getCacheKey = (
 const transform = (
   src: string,
   targetFilename: string,
-  config: {},
-  options: {}
+  { cwd, coveragePathIgnorePatterns }: Config
 ): string => {
   let source = src;
   let filename = targetFilename;
@@ -45,7 +55,25 @@ const transform = (
     source = readSource(filename);
   }
 
-  return babelJest.process(source, filename, config, options);
+  if (babelUtil && !babelUtil.canCompile(filename)) {
+    return source;
+  }
+
+  const transformResult = babelTransform(source, {
+    filename,
+    presets: [jestPreset],
+    plugins: [
+      [
+        babelIstanbulPlugin,
+        {
+          cwd: path.join(cwd, "src"),
+          exclude: coveragePathIgnorePatterns
+        }
+      ]
+    ]
+  });
+
+  return transformResult || source;
 };
 
 export { getCacheKey, transform as process };

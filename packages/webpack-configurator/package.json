@@ -43,7 +43,7 @@
     "@times-components/eslint-config-thetimes": "0.7.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "4.9.0",
-    "jest": "21.2.1",
+    "jest": "23.3.0",
     "prettier": "1.8.2"
   },
   "peerDependencies": {

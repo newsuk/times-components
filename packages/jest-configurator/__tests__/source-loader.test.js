@@ -1,100 +1,75 @@
-import * as babelJest from "babel-jest";
-import * as fs from "fs";
+import { iterator } from "@times-components/test-utils";
+import { readFileSync } from "fs";
 import { getCacheKey, process as transform } from "../src/source-loader";
 
-jest.mock("babel-jest");
-jest.mock("fs", () => jest.genMockFromModule("fs"));
+const tests = [
+  {
+    name: "monorepo package hash",
+    test() {
+      const filePath = "./fixtures/times-components/src/test.js";
+      const fileContents = readFileSync(filePath).toString();
 
-describe("source loader", () => {
-  describe("getCacheKey", () => {
-    afterEach(() => {
-      fs.readFileSync.mockReset();
-    });
+      expect(getCacheKey(fileContents, filePath, "", {})).toMatchSnapshot();
+    }
+  },
+  {
+    name: "non-monorepo package hash",
+    test() {
+      const filePath = "./fixtures/test.js";
+      const fileContents = readFileSync(filePath).toString();
 
-    it("should create a hash based upon the source contents if the file belongs to a monorepo package", () => {
-      const filename = "node_modules/@times-components/foo/bar.js";
-      const src = "foo";
-      const expectedKey = "acbd18db4cc2f85cedef654fccc4a4d8";
+      expect(
+        getCacheKey(fileContents, filePath, "", {
+          rootDir: ""
+        })
+      ).toMatchSnapshot();
+    }
+  },
+  {
+    name: "untransformed unbabelable file",
+    test() {
+      const fileContents = `fn main(){"println!("Hello World!");}`;
 
-      fs.readFileSync.mockImplementationOnce(() => src);
+      const actual = transform(fileContents, "./fixtures/test.rs", {
+        cwd: "/home/cwd",
+        coveragePathIgnorePatterns: []
+      });
 
-      const actualKey = getCacheKey(src, filename);
+      expect(actual).toEqual(fileContents);
+    }
+  },
+  {
+    name: "transformed non-monorepo file",
+    test() {
+      const fileContents = readFileSync("./fixtures/test.js").toString();
 
-      expect(actualKey).toEqual(expectedKey);
-      expect(babelJest.getCacheKey).not.toHaveBeenCalled();
-    });
+      const { code } = transform(fileContents, "./fixtures/test.js", {
+        cwd: "/home/cwd",
+        coveragePathIgnorePatterns: []
+      });
 
-    it("should delegate to babel-jest if it is not a monorepo package file", () => {
-      const src = "src";
-      const filename = "node_modules/react-native/foo/bar.js";
-      const expectedKey = "some hashed key";
-      const config = "config";
-      const options = {};
+      expect(code).toMatchSnapshot();
+    }
+  },
+  {
+    name: "transformed monorepo src file",
+    test() {
+      const fileContents = readFileSync(
+        "./fixtures/times-components/dist/test.js"
+      ).toString();
 
-      babelJest.getCacheKey.mockImplementationOnce(() => expectedKey);
-
-      const actualKey = getCacheKey(src, filename, config, options);
-
-      expect(actualKey).toEqual(expectedKey);
-
-      expect(babelJest.getCacheKey).toHaveBeenCalledWith(
-        src,
-        filename,
-        config,
-        options
-      );
-    });
-  });
-
-  describe("transform", () => {
-    const inputSource = "source";
-    const expectedOutput = "output";
-    const config = {};
-    const options = {};
-
-    beforeEach(() => {
-      babelJest.process.mockImplementationOnce(() => expectedOutput);
-    });
-
-    afterEach(() => {
-      fs.readFileSync.mockReset();
-    });
-
-    it("should read the respective source file for a module if it belongs to a monorepo package", () => {
-      const srcFilename = "node_modules/@times-components/src/foo/bar.js";
-      const distFilename = "node_modules/@times-components/dist/foo/bar.js";
-      const rawSource = "raw source";
-
-      fs.readFileSync.mockImplementationOnce(() => rawSource);
-
-      const actualOutput = transform(
-        inputSource,
-        distFilename,
-        config,
-        options
+      const { code } = transform(
+        fileContents,
+        "./fixtures/times-components/dist/test.js",
+        {
+          cwd: "/home/cwd",
+          coveragePathIgnorePatterns: []
+        }
       );
 
-      expect(actualOutput).toEqual(expectedOutput);
-      expect(babelJest.process).toHaveBeenCalledWith(
-        rawSource,
-        srcFilename,
-        config,
-        options
-      );
-    });
+      expect(code).toMatchSnapshot();
+    }
+  }
+];
 
-    it("should not manipulate the source and filename parameters if they don`t belong to a monorepo package", () => {
-      const filename = "node_modules/react-native/foo/bar.js";
-      const actualOutput = transform(inputSource, filename, config, options);
-
-      expect(actualOutput).toEqual(expectedOutput);
-      expect(babelJest.process).toHaveBeenCalledWith(
-        inputSource,
-        filename,
-        config,
-        options
-      );
-      expect(fs.readFileSync).not.toHaveBeenCalled();
-    });
-  });
-});
+iterator(tests);

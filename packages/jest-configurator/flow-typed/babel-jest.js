@@ -12,6 +12,8 @@ declare module "babel-jest" {
     fileData: string,
     filename: string,
     configString: string,
-    options?: {}
+    options: {
+      rootDir: string
+    }
   ): string;
 }

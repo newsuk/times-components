@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. IconDiamond renders 1`] = `
+exports[`1. icondiamond renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -65,7 +65,7 @@ exports[`1. IconDiamond renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`2. IconTwitter renders 1`] = `
+exports[`2. icontwitter renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -117,7 +117,7 @@ exports[`2. IconTwitter renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`3. IconVideo renders 1`] = `
+exports[`3. iconvideo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -223,7 +223,7 @@ exports[`3. IconVideo renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`4. IconEmail renders 1`] = `
+exports[`4. iconemail renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -288,7 +288,7 @@ exports[`4. IconEmail renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`5. IconStar renders 1`] = `
+exports[`5. iconstar renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -340,7 +340,7 @@ exports[`5. IconStar renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`6. IconFacebook renders 1`] = `
+exports[`6. iconfacebook renders 1`] = `
 <ARTSurfaceView
   style={
     Object {

@@ -13,3 +13,4 @@ LICENSE
 yarn.lock
 *.sh
 *.log
+*.rs
