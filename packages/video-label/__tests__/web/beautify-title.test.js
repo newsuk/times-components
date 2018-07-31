@@ -1,3 +1,3 @@
-import beautifyTitle from "../beautify-title-without-spacing";
+import beautifyTitle from "../beautify-title";
 
 beautifyTitle();

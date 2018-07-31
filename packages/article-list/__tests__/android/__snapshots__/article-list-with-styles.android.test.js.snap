@@ -36,7 +36,7 @@ exports[`1. article list 1`] = `
                     }
                   }
                 >
-                  L A B E L   1
+                  LABEL 1
                 </Text>
               </View>
               <Text
@@ -139,7 +139,7 @@ exports[`1. article list 1`] = `
                     }
                   }
                 >
-                  L A B E L   2
+                  LABEL 2
                 </Text>
               </View>
               <Text
@@ -266,7 +266,7 @@ exports[`2. article list with no images 1`] = `
                     }
                   }
                 >
-                  L A B E L   1
+                  LABEL 1
                 </Text>
               </View>
               <Text
@@ -378,7 +378,7 @@ exports[`3. a retry button when load more fails 1`] = `
                     }
                   }
                 >
-                  L A B E L   1
+                  LABEL 1
                 </Text>
               </View>
               <Text

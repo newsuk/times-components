@@ -3,12 +3,12 @@
 exports[`accessible button 1`] = `
 <TouchableHighlight
   accessibilityComponentType="button"
-  accessibilityLabel="T E S T   B U T T O N"
+  accessibilityLabel="TEST BUTTON"
   accessibilityRole="button"
   accessibilityTraits="button"
 >
   <Text>
-    T E S T   B U T T O N
+    TEST BUTTON
   </Text>
 </TouchableHighlight>
 `;

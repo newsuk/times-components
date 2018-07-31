@@ -22,7 +22,7 @@ exports[`2. should only re-render when isloading is changed 1`] = `
     }
   }
 >
-  <View
+  <Component
     pointerEvents="box-none"
     style={
       Object {
@@ -41,7 +41,7 @@ exports[`2. should only re-render when isloading is changed 1`] = `
       twitter="testTwitterHandle"
       url="https://twitter.com/testTwitterHandle"
     />
-  </View>
+  </Component>
 </FadeIn>
 `;
 
