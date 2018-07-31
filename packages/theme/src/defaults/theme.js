@@ -1,5 +1,5 @@
-import Scales from "./scales";
+import scales from "./scales";
 
 export default {
-  scale: Scales.medium
+  scale: scales.medium
 };
