@@ -183,135 +183,151 @@ exports[`10. card with reversed loading state with no image 1`] = `
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Do not re-render me
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 2`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Do not re-render me
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`12. card should re-render when image uri changes 1`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Some text
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`12. card should re-render when image uri changes 2`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="http://foo&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Some text
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`13. card should re-render when image size changes 1`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Some content
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`13. card should re-render when image size changes 2`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Some content
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`14. card should re-render when loading state changes 1`] = `
-<Loading
-  imageRatio={0.6666666666666666}
-  isReversed={false}
-  showImage={true}
-/>
+<View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+    />
+  </View>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+  </View>
+</View>
 `;
 
 exports[`14. card should re-render when loading state changes 2`] = `
-<FadeIn>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Image
         aspectRatio={0.6666666666666666}
         uri="https://img.io/img&resize=360"
       />
-    </Component>
-    <Component>
+    </View>
+    <View>
       <Text>
         Re-render me
       </Text>
-    </Component>
-  </Component>
-</FadeIn>
+    </View>
+  </View>
+</View>
 `;
