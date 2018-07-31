@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 export const capitalise = title =>
   title.charAt(0).toUpperCase() + title.slice(1);
 
