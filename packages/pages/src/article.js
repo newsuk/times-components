@@ -51,13 +51,13 @@ const ArticleDetailsPage = ({
 ArticleDetailsPage.propTypes = {
   articleId: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
+  fontSize: PropTypes.string,
   platformAdConfig: PropTypes.shape({}).isRequired,
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  fontSize: PropTypes.string
+  onTopicPress: PropTypes.func.isRequired
 };
 
 ArticleDetailsPage.defaultProps = {
