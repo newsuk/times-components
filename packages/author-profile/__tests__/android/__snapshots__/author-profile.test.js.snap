@@ -4427,7 +4427,7 @@ exports[`4. author profile page error state 1`] = `
   </View>
   <View
     accessibilityComponentType="button"
-    accessibilityLabel="R E T R Y"
+    accessibilityLabel="RETRY"
     accessibilityTraits="button"
     style={
       Object {
@@ -4458,9 +4458,9 @@ exports[`4. author profile page error state 1`] = `
           "paddingTop": 0,
         }
       }
-      title="R E T R Y"
+      title="RETRY"
     >
-      R E T R Y
+      RETRY
     </Text>
   </View>
 </View>
