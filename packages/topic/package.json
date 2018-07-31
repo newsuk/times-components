@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -63,7 +63,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-list": "3.0.13",
+    "@times-components/article-list": "3.0.14",
     "@times-components/gradient": "2.0.9",
     "@times-components/pagination": "2.0.9",
     "@times-components/provider": "0.39.4",
