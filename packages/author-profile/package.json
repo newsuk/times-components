@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "description": "Author profile information along with a list of articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/ad": "2.0.10",
+    "@times-components/ad": "2.0.11",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "@times-components/jest-configurator": "2.0.4",
     "@times-components/jest-serializer": "2.0.4",
@@ -62,12 +62,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-list": "3.0.12",
+    "@times-components/article-list": "3.0.13",
     "@times-components/gradient": "2.0.9",
     "@times-components/icons": "2.0.8",
     "@times-components/image": "3.0.9",
     "@times-components/link": "2.0.9",
-    "@times-components/markup": "2.1.8",
+    "@times-components/markup": "2.1.9",
     "@times-components/pagination": "2.0.9",
     "@times-components/provider": "0.39.4",
     "@times-components/responsive-styles": "2.0.7",
