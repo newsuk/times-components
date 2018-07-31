@@ -1,14 +1,20 @@
 # Article
 
-Article essentially represents an article page and all of the components and
-features found therein. This package is comprised of numerous other components
-and packages, such as `ArticleHeader`, `ArticleTopics` and `RelatedArticles`,
-all of which are related to a specific article. Some of the components utilised
-in the package are self-contained with the article package itself, and some have
-been split out into separate packages. The article data which forms the article
-content comes from an Abstract Syntax Tree ("AST"). It is this AST, handled in
-the markup package, that forms the majority of the content within the article
-itself.
+The article component is a composed collection of components and features which
+go to make up an article. This is distinct from the concept of an article page
+in the pages package, as that page deals with the data provider, whereas this
+package is intended to be a dumb component.
+
+The Article component consumes components such as `ArticleHeader`,
+`ArticleTopics` and `RelatedArticles`, all of which are related to a specific
+article. Some of these components are self-contained with the article package
+itself, and some have been split out into separate packages (see the Future
+section below). The article data which forms the article content comes from an
+Abstract Syntax Tree ("AST"). It is this AST, handled in the markup package (see
+the
+[markup README](https://github.com/newsuk/times-components/tree/master/packages/markup)
+for a full description), that forms the majority of the content within the
+article itself.
 
 ## Contributing
 
