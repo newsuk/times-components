@@ -134,7 +134,7 @@
     "global": "4.3.2",
     "handlebars": "4.0.10",
     "haul": "1.0.0-rc.4",
-    "jest": "21.2.1",
+    "jest": "23.3.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "2.5.1",
     "mkdirp": "0.5.1",
