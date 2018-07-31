@@ -2,7 +2,9 @@
 
 Provides theming capabilities by utilising React's Context API.
 
-This package should be used to create themes to be shared between multiple components, such as app-wide font size changes that defines the scale of the text views.
+This package should be used to create themes to be shared between multiple
+components, such as app-wide font size changes that defines the scale of the
+text views.
 
 ## Contributing
 
@@ -40,4 +42,5 @@ yarn test:all
 
 ## Future
 
-More theme properties will be added in the future, such as the section colours, that will be defined by the apps' current navigation state.
+More theme properties will be added in the future, such as the section colours,
+that will be defined by the apps' current navigation state.
