@@ -5,6 +5,9 @@ status. There are some common statuses that are exported as components from this
 package, such as "new", "updated", "exclusive" or "sponsored", but the default
 component also takes a bespoke `title` prop to enable a bespoke status.
 
+The flags are currently added to an article by an editor using the CMS. These
+flags "expire" server side.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
