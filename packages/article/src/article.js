@@ -42,7 +42,6 @@ const renderRow = analyticsStream => (
         </View>
       );
     }
-    
 
     case "header": {
       const { headline, flags, standfirst, label, isVideo } = rowData.data;
