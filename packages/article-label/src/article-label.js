@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./style";
 
-const ArticleLabel = ({ title, color }) => (
+const ArticleLabel = ({ color, title }) => (
   <Text style={[styles.title, { color }]}>{title.toUpperCase()}</Text>
 );
 
