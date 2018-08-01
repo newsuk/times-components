@@ -1,9 +1,9 @@
 {
-  "name": "@times-components/theme",
+  "name": "@times-components/context",
   "version": "0.0.1",
-  "description": "Shared themes context between components",
-  "main": "dist/theme",
-  "dev": "src/theme",
+  "description": "Shared context between components",
+  "main": "dist/context",
+  "dev": "src/context",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -26,7 +26,7 @@
     "react",
     "native",
     "web",
-    "theme",
+    "context",
     "component"
   ],
   "license": "BSD-3-Clause",

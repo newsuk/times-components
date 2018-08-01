@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import themeDefault from "./defaults";
+import defaults from "./defaults";
 
-export default createContext(themeDefault);
+export default createContext(defaults);
 export { default as scales } from "./defaults/scales";
