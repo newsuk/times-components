@@ -40,9 +40,3 @@ yarn test:all
 Visit the official
 [storybook](http://localhost:9001/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Height%3A%20=288&knob-Width%3A%20=352&knob-Section=%23333333&selectedKind=Primitives%2FVideo%20Label&selectedStory=Video%20Label%20without%20title&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available video label templates.
-
-## Future
-
-When we bump react-native to version 0.55+ we will be able to consolidate the
-`beautify-title` methods, because this added support for Android
-`letter-spacing`

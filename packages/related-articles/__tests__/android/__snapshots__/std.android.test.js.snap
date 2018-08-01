@@ -47,10 +47,8 @@ exports[`3. a single related article 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text
@@ -141,10 +139,8 @@ exports[`5. two related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text
@@ -192,10 +188,8 @@ exports[`5. two related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text
@@ -290,10 +284,8 @@ exports[`7. three related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text
@@ -341,10 +333,8 @@ exports[`7. three related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text
@@ -392,10 +382,8 @@ exports[`7. three related articles 1`] = `
           >
             <View>
               <View>
-                <Text
-                  accessibilityLabel="BAYEUX TAPESTRY"
-                >
-                  B A Y E U X   T A P E S T R Y
+                <Text>
+                  BAYEUX TAPESTRY
                 </Text>
               </View>
               <Text

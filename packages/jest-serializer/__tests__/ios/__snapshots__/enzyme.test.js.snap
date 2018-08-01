@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`On native the Enzyme shallow serializer should render the expected snapshot 1`] = `
-<View>
+<Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -9,7 +9,7 @@ exports[`On native the Enzyme shallow serializer should render the expected snap
   >
     Hello World!
   </Text>
-  <View>
+  <Component>
     <SomeComponent
       style={null}
     >
@@ -21,6 +21,6 @@ exports[`On native the Enzyme shallow serializer should render the expected snap
         Hello world!
       </Text>
     </SomeComponent>
-  </View>
-</View>
+  </Component>
+</Component>
 `;
