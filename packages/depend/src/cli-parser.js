@@ -59,7 +59,7 @@ export default commander
     validateStrategies
   )
   .option(
-    "-on --only",
+    "-on --only <glob>",
     "glob expression that restricts dependencies to process"
   )
   .option("-f --fix", "fixed dependencies with wrong versions")
