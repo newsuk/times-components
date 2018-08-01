@@ -1,5 +1,5 @@
-import React from "react";
-import articleThemeDefault from "./defaults/theme";
+import { createContext } from "react";
+import themeDefault from "./defaults";
 
-export default React.createContext(articleThemeDefault);
+export default createContext(themeDefault);
 export { default as scales } from "./defaults/scales";

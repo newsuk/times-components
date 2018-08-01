@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import Theme from "../src/theme";
-import themeDefaults from "../src/defaults/theme";
+import themeDefaults from "../src/defaults";
 
 export default () => {
   it("with default values", () => {
