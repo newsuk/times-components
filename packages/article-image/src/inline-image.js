@@ -1,27 +1,9 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import { ModalImage } from "@times-components/image";
+import { View } from "react-native";
 import Caption from "@times-components/caption";
-import { spacing } from "@times-components/styleguide";
-
-import {
-  articleImagePropTypes,
-  articleImageDefaultPropTypes
-} from "./article-image-prop-types";
-
-const styles = StyleSheet.create({
-  inlineImage: {
-    width: "50%"
-  },
-  inlineCaption: {
-    paddingLeft: spacing(2),
-    paddingTop: 0,
-    width: "50%"
-  },
-  container: {
-    paddingTop: 0
-  }
-});
+import { ModalImage } from "@times-components/image";
+import styles from "../styles";
+import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
@@ -56,7 +38,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
   ];
 };
 
-InlineImage.propTypes = articleImagePropTypes;
-InlineImage.defaultProps = articleImageDefaultPropTypes;
+InlineImage.propTypes = propTypes;
+InlineImage.defaultProps = defaultPropTypes;
 
 export default InlineImage;

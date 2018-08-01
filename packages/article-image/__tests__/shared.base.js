@@ -27,7 +27,7 @@ export default makeTest => {
       test: () => {
         const noRatio = {
           imageOptions: {
-            display: "primary",
+            display: "inline",
             ratio: null,
             url: testImageUrl
           }

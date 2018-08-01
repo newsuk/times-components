@@ -15,7 +15,6 @@ const CaptionComponentPrimaryNative = ({ caption, credits }) => (
 CaptionComponentPrimaryNative.propTypes = {
   ...Caption.propTypes
 };
-
 CaptionComponentPrimaryNative.defaultProps = {
   ...Caption.defaultProps
 };
