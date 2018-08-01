@@ -8,6 +8,9 @@ import timesFontSizes from "./fonts/font-sizes";
 
 import timesSpacing from "./spacing";
 
+import timesLineHeightsFactory from "./line-heights";
+import timesFontFactory from "./fonts/font-factory";
+
 const colours = {
   section: sectionColours,
   functional: functionalColours
@@ -18,14 +21,18 @@ const Animations = {
 };
 
 const fonts = timesFonts;
+const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
-
+const lineHeight = timesLineHeightsFactory();
 const spacing = timesSpacing;
-export { colours, Animations, fonts, fontSizes, spacing };
+
+export { Animations, colours, fonts, fontFactory, fontSizes, lineHeight, spacing };
 export default ({ scale }) => ({
-  colours,
   Animations,
+  colours,
   fonts,
+  fontFactory: timesFontFactory(scale),
   fontSizes: timesFontSizes(scale),
+  lineHeight: timesLineHeightsFactory(scale),
   spacing
 });

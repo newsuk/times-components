@@ -31,9 +31,7 @@ const styles = ({scale = ""} = {}) => StyleSheet.create({
   },
   text: {
     color: colours.functional.primary,
-    fontFamily: fonts.body,
-    fontSize: timesStyleguide({scale}).fontSizes.secondary,
-    lineHeight: 27,
+    ...timesStyleguide({scale}).fontFactory({font: "body", fontSize: "secondary"}),
     marginTop: -8,
     paddingLeft: spacing(3),
     width: "95%"
