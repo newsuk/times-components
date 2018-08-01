@@ -1,10 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
-
 import { colours } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
-import beautifyTitle from "./utils/beautify";
 import styles from "./style";
 
 const ArticleFlag = ({ title, color }) => (
@@ -17,7 +15,7 @@ const ArticleFlag = ({ title, color }) => (
       style={[styles.title, { color }]}
       testID={`flag-${title}`}
     >
-      {beautifyTitle(title)}
+      {title.toLowerCase()}
     </Text>
   </View>
 );

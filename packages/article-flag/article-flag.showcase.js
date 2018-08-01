@@ -1,5 +1,5 @@
 import React from "react";
-import {
+import ArticleFlag, {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
@@ -9,6 +9,11 @@ import {
 export default {
   name: "Primitives/Article Flag",
   children: [
+    {
+      type: "story",
+      name: "Article Flag (Default)",
+      component: () => <ArticleFlag title="Default" />
+    },
     {
       type: "story",
       name: "Article Flag (New)",
