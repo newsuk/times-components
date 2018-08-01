@@ -1,9 +1,9 @@
 # Article Flag
 
-Artivle flags are attached to an article like a lable to indicate the article's
+Article flags are attached to an article like a label to indicate the article's
 status. There are some common statuses that are exported as components from this
-package, such as "new", "exclusive" or "sponsored", but the default component
-also takes a bespoke `title` prop to enable a bespoke status.
+package, such as "new", "updated", "exclusive" or "sponsored", but the default
+component also takes a bespoke `title` prop to enable a bespoke status.
 
 ## Contributing
 
