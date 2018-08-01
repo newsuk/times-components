@@ -2,7 +2,9 @@
 
 exports[`1. does not render an image if display is not received 1`] = `Array []`;
 
-exports[`2. does not render an image if ratio is not received 1`] = `
+exports[`2. does not render an image if ratio is not received 1`] = `Array []`;
+
+exports[`3. does not render an inline image if ratio is not received 1`] = `
 <InlineImage
   captionOptions={
     Object {
@@ -20,7 +22,7 @@ exports[`2. does not render an image if ratio is not received 1`] = `
 />
 `;
 
-exports[`3. image with no caption 1`] = `
+exports[`4. image with no caption 1`] = `
 <div>
   <TimesImage
     aspectRatio={1.7777777777777777}
@@ -29,7 +31,7 @@ exports[`3. image with no caption 1`] = `
 </div>
 `;
 
-exports[`4. image with caption 1`] = `
+exports[`5. image with caption 1`] = `
 <div>
   <div>
     <div>
@@ -41,7 +43,7 @@ exports[`4. image with caption 1`] = `
 </div>
 `;
 
-exports[`5. image with credit 1`] = `
+exports[`6. image with credit 1`] = `
 <div>
   <div>
     <div>

@@ -27,6 +27,22 @@ export default makeTest => {
       test: () => {
         const noRatio = {
           imageOptions: {
+            display: "primary",
+            ratio: null,
+            url: testImageUrl
+          }
+        };
+
+        expect(
+          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "does not render an inline image if ratio is not received",
+      test: () => {
+        const noRatio = {
+          imageOptions: {
             display: "inline",
             ratio: null,
             url: testImageUrl
