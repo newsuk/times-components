@@ -4,7 +4,7 @@ import propTypes from "./key-facts-shared-prop-types";
 import styles from "./styles";
 
 const KeyFactsContainer = ({ children }) => (
-  <KeyFactsResponsiveContainer style={styles.container}>
+  <KeyFactsResponsiveContainer style={styles().container}>
     {children}
   </KeyFactsResponsiveContainer>
 );

@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import {
+import timesStyleguide, {
   colours,
   fonts,
   fontSizes,
   spacing
 } from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
+const styles = ({scale = ""} = {}) => StyleSheet.create({
   container: {
     marginBottom: 5,
     marginLeft: 10,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   text: {
     color: colours.functional.primary,
     fontFamily: fonts.body,
-    fontSize: fontSizes.secondary,
+    fontSize: timesStyleguide({scale}).fontSizes.secondary,
     lineHeight: 27,
     marginTop: -8,
     paddingLeft: spacing(3),
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.cardMetaMobile,
+    fontSize: timesStyleguide({scale}).fontSizes.cardMetaMobile,
     fontWeight: "400",
     letterSpacing: 1.2,
     marginBottom: 20

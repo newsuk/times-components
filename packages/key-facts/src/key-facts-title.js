@@ -4,7 +4,7 @@ import propTypes from "./key-facts-title-prop-types";
 import styles from "./styles";
 
 const KeyFactsTitle = ({ title }) => (
-  <Text style={styles.title}>{title.toUpperCase()}</Text>
+  <Text style={styles().title}>{title.toUpperCase()}</Text>
 );
 
 KeyFactsTitle.propTypes = propTypes;

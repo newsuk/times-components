@@ -4,7 +4,7 @@ import { KeyFactsTitleResponsive } from "./styles/responsive";
 import styles from "./styles";
 
 const KeyFactsTitle = ({ title }) => (
-  <KeyFactsTitleResponsive style={styles.title}>
+  <KeyFactsTitleResponsive style={styles().title}>
     {title.toUpperCase()}
   </KeyFactsTitleResponsive>
 );

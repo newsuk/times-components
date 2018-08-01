@@ -20,9 +20,9 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   };
 
   const renderKeyFact = (item, listIndex) => (
-    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
-      <View style={styles.bullet} />
-      <Text style={styles.text}>
+    <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
+      <View style={styles().bullet} />
+      <Text style={styles().text}>
         {item.children.map((data, listItemIndex) =>
           renderTree(
             data,
@@ -41,7 +41,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
                           url
                         })
                       }
-                      style={styles.link}
+                      style={styles().link}
                       url={url}
                     >
                       {renderedChildren}
