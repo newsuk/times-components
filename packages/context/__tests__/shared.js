@@ -4,7 +4,7 @@ import Context from "../src/context";
 import defaults from "../src/defaults";
 
 export default () => {
-  it("with default theme", () => {
+  it("with default scale", () => {
     const { theme: { scale: defaultScale } } = defaults;
     const testInstance = TestRenderer.create(
       <Context.Consumer>{context => context.theme.scale}</Context.Consumer>
@@ -13,7 +13,7 @@ export default () => {
     expect(testInstance.toJSON()).toBe(defaultScale);
   });
 
-  it("with inline theme", () => {
+  it("with inline scale", () => {
     const scale = "large";
     const testInstance = TestRenderer.create(
       <Context.Provider value={{ theme: { scale } }}>
