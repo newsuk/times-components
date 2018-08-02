@@ -7,14 +7,14 @@ const fontSizes = scale => {
         ...sharedFontSizes,
         bodyMobile: 21,
         cardMetaMobile: 17,
-        secondary: 20
+        secondary: 21
       };
     case "xlarge":
       return {
         ...sharedFontSizes,
         bodyMobile: 23,
-        cardMetaMobile: 18,
-        secondary: 22
+        cardMetaMobile: 19,
+        secondary: 23
       };
     default:
       return sharedFontSizes;

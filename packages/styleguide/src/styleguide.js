@@ -3,13 +3,12 @@ import functionalColours from "./colours/functional";
 
 import FadeIn from "./animations";
 
+import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
-
-import timesSpacing from "./spacing";
-
-import timesLineHeightsFactory from "./line-heights";
 import timesFontFactory from "./fonts/font-factory";
+
+import spacing from "./spacing";
 
 const colours = {
   section: sectionColours,
@@ -24,15 +23,14 @@ const fonts = timesFonts;
 const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
 const lineHeight = timesLineHeightsFactory();
-const spacing = timesSpacing;
 
 export { Animations, colours, fonts, fontFactory, fontSizes, lineHeight, spacing };
-export default ({ scale }) => ({
+export default ({ scale = "medium" } = {}) => ({
   Animations,
   colours,
   fonts,
-  fontFactory: timesFontFactory(scale || "default"),
-  fontSizes: timesFontSizes(scale || "default"),
-  lineHeight: timesLineHeightsFactory(scale || "default"),
+  fontFactory: timesFontFactory(scale),
+  fontSizes: timesFontSizes(scale),
+  lineHeight: timesLineHeightsFactory(scale),
   spacing
 });
