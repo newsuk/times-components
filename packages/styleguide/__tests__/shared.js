@@ -27,26 +27,40 @@ export default () => {
   describe("Styleguide Factory", () => {
     describe("Font factory", () => {
       it("should provide a font family, font size and line height that is default scaled for a correct reference", () => {
-        const testInstance = timesStyleguide().fontFactory({font: "body", fontSize: "secondary"});
+        const testInstance = timesStyleguide().fontFactory({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
       it('should provide a font family, font size and line height that is "large" scaled for a correct reference', () => {
-        const testInstance = timesStyleguide({scale: 'large'}).fontFactory({font: "body", fontSize: "secondary"});
+        const testInstance = timesStyleguide({ scale: "large" }).fontFactory({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
       it('should provider a font family, font size and line height that is "xlarge" scaled for a correct reference', () => {
-        const testInstance = timesStyleguide({scale: 'xlarge'}).fontFactory({font: "body", fontSize: "secondary"});
+        const testInstance = timesStyleguide({ scale: "xlarge" }).fontFactory({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
-      it('should throw a a TypeError if no font or font size are provided', () => {
-        expect(() => timesStyleguide().fontFactory()).toThrow(TypeError)
+      it("should throw a a TypeError if no font or font size are provided", () => {
+        expect(() => timesStyleguide().fontFactory()).toThrow(TypeError);
       });
 
-      it('should throw a TypeError if no font or font size are not correctly referenced', () => {
-        expect(() => timesStyleguide().fontFactory({font: "comicSans", fontSize: "massive"})).toThrow(TypeError)
+      it("should throw a TypeError if no font or font size are not correctly referenced", () => {
+        expect(() =>
+          timesStyleguide().fontFactory({
+            font: "comicSans",
+            fontSize: "massive"
+          })
+        ).toThrow(TypeError);
       });
     });
 
@@ -54,44 +68,57 @@ export default () => {
       it("should give a correct font size for a correct reference scaled to default", () => {
         const testInstance = timesStyleguide().fontSizes.bodyMobile;
         expect(testInstance).toMatchSnapshot();
-      })
+      });
 
       it('should give a correct font size for a correct reference scaled to "large"', () => {
-        const testInstance = timesStyleguide({scale: 'large'}).fontSizes.bodyMobile;
+        const testInstance = timesStyleguide({ scale: "large" }).fontSizes
+          .bodyMobile;
         expect(testInstance).toMatchSnapshot();
-      })
+      });
 
       it('should give a correct font size for a correct reference scaled to "xlarge"', () => {
         const testInstance = timesStyleguide().fontSizes.bodyMobile;
         expect(testInstance).toMatchSnapshot();
       });
-    })
+    });
 
     describe("Line height factory", () => {
-      it('should give a correct line height for a correct reference scaled to default', () => {
-        const testInstance = timesStyleguide({scale: 'xlarge'}).lineHeight({font: "body", fontSize: "secondary"});
+      it("should give a correct line height for a correct reference scaled to default", () => {
+        const testInstance = timesStyleguide({ scale: "xlarge" }).lineHeight({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
       it('should give a correct line height for a correct reference scaled to "large"', () => {
-        const testInstance = timesStyleguide({scale: 'large'}).lineHeight({font: "body", fontSize: "secondary"});
+        const testInstance = timesStyleguide({ scale: "large" }).lineHeight({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
       it('should give a correct line height for a correct reference scaled to "xlarge"', () => {
-        const testInstance = timesStyleguide({scale: 'xlarge'}).lineHeight({font: "body", fontSize: "secondary"});
+        const testInstance = timesStyleguide({ scale: "xlarge" }).lineHeight({
+          font: "body",
+          fontSize: "secondary"
+        });
         expect(testInstance).toMatchSnapshot();
       });
 
-      it('should throw a a TypeError if no font or font size are provided', () => {
-        expect(() => timesStyleguide().lineHeight()).toThrow(TypeError)
+      it("should throw a a TypeError if no font or font size are provided", () => {
+        expect(() => timesStyleguide().lineHeight()).toThrow(TypeError);
       });
 
-      it('should throw a TypeError if no font or font size are not correctly referenced', () => {
-        expect(() => timesStyleguide().lineHeight({font: "comicSans", fontSize: "massive"})).toThrow(TypeError)
+      it("should throw a TypeError if no font or font size are not correctly referenced", () => {
+        expect(() =>
+          timesStyleguide().lineHeight({
+            font: "comicSans",
+            fontSize: "massive"
+          })
+        ).toThrow(TypeError);
       });
     });
-
-
-  })
+  });
 };

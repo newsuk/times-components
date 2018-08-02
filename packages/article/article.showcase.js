@@ -78,7 +78,7 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: ({ select }, { decorateAction }) => {
+      component: ({ select }) => {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, { fixture: fullArticleFixture() })
       }

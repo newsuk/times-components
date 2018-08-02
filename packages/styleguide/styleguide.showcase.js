@@ -34,6 +34,65 @@ const fontDisplayer = (fontFamily, phrase, fontSizes) =>
     </Fragment>
   ));
 
+const fontFixture = select => {
+  const scale = select("Scale", scales, "Large");
+  const styleguide = timesStyleguide({ scale });
+  const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
+  return (
+    <ScrollView>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Body</Text>
+        {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
+      </View>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Body Regular</Text>
+        <Text>
+          Used for the body copy of articles or as the teaser copy on article
+          links.
+        </Text>
+        {fontDisplayer(fonts.bodyRegular, phrase, styleguide.fontSizes)}
+      </View>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Body Regular Small Caps</Text>
+        <Text>
+          Always used as a lowercase font, it is typically used to support the
+          headline font. It’s used in various different places e.g. Journalist
+          pages for the Journalist job title, article flags and show more
+          buttons on the homepage.
+        </Text>
+        {fontDisplayer(
+          fonts.bodyRegularSmallCaps,
+          phrase.toLowerCase(),
+          styleguide.fontSizes
+        )}
+      </View>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Headline</Text>
+        <Text>
+          Used as the headline for components and articles across the site.
+        </Text>
+        {fontDisplayer(fonts.headline, phrase, styleguide.fontSizes)}
+      </View>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Headline Regular</Text>
+        <Text>
+          Used primarily to style subheadings for components and stand firsts on
+          the homepage and articles.
+        </Text>
+        {fontDisplayer(fonts.headlineRegular, phrase, styleguide.fontSizes)}
+      </View>
+      <View style={styles.showoffFontsContainer}>
+        <Text style={styles.headline}>Supporting</Text>
+        <Text>
+          Used as a supporting typeface in a variety of places including
+          messaging banners, buttons, links, homepage labels and tags.
+        </Text>
+        {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
+      </View>
+    </ScrollView>
+  );
+};
+
 export default {
   name: "Helpers/Styleguide",
   children: [
@@ -115,61 +174,8 @@ export default {
     {
       type: "story",
       name: "Fonts",
-      component: ({ select }) => {
-        const scale = select("Scale", scales, "Large");
-        const styleguide = timesStyleguide({scale});
-        const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
-
-        return (
-          <ScrollView>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Body</Text>
-              {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
-            </View>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Body Regular</Text>
-              <Text>
-                Used for the body copy of articles or as the teaser copy on
-                article links.
-              </Text>
-              {fontDisplayer(fonts.bodyRegular, phrase, styleguide.fontSizes)}
-            </View>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Body Regular Small Caps</Text>
-              <Text>
-                Always used as a lowercase font, it is typically used to support
-                the headline font. It’s used in various different places e.g.
-                Journalist pages for the Journalist job title, article flags and
-                show more buttons on the homepage.
-              </Text>
-              {fontDisplayer(fonts.bodyRegularSmallCaps, phrase.toLowerCase(), styleguide.fontSizes)}
-            </View>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Headline</Text>
-              <Text>
-                Used as the headline for components and articles across the
-                site.
-              </Text>
-              {fontDisplayer(fonts.headline, phrase, styleguide.fontSizes)}
-            </View>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Headline Regular</Text>
-              <Text>
-                Used primarily to style subheadings for components and stand
-                firsts on the homepage and articles.
-              </Text>
-              {fontDisplayer(fonts.headlineRegular, phrase, styleguide.fontSizes)}
-            </View>
-            <View style={styles.showoffFontsContainer}>
-              <Text style={styles.headline}>Supporting</Text>
-              <Text>
-                Used as a supporting typeface in a variety of places including
-                messaging banners, buttons, links, homepage labels and tags.
-              </Text>
-              {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
-            </View>
-          </ScrollView>
-        );
+      component({ select }) {
+        return fontFixture(select);
       }
     }
   ]

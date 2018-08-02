@@ -1,7 +1,7 @@
 import mappingBase from "./mapping-base";
 
-const mapping = ({scale}) => {
-  switch(scale) {
+const mapping = ({ scale }) => {
+  switch (scale) {
     case "large":
       return {
         ...mappingBase,

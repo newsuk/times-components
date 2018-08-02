@@ -19,6 +19,6 @@ const fontSizes = scale => {
     default:
       return sharedFontSizes;
   }
-}
+};
 
 export default fontSizes;

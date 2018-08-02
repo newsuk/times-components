@@ -24,7 +24,15 @@ const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
 const lineHeight = timesLineHeightsFactory();
 
-export { Animations, colours, fonts, fontFactory, fontSizes, lineHeight, spacing };
+export {
+  Animations,
+  colours,
+  fonts,
+  fontFactory,
+  fontSizes,
+  lineHeight,
+  spacing
+};
 export default ({ scale = "medium" } = {}) => ({
   Animations,
   colours,
