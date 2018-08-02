@@ -39,7 +39,8 @@ export default makeTest => {
       }
     },
     {
-      name: "does not render an inline image with no ratio and no caption or credits",
+      name:
+        "does not render an inline image with no ratio and no caption or credits",
       test: () => {
         const noRatio = {
           imageOptions: {
@@ -50,11 +51,7 @@ export default makeTest => {
         };
 
         expect(
-          makeTest(
-            <ArticleImage
-              imageOptions={noRatio.imageOptions}
-            />
-          )
+          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
         ).toMatchSnapshot();
       }
     },
