@@ -1,26 +1,14 @@
 import React from "react";
-import { View } from "react-native";
-import Caption from "@times-components/caption";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import Caption, { propTypes, defaultProps } from "@times-components/caption";
+import { InsetCaptionStyle } from "../styles/responsive";
 
-const InsetCaptionStyle = withResponsiveStyles(View, {
-  base: () => `padding-left: ${spacing(2)};`,
-  mediumUp: () => "padding-left: 0px;"
-});
-
-const InsetCaptionWeb = props => (
+const InsetCaptionWeb = ({ caption, credits }) => (
   <InsetCaptionStyle>
-    <Caption credits={props.credits} text={props.caption} />
+    <Caption credits={credits} text={caption} />
   </InsetCaptionStyle>
 );
 
-InsetCaptionWeb.propTypes = {
-  ...Caption.propTypes
-};
-
-InsetCaptionWeb.defaultProps = {
-  ...Caption.defaultProps
-};
+InsetCaptionWeb.propTypes = propTypes;
+InsetCaptionWeb.defaultProps = defaultProps;
 
 export default InsetCaptionWeb;

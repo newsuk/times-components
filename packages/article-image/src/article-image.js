@@ -1,36 +1,8 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import { View } from "react-native";
+import styles from "../styles";
 import ArticleImage from "./article-image.base";
-
-import {
-  articleImagePropTypes,
-  articleImageDefaultPropTypes
-} from "./article-image-prop-types";
-
-const styles = StyleSheet.create({
-  primaryContainer: {
-    width: "100%",
-    flexDirection: "column",
-    paddingBottom: spacing(5)
-  },
-  secondaryContainer: {
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    paddingBottom: spacing(5),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2)
-  },
-  inlineContainer: {
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    paddingBottom: spacing(5),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2)
-  }
-});
+import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 
 const ArticleImageNative = props => {
   const { display, url } = props.imageOptions;
@@ -42,7 +14,7 @@ const ArticleImageNative = props => {
   );
 };
 
-ArticleImageNative.propTypes = articleImagePropTypes;
-ArticleImageNative.defaultProps = articleImageDefaultPropTypes;
+ArticleImageNative.propTypes = propTypes;
+ArticleImageNative.defaultProps = defaultPropTypes;
 
 export default ArticleImageNative;

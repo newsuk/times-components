@@ -1,19 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. does not render an image if display is not received 1`] = `Array []`;
+exports[`1. does not render an image if display is not received 1`] = `""`;
 
-exports[`2. does not render an image if ratio is not received 1`] = `Array []`;
+exports[`2. does not render a primary image if ratio is not received 1`] = `""`;
 
-exports[`3. image with no caption 1`] = `
+exports[`3. does not render an inline image with no ratio and no caption or credits 1`] = `""`;
+
+exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 <div>
-  <TimesImage
-    aspectRatio={1.7777777777777777}
-    uri="https://imageserver/someImage"
-  />
+  <div>
+    <div>
+      <div>
+        Some caption
+      </div>
+      <div>
+        SOME CREDIT
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`4. image with caption 1`] = `
+exports[`5. image with no caption 1`] = `
+<div>
+  <div>
+    <div>
+      <img
+        alt=""
+        src="https://imageserver/someImage"
+      />
+      <div>
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. image with no display only shows given caption 1`] = `
 <div>
   <div>
     <div>
@@ -25,7 +49,7 @@ exports[`4. image with caption 1`] = `
 </div>
 `;
 
-exports[`5. image with credit 1`] = `
+exports[`7. image with no display only shows given credits 1`] = `
 <div>
   <div>
     <div>
@@ -35,4 +59,36 @@ exports[`5. image with credit 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`8. primary image renders with caption and credits 1`] = `
+Array [
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://imageserver/someImage"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDIT
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
 `;
