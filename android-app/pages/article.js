@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { NativeEventEmitter, NativeModules } from "react-native";
 import { Article } from "@times-components/pages";
+import Context from "@times-components/context";
 
 const config = NativeModules.ReactConfig;
 const { fetch } = NativeModules.NativeFetch;
@@ -35,14 +36,13 @@ const platformAdConfig = {
 class ArticleView extends Component {
   constructor(props) {
     super(props);
-    const { fontSize } = this.props;
-    this.state = { fontSize };
+    const { scale } = this.props;
+    this.state = { scale };
   }
 
   componentDidMount() {
-    this.subscription = articleEventEmitter.addListener(
-      "fontSizeChange",
-      fontSize => this.setState({ fontSize })
+    this.subscription = articleEventEmitter.addListener("scaleChange", scale =>
+      this.setState({ scale })
     );
   }
 
@@ -53,32 +53,33 @@ class ArticleView extends Component {
   render() {
     const { articleId, sectionName } = this.props;
     const adConfig = { ...platformAdConfig, sectionName };
-    const { fontSize } = this.state;
+    const { scale } = this.state;
 
     return (
-      <ArticlePageView
-        articleId={articleId}
-        analyticsStream={track}
-        fontSize={fontSize}
-        onArticlePress={onArticlePress}
-        onAuthorPress={onAuthorPress}
-        onLinkPress={onLinkPress}
-        onTopicPress={onTopicPress}
-        onVideoPress={onVideoPress}
-        platformAdConfig={adConfig}
-      />
+      <Context.Provider values={{ theme: { scale } }}>
+        <ArticlePageView
+          articleId={articleId}
+          analyticsStream={track}
+          onArticlePress={onArticlePress}
+          onAuthorPress={onAuthorPress}
+          onLinkPress={onLinkPress}
+          onTopicPress={onTopicPress}
+          onVideoPress={onVideoPress}
+          platformAdConfig={adConfig}
+        />
+      </Context.Provider>
     );
   }
 }
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
-  fontSize: PropTypes.string,
+  scale: PropTypes.string,
   sectionName: PropTypes.string.isRequired
 };
 
 ArticleView.defaultProps = {
-  fontSize: "medium"
+  scale: "medium"
 };
 
 export default ArticleView;

@@ -13,8 +13,7 @@ const ArticleDetailsPage = ({
   onAuthorPress,
   onVideoPress,
   onLinkPress,
-  onTopicPress,
-  fontSize
+  onTopicPress
 }) => (
   <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error }) => {
@@ -27,7 +26,6 @@ const ArticleDetailsPage = ({
           analyticsStream={analyticsStream}
           article={article}
           error={error}
-          fontSize={fontSize}
           isLoading={isLoading}
           onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
           onLinkPress={(event, linkInfo) => {
@@ -51,17 +49,12 @@ const ArticleDetailsPage = ({
 ArticleDetailsPage.propTypes = {
   articleId: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
-  fontSize: PropTypes.string,
   platformAdConfig: PropTypes.shape({}).isRequired,
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
-};
-
-ArticleDetailsPage.defaultProps = {
-  fontSize: "normal"
 };
 
 export default withClient(ArticleDetailsPage);
