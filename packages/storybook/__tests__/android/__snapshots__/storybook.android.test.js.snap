@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storybook Decorator tests on android should render a Bar Spacing Decorator 1`] = `
+exports[`Bar Spacing Decorator 1`] = `
 <View
   style={
     Object {
@@ -19,7 +19,7 @@ exports[`Storybook Decorator tests on android should render a Bar Spacing Decora
 </View>
 `;
 
-exports[`Storybook Decorator tests on android should render a Centered Decorator 1`] = `
+exports[`Centered Decorator 1`] = `
 <View
   style={
     Object {
@@ -45,37 +45,13 @@ exports[`Storybook Decorator tests on android should render a Centered Decorator
 </View>
 `;
 
-exports[`Storybook Decorator tests on android should render a Lateral Spacing Decorator 1`] = `
+exports[`Lateral Spacing Decorator 1`] = `
 <View
   style={
     Object {
       "flex": 1,
       "marginLeft": 20,
       "marginRight": 20,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    I am in Storybook!
-  </Text>
-</View>
-`;
-
-exports[`Storybook Decorator tests on android should render a White Background Decorator 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "bottom": 0,
-      "flex": 1,
-      "left": 0,
-      "position": "absolute",
-      "right": 0,
-      "top": 0,
     }
   }
 >
@@ -177,9 +153,7 @@ Array [
 exports[`The showcase converter should provide the action to a story 1`] = `
 Array [
   Object {
-    "component": <div
-      onPress={undefined}
-    >
+    "component": <div>
       Hello World!
     </div>,
     "name": "My Story",
@@ -211,4 +185,28 @@ Array [
     "name": "My Story",
   },
 ]
+`;
+
+exports[`White Background Decorator 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "bottom": 0,
+      "flex": 1,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    I am in Storybook!
+  </Text>
+</View>
 `;

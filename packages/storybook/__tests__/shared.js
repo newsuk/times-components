@@ -11,29 +11,29 @@ import "./shared-showcase";
 
 const WrappedComponent = () => <Text>I am in Storybook!</Text>;
 
-module.exports = () => {
-  it("should render a Centered Decorator", () => {
+export default () => {
+  it("Centered Decorator", () => {
     const component = renderer
       .create(CenteredDecorator(() => <WrappedComponent />))
       .toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it("should render a Bar Spacing Decorator", () => {
+  it("Bar Spacing Decorator", () => {
     const component = renderer
       .create(BarSpacingDecorator(() => <WrappedComponent />))
       .toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it("should render a Lateral Spacing Decorator", () => {
+  it("Lateral Spacing Decorator", () => {
     const component = renderer
       .create(LateralSpacingDecorator(() => <WrappedComponent />))
       .toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it("should render a White Background Decorator", () => {
+  it("White Background Decorator", () => {
     const component = renderer
       .create(WhiteBgColorDecorator(() => <WrappedComponent />))
       .toJSON();

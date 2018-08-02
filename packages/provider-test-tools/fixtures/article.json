@@ -1133,19 +1133,22 @@
             }
           ],
           "leadAsset": {
-            "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-            "title": "At long last, a burial place fit for a king",
-            "crop169": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
-              "__typename": "Crop"
+            "posterImage": {
+              "id": "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
+              "title": "",
+              "crop169": {
+                "url":
+                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "crop32": {
+                "url":
+                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
             },
-            "crop32": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
-              "__typename": "Crop"
-            },
-            "__typename": "Image"
+            "__typename": "Video"
           },
           "url":
             "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",

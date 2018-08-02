@@ -1,18 +1,25 @@
 import React from "react";
+import { iterator } from "@times-components/test-utils";
 import * as Icons from "../src/icons";
 
-export default renderMethod =>
-  Object.entries(Icons).forEach(([name, Icon], indx) => {
-    const testName = `${name} renders with different colours`;
+export default renderMethod => {
+  const tests = [];
 
-    it(testName, () => {
-      const stroke = "#c0ffee";
-      const fill = "#facade";
+  Object.entries(Icons).forEach(([name, Icon]) => {
+    tests.push({
+      name: `${name} renders with different colours`,
+      test() {
+        const stroke = "#c0ffee";
+        const fill = "#facade";
 
-      const wrapper = renderMethod(
-        <Icon fillColour={fill} height={50} strokeColour={stroke} />
-      );
+        const output = renderMethod(
+          <Icon fillColour={fill} height={50} strokeColour={stroke} />
+        );
 
-      expect(wrapper).toMatchSnapshot(`${indx + 1}. ${testName}`);
+        expect(output).toMatchSnapshot();
+      }
     });
   });
+
+  iterator(tests);
+};

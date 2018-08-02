@@ -1,13 +1,20 @@
 import React from "react";
+import { iterator } from "@times-components/test-utils";
 import * as Icons from "../src/icons";
 
-export default renderMethod =>
-  Object.entries(Icons).forEach(([name, Icon], indx) => {
-    const testName = `${name} sets a width when height is set`;
+export default renderMethod => {
+  const tests = [];
 
-    it(testName, () => {
-      const output = renderMethod(<Icon height={50} />);
+  Object.entries(Icons).forEach(([name, Icon]) => {
+    tests.push({
+      name: `${name} sets a width when height is set`,
+      test() {
+        const output = renderMethod(<Icon height={50} />);
 
-      expect(output).toMatchSnapshot(`${indx + 1}. ${testName}`);
+        expect(output).toMatchSnapshot();
+      }
     });
   });
+
+  iterator(tests);
+};

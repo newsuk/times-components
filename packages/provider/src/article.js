@@ -54,6 +54,18 @@ export const query = gql`
               url
             }
           }
+          ... on Video {
+            posterImage {
+              id
+              title
+              crop169: crop(ratio: "16:9") {
+                url
+              }
+              crop32: crop(ratio: "3:2") {
+                url
+              }
+            }
+          }
         }
         url
       }

@@ -2,7 +2,6 @@
 
 import findNodeModules from "find-node-modules";
 import path from "path";
-import getCoveragePaths from "./coverage";
 import mockRNComponent from "./react-native-mock-components";
 
 export type Platform = "node" | "android" | "ios" | "web";
@@ -69,7 +68,7 @@ type Options = {
 export default (
   platform: Platform,
   cwd: string,
-  { coverageIgnoreGlobs, setupTestFrameworkScriptFile }: Options = {}
+  { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile }: Options = {}
 ) => {
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
@@ -90,17 +89,14 @@ export default (
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
     ],
-    coverageDirectory: `${module}/coverage/${platformPath}`,
-    collectCoverageFrom: getCoveragePaths(
-      rootDir,
-      path.join(module, "src"),
-      platform,
-      coverageIgnoreGlobs
-    ),
+    coverageDirectory: path.join(module, "coverage", platformPath),
+    collectCoverageFrom: [path.join(rootDir, module)],
+    coveragePathIgnorePatterns: coverageIgnoreGlobs,
     testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
-      `${module}/__tests__/${platformPath}jest.config.js`
+      path.join(module, "__tests__", platformPath, "jest.config.js")
     ],
+    testURL: "http://localhost",
     setupFiles: [
       path.resolve(__dirname, "../setup-jest.js"),
       "jest-plugin-context/setup"

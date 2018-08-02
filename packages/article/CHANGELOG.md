@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.15"></a>
+## [3.1.15](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.14...@times-components/article@3.1.15) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.14"></a>
+## [3.1.14](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.13...@times-components/article@3.1.14) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.13"></a>
+## [3.1.13](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.12...@times-components/article@3.1.13) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.12"></a>
+## [3.1.12](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.11...@times-components/article@3.1.12) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.11"></a>
+## [3.1.11](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.10...@times-components/article@3.1.11) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.10"></a>
+## [3.1.10](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.9...@times-components/article@3.1.10) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.9"></a>
+## [3.1.9](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.8...@times-components/article@3.1.9) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="3.1.8"></a>
+## [3.1.8](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.7...@times-components/article@3.1.8) (2018-07-26)
+
+
+### Bug Fixes
+
+* Allow poster image to show with lead asset videos ([#1145](https://github.com/newsuk/times-components/issues/1145)) ([9bf5a13](https://github.com/newsuk/times-components/commit/9bf5a13))
+
+
+
+
+<a name="3.1.7"></a>
+## [3.1.7](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.6...@times-components/article@3.1.7) (2018-07-26)
+
+
+### Bug Fixes
+
+* Add missing fixture data ([#1143](https://github.com/newsuk/times-components/issues/1143)) ([b60e207](https://github.com/newsuk/times-components/commit/b60e207))
+
+
+
+
 <a name="3.1.6"></a>
 ## [3.1.6](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.5...@times-components/article@3.1.6) (2018-07-26)
 

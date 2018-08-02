@@ -1435,7 +1435,7 @@ const defaultRelatedArticles = [
       title: "TMS: Pratchett’s law of the jungle",
       crop169: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104",
         __typename: "Crop"
       },
       crop32: {
@@ -1618,7 +1618,7 @@ const defaultRelatedArticles = [
       title: "Rise of centenarian drivers as elderly push on",
       crop169: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
+          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108",
         __typename: "Crop"
       },
       crop32: {
@@ -1633,37 +1633,35 @@ const defaultRelatedArticles = [
     __typename: "Article"
   },
   {
-    id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-    headline: "Syndicated url: At long last, a burial place fit for a king",
+    id: "cab431f6-39df-11e8-b5b4-b935584040f4",
+    headline: "YouTube ignored police pleas to remove threatening videos",
+    section: "news",
     byline: [
       {
         name: "inline",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
-              value: "Jack Malvern Arts Correspondent Dominic Kennedy"
+              value: "John Simpson, Crime Correspondent | Will Humphries"
             },
             children: []
           }
         ]
       }
     ],
-    label: "Science",
+    label: "Youtube",
     publicationName: "TIMES",
-    publishedTime: "2015-03-23T20:56:09.000Z",
-    section: "",
+    publishedTime: "2018-04-06T23:01:00.000Z",
     summary105: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
             },
             children: []
           }
@@ -1673,13 +1671,12 @@ const defaultRelatedArticles = [
     summary125: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
             },
             children: []
           }
@@ -1689,13 +1686,12 @@ const defaultRelatedArticles = [
     summary145: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
             },
             children: []
           }
@@ -1705,13 +1701,12 @@ const defaultRelatedArticles = [
     summary160: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
             },
             children: []
           }
@@ -1721,13 +1716,12 @@ const defaultRelatedArticles = [
     summary175: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
             },
             children: []
           }
@@ -1737,26 +1731,12 @@ const defaultRelatedArticles = [
     summary225: [
       {
         name: "paragraph",
-        attributes: {},
         children: [
           {
             name: "text",
             attributes: {
               value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "His coffin has been"
+                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
             },
             children: []
           }
@@ -1764,22 +1744,25 @@ const defaultRelatedArticles = [
       }
     ],
     leadAsset: {
-      id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-      title: "At long last, a burial place fit for a king",
-      crop169: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
-        __typename: "Crop"
+      posterImage: {
+        id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
+        title: "",
+        crop169: {
+          url:
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+          __typename: "Crop"
+        },
+        crop32: {
+          url:
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+          __typename: "Crop"
+        },
+        __typename: "Image"
       },
-      crop32: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
-        __typename: "Crop"
-      },
-      __typename: "Image"
+      __typename: "Video"
     },
     url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+      "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
     __typename: "Article"
   }
 ];

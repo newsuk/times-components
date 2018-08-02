@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.19"></a>
+## [2.0.19](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.18...@times-components/related-articles@2.0.19) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.18"></a>
+## [2.0.18](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.17...@times-components/related-articles@2.0.18) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.17"></a>
+## [2.0.17](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.16...@times-components/related-articles@2.0.17) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.16"></a>
+## [2.0.16](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.15...@times-components/related-articles@2.0.16) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.15"></a>
+## [2.0.15](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.14...@times-components/related-articles@2.0.15) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.14"></a>
+## [2.0.14](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.13...@times-components/related-articles@2.0.14) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.13"></a>
+## [2.0.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.12...@times-components/related-articles@2.0.13) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
+<a name="2.0.12"></a>
+## [2.0.12](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.11...@times-components/related-articles@2.0.12) (2018-07-26)
+
+
+### Bug Fixes
+
+* Allow poster image to show with lead asset videos ([#1145](https://github.com/newsuk/times-components/issues/1145)) ([9bf5a13](https://github.com/newsuk/times-components/commit/9bf5a13))
+
+
+
+
+<a name="2.0.11"></a>
+## [2.0.11](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.10...@times-components/related-articles@2.0.11) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/related-articles
+
 <a name="2.0.10"></a>
 ## [2.0.10](https://github.com/newsuk/times-components/compare/@times-components/related-articles@2.0.9...@times-components/related-articles@2.0.10) (2018-07-26)
 

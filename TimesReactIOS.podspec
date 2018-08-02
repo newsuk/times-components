@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author       = "News UK"
   s.platform     = :ios
   s.source       = { :git => 'https://github.com/newsuk/times-xnative.git', :tag => '@thetimes/ios-app@0.0.1'}
-  #s.source       = { :git => 'https://github.com/facebook/react-native.git', :tag => "v0.54.2" }
+  #s.source       = { :git => 'https://github.com/facebook/react-native.git', :tag => "v0.55.4" }
   
 
   s.requires_arc = true
@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
   # React is split into a set of subspecs, these are the essentials
   
   s.dependency 'React/Core'
+  s.dependency 'React/Fabric'
   s.dependency 'React/CxxBridge'
   s.dependency 'React/RCTAnimation'
   s.dependency 'React/RCTImage'
@@ -49,7 +50,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'RNDeviceInfo'
   s.dependency 'RNSVG', "#{react_native_svg}"
-  s.dependency 'yoga', "#{react_native_version}.React"
+  s.dependency 'yoga'
   s.dependency 'DoubleConversion'
   s.dependency 'Folly'
   s.dependency 'glog'

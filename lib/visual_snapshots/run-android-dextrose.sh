@@ -19,12 +19,8 @@ node fructose/changedComponents.js
 ## create components file of all showcase file following pattern
 npx rnscl --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
 
-##packager
-npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
-
-##build app
-npx react-native run-android --variant=release --no-packager
-
+./node_modules/.bin/react-native start --root $(pwd)/fructose --projectRoots $(pwd)/fructose,$(pwd) --reset-cache &
+./node_modules/.bin/react-native run-android --no-packager
 ##run dextrose
 npx dextrose run --config ./dextrose/dextrose.android.js --timeout 600000  --snapshotWait 2000
 kill -9 $EMU_PID

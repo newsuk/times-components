@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.16"></a>
+## [0.4.16](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.15...@times-components/android-app@0.4.16) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.15"></a>
+## [0.4.15](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.14...@times-components/android-app@0.4.15) (2018-08-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.14"></a>
+## [0.4.14](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.13...@times-components/android-app@0.4.14) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.13"></a>
+## [0.4.13](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.12...@times-components/android-app@0.4.13) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.12"></a>
+## [0.4.12](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.11...@times-components/android-app@0.4.12) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.11"></a>
+## [0.4.11](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.10...@times-components/android-app@0.4.11) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.10"></a>
+## [0.4.10](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.9...@times-components/android-app@0.4.10) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.9"></a>
+## [0.4.9](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.8...@times-components/android-app@0.4.9) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
+<a name="0.4.8"></a>
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.7...@times-components/android-app@0.4.8) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/android-app
+
 <a name="0.4.7"></a>
 ## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.6...@times-components/android-app@0.4.7) (2018-07-26)
 

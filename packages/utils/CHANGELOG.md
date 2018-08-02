@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.5"></a>
+## [2.1.5](https://github.com/newsuk/times-components/compare/@times-components/utils@2.1.4...@times-components/utils@2.1.5) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
+<a name="2.1.4"></a>
+## [2.1.4](https://github.com/newsuk/times-components/compare/@times-components/utils@2.1.3...@times-components/utils@2.1.4) (2018-07-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
+<a name="2.1.3"></a>
+## [2.1.3](https://github.com/newsuk/times-components/compare/@times-components/utils@2.1.2...@times-components/utils@2.1.3) (2018-07-26)
+
+
+### Bug Fixes
+
+* Allow poster image to show with lead asset videos ([#1145](https://github.com/newsuk/times-components/issues/1145)) ([9bf5a13](https://github.com/newsuk/times-components/commit/9bf5a13))
+
+
+
+
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/newsuk/times-components/compare/@times-components/utils@2.1.1...@times-components/utils@2.1.2) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/newsuk/times-components/compare/@times-components/utils@2.1.0...@times-components/utils@2.1.1) (2018-07-25)
 
