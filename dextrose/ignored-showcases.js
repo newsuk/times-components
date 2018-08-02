@@ -1,4 +1,6 @@
 const ignoredShowcases = [
+  "Ad",
+  "ad",
   "Brightcove",
   "brightcove",
   "Provider",
