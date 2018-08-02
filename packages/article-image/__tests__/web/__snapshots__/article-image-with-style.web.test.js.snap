@@ -62,51 +62,51 @@ Array [
 
 exports[`3. inline image (landscape) with caption and credits 1`] = `
 .c0 {
-  width: 50%;
-  padding-bottom: 20px;
   display: inline-block;
+  padding-bottom: 20px;
   vertical-align: top;
+  width: 50%;
 }
 
 .c1 {
-  width: 50%;
+  display: inline-block;
   margin-top: -10px;
-  padding-top: 0;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 20px;
-  display: inline-block;
+  padding-top: 0;
   vertical-align: top;
+  width: 50%;
 }
 
 @media (min-width:768px) {
   .c0 {
-    width: 30%;
     clear: left;
     float: left;
     padding-bottom: 0px;
     padding-top: 5px;
     padding-right: 20px;
+    width: 30%;
   }
 }
 
 @media (min-width:1024px) {
   .c0 {
-    width: 35.71429%;
     clear: left;
+    width: 35.71429%;
   }
 }
 
 @media (min-width:768px) {
   .c1 {
-    padding-left: 0px;
-    width: 30%;
     clear: left;
     float: left;
     margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    width: 30%;
   }
 }
 
@@ -145,51 +145,51 @@ Array [
 
 exports[`4. inline image (portrait) with caption and credits 1`] = `
 .c0 {
-  width: 50%;
-  padding-bottom: 20px;
   display: inline-block;
+  padding-bottom: 20px;
   vertical-align: top;
+  width: 50%;
 }
 
 .c1 {
-  width: 50%;
+  display: inline-block;
   margin-top: -10px;
-  padding-top: 0;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 20px;
-  display: inline-block;
+  padding-top: 0;
   vertical-align: top;
+  width: 50%;
 }
 
 @media (min-width:768px) {
   .c0 {
-    width: 30%;
     clear: left;
     float: left;
     padding-bottom: 0px;
     padding-top: 5px;
     padding-right: 20px;
+    width: 30%;
   }
 }
 
 @media (min-width:1024px) {
   .c0 {
-    width: 35.71429%;
     clear: left;
+    width: 35.71429%;
   }
 }
 
 @media (min-width:768px) {
   .c1 {
-    padding-left: 0px;
-    width: 30%;
     clear: left;
     float: left;
     margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    width: 30%;
   }
 }
 

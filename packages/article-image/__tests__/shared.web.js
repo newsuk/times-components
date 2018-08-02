@@ -1,7 +1,7 @@
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
+  enzymeRenderedSerializer,
   justChildren,
   meltNative,
   minimaliseTransform,
@@ -17,7 +17,7 @@ import shared from "./shared.base";
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
+    enzymeRenderedSerializer(),
     compose(
       print,
       replaceTransform({
@@ -28,7 +28,9 @@ export default () => {
         ...meltNative
       }),
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
+      minimaliseTransform(
+        (value, key) => key === "style" || key === "className"
+      ),
       rnwTransform()
     )
   );

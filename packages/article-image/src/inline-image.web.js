@@ -1,59 +1,11 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
-import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
-
+import Image from "@times-components/image";
 import {
-  articleImagePropTypes,
-  articleImageDefaultPropTypes
-} from "./article-image-prop-types";
-
-const InsetCaptionContainerStyle = withResponsiveStyles(View, {
-  base: () => `
-    width: 50%;
-    margin-top: ${spacing(-2)};
-    padding-top: 0;
-    padding-left: ${spacing(2)};
-    padding-right: ${spacing(2)};
-    padding-bottom: ${spacing(4)};
-    display: inline-block;
-    vertical-align: top;
-  `,
-  mediumUp: () => `
-    padding-left: 0px;
-    width: 30%;
-    clear: left;
-    float:left;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-right: ${spacing(4)};
-    padding-bottom: ${spacing(4)};
-  `,
-  wideUp: () => `
-    padding-left: 0px;
-    width: 35.71429%;
-  `
-});
-
-const InsetImageStyle = withResponsiveStyles(View, {
-  base: () => `
-    width: 50%;
-    padding-bottom: ${spacing(4)};
-    display: inline-block;
-    vertical-align: top;`,
-  mediumUp: () => `
-    width: 30%;
-    clear:left;
-    float:left;
-    padding-bottom: 0px;
-    padding-top: ${spacing(1)};
-    padding-right: ${spacing(4)};`,
-  wideUp: () => `
-    width: 35.71429%;
-    clear: left;`
-});
+  InsetCaptionContainerStyle,
+  InsetImageStyle
+} from "../styles/responsive";
+import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
@@ -90,7 +42,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
   );
 };
 
-InlineImage.propTypes = articleImagePropTypes;
-InlineImage.defaultProps = articleImageDefaultPropTypes;
+InlineImage.propTypes = propTypes;
+InlineImage.defaultProps = defaultPropTypes;
 
 export default InlineImage;
