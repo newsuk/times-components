@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. red article flag 1`] = `
+<style>
+{
+  "IS1": {
+    "marginBottom": "1px",
+    "marginRight": "5px",
+  },
+  "IS2": {
+    "color": "red",
+    "fontFamily": "TimesDigitalW04-RegularSC",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.4px",
+  },
+  "IS3": {
+    "WebkitAlignItems": "center",
+    "WebkitBoxAlign": "center",
+    "WebkitBoxDirection": "normal",
+    "WebkitBoxOrient": "horizontal",
+    "WebkitFlexDirection": "row",
+    "alignItems": "center",
+    "flexDirection": "row",
+    "msFlexAlign": "center",
+    "msFlexDirection": "row",
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "flex-direction": "column",
+  },
+  "S2": {
+    "margin-bottom": "0px",
+    "margin-right": "0px",
+  },
+  "S3": {
+    "margin-bottom": "0px",
+    "margin-right": "0px",
+  },
+}
+</style>
+
+<div
+  className="IS3 S3"
+>
+  <div
+    className="IS1 S1"
+  >
+    <IconDiamond />
+  </div>
+  <div
+    className="IS2 S2"
+  >
+    coloured red
+  </div>
+</div>
+`;

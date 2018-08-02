@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. red article flag 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <IconDiamond />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "red",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
+    }
+  >
+    coloured red
+  </Text>
+</View>
+`;
