@@ -16,6 +16,8 @@ export const query = gql`
       content
       section
       url
+      commentsEnabled
+      commentCount
       leadAsset {
         ... on Video {
           brightcovePolicyKey
