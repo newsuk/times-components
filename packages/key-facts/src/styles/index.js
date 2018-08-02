@@ -2,11 +2,10 @@ import { StyleSheet } from "react-native";
 import timesStyleguide, {
   colours,
   fonts,
-  fontSizes,
   spacing
 } from "@times-components/styleguide";
 
-const styles = ({scale = ""} = {}) => StyleSheet.create({
+const styles = (scale) => StyleSheet.create({
   container: {
     marginBottom: 5,
     marginLeft: 10,

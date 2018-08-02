@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
+import Context from "@times-components/context";
 import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
@@ -22,7 +23,9 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   const renderKeyFact = (item, listIndex) => (
     <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
       <View style={styles().bullet} />
-      <Text style={styles().text}>
+      <Context.Consumer>
+      { ({theme: {scale}}) =>
+      <Text style={styles(scale).text}>
         {item.children.map((data, listItemIndex) =>
           renderTree(
             data,
@@ -54,6 +57,8 @@ const KeyFacts = ({ ast, onLinkPress }) => {
           )
         )}
       </Text>
+      }
+      </Context.Consumer>
     </View>
   );
 
