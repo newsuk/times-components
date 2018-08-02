@@ -19,22 +19,20 @@ Array [
     />
   </div>,
   <div>
-    <InsetCaptionStyle>
-      <div
-        className="c0"
-      >
+    <div
+      className="c0"
+    >
+      <div>
         <div>
           <div>
-            <div>
-              Some caption
-            </div>
-            <div>
-              SOME CREDITS
-            </div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDITS
           </div>
         </div>
       </div>
-    </InsetCaptionStyle>
+    </div>
   </div>,
 ]
 `;
@@ -120,32 +118,28 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 }
 
 Array [
-  <InsetImageStyle>
-    <div
-      className="c0"
-    >
-      <TimesImage
-        aspectRatio={1.5}
-        uri="https://imageserver/someImage"
-      />
-    </div>
-  </InsetImageStyle>,
-  <InsetCaptionContainerStyle>
-    <div
-      className="c1"
-    >
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={1.5}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div
+    className="c1"
+  >
+    <div>
       <div>
         <div>
-          <div>
-            Landscape caption
-          </div>
-          <div>
-            LANDSCAPE CREDITS
-          </div>
+          Landscape caption
+        </div>
+        <div>
+          LANDSCAPE CREDITS
         </div>
       </div>
     </div>
-  </InsetCaptionContainerStyle>,
+  </div>,
 ]
 `;
 
@@ -207,31 +201,27 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
 }
 
 Array [
-  <InsetImageStyle>
-    <div
-      className="c0"
-    >
-      <TimesImage
-        aspectRatio={0.6666666666666666}
-        uri="https://imageserver/someImage"
-      />
-    </div>
-  </InsetImageStyle>,
-  <InsetCaptionContainerStyle>
-    <div
-      className="c1"
-    >
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div
+    className="c1"
+  >
+    <div>
       <div>
         <div>
-          <div>
-            Portrait caption
-          </div>
-          <div>
-            PORTRAIT CREDITS
-          </div>
+          Portrait caption
+        </div>
+        <div>
+          PORTRAIT CREDITS
         </div>
       </div>
     </div>
-  </InsetCaptionContainerStyle>,
+  </div>,
 ]
 `;

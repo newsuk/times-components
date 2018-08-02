@@ -23,7 +23,7 @@ export default makeTest => {
       }
     },
     {
-      name: "does not render an image if ratio is not received",
+      name: "does not render a primary image if ratio is not received",
       test: () => {
         const noRatio = {
           imageOptions: {
@@ -39,7 +39,7 @@ export default makeTest => {
       }
     },
     {
-      name: "does not render an inline image if ratio is not received",
+      name: "does not render an inline image with no ratio and no caption or credits",
       test: () => {
         const noRatio = {
           imageOptions: {
@@ -50,7 +50,36 @@ export default makeTest => {
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
+          makeTest(
+            <ArticleImage
+              imageOptions={noRatio.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "inline image with no ratio only shows caption and credits",
+      test: () => {
+        const noRatio = {
+          imageOptions: {
+            display: "inline",
+            ratio: null,
+            url: testImageUrl
+          },
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          }
+        };
+
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={noRatio.captionOptions}
+              imageOptions={noRatio.imageOptions}
+            />
+          )
         ).toMatchSnapshot();
       }
     },
@@ -75,7 +104,7 @@ export default makeTest => {
       }
     },
     {
-      name: "image with caption",
+      name: "image with no display only shows given caption",
       test: () => {
         const noCredits = {
           imageOptions: {
@@ -100,7 +129,7 @@ export default makeTest => {
       }
     },
     {
-      name: "image with credit",
+      name: "image with no display only shows given credits",
       test: () => {
         const noCredits = {
           imageOptions: {
@@ -119,6 +148,31 @@ export default makeTest => {
             <ArticleImage
               captionOptions={noCredits.captionOptions}
               imageOptions={noCredits.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "primary image renders with caption and credits",
+      test: () => {
+        const primaryImage = {
+          imageOptions: {
+            display: "primary",
+            ratio: "16:9",
+            url: testImageUrl
+          },
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          }
+        };
+
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={primaryImage.captionOptions}
+              imageOptions={primaryImage.imageOptions}
             />
           )
         ).toMatchSnapshot();

@@ -2,10 +2,8 @@ import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
-export const InsetCaptionContainerStyle = withResponsiveStyles(
-  View,
-  {
-    base: () => `
+export const InsetCaptionContainerStyle = withResponsiveStyles(View, {
+  base: () => `
     display: inline-block;
     margin-top: ${spacing(-2)};
     padding-bottom: ${spacing(4)};
@@ -15,7 +13,7 @@ export const InsetCaptionContainerStyle = withResponsiveStyles(
     vertical-align: top;
     width: 50%;
   `,
-    mediumUp: () => `
+  mediumUp: () => `
     clear: left;
     float: left;
     margin-top: 0px;
@@ -25,41 +23,31 @@ export const InsetCaptionContainerStyle = withResponsiveStyles(
     padding-right: ${spacing(4)};
     width: 30%;
   `,
-    wideUp: () => `
+  wideUp: () => `
     padding-left: 0px;
     width: 35.71429%;
   `
-  },
-  "InsetCaptionContainerStyle"
-);
+});
 
-export const InsetImageStyle = withResponsiveStyles(
-  View,
-  {
-    base: () => `
+export const InsetImageStyle = withResponsiveStyles(View, {
+  base: () => `
     display: inline-block;
     padding-bottom: ${spacing(4)};
     vertical-align: top;
     width: 50%;`,
-    mediumUp: () => `
+  mediumUp: () => `
     clear: left;
     float: left;
     padding-bottom: 0px;
     padding-top: ${spacing(1)};
     padding-right: ${spacing(4)};
     width: 30%;`,
-    wideUp: () => `
+  wideUp: () => `
     clear: left;
     width: 35.71429%;`
-  },
-  "InsetImageStyle"
-);
+});
 
-export const InsetCaptionStyle = withResponsiveStyles(
-  View,
-  {
-    base: () => `padding-left: ${spacing(2)};`,
-    mediumUp: () => "padding-left: 0px;"
-  },
-  "InsetCaptionStyle"
-);
+export const InsetCaptionStyle = withResponsiveStyles(View, {
+  base: () => `padding-left: ${spacing(2)};`,
+  mediumUp: () => "padding-left: 0px;"
+});
