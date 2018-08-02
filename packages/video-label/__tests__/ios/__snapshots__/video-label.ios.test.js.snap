@@ -1,43 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. video label with a title 1`] = `
-<Component>
-  <Component>
+<View>
+  <View>
     <IconVideo
       fillColour="#008347"
       height={8}
     />
-  </Component>
+  </View>
   <Text>
     SWIMMING
   </Text>
-</Component>
+</View>
 `;
 
 exports[`2. video label without a title shows video 1`] = `
-<Component>
-  <Component>
+<View>
+  <View>
     <IconVideo
       fillColour="#008347"
       height={8}
     />
-  </Component>
+  </View>
   <Text>
     VIDEO
   </Text>
-</Component>
+</View>
 `;
 
 exports[`3. video label with the black default colour 1`] = `
-<Component>
-  <Component>
+<View>
+  <View>
     <IconVideo
       fillColour="black"
       height={8}
     />
-  </Component>
+  </View>
   <Text>
     VIDEO
   </Text>
-</Component>
+</View>
 `;

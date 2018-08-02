@@ -1,9 +1,8 @@
 import React from "react";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
   minimaliseTransform,
   minimalNativeTransform,
   print
@@ -11,10 +10,11 @@ import {
 import { iterator } from "@times-components/test-utils";
 import VideoLabel from "../src/video-label";
 
+jest.mock("@times-components/icons", () => ({ IconVideo: "IconVideo" }));
+
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
     compose(
       print,
       minimaliseTransform((value, key) => key === "style"),
@@ -26,27 +26,29 @@ export default () => {
     {
       name: "video label with a title",
       test: () => {
-        const wrapper = shallow(
+        const testInstance = TestRenderer.create(
           <VideoLabel color="#008347" title="swimming" />
         );
 
-        expect(wrapper).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "video label without a title shows VIDEO",
       test: () => {
-        const wrapper = shallow(<VideoLabel color="#008347" />);
+        const testInstance = TestRenderer.create(
+          <VideoLabel color="#008347" />
+        );
 
-        expect(wrapper).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "video label with the black default colour",
       test: () => {
-        const wrapper = shallow(<VideoLabel />);
+        const testInstance = TestRenderer.create(<VideoLabel />);
 
-        expect(wrapper).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];
