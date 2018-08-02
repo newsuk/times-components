@@ -36,7 +36,7 @@ const platformAdConfig = {
 class ArticleView extends Component {
   constructor(props) {
     super(props);
-    const { scale } = this.props;
+    const { scale } = props;
     this.state = { scale };
   }
 
