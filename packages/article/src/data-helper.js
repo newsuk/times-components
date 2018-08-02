@@ -36,13 +36,12 @@ const prepareDataForListView = articleData => {
         relatedArticlesLayout: articleData.relatedArticlesLayout
       }
     : null;
-  const commentsData = articleData.commentsEnabled
-    ? {
-        articleId: articleData.id,
-        commentCount: articleData.commentCount,
-        url: articleData.url
-      }
-    : null;
+  const commentsData = {
+    articleId: articleData.id,
+    commentCount: articleData.commentCount,
+    commentsEnabled: articleData.commentsEnabled,
+    url: articleData.url
+  };
 
   const data = [
     { type: "header", data: articleHeaderData },

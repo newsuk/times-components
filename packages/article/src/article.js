@@ -108,6 +108,7 @@ const renderRow = analyticsStream => (
         <ArticleComments
           articleId={rowData.data.articleId}
           commentCount={rowData.data.commentCount}
+          commentsEnabled={rowData.data.commentsEnabled}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
           url={rowData.data.url}

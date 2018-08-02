@@ -1,8 +1,6 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
-import PropTypes from "prop-types";
-
-const { style: StylePropType } = Text.propTypes;
+import { propTypes, defaultProps } from "./text-link-prop-types";
 
 const styles = StyleSheet.create({
   textLink: {
@@ -27,22 +25,7 @@ const TextLink = ({ style, url, onPress, children, target }) => {
   );
 };
 
-TextLink.propTypes = {
-  style: StylePropType,
-  url: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired,
-  target: PropTypes.string
-};
-
-TextLink.defaultProps = {
-  style: {},
-  target: null
-};
+TextLink.propTypes = propTypes;
+TextLink.defaultProps = defaultProps;
 
 export default TextLink;
