@@ -13,6 +13,7 @@ const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
     <TextLink
       onPress={e => onTwitterLinkPress(e, { twitter, url })}
       style={styles.twitterLink}
+      testID="twitterLink"
       url={url}
     >
       @{twitter}

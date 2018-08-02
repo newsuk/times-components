@@ -16,7 +16,6 @@ const AuthorProfileHead = ({
   isLoading,
   jobTitle,
   name,
-  onTwitterLinkPress,
   twitter,
   uri
 }) => {
@@ -57,7 +56,6 @@ const AuthorProfileHead = ({
         image={image}
         isLoading={isLoading}
         jobTitle={jobTitle}
-        onTwitterLinkPress={onTwitterLinkPress}
         renderBiography={renderBiography}
         renderName={renderName}
         twitter={twitter}

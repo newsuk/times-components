@@ -1,1780 +1,348 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. with images 1`] = `
-<div>
-  <header
-    className="responsive-styles__component-fbPFZZ dornVt"
-    role="banner"
-  >
-    <div
-      className="responsive-styles__component-fbPFZZ woNlo"
-    >
-      <div
-        data-testid="author-head"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fRtPsM"
-        >
-          <div>
-            <div
-              style={
-                Object {
-                  "display": "table",
-                  "height": 0,
-                  "overflow": "hidden",
-                  "paddingBottom": "100%",
-                }
-              }
-            >
-              <img
-                alt=""
-                src="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                style={
-                  Object {
-                    "display": "block",
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 1,
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                  }
-                }
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h1
-          aria-level="1"
-          className="responsive-styles__component-fbPFZZ jMuMhk"
-          data-testid="author-name"
-          role="heading"
-        >
-          Deborah Haynes
-        </h1>
-        <h2
-          aria-level="2"
-          role="heading"
-        >
-          defence editor
-        </h2>
-        <div>
-          <div>
-            <svg
-              height={15}
-              viewBox="-354.2 -279.4 750 600"
-              width={15}
-            >
-              <path
-                d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
-                fill="#006699"
-              />
-            </svg>
-          </div>
-          <a
-            href="https://twitter.com/jdoe"
-            role="link"
-          >
-            @
-            jdoe
-          </a>
-        </div>
-        <div
-          className="responsive-styles__component-fbPFZZ bDNiMK"
-        >
-          <div
-            data-testid="author-bio"
-          >
-            Deborah Haynes is the defence editor at 
-            <em>
-              The Times
-            </em>
-            , covering the most important defence & security news in the UK and around the world.
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div>
-    <div
-      className="responsive-styles__component-fbPFZZ bPaJEQ"
-    >
-      <div>
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ ldBdZT"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ exZFAC"
-            >
-              <div
-                data-testid="results-message"
-              >
-                Showing 1 - 3 of 20 results
-              </div>
-            </div>
-            <div
-              className="responsive-styles__component-fbPFZZ cePhpb"
-            >
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              />
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              >
-                <a
-                  href="?page=2"
-                  style={
-                    Object {
-                      "textDecoration": "none",
-                    }
-                  }
-                >
-                  <div
-                    data-testid="pagination-button-next"
-                  >
-                    <div>
-                      <span>
-                        Next
-                        <span
-                          className="responsive-styles__component-fbPFZZ hqaoTY"
-                        >
-                           page
-                        </span>
-                      </span>
-                    </div>
-                    <svg
-                      height={12}
-                      viewBox="42 12 60 120"
-                      width={7}
-                    >
-                      <g
-                        fill="#006699"
-                      >
-                        <path
-                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-      data-testid="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-      id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <a
-          href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <h3
-                      aria-level="3"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Top medal for forces dog who took a bite out of the Taliban
-                    </h3>
-                    <div
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span>
-                        
-                        The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      data-testid="datePublication"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Friday November 17 2017, 12:01am, The Times
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div
-      accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-      data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-      id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <a
-          href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <h3
-                      aria-level="3"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Social media must raise game to beat terrorists, says UN chief
-                    </h3>
-                    <div
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span>
-                        
-                        The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      data-testid="datePublication"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Friday November 17 2017, 12:01am, The Times
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div
-      accessibility-label="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-      data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-      id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <a
-          href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <h3
-                      aria-level="3"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Cuts have left the army 20 years out of date, says former general
-                    </h3>
-                    <div
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span>
-                        
-                        Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      data-testid="datePublication"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Tuesday November 14 2017, 05:00pm, The Times
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ kdgRsQ"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ ciodUt"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            >
-              <a
-                href="?page=2"
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                <div
-                  data-testid="pagination-button-next"
-                >
-                  <div>
-                    <span>
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+exports[`1. an error page 1`] = `<ArticleListPageError />`;
+
+exports[`2. a loading state 1`] = `
+<authorArticlesWithImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        isLoading={true}
+        jobTitle=""
+        name=""
+        twitter=""
+        uri=""
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={0}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.25}
+    isLoading={true}
+    page={1}
+    pageSize={10}
+    showImages={true}
+  />
+</authorArticlesWithImagesProvider>
 `;
 
-exports[`2. without images 1`] = `
-<div>
-  <header
-    className="responsive-styles__component-fbPFZZ dornVt"
-    role="banner"
-  >
-    <div
-      className="responsive-styles__component-fbPFZZ woNlo"
-    >
-      <div
-        data-testid="author-head"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fRtPsM"
-        >
-          <div>
-            <div
-              style={
-                Object {
-                  "display": "table",
-                  "height": 0,
-                  "overflow": "hidden",
-                  "paddingBottom": "100%",
-                }
-              }
-            >
-              <img
-                alt=""
-                src="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                style={
-                  Object {
-                    "display": "block",
-                    "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 1,
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                  }
-                }
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h1
-          aria-level="1"
-          className="responsive-styles__component-fbPFZZ jMuMhk"
-          data-testid="author-name"
-          role="heading"
-        >
-          Deborah Haynes
-        </h1>
-        <h2
-          aria-level="2"
-          role="heading"
-        >
-          defence editor
-        </h2>
-        <div>
-          <div>
-            <svg
-              height={15}
-              viewBox="-354.2 -279.4 750 600"
-              width={15}
-            >
-              <path
-                d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
-                fill="#006699"
-              />
-            </svg>
-          </div>
-          <a
-            href="https://twitter.com/jdoe"
-            role="link"
-          >
-            @
-            jdoe
-          </a>
-        </div>
-        <div
-          className="responsive-styles__component-fbPFZZ bDNiMK"
-        >
-          <div
-            data-testid="author-bio"
-          >
-            Deborah Haynes is the defence editor at 
-            <em>
-              The Times
-            </em>
-            , covering the most important defence & security news in the UK and around the world.
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div>
-    <div
-      className="responsive-styles__component-fbPFZZ bPaJEQ"
-    >
-      <div>
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ ldBdZT"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ exZFAC"
-            >
-              <div
-                data-testid="results-message"
-              >
-                Showing 1 - 3 of 20 results
-              </div>
-            </div>
-            <div
-              className="responsive-styles__component-fbPFZZ cePhpb"
-            >
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              />
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              >
-                <a
-                  href="?page=2"
-                  style={
-                    Object {
-                      "textDecoration": "none",
-                    }
-                  }
-                >
-                  <div
-                    data-testid="pagination-button-next"
-                  >
-                    <div>
-                      <span>
-                        Next
-                        <span
-                          className="responsive-styles__component-fbPFZZ hqaoTY"
-                        >
-                           page
-                        </span>
-                      </span>
-                    </div>
-                    <svg
-                      height={12}
-                      viewBox="42 12 60 120"
-                      width={7}
-                    >
-                      <g
-                        fill="#006699"
-                      >
-                        <path
-                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      accessibility-label="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
-      data-testid="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
-      id="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <a
-          href="https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm"
-          style={
+exports[`3. an article list with images 1`] = `
+<authorArticlesWithImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        biography={
+          Array [
             Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListContent"
-                >
-                  <div
-                    className="responsive-styles__component-fbPFZZ dQznFS"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
-                          <em>
-                            The Times
-                          </em>
-                           last night.
-                        </span>
-                        <span>
-                           
-                          Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
-                        </span>
-                        <span>
-                           
-                          Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Friday June 15 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="responsive-styles__component-fbPFZZ jwwxoJ"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
-                          <em>
-                            The Times
-                          </em>
-                           last night.
-                        </span>
-                        <span>
-                           
-                          Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
-                        </span>
-                        <span>
-                           
-                          Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Friday June 15 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div
-      accessibility-label="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
-      data-testid="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
-      id="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <a
-          href="https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3"
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListContent"
-                >
-                  <div
-                    className="responsive-styles__component-fbPFZZ dQznFS"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Trump pressuring Britain to pay more towards Nato
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          The
-                          <span>
-                             Trump
-                          </span>
-                           administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
-                        </span>
-                        <span>
-                           
-                          The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
-                        </span>
-                        <span>
-                           
-                          The White House push is being used in Whitehall to put pressure on 
-                          <span>
-                            Philip Hammond
-                          </span>
-                           to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
-                        </span>
-                        <span>
-                           
-                          It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Thursday June 14 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="responsive-styles__component-fbPFZZ jwwxoJ"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Trump pressuring Britain to pay more towards Nato
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          The
-                          <span>
-                             Trump
-                          </span>
-                           administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
-                        </span>
-                        <span>
-                           
-                          The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
-                        </span>
-                        <span>
-                           
-                          The White House push is being used in Whitehall to put pressure on 
-                          <span>
-                            Philip Hammond
-                          </span>
-                           to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
-                        </span>
-                        <span>
-                           
-                          It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Thursday June 14 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div
-      accessibility-label="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
-      data-testid="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
-      id="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <a
-          href="https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx"
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ hvIATq"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListContent"
-                >
-                  <div
-                    className="responsive-styles__component-fbPFZZ dQznFS"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        British troops to protect Bosnia election from Russian meddling
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
-                        </span>
-                        <span>
-                           
-                          Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
-                        </span>
-                        <span>
-                           
-                          “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Friday June 08 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="responsive-styles__component-fbPFZZ jwwxoJ"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        British troops to protect Bosnia election from Russian meddling
-                      </h3>
-                      <div
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
-                        }
-                      >
-                        <span>
-                          
-                          Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
-                        </span>
-                        <span>
-                           
-                          Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
-                        </span>
-                        <span>
-                           
-                          “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        data-testid="datePublication"
-                        style={
-                          Object {
-                            "fontSize": "13px",
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
-                      >
-                        Friday June 08 2018, 12:01am, The Times
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ kdgRsQ"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ ciodUt"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            >
-              <a
-                href="?page=2"
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                <div
-                  data-testid="pagination-button-next"
-                >
-                  <div>
-                    <span>
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`3. loading state 1`] = `
-<div>
-  <header
-    className="responsive-styles__component-fbPFZZ dornVt"
-    role="banner"
-  >
-    <div>
-      <div>
-        <div
-          style={
-            Object {
-              "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
-            }
-          }
-        />
-      </div>
-    </div>
-  </header>
-  <div>
-    <div
-      className="responsive-styles__component-fbPFZZ bPaJEQ"
-    >
-      <div>
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ ldBdZT"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ exZFAC"
-            >
-              <div
-                data-testid="results-message"
-              >
-                Showing 0 - 0 of 0 results
-              </div>
-            </div>
-            <div
-              className="responsive-styles__component-fbPFZZ cePhpb"
-            >
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              />
-              <div
-                className="responsive-styles__component-fbPFZZ cmwPJA"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      accessibility-label="empty.0"
-      data-testid="empty.0"
-      id="empty.0"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ hvIATq"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      accessibility-label="empty.1"
-      data-testid="empty.1"
-      id="empty.1"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <div
-          className="responsive-styles__component-fbPFZZ hvIATq"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      accessibility-label="empty.2"
-      data-testid="empty.2"
-      id="empty.2"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ bPaJEQ"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fpmWTY"
-        >
-          <div />
-        </div>
-        <div
-          className="responsive-styles__component-fbPFZZ hvIATq"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ kdgRsQ"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ ciodUt"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`4. author profile page error state 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ NudQU"
->
-  <div
-    className="responsive-styles__component-fbPFZZ iLwaDB"
-  >
-    <div>
-      <div
-        style={
-          Object {
-            "display": "table",
-            "height": 0,
-            "overflow": "hidden",
-            "paddingBottom": "110%",
-          }
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
         }
-      >
-        <img
-          alt=""
-          src="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-          style={
+        isLoading={false}
+        jobTitle="Job Title"
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={28}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.25}
+    isLoading={false}
+    page={2}
+    pageSize={10}
+    showImages={true}
+  />
+</authorArticlesWithImagesProvider>
+`;
+
+exports[`4. an article list without images 1`] = `
+<authorArticlesNoImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        biography={
+          Array [
             Object {
-              "display": "block",
-              "position": "absolute",
-              "width": "100%",
-              "zIndex": 1,
-            }
-          }
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        isLoading={false}
+        jobTitle="Job Title"
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={28}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.5}
+    isLoading={false}
+    page={1}
+    pageSize={12}
+    showImages={false}
+  />
+</authorArticlesNoImagesProvider>
+`;
+
+exports[`5. fetches more articles 1`] = `
+<authorArticlesWithImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        isLoading={false}
+        jobTitle="Job Title"
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+        Object {
+          "headline": "Headline 3",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40h",
+          "url": "https://article3.io",
+        },
+      ]
+    }
+    count={28}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.25}
+    isLoading={false}
+    page={2}
+    pageSize={10}
+    showImages={true}
+  />
+</authorArticlesWithImagesProvider>
+`;
+
+exports[`6. fetches more articles and falls back to previous data if no more 1`] = `
+<authorArticlesNoImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        isLoading={false}
+        jobTitle="Job Title"
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={28}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.5}
+    isLoading={false}
+    page={2}
+    pageSize={10}
+    showImages={false}
+  />
+</authorArticlesNoImagesProvider>
+`;
+
+exports[`7. an article list header 1`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri="https://image.io"
         />
-        <div
-          style={
-            Object {
-              "bottom": "0px",
-              "left": "0px",
-              "right": "0px",
-              "top": "0px",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-              }
-            }
+      </div>
+      <h1
+        aria-level="1"
+        role="heading"
+      >
+        Name
+      </h1>
+      <h2
+        aria-level="2"
+        role="heading"
+      >
+        job title
+      </h2>
+      <div>
+        <div>
+          <IconTwitter
+            height={15}
+            width={15}
           />
         </div>
+        <TextLink
+          testID="twitterLink"
+          url="https://twitter.com/twitter"
+        >
+          @
+          twitter
+        </TextLink>
+      </div>
+      <div>
+        <div>
+          Camilla Long
+        </div>
       </div>
     </div>
   </div>
-  <div
-    className="responsive-styles__component-fbPFZZ kHDyWV"
-  >
-    <div>
-      Something's gone wrong
-    </div>
-    <div>
-      We can't load the page you have requested. Please check your network connection and retry to continue
-    </div>
-    <div
-      aria-label="Retry"
-      role="button"
-      tabIndex="0"
-    >
-      <div
-        title="Retry"
-      >
-        Retry
-      </div>
-    </div>
-  </div>
-</div>
+</header>
 `;
 
-exports[`5. send analytics when rendering an author profile page 1`] = `
-Object {
-  "action": "Viewed",
-  "attrs": Object {
-    "articlesCount": 20,
-    "authorName": "Deborah Haynes",
-    "eventTime": "2018-01-01T00:00:00.000Z",
-    "page": 1,
-    "pageSize": 3,
-  },
-  "component": "Page",
-  "object": "AuthorProfile",
-}
+exports[`8. an article list header with no bio, job title, name or twitter 1`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri="https://image.io"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`9. an article list header loading 1`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <Gradient />
+    </div>
+  </div>
+</header>
+`;
+
+exports[`10. an article list header only changes on loading state change 1`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <Gradient />
+    </div>
+  </div>
+</header>
+`;
+
+exports[`10. an article list header only changes on loading state change 2`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri=""
+        />
+      </div>
+      <h2
+        aria-level="2"
+        role="heading"
+      >
+        title 1
+      </h2>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`10. an article list header only changes on loading state change 3`] = `
+<header
+  role="banner"
+>
+  <div>
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri=""
+        />
+      </div>
+      <h2
+        aria-level="2"
+        role="heading"
+      >
+        title 1
+      </h2>
+    </div>
+  </div>
+</header>
 `;

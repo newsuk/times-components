@@ -1,3 +1,3 @@
-import shared from "../author-profile";
+import shared from "../shared.web";
 
 shared();
