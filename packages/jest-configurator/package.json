@@ -8,8 +8,8 @@
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,flow-bin,identity-obj-proxy,jest*,prettier' --ignore-bin-package=false --skip-missing",
-    "lint": "flow check && eslint . && yarn prettier:diff && yarn depcheck",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,flow-bin,identity-obj-proxy,jest*,prettier' --ignore-bin-package=false --skip-missing",
+    "lint": "flow check && eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "pretest": "./setup.sh",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
@@ -69,6 +69,7 @@
     "jest-plugins": "2.9.0"
   },
   "devDependencies": {
+    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "babel-cli": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",

@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import topicFixture from "@times-components/provider-test-tools/fixtures/topic.json";
-import articleFixture from "@times-components/provider-test-tools/fixtures/article.json";
+import articleFixture from "@times-components/provider-test-tools/fixtures/article";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import {
@@ -107,7 +107,18 @@ export default {
                 slug: "fiona-hamilton"
               }
             },
-            result: authorProfileFixture
+            result: {
+              data: {
+                author: {
+                  articles: {
+                    count: 20,
+                    list: authorProfileFixture,
+                    __typename: "Articles"
+                  },
+                  __typename: "Author"
+                }
+              }
+            }
           }
         ];
 
@@ -138,7 +149,7 @@ export default {
                 id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
               }
             },
-            result: articleFixture
+            result: articleFixture()
           }
         ];
 

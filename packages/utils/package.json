@@ -8,8 +8,8 @@
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "transpile": "babel src -d dist && cp src/schema.json dist",
@@ -32,6 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "@times-components/jest-configurator": "2.1.0",
     "@times-components/webpack-configurator": "2.0.1",
