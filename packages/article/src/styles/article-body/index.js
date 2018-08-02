@@ -3,17 +3,17 @@ import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
-const nativeStyles = {
-  ...sharedStyles,
+const nativeStyles = scale => ({
+  ...sharedStyles(scale),
   articleTextElement: {
-    ...sharedStyles.articleTextElement,
+    ...sharedStyles(scale).articleTextElement,
     marginBottom: spacing(4)
   }
-};
+});
 
-const styles = StyleSheet.create({
+const styles = (scale) => StyleSheet.create({
   ...globalStyle,
-  ...nativeStyles
+  ...nativeStyles(scale)
 });
 
 export default styles;

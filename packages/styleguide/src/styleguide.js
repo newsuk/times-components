@@ -31,8 +31,8 @@ export default ({ scale }) => ({
   Animations,
   colours,
   fonts,
-  fontFactory: timesFontFactory(scale),
-  fontSizes: timesFontSizes(scale),
-  lineHeight: timesLineHeightsFactory(scale),
+  fontFactory: timesFontFactory(scale || "default"),
+  fontSizes: timesFontSizes(scale || "default"),
+  lineHeight: timesLineHeightsFactory(scale || "default"),
   spacing
 });

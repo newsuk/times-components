@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import Styleguide from "@times-components/styleguide";
+import timesStyleguide from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
 const androidStyles = scale => {
-  const { fontSizes, spacing } = Styleguide({ scale });
+  const { fontSizes, spacing } = timesStyleguide({ scale });
 
   return {
     ...sharedStyles,
@@ -13,7 +13,7 @@ const androidStyles = scale => {
     },
     articleTextElement: {
       ...sharedStyles.articleTextElement,
-      fontSize: fontSizes.bodyMobile,
+      ...timesStyleguide({scale}).fontFactory({font: "body", fontSize: "bodyMobile"}),
       fontStyle: "normal",
       marginBottom: spacing(4)
     }

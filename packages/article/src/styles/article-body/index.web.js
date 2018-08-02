@@ -3,9 +3,9 @@ import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
 const webStyles = {
-  ...sharedStyles,
+  ...sharedStyles(),
   articleTextElement: {
-    ...sharedStyles.articleTextElement,
+    ...sharedStyles().articleTextElement,
     marginTop: 0
   }
 };

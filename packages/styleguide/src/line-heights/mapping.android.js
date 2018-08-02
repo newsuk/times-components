@@ -7,6 +7,7 @@ const mapping = ({scale}) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
+          bodyMobile: 29,
           secondary: 29
         }
       };
@@ -15,6 +16,7 @@ const mapping = ({scale}) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
+          bodyMobile: 31,
           secondary: 31
         }
       };

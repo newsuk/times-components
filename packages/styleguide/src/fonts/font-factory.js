@@ -1,7 +1,12 @@
 import timesStyleguide from "../styleguide";
 
-const mapping = styleguide => ({
+const fontMapping = styleguide => ({
   body: {
+    bodyMobile: {
+      fontFamily: styleguide.fonts.body,
+      fontSize: styleguide.fontSizes.bodyMobile,
+      lineHeight: styleguide.lineHeight({font: "body", fontSize: "bodyMobile"})
+    },
     secondary: {
       fontFamily: styleguide.fonts.body,
       fontSize: styleguide.fontSizes.secondary,
@@ -12,6 +17,6 @@ const mapping = styleguide => ({
 
 export default (scale) => ({font, fontSize}) => {
   const styleguide = timesStyleguide({scale});
-  const internalMapping = mapping(styleguide);
-  return internalMapping[font][fontSize];
+  const mapping = fontMapping(styleguide);
+  return mapping[font][fontSize];
 };
