@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -10,6 +10,8 @@ import {
 } from "@times-components/jest-serializer";
 import AdPlaceholder from "../src/ad-placeholder";
 
+jest.mock("@times-components/watermark", () => "Watermark");
+
 export default () => {
   addSerializers(
     expect,
@@ -18,8 +20,10 @@ export default () => {
   );
 
   it("advert placeholder", () => {
-    const wrapper = shallow(<AdPlaceholder height={300} width={970} />);
+    const testInstance = TestRenderer.create(
+      <AdPlaceholder height={300} width={970} />
+    );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(testInstance).toMatchSnapshot();
   });
 };
