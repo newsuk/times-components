@@ -31,9 +31,6 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     width: "50%"
   },
-  secondaryImage: {
-    width: "50%"
-  },
   secondaryContainer: {
     flexDirection: "row",
     flexWrap: "nowrap",
@@ -41,6 +38,9 @@ const styles = StyleSheet.create({
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
     width: "100%"
+  },
+  secondaryImage: {
+    width: "50%"
   }
 });
 
