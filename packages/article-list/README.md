@@ -16,9 +16,11 @@ article list.
 ## Error Handling
 
 The error view package utilises the React `componentDidCatch` lifecycle event to
-set yup an
+create an
 [`ErrorBoundary`](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
-which handles errors within the article list.
+which handles errors within the article list. This ensures any failing articles
+do not show in the list, but the list will still show with the page count
+unchanged.
 
 ## Lazy Loading
 
@@ -68,4 +70,6 @@ future.
 
 Lazy loading for the web is baked into this package at the moment. We intend to
 move this into its own package so it can be reusable across other pages and
-features, and not just available for list pages.
+features, and not just available for list pages. A package like
+[`react-virtualized`](https://github.com/bvaughn/react-virtualized) could be
+utilised in the future.
