@@ -5,6 +5,27 @@ a page, associated to a particular author or topic. An article list is composed
 of many other packages such as card, article summary and link. These components
 are primarily used for the layout of the individual article items themselves.
 
+## Infinite Scrolling
+
+Whilst the web flavour of article list utilises the pagination package, the
+native version contains its own brand of pagination in the form of infinite
+scrolling. This utilises the react-native `FlatList` and the GraphQL `fetchMore`
+method to show more articles when a user has scrolled to the bottom of the
+article list.
+
+## Error Handling
+
+The error view package utilises the React `componentDidCatch` lifecycle event to
+set yup an
+[`ErrorBoundary`](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
+which handles errors within the article list.
+
+## Lazy Loading
+
+Currently, the web version of article list incorporates lazy loading of images
+within article list. This is implemented with
+[`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
