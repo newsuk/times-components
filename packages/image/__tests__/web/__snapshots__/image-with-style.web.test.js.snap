@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. default image 1`] = `
+<style>
+{
+  "IS1": {
+    "display": "block",
+    "position": "absolute",
+    "width": "100%",
+    "zIndex": 1,
+  },
+  "IS2": {
+    "flex": 1,
+  },
+  "IS3": {
+    "bottom": "0px",
+    "left": "0px",
+    "position": "absolute",
+    "right": "0px",
+    "top": "0px",
+  },
+  "IS4": {
+    "display": "table",
+    "height": 0,
+    "overflow": "hidden",
+    "paddingBottom": "66.66666666666667%",
+  },
+  "S1": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-ms-flex-positive": "1 !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-flex": "1 !important",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "-webkit-flex-grow": "1 !important",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "flex-grow": "1 !important",
+    "padding-bottom": "0px",
+    "z-index": "0",
+  },
+  "S2": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "padding-bottom": "0px",
+    "position": "relative",
+    "z-index": "0",
+  },
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="IS4"
+  >
+    <img
+      className="IS1"
+    />
+    <div
+      className="S1 IS3"
+    >
+      <Gradient
+        className="IS2"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. default modal 1`] = `
+<style>
+{
+  "IS1": {
+    "display": "block",
+    "position": "absolute",
+    "width": "100%",
+    "zIndex": 1,
+  },
+  "IS2": {
+    "flex": 1,
+  },
+  "IS3": {
+    "bottom": "0px",
+    "left": "0px",
+    "position": "absolute",
+    "right": "0px",
+    "top": "0px",
+  },
+  "IS4": {
+    "display": "table",
+    "height": 0,
+    "overflow": "hidden",
+    "paddingBottom": "66.66666666666667%",
+  },
+  "S1": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-ms-flex-positive": "1 !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-flex": "1 !important",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "-webkit-flex-grow": "1 !important",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "flex-grow": "1 !important",
+    "padding-bottom": "0px",
+    "z-index": "0",
+  },
+  "S2": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "padding-bottom": "0px",
+    "position": "relative",
+    "z-index": "0",
+  },
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="IS4"
+  >
+    <img
+      className="IS1"
+    />
+    <div
+      className="S1 IS3"
+    >
+      <Gradient
+        className="IS2"
+      />
+    </div>
+  </div>
+</div>
+`;

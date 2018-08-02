@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. default image 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "bottom": 0,
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Gradient
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. default modal 1`] = `
+<View>
+  <Modal>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#1D1D1B",
+          "flexDirection": "column",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Svg>
+          <G>
+            <Path />
+            <Path />
+          </G>
+        </Svg>
+      </View>
+      <View
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexGrow": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "transform": Array [
+                  Object {
+                    "scale": 1,
+                  },
+                  Object {
+                    "rotate": "0 deg",
+                  },
+                  Object {
+                    "perspective": 1000,
+                  },
+                ],
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <Gradient
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          style={
+            Object {
+              "bottom": 0,
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Gradient
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
