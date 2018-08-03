@@ -18,6 +18,8 @@ Object {
       "name": "inline",
     },
   ],
+  "commentCount": 65,
+  "commentsEnabled": true,
   "content": Array [
     Object {
       "attributes": Object {},
