@@ -17,11 +17,11 @@ const ArticleTopics = ({ onPress, style, topics }) => (
 ArticleTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      slug: PropTypes.string.isRequired
+      name: ArticleTopic.propTypes.name,
+      slug: ArticleTopic.propTypes.slug
     }).isRequired
   ).isRequired,
-  onPress: PropTypes.func.isRequired,
+  onPress: ArticleTopic.propTypes.onPress,
   style: ViewPropTypesStyle
 };
 
