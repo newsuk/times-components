@@ -1,5 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
@@ -7,7 +12,7 @@ const styles = StyleSheet.create({
     borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
     borderStyle: "solid",
-    marginBottom: 25,
+    marginBottom: spacing(5),
     width: "100%"
   },
   headline: {
@@ -16,8 +21,8 @@ const styles = StyleSheet.create({
     fontSize: fontSizes.commentsHeadline,
     lineHeight: 29,
     maxWidth: 315,
-    paddingBottom: 10,
-    paddingTop: 30,
+    paddingBottom: spacing(2),
+    paddingTop: spacing(6),
     textAlign: "center"
   },
   supporting: {
@@ -32,7 +37,7 @@ const styles = StyleSheet.create({
     color: colours.functional.action
   },
   button: {
-    marginTop: 25,
+    marginTop: spacing(5),
     maxWidth: 215
   }
 });
