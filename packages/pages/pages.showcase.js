@@ -32,7 +32,9 @@ export default {
             onLinkPress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
-            platformAdConfig={{}}
+            onCommentsPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            platformAdConfig={{ sectionName: "news" }}
           />
         );
       }

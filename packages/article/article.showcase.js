@@ -50,21 +50,23 @@ const renderArticle = (
     error
   }
 ) => (
-  <Article
-    adConfig={adConfig}
-    analyticsStream={analyticsStream}
-    article={fixture}
-    error={error}
-    isLoading={isLoading}
-    onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
-    onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-    onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-      "onRelatedArticlePress"
-    )}
-    onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-    onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-  />
-);
+    <Article
+      adConfig={adConfig}
+      analyticsStream={analyticsStream}
+      article={fixture}
+      error={error}
+      isLoading={isLoading}
+      onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+      onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
+      onCommentGuidelinesPress={preventDefaultedAction(decorateAction)("onCommentGuidelinesPress")}
+      onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+      onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+        "onRelatedArticlePress"
+      )}
+      onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+      onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+    />
+  );
 
 export default {
   name: "Pages/Article",
@@ -139,6 +141,8 @@ export default {
                   onAuthorPress={preventDefaultedAction(decorateAction)(
                     "onAuthorPress"
                   )}
+                  onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
+                  onCommentGuidelinesPress={preventDefaultedAction(decorateAction)("onCommentGuidelinesPress")}
                   onLinkPress={preventDefaultedAction(decorateAction)(
                     "onLinkPress"
                   )}
