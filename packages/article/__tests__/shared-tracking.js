@@ -23,6 +23,8 @@ export default () => {
         analyticsStream={stream}
         article={articleFixture()}
         onAuthorPress={() => {}}
+        onCommentGuidelinesPress={() => {}}
+        onCommentsPress={() => {}}
         onLinkPress={() => {}}
         onRelatedArticlePress={() => {}}
         onTopicPress={() => {}}

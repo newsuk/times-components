@@ -1803,11 +1803,11 @@ const defaultTopics = [
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
-const defaultCommentsEnabled = true
-const defaultCommentCount = 65
+const defaultCommentsEnabled = true;
+const defaultCommentCount = 65;
 
 const addProp = (obj, key, value) => {
-  if (value) {
+  if (value != null) {
     return {
       ...obj,
       [key]: value

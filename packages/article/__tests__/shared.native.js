@@ -73,6 +73,8 @@ export default () => {
                 })}
                 isLoading={isLoading}
                 onAuthorPress={() => {}}
+                onCommentGuidelinesPress={() => {}}
+                onCommentsPress={() => {}}
                 onLinkPress={() => {}}
                 onRelatedArticlePress={() => {}}
                 onTopicPress={() => {}}
@@ -122,6 +124,8 @@ export default () => {
               ]
             })}
             onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
             onLinkPress={onLinkPress}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
@@ -142,6 +146,32 @@ export default () => {
         link.props.onPress();
 
         expect(onLinkPress).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "a full article with disabled comments",
+      test() {
+        const article = articleFixture({
+          ...testFixture,
+          commentsEnabled: false
+        });
+
+        const testInstance = TestRenderer.create(
+          <Article
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            article={article}
+            onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];
