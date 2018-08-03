@@ -51,6 +51,7 @@ const getProps = decorateAction => ({
   ),
   page: 1,
   pageSize,
+  refetch: preventDefaultedAction(decorateAction)("refetch"),
   slug
 });
 
