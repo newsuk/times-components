@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import Context from "@times-components/context";
 import Article from "../src/article";
 import articleFixture, {
   testFixture,
@@ -40,6 +41,7 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
+        <Context.Provider value={{theme: {scale: 'medium'}}}>
         <Article
           {...props}
           adConfig={adConfig}
@@ -52,6 +54,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onVideoPress={() => {}}
         />
+        </Context.Provider>
       );
 
       expect(output).toMatchSnapshot();
@@ -350,8 +353,10 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
+
         <Wrapper>
           {byline => (
+            <Context.Provider value={{theme: {scale: 'medium'}}}>
             <Article
               adConfig={adConfig}
               analyticsStream={() => {}}
@@ -368,8 +373,10 @@ export const snapshotTests = renderComponent => [
               onTopicPress={() => {}}
               onVideoPress={() => {}}
             />
+            </Context.Provider>
           )}
         </Wrapper>
+
       );
 
       expect(output).toMatchSnapshot();
