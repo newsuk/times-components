@@ -50,7 +50,7 @@ const renderArticle = (
     error
   }
 ) => (
-  <Context.Provider value={{theme: {scale}}}>
+  <Context.Provider value={{ theme: { scale } }}>
     <Article
       adConfig={adConfig}
       analyticsStream={analyticsStream}
@@ -78,9 +78,11 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: ({ select }) => {
+      component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, "medium");
-        return renderArticle(decorateAction, scale, { fixture: fullArticleFixture() })
+        return renderArticle(decorateAction, scale, {
+          fixture: fullArticleFixture()
+        });
       }
     },
     {
@@ -94,7 +96,6 @@ export default {
           })
         });
       }
-
     },
     {
       type: "story",
@@ -103,7 +104,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ content: longContent })
-        })
+        });
       }
     },
     {
@@ -111,7 +112,7 @@ export default {
       name: "Loading",
       component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, "medium");
-        return renderArticle(decorateAction, scale, { isLoading: true })
+        return renderArticle(decorateAction, scale, { isLoading: true });
       }
     },
     {
@@ -121,7 +122,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           error: { message: "An example error." }
-        })
+        });
       }
     },
     {
@@ -148,7 +149,7 @@ export default {
               id={overrideArticleId || predefinedArticle}
             >
               {({ article, isLoading, error }) => (
-                <Context.Provider value={{theme: {scale}}}>
+                <Context.Provider value={{ theme: { scale } }}>
                   <Article
                     adConfig={articleAdConfig}
                     analyticsStream={storybookReporter}
@@ -167,11 +168,14 @@ export default {
                     onLinkPress={preventDefaultedAction(decorateAction)(
                       "onLinkPress"
                     )}
-                    onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                      "onRelatedArticlePress"
-                    )}
+                    onRelatedArticlePress={preventDefaultedAction(
+                      decorateAction
+                    )("onRelatedArticlePress")}
                     onTopicPress={preventDefaultedAction(decorateAction)(
                       "onTopicPress"
+                    )}
+                    onVideoPress={preventDefaultedAction(decorateAction)(
+                      "onVideoPress"
                     )}
                   />
                 </Context.Provider>
@@ -196,7 +200,9 @@ export default {
             >
               Click to render the ads
             </a>
-            {renderArticle(decorateAction, scale, { fixture: fullArticleFixture() })}
+            {renderArticle(decorateAction, scale, {
+              fixture: fullArticleFixture()
+            })}
           </div>
         );
       }
@@ -207,7 +213,9 @@ export default {
       platform: "native",
       component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, "medium");
-        return renderArticle(decorateAction, scale, { fixture: fullArticleFixture() })
+        return renderArticle(decorateAction, scale, {
+          fixture: fullArticleFixture()
+        });
       }
     },
     {
@@ -217,7 +225,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ byline: bylineWithLink })
-        })
+        });
       }
     },
     {
@@ -227,7 +235,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ withAds: false })
-        })
+        });
       }
     },
     {
@@ -237,7 +245,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ standfirst: null })
-        })
+        });
       }
     },
     {
@@ -247,7 +255,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null })
-        })
+        });
       }
     },
     {
@@ -257,7 +265,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null })
-        })
+        });
       }
     },
     {
@@ -267,7 +275,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null, standfirst: null })
-        })
+        });
       }
     },
     {
@@ -277,7 +285,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, standfirst: null })
-        })
+        });
       }
     },
     {
@@ -287,7 +295,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, label: null })
-        })
+        });
       }
     },
     {
@@ -301,7 +309,7 @@ export default {
             label: null,
             standfirst: null
           })
-        })
+        });
       }
     },
     {
@@ -311,7 +319,7 @@ export default {
         const scale = select("Scale", scales, "medium");
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ leadAsset: null })
-        })
+        });
       }
     }
   ]

@@ -56,7 +56,7 @@ const renderRow = analyticsStream => (
           key={rowData.type}
           label={label}
           standfirst={standfirst}
-          style={[styles.articleMainContentRow]}
+          style={[styles().articleMainContentRow]}
         />
       );
     }

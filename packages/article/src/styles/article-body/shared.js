@@ -1,17 +1,17 @@
 import timesStyleguide, {
   colours,
-  fonts,
-  fontSizes,
   spacing
 } from "@times-components/styleguide";
 
-
-const sharedStyles = (scale) => ({
+const sharedStyles = scale => ({
   leadAsset: {
     marginBottom: spacing(2)
   },
   articleTextElement: {
-    ...timesStyleguide({scale}).fontFactory({font: "body", fontSize: "bodyMobile"}),
+    ...timesStyleguide({ scale }).fontFactory({
+      font: "body",
+      fontSize: "bodyMobile"
+    }),
     marginBottom: spacing(5),
     color: colours.functional.primary
   },

@@ -7,11 +7,13 @@ import styles from "../styles/article-body";
 const BodyParagraph = props => (
   <View
     key={`paragraph-${props.uid}`}
-    style={[styles.articleMainContentRow]}
+    style={[styles().articleMainContentRow]}
     testID={`paragraph-${props.uid}`}
   >
     <Context.Consumer>
-      {({theme: {scale}}) => <Text style={styles(scale).articleTextElement}>{props.children}</Text> }
+      {({ theme: { scale } }) => (
+        <Text style={styles(scale).articleTextElement}>{props.children}</Text>
+      )}
     </Context.Consumer>
   </View>
 );

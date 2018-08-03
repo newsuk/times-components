@@ -353,7 +353,6 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-
         <Wrapper>
           {byline => (
             <Context.Provider value={{theme: {scale: 'medium'}}}>
@@ -376,7 +375,6 @@ export const snapshotTests = renderComponent => [
             </Context.Provider>
           )}
         </Wrapper>
-
       );
 
       expect(output).toMatchSnapshot();

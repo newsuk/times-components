@@ -11,9 +11,10 @@ const nativeStyles = scale => ({
   }
 });
 
-const styles = (scale) => StyleSheet.create({
-  ...globalStyle,
-  ...nativeStyles(scale)
-});
+const styles = scale =>
+  StyleSheet.create({
+    ...globalStyle,
+    ...nativeStyles(scale)
+  });
 
 export default styles;

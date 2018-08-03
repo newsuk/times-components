@@ -4,16 +4,15 @@ import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
 const androidStyles = scale => {
-  const { fontSizes, spacing } = timesStyleguide({ scale });
+  const { spacing } = timesStyleguide({ scale });
 
   return {
-    ...sharedStyles,
+    ...sharedStyles(scale),
     leadAsset: {
       marginBottom: 6
     },
     articleTextElement: {
-      ...sharedStyles.articleTextElement,
-      ...timesStyleguide({scale}).fontFactory({font: "body", fontSize: "bodyMobile"}),
+      ...sharedStyles(scale).articleTextElement,
       fontStyle: "normal",
       marginBottom: spacing(4)
     }
