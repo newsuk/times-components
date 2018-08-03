@@ -1,3 +1,3 @@
-import shared from "../shared-with-style.native";
+import shared from "../comments.native";
 
 shared();

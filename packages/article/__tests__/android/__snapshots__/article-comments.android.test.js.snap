@@ -1,152 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. an error 1`] = `
-<View>
-  <Text>
-    An error occurred
-  </Text>
-  <Text>
-    {
-  "message": "An example error."
-}
-  </Text>
-</View>
-`;
-
-exports[`2. a full article with an image as the lead asset 1`] = `
-<RCTScrollView>
+exports[`1. a full article with enabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
   <View>
     <View>
       <View>
-        <ModalImage />
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          uri="https://crop169.io"
+        />
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
+      <View>
         <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
-            }
-          }
+          accessibilityLabel="label"
         >
-          <ArticleLabel />
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
         </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
+        <Text>
           Some Headline
         </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 29,
-              "marginTop": -7,
-              "paddingBottom": 12,
-            }
-          }
-        >
+        <Text>
           Some Standfirst
         </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 11,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
+        <View>
+          <View>
             <NewArticleFlag />
           </View>
         </View>
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-                "paddingTop": 5,
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            }
-          >
-            <ArticleBylineWithLinks />
+            />
           </Text>
         </View>
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
+        <View>
+          <Text>
             Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
@@ -154,825 +76,240 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     </View>
     <View>
       <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "fontStyle": "normal",
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
+        <Text>
           Some content
         </Text>
       </View>
     </View>
     <View>
       <View>
-        <PullQuote />
+        <ArticleTopics
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": "100%",
-          }
+      <RelatedArticles
+        articles={
+          Array [
+            Object {
+              "__typename": "Article",
+              "byline": Array [],
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          ]
         }
-      >
-        <Video />
-        <View>
-          <View
-            style={
-              Object {
-                "paddingLeft": 10,
-                "paddingTop": 10,
-              }
-            }
+        template="DEFAULT"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          65 comments
+        </Text>
+        <Text>
+          Comments are subject to our community guidelines, which can be viewed 
+          <Text
+            accessibilityRole="link"
           >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 20,
-                }
-              }
-            >
-              This is video caption
-            </Text>
+            here
+          </Text>
+        </Text>
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel="VIEW COMMENTS"
+          accessibilityTraits="button"
+        >
+          <Text
+            title="VIEW COMMENTS"
+          >
+            VIEW COMMENTS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. a full article with disabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          uri="https://crop169.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          accessibilityLabel="label"
+        >
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
+        </View>
+        <Text>
+          Some Headline
+        </Text>
+        <Text>
+          Some Standfirst
+        </Text>
+        <View>
+          <View>
+            <NewArticleFlag />
           </View>
         </View>
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-          }
-        }
-      >
-        <ArticleTopics />
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+            />
+          </Text>
+        </View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
       </View>
     </View>
-    <View>
-      <RelatedArticles />
-    </View>
-    <View
-      style={
-        Object {
-          "height": 0,
-        }
-      }
-    />
-  </View>
-</RCTScrollView>
-`;
-
-exports[`3. an article with a video as the lead asset 1`] = `
-<RCTScrollView>
-  <View>
     <View>
       <View>
-        <Video />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
-            }
-          }
-        >
-          <VideoLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "fontStyle": "normal",
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
+        <Text>
           Some content
         </Text>
       </View>
     </View>
-    <View />
     <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`4. an article with no lead asset 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
+      <View>
+        <ArticleTopics
+          topics={
+            Array [
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
+      <RelatedArticles
+        articles={
+          Array [
             Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "fontStyle": "normal",
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`5. an article with ads 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
+              "__typename": "Article",
+              "byline": Array [],
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          ]
         }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "paddingBottom": 10,
-            "paddingTop": 10,
-          }
-        }
+        template="DEFAULT"
       />
     </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`6. a secondary image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
     <View>
       <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
+        <Text>
+          Comments for this article have been turned off
+        </Text>
+        <Text>
+          For more details, please see our 
+          
 
-exports[`7. an inline image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
           <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
+            accessibilityRole="link"
           >
-            Friday March 13 2015, 06:54pm, The Times
+            community guidelines
           </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`8. an article loading state 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexBasis": "100%",
-      "justifyContent": "center",
-    }
-  }
->
-  <ActivityIndicator />
-</View>
-`;
-
-exports[`9. an article with updated byline 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
         </Text>
       </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "fontStyle": "normal",
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`9. an article with updated byline 2`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-                "paddingTop": 5,
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "fontStyle": "normal",
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
     </View>
   </View>
 </RCTScrollView>
