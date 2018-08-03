@@ -14,7 +14,7 @@ const ArticleComments = ({
   url
 }) => {
   const handlePluralSuffix = count => (count === 1 ? "" : "s");
-  return commentsEnabled ? (
+  const CommentsView = (
     <View style={styles.container}>
       <Text style={styles.headline}>{`${
         commentCount
@@ -32,7 +32,8 @@ const ArticleComments = ({
         title={commentCount > 0 ? "View comments" : "Post a comment"}
       />
     </View>
-  ) : (
+  );
+  const CommentsDisabledView = (
     <View style={styles.container}>
       <Text style={styles.headline}>
         Comments for this article have been turned off
@@ -45,6 +46,7 @@ const ArticleComments = ({
       </Text>
     </View>
   );
+  return commentsEnabled ? CommentsView : CommentsDisabledView;
 };
 
 ArticleComments.propTypes = {
