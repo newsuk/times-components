@@ -6,7 +6,7 @@ import styles from "./styles";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-const ArticleTopics = ({ topics, style, onPress }) => (
+const ArticleTopics = ({ onPress, style, topics }) => (
   <View style={[styles.topicGroup, style]}>
     {topics.map(({ name, slug }) => (
       <ArticleTopic key={slug} name={name} onPress={onPress} slug={slug} />
