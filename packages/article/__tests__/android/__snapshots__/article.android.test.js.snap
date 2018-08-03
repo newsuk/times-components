@@ -268,30 +268,12 @@ exports[`3. an article with a video as the lead asset 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -333,30 +315,12 @@ exports[`4. an article with no lead asset 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -398,30 +362,12 @@ exports[`5. an article with ads 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -475,30 +421,12 @@ exports[`6. a secondary image 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -552,30 +480,12 @@ exports[`7. an inline image 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -627,30 +537,12 @@ exports[`9. an article with updated byline 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -715,30 +607,12 @@ exports[`9. an article with updated byline 2`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -780,30 +654,12 @@ exports[`10. an article that moves to a loading state 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="VIEW COMMENTS"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="VIEW COMMENTS"
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -952,21 +808,12 @@ exports[`12. a full article with disabled comments 1`] = `
       />
     </View>
     <View>
-      <View>
-        <Text>
-          Comments for this article have been turned off
-        </Text>
-        <Text>
-          For more details, please see our 
-          
-
-          <Text
-            accessibilityRole="link"
-          >
-            community guidelines
-          </Text>
-        </Text>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={false}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>

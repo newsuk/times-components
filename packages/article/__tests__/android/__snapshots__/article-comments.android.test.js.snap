@@ -1,0 +1,478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a full article with enabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          uri="https://crop169.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          accessibilityLabel="label"
+        >
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
+        </View>
+        <Text>
+          Some Headline
+        </Text>
+        <Text>
+          Some Standfirst
+        </Text>
+        <View>
+          <View>
+            <NewArticleFlag />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+            />
+          </Text>
+        </View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleTopics
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <RelatedArticles
+        articles={
+          Array [
+            Object {
+              "__typename": "Article",
+              "byline": Array [],
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          ]
+        }
+        template="DEFAULT"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          65 comments
+        </Text>
+        <Text>
+          Comments are subject to our community guidelines, which can be viewed 
+          <Text
+            accessibilityRole="link"
+          >
+            here
+          </Text>
+        </Text>
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel="VIEW COMMENTS"
+          accessibilityTraits="button"
+        >
+          <Text
+            title="VIEW COMMENTS"
+          >
+            VIEW COMMENTS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. a full article with a single comment 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          uri="https://crop169.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          accessibilityLabel="label"
+        >
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
+        </View>
+        <Text>
+          Some Headline
+        </Text>
+        <Text>
+          Some Standfirst
+        </Text>
+        <View>
+          <View>
+            <NewArticleFlag />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+            />
+          </Text>
+        </View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleTopics
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <RelatedArticles
+        articles={
+          Array [
+            Object {
+              "__typename": "Article",
+              "byline": Array [],
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          ]
+        }
+        template="DEFAULT"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          1 comment
+        </Text>
+        <Text>
+          Comments are subject to our community guidelines, which can be viewed 
+          <Text
+            accessibilityRole="link"
+          >
+            here
+          </Text>
+        </Text>
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel="VIEW COMMENTS"
+          accessibilityTraits="button"
+        >
+          <Text
+            title="VIEW COMMENTS"
+          >
+            VIEW COMMENTS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`3. a full article with disabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          uri="https://crop169.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          accessibilityLabel="label"
+        >
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
+        </View>
+        <Text>
+          Some Headline
+        </Text>
+        <Text>
+          Some Standfirst
+        </Text>
+        <View>
+          <View>
+            <NewArticleFlag />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+            />
+          </Text>
+        </View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleTopics
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <RelatedArticles
+        articles={
+          Array [
+            Object {
+              "__typename": "Article",
+              "byline": Array [],
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          ]
+        }
+        template="DEFAULT"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          Comments for this article have been turned off
+        </Text>
+        <Text>
+          For more details, please see our 
+          
+
+          <Text
+            accessibilityRole="link"
+          >
+            community guidelines
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

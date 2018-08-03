@@ -14,6 +14,8 @@ import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
+jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
+
 const omitKeys = new Set([
   "data",
   "disableVirtualization",
