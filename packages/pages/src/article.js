@@ -30,8 +30,10 @@ const ArticleDetailsPage = ({
           error={error}
           isLoading={isLoading}
           onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
-          onCommentsPress={(event, extras) => onCommentsPress(extras.articleId, extras.url)}
           onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
+          onCommentsPress={(event, extras) =>
+            onCommentsPress(extras.articleId, extras.url)
+          }
           onLinkPress={(event, linkInfo) => {
             if (linkInfo.type === "article") {
               onArticlePress(linkInfo.url);
