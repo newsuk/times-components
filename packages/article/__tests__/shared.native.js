@@ -149,32 +149,6 @@ export default () => {
 
         expect(onLinkPress).toHaveBeenCalled();
       }
-    },
-    {
-      name: "a full article with disabled comments",
-      test() {
-        const article = articleFixture({
-          ...testFixture,
-          commentsEnabled: false
-        });
-
-        const testInstance = TestRenderer.create(
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={article}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        );
-
-        expect(testInstance).toMatchSnapshot();
-      }
     }
   ];
 
