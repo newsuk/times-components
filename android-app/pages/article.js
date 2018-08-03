@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { NativeModules } from "react-native";
+import { NativeEventEmitter, NativeModules } from "react-native";
 import { Article } from "@times-components/pages";
+import Context from "@times-components/context";
 
 const config = NativeModules.ReactConfig;
 const { fetch } = NativeModules.NativeFetch;
@@ -13,6 +14,7 @@ const {
   onVideoPress,
   onTopicPress
 } = NativeModules.ArticleEvents;
+const articleEventEmitter = new NativeEventEmitter(NativeModules.ArticleEvents);
 const ArticlePageView = Article(config)(fetch);
 
 const platformAdConfig = {
@@ -31,26 +33,53 @@ const platformAdConfig = {
   platform: "mobile"
 };
 
-const ArticleView = ({ articleId, sectionName }) => {
-  const adConfig = { ...platformAdConfig, sectionName };
+class ArticleView extends Component {
+  constructor(props) {
+    super(props);
+    const { scale } = props;
+    this.state = { scale };
+  }
 
-  return (
-    <ArticlePageView
-      articleId={articleId}
-      analyticsStream={track}
-      onArticlePress={onArticlePress}
-      onAuthorPress={onAuthorPress}
-      onLinkPress={onLinkPress}
-      onVideoPress={onVideoPress}
-      onTopicPress={onTopicPress}
-      platformAdConfig={adConfig}
-    />
-  );
-};
+  componentDidMount() {
+    this.subscription = articleEventEmitter.addListener("scaleChange", scale =>
+      this.setState({ scale })
+    );
+  }
+
+  componentWillUnmount() {
+    this.subscription.remove();
+  }
+
+  render() {
+    const { articleId, sectionName } = this.props;
+    const adConfig = { ...platformAdConfig, sectionName };
+    const { scale } = this.state;
+
+    return (
+      <Context.Provider values={{ theme: { scale } }}>
+        <ArticlePageView
+          articleId={articleId}
+          analyticsStream={track}
+          onArticlePress={onArticlePress}
+          onAuthorPress={onAuthorPress}
+          onLinkPress={onLinkPress}
+          onTopicPress={onTopicPress}
+          onVideoPress={onVideoPress}
+          platformAdConfig={adConfig}
+        />
+      </Context.Provider>
+    );
+  }
+}
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
+  scale: PropTypes.string,
   sectionName: PropTypes.string.isRequired
+};
+
+ArticleView.defaultProps = {
+  scale: "medium"
 };
 
 export default ArticleView;
