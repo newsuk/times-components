@@ -12,12 +12,11 @@ const ArticleComments = ({
   onCommentsPress,
   onCommentGuidelinesPress,
   url
-}) =>
-  commentsEnabled ? (
+}) => {
+  const handlePluralSuffix = (count) => commentCount === 1 ? "" : "s";
+  return commentsEnabled ? (
     <View style={styles.container}>
-      <Text style={styles.headline}>{`${commentCount} comment${
-        commentCount === 1 ? "" : "s"
-      }`}</Text>
+      <Text style={styles.headline}>{`${commentCount} comment${handlePluralSuffix(commentCount)}`}</Text>
       <Text style={styles.supporting}>
         Comments are subject to our community guidelines, which can be
         viewed&nbsp;
@@ -32,18 +31,19 @@ const ArticleComments = ({
       />
     </View>
   ) : (
-    <View style={styles.container}>
-      <Text style={styles.headline}>
-        Comments for this article have been turned off
+      <View style={styles.container}>
+        <Text style={styles.headline}>
+          Comments for this article have been turned off
       </Text>
-      <Text style={styles.supporting}>
-        For more details, please see our {"\n"}
-        <TextLink onPress={onCommentGuidelinesPress} style={styles.link}>
-          community guidelines
+        <Text style={styles.supporting}>
+          For more details, please see our {"\n"}
+          <TextLink onPress={onCommentGuidelinesPress} style={styles.link}>
+            community guidelines
         </TextLink>
-      </Text>
-    </View>
-  );
+        </Text>
+      </View>
+    );
+}
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
