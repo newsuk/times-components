@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an article list loading with images 1`] = `
+<authorArticlesWithImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        isLoading={true}
+        jobTitle=""
+        name=""
+        twitter=""
+        uri=""
+      />
+    }
+    articlesLoading={true}
+    count={0}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.5}
+    isLoading={true}
+    page={1}
+    showImages={true}
+  />
+</authorArticlesWithImagesProvider>
+`;
+
+exports[`2. an article list loading without images 1`] = `
+<authorArticlesWithImagesProvider>
+  <ArticleList
+    articleListHeader={
+      <AuthorProfileHead
+        isLoading={true}
+        jobTitle=""
+        name=""
+        twitter=""
+        uri=""
+      />
+    }
+    articlesLoading={true}
+    count={0}
+    emptyStateMessage="ff3b632a924b7158198121895f2e8da1"
+    imageRatio={1.5}
+    isLoading={true}
+    page={1}
+    showImages={true}
+  />
+</authorArticlesWithImagesProvider>
+`;

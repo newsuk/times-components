@@ -1,22 +1,14 @@
 import PropTypes from "prop-types";
-import { treePropType } from "@times-components/markup";
+import {
+  propTypes as basePropTypes,
+  defaultPropTypes as baseDefaultPropTypes
+} from "./author-profile-head-prop-types.base";
 
 export const propTypes = {
-  biography: PropTypes.arrayOf(treePropType),
-  isLoading: PropTypes.bool,
-  jobTitle: PropTypes.string,
-  name: PropTypes.string,
-  onTwitterLinkPress: PropTypes.func,
-  twitter: PropTypes.string,
-  uri: PropTypes.string
+  ...basePropTypes,
+  onTwitterLinkPress: PropTypes.func.isRequired
 };
 
 export const defaultProps = {
-  biography: [],
-  isLoading: true,
-  jobTitle: "",
-  name: "",
-  onTwitterLinkPress: () => {},
-  twitter: "",
-  uri: ""
+  ...baseDefaultPropTypes
 };
