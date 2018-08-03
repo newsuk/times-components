@@ -66,6 +66,7 @@
   "dependencies": {
     "@times-components/link": "2.2.0",
     "@times-components/markup": "2.2.1",
+    "@times-components/markup-forest": "0.0.1",
     "@times-components/styleguide": "2.3.0",
     "prop-types": "15.6.2"
   },

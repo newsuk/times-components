@@ -1,18 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article list header 1`] = `
-.c0 {
-  width: 100%;
-  padding-top: 30px;
-}
-
 .c1 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
 
-.c2 {
-  width: 100px;
+.c0 {
+  width: 100%;
+  padding-top: 30px;
 }
 
 .c3 {
@@ -27,15 +23,13 @@ exports[`1. an article list header 1`] = `
   padding-right: 10px;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    padding-top: 60px;
-  }
+.c2 {
+  width: 100px;
 }
 
 @media (min-width:768px) {
-  .c2 {
-    width: 116px;
+  .c0 {
+    padding-top: 60px;
   }
 }
 
@@ -56,6 +50,12 @@ exports[`1. an article list header 1`] = `
 @media (min-width:1320px) {
   .c4 {
     max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 116px;
   }
 }
 

@@ -58,9 +58,9 @@
     "@times-components/topic": "2.1.1",
     "@times-components/utils": "2.2.1",
     "apollo-cache-inmemory": "1.1.10",
-    "apollo-client": "2.3.2",
+    "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",
-    "graphql": "0.13.1",
+    "graphql": "0.13.2",
     "prop-types": "15.6.2",
     "react-apollo": "2.1.4"
   },

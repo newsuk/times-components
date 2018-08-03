@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-.c0 .supportImageContainerClass {
-  display: none;
-}
-
-.c0 .supportSummaryClass {
-  display: none;
-}
-
-.c0 .summaryHidden {
-  display: none;
-}
-
-.c0 .leadSummary125Class {
-  display: block;
-}
-
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -32,6 +16,22 @@ exports[`1. a single child element 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
 }
 
 .c2 {
@@ -62,6 +62,12 @@ exports[`1. a single child element 1`] = `
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
 }
 
 @media (min-width:768px) {
@@ -107,12 +113,6 @@ exports[`1. a single child element 1`] = `
 @media (min-width:1024px) {
   .c0 .leadImageContainerClass {
     padding-right: 10px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
-    border-bottom-width: 0.5px;
   }
 }
 
@@ -218,22 +218,6 @@ exports[`1. a single child element 1`] = `
 `;
 
 exports[`2. two child elements 1`] = `
-.c0 .supportImageContainerClass {
-  display: none;
-}
-
-.c0 .supportSummaryClass {
-  display: none;
-}
-
-.c0 .summaryHidden {
-  display: none;
-}
-
-.c0 .leadSummary125Class {
-  display: block;
-}
-
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -249,6 +233,32 @@ exports[`2. two child elements 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
 }
 
 .c2 {
@@ -293,19 +303,23 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: auto;
-}
-
 .c6 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+  }
 }
 
 @media (min-width:768px) {
@@ -351,12 +365,6 @@ exports[`2. two child elements 1`] = `
 @media (min-width:1024px) {
   .c0 .leadImageContainerClass {
     padding-right: 10px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
-    border-bottom-width: 0.5px;
   }
 }
 
@@ -409,14 +417,6 @@ exports[`2. two child elements 1`] = `
     -ms-flex: 0 !important;
     flex: 0 !important;
     margin: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
   }
 }
 
@@ -560,34 +560,6 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-.c4 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  min-width: auto;
-}
-
 .c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -596,11 +568,6 @@ exports[`3. three child elements 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
-}
-
-.c6 {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 .supportImageContainerClass {
@@ -619,6 +586,22 @@ exports[`3. three child elements 1`] = `
   display: block;
 }
 
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
 .c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -631,6 +614,23 @@ exports[`3. three child elements 1`] = `
   padding-left: 10px;
   padding-right: 10px;
   width: auto;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c6 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .c7 {
@@ -650,54 +650,10 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-bottom: 10px;
-    width: 100%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c2 {
-    width: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    border-bottom: none;
-    border-right-color: #DBDBDB;
-    border-right-style: solid;
-    border-right-width: 1px;
-    -webkit-flex: 0 !important;
-    -ms-flex: 0 !important;
-    flex: 0 !important;
-    margin: 0;
-  }
-}
-
-@media (min-width:768px) {
   .c5 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c6 {
-    margin-top: 0;
   }
 }
 
@@ -768,6 +724,22 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
   .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
@@ -787,6 +759,34 @@ exports[`3. three child elements 1`] = `
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
     flex-grow: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    margin-top: 0;
   }
 }
 

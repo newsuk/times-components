@@ -1,0 +1,92 @@
+{
+  "name": "block",
+  "attributes": {},
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "Some text is here "
+      },
+      "children": []
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "and there is some "
+          },
+          "children": []
+        },
+        {
+          "name": "block",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "more text "
+              },
+              "children": []
+            },
+            {
+              "name": "inline",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "and in here"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "specialElement",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "text of a special element"
+              },
+              "children": []
+            },
+            {
+              "name": "inline",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "inline text of a special element"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value": " after it too"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "attributes": {
+        "value": " and here"
+      },
+      "children": []
+    }
+  ]
+}

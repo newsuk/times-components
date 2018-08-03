@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { TextLink } from "@times-components/link";
-import { renderTree } from "@times-components/markup";
+import { renderTree } from "@times-components/markup-forest";
+import coreRenderers from "@times-components/markup";
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
 import KeyFactsWrapper from "./key-facts-wrapper";
@@ -26,6 +27,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
           renderTree(
             data,
             {
+              ...coreRenderers,
               link(key, attributes, renderedChildren) {
                 const { canonicalId, href: url, type } = attributes;
                 return {

@@ -2,9 +2,9 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { addTypenameToDocument } from "apollo-utilities";
+import { topic as topicQuery } from "@times-components/provider-queries";
 import fixture from "@times-components/provider-test-tools/fixtures/topic.json";
 import { TopicProvider } from "../src/provider";
-import { query as topicQuery } from "../src/topic";
 
 const mocks = [
   {

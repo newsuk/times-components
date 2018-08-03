@@ -52,7 +52,7 @@
     "depcheck": "0.6.9",
     "eslint": "4.9.0",
     "jest": "23.3.0",
-    "jest-styled-components": "5.0.0",
+    "jest-styled-components": "5.0.1",
     "prettier": "1.8.2",
     "react": "16.4.2",
     "react-dom": "16.4.2",

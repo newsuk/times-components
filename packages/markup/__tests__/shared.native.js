@@ -5,9 +5,6 @@ import {
 import TestRenderer from "react-test-renderer";
 import shared from "./shared.base";
 
-jest.mock("@times-components/ad", () => "Ad");
-jest.mock("@times-components/pull-quote", () => "PullQuote");
-
 export default () => {
   addSerializers(expect, minimalNative);
 

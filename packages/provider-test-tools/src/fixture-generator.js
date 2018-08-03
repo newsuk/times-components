@@ -1,11 +1,11 @@
 import { addTypenameToDocument } from "apollo-utilities";
 import {
-  authorProfileQuery,
-  articleListNoImagesQuery,
-  articleListWithImagesQuery,
-  topicQuery,
-  topicArticlesQuery
-} from "@times-components/provider";
+  author as authorQuery,
+  authorArticlesNoImages as articleListNoImagesQuery,
+  authorArticlesWithImages as articleListWithImagesQuery,
+  topic as topicQuery,
+  topicArticles as topicArticlesQuery
+} from "@times-components/provider-queries";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
@@ -200,7 +200,7 @@ const makeTopicArticleList = (
 const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   delay,
   request: {
-    query: addTypenameToDocument(authorProfileQuery),
+    query: addTypenameToDocument(authorQuery),
     variables: {
       slug
     }
@@ -390,7 +390,7 @@ const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
   return [
     {
       request: {
-        query: addTypenameToDocument(authorProfileQuery),
+        query: addTypenameToDocument(authorQuery),
         variables: {
           slug
         }

@@ -1,267 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. single paragraph 1`] = `
-<p>
-  This is the text for paragraph one
-</p>
-`;
-
-exports[`2. multiple paragraphs 1`] = `
+exports[`1. block 1`] = `
 <div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+     after it too
+  </div>
+   and here
 </div>
 `;
 
-exports[`3. multiple paragraphs with a pull quote 1`] = `
-<style>
-{
-  "IS1": {
-    "color": "rgba(105,105,105,1)",
-  },
-  "IS2": {
-    "color": "rgba(105,105,105,1)",
-  },
-}
-</style>
-
-<div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <PullQuotes
-    caption="Katie Glass"
-    captionColour="#696969"
-    content="Some pull quote"
-    quoteColour="#696969"
-    twitter=""
-  />
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`4. bold tag 1`] = `
+exports[`2. bold 1`] = `
 <strong>
   some text here
 </strong>
 `;
 
-exports[`5. italic tag 1`] = `
-<em>
-   some more text here
-</em>
-`;
+exports[`3. break 1`] = `<br />`;
 
-exports[`6. span tag 1`] = `
+exports[`4. image tag 1`] = `<div />`;
+
+exports[`5. inline 1`] = `
 <span>
   some other text here
 </span>
 `;
 
-exports[`7. line break tag 1`] = `<br />`;
-
-exports[`8. mixture of tags 1`] = `
-<div>
-  <div>
-    <div
-      href="http://www.google.com"
-    >
-      some link here
-    </div>
-  </div>
-  <div>
-    <strong>
-      some text here
-    </strong>
-  </div>
-  <div>
-    <em>
-       some more text here
-    </em>
-  </div>
-  <div>
-    <span>
-      some other text here
-    </span>
-  </div>
-</div>
+exports[`6. italic 1`] = `
+<em>
+   some more text here
+</em>
 `;
 
-exports[`9. nested tags 1`] = `
-<div>
-  Some text is here 
-  <span>
-    and there is some 
-    <span>
-      more text 
-      <span>
-        and in here
-      </span>
-    </span>
-     after it too
-  </span>
-   and here
-</div>
+exports[`7. paragraph 1`] = `
+<p>
+  This is the text for paragraph one
+</p>
 `;
 
-exports[`10. ignore children of nested tags 1`] = `
-<div>
-  Some text is here 
-  <div>
-    and there is some 
-    <div>
-      more text 
-      <span>
-        and in here
-      </span>
-    </div>
-    <div />
-     after it too
-  </div>
-   and here
-</div>
-`;
-
-exports[`11. provide ast of node 1`] = `
-<div>
-  Some text is here 
-  <div>
-    and there is some 
-    <div>
-      more text 
-      <span>
-        and in here
-      </span>
-    </div>
-    <div>
-      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
-    </div>
-     after it too
-  </div>
-   and here
-</div>
-`;
-
-exports[`12. provide ast of node for child 1`] = `
-<div>
-  <div>
-    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
-  </div>
-  <div>
-    <div>
-      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
-    </div>
-    <div>
-      <div>
-        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
-      </div>
-      <span>
-        <div>
-          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
-        </div>
-      </span>
-    </div>
-    <div>
-      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
-    </div>
-  </div>
-  <div>
-    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
-  </div>
-</div>
-`;
-
-exports[`13. provide empty children 1`] = `
-<div>
-  <div>
-    0
-  </div>
-  <div>
-    <div>
-      0
-    </div>
-    <div>
-      <div>
-        0
-      </div>
-      <span>
-        <div>
-          0
-        </div>
-      </span>
-    </div>
-    <div>
-      0
-    </div>
-  </div>
-  <div>
-    0
-  </div>
-</div>
-`;
-
-exports[`14. wrapped tags 1`] = `
-<div>
-  Camilla Long is 
-  <em>
-    the Sunday Times
-  </em>
-   film critic. She also writes interviews and a column, and was named 
-  <strong>
-    interviewer of the year
-  </strong>
-   at the British Press Awards in 2010 and 2016.
-</div>
-`;
-
-exports[`15. multiple children 1`] = `
-<style>
-{
-  "IS1": {
-    "color": "red",
-  },
-}
-</style>
-
-<div
-  className="IS1"
->
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`16. does not render a script tag 1`] = `<div />`;
-
-exports[`17. image tag 1`] = `<div />`;
+exports[`8. does not render a script tag 1`] = `<div />`;

@@ -1,59 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. single paragraph 1`] = `
-<Text>
-  This is the text for paragraph one
-</Text>
-`;
-
-exports[`2. multiple paragraphs 1`] = `
+exports[`1. block 1`] = `
 <View>
-  <Text>
-    This is the text for paragraph one
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
+  Some text is here 
+  <View>
+    and there is some 
+    <View>
+      more text 
+      <Text>
+        and in here
+      </Text>
+    </View>
+     after it too
+  </View>
+   and here
 </View>
 `;
 
-exports[`3. multiple paragraphs with a pull quote 1`] = `
-<View>
-  <Text>
-    This is the text for paragraph one
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <PullQuote
-    caption="Katie Glass"
-    content="Some pull quote"
-  />
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-</View>
-`;
-
-exports[`4. bold tag 1`] = `
+exports[`2. bold 1`] = `
 <Text
   style={
     Object {
@@ -65,7 +29,22 @@ exports[`4. bold tag 1`] = `
 </Text>
 `;
 
-exports[`5. italic tag 1`] = `
+exports[`3. break 1`] = `
+<Text>
+  
+
+</Text>
+`;
+
+exports[`4. image tag 1`] = `<View />`;
+
+exports[`5. inline 1`] = `
+<Text>
+  some other text here
+</Text>
+`;
+
+exports[`6. italic 1`] = `
 <Text
   style={
     Object {
@@ -77,212 +56,10 @@ exports[`5. italic tag 1`] = `
 </Text>
 `;
 
-exports[`6. span tag 1`] = `
+exports[`7. paragraph 1`] = `
 <Text>
-  some other text here
+  This is the text for paragraph one
 </Text>
 `;
 
-exports[`7. line break tag 1`] = `
-<Text>
-  
-
-</Text>
-`;
-
-exports[`8. mixture of tags 1`] = `
-<View>
-  <View>
-    <Text>
-      some link here
-    </Text>
-  </View>
-  <View>
-    <Text
-      style={
-        Object {
-          "fontWeight": "bold",
-        }
-      }
-    >
-      some text here
-    </Text>
-  </View>
-  <View>
-    <Text
-      style={
-        Object {
-          "fontStyle": "italic",
-        }
-      }
-    >
-       some more text here
-    </Text>
-  </View>
-  <View>
-    <Text>
-      some other text here
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`9. nested tags 1`] = `
-<Text>
-  Some text is here 
-  <Text>
-    and there is some 
-    <Text>
-      more text 
-      <Text>
-        and in here
-      </Text>
-    </Text>
-     after it too
-  </Text>
-   and here
-</Text>
-`;
-
-exports[`10. ignore children of nested tags 1`] = `
-<View>
-  Some text is here 
-  <View>
-    and there is some 
-    <View>
-      more text 
-      <Text>
-        and in here
-      </Text>
-    </View>
-    <Text />
-     after it too
-  </View>
-   and here
-</View>
-`;
-
-exports[`11. provide ast of node 1`] = `
-<View>
-  Some text is here 
-  <View>
-    and there is some 
-    <View>
-      more text 
-      <Text>
-        and in here
-      </Text>
-    </View>
-    <Text>
-      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
-    </Text>
-     after it too
-  </View>
-   and here
-</View>
-`;
-
-exports[`12. provide ast of node for child 1`] = `
-<View>
-  <Text>
-    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
-  </Text>
-  <View>
-    <Text>
-      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
-    </Text>
-    <View>
-      <Text>
-        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
-      </Text>
-      <Text>
-        <Text>
-          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
-        </Text>
-      </Text>
-    </View>
-    <Text>
-      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
-    </Text>
-  </View>
-  <Text>
-    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
-  </Text>
-</View>
-`;
-
-exports[`13. provide empty children 1`] = `
-<View>
-  <Text>
-    0
-  </Text>
-  <View>
-    <Text>
-      0
-    </Text>
-    <View>
-      <Text>
-        0
-      </Text>
-      <Text>
-        <Text>
-          0
-        </Text>
-      </Text>
-    </View>
-    <Text>
-      0
-    </Text>
-  </View>
-  <Text>
-    0
-  </Text>
-</View>
-`;
-
-exports[`14. wrapped tags 1`] = `
-<Text>
-  Camilla Long is 
-  <Text
-    style={
-      Object {
-        "fontStyle": "italic",
-      }
-    }
-  >
-    the Sunday Times
-  </Text>
-   film critic. She also writes interviews and a column, and was named 
-  <Text
-    style={
-      Object {
-        "fontWeight": "bold",
-      }
-    }
-  >
-    interviewer of the year
-  </Text>
-   at the British Press Awards in 2010 and 2016.
-</Text>
-`;
-
-exports[`15. multiple children 1`] = `
-<Text
-  style={
-    Object {
-      "color": "red",
-    }
-  }
->
-  <Text>
-    This is the text for paragraph one
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-</Text>
-`;
-
-exports[`16. does not render a script tag 1`] = `<View />`;
-
-exports[`17. image tag 1`] = `<View />`;
+exports[`8. does not render a script tag 1`] = `<View />`;

@@ -1,0 +1,27 @@
+{
+  "name": "block",
+  "attributes": {},
+  "children": [
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
+        {
+          "name": "link",
+          "attributes": {
+            "href": "http://www.google.com"
+          },
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "some link here"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

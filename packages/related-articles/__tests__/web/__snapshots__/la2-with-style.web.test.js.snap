@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c0 .supportImageContainerClass {
-  display: none;
-}
-
-.c0 .supportSummaryClass {
-  display: none;
-}
-
-.c0 .summaryHidden {
-  display: none;
-}
-
-.c0 .leadSummary125Class {
-  display: block;
-}
-
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -32,6 +16,22 @@ exports[`default styles 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
 }
 
 .c2 {
@@ -62,6 +62,12 @@ exports[`default styles 1`] = `
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
 }
 
 @media (min-width:768px) {
@@ -107,12 +113,6 @@ exports[`default styles 1`] = `
 @media (min-width:1024px) {
   .c0 .leadImageContainerClass {
     padding-right: 10px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
-    border-bottom-width: 0.5px;
   }
 }
 
