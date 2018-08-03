@@ -1,15 +1,15 @@
-import { ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
   onPress: PropTypes.func.isRequired,
-  style: ViewPropTypesStyle,
+  style: PropTypes.shape({
+    button: PropTypes.object,
+    text: PropTypes.object
+  }),
   title: PropTypes.string
 };
 
 export const defaultProps = {
-  style: null,
+  style: {},
   title: "Submit"
 };

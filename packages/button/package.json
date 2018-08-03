@@ -62,6 +62,7 @@
   "dependencies": {
     "@times-components/styleguide": "2.1.7",
     "@times-components/utils": "2.1.6",
+    "lodash.invert": "4.3.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
