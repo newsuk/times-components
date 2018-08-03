@@ -10,7 +10,9 @@ export const basePropTypes = {
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
-  target: PropTypes.string
+  onPress: PropTypes.func.isRequired,
+  target: PropTypes.string,
+  url: PropTypes.string
 };
 
 export const baseDefaultProps = {
