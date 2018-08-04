@@ -79,7 +79,7 @@ class ArticleList extends Component {
           <View>
             <ArticleListError />
           </View>
-          <Button onPress={refetch} style={styles.retryButton} title="Retry" />
+          <Button onPress={refetch} title="Retry" />
         </View>
       );
     }
@@ -117,7 +117,6 @@ class ArticleList extends Component {
                     );
                   })
                 }
-                style={styles.showMoreRetryButton}
                 title="Retry"
               />
             </View>

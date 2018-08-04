@@ -20,7 +20,7 @@ const ArticleListPageError = ({ refetch }) => (
       />
       <ArticleListError />
     </View>
-    <Button onPress={refetch} style={styles.retryButton} title="Retry" />
+    <Button onPress={refetch} title="Retry" />
   </View>
 );
 
