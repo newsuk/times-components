@@ -1,6 +1,17 @@
 # Button
 
-A simple component that defaults to a common Times-style cross-platform button.
+A simple component that defaults to a common Times-style cross-platform button. The button has a default style, as per the showcase, but can also be styled by the consumer:
+
+```
+const buttonStyle = {
+  button: {
+    // button style here
+  },
+  text: {
+    // text styles here
+  }
+};
+```
 
 ## Contributing
 
