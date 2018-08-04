@@ -1,3 +1,4 @@
+import React, { StrictMode } from "react";
 import { Platform } from "react-native";
 
 const addStories = (builder, knobs, actions, [child, ...children]) => {
@@ -8,7 +9,9 @@ const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (child.type === "story") {
     const args = [knobs, actions];
 
-    builder.add(child.name, () => child.component(...args));
+    builder.add(child.name, () => (
+      <StrictMode>{child.component(...args)}</StrictMode>
+    ));
   }
 
   if (child.type === "decorator") {
