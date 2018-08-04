@@ -7,7 +7,8 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && npm run prettier:diff",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
@@ -57,6 +58,7 @@
     "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
+    "depcheck": "0.6.9",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "1.5.0",
     "jest": "23.3.0",
@@ -74,10 +76,10 @@
     "graphql": "0.13.1",
     "graphql-tag": "2.8.0",
     "lodash.isequal": "4.4.0",
-    "prop-types": "15.6.0",
-    "react": "16.4.1",
+    "prop-types": "15.6.2",
+    "react": "16.4.2",
     "react-apollo": "2.1.4",
-    "react-test-renderer": "16.3.1",
+    "react-test-renderer": "16.4.2",
     "zen-observable": "0.8.8"
   },
   "peerDependencies": {

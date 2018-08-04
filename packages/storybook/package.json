@@ -7,7 +7,8 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -32,20 +33,15 @@
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
+    "depcheck": "0.6.9",
     "eslint": "4.9.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
     "jest": "23.3.0",
     "prettier": "1.8.2",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.4.2"
   },
   "dependencies": {
     "@storybook/addon-actions": "3.4.1",
     "@storybook/addon-knobs": "3.4.1",
-    "@storybook/addons": "3.4.1",
     "@storybook/react-native": "3.4.1",
     "@times-components/jest-configurator": "2.0.6",
     "@times-components/provider-test-tools": "0.15.7",
@@ -53,11 +49,10 @@
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.2",
     "apollo-link-http": "1.5.3",
-    "graphql": "0.13.1",
-    "prop-types": "15.6.0",
-    "react": "16.4.1",
+    "prop-types": "15.6.2",
+    "react": "16.4.2",
     "react-apollo": "2.1.4",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.4.2"
   },
   "peerDependencies": {
     "react": ">=16.2",

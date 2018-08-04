@@ -30,7 +30,7 @@ const StorybookProvider = props => {
     });
 
     return (
-      <ApolloProvider debounceTimeMs={250} client={client}>
+      <ApolloProvider client={client} debounceTimeMs={250}>
         {props.children}
       </ApolloProvider>
     );

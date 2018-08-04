@@ -6,6 +6,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,flow-bin,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "flow && eslint . && yarn prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
@@ -46,19 +47,20 @@
     "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
+    "depcheck": "0.6.9",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "flow-bin": "0.63.1",
     "jest": "23.3.0",
     "prettier": "1.8.2",
-    "react-test-renderer": "16.3.1",
+    "react-test-renderer": "16.4.2",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "hoist-non-react-statics": "2.5.0",
     "lodash.get": "4.4.2",
-    "prop-types": "15.6.0",
+    "prop-types": "15.6.2",
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
