@@ -48,8 +48,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Button%20width%3A%20=200&knob-Button%20title%3A=submit&selectedKind=Primitives%2FButton&selectedStory=Button&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available button templates.
-
-## Future
-
-A consumer should be able to style the whole button, not just the background
-colour.
