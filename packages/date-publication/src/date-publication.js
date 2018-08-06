@@ -35,9 +35,10 @@ class DatePublication extends Component {
     const formatString = showDay
       ? "dddd MMMM DD YYYY, hh:mma"
       : "MMMM DD YYYY, hh:mma";
-    const publicationString = publication
-      ? `, ${publications[publication]}`
-      : ``;
+    const publicationString =
+      publication && publications[publication]
+        ? `, ${publications[publication]}`
+        : ``;
     return `${format(datetimeLondonTimezone, formatString)}${this.state.tz}${
       publicationString
     }`;
