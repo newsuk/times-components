@@ -34,7 +34,7 @@ const sharedStyles = {
     color: colours.functional.primary,
     marginBottom: spacing(1),
     fontFamily: fonts.headline,
-    fontWeight: "400"
+    fontWeight: "900"
   },
   headlineWrapper: {
     fontSize: fontSizes.smallHeadline,

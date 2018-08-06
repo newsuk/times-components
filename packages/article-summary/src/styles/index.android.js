@@ -4,6 +4,10 @@ const styles = {
   ...sharedStyles,
   labelWrapper: {
     ...sharedStyles.labelWrapper
+  },
+  headline: {
+    ...sharedStyles.headline,
+    fontWeight: "400"
   }
 };
 
