@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import invert from "lodash.invert";
-import { colours } from "@times-components/styleguide";
 import Button from "./src/button";
 
 const preventDefaultedAction = decorateAction =>
@@ -13,26 +11,10 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const getProps = (decorateAction, knobs) => {
-  const { number, select, text } = knobs;
+  const { number, text } = knobs;
   return {
     onPress: preventDefaultedAction(decorateAction)("onPress"),
-    style: {
-      button: {
-        backgroundColor: select(
-          "Button Colour: ",
-          invert(colours.functional),
-          colours.functional.action
-        ),
-        width: number("Button width: ", 200)
-      },
-      text: {
-        color: select(
-          "Button Text Colour: ",
-          invert(colours.functional),
-          colours.functional.contrast
-        )
-      }
-    },
+    style: { width: number("Button width: ", 200) },
     title: text("Button title:", "submit")
   };
 };
@@ -43,8 +25,8 @@ export default {
     {
       type: "story",
       name: "Button",
-      component: ({ number, select, text }, { decorateAction }) => (
-        <Button {...getProps(decorateAction, { number, select, text })} />
+      component: ({ number, text }, { decorateAction }) => (
+        <Button {...getProps(decorateAction, { number, text })} />
       )
     }
   ]

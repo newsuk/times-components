@@ -26,6 +26,11 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     paddingVertical: spacing(2)
   },
+  retryButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
+    marginTop: spacing(8)
+  },
   listContentErrorContainer: {
     flex: 1,
     margin: spacing(3)
@@ -76,17 +81,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const retryButtonStyles = {
-  alignSelf: "center",
-  marginBottom: spacing(2),
-  marginTop: spacing(8)
-};
-
 const watermarkStyles = {
   width: 500,
   height: 350,
   viewBox: "0 0 350 200"
 };
 
-export { retryButtonStyles, watermarkStyles };
+export { watermarkStyles };
 export default styles;

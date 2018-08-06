@@ -87,11 +87,9 @@ exports[`1. page error 1`] = `
     "paddingBottom": "110%",
   },
   "IS5": {
-    "button": {
-      "alignSelf": "center",
-      "marginBottom": "10px",
-      "marginTop": "40px",
-    },
+    "alignSelf": "center",
+    "marginBottom": "10px",
+    "marginTop": "40px",
   },
   "S1": {
     "-ms-flex": "1",

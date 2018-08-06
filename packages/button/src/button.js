@@ -7,7 +7,6 @@ import styles from "./styles";
 
 const Button = ({ onPress, style, title }) => {
   const transformedTitle = transformTitle(title);
-  const { button: buttonStyle = null, text: textStyle } = style;
 
   return (
     <TouchableHighlight
@@ -17,10 +16,10 @@ const Button = ({ onPress, style, title }) => {
       accessibilityTraits="button"
       activeOpacity={1}
       onPress={onPress}
-      style={[styles.button, buttonStyle]}
+      style={[styles.button, style]}
       underlayColor={colours.functional.actionPressed}
     >
-      <Text style={[styles.text, textStyle]} title={transformedTitle}>
+      <Text style={styles.text} title={transformedTitle}>
         {transformedTitle}
       </Text>
     </TouchableHighlight>

@@ -8,7 +8,7 @@ import {
   PageErrorImageContainer,
   PageErrorContentContainer
 } from "./styles/responsive";
-import { retryButtonStyles } from "./styles";
+import styles from "./styles";
 
 const ArticleListPageError = ({ refetch }) => (
   <PageErrorContainer>
@@ -20,11 +20,7 @@ const ArticleListPageError = ({ refetch }) => (
     </PageErrorImageContainer>
     <PageErrorContentContainer>
       <ArticleListError />
-      <Button
-        onPress={refetch}
-        style={{ button: retryButtonStyles }}
-        title="Retry"
-      />
+      <Button onPress={refetch} style={styles.retryButton} title="Retry" />
     </PageErrorContentContainer>
   </PageErrorContainer>
 );
