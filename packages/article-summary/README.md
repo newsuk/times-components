@@ -4,13 +4,13 @@ An article summary contains optional information about an article such as
 headline, summary, publication date, author and label. Some of these components
 are passed in as render props, and others are passed in as a config object,
 either containing props to be passed on to the appropriate component, or an
-Abstract Syntax Tree ("AST") which the components can handle itself.
+Abstract Syntax Tree ("AST") which a component can handle by itself.
 
 ## Components with a render prop
 
 * headline - `ArticleSummaryHeadline` lays out an accessible article headline
 * content - `ArticleSummaryContent` handles an AST, but is passed into the
-  sumary as a render prop
+  summary as a render prop
 
 ## Components with a config object of props
 
