@@ -13,6 +13,19 @@ import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
+const findViewByText = (testInstance, text) =>
+  testInstance.root.find(node => {
+    if (
+      typeof node.type === "string" &&
+      node.type.includes("Text") &&
+      node.children.length > 0 &&
+      node.children[0] === text
+    ) {
+      return true;
+    }
+    return false;
+  });
+
 const omitKeys = new Set([
   "data",
   "disableVirtualization",
@@ -68,18 +81,7 @@ export default () => {
       />
     );
 
-    const comments = testInstance.root.find(node => {
-      if (
-        typeof node.type === "string" &&
-        node.type.includes("Text") &&
-        node.children.length > 0 &&
-        node.children[0] === "1 comment"
-      ) {
-        return true;
-      }
-      return false;
-    });
-
+    const comments = findViewByText(testInstance, "1 comment");
     expect(comments).toBeDefined();
   });
 };
