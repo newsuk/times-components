@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
-import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
+import propTypes from "./article-topic-prop-types";
 
 const ArticleTopic = ({ name, onPress, slug }) => (
   <View style={styles.spacer}>
@@ -15,11 +15,7 @@ const ArticleTopic = ({ name, onPress, slug }) => (
   </View>
 );
 
-ArticleTopic.propTypes = {
-  name: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
-  slug: PropTypes.string.isRequired
-};
+ArticleTopic.propTypes = propTypes;
 
 export default withTrackEvents(ArticleTopic, {
   analyticsEvents: [
