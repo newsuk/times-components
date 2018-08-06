@@ -65,15 +65,15 @@ export default () => {
     const testInstance = TestRenderer.create(
       <Article
         adConfig={adConfig}
-        analyticsStream={() => { }}
+        analyticsStream={() => {}}
         article={article}
-        onAuthorPress={() => { }}
-        onCommentGuidelinesPress={() => { }}
-        onCommentsPress={() => { }}
-        onLinkPress={() => { }}
-        onRelatedArticlePress={() => { }}
-        onTopicPress={() => { }}
-        onVideoPress={() => { }}
+        onAuthorPress={() => {}}
+        onCommentGuidelinesPress={() => {}}
+        onCommentsPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onVideoPress={() => {}}
       />
     );
 
