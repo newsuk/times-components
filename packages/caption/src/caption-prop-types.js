@@ -16,7 +16,7 @@ export const propTypes = {
 
 export const defaultProps = {
   children: null,
-  credits: null,
+  credits: "",
   style: {},
-  text: null
+  text: ""
 };
