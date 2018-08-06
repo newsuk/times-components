@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     ...sharedStyles.button,
     width: 160
   },
-  textStyle: {
-    ...sharedStyles.textStyle,
+  text: {
+    ...sharedStyles.text,
     paddingTop: 1
   }
 });

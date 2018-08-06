@@ -10,7 +10,7 @@ const styles = {
     minWidth: 100,
     width: "100%"
   },
-  textStyle: {
+  text: {
     color: "#FFF",
     fontFamily: fonts.supporting,
     fontSize: fontSizes.button,

@@ -7,6 +7,7 @@ import styles from "./styles";
 
 const Button = ({ onPress, style, title }) => {
   const transformedTitle = transformTitle(title);
+
   return (
     <TouchableHighlight
       accessibilityComponentType="button"
@@ -18,7 +19,7 @@ const Button = ({ onPress, style, title }) => {
       style={[styles.button, style]}
       underlayColor={colours.functional.actionPressed}
     >
-      <Text style={styles.textStyle} title={transformedTitle}>
+      <Text style={styles.text} title={transformedTitle}>
         {transformedTitle}
       </Text>
     </TouchableHighlight>

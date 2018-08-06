@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 1.0,
     shadowRadius: 5
   },
-  textStyle: {
+  text: {
     color: "#FFFFFF",
     fontFamily: fonts.supporting,
     fontSize: fontSizes.button,
