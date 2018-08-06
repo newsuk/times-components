@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
