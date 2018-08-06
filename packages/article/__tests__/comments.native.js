@@ -14,17 +14,13 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
 const findViewByText = (testInstance, text) =>
-  testInstance.root.find(node => {
-    if (
+  testInstance.root.find(
+    node =>
       typeof node.type === "string" &&
       node.type.includes("Text") &&
-      node.children.length > 0 &&
+      node.children.length === 1 &&
       node.children[0] === text
-    ) {
-      return true;
-    }
-    return false;
-  });
+  );
 
 const omitKeys = new Set([
   "data",
@@ -69,15 +65,15 @@ export default () => {
     const testInstance = TestRenderer.create(
       <Article
         adConfig={adConfig}
-        analyticsStream={() => {}}
+        analyticsStream={() => { }}
         article={article}
-        onAuthorPress={() => {}}
-        onCommentGuidelinesPress={() => {}}
-        onCommentsPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
-        onVideoPress={() => {}}
+        onAuthorPress={() => { }}
+        onCommentGuidelinesPress={() => { }}
+        onCommentsPress={() => { }}
+        onLinkPress={() => { }}
+        onRelatedArticlePress={() => { }}
+        onTopicPress={() => { }}
+        onVideoPress={() => { }}
       />
     );
 
