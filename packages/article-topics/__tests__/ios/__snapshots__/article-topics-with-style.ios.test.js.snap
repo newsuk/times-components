@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. group of topics 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "center",
+      "marginBottom": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginRight": 10,
+        "marginTop": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRadius": 2,
+            "borderWidth": 1,
+            "paddingBottom": 12,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+            "paddingTop": 12,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "paddingTop": 5,
+            }
+          }
+        >
+          Football
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

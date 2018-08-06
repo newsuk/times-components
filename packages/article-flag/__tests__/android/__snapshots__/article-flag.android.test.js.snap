@@ -1,29 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. new article flag 1`] = `
-<ArticleFlag
-  color="#E34605"
-  title="new"
-/>
+exports[`1. article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="black"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="No Colour Flag"
+  >
+    no colour
+  </Text>
+</View>
 `;
 
-exports[`2. updated article flag 1`] = `
-<ArticleFlag
-  color="#3C81BE"
-  title="updated"
-/>
+exports[`2. red article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="red"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="Coloured Red Flag"
+  >
+    coloured red
+  </Text>
+</View>
 `;
 
-exports[`3. exclusive article flag 1`] = `
-<ArticleFlag
-  color="#C51D24"
-  title="exclusive"
-/>
+exports[`3. new article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#E34605"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="new Flag"
+  >
+    new
+  </Text>
+</View>
 `;
 
-exports[`4. sponsored article flag 1`] = `
-<ArticleFlag
-  color="#4D4D4D"
-  title="sponsored"
-/>
+exports[`4. updated article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#3C81BE"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="updated Flag"
+  >
+    updated
+  </Text>
+</View>
+`;
+
+exports[`5. exclusive article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#C51D24"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="exclusive Flag"
+  >
+    exclusive
+  </Text>
+</View>
+`;
+
+exports[`6. sponsored article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#4D4D4D"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="sponsored Flag"
+  >
+    sponsored
+  </Text>
+</View>
 `;

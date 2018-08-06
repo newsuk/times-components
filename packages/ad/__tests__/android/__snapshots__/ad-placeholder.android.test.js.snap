@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`advert placeholder 1`] = `
-<Component>
-  <Component>
-    <Component>
+<View>
+  <View>
+    <View>
       <Watermark
         height={300}
         viewBox="-630 120 1200 50"
         width={970}
       />
-    </Component>
+    </View>
     <Text>
       ADVERTISEMENT
     </Text>
-  </Component>
-</Component>
+  </View>
+</View>
 `;

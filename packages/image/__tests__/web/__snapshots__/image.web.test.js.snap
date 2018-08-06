@@ -1,200 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. default layout 1`] = `
-<View>
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
+<div>
+  <div>
     <img
       alt=""
       src="http://example.com/image.jpg"
-      style={
-        Object {
-          "display": "block",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
-        }
-      }
     />
-    <Placeholder
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "zIndex": 0,
-        }
-      }
-    />
+    <div>
+      <Gradient
+        degrees={264}
+      />
+    </div>
   </div>
-</View>
+</div>
 `;
 
 exports[`2. default layout without uri 1`] = `
-<View>
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
+<div>
+  <div>
     <img
       alt=""
       src=""
-      style={
-        Object {
-          "display": "block",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
-        }
-      }
     />
-    <Placeholder
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "zIndex": 0,
-        }
-      }
-    />
-  </div>
-</View>
-`;
-
-exports[`3. should accept styling prop 1`] = `
-<View
-  style={
-    Object {
-      "width": 100,
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
-    <img
-      alt=""
-      src="http://example.com/image.jpg"
-      style={
-        Object {
-          "display": "block",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
-        }
-      }
-    />
-    <Placeholder
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "zIndex": 0,
-        }
-      }
-    />
-  </div>
-</View>
-`;
-
-exports[`4. loading image when width set 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <Gradient
-    degrees={264}
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        }
-      }
-    >
-      <T
-        width={300}
+    <div>
+      <Gradient
+        degrees={264}
       />
-    </View>
-  </Gradient>
-</View>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`modal props pass through to image 1`] = `
-<View>
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
+exports[`3. handle layout change 1`] = `
+<div>
+  <div>
     <img
       alt=""
       src="http://example.com/image.jpg"
-      style={
-        Object {
-          "display": "block",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
-        }
-      }
     />
-    <Placeholder
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "zIndex": 0,
-        }
-      }
-    />
+    <div>
+      <Gradient
+        degrees={264}
+      >
+        <div>
+          <Svg
+            height={164.46700507614213}
+            version="1.1"
+            viewBox="145 50 108 120"
+            width={164.46700507614213}
+          >
+            <G
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <Path
+                d="6a6c07166e9c40e4f62e57af2b507822"
+                fill="#FFFFFF"
+              />
+            </G>
+          </Svg>
+        </div>
+      </Gradient>
+    </div>
   </div>
-</View>
+</div>
 `;

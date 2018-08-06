@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. group of topics 1`] = `
+<style>
+{
+  "IS1": {
+    "textDecoration": "none",
+  },
+  "S1": {
+    "color": "rgba(105,105,105,1)",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "5px",
+  },
+  "S2": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "12px",
+    "padding-left": "15px",
+    "padding-right": "15px",
+    "padding-top": "12px",
+  },
+  "S3": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-right": "10px",
+    "margin-top": "10px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "-ms-flex-direction": "row",
+    "-ms-flex-pack": "center",
+    "-ms-flex-wrap": "wrap",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-lines": "multiple",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-box-pack": "center",
+    "-webkit-flex-direction": "row",
+    "-webkit-flex-wrap": "wrap",
+    "-webkit-justify-content": "center",
+    "flex-direction": "row",
+    "flex-wrap": "wrap",
+    "justify-content": "center",
+    "margin-bottom": "10px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="S4"
+>
+  <div
+    className="S3"
+  >
+    <a
+      className="IS1"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="S1"
+        >
+          Football
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

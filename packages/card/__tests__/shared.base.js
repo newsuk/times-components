@@ -1,6 +1,5 @@
 import React from "react";
 import { Text } from "react-native";
-import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
@@ -13,7 +12,7 @@ const props = {
   showImage: true
 };
 
-export default renderMethod => {
+export default (renderMethod, platformTests) => {
   // magic to stop the React Native Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 
@@ -138,78 +137,7 @@ export default renderMethod => {
         expect(output).toMatchSnapshot();
       }
     },
-    {
-      name: "card should not re-render when imageRatio prop is changed",
-      test: () => {
-        const output = shallow(
-          <Card {...props}>
-            <Text>Do not re-render me</Text>
-          </Card>
-        );
-
-        expect(output).toMatchSnapshot();
-
-        output.setProps({
-          imageRatio: 16 / 9
-        });
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "card should re-render when image uri changes",
-      test: () => {
-        const output = shallow(
-          <Card {...props}>
-            <Text>Some text</Text>
-          </Card>
-        );
-
-        expect(output).toMatchSnapshot();
-
-        output.setProps({
-          image: { uri: "http://foo" }
-        });
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "card should re-render when image size changes",
-      test: () => {
-        const output = shallow(
-          <Card {...props}>
-            <Text>Some content</Text>
-          </Card>
-        );
-
-        expect(output).toMatchSnapshot();
-
-        output.setProps({
-          imageSize: null
-        });
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "card should re-render when loading state changes",
-      test: () => {
-        const output = shallow(
-          <Card {...props} isLoading>
-            <Text>Re-render me</Text>
-          </Card>
-        );
-
-        expect(output).toMatchSnapshot();
-
-        output.setProps({
-          isLoading: false
-        });
-
-        expect(output).toMatchSnapshot();
-      }
-    }
+    ...platformTests
   ];
 
   iterator(tests);

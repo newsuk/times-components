@@ -1,122 +1,217 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. default layout 1`] = `
-<Component
+<View
   aspectRatio={1.5}
 >
-  <ImageBackground
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?resize=1440",
+        }
       }
-    }
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <Placeholder />
-  </ImageBackground>
-</Component>
-`;
-
-exports[`1. prepend https schema 1`] = `
-<Component
-  aspectRatio={1.5}
->
-  <ImageBackground
-    source={
-      Object {
-        "uri": "https://example.com/image.jpg?resize=1440",
-      }
-    }
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <Placeholder />
-  </ImageBackground>
-</Component>
+    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`2. default layout without uri 1`] = `
-<Component
+<View
   aspectRatio={1.5}
 >
-  <ImageBackground
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <Placeholder />
-  </ImageBackground>
-</Component>
+  <View>
+    <Image />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+    </View>
+  </View>
+</View>
 `;
 
-exports[`3. should accept styling prop 1`] = `
-<Component
+exports[`3. handle layout change 1`] = `
+<View
   aspectRatio={1.5}
-  style={
-    Object {
-      "width": 100,
-    }
-  }
 >
-  <ImageBackground
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
-      }
-    }
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <Placeholder />
-  </ImageBackground>
-</Component>
-`;
-
-exports[`4. loading image when width set 1`] = `
-<Component
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <Gradient
-    degrees={264}
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <Component
-      style={
+  <View>
+    <Image
+      source={
         Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
+          "uri": "http://example.com/image.jpg?resize=1440",
         }
       }
+    />
+    <View>
+      <Gradient
+        degrees={264}
+      >
+        <View>
+          <Svg
+            height={164.46700507614213}
+            version="1.1"
+            viewBox="145 50 108 120"
+            width={164.46700507614213}
+          >
+            <G
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <Path
+                d="6a6c07166e9c40e4f62e57af2b507822"
+                fill="#FFFFFF"
+              />
+            </G>
+          </Svg>
+        </View>
+      </Gradient>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. modal image 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    visible={false}
+  >
+    <View>
+      <View
+        pointerEvents="box-only"
+      >
+        <Svg
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+        >
+          <G
+            fill="rgba(255, 255, 255, 0.8)"
+          >
+            <Path
+              d="b930778b5d8aea86ea540d7477cdc304"
+            />
+            <Path
+              d="f26c9aa2fd65f549f7f5798bc90c1b94"
+              fill="none"
+            />
+          </G>
+        </Svg>
+      </View>
+      <View>
+        <View>
+          <View>
+            <View
+              aspectRatio={1.5}
+            >
+              <View>
+                <Image
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg?resize=1440",
+                    }
+                  }
+                />
+                <View>
+                  <Gradient
+                    degrees={264}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
     >
-      <T
-        width={300}
+      <View>
+        <Image
+          source={
+            Object {
+              "uri": "http://example.com/image.jpg?resize=1440",
+            }
+          }
+        />
+        <View>
+          <Gradient
+            degrees={264}
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. prepend https schema 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "https://example.com/image.jpg?resize=1440",
+        }
+      }
+    />
+    <View>
+      <Gradient
+        degrees={264}
       />
-    </Component>
-  </Gradient>
-</Component>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. handle onload event 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?resize=1440",
+        }
+      }
+    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. handle onload event 2`] = `
+<View
+  aspectRatio={1.5}
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?resize=1440",
+        }
+      }
+    />
+  </View>
+</View>
 `;

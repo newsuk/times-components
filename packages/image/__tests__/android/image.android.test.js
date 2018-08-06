@@ -1,5 +1,3 @@
-import shared from "../shared";
-import sharedNative from "../shared-native";
+import shared from "../shared.native";
 
 shared();
-sharedNative();
