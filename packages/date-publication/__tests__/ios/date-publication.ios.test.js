@@ -1,16 +1,14 @@
 import rndiMock from "react-native-device-info";
 import shared from "../shared";
 
-describe("Date Publication test on iOS when the user has the same time zone as London time zone", () => {
-  beforeEach(() => {
-    rndiMock.setMockTimezone("Europe/London");
-  });
-  shared();
-});
+const londonTimezone = () => {
+  rndiMock.setMockTimezone("Europe/London");
+};
 
-describe("Date Publication test on iOS when the user has a different time zone than London time zone", () => {
-  beforeEach(() => {
-    rndiMock.setMockTimezone("Europe/Kiev");
-  });
-  shared();
-});
+const nonLondonTimezone = () => {
+  rndiMock.setMockTimezone("Europe/Kiev");
+};
+
+const dateBST = "2017-01-01T14:32:00.000Z";
+
+shared(dateBST, { londonTimezone, nonLondonTimezone });

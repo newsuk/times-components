@@ -18,8 +18,8 @@ const nonLondonTimezone = () => {
   };
 };
 
-const dateBST = "2017-01-01T14:32:00.000Z";
+const dateGMT = "2017-07-01T14:32:00.000Z";
 
-shared(dateBST, { londonTimezone, nonLondonTimezone });
+shared(dateGMT, { londonTimezone, nonLondonTimezone });
 
 global.Intl = realIntl;
