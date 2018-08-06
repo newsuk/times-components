@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
@@ -9,20 +8,7 @@ import {
   LeadAsset,
   LeadAssetCaptionContainer
 } from "../styles/article-body/responsive";
-
-const AspectRatioContainer = ({ aspectRatio, children }) => {
-  const [ratioWidth, ratioHeight] = aspectRatio.split(":");
-  const aspectRatioPercent = ratioHeight / ratioWidth * 100;
-  return (
-    <View
-      style={{ position: "relative", paddingBottom: `${aspectRatioPercent}%` }}
-    >
-      <View style={{ position: "absolute", width: "100%", height: "100%" }}>
-        {children}
-      </View>
-    </View>
-  );
-};
+import AspectRatioContainer from "../media-aspect-ratio";
 
 AspectRatioContainer.propTypes = {
   aspectRatio: PropTypes.string.isRequired,

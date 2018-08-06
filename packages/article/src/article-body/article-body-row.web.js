@@ -7,7 +7,7 @@ import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-import AspectRatioContainer from "./media-aspect-ratio";
+import AspectRatioContainer from "../media-aspect-ratio";
 import InsetCaption from "./inset-caption";
 import {
   PrimaryImg,
