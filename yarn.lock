@@ -897,6 +897,14 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
+"@times-components/button@2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@times-components/button/-/button-2.0.10.tgz#341a8165c066f20a49e64ffca345bae445d686a6"
+  dependencies:
+    "@times-components/styleguide" "2.1.7"
+    "@times-components/utils" "2.1.6"
+    prop-types "15.6.0"
+
 "@times-components/fructose@3.8.4":
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.8.4.tgz#a4e49b43cf6d56b643d2417bc55d6e91eb420c29"

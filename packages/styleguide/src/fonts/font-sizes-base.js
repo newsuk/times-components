@@ -8,6 +8,7 @@ const fontSizes = {
   cardHeadline: 27,
   cardMeta: 13,
   cardMetaMobile: 12,
+  commentsHeadline: 27,
   credits: 9,
   headline: 30,
   infoSubText: 15,

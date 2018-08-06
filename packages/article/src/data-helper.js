@@ -36,6 +36,12 @@ const prepareDataForListView = articleData => {
         relatedArticlesLayout: articleData.relatedArticlesLayout
       }
     : null;
+  const commentsData = {
+    articleId: articleData.id,
+    commentCount: articleData.commentCount,
+    commentsEnabled: articleData.commentsEnabled,
+    url: articleData.url
+  };
 
   const data = [
     { type: "header", data: articleHeaderData },
@@ -59,7 +65,10 @@ const prepareDataForListView = articleData => {
 
   return prepend(
     { type: "leadAsset", data: leadAsset },
-    append({ type: "relatedArticles", data: relatedArticlesData }, data)
+    append(
+      { type: "comments", data: commentsData },
+      append({ type: "relatedArticles", data: relatedArticlesData }, data)
+    )
   );
 };
 

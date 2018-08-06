@@ -45,6 +45,8 @@ export const snapshotTests = renderComponent => [
           adConfig={adConfig}
           analyticsStream={() => {}}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -135,6 +137,8 @@ export const snapshotTests = renderComponent => [
           analyticsStream={() => {}}
           article={article}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -161,6 +165,8 @@ export const snapshotTests = renderComponent => [
             })
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -183,6 +189,8 @@ export const snapshotTests = renderComponent => [
             ...emptyArticle
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -212,6 +220,8 @@ export const snapshotTests = renderComponent => [
             ]
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -247,6 +257,8 @@ export const snapshotTests = renderComponent => [
             ]
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -282,6 +294,8 @@ export const snapshotTests = renderComponent => [
             ]
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -302,6 +316,8 @@ export const snapshotTests = renderComponent => [
           article={articleFixture()}
           isLoading
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -345,6 +361,8 @@ export const snapshotTests = renderComponent => [
                 byline
               })}
               onAuthorPress={() => {}}
+              onCommentGuidelinesPress={() => {}}
+              onCommentsPress={() => {}}
               onLinkPress={() => {}}
               onRelatedArticlePress={() => {}}
               onTopicPress={() => {}}
@@ -376,6 +394,8 @@ const negativeTests = [
             flags: null
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -397,6 +417,8 @@ const negativeTests = [
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, byline: null })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -418,6 +440,8 @@ const negativeTests = [
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, label: null })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
@@ -442,6 +466,8 @@ const negativeTests = [
             standfirst: null
           })}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}

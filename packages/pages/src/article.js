@@ -11,6 +11,8 @@ const ArticleDetailsPage = ({
   platformAdConfig,
   onArticlePress,
   onAuthorPress,
+  onCommentsPress,
+  onCommentGuidelinesPress,
   onVideoPress,
   onLinkPress,
   onTopicPress
@@ -28,6 +30,10 @@ const ArticleDetailsPage = ({
           error={error}
           isLoading={isLoading}
           onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
+          onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
+          onCommentsPress={(event, extras) =>
+            onCommentsPress(extras.articleId, extras.url)
+          }
           onLinkPress={(event, linkInfo) => {
             if (linkInfo.type === "article") {
               onArticlePress(linkInfo.url);
@@ -52,6 +58,8 @@ ArticleDetailsPage.propTypes = {
   platformAdConfig: PropTypes.shape({}).isRequired,
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
+  onCommentsPress: PropTypes.func.isRequired,
+  onCommentGuidelinesPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
