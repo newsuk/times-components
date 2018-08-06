@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@2.0.9...@times-components/storybook@2.1.0) (2018-08-06)
+
+
+### Features
+
+* add strict wrapper ([#1170](https://github.com/newsuk/times-components/issues/1170)) ([8227f30](https://github.com/newsuk/times-components/commit/8227f30))
+
+
+
+
 <a name="2.0.9"></a>
 ## [2.0.9](https://github.com/newsuk/times-components/compare/@times-components/storybook@2.0.8...@times-components/storybook@2.0.9) (2018-08-02)
 
