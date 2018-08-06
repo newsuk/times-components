@@ -1,90 +1,38 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
-
-const { style: TextPropTypesStyle } = Text.propTypes;
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
-const lineHeightStyle = Platform.select({
-  ios: {
-    lineHeight: 16
-  },
-  android: {
-    lineHeight: 20
-  },
-  web: {
-    lineHeight: 17
-  }
-});
-
-const defaultStyle = StyleSheet.create({
-  container: {
-    paddingTop: spacing(2)
-  },
-  text: {
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.caption,
-    color: colours.functional.secondary,
-    ...lineHeightStyle
-  },
-  credits: {
-    fontSize: fontSizes.credits,
-    color: colours.functional.primary,
-    letterSpacing: 1,
-    fontWeight: "400",
-    ...lineHeightStyle
-  }
-});
+import { Text, View } from "react-native";
+import { defaultProps, propTypes } from "./caption-prop-types";
+import styles from "./styles";
 
 const renderCredits = (style, credits) => {
   if (!credits || credits === "") {
     return null;
   }
   return (
-    <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
+    <Text style={[styles.text, styles.credits, style.text]}>
       {credits.toUpperCase()}
     </Text>
   );
 };
+
 const renderText = (style, text) => {
   if (!text || text === "") {
     return null;
   }
 
-  return <Text style={[defaultStyle.text, style.text]}>{text}</Text>;
+  return <Text style={[styles.text, style.text]}>{text}</Text>;
 };
 
-const Caption = ({ text, credits, style, children }) => (
+const Caption = ({ children, credits, style, text }) => (
   <View>
     {children}
-    <View style={[defaultStyle.container, style.container]}>
+    <View style={[styles.container, style.container]}>
       {renderText(style, text)}
       {renderCredits(style, credits)}
     </View>
   </View>
 );
 
-Caption.defaultProps = {
-  text: null,
-  credits: null,
-  style: {},
-  children: null
-};
-
-Caption.propTypes = {
-  text: PropTypes.string,
-  credits: PropTypes.string,
-  style: PropTypes.shape({
-    text: TextPropTypesStyle,
-    container: ViewPropTypesStyle
-  }),
-  children: PropTypes.element
-};
+Caption.propTypes = propTypes;
+Caption.defaultProps = defaultProps;
 
 export default Caption;

@@ -1,4 +1,8 @@
+import React, { StrictMode } from "react";
 import { Platform } from "react-native";
+
+// eslint-disable-next-line react/prop-types
+const StrictWrapper = ({ children }) => <StrictMode>{children}</StrictMode>;
 
 const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (!child) {
@@ -8,7 +12,9 @@ const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (child.type === "story") {
     const args = [knobs, actions];
 
-    builder.add(child.name, () => child.component(...args));
+    builder.add(child.name, () => (
+      <StrictWrapper>{child.component(...args)}</StrictWrapper>
+    ));
   }
 
   if (child.type === "decorator") {

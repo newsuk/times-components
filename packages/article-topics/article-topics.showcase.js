@@ -1,34 +1,24 @@
 import React from "react";
-import { View } from "react-native";
-import { withTrackingContext } from "@times-components/tracking";
-import storybookReporter from "@times-components/tealium-utils";
-import ArticleTopic from "./src/article-topic";
 import ArticleTopics from "./src/article-topics";
 import topicsData from "./fixtures/topics";
 
-const TrackingProvider = withTrackingContext(View, {
-  trackingObjectName: "TopicsRenderStory"
-});
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
 
 export default {
   name: "Primitives/Article Topics",
   children: [
     {
-      type: "decorator",
-      decorator: c => (
-        <TrackingProvider analyticsStream={storybookReporter}>
-          {c()}
-        </TrackingProvider>
-      )
-    },
-    {
       type: "story",
       name: "Group of Topics",
-      component: () => (
+      component: (_, { decorateAction }) => (
         <ArticleTopics
-          onPress={e => {
-            e.preventDefault();
-          }}
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
           topics={topicsData}
         />
       )
@@ -36,16 +26,11 @@ export default {
     {
       type: "story",
       name: "Single Topic",
-      component: () => (
-        <View style={{ flexDirection: "row", justifyContent: "center" }}>
-          <ArticleTopic
-            id={topicsData[0].id}
-            name={topicsData[0].name}
-            onPress={e => {
-              e.preventDefault();
-            }}
-          />
-        </View>
+      component: (_, { decorateAction }) => (
+        <ArticleTopics
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          topics={[topicsData[0]]}
+        />
       )
     }
   ]
