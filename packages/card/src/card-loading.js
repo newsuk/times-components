@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
+import Image from "@times-components/image";
 import { sharedPropTypes, sharedDefaultProps } from "./card-shared-prop-types";
 import styles from "./styles";
 
