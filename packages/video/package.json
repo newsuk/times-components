@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@times-components/error-view": "2.0.10",
-    "@times-components/image": "3.0.11",
+    "@times-components/image": "3.0.12",
     "@times-components/styleguide": "2.1.7",
     "@times-components/utils": "2.1.6",
     "prop-types": "15.6.0",

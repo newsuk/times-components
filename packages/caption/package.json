@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/image": "3.0.11",
+    "@times-components/image": "3.0.12",
     "@times-components/jest-configurator": "2.0.6",
     "@times-components/jest-serializer": "2.0.6",
     "@times-components/storybook": "2.0.9",
