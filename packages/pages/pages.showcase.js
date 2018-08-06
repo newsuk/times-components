@@ -29,10 +29,12 @@ export default {
             articleId={articleId}
             onArticlePress={() => {}}
             onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
             onLinkPress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
-            platformAdConfig={{}}
+            platformAdConfig={{ sectionName: "news" }}
           />
         );
       }

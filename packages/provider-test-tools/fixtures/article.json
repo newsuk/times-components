@@ -1155,7 +1155,9 @@
           "__typename": "Article"
         }
       ],
-      "__typename": "Article"
+      "__typename": "Article",
+      "commentsEnabled": true,
+      "commentCount": 65
     },
     "isLoading": "false"
   }

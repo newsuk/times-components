@@ -203,6 +203,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
         template="DEFAULT"
       />
     </View>
+    <View />
   </View>
 </RCTScrollView>
 `;
@@ -266,6 +267,14 @@ exports[`3. an article with a video as the lead asset 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -305,6 +314,14 @@ exports[`4. an article with no lead asset 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -344,6 +361,14 @@ exports[`5. an article with ads 1`] = `
       />
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -395,6 +420,14 @@ exports[`6. a secondary image 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -446,6 +479,14 @@ exports[`7. an inline image 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -495,6 +536,14 @@ exports[`9. an article with updated byline 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -557,6 +606,14 @@ exports[`9. an article with updated byline 2`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -596,6 +653,14 @@ exports[`10. an article that moves to a loading state 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
   </View>
 </RCTScrollView>
 `;

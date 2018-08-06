@@ -14,6 +14,8 @@ import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
+jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
+
 const omitKeys = new Set([
   "data",
   "disableVirtualization",
@@ -73,6 +75,8 @@ export default () => {
                 })}
                 isLoading={isLoading}
                 onAuthorPress={() => {}}
+                onCommentGuidelinesPress={() => {}}
+                onCommentsPress={() => {}}
                 onLinkPress={() => {}}
                 onRelatedArticlePress={() => {}}
                 onTopicPress={() => {}}
@@ -122,6 +126,8 @@ export default () => {
               ]
             })}
             onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
             onLinkPress={onLinkPress}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}

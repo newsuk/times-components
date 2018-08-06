@@ -13,6 +13,7 @@ import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import ArticleComments from "./article-comments/article-comments";
 import styles from "./styles/article-body";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
@@ -25,6 +26,8 @@ const listViewScrollRenderAheadDistance = 10;
 const renderRow = analyticsStream => (
   rowData,
   onAuthorPress,
+  onCommentsPress,
+  onCommentGuidelinesPress,
   onLinkPress,
   onRelatedArticlePress,
   onTopicPress,
@@ -99,6 +102,19 @@ const renderRow = analyticsStream => (
         <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
       );
     }
+
+    case "comments": {
+      return (
+        <ArticleComments
+          articleId={rowData.data.articleId}
+          commentCount={rowData.data.commentCount}
+          commentsEnabled={rowData.data.commentsEnabled}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          url={rowData.data.url}
+        />
+      );
+    }
   }
 };
 
@@ -140,6 +156,8 @@ class ArticlePage extends Component {
         data={this.state.dataSource}
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
+        onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
+        onCommentsPress={this.props.onCommentsPress}
         onLinkPress={this.props.onLinkPress}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onTopicPress={this.props.onTopicPress}
@@ -159,6 +177,8 @@ class ArticlePage extends Component {
 ArticlePage.propTypes = {
   ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
+  onCommentsPress: PropTypes.func.isRequired,
+  onCommentGuidelinesPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
