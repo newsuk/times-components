@@ -13,12 +13,11 @@ const ArticleComments = ({
   onCommentGuidelinesPress,
   url
 }) => {
-  const handlePluralSuffix = count => (count === 1 ? "" : "s");
-  const CommentsView = (
+  const renderComments = () => (
     <View style={styles.container}>
-      <Text style={styles.headline}>{`${
-        commentCount
-      } comment${handlePluralSuffix(commentCount)}`}</Text>
+      <Text style={styles.headline}>{`${commentCount} ${
+        commentCount === 1 ? "comment" : "comments"
+      }`}</Text>
       <Text style={styles.supporting}>
         Comments are subject to our community guidelines, which can be
         viewed&nbsp;
@@ -33,7 +32,7 @@ const ArticleComments = ({
       />
     </View>
   );
-  const CommentsDisabledView = (
+  const renderDisabledComments = () => (
     <View style={styles.container}>
       <Text style={styles.headline}>
         Comments for this article have been turned off
@@ -46,7 +45,7 @@ const ArticleComments = ({
       </Text>
     </View>
   );
-  return commentsEnabled ? CommentsView : CommentsDisabledView;
+  return commentsEnabled ? renderComments() : renderDisabledComments();
 };
 
 ArticleComments.propTypes = {
