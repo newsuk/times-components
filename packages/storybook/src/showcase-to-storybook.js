@@ -1,6 +1,9 @@
 import React, { StrictMode } from "react";
 import { Platform } from "react-native";
 
+// eslint-disable-next-line react/prop-types
+const StrictWrapper = ({ children }) => <StrictMode>{children}</StrictMode>;
+
 const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (!child) {
     return;
@@ -10,7 +13,7 @@ const addStories = (builder, knobs, actions, [child, ...children]) => {
     const args = [knobs, actions];
 
     builder.add(child.name, () => (
-      <StrictMode>{child.component(...args)}</StrictMode>
+      <StrictWrapper>{child.component(...args)}</StrictWrapper>
     ));
   }
 
