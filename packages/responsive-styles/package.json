@@ -7,8 +7,8 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "@times-components/jest-configurator": "2.1.0",
     "@times-components/storybook": "2.2.0",

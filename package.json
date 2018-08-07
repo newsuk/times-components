@@ -24,7 +24,7 @@
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
     "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls",
     "prelint": "eslint . && prettier --list-different '**/*.js' && yarn deps:lint",
-    "lint": "lerna run lint --since",
+    "lint": "lerna run lint --since -- -- --ci",
     "deps:lint": "lerna run cli -- -- --hint --bail -s majorityProgressive",
     "deps:fix": "lerna run cli -- -- --fix -s majorityProgressive",
     "deps:list": "lerna run cli -- -- --list -s majorityProgressive",
