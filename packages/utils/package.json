@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -8,7 +8,8 @@
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "transpile": "babel src -d dist && cp src/schema.json dist",
@@ -32,7 +33,7 @@
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.0.6",
+    "@times-components/jest-configurator": "2.1.0",
     "@times-components/webpack-configurator": "2.0.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -41,6 +42,7 @@
     "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
+    "depcheck": "0.6.9",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "mkdirp": "0.5.1",
@@ -51,13 +53,9 @@
   },
   "dependencies": {
     "apollo-cache-inmemory": "1.1.10",
-    "apollo-client": "2.3.2",
-    "apollo-link": "1.2.2",
     "graphql": "0.13.1",
     "lodash.omitby": "4.6.0",
-    "prop-types": "15.6.0",
-    "react": "16.4.1",
-    "react-apollo": "2.1.4"
+    "react-native": "0.55.4"
   },
   "peerDependencies": {
     "react": ">=16.2",
