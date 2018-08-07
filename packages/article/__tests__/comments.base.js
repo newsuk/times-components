@@ -5,12 +5,26 @@ import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
+const emptyArticle = {
+  byline: null,
+  flags: null,
+  label: null,
+  leadAsset: null,
+  relatedArticles: null,
+  relatedArticlesLayout: null,
+  standfirst: null,
+  topics: null
+};
+
 export default () =>
   iterator([
     {
       name: "a full article with enabled comments",
       test() {
-        const article = articleFixture(testFixture);
+        const article = articleFixture({
+          ...testFixture,
+          ...emptyArticle
+        });
 
         const testInstance = TestRenderer.create(
           <Article
@@ -35,6 +49,7 @@ export default () =>
       test() {
         const article = articleFixture({
           ...testFixture,
+          ...emptyArticle,
           commentsEnabled: false
         });
 

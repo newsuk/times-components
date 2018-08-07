@@ -6,13 +6,6 @@ exports[`1. a full article with enabled comments 1`] = `
     <View
       style={null}
     >
-      <View>
-        <ModalImage />
-      </View>
-    </View>
-    <View
-      style={null}
-    >
       <View
         style={
           Array [
@@ -23,16 +16,6 @@ exports[`1. a full article with enabled comments 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
         <Text
           style={
             Object {
@@ -47,40 +30,6 @@ exports[`1. a full article with enabled comments 1`] = `
         >
           Some Headline
         </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 20,
-                "lineHeight": 29,
-                "marginTop": -7,
-                "paddingBottom": 12,
-              },
-            ]
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 11,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
-        </View>
       </View>
     </View>
     <View
@@ -104,30 +53,6 @@ exports[`1. a full article with enabled comments 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-                "paddingTop": 5,
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </Text>
-        </View>
         <View
           style={
             Object {
@@ -184,25 +109,7 @@ exports[`1. a full article with enabled comments 1`] = `
     </View>
     <View
       style={null}
-    >
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <RelatedArticles />
-    </View>
+    />
     <View
       style={null}
     >
@@ -314,13 +221,6 @@ exports[`2. a full article with disabled comments 1`] = `
     <View
       style={null}
     >
-      <View>
-        <ModalImage />
-      </View>
-    </View>
-    <View
-      style={null}
-    >
       <View
         style={
           Array [
@@ -331,16 +231,6 @@ exports[`2. a full article with disabled comments 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
         <Text
           style={
             Object {
@@ -355,40 +245,6 @@ exports[`2. a full article with disabled comments 1`] = `
         >
           Some Headline
         </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 20,
-                "lineHeight": 29,
-                "marginTop": -7,
-                "paddingBottom": 12,
-              },
-            ]
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 11,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
-        </View>
       </View>
     </View>
     <View
@@ -412,30 +268,6 @@ exports[`2. a full article with disabled comments 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-                "paddingTop": 5,
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </Text>
-        </View>
         <View
           style={
             Object {
@@ -492,25 +324,7 @@ exports[`2. a full article with disabled comments 1`] = `
     </View>
     <View
       style={null}
-    >
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <RelatedArticles />
-    </View>
+    />
     <View
       style={null}
     >
