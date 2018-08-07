@@ -7,8 +7,9 @@ consistent loading state for all of the content it is passed. Consumers of card
 can also reorder the image and content by reversing the layout order,
 effectively swapping over the image and text.
 
-Rendering an image in card is optional, but if an image is rendered, card will
-manage the image's url by appending any image resize parameter to it.
+Rendering an image with the card component is optional, but if an image is
+rendered, card will manage the image's url by appending any image resize
+parameter to it.
 
 ## Contributing
 
