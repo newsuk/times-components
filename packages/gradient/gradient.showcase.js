@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
 import Gradient from "./src/gradient";
 
@@ -20,14 +20,6 @@ const Component = ({ children, ...props }) => (
     <Gradient {...props}>{children}</Gradient>
   </View>
 );
-
-Component.defaultProps = {
-  children: null
-};
-
-Component.propTypes = {
-  children: PropTypes.element
-};
 
 export default {
   name: "Primitives/Gradient",
