@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium-utils",
-  "version": "0.5.9",
+  "version": "0.6.0",
   "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",
@@ -41,7 +41,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/tealium": "1.4.9"
+    "@times-components/tealium": "1.5.0"
   },
   "peerDependencies": {
     "react": ">=16.2",

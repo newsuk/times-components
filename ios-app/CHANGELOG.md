@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.2.31...@times-components/ios-app@0.3.0) (2018-08-07)
+
+
+### Features
+
+* add depcheck and cleanup ([#1169](https://github.com/newsuk/times-components/issues/1169)) ([b5c058c](https://github.com/newsuk/times-components/commit/b5c058c))
+
+
+
+
 <a name="0.2.31"></a>
 ## [0.2.31](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.2.30...@times-components/ios-app@0.2.31) (2018-08-07)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/test-utils@0.2.6...@times-components/test-utils@0.3.0) (2018-08-07)
+
+
+### Features
+
+* add depcheck and cleanup ([#1169](https://github.com/newsuk/times-components/issues/1169)) ([b5c058c](https://github.com/newsuk/times-components/commit/b5c058c))
+
+
+
+
 <a name="0.2.6"></a>
 ## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/test-utils@0.2.5...@times-components/test-utils@0.2.6) (2018-08-02)
 

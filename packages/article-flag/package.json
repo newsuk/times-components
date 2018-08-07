@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "2.0.13",
+  "version": "2.1.0",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -37,10 +37,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.0.6",
-    "@times-components/jest-serializer": "2.0.6",
-    "@times-components/storybook": "2.1.0",
-    "@times-components/test-utils": "0.2.6",
+    "@times-components/jest-configurator": "2.1.0",
+    "@times-components/jest-serializer": "2.1.0",
+    "@times-components/storybook": "2.2.0",
+    "@times-components/test-utils": "0.3.0",
     "@times-components/webpack-configurator": "2.0.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -61,8 +61,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.0.11",
-    "@times-components/styleguide": "2.1.8",
+    "@times-components/icons": "2.1.0",
+    "@times-components/styleguide": "2.2.0",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

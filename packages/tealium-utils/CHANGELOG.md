@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.5.9...@times-components/tealium-utils@0.6.0) (2018-08-07)
+
+
+### Features
+
+* add depcheck and cleanup ([#1169](https://github.com/newsuk/times-components/issues/1169)) ([b5c058c](https://github.com/newsuk/times-components/commit/b5c058c))
+
+
+
+
 <a name="0.5.9"></a>
 ## [0.5.9](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.5.8...@times-components/tealium-utils@0.5.9) (2018-08-02)
 

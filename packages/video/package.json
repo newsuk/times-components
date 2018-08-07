@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "3.0.13",
+  "version": "3.1.0",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -49,10 +49,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.0.6",
-    "@times-components/jest-serializer": "2.0.6",
-    "@times-components/storybook": "2.1.0",
-    "@times-components/test-utils": "0.2.6",
+    "@times-components/jest-configurator": "2.1.0",
+    "@times-components/jest-serializer": "2.1.0",
+    "@times-components/storybook": "2.2.0",
+    "@times-components/test-utils": "0.3.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -74,9 +74,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/error-view": "2.0.11",
-    "@times-components/image": "3.0.13",
-    "@times-components/styleguide": "2.1.8",
+    "@times-components/error-view": "2.1.0",
+    "@times-components/image": "3.1.0",
+    "@times-components/styleguide": "2.2.0",
     "prop-types": "15.6.2",
     "svgs": "3.2.1"
   },

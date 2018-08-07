@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.24...@times-components/article@3.2.0) (2018-08-07)
+
+
+### Features
+
+* add depcheck and cleanup ([#1169](https://github.com/newsuk/times-components/issues/1169)) ([b5c058c](https://github.com/newsuk/times-components/commit/b5c058c))
+
+
+
+
 <a name="3.1.24"></a>
 ## [3.1.24](https://github.com/newsuk/times-components/compare/@times-components/article@3.1.23...@times-components/article@3.1.24) (2018-08-07)
 
