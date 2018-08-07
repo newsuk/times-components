@@ -1,5 +1,6 @@
+import { addSerializers, rnw } from "@times-components/jest-serializer";
 import shared from "../shared";
 
-describe("Error View test on web", () => {
-  shared();
-});
+addSerializers(expect, rnw());
+
+shared();
