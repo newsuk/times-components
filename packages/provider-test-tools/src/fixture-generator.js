@@ -86,7 +86,7 @@ const defaultArticleWithImagesList = fixtures => {
 };
 
 const defaultArticleNoImagesList = fixtures => {
-  const getFixture = prop => indx => fixtures[indx][prop];
+  const getFixture = prop => indx => fixtures[indx - 1][prop];
 
   return makeCustomArticles(10, {
     headline: getFixture("headline"),
