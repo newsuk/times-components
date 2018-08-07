@@ -1,4 +1,4 @@
-import tests from "../gestures.native.test";
+import shared from "../shared.native";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");
@@ -9,6 +9,4 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-describe("Gesture tests", () => {
-  tests();
-});
+shared();
