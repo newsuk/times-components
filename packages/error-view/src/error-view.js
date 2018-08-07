@@ -26,8 +26,8 @@ class ErrorView extends Component {
 
   render() {
     return this.props.children({
-      hasError: !!this.state.error,
       error: this.state.error,
+      hasError: !!this.state.error,
       onError: this.handleError
     });
   }
