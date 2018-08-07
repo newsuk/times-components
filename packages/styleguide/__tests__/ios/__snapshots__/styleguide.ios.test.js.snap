@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Animations a FadeIn animation wrapper component 1`] = `
+exports[`Animations should have a FadeIn animation wrapper component 1`] = `
 <View
   style={
     Object {
@@ -14,7 +14,7 @@ exports[`Animations a FadeIn animation wrapper component 1`] = `
 </View>
 `;
 
-exports[`Animations a FadeIn animation wrapper component 2`] = `
+exports[`Animations should have a FadeIn animation wrapper component 2`] = `
 <View
   style={
     Object {
