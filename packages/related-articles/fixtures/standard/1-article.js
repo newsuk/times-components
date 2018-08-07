@@ -112,7 +112,7 @@ const defaultUrl =
 export default (
   {
     crop169 = defaultCrop169,
-    headline = defaultHeadline,
+    shortHeadline = defaultHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -130,7 +130,7 @@ export default (
     relatedArticles: [
       {
         id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-        headline,
+        shortHeadline,
         section: "thedish",
         summary105,
         summary125,

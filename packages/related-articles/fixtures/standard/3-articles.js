@@ -511,7 +511,7 @@ export default (
     relatedArticles: [
       {
         id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
-        headline: firstHeadline,
+        shortHeadline: firstHeadline,
         section: "thedish",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -555,7 +555,7 @@ export default (
           }
         },
         label: "BAYEUX TAPESTRY",
-        headline: secondHeadline,
+        shortHeadline: secondHeadline,
         section: "sport",
         summary105: secondSummary105,
         summary125: secondSummary125,
@@ -592,7 +592,7 @@ export default (
           }
         },
         label: "BAYEUX TAPESTRY",
-        headline: thirdHeadline,
+        shortHeadline: thirdHeadline,
         section: "register",
         summary105: thirdSummary105,
         summary125: thirdSummary125,

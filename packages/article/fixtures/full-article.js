@@ -1192,7 +1192,7 @@ const defaultLeadAsset = {
 const defaultRelatedArticles = [
   {
     id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
-    headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+    shortHeadline: "Pratchett’s law of the jungle",
     byline: [
       {
         name: "inline",
@@ -1453,8 +1453,7 @@ const defaultRelatedArticles = [
   },
   {
     id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
-    headline:
-      "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+    shortHeadline: "Rise of centenarian drivers as elderly push on",
     byline: [
       {
         name: "inline",
@@ -1636,7 +1635,7 @@ const defaultRelatedArticles = [
   },
   {
     id: "cab431f6-39df-11e8-b5b4-b935584040f4",
-    headline: "YouTube ignored police pleas to remove threatening videos",
+    shortHeadline: "YouTube ignored police pleas",
     section: "news",
     byline: [
       {
