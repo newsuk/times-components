@@ -11,6 +11,113 @@ import articleListWithImagesFixture from "../fixtures/author-profile/article-lis
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
 import topicFixture from "../fixtures/topic-articles.json";
 
+const addProp = (obj, key, value) => {
+  if (value != null) {
+    return {
+      ...obj,
+      [key]: value
+    };
+  }
+
+  return obj;
+};
+
+const makeCustomArticles = (
+  count,
+  {
+    byline = () => {},
+    headline = () => {},
+    id = () => {},
+    label = () => {},
+    leadAsset = () => {},
+    longSummary = () => {},
+    publicationName = () => {},
+    publishedTime = () => {},
+    section = () => {},
+    shortSummary = () => {},
+    summary = () => {},
+    url = () => {}
+  }
+) => {
+  const articles = [];
+  // eslint-disable-next-line no-plusplus
+  for (let i = 1; i < count + 1; i++) {
+    const props = [
+      ["byline", byline(i)],
+      ["headline", headline(i)],
+      ["id", id(i)],
+      ["label", label(i)],
+      ["leadAsset", leadAsset(i)],
+      ["longSummary", longSummary(i)],
+      ["publicationName", publicationName(i)],
+      ["publishedTime", publishedTime(i)],
+      ["section", section(i)],
+      ["shortSummary", shortSummary(i)],
+      ["summary", summary(i)],
+      ["url", url(i)]
+    ];
+
+    const article = props.reduce(
+      (obj, [key, value]) => addProp(obj, key, value),
+      {
+        __typename: "Article"
+      }
+    );
+
+    articles.push(article);
+  }
+
+  return articles;
+};
+
+const defaultArticleWithImagesList = fixtures => {
+  const getFixture = prop => indx => fixtures[indx - 1][prop];
+
+  return makeCustomArticles(10, {
+    headline: getFixture("headline"),
+    id: getFixture("id"),
+    label: getFixture("label"),
+    leadAsset: getFixture("leadAsset"),
+    publicationName: getFixture("publicationName"),
+    publishedTime: getFixture("publishedTime"),
+    summary: getFixture("summary"),
+    url: getFixture("url")
+  });
+};
+
+const defaultArticleNoImagesList = fixtures => {
+  const getFixture = prop => indx => fixtures[indx][prop];
+
+  return makeCustomArticles(10, {
+    headline: getFixture("headline"),
+    id: getFixture("id"),
+    label: getFixture("label"),
+    leadAsset: getFixture("leadAsset"),
+    longSummary: getFixture("longSummary"),
+    publicationName: getFixture("publicationName"),
+    publishedTime: getFixture("publishedTime"),
+    shortSummary: getFixture("shortSummary"),
+    url: getFixture("url")
+  });
+};
+
+const defaultTopicList = fixtures => {
+  const getFixture = prop => indx => fixtures[indx - 1][prop];
+
+  return makeCustomArticles(10, {
+    byline: getFixture("byline"),
+    headline: getFixture("headline"),
+    id: getFixture("id"),
+    label: getFixture("label"),
+    leadAsset: getFixture("leadAsset"),
+    publicationName: getFixture("publicationName"),
+    publishedTime: getFixture("publishedTime"),
+    section: getFixture("section"),
+    summary: getFixture("summary"),
+    url: getFixture("url")
+  });
+};
+
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
     return {
@@ -36,14 +143,30 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
 const makeTopic = () => ({
   name: "Chelsea",
   description:
-    "Chelsea is known for its affluent residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores.",
+    "Chelsea is known for its affluent residents and the posh shops and restaurants that cater to them." +
+    " It’s a cultural haven too, with the Royal Court Theatre on " +
+    "Sloane Square and the modern Saatchi Gallery on the Duke of York Square." +
+    " Close by, busy King’s Road is lined with mid- to high-end stores.",
   __typename: "Topic"
 });
 
-const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
+const makeArticleList = (
+  { list, first, skip, withImages },
+  transform = id => id
+) => {
   const articles = withImages
-    ? articleListWithImagesFixture.data.author.articles
-    : articleListNoImagesFixture.data.author.articles;
+    ? {
+        count: 20,
+        list:
+          list || defaultArticleWithImagesList(articleListWithImagesFixture),
+        __typename: "Articles"
+      }
+    : {
+        count: 20,
+        list: list || defaultArticleNoImagesList(articleListNoImagesFixture),
+        __typename: "Articles"
+      };
+
   return {
     data: {
       author: {
@@ -58,22 +181,21 @@ const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   };
 };
 
-const makeTopicArticleList = ({ skip, first }, transform = id => id) => {
-  const { articles } = topicFixture.data.topic;
-
-  return {
-    data: {
-      topic: {
-        articles: {
-          ...articles,
-          list: transform(articles.list.slice(skip, skip + first)),
-          __typename: "Articles"
-        },
-        __typename: "Topic"
-      }
+const makeTopicArticleList = (
+  { first, list = defaultTopicList(topicFixture), skip },
+  transform = id => id
+) => ({
+  data: {
+    topic: {
+      articles: {
+        __typename: "Articles",
+        count: 50,
+        list: transform(list.slice(skip, skip + first))
+      },
+      __typename: "Topic"
     }
-  };
-};
+  }
+});
 
 const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   delay,
@@ -144,6 +266,7 @@ const makeArticleMocks = (
   {
     count = 20,
     delay = 1000,
+    list,
     longSummaryLength = 220,
     pageSize = 5,
     shortSummaryLength = 220,
@@ -168,8 +291,9 @@ const makeArticleMocks = (
     },
     result: makeArticleList(
       {
-        skip: indx * pageSize,
         first: pageSize,
+        list,
+        skip: indx * pageSize,
         withImages
       },
       transform
@@ -180,11 +304,12 @@ const makeArticleMocks = (
 const makeTopicArticleMocks = (
   {
     count = 50,
-    pageSize = 20,
-    withImages = true,
-    slug = "chelsea",
     delay = 1000,
-    empty = false
+    empty = false,
+    list,
+    pageSize = 20,
+    slug = "chelsea",
+    withImages = true
   } = {},
   transform
 ) => [
@@ -202,8 +327,9 @@ const makeTopicArticleMocks = (
     },
     result: makeTopicArticleList(
       {
-        skip: indx * pageSize,
         first: empty ? 0 : pageSize,
+        list,
+        skip: indx * pageSize,
         withImages
       },
       transform
@@ -305,6 +431,7 @@ export default {
   makeVariables,
   makeArticleMocks,
   makeBrokenMocks,
+  makeCustomArticles,
   makeMocksWithPageError,
   makeMocksWithAuthorError,
   makeTopicArticleMocks,

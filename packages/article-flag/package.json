@@ -7,8 +7,8 @@
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "@times-components/jest-configurator": "2.1.0",
     "@times-components/jest-serializer": "2.1.0",

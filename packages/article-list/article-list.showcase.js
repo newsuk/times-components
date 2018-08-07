@@ -19,8 +19,8 @@ const preventDefaultedAction = decorateAction =>
 const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
-  articles: articleListWithImagesFixture.data.author.articles.list,
-  count: articleListWithImagesFixture.data.author.articles.list.length,
+  articles: articleListWithImagesFixture,
+  count: articleListWithImagesFixture.length,
   emptyStateMessage:
     "Unfortunately, there are no articles relating to this page",
   fetchMore: () => Promise.resolve(),
@@ -53,8 +53,8 @@ export default {
       component: (_, { decorateAction }) => (
         <TrackedArticleList
           {...getProps(decorateAction)}
-          articles={articleListNoImagesFixture.data.author.articles.list}
-          count={articleListNoImagesFixture.data.author.articles.list.length}
+          articles={articleListNoImagesFixture}
+          count={articleListNoImagesFixture.length}
           showImages={false}
         />
       )

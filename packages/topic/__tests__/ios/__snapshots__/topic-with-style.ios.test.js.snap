@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an article list header 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F9F9",
+      "borderBottomColor": "#F0F0F0",
+      "borderBottomWidth": 0.5,
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 40,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 40,
+        }
+      }
+    >
+      Test Name
+    </Text>
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "borderTopColor": "#DBDBDB",
+          "borderTopWidth": 1,
+          "justifyContent": "center",
+          "marginBottom": 25,
+          "width": 200,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 15,
+          "lineHeight": 26,
+          "textAlign": "center",
+        }
+      }
+    >
+      Test Description
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. an article list header loading 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F9F9",
+      "borderBottomColor": "#F0F0F0",
+      "borderBottomWidth": 0.5,
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 40,
+      "width": "100%",
+    }
+  }
+/>
+`;

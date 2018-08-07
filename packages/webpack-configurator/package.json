@@ -7,7 +7,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "lint": "eslint . && yarn prettier:diff && jest-lint",
     "prepublishOnly": "yarn transpile",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "4.9.0",
