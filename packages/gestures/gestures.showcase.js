@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fontSizes } from "@times-components/styleguide";
 import Gestures from "./src/gestures";
