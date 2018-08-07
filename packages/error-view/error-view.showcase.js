@@ -1,7 +1,6 @@
 /* eslint-disable react/prefer-stateless-function, react/require-render-return, react/no-multi-comp */
-
 import React, { Component } from "react";
-import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
@@ -65,7 +64,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "handles a component that errors",
+      name: "Error",
       component: () => (
         <ErrorView>
           {({ hasError, error }) =>
@@ -80,7 +79,7 @@ export default {
     },
     {
       type: "story",
-      name: "handles a component that fires onError",
+      name: "Async error",
       component: () => (
         <ErrorView>
           {({ hasError, onError, error }) =>
