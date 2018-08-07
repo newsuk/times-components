@@ -54,9 +54,7 @@ exports[`3. one lead related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                Test Headline
-              </Text>
+              />
               <View>
                 <Text>
                   <Text>
@@ -143,9 +141,7 @@ exports[`5. one lead and one support related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                First Headline
-              </Text>
+              />
               <View>
                 <Text>
                   <Text>
@@ -192,9 +188,7 @@ exports[`5. one lead and one support related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                Second Headline
-              </Text>
+              />
               <Text>
                 January 17 2018, 12:00pm
               </Text>
@@ -279,9 +273,7 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                First Headline
-              </Text>
+              />
               <View>
                 <Text>
                   <Text>
@@ -328,9 +320,7 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                Second Headline
-              </Text>
+              />
               <Text>
                 January 17 2018, 12:00pm
               </Text>
@@ -368,9 +358,7 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              >
-                Third Headline
-              </Text>
+              />
               <Text>
                 January 17 2018, 12:00pm
               </Text>

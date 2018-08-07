@@ -55,7 +55,7 @@ exports[`3. a single related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Test Headline
+                Now for a new battle: bringing the fragile masterpiece over safely
               </Text>
               <View>
                 <Text>
@@ -95,7 +95,7 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long",
-            "headline": "Test Headline",
+            "headline": undefined,
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
@@ -233,14 +233,14 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": "First Headline",
+            "headline": undefined,
             "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": "Second Headline",
+            "headline": undefined,
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-2",
@@ -427,21 +427,21 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": "First Headline",
+            "headline": undefined,
             "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": "Second Headline",
+            "headline": undefined,
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-2",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": "Third Headline",
+            "headline": undefined,
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-3",

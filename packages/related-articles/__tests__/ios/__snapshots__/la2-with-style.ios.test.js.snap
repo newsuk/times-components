@@ -88,9 +88,7 @@ exports[`default styles 1`] = `
                     "marginTop": 0,
                   }
                 }
-              >
-                Test Headline
-              </Text>
+              />
               <View>
                 <Text
                   style={

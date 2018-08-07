@@ -60,9 +60,7 @@ exports[`3. one opinion related article 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                >
-                  Test Headline
-                </h3>
+                />
                 <div>
                   <div>
                     <span>
@@ -158,9 +156,7 @@ exports[`5. one opinion and one support related article 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                >
-                  First Headline
-                </h3>
+                />
                 <div>
                   <div>
                     <span>
@@ -216,9 +212,7 @@ exports[`5. one opinion and one support related article 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  >
-                    Second Headline
-                  </h3>
+                  />
                   <div />
                   <div>
                     January 17 2018, 12:00pm
@@ -312,9 +306,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                >
-                  First Headline
-                </h3>
+                />
                 <div>
                   <div>
                     <span>
@@ -363,9 +355,7 @@ exports[`7. opinion and two support related articles 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  >
-                    Second Headline
-                  </h3>
+                  />
                   <div />
                   <div>
                     January 17 2018, 12:00pm
@@ -402,9 +392,7 @@ exports[`7. opinion and two support related articles 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  >
-                    Third Headline
-                  </h3>
+                  />
                   <div />
                   <div>
                     January 17 2018, 12:00pm
