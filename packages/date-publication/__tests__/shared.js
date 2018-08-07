@@ -1,59 +1,66 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
+import { iterator } from "@times-components/test-utils";
 import DatePublication from "../src/date-publication";
 
-export default function() {
-  it("renders a DatePublication component with Times publication and relevant GMT date", () => {
-    const tree = renderer
-      .create(
-        <DatePublication date="2017-01-01T14:32:00.000Z" publication="TIMES" />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+export default (date, { londonTimezone, nonLondonTimezone }) => {
+  const tests = [
+    {
+      name: "date and TIMES publication",
+      test() {
+        londonTimezone();
+        const testInstance = TestRenderer.create(
+          <DatePublication date={date} publication="TIMES" />
+        );
 
-  it("renders a DatePublication component with Sunday Times publication and relevant GMT date", () => {
-    const tree = renderer
-      .create(
-        <DatePublication
-          date="2017-01-01T14:32:00.000Z"
-          publication="SUNDAYTIMES"
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "date and SUNDAYTIMES publication",
+      test() {
+        londonTimezone();
+        const testInstance = TestRenderer.create(
+          <DatePublication date={date} publication="SUNDAYTIMES" />
+        );
 
-  it("renders a DatePublication component with no publication and relevant GMT date", () => {
-    const tree = renderer
-      .create(
-        <DatePublication date="2017-01-01T14:32:00.000Z" publication="TIMES" />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "date and no given publication",
+      test() {
+        londonTimezone();
+        const testInstance = TestRenderer.create(
+          <DatePublication date={date} />
+        );
 
-  it("renders a DatePublication component with GMT date", () => {
-    const tree = renderer
-      .create(<DatePublication date="2017-01-01T14:32:00.000Z" />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "date and no day",
+      test() {
+        londonTimezone();
+        const testInstance = TestRenderer.create(
+          <DatePublication date={date} showDay={false} />
+        );
 
-  it("renders a DatePublication component with BST date", () => {
-    const tree = renderer
-      .create(<DatePublication date="2017-07-01T14:32:00.000Z" />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "date and TIMES publication with non-London timezone",
+      test() {
+        nonLondonTimezone();
+        const testInstance = TestRenderer.create(
+          <DatePublication date={date} publication="TIMES" />
+        );
 
-  it("renders a DatePublication but does not show the day", () => {
-    const tree = renderer
-      .create(
-        <DatePublication date="2017-07-01T14:32:00.000Z" showDay={false} />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-}
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
+};
