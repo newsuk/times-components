@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Context from "@times-components/context";
 <<<<<<< HEAD
 import { TextLink } from "@times-components/link";
@@ -28,9 +28,14 @@ const KeyFacts = ({ ast, onLinkPress }) => {
     <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
       <View style={styles().bullet} />
       <Context.Consumer testIdentifier={listIndex}>
-        { ({theme: {scale}}) =>
-          <KeyFactsText item={item} scale={scale} listIndex={listIndex} onLinkPress={onLinkPress} />
-        }
+        {({ theme: { scale } }) => (
+          <KeyFactsText
+            item={item}
+            listIndex={listIndex}
+            onLinkPress={onLinkPress}
+            scale={scale}
+          />
+        )}
       </Context.Consumer>
     </View>
   );

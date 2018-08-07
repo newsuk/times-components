@@ -1,5 +1,4 @@
 import React from "react";
-import { mount } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -43,7 +42,9 @@ addSerializers(
 );
 
 it("key facts with title", () => {
-  const wrapper = TestRenderer.create(<KeyFacts ast={data} onLinkPress={() => {}} />);
+  const wrapper = TestRenderer.create(
+    <KeyFacts ast={data} onLinkPress={() => {}} />
+  );
 
   expect(wrapper).toMatchSnapshot();
 });

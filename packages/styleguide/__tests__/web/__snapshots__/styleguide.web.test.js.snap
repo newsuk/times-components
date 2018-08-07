@@ -1,5 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Animations a FadeIn animation wrapper component 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    Hello World
+  </div>
+</div>
+`;
+
+exports[`Animations a FadeIn animation wrapper component 2`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    Hello World
+  </div>
+</div>
+`;
+
 exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
@@ -35,33 +65,3 @@ exports[`Styleguide Factory Line height factory should give a correct line heigh
 exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `27`;
 
 exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to default 1`] = `27`;
-
-exports[`a FadeIn animation wrapper component 1`] = `
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-<div
-  className="c0"
->
-  <div>
-    Hello World
-  </div>
-</div>
-`;
-
-exports[`a FadeIn animation wrapper component 2`] = `
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-<div
-  className="c0"
->
-  <div>
-    Hello World
-  </div>
-</div>
-`;

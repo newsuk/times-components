@@ -6,7 +6,9 @@ import styles from "./styles";
 
 const KeyFactsTitle = ({ title }) => (
   <Context.Consumer>
-    { ({theme: {scale}}) => <Text style={styles(scale).title}>{title.toUpperCase()}</Text> }
+    {({ theme: { scale } }) => (
+      <Text style={styles(scale).title}>{title.toUpperCase()}</Text>
+    )}
   </Context.Consumer>
 );
 

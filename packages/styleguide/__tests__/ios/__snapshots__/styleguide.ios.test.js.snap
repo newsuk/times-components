@@ -1,5 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Animations a FadeIn animation wrapper component 1`] = `
+<View
+  style={
+    Object {
+      "opacity": 0,
+    }
+  }
+>
+  <Text>
+    Hello World
+  </Text>
+</View>
+`;
+
+exports[`Animations a FadeIn animation wrapper component 2`] = `
+<View
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <Text>
+    Hello World
+  </Text>
+</View>
+`;
+
 exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
@@ -35,31 +63,3 @@ exports[`Styleguide Factory Line height factory should give a correct line heigh
 exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `33`;
 
 exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to default 1`] = `33`;
-
-exports[`a FadeIn animation wrapper component 1`] = `
-<View
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <Text>
-    Hello World
-  </Text>
-</View>
-`;
-
-exports[`a FadeIn animation wrapper component 2`] = `
-<View
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
->
-  <Text>
-    Hello World
-  </Text>
-</View>
-`;

@@ -1,7 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
 import { shallow } from "enzyme";
-import { scales } from "@times-components/context"
+import { scales } from "@times-components/context";
 import KeyFactsText from "../src/key-facts-text";
 import data from "../fixtures/key-facts-test.json";
 
@@ -11,7 +10,12 @@ export default () => {
     const { children: keyFactsItems } = data.children[0];
 
     const wrapper = shallow(
-      <KeyFactsText item={keyFactsItems[1]} scale="medium" listIndex={1} onLinkPress={mockLinkPress} />
+      <KeyFactsText
+        item={keyFactsItems[1]}
+        listIndex={1}
+        onLinkPress={mockLinkPress}
+        scale={scales.medium}
+      />
     );
 
     wrapper.find("TextLink").simulate("press");

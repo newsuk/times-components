@@ -22,11 +22,13 @@ export default {
       platform: "native",
       component: ({ select }) => {
         const scale = select("Scale", scales, "medium");
-        return <Context.Provider value={{theme: {scale}}}>
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
             <ScrollView style={{ width: "100%" }}>
               {renderKeyFacts(data)}
             </ScrollView>
           </Context.Provider>
+        );
       }
     },
     {
@@ -41,11 +43,13 @@ export default {
       platform: "native",
       component: ({ select }) => {
         const scale = select("Scale", scales, "medium");
-        return <Context.Provider value={{theme: {scale}}}>
-          <ScrollView style={{ width: "100%" }}>
-            {renderKeyFacts(dataNoTitle)}
-          </ScrollView>
-        </Context.Provider>
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            <ScrollView style={{ width: "100%" }}>
+              {renderKeyFacts(dataNoTitle)}
+            </ScrollView>
+          </Context.Provider>
+        );
       }
     },
     {
