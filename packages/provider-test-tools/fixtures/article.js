@@ -13,6 +13,8 @@ const defaultByline = [
     ]
   }
 ];
+const defaultCommentCount = 65;
+const defaultCommentsEnabled = true;
 const defaultContent = [
   {
     name: "paragraph",
@@ -1152,6 +1154,8 @@ const defaultUrl =
 export default (
   {
     byline = defaultByline,
+    commentCount = defaultCommentCount,
+    commentsEnabled = defaultCommentsEnabled,
     content = defaultContent,
     flags = defaultFlags,
     headline = defaultHeadline,
@@ -1170,6 +1174,8 @@ export default (
     article: {
       __typename: "Article",
       byline,
+      commentCount,
+      commentsEnabled,
       content,
       flags,
       headline,
