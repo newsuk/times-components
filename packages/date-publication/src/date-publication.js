@@ -1,8 +1,8 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 import format from "date-fns/format";
 import addMinutes from "date-fns/add_minutes";
-import PropTypes from "prop-types";
-import { isLondonTimezone, isBST, getUTCTime } from "./date";
+import { getUTCTime, isBST, isLondonTimezone } from "./date";
 
 const publications = {
   SUNDAYTIMES: "The Sunday Times",
@@ -35,9 +35,10 @@ class DatePublication extends Component {
     const formatString = showDay
       ? "dddd MMMM DD YYYY, hh:mma"
       : "MMMM DD YYYY, hh:mma";
-    const publicationString = publication
-      ? `, ${publications[publication]}`
-      : ``;
+    const publicationString =
+      publication && publications[publication]
+        ? `, ${publications[publication]}`
+        : ``;
     return `${format(datetimeLondonTimezone, formatString)}${this.state.tz}${
       publicationString
     }`;

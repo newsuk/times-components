@@ -1,14 +1,14 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import DatePublication from "./src/date-publication";
 
 const styles = StyleSheet.create({
   text: {
     color: colours.functional.secondary,
+    fontFamily: fonts.supporting,
     fontSize: fontSizes.cardMeta,
-    lineHeight: 15,
-    fontFamily: fonts.supporting
+    lineHeight: 15
   }
 });
 
@@ -17,7 +17,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "standard Date Publication",
+      name: "Default",
       component: () => (
         <Text style={styles.text}>
           <DatePublication
@@ -29,7 +29,7 @@ export default {
     },
     {
       type: "story",
-      name: "Date Publication with publication not displayed",
+      name: "Without Publication",
       component: () => (
         <Text style={styles.text}>
           <DatePublication date="2017-07-01T14:32:00.000Z" />
