@@ -10,6 +10,10 @@ in their `.eslintrc.json` files.
 }
 ```
 
+As a rule, we should only abide by `prettier` and `Airbnb` but in extenuating
+circumstances rules can be overriden here should they not make sense for the
+project.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
