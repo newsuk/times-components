@@ -7,10 +7,11 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && npm run prettier:diff",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,identity-obj-proxy,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:ios": "jest --config='./jest.config.native.js'",
     "test:web": "jest --config='./jest.config.web.js'",
-    "prepublishOnly": "npm run transpile",
+    "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },
@@ -34,17 +35,18 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
     "@times-components/svgs": "2.0.6",
+    "depcheck": "0.6.9",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
+    "identity-obj-proxy": "3.0.0",
     "jest": "23.3.0",
     "prettier": "1.8.2",
-    "prop-types": "15.6.0",
-    "react-test-renderer": "16.3.1"
+    "prop-types": "15.6.2",
+    "react-test-renderer": "16.4.2"
   },
   "dependencies": {
     "enzyme-to-json": "3.3.4",
-    "lodash.omit": "4.5.0",
     "lodash.omitby": "4.6.0"
   },
   "peerDependencies": {

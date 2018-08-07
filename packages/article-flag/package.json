@@ -7,7 +7,8 @@
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -48,21 +49,21 @@
     "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
+    "depcheck": "0.6.9",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "prettier": "1.8.2",
-    "react": "16.4.1",
-    "react-dom": "16.3.1",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.3.1",
+    "react-test-renderer": "16.4.2",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "@times-components/icons": "2.0.11",
     "@times-components/styleguide": "2.1.8",
-    "prop-types": "15.6.0",
-    "react-native-svg": "6.3.1"
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": ">=16.2",
