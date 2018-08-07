@@ -1,6 +1,6 @@
-import { addSerializers, rnw } from "@times-components/jest-serializer";
+import { addSerializers, minimalRnw } from "@times-components/jest-serializer";
 import shared from "../shared";
 
-addSerializers(expect, rnw());
+addSerializers(expect, minimalRnw());
 
 shared();

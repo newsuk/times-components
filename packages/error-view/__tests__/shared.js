@@ -53,7 +53,7 @@ export default () => {
       }
     },
     {
-      name: "error state if there is no error",
+      name: "good state if there is no error",
       test() {
         const testInstance = TestRenderer.create(
           <ErrorView>
