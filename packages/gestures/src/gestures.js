@@ -27,13 +27,12 @@ const angleBetweenTouches = (
 class Gestures extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       zoomRatio: new Animated.Value(1),
       angle: new Animated.Value(0)
     };
-  }
 
-  componentWillMount() {
     this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
