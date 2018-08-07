@@ -407,7 +407,9 @@ exports[`default styles 1`] = `
                 </div>
                 <h3
                   className="leadHeadlineClass S5"
-                />
+                >
+                  Defence of the Realm
+                </h3>
                 <div
                   className="S8"
                 >

@@ -54,7 +54,9 @@ exports[`3. one lead related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                Test Short Headline
+              </Text>
               <View>
                 <Text>
                   <Text>
@@ -141,7 +143,9 @@ exports[`5. one lead and one support related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                First Short Headline
+              </Text>
               <View>
                 <Text>
                   <Text>
@@ -188,7 +192,9 @@ exports[`5. one lead and one support related article 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                Size matters, say very tiny ministers
+              </Text>
               <Text>
                 January 17 2018, 12:00pm
               </Text>
@@ -273,7 +279,9 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                First Short Headline
+              </Text>
               <View>
                 <Text>
                   <Text>
@@ -320,7 +328,9 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                Second Short Headline
+              </Text>
               <Text>
                 January 17 2018, 12:00pm
               </Text>
@@ -358,7 +368,9 @@ exports[`7. one lead and two support related articles 1`] = `
               <Text
                 accessibilityRole="heading"
                 aria-level="3"
-              />
+              >
+                Third Short Headline
+              </Text>
               <Text>
                 January 17 2018, 12:00pm
               </Text>

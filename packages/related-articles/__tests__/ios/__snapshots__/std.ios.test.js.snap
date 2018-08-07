@@ -55,7 +55,7 @@ exports[`3. a single related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Now for a new battle: bringing the fragile masterpiece over safely
+                Test Short Headline
               </Text>
               <View>
                 <Text>
@@ -95,7 +95,7 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long",
-            "headline": undefined,
+            "headline": "Test Headline",
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
@@ -147,7 +147,7 @@ exports[`5. two related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -196,7 +196,7 @@ exports[`5. two related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Bayeux Tapestry displayed in Britain
               </Text>
               <View>
                 <Text>
@@ -233,14 +233,14 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": undefined,
+            "headline": "First Headline",
             "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": undefined,
+            "headline": "Second Headline",
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-2",
@@ -292,7 +292,7 @@ exports[`7. three related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -341,7 +341,7 @@ exports[`7. three related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Second Short Headline
               </Text>
               <View>
                 <Text>
@@ -390,7 +390,7 @@ exports[`7. three related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Third Headline
+                Third Short Headline
               </Text>
               <View>
                 <Text>
@@ -427,21 +427,21 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": undefined,
+            "headline": "First Headline",
             "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": undefined,
+            "headline": "Second Headline",
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-2",
           },
           Object {
             "byline": "Camilla Long, Environment Editor",
-            "headline": undefined,
+            "headline": "Third Headline",
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "standard-3",

@@ -55,7 +55,9 @@ exports[`3. one lead related article 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                />
+                >
+                  Test Short Headline
+                </h3>
                 <div>
                   <div>
                     <span>
@@ -144,7 +146,9 @@ exports[`5. one lead and one support related article 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                />
+                >
+                  First Short Headline
+                </h3>
                 <div>
                   <div>
                     <span>
@@ -191,7 +195,9 @@ exports[`5. one lead and one support related article 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  />
+                  >
+                    Size matters, say very tiny ministers
+                  </h3>
                   <div />
                   <div>
                     January 17 2018, 12:00pm
@@ -280,7 +286,9 @@ exports[`7. one lead and two support related articles 1`] = `
                 <h3
                   aria-level="3"
                   role="heading"
-                />
+                >
+                  First Short Headline
+                </h3>
                 <div>
                   <div>
                     <span>
@@ -334,7 +342,9 @@ exports[`7. one lead and two support related articles 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  />
+                  >
+                    Second Short Headline
+                  </h3>
                   <div />
                   <div>
                     January 17 2018, 12:00pm
@@ -371,7 +381,9 @@ exports[`7. one lead and two support related articles 1`] = `
                   <h3
                     aria-level="3"
                     role="heading"
-                  />
+                  >
+                    Third Short Headline
+                  </h3>
                   <div />
                   <div>
                     January 17 2018, 12:00pm

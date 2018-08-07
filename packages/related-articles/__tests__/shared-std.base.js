@@ -7,12 +7,14 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
+  shortHeadline: "Test Short Headline",
   summary125: testSummary(125)
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
   firstCrop169: "https://crop1.io",
   firstHeadline: "First Headline",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstUrl: "https://first.io",
   secondCrop169: "https://crop2.io",
@@ -24,16 +26,19 @@ const standard2ArticlesFixtureData = standard2ArticlesFixture({
 const standard3ArticlesFixtureData = standard3ArticlesFixture({
   firstCrop169: "https://crop1.io",
   firstHeadline: "First Headline",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstUrl: "https://first.io",
   secondCrop169: "https://crop2.io",
   secondHeadline: "Second Headline",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary145: testSummary(145),
   secondUrl: "https://second.io",
   thirdCrop169: "https://crop3.io",
   thirdHeadline: "Third Headline",
+  thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
   thirdUrl: "https://third.io"

@@ -115,7 +115,9 @@ exports[`default styles 1`] = `
                     "marginTop": -5,
                   }
                 }
-              />
+              >
+                Test Short Headline
+              </Text>
               <View
                 style={
                   Object {

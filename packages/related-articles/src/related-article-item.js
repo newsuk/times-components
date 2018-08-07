@@ -30,6 +30,7 @@ const RelatedArticleItem = ({
 }) => {
   const {
     byline,
+    headline,
     shortHeadline,
     label,
     leadAsset,
@@ -96,7 +97,7 @@ const RelatedArticleItem = ({
           headline={() => (
             <ArticleSummaryHeadline
               className={headlineClass}
-              headline={shortHeadline}
+              headline={shortHeadline || headline}
               style={styles.headline}
             />
           )}

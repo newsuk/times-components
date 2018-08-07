@@ -3,6 +3,7 @@ const defaultFirstCrop23 =
 const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "High score for labour in football club election";
+const defaultFirstShortHeadline = "Labour score high in football club election";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -111,6 +112,7 @@ const defaultSecondCrop23 =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22";
 const defaultSecondHeadline = "Trident out of MoD budget, Hammond urged";
+const defaultSecondShortHeadline = "Trident out of MoD budget";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -233,6 +235,7 @@ const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultThirdHeadline =
   "An example of a really really really really really really really really really really really really really really really really really really really really long headline";
+const defaultThirdShortHeadline = "An example of a short headline";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -396,6 +399,7 @@ export default (
     firstCrop23 = defaultFirstCrop23,
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstShortHeadline = defaultFirstShortHeadline,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -407,6 +411,7 @@ export default (
     secondCrop23 = defaultSecondCrop23,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondShortHeadline = defaultSecondShortHeadline,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -418,6 +423,7 @@ export default (
     thirdCrop23 = defaultThirdCrop23,
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
+    thirdShortHeadline = defaultThirdShortHeadline,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -437,6 +443,7 @@ export default (
       {
         id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
         headline: firstHeadline,
+        shortHeadline: firstShortHeadline,
         section: "comment",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -487,6 +494,7 @@ export default (
         },
         label: "defence cuts",
         headline: secondHeadline,
+        shortHeadline: secondShortHeadline,
         summary105: secondSummary105,
         summary125: secondSummary125,
         summary145: secondSummary145,
@@ -524,6 +532,7 @@ export default (
         },
         label: "defence cuts | analysis",
         headline: thirdHeadline,
+        shortHeadline: thirdShortHeadline,
         summary105: thirdSummary105,
         summary125: thirdSummary125,
         summary145: thirdSummary145,

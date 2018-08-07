@@ -88,7 +88,9 @@ exports[`default styles 1`] = `
                     "marginTop": -5,
                   }
                 }
-              />
+              >
+                Defence of the Realm
+              </Text>
               <View>
                 <Text
                   style={

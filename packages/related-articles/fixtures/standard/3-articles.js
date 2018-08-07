@@ -2,6 +2,8 @@ const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
 const defaultFirstHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
+const defaultFirstShortHeadline =
+  "Bringing the fragile masterpiece over safely";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -108,6 +110,7 @@ const defaultSecondTitle =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108";
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
+const defaultSecondShortHeadline = "Bayeux Tapestry displayed in Britain";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -376,6 +379,7 @@ const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0";
 const defaultThirdHeadline =
   "YouTube ignored police pleas to remove threatening videos";
+const defaultThirdShortHeadline = "Police pleas ignored over Youtube videos";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -474,6 +478,7 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstShortHeadline = defaultFirstShortHeadline,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -484,6 +489,7 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondShortHeadline = defaultSecondShortHeadline,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -494,6 +500,7 @@ export default (
     secondUrl = defaultSecondUrl,
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
+    thirdShortHeadline = defaultThirdShortHeadline,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -511,7 +518,8 @@ export default (
     relatedArticles: [
       {
         id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
-        shortHeadline: firstHeadline,
+        headline: firstHeadline,
+        shortHeadline: firstShortHeadline,
         section: "thedish",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -555,7 +563,8 @@ export default (
           }
         },
         label: "BAYEUX TAPESTRY",
-        shortHeadline: secondHeadline,
+        headline: secondHeadline,
+        shortHeadline: secondShortHeadline,
         section: "sport",
         summary105: secondSummary105,
         summary125: secondSummary125,
@@ -592,7 +601,8 @@ export default (
           }
         },
         label: "BAYEUX TAPESTRY",
-        shortHeadline: thirdHeadline,
+        headline: thirdHeadline,
+        shortHeadline: thirdShortHeadline,
         section: "register",
         summary105: thirdSummary105,
         summary125: thirdSummary125,

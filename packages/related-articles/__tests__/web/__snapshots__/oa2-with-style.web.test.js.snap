@@ -472,7 +472,9 @@ exports[`default styles 1`] = `
                 </div>
                 <h3
                   className="opinionHeadlineClass S7"
-                />
+                >
+                  Test Short Headline
+                </h3>
                 <div
                   className="S12"
                 >
