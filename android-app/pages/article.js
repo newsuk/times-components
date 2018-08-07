@@ -9,9 +9,11 @@ const { track } = NativeModules.ReactAnalytics;
 const {
   onArticlePress,
   onAuthorPress,
+  onCommentsPress,
+  onCommentGuidelinesPress,
   onLinkPress,
-  onVideoPress,
-  onTopicPress
+  onTopicPress,
+  onVideoPress
 } = NativeModules.ArticleEvents;
 const ArticlePageView = Article(config)(fetch);
 
@@ -40,6 +42,8 @@ const ArticleView = ({ articleId, sectionName }) => {
       analyticsStream={track}
       onArticlePress={onArticlePress}
       onAuthorPress={onAuthorPress}
+      onCommentsPress={onCommentsPress}
+      onCommentGuidelinesPress={onCommentGuidelinesPress}
       onLinkPress={onLinkPress}
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}

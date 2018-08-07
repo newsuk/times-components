@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a full article with enabled comments 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
+          }
+        >
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 9,
+            },
+            Object {
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View
+      style={null}
+    />
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderStyle": "solid",
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 0.5,
+            "marginBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 27,
+              "lineHeight": 29,
+              "maxWidth": 315,
+              "paddingBottom": 10,
+              "paddingTop": 30,
+              "textAlign": "center",
+            }
+          }
+        >
+          65 comments
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "maxWidth": 280,
+              "textAlign": "center",
+            }
+          }
+        >
+          Comments are subject to our community guidelines, which can be viewed 
+          <Text
+            style={
+              Array [
+                Object {
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#006699",
+                },
+              ]
+            }
+          >
+            here
+          </Text>
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#006699",
+                "borderRadius": 2,
+                "height": 45,
+                "justifyContent": "center",
+                "minWidth": 100,
+                "width": "100%",
+              },
+              Object {
+                "marginTop": 25,
+                "maxWidth": 215,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFF",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 16,
+                "paddingTop": 5,
+              }
+            }
+          >
+            View comments
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. a full article with disabled comments 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
+          }
+        >
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 9,
+            },
+            Object {
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View
+      style={null}
+    />
+    <View
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderStyle": "solid",
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 0.5,
+            "marginBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 27,
+              "lineHeight": 29,
+              "maxWidth": 315,
+              "paddingBottom": 10,
+              "paddingTop": 30,
+              "textAlign": "center",
+            }
+          }
+        >
+          Comments for this article have been turned off
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "maxWidth": 280,
+              "textAlign": "center",
+            }
+          }
+        >
+          For more details, please see our 
+          
+
+          <Text
+            style={
+              Array [
+                Object {
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#006699",
+                },
+              ]
+            }
+          >
+            community guidelines
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

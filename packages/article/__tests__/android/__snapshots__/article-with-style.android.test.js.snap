@@ -257,6 +257,13 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     <View>
       <RelatedArticles />
     </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
   </View>
 </RCTScrollView>
 `;
@@ -370,6 +377,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -468,6 +478,9 @@ exports[`4. an article with no lead asset 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -555,6 +568,9 @@ exports[`5. an article with ads 1`] = `
       />
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -633,6 +649,9 @@ exports[`6. a secondary image 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -711,6 +730,9 @@ exports[`7. an inline image 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -824,6 +846,9 @@ exports[`9. an article with updated byline 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -946,6 +971,9 @@ exports[`9. an article with updated byline 2`] = `
       </View>
     </View>
     <View />
+    <View>
+      <ArticleComments />
+    </View>
   </View>
 </RCTScrollView>
 `;

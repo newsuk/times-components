@@ -12,6 +12,8 @@ Object {
       "name": "text",
     },
   ],
+  "commentCount": 65,
+  "commentsEnabled": true,
   "content": Array [
     Object {
       "attributes": Object {},

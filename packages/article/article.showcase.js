@@ -57,6 +57,10 @@ const renderArticle = (
     error={error}
     isLoading={isLoading}
     onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+    onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+      "onCommentGuidelinesPress"
+    )}
+    onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
     onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
     onRelatedArticlePress={preventDefaultedAction(decorateAction)(
       "onRelatedArticlePress"
@@ -138,6 +142,12 @@ export default {
                   isLoading={isLoading}
                   onAuthorPress={preventDefaultedAction(decorateAction)(
                     "onAuthorPress"
+                  )}
+                  onCommentGuidelinesPress={preventDefaultedAction(
+                    decorateAction
+                  )("onCommentGuidelinesPress")}
+                  onCommentsPress={preventDefaultedAction(decorateAction)(
+                    "onCommentsPress"
                   )}
                   onLinkPress={preventDefaultedAction(decorateAction)(
                     "onLinkPress"

@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a full article with enabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <Text>
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <Text>
+          65 comments
+        </Text>
+        <Text>
+          Comments are subject to our community guidelines, which can be viewed 
+          <Text
+            accessibilityRole="link"
+          >
+            here
+          </Text>
+        </Text>
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel="View comments"
+          accessibilityTraits="button"
+        >
+          <Text
+            title="View comments"
+          >
+            View comments
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. a full article with disabled comments 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <Text>
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <Text>
+          Comments for this article have been turned off
+        </Text>
+        <Text>
+          For more details, please see our 
+          
+
+          <Text
+            accessibilityRole="link"
+          >
+            community guidelines
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
