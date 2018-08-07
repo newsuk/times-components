@@ -119,27 +119,3 @@ exports[`5. do nothing if a finger is removed while interacting 1`] = `
   </Text>
 </AnimatedComponent>
 `;
-
-exports[`6. animate back to the start after release 1`] = `
-<AnimatedComponent
-  style={
-    Object {
-      "transform": Array [
-        Object {
-          "scale": 2.9152570882694686,
-        },
-        Object {
-          "rotate": "-5.906 deg",
-        },
-        Object {
-          "perspective": 1000,
-        },
-      ],
-    }
-  }
->
-  <Text>
-    Hello world!
-  </Text>
-</AnimatedComponent>
-`;
