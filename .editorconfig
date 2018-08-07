@@ -1,6 +1,6 @@
 # Intended to match Prettier's default config
 root = true
- 
+
 [*]
 tab_width = 2
 indent_style = space
