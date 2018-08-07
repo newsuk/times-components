@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-styles",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "dist/responsive-styles",
   "dev": "src/responsive-styles",
@@ -35,8 +35,8 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.1.0",
-    "@times-components/storybook": "2.2.0",
+    "@times-components/jest-configurator": "2.1.1",
+    "@times-components/storybook": "2.2.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",

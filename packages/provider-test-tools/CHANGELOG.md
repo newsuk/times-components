@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.16.0...@times-components/provider-test-tools@0.17.0) (2018-08-07)
+
+
+### Bug Fixes
+
+* update article fixture code ([#1182](https://github.com/newsuk/times-components/issues/1182)) ([e9cb840](https://github.com/newsuk/times-components/commit/e9cb840))
+
+
+### Features
+
+* add comments button in native article ([#1167](https://github.com/newsuk/times-components/issues/1167)) ([7f61fc9](https://github.com/newsuk/times-components/commit/7f61fc9))
+
+
+
+
 <a name="0.16.0"></a>
 # [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.15.7...@times-components/provider-test-tools@0.16.0) (2018-08-07)
 

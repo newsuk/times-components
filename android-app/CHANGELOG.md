@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.5.0...@times-components/android-app@0.6.0) (2018-08-07)
+
+
+### Features
+
+* add comments button in native article ([#1167](https://github.com/newsuk/times-components/issues/1167)) ([7f61fc9](https://github.com/newsuk/times-components/commit/7f61fc9))
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.4.27...@times-components/android-app@0.5.0) (2018-08-07)
 

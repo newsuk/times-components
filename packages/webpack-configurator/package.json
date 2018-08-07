@@ -1,6 +1,6 @@
 {
   "name": "@times-components/webpack-configurator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "webpack-configurator for times-components",
   "main": "dist",
   "dev": "src",

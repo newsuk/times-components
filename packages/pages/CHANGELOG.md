@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/pages@0.3.0...@times-components/pages@0.4.0) (2018-08-07)
+
+
+### Features
+
+* add comments button in native article ([#1167](https://github.com/newsuk/times-components/issues/1167)) ([7f61fc9](https://github.com/newsuk/times-components/commit/7f61fc9))
+
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/pages@0.2.22...@times-components/pages@0.3.0) (2018-08-07)
 
