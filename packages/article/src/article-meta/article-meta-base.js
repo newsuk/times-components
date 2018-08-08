@@ -72,7 +72,7 @@ ArticleMetaBase.defaultProps = {
   publishedTime: null,
   publicationName: null,
   RowWrapper: View,
-  section: ""
+  section: null
 };
 
 export default ArticleMetaBase;
