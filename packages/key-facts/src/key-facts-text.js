@@ -8,37 +8,37 @@ import { defaultProps, propTypes } from "./key-facts-prop-types";
 
 const KeyFactsText = ({ item, listIndex, scale, onLinkPress }) => (
   <Text style={styles(scale).text}>
-        {item.children.map((data, listItemIndex) =>
-          renderTree(
-            data,
-            {
-              ...coreRenderers,
-              link(key, attributes, renderedChildren) {
-                const { canonicalId, href: url, type } = attributes;
-                return {
-                  element: (
-                    <TextLink
-                      key={key}
-                      onPress={e =>
-                        onLinkPress(e, {
-                          canonicalId,
-                          type,
-                          url
-                        })
-                      }
-                      style={styles().link}
-                      url={url}
-                    >
-                      {renderedChildren}
-                    </TextLink>
-                  )
-                };
-              }
-            },
-            `key-facts-${listIndex}-${listItemIndex}`
-          )
-        )}
-      </Text>
+    {item.children.map((data, listItemIndex) =>
+      renderTree(
+        data,
+        {
+          ...coreRenderers,
+          link(key, attributes, renderedChildren) {
+            const { canonicalId, href: url, type } = attributes;
+            return {
+              element: (
+                <TextLink
+                  key={key}
+                  onPress={e =>
+                    onLinkPress(e, {
+                      canonicalId,
+                      type,
+                      url
+                    })
+                  }
+                  style={styles().link}
+                  url={url}
+                >
+                  {renderedChildren}
+                </TextLink>
+              )
+            };
+          }
+        },
+        `key-facts-${listIndex}-${listItemIndex}`
+      )
+    )}
+  </Text>
 );
 
 KeyFactsText.propTypes = propTypes;

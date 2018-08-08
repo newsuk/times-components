@@ -1,12 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import Context from "@times-components/context";
-<<<<<<< HEAD
-import { TextLink } from "@times-components/link";
-import { renderTree } from "@times-components/markup-forest";
-import coreRenderers from "@times-components/markup";
-=======
->>>>>>> test: Working tests for Key Facts
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsText from "./key-facts-text";
 import KeyFactsTitle from "./key-facts-title";
