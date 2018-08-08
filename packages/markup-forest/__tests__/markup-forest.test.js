@@ -121,12 +121,12 @@ iterator([
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
           return {
-            element: <div key={key}>{renderedChildren}</div>
+            element: renderedChildren
           };
         },
         inline(key, attributes, renderedChildren) {
           return {
-            element: <span key={key}>{renderedChildren}</span>
+            element: renderedChildren
           };
         },
         specialElement(key, attributes, renderedChildren, indx, node) {
@@ -137,9 +137,9 @@ iterator([
             shouldRenderChildren: false
           };
         },
-        text(key, { value }) {
+        text(key, attributes, renderedChildren) {
           return {
-            element: value
+            element: renderedChildren
           };
         }
       });
@@ -151,6 +151,22 @@ iterator([
     name: "provide AST of node for child",
     test: () => {
       const output = renderTree(nestedAST, {
+        block(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren
+          };
+        },
+        inline(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren
+          };
+        },
+        specialElement(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren,
+            shouldRenderChildren: false
+          };
+        },
         text(key, attributes, renderedChildren, indx, node) {
           return {
             element: <div key={key}>{`special: ${JSON.stringify(node)}`}</div>
@@ -165,6 +181,22 @@ iterator([
     name: "provide empty children",
     test: () => {
       const output = renderTree(nestedAST, {
+        block(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren
+          };
+        },
+        inline(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren
+          };
+        },
+        specialElement(key, attributes, renderedChildren) {
+          return {
+            element: renderedChildren,
+            shouldRenderChildren: false
+          };
+        },
         text(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren.length}</div>
