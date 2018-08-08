@@ -51,98 +51,119 @@ exports[`2. default modal 1`] = `
           "backgroundColor": "#1D1D1B",
           "flexDirection": "column",
           "height": "100%",
+          "justifyContent": "space-between",
           "width": "100%",
         }
       }
     >
-      <View>
-        <Svg>
-          <G>
-            <Path />
-            <Path />
-          </G>
-        </Svg>
-      </View>
       <View
         style={
           Object {
-            "flexGrow": 1,
+            "alignItems": "flex-end",
+            "margin": 16,
           }
         }
       >
+        <View>
+          <Svg>
+            <G>
+              <Path />
+              <Path />
+            </G>
+          </Svg>
+        </View>
+      </View>
+      <View>
         <View
           style={
             Object {
               "flexGrow": 1,
-              "justifyContent": "center",
             }
           }
         >
           <View
             style={
               Object {
-                "transform": Array [
-                  Object {
-                    "scale": 1,
-                  },
-                  Object {
-                    "rotate": "0 deg",
-                  },
-                  Object {
-                    "perspective": 1000,
-                  },
-                ],
+                "flexGrow": 1,
+                "justifyContent": "center",
               }
             }
           >
             <View
               style={
                 Object {
-                  "opacity": 1,
-                  "width": "100%",
+                  "transform": Array [
+                    Object {
+                      "scale": 1,
+                    },
+                    Object {
+                      "rotate": "0 deg",
+                    },
+                    Object {
+                      "perspective": 1000,
+                    },
+                  ],
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "height": "100%",
+                    "opacity": 1,
                     "width": "100%",
                   }
                 }
               >
-                <Image
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
                 <View
                   style={
                     Object {
-                      "flex": 1,
+                      "height": "100%",
+                      "width": "100%",
                     }
                   }
                 >
-                  <Gradient
+                  <Image
+                    style={
+                      Object {
+                        "bottom": 0,
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <View
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
-                  />
+                  >
+                    <Gradient
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
                 </View>
               </View>
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "marginHorizontal": 16,
+              "marginTop": "40%",
+              "paddingTop": 10,
+            }
+          }
+        />
       </View>
     </View>
   </Modal>

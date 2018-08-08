@@ -2,7 +2,9 @@ import React from "react";
 import { ModalImage } from "@times-components/image";
 import cropPropTypes from "./crop-prop-types";
 
-const ArticleLeadAssetImage = ({ crop: { ratio, url } }) => {
+const ArticleLeadAssetImage = data => {
+  console.log(data);
+  const { crop: { ratio, url } } = data;
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
