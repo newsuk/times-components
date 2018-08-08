@@ -21,7 +21,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   const renderKeyFact = (item, listIndex) => (
     <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
       <View style={styles().bullet} />
-      <Context.Consumer testIdentifier={listIndex}>
+      <Context.Consumer>
         {({ theme: { scale } }) => (
           <KeyFactsText
             item={item}
