@@ -63,7 +63,7 @@ const renderRow = analyticsStream => (
     }
 
     case "middleContainer": {
-      const { byline, publishedTime, publicationName } = rowData.data;
+      const { byline, publishedTime, publicationName, section } = rowData.data;
       return (
         <ArticleMeta
           byline={byline}
@@ -71,6 +71,7 @@ const renderRow = analyticsStream => (
           onAuthorPress={onAuthorPress}
           publicationName={publicationName}
           publishedTime={publishedTime}
+          section={section}
         />
       );
     }
