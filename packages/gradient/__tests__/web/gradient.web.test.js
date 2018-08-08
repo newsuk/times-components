@@ -29,7 +29,7 @@ addSerializers(
 const tests = [
   {
     name: "gradient with style",
-    test: () => {
+    test() {
       const styles = StyleSheet.create({
         gradient: {
           backgroundColor: "red"
@@ -43,7 +43,7 @@ const tests = [
   },
   {
     name: "gradient with a child",
-    test: () => {
+    test() {
       addSerializers(
         expect,
         compose(

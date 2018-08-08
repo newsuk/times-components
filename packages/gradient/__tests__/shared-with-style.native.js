@@ -26,7 +26,7 @@ export default () => {
   const tests = [
     {
       name: "gradient using prop styles",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(
           <Gradient
             style={{
@@ -41,7 +41,7 @@ export default () => {
     },
     {
       name: "gradient using array prop styles",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(
           <Gradient
             style={[
@@ -60,7 +60,7 @@ export default () => {
     },
     {
       name: "gradient using stylesheets",
-      test: () => {
+      test() {
         const styles = StyleSheet.create({
           container: {
             margin: 10
