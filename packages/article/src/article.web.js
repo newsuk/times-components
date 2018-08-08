@@ -76,6 +76,7 @@ const renderArticle = (
             headline={headline}
             isVideo={leadAssetProps.isVideo}
             label={label}
+            section={section}
             standfirst={standfirst}
           />
         </HeaderContainer>
