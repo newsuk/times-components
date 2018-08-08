@@ -28,7 +28,8 @@ const prepareDataForListView = articleData => {
   const articleMidContainerData = {
     publicationName: articleData.publicationName,
     publishedTime: articleData.publishedTime,
-    byline: articleData.byline
+    byline: articleData.byline,
+    section: articleData.section
   };
   const relatedArticlesData = articleData.relatedArticles
     ? {

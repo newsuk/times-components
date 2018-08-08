@@ -85,6 +85,7 @@ const renderArticle = (
             onAuthorPress={onAuthorPress}
             publicationName={publicationName}
             publishedTime={publishedTime}
+            section={section}
           />
           <ArticleTopics
             device="DESKTOP"
