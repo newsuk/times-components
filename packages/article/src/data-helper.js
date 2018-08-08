@@ -21,6 +21,7 @@ const prepareDataForListView = articleData => {
   const articleHeaderData = {
     label: articleData.label,
     headline: articleData.headline,
+    section: articleData.section,
     standfirst: articleData.standfirst,
     flags: articleData.flags,
     isVideo

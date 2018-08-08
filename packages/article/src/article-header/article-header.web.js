@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
 
+import { colours } from "@times-components/styleguide";
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -17,10 +18,15 @@ const ArticleHeader = ({
   standfirst,
   flags,
   isVideo,
+  section,
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel isVideo={isVideo} label={label} />
+    <HeaderLabel
+      color={colours.section[section]}
+      isVideo={isVideo}
+      label={label}
+    />
     <HeadlineContainer style={styles.articleHeadLineText}>
       {headline}
     </HeadlineContainer>
@@ -35,6 +41,7 @@ ArticleHeader.propTypes = {
   standfirst: PropTypes.string,
   flags: PropTypes.arrayOf(PropTypes.string),
   isVideo: PropTypes.bool,
+  section: PropTypes.string,
   style: ViewStylePropTypes
 };
 
@@ -43,6 +50,7 @@ ArticleHeader.defaultProps = {
   standfirst: null,
   flags: [],
   isVideo: false,
+  section: null,
   style: {}
 };
 
