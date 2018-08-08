@@ -1,3 +1,4 @@
+import { scales } from "@times-components/context";
 import PropTypes from "prop-types";
 
 export const propTypes = {
@@ -8,6 +9,6 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  scale: "medium",
+  scale: scales.medium,
   onLinkPress: () => {}
 };

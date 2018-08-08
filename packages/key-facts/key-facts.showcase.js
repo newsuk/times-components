@@ -21,7 +21,7 @@ export default {
       name: "with title",
       platform: "native",
       component: ({ select }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = select("Scale", scales, scales.medium);
         return (
           <Context.Provider value={{ theme: { scale } }}>
             <ScrollView style={{ width: "100%" }}>
@@ -42,7 +42,7 @@ export default {
       name: "without title",
       platform: "native",
       component: ({ select }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = select("Scale", scales, scales.medium);
         return (
           <Context.Provider value={{ theme: { scale } }}>
             <ScrollView style={{ width: "100%" }}>

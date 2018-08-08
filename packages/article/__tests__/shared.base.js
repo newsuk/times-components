@@ -41,7 +41,7 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <Context.Provider value={{ theme: { scale: "medium" } }}>
+        <Context.Provider>
           <Article
             {...props}
             adConfig={adConfig}
@@ -355,7 +355,7 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Wrapper>
           {byline => (
-            <Context.Provider value={{ theme: { scale: "medium" } }}>
+            <Context.Provider value={{ theme: { scale: scales.medium} }}>
               <Article
                 adConfig={adConfig}
                 analyticsStream={() => {}}

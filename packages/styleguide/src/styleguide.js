@@ -1,3 +1,4 @@
+import { scales } from "@times-components/context";
 import sectionColours from "./colours/section";
 import functionalColours from "./colours/functional";
 
@@ -33,7 +34,7 @@ export {
   lineHeight,
   spacing
 };
-export default ({ scale = "medium" } = {}) => ({
+export default ({ scale = scales.medium } = {}) => ({
   Animations,
   colours,
   fonts,
