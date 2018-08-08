@@ -42,11 +42,11 @@ addSerializers(
 );
 
 it("key facts with title", () => {
-  const wrapper = TestRenderer.create(
+  const testInstance = TestRenderer.create(
     <KeyFacts ast={data} onLinkPress={() => {}} />
   );
 
-  expect(wrapper).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 // eslint-disable-next-line global-require

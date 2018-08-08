@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context from "../src/context";
+import Context, { scales } from "../src/context";
 import defaults from "../src/defaults";
 
 export default () => {
@@ -14,7 +14,7 @@ export default () => {
   });
 
   it("with inline scale", () => {
-    const scale = "large";
+    const scale = scales.large;
     const testInstance = TestRenderer.create(
       <Context.Provider value={{ theme: { scale } }}>
         <Context.Consumer>{context => context.theme.scale}</Context.Consumer>

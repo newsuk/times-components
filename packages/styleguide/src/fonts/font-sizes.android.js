@@ -1,3 +1,4 @@
+import { scales } from "@times-components/context";
 import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = scale => {
@@ -6,14 +7,14 @@ const fontSizes = scale => {
     button: 14
   };
   switch (scale) {
-    case "large":
+    case scales.large:
       return {
         ...defaultSizes,
         bodyMobile: 19,
         cardMetaMobile: 15,
         secondary: 18
       };
-    case "xlarge":
+    case scales.xlarge:
       return {
         ...defaultSizes,
         bodyMobile: 21,

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import timesStyleguide, {
+import styleguide, {
   colours,
   fonts,
   spacing
@@ -8,10 +8,10 @@ import timesStyleguide, {
 const styles = scale =>
   StyleSheet.create({
     container: {
-      marginBottom: 5,
-      marginLeft: 10,
-      marginRight: 10,
-      marginTop: 5
+      marginBottom: spacing(1),
+      marginLeft: spacing(2),
+      marginRight: spacing(2),
+      marginTop: spacing(1)
     },
     bullet: {
       backgroundColor: colours.functional.bullet,
@@ -31,7 +31,7 @@ const styles = scale =>
     },
     text: {
       color: colours.functional.primary,
-      ...timesStyleguide({ scale }).fontFactory({
+      ...styleguide({ scale }).fontFactory({
         font: "body",
         fontSize: "secondary"
       }),
@@ -41,10 +41,10 @@ const styles = scale =>
     },
     title: {
       fontFamily: fonts.supporting,
-      fontSize: timesStyleguide({ scale }).fontSizes.cardMetaMobile,
+      fontSize: styleguide({ scale }).fontSizes.cardMetaMobile,
       fontWeight: "400",
       letterSpacing: 1.2,
-      marginBottom: 20
+      marginBottom: spacing(4)
     }
   });
 

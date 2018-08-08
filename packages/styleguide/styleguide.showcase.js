@@ -35,7 +35,7 @@ const fontDisplayer = (fontFamily, phrase, fontSizes) =>
   ));
 
 const fontFixture = select => {
-  const scale = select("Scale", scales, "Large");
+  const scale = select("Scale", scales, scales.large);
   const styleguide = timesStyleguide({ scale });
   const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
   return (

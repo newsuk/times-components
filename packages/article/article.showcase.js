@@ -72,6 +72,8 @@ const renderArticle = (
   </Context.Provider>
 );
 
+const selectScales = select => select("Scale", scales, scales.medium);
+
 export default {
   name: "Pages/Article",
   children: [
@@ -79,7 +81,7 @@ export default {
       type: "story",
       name: "Default",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture()
         });
@@ -89,7 +91,7 @@ export default {
       type: "story",
       name: "Article with video asset",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({
             leadAsset: videoLeadAsset()
@@ -101,7 +103,7 @@ export default {
       type: "story",
       name: "Long Article",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ content: longContent })
         });
@@ -111,7 +113,7 @@ export default {
       type: "story",
       name: "Loading",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, { isLoading: true });
       }
     },
@@ -119,7 +121,7 @@ export default {
       type: "story",
       name: "Error",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           error: { message: "An example error." }
         });
@@ -129,7 +131,7 @@ export default {
       type: "story",
       name: "With Provider",
       component: ({ select, text }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         const predefinedArticles = {
           "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
           "1a576df6-cb50-11e4-81dd-064fe933cd41":
@@ -190,7 +192,7 @@ export default {
       name: "Fixtures - Full",
       platform: "web",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return (
           <div>
             <a
@@ -212,7 +214,7 @@ export default {
       name: "Fixtures - Full",
       platform: "native",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture()
         });
@@ -222,7 +224,7 @@ export default {
       type: "story",
       name: "Fixtures - Byline with author profile",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ byline: bylineWithLink })
         });
@@ -232,7 +234,7 @@ export default {
       type: "story",
       name: "Fixtures - No ads",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ withAds: false })
         });
@@ -242,7 +244,7 @@ export default {
       type: "story",
       name: "Fixtures - No standfirst",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ standfirst: null })
         });
@@ -252,7 +254,7 @@ export default {
       type: "story",
       name: "Fixtures - No label",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null })
         });
@@ -262,7 +264,7 @@ export default {
       type: "story",
       name: "Fixtures - No flags",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null })
         });
@@ -272,7 +274,7 @@ export default {
       type: "story",
       name: "Fixtures - No standfirst, no label",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null, standfirst: null })
         });
@@ -282,7 +284,7 @@ export default {
       type: "story",
       name: "Fixtures - No standfirst, no flags",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, standfirst: null })
         });
@@ -292,7 +294,7 @@ export default {
       type: "story",
       name: "Fixtures - No label, no flags",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, label: null })
         });
@@ -302,7 +304,7 @@ export default {
       type: "story",
       name: "Fixtures - No label, no flags, no standfirst",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({
             flags: null,
@@ -316,7 +318,7 @@ export default {
       type: "story",
       name: "Fixtures - No lead asset",
       component: ({ select }, { decorateAction }) => {
-        const scale = select("Scale", scales, "medium");
+        const scale = selectScales(select);
         return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ leadAsset: null })
         });

@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Animations should have a FadeIn animation wrapper component 1`] = `
+exports[`1. font factory should provide a font family, font size and line height that is default scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`2. font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 21,
+  "lineHeight": 31,
+}
+`;
+
+exports[`3. font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 23,
+  "lineHeight": 33,
+}
+`;
+
+exports[`4. font sizes should give a correct font size for a correct reference scaled to default 1`] = `17`;
+
+exports[`5. font sizes should give a correct font size for a correct reference scaled to "large" 1`] = `21`;
+
+exports[`6. font sizes should give a correct font size for a correct reference scaled to "xlarge" 1`] = `17`;
+
+exports[`7. line height factory should give a correct line height for a correct reference scaled to default 1`] = `33`;
+
+exports[`8. line height factory should give a correct line height for a correct reference scaled to "large" 1`] = `31`;
+
+exports[`9. line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `33`;
+
+exports[`10. animations should have a fadein animation wrapper component 1`] = `
 <View
   style={
     Object {
@@ -14,7 +50,7 @@ exports[`Animations should have a FadeIn animation wrapper component 1`] = `
 </View>
 `;
 
-exports[`Animations should have a FadeIn animation wrapper component 2`] = `
+exports[`10. animations should have a fadein animation wrapper component 2`] = `
 <View
   style={
     Object {
@@ -27,39 +63,3 @@ exports[`Animations should have a FadeIn animation wrapper component 2`] = `
   </Text>
 </View>
 `;
-
-exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 21,
-  "lineHeight": 31,
-}
-`;
-
-exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is default scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 16,
-  "lineHeight": 27,
-}
-`;
-
-exports[`Styleguide Factory Font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 23,
-  "lineHeight": 33,
-}
-`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to "large" 1`] = `21`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to "xlarge" 1`] = `17`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to default 1`] = `17`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "large" 1`] = `31`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `33`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to default 1`] = `33`;

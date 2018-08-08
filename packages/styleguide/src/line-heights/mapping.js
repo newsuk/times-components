@@ -1,8 +1,9 @@
+import { scales } from "@times-components/context";
 import mappingBase from "./mapping-base";
 
 const mapping = ({ scale }) => {
   switch (scale) {
-    case "large":
+    case scale.large:
       return {
         ...mappingBase,
         body: {
@@ -11,7 +12,7 @@ const mapping = ({ scale }) => {
           secondary: 31
         }
       };
-    case "xlarge":
+    case scales.xlarge:
       return {
         ...mappingBase,
         body: {

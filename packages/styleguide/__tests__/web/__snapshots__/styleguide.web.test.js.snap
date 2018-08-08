@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Animations should have a FadeIn animation wrapper component 1`] = `
+exports[`1. font factory should provide a font family, font size and line height that is default scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`2. font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`3. font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`4. font sizes should give a correct font size for a correct reference scaled to default 1`] = `17`;
+
+exports[`5. font sizes should give a correct font size for a correct reference scaled to "large" 1`] = `17`;
+
+exports[`6. font sizes should give a correct font size for a correct reference scaled to "xlarge" 1`] = `17`;
+
+exports[`7. line height factory should give a correct line height for a correct reference scaled to default 1`] = `27`;
+
+exports[`8. line height factory should give a correct line height for a correct reference scaled to "large" 1`] = `27`;
+
+exports[`9. line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `27`;
+
+exports[`10. animations should have a fadein animation wrapper component 1`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
@@ -15,7 +51,7 @@ exports[`Animations should have a FadeIn animation wrapper component 1`] = `
 </div>
 `;
 
-exports[`Animations should have a FadeIn animation wrapper component 2`] = `
+exports[`10. animations should have a fadein animation wrapper component 2`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
@@ -29,39 +65,3 @@ exports[`Animations should have a FadeIn animation wrapper component 2`] = `
   </div>
 </div>
 `;
-
-exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 16,
-  "lineHeight": 27,
-}
-`;
-
-exports[`Styleguide Factory Font factory should provide a font family, font size and line height that is default scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 16,
-  "lineHeight": 27,
-}
-`;
-
-exports[`Styleguide Factory Font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference 1`] = `
-Object {
-  "fontFamily": "TimesDigitalW04",
-  "fontSize": 16,
-  "lineHeight": 27,
-}
-`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to "large" 1`] = `17`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to "xlarge" 1`] = `17`;
-
-exports[`Styleguide Factory Font sizes should give a correct font size for a correct reference scaled to default 1`] = `17`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "large" 1`] = `27`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `27`;
-
-exports[`Styleguide Factory Line height factory should give a correct line height for a correct reference scaled to default 1`] = `27`;

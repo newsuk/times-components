@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import timesStyleguide from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
 const androidStyles = scale => {
-  const { spacing } = timesStyleguide({ scale });
+  const { spacing } = styleguide({ scale });
 
   return {
     ...sharedStyles(scale),

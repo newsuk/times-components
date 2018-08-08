@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import Context from "@times-components/context";
+import Context, { scales } from "@times-components/context";
 import Article from "../src/article";
 import articleFixture, {
   testFixture,
@@ -493,6 +493,26 @@ const negativeTests = [
       });
 
       expect(textNodes).toEqual([]);
+    }
+  },
+  {
+    name: "an article with no standfirst",
+    test() {
+      const testInstance = TestRenderer.create(
+        <Context.Provider value={{ theme: { scale: scales.xlarge } }}>
+          <Article
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            article={articleFixture({ ...testFixture })}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        </Context.Provider>
+      );
+      expect(testInstance).toMatchSnapshot();
     }
   }
 ];
