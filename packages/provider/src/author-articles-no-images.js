@@ -1,5 +1,14 @@
 import React from "react";
-import AuthorArticlesNoImagesProvider from "./author-articles-no-images-base";
+import {
+  authorArticlesNoImages,
+  authorArticlesNoImagesPTV
+} from "@times-components/provider-queries";
+import connectGraphql from "./connect";
+
+const AuthorArticlesNoImagesProvider = connectGraphql(
+  authorArticlesNoImages,
+  authorArticlesNoImagesPTV
+);
 
 export default props => (
   <AuthorArticlesNoImagesProvider

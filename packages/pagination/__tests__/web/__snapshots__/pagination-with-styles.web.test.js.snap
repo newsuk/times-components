@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c4 {
+  display: none;
 }
 
 .c1 {
@@ -46,18 +40,24 @@ exports[`1. renders 1`] = `
   border-top-width: 1px;
 }
 
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c4 {
-  display: none;
-}
-
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c4 {
+    display: inline;
   }
 }
 
@@ -76,15 +76,15 @@ exports[`1. renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
-    display: inline;
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -320,21 +320,6 @@ exports[`1. renders 1`] = `
 `;
 
 exports[`2. renders with no results 1`] = `
-.c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c1 {
   border-style: solid;
   -webkit-align-items: center;
@@ -353,6 +338,21 @@ exports[`2. renders with no results 1`] = `
   border-bottom-width: 1px;
   border-top-color: #DBDBDB;
   border-top-width: 1px;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width:768px) {

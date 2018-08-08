@@ -1,0 +1,28 @@
+[
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "This is the text for paragraph one"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "This is the text for paragraph two"
+        },
+        "children": []
+      }
+    ]
+  }
+]

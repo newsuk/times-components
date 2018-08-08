@@ -38,5 +38,3 @@ exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
   Some text
 </div>
 `;
-
-exports[`hoist-style should not hoist an empty style 1`] = `<svg />`;

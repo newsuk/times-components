@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no renderers 1`] = `null`;
+
+exports[`2. mixture of tags 1`] = `
+<div>
+  <div>
+    <a
+      href="http://www.google.com"
+    >
+      some link here
+    </a>
+  </div>
+</div>
+`;
+
+exports[`3. nested tags 1`] = `
+<div>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+     after it too
+  </div>
+   and here
+</div>
+`;
+
+exports[`4. ignore children of nested tags 1`] = `
+<div>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+    <special />
+     after it too
+  </div>
+   and here
+</div>
+`;
+
+exports[`5. provide ast of node 1`] = `
+Array [
+  Array [],
+  Array [
+    Array [],
+    Array [
+      Array [],
+      Array [
+        Array [],
+      ],
+    ],
+    <special>
+      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
+    </special>,
+    Array [],
+  ],
+  Array [],
+]
+`;
+
+exports[`6. provide ast of node for child 1`] = `
+Array [
+  <div>
+    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
+  </div>,
+  Array [
+    <div>
+      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
+    </div>,
+    Array [
+      <div>
+        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
+      </div>,
+      Array [
+        <div>
+          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
+        </div>,
+      ],
+    ],
+    Array [],
+    <div>
+      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
+    </div>,
+  ],
+  <div>
+    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
+  </div>,
+]
+`;
+
+exports[`7. provide empty children 1`] = `
+Array [
+  <div>
+    0
+  </div>,
+  Array [
+    <div>
+      0
+    </div>,
+    Array [
+      <div>
+        0
+      </div>,
+      Array [
+        <div>
+          0
+        </div>,
+      ],
+    ],
+    Array [],
+    <div>
+      0
+    </div>,
+  ],
+  <div>
+    0
+  </div>,
+]
+`;
+
+exports[`8. wrapped tags 1`] = `
+<div>
+  Camilla Long is 
+  <em>
+    the Sunday Times
+  </em>
+   film critic. She also writes interviews and a column, and was named 
+  <strong>
+    interviewer of the year
+  </strong>
+   at the British Press Awards in 2010 and 2016.
+</div>
+`;
+
+exports[`9. multiple children 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;

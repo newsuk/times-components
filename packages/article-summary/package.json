@@ -66,6 +66,7 @@
     "@times-components/article-label": "2.1.1",
     "@times-components/date-publication": "0.18.1",
     "@times-components/markup": "2.2.1",
+    "@times-components/markup-forest": "0.0.1",
     "@times-components/styleguide": "2.3.0",
     "@times-components/video-label": "2.1.1",
     "prop-types": "15.6.2"

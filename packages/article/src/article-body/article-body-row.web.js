@@ -1,9 +1,13 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
+import Ad from "@times-components/ad";
 import ArticleImage from "@times-components/article-image";
 import KeyFacts from "@times-components/key-facts";
-import { renderTrees } from "@times-components/markup";
+import { renderTree } from "@times-components/markup-forest";
+import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
@@ -28,8 +32,34 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
+const styles = StyleSheet.create({
+  ad: {
+    borderTopColor: colours.functional.keyline,
+    borderBottomColor: colours.functional.keyline,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2),
+    marginBottom: spacing(6),
+    marginTop: spacing(6)
+  }
+});
+
 const ArticleRow = ({ content: { data, index } }) =>
-  renderTrees([data], {
+  renderTree(data, {
+    ...coreRenderers,
+    ad(key, attributes) {
+      return {
+        element: (
+          <Ad
+            key={key}
+            slotName="inline-ad"
+            style={styles.ad}
+            {...attributes}
+          />
+        )
+      };
+    },
     paragraph(key, attributes, children) {
       return {
         element: (

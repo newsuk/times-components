@@ -1,0 +1,49 @@
+[
+  {
+    "name": "text",
+    "attributes": {
+      "value": "Camilla Long is "
+    },
+    "children": []
+  },
+  {
+    "name": "italic",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "the Sunday Times"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "attributes": {
+      "value":
+        " film critic. She also writes interviews and a column, and was named "
+    },
+    "children": []
+  },
+  {
+    "name": "bold",
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "interviewer of the year"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "attributes": {
+      "value": " at the British Press Awards in 2010 and 2016."
+    },
+    "children": []
+  }
+]

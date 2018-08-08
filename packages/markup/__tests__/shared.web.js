@@ -1,14 +1,10 @@
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
+  enzymeRenderedSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
-  justChildren,
-  meltNative,
   minimalWebTransform,
-  propsNoChildren,
-  replaceTransform,
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
@@ -18,16 +14,9 @@ import shared from "./shared.base";
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
+    enzymeRenderedSerializer(),
     compose(
       stylePrinter,
-      replaceTransform({
-        Ad: propsNoChildren,
-        AdComposer: justChildren,
-        Broadcast: justChildren,
-        PullQuotes: propsNoChildren,
-        ...meltNative
-      }),
       flattenStyleTransform,
       hoistStyleTransform,
       minimalWebTransform,

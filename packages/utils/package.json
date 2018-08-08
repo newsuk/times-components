@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "apollo-cache-inmemory": "1.1.10",
-    "graphql": "0.13.1",
+    "graphql": "0.13.2",
     "lodash.omitby": "4.6.0",
     "react-native": "0.55.4"
   },

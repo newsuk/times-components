@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
-import Svg from "@times-components/svgs";
 import {
   addSerializers,
   compose,
@@ -50,18 +49,6 @@ describe("hoist-style should", () => {
         Some text
       </Text>
     );
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it("not hoist an empty style", () => {
-    addSerializers(
-      expect,
-      enzymeRenderedSerializer(),
-      compose(stylePrinter, hoistStyleTransform)
-    );
-
-    const wrapper = mount(<Svg />);
 
     expect(wrapper).toMatchSnapshot();
   });

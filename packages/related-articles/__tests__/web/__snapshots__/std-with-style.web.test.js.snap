@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c0 .imageContainerClass {
-  display: block;
-}
-
-.c0 .summaryHidden {
-  display: none;
-}
-
-.c0 .summary125Class {
-  display: block;
-}
-
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -30,6 +18,26 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 .imageContainerClass {
+  display: block;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
 .c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -45,12 +53,20 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c3 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width:768px) {
@@ -91,12 +107,6 @@ exports[`default styles 1`] = `
   }
 }
 
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
-    border-bottom-width: 0.5px;
-  }
-}
-
 @media (min-width:768px) {
   .c2 {
     -webkit-flex-direction: row;
@@ -109,16 +119,6 @@ exports[`default styles 1`] = `
 @media (min-width:1024px) {
   .c2 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
