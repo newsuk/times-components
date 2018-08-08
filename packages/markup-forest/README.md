@@ -12,7 +12,7 @@ render that node's children.
 For most usages you will want to use the
 [markup](https://github.com/newsuk/times-components/tree/master/packages/markup)
 package which provides renderers out of the box for all simple elements. These
-functions will only render elements they have a renderer, for with no fallback.
+functions will only render elements which have a renderer with no fallback.
 
 ## How to use
 
