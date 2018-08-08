@@ -2,10 +2,10 @@ import React from "react";
 import { iterator } from "@times-components/test-utils";
 import TestRenderer from "react-test-renderer";
 import renderTrees, { renderTree } from "../src/markup-forest";
-import bio from "../fixtures/bio.json";
-import mixture from "../fixtures/mixture.json";
-import nested from "../fixtures/nested.json";
-import paragraphs from "../fixtures/paragraphs.json";
+import bioAST from "../fixtures/bio.json";
+import mixtureAST from "../fixtures/mixture.json";
+import nestedAST from "../fixtures/nested.json";
+import paragraphAST from "../fixtures/paragraphs.json";
 
 iterator([
   {
@@ -36,7 +36,7 @@ iterator([
   {
     name: "mixture of tags",
     test: () => {
-      const output = renderTree(mixture, {
+      const output = renderTree(mixtureAST, {
         block(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren}</div>
@@ -64,7 +64,7 @@ iterator([
   {
     name: "nested tags",
     test: () => {
-      const output = renderTree(nested, {
+      const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren}</div>
@@ -88,7 +88,7 @@ iterator([
   {
     name: "ignore children of nested tags",
     test: () => {
-      const output = renderTree(nested, {
+      const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren}</div>
@@ -118,7 +118,7 @@ iterator([
   {
     name: "provide AST of node",
     test: () => {
-      const output = renderTree(nested, {
+      const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren}</div>
@@ -150,7 +150,7 @@ iterator([
   {
     name: "provide AST of node for child",
     test: () => {
-      const output = renderTree(nested, {
+      const output = renderTree(nestedAST, {
         text(key, attributes, renderedChildren, indx, node) {
           return {
             element: <div key={key}>{`special: ${JSON.stringify(node)}`}</div>
@@ -164,7 +164,7 @@ iterator([
   {
     name: "provide empty children",
     test: () => {
-      const output = renderTree(nested, {
+      const output = renderTree(nestedAST, {
         text(key, attributes, renderedChildren) {
           return {
             element: <div key={key}>{renderedChildren.length}</div>
@@ -180,7 +180,7 @@ iterator([
     test: () => {
       const output = TestRenderer.create(
         <div>
-          {renderTrees(bio, {
+          {renderTrees(bioAST, {
             bold(key, attributes, renderedChildren) {
               return {
                 element: <strong key={key}>{renderedChildren}</strong>
@@ -208,7 +208,7 @@ iterator([
     test: () => {
       const output = TestRenderer.create(
         <div>
-          {renderTrees(paragraphs, {
+          {renderTrees(paragraphAST, {
             paragraph(key, attributes, renderedChildren) {
               return {
                 element: <p key={key}>{renderedChildren}</p>
