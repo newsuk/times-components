@@ -58,7 +58,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   thirdCrop23: "https://crop23-3.io",
   thirdCrop169: "https://crop169-3.io",
   thirdHeadline: "Third Headline",
-  secondShortHeadline: "Third Short Headline",
+  thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
   thirdSummary160: testSummary(160),

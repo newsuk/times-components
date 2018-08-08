@@ -359,7 +359,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Third Short Headline
+                Second Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -399,7 +399,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                An example of a short headline
+                Third Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm

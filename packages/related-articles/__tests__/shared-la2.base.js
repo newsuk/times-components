@@ -20,6 +20,7 @@ const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   firstUrl: "https://first.io",
   secondCrop169: "https://crop169-2.io",
   secondHeadline: "Second Headline",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary175: testSummary(175),
   secondUrl: "https://second.io"

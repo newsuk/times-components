@@ -364,7 +364,7 @@ exports[`7. opinion and two support related articles 1`] = `
                     aria-level="3"
                     role="heading"
                   >
-                    Third Short Headline
+                    Second Short Headline
                   </h3>
                   <div />
                   <div>
@@ -403,7 +403,7 @@ exports[`7. opinion and two support related articles 1`] = `
                     aria-level="3"
                     role="heading"
                   >
-                    An example of a short headline
+                    Third Short Headline
                   </h3>
                   <div />
                   <div>
