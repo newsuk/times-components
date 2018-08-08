@@ -61,7 +61,9 @@ const renderArticle = (
       onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
         "onCommentGuidelinesPress"
       )}
-      onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
+      onCommentsPress={preventDefaultedAction(decorateAction)(
+        "onCommentsPress"
+      )}
       onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
       onRelatedArticlePress={preventDefaultedAction(decorateAction)(
         "onRelatedArticlePress"
