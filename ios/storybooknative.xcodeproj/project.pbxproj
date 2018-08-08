@@ -671,7 +671,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "storybooknative" */;
 			buildPhases = (
-				AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -1118,21 +1117,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\nexport SKIP_BUNDLING=true\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Integrate Haul with React Native";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash ../node_modules/haul/src/utils/haul-integrate.sh";
+			shellScript = "export NODE_BINARY=node\nexport SKIP_BUNDLING=true\nexport CLI_PATH=../node_modules/haul/bin/cli.js\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		EDF303902046FF5000831352 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
