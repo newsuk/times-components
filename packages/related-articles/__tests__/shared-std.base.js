@@ -19,6 +19,7 @@ const standard2ArticlesFixtureData = standard2ArticlesFixture({
   firstUrl: "https://first.io",
   secondCrop169: "https://crop2.io",
   secondHeadline: "Second Headline",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondUrl: "https://second.io"
 }).data;
