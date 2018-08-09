@@ -29,7 +29,7 @@
     "web",
     "gestures",
     "component"
-  ],
+  ], 
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/newsuk/times-components/issues"
