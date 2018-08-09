@@ -85,6 +85,7 @@
     "@times-components/markup": "3.0.0",
     "@times-components/markup-forest": "1.0.0",
     "@times-components/provider": "1.0.0",
+    "@times-components/provider-queries": "1.0.0",
     "@times-components/pull-quote": "3.0.0",
     "@times-components/related-articles": "3.0.0",
     "@times-components/responsive-styles": "3.0.0",

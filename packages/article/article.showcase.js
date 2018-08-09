@@ -1,14 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
-
 import React from "react";
 import { addTypenameToDocument } from "apollo-utilities";
-
-import { ArticleProvider, articleQuery } from "@times-components/provider";
+import { ArticleProvider } from "@times-components/provider";
+import { article as articleQuery } from "@times-components/provider-queries";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
-
 import fullArticleFixture, {
   bylineWithLink,
   longContent,
