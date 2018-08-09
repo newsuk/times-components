@@ -11,6 +11,14 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   summary125: testSummary(125)
 }).data;
 
+const standard1ArticleNoShortHeadlineFixtureData = standard1ArticleFixture({
+  url: "https://test.io",
+  crop169: "https://crop.io",
+  headline: "Test Headline",
+  shortHeadline: "",
+  summary125: testSummary(125)
+}).data;
+
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
   firstCrop169: "https://crop1.io",
   firstHeadline: "First Headline",
@@ -49,6 +57,7 @@ export default util({
   fixture1: standard1ArticleFixtureData,
   fixture2: standard2ArticlesFixtureData,
   fixture3: standard3ArticlesFixtureData,
+  fixture4: standard1ArticleNoShortHeadlineFixtureData,
   one: "a single related article",
   three: "three related articles",
   template: "DEFAULT",

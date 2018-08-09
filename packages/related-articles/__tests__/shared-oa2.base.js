@@ -15,6 +15,20 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   summary225: testSummary(225)
 }).data;
 
+const opinionAndTwo1ArticleNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture(
+  {
+    url: "https://test.io",
+    crop23: "https://crop23.io",
+    crop169: "https://crop169.io",
+    headline: "Test Headline",
+    shortHeadline: "",
+    summary125: testSummary(125),
+    summary145: testSummary(145),
+    summary160: testSummary(160),
+    summary225: testSummary(225)
+  }
+).data;
+
 const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
   firstCrop23: "https://crop23-1.io",
   firstCrop169: "https://crop169-1.io",
@@ -70,6 +84,7 @@ export default util({
   fixture1: opinionAndTwo1ArticleFixtureData,
   fixture2: opinionAndTwo2ArticlesFixtureData,
   fixture3: opinionAndTwo3ArticlesFixtureData,
+  fixture4: opinionAndTwo1ArticleNoShortHeadlineFixtureData,
   one: "one opinion related article",
   three: "opinion and two support related articles",
   template: "OPINION_AND_TWO",

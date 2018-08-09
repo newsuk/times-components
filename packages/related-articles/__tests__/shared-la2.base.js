@@ -11,6 +11,14 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   url: "https://test.io"
 }).data;
 
+const leadAndTwo1ArticleNoShortHeadlineFixtureData = leadAndTwo1ArticleFixture({
+  crop169: "https://crop169.io",
+  headline: "Test Headline",
+  shortHeadline: "",
+  summary125: testSummary(125),
+  url: "https://test.io"
+}).data;
+
 const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   firstCrop169: "https://crop169-1.io",
   firstHeadline: "First Headline",
@@ -51,6 +59,7 @@ export default util({
   fixture1: leadAndTwo1ArticleFixtureData,
   fixture2: leadAndTwo2ArticlesFixtureData,
   fixture3: leadAndTwo3ArticlesFixtureData,
+  fixture4: leadAndTwo1ArticleNoShortHeadlineFixtureData,
   one: "one lead related article",
   three: "one lead and two support related articles",
   template: "OPINION_AND_TWO",
