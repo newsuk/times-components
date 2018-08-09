@@ -55,7 +55,7 @@ exports[`3. one lead related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Test Headline
+                Test Short Headline
               </Text>
               <View>
                 <Text>
@@ -144,7 +144,7 @@ exports[`5. one lead and one support related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -193,7 +193,7 @@ exports[`5. one lead and one support related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Second Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -280,7 +280,7 @@ exports[`7. one lead and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -329,7 +329,7 @@ exports[`7. one lead and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Second Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -369,7 +369,7 @@ exports[`7. one lead and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Third Headline
+                Third Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -425,4 +425,68 @@ Array [
     },
   ],
 ]
+`;
+
+exports[`10. no shortheadline 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://test.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop169.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text>
+                  LEADING ARTICLE
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+              <Text>
+                <Text>
+                  Deborah Haynes
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
 `;

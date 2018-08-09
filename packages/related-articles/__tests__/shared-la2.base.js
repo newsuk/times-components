@@ -6,6 +6,15 @@ import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles";
 const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   crop169: "https://crop169.io",
   headline: "Test Headline",
+  shortHeadline: "Test Short Headline",
+  summary125: testSummary(125),
+  url: "https://test.io"
+}).data;
+
+const leadAndTwo1ArticleNoShortHeadlineFixtureData = leadAndTwo1ArticleFixture({
+  crop169: "https://crop169.io",
+  headline: "Test Headline",
+  shortHeadline: "",
   summary125: testSummary(125),
   url: "https://test.io"
 }).data;
@@ -13,11 +22,13 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
 const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   firstCrop169: "https://crop169-1.io",
   firstHeadline: "First Headline",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
   firstUrl: "https://first.io",
   secondCrop169: "https://crop169-2.io",
   secondHeadline: "Second Headline",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary175: testSummary(175),
   secondUrl: "https://second.io"
@@ -26,16 +37,19 @@ const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
 const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
   firstCrop169: "https://crop169-1.io",
   firstHeadline: "First Headline",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
   firstUrl: "https://first.io",
   secondCrop169: "https://crop169-2.io",
   secondHeadline: "Second Headline",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary175: testSummary(175),
   secondUrl: "https://second.io",
   thirdCrop169: "https://crop169-3.io",
   thirdHeadline: "Third Headline",
+  thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary175: testSummary(175),
   thirdUrl: "https://third.io"
@@ -45,6 +59,7 @@ export default util({
   fixture1: leadAndTwo1ArticleFixtureData,
   fixture2: leadAndTwo2ArticlesFixtureData,
   fixture3: leadAndTwo3ArticlesFixtureData,
+  fixture4: leadAndTwo1ArticleNoShortHeadlineFixtureData,
   one: "one lead related article",
   three: "one lead and two support related articles",
   template: "OPINION_AND_TWO",

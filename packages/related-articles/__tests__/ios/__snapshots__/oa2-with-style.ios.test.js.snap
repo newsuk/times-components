@@ -116,7 +116,7 @@ exports[`default styles 1`] = `
                   }
                 }
               >
-                Test Headline
+                Test Short Headline
               </Text>
               <View
                 style={

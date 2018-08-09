@@ -70,7 +70,7 @@ exports[`3. one opinion related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Test Headline
+                Test Short Headline
               </Text>
               <View>
                 <Text>
@@ -169,7 +169,7 @@ exports[`5. one opinion and one support related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -213,7 +213,7 @@ exports[`5. one opinion and one support related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Second Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -315,7 +315,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                First Headline
+                First Short Headline
               </Text>
               <View>
                 <Text>
@@ -359,7 +359,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Second Headline
+                Second Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -399,7 +399,7 @@ exports[`7. opinion and two support related articles 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Third Headline
+                Third Short Headline
               </Text>
               <Text>
                 January 17 2018, 12:00pm
@@ -455,4 +455,78 @@ Array [
     },
   ],
 ]
+`;
+
+exports[`10. no shortheadline 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://test.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop23.io",
+              }
+            }
+            imageRatio={0.6135458167330677}
+            imageStyle={
+              Object {
+                "bottom": 0,
+                "marginTop": -140,
+                "maxWidth": "40%",
+                "minWidth": "40%",
+                "position": "relative",
+                "right": 0,
+              }
+            }
+            isReversed={true}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text>
+                  OPINION
+                </Text>
+              </View>
+              <Text>
+                <Text>
+                  Sathnam Sanghera
+                </Text>
+              </Text>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
 `;

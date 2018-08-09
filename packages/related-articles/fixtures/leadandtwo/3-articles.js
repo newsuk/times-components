@@ -1,6 +1,7 @@
 const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "Defence of the Realm";
+const defaultFirstShortHeadline = "Defence of the Realm";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -107,6 +108,7 @@ const defaultSecondTitle =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22";
 const defaultSecondHeadline = "Trident gets out of MoD budget, Hammond urged";
+const defaultSecondShortHeadline = "Trident gets out of MoD budget";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -227,6 +229,7 @@ const defaultSecondUrl =
 const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultThirdHeadline = "Size matters, say tiny ministers";
+const defaultThirdShortHeadline = "Size matters";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -389,6 +392,7 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstShortHeadline = defaultFirstShortHeadline,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -399,6 +403,7 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondShortHeadline = defaultSecondShortHeadline,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -409,6 +414,7 @@ export default (
     secondUrl = defaultSecondUrl,
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
+    thirdShortHeadline = defaultThirdShortHeadline,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -428,6 +434,7 @@ export default (
       {
         id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
         headline: firstHeadline,
+        shortHeadline: firstShortHeadline,
         section: "thedish",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -472,6 +479,7 @@ export default (
         },
         label: "defence cuts",
         headline: secondHeadline,
+        shortHeadline: secondShortHeadline,
         section: "sport",
         summary105: secondSummary105,
         summary125: secondSummary125,
@@ -507,6 +515,7 @@ export default (
         },
         label: "defence cuts | analysis",
         headline: thirdHeadline,
+        shortHeadline: thirdShortHeadline,
         section: "register",
         summary105: thirdSummary105,
         summary125: thirdSummary125,

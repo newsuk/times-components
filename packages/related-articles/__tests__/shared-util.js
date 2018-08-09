@@ -38,6 +38,7 @@ export default ({
   fixture1,
   fixture2,
   fixture3,
+  fixture4,
   one,
   template,
   three,
@@ -191,6 +192,18 @@ export default ({
         expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
           url: article.url
         });
+      }
+    },
+    {
+      name: "no shortHeadline",
+      test() {
+        const events = jest.fn();
+
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture4, events)} />
+        );
+
+        expect(output).toMatchSnapshot();
       }
     }
   ];

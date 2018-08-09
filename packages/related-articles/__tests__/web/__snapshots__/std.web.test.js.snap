@@ -56,7 +56,7 @@ exports[`3. a single related article 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Test Headline
+                  Test Short Headline
                 </h3>
                 <div>
                   <div>
@@ -150,7 +150,7 @@ exports[`5. two related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  First Headline
+                  First Short Headline
                 </h3>
                 <div>
                   <div>
@@ -198,7 +198,7 @@ exports[`5. two related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Second Headline
+                  Second Short Headline
                 </h3>
                 <div>
                   <div>
@@ -296,7 +296,7 @@ exports[`7. three related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  First Headline
+                  First Short Headline
                 </h3>
                 <div>
                   <div>
@@ -351,7 +351,7 @@ exports[`7. three related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Second Headline
+                  Second Short Headline
                 </h3>
                 <div>
                   <div>
@@ -406,7 +406,7 @@ exports[`7. three related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Third Headline
+                  Third Short Headline
                 </h3>
                 <div>
                   <div>
@@ -479,4 +479,73 @@ Array [
     },
   ],
 ]
+`;
+
+exports[`10. no shortheadline 1`] = `
+<div>
+  <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Related articles
+    </h3>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <Link
+            url="https://test.io"
+          >
+            <Card
+              image={
+                Object {
+                  "uri": "https://crop.io",
+                }
+              }
+              imageRatio={1.7777777777777777}
+              isReversed={false}
+              showImage={true}
+            >
+              <div>
+                <div>
+                  <div>
+                    BAYEUX TAPESTRY
+                  </div>
+                </div>
+                <h3
+                  aria-level="3"
+                  role="heading"
+                >
+                  Test Headline
+                </h3>
+                <div>
+                  <div>
+                    <span>
+                      
+                      Summary 125
+                      ...
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  March 13 2015, 06:54pm
+                </div>
+                <div>
+                  <span>
+                    Camilla Long
+                  </span>
+                  <span>
+                    , Environment Editor
+                  </span>
+                </div>
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
