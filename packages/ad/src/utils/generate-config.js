@@ -25,16 +25,17 @@ const getSizeMaps = slotName => {
     case "pixelteads":
     case "article-sponsored-ad":
       return sizes.pixel;
+    case "native-inline-ad":
+      return sizes.native;
     default:
       return sizes.intervention;
   }
 };
 
 // Returns the valid ad sizes given the ad slotName and window width
-const getAdSizes = (slotName, width) => {
-  const sizeMap = getSizeMaps(slotName);
-  for (let i = sizeMap.length - 1; i > 0; i -= 1) {
-    if (width > sizeMap[i].width) {
+const getAdSizes = (sizeMap, width) => {
+  for (let i = sizeMap.length - 1; i >= 0; i -= 1) {
+    if (width >= sizeMap[i].width) {
       return sizeMap[i].sizes;
     }
   }
@@ -42,8 +43,8 @@ const getAdSizes = (slotName, width) => {
 };
 
 const getSlotConfig = (slotName, width) => {
-  const adSizes = getAdSizes(slotName, width);
   const mappings = getSizeMaps(slotName);
+  const adSizes = getAdSizes(mappings, width);
   const maxSizes = getMaxSizes(adSizes);
 
   return {
