@@ -38,7 +38,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
         element: (
           <Ad
             key={key}
-            slotName="inline-ad"
+            slotName="native-inline-ad"
             style={styles.ad}
             {...attributes}
           />

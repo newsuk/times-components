@@ -54,6 +54,13 @@ const sizes = {
       sizes: [[1, 1]],
       width: 0
     }
+  ],
+  native: [
+    {
+      height: 250,
+      sizes: [[300, 250]],
+      width: 300
+    }
   ]
 };
 
