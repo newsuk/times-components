@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -36,9 +36,9 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.1.1",
-    "@times-components/jest-serializer": "2.1.1",
-    "@times-components/storybook": "2.2.1",
+    "@times-components/jest-configurator": "2.1.2",
+    "@times-components/jest-serializer": "3.0.0",
+    "@times-components/storybook": "3.0.0",
     "@times-components/webpack-configurator": "2.0.2",
     "babel-cli": "6.26.0",
     "depcheck": "0.6.9",
@@ -52,11 +52,11 @@
     "webpack": "4.6.0"
   },
   "dependencies": {
-    "@times-components/article": "3.3.0",
-    "@times-components/author-profile": "3.1.1",
-    "@times-components/provider": "0.41.0",
-    "@times-components/topic": "2.1.1",
-    "@times-components/utils": "2.2.1",
+    "@times-components/article": "4.0.0",
+    "@times-components/author-profile": "4.0.0",
+    "@times-components/provider": "1.0.0",
+    "@times-components/topic": "3.0.0",
+    "@times-components/utils": "3.0.0",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",

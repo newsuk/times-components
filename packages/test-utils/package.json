@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -17,7 +17,9 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "repository": {
     "type": "git",

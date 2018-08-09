@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Bulleted list of text data",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.1.1",
-    "@times-components/jest-serializer": "2.1.1",
-    "@times-components/storybook": "2.2.1",
-    "@times-components/test-utils": "0.3.1",
+    "@times-components/jest-configurator": "2.1.2",
+    "@times-components/jest-serializer": "3.0.0",
+    "@times-components/storybook": "3.0.0",
+    "@times-components/test-utils": "1.0.0",
     "@times-components/webpack-configurator": "2.0.2",
     "babel-cli": "6.26.0",
     "depcheck": "0.6.9",
@@ -57,11 +57,11 @@
     "webpack": "4.6.0"
   },
   "dependencies": {
-    "@times-components/link": "2.2.0",
-    "@times-components/markup": "2.2.1",
-    "@times-components/markup-forest": "0.0.1",
-    "@times-components/responsive-styles": "2.1.1",
-    "@times-components/styleguide": "2.3.0",
+    "@times-components/link": "3.0.0",
+    "@times-components/markup": "3.0.0",
+    "@times-components/markup-forest": "1.0.0",
+    "@times-components/responsive-styles": "3.0.0",
+    "@times-components/styleguide": "3.0.0",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
