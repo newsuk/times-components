@@ -1,5 +1,9 @@
+import {
+  addSerializers,
+  minimalNative
+} from "@times-components/jest-serializer";
 import shared from "../shared";
 
-describe("Error View test on android", () => {
-  shared();
-});
+addSerializers(expect, minimalNative);
+
+shared();

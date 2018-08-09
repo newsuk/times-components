@@ -1,12 +1,13 @@
 import React from "react";
 import { Text } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import PropTypes from "prop-types";
+import { iterator } from "@times-components/test-utils";
 import ErrorView from "../src/error-view";
 import InvokesError from "./invokes-error";
 import ThrowsError from "./throws-error";
 
-module.exports = () => {
+export default () => {
   const ErrorState = ({ error }) => <Text>{error.toString()}</Text>;
 
   ErrorState.propTypes = {
@@ -18,49 +19,54 @@ module.exports = () => {
 
   const GoodState = () => <Text>All good</Text>;
 
-  it("renders the error state if a component throws an error", () => {
-    const tree = renderer
-      .create(
-        <ErrorView>
-          {({ hasError, error }) =>
-            hasError ? <ErrorState error={error} /> : <ThrowsError />
-          }
-        </ErrorView>
-      )
-      .toJSON();
+  const tests = [
+    {
+      name: "error state if a component throws an error",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ErrorView>
+            {({ hasError, error }) =>
+              hasError ? <ErrorState error={error} /> : <ThrowsError />
+            }
+          </ErrorView>
+        );
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "error state if a component invokes an error",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ErrorView>
+            {({ hasError, onError, error }) =>
+              hasError ? (
+                <ErrorState error={error} />
+              ) : (
+                <InvokesError onError={onError} />
+              )
+            }
+          </ErrorView>
+        );
 
-  it("renders the error state if a component invokes an error", () => {
-    const tree = renderer
-      .create(
-        <ErrorView>
-          {({ hasError, onError, error }) =>
-            hasError ? (
-              <ErrorState error={error} />
-            ) : (
-              <InvokesError onError={onError} />
-            )
-          }
-        </ErrorView>
-      )
-      .toJSON();
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "good state if there is no error",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ErrorView>
+            {({ hasError, error }) =>
+              hasError ? <ErrorState error={error} /> : <GoodState />
+            }
+          </ErrorView>
+        );
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("does not render an error state if there is no error", () => {
-    const tree = renderer
-      .create(
-        <ErrorView>
-          {({ hasError, error }) =>
-            hasError ? <ErrorState error={error} /> : <GoodState />
-          }
-        </ErrorView>
-      )
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
+  iterator(tests);
 };

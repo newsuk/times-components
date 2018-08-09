@@ -1,5 +1,9 @@
+import {
+  addSerializers,
+  minimalNative
+} from "@times-components/jest-serializer";
 import shared from "../shared";
 
-describe("Error View test on iOS", () => {
-  shared();
-});
+addSerializers(expect, minimalNative);
+
+shared();
