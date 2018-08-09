@@ -31,7 +31,7 @@ export default () => {
           </ErrorView>
         );
 
-        expect(testInstance.toJSON()).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -49,7 +49,7 @@ export default () => {
           </ErrorView>
         );
 
-        expect(testInstance.toJSON()).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -63,7 +63,7 @@ export default () => {
           </ErrorView>
         );
 
-        expect(testInstance.toJSON()).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];
