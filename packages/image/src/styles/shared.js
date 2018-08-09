@@ -40,7 +40,7 @@ export const captionStyles = {
     marginTop: "40%"
   },
   text: {
-    color: "#FFF"
+    color: colours.functional.white
   }
 };
 
