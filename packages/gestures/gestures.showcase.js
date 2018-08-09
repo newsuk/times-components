@@ -1,31 +1,31 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fontSizes } from "@times-components/styleguide";
 import Gestures from "./src/gestures";
 
 const styles = StyleSheet.create({
-  gestures: {
-    flexGrow: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  },
   box: {
-    width: 200,
+    backgroundColor: "red",
     height: 200,
-    backgroundColor: "red"
+    width: 200
   },
-  row: {
-    flex: 1
+  eastWest: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between"
+  },
+  gestures: {
+    alignItems: "center",
+    flexGrow: 1,
+    justifyContent: "center"
   },
   north: {
     alignItems: "center",
     justifyContent: "flex-start"
   },
-  ew: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center"
+  row: {
+    flex: 1
   },
   south: {
     alignItems: "center",
@@ -48,14 +48,14 @@ export default {
     {
       type: "story",
       platform: "native",
-      name: "With a View",
+      name: "Default",
       component: () => (
         <Gestures style={styles.gestures}>
           <View style={styles.box}>
             <View style={[styles.row, styles.north]}>
               <Text style={styles.text}>N</Text>
             </View>
-            <View style={[styles.row, styles.ew]}>
+            <View style={[styles.row, styles.eastWest]}>
               <Text style={styles.text}>E</Text>
               <Text style={styles.text}>W</Text>
             </View>
