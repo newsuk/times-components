@@ -3,3 +3,4 @@ import defaults from "./defaults";
 
 export default createContext(defaults);
 export { default as scales } from "./defaults/scales";
+export { defaults };
