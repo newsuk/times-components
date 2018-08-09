@@ -1,6 +1,5 @@
 import React from "react";
-import { ImageBackground, Modal } from "react-native";
-import Link from "@times-components/link";
+import { ImageBackground } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -12,7 +11,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import "./mocks";
-import Image, { ModalImage } from "../src";
+import Image from "../src";
 import shared from "./shared.base";
 
 export default () => {
@@ -34,14 +33,6 @@ export default () => {
   };
 
   const tests = [
-    {
-      name: "modal image",
-      test() {
-        const testInstance = TestRenderer.create(<ModalImage {...props} />);
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
     {
       name: "prepend https schema",
       test: () => {
@@ -92,40 +83,6 @@ export default () => {
           testInstance.root.find(node => node.type === ImageBackground).props
             .source.uri
         ).toEqual(dataUri);
-      }
-    },
-    {
-      name: "handle onPress event on the link",
-      test: () => {
-        const testInstance = TestRenderer.create(<ModalImage {...props} />);
-
-        const [, openButton] = testInstance.root.findAll(
-          node => node.type === Link
-        );
-
-        openButton.props.onPress();
-
-        const modal = testInstance.root.find(node => node.type === Modal);
-
-        expect(modal.props.visible).toBe(true);
-      }
-    },
-    {
-      name: "handle onPress event on the close button",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} show />
-        );
-
-        const [closeButton] = testInstance.root.findAll(
-          node => node.type === Link
-        );
-
-        closeButton.props.onPress();
-
-        const modal = testInstance.root.find(node => node.type === Modal);
-
-        expect(modal.props.visible).toBe(false);
       }
     }
   ];
