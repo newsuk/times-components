@@ -24,8 +24,8 @@ ArticleLeadAssetImage.propTypes = {
 };
 
 ArticleLeadAssetImage.defaultProps = {
-  caption: "",
-  credits: ""
+  caption: null,
+  credits: null
 };
 
 export default ArticleLeadAssetImage;
