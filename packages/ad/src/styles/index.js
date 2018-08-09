@@ -37,6 +37,10 @@ const styles = StyleSheet.create({
   children: {
     flex: 1
   },
+  container: {
+    alignItems: "center",
+    flex: 1
+  },
   placeholderContainer: {
     alignItems: "center",
     flex: 1,
