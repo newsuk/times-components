@@ -53,11 +53,10 @@ class ModalImage extends Component {
             <View style={styles.buttonContainer}>
               <Button onPress={this.hideModal}>{closeButton}</Button>
             </View>
-            <Caption credits={credits} style={captionStyles} text={caption}>
-              <Gestures style={styles.imageContainer}>
-                <Image {...this.props} style={styles.image} />
-              </Gestures>
-            </Caption>
+            <Gestures style={styles.imageContainer}>
+              <Image {...this.props} style={styles.image} />
+            </Gestures>
+            <Caption credits={credits} style={captionStyles} text={caption} />
           </View>
         </Modal>
         <Button onPress={this.showModal}>

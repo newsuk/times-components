@@ -36,8 +36,7 @@ const styles = {
 export const captionStyles = {
   container: {
     marginBottom: 14,
-    marginHorizontal: 16,
-    marginTop: "40%"
+    marginHorizontal: 16
   },
   text: {
     color: colours.functional.white

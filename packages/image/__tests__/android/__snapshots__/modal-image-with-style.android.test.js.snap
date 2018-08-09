@@ -31,94 +31,93 @@ exports[`1. default modal 1`] = `
           </Svg>
         </View>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
         <View
           style={
             Object {
               "flexGrow": 1,
+              "justifyContent": "center",
             }
           }
         >
           <View
             style={
               Object {
-                "flexGrow": 1,
-                "justifyContent": "center",
+                "transform": Array [
+                  Object {
+                    "scale": 1,
+                  },
+                  Object {
+                    "rotate": "0 deg",
+                  },
+                  Object {
+                    "perspective": 1000,
+                  },
+                ],
               }
             }
           >
             <View
               style={
                 Object {
-                  "transform": Array [
-                    Object {
-                      "scale": 1,
-                    },
-                    Object {
-                      "rotate": "0 deg",
-                    },
-                    Object {
-                      "perspective": 1000,
-                    },
-                  ],
+                  "opacity": 1,
+                  "width": "100%",
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "opacity": 1,
+                    "height": "100%",
                     "width": "100%",
                   }
                 }
               >
-                <View
+                <Image
                   style={
                     Object {
+                      "bottom": 0,
                       "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
                       "width": "100%",
                     }
                   }
-                >
-                  <Image
-                    style={
-                      Object {
-                        "bottom": 0,
-                        "height": "100%",
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                        "width": "100%",
-                      }
+                />
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
                     }
-                  />
-                  <View
+                  }
+                >
+                  <Gradient
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
-                  >
-                    <Gradient
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
+                  />
                 </View>
               </View>
             </View>
           </View>
         </View>
+      </View>
+      <View>
         <View
           style={
             Object {
               "marginBottom": 14,
               "marginHorizontal": 16,
-              "marginTop": "40%",
               "paddingTop": 10,
             }
           }
