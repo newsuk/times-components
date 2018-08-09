@@ -456,3 +456,70 @@ Array [
   ],
 ]
 `;
+
+exports[`10. no shortheadline 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://test.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text>
+                  BAYEUX TAPESTRY
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long
+                </Text>
+                <Text>
+                  , Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;
