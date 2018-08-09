@@ -23,7 +23,7 @@ export default () => {
   const tests = [
     {
       name: "gradient with no angle",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient />);
 
         expect(testInstance).toMatchSnapshot();
@@ -31,7 +31,7 @@ export default () => {
     },
     {
       name: "gradient with an angle (-45)",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient degrees={-45} />);
 
         expect(testInstance).toMatchSnapshot();
@@ -39,7 +39,7 @@ export default () => {
     },
     {
       name: "gradient with an angle (45)",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient degrees={45} />);
 
         expect(testInstance).toMatchSnapshot();
@@ -47,7 +47,7 @@ export default () => {
     },
     {
       name: "gradient with an angle (90)",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient degrees={90} />);
 
         expect(testInstance).toMatchSnapshot();
@@ -55,7 +55,7 @@ export default () => {
     },
     {
       name: "gradient with an angle (180)",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient degrees={180} />);
 
         expect(testInstance).toMatchSnapshot();
@@ -63,7 +63,7 @@ export default () => {
     },
     {
       name: "gradient with an angle (270)",
-      test: () => {
+      test() {
         const testInstance = TestRenderer.create(<Gradient degrees={270} />);
 
         expect(testInstance).toMatchSnapshot();

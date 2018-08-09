@@ -1,11 +1,9 @@
-import PropTypes from "prop-types";
 import React from "react";
-import { View, ViewPropTypes } from "react-native";
+import { View } from "react-native";
 import { colours } from "@times-components/styleguide";
+import { defaultProps, propTypes } from "./gradient-prop-types";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
-const Gradient = ({ degrees, children, style }) => (
+const Gradient = ({ children, degrees, style }) => (
   <View
     style={[
       {
@@ -20,19 +18,7 @@ const Gradient = ({ degrees, children, style }) => (
   </View>
 );
 
-Gradient.defaultProps = {
-  degrees: 265,
-  children: null,
-  style: null
-};
-
-Gradient.propTypes = {
-  degrees: PropTypes.number,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]),
-  style: ViewPropTypesStyle
-};
+Gradient.propTypes = propTypes;
+Gradient.defaultProps = defaultProps;
 
 export default Gradient;

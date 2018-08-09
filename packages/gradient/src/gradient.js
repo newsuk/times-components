@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { StyleSheet, View, ViewPropTypes, ART } from "react-native";
+import { ART, StyleSheet, View } from "react-native";
 import { colours } from "@times-components/styleguide";
+import { defaultProps, propTypes } from "./gradient-prop-types";
 
-const { Surface, Shape, LinearGradient, Path } = ART;
+const { LinearGradient, Path, Shape, Surface } = ART;
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -36,8 +35,8 @@ class Gradient extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: 0,
-      height: 0
+      height: 0,
+      width: 0
     };
   }
 
@@ -46,8 +45,8 @@ class Gradient extends Component {
   };
 
   render() {
-    const { width, height } = this.state;
-    const { degrees, children, style } = this.props;
+    const { height, width } = this.state;
+    const { children, degrees, style } = this.props;
 
     const { start, end } = angleToPoints((degrees + 90) / 180 * Math.PI);
 
@@ -82,19 +81,7 @@ class Gradient extends Component {
   }
 }
 
-Gradient.defaultProps = {
-  degrees: 265,
-  children: null,
-  style: null
-};
-
-Gradient.propTypes = {
-  degrees: PropTypes.number,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]),
-  style: ViewPropTypesStyle
-};
+Gradient.propTypes = propTypes;
+Gradient.defaultProps = defaultProps;
 
 export default Gradient;

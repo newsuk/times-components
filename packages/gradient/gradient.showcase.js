@@ -1,33 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { Text } from "react-native";
 import Gradient from "./src/gradient";
-
-const styles = StyleSheet.create({
-  container: {
-    margin: 10
-  }
-});
-
-const Component = ({ children, ...props }) => (
-  <View
-    style={{
-      flex: 1,
-      height: 250,
-      width: "100%"
-    }}
-  >
-    <Gradient {...props}>{children}</Gradient>
-  </View>
-);
-
-Component.defaultProps = {
-  children: null
-};
-
-Component.propTypes = {
-  children: PropTypes.element
-};
 
 export default {
   name: "Primitives/Gradient",
@@ -36,77 +10,36 @@ export default {
       type: "story",
       name: "Default",
       component: () => (
-        <Component
+        <Gradient
           style={{
-            flex: 1
+            flex: 1,
+            height: 250,
+            width: "100%"
           }}
         />
       )
     },
     {
       type: "story",
-      name: "With Styles",
+      name: "With Children",
       component: () => (
-        <Component
-          style={[
-            {
-              width: 200
-            },
-            {
-              height: 200
-            }
-          ]}
-        />
-      )
-    },
-    {
-      type: "story",
-      name: "With stylesheets",
-      component: () => (
-        <Component
-          degrees={270}
-          style={[
-            styles.container,
-            {
-              width: 200,
-              height: 200
-            }
-          ]}
-        />
-      )
-    },
-    {
-      type: "story",
-      name: "With Angle (90)",
-      component: () => (
-        <Component
-          degrees={90}
+        <Gradient
           style={{
-            width: 200,
-            height: 200
+            flex: 1,
+            height: 250,
+            width: "100%"
           }}
-        />
+        >
+          <Text>Some example text.</Text>
+        </Gradient>
       )
     },
     {
       type: "story",
-      name: "With Angle (180)",
-      component: () => (
-        <Component
-          degrees={180}
-          style={{
-            width: 200,
-            height: 200
-          }}
-        />
-      )
-    },
-    {
-      type: "story",
-      name: "With Angle (270)",
-      component: () => (
-        <Component
-          degrees={270}
+      name: "With Dynamic Angles",
+      component: ({ number }) => (
+        <Gradient
+          degrees={number("Gradient Angle: ", 90)}
           style={{
             width: 200,
             height: 200
