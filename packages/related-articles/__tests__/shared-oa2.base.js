@@ -1,4 +1,10 @@
-import util, { testSummary } from "./shared-util";
+import {
+  noArticlesTests,
+  oneArticleTests,
+  twoArticlesTests,
+  threeArticlesTests,
+  testSummary
+} from "./shared-util";
 import opinionAndTwo1ArticleFixture from "../fixtures/opinionandtwo/1-article";
 import opinionAndTwo2ArticlesFixture from "../fixtures/opinionandtwo/2-articles";
 import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles";
@@ -60,12 +66,22 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   thirdUrl: "https://third.io"
 }).data;
 
-export default util({
-  fixture1: opinionAndTwo1ArticleFixtureData,
-  fixture2: opinionAndTwo2ArticlesFixtureData,
-  fixture3: opinionAndTwo3ArticlesFixtureData,
-  one: "one opinion related article",
-  three: "opinion and two support related articles",
-  template: "OPINION_AND_TWO",
-  two: "one opinion and one support related article"
+export const sharedNoArticles = noArticlesTests({
+  fixture: opinionAndTwo1ArticleFixtureData,
+  template: "OPINION_AND_TWO"
+});
+
+export const sharedOneArticle = oneArticleTests({
+  fixture: opinionAndTwo1ArticleFixtureData,
+  name: "one opinion related article"
+});
+
+export const sharedTwoArticles = twoArticlesTests({
+  fixture: opinionAndTwo2ArticlesFixtureData,
+  name: "one opinion and one support related article"
+});
+
+export const sharedThreeArticles = threeArticlesTests({
+  fixture: opinionAndTwo3ArticlesFixtureData,
+  name: "one opinion and two support related articles"
 });

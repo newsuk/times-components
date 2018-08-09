@@ -1,4 +1,10 @@
-import util, { testSummary } from "./shared-util";
+import {
+  noArticlesTests,
+  oneArticleTests,
+  twoArticlesTests,
+  threeArticlesTests,
+  testSummary
+} from "./shared-util";
 import standard1ArticleFixture from "../fixtures/standard/1-article";
 import standard2ArticlesFixture from "../fixtures/standard/2-articles";
 import standard3ArticlesFixture from "../fixtures/standard/3-articles";
@@ -39,12 +45,22 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   thirdUrl: "https://third.io"
 }).data;
 
-export default util({
-  fixture1: standard1ArticleFixtureData,
-  fixture2: standard2ArticlesFixtureData,
-  fixture3: standard3ArticlesFixtureData,
-  one: "a single related article",
-  three: "three related articles",
-  template: "DEFAULT",
-  two: "two related articles"
+export const sharedNoArticles = noArticlesTests({
+  fixture: standard1ArticleFixtureData,
+  template: "DEFAULT"
+});
+
+export const sharedOneArticle = oneArticleTests({
+  fixture: standard1ArticleFixtureData,
+  name: "a single related article"
+});
+
+export const sharedTwoArticles = twoArticlesTests({
+  fixture: standard2ArticlesFixtureData,
+  name: "two related articles"
+});
+
+export const sharedThreeArticles = threeArticlesTests({
+  fixture: standard3ArticlesFixtureData,
+  name: "three related articles"
 });
