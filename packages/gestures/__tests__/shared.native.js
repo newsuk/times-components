@@ -1,9 +1,8 @@
 import React from "react";
 import { Text } from "react-native";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
-  enzymeRenderedSerializer,
   minimalNative
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -25,7 +24,7 @@ const makeTouchEvent = (active, history = []) => ({
 });
 
 const renderComponent = () =>
-  shallow(
+  TestRenderer.create(
     <Gesture>
       <Text>Hello world!</Text>
     </Gesture>
@@ -38,16 +37,16 @@ const gestureHandlers = component => {
 };
 
 const touchAndMove = (startTouchPositions, endTouchPositions) => {
-  const component = renderComponent();
+  const testRenderer = renderComponent();
 
   const { onResponderStart, onResponderMove } = gestureHandlers(
-    component.instance()
+    testRenderer.getInstance()
   );
 
   onResponderStart(makeTouchEvent(startTouchPositions));
   onResponderMove(makeTouchEvent(endTouchPositions, startTouchPositions));
 
-  return component;
+  return testRenderer;
 };
 
 export default () => {
@@ -55,13 +54,13 @@ export default () => {
     beforeAll(() => jest.useFakeTimers());
     afterAll(() => jest.useRealTimers());
 
-    addSerializers(expect, enzymeRenderedSerializer(), minimalNative);
+    addSerializers(expect, minimalNative);
 
     const tests = [
       {
         name: "scale correctly when spreading fingers",
         test() {
-          const component = touchAndMove(
+          const testRenderer = touchAndMove(
             [
               {
                 x: 50,
@@ -84,13 +83,13 @@ export default () => {
             ]
           );
 
-          expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          expect(testRenderer).toMatchSnapshot();
         }
       },
       {
         name: "rotate anti-clockwise when turning fingers",
         test() {
-          const component = touchAndMove(
+          const testRenderer = touchAndMove(
             [
               {
                 x: 50,
@@ -113,13 +112,13 @@ export default () => {
             ]
           );
 
-          expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          expect(testRenderer).toMatchSnapshot();
         }
       },
       {
         name: "rotate clockwise when turning fingers",
         test() {
-          const component = touchAndMove(
+          const testRenderer = touchAndMove(
             [
               {
                 x: 50,
@@ -142,13 +141,13 @@ export default () => {
             ]
           );
 
-          expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          expect(testRenderer).toMatchSnapshot();
         }
       },
       {
         name: "scale and rotate when spreading and rotating fingers",
         test() {
-          const component = touchAndMove(
+          const testRenderer = touchAndMove(
             [
               {
                 x: 50,
@@ -171,7 +170,7 @@ export default () => {
             ]
           );
 
-          expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          expect(testRenderer).toMatchSnapshot();
         }
       },
       {
@@ -195,15 +194,15 @@ export default () => {
             }
           ];
 
-          const component = touchAndMove(start, end);
+          const testRenderer = touchAndMove(start, end);
 
-          expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          expect(testRenderer).toMatchSnapshot();
         }
       },
       {
         name: "animate back to the start after release",
         test() {
-          const component = touchAndMove(
+          const testRenderer = touchAndMove(
             [
               {
                 x: 50,
@@ -226,12 +225,14 @@ export default () => {
             ]
           );
 
-          const { onResponderRelease } = gestureHandlers(component.instance());
+          const { onResponderRelease } = gestureHandlers(
+            testRenderer.getInstance()
+          );
 
           onResponderRelease();
 
           // snapshots keep changing values, so have commented out this snapshot
-          // expect(component.find("AnimatedComponent")).toMatchSnapshot();
+          // expect(testRenderer).toMatchSnapshot();
         }
       },
       {
@@ -242,7 +243,7 @@ export default () => {
             onMoveShouldSetResponder,
             onStartShouldSetResponderCapture,
             onMoveShouldSetResponderCapture
-          } = gestureHandlers(renderComponent().instance());
+          } = gestureHandlers(renderComponent().getInstance());
 
           const emptyTouchEvent = makeTouchEvent([{ x: 50, y: 50 }], []);
 
@@ -269,7 +270,7 @@ export default () => {
             onMoveShouldSetResponder,
             onStartShouldSetResponderCapture,
             onMoveShouldSetResponderCapture
-          } = gestureHandlers(renderComponent().instance());
+          } = gestureHandlers(renderComponent().getInstance());
 
           const emptyTouchEvent = makeTouchEvent(
             [
