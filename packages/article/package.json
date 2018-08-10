@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -73,7 +73,7 @@
     "@times-components/ad": "2.1.4",
     "@times-components/article-byline": "3.0.2",
     "@times-components/article-flag": "2.1.4",
-    "@times-components/article-image": "3.1.0",
+    "@times-components/article-image": "3.1.1",
     "@times-components/article-label": "2.1.4",
     "@times-components/article-topics": "3.1.4",
     "@times-components/button": "2.1.4",
