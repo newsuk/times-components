@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. font factory should provide a font family, font size and line height that is default scaled for a correct reference 1`] = `
+exports[`1. font factory default scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
   "fontSize": 16,
@@ -8,7 +8,7 @@ Object {
 }
 `;
 
-exports[`2. font factory should provide a font family, font size and line height that is "large" scaled for a correct reference 1`] = `
+exports[`2. font factory large scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
   "fontSize": 21,
@@ -16,7 +16,7 @@ Object {
 }
 `;
 
-exports[`3. font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference 1`] = `
+exports[`3. font factory xlarge scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
   "fontSize": 23,
@@ -24,19 +24,7 @@ Object {
 }
 `;
 
-exports[`4. font sizes should give a correct font size for a correct reference scaled to default 1`] = `17`;
-
-exports[`5. font sizes should give a correct font size for a correct reference scaled to "large" 1`] = `21`;
-
-exports[`6. font sizes should give a correct font size for a correct reference scaled to "xlarge" 1`] = `17`;
-
-exports[`7. line height factory should give a correct line height for a correct reference scaled to default 1`] = `33`;
-
-exports[`8. line height factory should give a correct line height for a correct reference scaled to "large" 1`] = `31`;
-
-exports[`9. line height factory should give a correct line height for a correct reference scaled to "xlarge" 1`] = `33`;
-
-exports[`10. animations should have a fadein animation wrapper component 1`] = `
+exports[`4. animations should have a fadein animation wrapper component 1`] = `
 <View
   style={
     Object {
@@ -50,7 +38,7 @@ exports[`10. animations should have a fadein animation wrapper component 1`] = `
 </View>
 `;
 
-exports[`10. animations should have a fadein animation wrapper component 2`] = `
+exports[`4. animations should have a fadein animation wrapper component 2`] = `
 <View
   style={
     Object {

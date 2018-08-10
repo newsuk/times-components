@@ -494,26 +494,6 @@ const negativeTests = [
 
       expect(textNodes).toEqual([]);
     }
-  },
-  {
-    name: "an article with no standfirst",
-    test() {
-      const testInstance = TestRenderer.create(
-        <Context.Provider value={{ theme: { scale: scales.xlarge } }}>
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={articleFixture({ ...testFixture })}
-            onAuthorPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
-      );
-      expect(testInstance).toMatchSnapshot();
-    }
   }
 ];
 

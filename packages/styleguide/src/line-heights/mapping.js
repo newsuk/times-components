@@ -3,7 +3,7 @@ import mappingBase from "./mapping-base";
 
 const mapping = ({ scale }) => {
   switch (scale) {
-    case scale.large:
+    case scales.large:
       return {
         ...mappingBase,
         body: {

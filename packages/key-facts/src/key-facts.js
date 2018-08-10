@@ -6,11 +6,12 @@ import KeyFactsText from "./key-facts-text";
 import KeyFactsTitle from "./key-facts-title";
 import KeyFactsWrapper from "./key-facts-wrapper";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
-import styles from "./styles";
+import styleFactory from "./styles";
 
 const KeyFacts = ({ ast, onLinkPress }) => {
   const { children, attributes: { title } } = ast;
   const { children: keyFactsItems } = children[0];
+  const styles = styleFactory();
 
   const renderTitle = () => {
     if (!title) return null;
@@ -19,8 +20,8 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   };
 
   const renderKeyFact = (item, listIndex) => (
-    <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
-      <View style={styles().bullet} />
+    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
+      <View style={styles.bullet} />
       <Context.Consumer>
         {({ theme: { scale } }) => (
           <KeyFactsText

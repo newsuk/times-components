@@ -7,8 +7,7 @@ import styleguide, { Animations } from "../src/styleguide";
 
 const tests = [
   {
-    name:
-      "Font factory should provide a font family, font size and line height that is default scaled for a correct reference",
+    name: "Font factory default scale",
     test: () => {
       const testInstance = styleguide().fontFactory({
         font: "body",
@@ -18,8 +17,7 @@ const tests = [
     }
   },
   {
-    name:
-      'Font factory should provide a font family, font size and line height that is "large" scaled for a correct reference',
+    name: "Font factory large scale",
     test: () => {
       const testInstance = styleguide({ scale: scales.large }).fontFactory({
         font: "body",
@@ -29,68 +27,9 @@ const tests = [
     }
   },
   {
-    name:
-      'Font factory should provider a font family, font size and line height that is "xlarge" scaled for a correct reference',
+    name: "Font factory xlarge scale",
     test: () => {
       const testInstance = styleguide({ scale: scales.xlarge }).fontFactory({
-        font: "body",
-        fontSize: "secondary"
-      });
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      "Font sizes should give a correct font size for a correct reference scaled to default",
-    test: () => {
-      const testInstance = styleguide().fontSizes.bodyMobile;
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      'Font sizes should give a correct font size for a correct reference scaled to "large"',
-    test: () => {
-      const testInstance = styleguide({ scale: scales.large }).fontSizes
-        .bodyMobile;
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      'Font sizes should give a correct font size for a correct reference scaled to "xlarge"',
-    test: () => {
-      const testInstance = styleguide().fontSizes.bodyMobile;
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      "Line height factory should give a correct line height for a correct reference scaled to default",
-    test: () => {
-      const testInstance = styleguide({ scale: scales.xlarge }).lineHeight({
-        font: "body",
-        fontSize: "secondary"
-      });
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      'Line height factory should give a correct line height for a correct reference scaled to "large"',
-    test: () => {
-      const testInstance = styleguide({ scale: scales.large }).lineHeight({
-        font: "body",
-        fontSize: "secondary"
-      });
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name:
-      'Line height factory should give a correct line height for a correct reference scaled to "xlarge"',
-    test: () => {
-      const testInstance = styleguide({ scale: scales.xlarge }).lineHeight({
         font: "body",
         fontSize: "secondary"
       });

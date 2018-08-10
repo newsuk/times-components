@@ -2,18 +2,23 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import styles from "../styles/article-body";
+import styleFactory from "../styles/article-body";
+
+const styles = styleFactory();
 
 const BodyParagraph = props => (
   <View
     key={`paragraph-${props.uid}`}
-    style={[styles().articleMainContentRow]}
+    style={[styles.articleMainContentRow]}
     testID={`paragraph-${props.uid}`}
   >
     <Context.Consumer>
-      {({ theme: { scale } }) => (
-        <Text style={styles(scale).articleTextElement}>{props.children}</Text>
-      )}
+      {({ theme: { scale } }) => {
+        const stylesScaled = styleFactory(scale);
+        return (
+          <Text style={stylesScaled.articleTextElement}>{props.children}</Text>
+        );
+      }}
     </Context.Consumer>
   </View>
 );
