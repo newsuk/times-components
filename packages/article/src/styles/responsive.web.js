@@ -1,19 +1,18 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import styled from "styled-components";
+import withResponsiveStyles, {
+  breakpoints
+} from "@times-components/responsive-styles";
 import { colours, spacing } from "@times-components/styleguide";
 import config from "./responsive-config";
 
-export const MainContainer = withResponsiveStyles(
-  View,
-  {
-    wideUp: () => `
-      padding-top: ${spacing(4)};
-      margin: 0 auto;
-      display: block;
-    `
-  },
-  "MainContainer"
-);
+export const MainContainer = styled.div`
+  @media (min-width: ${breakpoints.wide}px) {
+    padding-top: ${spacing(4)};
+    margin: 0 auto;
+    display: block;
+  }
+`;
 
 /* --- HeaderAd --- */
 export const HeaderAdContainer = withResponsiveStyles(
