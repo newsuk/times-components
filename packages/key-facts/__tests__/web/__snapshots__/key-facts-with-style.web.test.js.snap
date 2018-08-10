@@ -37,7 +37,7 @@ exports[`key facts with title 1`] = `
 <style>
 {
   "S1": {
-    "color": "rgba(51,51,51,1)",
+    "color": "inherit",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "12px",
     "font-weight": "400",

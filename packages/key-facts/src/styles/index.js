@@ -5,8 +5,9 @@ import styleguide, {
   spacing
 } from "@times-components/styleguide";
 
-const styles = scale =>
-  StyleSheet.create({
+const styling = scale => {
+  const styles = styleguide({ scale });
+  return StyleSheet.create({
     container: {
       marginBottom: spacing(1),
       marginLeft: spacing(2),
@@ -31,7 +32,7 @@ const styles = scale =>
     },
     text: {
       color: colours.functional.primary,
-      ...styleguide({ scale }).fontFactory({
+      ...styles.fontFactory({
         font: "body",
         fontSize: "secondary"
       }),
@@ -40,13 +41,13 @@ const styles = scale =>
       width: "95%"
     },
     title: {
-      color: colours.functional.primary,
       fontFamily: fonts.supporting,
-      fontSize: styleguide({ scale }).fontSizes.cardMetaMobile,
+      fontSize: styles.fontSizes.cardMetaMobile,
       fontWeight: "400",
       letterSpacing: 1.2,
       marginBottom: spacing(4)
     }
   });
+};
 
-export default styles;
+export default styling;
