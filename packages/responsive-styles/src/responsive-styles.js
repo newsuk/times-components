@@ -6,6 +6,13 @@ export const config = {
   wideBpWidth: "56.2%"
 };
 
+export const breakpoints = {
+  small: 520,
+  medium: 768,
+  wide: 1024,
+  huge: 1320
+};
+
 // Turn off prettier for this as the identified changes break this component
 // prettier-ignore
 const withResponsiveStyles = (Component, styles = {}, displayName = null) => {

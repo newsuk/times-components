@@ -711,19 +711,6 @@ Array [
       "padding-bottom": "0px",
       "padding-top": "0px",
     },
-    "S31": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
     "S4": {
       "line-height": "26px",
       "margin-bottom": "0px",
@@ -794,7 +781,7 @@ Array [
 </style>
 
 <div
-    className="c0 S31"
+    className="c0"
   >
     <div
       className="c1 S8"
