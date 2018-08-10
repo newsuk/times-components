@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.5"></a>
+## [2.1.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.4...@times-components/ad@2.1.5) (2018-08-10)
+
+
+### Bug Fixes
+
+* add native ad sizes ([#1195](https://github.com/newsuk/times-components/issues/1195)) ([e3e4e6a](https://github.com/newsuk/times-components/commit/e3e4e6a))
+
+
+
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.3...@times-components/ad@2.1.4) (2018-08-10)
 
