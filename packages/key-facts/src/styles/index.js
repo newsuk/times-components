@@ -5,7 +5,7 @@ import styleguide, {
   spacing
 } from "@times-components/styleguide";
 
-const styles = scale =>
+const styles = (scale, sectionColour) =>
   StyleSheet.create({
     container: {
       marginBottom: spacing(1),
@@ -14,7 +14,7 @@ const styles = scale =>
       marginTop: spacing(1)
     },
     bullet: {
-      backgroundColor: colours.functional.bullet,
+      backgroundColor: sectionColour || colours.functional.bullet,
       height: 8,
       top: 2,
       transform: [{ rotate: "45deg" }],
@@ -40,6 +40,7 @@ const styles = scale =>
       width: "95%"
     },
     title: {
+      color: sectionColour || colours.functional.brandColour,
       fontFamily: fonts.supporting,
       fontSize: styleguide({ scale }).fontSizes.cardMetaMobile,
       fontWeight: "400",

@@ -11,37 +11,41 @@ import styleFactory from "./styles";
 const KeyFacts = ({ ast, onLinkPress }) => {
   const { children, attributes: { title } } = ast;
   const { children: keyFactsItems } = children[0];
-  const styles = styleFactory();
 
-  const renderTitle = () => {
+  const renderTitle = styles => {
     if (!title) return null;
 
-    return <KeyFactsTitle title={title} />;
+    return <KeyFactsTitle styles={styles} title={title} />;
   };
 
-  const renderKeyFact = (item, listIndex) => (
+  const renderKeyFact = (item, listIndex, styles) => (
     <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
       <View style={styles.bullet} />
-      <Context.Consumer>
-        {({ theme: { scale } }) => (
-          <KeyFactsText
-            item={item}
-            listIndex={listIndex}
-            onLinkPress={onLinkPress}
-            scale={scale}
-          />
-        )}
-      </Context.Consumer>
+      <KeyFactsText
+        item={item}
+        listIndex={listIndex}
+        onLinkPress={onLinkPress}
+        styles={styles}
+      />
     </View>
   );
 
   return (
-    <KeyFactsContainer>
-      {renderTitle()}
-      <KeyFactsWrapper>
-        {keyFactsItems.map((item, index) => renderKeyFact(item, index))}
-      </KeyFactsWrapper>
-    </KeyFactsContainer>
+    <Context.Consumer>
+      {({ theme: { scale, sectionColour } }) => {
+        const styles = styleFactory(scale, sectionColour);
+        return (
+          <KeyFactsContainer>
+            {renderTitle(styles)}
+            <KeyFactsWrapper>
+              {keyFactsItems.map((item, index) =>
+                renderKeyFact(item, index, styles)
+              )}
+            </KeyFactsWrapper>
+          </KeyFactsContainer>
+        );
+      }}
+    </Context.Consumer>
   );
 };
 
