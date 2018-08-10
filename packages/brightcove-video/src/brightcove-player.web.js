@@ -130,33 +130,33 @@ class BrightcoveVideo extends Component {
     this.init();
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    const playerStatusChanged = this.state.isPlaying !== nextState.isPlaying;
+  componentDidUpdate(prevProps, prevState) {
+    const playerStatusChanged = prevState.isPlaying !== this.state.isPlaying;
 
-    if (this.state.duration !== nextState.duration) {
-      this.props.onDuration(nextState.duration);
+    if (prevState.duration !== this.state.duration) {
+      prevProps.onDuration(this.state.duration);
     }
 
-    if (playerStatusChanged && nextState.isPlaying) {
-      this.props.onPlay();
+    if (playerStatusChanged && this.state.isPlaying) {
+      prevProps.onPlay();
     }
 
-    if (this.state.progress !== nextState.progress) {
-      this.props.onProgress(nextState.progress);
+    if (prevState.progress !== this.state.progress) {
+      prevProps.onProgress(this.state.progress);
     }
 
-    if (playerStatusChanged && !nextState.isPlaying) {
-      this.props.onPause();
+    if (playerStatusChanged && !this.state.isPlaying) {
+      prevProps.onPause();
     }
 
     if (
-      this.state.isFinished !== nextState.isFinished &&
-      nextState.isFinished
+      prevState.isFinished !== this.state.isFinished &&
+      this.state.isFinished
     ) {
-      this.props.onFinish();
+      prevProps.onFinish();
     }
 
-    return this.props !== nextProps;
+    return prevProps !== this.props;
   }
 
   componentWillUnmount() {
