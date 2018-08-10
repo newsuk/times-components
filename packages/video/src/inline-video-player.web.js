@@ -66,13 +66,11 @@ class InlineVideoPlayer extends Component {
     this.id = `${props.videoId}-${props.accountId}-${InlineVideoPlayer.index}`;
   }
 
-  componentWillMount() {
+  componentDidMount() {
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
     }
-  }
 
-  componentDidMount() {
     this.loadBrightcoveSDKIfRequired();
 
     InlineVideoPlayer.activePlayers.push(this);
