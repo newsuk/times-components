@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@1.0.1...@times-components/key-facts@1.1.0) (2018-08-10)
+
+
+### Features
+
+* create styleguide factory ([#1178](https://github.com/newsuk/times-components/issues/1178)) ([2669cf1](https://github.com/newsuk/times-components/commit/2669cf1))
+
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@1.0.0...@times-components/key-facts@1.0.1) (2018-08-09)
 

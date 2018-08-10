@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/image@3.1.4...@times-components/image@3.2.0) (2018-08-10)
+
+
+### Features
+
+* add caption data to modal images ([#1193](https://github.com/newsuk/times-components/issues/1193)) ([29a2b62](https://github.com/newsuk/times-components/commit/29a2b62))
+
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/newsuk/times-components/compare/@times-components/image@3.1.3...@times-components/image@3.1.4) (2018-08-09)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.0.1...@times-components/styleguide@3.1.0) (2018-08-10)
+
+
+### Features
+
+* add caption data to modal images ([#1193](https://github.com/newsuk/times-components/issues/1193)) ([29a2b62](https://github.com/newsuk/times-components/commit/29a2b62))
+* create styleguide factory ([#1178](https://github.com/newsuk/times-components/issues/1178)) ([2669cf1](https://github.com/newsuk/times-components/commit/2669cf1))
+
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.0.0...@times-components/styleguide@3.0.1) (2018-08-09)
 

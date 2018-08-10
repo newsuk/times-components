@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -72,7 +72,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.0.1",
+    "@times-components/styleguide": "3.1.0",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

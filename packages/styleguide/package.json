@@ -1,6 +1,6 @@
 {
   "name": "@times-components/styleguide",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Centralised library for common styles throughout the Times",
   "main": "dist/styleguide",
   "dev": "src/styleguide",
@@ -61,7 +61,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/context": "0.2.3",
+    "@times-components/context": "0.3.0",
     "@times-components/responsive-styles": "3.0.1",
     "prop-types": "15.6.2"
   },
