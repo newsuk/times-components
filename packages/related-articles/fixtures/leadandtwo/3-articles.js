@@ -2,6 +2,7 @@ const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "Defence of the Realm";
 const defaultFirstLabel = "leading article";
+const defaultFirstSection = "thedish";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -102,13 +103,13 @@ const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
 const defaultFirstUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";
-
 const defaultSecondTitle =
   "Defence Secretary Visits A Trident Nuclear Submarine";
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22";
 const defaultSecondHeadline = "Trident gets out of MoD budget, Hammond urged";
 const defaultSecondLabel = "defence cuts";
+const defaultSecondSection = "sport";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -230,6 +231,7 @@ const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultThirdHeadline = "Size matters, say tiny ministers";
 const defaultThirdLabel = "defence cuts | analysis";
+const defaultThirdSection = "register";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -393,6 +395,7 @@ export default (
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
     firstLabel = defaultFirstLabel,
+    firstSection = defaultFirstSection,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -404,6 +407,7 @@ export default (
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
     secondLabel = defaultSecondLabel,
+    secondSection = defaultSecondSection,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -415,6 +419,7 @@ export default (
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
     thirdLabel = defaultThirdLabel,
+    thirdSection = defaultThirdSection,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -458,7 +463,7 @@ export default (
         },
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
-        section: "thedish",
+        section: firstSection,
         summary105: firstSummary105,
         summary125: firstSummary125,
         summary145: firstSummary145,
@@ -493,7 +498,7 @@ export default (
         },
         label: secondLabel,
         publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "sport",
+        section: secondSection,
         summary105: secondSummary105,
         summary125: secondSummary125,
         summary145: secondSummary145,
@@ -528,7 +533,7 @@ export default (
           }
         },
         publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "register",
+        section: thirdSection,
         summary105: thirdSummary105,
         summary125: thirdSummary125,
         summary145: thirdSummary145,

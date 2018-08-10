@@ -4,6 +4,7 @@ const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "High score for labour in football club election";
 const defaultFirstLabel = "opinion";
+const defaultFirstSection = "comment";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -104,6 +105,7 @@ const defaultSecondCrop169 =
 const defaultSecondHeadline =
   "An example of a really really really really really really really really really really long headline";
 const defaultSecondLabel = "defence cuts | analysis";
+const defaultSecondSection = "sport";
 const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultSecondSummary105 = [
@@ -268,6 +270,7 @@ export default (
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
     firstLabel = defaultFirstLabel,
+    firstSection = defaultFirstSection,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -280,6 +283,7 @@ export default (
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
     secondLabel = defaultSecondLabel,
+    secondSection = defaultSecondSection,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -326,7 +330,7 @@ export default (
         },
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
-        section: "comment",
+        section: firstSection,
         summary105: firstSummary105,
         summary125: firstSummary125,
         summary145: firstSummary145,
@@ -364,7 +368,7 @@ export default (
           }
         },
         publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "sport",
+        section: secondSection,
         summary105: secondSummary105,
         summary125: secondSummary125,
         summary145: secondSummary145,

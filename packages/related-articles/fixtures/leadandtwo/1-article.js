@@ -18,7 +18,6 @@ const defaultSummary105 = [
     ]
   }
 ];
-
 const defaultSummary125 = [
   {
     name: "paragraph",
@@ -35,7 +34,6 @@ const defaultSummary125 = [
     ]
   }
 ];
-
 const defaultSummary145 = [
   {
     name: "paragraph",
@@ -52,7 +50,6 @@ const defaultSummary145 = [
     ]
   }
 ];
-
 const defaultSummary160 = [
   {
     name: "paragraph",
@@ -69,7 +66,6 @@ const defaultSummary160 = [
     ]
   }
 ];
-
 const defaultSummary175 = [
   {
     name: "paragraph",
@@ -86,7 +82,6 @@ const defaultSummary175 = [
     ]
   }
 ];
-
 const defaultSummary225 = [
   {
     name: "paragraph",
@@ -103,7 +98,6 @@ const defaultSummary225 = [
     ]
   }
 ];
-
 const defaultTitle = "";
 const defaultUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";

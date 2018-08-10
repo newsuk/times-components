@@ -3,6 +3,7 @@ const defaultCrop169 =
 const defaultHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
 const defaultLabel = "BAYEUX TAPESTRY";
+const defaultSection = "thedish";
 const defaultSummary105 = [
   {
     name: "paragraph",
@@ -115,6 +116,7 @@ export default (
     crop169 = defaultCrop169,
     headline = defaultHeadline,
     label = defaultLabel,
+    section = defaultSection,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -172,7 +174,7 @@ export default (
         id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
-        section: "thedish",
+        section,
         summary105,
         summary125,
         summary145,

@@ -183,7 +183,7 @@ exports[`default styles 1`] = `
 <style>
 {
   "IS1": {
-    "color": "rgba(133,0,41,1)",
+    "color": "rgba(19,53,78,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "12px",
     "fontWeight": "400",
@@ -193,7 +193,7 @@ exports[`default styles 1`] = `
     "marginBottom": "5px",
   },
   "IS3": {
-    "color": "rgba(133,0,41,1)",
+    "color": "rgba(19,53,78,1)",
   },
   "IS4": {
     "color": "rgba(133,0,41,1)",
@@ -458,7 +458,7 @@ exports[`default styles 1`] = `
                   <div
                     className="S3 IS1"
                   >
-                    OPINION
+                    TEST LABEL
                   </div>
                 </div>
                 <div

@@ -8,6 +8,8 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
+  label: "test label",
+  section: "focus",
   summary125: testSummary(125),
   summary160: testSummary(160)
 }).data;

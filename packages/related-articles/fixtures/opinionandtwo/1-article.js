@@ -5,6 +5,7 @@ const defaultCrop169 =
 const defaultHeadline =
   "Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does";
 const defaultLabel = "opinion";
+const defaultSection = "comment";
 const defaultSummary105 = [
   {
     name: "paragraph",
@@ -111,6 +112,7 @@ export default (
     crop169 = defaultCrop169,
     headline = defaultHeadline,
     label = defaultLabel,
+    section = defaultSection,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -157,7 +159,7 @@ export default (
         },
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
-        section: "comment",
+        section,
         summary105,
         summary125,
         summary145,

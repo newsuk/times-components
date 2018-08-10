@@ -73,7 +73,7 @@ exports[`default styles 1`] = `
                     }
                   }
                 >
-                  LEADING ARTICLE
+                  TEST LABEL
                 </Text>
               </View>
               <Text
