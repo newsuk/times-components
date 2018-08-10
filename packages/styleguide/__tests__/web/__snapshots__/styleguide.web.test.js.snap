@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`a FadeIn animation wrapper component 1`] = `
+exports[`1. font factory default scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`2. font factory large scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`3. font factory xlarge scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`4. animations should have a fadein animation wrapper component 1`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
@@ -15,7 +39,7 @@ exports[`a FadeIn animation wrapper component 1`] = `
 </div>
 `;
 
-exports[`a FadeIn animation wrapper component 2`] = `
+exports[`4. animations should have a fadein animation wrapper component 2`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;

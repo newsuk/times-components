@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView } from "react-native";
+import Context, { scales } from "@times-components/context";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts-showcase.json";
@@ -19,11 +20,16 @@ export default {
       type: "story",
       name: "with title",
       platform: "native",
-      component: () => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts(data)}
-        </ScrollView>
-      )
+      component: ({ select }) => {
+        const scale = select("Scale", scales, scales.medium);
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            <ScrollView style={{ width: "100%" }}>
+              {renderKeyFacts(data)}
+            </ScrollView>
+          </Context.Provider>
+        );
+      }
     },
     {
       type: "story",
@@ -35,11 +41,16 @@ export default {
       type: "story",
       name: "without title",
       platform: "native",
-      component: () => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts(dataNoTitle)}
-        </ScrollView>
-      )
+      component: ({ select }) => {
+        const scale = select("Scale", scales, scales.medium);
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            <ScrollView style={{ width: "100%" }}>
+              {renderKeyFacts(dataNoTitle)}
+            </ScrollView>
+          </Context.Provider>
+        );
+      }
     },
     {
       type: "story",

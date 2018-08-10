@@ -14,7 +14,7 @@ import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 import ArticleComments from "./article-comments/article-comments";
-import styles from "./styles/article-body";
+import stylesFactory from "./styles/article-body";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
@@ -48,6 +48,7 @@ const renderRow = analyticsStream => (
 
     case "header": {
       const { headline, flags, standfirst, label, isVideo } = rowData.data;
+      const styles = stylesFactory();
       return (
         <ArticleHeader
           flags={flags}

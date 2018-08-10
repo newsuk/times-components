@@ -2,6 +2,7 @@
 /* eslint-env browser */
 import React from "react";
 import { addTypenameToDocument } from "apollo-utilities";
+import Context, { scales } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import { article as articleQuery } from "@times-components/provider-queries";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
@@ -40,6 +41,7 @@ const mocks = [
 
 const renderArticle = (
   decorateAction,
+  scale,
   {
     fixture,
     isLoading = false,
@@ -48,25 +50,31 @@ const renderArticle = (
     error
   }
 ) => (
-  <Article
-    adConfig={adConfig}
-    analyticsStream={analyticsStream}
-    article={fixture}
-    error={error}
-    isLoading={isLoading}
-    onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
-    onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-      "onCommentGuidelinesPress"
-    )}
-    onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
-    onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-    onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-      "onRelatedArticlePress"
-    )}
-    onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-    onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-  />
+  <Context.Provider value={{ theme: { scale } }}>
+    <Article
+      adConfig={adConfig}
+      analyticsStream={analyticsStream}
+      article={fixture}
+      error={error}
+      isLoading={isLoading}
+      onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+      onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+        "onCommentGuidelinesPress"
+      )}
+      onCommentsPress={preventDefaultedAction(decorateAction)(
+        "onCommentsPress"
+      )}
+      onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+      onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+        "onRelatedArticlePress"
+      )}
+      onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+      onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+    />
+  </Context.Provider>
 );
+
+const selectScales = select => select("Scale", scales, scales.medium);
 
 export default {
   name: "Pages/Article",
@@ -74,45 +82,58 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: fullArticleFixture() })
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
+          fixture: fullArticleFixture()
+        });
+      }
     },
     {
       type: "story",
       name: "Article with video asset",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({
             leadAsset: videoLeadAsset()
           })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Long Article",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ content: longContent })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Loading",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { isLoading: true })
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, { isLoading: true });
+      }
     },
     {
       type: "story",
       name: "Error",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           error: { message: "An example error." }
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "With Provider",
       component: ({ select, text }, { decorateAction }) => {
+        const scale = selectScales(select);
         const predefinedArticles = {
           "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
           "1a576df6-cb50-11e4-81dd-064fe933cd41":
@@ -132,31 +153,36 @@ export default {
               id={overrideArticleId || predefinedArticle}
             >
               {({ article, isLoading, error }) => (
-                <Article
-                  adConfig={articleAdConfig}
-                  analyticsStream={storybookReporter}
-                  article={article}
-                  error={error}
-                  isLoading={isLoading}
-                  onAuthorPress={preventDefaultedAction(decorateAction)(
-                    "onAuthorPress"
-                  )}
-                  onCommentGuidelinesPress={preventDefaultedAction(
-                    decorateAction
-                  )("onCommentGuidelinesPress")}
-                  onCommentsPress={preventDefaultedAction(decorateAction)(
-                    "onCommentsPress"
-                  )}
-                  onLinkPress={preventDefaultedAction(decorateAction)(
-                    "onLinkPress"
-                  )}
-                  onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                    "onRelatedArticlePress"
-                  )}
-                  onTopicPress={preventDefaultedAction(decorateAction)(
-                    "onTopicPress"
-                  )}
-                />
+                <Context.Provider value={{ theme: { scale } }}>
+                  <Article
+                    adConfig={articleAdConfig}
+                    analyticsStream={storybookReporter}
+                    article={article}
+                    error={error}
+                    isLoading={isLoading}
+                    onAuthorPress={preventDefaultedAction(decorateAction)(
+                      "onAuthorPress"
+                    )}
+                    onCommentGuidelinesPress={preventDefaultedAction(
+                      decorateAction
+                    )("onCommentGuidelinesPress")}
+                    onCommentsPress={preventDefaultedAction(decorateAction)(
+                      "onCommentsPress"
+                    )}
+                    onLinkPress={preventDefaultedAction(decorateAction)(
+                      "onLinkPress"
+                    )}
+                    onRelatedArticlePress={preventDefaultedAction(
+                      decorateAction
+                    )("onRelatedArticlePress")}
+                    onTopicPress={preventDefaultedAction(decorateAction)(
+                      "onTopicPress"
+                    )}
+                    onVideoPress={preventDefaultedAction(decorateAction)(
+                      "onVideoPress"
+                    )}
+                  />
+                </Context.Provider>
               )}
             </ArticleProvider>
           </StorybookProvider>
@@ -167,109 +193,138 @@ export default {
       type: "story",
       name: "Fixtures - Full",
       platform: "web",
-      component: (_, { decorateAction }) => (
-        <div>
-          <a
-            href={`/iframe.html${window.top.location.search}`}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Click to render the ads
-          </a>
-          {renderArticle(decorateAction, { fixture: fullArticleFixture() })}
-        </div>
-      )
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return (
+          <div>
+            <a
+              href={`/iframe.html${window.top.location.search}`}
+              rel="noopener noreferrer"
+              target="blank"
+            >
+              Click to render the ads
+            </a>
+            {renderArticle(decorateAction, scale, {
+              fixture: fullArticleFixture()
+            })}
+          </div>
+        );
+      }
     },
     {
       type: "story",
       name: "Fixtures - Full",
       platform: "native",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, { fixture: fullArticleFixture() })
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
+          fixture: fullArticleFixture()
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - Byline with author profile",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ byline: bylineWithLink })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No ads",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ withAds: false })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No standfirst",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ standfirst: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No label",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No flags",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No standfirst, no label",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ label: null, standfirst: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No standfirst, no flags",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, standfirst: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ flags: null, label: null })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags, no standfirst",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({
             flags: null,
             label: null,
             standfirst: null
           })
-        })
+        });
+      }
     },
     {
       type: "story",
       name: "Fixtures - No lead asset",
-      component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, {
+      component: ({ select }, { decorateAction }) => {
+        const scale = selectScales(select);
+        return renderArticle(decorateAction, scale, {
           fixture: fullArticleFixture({ leadAsset: null })
-        })
+        });
+      }
     }
   ]
 };

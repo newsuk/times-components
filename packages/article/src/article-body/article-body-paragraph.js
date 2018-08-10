@@ -1,7 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import styles from "../styles/article-body";
+import Context from "@times-components/context";
+import styleFactory from "../styles/article-body";
+
+const styles = styleFactory();
 
 const BodyParagraph = props => (
   <View
@@ -9,7 +12,14 @@ const BodyParagraph = props => (
     style={[styles.articleMainContentRow]}
     testID={`paragraph-${props.uid}`}
   >
-    <Text style={styles.articleTextElement}>{props.children}</Text>
+    <Context.Consumer>
+      {({ theme: { scale } }) => {
+        const stylesScaled = styleFactory(scale);
+        return (
+          <Text style={stylesScaled.articleTextElement}>{props.children}</Text>
+        );
+      }}
+    </Context.Consumer>
   </View>
 );
 

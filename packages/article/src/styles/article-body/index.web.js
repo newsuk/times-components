@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
+import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
+
+const sharedStyles = sharedStylesFactory();
 
 const webStyles = {
   ...sharedStyles,

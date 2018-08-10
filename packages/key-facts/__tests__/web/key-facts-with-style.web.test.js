@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -42,9 +42,11 @@ addSerializers(
 );
 
 it("key facts with title", () => {
-  const wrapper = mount(<KeyFacts ast={data} onLinkPress={() => {}} />);
+  const testInstance = TestRenderer.create(
+    <KeyFacts ast={data} onLinkPress={() => {}} />
+  );
 
-  expect(wrapper).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 // eslint-disable-next-line global-require

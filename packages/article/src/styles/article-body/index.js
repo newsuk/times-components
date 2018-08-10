@@ -1,19 +1,23 @@
 import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
-import sharedStyles from "./shared";
+import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
 
-const nativeStyles = {
-  ...sharedStyles,
-  articleTextElement: {
-    ...sharedStyles.articleTextElement,
-    marginBottom: spacing(4)
-  }
+const nativeStyles = scale => {
+  const sharedStyles = sharedStylesFactory(scale);
+  return {
+    ...sharedStyles,
+    articleTextElement: {
+      ...sharedStyles.articleTextElement,
+      marginBottom: spacing(4)
+    }
+  };
 };
 
-const styles = StyleSheet.create({
-  ...globalStyle,
-  ...nativeStyles
-});
+const styles = scale =>
+  StyleSheet.create({
+    ...globalStyle,
+    ...nativeStyles(scale)
+  });
 
 export default styles;

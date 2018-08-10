@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`a FadeIn animation wrapper component 1`] = `
+exports[`1. font factory default scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 16,
+  "lineHeight": 27,
+}
+`;
+
+exports[`2. font factory large scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 18,
+  "lineHeight": 29,
+}
+`;
+
+exports[`3. font factory xlarge scale 1`] = `
+Object {
+  "fontFamily": "TimesDigitalW04",
+  "fontSize": 20,
+  "lineHeight": 31,
+}
+`;
+
+exports[`4. animations should have a fadein animation wrapper component 1`] = `
 <View
   style={
     Object {
@@ -14,7 +38,7 @@ exports[`a FadeIn animation wrapper component 1`] = `
 </View>
 `;
 
-exports[`a FadeIn animation wrapper component 2`] = `
+exports[`4. animations should have a fadein animation wrapper component 2`] = `
 <View
   style={
     Object {

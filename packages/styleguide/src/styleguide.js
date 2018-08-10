@@ -1,23 +1,45 @@
+import { scales } from "@times-components/context";
 import sectionColours from "./colours/section";
 import functionalColours from "./colours/functional";
 
 import FadeIn from "./animations";
 
+import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
+import timesFontFactory from "./fonts/font-factory";
 
-import timesSpacing from "./spacing";
+import spacing from "./spacing";
 
-export const colours = {
+const colours = {
   section: sectionColours,
   functional: functionalColours
 };
 
-export const Animations = {
+const Animations = {
   FadeIn
 };
 
-export const fonts = timesFonts;
-export const fontSizes = timesFontSizes;
+const fonts = timesFonts;
+const fontFactory = timesFontFactory();
+const fontSizes = timesFontSizes();
+const lineHeight = timesLineHeightsFactory();
 
-export const spacing = timesSpacing;
+export {
+  Animations,
+  colours,
+  fonts,
+  fontFactory,
+  fontSizes,
+  lineHeight,
+  spacing
+};
+export default ({ scale = scales.medium } = {}) => ({
+  Animations,
+  colours,
+  fonts,
+  fontFactory: timesFontFactory(scale),
+  fontSizes: timesFontSizes(scale),
+  lineHeight: timesLineHeightsFactory(scale),
+  spacing
+});

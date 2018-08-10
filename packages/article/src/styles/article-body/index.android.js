@@ -1,25 +1,29 @@
 import { StyleSheet } from "react-native";
-import { fonts, fontSizes, spacing } from "@times-components/styleguide";
-import sharedStyles from "./shared";
+import styleguide from "@times-components/styleguide";
+import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
 
-const androidStyles = {
-  ...sharedStyles,
-  leadAsset: {
-    marginBottom: 6
-  },
-  articleTextElement: {
-    ...sharedStyles.articleTextElement,
-    fontFamily: fonts.body,
-    fontSize: fontSizes.bodyMobile,
-    fontStyle: "normal",
-    marginBottom: spacing(4)
-  }
+const androidStyles = scale => {
+  const { spacing } = styleguide({ scale });
+  const sharedStyles = sharedStylesFactory(scale);
+
+  return {
+    ...sharedStyles,
+    leadAsset: {
+      marginBottom: 6
+    },
+    articleTextElement: {
+      ...sharedStyles.articleTextElement,
+      fontStyle: "normal",
+      marginBottom: spacing(4)
+    }
+  };
 };
 
-const styles = StyleSheet.create({
-  ...globalStyle,
-  ...androidStyles
-});
+const styles = scale =>
+  StyleSheet.create({
+    ...globalStyle,
+    ...androidStyles(scale)
+  });
 
 export default styles;

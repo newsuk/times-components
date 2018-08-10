@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import Context, { scales } from "@times-components/context";
 import Article from "../src/article";
 import articleFixture, {
   testFixture,
@@ -40,18 +41,20 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <Article
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onVideoPress={() => {}}
-        />
+        <Context.Provider>
+          <Article
+            {...props}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        </Context.Provider>
       );
 
       expect(output).toMatchSnapshot();
@@ -352,22 +355,24 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Wrapper>
           {byline => (
-            <Article
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              article={articleFixture({
-                ...testFixture,
-                ...emptyArticle,
-                byline
-              })}
-              onAuthorPress={() => {}}
-              onCommentGuidelinesPress={() => {}}
-              onCommentsPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
+            <Context.Provider value={{ theme: { scale: scales.medium } }}>
+              <Article
+                adConfig={adConfig}
+                analyticsStream={() => {}}
+                article={articleFixture({
+                  ...testFixture,
+                  ...emptyArticle,
+                  byline
+                })}
+                onAuthorPress={() => {}}
+                onCommentGuidelinesPress={() => {}}
+                onCommentsPress={() => {}}
+                onLinkPress={() => {}}
+                onRelatedArticlePress={() => {}}
+                onTopicPress={() => {}}
+                onVideoPress={() => {}}
+              />
+            </Context.Provider>
           )}
         </Wrapper>
       );
