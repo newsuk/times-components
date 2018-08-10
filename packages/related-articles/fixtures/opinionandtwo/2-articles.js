@@ -3,6 +3,7 @@ const defaultFirstCrop23 =
 const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "High score for labour in football club election";
+const defaultFirstLabel = "opinion";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -33,7 +34,6 @@ const defaultFirstSummary125 = [
     ]
   }
 ];
-
 const defaultFirstSummary145 = [
   {
     name: "paragraph",
@@ -49,7 +49,6 @@ const defaultFirstSummary145 = [
     ]
   }
 ];
-
 const defaultFirstSummary160 = [
   {
     name: "paragraph",
@@ -65,7 +64,6 @@ const defaultFirstSummary160 = [
     ]
   }
 ];
-
 const defaultFirstSummary175 = [
   {
     name: "paragraph",
@@ -81,7 +79,6 @@ const defaultFirstSummary175 = [
     ]
   }
 ];
-
 const defaultFirstSummary225 = [
   {
     name: "paragraph",
@@ -97,7 +94,6 @@ const defaultFirstSummary225 = [
     ]
   }
 ];
-
 const defaultFirstTitle = "";
 const defaultFirstUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";
@@ -107,6 +103,7 @@ const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultSecondHeadline =
   "An example of a really really really really really really really really really really long headline";
+const defaultSecondLabel = "defence cuts | analysis";
 const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultSecondSummary105 = [
@@ -168,7 +165,6 @@ const defaultSecondSummary145 = [
     children: []
   }
 ];
-
 const defaultSecondSummary160 = [
   {
     name: "paragraph",
@@ -200,7 +196,6 @@ const defaultSecondSummary160 = [
     ]
   }
 ];
-
 const defaultSecondSummary175 = [
   {
     name: "paragraph",
@@ -232,7 +227,6 @@ const defaultSecondSummary175 = [
     ]
   }
 ];
-
 const defaultSecondSummary225 = [
   {
     name: "paragraph",
@@ -273,6 +267,7 @@ export default (
     firstCrop23 = defaultFirstCrop23,
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstLabel = defaultFirstLabel,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -284,6 +279,7 @@ export default (
     secondCrop23 = defaultSecondCrop23,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondLabel = defaultSecondLabel,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -301,19 +297,6 @@ export default (
     },
     relatedArticles: [
       {
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        headline: firstHeadline,
-        section: "comment",
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "opinion",
-        url: firstUrl,
         byline: [
           {
             name: "inline",
@@ -329,6 +312,9 @@ export default (
             ]
           }
         ],
+        headline: firstHeadline,
+        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        label: firstLabel,
         leadAsset: {
           title: firstTitle,
           crop23: {
@@ -337,29 +323,19 @@ export default (
           crop169: {
             url: firstCrop169
           }
-        }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
+        section: "comment",
+        summary105: firstSummary105,
+        summary125: firstSummary125,
+        summary145: firstSummary145,
+        summary160: firstSummary160,
+        summary175: firstSummary175,
+        summary225: firstSummary225,
+        url: firstUrl
       },
       {
-        id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "sport",
-        leadAsset: {
-          title: secondTitle,
-          crop23: {
-            url: secondCrop23
-          },
-          crop169: {
-            url: secondCrop169
-          }
-        },
-        label: "defence cuts | analysis",
-        headline: secondHeadline,
-        summary105: secondSummary105,
-        summary125: secondSummary125,
-        summary145: secondSummary145,
-        summary160: secondSummary160,
-        summary175: secondSummary175,
-        summary225: secondSummary225,
         byline: [
           {
             name: "inline",
@@ -375,6 +351,26 @@ export default (
             ]
           }
         ],
+        headline: secondHeadline,
+        id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+        label: secondLabel,
+        leadAsset: {
+          title: secondTitle,
+          crop23: {
+            url: secondCrop23
+          },
+          crop169: {
+            url: secondCrop169
+          }
+        },
+        publishedTime: "2018-01-17T12:00:00.000Z",
+        section: "sport",
+        summary105: secondSummary105,
+        summary125: secondSummary125,
+        summary145: secondSummary145,
+        summary160: secondSummary160,
+        summary175: secondSummary175,
+        summary225: secondSummary225,
         url: secondUrl
       }
     ]

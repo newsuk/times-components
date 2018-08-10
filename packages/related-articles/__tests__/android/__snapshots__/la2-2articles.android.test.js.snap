@@ -29,7 +29,7 @@ exports[`1. one lead and one support related article 1`] = `
             <View>
               <View>
                 <Text>
-                  LEADING ARTICLE
+                  FIRST LABEL
                 </Text>
               </View>
               <Text
@@ -78,7 +78,7 @@ exports[`1. one lead and one support related article 1`] = `
             <View>
               <View>
                 <Text>
-                  DEFENCE CUTS | ANALYSIS
+                  SECOND LABEL
                 </Text>
               </View>
               <Text

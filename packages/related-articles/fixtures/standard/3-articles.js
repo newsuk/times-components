@@ -2,6 +2,7 @@ const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
 const defaultFirstHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
+const defaultFirstLabel = "BAYEUX TAPESTRY";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -108,6 +109,7 @@ const defaultSecondTitle =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108";
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
+const defaultSecondLabel = "BAYEUX TAPESTRY";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -371,11 +373,11 @@ const defaultSecondSummary225 = [
 ];
 const defaultSecondUrl =
   "https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx";
-
 const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0";
 const defaultThirdHeadline =
   "YouTube ignored police pleas to remove threatening videos";
+const defaultThirdLabel = "BAYEUX TAPESTRY";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -474,6 +476,7 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstLabel = defaultFirstLabel,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -484,6 +487,7 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondLabel = defaultSecondLabel,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -494,6 +498,7 @@ export default (
     secondUrl = defaultSecondUrl,
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
+    thirdLabel = defaultThirdLabel,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -510,8 +515,32 @@ export default (
     },
     relatedArticles: [
       {
-        id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+        byline: [
+          {
+            name: "inline",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Camilla Long, Environment Editor"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
         headline: firstHeadline,
+        id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+        label: firstLabel,
+        leadAsset: {
+          title: firstTitle,
+          crop169: {
+            url: firstCrop169
+          }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
         section: "thedish",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -519,10 +548,9 @@ export default (
         summary160: firstSummary160,
         summary175: firstSummary175,
         summary225: firstSummary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "BAYEUX TAPESTRY",
-        url: firstUrl,
+        url: firstUrl
+      },
+      {
         byline: [
           {
             name: "inline",
@@ -538,24 +566,16 @@ export default (
             ]
           }
         ],
-        leadAsset: {
-          title: firstTitle,
-          crop169: {
-            url: firstCrop169
-          }
-        }
-      },
-      {
+        headline: secondHeadline,
         id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
-        publishedTime: "2018-01-17T12:00:00.000Z",
+        label: secondLabel,
         leadAsset: {
           title: secondTitle,
           crop169: {
             url: secondCrop169
           }
         },
-        label: "BAYEUX TAPESTRY",
-        headline: secondHeadline,
+        publishedTime: "2018-01-17T12:00:00.000Z",
         section: "sport",
         summary105: secondSummary105,
         summary125: secondSummary125,
@@ -563,6 +583,9 @@ export default (
         summary160: secondSummary160,
         summary175: secondSummary175,
         summary225: secondSummary225,
+        url: secondUrl
+      },
+      {
         byline: [
           {
             name: "inline",
@@ -578,11 +601,9 @@ export default (
             ]
           }
         ],
-        url: secondUrl
-      },
-      {
+        headline: thirdHeadline,
         id: "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
-        publishedTime: "2018-01-17T12:00:00.000Z",
+        label: thirdLabel,
         leadAsset: {
           posterImage: {
             title: thirdTitle,
@@ -591,8 +612,7 @@ export default (
             }
           }
         },
-        label: "BAYEUX TAPESTRY",
-        headline: thirdHeadline,
+        publishedTime: "2018-01-17T12:00:00.000Z",
         section: "register",
         summary105: thirdSummary105,
         summary125: thirdSummary125,
@@ -600,21 +620,6 @@ export default (
         summary160: thirdSummary160,
         summary175: thirdSummary175,
         summary225: thirdSummary225,
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Camilla Long, Environment Editor"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
         url: thirdUrl
       }
     ]

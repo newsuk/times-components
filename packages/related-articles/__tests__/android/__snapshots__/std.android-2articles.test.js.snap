@@ -29,7 +29,7 @@ exports[`1. two related articles 1`] = `
             <View>
               <View>
                 <Text>
-                  BAYEUX TAPESTRY
+                  FIRST LABEL
                 </Text>
               </View>
               <Text
@@ -78,7 +78,7 @@ exports[`1. two related articles 1`] = `
             <View>
               <View>
                 <Text>
-                  BAYEUX TAPESTRY
+                  SECOND LABEL
                 </Text>
               </View>
               <Text

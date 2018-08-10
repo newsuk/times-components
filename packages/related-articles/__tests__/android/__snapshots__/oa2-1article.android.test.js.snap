@@ -39,7 +39,7 @@ exports[`1. one opinion related article 1`] = `
             <View>
               <View>
                 <Text>
-                  OPINION
+                  TEST LABEL
                 </Text>
               </View>
               <Text>

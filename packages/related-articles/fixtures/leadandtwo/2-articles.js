@@ -1,6 +1,7 @@
 const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "Defence of the Realm";
+const defaultFirstLabel = "leading article";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -110,6 +111,7 @@ const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultSecondHeadline =
   "Size matters, say very tiny ministers Size matters, say very tiny ministers";
+const defaultSecondLabel = "defence cuts | analysis";
 const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultSecondSummary105 = [
@@ -275,6 +277,7 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstLabel = defaultFirstLabel,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -285,6 +288,7 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondLabel = defaultSecondLabel,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -302,19 +306,6 @@ export default (
     },
     relatedArticles: [
       {
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        headline: firstHeadline,
-        section: "thedish",
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "leading article",
-        url: firstUrl,
         byline: [
           {
             name: "inline",
@@ -330,25 +321,53 @@ export default (
             ]
           }
         ],
+        headline: firstHeadline,
+        label: firstLabel,
         leadAsset: {
           title: firstTitle,
           crop169: {
             url: firstCrop169
           }
-        }
+        },
+        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
+        section: "thedish",
+        summary105: firstSummary105,
+        summary125: firstSummary125,
+        summary145: firstSummary145,
+        summary160: firstSummary160,
+        summary175: firstSummary175,
+        summary225: firstSummary225,
+        url: firstUrl
       },
       {
+        byline: [
+          {
+            name: "inline",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Deborah Haynes"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        headline: secondHeadline,
         id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "sport",
+        label: secondLabel,
         leadAsset: {
           title: secondTitle,
           crop169: {
             url: secondCrop169
           }
         },
-        label: "defence cuts | analysis",
-        headline: secondHeadline,
+        publishedTime: "2018-01-17T12:00:00.000Z",
+        section: "sport",
         summary105: [
           {
             name: "paragraph",
@@ -361,21 +380,6 @@ export default (
         summary160: secondSummary160,
         summary175: secondSummary175,
         summary225: secondSummary225,
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
         url: secondUrl
       }
     ]

@@ -30,7 +30,7 @@ exports[`1. three related articles 1`] = `
               <div>
                 <div>
                   <div>
-                    BAYEUX TAPESTRY
+                    FIRST LABEL
                   </div>
                 </div>
                 <h3
@@ -85,7 +85,7 @@ exports[`1. three related articles 1`] = `
               <div>
                 <div>
                   <div>
-                    BAYEUX TAPESTRY
+                    SECOND LABEL
                   </div>
                 </div>
                 <h3
@@ -140,7 +140,7 @@ exports[`1. three related articles 1`] = `
               <div>
                 <div>
                   <div>
-                    BAYEUX TAPESTRY
+                    THIRD LABEL
                   </div>
                 </div>
                 <h3

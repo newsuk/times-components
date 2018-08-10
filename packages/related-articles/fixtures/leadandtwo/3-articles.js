@@ -1,6 +1,7 @@
 const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultFirstHeadline = "Defence of the Realm";
+const defaultFirstLabel = "leading article";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -107,6 +108,7 @@ const defaultSecondTitle =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22";
 const defaultSecondHeadline = "Trident gets out of MoD budget, Hammond urged";
+const defaultSecondLabel = "defence cuts";
 const defaultSecondSummary105 = [
   {
     name: "paragraph",
@@ -227,6 +229,7 @@ const defaultSecondUrl =
 const defaultThirdCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultThirdHeadline = "Size matters, say tiny ministers";
+const defaultThirdLabel = "defence cuts | analysis";
 const defaultThirdSummary105 = [
   {
     name: "paragraph",
@@ -389,6 +392,7 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstLabel = defaultFirstLabel,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -399,6 +403,7 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondLabel = defaultSecondLabel,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -409,6 +414,7 @@ export default (
     secondUrl = defaultSecondUrl,
     thirdCrop169 = defaultThirdCrop169,
     thirdHeadline = defaultThirdHeadline,
+    thirdLabel = defaultThirdLabel,
     thirdSummary105 = defaultThirdSummary105,
     thirdSummary125 = defaultThirdSummary125,
     thirdSummary145 = defaultThirdSummary145,
@@ -426,8 +432,32 @@ export default (
     },
     relatedArticles: [
       {
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        byline: [
+          {
+            name: "inline",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Deborah Haynes"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
         headline: firstHeadline,
+        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        label: firstLabel,
+        leadAsset: {
+          title: firstTitle,
+          crop169: {
+            url: firstCrop169
+          }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
         section: "thedish",
         summary105: firstSummary105,
         summary125: firstSummary125,
@@ -435,10 +465,9 @@ export default (
         summary160: firstSummary160,
         summary175: firstSummary175,
         summary225: firstSummary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "leading article",
-        url: firstUrl,
+        url: firstUrl
+      },
+      {
         byline: [
           {
             name: "inline",
@@ -454,24 +483,16 @@ export default (
             ]
           }
         ],
-        leadAsset: {
-          title: firstTitle,
-          crop169: {
-            url: firstCrop169
-          }
-        }
-      },
-      {
+        headline: secondHeadline,
         id: "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
-        publishedTime: "2018-01-17T12:00:00.000Z",
         leadAsset: {
           title: secondTitle,
           crop169: {
             url: secondCrop169
           }
         },
-        label: "defence cuts",
-        headline: secondHeadline,
+        label: secondLabel,
+        publishedTime: "2018-01-17T12:00:00.000Z",
         section: "sport",
         summary105: secondSummary105,
         summary125: secondSummary125,
@@ -479,6 +500,9 @@ export default (
         summary160: secondSummary160,
         summary175: secondSummary175,
         summary225: secondSummary225,
+        url: secondUrl
+      },
+      {
         byline: [
           {
             name: "inline",
@@ -494,19 +518,16 @@ export default (
             ]
           }
         ],
-        url: secondUrl
-      },
-      {
+        headline: thirdHeadline,
         id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-        publishedTime: "2018-01-17T12:00:00.000Z",
+        label: thirdLabel,
         leadAsset: {
           title: thirdTitle,
           crop169: {
             url: thirdCrop169
           }
         },
-        label: "defence cuts | analysis",
-        headline: thirdHeadline,
+        publishedTime: "2018-01-17T12:00:00.000Z",
         section: "register",
         summary105: thirdSummary105,
         summary125: thirdSummary125,
@@ -514,21 +535,6 @@ export default (
         summary160: thirdSummary160,
         summary175: thirdSummary175,
         summary225: thirdSummary225,
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
         url: thirdUrl
       }
     ]

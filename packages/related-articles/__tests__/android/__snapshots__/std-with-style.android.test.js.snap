@@ -73,7 +73,7 @@ exports[`default styles 1`] = `
                     }
                   }
                 >
-                  BAYEUX TAPESTRY
+                  TEST LABEL
                 </Text>
               </View>
               <Text

@@ -39,7 +39,7 @@ exports[`1. one opinion and one support related article 1`] = `
             <View>
               <View>
                 <Text>
-                  OPINION
+                  FIRST LABEL
                 </Text>
               </View>
               <Text>
@@ -88,7 +88,7 @@ exports[`1. one opinion and one support related article 1`] = `
             <View>
               <View>
                 <Text>
-                  DEFENCE CUTS | ANALYSIS
+                  SECOND LABEL
                 </Text>
               </View>
               <Text

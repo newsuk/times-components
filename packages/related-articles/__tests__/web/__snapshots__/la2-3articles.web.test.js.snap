@@ -30,7 +30,7 @@ exports[`1. one lead and two support related articles 1`] = `
               <div>
                 <div>
                   <div>
-                    LEADING ARTICLE
+                    FIRST LABEL
                   </div>
                 </div>
                 <h3
@@ -86,7 +86,7 @@ exports[`1. one lead and two support related articles 1`] = `
                 <div>
                   <div>
                     <div>
-                      DEFENCE CUTS
+                      SECOND LABEL
                     </div>
                   </div>
                   <h3
@@ -125,7 +125,7 @@ exports[`1. one lead and two support related articles 1`] = `
                 <div>
                   <div>
                     <div>
-                      DEFENCE CUTS | ANALYSIS
+                      THIRD LABEL
                     </div>
                   </div>
                   <h3

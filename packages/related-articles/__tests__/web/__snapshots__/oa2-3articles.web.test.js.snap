@@ -30,7 +30,7 @@ exports[`1. one opinion and two support related articles 1`] = `
               <div>
                 <div>
                   <div>
-                    OPINION
+                    FIRST LABEL
                   </div>
                 </div>
                 <div>
@@ -86,7 +86,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                 <div>
                   <div>
                     <div>
-                      DEFENCE CUTS
+                      SECOND LABEL
                     </div>
                   </div>
                   <h3
@@ -125,7 +125,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                 <div>
                   <div>
                     <div>
-                      DEFENCE CUTS | ANALYSIS
+                      THIRD LABEL
                     </div>
                   </div>
                   <h3
