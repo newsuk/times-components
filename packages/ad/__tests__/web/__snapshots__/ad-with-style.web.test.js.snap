@@ -9,14 +9,26 @@ exports[`1. multiple ad slots 1`] = `
     "width": 970,
   },
   "IS2": {
+    "alignItems": "center",
+    "flex": 1,
+  },
+  "IS3": {
     "height": 1,
     "overflow": "hidden",
     "width": 1,
   },
-  "IS3": {
+  "IS4": {
+    "alignItems": "center",
+    "flex": 1,
+  },
+  "IS5": {
     "height": 250,
     "overflow": "hidden",
     "width": 970,
+  },
+  "IS6": {
+    "alignItems": "center",
+    "flex": 1,
   },
 }
 </style>
@@ -29,7 +41,9 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="header"
   >
-    <View>
+    <View
+      className="IS2"
+    >
       <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
@@ -50,7 +64,9 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="pixel"
   >
-    <View>
+    <View
+      className="IS4"
+    >
       <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
@@ -58,7 +74,7 @@ exports[`1. multiple ad slots 1`] = `
           width={1}
         >
           <div
-            className="IS2"
+            className="IS3"
           />
         </DOMContext>
       </div>
@@ -71,7 +87,9 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="intervention"
   >
-    <View>
+    <View
+      className="IS6"
+    >
       <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
@@ -79,7 +97,7 @@ exports[`1. multiple ad slots 1`] = `
           width={970}
         >
           <div
-            className="IS3"
+            className="IS5"
           />
         </DOMContext>
       </div>
@@ -134,6 +152,10 @@ exports[`2. placeholder when isloading 1`] = `
   "IS6": {
     "flex": 1,
   },
+  "IS7": {
+    "alignItems": "center",
+    "flex": 1,
+  },
 }
 </style>
 
@@ -144,7 +166,9 @@ exports[`2. placeholder when isloading 1`] = `
   section="news"
   slotName="header"
 >
-  <View>
+  <View
+    className="IS7"
+  >
     <div>
       <AdPlaceholder
         className="IS6"
@@ -240,6 +264,10 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   "IS7": {
     "flex": 1,
   },
+  "IS8": {
+    "alignItems": "center",
+    "flex": 1,
+  },
 }
 </style>
 
@@ -250,7 +278,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   section="news"
   slotName="header"
 >
-  <View>
+  <View
+    className="IS8"
+  >
     <div>
       <DOMContext
         baseUrl="https://www.thetimes.co.uk/"
