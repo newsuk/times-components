@@ -15,6 +15,15 @@ const sharedStyles = scale => ({
   articleMainContentRow: {
     paddingLeft: spacing(2),
     paddingRight: spacing(2)
+  },
+  articleLink: {
+    color: colours.functional.action,
+    ...styleguide({ scale }).fontFactory({
+      font: "body",
+      fontSize: "bodyMobile"
+    }),
+    marginBottom: spacing(5),
+    marginTop: 0
   }
 });
 

@@ -40,6 +40,7 @@ const styles = scale =>
       width: "95%"
     },
     title: {
+      color: colours.functional.primary,
       fontFamily: fonts.supporting,
       fontSize: styleguide({ scale }).fontSizes.cardMetaMobile,
       fontWeight: "400",
