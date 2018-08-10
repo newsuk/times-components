@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.2"></a>
+## [3.2.2](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.1...@times-components/image@3.2.2) (2018-08-10)
+
+
+### Bug Fixes
+
+* Allow test:all at root to run synchronously. ([#1202](https://github.com/newsuk/times-components/issues/1202)) ([74b044d](https://github.com/newsuk/times-components/commit/74b044d))
+
+
+
+
 <a name="3.2.1"></a>
 ## [3.2.1](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.0...@times-components/image@3.2.1) (2018-08-10)
 
