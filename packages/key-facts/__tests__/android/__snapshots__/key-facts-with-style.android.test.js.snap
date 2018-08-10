@@ -14,6 +14,7 @@ exports[`key facts with title 1`] = `
   <Text
     style={
       Object {
+        "color": "#1D1D1B",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 12,
         "fontWeight": "400",
@@ -190,6 +191,228 @@ exports[`key facts with title 1`] = `
             "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
             "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`key facts with title and context theme 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 5,
+      "marginLeft": 10,
+      "marginRight": 10,
+      "marginTop": 5,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "marginBottom": 20,
+      }
+    }
+  >
+    EXAMPLE TITLE
+  </Text>
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 18,
+            "lineHeight": 29,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 18,
+            "lineHeight": 29,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "color": "#006699",
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 18,
+            "lineHeight": 29,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "height": 8,
+            "top": 2,
+            "transform": Array [
+              Object {
+                "rotate": "45deg",
+              },
+            ],
+            "width": 8,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 18,
+            "lineHeight": 29,
             "marginTop": -8,
             "paddingLeft": 15,
             "width": "95%",

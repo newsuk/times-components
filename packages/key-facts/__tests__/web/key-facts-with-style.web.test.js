@@ -36,7 +36,9 @@ addSerializers(
   enzymeRenderedSerializer(),
   compose(
     stylePrinter,
-    minimaliseTransform((value, key) => key !== "className"),
+    minimaliseTransform(
+      (value, key) => key !== "className" || key !== "styles"
+    ),
     minimalWebTransform,
     rnwTransform(styles)
   )
@@ -53,7 +55,7 @@ it("key facts with title", () => {
 it("key facts with title and context theme", () => {
   const scale = scales.large;
   const sectionColour = "#FFFFFF";
-  
+
   const testInstance = TestRenderer.create(
     <Context.Provider value={{ theme: { scale, sectionColour } }}>
       <KeyFacts ast={data} onLinkPress={() => {}} />
