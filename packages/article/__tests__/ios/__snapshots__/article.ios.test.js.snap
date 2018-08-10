@@ -359,7 +359,7 @@ exports[`5. an article with ads 1`] = `
       <Ad
         contextUrl="https://url.io"
         section="Some Section"
-        slotName="inline-ad"
+        slotName="native-inline-ad"
       />
     </View>
     <View />

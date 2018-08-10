@@ -114,7 +114,7 @@ class Ad extends Component {
     );
 
     return (
-      <View style={[style]}>
+      <View style={[styles.container, style]}>
         {isLoading ? null : AdComponent}
         {isLoading || !isAdReady ? AdPlaceholderComponent : null}
       </View>

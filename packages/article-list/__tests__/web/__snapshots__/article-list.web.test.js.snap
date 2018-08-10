@@ -287,9 +287,9 @@ exports[`1. article list 1`] = `
           <div>
             <div>
               <Watermark
-                height={90}
+                height={250}
                 viewBox="-630 120 1200 50"
-                width={728}
+                width={970}
               />
             </div>
             <div>
