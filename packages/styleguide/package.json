@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
