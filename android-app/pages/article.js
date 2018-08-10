@@ -43,7 +43,7 @@ const ArticleView = ({ articleId, scale, sectionName }) => {
   };
 
   return (
-    <Context.Provider values={{ theme }}>
+    <Context.Provider value={{ theme }}>
       <ArticlePageView
         articleId={articleId}
         analyticsStream={track}
