@@ -120,6 +120,16 @@ const renderRow = analyticsStream => (
 };
 
 class ArticlePage extends Component {
+  static getDerivedStateFromProps(props, state) {
+    if (!props.isLoading && !props.error) {
+      return {
+        ...state,
+        dataSource: listViewDataHelper(props.article)
+      };
+    }
+    return state;
+  }
+
   constructor(props) {
     super(props);
 
@@ -131,14 +141,6 @@ class ArticlePage extends Component {
       this.state = {
         dataSource: {}
       };
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading && !nextProps.error) {
-      this.setState({
-        dataSource: listViewDataHelper(nextProps.article)
-      });
     }
   }
 

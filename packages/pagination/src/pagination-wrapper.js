@@ -4,19 +4,18 @@ import getDisplayName from "react-display-name";
 
 export default PaginatedComponent => {
   class Helper extends Component {
+    static getDerivedStateFromProps(props, state) {
+      return {
+        ...props,
+        page: state.page
+      };
+    }
+
     constructor(props) {
       super(props);
       this.state = props;
 
       this.handleChangePage = this.handleChangePage.bind(this);
-    }
-
-    componentWillReceiveProps(nextProps) {
-      return this.setState(
-        Object.assign({}, nextProps, {
-          page: this.state.page
-        })
-      );
     }
 
     handleChangePage(event, page) {

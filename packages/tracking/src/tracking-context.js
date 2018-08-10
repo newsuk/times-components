@@ -58,8 +58,8 @@ const withTrackingContext = (
       this.attemptTrackPageEvent(this.props);
     }
 
-    componentWillReceiveProps(nextProps: TrackingContextPropsType) {
-      this.attemptTrackPageEvent(nextProps);
+    componentDidUpdate() {
+      this.attemptTrackPageEvent(this.props);
     }
 
     pageEventTriggered: boolean;
