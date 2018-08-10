@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no related articles 1`] = `null`;
+
+exports[`2. analytics with no related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;

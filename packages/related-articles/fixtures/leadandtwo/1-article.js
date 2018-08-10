@@ -1,6 +1,7 @@
 const defaultCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultHeadline = "Defence of the Realm";
+const defaultLabel = "leading article";
 const defaultSummary105 = [
   {
     name: "paragraph",
@@ -17,7 +18,6 @@ const defaultSummary105 = [
     ]
   }
 ];
-
 const defaultSummary125 = [
   {
     name: "paragraph",
@@ -34,7 +34,6 @@ const defaultSummary125 = [
     ]
   }
 ];
-
 const defaultSummary145 = [
   {
     name: "paragraph",
@@ -51,7 +50,6 @@ const defaultSummary145 = [
     ]
   }
 ];
-
 const defaultSummary160 = [
   {
     name: "paragraph",
@@ -68,7 +66,6 @@ const defaultSummary160 = [
     ]
   }
 ];
-
 const defaultSummary175 = [
   {
     name: "paragraph",
@@ -85,7 +82,6 @@ const defaultSummary175 = [
     ]
   }
 ];
-
 const defaultSummary225 = [
   {
     name: "paragraph",
@@ -102,7 +98,6 @@ const defaultSummary225 = [
     ]
   }
 ];
-
 const defaultTitle = "";
 const defaultUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";
@@ -111,6 +106,7 @@ export default (
   {
     crop169 = defaultCrop169,
     headline = defaultHeadline,
+    label = defaultLabel,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -128,18 +124,6 @@ export default (
     },
     relatedArticles: [
       {
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        headline,
-        summary105,
-        summary125,
-        summary145,
-        summary160,
-        summary175,
-        summary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "leading article",
-        url,
         byline: [
           {
             name: "inline",
@@ -155,12 +139,24 @@ export default (
             ]
           }
         ],
+        headline,
+        label,
+        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
         leadAsset: {
           title,
           crop169: {
             url: crop169
           }
-        }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
+        summary105,
+        summary125,
+        summary145,
+        summary160,
+        summary175,
+        summary225,
+        url
       }
     ]
   }

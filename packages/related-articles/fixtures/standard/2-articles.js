@@ -2,6 +2,8 @@ const defaultFirstCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
 const defaultFirstHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
+const defaultFirstLabel = "BAYEUX TAPESTRY";
+const defaultFirstSection = "thedish";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -32,7 +34,6 @@ const defaultFirstSummary125 = [
     ]
   }
 ];
-
 const defaultFirstSummary145 = [
   {
     name: "paragraph",
@@ -48,7 +49,6 @@ const defaultFirstSummary145 = [
     ]
   }
 ];
-
 const defaultFirstSummary160 = [
   {
     name: "paragraph",
@@ -64,7 +64,6 @@ const defaultFirstSummary160 = [
     ]
   }
 ];
-
 const defaultFirstSummary175 = [
   {
     name: "paragraph",
@@ -80,7 +79,6 @@ const defaultFirstSummary175 = [
     ]
   }
 ];
-
 const defaultFirstSummary225 = [
   {
     name: "paragraph",
@@ -96,7 +94,6 @@ const defaultFirstSummary225 = [
     ]
   }
 ];
-
 const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
 const defaultFirstUrl =
@@ -104,6 +101,8 @@ const defaultFirstUrl =
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108";
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
+const defaultSecondLabel = "BAYEUX TAPESTRY";
+const defaultSecondSection = "sport";
 const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultSecondSummary105 = [
@@ -213,7 +212,6 @@ const defaultSecondSummary145 = [
     children: []
   }
 ];
-
 const defaultSecondSummary160 = [
   {
     name: "paragraph",
@@ -263,7 +261,6 @@ const defaultSecondSummary160 = [
     ]
   }
 ];
-
 const defaultSecondSummary175 = [
   {
     name: "paragraph",
@@ -313,7 +310,6 @@ const defaultSecondSummary175 = [
     ]
   }
 ];
-
 const defaultSecondSummary225 = [
   {
     name: "paragraph",
@@ -371,6 +367,8 @@ export default (
   {
     firstCrop169 = defaultFirstCrop169,
     firstHeadline = defaultFirstHeadline,
+    firstLabel = defaultFirstLabel,
+    firstSection = defaultFirstSection,
     firstSummary105 = defaultFirstSummary105,
     firstSummary125 = defaultFirstSummary125,
     firstSummary145 = defaultFirstSummary145,
@@ -381,6 +379,8 @@ export default (
     firstUrl = defaultFirstUrl,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
+    secondLabel = defaultSecondLabel,
+    secondSection = defaultSecondSection,
     secondSummary105 = defaultSecondSummary105,
     secondSummary125 = defaultSecondSummary125,
     secondSummary145 = defaultSecondSummary145,
@@ -397,19 +397,6 @@ export default (
     },
     relatedArticles: [
       {
-        id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
-        headline: firstHeadline,
-        section: "thedish",
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "BAYEUX TAPESTRY",
-        url: firstUrl,
         byline: [
           {
             name: "inline",
@@ -425,25 +412,53 @@ export default (
             ]
           }
         ],
+        headline: firstHeadline,
+        id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+        label: firstLabel,
         leadAsset: {
           title: firstTitle,
           crop169: {
             url: firstCrop169
           }
-        }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
+        section: firstSection,
+        summary105: firstSummary105,
+        summary125: firstSummary125,
+        summary145: firstSummary145,
+        summary160: firstSummary160,
+        summary175: firstSummary175,
+        summary225: firstSummary225,
+        url: firstUrl
       },
       {
+        byline: [
+          {
+            name: "inline",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Camilla Long, Environment Editor"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        headline: secondHeadline,
         id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: "sport",
+        label: secondLabel,
         leadAsset: {
           title: secondTitle,
           crop169: {
             url: secondCrop169
           }
         },
-        label: "BAYEUX TAPESTRY",
-        headline: secondHeadline,
+        publishedTime: "2018-01-17T12:00:00.000Z",
+        section: secondSection,
         summary105: [
           {
             name: "paragraph",
@@ -456,21 +471,6 @@ export default (
         summary160: secondSummary160,
         summary175: secondSummary175,
         summary225: secondSummary225,
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Camilla Long, Environment Editor"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
         url: secondUrl
       }
     ]

@@ -385,7 +385,7 @@ exports[`default styles 1`] = `
                   <div
                     className="S3 IS1"
                   >
-                    BAYEUX TAPESTRY
+                    TEST LABEL
                   </div>
                 </div>
                 <h3

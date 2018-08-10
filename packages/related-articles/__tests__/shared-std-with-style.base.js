@@ -8,6 +8,8 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
+  label: "test label",
+  section: "thedish",
   summary125: testSummary(125)
 }).data;
 

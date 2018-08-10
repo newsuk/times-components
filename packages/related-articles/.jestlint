@@ -1,5 +1,5 @@
 {
-  "maxGenericElements": 18,
-  "maxFileSize": 11800,
+  "maxAttributeStringLength": 44,
+  "maxFileSize": 11112,
   "maxLines": 517
 }

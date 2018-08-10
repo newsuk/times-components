@@ -8,6 +8,8 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
+  label: "test label",
+  section: "news",
   summary125: testSummary(125),
   summary160: testSummary(160)
 }).data;

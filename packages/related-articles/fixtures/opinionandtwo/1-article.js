@@ -4,6 +4,8 @@ const defaultCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultHeadline =
   "Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does";
+const defaultLabel = "opinion";
+const defaultSection = "comment";
 const defaultSummary105 = [
   {
     name: "paragraph",
@@ -109,6 +111,8 @@ export default (
     crop23 = defaultCrop23,
     crop169 = defaultCrop169,
     headline = defaultHeadline,
+    label = defaultLabel,
+    section = defaultSection,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -126,19 +130,6 @@ export default (
     },
     relatedArticles: [
       {
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        headline,
-        section: "comment",
-        summary105,
-        summary125,
-        summary145,
-        summary160,
-        summary175,
-        summary225,
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        label: "opinion",
-        url,
         byline: [
           {
             name: "inline",
@@ -154,6 +145,9 @@ export default (
             ]
           }
         ],
+        headline,
+        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        label,
         leadAsset: {
           title,
           crop169: {
@@ -162,7 +156,17 @@ export default (
           crop23: {
             url: crop23
           }
-        }
+        },
+        publicationName: "TIMES",
+        publishedTime: "2015-03-13T18:54:58.000Z",
+        section,
+        summary105,
+        summary125,
+        summary145,
+        summary160,
+        summary175,
+        summary225,
+        url
       }
     ]
   }
