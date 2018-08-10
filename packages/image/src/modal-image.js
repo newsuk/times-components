@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import { Modal, View } from "react-native";
-import Svg, { Path, G } from "@times-components/svgs";
+import Caption from "@times-components/caption";
 import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import { colours } from "@times-components/styleguide";
+import Svg, { Path, G } from "@times-components/svgs";
 import Image from "./image";
-import { defaultProps, propTypes } from "./image-prop-types";
-import styles from "./styles";
+import {
+  modalImageDefaultProps,
+  modalImagePropTypes
+} from "./modal-image-prop-types";
+import styles, { captionStyles } from "./styles";
 
 class ModalImage extends Component {
   constructor(props) {
@@ -27,9 +31,11 @@ class ModalImage extends Component {
   }
 
   render() {
+    const { caption, credits } = this.props;
+
     const closeButton = (
       <Svg height={24} viewBox="0 0 24 24" width={24}>
-        <G fill={colours.functional.cancel}>
+        <G fill={colours.functional.white}>
           <Path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           <Path d="M0 0h24v24H0z" fill="none" />
         </G>
@@ -44,10 +50,13 @@ class ModalImage extends Component {
           visible={this.state.showModal}
         >
           <View style={styles.modal}>
-            <Button onPress={this.hideModal}>{closeButton}</Button>
+            <View style={styles.buttonContainer}>
+              <Button onPress={this.hideModal}>{closeButton}</Button>
+            </View>
             <Gestures style={styles.imageContainer}>
               <Image {...this.props} style={styles.image} />
             </Gestures>
+            <Caption credits={credits} style={captionStyles} text={caption} />
           </View>
         </Modal>
         <Button onPress={this.showModal}>
@@ -58,7 +67,7 @@ class ModalImage extends Component {
   }
 }
 
-ModalImage.propTypes = propTypes;
-ModalImage.defaultProps = defaultProps;
+ModalImage.propTypes = modalImagePropTypes;
+ModalImage.defaultProps = modalImageDefaultProps;
 
 export default ModalImage;

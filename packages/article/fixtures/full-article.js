@@ -1178,7 +1178,7 @@ const defaultLabel = "HURRICANE IRMA";
 const defaultLeadAsset = {
   id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
   title: "Chris Reynolds Gordon at one of his party venues in London",
-  credits: null,
+  credits: "The credits",
   caption: "Chris Reynolds Gordon at one of his party venues in London",
   crop: {
     ratio: "16:9",

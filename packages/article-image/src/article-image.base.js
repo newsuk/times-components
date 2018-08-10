@@ -58,7 +58,12 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   return [
     <View key="img" style={styles[`${display}Image`]}>
-      <ModalImage aspectRatio={aspectRatio} uri={url} />
+      <ModalImage
+        aspectRatio={aspectRatio}
+        caption={caption}
+        credits={credits}
+        uri={url}
+      />
     </View>,
     ...children
   ];

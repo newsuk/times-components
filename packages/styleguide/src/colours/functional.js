@@ -14,7 +14,7 @@ const functionalColours = {
   articleFlagExclusive: "#C51D24",
   articleFlagNew: "#E34605",
   articleFlagUpdated: "#3C81BE",
-  cancel: "rgba(255, 255, 255, 0.8)"
+  white: "#FFFFFF"
 };
 
 export default functionalColours;

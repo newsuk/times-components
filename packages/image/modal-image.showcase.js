@@ -1,6 +1,6 @@
-/* eslint-disable react/no-danger */
-import React from "react";
-import { View } from "react-native";
+/* eslint-disable react/no-danger, react/prop-types */
+import React, { Fragment } from "react";
+import { Text } from "react-native";
 import ModalImage from "./src/modal-image";
 
 const uri =
@@ -13,10 +13,16 @@ export default {
       type: "story",
       name: "Default",
       platform: "native",
-      component: () => (
-        <View>
-          <ModalImage aspectRatio={16 / 9} uri={uri} />
-        </View>
+      component: ({ text }) => (
+        <Fragment>
+          <Text>Click on the image to open the modal</Text>
+          <ModalImage
+            aspectRatio={16 / 9}
+            caption={text("Caption: ", "An example caption")}
+            credits={text("Credits: ", "Example credits")}
+            uri={uri}
+          />
+        </Fragment>
       )
     }
   ]

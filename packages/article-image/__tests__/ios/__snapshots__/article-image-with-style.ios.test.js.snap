@@ -13,6 +13,8 @@ exports[`1. primary image with caption and credits 1`] = `
   <View>
     <ModalImage
       aspectRatio={1.25}
+      caption="Some caption"
+      credits="Some credits"
       uri="https://imageserver/someImage"
     />
   </View>
@@ -80,6 +82,8 @@ exports[`2. secondary image with caption and credits 1`] = `
   >
     <ModalImage
       aspectRatio={1.5}
+      caption="Another caption"
+      credits="Other credits"
       uri="https://imageserver/someImage"
     />
   </View>
@@ -154,6 +158,8 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
   >
     <ModalImage
       aspectRatio={1.5}
+      caption="Landscape caption"
+      credits="Landscape credits"
       uri="https://imageserver/someImage"
     />
   </View>
@@ -228,6 +234,8 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
   >
     <ModalImage
       aspectRatio={0.6666666666666666}
+      caption="Portrait caption"
+      credits="Portrait credits"
       uri="https://imageserver/someImage"
     />
   </View>

@@ -78,83 +78,7 @@ exports[`3. handle layout change 1`] = `
 </View>
 `;
 
-exports[`4. modal image 1`] = `
-<View>
-  <Modal
-    hardwareAccelerated={false}
-    presentationStyle="fullScreen"
-    visible={false}
-  >
-    <View>
-      <View>
-        <Svg
-          height={24}
-          viewBox="0 0 24 24"
-          width={24}
-        >
-          <G
-            fill="rgba(255, 255, 255, 0.8)"
-          >
-            <Path
-              d="b930778b5d8aea86ea540d7477cdc304"
-            />
-            <Path
-              d="f26c9aa2fd65f549f7f5798bc90c1b94"
-              fill="none"
-            />
-          </G>
-        </Svg>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View
-              aspectRatio={1.5}
-            >
-              <View>
-                <Image
-                  source={
-                    Object {
-                      "uri": "http://example.com/image.jpg?resize=1440",
-                    }
-                  }
-                />
-                <View>
-                  <Gradient
-                    degrees={264}
-                  />
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </Modal>
-  <View>
-    <View
-      aspectRatio={1.5}
-    >
-      <View>
-        <Image
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?resize=1440",
-            }
-          }
-        />
-        <View>
-          <Gradient
-            degrees={264}
-          />
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`5. prepend https schema 1`] = `
+exports[`4. prepend https schema 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -175,7 +99,7 @@ exports[`5. prepend https schema 1`] = `
 </View>
 `;
 
-exports[`6. handle onload event 1`] = `
+exports[`5. handle onload event 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -196,7 +120,7 @@ exports[`6. handle onload event 1`] = `
 </View>
 `;
 
-exports[`6. handle onload event 2`] = `
+exports[`5. handle onload event 2`] = `
 <View
   aspectRatio={1.5}
 >

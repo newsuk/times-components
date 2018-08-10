@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. modal image 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    visible={false}
+  >
+    <View>
+      <View>
+        <View>
+          <Svg
+            height={24}
+            viewBox="0 0 24 24"
+            width={24}
+          >
+            <G
+              fill="#FFFFFF"
+            >
+              <Path
+                d="b930778b5d8aea86ea540d7477cdc304"
+              />
+              <Path
+                d="f26c9aa2fd65f549f7f5798bc90c1b94"
+                fill="none"
+              />
+            </G>
+          </Svg>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <View
+              aspectRatio={1.5}
+            >
+              <View>
+                <Image
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg?resize=1440",
+                    }
+                  }
+                />
+                <View>
+                  <Gradient
+                    degrees={264}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <Text>
+            Test caption
+          </Text>
+          <Text>
+            TEST CREDITS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View>
+    <View
+      aspectRatio={1.5}
+    >
+      <View>
+        <Image
+          source={
+            Object {
+              "uri": "http://example.com/image.jpg?resize=1440",
+            }
+          }
+        />
+        <View>
+          <Gradient
+            degrees={264}
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
