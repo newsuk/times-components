@@ -47,7 +47,14 @@ const renderRow = analyticsStream => (
     }
 
     case "header": {
-      const { flags, headline, isVideo, label, section, standfirst  } = rowData.data;
+      const {
+        flags,
+        headline,
+        isVideo,
+        label,
+        section,
+        standfirst
+      } = rowData.data;
       const styles = stylesFactory();
       return (
         <ArticleHeader

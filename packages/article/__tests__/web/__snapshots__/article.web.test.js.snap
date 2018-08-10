@@ -254,7 +254,6 @@ Array [
           aria-label="label"
         >
           <VideoLabel
-            color="#333333"
             title={null}
           />
         </div>
