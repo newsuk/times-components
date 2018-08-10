@@ -2,10 +2,10 @@ import React from "react";
 import { View } from "react-native";
 import Caption from "@times-components/caption";
 import { ModalImage } from "@times-components/image";
-import styles from "../styles";
 import InsetCaption from "./inset-caption";
 import InlineImage from "./inline-image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
+import styles from "./styles";
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
