@@ -589,6 +589,7 @@ exports[`9. an article with updated byline 2`] = `
                   },
                 ]
               }
+              color="#FFFFFF"
             />
           </Text>
         </View>

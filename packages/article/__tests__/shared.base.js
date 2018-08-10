@@ -355,7 +355,11 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Wrapper>
           {byline => (
-            <Context.Provider value={{ theme: { scale: scales.medium } }}>
+            <Context.Provider
+              value={{
+                theme: { scale: scales.medium, sectionColour: "#FFFFFF" }
+              }}
+            >
               <Article
                 adConfig={adConfig}
                 analyticsStream={() => {}}
