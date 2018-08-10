@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import Caption from "@times-components/caption";
 import Image from "@times-components/image";
+import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import {
   InsetCaptionContainerStyle,
   InsetImageStyle
-} from "../styles/responsive";
-import { propTypes, defaultPropTypes } from "./article-image-prop-types";
+} from "./styles/responsive";
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
