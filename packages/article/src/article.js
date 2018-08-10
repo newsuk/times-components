@@ -133,10 +133,10 @@ class ArticlePage extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading && !nextProps.error) {
+  componentDidUpdate() {
+    if (!this.props.isLoading && !this.props.error) {
       this.setState({
-        dataSource: listViewDataHelper(nextProps.article)
+        dataSource: listViewDataHelper(this.props.article)
       });
     }
   }
