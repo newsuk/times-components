@@ -7,8 +7,18 @@ import propTypes from "./prop-types";
 const viewBox =
   "12.756953239440918 11.182208061218262 17.48609161376953 17.630264282226562";
 
-const IconStar = ({ fillColour, height, strokeColour, title, width }) => (
-  <Svg viewBox={viewBox} {...clean({ title, height, width: width || height })}>
+const IconStar = ({
+  fillColour,
+  height,
+  strokeColour,
+  title = "Star Icon",
+  width
+}) => (
+  <Svg
+    role="img"
+    viewBox={viewBox}
+    {...clean({ title, height, width: width || height })}
+  >
     <Polygon
       {...clean({
         stroke: strokeColour,

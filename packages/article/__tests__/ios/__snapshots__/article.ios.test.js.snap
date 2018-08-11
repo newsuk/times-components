@@ -47,7 +47,10 @@ exports[`2. a full article with an image as the lead asset 1`] = `
         <Text>
           Some Headline
         </Text>
-        <Text>
+        <Text
+          accessibilityRole="heading"
+          aria-level="2"
+        >
           Some Standfirst
         </Text>
         <View>

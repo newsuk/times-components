@@ -6,8 +6,15 @@ import propTypes from "./prop-types";
 
 const ratio = 75 / 60;
 
-const IconTwitter = ({ fillColour, height, strokeColour, title, width }) => (
+const IconTwitter = ({
+  fillColour,
+  height,
+  strokeColour,
+  title = "Twitter Icon",
+  width
+}) => (
   <Svg
+    role="img"
     viewBox="-354.2 -279.4 750 600"
     {...clean({ title, height, width: width || height * ratio })}
   >

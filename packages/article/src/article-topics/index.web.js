@@ -9,22 +9,26 @@ const ShowTopics = ({ device, onPress, topics }) => {
     if (device === "DESKTOP") {
       return (
         <TopicsMetaContainer>
-          <ArticleTopics
-            onPress={onPress}
-            style={styles.topicsMetaContainer}
-            topics={topics}
-          />
+          <nav>
+            <ArticleTopics
+              onPress={onPress}
+              style={styles.topicsMetaContainer}
+              topics={topics}
+            />
+          </nav>
         </TopicsMetaContainer>
       );
     }
 
     return (
       <TopicsContainer>
-        <ArticleTopics
-          onPress={onPress}
-          style={styles.topicsContainer}
-          topics={topics}
-        />
+        <nav>
+          <ArticleTopics
+            onPress={onPress}
+            style={styles.topicsContainer}
+            topics={topics}
+          />
+        </nav>
       </TopicsContainer>
     );
   }

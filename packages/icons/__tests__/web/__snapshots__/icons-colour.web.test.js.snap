@@ -1,23 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. icondiamond renders with different colours 1`] = `
-<g
-  fill="#facade"
-  stroke="#c0ffee"
->
-  <path />
-</g>
+Array [
+  <title>
+    Diamond Icon
+  </title>,
+  <g
+    fill="#facade"
+    stroke="#c0ffee"
+  >
+    <path />
+  </g>,
+]
 `;
 
 exports[`2. icontwitter renders with different colours 1`] = `
-<path
-  fill="#facade"
-  stroke="#c0ffee"
-/>
+Array [
+  <title>
+    Twitter Icon
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
 `;
 
 exports[`3. iconvideo renders with different colours 1`] = `
 Array [
+  <title>
+    Video Icon
+  </title>,
   <rect
     fill="#facade"
     stroke="#c0ffee"
@@ -34,26 +47,41 @@ Array [
 `;
 
 exports[`4. iconemail renders with different colours 1`] = `
-<g
-  fill="#facade"
-  stroke="#c0ffee"
->
-  <path />
-</g>
+Array [
+  <title>
+    Email Icon
+  </title>,
+  <g
+    fill="#facade"
+    stroke="#c0ffee"
+  >
+    <path />
+  </g>,
+]
 `;
 
 exports[`5. iconstar renders with different colours 1`] = `
-<polygon
-  fill="#facade"
-  stroke="#c0ffee"
-/>
+Array [
+  <title>
+    Star Icon
+  </title>,
+  <polygon
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
 `;
 
 exports[`6. iconfacebook renders with different colours 1`] = `
-<g
-  fill="#facade"
-  stroke="#c0ffee"
->
-  <path />
-</g>
+Array [
+  <title>
+    Facebook Icon
+  </title>,
+  <g
+    fill="#facade"
+    stroke="#c0ffee"
+  >
+    <path />
+  </g>,
+]
 `;

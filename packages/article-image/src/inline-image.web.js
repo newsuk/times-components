@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Caption from "@times-components/caption";
 import Image from "@times-components/image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
@@ -14,7 +14,9 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <InsetCaptionContainerStyle key="caption">
-      <Caption credits={credits} text={caption} />
+      <figcaption>
+        <Caption credits={credits} text={caption} />
+      </figcaption>
     </InsetCaptionContainerStyle>
   );
 };
@@ -33,12 +35,12 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
   const aspectRatio = ratioWidth / ratioHeight;
 
   return (
-    <Fragment>
+    <figure style={{ margin: 0 }}>
       <InsetImageStyle key="img">
         <Image aspectRatio={aspectRatio} uri={url} />
       </InsetImageStyle>
       {imgCaption}
-    </Fragment>
+    </figure>
   );
 };
 

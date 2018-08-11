@@ -103,17 +103,21 @@ const ArticleRow = ({ content: { data, index } }) =>
       return {
         element: (
           <MediaWrapper key={key}>
-            <AspectRatioContainer aspectRatio="16:9">
-              <Video
-                accountId={brightcoveAccountId}
-                height="100%"
-                policyKey={brightcovePolicyKey}
-                poster={{ uri: posterImageUrl }}
-                videoId={brightcoveVideoId}
-                width="100%"
-              />
-            </AspectRatioContainer>
-            <InsetCaption caption={caption} />
+            <figure style={{ margin: 0 }}>
+              <AspectRatioContainer aspectRatio="16:9">
+                <Video
+                  accountId={brightcoveAccountId}
+                  height="100%"
+                  policyKey={brightcovePolicyKey}
+                  poster={{ uri: posterImageUrl }}
+                  videoId={brightcoveVideoId}
+                  width="100%"
+                />
+              </AspectRatioContainer>
+              <figcaption>
+                <InsetCaption caption={caption} />
+              </figcaption>
+            </figure>
           </MediaWrapper>
         )
       };

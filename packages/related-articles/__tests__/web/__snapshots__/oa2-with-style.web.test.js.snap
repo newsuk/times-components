@@ -504,7 +504,12 @@ exports[`default styles 1`] = `
                 <div
                   className="S13 IS7"
                 >
-                  March 13 2015, 06:54pm
+                  <time>
+                    March 13 2015, 06:54pm
+                  </time>
+                  <span>
+                    
+                  </span>
                 </div>
               </div>
             </Card>

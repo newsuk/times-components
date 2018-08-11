@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleBody from "./article-body/article-body";
@@ -60,51 +60,57 @@ const renderArticle = (
     ) : null;
 
   return (
-    <Fragment>
+    <article>
       <HeaderAdContainer key="headerAd">
-        <Ad
-          contextUrl={url}
-          section={section}
-          slotName="header"
-          style={adStyle}
-        />
+        <aside>
+          <Ad
+            contextUrl={url}
+            section={section}
+            slotName="header"
+            style={adStyle}
+          />
+        </aside>
       </HeaderAdContainer>
       <MainContainer>
-        <HeaderContainer>
-          <ArticleHeader
-            flags={flags}
-            headline={headline}
-            isVideo={leadAssetProps.isVideo}
-            label={label}
-            standfirst={standfirst}
-          />
-        </HeaderContainer>
-        <MetaContainer>
-          <ArticleMeta
-            byline={byline}
-            onAuthorPress={onAuthorPress}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-          />
-          <ArticleTopics
-            device="DESKTOP"
-            onPress={onTopicPress}
-            topics={topics}
-          />
-        </MetaContainer>
-        <LeadAssetContainer>
-          <LeadAssetComponent {...leadAssetProps} />
-        </LeadAssetContainer>
+        <header>
+          <HeaderContainer>
+            <ArticleHeader
+              flags={flags}
+              headline={headline}
+              isVideo={leadAssetProps.isVideo}
+              label={label}
+              standfirst={standfirst}
+            />
+          </HeaderContainer>
+          <MetaContainer>
+            <ArticleMeta
+              byline={byline}
+              onAuthorPress={onAuthorPress}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
+            />
+            <ArticleTopics
+              device="DESKTOP"
+              onPress={onTopicPress}
+              topics={topics}
+            />
+          </MetaContainer>
+          <LeadAssetContainer>
+            <LeadAssetComponent {...leadAssetProps} />
+          </LeadAssetContainer>
+        </header>
         <BodyContainer>
           <ArticleBody content={content} contextUrl={url} section={section} />
         </BodyContainer>
       </MainContainer>
       <ArticleTopics onPress={onTopicPress} topics={topics} />
-      {displayRelatedArticles}
-      <Ad contextUrl={url} section={section} slotName="pixel" />
-      <Ad contextUrl={url} section={section} slotName="pixelteads" />
-      <Ad contextUrl={url} section={section} slotName="pixelskin" />
-    </Fragment>
+      <aside>
+        {displayRelatedArticles}
+        <Ad contextUrl={url} section={section} slotName="pixel" />
+        <Ad contextUrl={url} section={section} slotName="pixelteads" />
+        <Ad contextUrl={url} section={section} slotName="pixelskin" />
+      </aside>
+    </article>
   );
 };
 

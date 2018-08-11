@@ -68,7 +68,14 @@ exports[`1. one opinion and one support related article 1`] = `
                   </div>
                 </div>
                 <div>
-                  March 13 2015, 06:54pm
+                  <time
+                    dateTime="2015-03-13T18:54:58.000Z"
+                  >
+                    March 13 2015, 06:54pm
+                  </time>
+                  <span>
+                    
+                  </span>
                 </div>
               </div>
             </Card>
@@ -104,7 +111,14 @@ exports[`1. one opinion and one support related article 1`] = `
                   </h3>
                   <div />
                   <div>
-                    January 17 2018, 12:00pm
+                    <time
+                      dateTime="2018-01-17T12:00:00.000Z"
+                    >
+                      January 17 2018, 12:00pm
+                    </time>
+                    <span>
+                      
+                    </span>
                   </div>
                   <div>
                     <span>

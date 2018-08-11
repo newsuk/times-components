@@ -1402,7 +1402,12 @@ exports[`1. article list 1`] = `
                 <div
                   className="S9 IS5"
                 >
-                  Friday November 17 2017, 12:01am, The Times
+                  <time>
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Times
+                  </span>
                 </div>
               </div>
             </Card>
@@ -1460,7 +1465,12 @@ exports[`1. article list 1`] = `
                 <div
                   className="S20 IS10"
                 >
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time>
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div
                   className="S21 IS11"
@@ -1525,7 +1535,12 @@ exports[`1. article list 1`] = `
                 <div
                   className="S32 IS16"
                 >
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time>
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div
                   className="S33 IS17"
@@ -1590,7 +1605,12 @@ exports[`1. article list 1`] = `
                 <div
                   className="S44 IS22"
                 >
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time>
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div
                   className="S45 IS23"
@@ -1655,7 +1675,12 @@ exports[`1. article list 1`] = `
                 <div
                   className="S56 IS28"
                 >
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time>
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div
                   className="S57 IS29"

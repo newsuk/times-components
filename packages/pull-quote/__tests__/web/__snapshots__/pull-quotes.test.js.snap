@@ -1,61 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. with a caption 1`] = `
-<div>
-  <div>
-    “
-  </div>
-  <div>
-    Some content
-  </div>
+<blockquote
+  url=""
+>
   <div>
     <div>
-      A caption
+      “
+    </div>
+    <div>
+      Some content
+    </div>
+    <div>
+      <div>
+        <cite>
+          A caption
+        </cite>
+      </div>
     </div>
   </div>
-</div>
+</blockquote>
 `;
 
 exports[`2. without a caption 1`] = `
-<div>
-  <div>
-    “
-  </div>
-  <div>
-    Some content
-  </div>
+<blockquote
+  url=""
+>
   <div>
     <div>
-      
+      “
+    </div>
+    <div>
+      Some content
+    </div>
+    <div>
+      <div>
+        <cite>
+          
+        </cite>
+      </div>
     </div>
   </div>
-</div>
+</blockquote>
 `;
 
 exports[`3. with a twitter handle 1`] = `
-<div>
-  <div>
-    “
-  </div>
-  <div>
-    Some content
-  </div>
+<blockquote
+  url="https://twitter.com/@twitter"
+>
   <div>
     <div>
-      A caption
+      “
     </div>
     <div>
-      <IconTwitter
-        height={10}
-        width={12}
-      />
-      <TextLink
-        target="_blank"
-        url="https://twitter.com/@twitter"
-      >
-        @twitter
-      </TextLink>
+      Some content
+    </div>
+    <div>
+      <div>
+        <cite>
+          A caption
+        </cite>
+      </div>
+      <div>
+        <IconTwitter
+          height={10}
+          width={12}
+        />
+        <TextLink
+          target="_blank"
+          url="https://twitter.com/@twitter"
+        >
+          @twitter
+        </TextLink>
+      </div>
     </div>
   </div>
-</div>
+</blockquote>
 `;
