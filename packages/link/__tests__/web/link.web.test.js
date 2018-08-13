@@ -8,6 +8,8 @@ import shared from "../shared";
 
 addSerializers(expect, minimalRnw());
 
+require("jest-styled-components");
+
 const tests = [
   {
     name: "with responsive styles",
