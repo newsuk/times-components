@@ -5,12 +5,7 @@ import { defaultProps, propTypes } from "./image-prop-types";
 
 const TimesImage = ({ aspectRatio, style, uri }) => {
   const styles = {
-    wrapper: {
-      height: 0,
-      overflow: "hidden",
-      paddingBottom: `${100 / aspectRatio}%`,
-      display: "table"
-    },
+    img: { display: "block", width: "100%", zIndex: 1, position: "absolute" },
     placeholder: {
       position: "absolute",
       top: 0,
@@ -19,7 +14,12 @@ const TimesImage = ({ aspectRatio, style, uri }) => {
       right: 0,
       zIndex: 0
     },
-    img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
+    wrapper: {
+      height: 0,
+      overflow: "hidden",
+      paddingBottom: `${100 / aspectRatio}%`,
+      display: "table"
+    }
   };
 
   return (
