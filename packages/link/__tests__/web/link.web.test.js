@@ -1,6 +1,5 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import "jest-styled-components";
 import { addSerializers, minimalRnw } from "@times-components/jest-serializer";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";

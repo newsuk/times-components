@@ -1,6 +1,5 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import Link, { TextLink } from "../src/link";
 
 export default Text => [
@@ -82,25 +81,6 @@ export default Text => [
       );
 
       expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
-    name: "text link onpress",
-    test() {
-      const onPressMock = jest.fn();
-      const wrapper = shallow(
-        <TextLink
-          onPress={onPressMock}
-          target="_blank"
-          url="http://thetimes.co.uk"
-        >
-          <Text>The Times</Text>
-        </TextLink>
-      );
-
-      wrapper.simulate("press");
-
-      expect(onPressMock).toHaveBeenCalled();
     }
   }
 ];
