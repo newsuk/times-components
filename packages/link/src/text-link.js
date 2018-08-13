@@ -1,6 +1,6 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
-import { propTypes, defaultProps } from "./text-link-prop-types";
+import { StyleSheet, Text } from "react-native";
+import { defaultProps, propTypes } from "./text-link-prop-types";
 
 const styles = StyleSheet.create({
   textLink: {
@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
   }
 });
 
-const TextLink = ({ style, url, onPress, children, target }) => {
+const TextLink = ({ children, onPress, style, target, url }) => {
   const props = {
-    style: [styles.textLink].concat(style),
+    accessibilityRole: "link",
     href: url,
     onPress,
-    accessibilityRole: "link"
+    style: [styles.textLink].concat(style)
   };
 
   return target ? (

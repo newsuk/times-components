@@ -3,8 +3,8 @@ import { basePropTypes, baseDefaultProps } from "./text-link-prop-types-base";
 
 export const propTypes = {
   ...basePropTypes,
-  url: PropTypes.string.isRequired,
-  onPress: PropTypes.func
+  onPress: PropTypes.func,
+  url: PropTypes.string.isRequired
 };
 
 export const defaultProps = {

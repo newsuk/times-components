@@ -1,8 +1,8 @@
 import React from "react";
-import { View, TouchableNativeFeedback } from "react-native";
+import { TouchableNativeFeedback, View } from "react-native";
 import PropTypes from "prop-types";
 
-const Link = ({ onPress, children }) => (
+const Link = ({ children, onPress }) => (
   <TouchableNativeFeedback
     delayPressIn={0}
     onPress={onPress}
@@ -13,8 +13,8 @@ const Link = ({ onPress, children }) => (
 );
 
 Link.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  onPress: PropTypes.func.isRequired
 };
 
 export default Link;

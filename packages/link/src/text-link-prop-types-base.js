@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const { style: StylePropType } = Text.propTypes;
 export const basePropTypes = {
-  style: StylePropType,
   children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element,
@@ -11,6 +10,7 @@ export const basePropTypes = {
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
   onPress: PropTypes.func.isRequired,
+  style: StylePropType,
   target: PropTypes.string,
   url: PropTypes.string
 };
