@@ -5,7 +5,9 @@ const mapping = {
     tertiary: 26
   },
   headline: {
+    pageComponentHeadline: 25,
     pageHeadline: 40,
+    smallHeadline: 24
   },
   supporting: {
     cardMetaMobile: 12

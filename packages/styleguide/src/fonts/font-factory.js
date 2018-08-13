@@ -22,10 +22,20 @@ const fontMapping = styleguide => ({
     }
   },
   headline: {
+    pageComponentHeadline: {
+      fontFamily: styleguide.fonts.headline,
+      fontSize: styleguide.fontSizes.pageComponentHeadline,
+      lineHeight: styleguide.lineHeight({ font: "headline", fontSize: "pageComponentHeadline" })
+    },
     pageHeadline: {
       fontFamily: styleguide.fonts.headline,
       fontSize: styleguide.fontSizes.pageHeadline,
       lineHeight: styleguide.lineHeight({ font: "headline", fontSize: "pageHeadline" })
+    },
+    smallHeadline: {
+      fontFamily: styleguide.fonts.headline,
+      fontSize: styleguide.fontSizes.smallHeadline,
+      lineHeight: styleguide.lineHeight({ font: "headline", fontSize: "smallHeadline" })
     }
   },
   supporting: {

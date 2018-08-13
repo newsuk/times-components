@@ -179,6 +179,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "TimesModern-Bold",
     "font-size": "25px",
+    "line-height": "25px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },

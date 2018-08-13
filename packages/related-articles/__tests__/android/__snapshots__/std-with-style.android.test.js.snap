@@ -23,6 +23,7 @@ exports[`default styles 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 25,
+          "lineHeight": 25,
         }
       }
     >

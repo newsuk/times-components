@@ -1,11 +1,10 @@
 import { StyleSheet } from "react-native";
-import {
+import styleguideFactory, {
   colours,
-  fonts,
-  fontSizes,
   spacing
 } from "@times-components/styleguide";
 
+const { fontFactory } = styleguideFactory();
 const styles = {
   titleContainer: {
     alignItems: "center",
@@ -20,15 +19,12 @@ const styles = {
   },
   title: {
     color: colours.functional.primary,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.pageComponentHeadline
+    ...fontFactory({ font: "headline", fontSize: "pageComponentHeadline" })
   },
   headline: {
     color: colours.functional.primary,
-    fontFamily: fonts.headline,
-    fontSize: 22,
+    ...fontFactory({ font: "headline", fontSize: "smallHeadline" }),
     fontWeight: "400",
-    lineHeight: 24,
     marginBottom: spacing(1),
     marginTop: 0
   },
