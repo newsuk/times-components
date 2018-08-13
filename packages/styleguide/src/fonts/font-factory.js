@@ -1,5 +1,4 @@
 import timesStyleguide from "../styleguide";
-import { style } from "../../../../node_modules/glamor";
 
 const fontMapping = styleguide => ({
   body: {
@@ -15,6 +14,18 @@ const fontMapping = styleguide => ({
       fontFamily: styleguide.fonts.body,
       fontSize: styleguide.fontSizes.secondary,
       lineHeight: styleguide.lineHeight({ font: "body", fontSize: "secondary" })
+    },
+    tertiary: {
+      fontFamily: styleguide.fonts.body,
+      fontSize: styleguide.fontSizes.tertiary,
+      lineHeight: styleguide.lineHeight({ font: "body", fontSize: "tertiary" })
+    }
+  },
+  headline: {
+    pageHeadline: {
+      fontFamily: styleguide.fonts.headline,
+      fontSize: styleguide.fontSizes.pageHeadline,
+      lineHeight: styleguide.lineHeight({ font: "headline", fontSize: "pageHeadline" })
     }
   },
   supporting: {

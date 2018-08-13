@@ -1,11 +1,10 @@
 import { StyleSheet } from "react-native";
-import {
+import styleguideFactory, {
   colours,
-  fonts,
-  fontSizes,
   spacing
 } from "@times-components/styleguide";
 
+const { fontFactory } = styleguideFactory();
 const styles = StyleSheet.create({
   wrapper: {
     width: "100%",
@@ -22,15 +21,12 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   name: {
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.pageHeadline,
+    ...fontFactory({ font: "headline", fontSize: "pageHeadline" }),
     color: colours.functional.brandColour
   },
   description: {
-    fontFamily: fonts.body,
+    ...fontFactory({ font: "body", fontSize: "tertiary" }),
     textAlign: "center",
-    fontSize: fontSizes.tertiary,
-    lineHeight: 26,
     color: colours.functional.primary
   },
   divider: {

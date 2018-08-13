@@ -1,6 +1,6 @@
 import styleguideFactory from "@times-components/styleguide";
 
-const styleguide = styleguideFactory();
+const { fontFactory } = styleguideFactory();
 
 const styles = {
   container: {
@@ -9,7 +9,7 @@ const styles = {
   },
   title: {
     top: 2,
-    ...styleguide.fontFactory({
+    ...fontFactory({
       font: "supporting",
       fontSize: "cardMetaMobile"
     }),

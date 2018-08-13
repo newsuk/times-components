@@ -29,6 +29,7 @@ exports[`1. an article list header 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
+          "lineHeight": 40,
         }
       }
     >
