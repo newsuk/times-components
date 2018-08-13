@@ -9,7 +9,7 @@ import adTargetConfig from "./client/ad-targeting-config";
 
 const pickSectionColour = (sectionName, article) =>
   colours.section[sectionName] ||
-  (article ? colours.section[article.section] : colours.section.default);
+  (article ? colours.section[article.section] : undefined);
 
 const ArticleDetailsPage = ({
   articleId,

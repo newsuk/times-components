@@ -1,5 +1,6 @@
 import React from "react";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
+import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
