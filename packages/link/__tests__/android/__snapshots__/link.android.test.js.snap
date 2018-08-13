@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link test on android Link doesnt change inner text styles 1`] = `
-<View
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  pointerEvents="box-only"
->
-  <Text>
-    Hello
-  </Text>
-</View>
-`;
-
-exports[`Link test on android Link renders correctly 1`] = `
+exports[`1. renders link 1`] = `
 <View
   nativeBackgroundAndroid={
     Object {
@@ -30,7 +14,21 @@ exports[`Link test on android Link renders correctly 1`] = `
 </View>
 `;
 
-exports[`Link test on android TextLink renders correctly with children 1`] = `
+exports[`2. renders link with target 1`] = `
+<View
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
+  pointerEvents="box-only"
+>
+  The Times
+</View>
+`;
+
+exports[`3. renders text link 1`] = `
 <Text
   accessibilityRole="link"
   style={
@@ -43,7 +41,7 @@ exports[`Link test on android TextLink renders correctly with children 1`] = `
 </Text>
 `;
 
-exports[`Link test on android TextLink renders correctly with multiple styles 1`] = `
+exports[`4. text link with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
   style={
@@ -58,16 +56,33 @@ exports[`Link test on android TextLink renders correctly with multiple styles 1`
 </Text>
 `;
 
-exports[`Link test on android TextLink renders correctly with specific styles 1`] = `
+exports[`5. text link with children 1`] = `
 <Text
   accessibilityRole="link"
   style={
     Object {
-      "backgroundColor": "blue",
       "textDecorationLine": "underline",
     }
   }
 >
-  The Times
+  <Text>
+    The Times
+  </Text>
+</Text>
+`;
+
+exports[`6. text link with target 1`] = `
+<Text
+  accessibilityRole="link"
+  style={
+    Object {
+      "textDecorationLine": "underline",
+    }
+  }
+  target="_blank"
+>
+  <Text>
+    The Times
+  </Text>
 </Text>
 `;

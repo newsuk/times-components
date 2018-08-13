@@ -1,7 +1,17 @@
 import { Text } from "react-native";
-import test from "../shared";
-import Link, { TextLink } from "../../src/link";
+import {
+  addSerializers,
+  compose,
+  flattenStyleTransform,
+  minimalNativeTransform,
+  print
+} from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
+import shared from "../shared";
 
-describe("Link test on ios", () => {
-  test(Link, TextLink, Text);
-});
+addSerializers(
+  expect,
+  compose(print, flattenStyleTransform, minimalNativeTransform)
+);
+
+iterator(shared(Text));
