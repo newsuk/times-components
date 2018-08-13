@@ -59,7 +59,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "hoist-non-react-statics": "2.5.0",
+    "hoist-non-react-statics": "2.5.5",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.2",
     "react-display-name": "0.2.3"

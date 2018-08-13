@@ -57,8 +57,8 @@
   "dependencies": {
     "@times-components/test-utils": "1.0.1",
     "babel-core": "6.26.0",
-    "babel-jest": "23.4.0",
-    "babel-plugin-istanbul": "5.0.1",
+    "babel-jest": "23.4.2",
+    "babel-plugin-istanbul": "4.1.6",
     "babel-preset-jest": "23.2.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
