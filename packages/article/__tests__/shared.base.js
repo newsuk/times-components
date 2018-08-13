@@ -41,20 +41,18 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <Context.Provider>
-          <Article
-            {...props}
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
+        <Article
+          {...props}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
+        />
       );
 
       expect(output).toMatchSnapshot();
@@ -380,81 +378,6 @@ export const snapshotTests = renderComponent => [
       expect(output).toMatchSnapshot();
 
       output.getInstance().setState({ byline: testFixture.byline });
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "scaled medium full article",
-    test: () => {
-      const output = TestRenderer.create(
-        <Context.Provider value={{ theme: { scale: scales.medium } }}>
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={articleFixture({
-              ...testFixture
-            })}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
-      );
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "scaled large full article",
-    test: () => {
-      const output = TestRenderer.create(
-        <Context.Provider value={{ theme: { scale: scales.large } }}>
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={articleFixture({
-              ...testFixture
-            })}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
-      );
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "scaled xlarge full article",
-    test: () => {
-      const output = TestRenderer.create(
-        <Context.Provider value={{ theme: { scale: scales.xlarge } }}>
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={articleFixture({
-              ...testFixture
-            })}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
-      );
 
       expect(output).toMatchSnapshot();
     }
