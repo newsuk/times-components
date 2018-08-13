@@ -62,7 +62,7 @@ export default {
               paddingBottom: `${100 / 16 / 9}%`
             }}
           >
-            <img src={exampleImage} />
+            <img alt="Man with beard" src={exampleImage} />
           </div>
         </Caption>
       )
