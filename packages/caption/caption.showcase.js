@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "@times-components/image";
+import { Image } from "react-native";
 import Caption from "./src/caption";
 
 const captionText =
@@ -43,10 +43,27 @@ export default {
     },
     {
       type: "story",
+      platform: "native",
       name: "Image with caption",
       component: () => (
         <Caption credits={credits} text={captionText}>
           <Image aspectRatio={16 / 9} uri={exampleImage} />
+        </Caption>
+      )
+    },
+    {
+      type: "story",
+      platform: "web",
+      name: "Image with caption",
+      component: () => (
+        <Caption credits={credits} text={captionText}>
+          <div
+            style={{
+              paddingBottom: `${100 / 16 / 9}%`
+            }}
+          >
+            <img alt="Man with beard" src={exampleImage} />
+          </div>
         </Caption>
       )
     }
