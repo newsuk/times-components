@@ -7,10 +7,6 @@ import { colours } from "@times-components/styleguide";
 import withClient from "./client/with-client";
 import adTargetConfig from "./client/ad-targeting-config";
 
-const pickSectionColour = (sectionName, article) =>
-  colours.section[sectionName] ||
-  (article ? colours.section[article.section] : undefined);
-
 const ArticleDetailsPage = ({
   articleId,
   analyticsStream,
@@ -23,15 +19,16 @@ const ArticleDetailsPage = ({
   onLinkPress,
   onTopicPress,
   scale,
-  sectionName
+  sectionName: pageSection
 }) => (
   <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error }) => {
       const adConfig =
         isLoading || error ? {} : adTargetConfig(platformAdConfig, article);
+      const articleSection = article ? article.section : null;
       const theme = {
         scale: scale || defaults.theme.scale,
-        sectionColour: pickSectionColour(sectionName, article)
+        sectionColour: colours.section[pageSection || articleSection]
       };
 
       return (
@@ -42,24 +39,22 @@ const ArticleDetailsPage = ({
             article={article}
             error={error}
             isLoading={isLoading}
-            onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
-            onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
-            onCommentsPress={(event, extras) =>
-              onCommentsPress(extras.articleId, extras.url)
+            onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
+            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentsPress={(event, { articleId: id, url }) =>
+              onCommentsPress(id, url)
             }
-            onLinkPress={(event, linkInfo) => {
-              if (linkInfo.type === "article") {
-                onArticlePress(linkInfo.url);
-              } else if (linkInfo.type === "topic") {
-                onTopicPress(linkInfo.url);
+            onLinkPress={(event, { type, url }) => {
+              if (type === "article") {
+                onArticlePress(url);
+              } else if (type === "topic") {
+                onTopicPress(url);
               } else {
-                onLinkPress(linkInfo.url);
+                onLinkPress(url);
               }
             }}
-            onRelatedArticlePress={(event, extras) =>
-              onArticlePress(extras.url)
-            }
-            onTopicPress={(event, extras) => onTopicPress(extras.slug)}
+            onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
+            onTopicPress={(event, { slug }) => onTopicPress(slug)}
             onVideoPress={(event, info) => onVideoPress(info)}
           />
         </Context.Provider>
