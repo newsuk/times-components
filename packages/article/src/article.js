@@ -31,6 +31,7 @@ const renderRow = analyticsStream => (
   onLinkPress,
   onRelatedArticlePress,
   onTopicPress,
+  onTwitterLinkPress,
   onVideoPress
 ) => {
   // eslint-disable-next-line default-case
@@ -80,6 +81,7 @@ const renderRow = analyticsStream => (
         <ArticleRow
           content={rowData}
           onLinkPress={onLinkPress}
+          onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
         />
       );
