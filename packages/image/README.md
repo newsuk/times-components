@@ -2,7 +2,8 @@
 
 The image package maintains two distinct but related components called image and
 modalImage. A loading Times placeholder is displayed until the relevant image
-has been loaded.
+has been loaded. If the image never loads (i.e. it errors), the placeholder will
+still be visible.
 
 ## On web
 
