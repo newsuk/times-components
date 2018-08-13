@@ -1,5 +1,6 @@
 import {
   noArticlesTests,
+  noShortHeadlineTests,
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
@@ -16,6 +17,16 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   label: "test label",
   section: "newsreview",
   shortHeadline: "Test Short Headline",
+  summary125: testSummary(125)
+}).data;
+
+const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
+  url: "https://test.io",
+  crop169: "https://crop.io",
+  headline: "Test Headline",
+  label: "test label",
+  section: "newsreview",
+  shortHeadline: "",
   summary125: testSummary(125)
 }).data;
 
@@ -66,6 +77,11 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
 export const sharedNoArticles = noArticlesTests({
   fixture: standard1ArticleFixtureData,
   template: "DEFAULT"
+});
+
+export const sharedNoShortHeadline = noShortHeadlineTests({
+  fixture: standardNoShortHeadlineFixtureData,
+  name: "no short headline"
 });
 
 export const sharedOneArticle = oneArticleTests({

@@ -1,5 +1,6 @@
 import {
   noArticlesTests,
+  noShortHeadlineTests,
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
@@ -21,6 +22,16 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   summary145: testSummary(145),
   summary160: testSummary(160),
   summary225: testSummary(225)
+}).data;
+
+const opinionAndTwoNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture({
+  url: "https://test.io",
+  crop169: "https://crop.io",
+  headline: "Test Headline",
+  label: "test label",
+  section: "newsreview",
+  shortHeadline: "",
+  summary125: testSummary(125)
 }).data;
 
 const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
@@ -87,6 +98,11 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
 export const sharedNoArticles = noArticlesTests({
   fixture: opinionAndTwo1ArticleFixtureData,
   template: "OPINION_AND_TWO"
+});
+
+export const sharedNoShortHeadline = noShortHeadlineTests({
+  fixture: opinionAndTwoNoShortHeadlineFixtureData,
+  name: "no short headline"
 });
 
 export const sharedOneArticle = oneArticleTests({

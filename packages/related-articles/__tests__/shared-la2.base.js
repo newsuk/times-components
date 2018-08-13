@@ -1,5 +1,6 @@
 import {
   noArticlesTests,
+  noShortHeadlineTests,
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
@@ -15,6 +16,16 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   label: "test label",
   section: "artsfeatures",
   shortHeadline: "Test Short Headline",
+  summary125: testSummary(125),
+  url: "https://test.io"
+}).data;
+
+const leadAndTwoNoShortHeadlineFixtureData = leadAndTwo1ArticleFixture({
+  crop169: "https://crop169.io",
+  headline: "Test Headline",
+  label: "test label",
+  section: "artsfeatures",
+  shortHeadline: "",
   summary125: testSummary(125),
   url: "https://test.io"
 }).data;
@@ -68,6 +79,11 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
 export const sharedNoArticles = noArticlesTests({
   fixture: leadAndTwo1ArticleFixtureData,
   template: "LEAD_AND_TWO"
+});
+
+export const sharedNoShortHeadline = noShortHeadlineTests({
+  fixture: leadAndTwoNoShortHeadlineFixtureData,
+  name: "no short headline"
 });
 
 export const sharedOneArticle = oneArticleTests({
