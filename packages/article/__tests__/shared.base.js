@@ -42,20 +42,18 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <Context.Provider>
-          <Article
-            {...props}
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-          />
-        </Context.Provider>
+        <Article
+          {...props}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
+        />
       );
 
       expect(output).toMatchSnapshot();

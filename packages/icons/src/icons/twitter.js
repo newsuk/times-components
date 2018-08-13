@@ -1,12 +1,12 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { Path } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
 const ratio = 75 / 60;
 
-const IconTwitter = ({ title, width, height, fillColour, strokeColour }) => (
+const IconTwitter = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg
     viewBox="-354.2 -279.4 750 600"
     {...clean({ title, height, width: width || height * ratio })}
@@ -26,7 +26,7 @@ const IconTwitter = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconTwitter.propTypes = iconPropTypes;
+IconTwitter.propTypes = propTypes;
 
 IconTwitter.defaultProps = {
   fillColour: colours.functional.action

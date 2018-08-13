@@ -1,25 +1,23 @@
 import React from "react";
+import Context from "@times-components/context";
 import { TextLink } from "@times-components/link";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
-
-const linkStyles = {
-  color: colours.functional.action,
-  fontFamily: fonts.bodyRegular,
-  lineHeight: 26,
-  fontSize: fontSizes.bodyMobile,
-  marginBottom: spacing(5),
-  marginTop: 0
-};
+import styleFactory from "../styles/article-body";
 
 const ArticleLink = props => (
-  <TextLink onPress={props.onPress} style={linkStyles} url={props.url}>
-    {props.children}
-  </TextLink>
+  <Context.Consumer>
+    {({ theme: { scale } }) => {
+      const styles = styleFactory(scale);
+      return (
+        <TextLink
+          onPress={props.onPress}
+          style={styles.articleLink}
+          url={props.url}
+        >
+          {props.children}
+        </TextLink>
+      );
+    }}
+  </Context.Consumer>
 );
 
 ArticleLink.defaultProps = {

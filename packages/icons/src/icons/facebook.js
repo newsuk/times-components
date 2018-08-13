@@ -1,13 +1,13 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
 const viewBox = "14 10 10.592460632324219 20.397258758544922";
 
 const ratio = 1 / 2;
-const IconFacebook = ({ title, width, height, fillColour, strokeColour }) => (
+const IconFacebook = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
@@ -21,7 +21,7 @@ const IconFacebook = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconFacebook.propTypes = iconPropTypes;
+IconFacebook.propTypes = propTypes;
 
 IconFacebook.defaultProps = {
   fillColour: colours.functional.brandColour

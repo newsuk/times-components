@@ -18,7 +18,7 @@ const fontSizes = scale => {
       return {
         ...defaultSizes,
         bodyMobile: 21,
-        cardMetaMobile: 27,
+        cardMetaMobile: 17,
         secondary: 20
       };
     default:

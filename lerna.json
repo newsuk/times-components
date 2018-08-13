@@ -1,5 +1,5 @@
 {
-  "lerna": "2.5.1",
+  "lerna": "3.0.0-rc.0",
   "packages": ["packages/*", "android-app", "ios-app"],
   "version": "independent",
   "useWorkspaces": true

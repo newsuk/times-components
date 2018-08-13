@@ -2,7 +2,7 @@
 
 exports[`1. monorepo package hash 1`] = `"2653afca76fd598ed0399edc04873c65"`;
 
-exports[`2. non-monorepo package hash 1`] = `"2b4167d334c7448034c7231b2f8b1b82"`;
+exports[`2. non-monorepo package hash 1`] = `"8dc00d8466b1d0d984a7abf3b388da96"`;
 
 exports[`4. transformed non-monorepo file 1`] = `"Object.defineProperty(exports,\\"__esModule\\",{value:true});var _fs=require(\\"fs\\");var _fs2=_interopRequireDefault(_fs);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var sum=function sum(a,b){return a+b;};exports.default=sum;"`;
 

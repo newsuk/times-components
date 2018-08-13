@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.7.1",
-    "@times-components/webpack-configurator": "2.0.3",
+    "@times-components/webpack-configurator": "2.0.4",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
     "enzyme": "3.3.0",
