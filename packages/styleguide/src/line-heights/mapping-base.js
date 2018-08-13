@@ -9,8 +9,13 @@ const mapping = {
     pageHeadline: 40,
     smallHeadline: 24
   },
+  headlineRegular: {
+    pageComponentHeadline: 30
+  },
   supporting: {
-    cardMetaMobile: 12
+    caption: 13,
+    cardMetaMobile: 12,
+    link: 13
   }
 };
 
