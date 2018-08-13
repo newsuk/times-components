@@ -1,10 +1,10 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
-const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
+const IconDiamond = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg
     viewBox="0 0 20 20"
     {...clean({ title, height, width: width || height })}
@@ -15,7 +15,7 @@ const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconDiamond.propTypes = iconPropTypes;
+IconDiamond.propTypes = propTypes;
 
 IconDiamond.defaultProps = {
   fillColour: colours.functional.brandColour
