@@ -1,13 +1,13 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { Polygon } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
 const viewBox =
   "12.756953239440918 11.182208061218262 17.48609161376953 17.630264282226562";
 
-const IconStar = ({ title, width, height, fillColour, strokeColour }) => (
+const IconStar = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg viewBox={viewBox} {...clean({ title, height, width: width || height })}>
     <Polygon
       {...clean({
@@ -19,7 +19,7 @@ const IconStar = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconStar.propTypes = iconPropTypes;
+IconStar.propTypes = propTypes;
 
 IconStar.defaultProps = {
   fillColour: colours.functional.brandColour

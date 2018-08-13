@@ -1,13 +1,13 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
 const viewBox = "0 0 22 16";
 
 const ratio = 22 / 16;
-const IconEmail = ({ title, width, height, fillColour, strokeColour }) => (
+const IconEmail = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
@@ -21,7 +21,7 @@ const IconEmail = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconEmail.propTypes = iconPropTypes;
+IconEmail.propTypes = propTypes;
 
 IconEmail.defaultProps = {
   fillColour: colours.functional.brandColour

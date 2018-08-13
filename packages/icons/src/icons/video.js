@@ -1,14 +1,14 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { clean } from "@times-components/utils";
 import Svg, { Rect, Polygon } from "@times-components/svgs";
-import iconPropTypes from "./prop-types";
+import { clean } from "@times-components/utils";
+import propTypes from "./prop-types";
 
 const viewBox =
   "0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895";
 
 const ratio = 43 / 25;
-const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
+const IconVideo = ({ fillColour, height, strokeColour, title, width }) => (
   <Svg
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
@@ -40,7 +40,7 @@ const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
   </Svg>
 );
 
-IconVideo.propTypes = iconPropTypes;
+IconVideo.propTypes = propTypes;
 
 IconVideo.defaultProps = {
   fillColour: colours.functional.brandColour

@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { colours, fonts } from "@times-components/styleguide";
 import * as Icons from "./src/icons";
 
