@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.3"></a>
+## [3.1.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.1.2...@times-components/styleguide@3.1.3) (2018-08-13)
+
+
+### Bug Fixes
+
+* apply font scaling design review ([#1200](https://github.com/newsuk/times-components/issues/1200)) ([5dc2800](https://github.com/newsuk/times-components/commit/5dc2800))
+
+
+
+
+
 <a name="3.1.2"></a>
 ## [3.1.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.1.1...@times-components/styleguide@3.1.2) (2018-08-13)
 
