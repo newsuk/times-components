@@ -5,7 +5,7 @@ export const propTypes = {
   caption: PropTypes.string,
   captionColour: PropTypes.string,
   content: PropTypes.string.isRequired,
-  onTwitterLinkPress: PropTypes.func,
+  onTwitterLinkPress: PropTypes.func.isRequired,
   quoteColour: PropTypes.string,
   twitter: PropTypes.string
 };
@@ -13,7 +13,6 @@ export const propTypes = {
 export const defaultProps = {
   caption: "",
   captionColour: colours.functional.secondary,
-  onTwitterLinkPress: () => null,
   quoteColour: colours.functional.secondary,
   twitter: ""
 };

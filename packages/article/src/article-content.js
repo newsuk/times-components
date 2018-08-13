@@ -11,6 +11,7 @@ const ArticleContent = ({
   onLinkPress,
   onRelatedArticlePress,
   onTopicPress,
+  onTwitterLinkPress,
   onVideoPress
 }) => (
   <FlatList
@@ -27,6 +28,7 @@ const ArticleContent = ({
         onLinkPress,
         onRelatedArticlePress,
         onTopicPress,
+        onTwitterLinkPress,
         onVideoPress
       )
     }
@@ -49,6 +51,7 @@ ArticleContent.propTypes = {
   onLinkPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired,
+  onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
 

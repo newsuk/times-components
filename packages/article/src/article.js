@@ -164,6 +164,7 @@ class ArticlePage extends Component {
         onLinkPress={this.props.onLinkPress}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onTopicPress={this.props.onTopicPress}
+        onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
         pageSize={listViewPageSize}
         renderRow={renderRow(this.props.analyticsStream)}
@@ -183,6 +184,7 @@ ArticlePage.propTypes = {
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
+  onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articleDefaultProps;
