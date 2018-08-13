@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   link: {
     ...sharedStyles.link,
-    paddingTop: 4
+    paddingTop: 2
   }
 });
 

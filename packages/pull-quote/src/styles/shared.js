@@ -48,7 +48,7 @@ const sharedStyles = {
     flexDirection: "row",
     alignItems: "center",
     borderLeftWidth: 1,
-    borderLeftColor: colours.functional.secondary,
+    borderLeftColor: colours.functional.keyline,
     marginLeft: 7,
     paddingLeft: 7,
     height: 15

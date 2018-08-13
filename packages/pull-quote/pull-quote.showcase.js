@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import PullQuotes from "./src/pull-quote";
 
@@ -11,30 +12,14 @@ export default {
   children: [
     {
       type: "story",
-      name: "Pull Quotes with a Caption",
-      component: () => <PullQuotes caption={caption} content={content} />
-    },
-    {
-      type: "story",
-      name: "Pull Quotes without a Caption",
-      component: () => <PullQuotes content={content} />
-    },
-    {
-      type: "story",
-      name: "Pull Quotes with a caption and Twitter",
-      component: () => (
-        <PullQuotes caption={caption} content={content} twitter={twitter} />
-      )
-    },
-    {
-      type: "story",
-      name: "Pull Quotes without a Caption and different colours",
-      component: () => (
+      name: "Default",
+      component: ({ color, text }) => (
         <PullQuotes
-          caption={caption}
-          captionColour="#850029"
-          content={content}
-          quoteColour="#850029"
+          caption={text("Caption: ", caption)}
+          captionColour={color("Caption Colour: ", "#850029")}
+          content={text("Content: ", content)}
+          quoteColour={color("Quote Colour: ", "#850029")}
+          twitter={text("Twitter Link: ", twitter)}
         />
       )
     }
