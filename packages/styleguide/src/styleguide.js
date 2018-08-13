@@ -1,4 +1,3 @@
-import { scales } from "@times-components/context";
 import sectionColours from "./colours/section";
 import functionalColours from "./colours/functional";
 
@@ -9,6 +8,7 @@ import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
 import timesFontFactory from "./fonts/font-factory";
 
+import scales from "./scales";
 import spacing from "./spacing";
 
 const colours = {
@@ -32,6 +32,7 @@ export {
   fontFactory,
   fontSizes,
   lineHeight,
+  scales,
   spacing
 };
 export default ({ scale = scales.medium } = {}) => ({

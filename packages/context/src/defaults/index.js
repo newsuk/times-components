@@ -1,5 +1,4 @@
-import { colours } from "@times-components/styleguide";
-import scales from "./scales";
+import { colours, scales } from "@times-components/styleguide";
 
 export default {
   theme: {

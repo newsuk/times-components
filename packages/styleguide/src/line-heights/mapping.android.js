@@ -1,4 +1,4 @@
-import { scales } from "@times-components/context";
+import scales from "../scales";
 import mappingBase from "./mapping-base";
 
 const mapping = ({ scale }) => {
