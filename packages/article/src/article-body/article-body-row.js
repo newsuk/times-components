@@ -81,6 +81,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
               caption={name}
               content={content}
               key={key}
+              onTwitterLinkPress={onLinkPress}
               twitter={twitter}
             />
           </View>
