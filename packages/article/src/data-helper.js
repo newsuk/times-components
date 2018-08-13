@@ -21,7 +21,6 @@ const prepareDataForListView = articleData => {
   const articleHeaderData = {
     label: articleData.label,
     headline: articleData.headline,
-    section: articleData.section,
     standfirst: articleData.standfirst,
     flags: articleData.flags,
     isVideo
@@ -29,8 +28,7 @@ const prepareDataForListView = articleData => {
   const articleMidContainerData = {
     publicationName: articleData.publicationName,
     publishedTime: articleData.publishedTime,
-    byline: articleData.byline,
-    section: articleData.section
+    byline: articleData.byline
   };
   const relatedArticlesData = articleData.relatedArticles
     ? {

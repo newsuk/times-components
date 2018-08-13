@@ -4,7 +4,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
+import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, {
   testFixture,

@@ -4,7 +4,6 @@ import { View, Text } from "react-native";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
 import styles from "../styles/article-meta";
 
 const ArticleMetaRow = (textStyle, component, key, RowWrapper) => (
@@ -15,7 +14,6 @@ const ArticleMetaRow = (textStyle, component, key, RowWrapper) => (
 
 const ArticleMetaBase = ({
   byline,
-  section,
   publishedTime,
   publicationName,
   RowWrapper,
@@ -38,7 +36,7 @@ const ArticleMetaBase = ({
           {({ theme: { sectionColour } }) => (
             <ArticleBylineWithLinks
               ast={byline}
-              color={sectionColour || colours.section[section]}
+              color={sectionColour}
               onAuthorPress={onAuthorPress}
             />
           )}
@@ -68,16 +66,14 @@ ArticleMetaBase.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   publishedTime: PropTypes.string,
   publicationName: PropTypes.string,
-  onAuthorPress: PropTypes.func.isRequired,
-  section: PropTypes.string
+  onAuthorPress: PropTypes.func.isRequired
 };
 
 ArticleMetaBase.defaultProps = {
   byline: [],
   publishedTime: null,
   publicationName: null,
-  RowWrapper: View,
-  section: null
+  RowWrapper: View
 };
 
 export default ArticleMetaBase;

@@ -47,14 +47,7 @@ const renderRow = analyticsStream => (
     }
 
     case "header": {
-      const {
-        flags,
-        headline,
-        isVideo,
-        label,
-        section,
-        standfirst
-      } = rowData.data;
+      const { flags, headline, isVideo, label, standfirst } = rowData.data;
       const styles = stylesFactory();
       return (
         <ArticleHeader
@@ -63,7 +56,6 @@ const renderRow = analyticsStream => (
           isVideo={isVideo}
           key={rowData.type}
           label={label}
-          section={section}
           standfirst={standfirst}
           style={[styles.articleMainContentRow]}
         />
@@ -71,7 +63,7 @@ const renderRow = analyticsStream => (
     }
 
     case "middleContainer": {
-      const { byline, publishedTime, publicationName, section } = rowData.data;
+      const { byline, publishedTime, publicationName } = rowData.data;
       return (
         <ArticleMeta
           byline={byline}
@@ -79,7 +71,6 @@ const renderRow = analyticsStream => (
           onAuthorPress={onAuthorPress}
           publicationName={publicationName}
           publishedTime={publishedTime}
-          section={section}
         />
       );
     }

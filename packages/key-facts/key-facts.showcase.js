@@ -2,9 +2,9 @@
 import React from "react";
 import invert from "lodash.invert";
 import { ScrollView } from "react-native";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import { colours } from "@times-components/styleguide";
+import { colours, scales } from "@times-components/styleguide";
 import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts-showcase.json";
 import dataNoTitle from "./fixtures/key-facts-no-title-showcase.json";

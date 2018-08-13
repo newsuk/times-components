@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
 import {
   addSerializers,
   compose,
@@ -10,6 +10,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { scales } from "@times-components/styleguide";
 import KeyFacts from "../../src/key-facts";
 import data from "../../fixtures/key-facts-test.json";
 

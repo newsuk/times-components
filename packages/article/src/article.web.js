@@ -76,7 +76,6 @@ const renderArticle = (
             headline={headline}
             isVideo={leadAssetProps.isVideo}
             label={label}
-            section={section}
             standfirst={standfirst}
           />
         </HeaderContainer>
@@ -86,7 +85,6 @@ const renderArticle = (
             onAuthorPress={onAuthorPress}
             publicationName={publicationName}
             publishedTime={publishedTime}
-            section={section}
           />
           <ArticleTopics
             device="DESKTOP"

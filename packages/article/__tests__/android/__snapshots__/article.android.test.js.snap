@@ -40,6 +40,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           accessibilityLabel="label"
         >
           <ArticleLabel
+            color="#333333"
             title="Some Label"
           />
         </View>
@@ -78,6 +79,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                   },
                 ]
               }
+              color="#333333"
             />
           </Text>
         </View>
@@ -242,6 +244,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
           accessibilityLabel="label"
         >
           <VideoLabel
+            color="#333333"
             title={null}
           />
         </View>

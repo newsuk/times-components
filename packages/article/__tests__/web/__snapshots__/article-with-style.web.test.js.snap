@@ -379,7 +379,7 @@ Array [
 <style>
 {
     "IS1": {
-      "color": "black",
+      "color": "rgba(51,51,51,1)",
       "fontFamily": "GillSansMTStd-Medium",
       "fontSize": "12px",
       "fontWeight": "400",

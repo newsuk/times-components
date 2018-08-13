@@ -3,11 +3,11 @@
 import React from "react";
 import invert from "lodash.invert";
 import { addTypenameToDocument } from "apollo-utilities";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import { article as articleQuery } from "@times-components/provider-queries";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
-import { colours } from "@times-components/styleguide";
+import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
 import fullArticleFixture, {
