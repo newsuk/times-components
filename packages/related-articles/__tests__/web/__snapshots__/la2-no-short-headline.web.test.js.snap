@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. one lead related article 1`] = `
+exports[`1. no short headline 1`] = `
 <div>
   <div>
     <h3
@@ -37,7 +37,7 @@ exports[`1. one lead related article 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Test Short Headline
+                  Test Headline
                 </h3>
                 <div>
                   <div>
@@ -66,7 +66,7 @@ exports[`1. one lead related article 1`] = `
 </div>
 `;
 
-exports[`2. analytics for one lead related article 1`] = `
+exports[`2. analytics for no short headline 1`] = `
 Array [
   Array [
     Object {
@@ -75,7 +75,7 @@ Array [
         "articles": Array [
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Test Short Headline",
+            "headline": "Test Headline",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "lead-and-two",

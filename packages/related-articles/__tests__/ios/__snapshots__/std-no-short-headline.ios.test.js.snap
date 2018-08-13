@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. one lead related article 1`] = `
+exports[`1. no short headline 1`] = `
 <View>
   <View>
     <Text
@@ -19,7 +19,7 @@ exports[`1. one lead related article 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop169.io",
+                "uri": "https://crop.io",
               }
             }
             imageRatio={1.7777777777777777}
@@ -36,7 +36,7 @@ exports[`1. one lead related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Test Short Headline
+                Test Headline
               </Text>
               <View>
                 <Text>
@@ -52,7 +52,10 @@ exports[`1. one lead related article 1`] = `
               </Text>
               <Text>
                 <Text>
-                  Deborah Haynes
+                  Camilla Long
+                </Text>
+                <Text>
+                  , Environment Editor
                 </Text>
               </Text>
             </View>
@@ -64,7 +67,7 @@ exports[`1. one lead related article 1`] = `
 </View>
 `;
 
-exports[`2. analytics for one lead related article 1`] = `
+exports[`2. analytics for no short headline 1`] = `
 Array [
   Array [
     Object {
@@ -72,15 +75,15 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Deborah Haynes",
-            "headline": "Test Short Headline",
-            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "byline": "Camilla Long",
+            "headline": "Test Headline",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "lead-and-two",
+            "role": "standard-1",
           },
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "LEAD_AND_TWO",
+        "template": "DEFAULT",
       },
       "component": "Page",
       "object": "RelatedArticles",

@@ -13,6 +13,7 @@ import {
   relatedArticleItemDefaultProps
 } from "./related-article-item-prop-types";
 import styles from "./styles";
+import getHeadline from "./utils/headline";
 
 const RelatedArticleItem = ({
   article,
@@ -97,7 +98,7 @@ const RelatedArticleItem = ({
           headline={() => (
             <ArticleSummaryHeadline
               className={headlineClass}
-              headline={shortHeadline || headline}
+              headline={getHeadline(headline, shortHeadline)}
               style={styles.headline}
             />
           )}

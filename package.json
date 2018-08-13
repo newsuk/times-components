@@ -115,7 +115,7 @@
     "@storybook/react": "3.4.10",
     "@storybook/react-native": "3.4.10",
     "@times-components/depend": "*",
-    "@times-components/fructose":"3.8.4",
+    "@times-components/fructose": "3.8.4",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-preset-react-native": "4.0.0",
@@ -157,10 +157,10 @@
     "webpack": "3.12.0"
   },
   "dependencies": {
+    "aws-sdk": "2.238.1",
     "babel-preset-es2015": "6.24.1",
     "expo": "29.0.0",
     "react-native": "0.55.4",
-    "aws-sdk": "2.238.1",
     "react-native-showcase-loader": "1.1.0"
   }
 }
