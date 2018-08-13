@@ -14,6 +14,7 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   headline: "Test Headline",
   label: "test label",
   section: "artsfeatures",
+  shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
   url: "https://test.io"
 }).data;
@@ -23,6 +24,7 @@ const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   firstHeadline: "First Headline",
   firstLabel: "first label",
   firstSection: "business",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
   firstUrl: "https://first.io",
@@ -30,6 +32,7 @@ const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   secondHeadline: "Second Headline",
   secondLabel: "second label",
   secondSection: "bricksmortar",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary175: testSummary(175),
   secondUrl: "https://second.io"
@@ -40,6 +43,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
   firstHeadline: "First Headline",
   firstLabel: "first label",
   firstSection: "culture",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
   firstUrl: "https://first.io",
@@ -47,6 +51,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
   secondHeadline: "Second Headline",
   secondLabel: "second label",
   secondSection: "defcon",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary175: testSummary(175),
   secondUrl: "https://second.io",
@@ -54,6 +59,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
   thirdHeadline: "Third Headline",
   thirdLabel: "third label",
   thirdSection: "driving",
+  thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary175: testSummary(175),
   thirdUrl: "https://third.io"

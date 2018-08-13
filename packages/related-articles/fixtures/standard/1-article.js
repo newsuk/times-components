@@ -2,6 +2,7 @@ const defaultCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
 const defaultHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
+const defaultShortHeadline = "Bringing the fragile masterpiece over safely";
 const defaultLabel = "BAYEUX TAPESTRY";
 const defaultSection = "thedish";
 const defaultSummary105 = [
@@ -117,6 +118,7 @@ export default (
     headline = defaultHeadline,
     label = defaultLabel,
     section = defaultSection,
+    shortHeadline = defaultShortHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -175,6 +177,7 @@ export default (
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
         section,
+        shortHeadline,
         summary105,
         summary125,
         summary145,

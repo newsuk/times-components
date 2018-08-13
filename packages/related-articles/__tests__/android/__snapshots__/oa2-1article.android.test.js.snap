@@ -51,7 +51,7 @@ exports[`1. one opinion related article 1`] = `
                 accessibilityRole="heading"
                 aria-level="3"
               >
-                Test Headline
+                Test Short Headline
               </Text>
               <View>
                 <Text>
@@ -83,7 +83,7 @@ Array [
         "articles": Array [
           Object {
             "byline": "Sathnam Sanghera",
-            "headline": "Test Headline",
+            "headline": "Test Short Headline",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",

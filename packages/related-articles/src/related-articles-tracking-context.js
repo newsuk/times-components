@@ -8,7 +8,7 @@ export default Component =>
     getAttrs: ({ template, articles }) => ({
       template,
       articles: articles.map(
-        ({ id, headline, publishedTime, byline }, index) => {
+        ({ byline, headline, id, publishedTime, shortHeadline }, index) => {
           const getRole = () => {
             switch (template) {
               case "DEFAULT":
@@ -22,7 +22,7 @@ export default Component =>
           return {
             id,
             byline: get(byline, "[0].children[0].attributes.value", ""),
-            headline,
+            headline: shortHeadline || headline,
             publishedTime,
             role: getRole()
           };

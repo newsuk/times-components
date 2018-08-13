@@ -37,7 +37,7 @@ exports[`1. a single related article 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  Test Headline
+                  Test Short Headline
                 </h3>
                 <div>
                   <div>
@@ -78,7 +78,7 @@ Array [
         "articles": Array [
           Object {
             "byline": "Camilla Long",
-            "headline": "Test Headline",
+            "headline": "Test Short Headline",
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",

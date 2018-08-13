@@ -9,6 +9,7 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
+  shortHeadline: "Test Short Headline",
   section: "focus",
   summary125: testSummary(125),
   summary160: testSummary(160)
