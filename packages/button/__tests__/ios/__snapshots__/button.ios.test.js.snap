@@ -23,6 +23,7 @@ exports[`1. button 1`] = `
         "color": "#FFF",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 16,
+        "lineHeight": 16,
         "paddingTop": 5,
       }
     }

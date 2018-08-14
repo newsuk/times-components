@@ -13,6 +13,7 @@ const mapping = {
     pageComponentHeadline: 30
   },
   supporting: {
+    button: 16,
     caption: 13,
     cardMetaMobile: 12,
     link: 13,
