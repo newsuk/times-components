@@ -4,6 +4,7 @@ const defaultCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326";
 const defaultHeadline =
   "Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does";
+const defaultShortHeadline = "Nothing proves Jeremy Corbyn is anti-semitic";
 const defaultLabel = "opinion";
 const defaultSection = "comment";
 const defaultSummary105 = [
@@ -113,6 +114,7 @@ export default (
     headline = defaultHeadline,
     label = defaultLabel,
     section = defaultSection,
+    shortHeadline = defaultShortHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
     summary145 = defaultSummary145,
@@ -160,6 +162,7 @@ export default (
         publicationName: "TIMES",
         publishedTime: "2015-03-13T18:54:58.000Z",
         section,
+        shortHeadline,
         summary105,
         summary125,
         summary145,

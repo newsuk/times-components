@@ -10,6 +10,7 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   headline: "Test Headline",
   label: "test label",
   section: "news",
+  shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
   summary160: testSummary(160)
 }).data;

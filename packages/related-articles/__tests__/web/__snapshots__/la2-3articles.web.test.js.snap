@@ -37,7 +37,7 @@ exports[`1. one lead and two support related articles 1`] = `
                   aria-level="3"
                   role="heading"
                 >
-                  First Headline
+                  First Short Headline
                 </h3>
                 <div>
                   <div>
@@ -93,7 +93,7 @@ exports[`1. one lead and two support related articles 1`] = `
                     aria-level="3"
                     role="heading"
                   >
-                    Second Headline
+                    Second Short Headline
                   </h3>
                   <div />
                   <div>
@@ -132,7 +132,7 @@ exports[`1. one lead and two support related articles 1`] = `
                     aria-level="3"
                     role="heading"
                   >
-                    Third Headline
+                    Third Short Headline
                   </h3>
                   <div />
                   <div>
@@ -163,21 +163,21 @@ Array [
         "articles": Array [
           Object {
             "byline": "Deborah Haynes",
-            "headline": "First Headline",
+            "headline": "First Short Headline",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "lead-and-two",
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Second Headline",
+            "headline": "Second Short Headline",
             "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "lead-and-two-supporting-1",
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Third Headline",
+            "headline": "Third Short Headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",
             "role": "lead-and-two-supporting-2",

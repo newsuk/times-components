@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no short headline 1`] = `
+<div>
+  <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Related articles
+    </h3>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <Link
+            url="https://test.io"
+          >
+            <Card
+              image={
+                Object {
+                  "uri": "https://crop169.io",
+                }
+              }
+              imageRatio={1.7777777777777777}
+              isReversed={false}
+              showImage={true}
+            >
+              <div>
+                <div>
+                  <div>
+                    TEST LABEL
+                  </div>
+                </div>
+                <h3
+                  aria-level="3"
+                  role="heading"
+                >
+                  Test Headline
+                </h3>
+                <div>
+                  <div>
+                    <span>
+                      
+                      Summary 125
+                      ...
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  March 13 2015, 06:54pm
+                </div>
+                <div>
+                  <span>
+                    Deborah Haynes
+                  </span>
+                </div>
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. analytics for no short headline 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Test Headline",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "lead-and-two",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "LEAD_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
