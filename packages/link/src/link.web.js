@@ -1,12 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+import { breakpoints } from "@times-components/styleguide";
 import PropTypes from "prop-types";
-import withResponsiveStyles from "@times-components/responsive-styles";
 
 const RespLink = responsiveLinkStyles =>
-  withResponsiveStyles("a", {
-    base: () => `${responsiveLinkStyles.base}`,
-    mediumUp: () => `${responsiveLinkStyles.medium}`
-  });
+  styled.a`
+    ${responsiveLinkStyles.base} @media (min-width: ${breakpoints.medium}px) {
+      ${responsiveLinkStyles.medium};
+    }
+  `;
 
 const Link = ({
   children,

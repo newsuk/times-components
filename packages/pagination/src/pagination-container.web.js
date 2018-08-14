@@ -1,24 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
-const baseStyle = `
+const ContainerWithResults = styled(View)`
+  align-items: stretch;
+  flex-direction: column;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-top: ${spacing(6)};
+  }
+`;
+
+const ContainerWithoutResults = styled(View)`
   align-items: stretch;
   flex-direction: column;
 `;
-const mediumStyle = `
-  margin-top: ${spacing(6)}
-`;
-const ContainerWithResults = withResponsiveStyles(View, {
-  base: () => baseStyle,
-  mediumUp: () => mediumStyle
-});
-
-const ContainerWithoutResults = withResponsiveStyles(View, {
-  base: () => baseStyle
-});
 
 const PaginationContainer = ({ children, hideResults }) =>
   hideResults ? (

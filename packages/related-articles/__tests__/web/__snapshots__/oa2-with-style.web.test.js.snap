@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c1 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,11 +18,11 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c0 .opinionContentContainerClass {
+.c2 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c0 .opinionImageContainerClass {
+.c2 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -32,25 +32,25 @@ exports[`default styles 1`] = `
   right: 0;
 }
 
-.c0 .supportImageContainerClass {
+.c2 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c2 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .opinionSummary125Class {
+.c2 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -66,7 +66,7 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -80,43 +80,54 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c0 .opinionImageContainerClass {
-    min-width: 130px;
-  }
-
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .opinionBylineClass,
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionBylineClass,
+  .c2 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c0 .opinionImageContainerClass {
+  .c2 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
+  }
+
+  .c2 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:520px) {
+  .c1 .opinionImageContainerClass {
+    min-width: 130px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionImageContainerClass {
     min-width: auto;
   }
 
@@ -127,54 +138,55 @@ exports[`default styles 1`] = `
   .c0 .opinionSummary160Class {
     display: block;
   }
-
-  .c0 .supportImageContainerClass {
-    display: block;
-  }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 80.8%;
   }
 
-  .c2 a {
+  .c4 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c4 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .c3 a > div,
-  .c3 a > div > div {
+  .c6 a > div,
+  .c6 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
     padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -436,16 +448,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 S18"
+    className="c0 c1 c2 S18"
   >
     <div
-      className="c1 S17"
+      className="c3 S17"
     >
       <div
-        className="c2 S16"
+        className="c4 S16"
       >
         <div
-          className="c3 S15"
+          className="c5 c6 S15"
         >
           <Link>
             <Card>

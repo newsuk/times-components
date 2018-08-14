@@ -1,23 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import { breakpoints } from "@times-components/styleguide";
 import ResultsMessage from "./results-message";
 
-const MessageContainer = withResponsiveStyles(View, {
-  base: () => `
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 50px;
-  `,
-  mediumUp: () => `
+const MessageContainer = styled(View)`
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+
+  @media (min-width: ${breakpoints.medium}px) {
     left: 0;
     right: 0;
     position: absolute;
-  `
-});
+  }
+`;
 
 const Results = ({ children: message }) => (
   <MessageContainer>

@@ -20,6 +20,10 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
+.c11 {
+  display: none;
+}
+
 .c13 {
   width: 100%;
   -webkit-flex-direction: column;

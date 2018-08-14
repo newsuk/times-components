@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import styled from "styled-components";
+import { breakpoints } from "@times-components/styleguide";
 import Card from "./src/card";
 
 const cardProps = {
@@ -12,8 +13,8 @@ const cardProps = {
   imageSize: 360
 };
 
-const CardWrapper = withResponsiveStyles(View, {
-  mediumUp: () => `
+const CardWrapper = styled(View)`
+  @media (min-width: ${breakpoints.medium}px) {
     .exampleCardImage {
       flex-grow: 2 !important;
       margin-bottom: 0;
@@ -24,11 +25,11 @@ const CardWrapper = withResponsiveStyles(View, {
       flex-grow: 2.7 !important;
       min-width: 380px;
     }
-  `
-});
+  }
+`;
 
-const ReversedCardWrapper = withResponsiveStyles(View, {
-  mediumUp: () => `
+const ReversedCardWrapper = styled(View)`
+  @media (min-width: ${breakpoints.medium}px) {
     .exampleCardImage {
       flex-grow: 2 !important;
       margin-bottom: 0;
@@ -39,8 +40,8 @@ const ReversedCardWrapper = withResponsiveStyles(View, {
       flex-grow: 2.7 !important;
       min-width: 380px;
     }
-  `
-});
+  }
+`;
 
 const childStyle = {
   borderColor: "black",

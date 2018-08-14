@@ -1,22 +1,27 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import config from "../../styles/responsive-config";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const TopicsContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => config.articleContainerPadding,
-    mediumUp: () => config.mediumBpPositioning,
-    wideUp: () => `display: none`
-  },
-  "TopicsContainer"
-);
+export const TopicsContainer = styled(View)`
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
 
-export const TopicsMetaContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `display: none;`,
-    wideUp: () => `display: block;`
-  },
-  "TopicsMetaContainer"
-);
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: none;
+  }
+`;
+
+export const TopicsMetaContainer = styled(View)`
+  display: none;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: block;
+  }
+`;

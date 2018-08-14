@@ -1,13 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Text } from "react-native";
+import styled from "styled-components";
+import { breakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 
-import withResponsiveStyles from "@times-components/responsive-styles";
+const ResponsiveLabel = styled(Text)`
+  display: none;
 
-const ResponsiveLabel = withResponsiveStyles(Text, {
-  base: () => "display: none;",
-  mediumUp: () => "display: inline;"
-});
+  @media (min-width: ${breakpoints.medium}px) {
+    display: inline;
+  }
+`;
 
 const PageLabel = ({ direction }) => (
   <Text>

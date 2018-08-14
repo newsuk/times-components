@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-.c1 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,11 +18,11 @@ exports[`1. a single child element 1`] = `
   justify-content: center;
 }
 
-.c0 .opinionContentContainerClass {
+.c2 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c0 .opinionImageContainerClass {
+.c2 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -32,25 +32,25 @@ exports[`1. a single child element 1`] = `
   right: 0;
 }
 
-.c0 .supportImageContainerClass {
+.c2 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c2 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .opinionSummary125Class {
+.c2 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -66,7 +66,7 @@ exports[`1. a single child element 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -80,43 +80,54 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c0 .opinionImageContainerClass {
-    min-width: 130px;
-  }
-
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .opinionBylineClass,
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionBylineClass,
+  .c2 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c0 .opinionImageContainerClass {
+  .c2 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
+  }
+
+  .c2 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:520px) {
+  .c1 .opinionImageContainerClass {
+    min-width: 130px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionImageContainerClass {
     min-width: auto;
   }
 
@@ -127,54 +138,55 @@ exports[`1. a single child element 1`] = `
   .c0 .opinionSummary160Class {
     display: block;
   }
-
-  .c0 .supportImageContainerClass {
-    display: block;
-  }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 80.8%;
   }
 
-  .c2 a {
+  .c4 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c4 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .c3 a > div,
-  .c3 a > div > div {
+  .c6 a > div,
+  .c6 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
     padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -221,16 +233,16 @@ exports[`1. a single child element 1`] = `
 </style>
 
 <div
-  className="c0 S5"
+  className="c0 c1 c2 S5"
 >
   <div
-    className="c1 S4"
+    className="c3 S4"
   >
     <div
-      className="c2 S3"
+      className="c4 S3"
     >
       <div
-        className="c3 S2"
+        className="c5 c6 S2"
       >
         <div
           className="S1"
@@ -244,7 +256,7 @@ exports[`1. a single child element 1`] = `
 `;
 
 exports[`2. two child elements 1`] = `
-.c1 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -261,11 +273,11 @@ exports[`2. two child elements 1`] = `
   justify-content: center;
 }
 
-.c0 .opinionContentContainerClass {
+.c2 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c0 .opinionImageContainerClass {
+.c2 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -275,25 +287,25 @@ exports[`2. two child elements 1`] = `
   right: 0;
 }
 
-.c0 .supportImageContainerClass {
+.c2 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c2 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .opinionSummary125Class {
+.c2 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -309,7 +321,7 @@ exports[`2. two child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -322,7 +334,7 @@ exports[`2. two child elements 1`] = `
   width: auto;
 }
 
-.c4 {
+.c7 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -334,7 +346,7 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c5 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -344,7 +356,7 @@ exports[`2. two child elements 1`] = `
   height: auto;
 }
 
-.c6 {
+.c11 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -357,43 +369,54 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c0 .opinionImageContainerClass {
-    min-width: 120px;
-  }
-
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .opinionBylineClass,
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionBylineClass,
+  .c2 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c0 .opinionImageContainerClass {
+  .c2 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
+  }
+
+  .c2 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:520px) {
+  .c1 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionImageContainerClass {
     min-width: 165px;
   }
 
@@ -402,10 +425,6 @@ exports[`2. two child elements 1`] = `
   }
 
   .c0 .opinionSummary145Class {
-    display: block;
-  }
-
-  .c0 .supportImageContainerClass {
     display: block;
   }
 }
@@ -422,46 +441,34 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
   }
 
-  .c2 a {
+  .c4 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .c3 a > div,
-  .c3 a > div > div {
+  .c6 a > div,
+  .c6 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
@@ -472,7 +479,21 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -486,13 +507,13 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c7 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c8 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -503,26 +524,41 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c8 {
     min-width: 400px;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c11 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c11 {
     padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     max-width: 100%;
     padding-right: 10px;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
-    padding-left: 10px;
+  .c9 {
     padding-right: 10px;
   }
 }
@@ -596,16 +632,16 @@ exports[`2. two child elements 1`] = `
 </style>
 
 <div
-  className="c0 S9"
+  className="c0 c1 c2 S9"
 >
   <div
-    className="c1 S8"
+    className="c3 S8"
   >
     <div
-      className="c2 S7"
+      className="c4 S7"
     >
       <div
-        className="c3 S2"
+        className="c5 c6 S2"
       >
         <div
           className="S1"
@@ -614,13 +650,13 @@ exports[`2. two child elements 1`] = `
         </div>
       </div>
       <div
-        className="c4 S3"
+        className="c7 S3"
       />
       <div
-        className="c5 S6"
+        className="c8 S6"
       >
         <div
-          className="c6 S5"
+          className="c9 c10 c11 S5"
         >
           <div
             className="S4"
@@ -635,7 +671,7 @@ exports[`2. two child elements 1`] = `
 `;
 
 exports[`3. three child elements 1`] = `
-.c1 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -652,11 +688,11 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c0 .opinionContentContainerClass {
+.c2 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c0 .opinionImageContainerClass {
+.c2 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -666,25 +702,25 @@ exports[`3. three child elements 1`] = `
   right: 0;
 }
 
-.c0 .supportImageContainerClass {
+.c2 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c2 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .opinionSummary125Class {
+.c2 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -700,7 +736,7 @@ exports[`3. three child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -713,7 +749,7 @@ exports[`3. three child elements 1`] = `
   width: auto;
 }
 
-.c4 {
+.c8 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -725,7 +761,7 @@ exports[`3. three child elements 1`] = `
   min-width: auto;
 }
 
-.c5 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -735,7 +771,7 @@ exports[`3. three child elements 1`] = `
   height: auto;
 }
 
-.c6 {
+.c13 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -747,7 +783,7 @@ exports[`3. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c7 {
+.c16 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -757,6 +793,9 @@ exports[`3. three child elements 1`] = `
   min-height: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.c15 {
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -765,43 +804,54 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c0 .opinionImageContainerClass {
-    min-width: 120px;
-  }
-
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .opinionBylineClass,
-  .c0 .opinionHeadlineClass {
+  .c2 .opinionBylineClass,
+  .c2 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c0 .opinionContentContainerClass {
+  .c2 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c0 .opinionImageContainerClass {
+  .c2 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
+  }
+
+  .c2 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:520px) {
+  .c1 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionImageContainerClass {
     min-width: 152px;
   }
 
@@ -812,61 +862,37 @@ exports[`3. three child elements 1`] = `
   .c0 .opinionSummary160Class {
     display: block;
   }
-
-  .c0 .supportImageContainerClass {
-    display: block;
-  }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 80.8%;
   }
 
-  .c2 a {
+  .c4 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom-color: #DBDBDB;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    margin-bottom: 10px;
-    min-width: 100%;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .c3 a > div,
-  .c3 a > div > div {
+  .c7 a > div,
+  .c7 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c7 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
@@ -877,7 +903,34 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    border-bottom-color: #DBDBDB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -891,52 +944,78 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c8 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    min-width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c9 {
+    min-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     padding-right: 0;
-    padding-left: 0;
-    max-width: 50%;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c13 {
     padding-left: 10px;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c12 {
+    padding-left: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c16 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     border-left-color: #DBDBDB;
     border-left-style: solid;
     border-left-width: 1px;
@@ -945,14 +1024,18 @@ exports[`3. three child elements 1`] = `
     margin-top: 0;
     padding-right: 0;
     padding-top: 0;
-    max-width: 50%;
   }
 }
 
 @media (min-width:1024px) {
-  .c7 {
-    padding-left: 10px;
+  .c15 {
     padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    max-width: 50%;
   }
 }
 
@@ -1039,16 +1122,16 @@ exports[`3. three child elements 1`] = `
 </style>
 
 <div
-  className="c0 S11"
+  className="c0 c1 c2 S11"
 >
   <div
-    className="c1 S10"
+    className="c3 S10"
   >
     <div
-      className="c2 S9"
+      className="c4 S9"
     >
       <div
-        className="c3 S2"
+        className="c5 c6 c7 S2"
       >
         <div
           className="S1"
@@ -1057,13 +1140,13 @@ exports[`3. three child elements 1`] = `
         </div>
       </div>
       <div
-        className="c4 S3"
+        className="c8 S3"
       />
       <div
-        className="c5 S8"
+        className="c9 c10 S8"
       >
         <div
-          className="c6 S5"
+          className="c11 c12 c13 S5"
         >
           <div
             className="S4"
@@ -1072,7 +1155,7 @@ exports[`3. three child elements 1`] = `
           </div>
         </div>
         <div
-          className="c7 S7"
+          className="c14 c15 c16 S7"
         >
           <div
             className="S6"
