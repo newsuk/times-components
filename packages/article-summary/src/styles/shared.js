@@ -1,30 +1,34 @@
-import {
+import styleguide, {
   colours,
   fonts,
-  fontSizes,
   spacing
 } from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const sharedStyles = {
   opinionByline: {
     color: colours.section.comment,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.smallHeadline,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "smallHeadline"
+    }),
     fontWeight: "400"
   },
   text: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.teaser,
-    fontFamily: fonts.body,
-    lineHeight: 20,
+    ...fontFactory({
+      font: "body",
+      fontSize: "teaser"
+    }),
     marginBottom: spacing(2),
     flexWrap: "wrap"
   },
   metaText: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.cardMeta,
-    lineHeight: 15,
-    fontFamily: fonts.supporting,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    }),
     marginBottom: spacing(1)
   },
   labelWrapper: {
@@ -37,8 +41,10 @@ const sharedStyles = {
     fontWeight: "900"
   },
   headlineWrapper: {
-    fontSize: fontSizes.smallHeadline,
-    lineHeight: 22
+    ...fontFactory({
+      font: "headline",
+      fontSize: "smallHeadline"
+    })
   }
 };
 

@@ -2,6 +2,7 @@ const mapping = {
   body: {
     bodyMobile: 26,
     secondary: 27,
+    teaser: 20,
     tertiary: 26
   },
   bodyRegularSmallCaps: {
@@ -19,6 +20,7 @@ const mapping = {
   supporting: {
     button: 16,
     caption: 13,
+    cardMeta: 15,
     cardMetaMobile: 12,
     link: 13,
     meta: 14,
