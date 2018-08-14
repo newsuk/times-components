@@ -1,11 +1,7 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide, { colours, spacing } from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
@@ -17,9 +13,10 @@ const styles = StyleSheet.create({
   },
   headline: {
     color: colours.functional.primary,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.commentsHeadline,
-    lineHeight: 29,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "commentsHeadline"
+    }),
     maxWidth: 315,
     paddingBottom: spacing(2),
     paddingTop: spacing(6),
@@ -27,9 +24,10 @@ const styles = StyleSheet.create({
   },
   supporting: {
     color: colours.functional.secondary,
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.tertiary,
-    lineHeight: 22,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "tertiary"
+    }),
     textAlign: "center",
     maxWidth: 280
   },

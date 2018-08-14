@@ -14,14 +14,16 @@ const mapping = {
     meta: 14,
   },
   headline: {
+    commentsHeadline: 29,
     headline: 30,
     leadHeadline: 26,
     pageComponentHeadline: 25,
     pageHeadline: 40,
-    smallHeadline: 24
+    smallHeadline: 24,
   },
   headlineRegular: {
-    pageComponentHeadline: 30
+    pageComponentHeadline: 30,
+    smallestHeadline: 26
   },
   supporting: {
     button: 16,

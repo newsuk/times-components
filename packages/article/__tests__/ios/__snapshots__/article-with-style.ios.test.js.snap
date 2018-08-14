@@ -47,7 +47,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -299,7 +299,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -399,7 +399,7 @@ exports[`4. an article with no lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -499,7 +499,7 @@ exports[`5. an article with ads 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -589,7 +589,7 @@ exports[`6. a secondary image 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -670,7 +670,7 @@ exports[`7. an inline image 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -766,7 +766,7 @@ exports[`9. an article with updated byline 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -866,7 +866,7 @@ exports[`9. an article with updated byline 2`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }

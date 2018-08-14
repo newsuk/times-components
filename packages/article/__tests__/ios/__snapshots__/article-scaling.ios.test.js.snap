@@ -34,7 +34,7 @@ exports[`1. scaled medium full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -219,7 +219,7 @@ exports[`2. scaled large full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }
@@ -404,7 +404,7 @@ exports[`3. scaled xlarge full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
             }
           }

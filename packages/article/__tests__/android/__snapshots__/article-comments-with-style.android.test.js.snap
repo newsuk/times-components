@@ -147,7 +147,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 15,
               "maxWidth": 280,
               "textAlign": "center",
             }
@@ -199,9 +199,10 @@ exports[`1. a full article with enabled comments 1`] = `
           <Text
             style={
               Object {
-                "color": "#FFFFFF",
+                "color": "#FFF",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 14,
+                "lineHeight": 14,
                 "paddingTop": 0,
               }
             }
@@ -362,7 +363,7 @@ exports[`2. a full article with disabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 15,
               "maxWidth": 280,
               "textAlign": "center",
             }

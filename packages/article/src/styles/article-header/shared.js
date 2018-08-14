@@ -1,22 +1,20 @@
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide, { colours, spacing } from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const sharedStyles = {
   articleHeadLineText: {
-    fontSize: fontSizes.headline,
-    lineHeight: 32,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "headline"
+    }),
     color: colours.functional.brandColour,
-    marginBottom: 7,
-    fontFamily: fonts.headline
+    marginBottom: 7
   },
   standFirst: {
-    fontSize: fontSizes.smallestHeadline,
-    lineHeight: 26,
-    fontFamily: fonts.headlineRegular,
+    ...fontFactory({
+      font: "headlineRegular",
+      fontSize: "smallestHeadline"
+    }),
     color: colours.functional.primary,
     paddingBottom: 9
   },
