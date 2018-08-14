@@ -104,7 +104,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "24px",
     "marginBottom": "5px",
   },
   "IS15": {
@@ -149,7 +149,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "24px",
     "marginBottom": "5px",
   },
   "IS21": {
@@ -191,7 +191,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "24px",
     "marginBottom": "5px",
   },
   "IS27": {
@@ -223,7 +223,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "24px",
     "marginBottom": "5px",
   },
   "IS4": {
@@ -258,7 +258,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "24px",
     "marginBottom": "5px",
   },
   "IS9": {

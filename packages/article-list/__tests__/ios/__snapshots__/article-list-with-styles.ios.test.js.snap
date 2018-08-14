@@ -46,7 +46,7 @@ exports[`1. article list 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 22,
+                    "lineHeight": 24,
                     "marginBottom": 5,
                   }
                 }
@@ -149,7 +149,7 @@ exports[`1. article list 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 22,
+                    "lineHeight": 24,
                     "marginBottom": 5,
                   }
                 }
@@ -276,7 +276,7 @@ exports[`2. article list with no images 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 22,
+                    "lineHeight": 24,
                     "marginBottom": 5,
                   }
                 }
@@ -388,7 +388,7 @@ exports[`3. a retry button when load more fails 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 22,
+                    "lineHeight": 24,
                     "marginBottom": 5,
                   }
                 }

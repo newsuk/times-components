@@ -5,11 +5,16 @@ const mapping = {
     teaser: 20,
     tertiary: 26
   },
+  bodyRegular: {
+    infoSubText: 15,
+    infoTitle: 22,
+  },
   bodyRegularSmallCaps: {
     meta: 14,
   },
   headline: {
     headline: 30,
+    leadHeadline: 26,
     pageComponentHeadline: 25,
     pageHeadline: 40,
     smallHeadline: 24

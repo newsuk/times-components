@@ -1,11 +1,7 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide, { colours, spacing } from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const styles = StyleSheet.create({
   loadingContainer: {
     paddingVertical: spacing(5)
@@ -53,15 +49,19 @@ const styles = StyleSheet.create({
   listErrorHeading: {
     alignSelf: "center",
     color: colours.functional.brandColour,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.leadHeadline,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "leadHeadline"
+    }),
     marginBottom: 10,
     textAlign: "center"
   },
   listErrorMessage: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegular,
-    fontSize: fontSizes.infoSubText,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoSubText"
+    }),
     textAlign: "center"
   },
   listEmptyStateContainer: {
@@ -69,8 +69,10 @@ const styles = StyleSheet.create({
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegular,
-    fontSize: fontSizes.infoTitle,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoTitle"
+    }),
     marginTop: spacing(12),
     marginLeft: spacing(8),
     marginRight: spacing(8),
