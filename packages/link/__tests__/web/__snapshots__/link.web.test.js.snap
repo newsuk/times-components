@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link tests on Web Link doesnt change inner text styles 1`] = `
+exports[`1. with responsive styles 1`] = `
+.c0 {
+  color: #006699;
+  font-family: "TimesDigitalW04-Regular";
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+<a
+  className="c0"
+  href="http://thetimes.co.uk"
+  style={
+    Object {
+      "textDecoration": "underline",
+    }
+  }
+>
+  The Times
+</a>
+`;
+
+exports[`2. with a target 1`] = `
 <a
   href="http://thetimes.co.uk"
   style={
@@ -8,14 +38,13 @@ exports[`Link tests on Web Link doesnt change inner text styles 1`] = `
       "textDecoration": "none",
     }
   }
+  target="_blank"
 >
-  <p>
-    Hello
-  </p>
+  The Times
 </a>
 `;
 
-exports[`Link tests on Web Link renders correctly 1`] = `
+exports[`3. renders link 1`] = `
 <a
   href="http://thetimes.co.uk"
   style={
@@ -28,7 +57,21 @@ exports[`Link tests on Web Link renders correctly 1`] = `
 </a>
 `;
 
-exports[`Link tests on Web TextLink renders correctly with children 1`] = `
+exports[`4. renders link with target 1`] = `
+<a
+  href="http://thetimes.co.uk"
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+  target="_blank"
+>
+  The Times
+</a>
+`;
+
+exports[`5. renders text link 1`] = `
 <a
   href="http://thetimes.co.uk"
   role="link"
@@ -37,7 +80,7 @@ exports[`Link tests on Web TextLink renders correctly with children 1`] = `
 </a>
 `;
 
-exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] = `
+exports[`6. text link with multiple styles 1`] = `
 <a
   href="http://thetimes.co.uk"
   role="link"
@@ -52,56 +95,26 @@ exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] =
 </a>
 `;
 
-exports[`Link tests on Web TextLink renders correctly with specific styles 1`] = `
+exports[`7. text link with children 1`] = `
 <a
   href="http://thetimes.co.uk"
   role="link"
-  style={
-    Object {
-      "backgroundColor": "blue",
-    }
-  }
 >
-  The Times
+  <p>
+    The Times
+  </p>
 </a>
 `;
 
-exports[`Link tests on Web renders with a target 1`] = `
+exports[`8. text link with target 1`] = `
 <a
   href="http://thetimes.co.uk"
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
+  rel=" noopener noreferrer"
+  role="link"
   target="_blank"
 >
-  The Times
-</a>
-`;
-
-exports[`Link tests on Web renders with responsive styles 1`] = `
-.c0 {
-  color: #006699;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-<a
-  class="c0"
-  href="http://thetimes.co.uk"
-  style="text-decoration: underline;"
->
-  The Times
+  <p>
+    The Times
+  </p>
 </a>
 `;
