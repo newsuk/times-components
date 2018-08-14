@@ -4,7 +4,11 @@ const mapping = {
     secondary: 27,
     tertiary: 26
   },
+  bodyRegularSmallCaps: {
+    meta: 14,
+  },
   headline: {
+    headline: 30,
     pageComponentHeadline: 25,
     pageHeadline: 40,
     smallHeadline: 24
@@ -18,7 +22,8 @@ const mapping = {
     cardMetaMobile: 12,
     link: 13,
     meta: 14,
-    pagingMeta: 15
+    pagingMeta: 15,
+    tertiary: 15
   }
 };
 
