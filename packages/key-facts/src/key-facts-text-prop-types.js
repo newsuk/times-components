@@ -4,7 +4,7 @@ export const propTypes = {
   item: PropTypes.object.isRequired,
   listIndex: PropTypes.number.isRequired,
   onLinkPress: PropTypes.func,
-  styles: PropTypes.object.isRequired
+  fontStyle: PropTypes.object.isRequired
 };
 
 export const defaultProps = {

@@ -4,9 +4,10 @@ import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
+import styles from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress, styles }) => (
-  <Text style={styles.text}>
+const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
+  <Text style={[styles.text, fontStyle]}>
     {item.children.map((data, listItemIndex) =>
       renderTree(
         data,
