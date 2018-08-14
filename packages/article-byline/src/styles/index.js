@@ -1,12 +1,14 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import styleguide, { colours } from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const styles = StyleSheet.create({
   text: {
-    fontSize: fontSizes.cardMeta,
-    fontFamily: fonts.supporting,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    }),
     color: colours.functional.secondary,
-    lineHeight: 13,
     flexDirection: "row"
   },
   link: {
