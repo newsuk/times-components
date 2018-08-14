@@ -31,7 +31,9 @@
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "2.1.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "graphql": "0.13.2",
