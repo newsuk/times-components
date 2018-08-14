@@ -1,5 +1,6 @@
 import {
   noArticlesTests,
+  noShortHeadlineTests,
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
@@ -16,10 +17,21 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   headline: "Test Headline",
   label: "test label",
   section: "gardening",
+  shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
   summary145: testSummary(145),
   summary160: testSummary(160),
   summary225: testSummary(225)
+}).data;
+
+const opinionAndTwoNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture({
+  url: "https://test.io",
+  crop169: "https://crop.io",
+  headline: "Test Headline",
+  label: "test label",
+  section: "newsreview",
+  shortHeadline: "",
+  summary125: testSummary(125)
 }).data;
 
 const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
@@ -28,6 +40,7 @@ const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
   firstHeadline: "First Headline",
   firstLabel: "first label",
   firstSection: "home",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstSummary160: testSummary(160),
@@ -38,6 +51,7 @@ const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
   secondHeadline: "Second Headline",
   secondLabel: "second label",
   secondSection: "ireland",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary145: testSummary(145),
   secondSummary160: testSummary(160),
@@ -51,6 +65,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   firstHeadline: "First Headline",
   firstLabel: "first label",
   firstSection: "law",
+  firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstSummary160: testSummary(160),
@@ -61,6 +76,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   secondHeadline: "Second Headline",
   secondLabel: "second label",
   secondSection: "leaders",
+  secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
   secondSummary145: testSummary(145),
   secondSummary160: testSummary(160),
@@ -71,6 +87,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   thirdHeadline: "Third Headline",
   thirdLabel: "third label",
   thirdSection: "money",
+  thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
   thirdSummary160: testSummary(160),
@@ -81,6 +98,11 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
 export const sharedNoArticles = noArticlesTests({
   fixture: opinionAndTwo1ArticleFixtureData,
   template: "OPINION_AND_TWO"
+});
+
+export const sharedNoShortHeadline = noShortHeadlineTests({
+  fixture: opinionAndTwoNoShortHeadlineFixtureData,
+  name: "no short headline"
 });
 
 export const sharedOneArticle = oneArticleTests({

@@ -1,6 +1,7 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import { standardRoles, leadAndTwoRoles } from "@times-components/slice";
+import getHeadline from "./utils/headline";
 
 export default Component =>
   withTrackingContext(Component, {
@@ -8,7 +9,7 @@ export default Component =>
     getAttrs: ({ template, articles }) => ({
       template,
       articles: articles.map(
-        ({ id, headline, publishedTime, byline }, index) => {
+        ({ byline, headline, id, publishedTime, shortHeadline }, index) => {
           const getRole = () => {
             switch (template) {
               case "DEFAULT":
@@ -22,7 +23,7 @@ export default Component =>
           return {
             id,
             byline: get(byline, "[0].children[0].attributes.value", ""),
-            headline,
+            headline: getHeadline(headline, shortHeadline),
             publishedTime,
             role: getRole()
           };

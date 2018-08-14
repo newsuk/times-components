@@ -123,6 +123,39 @@ export const noArticlesTests = ({ fixture, template }) => renderComponent => {
   iterator(tests);
 };
 
+export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
+  beforeAndAfterEach();
+
+  const tests = [
+    {
+      name,
+      test() {
+        const events = jest.fn();
+
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: `analytics for ${name}`,
+      test() {
+        const events = jest.fn();
+
+        renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+        );
+
+        expect(events.mock.calls).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
+};
+
 export const oneArticleTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
 

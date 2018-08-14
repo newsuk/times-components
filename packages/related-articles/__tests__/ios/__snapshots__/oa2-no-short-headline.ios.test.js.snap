@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no short headline 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://test.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0",
+              }
+            }
+            imageRatio={0.6135458167330677}
+            imageStyle={
+              Object {
+                "bottom": 0,
+                "marginTop": -140,
+                "maxWidth": "40%",
+                "minWidth": "40%",
+                "position": "relative",
+                "right": 0,
+              }
+            }
+            isReversed={true}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text>
+                  TEST LABEL
+                </Text>
+              </View>
+              <Text>
+                <Text>
+                  Sathnam Sanghera
+                </Text>
+              </Text>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. analytics for no short headline 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Sathnam Sanghera",
+            "headline": "Test Headline",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "OPINION_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
