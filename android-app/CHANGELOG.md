@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.6.13...@times-components/android-app@0.7.0) (2018-08-14)
+
+
+### Features
+
+* add colour Article byline, Article label and Key facts using context  ([#1204](https://github.com/newsuk/times-components/issues/1204)) ([d2a58c0](https://github.com/newsuk/times-components/commit/d2a58c0))
+
+
+
+
+
 <a name="0.6.13"></a>
 ## [0.6.13](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.6.12...@times-components/android-app@0.6.13) (2018-08-14)
 

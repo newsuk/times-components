@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.1.4...@times-components/styleguide@3.2.0) (2018-08-14)
+
+
+### Features
+
+* add colour Article byline, Article label and Key facts using context  ([#1204](https://github.com/newsuk/times-components/issues/1204)) ([d2a58c0](https://github.com/newsuk/times-components/commit/d2a58c0))
+
+
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.1.3...@times-components/styleguide@3.1.4) (2018-08-14)
 
