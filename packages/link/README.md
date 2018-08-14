@@ -1,8 +1,10 @@
 # Link
 
 The link component wraps its children and makes them clickable (web) or
-touchable (native) elements. There are two exported components, link and text
-link, which are meant to handle non-textual and textual elements respectively.
+touchable (native) elements. There are two exported components:
+
+* `Link` - wraps any element, effectively making it clickable
+* `TextLink` - makes any inline text a link
 
 ## How to use
 
