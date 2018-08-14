@@ -67,7 +67,7 @@ exports[`different colours 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "borderLeftColor": "#696969",
+          "borderLeftColor": "#DBDBDB",
           "borderLeftWidth": 1,
           "display": "flex",
           "flexDirection": "row",
@@ -89,7 +89,7 @@ exports[`different colours 1`] = `
             "fontSize": 13,
             "lineHeight": 13,
             "marginLeft": 3,
-            "paddingTop": 4,
+            "paddingTop": 2,
             "textDecorationLine": "none",
           }
         }

@@ -1,52 +1,60 @@
 import React from "react";
-import { mount } from "enzyme";
-import renderer from "react-test-renderer";
-import "jest-styled-components";
+import TestRenderer from "react-test-renderer";
+import { addSerializers, minimalRnw } from "@times-components/jest-serializer";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
-import test from "../shared";
-import Link, { TextLink } from "../../src/link";
+import { iterator } from "@times-components/test-utils";
+import Link from "../../src/link";
+import shared from "../shared";
 
-describe("Link tests on Web", () => {
-  it("renders with responsive styles", () => {
-    const responsiveLinkStyles = {
-      base: `
-      color: ${colours.functional.action};
-      font-family: "${fonts.bodyRegular}";
-      line-height: 26px;
-      font-size: ${fontSizes.bodyMobile}px;
-      margin-bottom: 25px;
-      margin-top: 0;
-  `,
-      medium: `
-      font-size: ${fontSizes.body}px;
-      line-height: 30px;
-  `
-    };
+addSerializers(expect, minimalRnw());
 
-    const component = mount(
-      <Link
-        onPress={() => {}}
-        responsiveLinkStyles={responsiveLinkStyles}
-        url="http://thetimes.co.uk"
-      >
-        The Times
-      </Link>
-    );
+require("jest-styled-components");
 
-    expect(component.render()).toMatchSnapshot();
-  });
+const tests = [
+  {
+    name: "with responsive styles",
+    test() {
+      const responsiveLinkStyles = {
+        base: `
+        color: ${colours.functional.action};
+        font-family: "${fonts.bodyRegular}";
+        font-size: ${fontSizes.bodyMobile}px;
+        line-height: 26px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    `,
+        medium: `
+        font-size: ${fontSizes.body}px;
+        line-height: 30px;
+    `
+      };
 
-  it("renders with a target", () => {
-    const tree = renderer
-      .create(
+      const testInstance = TestRenderer.create(
+        <Link
+          onPress={() => {}}
+          responsiveLinkStyles={responsiveLinkStyles}
+          url="http://thetimes.co.uk"
+        >
+          The Times
+        </Link>
+      );
+
+      expect(testInstance).toMatchSnapshot();
+    }
+  },
+  {
+    name: "with a target",
+    test() {
+      const tree = TestRenderer.create(
         <Link onPress={() => {}} target="_blank" url="http://thetimes.co.uk">
           The Times
         </Link>
-      )
-      .toJSON();
+      );
 
-    expect(tree).toMatchSnapshot();
-  });
+      expect(tree).toMatchSnapshot();
+    }
+  },
+  ...shared("p")
+];
 
-  test(Link, TextLink, "p");
-});
+iterator(tests);

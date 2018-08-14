@@ -72,7 +72,7 @@ exports[`different colours 1`] = `
     "-webkit-box-orient": "horizontal",
     "-webkit-flex-direction": "row",
     "align-items": "center",
-    "border-left-color": "rgba(105,105,105,1)",
+    "border-left-color": "rgba(219,219,219,1)",
     "border-left-width": "1px",
     "display": "flex",
     "flex-direction": "row",
