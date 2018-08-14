@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.0.9...@times-components/related-articles@3.1.0) (2018-08-14)
+
+
+### Features
+
+* use shortHeadline in related articles with fallback to headline ([#1208](https://github.com/newsuk/times-components/issues/1208)) ([f6169b0](https://github.com/newsuk/times-components/commit/f6169b0))
+
+
+
+
+
 <a name="3.0.9"></a>
 ## [3.0.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.0.8...@times-components/related-articles@3.0.9) (2018-08-14)
 
