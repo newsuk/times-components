@@ -1,19 +1,17 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import Svg, { G, Path } from "svgs";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide, { colours, spacing } from "@times-components/styleguide";
 
 import PageLabel from "./page-label";
 
+const { fontFactory } = styleguide();
 const textStyle = {
   height: 15,
-  fontFamily: fonts.supporting,
-  fontSize: fontSizes.pagingMeta,
+  ...fontFactory({
+    font: "supporting",
+    fontSize: "pagingMeta"
+  }),
   color: colours.functional.action
 };
 

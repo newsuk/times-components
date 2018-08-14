@@ -15,7 +15,9 @@ const mapping = {
   supporting: {
     caption: 13,
     cardMetaMobile: 12,
-    link: 13
+    link: 13,
+    meta: 14,
+    pagingMeta: 15
   }
 };
 
