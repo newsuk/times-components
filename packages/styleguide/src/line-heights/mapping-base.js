@@ -10,6 +10,7 @@ const mapping = {
     infoTitle: 22,
   },
   bodyRegularSmallCaps: {
+    cardMetaMobile: 12,
     meta: 14,
   },
   headline: {
