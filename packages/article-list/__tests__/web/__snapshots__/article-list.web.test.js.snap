@@ -281,23 +281,9 @@ exports[`1. article list 1`] = `
       </div>
     </div>
     <div>
-      <div>
-        <div />
-        <div>
-          <div>
-            <div>
-              <Watermark
-                height={250}
-                viewBox="-630 120 1200 50"
-                width={970}
-              />
-            </div>
-            <div>
-              ADVERTISEMENT
-            </div>
-          </div>
-        </div>
-      </div>
+      <Ad
+        slotName="inline-ad"
+      />
     </div>
     <div>
       <div>
