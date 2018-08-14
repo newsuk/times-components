@@ -7,7 +7,6 @@ exports[`2. a loading state 1`] = `
   <ArticleList
     articleListHeader={
       <TopicHead
-        description=""
         isLoading={true}
         name=""
       />
@@ -37,7 +36,17 @@ exports[`3. an article list 1`] = `
   <ArticleList
     articleListHeader={
       <TopicHead
-        description="Test Description"
+        description={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Test Description",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
         isLoading={false}
         name="Test Name"
       />
@@ -67,7 +76,17 @@ exports[`4. fetches more articles 1`] = `
   <ArticleList
     articleListHeader={
       <TopicHead
-        description="Test Description"
+        description={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Test Description",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
         isLoading={false}
         name="Test Name"
       />
@@ -102,7 +121,17 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
   <ArticleList
     articleListHeader={
       <TopicHead
-        description="Test Description"
+        description={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Test Description",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
         isLoading={false}
         name="Test Name"
       />
@@ -143,7 +172,7 @@ exports[`6. an article list header 1`] = `
 </div>
 `;
 
-exports[`7. a topic header with description 1`] = `
+exports[`7. a topic header with no description 1`] = `
 <div>
   <div>
     <h1

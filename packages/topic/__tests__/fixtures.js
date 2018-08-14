@@ -1,4 +1,12 @@
 export default {
   name: "Test Name",
-  description: "Test Description"
+  description: [
+    {
+      name: "text",
+      attributes: {
+        value: "Test Description"
+      },
+      children: []
+    }
+  ]
 };

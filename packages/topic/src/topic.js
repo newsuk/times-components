@@ -31,7 +31,7 @@ const Topic = ({
   }
 
   const { name, description } = isHeaderLoading
-    ? { name: "", description: "" }
+    ? { name: "", description: [] }
     : topic;
 
   const articleListHeader = (
