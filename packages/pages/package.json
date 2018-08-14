@@ -54,7 +54,9 @@
   "dependencies": {
     "@times-components/article": "4.1.8",
     "@times-components/author-profile": "4.0.10",
+    "@times-components/context": "0.3.2",
     "@times-components/provider": "1.0.5",
+    "@times-components/styleguide": "3.1.4",
     "@times-components/topic": "3.0.10",
     "@times-components/utils": "3.0.2",
     "apollo-cache-inmemory": "1.1.10",

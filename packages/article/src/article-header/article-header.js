@@ -10,11 +10,11 @@ import styles from "../styles/article-header";
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleHeader = ({
-  label,
-  headline,
-  standfirst,
   flags,
+  headline,
   isVideo,
+  label,
+  standfirst,
   style
 }) => (
   <View style={[...style]}>
@@ -26,19 +26,19 @@ const ArticleHeader = ({
 );
 
 ArticleHeader.propTypes = {
+  flags: PropTypes.arrayOf(PropTypes.string),
   headline: PropTypes.string.isRequired,
+  isVideo: PropTypes.bool,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  flags: PropTypes.arrayOf(PropTypes.string),
-  isVideo: PropTypes.bool,
   style: ViewStylePropTypes
 };
 
 ArticleHeader.defaultProps = {
-  label: null,
-  standfirst: null,
   flags: [],
   isVideo: false,
+  label: null,
+  standfirst: null,
   style: {}
 };
 

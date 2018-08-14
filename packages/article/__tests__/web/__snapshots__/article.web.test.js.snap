@@ -67,6 +67,7 @@ Array [
                   },
                 ]
               }
+              color="#333333"
             />
           </span>
         </div>
@@ -675,6 +676,7 @@ Array [
                   },
                 ]
               }
+              color="#FFFFFF"
             />
           </span>
         </div>

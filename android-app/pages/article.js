@@ -33,7 +33,7 @@ const platformAdConfig = {
   platform: "mobile"
 };
 
-const ArticleView = ({ articleId, sectionName }) => {
+const ArticleView = ({ articleId, scale, sectionName }) => {
   const adConfig = { ...platformAdConfig, sectionName };
 
   return (
@@ -48,12 +48,15 @@ const ArticleView = ({ articleId, sectionName }) => {
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
       platformAdConfig={adConfig}
+      scale={scale}
+      section={sectionName}
     />
   );
 };
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
+  scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
 };
 

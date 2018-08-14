@@ -34,259 +34,111 @@ exports[`key facts with title 1`] = `
   }
 }
 
-<style>
-{
-  "S1": {
-    "color": "inherit",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "12px",
-    "font-weight": "400",
-    "letter-spacing": "1.2px",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S10": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "27px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S11": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
-  },
-  "S12": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
-    "flex-direction": "column",
-    "height": "8px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-    "top": "2px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
-  },
-  "S13": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "27px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S14": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
-  },
-  "S15": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S16": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "5px",
-    "margin-top": "5px",
-    "padding-left": "0px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
-    "flex-direction": "column",
-    "height": "8px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-    "top": "2px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
-  },
-  "S3": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "27px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S4": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
-  },
-  "S5": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
-    "flex-direction": "column",
-    "height": "8px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-    "top": "2px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
-  },
-  "S6": {
-    "background-color": "transparent",
-    "color": "rgba(0,102,153,1)",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S7": {
-    "color": "rgba(51,51,51,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "16px",
-    "line-height": "27px",
-    "margin-bottom": "0px",
-    "margin-top": "-8px",
-    "padding-left": "15px",
-    "width": "95%",
-  },
-  "S8": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-left": "1px",
-    "width": "100%",
-  },
-  "S9": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
-    "flex-direction": "column",
-    "height": "8px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-    "top": "2px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
-  },
-}
-</style>
-
-<div
-  className="c0 S16"
->
-  <div
-    className="c1 S1"
-  >
+<div>
+  <div>
     EXAMPLE TITLE
   </div>
-  <div
-    className="c2 S15"
-  >
-    <div
-      className="S4"
-    >
-      <div
-        className="S2"
-      />
-      <div
-        className="S3"
-      >
+  <div>
+    <div>
+      <div />
+      <div>
         Example bullet text
       </div>
     </div>
-    <div
-      className="S8"
-    >
-      <div
-        className="S5"
-      />
-      <div
-        className="S7"
-      >
+    <div>
+      <div />
+      <div>
         An example 
-        <a
-          className="S6"
-        >
+        <a>
           link
         </a>
       </div>
     </div>
-    <div
-      className="S11"
-    >
-      <div
-        className="S9"
-      />
-      <div
-        className="S10"
-      >
+    <div>
+      <div />
+      <div>
         More example text.
       </div>
     </div>
-    <div
-      className="S14"
-    >
-      <div
-        className="S12"
-      />
-      <div
-        className="S13"
-      >
+    <div>
+      <div />
+      <div>
+        Example text 
+        <strong>
+          this is bold 
+        </strong>
+        <em>
+          this is in italics.
+        </em>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`key facts with title and context theme 1`] = `
+.c0 {
+  margin: 5px 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 10px auto;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-right: 20px;
+    width: 20%;
+  }
+}
+
+<div>
+  <div>
+    EXAMPLE TITLE
+  </div>
+  <div>
+    <div>
+      <div />
+      <div>
+        Example bullet text
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        An example 
+        <a>
+          link
+        </a>
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        More example text.
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
         Example text 
         <strong>
           this is bold 

@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React from "react";
+import invert from "lodash.invert";
 import { addTypenameToDocument } from "apollo-utilities";
-import Context, { scales } from "@times-components/context";
+import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import { article as articleQuery } from "@times-components/provider-queries";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
+import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
 import fullArticleFixture, {
@@ -42,6 +44,7 @@ const mocks = [
 const renderArticle = (
   decorateAction,
   scale,
+  sectionColour,
   {
     fixture,
     isLoading = false,
@@ -50,7 +53,7 @@ const renderArticle = (
     error
   }
 ) => (
-  <Context.Provider value={{ theme: { scale } }}>
+  <Context.Provider value={{ theme: { scale, sectionColour } }}>
     <Article
       adConfig={adConfig}
       analyticsStream={analyticsStream}
@@ -75,6 +78,8 @@ const renderArticle = (
 );
 
 const selectScales = select => select("Scale", scales, scales.medium);
+const selectSection = select =>
+  select("Section", invert(colours.section), colours.section.default);
 
 export default {
   name: "Pages/Article",
@@ -84,7 +89,8 @@ export default {
       name: "Default",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture()
         });
       }
@@ -94,7 +100,8 @@ export default {
       name: "Article with video asset",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({
             leadAsset: videoLeadAsset()
           })
@@ -106,7 +113,8 @@ export default {
       name: "Long Article",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ content: longContent })
         });
       }
@@ -116,7 +124,10 @@ export default {
       name: "Loading",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, { isLoading: true });
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
+          isLoading: true
+        });
       }
     },
     {
@@ -124,7 +135,8 @@ export default {
       name: "Error",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           error: { message: "An example error." }
         });
       }
@@ -134,6 +146,7 @@ export default {
       name: "With Provider",
       component: ({ select, text }, { decorateAction }) => {
         const scale = selectScales(select);
+        const sectionColour = selectSection(select);
         const predefinedArticles = {
           "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
           "1a576df6-cb50-11e4-81dd-064fe933cd41":
@@ -153,7 +166,7 @@ export default {
               id={overrideArticleId || predefinedArticle}
             >
               {({ article, isLoading, error }) => (
-                <Context.Provider value={{ theme: { scale } }}>
+                <Context.Provider value={{ theme: { scale, sectionColour } }}>
                   <Article
                     adConfig={articleAdConfig}
                     analyticsStream={storybookReporter}
@@ -195,6 +208,7 @@ export default {
       platform: "web",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
+        const sectionColour = selectSection(select);
         return (
           <div>
             <a
@@ -204,7 +218,7 @@ export default {
             >
               Click to render the ads
             </a>
-            {renderArticle(decorateAction, scale, {
+            {renderArticle(decorateAction, scale, sectionColour, {
               fixture: fullArticleFixture()
             })}
           </div>
@@ -217,7 +231,8 @@ export default {
       platform: "native",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture()
         });
       }
@@ -227,7 +242,8 @@ export default {
       name: "Fixtures - Byline with author profile",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ byline: bylineWithLink })
         });
       }
@@ -237,7 +253,8 @@ export default {
       name: "Fixtures - No ads",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ withAds: false })
         });
       }
@@ -247,7 +264,8 @@ export default {
       name: "Fixtures - No standfirst",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ standfirst: null })
         });
       }
@@ -257,7 +275,8 @@ export default {
       name: "Fixtures - No label",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ label: null })
         });
       }
@@ -267,7 +286,8 @@ export default {
       name: "Fixtures - No flags",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ flags: null })
         });
       }
@@ -277,7 +297,8 @@ export default {
       name: "Fixtures - No standfirst, no label",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ label: null, standfirst: null })
         });
       }
@@ -287,7 +308,8 @@ export default {
       name: "Fixtures - No standfirst, no flags",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ flags: null, standfirst: null })
         });
       }
@@ -297,7 +319,8 @@ export default {
       name: "Fixtures - No label, no flags",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ flags: null, label: null })
         });
       }
@@ -307,7 +330,8 @@ export default {
       name: "Fixtures - No label, no flags, no standfirst",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({
             flags: null,
             label: null,
@@ -321,7 +345,8 @@ export default {
       name: "Fixtures - No lead asset",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
-        return renderArticle(decorateAction, scale, {
+        const sectionColour = selectSection(select);
+        return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({ leadAsset: null })
         });
       }

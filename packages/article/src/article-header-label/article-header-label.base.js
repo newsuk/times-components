@@ -1,7 +1,8 @@
 import React from "react";
 import ArticleLabel from "@times-components/article-label";
-import VideoLabel from "@times-components/video-label";
+import Context from "@times-components/context";
 import { colours } from "@times-components/styleguide";
+import VideoLabel from "@times-components/video-label";
 import styles from "../styles/article-header";
 
 export default render => ({ isVideo, label }) => {
@@ -15,6 +16,10 @@ export default render => ({ isVideo, label }) => {
       testID: "label",
       style: styles.articleLabel
     },
-    <Label color={colours.section.default} title={label} />
+    <Context.Consumer>
+      {({ theme: { sectionColour } }) => (
+        <Label color={sectionColour || colours.section.default} title={label} />
+      )}
+    </Context.Consumer>
   );
 };

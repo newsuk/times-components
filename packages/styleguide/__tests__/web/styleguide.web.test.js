@@ -1,7 +1,11 @@
-import { scales } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import shared from "../shared";
-import styleguide, { colours, fonts, spacing } from "../../src/styleguide";
+import styleguide, {
+  colours,
+  fonts,
+  scales,
+  spacing
+} from "../../src/styleguide";
 
 const tests = [
   {

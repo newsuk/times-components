@@ -1,26 +1,28 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context, { scales } from "../src/context";
-import defaults from "../src/defaults";
+import { scales } from "@times-components/styleguide";
+import Context from "../src/context";
 
 export default () => {
-  it("with default scale", () => {
-    const { theme: { scale: defaultScale } } = defaults;
+  it("with default values", () => {
     const testInstance = TestRenderer.create(
-      <Context.Consumer>{context => context.theme.scale}</Context.Consumer>
+      <Context.Consumer>{context => JSON.stringify(context)}</Context.Consumer>
     );
 
-    expect(testInstance.toJSON()).toBe(defaultScale);
+    expect(testInstance).toMatchSnapshot();
   });
 
-  it("with inline scale", () => {
+  it("with inline values", () => {
     const scale = scales.large;
+    const sectionColour = "#FFFFFF";
     const testInstance = TestRenderer.create(
-      <Context.Provider value={{ theme: { scale } }}>
-        <Context.Consumer>{context => context.theme.scale}</Context.Consumer>
+      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+        <Context.Consumer>
+          {context => JSON.stringify(context)}
+        </Context.Consumer>
       </Context.Provider>
     );
 
-    expect(testInstance.toJSON()).toBe(scale);
+    expect(testInstance).toMatchSnapshot();
   });
 };

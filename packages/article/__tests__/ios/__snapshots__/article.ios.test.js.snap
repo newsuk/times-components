@@ -79,6 +79,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                   },
                 ]
               }
+              color="#333333"
             />
           </Text>
         </View>
@@ -591,6 +592,7 @@ exports[`9. an article with updated byline 2`] = `
                   },
                 ]
               }
+              color="#FFFFFF"
             />
           </Text>
         </View>

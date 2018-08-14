@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ArticleProvider } from "@times-components/provider";
 import Article from "@times-components/article";
+import Context, { defaults } from "@times-components/context";
+import { ArticleProvider } from "@times-components/provider";
+import { colours } from "@times-components/styleguide";
 import withClient from "./client/with-client";
 import adTargetConfig from "./client/ad-targeting-config";
 
@@ -15,38 +17,47 @@ const ArticleDetailsPage = ({
   onCommentGuidelinesPress,
   onVideoPress,
   onLinkPress,
-  onTopicPress
+  onTopicPress,
+  scale,
+  sectionName: pageSection
 }) => (
   <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error }) => {
       const adConfig =
         isLoading || error ? {} : adTargetConfig(platformAdConfig, article);
+      const articleSection = article ? article.section : null;
+      const theme = {
+        scale: scale || defaults.theme.scale,
+        sectionColour: colours.section[pageSection || articleSection]
+      };
 
       return (
-        <Article
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          article={article}
-          error={error}
-          isLoading={isLoading}
-          onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
-          onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
-          onCommentsPress={(event, extras) =>
-            onCommentsPress(extras.articleId, extras.url)
-          }
-          onLinkPress={(event, linkInfo) => {
-            if (linkInfo.type === "article") {
-              onArticlePress(linkInfo.url);
-            } else if (linkInfo.type === "topic") {
-              onTopicPress(linkInfo.url);
-            } else {
-              onLinkPress(linkInfo.url);
+        <Context.Provider value={{ theme }}>
+          <Article
+            adConfig={adConfig}
+            analyticsStream={analyticsStream}
+            article={article}
+            error={error}
+            isLoading={isLoading}
+            onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
+            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentsPress={(event, { articleId: id, url }) =>
+              onCommentsPress(id, url)
             }
-          }}
-          onRelatedArticlePress={(event, extras) => onArticlePress(extras.url)}
-          onTopicPress={(event, extras) => onTopicPress(extras.slug)}
-          onVideoPress={(event, info) => onVideoPress(info)}
-        />
+            onLinkPress={(event, { type, url }) => {
+              if (type === "article") {
+                onArticlePress(url);
+              } else if (type === "topic") {
+                onTopicPress(url);
+              } else {
+                onLinkPress(url);
+              }
+            }}
+            onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
+            onTopicPress={(event, { slug }) => onTopicPress(slug)}
+            onVideoPress={(event, info) => onVideoPress(info)}
+          />
+        </Context.Provider>
       );
     }}
   </ArticleProvider>
@@ -62,7 +73,9 @@ ArticleDetailsPage.propTypes = {
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired
+  onTopicPress: PropTypes.func.isRequired,
+  scale: PropTypes.string.isRequired,
+  sectionName: PropTypes.string.isRequired
 };
 
 export default withClient(ArticleDetailsPage);

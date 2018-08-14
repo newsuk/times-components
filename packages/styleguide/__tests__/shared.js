@@ -2,8 +2,7 @@ import { Text } from "react-native";
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import { scales } from "@times-components/context";
-import styleguide, { Animations } from "../src/styleguide";
+import styleguide, { Animations, scales } from "../src/styleguide";
 
 const tests = [
   {

@@ -1,4 +1,4 @@
-import { scales } from "@times-components/context";
+import scales from "../scales";
 import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = scale => {

@@ -61,7 +61,6 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/context": "0.3.2",
     "@times-components/responsive-styles": "3.0.4",
     "prop-types": "15.6.2"
   },

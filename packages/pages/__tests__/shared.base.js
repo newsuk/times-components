@@ -1,4 +1,5 @@
 import React from "react";
+import { scales } from "@times-components/styleguide";
 import { Article } from "../src/pages";
 import getAdTargetingConfig from "../src/client/ad-targeting-config";
 
@@ -15,10 +16,14 @@ export default makeTest => {
           articleId="test-article-id"
           onArticlePress={() => {}}
           onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
           onLinkPress={() => {}}
           onTopicPress={() => {}}
           onVideoPress={() => {}}
           platformAdConfig={{}}
+          scale={scales.large}
+          sectionName="News"
         />
       )
     ).toMatchSnapshot();

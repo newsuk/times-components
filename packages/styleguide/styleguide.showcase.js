@@ -1,8 +1,12 @@
 import { ScrollView, Text, View } from "react-native";
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import { scales } from "@times-components/context";
-import timesStyleguide, { Animations, colours, fonts } from "./src/styleguide";
+import timesStyleguide, {
+  Animations,
+  colours,
+  fonts,
+  scales
+} from "./src/styleguide";
 import styles from "./styleguide.styles";
 
 const ColourBox = ({ name, hex }) => (
