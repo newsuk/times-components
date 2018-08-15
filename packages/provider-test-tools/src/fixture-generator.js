@@ -142,35 +142,34 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
 
 const makeTopic = () => ({
   name: "Chelsea",
-  description:
-  [
+  description: [
     {
-      "name": "text",
-      "attributes": {
-        "value": "Chelsea is known for its "
+      name: "text",
+      attributes: {
+        value: "Chelsea is known for its "
       },
-      "children": []
+      children: []
     },
     {
-      "name": "italic",
-      "attributes": {},
-      "children": [
+      name: "italic",
+      attributes: {},
+      children: [
         {
-          "name": "text",
-          "attributes": {
-            "value": "affluent"
+          name: "text",
+          attributes: {
+            value: "affluent"
           },
-          "children": []
+          children: []
         }
       ]
     },
     {
-      "name": "text",
-      "attributes": {
-        "value":
+      name: "text",
+      attributes: {
+        value:
           " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores."
       },
-      "children": []
+      children: []
     }
   ],
   __typename: "Topic"
