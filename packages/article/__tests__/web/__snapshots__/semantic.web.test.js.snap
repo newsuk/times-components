@@ -72,9 +72,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         , The Times
       </span>
     </span>
-    <nav
-      role="navigation"
-    >
+    <nav>
       <a
         href="/topic/topic"
       >
@@ -154,9 +152,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       This is video caption
     </figcaption>
   </figure>
-  <nav
-    role="navigation"
-  >
+  <nav>
     <a
       href="/topic/topic"
     >

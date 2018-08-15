@@ -88,9 +88,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           </div>
         </div>
         <div>
-          <nav
-            role="navigation"
-          >
+          <nav>
             <ArticleTopics
               topics={
                 Array [
@@ -195,9 +193,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     </div>
   </div>
   <div>
-    <nav
-      role="navigation"
-    >
+    <nav>
       <ArticleTopics
         topics={
           Array [
