@@ -25,9 +25,7 @@ Array [
   <div>
     <div>
       <div>
-        <div
-          aria-label="label"
-        >
+        <div>
           <div>
             SOME LABEL
           </div>
@@ -251,9 +249,7 @@ Array [
   <div>
     <div>
       <div>
-        <div
-          aria-label="label"
-        >
+        <div>
           <VideoLabel
             color="#333333"
             title={null}
