@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.0.3...@times-components/provider-test-tools@1.1.0) (2018-08-15)
+
+
+### Features
+
+* make description Markup ([#1216](https://github.com/newsuk/times-components/issues/1216)) ([8dc3153](https://github.com/newsuk/times-components/commit/8dc3153))
+
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.0.2...@times-components/provider-test-tools@1.0.3) (2018-08-14)
 
