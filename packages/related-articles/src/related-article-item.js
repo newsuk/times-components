@@ -13,7 +13,7 @@ import {
   relatedArticleItemDefaultProps
 } from "./related-article-item-prop-types";
 import styles from "./styles";
-import getHeadline from "./utils/headline";
+import getHeadline from "./utils";
 
 const RelatedArticleItem = ({
   article,
