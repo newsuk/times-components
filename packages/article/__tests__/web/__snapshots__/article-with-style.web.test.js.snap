@@ -827,11 +827,9 @@ exports[`full article with style 1`] = `
   <div
     className="c0 S1"
   >
-    <aside>
-      <Ad
-        className="IS1"
-      />
-    </aside>
+    <Ad
+      className="IS1"
+    />
   </div>
   <div
     className="c1 S32"
@@ -1022,9 +1020,9 @@ exports[`full article with style 1`] = `
   </div>
   <aside>
     <RelatedArticles />
-    <Ad />
-    <Ad />
-    <Ad />
   </aside>
+  <Ad />
+  <Ad />
+  <Ad />
 </article>
 `;

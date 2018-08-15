@@ -9,7 +9,7 @@ const ShowTopics = ({ device, onPress, topics }) => {
     if (device === "DESKTOP") {
       return (
         <TopicsMetaContainer>
-          <nav>
+          <nav role="navigation">
             <ArticleTopics
               onPress={onPress}
               style={styles.topicsMetaContainer}
@@ -22,7 +22,7 @@ const ShowTopics = ({ device, onPress, topics }) => {
 
     return (
       <TopicsContainer>
-        <nav>
+        <nav role="navigation">
           <ArticleTopics
             onPress={onPress}
             style={styles.topicsContainer}

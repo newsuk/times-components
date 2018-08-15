@@ -62,14 +62,12 @@ const renderArticle = (
   return (
     <article>
       <HeaderAdContainer key="headerAd">
-        <aside>
-          <Ad
-            contextUrl={url}
-            section={section}
-            slotName="header"
-            style={adStyle}
-          />
-        </aside>
+        <Ad
+          contextUrl={url}
+          section={section}
+          slotName="header"
+          style={adStyle}
+        />
       </HeaderAdContainer>
       <MainContainer>
         <header>
@@ -104,12 +102,10 @@ const renderArticle = (
         </BodyContainer>
       </MainContainer>
       <ArticleTopics onPress={onTopicPress} topics={topics} />
-      <aside>
-        {displayRelatedArticles}
-        <Ad contextUrl={url} section={section} slotName="pixel" />
-        <Ad contextUrl={url} section={section} slotName="pixelteads" />
-        <Ad contextUrl={url} section={section} slotName="pixelskin" />
-      </aside>
+      <aside>{displayRelatedArticles}</aside>
+      <Ad contextUrl={url} section={section} slotName="pixel" />
+      <Ad contextUrl={url} section={section} slotName="pixelteads" />
+      <Ad contextUrl={url} section={section} slotName="pixelskin" />
     </article>
   );
 };
