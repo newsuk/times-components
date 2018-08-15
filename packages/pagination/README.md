@@ -1,8 +1,9 @@
 # Pagination
 
 The pagination package provides a pagination user interface (UI) and pagination
-state Higher Order Component (HOC). This package is currently only used by
-article list pages (author profile and topics) for the web.
+state Higher Order Component (HOC). These two exports are both required for
+pagination to work. This package is currently only used by article list pages
+(author profile and topics) for the web.
 
 ## UI
 
