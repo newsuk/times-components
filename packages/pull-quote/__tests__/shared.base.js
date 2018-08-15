@@ -14,7 +14,11 @@ export default renderComponent => {
       name: "with a caption",
       test() {
         const output = renderComponent(
-          <PullQuotes caption={caption} content={content} onTwitterLinkPress={() => null} />
+          <PullQuotes
+            caption={caption}
+            content={content}
+            onTwitterLinkPress={() => null}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -23,7 +27,9 @@ export default renderComponent => {
     {
       name: "without a caption",
       test() {
-        const output = renderComponent(<PullQuotes content={content} onTwitterLinkPress={() => null} />);
+        const output = renderComponent(
+          <PullQuotes content={content} onTwitterLinkPress={() => null} />
+        );
 
         expect(output).toMatchSnapshot();
       }
@@ -32,7 +38,12 @@ export default renderComponent => {
       name: "with a twitter handle",
       test() {
         const output = renderComponent(
-          <PullQuotes caption={caption} content={content} twitter={twitter} onTwitterLinkPress={() => null} />
+          <PullQuotes
+            caption={caption}
+            content={content}
+            onTwitterLinkPress={() => null}
+            twitter={twitter}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -44,7 +55,10 @@ export default renderComponent => {
         const onTwitterLinkPressMock = jest.fn();
 
         const wrapper = shallow(
-          <PullQuoteTwitterLink twitter={twitter} onTwitterLinkPress={onTwitterLinkPressMock} />
+          <PullQuoteTwitterLink
+            onTwitterLinkPress={onTwitterLinkPressMock}
+            twitter={twitter}
+          />
         );
 
         wrapper.find("TextLink").simulate("press", {});
