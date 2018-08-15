@@ -1,8 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
 const styling = scale => {
-  const { fontFactory, fontSizes } = styleguide({ scale });
+  const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide({
+    scale
+  });
   return StyleSheet.create({
     container: {
       marginBottom: spacing(1),

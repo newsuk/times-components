@@ -1,7 +1,7 @@
-import styleguide, { colours, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
 const sharedStyles = scale => {
-  const { fontFactory } = styleguide({ scale });
+  const { colours, fontFactory, spacing } = styleguide({ scale });
   return {
     leadAsset: {
       marginBottom: spacing(2)

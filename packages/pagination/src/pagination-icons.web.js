@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import Svg, { G, Path } from "svgs";
-import styleguide, { colours, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
 import PageLabel from "./page-label";
 
-const { fontFactory } = styleguide();
+const { colours, fontFactory, spacing } = styleguide();
 const textStyle = {
   height: 15,
   ...fontFactory({

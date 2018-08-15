@@ -1,6 +1,6 @@
-import styleguide, { colours, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
-const { fontFactory } = styleguide();
+const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleHeadLineText: {
     ...fontFactory({

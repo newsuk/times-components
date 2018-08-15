@@ -1,10 +1,7 @@
 import { StyleSheet } from "react-native";
-import styleguideFactory, {
-  colours,
-  spacing
-} from "@times-components/styleguide";
+import styleguideFactory from "@times-components/styleguide";
 
-const { fontFactory } = styleguideFactory();
+const { colours, fontFactory, spacing } = styleguideFactory();
 const styles = {
   titleContainer: {
     alignItems: "center",

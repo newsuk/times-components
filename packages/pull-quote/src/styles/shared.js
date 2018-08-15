@@ -1,10 +1,6 @@
-import styleguideFactory, {
-  colours,
-  fonts,
-  spacing
-} from "@times-components/styleguide";
+import styleguideFactory from "@times-components/styleguide";
 
-const { fontFactory } = styleguideFactory();
+const { colours, fonts, fontFactory, spacing } = styleguideFactory();
 const sharedStyles = {
   container: {
     marginTop: 0,

@@ -8,11 +8,11 @@ const mapping = {
   },
   bodyRegular: {
     infoSubText: 15,
-    infoTitle: 22,
+    infoTitle: 22
   },
   bodyRegularSmallCaps: {
     cardMetaMobile: 12,
-    meta: 14,
+    meta: 14
   },
   headline: {
     commentsHeadline: 29,
@@ -20,7 +20,7 @@ const mapping = {
     leadHeadline: 26,
     pageComponentHeadline: 25,
     pageHeadline: 40,
-    smallHeadline: 24,
+    smallHeadline: 24
   },
   headlineRegular: {
     pageComponentHeadline: 30,

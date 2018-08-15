@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
-import styleguide, { colours } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
-const { fontFactory } = styleguide();
+const { colours, fontFactory } = styleguide();
 const styles = StyleSheet.create({
   text: {
     ...fontFactory({
