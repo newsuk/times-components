@@ -74,7 +74,7 @@ exports[`1. an article list header 1`] = `
     "color": "#006699",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": 15,
-    "lineHeight": 15,
+    "lineHeight": 17,
     "paddingLeft": "5px",
     "textDecorationLine": "none",
   },

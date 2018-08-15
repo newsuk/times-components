@@ -30,7 +30,7 @@ exports[`different colours 1`] = `
         "color": "#333333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
-        "lineHeight": 30,
+        "lineHeight": 32,
       }
     }
   >

@@ -38,7 +38,8 @@ const styles = {
     borderBottomWidth: StyleSheet.hairlineWidth
   },
   authorHeadContainerNative: {
-    paddingTop: spacing(6)
+    paddingTop: spacing(6),
+    paddingBottom: spacing(4)
   },
   authorPhoto: {
     borderColor: colours.functional.contrast,
@@ -61,7 +62,8 @@ const styles = {
     ...fontFactory({
       font: "bodyRegularSmallCaps",
       fontSize: "meta"
-    })
+    }),
+    marginTop: spacing(1)
   },
   biographyContainer: {
     paddingBottom: spacing(6),

@@ -8,8 +8,8 @@ exports[`1. article list 1`] = `
 }
 
 .c1 {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -74,6 +74,7 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "12px",
   },
   "IS10": {
     "color": "rgba(105,105,105,1)",
@@ -95,6 +96,7 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "12px",
   },
   "IS13": {
     "marginBottom": "5px",
@@ -104,7 +106,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "24px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS15": {
@@ -137,6 +139,7 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "12px",
   },
   "IS19": {
     "marginBottom": "5px",
@@ -149,7 +152,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "24px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS21": {
@@ -182,6 +185,7 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "12px",
   },
   "IS25": {
     "marginBottom": "5px",
@@ -191,7 +195,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "24px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS27": {
@@ -223,7 +227,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "24px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS4": {
@@ -249,6 +253,7 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "12px",
   },
   "IS7": {
     "marginBottom": "5px",
@@ -258,7 +263,7 @@ exports[`1. article list 1`] = `
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "24px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS9": {

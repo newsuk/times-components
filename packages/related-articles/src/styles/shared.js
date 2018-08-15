@@ -11,11 +11,12 @@ const styles = {
     borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
     display: "flex",
-    height: 55,
+    padding: spacing(2),
     justifyContent: "center"
   },
   title: {
     color: colours.functional.primary,
+    paddingTop: spacing(1),
     ...fontFactory({ font: "headline", fontSize: "pageComponentHeadline" })
   },
   headline: {

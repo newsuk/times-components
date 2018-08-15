@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  headline: {
-    ...sharedStyles.headline,
-    lineHeight: 25
+  titleContainer: {
+    ...sharedStyles.titleContainer,
+    padding: spacing(3)
   }
 });
 

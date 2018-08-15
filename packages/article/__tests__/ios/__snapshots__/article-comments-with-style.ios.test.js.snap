@@ -146,7 +146,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 15,
+              "lineHeight": 17,
               "maxWidth": 280,
               "textAlign": "center",
             }
@@ -181,6 +181,7 @@ exports[`1. a full article with enabled comments 1`] = `
                 "width": "100%",
               },
               Object {
+                "marginBottom": 5,
                 "marginTop": 25,
                 "maxWidth": 215,
               },
@@ -353,7 +354,7 @@ exports[`2. a full article with disabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 15,
+              "lineHeight": 17,
               "maxWidth": 280,
               "textAlign": "center",
             }

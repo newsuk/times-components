@@ -18,9 +18,9 @@ const mapping = {
     commentsHeadline: 29,
     headline: 30,
     leadHeadline: 26,
-    pageComponentHeadline: 25,
+    pageComponentHeadline: 27,
     pageHeadline: 40,
-    smallHeadline: 24
+    smallHeadline: 27
   },
   headlineRegular: {
     pageComponentHeadline: 30,
@@ -34,7 +34,7 @@ const mapping = {
     link: 13,
     meta: 14,
     pagingMeta: 15,
-    tertiary: 15
+    tertiary: 17
   }
 };
 

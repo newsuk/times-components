@@ -15,10 +15,10 @@ const styles = StyleSheet.create({
     maxWidth: 760
   },
   listItemContainer: {
-    paddingBottom: spacing(3),
+    paddingBottom: spacing(2),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    paddingTop: spacing(3)
+    paddingTop: spacing(2)
   },
   listItemSeparatorContainer: {
     paddingLeft: spacing(2),
