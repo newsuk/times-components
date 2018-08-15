@@ -30,7 +30,12 @@ const styles = StyleSheet.create({
   }
 });
 
-const ArticleRow = ({ content: { data, index }, onLinkPress, onTwitterLinkPress, onVideoPress }) =>
+const ArticleRow = ({
+  content: { data, index },
+  onLinkPress,
+  onTwitterLinkPress,
+  onVideoPress
+}) =>
   renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {

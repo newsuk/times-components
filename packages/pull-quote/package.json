@@ -50,6 +50,7 @@
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
+    "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "jest-styled-components": "5.0.1",

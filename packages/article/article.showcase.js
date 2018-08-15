@@ -72,7 +72,9 @@ const renderArticle = (
         "onRelatedArticlePress"
       )}
       onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-      onTwitterLinkPress={preventDefaultedAction(decorateAction)("onTwitterLinkPress")}
+      onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+        "onTwitterLinkPress"
+      )}
       onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
     />
   </Context.Provider>

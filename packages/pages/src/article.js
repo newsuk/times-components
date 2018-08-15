@@ -55,6 +55,7 @@ const ArticleDetailsPage = ({
             }}
             onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
             onTopicPress={(event, { slug }) => onTopicPress(slug)}
+            onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
             onVideoPress={(event, info) => onVideoPress(info)}
           />
         </Context.Provider>
