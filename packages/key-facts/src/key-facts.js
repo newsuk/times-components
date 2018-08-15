@@ -20,8 +20,8 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   };
 
   const renderKeyFact = (item, listIndex, fontStyle, backgroundColor) => (
-    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
-      <View style={[styles.bullet, { backgroundColor }]} />
+    <View key={`key-facts-${listIndex}`} style={styles().bulletContainer}>
+      <View style={[styles().bullet, { backgroundColor }]} />
       <KeyFactsText
         fontStyle={fontStyle}
         item={item}

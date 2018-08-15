@@ -7,7 +7,7 @@ import { defaultProps, propTypes } from "./key-facts-prop-types";
 import styles from "./styles";
 
 const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
-  <Text style={[styles.text, fontStyle]}>
+  <Text style={[styles().text, fontStyle]}>
     {item.children.map((data, listItemIndex) =>
       renderTree(
         data,
@@ -26,7 +26,7 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
                       url
                     })
                   }
-                  style={styles.link}
+                  style={styles().link}
                   url={url}
                 >
                   {renderedChildren}
