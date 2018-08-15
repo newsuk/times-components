@@ -1,7 +1,7 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import { standardRoles, leadAndTwoRoles } from "@times-components/slice";
-import getHeadline from "./utils/headline";
+import getHeadline from "./utils";
 
 export default Component =>
   withTrackingContext(Component, {
