@@ -40,7 +40,40 @@ exports[`3. an article list 1`] = `
           Array [
             Object {
               "attributes": Object {
-                "value": "Test Description",
+                "value": "Test ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "italic ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "bold",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "bold",
+            },
+            Object {
+              "attributes": Object {
+                "value": " text.",
               },
               "children": Array [],
               "name": "text",
@@ -80,7 +113,40 @@ exports[`4. fetches more articles 1`] = `
           Array [
             Object {
               "attributes": Object {
-                "value": "Test Description",
+                "value": "Test ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "italic ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "bold",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "bold",
+            },
+            Object {
+              "attributes": Object {
+                "value": " text.",
               },
               "children": Array [],
               "name": "text",
@@ -125,7 +191,40 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
           Array [
             Object {
               "attributes": Object {
-                "value": "Test Description",
+                "value": "Test ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "italic ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "bold",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "bold",
+            },
+            Object {
+              "attributes": Object {
+                "value": " text.",
               },
               "children": Array [],
               "name": "text",
@@ -166,7 +265,14 @@ exports[`6. an article list header 1`] = `
     </Text>
     <View />
     <Text>
-      Test Description
+      Test 
+      <Text>
+        italic 
+      </Text>
+      <Text>
+        bold
+      </Text>
+       text.
     </Text>
   </View>
 </View>
