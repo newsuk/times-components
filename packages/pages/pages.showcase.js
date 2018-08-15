@@ -33,7 +33,6 @@ export default {
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
             onTopicPress={() => {}}
-            onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
             platformAdConfig={{ sectionName: "news" }}
           />
