@@ -1,0 +1,49 @@
+# Provider
+
+The provider package manages the connections to [GraphQL](https://graphql.org/)
+(GQL). At a fundamental level, the package simply exports providers that take
+GQL queries (from the provider queries package), and use
+[React Apollo](https://github.com/apollographql/react-apollo) to fetch data from
+the GQL server. These providers can be configured to take a `debounceTimeMs`
+prop which adds debounce functionality to the provider calls to ensure better
+performance and user experience.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
+package
+
+## Running the code
+
+Please see our main [README.md](../README.md) to get the project running locally
+
+## Development
+
+The code can be formatted and linted in accordance with the agreed standards.
+
+```
+yarn fmt
+yarn lint
+```
+
+## Testing
+
+This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
+platform with [jest](https://facebook.github.io/jest/).
+
+```
+yarn test:all
+yarn test:android
+yarn test:ios
+yarn test:web
+```
+
+Visit the official
+[storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
+to see our available provider templates.
+
+## Future
+
+We are working on improving the developer experience around fixture generation,
+which could mean some refactoring in this package. The intention is to allow
+consumers to pass around queries to generate the fixtures they need.
