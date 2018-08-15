@@ -226,15 +226,6 @@ exports[`1. article list 1`] = `
     "lineHeight": "22px",
     "marginBottom": "5px",
   },
-  "IS30": {
-    "height": 0,
-    "overflow": "hidden",
-    "width": 0,
-  },
-  "IS31": {
-    "height": "250px",
-    "width": "970px",
-  },
   "IS4": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
@@ -1210,119 +1201,6 @@ exports[`1. article list 1`] = `
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "absolute",
-  },
-  "S62": {
-    "background-color": "rgba(249,249,249,1)",
-    "border-bottom-width": "1px",
-    "border-top-width": "1px",
-    "color": "rgba(105,105,105,1)",
-    "font-family": "TimesDigitalW04",
-    "font-size": "11px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S63": {
-    "-ms-flex-align": "center",
-    "-ms-flex-direction": "column",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "column",
-    "-webkit-justify-content": "center",
-    "align-items": "center",
-    "background-color": "rgba(249,249,249,1)",
-    "border-bottom-width": "1px",
-    "border-top-width": "1px",
-    "flex-direction": "column",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S64": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "center",
-    "-ms-flex-direction": "column",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-box-pack": "center",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "-webkit-justify-content": "center",
-    "align-items": "center",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex": "1",
-    "flex-direction": "column",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S65": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "center",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "align-items": "center",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex": "1",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S66": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
     "border-bottom-width": "1px",
     "border-top-width": "1px",
     "flex-direction": "column",
@@ -1335,7 +1213,7 @@ exports[`1. article list 1`] = `
     "padding-top": "10px",
     "position": "relative",
   },
-  "S67": {
+  "S62": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -1360,7 +1238,7 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S68": {
+  "S63": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "row",
     "-ms-flex-pack": "center",
@@ -1385,7 +1263,28 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S69": {
+  "S64": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S65": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -1419,27 +1318,6 @@ exports[`1. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S70": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
   "S8": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
@@ -1463,10 +1341,10 @@ exports[`1. article list 1`] = `
 </style>
 
 <div
-  className="S70"
+  className="S65"
 >
   <div
-    className="S69"
+    className="S64"
   >
     <div
       className="c0 S3"
@@ -1793,39 +1671,15 @@ exports[`1. article list 1`] = `
       </div>
     </div>
     <div
-      className="S66"
+      className="S61"
     >
-      <div
-        className="S65"
-      >
-        <div
-          className="IS30"
-        />
-        <div
-          className="S64"
-        >
-          <div
-            className="S63 IS31"
-          >
-            <div
-              className="S61"
-            >
-              <Watermark />
-            </div>
-            <div
-              className="S62"
-            >
-              ADVERTISEMENT
-            </div>
-          </div>
-        </div>
-      </div>
+      <Ad />
     </div>
     <div
-      className="S68"
+      className="S63"
     >
       <div
-        className="S67"
+        className="S62"
       >
         <Pagination />
       </div>
