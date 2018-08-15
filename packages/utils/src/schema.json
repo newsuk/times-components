@@ -431,7 +431,8 @@
             },
             {
               "name": "headline",
-              "description": "",
+              "description":
+                "A longer SEO headline. Note this might not be populated so please use 'shortHeadline' as a fallback.",
               "args": [],
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
@@ -446,6 +447,15 @@
                 "name": null,
                 "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "isBookmarked",
+              "description":
+                "A user specific flag that indicates whether the article has been bookmarked (saved) by the user. This property can only be accessed by logged in users.",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -509,6 +519,23 @@
                   }
                 }
               },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "shortHeadline",
+              "description":
+                "A shorter headline useful for when space is at a premium. Note this may return null so please use `headline` field as a fallback.",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "shortIdentifier",
+              "description": "Hashed version of the article identifier",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -601,7 +628,8 @@
             },
             {
               "name": "slug",
-              "description": "",
+              "description":
+                "Customisable field in the CMS, that is by default a slugified version of the article title",
               "args": [],
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
@@ -638,8 +666,7 @@
               "args": [],
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": true,
-              "deprecationReason":
-                "Use headline instead which is more descriptive in the context of an article"
+              "deprecationReason": "use shortHeadline instead"
             },
             {
               "name": "topics",
@@ -773,12 +800,6 @@
             },
             {
               "name": "comment",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "Comment",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -1394,7 +1415,7 @@
               "name": "description",
               "description": "A short sentence to describe the topic",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2146,6 +2167,101 @@
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "bookmarks",
+              "description": "",
+              "args": [
+                {
+                  "name": "first",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "20"
+                },
+                {
+                  "name": "skip",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "0"
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "PageOfBookmarks",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "PageOfBookmarks",
+          "description": "",
+          "fields": [
+            {
+              "name": "bookmarks",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Bookmark",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "total",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Bookmark",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -2195,8 +2311,8 @@
                     "kind": "NON_NULL",
                     "name": null,
                     "ofType": {
-                      "kind": "INTERFACE",
-                      "name": "Sharable",
+                      "kind": "OBJECT",
+                      "name": "Bookmark",
                       "ofType": null
                     }
                   }
@@ -2273,47 +2389,11 @@
                 "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
               },
               "defaultValue": null
-            },
-            {
-              "name": "metadata",
-              "description":
-                "information about the bookmark as  key value pairs (e.g. sectionname=News)",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "defaultValue": null
             }
           ],
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
-        },
-        {
-          "kind": "INTERFACE",
-          "name": "Sharable",
-          "description": "",
-          "fields": [
-            {
-              "name": "id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            { "kind": "OBJECT", "name": "Bookmark", "ofType": null }
-          ]
         },
         {
           "kind": "INPUT_OBJECT",
@@ -3137,39 +3217,6 @@
           "fields": null,
           "inputFields": null,
           "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "Bookmark",
-          "description": "",
-          "fields": [
-            {
-              "name": "id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "UUID", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "metadata",
-              "description": "",
-              "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [
-            { "kind": "INTERFACE", "name": "Sharable", "ofType": null }
-          ],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -6174,11 +6221,13 @@
             {
               "name": "headline",
               "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "defaultValue": null
+            },
+            {
+              "name": "shortHeadline",
+              "description": "",
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "defaultValue": null
             },
             {
@@ -6304,11 +6353,7 @@
             {
               "name": "standfirst",
               "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "defaultValue": null
             },
             {

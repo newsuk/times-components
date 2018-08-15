@@ -147,7 +147,14 @@ exports[`1. an article list header 1`] = `
     <div
       className="S3"
     >
-      Test Description
+      Test 
+      <em>
+        italic 
+      </em>
+      <strong>
+        bold
+      </strong>
+       text.
     </div>
   </div>
 </div>

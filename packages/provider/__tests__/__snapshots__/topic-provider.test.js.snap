@@ -3,7 +3,35 @@
 exports[`TopicProvider returns query result 1`] = `
 Object {
   "__typename": "Topic",
-  "description": "Chelsea is known for its affluent residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores.",
+  "description": Array [
+    Object {
+      "attributes": Object {
+        "value": "Chelsea is known for its ",
+      },
+      "children": Array [],
+      "name": "text",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "affluent",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "italic",
+    },
+    Object {
+      "attributes": Object {
+        "value": " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores.",
+      },
+      "children": Array [],
+      "name": "text",
+    },
+  ],
   "name": "Chelsea",
   Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"})",
 }

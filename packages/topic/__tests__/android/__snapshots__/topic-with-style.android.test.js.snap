@@ -57,7 +57,26 @@ exports[`1. an article list header 1`] = `
         }
       }
     >
-      Test Description
+      Test 
+      <Text
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        italic 
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        bold
+      </Text>
+       text.
     </Text>
   </View>
 </View>

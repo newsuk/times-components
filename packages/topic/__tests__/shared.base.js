@@ -99,7 +99,7 @@ export default props => {
       }
     },
     {
-      name: "a topic header with description",
+      name: "a topic header with no description",
       test() {
         const testInstance = TestRenderer.create(
           <Topic
