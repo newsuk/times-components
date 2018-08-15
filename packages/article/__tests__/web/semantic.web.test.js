@@ -103,7 +103,7 @@ const tests = [
         ]
       });
 
-      const output = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -118,7 +118,7 @@ const tests = [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testInstance).toMatchSnapshot();
     }
   }
 ];
