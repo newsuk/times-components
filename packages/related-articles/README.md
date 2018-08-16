@@ -1,6 +1,8 @@
 # Related Articles
 
-Related articles sit at the bottom of the article, providing similar articles for a user to navigate to should they be interested. The related articles component takes a 
+Related articles sit at the bottom of the article, providing similar articles
+for a user to navigate to should they be interested. The related articles
+component takes a
 
 Slices are re-usable templates. A slice template lays itself out according to a
 set of self-defined rules. The slice also provides a suggested default

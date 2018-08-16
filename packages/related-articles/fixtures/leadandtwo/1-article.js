@@ -120,12 +120,9 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "LEAD_AND_TWO",
-      main: "a88b0330-d14c-11e7-b1ec-8503a5941b97"
-    },
-    relatedArticles: [
-      {
+    relatedArticleSlice: {
+      sliceName: "LeadOneAndTwoSlice",
+      lead: {
         byline: [
           {
             name: "inline",
@@ -161,6 +158,6 @@ export default (
         summary225,
         url
       }
-    ]
+    }
   }
 });
