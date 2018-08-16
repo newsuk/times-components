@@ -29,8 +29,6 @@ const RelatedArticleItem = ({
   showSummary,
   summaryConfig
 }) => {
-  if (!article) return null;
-
   const {
     byline,
     headline,

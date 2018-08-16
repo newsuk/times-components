@@ -1,9 +1,9 @@
 import React from "react";
 import mockDate from "mockdate";
-// import { shallow } from "enzyme";
+import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import RelatedArticles from "../src/related-articles";
-// import RelatedArticleItem from "../src/related-article-item";
+import RelatedArticleItem from "../src/related-article-item";
 
 export const testSummary = summary => [
   {
@@ -87,31 +87,35 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
 
         expect(events.mock.calls).toMatchSnapshot();
       }
+    },
+    {
+      name: "callback triggered on related article press",
+      test() {
+        const onRelatedArticlePress = jest.fn();
+        const { lead, opinion } = fixture.relatedArticleSlice;
+
+        if (!lead && !opinion) return;
+
+        const article = lead || opinion;
+
+        const wrapper = shallow(
+          <RelatedArticleItem
+            article={article}
+            onPress={onRelatedArticlePress}
+          />
+        );
+
+        const eventMock = {};
+        wrapper
+          .find("Link")
+          .at(0)
+          .simulate("press", eventMock);
+
+        expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
+          url: article.url
+        });
+      }
     }
-    // {
-    //   name: "callback triggered on related article press",
-    //   test() {
-    //     const onRelatedArticlePress = jest.fn();
-    //     const article = fixture.relatedArticles[0];
-
-    //     const wrapper = shallow(
-    //       <RelatedArticleItem
-    //         article={article}
-    //         onPress={onRelatedArticlePress}
-    //       />
-    //     );
-
-    //     const eventMock = {};
-    //     wrapper
-    //       .find("Link")
-    //       .at(0)
-    //       .simulate("press", eventMock);
-
-    //     expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-    //       url: article.url
-    //     });
-    //   }
-    // }
   ];
 
   iterator(tests);
