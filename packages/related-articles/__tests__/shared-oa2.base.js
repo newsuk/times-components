@@ -96,8 +96,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: opinionAndTwo1ArticleFixtureData,
-  template: "OPINION_AND_TWO"
+  fixture: opinionAndTwo1ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({

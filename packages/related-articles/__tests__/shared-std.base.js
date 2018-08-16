@@ -75,8 +75,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: standard1ArticleFixtureData,
-  template: "DEFAULT"
+  fixture: standard1ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { relatedArticleItemPropTypes } from "./related-article-item-prop-types";
 
-export const relatedArticlesPropTypes = {
+export const propTypes = {
   lead: relatedArticleItemPropTypes.article,
   onPress: PropTypes.func.isRequired,
   opinion: relatedArticleItemPropTypes.article,
@@ -10,7 +10,7 @@ export const relatedArticlesPropTypes = {
   supports: PropTypes.arrayOf(relatedArticleItemPropTypes.article)
 };
 
-export const relatedArticlesDefaultProps = {
+export const defaultProps = {
   lead: null,
   opinion: null,
   standardArticles: [],
