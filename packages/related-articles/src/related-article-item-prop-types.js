@@ -18,7 +18,7 @@ export const relatedArticleItemPropTypes = {
     summary175: PropTypes.arrayOf(treePropType),
     summary225: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
-  }).isRequired,
+  }),
   bylineClass: PropTypes.string,
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
@@ -41,6 +41,7 @@ export const relatedArticleItemPropTypes = {
 };
 
 export const relatedArticleItemDefaultProps = {
+  article: null,
   summary105: [],
   summary145: [],
   summary160: [],

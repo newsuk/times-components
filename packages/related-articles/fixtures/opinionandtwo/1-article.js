@@ -128,7 +128,7 @@ export default (
   data: {
     relatedArticleSlice: {
       sliceName: "OpinionOneAndTwoSlice",
-      lead: {
+      opinion: {
         byline: [
           {
             name: "inline",
