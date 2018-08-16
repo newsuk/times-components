@@ -197,20 +197,17 @@ exports[`default styles 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
-    "lineHeight": "12px",
+    "lineHeight": "14px",
   },
   "IS2": {
-    "marginBottom": "5px",
-  },
-  "IS3": {
     "color": "rgba(19,53,78,1)",
   },
-  "IS4": {
+  "IS3": {
     "color": "rgba(133,0,41,1)",
     "fontSize": "22px",
     "fontWeight": "400",
   },
-  "IS5": {
+  "IS4": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "flexWrap": "wrap",
@@ -219,7 +216,7 @@ exports[`default styles 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
-  "IS6": {
+  "IS5": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "flexWrap": "wrap",
@@ -377,6 +374,7 @@ exports[`default styles 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "display": "flex",
+    "margin-bottom": "0px",
     "margin-top": "0px",
   },
   "S5": {
@@ -461,7 +459,7 @@ exports[`default styles 1`] = `
                 className="S14"
               >
                 <div
-                  className="S4 IS2"
+                  className="S4"
                 >
                   <div
                     className="S3 IS1"
@@ -470,10 +468,10 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="opinionBylineClass S6 IS4"
+                  className="opinionBylineClass S6 IS3"
                 >
                   <span
-                    className="S5 IS3"
+                    className="S5 IS2"
                   >
                     Sathnam Sanghera
                   </span>
@@ -487,7 +485,7 @@ exports[`default styles 1`] = `
                   className="S12"
                 >
                   <div
-                    className="summaryHidden opinionSummary125Class S9 IS5"
+                    className="summaryHidden opinionSummary125Class S9 IS4"
                   >
                     <span
                       className="S8"
@@ -498,7 +496,7 @@ exports[`default styles 1`] = `
                     </span>
                   </div>
                   <div
-                    className="summaryHidden opinionSummary160Class S11 IS6"
+                    className="summaryHidden opinionSummary160Class S11 IS5"
                   >
                     <span
                       className="S10"

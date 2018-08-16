@@ -46,7 +46,7 @@ exports[`1. page error 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 15,
-          "lineHeight": 15,
+          "lineHeight": 23,
           "textAlign": "center",
         }
       }

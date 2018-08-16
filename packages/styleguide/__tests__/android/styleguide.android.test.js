@@ -16,7 +16,7 @@ const tests = [
     test: () => {
       const testInstance = styleguide({ scale: scales.large }).fontSizes
         .bodyMobile;
-      expect(testInstance).toEqual(19);
+      expect(testInstance).toEqual(21);
     }
   },
   {
@@ -24,7 +24,7 @@ const tests = [
     test: () => {
       const testInstance = styleguide({ scale: scales.xlarge }).fontSizes
         .bodyMobile;
-      expect(testInstance).toEqual(21);
+      expect(testInstance).toEqual(23);
     }
   },
   {
@@ -44,7 +44,7 @@ const tests = [
         font: "body",
         fontSize: "secondary"
       });
-      expect(testInstance).toEqual(29);
+      expect(testInstance).toEqual(31);
     }
   },
   {
@@ -54,7 +54,7 @@ const tests = [
         font: "body",
         fontSize: "secondary"
       });
-      expect(testInstance).toEqual(31);
+      expect(testInstance).toEqual(33);
     }
   }
 ];

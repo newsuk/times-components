@@ -23,8 +23,9 @@ exports[`1. a full article with enabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
             }
           }
         >
@@ -240,8 +241,9 @@ exports[`2. a full article with disabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
             }
           }
         >

@@ -20,7 +20,7 @@ exports[`1. article list 1`] = `
               <View
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "marginBottom": 0,
                   }
                 }
               >
@@ -32,7 +32,7 @@ exports[`1. article list 1`] = `
                       "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.2,
-                      "lineHeight": 12,
+                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
@@ -47,7 +47,7 @@ exports[`1. article list 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 27,
+                    "lineHeight": 25,
                     "marginBottom": 5,
                   }
                 }
@@ -124,7 +124,7 @@ exports[`1. article list 1`] = `
               <View
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "marginBottom": 0,
                   }
                 }
               >
@@ -136,7 +136,7 @@ exports[`1. article list 1`] = `
                       "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.2,
-                      "lineHeight": 12,
+                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
@@ -151,7 +151,7 @@ exports[`1. article list 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 27,
+                    "lineHeight": 25,
                     "marginBottom": 5,
                   }
                 }
@@ -252,7 +252,7 @@ exports[`2. article list with no images 1`] = `
               <View
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "marginBottom": 0,
                   }
                 }
               >
@@ -264,7 +264,7 @@ exports[`2. article list with no images 1`] = `
                       "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.2,
-                      "lineHeight": 12,
+                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
@@ -279,7 +279,7 @@ exports[`2. article list with no images 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 27,
+                    "lineHeight": 25,
                     "marginBottom": 5,
                   }
                 }
@@ -365,7 +365,7 @@ exports[`3. a retry button when load more fails 1`] = `
               <View
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "marginBottom": 0,
                   }
                 }
               >
@@ -377,7 +377,7 @@ exports[`3. a retry button when load more fails 1`] = `
                       "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.2,
-                      "lineHeight": 12,
+                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
@@ -392,7 +392,7 @@ exports[`3. a retry button when load more fails 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "900",
-                    "lineHeight": 27,
+                    "lineHeight": 25,
                     "marginBottom": 5,
                   }
                 }

@@ -5,7 +5,7 @@ exports[`1. primary image with caption and credits 1`] = `
   style={
     Object {
       "flexDirection": "column",
-      "paddingBottom": 25,
+      "paddingBottom": 15,
       "width": "100%",
     }
   }
@@ -66,7 +66,7 @@ exports[`2. secondary image with caption and credits 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
-      "paddingBottom": 25,
+      "paddingBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
       "width": "100%",

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...sharedStyles.title,
-    paddingTop: spacing(0),
+    paddingTop: spacing(0)
   },
   headline: {
     ...sharedStyles.headline,

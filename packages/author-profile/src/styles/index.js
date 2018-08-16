@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
 import { spacing } from "@times-components/styleguide";
+import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     ...sharedStyles.twitter,
     marginTop: spacing(1)
   },
-  twitterIcon:{
+  twitterIcon: {
     ...sharedStyles.twitterIcon,
     marginTop: spacing(0.25)
   }

@@ -25,6 +25,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "fontWeight": "700",
               "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -233,6 +234,7 @@ exports[`2. a full article with disabled comments 1`] = `
               "fontWeight": "700",
               "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >

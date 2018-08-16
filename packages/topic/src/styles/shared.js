@@ -24,7 +24,7 @@ const styles = {
   description: {
     ...fontFactory({ font: "body", fontSize: "tertiary" }),
     textAlign: "center",
-    color: colours.functional.primary,
+    color: colours.functional.primary
   },
   divider: {
     borderStyle: "solid",
