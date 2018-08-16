@@ -7,10 +7,7 @@ import {
 } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
-import {
-  relatedArticlesPropTypes,
-  relatedArticlesDefaultProps
-} from "./related-articles-prop-types";
+import { propTypes, defaultProps } from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({
@@ -104,7 +101,7 @@ const RelatedArticles = ({
   );
 };
 
-RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = relatedArticlesDefaultProps;
+RelatedArticles.propTypes = propTypes;
+RelatedArticles.defaultProps = defaultProps;
 
 export default withTrackingContext(RelatedArticles);

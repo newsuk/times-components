@@ -77,8 +77,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: leadAndTwo1ArticleFixtureData,
-  template: "LEAD_AND_TWO"
+  fixture: leadAndTwo1ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({

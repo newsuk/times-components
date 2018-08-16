@@ -1,8 +1,7 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
-
+import { iterator } from "@times-components/test-utils";
 import RelatedArticles from "../src/related-articles";
 import RelatedArticleItem from "../src/related-article-item";
 
@@ -28,10 +27,15 @@ export const createRelatedArticlesProps = (
   onPress = () => {}
 ) => ({
   analyticsStream: action,
-  articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main,
-  onPress
+  lead: fixtureData.relatedArticleSlice.lead,
+  onPress,
+  opinion: fixtureData.relatedArticleSlice.opinion,
+  sliceName: fixtureData.relatedArticleSlice.sliceName,
+  standardArticles: fixtureData.relatedArticleSlice.items,
+  supports: [
+    fixtureData.relatedArticleSlice.support1,
+    fixtureData.relatedArticleSlice.support2
+  ]
 });
 
 const beforeAndAfterEach = () => {
@@ -53,7 +57,7 @@ const beforeAndAfterEach = () => {
   });
 };
 
-export const noArticlesTests = ({ fixture, template }) => renderComponent => {
+export const noArticlesTests = ({ fixture }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -62,14 +66,8 @@ export const noArticlesTests = ({ fixture, template }) => renderComponent => {
       test() {
         const events = jest.fn();
 
-        const data = {
-          relatedArticles: [],
-          relatedArticlesLayout: {
-            template
-          }
-        };
         const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -80,15 +78,8 @@ export const noArticlesTests = ({ fixture, template }) => renderComponent => {
       test() {
         const events = jest.fn();
 
-        const data = {
-          relatedArticles: [],
-          relatedArticlesLayout: {
-            template
-          }
-        };
-
         renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
