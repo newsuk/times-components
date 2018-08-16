@@ -23,6 +23,7 @@ export default renderComponent => [
             onLinkPress={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
+            onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
         </Context.Provider>
@@ -48,6 +49,7 @@ export default renderComponent => [
             onLinkPress={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
+            onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
         </Context.Provider>
@@ -73,6 +75,7 @@ export default renderComponent => [
             onLinkPress={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
+            onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
         </Context.Provider>

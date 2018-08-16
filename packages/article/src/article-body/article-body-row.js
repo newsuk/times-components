@@ -30,7 +30,12 @@ const styles = StyleSheet.create({
   }
 });
 
-const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
+const ArticleRow = ({
+  content: { data, index },
+  onLinkPress,
+  onTwitterLinkPress,
+  onVideoPress
+}) =>
   renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {
@@ -81,6 +86,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
               caption={name}
               content={content}
               key={key}
+              onTwitterLinkPress={onTwitterLinkPress}
               twitter={twitter}
             />
           </View>
@@ -159,6 +165,7 @@ ArticleRow.propTypes = {
     index: PropTypes.number
   }).isRequired,
   onLinkPress: PropTypes.func.isRequired,
+  onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
 
