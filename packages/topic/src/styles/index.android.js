@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
  ...sharedStyles,
  name: {
    ...sharedStyles.name,
-   paddingBottom: spacing(4)
+   paddingBottom: spacing(5)
  },
  description: {
-   ...sharedStyles.description,
-    paddingBottom: spacing(8)
- }
+  ...sharedStyles.description,
+   paddingBottom: spacing(8)
+}
 });
 
 export default styles;

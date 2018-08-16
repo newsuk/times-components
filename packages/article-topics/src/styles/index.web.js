@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   text: {
     ...sharedStyles.text,
-    paddingTop: spacing(1),
-    paddingBottom: spacing(1)
+    // Gill Sans hack
+    paddingTop: spacing(0.5)
   }
 });
 

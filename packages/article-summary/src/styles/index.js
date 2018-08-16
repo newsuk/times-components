@@ -1,3 +1,11 @@
 import sharedStyles from "./shared";
 
-export default sharedStyles;
+const styles = {
+  ...sharedStyles,
+  headlineWrapper: {
+    ...sharedStyles.headlineWrapper,
+    lineHeight: 25
+  }
+};
+
+export default styles;

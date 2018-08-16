@@ -5,7 +5,7 @@ const styles = {
   ...sharedStyles,
   labelWrapper: {
     ...sharedStyles.labelWrapper,
-    marginBottom: spacing(2)
+    marginBottom: spacing(1)
   },
   headline: {
     ...sharedStyles.headline,

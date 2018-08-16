@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   primaryContainer: {
     flexDirection: "column",
-    paddingBottom: spacing(5),
+    paddingBottom: spacing(3),
     width: "100%"
   },
   secondaryCaption: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   secondaryContainer: {
     flexDirection: "row",
     flexWrap: "nowrap",
-    paddingBottom: spacing(5),
+    paddingBottom: spacing(4),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
     width: "100%"

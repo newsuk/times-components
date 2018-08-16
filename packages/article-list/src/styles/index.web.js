@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
       font: "bodyRegular",
       fontSize: "infoSubText"
     }),
+    lineHeight: 27,
     textAlign: "center"
   },
   listEmptyStateContainer: {

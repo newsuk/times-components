@@ -8,8 +8,8 @@ const mapping = ({ scale }) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
-          bodyMobile: 29,
-          secondary: 29
+          bodyMobile: 31,
+          secondary: 31
         }
       };
     case scales.xlarge:
@@ -17,8 +17,8 @@ const mapping = ({ scale }) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
-          bodyMobile: 31,
-          secondary: 31
+          bodyMobile: 33,
+          secondary: 33
         }
       };
     default:

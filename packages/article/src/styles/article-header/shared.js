@@ -16,18 +16,18 @@ const sharedStyles = {
       fontSize: "smallestHeadline"
     }),
     color: colours.functional.primary,
-    paddingBottom: 9
+    paddingBottom: spacing(2)
   },
   articleLabel: {
-    paddingTop: 4,
+    paddingTop: spacing(1),
     paddingBottom: spacing(1)
   },
   articleFlag: {
-    marginBottom: 11,
+    marginBottom: spacing(2),
     flexDirection: "row"
   },
   articleFlagContainer: {
-    marginRight: 14
+    marginRight: spacing(3)
   }
 };
 

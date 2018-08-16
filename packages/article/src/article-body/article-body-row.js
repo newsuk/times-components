@@ -25,8 +25,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colours.functional.keyline,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    paddingTop: 10,
-    paddingBottom: 10
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2),
+    marginBottom: spacing(4)
   }
 });
 
