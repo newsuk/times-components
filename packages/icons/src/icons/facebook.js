@@ -7,8 +7,15 @@ import propTypes from "./prop-types";
 const viewBox = "14 10 10.592460632324219 20.397258758544922";
 
 const ratio = 1 / 2;
-const IconFacebook = ({ fillColour, height, strokeColour, title, width }) => (
+const IconFacebook = ({
+  fillColour,
+  height,
+  strokeColour,
+  title = "Facebook Icon",
+  width
+}) => (
   <Svg
+    role="img"
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
   >

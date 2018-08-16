@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {

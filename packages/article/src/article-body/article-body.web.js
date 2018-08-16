@@ -17,11 +17,10 @@ const ArticleBody = props => {
     }
     return item;
   });
-  const BodyView = contentArray.map(content => (
+
+  return contentArray.map(content => (
     <ArticleRow content={content} key={`cont-${content.index}`} />
   ));
-
-  return BodyView;
 };
 
 ArticleBody.propTypes = {
