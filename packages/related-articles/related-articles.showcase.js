@@ -31,7 +31,7 @@ const createRelatedArticles = (decorateAction, fixtureData) => {
     lead: fixtureData.relatedArticleSlice.lead,
     onPress: preventDefaultedAction(decorateAction)("onArticlePress"),
     opinion: fixtureData.relatedArticleSlice.opinion,
-    slice: fixtureData.relatedArticleSlice,
+    sliceName: fixtureData.relatedArticleSlice.sliceName,
     standardArticles: fixtureData.relatedArticleSlice.items,
     supports: [
       fixtureData.relatedArticleSlice.support1,

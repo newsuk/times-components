@@ -17,7 +17,7 @@ const RelatedArticles = ({
   lead,
   onPress,
   opinion,
-  slice: { sliceName },
+  sliceName,
   standardArticles,
   supports
 }) => {
