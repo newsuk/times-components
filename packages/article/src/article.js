@@ -145,10 +145,10 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, isLoading } = this.props;
+    const { error, refetch, isLoading } = this.props;
 
     if (error) {
-      return <ArticleError {...error} />;
+      return <ArticleError refetch={refetch} />;
     }
 
     if (isLoading) {
@@ -179,6 +179,7 @@ class ArticlePage extends Component {
 
 ArticlePage.propTypes = {
   ...articlePropTypes,
+  refetch: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,

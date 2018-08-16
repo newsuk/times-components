@@ -73,6 +73,7 @@ const renderArticle = (
       )}
       onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
       onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+      refetch={preventDefaultedAction(decorateAction)("refetch")}
     />
   </Context.Provider>
 );
@@ -165,7 +166,7 @@ export default {
               debounceTimeMs={0}
               id={overrideArticleId || predefinedArticle}
             >
-              {({ article, isLoading, error }) => (
+              {({ article, isLoading, error, refetch }) => (
                 <Context.Provider value={{ theme: { scale, sectionColour } }}>
                   <Article
                     adConfig={articleAdConfig}
@@ -194,6 +195,7 @@ export default {
                     onVideoPress={preventDefaultedAction(decorateAction)(
                       "onVideoPress"
                     )}
+                    refetch={refetch}
                   />
                 </Context.Provider>
               )}
