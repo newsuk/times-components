@@ -12,7 +12,6 @@ export default render => ({ isVideo, label }) => {
 
   return render(
     {
-      accessibilityLabel: "label",
       testID: "label",
       style: styles.articleLabel
     },
