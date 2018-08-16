@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { IconTwitter } from "@times-components/icons";
 import PullQuoteContent from "./pull-quote-content";
 import PullQuoteTwitterLink from "./pull-quote-twitter-link";
 import { propTypes, defaultProps } from "./pull-quote-prop-types";
