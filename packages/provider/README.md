@@ -6,7 +6,7 @@ GQL queries (from the provider queries package), and use
 [React Apollo](https://github.com/apollographql/react-apollo) to fetch data from
 the GQL server. These providers can be configured to take a `debounceTimeMs`
 prop which adds debounce functionality to the provider calls to ensure better
-performance and user experience.
+performance and user experience. This gives us control over the API to our dumb components and is where we can put extra functionality/fixes/things that are missing from the Query HOC.
 
 ## Contributing
 
@@ -41,9 +41,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available provider templates.
-
-## Future
-
-We are working on improving the developer experience around fixture generation,
-which could mean some refactoring in this package. The intention is to allow
-consumers to pass around queries to generate the fixtures they need.
