@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/newsuk/times-components/compare/@times-components/article@4.2.1...@times-components/article@4.3.0) (2018-08-16)
+
+
+### Features
+
+* add semantic elements ([#1213](https://github.com/newsuk/times-components/issues/1213)) ([d8391c0](https://github.com/newsuk/times-components/commit/d8391c0))
+
+
+
+
+
 <a name="4.2.1"></a>
 ## [4.2.1](https://github.com/newsuk/times-components/compare/@times-components/article@4.2.0...@times-components/article@4.2.1) (2018-08-15)
 

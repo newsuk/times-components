@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.1.10...@times-components/icons@2.2.0) (2018-08-16)
+
+
+### Features
+
+* add semantic elements ([#1213](https://github.com/newsuk/times-components/issues/1213)) ([d8391c0](https://github.com/newsuk/times-components/commit/d8391c0))
+
+
+
+
+
 <a name="2.1.10"></a>
 ## [2.1.10](https://github.com/newsuk/times-components/compare/@times-components/icons@2.1.9...@times-components/icons@2.1.10) (2018-08-15)
 
