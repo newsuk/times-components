@@ -7,16 +7,18 @@ import {
 } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
-import {
-  relatedArticlesPropTypes,
-  relatedArticlesDefaultProps
-} from "./related-articles-prop-types";
+import { propTypes, defaultProps } from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
-const RelatedArticles = ({ articles, mainId, onPress, template }) => {
-  if (!articles || articles.length === 0) return null;
-
-  const articleCount = articles.length;
+const RelatedArticles = ({
+  lead,
+  onPress,
+  opinion,
+  sliceName,
+  standardArticles,
+  supports
+}) => {
+  if (!sliceName) return null;
 
   const renderArticleItem = (config, article) => {
     const {
@@ -51,37 +53,40 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   const renderSlice = () => {
-    const mainArticle = mainId
-      ? articles.find(article => article.id === mainId)
-      : articles[0];
-    const supports = articles.filter(article => article.id !== mainArticle.id);
+    const mainArticle = lead || opinion;
 
-    switch (template) {
-      case "DEFAULT":
+    switch (sliceName) {
+      case "StandardSlice":
       default:
         return (
           <StandardSlice
-            itemCount={articleCount}
+            itemCount={standardArticles.length}
             renderItems={config =>
-              articles.map(article => renderArticleItem(config, article))
+              standardArticles.map(article =>
+                renderArticleItem(config, article)
+              )
             }
           />
         );
-      case "LEAD_AND_TWO":
+      case "LeadOneAndTwoSlice":
         return (
           <LeadAndTwoSlice
             lead={config => renderArticleItem(config, mainArticle)}
             renderSupports={config =>
-              supports.map(article => renderArticleItem(config, article))
+              supports
+                .filter(support => support !== undefined)
+                .map(article => renderArticleItem(config, article))
             }
           />
         );
-      case "OPINION_AND_TWO":
+      case "OpinionOneAndTwoSlice":
         return (
           <OpinionAndTwoSlice
             opinion={config => renderArticleItem(config, mainArticle)}
             renderSupports={config =>
-              supports.map(article => renderArticleItem(config, article))
+              supports
+                .filter(support => support !== undefined)
+                .map(article => renderArticleItem(config, article))
             }
           />
         );
@@ -96,7 +101,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   );
 };
 
-RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = relatedArticlesDefaultProps;
+RelatedArticles.propTypes = propTypes;
+RelatedArticles.defaultProps = defaultProps;
 
 export default withTrackingContext(RelatedArticles);

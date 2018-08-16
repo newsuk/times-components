@@ -446,12 +446,9 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "OPINION_AND_TWO",
-      main: "a88b0330-d14c-11e7-b1ec-8503a5941b97"
-    },
-    relatedArticles: [
-      {
+    relatedArticleSlice: {
+      sliceName: "OpinionOneAndTwoSlice",
+      opinion: {
         byline: [
           {
             name: "inline",
@@ -491,7 +488,7 @@ export default (
         summary225: firstSummary225,
         url: firstUrl
       },
-      {
+      support1: {
         byline: [
           {
             name: "inline",
@@ -530,7 +527,7 @@ export default (
         summary225: secondSummary225,
         url: secondUrl
       },
-      {
+      support2: {
         byline: [
           {
             name: "inline",
@@ -569,6 +566,6 @@ export default (
         summary225: thirdSummary225,
         url: thirdUrl
       }
-    ]
+    }
   }
 });

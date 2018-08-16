@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
-import { treePropType } from "@times-components/markup";
+import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
 import styles from "./styles";
 
