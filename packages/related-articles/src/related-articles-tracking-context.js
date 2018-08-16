@@ -12,15 +12,20 @@ export default Component =>
     trackingObjectName: "RelatedArticles",
     getAttrs: ({ lead, opinion, sliceName, standardArticles, supports }) => {
       const supportsTracking = roles =>
-        supports.map(
-          ({ byline, headline, id, publishedTime, shortHeadline }, index) => ({
-            id,
-            byline: get(byline, "[0].children[0].attributes.value", ""),
-            headline: getHeadline(headline, shortHeadline),
-            publishedTime,
-            role: roles[index + 1]
-          })
-        );
+        supports
+          .filter(support => support !== undefined)
+          .map(
+            (
+              { byline, headline, id, publishedTime, shortHeadline },
+              index
+            ) => ({
+              id,
+              byline: get(byline, "[0].children[0].attributes.value", ""),
+              headline: getHeadline(headline, shortHeadline),
+              publishedTime,
+              role: roles[index + 1]
+            })
+          );
 
       const standardTracking = () =>
         standardArticles.map(
@@ -58,7 +63,7 @@ export default Component =>
           role: opinionAndTwoRoles[0]
         };
 
-        const supportsTrackingObjects = supportsTracking(leadAndTwoRoles);
+        const supportsTrackingObjects = supportsTracking(opinionAndTwoRoles);
 
         return [opinionOneAndTwoTrackingObject, ...supportsTrackingObjects];
       };
