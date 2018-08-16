@@ -50,9 +50,10 @@ const RelatedArticleItem = ({
     style: imageStyle = {}
   } = imageConfig;
 
-  const imageUri = leadAsset.posterImage
-    ? get(article, `leadAsset.posterImage.crop${cropSize}.url`)
-    : get(article, `leadAsset.crop${cropSize}.url`);
+  const imageUri =
+    leadAsset && leadAsset.posterImage
+      ? get(article, `leadAsset.posterImage.crop${cropSize}.url`)
+      : get(article, `leadAsset.crop${cropSize}.url`);
 
   return (
     <Link onPress={e => onPress(e, { url: article.url })} url={url}>

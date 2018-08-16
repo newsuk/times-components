@@ -28,10 +28,15 @@ const preventDefaultedAction = decorateAction =>
 const createRelatedArticles = (decorateAction, fixtureData) => {
   const props = {
     analyticsStream: storybookReporter,
-    articles: fixtureData.relatedArticles,
-    mainId: fixtureData.relatedArticlesLayout.main,
+    lead: fixtureData.relatedArticleSlice.lead,
     onPress: preventDefaultedAction(decorateAction)("onArticlePress"),
-    template: fixtureData.relatedArticlesLayout.template
+    opinion: fixtureData.relatedArticleSlice.opinion,
+    slice: fixtureData.relatedArticleSlice,
+    standardArticles: fixtureData.relatedArticleSlice.items,
+    supports: [
+      fixtureData.relatedArticleSlice.support1,
+      fixtureData.relatedArticleSlice.support2
+    ]
   };
   return (
     <ScrollView>
