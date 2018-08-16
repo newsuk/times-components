@@ -7,7 +7,8 @@ const nativeStyles = {
   ...sharedStyles,
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
-    fontWeight: "700"
+    fontWeight: "700",
+    marginTop: spacing(3)
   },
   standFirst: {
     ...sharedStyles.standFirst,

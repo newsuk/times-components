@@ -10,6 +10,7 @@ const androidStyles = {
     fontSize: fontSizes.headline,
     lineHeight: 33,
     fontWeight: "400",
+    marginTop: spacing(3),
     marginBottom: spacing(3)
   },
   standFirst: {
