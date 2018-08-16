@@ -6,7 +6,7 @@ GQL queries (from the provider queries package), and use
 [React Apollo](https://github.com/apollographql/react-apollo) to fetch data from
 the GQL server. These providers can be configured to take a `debounceTimeMs`
 prop which adds debounce functionality to the provider calls to ensure better
-performance and user experience. This gives us control over the API to our dumb components and is where we can put extra functionality/fixes/things that are missing from the Query HOC.
+performance and user experience.
 
 ## Contributing
 
