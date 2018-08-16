@@ -17,7 +17,8 @@ const nativeStyles = {
   articleFlag: {
     ...sharedStyles.articleFlag,
     paddingTop: spacing(1)
-  }
+  },
+  articleLabelWrapper: { marginTop: spacing(2), marginBottom: spacing(-2.75) }
 };
 
 const styles = StyleSheet.create({

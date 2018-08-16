@@ -1,13 +1,10 @@
 import React from "react";
 import { View } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import BaseLabel from "./article-header-label.base";
+import styles from "../styles/article-header";
 
 export default BaseLabel((props, label) => (
-  <View
-    {...props}
-    style={{ marginTop: spacing(2), marginBottom: spacing(-2.75) }}
-  >
+  <View {...props} style={styles.articleLabelWrapper}>
     {label}
   </View>
 ));
