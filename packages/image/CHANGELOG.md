@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.9"></a>
+## [3.2.9](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.8...@times-components/image@3.2.9) (2018-08-16)
+
+
+### Bug Fixes
+
+* use images instead of svgs for close button ([#1223](https://github.com/newsuk/times-components/issues/1223)) ([4869801](https://github.com/newsuk/times-components/commit/4869801))
+
+
+
+
+
 <a name="3.2.8"></a>
 ## [3.2.8](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.7...@times-components/image@3.2.8) (2018-08-15)
 
