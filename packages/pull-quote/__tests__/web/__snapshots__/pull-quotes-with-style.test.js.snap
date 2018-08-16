@@ -120,42 +120,48 @@ exports[`different colours 1`] = `
 }
 </style>
 
-<div
-  className="S6"
+<blockquote
+  url="https://twitter.com/@twitter"
 >
   <div
-    className="IS1 S1"
-  >
-    “
-  </div>
-  <div
-    className="c0 S2"
-  >
-    Some content
-  </div>
-  <div
-    className="S5"
+    className="S6"
   >
     <div
-      className="IS2 S3"
+      className="IS1 S1"
     >
-      A caption
+      “
     </div>
     <div
-      className="S4"
+      className="c0 S2"
     >
-      <IconTwitter
-        height={10}
-        width={12}
-      />
-      <TextLink
-        className="IS3"
-        target="_blank"
-        url="https://twitter.com/@twitter"
+      Some content
+    </div>
+    <div
+      className="S5"
+    >
+      <div
+        className="IS2 S3"
       >
-        @twitter
-      </TextLink>
+        <cite>
+          A caption
+        </cite>
+      </div>
+      <div
+        className="S4"
+      >
+        <IconTwitter
+          height={10}
+          width={12}
+        />
+        <TextLink
+          className="IS3"
+          target="_blank"
+          url="https://twitter.com/@twitter"
+        >
+          @twitter
+        </TextLink>
+      </div>
     </div>
   </div>
-</div>
+</blockquote>
 `;

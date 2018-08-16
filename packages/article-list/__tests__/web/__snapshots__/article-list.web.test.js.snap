@@ -52,7 +52,14 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div>
-                  Friday November 17 2017, 12:01am, The Times
+                  <time
+                    dateTime="2017-11-17T00:01:00.000Z"
+                  >
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Times
+                  </span>
                 </div>
               </div>
             </Card>
@@ -102,7 +109,14 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div>
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time
+                    dateTime="2017-11-17T00:01:00.000Z"
+                  >
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div>
                   <p>
@@ -157,7 +171,14 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div>
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time
+                    dateTime="2017-11-17T00:01:00.000Z"
+                  >
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div>
                   <p>
@@ -212,7 +233,14 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div>
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time
+                    dateTime="2017-11-17T00:01:00.000Z"
+                  >
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div>
                   <p>
@@ -267,7 +295,14 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div>
-                  Friday November 17 2017, 12:01am, The Sunday Times
+                  <time
+                    dateTime="2017-11-17T00:01:00.000Z"
+                  >
+                    Friday November 17 2017, 12:01am
+                  </time>
+                  <span>
+                    , The Sunday Times
+                  </span>
                 </div>
                 <div>
                   <p>
@@ -343,7 +378,14 @@ exports[`2. article list with no images 1`] = `
                     Headline 1
                   </h3>
                   <div>
-                    Friday November 17 2017, 12:01am, The Times
+                    <time
+                      dateTime="2017-11-17T00:01:00.000Z"
+                    >
+                      Friday November 17 2017, 12:01am
+                    </time>
+                    <span>
+                      , The Times
+                    </span>
                   </div>
                 </div>
               </div>
@@ -368,7 +410,14 @@ exports[`2. article list with no images 1`] = `
                     </span>
                   </div>
                   <div>
-                    Friday November 17 2017, 12:01am, The Times
+                    <time
+                      dateTime="2017-11-17T00:01:00.000Z"
+                    >
+                      Friday November 17 2017, 12:01am
+                    </time>
+                    <span>
+                      , The Times
+                    </span>
                   </div>
                 </div>
               </div>
@@ -431,7 +480,14 @@ exports[`3. article list with missing image 1`] = `
                     Headline 1
                   </h3>
                   <div>
-                    Friday November 17 2017, 12:01am, The Times
+                    <time
+                      dateTime="2017-11-17T00:01:00.000Z"
+                    >
+                      Friday November 17 2017, 12:01am
+                    </time>
+                    <span>
+                      , The Times
+                    </span>
                   </div>
                 </div>
               </div>
@@ -456,7 +512,14 @@ exports[`3. article list with missing image 1`] = `
                     </span>
                   </div>
                   <div>
-                    Friday November 17 2017, 12:01am, The Times
+                    <time
+                      dateTime="2017-11-17T00:01:00.000Z"
+                    >
+                      Friday November 17 2017, 12:01am
+                    </time>
+                    <span>
+                      , The Times
+                    </span>
                   </div>
                 </div>
               </div>

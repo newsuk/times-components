@@ -5,8 +5,14 @@ import styles from "../styles/article-header";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
+
   return (
-    <Text style={[styles.standFirst]} testID="standfirst">
+    <Text
+      accessibilityRole="heading"
+      aria-level="2"
+      style={[styles.standFirst]}
+      testID="standfirst"
+    >
       {standfirst}
     </Text>
   );

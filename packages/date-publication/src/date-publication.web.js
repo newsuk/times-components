@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import DateTime from "./date-time";
 import publicationString, { publications } from "./publication";
 
 const DatePublication = ({ publication, ...props }) => (
   <DateTime {...props}>
-    {dateTime => `${dateTime}${publicationString(publication)}`}
+    {dateTime => (
+      <Fragment>
+        <time dateTime={props.date}>{dateTime}</time>
+        <span>{publicationString(publication)}</span>
+      </Fragment>
+    )}
   </DateTime>
 );
 

@@ -1,9 +1,321 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-Array [
-  .c0 {
+.c14 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c15 {
+  color: #333333;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  display: block;
+}
+
+.c10 {
+  margin-bottom: 10px;
+}
+
+.c13 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c19 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c20 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c17 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c16 {
+  display: block;
+}
+
+.c18 {
+  padding-left: 10px;
+}
+
+.c4 {
+  font-size: 30px;
+  color: #1D1D1B;
+  margin-bottom: 8px;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.c7 {
+  border-top: 1px solid #DBDBDB;
+}
+
+.c6 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c21 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c8 {
   display: none;
+}
+
+.c0 {
+  display: none;
+}
+
+.c2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c5 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c9 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.c12 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+@media (min-width:768px) {
+  .c14 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    width: 56.2%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c16 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    line-height: 18px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    padding-top: 0px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (min-width:768px) {
@@ -20,352 +332,31 @@ Array [
   }
 }
 
-<style>
-{
-    "IS1": {
-      "marginBottom": 0,
-    },
-    "S1": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-  }
-</style>
-
-<div
-    className="c0 S1"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>,
-  .c13 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c14 {
-  color: #333333;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 0;
-  display: block;
-}
-
-.c9 {
-  margin-bottom: 10px;
-}
-
-.c12 {
-  width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c18 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
-}
-
-.c19 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0;
-  display: block;
-}
-
-.c16 {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-}
-
-.c15 {
-  display: block;
-}
-
-.c17 {
-  padding-left: 10px;
-}
-
-.c3 {
-  font-size: 30px;
-  color: #1D1D1B;
-  margin-bottom: 8px;
-  font-family: "TimesModern-Bold";
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.c6 {
-  border-top: 1px solid #DBDBDB;
-}
-
-.c5 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c7 {
-  display: none;
-}
-
-.c1 {
-  padding-left: 10px;
-  padding-right: 10px;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.c4 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c8 {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.c11 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
 @media (min-width:768px) {
-  .c13 {
+  .c2 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c13 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c14 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c10 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c12 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c18 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c19 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c16 {
-    width: 50%;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c15 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c15 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 45px;
-    line-height: 45px;
   }
 }
 
 @media (min-width:1024px) {
   .c2 {
-    margin-top: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c6 {
-    line-height: 18px;
-    padding-bottom: 25px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    padding-top: 0px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c7 {
-    display: block;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    padding-top: 20px;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
     width: 56.2%;
     margin-bottom: 15px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
@@ -378,520 +369,577 @@ Array [
 
 <style>
 {
-    "IS1": {
-      "color": "rgba(51,51,51,1)",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": "12px",
-      "fontWeight": "400",
-      "letterSpacing": "1.2px",
-    },
-    "IS10": {
-      "paddingBottom": "56.25%",
-    },
-    "IS11": {
-      "borderBottomColor": "#DBDBDB",
-      "borderBottomWidth": 1,
-      "borderTopColor": "#DBDBDB",
-      "borderTopWidth": 1,
-      "marginBottom": "30px",
-      "marginTop": "30px",
-      "paddingBottom": "10px",
-      "paddingTop": "10px",
-    },
-    "IS2": {
-      "justifyContent": "flex-start",
-    },
-    "IS3": {
-      "height": "100%",
-      "position": "absolute",
-      "width": "100%",
-    },
-    "IS4": {
-      "paddingBottom": "56.25%",
-    },
-    "IS5": {
-      "color": "#333333",
-      "fontFamily": "TimesDigitalW04",
-      "fontSize": 17,
-      "lineHeight": 26,
-      "marginBottom": "25px",
-      "marginTop": 0,
-    },
-    "IS6": {
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-    },
-    "IS7": {
-      "height": "100%",
-      "width": "100%",
-    },
-    "IS8": {
-      "height": "100%",
-      "width": "100%",
-    },
-    "IS9": {
-      "height": "100%",
-      "position": "absolute",
-      "width": "100%",
-    },
-    "S1": {
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S10": {
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "5px",
-      "padding-top": "5px",
-    },
-    "S11": {
-      "line-height": "15px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S12": {
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "5px",
-      "padding-top": "5px",
-    },
-    "S13": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "20px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "9px",
-    },
-    "S14": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S15": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S16": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S17": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-top": "0px",
-    },
-    "S18": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S19": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S2": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "5px",
-      "padding-top": "4px",
-    },
-    "S20": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S21": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S22": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S23": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S24": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S25": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-top": "0px",
-    },
-    "S26": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S27": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S28": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S29": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S3": {
-      "line-height": "32px",
-      "margin-bottom": "7px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S30": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S31": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S4": {
-      "line-height": "26px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "9px",
-      "padding-top": "0px",
-    },
-    "S5": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S6": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "11px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S7": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S8": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-    "S9": {
-      "line-height": "15px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-  }
+  "IS1": {
+    "marginBottom": 0,
+  },
+  "IS10": {
+    "height": "100%",
+    "width": "100%",
+  },
+  "IS11": {
+    "height": "100%",
+    "position": "absolute",
+    "width": "100%",
+  },
+  "IS12": {
+    "paddingBottom": "56.25%",
+  },
+  "IS13": {
+    "margin": 0,
+  },
+  "IS14": {
+    "borderBottomColor": "#DBDBDB",
+    "borderBottomWidth": 1,
+    "borderTopColor": "#DBDBDB",
+    "borderTopWidth": 1,
+    "marginBottom": "30px",
+    "marginTop": "30px",
+    "paddingBottom": "10px",
+    "paddingTop": "10px",
+  },
+  "IS15": {
+    "borderTopColor": "#DBDBDB",
+    "borderTopWidth": 1,
+  },
+  "IS2": {
+    "color": "rgba(51,51,51,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.2px",
+  },
+  "IS3": {
+    "justifyContent": "flex-start",
+  },
+  "IS4": {
+    "height": "100%",
+    "position": "absolute",
+    "width": "100%",
+  },
+  "IS5": {
+    "paddingBottom": "56.25%",
+  },
+  "IS6": {
+    "margin": 0,
+  },
+  "IS7": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 17,
+    "lineHeight": 26,
+    "marginBottom": "25px",
+    "marginTop": 0,
+  },
+  "IS8": {
+    "paddingLeft": "10px",
+    "paddingRight": "10px",
+  },
+  "IS9": {
+    "height": "100%",
+    "width": "100%",
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S10": {
+    "line-height": "15px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S11": {
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "5px",
+    "padding-top": "5px",
+  },
+  "S12": {
+    "line-height": "15px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S13": {
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "5px",
+    "padding-top": "5px",
+  },
+  "S14": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "9px",
+  },
+  "S15": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S16": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S17": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S18": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-top": "0px",
+  },
+  "S19": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S20": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S21": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S22": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S23": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S24": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S25": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S26": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-top": "0px",
+  },
+  "S27": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S28": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S29": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "5px",
+    "padding-top": "4px",
+  },
+  "S30": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S31": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S32": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S33": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "line-height": "32px",
+    "margin-bottom": "7px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "line-height": "26px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "9px",
+    "padding-top": "0px",
+  },
+  "S6": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S7": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "11px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S8": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S9": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-preferred-size": "auto !important",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-flex-basis": "auto !important",
+    "align-items": "stretch",
+    "flex-basis": "auto !important",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+}
 </style>
 
-<div
-    className="c0 S31"
+<article>
+  <div
+    className="c0 S1"
   >
-    <div
-      className="c1 S8"
-    >
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S32"
+  >
+    <header>
       <div
-        className="S7"
+        className="c2 S9"
       >
         <div
-          className="c2 S2"
+          className="S8"
         >
           <div
-            className="IS1 S1"
+            className="c3 S3"
           >
-            SOME LABEL
+            <div
+              className="IS2 S2"
+            >
+              SOME LABEL
+            </div>
           </div>
-        </div>
-        <div
-          className="c3 S3"
-        >
-          Some Headline
-        </div>
-        <div
-          className="S4"
-        >
-          Some Standfirst
-        </div>
-        <div
-          className="S6"
-        >
-          <div
+          <h1
+            className="c4 S4"
+          >
+            Some Headline
+          </h1>
+          <h2
             className="S5"
           >
-            <NewArticleFlag />
+            Some Standfirst
+          </h2>
+          <div
+            className="S7"
+          >
+            <div
+              className="S6"
+            >
+              <NewArticleFlag />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c4 S15"
-    >
       <div
-        className="c5 S13"
+        className="c5 S16"
       >
         <div
-          className="c6 S10"
-        >
-          <span
-            className="S9"
-          >
-            <ArticleBylineWithLinks />
-          </span>
-        </div>
-        <div
-          className="c6 S12"
-        >
-          <span
-            className="S11"
-          >
-            <DatePublication />
-          </span>
-        </div>
-      </div>
-      <div
-        className="c7 S14"
-      >
-        <ArticleTopics
-          className="IS2"
-        />
-      </div>
-    </div>
-    <div
-      className="c8 S20"
-    >
-      <div
-        className="c9 S19"
-      >
-        <div
-          className="IS4 S17"
+          className="c6 S14"
         >
           <div
-            className="IS3 S16"
+            className="c7 S11"
           >
-            <Image />
+            <span
+              className="S10"
+            >
+              <ArticleBylineWithLinks />
+            </span>
+          </div>
+          <div
+            className="c7 S13"
+          >
+            <span
+              className="S12"
+            >
+              <DatePublication />
+            </span>
           </div>
         </div>
         <div
-          className="c10 S18"
+          className="c8 S15"
         >
-          <Caption />
+          <nav>
+            <ArticleTopics
+              className="IS3"
+            />
+          </nav>
         </div>
       </div>
-    </div>
+      <div
+        className="c9 S21"
+      >
+        <div
+          className="c10 S20"
+        >
+          <figure
+            className="IS6"
+          >
+            <div
+              className="IS5 S18"
+            >
+              <div
+                className="IS4 S17"
+              >
+                <Image />
+              </div>
+            </div>
+            <div
+              className="c11 S19"
+            >
+              <figcaption>
+                <Caption />
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </header>
     <div
-      className="c11 S30"
+      className="c12 S31"
     >
       <div
-        className="c12 S21"
+        className="c13 S22"
       >
         <ArticleImage />
       </div>
@@ -899,114 +947,82 @@ Array [
         Some Link
       </Link>
       <div
-        className="c13 IS6"
+        className="c14 IS8"
       >
         <p
-          className="c14 IS5"
+          className="c15 IS7"
         >
           Some content
         </p>
       </div>
       <div
-        className="c15 S23"
+        className="c16 S24"
       >
         <div
-          className="c16 S22"
+          className="c17 S23"
         >
           <PullQuote />
         </div>
       </div>
       <div
-        className="c12 S27"
+        className="c13 S28"
       >
-        <div
-          className="IS10 S25"
+        <figure
+          className="IS13"
         >
           <div
-            className="IS9 S24"
+            className="IS12 S26"
           >
             <div
-              className="IS8"
+              className="IS11 S25"
             >
-              <video
-                className="video-js IS7"
-              />
+              <div
+                className="IS10"
+              >
+                <video
+                  className="video-js IS9"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c17 S26"
-        >
-          <Caption />
-        </div>
+          <figcaption>
+            <div
+              className="c18 S27"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
       </div>
       <Ad
-        className="IS11"
+        className="IS14"
       />
-      <div
-        className="c18 S28"
-      >
-        <ArticleImage />
-      </div>
       <div
         className="c19 S29"
       >
         <ArticleImage />
       </div>
+      <div
+        className="c20 S30"
+      >
+        <ArticleImage />
+      </div>
     </div>
-  </div>,
-  .c0 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<style>
-{
-    "IS1": {
-      "borderTopColor": "#DBDBDB",
-      "borderTopWidth": 1,
-    },
-    "S1": {
-      "-ms-flex-align": "stretch",
-      "-ms-flex-preferred-size": "auto !important",
-      "-webkit-align-items": "stretch",
-      "-webkit-box-align": "stretch",
-      "-webkit-flex-basis": "auto !important",
-      "align-items": "stretch",
-      "flex-basis": "auto !important",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "padding-bottom": "0px",
-      "padding-top": "0px",
-    },
-  }
-</style>
-
-<div
-    className="c0 S1"
+  </div>
+  <div
+    className="c21 S33"
   >
-    <ArticleTopics
-      className="IS1"
-    />
-  </div>,
-  <RelatedArticles />,
-  <Ad />,
-  <Ad />,
-  <Ad />,
-]
+    <nav>
+      <ArticleTopics
+        className="IS15"
+      />
+    </nav>
+  </div>
+  <aside>
+    <RelatedArticles />
+  </aside>
+  <Ad />
+  <Ad />
+  <Ad />
+</article>
 `;

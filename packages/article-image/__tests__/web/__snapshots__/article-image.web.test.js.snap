@@ -8,16 +8,18 @@ exports[`3. does not render an inline image with no ratio and no caption or cred
 
 exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 <div>
-  <div>
+  <figcaption>
     <div>
       <div>
-        Some caption
-      </div>
-      <div>
-        SOME CREDIT
+        <div>
+          Some caption
+        </div>
+        <div>
+          SOME CREDIT
+        </div>
       </div>
     </div>
-  </div>
+  </figcaption>
 </div>
 `;
 

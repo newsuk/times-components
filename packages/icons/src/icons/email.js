@@ -7,8 +7,15 @@ import propTypes from "./prop-types";
 const viewBox = "0 0 22 16";
 
 const ratio = 22 / 16;
-const IconEmail = ({ fillColour, height, strokeColour, title, width }) => (
+const IconEmail = ({
+  fillColour,
+  height,
+  strokeColour,
+  title = "Email Icon",
+  width
+}) => (
   <Svg
+    role="img"
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
   >

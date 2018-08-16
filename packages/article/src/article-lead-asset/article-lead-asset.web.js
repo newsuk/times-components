@@ -41,12 +41,16 @@ const LeadAssetComponent = ({
 
   return (
     <LeadAsset>
-      <AspectRatioContainer aspectRatio={aspectRatio}>
-        {leadAssetView}
-      </AspectRatioContainer>
-      <LeadAssetCaptionContainer>
-        <Caption credits={leadAsset.credits} text={leadAsset.caption} />
-      </LeadAssetCaptionContainer>
+      <figure style={{ margin: 0 }}>
+        <AspectRatioContainer aspectRatio={aspectRatio}>
+          {leadAssetView}
+        </AspectRatioContainer>
+        <LeadAssetCaptionContainer>
+          <figcaption>
+            <Caption credits={leadAsset.credits} text={leadAsset.caption} />
+          </figcaption>
+        </LeadAssetCaptionContainer>
+      </figure>
     </LeadAsset>
   );
 };

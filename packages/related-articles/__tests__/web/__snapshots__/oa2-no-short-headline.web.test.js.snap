@@ -61,7 +61,14 @@ exports[`1. no short headline 1`] = `
                   </div>
                 </div>
                 <div>
-                  March 13 2015, 06:54pm
+                  <time
+                    dateTime="2015-03-13T18:54:58.000Z"
+                  >
+                    March 13 2015, 06:54pm
+                  </time>
+                  <span>
+                    
+                  </span>
                 </div>
               </div>
             </Card>

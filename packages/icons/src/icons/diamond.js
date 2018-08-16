@@ -4,8 +4,15 @@ import Svg, { G, Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
-const IconDiamond = ({ fillColour, height, strokeColour, title, width }) => (
+const IconDiamond = ({
+  fillColour,
+  height,
+  strokeColour,
+  title = "Diamond Icon",
+  width
+}) => (
   <Svg
+    role="img"
     viewBox="0 0 20 20"
     {...clean({ title, height, width: width || height })}
   >
