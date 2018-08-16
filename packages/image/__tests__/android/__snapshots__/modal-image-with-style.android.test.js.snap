@@ -23,12 +23,14 @@ exports[`1. default modal 1`] = `
         }
       >
         <View>
-          <Svg>
-            <G>
-              <Path />
-              <Path />
-            </G>
-          </Svg>
+          <Image
+            style={
+              Object {
+                "height": 24,
+                "width": 24,
+              }
+            }
+          />
         </View>
       </View>
       <View

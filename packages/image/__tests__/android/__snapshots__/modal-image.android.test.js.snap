@@ -12,23 +12,10 @@ exports[`1. modal image 1`] = `
         <View
           pointerEvents="box-only"
         >
-          <Svg
-            height={24}
-            viewBox="0 0 24 24"
-            width={24}
-          >
-            <G
-              fill="#FFFFFF"
-            >
-              <Path
-                d="b930778b5d8aea86ea540d7477cdc304"
-              />
-              <Path
-                d="f26c9aa2fd65f549f7f5798bc90c1b94"
-                fill="none"
-              />
-            </G>
-          </Svg>
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
         </View>
       </View>
       <View>

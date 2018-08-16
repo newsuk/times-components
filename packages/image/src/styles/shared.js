@@ -5,6 +5,10 @@ const styles = {
     marginLeft: 15,
     marginTop: 20
   },
+  closeButton: {
+    height: 24,
+    width: 24
+  },
   container: {
     flex: 1
   },
