@@ -89,7 +89,7 @@ exports[`The React Native Web serializer should effect render props 1`] = `
   <div
     prop={
       <Text
-        style={80}
+        style={84}
       />
     }
   />
@@ -113,4 +113,44 @@ exports[`The React Native Web serializer should remove rnw-classnames and hoist 
   dir="auto"
   testFunc={[Function]}
 />
+`;
+
+exports[`The React Native Web serializer should squash identical styles 1`] = `
+<style>
+{
+  "S1": {
+    "font-size": "10px",
+  },
+  "S2": {
+    "-ms-flex": "1",
+    "-webkit-flex": "1",
+    "flex": "1",
+  },
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S1"
+    dir="auto"
+  >
+    child 1
+  </div>
+  <div
+    className="S1"
+    dir="auto"
+  >
+    child 2
+  </div>
+  <div>
+    <div
+      className="S1"
+      dir="auto"
+    >
+      child 3
+    </div>
+  </div>
+</div>
 `;

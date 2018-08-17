@@ -79,6 +79,39 @@ describe("The React Native Web serializer should", () => {
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
+  it("squash identical styles", () => {
+    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
+
+    const styles = StyleSheet.create({
+      parent: {
+        flex: 1,
+        backgroundColor: "red"
+      },
+      child1: {
+        fontSize: 10
+      },
+      child2: {
+        fontSize: 10
+      },
+      child3: {
+        fontSize: 10
+      }
+    });
+
+    const component = (
+      <View style={styles.parent}>
+        <Text style={styles.child1}>child 1</Text>
+        <Text style={styles.child2}>child 2</Text>
+        <View>
+          <Text style={styles.child3}>child 3</Text>
+        </View>
+      </View>
+    );
+    const tree = renderer.create(component);
+
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+
   it("effect render props", () => {
     addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 

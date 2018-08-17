@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "enzyme-to-json": "3.3.4",
+    "lodash.isequal": "4.4.0",
     "lodash.omitby": "4.6.0"
   },
   "peerDependencies": {

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
+import isEqual from "lodash.isequal";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
@@ -73,6 +74,20 @@ const filterNames = (className, toInclude) => {
   });
 };
 
+const findStyle = (rnwStyles = {}, style) => {
+  const kv = Object.entries(rnwStyles);
+
+  for (let i = 0; i < kv.length; i++) {
+    const [key, value] = kv[i];
+
+    if (isEqual(value, style)) {
+      return key;
+    }
+  }
+
+  return null;
+};
+
 const updateMap = (cssStyles, styleMap, classNames) => {
   if (classNames.length === 0) {
     return {
@@ -91,6 +106,15 @@ const updateMap = (cssStyles, styleMap, classNames) => {
 
     return m;
   }, {});
+
+  const existingStyle = findStyle(styleMap.rnw, mergedStyle);
+
+  if (existingStyle) {
+    return {
+      key: existingStyle,
+      styleMap
+    };
+  }
 
   const key = `S${Object.keys(styleMap.rnw || {}).length + 1}`;
 
@@ -115,6 +139,7 @@ export const rnwTransform = (AppRegistry, includeStyleProps) => (
   const { className, ...other } = props;
 
   const cssStyles = classNamesToStyles(AppRegistry, className);
+
   const filteredNames = filterNames(className, new Set(includeStyleProps));
   const updatedMap = updateMap(cssStyles, accum, filteredNames);
 
