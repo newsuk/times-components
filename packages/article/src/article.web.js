@@ -115,7 +115,6 @@ const ArticlePage = ({
   analyticsStream,
   article,
   error,
-  refetch,
   isLoading,
   onAuthorPress,
   onRelatedArticlePress,
