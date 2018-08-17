@@ -154,6 +154,7 @@ export default () => {
         onLinkPress={() => {}}
         onRelatedArticlePress={() => {}}
         onTopicPress={() => {}}
+        onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
       />
     );

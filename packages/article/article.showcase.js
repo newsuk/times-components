@@ -72,6 +72,9 @@ const renderArticle = (
         "onRelatedArticlePress"
       )}
       onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+      onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+        "onTwitterLinkPress"
+      )}
       onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
     />
   </Context.Provider>
@@ -190,6 +193,9 @@ export default {
                     )("onRelatedArticlePress")}
                     onTopicPress={preventDefaultedAction(decorateAction)(
                       "onTopicPress"
+                    )}
+                    onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                      "onTwitterLinkPress"
                     )}
                     onVideoPress={preventDefaultedAction(decorateAction)(
                       "onVideoPress"

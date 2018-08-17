@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/newsuk/times-components/compare/@times-components/article@4.3.1...@times-components/article@4.4.0) (2018-08-16)
+
+
+### Bug Fixes
+
+* article accessibility ([#1220](https://github.com/newsuk/times-components/issues/1220)) ([8701107](https://github.com/newsuk/times-components/commit/8701107))
+
+
+### Features
+
+* pull quote twitter wireup ([#1218](https://github.com/newsuk/times-components/issues/1218)) ([f018103](https://github.com/newsuk/times-components/commit/f018103))
+
+
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/newsuk/times-components/compare/@times-components/article@4.3.0...@times-components/article@4.3.1) (2018-08-16)
 

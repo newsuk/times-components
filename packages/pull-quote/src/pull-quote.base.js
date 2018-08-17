@@ -1,39 +1,15 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { TextLink } from "@times-components/link";
-import { IconTwitter } from "@times-components/icons";
 import PullQuoteContent from "./pull-quote-content";
+import PullQuoteTwitterLink from "./pull-quote-twitter-link";
 import { propTypes, defaultProps } from "./pull-quote-prop-types";
-import makeTwitterUrl from "./utils";
 import styles from "./styles";
-
-const ShowTwitter = twitter => {
-  if (!twitter) {
-    return null;
-  }
-
-  const url = makeTwitterUrl(twitter);
-
-  return (
-    <View style={styles.twitterContainer}>
-      <IconTwitter height={10} width={12} />
-      <TextLink
-        key={url}
-        onPress={() => null}
-        style={styles.link}
-        target="_blank"
-        url={url}
-      >
-        {twitter}
-      </TextLink>
-    </View>
-  );
-};
 
 const PullQuotes = ({
   captionColour,
   children,
   content,
+  onTwitterLinkPress,
   quoteColour,
   twitter
 }) => (
@@ -42,7 +18,10 @@ const PullQuotes = ({
     <PullQuoteContent>{content}</PullQuoteContent>
     <View style={styles.captionContainer}>
       <Text style={[styles.caption, { color: captionColour }]}>{children}</Text>
-      {ShowTwitter(twitter)}
+      <PullQuoteTwitterLink
+        onTwitterLinkPress={onTwitterLinkPress}
+        twitter={twitter}
+      />
     </View>
   </View>
 );

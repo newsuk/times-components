@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.1.0...@times-components/pull-quote@3.2.0) (2018-08-16)
+
+
+### Features
+
+* pull quote twitter wireup ([#1218](https://github.com/newsuk/times-components/issues/1218)) ([f018103](https://github.com/newsuk/times-components/commit/f018103))
+
+
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.0.9...@times-components/pull-quote@3.1.0) (2018-08-16)
 

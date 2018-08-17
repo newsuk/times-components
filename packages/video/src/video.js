@@ -17,7 +17,7 @@ const Video = ({
   width
 }) => (
   <Touchable
-    accessibilityLabel="splash-component"
+    accessibilityLabel="Video Splash"
     onPress={e => {
       onVideoPress(e, {
         accountId,

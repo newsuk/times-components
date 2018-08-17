@@ -7,7 +7,10 @@ exports[`1. group of topics 1`] = `
       href="/topic/football"
     >
       <div>
-        <div>
+        <div
+          role="button"
+          tabIndex="0"
+        >
           Football
         </div>
       </div>
@@ -18,7 +21,10 @@ exports[`1. group of topics 1`] = `
       href="/topic/manchester-united"
     >
       <div>
-        <div>
+        <div
+          role="button"
+          tabIndex="0"
+        >
           Manchester United FC
         </div>
       </div>
@@ -29,7 +35,10 @@ exports[`1. group of topics 1`] = `
       href="/topic/chelsea"
     >
       <div>
-        <div>
+        <div
+          role="button"
+          tabIndex="0"
+        >
           Chelsea FC
         </div>
       </div>
@@ -40,7 +49,10 @@ exports[`1. group of topics 1`] = `
       href="/topic/arsenal"
     >
       <div>
-        <div>
+        <div
+          role="button"
+          tabIndex="0"
+        >
           Arsenal
         </div>
       </div>
@@ -51,7 +63,10 @@ exports[`1. group of topics 1`] = `
       href="/topic/rugby-union"
     >
       <div>
-        <div>
+        <div
+          role="button"
+          tabIndex="0"
+        >
           Rugby Union
         </div>
       </div>
