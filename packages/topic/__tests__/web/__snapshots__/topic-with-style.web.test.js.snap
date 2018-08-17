@@ -84,22 +84,6 @@ exports[`1. an article list header 1`] = `
     "text-align": "center",
   },
   "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-height": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
     "-ms-flex-align": "center",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "center",
@@ -122,10 +106,10 @@ exports[`1. an article list header 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="S3"
 >
   <div
-    className="c0 S3"
+    className="c0 S1"
   >
     <h1
       className="c1"

@@ -80,37 +80,20 @@ exports[`card with reversed layout 1`] = `
     "min-width": "0px",
   },
   "S4": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "display": "flex",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "min-width": "0px",
   },
   "S5": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
-  "S6": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -127,7 +110,7 @@ exports[`card with reversed layout 1`] = `
     "margin-bottom": "0px",
     "min-width": "100%",
   },
-  "S7": {
+  "S6": {
     "-ms-flex-align": "start",
     "-ms-flex-direction": "row",
     "-ms-flex-pack": "end",
@@ -150,29 +133,15 @@ exports[`card with reversed layout 1`] = `
     "margin-bottom": "0px",
     "min-width": "0px",
   },
-  "S8": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
 }
 </style>
 
 <indexweb__FadeIn>
   <div
-    className="c0 S8"
+    className="c0 S4"
   >
     <div
-      className="S7"
+      className="S6"
     >
       <div
         className="S2"
@@ -184,7 +153,7 @@ exports[`card with reversed layout 1`] = `
         </div>
       </div>
       <div
-        className="S6"
+        className="S5"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}

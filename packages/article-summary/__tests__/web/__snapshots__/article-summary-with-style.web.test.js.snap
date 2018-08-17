@@ -47,14 +47,11 @@ exports[`1. article summary component with a single paragraph 1`] = `
   "S3": {
     "font-size": "14px",
   },
-  "S4": {
-    "margin-bottom": "0px",
-  },
 }
 </style>
 
 <div
-  className="S4"
+  className="S1"
 >
   <div
     className="S1"

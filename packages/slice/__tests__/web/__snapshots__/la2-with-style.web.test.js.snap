@@ -173,48 +173,20 @@ exports[`1. a single child element 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 S5"
+  className="c0 c1 S1"
 >
   <div
-    className="c2 S4"
+    className="c2 S1"
   >
     <div
-      className="c3 c4 c5 S3"
+      className="c3 c4 c5 S1"
     >
       <div
-        className="c6 c7 c8 S2"
+        className="c6 c7 c8 S1"
       >
         <div
           className="S1"
@@ -464,76 +436,20 @@ exports[`2. two child elements 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 S9"
+  className="c0 c1 S1"
 >
   <div
-    className="c2 S8"
+    className="c2 S1"
   >
     <div
-      className="c3 c4 c5 S7"
+      className="c3 c4 c5 S1"
     >
       <div
-        className="c6 c7 c8 S2"
+        className="c6 c7 c8 S1"
       >
         <div
           className="S1"
@@ -542,16 +458,16 @@ exports[`2. two child elements 1`] = `
         </div>
       </div>
       <div
-        className="c9 S3"
+        className="c9 S1"
       />
       <div
-        className="c10 S6"
+        className="c10 S1"
       >
         <div
-          className="c11 S5"
+          className="c11 S1"
         >
           <div
-            className="S4"
+            className="S1"
           >
             support-1
           </div>
@@ -843,90 +759,20 @@ exports[`3. three child elements 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S10": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S11": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 S11"
+  className="c0 c1 S1"
 >
   <div
-    className="c2 S10"
+    className="c2 S1"
   >
     <div
-      className="c3 c4 c5 S9"
+      className="c3 c4 c5 S1"
     >
       <div
-        className="c6 c7 c8 S2"
+        className="c6 c7 c8 S1"
       >
         <div
           className="S1"
@@ -935,25 +781,25 @@ exports[`3. three child elements 1`] = `
         </div>
       </div>
       <div
-        className="c9 S3"
+        className="c9 S1"
       />
       <div
-        className="c10 S8"
+        className="c10 S1"
       >
         <div
-          className="c11 S5"
+          className="c11 S1"
         >
           <div
-            className="S4"
+            className="S1"
           >
             support-1
           </div>
         </div>
         <div
-          className="c12 S7"
+          className="c12 S1"
         >
           <div
-            className="S6"
+            className="S1"
           >
             support-2
           </div>

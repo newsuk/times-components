@@ -239,107 +239,12 @@ exports[`default styles 1`] = `
   "S10": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "color": "inherit",
-    "display": "inline",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S11": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(105,105,105,1)",
-    "display": "inline",
-    "font-size": "14px",
-    "margin-top": "0px",
-  },
-  "S12": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S13": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
     "color": "rgba(105,105,105,1)",
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
     "line-height": "15px",
     "margin-bottom": "5px",
-    "margin-top": "0px",
-  },
-  "S14": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S15": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S16": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S17": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S18": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S19": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
     "margin-top": "0px",
   },
   "S2": {
@@ -430,7 +335,7 @@ exports[`default styles 1`] = `
 </style>
 
 <div
-  className="S19"
+  className="S4"
 >
   <div
     className="S2"
@@ -442,21 +347,21 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 c2 c3 S18"
+    className="c0 c1 c2 c3 S4"
   >
     <div
-      className="c4 S17"
+      className="c4 S4"
     >
       <div
-        className="c5 S16"
+        className="c5 S4"
       >
         <div
-          className="c6 c7 c8 S15"
+          className="c6 c7 c8 S4"
         >
           <Link>
             <Card>
               <div
-                className="S14"
+                className="S4"
               >
                 <div
                   className="S4"
@@ -482,7 +387,7 @@ exports[`default styles 1`] = `
                   Test Short Headline
                 </h3>
                 <div
-                  className="S12"
+                  className="S4"
                 >
                   <div
                     className="summaryHidden opinionSummary125Class S9 IS4"
@@ -496,10 +401,10 @@ exports[`default styles 1`] = `
                     </span>
                   </div>
                   <div
-                    className="summaryHidden opinionSummary160Class S11 IS5"
+                    className="summaryHidden opinionSummary160Class S9 IS5"
                   >
                     <span
-                      className="S10"
+                      className="S8"
                     >
                       
                       Summary 160
@@ -508,7 +413,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S13"
+                  className="S10"
                 >
                   <time>
                     March 13 2015, 06:54pm
