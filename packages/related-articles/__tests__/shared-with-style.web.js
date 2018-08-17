@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -38,7 +39,7 @@ addSerializers(
     stylePrinter,
     minimalWebTransform,
     minimaliseTransform((value, key) => key !== "style" && key !== "className"),
-    rnwTransform(styles),
+    rnwTransform(AppRegistry, styles),
     hoistStyleTransform
   )
 );

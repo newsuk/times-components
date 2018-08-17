@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -43,7 +44,7 @@ export default () => {
       minimalWebTransform,
       flattenStyleTransform,
       hoistStyleTransform,
-      rnwTransform(styles)
+      rnwTransform(AppRegistry, styles)
     )
   );
 

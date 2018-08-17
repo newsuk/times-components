@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -42,7 +43,7 @@ export default () => {
       flattenStyleTransform,
       hoistStyleTransform,
       minimalWebTransform,
-      rnwTransform(styles)
+      rnwTransform(AppRegistry, styles)
     )
   );
 

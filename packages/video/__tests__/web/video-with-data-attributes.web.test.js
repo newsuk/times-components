@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -27,7 +28,7 @@ addSerializers(
     replacePropTransform(
       (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
     ),
-    rnwTransform()
+    rnwTransform(AppRegistry)
   )
 );
 

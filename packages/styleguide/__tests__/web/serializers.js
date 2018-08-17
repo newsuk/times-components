@@ -1,3 +1,4 @@
+const { AppRegistry } = require("react-native-web");
 const {
   addSerializers,
   compose,
@@ -6,7 +7,10 @@ const {
   rnwTransform
 } = require("@times-components/jest-serializer");
 
-addSerializers(expect, compose(print, minimalWebTransform, rnwTransform()));
+addSerializers(
+  expect,
+  compose(print, minimalWebTransform, rnwTransform(AppRegistry))
+);
 
 // eslint-disable-next-line global-require
 require("jest-styled-components");

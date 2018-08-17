@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -52,7 +53,7 @@ addSerializers(
     replaceTransform({
       Watermark: propsNoChildren
     }),
-    rnwTransform(styles)
+    rnwTransform(AppRegistry, styles)
   )
 );
 
