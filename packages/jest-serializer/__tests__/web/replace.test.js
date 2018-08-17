@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16/build/index";
 import { View, Text } from "react-native";
@@ -77,7 +78,7 @@ describe("The replace serializer should", () => {
         replaceTransform({
           ChildComponent: propsNoChildren
         }),
-        rnwTransform()
+        rnwTransform(AppRegistry)
       )
     );
 
@@ -104,7 +105,7 @@ describe("The replace serializer should", () => {
         replaceTransform({
           ChildComponent: justChildren
         }),
-        rnwTransform()
+        rnwTransform(AppRegistry)
       )
     );
 
@@ -133,7 +134,7 @@ describe("The replace serializer should", () => {
           View: justChildren,
           WrapperComponent: justChildren
         }),
-        rnwTransform()
+        rnwTransform(AppRegistry)
       )
     );
 
@@ -162,7 +163,7 @@ describe("The replace serializer should", () => {
         replaceTransform({
           ...meltNative
         }),
-        rnwTransform()
+        rnwTransform(AppRegistry)
       )
     );
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
 import traverse from "./traverse";
@@ -32,7 +31,7 @@ const mergeStylesToClassNames = (classMap, node) => {
   };
 };
 
-const getStyleSheet = () => {
+const getStyleSheet = AppRegistry => {
   AppRegistry.registerComponent("App", () => () => {});
   const { getStyleElement } = AppRegistry.getApplication("App");
   const ssString = ReactDOMServer.renderToStaticMarkup(getStyleElement());
@@ -52,12 +51,12 @@ const getStyleSheet = () => {
   return ast.stylesheet.rules.reduce(mergeStylesToClassNames, {});
 };
 
-const classNamesToStyles = className => {
+const classNamesToStyles = (AppRegistry, className) => {
   if (!className) {
     return {};
   }
 
-  const ss = getStyleSheet();
+  const ss = getStyleSheet(AppRegistry);
 
   return className.split(" ").reduce((m, c) => ({ ...m, [c]: ss[c] }), {});
 };
@@ -107,7 +106,7 @@ const updateMap = (cssStyles, styleMap, classNames) => {
   };
 };
 
-export const rnwTransform = includeStyleProps => (
+export const rnwTransform = (AppRegistry, includeStyleProps) => (
   accum,
   node,
   props,
@@ -115,7 +114,7 @@ export const rnwTransform = includeStyleProps => (
 ) => {
   const { className, ...other } = props;
 
-  const cssStyles = classNamesToStyles(className);
+  const cssStyles = classNamesToStyles(AppRegistry, className);
   const filteredNames = filterNames(className, new Set(includeStyleProps));
   const updatedMap = updateMap(cssStyles, accum, filteredNames);
 
@@ -138,5 +137,5 @@ export const rnwTransform = includeStyleProps => (
   };
 };
 
-export default includeStyleProps =>
-  traverse(stylePrinter, rnwTransform(includeStyleProps));
+export default (AppRegistry, includeStyleProps) =>
+  traverse(stylePrinter, rnwTransform(AppRegistry, includeStyleProps));

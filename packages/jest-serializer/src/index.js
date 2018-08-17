@@ -43,8 +43,12 @@ const compose = (printer, ...transformers) =>
     )
   );
 
-const minimalRnw = includeStyleProps =>
-  compose(stylePrinter, minimalWebTransform, rnwTransform(includeStyleProps));
+const minimalRnw = (AppRegistry, includeStyleProps) =>
+  compose(
+    stylePrinter,
+    minimalWebTransform,
+    rnwTransform(AppRegistry, includeStyleProps)
+  );
 
 const addSerializers = (expect, ...serializers) => {
   serializers.forEach(serializer => expect.addSnapshotSerializer(serializer));

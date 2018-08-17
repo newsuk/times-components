@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { StyleSheet, Text } from "react-native";
 import renderer from "react-test-renderer";
 import {
@@ -13,7 +14,11 @@ describe("The serializers should", () => {
   it("minimalise and create styles", () => {
     addSerializers(
       expect,
-      compose(stylePrinter, minimalWebTransform, rnwTransform(["color"]))
+      compose(
+        stylePrinter,
+        minimalWebTransform,
+        rnwTransform(AppRegistry, ["color"])
+      )
     );
 
     const styles = StyleSheet.create({
