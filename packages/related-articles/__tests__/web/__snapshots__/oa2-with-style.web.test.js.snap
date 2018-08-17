@@ -66,7 +66,7 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -161,32 +161,29 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 a > div,
-  .c6 a > div > div {
+  .c7 a > div,
+  .c7 a > div > div {
     height: 100%;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
   .c6 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
     padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -457,7 +454,7 @@ exports[`default styles 1`] = `
         className="c4 S16"
       >
         <div
-          className="c5 c6 S15"
+          className="c5 c6 c7 S15"
         >
           <Link>
             <Card>

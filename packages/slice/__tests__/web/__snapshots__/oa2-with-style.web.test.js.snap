@@ -66,7 +66,7 @@ exports[`1. a single child element 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -161,32 +161,29 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 a > div,
-  .c6 a > div > div {
+  .c7 a > div,
+  .c7 a > div > div {
     height: 100%;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
   .c6 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
     padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -242,7 +239,7 @@ exports[`1. a single child element 1`] = `
       className="c4 S3"
     >
       <div
-        className="c5 c6 S2"
+        className="c5 c6 c7 S2"
       >
         <div
           className="S1"
@@ -321,7 +318,7 @@ exports[`2. two child elements 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -334,7 +331,7 @@ exports[`2. two child elements 1`] = `
   width: auto;
 }
 
-.c7 {
+.c8 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -346,7 +343,7 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c8 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -356,7 +353,7 @@ exports[`2. two child elements 1`] = `
   height: auto;
 }
 
-.c11 {
+.c14 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -461,25 +458,14 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 a > div,
-  .c6 a > div > div {
+  .c7 a > div,
+  .c7 a > div > div {
     height: 100%;
   }
 }
 
-@media (min-width:1024px) {
-  .c6 {
-    border-bottom: none;
-    margin-bottom: 0;
-    min-width: auto;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -492,8 +478,19 @@ exports[`2. two child elements 1`] = `
   }
 }
 
+@media (min-width:1024px) {
+  .c5 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -507,13 +504,13 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c8 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -524,13 +521,13 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     min-width: 400px;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c14 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -538,28 +535,21 @@ exports[`2. two child elements 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c13 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    max-width: 100%;
+  }
+}
+
 @media (min-width:1024px) {
   .c11 {
     padding-left: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c10 {
-    padding-left: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    max-width: 100%;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    padding-right: 10px;
   }
 }
 
@@ -641,7 +631,7 @@ exports[`2. two child elements 1`] = `
       className="c4 S7"
     >
       <div
-        className="c5 c6 S2"
+        className="c5 c6 c7 S2"
       >
         <div
           className="S1"
@@ -650,13 +640,13 @@ exports[`2. two child elements 1`] = `
         </div>
       </div>
       <div
-        className="c7 S3"
+        className="c8 S3"
       />
       <div
-        className="c8 S6"
+        className="c9 c10 S6"
       >
         <div
-          className="c9 c10 c11 S5"
+          className="c11 c12 c13 c14 S5"
         >
           <div
             className="S4"
@@ -736,7 +726,7 @@ exports[`3. three child elements 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -749,7 +739,7 @@ exports[`3. three child elements 1`] = `
   width: auto;
 }
 
-.c8 {
+.c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -761,7 +751,7 @@ exports[`3. three child elements 1`] = `
   min-width: auto;
 }
 
-.c10 {
+.c12 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -769,18 +759,6 @@ exports[`3. three child elements 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
-}
-
-.c13 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  min-height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c16 {
@@ -795,7 +773,19 @@ exports[`3. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c15 {
+.c20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c19 {
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -885,25 +875,14 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 a > div,
-  .c7 a > div > div {
+  .c8 a > div,
+  .c8 a > div > div {
     height: 100%;
   }
 }
 
-@media (min-width:1024px) {
-  .c7 {
-    border-bottom: none;
-    margin-bottom: 0;
-    min-width: auto;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -917,7 +896,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     border-bottom-color: #DBDBDB;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -929,8 +908,19 @@ exports[`3. three child elements 1`] = `
   }
 }
 
+@media (min-width:1024px) {
+  .c5 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -944,19 +934,25 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c12 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    min-width: 100%;
   }
 }
 
@@ -967,55 +963,43 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
-    min-width: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c13 {
-    padding-left: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
-    padding-left: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    max-width: 50%;
-  }
-}
-
-@media (min-width:768px) {
   .c16 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c16 {
-    padding-left: 10px;
   }
 }
 
 @media (min-width:768px) {
   .c15 {
+    padding-left: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
     border-left-color: #DBDBDB;
     border-left-style: solid;
     border-left-width: 1px;
@@ -1027,15 +1011,15 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:1024px) {
-  .c15 {
-    padding-right: 10px;
+@media (min-width:768px) {
+  .c18 {
+    max-width: 50%;
   }
 }
 
-@media (min-width:768px) {
-  .c14 {
-    max-width: 50%;
+@media (min-width:1024px) {
+  .c17 {
+    padding-left: 10px;
   }
 }
 
@@ -1131,7 +1115,7 @@ exports[`3. three child elements 1`] = `
       className="c4 S9"
     >
       <div
-        className="c5 c6 c7 S2"
+        className="c5 c6 c7 c8 S2"
       >
         <div
           className="S1"
@@ -1140,13 +1124,13 @@ exports[`3. three child elements 1`] = `
         </div>
       </div>
       <div
-        className="c8 S3"
+        className="c9 S3"
       />
       <div
-        className="c9 c10 S8"
+        className="c10 c11 c12 S8"
       >
         <div
-          className="c11 c12 c13 S5"
+          className="c13 c14 c15 c16 S5"
         >
           <div
             className="S4"
@@ -1155,7 +1139,7 @@ exports[`3. three child elements 1`] = `
           </div>
         </div>
         <div
-          className="c14 c15 c16 S7"
+          className="c17 c18 c19 c20 S7"
         >
           <div
             className="S6"

@@ -40,15 +40,6 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         height: 100%;
       }
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      border-bottom: none;
-      margin-bottom: 0;
-      min-width: auto;
-      padding-bottom: 0;
-      padding-left: ${spacing(2)};
-      padding-right: ${spacing(2)};
-    }
   `;
 
   if (hasSupports) {
@@ -84,6 +75,17 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      border-bottom: none;
+      margin-bottom: 0;
+      min-width: auto;
+      padding-bottom: 0;
+      padding-left: ${spacing(2)};
+      padding-right: ${spacing(2)};
+    }
+  `;
 
   return Base;
 };
@@ -122,10 +124,6 @@ export const getSupportsContainer = ({ supportCount }) => {
       flex-basis: 0 !important;
       flex-direction: row;
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      min-width: ${supportCount === 1 ? "400px" : "auto"};
-    }
   `;
 
   if (supportCount === 2) {
@@ -135,6 +133,12 @@ export const getSupportsContainer = ({ supportCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      min-width: ${supportCount === 1 ? "400px" : "auto"};
+    }
+  `;
 
   return Base;
 };
@@ -150,10 +154,6 @@ export const getSupportContainer = ({ index, supportCount }) => {
     @media (min-width: ${breakpoints.medium}px) {
       flex-basis: 0 !important;
       padding-right: 0;
-    }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      padding-left: ${spacing(2)};
     }
   `;
 
@@ -197,6 +197,12 @@ export const getSupportContainer = ({ index, supportCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      padding-left: ${spacing(2)};
+    }
+  `;
 
   return Base;
 };
