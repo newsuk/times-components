@@ -9,7 +9,14 @@ const ArticleTopic = ({ name, onPress, slug }) => (
   <View style={styles.spacer}>
     <Link onPress={e => onPress(e, { name, slug })} url={`/topic/${slug}`}>
       <View style={styles.container}>
-        <Text style={styles.text}>{name}</Text>
+        <Text
+          accessibilityComponentType="button"
+          accessibilityRole="button"
+          accessibilityTraits="button"
+          style={styles.text}
+        >
+          {name}
+        </Text>
       </View>
     </Link>
   </View>

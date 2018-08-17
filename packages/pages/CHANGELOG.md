@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.2.0...@times-components/pages@1.2.1) (2018-08-17)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.1.5...@times-components/pages@1.2.0) (2018-08-16)
+
+
+### Features
+
+* pull quote twitter wireup ([#1218](https://github.com/newsuk/times-components/issues/1218)) ([f018103](https://github.com/newsuk/times-components/commit/f018103))
+
+
+
+
+
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/newsuk/times-components/compare/@times-components/pages@1.1.4...@times-components/pages@1.1.5) (2018-08-16)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.1.3...@times-components/pages@1.1.4) (2018-08-16)
 

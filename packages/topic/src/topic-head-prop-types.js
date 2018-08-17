@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { treePropType } from "@times-components/markup";
+import { propTypes as treePropType } from "@times-components/markup-forest";
 
 export const propTypes = {
   name: PropTypes.string,

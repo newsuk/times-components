@@ -52,6 +52,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
           refetch={() => {}}
         />
@@ -145,6 +146,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -173,6 +175,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -197,6 +200,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -228,6 +232,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -265,6 +270,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -302,6 +308,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -324,6 +331,7 @@ export const snapshotTests = renderComponent => [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -374,6 +382,7 @@ export const snapshotTests = renderComponent => [
                 onLinkPress={() => {}}
                 onRelatedArticlePress={() => {}}
                 onTopicPress={() => {}}
+                onTwitterLinkPress={() => {}}
                 onVideoPress={() => {}}
               />
             </Context.Provider>
@@ -408,6 +417,7 @@ const negativeTests = [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -431,6 +441,7 @@ const negativeTests = [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -454,6 +465,7 @@ const negativeTests = [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );
@@ -480,6 +492,7 @@ const negativeTests = [
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
         />
       );

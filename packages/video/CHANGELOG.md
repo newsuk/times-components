@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.15"></a>
+## [3.1.15](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.14...@times-components/video@3.1.15) (2018-08-16)
+
+
+### Bug Fixes
+
+* article accessibility ([#1220](https://github.com/newsuk/times-components/issues/1220)) ([8701107](https://github.com/newsuk/times-components/commit/8701107))
+
+
+
+
+
 <a name="3.1.14"></a>
 ## [3.1.14](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.13...@times-components/video@3.1.14) (2018-08-15)
 

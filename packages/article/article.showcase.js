@@ -72,6 +72,9 @@ const renderArticle = (
         "onRelatedArticlePress"
       )}
       onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+      onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+        "onTwitterLinkPress"
+      )}
       onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
       refetch={preventDefaultedAction(decorateAction)("refetch")}
     />
@@ -191,6 +194,9 @@ export default {
                     )("onRelatedArticlePress")}
                     onTopicPress={preventDefaultedAction(decorateAction)(
                       "onTopicPress"
+                    )}
+                    onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                      "onTwitterLinkPress"
                     )}
                     onVideoPress={preventDefaultedAction(decorateAction)(
                       "onVideoPress"

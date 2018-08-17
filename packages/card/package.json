@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "2.1.10",
-    "@times-components/image": "3.2.8",
+    "@times-components/image": "3.2.9",
     "@times-components/responsive-styles": "3.0.5",
     "@times-components/styleguide": "3.2.1",
     "prop-types": "15.6.2"

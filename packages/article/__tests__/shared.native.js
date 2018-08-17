@@ -80,6 +80,7 @@ export default () => {
                 onLinkPress={() => {}}
                 onRelatedArticlePress={() => {}}
                 onTopicPress={() => {}}
+                onTwitterLinkPress={() => {}}
                 onVideoPress={() => {}}
               />
             )}
@@ -131,6 +132,7 @@ export default () => {
             onLinkPress={onLinkPress}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
+            onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
         );
