@@ -63,10 +63,9 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
   } else {
     Base = styled(Base)`
       @media (min-width: ${breakpoints.medium}px) {
-        flex-basis: 0 !important;
-        flex-grow: ${supportCount === 1 ? "3" : "1"};
-        padding-left: ${spacing(2)};
-        padding-right: ${spacing(2)};
+        flex-grow: 0;
+        padding-left: 0;
+        padding-right: 0;
       }
     `;
   }
@@ -176,10 +175,6 @@ export const getSupportContainer = ({ index, supportCount }) => {
         padding-right: ${supportCount === 2 ? 0 : spacing(2)};
         padding-top: 0;
       }
-
-      @media (min-width: ${breakpoints.wide}px) {
-        padding-right: ${spacing(2)};
-      }
     `;
   } else {
     Base = styled(Base)`
@@ -199,11 +194,6 @@ export const getSupportContainer = ({ index, supportCount }) => {
     Base = styled(Base)`
       @media (min-width: ${breakpoints.medium}px) {
         max-width: 100%;
-        padding-right: ${spacing(2)};
-      }
-
-      @media (min-width: ${breakpoints.wide}px) {
-        padding-right: ${spacing(2)};
       }
     `;
   }
