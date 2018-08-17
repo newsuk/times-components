@@ -286,176 +286,6 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S10": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S11": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S12": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S13": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "background-color": "rgba(219,219,219,1)",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "height": "1px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S14": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S15": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S16": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S17": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S18": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S19": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "font-size": "14px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
   "S2": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "row",
@@ -481,171 +311,6 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S20": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S21": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S22": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S23": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S24": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S25": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "background-color": "rgba(219,219,219,1)",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "height": "1px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S26": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S27": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S28": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S29": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
   "S3": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -667,164 +332,6 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S30": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S31": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "font-size": "14px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S32": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S33": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S34": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S35": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S36": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S37": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "background-color": "rgba(219,219,219,1)",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "height": "1px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S38": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S39": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
   "S4": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
@@ -835,28 +342,7 @@ exports[`1. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S40": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S41": {
+  "S5": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "margin-left": "0px",
@@ -865,7 +351,7 @@ exports[`1. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S42": {
+  "S6": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "color": "inherit",
@@ -878,7 +364,7 @@ exports[`1. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S43": {
+  "S7": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "font-size": "14px",
@@ -888,88 +374,7 @@ exports[`1. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S44": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S45": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S46": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S47": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S48": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S49": {
+  "S8": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -992,202 +397,7 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S5": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S50": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S51": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S52": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S53": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S54": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S55": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "font-size": "14px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S56": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S57": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S58": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S59": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S60": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S61": {
+  "S9": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -1208,138 +418,14 @@ exports[`1. article list 1`] = `
     "padding-top": "10px",
     "position": "relative",
   },
-  "S62": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex": "1",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "max-width": "760px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S63": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "row",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "row",
-    "-webkit-justify-content": "center",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "row",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S64": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S65": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "font-size": "14px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="S65"
+  className="S3"
 >
   <div
-    className="S64"
+    className="S3"
   >
     <div
       className="c0 S3"
@@ -1356,21 +442,21 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S12"
+        className="c0 S3"
       >
         <Link>
           <div
-            className="c1 S11"
+            className="c1 S3"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="S10"
+                className="S3"
               >
                 <div
-                  className="S5"
+                  className="S3"
                 >
                   <div
                     className="S4 IS1"
@@ -1379,15 +465,15 @@ exports[`1. article list 1`] = `
                   </div>
                 </div>
                 <h3
-                  className="S6 IS2"
+                  className="S5 IS2"
                 >
                   Headline 1
                 </h3>
                 <div
-                  className="S8 IS3"
+                  className="S7 IS3"
                 >
                   <span
-                    className="S7"
+                    className="S6"
                   >
                     
                     Summary 1
@@ -1395,7 +481,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S9 IS4"
+                  className="S5 IS4"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1412,45 +498,45 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S24"
+        className="c0 S3"
       >
         <div
-          className="c2 S14"
+          className="c2 S3"
         >
           <div
-            className="S13"
+            className="S8"
           />
         </div>
         <Link>
           <div
-            className="c1 S23"
+            className="c1 S3"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="S22"
+                className="S3"
               >
                 <div
-                  className="S16"
+                  className="S3"
                 >
                   <div
-                    className="S15 IS5"
+                    className="S4 IS5"
                   >
                     LABEL 2
                   </div>
                 </div>
                 <h3
-                  className="S17 IS6"
+                  className="S5 IS6"
                 >
                   Headline 2
                 </h3>
                 <div
-                  className="S19 IS7"
+                  className="S7 IS7"
                 >
                   <span
-                    className="S18"
+                    className="S6"
                   >
                     
                     Summary 2
@@ -1458,7 +544,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S20 IS8"
+                  className="S5 IS8"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1468,7 +554,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S21 IS9"
+                  className="S5 IS9"
                 >
                   <p>
                     Byline 2
@@ -1482,45 +568,45 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S36"
+        className="c0 S3"
       >
         <div
-          className="c2 S26"
+          className="c2 S3"
         >
           <div
-            className="S25"
+            className="S8"
           />
         </div>
         <Link>
           <div
-            className="c1 S35"
+            className="c1 S3"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="S34"
+                className="S3"
               >
                 <div
-                  className="S28"
+                  className="S3"
                 >
                   <div
-                    className="S27 IS10"
+                    className="S4 IS10"
                   >
                     LABEL 3
                   </div>
                 </div>
                 <h3
-                  className="S29 IS11"
+                  className="S5 IS11"
                 >
                   Headline 3
                 </h3>
                 <div
-                  className="S31 IS12"
+                  className="S7 IS12"
                 >
                   <span
-                    className="S30"
+                    className="S6"
                   >
                     
                     Summary 3
@@ -1528,7 +614,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S32 IS13"
+                  className="S5 IS13"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1538,7 +624,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S33 IS14"
+                  className="S5 IS14"
                 >
                   <p>
                     Byline 3
@@ -1552,45 +638,45 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S48"
+        className="c0 S3"
       >
         <div
-          className="c2 S38"
+          className="c2 S3"
         >
           <div
-            className="S37"
+            className="S8"
           />
         </div>
         <Link>
           <div
-            className="c1 S47"
+            className="c1 S3"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="S46"
+                className="S3"
               >
                 <div
-                  className="S40"
+                  className="S3"
                 >
                   <div
-                    className="S39 IS15"
+                    className="S4 IS15"
                   >
                     LABEL 4
                   </div>
                 </div>
                 <h3
-                  className="S41 IS16"
+                  className="S5 IS16"
                 >
                   Headline 4
                 </h3>
                 <div
-                  className="S43 IS17"
+                  className="S7 IS17"
                 >
                   <span
-                    className="S42"
+                    className="S6"
                   >
                     
                     Summary 4
@@ -1598,7 +684,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S44 IS18"
+                  className="S5 IS18"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1608,7 +694,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S45 IS19"
+                  className="S5 IS19"
                 >
                   <p>
                     Byline 4
@@ -1622,45 +708,45 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S60"
+        className="c0 S3"
       >
         <div
-          className="c2 S50"
+          className="c2 S3"
         >
           <div
-            className="S49"
+            className="S8"
           />
         </div>
         <Link>
           <div
-            className="c1 S59"
+            className="c1 S3"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="S58"
+                className="S3"
               >
                 <div
-                  className="S52"
+                  className="S3"
                 >
                   <div
-                    className="S51 IS20"
+                    className="S4 IS20"
                   >
                     LABEL 5
                   </div>
                 </div>
                 <h3
-                  className="S53 IS21"
+                  className="S5 IS21"
                 >
                   Headline 5
                 </h3>
                 <div
-                  className="S55 IS22"
+                  className="S7 IS22"
                 >
                   <span
-                    className="S54"
+                    className="S6"
                   >
                     
                     Summary 5
@@ -1668,7 +754,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S56 IS23"
+                  className="S5 IS23"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1678,7 +764,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S57 IS24"
+                  className="S5 IS24"
                 >
                   <p>
                     Byline 5
@@ -1691,15 +777,15 @@ exports[`1. article list 1`] = `
       </div>
     </div>
     <div
-      className="S61"
+      className="S9"
     >
       <Ad />
     </div>
     <div
-      className="S63"
+      className="S2"
     >
       <div
-        className="S62"
+        className="S1"
       >
         <Pagination />
       </div>

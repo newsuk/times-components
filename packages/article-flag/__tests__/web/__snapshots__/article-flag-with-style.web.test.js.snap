@@ -41,15 +41,11 @@ exports[`1. red article flag 1`] = `
     "margin-bottom": "0px",
     "margin-right": "0px",
   },
-  "S3": {
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-  },
 }
 </style>
 
 <div
-  className="IS3 S3"
+  className="IS3 S2"
 >
   <div
     className="IS1 S1"
