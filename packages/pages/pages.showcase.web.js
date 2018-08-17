@@ -31,6 +31,7 @@ export default {
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
+            onError={() => {}}
             onLinkPress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}

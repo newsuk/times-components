@@ -11,6 +11,7 @@ const {
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
+  onError,
   onLinkPress,
   onTopicPress,
   onVideoPress
@@ -44,6 +45,7 @@ const ArticleView = ({ articleId, scale, sectionName }) => {
       onAuthorPress={onAuthorPress}
       onCommentsPress={onCommentsPress}
       onCommentGuidelinesPress={onCommentGuidelinesPress}
+      onError={onError}
       onLinkPress={onLinkPress}
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
