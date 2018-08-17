@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Text } from "react-native";
-import { propTypes as treePropType } from "@times-components/markup-forest";
+import { treePropType } from "@times-components/markup";
 
 export const propTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
