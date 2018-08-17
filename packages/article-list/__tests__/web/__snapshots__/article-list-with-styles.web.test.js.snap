@@ -8,8 +8,8 @@ exports[`1. article list 1`] = `
 }
 
 .c1 {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -74,40 +74,25 @@ exports[`1. article list 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
   "IS10": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS11": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS12": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
-  "IS13": {
-    "marginBottom": "5px",
-  },
-  "IS14": {
+  "IS11": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
-  "IS15": {
+  "IS12": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -117,42 +102,85 @@ exports[`1. article list 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
-  "IS16": {
+  "IS13": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
     "lineHeight": "15px",
     "marginBottom": "5px",
   },
-  "IS17": {
+  "IS14": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
     "lineHeight": "15px",
     "marginBottom": "5px",
   },
-  "IS18": {
+  "IS15": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
+  },
+  "IS16": {
+    "color": "rgba(51,51,51,1)",
+    "fontFamily": "TimesModern-Bold",
+    "fontSize": "22px",
+    "fontWeight": "400",
+    "lineHeight": "27px",
+    "marginBottom": "5px",
+  },
+  "IS17": {
+    "WebkitBoxLines": "multiple",
+    "WebkitFlexWrap": "wrap",
+    "color": "rgba(105,105,105,1)",
+    "flexWrap": "wrap",
+    "fontFamily": "TimesDigitalW04",
+    "lineHeight": "20px",
+    "marginBottom": "10px",
+    "msFlexWrap": "wrap",
+  },
+  "IS18": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
   },
   "IS19": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
     "marginBottom": "5px",
   },
   "IS2": {
+    "color": "rgba(51,51,51,1)",
+    "fontFamily": "TimesModern-Bold",
+    "fontSize": "22px",
+    "fontWeight": "400",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
   "IS20": {
     "color": "rgba(51,51,51,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.2px",
+    "lineHeight": "14px",
+  },
+  "IS21": {
+    "color": "rgba(51,51,51,1)",
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
-  "IS21": {
+  "IS22": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -161,13 +189,6 @@ exports[`1. article list 1`] = `
     "lineHeight": "20px",
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
-  },
-  "IS22": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
   },
   "IS23": {
     "color": "rgba(105,105,105,1)",
@@ -177,41 +198,6 @@ exports[`1. article list 1`] = `
     "marginBottom": "5px",
   },
   "IS24": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-  },
-  "IS25": {
-    "marginBottom": "5px",
-  },
-  "IS26": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "22px",
-    "marginBottom": "5px",
-  },
-  "IS27": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS28": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS29": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
@@ -219,14 +205,6 @@ exports[`1. article list 1`] = `
     "marginBottom": "5px",
   },
   "IS3": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "22px",
-    "marginBottom": "5px",
-  },
-  "IS4": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -236,32 +214,30 @@ exports[`1. article list 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
-  "IS5": {
+  "IS4": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
     "lineHeight": "15px",
     "marginBottom": "5px",
   },
-  "IS6": {
+  "IS5": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
-  "IS7": {
-    "marginBottom": "5px",
-  },
-  "IS8": {
+  "IS6": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
-  "IS9": {
+  "IS7": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -270,6 +246,20 @@ exports[`1. article list 1`] = `
     "lineHeight": "20px",
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
+  },
+  "IS8": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
+  },
+  "IS9": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
   },
   "S1": {
     "-ms-flex": "1",
@@ -425,6 +415,7 @@ exports[`1. article list 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "flex-direction": "column",
+    "margin-bottom": "0px",
     "margin-left": "0px",
     "margin-right": "0px",
     "margin-top": "0px",
@@ -637,6 +628,7 @@ exports[`1. article list 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "flex-direction": "column",
+    "margin-bottom": "0px",
     "margin-left": "0px",
     "margin-right": "0px",
     "margin-top": "0px",
@@ -855,6 +847,7 @@ exports[`1. article list 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "flex-direction": "column",
+    "margin-bottom": "0px",
     "margin-left": "0px",
     "margin-right": "0px",
     "margin-top": "0px",
@@ -1011,6 +1004,7 @@ exports[`1. article list 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "flex-direction": "column",
+    "margin-bottom": "0px",
     "margin-left": "0px",
     "margin-right": "0px",
     "margin-top": "0px",
@@ -1062,6 +1056,7 @@ exports[`1. article list 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "flex-direction": "column",
+    "margin-bottom": "0px",
     "margin-left": "0px",
     "margin-right": "0px",
     "margin-top": "0px",
@@ -1375,7 +1370,7 @@ exports[`1. article list 1`] = `
                 className="S10"
               >
                 <div
-                  className="S5 IS2"
+                  className="S5"
                 >
                   <div
                     className="S4 IS1"
@@ -1384,12 +1379,12 @@ exports[`1. article list 1`] = `
                   </div>
                 </div>
                 <h3
-                  className="S6 IS3"
+                  className="S6 IS2"
                 >
                   Headline 1
                 </h3>
                 <div
-                  className="S8 IS4"
+                  className="S8 IS3"
                 >
                   <span
                     className="S7"
@@ -1400,7 +1395,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S9 IS5"
+                  className="S9 IS4"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1438,21 +1433,21 @@ exports[`1. article list 1`] = `
                 className="S22"
               >
                 <div
-                  className="S16 IS7"
+                  className="S16"
                 >
                   <div
-                    className="S15 IS6"
+                    className="S15 IS5"
                   >
                     LABEL 2
                   </div>
                 </div>
                 <h3
-                  className="S17 IS8"
+                  className="S17 IS6"
                 >
                   Headline 2
                 </h3>
                 <div
-                  className="S19 IS9"
+                  className="S19 IS7"
                 >
                   <span
                     className="S18"
@@ -1463,7 +1458,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S20 IS10"
+                  className="S20 IS8"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1473,7 +1468,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S21 IS11"
+                  className="S21 IS9"
                 >
                   <p>
                     Byline 2
@@ -1508,21 +1503,21 @@ exports[`1. article list 1`] = `
                 className="S34"
               >
                 <div
-                  className="S28 IS13"
+                  className="S28"
                 >
                   <div
-                    className="S27 IS12"
+                    className="S27 IS10"
                   >
                     LABEL 3
                   </div>
                 </div>
                 <h3
-                  className="S29 IS14"
+                  className="S29 IS11"
                 >
                   Headline 3
                 </h3>
                 <div
-                  className="S31 IS15"
+                  className="S31 IS12"
                 >
                   <span
                     className="S30"
@@ -1533,7 +1528,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S32 IS16"
+                  className="S32 IS13"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1543,7 +1538,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S33 IS17"
+                  className="S33 IS14"
                 >
                   <p>
                     Byline 3
@@ -1578,21 +1573,21 @@ exports[`1. article list 1`] = `
                 className="S46"
               >
                 <div
-                  className="S40 IS19"
+                  className="S40"
                 >
                   <div
-                    className="S39 IS18"
+                    className="S39 IS15"
                   >
                     LABEL 4
                   </div>
                 </div>
                 <h3
-                  className="S41 IS20"
+                  className="S41 IS16"
                 >
                   Headline 4
                 </h3>
                 <div
-                  className="S43 IS21"
+                  className="S43 IS17"
                 >
                   <span
                     className="S42"
@@ -1603,7 +1598,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S44 IS22"
+                  className="S44 IS18"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1613,7 +1608,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S45 IS23"
+                  className="S45 IS19"
                 >
                   <p>
                     Byline 4
@@ -1648,21 +1643,21 @@ exports[`1. article list 1`] = `
                 className="S58"
               >
                 <div
-                  className="S52 IS25"
+                  className="S52"
                 >
                   <div
-                    className="S51 IS24"
+                    className="S51 IS20"
                   >
                     LABEL 5
                   </div>
                 </div>
                 <h3
-                  className="S53 IS26"
+                  className="S53 IS21"
                 >
                   Headline 5
                 </h3>
                 <div
-                  className="S55 IS27"
+                  className="S55 IS22"
                 >
                   <span
                     className="S54"
@@ -1673,7 +1668,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S56 IS28"
+                  className="S56 IS23"
                 >
                   <time>
                     Friday November 17 2017, 12:01am
@@ -1683,7 +1678,7 @@ exports[`1. article list 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S57 IS29"
+                  className="S57 IS24"
                 >
                   <p>
                     Byline 5

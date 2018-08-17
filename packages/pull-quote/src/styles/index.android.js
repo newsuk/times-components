@@ -8,6 +8,10 @@ const styles = StyleSheet.create({
     ...sharedStyles.container,
     paddingLeft: spacing(2),
     paddingRight: spacing(2)
+  },
+  content: {
+    ...sharedStyles.content,
+    lineHeight: 32
   }
 });
 

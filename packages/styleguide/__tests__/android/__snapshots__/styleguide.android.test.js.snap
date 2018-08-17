@@ -11,16 +11,16 @@ Object {
 exports[`2. font factory large scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
-  "fontSize": 18,
-  "lineHeight": 29,
+  "fontSize": 21,
+  "lineHeight": 31,
 }
 `;
 
 exports[`3. font factory xlarge scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
-  "fontSize": 20,
-  "lineHeight": 31,
+  "fontSize": 23,
+  "lineHeight": 33,
 }
 `;
 

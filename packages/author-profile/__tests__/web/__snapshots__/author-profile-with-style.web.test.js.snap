@@ -74,6 +74,7 @@ exports[`1. an article list header 1`] = `
     "color": "#006699",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": 15,
+    "lineHeight": 17,
     "paddingLeft": "5px",
     "textDecorationLine": "none",
   },
@@ -87,6 +88,7 @@ exports[`1. an article list header 1`] = `
     "-webkit-font-smoothing": "antialiased",
     "font-family": "TimesDigitalW04-RegularSC",
     "font-size": "14px",
+    "line-height": "14px",
   },
   "S4": {
     "-ms-flex-item-align": "center",
@@ -109,7 +111,7 @@ exports[`1. an article list header 1`] = `
   "S6": {
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
-    "line-height": "26px",
+    "line-height": "27px",
     "text-align": "center",
   },
   "S7": {},

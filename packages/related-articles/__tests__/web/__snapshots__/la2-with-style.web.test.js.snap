@@ -171,11 +171,9 @@ exports[`default styles 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
   "IS2": {
-    "marginBottom": "5px",
-  },
-  "IS3": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -185,13 +183,13 @@ exports[`default styles 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
-  "IS4": {
+  "IS3": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
     "lineHeight": "15px",
   },
-  "IS5": {
+  "IS4": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
@@ -204,6 +202,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "TimesModern-Bold",
     "font-size": "25px",
+    "line-height": "27px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -214,7 +213,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "13px",
+    "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -304,7 +303,6 @@ exports[`default styles 1`] = `
     "border-top-color": "rgba(219,219,219,1)",
     "border-top-width": "1px",
     "display": "flex",
-    "height": "55px",
     "justify-content": "center",
     "margin-bottom": "0px",
     "margin-top": "0px",
@@ -325,6 +323,7 @@ exports[`default styles 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "display": "flex",
+    "margin-bottom": "0px",
     "margin-top": "0px",
   },
   "S5": {
@@ -335,7 +334,7 @@ exports[`default styles 1`] = `
     "font-family": "TimesModern-Bold",
     "font-size": "22px",
     "font-weight": "400",
-    "line-height": "24px",
+    "line-height": "27px",
     "margin-bottom": "5px",
     "margin-top": "0px",
   },
@@ -407,7 +406,7 @@ exports[`default styles 1`] = `
                 className="S12"
               >
                 <div
-                  className="S4 IS2"
+                  className="S4"
                 >
                   <div
                     className="S3 IS1"
@@ -424,7 +423,7 @@ exports[`default styles 1`] = `
                   className="S8"
                 >
                   <div
-                    className="summaryHidden leadSummary125Class S7 IS3"
+                    className="summaryHidden leadSummary125Class S7 IS2"
                   >
                     <span
                       className="S6"
@@ -436,7 +435,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S9 IS4"
+                  className="S9 IS3"
                 >
                   <time>
                     March 13 2015, 06:54pm
@@ -446,7 +445,7 @@ exports[`default styles 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S11 IS5"
+                  className="S11 IS4"
                 >
                   <span
                     className="S10"

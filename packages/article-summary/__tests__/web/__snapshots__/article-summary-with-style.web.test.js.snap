@@ -4,17 +4,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
 <style>
 {
   "IS1": {
-    "marginBottom": "5px",
-  },
-  "IS2": {
     "color": "rgba(51,51,51,1)",
     "fontFamily": "TimesModern-Bold",
     "fontSize": "22px",
     "fontWeight": "400",
-    "lineHeight": "22px",
+    "lineHeight": "27px",
     "marginBottom": "5px",
   },
-  "IS3": {
+  "IS2": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -24,6 +21,13 @@ exports[`1. article summary component with a single paragraph 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
+  "IS3": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
+  },
   "IS4": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
@@ -31,33 +35,29 @@ exports[`1. article summary component with a single paragraph 1`] = `
     "lineHeight": "15px",
     "marginBottom": "5px",
   },
-  "IS5": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
   "S1": {
+    "margin-bottom": "0px",
+  },
+  "S2": {
     "color": "inherit",
     "font-family": "inherit",
     "font-size": "inherit",
     "margin-bottom": "0px",
   },
-  "S2": {
+  "S3": {
     "font-size": "14px",
   },
-  "S3": {
+  "S4": {
     "margin-bottom": "0px",
   },
 }
 </style>
 
 <div
-  className="S3"
+  className="S4"
 >
   <div
-    className="IS1"
+    className="S1"
   >
     <ArticleLabel
       color="#333333"
@@ -66,16 +66,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <h3
     aria-level="3"
-    className="IS2"
+    className="IS1"
     role="heading"
   >
     Test Headline
   </h3>
   <div
-    className="IS3 S2"
+    className="IS2 S3"
   >
     <span
-      className="S1"
+      className="S2"
     >
       
       Test paragraph
@@ -83,7 +83,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     </span>
   </div>
   <div
-    className="IS4"
+    className="IS3"
     data-testid="datePublication"
   >
     <DatePublication
@@ -92,7 +92,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="IS5"
+    className="IS4"
   >
     <ArticleByline
       ast={

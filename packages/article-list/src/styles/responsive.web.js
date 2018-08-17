@@ -18,8 +18,8 @@ export const ListContentContainer = styled(View)`
 `;
 
 export const ListItemWrapper = styled(View)`
-  padding-bottom: ${spacing(3)};
-  padding-top: ${spacing(3)};
+  padding-bottom: ${spacing(2)};
+  padding-top: ${spacing(2)};
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 

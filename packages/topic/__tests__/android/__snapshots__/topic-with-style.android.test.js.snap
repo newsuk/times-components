@@ -29,6 +29,8 @@ exports[`1. an article list header 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
+          "lineHeight": 40,
+          "paddingBottom": 25,
         }
       }
     >
@@ -53,6 +55,7 @@ exports[`1. an article list header 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 15,
           "lineHeight": 26,
+          "paddingBottom": 40,
           "textAlign": "center",
         }
       }

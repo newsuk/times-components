@@ -28,9 +28,10 @@ exports[`1. button 1`] = `
   <Text
     style={
       Object {
-        "color": "#FFFFFF",
+        "color": "#FFF",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 14,
+        "lineHeight": 14,
         "paddingTop": 0,
       }
     }

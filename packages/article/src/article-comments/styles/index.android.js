@@ -3,9 +3,9 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  headline: {
-    ...sharedStyles.headline,
-    lineHeight: 25
+  supporting: {
+    ...sharedStyles.supporting,
+    lineHeight: 21
   }
 });
 

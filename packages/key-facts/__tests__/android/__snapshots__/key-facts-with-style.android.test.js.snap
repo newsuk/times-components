@@ -238,7 +238,7 @@ exports[`key facts with title and context theme 1`] = `
       Object {
         "color": "#FFFFFF",
         "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
+        "fontSize": 17,
         "fontWeight": "400",
         "letterSpacing": 1.2,
         "marginBottom": 20,
@@ -278,8 +278,8 @@ exports[`key facts with title and context theme 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 18,
-            "lineHeight": 29,
+            "fontSize": 21,
+            "lineHeight": 31,
             "marginTop": -8,
             "paddingLeft": 15,
             "width": "95%",
@@ -319,8 +319,8 @@ exports[`key facts with title and context theme 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 18,
-            "lineHeight": 29,
+            "fontSize": 21,
+            "lineHeight": 31,
             "marginTop": -8,
             "paddingLeft": 15,
             "width": "95%",
@@ -370,8 +370,8 @@ exports[`key facts with title and context theme 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 18,
-            "lineHeight": 29,
+            "fontSize": 21,
+            "lineHeight": 31,
             "marginTop": -8,
             "paddingLeft": 15,
             "width": "95%",
@@ -411,8 +411,8 @@ exports[`key facts with title and context theme 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 18,
-            "lineHeight": 29,
+            "fontSize": 21,
+            "lineHeight": 31,
             "marginTop": -8,
             "paddingLeft": 15,
             "width": "95%",

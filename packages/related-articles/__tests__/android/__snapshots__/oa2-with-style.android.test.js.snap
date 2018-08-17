@@ -12,8 +12,8 @@ exports[`default styles 1`] = `
         "borderTopColor": "#DBDBDB",
         "borderTopWidth": 0.5,
         "display": "flex",
-        "height": 55,
         "justifyContent": "center",
+        "padding": 15,
       }
     }
   >
@@ -23,6 +23,8 @@ exports[`default styles 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 25,
+          "lineHeight": 27,
+          "paddingTop": 0,
         }
       }
     >
@@ -69,6 +71,7 @@ exports[`default styles 1`] = `
                       "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.2,
+                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
@@ -96,7 +99,7 @@ exports[`default styles 1`] = `
                       "flexDirection": "row",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 13,
+                      "lineHeight": 15,
                     }
                   }
                 >
@@ -110,7 +113,7 @@ exports[`default styles 1`] = `
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "fontWeight": "400",
-                    "lineHeight": 28,
+                    "lineHeight": 27,
                     "marginBottom": 5,
                     "marginTop": -5,
                   }

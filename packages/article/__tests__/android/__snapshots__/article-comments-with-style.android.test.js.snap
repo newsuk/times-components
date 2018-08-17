@@ -23,8 +23,9 @@ exports[`1. a full article with enabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
             }
           }
         >
@@ -147,7 +148,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 21,
               "maxWidth": 280,
               "textAlign": "center",
             }
@@ -190,6 +191,7 @@ exports[`1. a full article with enabled comments 1`] = `
                 "width": "100%",
               },
               Object {
+                "marginBottom": 5,
                 "marginTop": 25,
                 "maxWidth": 215,
               },
@@ -199,9 +201,10 @@ exports[`1. a full article with enabled comments 1`] = `
           <Text
             style={
               Object {
-                "color": "#FFFFFF",
+                "color": "#FFF",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 14,
+                "lineHeight": 14,
                 "paddingTop": 0,
               }
             }
@@ -238,8 +241,9 @@ exports[`2. a full article with disabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
             }
           }
         >
@@ -362,7 +366,7 @@ exports[`2. a full article with disabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 21,
               "maxWidth": 280,
               "textAlign": "center",
             }

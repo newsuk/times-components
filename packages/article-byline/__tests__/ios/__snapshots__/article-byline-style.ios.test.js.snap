@@ -9,7 +9,7 @@ exports[`1. with a single author 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -27,7 +27,7 @@ exports[`2. with a given section colour 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -45,7 +45,7 @@ exports[`3. with given styles 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
         "textDecorationLine": "underline",
       }
     }

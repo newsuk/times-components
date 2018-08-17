@@ -1,10 +1,5 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
@@ -33,6 +28,7 @@ export const calculateViewBox = ({ height, width }) => {
   };
 };
 
+const { colours, fontFactory, spacing } = styleguide();
 const styles = StyleSheet.create({
   children: {
     flex: 1
@@ -66,8 +62,10 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderWidth: 1,
     color: colours.functional.secondary,
-    fontFamily: fonts.body,
-    fontSize: fontSizes.puffLink,
+    ...fontFactory({
+      font: "body",
+      fontSize: "puffLink"
+    }),
     letterSpacing: 1.5,
     paddingBottom: spacing(1),
     paddingLeft: spacing(2),

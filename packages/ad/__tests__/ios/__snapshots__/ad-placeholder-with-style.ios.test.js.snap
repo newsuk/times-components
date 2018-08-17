@@ -51,6 +51,7 @@ exports[`advert placeholder 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 11,
           "letterSpacing": 1.5,
+          "lineHeight": 15,
           "paddingBottom": 5,
           "paddingLeft": 10,
           "paddingRight": 10,

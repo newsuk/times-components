@@ -1,11 +1,7 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleMeta: {
     marginBottom: spacing(4),
@@ -25,15 +21,17 @@ const sharedStyles = {
   },
   datePublication: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.cardMeta,
-    lineHeight: 15,
-    fontFamily: fonts.supporting
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    })
   },
   byline: {
-    fontSize: fontSizes.cardMeta,
-    fontFamily: fonts.supporting,
-    color: colours.functional.secondary,
-    lineHeight: 15
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    }),
+    color: colours.functional.secondary
   }
 };
 

@@ -411,6 +411,7 @@ exports[`full article with style 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
   "IS3": {
     "justifyContent": "flex-start",
@@ -704,7 +705,7 @@ exports[`full article with style 1`] = `
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "5px",
-    "padding-top": "4px",
+    "padding-top": "5px",
   },
   "S30": {
     "-ms-flex-align": "stretch",
@@ -759,7 +760,7 @@ exports[`full article with style 1`] = `
     "padding-top": "0px",
   },
   "S4": {
-    "line-height": "32px",
+    "line-height": "30px",
     "margin-bottom": "7px",
     "margin-top": "0px",
     "padding-bottom": "0px",
@@ -769,7 +770,7 @@ exports[`full article with style 1`] = `
     "line-height": "26px",
     "margin-bottom": "0px",
     "margin-top": "0px",
-    "padding-bottom": "9px",
+    "padding-bottom": "10px",
     "padding-top": "0px",
   },
   "S6": {
@@ -793,7 +794,7 @@ exports[`full article with style 1`] = `
     "-webkit-flex-basis": "auto !important",
     "align-items": "stretch",
     "flex-basis": "auto !important",
-    "margin-bottom": "11px",
+    "margin-bottom": "10px",
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",

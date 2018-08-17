@@ -1,11 +1,7 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, spacing } = styleguide();
 const styles = StyleSheet.create({
   paginationContainer: {
     alignItems: "stretch",
@@ -46,16 +42,21 @@ const styles = StyleSheet.create({
   listErrorHeading: {
     alignSelf: "center",
     color: colours.functional.brandColour,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.leadHeadline,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "leadHeadline"
+    }),
     marginBottom: spacing(2),
     marginTop: spacing(4),
     textAlign: "center"
   },
   listErrorMessage: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegular,
-    fontSize: fontSizes.infoSubText,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoSubText"
+    }),
+    lineHeight: 27,
     textAlign: "center"
   },
   listEmptyStateContainer: {
@@ -64,8 +65,10 @@ const styles = StyleSheet.create({
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegular,
-    fontSize: fontSizes.infoTitle,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoTitle"
+    }),
     marginTop: spacing(28),
     textAlign: "center"
   },

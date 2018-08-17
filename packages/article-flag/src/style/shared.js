@@ -1,5 +1,6 @@
-import { fonts } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { fontFactory } = styleguide();
 const styles = {
   view: {
     flexDirection: "row",
@@ -10,8 +11,10 @@ const styles = {
     marginBottom: 1
   },
   title: {
-    fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: 12,
+    ...fontFactory({
+      font: "bodyRegularSmallCaps",
+      fontSize: "cardMetaMobile"
+    }),
     fontWeight: "400",
     letterSpacing: 1.4
   }

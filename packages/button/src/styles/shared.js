@@ -1,5 +1,6 @@
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory } = styleguide();
 const styles = {
   button: {
     alignItems: "center",
@@ -12,8 +13,10 @@ const styles = {
   },
   text: {
     color: "#FFF",
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.button,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "button"
+    }),
     paddingTop: 5
   }
 };

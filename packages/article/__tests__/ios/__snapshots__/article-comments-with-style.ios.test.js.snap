@@ -23,8 +23,9 @@ exports[`1. a full article with enabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -146,7 +147,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 17,
               "maxWidth": 280,
               "textAlign": "center",
             }
@@ -181,6 +182,7 @@ exports[`1. a full article with enabled comments 1`] = `
                 "width": "100%",
               },
               Object {
+                "marginBottom": 5,
                 "marginTop": 25,
                 "maxWidth": 215,
               },
@@ -193,6 +195,7 @@ exports[`1. a full article with enabled comments 1`] = `
                 "color": "#FFF",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 16,
+                "lineHeight": 16,
                 "paddingTop": 5,
               }
             }
@@ -229,8 +232,9 @@ exports[`2. a full article with disabled comments 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -352,7 +356,7 @@ exports[`2. a full article with disabled comments 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 22,
+              "lineHeight": 17,
               "maxWidth": 280,
               "textAlign": "center",
             }

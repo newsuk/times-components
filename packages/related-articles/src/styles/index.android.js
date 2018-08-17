@@ -4,9 +4,16 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  titleContainer: {
+    ...sharedStyles.titleContainer,
+    padding: spacing(3)
+  },
+  title: {
+    ...sharedStyles.title,
+    paddingTop: spacing(0)
+  },
   headline: {
     ...sharedStyles.headline,
-    lineHeight: 28,
     marginTop: spacing(-1)
   },
   opinionByline: {

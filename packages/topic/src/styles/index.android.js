@@ -4,17 +4,13 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  container: {
-    ...sharedStyles.container,
-    paddingTop: spacing(1)
+  name: {
+    ...sharedStyles.name,
+    paddingBottom: spacing(5)
   },
-  credits: {
-    ...sharedStyles.credits,
-    lineHeight: 20
-  },
-  text: {
-    ...sharedStyles.text,
-    lineHeight: 20
+  description: {
+    ...sharedStyles.description,
+    paddingBottom: spacing(8)
   }
 });
 

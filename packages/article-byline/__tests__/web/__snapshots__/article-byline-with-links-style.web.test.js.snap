@@ -12,7 +12,7 @@ exports[`1. with a single author 1`] = `
     "flex-direction": "row",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "13px",
+    "line-height": "15px",
   },
   "S2": {
     "-ms-flex-direction": "column",
@@ -51,7 +51,7 @@ exports[`2. with a given section colour 1`] = `
     "flex-direction": "row",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "13px",
+    "line-height": "15px",
   },
   "S2": {
     "-ms-flex-direction": "column",
@@ -90,7 +90,7 @@ exports[`3. with given styles 1`] = `
     "flex-direction": "row",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "13px",
+    "line-height": "15px",
   },
   "S2": {
     "-ms-flex-direction": "column",
