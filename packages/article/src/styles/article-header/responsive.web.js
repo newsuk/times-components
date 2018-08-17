@@ -1,30 +1,28 @@
-import { View, Text } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import { Text, View } from "react-native";
+import styled from "styled-components";
+import {
+  breakpoints,
+  colours,
+  fonts,
+  fontSizes
+} from "@times-components/styleguide";
 
-export const HeadlineContainer = withResponsiveStyles(
-  Text,
-  {
-    base: () => `
-    font-size: ${fontSizes.headline}px;
-    color: ${colours.functional.brandColour};
-    margin-bottom: 8px;
-    font-family: "${fonts.headline}";
-    font-weight: 400;
-    line-height: 30px;
-  `,
-    mediumUp: () => `
+export const HeadlineContainer = styled(Text)`
+  font-size: ${fontSizes.headline}px;
+  color: ${colours.functional.brandColour};
+  margin-bottom: 8px;
+  font-family: "${fonts.headline}";
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 45px;
-  `
-  },
-  "HeadlineContainer"
-);
+  }
+`;
 
-export const LabelContainer = withResponsiveStyles(
-  View,
-  {
-    wideUp: () => "margin-top: 0px;"
-  },
-  "LabelContainer"
-);
+export const LabelContainer = styled(View)`
+  @media (min-width: ${breakpoints.wide}px) {
+    margin-top: 0px;
+  }
+`;

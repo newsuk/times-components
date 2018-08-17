@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
 const summaryConfig = {
   1: [125],
@@ -18,55 +18,61 @@ export const getConfig = ({ itemCount }) => ({
 });
 
 export const getConfigWrapper = ({ itemCount }) => {
-  const ConfigWrapper = withResponsiveStyles(View, {
-    base: () => `
+  let Base = styled(View)`
+    .imageContainerClass {
+      display: ${itemCount >= 3 ? "none" : "block"};
+    }
+
+    .summaryHidden {
+      display: none;
+    }
+
+    .summary125Class {
+      display: block;
+    }
+
+    @media (min-width: ${breakpoints.medium}px) {
       .imageContainerClass {
-        display: ${itemCount >= 3 ? "none" : "block"};
-      }
-      .summaryHidden {
-        display: none;
-      }
-      .summary125Class {
         display: block;
       }
-    `,
-    mediumUp: () => {
-      const singleItemImageStyle = `
-        flex: 1;
-        margin-bottom: 0;
-        min-width: auto;
-        padding-right: ${spacing(2)};
-      `;
 
-      const singleItemSummaryStyle = `
-        flex-basis: 0 !important;
-        flex-grow: 1;
-        min-width: 300px;
-      `;
+      .headlineClass {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  `;
 
-      return `
+  if (itemCount === 1) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
         .imageContainerClass {
-          display: block;
-          ${itemCount === 1 ? singleItemImageStyle : ``}
+          flex: 1;
+          margin-bottom: 0;
+          min-width: auto;
+          padding-right: ${spacing(2)};
         }
+
         .contentContainerClass {
-          ${itemCount === 1 ? singleItemSummaryStyle : ``}
+          flex-basis: 0 !important;
+          flex-grow: 1;
+          min-width: 300px;
         }
-        .headlineClass {
-          font-size: 30px;
-          line-height: 30px;
-        }
-      `;
-    },
-    wideUp: () => `
+      }
+    `;
+  }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
       .summary125Class {
         display: ${itemCount === 3 ? "none" : "block"};
       }
+
       .summary145Class {
         display: ${itemCount === 3 ? "block" : "none"};
       }
-    `
-  });
-  ConfigWrapper.displayName = "ConfigWrapper";
-  return ConfigWrapper;
+    }
+  `;
+
+  return Base;
 };

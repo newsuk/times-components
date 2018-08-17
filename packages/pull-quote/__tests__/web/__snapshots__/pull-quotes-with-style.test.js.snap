@@ -3,7 +3,7 @@
 exports[`different colours 1`] = `
 .c0 {
   color: #333333;
-  font-family: TimesModern-Regular;
+  font-family: "TimesModern-Regular";
   font-size: 25px;
   line-height: 30px;
 }

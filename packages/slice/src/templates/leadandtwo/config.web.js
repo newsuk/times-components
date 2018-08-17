@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
 const leadSummaryConfig = {
   1: [125],
@@ -25,97 +25,100 @@ export const getSupportConfig = () => ({
 });
 
 export const getConfigWrapper = ({ supportCount }) => {
-  const ConfigWrapper = withResponsiveStyles(View, {
-    base: () => `
+  let Base = styled(View)`
+    .supportImageContainerClass {
+      display: none;
+    }
+
+    .supportSummaryClass {
+      display: none;
+    }
+
+    .summaryHidden {
+      display: none;
+    }
+
+    .leadSummary125Class {
+      display: block;
+    }
+
+    @media (min-width: ${breakpoints.medium}px) {
+      .leadHeadlineClass {
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      .leadImageContainerClass {
+        flex: 1;
+        margin-bottom: 0;
+        min-width: auto;
+      }
+
+      .leadContentContainerClass {
+        flex-basis: 0 !important;
+        flex-grow: 1;
+        margin-bottom: ${spacing(2)};
+        min-width: 300px;
+      }
+
       .supportImageContainerClass {
-        display: none;
-      }
-      .supportSummaryClass {
-        display: none;
-      }
-      .summaryHidden {
-        display: none;
-      }
-      .leadSummary125Class {
         display: block;
       }
-    `,
-    mediumUp: () => {
-      const withSupportsImageStyle = `
-        margin-bottom: ${spacing(2)};
-        min-width: 370px;
-      `;
 
-      const withoutSupportsImageStyle = `
-        padding-right: ${spacing(2)};
-      `;
+      .leadSummary125Class {
+        display: ${supportCount === 2 ? "none" : "block"};
+      }
 
-      return `
-        .leadHeadlineClass {
-          font-size: 30px;
-          line-height: 30px;
-        }
+      .leadSummary175Class {
+        display: ${supportCount === 2 ? "block" : "none"};
+      }
+    }
+  `;
+
+  if (supportCount === 2) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
         .leadImageContainerClass {
+          margin-bottom: ${spacing(2)};
+          min-width: 370px;
+        }
+      }
+
+      @media (min-width: ${breakpoints.wide}px) {
+        .leadImageContainerClass {
+          min-width: auto;
+        }
+
+        .supportImageContainerClass {
           flex: 1;
           margin-bottom: 0;
+          max-width: 185px;
           min-width: auto;
-          ${
-            supportCount === 2
-              ? withSupportsImageStyle
-              : withoutSupportsImageStyle
-          }
+          padding-right: ${spacing(2)};
         }
 
-        .leadContentContainerClass {
-          flex-basis: 0 !important;
-          flex-grow: 1;
-          margin-bottom: ${spacing(2)};
-          min-width: 300px;
+        .supportContentContainerClass {
+          flex: 1;
+          margin-bottom: 0;
+          min-width: 100px;
         }
-        .supportImageContainerClass {
-          display: block;
-        }
-        .leadSummary125Class {
-          display: ${supportCount === 2 ? "none" : "block"};
-        }
-        .leadSummary175Class {
-          display: ${supportCount === 2 ? "block" : "none"};
-        }
-      `;
-    },
-    wideUp: () => {
-      const twoLeadImageStyle = `
-        min-width: auto;
-      `;
-
-      const twoSupportImageStyle = `
-        flex: 1;
-        margin-bottom: 0;
-        max-width: 185px;
-        min-width: auto;
-        padding-right: ${spacing(2)};
-      `;
-
-      const twoSupportContentStyle = `
-        flex: 1;
-        margin-bottom: 0;
-        min-width: 100px;
-      `;
-
-      return `
+      }
+    `;
+  } else {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
         .leadImageContainerClass {
           padding-right: ${spacing(2)};
-          ${supportCount === 2 ? twoLeadImageStyle : ``}
         }
-        .supportImageContainerClass {
-          ${supportCount === 2 ? twoSupportImageStyle : ``}
+      }
+
+      @media (min-width: ${breakpoints.wide}px) {
+        .leadImageContainerClass {
+          padding-right: ${spacing(2)};
         }
-        .supportContentContainerClass {
-          ${supportCount === 2 ? twoSupportContentStyle : ``}
-        }
-      `;
-    }
-  });
-  ConfigWrapper.displayName = "ConfigWrapper";
-  return ConfigWrapper;
+      }
+    `;
+  }
+
+  return Base;
 };

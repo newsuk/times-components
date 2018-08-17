@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,23 +18,23 @@ exports[`1. a single child element 1`] = `
   justify-content: center;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -50,7 +50,7 @@ exports[`1. a single child element 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -65,27 +65,26 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0;
     min-width: auto;
-    padding-right: 10px;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -97,16 +96,22 @@ exports[`1. a single child element 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: block;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
   }
 }
 
@@ -117,11 +122,16 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     padding-left: 0px;
     padding-right: 0px;
     width: 80.8%;
@@ -129,13 +139,13 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -146,7 +156,7 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     -webkit-box-flex: 1.5;
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
@@ -195,16 +205,16 @@ exports[`1. a single child element 1`] = `
 </style>
 
 <div
-  className="c0 S5"
+  className="c0 c1 S5"
 >
   <div
-    className="c1 S4"
+    className="c2 S4"
   >
     <div
-      className="c2 S3"
+      className="c3 c4 c5 S3"
     >
       <div
-        className="c3 S2"
+        className="c6 c7 c8 S2"
       >
         <div
           className="S1"
@@ -218,7 +228,7 @@ exports[`1. a single child element 1`] = `
 `;
 
 exports[`2. two child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -235,7 +245,7 @@ exports[`2. two child elements 1`] = `
   justify-content: center;
 }
 
-.c5 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -245,23 +255,23 @@ exports[`2. two child elements 1`] = `
   height: auto;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -277,7 +287,7 @@ exports[`2. two child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -291,7 +301,7 @@ exports[`2. two child elements 1`] = `
   width: auto;
 }
 
-.c4 {
+.c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -303,19 +313,19 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c6 {
+.c11 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -323,21 +333,20 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0;
     min-width: auto;
-    padding-right: 10px;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -349,16 +358,22 @@ exports[`2. two child elements 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: block;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
   }
 }
 
@@ -369,23 +384,28 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -399,7 +419,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     -webkit-box-flex: 2.75;
     -webkit-flex-grow: 2.75;
     -ms-flex-positive: 2.75;
@@ -408,7 +428,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -421,7 +441,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c11 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -430,7 +450,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c11 {
     margin-top: 0;
   }
 }
@@ -504,16 +524,16 @@ exports[`2. two child elements 1`] = `
 </style>
 
 <div
-  className="c0 S9"
+  className="c0 c1 S9"
 >
   <div
-    className="c1 S8"
+    className="c2 S8"
   >
     <div
-      className="c2 S7"
+      className="c3 c4 c5 S7"
     >
       <div
-        className="c3 S2"
+        className="c6 c7 c8 S2"
       >
         <div
           className="S1"
@@ -522,13 +542,13 @@ exports[`2. two child elements 1`] = `
         </div>
       </div>
       <div
-        className="c4 S3"
+        className="c9 S3"
       />
       <div
-        className="c5 S6"
+        className="c10 S6"
       >
         <div
-          className="c6 S5"
+          className="c11 S5"
         >
           <div
             className="S4"
@@ -543,7 +563,7 @@ exports[`2. two child elements 1`] = `
 `;
 
 exports[`3. three child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -560,7 +580,7 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c5 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -570,23 +590,23 @@ exports[`3. three child elements 1`] = `
   height: auto;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -602,7 +622,7 @@ exports[`3. three child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -616,7 +636,7 @@ exports[`3. three child elements 1`] = `
   width: auto;
 }
 
-.c4 {
+.c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -628,12 +648,12 @@ exports[`3. three child elements 1`] = `
   min-width: auto;
 }
 
-.c6 {
+.c11 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c7 {
+.c12 {
   padding-left: 10px;
   padding-right: 10px;
   border-top-color: #DBDBDB;
@@ -644,13 +664,13 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -658,22 +678,20 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0;
     min-width: auto;
-    margin-bottom: 10px;
-    min-width: 370px;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -685,22 +703,28 @@ exports[`3. three child elements 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: none;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    margin-bottom: 10px;
+    min-width: 370px;
   }
 }
 
 @media (min-width:1024px) {
   .c0 .leadImageContainerClass {
-    padding-right: 10px;
     min-width: auto;
   }
 
@@ -724,23 +748,28 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -754,7 +783,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     -webkit-box-flex: 1.5;
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
@@ -763,7 +792,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -776,7 +805,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c11 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -785,13 +814,13 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c11 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c12 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -800,7 +829,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c12 {
     margin-top: 10px;
   }
 }
@@ -888,16 +917,16 @@ exports[`3. three child elements 1`] = `
 </style>
 
 <div
-  className="c0 S11"
+  className="c0 c1 S11"
 >
   <div
-    className="c1 S10"
+    className="c2 S10"
   >
     <div
-      className="c2 S9"
+      className="c3 c4 c5 S9"
     >
       <div
-        className="c3 S2"
+        className="c6 c7 c8 S2"
       >
         <div
           className="S1"
@@ -906,13 +935,13 @@ exports[`3. three child elements 1`] = `
         </div>
       </div>
       <div
-        className="c4 S3"
+        className="c9 S3"
       />
       <div
-        className="c5 S8"
+        className="c10 S8"
       >
         <div
-          className="c6 S5"
+          className="c11 S5"
         >
           <div
             className="S4"
@@ -921,7 +950,7 @@ exports[`3. three child elements 1`] = `
           </div>
         </div>
         <div
-          className="c7 S7"
+          className="c12 S7"
         >
           <div
             className="S6"

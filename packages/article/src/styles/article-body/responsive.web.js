@@ -1,153 +1,157 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import styled from "styled-components";
 import {
+  breakpoints,
   colours,
   fonts,
   fontSizes,
   spacing
 } from "@times-components/styleguide";
-import config from "../responsive-config";
 
 /* --- Body --- */
 
-export const ParagraphContainer = withResponsiveStyles(
-  "div",
-  {
-    base: () => config.articleContainerPadding,
-    mediumUp: () => config.mediumBpPositioning,
-    wideUp: () => `width: ${config.wideBpWidth};`
-  },
-  "ParagraphContainer"
-);
+export const ParagraphContainer = styled.div`
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
 
-export const Paragraph = withResponsiveStyles(
-  "p",
-  {
-    base: () => `
-    color: ${colours.functional.primary};
-    font-family: "${fonts.bodyRegular}";
-    line-height: 26px;
-    font-size: ${fontSizes.bodyMobile}px;
-    margin-bottom: ${spacing(5)};
-    margin-top: 0;
-    display: block;
-  `,
-    mediumUp: () => `
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
+
+export const Paragraph = styled.p`
+  color: ${colours.functional.primary};
+  font-family: "${fonts.bodyRegular}";
+  line-height: 26px;
+  font-size: ${fontSizes.bodyMobile}px;
+  margin-bottom: ${spacing(5)};
+  margin-top: 0;
+  display: block;
+
+  @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.body}px;
     line-height: 30px;
-  `
-  },
-  "Paragraph"
-);
+  }
+`;
 
 /* --- Lead Asset Styles --- */
 
-export const LeadAsset = withResponsiveStyles(
-  View,
-  {
-    base: () => `margin-bottom: ${spacing(2)};`,
-    mediumUp: () => `margin-bottom: ${spacing(4)}`,
-    wideUp: () => `
-      width: ${config.wideBpWidth};
-      margin: 0 auto;
-      padding-bottom: 20px;
-    `
-  },
-  "LeadAsset"
-);
+export const LeadAsset = styled(View)`
+  margin-bottom: ${spacing(2)};
 
-export const LeadAssetCaptionContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => "display: none",
-    wideUp: () => "display: flex"
-  },
-  "LeadAssetCaptionContainer"
-);
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: ${spacing(4)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+`;
+
+export const LeadAssetCaptionContainer = styled(View)`
+  display: none;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: flex;
+  }
+`;
 
 /* --- Article Images --- */
 
-export const PrimaryImg = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    width: 100%;
-    flex-direction: column;
-    padding-bottom: ${spacing(5)};
-  `,
-    mediumUp: () => `
-    width: ${config.mediumBpWidth};
-    margin: 0 auto;
-  `,
-    wideUp: () => `width: ${config.wideBpWidth};`
-  },
-  "PrimaryImg"
-);
+export const PrimaryImg = styled(View)`
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: ${spacing(5)};
 
-const imageStyles = `
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
+
+export const SecondaryImg = styled(View)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
+  padding-bottom: ${spacing(5)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
 `;
 
-export const SecondaryImg = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    ${imageStyles}
-    padding-bottom: ${spacing(5)};
-  `,
-    mediumUp: () => config.mediumBpPositioning,
-    wideUp: () => `width: ${config.wideBpWidth};`
-  },
-  "SecondaryImg"
-);
+export const InlineImg = styled(View)`
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+  padding-bottom: 0;
+  display: block;
 
-export const InlineImg = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    ${imageStyles}
-    padding-bottom: 0;
-    display:block;
-  `,
-    mediumUp: () => config.mediumBpPositioning,
-    wideUp: () => `width: ${config.wideBpWidth};`
-  },
-  "InlineImg"
-);
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
 
 /* --- Pull Quotes --- */
 
-export const PullQuoteResp = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-      padding-left: ${spacing(2)};
-      padding-right: ${spacing(2)};
-      margin-bottom: ${spacing(2)};
-    `,
-    mediumUp: () => `
-      width: 50%;
-      float: left;
-      margin-right: ${spacing(4)};
-      margin-bottom 0px;
-      margin-top: ${spacing(1)};
-      padding-left: 0px;
-      padding-right: 0px;
-    `
-  },
-  "PullQuoteResp"
-);
+export const PullQuoteResp = styled(View)`
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+  margin-bottom: ${spacing(2)};
 
-export const PullQuoteContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `display: block;`,
-    mediumUp: () => config.mediumBpPositioning,
-    wideUp: () => `width: ${config.wideBpWidth};`
-  },
-  "PullQuoteContainer"
-);
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 50%;
+    float: left;
+    margin-right: ${spacing(4)};
+    margin-bottom: 0px;
+    margin-top: ${spacing(1)};
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+`;
+
+export const PullQuoteContainer = styled(View)`
+  display: block;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;

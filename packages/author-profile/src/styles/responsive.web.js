@@ -1,66 +1,52 @@
 import { Text, View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import styled from "styled-components";
 import {
+  breakpoints,
   colours,
   fonts,
   fontSizes,
   spacing
 } from "@times-components/styleguide";
 
-export const AuthorHeadWrapper = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    width: 100%;
-    padding-top: 30px;
-  `,
-    mediumUp: () => `
+export const AuthorHeadWrapper = styled(View)`
+  width: 100%;
+  padding-top: 30px;
+
+  @media (min-width: ${breakpoints.medium}px) {
     padding-top: 60px;
-  `
-  },
-  "AuthorHeadWrapper"
-);
+  }
+`;
 
-export const AuthorNameWrapper = withResponsiveStyles(
-  Text,
-  {
-    base: () => `
-    color: ${colours.functional.brandColour};
-    font-family: ${fonts.headline};
-    font-size: ${fontSizes.headline}px;
-  `,
-    mediumUp: () => `font-size: ${fontSizes.articleHeadline}px;`
-  },
-  "AuthorNameWrapper"
-);
+export const AuthorNameWrapper = styled(Text)`
+  color: ${colours.functional.brandColour};
+  font-family: "${fonts.headline}";
+  font-size: ${fontSizes.headline}px;
 
-export const BioContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    width: 100%;
-    padding-left: ${spacing(2)};
-    padding-right: ${spacing(2)};
-  `,
-    mediumUp: () => `
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.articleHeadline}px;
+  }
+`;
+
+export const BioContainer = styled(View)`
+  width: 100%;
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
     padding-left: 0;
     padding-right: 0;
-    max-width: 680px
-  `,
-    hugeUp: () => "max-width: 760px"
-  },
-  "BioContainer"
-);
+    max-width: 680px;
+  }
 
-export const ImageContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    width: 100px;
-  `,
-    mediumUp: () => `
+  @media (min-width: ${breakpoints.huge}px) {
+    max-width: 760px;
+  }
+`;
+
+export const ImageContainer = styled(View)`
+  width: 100px;
+
+  @media (min-width: ${breakpoints.medium}px) {
     width: 116px;
-  `
-  },
-  "ImageContainer"
-);
+  }
+`;

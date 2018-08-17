@@ -19,7 +19,12 @@ const colours = {
 const Animations = {
   FadeIn
 };
-
+const breakpoints = {
+  small: 520,
+  medium: 768,
+  wide: 1024,
+  huge: 1320
+};
 const fonts = timesFonts;
 const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
@@ -27,6 +32,7 @@ const lineHeight = timesLineHeightsFactory();
 
 export {
   Animations,
+  breakpoints,
   colours,
   fonts,
   fontFactory,

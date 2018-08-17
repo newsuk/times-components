@@ -166,7 +166,7 @@ exports[`card with default layout 1`] = `
 }
 </style>
 
-<FadeIn>
+<indexweb__FadeIn>
   <div
     className="c0 S8"
   >
@@ -192,5 +192,5 @@ exports[`card with default layout 1`] = `
       </div>
     </div>
   </div>
-</FadeIn>
+</indexweb__FadeIn>
 `;

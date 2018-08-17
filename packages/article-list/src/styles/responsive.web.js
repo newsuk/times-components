@@ -1,39 +1,32 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const ListContentContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-      margin: 0 auto;
-      max-width: 680px;
-      width: 100%;
-    `,
-    mediumUp: () => `
-      padding-left: 0;
-      padding-right: 0;
-    `,
-    hugeUp: () => `
-      max-width: 760px;
-    `
-  },
-  "ListContentContainer"
-);
+export const ListContentContainer = styled(View)`
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
 
-export const ListItemWrapper = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    padding-bottom: ${spacing(3)};
-    padding-top: ${spacing(3)};
-    padding-left: ${spacing(2)};
-    padding-right: ${spacing(2)};
-  `,
-    mediumUp: () => `
+  @media (min-width: ${breakpoints.medium}px) {
     padding-left: 0;
     padding-right: 0;
-    
+  }
+
+  @media (min-width: ${breakpoints.huge}px) {
+    max-width: 760px;
+  }
+`;
+
+export const ListItemWrapper = styled(View)`
+  padding-bottom: ${spacing(3)};
+  padding-top: ${spacing(3)};
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 0;
+    padding-right: 0;
+
     .articleListImage {
       flex: 2;
       margin-bottom: 0;
@@ -46,92 +39,72 @@ export const ListItemWrapper = withResponsiveStyles(
       flex-basis: 0 !important;
       min-width: auto;
     }
-  `
-  },
-  "ListItemWrapper"
-);
+  }
+`;
 
-export const ListItemSeparator = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    margin-left: ${spacing(2)};
-    margin-right: ${spacing(2)};
-  `,
-    mediumUp: () => `
+export const ListItemSeparator = styled(View)`
+  margin-left: ${spacing(2)};
+  margin-right: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
     margin-left: 0;
     margin-right: 0;
-  `
-  },
-  "ListItemSeparator"
-);
+  }
+`;
 
-export const ListItemLongText = withResponsiveStyles(
-  View,
-  {
-    base: () => "display: none;",
-    mediumUp: () => `display: block; padding-left: ${spacing(3)};`
-  },
-  "ListItemLongText"
-);
+export const ListItemLongText = styled(View)`
+  display: none;
 
-export const ListItemShortText = withResponsiveStyles(
-  View,
-  {
-    base: () => "display: block;",
-    mediumUp: () => "display: none;"
-  },
-  "ListItemShortText"
-);
+  @media (min-width: ${breakpoints.medium}px) {
+    display: block;
+    padding-left: ${spacing(3)};
+  }
+`;
 
-export const PageErrorContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-  `,
-    mediumUp: () => `
+export const ListItemShortText = styled(View)`
+  display: block;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    display: none;
+  }
+`;
+
+export const PageErrorContainer = styled(View)`
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+
+  @media (min-width: ${breakpoints.medium}px) {
     padding-left: 15%;
     padding-right: 15%;
-  `,
-    wideUp: () => `
-    flex-direction: row-reverse;
-  `
-  },
-  "PageErrorContainer"
-);
+  }
 
-export const PageErrorImageContainer = withResponsiveStyles(
-  View,
-  {
-    base: () => `
-    align-self: center;
-    max-width: 300px;
-    width: 100%;
-  `,
-    mediumUp: () => `
+  @media (min-width: ${breakpoints.wide}px) {
+    flex-direction: row-reverse;
+  }
+`;
+
+export const PageErrorImageContainer = styled(View)`
+  align-self: center;
+  max-width: 300px;
+  width: 100%;
+
+  @media (min-width: ${breakpoints.medium}px) {
     max-width: 428px;
-  `,
-    wideUp: () => `
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
     max-width: none;
     width: 50%;
-  `
-  },
-  "PageErrorImageContainer"
-);
+  }
+`;
 
-export const PageErrorContentContainer = withResponsiveStyles(
-  View,
-  {
-    wideUp: () => `
+export const PageErrorContentContainer = styled(View)`
+  @media (min-width: ${breakpoints.wide}px) {
     align-self: center;
     max-width: 428px;
-  `
-  },
-  "PageErrorContentContainer"
-);
+  }
+`;
