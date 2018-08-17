@@ -1,9 +1,9 @@
 import {
   addSerializers,
   compose,
-  print,
-  minimalNativeTransform,
-  minimaliseTransform
+  flattenStyleTransform,
+  minimaliseTransform,
+  print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
 import shared from "./comments.base";
@@ -13,7 +13,7 @@ export default () => {
     expect,
     compose(
       print,
-      minimalNativeTransform,
+      flattenStyleTransform,
       minimaliseTransform((value, key) => key !== "style")
     )
   );
