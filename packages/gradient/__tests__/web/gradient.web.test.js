@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { StyleSheet, Text } from "react-native";
 import { mount } from "enzyme";
 import {
@@ -22,7 +23,7 @@ addSerializers(
     stylePrinter,
     hoistStyleTransform,
     minimalWebTransform,
-    rnwTransform(["backgroundColor"])
+    rnwTransform(AppRegistry, ["backgroundColor"])
   )
 );
 
@@ -50,7 +51,7 @@ const tests = [
           print,
           minimaliseTransform((value, key) => key === "style"),
           minimalWebTransform,
-          rnwTransform()
+          rnwTransform(AppRegistry)
         )
       );
 

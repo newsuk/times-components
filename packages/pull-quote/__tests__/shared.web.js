@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -25,7 +26,7 @@ export default () => {
       minimaliseTransform(
         (value, key) => key === "style" || key === "className"
       ),
-      rnwTransform()
+      rnwTransform(AppRegistry)
     )
   );
 

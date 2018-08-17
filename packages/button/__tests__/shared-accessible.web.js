@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -13,7 +14,7 @@ export default () => {
   addSerializers(
     expect,
     enzymeRenderedSerializer(),
-    compose(print, rnwTransform(), minimalWebTransform)
+    compose(print, rnwTransform(AppRegistry), minimalWebTransform)
   );
 
   shared(mount);

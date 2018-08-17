@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { Text } from "react-native";
 import { shallow, mount } from "enzyme";
 import {
@@ -43,7 +44,7 @@ export default () => {
         TimesImage: propsNoChildren,
         ...meltNative
       }),
-      rnwTransform()
+      rnwTransform(AppRegistry)
     )
   );
 

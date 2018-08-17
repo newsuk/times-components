@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -33,7 +34,7 @@ export default () => {
     compose(
       stylePrinter,
       minimalWebTransform,
-      rnwTransform(styles),
+      rnwTransform(AppRegistry, styles),
       minimaliseTransform((value, key) => accessibleAttributes.has(key))
     )
   );

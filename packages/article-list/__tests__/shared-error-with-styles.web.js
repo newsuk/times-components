@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -53,7 +54,7 @@ export default () => {
       minimaliseTransform(
         (value, key) => !keepProps.has(key) && !key.includes("Class")
       ),
-      rnwTransform(styles),
+      rnwTransform(AppRegistry, styles),
       flattenStyleTransform,
       hoistStyleTransform
     )
