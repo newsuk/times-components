@@ -2,6 +2,7 @@ import {
   addSerializers,
   compose,
   print,
+  minimalNativeTransform,
   minimaliseTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
@@ -10,7 +11,11 @@ import shared from "./comments.base";
 export default () => {
   addSerializers(
     expect,
-    compose(print, minimaliseTransform((value, key) => key !== "style"))
+    compose(
+      print,
+      minimalNativeTransform,
+      minimaliseTransform((value, key) => key !== "style")
+    )
   );
 
   const realIntl = Intl;

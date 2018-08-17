@@ -1,3 +1,3 @@
-import shared from "../images-with-style.native";
+import shared from "../images-with-style.web";
 
 shared();

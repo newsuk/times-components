@@ -48,30 +48,12 @@ exports[`1. a secondary image 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="View comments"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="View comments"
-          >
-            View comments
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -125,30 +107,12 @@ exports[`2. an inline image 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <View
-          accessibilityComponentType="button"
-          accessibilityLabel="View comments"
-          accessibilityTraits="button"
-        >
-          <Text
-            title="View comments"
-          >
-            View comments
-          </Text>
-        </View>
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>

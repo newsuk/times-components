@@ -15,7 +15,6 @@ exports[`1. a secondary image 1`] = `
         <div>
           <h1
             aria-level="1"
-            dir="auto"
             role="heading"
           >
             Some Headline
@@ -24,20 +23,12 @@ exports[`1. a secondary image 1`] = `
       </div>
       <div>
         <div>
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
-              <time
-                dateTime="2015-03-13T18:54:58.000Z"
-              >
-                Friday March 13 2015, 06:54pm
-              </time>
-              <span>
-                , The Times
-              </span>
+          <div>
+            <span>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
             </span>
           </div>
         </div>
@@ -98,7 +89,6 @@ exports[`2. an inline image 1`] = `
         <div>
           <h1
             aria-level="1"
-            dir="auto"
             role="heading"
           >
             Some Headline
@@ -107,20 +97,12 @@ exports[`2. an inline image 1`] = `
       </div>
       <div>
         <div>
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
-              <time
-                dateTime="2015-03-13T18:54:58.000Z"
-              >
-                Friday March 13 2015, 06:54pm
-              </time>
-              <span>
-                , The Times
-              </span>
+          <div>
+            <span>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
             </span>
           </div>
         </div>

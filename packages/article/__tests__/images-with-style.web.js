@@ -2,23 +2,47 @@ import {
   addSerializers,
   compose,
   flattenStyleTransform,
+  hoistStyleTransform,
   minimaliseTransform,
-  print
+  minimalWebTransform,
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
-import "./mocks.native";
+import "./mocks.web";
 import shared from "./images.base";
 
 jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
+
+const styles = [
+  "alignItems",
+  "flex",
+  "flexBasis",
+  "fontWeight",
+  "justifyContent",
+  "lineHeight",
+  "marginBottom",
+  "marginTop",
+  "paddingBottom",
+  "paddingTop"
+];
 
 export default () => {
   addSerializers(
     expect,
     compose(
-      print,
+      stylePrinter,
+      minimalWebTransform,
+      minimaliseTransform(
+        (value, key) => key !== "style" && key !== "className"
+      ),
       flattenStyleTransform,
-      minimaliseTransform((value, key) => key !== "style")
+      hoistStyleTransform,
+      rnwTransform(styles)
     )
   );
+
+  // eslint-disable-next-line global-require
+  require("jest-styled-components");
 
   const realIntl = Intl;
 
