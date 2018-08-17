@@ -40,7 +40,7 @@ const ArticleDetailsPage = ({
             error={error}
             isLoading={isLoading}
             onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
-            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
             onCommentsPress={(event, { articleId: id, url }) =>
               onCommentsPress(id, url)
             }
