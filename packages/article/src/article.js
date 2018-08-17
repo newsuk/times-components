@@ -150,7 +150,7 @@ class ArticlePage extends Component {
     const { error, isLoading } = this.props;
 
     if (error) {
-      return <ArticleError {...error} />;
+      return <ArticleError message={JSON.stringify(error, null, 2)} />;
     }
 
     if (isLoading) {
