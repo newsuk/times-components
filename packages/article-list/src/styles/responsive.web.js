@@ -1,5 +1,4 @@
 import { View } from "react-native";
-<<<<<<< HEAD
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
