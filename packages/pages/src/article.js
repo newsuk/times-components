@@ -15,6 +15,7 @@ const ArticleDetailsPage = ({
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
+  onNetworkError,
   onVideoPress,
   onLinkPress,
   onTopicPress,
@@ -53,6 +54,7 @@ const ArticleDetailsPage = ({
                 onLinkPress(url);
               }
             }}
+            onNetworkError={() => onNetworkError(articleId)}
             onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
             onTopicPress={(event, { slug }) => onTopicPress(slug)}
             onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
@@ -67,14 +69,15 @@ const ArticleDetailsPage = ({
 ArticleDetailsPage.propTypes = {
   articleId: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
-  platformAdConfig: PropTypes.shape({}).isRequired,
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
+  onNetworkError: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired,
+  platformAdConfig: PropTypes.shape({}).isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
 };

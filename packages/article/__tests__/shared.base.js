@@ -50,6 +50,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -143,6 +144,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -172,6 +174,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -197,6 +200,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -229,6 +233,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -305,6 +310,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -328,6 +334,7 @@ export const snapshotTests = renderComponent => [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -379,6 +386,7 @@ export const snapshotTests = renderComponent => [
                 onCommentGuidelinesPress={() => {}}
                 onCommentsPress={() => {}}
                 onLinkPress={() => {}}
+                onNetworkError={() => {}}
                 onRelatedArticlePress={() => {}}
                 onTopicPress={() => {}}
                 onTwitterLinkPress={() => {}}
@@ -414,6 +422,7 @@ const negativeTests = [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -438,6 +447,7 @@ const negativeTests = [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -462,6 +472,7 @@ const negativeTests = [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
@@ -489,6 +500,7 @@ const negativeTests = [
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}

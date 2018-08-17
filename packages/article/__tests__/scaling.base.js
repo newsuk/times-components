@@ -21,6 +21,7 @@ export default renderComponent => [
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
@@ -47,6 +48,7 @@ export default renderComponent => [
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
@@ -73,6 +75,7 @@ export default renderComponent => [
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}

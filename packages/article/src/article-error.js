@@ -1,11 +1,16 @@
 import React from "react";
 import { Text, View } from "react-native";
+import PropTypes from "prop-types";
 
-const ArticleError = props => (
+const ArticleError = ({ message }) => (
   <View>
     <Text>An error occurred</Text>
-    <Text>{JSON.stringify(props, null, 2)}</Text>
+    <Text>{message}</Text>
   </View>
 );
+
+ArticleError.propTypes = {
+  message: PropTypes.string.isRequired
+};
 
 export default ArticleError;

@@ -19,6 +19,7 @@ export default makeTest => {
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           onLinkPress={() => {}}
+          onNetworkError={() => {}}
           onTopicPress={() => {}}
           onVideoPress={() => {}}
           platformAdConfig={{}}
