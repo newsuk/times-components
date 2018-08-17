@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { StyleSheet, Text } from "react-native";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
@@ -40,7 +41,7 @@ describe("hoist-style should", () => {
       compose(
         stylePrinter,
         hoistStyleTransform,
-        rnwTransform(["borderTopWidth"])
+        rnwTransform(AppRegistry, ["borderTopWidth"])
       )
     );
 
