@@ -85,15 +85,25 @@ const renderRow = analyticsStream => (
       );
     }
 
-    case "relatedArticles": {
-      const { relatedArticles, relatedArticlesLayout } = rowData.data;
+    case "relatedArticleSlice": {
+      const { relatedArticleSlice } = rowData.data;
+      const {
+        items,
+        lead,
+        opinion,
+        sliceName,
+        support1,
+        support2
+      } = relatedArticleSlice;
       return (
         <RelatedArticles
           analyticsStream={analyticsStream}
-          articles={relatedArticles}
-          mainId={relatedArticlesLayout.main}
+          lead={lead}
           onPress={onRelatedArticlePress}
-          template={relatedArticlesLayout.template}
+          opinion={opinion}
+          sliceName={sliceName}
+          standardArticles={items}
+          supports={[support1, support2]}
         />
       );
     }

@@ -10,8 +10,7 @@ const emptyArticle = {
   flags: null,
   label: null,
   leadAsset: null,
-  relatedArticles: null,
-  relatedArticlesLayout: null,
+  relatedArticleSlice: null,
   standfirst: null,
   topics: null
 };

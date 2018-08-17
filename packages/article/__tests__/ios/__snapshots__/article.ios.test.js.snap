@@ -188,7 +188,8 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     </View>
     <View>
       <RelatedArticles
-        articles={
+        sliceName="StandardSlice"
+        standardArticles={
           Array [
             Object {
               "__typename": "Article",
@@ -220,7 +221,12 @@ exports[`2. a full article with an image as the lead asset 1`] = `
             },
           ]
         }
-        template="DEFAULT"
+        supports={
+          Array [
+            undefined,
+            undefined,
+          ]
+        }
       />
     </View>
     <View />
