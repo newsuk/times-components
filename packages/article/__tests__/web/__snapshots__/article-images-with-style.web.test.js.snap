@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a secondary image 1`] = `
+<article>
+  <div>
+    <Ad
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    />
+  </div>
+  <div>
+    <header>
+      <div>
+        <div>
+          <h1>
+            Some Headline
+          </h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <span>
+              <time>
+                Friday March 13 2015, 06:54pm
+              </time>
+              <span>
+                , The Times
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div />
+    </header>
+    <div>
+      <div>
+        <ArticleImage />
+      </div>
+    </div>
+  </div>
+  <aside />
+  <Ad />
+  <Ad />
+  <Ad />
+</article>
+`;
+
+exports[`2. an inline image 1`] = `
+<article>
+  <div>
+    <Ad
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    />
+  </div>
+  <div>
+    <header>
+      <div>
+        <div>
+          <h1>
+            Some Headline
+          </h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <span>
+              <time>
+                Friday March 13 2015, 06:54pm
+              </time>
+              <span>
+                , The Times
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div />
+    </header>
+    <div>
+      <div>
+        <ArticleImage />
+      </div>
+    </div>
+  </div>
+  <aside />
+  <Ad />
+  <Ad />
+  <Ad />
+</article>
+`;

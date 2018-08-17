@@ -375,125 +375,7 @@ exports[`5. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`6. a secondary image 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View>
-      <View>
-        <Text>
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View>
-        <View>
-          <Text>
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "3:2",
-              "url": "https://image-2.io",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`7. an inline image 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View>
-      <View>
-        <Text>
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View>
-        <View>
-          <Text>
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "inline",
-              "ratio": "9:4",
-              "url": "https://image-inline.io",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`8. an article loading state 1`] = `
+exports[`6. an article loading state 1`] = `
 <View>
   <ActivityIndicator
     animating={true}
@@ -503,7 +385,7 @@ exports[`8. an article loading state 1`] = `
 </View>
 `;
 
-exports[`9. an article with updated byline 1`] = `
+exports[`7. an article with updated byline 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -550,7 +432,7 @@ exports[`9. an article with updated byline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`9. an article with updated byline 2`] = `
+exports[`7. an article with updated byline 2`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -621,7 +503,7 @@ exports[`9. an article with updated byline 2`] = `
 </RCTScrollView>
 `;
 
-exports[`10. an article that moves to a loading state 1`] = `
+exports[`8. an article that moves to a loading state 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -668,7 +550,7 @@ exports[`10. an article that moves to a loading state 1`] = `
 </RCTScrollView>
 `;
 
-exports[`10. an article that moves to a loading state 2`] = `
+exports[`8. an article that moves to a loading state 2`] = `
 <View>
   <ActivityIndicator
     animating={true}

@@ -576,171 +576,7 @@ exports[`5. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`6. a secondary image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "700",
-              "lineHeight": 30,
-              "marginBottom": 7,
-              "marginTop": 15,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`7. an inline image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "700",
-              "lineHeight": 30,
-              "marginBottom": 7,
-              "marginTop": 15,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`8. an article loading state 1`] = `
+exports[`6. an article loading state 1`] = `
 <View
   style={
     Object {
@@ -755,7 +591,7 @@ exports[`8. an article loading state 1`] = `
 </View>
 `;
 
-exports[`9. an article with updated byline 1`] = `
+exports[`7. an article with updated byline 1`] = `
 <RCTScrollView>
   <View>
     <View>
@@ -856,7 +692,7 @@ exports[`9. an article with updated byline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`9. an article with updated byline 2`] = `
+exports[`7. an article with updated byline 2`] = `
 <RCTScrollView>
   <View>
     <View>
