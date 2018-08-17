@@ -35,6 +35,7 @@ export default () =>
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
@@ -63,6 +64,7 @@ export default () =>
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}

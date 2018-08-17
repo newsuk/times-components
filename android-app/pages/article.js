@@ -12,6 +12,7 @@ const {
   onCommentsPress,
   onCommentGuidelinesPress,
   onLinkPress,
+  onNetworkError,
   onTopicPress,
   onVideoPress
 } = NativeModules.ArticleEvents;
@@ -45,6 +46,7 @@ const ArticleView = ({ articleId, scale, sectionName }) => {
       onCommentsPress={onCommentsPress}
       onCommentGuidelinesPress={onCommentGuidelinesPress}
       onLinkPress={onLinkPress}
+      onNetworkError={onNetworkError}
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
       platformAdConfig={adConfig}

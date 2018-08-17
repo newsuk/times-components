@@ -147,10 +147,11 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, isLoading } = this.props;
+    const { error, isLoading, onNetworkError } = this.props;
 
     if (error) {
-      return <ArticleError {...error} />;
+      onNetworkError(error);
+      return <ArticleError message={JSON.stringify(error, null, 2)} />;
     }
 
     if (isLoading) {
@@ -186,6 +187,7 @@ ArticlePage.propTypes = {
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
+  onNetworkError: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };

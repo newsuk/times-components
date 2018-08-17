@@ -32,6 +32,7 @@ export default {
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
             onLinkPress={() => {}}
+            onNetworkError={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
             platformAdConfig={{ sectionName: "news" }}
