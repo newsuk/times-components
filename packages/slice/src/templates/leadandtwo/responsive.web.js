@@ -16,10 +16,6 @@ export const getContainer = ({ hasSupports }) => {
       flex-direction: row;
       padding-bottom: ${spacing(2)};
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      width: ${hasSupports ? "100%" : "56.2%"};
-    }
   `;
 
   if (hasSupports) {
@@ -38,6 +34,12 @@ export const getContainer = ({ hasSupports }) => {
     `;
   }
 
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      width: ${hasSupports ? "100%" : "56.2%"};
+    }
+  `;
+
   return Base;
 };
 
@@ -49,10 +51,6 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
     padding-left: ${spacing(2)};
     padding-right: ${spacing(2)};
     width: ${hasSupports ? "auto" : "100%"};
-
-    @media (min-width: ${breakpoints.wide}px) {
-      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};
-    }
   `;
 
   if (hasSupports) {
@@ -73,6 +71,12 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};
+    }
+  `;
 
   return Base;
 };

@@ -41,16 +41,6 @@ export const getConfigWrapper = ({ itemCount }) => {
         line-height: 30px;
       }
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      .summary125Class {
-        display: ${itemCount === 3 ? "none" : "block"};
-      }
-
-      .summary145Class {
-        display: ${itemCount === 3 ? "block" : "none"};
-      }
-    }
   `;
 
   if (itemCount === 1) {
@@ -71,6 +61,18 @@ export const getConfigWrapper = ({ itemCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      .summary125Class {
+        display: ${itemCount === 3 ? "none" : "block"};
+      }
+
+      .summary145Class {
+        display: ${itemCount === 3 ? "block" : "none"};
+      }
+    }
+  `;
 
   return Base;
 };

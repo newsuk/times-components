@@ -73,12 +73,6 @@ export const getConfigWrapper = ({ supportCount }) => {
         display: ${supportCount === 2 ? "block" : "none"};
       }
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      .leadImageContainerClass {
-        padding-right: ${spacing(2)};
-      }
-    }
   `;
 
   if (supportCount === 2) {
@@ -113,6 +107,12 @@ export const getConfigWrapper = ({ supportCount }) => {
   } else {
     Base = styled(Base)`
       @media (min-width: ${breakpoints.medium}px) {
+        .leadImageContainerClass {
+          padding-right: ${spacing(2)};
+        }
+      }
+
+      @media (min-width: ${breakpoints.wide}px) {
         .leadImageContainerClass {
           padding-right: ${spacing(2)};
         }

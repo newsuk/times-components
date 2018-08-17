@@ -26,10 +26,6 @@ export const getChildrenContainer = ({ childCount }) => {
     @media (min-width: ${breakpoints.medium}px) {
       flex-direction: row;
     }
-
-    @media (min-width: ${breakpoints.wide}px) {
-      width: ${childCount >= 3 ? "100%" : "56.2%"};
-    }
   `;
 
   if (childCount >= 3) {
@@ -47,6 +43,12 @@ export const getChildrenContainer = ({ childCount }) => {
       }
     `;
   }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.wide}px) {
+      width: ${childCount >= 3 ? "100%" : "56.2%"};
+    }
+  `;
 
   return Base;
 };
