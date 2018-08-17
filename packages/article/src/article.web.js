@@ -115,13 +115,14 @@ const ArticlePage = ({
   analyticsStream,
   article,
   error,
+  refetch,
   isLoading,
   onAuthorPress,
   onRelatedArticlePress,
   onTopicPress
 }) => {
   if (error) {
-    return <ArticleError {...error} />;
+    return <ArticleError refetch={refetch} />;
   }
 
   if (isLoading) {

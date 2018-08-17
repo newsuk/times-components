@@ -53,6 +53,7 @@ export const snapshotTests = renderComponent => [
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
           onVideoPress={() => {}}
+          refetch={() => {}}
         />
       );
 
