@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pull-quote",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Pull Quote for Times Components Articles",
   "main": "dist/pull-quote",
   "dev": "src/pull-quote",
@@ -68,9 +68,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.2.0",
-    "@times-components/link": "3.0.9",
-    "@times-components/styleguide": "3.2.1",
+    "@times-components/icons": "2.2.1",
+    "@times-components/link": "3.0.10",
+    "@times-components/styleguide": "3.2.2",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
