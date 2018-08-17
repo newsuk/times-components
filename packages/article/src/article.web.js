@@ -122,7 +122,7 @@ const ArticlePage = ({
   onTopicPress
 }) => {
   if (error) {
-    return <ArticleError refetch={refetch} />;
+    return <ArticleError {...error} />;
   }
 
   if (isLoading) {

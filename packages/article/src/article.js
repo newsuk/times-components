@@ -179,6 +179,7 @@ class ArticlePage extends Component {
 
 ArticlePage.propTypes = {
   ...articlePropTypes,
+  refetch: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,

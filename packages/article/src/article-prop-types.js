@@ -15,7 +15,6 @@ const articlePropTypes = {
       message: PropTypes.string
     })
   }),
-  refetch: PropTypes.func.isRequired,
   isLoading: PropTypes.bool,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
