@@ -18,6 +18,7 @@ export default makeTest => {
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
+          onError={() => {}}
           onLinkPress={() => {}}
           onTopicPress={() => {}}
           onVideoPress={() => {}}

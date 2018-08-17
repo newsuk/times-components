@@ -15,6 +15,7 @@ const ArticleDetailsPage = ({
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
+  onError,
   onVideoPress,
   onLinkPress,
   onTopicPress,
@@ -30,6 +31,10 @@ const ArticleDetailsPage = ({
         scale: scale || defaults.theme.scale,
         sectionColour: colours.section[pageSection || articleSection]
       };
+
+      if (error) {
+        onError(articleId);
+      }
 
       return (
         <Context.Provider value={{ theme }}>
@@ -72,6 +77,7 @@ ArticleDetailsPage.propTypes = {
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
+  onError: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired,
