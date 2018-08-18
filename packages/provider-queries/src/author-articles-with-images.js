@@ -1,40 +1,45 @@
-import gql from "graphql-tag";
-
-export default gql`
-  query ArticleListQuery(
-    $slug: Slug!
+export default `
+  query ArticleListQuery(    
     $first: Int
-    $skip: Int
     $imageRatio: Ratio!
+    $skip: Int
+    $slug: Slug!
   ) {
     author(slug: $slug) {
+      __typename
       articles {
+        __typename
         count
         list(first: $first, skip: $skip) {
-          summary(maxCharCount: 145)
+          __typename
+          headline
           id
           label
           leadAsset {
-            type: __typename
+            __typename
             ... on Image {
-              title
+              __typename
               crop(ratio: $imageRatio) {
+                __typename
                 url
               }
+              title
             }
             ... on Video {
-              posterImage {
-                title
+              __typename
+              posterImage {                
                 crop(ratio: $imageRatio) {
+                  __typename
                   url
                 }
+                title
               }
             }
           }
           publicationName
           publishedTime
-          headline
           shortHeadline
+          summary(maxCharCount: 145)          
           url
         }
       }
@@ -48,8 +53,8 @@ export const propsToVariables = ({
   page,
   articleImageRatio = "3:2"
 }) => ({
-  slug,
   first: pageSize,
+  imageRatio: articleImageRatio,
   skip: pageSize * (page - 1),
-  imageRatio: articleImageRatio
+  slug
 });

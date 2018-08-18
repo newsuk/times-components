@@ -12,7 +12,7 @@
     "test": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist --copy-files",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {
@@ -50,6 +50,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.0",
+    "@times-components/test-utils": "1.1.0",
     "@times-components/webpack-configurator": "2.0.5",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -75,6 +76,7 @@
     "apollo-utilities": "1.0.18",
     "graphql": "0.13.2",
     "graphql-tag": "2.8.0",
+    "graphql-tools": "3.1.1",
     "lodash.isequal": "4.4.0",
     "prop-types": "15.6.2",
     "react": "16.4.2",

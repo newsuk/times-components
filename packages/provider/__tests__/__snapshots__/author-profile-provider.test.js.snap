@@ -4,8 +4,8 @@ exports[`AuthorArticlesNoImages provider returns query result 1`] = `
 Object {
   "__typename": "Author",
   "articles": Object {
-    "__typename": "Articles",
-    "count": 20,
+    "__typename": "AuthorArticles",
+    "count": 200,
     Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",
   },
   "biography": Array [

@@ -1,17 +1,17 @@
-import gql from "graphql-tag";
-
-export default gql`
+export default `
   query AuthorQuery($slug: Slug!) {
     author(slug: $slug) {
-      name
-      jobTitle
-      biography
-      image
-      twitter
-      hasLeadAssets
+      __typename
       articles {
+        __typename
         count
       }
+      biography
+      hasLeadAssets
+      image
+      jobTitle
+      name     
+      twitter
     }
   }
 `;

@@ -1,14 +1,15 @@
 import React from "react";
 import { Text } from "react-native";
-import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
-import topicFixture from "@times-components/provider-test-tools/fixtures/topic.json";
 import articleFixture from "@times-components/provider-test-tools/fixtures/article";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import {
-  fixtureGenerator,
-  MockedProvider
+  authorProfile as makeAuthorParams,
+  MockedProvider,
+  MockFixture,
+  topic as makeTopicParams
 } from "@times-components/provider-test-tools";
+import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,
@@ -17,8 +18,6 @@ import connectGraphql, {
   TopicArticlesProvider
 } from "./src/provider.js";
 import { query as articleQuery } from "./src/article";
-import { query as authorProfileQuery } from "./src/author-profile";
-import { query as topicQuery } from "./src/topic";
 
 export default {
   name: "Helpers/Provider",
@@ -99,41 +98,36 @@ export default {
       type: "story",
       name: "Author Profile",
       component: () => {
-        const mocks = [
-          {
-            request: {
-              query: addTypenameToDocument(authorProfileQuery),
-              variables: {
-                slug: "fiona-hamilton"
-              }
-            },
-            result: {
-              data: {
-                author: {
-                  articles: {
-                    count: 20,
-                    list: authorProfileFixture,
-                    __typename: "Articles"
-                  },
-                  __typename: "Author"
-                }
-              }
-            }
-          }
-        ];
+        const articleImageRatio = "3:2";
+        const pageSize = 2;
+        const slug = "deborah-haynes";
 
         return (
-          <MockedProvider mocks={mocks}>
-            <AuthorProfileProvider
-              articleImageRatio="16:9"
-              debounceTimeMs={0}
-              page={4}
-              pageSize={3}
-              slug="fiona-hamilton"
-            >
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </AuthorProfileProvider>
-          </MockedProvider>
+          <MockFixture
+            params={makeAuthorParams({
+              articleQuery: authorArticlesWithImagesQuery,
+              articleVariables: iteration => ({
+                first: pageSize,
+                imageRatio: articleImageRatio,
+                skip: (iteration - 1) * pageSize,
+                slug
+              }),
+              pageSize,
+              slug
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <AuthorProfileProvider
+                  debounceTimeMs={0}
+                  page={1}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                </AuthorProfileProvider>
+              </MockedProvider>
+            )}
+          />
         );
       }
     },
@@ -169,22 +163,36 @@ export default {
       type: "story",
       name: "Author Profile Articles with Images",
       component: () => {
-        const mocks = fixtureGenerator.makeArticleMocks({
-          withImages: true,
-          pageSize: 5,
-          delay: 0
-        });
+        const articleImageRatio = "3:2";
+        const pageSize = 2;
+        const slug = "deborah-haynes";
+
         return (
-          <MockedProvider mocks={mocks}>
-            <AuthorArticlesWithImagesProvider
-              debounceTimeMs={0}
-              page={1}
-              pageSize={5}
-              slug="deborah-haynes"
-            >
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </AuthorArticlesWithImagesProvider>
-          </MockedProvider>
+          <MockFixture
+            params={makeAuthorParams({
+              articleQuery: authorArticlesWithImagesQuery,
+              articleVariables: iteration => ({
+                first: pageSize,
+                imageRatio: articleImageRatio,
+                skip: (iteration - 1) * pageSize,
+                slug
+              }),
+              pageSize,
+              slug
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={1}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                </AuthorArticlesWithImagesProvider>
+              </MockedProvider>
+            )}
+          />
         );
       }
     },
@@ -192,24 +200,32 @@ export default {
       type: "story",
       name: "Topic",
       component: () => {
-        const mocks = [
-          {
-            request: {
-              query: addTypenameToDocument(topicQuery),
-              variables: {
-                slug: "chelsea"
-              }
-            },
-            result: topicFixture
-          }
-        ];
+        const articleImageRatio = "3:2";
+        const name = "Chelsea";
+        const pageSize = 2;
+        const slug = "chelsea";
 
         return (
-          <MockedProvider mocks={mocks}>
-            <TopicProvider debounceTimeMs={0} slug="chelsea">
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </TopicProvider>
-          </MockedProvider>
+          <MockFixture
+            params={makeTopicParams({
+              articleVariables: iteration => ({
+                first: pageSize,
+                imageRatio: articleImageRatio,
+                skip: (iteration - 1) * pageSize,
+                slug
+              }),
+              name,
+              pageSize,
+              slug
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <TopicProvider debounceTimeMs={0} slug="chelsea">
+                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                </TopicProvider>
+              </MockedProvider>
+            )}
+          />
         );
       }
     },
@@ -217,22 +233,37 @@ export default {
       type: "story",
       name: "Topic Articles",
       component: () => {
-        const mocks = fixtureGenerator.makeTopicArticleMocks({
-          withImages: true,
-          pageSize: 5,
-          delay: 0
-        });
+        const articleImageRatio = "3:2";
+        const name = "Chelsea";
+        const pageSize = 2;
+        const slug = "chelsea";
+
         return (
-          <MockedProvider mocks={mocks}>
-            <TopicArticlesProvider
-              debounceTimeMs={0}
-              page={1}
-              pageSize={5}
-              slug="chelsea"
-            >
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </TopicArticlesProvider>
-          </MockedProvider>
+          <MockFixture
+            params={makeTopicParams({
+              articleVariables: iteration => ({
+                first: pageSize,
+                imageRatio: articleImageRatio,
+                skip: (iteration - 1) * pageSize,
+                slug
+              }),
+              name,
+              pageSize,
+              slug
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <TopicArticlesProvider
+                  debounceTimeMs={0}
+                  page={1}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                </TopicArticlesProvider>
+              </MockedProvider>
+            )}
+          />
         );
       }
     }

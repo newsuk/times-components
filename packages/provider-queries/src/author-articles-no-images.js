@@ -1,18 +1,18 @@
-import gql from "graphql-tag";
-
-export default gql`
+export default `
   query ArticleListQuery(
-    $slug: Slug!
     $first: Int
-    $skip: Int
-    $shortSummaryLength: Int
     $longSummaryLength: Int
+    $shortSummaryLength: Int
+    $skip: Int
+    $slug: Slug!
   ) {
     author(slug: $slug) {
+      __typename
       articles {
+        __typename
         count
         list(first: $first, skip: $skip) {
-          headline
+          __typename
           id
           label
           leadAsset {
@@ -21,6 +21,7 @@ export default gql`
           longSummary: summary(maxCharCount: $longSummaryLength)
           publicationName
           publishedTime
+          headline
           shortHeadline
           shortSummary: summary(maxCharCount: $shortSummaryLength)
           url
@@ -31,15 +32,15 @@ export default gql`
 `;
 
 export const propsToVariables = ({
-  slug,
+  longSummaryLength,
   pageSize,
   page,
   shortSummaryLength,
-  longSummaryLength
+  slug
 }) => ({
-  slug,
   first: pageSize,
-  skip: pageSize * (page - 1),
+  longSummaryLength,
   shortSummaryLength,
-  longSummaryLength
+  skip: pageSize * (page - 1),
+  slug
 });

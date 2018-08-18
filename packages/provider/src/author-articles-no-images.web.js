@@ -1,3 +1,4 @@
+import gql from "graphql-tag";
 import React from "react";
 import {
   authorArticlesNoImages,
@@ -6,7 +7,7 @@ import {
 import connectGraphql from "./connect";
 
 const AuthorArticlesNoImagesProvider = connectGraphql(
-  authorArticlesNoImages,
+  gql(authorArticlesNoImages),
   authorArticlesNoImagesPTV
 );
 

@@ -1,3 +1,4 @@
+import gql from "graphql-tag";
 import {
   authorArticlesWithImages,
   authorArticlesWithImagesPTV
@@ -5,6 +6,6 @@ import {
 import connectGraphql from "./connect";
 
 export default connectGraphql(
-  authorArticlesWithImages,
+  gql(authorArticlesWithImages),
   authorArticlesWithImagesPTV
 );
