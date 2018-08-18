@@ -106,12 +106,13 @@ the showcase file. The current categories are:
 * <b>Primitive</b> - components that are the basic building blocks from which
   other components can be composed
 * <b>Composed</b> - components that are composed of Primitives
-* <b>Pages</b> - complex page level components made up from multiple Composed
-  and Primitive components
+* <b>Pages</b> - complex page level components made up from multiple
+Composed and Primitive components
 * <b>Helpers</b> - tools, utilities and helpers
 
-For example to add a `Slider` component to the the `Composed` category you just
-prefix the category name in the `slider.showcase.js` file.
+For example to add
+a `Slider` component to the the `Composed` category you just prefix the category
+name in the `slider.stories.js` file.
 
 ```
 {

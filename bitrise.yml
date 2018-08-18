@@ -26,33 +26,6 @@ workflows:
             kill -9 $(lsof -ti :8081)
             echo 'should exit with 0'
     - script@1.1.4:
-        title: run fructose tests
-        inputs:
-        - content: |-
-            #!/bin/bash
-            # fail if any commands fails
-            set -e
-
-            # set up nvm
-            export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-            export NVM_DIR=~/.nvm
-            nvm use stable
-
-            # debug log
-            set -x
-            #iOS setup
-            # install applesmutils
-            brew tap wix/brew
-            brew install applesimutils --HEAD
-            # set device scale
-            defaults write ~/Library/Preferences/com.apple.iphonesimulator SimulatorWindowLastScale-com.apple.CoreSimulator.SimDeviceType.iPhone-7 "0.55"
-            #web setup
-            brew tap caskroom/cask
-            brew cask install google-chrome
-            # tests
-            yarn functional-test:ios
-            yarn functional-test:web
-    - script@1.1.4:
         title: screenshot of desktop
         inputs:
         - content: |-
