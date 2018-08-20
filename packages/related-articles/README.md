@@ -2,7 +2,8 @@
 
 Related articles sit at the bottom of the article, providing similar articles
 for a user to navigate to should they be interested. The related articles
-component uses three templates which are configured within the slice package:
+component uses three templates which are configured within the
+[slice package](https://github.com/newsuk/times-components/tree/master/packages/slice):
 
 * `StandardSlice`
 * `LeadAndTwoSlice`
@@ -11,7 +12,7 @@ component uses three templates which are configured within the slice package:
 ## Standard template
 
 This is the simplest template called `StandardSlice`, whereby all of the
-returned related articles (`standardArticles`) are of equal imortance, and come
+returned related articles (`standardArticles`) are of equal importance, and come
 pre-ordered (or sorted) from the API.
 
 ## Lead and Opinion templates

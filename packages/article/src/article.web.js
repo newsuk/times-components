@@ -46,18 +46,12 @@ const renderArticle = (
     relatedArticleSlice
   } = articleData;
   const leadAssetProps = getLeadAsset(articleData);
-  const displayRelatedArticles =
-    relatedArticleSlice && relatedArticleSlice.sliceName ? (
-      <RelatedArticles
-        analyticsStream={analyticsStream}
-        lead={relatedArticleSlice.lead}
-        onPress={onRelatedArticlePress}
-        opinion={relatedArticleSlice.opinion}
-        sliceName={relatedArticleSlice.sliceName}
-        standardArticles={relatedArticleSlice.items}
-        supports={[relatedArticleSlice.support1, relatedArticleSlice.support2]}
-      />
-    ) : null;
+  const displayRelatedArticles = relatedArticleSlice ? (
+    <RelatedArticles
+      analyticsStream={analyticsStream}
+      relatedArticleSlice={relatedArticleSlice}
+    />
+  ) : null;
 
   return (
     <article>

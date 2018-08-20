@@ -7,17 +7,19 @@ import {
 } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
-import { propTypes, defaultProps } from "./related-articles-prop-types";
+import propTypes from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
-const RelatedArticles = ({
-  lead,
-  onPress,
-  opinion,
-  sliceName,
-  standardArticles,
-  supports
-}) => {
+const RelatedArticles = ({ onPress, relatedArticleSlice }) => {
+  const {
+    items = [],
+    lead,
+    opinion,
+    sliceName,
+    support1,
+    support2
+  } = relatedArticleSlice;
+
   if (!sliceName) return null;
 
   const renderArticleItem = (config, article) => {
@@ -54,17 +56,16 @@ const RelatedArticles = ({
 
   const renderSlice = () => {
     const mainArticle = lead || opinion;
+    const supports = [support1, support2];
 
     switch (sliceName) {
       case "StandardSlice":
       default:
         return (
           <StandardSlice
-            itemCount={standardArticles.length}
+            itemCount={items.length}
             renderItems={config =>
-              standardArticles.map(article =>
-                renderArticleItem(config, article)
-              )
+              items.map(article => renderArticleItem(config, article))
             }
           />
         );
@@ -102,6 +103,5 @@ const RelatedArticles = ({
 };
 
 RelatedArticles.propTypes = propTypes;
-RelatedArticles.defaultProps = defaultProps;
 
 export default withTrackingContext(RelatedArticles);

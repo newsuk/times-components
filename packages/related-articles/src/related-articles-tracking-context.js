@@ -10,7 +10,18 @@ import getHeadline from "./utils";
 export default Component =>
   withTrackingContext(Component, {
     trackingObjectName: "RelatedArticles",
-    getAttrs: ({ lead, opinion, sliceName, standardArticles, supports }) => {
+    getAttrs: ({ relatedArticleSlice }) => {
+      const {
+        items,
+        lead,
+        opinion,
+        sliceName,
+        support1,
+        support2
+      } = relatedArticleSlice;
+      if (!sliceName) return null;
+      const supports = [support1, support2];
+
       const supportsTracking = roles =>
         supports
           .filter(support => support !== undefined)
@@ -28,7 +39,7 @@ export default Component =>
           );
 
       const standardTracking = () =>
-        standardArticles.map(
+        items.map(
           ({ byline, headline, id, publishedTime, shortHeadline }, index) => ({
             id,
             byline: get(byline, "[0].children[0].attributes.value", ""),

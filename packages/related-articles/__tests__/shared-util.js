@@ -27,15 +27,8 @@ export const createRelatedArticlesProps = (
   onPress = () => {}
 ) => ({
   analyticsStream: action,
-  lead: fixtureData.relatedArticleSlice.lead,
   onPress,
-  opinion: fixtureData.relatedArticleSlice.opinion,
-  sliceName: fixtureData.relatedArticleSlice.sliceName,
-  standardArticles: fixtureData.relatedArticleSlice.items,
-  supports: [
-    fixtureData.relatedArticleSlice.support1,
-    fixtureData.relatedArticleSlice.support2
-  ]
+  relatedArticleSlice: fixtureData.relatedArticleSlice
 });
 
 const beforeAndAfterEach = () => {
@@ -69,7 +62,9 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const output = renderComponent(
           <RelatedArticles
             {...createRelatedArticlesProps(fixture, events)}
-            sliceName=""
+            relatedArticleSlice={{
+              sliceName: ""
+            }}
           />
         );
 
