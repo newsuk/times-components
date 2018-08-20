@@ -49,7 +49,7 @@ exports[`1. a secondary image 1`] = `
     <View />
     <View>
       <RelatedArticles
-        relatedArticleSlice={
+        slice={
           Object {
             "items": Array [
               Object {
@@ -147,7 +147,7 @@ exports[`2. an inline image 1`] = `
     <View />
     <View>
       <RelatedArticles
-        relatedArticleSlice={
+        slice={
           Object {
             "items": Array [
               Object {

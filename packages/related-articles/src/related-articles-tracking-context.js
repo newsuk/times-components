@@ -11,14 +11,7 @@ export default Component =>
   withTrackingContext(Component, {
     trackingObjectName: "RelatedArticles",
     getAttrs: ({ slice }) => {
-      const {
-        items,
-        lead,
-        opinion,
-        sliceName,
-        support1,
-        support2
-      } = slice;
+      const { items, lead, opinion, sliceName, support1, support2 } = slice;
       if (!sliceName) return null;
       const supports = [support1, support2];
 
