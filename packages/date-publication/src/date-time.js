@@ -38,7 +38,7 @@ class DatePublication extends Component {
 }
 
 DatePublication.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]).isRequired,
   date: PropTypes.string.isRequired,
   showDay: PropTypes.bool
 };
