@@ -77,7 +77,12 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+          <RelatedArticles
+            {...createRelatedArticlesProps(fixture, events)}
+            relatedArticleSlice={{
+              sliceName: ""
+            }}
+          />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
