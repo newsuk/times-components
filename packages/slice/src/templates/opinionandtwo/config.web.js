@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/styleguide";
 
 const opinionSummaryConfig = {
   1: [125, 160],
@@ -32,139 +32,157 @@ export const getSupportConfig = () => ({
 });
 
 export const getConfigWrapper = ({ supportCount }) => {
-  const ConfigWrapper = withResponsiveStyles(View, {
-    base: () => `
+  let Base = styled(View)`
+    .opinionContentContainerClass {
+      min-height: 250px;
+    }
+
+    .opinionImageContainerClass {
+      align-self: flex-end;
+      bottom: -9px;
+      min-width: 100px;
+      position: absolute;
+      right: 0;
+    }
+
+    .supportImageContainerClass {
+      display: none;
+    }
+
+    .supportSummaryClass {
+      display: none;
+    }
+
+    .summaryHidden {
+      display: none;
+    }
+
+    .opinionSummary125Class {
+      display: block;
+      padding-right: ${spacing(4)};
+      width: 60%;
+    }
+
+    @media (min-width: ${breakpoints.small}px) {
       .opinionContentContainerClass {
-        min-height: 250px;
+        min-height: 200px;
       }
-      .opinionImageContainerClass {
-        align-self: flex-end;
-        bottom: -9px;
-        min-width: 100px;
-        position: absolute;
-        right: 0;
+
+      .opinionHeadlineClass {
+        padding-right: ${spacing(6)};
+        width: 80%;
       }
-      .supportImageContainerClass {
-        display: none;
-      }
-      .supportSummaryClass {
-        display: none;
-      }
-      .summaryHidden {
-        display: none;
-      }
-      .opinionSummary125Class {
-        display: block;
-        padding-right: ${spacing(4)};
-        width: 60%;
-      }
-    `,
-    smallUp: () => {
-      const getOpinionImageStyle = () => {
-        if (supportCount === 0)
-          return `
+    }
+  `;
+
+  if (supportCount === 0) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.small}px) {
+        .opinionImageContainerClass {
           min-width: 130px;
-        `;
-        return `
+        }
+      }
+    `;
+  } else {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.small}px) {
+        .opinionImageContainerClass {
           min-width: 120px;
-        `;
-      };
-      return `
-        .opinionContentContainerClass {
-          min-height: 200px;
         }
+      }
+    `;
+  }
+
+  Base = styled(Base)`
+    @media (min-width: ${breakpoints.medium}px) {
+      .opinionBylineClass,
+      .opinionHeadlineClass {
+        font-size: 30px;
+        line-height: 30px;
+        width: 100%;
+      }
+
+      .opinionContentContainerClass {
+        min-width: auto;
+        padding-right: ${spacing(11)};
+      }
+
+      .opinionImageContainerClass {
+        max-width: 167px;
+        min-width: auto;
+        position: relative;
+      }
+
+      .supportImageContainerClass {
+        display: block;
+      }
+    }
+  `;
+
+  if (supportCount === 0) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
         .opinionImageContainerClass {
-          ${getOpinionImageStyle()}
-        }
-        .opinionHeadlineClass {
-          padding-right: ${spacing(6)};
-          width: 80%;
-        }
-      `;
-    },
-    mediumUp: () => {
-      const getOpinionImageStyle = () => {
-        if (supportCount === 0)
-          return `
           min-width: auto;
-        `;
-        if (supportCount === 1)
-          return `
-          min-width: 165px;
-        `;
-        return `
-          min-width: 152px;
-        `;
-      };
-
-      const getSummaryStyle = () => {
-        if (supportCount === 0)
-          return `
-          .opinionSummary125Class {
-            display: none;
-          }
-          .opinionSummary160Class {
-            display: block;
-          }
-        `;
-        if (supportCount === 1)
-          return `
-          .opinionSummary125Class {
-            display: none;
-          }
-          .opinionSummary145Class {
-            display: block;
-          }
-        `;
-        return `
-          .opinionSummary125Class {
-            display: none;
-          }
-          .opinionSummary160Class {
-            display: block;
-          }
-        `;
-      };
-
-      return `
-        .opinionBylineClass,
-        .opinionHeadlineClass {
-          font-size: 30px;
-          line-height: 30px;
-          width: 100%;
-        }
-        .opinionContentContainerClass {
-          min-width: auto;
-          padding-right: ${spacing(11)};
-        }
-        .opinionImageContainerClass {
-          max-width: 167px;
-          min-width: auto;
-          position: relative;
-          ${getOpinionImageStyle()}
         }
 
-        ${getSummaryStyle()}
+        .opinionSummary125Class {
+          display: none;
+        }
 
-        .supportImageContainerClass {
+        .opinionSummary160Class {
           display: block;
         }
-      `;
-    },
-    wideUp: () => {
-      const summaryStyle = `
+      }
+    `;
+  } else if (supportCount === 1) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
+        .opinionImageContainerClass {
+          min-width: 165px;
+        }
+
+        .opinionSummary125Class {
+          display: none;
+        }
+
+        .opinionSummary145Class {
+          display: block;
+        }
+      }
+    `;
+  } else {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.medium}px) {
+        .opinionImageContainerClass {
+          min-width: 152px;
+        }
+
+        .opinionSummary125Class {
+          display: none;
+        }
+
+        .opinionSummary160Class {
+          display: block;
+        }
+      }
+    `;
+  }
+
+  if (supportCount === 1) {
+    Base = styled(Base)`
+      @media (min-width: ${breakpoints.wide}px) {
         .opinionSummary125Class,
         .opinionSummary145Class {
           display: none;
         }
+
         .opinionSummary225Class {
           display: block;
         }
-      `;
+      }
+    `;
+  }
 
-      return supportCount === 1 ? summaryStyle : ``;
-    }
-  });
-  ConfigWrapper.displayName = "ConfigWrapper";
-  return ConfigWrapper;
+  return Base;
 };

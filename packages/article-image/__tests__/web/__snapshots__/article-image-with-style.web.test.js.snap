@@ -21,20 +21,22 @@ Array [
     />
   </div>,
   <div>
-    <div
-      className="c0"
-    >
-      <div>
+    <responsiveweb__InsetCaptionStyle>
+      <div
+        className="c0"
+      >
         <div>
           <div>
-            Some caption
-          </div>
-          <div>
-            SOME CREDITS
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDITS
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </responsiveweb__InsetCaptionStyle>
   </div>,
 ]
 `;
@@ -122,30 +124,34 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 }
 
 <figure>
-  <div
-    className="c0"
-  >
-    <TimesImage
-      aspectRatio={1.5}
-      uri="https://imageserver/someImage"
-    />
-  </div>
-  <div
-    className="c1"
-  >
-    <figcaption>
-      <div>
+  <responsiveweb__InsetImageStyle>
+    <div
+      className="c0"
+    >
+      <TimesImage
+        aspectRatio={1.5}
+        uri="https://imageserver/someImage"
+      />
+    </div>
+  </responsiveweb__InsetImageStyle>
+  <responsiveweb__InsetCaptionContainerStyle>
+    <div
+      className="c1"
+    >
+      <figcaption>
         <div>
           <div>
-            Landscape caption
-          </div>
-          <div>
-            LANDSCAPE CREDITS
+            <div>
+              Landscape caption
+            </div>
+            <div>
+              LANDSCAPE CREDITS
+            </div>
           </div>
         </div>
-      </div>
-    </figcaption>
-  </div>
+      </figcaption>
+    </div>
+  </responsiveweb__InsetCaptionContainerStyle>
 </figure>
 `;
 
@@ -207,29 +213,33 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
 }
 
 <figure>
-  <div
-    className="c0"
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri="https://imageserver/someImage"
-    />
-  </div>
-  <div
-    className="c1"
-  >
-    <figcaption>
-      <div>
+  <responsiveweb__InsetImageStyle>
+    <div
+      className="c0"
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        uri="https://imageserver/someImage"
+      />
+    </div>
+  </responsiveweb__InsetImageStyle>
+  <responsiveweb__InsetCaptionContainerStyle>
+    <div
+      className="c1"
+    >
+      <figcaption>
         <div>
           <div>
-            Portrait caption
-          </div>
-          <div>
-            PORTRAIT CREDITS
+            <div>
+              Portrait caption
+            </div>
+            <div>
+              PORTRAIT CREDITS
+            </div>
           </div>
         </div>
-      </div>
-    </figcaption>
-  </div>
+      </figcaption>
+    </div>
+  </responsiveweb__InsetCaptionContainerStyle>
 </figure>
 `;

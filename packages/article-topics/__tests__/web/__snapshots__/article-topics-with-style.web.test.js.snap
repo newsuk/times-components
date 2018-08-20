@@ -16,7 +16,7 @@ exports[`1. group of topics 1`] = `
     "padding-bottom": "0px",
     "padding-left": "0px",
     "padding-right": "0px",
-    "padding-top": "5px",
+    "padding-top": "2.5px",
   },
   "S2": {
     "-ms-flex-direction": "column",

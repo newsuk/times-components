@@ -105,8 +105,8 @@ exports[`2. a full article with an image as the lead asset 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
+              "marginBottom": -13.75,
+              "marginTop": 10,
             }
           }
         >
@@ -119,8 +119,9 @@ exports[`2. a full article with an image as the lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -133,7 +134,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
-              "paddingBottom": 9,
+              "paddingBottom": 10,
             }
           }
         >
@@ -143,14 +144,15 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           style={
             Object {
               "flexDirection": "row",
-              "marginBottom": 11,
+              "marginBottom": 10,
+              "paddingTop": 5,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 14,
+                "marginRight": 15,
               }
             }
           >
@@ -357,8 +359,8 @@ exports[`3. an article with a video as the lead asset 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
+              "marginBottom": -13.75,
+              "marginTop": 10,
             }
           }
         >
@@ -371,8 +373,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -471,8 +474,9 @@ exports[`4. an article with no lead asset 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -571,8 +575,9 @@ exports[`5. an article with ads 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -628,6 +633,7 @@ exports[`5. an article with ads 1`] = `
             "borderBottomWidth": 1,
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
+            "marginBottom": 20,
             "paddingBottom": 10,
             "paddingTop": 10,
           }
@@ -642,169 +648,7 @@ exports[`5. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`6. a secondary image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "700",
-              "lineHeight": 32,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`7. an inline image 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "700",
-              "lineHeight": 32,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`8. an article loading state 1`] = `
+exports[`6. an article loading state 1`] = `
 <View
   style={
     Object {
@@ -819,7 +663,7 @@ exports[`8. an article loading state 1`] = `
 </View>
 `;
 
-exports[`9. an article with updated byline 1`] = `
+exports[`7. an article with updated byline 1`] = `
 <RCTScrollView>
   <View>
     <View>
@@ -838,8 +682,9 @@ exports[`9. an article with updated byline 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -919,7 +764,7 @@ exports[`9. an article with updated byline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`9. an article with updated byline 2`] = `
+exports[`7. an article with updated byline 2`] = `
 <RCTScrollView>
   <View>
     <View>
@@ -938,8 +783,9 @@ exports[`9. an article with updated byline 2`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >

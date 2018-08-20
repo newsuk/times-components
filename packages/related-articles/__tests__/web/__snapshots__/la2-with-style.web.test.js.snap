@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,23 +18,23 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -50,7 +50,7 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -65,27 +65,26 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0;
     min-width: auto;
-    padding-right: 10px;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -97,16 +96,22 @@ exports[`default styles 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: block;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
   }
 }
 
@@ -117,11 +122,16 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     padding-left: 0px;
     padding-right: 0px;
     width: 80.8%;
@@ -129,13 +139,13 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -146,7 +156,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     -webkit-box-flex: 1.5;
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
@@ -161,11 +171,9 @@ exports[`default styles 1`] = `
     "fontSize": "12px",
     "fontWeight": "400",
     "letterSpacing": "1.2px",
+    "lineHeight": "14px",
   },
   "IS2": {
-    "marginBottom": "5px",
-  },
-  "IS3": {
     "WebkitBoxLines": "multiple",
     "WebkitFlexWrap": "wrap",
     "color": "rgba(105,105,105,1)",
@@ -175,13 +183,13 @@ exports[`default styles 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
-  "IS4": {
+  "IS3": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
     "lineHeight": "15px",
   },
-  "IS5": {
+  "IS4": {
     "color": "rgba(105,105,105,1)",
     "fontFamily": "GillSansMTStd-Medium",
     "fontSize": "13px",
@@ -194,6 +202,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "TimesModern-Bold",
     "font-size": "25px",
+    "line-height": "27px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -204,7 +213,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "13px",
+    "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -294,7 +303,6 @@ exports[`default styles 1`] = `
     "border-top-color": "rgba(219,219,219,1)",
     "border-top-width": "1px",
     "display": "flex",
-    "height": "55px",
     "justify-content": "center",
     "margin-bottom": "0px",
     "margin-top": "0px",
@@ -315,6 +323,7 @@ exports[`default styles 1`] = `
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "display": "flex",
+    "margin-bottom": "0px",
     "margin-top": "0px",
   },
   "S5": {
@@ -325,7 +334,7 @@ exports[`default styles 1`] = `
     "font-family": "TimesModern-Bold",
     "font-size": "22px",
     "font-weight": "400",
-    "line-height": "24px",
+    "line-height": "27px",
     "margin-bottom": "5px",
     "margin-top": "0px",
   },
@@ -380,16 +389,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 S16"
+    className="c0 c1 S16"
   >
     <div
-      className="c1 S15"
+      className="c2 S15"
     >
       <div
-        className="c2 S14"
+        className="c3 c4 c5 S14"
       >
         <div
-          className="c3 S13"
+          className="c6 c7 c8 S13"
         >
           <Link>
             <Card>
@@ -397,7 +406,7 @@ exports[`default styles 1`] = `
                 className="S12"
               >
                 <div
-                  className="S4 IS2"
+                  className="S4"
                 >
                   <div
                     className="S3 IS1"
@@ -414,7 +423,7 @@ exports[`default styles 1`] = `
                   className="S8"
                 >
                   <div
-                    className="summaryHidden leadSummary125Class S7 IS3"
+                    className="summaryHidden leadSummary125Class S7 IS2"
                   >
                     <span
                       className="S6"
@@ -426,7 +435,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S9 IS4"
+                  className="S9 IS3"
                 >
                   <time>
                     March 13 2015, 06:54pm
@@ -436,7 +445,7 @@ exports[`default styles 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S11 IS5"
+                  className="S11 IS4"
                 >
                   <span
                     className="S10"

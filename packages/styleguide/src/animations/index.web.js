@@ -1,7 +1,5 @@
 import { View } from "react-native";
-import withResponsiveStyles, {
-  keyframes
-} from "@times-components/responsive-styles";
+import styled, { keyframes } from "styled-components";
 
 const fadingAnimation = keyframes`
   from {
@@ -13,11 +11,8 @@ const fadingAnimation = keyframes`
   }
 `;
 
-const FadeIn = withResponsiveStyles(View, {
-  base: () => `
-    animation: ${fadingAnimation} 0.3s ease-in-out;
-  `
-});
-FadeIn.displayName = "FadeIn";
+const FadeIn = styled(View)`
+  animation: ${fadingAnimation} 0.3s ease-in-out;
+`;
 
 export default FadeIn;

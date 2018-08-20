@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
+
+const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide();
 
 export default StyleSheet.create({
   container: {
@@ -25,12 +27,17 @@ export default StyleSheet.create({
   },
   text: {
     color: colours.functional.primary,
+    ...fontFactory({
+      font: "body",
+      fontSize: "secondary"
+    }),
     marginTop: -8,
     paddingLeft: spacing(3),
     width: "95%"
   },
   title: {
     fontFamily: fonts.supporting,
+    fontSize: fontSizes.cardMetaMobile,
     fontWeight: "400",
     letterSpacing: 1.2,
     marginBottom: spacing(4)

@@ -20,8 +20,8 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
+              "marginBottom": -13.75,
+              "marginTop": 10,
             }
           }
         >
@@ -34,8 +34,9 @@ exports[`1. scaled medium full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -48,7 +49,7 @@ exports[`1. scaled medium full article 1`] = `
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
-              "paddingBottom": 9,
+              "paddingBottom": 10,
             }
           }
         >
@@ -58,14 +59,15 @@ exports[`1. scaled medium full article 1`] = `
           style={
             Object {
               "flexDirection": "row",
-              "marginBottom": 11,
+              "marginBottom": 10,
+              "paddingTop": 5,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 14,
+                "marginRight": 15,
               }
             }
           >
@@ -205,8 +207,8 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
+              "marginBottom": -13.75,
+              "marginTop": 10,
             }
           }
         >
@@ -219,8 +221,9 @@ exports[`2. scaled large full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -233,7 +236,7 @@ exports[`2. scaled large full article 1`] = `
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
-              "paddingBottom": 9,
+              "paddingBottom": 10,
             }
           }
         >
@@ -243,14 +246,15 @@ exports[`2. scaled large full article 1`] = `
           style={
             Object {
               "flexDirection": "row",
-              "marginBottom": 11,
+              "marginBottom": 10,
+              "paddingTop": 5,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 14,
+                "marginRight": 15,
               }
             }
           >
@@ -390,8 +394,8 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
+              "marginBottom": -13.75,
+              "marginTop": 10,
             }
           }
         >
@@ -404,8 +408,9 @@ exports[`3. scaled xlarge full article 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 32,
+              "lineHeight": 30,
               "marginBottom": 7,
+              "marginTop": 15,
             }
           }
         >
@@ -418,7 +423,7 @@ exports[`3. scaled xlarge full article 1`] = `
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
-              "paddingBottom": 9,
+              "paddingBottom": 10,
             }
           }
         >
@@ -428,14 +433,15 @@ exports[`3. scaled xlarge full article 1`] = `
           style={
             Object {
               "flexDirection": "row",
-              "marginBottom": 11,
+              "marginBottom": 10,
+              "paddingTop": 5,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 14,
+                "marginRight": 15,
               }
             }
           >

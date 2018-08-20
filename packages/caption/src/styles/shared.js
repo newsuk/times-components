@@ -1,10 +1,6 @@
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, fontSizes, spacing } = styleguide();
 const styles = {
   container: {
     paddingTop: spacing(2)
@@ -18,9 +14,10 @@ const styles = {
   },
   text: {
     color: colours.functional.secondary,
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.caption,
-    lineHeight: 16
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "caption"
+    })
   }
 };
 

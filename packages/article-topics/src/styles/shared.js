@@ -1,5 +1,6 @@
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   container: {
     borderColor: colours.functional.keyline,
@@ -12,8 +13,10 @@ const styles = {
   },
   text: {
     color: colours.functional.secondary,
-    fontFamily: fonts.supporting,
-    fontSize: 13
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "link"
+    })
   },
   topicGroup: {
     flexDirection: "row",

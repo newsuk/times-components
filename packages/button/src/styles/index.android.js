@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { fonts, fontSizes } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -17,9 +16,8 @@ const styles = StyleSheet.create({
     shadowRadius: 5
   },
   text: {
-    color: "#FFFFFF",
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.button,
+    ...sharedStyles.text,
+    lineHeight: 14,
     paddingTop: 0
   }
 });

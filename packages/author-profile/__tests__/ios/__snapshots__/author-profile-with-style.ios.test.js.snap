@@ -9,7 +9,7 @@ exports[`1. an article list header 1`] = `
       "borderBottomColor": "#F0F0F0",
       "borderBottomWidth": 0.5,
       "flexDirection": "column",
-      "paddingBottom": 40,
+      "paddingBottom": 20,
       "paddingTop": 30,
       "width": "100%",
     }
@@ -50,6 +50,7 @@ exports[`1. an article list header 1`] = `
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
+            "lineHeight": 30,
           }
         }
       >
@@ -61,6 +62,8 @@ exports[`1. an article list header 1`] = `
             "color": "#696969",
             "fontFamily": "TimesDigitalW04-RegularSC",
             "fontSize": 14,
+            "lineHeight": 14,
+            "marginTop": 5,
           }
         }
       >
@@ -70,11 +73,18 @@ exports[`1. an article list header 1`] = `
         style={
           Object {
             "flexDirection": "row",
+            "marginTop": 5,
             "paddingVertical": 10,
           }
         }
       >
-        <View>
+        <View
+          style={
+            Object {
+              "marginTop": 1.25,
+            }
+          }
+        >
           <IconTwitter />
         </View>
         <TextLink
@@ -83,6 +93,7 @@ exports[`1. an article list header 1`] = `
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
+              "lineHeight": 17,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             }
@@ -107,7 +118,7 @@ exports[`1. an article list header 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
-              "lineHeight": 26,
+              "lineHeight": 27,
               "textAlign": "center",
             }
           }
@@ -129,7 +140,7 @@ exports[`2. an article list header loading 1`] = `
       "borderBottomColor": "#F0F0F0",
       "borderBottomWidth": 0.5,
       "flexDirection": "column",
-      "paddingBottom": 40,
+      "paddingBottom": 20,
       "paddingTop": 30,
       "width": "100%",
     }
@@ -177,7 +188,7 @@ exports[`3. an article list header faded in 1`] = `
 - First value
 + Second value
 
-@@ -18,11 +18,11 @@
+@@ -19,11 +19,11 @@
     }
   >
     <View

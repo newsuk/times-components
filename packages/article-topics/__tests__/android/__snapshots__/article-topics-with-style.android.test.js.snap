@@ -39,6 +39,9 @@ exports[`1. group of topics 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
+              "lineHeight": 13,
+              "paddingBottom": 5,
+              "paddingTop": 5,
             }
           }
         >

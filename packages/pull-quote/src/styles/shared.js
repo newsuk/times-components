@@ -1,10 +1,6 @@
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguideFactory from "@times-components/styleguide";
 
+const { colours, fonts, fontFactory, spacing } = styleguideFactory();
 const sharedStyles = {
   container: {
     marginTop: 0,
@@ -17,24 +13,21 @@ const sharedStyles = {
     marginBottom: spacing(-8)
   },
   content: {
-    fontFamily: fonts.headlineRegular,
-    fontSize: fontSizes.pageComponentHeadline,
-    lineHeight: 30,
+    ...fontFactory({
+      font: "headlineRegular",
+      fontSize: "pageComponentHeadline"
+    }),
     color: colours.functional.primary
   },
   caption: {
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.caption,
-    marginBottom: 0,
-    lineHeight: 13
+    ...fontFactory({ font: "supporting", fontSize: "caption" }),
+    marginBottom: 0
   },
   link: {
     color: colours.functional.action,
-    fontFamily: fonts.supporting,
+    ...fontFactory({ font: "supporting", fontSize: "link" }),
     textDecorationLine: "none",
-    fontSize: fontSizes.link,
-    marginLeft: 3,
-    lineHeight: 13
+    marginLeft: 3
   },
   captionContainer: {
     display: "flex",

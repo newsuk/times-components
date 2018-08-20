@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a secondary image 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 0.5,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 6,
+              "paddingTop": 7,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View />
+    <View>
+      <ArticleComments />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. an inline image 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Some Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 0.5,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 6,
+              "paddingTop": 7,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View />
+    <View>
+      <ArticleComments />
+    </View>
+  </View>
+</RCTScrollView>
+`;

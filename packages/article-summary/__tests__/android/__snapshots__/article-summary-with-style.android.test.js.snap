@@ -23,7 +23,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
         "fontFamily": "TimesModern-Bold",
         "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
+        "lineHeight": 27,
         "marginBottom": 5,
       }
     }

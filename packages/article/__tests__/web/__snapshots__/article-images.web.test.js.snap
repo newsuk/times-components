@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a secondary image 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <header>
+      <div>
+        <div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Headline
+          </h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <span>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div />
+    </header>
+    <div>
+      <div>
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
+            }
+          }
+          imageOptions={
+            Object {
+              "display": "secondary",
+              "ratio": "3:2",
+              "url": "https://image-2.io",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <aside />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixel"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelteads"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelskin"
+  />
+</article>
+`;
+
+exports[`2. an inline image 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <header>
+      <div>
+        <div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Headline
+          </h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <span>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div />
+    </header>
+    <div>
+      <div>
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
+            }
+          }
+          imageOptions={
+            Object {
+              "display": "inline",
+              "ratio": "9:4",
+              "url": "https://image-inline.io",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <aside />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixel"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelteads"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelskin"
+  />
+</article>
+`;

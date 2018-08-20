@@ -258,9 +258,7 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
 exports[`6. an article list header 1`] = `
 <div>
   <div>
-    <h1
-      role="heading"
-    >
+    <h1>
       Test Name
     </h1>
     <div />
@@ -281,9 +279,7 @@ exports[`6. an article list header 1`] = `
 exports[`7. a topic header with no description 1`] = `
 <div>
   <div>
-    <h1
-      role="heading"
-    >
+    <h1>
       No Desc
     </h1>
   </div>

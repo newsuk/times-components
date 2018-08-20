@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
@@ -11,11 +11,14 @@ import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
 import LinkContainer from "./styles/responsive.web";
 
+const { colours, fontFactory } = styleguide();
 const styles = StyleSheet.create({
   arrow: {
     color: colours.functional.action,
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.meta
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "meta"
+    })
   }
 });
 

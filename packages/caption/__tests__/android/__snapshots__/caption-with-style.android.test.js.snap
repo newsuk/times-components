@@ -6,7 +6,7 @@ exports[`caption with specific styles 1`] = `
     style={
       Object {
         "backgroundColor": "red",
-        "paddingTop": 10,
+        "paddingTop": 5,
       }
     }
   >

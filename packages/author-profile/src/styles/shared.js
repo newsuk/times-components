@@ -1,11 +1,7 @@
 import { StyleSheet } from "react-native";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   loadingContainer: {
     alignItems: "center",
@@ -42,7 +38,8 @@ const styles = {
     borderBottomWidth: StyleSheet.hairlineWidth
   },
   authorHeadContainerNative: {
-    paddingTop: spacing(6)
+    paddingTop: spacing(6),
+    paddingBottom: spacing(4)
   },
   authorPhoto: {
     borderColor: colours.functional.contrast,
@@ -55,13 +52,18 @@ const styles = {
   },
   name: {
     color: colours.functional.brandColour,
-    fontFamily: fonts.headline,
-    fontSize: fontSizes.headline
+    ...fontFactory({
+      font: "headline",
+      fontSize: "headline"
+    })
   },
   jobTitle: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: fontSizes.meta
+    ...fontFactory({
+      font: "bodyRegularSmallCaps",
+      fontSize: "meta"
+    }),
+    marginTop: spacing(1)
   },
   biographyContainer: {
     paddingBottom: spacing(6),
@@ -70,9 +72,10 @@ const styles = {
   },
   biography: {
     color: colours.functional.primary,
-    fontFamily: fonts.body,
-    fontSize: fontSizes.secondary,
-    lineHeight: 26,
+    ...fontFactory({
+      font: "body",
+      fontSize: "secondary"
+    }),
     textAlign: "center"
   },
   twitter: {
@@ -81,8 +84,10 @@ const styles = {
   },
   twitterLink: {
     color: colours.functional.action,
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.tertiary,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "tertiary"
+    }),
     paddingLeft: spacing(1),
     textDecorationLine: "none"
   }
