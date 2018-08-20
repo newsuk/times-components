@@ -280,9 +280,7 @@ exports[`1. a secondary image 1`] = `
       </div>
     </div>
   </div>
-  <aside>
-    <RelatedArticles />
-  </aside>
+  <aside />
   <Ad />
   <Ad />
   <Ad />
@@ -570,9 +568,7 @@ exports[`2. an inline image 1`] = `
       </div>
     </div>
   </div>
-  <aside>
-    <RelatedArticles />
-  </aside>
+  <aside />
   <Ad />
   <Ad />
   <Ad />
