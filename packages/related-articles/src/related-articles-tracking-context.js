@@ -79,14 +79,23 @@ export default Component =>
         return [opinionOneAndTwoTrackingObject, ...supportsTrackingObjects];
       };
 
+      const trackingObject = {
+        articles: [],
+        template: sliceName
+      };
+
       switch (sliceName) {
         case "StandardSlice":
         default:
-          return standardTracking();
+          trackingObject.articles = standardTracking();
+          break;
         case "LeadOneAndTwoSlice":
-          return leadOneAndTwoTracking();
+          trackingObject.articles = leadOneAndTwoTracking();
+          break;
         case "OpinionOneAndTwoSlice":
-          return opinionOneAndTwoTracking();
+          trackingObject.articles = opinionOneAndTwoTracking();
       }
+
+      return trackingObject;
     }
   });

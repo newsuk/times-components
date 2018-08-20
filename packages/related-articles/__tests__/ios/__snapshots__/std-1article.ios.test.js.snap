@@ -73,14 +73,17 @@ Array [
     Object {
       "action": "Viewed",
       "attrs": Object {
-        "0": Object {
-          "byline": "Camilla Long",
-          "headline": "Test Short Headline",
-          "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-          "publishedTime": "2015-03-13T18:54:58.000Z",
-          "role": "standard-1",
-        },
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long",
+            "headline": "Test Short Headline",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+        ],
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "StandardSlice",
       },
       "component": "Page",
       "object": "RelatedArticles",
