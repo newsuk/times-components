@@ -35,48 +35,306 @@ export default gql`
           ...imageProps
         }
       }
-      relatedArticles {
-        id
-        headline
-        section
-        byline
-        label
-        publicationName
-        publishedTime
-        summary125: summary(maxCharCount: 125)
-        leadAsset {
-          ... on Image {
-            id
-            title
-            crop169: crop(ratio: "16:9") {
-              url
-            }
-            crop32: crop(ratio: "3:2") {
-              url
-            }
-          }
-          ... on Video {
-            posterImage {
+      relatedArticleSlice {
+        ... on StandardSlice {
+          items {
+            article {
               id
-              title
-              crop169: crop(ratio: "16:9") {
-                url
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
               }
-              crop32: crop(ratio: "3:2") {
-                url
-              }
+              url
             }
           }
         }
-        url
-      }
-      relatedArticlesLayout {
-        template
-        ... on LeadAndTwo {
-          main
+        ... on LeadOneAndTwoSlice {
+          lead {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
+          support1 {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
+          support2 {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
         }
-        ... on OpinionAndTwo {
-          main
+        ... on OpinionOneAndTwoSlice {
+          opinion {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
+          support1 {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
+          support2 {
+            article {
+              id
+              headline
+              section
+              byline
+              label
+              publicationName
+              publishedTime
+              summary105: summary(maxCharCount: 105)
+              summary125: summary(maxCharCount: 125)
+              summary145: summary(maxCharCount: 145)
+              summary160: summary(maxCharCount: 160)
+              summary175: summary(maxCharCount: 175)
+              summary225: summary(maxCharCount: 225)
+              leadAsset {
+                ... on Image {
+                  id
+                  title
+                  crop169: crop(ratio: "16:9") {
+                    url
+                  }
+                  crop32: crop(ratio: "3:2") {
+                    url
+                  }
+                }
+                ... on Video {
+                  posterImage {
+                    id
+                    title
+                    crop169: crop(ratio: "16:9") {
+                      url
+                    }
+                    crop32: crop(ratio: "3:2") {
+                      url
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
         }
       }
       topics(maxCount: 5) {

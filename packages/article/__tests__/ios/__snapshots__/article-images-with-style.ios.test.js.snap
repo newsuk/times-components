@@ -76,6 +76,9 @@ exports[`1. a secondary image 1`] = `
     </View>
     <View />
     <View>
+      <RelatedArticles />
+    </View>
+    <View>
       <ArticleComments />
     </View>
   </View>
@@ -157,6 +160,9 @@ exports[`2. an inline image 1`] = `
       </View>
     </View>
     <View />
+    <View>
+      <RelatedArticles />
+    </View>
     <View>
       <ArticleComments />
     </View>
