@@ -28,7 +28,7 @@ export const createRelatedArticlesProps = (
 ) => ({
   analyticsStream: action,
   onPress,
-  relatedArticleSlice: fixtureData.relatedArticleSlice
+  slice: fixtureData.relatedArticleSlice
 });
 
 const beforeAndAfterEach = () => {
@@ -62,7 +62,7 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const output = renderComponent(
           <RelatedArticles
             {...createRelatedArticlesProps(fixture, events)}
-            relatedArticleSlice={{
+            slice={{
               sliceName: ""
             }}
           />
@@ -79,7 +79,7 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         renderComponent(
           <RelatedArticles
             {...createRelatedArticlesProps(fixture, events)}
-            relatedArticleSlice={{
+            slice={{
               sliceName: ""
             }}
           />

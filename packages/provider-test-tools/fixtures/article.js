@@ -530,608 +530,607 @@ const defaultLeadAsset = {
   },
   __typename: "Image"
 };
-const defaultRelatedArticles = [
-  {
-    id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
-    headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
-    section: "sport",
-    byline: [
-      {
-        name: "inline",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Patrick Kidd"
+const defaultRelatedArticleSlice = {
+  sliceName: "StandardSlice",
+  items: [
+    {
+      id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
+      headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+      section: "sport",
+      byline: [
+        {
+          name: "inline",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Patrick Kidd"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      label: "Health",
+      publicationName: "TIMES",
+      publishedTime: "2015-03-23T19:39:39.000Z",
+      summary105: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Health",
-    publicationName: "TIMES",
-    publishedTime: "2015-03-23T19:39:39.000Z",
-    summary105: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " in 1965, aged 17, and the"
+            {
+              name: "text",
+              attributes: {
+                value: " in 1965, aged 17, and the"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary125: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " in 1965, aged 17, and the paper recalls in a"
+            {
+              name: "text",
+              attributes: {
+                value: " in 1965, aged 17, and the paper recalls in a"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary145: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore"
+            {
+              name: "text",
+              attributes: {
+                value:
+                  " in 1965, aged 17, and the paper recalls in a tribute that he wore"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary160: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school"
+            {
+              name: "text",
+              attributes: {
+                value:
+                  " in 1965, aged 17, and the paper recalls in a tribute that he wore his school"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary175: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
+            {
+              name: "text",
+              attributes: {
+                value:
+                  " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary225: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Terry Pratchett, who died last week, began his career on the "
+              },
+              children: []
             },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
+            {
+              name: "italic",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Bucks Free Press"
+                  },
+                  children: []
+                }
+              ]
             },
-            children: []
-          },
-          {
-            name: "italic",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Bucks Free Press"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      id: "6c1c108e-ed63-47af-df1d-46c63be16627",
-      title: "TMS: Pratchett’s law of the jungle",
-      crop169: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-        __typename: "Crop"
-      },
-      crop32: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-        __typename: "Crop"
-      },
-      __typename: "Image"
-    },
-    url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-    __typename: "Article"
-  },
-  {
-    id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
-    headline:
-      "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-    section: "comment",
-    byline: [
-      {
-        name: "inline",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Graeme Paton Transport Correspondent"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Science",
-    publicationName: "TIMES",
-    publishedTime: "2015-03-23T20:42:27.000Z",
-    summary105: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: []
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Figures from the"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Figures from the Driver and Vehicle"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      id: "6c1c108e-ed63-47af-df1d-46c63be16627",
-      title: "Rise of centenarian drivers as elderly push on",
-      crop169: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
-        __typename: "Crop"
-      },
-      crop32: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
-        __typename: "Crop"
-      },
-      __typename: "Image"
-    },
-    url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-    __typename: "Article"
-  },
-  {
-    id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-    headline: "Syndicated url: At long last, a burial place fit for a king",
-    section: "thedish",
-    byline: [
-      {
-        name: "inline",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Jack Malvern Arts Correspondent Dominic Kennedy"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Science",
-    publicationName: "TIMES",
-    publishedTime: "2015-03-23T20:56:09.000Z",
-    summary105: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "His coffin has been"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      posterImage: {
-        id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
-        title: "",
+            {
+              name: "text",
+              attributes: {
+                value:
+                  " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      leadAsset: {
+        id: "6c1c108e-ed63-47af-df1d-46c63be16627",
+        title: "TMS: Pratchett’s law of the jungle",
         crop169: {
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+            "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
           __typename: "Crop"
         },
         crop32: {
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+            "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
           __typename: "Crop"
         },
         __typename: "Image"
       },
-      __typename: "Video"
+      url:
+        "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+      __typename: "Article"
     },
-    url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
-    __typename: "Article"
-  }
-];
-const defaultRelatedArticlesLayout = {
-  template: "DEFAULT",
-  __typename: "Default"
+    {
+      id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
+      headline:
+        "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+      section: "comment",
+      byline: [
+        {
+          name: "inline",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Graeme Paton Transport Correspondent"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      label: "Science",
+      publicationName: "TIMES",
+      publishedTime: "2015-03-23T20:42:27.000Z",
+      summary105: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary125: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary145: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: []
+        }
+      ],
+      summary160: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Figures from the"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary175: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Figures from the Driver and Vehicle"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary225: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      leadAsset: {
+        id: "6c1c108e-ed63-47af-df1d-46c63be16627",
+        title: "Rise of centenarian drivers as elderly push on",
+        crop169: {
+          url:
+            "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
+          __typename: "Crop"
+        },
+        crop32: {
+          url:
+            "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
+          __typename: "Crop"
+        },
+        __typename: "Image"
+      },
+      url:
+        "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+      __typename: "Article"
+    },
+    {
+      id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
+      headline: "Syndicated url: At long last, a burial place fit for a king",
+      section: "thedish",
+      byline: [
+        {
+          name: "inline",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Jack Malvern Arts Correspondent Dominic Kennedy"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      label: "Science",
+      publicationName: "TIMES",
+      publishedTime: "2015-03-23T20:56:09.000Z",
+      summary105: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary125: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary145: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary160: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary175: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary225: [
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time."
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "His coffin has been"
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      leadAsset: {
+        posterImage: {
+          id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
+          title: "",
+          crop169: {
+            url:
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+            __typename: "Crop"
+          },
+          crop32: {
+            url:
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+            __typename: "Crop"
+          },
+          __typename: "Image"
+        },
+        __typename: "Video"
+      },
+      url:
+        "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+      __typename: "Article"
+    }
+  ]
 };
 const defaultSection = "business";
 const defaultStandfirst =
@@ -1162,8 +1161,7 @@ export default (
     keywords = defaultKeywords,
     label = defaultLabel,
     leadAsset = defaultLeadAsset,
-    relatedArticles = defaultRelatedArticles,
-    relatedArticlesLayout = defaultRelatedArticlesLayout,
+    relatedArticleSlice = defaultRelatedArticleSlice,
     section = defaultSection,
     standfirst = defaultStandfirst,
     topics = defaultTopics,
@@ -1185,8 +1183,7 @@ export default (
       leadAsset,
       publicationName: "TIMES",
       publishedTime: "2015-03-13T18:54:58.000Z",
-      relatedArticles,
-      relatedArticlesLayout,
+      relatedArticleSlice,
       section,
       standfirst,
       topics,

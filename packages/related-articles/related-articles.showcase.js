@@ -30,7 +30,7 @@ const createRelatedArticles = (decorateAction, fixtureData) => {
   const props = {
     analyticsStream: storybookReporter,
     onPress: preventDefaultedAction(decorateAction)("onArticlePress"),
-    relatedArticleSlice
+    slice: relatedArticleSlice
   };
   return (
     <ScrollView>

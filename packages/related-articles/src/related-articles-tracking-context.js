@@ -10,7 +10,7 @@ import getHeadline from "./utils";
 export default Component =>
   withTrackingContext(Component, {
     trackingObjectName: "RelatedArticles",
-    getAttrs: ({ relatedArticleSlice }) => {
+    getAttrs: ({ slice }) => {
       const {
         items,
         lead,
@@ -18,7 +18,7 @@ export default Component =>
         sliceName,
         support1,
         support2
-      } = relatedArticleSlice;
+      } = slice;
       if (!sliceName) return null;
       const supports = [support1, support2];
 

@@ -93,7 +93,7 @@ const renderRow = analyticsStream => (
         <RelatedArticles
           analyticsStream={analyticsStream}
           onPress={onRelatedArticlePress}
-          relatedArticleSlice={relatedArticleSlice}
+          slice={relatedArticleSlice}
         />
       );
     }

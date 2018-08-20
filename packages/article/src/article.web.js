@@ -49,7 +49,7 @@ const renderArticle = (
   const displayRelatedArticles = relatedArticleSlice ? (
     <RelatedArticles
       analyticsStream={analyticsStream}
-      relatedArticleSlice={relatedArticleSlice}
+      slice={relatedArticleSlice}
     />
   ) : null;
 
