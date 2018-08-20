@@ -6,8 +6,7 @@ exports[`1. an error 1`] = `
     Object {
       "height": "100%",
       "justifyContent": "space-between",
-      "marginLeft": 10,
-      "marginRight": 10,
+      "marginHorizontal": 10,
       "paddingBottom": 70,
       "paddingTop": 10,
     }
@@ -19,8 +18,7 @@ exports[`1. an error 1`] = `
         Object {
           "alignSelf": "center",
           "height": 270,
-          "marginBottom": 20,
-          "marginTop": 20,
+          "marginVertical": 20,
           "width": 240,
         }
       }
@@ -33,8 +31,7 @@ exports[`1. an error 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
           "marginBottom": 10,
-          "marginLeft": 40,
-          "marginRight": 40,
+          "marginHorizontal": 40,
           "textAlign": "center",
         }
       }
@@ -47,8 +44,7 @@ exports[`1. an error 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 15,
-          "marginLeft": 40,
-          "marginRight": 40,
+          "marginHorizontal": 40,
           "textAlign": "center",
         }
       }
