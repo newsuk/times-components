@@ -6,7 +6,9 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import shared from "./comments.base";
+import shared from "./images.base";
+
+jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
 
 export default () => {
   addSerializers(

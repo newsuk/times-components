@@ -479,161 +479,13 @@ exports[`5. an article with ads 1`] = `
 </article>
 `;
 
-exports[`6. a secondary image 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <div>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "3:2",
-              "url": "https://image-2.io",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <aside />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`7. an inline image 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <div>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "inline",
-              "ratio": "9:4",
-              "url": "https://image-inline.io",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <aside />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`8. an article loading state 1`] = `
+exports[`6. an article loading state 1`] = `
 <div>
   Loading ...
 </div>
 `;
 
-exports[`9. an article with updated byline 1`] = `
+exports[`7. an article with updated byline 1`] = `
 <article>
   <div>
     <Ad
@@ -695,7 +547,7 @@ exports[`9. an article with updated byline 1`] = `
 </article>
 `;
 
-exports[`9. an article with updated byline 2`] = `
+exports[`7. an article with updated byline 2`] = `
 <article>
   <div>
     <Ad

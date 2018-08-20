@@ -1,20 +1,30 @@
 import {
   addSerializers,
   compose,
-  flattenStyleTransform,
+  print,
   minimaliseTransform,
-  print
+  minimalNativeTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import shared from "./comments.base";
+import shared from "./images.base";
+
+jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
+
+const omitKeys = new Set([
+  "data",
+  "disableVirtualization",
+  "horizontal",
+  "style",
+  "testID"
+]);
 
 export default () => {
   addSerializers(
     expect,
     compose(
       print,
-      flattenStyleTransform,
-      minimaliseTransform((value, key) => key !== "style")
+      minimalNativeTransform,
+      minimaliseTransform((value, key) => omitKeys.has(key))
     )
   );
 

@@ -3,17 +3,13 @@
 exports[`1. a full article with enabled comments 1`] = `
 <RCTScrollView>
   <View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
         }
       >
         <Text
@@ -33,25 +29,19 @@ exports[`1. a full article with enabled comments 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 9,
-            },
-            Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-            },
-          ]
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 0.5,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
         }
       >
         <View
@@ -79,17 +69,13 @@ exports[`1. a full article with enabled comments 1`] = `
         </View>
       </View>
     </View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
         }
       >
         <Text
@@ -108,12 +94,8 @@ exports[`1. a full article with enabled comments 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      style={null}
-    />
-    <View
-      style={null}
-    >
+    <View />
+    <View>
       <View
         style={
           Object {
@@ -157,14 +139,10 @@ exports[`1. a full article with enabled comments 1`] = `
           Comments are subject to our community guidelines, which can be viewed 
           <Text
             style={
-              Array [
-                Object {
-                  "textDecorationLine": "underline",
-                },
-                Object {
-                  "color": "#006699",
-                },
-              ]
+              Object {
+                "color": "#006699",
+                "textDecorationLine": "underline",
+              }
             }
           >
             here
@@ -172,30 +150,26 @@ exports[`1. a full article with enabled comments 1`] = `
         </Text>
         <View
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#006699",
-                "borderRadius": 4,
-                "elevation": 3,
-                "height": 36,
-                "justifyContent": "center",
-                "minWidth": 100,
-                "shadowColor": "#000000",
-                "shadowOffset": Object {
-                  "height": 3,
-                  "width": 0,
-                },
-                "shadowOpacity": 1,
-                "shadowRadius": 5,
-                "width": "100%",
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#006699",
+              "borderRadius": 4,
+              "elevation": 3,
+              "height": 36,
+              "justifyContent": "center",
+              "marginBottom": 5,
+              "marginTop": 25,
+              "maxWidth": 215,
+              "minWidth": 100,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 3,
+                "width": 0,
               },
-              Object {
-                "marginBottom": 5,
-                "marginTop": 25,
-                "maxWidth": 215,
-              },
-            ]
+              "shadowOpacity": 1,
+              "shadowRadius": 5,
+              "width": "100%",
+            }
           }
         >
           <Text
@@ -221,17 +195,13 @@ exports[`1. a full article with enabled comments 1`] = `
 exports[`2. a full article with disabled comments 1`] = `
 <RCTScrollView>
   <View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
         }
       >
         <Text
@@ -251,25 +221,19 @@ exports[`2. a full article with disabled comments 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 9,
-            },
-            Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-            },
-          ]
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 0.5,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
         }
       >
         <View
@@ -297,17 +261,13 @@ exports[`2. a full article with disabled comments 1`] = `
         </View>
       </View>
     </View>
-    <View
-      style={null}
-    >
+    <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
         }
       >
         <Text
@@ -326,12 +286,8 @@ exports[`2. a full article with disabled comments 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      style={null}
-    />
-    <View
-      style={null}
-    >
+    <View />
+    <View>
       <View
         style={
           Object {
@@ -377,14 +333,10 @@ exports[`2. a full article with disabled comments 1`] = `
 
           <Text
             style={
-              Array [
-                Object {
-                  "textDecorationLine": "underline",
-                },
-                Object {
-                  "color": "#006699",
-                },
-              ]
+              Object {
+                "color": "#006699",
+                "textDecorationLine": "underline",
+              }
             }
           >
             community guidelines
