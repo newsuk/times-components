@@ -7,7 +7,7 @@ import styles from "./styles";
 
 const TopicHead = ({ name, description, isLoading }) => {
   const showDescription = () =>
-    Array.isArray(description) && description.length > 0 ? (
+    description && description.length > 0 ? (
       <Fragment>
         <View style={styles.divider} />
         <Text style={styles.description} testID="topic-description">
