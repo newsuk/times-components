@@ -137,6 +137,7 @@ export default {
     {
       type: "story",
       name: "Error",
+      platform: "native",
       component: ({ select }, { decorateAction }) => {
         const scale = selectScales(select);
         const sectionColour = selectSection(select);
