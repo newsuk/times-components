@@ -134,56 +134,58 @@ export default (
       sliceName: "StandardSlice",
       items: [
         {
-          byline: [
-            {
-              name: "author",
-              attributes: {
-                slug: "camilla-long"
+          article: {
+            byline: [
+              {
+                name: "author",
+                attributes: {
+                  slug: "camilla-long"
+                },
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Camilla Long"
+                    },
+                    children: []
+                  }
+                ]
               },
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Camilla Long"
-                  },
-                  children: []
-                }
-              ]
+              {
+                name: "inline",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: ", Environment Editor"
+                    },
+                    children: []
+                  }
+                ]
+              }
+            ],
+            headline,
+            label,
+            leadAsset: {
+              title,
+              crop169: {
+                url: crop169
+              }
             },
-            {
-              name: "inline",
-              attributes: {},
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: ", Environment Editor"
-                  },
-                  children: []
-                }
-              ]
-            }
-          ],
-          headline,
-          label,
-          leadAsset: {
-            title,
-            crop169: {
-              url: crop169
-            }
-          },
-          id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-          publicationName: "TIMES",
-          publishedTime: "2015-03-13T18:54:58.000Z",
-          section,
-          shortHeadline,
-          summary105,
-          summary125,
-          summary145,
-          summary160,
-          summary175,
-          summary225,
-          url
+            id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            publicationName: "TIMES",
+            publishedTime: "2015-03-13T18:54:58.000Z",
+            section,
+            shortHeadline,
+            summary105,
+            summary125,
+            summary145,
+            summary160,
+            summary175,
+            summary225,
+            url
+          }
         }
       ]
     }

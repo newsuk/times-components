@@ -18,32 +18,44 @@ export default Component =>
       const supportsTracking = roles =>
         supports
           .filter(support => support !== undefined)
-          .map(
-            (
-              { byline, headline, id, publishedTime, shortHeadline },
-              index
-            ) => ({
+          .map(({ article }, index) => {
+            const {
+              byline,
+              headline,
+              id,
+              publishedTime,
+              shortHeadline
+            } = article;
+            return {
               id,
               byline: get(byline, "[0].children[0].attributes.value", ""),
               headline: getHeadline(headline, shortHeadline),
               publishedTime,
               role: roles[index + 1]
-            })
-          );
+            };
+          });
 
       const standardTracking = () =>
-        items.map(
-          ({ byline, headline, id, publishedTime, shortHeadline }, index) => ({
+        items.map(({ article }, index) => {
+          const {
+            byline,
+            headline,
+            id,
+            publishedTime,
+            shortHeadline
+          } = article;
+          return {
             id,
             byline: get(byline, "[0].children[0].attributes.value", ""),
             headline: getHeadline(headline, shortHeadline),
             publishedTime,
             role: standardRoles[index]
-          })
-        );
+          };
+        });
 
       const leadOneAndTwoTracking = () => {
-        const { byline, headline, id, publishedTime, shortHeadline } = lead;
+        const { article } = lead;
+        const { byline, headline, id, publishedTime, shortHeadline } = article;
         const leadOneAndTwoTrackingObject = {
           id,
           byline: get(byline, "[0].children[0].attributes.value", ""),
@@ -58,7 +70,8 @@ export default Component =>
       };
 
       const opinionOneAndTwoTracking = () => {
-        const { byline, headline, id, publishedTime, shortHeadline } = opinion;
+        const { article } = opinion;
+        const { byline, headline, id, publishedTime, shortHeadline } = article;
         const opinionOneAndTwoTrackingObject = {
           id,
           byline: get(byline, "[0].children[0].attributes.value", ""),
