@@ -55,37 +55,100 @@ exports[`4. loading state 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                
+              </Text>
+              <Text>
+                Invalid Date
+              </Text>
+            </View>
+          </Card>
+        </View>
+      </Link>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                
+              </Text>
+              <Text>
+                Invalid Date
+              </Text>
+            </View>
+          </Card>
+        </View>
+      </Link>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                
+              </Text>
+              <Text>
+                Invalid Date
+              </Text>
+            </View>
+          </Card>
+        </View>
+      </Link>
     </View>
     <View>
       <View>
