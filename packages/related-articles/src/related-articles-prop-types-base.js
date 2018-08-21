@@ -3,10 +3,22 @@ import { relatedArticleItemPropTypes } from "./related-article-item-prop-types";
 
 export default {
   slice: PropTypes.shape({
-    lead: relatedArticleItemPropTypes.article,
-    opinion: relatedArticleItemPropTypes.article,
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        article: relatedArticleItemPropTypes.article
+      })
+    ),
+    lead: PropTypes.shape({
+      article: relatedArticleItemPropTypes.article
+    }),
+    opinion: PropTypes.shape({
+      article: relatedArticleItemPropTypes.article
+    }),
     sliceName: PropTypes.string.isRequired,
-    standardArticles: PropTypes.arrayOf(relatedArticleItemPropTypes.article),
-    supports: PropTypes.arrayOf(relatedArticleItemPropTypes.article)
+    supports: PropTypes.arrayOf(
+      PropTypes.shape({
+        article: relatedArticleItemPropTypes.article
+      })
+    )
   }).isRequired
 };

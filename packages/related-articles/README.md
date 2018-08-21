@@ -12,17 +12,17 @@ component uses three templates which are configured within the
 ## Standard template
 
 This is the simplest template called `StandardSlice`, whereby all of the
-returned related articles (`standardArticles`) are of equal importance, and come
+returned related articles (`items`) are of equal importance, and come
 pre-ordered (or sorted) from the API.
 
 ## Lead and Opinion templates
 
 The `LeadAndTwoSlice` and `OpinionAndTwoSlice` templates each have a "main"
-article, and two "supporting" articles (`supports`). This package takes the
-"main" (either `lead` or `opinion`, depending on the template) article, and
-passes that as part of a render prop to the slice package. A separate render
-prop handles the "supporting" articles (as an array). Each article is iterated
-over and rendered as appropriate.
+article, and two "supporting" articles (`support1` and `support2`). This package
+takes the "main" (either `lead` or `opinion`, depending on the template)
+article, and passes that as part of a render prop to the slice package. A
+separate render prop handles the "supporting" articles (as an array). Each
+article is iterated over and rendered as appropriate.
 
 ## Contributing
 
