@@ -16,7 +16,7 @@ const TopicHead = ({ name, description, isLoading }) => {
   });
 
   const showDescription = () =>
-    description.length > 0 ? (
+    Array.isArray(description) && description.length > 0 ? (
       <Fragment>
         <ResponsiveDivider />
         <Text style={styles.description} testID="topic-description">
