@@ -3,7 +3,7 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
 import { StyleSheet, Text, View } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { addSerializers, rnw } from "../../src/index";
 
 describe("The React Native Web serializer should", () => {
@@ -19,9 +19,9 @@ describe("The React Native Web serializer should", () => {
     });
 
     const component = <Text style={styles.test} testFunc={() => {}} />;
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect children", () => {
@@ -41,9 +41,9 @@ describe("The React Native Web serializer should", () => {
         <Text style={styles.child}>Hello World!</Text>
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect multiple children", () => {
@@ -74,9 +74,9 @@ describe("The React Native Web serializer should", () => {
         </View>
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("squash identical styles", () => {
@@ -107,9 +107,9 @@ describe("The React Native Web serializer should", () => {
         </View>
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect render props", () => {
@@ -131,8 +131,8 @@ describe("The React Native Web serializer should", () => {
         <Container renderProp={<Text style={styles.child} />} />
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 });
