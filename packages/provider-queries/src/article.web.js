@@ -66,13 +66,11 @@ export default gql`
           }
         }
       }
-      section
       standfirst
       topics(maxCount: 5) {
         name
         slug
       }
-      url
       ...articleProps
     }
   }
@@ -93,9 +91,9 @@ export default gql`
     headline
     id
     label
-    section
     publicationName
     publishedTime
+    section
     url
   }
 

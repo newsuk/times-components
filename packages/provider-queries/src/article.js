@@ -66,13 +66,11 @@ export default gql`
           }
         }
       }
-      section
       standfirst
       topics(maxCount: 5) {
         name
         slug
       }
-      url
       ...articleProps
     }
   }
@@ -93,9 +91,9 @@ export default gql`
     headline
     id
     label
-    section
     publicationName
     publishedTime
+    section
     url
   }
 
@@ -129,11 +127,6 @@ export default gql`
   }
 
   fragment summaries on Article {
-    summary105: summary(maxCharCount: 105)
     summary125: summary(maxCharCount: 125)
-    summary145: summary(maxCharCount: 145)
-    summary160: summary(maxCharCount: 160)
-    summary175: summary(maxCharCount: 175)
-    summary225: summary(maxCharCount: 225)
   }
 `;
