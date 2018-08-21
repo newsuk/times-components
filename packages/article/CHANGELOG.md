@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.5.0"></a>
+# [4.5.0](https://github.com/newsuk/times-components/compare/@times-components/article@4.4.5...@times-components/article@4.5.0) (2018-08-21)
+
+
+### Bug Fixes
+
+* lint params ([#1241](https://github.com/newsuk/times-components/issues/1241)) ([da9cb23](https://github.com/newsuk/times-components/commit/da9cb23))
+
+
+### Features
+
+* article error state ([#1233](https://github.com/newsuk/times-components/issues/1233)) ([e82404e](https://github.com/newsuk/times-components/commit/e82404e))
+
+
+
+
+
 <a name="4.4.5"></a>
 ## [4.4.5](https://github.com/newsuk/times-components/compare/@times-components/article@4.4.4...@times-components/article@4.4.5) (2018-08-20)
 
