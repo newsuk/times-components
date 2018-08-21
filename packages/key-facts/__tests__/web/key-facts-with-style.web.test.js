@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import Context from "@times-components/context";
 import {
@@ -41,7 +42,7 @@ addSerializers(
       (value, key) => key !== "className" || key !== "styles"
     ),
     minimalWebTransform,
-    rnwTransform(styles)
+    rnwTransform(AppRegistry, styles)
   )
 );
 

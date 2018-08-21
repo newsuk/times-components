@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -31,7 +32,7 @@ export default () => {
       minimaliseTransform(
         (value, key) => key === "style" || key === "className"
       ),
-      rnwTransform()
+      rnwTransform(AppRegistry)
     )
   );
 

@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -17,7 +18,7 @@ export default () => {
         (value, key) => key === "style" || key === "data-testid"
       ),
       minimalWebTransform,
-      rnwTransform()
+      rnwTransform(AppRegistry)
     )
   );
 

@@ -457,45 +457,6 @@ exports[`full article with style 1`] = `
     "padding-top": "0px",
   },
   "S10": {
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S11": {
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S12": {
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S13": {
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S14": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "9px",
-  },
-  "S15": {
     "-ms-flex-align": "stretch",
     "-ms-flex-preferred-size": "auto !important",
     "-webkit-align-items": "stretch",
@@ -505,190 +466,9 @@ exports[`full article with style 1`] = `
     "flex-basis": "auto !important",
     "margin-bottom": "0px",
     "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S16": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S17": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S18": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-top": "0px",
-  },
-  "S19": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
     "padding-top": "0px",
   },
   "S2": {
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S20": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S21": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S22": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S23": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S24": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S25": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S26": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-top": "0px",
-  },
-  "S27": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S28": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S29": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "0px",
@@ -706,58 +486,6 @@ exports[`full article with style 1`] = `
     "margin-top": "0px",
     "padding-bottom": "5px",
     "padding-top": "5px",
-  },
-  "S30": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S31": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S32": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S33": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
   },
   "S4": {
     "line-height": "30px",
@@ -781,36 +509,23 @@ exports[`full article with style 1`] = `
     "-webkit-flex-basis": "auto !important",
     "align-items": "stretch",
     "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
     "margin-bottom": "10px",
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S8": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
+  "S7": {
+    "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",
+  },
+  "S8": {
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "5px",
+    "padding-top": "5px",
   },
   "S9": {
     "-ms-flex-align": "stretch",
@@ -820,10 +535,10 @@ exports[`full article with style 1`] = `
     "-webkit-flex-basis": "auto !important",
     "align-items": "stretch",
     "flex-basis": "auto !important",
-    "margin-bottom": "0px",
+    "margin-bottom": "20px",
     "margin-top": "0px",
     "padding-bottom": "0px",
-    "padding-top": "0px",
+    "padding-top": "9px",
   },
 }
 </style>
@@ -837,14 +552,14 @@ exports[`full article with style 1`] = `
     />
   </div>
   <div
-    className="c1 S32"
+    className="c1 S1"
   >
     <header>
       <div
-        className="c2 S9"
+        className="c2 S1"
       >
         <div
-          className="S8"
+          className="S1"
         >
           <div
             className="c3 S3"
@@ -866,10 +581,10 @@ exports[`full article with style 1`] = `
             Some Standfirst
           </h2>
           <div
-            className="S7"
+            className="S6"
           >
             <div
-              className="S6"
+              className="S1"
             >
               <NewArticleFlag />
             </div>
@@ -877,32 +592,32 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <div
-        className="c5 S16"
+        className="c5 S1"
       >
         <div
-          className="c6 S14"
+          className="c6 S9"
         >
           <div
-            className="c7 S11"
+            className="c7 S8"
           >
             <span
-              className="S10"
+              className="S7"
             >
               <ArticleBylineWithLinks />
             </span>
           </div>
           <div
-            className="c7 S13"
+            className="c7 S8"
           >
             <span
-              className="S12"
+              className="S7"
             >
               <DatePublication />
             </span>
           </div>
         </div>
         <div
-          className="c8 S15"
+          className="c8 S1"
         >
           <nav>
             <ArticleTopics
@@ -912,25 +627,25 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <div
-        className="c9 S21"
+        className="c9 S1"
       >
         <div
-          className="c10 S20"
+          className="c10 S1"
         >
           <figure
             className="IS6"
           >
             <div
-              className="IS5 S18"
+              className="IS5 S10"
             >
               <div
-                className="IS4 S17"
+                className="IS4 S1"
               >
                 <Image />
               </div>
             </div>
             <div
-              className="c11 S19"
+              className="c11 S1"
             >
               <figcaption>
                 <Caption />
@@ -941,10 +656,10 @@ exports[`full article with style 1`] = `
       </div>
     </header>
     <div
-      className="c12 S31"
+      className="c12 S1"
     >
       <div
-        className="c13 S22"
+        className="c13 S1"
       >
         <ArticleImage />
       </div>
@@ -961,25 +676,25 @@ exports[`full article with style 1`] = `
         </p>
       </div>
       <div
-        className="c16 S24"
+        className="c16 S1"
       >
         <div
-          className="c17 S23"
+          className="c17 S1"
         >
           <PullQuote />
         </div>
       </div>
       <div
-        className="c13 S28"
+        className="c13 S1"
       >
         <figure
           className="IS13"
         >
           <div
-            className="IS12 S26"
+            className="IS12 S10"
           >
             <div
-              className="IS11 S25"
+              className="IS11 S1"
             >
               <div
                 className="IS10"
@@ -992,7 +707,7 @@ exports[`full article with style 1`] = `
           </div>
           <figcaption>
             <div
-              className="c18 S27"
+              className="c18 S1"
             >
               <Caption />
             </div>
@@ -1003,19 +718,19 @@ exports[`full article with style 1`] = `
         className="IS14"
       />
       <div
-        className="c19 S29"
+        className="c19 S1"
       >
         <ArticleImage />
       </div>
       <div
-        className="c20 S30"
+        className="c20 S1"
       >
         <ArticleImage />
       </div>
     </div>
   </div>
   <div
-    className="c21 S33"
+    className="c21 S1"
   >
     <nav>
       <ArticleTopics

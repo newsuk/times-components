@@ -75,9 +75,6 @@ android {
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
-    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {
-        exclude group: "com.facebook.react"
-    }
     api("react-repo:react-native-device-info:${packageInfo.dependencies.'react-native-device-info'}") {
         exclude group: "com.facebook.react"
         exclude group: "com.google.android.gms"

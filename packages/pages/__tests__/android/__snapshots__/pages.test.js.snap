@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`article page 1`] = `
-<View>
-  <ActivityIndicator
-    animating={true}
-    hidesWhenStopped={true}
-    size="large"
-  />
-</View>
+<Article
+  isLoading={true}
+/>
 `;

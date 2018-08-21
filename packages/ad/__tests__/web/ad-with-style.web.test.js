@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -44,7 +45,7 @@ addSerializers(
       Subscriber: justChildren,
       Watermark: propsNoChildren
     }),
-    rnwTransform()
+    rnwTransform(AppRegistry)
   )
 );
 

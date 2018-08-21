@@ -188,45 +188,6 @@ exports[`1. a secondary image 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S10": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S11": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S12": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
   "S2": {
     "line-height": "30px",
     "margin-bottom": "7px",
@@ -235,45 +196,19 @@ exports[`1. a secondary image 1`] = `
     "padding-top": "0px",
   },
   "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
     "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S6": {
+  "S4": {
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "5px",
     "padding-top": "5px",
   },
-  "S7": {
+  "S5": {
     "-ms-flex-align": "stretch",
     "-ms-flex-preferred-size": "auto !important",
     "-webkit-align-items": "stretch",
@@ -285,32 +220,6 @@ exports[`1. a secondary image 1`] = `
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "9px",
-  },
-  "S8": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
   },
 }
 </style>
@@ -324,14 +233,14 @@ exports[`1. a secondary image 1`] = `
     />
   </div>
   <div
-    className="c1 S12"
+    className="c1 S1"
   >
     <header>
       <div
-        className="c2 S4"
+        className="c2 S1"
       >
         <div
-          className="S3"
+          className="S1"
         >
           <h1
             className="c3 S2"
@@ -341,16 +250,16 @@ exports[`1. a secondary image 1`] = `
         </div>
       </div>
       <div
-        className="c4 S8"
+        className="c4 S1"
       >
         <div
-          className="c5 S7"
+          className="c5 S5"
         >
           <div
-            className="c6 S6"
+            className="c6 S4"
           >
             <span
-              className="S5"
+              className="S3"
             >
               <DatePublication />
             </span>
@@ -358,14 +267,14 @@ exports[`1. a secondary image 1`] = `
         </div>
       </div>
       <div
-        className="c7 S9"
+        className="c7 S1"
       />
     </header>
     <div
-      className="c8 S11"
+      className="c8 S1"
     >
       <div
-        className="c9 S10"
+        className="c9 S1"
       >
         <ArticleImage />
       </div>
@@ -567,45 +476,6 @@ exports[`2. an inline image 1`] = `
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S10": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S11": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S12": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
   "S2": {
     "line-height": "30px",
     "margin-bottom": "7px",
@@ -614,45 +484,19 @@ exports[`2. an inline image 1`] = `
     "padding-top": "0px",
   },
   "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
     "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",
   },
-  "S6": {
+  "S4": {
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-bottom": "5px",
     "padding-top": "5px",
   },
-  "S7": {
+  "S5": {
     "-ms-flex-align": "stretch",
     "-ms-flex-preferred-size": "auto !important",
     "-webkit-align-items": "stretch",
@@ -664,32 +508,6 @@ exports[`2. an inline image 1`] = `
     "margin-top": "0px",
     "padding-bottom": "0px",
     "padding-top": "9px",
-  },
-  "S8": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto !important",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto !important",
-    "align-items": "stretch",
-    "flex-basis": "auto !important",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
   },
 }
 </style>
@@ -703,14 +521,14 @@ exports[`2. an inline image 1`] = `
     />
   </div>
   <div
-    className="c1 S12"
+    className="c1 S1"
   >
     <header>
       <div
-        className="c2 S4"
+        className="c2 S1"
       >
         <div
-          className="S3"
+          className="S1"
         >
           <h1
             className="c3 S2"
@@ -720,16 +538,16 @@ exports[`2. an inline image 1`] = `
         </div>
       </div>
       <div
-        className="c4 S8"
+        className="c4 S1"
       >
         <div
-          className="c5 S7"
+          className="c5 S5"
         >
           <div
-            className="c6 S6"
+            className="c6 S4"
           >
             <span
-              className="S5"
+              className="S3"
             >
               <DatePublication />
             </span>
@@ -737,14 +555,14 @@ exports[`2. an inline image 1`] = `
         </div>
       </div>
       <div
-        className="c7 S9"
+        className="c7 S1"
       />
     </header>
     <div
-      className="c8 S11"
+      className="c8 S1"
     >
       <div
-        className="c9 S10"
+        className="c9 S1"
       >
         <ArticleImage />
       </div>

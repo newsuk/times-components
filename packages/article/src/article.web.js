@@ -2,7 +2,6 @@ import React from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleBody from "./article-body/article-body";
-import ArticleError from "./article-error";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLoading from "./article-loading";
 import ArticleMeta from "./article-meta/article-meta";
@@ -121,7 +120,7 @@ const ArticlePage = ({
   onTopicPress
 }) => {
   if (error) {
-    return <ArticleError {...error} />;
+    return null;
   }
 
   if (isLoading) {

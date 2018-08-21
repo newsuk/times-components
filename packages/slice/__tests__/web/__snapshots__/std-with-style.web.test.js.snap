@@ -143,48 +143,20 @@ exports[`2. a single child element 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 c2 S5"
+  className="c0 c1 c2 S1"
 >
   <div
-    className="c3 S4"
+    className="c3 S1"
   >
     <div
-      className="c4 c5 c6 S3"
+      className="c4 c5 c6 S1"
     >
       <div
-        className="c7 S2"
+        className="c7 S1"
       >
         <div
           className="S1"
@@ -341,69 +313,20 @@ exports[`3. two child elements 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 S8"
+  className="c0 c1 S1"
 >
   <div
-    className="c2 S7"
+    className="c2 S1"
   >
     <div
-      className="c3 c4 c5 S6"
+      className="c3 c4 c5 S1"
     >
       <div
-        className="c6 S2"
+        className="c6 S1"
       >
         <div
           className="S1"
@@ -412,13 +335,13 @@ exports[`3. two child elements 1`] = `
         </div>
       </div>
       <div
-        className="c7 S3"
+        className="c7 S1"
       />
       <div
-        className="c6 S5"
+        className="c6 S1"
       >
         <div
-          className="S4"
+          className="S1"
         >
           standard-2
         </div>
@@ -574,90 +497,20 @@ exports[`4. three child elements 1`] = `
     "padding-right": "0px",
     "padding-top": "0px",
   },
-  "S10": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S11": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S2": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S9": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
 }
 </style>
 
 <div
-  className="c0 c1 S11"
+  className="c0 c1 S1"
 >
   <div
-    className="c2 S10"
+    className="c2 S1"
   >
     <div
-      className="c3 c4 c5 S9"
+      className="c3 c4 c5 S1"
     >
       <div
-        className="c6 S2"
+        className="c6 S1"
       >
         <div
           className="S1"
@@ -666,25 +519,25 @@ exports[`4. three child elements 1`] = `
         </div>
       </div>
       <div
-        className="c7 S3"
+        className="c7 S1"
       />
       <div
-        className="c6 S5"
+        className="c6 S1"
       >
         <div
-          className="S4"
+          className="S1"
         >
           standard-2
         </div>
       </div>
       <div
-        className="c7 S6"
+        className="c7 S1"
       />
       <div
-        className="c6 S8"
+        className="c6 S1"
       >
         <div
-          className="S7"
+          className="S1"
         >
           standard-3
         </div>

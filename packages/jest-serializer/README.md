@@ -65,7 +65,13 @@ This allows us to only visit each node once and perform each transformation
 that have side-effects that another transformer was relying on e.g.
 
 ```javascript
-compose(stylePrinter, minimalWebTransform, rnwTransform(["color"]));
+import { AppRegistry } from "react-native-web";
+
+compose(
+  stylePrinter,
+  minimalWebTransform,
+  rnwTransform(AppRegistry, ["color"])
+);
 ```
 
 is the same as running the `minimalWeb` and `rnw` serializers together, and if
@@ -170,7 +176,7 @@ Refer to the code for the latest removed values.
 
 ### minimalRnw
 
-**minimalRnw: Serializer**
+**minimalRnw(AppRegistry): Serializer**
 
 An example of perhaps where this package is likely to move to as patterns and
 common use cases appear. This combines `minimalWeb` with `rnw` much like a babel
@@ -213,7 +219,7 @@ readability.
 
 ### rnw
 
-**rnw(string[]): Serializer**
+**rnw(AppRegistry, string[]): Serializer**
 
 If you're using [react-native-web](https://github.com/necolas/react-native-web)
 and Jest snapshots on the web platform to ensure your components are rendering
@@ -224,12 +230,16 @@ Use this serializer with any style properties you're interested in, and when
 e.g.
 
 ```javascript
-compose(stylePrinter, rnwTransform(["color", "fontSize"]));
+import { AppRegistry } from "react-native-web";
+
+compose(stylePrinter, rnwTransform(AppRegistry, ["color", "fontSize"]));
 ```
 
 will assign a generic `className` to the Node and print the styles with that
 `className`, but only for `color` and `fontSize` due to RNW producing many stock
 styles.
+
+`AppRegistry` needs to come from the consumer where the styles have been cached.
 
 ## Printers
 

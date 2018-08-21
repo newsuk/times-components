@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import { addSerializers, minimalRnw } from "@times-components/jest-serializer";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
@@ -6,7 +7,7 @@ import { iterator } from "@times-components/test-utils";
 import Link from "../../src/link";
 import shared from "../shared";
 
-addSerializers(expect, minimalRnw());
+addSerializers(expect, minimalRnw(AppRegistry));
 
 require("jest-styled-components");
 

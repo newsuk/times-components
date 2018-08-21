@@ -1,7 +1,7 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
+import isEqual from "lodash.isequal";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
@@ -32,7 +32,7 @@ const mergeStylesToClassNames = (classMap, node) => {
   };
 };
 
-const getStyleSheet = () => {
+const getStyleSheet = AppRegistry => {
   AppRegistry.registerComponent("App", () => () => {});
   const { getStyleElement } = AppRegistry.getApplication("App");
   const ssString = ReactDOMServer.renderToStaticMarkup(getStyleElement());
@@ -52,12 +52,12 @@ const getStyleSheet = () => {
   return ast.stylesheet.rules.reduce(mergeStylesToClassNames, {});
 };
 
-const classNamesToStyles = className => {
+const classNamesToStyles = (AppRegistry, className) => {
   if (!className) {
     return {};
   }
 
-  const ss = getStyleSheet();
+  const ss = getStyleSheet(AppRegistry);
 
   return className.split(" ").reduce((m, c) => ({ ...m, [c]: ss[c] }), {});
 };
@@ -72,6 +72,20 @@ const filterNames = (className, toInclude) => {
 
     return toInclude.has(prop);
   });
+};
+
+const findStyle = (rnwStyles = {}, style) => {
+  const kv = Object.entries(rnwStyles);
+
+  for (let i = 0; i < kv.length; i++) {
+    const [key, value] = kv[i];
+
+    if (isEqual(value, style)) {
+      return key;
+    }
+  }
+
+  return null;
 };
 
 const updateMap = (cssStyles, styleMap, classNames) => {
@@ -93,6 +107,15 @@ const updateMap = (cssStyles, styleMap, classNames) => {
     return m;
   }, {});
 
+  const existingStyle = findStyle(styleMap.rnw, mergedStyle);
+
+  if (existingStyle) {
+    return {
+      key: existingStyle,
+      styleMap
+    };
+  }
+
   const key = `S${Object.keys(styleMap.rnw || {}).length + 1}`;
 
   return {
@@ -107,7 +130,7 @@ const updateMap = (cssStyles, styleMap, classNames) => {
   };
 };
 
-export const rnwTransform = includeStyleProps => (
+export const rnwTransform = (AppRegistry, includeStyleProps) => (
   accum,
   node,
   props,
@@ -115,7 +138,8 @@ export const rnwTransform = includeStyleProps => (
 ) => {
   const { className, ...other } = props;
 
-  const cssStyles = classNamesToStyles(className);
+  const cssStyles = classNamesToStyles(AppRegistry, className);
+
   const filteredNames = filterNames(className, new Set(includeStyleProps));
   const updatedMap = updateMap(cssStyles, accum, filteredNames);
 
@@ -138,5 +162,5 @@ export const rnwTransform = includeStyleProps => (
   };
 };
 
-export default includeStyleProps =>
-  traverse(stylePrinter, rnwTransform(includeStyleProps));
+export default (AppRegistry, includeStyleProps) =>
+  traverse(stylePrinter, rnwTransform(AppRegistry, includeStyleProps));

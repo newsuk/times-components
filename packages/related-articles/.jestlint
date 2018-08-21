@@ -1,5 +1,4 @@
 {
   "maxAttributeStringLength": 44,
-  "maxFileSize": 11500,
-  "maxLines": 532
+  "maxLines": 431
 }

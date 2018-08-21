@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { StyleSheet, Text, View } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { addSerializers, rnw } from "../../src/index";
 
 describe("The React Native Web serializer should", () => {
   it("remove rnw-classnames and hoist the styles", () => {
-    addSerializers(expect, rnw(["color", "flex"]));
+    addSerializers(expect, rnw(AppRegistry, ["color", "flex"]));
 
     const styles = StyleSheet.create({
       test: {
@@ -18,13 +19,13 @@ describe("The React Native Web serializer should", () => {
     });
 
     const component = <Text style={styles.test} testFunc={() => {}} />;
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect children", () => {
-    addSerializers(expect, rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {
@@ -40,13 +41,13 @@ describe("The React Native Web serializer should", () => {
         <Text style={styles.child}>Hello World!</Text>
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect multiple children", () => {
-    addSerializers(expect, rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {
@@ -73,13 +74,46 @@ describe("The React Native Web serializer should", () => {
         </View>
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("squash identical styles", () => {
+    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
+
+    const styles = StyleSheet.create({
+      parent: {
+        flex: 1,
+        backgroundColor: "red"
+      },
+      child1: {
+        fontSize: 10
+      },
+      child2: {
+        fontSize: 10
+      },
+      child3: {
+        fontSize: 10
+      }
+    });
+
+    const component = (
+      <View style={styles.parent}>
+        <Text style={styles.child1}>child 1</Text>
+        <Text style={styles.child2}>child 2</Text>
+        <View>
+          <Text style={styles.child3}>child 3</Text>
+        </View>
+      </View>
+    );
+    const testRenderer = TestRenderer.create(component);
+
+    expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect render props", () => {
-    addSerializers(expect, rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {
@@ -97,8 +131,8 @@ describe("The React Native Web serializer should", () => {
         <Container renderProp={<Text style={styles.child} />} />
       </View>
     );
-    const tree = renderer.create(component);
+    const testRenderer = TestRenderer.create(component);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 });

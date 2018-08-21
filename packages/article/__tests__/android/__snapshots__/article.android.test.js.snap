@@ -2,14 +2,30 @@
 
 exports[`1. an error 1`] = `
 <View>
-  <Text>
-    An error occurred
-  </Text>
-  <Text>
-    {
-  "message": "An example error."
-}
-  </Text>
+  <View>
+    <Image
+      accessibilityLabel="Server error"
+      resizeMode="contain"
+      source={1}
+    />
+    <Text>
+      Something's gone wrong
+    </Text>
+    <Text>
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="RETRY"
+    accessibilityTraits="button"
+  >
+    <Text
+      title="RETRY"
+    >
+      RETRY
+    </Text>
+  </View>
 </View>
 `;
 

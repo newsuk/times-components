@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -15,7 +16,7 @@ export default Component => {
       stylePrinter,
       hoistStyleTransform,
       minimalWebTransform,
-      rnwTransform([
+      rnwTransform(AppRegistry, [
         "fontSize",
         "fontFamily",
         "color",

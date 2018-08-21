@@ -1,5 +1,6 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
+import "./mocks";
 import { Article } from "../src/pages";
 import getAdTargetingConfig from "../src/client/ad-targeting-config";
 

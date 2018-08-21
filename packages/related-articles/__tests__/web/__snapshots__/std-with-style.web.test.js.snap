@@ -181,99 +181,6 @@ exports[`default styles 1`] = `
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
-  "S10": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S11": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S12": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "inline",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S13": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S14": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S15": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S16": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S17": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S18": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
   "S2": {
     "-ms-flex-align": "center",
     "-ms-flex-pack": "center",
@@ -339,28 +246,27 @@ exports[`default styles 1`] = `
     "margin-top": "0px",
   },
   "S8": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S9": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "display": "inline",
     "margin-bottom": "5px",
     "margin-top": "0px",
   },
+  "S9": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "15px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
 }
 </style>
 
 <div
-  className="S18"
+  className="S4"
 >
   <div
     className="S2"
@@ -372,21 +278,21 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 c2 S17"
+    className="c0 c1 c2 S4"
   >
     <div
-      className="c3 S16"
+      className="c3 S4"
     >
       <div
-        className="c4 c5 c6 S15"
+        className="c4 c5 c6 S4"
       >
         <div
-          className="c7 S14"
+          className="c7 S4"
         >
           <Link>
             <Card>
               <div
-                className="S13"
+                className="S4"
               >
                 <div
                   className="S4"
@@ -403,7 +309,7 @@ exports[`default styles 1`] = `
                   Test Short Headline
                 </h3>
                 <div
-                  className="S8"
+                  className="S4"
                 >
                   <div
                     className="summaryHidden summary125Class S7 IS2"
@@ -418,7 +324,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S9 IS3"
+                  className="S8 IS3"
                 >
                   <time>
                     March 13 2015, 06:54pm
@@ -428,15 +334,15 @@ exports[`default styles 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S12 IS6"
+                  className="S3 IS6"
                 >
                   <span
-                    className="S10 IS4"
+                    className="S9 IS4"
                   >
                     Camilla Long
                   </span>
                   <span
-                    className="S11 IS5"
+                    className="S9 IS5"
                   >
                     , Environment Editor
                   </span>

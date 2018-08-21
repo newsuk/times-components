@@ -1,4 +1,5 @@
 import React from "react";
+import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -26,7 +27,7 @@ addSerializers(
       IconVideo: propsNoChildren,
       ...meltNative
     }),
-    rnwTransform()
+    rnwTransform(AppRegistry)
   )
 );
 

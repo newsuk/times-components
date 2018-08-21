@@ -160,27 +160,6 @@ exports[`1. page error 1`] = `
     "position": "relative",
   },
   "S4": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S5": {
     "-ms-flex-item-align": "center",
     "-webkit-align-self": "center",
     "align-self": "center",
@@ -197,7 +176,7 @@ exports[`1. page error 1`] = `
     "padding-top": "0px",
     "text-align": "center",
   },
-  "S6": {
+  "S5": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "color": "rgba(105,105,105,1)",
@@ -211,56 +190,14 @@ exports[`1. page error 1`] = `
     "padding-top": "0px",
     "text-align": "center",
   },
-  "S7": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S8": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
 }
 </style>
 
 <div
-  className="c0 S8"
+  className="c0 S3"
 >
   <div
-    className="c1 S4"
+    className="c1 S3"
   >
     <div
       className="S3"
@@ -282,15 +219,15 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c2 S7"
+    className="c2 S3"
   >
     <div
-      className="S5"
+      className="S4"
     >
       Something's gone wrong
     </div>
     <div
-      className="S6"
+      className="S5"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
@@ -443,203 +380,6 @@ exports[`2. article list 1`] = `
     "padding-bottom": "0px",
     "padding-top": "4px",
   },
-  "S10": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S11": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S12": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S13": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S14": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S15": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex": "1",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "max-width": "760px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S16": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "row",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "row",
-    "-webkit-justify-content": "center",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "row",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S17": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S18": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
   "S2": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -662,90 +402,6 @@ exports[`2. article list 1`] = `
     "position": "relative",
   },
   "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S4": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S5": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S6": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S7": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -770,7 +426,7 @@ exports[`2. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S8": {
+  "S4": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "row",
     "-ms-flex-pack": "center",
@@ -795,47 +451,26 @@ exports[`2. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S9": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
 }
 </style>
 
 <div
-  className="S18"
+  className="S2"
 >
   <div
-    className="S17"
+    className="S2"
   >
     <div
-      className="c0 S9"
+      className="c0 S2"
     >
       <div
-        className="S8"
+        className="S4"
       >
         <div
-          className="S7"
+          className="S3"
         >
           <div
-            className="c1 S6"
+            className="c1 S2"
           >
             <div
               className="c2 S2"
@@ -847,13 +482,13 @@ exports[`2. article list 1`] = `
               </div>
             </div>
             <div
-              className="c3 S5"
+              className="c3 S2"
             >
               <div
-                className="c4 S3"
+                className="c4 S2"
               />
               <div
-                className="c4 S4"
+                className="c4 S2"
               />
             </div>
           </div>
@@ -862,29 +497,29 @@ exports[`2. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S10"
+        className="c0 S2"
       >
         ArticleListItem
       </div>
     </div>
     <div />
     <div
-      className="S16"
+      className="S4"
     >
       <div
-        className="S15"
+        className="S3"
       >
         <div
-          className="c5 S14"
+          className="c5 S2"
         >
           <div
-            className="c6 S13"
+            className="c6 S2"
           >
             <div
-              className="c4 S11"
+              className="c4 S2"
             />
             <div
-              className="c4 S12"
+              className="c4 S2"
             />
           </div>
         </div>
