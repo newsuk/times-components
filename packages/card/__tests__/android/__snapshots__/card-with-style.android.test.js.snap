@@ -120,54 +120,44 @@ exports[`3. card loading state 1`] = `
       }
     }
   >
-    <View
+    <Gradient
+      degrees={264}
       style={
         Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
+          "height": 24,
+          "marginBottom": 10,
+          "maxWidth": 300,
         }
       }
-    >
-      <Gradient
-        degrees={264}
-        style={
-          Object {
-            "height": 24,
-            "marginBottom": 10,
-            "maxWidth": 300,
-          }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 0,
-            "maxWidth": 240,
-          }
-        }
-      />
-    </View>
+      }
+    />
   </View>
 </View>
 `;
@@ -194,54 +184,44 @@ exports[`4. card reversed loading state 1`] = `
       }
     }
   >
-    <View
+    <Gradient
+      degrees={264}
       style={
         Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
+          "height": 24,
+          "marginBottom": 10,
+          "maxWidth": 300,
         }
       }
-    >
-      <Gradient
-        degrees={264}
-        style={
-          Object {
-            "height": 24,
-            "marginBottom": 10,
-            "maxWidth": 300,
-          }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 0,
-            "maxWidth": 240,
-          }
-        }
-      />
-    </View>
+      }
+    />
   </View>
   <View
     style={

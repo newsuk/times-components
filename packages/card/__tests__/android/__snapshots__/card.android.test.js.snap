@@ -93,20 +93,18 @@ exports[`7. card with a loading state 1`] = `
     />
   </View>
   <View>
-    <View>
-      <Gradient
-        degrees={264}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-    </View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
   </View>
 </View>
 `;
@@ -114,20 +112,18 @@ exports[`7. card with a loading state 1`] = `
 exports[`8. card with a loading state and no image 1`] = `
 <View>
   <View>
-    <View>
-      <Gradient
-        degrees={264}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-    </View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
   </View>
 </View>
 `;
@@ -135,20 +131,18 @@ exports[`8. card with a loading state and no image 1`] = `
 exports[`9. card with reversed loading state 1`] = `
 <View>
   <View>
-    <View>
-      <Gradient
-        degrees={264}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-    </View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
   </View>
   <View>
     <Image
@@ -162,20 +156,18 @@ exports[`9. card with reversed loading state 1`] = `
 exports[`10. card with reversed loading state with no image 1`] = `
 <View>
   <View>
-    <View>
-      <Gradient
-        degrees={264}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-    </View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
   </View>
 </View>
 `;
@@ -285,20 +277,18 @@ exports[`14. card should re-render when loading state changes 1`] = `
     />
   </View>
   <View>
-    <View>
-      <Gradient
-        degrees={264}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-      <Gradient
-        degrees={267}
-      />
-    </View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
   </View>
 </View>
 `;
