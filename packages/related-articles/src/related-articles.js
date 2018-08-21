@@ -11,9 +11,9 @@ import propTypes from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({ onPress, slice }) => {
-  const { items = [], lead, opinion, sliceName, support1, support2 } = slice;
+  const { items, lead, opinion, sliceName, support1, support2 } = slice;
 
-  if (!sliceName) return null;
+  if (!sliceName || (!items && !lead && !opinion)) return null;
 
   const renderArticleItem = (config, article) => {
     const {

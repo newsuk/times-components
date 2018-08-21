@@ -77,6 +77,8 @@ export default Component =>
         template: sliceName
       };
 
+      if (!items && !lead && !opinion) return trackingObject;
+
       switch (sliceName) {
         case "StandardSlice":
         default:

@@ -62,6 +62,21 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const output = renderComponent(
           <RelatedArticles
             {...createRelatedArticlesProps(fixture, events)}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "no related articles slice name",
+      test() {
+        const events = jest.fn();
+
+        const output = renderComponent(
+          <RelatedArticles
+            analyticsStream={() => {}}
+            onPress={() => {}}
             slice={{
               sliceName: ""
             }}
@@ -79,9 +94,6 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         renderComponent(
           <RelatedArticles
             {...createRelatedArticlesProps(fixture, events)}
-            slice={{
-              sliceName: ""
-            }}
           />
         );
 
