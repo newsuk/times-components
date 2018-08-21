@@ -152,9 +152,6 @@ repositories {
 }
 
 dependencies {
-    implementation (project(':react-native-svg')) {
-      exclude group: "com.facebook.react"
-    }
     implementation (project(':react-native-device-info')) {
       exclude group: "com.google.android.gms"
       exclude group: "com.facebook.react"
