@@ -29,8 +29,6 @@
 -keepclassmembers class *  { @com.facebook.react.uimanager.UIProp <fields>; }
 -keepclassmembers class *  { @com.facebook.react.uimanager.annotations.ReactProp <methods>; }
 -keepclassmembers class *  { @com.facebook.react.uimanager.annotations.ReactPropGroup <methods>; }
-# React Native Svg
--keep public class com.horcrux.svg.** {*;}
 # React Native SoLoader
 -keep,allowobfuscation @interface com.facebook.soloader.DoNotOptimize
 -keep class com.facebook.soloader.SysUtil$LollipopSysdeps {
