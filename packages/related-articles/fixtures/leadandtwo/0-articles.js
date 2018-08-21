@@ -1,4 +1,4 @@
-export default ({
+export default {
   data: {
     relatedArticleSlice: {
       sliceName: "LeadOneAndTwoSlice",
@@ -7,4 +7,4 @@ export default ({
       support2: null
     }
   }
-})
+};

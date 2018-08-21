@@ -2,7 +2,7 @@
 
 exports[`1. no related articles 1`] = `null`;
 
-exports[`2. no related articles slice name 1`] = `null`;
+exports[`2. no related articles when there is no given slice name 1`] = `null`;
 
 exports[`3. analytics with no related articles 1`] = `
 Array [

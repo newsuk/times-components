@@ -60,19 +60,15 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <RelatedArticles
-            {...createRelatedArticlesProps(fixture, events)}
-          />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
       }
     },
     {
-      name: "no related articles slice name",
+      name: "no related articles when there is no given slice name",
       test() {
-        const events = jest.fn();
-
         const output = renderComponent(
           <RelatedArticles
             analyticsStream={() => {}}
@@ -92,9 +88,7 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <RelatedArticles
-            {...createRelatedArticlesProps(fixture, events)}
-          />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
