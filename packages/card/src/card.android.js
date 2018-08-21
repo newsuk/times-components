@@ -1,1 +1,3 @@
-export default from "./card-content";
+import CardContent from "./card-content";
+
+export default CardContent;
