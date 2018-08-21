@@ -589,6 +589,32 @@
               "deprecationReason": null
             },
             {
+              "name": "relatedArticles",
+              "description":
+                "Curated list of articles selected by editorial that appear at the end of an article",
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": true,
+              "deprecationReason": "use relatedArticleSlice instead"
+            },
+            {
+              "name": "relatedArticlesLayout",
+              "description":
+                "Presentational information on how the related articles should be displayed",
+              "args": [],
+              "type": { "kind": "INTERFACE", "name": "Layout", "ofType": null },
+              "isDeprecated": true,
+              "deprecationReason": "use relatedArticleSlice instead"
+            },
+            {
               "name": "relatedArticleSlice",
               "description": "Related article slice",
               "args": [],
