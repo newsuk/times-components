@@ -212,55 +212,40 @@ exports[`1. card loading state 1`] = `
   <div
     className="c0 S2"
   >
-    <CardContent
-      contentContainerClass=""
-      image={
-        Object {
-          "uri": "https://img.io/img",
-        }
-      }
-      imageContainerClass=""
-      imageRatio={0.6666666666666666}
-      imageSize={360}
-      isLoading={true}
-      isReversed={false}
-      showImage={true}
+    <div
+      className="S8"
     >
       <div
-        className="S8"
+        className="S3"
       >
-        <div
-          className="S3"
-        >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            uri="https://img.io/img&resize=360"
-          />
-        </div>
-        <div
-          className="S7"
-        >
-          <Component>
-            <Gradient
-              className="IS8"
-              degrees={264}
-            />
-            <Gradient
-              className="IS10"
-              degrees={267}
-            />
-            <Gradient
-              className="IS12"
-              degrees={267}
-            />
-            <Gradient
-              className="IS14"
-              degrees={267}
-            />
-          </Component>
-        </div>
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
       </div>
-    </CardContent>
+      <div
+        className="S7"
+      >
+        <Component>
+          <Gradient
+            className="IS8"
+            degrees={264}
+          />
+          <Gradient
+            className="IS10"
+            degrees={267}
+          />
+          <Gradient
+            className="IS12"
+            degrees={267}
+          />
+          <Gradient
+            className="IS14"
+            degrees={267}
+          />
+        </Component>
+      </div>
+    </div>
   </div>
 </indexweb__FadeIn>
 `;
@@ -478,55 +463,40 @@ exports[`2. card with reversed loading state 1`] = `
   <div
     className="c0 S6"
   >
-    <CardContent
-      contentContainerClass=""
-      image={
-        Object {
-          "uri": "https://img.io/img",
-        }
-      }
-      imageContainerClass=""
-      imageRatio={0.6666666666666666}
-      imageSize={360}
-      isLoading={true}
-      isReversed={true}
-      showImage={true}
+    <div
+      className="S8"
     >
       <div
-        className="S8"
+        className="S4"
       >
-        <div
-          className="S4"
-        >
-          <Component>
-            <Gradient
-              className="IS2"
-              degrees={264}
-            />
-            <Gradient
-              className="IS4"
-              degrees={267}
-            />
-            <Gradient
-              className="IS6"
-              degrees={267}
-            />
-            <Gradient
-              className="IS8"
-              degrees={267}
-            />
-          </Component>
-        </div>
-        <div
-          className="S7"
-        >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            uri="https://img.io/img&resize=360"
+        <Component>
+          <Gradient
+            className="IS2"
+            degrees={264}
           />
-        </div>
+          <Gradient
+            className="IS4"
+            degrees={267}
+          />
+          <Gradient
+            className="IS6"
+            degrees={267}
+          />
+          <Gradient
+            className="IS8"
+            degrees={267}
+          />
+        </Component>
       </div>
-    </CardContent>
+      <div
+        className="S7"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
+      </div>
+    </div>
   </div>
 </indexweb__FadeIn>
 `;

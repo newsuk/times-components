@@ -139,42 +139,27 @@ exports[`card with default layout 1`] = `
   <div
     className="c0 S2"
   >
-    <CardContent
-      contentContainerClass=""
-      image={
-        Object {
-          "uri": "https://img.io/img",
-        }
-      }
-      imageContainerClass=""
-      imageRatio={0.6666666666666666}
-      imageSize={360}
-      isLoading={false}
-      isReversed={false}
-      showImage={true}
+    <div
+      className="S6"
     >
       <div
-        className="S6"
+        className="S3"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
+      </div>
+      <div
+        className="S5"
       >
         <div
-          className="S3"
+          className="S4"
         >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            uri="https://img.io/img&resize=360"
-          />
-        </div>
-        <div
-          className="S5"
-        >
-          <div
-            className="S4"
-          >
-            A card
-          </div>
+          A card
         </div>
       </div>
-    </CardContent>
+    </div>
   </div>
 </indexweb__FadeIn>
 `;
