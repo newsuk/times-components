@@ -30,18 +30,6 @@ class CardComponent extends Component {
       showImage
     } = this.props;
 
-    if (isLoading) {
-      return (
-        <Loading
-          contentContainerClass={contentContainerClass}
-          imageContainerClass={imageContainerClass}
-          imageRatio={imageRatio}
-          isReversed={isReversed}
-          showImage={showImage}
-        />
-      );
-    }
-
     const renderImage = () => {
       if (!showImage) return null;
 
@@ -80,7 +68,7 @@ class CardComponent extends Component {
               isReversed ? styles.reversedContentContainer : ""
             ]}
           >
-            {children}
+          {isLoading ? <Loading /> : children}
           </View>
           {isReversed ? renderImage() : null}
         </View>
