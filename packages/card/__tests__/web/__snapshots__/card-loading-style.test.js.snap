@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. card loading state 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 <style>
 {
   "IS1": {
@@ -203,41 +208,71 @@ exports[`1. card loading state 1`] = `
 }
 </style>
 
-<div
-  className="S8"
->
+<indexweb__FadeIn>
   <div
-    className="S3"
+    className="c0 S2"
   >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
+    <CardContent
+      contentContainerClass=""
+      image={
+        Object {
+          "uri": "https://img.io/img",
+        }
+      }
+      imageContainerClass=""
+      imageRatio={0.6666666666666666}
+      imageSize={360}
+      isLoading={true}
+      isReversed={false}
+      showImage={true}
+    >
+      <div
+        className="S8"
+      >
+        <div
+          className="S3"
+        >
+          <TimesImage
+            aspectRatio={0.6666666666666666}
+            uri="https://img.io/img&resize=360"
+          />
+        </div>
+        <div
+          className="S7"
+        >
+          <div
+            className="S7"
+          >
+            <Gradient
+              className="IS8"
+              degrees={264}
+            />
+            <Gradient
+              className="IS10"
+              degrees={267}
+            />
+            <Gradient
+              className="IS12"
+              degrees={267}
+            />
+            <Gradient
+              className="IS14"
+              degrees={267}
+            />
+          </div>
+        </div>
+      </div>
+    </CardContent>
   </div>
-  <div
-    className="S7"
-  >
-    <Gradient
-      className="IS8"
-      degrees={264}
-    />
-    <Gradient
-      className="IS10"
-      degrees={267}
-    />
-    <Gradient
-      className="IS12"
-      degrees={267}
-    />
-    <Gradient
-      className="IS14"
-      degrees={267}
-    />
-  </div>
-</div>
+</indexweb__FadeIn>
 `;
 
 exports[`2. card with reversed loading state 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 <style>
 {
   "IS1": {
@@ -364,7 +399,7 @@ exports[`2. card with reversed loading state 1`] = `
     "display": "flex",
     "flex": "1",
     "flex-direction": "column",
-    "margin-bottom": "10px",
+    "margin-bottom": "0px",
     "min-width": "100%",
   },
   "S5": {
@@ -381,24 +416,10 @@ exports[`2. card with reversed loading state 1`] = `
     "display": "flex",
     "flex": "1",
     "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
+    "margin-bottom": "10px",
+    "min-width": "100%",
   },
   "S6": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
-  "S7": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -413,7 +434,21 @@ exports[`2. card with reversed loading state 1`] = `
     "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
-    "min-width": "100%",
+    "min-width": "0px",
+  },
+  "S7": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
   },
   "S8": {
     "-ms-flex-align": "start",
@@ -433,6 +468,7 @@ exports[`2. card with reversed loading state 1`] = `
     "display": "flex",
     "flex-direction": "row",
     "flex-wrap": "wrap",
+    "height": "auto",
     "justify-content": "flex-end",
     "margin-bottom": "0px",
     "min-width": "0px",
@@ -440,36 +476,61 @@ exports[`2. card with reversed loading state 1`] = `
 }
 </style>
 
-<div
-  className="S8"
->
+<indexweb__FadeIn>
   <div
-    className="S4"
+    className="c0 S7"
   >
-    <Gradient
-      className="IS2"
-      degrees={264}
-    />
-    <Gradient
-      className="IS4"
-      degrees={267}
-    />
-    <Gradient
-      className="IS6"
-      degrees={267}
-    />
-    <Gradient
-      className="IS8"
-      degrees={267}
-    />
+    <CardContent
+      contentContainerClass=""
+      image={
+        Object {
+          "uri": "https://img.io/img",
+        }
+      }
+      imageContainerClass=""
+      imageRatio={0.6666666666666666}
+      imageSize={360}
+      isLoading={true}
+      isReversed={true}
+      showImage={true}
+    >
+      <div
+        className="S8"
+      >
+        <div
+          className="S5"
+        >
+          <div
+            className="S4"
+          >
+            <Gradient
+              className="IS2"
+              degrees={264}
+            />
+            <Gradient
+              className="IS4"
+              degrees={267}
+            />
+            <Gradient
+              className="IS6"
+              degrees={267}
+            />
+            <Gradient
+              className="IS8"
+              degrees={267}
+            />
+          </div>
+        </div>
+        <div
+          className="S4"
+        >
+          <TimesImage
+            aspectRatio={0.6666666666666666}
+            uri="https://img.io/img&resize=360"
+          />
+        </div>
+      </div>
+    </CardContent>
   </div>
-  <div
-    className="S7"
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
-  </div>
-</div>
+</indexweb__FadeIn>
 `;

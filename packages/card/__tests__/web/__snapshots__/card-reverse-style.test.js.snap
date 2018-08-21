@@ -140,27 +140,42 @@ exports[`card with reversed layout 1`] = `
   <div
     className="c0 S4"
   >
-    <div
-      className="S6"
+    <CardContent
+      contentContainerClass=""
+      image={
+        Object {
+          "uri": "https://img.io/img",
+        }
+      }
+      imageContainerClass=""
+      imageRatio={0.6666666666666666}
+      imageSize={360}
+      isLoading={false}
+      isReversed={true}
+      showImage={true}
     >
       <div
-        className="S2"
+        className="S6"
       >
         <div
-          className="S1"
+          className="S2"
         >
-          A card in reverse
+          <div
+            className="S1"
+          >
+            A card in reverse
+          </div>
+        </div>
+        <div
+          className="S5"
+        >
+          <TimesImage
+            aspectRatio={0.6666666666666666}
+            uri="https://img.io/img&resize=360"
+          />
         </div>
       </div>
-      <div
-        className="S5"
-      >
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          uri="https://img.io/img&resize=360"
-        />
-      </div>
-    </div>
+    </CardContent>
   </div>
 </indexweb__FadeIn>
 `;
