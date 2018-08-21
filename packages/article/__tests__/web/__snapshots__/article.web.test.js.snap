@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. an error 1`] = `
-<div>
-  <div>
-    An error occurred
-  </div>
-  <div>
-    {
-  "message": "An example error."
-}
-  </div>
-</div>
-`;
+exports[`1. an error 1`] = `null`;
 
 exports[`2. a full article with an image as the lead asset 1`] = `
 <article>
