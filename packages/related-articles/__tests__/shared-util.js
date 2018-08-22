@@ -93,34 +93,6 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
 
         expect(events.mock.calls).toMatchSnapshot();
       }
-    },
-    {
-      name: "callback triggered on related article press",
-      test() {
-        const onRelatedArticlePress = jest.fn();
-        const { lead, opinion } = fixture.relatedArticleSlice;
-
-        if (!lead && !opinion) return;
-
-        const article = lead || opinion;
-
-        const wrapper = shallow(
-          <RelatedArticleItem
-            article={article}
-            onPress={onRelatedArticlePress}
-          />
-        );
-
-        const eventMock = {};
-        wrapper
-          .find("Link")
-          .at(0)
-          .simulate("press", eventMock);
-
-        expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-          url: article.url
-        });
-      }
     }
   ];
 
@@ -186,6 +158,35 @@ export const oneArticleTests = ({ fixture, name }) => renderComponent => {
         );
 
         expect(events.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: "callback triggered on related article press",
+      test() {
+        const onPressMock = jest.fn();
+        const {
+          items = [],
+          lead = {},
+          opinion = {}
+        } = fixture.relatedArticleSlice;
+
+        if (items.length === 0 && !lead && !opinion) return;
+
+        const article = lead.article || opinion.article || items[0].article;
+
+        const wrapper = shallow(
+          <RelatedArticleItem article={article} onPress={onPressMock} />
+        );
+
+        const eventMock = {};
+        wrapper
+          .find("Link")
+          .at(0)
+          .simulate("press", eventMock);
+
+        expect(onPressMock).toHaveBeenCalledWith(eventMock, {
+          url: article.url
+        });
       }
     }
   ];
