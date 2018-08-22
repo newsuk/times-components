@@ -1,10 +1,9 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
-  lead: PropTypes.func.isRequired,
-  renderSupports: PropTypes.func
+const propTypes = {
+  renderLead: PropTypes.func.isRequired,
+  renderSupport1: PropTypes.func.isRequired,
+  renderSupport2: PropTypes.func.isRequired
 };
 
-export const defaultProps = {
-  renderSupports: () => []
-};
+export default propTypes;

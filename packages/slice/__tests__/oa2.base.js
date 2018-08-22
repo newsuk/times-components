@@ -9,7 +9,11 @@ export default renderComponent => {
       name: "a single child element",
       test() {
         const wrapper = renderComponent(
-          <OpinionOneAndTwoSlice opinion={() => createItem("opinion")} />
+          <OpinionOneAndTwoSlice
+            renderOpinion={() => createItem("opinion")}
+            renderSupport1={() => null}
+            renderSupport2={() => null}
+          />
         );
 
         expect(wrapper).toMatchSnapshot();
@@ -20,8 +24,9 @@ export default renderComponent => {
       test() {
         const wrapper = renderComponent(
           <OpinionOneAndTwoSlice
-            opinion={() => createItem("opinion")}
-            renderSupports={() => [createItem("support-1")]}
+            renderOpinion={() => createItem("opinion")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => null}
           />
         );
 
@@ -33,11 +38,9 @@ export default renderComponent => {
       test() {
         const wrapper = renderComponent(
           <OpinionOneAndTwoSlice
-            opinion={() => createItem("opinion")}
-            renderSupports={() => [
-              createItem("support-1"),
-              createItem("support-2")
-            ]}
+            renderOpinion={() => createItem("opinion")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => createItem("support-2")}
           />
         );
 

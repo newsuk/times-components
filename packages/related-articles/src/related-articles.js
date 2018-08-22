@@ -48,10 +48,6 @@ const RelatedArticles = ({ onPress, slice }) => {
   };
 
   const renderSlice = () => {
-    const main = lead || opinion || {};
-    const { article } = main;
-    const supports = [support1, support2];
-
     switch (sliceName) {
       case "StandardSlice":
       default:
@@ -66,23 +62,29 @@ const RelatedArticles = ({ onPress, slice }) => {
       case "LeadOneAndTwoSlice":
         return (
           <LeadOneAndTwoSlice
-            lead={config => renderArticleItem(config, article)}
-            renderSupports={config =>
-              supports
-                .filter(support => support !== undefined)
-                .map(support => renderArticleItem(config, support.article))
-            }
+            renderLead={config => renderArticleItem(config, lead.article)}
+            renderSupport1={config => {
+              if (!support1) return null;
+              return renderArticleItem(config, support1.article);
+            }}
+            renderSupport2={config => {
+              if (!support2) return null;
+              return renderArticleItem(config, support2.article);
+            }}
           />
         );
       case "OpinionOneAndTwoSlice":
         return (
           <OpinionOneAndTwoSlice
-            opinion={config => renderArticleItem(config, article)}
-            renderSupports={config =>
-              supports
-                .filter(support => support !== undefined)
-                .map(support => renderArticleItem(config, support.article))
-            }
+            renderOpinion={config => renderArticleItem(config, opinion.article)}
+            renderSupport1={config => {
+              if (!support1) return null;
+              return renderArticleItem(config, support1.article);
+            }}
+            renderSupport2={config => {
+              if (!support2) return null;
+              return renderArticleItem(config, support2.article);
+            }}
           />
         );
     }
