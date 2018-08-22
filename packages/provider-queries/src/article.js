@@ -16,6 +16,7 @@ export default gql`
       section
       url
       slug
+      shortIdentifier
       commentsEnabled
       commentCount
       leadAsset {
