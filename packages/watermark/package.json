@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "2.1.14",
+  "version": "2.1.15",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.2.5",
-    "@times-components/svgs": "2.1.6",
+    "@times-components/svgs": "2.1.7",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.20"></a>
+## [3.1.20](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.19...@times-components/video@3.1.20) (2018-08-22)
+
+
+### Bug Fixes
+
+* use times svgs everywhere ([#1245](https://github.com/newsuk/times-components/issues/1245)) ([fd71184](https://github.com/newsuk/times-components/commit/fd71184))
+
+
+
+
+
 <a name="3.1.19"></a>
 ## [3.1.19](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.18...@times-components/video@3.1.19) (2018-08-22)
 

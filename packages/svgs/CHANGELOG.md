@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.7"></a>
+## [2.1.7](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.1.6...@times-components/svgs@2.1.7) (2018-08-22)
+
+
+### Bug Fixes
+
+* use times svgs everywhere ([#1245](https://github.com/newsuk/times-components/issues/1245)) ([fd71184](https://github.com/newsuk/times-components/commit/fd71184))
+
+
+
+
+
 <a name="2.1.6"></a>
 ## [2.1.6](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.1.5...@times-components/svgs@2.1.6) (2018-08-21)
 
