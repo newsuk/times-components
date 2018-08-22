@@ -39,10 +39,10 @@ exports[`1. video 1`] = `
       }
     >
       <View>
-        <svg>
-          <rect />
-          <polygon />
-        </svg>
+        <Svg>
+          <Rect />
+          <Polygon />
+        </Svg>
       </View>
     </View>
   </View>
@@ -89,10 +89,10 @@ exports[`2. video without a poster image 1`] = `
       }
     >
       <View>
-        <svg>
-          <rect />
-          <polygon />
-        </svg>
+        <Svg>
+          <Rect />
+          <Polygon />
+        </Svg>
       </View>
     </View>
   </View>
