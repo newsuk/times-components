@@ -4,7 +4,7 @@ import styles from "../styles";
 import { propTypes, defaultProps } from "./proptypes";
 import { leadConfig, supportConfig } from "./config";
 
-const LeadAndTwoSlice = ({ lead, renderSupports }) => (
+const LeadOneAndTwoSlice = ({ lead, renderSupports }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
       <View style={styles.item}>{lead(leadConfig)}</View>
@@ -17,7 +17,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => (
   </View>
 );
 
-LeadAndTwoSlice.propTypes = propTypes;
-LeadAndTwoSlice.defaultProps = defaultProps;
+LeadOneAndTwoSlice.propTypes = propTypes;
+LeadOneAndTwoSlice.defaultProps = defaultProps;
 
-export default LeadAndTwoSlice;
+export default LeadOneAndTwoSlice;

@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import {
   StandardSlice,
-  LeadAndTwoSlice,
-  OpinionAndTwoSlice
+  LeadOneAndTwoSlice,
+  OpinionOneAndTwoSlice
 } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
@@ -65,7 +65,7 @@ const RelatedArticles = ({ onPress, slice }) => {
         );
       case "LeadOneAndTwoSlice":
         return (
-          <LeadAndTwoSlice
+          <LeadOneAndTwoSlice
             lead={config => renderArticleItem(config, article)}
             renderSupports={config =>
               supports
@@ -76,7 +76,7 @@ const RelatedArticles = ({ onPress, slice }) => {
         );
       case "OpinionOneAndTwoSlice":
         return (
-          <OpinionAndTwoSlice
+          <OpinionOneAndTwoSlice
             opinion={config => renderArticleItem(config, article)}
             renderSupports={config =>
               supports

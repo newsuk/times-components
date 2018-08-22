@@ -10,7 +10,7 @@ import {
 } from "./responsive";
 import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
+const OpinionOneAndTwoSlice = ({ opinion, renderSupports }) => {
   const supports = renderSupports(getSupportConfig());
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
@@ -52,7 +52,7 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
   );
 };
 
-OpinionAndTwoSlice.propTypes = propTypes;
-OpinionAndTwoSlice.defaultProps = defaultProps;
+OpinionOneAndTwoSlice.propTypes = propTypes;
+OpinionOneAndTwoSlice.defaultProps = defaultProps;
 
-export default OpinionAndTwoSlice;
+export default OpinionOneAndTwoSlice;

@@ -1,7 +1,7 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
-import { LeadAndTwoSlice } from "../src/slice";
+import { LeadOneAndTwoSlice } from "../src/slice";
 
 export default renderComponent => {
   const tests = [
@@ -9,7 +9,7 @@ export default renderComponent => {
       name: "a single child element",
       test() {
         const output = renderComponent(
-          <LeadAndTwoSlice lead={() => createItem("lead")} />
+          <LeadOneAndTwoSlice lead={() => createItem("lead")} />
         );
 
         expect(output).toMatchSnapshot();
@@ -19,7 +19,7 @@ export default renderComponent => {
       name: "two child elements",
       test() {
         const output = renderComponent(
-          <LeadAndTwoSlice
+          <LeadOneAndTwoSlice
             lead={() => createItem("lead")}
             renderSupports={() => [createItem("support-1")]}
           />
@@ -32,7 +32,7 @@ export default renderComponent => {
       name: "three child elements",
       test() {
         const output = renderComponent(
-          <LeadAndTwoSlice
+          <LeadOneAndTwoSlice
             lead={() => createItem("lead")}
             renderSupports={() => [
               createItem("support-1"),

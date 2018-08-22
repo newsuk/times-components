@@ -5,7 +5,7 @@ import { opinionConfig, supportConfig } from "./config";
 import { propTypes, defaultProps } from "./proptypes";
 import opinionStyles from "./styles";
 
-const OpinionAndTwoSlice = ({ opinion, renderSupports }) => (
+const OpinionOneAndTwoSlice = ({ opinion, renderSupports }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
       <View style={[styles.item, opinionStyles.opinion]}>
@@ -20,7 +20,7 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => (
   </View>
 );
 
-OpinionAndTwoSlice.propTypes = propTypes;
-OpinionAndTwoSlice.defaultProps = defaultProps;
+OpinionOneAndTwoSlice.propTypes = propTypes;
+OpinionOneAndTwoSlice.defaultProps = defaultProps;
 
-export default OpinionAndTwoSlice;
+export default OpinionOneAndTwoSlice;

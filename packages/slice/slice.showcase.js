@@ -2,8 +2,8 @@
 
 import React from "react";
 import { ScrollView, View } from "react-native";
-import LeadAndTwoSlice from "./src/templates/leadandtwo";
-import OpinionAndTwoSlice from "./src/templates/opinionandtwo";
+import LeadOneAndTwoSlice from "./src/templates/leadoneandtwo";
+import OpinionOneAndTwoSlice from "./src/templates/opiniononeandtwo";
 import StandardSlice from "./src/templates/standard";
 
 const colours = [
@@ -31,7 +31,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "Lead and two",
+      name: "LeadOneAndTwo",
       component: ({ select }) => {
         const itemCount = {
           0: "0",
@@ -41,7 +41,7 @@ export default {
 
         return (
           <ScrollView>
-            <LeadAndTwoSlice
+            <LeadOneAndTwoSlice
               lead={() => (
                 <View
                   id="lead"
@@ -61,7 +61,7 @@ export default {
     },
     {
       type: "story",
-      name: "Opinion and two",
+      name: "OpinionOneAndTwo",
       component: ({ select }) => {
         const itemCount = {
           0: "0",
@@ -71,7 +71,7 @@ export default {
 
         return (
           <ScrollView>
-            <OpinionAndTwoSlice
+            <OpinionOneAndTwoSlice
               opinion={() => (
                 <View
                   id="opinion"
