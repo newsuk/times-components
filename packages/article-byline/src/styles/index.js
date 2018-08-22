@@ -8,11 +8,17 @@ const styles = StyleSheet.create({
       font: "supporting",
       fontSize: "cardMeta"
     }),
+    lineHeight: 21,
     color: colours.functional.secondary,
     flexDirection: "row"
   },
   link: {
-    color: colours.functional.action
+    color: colours.functional.action,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    }),
+    lineHeight: 21
   }
 });
 

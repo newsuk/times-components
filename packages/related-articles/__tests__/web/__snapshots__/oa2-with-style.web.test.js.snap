@@ -225,6 +225,9 @@ exports[`default styles 1`] = `
     "marginBottom": "10px",
     "msFlexWrap": "wrap",
   },
+  "IS6": {
+    "lineHeight": "15px",
+  },
   "S1": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
@@ -243,7 +246,6 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "15px",
     "margin-bottom": "5px",
     "margin-top": "0px",
   },
@@ -288,7 +290,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "15px",
+    "line-height": "21px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -413,7 +415,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S10"
+                  className="S10 IS6"
                 >
                   <time>
                     March 13 2015, 06:54pm
