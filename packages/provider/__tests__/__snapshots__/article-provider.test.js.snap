@@ -55,57 +55,60 @@ Object {
   },
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
-  "relatedArticles": Array [
-    Object {
-      "__typename": "Article",
-      "byline": Array [
-        Object {
-          "attributes": Object {
-            "value": "Patrick Kidd",
+  "relatedArticleSlice": Object {
+    "__typename": "StandardSlice",
+    "items": Array [
+      Object {
+        "__typename": "Tile",
+        "article": Object {
+          "__typename": "Article",
+          "byline": Array [
+            Object {
+              "attributes": Object {
+                "value": "Patrick Kidd",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "headline": "Related Headline",
+          "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
+          "label": "Label",
+          "leadAsset": Object {
+            "__typename": "Image",
+            "crop169": Object {
+              "__typename": "Crop",
+              "url": "https://image.io/169",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
+            },
+            "crop32": Object {
+              "__typename": "Crop",
+              "url": "https://image.io/32",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
+            },
+            "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+            "title": "RA Lead Title",
+            Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
           },
-          "children": Array [],
-          "name": "text",
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T19:39:39.000Z",
+          "section": "related",
+          "summary125": Array [
+            Object {
+              "attributes": Object {
+                "value": "Summary 125",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "url": "https://some-url",
+          Symbol(id): "Article:ea16d744-cb4a-11e4-a202-50ac5def393a",
         },
-      ],
-      "headline": "Related Headline",
-      "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-      "label": "Label",
-      "leadAsset": Object {
-        "__typename": "Image",
-        "crop169": Object {
-          "__typename": "Crop",
-          "url": "https://image.io/169",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
-        },
-        "crop32": Object {
-          "__typename": "Crop",
-          "url": "https://image.io/32",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
-        },
-        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-        "title": "RA Lead Title",
-        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+        Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice.items.0",
       },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-23T19:39:39.000Z",
-      "section": "related",
-      "summary125": Array [
-        Object {
-          "attributes": Object {
-            "value": "Summary 125",
-          },
-          "children": Array [],
-          "name": "text",
-        },
-      ],
-      "url": "https://some-url",
-      Symbol(id): "Article:ea16d744-cb4a-11e4-a202-50ac5def393a",
-    },
-  ],
-  "relatedArticlesLayout": Object {
-    "__typename": "Default",
-    "template": "DEFAULT",
-    Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticlesLayout",
+    ],
+    Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice",
   },
   "section": "business",
   "standfirst": "Standfirst",
