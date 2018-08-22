@@ -68,9 +68,9 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.2.5",
+    "@times-components/svgs": "2.1.6",
     "@times-components/utils": "3.1.0",
-    "prop-types": "15.6.2",
-    "svgs": "3.2.1"
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": ">=16.2",
