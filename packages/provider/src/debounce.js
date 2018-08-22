@@ -22,17 +22,22 @@ const withDebounce = WrappedComponent => {
       this.debounceTimeout = null;
     }
 
-    componentWillReceiveProps(nextProps) {
-      validateProps(nextProps);
-      if (isEqual(this.props, nextProps)) return;
-      if (this.props.debounceTimeMs === 0) {
-        this.setState({ debouncedProps: nextProps, isDebouncing: false });
+    componentDidUpdate(prevProps) {
+      validateProps(this.props);
+      const { debounceTimeMs } = this.props;
+      if (isEqual(prevProps, this.props)) return;
+
+      if (debounceTimeMs === 0) {
+        this.debounceTimeout = setTimeout(
+          this.handleDebounceTimer,
+          debounceTimeMs
+        );
       } else {
-        this.setState({ isDebouncing: true });
+        this.setState({ isDebouncing: true }); // eslint-disable-line
         clearTimeout(this.debounceTimeout);
         this.debounceTimeout = setTimeout(
           this.handleDebounceTimer,
-          nextProps.debounceTimeMs
+          debounceTimeMs
         );
       }
     }
