@@ -1150,6 +1150,7 @@ const defaultTopics = [
 ];
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const defaultSlug = "france-defies-may-over-russia-37b27qd2s";
 
 export default (
   {
@@ -1167,7 +1168,8 @@ export default (
     section = defaultSection,
     standfirst = defaultStandfirst,
     topics = defaultTopics,
-    url = defaultUrl
+    url = defaultUrl,
+    slug = defaultSlug
   } = {}
 ) => ({
   data: {
@@ -1188,6 +1190,7 @@ export default (
       relatedArticles,
       relatedArticlesLayout,
       section,
+      slug,
       standfirst,
       topics,
       url

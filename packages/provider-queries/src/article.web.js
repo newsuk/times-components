@@ -15,6 +15,7 @@ export default gql`
       content
       section
       url
+      slug
       leadAsset {
         ... on Video {
           brightcovePolicyKey

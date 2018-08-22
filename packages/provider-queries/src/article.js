@@ -15,6 +15,7 @@ export default gql`
       content
       section
       url
+      slug
       commentsEnabled
       commentCount
       leadAsset {
