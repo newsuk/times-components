@@ -34,6 +34,7 @@ exports[`1. video 1`] = `
     <View>
       <Svg>
         <Rect />
+        <Rect />
         <Polygon />
       </Svg>
     </View>
@@ -75,6 +76,7 @@ exports[`2. video without a poster image 1`] = `
   >
     <View>
       <Svg>
+        <Rect />
         <Rect />
         <Polygon />
       </Svg>

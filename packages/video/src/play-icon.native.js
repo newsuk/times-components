@@ -9,6 +9,12 @@ const PlayIcon = () => (
         fill="#000000"
         fillOpacity="0.4"
         height="100"
+        width="100"
+        x="0"
+        y="0"
+      />
+      <Rect
+        height="100"
         stroke="#FFFFFF"
         strokeWidth="8"
         width="100"
