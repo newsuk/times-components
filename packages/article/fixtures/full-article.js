@@ -1773,6 +1773,8 @@ const defaultRelatedArticlesLayout = {
   __typename: "Default"
 };
 const defaultSection = "news";
+const defaultShortIdentifier = "37b27qd2s";
+const defaultSlug = "france-defies-may-over-russia";
 const defaultStandfirst =
   "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life";
 const defaultTopics = [
@@ -1830,6 +1832,8 @@ const makeDefaultConfig = (
     relatedArticles = defaultRelatedArticles,
     relatedArticlesLayout = defaultRelatedArticlesLayout,
     section = defaultSection,
+    shortIdentifier = defaultShortIdentifier,
+    slug = defaultSlug,
     standfirst = defaultStandfirst,
     topics = defaultTopics,
     url = defaultUrl
@@ -1847,6 +1851,8 @@ const makeDefaultConfig = (
   relatedArticles,
   relatedArticlesLayout,
   section,
+  shortIdentifier,
+  slug,
   standfirst,
   topics,
   url
