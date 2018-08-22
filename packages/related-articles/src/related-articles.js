@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import {
   StandardSlice,
-  LeadAndTwoSlice,
-  OpinionAndTwoSlice
+  LeadOneAndTwoSlice,
+  OpinionOneAndTwoSlice
 } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
@@ -48,10 +48,6 @@ const RelatedArticles = ({ onPress, slice }) => {
   };
 
   const renderSlice = () => {
-    const main = lead || opinion || {};
-    const { article } = main;
-    const supports = [support1, support2];
-
     switch (sliceName) {
       case "StandardSlice":
       default:
@@ -65,24 +61,30 @@ const RelatedArticles = ({ onPress, slice }) => {
         );
       case "LeadOneAndTwoSlice":
         return (
-          <LeadAndTwoSlice
-            lead={config => renderArticleItem(config, article)}
-            renderSupports={config =>
-              supports
-                .filter(support => support !== undefined)
-                .map(support => renderArticleItem(config, support.article))
-            }
+          <LeadOneAndTwoSlice
+            renderLead={config => renderArticleItem(config, lead.article)}
+            renderSupport1={config => {
+              if (!support1) return null;
+              return renderArticleItem(config, support1.article);
+            }}
+            renderSupport2={config => {
+              if (!support2) return null;
+              return renderArticleItem(config, support2.article);
+            }}
           />
         );
       case "OpinionOneAndTwoSlice":
         return (
-          <OpinionAndTwoSlice
-            opinion={config => renderArticleItem(config, article)}
-            renderSupports={config =>
-              supports
-                .filter(support => support !== undefined)
-                .map(support => renderArticleItem(config, support.article))
-            }
+          <OpinionOneAndTwoSlice
+            renderOpinion={config => renderArticleItem(config, opinion.article)}
+            renderSupport1={config => {
+              if (!support1) return null;
+              return renderArticleItem(config, support1.article);
+            }}
+            renderSupport2={config => {
+              if (!support2) return null;
+              return renderArticleItem(config, support2.article);
+            }}
           />
         );
     }

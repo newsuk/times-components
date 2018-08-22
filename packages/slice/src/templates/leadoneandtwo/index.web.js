@@ -9,9 +9,11 @@ import {
 } from "./responsive";
 import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const LeadAndTwoSlice = ({ lead, renderSupports }) => {
+const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
   const supportConfig = getSupportConfig();
-  const supports = renderSupports(supportConfig);
+  const support1 = renderSupport1(supportConfig);
+  const support2 = renderSupport2(supportConfig);
+  const supports = [support1, support2].filter(support => support);
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
@@ -39,7 +41,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadContainer>{lead(leadConfig)}</LeadContainer>
+          <LeadContainer>{renderLead(leadConfig)}</LeadContainer>
           {hasSupports && <Separator />}
           {hasSupports && renderSupportsContainer()}
         </Container>
@@ -48,7 +50,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   );
 };
 
-LeadAndTwoSlice.propTypes = propTypes;
-LeadAndTwoSlice.defaultProps = defaultProps;
+LeadOneAndTwoSlice.propTypes = propTypes;
+LeadOneAndTwoSlice.defaultProps = defaultProps;
 
-export default LeadAndTwoSlice;
+export default LeadOneAndTwoSlice;

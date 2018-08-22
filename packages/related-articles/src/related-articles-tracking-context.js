@@ -2,8 +2,8 @@ import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
   standardRoles,
-  leadAndTwoRoles,
-  opinionAndTwoRoles
+  leadOneAndTwoRoles,
+  opinionOneAndTwoRoles
 } from "@times-components/slice";
 import getHeadline from "./utils";
 
@@ -61,10 +61,10 @@ export default Component =>
           byline: get(byline, "[0].children[0].attributes.value", ""),
           headline: getHeadline(headline, shortHeadline),
           publishedTime,
-          role: leadAndTwoRoles[0]
+          role: leadOneAndTwoRoles[0]
         };
 
-        const supportsTrackingObjects = supportsTracking(leadAndTwoRoles);
+        const supportsTrackingObjects = supportsTracking(leadOneAndTwoRoles);
 
         return [leadOneAndTwoTrackingObject, ...supportsTrackingObjects];
       };
@@ -77,10 +77,10 @@ export default Component =>
           byline: get(byline, "[0].children[0].attributes.value", ""),
           headline: getHeadline(headline, shortHeadline),
           publishedTime,
-          role: opinionAndTwoRoles[0]
+          role: opinionOneAndTwoRoles[0]
         };
 
-        const supportsTrackingObjects = supportsTracking(opinionAndTwoRoles);
+        const supportsTrackingObjects = supportsTracking(opinionOneAndTwoRoles);
 
         return [opinionOneAndTwoTrackingObject, ...supportsTrackingObjects];
       };

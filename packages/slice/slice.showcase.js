@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-
 import React from "react";
 import { ScrollView, View } from "react-native";
-import LeadAndTwoSlice from "./src/templates/leadandtwo";
-import OpinionAndTwoSlice from "./src/templates/opinionandtwo";
+import LeadOneAndTwoSlice from "./src/templates/leadoneandtwo";
+import OpinionOneAndTwoSlice from "./src/templates/opiniononeandtwo";
 import StandardSlice from "./src/templates/standard";
 
 const colours = [
@@ -26,68 +25,148 @@ const createItems = noOfItems =>
     })
     .filter(item => item !== false);
 
+const Support1 = () => (
+  <View
+    id="support1"
+    style={[{ minHeight: 150 }, { backgroundColor: "green" }]}
+  />
+);
+
+const Support2 = () => (
+  <View
+    id="support2"
+    style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]}
+  />
+);
+
 export default {
   name: "Primitives/Slice",
   children: [
     {
       type: "story",
-      name: "Lead and two",
-      component: ({ select }) => {
-        const itemCount = {
-          0: "0",
-          1: "1",
-          2: "2"
-        };
-
-        return (
-          <ScrollView>
-            <LeadAndTwoSlice
-              lead={() => (
-                <View
-                  id="lead"
-                  style={{
-                    backgroundColor: "red",
-                    minHeight: 320
-                  }}
-                />
-              )}
-              renderSupports={() =>
-                createItems(select("Number of support items:", itemCount, 0))
-              }
-            />
-          </ScrollView>
-        );
-      }
+      name: "LeadOneAndTwo",
+      component: () => (
+        <ScrollView>
+          <LeadOneAndTwoSlice
+            renderLead={() => (
+              <View
+                id="lead"
+                style={{
+                  backgroundColor: "red",
+                  minHeight: 320
+                }}
+              />
+            )}
+            renderSupport1={() => null}
+            renderSupport2={() => null}
+          />
+        </ScrollView>
+      )
     },
     {
       type: "story",
-      name: "Opinion and two",
-      component: ({ select }) => {
-        const itemCount = {
-          0: "0",
-          1: "1",
-          2: "2"
-        };
-
-        return (
-          <ScrollView>
-            <OpinionAndTwoSlice
-              opinion={() => (
-                <View
-                  id="opinion"
-                  style={{
-                    minHeight: 150,
-                    backgroundColor: "red"
-                  }}
-                />
-              )}
-              renderSupports={() =>
-                createItems(select("Number of support items:", itemCount, 0))
-              }
-            />
-          </ScrollView>
-        );
-      }
+      name: "LeadOneAndTwo With 1 Support",
+      component: () => (
+        <ScrollView>
+          <LeadOneAndTwoSlice
+            renderLead={() => (
+              <View
+                id="lead"
+                style={{
+                  backgroundColor: "red",
+                  minHeight: 320
+                }}
+              />
+            )}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => null}
+          />
+        </ScrollView>
+      )
+    },
+    {
+      type: "story",
+      name: "LeadOneAndTwo With 2 Supports",
+      component: () => (
+        <ScrollView>
+          <LeadOneAndTwoSlice
+            renderLead={() => (
+              <View
+                id="lead"
+                style={{
+                  backgroundColor: "red",
+                  minHeight: 320
+                }}
+              />
+            )}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
+          />
+        </ScrollView>
+      )
+    },
+    {
+      type: "story",
+      name: "OpinionOneAndTwo",
+      component: () => (
+        <ScrollView>
+          <OpinionOneAndTwoSlice
+            renderOpinion={() => (
+              <View
+                id="opinion"
+                style={{
+                  minHeight: 150,
+                  backgroundColor: "red"
+                }}
+              />
+            )}
+            renderSupport1={() => null}
+            renderSupport2={() => null}
+          />
+        </ScrollView>
+      )
+    },
+    {
+      type: "story",
+      name: "OpinionOneAndTwo With 1 Support",
+      component: () => (
+        <ScrollView>
+          <OpinionOneAndTwoSlice
+            renderOpinion={() => (
+              <View
+                id="opinion"
+                style={{
+                  minHeight: 150,
+                  backgroundColor: "red"
+                }}
+              />
+            )}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => null}
+          />
+        </ScrollView>
+      )
+    },
+    {
+      type: "story",
+      name: "OpinionOneAndTwo With 2 Supports",
+      component: () => (
+        <ScrollView>
+          <OpinionOneAndTwoSlice
+            renderOpinion={() => (
+              <View
+                id="opinion"
+                style={{
+                  minHeight: 150,
+                  backgroundColor: "red"
+                }}
+              />
+            )}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
+          />
+        </ScrollView>
+      )
     },
     {
       type: "story",

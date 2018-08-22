@@ -19,15 +19,11 @@ export const sharedPropTypes = {
     summary225: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
   }),
-  bylineClass: PropTypes.string,
-  contentContainerClass: PropTypes.string,
-  headlineClass: PropTypes.string,
   imageConfig: PropTypes.shape({
     cropSize: PropTypes.string,
     imageRatio: PropTypes.number,
     style: ViewPropTypesStyle
   }),
-  imageContainerClass: PropTypes.string,
   isOpinionByline: PropTypes.bool,
   isReversed: PropTypes.bool,
   showImage: PropTypes.bool,
@@ -46,11 +42,7 @@ export const sharedDefaultProps = {
   summary160: [],
   summary175: [],
   summary225: [],
-  bylineClass: "",
-  contentContainerClass: "",
-  headlineClass: "",
   imageConfig: {},
-  imageContainerClass: "",
   isOpinionByline: false,
   isReversed: false,
   showImage: true,
