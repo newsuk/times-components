@@ -5,7 +5,7 @@ import SVGPath from "./path";
 
 const { Path } = ART;
 
-const Rect = ({ stroke, fill, x, y, width, height }) => {
+const Rect = ({ stroke, fill, x, y, width, height, fillOpacity }) => {
   const d = new Path()
     .moveTo(x, y)
     .line(width, 0)
@@ -13,7 +13,7 @@ const Rect = ({ stroke, fill, x, y, width, height }) => {
     .line(-width, 0)
     .line(0, -height);
 
-  return <SVGPath d={d} fill={fill} stroke={stroke} />;
+  return <SVGPath d={d} fill={fill} opacity={fillOpacity} stroke={stroke} />;
 };
 
 Rect.propTypes = {
@@ -22,12 +22,14 @@ Rect.propTypes = {
   x: PropTypes.string.isRequired,
   y: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired
+  height: PropTypes.string.isRequired,
+  fillOpacity: PropTypes.string
 };
 
 Rect.defaultProps = {
   stroke: null,
-  fill: null
+  fill: null,
+  fillOpacity: null
 };
 
 export default Rect;

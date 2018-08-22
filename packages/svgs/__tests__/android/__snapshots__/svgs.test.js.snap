@@ -90,7 +90,7 @@ exports[`4. a rect 1`] = `
       1,
     ]
   }
-  opacity={1}
+  opacity={0.4}
   stroke={
     Array [
       1,
