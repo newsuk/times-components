@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Svg, { G, Path } from "svgs";
+import Svg, { G, Path } from "@times-components/svgs";
 import { colours } from "@times-components/styleguide";
 
 const Watermark = ({ height, viewBox, width }) => (
