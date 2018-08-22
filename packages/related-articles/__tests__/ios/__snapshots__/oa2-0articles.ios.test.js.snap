@@ -2,7 +2,9 @@
 
 exports[`1. no related articles 1`] = `null`;
 
-exports[`2. analytics with no related articles 1`] = `
+exports[`2. no related articles when there is no given slice name 1`] = `null`;
+
+exports[`3. analytics with no related articles 1`] = `
 Array [
   Array [
     Object {
@@ -10,7 +12,7 @@ Array [
       "attrs": Object {
         "articles": Array [],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "OPINION_AND_TWO",
+        "template": "OpinionOneAndTwoSlice",
       },
       "component": "Page",
       "object": "RelatedArticles",

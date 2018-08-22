@@ -1189,588 +1189,593 @@ const defaultLeadAsset = {
   type: "Image",
   __typename: "Image"
 };
-const defaultRelatedArticles = [
-  {
-    id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
-    headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
-    byline: [
-      {
-        name: "inline",
-        attributes: {},
-        children: [
+const defaultRelatedArticleSlice = {
+  sliceName: "StandardSlice",
+  items: [
+    {
+      article: {
+        id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
+        headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+        byline: [
           {
-            name: "text",
-            attributes: {
-              value: "Patrick Kidd"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Health",
-    publicationName: "TIMES",
-    publishedTime: "2015-03-23T19:39:39.000Z",
-    section: "",
-    summary105: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "inline",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value: "Patrick Kidd"
                 },
                 children: []
               }
             ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " in 1965, aged 17, and the"
-            },
-            children: []
           }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
+        ],
+        label: "Health",
+        publicationName: "TIMES",
+        publishedTime: "2015-03-23T19:39:39.000Z",
+        section: "",
+        summary105: [
           {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "paragraph",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value: " in 1965, aged 17, and the"
                 },
                 children: []
               }
             ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " in 1965, aged 17, and the paper recalls in a"
-            },
-            children: []
           }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
+        ],
+        summary125: [
           {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "paragraph",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value: " in 1965, aged 17, and the paper recalls in a"
                 },
                 children: []
               }
             ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore"
-            },
-            children: []
           }
-        ]
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
+        ],
+        summary145: [
           {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "paragraph",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    " in 1965, aged 17, and the paper recalls in a tribute that he wore"
                 },
                 children: []
               }
             ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school"
-            },
-            children: []
           }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
+        ],
+        summary160: [
           {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "paragraph",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    " in 1965, aged 17, and the paper recalls in a tribute that he wore his school"
                 },
                 children: []
               }
             ]
-          },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
-            },
-            children: []
           }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
+        ],
+        summary175: [
           {
-            name: "text",
-            attributes: {
-              value:
-                "Terry Pratchett, who died last week, began his career on the "
-            },
-            children: []
-          },
-          {
-            name: "italic",
+            name: "paragraph",
             attributes: {},
             children: [
               {
                 name: "text",
                 attributes: {
-                  value: "Bucks Free Press"
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
                 },
                 children: []
               }
             ]
+          }
+        ],
+        summary225: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Terry Pratchett, who died last week, began his career on the "
+                },
+                children: []
+              },
+              {
+                name: "italic",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Bucks Free Press"
+                    },
+                    children: []
+                  }
+                ]
+              },
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        leadAsset: {
+          id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
+          title: "TMS: Pratchett’s law of the jungle",
+          crop169: {
+            url:
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104",
+            __typename: "Crop"
           },
-          {
-            name: "text",
-            attributes: {
-              value:
-                " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
-      title: "TMS: Pratchett’s law of the jungle",
-      crop169: {
-        url:
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104",
-        __typename: "Crop"
-      },
-      crop32: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-        __typename: "Crop"
-      },
-      __typename: "Image"
-    },
-    url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-    __typename: "Article"
-  },
-  {
-    id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
-    headline:
-      "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-    byline: [
-      {
-        name: "inline",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Graeme Paton Transport Correspondent"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Science",
-    publicationName: "TIMES",
-    publishedTime: "2015-03-23T20:42:27.000Z",
-    section: "",
-    summary105: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: []
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Figures from the"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Figures from the Driver and Vehicle"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
-      title: "Rise of centenarian drivers as elderly push on",
-      crop169: {
-        url:
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108",
-        __typename: "Crop"
-      },
-      crop32: {
-        url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
-        __typename: "Crop"
-      },
-      __typename: "Image"
-    },
-    url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-    __typename: "Article"
-  },
-  {
-    id: "cab431f6-39df-11e8-b5b4-b935584040f4",
-    headline: "YouTube ignored police pleas to remove threatening videos",
-    section: "news",
-    byline: [
-      {
-        name: "inline",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "John Simpson, Crime Correspondent | Will Humphries"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    label: "Youtube",
-    publicationName: "TIMES",
-    publishedTime: "2018-04-06T23:01:00.000Z",
-    summary105: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary125: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary145: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary160: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary175: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    summary225: [
-      {
-        name: "paragraph",
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
-            },
-            children: []
-          }
-        ]
-      }
-    ],
-    leadAsset: {
-      posterImage: {
-        id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
-        title: "",
-        crop169: {
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
-          __typename: "Crop"
+          crop32: {
+            url:
+              "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+            __typename: "Crop"
+          },
+          __typename: "Image"
         },
-        crop32: {
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
-          __typename: "Crop"
-        },
-        __typename: "Image"
-      },
-      __typename: "Video"
+        url:
+          "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+        __typename: "Article"
+      }
     },
-    url:
-      "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
-    __typename: "Article"
-  }
-];
-const defaultRelatedArticlesLayout = {
-  template: "DEFAULT",
-  __typename: "Default"
+    {
+      article: {
+        id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
+        headline:
+          "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+        byline: [
+          {
+            name: "inline",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Graeme Paton Transport Correspondent"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        label: "Science",
+        publicationName: "TIMES",
+        publishedTime: "2015-03-23T20:42:27.000Z",
+        section: "",
+        summary105: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary125: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary145: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "paragraph",
+            attributes: {},
+            children: []
+          }
+        ],
+        summary160: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Figures from the"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary175: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Figures from the Driver and Vehicle"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary225: [
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "paragraph",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        leadAsset: {
+          id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
+          title: "Rise of centenarian drivers as elderly push on",
+          crop169: {
+            url:
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108",
+            __typename: "Crop"
+          },
+          crop32: {
+            url:
+              "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
+            __typename: "Crop"
+          },
+          __typename: "Image"
+        },
+        url:
+          "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+        __typename: "Article"
+      }
+    },
+    {
+      article: {
+        id: "cab431f6-39df-11e8-b5b4-b935584040f4",
+        headline: "YouTube ignored police pleas to remove threatening videos",
+        section: "news",
+        byline: [
+          {
+            name: "inline",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "John Simpson, Crime Correspondent | Will Humphries"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        label: "Youtube",
+        publicationName: "TIMES",
+        publishedTime: "2018-04-06T23:01:00.000Z",
+        summary105: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary125: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary145: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary160: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary175: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        summary225: [
+          {
+            name: "paragraph",
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value:
+                    "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
+                },
+                children: []
+              }
+            ]
+          }
+        ],
+        leadAsset: {
+          posterImage: {
+            id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
+            title: "",
+            crop169: {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
+              __typename: "Crop"
+            },
+            crop32: {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
+              __typename: "Crop"
+            },
+            __typename: "Image"
+          },
+          __typename: "Video"
+        },
+        url:
+          "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
+        __typename: "Article"
+      }
+    }
+  ]
 };
 const defaultSection = "news";
 const defaultStandfirst =
@@ -1827,8 +1832,7 @@ const makeDefaultConfig = (
     keywords = defaultKeywords,
     label = defaultLabel,
     leadAsset = defaultLeadAsset,
-    relatedArticles = defaultRelatedArticles,
-    relatedArticlesLayout = defaultRelatedArticlesLayout,
+    relatedArticleSlice = defaultRelatedArticleSlice,
     section = defaultSection,
     standfirst = defaultStandfirst,
     topics = defaultTopics,
@@ -1844,8 +1848,7 @@ const makeDefaultConfig = (
   keywords,
   label,
   leadAsset,
-  relatedArticles,
-  relatedArticlesLayout,
+  relatedArticleSlice,
   section,
   standfirst,
   topics,
@@ -1905,30 +1908,35 @@ export const testFixture = {
     crop: { ratio: "16:9", url: "https://crop169.io", __typename: "Crop" },
     __typename: "Image"
   },
-  relatedArticles: [
-    {
-      id: "ra-1",
-      headline: "RA Headline",
-      byline: [],
-      label: "RA Label",
-      publicationName: "TIMES",
-      publishedTime: "2015-03-23T19:39:39.000Z",
-      summary105: [],
-      summary125: [],
-      summary145: [],
-      summary160: [],
-      summary175: [],
-      summary225: [],
-      leadAsset: {
-        title: "RA Title",
-        crop169: { url: "https://racrop169.io", __typename: "Crop" },
-        crop32: { url: "https://racrop32.io", __typename: "Crop" },
-        __typename: "Image"
-      },
-      url: "https://ra.io",
-      __typename: "Article"
-    }
-  ],
+  relatedArticleSlice: {
+    sliceName: "StandardSlice",
+    items: [
+      {
+        article: {
+          id: "ra-1",
+          headline: "RA Headline",
+          byline: [],
+          label: "RA Label",
+          publicationName: "TIMES",
+          publishedTime: "2015-03-23T19:39:39.000Z",
+          summary105: [],
+          summary125: [],
+          summary145: [],
+          summary160: [],
+          summary175: [],
+          summary225: [],
+          leadAsset: {
+            title: "RA Title",
+            crop169: { url: "https://racrop169.io", __typename: "Crop" },
+            crop32: { url: "https://racrop32.io", __typename: "Crop" },
+            __typename: "Image"
+          },
+          url: "https://ra.io",
+          __typename: "Article"
+        }
+      }
+    ]
+  },
   section: "Some Section",
   standfirst: "Some Standfirst",
   commentsEnabled: true,

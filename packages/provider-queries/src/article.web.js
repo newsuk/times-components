@@ -3,103 +3,135 @@ import gql from "graphql-tag";
 export default gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
-      id
-      headline
-      keywords
-      publicationName
-      publishedTime
-      label
-      standfirst
-      flags
-      byline
+      commentCount
+      commentsEnabled
       content
-      section
-      url
+      flags
+      keywords
       leadAsset {
         ... on Video {
-          brightcovePolicyKey
-          brightcovePlayerId
-          brightcoveVideoId
           brightcoveAccountId
-          paidOnly
-          type: __typename
+          brightcovePolicyKey
+          brightcoveVideoId
           posterImage {
             ...imageProps
           }
-          brightcoveAccountId
-          brightcoveVideoId
-          brightcovePlayerId
-          brightcovePolicyKey
+          type: __typename
         }
         ... on Image {
           type: __typename
           ...imageProps
         }
       }
-      relatedArticles {
-        id
-        headline
-        section
-        byline
-        label
-        publicationName
-        publishedTime
-        summary105: summary(maxCharCount: 105)
-        summary125: summary(maxCharCount: 125)
-        summary145: summary(maxCharCount: 145)
-        summary160: summary(maxCharCount: 160)
-        summary175: summary(maxCharCount: 175)
-        summary225: summary(maxCharCount: 225)
-        leadAsset {
-          ... on Image {
-            id
-            title
-            crop169: crop(ratio: "16:9") {
-              url
-            }
-            crop32: crop(ratio: "3:2") {
-              url
-            }
-          }
-          ... on Video {
-            posterImage {
-              id
-              title
-              crop169: crop(ratio: "16:9") {
-                url
-              }
-              crop32: crop(ratio: "3:2") {
-                url
-              }
+      relatedArticleSlice {
+        ... on StandardSlice {
+          items {
+            article {
+              ...relatedProps
             }
           }
         }
-        url
-      }
-      relatedArticlesLayout {
-        template
-        ... on LeadAndTwo {
-          main
+        ... on LeadOneAndTwoSlice {
+          lead {
+            article {
+              ...relatedProps
+            }
+          }
+          support1 {
+            article {
+              ...relatedProps
+            }
+          }
+          support2 {
+            article {
+              ...relatedProps
+            }
+          }
         }
-        ... on OpinionAndTwo {
-          main
+        ... on OpinionOneAndTwoSlice {
+          opinion {
+            article {
+              ...relatedProps
+            }
+          }
+          support1 {
+            article {
+              ...relatedProps
+            }
+          }
+          support2 {
+            article {
+              ...relatedProps
+            }
+          }
         }
       }
+      standfirst
       topics(maxCount: 5) {
         name
         slug
       }
+      ...articleProps
     }
   }
 
   fragment imageProps on Image {
-    id
-    title
-    credits
     caption
+    credits
     crop(ratio: "16:9") {
       ratio
       url
     }
+    id
+    title
+  }
+
+  fragment articleProps on Article {
+    byline
+    headline
+    id
+    label
+    publicationName
+    publishedTime
+    section
+    url
+  }
+
+  fragment relatedProps on Article {
+    leadAsset {
+      ... on Image {
+        crop169: crop(ratio: "16:9") {
+          url
+        }
+        crop32: crop(ratio: "3:2") {
+          url
+        }
+        id
+        title
+      }
+      ... on Video {
+        posterImage {
+          crop169: crop(ratio: "16:9") {
+            url
+          }
+          crop32: crop(ratio: "3:2") {
+            url
+          }
+          id
+          title
+        }
+      }
+    }
+    ...articleProps
+    ...summaries
+  }
+
+  fragment summaries on Article {
+    summary105: summary(maxCharCount: 105)
+    summary125: summary(maxCharCount: 125)
+    summary145: summary(maxCharCount: 145)
+    summary160: summary(maxCharCount: 160)
+    summary175: summary(maxCharCount: 175)
+    summary225: summary(maxCharCount: 225)
   }
 `;

@@ -6,10 +6,12 @@ import {
   threeArticlesTests,
   testSummary
 } from "./shared-util";
+import opinionAndTwo0ArticleFixture from "../fixtures/opinionandtwo/0-articles";
 import opinionAndTwo1ArticleFixture from "../fixtures/opinionandtwo/1-article";
 import opinionAndTwo2ArticlesFixture from "../fixtures/opinionandtwo/2-articles";
 import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles";
 
+const opinionAndTwo0ArticleFixtureData = opinionAndTwo0ArticleFixture.data;
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   url: "https://test.io",
   crop23: "https://crop23.io",
@@ -96,8 +98,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: opinionAndTwo1ArticleFixtureData,
-  template: "OPINION_AND_TWO"
+  fixture: opinionAndTwo0ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({

@@ -1,158 +1,160 @@
 {
   "data": {
-    "relatedArticlesLayout": {
-      "template": "DEFAULT"
-    },
-    "relatedArticles": [
-      {
-        "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-        "headline":
-          "Now for a new battle: bringing the fragile masterpiece over safely",
-        "shortHeadline": "Bringing the fragile masterpiece over safely",
-        "section": "thedish",
-        "summary105": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+    "relatedArticleSlice": {
+      "sliceName": "StandardSlice",
+      "items": [
+        {
+          "article": {
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "headline":
+              "Now for a new battle: bringing the fragile masterpiece over safely",
+            "shortHeadline": "Bringing the fragile masterpiece over safely",
+            "section": "thedish",
+            "summary105": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "summary125": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+            ],
+            "summary125": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "summary145": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+            ],
+            "summary145": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "summary160": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+            ],
+            "summary160": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "summary175": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+            ],
+            "summary175": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "summary225": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
+            ],
+            "summary225": [
               {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
-                },
-                "children": []
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "publicationName": "TIMES",
-        "publishedTime": "2015-03-13T18:54:58.000Z",
-        "label": "BAYEUX TAPESTRY",
-        "url":
-          "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
-        "byline": [
-          {
-            "name": "author",
-            "attributes": {
-              "slug": "camilla-long"
-            },
-            "children": [
+            ],
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "label": "BAYEUX TAPESTRY",
+            "url":
+              "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
+            "byline": [
               {
-                "name": "text",
+                "name": "author",
                 "attributes": {
-                  "value": "Camilla Long"
+                  "slug": "camilla-long"
                 },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "inline",
-            "attributes": {},
-            "children": [
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Camilla Long"
+                    },
+                    "children": []
+                  }
+                ]
+              },
               {
-                "name": "text",
-                "attributes": {
-                  "value": ", Environment Editor"
-                },
-                "children": []
+                "name": "inline",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": ", Environment Editor"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "leadAsset": {
-          "type": "Video",
-          "posterImage": {
-            "title":
-              "*** BESTPIX *** TOPSHOT-SINGAPORE-US-NKOREA-DIPLOMACY-SUMMIT",
-            "crop": {
-              "url":
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
+            ],
+            "leadAsset": {
+              "type": "Video",
+              "posterImage": {
+                "title":
+                  "*** BESTPIX *** TOPSHOT-SINGAPORE-US-NKOREA-DIPLOMACY-SUMMIT",
+                "crop": {
+                  "url":
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
+                }
+              }
             }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

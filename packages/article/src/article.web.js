@@ -43,20 +43,15 @@ const renderArticle = (
     section,
     url,
     topics,
-    relatedArticles,
-    relatedArticlesLayout
+    relatedArticleSlice
   } = articleData;
   const leadAssetProps = getLeadAsset(articleData);
-  const displayRelatedArticles =
-    relatedArticlesLayout && relatedArticlesLayout.template ? (
-      <RelatedArticles
-        analyticsStream={analyticsStream}
-        articles={relatedArticles}
-        mainId={relatedArticlesLayout.main}
-        onPress={onRelatedArticlePress}
-        template={relatedArticlesLayout.template}
-      />
-    ) : null;
+  const displayRelatedArticles = relatedArticleSlice ? (
+    <RelatedArticles
+      analyticsStream={analyticsStream}
+      slice={relatedArticleSlice}
+    />
+  ) : null;
 
   return (
     <article>

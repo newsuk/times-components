@@ -120,47 +120,46 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "LEAD_AND_TWO",
-      main: "a88b0330-d14c-11e7-b1ec-8503a5941b97"
-    },
-    relatedArticles: [
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline,
-        label,
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        leadAsset: {
-          title,
-          crop169: {
-            url: crop169
-          }
-        },
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        shortHeadline,
-        summary105,
-        summary125,
-        summary145,
-        summary160,
-        summary175,
-        summary225,
-        url
+    relatedArticleSlice: {
+      sliceName: "LeadOneAndTwoSlice",
+      lead: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline,
+          label,
+          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          leadAsset: {
+            title,
+            crop169: {
+              url: crop169
+            }
+          },
+          publicationName: "TIMES",
+          publishedTime: "2015-03-13T18:54:58.000Z",
+          shortHeadline,
+          summary105,
+          summary125,
+          summary145,
+          summary160,
+          summary175,
+          summary225,
+          url
+        }
       }
-    ]
+    }
   }
 });

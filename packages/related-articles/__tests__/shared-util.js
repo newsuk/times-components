@@ -1,8 +1,7 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
-
+import { iterator } from "@times-components/test-utils";
 import RelatedArticles from "../src/related-articles";
 import RelatedArticleItem from "../src/related-article-item";
 
@@ -28,10 +27,8 @@ export const createRelatedArticlesProps = (
   onPress = () => {}
 ) => ({
   analyticsStream: action,
-  articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main,
-  onPress
+  onPress,
+  slice: fixtureData.relatedArticleSlice
 });
 
 const beforeAndAfterEach = () => {
@@ -53,7 +50,7 @@ const beforeAndAfterEach = () => {
   });
 };
 
-export const noArticlesTests = ({ fixture, template }) => renderComponent => {
+export const noArticlesTests = ({ fixture }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -62,14 +59,24 @@ export const noArticlesTests = ({ fixture, template }) => renderComponent => {
       test() {
         const events = jest.fn();
 
-        const data = {
-          relatedArticles: [],
-          relatedArticlesLayout: {
-            template
-          }
-        };
         const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "no related articles when there is no given slice name",
+      test() {
+        const output = renderComponent(
+          <RelatedArticles
+            analyticsStream={() => {}}
+            onPress={() => {}}
+            slice={{
+              sliceName: ""
+            }}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -80,42 +87,11 @@ export const noArticlesTests = ({ fixture, template }) => renderComponent => {
       test() {
         const events = jest.fn();
 
-        const data = {
-          relatedArticles: [],
-          relatedArticlesLayout: {
-            template
-          }
-        };
-
         renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
-      }
-    },
-    {
-      name: "callback triggered on related article press",
-      test() {
-        const onRelatedArticlePress = jest.fn();
-        const article = fixture.relatedArticles[0];
-
-        const wrapper = shallow(
-          <RelatedArticleItem
-            article={article}
-            onPress={onRelatedArticlePress}
-          />
-        );
-
-        const eventMock = {};
-        wrapper
-          .find("Link")
-          .at(0)
-          .simulate("press", eventMock);
-
-        expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-          url: article.url
-        });
       }
     }
   ];
@@ -182,6 +158,35 @@ export const oneArticleTests = ({ fixture, name }) => renderComponent => {
         );
 
         expect(events.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: "callback triggered on related article press",
+      test() {
+        const onPressMock = jest.fn();
+        const {
+          items = [],
+          lead = {},
+          opinion = {}
+        } = fixture.relatedArticleSlice;
+
+        if (items.length === 0 && !lead && !opinion) return;
+
+        const article = lead.article || opinion.article || items[0].article;
+
+        const wrapper = shallow(
+          <RelatedArticleItem article={article} onPress={onPressMock} />
+        );
+
+        const eventMock = {};
+        wrapper
+          .find("Link")
+          .at(0)
+          .simulate("press", eventMock);
+
+        expect(onPressMock).toHaveBeenCalledWith(eventMock, {
+          url: article.url
+        });
       }
     }
   ];

@@ -6,10 +6,12 @@ import {
   threeArticlesTests,
   testSummary
 } from "./shared-util";
+import leadAndTwo0ArticleFixture from "../fixtures/leadandtwo/0-articles";
 import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article";
 import leadAndTwo2ArticlesFixture from "../fixtures/leadandtwo/2-articles";
 import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles";
 
+const leadAndTwo0ArticleFixtureData = leadAndTwo0ArticleFixture.data;
 const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   crop169: "https://crop169.io",
   headline: "Test Headline",
@@ -77,8 +79,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: leadAndTwo1ArticleFixtureData,
-  template: "LEAD_AND_TWO"
+  fixture: leadAndTwo0ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({
