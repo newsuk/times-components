@@ -8,6 +8,8 @@ export default gql`
       content
       flags
       keywords
+      slug
+      shortIdentifier
       leadAsset {
         ... on Video {
           brightcoveAccountId
