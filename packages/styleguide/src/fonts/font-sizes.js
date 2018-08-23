@@ -8,6 +8,7 @@ const fontSizes = scale => {
         ...sharedFontSizes,
         bodyMobile: 21,
         cardMetaMobile: 17,
+        link: 17,
         secondary: 21
       };
     case scales.xlarge:
@@ -15,6 +16,7 @@ const fontSizes = scale => {
         ...sharedFontSizes,
         bodyMobile: 23,
         cardMetaMobile: 19,
+        link: 19,
         secondary: 23
       };
     default:

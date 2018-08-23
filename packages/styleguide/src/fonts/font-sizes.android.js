@@ -12,13 +12,15 @@ const fontSizes = scale => {
         ...defaultSizes,
         bodyMobile: 21,
         cardMetaMobile: 17,
-        secondary: 21
+        link: 14,
+        secondary: 21,
       };
     case scales.xlarge:
       return {
         ...defaultSizes,
         bodyMobile: 23,
         cardMetaMobile: 19,
+        link: 15,
         secondary: 23
       };
     default:
