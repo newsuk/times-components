@@ -522,121 +522,127 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "DEFAULT"
-    },
-    relatedArticles: [
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
+    relatedArticleSlice: {
+      sliceName: "StandardSlice",
+      items: [
+        {
+          article: {
+            byline: [
               {
-                name: "text",
-                attributes: {
-                  value: "Camilla Long, Environment Editor"
-                },
-                children: []
+                name: "inline",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Camilla Long, Environment Editor"
+                    },
+                    children: []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        headline: firstHeadline,
-        id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
-        label: firstLabel,
-        leadAsset: {
-          title: firstTitle,
-          crop169: {
-            url: firstCrop169
+            ],
+            headline: firstHeadline,
+            id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            label: firstLabel,
+            leadAsset: {
+              title: firstTitle,
+              crop169: {
+                url: firstCrop169
+              }
+            },
+            publicationName: "TIMES",
+            publishedTime: "2015-03-13T18:54:58.000Z",
+            section: firstSection,
+            shortHeadline: firstShortHeadline,
+            summary105: firstSummary105,
+            summary125: firstSummary125,
+            summary145: firstSummary145,
+            summary160: firstSummary160,
+            summary175: firstSummary175,
+            summary225: firstSummary225,
+            url: firstUrl
           }
         },
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        section: firstSection,
-        shortHeadline: firstShortHeadline,
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        url: firstUrl
-      },
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
+        {
+          article: {
+            byline: [
               {
-                name: "text",
-                attributes: {
-                  value: "Camilla Long, Environment Editor"
-                },
-                children: []
+                name: "inline",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Camilla Long, Environment Editor"
+                    },
+                    children: []
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        headline: secondHeadline,
-        id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
-        label: secondLabel,
-        leadAsset: {
-          title: secondTitle,
-          crop169: {
-            url: secondCrop169
+            ],
+            headline: secondHeadline,
+            id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            label: secondLabel,
+            leadAsset: {
+              title: secondTitle,
+              crop169: {
+                url: secondCrop169
+              }
+            },
+            publishedTime: "2018-01-17T12:00:00.000Z",
+            section: secondSection,
+            shortHeadline: secondShortHeadline,
+            summary105: secondSummary105,
+            summary125: secondSummary125,
+            summary145: secondSummary145,
+            summary160: secondSummary160,
+            summary175: secondSummary175,
+            summary225: secondSummary225,
+            url: secondUrl
           }
         },
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: secondSection,
-        shortHeadline: secondShortHeadline,
-        summary105: secondSummary105,
-        summary125: secondSummary125,
-        summary145: secondSummary145,
-        summary160: secondSummary160,
-        summary175: secondSummary175,
-        summary225: secondSummary225,
-        url: secondUrl
-      },
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
+        {
+          article: {
+            byline: [
               {
-                name: "text",
-                attributes: {
-                  value: "Camilla Long, Environment Editor"
-                },
-                children: []
+                name: "inline",
+                attributes: {},
+                children: [
+                  {
+                    name: "text",
+                    attributes: {
+                      value: "Camilla Long, Environment Editor"
+                    },
+                    children: []
+                  }
+                ]
               }
-            ]
+            ],
+            headline: thirdHeadline,
+            id: "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            label: thirdLabel,
+            leadAsset: {
+              posterImage: {
+                title: thirdTitle,
+                crop169: {
+                  url: thirdCrop169
+                }
+              }
+            },
+            publishedTime: "2018-01-17T12:00:00.000Z",
+            section: thirdSection,
+            shortHeadline: thirdShortHeadline,
+            summary105: thirdSummary105,
+            summary125: thirdSummary125,
+            summary145: thirdSummary145,
+            summary160: thirdSummary160,
+            summary175: thirdSummary175,
+            summary225: thirdSummary225,
+            url: thirdUrl
           }
-        ],
-        headline: thirdHeadline,
-        id: "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
-        label: thirdLabel,
-        leadAsset: {
-          posterImage: {
-            title: thirdTitle,
-            crop169: {
-              url: thirdCrop169
-            }
-          }
-        },
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: thirdSection,
-        shortHeadline: thirdShortHeadline,
-        summary105: thirdSummary105,
-        summary125: thirdSummary125,
-        summary145: thirdSummary145,
-        summary160: thirdSummary160,
-        summary175: thirdSummary175,
-        summary225: thirdSummary225,
-        url: thirdUrl
-      }
-    ]
+        }
+      ]
+    }
   }
 });

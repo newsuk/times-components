@@ -107,7 +107,7 @@ exports[`1. scaled medium full article 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 14,
+                "lineHeight": 15,
               }
             }
           >
@@ -294,7 +294,7 @@ exports[`2. scaled large full article 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 14,
+                "lineHeight": 15,
               }
             }
           >
@@ -481,7 +481,7 @@ exports[`3. scaled xlarge full article 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 14,
+                "lineHeight": 15,
               }
             }
           >

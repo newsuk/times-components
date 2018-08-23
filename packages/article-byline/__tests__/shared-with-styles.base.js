@@ -51,6 +51,17 @@ export default Component => {
 
         expect(testInstance).toMatchSnapshot();
       }
+    },
+    {
+      name: "with a a very long byline",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.veryLongByline,
+          color: "blue"
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 

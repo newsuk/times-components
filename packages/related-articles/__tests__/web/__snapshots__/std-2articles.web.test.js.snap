@@ -151,7 +151,7 @@ Array [
           },
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
+        "template": "StandardSlice",
       },
       "component": "Page",
       "object": "RelatedArticles",

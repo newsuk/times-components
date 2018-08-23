@@ -6,10 +6,12 @@ import {
   threeArticlesTests,
   testSummary
 } from "./shared-util";
+import standard0ArticleFixture from "../fixtures/standard/0-articles";
 import standard1ArticleFixture from "../fixtures/standard/1-article";
 import standard2ArticlesFixture from "../fixtures/standard/2-articles";
 import standard3ArticlesFixture from "../fixtures/standard/3-articles";
 
+const standard0ArticleFixtureData = standard0ArticleFixture.data;
 const standard1ArticleFixtureData = standard1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
@@ -75,8 +77,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: standard1ArticleFixtureData,
-  template: "DEFAULT"
+  fixture: standard0ArticleFixtureData
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({

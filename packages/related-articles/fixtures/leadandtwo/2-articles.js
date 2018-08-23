@@ -300,90 +300,91 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "LEAD_AND_TWO",
-      main: "a88b0330-d14c-11e7-b1ec-8503a5941b97"
-    },
-    relatedArticles: [
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline: firstHeadline,
-        label: firstLabel,
-        leadAsset: {
-          title: firstTitle,
-          crop169: {
-            url: firstCrop169
-          }
-        },
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        section: firstSection,
-        shortHeadline: firstShortHeadline,
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        url: firstUrl
+    relatedArticleSlice: {
+      sliceName: "LeadOneAndTwoSlice",
+      lead: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline: firstHeadline,
+          label: firstLabel,
+          leadAsset: {
+            title: firstTitle,
+            crop169: {
+              url: firstCrop169
+            }
+          },
+          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          publicationName: "TIMES",
+          publishedTime: "2015-03-13T18:54:58.000Z",
+          section: firstSection,
+          shortHeadline: firstShortHeadline,
+          summary105: firstSummary105,
+          summary125: firstSummary125,
+          summary145: firstSummary145,
+          summary160: firstSummary160,
+          summary175: firstSummary175,
+          summary225: firstSummary225,
+          url: firstUrl
+        }
       },
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline: secondHeadline,
-        id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-        label: secondLabel,
-        leadAsset: {
-          title: secondTitle,
-          crop169: {
-            url: secondCrop169
-          }
-        },
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: secondSection,
-        shortHeadline: secondShortHeadline,
-        summary105: [
-          {
-            name: "paragraph",
-            attributes: {},
-            children: secondSummary105
-          }
-        ],
-        summary125: secondSummary125,
-        summary145: secondSummary145,
-        summary160: secondSummary160,
-        summary175: secondSummary175,
-        summary225: secondSummary225,
-        url: secondUrl
+      support1: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline: secondHeadline,
+          id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+          label: secondLabel,
+          leadAsset: {
+            title: secondTitle,
+            crop169: {
+              url: secondCrop169
+            }
+          },
+          publishedTime: "2018-01-17T12:00:00.000Z",
+          section: secondSection,
+          shortHeadline: secondShortHeadline,
+          summary105: [
+            {
+              name: "paragraph",
+              attributes: {},
+              children: secondSummary105
+            }
+          ],
+          summary125: secondSummary125,
+          summary145: secondSummary145,
+          summary160: secondSummary160,
+          summary175: secondSummary175,
+          summary225: secondSummary225,
+          url: secondUrl
+        }
       }
-    ]
+    }
   }
 });

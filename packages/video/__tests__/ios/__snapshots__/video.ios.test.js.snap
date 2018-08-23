@@ -11,24 +11,32 @@ exports[`1. video 1`] = `
     />
     <View>
       <View>
-        <svg
+        <Svg
           height={70}
           viewBox="0 0 100 100"
           width={70}
         >
-          <rect
-            fill="rgba(0,0,0)"
+          <Rect
+            fill="#000000"
             fillOpacity="0.4"
             height="100"
-            stroke="rgb(255,255,255)"
+            width="100"
+            x="0"
+            y="0"
+          />
+          <Rect
+            height="100"
+            stroke="#FFFFFF"
             strokeWidth="8"
             width="100"
+            x="0"
+            y="0"
           />
-          <polygon
-            fill="rgb(255,255,255)"
+          <Polygon
+            fill="#FFFFFF"
             points="30,20 70,50 30,80"
           />
-        </svg>
+        </Svg>
       </View>
     </View>
   </View>
@@ -44,24 +52,32 @@ exports[`2. video without a poster image 1`] = `
     <View />
     <View>
       <View>
-        <svg
+        <Svg
           height={70}
           viewBox="0 0 100 100"
           width={70}
         >
-          <rect
-            fill="rgba(0,0,0)"
+          <Rect
+            fill="#000000"
             fillOpacity="0.4"
             height="100"
-            stroke="rgb(255,255,255)"
+            width="100"
+            x="0"
+            y="0"
+          />
+          <Rect
+            height="100"
+            stroke="#FFFFFF"
             strokeWidth="8"
             width="100"
+            x="0"
+            y="0"
           />
-          <polygon
-            fill="rgb(255,255,255)"
+          <Polygon
+            fill="#FFFFFF"
             points="30,20 70,50 30,80"
           />
-        </svg>
+        </Svg>
       </View>
     </View>
   </View>

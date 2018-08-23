@@ -189,7 +189,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 14,
+                "lineHeight": 15,
               }
             }
           >
@@ -821,7 +821,7 @@ exports[`7. an article with updated byline 2`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 14,
+                "lineHeight": 15,
               }
             }
           >

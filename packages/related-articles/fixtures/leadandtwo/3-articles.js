@@ -437,120 +437,123 @@ export default (
   } = {}
 ) => ({
   data: {
-    relatedArticlesLayout: {
-      template: "LEAD_AND_TWO",
-      main: "a88b0330-d14c-11e7-b1ec-8503a5941b97"
-    },
-    relatedArticles: [
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline: firstHeadline,
-        id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-        label: firstLabel,
-        leadAsset: {
-          title: firstTitle,
-          crop169: {
-            url: firstCrop169
-          }
-        },
-        publicationName: "TIMES",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        shortHeadline: firstShortHeadline,
-        section: firstSection,
-        summary105: firstSummary105,
-        summary125: firstSummary125,
-        summary145: firstSummary145,
-        summary160: firstSummary160,
-        summary175: firstSummary175,
-        summary225: firstSummary225,
-        url: firstUrl
+    relatedArticleSlice: {
+      sliceName: "LeadOneAndTwoSlice",
+      lead: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline: firstHeadline,
+          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          label: firstLabel,
+          leadAsset: {
+            title: firstTitle,
+            crop169: {
+              url: firstCrop169
+            }
+          },
+          publicationName: "TIMES",
+          publishedTime: "2015-03-13T18:54:58.000Z",
+          shortHeadline: firstShortHeadline,
+          section: firstSection,
+          summary105: firstSummary105,
+          summary125: firstSummary125,
+          summary145: firstSummary145,
+          summary160: firstSummary160,
+          summary175: firstSummary175,
+          summary225: firstSummary225,
+          url: firstUrl
+        }
       },
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline: secondHeadline,
-        id: "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
-        leadAsset: {
-          title: secondTitle,
-          crop169: {
-            url: secondCrop169
-          }
-        },
-        label: secondLabel,
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: secondSection,
-        shortHeadline: secondShortHeadline,
-        summary105: secondSummary105,
-        summary125: secondSummary125,
-        summary145: secondSummary145,
-        summary160: secondSummary160,
-        summary175: secondSummary175,
-        summary225: secondSummary225,
-        url: secondUrl
+      support1: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline: secondHeadline,
+          id: "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
+          leadAsset: {
+            title: secondTitle,
+            crop169: {
+              url: secondCrop169
+            }
+          },
+          label: secondLabel,
+          publishedTime: "2018-01-17T12:00:00.000Z",
+          section: secondSection,
+          shortHeadline: secondShortHeadline,
+          summary105: secondSummary105,
+          summary125: secondSummary125,
+          summary145: secondSummary145,
+          summary160: secondSummary160,
+          summary175: secondSummary175,
+          summary225: secondSummary225,
+          url: secondUrl
+        }
       },
-      {
-        byline: [
-          {
-            name: "inline",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Deborah Haynes"
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        headline: thirdHeadline,
-        id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-        label: thirdLabel,
-        leadAsset: {
-          title: thirdTitle,
-          crop169: {
-            url: thirdCrop169
-          }
-        },
-        publishedTime: "2018-01-17T12:00:00.000Z",
-        section: thirdSection,
-        shortHeadline: thirdShortHeadline,
-        summary105: thirdSummary105,
-        summary125: thirdSummary125,
-        summary145: thirdSummary145,
-        summary160: thirdSummary160,
-        summary175: thirdSummary175,
-        summary225: thirdSummary225,
-        url: thirdUrl
+      support2: {
+        article: {
+          byline: [
+            {
+              name: "inline",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Deborah Haynes"
+                  },
+                  children: []
+                }
+              ]
+            }
+          ],
+          headline: thirdHeadline,
+          id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+          label: thirdLabel,
+          leadAsset: {
+            title: thirdTitle,
+            crop169: {
+              url: thirdCrop169
+            }
+          },
+          publishedTime: "2018-01-17T12:00:00.000Z",
+          section: thirdSection,
+          shortHeadline: thirdShortHeadline,
+          summary105: thirdSummary105,
+          summary125: thirdSummary125,
+          summary145: thirdSummary145,
+          summary160: thirdSummary160,
+          summary175: thirdSummary175,
+          summary225: thirdSummary225,
+          url: thirdUrl
+        }
       }
-    ]
+    }
   }
 });
