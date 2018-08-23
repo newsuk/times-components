@@ -30,6 +30,7 @@ export default () => {
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
+        pageSection="News"
       />
     );
     const [[call]] = stream.mock.calls;

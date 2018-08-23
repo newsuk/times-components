@@ -16,6 +16,7 @@ const articlePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
+  pageSection: PropTypes.string,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
 };
@@ -23,6 +24,7 @@ const articlePropTypes = {
 const articleDefaultProps = {
   article: null,
   error: null,
+  pageSection: null,
   isLoading: false
 };
 

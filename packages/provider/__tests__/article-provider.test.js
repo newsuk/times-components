@@ -64,6 +64,8 @@ const mocks = [
               id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
               headline: "Related Headline",
               section: "related",
+              shortIdentifier: "37b27qd2s",
+              slug: "france-defies-may-over-russia",
               byline: [
                 {
                   name: "text",
