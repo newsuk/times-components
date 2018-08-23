@@ -12,6 +12,21 @@ const withDebounce = WrappedComponent => {
   };
 
   class WithDebounce extends Component {
+    static getDerivedStateFromProps(props, state) {
+      if (props.debounceTimeMs !== 0) {
+        return state;
+      }
+
+      if (!isEqual(props, state.debouncedProps)) {
+        return {
+          ...state,
+          debouncedProps: props
+        };
+      }
+
+      return state;
+    }
+
     constructor(props) {
       super(props);
       validateProps(props);
@@ -22,19 +37,24 @@ const withDebounce = WrappedComponent => {
       this.debounceTimeout = null;
     }
 
-    componentWillReceiveProps(nextProps) {
+    shouldComponentUpdate(props, state) {
+      return state.isDebouncing ? !isEqual(this.props, props) : true;
+    }
+
+    componentDidUpdate(nextProps) {
       validateProps(nextProps);
+
       if (isEqual(this.props, nextProps)) return;
-      if (this.props.debounceTimeMs === 0) {
-        this.setState({ debouncedProps: nextProps, isDebouncing: false });
-      } else {
-        this.setState({ isDebouncing: true });
-        clearTimeout(this.debounceTimeout);
-        this.debounceTimeout = setTimeout(
-          this.handleDebounceTimer,
-          nextProps.debounceTimeMs
-        );
-      }
+
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({ isDebouncing: true });
+
+      clearTimeout(this.debounceTimeout);
+
+      this.debounceTimeout = setTimeout(
+        this.handleDebounceTimer,
+        nextProps.debounceTimeMs
+      );
     }
 
     componentWillUnmount() {
@@ -43,6 +63,7 @@ const withDebounce = WrappedComponent => {
 
     handleDebounceTimer = () => {
       this.debounceTimeout = null;
+
       this.setState({ debouncedProps: this.props, isDebouncing: false });
     };
 
