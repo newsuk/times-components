@@ -1,12 +1,15 @@
 # Styleguide
 
-The styleguide package contains the shared styles and functionalities which are commonly used across Times Components packages and components. The following items can be exported as named exports:
+The styleguide package contains the shared styles and functionalities which are
+commonly used across Times Components packages and components. The following
+items can be exported as named exports:
 
 ```
 import { colours, spacing } from "@times-components/styleguide";
 ```
 
-Or, the default export is a method which takes a scale. Scale manages the user-controlled font size settings:
+Or, the default export is a method which takes a scale. Scale manages the
+user-controlled font size settings:
 
 ```
 import styleguide from "@times-components/styleguide";
@@ -28,15 +31,18 @@ Times Components fonts and font sizes.
 
 ## Font factory
 
-The `fontFactory` method takes a `font` and `fontSize`, and returns an object containing the appropriate font style properties, including a `lineHeight`.
+The `fontFactory` method takes a `font` and `fontSize`, and returns an object
+containing the appropriate font style properties, including a `lineHeight`.
 
 ## Line heights
 
-Times Componets line heights. This is utilised as part of the font factory scaling.
+Times Componets line heights. This is utilised as part of the font factory
+scaling.
 
 ## Spacing
 
-Provides a way to standardise layout, particularly in regards to the concept of a consistent spacing layout across multiple breakpoints.
+Provides a way to standardise layout, particularly in regards to the concept of
+a consistent spacing layout across multiple breakpoints.
 
 ## Contributing
 
