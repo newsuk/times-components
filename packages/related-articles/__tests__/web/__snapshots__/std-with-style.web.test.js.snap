@@ -258,7 +258,7 @@ exports[`default styles 1`] = `
     "display": "inline",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
-    "line-height": "21px",
+    "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },

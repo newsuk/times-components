@@ -145,7 +145,7 @@ exports[`default styles 1`] = `
                       "flexDirection": "row",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 21,
+                      "lineHeight": 19,
                     }
                   }
                 >
