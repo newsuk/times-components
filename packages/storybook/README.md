@@ -22,8 +22,11 @@ showcaseConverter(module, showcase);
 
 This package introduces the concepts of showcases, rather than stories.
 Showcases provide a consistent and simple API for a developer to create stories.
-Each package has a `my-component.showcase.js` file which exports a showcase
-object.
+The idea behind introducing the showcase concept was to help decouple Times
+Components from storybook. Storybook version bumps in particular were playing
+havoc with our CI, and managing these across `storybook`,
+`storybook/addon-actions` and `storybook/addon-knobs` was becoming painful. Each
+package has a `my-component.showcase.js` file which exports a showcase object.
 
 ## Showcase API
 
@@ -34,13 +37,11 @@ object.
 
 ### Showcase Object
 
-* type - whether the showcase object is a story or a [decorator](#decorators)
-* name - name of the showcase
-* platform - (optional) dictates which platform the showcase should appear on.
-  The default is to show on _all_ platforms. Can either be `ios`, `android`,
-  `native` or `web`.
-* component - function which returns the component to be showcased. The method
-  can take optional arguments `knobs` and `decorators`
+* type: string: story | decorator
+* name: string
+* platform: string: ios | android | native | web
+* component: function: The method can take optional arguments `knobs` and
+  `decorators`
 
 ## `my-component.showcase.js`
 
@@ -62,7 +63,7 @@ export default {
 
 ## Knobs
 
-[`storybook-knobs`](https://github.com/storybooks/storybook/tree/master/addons/knobs)
+[`storybook/addon-knobs`](https://github.com/storybooks/storybook/tree/master/addons/knobs)
 provides methods that allow users of the component library to amend `props`.
 This reduces the number of stories, and introduces a level of interactivity that
 allows users to fiddle with UI and test various aspects of components for
