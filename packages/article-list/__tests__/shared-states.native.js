@@ -12,7 +12,14 @@ import {
 import { ApolloError } from "apollo-client";
 import "./mocks";
 import ArticleList from "../src/article-list";
-import { omitNative as omitProps } from "./utils";
+import { omitNative } from "./utils";
+
+const omitProps = new Set([
+  ...omitNative,
+  "bylineProps",
+  "datePublicationProps",
+  "labelProps"
+]);
 
 export default () => {
   addSerializers(

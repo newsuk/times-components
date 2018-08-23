@@ -17,7 +17,22 @@ exports[`1. article list 1`] = `
             imageRatio={1}
             showImage={true}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={null}
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "TIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#636C17",
+                  "isVideo": false,
+                  "title": "Label 1",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
@@ -39,7 +54,41 @@ exports[`1. article list 1`] = `
             imageRatio={1}
             showImage={true}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={
+                Object {
+                  "ast": Array [
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Byline 2",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "paragraph",
+                    },
+                  ],
+                  "color": "#333333",
+                }
+              }
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "SUNDAYTIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#333333",
+                  "isVideo": false,
+                  "title": "Label 2",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
@@ -76,7 +125,22 @@ exports[`2. article list with no images 1`] = `
             imageRatio={1}
             showImage={false}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={null}
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "TIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#636C17",
+                  "isVideo": false,
+                  "title": "Label 1",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
@@ -113,7 +177,22 @@ exports[`3. a retry button when load more fails 1`] = `
             imageRatio={1}
             showImage={true}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={null}
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "TIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#636C17",
+                  "isVideo": false,
+                  "title": "Label 1",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
@@ -149,7 +228,22 @@ exports[`4. no footer with data equalling the count 1`] = `
             imageRatio={1}
             showImage={true}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={null}
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "TIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#636C17",
+                  "isVideo": false,
+                  "title": "Label 1",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
@@ -298,7 +392,22 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
             imageRatio={1}
             showImage={true}
           >
-            <ArticleSummary />
+            <ArticleSummary
+              bylineProps={null}
+              datePublicationProps={
+                Object {
+                  "date": "2017-11-17T00:01:00.000Z",
+                  "publication": "TIMES",
+                }
+              }
+              labelProps={
+                Object {
+                  "color": "#636C17",
+                  "isVideo": false,
+                  "title": "Label 1",
+                }
+              }
+            />
           </Card>
         </View>
       </Link>
