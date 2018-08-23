@@ -35,6 +35,7 @@ export default () => {
       stylePrinter,
       replaceTransform({
         CardComponent: justChildren,
+        CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
         TimesImage: propsNoChildren,

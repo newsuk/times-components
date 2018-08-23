@@ -4,48 +4,40 @@ exports[`1. card default state 1`] = `
 <View
   style={
     Object {
-      "opacity": 1,
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+    <Image
+      aspectRatio={0.6666666666666666}
+      uri="https://img.io/img&resize=360"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
       }
-    >
-      <Image
-        aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Text>
-        A card
-      </Text>
-    </View>
+    }
+  >
+    <Text>
+      A card
+    </Text>
   </View>
 </View>
 `;
@@ -54,49 +46,41 @@ exports[`2. card with reversed state 1`] = `
 <View
   style={
     Object {
-      "opacity": 1,
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "height": "auto",
+      "justifyContent": "flex-end",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "height": "auto",
-        "justifyContent": "flex-end",
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+    <Text>
+      A card in reverse
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
       }
-    >
-      <Text>
-        A card in reverse
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Image
-        aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
-      />
-    </View>
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+      uri="https://img.io/img&resize=360"
+    />
   </View>
 </View>
 `;
@@ -124,6 +108,7 @@ exports[`3. card loading state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
+      uri="https://img.io/img&resize=360"
     />
   </View>
   <View
@@ -131,6 +116,7 @@ exports[`3. card loading state 1`] = `
       Object {
         "flex": 1,
         "marginBottom": 0,
+        "minHeight": 84,
         "minWidth": "100%",
       }
     }
@@ -185,6 +171,7 @@ exports[`4. card reversed loading state 1`] = `
       "display": "flex",
       "flexDirection": "row",
       "flexWrap": "wrap",
+      "height": "auto",
       "justifyContent": "flex-end",
     }
   }
@@ -194,6 +181,7 @@ exports[`4. card reversed loading state 1`] = `
       Object {
         "flex": 1,
         "marginBottom": 10,
+        "minHeight": 84,
         "minWidth": "100%",
       }
     }
@@ -248,6 +236,7 @@ exports[`4. card reversed loading state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
+      uri="https://img.io/img&resize=360"
     />
   </View>
 </View>

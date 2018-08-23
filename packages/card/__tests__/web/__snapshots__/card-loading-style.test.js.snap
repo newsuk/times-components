@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. card loading state 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 <style>
 {
   "IS1": {
@@ -203,41 +208,54 @@ exports[`1. card loading state 1`] = `
 }
 </style>
 
-<div
-  className="S8"
->
+<indexweb__FadeIn>
   <div
-    className="S3"
+    className="c0 S2"
   >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
+    <div
+      className="S8"
+    >
+      <div
+        className="S3"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
+      </div>
+      <div
+        className="S7"
+      >
+        <Component>
+          <Gradient
+            className="IS8"
+            degrees={264}
+          />
+          <Gradient
+            className="IS10"
+            degrees={267}
+          />
+          <Gradient
+            className="IS12"
+            degrees={267}
+          />
+          <Gradient
+            className="IS14"
+            degrees={267}
+          />
+        </Component>
+      </div>
+    </div>
   </div>
-  <div
-    className="S7"
-  >
-    <Gradient
-      className="IS8"
-      degrees={264}
-    />
-    <Gradient
-      className="IS10"
-      degrees={267}
-    />
-    <Gradient
-      className="IS12"
-      degrees={267}
-    />
-    <Gradient
-      className="IS14"
-      degrees={267}
-    />
-  </div>
-</div>
+</indexweb__FadeIn>
 `;
 
 exports[`2. card with reversed loading state 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 <style>
 {
   "IS1": {
@@ -433,6 +451,7 @@ exports[`2. card with reversed loading state 1`] = `
     "display": "flex",
     "flex-direction": "row",
     "flex-wrap": "wrap",
+    "height": "auto",
     "justify-content": "flex-end",
     "margin-bottom": "0px",
     "min-width": "0px",
@@ -440,36 +459,44 @@ exports[`2. card with reversed loading state 1`] = `
 }
 </style>
 
-<div
-  className="S8"
->
+<indexweb__FadeIn>
   <div
-    className="S4"
+    className="c0 S6"
   >
-    <Gradient
-      className="IS2"
-      degrees={264}
-    />
-    <Gradient
-      className="IS4"
-      degrees={267}
-    />
-    <Gradient
-      className="IS6"
-      degrees={267}
-    />
-    <Gradient
-      className="IS8"
-      degrees={267}
-    />
+    <div
+      className="S8"
+    >
+      <div
+        className="S4"
+      >
+        <Component>
+          <Gradient
+            className="IS2"
+            degrees={264}
+          />
+          <Gradient
+            className="IS4"
+            degrees={267}
+          />
+          <Gradient
+            className="IS6"
+            degrees={267}
+          />
+          <Gradient
+            className="IS8"
+            degrees={267}
+          />
+        </Component>
+      </div>
+      <div
+        className="S7"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
+      </div>
+    </div>
   </div>
-  <div
-    className="S7"
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
-  </div>
-</div>
+</indexweb__FadeIn>
 `;

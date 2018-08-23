@@ -18,7 +18,9 @@ const styles = {
   },
   imageBackground: {
     height: "100%",
-    width: "100%"
+    position: "absolute",
+    width: "100%",
+    zIndex: 1
   },
   imageContainer: {
     flexGrow: 1,

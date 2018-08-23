@@ -105,74 +105,84 @@ exports[`3. card loading state 1`] = `
 <View
   style={
     Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
+      "opacity": 0,
     }
   }
 >
   <View
     style={
       Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
       }
     }
   >
-    <Image
-      aspectRatio={0.6666666666666666}
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 0,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Gradient
-      degrees={264}
+    <View
       style={
         Object {
-          "height": 24,
+          "flex": 1,
           "marginBottom": 10,
-          "maxWidth": 300,
+          "minWidth": "100%",
         }
       }
-    />
-    <Gradient
-      degrees={267}
+    >
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View
       style={
         Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
+          "flex": 1,
           "marginBottom": 0,
-          "maxWidth": 240,
+          "minHeight": 84,
+          "minWidth": "100%",
         }
       }
-    />
+    >
+      <Gradient
+        degrees={264}
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -181,74 +191,85 @@ exports[`4. card reversed loading state 1`] = `
 <View
   style={
     Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
+      "opacity": 1,
     }
   }
 >
   <View
     style={
       Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "height": "auto",
+        "justifyContent": "flex-end",
       }
     }
   >
-    <Gradient
-      degrees={264}
+    <View
       style={
         Object {
-          "height": 24,
+          "flex": 1,
           "marginBottom": 10,
-          "maxWidth": 300,
+          "minHeight": 84,
+          "minWidth": "100%",
         }
       }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+    >
+      <Gradient
+        degrees={264}
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      />
+    </View>
+    <View
       style={
         Object {
-          "height": 10,
+          "flex": 1,
           "marginBottom": 0,
-          "maxWidth": 240,
+          "minWidth": "100%",
         }
       }
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 0,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Image
-      aspectRatio={0.6666666666666666}
-    />
+    >
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
   </View>
 </View>
 `;
