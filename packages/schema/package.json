@@ -1,0 +1,39 @@
+{
+  "name": "@times-components/schema",
+  "version": "0.0.1",
+  "main": "fragment-matcher.js",
+  "scripts": {
+    "bundle": "cp fragment-matcher.js rnw.js",
+    "fmt": "prettier --write '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff",
+    "postinstall": "node ./fetch-gql-schema && yarn fmt",
+    "prettier:diff": "prettier --list-different '**/*.*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "graphql",
+    "schema"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.7.1",
+    "eslint": "4.9.0",
+    "prettier": "1.8.2"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "1.1.10",
+    "graphql": "0.13.2",
+    "mkdirp": "0.5.1",
+    "node-fetch": "2.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

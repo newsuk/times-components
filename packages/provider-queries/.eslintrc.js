@@ -6,7 +6,7 @@ module.exports = {
       "error",
       {
         env: "apollo",
-        schemaJson: require("@times-components/utils").schema
+        schemaJson: require("@times-components/schema/schema.json")
       }
     ]
   },
