@@ -14,7 +14,7 @@ You can find a good overview of tag management and how it works
 [on the Tealium website](https://community.tealiumiq.com/t5/iQ-Tag-Management/Tag-Management-Concepts/ta-p/15883).
 
 This package provides a Class Constructor called `TealiumSendScheduler` that is
-configured with some Tealium properties, takes the global `window` and
+configured with some Tealium properties, and takes the global `window` and
 `document` objects as its other arguments. `TealiumSendScheduler` appends the
 required Tealium JavaScript to the page (`utag.js`).
 
