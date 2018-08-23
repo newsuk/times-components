@@ -513,6 +513,8 @@ const defaultContent = [
   }
 ];
 const defaultFlags = ["NEW", "EXCLUSIVE"];
+const defaultSlug = "british-trio-stopped-on-the-way-to-join-isis";
+const defaultShortIdentifier = "57nwljmbn";
 const defaultHeadline = "Supplement In Depth Template (Style)";
 const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "Random label";
@@ -1157,6 +1159,8 @@ export default (
     commentsEnabled = defaultCommentsEnabled,
     content = defaultContent,
     flags = defaultFlags,
+    slug = defaultSlug,
+    shortIdentifier = defaultShortIdentifier,
     headline = defaultHeadline,
     keywords = defaultKeywords,
     label = defaultLabel,
@@ -1179,6 +1183,8 @@ export default (
       headline,
       id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
       keywords,
+      slug,
+      shortIdentifier,
       label,
       leadAsset,
       publicationName: "TIMES",

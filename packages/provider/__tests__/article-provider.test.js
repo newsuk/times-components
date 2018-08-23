@@ -41,6 +41,8 @@ const mocks = [
       ],
       flags: ["NEW"],
       keywords: ["WORD"],
+      slug: "british-trio-stopped-on-the-way-to-join-isis",
+      shortIdentifier: "57nwljmbn",
       leadAsset: {
         type: "Image",
         id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
