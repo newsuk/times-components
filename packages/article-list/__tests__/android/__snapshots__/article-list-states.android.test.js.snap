@@ -69,17 +69,7 @@ exports[`4. loading state 1`] = `
             isLoading={true}
             showImage={true}
           >
-            <View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                
-              </Text>
-              <Text>
-                Invalid Date
-              </Text>
-            </View>
+            <ArticleSummary />
           </Card>
         </View>
       </Link>
@@ -102,17 +92,7 @@ exports[`4. loading state 1`] = `
             isLoading={true}
             showImage={true}
           >
-            <View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                
-              </Text>
-              <Text>
-                Invalid Date
-              </Text>
-            </View>
+            <ArticleSummary />
           </Card>
         </View>
       </Link>
@@ -135,17 +115,7 @@ exports[`4. loading state 1`] = `
             isLoading={true}
             showImage={true}
           >
-            <View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                
-              </Text>
-              <Text>
-                Invalid Date
-              </Text>
-            </View>
+            <ArticleSummary />
           </Card>
         </View>
       </Link>

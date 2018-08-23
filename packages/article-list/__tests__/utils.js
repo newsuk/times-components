@@ -1,9 +1,12 @@
 export const omitNative = new Set([
   "accessibilityID",
+  "bylineProps",
   "data",
+  "datePublicationProps",
   "disableVirtualization",
   "horizontal",
   "initialNumToRender",
+  "labelProps",
   "ListHeaderComponent",
   "maxToRenderPerBatch",
   "numColumns",
@@ -18,4 +21,11 @@ export const omitNative = new Set([
   "windowSize"
 ]);
 
-export const omitWeb = new Set(["className", "data-testid", "style"]);
+export const omitWeb = new Set([
+  "className",
+  "bylineProps",
+  "data-testid",
+  "datePublicationProps",
+  "labelProps",
+  "style"
+]);
