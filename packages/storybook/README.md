@@ -36,7 +36,9 @@ object.
 
 * type - whether the showcase object is a story or a [decorator](#decorators)
 * name - name of the showcase
-* platform - (optional) default is _all_ devices
+* platform - (optional) dictates which platform the showcase should appear on.
+  The default is to show on _all_ platforms. Can either be `ios`, `android`,
+  `native` or `web`.
 * component - function which returns the component to be showcased. The method
   can take optional arguments `knobs` and `decorators`
 
