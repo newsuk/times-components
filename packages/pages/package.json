@@ -58,7 +58,7 @@
     "@times-components/provider": "1.2.1",
     "@times-components/styleguide": "3.3.0",
     "@times-components/topic": "3.2.0",
-    "@times-components/utils": "3.1.1",
+    "@times-components/schema": "0.0.1",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",

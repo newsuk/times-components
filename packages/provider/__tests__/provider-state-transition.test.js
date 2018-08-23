@@ -5,7 +5,7 @@ import {
   getRenderedQueries
 } from "@times-components/provider-test-tools";
 
-import { delayAndAdvance } from "@times-components/utils";
+import { delayAndAdvance } from "@times-components/test-utils";
 import connect from "../src/connect";
 
 function AuthorQueryResolver({ variables }) {

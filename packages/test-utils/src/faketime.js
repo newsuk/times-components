@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 export const advance = ms => {
   jest.runTimersToTime(ms);
   return Promise.resolve();
