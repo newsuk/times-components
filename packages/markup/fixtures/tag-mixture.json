@@ -28,7 +28,7 @@
       "attributes": {},
       "children": [
         {
-          "name": "bold",
+          "name": "strong",
           "attributes": {},
           "children": [
             {
@@ -47,7 +47,7 @@
       "attributes": {},
       "children": [
         {
-          "name": "italic",
+          "name": "emphasis",
           "attributes": {},
           "children": [
             {

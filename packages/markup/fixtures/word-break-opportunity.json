@@ -1,0 +1,57 @@
+{
+  "name": "paragraph",
+  "attributes": {},
+  "children": [
+    {
+      "attributes":{
+        "value":"Taumatawhakatangihanga"
+      },
+      "children":[],
+      "name":"text"
+    },
+    {
+      "children":[],
+      "name":"wordBreakOpportunity"
+    },
+    {
+      "attributes":{
+        "value":"koauauo"
+      },
+      "children":[],
+      "name":"text"
+    },
+    {
+      "children":[],
+      "name":"wordBreakOpportunity"
+    },
+    {
+      "attributes":{
+        "value":"tamateahaumaitawhitiurehaeaturipukaka"
+      },
+      "children":[],
+      "name":"text"
+    },
+    {
+      "children":[],
+      "name":"wordBreakOpportunity"
+    },
+    {
+      "attributes":{
+        "value":"pikimaungahoronuku"
+      },
+      "children":[],
+      "name":"text"
+    },
+    {
+      "children":[],
+      "name":"wordBreakOpportunity"
+    },
+    {
+      "attributes":{
+        "value":"pokaiwhenuakitanatahu"
+      },
+      "children":[],
+      "name":"text"
+    }
+  ]
+}

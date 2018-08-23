@@ -7,10 +7,13 @@ import { fonts } from "@times-components/styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "./src/markup";
 
-const multiParagraph = require("./fixtures/multi-paragraph.json");
-const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
+const mixture = require("./fixtures/tag-mixture.json");
+const multiParagraph = require("./fixtures/multi-paragraph.json");
 const ratings = require("./fixtures/ratings.json");
+const subscript = require("./fixtures/subscript.json");
+const superscript = require("./fixtures/superscript.json");
+const wbr = require("./fixtures/word-break-opportunity.json");
 
 export default {
   name: "Composed/Markup",
@@ -83,6 +86,21 @@ export default {
           })}
         </View>
       )
+    },
+    {
+      type: "story",
+      name: "Subscript",
+      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>
+    },
+    {
+      type: "story",
+      name: "Superscript",
+      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>
+    },
+    {
+      type: "story",
+      name: "Word break opportunities",
+      component: () => <View>{renderTree(wbr, coreRenderers)}</View>
     }
   ]
 };

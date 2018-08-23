@@ -1,11 +1,11 @@
 {
-  "name": "italic",
+  "name": "strong",
   "attributes": {},
   "children": [
     {
       "name": "text",
       "attributes": {
-        "value": " some more text here"
+        "value": "some text here"
       },
       "children": []
     }

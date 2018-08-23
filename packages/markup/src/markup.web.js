@@ -6,17 +6,12 @@ export default {
       element: <div key={key}>{renderedChildren}</div>
     };
   },
-  bold(key, attributes, renderedChildren) {
-    return {
-      element: <strong key={key}>{renderedChildren}</strong>
-    };
-  },
   break(key) {
     return {
       element: <br key={key} />
     };
   },
-  italic(key, attributes, renderedChildren) {
+  emphasis(key, attributes, renderedChildren) {
     return {
       element: <em key={key}>{renderedChildren}</em>
     };
@@ -31,9 +26,29 @@ export default {
       element: <p key={key}>{renderedChildren}</p>
     };
   },
+  strong(key, attributes, renderedChildren) {
+    return {
+      element: <strong key={key}>{renderedChildren}</strong>
+    };
+  },
+  subscript(key, attributes, renderedChildren) {
+    return {
+      element: <sub key={key}>{renderedChildren}</sub>
+    };
+  },
+  superscript(key, attributes, renderedChildren) {
+    return {
+      element: <sup key={key}>{renderedChildren}</sup>
+    };
+  },
   text(key, { value }) {
     return {
       element: value
+    };
+  },
+  wordBreakOpportunity(key) {
+    return {
+      element: <wbr key={key} />
     };
   }
 };
