@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.1.15",
+  "version": "2.1.16",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -63,7 +63,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.2.6",
+    "@times-components/styleguide": "3.2.7",
     "@times-components/utils": "3.1.0",
     "prop-types": "15.6.2"
   },

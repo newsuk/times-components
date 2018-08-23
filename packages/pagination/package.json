@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "3.0.17",
+  "version": "3.0.18",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -68,8 +68,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/link": "3.0.14",
-    "@times-components/styleguide": "3.2.6",
+    "@times-components/link": "3.0.15",
+    "@times-components/styleguide": "3.2.7",
     "@times-components/svgs": "2.1.7",
     "@times-components/tracking": "2.1.11",
     "prop-types": "15.6.2",
