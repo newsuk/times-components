@@ -139,6 +139,7 @@ exports[`3. card loading state 1`] = `
         Object {
           "flex": 1,
           "marginBottom": 0,
+          "minHeight": 84,
           "minWidth": "100%",
         }
       }
@@ -211,6 +212,7 @@ exports[`4. card reversed loading state 1`] = `
         Object {
           "flex": 1,
           "marginBottom": 10,
+          "minHeight": 84,
           "minWidth": "100%",
         }
       }

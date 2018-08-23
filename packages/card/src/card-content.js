@@ -63,7 +63,8 @@ class CardContent extends Component {
           className={contentContainerClass}
           style={[
             styles.contentContainer,
-            isReversed ? styles.reversedContentContainer : ""
+            isReversed ? styles.reversedContentContainer : "",
+            isLoading ? styles.loadingContentContainer : ""
           ]}
         >
           {isLoading ? <Loading /> : children}
