@@ -6,6 +6,12 @@ The native version provides its own set of components and utilises `ART` from
 `react-native`. Components available include `G`, `Path`, `Polygon`, `Rect` and
 `Svg`.
 
+## Differences
+
+Opacity behaves differently on native and web SVGs. In web, `fillOpacity` and
+`strokeOpacity` are applied separately, but native only has one `opacity` prop
+that affects the opacity on both fill colours and stroke colours.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
