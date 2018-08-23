@@ -1,14 +1,20 @@
 # Styleguide
 
 The styleguide package contains the shared styles and functionalities which are
-commonly used across Times Components packages and components. The following
-items can be exported as named exports:
+commonly used across Times Components packages and components. Many of the
+properties of the styleguide can be simply exported as named exports:
 
 ```
 import { colours, spacing } from "@times-components/styleguide";
 ```
 
-Or, the default export is a method which takes a scale. Scale manages the
+However, the default export is a factory method which takes a configuration
+object.
+
+## Configuration
+
+The styleguide default method can be called much like a factory funtion with a
+config object. This object includes a scale property which manages the
 user-controlled font size settings:
 
 ```
