@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "3.1.10",
+  "version": "3.1.11",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -74,7 +74,7 @@
     "@times-components/markup": "3.0.12",
     "@times-components/markup-forest": "1.0.2",
     "@times-components/pagination": "3.0.16",
-    "@times-components/provider": "1.1.3",
+    "@times-components/provider": "1.1.4",
     "@times-components/styleguide": "3.2.5",
     "@times-components/tracking": "2.1.10",
     "@times-components/utils": "3.1.0",
