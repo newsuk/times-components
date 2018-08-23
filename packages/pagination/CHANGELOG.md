@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.16"></a>
+## [3.0.16](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.0.15...@times-components/pagination@3.0.16) (2018-08-22)
+
+
+### Bug Fixes
+
+* use times svgs everywhere ([#1245](https://github.com/newsuk/times-components/issues/1245)) ([fd71184](https://github.com/newsuk/times-components/commit/fd71184))
+
+
+
+
+
+<a name="3.0.15"></a>
+## [3.0.15](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.0.14...@times-components/pagination@3.0.15) (2018-08-22)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+<a name="3.0.14"></a>
+## [3.0.14](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.0.13...@times-components/pagination@3.0.14) (2018-08-21)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 <a name="3.0.13"></a>
 ## [3.0.13](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.0.12...@times-components/pagination@3.0.13) (2018-08-17)
 

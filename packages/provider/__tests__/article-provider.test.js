@@ -54,94 +54,101 @@ const mocks = [
         },
         __typename: "Image"
       },
-      relatedArticles: [
-        {
-          id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
-          headline: "Related Headline",
-          section: "related",
-          byline: [
-            {
-              name: "text",
-              attributes: {
-                value: "Patrick Kidd"
+      relatedArticleSlice: {
+        __typename: "StandardSlice",
+        sliceName: "StandardSlice",
+        items: [
+          {
+            __typename: "Tile",
+            article: {
+              id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
+              headline: "Related Headline",
+              section: "related",
+              byline: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Patrick Kidd"
+                  },
+                  children: []
+                }
+              ],
+              label: "Label",
+              publicationName: "TIMES",
+              publishedTime: "2015-03-23T19:39:39.000Z",
+              summary105: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 105"
+                  },
+                  children: []
+                }
+              ],
+              summary125: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 125"
+                  },
+                  children: []
+                }
+              ],
+              summary145: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 145"
+                  },
+                  children: []
+                }
+              ],
+              summary160: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 160"
+                  },
+                  children: []
+                }
+              ],
+              summary175: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 175"
+                  },
+                  children: []
+                }
+              ],
+              summary225: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Summary 225"
+                  },
+                  children: []
+                }
+              ],
+              leadAsset: {
+                id: "6c1c108e-ed63-47af-df1d-46c63be16627",
+                title: "RA Lead Title",
+                crop169: {
+                  url: "https://image.io/169",
+                  __typename: "Crop"
+                },
+                crop32: {
+                  url: "https://image.io/32",
+                  __typename: "Crop"
+                },
+                __typename: "Image"
               },
-              children: []
+              url: "https://some-url",
+              __typename: "Article"
             }
-          ],
-          label: "Label",
-          publicationName: "TIMES",
-          publishedTime: "2015-03-23T19:39:39.000Z",
-          summary105: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 105"
-              },
-              children: []
-            }
-          ],
-          summary125: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 125"
-              },
-              children: []
-            }
-          ],
-          summary145: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 145"
-              },
-              children: []
-            }
-          ],
-          summary160: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 160"
-              },
-              children: []
-            }
-          ],
-          summary175: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 175"
-              },
-              children: []
-            }
-          ],
-          summary225: [
-            {
-              name: "text",
-              attributes: {
-                value: "Summary 225"
-              },
-              children: []
-            }
-          ],
-          leadAsset: {
-            id: "6c1c108e-ed63-47af-df1d-46c63be16627",
-            title: "RA Lead Title",
-            crop169: {
-              url: "https://image.io/169",
-              __typename: "Crop"
-            },
-            crop32: {
-              url: "https://image.io/32",
-              __typename: "Crop"
-            },
-            __typename: "Image"
-          },
-          url: "https://some-url",
-          __typename: "Article"
-        }
-      ],
+          }
+        ]
+      },
       standfirst: "Standfirst",
       topics: [
         {
@@ -169,7 +176,7 @@ const renderComponent = child =>
 
 describe("ArticleProvider", () => {
   it("returns query result", done => {
-    renderComponent(({ isLoading, article }) => {
+    renderComponent(({ article, isLoading }) => {
       if (!isLoading) {
         expect(article).toMatchSnapshot();
         done();

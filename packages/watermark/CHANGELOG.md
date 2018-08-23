@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.15"></a>
+## [2.1.15](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.1.14...@times-components/watermark@2.1.15) (2018-08-22)
+
+
+### Bug Fixes
+
+* use times svgs everywhere ([#1245](https://github.com/newsuk/times-components/issues/1245)) ([fd71184](https://github.com/newsuk/times-components/commit/fd71184))
+
+
+
+
+
+<a name="2.1.14"></a>
+## [2.1.14](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.1.13...@times-components/watermark@2.1.14) (2018-08-22)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+<a name="2.1.13"></a>
+## [2.1.13](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.1.12...@times-components/watermark@2.1.13) (2018-08-21)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
 <a name="2.1.12"></a>
 ## [2.1.12](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.1.11...@times-components/watermark@2.1.12) (2018-08-17)
 

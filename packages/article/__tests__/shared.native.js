@@ -69,7 +69,7 @@ export default () => {
                   flags: null,
                   label: null,
                   leadAsset: null,
-                  relatedArticles: null,
+                  relatedArticleSlice: null,
                   standfirst: null,
                   topics: null
                 })}

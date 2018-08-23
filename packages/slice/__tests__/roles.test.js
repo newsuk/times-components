@@ -1,7 +1,7 @@
 import { iterator } from "@times-components/test-utils";
 import {
-  leadAndTwoRoles,
-  opinionAndTwoRoles,
+  leadOneAndTwoRoles,
+  opinionOneAndTwoRoles,
   standardRoles
 } from "../src/slice";
 
@@ -9,13 +9,13 @@ const tests = [
   {
     name: "lead and two roles for tracking",
     test() {
-      expect(leadAndTwoRoles).toMatchSnapshot();
+      expect(leadOneAndTwoRoles).toMatchSnapshot();
     }
   },
   {
     name: "opinion and two roles for tracking",
     test() {
-      expect(opinionAndTwoRoles).toMatchSnapshot();
+      expect(opinionOneAndTwoRoles).toMatchSnapshot();
     }
   },
   {

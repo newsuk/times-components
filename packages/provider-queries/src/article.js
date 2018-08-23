@@ -3,97 +3,130 @@ import gql from "graphql-tag";
 export default gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
-      id
-      headline
-      keywords
-      publicationName
-      publishedTime
-      label
-      standfirst
-      flags
-      byline
-      content
-      section
-      url
-      commentsEnabled
       commentCount
+      commentsEnabled
+      content
+      flags
+      keywords
       leadAsset {
         ... on Video {
+          brightcoveAccountId
           brightcovePolicyKey
           brightcoveVideoId
-          brightcoveAccountId
-          type: __typename
           posterImage {
             ...imageProps
           }
-          brightcoveAccountId
-          brightcoveVideoId
-          brightcovePolicyKey
+          type: __typename
         }
         ... on Image {
           type: __typename
           ...imageProps
         }
       }
-      relatedArticles {
-        id
-        headline
-        section
-        byline
-        label
-        publicationName
-        publishedTime
-        summary125: summary(maxCharCount: 125)
-        leadAsset {
-          ... on Image {
-            id
-            title
-            crop169: crop(ratio: "16:9") {
-              url
-            }
-            crop32: crop(ratio: "3:2") {
-              url
-            }
-          }
-          ... on Video {
-            posterImage {
-              id
-              title
-              crop169: crop(ratio: "16:9") {
-                url
-              }
-              crop32: crop(ratio: "3:2") {
-                url
-              }
+      relatedArticleSlice {
+        ... on StandardSlice {
+          items {
+            article {
+              ...relatedProps
             }
           }
         }
-        url
-      }
-      relatedArticlesLayout {
-        template
-        ... on LeadAndTwo {
-          main
+        ... on LeadOneAndTwoSlice {
+          lead {
+            article {
+              ...relatedProps
+            }
+          }
+          support1 {
+            article {
+              ...relatedProps
+            }
+          }
+          support2 {
+            article {
+              ...relatedProps
+            }
+          }
         }
-        ... on OpinionAndTwo {
-          main
+        ... on OpinionOneAndTwoSlice {
+          opinion {
+            article {
+              ...relatedProps
+            }
+          }
+          support1 {
+            article {
+              ...relatedProps
+            }
+          }
+          support2 {
+            article {
+              ...relatedProps
+            }
+          }
         }
       }
+      standfirst
       topics(maxCount: 5) {
         name
         slug
       }
+      ...articleProps
     }
   }
 
   fragment imageProps on Image {
-    id
-    title
-    credits
     caption
+    credits
     crop(ratio: "16:9") {
       ratio
       url
     }
+    id
+    title
+  }
+
+  fragment articleProps on Article {
+    byline
+    headline
+    id
+    label
+    publicationName
+    publishedTime
+    section
+    url
+  }
+
+  fragment relatedProps on Article {
+    leadAsset {
+      ... on Image {
+        crop169: crop(ratio: "16:9") {
+          url
+        }
+        crop32: crop(ratio: "3:2") {
+          url
+        }
+        id
+        title
+      }
+      ... on Video {
+        posterImage {
+          crop169: crop(ratio: "16:9") {
+            url
+          }
+          crop32: crop(ratio: "3:2") {
+            url
+          }
+          id
+          title
+        }
+      }
+    }
+    ...articleProps
+    ...summaries
+  }
+
+  fragment summaries on Article {
+    summary125: summary(maxCharCount: 125)
   }
 `;

@@ -2,17 +2,17 @@
 
 exports[`1. lead and two roles for tracking 1`] = `
 Array [
-  "lead-and-two",
-  "lead-and-two-supporting-1",
-  "lead-and-two-supporting-2",
+  "lead-one-and-two",
+  "lead-one-and-two-supporting-1",
+  "lead-one-and-two-supporting-2",
 ]
 `;
 
 exports[`2. opinion and two roles for tracking 1`] = `
 Array [
-  "opinion-and-two",
-  "opinion-and-two-supporting-1",
-  "opinion-and-two-supporting-2",
+  "opinion-one-and-two",
+  "opinion-one-and-two-supporting-1",
+  "opinion-one-and-two-supporting-2",
 ]
 `;
 

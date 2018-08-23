@@ -10,8 +10,15 @@ import {
 } from "./responsive";
 import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
-  const supports = renderSupports(getSupportConfig());
+const OpinionOneAndTwoSlice = ({
+  renderOpinion,
+  renderSupport1,
+  renderSupport2
+}) => {
+  const supportConfig = getSupportConfig();
+  const support1 = renderSupport1(supportConfig);
+  const support2 = renderSupport2(supportConfig);
+  const supports = [support1, support2].filter(support => support);
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
@@ -43,7 +50,7 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <OpinionContainer>{opinion(opinionConfig)}</OpinionContainer>
+          <OpinionContainer>{renderOpinion(opinionConfig)}</OpinionContainer>
           {hasSupports && <Separator />}
           {hasSupports && renderSupportsContainer()}
         </Container>
@@ -52,7 +59,7 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
   );
 };
 
-OpinionAndTwoSlice.propTypes = propTypes;
-OpinionAndTwoSlice.defaultProps = defaultProps;
+OpinionOneAndTwoSlice.propTypes = propTypes;
+OpinionOneAndTwoSlice.defaultProps = defaultProps;
 
-export default OpinionAndTwoSlice;
+export default OpinionOneAndTwoSlice;

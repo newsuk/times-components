@@ -30,10 +30,9 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
-  const relatedArticlesData = articleData.relatedArticles
+  const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
-        relatedArticles: articleData.relatedArticles,
-        relatedArticlesLayout: articleData.relatedArticlesLayout
+        relatedArticleSlice: articleData.relatedArticleSlice
       }
     : null;
   const commentsData = {
@@ -67,7 +66,10 @@ const prepareDataForListView = articleData => {
     { type: "leadAsset", data: leadAsset },
     append(
       { type: "comments", data: commentsData },
-      append({ type: "relatedArticles", data: relatedArticlesData }, data)
+      append(
+        { type: "relatedArticleSlice", data: relatedArticleSliceData },
+        data
+      )
     )
   );
 };

@@ -90,7 +90,7 @@ exports[`4. a rect 1`] = `
       1,
     ]
   }
-  opacity={1}
+  opacity={0.4}
   stroke={
     Array [
       1,
@@ -101,7 +101,7 @@ exports[`4. a rect 1`] = `
   }
   strokeCap={1}
   strokeJoin={1}
-  strokeWidth={1}
+  strokeWidth={8}
   transform="e4c138e0ae717832b3b923e468af04e5"
 />
 `;

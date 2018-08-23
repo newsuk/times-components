@@ -1,5 +1,5 @@
 import React from "react";
-import Svg, { Path, Circle } from "svgs";
+import Svg, { Path, Circle } from "@times-components/svgs";
 import PropTypes from "prop-types";
 
 const ResetIcon = ({ width, strW = 14, svgW = 100 }) => {

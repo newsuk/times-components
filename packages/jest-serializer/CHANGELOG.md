@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.0.1...@times-components/jest-serializer@3.1.0) (2018-08-21)
+
+
+### Features
+
+* squash styles ([c051768](https://github.com/newsuk/times-components/commit/c051768))
+
+
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.0.0...@times-components/jest-serializer@3.0.1) (2018-08-09)
 
