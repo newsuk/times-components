@@ -12,6 +12,7 @@ const mapping = ({ scale }) => {
           secondary: 31
         },
         supporting: {
+          button: 17,
           link: 16
         }
       };
@@ -24,6 +25,7 @@ const mapping = ({ scale }) => {
           secondary: 33
         },
         supporting: {
+          button: 18,
           link: 17
         }
       };
