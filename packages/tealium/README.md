@@ -13,6 +13,8 @@ to track important visitor activity.
 You can find a good overview of tag management and how it works
 [on the Tealium website](https://community.tealiumiq.com/t5/iQ-Tag-Management/Tag-Management-Concepts/ta-p/15883).
 
+Nb: This is for web only. Mobile tracking is done natively.
+
 This package provides a Class Constructor called `TealiumSendScheduler` that is
 configured with some Tealium properties, and takes the global `window` and
 `document` objects as its other arguments. `TealiumSendScheduler` appends the
