@@ -54,3 +54,86 @@ exports[`3. with given styles 1`] = `
   </Text>
 </View>
 `;
+
+exports[`4. with a a very long byline 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    , Environment Editor, 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    , Environment Editor, 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+    , Environment Editor
+  </Text>
+</View>
+`;

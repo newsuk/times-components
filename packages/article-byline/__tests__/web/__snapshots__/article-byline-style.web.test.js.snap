@@ -109,3 +109,80 @@ exports[`3. with given styles 1`] = `
   </div>
 </div>
 `;
+
+exports[`4. with a a very long byline 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "blue",
+  },
+  "IS2": {
+    "color": "blue",
+  },
+  "IS3": {
+    "color": "blue",
+  },
+  "IS4": {
+    "color": "blue",
+  },
+  "IS5": {
+    "color": "blue",
+  },
+  "IS6": {
+    "color": "blue",
+  },
+  "S1": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "15px",
+  },
+  "S2": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+  },
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="IS1 S1"
+  >
+    Camilla Long
+  </div>
+  <div
+    className="IS2 S1"
+  >
+    , Environment Editor, 
+  </div>
+  <div
+    className="IS3 S1"
+  >
+    Camilla Long
+  </div>
+  <div
+    className="IS4 S1"
+  >
+    , Environment Editor, 
+  </div>
+  <div
+    className="IS5 S1"
+  >
+    Camilla Long
+  </div>
+  <div
+    className="IS6 S1"
+  >
+    , Environment Editor
+  </div>
+</div>
+`;

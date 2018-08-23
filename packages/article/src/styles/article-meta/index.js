@@ -11,8 +11,7 @@ const styles = StyleSheet.create({
     paddingBottom: 4
   },
   byline: {
-    ...sharedStyles.byline,
-    lineHeight: 14
+    ...sharedStyles.byline
   }
 });
 

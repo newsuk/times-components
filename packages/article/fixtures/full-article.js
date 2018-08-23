@@ -675,6 +675,90 @@ const defaultByline = [
         children: []
       }
     ]
+  },
+  {
+    name: "author",
+    attributes: {
+      slug: "camilla-long"
+    },
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: "Camilla Long"
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "inline",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: ", Environment Editor"
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "author",
+    attributes: {
+      slug: "camilla-long"
+    },
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: "Camilla Long"
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "inline",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: ", Environment Editor"
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "author",
+    attributes: {
+      slug: "camilla-long"
+    },
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: "Camilla Long"
+        },
+        children: []
+      }
+    ]
+  },
+  {
+    name: "inline",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: ", Environment Editor"
+        },
+        children: []
+      }
+    ]
   }
 ];
 const defaultCommentCount = 65;

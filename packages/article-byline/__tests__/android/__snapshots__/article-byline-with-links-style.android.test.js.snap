@@ -10,7 +10,7 @@ exports[`1. with a single author 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 15,
+        "lineHeight": 19,
         "textDecorationLine": "underline",
       }
     }
@@ -30,7 +30,7 @@ exports[`2. with a given section colour 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 15,
+        "lineHeight": 19,
         "textDecorationLine": "underline",
       }
     }
@@ -50,12 +50,101 @@ exports[`3. with given styles 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 15,
+        "lineHeight": 19,
         "textDecorationLine": "underline",
       }
     }
   >
     Alexandra Frean
+  </Text>
+</View>
+`;
+
+exports[`4. with a a very long byline 1`] = `
+<View>
+  <Text
+    accessibilityRole="link"
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor, 
+  </Text>
+  <Text
+    accessibilityRole="link"
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor, 
+  </Text>
+  <Text
+    accessibilityRole="link"
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor
   </Text>
 </View>
 `;
