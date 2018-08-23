@@ -28,7 +28,8 @@ object.
 ## Showcase API
 
 * name - a "/" delineated string describing the location of the showcase in the
-  component library. Each "/" moves the showcase one level deeper in the component library tree
+  component library. Each "/" moves the showcase one level deeper in the
+  component library tree
 * children - an array of objects containing showcases
 
 ### Showcase Object
