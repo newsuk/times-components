@@ -102,8 +102,8 @@ exports[`2. group of topics at large scale 1`] = `
             Object {
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 17,
-              "lineHeight": 19,
+              "fontSize": 14,
+              "lineHeight": 16,
               "paddingTop": 5,
             }
           }
@@ -160,8 +160,8 @@ exports[`3. group of topics at xlarge scale 1`] = `
             Object {
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 19,
-              "lineHeight": 21,
+              "fontSize": 15,
+              "lineHeight": 17,
               "paddingTop": 5,
             }
           }

@@ -12,7 +12,7 @@ const mapping = ({ scale }) => {
           secondary: 31
         },
         supporting: {
-          link: 19
+          link: 16
         }
       };
     case scales.xlarge:
@@ -24,7 +24,7 @@ const mapping = ({ scale }) => {
           secondary: 33
         },
         supporting: {
-          link: 21
+          link: 17
         }
       };
     default:
