@@ -21,7 +21,6 @@ const ArticleDetailsPage = ({
   scale,
   sectionName: pageSection
 }) => (
-  
   <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error, refetch }) => {
       const adConfig =
