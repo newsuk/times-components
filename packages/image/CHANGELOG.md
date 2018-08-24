@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.17"></a>
+## [3.2.17](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.16...@times-components/image@3.2.17) (2018-08-24)
+
+
+### Bug Fixes
+
+* refactor native image loading animation ([#1243](https://github.com/newsuk/times-components/issues/1243)) ([1195553](https://github.com/newsuk/times-components/commit/1195553))
+
+
+
+
+
 <a name="3.2.16"></a>
 ## [3.2.16](https://github.com/newsuk/times-components/compare/@times-components/image@3.2.15...@times-components/image@3.2.16) (2018-08-23)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.12"></a>
+## [4.1.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@4.1.11...@times-components/article-list@4.1.12) (2018-08-24)
+
+
+### Bug Fixes
+
+* refactor native image loading animation ([#1243](https://github.com/newsuk/times-components/issues/1243)) ([1195553](https://github.com/newsuk/times-components/commit/1195553))
+
+
+
+
+
 <a name="4.1.11"></a>
 ## [4.1.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@4.1.10...@times-components/article-list@4.1.11) (2018-08-23)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.1.1...@times-components/provider-test-tools@1.2.0) (2018-08-24)
+
+
+### Features
+
+* update article tracking ([#1258](https://github.com/newsuk/times-components/issues/1258)) ([a6ec32c](https://github.com/newsuk/times-components/commit/a6ec32c))
+
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.1.0...@times-components/provider-test-tools@1.1.1) (2018-08-22)
 
