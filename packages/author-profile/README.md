@@ -2,7 +2,7 @@
 
 This author profile package contains the data provider that fetches the articles
 for the article list component to show articles associated with a particular
-author. This is distinct from the concept of a author profile page in the pages
+author. This is distinct from the concept of an author profile page in the pages
 package which contains the data provider for the author.
 
 Author profile makes use of the article list package which does most of the
