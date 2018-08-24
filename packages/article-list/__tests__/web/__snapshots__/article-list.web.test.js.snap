@@ -32,36 +32,22 @@ exports[`1. article list 1`] = `
               imageSize={1440}
               showImage={true}
             >
-              <div>
-                <div>
-                  <div>
-                    LABEL 1
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Headline 1
-                </h3>
-                <div>
-                  <span>
-                    
-                    Summary 1
-                    ...
-                  </span>
-                </div>
-                <div>
-                  <time
-                    dateTime="2017-11-17T00:01:00.000Z"
-                  >
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Times
-                  </span>
-                </div>
-              </div>
+              <ArticleSummary
+                bylineProps={null}
+                datePublicationProps={
+                  Object {
+                    "date": "2017-11-17T00:01:00.000Z",
+                    "publication": "TIMES",
+                  }
+                }
+                labelProps={
+                  Object {
+                    "color": "#636C17",
+                    "isVideo": false,
+                    "title": "Label 1",
+                  }
+                }
+              />
             </Card>
           </div>
         </Link>
@@ -89,41 +75,41 @@ exports[`1. article list 1`] = `
               imageSize={1440}
               showImage={true}
             >
-              <div>
-                <div>
-                  <div>
-                    LABEL 2
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Headline 2
-                </h3>
-                <div>
-                  <span>
-                    
-                    Summary 2
-                    ...
-                  </span>
-                </div>
-                <div>
-                  <time
-                    dateTime="2017-11-17T00:01:00.000Z"
-                  >
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div>
-                  <p>
-                    Byline 2
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary
+                bylineProps={
+                  Object {
+                    "ast": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Byline 2",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "paragraph",
+                      },
+                    ],
+                    "color": "#333333",
+                  }
+                }
+                datePublicationProps={
+                  Object {
+                    "date": "2017-11-17T00:01:00.000Z",
+                    "publication": "SUNDAYTIMES",
+                  }
+                }
+                labelProps={
+                  Object {
+                    "color": "#333333",
+                    "isVideo": false,
+                    "title": "Label 2",
+                  }
+                }
+              />
             </Card>
           </div>
         </Link>
@@ -151,41 +137,41 @@ exports[`1. article list 1`] = `
               imageSize={1440}
               showImage={true}
             >
-              <div>
-                <div>
-                  <div>
-                    LABEL 3
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Headline 3
-                </h3>
-                <div>
-                  <span>
-                    
-                    Summary 3
-                    ...
-                  </span>
-                </div>
-                <div>
-                  <time
-                    dateTime="2017-11-17T00:01:00.000Z"
-                  >
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div>
-                  <p>
-                    Byline 3
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary
+                bylineProps={
+                  Object {
+                    "ast": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Byline 3",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "paragraph",
+                      },
+                    ],
+                    "color": "#333333",
+                  }
+                }
+                datePublicationProps={
+                  Object {
+                    "date": "2017-11-17T00:01:00.000Z",
+                    "publication": "SUNDAYTIMES",
+                  }
+                }
+                labelProps={
+                  Object {
+                    "color": "#333333",
+                    "isVideo": false,
+                    "title": "Label 3",
+                  }
+                }
+              />
             </Card>
           </div>
         </Link>
@@ -213,41 +199,41 @@ exports[`1. article list 1`] = `
               imageSize={1440}
               showImage={true}
             >
-              <div>
-                <div>
-                  <div>
-                    LABEL 4
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Headline 4
-                </h3>
-                <div>
-                  <span>
-                    
-                    Summary 4
-                    ...
-                  </span>
-                </div>
-                <div>
-                  <time
-                    dateTime="2017-11-17T00:01:00.000Z"
-                  >
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div>
-                  <p>
-                    Byline 4
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary
+                bylineProps={
+                  Object {
+                    "ast": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Byline 4",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "paragraph",
+                      },
+                    ],
+                    "color": "#333333",
+                  }
+                }
+                datePublicationProps={
+                  Object {
+                    "date": "2017-11-17T00:01:00.000Z",
+                    "publication": "SUNDAYTIMES",
+                  }
+                }
+                labelProps={
+                  Object {
+                    "color": "#333333",
+                    "isVideo": false,
+                    "title": "Label 4",
+                  }
+                }
+              />
             </Card>
           </div>
         </Link>
@@ -275,41 +261,41 @@ exports[`1. article list 1`] = `
               imageSize={1440}
               showImage={true}
             >
-              <div>
-                <div>
-                  <div>
-                    LABEL 5
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Headline 5
-                </h3>
-                <div>
-                  <span>
-                    
-                    Summary 5
-                    ...
-                  </span>
-                </div>
-                <div>
-                  <time
-                    dateTime="2017-11-17T00:01:00.000Z"
-                  >
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div>
-                  <p>
-                    Byline 5
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary
+                bylineProps={
+                  Object {
+                    "ast": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Byline 5",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "paragraph",
+                      },
+                    ],
+                    "color": "#333333",
+                  }
+                }
+                datePublicationProps={
+                  Object {
+                    "date": "2017-11-17T00:01:00.000Z",
+                    "publication": "SUNDAYTIMES",
+                  }
+                }
+                labelProps={
+                  Object {
+                    "color": "#333333",
+                    "isVideo": false,
+                    "title": "Label 5",
+                  }
+                }
+              />
             </Card>
           </div>
         </Link>
@@ -365,61 +351,40 @@ exports[`2. article list with no images 1`] = `
               showImage={false}
             >
               <div>
-                <div>
-                  <div>
-                    <div>
-                      LABEL 1
-                    </div>
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Headline 1
-                  </h3>
-                  <div>
-                    <time
-                      dateTime="2017-11-17T00:01:00.000Z"
-                    >
-                      Friday November 17 2017, 12:01am
-                    </time>
-                    <span>
-                      , The Times
-                    </span>
-                  </div>
-                </div>
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": false,
+                      "title": "Label 1",
+                    }
+                  }
+                />
               </div>
               <div>
-                <div>
-                  <div>
-                    <div>
-                      LABEL 1
-                    </div>
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Headline 1
-                  </h3>
-                  <div>
-                    <span>
-                      
-                      Short summary 1
-                      ...
-                    </span>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2017-11-17T00:01:00.000Z"
-                    >
-                      Friday November 17 2017, 12:01am
-                    </time>
-                    <span>
-                      , The Times
-                    </span>
-                  </div>
-                </div>
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": false,
+                      "title": "Label 1",
+                    }
+                  }
+                />
               </div>
             </Card>
           </div>
@@ -467,61 +432,40 @@ exports[`3. article list with missing image 1`] = `
               showImage={false}
             >
               <div>
-                <div>
-                  <div>
-                    <div>
-                      LABEL 1
-                    </div>
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Headline 1
-                  </h3>
-                  <div>
-                    <time
-                      dateTime="2017-11-17T00:01:00.000Z"
-                    >
-                      Friday November 17 2017, 12:01am
-                    </time>
-                    <span>
-                      , The Times
-                    </span>
-                  </div>
-                </div>
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": false,
+                      "title": "Label 1",
+                    }
+                  }
+                />
               </div>
               <div>
-                <div>
-                  <div>
-                    <div>
-                      LABEL 1
-                    </div>
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Headline 1
-                  </h3>
-                  <div>
-                    <span>
-                      
-                      Short summary 1
-                      ...
-                    </span>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2017-11-17T00:01:00.000Z"
-                    >
-                      Friday November 17 2017, 12:01am
-                    </time>
-                    <span>
-                      , The Times
-                    </span>
-                  </div>
-                </div>
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": false,
+                      "title": "Label 1",
+                    }
+                  }
+                />
               </div>
             </Card>
           </div>

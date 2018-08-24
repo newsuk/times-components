@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
   reversedContentContainer: {
     marginBottom: spacing(2)
   },
+  loadingContentContainer: {
+    minHeight: 84
+  },
   headerContainer: {
     height: 24,
     marginBottom: spacing(2),

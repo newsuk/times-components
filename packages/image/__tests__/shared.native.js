@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground } from "react-native";
+import { Image as ReactNativeImage } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -51,7 +51,7 @@ export default () => {
         expect(testInstance).toMatchSnapshot();
 
         testInstance.root
-          .find(node => node.type === ImageBackground)
+          .find(node => node.type === ReactNativeImage)
           .props.onLoad();
 
         expect(testInstance).toMatchSnapshot();
@@ -65,7 +65,7 @@ export default () => {
         );
 
         expect(
-          testInstance.root.find(node => node.type === ImageBackground).props
+          testInstance.root.find(node => node.type === ReactNativeImage).props
             .source.uri
         ).toEqual("http://example.com/image.jpg?resize=1");
       }
@@ -80,7 +80,7 @@ export default () => {
         );
 
         expect(
-          testInstance.root.find(node => node.type === ImageBackground).props
+          testInstance.root.find(node => node.type === ReactNativeImage).props
             .source.uri
         ).toEqual(dataUri);
       }

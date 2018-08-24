@@ -3,5 +3,6 @@
 exports[`article page 1`] = `
 <Article
   isLoading={true}
+  pageSection="News"
 />
 `;

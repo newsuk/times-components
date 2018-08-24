@@ -55,37 +55,70 @@ exports[`4. loading state 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <ArticleSummary />
+          </Card>
+        </View>
+      </Link>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <ArticleSummary />
+          </Card>
+        </View>
+      </Link>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <View>
-        <Card
-          imageRatio={1}
-          isLoading={true}
-          showImage={true}
-        />
-      </View>
+      <Link
+        url=""
+      >
+        <View>
+          <Card
+            image={
+              Object {
+                "uri": null,
+              }
+            }
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          >
+            <ArticleSummary />
+          </Card>
+        </View>
+      </Link>
     </View>
     <View>
       <View>

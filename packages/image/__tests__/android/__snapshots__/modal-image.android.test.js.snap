@@ -25,19 +25,17 @@ exports[`1. modal image 1`] = `
               aspectRatio={1.5}
             >
               <View>
-                <Image
-                  source={
-                    Object {
-                      "uri": "http://example.com/image.jpg?resize=1440",
-                    }
-                  }
+                <Gradient
+                  degrees={264}
                 />
-                <View>
-                  <Gradient
-                    degrees={264}
-                  />
-                </View>
               </View>
+              <Image
+                source={
+                  Object {
+                    "uri": "http://example.com/image.jpg?resize=1440",
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -61,19 +59,17 @@ exports[`1. modal image 1`] = `
       aspectRatio={1.5}
     >
       <View>
-        <Image
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?resize=1440",
-            }
-          }
+        <Gradient
+          degrees={264}
         />
-        <View>
-          <Gradient
-            degrees={264}
-          />
-        </View>
       </View>
+      <Image
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?resize=1440",
+          }
+        }
+      />
     </View>
   </View>
 </View>

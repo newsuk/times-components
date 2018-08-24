@@ -1,10 +1,9 @@
 # Author Profile
 
-The author profile component is a composed collection of components and features
-which go to make up a list of articles written by a specific author. This is
-distinct from the concept of an author profile page in the pages package, as
-that page deals with the data provider for the author data, whereas the author
-profile package contains the provider that fetches the articles.
+This author profile package contains the data provider that fetches the articles
+for the article list component to show articles associated with a particular
+author. This is distinct from the concept of an author profile page in the pages
+package which contains the data provider for the author.
 
 Author profile makes use of the article list package which does most of the
 heavy lifting in terms of pagination, error handling, layouts and lazy loading.

@@ -82,40 +82,28 @@ exports[`1. default modal 1`] = `
               <View
                 style={
                   Object {
-                    "height": "100%",
-                    "width": "100%",
+                    "flex": 1,
                   }
                 }
               >
-                <Image
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
+                <Gradient
                   style={
                     Object {
                       "flex": 1,
                     }
                   }
-                >
-                  <Gradient
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  />
-                </View>
+                />
               </View>
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -171,40 +159,28 @@ exports[`1. default modal 1`] = `
       <View
         style={
           Object {
-            "height": "100%",
-            "width": "100%",
+            "flex": 1,
           }
         }
       >
-        <Image
-          style={
-            Object {
-              "bottom": 0,
-              "height": "100%",
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": "100%",
-            }
-          }
-        />
-        <View
+        <Gradient
           style={
             Object {
               "flex": 1,
             }
           }
-        >
-          <Gradient
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          />
-        </View>
+        />
       </View>
+      <Image
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      />
     </View>
   </View>
 </View>

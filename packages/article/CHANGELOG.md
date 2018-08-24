@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.6.1"></a>
+## [4.6.1](https://github.com/newsuk/times-components/compare/@times-components/article@4.6.0...@times-components/article@4.6.1) (2018-08-24)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/newsuk/times-components/compare/@times-components/article@4.5.6...@times-components/article@4.6.0) (2018-08-24)
+
+
+### Features
+
+* update article tracking ([#1258](https://github.com/newsuk/times-components/issues/1258)) ([a6ec32c](https://github.com/newsuk/times-components/commit/a6ec32c))
+
+
+
+
+
+<a name="4.5.6"></a>
+## [4.5.6](https://github.com/newsuk/times-components/compare/@times-components/article@4.5.5...@times-components/article@4.5.6) (2018-08-23)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="4.5.5"></a>
+## [4.5.5](https://github.com/newsuk/times-components/compare/@times-components/article@4.5.4...@times-components/article@4.5.5) (2018-08-23)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 <a name="4.5.4"></a>
 ## [4.5.4](https://github.com/newsuk/times-components/compare/@times-components/article@4.5.3...@times-components/article@4.5.4) (2018-08-23)
 

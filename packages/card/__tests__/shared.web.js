@@ -39,6 +39,7 @@ export default () => {
       ),
       replaceTransform({
         CardComponent: justChildren,
+        CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
         TimesImage: propsNoChildren,

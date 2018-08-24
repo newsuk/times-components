@@ -32,18 +32,6 @@ const ArticleListItem = props => {
 
   const imageUri = getImageUri(props);
 
-  if (isLoading) {
-    return (
-      <View style={styles.listItemContainer}>
-        <Card
-          imageRatio={imageRatio}
-          isLoading={isLoading}
-          showImage={showImage}
-        />
-      </View>
-    );
-  }
-
   const content = showImage ? summary : shortSummary;
 
   return (
@@ -52,6 +40,7 @@ const ArticleListItem = props => {
         <Card
           image={{ uri: imageUri }}
           imageRatio={imageRatio}
+          isLoading={isLoading}
           showImage={showImage}
         >
           <ArticleSummary
