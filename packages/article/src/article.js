@@ -127,6 +127,7 @@ class ArticlePage extends Component {
         dataSource: listViewDataHelper(props.article)
       };
     }
+    
     return state;
   }
 
