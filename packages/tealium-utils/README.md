@@ -12,6 +12,10 @@ import storybookReporter from "@times-components/tealium-utils";
 <MyTrackedComponent analyticsStream={storybookReporter} />
 ```
 
+Events can be tested and validated in the showcases by clicking on the "Action
+Logger" tab at the bottom of the showcase. This utilises
+[@storybook/addon-actions](https://github.com/storybooks/storybook/tree/master/addons/actions).
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
@@ -28,16 +32,4 @@ The code can be formatted and linted in accordance with the agreed standards.
 ```
 yarn fmt
 yarn lint
-```
-
-## Testing
-
-This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
-platform with [jest](https://facebook.github.io/jest/).
-
-```
-yarn test:all
-yarn test:android
-yarn test:ios
-yarn test:web
 ```
