@@ -99,23 +99,26 @@ exports[`6. card with reversed layout and no image 1`] = `
 exports[`7. card with a loading state 1`] = `
 <View>
   <View>
-    <Image
-      aspectRatio={0.6666666666666666}
-    />
-  </View>
-  <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -123,18 +126,20 @@ exports[`7. card with a loading state 1`] = `
 exports[`8. card with a loading state and no image 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -142,23 +147,26 @@ exports[`8. card with a loading state and no image 1`] = `
 exports[`9. card with reversed loading state 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-  </View>
-  <View>
-    <Image
-      aspectRatio={0.6666666666666666}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
   </View>
 </View>
 `;
@@ -166,18 +174,20 @@ exports[`9. card with reversed loading state 1`] = `
 exports[`10. card with reversed loading state with no image 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -293,23 +303,26 @@ exports[`13. card should re-render when image size changes 2`] = `
 exports[`14. card should re-render when loading state changes 1`] = `
 <View>
   <View>
-    <Image
-      aspectRatio={0.6666666666666666}
-    />
-  </View>
-  <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;

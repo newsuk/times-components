@@ -13,7 +13,14 @@ import { ApolloError } from "apollo-client";
 import "./mocks";
 import ArticleList from "../src/article-list";
 import adConfig from "../fixtures/article-ad-config.json";
-import { omitWeb as omitProps } from "./utils";
+import { omitWeb } from "./utils";
+
+const omitProps = new Set([
+  ...omitWeb,
+  "bylineProps",
+  "datePublicationProps",
+  "labelProps"
+]);
 
 export default () => {
   addSerializers(

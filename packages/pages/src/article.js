@@ -21,6 +21,7 @@ const ArticleDetailsPage = ({
   scale,
   sectionName: pageSection
 }) => (
+  
   <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error, refetch }) => {
       const adConfig =
@@ -57,6 +58,7 @@ const ArticleDetailsPage = ({
             onTopicPress={(event, { slug }) => onTopicPress(slug)}
             onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
             onVideoPress={(event, info) => onVideoPress(info)}
+            pageSection={pageSection}
             refetch={refetch}
           />
         </Context.Provider>

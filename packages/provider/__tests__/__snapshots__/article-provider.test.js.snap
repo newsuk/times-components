@@ -93,6 +93,8 @@ Object {
           "publicationName": "TIMES",
           "publishedTime": "2015-03-23T19:39:39.000Z",
           "section": "related",
+          "shortIdentifier": "37b27qd2s",
+          "slug": "france-defies-may-over-russia",
           "summary125": Array [
             Object {
               "attributes": Object {
@@ -111,6 +113,8 @@ Object {
     Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice",
   },
   "section": "business",
+  "shortIdentifier": "37b27qd2s",
+  "slug": "france-defies-may-over-russia",
   "standfirst": "Standfirst",
   "topics": Array [
     Object {

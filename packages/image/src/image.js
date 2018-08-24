@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ImageBackground, View } from "react-native";
+import { Image, View } from "react-native";
 import {
   addMissingProtocol,
   normaliseWidth,
@@ -57,9 +57,8 @@ class TimesImage extends Component {
 
     return (
       <View aspectRatio={aspectRatio} style={style}>
-        <ImageBackground {...props}>
-          {isLoaded ? null : <Placeholder />}
-        </ImageBackground>
+        {isLoaded ? null : <Placeholder />}
+        <Image {...props} />
       </View>
     );
   }

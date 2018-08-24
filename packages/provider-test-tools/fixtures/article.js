@@ -1149,6 +1149,8 @@ const defaultTopics = [
 ];
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const defaultSlug = "france-defies-may-over-russia";
+const defaultShortIdentifier = "37b27qd2s";
 
 export default (
   {
@@ -1163,6 +1165,8 @@ export default (
     leadAsset = defaultLeadAsset,
     relatedArticleSlice = defaultRelatedArticleSlice,
     section = defaultSection,
+    shortIdentifier = defaultShortIdentifier,
+    slug = defaultSlug,
     standfirst = defaultStandfirst,
     topics = defaultTopics,
     url = defaultUrl
@@ -1185,6 +1189,8 @@ export default (
       publishedTime: "2015-03-13T18:54:58.000Z",
       relatedArticleSlice,
       section,
+      shortIdentifier,
+      slug,
       standfirst,
       topics,
       url

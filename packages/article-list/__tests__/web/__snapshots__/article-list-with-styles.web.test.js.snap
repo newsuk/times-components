@@ -68,199 +68,6 @@ exports[`1. article list 1`] = `
 
 <style>
 {
-  "IS1": {
-    "color": "rgba(99,108,23,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-    "lineHeight": "14px",
-  },
-  "IS10": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-    "lineHeight": "14px",
-  },
-  "IS11": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "27px",
-    "marginBottom": "5px",
-  },
-  "IS12": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS13": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS14": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS15": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-    "lineHeight": "14px",
-  },
-  "IS16": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "27px",
-    "marginBottom": "5px",
-  },
-  "IS17": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS18": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS19": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS2": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "27px",
-    "marginBottom": "5px",
-  },
-  "IS20": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-    "lineHeight": "14px",
-  },
-  "IS21": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "27px",
-    "marginBottom": "5px",
-  },
-  "IS22": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS23": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS24": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS3": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS4": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS5": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "12px",
-    "fontWeight": "400",
-    "letterSpacing": "1.2px",
-    "lineHeight": "14px",
-  },
-  "IS6": {
-    "color": "rgba(51,51,51,1)",
-    "fontFamily": "TimesModern-Bold",
-    "fontSize": "22px",
-    "fontWeight": "400",
-    "lineHeight": "27px",
-    "marginBottom": "5px",
-  },
-  "IS7": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
-  },
-  "IS8": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
-  "IS9": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-    "marginBottom": "5px",
-  },
   "S1": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
@@ -333,48 +140,6 @@ exports[`1. article list 1`] = `
     "position": "relative",
   },
   "S4": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "font-size": "14px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -397,7 +162,7 @@ exports[`1. article list 1`] = `
     "padding-top": "0px",
     "position": "relative",
   },
-  "S9": {
+  "S5": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -452,45 +217,7 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <div
-                className="S3"
-              >
-                <div
-                  className="S3"
-                >
-                  <div
-                    className="S4 IS1"
-                  >
-                    LABEL 1
-                  </div>
-                </div>
-                <h3
-                  className="S5 IS2"
-                >
-                  Headline 1
-                </h3>
-                <div
-                  className="S7 IS3"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    Summary 1
-                    ...
-                  </span>
-                </div>
-                <div
-                  className="S5 IS4"
-                >
-                  <time>
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Times
-                  </span>
-                </div>
-              </div>
+              <ArticleSummary />
             </Card>
           </div>
         </Link>
@@ -504,7 +231,7 @@ exports[`1. article list 1`] = `
           className="c2 S3"
         >
           <div
-            className="S8"
+            className="S4"
           />
         </div>
         <Link>
@@ -515,52 +242,7 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <div
-                className="S3"
-              >
-                <div
-                  className="S3"
-                >
-                  <div
-                    className="S4 IS5"
-                  >
-                    LABEL 2
-                  </div>
-                </div>
-                <h3
-                  className="S5 IS6"
-                >
-                  Headline 2
-                </h3>
-                <div
-                  className="S7 IS7"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    Summary 2
-                    ...
-                  </span>
-                </div>
-                <div
-                  className="S5 IS8"
-                >
-                  <time>
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div
-                  className="S5 IS9"
-                >
-                  <p>
-                    Byline 2
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary />
             </Card>
           </div>
         </Link>
@@ -574,7 +256,7 @@ exports[`1. article list 1`] = `
           className="c2 S3"
         >
           <div
-            className="S8"
+            className="S4"
           />
         </div>
         <Link>
@@ -585,52 +267,7 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <div
-                className="S3"
-              >
-                <div
-                  className="S3"
-                >
-                  <div
-                    className="S4 IS10"
-                  >
-                    LABEL 3
-                  </div>
-                </div>
-                <h3
-                  className="S5 IS11"
-                >
-                  Headline 3
-                </h3>
-                <div
-                  className="S7 IS12"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    Summary 3
-                    ...
-                  </span>
-                </div>
-                <div
-                  className="S5 IS13"
-                >
-                  <time>
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div
-                  className="S5 IS14"
-                >
-                  <p>
-                    Byline 3
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary />
             </Card>
           </div>
         </Link>
@@ -644,7 +281,7 @@ exports[`1. article list 1`] = `
           className="c2 S3"
         >
           <div
-            className="S8"
+            className="S4"
           />
         </div>
         <Link>
@@ -655,52 +292,7 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <div
-                className="S3"
-              >
-                <div
-                  className="S3"
-                >
-                  <div
-                    className="S4 IS15"
-                  >
-                    LABEL 4
-                  </div>
-                </div>
-                <h3
-                  className="S5 IS16"
-                >
-                  Headline 4
-                </h3>
-                <div
-                  className="S7 IS17"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    Summary 4
-                    ...
-                  </span>
-                </div>
-                <div
-                  className="S5 IS18"
-                >
-                  <time>
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div
-                  className="S5 IS19"
-                >
-                  <p>
-                    Byline 4
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary />
             </Card>
           </div>
         </Link>
@@ -714,7 +306,7 @@ exports[`1. article list 1`] = `
           className="c2 S3"
         >
           <div
-            className="S8"
+            className="S4"
           />
         </div>
         <Link>
@@ -725,59 +317,14 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <div
-                className="S3"
-              >
-                <div
-                  className="S3"
-                >
-                  <div
-                    className="S4 IS20"
-                  >
-                    LABEL 5
-                  </div>
-                </div>
-                <h3
-                  className="S5 IS21"
-                >
-                  Headline 5
-                </h3>
-                <div
-                  className="S7 IS22"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    Summary 5
-                    ...
-                  </span>
-                </div>
-                <div
-                  className="S5 IS23"
-                >
-                  <time>
-                    Friday November 17 2017, 12:01am
-                  </time>
-                  <span>
-                    , The Sunday Times
-                  </span>
-                </div>
-                <div
-                  className="S5 IS24"
-                >
-                  <p>
-                    Byline 5
-                  </p>
-                </div>
-              </div>
+              <ArticleSummary />
             </Card>
           </div>
         </Link>
       </div>
     </div>
     <div
-      className="S9"
+      className="S5"
     >
       <Ad />
     </div>

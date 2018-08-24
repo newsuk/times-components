@@ -94,6 +94,8 @@ export default gql`
     publicationName
     publishedTime
     section
+    shortIdentifier
+    slug
     url
   }
 
