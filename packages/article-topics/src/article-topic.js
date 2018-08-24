@@ -5,22 +5,26 @@ import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
 import propTypes from "./article-topic-prop-types";
 
-const ArticleTopic = ({ name, onPress, slug }) => (
-  <View style={styles.spacer}>
-    <Link onPress={e => onPress(e, { name, slug })} url={`/topic/${slug}`}>
-      <View style={styles.container}>
-        <Text
-          accessibilityComponentType="button"
-          accessibilityRole="button"
-          accessibilityTraits="button"
-          style={styles.text}
-        >
-          {name}
-        </Text>
-      </View>
-    </Link>
-  </View>
-);
+const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
+  const fontSizeStyle = fontSize ? { fontSize } : null;
+  const lineHeightStyle = lineHeight ? { lineHeight } : null;
+  return (
+    <View style={styles.spacer}>
+      <Link onPress={e => onPress(e, { name, slug })} url={`/topic/${slug}`}>
+        <View style={styles.container}>
+          <Text
+            accessibilityComponentType="button"
+            accessibilityRole="button"
+            accessibilityTraits="button"
+            style={[styles.text, fontSizeStyle, lineHeightStyle]}
+          >
+            {name}
+          </Text>
+        </View>
+      </Link>
+    </View>
+  );
+};
 
 ArticleTopic.propTypes = propTypes;
 

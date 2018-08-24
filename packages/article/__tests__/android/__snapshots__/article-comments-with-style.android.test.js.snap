@@ -178,7 +178,7 @@ exports[`1. a full article with enabled comments 1`] = `
                 "color": "#FFF",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 14,
-                "lineHeight": 14,
+                "lineHeight": 16,
                 "paddingTop": 0,
               }
             }

@@ -10,6 +10,10 @@ const mapping = ({ scale }) => {
           ...mappingBase.body,
           bodyMobile: 31,
           secondary: 31
+        },
+        supporting: {
+          button: 17,
+          link: 14
         }
       };
     case scales.xlarge:
@@ -19,6 +23,10 @@ const mapping = ({ scale }) => {
           ...mappingBase.body,
           bodyMobile: 33,
           secondary: 33
+        },
+        supporting: {
+          button: 18,
+          link: 15
         }
       };
     default:

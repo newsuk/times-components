@@ -1,4 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from "react";
+import Context from "@times-components/context";
+import { scales } from "@times-components/styleguide";
 import ArticleTopics from "./src/article-topics";
 import topicsData from "./fixtures/topics";
 
@@ -16,12 +19,17 @@ export default {
     {
       type: "story",
       name: "Group of Topics",
-      component: (_, { decorateAction }) => (
-        <ArticleTopics
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          topics={topicsData}
-        />
-      )
+      component: ({ select }, { decorateAction }) => {
+        const scale = select("Scale", scales, scales.medium);
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            <ArticleTopics
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
+              topics={topicsData}
+            />
+          </Context.Provider>
+        );
+      }
     },
     {
       type: "story",
