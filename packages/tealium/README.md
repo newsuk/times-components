@@ -13,7 +13,9 @@ to track important visitor activity.
 You can find a good overview of tag management and how it works
 [on the Tealium website](https://community.tealiumiq.com/t5/iQ-Tag-Management/Tag-Management-Concepts/ta-p/15883).
 
-Nb: This is for web only. Mobile tracking is done natively.
+Nb: This is for web only. Mobile tracking is done natively. Tracking is our
+generic way of bubbling up events, and we only use Tealium to pass these events
+to the backend.
 
 This package provides a Class Constructor called `TealiumSendScheduler` that is
 configured with some Tealium properties, and takes the global `window` and
@@ -26,11 +28,10 @@ import tealiumReporter, {
 } from "@times-components/tealium";
 
 const trackingOptions = {
-  enabled: true,
   account: "my-account-name",
-  profile: "my-profile-name",
-  env: "dev",
-  enabled: true // default is true
+  enabled: true, // (optional) default is true
+  env: "my-env-name",
+  profile: "my-profile-name"
 };
 
 const tealiumSendScheduler = new TealiumSendScheduler(
@@ -79,3 +80,8 @@ yarn test:android
 yarn test:ios
 yarn test:web
 ```
+
+## Future
+
+A little refactoring around how `window` and `document` are passed through.
+`document` can be derived from `window`.
