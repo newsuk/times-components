@@ -9,16 +9,21 @@ import propTypes from "./article-topic-prop-types";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-const renderArticleTopics = (topics, onPress, fontStyle) =>
-  topics.map(({ name, slug }) => (
+const renderArticleTopics = (topics, onPress, fontStyle) => {
+  const { fontSize, lineHeight } = fontStyle;
+  const fontSizeStyle = fontSize ? { fontSize } : null;
+  const lineHeightStyle = lineHeight ? { lineHeight } : null;
+  return topics.map(({ name, slug }) => (
     <ArticleTopic
-      fontStyle={fontStyle}
+      fontSize={fontSizeStyle}
       key={slug}
+      lineHeight={lineHeightStyle}
       name={name}
       onPress={onPress}
       slug={slug}
     />
   ));
+};
 
 const ArticleTopics = ({ onPress, style, topics }) => (
   <Context.Consumer>

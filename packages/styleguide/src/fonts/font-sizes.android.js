@@ -14,7 +14,7 @@ const fontSizes = scale => {
         button: 15,
         cardMetaMobile: 17,
         link: 14,
-        secondary: 21,
+        secondary: 21
       };
     case scales.xlarge:
       return {
