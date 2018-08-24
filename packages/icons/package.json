@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "2.2.10",
+  "version": "2.2.11",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",
@@ -65,7 +65,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.2.9",
+    "@times-components/styleguide": "3.3.0",
     "@times-components/svgs": "2.1.8",
     "@times-components/utils": "3.1.1",
     "prop-types": "15.6.2"

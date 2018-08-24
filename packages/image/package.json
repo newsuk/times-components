@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "3.2.19",
+  "version": "3.2.20",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -63,11 +63,11 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/caption": "2.1.20",
-    "@times-components/gestures": "3.1.20",
-    "@times-components/gradient": "2.1.18",
-    "@times-components/link": "3.0.17",
-    "@times-components/styleguide": "3.2.9",
+    "@times-components/caption": "2.1.21",
+    "@times-components/gestures": "3.1.21",
+    "@times-components/gradient": "2.1.19",
+    "@times-components/link": "3.0.18",
+    "@times-components/styleguide": "3.3.0",
     "@times-components/svgs": "2.1.8",
     "@times-components/utils": "3.1.1",
     "prop-types": "15.6.2"

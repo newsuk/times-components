@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/button@2.1.18...@times-components/button@2.2.0) (2018-08-24)
+
+
+### Features
+
+* make UX scaling updates ([#1259](https://github.com/newsuk/times-components/issues/1259)) ([3206714](https://github.com/newsuk/times-components/commit/3206714))
+
+
+
+
+
 <a name="2.1.18"></a>
 ## [2.1.18](https://github.com/newsuk/times-components/compare/@times-components/button@2.1.17...@times-components/button@2.1.18) (2018-08-24)
 
