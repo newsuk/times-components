@@ -1,10 +1,9 @@
 # Topic
 
-The topic component is a composed collection of components and features which go
-to make up a list of articles tagged with a certain topic. This is distinct from
-the concept of an topic page in the pages package, as that page deals with the
-data provider for the topic data, whereas the topic package contains the
-provider that fetches the articles.
+This topic package contains the data provider that fetches the articles for the
+article list component to show articles associated with a particular topic. This
+is distinct from the concept of a topic page in the pages package which contains
+the data provider for the topic itself.
 
 Topic makes use of the article list package which does most of the heavy lifting
 in terms of pagination, error handling, layouts and lazy loading. This package
