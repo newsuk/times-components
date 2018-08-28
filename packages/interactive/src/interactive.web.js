@@ -1,21 +1,21 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
- export default function Interactive(props) {
+export default function Interactive(props) {
   const Element = props.element;
-  const elementProps = Object.keys(props.attributes).map(k => ({[k]: props.attributes[k]}));
-   return (
+  return (
     <Fragment>
-      <link
-        rel="import"
-        href={props.source}
-      />
+      <link href={props.source} rel="import" />
       <Element {...props.attributes} />
     </Fragment>
   );
 }
- Interactive.propTypes = {
+Interactive.propTypes = {
   attributes: PropTypes.object,
   element: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-}
+  source: PropTypes.string.isRequired
+};
+Interactive.defaultProps = {
+  attributes: {}
+};

@@ -4,9 +4,7 @@ import Interactive from "../src/interactive";
 
 export default () => {
   it("renders correctly", () => {
-    const testInstance = TestRenderer.create(
-      <Interactive />
-    );
+    const testInstance = TestRenderer.create(<Interactive />);
 
     expect(testInstance.toJSON()).toMatchSnapshot();
   });
