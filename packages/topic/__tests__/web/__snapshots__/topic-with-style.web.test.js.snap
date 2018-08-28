@@ -123,12 +123,12 @@ exports[`1. an article list header 1`] = `
       className="S2"
     >
       Test 
-      <em>
+      <i>
         italic 
-      </em>
-      <strong>
+      </i>
+      <b>
         bold
-      </strong>
+      </b>
        text.
     </div>
   </div>
