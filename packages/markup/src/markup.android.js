@@ -13,9 +13,7 @@ const styles = StyleSheet.create({
   superscript: {
   },
   wordBreakOpportunity: {
-    color: 'transparent',
     fontSize: .1,
-    textShadowColor: 'transparent'
   }
 });
 
@@ -85,7 +83,7 @@ export default {
     return {
       element: (
         <Text key={key} style={styles.wordBreakOpportunity}>
-          {"-"}
+          {" "}
         </Text>
       )
     };

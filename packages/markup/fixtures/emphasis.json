@@ -1,11 +1,11 @@
 {
-  "name": "bold",
+  "name": "emphasis",
   "attributes": {},
   "children": [
     {
       "name": "text",
       "attributes": {
-        "value": "some text here"
+        "value": " some more text here"
       },
       "children": []
     }

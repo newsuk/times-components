@@ -7,13 +7,16 @@ functions from `markup-forest`, which iterates over and renders with the given
 
 ## Renderers
 
-* bold
 * block
 * break
+* emphasis
 * inline
-* italic
 * paragraph
+* subscript
+* superscript
+* strong
 * text
+* wordBreakOpportunity
 
 This package should only have core renderers with no dependencies beyond
 React/React Native. If a consumer would like to support more complex elements

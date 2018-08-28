@@ -67,13 +67,13 @@ import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 
 const tree = {
-  "name": "bold",
+  "name": "strong",
   "attributes": {},
   "children": [
     {
       "name": "text",
       "attributes": {
-        "value": "I am bold"
+        "value": "I am strong"
       }
       "children": []
     }
@@ -82,7 +82,7 @@ const tree = {
 
 // element is now
 // <Text style={{fontWeight: bold}}>
-//   I am bold
+//   I am strong
 // </Text>
 const element = renderTree(tree, coreRenderers)
 ```
