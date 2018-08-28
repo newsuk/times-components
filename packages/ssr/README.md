@@ -57,8 +57,13 @@ yarn lint
 
 ## Future
 
-Potentially we want to look at using this as our source of truth for server-side
-rendering, this would mean exporting and publishing the code to be used by
-render, so it's "all the same code"
+* Publish : potentially we want to look at using this as our source of truth for
+  server-side rendering, this would mean exporting and publishing the code to be
+  used by render, so it's "all the same code"
 
-We should also add the article page and fix the ad config
+* Article Page: we should also add the article page
+
+* Ad Config: add something appropriate
+
+* Bundle Size: we bundle packages on CI in master, we could then bundle here and
+  lint for excessively sized bundles

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
