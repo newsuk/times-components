@@ -8,7 +8,9 @@ bundle.
 ## Usage
 
 Before each command below you should set the envar `GRAPHQL_ENDPOINT` which will
-be used for data fetching
+be used for data fetching. In order to create a bundle it relies on each package
+having it's own `rnw` bundle generated. Use `npx lerna run bundle` at the root
+to simulate a published package.
 
 ```bash
 yarn bundle:dev
@@ -36,6 +38,15 @@ include:
 * /topic/:topic-slug
 
 They will use the client side bundle you generated above
+
+```bash
+yarn bundle:profile
+```
+
+This will generate the webpack `stats.json` file in `dist`. You can then use a
+command such as `npx webpack-bundle-analyzer stats.json` in the `dist` folder to
+visualise the webpack bundle or upload it to other tools
+[suggested by webpack](https://webpack.js.org/guides/code-splitting/#bundle-analysis)
 
 ## Contributing
 
