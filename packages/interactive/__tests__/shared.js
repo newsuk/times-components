@@ -1,11 +1,11 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Interactives from "../src/interactives";
+import Interactive from "../src/interactive";
 
 export default () => {
   it("renders correctly", () => {
     const testInstance = TestRenderer.create(
-      <Interactives />
+      <Interactive />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();

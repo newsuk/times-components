@@ -1,9 +1,9 @@
 {
-  "name": "@times-components/interactives",
+  "name": "@times-components/interactive",
   "version": "0.0.1",
   "description": "Wrapper for Interactive components",
-  "main": "dist/interactives",
-  "dev": "src/interactives",
+  "main": "dist/interactive",
+  "dev": "src/interactive",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -26,7 +26,7 @@
     "react",
     "native",
     "web",
-    "interactives",
+    "interactive",
     "component"
   ],
   "license": "BSD-3-Clause",

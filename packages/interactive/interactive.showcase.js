@@ -1,13 +1,13 @@
 import React from "react";
-import Interactive from "./src/interactives";
+import Interactive from "./src/interactive";
 import fixtures from "./fixtures";
 
 export default {
-  name: "Interactives",
+  name: "Interactive",
   children: [
     {
       type: "story",
-      name: "Interactives",
+      name: "Interactive",
       component: ({ select }) => {
 
         const value = select("Interactive", {

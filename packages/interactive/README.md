@@ -1,4 +1,4 @@
-# Interactives
+# Interactive
 
 <!-- Add the description of the package here. -->
 

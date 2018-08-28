@@ -2,8 +2,8 @@ import React from "react";
 import { Text } from "react-native";
 import styles from "./styles";
 
-const Interactives = () => (
-  <Text>Interactives</Text>
+const Interactive = () => (
+  <Text>Interactive</Text>
 );
 
-export default Interactives;
+export default Interactive;
