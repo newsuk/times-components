@@ -33,13 +33,14 @@ const platformAdConfig = {
   platform: "mobile"
 };
 
-const ArticleView = ({ articleId, scale, sectionName }) => {
+const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
   const adConfig = { ...platformAdConfig, sectionName };
 
   return (
     <ArticlePageView
       articleId={articleId}
       analyticsStream={track}
+      omitErrors={omitErrors}
       onArticlePress={onArticlePress}
       onAuthorPress={onAuthorPress}
       onCommentsPress={onCommentsPress}
@@ -56,6 +57,7 @@ const ArticleView = ({ articleId, scale, sectionName }) => {
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
+  omitErrors: PropTypes.bool.isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
 };

@@ -11,6 +11,7 @@ const ArticleDetailsPage = ({
   articleId,
   analyticsStream,
   platformAdConfig,
+  omitErrors,
   onArticlePress,
   onAuthorPress,
   onCommentsPress,
@@ -37,8 +38,8 @@ const ArticleDetailsPage = ({
             adConfig={adConfig}
             analyticsStream={analyticsStream}
             article={article}
-            error={error}
-            isLoading={isLoading}
+            error={omitErrors ? null : error}
+            isLoading={isLoading || (omitErrors && error !== null)}
             onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
             onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
             onCommentsPress={(event, { articleId: id, url }) =>
@@ -70,6 +71,7 @@ ArticleDetailsPage.propTypes = {
   articleId: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
   platformAdConfig: PropTypes.shape({}).isRequired,
+  omitErrors: PropTypes.bool,
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -79,6 +81,10 @@ ArticleDetailsPage.propTypes = {
   onTopicPress: PropTypes.func.isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
+};
+
+ArticleDetailsPage.defaultProps = {
+  omitErrors: false
 };
 
 export default withClient(ArticleDetailsPage);
