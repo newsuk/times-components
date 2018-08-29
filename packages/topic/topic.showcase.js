@@ -42,7 +42,7 @@ export default {
       type: "story",
       name: "Default",
       component: (_, { decorateAction }) => (
-        <StorybookProvider mocks={mocks}>
+        <MockedProvider mocks={mocks}>
           <TopicProvider debounceTimeMs={0} slug={slug}>
             {({ topic, error, isLoading }) => (
               <Topic
@@ -53,7 +53,7 @@ export default {
               />
             )}
           </TopicProvider>
-        </StorybookProvider>
+        </MockedProvider>
       )
     },
     {
