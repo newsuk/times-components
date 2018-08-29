@@ -43,6 +43,7 @@
     "@times-components/storybook": "3.0.10",
     "@times-components/tealium-utils": "0.6.7",
     "@times-components/test-utils": "1.0.2",
+    "@times-components/webpack-configurator": "2.0.4",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",

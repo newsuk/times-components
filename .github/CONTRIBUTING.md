@@ -35,16 +35,19 @@ Following these guidelines helps to get issues organised and PRs merged faster!
 
 We're using [lerna](https://github.com/lerna/lerna) for the monorepo with each
 component in it's own package that should stand alone with it's own tests and
-react story etc. A component is simply the exported JSX with no compilation
+react story etc. A component is published in two ways. A compiled `dist` version
+for Native, so the platform doesn't need to worry about various Babel configs,
+and a `rnw.js` bundle for web. The `package.json` `main` points at the `dist`
+entrypoint and relative paths are used to access the `rnw` bundle.
 
-For ease of use there is a CLI for creating a component. This is the quickest way to create a
-package with the required scaffolding which is; a component, `package.json`,
-stubbed test and story. Note that the stubbed test will fail until a snapshot is
-created with `jest --updateSnapshot` or a test run is made without the `--CI`
-flag.
+For ease of use there is a CLI for creating a component. This is the quickest
+way to create a package with the required scaffolding which is; a
+component,`package.json`, stubbed test and showcase/story. Note that the stubbed
+test will fail until a snapshot is created with`jest --updateSnapshot`or a test
+run is made without the`--CI` flag.
 
-To use this, in the root of the project run:
-`times-components create component ComponentName "Component Description"`
+To use this, in the root of the project run: `./times-components create
+component ComponentName "Component Description"`
 
 When developing a component it's easiest to use the
 [storybooks](https://github.com/storybooks/storybook) with hot reloading. Make
@@ -52,6 +55,32 @@ sure you follow the
 [React Native instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 to get up and running first. See [README.md](../README.md) for commands to run
 the storybook.
+
+### Development gotchas
+
+## Dynamic Styled Components
+
+We use
+[styled-components](https://github.com/styled-components/styled-components) to
+give us the ability to use media queries and keyframes to improve both UX and
+DX. This allows us to server-side-render pages but provide different experiences
+without the need for JavaScript.
+
+It is possible to dynamically create a `styled-component` at runtime but this
+leads to poor SSR performance. On the server, one instance of the component will
+be created and on the client another, which breaks the benefits of hydration and
+would result in another render. Avoid this pattern and use control flow to
+choose a specific `styled-component` instead.
+
+## Style Object Literals
+
+We use `react-native-web` to compile our React Native components to web friendly
+React. This relies on aggregating the given React Native styles and converting
+them into CSS classes. Not only is it best practice to
+[use a stylesheet](https://github.com/necolas/react-native-web/blob/master/packages/website/guides/style.md#defining-styles)
+whenever creating styles, it's also mandatory for hydration of SSR code. When
+using object literals, the styles can be incorrectly aggregated on the server
+and the client due to the different JS objects.
 
 > #### Caution
 >
@@ -69,29 +98,29 @@ When the CI passes `packages:publish` will be run that uses
 semver version, create a CHANGELOG and push to the `@times-components` org on
 npm
 
-`update-deps` is run `postinstall` to add `node_modules` to each of the packages
-
 ## Component categories
 
-When creating a new component you should specify the most suitable category in 
-the stories file. 
-The current categories are:
+When creating a new component you should specify the most suitable category in
+the showcase file. The current categories are:
 
 * <b>Primitive</b> - components that are the basic building blocks from which
-other components can be composed
+  other components can be composed
 * <b>Composed</b> - components that are composed of Primitives
-* <b>Pages</b> - complex page level components made up from multiple 
-Composed and Primitive components
+* <b>Pages</b> - complex page level components made up from multiple Composed
+  and Primitive components
 * <b>Helpers</b> - tools, utilities and helpers
 
-For example to add
-a `Slider` component to the the `Composed` category you just prefix the category 
-name in the `slider.stories.js` file.
+For example to add a `Slider` component to the the `Composed` category you just
+prefix the category name in the `slider.showcase.js` file.
 
 ```
-storiesOf("Composed/Slider", module)
+{
+  name: "Composed/Slider",
+  children: [
+  ...showcases here
+  ]
+}
 ```
-
 
 ## Submitting a Pull Request
 
@@ -106,7 +135,7 @@ with discussions for whatever you are including.
 ## Testing
 
 Every component should have a `XXXX.test.js` file with the component's Jest
-tests.
+tests split into the relevant platform folder e.g. `android`, `ios`, `web`.
 
 If the component contains functionality that requires functional testing on a
 device or browser, you can use [Fructose](https://github.com/newsuk/fructose).
@@ -118,22 +147,22 @@ need to install some additional dependencies. Follow steps 1-4 in these
 
 Fructose also relies on an application existing within the project, in this case
 we are using the storybook app. If you have not installed it, you can do so by
-running `yarn ios`. You will need to terminate the server that is run with
-this as fructose will run its own at the time of testing. As long as you do not
+running `yarn ios`. You will need to terminate the server that is run with this
+as fructose will run its own at the time of testing. As long as you do not
 delete the app, you will only have to build the app once.
 
 If you run `npm run functional-test:ios` in the root directory it will run
- fructose tests for all of the components. This will similarly work for android
- and web.
+fructose tests for all of the components. This will similarly work for android
+and web.
 
-[Dextrose](https://github.com/newsuk/dextrose) is a visual snapshotting tool designed to make the visual inspection of
- components easier.
+[Dextrose](https://github.com/newsuk/dextrose) is a visual snapshotting tool
+designed to make the visual inspection of components easier.
 
-In order to run dextrose simply use `yarn visual-snapshot-web`,
-`yarn visual-snapshot-ios` or `yarn visual-snapshot-android`. Each component
-that has differences from master will be visually snapshotted and saved under the
- /dextrose/snappy folder. This can be very useful for visually validating components.
-
+In order to run dextrose simply use `yarn visual-snapshot-web`, `yarn
+visual-snapshot-ios` or `yarn visual-snapshot-android`. Each component that has
+differences from master will be visually snapshotted and saved under the
+/dextrose/snappy folder. This can be very useful for visually validating
+components.
 
 ## Local App Deployment
 
@@ -222,20 +251,6 @@ eg
 * FontName / Full name = GillSansMTStd-Medium
 * FamilyName = GillSansMTStd-Medium
 
-## Babel config for native apps (Required for tracking)
-
- Tracking package uses `component.displayName`. By default, the react-native bundler removes `displayName` in release versions. To keep the display name, the projects that use the `times-components` tracking feature, should follow these steps:
-  * Add `babel-plugin-add-react-displayname` as a dev dependency (`yarn add --dev babel-plugin-add-react-displayname`)
-  * Create a `.babelrc` in the base directory
-  * The `.babelrc` should contain the following plugins and presets:
-  ```
-  {
-    "presets": ["react-native"],
-    "plugins": ["add-react-displayname"]
-  }
-  ```
-  * Updating the `.babelrc` requires a cache clean-up for the react-native bundler. Bundle with `react-native bundle --reset-cache` for the first time.
-
 ## Folder Structure
 
 An example component/package looks like this:
@@ -243,14 +258,27 @@ An example component/package looks like this:
 ```
 .
 └── card
-    ├── CHANGELOG.md
-    ├── __snapshots__
-    │   └── card.test.js.snap
-    ├── card.js
+    ├── __tests__
+    │   └── android
+    │       └── __snapshots__
+    │           └── card.android.test.js.snap
+    │           └── card-with-style.android.test.js.snap
+    │       └── card.android.test.js
+    │       └── card-with-style.android.test.js
+    │   └── ios
+    │   └── web
+    │   └── shared.test.js
+    │   └── shared.native.js
+    │   └── shared.web.js
+    ├── src
+    │   └── card.js
+    ├── card.showcase.js
     ├── card.stories.js
-    ├── card.test.js
+    ├── CHANGELOG.md
     ├── package.json
-    └── yarn.lock
+    ├── README.md
+    ├── rnw.js
+    └── webpack.config.js
 ```
 
 ### Overview of project directory structure
@@ -259,9 +287,8 @@ An example component/package looks like this:
   component stories and aliases the native imports to web
 * .storybook.native is home to the generated `story-loader.js` from the
   `prestorybook-native` npm script, and the storybook bootstrapping
-* android, ios, .babelrc, .buckconfig, .flowconfig, .gitattributes,
-  .watchmanconfig, app.json are all from a stock react-native project in order
-  to run the native storybook
+* android, ios, .babelrc, .buckconfig, .gitattributes, .watchmanconfig, app.json
+  are all from a stock react-native project in order to run the native storybook
 * lerna.json specifies that the packages are independent so different platforms
   can control which versions they consume and allows them to develop organically
 
@@ -269,19 +296,19 @@ An example component/package looks like this:
 
 1. Clone the repo with `https://github.com/newsuk/times-components.git`
 
-2. Run `yarn` in the root folder.
+2. Run `yarn` in the root folder. Set a `GRAPHQL_ENDPOINT` envar for linting.
 
 Once it is done, you can run `npm run storybook` and/or `npm run
 storybook-native`
 
-## Provider package
+## Provider Queries package
 
-The `Provider package` is home to any GraphQL queries that should be shared
-across the various platforms. The
-[Times Public API](https://github.com/newsuk/times-public-api) schema is checked
-in as `schema.json` which should be updated when any fields are changed. The
-packages linting will then check that each of the `gql` queries within the
-package are properly formed
+The `Provider Queries package` is home to any GraphQL queries that should be
+shared across the various platforms. The
+[Times Public API](https://github.com/newsuk/times-public-api) schema is
+generated in the `schema` package which should be updated when any fields are
+changed. The packages linting will then check that each of the `gql` queries
+within the package are properly formed
 
 ## Cutting a Release
 

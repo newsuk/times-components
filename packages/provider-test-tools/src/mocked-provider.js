@@ -6,7 +6,7 @@ import { MockLink } from "react-apollo/test-utils";
 import { InMemoryCache as Cache } from "apollo-cache-inmemory";
 import PropTypes from "prop-types";
 import Observable from "zen-observable";
-import { fragmentMatcher } from "@times-components/utils";
+import { fragmentMatcher } from "@times-components/schema";
 
 class MockedProvider extends Component {
   constructor(props, context) {

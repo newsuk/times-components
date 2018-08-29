@@ -1,5 +1,5 @@
 /* global context */
-import { delayAndAdvance } from "@times-components/utils";
+import { delayAndAdvance } from "@times-components/test-utils";
 import { TealiumSendScheduler } from "../../src";
 
 export default () => {

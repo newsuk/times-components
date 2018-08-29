@@ -1,0 +1,56 @@
+{
+  "name": "@times-components/ssr",
+  "version": "0.0.1",
+  "scripts": {
+    "cleanup-dist": "rm -rf dist",
+    "bundle:dev": "webpack --config=webpack.config.dev.js",
+    "bundle:prod": "NODE_ENV=production webpack --config=webpack.config.prod.js -p",
+    "bundle:profile": "webpack --config=webpack.config.prod.js --profile --json > dist/stats.json",
+    "depcheck": "depcheck --ignores='eslint,prettier,webpack*' --skip-missing",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "ssr",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.7.1",
+    "eslint": "4.9.0",
+    "prettier": "1.8.2",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
+  },
+  "dependencies": {
+    "@times-components/author-profile": "4.0.32",
+    "@times-components/provider": "1.2.1",
+    "@times-components/schema": "0.0.1",
+    "@times-components/topic": "3.2.0",
+    "apollo-cache-inmemory": "1.1.10",
+    "apollo-client": "2.3.7",
+    "apollo-link-http": "1.5.3",
+    "express": "4.16.3",
+    "node-fetch": "2.2.0",
+    "react": "16.4.2",
+    "react-apollo": "2.1.4",
+    "react-dom": "16.4.2",
+    "react-native": "0.55.4",
+    "react-native-web": "0.5.1",
+    "styled-components": "3.4.0"
+  }
+}

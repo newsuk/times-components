@@ -25,7 +25,8 @@ module.exports = {
           "**/fixtures/**",
           "**/*.stories*",
           "**/*.showcase*",
-          "**/scripts/**"
+          "**/scripts/**",
+          "webpack.config*.js"
         ],
         optionalDependencies: false
       }
