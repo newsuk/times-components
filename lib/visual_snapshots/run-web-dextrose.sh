@@ -6,7 +6,7 @@ npx selenium-standalone start 2>> selenium.log &
 npm run fetch-fonts
 
 ##construct list of changed packages
-npx lerna ls --json > fructose/changedPackages.json
+npx lerna ls --json --since > fructose/changedPackages.json
 
 ##get array of changed components∏
 node fructose/changedComponents.js
