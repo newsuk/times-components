@@ -1,0 +1,13 @@
+{
+  "name": "emphasis",
+  "attributes": {},
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "some emphasised text here"
+      },
+      "children": []
+    }
+  ]
+}

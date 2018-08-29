@@ -8,7 +8,7 @@ export default {
   },
   bold(key, attributes, renderedChildren) {
     return {
-      element: <strong key={key}>{renderedChildren}</strong>
+      element: <b key={key}>{renderedChildren}</b>
     };
   },
   break(key) {
@@ -16,9 +16,14 @@ export default {
       element: <br key={key} />
     };
   },
-  italic(key, attributes, renderedChildren) {
+  emphasis(key, attributes, renderedChildren) {
     return {
       element: <em key={key}>{renderedChildren}</em>
+    };
+  },
+  italic(key, attributes, renderedChildren) {
+    return {
+      element: <i key={key}>{renderedChildren}</i>
     };
   },
   inline(key, attributes, renderedChildren) {
@@ -29,6 +34,11 @@ export default {
   paragraph(key, attributes, renderedChildren) {
     return {
       element: <p key={key}>{renderedChildren}</p>
+    };
+  },
+  strong(key, attributes, renderedChildren) {
+    return {
+      element: <strong key={key}>{renderedChildren}</strong>
     };
   },
   text(key, { value }) {

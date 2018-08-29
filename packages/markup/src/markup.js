@@ -30,6 +30,15 @@ export default {
       element: <Text key={key}>{"\n"}</Text>
     };
   },
+  emphasis(key, attributes, renderedChildren) {
+    return {
+      element: (
+        <Text key={key} style={styles.italic}>
+          {renderedChildren}
+        </Text>
+      )
+    };
+  },
   inline(key, attributes, renderedChildren) {
     return {
       element: <Text key={key}>{renderedChildren}</Text>
@@ -47,6 +56,15 @@ export default {
   paragraph(key, attributes, renderedChildren) {
     return {
       element: <Text key={key}>{renderedChildren}</Text>
+    };
+  },
+  strong(key, attributes, renderedChildren) {
+    return {
+      element: (
+        <Text key={key} style={styles.bold}>
+          {renderedChildren}
+        </Text>
+      )
     };
   },
   text(key, { value }) {

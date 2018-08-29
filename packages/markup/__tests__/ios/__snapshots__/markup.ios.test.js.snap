@@ -36,15 +36,27 @@ exports[`3. break 1`] = `
 </Text>
 `;
 
-exports[`4. image tag 1`] = `<View />`;
+exports[`4. emphasis 1`] = `
+<Text
+  style={
+    Object {
+      "fontStyle": "italic",
+    }
+  }
+>
+  some emphasised text here
+</Text>
+`;
 
-exports[`5. inline 1`] = `
+exports[`5. image tag 1`] = `<View />`;
+
+exports[`6. inline 1`] = `
 <Text>
   some other text here
 </Text>
 `;
 
-exports[`6. italic 1`] = `
+exports[`7. italic 1`] = `
 <Text
   style={
     Object {
@@ -56,10 +68,22 @@ exports[`6. italic 1`] = `
 </Text>
 `;
 
-exports[`7. paragraph 1`] = `
+exports[`8. paragraph 1`] = `
 <Text>
   This is the text for paragraph one
 </Text>
 `;
 
-exports[`8. does not render a script tag 1`] = `<View />`;
+exports[`9. strong 1`] = `
+<Text
+  style={
+    Object {
+      "fontWeight": "bold",
+    }
+  }
+>
+  some strong text here
+</Text>
+`;
+
+exports[`10. does not render a script tag 1`] = `<View />`;

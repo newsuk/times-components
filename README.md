@@ -30,7 +30,13 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 ## Getting Started
 
-1. Run `yarn` to install dependencies
+1. Run `yarn` to install dependencies with a `GRAPHQL_ENDPOINT` envar set for
+   linting
+
+```
+GRAPHQL_ENDPOINT=api.io/graphql yarn
+```
+
 2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install
    fontforge` (See [Fonts section](#fonts))
 3. Components can be seen running in a storybook:

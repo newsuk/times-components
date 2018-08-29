@@ -8,24 +8,45 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const getHeadContainer = ({ hasDescription }) => styled(View)`
+export const HeadContainerWithDescription = styled(View)`
   width: 100%;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
-  padding-bottom: ${hasDescription ? spacing(4) : 0};
+  padding-bottom: ${spacing(4)};
 
   @media (min-width: ${breakpoints.medium}px) {
     padding-left: 0;
     padding-right: 0;
     max-width: 80.8%;
-    padding-top: ${hasDescription ? spacing(1) : spacing(6)};
-    padding-bottom: ${hasDescription ? spacing(7) : spacing(2)};
+    padding-top: ${spacing(1)};
+    padding-bottom: ${spacing(7)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     max-width: 56.2%;
-    padding-top: ${hasDescription ? spacing(3) : spacing(10)};
-    padding-bottom: ${hasDescription ? spacing(8) : spacing(3)};
+    padding-top: ${spacing(3)};
+    padding-bottom: ${spacing(8)};
+  }
+`;
+
+export const HeadContainer = styled(View)`
+  width: 100%;
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+  padding-bottom: 0;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80.8%;
+    padding-top: ${spacing(6)};
+    padding-bottom: ${spacing(2)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    max-width: 56.2%;
+    padding-top: ${spacing(10)};
+    padding-bottom: ${spacing(3)};
   }
 `;
 
