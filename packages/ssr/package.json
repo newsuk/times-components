@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ssr",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "scripts": {
     "cleanup-dist": "rm -rf dist",
     "bundle:dev": "webpack --config=webpack.config.dev.js",
