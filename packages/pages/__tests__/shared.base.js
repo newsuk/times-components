@@ -1,7 +1,8 @@
 import React from "react";
+import fixture from "@times-components/provider-test-tools/fixtures/article";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
-import { Article } from "../src/pages";
+import { Article, SimpleArticle } from "../src/pages";
 import getAdTargetingConfig from "../src/client/ad-targeting-config";
 
 export default makeTest => {
@@ -23,6 +24,47 @@ export default makeTest => {
           onTopicPress={() => {}}
           onVideoPress={() => {}}
           platformAdConfig={{}}
+          scale={scales.large}
+          sectionName="News"
+        />
+      )
+    ).toMatchSnapshot();
+  });
+
+  it("simple article page", () => {
+    const { data: { article } } = fixture({
+      byline: null,
+      flags: null,
+      content: null,
+      label: null,
+      leadAsset: null,
+      relatedArticleSlice: null,
+      standfirst: null,
+      topics: null
+    });
+
+    const platformAdConfig = {
+      adUnit: "1234",
+      networkId: "5678",
+      sectionName: "News"
+    };
+
+    expect(
+      makeTest(
+        <SimpleArticle
+          analyticsStream={() => {}}
+          article={article}
+          error={null}
+          isLoading={false}
+          onArticlePress={() => {}}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
+          platformAdConfig={platformAdConfig}
+          refetch={() => {}}
           scale={scales.large}
           sectionName="News"
         />
