@@ -4,7 +4,6 @@ import {
   fixtureGenerator,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
