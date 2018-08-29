@@ -10,6 +10,7 @@ const AuthorProfilePage = ({
   onArticlePress,
   analyticsStream
 }) => (
+  
   <AuthorProfileProvider
     articleImageRatio="4:3"
     debounceTimeMs={250}
