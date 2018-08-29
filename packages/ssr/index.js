@@ -23,10 +23,6 @@ const makeClient = () =>
     cache: new Cache({ addTypename: true, fragmentMatcher })
   });
 
-
-
-
-
 const makeHtml = (
   client,
   identifier,
