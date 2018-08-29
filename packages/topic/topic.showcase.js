@@ -4,7 +4,6 @@ import {
   fixtureGenerator,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
@@ -42,7 +41,7 @@ export default {
       type: "story",
       name: "Default",
       component: (_, { decorateAction }) => (
-        <StorybookProvider mocks={mocks}>
+        <MockedProvider mocks={mocks}>
           <TopicProvider debounceTimeMs={0} slug={slug}>
             {({ topic, error, isLoading }) => (
               <Topic
@@ -53,7 +52,7 @@ export default {
               />
             )}
           </TopicProvider>
-        </StorybookProvider>
+        </MockedProvider>
       )
     },
     {
