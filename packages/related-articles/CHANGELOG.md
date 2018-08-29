@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.16"></a>
+## [3.2.16](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.2.15...@times-components/related-articles@3.2.16) (2018-08-29)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 <a name="3.2.15"></a>
 ## [3.2.15](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.2.14...@times-components/related-articles@3.2.15) (2018-08-24)
 

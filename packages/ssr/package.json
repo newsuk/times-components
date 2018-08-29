@@ -37,10 +37,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/author-profile": "4.0.31",
+    "@times-components/author-profile": "4.0.32",
     "@times-components/provider": "1.2.1",
     "@times-components/schema": "0.0.1",
-    "@times-components/topic": "3.1.19",
+    "@times-components/topic": "3.2.0",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",
