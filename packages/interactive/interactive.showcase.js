@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import Interactive from "./src/interactive";
 import fixtures from "./fixtures";
 
@@ -18,13 +18,14 @@ export default {
             dataWrapper: "Datawrapper",
             inArticlePuff: "In Article Puff",
             timesHeadline: "Times Headline",
+            twitterEmbed: "Twitter Embed",
             verticalTimeline: "Vertical Timeline"
           },
           "chapterHeading"
         );
 
         return (
-          <View>
+          <ScrollView>
             {Object.keys(fixtures).map(key => (
               <View
                 key={key}
@@ -35,7 +36,7 @@ export default {
                 <Interactive {...fixtures[key]} />
               </View>
             ))}
-          </View>
+          </ScrollView>
         );
       }
     }

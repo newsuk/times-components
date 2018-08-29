@@ -32,6 +32,13 @@ const interactives = {
     source:
       "//components.timesdev.tools/lib2/times-headline-1.0.0/times-headline.html"
   },
+  twitterEmbed: {
+    attributes: {
+      "url": "https://twitter.com/realDonaldTrump/status/1034663158357655552"
+    },
+    element: "twitter-embed",
+    source: "//components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html"
+  },
   verticalTimeline: {
     attributes: { "deck-id": "4101" },
     element: "vertical-timeline",
