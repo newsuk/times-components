@@ -10,9 +10,11 @@ functions from `markup-forest`, which iterates over and renders with the given
 * bold
 * block
 * break
+* emphasis
 * inline
 * italic
 * paragraph
+* strong
 * text
 
 This package should only have core renderers with no dependencies beyond

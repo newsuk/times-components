@@ -47,6 +47,25 @@
       "attributes": {},
       "children": [
         {
+          "name": "strong",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " some text there"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
+        {
           "name": "italic",
           "attributes": {},
           "children": [
@@ -54,6 +73,25 @@
               "name": "text",
               "attributes": {
                 "value": " some more text here"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
+        {
+          "name": "strong",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " some more text there"
               },
               "children": []
             }

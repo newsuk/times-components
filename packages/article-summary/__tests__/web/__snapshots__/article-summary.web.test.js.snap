@@ -172,9 +172,9 @@ exports[`4. article summary component with content including line breaks 1`] = `
   <div>
     <span>
       
-      <strong>
+      <b>
         Review 1
-      </strong>
+      </b>
       <br />
        ITV
       <br />
@@ -182,9 +182,9 @@ exports[`4. article summary component with content including line breaks 1`] = `
     </span>
     <span>
        
-      <strong>
+      <b>
         Review 2
-      </strong>
+      </b>
       <br />
        BBC Two
       <br />

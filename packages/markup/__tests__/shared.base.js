@@ -6,11 +6,13 @@ import coreRenderers from "../src/markup";
 import paragraph from "../fixtures/paragraph.json";
 import block from "../fixtures/block.json";
 import bold from "../fixtures/bold.json";
+import emphasis from "../fixtures/emphasis.json";
 import inline from "../fixtures/inline.json";
 import image from "../fixtures/image.json";
 import italic from "../fixtures/italic.json";
 import lineBreak from "../fixtures/break.json";
 import script from "../fixtures/script.json";
+import strong from "../fixtures/strong.json";
 
 export default renderComponent => {
   const tests = [
@@ -34,6 +36,14 @@ export default renderComponent => {
       name: "break",
       test: () => {
         const output = renderComponent(renderTree(lineBreak, coreRenderers));
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "emphasis",
+      test: () => {
+        const output = renderComponent(renderTree(emphasis, coreRenderers));
 
         expect(output).toMatchSnapshot();
       }
@@ -68,6 +78,14 @@ export default renderComponent => {
       name: "paragraph",
       test: () => {
         const output = renderComponent(renderTree(paragraph, coreRenderers));
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "strong",
+      test: () => {
+        const output = renderComponent(renderTree(strong, coreRenderers));
 
         expect(output).toMatchSnapshot();
       }

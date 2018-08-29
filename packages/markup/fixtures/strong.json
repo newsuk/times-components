@@ -1,0 +1,13 @@
+{
+  "name": "strong",
+  "attributes": {},
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "some strong text here"
+      },
+      "children": []
+    }
+  ]
+}
