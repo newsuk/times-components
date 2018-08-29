@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-queries",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "GraphQL queries for sharing",
   "main": "dist/provider-queries",
   "dev": "src/provider-queries",
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.7.1",
-    "@times-components/webpack-configurator": "2.0.4",
+    "@times-components/eslint-config-thetimes": "0.8.0",
+    "@times-components/webpack-configurator": "2.0.5",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "2.1.1",

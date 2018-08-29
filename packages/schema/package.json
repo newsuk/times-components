@@ -1,6 +1,6 @@
 {
   "name": "@times-components/schema",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "fragment-matcher.js",
   "scripts": {
     "bundle": "cp fragment-matcher.js rnw.js",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.7.1",
+    "@times-components/eslint-config-thetimes": "0.8.0",
     "eslint": "4.9.0",
     "prettier": "1.8.2"
   },

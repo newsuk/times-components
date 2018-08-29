@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.0"></a>
+# [3.3.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.2.16...@times-components/related-articles@3.3.0) (2018-08-29)
+
+
+### Features
+
+* add ssr package ([#1273](https://github.com/newsuk/times-components/issues/1273)) ([11ae083](https://github.com/newsuk/times-components/commit/11ae083))
+
+
+
+
+
 <a name="3.2.16"></a>
 ## [3.2.16](https://github.com/newsuk/times-components/compare/@times-components/related-articles@3.2.15...@times-components/related-articles@3.2.16) (2018-08-29)
 
