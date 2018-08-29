@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.0.17...@times-components/markup@3.1.0) (2018-08-29)
+
+
+### Features
+
+* add markup support for `emphasis` and `strong`. ([#1271](https://github.com/newsuk/times-components/issues/1271)) ([c79a734](https://github.com/newsuk/times-components/commit/c79a734))
+
+
+
+
+
 <a name="3.0.17"></a>
 ## [3.0.17](https://github.com/newsuk/times-components/compare/@times-components/markup@3.0.16...@times-components/markup@3.0.17) (2018-08-24)
 
