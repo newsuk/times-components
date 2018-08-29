@@ -143,32 +143,10 @@ exports[`default styles 1`] = `
     "lineHeight": "14px",
   },
   "IS2": {
-    "WebkitBoxLines": "multiple",
-    "WebkitFlexWrap": "wrap",
-    "color": "rgba(105,105,105,1)",
-    "flexWrap": "wrap",
-    "fontFamily": "TimesDigitalW04",
-    "lineHeight": "20px",
-    "marginBottom": "10px",
-    "msFlexWrap": "wrap",
+    "color": "rgba(219,19,59,1)",
   },
   "IS3": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
-  },
-  "IS4": {
     "color": "rgba(219,19,59,1)",
-  },
-  "IS5": {
-    "color": "rgba(219,19,59,1)",
-  },
-  "IS6": {
-    "color": "rgba(105,105,105,1)",
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": "13px",
-    "lineHeight": "15px",
   },
   "S1": {
     "border-bottom-width": "0px",
@@ -178,6 +156,17 @@ exports[`default styles 1`] = `
     "font-family": "TimesModern-Bold",
     "font-size": "25px",
     "line-height": "27px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S10": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(105,105,105,1)",
+    "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "15px",
     "margin-bottom": "0px",
     "margin-top": "0px",
   },
@@ -241,14 +230,22 @@ exports[`default styles 1`] = `
   "S7": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
+    "color": "rgba(105,105,105,1)",
     "display": "inline",
+    "font-family": "TimesDigitalW04",
     "font-size": "14px",
+    "line-height": "20px",
+    "margin-bottom": "10px",
     "margin-top": "0px",
   },
   "S8": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
+    "color": "rgba(105,105,105,1)",
     "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "15px",
     "margin-bottom": "5px",
     "margin-top": "0px",
   },
@@ -312,7 +309,7 @@ exports[`default styles 1`] = `
                   className="S4"
                 >
                   <div
-                    className="summaryHidden summary125Class S7 IS2"
+                    className="summaryHidden summary125Class S7"
                   >
                     <span
                       className="S6"
@@ -324,7 +321,7 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
                 <div
-                  className="S8 IS3"
+                  className="S8"
                 >
                   <time>
                     March 13 2015, 06:54pm
@@ -334,15 +331,15 @@ exports[`default styles 1`] = `
                   </span>
                 </div>
                 <div
-                  className="S3 IS6"
+                  className="S10"
                 >
                   <span
-                    className="S9 IS4"
+                    className="S9 IS2"
                   >
                     Camilla Long
                   </span>
                   <span
-                    className="S9 IS5"
+                    className="S9 IS3"
                   >
                     , Environment Editor
                   </span>
