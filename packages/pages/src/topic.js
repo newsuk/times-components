@@ -18,6 +18,7 @@ const TopicPage = ({ topicSlug, onArticlePress, analyticsStream }) => (
         slug={topicSlug}
         topic={topic}
       />
+      
     )}
   </TopicProvider>
 );
