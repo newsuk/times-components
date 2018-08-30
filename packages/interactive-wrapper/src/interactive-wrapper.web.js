@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-export default function Interactive(props) {
+export default function InteractiveWrapper(props) {
   const Element = props.element;
   return (
     <Fragment>
@@ -11,11 +11,11 @@ export default function Interactive(props) {
     </Fragment>
   );
 }
-Interactive.propTypes = {
+InteractiveWrapper.propTypes = {
   attributes: PropTypes.object,
   element: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired
 };
-Interactive.defaultProps = {
+InteractiveWrapper.defaultProps = {
   attributes: {}
 };

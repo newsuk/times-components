@@ -1,18 +1,18 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView, View } from "react-native";
-import Interactive from "./src/interactive";
+import InteractiveWrapper from "./src/interactive-wrapper";
 import fixtures from "./fixtures";
 
 export default {
-  name: "Primitives/Interactive",
+  name: "Primitives/Interactive Wrapper",
   children: [
     {
       type: "story",
-      name: "Interactive",
+      name: "Interactive Wrapper",
       component: ({ select }) => {
         const value = select(
-          "Interactive",
+          "Interactive Wrapper",
           {
             chapterHeading: "Chapter Heading",
             dataWrapper: "Datawrapper",
@@ -33,7 +33,7 @@ export default {
                   value === key ? { display: "flex" } : { display: "none" }
                 }
               >
-                <Interactive {...fixtures[key]} />
+                <InteractiveWrapper {...fixtures[key]} />
               </View>
             ))}
           </ScrollView>

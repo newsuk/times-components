@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Linking, Platform, Text, View, WebView } from "react-native";
 import PropTypes from "prop-types";
-class Interactive extends Component {
+class InteractiveWrapper extends Component {
   constructor(){
     super();
     this.state = {
@@ -65,8 +65,8 @@ class Interactive extends Component {
   }
 }
 
-Interactive.propTypes = {
+InteractiveWrapper.propTypes = {
   id: PropTypes.string.isRequired
 };
 
-export default Interactive;
+export default InteractiveWrapper;
