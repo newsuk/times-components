@@ -1,4 +1,4 @@
-# Interactive
+# Interactive Wrapper
 
 <!-- Add the description of the package here. -->
 

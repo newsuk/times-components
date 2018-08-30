@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Linking, Platform, Text, View, WebView } from "react-native";
-
+import PropTypes from "prop-types";
 class Interactive extends Component {
   constructor(){
     super();
     this.state = {
       height: 0,
-      loading: true
     }
-    this.webview = React.createRef();
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(this);
+    this.webview = React.createRef();
   }
 
   onMessage(message) {
@@ -39,10 +38,10 @@ class Interactive extends Component {
   }
 
   handleNavigationStateChange(data) {
-    if(!data.url.includes('data:text/html') && data.url.includes("http") && this.state.loading === false){
-      this.webview.stopLoading();
+    if(!data.url.includes('data:text/html') && data.url.includes("http") && !data.url.includes("cwfiyvo20d.execute-api.eu-west-1.amazonaws.com")){
       // Need to handle native routing when something is clicked.
       this.openURLInBrowser(data.url);
+      this.webview.current.stopLoading();
     }
   }
 
@@ -51,20 +50,23 @@ class Interactive extends Component {
       <View style={{height: this.state.height}}>
         <WebView
           style={{height: this.state.height}}
-          ref={webview => { this.webview = webview; }}
+          ref={this.webview}
           onMessage={this.onMessage}
           source={{uri: `https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/${this.props.id}`}}
-          onLoad={() => {
-            this.webview.postMessage("thetimes.co.uk", "*")
+          onLoadEnd={() => {
+            this.webview.current.postMessage("thetimes.co.uk", "*")
           }}
-          onLoadEnd={() => this.setState({loading: false})}
           onNavigationStateChange={this.handleNavigationStateChange}
-          {...this.postMessageBugWorkaround}
+          {...this.postMessageBugWorkaround()}
         />
      </View>
 
     )
   }
 }
+
+Interactive.propTypes = {
+  id: PropTypes.string.isRequired
+};
 
 export default Interactive;
