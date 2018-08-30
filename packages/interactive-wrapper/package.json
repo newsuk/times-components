@@ -37,23 +37,23 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "*",
-    "@times-components/jest-configurator": "*",
-    "@times-components/storybook": "*",
-    "@times-components/webpack-configurator": "*",
+    "@times-components/eslint-config-thetimes": "0.8.0",
+    "@times-components/jest-configurator": "2.1.5",
+    "@times-components/storybook": "3.1.1",
+    "@times-components/webpack-configurator": "2.0.5",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "prettier": "1.8.2",
-    "react": "16.4.1",
-    "react-dom": "16.3.1",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.3.1",
+    "react-test-renderer": "16.4.2",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "prop-types": "15.6.0"
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": ">=16.2",
