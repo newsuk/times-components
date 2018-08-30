@@ -1,5 +1,6 @@
 {
   "name": "@times-components/ssr",
+  "private": true,
   "version": "0.1.3",
   "scripts": {
     "cleanup-dist": "rm -rf dist",

@@ -1,11 +1,11 @@
 {
-  "lerna": "3.0.0-rc.0",
+  "lerna": "3.2.1",
   "packages": ["packages/*", "android-app", "ios-app"],
   "version": "independent",
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["packages/ssr"]
+      "ignoreChanges": ["packages/ssr/**"]
     }
   }
 }
