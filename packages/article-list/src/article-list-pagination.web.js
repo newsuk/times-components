@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Pagination from "@times-components/pagination";
+import PropTypes from "prop-types";
 import styles from "./styles";
 
 const ArticleListPagination = props => (
@@ -11,6 +12,13 @@ const ArticleListPagination = props => (
   </View>
 );
 
-ArticleListPagination.propTypes = Pagination.propTypes;
+ArticleListPagination.propTypes = {
+  count: PropTypes.number.isRequired,
+  onNext: PropTypes.func.isRequired,
+  onPrev: PropTypes.func.isRequired,
+  page: PropTypes.number.isRequired,
+  pageSize: PropTypes.number.isRequired,
+  hideResults: PropTypes.bool.isRequired
+};
 
 export default ArticleListPagination;

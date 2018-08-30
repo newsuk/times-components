@@ -178,7 +178,7 @@ exports[`1. renders 1`] = `
     >
       <a
         className="IS1"
-        href="./1"
+        href="?mock-1"
       >
         <div
           className="S5"
@@ -206,7 +206,7 @@ exports[`1. renders 1`] = `
     >
       <a
         className="IS2"
-        href="./3"
+        href="?mock-3"
       >
         <div
           className="S5"

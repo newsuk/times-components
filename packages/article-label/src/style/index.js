@@ -1,7 +1,8 @@
+import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
 const { fontFactory } = styleguide();
-const styles = {
+const styles = StyleSheet.create({
   title: {
     ...fontFactory({
       font: "supporting",
@@ -11,6 +12,6 @@ const styles = {
     letterSpacing: 1.2,
     marginBottom: 0
   }
-};
+});
 
 export default styles;

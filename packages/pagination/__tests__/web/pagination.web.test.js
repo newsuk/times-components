@@ -29,12 +29,15 @@ addSerializers(
   )
 );
 
+const mockGenerateLink = page => `?mock-${page}`;
+
 const tests = [
   {
     name: "renders results, previous and next",
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 5,
         pageSize: 3
       };
@@ -49,6 +52,7 @@ const tests = [
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 5,
         pageSize: 3,
         hideResults: true
@@ -64,6 +68,7 @@ const tests = [
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 1,
         pageSize: 25
       };
@@ -78,6 +83,7 @@ const tests = [
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 4,
         pageSize: 10
       };
@@ -92,6 +98,7 @@ const tests = [
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 5,
         pageSize: 4,
         hideResults: true
@@ -107,6 +114,7 @@ const tests = [
     test: () => {
       const props = {
         count: 20,
+        generatePageLink: mockGenerateLink,
         page: 1,
         pageSize: 4,
         hideResults: true
@@ -121,9 +129,12 @@ const tests = [
     name: "tracks next page interaction",
     test: () => {
       const stream = jest.fn();
-      const wrapper = shallow(<Pagination count={21} page={1} />, {
-        context: { tracking: { analytics: stream } }
-      });
+      const wrapper = shallow(
+        <Pagination count={21} generatePageLink={mockGenerateLink} page={1} />,
+        {
+          context: { tracking: { analytics: stream } }
+        }
+      );
 
       wrapper
         .dive()
@@ -144,9 +155,12 @@ const tests = [
     name: "tracks previous page interaction",
     test: () => {
       const stream = jest.fn();
-      const wrapper = shallow(<Pagination count={21} page={2} />, {
-        context: { tracking: { analytics: stream } }
-      });
+      const wrapper = shallow(
+        <Pagination count={21} generatePageLink={mockGenerateLink} page={2} />,
+        {
+          context: { tracking: { analytics: stream } }
+        }
+      );
 
       wrapper
         .dive()

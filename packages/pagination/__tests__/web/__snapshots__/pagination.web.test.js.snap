@@ -10,7 +10,7 @@ exports[`1. renders results, previous and next 1`] = `
   <div>
     <div>
       <a
-        href="./4"
+        href="?mock-4"
       >
         <div>
           <svg
@@ -39,7 +39,7 @@ exports[`1. renders results, previous and next 1`] = `
     </div>
     <div>
       <a
-        href="./6"
+        href="?mock-6"
       >
         <div>
           <div>
@@ -75,7 +75,7 @@ exports[`2. renders with no results 1`] = `
   <div>
     <div>
       <a
-        href="./4"
+        href="?mock-4"
       >
         <div>
           <svg
@@ -104,7 +104,7 @@ exports[`2. renders with no results 1`] = `
     </div>
     <div>
       <a
-        href="./6"
+        href="?mock-6"
       >
         <div>
           <div>
@@ -159,7 +159,7 @@ exports[`4. limits the starting result to the total count 1`] = `
   <div>
     <div>
       <a
-        href="./3"
+        href="?mock-3"
       >
         <div>
           <svg
@@ -196,7 +196,7 @@ exports[`5. renders previous and not next 1`] = `
   <div>
     <div>
       <a
-        href="./4"
+        href="?mock-4"
       >
         <div>
           <svg
@@ -234,7 +234,7 @@ exports[`6. renders next and not previous 1`] = `
     <div />
     <div>
       <a
-        href="./2"
+        href="?mock-2"
       >
         <div>
           <div>
