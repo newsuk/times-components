@@ -9,13 +9,14 @@ const fetchGql = require("./fetch-gql-schema");
 
 const access = promisify(fs.access);
 
-fetchGql(
-  process.cwd(),
-  fetch,
-  process.env.GRAPHQL_ENDPOINT || "http://localhost:4000/graphql"
-)
-  .then(() => process.exit())
-  .catch(async e => {
+async function main() {
+  try {
+    await fetchGql(
+      process.cwd(),
+      fetch,
+      process.env.GRAPHQL_ENDPOINT || "http://localhost:4000/graphql"
+    );
+  } catch (e) {
     console.log(chalk.yellow(e));
 
     try {
@@ -26,6 +27,9 @@ fetchGql(
         chalk.yellow("Without a schema you cannot perform gql linting")
       );
     }
+  }
 
-    process.exit();
-  });
+  process.exit();
+}
+
+main();
