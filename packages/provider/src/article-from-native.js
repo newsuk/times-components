@@ -15,11 +15,6 @@ class NativeArticleProvider extends Component {
     }
   }
 
-  componentWillUnmount() {
-    const { fetch } = this.props;
-    fetch.cancel();
-  }
-
   fetchArticle() {
     const { articleId, fetch } = this.props;
 
