@@ -1,12 +1,16 @@
 import React from "react";
 import { Linking } from "react-native";
-import TestRenderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import InteractiveWrapper from "../src/interactive-wrapper";
 
 export default () => {
   afterEach(() => {
     jest.resetModules();
     jest.clearAllMocks();
+  });
+
+  beforeEach(() => {
+    console.error = jest.fn(); // eslint-disable-line no-console
   });
 
   const setUpNavigationTest = canOpenURLImpl => {
@@ -18,28 +22,28 @@ export default () => {
     const interactiveWrapper = new InteractiveWrapper();
     interactiveWrapper.webview = {
       stopLoading: jest.fn(),
-      postMessage: jest.fn(),
+      postMessage: jest.fn()
     };
     return interactiveWrapper;
   };
 
-  const makeMessageEvent = (height) => ({
+  const makeMessageEvent = height => ({
     nativeEvent: {
       data: height
     }
   });
 
-  it("Does not error on messages containing invalid JSON", () => {
-    const component = new InteractiveWrapper();
-    const f = () =>
-      component.onMessage(makeMessageEvent(400));
-    expect(f).not.toThrowError();
+  it("When receiving a message from the webview, the height is set in state", () => {
+    const component = shallow(<InteractiveWrapper id="123456789" />);
+    component.instance().onMessage(makeMessageEvent(400));
+    expect(component.state().height).toEqual(400);
   });
 
-  // it("james test", () => {
-  //   const root = TestRenderer.create(<InteractiveWrapper id="a0534eee-682e-4955-8e1e-84b428ef1e79" />).root
-  //   console.log(root.instance.state)
-  // })
+  it("Console errors when message object is incorrect", () => {
+    const component = new InteractiveWrapper();
+    component.onMessage();
+    expect(console.error).toHaveBeenCalled(); // eslint-disable-line no-console
+  });
 
   it("openURLInBrowser should try to open a link", done => {
     setUpNavigationTest(() => Promise.resolve(true));
@@ -59,12 +63,11 @@ export default () => {
     setUpNavigationTest(() => Promise.resolve(false));
 
     const navigateTo = "failing url";
-    console.error = jest.fn();
 
     InteractiveWrapper.openURLInBrowser(navigateTo)
       .then(() => {
         expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
-        expect(console.error).toHaveBeenCalledWith("Cant open url", navigateTo);
+        expect(console.error).toHaveBeenCalledWith("Cant open url", navigateTo); // eslint-disable-line no-console
         done();
       })
       .catch(done);
@@ -74,22 +77,21 @@ export default () => {
     setUpNavigationTest(() => Promise.reject(new Error("mock err")));
 
     const navigateTo = "failing url";
-    console.error = jest.fn();
 
     InteractiveWrapper.openURLInBrowser(navigateTo)
       .then(() => {
         expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
-        expect(console.error).toHaveBeenCalled();
+        expect(console.error).toHaveBeenCalled(); // eslint-disable-line no-console
         done();
       })
       .catch(done);
   });
 
-  it('onLoadEnd sends a postMessage', ()=>{
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
-    domContext.onLoadEnd();
-    expect(domContext.webview.postMessage).toHaveBeenCalled();
-  })
+  it("onLoadEnd sends a postMessage", () => {
+    const component = setUpNavigationTest(() => Promise.resolve(true));
+    component.onLoadEnd();
+    expect(component.webview.postMessage).toHaveBeenCalled();
+  });
 
   it("handleNavigationStateChange should return error if canOpenURL throws error", done => {
     setUpNavigationTest(() => Promise.reject(new Error("mock err")));
@@ -102,29 +104,23 @@ export default () => {
     done();
   });
 
-  it("handleOriginChange should prevent webview from loading when it opens a link", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
+  it("handleNavigationStateChange should prevent webview from loading when it opens a link", () => {
+    const component = setUpNavigationTest(() => Promise.resolve(true));
     jest.spyOn(InteractiveWrapper, "openURLInBrowser");
-    domContext.handleNavigationStateChange({ url: "https://www.thetimes.co.uk" });
-    expect(domContext.webview.stopLoading).toHaveBeenCalled();
+    component.handleNavigationStateChange({
+      url: "https://www.thetimes.co.uk"
+    });
+    expect(component.webview.stopLoading).toHaveBeenCalled();
     expect(InteractiveWrapper.openURLInBrowser).toHaveBeenCalled();
   });
 
-  it("handleOriginChange should not open a link when the origin is the same", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
+  it("handleNavigationStateChange should not open a link when the origin is the same", () => {
+    const component = setUpNavigationTest(() => Promise.resolve(true));
     jest.spyOn(InteractiveWrapper, "openURLInBrowser");
-    domContext.handleNavigationStateChange({
-      url: "http://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/same-origin-different-url"
+    component.handleNavigationStateChange({
+      url:
+        "http://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/same-origin-different-url"
     });
     expect(InteractiveWrapper.openURLInBrowser).not.toHaveBeenCalled();
   });
-
-  it("handleOriginChange should not open a link when the URL scheme is the magic prefix used by React Native postMessage", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
-    jest.spyOn(InteractiveWrapper, "openURLInBrowser");
-    domContext.handleNavigationStateChange({
-      url: "react-js-navigation://foo"
-    });
-    expect(InteractiveWrapper.openURLInBrowser).not.toHaveBeenCalled();
-  });
-}
+};

@@ -39,10 +39,11 @@ const interactives = {
   twitterEmbed: {
     id: "c9fda8ab-3809-432e-c88b-bfcecf6900bc",
     attributes: {
-      "url": "https://twitter.com/realDonaldTrump/status/1034663158357655552"
+      url: "https://twitter.com/realDonaldTrump/status/1034663158357655552"
     },
     element: "twitter-embed",
-    source: "//components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html"
+    source:
+      "//components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html"
   },
   verticalTimeline: {
     id: "975e6cdf-0c21-4f06-cb90-213fb1775ecc",
