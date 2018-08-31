@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Ad from "@times-components/ad";
 import ArticleImage from "@times-components/article-image";
+import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
@@ -149,6 +150,17 @@ const ArticleRow = ({ content: { data, index } }) =>
           </ArticleLink>
         )
       };
+    },
+    interactive(key, { url, metadata }, children) {
+      const { attributes, value } = metadata;
+      return (
+        <InteractiveWrapper
+          key={key}
+          attributes={attributes}
+          element={value}
+          source={url}
+        />
+      )
     }
   });
 

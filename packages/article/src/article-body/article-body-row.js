@@ -3,6 +3,7 @@ import { Dimensions, StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import Ad from "@times-components/ad";
+import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
@@ -153,6 +154,14 @@ const ArticleRow = ({
           </View>
         )
       };
+    },
+    interactive(key, { id }, children) {
+      return (
+        <InteractiveWrapper
+          key={key}
+          id={id}
+        />
+      )
     }
   });
 
