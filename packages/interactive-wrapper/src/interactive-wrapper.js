@@ -12,12 +12,7 @@ class InteractiveWrapper extends Component {
     this.webview = React.createRef();
   }
 
-  onMessage(message) {
-    const height = parseInt(message.nativeEvent.data);
-    this.setState({height});
-  }
-
-  postMessageBugWorkaround() {
+  static postMessageBugWorkaround() {
     return Platform.select({
     // https://github.com/facebook/react-native/issues/10865
     ios: {
@@ -26,7 +21,7 @@ class InteractiveWrapper extends Component {
     }
   })}
 
-  openURLInBrowser(url) {
+  static openURLInBrowser(url) {
     return Linking.canOpenURL(url)
       .then(supported => {
         if (!supported) {
@@ -37,11 +32,16 @@ class InteractiveWrapper extends Component {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
+  onMessage(message) {
+    const height = parseInt(message.nativeEvent.data);
+    this.setState({height});
+  }
+
   handleNavigationStateChange(data) {
     if(!data.url.includes('data:text/html') && data.url.includes("http") && !data.url.includes("cwfiyvo20d.execute-api.eu-west-1.amazonaws.com")){
       // Need to handle native routing when something is clicked.
-      this.openURLInBrowser(data.url);
-      this.webview.current.stopLoading();
+      InteractiveWrapper.openURLInBrowser(data.url);
+      this.webview.stopLoading();
     }
   }
 
@@ -54,10 +54,10 @@ class InteractiveWrapper extends Component {
           onMessage={this.onMessage}
           source={{uri: `https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/${this.props.id}`}}
           onLoadEnd={() => {
-            this.webview.current.postMessage("thetimes.co.uk", "*")
+            this.webview.postMessage("thetimes.co.uk", "*")
           }}
           onNavigationStateChange={this.handleNavigationStateChange}
-          {...this.postMessageBugWorkaround()}
+          {...InteractiveWrapper.postMessageBugWorkaround()}
         />
      </View>
 
