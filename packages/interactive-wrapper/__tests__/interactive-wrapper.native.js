@@ -17,7 +17,8 @@ export default () => {
 
     const interactiveWrapper = new InteractiveWrapper();
     interactiveWrapper.webview = {
-      stopLoading: jest.fn()
+      stopLoading: jest.fn(),
+      postMessage: jest.fn(),
     };
     return interactiveWrapper;
   };
@@ -53,6 +54,42 @@ export default () => {
       })
       .catch(done);
   });
+
+  it("openURLInBrowser should try to open an invalid link", done => {
+    setUpNavigationTest(() => Promise.resolve(false));
+
+    const navigateTo = "failing url";
+    console.error = jest.fn();
+
+    InteractiveWrapper.openURLInBrowser(navigateTo)
+      .then(() => {
+        expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
+        expect(console.error).toHaveBeenCalledWith("Cant open url", navigateTo);
+        done();
+      })
+      .catch(done);
+  });
+
+  it("openURLInBrowser should try to open a link and fail", done => {
+    setUpNavigationTest(() => Promise.reject(new Error("mock err")));
+
+    const navigateTo = "failing url";
+    console.error = jest.fn();
+
+    InteractiveWrapper.openURLInBrowser(navigateTo)
+      .then(() => {
+        expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
+        expect(console.error).toHaveBeenCalled();
+        done();
+      })
+      .catch(done);
+  });
+
+  it('onLoadEnd sends a postMessage', ()=>{
+    const domContext = setUpNavigationTest(() => Promise.resolve(true));
+    domContext.onLoadEnd();
+    expect(domContext.webview.postMessage).toHaveBeenCalled();
+  })
 
   it("handleNavigationStateChange should return error if canOpenURL throws error", done => {
     setUpNavigationTest(() => Promise.reject(new Error("mock err")));

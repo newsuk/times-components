@@ -9,6 +9,7 @@ class InteractiveWrapper extends Component {
     }
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(this);
+    this.onLoadEnd = this.onLoadEnd.bind(this);
     this.webview = React.createRef();
   }
 
@@ -45,6 +46,10 @@ class InteractiveWrapper extends Component {
     }
   }
 
+  onLoadEnd() {
+    this.webview.postMessage("thetimes.co.uk", "*")
+  }
+
   render() {
     return (
       <View style={{height: this.state.height}}>
@@ -53,9 +58,7 @@ class InteractiveWrapper extends Component {
           ref={this.webview}
           onMessage={this.onMessage}
           source={{uri: `https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/${this.props.id}`}}
-          onLoadEnd={() => {
-            this.webview.postMessage("thetimes.co.uk", "*")
-          }}
+          onLoadEnd={this.onLoadEnd}
           onNavigationStateChange={this.handleNavigationStateChange}
           {...InteractiveWrapper.postMessageBugWorkaround()}
         />
