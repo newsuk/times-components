@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.19.12",
+  "version": "0.19.13",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -39,7 +39,7 @@
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.0",
     "@times-components/jest-configurator": "2.1.5",
-    "@times-components/storybook": "3.1.1",
+    "@times-components/storybook": "3.1.2",
     "@times-components/test-utils": "1.1.0",
     "@times-components/webpack-configurator": "2.0.5",
     "babel-core": "6.26.0",
@@ -61,7 +61,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.3.2",
+    "@times-components/styleguide": "3.3.3",
     "date-fns": "1.28.5",
     "prop-types": "15.6.2",
     "react-native-device-info": "0.13.0"
