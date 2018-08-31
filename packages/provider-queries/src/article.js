@@ -25,6 +25,7 @@ export default gql`
       }
       relatedArticleSlice {
         ... on StandardSlice {
+          sliceName: __typename
           items {
             article {
               ...relatedProps
@@ -32,6 +33,7 @@ export default gql`
           }
         }
         ... on LeadOneAndTwoSlice {
+          sliceName: __typename
           lead {
             article {
               ...relatedProps
@@ -49,6 +51,7 @@ export default gql`
           }
         }
         ... on OpinionOneAndTwoSlice {
+          sliceName: __typename
           opinion {
             article {
               ...relatedProps
