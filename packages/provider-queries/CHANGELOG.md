@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.2.0...@times-components/provider-queries@1.2.1) (2018-08-31)
+
+
+### Bug Fixes
+
+* add slicename to relatedArticleSlice query ([#1287](https://github.com/newsuk/times-components/issues/1287)) ([cce4315](https://github.com/newsuk/times-components/commit/cce4315))
+
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.1.0...@times-components/provider-queries@1.2.0) (2018-08-29)
 

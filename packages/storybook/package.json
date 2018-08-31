@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -44,7 +44,7 @@
     "@storybook/addon-actions": "3.4.10",
     "@storybook/addon-knobs": "3.4.10",
     "@storybook/react-native": "3.4.10",
-    "@times-components/provider-test-tools": "1.3.1",
+    "@times-components/provider-test-tools": "1.3.2",
     "@times-components/schema": "0.1.1",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",

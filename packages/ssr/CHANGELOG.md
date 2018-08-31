@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@0.1.3...@times-components/ssr@0.1.4) (2018-08-31)
+
+
+### Bug Fixes
+
+* ssr publish ([#1280](https://github.com/newsuk/times-components/issues/1280)) ([05155c9](https://github.com/newsuk/times-components/commit/05155c9))
+
+
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@0.1.2...@times-components/ssr@0.1.3) (2018-08-29)
 

@@ -110,6 +110,7 @@ Object {
         Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice.items.0",
       },
     ],
+    "sliceName": "StandardSlice",
     Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice",
   },
   "section": "business",
