@@ -41,6 +41,24 @@ export const Paragraph = styled.p`
   }
 `;
 
+export const InteractiveContainer = styled.div`
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+  margin-bottom: ${spacing(4)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: ${spacing(4)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
+
 /* --- Lead Asset Styles --- */
 
 export const LeadAsset = styled(View)`

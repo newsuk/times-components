@@ -14,12 +14,6 @@ import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 
-const primaryContainer = {
-  width: "100%",
-  flexDirection: "column",
-  paddingBottom: spacing(5)
-};
-
 const styles = StyleSheet.create({
   ad: {
     borderTopColor: colours.functional.keyline,
@@ -29,6 +23,16 @@ const styles = StyleSheet.create({
     paddingTop: spacing(2),
     paddingBottom: spacing(2),
     marginBottom: spacing(4)
+  },
+  interactiveContainer: {
+    paddingRight: spacing(2),
+    paddingLeft: spacing(2),
+    marginBottom: spacing(4)
+  },
+  primaryContainer: {
+    width: "100%",
+    flexDirection: "column",
+    paddingBottom: spacing(5)
   }
 });
 
@@ -140,7 +144,7 @@ const ArticleRow = ({
 
       return {
         element: (
-          <View key={key} style={primaryContainer}>
+          <View key={key} style={styles.primaryContainer}>
             <Video
               accountId={brightcoveAccountId}
               height={height}
@@ -155,13 +159,14 @@ const ArticleRow = ({
         )
       };
     },
-    interactive(key, { id }, children) {
-      return (
-        <InteractiveWrapper
-          key={key}
-          id={id}
-        />
-      )
+    interactive(key, { id }) {
+      return {
+        element: (
+          <View key={key} style={styles.interactiveContainer}>
+            <InteractiveWrapper id={id} />
+          </View>
+        )
+      };
     }
   });
 

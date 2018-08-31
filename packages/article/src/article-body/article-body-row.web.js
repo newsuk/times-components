@@ -18,6 +18,7 @@ import {
   PrimaryImg,
   SecondaryImg,
   InlineImg,
+  InteractiveContainer,
   PullQuoteContainer,
   PullQuoteResp
 } from "../styles/article-body/responsive";
@@ -151,16 +152,20 @@ const ArticleRow = ({ content: { data, index } }) =>
         )
       };
     },
-    interactive(key, { url, metadata }, children) {
+    interactive(key, { url, metadata }) {
       const { attributes, value } = metadata;
-      return (
-        <InteractiveWrapper
-          key={key}
-          attributes={attributes}
-          element={value}
-          source={url}
-        />
-      )
+      return {
+        element: (
+          <InteractiveContainer>
+            <InteractiveWrapper
+              attributes={attributes}
+              element={value}
+              key={key}
+              source={url}
+            />
+          </InteractiveContainer>
+        )
+      };
     }
   });
 
