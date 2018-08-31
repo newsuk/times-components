@@ -51,7 +51,7 @@
     "cinstall": "./lib/custom_install.sh",
     "postinstall": "lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
-    "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm",
+    "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
     "clean-snaps": "rm -rf dextrose/snappy/*.png",
     "commit": "git-cz"
   },

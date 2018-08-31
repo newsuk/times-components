@@ -641,6 +641,7 @@ exports[`3. three child elements 1`] = `
 
 @media (min-width:1024px) {
   .c0 .leadImageContainerClass {
+    padding-right: 10px;
     min-width: auto;
   }
 

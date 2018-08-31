@@ -82,7 +82,7 @@ const ArticleSummary = props => {
 
 ArticleSummary.propTypes = {
   labelProps: PropTypes.shape({
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     color: PropTypes.string,
     isVideo: PropTypes.bool
   }),
