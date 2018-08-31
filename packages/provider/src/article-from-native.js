@@ -15,6 +15,11 @@ class NativeArticleProvider extends Component {
     }
   }
 
+  componentWillUnmount() {
+    const { articleId, dispose } = this.props;
+    dispose(articleId);
+  }
+
   fetchArticle() {
     const { articleId, fetch } = this.props;
 
@@ -39,6 +44,7 @@ class NativeArticleProvider extends Component {
 NativeArticleProvider.propTypes = {
   articleId: PropTypes.string.isRequired,
   children: PropTypes.func.isRequired,
+  dispose: PropTypes.func.isRequired,
   fetch: PropTypes.func.isRequired
 };
 

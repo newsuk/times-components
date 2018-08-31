@@ -5,7 +5,7 @@ import { NativeArticleProvider } from "@times-components/provider";
 import { SimpleArticle } from "@times-components/pages";
 
 const config = NativeModules.ReactConfig;
-const { fetch } = NativeModules.NativeArticleProvider;
+const { dispose, fetch } = NativeModules.NativeArticleProvider;
 const { track } = NativeModules.ReactAnalytics;
 const {
   onArticlePress,
@@ -37,7 +37,7 @@ const SimpleArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
   const adConfig = { ...platformAdConfig, sectionName };
 
   return (
-    <NativeArticleProvider articleId={articleId} fetch={fetch}>
+    <NativeArticleProvider articleId={articleId} fetch={fetch} dispose={dispose}>
       {({ data: article, isLoading, error, refetch }) => (
         <SimpleArticle
           article={article}
