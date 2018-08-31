@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ArticleProvider } from "@times-components/provider";
+import { propTypes, defaultProps } from "./article-prop-types";
 import withClient from "./client/with-client";
 import SimpleArticle from "./simple-article";
 
@@ -19,23 +20,9 @@ const ArticleDetailsPage = ({ articleId, omitErrors, ...props }) => (
 );
 
 ArticleDetailsPage.propTypes = {
-  articleId: PropTypes.string.isRequired,
-  analyticsStream: PropTypes.func.isRequired,
-  platformAdConfig: PropTypes.shape({}).isRequired,
-  omitErrors: PropTypes.bool,
-  onArticlePress: PropTypes.func.isRequired,
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  scale: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired
+  ...propTypes,
+  articleId: PropTypes.string.isRequired
 };
-
-ArticleDetailsPage.defaultProps = {
-  omitErrors: false
-};
+ArticleDetailsPage.defaultProps = defaultProps;
 
 export default withClient(ArticleDetailsPage);

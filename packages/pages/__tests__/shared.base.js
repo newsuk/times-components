@@ -2,7 +2,8 @@ import React from "react";
 import fixture from "@times-components/provider-test-tools/fixtures/article";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
-import { Article, SimpleArticle } from "../src/pages";
+import { Article } from "../src/pages";
+import SimpleArticle from "../src/simple-article";
 import getAdTargetingConfig from "../src/client/ad-targeting-config";
 
 export default makeTest => {

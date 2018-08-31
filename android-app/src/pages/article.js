@@ -1,7 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
 import { Article } from "@times-components/pages";
+import adConfig from "../ad-config";
+import articlePropTypes from "../article-prop-types";
 
 const config = NativeModules.ReactConfig;
 const { fetch } = NativeModules.NativeFetch;
@@ -15,26 +16,11 @@ const {
   onTopicPress,
   onVideoPress
 } = NativeModules.ArticleEvents;
+
 const ArticlePageView = Article(config)(fetch);
 
-const platformAdConfig = {
-  adUnit: "d.thetimes.co.uk",
-  networkId: "25436805",
-  testMode: "",
-  appVersion: config.appVersion,
-  operatingSystem: "Android",
-  operatingSystemVersion: config.operatingSystemVersion,
-  environment: config.environment,
-  deviceId: config.deviceId,
-  cookieEid: config.cookieEid,
-  cookieAcsTnl: config.cookieAcsTnl,
-  cookieIamTgt: config.cookieIamTgt,
-  isLoggedIn: config.isLoggedIn,
-  platform: "mobile"
-};
-
 const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
-  const adConfig = { ...platformAdConfig, sectionName };
+  const platformAdConfig = adConfig(config, sectionName);
 
   return (
     <ArticlePageView
@@ -48,18 +34,13 @@ const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
       onLinkPress={onLinkPress}
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
-      platformAdConfig={adConfig}
+      platformAdConfig={platformAdConfig}
       scale={scale}
       section={sectionName}
     />
   );
 };
 
-ArticleView.propTypes = {
-  articleId: PropTypes.string.isRequired,
-  omitErrors: PropTypes.bool.isRequired,
-  scale: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired
-};
+ArticleView.propTypes = articlePropTypes;
 
 export default ArticleView;

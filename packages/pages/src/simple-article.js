@@ -4,6 +4,7 @@ import Article from "@times-components/article";
 import Context, { defaults } from "@times-components/context";
 import { colours } from "@times-components/styleguide";
 import adTargetConfig from "./client/ad-targeting-config";
+import { propTypes, defaultProps } from "./article-prop-types";
 
 const SimpleArticle = ({
   article,
@@ -64,26 +65,17 @@ const SimpleArticle = ({
 };
 
 SimpleArticle.propTypes = {
+  ...propTypes,
   article: PropTypes.shape({}),
-  analyticsStream: PropTypes.func.isRequired,
   error: PropTypes.shape({}),
-  isLoading: PropTypes.bool.isRequired,
-  onArticlePress: PropTypes.func.isRequired,
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  platformAdConfig: PropTypes.shape({}).isRequired,
-  refetch: PropTypes.func.isRequired,
-  scale: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired
+  isLoading: PropTypes.bool
 };
 
 SimpleArticle.defaultProps = {
+  ...defaultProps,
   article: null,
-  error: null
+  error: null,
+  isLoading: false
 };
 
 export default SimpleArticle;
