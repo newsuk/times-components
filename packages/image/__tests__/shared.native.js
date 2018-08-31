@@ -29,7 +29,8 @@ export default () => {
 
   const props = {
     aspectRatio: 3 / 2,
-    uri: "http://example.com/image.jpg"
+    highResSize: 900,
+    uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };
 
   const tests = [
@@ -37,7 +38,10 @@ export default () => {
       name: "prepend https schema",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image {...props} uri="//example.com/image.jpg" />
+          <Image
+            {...props}
+            uri="//example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -55,19 +59,6 @@ export default () => {
           .props.onLoad();
 
         expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "image url with a correctly formatted query string",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <Image {...props} uri="http://example.com/image.jpg?resize=1" />
-        );
-
-        expect(
-          testInstance.root.find(node => node.type === ReactNativeImage).props
-            .source.uri
-        ).toEqual("http://example.com/image.jpg?resize=1");
       }
     },
     {

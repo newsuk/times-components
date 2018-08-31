@@ -18,13 +18,10 @@ exports[`1. three related articles 1`] = `
             url="https://first.io"
           >
             <Card
-              image={
-                Object {
-                  "uri": "https://crop1.io",
-                }
-              }
               imageRatio={1.7777777777777777}
+              imageUri="https://crop1.io"
               isReversed={false}
+              lowResSize={100}
               showImage={true}
             >
               <div>
@@ -80,13 +77,10 @@ exports[`1. three related articles 1`] = `
             url="https://second.io"
           >
             <Card
-              image={
-                Object {
-                  "uri": "https://crop2.io",
-                }
-              }
               imageRatio={1.7777777777777777}
+              imageUri="https://crop2.io"
               isReversed={false}
+              lowResSize={100}
               showImage={true}
             >
               <div>
@@ -142,13 +136,10 @@ exports[`1. three related articles 1`] = `
             url="https://third.io"
           >
             <Card
-              image={
-                Object {
-                  "uri": "https://crop3.io",
-                }
-              }
               imageRatio={1.7777777777777777}
+              imageUri="https://crop3.io"
               isReversed={false}
+              lowResSize={100}
               showImage={true}
             >
               <div>

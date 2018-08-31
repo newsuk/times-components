@@ -4,11 +4,10 @@ import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 900,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 25,
   showImage: true
 };
 
@@ -52,6 +51,8 @@ export default renderMethod => {
             <Text>Loading state</Text>
           </Card>
         );
+
+        jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
       }

@@ -18,12 +18,14 @@ import {
 const ArticleListItem = props => {
   const {
     byline,
+    fadeImageIn,
     headline,
+    highResSize,
     imageRatio,
-    imageSize,
     isLoading,
     label,
     leadAsset,
+    lowResSize,
     longSummary,
     publicationName,
     publishedTime,
@@ -96,11 +98,13 @@ const ArticleListItem = props => {
       <ListItemWrapper>
         <Card
           contentContainerClass="articleListContent"
-          image={imageUri ? { uri: imageUri } : null}
+          fadeImageIn={fadeImageIn}
+          highResSize={highResSize}
           imageContainerClass="articleListImage"
           imageRatio={imageRatio}
-          imageSize={imageSize}
+          imageUri={imageUri}
           isLoading={isLoading}
+          lowResSize={lowResSize}
           showImage={showImage}
         >
           {children}

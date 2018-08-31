@@ -15,6 +15,13 @@ import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
+const defaultWebVideoProps = {
+  ...defaultVideoProps,
+  poster: {
+    uri: "https://image.io/poster"
+  }
+};
+
 jest.mock("@times-components/image", () => "Image");
 
 const omitProps = new Set(["className", "style"]);
@@ -40,7 +47,7 @@ const testSubscriberAndVideoPaidStatus = ({
 }) => {
   const testInstance = TestRenderer.create(
     <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-      <Video {...defaultVideoProps} paidOnly={videoIsPaidOnly} />
+      <Video {...defaultWebVideoProps} paidOnly={videoIsPaidOnly} />
     </IsPaidSubscriber.Provider>
   );
 
@@ -80,7 +87,7 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <IsPaidSubscriber.Provider value>
-          <Video {...defaultVideoProps} paidOnly={false} poster={null} />
+          <Video {...defaultWebVideoProps} paidOnly={false} poster={null} />
         </IsPaidSubscriber.Provider>
       );
 

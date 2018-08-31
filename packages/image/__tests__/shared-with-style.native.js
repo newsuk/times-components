@@ -28,7 +28,11 @@ export default () => {
       name: "default image",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+          <Image
+            aspectRatio={3 / 2}
+            highResSize={300}
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
         );
 
         expect(testInstance).toMatchSnapshot();

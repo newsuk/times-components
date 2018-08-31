@@ -2,11 +2,21 @@
 
 exports[`1. primary image with caption and credits 1`] = `
 .c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
   padding-left: 10px;
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-left: 0px;
   }
 }
@@ -17,13 +27,16 @@ Array [
       aspectRatio={1.25}
       caption="Some caption"
       credits="Some credits"
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
       uri="https://imageserver/someImage"
     />
   </div>,
   <div>
     <responsiveweb__InsetCaptionStyle>
       <div
-        className="c0"
+        className="c1"
       >
         <div>
           <div>
@@ -42,12 +55,25 @@ Array [
 `;
 
 exports[`2. secondary image with caption and credits 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
 Array [
   <div>
     <TimesImage
       aspectRatio={1.5}
       caption="Another caption"
       credits="Other credits"
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
       uri="https://imageserver/someImage"
     />
   </div>,
@@ -68,6 +94,16 @@ Array [
 
 exports[`3. inline image (landscape) with caption and credits 1`] = `
 .c1 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2 {
   display: inline-block;
   margin-top: -10px;
   padding-bottom: 20px;
@@ -86,7 +122,7 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     clear: left;
     float: left;
     margin-top: 0px;
@@ -99,7 +135,7 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c2 {
     padding-left: 0px;
     width: 35.71429%;
   }
@@ -130,13 +166,16 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
     >
       <TimesImage
         aspectRatio={1.5}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
         uri="https://imageserver/someImage"
       />
     </div>
   </responsiveweb__InsetImageStyle>
   <responsiveweb__InsetCaptionContainerStyle>
     <div
-      className="c1"
+      className="c2"
     >
       <figcaption>
         <div>
@@ -157,6 +196,16 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 
 exports[`4. inline image (portrait) with caption and credits 1`] = `
 .c1 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2 {
   display: inline-block;
   margin-top: -10px;
   padding-bottom: 20px;
@@ -175,7 +224,7 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     clear: left;
     float: left;
     margin-top: 0px;
@@ -188,7 +237,7 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c2 {
     padding-left: 0px;
     width: 35.71429%;
   }
@@ -219,13 +268,16 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
         uri="https://imageserver/someImage"
       />
     </div>
   </responsiveweb__InsetImageStyle>
   <responsiveweb__InsetCaptionContainerStyle>
     <div
-      className="c1"
+      className="c2"
     >
       <figcaption>
         <div>

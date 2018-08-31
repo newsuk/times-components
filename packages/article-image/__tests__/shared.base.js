@@ -13,7 +13,7 @@ export default makeTest => {
           imageOptions: {
             display: null,
             ratio: "16:9",
-            url: testImageUrl
+            uri: testImageUrl
           }
         };
 
@@ -29,7 +29,7 @@ export default makeTest => {
           imageOptions: {
             display: "primary",
             ratio: null,
-            url: testImageUrl
+            uri: testImageUrl
           }
         };
 
@@ -46,7 +46,7 @@ export default makeTest => {
           imageOptions: {
             display: "inline",
             ratio: null,
-            url: testImageUrl
+            uri: testImageUrl
           }
         };
 
@@ -62,7 +62,7 @@ export default makeTest => {
           imageOptions: {
             display: "inline",
             ratio: null,
-            url: testImageUrl
+            uri: testImageUrl
           },
           captionOptions: {
             caption: "Some caption",
@@ -87,7 +87,7 @@ export default makeTest => {
           imageOptions: {
             display: "primary",
             ratio: "16:9",
-            url: testImageUrl
+            uri: testImageUrl
           }
         };
 
@@ -107,7 +107,7 @@ export default makeTest => {
           imageOptions: {
             display: null,
             ratio: "16:9",
-            url: testImageUrl
+            uri: testImageUrl
           },
           captionOptions: {
             caption: "Some caption",
@@ -132,7 +132,7 @@ export default makeTest => {
           imageOptions: {
             display: null,
             ratio: "16:9",
-            url: testImageUrl
+            uri: testImageUrl
           },
           captionOptions: {
             caption: null,
@@ -157,7 +157,7 @@ export default makeTest => {
           imageOptions: {
             display: "primary",
             ratio: "16:9",
-            url: testImageUrl
+            uri: testImageUrl
           },
           captionOptions: {
             caption: "Some caption",

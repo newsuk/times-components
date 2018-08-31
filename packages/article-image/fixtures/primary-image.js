@@ -5,14 +5,14 @@ const defaultCaption =
 const defaultCredits = "The credits";
 
 export default (
-  url = defaultImageSrc,
+  uri = defaultImageSrc,
   caption = defaultCaption,
   credits = defaultCredits
 ) => ({
   imageOptions: {
     display: "primary",
     ratio: "1500:1200",
-    url
+    uri
   },
   captionOptions: {
     caption,

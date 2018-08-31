@@ -16,11 +16,10 @@ jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/gradient", () => "Gradient");
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 600,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 100,
   showImage: true
 };
 
@@ -70,7 +69,7 @@ export default () => {
         expect(testInstance).toMatchSnapshot();
 
         testInstance.update(
-          <Card {...props} image={{ uri: "http://foo" }}>
+          <Card {...props} imageUri="http://foo">
             <Text>Some text</Text>
           </Card>
         );
@@ -79,7 +78,7 @@ export default () => {
       }
     },
     {
-      name: "card should re-render when image size changes",
+      name: "card should re-render when low res size changes",
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
@@ -90,7 +89,27 @@ export default () => {
         expect(testInstance).toMatchSnapshot();
 
         testInstance.update(
-          <Card {...props} imageSize={null}>
+          <Card {...props} lowResSize={null}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when high res size changes",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} highResSize={null}>
             <Text>Some content</Text>
           </Card>
         );

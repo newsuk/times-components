@@ -6,28 +6,35 @@ exports[`card with reversed layout 1`] = `
   animation: eMLfYp 0.3s ease-in-out;
 }
 
+.c1 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
 <style>
 {
   "IS1": {
-    "display": "block",
-    "position": "absolute",
-    "width": "100%",
-    "zIndex": 1,
-  },
-  "IS2": {
     "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
-  "IS3": {
+  "IS2": {
     "flex": 1,
   },
-  "IS4": {
-    "bottom": "0px",
-    "left": "0px",
-    "position": "absolute",
-    "right": "0px",
-    "top": "0px",
-  },
-  "IS5": {
+  "IS3": {
     "bottom": 0,
     "left": 0,
     "position": "absolute",
@@ -35,7 +42,7 @@ exports[`card with reversed layout 1`] = `
     "top": 0,
     "zIndex": 0,
   },
-  "IS6": {
+  "IS4": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",
@@ -46,6 +53,20 @@ exports[`card with reversed layout 1`] = `
     "margin-bottom": "0px",
   },
   "S2": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+  "S3": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -62,7 +83,7 @@ exports[`card with reversed layout 1`] = `
     "margin-bottom": "10px",
     "min-width": "100%",
   },
-  "S3": {
+  "S4": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
@@ -75,20 +96,6 @@ exports[`card with reversed layout 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex": "1",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
-  "S4": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "min-width": "0px",
@@ -136,15 +143,15 @@ exports[`card with reversed layout 1`] = `
 }
 </style>
 
-<indexweb__FadeIn>
+<div
+  className="S6"
+>
   <div
-    className="c0 S4"
+    className="S3"
   >
-    <div
-      className="S6"
-    >
+    <indexweb__FadeIn>
       <div
-        className="S2"
+        className="c0 S2"
       >
         <div
           className="S1"
@@ -152,15 +159,18 @@ exports[`card with reversed layout 1`] = `
           A card in reverse
         </div>
       </div>
-      <div
-        className="S5"
-      >
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          uri="https://img.io/img&resize=360"
-        />
-      </div>
-    </div>
+    </indexweb__FadeIn>
   </div>
-</indexweb__FadeIn>
+  <div
+    className="S5"
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={600}
+      lowResSize={30}
+      uri="https://img.io/img"
+    />
+  </div>
+</div>
 `;

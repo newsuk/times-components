@@ -24,5 +24,8 @@ export default () => {
     )
   );
 
+  // eslint-disable-next-line global-require
+  require("jest-styled-components");
+
   shared(TestRenderer.create);
 };

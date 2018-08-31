@@ -114,8 +114,15 @@ export default () => {
           component
             .find("TimesImage")
             .at(0)
-            .props().uri
-        ).toEqual("https://lead1.io&resize=100");
+            .props().lowResSize
+        ).toEqual(100);
+
+        expect(
+          component
+            .find("TimesImage")
+            .at(0)
+            .props().highResSize
+        ).toEqual(null);
 
         const makeEntries = nodes =>
           [...nodes].map((node, indx) => ({
@@ -127,12 +134,21 @@ export default () => {
 
         await delay(100);
 
+        component.update();
+
         expect(
           component
             .find("TimesImage")
             .at(0)
-            .render()
-        ).toMatchSnapshot();
+            .props().lowResSize
+        ).toEqual(100);
+
+        expect(
+          component
+            .find("TimesImage")
+            .at(0)
+            .props().highResSize
+        ).toEqual(660);
       }
     },
     {
@@ -152,12 +168,14 @@ export default () => {
 
         await delay(100);
 
-        expect(
-          component
-            .find("TimesImage")
-            .at(1)
-            .render()
-        ).toMatchSnapshot();
+        const { highResSize, lowResSize } = component
+          .find("TimesImage")
+          .at(1)
+          .props();
+
+        expect(lowResSize).toEqual(100);
+
+        expect(highResSize).toEqual(null);
       }
     },
     {
@@ -173,13 +191,9 @@ export default () => {
           />
         );
 
-        // we have to force the render lifecycle that the lazy images rely on, in that first the nodes are registered
-        // and then when we render again after loading, we show the sized images
-        component.setProps({ isLoading: true });
-
-        component.setProps({ isLoading: false });
-
-        expect(component.find("TimesImage")).toMatchSnapshot();
+        component
+          .find("TimesImage")
+          .forEach(wrapper => expect(wrapper.props().highResSize).toEqual(660));
       }
     },
     {
@@ -197,6 +211,7 @@ export default () => {
             target: node,
             intersectionRatio: indx === 0 ? 0.75 : 0
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
         await delay(20);
@@ -206,6 +221,7 @@ export default () => {
             target: node,
             intersectionRatio: indx === 0 ? 0.25 : 0.75
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(
           1,
           makeNewEntries
@@ -213,7 +229,29 @@ export default () => {
 
         await delay(100);
 
-        expect(component.render().find("img")).toMatchSnapshot();
+        const isLowQuality = wrapper => {
+          const props = wrapper.props();
+
+          expect(props.lowResSize).toEqual(100);
+          expect(props.highResSize).toEqual(null);
+        };
+
+        const isHighQuality = wrapper => {
+          const props = wrapper.props();
+
+          expect(props.lowResSize).toEqual(100);
+          expect(props.highResSize).toEqual(660);
+        };
+
+        component.update();
+
+        component.find("TimesImage").forEach((wrapper, indx) => {
+          if (indx === 0) {
+            return isLowQuality(wrapper);
+          }
+
+          return isHighQuality(wrapper);
+        });
       }
     },
     {
@@ -222,7 +260,10 @@ export default () => {
         // eslint-disable-next-line prefer-destructuring
         const window = global.window;
         delete global.window;
-        const { imageSize } = shallow(<ArticleList {...articleListProps} />)
+
+        const { highResSize, lowResSize } = shallow(
+          <ArticleList {...articleListProps} />
+        )
           .dive()
           .dive()
           .find("ErrorView")
@@ -234,7 +275,8 @@ export default () => {
 
         global.window = window;
 
-        expect(imageSize).toEqual(100);
+        expect(lowResSize).toEqual(100);
+        expect(highResSize).toEqual(null);
       }
     },
     {
@@ -254,6 +296,7 @@ export default () => {
             target: node,
             intersectionRatio: 0.75
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
         await delay(20);
@@ -264,6 +307,7 @@ export default () => {
             target: node,
             intersectionRatio: 0
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(
           1,
           makeNewEntries
@@ -297,6 +341,7 @@ export default () => {
             target: node,
             intersectionRatio: indx === 0 ? 0.75 : 0
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
         await delay(20);
@@ -306,6 +351,7 @@ export default () => {
             target: node,
             intersectionRatio: indx === 0 ? 0.25 : 0.75
           }));
+
         window.IntersectionObserver.dispatchEntriesForInstance(
           1,
           makeNewEntries

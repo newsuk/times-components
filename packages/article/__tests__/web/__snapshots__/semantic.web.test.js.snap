@@ -171,7 +171,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     >
       <img
         alt=""
-        src="https://racrop169.io"
+        src="https://racrop169.io?resize=100"
       />
       RA LABEL
       <h3

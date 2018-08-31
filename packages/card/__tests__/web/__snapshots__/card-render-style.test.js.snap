@@ -1,33 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`card with default layout 1`] = `
-.c0 {
+.c2 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c0 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
 }
 
 <style>
 {
   "IS1": {
-    "display": "block",
-    "position": "absolute",
-    "width": "100%",
-    "zIndex": 1,
-  },
-  "IS2": {
     "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
-  "IS3": {
+  "IS2": {
     "flex": 1,
   },
-  "IS4": {
-    "bottom": "0px",
-    "left": "0px",
-    "position": "absolute",
-    "right": "0px",
-    "top": "0px",
-  },
-  "IS5": {
+  "IS3": {
     "bottom": 0,
     "left": 0,
     "position": "absolute",
@@ -35,7 +42,7 @@ exports[`card with default layout 1`] = `
     "top": 0,
     "zIndex": 0,
   },
-  "IS6": {
+  "IS4": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",
@@ -135,23 +142,26 @@ exports[`card with default layout 1`] = `
 }
 </style>
 
-<indexweb__FadeIn>
+<div
+  className="S6"
+>
   <div
-    className="c0 S2"
+    className="S3"
   >
-    <div
-      className="S6"
-    >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={100}
+      lowResSize={50}
+      uri="https://img.io/img"
+    />
+  </div>
+  <div
+    className="S5"
+  >
+    <indexweb__FadeIn>
       <div
-        className="S3"
-      >
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          uri="https://img.io/img&resize=360"
-        />
-      </div>
-      <div
-        className="S5"
+        className="c2 S2"
       >
         <div
           className="S4"
@@ -159,7 +169,7 @@ exports[`card with default layout 1`] = `
           A card
         </div>
       </div>
-    </div>
+    </indexweb__FadeIn>
   </div>
-</indexweb__FadeIn>
+</div>
 `;

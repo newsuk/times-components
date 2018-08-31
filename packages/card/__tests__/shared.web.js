@@ -19,11 +19,10 @@ import shared from "./shared.base";
 import Card from "../src/card";
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 800,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 50,
   showImage: true
 };
 
@@ -80,14 +79,14 @@ export default () => {
         expect(wrapper).toMatchSnapshot();
 
         wrapper.setProps({
-          image: { uri: "http://foo" }
+          imageUri: "http://foo"
         });
 
         expect(wrapper).toMatchSnapshot();
       }
     },
     {
-      name: "card should re-render when image size changes",
+      name: "card should re-render when low res size changes",
       test: () => {
         const wrapper = shallow(
           <Card {...props}>
@@ -98,7 +97,25 @@ export default () => {
         expect(wrapper).toMatchSnapshot();
 
         wrapper.setProps({
-          imageSize: null
+          lowResSize: null
+        });
+
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when high res size changes",
+      test: () => {
+        const wrapper = shallow(
+          <Card {...props}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(wrapper).toMatchSnapshot();
+
+        wrapper.setProps({
+          highResSize: null
         });
 
         expect(wrapper).toMatchSnapshot();

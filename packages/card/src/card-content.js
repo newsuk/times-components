@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Animations } from "@times-components/styleguide";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
@@ -7,10 +8,11 @@ import styles from "./styles";
 
 class CardContent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading } = this.props;
+    const { imageUri, lowResSize, highResSize, isLoading } = this.props;
     return (
-      (image && image.uri !== nextProps.image.uri) ||
-      imageSize !== nextProps.imageSize ||
+      imageUri !== nextProps.imageUri ||
+      lowResSize !== nextProps.lowResSize ||
+      highResSize !== nextProps.highResSize ||
       isLoading !== nextProps.isLoading
     );
   }
@@ -19,23 +21,20 @@ class CardContent extends Component {
     const {
       children,
       contentContainerClass,
+      fadeImageIn,
+      highResSize,
       imageContainerClass,
-      image,
       imageRatio,
-      imageSize,
       imageStyle,
+      imageUri,
       isLoading,
       isReversed,
+      lowResSize,
       showImage
     } = this.props;
 
     const renderImage = () => {
       if (!showImage) return null;
-
-      const imageUrl =
-        image && image.uri
-          ? `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`
-          : ``;
 
       return (
         <View
@@ -46,7 +45,13 @@ class CardContent extends Component {
             isReversed ? styles.reversedImageContainer : ""
           ]}
         >
-          <Image aspectRatio={imageRatio} uri={imageUrl} />
+          <Image
+            aspectRatio={imageRatio}
+            fadeImageIn={fadeImageIn}
+            highResSize={highResSize}
+            lowResSize={lowResSize}
+            uri={imageUri}
+          />
         </View>
       );
     };
@@ -67,7 +72,9 @@ class CardContent extends Component {
             isLoading ? styles.loadingContentContainer : ""
           ]}
         >
-          {isLoading ? <Loading /> : children}
+          <Animations.FadeIn>
+            {isLoading ? <Loading /> : children}
+          </Animations.FadeIn>
         </View>
         {isReversed ? renderImage() : null}
       </View>

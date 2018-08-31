@@ -31,7 +31,8 @@ export default () => {
     aspectRatio: 3 / 2,
     caption: "Test caption",
     credits: "Test credits",
-    uri: "http://example.com/image.jpg"
+    highResSize: 1440,
+    uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };
 
   const tests = [

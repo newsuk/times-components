@@ -56,16 +56,13 @@ exports[`4. loading state 1`] = `
   <View>
     <View>
       <Link
-        url=""
+        url={null}
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": null,
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri={null}
             isLoading={true}
             showImage={true}
           >
@@ -79,16 +76,13 @@ exports[`4. loading state 1`] = `
     </View>
     <View>
       <Link
-        url=""
+        url={null}
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": null,
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri={null}
             isLoading={true}
             showImage={true}
           >
@@ -102,16 +96,13 @@ exports[`4. loading state 1`] = `
     </View>
     <View>
       <Link
-        url=""
+        url={null}
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": null,
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri={null}
             isLoading={true}
             showImage={true}
           >

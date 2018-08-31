@@ -6,7 +6,8 @@ import Placeholder from "../src/placeholder";
 
 const props = {
   aspectRatio: 3 / 2,
-  uri: "http://example.com/image.jpg"
+  highResSize: 800,
+  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 
 export default (renderComponent, platformTests = []) => {
@@ -15,7 +16,11 @@ export default (renderComponent, platformTests = []) => {
       name: "default layout",
       test: () => {
         const output = renderComponent(
-          <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+          <Image
+            aspectRatio={3 / 2}
+            highResSize={1000}
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
         );
         expect(output).toMatchSnapshot();
       }

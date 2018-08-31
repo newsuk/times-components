@@ -18,13 +18,10 @@ exports[`1. no short headline 1`] = `
             url="https://test.io"
           >
             <Card
-              image={
-                Object {
-                  "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0",
-                }
-              }
               imageRatio={0.6135458167330677}
+              imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
               isReversed={true}
+              lowResSize={100}
               showImage={true}
             >
               <div>

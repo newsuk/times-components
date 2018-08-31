@@ -23,7 +23,10 @@ exports[`1. card default state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
     />
   </View>
   <View
@@ -35,9 +38,17 @@ exports[`1. card default state 1`] = `
       }
     }
   >
-    <Text>
-      A card
-    </Text>
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text>
+        A card
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -64,9 +75,17 @@ exports[`2. card with reversed state 1`] = `
       }
     }
   >
-    <Text>
-      A card in reverse
-    </Text>
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text>
+        A card in reverse
+      </Text>
+    </View>
   </View>
   <View
     style={
@@ -79,7 +98,10 @@ exports[`2. card with reversed state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
     />
   </View>
 </View>
@@ -108,7 +130,10 @@ exports[`3. card loading state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
     />
   </View>
   <View
@@ -121,44 +146,52 @@ exports[`3. card loading state 1`] = `
       }
     }
   >
-    <Gradient
-      degrees={264}
+    <View
       style={
         Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
+          "opacity": 1,
         }
       }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+    >
+      <Gradient
+        degrees={264}
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
         }
-      }
-    />
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -186,44 +219,52 @@ exports[`4. card reversed loading state 1`] = `
       }
     }
   >
-    <Gradient
-      degrees={264}
+    <View
       style={
         Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
+          "opacity": 1,
         }
       }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+    >
+      <Gradient
+        degrees={264}
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
         }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
         }
-      }
-    />
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      />
+    </View>
   </View>
   <View
     style={
@@ -236,7 +277,10 @@ exports[`4. card reversed loading state 1`] = `
   >
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
     />
   </View>
 </View>

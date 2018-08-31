@@ -4,6 +4,7 @@ import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
@@ -21,7 +22,11 @@ class ArticleList extends Component {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
     this.fetchMoreOnEndReached = this.fetchMoreOnEndReached.bind(this);
-    this.state = { loadMoreError: null, loadingMore: false };
+    this.state = {
+      loadMoreError: null,
+      loadingMore: false,
+      width: normaliseWidth(screenWidthInPixels())
+    };
   }
 
   componentWillUnmount() {
@@ -170,6 +175,7 @@ class ArticleList extends Component {
               hasError ? null : (
                 <ArticleListItem
                   {...item}
+                  highResSize={this.state.width}
                   imageRatio={imageRatio}
                   index={index}
                   length={data.length}

@@ -35,7 +35,7 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-  const { display, ratio, url } = imageOptions;
+  const { display, highResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
   if (display === "inline") {
@@ -62,7 +62,8 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
         aspectRatio={aspectRatio}
         caption={caption}
         credits={credits}
-        uri={url}
+        highResSize={highResSize}
+        uri={uri}
       />
     </View>,
     ...children

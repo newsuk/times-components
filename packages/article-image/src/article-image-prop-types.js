@@ -7,8 +7,9 @@ export const propTypes = {
   }),
   imageOptions: PropTypes.shape({
     display: PropTypes.oneOf(["primary", "secondary", "inline"]),
+    highResSize: PropTypes.number,
     ratio: PropTypes.string,
-    url: PropTypes.string.isRequired
+    uri: PropTypes.string.isRequired
   }).isRequired
 };
 

@@ -4,7 +4,7 @@ exports[`1. paidonly video for unpaid users 1`] = `
 <div>
   <Image
     aspectRatio={1.5}
-    uri="b9a31d3949b1882a09ed2f8508d538f3"
+    uri="fa3ca0da118e3184f45765fbc02fb72f"
   />
   <div>
     <div>
@@ -19,7 +19,7 @@ exports[`2. paidonly video for paid users 1`] = `
   <video
     controls={true}
     id="[video id]-[account id]-1"
-    poster="b9a31d3949b1882a09ed2f8508d538f3"
+    poster="fa3ca0da118e3184f45765fbc02fb72f"
   />
 </div>
 `;
@@ -29,7 +29,7 @@ exports[`3. non-paidonly video for unpaid users 1`] = `
   <video
     controls={true}
     id="[video id]-[account id]-2"
-    poster="b9a31d3949b1882a09ed2f8508d538f3"
+    poster="fa3ca0da118e3184f45765fbc02fb72f"
   />
 </div>
 `;
@@ -39,7 +39,7 @@ exports[`4. non-paidonly video for paid users 1`] = `
   <video
     controls={true}
     id="[video id]-[account id]-3"
-    poster="b9a31d3949b1882a09ed2f8508d538f3"
+    poster="fa3ca0da118e3184f45765fbc02fb72f"
   />
 </div>
 `;

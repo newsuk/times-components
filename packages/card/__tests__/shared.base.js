@@ -4,11 +4,10 @@ import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 360,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 50,
   showImage: true
 };
 
@@ -33,7 +32,7 @@ export default (renderMethod, platformTests) => {
       name: "pass an empty state to the image component",
       test: () => {
         const output = renderMethod(
-          <Card {...props} image={null}>
+          <Card {...props} imageUri={null}>
             <Text>A card with an empty image</Text>
           </Card>
         );
@@ -54,10 +53,10 @@ export default (renderMethod, platformTests) => {
       }
     },
     {
-      name: "pass an empty state to the image component when uri is null",
+      name: "pass an empty state to the image component when the uri is null",
       test: () => {
         const output = renderMethod(
-          <Card {...props} image={{ uri: null }}>
+          <Card {...props} imageUri={null}>
             <Text>No URI</Text>
           </Card>
         );

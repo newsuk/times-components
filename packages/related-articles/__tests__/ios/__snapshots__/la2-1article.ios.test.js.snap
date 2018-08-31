@@ -17,13 +17,10 @@ exports[`1. one lead related article 1`] = `
           url="https://test.io"
         >
           <Card
-            image={
-              Object {
-                "uri": "https://crop169.io",
-              }
-            }
             imageRatio={1.7777777777777777}
+            imageUri="https://crop169.io"
             isReversed={false}
+            lowResSize={100}
             showImage={true}
           >
             <View>

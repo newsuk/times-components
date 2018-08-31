@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. default layout 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
 <div>
   <div>
     <img
       alt=""
-      src="http://example.com/image.jpg"
+      src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
     <div>
       <Gradient
@@ -17,11 +27,21 @@ exports[`1. default layout 1`] = `
 `;
 
 exports[`2. default layout without uri 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
 <div>
   <div>
     <img
       alt=""
-      src=""
+      src={null}
     />
     <div>
       <Gradient
@@ -33,11 +53,21 @@ exports[`2. default layout without uri 1`] = `
 `;
 
 exports[`3. handle layout change 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
 <div>
   <div>
     <img
       alt=""
-      src="http://example.com/image.jpg"
+      src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
     <div>
       <Gradient

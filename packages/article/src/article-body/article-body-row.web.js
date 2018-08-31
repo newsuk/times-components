@@ -84,7 +84,7 @@ const ArticleRow = ({ content: { data, index } }) =>
               imageOptions={{
                 display,
                 ratio,
-                url
+                uri: url
               }}
             />
           </MediaWrapper>
