@@ -2,7 +2,89 @@
 
 exports[`article page 1`] = `
 <Article
+  article={null}
+  error={null}
   isLoading={true}
+  pageSection="News"
+/>
+`;
+
+exports[`simple article page 1`] = `
+<Article
+  adConfig={
+    Object {
+      "adUnit": "1234",
+      "bidderSlots": Array [],
+      "biddersConfig": Object {},
+      "networkId": "5678",
+      "pageTargeting": Object {
+        "Shared": "0",
+        "Timeline": "0",
+        "Timeline_Id": "News",
+        "aid": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "av": undefined,
+        "cips": undefined,
+        "cont_type": "art",
+        "cos": undefined,
+        "cov": undefined,
+        "cpn": undefined,
+        "did": undefined,
+        "edition": "tnl-english",
+        "eid": undefined,
+        "env": undefined,
+        "excl_cat": "",
+        "iam_tgt": undefined,
+        "kw": "Supplement,In,Depth,Template,Style",
+        "log": "0",
+        "path": "news",
+        "pform": undefined,
+        "pid": undefined,
+        "section": "News",
+        "share_token": "",
+        "st": "Member",
+        "testmode": undefined,
+        "vid": "",
+      },
+      "slotTargeting": Object {
+        "path": "/news",
+        "section": "News",
+        "slot": "news",
+        "zone": "current_edition",
+      },
+    }
+  }
+  article={
+    Object {
+      "__typename": "Article",
+      "byline": null,
+      "commentCount": 65,
+      "commentsEnabled": true,
+      "content": null,
+      "flags": null,
+      "headline": "Supplement In Depth Template (Style)",
+      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+      "keywords": Array [
+        "Supplement",
+        "In",
+        "Depth",
+        "Template",
+        "Style",
+      ],
+      "label": null,
+      "leadAsset": null,
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-13T18:54:58.000Z",
+      "relatedArticleSlice": null,
+      "section": "business",
+      "shortIdentifier": "37b27qd2s",
+      "slug": "france-defies-may-over-russia",
+      "standfirst": null,
+      "topics": null,
+      "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
+    }
+  }
+  error={null}
+  isLoading={false}
   pageSection="News"
 />
 `;
