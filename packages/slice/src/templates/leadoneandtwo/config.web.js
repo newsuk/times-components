@@ -86,6 +86,7 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       @media (min-width: ${breakpoints.wide}px) {
         .leadImageContainerClass {
+          padding-right: ${spacing(2)};
           min-width: auto;
         }
 
