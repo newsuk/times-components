@@ -1,6 +1,6 @@
 {
   "name": "@times-components/schema",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "fragment-matcher.js",
   "scripts": {
     "bundle": "cp fragment-matcher.js rnw.js",
