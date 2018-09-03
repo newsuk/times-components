@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetch gql schema should 1. make the correct introspection query 1`] = `
+Object {
+  "body": "{\\"query\\":\\"\\\\n    query IntrospectionQuery {\\\\n      __schema {\\\\n        queryType { name }\\\\n        mutationType { name }\\\\n        subscriptionType { name }\\\\n        types {\\\\n          ...FullType\\\\n        }\\\\n        directives {\\\\n          name\\\\n          description\\\\n          locations\\\\n          args {\\\\n            ...InputValue\\\\n          }\\\\n        }\\\\n      }\\\\n    }\\\\n\\\\n    fragment FullType on __Type {\\\\n      kind\\\\n      name\\\\n      description\\\\n      fields(includeDeprecated: true) {\\\\n        name\\\\n        description\\\\n        args {\\\\n          ...InputValue\\\\n        }\\\\n        type {\\\\n          ...TypeRef\\\\n        }\\\\n        isDeprecated\\\\n        deprecationReason\\\\n      }\\\\n      inputFields {\\\\n        ...InputValue\\\\n      }\\\\n      interfaces {\\\\n        ...TypeRef\\\\n      }\\\\n      enumValues(includeDeprecated: true) {\\\\n        name\\\\n        description\\\\n        isDeprecated\\\\n        deprecationReason\\\\n      }\\\\n      possibleTypes {\\\\n        ...TypeRef\\\\n      }\\\\n    }\\\\n\\\\n    fragment InputValue on __InputValue {\\\\n      name\\\\n      description\\\\n      type { ...TypeRef }\\\\n      defaultValue\\\\n    }\\\\n\\\\n    fragment TypeRef on __Type {\\\\n      kind\\\\n      name\\\\n      ofType {\\\\n        kind\\\\n        name\\\\n        ofType {\\\\n          kind\\\\n          name\\\\n          ofType {\\\\n            kind\\\\n            name\\\\n            ofType {\\\\n              kind\\\\n              name\\\\n              ofType {\\\\n                kind\\\\n                name\\\\n                ofType {\\\\n                  kind\\\\n                  name\\\\n                  ofType {\\\\n                    kind\\\\n                    name\\\\n                  }\\\\n                }\\\\n              }\\\\n            }\\\\n          }\\\\n        }\\\\n      }\\\\n    }\\\\n  \\"}",
+  "headers": Object {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`fetch gql schema should 2. write the expected fragment matcher 1`] = `
+"
+  const { IntrospectionFragmentMatcher } = require(\\"apollo-cache-inmemory\\");
+
+  const introspectionQueryResultData = {
+    __schema: {
+      types: [{\\"name\\":\\"leadAsset\\",\\"description\\":\\"\\",\\"args\\":[],\\"type\\":{\\"kind\\":\\"UNION\\",\\"name\\":\\"Media\\",\\"ofType\\":null},\\"isDeprecated\\":false,\\"deprecationReason\\":null},{\\"kind\\":\\"UNION\\",\\"name\\":\\"Media\\",\\"description\\":\\"\\",\\"fields\\":null,\\"inputFields\\":null,\\"interfaces\\":null,\\"enumValues\\":null,\\"possibleTypes\\":[{\\"kind\\":\\"OBJECT\\",\\"name\\":\\"Image\\",\\"ofType\\":null},{\\"kind\\":\\"OBJECT\\",\\"name\\":\\"Video\\",\\"ofType\\":null}]}]
+    }
+  };
+
+  const fragmentMatcher = new IntrospectionFragmentMatcher({
+    introspectionQueryResultData
+  });
+
+  module.exports.fragmentMatcher = fragmentMatcher;
+  "
+`;

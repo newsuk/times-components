@@ -1,11 +1,14 @@
 /* eslint-disable no-console */
 
 const { introspectionQuery } = require("graphql");
-const fetch = require("node-fetch");
 const fs = require("fs");
+const { promisify } = require("util");
+const path = require("path");
 
-const fetchIntrospection = () =>
-  fetch(process.env.GRAPHQL_ENDPOINT || "http://localhost:4000/graphql", {
+const writeFile = promisify(fs.writeFile);
+
+const fetchIntrospection = async (fetch, endpoint) => {
+  const fetchResult = await fetch(endpoint, {
     method: "POST",
     body: JSON.stringify({
       query: introspectionQuery
@@ -15,16 +18,13 @@ const fetchIntrospection = () =>
     }
   });
 
-const writeSchemaToDist = fetchResult =>
-  new Promise(res =>
-    fetchResult
-      .json()
-      .then(schema =>
-        fs.writeFile("schema.json", JSON.stringify(schema), () => res(schema))
-      )
-  );
+  return fetchResult.json();
+};
 
-const writeFragmentMatcher = schema => {
+const writeSchema = async (cwd, schema) =>
+  writeFile(path.join(cwd, "schema.json"), JSON.stringify(schema));
+
+const writeFragmentMatcher = (cwd, schema) => {
   // eslint-disable-next-line no-underscore-dangle
   const filteredTypes = schema.data.__schema.types.filter(
     ({ possibleTypes }) => possibleTypes !== null
@@ -46,10 +46,14 @@ const writeFragmentMatcher = schema => {
   module.exports.fragmentMatcher = fragmentMatcher;
   `;
 
-  return new Promise(res => fs.writeFile("fragment-matcher.js", fm, res));
+  return writeFile(path.join(cwd, "fragment-matcher.js"), fm);
 };
 
-fetchIntrospection()
-  .then(fetchResult => writeSchemaToDist(fetchResult))
-  .then(schema => writeFragmentMatcher(schema))
-  .catch(e => console.error(e));
+module.exports = async (cwd, fetch, endpoint) => {
+  const schema = await fetchIntrospection(fetch, endpoint);
+
+  return Promise.all([
+    writeSchema(cwd, schema),
+    writeFragmentMatcher(cwd, schema)
+  ]);
+};
