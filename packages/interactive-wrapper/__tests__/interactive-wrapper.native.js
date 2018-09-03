@@ -41,7 +41,7 @@ export default () => {
 
   it("Console errors when message object is incorrect", () => {
     const component = new InteractiveWrapper();
-    component.onMessage();
+    component.onMessage({ nativeEvent: { error: "Nonsense" } });
     expect(console.error).toHaveBeenCalled(); // eslint-disable-line no-console
   });
 

@@ -34,15 +34,18 @@ class InteractiveWrapper extends Component {
       this
     );
     this.onLoadEnd = this.onLoadEnd.bind(this);
-    this.webview = React.createRef();
   }
 
   onMessage(e) {
-    if (e && e.nativeEvent && e.nativeEvent.data) {
+    if (
+      (e && e.nativeEvent && e.nativeEvent.data) ||
+      e.nativeEvent.data === "0"
+    ) {
       const height = Number(e.nativeEvent.data);
       this.setState({ height });
+    } else {
+      console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
     }
-    console.error("Invalid height received"); // eslint-disable-line no-console
   }
 
   onLoadEnd() {
@@ -68,7 +71,9 @@ class InteractiveWrapper extends Component {
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
           onNavigationStateChange={this.handleNavigationStateChange}
-          ref={this.webview}
+          ref={webview => {
+            this.webview = webview;
+          }}
           source={{
             uri: `https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/${
               this.props.id
