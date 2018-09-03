@@ -5,9 +5,10 @@
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
   "scripts": {
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,identity-obj-proxy,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff && depcheck && jest-lint",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
