@@ -19,7 +19,7 @@ const css = `
   border-color: white;
 }
 
-.video-js .vjs-big-play-button:before, .video-js .vjs-icon-placeholder:before {
+.video-js .vjs-big-play-button:before {
   font-size: 60px;
   left: -2px;
 }
