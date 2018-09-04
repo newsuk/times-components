@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.32"></a>
+## [3.1.32](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.31...@times-components/video@3.1.32) (2018-09-04)
+
+
+### Bug Fixes
+
+* brightcove video controls ([#1293](https://github.com/newsuk/times-components/issues/1293)) ([b3c8d72](https://github.com/newsuk/times-components/commit/b3c8d72))
+
+
+
+
+
 <a name="3.1.31"></a>
 ## [3.1.31](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.30...@times-components/video@3.1.31) (2018-09-04)
 
