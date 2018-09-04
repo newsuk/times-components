@@ -5,7 +5,7 @@ const { ApolloProvider } = require("react-apollo");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
 
-module.exports = (client, slug) =>
+module.exports = (client, slug, page) =>
   React.createElement(
     ApolloProvider,
     { client },
@@ -24,7 +24,7 @@ module.exports = (client, slug) =>
           error,
           onTwitterLinkPress: () => {},
           onArticlePress: () => {},
-          page: 1,
+          page,
           refetch,
           slug
         })

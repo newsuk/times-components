@@ -7,3 +7,15 @@ exports[`1. inner component with page 1`] = `
 }
 </div>
 `;
+
+exports[`does not update the page state when the history changes without a page 1`] = `
+<div>
+  2
+</div>
+`;
+
+exports[`updates the page state when the history changes 1`] = `
+<div>
+  4
+</div>
+`;

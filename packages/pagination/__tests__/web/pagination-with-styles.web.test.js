@@ -44,12 +44,15 @@ addSerializers(
 // eslint-disable-next-line global-require
 require("jest-styled-components");
 
+const mockGenerateLink = page => `?mock-${page}`;
+
 const tests = [
   {
     name: "renders",
     test: () => {
       const props = {
         count: 21,
+        generatePageLink: mockGenerateLink,
         page: 2,
         pageSize: 3
       };
@@ -64,6 +67,7 @@ const tests = [
     test: () => {
       const props = {
         count: 0,
+        generatePageLink: mockGenerateLink,
         hideResults: true,
         page: 0,
         pageSize: 0

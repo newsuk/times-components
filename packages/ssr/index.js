@@ -26,6 +26,7 @@ const makeClient = () =>
 const makeHtml = (
   client,
   identifier,
+  page,
   { bundleName, html, rnwStyles, scStyles, title }
 ) => `
         <!DOCTYPE html>
@@ -35,7 +36,7 @@ const makeHtml = (
             ${rnwStyles}
             ${scStyles}
             <script>
-            window.nuk = { identifier: "${identifier}" };
+            window.nuk = { identifier: "${identifier}", page: ${page} };
             window.__APOLLO_STATE__=${JSON.stringify(client.extract()).replace(
               /</g,
               "\\\u003c"
@@ -50,14 +51,25 @@ const makeHtml = (
         </html>
       `;
 
+const toNumber = s => {
+  const parsed = Number.parseInt(s, 10);
+
+  if (Number.isNaN(parsed)) {
+    return null;
+  }
+
+  return parsed;
+};
+
 server.get("/profile/:slug", (req, res) => {
-  const { params: { slug } } = req;
+  const { params: { slug }, query: { page } } = req;
+  const pageNum = toNumber(page) || 1;
   const client = makeClient();
-  const App = authorProfile(client, slug);
+  const App = authorProfile(client, slug, pageNum);
 
   getData(App).then(props =>
     res.send(
-      makeHtml(client, slug, {
+      makeHtml(client, slug, pageNum, {
         ...props,
         bundleName: "author-profile",
         title: slug
@@ -67,13 +79,14 @@ server.get("/profile/:slug", (req, res) => {
 });
 
 server.get("/topic/:slug", (req, res) => {
-  const { params: { slug } } = req;
+  const { params: { slug }, query: { page } } = req;
+  const pageNum = toNumber(page) || 1;
   const client = makeClient();
-  const App = topic(client, slug);
+  const App = topic(client, slug, pageNum);
 
   getData(App).then(props =>
     res.send(
-      makeHtml(client, slug, {
+      makeHtml(client, slug, pageNum, {
         ...props,
         bundleName: "topic",
         title: slug

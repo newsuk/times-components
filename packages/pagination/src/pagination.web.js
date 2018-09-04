@@ -74,7 +74,7 @@ const Pagination = ({
 
 Pagination.propTypes = {
   count: PropTypes.number,
-  generatePageLink: PropTypes.func,
+  generatePageLink: PropTypes.func.isRequired,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
@@ -84,7 +84,6 @@ Pagination.propTypes = {
 
 Pagination.defaultProps = {
   count: 0,
-  generatePageLink: page => `./${page}`,
   onNext: () => {},
   onPrev: () => {},
   page: 1,

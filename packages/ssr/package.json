@@ -7,9 +7,9 @@
     "bundle:dev": "webpack --config=webpack.config.dev.js",
     "bundle:prod": "NODE_ENV=production webpack --config=webpack.config.prod.js -p",
     "bundle:profile": "webpack --config=webpack.config.prod.js --profile --json > dist/stats.json",
-    "depcheck": "depcheck --ignores='eslint,prettier,webpack*' --skip-missing",
+    "depcheck": "depcheck --ignores='depcheck,eslint,prettier,webpack*' --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "start": "node index.js"
   },
@@ -32,6 +32,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.0",
+    "depcheck": "0.6.9",
     "eslint": "4.9.0",
     "prettier": "1.8.2",
     "webpack": "4.6.0",

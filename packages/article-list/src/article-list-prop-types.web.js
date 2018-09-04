@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
-import Pagination from "@times-components/pagination";
 import {
   propTypes as basePropTypes,
   defaultProps
 } from "./article-list-prop-types-base";
 
 export const propTypes = {
-  adConfig: PropTypes.shape({}).isRequired,
   ...basePropTypes,
-  ...Pagination.propTypes
+  adConfig: PropTypes.shape({}).isRequired,
+  count: PropTypes.number,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
+  page: PropTypes.number,
+  pageSize: PropTypes.number
 };
 
 export { defaultProps };
