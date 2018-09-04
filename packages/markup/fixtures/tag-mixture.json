@@ -15,7 +15,7 @@
             {
               "name": "text",
               "attributes": {
-                "value": "some link here"
+                "value": "some link here (link)"
               },
               "children": []
             }
@@ -34,7 +34,7 @@
             {
               "name": "text",
               "attributes": {
-                "value": "some text here"
+                "value": "some text here (bold)"
               },
               "children": []
             }
@@ -53,7 +53,7 @@
             {
               "name": "text",
               "attributes": {
-                "value": " some text there"
+                "value": "some text there (strong)"
               },
               "children": []
             }
@@ -72,7 +72,7 @@
             {
               "name": "text",
               "attributes": {
-                "value": " some more text here"
+                "value": "some more text here (italic)"
               },
               "children": []
             }
@@ -85,13 +85,13 @@
       "attributes": {},
       "children": [
         {
-          "name": "strong",
+          "name": "emphasis",
           "attributes": {},
           "children": [
             {
               "name": "text",
               "attributes": {
-                "value": " some more text there"
+                "value": "some more text there (emphasis)"
               },
               "children": []
             }
@@ -110,7 +110,7 @@
             {
               "name": "text",
               "attributes": {
-                "value": "some other text here"
+                "value": "some other text here (inline)"
               },
               "children": []
             }
