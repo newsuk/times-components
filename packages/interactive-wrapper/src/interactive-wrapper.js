@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Linking, Platform, View, WebView } from "react-native";
 import PropTypes from "prop-types";
 
+const editorialLambdaUrl =
+  "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component";
+
 class InteractiveWrapper extends Component {
   static postMessageBugWorkaround() {
     return Platform.select({
@@ -75,9 +78,7 @@ class InteractiveWrapper extends Component {
             this.webview = webview;
           }}
           source={{
-            uri: `https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/${
-              this.props.id
-            }`
+            uri: `${editorialLambdaUrl}/${this.props.id}`
           }}
           style={{ height: this.state.height }}
           {...InteractiveWrapper.postMessageBugWorkaround()}

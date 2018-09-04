@@ -273,15 +273,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": "100%",
-          }
-        }
-      >
+      <View>
         <Video />
         <View>
           <View
@@ -623,19 +615,7 @@ exports[`5. an article with ads 1`] = `
       </View>
     </View>
     <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingBottom": 10,
-            "paddingTop": 10,
-          }
-        }
-      />
+      <Ad />
     </View>
     <View />
     <View>

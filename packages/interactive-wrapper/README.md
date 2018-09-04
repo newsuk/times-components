@@ -45,4 +45,4 @@ yarn test:all
 
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Interactive=chapterHeading&knob-Interactive%20Wrapper=chapterHeading&selectedKind=Primitives%2FInteractive%20Wrapper&selectedStory=Interactive%20Wrapper&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
-to see our available image templates.
+to see our available interactives.
