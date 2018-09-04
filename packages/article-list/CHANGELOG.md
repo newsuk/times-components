@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@4.1.22...@times-components/article-list@4.2.0) (2018-09-04)
+
+
+### Features
+
+* add ss paging ([#1286](https://github.com/newsuk/times-components/issues/1286)) ([c2d14cc](https://github.com/newsuk/times-components/commit/c2d14cc))
+
+
+
+
+
 <a name="4.1.22"></a>
 ## [4.1.22](https://github.com/newsuk/times-components/compare/@times-components/article-list@4.1.21...@times-components/article-list@4.1.22) (2018-09-04)
 
