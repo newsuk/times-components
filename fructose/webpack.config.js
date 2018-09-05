@@ -1,5 +1,4 @@
 /* eslint-disable global-require */
-const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -11,15 +10,8 @@ module.exports = {
       "react-native": "react-native-web",
       "@storybook/react-native": "@storybook/react"
     },
-    extensions: [".web.js", ".js", ".ios.js", ".android.js"],
-    mainFields: ["module", "main"],
-    plugins: [
-      // Use the DLL in development.
-      new webpack.DllReferencePlugin({
-        context: __dirname,
-        manifest: require("../dist/public/vendor-manifest.json") // eslint-disable-line import/no-unresolved
-      })
-    ]
+    extensions: [".web.js", ".js"],
+    mainFields: ["module", "main"]
   },
   node: {
     fs: "empty",
