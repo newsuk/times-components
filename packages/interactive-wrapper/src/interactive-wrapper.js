@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Linking, Platform, View, WebView } from "react-native";
 import PropTypes from "prop-types";
 
-const editorialLambdaUrl =
-  "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component";
+const editorialLambdaProtocol = "https://";
+const editorialLambdaOrigin = "cwfiyvo20d.execute-api.eu-west-1.amazonaws.com";
+const editorialLambdaSlug = "dev/component";
 
 class InteractiveWrapper extends Component {
   static postMessageBugWorkaround() {
@@ -59,7 +60,7 @@ class InteractiveWrapper extends Component {
     if (
       !data.url.includes("data:text/html") &&
       data.url.includes("http") &&
-      !data.url.includes("cwfiyvo20d.execute-api.eu-west-1.amazonaws.com")
+      !data.url.includes(editorialLambdaOrigin)
     ) {
       // Need to handle native routing when something is clicked.
       InteractiveWrapper.openURLInBrowser(data.url);
@@ -78,7 +79,9 @@ class InteractiveWrapper extends Component {
             this.webview = webview;
           }}
           source={{
-            uri: `${editorialLambdaUrl}/${this.props.id}`
+            uri: `${editorialLambdaProtocol}${editorialLambdaOrigin}/${
+              editorialLambdaSlug
+            }/${this.props.id}`
           }}
           style={{ height: this.state.height }}
           {...InteractiveWrapper.postMessageBugWorkaround()}
