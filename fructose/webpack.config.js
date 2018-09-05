@@ -11,7 +11,7 @@ module.exports = {
       "@storybook/react-native": "@storybook/react"
     },
     extensions: [".web.js", ".js"],
-    mainFields: ["module", "main"],
+    mainFields: ["module", "main"]
   },
   node: {
     fs: "empty",
