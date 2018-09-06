@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.5"></a>
+## [1.3.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.3.4...@times-components/provider-test-tools@1.3.5) (2018-09-06)
+
+
+### Bug Fixes
+
+* dont display author profile head image placeholder when no author image ([#1298](https://github.com/newsuk/times-components/issues/1298)) ([d68d6ed](https://github.com/newsuk/times-components/commit/d68d6ed))
+
+
+
+
+
 <a name="1.3.4"></a>
 ## [1.3.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.3.3...@times-components/provider-test-tools@1.3.4) (2018-09-04)
 
