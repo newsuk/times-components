@@ -18,9 +18,7 @@ exports[`1. default layout 1`] = `
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
     <div>
-      <Gradient
-        degrees={264}
-      />
+      <div />
     </div>
   </div>
 </div>
@@ -44,9 +42,7 @@ exports[`2. default layout without uri 1`] = `
       src={null}
     />
     <div>
-      <Gradient
-        degrees={264}
-      />
+      <div />
     </div>
   </div>
 </div>
@@ -70,30 +66,100 @@ exports[`3. handle layout change 1`] = `
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
     <div>
-      <Gradient
-        degrees={264}
-      >
+      <div>
         <div>
-          <Svg
+          <svg
             height={164.46700507614213}
             version="1.1"
             viewBox="145 50 108 120"
             width={164.46700507614213}
           >
-            <G
+            <g
               fill="none"
               fillRule="evenodd"
               stroke="none"
               strokeWidth="1"
             >
-              <Path
+              <path
                 d="6a6c07166e9c40e4f62e57af2b507822"
                 fill="#FFFFFF"
               />
-            </G>
-          </Svg>
+            </g>
+          </svg>
         </div>
-      </Gradient>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. an invalid uri 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+<div>
+  <div>
+    <img
+      alt=""
+      src="not-valid"
+    />
+    <div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`5. no url in environment 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+<div>
+  <div>
+    <img
+      alt=""
+      src="not-valid&resize=1400"
+    />
+    <div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. with existing url params 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+<div>
+  <div>
+    <img
+      alt=""
+      src="https://image.io?resize=1400"
+    />
+    <div>
+      <div />
     </div>
   </div>
 </div>
