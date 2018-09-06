@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": 0,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTWebView
+      javaScriptEnabled={true}
+      messagingEnabled={true}
+      onLoadingError={[Function]}
+      onLoadingFinish={[Function]}
+      onLoadingStart={[Function]}
+      onMessage={[Function]}
+      saveFormDataDisabled={false}
+      scalesPageToFit={true}
+      source={
+        Object {
+          "uri": "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/a0534eee-682e-4955-8e1e-84b428ef1e79",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "height": 0,
+          },
+        ]
+      }
+      thirdPartyCookiesEnabled={true}
+    />
+  </View>
+</View>
+`;

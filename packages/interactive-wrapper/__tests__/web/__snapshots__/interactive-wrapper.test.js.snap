@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <link
+    href="//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
+    rel="import"
+  />,
+  <chapter-header
+    chaptercounter="Chapter%20one"
+    heading="Xxxx%20xxxxxx%20xxxx%20xxxxx%20"
+    standfirst="Xxxx%20xxxxxx%20xxxx%20xxxxx%20xxxxxxxx%20xxxxxx%20xxxx%20xx%20xxxxxxxx"
+  />,
+]
+`;

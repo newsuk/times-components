@@ -237,6 +237,20 @@ export const longContent = [
     ]
   },
   {
+    name: "interactive",
+    attributes: {
+      id: "d2f83305-d558-4f78-f582-32115c659355",
+      display: "secondary",
+      metadata: {
+        value: "times-datawrapper",
+        attributes: { "chart-id": "csmgb" }
+      },
+      url:
+        "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+    },
+    children: []
+  },
+  {
     name: "paragraph",
     attributes: {},
     children: [
@@ -1035,6 +1049,20 @@ const defaultContent = [
         children: []
       }
     ]
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "d2f83305-d558-4f78-f582-32115c659355",
+      display: "secondary",
+      metadata: {
+        value: "times-datawrapper",
+        attributes: { "chart-id": "csmgb" }
+      },
+      url:
+        "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+    },
+    children: []
   },
   {
     name: "paragraph",

@@ -26,6 +26,25 @@ const sharedStyles = scale => {
       }),
       marginBottom: spacing(5),
       marginTop: 0
+    },
+    ad: {
+      borderTopColor: colours.functional.keyline,
+      borderBottomColor: colours.functional.keyline,
+      borderTopWidth: 1,
+      borderBottomWidth: 1,
+      paddingTop: spacing(2),
+      paddingBottom: spacing(2),
+      marginBottom: spacing(4)
+    },
+    interactiveContainer: {
+      paddingRight: spacing(2),
+      paddingLeft: spacing(2),
+      marginBottom: spacing(4)
+    },
+    primaryContainer: {
+      width: "100%",
+      flexDirection: "column",
+      paddingBottom: spacing(5)
     }
   };
 };

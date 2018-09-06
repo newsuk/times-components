@@ -1,35 +1,18 @@
 import React from "react";
-import { Dimensions, StyleSheet, View } from "react-native";
+import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import Ad from "@times-components/ad";
+import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-
-const primaryContainer = {
-  width: "100%",
-  flexDirection: "column",
-  paddingBottom: spacing(5)
-};
-
-const styles = StyleSheet.create({
-  ad: {
-    borderTopColor: colours.functional.keyline,
-    borderBottomColor: colours.functional.keyline,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    paddingTop: spacing(2),
-    paddingBottom: spacing(2),
-    marginBottom: spacing(4)
-  }
-});
+import styles from "../styles/article-body";
 
 const ArticleRow = ({
   content: { data, index },
@@ -139,7 +122,7 @@ const ArticleRow = ({
 
       return {
         element: (
-          <View key={key} style={primaryContainer}>
+          <View key={key} style={styles.primaryContainer}>
             <Video
               accountId={brightcoveAccountId}
               height={height}
@@ -150,6 +133,15 @@ const ArticleRow = ({
               width={width}
             />
             <InsetCaption caption={caption} />
+          </View>
+        )
+      };
+    },
+    interactive(key, { id }) {
+      return {
+        element: (
+          <View key={key} style={styles.interactiveContainer}>
+            <InteractiveWrapper id={id} />
           </View>
         )
       };
