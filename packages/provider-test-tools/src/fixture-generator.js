@@ -132,6 +132,7 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
 
   return {
     ...authorProfileFixture.data.author,
+    image: "",
     hasLeadAssets: false,
     articles: {
       count,
