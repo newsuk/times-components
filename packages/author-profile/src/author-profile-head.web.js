@@ -28,11 +28,14 @@ const AuthorProfileHead = ({
     );
   };
 
-  const image = (
-    <ImageContainer>
-      <AuthorProfileHeadImage uri={uri} />
-    </ImageContainer>
-  );
+  const renderImage = () => {
+    if (!uri) return null;
+    return (
+      <ImageContainer>
+        <AuthorProfileHeadImage uri={uri} />
+      </ImageContainer>
+    );
+  };
 
   const renderName = () => {
     if (!name) return null;
@@ -53,10 +56,10 @@ const AuthorProfileHead = ({
       style={styles.authorHeadContainer}
     >
       <AuthorProfileHeadBaseWithTracking
-        image={image}
         isLoading={isLoading}
         jobTitle={jobTitle}
         renderBiography={renderBiography}
+        renderImage={renderImage}
         renderName={renderName}
         twitter={twitter}
       />

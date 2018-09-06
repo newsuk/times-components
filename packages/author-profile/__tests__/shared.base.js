@@ -54,7 +54,7 @@ export default (props, platformTests = []) => {
         const testInstance = TestRenderer.create(
           <AuthorProfile
             {...props}
-            author={{ ...props.author, hasLeadAssets: false }}
+            author={{ ...props.author, hasLeadAssets: false, image: "" }}
             isLoading={false}
             pageSize={12}
           />

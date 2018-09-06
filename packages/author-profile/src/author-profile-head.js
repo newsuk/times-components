@@ -24,7 +24,10 @@ const AuthorProfileHead = ({
     );
   };
 
-  const image = <AuthorProfileHeadImage uri={uri} />;
+  const renderImage = () => {
+    if (!uri) return null;
+    return <AuthorProfileHeadImage uri={uri} />;
+  };
 
   const renderName = () => {
     if (!name) return null;
@@ -45,11 +48,11 @@ const AuthorProfileHead = ({
       style={[styles.authorHeadContainer, styles.authorHeadContainerNative]}
     >
       <AuthorProfileHeadBaseWithTracking
-        image={image}
         isLoading={isLoading}
         jobTitle={jobTitle}
         onTwitterLinkPress={onTwitterLinkPress}
         renderBiography={renderBiography}
+        renderImage={renderImage}
         renderName={renderName}
         twitter={twitter}
       />

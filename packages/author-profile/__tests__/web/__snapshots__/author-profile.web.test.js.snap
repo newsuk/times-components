@@ -97,7 +97,7 @@ exports[`4. an article list without images 1`] = `
         jobTitle="Job Title"
         name="Name"
         twitter="twitter"
-        uri="https://image.io"
+        uri=""
       />
     }
     articles={
@@ -307,12 +307,6 @@ exports[`10. an article list header only changes on loading state change 2`] = `
 >
   <div>
     <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri=""
-        />
-      </div>
       <h2
         aria-level="2"
         role="heading"
@@ -330,12 +324,6 @@ exports[`10. an article list header only changes on loading state change 3`] = `
 >
   <div>
     <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri=""
-        />
-      </div>
       <h2
         aria-level="2"
         role="heading"
