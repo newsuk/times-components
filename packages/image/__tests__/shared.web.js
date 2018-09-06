@@ -71,6 +71,29 @@ export default () => {
 
         expect(testRenderer).toMatchSnapshot();
       }
+    },
+    {
+      name: "remove the low res image after the high res image has transitioned in",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={3 / 2}
+            highResSize={1400}
+            lowResSize={200}
+            uri="https://image.io"
+          />
+        );
+
+        const [highResImage] = testRenderer.root.findAllByType("img");
+
+        highResImage.props.onLoad();
+
+        expect(testRenderer).toMatchSnapshot();
+
+        highResImage.props.onTransitionEnd();
+
+        expect(testRenderer).toMatchSnapshot();
+      }
     }
   ];
 
