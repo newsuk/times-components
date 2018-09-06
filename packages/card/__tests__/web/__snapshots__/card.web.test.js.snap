@@ -254,26 +254,287 @@ exports[`10. card with reversed loading state with no image 1`] = `
 </indexweb__FadeIn>
 `;
 
-exports[`11. card should not re-render when imageratio prop is changed 1`] = `"Do not re-render me"`;
-
-exports[`11. card should not re-render when imageratio prop is changed 2`] = `"Do not re-render me"`;
-
-exports[`12. card should re-render when image uri changes 1`] = `"Some text"`;
-
-exports[`12. card should re-render when image uri changes 2`] = `"Some text"`;
-
-exports[`13. card should re-render when low res size changes 1`] = `"Some content"`;
-
-exports[`13. card should re-render when low res size changes 2`] = `"Some content"`;
-
-exports[`14. card should re-render when high res size changes 1`] = `"Some content"`;
-
-exports[`14. card should re-render when high res size changes 2`] = `"Some content"`;
-
-exports[`15. card should re-render when loading state changes 1`] = `
-<indexweb__FadeIn>
-  Re-render me
-</indexweb__FadeIn>
+exports[`11. card should not re-render when imageratio prop is changed 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Do not re-render me
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`15. card should re-render when loading state changes 2`] = `"Re-render me"`;
+exports[`11. card should not re-render when imageratio prop is changed 2`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Do not re-render me
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`12. card should re-render when image uri changes 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`12. card should re-render when image uri changes 2`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="http://foo?resize=360"
+        />
+        <img
+          alt=""
+          src="http://foo?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`13. card should re-render when low res size changes 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`13. card should re-render when low res size changes 2`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`14. card should re-render when high res size changes 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`14. card should re-render when high res size changes 2`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Some content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`15. card should re-render when loading state changes 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <img
+            alt=""
+            src="https://img.io/img?resize=360"
+          />
+          <img
+            alt=""
+            src="https://img.io/img?resize=50"
+          />
+          <div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`15. card should re-render when loading state changes 2`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://img.io/img?resize=360"
+        />
+        <img
+          alt=""
+          src="https://img.io/img?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        Re-render me
+      </div>
+    </div>
+  </div>
+</div>
+`;

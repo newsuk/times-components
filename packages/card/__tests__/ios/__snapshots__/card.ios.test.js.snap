@@ -224,8 +224,8 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -245,8 +245,8 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -266,8 +266,8 @@ exports[`12. card should re-render when image uri changes 1`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -287,8 +287,8 @@ exports[`12. card should re-render when image uri changes 2`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="http://foo"
     />
   </View>
@@ -308,8 +308,8 @@ exports[`13. card should re-render when low res size changes 1`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -329,7 +329,7 @@ exports[`13. card should re-render when low res size changes 2`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
+      highResSize={360}
       lowResSize={null}
       uri="https://img.io/img"
     />
@@ -350,8 +350,8 @@ exports[`14. card should re-render when high res size changes 1`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -372,7 +372,7 @@ exports[`14. card should re-render when high res size changes 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={null}
-      lowResSize={100}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
@@ -393,8 +393,8 @@ exports[`15. card should re-render when loading state changes 1`] = `
       <Image
         aspectRatio={0.6666666666666666}
         fadeImageIn={false}
-        highResSize={600}
-        lowResSize={100}
+        highResSize={360}
+        lowResSize={50}
         uri="https://img.io/img"
       />
     </View>
@@ -424,8 +424,8 @@ exports[`15. card should re-render when loading state changes 2`] = `
     <Image
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
-      highResSize={600}
-      lowResSize={100}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
