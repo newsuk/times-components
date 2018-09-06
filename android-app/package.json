@@ -11,6 +11,7 @@
     "start": "haul start --platform android",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
+    "publish-library": "./publish.sh",
     "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
