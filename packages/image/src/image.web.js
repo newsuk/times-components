@@ -28,20 +28,12 @@ class TimesImage extends Component {
   }
 
   handleHighResOnLoad() {
-    if (this.state.highResIsLoaded) {
-      return;
-    }
-
     this.setState({
       highResIsLoaded: true
     });
   }
 
   handleLowResOnLoad() {
-    if (this.state.lowResIsLoaded) {
-      return;
-    }
-
     this.setState({
       lowResIsLoaded: true
     });

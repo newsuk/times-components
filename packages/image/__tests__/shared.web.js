@@ -105,6 +105,27 @@ export default () => {
 
         expect(testRenderer).toMatchSnapshot();
       }
+    },
+    {
+      name: "fade in the low res image",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={3 / 2}
+            fadeImageIn
+            lowResSize={200}
+            uri="https://image.io"
+          />
+        );
+
+        const lowResImage = testRenderer.root.findByType("img");
+
+        expect(testRenderer).toMatchSnapshot();
+
+        lowResImage.props.onLoad();
+
+        expect(testRenderer).toMatchSnapshot();
+      }
     }
   ];
 
