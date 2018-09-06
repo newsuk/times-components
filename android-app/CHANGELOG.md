@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.7.38...@times-components/android-app@0.8.0) (2018-09-06)
+
+
+### Features
+
+* add android build and publish scripts to root ([#1296](https://github.com/newsuk/times-components/issues/1296)) ([8217b31](https://github.com/newsuk/times-components/commit/8217b31))
+
+
+
+
+
 <a name="0.7.38"></a>
 ## [0.7.38](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.7.37...@times-components/android-app@0.7.38) (2018-09-06)
 
