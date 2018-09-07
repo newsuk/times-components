@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
-import { defaultProps, propTypes } from "./key-facts-prop-types";
+import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import styles from "./styles";
 
 const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
