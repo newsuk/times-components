@@ -26,6 +26,7 @@ const getProps = decorateAction => ({
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
+  refetch: preventDefaultedAction(decorateAction)("refetch"),
   slug
 });
 
@@ -43,11 +44,12 @@ export default {
       component: (_, { decorateAction }) => (
         <MockedProvider mocks={mocks}>
           <TopicProvider debounceTimeMs={0} slug={slug}>
-            {({ topic, error, isLoading }) => (
+            {({ topic, error, isLoading, refetch }) => (
               <Topic
                 {...getProps(decorateAction)}
                 error={error}
                 isLoading={isLoading}
+                refetch={refetch}
                 topic={topic}
               />
             )}
@@ -72,11 +74,12 @@ export default {
           mocks={fixtureGenerator.makeTopicArticleMocks({ empty: true })}
         >
           <TopicProvider debounceTimeMs={0} slug={slug}>
-            {({ topic, error, isLoading }) => (
+            {({ topic, error, isLoading, refetch }) => (
               <Topic
                 {...getProps(decorateAction)}
                 error={error}
                 isLoading={isLoading}
+                refetch={refetch}
                 topic={topic}
               />
             )}
