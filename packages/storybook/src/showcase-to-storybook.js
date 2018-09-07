@@ -6,7 +6,7 @@ React.Fragment = ({ children }) => children;
 React.Fragment.propTypes = {
   children: PropTypes.node.isRequired
 };
-React.Fragment.displayName = 'React.Fragment';
+React.Fragment.displayName = "React.Fragment";
 
 // eslint-disable-next-line react/prop-types
 const StrictWrapper = ({ children }) => <StrictMode>{children}</StrictMode>;
