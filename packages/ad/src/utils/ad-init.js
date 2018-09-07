@@ -153,7 +153,7 @@ const adInit = args => {
       },
 
       destroySlots() {
-        window.googletag.destroySlots && window.googletag.destroySlots();
+        if (window.googletag.destroySlots) window.googletag.destroySlots();
       }
     },
 
