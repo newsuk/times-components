@@ -212,6 +212,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                   },
                   "publicationName": "TIMES",
                   "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "shortHeadline": "Headline",
                   "summary105": Array [],
                   "summary125": Array [],
                   "summary145": Array [],
