@@ -182,9 +182,9 @@ export default {
         return (
           <ScrollView>
             <StandardSlice
-              itemCount={Number(select("Number of items:", itemCount, 3))}
+              itemCount={Number(select("Number of items:", itemCount, "3"))}
               renderItems={() =>
-                createItems(select("Number of items:", itemCount, 3))
+                createItems(select("Number of items:", itemCount, "3"))
               }
             />
           </ScrollView>
