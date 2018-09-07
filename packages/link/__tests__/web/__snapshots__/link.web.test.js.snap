@@ -86,8 +86,8 @@ exports[`6. text link with multiple styles 1`] = `
   role="link"
   style={
     Object {
-      "backgroundColor": "blue",
-      "color": "red",
+      "backgroundColor": "rgba(0,0,255,1.00)",
+      "color": "rgba(255,0,0,1.00)",
     }
   }
 >

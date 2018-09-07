@@ -4,14 +4,12 @@ exports[`advert 1`] = `
 <Broadcast
   channel="adConfig"
 >
-  <React.Fragment>
-    <Ad
-      baseUrl="https://www.thetimes.co.uk/"
-      contextUrl="https://www.thetimes.co.uk"
-      isLoading={false}
-      section="news"
-      slotName="header"
-    />
-  </React.Fragment>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk"
+    isLoading={false}
+    section="news"
+    slotName="header"
+  />
 </Broadcast>
 `;

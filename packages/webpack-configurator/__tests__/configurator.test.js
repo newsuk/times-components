@@ -29,7 +29,7 @@ describe("webpack-configurator", () => {
     });
 
     const { plugins } = await getBabelConfig(".");
-    expect(plugins).toEqual(["react-native-web"]);
+    expect(plugins).toEqual([["react-native-web", { commonjs: true }]]);
     expect(exists.mock.calls[0][0]).toMatch(/\.babelrc$/);
   });
 
@@ -50,7 +50,7 @@ describe("webpack-configurator", () => {
     const config = await getBabelConfig(".");
     expect(config).toMatchObject({
       presets: ["stage-0"],
-      plugins: ["foo", "bar", "react-native-web"]
+      plugins: ["foo", "bar", ["react-native-web", { commonjs: true }]]
     });
 
     expect(readFile.mock.calls).toMatchObject(exists.mock.calls);
