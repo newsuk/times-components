@@ -16,6 +16,7 @@ const ArticleListItem = props => {
   const {
     byline,
     headline,
+    highResSize,
     imageRatio,
     isLoading,
     label,
@@ -38,8 +39,9 @@ const ArticleListItem = props => {
     <Link onPress={onPress} url={url}>
       <View style={styles.listItemContainer}>
         <Card
-          image={{ uri: imageUri }}
+          highResSize={highResSize}
           imageRatio={imageRatio}
+          imageUri={imageUri}
           isLoading={isLoading}
           showImage={showImage}
         >

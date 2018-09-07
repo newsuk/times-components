@@ -124,7 +124,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
             Object {
               "display": "primary",
               "ratio": "1500:1000",
-              "url": "https://image.io",
+              "uri": "https://image.io",
             }
           }
         />

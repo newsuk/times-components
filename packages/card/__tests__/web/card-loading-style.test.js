@@ -6,11 +6,10 @@ import serializers from "./serializers";
 import Card from "../../src/card";
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 800,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 60,
   showImage: true
 };
 

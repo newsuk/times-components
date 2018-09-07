@@ -59,11 +59,12 @@ const RelatedArticleItem = ({
     <Link onPress={e => onPress(e, { url: article.url })} url={url}>
       <Card
         contentContainerClass={contentContainerClass}
-        image={{ uri: imageUri }}
         imageContainerClass={imageContainerClass}
         imageRatio={imageRatio}
         imageStyle={imageStyle}
+        imageUri={imageUri}
         isReversed={isReversed}
+        lowResSize={100}
         showImage={showImage}
       >
         <ArticleSummary

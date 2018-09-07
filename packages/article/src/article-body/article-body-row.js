@@ -55,7 +55,7 @@ const ArticleRow = ({
               imageOptions={{
                 display,
                 ratio,
-                url
+                uri: url
               }}
             />
           </View>

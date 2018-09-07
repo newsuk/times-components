@@ -18,13 +18,10 @@ exports[`1. one opinion and two support related articles 1`] = `
             url="https://first.io"
           >
             <Card
-              image={
-                Object {
-                  "uri": "https://crop23-1.io",
-                }
-              }
               imageRatio={0.6135458167330677}
+              imageUri="https://crop23-1.io"
               isReversed={true}
+              lowResSize={100}
               showImage={true}
             >
               <div>
@@ -81,13 +78,10 @@ exports[`1. one opinion and two support related articles 1`] = `
               url="https://second.io"
             >
               <Card
-                image={
-                  Object {
-                    "uri": "https://crop169-2.io",
-                  }
-                }
                 imageRatio={1.7777777777777777}
+                imageUri="https://crop169-2.io"
                 isReversed={false}
+                lowResSize={100}
                 showImage={true}
               >
                 <div>
@@ -127,13 +121,10 @@ exports[`1. one opinion and two support related articles 1`] = `
               url="https://third.io"
             >
               <Card
-                image={
-                  Object {
-                    "uri": "https://crop169-3.io",
-                  }
-                }
                 imageRatio={1.7777777777777777}
+                imageUri="https://crop169-3.io"
                 isReversed={false}
+                lowResSize={100}
                 showImage={true}
               >
                 <div>

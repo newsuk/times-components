@@ -17,7 +17,8 @@ import Image, { ModalImage } from "../src";
 
 const props = {
   aspectRatio: 3 / 2,
-  uri: "http://example.com/image.jpg"
+  highResSize: 700,
+  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 
 const styles = [
@@ -56,12 +57,19 @@ export default () => {
     )
   );
 
+  // eslint-disable-next-line global-require
+  require("jest-styled-components");
+
   const tests = [
     {
       name: "default image",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+          <Image
+            aspectRatio={3 / 2}
+            highResSize={900}
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
         );
 
         expect(testInstance).toMatchSnapshot();

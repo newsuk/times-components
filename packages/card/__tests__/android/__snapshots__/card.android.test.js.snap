@@ -5,13 +5,18 @@ exports[`1. card default state 1`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      A card
-    </Text>
+    <View>
+      <Text>
+        A card
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -21,13 +26,18 @@ exports[`2. pass an empty state to the image component 1`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri=""
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri={null}
     />
   </View>
   <View>
-    <Text>
-      A card with an empty image
-    </Text>
+    <View>
+      <Text>
+        A card with an empty image
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -35,25 +45,32 @@ exports[`2. pass an empty state to the image component 1`] = `
 exports[`3. card without an image when showimage is false 1`] = `
 <View>
   <View>
-    <Text>
-      No image
-    </Text>
+    <View>
+      <Text>
+        No image
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
-exports[`4. pass an empty state to the image component when uri is null 1`] = `
+exports[`4. pass an empty state to the image component when the uri is null 1`] = `
 <View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri=""
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri={null}
     />
   </View>
   <View>
-    <Text>
-      No URI
-    </Text>
+    <View>
+      <Text>
+        No URI
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -61,14 +78,19 @@ exports[`4. pass an empty state to the image component when uri is null 1`] = `
 exports[`5. card with reversed layout 1`] = `
 <View>
   <View>
-    <Text>
-      A card in reverse
-    </Text>
+    <View>
+      <Text>
+        A card in reverse
+      </Text>
+    </View>
   </View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
 </View>
@@ -77,9 +99,11 @@ exports[`5. card with reversed layout 1`] = `
 exports[`6. card with reversed layout and no image 1`] = `
 <View>
   <View>
-    <Text>
-      A card in reverse with no image
-    </Text>
+    <View>
+      <Text>
+        A card in reverse with no image
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -89,22 +113,27 @@ exports[`7. card with a loading state 1`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -112,18 +141,20 @@ exports[`7. card with a loading state 1`] = `
 exports[`8. card with a loading state and no image 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -131,23 +162,28 @@ exports[`8. card with a loading state and no image 1`] = `
 exports[`9. card with reversed loading state 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
 </View>
@@ -156,18 +192,20 @@ exports[`9. card with reversed loading state 1`] = `
 exports[`10. card with reversed loading state with no image 1`] = `
 <View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
   </View>
 </View>
 `;
@@ -177,13 +215,18 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      Do not re-render me
-    </Text>
+    <View>
+      <Text>
+        Do not re-render me
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -193,13 +236,18 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      Do not re-render me
-    </Text>
+    <View>
+      <Text>
+        Do not re-render me
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -209,13 +257,18 @@ exports[`12. card should re-render when image uri changes 1`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      Some text
-    </Text>
+    <View>
+      <Text>
+        Some text
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -225,86 +278,153 @@ exports[`12. card should re-render when image uri changes 2`] = `
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="http://foo&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="http://foo"
     />
   </View>
   <View>
-    <Text>
-      Some text
-    </Text>
+    <View>
+      <Text>
+        Some text
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
-exports[`13. card should re-render when image size changes 1`] = `
+exports[`13. card should re-render when low res size changes 1`] = `
 <View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
-    />
-  </View>
-  <View>
-    <Text>
-      Some content
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`13. card should re-render when image size changes 2`] = `
-<View>
-  <View>
-    <Image
-      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
       uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      Some content
-    </Text>
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
-exports[`14. card should re-render when loading state changes 1`] = `
+exports[`13. card should re-render when low res size changes 2`] = `
 <View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={null}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Gradient
-      degrees={264}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
-    <Gradient
-      degrees={267}
-    />
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
-exports[`14. card should re-render when loading state changes 2`] = `
+exports[`14. card should re-render when high res size changes 1`] = `
 <View>
   <View>
     <Image
       aspectRatio={0.6666666666666666}
-      uri="https://img.io/img&resize=360"
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
     />
   </View>
   <View>
-    <Text>
-      Re-render me
-    </Text>
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`14. card should re-render when high res size changes 2`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={50}
+      uri="https://img.io/img"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`15. card should re-render when loading state changes 1`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
+    />
+  </View>
+  <View>
+    <View>
+      <Gradient
+        degrees={264}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+      <Gradient
+        degrees={267}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`15. card should re-render when loading state changes 2`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={360}
+      lowResSize={50}
+      uri="https://img.io/img"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        Re-render me
+      </Text>
+    </View>
   </View>
 </View>
 `;

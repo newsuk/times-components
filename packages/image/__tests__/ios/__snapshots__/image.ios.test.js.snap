@@ -12,7 +12,7 @@ exports[`1. default layout 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000",
       }
     }
   />
@@ -28,7 +28,13 @@ exports[`2. default layout without uri 1`] = `
       degrees={264}
     />
   </View>
-  <Image />
+  <Image
+    source={
+      Object {
+        "uri": null,
+      }
+    }
+  />
 </View>
 `;
 
@@ -65,7 +71,7 @@ exports[`3. handle layout change 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
       }
     }
   />
@@ -84,7 +90,7 @@ exports[`4. prepend https schema 1`] = `
   <Image
     source={
       Object {
-        "uri": "https://example.com/image.jpg?resize=1440",
+        "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=900",
       }
     }
   />
@@ -103,7 +109,7 @@ exports[`5. handle onload event 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=900",
       }
     }
   />
@@ -117,7 +123,7 @@ exports[`5. handle onload event 2`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?resize=1440",
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=900",
       }
     }
   />

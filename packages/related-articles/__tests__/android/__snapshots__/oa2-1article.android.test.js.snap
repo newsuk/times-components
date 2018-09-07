@@ -17,11 +17,6 @@ exports[`1. one opinion related article 1`] = `
           url="https://test.io"
         >
           <Card
-            image={
-              Object {
-                "uri": "https://crop23.io",
-              }
-            }
             imageRatio={0.6135458167330677}
             imageStyle={
               Object {
@@ -33,7 +28,9 @@ exports[`1. one opinion related article 1`] = `
                 "right": 0,
               }
             }
+            imageUri="https://crop23.io"
             isReversed={true}
+            lowResSize={100}
             showImage={true}
           >
             <View>

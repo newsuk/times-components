@@ -4,14 +4,14 @@ const defaultCaption = "All the latest stories in culture and books.";
 const defaultCredits = "Times photographer Jack Hill";
 
 export default (
-  url = defaultImageSrc,
+  uri = defaultImageSrc,
   caption = defaultCaption,
   credits = defaultCredits
 ) => ({
   imageOptions: {
     display: "inline",
     ratio: "3:2",
-    url
+    uri
   },
   captionOptions: {
     caption,

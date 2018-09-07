@@ -23,13 +23,11 @@ exports[`1. article list 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead1.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead1.io"
+              lowResSize={100}
               showImage={true}
             >
               <ArticleSummary
@@ -66,13 +64,11 @@ exports[`1. article list 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead2.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead2.io"
+              lowResSize={100}
               showImage={true}
             >
               <ArticleSummary
@@ -128,13 +124,11 @@ exports[`1. article list 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead3.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead3.io"
+              lowResSize={100}
               showImage={true}
             >
               <ArticleSummary
@@ -190,13 +184,11 @@ exports[`1. article list 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead4.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead4.io"
+              lowResSize={100}
               showImage={true}
             >
               <ArticleSummary
@@ -252,13 +244,11 @@ exports[`1. article list 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead5.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead5.io"
+              lowResSize={100}
               showImage={true}
             >
               <ArticleSummary
@@ -341,13 +331,11 @@ exports[`2. article list with no images 1`] = `
         >
           <div>
             <Card
-              image={
-                Object {
-                  "uri": "https://lead1.io",
-                }
-              }
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri="https://lead1.io"
+              lowResSize={100}
               showImage={false}
             >
               <div>
@@ -426,9 +414,11 @@ exports[`3. article list with missing image 1`] = `
         >
           <div>
             <Card
-              image={null}
+              fadeImageIn={true}
+              highResSize={1440}
               imageRatio={1}
-              imageSize={1440}
+              imageUri={null}
+              lowResSize={100}
               showImage={false}
             >
               <div>

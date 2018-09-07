@@ -3,11 +3,17 @@ import { Animations } from "@times-components/styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import CardContent from "./card-content";
 
-const CardComponent = props => (
-  <Animations.FadeIn>
-    <CardContent {...props} />
-  </Animations.FadeIn>
-);
+const CardComponent = props => {
+  if (props.isLoading) {
+    return (
+      <Animations.FadeIn>
+        <CardContent {...props} />
+      </Animations.FadeIn>
+    );
+  }
+
+  return <CardContent {...props} />;
+};
 
 CardComponent.propTypes = cardPropTypes;
 CardComponent.defaultProps = cardDefaultProps;

@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. page error 1`] = `
+.c2 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -54,7 +64,7 @@ exports[`1. page error 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -65,28 +75,15 @@ exports[`1. page error 1`] = `
 <style>
 {
   "IS1": {
-    "display": "block",
-    "position": "absolute",
-    "width": "100%",
-    "zIndex": 1,
-  },
-  "IS2": {
     "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
-  "IS3": {
-    "bottom": "0px",
-    "left": "0px",
-    "position": "absolute",
-    "right": "0px",
-    "top": "0px",
-  },
-  "IS4": {
+  "IS2": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",
     "paddingBottom": "110%",
   },
-  "IS5": {
+  "IS3": {
     "alignSelf": "center",
     "marginBottom": "10px",
     "marginTop": "40px",
@@ -128,6 +125,7 @@ exports[`1. page error 1`] = `
     "align-items": "stretch",
     "border-bottom-width": "0px",
     "border-top-width": "0px",
+    "bottom": "0px",
     "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
@@ -137,6 +135,8 @@ exports[`1. page error 1`] = `
     "min-height": "0px",
     "padding-bottom": "0px",
     "padding-top": "0px",
+    "position": "absolute",
+    "right": "0px",
   },
   "S3": {
     "-ms-flex-align": "stretch",
@@ -203,23 +203,23 @@ exports[`1. page error 1`] = `
       className="S3"
     >
       <div
-        className="IS4"
+        className="IS2"
       >
         <img
-          className="IS1"
+          className="c2"
         />
         <div
-          className="S2 IS3"
+          className="S2"
         >
           <div
-            className="S1 IS2"
+            className="S1 IS1"
           />
         </div>
       </div>
     </div>
   </div>
   <div
-    className="c2 S3"
+    className="c3 S3"
   >
     <div
       className="S4"
@@ -232,7 +232,7 @@ exports[`1. page error 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS5"
+      className="IS3"
     />
   </div>
 </div>

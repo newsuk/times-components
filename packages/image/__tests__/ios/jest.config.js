@@ -1,3 +1,5 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = jestConfigurator("ios", __dirname);
+module.exports = jestConfigurator("ios", __dirname, {
+  coverageIgnoreGlobs: ["utils.js"]
+});

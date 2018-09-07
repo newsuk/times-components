@@ -5,18 +5,17 @@ const defaultCaption =
 const defaultCredits = "Bettmann";
 
 export default (
-  url = defaultImageSrc,
+  uri = defaultImageSrc,
   caption = defaultCaption,
   credits = defaultCredits
 ) => ({
   imageOptions: {
     display: "inline",
     ratio: "1:1.50",
-    url
+    uri
   },
   captionOptions: {
     caption,
-
     credits
   }
 });

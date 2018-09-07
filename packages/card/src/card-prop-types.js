@@ -7,20 +7,22 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 export const cardPropTypes = {
   ...sharedPropTypes,
   children: PropTypes.node,
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageSize: PropTypes.number,
+  fadeImageIn: PropTypes.bool,
+  highResSize: PropTypes.number,
   imageStyle: ViewPropTypesStyle,
-  isLoading: PropTypes.bool
+  imageUri: PropTypes.string,
+  isLoading: PropTypes.bool,
+  lowResSize: PropTypes.number
 };
 
 export const cardDefaultProps = {
   ...sharedDefaultProps,
   children: null,
-  image: {
-    uri: ""
-  },
+  fadeImageIn: false,
+  highResSize: null,
   imageRatio: 1,
   imageStyle: {},
-  imageSize: null,
-  isLoading: false
+  imageUri: null,
+  isLoading: false,
+  lowResSize: null
 };

@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { Image, View } from "react-native";
-import {
-  addMissingProtocol,
-  normaliseWidth,
-  screenWidthInPixels
-} from "@times-components/utils";
+import { addMissingProtocol } from "@times-components/utils";
+import appendSize from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
@@ -14,8 +11,7 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false,
-      width: normaliseWidth(screenWidthInPixels())
+      isLoaded: false
     };
     this.handleLoad = this.handleLoad.bind(this);
   }
@@ -25,35 +21,22 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { aspectRatio, style, uri } = this.props;
-    const { isLoaded, width } = this.state;
-    // web handles missing protocols just fine, native doesn't. This evens out support.
-    const cleanUri = addMissingProtocol(uri);
+    const { aspectRatio, highResSize, style, uri } = this.props;
+    const { isLoaded } = this.state;
+
+    const isDataImageUri = uri && uri.indexOf("data:") > -1;
+
+    const srcUri = isDataImageUri
+      ? uri
+      : addMissingProtocol(appendSize(uri, "resize", highResSize));
 
     const props = {
       style: styles.imageBackground,
-      onLoad: this.handleLoad
+      onLoad: this.handleLoad,
+      source: {
+        uri: srcUri
+      }
     };
-
-    const isDataImageUrl = uri.indexOf("data:") > -1;
-
-    if (isDataImageUrl) {
-      props.source = {
-        uri: cleanUri
-      };
-    } else if (cleanUri && width > 0) {
-      const regExResize = new RegExp("([?&])resize", "gi");
-      const hasResizeParameter = regExResize.test(cleanUri);
-
-      const hasQueryString = cleanUri.indexOf("?") > -1;
-      const delimiter = hasQueryString ? "&" : "?";
-
-      props.source = {
-        uri: hasResizeParameter
-          ? cleanUri
-          : `${cleanUri}${delimiter}resize=${width}`
-      };
-    }
 
     return (
       <View aspectRatio={aspectRatio} style={style}>

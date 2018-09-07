@@ -9,12 +9,9 @@ exports[`1. article list 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead1.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead1.io"
             showImage={true}
           >
             <ArticleSummary
@@ -46,12 +43,9 @@ exports[`1. article list 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead2.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead2.io"
             showImage={true}
           >
             <ArticleSummary
@@ -117,12 +111,9 @@ exports[`2. article list with no images 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead1.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead1.io"
             showImage={false}
           >
             <ArticleSummary
@@ -169,12 +160,9 @@ exports[`3. a retry button when load more fails 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead1.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead1.io"
             showImage={true}
           >
             <ArticleSummary
@@ -220,12 +208,9 @@ exports[`4. no footer with data equalling the count 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead1.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead1.io"
             showImage={true}
           >
             <ArticleSummary
@@ -384,12 +369,9 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
       >
         <View>
           <Card
-            image={
-              Object {
-                "uri": "https://lead1.io",
-              }
-            }
+            highResSize={1440}
             imageRatio={1}
+            imageUri="https://lead1.io"
             showImage={true}
           >
             <ArticleSummary

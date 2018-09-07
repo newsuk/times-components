@@ -4,41 +4,44 @@ exports[`1. card default state 1`] = `
 <View
   style={
     Object {
-      "opacity": 1,
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
       }
     }
   >
     <View
       style={
         Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Image
-        aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
+          "opacity": 1,
         }
       }
     >
@@ -54,6 +57,60 @@ exports[`2. card with reversed state 1`] = `
 <View
   style={
     Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "height": "auto",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text>
+        A card in reverse
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
+    />
+  </View>
+</View>
+`;
+
+exports[`3. card loading state 1`] = `
+<View
+  style={
+    Object {
       "opacity": 1,
     }
   }
@@ -65,57 +122,6 @@ exports[`2. card with reversed state 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "flexWrap": "wrap",
-        "height": "auto",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Text>
-        A card in reverse
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Image
-        aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`3. card loading state 1`] = `
-<View
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
         "justifyContent": "flex-end",
       }
     }
@@ -131,7 +137,10 @@ exports[`3. card loading state 1`] = `
     >
       <Image
         aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
+        fadeImageIn={false}
+        highResSize={900}
+        lowResSize={25}
+        uri="https://img.io/img"
       />
     </View>
     <View
@@ -144,44 +153,52 @@ exports[`3. card loading state 1`] = `
         }
       }
     >
-      <Gradient
-        degrees={264}
+      <View
         style={
           Object {
-            "height": 24,
-            "marginBottom": 10,
-            "maxWidth": 300,
+            "opacity": 1,
           }
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
+      >
+        <Gradient
+          degrees={264}
+          style={
+            Object {
+              "height": 24,
+              "marginBottom": 10,
+              "maxWidth": 300,
+            }
           }
-        }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 10,
+            }
           }
-        }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 0,
-            "maxWidth": 240,
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 10,
+            }
           }
-        }
-      />
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 0,
+              "maxWidth": 240,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -217,44 +234,52 @@ exports[`4. card reversed loading state 1`] = `
         }
       }
     >
-      <Gradient
-        degrees={264}
+      <View
         style={
           Object {
-            "height": 24,
-            "marginBottom": 10,
-            "maxWidth": 300,
+            "opacity": 1,
           }
         }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
+      >
+        <Gradient
+          degrees={264}
+          style={
+            Object {
+              "height": 24,
+              "marginBottom": 10,
+              "maxWidth": 300,
+            }
           }
-        }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 10,
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 10,
+            }
           }
-        }
-      />
-      <Gradient
-        degrees={267}
-        style={
-          Object {
-            "height": 10,
-            "marginBottom": 0,
-            "maxWidth": 240,
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 10,
+            }
           }
-        }
-      />
+        />
+        <Gradient
+          degrees={267}
+          style={
+            Object {
+              "height": 10,
+              "marginBottom": 0,
+              "maxWidth": 240,
+            }
+          }
+        />
+      </View>
     </View>
     <View
       style={
@@ -267,7 +292,10 @@ exports[`4. card reversed loading state 1`] = `
     >
       <Image
         aspectRatio={0.6666666666666666}
-        uri="https://img.io/img&resize=360"
+        fadeImageIn={false}
+        highResSize={900}
+        lowResSize={25}
+        uri="https://img.io/img"
       />
     </View>
   </View>

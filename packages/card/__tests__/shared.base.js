@@ -1,18 +1,18 @@
 import React from "react";
 import { Text } from "react-native";
+import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
 const props = {
-  image: {
-    uri: "https://img.io/img"
-  },
+  highResSize: 360,
   imageRatio: 2 / 3,
-  imageSize: 360,
+  imageUri: "https://img.io/img",
+  lowResSize: 50,
   showImage: true
 };
 
-export default (renderMethod, platformTests) => {
+export default renderMethod => {
   // magic to stop the React Native Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 
@@ -33,7 +33,7 @@ export default (renderMethod, platformTests) => {
       name: "pass an empty state to the image component",
       test: () => {
         const output = renderMethod(
-          <Card {...props} image={null}>
+          <Card {...props} imageUri={null}>
             <Text>A card with an empty image</Text>
           </Card>
         );
@@ -54,10 +54,10 @@ export default (renderMethod, platformTests) => {
       }
     },
     {
-      name: "pass an empty state to the image component when uri is null",
+      name: "pass an empty state to the image component when the uri is null",
       test: () => {
         const output = renderMethod(
-          <Card {...props} image={{ uri: null }}>
+          <Card {...props} imageUri={null}>
             <Text>No URI</Text>
           </Card>
         );
@@ -137,7 +137,106 @@ export default (renderMethod, platformTests) => {
         expect(output).toMatchSnapshot();
       }
     },
-    ...platformTests
+    {
+      name: "card should not re-render when imageRatio prop is changed",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props}>
+            <Text>Do not re-render me</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} imageRatio={16 / 9}>
+            <Text>Do not re-render me</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when image uri changes",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props}>
+            <Text>Some text</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} imageUri="http://foo">
+            <Text>Some text</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when low res size changes",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} lowResSize={null}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when high res size changes",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} highResSize={null}>
+            <Text>Some content</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card should re-render when loading state changes",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Card {...props} isLoading>
+            <Text>Re-render me</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.update(
+          <Card {...props} isLoading={false}>
+            <Text>Re-render me</Text>
+          </Card>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
   ];
 
   iterator(tests);

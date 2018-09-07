@@ -25,6 +25,7 @@ class ArticleList extends Component {
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
+      fadeImageIn: false,
       images: new Map()
     };
 
@@ -43,6 +44,19 @@ class ArticleList extends Component {
     );
   }
 
+  componentDidMount() {
+    const newState = {
+      fadeImageIn: true
+    };
+
+    if (typeof window !== "undefined" && !this.observer) {
+      newState.fallback = normaliseWidth(window.clientWidth);
+    }
+
+    // eslint-disable-next-line react/no-did-mount-set-state
+    this.setState(newState);
+  }
+
   shouldComponentUpdate(nextProps) {
     return this.props.page === nextProps.page;
   }
@@ -58,14 +72,10 @@ class ArticleList extends Component {
 
   getImageSize(nodeId) {
     if (typeof window === "undefined") {
-      return 100;
+      return null;
     }
 
-    if (this.observer && nodeId) {
-      return this.state.images.get(nodeId);
-    }
-
-    return normaliseWidth(window.clientWidth);
+    return this.state.images.get(nodeId) || this.state.fallback || null;
   }
 
   handleObservation(entries) {
@@ -222,10 +232,12 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
+                              fadeImageIn={this.state.fadeImageIn}
+                              highResSize={this.getImageSize(elementId)}
                               imageRatio={imageRatio}
-                              imageSize={this.getImageSize(elementId) || 100}
                               index={index}
                               length={data.length}
+                              lowResSize={100}
                               showImage={showImages}
                             />
                           </ListContentContainer>
