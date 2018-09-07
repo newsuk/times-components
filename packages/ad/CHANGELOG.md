@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.29"></a>
+## [2.1.29](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.28...@times-components/ad@2.1.29) (2018-09-07)
+
+
+### Bug Fixes
+
+* remove ad error, and mock fragment for storybook ([#1303](https://github.com/newsuk/times-components/issues/1303)) ([3655d87](https://github.com/newsuk/times-components/commit/3655d87))
+
+
+
+
+
 <a name="2.1.28"></a>
 ## [2.1.28](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.27...@times-components/ad@2.1.28) (2018-09-06)
 
