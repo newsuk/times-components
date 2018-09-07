@@ -4,7 +4,7 @@ exports[`The serializers should minimalise and create styles 1`] = `
 <style>
 {
   "S1": {
-    "color": "red",
+    "color": "rgba(255,0,0,1.00)",
   },
 }
 </style>

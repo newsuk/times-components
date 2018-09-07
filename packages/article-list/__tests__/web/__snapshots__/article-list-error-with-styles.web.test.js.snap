@@ -89,19 +89,16 @@ exports[`1. page error 1`] = `
     "marginTop": "40px",
   },
   "S1": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "margin-left": "0px",
@@ -113,20 +110,17 @@ exports[`1. page error 1`] = `
     "position": "relative",
   },
   "S2": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "border-bottom-width": "0px",
     "border-top-width": "0px",
     "bottom": "0px",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "margin-left": "0px",
@@ -139,33 +133,12 @@ exports[`1. page error 1`] = `
     "right": "0px",
   },
   "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-left": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "min-height": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-    "position": "relative",
-  },
-  "S4": {
     "-ms-flex-item-align": "center",
     "-webkit-align-self": "center",
     "align-self": "center",
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "color": "rgba(29,29,27,1)",
+    "color": "rgba(29,29,27,1.00)",
     "font-family": "TimesModern-Bold",
     "font-size": "26px",
     "margin-bottom": "10px",
@@ -176,10 +149,10 @@ exports[`1. page error 1`] = `
     "padding-top": "0px",
     "text-align": "center",
   },
-  "S5": {
+  "S4": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "TimesDigitalW04-Regular",
     "font-size": "18px",
     "margin-bottom": "0px",
@@ -194,13 +167,13 @@ exports[`1. page error 1`] = `
 </style>
 
 <div
-  className="c0 S3"
+  className="c0 S1"
 >
   <div
-    className="c1 S3"
+    className="c1 S1"
   >
     <div
-      className="S3"
+      className="S1"
     >
       <div
         className="IS2"
@@ -219,15 +192,15 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c3 S3"
+    className="c3 S1"
   >
     <div
-      className="S4"
+      className="S3"
     >
       Something's gone wrong
     </div>
     <div
-      className="S5"
+      className="S4"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
@@ -370,7 +343,7 @@ exports[`2. article list 1`] = `
   "S1": {
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "15px",
     "margin-bottom": "0px",
@@ -402,19 +375,16 @@ exports[`2. article list 1`] = `
     "position": "relative",
   },
   "S3": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "border-bottom-width": "0px",
     "border-top-width": "0px",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "margin-left": "0px",

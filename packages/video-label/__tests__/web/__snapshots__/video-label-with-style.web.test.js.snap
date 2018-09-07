@@ -7,7 +7,7 @@ exports[`1. video label with a title 1`] = `
     "paddingBottom": 3,
   },
   "IS2": {
-    "color": "rgba(0,131,71,1)",
+    "color": "rgba(0,131,71,1.00)",
   },
   "IS3": {
     "color": "#008347",
@@ -102,7 +102,7 @@ exports[`2. video label without a title shows video 1`] = `
     "paddingBottom": 3,
   },
   "IS2": {
-    "color": "rgba(0,131,71,1)",
+    "color": "rgba(0,131,71,1.00)",
   },
   "IS3": {
     "color": "#008347",
@@ -197,7 +197,7 @@ exports[`3. video label with the black default colour 1`] = `
     "paddingBottom": 3,
   },
   "IS2": {
-    "color": "black",
+    "color": "rgba(0,0,0,1.00)",
   },
   "IS3": {
     "color": "black",

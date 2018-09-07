@@ -11,7 +11,10 @@ export default ({ readFile, exists }, resolve) => {
     const babelrc = await parseJson(babelrcPath);
     return {
       ...babelrc,
-      plugins: [...(babelrc.plugins || []), "react-native-web"]
+      plugins: [
+        ...(babelrc.plugins || []),
+        ["react-native-web", { commonjs: true }]
+      ]
     };
   };
 

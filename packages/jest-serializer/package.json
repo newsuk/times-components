@@ -42,7 +42,8 @@
     "jest": "23.3.0",
     "prettier": "1.8.2",
     "prop-types": "15.6.2",
-    "react-native-web": "0.5.1",
+    "react-art": "16.5.0",
+    "react-native-web": "0.8.9",
     "react-test-renderer": "16.4.2"
   },
   "dependencies": {

@@ -2782,9 +2782,9 @@ babel-plugin-react-docgen@^1.9.0:
     lodash "^4.17.0"
     react-docgen "^3.0.0-beta11"
 
-babel-plugin-react-native-web@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.6.1.tgz#9a1434235ead0e16725014367ac1b9cb109f4b27"
+babel-plugin-react-native-web@0.8.9:
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.8.9.tgz#3c7e94ddc542595b1b3a3d71c8e9c40ef7b05127"
 
 babel-plugin-react-transform@2.0.2:
   version "2.0.2"
@@ -8441,7 +8441,7 @@ inline-style-prefixer@^3.0.6:
     bowser "^1.7.3"
     css-in-js-utils "^2.0.0"
 
-inline-style-prefixer@^4.0.0:
+inline-style-prefixer@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-4.0.2.tgz#d390957d26f281255fe101da863158ac6eb60911"
   dependencies:
@@ -12848,16 +12848,16 @@ react-apollo@2.1.4:
     lodash "4.17.5"
     prop-types "^15.6.0"
 
-react-art@^16.2.0:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.4.2.tgz#df6846dab6e11ef13ae07d33d64cff50925de2da"
+react-art@16.5.0:
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.5.0.tgz#0e03a8e5dccbd3fe8b31330db0aabdd08bf81218"
   dependencies:
     art "^0.10.1"
     create-react-class "^15.6.2"
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.3.0"
 
 react-broadcast@0.5.2:
   version "0.5.2"
@@ -13141,9 +13141,9 @@ react-native-vector-icons@4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native-web@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.5.1.tgz#6a35eeded29fef8c8c467e416a33666c6bee6160"
+react-native-web@0.8.9:
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.8.9.tgz#0c616ce666a5547e2d850f15c2cc56abd14083ca"
   dependencies:
     array-find-index "^1.0.2"
     create-react-class "^15.6.2"
@@ -13151,10 +13151,9 @@ react-native-web@0.5.1:
     deep-assign "^2.0.0"
     fbjs "^0.8.16"
     hyphenate-style-name "^1.0.2"
-    inline-style-prefixer "^4.0.0"
+    inline-style-prefixer "^4.0.2"
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
-    react-art "^16.2.0"
     react-timer-mixin "^0.13.3"
 
 react-native@0.55.4:
@@ -14060,6 +14059,12 @@ sax@>=0.6.0, sax@^1.2.1, sax@^1.2.4, sax@~1.2.1:
 sax@~1.1.1:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.1.6.tgz#5d616be8a5e607d54e114afae55b7eaf2fcc3240"
+
+schedule@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.3.0.tgz#1be2ab2fc2e768536269ce7326efb478d6c045e8"
+  dependencies:
+    object-assign "^4.1.1"
 
 schema-utils@^0.3.0:
   version "0.3.0"

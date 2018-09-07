@@ -5,7 +5,7 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
   dir="auto"
   style={
     Object {
-      "color": "rgba(0,131,71,1)",
+      "color": "rgba(0,131,71,1.00)",
     }
   }
 >
