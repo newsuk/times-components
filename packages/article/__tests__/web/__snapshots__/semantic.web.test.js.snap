@@ -178,7 +178,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         aria-level="3"
         role="heading"
       >
-        RA Headline
+        Headline
       </h3>
       <time
         dateTime="2015-03-23T19:39:39.000Z"

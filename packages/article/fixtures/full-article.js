@@ -1327,6 +1327,7 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T19:39:39.000Z",
         section: "",
+        shortHeadline: "Pratchett’s law of the jungle",
         summary105: [
           {
             name: "paragraph",
@@ -1591,6 +1592,7 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T20:42:27.000Z",
         section: "",
+        shortHeadline: "Rise of centenarian drivers",
         summary105: [
           {
             name: "paragraph",
@@ -1774,6 +1776,7 @@ const defaultRelatedArticleSlice = {
         label: "Youtube",
         publicationName: "TIMES",
         publishedTime: "2018-04-06T23:01:00.000Z",
+        shortHeadline: "YouTube ignored police pleas",
         summary105: [
           {
             name: "paragraph",
@@ -2037,6 +2040,7 @@ export const testFixture = {
           label: "RA Label",
           publicationName: "TIMES",
           publishedTime: "2015-03-23T19:39:39.000Z",
+          shortHeadline: "Headline",
           summary105: [],
           summary125: [],
           summary145: [],
