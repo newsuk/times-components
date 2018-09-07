@@ -1,5 +1,12 @@
 import React, { StrictMode } from "react";
+import PropTypes from "prop-types";
 import { Platform } from "react-native";
+
+React.Fragment = ({ children }) => children;
+React.Fragment.propTypes = {
+  children: PropTypes.node.isRequired
+};
+React.Fragment.displayName = "React.Fragment";
 
 // eslint-disable-next-line react/prop-types
 const StrictWrapper = ({ children }) => <StrictMode>{children}</StrictMode>;
