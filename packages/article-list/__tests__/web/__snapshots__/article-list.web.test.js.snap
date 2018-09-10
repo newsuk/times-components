@@ -18,8 +18,8 @@ exports[`1. article list 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://article1.io"
+        <a
+          href="https://article1.io"
         >
           <div>
             <Card
@@ -48,7 +48,7 @@ exports[`1. article list 1`] = `
               />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div
@@ -59,8 +59,8 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://article2.io"
+        <a
+          href="https://article2.io"
         >
           <div>
             <Card
@@ -108,7 +108,7 @@ exports[`1. article list 1`] = `
               />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div
@@ -119,8 +119,8 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://article3.io"
+        <a
+          href="https://article3.io"
         >
           <div>
             <Card
@@ -168,7 +168,7 @@ exports[`1. article list 1`] = `
               />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div
@@ -179,8 +179,8 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://article4.io"
+        <a
+          href="https://article4.io"
         >
           <div>
             <Card
@@ -228,7 +228,7 @@ exports[`1. article list 1`] = `
               />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div
@@ -239,8 +239,8 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://article5.io"
+        <a
+          href="https://article5.io"
         >
           <div>
             <Card
@@ -288,7 +288,7 @@ exports[`1. article list 1`] = `
               />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -326,8 +326,8 @@ exports[`2. article list with no images 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://article1.io"
+        <a
+          href="https://article1.io"
         >
           <div>
             <Card
@@ -376,7 +376,7 @@ exports[`2. article list with no images 1`] = `
               </div>
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -409,8 +409,8 @@ exports[`3. article list with missing image 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://article1.io"
+        <a
+          href="https://article1.io"
         >
           <div>
             <Card
@@ -459,7 +459,7 @@ exports[`3. article list with missing image 1`] = `
               </div>
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>

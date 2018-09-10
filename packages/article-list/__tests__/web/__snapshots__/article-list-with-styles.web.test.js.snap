@@ -68,6 +68,21 @@ exports[`1. article list 1`] = `
 
 <style>
 {
+  "IS1": {
+    "textDecoration": "none",
+  },
+  "IS2": {
+    "textDecoration": "none",
+  },
+  "IS3": {
+    "textDecoration": "none",
+  },
+  "IS4": {
+    "textDecoration": "none",
+  },
+  "IS5": {
+    "textDecoration": "none",
+  },
   "S1": {
     "-ms-flex": "1",
     "-ms-flex-align": "stretch",
@@ -209,7 +224,9 @@ exports[`1. article list 1`] = `
       <div
         className="c0 S3"
       >
-        <Link>
+        <a
+          className="IS1"
+        >
           <div
             className="c1 S3"
           >
@@ -220,7 +237,7 @@ exports[`1. article list 1`] = `
               <ArticleSummary />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -234,7 +251,9 @@ exports[`1. article list 1`] = `
             className="S4"
           />
         </div>
-        <Link>
+        <a
+          className="IS2"
+        >
           <div
             className="c1 S3"
           >
@@ -245,7 +264,7 @@ exports[`1. article list 1`] = `
               <ArticleSummary />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -259,7 +278,9 @@ exports[`1. article list 1`] = `
             className="S4"
           />
         </div>
-        <Link>
+        <a
+          className="IS3"
+        >
           <div
             className="c1 S3"
           >
@@ -270,7 +291,7 @@ exports[`1. article list 1`] = `
               <ArticleSummary />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -284,7 +305,9 @@ exports[`1. article list 1`] = `
             className="S4"
           />
         </div>
-        <Link>
+        <a
+          className="IS4"
+        >
           <div
             className="c1 S3"
           >
@@ -295,7 +318,7 @@ exports[`1. article list 1`] = `
               <ArticleSummary />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div>
@@ -309,7 +332,9 @@ exports[`1. article list 1`] = `
             className="S4"
           />
         </div>
-        <Link>
+        <a
+          className="IS5"
+        >
           <div
             className="c1 S3"
           >
@@ -320,7 +345,7 @@ exports[`1. article list 1`] = `
               <ArticleSummary />
             </Card>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
     <div

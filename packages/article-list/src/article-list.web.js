@@ -2,7 +2,6 @@
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import Ad, { AdComposer } from "@times-components/ad";
-import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -162,8 +161,7 @@ class ArticleList extends Component {
       <ListContentContainer>
         {paginationComponent()}
         <View style={styles.listContentErrorContainer}>
-          <ArticleListError />
-          <Button onPress={refetch} style={styles.retryButton} title="Retry" />
+          <ArticleListError refetch={refetch} />
         </View>
       </ListContentContainer>
     );
