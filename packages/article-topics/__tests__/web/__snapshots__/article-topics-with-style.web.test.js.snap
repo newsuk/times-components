@@ -7,7 +7,7 @@ exports[`1. group of topics 1`] = `
     "textDecoration": "none",
   },
   "S1": {
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
     "margin-bottom": "0px",
@@ -101,7 +101,7 @@ exports[`2. group of topics at large scale 1`] = `
     "textDecoration": "none",
   },
   "S1": {
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
     "margin-bottom": "0px",
@@ -195,7 +195,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
     "textDecoration": "none",
   },
   "S1": {
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
     "margin-bottom": "0px",

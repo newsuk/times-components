@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 
-const alias = { "react-native": "react-native-web" };
+const alias = { "react-native$": "react-native-web" };
 const extensions = [".web.js", ".js"];
 const mode = "development";
 
@@ -13,7 +13,6 @@ const babelConfig = {
       cacheDirectory: true,
       plugins: [
         "add-react-displayname",
-        "react-native-web",
         "styled-components"
       ],
       presets: ["react-native"]

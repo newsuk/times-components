@@ -79,18 +79,15 @@ exports[`1. card loading state 1`] = `
     "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "S1": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "display": "flex",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "min-width": "0px",
@@ -106,27 +103,10 @@ exports[`1. card loading state 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
-  "S3": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
-    "flex": "1",
-    "flex-direction": "column",
     "margin-bottom": "10px",
     "min-width": "100%",
   },
-  "S4": {
+  "S3": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -142,7 +122,7 @@ exports[`1. card loading state 1`] = `
     "max-width": "300px",
     "min-width": "0px",
   },
-  "S5": {
+  "S4": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -157,7 +137,7 @@ exports[`1. card loading state 1`] = `
     "margin-bottom": "10px",
     "min-width": "0px",
   },
-  "S6": {
+  "S5": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
@@ -173,24 +153,21 @@ exports[`1. card loading state 1`] = `
     "max-width": "240px",
     "min-width": "0px",
   },
-  "S7": {
-    "-ms-flex": "1",
+  "S6": {
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "display": "flex",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "min-width": "100%",
   },
-  "S8": {
+  "S7": {
     "-ms-flex-align": "start",
     "-ms-flex-direction": "row",
     "-ms-flex-pack": "end",
@@ -217,13 +194,13 @@ exports[`1. card loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S2"
+    className="c0 S1"
   >
     <div
-      className="S8"
+      className="S7"
     >
       <div
-        className="S3"
+        className="S2"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
@@ -234,11 +211,11 @@ exports[`1. card loading state 1`] = `
         />
       </div>
       <div
-        className="S7"
+        className="S6"
       >
         <indexweb__FadeIn>
           <div
-            className="c0 S2"
+            className="c0 S1"
           >
             <Component>
               <Gradient
@@ -406,57 +383,34 @@ exports[`2. card with reversed loading state 1`] = `
     "min-width": "0px",
   },
   "S5": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "display": "flex",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "10px",
     "min-width": "100%",
   },
   "S6": {
-    "-ms-flex": "1",
     "-ms-flex-align": "stretch",
     "-ms-flex-direction": "column",
     "-webkit-align-items": "stretch",
     "-webkit-box-align": "stretch",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "display": "flex",
-    "flex": "1",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
-  },
-  "S7": {
-    "-ms-flex": "1",
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex": "1",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "display": "flex",
-    "flex": "1",
     "flex-direction": "column",
     "margin-bottom": "0px",
     "min-width": "100%",
   },
-  "S8": {
+  "S7": {
     "-ms-flex-align": "start",
     "-ms-flex-direction": "row",
     "-ms-flex-pack": "end",
@@ -487,7 +441,7 @@ exports[`2. card with reversed loading state 1`] = `
     className="c0 S4"
   >
     <div
-      className="S8"
+      className="S7"
     >
       <div
         className="S5"
@@ -518,7 +472,7 @@ exports[`2. card with reversed loading state 1`] = `
         </indexweb__FadeIn>
       </div>
       <div
-        className="S7"
+        className="S6"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}

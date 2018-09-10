@@ -8,7 +8,7 @@ exports[`1. red article flag 1`] = `
     "marginRight": "5px",
   },
   "IS2": {
-    "color": "red",
+    "color": "rgba(255,0,0,1.00)",
     "fontFamily": "TimesDigitalW04-RegularSC",
     "fontSize": "12px",
     "fontWeight": "400",

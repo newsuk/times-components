@@ -4,7 +4,7 @@ exports[`1. button 1`] = `
 <style>
 {
   "S1": {
-    "color": "rgba(255,255,255,1)",
+    "color": "rgba(255,255,255,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "16px",
     "padding-top": "1px",
@@ -17,7 +17,7 @@ exports[`1. button 1`] = `
     "-webkit-box-pack": "center",
     "-webkit-justify-content": "center",
     "align-items": "center",
-    "background-color": "rgba(0,102,153,1)",
+    "background-color": "rgba(0,102,153,1.00)",
     "height": "45px",
     "justify-content": "center",
     "min-width": "100px",

@@ -49,10 +49,11 @@
     "express": "4.16.3",
     "node-fetch": "2.2.0",
     "react": "16.4.2",
+    "react-art": "16.5.0",
     "react-apollo": "2.1.4",
     "react-dom": "16.4.2",
     "react-native": "0.55.4",
-    "react-native-web": "0.5.1",
+    "react-native-web": "0.8.9",
     "styled-components": "3.4.0"
   }
 }
