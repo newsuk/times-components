@@ -4,10 +4,11 @@ import { basePropTypes, baseDefaultProps } from "./text-link-prop-types-base";
 export const propTypes = {
   ...basePropTypes,
   onPress: PropTypes.func,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string
 };
 
 export const defaultProps = {
   ...baseDefaultProps,
-  onPress: () => {}
+  onPress: () => {},
+  url: null
 };

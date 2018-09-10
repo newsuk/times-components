@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "@times-components/button";
 import Image from "@times-components/image";
 import ArticleListError from "./article-list-error";
 import propTypes from "./article-list-error-prop-types";
@@ -8,7 +7,6 @@ import {
   PageErrorImageContainer,
   PageErrorContentContainer
 } from "./styles/responsive";
-import styles from "./styles";
 
 const ArticleListPageError = ({ refetch }) => (
   <PageErrorContainer>
@@ -19,8 +17,7 @@ const ArticleListPageError = ({ refetch }) => (
       />
     </PageErrorImageContainer>
     <PageErrorContentContainer>
-      <ArticleListError />
-      <Button onPress={refetch} style={styles.retryButton} title="Retry" />
+      <ArticleListError refetch={refetch} />
     </PageErrorContentContainer>
   </PageErrorContainer>
 );
