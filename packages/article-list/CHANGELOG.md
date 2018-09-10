@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.0.0...@times-components/article-list@5.0.1) (2018-09-10)
+
+
+### Bug Fixes
+
+* pagination storybook ([#1309](https://github.com/newsuk/times-components/issues/1309)) ([c5f65ae](https://github.com/newsuk/times-components/commit/c5f65ae))
+
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@4.2.1...@times-components/article-list@5.0.0) (2018-09-07)
 

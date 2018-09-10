@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.3"></a>
+## [3.1.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.1.2...@times-components/pagination@3.1.3) (2018-09-10)
+
+
+### Bug Fixes
+
+* pagination storybook ([#1309](https://github.com/newsuk/times-components/issues/1309)) ([c5f65ae](https://github.com/newsuk/times-components/commit/c5f65ae))
+
+
+
+
+
 <a name="3.1.2"></a>
 ## [3.1.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.1.1...@times-components/pagination@3.1.2) (2018-09-07)
 
