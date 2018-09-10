@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
 const Pagination = ({
   count,
   generatePageLink,
+  hideResults,
   onNext,
   onPrev,
   page,
-  pageSize,
-  hideResults
+  pageSize
 }) => {
   const finalResult = Math.min(count, page * pageSize);
   const startResult = Math.min(finalResult, (page - 1) * pageSize + 1);
@@ -75,20 +75,20 @@ const Pagination = ({
 Pagination.propTypes = {
   count: PropTypes.number,
   generatePageLink: PropTypes.func.isRequired,
+  hideResults: PropTypes.bool,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
-  pageSize: PropTypes.number,
-  hideResults: PropTypes.bool
+  pageSize: PropTypes.number
 };
 
 Pagination.defaultProps = {
   count: 0,
+  hideResults: false,
   onNext: () => {},
   onPrev: () => {},
   page: 1,
-  pageSize: 20,
-  hideResults: false
+  pageSize: 20
 };
 
 export default withTrackEvents(Pagination, {

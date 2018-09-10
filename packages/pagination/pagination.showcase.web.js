@@ -1,9 +1,31 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import { View } from "react-native";
-import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import Pagination, { withPageState } from "./src/pagination";
+import storybookReporter from "@times-components/tealium-utils";
+import { withTrackingContext } from "@times-components/tracking";
+import Pagination from "./src/pagination";
 import { PreviousPageIcon, NextPageIcon } from "./src/pagination-icons";
+
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
+
+const createPagination = ({ decorateAction, overrideProps = {} }) => {
+  const props = {
+    count: 60,
+    generatePageLink: pageNum => `?page=${pageNum}`,
+    onNext: preventDefaultedAction(decorateAction)("first-page-next"),
+    onPrev: preventDefaultedAction(decorateAction)("first-page-prev"),
+    page: 1,
+    ...overrideProps
+  };
+
+  return <Pagination {...props} />;
+};
 
 const pagination = {
   name: "Composed/Pagination",
@@ -15,140 +37,105 @@ const pagination = {
     {
       type: "story",
       name: "First page",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          onNext={action("first-page-next")}
-          onPrev={action("first-page-prev")}
-          page={1}
-        />
-      )
+      component: (_, { decorateAction }) => createPagination({ decorateAction })
     },
     {
       type: "story",
       name: "Another page",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          onNext={action("another-page-next")}
-          onPrev={action("another-page-prev")}
-          page={2}
-        />
-      )
+      component: (_, { decorateAction }) => {
+        const overrideProps = {
+          onNext: preventDefaultedAction(decorateAction)("another-page-next"),
+          onPrev: preventDefaultedAction(decorateAction)("another-page-prev"),
+          page: 2
+        };
+
+        return createPagination({ decorateAction, overrideProps });
+      }
     },
     {
       type: "story",
       name: "Last page",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          onNext={action("last-page-next")}
-          onPrev={action("last-page-prev")}
-          page={3}
-        />
-      )
+      component: (_, { decorateAction }) => {
+        const overrideProps = {
+          onNext: preventDefaultedAction(decorateAction)("last-page-next"),
+          onPrev: preventDefaultedAction(decorateAction)("last-page-prev"),
+          page: 3
+        };
+
+        return createPagination({ decorateAction, overrideProps });
+      }
     },
     {
       type: "story",
       name: "First page without results information",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          hideResults
-          onNext={action("first-page-next-compact")}
-          onPrev={action("first-page-prev-compact")}
-          page={1}
-        />
-      )
+      component: (_, { decorateAction }) => {
+        const overrideProps = {
+          hideResults: true
+        };
+
+        return createPagination({ decorateAction, overrideProps });
+      }
     },
     {
       type: "story",
       name: "Another page without results information",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          hideResults
-          onNext={action("another-page-next-compact")}
-          onPrev={action("another-page-prev-compact")}
-          page={2}
-        />
-      )
+      component: (_, { decorateAction }) => {
+        {
+          const overrideProps = {
+            hideResults: true,
+            onNext: preventDefaultedAction(decorateAction)(
+              "another-page-next-compact"
+            ),
+            onPrev: preventDefaultedAction(decorateAction)(
+              "another-page-prev-compact"
+            ),
+            page: 2
+          };
+
+          return createPagination({ decorateAction, overrideProps });
+        }
+      }
     },
     {
       type: "story",
       name: "Last page without results information",
-      component: (_, { action }) => (
-        <Pagination
-          count={60}
-          hideResults
-          onNext={action("last-page-next-compact")}
-          onPrev={action("last-page-prev-compact")}
-          page={3}
-        />
-      )
+      component: (_, { decorateAction }) => {
+        {
+          const overrideProps = {
+            hideResults: true,
+            onNext: preventDefaultedAction(decorateAction)(
+              "last-page-next-compact"
+            ),
+            onPrev: preventDefaultedAction(decorateAction)(
+              "last-page-prev-compact"
+            ),
+            page: 3
+          };
+
+          return createPagination({ decorateAction, overrideProps });
+        }
+      }
     },
     {
       type: "story",
       name: "Tracking",
-      component: (_, { action }) => {
-        const pageHandler = e => e.preventDefault();
+      component: (_, { decorateAction }) => {
         const PaginationWithTrackingContext = withTrackingContext(Pagination, {
           trackingObjectName: "Story"
         });
 
         return (
           <PaginationWithTrackingContext
-            analyticsStream={action("analytics-event")}
+            analyticsStream={storybookReporter}
             count={60}
+            generatePageLink={pageNum => `?page=${pageNum}`}
             hideResults
-            onNext={pageHandler}
-            onPrev={pageHandler}
+            onNext={preventDefaultedAction(decorateAction)("onNext")}
+            onPrev={preventDefaultedAction(decorateAction)("onPrev")}
             page={2}
           />
         );
       }
-    }
-  ]
-};
-
-const PageChanger = withPageState(Pagination);
-
-export const helper = {
-  name: "Composed/Pagination/Helper",
-  children: [
-    {
-      type: "decorator",
-      decorator: story => <View style={{ paddingTop: 20 }}>{story()}</View>
-    },
-    {
-      type: "story",
-      name: "First page",
-      component: () => <PageChanger count={60} page={1} />
-    },
-    {
-      type: "story",
-      name: "Another page",
-      component: () => <PageChanger count={60} page={2} />
-    },
-    {
-      type: "story",
-      name: "Last page",
-      component: () => <PageChanger count={60} page={3} />
-    },
-    {
-      type: "story",
-      name: "First page without results information",
-      component: () => <PageChanger count={60} hideResults page={1} />
-    },
-    {
-      type: "story",
-      name: "Another page without results information",
-      component: () => <PageChanger count={60} hideResults page={2} />
-    },
-    {
-      type: "story",
-      name: "Last page without results information",
-      component: () => <PageChanger count={60} hideResults page={3} />
     }
   ]
 };
@@ -158,7 +145,7 @@ export const icons = {
   children: [
     {
       type: "decorator",
-      decorator: story => <View style={{ paddingTop: 20 }}>{story()}</View>
+      decorator: LateralSpacingDecorator
     },
     {
       type: "story",

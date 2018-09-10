@@ -14,11 +14,11 @@ const ArticleListPagination = props => (
 
 ArticleListPagination.propTypes = {
   count: PropTypes.number.isRequired,
+  hideResults: PropTypes.bool.isRequired,
   onNext: PropTypes.func.isRequired,
   onPrev: PropTypes.func.isRequired,
   page: PropTypes.number.isRequired,
-  pageSize: PropTypes.number.isRequired,
-  hideResults: PropTypes.bool.isRequired
+  pageSize: PropTypes.number.isRequired
 };
 
 export default ArticleListPagination;
