@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.0.0...@times-components/video@4.0.1) (2018-09-10)
+
+
+### Bug Fixes
+
+* update video account and id on test videos ([#1310](https://github.com/newsuk/times-components/issues/1310)) ([85f3413](https://github.com/newsuk/times-components/commit/85f3413))
+
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/newsuk/times-components/compare/@times-components/video@3.1.33...@times-components/video@4.0.0) (2018-09-07)
 
