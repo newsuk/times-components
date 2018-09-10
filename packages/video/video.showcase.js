@@ -6,8 +6,8 @@ import IsPaidSubscriber from "./src/is-paid-subscriber";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
-const accountId = "57838016001";
-const videoId = "4084164751001";
+const accountId = "5436121857001";
+const videoId = "5831024132001";
 const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
@@ -50,7 +50,7 @@ export default {
         <View>
           <Video {...defaultVideoProps} />
           <View style={{ height: 20 }} />
-          <Video {...defaultVideoProps} videoId="1532562858001" />
+          <Video {...defaultVideoProps} videoId="5612887446001" />
         </View>
       )
     },

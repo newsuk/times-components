@@ -300,12 +300,12 @@ exports[`3. an article with a video as the lead asset 1`] = `
                 <div>
                   <video
                     controls={true}
-                    data-account="57838016001"
+                    data-account="5436121857001"
                     data-application-id={true}
                     data-embed="default"
                     data-player="default"
-                    data-video-id="4084164751001"
-                    id="4084164751001-57838016001-2"
+                    data-video-id="5831024132001"
+                    id="5831024132001-5436121857001-2"
                     poster="https://video.io"
                   />
                 </div>
