@@ -247,7 +247,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
     <View>
       <View>
         <Video
-          accountId="57838016001"
+          accountId="5436121857001"
           height={421.875}
           policyKey="1.2.3.4"
           poster={
@@ -255,7 +255,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
               "uri": "https://video.io",
             }
           }
-          videoId="4084164751001"
+          videoId="5831024132001"
           width={750}
         />
       </View>

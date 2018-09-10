@@ -641,9 +641,9 @@ export const videoLeadAsset = (
     url = defaultVideoPosterUrl
   } = {}
 ) => ({
-  brightcoveVideoId: "4084164751001",
+  brightcoveVideoId: "5831024132001",
   brightcovePolicyKey,
-  brightcoveAccountId: "57838016001",
+  brightcoveAccountId: "5436121857001",
   paidOnly: "false",
   caption: "This is video caption",
   posterImage: {
@@ -978,10 +978,10 @@ const defaultContent = [
     attributes: {
       display: "primary",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-      brightcoveVideoId: "4084164751001",
+      brightcoveVideoId: "5831024132001",
       brightcovePolicyKey:
         "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
-      brightcoveAccountId: "57838016001",
+      brightcoveAccountId: "5436121857001",
       paidOnly: "false",
       caption: "This is video caption",
       posterImageUrl:
@@ -1013,10 +1013,10 @@ const defaultContent = [
     name: "video",
     attributes: {
       display: "secondary",
-      brightcoveVideoId: "4084164751001",
+      brightcoveVideoId: "5831024132001",
       brightcovePolicyKey:
         "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
-      brightcoveAccountId: "57838016001",
+      brightcoveAccountId: "5436121857001",
       paidOnly: "false",
       caption: "This is video caption secondary",
       posterImageUrl:
