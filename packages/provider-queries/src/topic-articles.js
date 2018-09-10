@@ -15,6 +15,8 @@ export default gql`
           headline
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             type: __typename
             ... on Image {

@@ -16,6 +16,8 @@ export default gql`
           longSummary: summary(maxCharCount: $longSummaryLength)
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             type: __typename
           }

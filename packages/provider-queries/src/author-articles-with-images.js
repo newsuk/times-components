@@ -14,6 +14,8 @@ export default gql`
           summary(maxCharCount: 145)
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             type: __typename
             ... on Image {
