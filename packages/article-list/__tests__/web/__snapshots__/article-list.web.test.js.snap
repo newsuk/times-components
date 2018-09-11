@@ -231,71 +231,9 @@ exports[`1. article list 1`] = `
         </Link>
       </div>
     </div>
-    <div
-      accessibility-label="ca00422e-8e6f-11e8-9eb6-529269fb1459.4"
-      id="ca00422e-8e6f-11e8-9eb6-529269fb1459.4"
-    >
-      <div>
-        <div>
-          <div />
-        </div>
-        <Link
-          url="https://article5.io"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={1440}
-              imageRatio={1}
-              imageUri="https://lead5.io"
-              lowResSize={100}
-              showImage={true}
-            >
-              <ArticleSummary
-                bylineProps={
-                  Object {
-                    "ast": Array [
-                      Object {
-                        "attributes": Object {},
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Byline 5",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "paragraph",
-                      },
-                    ],
-                    "color": "#333333",
-                  }
-                }
-                datePublicationProps={
-                  Object {
-                    "date": "2017-11-17T00:01:00.000Z",
-                    "publication": "SUNDAYTIMES",
-                  }
-                }
-                labelProps={
-                  Object {
-                    "color": "#333333",
-                    "isVideo": false,
-                    "title": "Label 5",
-                  }
-                }
-              />
-            </Card>
-          </div>
-        </Link>
-      </div>
-    </div>
-    <div>
-      <Ad
-        slotName="inline-ad"
-      />
-    </div>
+    <Ad
+      slotName="inline-ad"
+    />
     <div>
       <div>
         <Pagination

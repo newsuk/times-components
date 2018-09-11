@@ -168,12 +168,14 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
-    const AdComponent = (
-      <View style={styles.adContainer}>
-        <AdComposer adConfig={adConfig}>
-          <Ad isLoading={articlesLoading} slotName="inline-ad" />
-        </AdComposer>
-      </View>
+    const renderAdComponent = ({ key }) => (
+      <AdComposer adConfig={adConfig} key={key}>
+        <Ad
+          isLoading={articlesLoading}
+          slotName="inline-ad"
+          style={styles.adContainer}
+        />
+      </AdComposer>
     );
 
     const data = articlesLoading
@@ -201,13 +203,9 @@ class ArticleList extends Component {
             data.map((article, index) => {
               const { elementId } = article;
 
-              const renderAd = () => {
-                if (index !== this.advertPosition || !hasAdvertConfig) {
-                  return null;
-                }
-
-                return AdComponent;
-              };
+              if (index === this.advertPosition && hasAdvertConfig) {
+                return renderAdComponent({ key: `advert${index}` });
+              }
 
               const renderSeperator = () => {
                 if (index === 0 || index === this.advertPosition + 1) {
@@ -245,7 +243,6 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {renderAd()}
                 </Fragment>
               );
             })}
