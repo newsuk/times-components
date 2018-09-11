@@ -1,5 +1,4 @@
 import React from "react";
-import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import Button from "../src/button";
 
@@ -16,16 +15,18 @@ export default renderMethod => {
       }
     },
     {
-      name: "should handle the onPress event",
+      name: "button with font and line-height",
       test: () => {
-        const onPressMock = jest.fn();
-        const wrapper = shallow(
-          <Button onPress={onPressMock} title="test button" />
+        const output = renderMethod(
+          <Button
+            fontSize={10}
+            lineHeight={10}
+            onPress={() => null}
+            title="test button"
+          />
         );
 
-        wrapper.simulate("press");
-
-        expect(onPressMock).toHaveBeenCalled();
+        expect(output).toMatchSnapshot();
       }
     }
   ];

@@ -1,40 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. button 1`] = `
-<style>
-{
-  "S1": {
-    "color": "rgba(255,255,255,1)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "16px",
-    "padding-top": "1px",
-  },
-  "S2": {
-    "-ms-flex-align": "center",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-pack": "center",
-    "-webkit-justify-content": "center",
-    "align-items": "center",
-    "background-color": "rgba(0,102,153,1)",
-    "height": "45px",
-    "justify-content": "center",
-    "min-width": "100px",
-    "padding-top": "0px",
-    "width": "160px",
-  },
-}
-</style>
-
-<div
-  className="S2"
+<button
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "color": "#FFFFFF",
+      "cursor": "pointer",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 16,
+      "height": 45,
+      "justifyContent": "center",
+      "lineHeight": 0,
+      "minWidth": 100,
+      "paddingTop": 4,
+      "width": 160,
+    }
+  }
+  type="button"
 >
-  <div
-    className="S1"
-    title="Test button"
-  >
-    Test button
-  </div>
-</div>
+  Test button
+</button>
+`;
+
+exports[`2. button with font and line-height 1`] = `
+<button
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "color": "#FFFFFF",
+      "cursor": "pointer",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 10,
+      "height": 45,
+      "justifyContent": "center",
+      "lineHeight": 10,
+      "minWidth": 100,
+      "paddingTop": 4,
+      "width": 160,
+    }
+  }
+  type="button"
+>
+  Test button
+</button>
 `;

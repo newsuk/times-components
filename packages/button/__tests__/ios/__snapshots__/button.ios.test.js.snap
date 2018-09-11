@@ -20,10 +20,44 @@ exports[`1. button 1`] = `
   <Text
     style={
       Object {
-        "color": "#FFF",
+        "color": "#FFFFFF",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 16,
         "lineHeight": 16,
+        "paddingTop": 5,
+      }
+    }
+    title="Test button"
+  >
+    Test button
+  </Text>
+</TouchableHighlight>
+`;
+
+exports[`2. button with font and line-height 1`] = `
+<TouchableHighlight
+  activeOpacity={1}
+  delayPressOut={100}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "height": 45,
+      "justifyContent": "center",
+      "minWidth": 100,
+      "width": "100%",
+    }
+  }
+  underlayColor="#0077B3"
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 10,
+        "lineHeight": 10,
         "paddingTop": 5,
       }
     }

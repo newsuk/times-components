@@ -12,7 +12,7 @@ const styles = {
     width: "100%"
   },
   text: {
-    color: "#FFF",
+    color: colours.functional.white,
     ...fontFactory({
       font: "supporting",
       fontSize: "button"
