@@ -24,3 +24,28 @@ exports[`1. button 1`] = `
   Test button
 </button>
 `;
+
+exports[`2. button with font and line-height 1`] = `
+<button
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "color": "#FFFFFF",
+      "cursor": "pointer",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 10,
+      "height": 45,
+      "justifyContent": "center",
+      "lineHeight": 10,
+      "minWidth": 100,
+      "paddingTop": 4,
+      "width": 160,
+    }
+  }
+  type="button"
+>
+  Test button
+</button>
+`;
