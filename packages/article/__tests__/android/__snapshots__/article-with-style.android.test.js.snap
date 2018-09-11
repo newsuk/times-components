@@ -76,7 +76,7 @@ exports[`1. an error 1`] = `
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#FFFFFF",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 14,
           "lineHeight": 14,

@@ -175,7 +175,7 @@ exports[`1. a full article with enabled comments 1`] = `
           <Text
             style={
               Object {
-                "color": "#FFF",
+                "color": "#FFFFFF",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 14,
                 "lineHeight": 16,
