@@ -1,15 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`accessible button 1`] = `
-<div
-  aria-label="Test button"
-  role="button"
-  tabIndex="0"
+<button
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "color": "#FFFFFF",
+      "cursor": "pointer",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 16,
+      "height": 45,
+      "justifyContent": "center",
+      "lineHeight": 0,
+      "minWidth": 100,
+      "paddingTop": 4,
+      "width": 160,
+    }
+  }
+  type="button"
 >
-  <div
-    title="Test button"
-  >
-    Test button
-  </div>
-</div>
+  Test button
+</button>
 `;

@@ -1,3 +1,5 @@
+import React from "react";
+import { shallow } from "enzyme";
 import {
   addSerializers,
   compose,
@@ -7,7 +9,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { shallow } from "enzyme";
+import Button from "../src/button";
 import shared from "./shared.base";
 
 export default () => {
@@ -21,6 +23,17 @@ export default () => {
       flattenStyleTransform
     )
   );
+
+  it("should handle the onPress event", () => {
+    const onPressMock = jest.fn();
+    const wrapper = shallow(
+      <Button onPress={onPressMock} title="test button" />
+    );
+
+    wrapper.simulate("press");
+
+    expect(onPressMock).toHaveBeenCalled();
+  });
 
   shared(shallow);
 };

@@ -14,7 +14,7 @@ import ArticleListItemSeparator from "./article-list-item-separator";
 import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
-import styles from "./styles";
+import styles, { retryButtonStyles } from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
 class ArticleList extends Component {
@@ -163,7 +163,7 @@ class ArticleList extends Component {
         {paginationComponent()}
         <View style={styles.listContentErrorContainer}>
           <ArticleListError />
-          <Button onPress={refetch} style={styles.retryButton} title="Retry" />
+          <Button onPress={refetch} style={retryButtonStyles} title="Retry" />
         </View>
       </ListContentContainer>
     );

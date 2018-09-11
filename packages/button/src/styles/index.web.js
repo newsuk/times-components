@@ -1,15 +1,25 @@
-import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
+import styleguide from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
+const { colours, fontFactory } = styleguide();
+
+const styles = {
   button: {
-    ...sharedStyles.button,
+    alignItems: "center",
+    backgroundColor: colours.functional.action,
+    borderRadius: 2,
+    color: colours.functional.white,
+    cursor: "pointer",
+    height: 45,
+    justifyContent: "center",
+    minWidth: 100,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "button"
+    }),
+    paddingTop: 4,
+    lineHeight: 0,
     width: 160
-  },
-  text: {
-    ...sharedStyles.text,
-    paddingTop: 1
   }
-});
+};
 
 export default styles;
