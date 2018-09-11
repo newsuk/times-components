@@ -3,7 +3,7 @@ import React from "react";
 import { Article } from "./src/pages";
 
 export default {
-  name: "Pages/Pages",
+  name: "Pages with provider",
   children: [
     {
       type: "story",
