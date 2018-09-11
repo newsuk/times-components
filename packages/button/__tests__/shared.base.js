@@ -18,7 +18,12 @@ export default renderMethod => {
       name: "button with font and line-height",
       test: () => {
         const output = renderMethod(
-          <Button fontSize={10} lineHeight={10} onPress={() => null} title="test button" />
+          <Button
+            fontSize={10}
+            lineHeight={10}
+            onPress={() => null}
+            title="test button"
+          />
         );
 
         expect(output).toMatchSnapshot();
