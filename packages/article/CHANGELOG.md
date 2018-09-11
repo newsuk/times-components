@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.4"></a>
+## [5.0.4](https://github.com/newsuk/times-components/compare/@times-components/article@5.0.3...@times-components/article@5.0.4) (2018-09-11)
+
+
+### Bug Fixes
+
+* replace RN touchable component with web button ([#1312](https://github.com/newsuk/times-components/issues/1312)) ([b4d93a8](https://github.com/newsuk/times-components/commit/b4d93a8))
+
+
+
+
+
 <a name="5.0.3"></a>
 ## [5.0.3](https://github.com/newsuk/times-components/compare/@times-components/article@5.0.2...@times-components/article@5.0.3) (2018-09-10)
 
