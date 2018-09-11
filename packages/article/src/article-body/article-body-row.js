@@ -12,7 +12,9 @@ import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import styles from "../styles/article-body";
+import styleFactory from "../styles/article-body";
+
+const styles = styleFactory();
 
 const ArticleRow = ({
   content: { data, index },
