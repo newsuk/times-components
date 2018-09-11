@@ -15,8 +15,7 @@ const nativeSpecific = (platform: Platform) => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
-    providesModuleNodeModules: ["react", "react-native"],
-    moduleFileExtensions: [`${platform}.js`, "native.js", "js", "json"]
+    providesModuleNodeModules: ["react", "react-native"]
   }
 });
 
