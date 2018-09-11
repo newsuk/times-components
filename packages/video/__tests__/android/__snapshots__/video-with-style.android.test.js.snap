@@ -28,6 +28,7 @@ exports[`1. video 1`] = `
         "position": "absolute",
         "top": 0,
         "width": 300,
+        "zIndex": 2,
       }
     }
   >
@@ -71,6 +72,7 @@ exports[`2. video without a poster image 1`] = `
         "position": "absolute",
         "top": 0,
         "width": 300,
+        "zIndex": 2,
       }
     }
   >
