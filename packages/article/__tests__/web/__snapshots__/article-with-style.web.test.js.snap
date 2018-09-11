@@ -398,8 +398,7 @@ exports[`full article with style 1`] = `
     "borderTopWidth": 1,
     "marginBottom": "30px",
     "marginTop": "30px",
-    "paddingBottom": "10px",
-    "paddingTop": "10px",
+    "paddingHorizontal": "10px",
   },
   "IS15": {
     "borderTopColor": "#DBDBDB",

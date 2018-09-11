@@ -28,12 +28,11 @@ const sharedStyles = scale => {
       marginTop: 0
     },
     ad: {
-      borderTopColor: colours.functional.keyline,
       borderBottomColor: colours.functional.keyline,
-      borderTopWidth: 1,
       borderBottomWidth: 1,
-      paddingTop: spacing(2),
-      paddingBottom: spacing(2),
+      borderTopColor: colours.functional.keyline,
+      borderTopWidth: 1,
+      paddingHorizontal: spacing(2),
       marginBottom: spacing(4)
     },
     interactiveContainer: {
@@ -42,9 +41,9 @@ const sharedStyles = scale => {
       marginBottom: spacing(4)
     },
     primaryContainer: {
-      width: "100%",
       flexDirection: "column",
-      paddingBottom: spacing(5)
+      paddingBottom: spacing(5),
+      width: "100%"
     }
   };
 };

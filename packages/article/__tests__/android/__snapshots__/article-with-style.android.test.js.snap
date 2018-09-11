@@ -643,8 +643,7 @@ exports[`5. an article with ads 1`] = `
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
             "marginBottom": 20,
-            "paddingBottom": 10,
-            "paddingTop": 10,
+            "paddingHorizontal": 10,
           }
         }
       />
