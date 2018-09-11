@@ -76,16 +76,6 @@ describe("Jest Configurator Tests", () => {
       const config = jestConfigurator("ios", dir);
       expect(config.haste.platforms).toEqual(["ios"]);
     });
-
-    it("should use the correct module name extensions", () => {
-      const config = jestConfigurator("ios", dir);
-      expect(config.haste.moduleFileExtensions).toEqual([
-        "ios.js",
-        "native.js",
-        "js",
-        "json"
-      ]);
-    });
   });
 
   describe("No platform specific config", () => {
