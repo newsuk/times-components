@@ -13,6 +13,12 @@ const list = fixtureGenerator.makeCustomArticles(1, {
   id(i) {
     return `7225cd6a-701c-11e8-bea3-bf1a5a054f${i}a`;
   },
+  slug(i) {
+    return `slug ${i}`;
+  },
+  shortIdentifier(i) {
+    return `shortIdentifier ${i}`;
+  },
   label(i) {
     return `Label ${i}`;
   },

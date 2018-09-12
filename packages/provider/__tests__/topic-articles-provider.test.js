@@ -63,6 +63,12 @@ const list = fixtureGenerator.makeCustomArticles(1, {
   },
   url(i) {
     return `https://article${i}.io`;
+  },
+  slug(i) {
+    return `who-shock-at-mod-s-latest-recruit-gavin-williamson${i}`;
+  },
+  shortIdentifier(i) {
+    return `968n7tdck${i}`;
   }
 });
 

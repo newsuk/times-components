@@ -27,6 +27,7 @@ Object {
         ],
         "publicationName": "TIMES",
         "publishedTime": "2018-06-14T23:01:00.000Z",
+        "shortIdentifier": "shortIdentifier 1",
         "shortSummary": Array [
           Object {
             "attributes": Object {
@@ -36,6 +37,7 @@ Object {
             "name": "text",
           },
         ],
+        "slug": "slug 1",
         "url": "https://article1.io",
         Symbol(id): "Article:7225cd6a-701c-11e8-bea3-bf1a5a054f1a",
       },

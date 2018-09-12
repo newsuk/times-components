@@ -36,7 +36,9 @@ const makeCustomArticles = (
     section = () => {},
     shortSummary = () => {},
     summary = () => {},
-    url = () => {}
+    url = () => {},
+    slug = () => {},
+    shortIdentifier = () => {}
   }
 ) => {
   const articles = [];
@@ -54,7 +56,9 @@ const makeCustomArticles = (
       ["section", section(i)],
       ["shortSummary", shortSummary(i)],
       ["summary", summary(i)],
-      ["url", url(i)]
+      ["url", url(i)],
+      ["slug", slug(i)],
+      ["shortIdentifier", shortIdentifier(i)]
     ];
 
     const article = props.reduce(
@@ -77,6 +81,8 @@ const defaultArticleWithImagesList = fixtures => {
     headline: getFixture("headline"),
     id: getFixture("id"),
     label: getFixture("label"),
+    slug: getFixture("slug"),
+    shortIdentifier: getFixture("shortIdentifier"),
     leadAsset: getFixture("leadAsset"),
     publicationName: getFixture("publicationName"),
     publishedTime: getFixture("publishedTime"),
@@ -91,6 +97,8 @@ const defaultArticleNoImagesList = fixtures => {
   return makeCustomArticles(10, {
     headline: getFixture("headline"),
     id: getFixture("id"),
+    slug: getFixture("slug"),
+    shortIdentifier: getFixture("shortIdentifier"),
     label: getFixture("label"),
     leadAsset: getFixture("leadAsset"),
     longSummary: getFixture("longSummary"),
@@ -109,6 +117,8 @@ const defaultTopicList = fixtures => {
     headline: getFixture("headline"),
     id: getFixture("id"),
     label: getFixture("label"),
+    slug: getFixture("slug"),
+    shortIdentifier: getFixture("shortIdentifier"),
     leadAsset: getFixture("leadAsset"),
     publicationName: getFixture("publicationName"),
     publishedTime: getFixture("publishedTime"),
