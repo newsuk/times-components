@@ -15,7 +15,7 @@ const { fetch } = NativeModules.NativeModuleFetch;
 const { track } = NativeModules.NativeModuleAnalytics;
 
 const platformAdConfig = {
-  adUnit: "d.thetimes.co.uk",
+  adUnit: "thetimes.mob.ios",
   networkId: "25436805",
   testMode: "",
   sectionId: "",

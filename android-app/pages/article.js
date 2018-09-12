@@ -18,8 +18,8 @@ const {
 const ArticlePageView = Article(config)(fetch);
 
 const platformAdConfig = {
-  adUnit: "d.thetimes.co.uk",
-  networkId: "25436805",
+  adUnit: "thetimes.mob.android",
+  networkId: config.adNetworkId,
   testMode: "",
   appVersion: config.appVersion,
   operatingSystem: "Android",
