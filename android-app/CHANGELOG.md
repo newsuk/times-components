@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.12"></a>
+## [0.8.12](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.11...@times-components/android-app@0.8.12) (2018-09-12)
+
+
+### Bug Fixes
+
+* android ad id ([#1319](https://github.com/newsuk/times-components/issues/1319)) ([4adeb17](https://github.com/newsuk/times-components/commit/4adeb17))
+
+
+
+
+
 <a name="0.8.11"></a>
 ## [0.8.11](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.10...@times-components/android-app@0.8.11) (2018-09-12)
 
