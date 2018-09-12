@@ -26,7 +26,8 @@ const styles = {
     left: 0,
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    zIndex: 2
   }
 };
 
