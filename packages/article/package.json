@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -95,7 +95,7 @@
     "@times-components/styleguide": "3.3.8",
     "@times-components/tracking": "2.1.22",
     "@times-components/utils": "4.0.1",
-    "@times-components/video": "4.0.2",
+    "@times-components/video": "4.0.3",
     "@times-components/video-label": "2.1.30",
     "lodash.get": "4.4.2",
     "lodash.invert": "4.3.0",
