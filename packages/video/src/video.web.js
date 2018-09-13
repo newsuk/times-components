@@ -17,7 +17,7 @@ const Video = props => {
     <ErrorView>
       {({ hasError }) =>
         hasError ? (
-          <VideoError height={height} width={width} />
+          <VideoError height={height} poster={poster} width={width} />
         ) : (
           <IsPaidSubscriber.Consumer>
             {isPaidSubscriber =>

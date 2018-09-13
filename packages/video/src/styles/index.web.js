@@ -1,33 +1,69 @@
 import { StyleSheet } from "react-native";
-import { fonts, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontFactory,
+  spacing
+} from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  heading: {
+    color: colours.functional.contrast,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "infoTitle"
+    }),
+    textAlign: "center",
+    width: "auto",
+    height: "auto",
+    marginBottom: spacing(2)
+  },
   body: {
     fontFamily: fonts.body,
-    fontSize: "14px",
     textAlign: "center",
-    color: "rgba(255, 255, 255, 0.8)",
-    width: 410,
+    color: colours.functional.contrast,
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "secondary"
+    }),
+    lineHeight: 25,
+    opacity: 0.7,
     height: "auto",
-    maxWidth: "80%"
+    maxWidth: 285
   },
   background: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.6)"
+    backgroundColor: "rgba(0, 0, 0, 1)"
   },
-  heading: {
-    fontFamily: fonts.headline,
-    fontSize: "20px",
-    textAlign: "center",
-    color: "white",
-    width: "auto",
-    height: "auto",
-    marginBottom: spacing(2)
+  textContainer: {
+    position: "absolute",
+    maxWidth: "80%"
+  },
+  posterContainer: {
+    filter: "blur(8px)",
+    opacity: 0.2,
+    width: "100%",
+    height: "100%"
+  },
+  posterImage: {
+    position: "absolute",
+    overflow: "hidden",
+    width: "100%",
+    height: "100%"
   }
 });
 
+const retryButtonStyles = {
+  alignSelf: "center",
+  marginTop: spacing(3),
+  maxWidth: 107,
+  height: 36,
+  border: 0
+};
+
+export { retryButtonStyles };
 export default styles;

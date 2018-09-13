@@ -7,6 +7,7 @@ const styles = {
     alignItems: "center",
     backgroundColor: colours.functional.action,
     borderRadius: 2,
+    borderColor: colours.functional.action,
     color: colours.functional.white,
     cursor: "pointer",
     height: 45,

@@ -6,6 +6,7 @@ exports[`1. button 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#006699",
+      "borderColor": "#006699",
       "borderRadius": 2,
       "color": "#FFFFFF",
       "cursor": "pointer",
@@ -31,6 +32,7 @@ exports[`2. button with font and line-height 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#006699",
+      "borderColor": "#006699",
       "borderRadius": 2,
       "color": "#FFFFFF",
       "cursor": "pointer",
