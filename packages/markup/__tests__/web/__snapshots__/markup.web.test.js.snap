@@ -57,4 +57,16 @@ exports[`9. strong 1`] = `
 </strong>
 `;
 
-exports[`10. does not render a script tag 1`] = `<div />`;
+exports[`10. subscript 1`] = `
+<sub>
+  2
+</sub>
+`;
+
+exports[`11. superscript 1`] = `
+<sup>
+  2
+</sup>
+`;
+
+exports[`12. does not render a script tag 1`] = `<div />`;

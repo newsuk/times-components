@@ -1,0 +1,12 @@
+{
+  "name": "superscript",
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "without unicode support"
+      },
+      "children": []
+    }
+  ]
+}
