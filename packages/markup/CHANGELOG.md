@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.1.9...@times-components/markup@3.2.0) (2018-09-13)
+
+
+### Features
+
+* subscript and superscript markup ([#1320](https://github.com/newsuk/times-components/issues/1320)) ([3757746](https://github.com/newsuk/times-components/commit/3757746))
+
+
+
+
+
 <a name="3.1.9"></a>
 ## [3.1.9](https://github.com/newsuk/times-components/compare/@times-components/markup@3.1.8...@times-components/markup@3.1.9) (2018-09-11)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.8"></a>
+## [5.0.8](https://github.com/newsuk/times-components/compare/@times-components/article@5.0.7...@times-components/article@5.0.8) (2018-09-13)
+
+
+### Bug Fixes
+
+* missing props article and missing provider params ([#1322](https://github.com/newsuk/times-components/issues/1322)) ([b685d02](https://github.com/newsuk/times-components/commit/b685d02))
+
+
+
+
+
 <a name="5.0.7"></a>
 ## [5.0.7](https://github.com/newsuk/times-components/compare/@times-components/article@5.0.6...@times-components/article@5.0.7) (2018-09-13)
 

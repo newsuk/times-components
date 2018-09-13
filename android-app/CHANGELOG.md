@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.14"></a>
+## [0.8.14](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.13...@times-components/android-app@0.8.14) (2018-09-13)
+
+
+### Bug Fixes
+
+* missing props article and missing provider params ([#1322](https://github.com/newsuk/times-components/issues/1322)) ([b685d02](https://github.com/newsuk/times-components/commit/b685d02))
+
+
+
+
+
 <a name="0.8.13"></a>
 ## [0.8.13](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.12...@times-components/android-app@0.8.13) (2018-09-13)
 

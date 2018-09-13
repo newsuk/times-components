@@ -1,6 +1,6 @@
 {
   "name": "@times-components/context",
-  "version": "0.4.19",
+  "version": "0.4.20",
   "description": "Shared context between components",
   "main": "dist/context",
   "dev": "src/context",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.3.8"
+    "@times-components/styleguide": "3.3.9"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.0",
