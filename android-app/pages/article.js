@@ -50,7 +50,7 @@ const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
       onTopicPress={onTopicPress}
       platformAdConfig={adConfig}
       scale={scale}
-      section={sectionName}
+      sectionName={sectionName}
     />
   );
 };

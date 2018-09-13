@@ -7,8 +7,8 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 export const sharedPropTypes = {
   article: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
-    headline: PropTypes.string.isRequired,
-    shortHeadline: PropTypes.string.isRequired,
+    headline: PropTypes.string,
+    shortHeadline: PropTypes.string,
     label: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
     summary105: PropTypes.arrayOf(treePropType),

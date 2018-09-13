@@ -54,14 +54,16 @@ const ArticleMetaBase = ({
 
 const TextNode = PropTypes.shape({ text: PropTypes.string });
 
-const nodeShape = {
+const childNode = {
   name: PropTypes.string.isRequired,
   attributes: PropTypes.object.isRequired
 };
 
-nodeShape.children = PropTypes.arrayOf(
-  PropTypes.oneOfType([PropTypes.shape(nodeShape), TextNode])
-).isRequired;
+const nodeShape = {
+  children: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.shape(childNode), TextNode])
+  ).isRequired
+};
 
 ArticleMetaBase.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
