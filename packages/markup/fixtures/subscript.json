@@ -1,0 +1,12 @@
+{
+  "name": "subscript",
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "2"
+      },
+      "children": []
+    }
+  ]
+}

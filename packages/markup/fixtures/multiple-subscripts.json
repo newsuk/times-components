@@ -1,0 +1,225 @@
+[
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value":
+            "The Fibonacci sequence is defined by the recurrence relation u"
+        },
+        "children": []
+      },
+      {
+        "name": "subscript",
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "n"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "text",
+        "attributes": {
+          "value": " = u"
+        },
+        "children": []
+      },
+      {
+        "name": "subscript",
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "n-1"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "text",
+        "attributes": {
+          "value": " + u"
+        },
+        "children": []
+      },
+      {
+        "name": "subscript",
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "n-2"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "text",
+        "attributes": {
+          "value": "."
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "emphasis",
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value":
+                "The Fibonacci sequence is defined by the recurrence relation u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": " = u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n-1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": " + u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n-2"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": "."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "strong",
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value":
+                "The Fibonacci sequence is defined by the recurrence relation u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": " = u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n-1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": " + u"
+            },
+            "children": []
+          },
+          {
+            "name": "subscript",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "n-2"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "attributes": {
+              "value": "."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

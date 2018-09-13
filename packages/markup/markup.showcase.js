@@ -11,6 +11,8 @@ const multiParagraph = require("./fixtures/multi-paragraph.json");
 const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
+const subscript = require("./fixtures/multiple-subscripts.json");
+const superscript = require("./fixtures/multiple-superscripts.json");
 
 export default {
   name: "Composed/Markup",
@@ -56,6 +58,16 @@ export default {
       type: "story",
       name: "Ratings",
       component: () => <View>{renderTrees(ratings, coreRenderers)}</View>
+    },
+    {
+      type: "story",
+      name: "Subscript",
+      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>
+    },
+    {
+      type: "story",
+      name: "Superscript",
+      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>
     },
     {
       type: "story",

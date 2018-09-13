@@ -13,6 +13,8 @@ import italic from "../fixtures/italic.json";
 import lineBreak from "../fixtures/break.json";
 import script from "../fixtures/script.json";
 import strong from "../fixtures/strong.json";
+import subscript from "../fixtures/subscript.json";
+import superscript from "../fixtures/superscript.json";
 
 export default renderComponent => {
   const tests = [
@@ -86,6 +88,22 @@ export default renderComponent => {
       name: "strong",
       test: () => {
         const output = renderComponent(renderTree(strong, coreRenderers));
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "subscript",
+      test: () => {
+        const output = renderComponent(renderTree(subscript, coreRenderers));
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "superscript",
+      test: () => {
+        const output = renderComponent(renderTree(superscript, coreRenderers));
 
         expect(output).toMatchSnapshot();
       }
