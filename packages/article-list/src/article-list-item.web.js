@@ -31,7 +31,7 @@ const ArticleListItem = props => {
     shortSummary,
     showImage,
     summary,
-    url
+    canonicalUrl
   } = props;
 
   const imageUri = getImageUri(props);
@@ -92,7 +92,7 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link url={url}>
+    <Link url={canonicalUrl}>
       <ListItemWrapper>
         <Card
           contentContainerClass="articleListContent"

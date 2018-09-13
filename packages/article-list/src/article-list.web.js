@@ -122,7 +122,8 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages
+      showImages,
+      makeUrl
     } = this.props;
 
     const hasAdvertConfig = Object.keys(adConfig).length > 0;
@@ -207,6 +208,8 @@ class ArticleList extends Component {
                 return <ArticleListItemSeparator />;
               };
 
+              const canonicalUrl = makeUrl(article.slug, article.shortIdentifier);
+
               return (
                 <Fragment key={elementId}>
                   <div
@@ -222,6 +225,7 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
+                              canonicalUrl={canonicalUrl}
                               imageRatio={imageRatio}
                               imageSize={this.getImageSize(elementId) || 100}
                               index={index}
