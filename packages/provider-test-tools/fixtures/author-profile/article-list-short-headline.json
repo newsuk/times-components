@@ -107,8 +107,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-14T17:00:00.000Z",
     "headline": "",
-    "shortHeadline":
-      "Cuts have left the army 20 years out of date",
+    "shortHeadline": "Cuts have left the army 20 years out of date",
     "url":
       "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
     "__typename": "Article"
@@ -234,7 +233,8 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-10T00:01:00.000Z",
     "headline": "",
-    "shortHeadline": "MoD heralds a \u2018renewed\u2019 US special relationship",
+    "shortHeadline":
+      "MoD heralds a \u2018renewed\u2019 US special relationship",
     "url":
       "https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs",
     "__typename": "Article"
@@ -356,7 +356,8 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-03T00:01:00.000Z",
     "headline": "",
-    "shortHeadline": "Fallon denies lewd comment about Leadsom\u2019s cold hands",
+    "shortHeadline":
+      "Fallon denies lewd comment about Leadsom\u2019s cold hands",
     "url":
       "https://www.thetimes.co.uk/article/fallon-denies-lewd-comment-about-leadsom-s-cold-hands-gkp3wnzn0",
     "__typename": "Article"
@@ -527,7 +528,8 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-01T00:01:00.000Z",
     "headline": "",
-    "shortHeadline": "Troops posted to Iraq face losing \u00a329 daily allowance",
+    "shortHeadline":
+      "Troops posted to Iraq face losing \u00a329 daily allowance",
     "url":
       "https://www.thetimes.co.uk/article/british-troops-posted-to-iraq-face-losing-29-daily-allowance-qnnk80qb9",
     "__typename": "Article"

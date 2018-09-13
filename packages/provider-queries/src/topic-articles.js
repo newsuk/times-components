@@ -33,9 +33,10 @@ export default gql`
               }
             }
           }
-          section
           publicationName
           publishedTime
+          section
+          shortHeadline
           summary(maxCharCount: 115)
           url
         }

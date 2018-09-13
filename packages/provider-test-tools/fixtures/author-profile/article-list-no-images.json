@@ -129,6 +129,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-14T23:01:00.000Z",
     "headline": "Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant",
+    "shortHeadline": "Rolls-Royce spy Bryn Jones was Chinese",
     "url":
       "https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm"
   },
@@ -344,6 +345,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-13T23:01:00.000Z",
     "headline": "Trump pressuring Britain to pay more towards Nato",
+    "shortHeadline": "Trump pressuring Britain",
     "url":
       "https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3"
   },
@@ -440,6 +442,7 @@
     "publishedTime": "2018-06-07T23:01:00.000Z",
     "headline":
       "British troops to protect Bosnia election from Russian meddling",
+    "shortHeadline": "British troops to protect Bosnia",
     "url":
       "https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx"
   },
@@ -562,6 +565,7 @@
     "publishedTime": "2018-06-07T23:01:00.000Z",
     "headline":
       "Tory MP Johnny Mercer swings into action to protect shopkeeper",
+    "shortHeadline": "Tory MP Johnny Mercer swings into action",
     "url":
       "https://www.thetimes.co.uk/article/tory-mp-johnny-mercer-swings-into-action-to-protect-shopkeeper-5np83297k"
   },
@@ -707,6 +711,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-07T23:01:00.000Z",
     "headline": "Afghan chief in plea for British troops",
+    "shortHeadline": "Afghan chief in plea for British",
     "url":
       "https://www.thetimes.co.uk/article/afghan-chief-in-plea-for-british-troops-jkh6hzfvs"
   },
@@ -851,6 +856,7 @@
     "publishedTime": "2018-06-06T23:01:00.000Z",
     "headline":
       "Former spy Christopher Steele attacks Russians in Trump dossier case",
+    "shortHeadline": "Former spy Christopher Steele attacks Russians",
     "url":
       "https://www.thetimes.co.uk/article/former-spy-christopher-steele-attacks-russians-in-trump-dossier-case-zqnr2d9bd"
   },
@@ -946,6 +952,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-05T23:01:00.000Z",
     "headline": "Canon Andrew White cleared of paying Isis to free sex slaves",
+    "shortHeadline": "Canon Andrew White cleared of paying Isis",
     "url":
       "https://www.thetimes.co.uk/article/canon-andrew-white-vicar-of-baghdad-cleared-of-paying-isis-to-free-sex-slaves-vnd55mn70"
   },
@@ -1041,6 +1048,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-05T23:01:00.000Z",
     "headline": "‘Vicar of Baghdad’ cleared of paying Isis to free slave",
+    "shortHeadline": "‘Vicar of Baghdad’ cleared of paying Isis",
     "url":
       "https://www.thetimes.co.uk/article/vicar-of-baghdad-cleared-of-paying-isis-to-free-slave-2z65n9rbv"
   },
@@ -1186,6 +1194,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-05T16:00:00.000Z",
     "headline": "Bad weather delays arrival of Britain’s new F-35 warplanes",
+    "shortHeadline": "Bad weather delays arrival of Britain’s new F-35s",
     "url":
       "https://www.thetimes.co.uk/article/bad-weather-delays-arrival-of-britain-s-new-warplanes-0j02qwwwc"
   },
@@ -1281,6 +1290,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2018-06-05T11:00:00.000Z",
     "headline": "Army to relax fitness rules for ‘armchair cyberwarriors’",
+    "shortHeadline": "Army to relax fitness rules",
     "url":
       "https://www.thetimes.co.uk/article/army-to-relax-fitness-rules-for-armchair-cyberwarriors-nvr6tspt3"
   }

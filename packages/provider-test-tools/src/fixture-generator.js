@@ -34,6 +34,7 @@ const makeCustomArticles = (
     publicationName = () => {},
     publishedTime = () => {},
     section = () => {},
+    shortHeadline = () => {},
     shortSummary = () => {},
     summary = () => {},
     url = () => {}
@@ -52,6 +53,7 @@ const makeCustomArticles = (
       ["publicationName", publicationName(i)],
       ["publishedTime", publishedTime(i)],
       ["section", section(i)],
+      ["shortHeadline", shortHeadline(i)],
       ["shortSummary", shortSummary(i)],
       ["summary", summary(i)],
       ["url", url(i)]
@@ -80,6 +82,7 @@ const defaultArticleWithImagesList = fixtures => {
     leadAsset: getFixture("leadAsset"),
     publicationName: getFixture("publicationName"),
     publishedTime: getFixture("publishedTime"),
+    shortHeadline: getFixture("shortHeadline"),
     summary: getFixture("summary"),
     url: getFixture("url")
   });
@@ -96,6 +99,7 @@ const defaultArticleNoImagesList = fixtures => {
     longSummary: getFixture("longSummary"),
     publicationName: getFixture("publicationName"),
     publishedTime: getFixture("publishedTime"),
+    shortHeadline: getFixture("shortHeadline"),
     shortSummary: getFixture("shortSummary"),
     url: getFixture("url")
   });
@@ -113,6 +117,7 @@ const defaultTopicList = fixtures => {
     publicationName: getFixture("publicationName"),
     publishedTime: getFixture("publishedTime"),
     section: getFixture("section"),
+    shortHeadline: getFixture("shortHeadline"),
     summary: getFixture("summary"),
     url: getFixture("url")
   });

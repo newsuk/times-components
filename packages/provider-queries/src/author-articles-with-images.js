@@ -34,6 +34,7 @@ export default gql`
           publicationName
           publishedTime
           headline
+          shortHeadline
           url
         }
       }

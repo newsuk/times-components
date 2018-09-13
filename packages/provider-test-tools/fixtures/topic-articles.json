@@ -16,6 +16,7 @@
       }
     ],
     "headline": "US and Kim at odds over when North Korea sanctions will end",
+    "shortHeadline": "US and Kim at odds when North Korea sanctions",
     "id": "ddc4d622-6ffb-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -68,6 +69,7 @@
       }
     ],
     "headline": "Donald Trump criticised for saluting North Korean general",
+    "shortHeadline": "Donald Trump criticised",
     "id": "a6019bf4-7031-11e8-bea3-bf1a5a054f3a",
     "label": "",
     "leadAsset": {
@@ -133,6 +135,7 @@
       }
     ],
     "headline": "Putin asks Kim Jong-un to visit Russia after summit success",
+    "shortHeadline": "Putin asks Kim Jong-un to visit Russia",
     "id": "44303640-6ffc-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -186,6 +189,7 @@
     ],
     "headline":
       "Shinzo Abe seeks own summit to learn truth about North Korea kidnaps",
+    "shortHeadline": "Shinzo Abe seeks summit about North Korea kidnaps",
     "id": "f6e08b4e-6fd6-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -260,6 +264,7 @@
     ],
     "headline":
       "Donald Trump, Kim Jong-un and North Korea — what dissidents think",
+    "shortHeadline": "Donald Trump, Kim Jong-un and North Korea",
     "id": "4d1501e4-6f36-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -332,6 +337,7 @@
       }
     ],
     "headline": "Pompeo denies North Korean claims that US will lift sanctions",
+    "shortHeadline": "Pompeo denies North Korean claims",
     "id": "b1bb9c5a-6f1f-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -385,6 +391,7 @@
     ],
     "headline":
       "Singapore summit: North Korea trumpets Kim’s triumph over Trump",
+    "shortHeadline": "North Korea trumpets Kim’s triumph over Trump",
     "id": "36f3f95c-6ef4-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -438,6 +445,7 @@
       }
     ],
     "headline": "Kim Jong-un ‘accepts Trump’s invitation to White House’",
+    "shortHeadline": "Kim Jong-un ‘accepts Trump’s invitation",
     "id": "d6d52d18-6e92-11e8-85ce-4c0c3fdda365",
     "label": "",
     "leadAsset": {
@@ -491,6 +499,7 @@
       }
     ],
     "headline": "Trump-Kim summit: Blockbuster diplomacy wins over dictator",
+    "shortHeadline": "Blockbuster diplomacy wins over dictator",
     "id": "620fd1e2-6e72-11e8-85ce-4c0c3fdda365",
     "label": "SINGAPORE SUMMIT",
     "leadAsset": {
@@ -548,6 +557,8 @@
     ],
     "headline":
       "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet abroad if I could fit it in the locker",
+    "shortHeadline":
+      "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet",
     "id": "aa11ccba-6e64-11e8-85ce-4c0c3fdda365",
     "label": "THE WEDNESDAY COLUMN",
     "leadAsset": {

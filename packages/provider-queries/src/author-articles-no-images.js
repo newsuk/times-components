@@ -12,16 +12,17 @@ export default gql`
       articles {
         count
         list(first: $first, skip: $skip) {
-          shortSummary: summary(maxCharCount: $shortSummaryLength)
-          longSummary: summary(maxCharCount: $longSummaryLength)
+          headline
           id
           label
           leadAsset {
             type: __typename
           }
+          longSummary: summary(maxCharCount: $longSummaryLength)
           publicationName
           publishedTime
-          headline
+          shortHeadline
+          shortSummary: summary(maxCharCount: $shortSummaryLength)
           url
         }
       }
