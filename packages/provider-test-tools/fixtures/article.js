@@ -799,7 +799,8 @@ const defaultRelatedArticleSlice = {
       id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
       headline:
         "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-      shortHeadline: "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+      shortHeadline:
+        "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
       section: "comment",
       byline: [
         {
@@ -982,7 +983,8 @@ const defaultRelatedArticleSlice = {
     {
       id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
       headline: "Syndicated url: At long last, a burial place fit for a king",
-      shortHeadline: "Syndicated url: At long last, a burial place fit for a king",
+      shortHeadline:
+        "Syndicated url: At long last, a burial place fit for a king",
       section: "thedish",
       byline: [
         {
