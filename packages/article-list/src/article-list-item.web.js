@@ -8,7 +8,7 @@ import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
-import { getImageUri } from "./utils";
+import { getImageUri, getHeadline } from "./utils";
 import {
   ListItemWrapper,
   ListItemLongText,
@@ -30,6 +30,7 @@ const ArticleListItem = props => {
     publicationName,
     publishedTime,
     section,
+    shortHeadline,
     shortSummary,
     showImage,
     summary,
@@ -63,7 +64,9 @@ const ArticleListItem = props => {
       date: publishedTime,
       publication: publicationName
     },
-    headline: () => <ArticleSummaryHeadline headline={headline} />,
+    headline: () => (
+      <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
+    ),
     labelProps: {
       title: label,
       color: colours.section[section] || colours.section.default,

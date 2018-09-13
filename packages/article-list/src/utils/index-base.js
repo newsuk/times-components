@@ -7,4 +7,6 @@ const getImageUri = item =>
     get(item, "leadAsset.posterImage.crop.url", null)
   );
 
-export default getImageUri;
+const getHeadline = (headline, shortHeadline) => headline || shortHeadline;
+
+export { getImageUri, getHeadline };

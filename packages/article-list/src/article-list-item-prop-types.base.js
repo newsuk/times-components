@@ -15,6 +15,7 @@ export const propTypesBase = {
   longSummary: PropTypes.array,
   publicationName: PropTypes.string,
   publishedTime: PropTypes.string,
+  shortHeadline: PropTypes.string,
   shortSummary: PropTypes.array,
   summary: PropTypes.array,
   url: PropTypes.string
@@ -37,6 +38,7 @@ export const defaultProps = {
   longSummary: [],
   publicationName: "",
   publishedTime: "",
+  shortHeadline: "",
   shortSummary: [],
   showImage: true,
   summary: [],

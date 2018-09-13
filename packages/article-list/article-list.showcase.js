@@ -3,6 +3,7 @@ import React from "react";
 import { ApolloError } from "apollo-client";
 import articleListNoImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-no-images.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
+import articleListWithShortHeadlineFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-short-headline.json";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
@@ -56,6 +57,17 @@ export default {
           articles={articleListNoImagesFixture}
           count={articleListNoImagesFixture.length}
           showImages={false}
+        />
+      )
+    },
+    {
+      type: "story",
+      name: "With a short headline",
+      component: (_, { decorateAction }) => (
+        <TrackedArticleList
+          {...getProps(decorateAction)}
+          articles={articleListWithShortHeadlineFixture}
+          count={articleListWithShortHeadlineFixture.length}
         />
       )
     },
