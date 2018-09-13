@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.5"></a>
+## [5.0.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.0.4...@times-components/article-list@5.0.5) (2018-09-13)
+
+
+### Bug Fixes
+
+* Use shortHeadline as headline fallback in article list ([#1321](https://github.com/newsuk/times-components/issues/1321)) ([98dd9b7](https://github.com/newsuk/times-components/commit/98dd9b7))
+
+
+
+
+
 <a name="5.0.4"></a>
 ## [5.0.4](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.0.3...@times-components/article-list@5.0.4) (2018-09-13)
 
