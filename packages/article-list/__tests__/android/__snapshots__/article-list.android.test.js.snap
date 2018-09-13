@@ -261,6 +261,7 @@ Array [
         "publicationName": "TIMES",
         "publishedTime": "2017-11-17T00:01:00.000Z",
         "section": "world",
+        "shortHeadline": "ShortHeadline 1",
         "shortSummary": Array [
           Object {
             "attributes": Object {},
@@ -323,6 +324,7 @@ Array [
         },
         "publicationName": "SUNDAYTIMES",
         "publishedTime": "2017-11-17T00:01:00.000Z",
+        "shortHeadline": "ShortHeadline 2",
         "shortSummary": Array [
           Object {
             "attributes": Object {},

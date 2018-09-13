@@ -27,6 +27,7 @@ Object {
         ],
         "publicationName": "TIMES",
         "publishedTime": "2018-06-14T23:01:00.000Z",
+        "shortHeadline": "Short Headline 1",
         "shortSummary": Array [
           Object {
             "attributes": Object {

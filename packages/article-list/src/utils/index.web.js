@@ -1,4 +1,4 @@
-export { default as getImageUri } from "./index-base";
+export { getImageUri, getHeadline } from "./index-base";
 
 export const scrollUpToPaging = window => {
   window.scroll({

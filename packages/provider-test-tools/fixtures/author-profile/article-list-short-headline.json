@@ -31,7 +31,7 @@
     "section": "world",
     "publicationName": "TIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
-    "headline": "Top medal for forces dog who took a bite out of the Taliban",
+    "headline": "",
     "shortHeadline": "Top medal for forces dog",
     "url":
       "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
@@ -68,9 +68,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
-    "headline":
+    "headline": "",
+    "shortHeadline":
       "Social media must raise game to beat terrorists, says UN chief",
-    "shortHeadline": "Social media must raise game to beat terrorists",
     "url":
       "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
     "__typename": "Article"
@@ -106,8 +106,7 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-14T17:00:00.000Z",
-    "headline":
-      "Cuts have left the army 20 years out of date, says former general",
+    "headline": "",
     "shortHeadline": "Cuts have left the army 20 years out of date",
     "url":
       "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
@@ -144,8 +143,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-11T00:01:00.000Z",
-    "headline": "MoD recruits more civilians as Royal Marines face axe",
-    "shortHeadline": "MoD recruits more civilians",
+    "headline": "",
+    "shortHeadline": "MoD recruits more civilians as Royal Marines face axe",
     "url":
       "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
     "__typename": "Article"
@@ -196,9 +195,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-11T00:01:00.000Z",
-    "headline":
+    "headline": "",
+    "shortHeadline":
       "Suits you: poppy power is branching out for Remembrance appeal",
-    "shortHeadline": "Poppy power is branching out for Remembrance appeal",
     "url":
       "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
     "__typename": "Article"
@@ -233,8 +232,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-10T00:01:00.000Z",
-    "headline": "MoD heralds a \u2018renewed\u2019 US special relationship",
-    "shortHeadline": "MoD heralds special relationship",
+    "headline": "",
+    "shortHeadline":
+      "MoD heralds a \u2018renewed\u2019 US special relationship",
     "url":
       "https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs",
     "__typename": "Article"
@@ -269,9 +269,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-09T00:01:00.000Z",
-    "headline":
+    "headline": "",
+    "shortHeadline":
       "Defence cuts will hit Britain\u2019s standing, warns US general",
-    "shortHeadline": "Defence cuts will hit Britain\u2019s standing",
     "url":
       "https://www.thetimes.co.uk/article/us-general-ben-hodges-warns-britain-against-more-defence-cuts-wh7d6pn76",
     "__typename": "Article"
@@ -306,8 +306,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-04T00:00:00.000Z",
-    "headline": "RAF ready to withdraw as Isis battle enters endgame",
-    "shortHeadline": "RAF ready to withdraw",
+    "headline": "",
+    "shortHeadline": "RAF ready to withdraw as Isis battle enters endgame",
     "url":
       "https://www.thetimes.co.uk/article/raf-ready-to-withdraw-as-isis-battle-enters-endgame-jj7l3b02v",
     "__typename": "Article"
@@ -355,8 +355,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-03T00:01:00.000Z",
-    "headline": "Fallon denies lewd comment about Leadsom\u2019s cold hands",
-    "shortHeadline": "Fallon denies lewd comment",
+    "headline": "",
+    "shortHeadline":
+      "Fallon denies lewd comment about Leadsom\u2019s cold hands",
     "url":
       "https://www.thetimes.co.uk/article/fallon-denies-lewd-comment-about-leadsom-s-cold-hands-gkp3wnzn0",
     "__typename": "Article"
@@ -391,8 +392,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-03T00:01:00.000Z",
-    "headline": "Gavin who? Shock at MoD\u2019s latest recruit",
-    "shortHeadline": "Shock at MoD\u2019s latest recruit",
+    "headline": "",
+    "shortHeadline": "Gavin who? Shock at MoD\u2019s latest recruit",
     "url":
       "https://www.thetimes.co.uk/article/who-shock-at-mod-s-latest-recruit-gavin-williamson-968n7tdck",
     "__typename": "Article"
@@ -440,8 +441,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-02T00:01:00.000Z",
-    "headline": "Fallon resigns as new sleaze claims emerge",
-    "shortHeadline": "Fallon resigns",
+    "headline": "",
+    "shortHeadline": "Fallon resigns as new sleaze claims emerge",
     "url":
       "https://www.thetimes.co.uk/article/fallon-resigns-as-new-sleaze-claims-emerge-khsks7jpb",
     "__typename": "Article"
@@ -490,8 +491,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-02T00:01:00.000Z",
-    "headline": "Fallon admits falling short and leaves the job he loved",
-    "shortHeadline": "Fallon admits falling short",
+    "headline": "",
+    "shortHeadline": "Fallon admits falling short and leaves the job he loved",
     "url":
       "https://www.thetimes.co.uk/article/sir-michael-fallon-admits-falling-short-and-leaves-the-job-he-loved-mdvrzvwq6",
     "__typename": "Article"
@@ -526,8 +527,9 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-01T00:01:00.000Z",
-    "headline": "Troops posted to Iraq face losing \u00a329 daily allowance",
-    "shortHeadline": "Troops posted to Iraq face losing allowance",
+    "headline": "",
+    "shortHeadline":
+      "Troops posted to Iraq face losing \u00a329 daily allowance",
     "url":
       "https://www.thetimes.co.uk/article/british-troops-posted-to-iraq-face-losing-29-daily-allowance-qnnk80qb9",
     "__typename": "Article"
@@ -562,8 +564,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-11-01T00:01:00.000Z",
-    "headline": "Navy has to scavenge more parts",
-    "shortHeadline": "Navy has to scavenge more",
+    "headline": "",
+    "shortHeadline": "Navy has to scavenge more parts",
     "url":
       "https://www.thetimes.co.uk/article/royal-navy-has-to-scavenge-more-parts-national-audit-office-says-gzdxx7zpm",
     "__typename": "Article"
@@ -598,8 +600,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-30T00:01:00.000Z",
-    "headline": "Scrapping assault ships risks Nato role, military told",
-    "shortHeadline": "Scrapping assault ships risks Nato role",
+    "headline": "",
+    "shortHeadline": "Scrapping assault ships risks Nato role, military told",
     "url":
       "https://www.thetimes.co.uk/article/scrapping-assault-ships-risks-nato-role-military-told-69ddr6qqr",
     "__typename": "Article"
@@ -634,8 +636,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-27T23:01:00.000Z",
-    "headline": "New warplane costs $1\u00a0trillion to operate",
-    "shortHeadline": "New warplane costs $1\u00a0trillion",
+    "headline": "",
+    "shortHeadline": "New warplane costs $1\u00a0trillion to operate",
     "url":
       "https://www.thetimes.co.uk/article/new-f-35-warplane-costs-1-trillion-to-operate-sp6p3wdw2",
     "__typename": "Article"
@@ -670,8 +672,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-26T23:01:00.000Z",
-    "headline": "Forces must find \u00a3300m for rising Trident costs",
-    "shortHeadline": "Forces must find \u00a3300m",
+    "headline": "",
+    "shortHeadline": "Forces must find \u00a3300m for rising Trident costs",
     "url":
       "https://www.thetimes.co.uk/article/forces-must-find-300m-for-rising-trident-costs-bmxnl9577",
     "__typename": "Article"
@@ -719,8 +721,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-25T23:01:00.000Z",
-    "headline": "Britain mulls warships sale as military cuts deepen",
-    "shortHeadline": "Britain mulls warships sale",
+    "headline": "",
+    "shortHeadline": "Britain mulls warships sale as military cuts deepen",
     "url":
       "https://www.thetimes.co.uk/article/britain-mulls-warships-sale-as-military-cuts-deepen-2j0d0s5bs",
     "__typename": "Article"
@@ -768,8 +770,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-25T23:01:00.000Z",
-    "headline": "\u2018MP criticism could harm arms deal\u2019",
-    "shortHeadline": "Citicism could harm arms deal",
+    "headline": "",
+    "shortHeadline": "\u2018MP criticism could harm arms deal\u2019",
     "url":
       "https://www.thetimes.co.uk/article/mp-criticism-could-harm-saudi-arms-deal-warns-fallon-k97dxp3vj",
     "__typename": "Article"
@@ -818,8 +820,8 @@
     },
     "publicationName": "TIMES",
     "publishedTime": "2017-10-24T23:01:00.000Z",
-    "headline": "US military officers raise fears over Royal Marine cuts",
-    "shortHeadline": "US military officers raise fears over cuts",
+    "headline": "",
+    "shortHeadline": "US military officers raise fears over Royal Marine cuts",
     "url":
       "https://www.thetimes.co.uk/article/us-military-officers-raise-fears-over-royal-marine-cuts-gphqtd6pq",
     "__typename": "Article"

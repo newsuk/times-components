@@ -50,6 +50,9 @@ const list = fixtureGenerator.makeCustomArticles(1, {
   section(i) {
     return `Section ${i}`;
   },
+  shortHeadline(i) {
+    return `Short Headline ${i}`;
+  },
   summary(i) {
     return [
       {

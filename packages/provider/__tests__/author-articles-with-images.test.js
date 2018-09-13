@@ -33,6 +33,9 @@ const list = fixtureGenerator.makeCustomArticles(1, {
   publishedTime() {
     return "2018-06-14T23:01:00.000Z";
   },
+  shortHeadline(i) {
+    return `Short Headline ${i}`;
+  },
   summary(i) {
     return [
       {

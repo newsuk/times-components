@@ -15,6 +15,7 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
     "section": "world",
+    "shortHeadline": "ShortHeadline 1",
     "shortSummary": [
       {
         "name": "paragraph",
@@ -77,6 +78,7 @@
     },
     "publicationName": "SUNDAYTIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortHeadline": "ShortHeadline 2",
     "shortSummary": [
       {
         "name": "paragraph",
@@ -125,7 +127,7 @@
         ]
       }
     ],
-    "headline": "Headline 3",
+    "headline": "",
     "id": "ca003c2a-8e6f-11e8-9eb6-529269fb1459",
     "label": "Label 3",
     "leadAsset": {
@@ -139,6 +141,7 @@
     },
     "publicationName": "SUNDAYTIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortHeadline": "ShortHeadline 3",
     "shortSummary": [
       {
         "name": "paragraph",
@@ -201,6 +204,7 @@
     },
     "publicationName": "SUNDAYTIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortHeadline": "ShortHeadline 4",
     "shortSummary": [
       {
         "name": "paragraph",
@@ -263,6 +267,7 @@
     },
     "publicationName": "SUNDAYTIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortHeadline": "ShortHeadline 5",
     "shortSummary": [
       {
         "name": "paragraph",
