@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 {
+  if [ -z "$ANDROID_HOME" ]
+  then
+    echo "Please set ANDROID_HOME directory"
+    exit 1
+  fi
+
   adb_cmd="$ANDROID_HOME/platform-tools/adb"
   device=$($adb_cmd devices | tail -n +2)
   if [[ ! -z $device ]]
