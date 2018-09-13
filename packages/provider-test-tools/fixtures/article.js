@@ -536,7 +536,7 @@ const defaultRelatedArticleSlice = {
     {
       id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
       headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
-      shortHeadline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+      shortHeadline: "TMS: Pratchett’s law of the jungle",
       section: "sport",
       byline: [
         {
@@ -1138,7 +1138,7 @@ const defaultRelatedArticleSlice = {
   ]
 };
 const defaultSection = "business";
-const defaultShortHeadline = "Supplement In Depth Template (Style)";
+const defaultShortHeadline = "Supplement In Depth Template";
 const defaultStandfirst =
   "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life";
 const defaultTopics = [
