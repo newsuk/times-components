@@ -41,6 +41,16 @@ export default {
       element: <strong key={key}>{renderedChildren}</strong>
     };
   },
+  subscript(key, attributes, renderedChildren) {
+    return {
+      element: <sub key={key}>{renderedChildren}</sub>
+    };
+  },
+  superscript(key, attributes, renderedChildren) {
+    return {
+      element: <sup key={key}>{renderedChildren}</sup>
+    };
+  },
   text(key, { value }) {
     return {
       element: value
