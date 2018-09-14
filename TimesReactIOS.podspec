@@ -33,7 +33,6 @@ Pod::Spec.new do |s|
   # React is split into a set of subspecs, these are the essentials
   
   s.dependency 'React/Core'
-  s.dependency 'React/Fabric'
   s.dependency 'React/CxxBridge'
   s.dependency 'React/RCTAnimation'
   s.dependency 'React/RCTImage'
