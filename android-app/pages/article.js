@@ -61,11 +61,15 @@ const ArticleView = ({
 };
 
 ArticleView.propTypes = {
-  adTestMode: PropTypes.string.isRequired,
+  adTestMode: PropTypes.string,
   articleId: PropTypes.string.isRequired,
   omitErrors: PropTypes.bool.isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
+};
+
+ArticleView.defaultProps = {
+  adTestMode: ""
 };
 
 export default ArticleView;
