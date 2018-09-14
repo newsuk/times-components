@@ -19,12 +19,12 @@ const ArticleListItem = props => {
   const {
     byline,
     fadeImageIn,
+    hasVideo,
     headline,
     highResSize,
     imageRatio,
     isLoading,
     label,
-    leadAsset,
     lowResSize,
     longSummary,
     publicationName,
@@ -70,7 +70,7 @@ const ArticleListItem = props => {
     labelProps: {
       title: label,
       color: colours.section[section] || colours.section.default,
-      isVideo: leadAsset && leadAsset.type === "Video"
+      isVideo: hasVideo
     }
   };
 

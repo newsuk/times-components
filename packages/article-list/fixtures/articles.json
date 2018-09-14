@@ -1,5 +1,6 @@
 [
   {
+    "hasVideo": true,
     "headline": "Headline 1",
     "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
     "label": "Label 1",
@@ -64,6 +65,7 @@
         ]
       }
     ],
+    "hasVideo": false,
     "headline": "Headline 2",
     "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
     "label": "Label 2",
@@ -127,6 +129,7 @@
         ]
       }
     ],
+    "hasVideo": false,
     "headline": "",
     "id": "ca003c2a-8e6f-11e8-9eb6-529269fb1459",
     "label": "Label 3",
@@ -190,6 +193,7 @@
         ]
       }
     ],
+    "hasVideo": false,
     "headline": "Headline 4",
     "id": "ca003fe0-8e6f-11e8-9eb6-529269fb1459",
     "label": "Label 4",
@@ -253,6 +257,7 @@
         ]
       }
     ],
+    "hasVideo": false,
     "headline": "Headline 5",
     "id": "ca00422e-8e6f-11e8-9eb6-529269fb1459",
     "label": "Label 5",
