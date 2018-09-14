@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.16"></a>
+## [0.8.16](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.15...@times-components/android-app@0.8.16) (2018-09-14)
+
+
+### Bug Fixes
+
+* use whatwg-url for creating urls in android ([#1326](https://github.com/newsuk/times-components/issues/1326)) ([ac28429](https://github.com/newsuk/times-components/commit/ac28429))
+
+
+
+
+
 <a name="0.8.15"></a>
 ## [0.8.15](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.14...@times-components/android-app@0.8.15) (2018-09-13)
 
