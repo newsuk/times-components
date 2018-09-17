@@ -353,16 +353,6 @@ exports[`3. an article with a video as the lead asset 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "marginBottom": -13.75,
-              "marginTop": 10,
-            }
-          }
-        >
-          <VideoLabel />
-        </View>
         <Text
           style={
             Object {

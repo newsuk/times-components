@@ -163,6 +163,7 @@ export const snapshotTests = renderComponent => [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
+            hasVideo: true,
             leadAsset: videoLeadAsset({
               brightcovePolicyKey: "1.2.3.4",
               url: "https://video.io"
