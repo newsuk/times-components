@@ -182,9 +182,11 @@ exports[`2. placeholder when isloading 1`] = `
           <div>
             <View
               className="IS4"
+              testID="ad-placeholder"
             >
               <div
                 className="IS3"
+                data-testid="ad-placeholder"
               >
                 <View
                   className="IS1"
@@ -304,9 +306,11 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
           <div>
             <View
               className="IS5"
+              testID="ad-placeholder"
             >
               <div
                 className="IS4"
+                data-testid="ad-placeholder"
               >
                 <View
                   className="IS2"

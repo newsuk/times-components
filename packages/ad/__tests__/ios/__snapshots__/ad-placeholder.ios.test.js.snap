@@ -2,7 +2,9 @@
 
 exports[`advert placeholder 1`] = `
 <View>
-  <View>
+  <View
+    testID="ad-placeholder"
+  >
     <View>
       <Watermark
         height={300}
