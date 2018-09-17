@@ -24,6 +24,7 @@ exports[`advert placeholder 1`] = `
         "width": 970,
       }
     }
+    testID="ad-placeholder"
   >
     <View
       style={

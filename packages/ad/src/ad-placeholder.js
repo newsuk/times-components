@@ -11,7 +11,10 @@ const AdPlaceholder = ({ height, style, width }) => {
   }`;
   return (
     <View style={[styles.placeholderContainer, style]}>
-      <View style={[styles.placeholderWrapper, { height, width }]}>
+      <View
+        style={[styles.placeholderWrapper, { height, width }]}
+        testID="ad-placeholder"
+      >
         <View style={styles.watermarkContainer}>
           <Watermark height={height} viewBox={viewBox} width={width} />
         </View>

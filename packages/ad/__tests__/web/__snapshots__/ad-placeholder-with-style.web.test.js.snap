@@ -129,9 +129,11 @@ exports[`advert placeholder 1`] = `
     >
       <View
         className="IS4"
+        testID="ad-placeholder"
       >
         <div
           className="IS3 S3"
+          data-testid="ad-placeholder"
         >
           <View
             className="IS1"
