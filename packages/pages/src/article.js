@@ -39,7 +39,7 @@ const ArticleDetailsPage = ({
             analyticsStream={analyticsStream}
             article={article}
             error={omitErrors ? null : error}
-            isLoading={isLoading || (omitErrors && error !== null)}
+            isLoading={isLoading || (omitErrors && error)}
             onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
             onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
             onCommentsPress={(event, { articleId: id, url }) =>
