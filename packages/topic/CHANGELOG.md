@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.17"></a>
+## [3.3.17](https://github.com/newsuk/times-components/compare/@times-components/topic@3.3.16...@times-components/topic@3.3.17) (2018-09-17)
+
+
+### Bug Fixes
+
+* Center align topic headline ([#1332](https://github.com/newsuk/times-components/issues/1332)) ([29b7bdf](https://github.com/newsuk/times-components/commit/29b7bdf))
+
+
+
+
+
 <a name="3.3.16"></a>
 ## [3.3.16](https://github.com/newsuk/times-components/compare/@times-components/topic@3.3.15...@times-components/topic@3.3.16) (2018-09-17)
 
