@@ -101,24 +101,24 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
 
 export const hasVideoTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
-  
+
   const tests = [
     {
       name,
       test() {
         const events = jest.fn();
-        
+
         const output = renderComponent(
-        <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
-        
+
         expect(output).toMatchSnapshot();
       }
     }
   ];
-    
+
   iterator(tests);
-}
+};
 
 export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();

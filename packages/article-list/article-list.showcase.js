@@ -65,7 +65,11 @@ export default {
       type: "story",
       name: "With video labels",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList {...getProps(decorateAction)} articles={articleListHasVideoFixture} count={articleListHasVideoFixture.length} />
+        <TrackedArticleList
+          {...getProps(decorateAction)}
+          articles={articleListHasVideoFixture}
+          count={articleListHasVideoFixture.length}
+        />
       )
     },
     {
