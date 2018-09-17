@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.26"></a>
+## [1.5.26](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.25...@times-components/pages@1.5.26) (2018-09-17)
+
+
+### Bug Fixes
+
+* Fix omitErrors usage in pages ([#1328](https://github.com/newsuk/times-components/issues/1328)) ([16cec26](https://github.com/newsuk/times-components/commit/16cec26))
+
+
+
+
+
 <a name="1.5.25"></a>
 ## [1.5.25](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.24...@times-components/pages@1.5.25) (2018-09-17)
 
