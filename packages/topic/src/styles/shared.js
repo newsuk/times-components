@@ -19,7 +19,8 @@ const styles = {
   },
   name: {
     ...fontFactory({ font: "headline", fontSize: "pageHeadline" }),
-    color: colours.functional.brandColour
+    color: colours.functional.brandColour,
+    textAlign: "center"
   },
   description: {
     ...fontFactory({ font: "body", fontSize: "tertiary" }),

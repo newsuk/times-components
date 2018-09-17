@@ -31,6 +31,7 @@ exports[`1. an article list header 1`] = `
           "fontSize": 40,
           "lineHeight": 40,
           "paddingBottom": 25,
+          "textAlign": "center",
         }
       }
     >
