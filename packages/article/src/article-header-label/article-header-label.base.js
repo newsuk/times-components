@@ -5,10 +5,10 @@ import { colours } from "@times-components/styleguide";
 import VideoLabel from "@times-components/video-label";
 import styles from "../styles/article-header";
 
-export default render => ({ hasVideo, label }) => {
-  if (!hasVideo && !label) return null;
+export default render => ({ isVideo, label }) => {
+  if (!isVideo && !label) return null;
 
-  const Label = hasVideo ? VideoLabel : ArticleLabel;
+  const Label = isVideo ? VideoLabel : ArticleLabel;
 
   return render(
     {

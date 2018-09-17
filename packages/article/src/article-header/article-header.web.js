@@ -20,7 +20,7 @@ const ArticleHeader = ({
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel hasVideo={hasVideo} label={label} />
+    <HeaderLabel isVideo={hasVideo} label={label} />
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"
