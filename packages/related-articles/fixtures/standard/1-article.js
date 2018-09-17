@@ -1,5 +1,6 @@
 const defaultCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
+const defaultHasVideo = false;
 const defaultHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
 const defaultShortHeadline = "Bringing the fragile masterpiece over safely";
@@ -115,6 +116,7 @@ const defaultUrl =
 export default (
   {
     crop169 = defaultCrop169,
+    hasVideo = defaultHasVideo,
     headline = defaultHeadline,
     label = defaultLabel,
     section = defaultSection,
@@ -165,6 +167,7 @@ export default (
                 ]
               }
             ],
+            hasVideo,
             headline,
             label,
             leadAsset: {

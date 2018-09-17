@@ -7,9 +7,10 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 export const sharedPropTypes = {
   article: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
+    hasVideo: PropTypes.bool,
     headline: PropTypes.string,
-    shortHeadline: PropTypes.string,
     label: PropTypes.string,
+    shortHeadline: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
     summary105: PropTypes.arrayOf(treePropType),
     summary125: PropTypes.arrayOf(treePropType).isRequired,
@@ -37,15 +38,16 @@ export const sharedPropTypes = {
 
 export const sharedDefaultProps = {
   article: null,
-  summary105: [],
-  summary145: [],
-  summary160: [],
-  summary175: [],
-  summary225: [],
+  hasVideo: false,
   imageConfig: {},
   isOpinionByline: false,
   isReversed: false,
   showImage: true,
   showSummary: true,
-  summaryConfig: {}
+  summaryConfig: {},
+  summary105: [],
+  summary145: [],
+  summary160: [],
+  summary175: [],
+  summary225: []
 };

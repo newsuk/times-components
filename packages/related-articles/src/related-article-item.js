@@ -31,6 +31,7 @@ const RelatedArticleItem = ({
 }) => {
   const {
     byline,
+    hasVideo,
     headline,
     label,
     leadAsset,
@@ -106,7 +107,7 @@ const RelatedArticleItem = ({
           )}
           labelProps={{
             color: colours.section[section] || colours.section.default,
-            isVideo: leadAsset && leadAsset.type === "Video",
+            isVideo: hasVideo,
             title: label
           }}
         />
