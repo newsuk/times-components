@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export const propTypes = {
   data: PropTypes.shape({}),
-  height: PropTypes.number.isRequired,
+  height: PropTypes.number,
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,
   onRenderError: PropTypes.func,
@@ -11,6 +11,7 @@ export const propTypes = {
 
 export const defaultProps = {
   data: {},
+  height: 0,
   onRenderComplete: () => {},
   onRenderError: () => {}
 };
