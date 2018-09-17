@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.19...@times-components/android-app@0.9.0) (2018-09-17)
+
+
+### Features
+
+* Add test mode to ad configs for easier testing ([#1327](https://github.com/newsuk/times-components/issues/1327)) ([a4ae7e5](https://github.com/newsuk/times-components/commit/a4ae7e5))
+
+
+
+
+
 <a name="0.8.19"></a>
 ## [0.8.19](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.8.18...@times-components/android-app@0.8.19) (2018-09-17)
 
