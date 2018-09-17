@@ -155,6 +155,7 @@
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",
     "url": "0.11.0",
+    "url-polyfill": "1.1.0",
     "wd": "1.4.1",
     "webpack": "3.12.0"
   },

@@ -1,5 +1,6 @@
 import url from "url";
 import { AppRegistry, NativeModules, Platform } from "react-native";
+import { URL, URLSearchParams } from "url-polyfill";
 import {
   getStorybookUI,
   configure,
@@ -8,6 +9,10 @@ import {
 import { withKnobs } from '@storybook/addon-knobs';
 import { BarSpacingDecorator, WhiteBgColorDecorator } from "@times-components/storybook";
 import { loadStories } from "./story-loader";
+
+// see https://github.com/facebook/react-native/issues/16434
+global.URL = URL;
+global.URLSearchParams = URLSearchParams;
 
 if (Platform.OS === "ios") {
   addDecorator(BarSpacingDecorator);
