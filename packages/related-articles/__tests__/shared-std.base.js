@@ -1,4 +1,5 @@
 import {
+  hasVideoTests,
   noArticlesTests,
   noShortHeadlineTests,
   oneArticleTests,
@@ -30,6 +31,10 @@ const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
   section: "newsreview",
   shortHeadline: "",
   summary125: testSummary(125)
+}).data;
+
+const standardhasVideoFixtureData = standard1ArticleFixture({
+  hasVideo: true
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
@@ -83,6 +88,11 @@ export const sharedNoArticles = noArticlesTests({
 export const sharedNoShortHeadline = noShortHeadlineTests({
   fixture: standardNoShortHeadlineFixtureData,
   name: "no short headline"
+});
+
+export const sharedHasVideo = hasVideoTests({
+  fixture: standardhasVideoFixtureData,
+  name: "has video"
 });
 
 export const sharedOneArticle = oneArticleTests({
