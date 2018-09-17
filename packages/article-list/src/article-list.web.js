@@ -7,6 +7,7 @@ import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
+import LazyLoad from "@times-components/lazy-load";
 import { scrollUpToPaging } from "./utils";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
@@ -18,102 +19,22 @@ import styles, { retryButtonStyles } from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
 class ArticleList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.advertPosition = 4;
-    this.pending = new Set();
-    this.pendingTimer = null;
-    this.state = {
-      fadeImageIn: false,
-      images: new Map()
-    };
-
-    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
-      return;
-    }
-
-    const options = {
-      rootMargin: spacing(10),
-      threshold: 0.5
-    };
-
-    this.observer = new window.IntersectionObserver(
-      this.handleObservation.bind(this),
-      options
-    );
-  }
-
-  componentDidMount() {
-    const newState = {
-      fadeImageIn: true
-    };
-
-    if (typeof window !== "undefined" && !this.observer) {
-      newState.fallback = normaliseWidth(window.clientWidth);
-    }
-
-    // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState(newState);
-  }
-
-  shouldComponentUpdate(nextProps) {
-    return this.props.page === nextProps.page;
-  }
-
-  componentWillUnmount() {
-    if (this.observer) {
-      this.observer.disconnect();
-    }
-
-    clearTimeout(this.pendingTimer);
-    this.pending.clear();
-  }
-
-  getImageSize(nodeId) {
+  static getImageSize(node) {
     if (typeof window === "undefined") {
       return null;
     }
 
-    return this.state.images.get(nodeId) || this.state.fallback || null;
+    return node ? normaliseWidth(node.clientWidth) : null;
   }
 
-  handleObservation(entries) {
-    entries.forEach(({ target, intersectionRatio }) => {
-      if (intersectionRatio >= 0.5 && !this.state.images.get(target.id)) {
-        this.pending.add(target);
-      } else if (intersectionRatio < 0.5 && this.pending.has(target)) {
-        this.pending.delete(target);
-      }
-    });
+  constructor(props) {
+    super(props);
 
-    if (this.pending.size) {
-      clearTimeout(this.pendingTimer);
-      this.pendingTimer = setTimeout(() => {
-        if (!this.pending.size) {
-          return;
-        }
-
-        const curImages = new Map();
-
-        this.pending.forEach(node =>
-          curImages.set(node.id, normaliseWidth(node.clientWidth))
-        );
-
-        this.setState({
-          images: new Map([...this.state.images, ...curImages])
-        });
-        this.pending.clear();
-      }, 100);
-    }
+    this.advertPosition = 4;
   }
 
-  registerNode(node) {
-    if (!node || !this.observer) {
-      return;
-    }
-
-    this.observer.observe(node);
+  shouldComponentUpdate(nextProps) {
+    return this.props.page === nextProps.page;
   }
 
   render() {
@@ -191,7 +112,7 @@ class ArticleList extends Component {
           elementId: `${article.id}.${index}`
         }));
 
-    const Contents =
+    const Contents = ({ clientHasRendered, observed, registerNode }) =>
       data.length === 0 ? (
         <ArticleListEmptyState message={emptyStateMessage} />
       ) : (
@@ -221,7 +142,7 @@ class ArticleList extends Component {
                     accessibility-label={elementId}
                     data-testid={elementId}
                     id={elementId}
-                    ref={node => this.registerNode(node)}
+                    ref={node => registerNode(node)}
                   >
                     <ErrorView>
                       {({ hasError }) =>
@@ -230,8 +151,10 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
-                              fadeImageIn={this.state.fadeImageIn}
-                              highResSize={this.getImageSize(elementId)}
+                              fadeImageIn={clientHasRendered}
+                              highResSize={ArticleList.getImageSize(
+                                observed.get(elementId)
+                              )}
                               imageRatio={imageRatio}
                               index={index}
                               length={data.length}
@@ -253,10 +176,20 @@ class ArticleList extends Component {
     if (!articlesLoading) receiveChildList(data);
 
     return (
-      <View>
-        {articleListHeader}
-        {error ? ErrorComponent : Contents}
-      </View>
+      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+        {({ clientHasRendered, observed, registerNode }) => (
+          <View>
+            {articleListHeader}
+            {error
+              ? ErrorComponent
+              : Contents({
+                  clientHasRendered,
+                  observed,
+                  registerNode
+                })}
+          </View>
+        )}
+      </LazyLoad>
     );
   }
 }

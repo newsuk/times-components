@@ -2,7 +2,7 @@
 
 exports[`1. should render with an intersection observer using the expected options 1`] = `
 Object {
-  "rootMargin": "50px",
-  "threshold": 0.5,
+  "rootMargin": "15px",
+  "threshold": 0.7,
 }
 `;

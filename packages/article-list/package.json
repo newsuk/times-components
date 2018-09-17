@@ -76,6 +76,7 @@
     "@times-components/card": "4.0.5",
     "@times-components/error-view": "2.1.31",
     "@times-components/image": "4.0.5",
+    "@times-components/lazy-load": "0.0.1",
     "@times-components/link": "3.0.30",
     "@times-components/pagination": "3.1.8",
     "@times-components/styleguide": "3.3.11",

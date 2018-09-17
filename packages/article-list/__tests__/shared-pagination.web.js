@@ -134,6 +134,7 @@ export default () => {
 
         wrapper
           .dive()
+          .dive()
           .find("ArticleListPagination")
           .at(1)
           .dive()
@@ -198,6 +199,7 @@ export default () => {
         );
 
         wrapper
+          .dive()
           .dive()
           .find("ArticleListPagination")
           .at(1)
