@@ -108,6 +108,23 @@ export default {
           />
         </View>
       )
+    },
+    {
+      type: "story",
+      name: "no poster image",
+      component: () => (
+        <View>
+          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Video {...defaultVideoProps} poster={null} />
+          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Video
+            {...defaultVideoProps}
+            height={374}
+            poster={null}
+            width={664}
+          />
+        </View>
+      )
     }
   ]
 };
