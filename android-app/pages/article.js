@@ -20,7 +20,6 @@ const ArticlePageView = Article(config)(fetch);
 const platformAdConfig = {
   adUnit: "thetimes.mob.android",
   networkId: config.adNetworkId,
-  testMode: "",
   appVersion: config.appVersion,
   operatingSystem: "Android",
   operatingSystemVersion: config.operatingSystemVersion,
@@ -33,8 +32,14 @@ const platformAdConfig = {
   platform: "mobile"
 };
 
-const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
-  const adConfig = { ...platformAdConfig, sectionName };
+const ArticleView = ({
+  adTestMode,
+  articleId,
+  omitErrors,
+  scale,
+  sectionName
+}) => {
+  const adConfig = { ...platformAdConfig, sectionName, testMode: adTestMode };
 
   return (
     <ArticlePageView
@@ -56,10 +61,15 @@ const ArticleView = ({ articleId, omitErrors, scale, sectionName }) => {
 };
 
 ArticleView.propTypes = {
+  adTestMode: PropTypes.string,
   articleId: PropTypes.string.isRequired,
   omitErrors: PropTypes.bool.isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
+};
+
+ArticleView.defaultProps = {
+  adTestMode: ""
 };
 
 export default ArticleView;
