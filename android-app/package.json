@@ -20,7 +20,7 @@
     "react": "16.4.2",
     "react-native": "0.55.4",
     "react-native-device-info": "0.13.0",
-    "whatwg-url": "7.0.0"
+    "url-polyfill": "1.1.0"
   },
   "devDependencies": {
     "babel-preset-react-native": "4.0.0",

@@ -1,5 +1,5 @@
 import { AppRegistry } from "react-native";
-import { URL, URLSearchParams } from "whatwg-url";
+import { URL, URLSearchParams } from "url-polyfill";
 import AuthorProfileView from "./pages/author-profile";
 import ArticleView from "./pages/article";
 import TopicView from "./pages/topic";
