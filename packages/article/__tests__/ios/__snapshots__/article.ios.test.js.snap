@@ -263,6 +263,12 @@ exports[`3. an article with a video as the lead asset 1`] = `
     </View>
     <View>
       <View>
+        <View>
+          <VideoLabel
+            color="#333333"
+            title={null}
+          />
+        </View>
         <Text>
           Some Headline
         </Text>
