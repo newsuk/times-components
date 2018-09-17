@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.34"></a>
+## [2.1.34](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.33...@times-components/ad@2.1.34) (2018-09-17)
+
+
+### Bug Fixes
+
+* variable ad height on articlie list pages ([#1333](https://github.com/newsuk/times-components/issues/1333)) ([656e7ac](https://github.com/newsuk/times-components/commit/656e7ac))
+
+
+
+
+
 <a name="2.1.33"></a>
 ## [2.1.33](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.32...@times-components/ad@2.1.33) (2018-09-17)
 
