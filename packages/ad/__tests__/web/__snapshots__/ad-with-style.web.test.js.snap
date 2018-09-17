@@ -4,7 +4,7 @@ exports[`1. multiple ad slots 1`] = `
 <style>
 {
   "IS1": {
-    "height": 250,
+    "height": "auto",
     "overflow": "hidden",
     "width": 970,
   },
@@ -13,7 +13,7 @@ exports[`1. multiple ad slots 1`] = `
     "flex": 1,
   },
   "IS3": {
-    "height": 1,
+    "height": "auto",
     "overflow": "hidden",
     "width": 1,
   },
@@ -22,7 +22,7 @@ exports[`1. multiple ad slots 1`] = `
     "flex": 1,
   },
   "IS5": {
-    "height": 250,
+    "height": "auto",
     "overflow": "hidden",
     "width": 970,
   },
@@ -220,7 +220,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 <style>
 {
   "IS1": {
-    "height": 0,
+    "height": "auto",
     "overflow": "hidden",
     "width": 0,
   },

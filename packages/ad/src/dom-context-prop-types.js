@@ -1,16 +1,3 @@
-import PropTypes from "prop-types";
+import { propTypes, defaultProps } from "./dom-context-prop-types-base";
 
-export const propTypes = {
-  data: PropTypes.shape({}),
-  height: PropTypes.number.isRequired,
-  init: PropTypes.func.isRequired,
-  onRenderComplete: PropTypes.func,
-  onRenderError: PropTypes.func,
-  width: PropTypes.number.isRequired
-};
-
-export const defaultProps = {
-  data: {},
-  onRenderComplete: () => {},
-  onRenderError: () => {}
-};
+export { propTypes, defaultProps };
