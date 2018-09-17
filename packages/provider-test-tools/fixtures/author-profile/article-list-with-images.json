@@ -585,7 +585,6 @@
         ]
       }
     ],
-    "hasVideo": true,
     "id": "20fb0c7c-bcdd-11e7-b58a-4186f6049f2e",
     "label": "Video",
     "leadAsset": {
@@ -622,7 +621,6 @@
         ]
       }
     ],
-    "hasVideo": true,
     "id": "47b13560-bb54-11e7-85ff-fb955b2fbca8",
     "label": "video",
     "leadAsset": {
