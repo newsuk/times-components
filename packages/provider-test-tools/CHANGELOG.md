@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.3.7...@times-components/provider-test-tools@1.4.0) (2018-09-18)
+
+
+### Features
+
+* add hasVideo label ([#1329](https://github.com/newsuk/times-components/issues/1329)) ([9c47964](https://github.com/newsuk/times-components/commit/9c47964))
+
+
+
+
+
 <a name="1.3.7"></a>
 ## [1.3.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.3.6...@times-components/provider-test-tools@1.3.7) (2018-09-13)
 
