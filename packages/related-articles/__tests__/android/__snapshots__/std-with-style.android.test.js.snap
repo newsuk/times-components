@@ -45,10 +45,6 @@ exports[`default styles 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
             "width": "100%",
           }
         }
