@@ -195,6 +195,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
                 "article": Object {
                   "__typename": "Article",
                   "byline": Array [],
+                  "hasVideo": false,
                   "headline": "RA Headline",
                   "id": "ra-1",
                   "label": "RA Label",

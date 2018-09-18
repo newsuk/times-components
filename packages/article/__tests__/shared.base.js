@@ -25,6 +25,7 @@ const findComponents = (testInstance, componentName) =>
 const emptyArticle = {
   byline: null,
   flags: null,
+  hasVideo: null,
   label: null,
   leadAsset: null,
   relatedArticleSlice: null,
@@ -163,6 +164,7 @@ export const snapshotTests = renderComponent => [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
+            hasVideo: true,
             leadAsset: videoLeadAsset({
               brightcovePolicyKey: "1.2.3.4",
               url: "https://video.io"

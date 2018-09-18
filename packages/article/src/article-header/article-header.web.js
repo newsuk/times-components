@@ -12,15 +12,15 @@ import { HeadlineContainer } from "../styles/article-header/responsive";
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleHeader = ({
-  label,
-  headline,
-  standfirst,
   flags,
-  isVideo,
+  hasVideo,
+  headline,
+  label,
+  standfirst,
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel isVideo={isVideo} label={label} />
+    <HeaderLabel isVideo={hasVideo} label={label} />
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"
@@ -34,19 +34,19 @@ const ArticleHeader = ({
 );
 
 ArticleHeader.propTypes = {
+  flags: PropTypes.arrayOf(PropTypes.string),
+  hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  flags: PropTypes.arrayOf(PropTypes.string),
-  isVideo: PropTypes.bool,
   style: ViewStylePropTypes
 };
 
 ArticleHeader.defaultProps = {
+  flags: [],
+  hasVideo: false,
   label: null,
   standfirst: null,
-  flags: [],
-  isVideo: false,
   style: {}
 };
 

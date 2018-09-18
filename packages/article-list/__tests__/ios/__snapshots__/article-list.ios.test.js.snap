@@ -25,7 +25,7 @@ exports[`1. article list 1`] = `
               labelProps={
                 Object {
                   "color": "#636C17",
-                  "isVideo": false,
+                  "isVideo": true,
                   "title": "Label 1",
                 }
               }
@@ -127,7 +127,7 @@ exports[`2. article list with no images 1`] = `
               labelProps={
                 Object {
                   "color": "#636C17",
-                  "isVideo": false,
+                  "isVideo": true,
                   "title": "Label 1",
                 }
               }
@@ -176,7 +176,7 @@ exports[`3. a retry button when load more fails 1`] = `
               labelProps={
                 Object {
                   "color": "#636C17",
-                  "isVideo": false,
+                  "isVideo": true,
                   "title": "Label 1",
                 }
               }
@@ -224,7 +224,7 @@ exports[`4. no footer with data equalling the count 1`] = `
               labelProps={
                 Object {
                   "color": "#636C17",
-                  "isVideo": false,
+                  "isVideo": true,
                   "title": "Label 1",
                 }
               }
@@ -246,6 +246,7 @@ Array [
     },
     Array [
       Object {
+        "hasVideo": true,
         "headline": "Headline 1",
         "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
         "label": "Label 1",
@@ -310,6 +311,7 @@ Array [
             "name": "paragraph",
           },
         ],
+        "hasVideo": false,
         "headline": "Headline 2",
         "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
         "label": "Label 2",
@@ -387,7 +389,7 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
               labelProps={
                 Object {
                   "color": "#636C17",
-                  "isVideo": false,
+                  "isVideo": true,
                   "title": "Label 1",
                 }
               }

@@ -11,14 +11,14 @@ const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleHeader = ({
   flags,
+  hasVideo,
   headline,
-  isVideo,
   label,
   standfirst,
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel isVideo={isVideo} label={label} />
+    <HeaderLabel isVideo={hasVideo} label={label} />
     <Text style={styles.articleHeadLineText}>{headline}</Text>
     <HeaderStandfirst standfirst={standfirst} />
     <HeaderFlags flags={flags} />
@@ -27,8 +27,8 @@ const ArticleHeader = ({
 
 ArticleHeader.propTypes = {
   flags: PropTypes.arrayOf(PropTypes.string),
+  hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
-  isVideo: PropTypes.bool,
   label: PropTypes.string,
   standfirst: PropTypes.string,
   style: ViewStylePropTypes
@@ -36,7 +36,7 @@ ArticleHeader.propTypes = {
 
 ArticleHeader.defaultProps = {
   flags: [],
-  isVideo: false,
+  hasVideo: false,
   label: null,
   standfirst: null,
   style: {}

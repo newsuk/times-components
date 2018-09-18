@@ -1283,6 +1283,7 @@ const defaultContent = [
   }
 ];
 const defaultFlags = ["NEW", "EXCLUSIVE"];
+const defaultHasVideo = false;
 const defaultHeadline =
   "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record";
 const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
@@ -1945,6 +1946,7 @@ const makeDefaultConfig = (
     commentCount = defaultCommentCount,
     content = defaultContent,
     flags = defaultFlags,
+    hasVideo = defaultHasVideo,
     headline = defaultHeadline,
     keywords = defaultKeywords,
     label = defaultLabel,
@@ -1963,6 +1965,7 @@ const makeDefaultConfig = (
   commentCount,
   content,
   flags,
+  hasVideo,
   headline,
   keywords,
   label,
@@ -2019,6 +2022,7 @@ export const testFixture = {
     }
   ],
   flags: ["NEW"],
+  hasVideo: false,
   headline: "Some Headline",
   label: "Some Label",
   leadAsset: {
@@ -2034,6 +2038,7 @@ export const testFixture = {
     items: [
       {
         article: {
+          hasVideo: false,
           id: "ra-1",
           headline: "RA Headline",
           byline: [],

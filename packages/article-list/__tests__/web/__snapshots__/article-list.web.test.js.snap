@@ -41,7 +41,7 @@ exports[`1. article list 1`] = `
                 labelProps={
                   Object {
                     "color": "#636C17",
-                    "isVideo": false,
+                    "isVideo": true,
                     "title": "Label 1",
                   }
                 }
@@ -288,7 +288,7 @@ exports[`2. article list with no images 1`] = `
                   labelProps={
                     Object {
                       "color": "#636C17",
-                      "isVideo": false,
+                      "isVideo": true,
                       "title": "Label 1",
                     }
                   }
@@ -306,7 +306,7 @@ exports[`2. article list with no images 1`] = `
                   labelProps={
                     Object {
                       "color": "#636C17",
-                      "isVideo": false,
+                      "isVideo": true,
                       "title": "Label 1",
                     }
                   }
@@ -371,7 +371,7 @@ exports[`3. article list with missing image 1`] = `
                   labelProps={
                     Object {
                       "color": "#636C17",
-                      "isVideo": false,
+                      "isVideo": true,
                       "title": "Label 1",
                     }
                   }
@@ -389,7 +389,7 @@ exports[`3. article list with missing image 1`] = `
                   labelProps={
                     Object {
                       "color": "#636C17",
-                      "isVideo": false,
+                      "isVideo": true,
                       "title": "Label 1",
                     }
                   }

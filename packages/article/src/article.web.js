@@ -32,6 +32,7 @@ const renderArticle = (
   onTopicPress
 ) => {
   const {
+    hasVideo,
     headline,
     flags,
     standfirst,
@@ -68,8 +69,8 @@ const renderArticle = (
           <HeaderContainer>
             <ArticleHeader
               flags={flags}
+              hasVideo={hasVideo}
               headline={headline}
-              isVideo={leadAssetProps.isVideo}
               label={label}
               standfirst={standfirst}
             />

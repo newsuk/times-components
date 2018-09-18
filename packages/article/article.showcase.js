@@ -95,7 +95,9 @@ export default {
         const scale = selectScales(select);
         const sectionColour = selectSection(select);
         return renderArticle(decorateAction, scale, sectionColour, {
-          fixture: fullArticleFixture()
+          fixture: fullArticleFixture({
+            hasVideo: true
+          })
         });
       }
     },
@@ -107,6 +109,7 @@ export default {
         const sectionColour = selectSection(select);
         return renderArticle(decorateAction, scale, sectionColour, {
           fixture: fullArticleFixture({
+            hasVideo: true,
             leadAsset: videoLeadAsset()
           })
         });

@@ -20,6 +20,7 @@ const prepareDataForListView = articleData => {
   const { isVideo, leadAsset } = getLeadAsset(articleData);
   const articleHeaderData = {
     label: articleData.label,
+    hasVideo: articleData.hasVideo,
     headline: articleData.headline,
     standfirst: articleData.standfirst,
     flags: articleData.flags,

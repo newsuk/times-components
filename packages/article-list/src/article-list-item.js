@@ -16,11 +16,11 @@ const ArticleListItem = props => {
   const {
     byline,
     headline,
+    hasVideo,
     highResSize,
     imageRatio,
     isLoading,
     label,
-    leadAsset,
     onPress,
     publicationName,
     publishedTime,
@@ -66,7 +66,7 @@ const ArticleListItem = props => {
             )}
             labelProps={{
               color: colours.section[section] || colours.section.default,
-              isVideo: leadAsset && leadAsset.type === "Video",
+              isVideo: hasVideo,
               title: label
             }}
           />
