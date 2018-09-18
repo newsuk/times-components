@@ -2,11 +2,19 @@
 
 exports[`1. video with error 1`] = `
 <div>
+  <div />
   <div>
-    Video unable to play
-  </div>
-  <div>
-    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
+    <div>
+      Something's gone wrong
+    </div>
+    <div>
+      Please check your network connection and retry to try again
+    </div>
+    <button
+      type="button"
+    >
+      Retry
+    </button>
   </div>
 </div>
 `;
