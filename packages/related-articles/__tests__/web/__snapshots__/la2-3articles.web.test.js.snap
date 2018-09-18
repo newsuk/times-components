@@ -15,6 +15,11 @@ exports[`1. one lead and two support related articles 1`] = `
       <div>
         <div>
           <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
+            }
             url="https://first.io"
           >
             <Card
@@ -75,6 +80,11 @@ exports[`1. one lead and two support related articles 1`] = `
         <div>
           <div>
             <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
               url="https://second.io"
             >
               <Card
@@ -118,6 +128,11 @@ exports[`1. one lead and two support related articles 1`] = `
           </div>
           <div>
             <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
               url="https://third.io"
             >
               <Card
