@@ -22,7 +22,9 @@ const VideoError = ({ height, width, poster }) => (
       </Text>
       <Button
         onPress={() => {
-          window.location.reload();
+          if (typeof window !== "undefined") {
+            window.location.reload();
+          }
         }}
         style={retryButtonStyles}
         title="Retry"
