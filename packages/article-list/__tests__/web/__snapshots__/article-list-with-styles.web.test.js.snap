@@ -73,6 +73,7 @@ exports[`1. article list 1`] = `
     "borderColor": "#DBDBDB",
     "borderTopWidth": 1,
     "paddingVertical": "10px",
+    "top": 1,
   },
   "S1": {
     "-ms-flex": "1",
