@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.3.73...@times-components/ios-app@0.4.0) (2018-09-20)
+
+
+### Features
+
+* ios react native 554 ([#1345](https://github.com/newsuk/times-components/issues/1345)) ([a2ddd6a](https://github.com/newsuk/times-components/commit/a2ddd6a))
+
+
+
+
+
 <a name="0.3.73"></a>
 ## [0.3.73](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.3.72...@times-components/ios-app@0.3.73) (2018-09-20)
 
