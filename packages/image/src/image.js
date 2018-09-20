@@ -33,9 +33,11 @@ class TimesImage extends Component {
     const props = {
       style: styles.imageBackground,
       onLoad: this.handleLoad,
-      source: {
-        uri: srcUri
-      }
+      source: srcUri
+        ? {
+            uri: srcUri
+          }
+        : null
     };
 
     return (

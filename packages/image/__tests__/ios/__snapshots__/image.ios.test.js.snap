@@ -29,11 +29,7 @@ exports[`2. default layout without uri 1`] = `
     />
   </View>
   <Image
-    source={
-      Object {
-        "uri": null,
-      }
-    }
+    source={null}
   />
 </View>
 `;
