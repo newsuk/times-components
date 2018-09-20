@@ -18,23 +18,28 @@ const VideoError = ({ height, width, poster }) => {
     );
   };
 
+  const renderRetryButton = () => {
+    if (typeof window === "undefined") return null;
+    return (
+      <Button
+        onPress={() => {
+          window.location.reload();
+        }}
+        style={retryButtonStyles}
+        title="Retry"
+      />
+    );
+  };
+
   return (
     <View style={[styles.background, { width, height }]}>
       <View style={styles.posterContainer}>{renderPosterImage()}</View>
       <View style={styles.textContainer}>
         <Text style={styles.heading}>Something&apos;s gone wrong</Text>
         <Text style={styles.body}>
-          Please check your network connection and retry to try again
+          Please check your network connection and try again
         </Text>
-        <Button
-          onPress={() => {
-            if (typeof window !== "undefined") {
-              window.location.reload();
-            }
-          }}
-          style={retryButtonStyles}
-          title="Retry"
-        />
+        {renderRetryButton()}
       </View>
     </View>
   );
@@ -42,7 +47,7 @@ const VideoError = ({ height, width, poster }) => {
 
 VideoError.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
+  poster: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 

@@ -99,7 +99,7 @@ exports[`1. video with error 1`] = `
     <div
       className="S3"
     >
-      Please check your network connection and retry to try again
+      Please check your network connection and try again
     </div>
     <button
       className="IS1"
