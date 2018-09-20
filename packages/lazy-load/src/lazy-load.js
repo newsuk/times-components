@@ -6,11 +6,11 @@ class LazyLoad extends Component {
   constructor(props) {
     super(props);
 
+    this.isObserving = false;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
       clientHasRendered: false,
-      isObserving: false,
       nodes: new Map()
     };
     this.unobserved = new Set();
@@ -21,7 +21,7 @@ class LazyLoad extends Component {
       return;
     }
 
-    this.state.isObserving = true;
+    this.isObserving = true;
 
     const options = {
       rootMargin: props.rootMargin,
@@ -122,7 +122,7 @@ class LazyLoad extends Component {
       clientHasRendered: this.state.clientHasRendered,
       observed: this.state.nodes,
       registerNode: this.registerNode,
-      isObserving: this.state.isObserving
+      isObserving: this.isObserving
     });
   }
 }
