@@ -33,18 +33,8 @@ const biography = [
   }
 ];
 
-export default ({
-  articleError = () => {},
-  articleQuery,
-  articleVariables = () => {},
-  authorError = () => {},
-  count = 200,
-  hasLeadAssets = true,
-  makeItem = x => x,
-  pageSize,
-  slug
-}) => [
-  {
+const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
+  const query = {
     defaults: {
       values: {
         author: () => ({
@@ -62,12 +52,37 @@ export default ({
         })
       }
     },
-    error: authorError(),
     query: authorQuery,
     variables: {
       slug
     }
-  },
+  };
+
+  if (error) {
+    return [
+      {
+        ...query,
+        error: error()
+      },
+      query
+    ];
+  }
+
+  return [query];
+};
+
+export default ({
+  articleError = () => {},
+  articleQuery,
+  articleVariables = () => {},
+  authorError = () => {},
+  count = 200,
+  hasLeadAssets = true,
+  makeItem = x => x,
+  pageSize,
+  slug
+}) => [
+  ...generateAuthors({ count, error: authorError, hasLeadAssets, slug }),
   ...generateQueries(iteration => {
     let itemIndex = (iteration - 1) * pageSize;
     let imageIndex = (iteration - 1) * pageSize;
