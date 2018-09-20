@@ -14,6 +14,11 @@ exports[`1. has video 1`] = `
     <View>
       <View>
         <Link
+          linkStyle={
+            Object {
+              "padding": 10,
+            }
+          }
           url="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
         >
           <Card
