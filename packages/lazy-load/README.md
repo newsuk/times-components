@@ -47,9 +47,10 @@ yarn test:web
 
 Visit the official
 
-[storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Key%20facts%20title%3A%20=New%20Brexit%20referendum&selectedKind=Composed%2FKey%20Facts&selectedStory=default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
+[storybook](http://components.thetimes.co.uk?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Helpers%2FLazy%20load&selectedStory=Default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see it in action
 
 ## Future
 
-<!-- Add details of future development here. -->
+`Lazy Load` could be a little more intelligent and only lazy load resources if
+on a poor network connection perhaps with an option to `alwaysLazyLoad`.
