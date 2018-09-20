@@ -36,18 +36,8 @@ const description = [
   }
 ];
 
-export default ({
-  articleError = () => {},
-  articleVariables = () => {},
-  count = 200,
-  delay = 0,
-  topicError = () => {},
-  makeItem = x => x,
-  name,
-  pageSize,
-  slug
-}) => [
-  {
+const generateTopic = ({ delay, error, name, slug }) => {
+  const query = {
     defaults: {
       values: {
         topic: () => ({
@@ -58,12 +48,37 @@ export default ({
       }
     },
     delay,
-    error: topicError(),
     query: topicQuery,
     variables: {
       slug
     }
-  },
+  };
+
+  if (error) {
+    return [
+      {
+        ...query,
+        error: error()
+      },
+      query
+    ];
+  }
+
+  return [query];
+};
+
+export default ({
+  articleError = () => {},
+  articleVariables = () => {},
+  count = 200,
+  delay = 0,
+  topicError,
+  makeItem = x => x,
+  name,
+  pageSize,
+  slug
+}) => [
+  ...generateTopic({ delay, error: topicError, name, slug }),
   ...generateQueries(iteration => {
     let itemIndex = (iteration - 1) * pageSize;
     let imageIndex = (iteration - 1) * pageSize;

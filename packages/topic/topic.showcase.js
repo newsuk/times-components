@@ -22,8 +22,7 @@ const preventDefaultedAction = decorateAction =>
 const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
-  onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
-  refetch: preventDefaultedAction(decorateAction)("refetch")
+  onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress")
 });
 
 const articleImageRatio = "3:2";
