@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.30"></a>
+## [3.0.30](https://github.com/newsuk/times-components/compare/@times-components/link@3.0.29...@times-components/link@3.0.30) (2018-09-20)
+
+
+### Bug Fixes
+
+* Padding on the link instead of outside it ([#1339](https://github.com/newsuk/times-components/issues/1339)) ([4f08a82](https://github.com/newsuk/times-components/commit/4f08a82))
+
+
+
+
+
 <a name="3.0.29"></a>
 ## [3.0.29](https://github.com/newsuk/times-components/compare/@times-components/link@3.0.28...@times-components/link@3.0.29) (2018-09-18)
 

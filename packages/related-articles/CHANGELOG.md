@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.1.0...@times-components/related-articles@4.1.1) (2018-09-20)
+
+
+### Bug Fixes
+
+* Padding on the link instead of outside it ([#1339](https://github.com/newsuk/times-components/issues/1339)) ([4f08a82](https://github.com/newsuk/times-components/commit/4f08a82))
+* use null src rather than uri ([#1342](https://github.com/newsuk/times-components/issues/1342)) ([f6b6d1a](https://github.com/newsuk/times-components/commit/f6b6d1a))
+
+
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.0.4...@times-components/related-articles@4.1.0) (2018-09-18)
 
