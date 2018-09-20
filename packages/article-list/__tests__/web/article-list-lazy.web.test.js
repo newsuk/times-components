@@ -22,19 +22,6 @@ addSerializers(
 
 const realIntl = Intl;
 
-beforeEach(() => {
-  global.Intl = {
-    DateTimeFormat: () => ({
-      resolvedOptions: () => ({ timeZone: "Europe/London" })
-    })
-  };
-});
-
-afterEach(() => {
-  global.Intl = realIntl;
-  jest.restoreAllMocks();
-});
-
 const articleListProps = {
   adConfig,
   articles: articleListFixture.slice(0, 3),
@@ -72,7 +59,18 @@ class FakeIntersectionObserver {
   }
 }
 
+beforeEach(() => {
+  global.Intl = {
+    DateTimeFormat: () => ({
+      resolvedOptions: () => ({ timeZone: "Europe/London" })
+    })
+  };
+});
+
 afterEach(() => {
+  global.Intl = realIntl;
+  jest.restoreAllMocks();
+
   delete window.IntersectionObserver;
   intersectionObserverInstances.splice(0);
 });
