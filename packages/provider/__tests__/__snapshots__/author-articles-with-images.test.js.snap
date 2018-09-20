@@ -16,7 +16,7 @@ Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "https://url.io",
+            "url": "https://placeimg.com/300/200/tech",
             Symbol(id): "$Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "title": "Some title 1",
