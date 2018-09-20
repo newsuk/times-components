@@ -18,9 +18,6 @@ addSerializers(
   minimalise((value, key) => omitProps.has(key))
 );
 
-beforeAll(() => jest.useRealTimers());
-afterAll(() => jest.useFakeTimers());
-
 const intersectionObserverInstances = [];
 class FakeIntersectionObserver {
   constructor(cb) {
