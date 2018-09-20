@@ -75,7 +75,7 @@ export default ({
   articleError = () => {},
   articleQuery,
   articleVariables = () => {},
-  authorError = () => {},
+  authorError,
   count = 200,
   hasLeadAssets = true,
   makeItem = x => x,
