@@ -70,9 +70,9 @@ class LazyLoad extends Component {
       }
     });
 
-    if (this.pending.size) {
-      clearTimeout(this.pendingTimer);
+    clearTimeout(this.pendingTimer);
 
+    if (this.pending.size) {
       this.pendingTimer = setTimeout(() => {
         if (!this.pending.size) {
           return;
