@@ -46,9 +46,6 @@ exports[`default styles 1`] = `
         style={
           Object {
             "paddingBottom": 0,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
             "width": "100%",
           }
         }

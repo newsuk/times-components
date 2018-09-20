@@ -57,7 +57,11 @@ const RelatedArticleItem = ({
       : get(article, `leadAsset.crop${cropSize}.url`);
 
   return (
-    <Link onPress={e => onPress(e, { url: article.url })} url={url}>
+    <Link
+      linkStyle={{ padding: 10 }}
+      onPress={e => onPress(e, { url: article.url })}
+      url={url}
+    >
       <Card
         contentContainerClass={contentContainerClass}
         imageContainerClass={imageContainerClass}

@@ -15,6 +15,11 @@ exports[`1. two related articles 1`] = `
       <div>
         <div>
           <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
+            }
             url="https://first.io"
           >
             <Card
@@ -67,6 +72,11 @@ exports[`1. two related articles 1`] = `
         <div />
         <div>
           <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
+            }
             url="https://second.io"
           >
             <Card
