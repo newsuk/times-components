@@ -5,9 +5,10 @@ import { Article } from "@times-components/pages";
 
 const config = NativeModules.ReactConfig;
 const { fetch } = NativeModules.NativeFetch;
-const { track } = NativeModules.ReactAnalytics;
+const { onArticleView, track } = NativeModules.ReactAnalytics;
 const {
   onArticlePress,
+  onArticleLoaded,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -44,7 +45,13 @@ const ArticleView = ({
   return (
     <ArticlePageView
       articleId={articleId}
-      analyticsStream={track}
+      analyticsStream={(event) => {
+        if (event.object === "Article" && event.action === "Viewed") {
+          onArticleLoaded(event.attrs.articleId, event);
+        } else {
+          track(event);
+        }
+      }}
       omitErrors={omitErrors}
       onArticlePress={onArticlePress}
       onAuthorPress={onAuthorPress}
