@@ -31,7 +31,7 @@ const getProps = decorateAction => ({
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   onTwitterLinkPress: preventDefaultedAction(decorateAction)(
     "onTwitterLinkPress"
-  ),
+  )
 });
 
 const articleImageRatio = "3:2";
