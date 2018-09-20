@@ -103,7 +103,7 @@ export default ({
             );
           },
           Crop: () => ({
-            url: "https://url.io"
+            url: "https://placeimg.com/300/200/tech"
           }),
           Image: () => {
             imageIndex += 1;
