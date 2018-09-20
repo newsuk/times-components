@@ -24,6 +24,12 @@ unchanged.
 
 ## Lazy Loading
 
+The `lazy-load` package is used to lazy load images to improve the feeling of a
+fast page load. Low resolution images are first rendered and then high
+resolution images are progressively layered on. On browsers that support
+`IntersectionObserver` the higher resolution images will only be pulled in as
+they come into the viewport saving bandwidth and mobile resources.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
