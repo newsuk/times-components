@@ -35,9 +35,6 @@ afterEach(() => {
   jest.restoreAllMocks();
 });
 
-beforeAll(() => jest.useRealTimers());
-afterAll(() => jest.useFakeTimers());
-
 const articleListProps = {
   adConfig,
   articles: articleListFixture.slice(0, 3),
