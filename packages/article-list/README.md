@@ -24,9 +24,11 @@ unchanged.
 
 ## Lazy Loading
 
-Currently, the web version of article list incorporates lazy loading of images
-within article list. This is implemented with
-[`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+The `lazy-load` package is used to lazy load images to improve the feeling of a
+fast page load. Low resolution images are first rendered and then high
+resolution images are progressively layered on. On browsers that support
+`IntersectionObserver` the higher resolution images will only be pulled in as
+they come into the viewport saving bandwidth and mobile resources.
 
 ## Contributing
 
@@ -68,8 +70,6 @@ Inifinite scroll pagination is baked into this package for the native
 experience. We are planning to fish this out into the pagination package in the
 future.
 
-Lazy loading for the web is baked into this package at the moment. We intend to
-move this into its own package so it can be reusable across other pages and
-features, and not just available for list pages. A package like
+A package like
 [`react-virtualized`](https://github.com/bvaughn/react-virtualized) could be
-utilised in the future.
+utilised in the future for infinite scroll on mobweb.
