@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "2.1.32",
+  "version": "2.1.33",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.0",
     "@times-components/jest-configurator": "2.1.6",
     "@times-components/jest-serializer": "3.1.1",
-    "@times-components/storybook": "3.1.10",
+    "@times-components/storybook": "3.1.11",
     "@times-components/test-utils": "1.1.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -61,7 +61,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.3.11",
+    "@times-components/styleguide": "3.3.12",
     "@times-components/svgs": "2.1.10",
     "prop-types": "15.6.2"
   },
