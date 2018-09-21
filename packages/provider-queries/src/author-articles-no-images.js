@@ -1,4 +1,7 @@
-export default `
+import { addTypenameToDocument } from "apollo-utilities";
+import gql from "graphql-tag";
+
+export default addTypenameToDocument(gql`
   query ArticleListQuery(
     $first: Int
     $longSummaryLength: Int
@@ -7,16 +10,13 @@ export default `
     $slug: Slug!
   ) {
     author(slug: $slug) {
-      __typename
       articles {
-        __typename
         count
         list(first: $first, skip: $skip) {
-          __typename
           id
           label
           leadAsset {
-            type: __typename
+            __typename
           }
           longSummary: summary(maxCharCount: $longSummaryLength)
           publicationName
@@ -29,7 +29,7 @@ export default `
       }
     }
   }
-`;
+`);
 
 export const propsToVariables = ({
   longSummaryLength,

@@ -1,6 +1,4 @@
 import { Component } from "react";
-import gql from "graphql-tag";
-import { addTypenameToDocument } from "apollo-utilities";
 import PropTypes from "prop-types";
 import schema from "@times-components/schema/schema.json";
 import mm from "./make-mocks";
@@ -21,7 +19,7 @@ const toResponse = ({ delay, error, mock, query, variables }) => ({
   delay,
   error,
   request: {
-    query: addTypenameToDocument(gql(query)),
+    query,
     variables
   },
   result: mock
@@ -59,7 +57,7 @@ MockFixture.propTypes = {
         types: PropTypes.any
       }),
       delay: null,
-      query: PropTypes.string.isRequired,
+      query: PropTypes.object.isRequired,
       variables: PropTypes.object
     })
   ).isRequired,

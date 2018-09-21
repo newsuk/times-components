@@ -1,4 +1,7 @@
-export default `
+import { addTypenameToDocument } from "apollo-utilities";
+import gql from "graphql-tag";
+
+export default addTypenameToDocument(gql`
   query TopicArticlesQuery(
     $first: Int
     $imageRatio: Ratio!
@@ -6,34 +9,25 @@ export default `
     $slug: Slug!
   ) {
     topic(slug: $slug) {
-      __typename
       articles {
-        __typename
         count
         list(first: $first, skip: $skip) {
-          __typename
           byline
           headline
           id
           label
           leadAsset {
-            __typename
             ... on Image {
-              __typename
               id
               title
               crop(ratio: $imageRatio) {
-                __typename
                 url
               }
             }
             ... on Video {
-              __typename
               posterImage {
-                __typename
                 title
                 crop(ratio: $imageRatio) {
-                  __typename
                   url
                 }
               }
@@ -49,7 +43,7 @@ export default `
       }
     }
   }
-`;
+`);
 
 export const propsToVariables = ({
   articleImageRatio = "3:2",

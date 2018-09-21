@@ -1,35 +1,30 @@
-export default `
-  query ArticleListQuery(    
+import { addTypenameToDocument } from "apollo-utilities";
+import gql from "graphql-tag";
+
+export default addTypenameToDocument(gql`
+  query ArticleListQuery(
     $first: Int
     $imageRatio: Ratio!
     $skip: Int
     $slug: Slug!
   ) {
     author(slug: $slug) {
-      __typename
       articles {
-        __typename
         count
         list(first: $first, skip: $skip) {
-          __typename
           headline
           id
           label
           leadAsset {
-            __typename
             ... on Image {
-              __typename
               crop(ratio: $imageRatio) {
-                __typename
                 url
               }
               title
             }
             ... on Video {
-              __typename
-              posterImage {                
+              posterImage {
                 crop(ratio: $imageRatio) {
-                  __typename
                   url
                 }
                 title
@@ -39,13 +34,13 @@ export default `
           publicationName
           publishedTime
           shortHeadline
-          summary(maxCharCount: 145)          
+          summary(maxCharCount: 145)
           url
         }
       }
     }
   }
-`;
+`);
 
 export const propsToVariables = ({
   slug,

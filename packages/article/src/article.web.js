@@ -50,7 +50,10 @@ const renderArticle = (
   const displayRelatedArticles = relatedArticleSlice ? (
     <RelatedArticles
       analyticsStream={analyticsStream}
-      slice={relatedArticleSlice}
+      slice={{
+        ...relatedArticleSlice,
+        sliceName: relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
+      }}
     />
   ) : null;
 

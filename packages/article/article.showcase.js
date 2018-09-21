@@ -2,9 +2,7 @@
 /* eslint-env browser */
 import React from "react";
 import invert from "lodash.invert";
-import { addTypenameToDocument } from "apollo-utilities";
 import Context from "@times-components/context";
-import gql from "graphql-tag";
 import { ArticleProvider } from "@times-components/provider";
 import { article as articleQuery } from "@times-components/provider-queries";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
@@ -29,7 +27,7 @@ const preventDefaultedAction = decorateAction =>
 const mocks = [
   {
     request: {
-      query: addTypenameToDocument(gql(articleQuery)),
+      query: articleQuery,
       variables: {
         id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       }

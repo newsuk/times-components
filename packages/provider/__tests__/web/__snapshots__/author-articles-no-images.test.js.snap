@@ -13,7 +13,7 @@ Object {
         "id": "d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
         "label": "Test Label 1",
         "leadAsset": Object {
-          "type": "Image",
+          "__typename": "Image",
           Symbol(id): "$Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f.leadAsset",
         },
         "longSummary": Array [],

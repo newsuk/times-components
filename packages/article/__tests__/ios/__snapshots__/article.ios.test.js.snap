@@ -190,6 +190,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       <RelatedArticles
         slice={
           Object {
+            "__typename": "StandardSlice",
             "items": Array [
               Object {
                 "article": Object {

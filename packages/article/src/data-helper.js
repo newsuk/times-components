@@ -31,9 +31,13 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
+
   const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
-        relatedArticleSlice: articleData.relatedArticleSlice
+        relatedArticleSlice: {
+          ...articleData.relatedArticleSlice,
+          sliceName: articleData.relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
+        }
       }
     : null;
   const commentsData = {

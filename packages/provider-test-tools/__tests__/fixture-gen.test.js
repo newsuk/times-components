@@ -1,4 +1,6 @@
 import { iterator } from "@times-components/test-utils";
+import gql from "graphql-tag";
+import { addTypenameToDocument } from "apollo-utilities";
 import mm from "../src/make-mocks";
 import schema from "../fixtures/test-schema.json";
 
@@ -18,15 +20,15 @@ const tests = [
   {
     name: "stubbed data with defaults",
     async test() {
-      const query = `
-      query {
-        article {
-          headline,
-          id,
-          label
+      const query = addTypenameToDocument(gql`
+        query {
+          article(id: "1234") {
+            headline
+            id
+            label
+          }
         }
-      }
-      `;
+      `);
 
       const result = await makeMocks(query);
 
@@ -36,15 +38,15 @@ const tests = [
   {
     name: "custom type result",
     async test() {
-      const query = `
-      query {
-        article {
-          headline,
-          id,
-          label
+      const query = addTypenameToDocument(gql`
+        query {
+          article(id: "1234") {
+            headline
+            id
+            label
+          }
         }
-      }
-      `;
+      `);
 
       const result = await makeMocks(query, {
         types: {
@@ -58,15 +60,15 @@ const tests = [
   {
     name: "custom value result",
     async test() {
-      const query = `
-      query {
-        article {
-          headline,
-          id,
-          label
+      const query = addTypenameToDocument(gql`
+        query {
+          article(id: "1234") {
+            headline
+            id
+            label
+          }
         }
-      }
-      `;
+      `);
 
       const result = await makeMocks(query, {
         values: {

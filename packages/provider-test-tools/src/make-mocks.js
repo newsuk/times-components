@@ -1,5 +1,6 @@
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import { graphql } from "graphql";
+import { print } from "graphql/language/printer";
 import { printSchema, buildClientSchema } from "graphql/utilities";
 
 export default ({ data: { __schema } }) => (
@@ -29,5 +30,5 @@ export default ({ data: { __schema } }) => (
     preserveResolvers: true
   });
 
-  return graphql(schema, query, null, null, variables);
+  return graphql(schema, print(query), null, null, variables);
 };
