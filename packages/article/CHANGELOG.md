@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.1.2"></a>
+## [5.1.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.1.1...@times-components/article@5.1.2) (2018-09-21)
+
+
+### Bug Fixes
+
+* Change object name so that it works ([#1346](https://github.com/newsuk/times-components/issues/1346)) ([8730c6c](https://github.com/newsuk/times-components/commit/8730c6c))
+
+
+
+
+
 <a name="5.1.1"></a>
 ## [5.1.1](https://github.com/newsuk/times-components/compare/@times-components/article@5.1.0...@times-components/article@5.1.1) (2018-09-20)
 
