@@ -241,7 +241,7 @@ export const longContent = [
     attributes: {
       id: "d2f83305-d558-4f78-f582-32115c659355",
       display: "secondary",
-      metadata: {
+      element: {
         value: "times-datawrapper",
         attributes: { "chart-id": "csmgb" }
       },
@@ -1055,7 +1055,7 @@ const defaultContent = [
     attributes: {
       id: "d2f83305-d558-4f78-f582-32115c659355",
       display: "secondary",
-      metadata: {
+      element: {
         value: "times-datawrapper",
         attributes: { "chart-id": "csmgb" }
       },
