@@ -1,77 +1,46 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import {
-  fixtureGenerator,
-  MockedProvider
+  authorProfile as makeAuthorParams,
+  MockedProvider,
+  MockFixture
 } from "@times-components/provider-test-tools";
+import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import { AuthorArticlesWithImagesProvider } from "../src/provider";
 
-const list = fixtureGenerator.makeCustomArticles(1, {
-  headline(i) {
-    return `Headline ${i}`;
-  },
-  id(i) {
-    return `7225cd6a-701c-11e8-bea3-bf1a5a054f${i}a`;
-  },
-  label(i) {
-    return `Label ${i}`;
-  },
-  leadAsset() {
-    return {
-      title: "Title",
-      crop: {
-        url: "https://crop.io",
-        __typename: "Crop"
-      },
-      type: "Image",
-      __typename: "Image"
-    };
-  },
-  publicationName(i) {
-    return i % 2 ? "TIMES" : "SUNDAYTIMES";
-  },
-  publishedTime() {
-    return "2018-06-14T23:01:00.000Z";
-  },
-  shortHeadline(i) {
-    return `Short Headline ${i}`;
-  },
-  summary(i) {
-    return [
-      {
-        name: "text",
-        attributes: {
-          value: `Summary ${i}`
-        },
-        children: []
-      }
-    ];
-  },
-  url(i) {
-    return `https://article${i}.io`;
-  }
-});
+const renderComponent = child => {
+  const articleImageRatio = "3:2";
+  const pageSize = 1;
+  const slug = "deborah-haynes";
 
-const renderComponent = child =>
-  renderer.create(
-    <MockedProvider
-      mocks={fixtureGenerator.makeArticleMocks({
-        delay: 0,
-        list,
-        pageSize: 5,
-        withImages: true
+  return renderer.create(
+    <MockFixture
+      params={makeAuthorParams({
+        articleQuery: authorArticlesWithImagesQuery,
+        articleVariables: iteration => ({
+          first: pageSize,
+          imageRatio: articleImageRatio,
+          skip: (iteration - 1) * pageSize,
+          slug
+        }),
+        pageSize,
+        slug
       })}
-    >
-      <AuthorArticlesWithImagesProvider
-        debounceTimeMs={0}
-        page={1}
-        pageSize={5}
-        slug="deborah-haynes"
-      >
-        {child}
-      </AuthorArticlesWithImagesProvider>
-    </MockedProvider>
+      render={mocks => (
+        <MockedProvider mocks={mocks}>
+          <AuthorArticlesWithImagesProvider
+            debounceTimeMs={0}
+            page={1}
+            pageSize={pageSize}
+            slug={slug}
+          >
+            {child}
+          </AuthorArticlesWithImagesProvider>
+        </MockedProvider>
+      )}
+    />
   );
+};
 
 describe("AuthorArticlesWithImagesProvider", () => {
   it("returns query result", done => {

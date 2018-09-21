@@ -1,7 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/provider-test-tools";
-import { addTypenameToDocument } from "apollo-utilities";
 import { article as articleQuery } from "@times-components/provider-queries";
 import fixture from "@times-components/provider-test-tools/fixtures/article";
 import { ArticleProvider } from "../src/provider";
@@ -9,7 +8,7 @@ import { ArticleProvider } from "../src/provider";
 const mocks = [
   {
     request: {
-      query: addTypenameToDocument(articleQuery),
+      query: articleQuery,
       variables: {
         id: "113e9875-b7bf-4dd7-ac99-dee231bf6e74"
       }
@@ -56,7 +55,6 @@ const mocks = [
       },
       relatedArticleSlice: {
         __typename: "StandardSlice",
-        sliceName: "StandardSlice",
         items: [
           {
             __typename: "Tile",

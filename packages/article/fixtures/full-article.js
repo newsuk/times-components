@@ -1299,11 +1299,10 @@ const defaultLeadAsset = {
       "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
     __typename: "Crop"
   },
-  type: "Image",
   __typename: "Image"
 };
 const defaultRelatedArticleSlice = {
-  sliceName: "StandardSlice",
+  __typename: "StandardSlice",
   items: [
     {
       article: {
@@ -2034,7 +2033,7 @@ export const testFixture = {
     __typename: "Image"
   },
   relatedArticleSlice: {
-    sliceName: "StandardSlice",
+    __typename: "StandardSlice",
     items: [
       {
         article: {

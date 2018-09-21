@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. stubbed data with defaults 1`] = `
+Object {
+  "data": Object {
+    "article": Object {
+      "__typename": "Article",
+      "headline": "Default headline",
+      "id": "a7b69311-390c-4b23-b3b6-2a17f681d831",
+      "label": "Hello World",
+    },
+  },
+}
+`;
+
+exports[`2. custom type result 1`] = `
+Object {
+  "data": Object {
+    "article": Object {
+      "__typename": "Article",
+      "headline": "Default headline",
+      "id": "a7b69311-390c-4b23-b3b6-2a17f681d831",
+      "label": "Test string",
+    },
+  },
+}
+`;
+
+exports[`3. custom value result 1`] = `
+Object {
+  "data": Object {
+    "article": Object {
+      "__typename": "Article",
+      "headline": "A test headline",
+      "id": "a7b69311-390c-4b23-b3b6-2a17f681d831",
+      "label": "A test label",
+    },
+  },
+}
+`;

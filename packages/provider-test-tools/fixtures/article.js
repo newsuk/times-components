@@ -531,7 +531,7 @@ const defaultLeadAsset = {
   __typename: "Image"
 };
 const defaultRelatedArticleSlice = {
-  sliceName: "StandardSlice",
+  __typename: "StandardSlice",
   items: [
     {
       id: "ea16d744-cb4a-11e4-a202-50ac5def393a",

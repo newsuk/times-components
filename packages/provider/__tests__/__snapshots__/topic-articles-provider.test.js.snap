@@ -4,50 +4,33 @@ exports[`TopicArticlesProvider returns query result 1`] = `
 Object {
   "__typename": "Topic",
   "articles": Object {
-    "__typename": "Articles",
-    "count": 50,
+    "__typename": "TopicArticles",
+    "count": 200,
     "list": Array [
       Object {
         "__typename": "Article",
-        "byline": Array [
-          Object {
-            "attributes": Object {
-              "value": "Byline 1",
-            },
-            "children": Array [],
-            "name": "text",
-          },
-        ],
-        "headline": "Headline 1",
-        "id": "7225cd6a-701c-11e8-bea3-bf1a5a054f1a",
-        "label": "Label 1",
+        "byline": Array [],
+        "headline": "Test Headline 1",
+        "id": "d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "Test Label 1",
         "leadAsset": Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "https://crop.io",
-            Symbol(id): "$Image:7225cd6a-701c-11e8-bea3-bf1a5a054f1b.crop({\\"ratio\\":\\"3:2\\"})",
+            "url": "https://placeimg.com/300/200/tech",
+            Symbol(id): "$Image:e98c2 1c-cb16-11e7-b529-95e3fc05f40f.crop({\\"ratio\\":\\"3:2\\"})",
           },
-          "id": "7225cd6a-701c-11e8-bea3-bf1a5a054f1b",
-          "title": "Title",
-          "type": "Image",
-          Symbol(id): "Image:7225cd6a-701c-11e8-bea3-bf1a5a054f1b",
+          "id": "e98c2 1c-cb16-11e7-b529-95e3fc05f40f",
+          "title": "Some title 1",
+          Symbol(id): "Image:e98c2 1c-cb16-11e7-b529-95e3fc05f40f",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2018-06-14T23:01:00.000Z",
-        "section": "Section 1",
-        "shortHeadline": "Short Headline 1",
-        "summary": Array [
-          Object {
-            "attributes": Object {
-              "value": "Summary 1",
-            },
-            "children": Array [],
-            "name": "text",
-          },
-        ],
-        "url": "https://article1.io",
-        Symbol(id): "Article:7225cd6a-701c-11e8-bea3-bf1a5a054f1a",
+        "publishedTime": "2018-06-01",
+        "section": "bricksmortar",
+        "shortHeadline": "Test Short Headline 1",
+        "summary": Array [],
+        "url": "https://url.io",
+        Symbol(id): "Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
       },
     ],
     Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"}).articles",

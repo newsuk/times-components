@@ -44,7 +44,6 @@
     "@times-components/tealium-utils": "0.6.9",
     "@times-components/test-utils": "1.1.0",
     "@times-components/webpack-configurator": "2.0.5",
-    "apollo-utilities": "1.0.18",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",

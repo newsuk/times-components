@@ -4,41 +4,25 @@ exports[`AuthorArticlesNoImagesProvider returns query result 1`] = `
 Object {
   "__typename": "Author",
   "articles": Object {
-    "__typename": "Articles",
-    "count": 20,
+    "__typename": "AuthorArticles",
+    "count": 200,
     "list": Array [
       Object {
         "__typename": "Article",
-        "headline": "Headline 1",
-        "id": "7225cd6a-701c-11e8-bea3-bf1a5a054f1a",
-        "label": "Label 1",
+        "headline": "Test Headline 1",
+        "id": "d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "Test Label 1",
         "leadAsset": Object {
-          "type": "Image",
-          Symbol(id): "$Article:7225cd6a-701c-11e8-bea3-bf1a5a054f1a.leadAsset",
+          "__typename": "Image",
+          Symbol(id): "$Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f.leadAsset",
         },
-        "longSummary": Array [
-          Object {
-            "attributes": Object {
-              "value": "Long Summary 1",
-            },
-            "children": Array [],
-            "name": "text",
-          },
-        ],
+        "longSummary": Array [],
         "publicationName": "TIMES",
-        "publishedTime": "2018-06-14T23:01:00.000Z",
-        "shortHeadline": "Short Headline 1",
-        "shortSummary": Array [
-          Object {
-            "attributes": Object {
-              "value": "Short Summary 1",
-            },
-            "children": Array [],
-            "name": "text",
-          },
-        ],
-        "url": "https://article1.io",
-        Symbol(id): "Article:7225cd6a-701c-11e8-bea3-bf1a5a054f1a",
+        "publishedTime": "2018-06-01",
+        "shortHeadline": "Test Short Headline 1",
+        "shortSummary": Array [],
+        "url": "https://url.io",
+        Symbol(id): "Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
       },
     ],
     Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",

@@ -1,14 +1,24 @@
-import { Text, View } from "react-native";
 import React from "react";
-import { ApolloError } from "apollo-client";
-import articleListNoImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-no-images.json";
-import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
-import articleListWithShortHeadlineFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-short-headline.json";
-import articleListHasVideoFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-has-video.json";
+import { Text, View } from "react-native";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
+import {
+  authorProfile as makeAuthorParams,
+  MockedProvider,
+  MockFixture
+} from "@times-components/provider-test-tools";
+import {
+  authorArticlesNoImages as authorArticlesNoImagesQuery,
+  authorArticlesWithImages as authorArticlesWithImagesQuery
+} from "@times-components/provider-queries";
+import {
+  AuthorArticlesNoImagesProvider,
+  AuthorArticlesWithImagesProvider
+} from "@times-components/provider";
+import get from "lodash.get";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 import adConfig from "./fixtures/article-ad-config.json";
+import { ratioTextToFloat } from "../utils/dist";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -21,23 +31,25 @@ const preventDefaultedAction = decorateAction =>
 const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
-  articles: articleListWithImagesFixture,
-  count: articleListWithImagesFixture.length,
   emptyStateMessage:
     "Unfortunately, there are no articles relating to this page",
   fetchMore: () => Promise.resolve(),
-  imageRatio: 3 / 2,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   onNext: preventDefaultedAction(decorateAction)("onNext"),
   onPrev: preventDefaultedAction(decorateAction)("onPrev"),
-  page: 1,
-  pageSize: 3,
   refetch: preventDefaultedAction(decorateAction)("refetch")
 });
 
 const TrackedArticleList = withTrackingContext(ArticleList, {
   trackingObjectName: "ArticleList"
 });
+
+const articleImageRatio = "3:2";
+const count = 200;
+const emptyStateMessage = "Empty State";
+const page = 1;
+const pageSize = 10;
+const slug = "deborah-haynes";
 
 export default {
   name: "Composed/Article List",
@@ -46,29 +58,103 @@ export default {
       type: "story",
       name: "Default with images",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList {...getProps(decorateAction)} />
+        <MockFixture
+          params={makeAuthorParams({
+            articleQuery: authorArticlesWithImagesQuery,
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count,
+            pageSize,
+            slug
+          })}
+          render={mocks => (
+            <MockedProvider mocks={mocks}>
+              <AuthorArticlesWithImagesProvider
+                debounceTimeMs={0}
+                page={page}
+                pageSize={pageSize}
+                slug={slug}
+              >
+                {({
+                  author: data,
+                  error: articlesError,
+                  isLoading: articlesLoading,
+                  page: articlePage,
+                  pageSize: articlePageSize,
+                  variables: { imageRatio = "3:2" }
+                }) => (
+                  <TrackedArticleList
+                    articles={get(data, "articles.list", [])}
+                    articlesLoading={articlesLoading}
+                    count={count}
+                    emptyStateMessage={emptyStateMessage}
+                    error={articlesError}
+                    imageRatio={ratioTextToFloat(imageRatio)}
+                    page={articlePage}
+                    pageSize={articlePageSize}
+                    showImages
+                    {...getProps(decorateAction)}
+                  />
+                )}
+              </AuthorArticlesWithImagesProvider>
+            </MockedProvider>
+          )}
+        />
       )
     },
     {
       type: "story",
       name: "Default without images",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList
-          {...getProps(decorateAction)}
-          articles={articleListNoImagesFixture}
-          count={articleListNoImagesFixture.length}
-          showImages={false}
-        />
-      )
-    },
-    {
-      type: "story",
-      name: "With video labels",
-      component: (_, { decorateAction }) => (
-        <TrackedArticleList
-          {...getProps(decorateAction)}
-          articles={articleListHasVideoFixture}
-          count={articleListHasVideoFixture.length}
+        <MockFixture
+          params={makeAuthorParams({
+            articleQuery: authorArticlesNoImagesQuery,
+            articleVariables: iteration => ({
+              first: pageSize,
+              longSummaryLength: 360,
+              shortSummaryLength: 220,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count,
+            hasLeadAssets: false,
+            pageSize,
+            slug
+          })}
+          render={mocks => (
+            <MockedProvider mocks={mocks}>
+              <AuthorArticlesNoImagesProvider
+                debounceTimeMs={0}
+                page={page}
+                pageSize={pageSize}
+                slug={slug}
+              >
+                {({
+                  author: data,
+                  error: articlesError,
+                  isLoading: articlesLoading,
+                  page: articlePage,
+                  pageSize: articlePageSize
+                }) => (
+                  <TrackedArticleList
+                    articles={get(data, "articles.list", [])}
+                    articlesLoading={articlesLoading}
+                    count={count}
+                    emptyStateMessage={emptyStateMessage}
+                    error={articlesError}
+                    page={articlePage}
+                    pageSize={articlePageSize}
+                    showImages={false}
+                    {...getProps(decorateAction)}
+                  />
+                )}
+              </AuthorArticlesNoImagesProvider>
+            </MockedProvider>
+          )}
         />
       )
     },
@@ -76,10 +162,62 @@ export default {
       type: "story",
       name: "With a short headline",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList
-          {...getProps(decorateAction)}
-          articles={articleListWithShortHeadlineFixture}
-          count={articleListWithShortHeadlineFixture.length}
+        <MockFixture
+          params={makeAuthorParams({
+            articleQuery: authorArticlesWithImagesQuery,
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count,
+            makeItem: (item, itemIndex) => {
+              if (itemIndex === 1) {
+                return {
+                  ...item,
+                  headline: null,
+                  shortHeadline: `Short Headline ${itemIndex}`
+                };
+              }
+
+              return item;
+            },
+            pageSize,
+            slug
+          })}
+          render={mocks => (
+            <MockedProvider mocks={mocks}>
+              <AuthorArticlesWithImagesProvider
+                debounceTimeMs={0}
+                page={page}
+                pageSize={pageSize}
+                slug={slug}
+              >
+                {({
+                  author: data,
+                  error: articlesError,
+                  isLoading: articlesLoading,
+                  page: articlePage,
+                  pageSize: articlePageSize,
+                  variables: { imageRatio = "3:2" }
+                }) => (
+                  <TrackedArticleList
+                    articles={get(data, "articles.list", [])}
+                    articlesLoading={articlesLoading}
+                    count={count}
+                    emptyStateMessage={emptyStateMessage}
+                    error={articlesError}
+                    imageRatio={ratioTextToFloat(imageRatio)}
+                    page={articlePage}
+                    pageSize={articlePageSize}
+                    showImages
+                    {...getProps(decorateAction)}
+                  />
+                )}
+              </AuthorArticlesWithImagesProvider>
+            </MockedProvider>
+          )}
         />
       )
     },
@@ -87,7 +225,7 @@ export default {
       type: "story",
       name: "With a header",
       component: (_, { decorateAction }) => {
-        const ArticleListHeader = (
+        const articleListHeader = (
           <View
             style={{
               alignItems: "center",
@@ -102,9 +240,52 @@ export default {
         );
 
         return (
-          <TrackedArticleList
-            {...getProps(decorateAction)}
-            articleListHeader={ArticleListHeader}
+          <MockFixture
+            params={makeAuthorParams({
+              articleQuery: authorArticlesWithImagesQuery,
+              articleVariables: iteration => ({
+                first: pageSize,
+                imageRatio: articleImageRatio,
+                skip: (iteration - 1) * pageSize,
+                slug
+              }),
+              count,
+              pageSize,
+              slug
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize,
+                    variables: { imageRatio = "3:2" }
+                  }) => (
+                    <TrackedArticleList
+                      articleListHeader={articleListHeader}
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      imageRatio={ratioTextToFloat(imageRatio)}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesWithImagesProvider>
+              </MockedProvider>
+            )}
           />
         );
       }
@@ -129,11 +310,52 @@ export default {
       type: "story",
       name: "Error getting article list data",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList
-          adConfig={adConfig}
-          analyticsStream={storybookReporter}
-          error={new ApolloError("Some Error")}
-          refetch={preventDefaultedAction(decorateAction)("refetch")}
+        <MockFixture
+          params={makeAuthorParams({
+            articleError: () => new Error("Some Error"),
+            articleQuery: authorArticlesWithImagesQuery,
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count,
+            pageSize,
+            slug
+          })}
+          render={mocks => (
+            <MockedProvider mocks={mocks}>
+              <AuthorArticlesWithImagesProvider
+                debounceTimeMs={0}
+                page={page}
+                pageSize={pageSize}
+                slug={slug}
+              >
+                {({
+                  author: data,
+                  error: articlesError,
+                  isLoading: articlesLoading,
+                  page: articlePage,
+                  pageSize: articlePageSize,
+                  variables: { imageRatio = "3:2" }
+                }) => (
+                  <TrackedArticleList
+                    articles={get(data, "articles.list", [])}
+                    articlesLoading={articlesLoading}
+                    count={count}
+                    emptyStateMessage={emptyStateMessage}
+                    error={articlesError}
+                    imageRatio={ratioTextToFloat(imageRatio)}
+                    page={articlePage}
+                    pageSize={articlePageSize}
+                    showImages
+                    {...getProps(decorateAction)}
+                  />
+                )}
+              </AuthorArticlesWithImagesProvider>
+            </MockedProvider>
+          )}
         />
       )
     },
@@ -141,7 +363,52 @@ export default {
       type: "story",
       name: "Empty article list",
       component: (_, { decorateAction }) => (
-        <TrackedArticleList {...getProps(decorateAction)} articles={[]} />
+        <MockFixture
+          params={makeAuthorParams({
+            articleQuery: authorArticlesWithImagesQuery,
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count: 0,
+            pageSize,
+            slug
+          })}
+          render={mocks => (
+            <MockedProvider mocks={mocks}>
+              <AuthorArticlesWithImagesProvider
+                debounceTimeMs={0}
+                page={page}
+                pageSize={pageSize}
+                slug={slug}
+              >
+                {({
+                  author: data,
+                  error: articlesError,
+                  isLoading: articlesLoading,
+                  page: articlePage,
+                  pageSize: articlePageSize,
+                  variables: { imageRatio = "3:2" }
+                }) => (
+                  <TrackedArticleList
+                    articles={get(data, "articles.list", [])}
+                    articlesLoading={articlesLoading}
+                    count={count}
+                    emptyStateMessage={emptyStateMessage}
+                    error={articlesError}
+                    imageRatio={ratioTextToFloat(imageRatio)}
+                    page={articlePage}
+                    pageSize={articlePageSize}
+                    showImages
+                    {...getProps(decorateAction)}
+                  />
+                )}
+              </AuthorArticlesWithImagesProvider>
+            </MockedProvider>
+          )}
+        />
       )
     }
   ]

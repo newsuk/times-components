@@ -15,10 +15,10 @@ const {
 const showcaseConverter = showcaseToStoryBook(storiesOf, knobs, actions);
 
 export {
-  CenteredDecorator,
   BarSpacingDecorator,
+  CenteredDecorator,
   LateralSpacingDecorator,
-  WhiteBgColorDecorator,
   select,
-  showcaseConverter
+  showcaseConverter,
+  WhiteBgColorDecorator
 };

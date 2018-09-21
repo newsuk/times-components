@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import {
-  fixtureGenerator,
-  MockedProvider
+  fixtures,
+  MockedProvider,
+  MockFixture,
+  topic as makeParams
 } from "@times-components/provider-test-tools";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
@@ -17,23 +19,53 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const pageSize = 20;
-const slug = "chelsea";
-
 const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
-  onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
-  page: 1,
-  pageSize,
-  refetch: preventDefaultedAction(decorateAction)("refetch"),
-  slug
+  onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress")
 });
 
-const mocks = fixtureGenerator.makeTopicArticleMocks({
-  withImages: true,
-  pageSize
-});
+const articleImageRatio = "3:2";
+const name = "Chelsea";
+const pageSize = 20;
+const slug = "chelsea";
+
+const makeTopic = (decorateAction, params) => (
+  <MockFixture
+    params={params}
+    render={mocks => (
+      <MockedProvider mocks={mocks}>
+        <TopicProvider
+          articleImageRatio={articleImageRatio}
+          debounceTimeMs={250}
+          page={1}
+          pageSize={pageSize}
+          slug={slug}
+        >
+          {({
+            error,
+            isLoading,
+            page,
+            pageSize: authorPageSize,
+            refetch,
+            topic
+          }) => (
+            <Topic
+              error={error}
+              isLoading={isLoading}
+              page={page}
+              pageSize={authorPageSize}
+              refetch={refetch}
+              slug={slug}
+              topic={topic}
+              {...getProps(decorateAction)}
+            />
+          )}
+        </TopicProvider>
+      </MockedProvider>
+    )}
+  />
+);
 
 export default {
   name: "Pages/Topic",
@@ -41,76 +73,84 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: (_, { decorateAction }) => (
-        <MockedProvider mocks={mocks}>
-          <TopicProvider debounceTimeMs={0} slug={slug}>
-            {({ topic, error, isLoading, refetch }) => (
-              <Topic
-                {...getProps(decorateAction)}
-                error={error}
-                isLoading={isLoading}
-                refetch={refetch}
-                topic={topic}
-              />
-            )}
-          </TopicProvider>
-        </MockedProvider>
-      )
+      component: (_, { decorateAction }) =>
+        makeTopic(
+          decorateAction,
+          makeParams({
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            makeItem(item, itemIndex) {
+              if (fixtures.topicArticles[itemIndex]) {
+                return fixtures.topicArticles[itemIndex];
+              }
+
+              return item;
+            },
+            name,
+            pageSize,
+            slug
+          })
+        )
     },
     {
       type: "story",
       name: "Loading",
       component: (_, { decorateAction }) => (
-        <MockedProvider isLoading mocks={mocks}>
-          <Topic {...getProps(decorateAction)} isLoading />
+        <MockedProvider isLoading mocks={[]}>
+          <Topic
+            {...getProps(decorateAction)}
+            isLoading
+            refetch={() => {}}
+            slug={slug}
+          />
         </MockedProvider>
       )
     },
     {
       type: "story",
       name: "Empty State",
-      component: (_, { decorateAction }) => (
-        <MockedProvider
-          mocks={fixtureGenerator.makeTopicArticleMocks({ empty: true })}
-        >
-          <TopicProvider debounceTimeMs={0} slug={slug}>
-            {({ topic, error, isLoading, refetch }) => (
-              <Topic
-                {...getProps(decorateAction)}
-                error={error}
-                isLoading={isLoading}
-                refetch={refetch}
-                topic={topic}
-              />
-            )}
-          </TopicProvider>
-        </MockedProvider>
-      )
+      component: (_, { decorateAction }) =>
+        makeTopic(
+          decorateAction,
+          makeParams({
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            count: 0,
+            delay: 1500,
+            name,
+            pageSize,
+            slug
+          })
+        )
     },
     {
       type: "story",
       name: "With an error getting Topic",
-      component: (_, { decorateAction }) => (
-        <MockedProvider
-          mocks={fixtureGenerator.makeMocksWithTopicError({
+      component: (_, { decorateAction }) =>
+        makeTopic(
+          decorateAction,
+          makeParams({
+            articleVariables: iteration => ({
+              first: pageSize,
+              imageRatio: articleImageRatio,
+              skip: (iteration - 1) * pageSize,
+              slug
+            }),
+            delay: 1000,
+            name,
             pageSize,
             slug,
-            withImages: true
-          })}
-        >
-          <TopicProvider debounceTimeMs={0} slug={slug}>
-            {({ topic, error, isLoading, refetch }) => (
-              <Topic
-                {...getProps(decorateAction)}
-                error={error}
-                isLoading={isLoading}
-                refetch={refetch}
-                topic={topic}
-              />
-            )}
-          </TopicProvider>
-        </MockedProvider>
-      )
+            topicError: () => new Error("Topics Broke")
+          })
+        )
     }
   ]
 };
