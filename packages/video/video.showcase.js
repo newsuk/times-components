@@ -93,6 +93,27 @@ export default {
     },
     {
       type: "story",
+      name: "skysports video",
+      component: () => (
+        <View>
+          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Video {...defaultVideoProps} skySports="true" />
+          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Video
+            {...defaultVideoProps}
+            height={374}
+            skySports="true"
+            width={664}
+          />
+          <Text style={{ marginTop: 20, marginBottom: 10 }}>
+            Non sky sports:
+          </Text>
+          <Video {...defaultVideoProps} height={374} width={664} />
+        </View>
+      )
+    },
+    {
+      type: "story",
       name: "with error",
       platform: "web",
       component: () => (

@@ -146,4 +146,20 @@ describe("InlineVideoPlayer", () => {
   it("triggers an error on existing players when the script fails to load", () => {
     fireScriptEventAndExpectComponentMethodToBeCalled("onerror", "handleError");
   });
+
+  it("sky sports banner is hidden on press of play button", () => {
+    const mockScript = {};
+    jest
+      .spyOn(InlineVideoPlayer.prototype, "createBrightcoveScript")
+      .mockReturnValue(mockScript);
+    jest.spyOn(InlineVideoPlayer, "appendScript").mockImplementation();
+
+    renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
+
+    const [component1] = InlineVideoPlayer.activePlayers;
+
+    jest.spyOn(component1, "hideSkyBanner").mockImplementation();
+    component1.handlePlay();
+    expect(component1.hideSkyBanner).toHaveBeenCalled();
+  });
 });
