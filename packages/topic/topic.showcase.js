@@ -101,7 +101,12 @@ export default {
       name: "Loading",
       component: (_, { decorateAction }) => (
         <MockedProvider isLoading mocks={[]}>
-          <Topic {...getProps(decorateAction)} isLoading slug={slug} />
+          <Topic
+            {...getProps(decorateAction)}
+            isLoading
+            refetch={() => {}}
+            slug={slug}
+          />
         </MockedProvider>
       )
     },
