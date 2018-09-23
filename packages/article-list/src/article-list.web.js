@@ -129,7 +129,7 @@ class ArticleList extends Component {
               }
 
               const renderSeperator = () => {
-                if (index === 0 || index === this.advertPosition + 1) {
+                if (index === 0) {
                   return null;
                 }
 

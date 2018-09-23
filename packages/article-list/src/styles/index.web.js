@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     borderColor: colours.functional.keyline,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    paddingVertical: spacing(2)
+    paddingVertical: spacing(2),
+    top: 1
   },
   listContentErrorContainer: {
     flex: 1,
