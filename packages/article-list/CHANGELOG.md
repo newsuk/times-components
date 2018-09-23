@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.2"></a>
+## [5.2.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.2.1...@times-components/article-list@5.2.2) (2018-09-23)
+
+
+### Bug Fixes
+
+* article list inline ad with adblocker keyline bug ([#1341](https://github.com/newsuk/times-components/issues/1341)) ([ba4313d](https://github.com/newsuk/times-components/commit/ba4313d))
+
+
+
+
+
 <a name="5.2.1"></a>
 ## [5.2.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.2.0...@times-components/article-list@5.2.1) (2018-09-21)
 
