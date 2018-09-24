@@ -6,18 +6,19 @@ const styles = {
   button: {
     alignItems: "center",
     backgroundColor: colours.functional.action,
+    borderColor: colours.functional.action,
     borderRadius: 2,
     color: colours.functional.white,
     cursor: "pointer",
-    height: 45,
-    justifyContent: "center",
-    minWidth: 100,
     ...fontFactory({
       font: "supporting",
       fontSize: "button"
     }),
-    paddingTop: 4,
+    height: 45,
+    justifyContent: "center",
     lineHeight: 0,
+    minWidth: 100,
+    paddingTop: 4,
     width: 160
   }
 };

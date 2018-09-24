@@ -4,31 +4,69 @@ exports[`1. video with error 1`] = `
 <style>
 {
   "IS1": {
+    "alignItems": "center",
+    "alignSelf": "center",
+    "backgroundColor": "#006699",
+    "border": 0,
+    "borderColor": "#006699",
+    "borderRadius": 2,
+    "color": "#FFFFFF",
+    "cursor": "pointer",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": 16,
+    "height": 36,
+    "justifyContent": "center",
+    "lineHeight": 0,
+    "marginTop": "15px",
+    "maxWidth": 107,
+    "minWidth": 100,
+    "paddingTop": 4,
+    "width": 160,
+  },
+  "IS2": {
     "height": "100px",
     "width": "100px",
   },
   "S1": {
-    "color": "white",
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "display": "flex",
+    "height": "100%",
+    "margin-bottom": "0px",
+    "width": "100%",
+  },
+  "S2": {
+    "color": "rgba(255,255,255,1)",
     "display": "inline",
     "font-family": "TimesModern-Bold",
-    "font-size": "20px",
+    "font-size": "22px",
     "height": "auto",
     "margin-bottom": "10px",
     "text-align": "center",
     "width": "auto",
   },
-  "S2": {
-    "color": "rgba(255, 255, 255, 0.8)",
+  "S3": {
+    "color": "rgba(255,255,255,1)",
     "display": "inline",
-    "font-family": "TimesDigitalW04",
-    "font-size": "14px",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "16px",
     "height": "auto",
     "margin-bottom": "0px",
-    "max-width": "80%",
+    "max-width": "285px",
     "text-align": "center",
-    "width": "410px",
   },
-  "S3": {
+  "S4": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "max-width": "80%",
+  },
+  "S5": {
     "-ms-flex-align": "center",
     "-ms-flex-pack": "center",
     "-webkit-align-items": "center",
@@ -36,7 +74,7 @@ exports[`1. video with error 1`] = `
     "-webkit-box-pack": "center",
     "-webkit-justify-content": "center",
     "align-items": "center",
-    "background-color": "rgba(0, 0, 0, 0.6)",
+    "background-color": "rgba(0, 0, 0, 1)",
     "display": "flex",
     "justify-content": "center",
     "margin-bottom": "0px",
@@ -45,17 +83,30 @@ exports[`1. video with error 1`] = `
 </style>
 
 <div
-  className="IS1 S3"
+  className="IS2 S5"
 >
   <div
     className="S1"
-  >
-    Video unable to play
-  </div>
+  />
   <div
-    className="S2"
+    className="S4"
   >
-    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
+    <div
+      className="S2"
+    >
+      Something's gone wrong
+    </div>
+    <div
+      className="S3"
+    >
+      Please check your network connection and try again
+    </div>
+    <button
+      className="IS1"
+      type="button"
+    >
+      Retry
+    </button>
   </div>
 </div>
 `;
