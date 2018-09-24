@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import LazyLoad from "./src/lazy-load";
+import LazyLoad from "@times-components/lazy-load/src/lazy-load";
 
 const list = new Array(50).fill(0).map((_, indx) => `node-${indx}`);
 const ListElement = styled.li`
