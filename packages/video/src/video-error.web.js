@@ -6,14 +6,14 @@ import Button from "@times-components/button";
 import Image from "@times-components/image";
 import styles, { retryButtonStyles } from "./styles";
 
-const VideoError = ({ height, width, poster }) => {
+const VideoError = ({ height, width, posterUri }) => {
   const renderPosterImage = () => {
-    if (!poster) return null;
+    if (!posterUri) return null;
     return (
       <Image
         aspectRatio={width / height}
         style={styles.posterImage}
-        uri={poster.uri}
+        uri={posterUri}
       />
     );
   };
@@ -47,12 +47,12 @@ const VideoError = ({ height, width, poster }) => {
 
 VideoError.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  poster: PropTypes.string,
+  posterUri: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 VideoError.defaultProps = {
-  poster: ""
+  posterUri: ""
 };
 
 export default VideoError;
