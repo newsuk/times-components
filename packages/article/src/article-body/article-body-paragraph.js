@@ -16,7 +16,9 @@ const BodyParagraph = props => (
       {({ theme: { scale } }) => {
         const stylesScaled = styleFactory(scale);
         return (
-          <Text style={stylesScaled.articleTextElement}>{props.children}</Text>
+          <Text selectable style={stylesScaled.articleTextElement}>
+            {props.children}
+          </Text>
         );
       }}
     </Context.Consumer>
