@@ -21,14 +21,10 @@ const ArticlePageView = Article(config)(fetch);
 const platformAdConfig = {
   adUnit: "thetimes.mob.android",
   networkId: config.adNetworkId,
-  appVersion: config.appVersion,
   operatingSystem: "Android",
   operatingSystemVersion: config.operatingSystemVersion,
-  environment: config.environment,
   deviceId: config.deviceId,
   cookieEid: config.cookieEid,
-  cookieAcsTnl: config.cookieAcsTnl,
-  cookieIamTgt: config.cookieIamTgt,
   isLoggedIn: config.isLoggedIn,
   platform: "mobile"
 };
