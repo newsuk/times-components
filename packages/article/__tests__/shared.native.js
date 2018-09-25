@@ -20,7 +20,6 @@ const omitKeys = new Set([
   "data",
   "disableVirtualization",
   "horizontal",
-  "selectable",
   "style",
   "testID"
 ]);

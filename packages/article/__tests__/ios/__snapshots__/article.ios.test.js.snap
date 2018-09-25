@@ -58,7 +58,9 @@ exports[`2. a full article with an image as the lead asset 1`] = `
             title="Some Label"
           />
         </View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
         <Text
@@ -135,7 +137,9 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
@@ -270,7 +274,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
             title={null}
           />
         </View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -286,7 +292,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
@@ -317,7 +325,9 @@ exports[`4. an article with no lead asset 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -333,7 +343,9 @@ exports[`4. an article with no lead asset 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
@@ -364,7 +376,9 @@ exports[`5. an article with ads 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -422,7 +436,9 @@ exports[`7. an article with updated byline 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -438,7 +454,9 @@ exports[`7. an article with updated byline 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
@@ -469,7 +487,9 @@ exports[`7. an article with updated byline 2`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -509,7 +529,9 @@ exports[`7. an article with updated byline 2`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
@@ -540,7 +562,9 @@ exports[`8. an article that moves to a loading state 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some Headline
         </Text>
       </View>
@@ -556,7 +580,9 @@ exports[`8. an article that moves to a loading state 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          selectable={true}
+        >
           Some content
         </Text>
       </View>
