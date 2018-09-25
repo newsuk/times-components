@@ -36,7 +36,7 @@ const ArticleListItem = props => {
   const content = showImage ? summary : shortSummary;
 
   return (
-    <Link onPress={onPress} url={url}>
+    <Link delayPressIn={50} onPress={onPress} url={url}>
       <View style={styles.listItemContainer}>
         <Card
           highResSize={highResSize}
