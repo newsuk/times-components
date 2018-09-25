@@ -24,7 +24,7 @@ module.exports = ({ platform }, { module, resolve, plugins }) => ({
   },
   resolve: {
     ...resolve,
-    extensions: [`.${platform}.js`, ".native.js", ".js", ".webpack.js", ".web.js", ".mjs", ".js"],
+    extensions: [`.${platform}.js`, ".native.js", ".js", ".webpack.js", ".mjs", ".js"],
     mainFields: ["devModule", "dev", "react-native", "browser", "module", "main"],
   },
 });
