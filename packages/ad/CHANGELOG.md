@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.37"></a>
+## [2.1.37](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.36...@times-components/ad@2.1.37) (2018-09-25)
+
+
+### Bug Fixes
+
+* enqueue window post messages until it's ready ([#1349](https://github.com/newsuk/times-components/issues/1349)) ([e620b3f](https://github.com/newsuk/times-components/commit/e620b3f))
+
+
+
+
+
 <a name="2.1.36"></a>
 ## [2.1.36](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.35...@times-components/ad@2.1.36) (2018-09-21)
 
