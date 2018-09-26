@@ -17,6 +17,8 @@ export default addTypenameToDocument(gql`
           headline
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             ... on Image {
               id
