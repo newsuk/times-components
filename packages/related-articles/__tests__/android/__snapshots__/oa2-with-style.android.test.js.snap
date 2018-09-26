@@ -7,10 +7,10 @@ exports[`default styles 1`] = `
       Object {
         "alignItems": "center",
         "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 0.5,
+        "borderBottomWidth": 1,
         "borderStyle": "solid",
         "borderTopColor": "#DBDBDB",
-        "borderTopWidth": 0.5,
+        "borderTopWidth": 1,
         "display": "flex",
         "justifyContent": "center",
         "padding": 15,
@@ -36,7 +36,7 @@ exports[`default styles 1`] = `
       style={
         Object {
           "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "borderStyle": "solid",
           "width": "100%",
         }

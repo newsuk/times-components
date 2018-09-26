@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
@@ -7,7 +6,7 @@ const styles = {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundPrimary,
     borderBottomColor: colours.functional.border,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
     minHeight: 264,
     width: "100%"
   },
@@ -35,7 +34,7 @@ const styles = {
     paddingBottom: spacing(8),
     backgroundColor: colours.functional.backgroundPrimary,
     borderBottomColor: colours.functional.border,
-    borderBottomWidth: StyleSheet.hairlineWidth
+    borderBottomWidth: 1
   },
   authorHeadContainerNative: {
     paddingTop: spacing(6),
