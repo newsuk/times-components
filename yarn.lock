@@ -1596,10 +1596,10 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/fructose@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.9.2.tgz#4f9bb97d42f720b070df34cbd2936d63b0f43960"
-  integrity sha512-D689FZjeODmcVq9zHyNaATQiZ34nsCNxPaWWS+YXmuvwAjMWMtFxTHXUNMfyEUYmlFKRNHcPhe9dbun8ey26+g==
+"@times-components/fructose@3.9.4":
+  version "3.9.4"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.9.4.tgz#7e10fa92a1e0cff4acac1eedd12a64f4483ea576"
+  integrity sha512-xfZmGJcEi7tStZ/ua+RnwtemR8JI/rj9hvDbaAvKFhPN70oswhTzGoZalDXDGrnPZUW/lapwo3SBQHflUwA/wg==
   dependencies:
     babel-polyfill "^6.26.0"
     callsite "^1.0.0"
