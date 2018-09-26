@@ -513,6 +513,7 @@ const defaultContent = [
   }
 ];
 const defaultFlags = ["NEW", "EXCLUSIVE"];
+const defaultHasVideo = false;
 const defaultHeadline = "Supplement In Depth Template (Style)";
 const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "Random label";
@@ -1166,6 +1167,7 @@ export default (
     content = defaultContent,
     flags = defaultFlags,
     headline = defaultHeadline,
+    hasVideo = defaultHasVideo,
     keywords = defaultKeywords,
     label = defaultLabel,
     leadAsset = defaultLeadAsset,
@@ -1187,6 +1189,7 @@ export default (
       commentsEnabled,
       content,
       flags,
+      hasVideo,
       headline,
       id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
       keywords,

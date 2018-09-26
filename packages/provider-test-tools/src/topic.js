@@ -103,6 +103,7 @@ export default ({
             return makeItem(
               {
                 byline: [],
+                hasVideo: false,
                 headline: `Test Headline ${itemIndex}`,
                 id: `d98c2${itemIndex
                   .toString()

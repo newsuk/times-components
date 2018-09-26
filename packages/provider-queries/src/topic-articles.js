@@ -13,6 +13,7 @@ export default addTypenameToDocument(gql`
         count
         list(first: $first, skip: $skip) {
           byline
+          hasVideo
           headline
           id
           label
