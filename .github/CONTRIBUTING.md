@@ -27,9 +27,6 @@ Following these guidelines helps to get issues organised and PRs merged faster!
   [Prettier](https://github.com/prettier/prettier) to ensure code consistency
   and reliability, this pattern should also be followed to avoid typical dev
   bike-shedding
-* For testing we’re using [Jest](https://facebook.github.io/jest/) for unit and
-  integration tests. React Native integration tests will use
-  [Detox](https://github.com/wix/detox)
 
 ### Heuristics
 
@@ -140,10 +137,6 @@ tests split into the relevant platform folder e.g. `android`, `ios`, `web`.
 If the component contains functionality that requires functional testing on a
 device or browser, you can use [Fructose](https://github.com/newsuk/fructose).
 This should follow the naming convention, `XXXX.fructose.js`.
-
-Fructose uses detox to instrument the tests. In order to run the tests you will
-need to install some additional dependencies. Follow steps 1-4 in these
-[detox docs](https://github.com/wix/detox/blob/master/docs/Introduction.GettingStarted.md).
 
 Fructose also relies on an application existing within the project, in this case
 we are using the storybook app. If you have not installed it, you can do so by

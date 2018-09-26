@@ -10,9 +10,10 @@ export default () => {
   beforeEach(() => {
     jest.useFakeTimers();
     window = {
-      reactBridgePostMessage: jest.fn().mockImplementation((data, origin) => {
-        window.reactBridgePostMessageDecoded(JSON.parse(data), origin);
+      postMessage: jest.fn().mockImplementation(data => {
+        window.reactBridgePostMessageDecoded(JSON.parse(data));
       }),
+      originalPostMessage: {},
       reactBridgePostMessageDecoded: jest.fn(),
       requestAnimationFrame: realWindow.requestAnimationFrame,
       setTimeout: realWindow.setTimeout,
@@ -43,31 +44,6 @@ export default () => {
     expect(window.eventCallback).toEqual(expect.any(Function));
   });
 
-  it("posts a delayed message to the parent when the event callback is called", () => {
-    webviewEventCallbackSetup({ window });
-    window.eventCallback("TYPE", "DETAIL");
-    expect(window.reactBridgePostMessageDecoded).not.toHaveBeenCalled();
-    jest.runAllTimers();
-    expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith(
-      {
-        isTngMessage: true,
-        type: "TYPE",
-        detail: "DETAIL"
-      },
-      "*"
-    );
-  });
-
-  it("preferrs reactBridgePostMessage if available", () => {
-    webviewEventCallbackSetup({ window });
-    window.postMessage = jest.fn();
-    window.reactBridgePostMessage = jest.fn();
-    window.eventCallback("TYPE", "DETAIL");
-    jest.runAllTimers();
-    expect(window.postMessage).toHaveBeenCalledTimes(0);
-    expect(window.reactBridgePostMessage).toHaveBeenCalledTimes(1);
-  });
-
   it("falls abck to postMessage if reactBridgePostMessage if not available", () => {
     webviewEventCallbackSetup({ window });
     window.postMessage = jest.fn();
@@ -81,14 +57,11 @@ export default () => {
     webviewEventCallbackSetup({ window });
     errorHandler(error);
     jest.runAllTimers();
-    expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith(
-      {
-        isTngMessage: true,
-        type: "error",
-        detail: messageDetail
-      },
-      "*"
-    );
+    expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith({
+      isTngMessage: true,
+      type: "error",
+      detail: messageDetail
+    });
   };
 
   it("posts a message to the parent when the global error handler is called", () => {
@@ -127,13 +100,10 @@ export default () => {
     webviewEventCallbackSetup({ window });
     window.console.error("a", "b", "c");
     jest.runAllTimers();
-    expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith(
-      {
-        isTngMessage: true,
-        type: "error",
-        detail: "a\nb\nc"
-      },
-      "*"
-    );
+    expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith({
+      isTngMessage: true,
+      type: "error",
+      detail: "a\nb\nc"
+    });
   });
 };

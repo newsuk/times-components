@@ -15,10 +15,6 @@
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
     "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
-    "functional-test:web": "./lib/functional_tests/run-web.sh",
-    "functional-test:ios": "./lib/functional_tests/run-ios.sh",
-    "functional-test:android": "./lib/functional_tests/run-android.sh",
-    "functional-test:android-sauce": "SAUCE_USERNAME=${SAUCE_USERNAME} SAUCE_KEY=${SAUCE_KEY} ./lib/functional_tests/run-android-sauce.sh",
     "visual-snapshot-ios": "./lib/visual_snapshots/run-ios-dextrose.sh",
     "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
@@ -79,15 +75,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "detox": {
-    "configurations": {
-      "ios.sim.debug": {
-        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
-        "type": "ios.simulator",
-        "name": "iPhone 7"
-      }
-    }
-  },
   "workspaces": [
     "packages/*",
     "android-app",
@@ -127,7 +114,6 @@
     "coveralls": "2.13.1",
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
-    "detox": "8.1.4",
     "dextrose": "4.0.7",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "16.1.0",

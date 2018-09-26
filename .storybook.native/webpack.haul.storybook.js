@@ -15,11 +15,16 @@ module.exports = ({ platform }, { module, resolve, plugins }) => ({
         },
         exclude: /node_modules\/(?!react|@expo|svgs|pretty-format|haul|metro)/,
       },
+      {
+        include: /node_modules/,
+        test: /\.mjs$/,
+        type: "javascript/auto",
+      },
     ]
   },
   resolve: {
     ...resolve,
-    extensions: [`.${platform}.js`, ".native.js", ".js"],
+    extensions: [`.${platform}.js`, ".native.js", ".js", ".webpack.js", ".mjs", ".js"],
     mainFields: ["devModule", "dev", "react-native", "browser", "module", "main"],
   },
 });
