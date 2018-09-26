@@ -24,8 +24,7 @@ const styles = [
   "marginBottom",
   "marginTop",
   "paddingBottom",
-  "paddingTop",
-  "selectable"
+  "paddingTop"
 ];
 
 export default () => {
