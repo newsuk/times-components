@@ -53,7 +53,8 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages
+      showImages,
+      makeUrl
     } = this.props;
 
     const hasAdvertConfig = Object.keys(adConfig).length > 0;
@@ -124,6 +125,8 @@ class ArticleList extends Component {
             data.map((article, index) => {
               const { elementId } = article;
 
+              const canonicalUrl = makeUrl(article.slug, article.shortIdentifier);
+
               if (index === this.advertPosition && hasAdvertConfig) {
                 return renderAdComponent({ key: `advert${index}` });
               }
@@ -151,6 +154,7 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
+							                canonicalUrl={canonicalUrl}
                               fadeImageIn={clientHasRendered}
                               highResSize={ArticleList.getImageSize(
                                 observed.get(elementId)

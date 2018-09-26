@@ -26,6 +26,19 @@ export default () => {
     )
   );
 
+  const config = {
+    get (renderKey) {
+      return "www.thetimes.co.uk";
+    }
+  };
+
+  const makeUrl = (slug, shortIdentifier) => {
+    if (process.env.NODE_ENV === 'local' && !process.env.IS_E2E_CI) {
+        return `${config.get('render:host')}/${config.get('render:port')}/article/${slug}-${shortIdentifier}`;
+    }
+    return `${config.get('render:host')}/article/${slug}-${shortIdentifier}`;
+  };
+
   const tests = [
     {
       name: "article list with no images",
@@ -38,6 +51,7 @@ export default () => {
             pageSize={3}
             refetch={() => {}}
             showImages={false}
+            makeUrl={makeUrl}
           />
         );
 
@@ -64,6 +78,7 @@ export default () => {
             pageSize={3}
             refetch={() => {}}
             showImages={false}
+            makeUrl={makeUrl}
           />
         );
 

@@ -19,6 +19,7 @@ const AuthorProfile = ({
   error,
   hasLeadAssets = true,
   isLoading: isHeaderLoading,
+  makeUrl,
   onArticlePress,
   onNext,
   onPrev,
@@ -116,6 +117,7 @@ const AuthorProfile = ({
             count={get(articles, "count", 0)}
             emptyStateMessage={emptyStateMessage}
             error={articlesError}
+            makeUrl={makeUrl}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
             isLoading={isHeaderLoading}

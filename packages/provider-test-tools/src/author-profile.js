@@ -115,6 +115,8 @@ export default ({
                 publishedTime: "2018-06-01",
                 shortHeadline: `Test Short Headline ${itemIndex}`,
                 summary: [],
+                slug: `This-is-slug ${itemIndex}`,
+                shortIdentifier: `968n7tdck${itemIndex}`,
                 url: "https://url.io"
               },
               itemIndex

@@ -15,6 +15,8 @@ export default addTypenameToDocument(gql`
         list(first: $first, skip: $skip) {
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             __typename
           }

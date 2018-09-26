@@ -8,6 +8,19 @@ import adConfig from "../fixtures/article-ad-config.json";
 export default (additionalTests = []) => {
   const realIntl = Intl;
 
+  const config = {
+    get (renderKey) {
+      return "www.thetimes.co.uk";
+    }
+  };
+
+  const makeUrl = (slug, shortIdentifier) => {
+    if (process.env.NODE_ENV === 'local' && !process.env.IS_E2E_CI) {
+        return `${config.get('render:host')}/${config.get('render:port')}/article/${slug}-${shortIdentifier}`;
+    }
+    return `${config.get('render:host')}/article/${slug}-${shortIdentifier}`;
+  };
+
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
@@ -31,6 +44,7 @@ export default (additionalTests = []) => {
             articles={articlesFixture}
             emptyStateMessage="Empty state"
             refetch={() => {}}
+            makeUrl={makeUrl}
           />
         );
 

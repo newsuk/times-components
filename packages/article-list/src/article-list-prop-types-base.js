@@ -19,5 +19,6 @@ export const defaultProps = {
   error: null,
   isLoading: true,
   pageSize: 10,
-  receiveChildList: () => {}
+  receiveChildList: () => {},
+  makeUrl: () => {}
 };
