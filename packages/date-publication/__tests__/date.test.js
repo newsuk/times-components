@@ -1,6 +1,6 @@
 /* global Intl */
-import rndiMock from "react-native-device-info";
 import { isBST, getUTCTime, isLondonTimezone } from "../src/date";
+import "./mock-timezone-london";
 
 describe("date helper", () => {
   it("2017-11-17 00:01:00 should be a GMT date", () => {
@@ -15,30 +15,11 @@ describe("date helper", () => {
 describe("timezone helper", () => {
   const realIntl = Intl;
 
-  beforeEach(() => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
-    };
-  });
-
   afterEach(() => {
     global.Intl = realIntl;
   });
 
   it("should return true when London is the timezone", () => {
     expect(isLondonTimezone()).toEqual(true);
-  });
-
-  it("should return false when London is NOT the timezone", () => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Somewhere/Else" })
-      })
-    };
-    rndiMock.setMockTimezone("Somewhere/Else");
-
-    expect(isLondonTimezone()).toEqual(false);
   });
 });

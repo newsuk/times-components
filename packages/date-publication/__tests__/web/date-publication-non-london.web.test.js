@@ -1,4 +1,4 @@
-import shared from "../shared-london";
+import shared from "../shared-non-london";
 
 const realIntl = Intl;
 

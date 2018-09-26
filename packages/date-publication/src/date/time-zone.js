@@ -1,11 +1,5 @@
-import DeviceInfo from "react-native-device-info";
+import { NativeModules } from "react-native";
 
-const getTimezone = () => {
-  try {
-    return DeviceInfo.getTimezone();
-  } catch (err) {
-    return "";
-  }
-};
+const { ReactConfig: { timezone = "" } = { timezone: "" } } = NativeModules;
 
-export default getTimezone;
+export default () => timezone;
