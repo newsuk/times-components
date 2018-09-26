@@ -18,6 +18,7 @@ import {
 const ArticleListItem = props => {
   const {
     byline,
+    canonicalUrl,
     fadeImageIn,
     hasVideo,
     headline,
@@ -33,8 +34,7 @@ const ArticleListItem = props => {
     shortHeadline,
     shortSummary,
     showImage,
-    summary,
-    canonicalUrl
+    summary
   } = props;
 
   const imageUri = getImageUri(props);
