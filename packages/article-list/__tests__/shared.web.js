@@ -8,7 +8,7 @@ import {
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import "./mocks";
-import { omitWeb as omitProps } from "./utils";
+import { omitWeb as omitProps, makeUrl } from "./utils";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
 import ArticleList from "../src/article-list";
@@ -25,19 +25,6 @@ export default () => {
       )
     )
   );
-
-  const config = {
-    get (renderKey) {
-      return "www.thetimes.co.uk";
-    }
-  };
-
-  const makeUrl = (slug, shortIdentifier) => {
-    if (process.env.NODE_ENV === 'local' && !process.env.IS_E2E_CI) {
-        return `${config.get('render:host')}/${config.get('render:port')}/article/${slug}-${shortIdentifier}`;
-    }
-    return `${config.get('render:host')}/article/${slug}-${shortIdentifier}`;
-  };
 
   const tests = [
     {
