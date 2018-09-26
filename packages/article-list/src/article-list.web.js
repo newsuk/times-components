@@ -123,12 +123,9 @@ class ArticleList extends Component {
           </ListContentContainer>
           {data &&
             data.map((article, index) => {
-              const { elementId } = article;
+              const { elementId, slug, shortIdentifier } = article;
 
-              const canonicalUrl = makeUrl(
-                article.slug,
-                article.shortIdentifier
-              );
+              const canonicalUrl = makeUrl({ slug, shortIdentifier });
 
               if (index === this.advertPosition && hasAdvertConfig) {
                 return renderAdComponent({ key: `advert${index}` });

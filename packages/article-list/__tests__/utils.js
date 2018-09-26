@@ -26,7 +26,7 @@ const config = {
   }
 };
 
-export const makeUrl = (slug, shortIdentifier) => {
+export const makeUrl = ({slug, shortIdentifier}) => {
   if (process.env.NODE_ENV === "local" && !process.env.IS_E2E_CI) {
     return `${config.get("render:host")}/${config.get("render:port")}/article/${
       slug
