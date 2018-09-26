@@ -87,6 +87,7 @@ export default addTypenameToDocument(gql`
 
   fragment articleProps on Article {
     byline
+    hasVideo
     headline
     id
     label

@@ -39,6 +39,7 @@ const mocks = [
         }
       ],
       flags: ["NEW"],
+      hasVideo: false,
       keywords: ["WORD"],
       leadAsset: {
         type: "Image",
@@ -60,6 +61,7 @@ const mocks = [
             __typename: "Tile",
             article: {
               id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
+              hasVideo: false,
               headline: "Related Headline",
               shortHeadline: "Related Short Headline",
               section: "related",
@@ -176,7 +178,7 @@ const renderComponent = child =>
   );
 
 describe("ArticleProvider", () => {
-  it("returns query result", done => {
+  it.only("returns query result", done => {
     renderComponent(({ article, isLoading }) => {
       if (!isLoading) {
         expect(article).toMatchSnapshot();

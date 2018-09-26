@@ -106,6 +106,7 @@ export default ({
 
             return makeItem(
               {
+                hasVideo: false,
                 headline: `Test Headline ${itemIndex}`,
                 id: `d98c2${itemIndex
                   .toString()

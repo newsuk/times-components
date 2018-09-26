@@ -32,6 +32,7 @@ Object {
   "flags": Array [
     "NEW",
   ],
+  "hasVideo": false,
   "headline": "Supplement In Depth Template (Style)",
   "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
   "keywords": Array [
@@ -70,6 +71,7 @@ Object {
               "name": "text",
             },
           ],
+          "hasVideo": false,
           "headline": "Related Headline",
           "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
           "label": "Label",
