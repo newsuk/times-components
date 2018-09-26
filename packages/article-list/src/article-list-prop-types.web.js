@@ -8,11 +8,11 @@ export const propTypes = {
   ...basePropTypes,
   adConfig: PropTypes.shape({}).isRequired,
   count: PropTypes.number,
+  makeUrl: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
-  pageSize: PropTypes.number,
-  makeUrl: PropTypes.func
+  pageSize: PropTypes.number
 };
 
 export { defaultProps };
