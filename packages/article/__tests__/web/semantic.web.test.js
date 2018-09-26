@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { hash, iterator } from "@times-components/test-utils";
+import { hash, iterator, makeArticleUrl } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
@@ -11,6 +11,8 @@ import {
   replacePropTransform,
   replaceTransform
 } from "@times-components/jest-serializer";
+import Context from "@times-components/context";
+import { scales } from "@times-components/styleguide";
 import Article from "../../src/article";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
@@ -104,19 +106,25 @@ const tests = [
         ]
       });
 
+      const scale = scales.large;
+      const sectionColour = "#FFFFFF";
       const testInstance = TestRenderer.create(
-        <Article
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={article}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onVideoPress={() => {}}
-        />
+        <Context.Provider
+          value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+        >
+          <Article
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            article={article}
+            onAuthorPress={() => {}}
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        </Context.Provider>
       );
 
       expect(testInstance).toMatchSnapshot();

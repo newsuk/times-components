@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
@@ -9,6 +9,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
+import Context from "@times-components/context";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
@@ -32,16 +33,18 @@ export default () => {
       test() {
         const onNext = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture}
-            count={5}
-            emptyStateMessage="Empty state"
-            onNext={onNext}
-            page={1}
-            pageSize={3}
-            refetch={() => {}}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture}
+              count={5}
+              emptyStateMessage="Empty state"
+              onNext={onNext}
+              page={1}
+              pageSize={3}
+              refetch={() => {}}
+            />
+          </Context.Provider>
         );
 
         const [nextPage] = testInstance.root.findAll(
@@ -58,16 +61,18 @@ export default () => {
       test() {
         const onPrev = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture}
-            count={5}
-            emptyStateMessage="Empty state"
-            onPrev={onPrev}
-            page={2}
-            pageSize={3}
-            refetch={() => {}}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture}
+              count={5}
+              emptyStateMessage="Empty state"
+              onPrev={onPrev}
+              page={2}
+              pageSize={3}
+              refetch={() => {}}
+            />
+          </Context.Provider>
         );
 
         const [prevPage] = testInstance.root.findAll(
@@ -85,16 +90,18 @@ export default () => {
         jest.spyOn(window, "scroll");
         const onNext = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture}
-            count={5}
-            emptyStateMessage="Empty state"
-            onNext={onNext}
-            page={1}
-            pageSize={3}
-            refetch={() => {}}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture}
+              count={5}
+              emptyStateMessage="Empty state"
+              onNext={onNext}
+              page={1}
+              pageSize={3}
+              refetch={() => {}}
+            />
+          </Context.Provider>
         );
 
         const [, nextPage] = testInstance.root.findAll(
@@ -154,16 +161,18 @@ export default () => {
         jest.spyOn(window, "scroll");
         const onPrev = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture}
-            count={5}
-            emptyStateMessage="Empty state"
-            onPrev={onPrev}
-            page={2}
-            pageSize={3}
-            refetch={() => {}}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture}
+              count={5}
+              emptyStateMessage="Empty state"
+              onPrev={onPrev}
+              page={2}
+              pageSize={3}
+              refetch={() => {}}
+            />
+          </Context.Provider>
         );
 
         const [, prevPage] = testInstance.root.findAll(

@@ -10,6 +10,7 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
+import { makeArticleUrl } from "@times-components/test-utils";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
@@ -38,7 +39,9 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <Context.Provider
+        value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+      >
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}

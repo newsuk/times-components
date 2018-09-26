@@ -7,6 +7,8 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
+import Context from "@times-components/context";
+import { makeArticleUrl } from "@times-components/test-utils";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   authorArticlesWithImages as authorArticlesWithImagesQuery,
@@ -47,34 +49,36 @@ const makeAuthorProfile = (
     params={params}
     render={mocks => (
       <MockedProvider mocks={mocks}>
-        <AuthorProfileProvider
-          articleImageRatio={articleImageRatio}
-          debounceTimeMs={250}
-          page={1}
-          pageSize={pageSize}
-          slug={slug}
-        >
-          {({
-            author,
-            isLoading,
-            error,
-            page,
-            pageSize: authorPageSize,
-            refetch
-          }) => (
-            <AuthorProfile
-              author={author}
-              error={error}
-              hasLeadAssets={hasLeadAssets}
-              isLoading={isLoading}
-              page={page}
-              pageSize={authorPageSize}
-              refetch={refetch}
-              slug={slug}
-              {...getProps(decorateAction)}
-            />
-          )}
-        </AuthorProfileProvider>
+        <Context.Provider value={{ makeArticleUrl }}>
+          <AuthorProfileProvider
+            articleImageRatio={articleImageRatio}
+            debounceTimeMs={250}
+            page={1}
+            pageSize={pageSize}
+            slug={slug}
+          >
+            {({
+              author,
+              isLoading,
+              error,
+              page,
+              pageSize: authorPageSize,
+              refetch
+            }) => (
+              <AuthorProfile
+                author={author}
+                error={error}
+                hasLeadAssets={hasLeadAssets}
+                isLoading={isLoading}
+                page={page}
+                pageSize={authorPageSize}
+                refetch={refetch}
+                slug={slug}
+                {...getProps(decorateAction)}
+              />
+            )}
+          </AuthorProfileProvider>
+        </Context.Provider>
       </MockedProvider>
     )}
   />

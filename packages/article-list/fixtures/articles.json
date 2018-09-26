@@ -32,6 +32,8 @@
         ]
       }
     ],
+    "slug": "this-is-slug-1",
+    "shortIdentifier": "968n7tdck1",
     "summary": [
       {
         "name": "paragraph",
@@ -111,6 +113,8 @@
         ]
       }
     ],
+    "slug": "this-is-slug-2",
+    "shortIdentifier": "968n7tdck2",
     "url": "https://article2.io"
   },
   {
@@ -175,6 +179,8 @@
         ]
       }
     ],
+    "slug": "this-is-slug-3",
+    "shortIdentifier": "968n7tdck3",
     "url": "https://article3.io"
   },
   {
@@ -239,6 +245,8 @@
         ]
       }
     ],
+    "slug": "this-is-slug-4",
+    "shortIdentifier": "968n7tdck4",
     "url": "https://article4.io"
   },
   {
@@ -303,6 +311,8 @@
         ]
       }
     ],
+    "slug": "this-is-slug-5",
+    "shortIdentifier": "968n7tdck5",
     "url": "https://article5.io"
   }
 ]

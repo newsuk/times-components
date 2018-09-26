@@ -180,10 +180,11 @@ class ArticleList extends Component {
             {({ hasError }) =>
               hasError ? null : (
                 <ArticleListItem
-                  {...item}
+                  article={item.isLoading ? null : item}
                   highResSize={this.state.width}
                   imageRatio={imageRatio}
                   index={index}
+                  isLoading={item.isLoading === true}
                   length={data.length}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })

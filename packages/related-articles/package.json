@@ -69,6 +69,7 @@
   "dependencies": {
     "@times-components/article-summary": "3.2.23",
     "@times-components/card": "4.2.1",
+    "@times-components/context": "0.4.31",
     "@times-components/link": "3.1.0",
     "@times-components/markup-forest": "1.0.7",
     "@times-components/slice": "3.1.0",

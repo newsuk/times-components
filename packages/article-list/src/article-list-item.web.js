@@ -4,6 +4,7 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
+import Context from "@times-components/context";
 import Link from "@times-components/link";
 import { Animations, colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
@@ -17,28 +18,30 @@ import {
 
 const ArticleListItem = props => {
   const {
-    byline,
     fadeImageIn,
-    hasVideo,
-    headline,
     highResSize,
     imageRatio,
     isLoading,
-    label,
     lowResSize,
+    showImage
+  } = props;
+
+  const {
+    byline,
+    hasVideo,
+    headline,
+    label,
     longSummary,
     publicationName,
     publishedTime,
     section,
     shortHeadline,
     shortSummary,
-    showImage,
-    summary,
-    url
-  } = props;
+    summary
+  } =
+    props.article || {};
 
-  const imageUri = getImageUri(props);
-
+  const imageUri = getImageUri(props.article);
   if (isLoading) {
     return (
       <ListItemWrapper>
@@ -97,23 +100,31 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link url={url}>
-      <ListItemWrapper>
-        <Card
-          contentContainerClass="articleListContent"
-          fadeImageIn={fadeImageIn}
-          highResSize={highResSize}
-          imageContainerClass="articleListImage"
-          imageRatio={imageRatio}
-          imageUri={imageUri}
-          isLoading={isLoading}
-          lowResSize={lowResSize}
-          showImage={showImage}
-        >
-          <Animations.FadeIn>{children}</Animations.FadeIn>
-        </Card>
-      </ListItemWrapper>
-    </Link>
+    <Context.Consumer>
+      {({ makeArticleUrl }) => {
+        const canonicalUrl = makeArticleUrl(props.article);
+
+        return (
+          <Link url={canonicalUrl}>
+            <ListItemWrapper>
+              <Card
+                contentContainerClass="articleListContent"
+                fadeImageIn={fadeImageIn}
+                highResSize={highResSize}
+                imageContainerClass="articleListImage"
+                imageRatio={imageRatio}
+                imageUri={imageUri}
+                isLoading={isLoading}
+                lowResSize={lowResSize}
+                showImage={showImage}
+              >
+                <Animations.FadeIn>{children}</Animations.FadeIn>
+              </Card>
+            </ListItemWrapper>
+          </Link>
+        );
+      }}
+    </Context.Consumer>
   );
 };
 

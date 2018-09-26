@@ -2132,6 +2132,8 @@ export const testFixture = {
           publicationName: "TIMES",
           publishedTime: "2015-03-23T19:39:39.000Z",
           shortHeadline: "Headline",
+          shortIdentifier: "2k629tpvh",
+          slug: "this-is-slug",
           summary105: [],
           summary125: [],
           summary145: [],
@@ -2144,6 +2146,8 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
+  shortIdentifier: "2k629tpvh",
+  slug: "this-is-slug",
   standfirst: "Some Standfirst",
   topics: [
     {

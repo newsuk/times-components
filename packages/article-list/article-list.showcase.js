@@ -7,6 +7,8 @@ import {
   MockedProvider,
   MockFixture
 } from "@times-components/provider-test-tools";
+import Context from "@times-components/context";
+import { makeArticleUrl } from "@times-components/test-utils";
 import {
   authorArticlesNoImages as authorArticlesNoImagesQuery,
   authorArticlesWithImages as authorArticlesWithImagesQuery
@@ -70,34 +72,36 @@ export default {
           })}
           render={mocks => (
             <MockedProvider mocks={mocks}>
-              <AuthorArticlesWithImagesProvider
-                debounceTimeMs={0}
-                page={page}
-                pageSize={pageSize}
-                slug={slug}
-              >
-                {({
-                  author: data,
-                  error: articlesError,
-                  isLoading: articlesLoading,
-                  page: articlePage,
-                  pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
-                }) => (
-                  <TrackedArticleList
-                    articles={get(data, "articles.list", [])}
-                    articlesLoading={articlesLoading}
-                    count={count}
-                    emptyStateMessage={emptyStateMessage}
-                    error={articlesError}
-                    imageRatio={ratioTextToFloat(imageRatio)}
-                    page={articlePage}
-                    pageSize={articlePageSize}
-                    showImages
-                    {...getProps(decorateAction)}
-                  />
-                )}
-              </AuthorArticlesWithImagesProvider>
+              <Context.Provider value={{ makeArticleUrl }}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize,
+                    variables: { imageRatio = "3:2" }
+                  }) => (
+                    <TrackedArticleList
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      imageRatio={ratioTextToFloat(imageRatio)}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesWithImagesProvider>
+              </Context.Provider>
             </MockedProvider>
           )}
         />
@@ -124,32 +128,34 @@ export default {
           })}
           render={mocks => (
             <MockedProvider mocks={mocks}>
-              <AuthorArticlesNoImagesProvider
-                debounceTimeMs={0}
-                page={page}
-                pageSize={pageSize}
-                slug={slug}
-              >
-                {({
-                  author: data,
-                  error: articlesError,
-                  isLoading: articlesLoading,
-                  page: articlePage,
-                  pageSize: articlePageSize
-                }) => (
-                  <TrackedArticleList
-                    articles={get(data, "articles.list", [])}
-                    articlesLoading={articlesLoading}
-                    count={count}
-                    emptyStateMessage={emptyStateMessage}
-                    error={articlesError}
-                    page={articlePage}
-                    pageSize={articlePageSize}
-                    showImages={false}
-                    {...getProps(decorateAction)}
-                  />
-                )}
-              </AuthorArticlesNoImagesProvider>
+              <Context.Provider value={{ makeArticleUrl }}>
+                <AuthorArticlesNoImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize
+                  }) => (
+                    <TrackedArticleList
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages={false}
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesNoImagesProvider>
+              </Context.Provider>
             </MockedProvider>
           )}
         />
@@ -185,34 +191,36 @@ export default {
           })}
           render={mocks => (
             <MockedProvider mocks={mocks}>
-              <AuthorArticlesWithImagesProvider
-                debounceTimeMs={0}
-                page={page}
-                pageSize={pageSize}
-                slug={slug}
-              >
-                {({
-                  author: data,
-                  error: articlesError,
-                  isLoading: articlesLoading,
-                  page: articlePage,
-                  pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
-                }) => (
-                  <TrackedArticleList
-                    articles={get(data, "articles.list", [])}
-                    articlesLoading={articlesLoading}
-                    count={count}
-                    emptyStateMessage={emptyStateMessage}
-                    error={articlesError}
-                    imageRatio={ratioTextToFloat(imageRatio)}
-                    page={articlePage}
-                    pageSize={articlePageSize}
-                    showImages
-                    {...getProps(decorateAction)}
-                  />
-                )}
-              </AuthorArticlesWithImagesProvider>
+              <Context.Provider value={{ makeArticleUrl }}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize,
+                    variables: { imageRatio = "3:2" }
+                  }) => (
+                    <TrackedArticleList
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      imageRatio={ratioTextToFloat(imageRatio)}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesWithImagesProvider>
+              </Context.Provider>
             </MockedProvider>
           )}
         />
@@ -252,35 +260,37 @@ export default {
             })}
             render={mocks => (
               <MockedProvider mocks={mocks}>
-                <AuthorArticlesWithImagesProvider
-                  debounceTimeMs={0}
-                  page={page}
-                  pageSize={pageSize}
-                  slug={slug}
-                >
-                  {({
-                    author: data,
-                    error: articlesError,
-                    isLoading: articlesLoading,
-                    page: articlePage,
-                    pageSize: articlePageSize,
-                    variables: { imageRatio = "3:2" }
-                  }) => (
-                    <TrackedArticleList
-                      articleListHeader={articleListHeader}
-                      articles={get(data, "articles.list", [])}
-                      articlesLoading={articlesLoading}
-                      count={count}
-                      emptyStateMessage={emptyStateMessage}
-                      error={articlesError}
-                      imageRatio={ratioTextToFloat(imageRatio)}
-                      page={articlePage}
-                      pageSize={articlePageSize}
-                      showImages
-                      {...getProps(decorateAction)}
-                    />
-                  )}
-                </AuthorArticlesWithImagesProvider>
+                <Context.Provider value={{ makeArticleUrl }}>
+                  <AuthorArticlesWithImagesProvider
+                    debounceTimeMs={0}
+                    page={page}
+                    pageSize={pageSize}
+                    slug={slug}
+                  >
+                    {({
+                      author: data,
+                      error: articlesError,
+                      isLoading: articlesLoading,
+                      page: articlePage,
+                      pageSize: articlePageSize,
+                      variables: { imageRatio = "3:2" }
+                    }) => (
+                      <TrackedArticleList
+                        articleListHeader={articleListHeader}
+                        articles={get(data, "articles.list", [])}
+                        articlesLoading={articlesLoading}
+                        count={count}
+                        emptyStateMessage={emptyStateMessage}
+                        error={articlesError}
+                        imageRatio={ratioTextToFloat(imageRatio)}
+                        page={articlePage}
+                        pageSize={articlePageSize}
+                        showImages
+                        {...getProps(decorateAction)}
+                      />
+                    )}
+                  </AuthorArticlesWithImagesProvider>
+                </Context.Provider>
               </MockedProvider>
             )}
           />
@@ -323,34 +333,36 @@ export default {
           })}
           render={mocks => (
             <MockedProvider mocks={mocks}>
-              <AuthorArticlesWithImagesProvider
-                debounceTimeMs={0}
-                page={page}
-                pageSize={pageSize}
-                slug={slug}
-              >
-                {({
-                  author: data,
-                  error: articlesError,
-                  isLoading: articlesLoading,
-                  page: articlePage,
-                  pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
-                }) => (
-                  <TrackedArticleList
-                    articles={get(data, "articles.list", [])}
-                    articlesLoading={articlesLoading}
-                    count={count}
-                    emptyStateMessage={emptyStateMessage}
-                    error={articlesError}
-                    imageRatio={ratioTextToFloat(imageRatio)}
-                    page={articlePage}
-                    pageSize={articlePageSize}
-                    showImages
-                    {...getProps(decorateAction)}
-                  />
-                )}
-              </AuthorArticlesWithImagesProvider>
+              <Context.Provider value={{ makeArticleUrl }}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize,
+                    variables: { imageRatio = "3:2" }
+                  }) => (
+                    <TrackedArticleList
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      imageRatio={ratioTextToFloat(imageRatio)}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesWithImagesProvider>
+              </Context.Provider>
             </MockedProvider>
           )}
         />
@@ -375,34 +387,36 @@ export default {
           })}
           render={mocks => (
             <MockedProvider mocks={mocks}>
-              <AuthorArticlesWithImagesProvider
-                debounceTimeMs={0}
-                page={page}
-                pageSize={pageSize}
-                slug={slug}
-              >
-                {({
-                  author: data,
-                  error: articlesError,
-                  isLoading: articlesLoading,
-                  page: articlePage,
-                  pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
-                }) => (
-                  <TrackedArticleList
-                    articles={get(data, "articles.list", [])}
-                    articlesLoading={articlesLoading}
-                    count={count}
-                    emptyStateMessage={emptyStateMessage}
-                    error={articlesError}
-                    imageRatio={ratioTextToFloat(imageRatio)}
-                    page={articlePage}
-                    pageSize={articlePageSize}
-                    showImages
-                    {...getProps(decorateAction)}
-                  />
-                )}
-              </AuthorArticlesWithImagesProvider>
+              <Context.Provider value={{ makeArticleUrl }}>
+                <AuthorArticlesWithImagesProvider
+                  debounceTimeMs={0}
+                  page={page}
+                  pageSize={pageSize}
+                  slug={slug}
+                >
+                  {({
+                    author: data,
+                    error: articlesError,
+                    isLoading: articlesLoading,
+                    page: articlePage,
+                    pageSize: articlePageSize,
+                    variables: { imageRatio = "3:2" }
+                  }) => (
+                    <TrackedArticleList
+                      articles={get(data, "articles.list", [])}
+                      articlesLoading={articlesLoading}
+                      count={count}
+                      emptyStateMessage={emptyStateMessage}
+                      error={articlesError}
+                      imageRatio={ratioTextToFloat(imageRatio)}
+                      page={articlePage}
+                      pageSize={articlePageSize}
+                      showImages
+                      {...getProps(decorateAction)}
+                    />
+                  )}
+                </AuthorArticlesWithImagesProvider>
+              </Context.Provider>
             </MockedProvider>
           )}
         />

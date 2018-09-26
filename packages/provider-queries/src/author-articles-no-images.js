@@ -16,6 +16,8 @@ export default addTypenameToDocument(gql`
           hasVideo
           id
           label
+          slug
+          shortIdentifier
           leadAsset {
             __typename
           }

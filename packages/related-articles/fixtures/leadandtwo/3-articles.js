@@ -112,6 +112,9 @@ const defaultSecondHeadline = "Trident gets out of MoD budget, Hammond urged";
 const defaultSecondShortHeadline = "Trident gets out of MoD budget";
 const defaultSecondLabel = "defence cuts";
 const defaultSecondSection = "sport";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultSecondSummary105 = [
   {
     attributes: {},
@@ -408,6 +411,8 @@ export default (
     firstSummary225 = defaultFirstSummary225,
     firstTitle = defaultFirstTitle,
     firstUrl = defaultFirstUrl,
+    firstSlug = defaultSlug,
+    firstShortIdentifier = defaultShortIdentifier,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
     secondLabel = defaultSecondLabel,
@@ -474,6 +479,8 @@ export default (
           summary160: firstSummary160,
           summary175: firstSummary175,
           summary225: firstSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: firstUrl
         }
       },
@@ -513,6 +520,8 @@ export default (
           summary160: secondSummary160,
           summary175: secondSummary175,
           summary225: secondSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: secondUrl
         }
       },
@@ -551,6 +560,8 @@ export default (
           summary160: thirdSummary160,
           summary175: thirdSummary175,
           summary225: thirdSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: thirdUrl
         }
       }

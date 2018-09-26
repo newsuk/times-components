@@ -1,5 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
+import Context from "@times-components/context";
+import { makeArticleUrl } from "@times-components/test-utils";
 import storybookReporter from "@times-components/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
@@ -34,7 +36,9 @@ const createRelatedArticles = (decorateAction, fixtureData) => {
   };
   return (
     <ScrollView>
-      <RelatedArticles {...props} />
+      <Context.Provider value={{ makeArticleUrl }}>
+        <RelatedArticles {...props} />
+      </Context.Provider>
     </ScrollView>
   );
 };

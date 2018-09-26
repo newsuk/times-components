@@ -18,6 +18,7 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   label: "test label",
   section: "artsfeatures",
   shortHeadline: "Test Short Headline",
+  slug: "test-slug",
   summary125: testSummary(125),
   url: "https://test.io"
 }).data;
@@ -28,6 +29,7 @@ const leadAndTwoNoShortHeadlineFixtureData = leadAndTwo1ArticleFixture({
   label: "test label",
   section: "artsfeatures",
   shortHeadline: "",
+  slug: "test-slug",
   summary125: testSummary(125),
   url: "https://test.io"
 }).data;
@@ -37,6 +39,7 @@ const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
   firstHeadline: "First Headline",
   firstLabel: "first label",
   firstSection: "business",
+  firstSlug: "test-slug",
   firstShortHeadline: "First Short Headline",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
@@ -57,6 +60,7 @@ const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
   firstLabel: "first label",
   firstSection: "culture",
   firstShortHeadline: "First Short Headline",
+  firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstSummary175: testSummary(175),
   firstUrl: "https://first.io",

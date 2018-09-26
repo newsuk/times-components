@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "@times-components/article-list": "5.3.2",
+    "@times-components/context": "0.4.31",
     "@times-components/markup": "3.2.11",
     "@times-components/markup-forest": "1.0.7",
     "@times-components/pagination": "3.1.17",
