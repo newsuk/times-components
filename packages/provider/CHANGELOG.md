@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.3.11...@times-components/provider@1.4.0) (2018-09-26)
+
+
+### Features
+
+* add hasVideo queries and tests ([#1360](https://github.com/newsuk/times-components/issues/1360)) ([c0e6984](https://github.com/newsuk/times-components/commit/c0e6984))
+
+
+
+
+
 <a name="1.3.11"></a>
 ## [1.3.11](https://github.com/newsuk/times-components/compare/@times-components/provider@1.3.10...@times-components/provider@1.3.11) (2018-09-21)
 

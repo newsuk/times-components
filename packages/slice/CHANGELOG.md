@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.34"></a>
+## [3.0.34](https://github.com/newsuk/times-components/compare/@times-components/slice@3.0.33...@times-components/slice@3.0.34) (2018-09-26)
+
+
+### Bug Fixes
+
+* remove hairline width ([#1359](https://github.com/newsuk/times-components/issues/1359)) ([dbc18ba](https://github.com/newsuk/times-components/commit/dbc18ba))
+
+
+
+
+
 <a name="3.0.33"></a>
 ## [3.0.33](https://github.com/newsuk/times-components/compare/@times-components/slice@3.0.32...@times-components/slice@3.0.33) (2018-09-21)
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.55"></a>
+## [4.0.55](https://github.com/newsuk/times-components/compare/@times-components/author-profile@4.0.54...@times-components/author-profile@4.0.55) (2018-09-26)
+
+
+### Bug Fixes
+
+* remove hairline width ([#1359](https://github.com/newsuk/times-components/issues/1359)) ([dbc18ba](https://github.com/newsuk/times-components/commit/dbc18ba))
+
+
+
+
+
 <a name="4.0.54"></a>
 ## [4.0.54](https://github.com/newsuk/times-components/compare/@times-components/author-profile@4.0.53...@times-components/author-profile@4.0.54) (2018-09-25)
 
