@@ -125,7 +125,10 @@ class ArticleList extends Component {
             data.map((article, index) => {
               const { elementId } = article;
 
-              const canonicalUrl = makeUrl(article.slug, article.shortIdentifier);
+              const canonicalUrl = makeUrl(
+                article.slug,
+                article.shortIdentifier
+              );
 
               if (index === this.advertPosition && hasAdvertConfig) {
                 return renderAdComponent({ key: `advert${index}` });
@@ -154,7 +157,7 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
-							                canonicalUrl={canonicalUrl}
+                              canonicalUrl={canonicalUrl}
                               fadeImageIn={clientHasRendered}
                               highResSize={ArticleList.getImageSize(
                                 observed.get(elementId)
