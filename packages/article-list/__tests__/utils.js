@@ -20,17 +20,4 @@ export const omitNative = new Set([
 
 export const omitWeb = new Set(["className", "data-testid", "style"]);
 
-const config = {
-  get() {
-    return "www.thetimes.co.uk";
-  }
-};
-
-export const makeUrl = ({ slug, shortIdentifier }) => {
-  const isDevEnvironment =
-    process.env.NODE_ENV === "local" && !process.env.IS_E2E_CI;
-
-  return `${config.get("render:host")}/${
-    isDevEnvironment ? `${config.get("render:port")}/` : ""
-  }article/${slug}-${shortIdentifier}`;
-};
+export const makeUrl = ({ slug, shortIdentifier }) => `www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
