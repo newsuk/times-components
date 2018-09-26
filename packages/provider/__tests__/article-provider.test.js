@@ -178,7 +178,7 @@ const renderComponent = child =>
   );
 
 describe("ArticleProvider", () => {
-  it.only("returns query result", done => {
+  it("returns query result", done => {
     renderComponent(({ article, isLoading }) => {
       if (!isLoading) {
         expect(article).toMatchSnapshot();
