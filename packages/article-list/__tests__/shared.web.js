@@ -35,10 +35,10 @@ export default () => {
             adConfig={adConfig}
             articles={articlesFixture.slice(0, 1)}
             emptyStateMessage="Empty state"
+            makeUrl={makeUrl}
             pageSize={3}
             refetch={() => {}}
             showImages={false}
-            makeUrl={makeUrl}
           />
         );
 
@@ -62,10 +62,10 @@ export default () => {
             adConfig={adConfig}
             articles={[missingImage]}
             emptyStateMessage="Empty state"
+            makeUrl={makeUrl}
             pageSize={3}
             refetch={() => {}}
             showImages={false}
-            makeUrl={makeUrl}
           />
         );
 
