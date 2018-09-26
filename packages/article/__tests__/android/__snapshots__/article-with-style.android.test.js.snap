@@ -62,13 +62,6 @@ exports[`1. an error 1`] = `
         "height": 36,
         "justifyContent": "center",
         "minWidth": 100,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 3,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 5,
         "width": "100%",
       }
     }

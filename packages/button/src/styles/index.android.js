@@ -6,14 +6,7 @@ const styles = StyleSheet.create({
     ...sharedStyles.button,
     borderRadius: 4,
     elevation: 3,
-    height: 36,
-    shadowColor: "#000000",
-    shadowOffset: {
-      width: 0,
-      height: 3
-    },
-    shadowOpacity: 1.0,
-    shadowRadius: 5
+    height: 36
   },
   text: {
     ...sharedStyles.text,
