@@ -21,7 +21,7 @@ export const omitNative = new Set([
 export const omitWeb = new Set(["className", "data-testid", "style"]);
 
 const config = {
-  get (renderKey) {
+  get () {
     return "www.thetimes.co.uk";
   }
 };

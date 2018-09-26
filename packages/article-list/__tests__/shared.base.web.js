@@ -31,8 +31,8 @@ export default (additionalTests = []) => {
             adConfig={adConfig}
             articles={articlesFixture}
             emptyStateMessage="Empty state"
-            refetch={() => {}}
             makeUrl={makeUrl}
+            refetch={() => {}}
           />
         );
 
