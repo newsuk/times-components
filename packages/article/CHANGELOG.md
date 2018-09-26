@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.1.4...@times-components/article@5.2.0) (2018-09-26)
+
+
+### Features
+
+* make article text selectable ([#1350](https://github.com/newsuk/times-components/issues/1350)) ([e0b9e39](https://github.com/newsuk/times-components/commit/e0b9e39))
+
+
+
+
+
 <a name="5.1.4"></a>
 ## [5.1.4](https://github.com/newsuk/times-components/compare/@times-components/article@5.1.3...@times-components/article@5.1.4) (2018-09-25)
 
