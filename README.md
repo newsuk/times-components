@@ -31,7 +31,9 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 ## Getting Started
 
 1. Run `yarn` to install dependencies with a `GRAPHQL_ENDPOINT` envar set for
-   linting
+   linting. _This is simply an example GraphQL endpoint, and you will need to
+   obtain a valid API endpoint in order to successfully work with this
+   repository._
 
 ```
 GRAPHQL_ENDPOINT=api.io/graphql yarn
