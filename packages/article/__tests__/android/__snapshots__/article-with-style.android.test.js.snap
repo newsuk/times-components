@@ -172,7 +172,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -186,7 +186,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -209,7 +209,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -395,7 +395,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -409,7 +409,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -497,7 +497,7 @@ exports[`4. an article with no lead asset 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -511,7 +511,7 @@ exports[`4. an article with no lead asset 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -599,7 +599,7 @@ exports[`5. an article with ads 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -613,7 +613,7 @@ exports[`5. an article with ads 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -705,7 +705,7 @@ exports[`7. an article with updated byline 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -719,7 +719,7 @@ exports[`7. an article with updated byline 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -807,7 +807,7 @@ exports[`7. an article with updated byline 2`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -821,7 +821,7 @@ exports[`7. an article with updated byline 2`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -844,7 +844,7 @@ exports[`7. an article with updated byline 2`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }

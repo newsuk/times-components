@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
@@ -6,7 +5,7 @@ const sharedStyles = {
   articleMeta: {
     marginBottom: spacing(4),
     borderBottomColor: colours.functional.keyline,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
     paddingLeft: 0,
     paddingRight: 0,
     marginLeft: spacing(2),
@@ -17,7 +16,7 @@ const sharedStyles = {
   },
   articleMetaElement: {
     borderTopColor: colours.functional.keyline,
-    borderTopWidth: StyleSheet.hairlineWidth
+    borderTopWidth: 1
   },
   datePublication: {
     color: colours.functional.secondary,

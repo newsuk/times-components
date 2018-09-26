@@ -81,7 +81,7 @@ exports[`1. scaled medium full article 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -95,7 +95,7 @@ exports[`1. scaled medium full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }
@@ -118,7 +118,7 @@ exports[`1. scaled medium full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }
@@ -268,7 +268,7 @@ exports[`2. scaled large full article 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -282,7 +282,7 @@ exports[`2. scaled large full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }
@@ -305,7 +305,7 @@ exports[`2. scaled large full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }
@@ -455,7 +455,7 @@ exports[`3. scaled xlarge full article 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -469,7 +469,7 @@ exports[`3. scaled xlarge full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }
@@ -492,7 +492,7 @@ exports[`3. scaled xlarge full article 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 4,
               "paddingTop": 9,
             }

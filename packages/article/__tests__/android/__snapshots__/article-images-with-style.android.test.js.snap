@@ -34,7 +34,7 @@ exports[`1. a secondary image 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -48,7 +48,7 @@ exports[`1. a secondary image 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -116,7 +116,7 @@ exports[`2. an inline image 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -130,7 +130,7 @@ exports[`2. an inline image 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }

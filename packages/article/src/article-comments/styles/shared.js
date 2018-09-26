@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
@@ -6,7 +5,7 @@ const styles = {
   container: {
     alignItems: "center",
     borderTopColor: colours.functional.keyline,
-    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopWidth: 1,
     borderStyle: "solid",
     marginBottom: spacing(5),
     width: "100%"

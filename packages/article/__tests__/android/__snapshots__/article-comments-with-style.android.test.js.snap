@@ -34,7 +34,7 @@ exports[`1. a full article with enabled comments 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -48,7 +48,7 @@ exports[`1. a full article with enabled comments 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -102,7 +102,7 @@ exports[`1. a full article with enabled comments 1`] = `
             "alignItems": "center",
             "borderStyle": "solid",
             "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 0.5,
+            "borderTopWidth": 1,
             "marginBottom": 25,
             "width": "100%",
           }
@@ -226,7 +226,7 @@ exports[`2. a full article with disabled comments 1`] = `
         style={
           Object {
             "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
+            "borderBottomWidth": 1,
             "marginBottom": 20,
             "marginLeft": 10,
             "marginRight": 10,
@@ -240,7 +240,7 @@ exports[`2. a full article with disabled comments 1`] = `
           style={
             Object {
               "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
+              "borderTopWidth": 1,
               "paddingBottom": 6,
               "paddingTop": 7,
             }
@@ -294,7 +294,7 @@ exports[`2. a full article with disabled comments 1`] = `
             "alignItems": "center",
             "borderStyle": "solid",
             "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 0.5,
+            "borderTopWidth": 1,
             "marginBottom": 25,
             "width": "100%",
           }
