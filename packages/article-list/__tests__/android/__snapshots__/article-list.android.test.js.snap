@@ -279,7 +279,7 @@ Array [
             "name": "paragraph",
           },
         ],
-        "slug": "This is slug 1",
+        "slug": "this-is-slug-1",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -345,7 +345,7 @@ Array [
             "name": "paragraph",
           },
         ],
-        "slug": "This is slug 2",
+        "slug": "this-is-slug-2",
         "summary": Array [
           Object {
             "attributes": Object {},
