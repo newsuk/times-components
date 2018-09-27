@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   listEmptyStateContainer: {
-    flex: 1,
-    minHeight: 400
+    height: "100vh",
+    justifyContent: "flex-end"
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
@@ -65,13 +65,13 @@ const styles = StyleSheet.create({
       font: "bodyRegular",
       fontSize: "infoTitle"
     }),
-    marginTop: spacing(28),
-    textAlign: "center"
+    left: "25%",
+    position: "absolute",
+    textAlign: "center",
+    top: "140px"
   },
   listEmptyWatermarkContainer: {
-    position: "absolute",
-    bottom: 0,
-    right: 0
+    alignSelf: "flex-end"
   },
   listEmptyBackButton: {
     alignSelf: "center",
