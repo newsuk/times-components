@@ -606,6 +606,7 @@ exports[`5. an article with ads 1`] = `
             "borderTopWidth": 1,
             "marginBottom": 20,
             "paddingHorizontal": 10,
+            "paddingVertical": 10,
           }
         }
       />
