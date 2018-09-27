@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",

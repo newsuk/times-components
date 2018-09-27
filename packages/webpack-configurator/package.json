@@ -1,6 +1,6 @@
 {
   "name": "@times-components/webpack-configurator",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "webpack-configurator for times-components",
   "main": "dist",
   "dev": "src",
@@ -42,8 +42,8 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "babel-plugin-react-native-web": "0.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "prettier": "1.8.2"

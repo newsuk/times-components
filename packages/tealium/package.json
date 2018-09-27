@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "React component for tealium reporter",
   "main": "dist",
   "dev": "src",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.0",
-    "@times-components/jest-configurator": "2.1.6",
-    "@times-components/test-utils": "1.1.0",
+    "@times-components/jest-configurator": "2.1.7",
+    "@times-components/test-utils": "1.1.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",

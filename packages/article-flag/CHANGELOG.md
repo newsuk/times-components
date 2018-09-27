@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.36"></a>
+## [2.1.36](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.35...@times-components/article-flag@2.1.36) (2018-09-27)
+
+
+### Bug Fixes
+
+* bump the article flag layout ([#1366](https://github.com/newsuk/times-components/issues/1366)) ([cb28780](https://github.com/newsuk/times-components/commit/cb28780))
+
+
+
+
+
 <a name="2.1.35"></a>
 ## [2.1.35](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.34...@times-components/article-flag@2.1.35) (2018-09-26)
 
