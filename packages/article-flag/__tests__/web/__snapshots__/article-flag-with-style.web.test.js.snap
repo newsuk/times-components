@@ -4,7 +4,7 @@ exports[`1. red article flag 1`] = `
 <style>
 {
   "IS1": {
-    "marginBottom": "1px",
+    "marginBottom": "-1px",
     "marginRight": "5px",
   },
   "IS2": {
