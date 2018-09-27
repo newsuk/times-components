@@ -7,7 +7,7 @@ import DatePublication from "../src/date-publication";
 export default date => {
   const tests = [
     {
-      name: "date and TIMES publication with non-London timezone",
+      name: "date and TIMES publication",
       test() {
         const testInstance = TestRenderer.create(
           <DatePublication date={date} publication="TIMES" />

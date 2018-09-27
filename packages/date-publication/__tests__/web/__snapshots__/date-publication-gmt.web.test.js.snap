@@ -3,19 +3,6 @@
 exports[`1. date and times publication 1`] = `
 Array [
   <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    Sunday January 01 2017, 02:32pm
-  </time>,
-  <span>
-    , The Times
-  </span>,
-]
-`;
-
-exports[`1. date and times publication 2`] = `
-Array [
-  <time
     dateTime="2017-07-01T14:32:00.000Z"
   >
     Saturday July 01 2017, 03:32pm
@@ -27,19 +14,6 @@ Array [
 `;
 
 exports[`2. date and sundaytimes publication 1`] = `
-Array [
-  <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    Sunday January 01 2017, 02:32pm
-  </time>,
-  <span>
-    , The Sunday Times
-  </span>,
-]
-`;
-
-exports[`2. date and sundaytimes publication 2`] = `
 Array [
   <time
     dateTime="2017-07-01T14:32:00.000Z"
@@ -55,19 +29,6 @@ Array [
 exports[`3. date and no given publication 1`] = `
 Array [
   <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    Sunday January 01 2017, 02:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
-`;
-
-exports[`3. date and no given publication 2`] = `
-Array [
-  <time
     dateTime="2017-07-01T14:32:00.000Z"
   >
     Saturday July 01 2017, 03:32pm
@@ -79,19 +40,6 @@ Array [
 `;
 
 exports[`4. date and no day 1`] = `
-Array [
-  <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    January 01 2017, 02:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
-`;
-
-exports[`4. date and no day 2`] = `
 Array [
   <time
     dateTime="2017-07-01T14:32:00.000Z"
