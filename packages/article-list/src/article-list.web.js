@@ -112,9 +112,6 @@ class ArticleList extends Component {
           elementId: `${article.id}.${index}`
         }));
 
-    if (data.length === 0)
-      return <ArticleListEmptyState message={emptyStateMessage} />;
-
     const Contents = ({ clientHasRendered, observed, registerNode }) =>
       data.length === 0 ? (
         <ArticleListEmptyState message={emptyStateMessage} />
