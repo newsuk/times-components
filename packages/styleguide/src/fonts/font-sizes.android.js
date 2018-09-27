@@ -2,13 +2,10 @@ import scales from "../scales";
 import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = scale => {
-  const defaultSizes = {
-    ...sharedFontSizes,
-  };
   switch (scale) {
     case scales.large:
       return {
-        ...defaultSizes,
+        ...sharedFontSizes,
         bodyMobile: 21,
         button: 15,
         cardMetaMobile: 17,
@@ -17,7 +14,7 @@ const fontSizes = scale => {
       };
     case scales.xlarge:
       return {
-        ...defaultSizes,
+        ...sharedFontSizes,
         bodyMobile: 23,
         button: 16,
         cardMetaMobile: 19,
@@ -25,7 +22,7 @@ const fontSizes = scale => {
         secondary: 23
       };
     default:
-      return defaultSizes;
+      return sharedFontSizes;
   }
 };
 
