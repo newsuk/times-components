@@ -5,6 +5,7 @@ import ArticleSummary, {
   ArticleSummaryContent,
   ArticleSummaryHeadline
 } from "@times-components/article-summary";
+import Context from "@times-components/context";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
@@ -38,6 +39,8 @@ const RelatedArticleItem = ({
     publishedTime,
     section,
     shortHeadline,
+    shortIdentifier,
+    slug,
     url
   } = article;
   const {
@@ -57,10 +60,17 @@ const RelatedArticleItem = ({
       : get(article, `leadAsset.crop${cropSize}.url`);
 
   return (
+    <Context.Consumer>
+      { ({makeUrl: {makeUrl}}) => {
+        const articleUrl = makeUrl ? makeUrl({ slug, shortIdentifier }) : url;
+
+        return (
+
+
     <Link
       linkStyle={{ padding: 10 }}
-      onPress={e => onPress(e, { url: article.url })}
-      url={url}
+      onPress={e => onPress(e, { articleUrl })}
+      url={articleUrl}
     >
       <Card
         contentContainerClass={contentContainerClass}
@@ -117,6 +127,9 @@ const RelatedArticleItem = ({
         />
       </Card>
     </Link>
+  )
+      }}
+    </Context.Consumer>
   );
 };
 
