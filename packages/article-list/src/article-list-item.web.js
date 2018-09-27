@@ -4,6 +4,7 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
+import Context from "@times-components/context";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
@@ -18,7 +19,6 @@ import {
 const ArticleListItem = props => {
   const {
     byline,
-    canonicalUrl,
     fadeImageIn,
     hasVideo,
     headline,
@@ -34,11 +34,12 @@ const ArticleListItem = props => {
     shortHeadline,
     shortSummary,
     showImage,
-    summary
+    summary,
+    slug,
+    shortIdentifier
   } = props;
 
   const imageUri = getImageUri(props);
-
   if (isLoading) {
     return (
       <ListItemWrapper>
@@ -97,23 +98,32 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link url={canonicalUrl}>
-      <ListItemWrapper>
-        <Card
-          contentContainerClass="articleListContent"
-          fadeImageIn={fadeImageIn}
-          highResSize={highResSize}
-          imageContainerClass="articleListImage"
-          imageRatio={imageRatio}
-          imageUri={imageUri}
-          isLoading={isLoading}
-          lowResSize={lowResSize}
-          showImage={showImage}
-        >
-          {children}
-        </Card>
-      </ListItemWrapper>
+    <Context.Consumer>
+      {({makeUrl: {makeUrl}}) => {
+
+        const canonicalUrl = makeUrl({ slug, shortIdentifier });
+
+        return (
+          <Link url={canonicalUrl}>
+            <ListItemWrapper>
+              <Card
+                contentContainerClass="articleListContent"
+                fadeImageIn={fadeImageIn}
+                highResSize={highResSize}
+                imageContainerClass="articleListImage"
+                imageRatio={imageRatio}
+                imageUri={imageUri}
+                isLoading={isLoading}
+                lowResSize={lowResSize}
+                showImage={showImage}
+              >
+                {children}
+              </Card>
+            </ListItemWrapper>
     </Link>
+        )
+      }}
+    </Context.Consumer>
   );
 };
 
