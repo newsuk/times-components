@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.2"></a>
+## [5.2.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.1...@times-components/article@5.2.2) (2018-09-27)
+
+
+### Bug Fixes
+
+* remove shadow from buttons ([#1363](https://github.com/newsuk/times-components/issues/1363)) ([a956eda](https://github.com/newsuk/times-components/commit/a956eda))
+
+
+
+
+
 <a name="5.2.1"></a>
 ## [5.2.1](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.0...@times-components/article@5.2.1) (2018-09-26)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "5.2.4",
+  "version": "5.2.5",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -74,7 +74,7 @@
   "dependencies": {
     "@times-components/ad": "2.1.38",
     "@times-components/article-summary": "3.2.15",
-    "@times-components/button": "2.2.14",
+    "@times-components/button": "2.2.15",
     "@times-components/card": "4.0.7",
     "@times-components/error-view": "2.1.33",
     "@times-components/image": "4.0.7",
