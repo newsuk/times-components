@@ -4,7 +4,6 @@ import sharedFontSizes from "./font-sizes-base";
 const fontSizes = scale => {
   const defaultSizes = {
     ...sharedFontSizes,
-    button: 14
   };
   switch (scale) {
     case scales.large:

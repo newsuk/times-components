@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   labelWrapper: {
     ...sharedStyles.labelWrapper,
-    marginBottom: spacing(1)
+    marginBottom: spacing(0)
   },
   headline: {
     ...sharedStyles.headline,
