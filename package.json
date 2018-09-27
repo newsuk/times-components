@@ -132,11 +132,11 @@
     "node-fetch": "2.2.0",
     "prettier": "1.8.2",
     "prop-types": "15.6.2",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-native-storybook-loader": "1.5.1",
-    "react-native-web": "0.5.1",
+    "react-native-web": "0.9.0",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",
@@ -149,6 +149,7 @@
     "aws-sdk": "2.238.1",
     "babel-preset-es2015": "6.24.1",
     "expo": "29.0.0",
+    "react-art": "16.5.2",
     "react-native": "0.55.4",
     "react-native-showcase-loader": "1.1.0"
   }

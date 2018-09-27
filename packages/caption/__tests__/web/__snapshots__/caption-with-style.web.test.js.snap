@@ -4,17 +4,18 @@ exports[`caption with specific styles 1`] = `
 <style>
 {
   "IS1": {
-    "color": "green",
+    "color": "rgba(0,128,0,1.00)",
   },
   "IS2": {
-    "color": "green",
+    "color": "rgba(0,128,0,1.00)",
   },
   "IS3": {
-    "backgroundColor": "red",
+    "backgroundColor": "rgba(255,0,0,1.00)",
   },
   "S1": {
     "font-family": "GillSansMTStd-Medium",
     "font-size": "13px",
+    "font-weight": "inherit",
     "line-height": "17px",
     "padding-top": "0px",
   },

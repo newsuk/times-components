@@ -18,7 +18,12 @@ Object {
           "options": Object {
             "cacheDirectory": true,
             "plugins": Array [
-              "react-native-web",
+              Array [
+                "react-native-web",
+                Object {
+                  "commonjs": true,
+                },
+              ],
             ],
           },
         },

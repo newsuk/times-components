@@ -97,7 +97,7 @@ exports[`1. renders 1`] = `
     "textDecoration": "none",
   },
   "S1": {
-    "color": "rgba(105,105,105,1)",
+    "color": "rgba(105,105,105,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "15px",
     "margin-right": "0px",
@@ -124,7 +124,7 @@ exports[`1. renders 1`] = `
     "padding-top": "0px",
   },
   "S4": {
-    "color": "rgba(0,102,153,1)",
+    "color": "rgba(0,102,153,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "15px",
     "height": "15px",
@@ -146,7 +146,7 @@ exports[`1. renders 1`] = `
     "padding-top": "10px",
   },
   "S6": {
-    "color": "rgba(0,102,153,1)",
+    "color": "rgba(0,102,153,1.00)",
     "font-family": "GillSansMTStd-Medium",
     "font-size": "15px",
     "height": "15px",

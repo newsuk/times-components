@@ -25,7 +25,8 @@ export const minimalWebTransform = minimaliseTransform(
     value === undefined ||
     typeof value === "function" ||
     isEmptyObject(value) ||
-    key === "dir"
+    key === "dir" ||
+    key === "data-focusable"
 );
 
 export const minimalWeb = traverse(print, minimalWebTransform);

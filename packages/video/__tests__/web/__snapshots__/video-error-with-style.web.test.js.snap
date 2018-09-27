@@ -8,7 +8,7 @@ exports[`1. video with error 1`] = `
     "width": "100px",
   },
   "S1": {
-    "color": "white",
+    "color": "rgba(255,255,255,1.00)",
     "display": "inline",
     "font-family": "TimesModern-Bold",
     "font-size": "20px",
@@ -18,7 +18,7 @@ exports[`1. video with error 1`] = `
     "width": "auto",
   },
   "S2": {
-    "color": "rgba(255, 255, 255, 0.8)",
+    "color": "rgba(255,255,255,0.80)",
     "display": "inline",
     "font-family": "TimesDigitalW04",
     "font-size": "14px",
@@ -36,7 +36,7 @@ exports[`1. video with error 1`] = `
     "-webkit-box-pack": "center",
     "-webkit-justify-content": "center",
     "align-items": "center",
-    "background-color": "rgba(0, 0, 0, 0.6)",
+    "background-color": "rgba(0,0,0,0.60)",
     "display": "flex",
     "justify-content": "center",
     "margin-bottom": "0px",

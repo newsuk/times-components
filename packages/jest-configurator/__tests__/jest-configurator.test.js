@@ -50,7 +50,7 @@ describe("Jest Configurator Tests", () => {
   describe("Web specific configuration", () => {
     it("should use the module mapper to match react-native to react-native-web", () => {
       const config = jestConfigurator("web", dir);
-      expect(config.moduleNameMapper["react-native"]).toEqual(
+      expect(config.moduleNameMapper["^react-native$"]).toEqual(
         "react-native-web"
       );
     });

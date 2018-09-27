@@ -6,7 +6,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test": "jest roles.test.js --config='./__tests__/jest.config.js'",
@@ -46,19 +46,20 @@
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
-    "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
-    "enzyme": "3.3.0",
+    "enzyme": "3.6.0",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "jest-styled-components": "5.0.1",
     "prettier": "1.8.2",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
+    "react": "16.5.2",
+    "react-art": "16.5.2",
+    "react-dom": "16.5.2",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.4.2",
+    "react-native-web": "0.9.0",
+    "react-test-renderer": "16.5.2",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
@@ -72,10 +73,10 @@
     "styled-components": "3.4.0"
   },
   "peerDependencies": {
-    "react": ">=16.2",
-    "react-dom": ">=16.2",
-    "react-native": ">=0.54",
-    "react-native-web": ">=0.3"
+    "react": ">=16.5",
+    "react-dom": ">=16.5",
+    "react-native": ">=0.55",
+    "react-native-web": "0.9.0"
   },
   "publishConfig": {
     "access": "public"

@@ -43,14 +43,14 @@
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "babel-plugin-react-native-web": "0.9.0",
     "eslint": "4.9.0",
     "jest": "23.3.0",
     "prettier": "1.8.2"
   },
   "peerDependencies": {
     "babel-loader": "7.1.4",
-    "babel-plugin-react-native-web": ">=0.6.1",
-    "react-native-web": ">=0.3",
+    "react-native-web": "0.9.0",
     "webpack": ">=4.2.0"
   },
   "publishConfig": {

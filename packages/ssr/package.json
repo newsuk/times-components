@@ -7,7 +7,7 @@
     "bundle:dev": "webpack --config=webpack.config.dev.js",
     "bundle:prod": "NODE_ENV=production webpack --config=webpack.config.prod.js -p",
     "bundle:profile": "webpack --config=webpack.config.prod.js --profile --json > dist/stats.json",
-    "depcheck": "depcheck --ignores='depcheck,eslint,prettier,webpack*' --skip-missing",
+    "depcheck": "depcheck --ignores='depcheck,eslint,prettier,react-art,webpack*' --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -48,11 +48,12 @@
     "apollo-link-http": "1.5.3",
     "express": "4.16.3",
     "node-fetch": "2.2.0",
-    "react": "16.4.2",
+    "react": "16.5.2",
+    "react-art": "16.5.2",
     "react-apollo": "2.1.4",
-    "react-dom": "16.4.2",
+    "react-dom": "16.5.2",
     "react-native": "0.55.4",
-    "react-native-web": "0.5.1",
+    "react-native-web": "0.9.0",
     "styled-components": "3.4.0"
   }
 }
