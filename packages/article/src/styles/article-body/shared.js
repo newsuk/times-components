@@ -33,6 +33,7 @@ const sharedStyles = scale => {
       borderTopColor: colours.functional.keyline,
       borderTopWidth: 1,
       paddingHorizontal: spacing(2),
+      paddingVertical: spacing(2),
       marginBottom: spacing(4)
     },
     interactiveContainer: {
