@@ -11,7 +11,6 @@ import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";
 
 const Topic = ({
-  makeUrl,
   adConfig,
   error,
   isLoading: isHeaderLoading,
@@ -94,7 +93,6 @@ const Topic = ({
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
             isLoading={isHeaderLoading}
-            makeUrl={makeUrl}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}

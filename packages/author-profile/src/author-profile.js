@@ -28,7 +28,6 @@ const AuthorProfile = ({
   refetch,
   slug
 }) => {
-  console.log('this is author profile');
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this author";
 

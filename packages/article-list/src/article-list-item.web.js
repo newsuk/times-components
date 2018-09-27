@@ -99,8 +99,7 @@ const ArticleListItem = props => {
 
   return (
     <Context.Consumer>
-      {({makeUrl: {makeUrl}}) => {
-
+      {({ makeUrl: { makeUrl } }) => {
         const canonicalUrl = makeUrl({ slug, shortIdentifier });
 
         return (
@@ -120,8 +119,8 @@ const ArticleListItem = props => {
                 {children}
               </Card>
             </ListItemWrapper>
-    </Link>
-        )
+          </Link>
+        );
       }}
     </Context.Consumer>
   );
