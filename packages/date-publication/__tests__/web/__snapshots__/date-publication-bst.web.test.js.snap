@@ -27,27 +27,17 @@ Array [
 `;
 
 exports[`3. date and no given publication 1`] = `
-Array [
-  <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    Sunday January 01 2017, 02:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
+<time
+  dateTime="2017-01-01T14:32:00.000Z"
+>
+  Sunday January 01 2017, 02:32pm
+</time>
 `;
 
 exports[`4. date and no day 1`] = `
-Array [
-  <time
-    dateTime="2017-01-01T14:32:00.000Z"
-  >
-    January 01 2017, 02:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
+<time
+  dateTime="2017-01-01T14:32:00.000Z"
+>
+  January 01 2017, 02:32pm
+</time>
 `;
