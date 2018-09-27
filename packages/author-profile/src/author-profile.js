@@ -19,7 +19,6 @@ const AuthorProfile = ({
   error,
   hasLeadAssets = true,
   isLoading: isHeaderLoading,
-  makeUrl,
   onArticlePress,
   onNext,
   onPrev,
@@ -29,6 +28,7 @@ const AuthorProfile = ({
   refetch,
   slug
 }) => {
+  console.log('this is author profile');
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this author";
 
@@ -120,7 +120,6 @@ const AuthorProfile = ({
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
             isLoading={isHeaderLoading}
-            makeUrl={makeUrl}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}
