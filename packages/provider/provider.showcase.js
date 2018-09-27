@@ -1,10 +1,10 @@
 import React from "react";
 import { Text } from "react-native";
-import articleFixture from "@times-components/provider-test-tools/fixtures/article";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import {
   authorProfile as makeAuthorParams,
+  fixtures,
   MockedProvider,
   MockFixture,
   topic as makeTopicParams
@@ -143,7 +143,7 @@ export default {
                 id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
               }
             },
-            result: articleFixture()
+            result: fixtures.article
           }
         ];
 

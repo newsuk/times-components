@@ -46,7 +46,6 @@
     "@storybook/addon-actions": "3.4.10",
     "@storybook/addon-knobs": "3.4.10",
     "@storybook/react-native": "3.4.10",
-    "@times-components/provider-test-tools": "1.5.2",
     "@times-components/schema": "0.1.5",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
