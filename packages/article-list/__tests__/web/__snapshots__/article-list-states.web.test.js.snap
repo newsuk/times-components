@@ -3,25 +3,14 @@
 exports[`1. an error view 1`] = `
 <div>
   <div>
-    <div>
-      <div>
-        <Pagination
-          hideResults={false}
-          pageSize={10}
-        />
-      </div>
-    </div>
-    <div>
-      <div>
-        Something's gone wrong
-      </div>
-      <div>
-        We can't load the page you have requested. Please check your network connection and retry to continue
-      </div>
-      <Button
-        title="Retry"
-      />
-    </div>
+    Empty State
+  </div>
+  <div>
+    <Watermark
+      height={350}
+      viewBox="0 0 350 200"
+      width={500}
+    />
   </div>
 </div>
 `;
@@ -29,28 +18,14 @@ exports[`1. an error view 1`] = `
 exports[`2. an error view with header 1`] = `
 <div>
   <div>
-    Some Header
+    Empty State
   </div>
   <div>
-    <div>
-      <div>
-        <Pagination
-          hideResults={false}
-          pageSize={10}
-        />
-      </div>
-    </div>
-    <div>
-      <div>
-        Something's gone wrong
-      </div>
-      <div>
-        We can't load the page you have requested. Please check your network connection and retry to continue
-      </div>
-      <Button
-        title="Retry"
-      />
-    </div>
+    <Watermark
+      height={350}
+      viewBox="0 0 350 200"
+      width={500}
+    />
   </div>
 </div>
 `;
@@ -58,16 +33,14 @@ exports[`2. an error view with header 1`] = `
 exports[`3. an empty list 1`] = `
 <div>
   <div>
-    <div>
-      Empty state
-    </div>
-    <div>
-      <Watermark
-        height={350}
-        viewBox="0 0 350 200"
-        width={500}
-      />
-    </div>
+    Empty state
+  </div>
+  <div>
+    <Watermark
+      height={350}
+      viewBox="0 0 350 200"
+      width={500}
+    />
   </div>
 </div>
 `;

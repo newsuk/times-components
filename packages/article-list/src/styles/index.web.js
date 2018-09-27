@@ -1,25 +1,19 @@
 import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
+import sharedStyles from "./shared";
 
 const { colours, fontFactory, spacing } = styleguide();
+
 const styles = StyleSheet.create({
-  paginationContainer: {
-    alignItems: "stretch",
-    flexDirection: "row",
-    justifyContent: "center"
-  },
+  ...sharedStyles,
   paginationSpacing: {
-    flex: 1,
-    maxWidth: 760
-  },
-  listItemSeparator: {
-    backgroundColor: colours.functional.keyline,
-    height: 1
+    ...sharedStyles.paginationSpacing,
+    flex: 1
   },
   adContainer: {
+    borderBottomWidth: 1,
     borderColor: colours.functional.keyline,
     borderTopWidth: 1,
-    borderBottomWidth: 1,
     paddingVertical: spacing(2),
     top: 1
   },
@@ -27,33 +21,13 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: spacing(3)
   },
-  listErrorContainer: {
-    height: "100%",
-    justifyContent: "space-between",
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
-    paddingTop: spacing(2),
-    paddingBottom: spacing(2)
-  },
   listErrorHeading: {
-    alignSelf: "center",
-    color: colours.functional.brandColour,
-    ...fontFactory({
-      font: "headline",
-      fontSize: "leadHeadline"
-    }),
-    marginBottom: spacing(2),
-    marginTop: spacing(4),
-    textAlign: "center"
+    ...sharedStyles.listErrorHeading,
+    marginTop: spacing(4)
   },
   listErrorMessage: {
-    color: colours.functional.secondary,
-    ...fontFactory({
-      font: "bodyRegular",
-      fontSize: "infoSubText"
-    }),
-    lineHeight: 27,
-    textAlign: "center"
+    ...sharedStyles.listErrorMessage,
+    lineHeight: 27
   },
   listEmptyStateContainer: {
     height: "100vh",

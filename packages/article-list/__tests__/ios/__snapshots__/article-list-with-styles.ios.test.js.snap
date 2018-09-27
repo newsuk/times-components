@@ -8,10 +8,8 @@ exports[`1. article list 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
             }
           }
         >
@@ -23,8 +21,7 @@ exports[`1. article list 1`] = `
       <View
         style={
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingHorizontal": 10,
           }
         }
       >
@@ -43,10 +40,8 @@ exports[`1. article list 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
             }
           }
         >
@@ -87,10 +82,8 @@ exports[`2. article list with no images 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
             }
           }
         >
@@ -131,10 +124,8 @@ exports[`3. a retry button when load more fails 1`] = `
         <View
           style={
             Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
             }
           }
         >
