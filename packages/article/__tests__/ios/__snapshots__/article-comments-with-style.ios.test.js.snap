@@ -155,7 +155,7 @@ exports[`1. a full article with enabled comments 1`] = `
               "borderRadius": 2,
               "height": 45,
               "justifyContent": "center",
-              "marginBottom": 5,
+              "marginBottom": 0,
               "marginTop": 25,
               "maxWidth": 215,
               "minWidth": 100,

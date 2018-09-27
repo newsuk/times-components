@@ -52,41 +52,7 @@ exports[`1. an error 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
   </View>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#006699",
-        "borderRadius": 4,
-        "elevation": 3,
-        "height": 36,
-        "justifyContent": "center",
-        "minWidth": 100,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 3,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 5,
-        "width": "100%",
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#FFFFFF",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 14,
-          "lineHeight": 14,
-          "paddingTop": 0,
-        }
-      }
-    >
-      RETRY
-    </Text>
-  </View>
+  <Button />
 </View>
 `;
 

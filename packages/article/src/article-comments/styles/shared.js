@@ -36,7 +36,7 @@ const styles = {
   button: {
     marginTop: spacing(5),
     maxWidth: 215,
-    marginBottom: spacing(1)
+    marginBottom: spacing(0)
   }
 };
 

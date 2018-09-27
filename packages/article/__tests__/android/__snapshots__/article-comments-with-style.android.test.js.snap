@@ -148,44 +148,15 @@ exports[`1. a full article with enabled comments 1`] = `
             here
           </Text>
         </Text>
-        <View
+        <Button
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#006699",
-              "borderRadius": 4,
-              "elevation": 3,
-              "height": 36,
-              "justifyContent": "center",
-              "marginBottom": 5,
+              "marginBottom": 0,
               "marginTop": 25,
               "maxWidth": 215,
-              "minWidth": 100,
-              "shadowColor": "#000000",
-              "shadowOffset": Object {
-                "height": 3,
-                "width": 0,
-              },
-              "shadowOpacity": 1,
-              "shadowRadius": 5,
-              "width": "100%",
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 14,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              }
-            }
-          >
-            VIEW COMMENTS
-          </Text>
-        </View>
+        />
       </View>
     </View>
   </View>
