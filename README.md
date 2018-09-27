@@ -36,7 +36,7 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
    repository._
 
 ```
-GRAPHQL_ENDPOINT=api.io/graphql yarn
+GRAPHQL_ENDPOINT="http://localhost:4000/graphql" yarn
 ```
 
 2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install
