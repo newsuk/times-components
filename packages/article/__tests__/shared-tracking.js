@@ -1,10 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import mockDate from "mockdate";
+import { mockNativeModules } from "@times-components/test-utils";
 import Article from "../src/article";
 import { adConfig } from "./ad-mock";
 import articleFixture from "../fixtures/full-article";
 
+mockNativeModules();
 export default () => {
   beforeEach(() => {
     mockDate.set(1514764800000, 0);

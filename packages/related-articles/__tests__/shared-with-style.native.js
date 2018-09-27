@@ -6,6 +6,9 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import { mockNativeModules } from "@times-components/test-utils";
+
+mockNativeModules();
 
 jest.mock("@times-components/card", () => "Card");
 jest.mock("@times-components/link", () => "Link");

@@ -1,12 +1,13 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator, mockNativeModules } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
 import authorProfileTrackingContext from "../src/author-profile-tracking-context";
 import author from "./fixtures";
 
+mockNativeModules();
 // eslint-disable-next-line global-require
 jest.mock("@times-components/provider", () => require("./mock-provider"));
 
