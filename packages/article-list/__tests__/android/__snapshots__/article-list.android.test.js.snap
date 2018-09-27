@@ -263,6 +263,7 @@ Array [
         "publishedTime": "2017-11-17T00:01:00.000Z",
         "section": "world",
         "shortHeadline": "ShortHeadline 1",
+        "shortIdentifier": "968n7tdck1",
         "shortSummary": Array [
           Object {
             "attributes": Object {},
@@ -278,6 +279,7 @@ Array [
             "name": "paragraph",
           },
         ],
+        "slug": "this-is-slug-1",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -327,6 +329,7 @@ Array [
         "publicationName": "SUNDAYTIMES",
         "publishedTime": "2017-11-17T00:01:00.000Z",
         "shortHeadline": "ShortHeadline 2",
+        "shortIdentifier": "968n7tdck2",
         "shortSummary": Array [
           Object {
             "attributes": Object {},
@@ -342,6 +345,7 @@ Array [
             "name": "paragraph",
           },
         ],
+        "slug": "this-is-slug-2",
         "summary": Array [
           Object {
             "attributes": Object {},

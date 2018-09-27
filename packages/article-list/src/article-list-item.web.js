@@ -18,6 +18,7 @@ import {
 const ArticleListItem = props => {
   const {
     byline,
+    canonicalUrl,
     fadeImageIn,
     hasVideo,
     headline,
@@ -33,8 +34,7 @@ const ArticleListItem = props => {
     shortHeadline,
     shortSummary,
     showImage,
-    summary,
-    url
+    summary
   } = props;
 
   const imageUri = getImageUri(props);
@@ -97,7 +97,7 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link url={url}>
+    <Link url={canonicalUrl}>
       <ListItemWrapper>
         <Card
           contentContainerClass="articleListContent"
