@@ -5,7 +5,8 @@ const styles = {
   ...sharedStyles,
   title: {
     ...sharedStyles.title,
-    fontSize: fontSizes.meta
+    fontSize: fontSizes.meta,
+    marginTop: 5
   }
 };
 

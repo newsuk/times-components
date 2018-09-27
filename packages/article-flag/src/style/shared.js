@@ -7,8 +7,7 @@ const styles = {
     alignItems: "center"
   },
   diamond: {
-    marginRight: 5,
-    marginBottom: 1
+    marginRight: 5
   },
   title: {
     ...fontFactory({

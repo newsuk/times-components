@@ -12,7 +12,6 @@ exports[`1. red article flag 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 1,
         "marginRight": 5,
       }
     }

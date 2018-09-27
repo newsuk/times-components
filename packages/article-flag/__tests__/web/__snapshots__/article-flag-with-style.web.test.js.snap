@@ -4,7 +4,6 @@ exports[`1. red article flag 1`] = `
 <style>
 {
   "IS1": {
-    "marginBottom": "1px",
     "marginRight": "5px",
   },
   "IS2": {
@@ -36,6 +35,7 @@ exports[`1. red article flag 1`] = `
     "-webkit-flex-direction": "column",
     "align-items": "stretch",
     "flex-direction": "column",
+    "margin-bottom": "0px",
   },
   "S2": {
     "margin-bottom": "0px",
