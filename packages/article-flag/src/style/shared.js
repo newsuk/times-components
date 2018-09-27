@@ -7,7 +7,6 @@ const styles = {
     alignItems: "center"
   },
   diamond: {
-    marginBottom: -1,
     marginRight: 5
   },
   title: {
