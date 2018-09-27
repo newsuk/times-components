@@ -61,73 +61,73 @@ const RelatedArticleItem = ({
 
   return (
     <Context.Consumer>
-      { ({makeUrl: {makeUrl}}) => {
+      {({ makeUrl: { makeUrl } }) => {
         const articleUrl = makeUrl ? makeUrl({ slug, shortIdentifier }) : url;
 
         return (
-
-
-    <Link
-      linkStyle={{ padding: 10 }}
-      onPress={e => onPress(e, { articleUrl })}
-      url={articleUrl}
-    >
-      <Card
-        contentContainerClass={contentContainerClass}
-        imageContainerClass={imageContainerClass}
-        imageRatio={imageRatio}
-        imageStyle={imageStyle}
-        imageUri={imageUri}
-        isReversed={isReversed}
-        lowResSize={100}
-        showImage={showImage}
-      >
-        <ArticleSummary
-          bylineProps={{
-            ast: byline,
-            bylineClass,
-            bylineStyle: isOpinionByline ? styles.opinionByline : styles.byline,
-            color: colours.section[section] || colours.section.default,
-            isOpinionByline
-          }}
-          content={() =>
-            showSummary && (
-              <View style={summaryStyle}>
-                {summaryLengths.map(item => {
-                  const summaryClassSuffix = `${item}Class`;
-                  const summaryClass = summaryType
-                    ? `${summaryType}Summary`
-                    : `summary`;
-                  return (
-                    <ArticleSummaryContent
-                      ast={article[`summary${item}`]}
-                      className={`summaryHidden ${summaryClass}${
-                        summaryClassSuffix
-                      }`}
-                      key={item}
-                    />
-                  );
-                })}
-              </View>
-            )
-          }
-          datePublicationProps={{ date: publishedTime, showDay: false }}
-          headline={() => (
-            <ArticleSummaryHeadline
-              className={headlineClass}
-              headline={getHeadline(headline, shortHeadline)}
-              style={styles.headline}
-            />
-          )}
-          labelProps={{
-            color: colours.section[section] || colours.section.default,
-            isVideo: hasVideo,
-            title: label
-          }}
-        />
-      </Card>
-    </Link>
-  )
+          <Link
+            linkStyle={{ padding: 10 }}
+            onPress={e => onPress(e, { articleUrl })}
+            url={articleUrl}
+          >
+            <Card
+              contentContainerClass={contentContainerClass}
+              imageContainerClass={imageContainerClass}
+              imageRatio={imageRatio}
+              imageStyle={imageStyle}
+              imageUri={imageUri}
+              isReversed={isReversed}
+              lowResSize={100}
+              showImage={showImage}
+            >
+              <ArticleSummary
+                bylineProps={{
+                  ast: byline,
+                  bylineClass,
+                  bylineStyle: isOpinionByline
+                    ? styles.opinionByline
+                    : styles.byline,
+                  color: colours.section[section] || colours.section.default,
+                  isOpinionByline
+                }}
+                content={() =>
+                  showSummary && (
+                    <View style={summaryStyle}>
+                      {summaryLengths.map(item => {
+                        const summaryClassSuffix = `${item}Class`;
+                        const summaryClass = summaryType
+                          ? `${summaryType}Summary`
+                          : `summary`;
+                        return (
+                          <ArticleSummaryContent
+                            ast={article[`summary${item}`]}
+                            className={`summaryHidden ${summaryClass}${
+                              summaryClassSuffix
+                            }`}
+                            key={item}
+                          />
+                        );
+                      })}
+                    </View>
+                  )
+                }
+                datePublicationProps={{ date: publishedTime, showDay: false }}
+                headline={() => (
+                  <ArticleSummaryHeadline
+                    className={headlineClass}
+                    headline={getHeadline(headline, shortHeadline)}
+                    style={styles.headline}
+                  />
+                )}
+                labelProps={{
+                  color: colours.section[section] || colours.section.default,
+                  isVideo: hasVideo,
+                  title: label
+                }}
+              />
+            </Card>
+          </Link>
+        );
       }}
     </Context.Consumer>
   );
