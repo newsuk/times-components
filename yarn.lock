@@ -14659,6 +14659,18 @@ react-art@16.5.0:
     prop-types "^15.6.2"
     schedule "^0.3.0"
 
+react-art@16.5.2:
+  version "16.5.2"
+  resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.5.2.tgz#dabfc9a5ef565ecb4f817bb0e872f9a5cd7f89cb"
+  integrity sha512-55g2iFRVE+YhkNdzKAtO3BhTdROefBVZ+bif3K5mI7shXE4shOHpWnhbdKZyU1o9O8pvfPApRWbZWdV8fkxyOw==
+  dependencies:
+    art "^0.10.1"
+    create-react-class "^15.6.2"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    schedule "^0.5.0"
+
 react-broadcast@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-broadcast/-/react-broadcast-0.5.2.tgz#97d326094346003373f4cc4af1150fac5d2f625b"
