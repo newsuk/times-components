@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.15"></a>
+## [0.9.15](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.14...@times-components/android-app@0.9.15) (2018-09-28)
+
+
+### Bug Fixes
+
+* remove device info ([#1364](https://github.com/newsuk/times-components/issues/1364)) ([36cdf47](https://github.com/newsuk/times-components/commit/36cdf47))
+
+
+
+
+
 <a name="0.9.14"></a>
 ## [0.9.14](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.13...@times-components/android-app@0.9.14) (2018-09-27)
 
