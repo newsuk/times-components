@@ -1,10 +1,9 @@
 import React from "react";
-import transformTitle from "./utils";
+import { capitalise } from "@times-components/utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 
 const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
-  const transformedTitle = transformTitle(title);
   const fontSizeStyle = fontSize ? { fontSize } : null;
   const lineHeightStyle = lineHeight ? { lineHeight } : null;
   const buttonStyles = {
@@ -16,7 +15,7 @@ const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
 
   return (
     <button onClick={onPress} style={buttonStyles} type="button">
-      {transformedTitle}
+      {capitalise(title)}
     </button>
   );
 };

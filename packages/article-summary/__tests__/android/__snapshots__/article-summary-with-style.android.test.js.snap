@@ -5,7 +5,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 5,
+        "marginBottom": 0,
       }
     }
   >

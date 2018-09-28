@@ -4,7 +4,7 @@ import sharedStyles from "./shared";
 const styles = StyleSheet.create({
   button: {
     ...sharedStyles.button,
-    borderRadius: 4,
+    borderRadius: 2,
     elevation: 3,
     height: 36
   },
