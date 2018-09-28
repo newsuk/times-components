@@ -14,7 +14,9 @@ const functionalColours = {
   articleFlagExclusive: "#C51D24",
   articleFlagNew: "#E34605",
   articleFlagUpdated: "#3C81BE",
-  white: "#FFFFFF"
+  white: "#FFFFFF",
+  overlayGradientStart: "rgba(1, 1, 1, 0.9)",
+  overlayGradientEnd: "rgba(0, 0, 0, 0)"
 };
 
 export default functionalColours;

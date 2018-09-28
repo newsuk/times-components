@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { iterator } from "@times-components/test-utils";
-import Gradient from "../src/gradient";
+import Gradient, { OverlayGradient } from "../src/gradient";
 
 export default renderMethod => {
   const tests = [
@@ -21,6 +21,14 @@ export default renderMethod => {
             <Text>Hello world!</Text>
           </Gradient>
         );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "overlay gradient",
+      test: () => {
+        const output = renderMethod(<OverlayGradient />);
 
         expect(output).toMatchSnapshot();
       }

@@ -72,3 +72,38 @@ exports[`2. gradient with a child 1`] = `
   </Text>
 </View>
 `;
+
+exports[`3. overlay gradient 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
+</View>
+`;

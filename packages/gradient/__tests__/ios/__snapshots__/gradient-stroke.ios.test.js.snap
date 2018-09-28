@@ -30,3 +30,17 @@ exports[`2. gradient with a child 1`] = `
   </Text>
 </View>
 `;
+
+exports[`3. overlay gradient 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+    />
+  </ARTSurfaceView>
+</View>
+`;
