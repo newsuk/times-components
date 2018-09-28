@@ -49,7 +49,7 @@ exports[`1. a full article with enabled comments 1`] = `
           </Text>
         </Text>
         <Button
-          fontSize={14}
+          fontSize={16}
           lineHeight={16}
           title="View comments"
         />

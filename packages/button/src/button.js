@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, TouchableHighlight } from "react-native";
 import { colours } from "@times-components/styleguide";
-import transformTitle from "./utils";
+import { capitalise } from "@times-components/utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 
 const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
-  const transformedTitle = transformTitle(title);
+  const transformedTitle = capitalise(title);
   const fontSizeStyle = fontSize ? { fontSize } : null;
   const lineHeightStyle = lineHeight ? { lineHeight } : null;
   return (

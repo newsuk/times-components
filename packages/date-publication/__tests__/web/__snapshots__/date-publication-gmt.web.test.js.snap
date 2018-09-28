@@ -3,9 +3,9 @@
 exports[`1. date and times publication 1`] = `
 Array [
   <time
-    dateTime="2017-07-01T14:32:00.000Z"
+    dateTime="2017-01-01T14:32:00.000Z"
   >
-    Saturday July 01 2017, 03:32pm
+    Sunday January 01 2017, 02:32pm
   </time>,
   <span>
     , The Times
@@ -16,9 +16,9 @@ Array [
 exports[`2. date and sundaytimes publication 1`] = `
 Array [
   <time
-    dateTime="2017-07-01T14:32:00.000Z"
+    dateTime="2017-01-01T14:32:00.000Z"
   >
-    Saturday July 01 2017, 03:32pm
+    Sunday January 01 2017, 02:32pm
   </time>,
   <span>
     , The Sunday Times
@@ -27,40 +27,17 @@ Array [
 `;
 
 exports[`3. date and no given publication 1`] = `
-Array [
-  <time
-    dateTime="2017-07-01T14:32:00.000Z"
-  >
-    Saturday July 01 2017, 03:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
+<time
+  dateTime="2017-01-01T14:32:00.000Z"
+>
+  Sunday January 01 2017, 02:32pm
+</time>
 `;
 
 exports[`4. date and no day 1`] = `
-Array [
-  <time
-    dateTime="2017-07-01T14:32:00.000Z"
-  >
-    July 01 2017, 03:32pm
-  </time>,
-  <span>
-    
-  </span>,
-]
-`;
-
-exports[`5. date and times publication with non-london timezone 1`] = `
-Array [
-  <time
-    dateTime="2017-07-01T14:32:00.000Z"
-  >
-    Saturday July 01 2017, 03:32pm BST
-  </time>,
-  <span>
-    , The Times
-  </span>,
-]
+<time
+  dateTime="2017-01-01T14:32:00.000Z"
+>
+  January 01 2017, 02:32pm
+</time>
 `;

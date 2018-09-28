@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.16"></a>
+## [3.2.16](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.15...@times-components/article-topics@3.2.16) (2018-09-28)
+
+
+### Bug Fixes
+
+* remove device info ([#1364](https://github.com/newsuk/times-components/issues/1364)) ([36cdf47](https://github.com/newsuk/times-components/commit/36cdf47))
+
+
+
+
+
 <a name="3.2.15"></a>
 ## [3.2.15](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.14...@times-components/article-topics@3.2.15) (2018-09-27)
 

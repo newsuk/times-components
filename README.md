@@ -95,7 +95,7 @@ tools. These steps assume the use of Chrome DevTools.
 To debug our web Storybook:
 
 1. `yarn storybook`
-2. navigate to `http://localhost:9001
+2. navigate to http://localhost:9001
 3. open DevTools
 4. Click _Sources_
 5. In the _Network_ tab under the leftmost pane, expand _top_ =>

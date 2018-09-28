@@ -41,7 +41,7 @@ task removePreviousReactArchives(type: Delete) {
 task generateReactArchives {
     subprojects { subproject ->
         apply plugin: 'maven'
-        def reactProjects = ['react-native-device-info']
+        def reactProjects = []
 
         if (reactProjects.contains(subproject.name)) {
             task generateReactArchive(type: Upload) {

@@ -1,12 +1,13 @@
 import React from "react";
 import mockDate from "mockdate";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator, mockNativeModules } from "@times-components/test-utils";
 import Link from "@times-components/link";
 import { withTrackingContext } from "@times-components/tracking";
 import ArticleTopics from "../src/article-topics";
 import topicData from "../fixtures/topics";
 
+mockNativeModules();
 export default () => {
   beforeEach(() => {
     mockDate.set(1514764800000, 0);

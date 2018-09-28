@@ -1,3 +1,4 @@
+import { mockNativeModules } from "@times-components/test-utils";
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));
 jest.mock("@times-components/article-byline", () => ({
@@ -25,3 +26,4 @@ jest.mock("@times-components/tracking", () => ({
 jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/video", () => "Video");
 jest.mock("@times-components/video-label", () => "VideoLabel");
+mockNativeModules();
