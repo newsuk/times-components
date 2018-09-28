@@ -1,8 +1,7 @@
 import shared from "../shared-london";
+import { dateGMT } from "../constants";
 
 const realIntl = Intl;
-
-const dateGMT = "2017-01-01T14:32:00.000Z";
 
 shared(dateGMT);
 
