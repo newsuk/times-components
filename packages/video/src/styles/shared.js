@@ -38,11 +38,11 @@ const styles = {
     height: 40,
     paddingVertical: spacing(2),
     paddingHorizontal: spacing(1),
-    backgroundImage:
-      "linear-gradient(to bottom,rgba(29,29,27,.7)50%, transparent 100%)",
-    backgroundRepeat: "repeat-x",
+    // backgroundImage:
+    //   "linear-gradient(to bottom,rgba(29,29,27,.7)50%, transparent 100%)",
+    // backgroundRepeat: "repeat-x",
     width: "100%",
-    zIndex: 1,
+    zIndex: 3,
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between"

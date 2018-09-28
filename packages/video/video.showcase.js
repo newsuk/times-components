@@ -97,14 +97,9 @@ export default {
       component: () => (
         <View>
           <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
-          <Video {...defaultVideoProps} skySports="true" />
+          <Video {...defaultVideoProps} skySports />
           <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
-          <Video
-            {...defaultVideoProps}
-            height={374}
-            skySports="true"
-            width={664}
-          />
+          <Video {...defaultVideoProps} height={374} skySports width={664} />
           <Text style={{ marginTop: 20, marginBottom: 10 }}>
             Non sky sports:
           </Text>

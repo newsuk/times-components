@@ -16,6 +16,15 @@ import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
 
+const styles = [
+  "backgroundColor",
+  "backgroundPosition",
+  "backgroundRepeat",
+  "backgroundSize",
+  "height",
+  "width"
+];
+
 addSerializers(
   expect,
   compose(
@@ -25,7 +34,7 @@ addSerializers(
     replacePropTransform(
       (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
     ),
-    rnwTransform(AppRegistry)
+    rnwTransform(AppRegistry, styles)
   )
 );
 
