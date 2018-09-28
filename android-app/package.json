@@ -19,7 +19,6 @@
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-native": "0.55.4",
-    "react-native-device-info": "0.13.0",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

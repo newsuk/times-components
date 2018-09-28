@@ -8,7 +8,7 @@ const DatePublication = ({ publication, ...props }) => (
     {dateTime => (
       <Fragment>
         <time dateTime={props.date}>{dateTime}</time>
-        <span>{publicationString(publication)}</span>
+        {publication ? <span>{publicationString(publication)}</span> : null}
       </Fragment>
     )}
   </DateTime>

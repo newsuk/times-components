@@ -28,12 +28,6 @@ const getUTCTime = date => {
   );
 };
 
-const isLondonTimezone = () => {
-  try {
-    return getTimezone() === "Europe/London";
-  } catch (err) {
-    return false;
-  }
-};
+const isLondonTimezone = () => getTimezone() === "Europe/London";
 
 export { isLondonTimezone, getUTCTime, isBST };

@@ -9,6 +9,9 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { mockNativeModules } from "@times-components/test-utils";
+
+mockNativeModules();
 
 const styles = [
   "alignItems",

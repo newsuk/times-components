@@ -332,9 +332,6 @@ exports[`default styles 1`] = `
                   <time>
                     March 13 2015, 06:54pm
                   </time>
-                  <span>
-                    
-                  </span>
                 </div>
                 <div
                   className="S10"

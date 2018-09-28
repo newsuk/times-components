@@ -62,8 +62,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.3.14",
     "date-fns": "1.28.5",
-    "prop-types": "15.6.2",
-    "react-native-device-info": "0.13.0"
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": ">=16.5",
