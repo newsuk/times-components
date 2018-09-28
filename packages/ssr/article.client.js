@@ -1,9 +1,9 @@
 /* eslint-env browser */
 
-const authorProfile = require("./author-profile");
+const article = require("./article");
 const apolloClient = require("./make-client-ac");
 const runClient = require("./run-client");
 
 runClient(
-  authorProfile(apolloClient(), window.nuk.slug, window.nuk.page)
+  article(apolloClient(), window.nuk.id, window.nuk.adConfig)
 );

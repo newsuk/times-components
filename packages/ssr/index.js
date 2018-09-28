@@ -7,6 +7,8 @@ const { fragmentMatcher } = require("@times-components/schema");
 const fetch = require("node-fetch");
 const { createHttpLink } = require("apollo-link-http");
 const getData = require("./get-data");
+const adConfig = require("./ad-config.json");
+const article = require("./article");
 const authorProfile = require("./author-profile");
 const topic = require("./topic");
 
@@ -25,8 +27,7 @@ const makeClient = () =>
 
 const makeHtml = (
   client,
-  identifier,
-  page,
+  nuk,
   { bundleName, html, rnwStyles, scStyles, title }
 ) => `
         <!DOCTYPE html>
@@ -37,7 +38,7 @@ const makeHtml = (
             ${rnwStyles}
             ${scStyles}
             <script>
-            window.nuk = { identifier: "${identifier}", page: ${page} };
+            window.nuk = ${JSON.stringify(nuk)};
             window.__APOLLO_STATE__=${JSON.stringify(client.extract()).replace(
               /</g,
               "\\\u003c"
@@ -62,6 +63,29 @@ const toNumber = s => {
   return parsed;
 };
 
+server.get("/article/:id", (req, res) => {
+  const { params: { id } } = req;
+  const client = makeClient();
+  const App = article(client, id);
+
+  getData(App).then(props =>
+    res.send(
+      makeHtml(
+        client,
+        {
+          adConfig,
+          id
+        },
+        {
+          ...props,
+          bundleName: "article",
+          title: "Article"
+        }
+      )
+    )
+  );
+});
+
 server.get("/profile/:slug", (req, res) => {
   const { params: { slug }, query: { page } } = req;
   const pageNum = toNumber(page) || 1;
@@ -70,11 +94,18 @@ server.get("/profile/:slug", (req, res) => {
 
   getData(App).then(props =>
     res.send(
-      makeHtml(client, slug, pageNum, {
-        ...props,
-        bundleName: "author-profile",
-        title: slug
-      })
+      makeHtml(
+        client,
+        {
+          page: pageNum,
+          slug
+        },
+        {
+          ...props,
+          bundleName: "author-profile",
+          title: slug
+        }
+      )
     )
   );
 });
@@ -87,11 +118,18 @@ server.get("/topic/:slug", (req, res) => {
 
   getData(App).then(props =>
     res.send(
-      makeHtml(client, slug, pageNum, {
-        ...props,
-        bundleName: "topic",
-        title: slug
-      })
+      makeHtml(
+        client,
+        {
+          page: pageNum,
+          slug
+        },
+        {
+          ...props,
+          bundleName: "topic",
+          title: slug
+        }
+      )
     )
   );
 });
