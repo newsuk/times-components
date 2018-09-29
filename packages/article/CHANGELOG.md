@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.6"></a>
+## [5.2.6](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.5...@times-components/article@5.2.6) (2018-09-28)
+
+
+### Bug Fixes
+
+* Minor Android styling adjustments ([#1370](https://github.com/newsuk/times-components/issues/1370)) ([97bf4ad](https://github.com/newsuk/times-components/commit/97bf4ad))
+
+
+
+
+
 <a name="5.2.5"></a>
 ## [5.2.5](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.4...@times-components/article@5.2.5) (2018-09-28)
 
