@@ -14,8 +14,7 @@ import { ApolloError } from "apollo-client";
 import "./mocks";
 import ArticleList from "../src/article-list";
 import adConfig from "../fixtures/article-ad-config.json";
-import { omitWeb } from "./utils";
-import { makeUrl } from "./utils";
+import { omitWeb, makeUrl } from "./utils";
 
 const omitProps = new Set([
   ...omitWeb,

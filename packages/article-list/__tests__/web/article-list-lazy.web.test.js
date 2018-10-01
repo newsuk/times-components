@@ -140,7 +140,8 @@ const tests = [
       const component = mount(
         <Context.Provider value={{ makeUrl: { makeUrl } }}>
           <ArticleList {...articleListProps} />
-        </Context.Provider>);
+        </Context.Provider>
+      );
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
@@ -172,21 +173,20 @@ const tests = [
       document.body.appendChild(mountPoint);
 
       mount(
-          <ArticleList
-            {...articleListProps}
-            articles={articleListFixture.slice(0, 3)}
-            count={3}
-          />
-        ,
+        <ArticleList
+          {...articleListProps}
+          articles={articleListFixture.slice(0, 3)}
+          count={3}
+        />,
         {
           context: {
             tracking: {
               analytics: reporter
             },
-            makeUrl: {makeUrl}
+            makeUrl: { makeUrl }
           },
           attachTo: mountPoint,
-          childContextTypes: {makeUrl: PropTypes.func}
+          childContextTypes: { makeUrl: PropTypes.func }
         }
       );
 
