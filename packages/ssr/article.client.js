@@ -1,7 +1,7 @@
 /* eslint-env browser */
 
-const topic = require("./topic");
+const article = require("./article");
 const apolloClient = require("./make-client-ac");
 const runClient = require("./run-client");
 
-runClient(topic(apolloClient(), window.nuk.slug, window.nuk.page));
+runClient(article(apolloClient(), window.nuk.id, window.nuk.adConfig));
