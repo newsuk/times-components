@@ -23,14 +23,14 @@ import Gradient, { OverlayGradient } from "@times-components/gradient";
 </Gradient>
 
 // Works with children
-<Gradient
+<OverlayGradient
   degrees={90}
   style={{
     width: 200,
     height: 200
   }}>
   <Text>Example text</Text>
-</Gradient>
+</OverlayGradient>
 ```
 
 ## Contributing
