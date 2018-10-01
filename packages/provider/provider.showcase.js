@@ -1,10 +1,9 @@
 import React from "react";
 import { Text } from "react-native";
-import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import {
+  article as makeArticleParams,
   authorProfile as makeAuthorParams,
-  fixtures,
   MockedProvider,
   MockFixture,
   topic as makeTopicParams
@@ -17,7 +16,6 @@ import connectGraphql, {
   TopicProvider,
   TopicArticlesProvider
 } from "./src/provider.js";
-import { query as articleQuery } from "./src/article";
 
 export default {
   name: "Helpers/Provider",
@@ -135,27 +133,23 @@ export default {
       type: "story",
       name: "Article",
       component: () => {
-        const mocks = [
-          {
-            request: {
-              query: addTypenameToDocument(articleQuery),
-              variables: {
-                id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              }
-            },
-            result: fixtures.article
-          }
-        ];
+        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
 
         return (
-          <MockedProvider mocks={mocks}>
-            <ArticleProvider
-              debounceTimeMs={0}
-              id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            >
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </ArticleProvider>
-          </MockedProvider>
+          <MockFixture
+            params={makeArticleParams({
+              variables: () => ({
+                id
+              })
+            })}
+            render={mocks => (
+              <MockedProvider mocks={mocks}>
+                <ArticleProvider debounceTimeMs={0} id={id}>
+                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                </ArticleProvider>
+              </MockedProvider>
+            )}
+          />
         );
       }
     },
