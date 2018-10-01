@@ -31,6 +31,7 @@ import Gradient, { OverlayGradient } from "@times-components/gradient";
   }}>
   <Text>Example text</Text>
 </Gradient>
+```
 
 ## Contributing
 
@@ -65,4 +66,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Primitives%2FGradient&selectedStory=Default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available gradient templates.
-
