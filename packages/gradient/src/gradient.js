@@ -18,6 +18,4 @@ Gradient.propTypes = propTypes;
 Gradient.defaultProps = defaultProps;
 
 export default Gradient;
-export {
-  default as OverlayGradient
-} from "@times-components/gradient/src/overlay-gradient";
+export { default as OverlayGradient } from "./overlay-gradient";

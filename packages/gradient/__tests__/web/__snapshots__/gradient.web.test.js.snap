@@ -28,11 +28,3 @@ exports[`2. gradient with a child 1`] = `
   </div>
 </div>
 `;
-
-exports[`3. overlay gradient with a child 1`] = `
-<div>
-  <div>
-    Hello world!
-  </div>
-</div>
-`;

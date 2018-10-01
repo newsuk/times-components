@@ -14,7 +14,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import Gradient, { OverlayGradient } from "../../src/gradient";
+import Gradient from "../../src/gradient";
 
 addSerializers(
   expect,
@@ -60,28 +60,6 @@ const tests = [
           <Gradient>
             <Text>Hello world!</Text>
           </Gradient>
-        )
-      ).toMatchSnapshot();
-    }
-  },
-  {
-    name: "overlay gradient with a child",
-    test() {
-      addSerializers(
-        expect,
-        compose(
-          print,
-          minimaliseTransform((value, key) => key === "style"),
-          minimalWebTransform,
-          rnwTransform(AppRegistry)
-        )
-      );
-
-      expect(
-        mount(
-          <OverlayGradient>
-            <Text>Hello world!</Text>
-          </OverlayGradient>
         )
       ).toMatchSnapshot();
     }
