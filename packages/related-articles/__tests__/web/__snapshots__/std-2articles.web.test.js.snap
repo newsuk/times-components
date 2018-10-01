@@ -14,111 +14,117 @@ exports[`1. two related articles 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
+          <div>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
               }
-            }
-            url="https://first.io"
-          >
-            <Card
-              imageRatio={1.7777777777777777}
-              imageUri="https://crop1.io"
-              isReversed={false}
-              lowResSize={100}
-              showImage={true}
+              url="https://first.io"
             >
-              <div>
+              <Card
+                highResSize={null}
+                imageRatio={1.7777777777777777}
+                imageUri="https://crop1.io"
+                isReversed={false}
+                lowResSize={100}
+                showImage={true}
+              >
                 <div>
                   <div>
-                    FIRST LABEL
+                    <div>
+                      FIRST LABEL
+                    </div>
                   </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  First Short Headline
-                </h3>
-                <div>
+                  <h3
+                    aria-level="3"
+                    role="heading"
+                  >
+                    First Short Headline
+                  </h3>
+                  <div>
+                    <div>
+                      <span>
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <time
+                      dateTime="2015-03-13T18:54:58.000Z"
+                    >
+                      March 13 2015, 06:54pm
+                    </time>
+                  </div>
                   <div>
                     <span>
-                      
-                      Summary 125
-                      ...
+                      Camilla Long, Environment Editor
                     </span>
                   </div>
                 </div>
-                <div>
-                  <time
-                    dateTime="2015-03-13T18:54:58.000Z"
-                  >
-                    March 13 2015, 06:54pm
-                  </time>
-                </div>
-                <div>
-                  <span>
-                    Camilla Long, Environment Editor
-                  </span>
-                </div>
-              </div>
-            </Card>
-          </Link>
+              </Card>
+            </Link>
+          </div>
         </div>
         <div />
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
+          <div>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
               }
-            }
-            url="https://second.io"
-          >
-            <Card
-              imageRatio={1.7777777777777777}
-              imageUri="https://crop2.io"
-              isReversed={false}
-              lowResSize={100}
-              showImage={true}
+              url="https://second.io"
             >
-              <div>
+              <Card
+                highResSize={null}
+                imageRatio={1.7777777777777777}
+                imageUri="https://crop2.io"
+                isReversed={false}
+                lowResSize={100}
+                showImage={true}
+              >
                 <div>
                   <div>
-                    SECOND LABEL
+                    <div>
+                      SECOND LABEL
+                    </div>
                   </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Second Short Headline
-                </h3>
-                <div>
+                  <h3
+                    aria-level="3"
+                    role="heading"
+                  >
+                    Second Short Headline
+                  </h3>
+                  <div>
+                    <div>
+                      <span>
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <time
+                      dateTime="2018-01-17T12:00:00.000Z"
+                    >
+                      January 17 2018, 12:00pm
+                    </time>
+                  </div>
                   <div>
                     <span>
-                      
-                      Summary 125
-                      ...
+                      Camilla Long, Environment Editor
                     </span>
                   </div>
                 </div>
-                <div>
-                  <time
-                    dateTime="2018-01-17T12:00:00.000Z"
-                  >
-                    January 17 2018, 12:00pm
-                  </time>
-                </div>
-                <div>
-                  <span>
-                    Camilla Long, Environment Editor
-                  </span>
-                </div>
-              </div>
-            </Card>
-          </Link>
+              </Card>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

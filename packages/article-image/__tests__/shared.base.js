@@ -174,6 +174,33 @@ export default makeTest => {
           )
         ).toMatchSnapshot();
       }
+    },
+    {
+      name: "primary image with given resolutions",
+      test: () => {
+        const primaryImage = {
+          imageOptions: {
+            display: "primary",
+            highResSize: 900,
+            lowResSize: 50,
+            ratio: "16:9",
+            uri: testImageUrl
+          },
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          }
+        };
+
+        expect(
+          makeTest(
+            <ArticleImage
+              captionOptions={primaryImage.captionOptions}
+              imageOptions={primaryImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
     }
   ];
 

@@ -126,6 +126,21 @@ export default () => {
 
         expect(testRenderer).toMatchSnapshot();
       }
+    },
+    {
+      name: "both high and low res sizes",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={3 / 2}
+            highResSize={900}
+            lowResSize={200}
+            uri="https://image.io"
+          />
+        );
+
+        expect(testRenderer).toMatchSnapshot();
+      }
     }
   ];
 

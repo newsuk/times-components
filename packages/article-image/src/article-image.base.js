@@ -35,7 +35,7 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-  const { display, highResSize, ratio, uri } = imageOptions;
+  const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
   if (display === "inline") {
@@ -63,6 +63,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
         caption={caption}
         credits={credits}
         highResSize={highResSize}
+        lowResSize={lowResSize}
         uri={uri}
       />
     </View>,

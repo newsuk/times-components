@@ -16,12 +16,30 @@ export default {
     {
       type: "story",
       name: "Primary",
-      component: () => (
-        <ArticleImage
-          captionOptions={primaryImage.captionOptions}
-          imageOptions={primaryImage.imageOptions}
-        />
-      )
+      // eslint-disable-next-line react/prop-types
+      component: ({ boolean }) => {
+        const withHighRes = boolean("As high resolution");
+        const withLowRes = boolean("As low resolution");
+
+        const imageOptions = {
+          ...primaryImage.imageOptions
+        };
+
+        if (withHighRes) {
+          imageOptions.highResSize = 900;
+        }
+
+        if (withLowRes) {
+          imageOptions.lowResSize = 100;
+        }
+
+        return (
+          <ArticleImage
+            captionOptions={primaryImage.captionOptions}
+            imageOptions={imageOptions}
+          />
+        );
+      }
     },
     {
       type: "story",

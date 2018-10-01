@@ -1,8 +1,8 @@
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
-  enzymeTreeSerializer,
   compose,
+  enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
   print
@@ -20,7 +20,7 @@ const omitProps = new Set([
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
+    enzymeRenderedSerializer(),
     compose(
       print,
       minimalWebTransform,

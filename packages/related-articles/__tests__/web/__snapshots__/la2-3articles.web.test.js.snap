@@ -14,67 +14,6 @@ exports[`1. one lead and two support related articles 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://first.io"
-          >
-            <Card
-              imageRatio={1.7777777777777777}
-              imageUri="https://crop169-1.io"
-              isReversed={false}
-              lowResSize={100}
-              showImage={true}
-            >
-              <div>
-                <div>
-                  <div>
-                    FIRST LABEL
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  First Short Headline
-                </h3>
-                <div>
-                  <div>
-                    <span>
-                      
-                      Summary 125
-                      ...
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      
-                      Summary 175
-                      ...
-                    </span>
-                  </div>
-                </div>
-                <div>
-                  <time
-                    dateTime="2015-03-13T18:54:58.000Z"
-                  >
-                    March 13 2015, 06:54pm
-                  </time>
-                </div>
-                <div>
-                  <span>
-                    Deborah Haynes
-                  </span>
-                </div>
-              </div>
-            </Card>
-          </Link>
-        </div>
-        <div />
-        <div>
           <div>
             <Link
               linkStyle={
@@ -82,11 +21,12 @@ exports[`1. one lead and two support related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://second.io"
+              url="https://first.io"
             >
               <Card
+                highResSize={null}
                 imageRatio={1.7777777777777777}
-                imageUri="https://crop169-2.io"
+                imageUri="https://crop169-1.io"
                 isReversed={false}
                 lowResSize={100}
                 showImage={true}
@@ -94,21 +34,36 @@ exports[`1. one lead and two support related articles 1`] = `
                 <div>
                   <div>
                     <div>
-                      SECOND LABEL
+                      FIRST LABEL
                     </div>
                   </div>
                   <h3
                     aria-level="3"
                     role="heading"
                   >
-                    Second Short Headline
+                    First Short Headline
                   </h3>
-                  <div />
+                  <div>
+                    <div>
+                      <span>
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        
+                        Summary 175
+                        ...
+                      </span>
+                    </div>
+                  </div>
                   <div>
                     <time
-                      dateTime="2018-01-17T12:00:00.000Z"
+                      dateTime="2015-03-13T18:54:58.000Z"
                     >
-                      January 17 2018, 12:00pm
+                      March 13 2015, 06:54pm
                     </time>
                   </div>
                   <div>
@@ -120,50 +75,104 @@ exports[`1. one lead and two support related articles 1`] = `
               </Card>
             </Link>
           </div>
+        </div>
+        <div />
+        <div>
           <div>
-            <Link
-              linkStyle={
-                Object {
-                  "padding": 10,
+            <div>
+              <Link
+                linkStyle={
+                  Object {
+                    "padding": 10,
+                  }
                 }
-              }
-              url="https://third.io"
-            >
-              <Card
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop169-3.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
+                url="https://second.io"
               >
-                <div>
+                <Card
+                  highResSize={null}
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop169-2.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
-                      THIRD LABEL
+                      <div>
+                        SECOND LABEL
+                      </div>
+                    </div>
+                    <h3
+                      aria-level="3"
+                      role="heading"
+                    >
+                      Second Short Headline
+                    </h3>
+                    <div />
+                    <div>
+                      <time
+                        dateTime="2018-01-17T12:00:00.000Z"
+                      >
+                        January 17 2018, 12:00pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Deborah Haynes
+                      </span>
                     </div>
                   </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Third Short Headline
-                  </h3>
-                  <div />
+                </Card>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div>
+              <Link
+                linkStyle={
+                  Object {
+                    "padding": 10,
+                  }
+                }
+                url="https://third.io"
+              >
+                <Card
+                  highResSize={null}
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop169-3.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
-                    <time
-                      dateTime="2018-01-17T12:00:00.000Z"
+                    <div>
+                      <div>
+                        THIRD LABEL
+                      </div>
+                    </div>
+                    <h3
+                      aria-level="3"
+                      role="heading"
                     >
-                      January 17 2018, 12:00pm
-                    </time>
+                      Third Short Headline
+                    </h3>
+                    <div />
+                    <div>
+                      <time
+                        dateTime="2018-01-17T12:00:00.000Z"
+                      >
+                        January 17 2018, 12:00pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Deborah Haynes
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <span>
-                      Deborah Haynes
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

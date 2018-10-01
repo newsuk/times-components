@@ -65,9 +65,13 @@ without the need for JavaScript.
 
 It is possible to dynamically create a `styled-component` at runtime but this
 leads to poor SSR performance. On the server, one instance of the component will
-be created and on the client another, which breaks the benefits of hydration and
-would result in another render. Avoid this pattern and use control flow to
-choose a specific `styled-component` instead.
+be created, and on the client another, which breaks the benefits of hydration
+and would result in another render. In addition, if you provide props to a
+component that does this, you can't use lifecycle hooks such as
+`componentDidUpdate` because these components are always torn down (unmounted).
+
+Avoid this pattern and use control flow to choose a specific `styled-component`
+instead.
 
 ## Style Object Literals
 
@@ -224,9 +228,15 @@ rm -r node_modules/react-native/third_party
 This happens when React Native caches third party tools for previous versions of
 React Native.
 
-If the above does not work, another approach is to change the XCode build system. Essentially you delete build artifacts by deleting the contents of your `Library/Developer/Xcode/DerivedData` folder.
+If the above does not work, another approach is to change the XCode build
+system. Essentially you delete build artifacts by deleting the contents of your
+`Library/Developer/Xcode/DerivedData` folder.
 
-Then choose the [legacy build system](facebook/react-native#19573). Then clean the XCode project (CMD-Shift-K) and build it again. This did result in a new directory being created but we have [.gitignored it for now](https://github.com/newsuk/times-components/pull/1381) (until RN fix their issues with XCode 10). 
+Then choose the [legacy build system](facebook/react-native#19573). Then clean
+the XCode project (CMD-Shift-K) and build it again. This did result in a new
+directory being created but we have
+[.gitignored it for now](https://github.com/newsuk/times-components/pull/1381)
+(until RN fix their issues with XCode 10).
 
 ### Font Naming Conventions
 

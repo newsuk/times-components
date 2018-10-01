@@ -25,7 +25,8 @@ yarn bundle:prod
 
 Create a client-side prod bundle to hydrate the SSR page, this will have the
 various optimisations applied with code splitting and silence any console
-warnings/errors
+warnings/errors. The server-side response is also compressed for testing client
+perf.
 
 ```bash
 yarn start
@@ -37,7 +38,9 @@ include:
 * /profile/:author-slug
 * /topic/:topic-slug
 
-They will use the client side bundle you generated above
+They will use the client side bundle you generated above. You can optionally set
+`AUTH_TOKEN` as an envar (instructions should be available from your API
+provider) to get unteased articles.
 
 ```bash
 yarn bundle:profile
@@ -71,10 +74,6 @@ yarn lint
 * Publish : potentially we want to look at using this as our source of truth for
   server-side rendering, this would mean exporting and publishing the code to be
   used by render, so it's "all the same code"
-
-* Article Page: we should also add the article page
-
-* Ad Config: add something appropriate
 
 * Bundle Size: we bundle packages on CI in master, we could then bundle here and
   lint for excessively sized bundles

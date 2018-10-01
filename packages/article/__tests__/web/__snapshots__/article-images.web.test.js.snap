@@ -36,26 +36,34 @@ exports[`1. a secondary image 1`] = `
       <div />
     </header>
     <div>
-      <div>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
+      <div
+        id="0"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
+              }
             }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "3:2",
-              "uri": "https://image-2.io",
+            imageOptions={
+              Object {
+                "display": "secondary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "3:2",
+                "uri": "https://image-2.io",
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"
@@ -110,26 +118,34 @@ exports[`2. an inline image 1`] = `
       <div />
     </header>
     <div>
-      <div>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
+      <div
+        id="0"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
+              }
             }
-          }
-          imageOptions={
-            Object {
-              "display": "inline",
-              "ratio": "9:4",
-              "uri": "https://image-inline.io",
+            imageOptions={
+              Object {
+                "display": "inline",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "9:4",
+                "uri": "https://image-inline.io",
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"

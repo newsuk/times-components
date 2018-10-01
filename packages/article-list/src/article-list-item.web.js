@@ -5,7 +5,7 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
-import { colours } from "@times-components/styleguide";
+import { Animations, colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
@@ -110,7 +110,7 @@ const ArticleListItem = props => {
           lowResSize={lowResSize}
           showImage={showImage}
         >
-          {children}
+          <Animations.FadeIn>{children}</Animations.FadeIn>
         </Card>
       </ListItemWrapper>
     </Link>

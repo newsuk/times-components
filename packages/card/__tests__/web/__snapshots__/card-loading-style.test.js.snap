@@ -8,7 +8,7 @@ exports[`1. card loading state 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -234,30 +234,24 @@ exports[`1. card loading state 1`] = `
       <div
         className="S6"
       >
-        <indexweb__FadeIn>
-          <div
-            className="c0 S1"
-          >
-            <Component>
-              <Gradient
-                className="IS8"
-                degrees={264}
-              />
-              <Gradient
-                className="IS11"
-                degrees={267}
-              />
-              <Gradient
-                className="IS14"
-                degrees={267}
-              />
-              <Gradient
-                className="IS17"
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            className="IS8"
+            degrees={264}
+          />
+          <Gradient
+            className="IS11"
+            degrees={267}
+          />
+          <Gradient
+            className="IS14"
+            degrees={267}
+          />
+          <Gradient
+            className="IS17"
+            degrees={267}
+          />
+        </Component>
       </div>
     </div>
   </div>
@@ -272,7 +266,7 @@ exports[`2. card with reversed loading state 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -421,8 +415,8 @@ exports[`2. card with reversed loading state 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
+    "margin-bottom": "10px",
+    "min-width": "100%",
   },
   "S5": {
     "-ms-flex-align": "stretch",
@@ -435,8 +429,8 @@ exports[`2. card with reversed loading state 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex-direction": "column",
-    "margin-bottom": "10px",
-    "min-width": "100%",
+    "margin-bottom": "0px",
+    "min-width": "0px",
   },
   "S6": {
     "-ms-flex-align": "stretch",
@@ -480,38 +474,32 @@ exports[`2. card with reversed loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S4"
+    className="c0 S5"
   >
     <div
       className="S7"
     >
       <div
-        className="S5"
+        className="S4"
       >
-        <indexweb__FadeIn>
-          <div
-            className="c0 S4"
-          >
-            <Component>
-              <Gradient
-                className="IS3"
-                degrees={264}
-              />
-              <Gradient
-                className="IS6"
-                degrees={267}
-              />
-              <Gradient
-                className="IS9"
-                degrees={267}
-              />
-              <Gradient
-                className="IS12"
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            className="IS3"
+            degrees={264}
+          />
+          <Gradient
+            className="IS6"
+            degrees={267}
+          />
+          <Gradient
+            className="IS9"
+            degrees={267}
+          />
+          <Gradient
+            className="IS12"
+            degrees={267}
+          />
+        </Component>
       </div>
       <div
         className="S6"

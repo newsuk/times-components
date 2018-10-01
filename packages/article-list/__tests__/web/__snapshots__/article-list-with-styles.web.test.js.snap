@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
+.c2 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c0 {
   margin: 0 auto;
   max-width: 680px;
@@ -14,7 +19,7 @@ exports[`1. article list 1`] = `
   padding-right: 10px;
 }
 
-.c2 {
+.c3 {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -60,7 +65,7 @@ exports[`1. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -200,7 +205,11 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <ArticleSummary />
+              <div
+                className="c2 S3"
+              >
+                <ArticleSummary />
+              </div>
             </Card>
           </div>
         </Link>
@@ -211,7 +220,7 @@ exports[`1. article list 1`] = `
         className="c0 S3"
       >
         <div
-          className="c2 S3"
+          className="c3 S3"
         >
           <div
             className="S4"
@@ -225,7 +234,11 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <ArticleSummary />
+              <div
+                className="c2 S3"
+              >
+                <ArticleSummary />
+              </div>
             </Card>
           </div>
         </Link>
@@ -236,7 +249,7 @@ exports[`1. article list 1`] = `
         className="c0 S3"
       >
         <div
-          className="c2 S3"
+          className="c3 S3"
         >
           <div
             className="S4"
@@ -250,7 +263,11 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <ArticleSummary />
+              <div
+                className="c2 S3"
+              >
+                <ArticleSummary />
+              </div>
             </Card>
           </div>
         </Link>
@@ -261,7 +278,7 @@ exports[`1. article list 1`] = `
         className="c0 S3"
       >
         <div
-          className="c2 S3"
+          className="c3 S3"
         >
           <div
             className="S4"
@@ -275,7 +292,11 @@ exports[`1. article list 1`] = `
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
-              <ArticleSummary />
+              <div
+                className="c2 S3"
+              >
+                <ArticleSummary />
+              </div>
             </Card>
           </div>
         </Link>
