@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { mount } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import {
@@ -6,9 +7,11 @@ import {
   enzymeRenderedSerializer,
   minimalise
 } from "@times-components/jest-serializer";
+import Context from "@times-components/context";
 import articleListFixture from "../../fixtures/articles.json";
 import adConfig from "../../fixtures/article-ad-config.json";
 import ArticleList from "../../src/article-list";
+import { makeUrl } from "./../utils";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -81,7 +84,11 @@ const tests = [
     async test() {
       window.IntersectionObserver = FakeIntersectionObserver;
 
-      const component = mount(<ArticleList {...articleListProps} />);
+      const component = mount(
+        <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <ArticleList {...articleListProps} />
+        </Context.Provider>
+      );
 
       // prove the first image starts off as low quality
       expect(
@@ -130,7 +137,10 @@ const tests = [
     async test() {
       window.IntersectionObserver = FakeIntersectionObserver;
 
-      const component = mount(<ArticleList {...articleListProps} />);
+      const component = mount(
+        <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <ArticleList {...articleListProps} />
+        </Context.Provider>);
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
@@ -162,18 +172,21 @@ const tests = [
       document.body.appendChild(mountPoint);
 
       mount(
-        <ArticleList
-          {...articleListProps}
-          articles={articleListFixture.slice(0, 3)}
-          count={3}
-        />,
+          <ArticleList
+            {...articleListProps}
+            articles={articleListFixture.slice(0, 3)}
+            count={3}
+          />
+        ,
         {
           context: {
             tracking: {
               analytics: reporter
-            }
+            },
+            makeUrl: {makeUrl}
           },
-          attachTo: mountPoint
+          attachTo: mountPoint,
+          childContextTypes: {makeUrl: PropTypes.func}
         }
       );
 
