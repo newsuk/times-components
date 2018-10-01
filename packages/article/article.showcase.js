@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types, no-bitwise, operator-assignment */
+/* eslint-disable react/prop-types */
 /* eslint-env browser */
-import React, { Component } from "react";
+import React from "react";
 import invert from "lodash.invert";
 import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
@@ -8,12 +8,15 @@ import {
   article as makeParams,
   fixtures,
   MockFixture,
-  MockedProvider,
-  schemaToMocks
+  MockedProvider
 } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
+import {
+  ArticleConfigurator,
+  makeArticleConfiguration
+} from "./showcase-helper";
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
 
@@ -97,143 +100,6 @@ const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 
-const FLAGS = 1;
-const LABEL = 2;
-const LEAD_ASSET = 4;
-const LINKED_BYLINE = 8;
-const STANDFIRST = 16;
-const VIDEO = 32;
-
-const makeArticleConfiguration = ({
-  withFlags,
-  withLabel,
-  withLeadAsset,
-  withLinkedByline,
-  withStandfirst,
-  withVideo
-}) => {
-  let mask;
-
-  if (withFlags) {
-    mask = mask | FLAGS;
-  }
-
-  if (withLabel) {
-    mask = mask | LABEL;
-  }
-
-  if (withLeadAsset) {
-    mask = mask | LEAD_ASSET;
-  }
-
-  if (withLinkedByline) {
-    mask = mask | LINKED_BYLINE;
-  }
-
-  if (withStandfirst) {
-    mask = mask | STANDFIRST;
-  }
-
-  if (withVideo) {
-    mask = mask | VIDEO;
-  }
-
-  return mask;
-};
-
-const makeArticle = configuration => article => {
-  const configuredArticle = { ...article };
-
-  if (!(configuration & FLAGS)) {
-    configuredArticle.flags = [];
-  }
-
-  if (!(configuration & LABEL)) {
-    configuredArticle.label = null;
-  }
-
-  if (!(configuration & LEAD_ASSET)) {
-    configuredArticle.leadAsset = null;
-  }
-
-  if (configuration & LINKED_BYLINE) {
-    configuredArticle.byline = fixtures.bylineWithLink;
-  }
-
-  if (!(configuration & STANDFIRST)) {
-    configuredArticle.standfirst = null;
-  }
-
-  if (!(configuration & VIDEO)) {
-    configuredArticle.hasVideo = false;
-  }
-
-  return configuredArticle;
-};
-
-class ArticleConfigurator extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      mocks: [],
-      reRendering: false
-    };
-  }
-
-  componentDidMount() {
-    schemaToMocks(
-      makeParams({
-        makeArticle: makeArticle(this.props.configuration),
-        variables: () => ({
-          id: this.props.id
-        })
-      })
-    ).then(mocks => this.setState({ mocks }));
-  }
-
-  componentDidUpdate(prevProps) {
-    if (this.props.configuration !== prevProps.configuration) {
-      // eslint-disable-next-line react/no-did-update-set-state
-      this.setState(
-        {
-          reRendering: true
-        },
-        () =>
-          schemaToMocks(
-            makeParams({
-              makeArticle: makeArticle(this.props.configuration),
-              variables: () => ({
-                id: this.props.id
-              })
-            })
-          ).then(mocks => this.setState({ mocks, reRendering: false }))
-      );
-    }
-  }
-
-  render() {
-    if (!this.state.mocks.length || this.state.reRendering) {
-      return null;
-    }
-
-    const { decorateAction, id, scale, sectionColour } = this.props;
-
-    return (
-      <MockedProvider mocks={this.state.mocks}>
-        {renderArticle({
-          adConfig: articleAdConfig,
-          analyticsStream: storybookReporter,
-          decorateAction,
-          id,
-          scale,
-          sectionColour
-        })}
-      </MockedProvider>
-    );
-  }
-}
-
 export default {
   name: "Pages/Article",
   children: [
@@ -270,11 +136,17 @@ export default {
                   withStandfirst,
                   withVideo
                 })}
-                decorateAction={decorateAction}
                 id={id}
-                scale={scale}
-                sectionColour={sectionColour}
-              />
+              >
+                {renderArticle({
+                  adConfig: articleAdConfig,
+                  analyticsStream: storybookReporter,
+                  decorateAction,
+                  id,
+                  scale,
+                  sectionColour
+                })}
+              </ArticleConfigurator>
             }
           </div>
         );
