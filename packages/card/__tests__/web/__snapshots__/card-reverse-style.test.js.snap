@@ -29,12 +29,19 @@ exports[`card with reversed layout 1`] = `
 <style>
 {
   "IS1": {
-    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+    "backgroundImage": "linear-gradient(
+          264deg, 
+          #F9F9F9 0%, 
+          #EDEDED 100%
+        )",
   },
   "IS2": {
     "flex": 1,
   },
   "IS3": {
+    "flex": 1,
+  },
+  "IS4": {
     "bottom": 0,
     "left": 0,
     "position": "absolute",
@@ -42,7 +49,7 @@ exports[`card with reversed layout 1`] = `
     "top": 0,
     "zIndex": 0,
   },
-  "IS4": {
+  "IS5": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",

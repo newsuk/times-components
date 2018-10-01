@@ -32,6 +32,18 @@ export default renderMethod => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "overlay gradient with a child",
+      test: () => {
+        const output = renderMethod(
+          <OverlayGradient>
+            <Text>Hello world!</Text>
+          </OverlayGradient>
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 
