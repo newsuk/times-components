@@ -3,6 +3,8 @@ import { Text } from "react-native";
 import { iterator } from "@times-components/test-utils";
 import Gradient, { OverlayGradient } from "../src/gradient";
 
+const renderExampleText = () => <Text>Some example text</Text>;
+
 export default renderMethod => {
   const tests = [
     {
@@ -16,11 +18,7 @@ export default renderMethod => {
     {
       name: "gradient with a child",
       test: () => {
-        const output = renderMethod(
-          <Gradient>
-            <Text>Hello world!</Text>
-          </Gradient>
-        );
+        const output = renderMethod(<Gradient>{renderExampleText()}</Gradient>);
 
         expect(output).toMatchSnapshot();
       }
@@ -37,9 +35,7 @@ export default renderMethod => {
       name: "overlay gradient with a child",
       test: () => {
         const output = renderMethod(
-          <OverlayGradient>
-            <Text>Hello world!</Text>
-          </OverlayGradient>
+          <OverlayGradient>{renderExampleText()}</OverlayGradient>
         );
 
         expect(output).toMatchSnapshot();

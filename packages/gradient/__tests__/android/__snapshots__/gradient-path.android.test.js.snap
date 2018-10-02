@@ -68,7 +68,7 @@ exports[`2. gradient with a child 1`] = `
     />
   </ARTSurfaceView>
   <Text>
-    Hello world!
+    Some example text
   </Text>
 </View>
 `;
@@ -141,7 +141,7 @@ exports[`4. overlay gradient with a child 1`] = `
     />
   </ARTSurfaceView>
   <Text>
-    Hello world!
+    Some example text
   </Text>
 </View>
 `;
