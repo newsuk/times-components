@@ -76,7 +76,7 @@ export default {
           <Image
             source={{
               uri:
-                "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685"
+                "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb45ad130-5456-11e8-a94b-41e5a20c31cf.jpg?crop=2250%2C1266%2C0%2C117&resize=685"
             }}
             style={{ width: 685, height: 385 }}
           />

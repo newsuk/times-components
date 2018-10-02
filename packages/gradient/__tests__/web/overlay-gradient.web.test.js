@@ -1,17 +1,15 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
-import { StyleSheet, Text } from "react-native";
+import { Text } from "react-native";
 import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
-  hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
   print,
-  rnwTransform,
-  stylePrinter
+  rnwTransform
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import { OverlayGradient } from "../../src/gradient";
@@ -20,41 +18,17 @@ addSerializers(
   expect,
   enzymeRenderedSerializer(),
   compose(
-    stylePrinter,
-    hoistStyleTransform,
+    print,
+    minimaliseTransform((value, key) => key === "style"),
     minimalWebTransform,
-    rnwTransform(AppRegistry, ["backgroundColor"])
+    rnwTransform(AppRegistry)
   )
 );
 
 const tests = [
   {
-    name: "overlay gradient with style",
-    test() {
-      const styles = StyleSheet.create({
-        gradient: {
-          backgroundColor: "red"
-        }
-      });
-
-      expect(
-        mount(<OverlayGradient degrees={30} style={styles.gradient} />)
-      ).toMatchSnapshot();
-    }
-  },
-  {
     name: "overlay gradient with a child",
     test() {
-      addSerializers(
-        expect,
-        compose(
-          print,
-          minimaliseTransform((value, key) => key === "style"),
-          minimalWebTransform,
-          rnwTransform(AppRegistry)
-        )
-      );
-
       expect(
         mount(
           <OverlayGradient>
