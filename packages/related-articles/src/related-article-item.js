@@ -5,7 +5,6 @@ import ArticleSummary, {
   ArticleSummaryContent,
   ArticleSummaryHeadline
 } from "@times-components/article-summary";
-import Context from "@times-components/context";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
@@ -39,8 +38,6 @@ const RelatedArticleItem = ({
     publishedTime,
     section,
     shortHeadline,
-    shortIdentifier,
-    slug,
     url
   } = article;
   const {
@@ -60,76 +57,66 @@ const RelatedArticleItem = ({
       : get(article, `leadAsset.crop${cropSize}.url`);
 
   return (
-    <Context.Consumer>
-      {({ makeUrl: { makeUrl } }) => {
-        const articleUrl = makeUrl ? makeUrl({ slug, shortIdentifier }) : url;
-
-        return (
-          <Link
-            linkStyle={{ padding: 10 }}
-            onPress={e => onPress(e, { articleUrl })}
-            url={articleUrl}
-          >
-            <Card
-              contentContainerClass={contentContainerClass}
-              imageContainerClass={imageContainerClass}
-              imageRatio={imageRatio}
-              imageStyle={imageStyle}
-              imageUri={imageUri}
-              isReversed={isReversed}
-              lowResSize={100}
-              showImage={showImage}
-            >
-              <ArticleSummary
-                bylineProps={{
-                  ast: byline,
-                  bylineClass,
-                  bylineStyle: isOpinionByline
-                    ? styles.opinionByline
-                    : styles.byline,
-                  color: colours.section[section] || colours.section.default,
-                  isOpinionByline
-                }}
-                content={() =>
-                  showSummary && (
-                    <View style={summaryStyle}>
-                      {summaryLengths.map(item => {
-                        const summaryClassSuffix = `${item}Class`;
-                        const summaryClass = summaryType
-                          ? `${summaryType}Summary`
-                          : `summary`;
-                        return (
-                          <ArticleSummaryContent
-                            ast={article[`summary${item}`]}
-                            className={`summaryHidden ${summaryClass}${
-                              summaryClassSuffix
-                            }`}
-                            key={item}
-                          />
-                        );
-                      })}
-                    </View>
-                  )
-                }
-                datePublicationProps={{ date: publishedTime, showDay: false }}
-                headline={() => (
-                  <ArticleSummaryHeadline
-                    className={headlineClass}
-                    headline={getHeadline(headline, shortHeadline)}
-                    style={styles.headline}
-                  />
-                )}
-                labelProps={{
-                  color: colours.section[section] || colours.section.default,
-                  isVideo: hasVideo,
-                  title: label
-                }}
-              />
-            </Card>
-          </Link>
-        );
-      }}
-    </Context.Consumer>
+    <Link
+      linkStyle={{ padding: 10 }}
+      onPress={e => onPress(e, { url: article.url })}
+      url={url}
+    >
+      <Card
+        contentContainerClass={contentContainerClass}
+        imageContainerClass={imageContainerClass}
+        imageRatio={imageRatio}
+        imageStyle={imageStyle}
+        imageUri={imageUri}
+        isReversed={isReversed}
+        lowResSize={100}
+        showImage={showImage}
+      >
+        <ArticleSummary
+          bylineProps={{
+            ast: byline,
+            bylineClass,
+            bylineStyle: isOpinionByline ? styles.opinionByline : styles.byline,
+            color: colours.section[section] || colours.section.default,
+            isOpinionByline
+          }}
+          content={() =>
+            showSummary && (
+              <View style={summaryStyle}>
+                {summaryLengths.map(item => {
+                  const summaryClassSuffix = `${item}Class`;
+                  const summaryClass = summaryType
+                    ? `${summaryType}Summary`
+                    : `summary`;
+                  return (
+                    <ArticleSummaryContent
+                      ast={article[`summary${item}`]}
+                      className={`summaryHidden ${summaryClass}${
+                        summaryClassSuffix
+                      }`}
+                      key={item}
+                    />
+                  );
+                })}
+              </View>
+            )
+          }
+          datePublicationProps={{ date: publishedTime, showDay: false }}
+          headline={() => (
+            <ArticleSummaryHeadline
+              className={headlineClass}
+              headline={getHeadline(headline, shortHeadline)}
+              style={styles.headline}
+            />
+          )}
+          labelProps={{
+            color: colours.section[section] || colours.section.default,
+            isVideo: hasVideo,
+            title: label
+          }}
+        />
+      </Card>
+    </Link>
   );
 };
 

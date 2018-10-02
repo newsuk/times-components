@@ -99,7 +99,7 @@ const ArticleListItem = props => {
 
   return (
     <Context.Consumer>
-      {({ makeUrl: { makeUrl } }) => {
+      {({ makeUrl }) => {
         const canonicalUrl = makeUrl({ slug, shortIdentifier });
 
         return (

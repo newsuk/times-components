@@ -28,7 +28,7 @@ export default () => {
 
           render() {
             return (
-              <Context.Provider value={{ makeUrl: { makeUrl } }}>
+              <Context.Provider value={{ makeUrl }}>
                 <ArticleList
                   adConfig={adConfig}
                   articles={articlesFixture}

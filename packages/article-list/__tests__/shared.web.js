@@ -32,7 +32,7 @@ export default () => {
       name: "article list with no images",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articles={articlesFixture.slice(0, 1)}
@@ -60,7 +60,7 @@ export default () => {
         };
 
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articles={[missingImage]}

@@ -85,11 +85,10 @@ const tests = [
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const component = mount(
-        <Context.Provider value={{ makeUrl: { makeUrl } }}>
+        <Context.Provider value={{ makeUrl }}>
           <ArticleList {...articleListProps} />
         </Context.Provider>
       );
-
       // prove the first image starts off as low quality
       expect(
         component
@@ -138,7 +137,7 @@ const tests = [
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const component = mount(
-        <Context.Provider value={{ makeUrl: { makeUrl } }}>
+        <Context.Provider value={{ makeUrl }}>
           <ArticleList {...articleListProps} />
         </Context.Provider>
       );

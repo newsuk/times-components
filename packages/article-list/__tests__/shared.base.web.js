@@ -28,7 +28,7 @@ export default (additionalTests = []) => {
       name: "article list",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articles={articlesFixture}

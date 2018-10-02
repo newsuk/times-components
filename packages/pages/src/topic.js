@@ -5,8 +5,8 @@ import { TopicProvider } from "@times-components/provider";
 import Context from "@times-components/context";
 import withClient from "./client/with-client";
 
-const TopicPage = ({ topicSlug, onArticlePress, analyticsStream }) => (
-  <Context.Provider value={{ makeUrl: makeUrl }}>
+const TopicPage = ({ topicSlug, onArticlePress, analyticsStream, makeUrl }) => (
+  <Context.Provider value={{ makeUrl }}>
     <TopicProvider debounceTimeMs={250} page={1} pageSize={20} slug={topicSlug}>
       {({ topic, isLoading, error, page, pageSize, refetch }) => (
         <Topic

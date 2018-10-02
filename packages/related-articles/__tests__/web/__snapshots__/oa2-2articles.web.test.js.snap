@@ -20,7 +20,6 @@ exports[`1. one opinion and one support related article 1`] = `
                 "padding": 10,
               }
             }
-            url="https://first.io"
           >
             <Card
               imageRatio={0.6135458167330677}
@@ -89,7 +88,6 @@ exports[`1. one opinion and one support related article 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://second.io"
             >
               <Card
                 imageRatio={1.7777777777777777}

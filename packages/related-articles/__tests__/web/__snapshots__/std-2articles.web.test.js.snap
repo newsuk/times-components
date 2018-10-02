@@ -20,7 +20,6 @@ exports[`1. two related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://first.io"
           >
             <Card
               imageRatio={1.7777777777777777}
@@ -74,7 +73,6 @@ exports[`1. two related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://second.io"
           >
             <Card
               imageRatio={1.7777777777777777}

@@ -41,7 +41,7 @@ export default () => {
       test() {
         const apolloError = new ApolloError("Test");
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               emptyStateMessage="Empty State"
@@ -59,7 +59,7 @@ export default () => {
       test() {
         const apolloError = new ApolloError("Test");
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articleListHeader={<Text>Some Header</Text>}
@@ -77,7 +77,7 @@ export default () => {
       name: "an empty list",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articles={[]}
@@ -94,7 +94,7 @@ export default () => {
       name: "loading state",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeUrl: { makeUrl } }}>
+          <Context.Provider value={{ makeUrl }}>
             <ArticleList
               adConfig={adConfig}
               articlesLoading
