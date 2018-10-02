@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.0.20...@times-components/ssr@1.1.0) (2018-10-02)
+
+
+### Features
+
+* add article ([#1373](https://github.com/newsuk/times-components/issues/1373)) ([1400324](https://github.com/newsuk/times-components/commit/1400324))
+
+
+
+
+
 <a name="1.0.20"></a>
 ## [1.0.20](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.0.19...@times-components/ssr@1.0.20) (2018-09-28)
 

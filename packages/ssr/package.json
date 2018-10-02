@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "private": true,
-  "version": "1.0.20",
+  "version": "1.1.0",
   "scripts": {
     "cleanup-dist": "rm -rf dist",
     "bundle:dev": "webpack --config=webpack.config.dev.js",
@@ -39,11 +39,11 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article": "5.2.6",
-    "@times-components/author-profile": "4.0.59",
-    "@times-components/provider": "1.4.2",
+    "@times-components/article": "5.2.7",
+    "@times-components/author-profile": "4.0.60",
+    "@times-components/provider": "1.4.3",
     "@times-components/schema": "0.1.5",
-    "@times-components/topic": "3.3.29",
+    "@times-components/topic": "3.3.30",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",
