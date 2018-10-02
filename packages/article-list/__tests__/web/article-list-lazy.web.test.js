@@ -182,7 +182,7 @@ const tests = [
             tracking: {
               analytics: reporter
             },
-            makeUrl: { makeUrl }
+            makeUrl
           },
           attachTo: mountPoint,
           childContextTypes: { makeUrl: PropTypes.func }
