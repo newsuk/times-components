@@ -195,8 +195,7 @@ Follow these steps to deploy storybook native to a real android device.
 
 #### Building on Xcode 10
 
-We are currently using React Native 0.55.4 which does not fully support
-Xcode
+We are currently using React Native 0.55.4 which does not fully support Xcode
 10<sup>[1](https://github.com/facebook/react-native/issues/14382#issuecomment-313163119),
 [2](https://github.com/facebook/react-native/issues/19569#issuecomment-399652331)</sup>.
 If you need to build with Xcode 10, you will need to run the below command,
@@ -210,10 +209,20 @@ $ yarn ios; pushd node_modules/react-native/third-party/glog-*; ../../scripts/io
 
 If when trying to run `yarn ios` you receive a `":CFBundleIdentifier", Does Not
 Exist` error, either on XCode 10 after attempting the above instructions, or on
-a previous version of Xcode, try clearing your React Native cache with `rm -r
-~/.rncache` and clearing third part libraries `rm -r
-<your-project>/node_modules/react-native/third_party`. This happens when React
-Native caches third party tools for previous versions of React Native.
+a previous version of Xcode, try clearing your React Native cache with
+
+```
+rm -r ~/.rncache
+```
+
+and clearing third party libraries
+
+```
+rm -r node_modules/react-native/third_party
+```
+
+This happens when React Native caches third party tools for previous versions of
+React Native.
 
 ### Font Naming Conventions
 
