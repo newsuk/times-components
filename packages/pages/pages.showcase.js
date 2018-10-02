@@ -2,9 +2,6 @@
 import React from "react";
 import { Article, AuthorProfile, Topic } from "./src/pages";
 
-const makeUrl = ({ slug, shortIdentifier }) =>
-  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
-
 export default {
   name: "Pages/Pages",
   children: [
@@ -61,7 +58,6 @@ export default {
           <AuthorProfilePageView
             analyticsStream={() => {}}
             authorSlug={authorSlug}
-            makeUrl={makeUrl}
             onArticlePress={() => {}}
             onTwitterLinkPress={() => {}}
           />
@@ -86,7 +82,6 @@ export default {
         return (
           <TopicPageView
             analyticsStream={() => {}}
-            makeUrl={makeUrl}
             onArticlePress={() => {}}
             topicSlug={topicSlug}
           />
