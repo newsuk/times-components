@@ -6,10 +6,14 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
+import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
 import adConfig from "./fixtures/topic-ad-config.json";
+
+const makeUrl = ({ slug, shortIdentifier }) =>
+  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -35,33 +39,35 @@ const makeTopic = (decorateAction, params) => (
     params={params}
     render={mocks => (
       <MockedProvider mocks={mocks}>
-        <TopicProvider
-          articleImageRatio={articleImageRatio}
-          debounceTimeMs={250}
-          page={1}
-          pageSize={pageSize}
-          slug={slug}
-        >
-          {({
-            error,
-            isLoading,
-            page,
-            pageSize: authorPageSize,
-            refetch,
-            topic
-          }) => (
-            <Topic
-              error={error}
-              isLoading={isLoading}
-              page={page}
-              pageSize={authorPageSize}
-              refetch={refetch}
-              slug={slug}
-              topic={topic}
-              {...getProps(decorateAction)}
-            />
-          )}
-        </TopicProvider>
+        <Context.Provider value={{ makeUrl }}>
+          <TopicProvider
+            articleImageRatio={articleImageRatio}
+            debounceTimeMs={250}
+            page={1}
+            pageSize={pageSize}
+            slug={slug}
+          >
+            {({
+              error,
+              isLoading,
+              page,
+              pageSize: authorPageSize,
+              refetch,
+              topic
+            }) => (
+              <Topic
+                error={error}
+                isLoading={isLoading}
+                page={page}
+                pageSize={authorPageSize}
+                refetch={refetch}
+                slug={slug}
+                topic={topic}
+                {...getProps(decorateAction)}
+              />
+            )}
+          </TopicProvider>
+        </Context.Provider>
       </MockedProvider>
     )}
   />

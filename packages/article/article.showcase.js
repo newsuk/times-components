@@ -20,6 +20,9 @@ import {
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
 
+const makeUrl = ({ slug, shortIdentifier }) =>
+  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
+
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {

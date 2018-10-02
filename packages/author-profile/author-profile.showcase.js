@@ -7,6 +7,7 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
+import Context from "@times-components/context";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   authorArticlesWithImages as authorArticlesWithImagesQuery,
@@ -14,6 +15,9 @@ import {
 } from "@times-components/provider-queries";
 import storybookReporter from "@times-components/tealium-utils";
 import AuthorProfile from "./src/author-profile";
+
+const makeUrl = ({ slug, shortIdentifier }) =>
+  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -47,34 +51,36 @@ const makeAuthorProfile = (
     params={params}
     render={mocks => (
       <MockedProvider mocks={mocks}>
-        <AuthorProfileProvider
-          articleImageRatio={articleImageRatio}
-          debounceTimeMs={250}
-          page={1}
-          pageSize={pageSize}
-          slug={slug}
-        >
-          {({
-            author,
-            isLoading,
-            error,
-            page,
-            pageSize: authorPageSize,
-            refetch
-          }) => (
-            <AuthorProfile
-              author={author}
-              error={error}
-              hasLeadAssets={hasLeadAssets}
-              isLoading={isLoading}
-              page={page}
-              pageSize={authorPageSize}
-              refetch={refetch}
-              slug={slug}
-              {...getProps(decorateAction)}
-            />
-          )}
-        </AuthorProfileProvider>
+        <Context.Provider value={{ makeUrl }}>
+          <AuthorProfileProvider
+            articleImageRatio={articleImageRatio}
+            debounceTimeMs={250}
+            page={1}
+            pageSize={pageSize}
+            slug={slug}
+          >
+            {({
+              author,
+              isLoading,
+              error,
+              page,
+              pageSize: authorPageSize,
+              refetch
+            }) => (
+              <AuthorProfile
+                author={author}
+                error={error}
+                hasLeadAssets={hasLeadAssets}
+                isLoading={isLoading}
+                page={page}
+                pageSize={authorPageSize}
+                refetch={refetch}
+                slug={slug}
+                {...getProps(decorateAction)}
+              />
+            )}
+          </AuthorProfileProvider>
+        </Context.Provider>
       </MockedProvider>
     )}
   />
