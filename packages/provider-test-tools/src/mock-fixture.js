@@ -25,6 +25,11 @@ const toResponse = ({ delay, error, mock, query, variables }) => ({
   result: mock
 });
 
+export const schemaToMocks = params =>
+  Promise.all(params.map(makeQuery)).then(([...mocks]) =>
+    mocks.map(toResponse)
+  );
+
 class MockFixture extends Component {
   constructor(props) {
     super(props);
@@ -35,11 +40,7 @@ class MockFixture extends Component {
   }
 
   componentDidMount() {
-    Promise.all(this.props.params.map(makeQuery)).then(([...mocks]) => {
-      this.setState({
-        mocks: mocks.map(toResponse)
-      });
-    });
+    schemaToMocks(this.props.params).then(mocks => this.setState({ mocks }));
   }
 
   render() {

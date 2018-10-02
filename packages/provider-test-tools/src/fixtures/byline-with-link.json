@@ -1,0 +1,30 @@
+[
+  {
+    "name": "author",
+    "attributes": {
+      "slug": "kaya-burgess"
+    },
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "Kaya Burgess"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "inline",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": ", Religious Affairs Correspondent"
+        },
+        "children": []
+      }
+    ]
+  }
+]

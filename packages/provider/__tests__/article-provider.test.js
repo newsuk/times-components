@@ -1,177 +1,16 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/provider-test-tools";
-import { article as articleQuery } from "@times-components/provider-queries";
-import fixture from "@times-components/provider-test-tools/fixtures/article";
+import {
+  article as makeParams,
+  MockedProvider,
+  schemaToMocks
+} from "@times-components/provider-test-tools";
 import { ArticleProvider } from "../src/provider";
 
-const mocks = [
-  {
-    request: {
-      query: articleQuery,
-      variables: {
-        id: "113e9875-b7bf-4dd7-ac99-dee231bf6e74"
-      }
-    },
-    result: fixture({
-      byline: [
-        {
-          name: "text",
-          attributes: {
-            value: "Test"
-          },
-          children: []
-        }
-      ],
-      content: [
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value: "A paragraph"
-              },
-              children: []
-            }
-          ]
-        }
-      ],
-      flags: ["NEW"],
-      hasVideo: false,
-      keywords: ["WORD"],
-      leadAsset: {
-        type: "Image",
-        id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
-        title: "Title",
-        credits: "Credits",
-        caption: "Caption",
-        crop: {
-          ratio: "16:9",
-          url: "https://image.io/image",
-          __typename: "Crop"
-        },
-        __typename: "Image"
-      },
-      relatedArticleSlice: {
-        __typename: "StandardSlice",
-        items: [
-          {
-            __typename: "Tile",
-            article: {
-              id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
-              hasVideo: false,
-              headline: "Related Headline",
-              shortHeadline: "Related Short Headline",
-              section: "related",
-              shortIdentifier: "37b27qd2s",
-              slug: "france-defies-may-over-russia",
-              byline: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Patrick Kidd"
-                  },
-                  children: []
-                }
-              ],
-              label: "Label",
-              publicationName: "TIMES",
-              publishedTime: "2015-03-23T19:39:39.000Z",
-              summary105: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 105"
-                  },
-                  children: []
-                }
-              ],
-              summary125: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 125"
-                  },
-                  children: []
-                }
-              ],
-              summary145: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 145"
-                  },
-                  children: []
-                }
-              ],
-              summary160: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 160"
-                  },
-                  children: []
-                }
-              ],
-              summary175: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 175"
-                  },
-                  children: []
-                }
-              ],
-              summary225: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Summary 225"
-                  },
-                  children: []
-                }
-              ],
-              leadAsset: {
-                id: "6c1c108e-ed63-47af-df1d-46c63be16627",
-                title: "RA Lead Title",
-                crop169: {
-                  url: "https://image.io/169",
-                  __typename: "Crop"
-                },
-                crop32: {
-                  url: "https://image.io/32",
-                  __typename: "Crop"
-                },
-                __typename: "Image"
-              },
-              url: "https://some-url",
-              __typename: "Article"
-            }
-          }
-        ]
-      },
-      standfirst: "Standfirst",
-      topics: [
-        {
-          name: "Islington",
-          slug: "islington",
-          __typename: "Topic"
-        }
-      ],
-      url: "https://article.io"
-    })
-  }
-];
-
-const renderComponent = child =>
+const renderComponent = (mocks, id, child) =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <ArticleProvider
-        debounceTimeMs={0}
-        id="113e9875-b7bf-4dd7-ac99-dee231bf6e74"
-      >
+      <ArticleProvider debounceTimeMs={0} id={id}>
         {child}
       </ArticleProvider>
     </MockedProvider>
@@ -179,13 +18,111 @@ const renderComponent = child =>
 
 describe("ArticleProvider", () => {
   it("returns query result", done => {
-    renderComponent(({ article, isLoading }) => {
-      if (!isLoading) {
-        expect(article).toMatchSnapshot();
-        done();
-      }
+    const id = "113e9875-b7bf-4dd7-ac99-dee231bf6e74";
 
-      return null;
-    });
+    schemaToMocks(
+      makeParams({
+        makeArticle: article => ({
+          ...article,
+          content: [
+            {
+              name: "paragraph",
+              children: [{ name: "text", attributes: { value: "test" } }]
+            }
+          ],
+          relatedArticleSlice: {
+            __typename: "StandardSlice",
+            items: [
+              {
+                byline: [
+                  {
+                    name: "inline",
+                    attributes: {},
+                    children: [
+                      {
+                        name: "text",
+                        attributes: { value: "Patrick Kidd" },
+                        children: []
+                      }
+                    ]
+                  }
+                ],
+                hasVideo: true,
+                headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+                id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
+                label: "Health",
+                leadAsset: {
+                  crop169: {
+                    url:
+                      "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40"
+                  },
+                  crop32: {
+                    url:
+                      "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0"
+                  },
+                  id: "6c1c108e-ed63-47af-df1d-46c63be16627",
+                  title: "TMS: Pratchett’s law of the jungle",
+                  __typename: "Image"
+                },
+                publicationName: "TIMES",
+                publishedTime: "2015-03-23T19:39:39.000Z",
+                section: "sport",
+                shortHeadline: "TMS: Pratchett’s law of the jungle",
+                slug: "related-article-slug",
+                summary125: [
+                  {
+                    name: "paragraph",
+                    attributes: {},
+                    children: [
+                      {
+                        name: "text",
+                        attributes: {
+                          value:
+                            "Terry Pratchett, who died last week, began his career on the "
+                        },
+                        children: []
+                      },
+                      {
+                        name: "italic",
+                        attributes: {},
+                        children: [
+                          {
+                            name: "text",
+                            attributes: { value: "Bucks Free Press" },
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        name: "text",
+                        attributes: {
+                          value: " in 1965, aged 17, and the paper recalls in a"
+                        },
+                        children: []
+                      }
+                    ]
+                  }
+                ],
+                url:
+                  "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+              }
+            ]
+          }
+        }),
+        relatedArticleCount: 1,
+        variables: () => ({
+          id
+        })
+      })
+    ).then(mocks =>
+      renderComponent(mocks, id, ({ article, isLoading }) => {
+        if (!isLoading) {
+          expect(article).toMatchSnapshot();
+          done();
+        }
+
+        return null;
+      })
+    );
   });
 });
