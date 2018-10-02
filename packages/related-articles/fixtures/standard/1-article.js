@@ -113,6 +113,8 @@ const defaultTitle =
 const defaultUrl =
   "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
 
+const defaultSlug = "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 export default (
   {
     crop169 = defaultCrop169,
@@ -128,6 +130,8 @@ export default (
     summary175 = defaultSummary175,
     summary225 = defaultSummary225,
     title = defaultTitle,
+    slug = defaultSlug,
+    shortIdentifier = defaultShortIdentifier,
     url = defaultUrl
   } = {}
 ) => ({
@@ -187,6 +191,8 @@ export default (
             summary160,
             summary175,
             summary225,
+            slug,
+            shortIdentifier,
             url
           }
         }

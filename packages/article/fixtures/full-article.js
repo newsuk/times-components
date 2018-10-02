@@ -2024,6 +2024,8 @@ export const testFixture = {
   hasVideo: false,
   headline: "Some Headline",
   label: "Some Label",
+  slug: "this-is-slug",
+  shortIdentifier: "2k629tpvh",
   leadAsset: {
     id: "id-123",
     title: "Some Title",
@@ -2057,6 +2059,8 @@ export const testFixture = {
             crop32: { url: "https://racrop32.io", __typename: "Crop" },
             __typename: "Image"
           },
+          slug: "this-is-slug",
+          shortIdentifier: "2k629tpvh",
           url: "https://ra.io",
           __typename: "Article"
         }
