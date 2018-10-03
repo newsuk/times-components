@@ -22,5 +22,5 @@ const reporter = tealiumReporter(tealiumSendScheduler);
 export default e => {
   if (reporter) reporter.analytics(e);
 
-  if (!global.storiesOf) action("analytics-event")(e);
+  return action("analytics-event")(e);
 };
