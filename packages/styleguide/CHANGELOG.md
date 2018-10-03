@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.4.0"></a>
+# [3.4.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.3.17...@times-components/styleguide@3.4.0) (2018-10-03)
+
+
+### Features
+
+* add an overlay gradient ([#1374](https://github.com/newsuk/times-components/issues/1374)) ([00d47d7](https://github.com/newsuk/times-components/commit/00d47d7))
+
+
+
+
+
 <a name="3.3.17"></a>
 ## [3.3.17](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.3.16...@times-components/styleguide@3.3.17) (2018-10-02)
 

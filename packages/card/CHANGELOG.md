@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/newsuk/times-components/compare/@times-components/card@4.0.11...@times-components/card@4.1.0) (2018-10-03)
+
+
+### Features
+
+* add an overlay gradient ([#1374](https://github.com/newsuk/times-components/issues/1374)) ([00d47d7](https://github.com/newsuk/times-components/commit/00d47d7))
+
+
+
+
+
 <a name="4.0.11"></a>
 ## [4.0.11](https://github.com/newsuk/times-components/compare/@times-components/card@4.0.10...@times-components/card@4.0.11) (2018-10-02)
 

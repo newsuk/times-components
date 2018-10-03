@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@2.1.36...@times-components/gradient@2.2.0) (2018-10-03)
+
+
+### Features
+
+* add an overlay gradient ([#1374](https://github.com/newsuk/times-components/issues/1374)) ([00d47d7](https://github.com/newsuk/times-components/commit/00d47d7))
+
+
+
+
+
 <a name="2.1.36"></a>
 ## [2.1.36](https://github.com/newsuk/times-components/compare/@times-components/gradient@2.1.35...@times-components/gradient@2.1.36) (2018-10-02)
 

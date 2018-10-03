@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -75,9 +75,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/error-view": "2.1.37",
-    "@times-components/image": "4.0.11",
-    "@times-components/styleguide": "3.3.17",
+    "@times-components/error-view": "2.1.38",
+    "@times-components/image": "4.0.12",
+    "@times-components/styleguide": "3.4.0",
     "@times-components/svgs": "2.1.12",
     "prop-types": "15.6.2"
   },
