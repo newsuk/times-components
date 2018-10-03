@@ -29,11 +29,7 @@ exports[`1. card loading state 1`] = `
 <style>
 {
   "IS1": {
-    "backgroundImage": "linear-gradient(
-          264deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS10": {
     "height": 10,
@@ -44,11 +40,7 @@ exports[`1. card loading state 1`] = `
     "marginBottom": "10px",
   },
   "IS12": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS13": {
     "height": 10,
@@ -59,11 +51,7 @@ exports[`1. card loading state 1`] = `
     "marginBottom": "10px",
   },
   "IS15": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS16": {
     "height": 10,
@@ -96,11 +84,7 @@ exports[`1. card loading state 1`] = `
     "paddingBottom": "150%",
   },
   "IS6": {
-    "backgroundImage": "linear-gradient(
-          264deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS7": {
     "height": 24,
@@ -113,11 +97,7 @@ exports[`1. card loading state 1`] = `
     "maxWidth": 300,
   },
   "IS9": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "S1": {
     "-ms-flex-align": "stretch",
@@ -313,18 +293,10 @@ exports[`2. card with reversed loading state 1`] = `
 <style>
 {
   "IS1": {
-    "backgroundImage": "linear-gradient(
-          264deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS10": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS11": {
     "height": 10,
@@ -337,11 +309,7 @@ exports[`2. card with reversed loading state 1`] = `
     "maxWidth": 240,
   },
   "IS13": {
-    "backgroundImage": "linear-gradient(
-          264deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS14": {
     "flex": 1,
@@ -374,11 +342,7 @@ exports[`2. card with reversed loading state 1`] = `
     "maxWidth": 300,
   },
   "IS4": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS5": {
     "height": 10,
@@ -389,11 +353,7 @@ exports[`2. card with reversed loading state 1`] = `
     "marginBottom": "10px",
   },
   "IS7": {
-    "backgroundImage": "linear-gradient(
-          267deg, 
-          #F9F9F9 0%, 
-          #EDEDED 100%
-        )",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS8": {
     "height": 10,
