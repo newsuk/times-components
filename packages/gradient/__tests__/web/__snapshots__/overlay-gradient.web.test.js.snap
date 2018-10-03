@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. gradient with a child 1`] = `
+exports[`1. overlay gradient with a child 1`] = `
 <div>
   <div>
     Hello world!

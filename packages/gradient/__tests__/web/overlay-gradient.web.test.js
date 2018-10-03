@@ -12,7 +12,7 @@ import {
   rnwTransform
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import Gradient from "../../src/gradient";
+import { OverlayGradient } from "../../src/gradient";
 
 addSerializers(
   expect,
@@ -27,13 +27,13 @@ addSerializers(
 
 const tests = [
   {
-    name: "gradient with a child",
+    name: "overlay gradient with a child",
     test() {
       expect(
         mount(
-          <Gradient>
+          <OverlayGradient>
             <Text>Hello world!</Text>
-          </Gradient>
+          </OverlayGradient>
         )
       ).toMatchSnapshot();
     }

@@ -68,7 +68,80 @@ exports[`2. gradient with a child 1`] = `
     />
   </ARTSurfaceView>
   <Text>
-    Hello world!
+    Some example text
+  </Text>
+</View>
+`;
+
+exports[`3. overlay gradient 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`4. overlay gradient with a child 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
+  <Text>
+    Some example text
   </Text>
 </View>
 `;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. gradient with style 1`] = `
+<style>
+{
+  "IS1": {
+    "backgroundImage": "linear-gradient(30deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "S1": {
+    "background-color": "rgba(255,0,0,1.00)",
+  },
+}
+</style>
+
+<div
+  className="IS1 S1"
+/>
+`;

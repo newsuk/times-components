@@ -36,9 +36,29 @@ exports[`1. card loading state 1`] = `
     "marginBottom": "10px",
   },
   "IS11": {
-    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+    "height": 10,
+    "marginBottom": "10px",
   },
   "IS12": {
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "IS13": {
+    "height": 10,
+    "marginBottom": "10px",
+  },
+  "IS14": {
+    "height": 10,
+    "marginBottom": "10px",
+  },
+  "IS15": {
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "IS16": {
+    "height": 10,
+    "marginBottom": 0,
+    "maxWidth": 240,
+  },
+  "IS17": {
     "height": 10,
     "marginBottom": 0,
     "maxWidth": 240,
@@ -47,6 +67,9 @@ exports[`1. card loading state 1`] = `
     "flex": 1,
   },
   "IS3": {
+    "flex": 1,
+  },
+  "IS4": {
     "bottom": 0,
     "left": 0,
     "position": "absolute",
@@ -54,26 +77,24 @@ exports[`1. card loading state 1`] = `
     "top": 0,
     "zIndex": 0,
   },
-  "IS4": {
+  "IS5": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",
     "paddingBottom": "150%",
   },
-  "IS5": {
+  "IS6": {
     "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
-  "IS6": {
+  "IS7": {
     "height": 24,
     "marginBottom": "10px",
     "maxWidth": 300,
   },
-  "IS7": {
-    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-  },
   "IS8": {
-    "height": 10,
+    "height": 24,
     "marginBottom": "10px",
+    "maxWidth": 300,
   },
   "IS9": {
     "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
@@ -219,19 +240,19 @@ exports[`1. card loading state 1`] = `
           >
             <Component>
               <Gradient
-                className="IS6"
+                className="IS8"
                 degrees={264}
               />
               <Gradient
-                className="IS8"
+                className="IS11"
                 degrees={267}
               />
               <Gradient
-                className="IS10"
+                className="IS14"
                 degrees={267}
               />
               <Gradient
-                className="IS12"
+                className="IS17"
                 degrees={267}
               />
             </Component>
@@ -275,9 +296,28 @@ exports[`2. card with reversed loading state 1`] = `
     "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS10": {
-    "flex": 1,
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS11": {
+    "height": 10,
+    "marginBottom": 0,
+    "maxWidth": 240,
+  },
+  "IS12": {
+    "height": 10,
+    "marginBottom": 0,
+    "maxWidth": 240,
+  },
+  "IS13": {
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "IS14": {
+    "flex": 1,
+  },
+  "IS15": {
+    "flex": 1,
+  },
+  "IS16": {
     "bottom": 0,
     "left": 0,
     "position": "absolute",
@@ -285,7 +325,7 @@ exports[`2. card with reversed loading state 1`] = `
     "top": 0,
     "zIndex": 0,
   },
-  "IS12": {
+  "IS17": {
     "display": "table",
     "height": 0,
     "overflow": "hidden",
@@ -297,14 +337,16 @@ exports[`2. card with reversed loading state 1`] = `
     "maxWidth": 300,
   },
   "IS3": {
-    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+    "height": 24,
+    "marginBottom": "10px",
+    "maxWidth": 300,
   },
   "IS4": {
-    "height": 10,
-    "marginBottom": "10px",
+    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
   },
   "IS5": {
-    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+    "height": 10,
+    "marginBottom": "10px",
   },
   "IS6": {
     "height": 10,
@@ -315,11 +357,11 @@ exports[`2. card with reversed loading state 1`] = `
   },
   "IS8": {
     "height": 10,
-    "marginBottom": 0,
-    "maxWidth": 240,
+    "marginBottom": "10px",
   },
   "IS9": {
-    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+    "height": 10,
+    "marginBottom": "10px",
   },
   "S1": {
     "-ms-flex-align": "stretch",
@@ -452,19 +494,19 @@ exports[`2. card with reversed loading state 1`] = `
           >
             <Component>
               <Gradient
-                className="IS2"
+                className="IS3"
                 degrees={264}
-              />
-              <Gradient
-                className="IS4"
-                degrees={267}
               />
               <Gradient
                 className="IS6"
                 degrees={267}
               />
               <Gradient
-                className="IS8"
+                className="IS9"
+                degrees={267}
+              />
+              <Gradient
+                className="IS12"
                 degrees={267}
               />
             </Component>

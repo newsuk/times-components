@@ -4,11 +4,11 @@ import { ViewPropTypes } from "react-native";
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
-  degrees: PropTypes.number,
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
+  degrees: PropTypes.number,
   style: ViewPropTypesStyle
 };
 
