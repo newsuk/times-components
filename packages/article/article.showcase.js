@@ -41,7 +41,7 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <Context.Provider value={{ theme: { scale, sectionColour}, makeUrl }}>
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}

@@ -269,7 +269,8 @@ const defaultSecondSummary225 = [
 const defaultSecondUrl =
   "https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d";
 
-const defaultSlug = "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
 export default (
   {

@@ -112,7 +112,8 @@ const defaultSecondHeadline = "Trident gets out of MoD budget, Hammond urged";
 const defaultSecondShortHeadline = "Trident gets out of MoD budget";
 const defaultSecondLabel = "defence cuts";
 const defaultSecondSection = "sport";
-const defaultSlug = "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
 const defaultSecondSummary105 = [
   {

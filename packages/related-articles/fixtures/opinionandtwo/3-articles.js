@@ -6,7 +6,8 @@ const defaultFirstHeadline = "High score for labour in football club election";
 const defaultFirstShortHeadline = "High score for labour in football";
 const defaultFirstLabel = "opinion";
 const defaultFirstSection = "comment";
-const defaultSlug = "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
 const defaultFirstSummary105 = [
   {

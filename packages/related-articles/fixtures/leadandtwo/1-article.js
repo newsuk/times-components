@@ -3,7 +3,8 @@ const defaultCrop169 =
 const defaultHeadline = "Defence of the Realm";
 const defaultShortHeadline = "Defence of the Realm";
 const defaultLabel = "leading article";
-const defaultSlug = "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
 const defaultSummary105 = [
   {
