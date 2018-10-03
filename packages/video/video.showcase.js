@@ -11,6 +11,9 @@ const videoId = "5831024132001";
 const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
+const skySportsPosterImageURI =
+  "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F82d8be88-c422-11e8-8cd0-138e4f72a3e1.jpg?crop=1280%2C720%2C0%2C0";
+
 const defaultVideoProps = {
   policyKey,
   videoId,
@@ -25,6 +28,13 @@ const defaultVideoProps = {
       "onVideoPress called",
       "(Storybook does not play videos on native - it is handled by the host app)"
     );
+  }
+};
+
+const skySportsVideoProps = {
+  ...defaultVideoProps,
+  poster: {
+    uri: skySportsPosterImageURI
   }
 };
 
@@ -97,9 +107,9 @@ export default {
       component: () => (
         <View>
           <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
-          <Video {...defaultVideoProps} skySports />
+          <Video {...skySportsVideoProps} skySports />
           <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
-          <Video {...defaultVideoProps} height={374} skySports width={664} />
+          <Video {...skySportsVideoProps} height={374} skySports width={664} />
           <Text style={{ marginTop: 20, marginBottom: 10 }}>
             Non sky sports:
           </Text>

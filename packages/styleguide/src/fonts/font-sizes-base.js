@@ -16,6 +16,7 @@ const fontSizes = {
   leadHeadline: 26,
   link: 13,
   meta: 14,
+  imageOverlayTextSmall: 11,
   pageComponentHeadline: 25,
   pageHeadline: 40,
   pageHeadlineLarge: 50,
