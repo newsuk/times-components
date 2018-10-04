@@ -224,6 +224,10 @@ rm -r node_modules/react-native/third_party
 This happens when React Native caches third party tools for previous versions of
 React Native.
 
+If the above does not work, another approach is to change the XCode build system. Essentially you delete build artifacts by deleting the contents of your `Library/Developer/Xcode/DerivedData` folder.
+
+Then choose the [legacy build system](facebook/react-native#19573). Then clean the XCode project (CMD-Shift-K) and build it again. This did result in a new directory being created but we have [.gitignored it for now](https://github.com/newsuk/times-components/pull/1381) (until RN fix their issues with XCode 10). 
+
 ### Font Naming Conventions
 
 Android and iOS interpret fonts differently. The style property for `fontFamily`

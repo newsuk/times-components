@@ -77,6 +77,8 @@ dextrose/snappy/**
 .vscode
 
 # Bundles
+ios/Index/
+
 ios/main.jsbundle
 ios/main.jsbundle.meta
 
