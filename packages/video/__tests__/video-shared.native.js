@@ -34,7 +34,15 @@ export default () => {
           key.includes("Class")
       ),
       replacePropTransform(
-        (value, key) => (key === "uri" ? hash(value) : value)
+        (value, key) => {
+          if (key === "uri") {
+            return hash(value);
+          }
+          if (key === "source") {
+            return hash(value.uri);
+          }
+          return value;
+        }
       )
     )
   );

@@ -32,7 +32,7 @@ addSerializers(
     minimaliseTransform((value, key) => key !== "style"),
     minimalWebTransform,
     replacePropTransform(
-      (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
+      (value, key) => (key === "src" || key === "poster" ? hash(value) : value)
     ),
     rnwTransform(AppRegistry, styles)
   )
