@@ -32,7 +32,14 @@ const css = `
 .video-js .vjs-poster {
   background-size: cover;
 }
+
+.video-js .vjs-tech {
+  position: relative;
+}
 `;
+
+export const isSkySports = skySportsValue =>
+  skySportsValue === "false" ? false : !!skySportsValue;
 
 class InlineVideoPlayer extends Component {
   static index = 0;
@@ -61,7 +68,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      showSkyBanner: props.skySports || false
+      showSkyBanner: isSkySports(props.skySports)
     };
 
     InlineVideoPlayer.index += 1;

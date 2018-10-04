@@ -12,7 +12,7 @@ export const propTypes = {
   playerId: PropTypes.string,
   policyKey: PropTypes.string.isRequired,
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
-  skySports: PropTypes.bool,
+  skySports: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   videoId: PropTypes.string.isRequired,
   width: numberOrString.isRequired
 };
