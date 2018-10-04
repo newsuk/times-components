@@ -3,6 +3,9 @@ const defaultCrop169 =
 const defaultHeadline = "Defence of the Realm";
 const defaultShortHeadline = "Defence of the Realm";
 const defaultLabel = "leading article";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultSummary105 = [
   {
     name: "paragraph",
@@ -108,6 +111,8 @@ export default (
     crop169 = defaultCrop169,
     headline = defaultHeadline,
     label = defaultLabel,
+    slug = defaultSlug,
+    shortIdentifier = defaultShortIdentifier,
     shortHeadline = defaultShortHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
@@ -140,6 +145,8 @@ export default (
             }
           ],
           headline,
+          slug,
+          shortIdentifier,
           label,
           id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
           leadAsset: {

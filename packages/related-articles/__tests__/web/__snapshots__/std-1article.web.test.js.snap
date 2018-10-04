@@ -20,7 +20,6 @@ exports[`1. a single related article 1`] = `
                 "padding": 10,
               }
             }
-            url="https://test.io"
           >
             <Card
               imageRatio={1.7777777777777777}

@@ -20,6 +20,9 @@ import {
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
 
+const makeUrl = ({ slug, shortIdentifier }) =>
+  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
+
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -38,7 +41,7 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <Context.Provider value={{ theme: { scale, sectionColour }, makeUrl }}>
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}

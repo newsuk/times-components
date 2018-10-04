@@ -6,6 +6,9 @@ const defaultFirstHeadline = "High score for labour in football club election";
 const defaultFirstShortHeadline = "High score for labour in football";
 const defaultFirstLabel = "opinion";
 const defaultFirstSection = "comment";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultFirstSummary105 = [
   {
     name: "paragraph",
@@ -415,6 +418,8 @@ export default (
     firstSummary225 = defaultFirstSummary225,
     firstTitle = defaultFirstTitle,
     firstUrl = defaultFirstUrl,
+    firstSlug = defaultSlug,
+    firstShortIdentifier = defaultShortIdentifier,
     secondCrop23 = defaultSecondCrop23,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
@@ -487,6 +492,8 @@ export default (
           summary160: firstSummary160,
           summary175: firstSummary175,
           summary225: firstSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: firstUrl
         }
       },
@@ -528,6 +535,8 @@ export default (
           summary160: secondSummary160,
           summary175: secondSummary175,
           summary225: secondSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: secondUrl
         }
       },
@@ -569,6 +578,8 @@ export default (
           summary160: thirdSummary160,
           summary175: thirdSummary175,
           summary225: thirdSummary225,
+          slug: firstSlug,
+          shortIdentifier: firstShortIdentifier,
           url: thirdUrl
         }
       }
