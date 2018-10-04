@@ -14,6 +14,7 @@ import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
+
 // eslint-disable-next-line global-require
 jest.mock("@times-components/svgs", () => require("./mock-svg"));
 
@@ -52,6 +53,16 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Video {...defaultVideoProps} poster={null} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "sky sports video",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Video {...defaultVideoProps} skySports />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();

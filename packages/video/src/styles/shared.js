@@ -53,7 +53,7 @@ const styles = {
   },
   skySportsBadge: {
     height: 17,
-    marginTop: spacing(1.5),
+    marginTop: 7,
     width: 80
   }
 };
