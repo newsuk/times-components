@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.9"></a>
+## [5.2.9](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.8...@times-components/article@5.2.9) (2018-10-04)
+
+
+### Bug Fixes
+
+* ios article storybook has window and DOM references ([#1383](https://github.com/newsuk/times-components/issues/1383)) ([dafa6bf](https://github.com/newsuk/times-components/commit/dafa6bf))
+
+
+
+
+
 <a name="5.2.8"></a>
 ## [5.2.8](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.7...@times-components/article@5.2.8) (2018-10-03)
 
