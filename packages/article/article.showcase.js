@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
-import React from "react";
+import React, { Fragment } from "react";
 import invert from "lodash.invert";
 import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
@@ -117,15 +117,20 @@ export default {
         const withStandfirst = boolean("Standfirst", true);
         const withVideo = boolean("Video", true);
 
-        return (
-          <div>
+        const link = typeof document === "object" &&
+          window !== window.top && (
             <a
               href={`/iframe.html${window.top.location.search}`}
               rel="noopener noreferrer"
-              target="blank"
+              target="_blank"
             >
-              Click to render the ads
+              Open in new window
             </a>
+          );
+
+        return (
+          <Fragment>
+            {link}
             {
               <ArticleConfigurator
                 configuration={makeArticleConfiguration({
@@ -148,7 +153,7 @@ export default {
                 })}
               </ArticleConfigurator>
             }
-          </div>
+          </Fragment>
         );
       }
     },
