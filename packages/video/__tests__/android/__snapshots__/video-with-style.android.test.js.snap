@@ -96,7 +96,7 @@ exports[`3. sky sports video 1`] = `
     }
   }
 >
-  <View
+  <OverlayGradient
     style={
       Object {
         "flex": 1,
@@ -112,21 +112,6 @@ exports[`3. sky sports video 1`] = `
       }
     }
   >
-    <ARTSurfaceView
-      style={
-        Object {
-          "bottom": 0,
-          "height": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": 0,
-        }
-      }
-    >
-      <ARTShape />
-    </ARTSurfaceView>
     <Text
       style={
         Object {
@@ -149,7 +134,7 @@ exports[`3. sky sports video 1`] = `
         }
       }
     />
-  </View>
+  </OverlayGradient>
   <Image
     style={
       Object {

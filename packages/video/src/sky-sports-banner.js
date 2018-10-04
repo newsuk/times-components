@@ -6,7 +6,7 @@ import styles from "./styles";
 
 const SkySportsBanner = () => (
   <OverlayGradient degrees={180} style={styles.skySportsBanner}>
-    <SkySportsText />
+    <SkySportsText text="Premier League clips powered by Sky Sports" />
     <Image
       source={{
         uri:

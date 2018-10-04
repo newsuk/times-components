@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./styles";
 import SkySportsTextContainer from "./styles/responsive";
-import SkySportsTextBase from "./sky-sports-text.base";
+import propTypes from "./sky-sports-text-prop-types";
 
-const SkySportsText = () => (
+const SkySportsText = ({ text }) => (
   <SkySportsTextContainer style={styles.skySportsBannerText}>
-    <SkySportsTextBase />
+    {text}
   </SkySportsTextContainer>
 );
+
+SkySportsText.propTypes = propTypes;
 
 export default SkySportsText;
