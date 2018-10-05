@@ -12,6 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
 import Video from "../../src/video";
+import InlineVideoPlayer from "../../src/inline-video-player";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
@@ -42,6 +43,19 @@ const tests = [
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();
+    }
+  },
+  {
+    name: "no sky banner displayed on play",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} skySports />
+      );
+
+      const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);
+      VideoComponent[0].instance.handlePlay();
+
+      expect(testInstance).toMatchSnapshot();
     }
   }
 ];
