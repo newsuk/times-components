@@ -12,11 +12,13 @@ export const propTypes = {
   playerId: PropTypes.string,
   policyKey: PropTypes.string.isRequired,
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
+  skySports: PropTypes.bool,
   videoId: PropTypes.string.isRequired,
   width: numberOrString.isRequired
 };
 
 export const defaultProps = {
   paidOnly: false,
-  playerId: "default"
+  playerId: "default",
+  skySports: false
 };

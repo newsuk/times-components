@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import { propTypes, defaultProps } from "./video-prop-types";
+import SkySportsBanner from "./sky-sports-banner";
 
 const css = `
 .video-js .vjs-big-play-button {
@@ -31,6 +32,10 @@ const css = `
 .video-js .vjs-poster {
   background-size: cover;
 }
+
+.video-js .vjs-tech {
+  position: relative;
+}
 `;
 
 class InlineVideoPlayer extends Component {
@@ -59,7 +64,8 @@ class InlineVideoPlayer extends Component {
     super(props);
 
     this.state = {
-      error: null
+      error: null,
+      showSkyBanner: props.skySports
     };
 
     InlineVideoPlayer.index += 1;
@@ -95,11 +101,17 @@ class InlineVideoPlayer extends Component {
   };
 
   handlePlay = () => {
+    this.hideSkyBanner();
+
     InlineVideoPlayer.activePlayers.forEach(video => {
       if (video !== this && video.player) {
         video.player.pause();
       }
     });
+  };
+
+  hideSkyBanner = () => {
+    this.setState({ showSkyBanner: false });
   };
 
   loadBrightcoveSDKIfRequired() {
@@ -157,18 +169,21 @@ class InlineVideoPlayer extends Component {
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
       <div data-testid="video-component" style={{ height, width }}>
-        <video
-          id={this.id}
-          style={{ height, width }}
-          {...(poster ? { poster: this.props.poster.uri } : {})}
-          className="video-js"
-          controls
-          data-account={accountId}
-          data-application-id
-          data-embed="default"
-          data-player={playerId}
-          data-video-id={videoId}
-        />
+        <div style={{ position: "relative" }}>
+          {this.state.showSkyBanner && <SkySportsBanner />}
+          <video
+            id={this.id}
+            style={{ height, width }}
+            {...(poster ? { poster: this.props.poster.uri } : {})}
+            className="video-js"
+            controls
+            data-account={accountId}
+            data-application-id
+            data-embed="default"
+            data-player={playerId}
+            data-video-id={videoId}
+          />
+        </div>
       </div>
     );
   }

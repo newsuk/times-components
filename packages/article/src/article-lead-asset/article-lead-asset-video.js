@@ -1,15 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import cropPropTypes from "./crop-prop-types";
+import articleLeadAssetVideoPropTypes from "./article-lead-asset-video-prop-types";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
   brightcovePolicyKey,
   brightcoveAccountId,
   posterImage: { crop: { ratio: image_ratio, url: imageUrl } },
-  onVideoPress
+  onVideoPress,
+  skySports
 }) => {
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
@@ -24,22 +24,13 @@ const ArticleLeadAssetVideo = ({
       onVideoPress={onVideoPress}
       policyKey={brightcovePolicyKey}
       poster={{ uri: imageUrl }}
+      skySports={skySports}
       videoId={brightcoveVideoId}
       width={width}
     />
   );
 };
 
-export const propTypes = {
-  brightcoveVideoId: PropTypes.string.isRequired,
-  brightcovePolicyKey: PropTypes.string.isRequired,
-  brightcoveAccountId: PropTypes.string.isRequired,
-  posterImage: PropTypes.shape({
-    crop: cropPropTypes.isRequired
-  }).isRequired,
-  onVideoPress: PropTypes.func.isRequired
-};
-
-ArticleLeadAssetVideo.propTypes = propTypes;
+ArticleLeadAssetVideo.propTypes = articleLeadAssetVideoPropTypes;
 
 export default ArticleLeadAssetVideo;

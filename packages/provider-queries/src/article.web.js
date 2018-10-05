@@ -17,6 +17,7 @@ export default addTypenameToDocument(gql`
           posterImage {
             ...imageProps
           }
+          skySports
         }
         ... on Image {
           ...imageProps

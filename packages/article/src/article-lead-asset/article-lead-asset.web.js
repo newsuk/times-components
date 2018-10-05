@@ -32,6 +32,7 @@ const LeadAssetComponent = ({
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
       poster={{ uri: displayImage.url }}
+      skySports={leadAsset.skySports}
       videoId={leadAsset.brightcoveVideoId}
       width="100%"
     />
