@@ -19,6 +19,7 @@ import {
 } from "./showcase-helper";
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
+import DropCapParagraph from "./src/article-body/drop-cap-paragraph";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -275,6 +276,16 @@ export default {
           </StorybookProvider>
         );
       }
+    },
+    {
+      type: "story",
+      name: "DropCap",
+      component: () => (
+        <DropCapParagraph>
+          Some dummy text Some dummy text Some dummy text Some dummy text Some
+          dummy text Some dummy text Some dummy text Some dummy text
+        </DropCapParagraph>
+      )
     }
   ]
 };
