@@ -38,9 +38,6 @@ const css = `
 }
 `;
 
-export const isSkySports = skySportsValue =>
-  skySportsValue === "false" ? false : !!skySportsValue;
-
 class InlineVideoPlayer extends Component {
   static index = 0;
   static scriptLoadError = false;
@@ -68,7 +65,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      showSkyBanner: isSkySports(props.skySports)
+      showSkyBanner: props.skySports
     };
 
     InlineVideoPlayer.index += 1;

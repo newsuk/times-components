@@ -58,7 +58,7 @@ export default () => {
           <Video {...defaultVideoProps} skySports />
         );
 
-        expect(testInstance.toJSON()).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

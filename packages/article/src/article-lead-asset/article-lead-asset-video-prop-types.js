@@ -9,7 +9,7 @@ export const articleLeadAssetVideoPropTypes = {
     crop: cropPropTypes.isRequired
   }).isRequired,
   onVideoPress: PropTypes.func.isRequired,
-  skySports: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+  skySports: PropTypes.bool
 };
 
 export const articleLeadAssetVideoDefaultProps = {
