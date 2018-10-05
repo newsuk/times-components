@@ -37,39 +37,39 @@ const renderArticle = ({
   scale,
   sectionColour
 }) => (
-  <ArticleProvider debounceTimeMs={0} id={id}>
-    {({ article, isLoading, error, refetch }) => (
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
-        <Article
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          article={article}
-          error={error}
-          isLoading={isLoading}
-          onAuthorPress={preventDefaultedAction(decorateAction)(
-            "onAuthorPress"
-          )}
-          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-            "onCommentGuidelinesPress"
-          )}
-          onCommentsPress={preventDefaultedAction(decorateAction)(
-            "onCommentsPress"
-          )}
-          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-            "onRelatedArticlePress"
-          )}
-          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-          refetch={refetch}
-        />
-      </Context.Provider>
-    )}
-  </ArticleProvider>
-);
+    <ArticleProvider debounceTimeMs={0} id={id}>
+      {({ article, isLoading, error, refetch }) => (
+        <Context.Provider value={{ theme: { scale, sectionColour } }}>
+          <Article
+            adConfig={adConfig}
+            analyticsStream={analyticsStream}
+            article={article}
+            error={error}
+            isLoading={isLoading}
+            onAuthorPress={preventDefaultedAction(decorateAction)(
+              "onAuthorPress"
+            )}
+            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+              "onCommentGuidelinesPress"
+            )}
+            onCommentsPress={preventDefaultedAction(decorateAction)(
+              "onCommentsPress"
+            )}
+            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+              "onRelatedArticlePress"
+            )}
+            onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+              "onTwitterLinkPress"
+            )}
+            onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+            refetch={refetch}
+          />
+        </Context.Provider>
+      )}
+    </ArticleProvider>
+  );
 
 const mockArticle = ({
   adConfig = articleAdConfig,
@@ -80,22 +80,22 @@ const mockArticle = ({
   scale,
   sectionColour
 }) => (
-  <MockFixture
-    params={params}
-    render={mocks => (
-      <MockedProvider mocks={mocks}>
-        {renderArticle({
-          adConfig,
-          analyticsStream,
-          decorateAction,
-          id,
-          scale,
-          sectionColour
-        })}
-      </MockedProvider>
-    )}
-  />
-);
+    <MockFixture
+      params={params}
+      render={mocks => (
+        <MockedProvider mocks={mocks}>
+          {renderArticle({
+            adConfig,
+            analyticsStream,
+            decorateAction,
+            id,
+            scale,
+            sectionColour
+          })}
+        </MockedProvider>
+      )}
+    />
+  );
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
@@ -227,8 +227,8 @@ export default {
           adConfig={articleAdConfig}
           analyticsStream={storybookReporter}
           isLoading
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
+          onRelatedArticlePress={() => { }}
+          onTopicPress={() => { }}
         />
       )
     },
@@ -279,11 +279,43 @@ export default {
     },
     {
       type: "story",
-      name: "DropCap",
+      name: "DropCap M",
       component: () => (
         <DropCapParagraph>
-          Some dummy text Some dummy text Some dummy text Some dummy text Some
-          dummy text Some dummy text Some dummy text Some dummy text
+          immm mmm mmmmmmm mmm mmmmmmmm mmm mm mm mmmmmm mmmm mmmmm mmm mmm
+          mmmmmmmm mmmmm mmm mm mmm mmmm mmmmmmm mmmmmmmmmm mmm mmm mm mmm mmmm mmmm
+        </DropCapParagraph>
+      )
+    },
+    {
+      type: "story",
+      name: "DropCap I",
+      component: () => (
+        <DropCapParagraph>
+          Qiii iii iiiiiii iii iiiiiiii iii ii ii iiiiii iiii iiiii iii iii
+          iiiiiiii iiiii iii ii iii iiii iiiiiii iiiiiiiiii iiiii iii ii ii iiiiii iiiii iii ii ii iiiiii
+          iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiiiii ii ii iiiiii iiiii iii ii ii iiiiii
+          iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii
+        </DropCapParagraph>
+      )
+    },
+    {
+      type: "story",
+      name: "DropCap Quote",
+      component: () => (
+        <DropCapParagraph>
+          "iii iii iiiiiii iii iiiiiiii iii ii ii iiiiii iiii iiiii iii iii
+          iiiiiiii iiiii iii ii iii iiii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiiiii ii ii iiiiii iiiii iii ii ii iiiiii
+          iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
+        iiiiii iiiii iii ii ii iiiiii
         </DropCapParagraph>
       )
     }

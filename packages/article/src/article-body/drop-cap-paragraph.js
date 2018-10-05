@@ -2,33 +2,46 @@ import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
+import styleguide from "@times-components/styleguide";
 import styleFactory from "../styles/article-body";
+
+const { colours } = styleguide();
+const { RNTextSize } = NativeModules;
+
+const dropCapSize = 67;
+const fontSize = 17;
 
 class DropCapParagraph extends Component {
   constructor(props) {
     super(props);
 
-    const { ReactTextHelper } = NativeModules;
     const screenWidth = Dimensions.get("window").width;
     this.state = {
       slicePoint: 0,
       screenWidth
     };
-    const margins = 30;
+    const text = this.props.children.toString();
+    const margins = 25;
+    const dropCapLength = 1;
 
-    ReactTextHelper.measureSlicePoint(
-      props.children.toString(),
-      65,
-      17,
-      screenWidth - margins
-    ).then(({ slicePoint, textViewWidth }) => {
-      this.setState({ slicePoint, textViewWidth });
+    RNTextSize.measure({
+      text: text.slice(0, dropCapLength),
+      width: screenWidth - margins,
+      fontSize: dropCapSize,
+      fontFamily: "TimesDigitalW04",
+    }).then(({ width }) => RNTextSize.measure({
+      text: text.slice(dropCapLength),
+      width: screenWidth - margins - width,
+      fontSize: fontSize,
+      fontFamily: "TimesDigitalW04"
+    })).then(({ lineEnd }) => {
+      this.setState({ slicePoint: lineEnd + dropCapLength, screenWidth });
     });
   }
 
   renderParagraph(children) {
     const text = children.toString();
-    const { screenWidth, slicePoint, textViewWidth } = this.state;
+    const { screenWidth, slicePoint } = this.state;
 
     return (
       <Context.Consumer>
@@ -43,32 +56,29 @@ class DropCapParagraph extends Component {
               }}
             >
               <Text
-                onLayout={({ nativeEvent: { layout: { width } } }) => {
-                  console.log("DropCap Width:", width);
-                }}
                 selectable
-                style={[
-                  stylesScaled.articleTextElement,
+                style={
                   {
                     backgroundColor: "red",
-                    fontSize: 65,
-                    lineHeight: 70,
-                    height: 70,
-                    marginBottom: 0
+                    fontSize: dropCapSize,
+                    fontFamily: "TimesDigitalW04",
+                    lineHeight: dropCapSize,
+                    includeFontPadding: false,
+                    textAlignVertical: "bottom",
+                    marginRight: 5,
+                    color: colours.functional.primary
                   }
-                ]}
+                }
               >
                 {text.charAt(0)}
               </Text>
               <Text
-                onLayout={({ nativeEvent: { layout: { width } } }) => {
-                  console.log("Width:", width, "NativeWidth:", textViewWidth);
-                }}
                 selectable
                 style={[
                   stylesScaled.articleTextElement,
                   {
                     flex: 1,
+                    fontSize,
                     backgroundColor: "green",
                     marginBottom: 0
                   }
@@ -83,11 +93,12 @@ class DropCapParagraph extends Component {
                   stylesScaled.articleTextElement,
                   {
                     backgroundColor: "yellow",
-                    width: screenWidth
+                    fontSize,
+                    width: screenWidth - 20
                   }
                 ]}
               >
-                {text.slice(slicePoint)}
+                {text.slice(slicePoint + 1)}
               </Text>
             </View>
           );
