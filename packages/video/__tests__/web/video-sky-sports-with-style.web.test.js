@@ -31,9 +31,15 @@ addSerializers(
     stylePrinter,
     minimaliseTransform((value, key) => key !== "style"),
     minimalWebTransform,
-    replacePropTransform(
-      (value, key) => (key === "src" || key === "poster" ? hash(value) : value)
-    ),
+    replacePropTransform((value, key) => {
+      if (key === "src" || key === "poster") {
+        return hash(value);
+      }
+      if (key === "style" && value.backgroundImage) {
+        return hash(value.backgroundImage);
+      }
+      return value;
+    }),
     rnwTransform(AppRegistry, styles)
   )
 );

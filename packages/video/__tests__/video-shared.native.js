@@ -37,7 +37,7 @@ export default () => {
         if (key === "uri") {
           return hash(value);
         }
-        if (key === "source") {
+        if (key === "source" && value.uri) {
           return hash(value.uri);
         }
         return value;
