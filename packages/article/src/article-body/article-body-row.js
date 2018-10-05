@@ -5,7 +5,7 @@ import ArticleImage from "@times-components/article-image";
 import Ad from "@times-components/ad";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
-import { renderTree } from "@times-components/markup-forest";
+import { renderTree, renderTreeAsText } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
@@ -13,6 +13,7 @@ import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
+import DropCapParagraph from "./drop-cap-paragraph";
 
 const styles = styleFactory();
 
@@ -21,8 +22,11 @@ const ArticleRow = ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
-}) =>
-  renderTree(data, {
+}) => {
+  if (data.name === "paragraph") {
+    return <DropCapParagraph>{renderTreeAsText(data)}</DropCapParagraph>;
+  }
+  return renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {
       return {
@@ -149,6 +153,7 @@ const ArticleRow = ({
       };
     }
   });
+};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({

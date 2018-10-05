@@ -3,7 +3,6 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import styleFactory from "../styles/article-body";
-import DropCapParagraph from "./drop-cap-paragraph";
 
 const styles = styleFactory();
 
@@ -17,12 +16,9 @@ const BodyParagraph = props => (
       {({ theme: { scale } }) => {
         const stylesScaled = styleFactory(scale);
         return (
-          <DropCapParagraph>
+          <Text selectable style={stylesScaled.articleTextElement}>
             {props.children}
-          </DropCapParagraph>
-          // <Text selectable style={stylesScaled.articleTextElement}>
-          //   {props.children}
-          // </Text>
+          </Text>
         );
       }}
     </Context.Consumer>

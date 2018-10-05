@@ -14,33 +14,35 @@ const fontSize = 17;
 class DropCapParagraph extends Component {
   constructor(props) {
     super(props);
-
+    const { children } = this.props;
     const screenWidth = Dimensions.get("window").width;
     this.state = {
       slicePoint: 0,
       screenWidth
     };
-    const text = this.props.children.toString();
     const margins = 25;
     const dropCapLength = 1;
 
     RNTextSize.measure({
-      text: text.slice(0, dropCapLength),
+      text: children.slice(0, dropCapLength),
       width: screenWidth - margins,
       fontSize: dropCapSize,
-      fontFamily: "TimesDigitalW04",
-    }).then(({ width }) => RNTextSize.measure({
-      text: text.slice(dropCapLength),
-      width: screenWidth - margins - width,
-      fontSize: fontSize,
       fontFamily: "TimesDigitalW04"
-    })).then(({ lineEnd }) => {
-      this.setState({ slicePoint: lineEnd + dropCapLength, screenWidth });
-    });
+    })
+      .then(({ width }) =>
+        RNTextSize.measure({
+          text: children.slice(dropCapLength),
+          width: screenWidth - margins - width,
+          fontSize,
+          fontFamily: "TimesDigitalW04"
+        })
+      )
+      .then(({ lineEnd }) => {
+        this.setState({ slicePoint: lineEnd + dropCapLength, screenWidth });
+      });
   }
 
-  renderParagraph(children) {
-    const text = children.toString();
+  renderParagraph(text) {
     const { screenWidth, slicePoint } = this.state;
 
     return (
@@ -49,26 +51,27 @@ class DropCapParagraph extends Component {
           const stylesScaled = styleFactory(scale);
           return (
             <View
-              style={{
-                backgroundColor: "blue",
-                flexDirection: "row",
-                flexWrap: "wrap"
-              }}
+              style={[
+                stylesScaled.articleMainContentRow,
+                {
+                  backgroundColor: "blue",
+                  flexDirection: "row",
+                  flexWrap: "wrap"
+                }
+              ]}
             >
               <Text
                 selectable
-                style={
-                  {
-                    backgroundColor: "red",
-                    fontSize: dropCapSize,
-                    fontFamily: "TimesDigitalW04",
-                    lineHeight: dropCapSize,
-                    includeFontPadding: false,
-                    textAlignVertical: "bottom",
-                    marginRight: 5,
-                    color: colours.functional.primary
-                  }
-                }
+                style={{
+                  backgroundColor: "red",
+                  fontSize: dropCapSize,
+                  fontFamily: "TimesDigitalW04",
+                  lineHeight: dropCapSize,
+                  includeFontPadding: false,
+                  textAlignVertical: "bottom",
+                  marginRight: 5,
+                  color: colours.functional.primary
+                }}
               >
                 {text.charAt(0)}
               </Text>
@@ -116,9 +119,7 @@ class DropCapParagraph extends Component {
 }
 
 DropCapParagraph.propTypes = {
-  children: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired
+  children: PropTypes.string.isRequired
 };
 
 export default DropCapParagraph;
