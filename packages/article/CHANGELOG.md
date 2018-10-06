@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.3.0"></a>
+# [5.3.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.9...@times-components/article@5.3.0) (2018-10-06)
+
+
+### Features
+
+* add Sky sports banner ([#1382](https://github.com/newsuk/times-components/issues/1382)) ([231af44](https://github.com/newsuk/times-components/commit/231af44))
+
+
+
+
+
 <a name="5.2.9"></a>
 ## [5.2.9](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.8...@times-components/article@5.2.9) (2018-10-04)
 
