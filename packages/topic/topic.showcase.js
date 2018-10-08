@@ -6,14 +6,12 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
+import { makeUrl } from "@times-components/utils";
 import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
 import adConfig from "./fixtures/topic-ad-config.json";
-
-const makeUrl = ({ slug, shortIdentifier }) =>
-  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([

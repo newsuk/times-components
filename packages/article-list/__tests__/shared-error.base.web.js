@@ -1,12 +1,12 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { makeUrl } from "@times-components/utils";
 import Context from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleListPageError from "../src/article-list-page-error";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
-import { makeUrl } from "./utils";
 
 jest.mock("@times-components/button", () => "Button");
 jest.mock("../src/article-list-item", () => ({ id }) => {

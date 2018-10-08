@@ -19,6 +19,3 @@ export const omitNative = new Set([
 ]);
 
 export const omitWeb = new Set(["className", "data-testid", "style"]);
-
-export const makeUrl = ({ slug, shortIdentifier }) =>
-  `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`;

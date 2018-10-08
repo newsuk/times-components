@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { mount } from "enzyme";
+import { makeUrl } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
@@ -11,7 +12,6 @@ import Context from "@times-components/context";
 import articleListFixture from "../../fixtures/articles.json";
 import adConfig from "../../fixtures/article-ad-config.json";
 import ArticleList from "../../src/article-list";
-import { makeUrl } from "../utils";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 

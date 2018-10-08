@@ -2,6 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Context from "@times-components/context";
+import { makeUrl } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
@@ -14,7 +15,7 @@ import { ApolloError } from "apollo-client";
 import "./mocks";
 import ArticleList from "../src/article-list";
 import adConfig from "../fixtures/article-ad-config.json";
-import { omitWeb, makeUrl } from "./utils";
+import { omitWeb } from "./utils";
 
 const omitProps = new Set([
   ...omitWeb,
