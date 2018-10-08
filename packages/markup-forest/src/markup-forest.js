@@ -25,9 +25,9 @@ export const renderTreeAsText = (tree, key = "0") => {
 
   if (attributes && attributes.value) return attributes.value;
 
-  const renderedChildren = children.map((child, index) =>
-    renderTreeAsText(child, `${key}.${index}`)
-  ).join(" ");
+  const renderedChildren = children
+    .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
+    .join(" ");
 
   return renderedChildren;
 };
