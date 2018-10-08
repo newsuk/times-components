@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`paragraph with single drop cap 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    selectable={true}
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 70,
+        "includeFontPadding": false,
+        "lineHeight": 70,
+        "marginRight": 5,
+        "textAlignVertical": "bottom",
+      }
+    }
+  >
+    I
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    selectable={true}
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 17,
+          "fontStyle": "normal",
+          "lineHeight": 26,
+          "marginBottom": 20,
+        },
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+        },
+      ]
+    }
+  >
+    n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    selectable={true}
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 17,
+          "fontStyle": "normal",
+          "lineHeight": 26,
+          "marginBottom": 20,
+        },
+        Object {
+          "width": 730,
+        },
+      ]
+    }
+  >
+    wars, he said later that he had learnt “lessons which I have never forgotten. If, in some respects, they may have left too deep an impression on my mind, the gain was greater than the loss.” The gain was a lifelong conviction that the central aim of domestic policy must be to avoid the horror of mass unemployment. Forget ideological posturing; the job of a responsible Conservative government was to keep people in work.
+  </Text>
+</View>
+`;

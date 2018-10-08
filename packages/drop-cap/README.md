@@ -1,4 +1,4 @@
-# DropCap
+# DropCap (Android Only)
 
 This package provides a paragraph starting with a drop cap letter. In native,
 this is done by measuring the length of the text and splitting it into 3
@@ -46,4 +46,5 @@ https://components.thetimes.co.uk/?knob-Lead%20Asset=true&knob-Size%20of%20ad%20
 
 ## Future
 
-Planning to support complex markups in the paragraph text.
+Planning to support complex markups in the paragraph text. Web and iOS support
+coming soon.
