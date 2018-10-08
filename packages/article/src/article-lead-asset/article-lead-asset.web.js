@@ -24,6 +24,8 @@ const LeadAssetComponent = ({
   if (!leadAsset) {
     return null;
   }
+
+  const { url = null } = displayImage;
   const leadAssetView = isVideo ? (
     <Video
       accountId={leadAsset.brightcoveAccountId}
@@ -31,13 +33,13 @@ const LeadAssetComponent = ({
       paidOnly={leadAsset.paidOnly}
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
-      poster={{ uri: displayImage.url }}
+      poster={{ uri: url }}
       skySports={leadAsset.skySports}
       videoId={leadAsset.brightcoveVideoId}
       width="100%"
     />
   ) : (
-    <Image uri={displayImage.url} />
+    <Image uri={url} />
   );
 
   return (

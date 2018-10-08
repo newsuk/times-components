@@ -1293,10 +1293,40 @@ const defaultLeadAsset = {
   title: "Chris Reynolds Gordon at one of his party venues in London",
   credits: "The credits",
   caption: "Chris Reynolds Gordon at one of his party venues in London",
-  crop: {
+  crop169: {
     ratio: "16:9",
     url:
-      "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
+    __typename: "Crop"
+  },
+  crop32: {
+    ratio: "3:2",
+    url:
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0",
+    __typename: "Crop"
+  },
+  crop1251: {
+    ratio: "1.25:1",
+    url:
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=3560%2C2848%2C356%2C0",
+    __typename: "Crop"
+  },
+  crop11: {
+    ratio: "1:1",
+    url:
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0",
+    __typename: "Crop"
+  },
+  crop45: {
+    ratio: "4:5",
+    url:
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0",
+    __typename: "Crop"
+  },
+  crop23: {
+    ratio: "2:3",
+    url:
+      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0",
     __typename: "Crop"
   },
   __typename: "Image"
