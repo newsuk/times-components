@@ -19,11 +19,11 @@ describe("InlineVideoPlayer", () => {
   const addBrightcoveSDKGlobals = () => {
     window.bc = jest.fn();
     window.videojs = jest.fn().mockImplementation(() => ({
-      ready: jest.fn().mockImplementation(f => f()),
-      on: jest.fn(),
+      contextmenu: jest.fn(),
       dispose: jest.fn(),
+      on: jest.fn(),
       pause: jest.fn(),
-      contextmenu: jest.fn()
+      ready: jest.fn().mockImplementation(f => f())
     }));
   };
 

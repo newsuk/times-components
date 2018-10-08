@@ -22,7 +22,12 @@ const Video = props => {
           <IsPaidSubscriber.Consumer>
             {isPaidSubscriber =>
               isPaidOnly(paidOnly) && !isPaidSubscriber ? (
-                <View style={{ width, height }}>
+                <View
+                  style={{
+                    height,
+                    width
+                  }}
+                >
                   <Image aspectRatio={width / height} uri={poster.uri} />
                   <View style={styles.noSubscriptionWrapper}>
                     <Text style={styles.noSubscriptionMessage}>
