@@ -3,10 +3,9 @@ import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import Ad from "@times-components/ad";
-import DropCapParagraph from "@times-components/drop-cap";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
-import { renderTree, renderTreeAsText } from "@times-components/markup-forest";
+import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
@@ -23,10 +22,6 @@ const ArticleRow = ({
   onTwitterLinkPress,
   onVideoPress
 }) => {
-  if (data.name === "paragraph") {
-    const text = renderTreeAsText(data);
-    return <DropCapParagraph dropCap={text.charAt(0)} text={text.slice(1)} />;
-  }
   return renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {
