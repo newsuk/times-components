@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class RNTextSizeModule extends ReactContextBaseJavaModule {
+public class RNTextSizeModule extends ReactContextBaseJavaModule {
     private static final String TAG = "RNTextSize";
     private static final float SPACING_ADDITION = 0f;
     private static final float SPACING_MULTIPLIER = 1f;
@@ -83,7 +83,6 @@ class RNTextSizeModule extends ReactContextBaseJavaModule {
             result.putDouble("height", minimalHeight(density, includeFontPadding));
             result.putInt("lastLineWidth", 0);
             result.putInt("lineCount", 0);
-            result.putInt("lineEnd", 0);
             promise.resolve(result);
             return;
         }
@@ -161,7 +160,11 @@ class RNTextSizeModule extends ReactContextBaseJavaModule {
             result.putDouble("width", Math.min(rectWidth / density, width));
             result.putDouble("height", layout.getHeight() / density);
             result.putInt("lineCount", lineCount);
-            result.putInt("lineEnd", layout.getLineVisibleEnd(2));
+
+            Integer lineEndForLineNo = conf.getIntOrNull("lineEndForLineNo");
+            if (lineEndForLineNo != null) {
+                result.putInt("lineEnd", layout.getLineVisibleEnd(lineEndForLineNo));
+            }
 
             promise.resolve(result);
         } catch (Exception e) {
@@ -248,7 +251,7 @@ class RNTextSizeModule extends ReactContextBaseJavaModule {
 
     /**
      * See https://material.io/design/typography/#type-scale
-     * <p>
+     *
      * TODO:
      * Send PR to RN for supporting textTransform, like the iOS one in
      * https://github.com/facebook/react-native/commit/8621d4b79731e13a0c6e397abd93c193c6219000
@@ -369,9 +372,8 @@ class RNTextSizeModule extends ReactContextBaseJavaModule {
 
     /**
      * This is for 'fontFromFontStyle', makes the minimal info required.
-     *
-     * @param suffix        The font variant
-     * @param fontSize      Font size in SP
+     * @param suffix The font variant
+     * @param fontSize Font size in SP
      * @param letterSpacing Sugest this to user
      * @return map with specs
      */
@@ -431,7 +433,6 @@ class RNTextSizeModule extends ReactContextBaseJavaModule {
 
     /**
      * Set the font names in assets/fonts into the target array.
-     *
      * @param destArr Target
      */
     private void getFontsInAssets(@NonNull WritableArray destArr) {

@@ -19,7 +19,6 @@ import {
 } from "./showcase-helper";
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
-import DropCapParagraph from "./src/article-body/drop-cap-paragraph";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -276,32 +275,6 @@ export default {
           </StorybookProvider>
         );
       }
-    },
-    {
-      type: "story",
-      name: "DropCap M",
-      component: () => (
-        <DropCapParagraph>
-          immm mmm mmmmmmm mmm mmmmmmmm mmm mm mm mmmmmm mmmm mmmmm mmm mmm
-          mmmmmmmm mmmmm mmm mm mmm mmmm mmmmmmm mmmmmmmmmm mmm mmm mm mmm mmmm
-          mmmm
-        </DropCapParagraph>
-      )
-    },
-    {
-      type: "story",
-      name: "DropCap I",
-      component: () => (
-        <DropCapParagraph>
-          Qiii iii iiiiiii iii iiiiiiii iii ii ii iiiiii iiii iiiii iii iii
-          iiiiiiii iiiii iii ii iii iiii iiiiiii iiiiiiiiii iiiii iii ii ii
-          iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
-          iiiiii iiiii iii ii ii iiiiii iii iiiiiii iiiiiiiii iiiiii iii ii ii
-          iiiiii iiiii iii ii ii iiiiiiii ii ii iiiiii iiiii iii ii ii iiiiii
-          iii iiiiiii iiiiiiiii iiiiii iii ii ii iiiiii iiiii iii ii ii iiiiii
-          iii iiiiiii iiiiiiiii iiiiii iii ii ii iiiiii iiiii iii ii ii iiiiii
-        </DropCapParagraph>
-      )
     }
   ]
 };

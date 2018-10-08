@@ -3,6 +3,7 @@ import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import Ad from "@times-components/ad";
+import DropCapParagraph from "@times-components/drop-cap";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree, renderTreeAsText } from "@times-components/markup-forest";
@@ -13,7 +14,6 @@ import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
-import DropCapParagraph from "./drop-cap-paragraph";
 
 const styles = styleFactory();
 

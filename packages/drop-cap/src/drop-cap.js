@@ -3,7 +3,7 @@ import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import styleguide from "@times-components/styleguide";
-import styleFactory from "../styles/article-body";
+import styleFactory from "./styles";
 
 const { colours } = styleguide();
 const { RNTextSize } = NativeModules;
@@ -34,7 +34,8 @@ class DropCapParagraph extends Component {
           text: children.slice(dropCapLength),
           width: screenWidth - margins - width,
           fontSize,
-          fontFamily: "TimesDigitalW04"
+          fontFamily: "TimesDigitalW04",
+          lineEndForLineNo: 2
         })
       )
       .then(({ lineEnd }) => {
@@ -54,7 +55,6 @@ class DropCapParagraph extends Component {
               style={[
                 stylesScaled.articleMainContentRow,
                 {
-                  backgroundColor: "blue",
                   flexDirection: "row",
                   flexWrap: "wrap"
                 }
@@ -63,7 +63,6 @@ class DropCapParagraph extends Component {
               <Text
                 selectable
                 style={{
-                  backgroundColor: "red",
                   fontSize: dropCapSize,
                   fontFamily: "TimesDigitalW04",
                   lineHeight: dropCapSize,
@@ -82,7 +81,6 @@ class DropCapParagraph extends Component {
                   {
                     flex: 1,
                     fontSize,
-                    backgroundColor: "green",
                     marginBottom: 0
                   }
                 ]}
@@ -95,7 +93,6 @@ class DropCapParagraph extends Component {
                 style={[
                   stylesScaled.articleTextElement,
                   {
-                    backgroundColor: "yellow",
                     fontSize,
                     width: screenWidth - 20
                   }
