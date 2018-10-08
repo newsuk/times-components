@@ -24,7 +24,8 @@ const ArticleRow = ({
   onVideoPress
 }) => {
   if (data.name === "paragraph") {
-    return <DropCapParagraph>{renderTreeAsText(data)}</DropCapParagraph>;
+    const text = renderTreeAsText(data);
+    return <DropCapParagraph dropCap={text.charAt(0)} text={text.slice(1)} />;
   }
   return renderTree(data, {
     ...coreRenderers,

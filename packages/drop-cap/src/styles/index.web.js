@@ -1,12 +1,11 @@
-import { StyleSheet } from "react-native";
 import sharedStylesFactory from "./shared";
 
 const sharedStyles = sharedStylesFactory();
 
-export default StyleSheet.create({
+export default {
   ...sharedStyles,
   articleTextElement: {
     ...sharedStyles.articleTextElement,
     marginTop: 0
   }
-});
+};

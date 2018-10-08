@@ -12,8 +12,19 @@ const sharedStyles = scale => {
       color: colours.functional.primary
     },
     articleMainContentRow: {
+      flexDirection: "row",
+      flexWrap: "wrap",
       paddingLeft: spacing(2),
       paddingRight: spacing(2)
+    },
+    dropCapTextElement: {
+      fontSize: 70,
+      fontFamily: "TimesDigitalW04",
+      lineHeight: 70,
+      includeFontPadding: false,
+      textAlignVertical: "bottom",
+      marginRight: spacing(1),
+      color: colours.functional.primary
     }
   };
 };

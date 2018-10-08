@@ -2,121 +2,111 @@ import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import styleguide from "@times-components/styleguide";
 import styleFactory from "./styles";
 
-const { colours } = styleguide();
 const { RNTextSize } = NativeModules;
-
-const dropCapSize = 67;
-const fontSize = 17;
 
 class DropCapParagraph extends Component {
   constructor(props) {
     super(props);
-    const { children } = this.props;
-    const screenWidth = Dimensions.get("window").width;
     this.state = {
       slicePoint: 0,
-      screenWidth
+      screenWidth: Dimensions.get("window").width
     };
-    const margins = 25;
-    const dropCapLength = 1;
+  }
+
+  measureTextBoxes(stylesScaled, dropCap, text) {
+    const { screenWidth } = this.state;
+
+    const {
+      dropCapTextElement: { fontSize: dropCapSize, marginRight: dropCapRight },
+      articleTextElement: { fontFamily, fontSize },
+      articleMainContentRow: { paddingLeft, paddingRight }
+    } = stylesScaled;
+
+    const margins = paddingLeft + paddingRight + dropCapRight;
 
     RNTextSize.measure({
-      text: children.slice(0, dropCapLength),
+      text: dropCap,
       width: screenWidth - margins,
       fontSize: dropCapSize,
-      fontFamily: "TimesDigitalW04"
+      fontFamily
     })
       .then(({ width }) =>
         RNTextSize.measure({
-          text: children.slice(dropCapLength),
+          text,
           width: screenWidth - margins - width,
           fontSize,
-          fontFamily: "TimesDigitalW04",
+          fontFamily,
           lineEndForLineNo: 2
         })
       )
-      .then(({ lineEnd }) => {
-        this.setState({ slicePoint: lineEnd + dropCapLength, screenWidth });
+      .then(({ lineEnd: slicePoint }) => {
+        this.setState({ slicePoint, screenWidth });
       });
   }
 
-  renderParagraph(text) {
+  renderParagraph(stylesScaled, dropCap, text) {
     const { screenWidth, slicePoint } = this.state;
+    const {
+      articleMainContentRow: { paddingLeft, paddingRight }
+    } = stylesScaled;
+
+    return (
+      <View style={stylesScaled.articleMainContentRow}>
+        <Text selectable style={stylesScaled.dropCapTextElement}>
+          {dropCap}
+        </Text>
+        <Text
+          selectable
+          style={[
+            stylesScaled.articleTextElement,
+            {
+              flex: 1,
+              marginBottom: 0
+            }
+          ]}
+        >
+          {text.slice(0, slicePoint)}
+        </Text>
+
+        <Text
+          selectable
+          style={[
+            stylesScaled.articleTextElement,
+            {
+              width: screenWidth - paddingLeft - paddingRight
+            }
+          ]}
+        >
+          {text.slice(slicePoint + 1)}
+        </Text>
+      </View>
+    );
+  }
+
+  render() {
+    const { dropCap, text } = this.props;
+    const { slicePoint } = this.state;
 
     return (
       <Context.Consumer>
         {({ theme: { scale } }) => {
           const stylesScaled = styleFactory(scale);
-          return (
-            <View
-              style={[
-                stylesScaled.articleMainContentRow,
-                {
-                  flexDirection: "row",
-                  flexWrap: "wrap"
-                }
-              ]}
-            >
-              <Text
-                selectable
-                style={{
-                  fontSize: dropCapSize,
-                  fontFamily: "TimesDigitalW04",
-                  lineHeight: dropCapSize,
-                  includeFontPadding: false,
-                  textAlignVertical: "bottom",
-                  marginRight: 5,
-                  color: colours.functional.primary
-                }}
-              >
-                {text.charAt(0)}
-              </Text>
-              <Text
-                selectable
-                style={[
-                  stylesScaled.articleTextElement,
-                  {
-                    flex: 1,
-                    fontSize,
-                    marginBottom: 0
-                  }
-                ]}
-              >
-                {text.slice(1, slicePoint)}
-              </Text>
-
-              <Text
-                selectable
-                style={[
-                  stylesScaled.articleTextElement,
-                  {
-                    fontSize,
-                    width: screenWidth - 20
-                  }
-                ]}
-              >
-                {text.slice(slicePoint + 1)}
-              </Text>
-            </View>
-          );
+          if (slicePoint > 0) {
+            return this.renderParagraph(stylesScaled, dropCap, text);
+          }
+          this.measureTextBoxes(stylesScaled, dropCap, text);
+          return null;
         }}
       </Context.Consumer>
     );
   }
-
-  render() {
-    const { children } = this.props;
-    const { slicePoint } = this.state;
-
-    return slicePoint > 0 ? this.renderParagraph(children) : null;
-  }
 }
 
 DropCapParagraph.propTypes = {
-  children: PropTypes.string.isRequired
+  dropCap: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 };
 
 export default DropCapParagraph;

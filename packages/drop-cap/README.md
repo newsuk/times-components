@@ -1,8 +1,10 @@
 # DropCap
 
-This package provides a paragraph starting with a drop cap letter. In native, this is done by measuring the length of the text and splitting it into 3 textboxes. 
+This package provides a paragraph starting with a drop cap letter. In native,
+this is done by measuring the length of the text and splitting it into 3
+textboxes.
 
-Currently, this component only supports text-only paragraphs. 
+Currently, this component only supports text-only paragraphs.
 
 ## Contributing
 
