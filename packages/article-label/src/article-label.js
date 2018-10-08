@@ -8,8 +8,8 @@ const ArticleLabel = ({ color, title }) => (
 );
 
 ArticleLabel.propTypes = {
-  title: PropTypes.string.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  title: PropTypes.string.isRequired
 };
 
 ArticleLabel.defaultProps = {
