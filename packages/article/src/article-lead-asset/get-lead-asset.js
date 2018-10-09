@@ -1,4 +1,4 @@
-import { getStandardTemplateCrop } from "./crop-config";
+import getStandardTemplateCrop from "./crop-config";
 
 export const defaultAsset = {
   isVideo: false,
