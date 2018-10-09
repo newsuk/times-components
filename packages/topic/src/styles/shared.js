@@ -6,12 +6,12 @@ const styles = {
     alignItems: "center"
   },
   description: {
-    color: colours.functional.primary,
-    textAlign: "center",
     ...fontFactory({
       font: "body",
       fontSize: "tertiary"
-    })
+    }),
+    color: colours.functional.primary,
+    textAlign: "center"
   },
   divider: {
     borderStyle: "solid",

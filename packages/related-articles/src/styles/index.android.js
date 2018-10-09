@@ -3,6 +3,7 @@ import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
+  ...sharedStyles,
   headline: {
     ...sharedStyles.headline,
     marginTop: spacing(-1)
@@ -19,8 +20,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     ...sharedStyles.titleContainer,
     padding: spacing(3)
-  },
-  ...sharedStyles
+  }
 });
 
 export default styles;

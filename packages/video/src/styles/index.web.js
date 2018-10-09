@@ -3,6 +3,7 @@ import { fonts, spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
+  ...sharedStyles,
   background: {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.6)",
@@ -26,8 +27,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing(2),
     textAlign: "center",
     width: "auto"
-  },
-  ...sharedStyles
+  }
 });
 
 export default styles;

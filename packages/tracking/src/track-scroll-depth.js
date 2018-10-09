@@ -51,9 +51,9 @@ export default (
       );
 
       this.onChildView({
+        ...childData,
         index,
-        total: this.childList.length,
-        ...childData
+        total: this.childList.length
       });
     }
 
