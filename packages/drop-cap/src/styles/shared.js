@@ -18,12 +18,13 @@ const sharedStyles = scale => {
       paddingRight: spacing(2)
     },
     dropCapTextElement: {
-      fontSize: 70,
-      fontFamily: "TimesDigitalW04",
-      lineHeight: 70,
-      includeFontPadding: false,
-      textAlignVertical: "bottom",
+      ...fontFactory({
+        font: "body",
+        fontSize: "dropCap"
+      }),
       marginRight: spacing(1),
+      marginTop: -10,
+      marginBottom: -10,
       color: colours.functional.primary
     }
   };
