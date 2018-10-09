@@ -20,11 +20,11 @@ exports[`paragraph with single drop cap 1`] = `
       Object {
         "color": "#333333",
         "fontFamily": "TimesDigitalW04",
-        "fontSize": 70,
-        "includeFontPadding": false,
-        "lineHeight": 70,
+        "fontSize": 80,
+        "lineHeight": undefined,
+        "marginBottom": -30,
         "marginRight": 5,
-        "textAlignVertical": "bottom",
+        "marginTop": -10,
       }
     }
   >
