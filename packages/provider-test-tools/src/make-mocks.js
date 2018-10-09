@@ -9,7 +9,6 @@ export default ({ data: { __schema } }) => (
   const schemaSDL = printSchema(buildClientSchema({ __schema }));
 
   const schema = makeExecutableSchema({
-    typeDefs: schemaSDL,
     resolvers: {
       Query: {
         ...defaultValues,
@@ -18,16 +17,17 @@ export default ({ data: { __schema } }) => (
     },
     resolverValidationOptions: {
       requireResolversForResolveType: false
-    }
+    },
+    typeDefs: schemaSDL
   });
 
   addMockFunctionsToSchema({
-    schema,
     mocks: {
       ...defaultTypes,
       ...types
     },
-    preserveResolvers: true
+    preserveResolvers: true,
+    schema
   });
 
   return graphql(schema, print(query), null, null, variables);

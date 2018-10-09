@@ -28,20 +28,18 @@ const createPagination = ({ decorateAction, overrideProps = {} }) => {
 };
 
 const pagination = {
-  name: "Composed/Pagination",
   children: [
     {
-      type: "decorator",
-      decorator: LateralSpacingDecorator
+      decorator: LateralSpacingDecorator,
+      type: "decorator"
     },
     {
-      type: "story",
+      component: (_, { decorateAction }) =>
+        createPagination({ decorateAction }),
       name: "First page",
-      component: (_, { decorateAction }) => createPagination({ decorateAction })
+      type: "story"
     },
     {
-      type: "story",
-      name: "Another page",
       component: (_, { decorateAction }) => {
         const overrideProps = {
           onNext: preventDefaultedAction(decorateAction)("another-page-next"),
@@ -50,11 +48,11 @@ const pagination = {
         };
 
         return createPagination({ decorateAction, overrideProps });
-      }
+      },
+      name: "Another page",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Last page",
       component: (_, { decorateAction }) => {
         const overrideProps = {
           onNext: preventDefaultedAction(decorateAction)("last-page-next"),
@@ -63,22 +61,22 @@ const pagination = {
         };
 
         return createPagination({ decorateAction, overrideProps });
-      }
+      },
+      name: "Last page",
+      type: "story"
     },
     {
-      type: "story",
-      name: "First page without results information",
       component: (_, { decorateAction }) => {
         const overrideProps = {
           hideResults: true
         };
 
         return createPagination({ decorateAction, overrideProps });
-      }
+      },
+      name: "First page without results information",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Another page without results information",
       component: (_, { decorateAction }) => {
         {
           const overrideProps = {
@@ -94,11 +92,11 @@ const pagination = {
 
           return createPagination({ decorateAction, overrideProps });
         }
-      }
+      },
+      name: "Another page without results information",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Last page without results information",
       component: (_, { decorateAction }) => {
         {
           const overrideProps = {
@@ -114,11 +112,11 @@ const pagination = {
 
           return createPagination({ decorateAction, overrideProps });
         }
-      }
+      },
+      name: "Last page without results information",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Tracking",
       component: (_, { decorateAction }) => {
         const PaginationWithTrackingContext = withTrackingContext(Pagination, {
           trackingObjectName: "Story"
@@ -135,29 +133,32 @@ const pagination = {
             page={2}
           />
         );
-      }
+      },
+      name: "Tracking",
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Pagination"
 };
 
 export const icons = {
-  name: "Composed/Pagination/Icons",
   children: [
     {
-      type: "decorator",
-      decorator: LateralSpacingDecorator
+      decorator: LateralSpacingDecorator,
+      type: "decorator"
     },
     {
-      type: "story",
+      component: () => <PreviousPageIcon label="Previous Page" />,
       name: "previous page icon",
-      component: () => <PreviousPageIcon label="Previous Page" />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <NextPageIcon label="Next Page" />,
       name: "next page icon",
-      component: () => <NextPageIcon label="Next Page" />
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Pagination/Icons"
 };
 
 export default pagination;

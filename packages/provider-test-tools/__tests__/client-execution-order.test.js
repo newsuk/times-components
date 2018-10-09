@@ -5,8 +5,8 @@ function AuthorQueryResolver({ variables }) {
   return {
     data: {
       author: {
-        name: variables.slug,
-        __typename: "Author"
+        __typename: "Author",
+        name: variables.slug
       }
     }
   };

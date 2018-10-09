@@ -6,8 +6,8 @@ function AuthorQueryResolver({ variables }) {
   return {
     data: {
       author: {
-        name: variables.slug,
-        __typename: "Author"
+        __typename: "Author",
+        name: variables.slug
       }
     }
   };
@@ -61,9 +61,13 @@ describe("provider execution order tests", () => {
     await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
     expect(getRenderedQueries(link).length).toBe(3);
     expect(getRenderedQueries(link)[2]).toMatchObject({
+      author: {
+        name: "2"
+      },
       loading: false,
-      variables: { slug: "2" },
-      author: { name: "2" }
+      variables: {
+        slug: "2"
+      }
     });
   });
 
@@ -90,9 +94,13 @@ describe("provider execution order tests", () => {
         variables: { slug: "2" }
       },
       {
+        author: {
+          name: "2"
+        },
         loading: false,
-        variables: { slug: "2" },
-        author: { name: "2" }
+        variables: {
+          slug: "2"
+        }
       }
     ]);
   });

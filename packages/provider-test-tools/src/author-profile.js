@@ -4,32 +4,32 @@ import generateQueries from "./generate-queries";
 
 const biography = [
   {
-    name: "text",
     attributes: {
       value: "Deborah Haynes is the defence editor at "
     },
-    children: []
+    children: [],
+    name: "text"
   },
   {
-    name: "italic",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "The Times"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "italic"
   },
   {
-    name: "text",
     attributes: {
       value:
         ", covering the most important defence & security news in the UK and around the world."
     },
-    children: []
+    children: [],
+    name: "text"
   }
 ];
 
@@ -88,22 +88,10 @@ export default ({
     let imageIndex = (iteration - 1) * pageSize;
 
     return {
-      error: articleError(iteration),
       defaults: {
-        values: {
-          author: () => ({
-            articles: {
-              count,
-              list(_, { first }) {
-                return new MockList(Math.min(count, first));
-              }
-            }
-          })
-        },
         types: {
           Article: () => {
             itemIndex += 1;
-
             return makeItem(
               {
                 hasVideo: false,
@@ -126,7 +114,6 @@ export default ({
           }),
           Image: () => {
             imageIndex += 1;
-
             return {
               __typename: "Image",
               title: `Some title ${imageIndex}`
@@ -135,8 +122,20 @@ export default ({
           Media: () => ({
             __typename: "Image"
           })
+        },
+        values: {
+          author: () => ({
+            articles: {
+              count,
+
+              list(_, { first }) {
+                return new MockList(Math.min(count, first));
+              }
+            }
+          })
         }
       },
+      error: articleError(iteration),
       query: articleQuery,
       variables: articleVariables(iteration)
     };

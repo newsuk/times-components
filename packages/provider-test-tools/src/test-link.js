@@ -48,21 +48,38 @@ export default class TestLink extends ApolloLink {
   request(operation) {
     this.blocked.push(createFuture());
     const { promise, resolve } = this.blocked[this.blocked.length - 1];
-    this.operations.push({ operation, resolve, promise });
-    this.events.push({ type: "request", operation });
+    this.operations.push({
+      operation,
+      promise,
+      resolve
+    });
+    this.events.push({
+      operation,
+      type: "request"
+    });
     return new Observable(observer => {
       Promise.resolve(this.onRequest(operation))
         .then(async data => {
-          this.events.push({ type: "resolving", operation });
+          this.events.push({
+            operation,
+            type: "resolving"
+          });
           await promise();
-          this.events.push({ type: "resolved", operation, data });
+          this.events.push({
+            data,
+            operation,
+            type: "resolved"
+          });
           if (!observer.closed) {
             observer.next(data);
             observer.complete();
           }
         })
         .catch(e => {
-          this.events.push({ type: "error", error: e });
+          this.events.push({
+            error: e,
+            type: "error"
+          });
           if (!observer.closed) {
             observer.error(e);
           }

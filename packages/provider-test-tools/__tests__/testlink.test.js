@@ -20,8 +20,8 @@ describe("TestLink tests", () => {
         type: "request"
       },
       {
-        type: "error",
-        error: new Error("network error")
+        error: new Error("network error"),
+        type: "error"
       }
     ]);
   });
