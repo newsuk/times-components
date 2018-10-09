@@ -62,7 +62,13 @@ LeadAssetComponent.propTypes = {
   leadAsset: PropTypes.shape({
     caption: PropTypes.string,
     credits: PropTypes.string,
-    crop: cropPropTypes
+    crop: cropPropTypes,
+    crop169: cropPropTypes,
+    crop32: cropPropTypes,
+    crop1251: cropPropTypes,
+    crop11: cropPropTypes,
+    crop45: cropPropTypes,
+    crop23: cropPropTypes
   }),
   isVideo: PropTypes.bool,
   aspectRatio: PropTypes.string,
