@@ -463,19 +463,7 @@ const negativeTests = [
         />
       );
 
-      const textNodes = testInstance.root.findAll(node => {
-        if (typeof node.type === "string") {
-          return (
-            node.type === "Text" &&
-            typeof node.props.children === "string" &&
-            node.props.children === "Some Standfirst"
-          );
-        }
-
-        return false;
-      });
-
-      expect(textNodes).toEqual([]);
+      expect(testInstance).toMatchSnapshot();
     }
   }
 ];

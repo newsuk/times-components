@@ -1,4 +1,4 @@
-import { defaultOrdering } from "./crop-config";
+import { getStandardTemplateCrop } from "./crop-config";
 
 export const defaultAsset = {
   isVideo: false,
@@ -14,7 +14,7 @@ export default function getLeadAsset({ leadAsset }) {
   const isVideo = leadAsset.__typename === "Video";
   const displayImage = isVideo
     ? leadAsset.posterImage.crop
-    : defaultOrdering(leadAsset);
+    : getStandardTemplateCrop(leadAsset);
 
   const aspectRatio = displayImage.ratio;
 

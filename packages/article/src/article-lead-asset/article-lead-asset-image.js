@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ModalImage } from "@times-components/image";
 import cropPropTypes from "./crop-prop-types";
-import { defaultOrdering } from "./crop-config";
+import { getStandardTemplateCrop } from "./crop-config";
 
 const ArticleLeadAssetImage = ({
   caption,
@@ -14,7 +14,7 @@ const ArticleLeadAssetImage = ({
   crop45,
   crop23
 }) => {
-  const crop = defaultOrdering({
+  const crop = getStandardTemplateCrop({
     crop169,
     crop32,
     crop1251,
@@ -39,17 +39,23 @@ const ArticleLeadAssetImage = ({
 ArticleLeadAssetImage.propTypes = {
   caption: PropTypes.string,
   credits: PropTypes.string,
-  crop169: cropPropTypes.isRequired,
-  crop32: cropPropTypes.isRequired,
-  crop1251: cropPropTypes.isRequired,
-  crop11: cropPropTypes.isRequired,
-  crop45: cropPropTypes.isRequired,
-  crop23: cropPropTypes.isRequired
+  crop169: cropPropTypes,
+  crop32: cropPropTypes,
+  crop1251: cropPropTypes,
+  crop11: cropPropTypes,
+  crop45: cropPropTypes,
+  crop23: cropPropTypes
 };
 
 ArticleLeadAssetImage.defaultProps = {
   caption: null,
-  credits: null
+  credits: null,
+  crop169: null,
+  crop32: null,
+  crop1251: null,
+  crop11: null,
+  crop45: null,
+  crop23: null
 };
 
 export default ArticleLeadAssetImage;

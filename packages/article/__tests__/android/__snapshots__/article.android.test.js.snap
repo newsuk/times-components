@@ -601,3 +601,162 @@ exports[`8. an article that moves to a loading state 2`] = `
   />
 </View>
 `;
+
+exports[`14. an article with missing 16:9 lead asset crop 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.5}
+          caption="Some Caption"
+          credits="Some Credits"
+          uri="https://crop32.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <ArticleLabel
+            color="#333333"
+            title="Some Label"
+          />
+        </View>
+        <Text
+          selectable={true}
+        >
+          Some Headline
+        </Text>
+        <Text
+          accessibilityRole="heading"
+          aria-level="2"
+        >
+          Some Standfirst
+        </Text>
+        <View>
+          <View>
+            <NewArticleFlag />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+              color="#333333"
+            />
+          </Text>
+        </View>
+        <View>
+          <Text>
+            Friday March 13 2015, 06:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text
+          selectable={true}
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleTopics
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <RelatedArticles
+        slice={
+          Object {
+            "__typename": "StandardSlice",
+            "items": Array [
+              Object {
+                "article": Object {
+                  "__typename": "Article",
+                  "byline": Array [],
+                  "hasVideo": false,
+                  "headline": "RA Headline",
+                  "id": "ra-1",
+                  "label": "RA Label",
+                  "leadAsset": Object {
+                    "__typename": "Image",
+                    "crop169": Object {
+                      "__typename": "Crop",
+                      "url": "https://racrop169.io",
+                    },
+                    "crop32": Object {
+                      "__typename": "Crop",
+                      "url": "https://racrop32.io",
+                    },
+                    "title": "RA Title",
+                  },
+                  "publicationName": "TIMES",
+                  "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "shortHeadline": "Headline",
+                  "summary105": Array [],
+                  "summary125": Array [],
+                  "summary145": Array [],
+                  "summary160": Array [],
+                  "summary175": Array [],
+                  "summary225": Array [],
+                  "url": "https://ra.io",
+                },
+              },
+            ],
+            "sliceName": "StandardSlice",
+          }
+        }
+      />
+    </View>
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -1,4 +1,4 @@
-export const defaultOrdering = ({
+export const getStandardTemplateCrop = ({
   crop169,
   crop32,
   crop1251,
@@ -7,5 +7,5 @@ export const defaultOrdering = ({
   crop23
 }) => crop169 || crop32 || crop1251 || crop11 || crop45 || crop23;
 
-export const magazineOrdering = leadAsset =>
-  leadAsset.crop2251 || defaultOrdering(leadAsset);
+export const getMagazineTemplateCrop = leadAsset =>
+  leadAsset.crop2251 || getStandardTemplateCrop(leadAsset);
