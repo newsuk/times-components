@@ -17,15 +17,20 @@ exports[`paragraph with single drop cap 1`] = `
     ellipsizeMode="tail"
     selectable={true}
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 80,
-        "lineHeight": undefined,
-        "marginBottom": -30,
-        "marginRight": 5,
-        "marginTop": -10,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 80,
+          "lineHeight": undefined,
+          "marginBottom": -30,
+          "marginRight": 5,
+          "marginTop": -10,
+        },
+        Object {
+          "color": "black",
+        },
+      ]
     }
   >
     I

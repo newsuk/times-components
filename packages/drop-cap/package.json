@@ -36,7 +36,8 @@
   "dependencies": {
     "prop-types": "15.6.2",
     "@times-components/context": "0.4.29",
-    "@times-components/styleguide": "3.4.0"
+    "@times-components/styleguide": "3.4.0",
+    "lodash.invert": "4.3.0"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

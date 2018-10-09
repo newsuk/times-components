@@ -50,7 +50,7 @@ class DropCapParagraph extends Component {
       });
   }
 
-  renderParagraph(stylesScaled, dropCap, text) {
+  renderParagraph(colour, stylesScaled, dropCap, text) {
     const { screenWidth, slicePoint } = this.state;
     const {
       articleMainContentRow: { paddingLeft, paddingRight }
@@ -58,7 +58,15 @@ class DropCapParagraph extends Component {
 
     return (
       <View style={stylesScaled.articleMainContentRow}>
-        <Text selectable style={stylesScaled.dropCapTextElement}>
+        <Text
+          selectable
+          style={[
+            stylesScaled.dropCapTextElement,
+            {
+              color: colour
+            }
+          ]}
+        >
           {dropCap}
         </Text>
         <Text
@@ -90,7 +98,7 @@ class DropCapParagraph extends Component {
   }
 
   render() {
-    const { dropCap, text } = this.props;
+    const { colour, dropCap, text } = this.props;
     const { measuredForScale } = this.state;
 
     return (
@@ -98,7 +106,7 @@ class DropCapParagraph extends Component {
         {({ theme: { scale } }) => {
           const stylesScaled = styleFactory(scale);
           if (measuredForScale === scale) {
-            return this.renderParagraph(stylesScaled, dropCap, text);
+            return this.renderParagraph(colour, stylesScaled, dropCap, text);
           }
           this.measureTextBoxes(stylesScaled, dropCap, text, scale);
           return null;
@@ -109,8 +117,13 @@ class DropCapParagraph extends Component {
 }
 
 DropCapParagraph.propTypes = {
+  colour: PropTypes.string,
   dropCap: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
+};
+
+DropCapParagraph.defaultProps = {
+  colour: "black"
 };
 
 export default DropCapParagraph;
