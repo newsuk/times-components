@@ -437,6 +437,46 @@ const negativeTests = [
 
       expect(textNodes).toEqual([]);
     }
+  },
+  {
+    name: "an article with missing 16:9 lead asset crop",
+    test() {
+      const testInstance = TestRenderer.create(
+        <Article
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={articleFixture({
+            ...testFixture,
+            leadAsset: {
+              ...testFixture.leadAsset,
+              crop169: null
+            }
+          })}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      const textNodes = testInstance.root.findAll(node => {
+        if (typeof node.type === "string") {
+          return (
+            node.type === "Text" &&
+            typeof node.props.children === "string" &&
+            node.props.children === "Some Standfirst"
+          );
+        }
+
+        return false;
+      });
+
+      expect(textNodes).toEqual([]);
+    }
   }
 ];
 

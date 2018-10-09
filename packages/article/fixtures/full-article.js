@@ -2055,38 +2055,32 @@ export const testFixture = {
     caption: "Some Caption",
     crop169: {
       ratio: "16:9",
-      url:
-        "https://crop169.io",
+      url: "https://crop169.io",
       __typename: "Crop"
     },
     crop32: {
       ratio: "3:2",
-      url:
-        "https://crop32.io",
+      url: "https://crop32.io",
       __typename: "Crop"
     },
     crop1251: {
       ratio: "1.25:1",
-      url:
-        "https://crop1251.io",
+      url: "https://crop1251.io",
       __typename: "Crop"
     },
     crop11: {
       ratio: "1:1",
-      url:
-        "https://crop11.io",
+      url: "https://crop11.io",
       __typename: "Crop"
     },
     crop45: {
       ratio: "4:5",
-      url:
-        "https://crop45.io",
+      url: "https://crop45.io",
       __typename: "Crop"
     },
     crop23: {
       ratio: "2:3",
-      url:
-        "https://crop23.io",
+      url: "https://crop23.io",
       __typename: "Crop"
     },
     __typename: "Image"
