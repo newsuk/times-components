@@ -11,16 +11,16 @@ const styles = {
     paddingBottom: 2
   },
   title: {
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMetaMobile"
+    }),
     fontWeight: "400",
     letterSpacing: 1.2,
     marginLeft: 5,
     padding: 0,
     position: "relative",
-    top: 2,
-    ...fontFactory({
-      font: "supporting",
-      fontSize: "cardMetaMobile"
-    })
+    top: 2
   }
 };
 

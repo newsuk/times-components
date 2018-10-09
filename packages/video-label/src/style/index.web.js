@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
+  ...sharedStyles,
   container: {
     ...sharedStyles.container,
     marginBottom: 3
@@ -13,8 +14,7 @@ const styles = StyleSheet.create({
   title: {
     ...sharedStyles.title,
     lineHeight: 11
-  },
-  ...sharedStyles
+  }
 });
 
 export default styles;
