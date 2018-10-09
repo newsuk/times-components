@@ -16,39 +16,47 @@ exports[`1. paidonly video for unpaid users 1`] = `
 
 exports[`2. paidonly video for paid users 1`] = `
 <div>
-  <video
-    controls={true}
-    id="[video id]-[account id]-1"
-    poster="fa3ca0da118e3184f45765fbc02fb72f"
-  />
+  <div>
+    <video
+      controls={true}
+      id="[video id]-[account id]-1"
+      poster="fa3ca0da118e3184f45765fbc02fb72f"
+    />
+  </div>
 </div>
 `;
 
 exports[`3. non-paidonly video for unpaid users 1`] = `
 <div>
-  <video
-    controls={true}
-    id="[video id]-[account id]-2"
-    poster="fa3ca0da118e3184f45765fbc02fb72f"
-  />
+  <div>
+    <video
+      controls={true}
+      id="[video id]-[account id]-2"
+      poster="fa3ca0da118e3184f45765fbc02fb72f"
+    />
+  </div>
 </div>
 `;
 
 exports[`4. non-paidonly video for paid users 1`] = `
 <div>
-  <video
-    controls={true}
-    id="[video id]-[account id]-3"
-    poster="fa3ca0da118e3184f45765fbc02fb72f"
-  />
+  <div>
+    <video
+      controls={true}
+      id="[video id]-[account id]-3"
+      poster="fa3ca0da118e3184f45765fbc02fb72f"
+    />
+  </div>
 </div>
 `;
 
 exports[`5. video without a poster image 1`] = `
 <div>
-  <video
-    controls={true}
-    id="[video id]-[account id]-4"
-  />
+  <div>
+    <video
+      controls={true}
+      id="[video id]-[account id]-4"
+    />
+  </div>
 </div>
 `;

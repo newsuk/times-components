@@ -12,6 +12,7 @@ const fontSizes = {
   credits: 9,
   dropCap: 80,
   headline: 30,
+  imageOverlayTextSmall: 11,
   infoSubText: 15,
   infoTitle: 22,
   leadHeadline: 26,

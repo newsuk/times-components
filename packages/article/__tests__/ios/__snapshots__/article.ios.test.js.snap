@@ -156,6 +156,7 @@ exports[`2. a full article with an image as the lead asset 1`] = `
               "uri": "https://image.io",
             }
           }
+          skySports={false}
           videoId="4084164751001"
           width={750}
         />

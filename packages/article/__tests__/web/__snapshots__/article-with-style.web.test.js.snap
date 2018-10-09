@@ -377,21 +377,24 @@ exports[`full article with style 1`] = `
     "marginBottom": 0,
   },
   "IS10": {
+    "position": "relative",
+  },
+  "IS11": {
     "height": "100%",
     "width": "100%",
   },
-  "IS11": {
+  "IS12": {
     "height": "100%",
     "position": "absolute",
     "width": "100%",
   },
-  "IS12": {
+  "IS13": {
     "paddingBottom": "56.25%",
   },
-  "IS13": {
+  "IS14": {
     "margin": 0,
   },
-  "IS14": {
+  "IS15": {
     "borderBottomColor": "#DBDBDB",
     "borderBottomWidth": 1,
     "borderTopColor": "#DBDBDB",
@@ -401,7 +404,7 @@ exports[`full article with style 1`] = `
     "paddingHorizontal": "10px",
     "paddingVertical": "10px",
   },
-  "IS15": {
+  "IS16": {
     "borderTopColor": "#DBDBDB",
     "borderTopWidth": 1,
   },
@@ -690,20 +693,24 @@ exports[`full article with style 1`] = `
         className="c13 S1"
       >
         <figure
-          className="IS13"
+          className="IS14"
         >
           <div
-            className="IS12 S10"
+            className="IS13 S10"
           >
             <div
-              className="IS11 S1"
+              className="IS12 S1"
             >
               <div
-                className="IS10"
+                className="IS11"
               >
-                <video
-                  className="video-js IS9"
-                />
+                <div
+                  className="IS10"
+                >
+                  <video
+                    className="video-js IS9"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -717,7 +724,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS14"
+        className="IS15"
       />
       <div
         className="c19 S1"
@@ -736,7 +743,7 @@ exports[`full article with style 1`] = `
   >
     <nav>
       <ArticleTopics
-        className="IS15"
+        className="IS16"
       />
     </nav>
   </div>
