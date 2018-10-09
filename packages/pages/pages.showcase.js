@@ -3,11 +3,8 @@ import React from "react";
 import { Article, AuthorProfile, Topic } from "./src/pages";
 
 export default {
-  name: "Pages/Pages",
   children: [
     {
-      type: "story",
-      name: "Article",
       component: ({ text }) => {
         const articleId = text(
           "Article id",
@@ -37,11 +34,11 @@ export default {
             platformAdConfig={{ sectionName: "news" }}
           />
         );
-      }
+      },
+      name: "Article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "AuthorProfile",
       component: ({ text }) => {
         const authorSlug = text("Author slug", "deborah-haynes");
         const graphqlEndPoint = text(
@@ -62,11 +59,11 @@ export default {
             onTwitterLinkPress={() => {}}
           />
         );
-      }
+      },
+      name: "AuthorProfile",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Topic",
       component: ({ text }) => {
         const topicSlug = text("Topic slug", "brexit");
         const graphqlEndPoint = text(
@@ -86,7 +83,10 @@ export default {
             topicSlug={topicSlug}
           />
         );
-      }
+      },
+      name: "Topic",
+      type: "story"
     }
-  ]
+  ],
+  name: "Pages/Pages"
 };

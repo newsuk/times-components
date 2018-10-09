@@ -23,9 +23,9 @@ const TopicPage = ({ topicSlug, onArticlePress, analyticsStream }) => (
 );
 
 TopicPage.propTypes = {
-  topicSlug: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
-  onArticlePress: PropTypes.func.isRequired
+  onArticlePress: PropTypes.func.isRequired,
+  topicSlug: PropTypes.string.isRequired
 };
 
 export default withClient(TopicPage);
