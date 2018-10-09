@@ -21,8 +21,8 @@ const ArticleRow = ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
-}) => {
-  return renderTree(data, {
+}) =>
+  renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {
       return {
@@ -149,7 +149,6 @@ const ArticleRow = ({
       };
     }
   });
-};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({
