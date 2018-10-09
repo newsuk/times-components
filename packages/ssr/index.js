@@ -21,7 +21,10 @@ server.use(express.static("dist"));
 
 const makeClient = () =>
   new ApolloClient({
-    ssrMode: true,
+    cache: new Cache({
+      addTypename: true,
+      fragmentMatcher
+    }),
     link: createHttpLink({
       fetch,
       headers: {
@@ -31,7 +34,7 @@ const makeClient = () =>
       },
       uri: process.env.GRAPHQL_ENDPOINT
     }),
-    cache: new Cache({ addTypename: true, fragmentMatcher })
+    ssrMode: true
   });
 
 const makeHtml = (

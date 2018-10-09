@@ -4,9 +4,9 @@ import { StyleSheet, View } from "react-native";
 
 export const boxStyles = StyleSheet.create({
   box: {
-    borderWidth: 2,
     borderColor: "black",
     borderStyle: "solid",
+    borderWidth: 2,
     height: 200,
     width: 200
   }
@@ -18,14 +18,14 @@ const Box = props => (
   </View>
 );
 Box.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.element,
-  color: PropTypes.string
+  color: PropTypes.string,
+  id: PropTypes.string
 };
 Box.defaultProps = {
   children: null,
-  id: "",
-  color: ""
+  color: "",
+  id: ""
 };
 
 export default Box;

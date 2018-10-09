@@ -19,9 +19,9 @@ const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
 
     return React.cloneElement(child, {
       fill,
+      opacity,
       stroke,
       strokeWidth,
-      opacity,
       ...cleanProps
     });
   });
@@ -33,18 +33,18 @@ const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
 };
 
 G.propTypes = {
+  children: PropTypes.node.isRequired,
   fill: PropTypes.string,
-  stroke: PropTypes.string,
-  strokeWidth: PropTypes.string,
   opacity: PropTypes.string,
-  children: PropTypes.node.isRequired
+  stroke: PropTypes.string,
+  strokeWidth: PropTypes.string
 };
 
 G.defaultProps = {
   fill: null,
+  opacity: null,
   stroke: null,
-  strokeWidth: null,
-  opacity: null
+  strokeWidth: null
 };
 
 export default G;

@@ -33,14 +33,14 @@ const Polygon = ({ stroke, fill, points }) => {
 };
 
 Polygon.propTypes = {
-  stroke: PropTypes.string,
   fill: PropTypes.string,
-  points: PropTypes.string.isRequired // TODO validate they're even coordinates
+  points: PropTypes.string.isRequired, // TODO validate they're even coordinates
+  stroke: PropTypes.string
 };
 
 Polygon.defaultProps = {
-  stroke: null,
-  fill: null
+  fill: null,
+  stroke: null
 };
 
 export default Polygon;

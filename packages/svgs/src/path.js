@@ -23,16 +23,16 @@ Path.propTypes = {
   d: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(ARTPath)])
     .isRequired,
   fill: PropTypes.string,
+  opacity: PropTypes.string,
   stroke: PropTypes.string,
-  strokeWidth: PropTypes.string,
-  opacity: PropTypes.string
+  strokeWidth: PropTypes.string
 };
 
 Path.defaultProps = {
   fill: null,
+  opacity: null,
   stroke: null,
-  strokeWidth: null,
-  opacity: null
+  strokeWidth: null
 };
 
 export default Path;

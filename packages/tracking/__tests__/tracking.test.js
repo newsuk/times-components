@@ -7,9 +7,21 @@ import sharedTrackingTests from "./shared-tracking-tests";
 import ListComponent from "./list-component";
 
 const items = [
-  { someKey: "1", someValue: "one", elementId: "1" },
-  { someKey: "2", someValue: "two", elementId: "2" },
-  { someKey: "3", someValue: "three", elementId: "3" }
+  {
+    elementId: "1",
+    someKey: "1",
+    someValue: "one"
+  },
+  {
+    elementId: "2",
+    someKey: "2",
+    someValue: "two"
+  },
+  {
+    elementId: "3",
+    someKey: "3",
+    someValue: "three"
+  }
 ];
 
 module.exports = () => {
@@ -62,12 +74,12 @@ module.exports = () => {
           info: {
             changed: [
               {
-                isViewable: true,
-                elementId: 1
+                elementId: 1,
+                isViewable: true
               },
               {
-                isViewable: true,
-                elementId: 1
+                elementId: 1,
+                isViewable: true
               }
             ]
           }
@@ -106,8 +118,8 @@ module.exports = () => {
           info: {
             changed: [
               {
-                isViewable: true,
                 id: "one",
+                isViewable: true,
                 someKey: "1",
                 someValue: "one"
               }
@@ -152,8 +164,8 @@ module.exports = () => {
           info: {
             changed: [
               {
-                isViewable: true,
                 id: "one",
+                isViewable: true,
                 someKey: "1",
                 someValue: "one"
               }
@@ -201,8 +213,8 @@ module.exports = () => {
           info: {
             changed: [
               {
-                isViewable: true,
                 id: "one",
+                isViewable: true,
                 someKey: "1",
                 someValue: "one"
               }
@@ -249,8 +261,8 @@ module.exports = () => {
           info: {
             changed: [
               {
-                isViewable: true,
                 elementId: "3",
+                isViewable: true,
                 someKey: "3",
                 someValue: "three"
               }

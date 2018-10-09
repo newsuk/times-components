@@ -1,45 +1,45 @@
 export default {
-  name: "Test Name",
   description: [
     {
-      name: "text",
       attributes: {
         value: "Test "
       },
-      children: []
+      children: [],
+      name: "text"
     },
     {
-      name: "italic",
       attributes: {},
       children: [
         {
-          name: "text",
           attributes: {
             value: "italic "
           },
-          children: []
+          children: [],
+          name: "text"
         }
-      ]
+      ],
+      name: "italic"
     },
     {
-      name: "bold",
       attributes: {},
       children: [
         {
-          name: "text",
           attributes: {
             value: "bold"
           },
-          children: []
+          children: [],
+          name: "text"
         }
-      ]
+      ],
+      name: "bold"
     },
     {
-      name: "text",
       attributes: {
         value: " text."
       },
-      children: []
+      children: [],
+      name: "text"
     }
-  ]
+  ],
+  name: "Test Name"
 };

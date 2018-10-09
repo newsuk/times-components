@@ -31,7 +31,10 @@ const Topic = ({
   }
 
   const { name, description } = isHeaderLoading
-    ? { name: "", description: [] }
+    ? {
+        description: [],
+        name: ""
+      }
     : topic;
 
   const articleListHeader = (
@@ -61,9 +64,6 @@ const Topic = ({
       }) => {
         const fetchMoreArticles = length =>
           fetchMore({
-            variables: {
-              skip: length
-            },
             updateQuery: (prev, { fetchMoreResult }) =>
               fetchMoreResult
                 ? {
@@ -78,7 +78,10 @@ const Topic = ({
                       }
                     }
                   }
-                : prev
+                : prev,
+            variables: {
+              skip: length
+            }
           });
 
         return (

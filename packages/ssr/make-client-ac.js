@@ -9,11 +9,12 @@ const fetch = require("node-fetch");
 
 module.exports = () =>
   new ApolloClient({
+    cache: new Cache({
+      addTypename: true,
+      fragmentMatcher
+    }).restore(window.__APOLLO_STATE__),
     link: createHttpLink({
       fetch,
       uri: process.env.GRAPHQL_ENDPOINT
-    }),
-    cache: new Cache({ addTypename: true, fragmentMatcher }).restore(
-      window.__APOLLO_STATE__
-    )
+    })
   });

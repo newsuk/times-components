@@ -60,7 +60,6 @@ export default (
 
     onChildView(childProps) {
       this.context.tracking.analytics({
-        component: `${trackingName || componentName}Child`,
         action: "Scrolled",
         attrs: {
           ...resolveAttrs(getAttrs, childProps),
@@ -68,7 +67,8 @@ export default (
             itemNumber: childProps.index + 1,
             total: childProps.total
           }
-        }
+        },
+        component: `${trackingName || componentName}Child`
       });
     }
 

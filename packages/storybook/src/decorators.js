@@ -4,15 +4,15 @@ import { View } from "react-native";
 export const CenteredDecorator = storyFn => (
   <View
     style={{
-      flex: 1,
-      position: "absolute",
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0,
-      flexDirection: "row",
       alignItems: "center",
-      justifyContent: "center"
+      bottom: 0,
+      flex: 1,
+      flexDirection: "row",
+      justifyContent: "center",
+      left: 0,
+      position: "absolute",
+      right: 0,
+      top: 0
     }}
   >
     {storyFn()}
@@ -20,23 +20,38 @@ export const CenteredDecorator = storyFn => (
 );
 
 export const BarSpacingDecorator = storyFn => (
-  <View style={{ marginTop: 20, flex: 1 }}>{storyFn()}</View>
+  <View
+    style={{
+      flex: 1,
+      marginTop: 20
+    }}
+  >
+    {storyFn()}
+  </View>
 );
 
 export const LateralSpacingDecorator = storyFn => (
-  <View style={{ marginLeft: 20, marginRight: 20, flex: 1 }}>{storyFn()}</View>
+  <View
+    style={{
+      flex: 1,
+      marginLeft: 20,
+      marginRight: 20
+    }}
+  >
+    {storyFn()}
+  </View>
 );
 
 export const WhiteBgColorDecorator = storyFn => (
   <View
     style={{
       backgroundColor: "white",
-      flex: 1,
-      position: "absolute",
-      top: 0,
       bottom: 0,
+      flex: 1,
       left: 0,
-      right: 0
+      position: "absolute",
+      right: 0,
+      top: 0
     }}
   >
     {storyFn()}

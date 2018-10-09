@@ -12,18 +12,18 @@ import scales from "./scales";
 import spacing from "./spacing";
 
 const colours = {
-  section: sectionColours,
-  functional: functionalColours
+  functional: functionalColours,
+  section: sectionColours
 };
 
 const Animations = {
   FadeIn
 };
 const breakpoints = {
-  small: 520,
+  huge: 1320,
   medium: 768,
-  wide: 1024,
-  huge: 1320
+  small: 520,
+  wide: 1024
 };
 const fonts = timesFonts;
 const fontFactory = timesFontFactory();
@@ -44,8 +44,8 @@ export {
 export default ({ scale = scales.medium } = {}) => ({
   Animations,
   colours,
-  fonts,
   fontFactory: timesFontFactory(scale),
+  fonts,
   fontSizes: timesFontSizes(scale),
   lineHeight: timesLineHeightsFactory(scale),
   spacing

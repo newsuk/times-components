@@ -40,11 +40,29 @@ const Support2 = () => (
 );
 
 export default {
-  name: "Primitives/Slice",
   children: [
     {
-      type: "story",
+      component: () => (
+        <ScrollView>
+          <LeadOneAndTwoSlice
+            renderLead={() => (
+              <View
+                id="lead"
+                style={{
+                  backgroundColor: "red",
+                  minHeight: 320
+                }}
+              />
+            )}
+            renderSupport1={() => null}
+            renderSupport2={() => null}
+          />
+        </ScrollView>
+      ),
       name: "LeadOneAndTwo",
+      type: "story"
+    },
+    {
       component: () => (
         <ScrollView>
           <LeadOneAndTwoSlice
@@ -57,36 +75,15 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => null}
+            renderSupport1={() => <Support1 />}
             renderSupport2={() => null}
           />
         </ScrollView>
-      )
-    },
-    {
-      type: "story",
+      ),
       name: "LeadOneAndTwo With 1 Support",
-      component: () => (
-        <ScrollView>
-          <LeadOneAndTwoSlice
-            renderLead={() => (
-              <View
-                id="lead"
-                style={{
-                  backgroundColor: "red",
-                  minHeight: 320
-                }}
-              />
-            )}
-            renderSupport1={() => <Support1 />}
-            renderSupport2={() => null}
-          />
-        </ScrollView>
-      )
+      type: "story"
     },
     {
-      type: "story",
-      name: "LeadOneAndTwo With 2 Supports",
       component: () => (
         <ScrollView>
           <LeadOneAndTwoSlice
@@ -103,11 +100,11 @@ export default {
             renderSupport2={() => <Support2 />}
           />
         </ScrollView>
-      )
+      ),
+      name: "LeadOneAndTwo With 2 Supports",
+      type: "story"
     },
     {
-      type: "story",
-      name: "OpinionOneAndTwo",
       component: () => (
         <ScrollView>
           <OpinionOneAndTwoSlice
@@ -115,8 +112,8 @@ export default {
               <View
                 id="opinion"
                 style={{
-                  minHeight: 150,
-                  backgroundColor: "red"
+                  backgroundColor: "red",
+                  minHeight: 150
                 }}
               />
             )}
@@ -124,11 +121,11 @@ export default {
             renderSupport2={() => null}
           />
         </ScrollView>
-      )
+      ),
+      name: "OpinionOneAndTwo",
+      type: "story"
     },
     {
-      type: "story",
-      name: "OpinionOneAndTwo With 1 Support",
       component: () => (
         <ScrollView>
           <OpinionOneAndTwoSlice
@@ -136,8 +133,8 @@ export default {
               <View
                 id="opinion"
                 style={{
-                  minHeight: 150,
-                  backgroundColor: "red"
+                  backgroundColor: "red",
+                  minHeight: 150
                 }}
               />
             )}
@@ -145,11 +142,11 @@ export default {
             renderSupport2={() => null}
           />
         </ScrollView>
-      )
+      ),
+      name: "OpinionOneAndTwo With 1 Support",
+      type: "story"
     },
     {
-      type: "story",
-      name: "OpinionOneAndTwo With 2 Supports",
       component: () => (
         <ScrollView>
           <OpinionOneAndTwoSlice
@@ -157,8 +154,8 @@ export default {
               <View
                 id="opinion"
                 style={{
-                  minHeight: 150,
-                  backgroundColor: "red"
+                  backgroundColor: "red",
+                  minHeight: 150
                 }}
               />
             )}
@@ -166,11 +163,11 @@ export default {
             renderSupport2={() => <Support2 />}
           />
         </ScrollView>
-      )
+      ),
+      name: "OpinionOneAndTwo With 2 Supports",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard",
       component: ({ select }) => {
         const itemCount = {
           0: "0",
@@ -189,7 +186,10 @@ export default {
             />
           </ScrollView>
         );
-      }
+      },
+      name: "Standard",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Slice"
 };
