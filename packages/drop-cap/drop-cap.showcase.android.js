@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
@@ -11,7 +12,7 @@ export default {
     {
       type: "story",
       name: "Simple dropCap",
-      component: ({ select}) => {
+      component: ({ select }) => {
         const scale = selectScales(select);
         return (
           <Context.Provider value={{ theme: { scale } }}>
@@ -26,7 +27,7 @@ export default {
     {
       type: "story",
       name: "Multi character dropCap",
-      component: ({select}) => {
+      component: ({ select }) => {
         const scale = selectScales(select);
         return (
           <Context.Provider value={{ theme: { scale } }}>
@@ -41,7 +42,7 @@ export default {
     {
       type: "story",
       name: "DropCap with short text",
-      component: ({select}) => {
+      component: ({ select }) => {
         const scale = selectScales(select);
         return (
           <Context.Provider value={{ theme: { scale } }}>

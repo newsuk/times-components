@@ -1,7 +1,10 @@
 import styleguide from "@times-components/styleguide";
+import margins from "./margins";
 
 const sharedStyles = scale => {
   const { colours, fontFactory, spacing } = styleguide({ scale });
+  const dropCapMargins = margins(scale);
+
   return {
     articleTextElement: {
       ...fontFactory({
@@ -23,8 +26,8 @@ const sharedStyles = scale => {
         fontSize: "dropCap"
       }),
       marginRight: spacing(1),
-      marginTop: -10,
-      marginBottom: -10,
+      marginTop: dropCapMargins.top,
+      marginBottom: dropCapMargins.bottom,
       color: colours.functional.primary
     }
   };

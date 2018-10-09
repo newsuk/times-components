@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import { scales } from "@times-components/styleguide";
 import styleFactory from "./styles";
 
 const { RNTextSize } = NativeModules;
