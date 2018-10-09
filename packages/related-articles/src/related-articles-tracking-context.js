@@ -9,7 +9,6 @@ import getHeadline from "./utils";
 
 export default Component =>
   withTrackingContext(Component, {
-    trackingObjectName: "RelatedArticles",
     getAttrs: ({ slice }) => {
       const { items, lead, opinion, sliceName, support1, support2 } = slice;
       if (!sliceName) return null;
@@ -27,9 +26,9 @@ export default Component =>
               shortHeadline
             } = article;
             return {
-              id,
               byline: get(byline, "[0].children[0].attributes.value", ""),
               headline: getHeadline(headline, shortHeadline),
+              id,
               publishedTime,
               role: roles[index + 1]
             };
@@ -45,9 +44,9 @@ export default Component =>
             shortHeadline
           } = article;
           return {
-            id,
             byline: get(byline, "[0].children[0].attributes.value", ""),
             headline: getHeadline(headline, shortHeadline),
+            id,
             publishedTime,
             role: standardRoles[index]
           };
@@ -57,9 +56,9 @@ export default Component =>
         const { article } = lead;
         const { byline, headline, id, publishedTime, shortHeadline } = article;
         const leadOneAndTwoTrackingObject = {
-          id,
           byline: get(byline, "[0].children[0].attributes.value", ""),
           headline: getHeadline(headline, shortHeadline),
+          id,
           publishedTime,
           role: leadOneAndTwoRoles[0]
         };
@@ -73,9 +72,9 @@ export default Component =>
         const { article } = opinion;
         const { byline, headline, id, publishedTime, shortHeadline } = article;
         const opinionOneAndTwoTrackingObject = {
-          id,
           byline: get(byline, "[0].children[0].attributes.value", ""),
           headline: getHeadline(headline, shortHeadline),
+          id,
           publishedTime,
           role: opinionOneAndTwoRoles[0]
         };
@@ -105,5 +104,6 @@ export default Component =>
       }
 
       return trackingObject;
-    }
+    },
+    trackingObjectName: "RelatedArticles"
   });

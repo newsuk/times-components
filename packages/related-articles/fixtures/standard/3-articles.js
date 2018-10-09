@@ -8,98 +8,98 @@ const defaultFirstLabel = "BAYEUX TAPESTRY";
 const defaultFirstSection = "thedish";
 const defaultFirstSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstTitle =
@@ -114,263 +114,263 @@ const defaultSecondLabel = "BAYEUX TAPESTRY";
 const defaultSecondSection = "sport";
 const defaultSecondSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
-    children: []
+    children: [],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "Although the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "Although the museum stopped"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Although the museum stopped short of confirming that it had secured the loan"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondTitle =
@@ -386,92 +386,92 @@ const defaultThirdLabel = "BAYEUX TAPESTRY";
 const defaultThirdSection = "comment";
 const defaultThirdSummary105 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdSummary125 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdSummary145 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdSummary160 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdSummary175 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdSummary225 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Light gleamed from the blade of what appeared to be a combat knife in a video of a huddled group of teenage boys in hoods and masks in Haringey, north London. Within a week a boy linked to a group known as G Lanes had been"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultThirdTitle = "Some scary people";
@@ -523,33 +523,32 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "StandardSlice",
       items: [
         {
           article: {
             byline: [
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long, Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             headline: firstHeadline,
             id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             label: firstLabel,
             leadAsset: {
-              title: firstTitle,
               crop169: {
                 url: firstCrop169
-              }
+              },
+              title: firstTitle
             },
             publicationName: "TIMES",
             publishedTime: "2015-03-13T18:54:58.000Z",
@@ -568,27 +567,27 @@ export default (
           article: {
             byline: [
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long, Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             headline: secondHeadline,
             id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             label: secondLabel,
             leadAsset: {
-              title: secondTitle,
               crop169: {
                 url: secondCrop169
-              }
+              },
+              title: secondTitle
             },
             publishedTime: "2018-01-17T12:00:00.000Z",
             section: secondSection,
@@ -606,17 +605,17 @@ export default (
           article: {
             byline: [
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long, Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             headline: thirdHeadline,
@@ -624,10 +623,10 @@ export default (
             label: thirdLabel,
             leadAsset: {
               posterImage: {
-                title: thirdTitle,
                 crop169: {
                   url: thirdCrop169
-                }
+                },
+                title: thirdTitle
               }
             },
             publishedTime: "2018-01-17T12:00:00.000Z",
@@ -642,7 +641,8 @@ export default (
             url: thirdUrl
           }
         }
-      ]
+      ],
+      sliceName: "StandardSlice"
     }
   }
 });
