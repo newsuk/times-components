@@ -6,6 +6,8 @@ textboxes.
 
 Currently, this component only supports text-only paragraphs.
 
+Uses 3rd party library to measure text sizes on native: https://github.com/aMarCruz/react-native-text-size
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
