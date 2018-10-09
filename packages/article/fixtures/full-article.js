@@ -637,8 +637,7 @@ const defaultVideoPosterUrl =
 
 export const videoLeadAsset = (
   {
-    brightcovePolicyKey = defaultBrightcovePolicyKey,
-    url = defaultVideoPosterUrl
+    brightcovePolicyKey = defaultBrightcovePolicyKey
   } = {}
 ) => ({
   brightcoveVideoId: "5831024132001",
@@ -651,9 +650,14 @@ export const videoLeadAsset = (
     title: "",
     credits: "",
     caption: "CCTV captures moment of the explosion",
-    crop: {
+    crop169: {
       ratio: "16:9",
-      url,
+      url: "https://video169.io",
+      __typename: "Crop"
+    },
+    crop32: {
+      ratio: "3:2",
+      url: "https://video32.io",
       __typename: "Crop"
     },
     __typename: "Image"
@@ -1762,11 +1766,13 @@ const defaultRelatedArticleSlice = {
           id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
           title: "Rise of centenarian drivers as elderly push on",
           crop169: {
+            ratio: "16:9",
             url:
               "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108",
             __typename: "Crop"
           },
           crop32: {
+            ratio: "3:2",
             url:
               "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
             __typename: "Crop"
@@ -1896,11 +1902,13 @@ const defaultRelatedArticleSlice = {
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: "",
             crop169: {
+              ratio: "16:9",
               url:
                 "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
               __typename: "Crop"
             },
             crop32: {
+              ratio: "3:2",
               url:
                 "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
               __typename: "Crop"

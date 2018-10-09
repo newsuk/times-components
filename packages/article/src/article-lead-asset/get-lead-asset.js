@@ -13,7 +13,7 @@ export default function getLeadAsset({ leadAsset }) {
   /* eslint no-underscore-dangle: ["error", { "allow": ["__typename"] }] */
   const isVideo = leadAsset.__typename === "Video";
   const displayImage = isVideo
-    ? leadAsset.posterImage.crop
+    ? getStandardTemplateCrop(leadAsset.posterImage)
     : getStandardTemplateCrop(leadAsset);
 
   const aspectRatio = displayImage.ratio;

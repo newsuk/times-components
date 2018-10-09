@@ -54,7 +54,6 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          refetch={() => {}}
         />
       );
 
@@ -167,8 +166,7 @@ export const snapshotTests = renderComponent => [
             ...emptyArticle,
             hasVideo: true,
             leadAsset: videoLeadAsset({
-              brightcovePolicyKey: "1.2.3.4",
-              url: "https://video.io"
+              brightcovePolicyKey: "1.2.3.4"
             })
           })}
           onAuthorPress={() => {}}
@@ -439,7 +437,7 @@ const negativeTests = [
     }
   },
   {
-    name: "an article with missing 16:9 lead asset crop",
+    name: "an article with missing 16:9 lead asset should fall back to use 3:2",
     test() {
       const testInstance = TestRenderer.create(
         <Article

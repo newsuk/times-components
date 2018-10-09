@@ -311,7 +311,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
                       data-player="default"
                       data-video-id="5831024132001"
                       id="5831024132001-5436121857001-2"
-                      poster="https://video.io"
+                      poster="https://video169.io"
                     />
                   </div>
                 </div>
@@ -633,7 +633,7 @@ exports[`7. an article with updated byline 2`] = `
 </article>
 `;
 
-exports[`12. an article with missing 16:9 lead asset crop 1`] = `
+exports[`12. an article with missing 16:9 lead asset should fall back to use 3:2 1`] = `
 <article>
   <div>
     <Ad

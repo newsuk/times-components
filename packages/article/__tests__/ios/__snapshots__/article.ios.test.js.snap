@@ -251,7 +251,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
           policyKey="1.2.3.4"
           poster={
             Object {
-              "uri": "https://video.io",
+              "uri": "https://video169.io",
             }
           }
           videoId="5831024132001"
@@ -604,7 +604,7 @@ exports[`8. an article that moves to a loading state 2`] = `
 </View>
 `;
 
-exports[`14. an article with missing 16:9 lead asset crop 1`] = `
+exports[`14. an article with missing 16:9 lead asset should fall back to use 3:2 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}

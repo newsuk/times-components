@@ -25,7 +25,7 @@ const LeadAssetComponent = ({
     return null;
   }
 
-  const { url = null } = displayImage;
+  const { url } = displayImage;
   const leadAssetView = isVideo ? (
     <Video
       accountId={leadAsset.brightcoveAccountId}
