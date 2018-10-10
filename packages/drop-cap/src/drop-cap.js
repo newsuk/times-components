@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
 import styleFactory from "./styles";
+import { propTypes, defaultProps } from "./prop-types";
 
 const { RNTextSize } = NativeModules;
 
@@ -10,12 +10,28 @@ class DropCapParagraph extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slicePoint: 0,
       screenWidth: Dimensions.get("window").width
     };
   }
 
-  measureTextBoxes(stylesScaled, dropCap, text, scale) {
+  componentDidMount() {
+    const { dropCap, scale, text } = this.props;
+
+    this.measureTextBoxes(dropCap, text, scale);
+  }
+
+  componentDidUpdate(prevProps) {
+    const { dropCap, scale, text } = this.props;
+
+    if (prevProps.scale !== this.props.scale) {
+      this.measureTextBoxes(dropCap, text, scale);
+    }
+  }
+
+  measureTextBoxes() {
+    const { dropCap, scale, text } = this.props;
+    const stylesScaled = styleFactory(scale);
+
     const { screenWidth } = this.state;
 
     const {
@@ -43,18 +59,17 @@ class DropCapParagraph extends Component {
       )
       .then(({ lineEnd: slicePoint }) => {
         this.setState({
-          measuredForScale: scale,
-          slicePoint,
-          screenWidth
+          slicePoint
         });
       });
   }
 
-  renderParagraph(colour, stylesScaled, dropCap, text) {
+  renderParagraph() {
+    const { colour, dropCap, scale, text } = this.props;
     const { screenWidth, slicePoint } = this.state;
-    const {
-      articleMainContentRow: { paddingLeft, paddingRight }
-    } = stylesScaled;
+
+    const stylesScaled = styleFactory(scale);
+    const { paddingLeft, paddingRight } = stylesScaled.articleMainContentRow;
 
     return (
       <View style={stylesScaled.articleMainContentRow}>
@@ -98,32 +113,20 @@ class DropCapParagraph extends Component {
   }
 
   render() {
-    const { colour, dropCap, text } = this.props;
-    const { measuredForScale } = this.state;
+    const { slicePoint } = this.state;
 
-    return (
-      <Context.Consumer>
-        {({ theme: { scale } }) => {
-          const stylesScaled = styleFactory(scale);
-          if (measuredForScale === scale) {
-            return this.renderParagraph(colour, stylesScaled, dropCap, text);
-          }
-          this.measureTextBoxes(stylesScaled, dropCap, text, scale);
-          return null;
-        }}
-      </Context.Consumer>
-    );
+    if (slicePoint !== undefined) {
+      return this.renderParagraph();
+    }
+    return null;
   }
 }
 
 DropCapParagraph.propTypes = {
-  colour: PropTypes.string,
-  dropCap: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  ...propTypes,
+  scale: PropTypes.string.isRequired
 };
 
-DropCapParagraph.defaultProps = {
-  colour: "black"
-};
+DropCapParagraph.defaultProps = defaultProps;
 
 export default DropCapParagraph;

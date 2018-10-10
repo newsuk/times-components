@@ -2,8 +2,8 @@
   "name": "@times-components/drop-cap",
   "version": "0.0.1",
   "description": "Drop Cap Paragraph",
-  "main": "dist/drop-cap",
-  "dev": "src/drop-cap",
+  "main": "dist/drop-cap-with-context",
+  "dev": "src/drop-cap-with-context",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
