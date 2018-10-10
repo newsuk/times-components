@@ -461,9 +461,12 @@ const negativeTests = [
         />
       );
 
-      const leadAssetProps = testInstance.root.instance.props.article.leadAsset;
-      expect(leadAssetProps.crop169).toEqual(null);
-      expect(leadAssetProps.crop32).not.toEqual(null);
+      const {
+        crop169,
+        crop32
+      } = testInstance.root.instance.props.article.leadAsset;
+      expect(crop169).toEqual(null);
+      expect(crop32).not.toEqual(null);
     }
   }
 ];
