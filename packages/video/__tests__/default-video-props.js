@@ -9,6 +9,7 @@ const videoProps = {
     uri:
       "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
   },
+  skySports: false,
   videoId: "[video id]",
   width: 300
 };

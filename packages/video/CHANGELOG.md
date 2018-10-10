@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.0.14...@times-components/video@4.1.0) (2018-10-06)
+
+
+### Features
+
+* add Sky sports banner ([#1382](https://github.com/newsuk/times-components/issues/1382)) ([231af44](https://github.com/newsuk/times-components/commit/231af44))
+
+
+
+
+
 <a name="4.0.14"></a>
 ## [4.0.14](https://github.com/newsuk/times-components/compare/@times-components/video@4.0.13...@times-components/video@4.0.14) (2018-10-03)
 

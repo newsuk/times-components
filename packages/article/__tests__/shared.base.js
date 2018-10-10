@@ -127,6 +127,7 @@ export const snapshotTests = renderComponent => [
               brightcovePolicyKey: "1.2.3.4",
               brightcoveAccountId: "57838016001",
               paidOnly: "false",
+              skySports: false,
               caption: "This is video caption",
               posterImageUrl: "https://image.io"
             },

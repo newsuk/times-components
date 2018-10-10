@@ -114,7 +114,8 @@ const ArticleRow = ({
         brightcoveVideoId,
         brightcoveAccountId,
         posterImageUrl,
-        caption
+        caption,
+        skySports
       }
     ) {
       const aspectRatio = 16 / 9;
@@ -131,6 +132,7 @@ const ArticleRow = ({
               onVideoPress={onVideoPress}
               policyKey={brightcovePolicyKey}
               poster={{ uri: posterImageUrl }}
+              skySports={skySports}
               videoId={brightcoveVideoId}
               width={width}
             />

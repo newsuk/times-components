@@ -84,7 +84,8 @@ const ArticleRow = ({ content: { data, index } }) =>
         brightcoveVideoId,
         brightcoveAccountId,
         posterImageUrl,
-        caption
+        caption,
+        skySports
       }
     ) {
       const MediaWrapper = responsiveDisplayWrapper("primary");
@@ -98,6 +99,7 @@ const ArticleRow = ({ content: { data, index } }) =>
                   height="100%"
                   policyKey={brightcovePolicyKey}
                   poster={{ uri: posterImageUrl }}
+                  skySports={skySports}
                   videoId={brightcoveVideoId}
                   width="100%"
                 />

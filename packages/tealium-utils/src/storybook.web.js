@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import tealiumReporter, {
   TealiumSendScheduler
@@ -22,5 +21,5 @@ const reporter = tealiumReporter(tealiumSendScheduler);
 export default e => {
   if (reporter) reporter.analytics(e);
 
-  if (!global.storiesOf) action("analytics-event")(e);
+  return action("analytics-event")(e);
 };
