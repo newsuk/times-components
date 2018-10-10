@@ -5,11 +5,12 @@ const args = process.argv.slice(2);
 
 const [imagePath, bucket, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY] = args;
 console.log("before AWS config update");
-AWS.config.update({
+config = new AWS.Config();
+config.update({
   region: "eu-west-1",
   aws_access_key_id: AWS_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID,
   aws_secret_access_key: AWS_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY
-}, allowUnknownKeys = true );
+});
 console.log("after AWS config update");
 
 const s3 = new AWS.S3();
