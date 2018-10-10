@@ -4,15 +4,12 @@ const AWS = require("aws-sdk");
 const args = process.argv.slice(2);
 
 const [imagePath, bucket, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY] = args;
-console.log("before AWS config update");
-const config = new AWS.Config({
+
+const s3 = new AWS.S3({
   accessKeyId: AWS_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: AWS_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY,
   region: "eu-west-1"
 });
-console.log("after AWS config update");
-console.log(config)
-const s3 = new AWS.S3();
 
 const file = fs.readFileSync(imagePath);
 
