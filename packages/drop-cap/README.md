@@ -4,9 +4,11 @@ This package provides a paragraph starting with a drop cap letter. In native,
 this is done by measuring the length of the text and splitting it into 3
 textboxes.
 
-Currently, this component only supports plain text paragraphs, so any text given should have the markups stripped.
+Currently, this component only supports plain text paragraphs, so any text given
+should have the markups stripped.
 
-Uses [3rd party library](https://github.com/aMarCruz/react-native-text-size) to measure text sizes on native
+Uses [3rd party library](https://github.com/aMarCruz/react-native-text-size) to
+measure text sizes on native
 
 ## Contributing
 
