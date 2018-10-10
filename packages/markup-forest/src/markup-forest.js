@@ -21,8 +21,8 @@ export const renderTree = (tree, renderers, key = "0", indx = 0) => {
 };
 
 const nodeShape = {
-  name: PropTypes.string.isRequired,
-  attributes: PropTypes.object
+  attributes: PropTypes.object,
+  name: PropTypes.string.isRequired
 };
 
 nodeShape.children = PropTypes.arrayOf(PropTypes.shape(nodeShape)).isRequired;

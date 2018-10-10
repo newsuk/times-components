@@ -15,21 +15,20 @@ const subscript = require("./fixtures/multiple-subscripts.json");
 const superscript = require("./fixtures/multiple-superscripts.json");
 
 export default {
-  name: "Composed/Markup",
   children: [
     {
-      type: "decorator",
+      decorator: CenteredDecorator,
       platform: "native",
-      decorator: CenteredDecorator
+      type: "decorator"
     },
     {
-      type: "story",
+      component: () => (
+        <View>{renderTrees(multiParagraph, coreRenderers)}</View>
+      ),
       name: "Multiple paragraphs",
-      component: () => <View>{renderTrees(multiParagraph, coreRenderers)}</View>
+      type: "story"
     },
     {
-      type: "story",
-      name: "Mixture of tags",
       component: () =>
         renderTree(mixture, {
           ...coreRenderers,
@@ -47,31 +46,31 @@ export default {
               )
             };
           }
-        })
+        }),
+      name: "Mixture of tags",
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <Text>{renderTrees(bio, coreRenderers)}</Text>,
       name: "Biography",
-      component: () => <Text>{renderTrees(bio, coreRenderers)}</Text>
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <View>{renderTrees(ratings, coreRenderers)}</View>,
       name: "Ratings",
-      component: () => <View>{renderTrees(ratings, coreRenderers)}</View>
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>,
       name: "Subscript",
-      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>,
       name: "Superscript",
-      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>
+      type: "story"
     },
     {
-      type: "story",
-      name: "Multiple children with styling",
       component: () => (
         <View>
           {renderTrees(multiParagraph, {
@@ -82,9 +81,9 @@ export default {
                   <Text
                     key={key}
                     style={{
-                      margin: 10,
                       color: "red",
-                      fontFamily: fonts.headline
+                      fontFamily: fonts.headline,
+                      margin: 10
                     }}
                   >
                     {children}
@@ -94,7 +93,10 @@ export default {
             }
           })}
         </View>
-      )
+      ),
+      name: "Multiple children with styling",
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Markup"
 };

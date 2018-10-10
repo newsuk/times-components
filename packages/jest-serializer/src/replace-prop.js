@@ -17,9 +17,9 @@ export const replacePropTransform = replacer => (
 
   return {
     accum,
+    children,
     node,
-    props: transformedProps,
-    children
+    props: transformedProps
   };
 };
 

@@ -3,11 +3,11 @@ import { Text, StyleSheet, View } from "react-native";
 import { subscriptMap, superscriptMap } from "./sub-sup";
 
 const styles = StyleSheet.create({
-  italic: {
-    fontStyle: "italic"
-  },
   bold: {
     fontWeight: "bold"
+  },
+  italic: {
+    fontStyle: "italic"
   },
   subscript: {
     fontSize: 10

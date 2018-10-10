@@ -24,43 +24,43 @@ const renderKeyFacts = (ast, select) => {
 };
 
 export default {
-  name: "Composed/Key Facts",
   children: [
     {
-      type: "decorator",
-      decorator: LateralSpacingDecorator
+      decorator: LateralSpacingDecorator,
+      type: "decorator"
     },
     {
-      type: "story",
-      name: "with title",
-      platform: "native",
       component: ({ select }) => (
         <ScrollView style={{ width: "100%" }}>
           {renderKeyFacts(data, select)}
         </ScrollView>
-      )
+      ),
+      name: "with title",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
+      component: ({ select }) => renderKeyFacts(data, select),
       name: "with title",
       platform: "web",
-      component: ({ select }) => renderKeyFacts(data, select)
+      type: "story"
     },
     {
-      type: "story",
-      name: "without title",
-      platform: "native",
       component: ({ select }) => (
         <ScrollView style={{ width: "100%" }}>
           {renderKeyFacts(dataNoTitle, select)}
         </ScrollView>
-      )
+      ),
+      name: "without title",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
+      component: ({ select }) => renderKeyFacts(dataNoTitle, select),
       name: "without title",
       platform: "web",
-      component: ({ select }) => renderKeyFacts(dataNoTitle, select)
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Key Facts"
 };

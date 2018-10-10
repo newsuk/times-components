@@ -25,9 +25,9 @@ describe("The replace serializer should", () => {
       enzymeTreeSerializer(),
       replace({
         ChildComponent: () => ({
+          children: [<Text>Replaced</Text>],
           node: { type: "Placeholder" },
-          props: {},
-          children: [<Text>Replaced</Text>]
+          props: {}
         })
       })
     );

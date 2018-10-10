@@ -9,9 +9,9 @@ export const minimaliseTransform = excludeProps => (
   children
 ) => ({
   accum,
+  children,
   node,
-  props: omitBy(props, excludeProps),
-  children
+  props: omitBy(props, excludeProps)
 });
 
 export default excludeProps =>
