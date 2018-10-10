@@ -632,14 +632,9 @@ export const longContent = [
 
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
-const defaultVideoPosterUrl =
-  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0";
 
 export const videoLeadAsset = (
-  {
-    brightcovePolicyKey = defaultBrightcovePolicyKey,
-    url = defaultVideoPosterUrl
-  } = {}
+  { brightcovePolicyKey = defaultBrightcovePolicyKey } = {}
 ) => ({
   brightcoveVideoId: "5831024132001",
   brightcovePolicyKey,
@@ -651,9 +646,14 @@ export const videoLeadAsset = (
     title: "",
     credits: "",
     caption: "CCTV captures moment of the explosion",
-    crop: {
+    crop169: {
       ratio: "16:9",
-      url,
+      url: "https://video169.io",
+      __typename: "Crop"
+    },
+    crop32: {
+      ratio: "3:2",
+      url: "https://video32.io",
       __typename: "Crop"
     },
     __typename: "Image"
@@ -1293,10 +1293,34 @@ const defaultLeadAsset = {
   title: "Chris Reynolds Gordon at one of his party venues in London",
   credits: "The credits",
   caption: "Chris Reynolds Gordon at one of his party venues in London",
-  crop: {
+  crop169: {
     ratio: "16:9",
-    url:
-      "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
+    url: "https://crop169.io/",
+    __typename: "Crop"
+  },
+  crop32: {
+    ratio: "3:2",
+    url: "https://crop32.io/",
+    __typename: "Crop"
+  },
+  crop1251: {
+    ratio: "1.25:1",
+    url: "https://crop1251.io/",
+    __typename: "Crop"
+  },
+  crop11: {
+    ratio: "1:1",
+    url: "https://crop11.io/",
+    __typename: "Crop"
+  },
+  crop45: {
+    ratio: "4:5",
+    url: "https://crop45.io/",
+    __typename: "Crop"
+  },
+  crop23: {
+    ratio: "2:3",
+    url: "https://crop23.io/",
     __typename: "Crop"
   },
   __typename: "Image"
@@ -1738,11 +1762,13 @@ const defaultRelatedArticleSlice = {
           id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
           title: "Rise of centenarian drivers as elderly push on",
           crop169: {
+            ratio: "16:9",
             url:
               "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108",
             __typename: "Crop"
           },
           crop32: {
+            ratio: "3:2",
             url:
               "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
             __typename: "Crop"
@@ -1872,11 +1898,13 @@ const defaultRelatedArticleSlice = {
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: "",
             crop169: {
+              ratio: "16:9",
               url:
                 "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0",
               __typename: "Crop"
             },
             crop32: {
+              ratio: "3:2",
               url:
                 "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0",
               __typename: "Crop"
@@ -2029,7 +2057,36 @@ export const testFixture = {
     title: "Some Title",
     credits: "Some Credits",
     caption: "Some Caption",
-    crop: { ratio: "16:9", url: "https://crop169.io", __typename: "Crop" },
+    crop169: {
+      ratio: "16:9",
+      url: "https://crop169.io",
+      __typename: "Crop"
+    },
+    crop32: {
+      ratio: "3:2",
+      url: "https://crop32.io",
+      __typename: "Crop"
+    },
+    crop1251: {
+      ratio: "1.25:1",
+      url: "https://crop1251.io",
+      __typename: "Crop"
+    },
+    crop11: {
+      ratio: "1:1",
+      url: "https://crop11.io",
+      __typename: "Crop"
+    },
+    crop45: {
+      ratio: "4:5",
+      url: "https://crop45.io",
+      __typename: "Crop"
+    },
+    crop23: {
+      ratio: "2:3",
+      url: "https://crop23.io",
+      __typename: "Crop"
+    },
     __typename: "Image"
   },
   relatedArticleSlice: {

@@ -24,6 +24,8 @@ const LeadAssetComponent = ({
   if (!leadAsset) {
     return null;
   }
+
+  const { url } = displayImage;
   const leadAssetView = isVideo ? (
     <Video
       accountId={leadAsset.brightcoveAccountId}
@@ -31,13 +33,13 @@ const LeadAssetComponent = ({
       paidOnly={leadAsset.paidOnly}
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
-      poster={{ uri: displayImage.url }}
+      poster={{ uri: url }}
       skySports={leadAsset.skySports}
       videoId={leadAsset.brightcoveVideoId}
       width="100%"
     />
   ) : (
-    <Image uri={displayImage.url} />
+    <Image uri={url} />
   );
 
   return (
@@ -60,7 +62,13 @@ LeadAssetComponent.propTypes = {
   leadAsset: PropTypes.shape({
     caption: PropTypes.string,
     credits: PropTypes.string,
-    crop: cropPropTypes
+    crop: cropPropTypes,
+    crop169: cropPropTypes,
+    crop32: cropPropTypes,
+    crop1251: cropPropTypes,
+    crop11: cropPropTypes,
+    crop45: cropPropTypes,
+    crop23: cropPropTypes
   }),
   isVideo: PropTypes.bool,
   aspectRatio: PropTypes.string,

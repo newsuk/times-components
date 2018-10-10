@@ -251,7 +251,7 @@ exports[`3. an article with a video as the lead asset 1`] = `
           policyKey="1.2.3.4"
           poster={
             Object {
-              "uri": "https://video.io",
+              "uri": "https://video169.io",
             }
           }
           videoId="5831024132001"
