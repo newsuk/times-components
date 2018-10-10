@@ -632,8 +632,6 @@ export const longContent = [
 
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
-const defaultVideoPosterUrl =
-  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0";
 
 export const videoLeadAsset = (
   {
