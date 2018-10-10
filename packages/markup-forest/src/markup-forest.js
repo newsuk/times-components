@@ -27,7 +27,7 @@ export const renderTreeAsText = (
   value ||
   children
     .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
-    .join(" ");
+    .join("");
 
 const nodeShape = {
   name: PropTypes.string.isRequired,
