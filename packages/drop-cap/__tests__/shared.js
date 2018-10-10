@@ -1,9 +1,23 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import {
+  addSerializers,
+  compose,
+  enzymeTreeSerializer,
+  flattenStyleTransform,
+  minimalNativeTransform,
+  print
+} from "@times-components/jest-serializer";
 import "./mock-text-measure-module";
 import DropCapWithContext from "../src/drop-cap-with-context";
 
 export default () => {
+  addSerializers(
+    expect,
+    enzymeTreeSerializer(),
+    compose(print, minimalNativeTransform, flattenStyleTransform)
+  );
+
   it("paragraph with single drop cap", () => {
     const testInstance = TestRenderer.create(
       <DropCapWithContext

@@ -12,72 +12,49 @@ exports[`paragraph with single drop cap 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     selectable={true}
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 80,
-          "lineHeight": undefined,
-          "marginBottom": -30,
-          "marginRight": 5,
-          "marginTop": -10,
-        },
-        Object {
-          "color": "black",
-        },
-      ]
+      Object {
+        "color": "black",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 80,
+        "lineHeight": undefined,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -10,
+      }
     }
   >
     I
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     selectable={true}
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 17,
-          "fontStyle": "normal",
-          "lineHeight": 26,
-          "marginBottom": 20,
-        },
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-        },
-      ]
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
     }
   >
     n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     selectable={true}
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 17,
-          "fontStyle": "normal",
-          "lineHeight": 26,
-          "marginBottom": 20,
-        },
-        Object {
-          "width": 730,
-        },
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
     }
   >
     wars, he said later that he had learnt “lessons which I have never forgotten.
