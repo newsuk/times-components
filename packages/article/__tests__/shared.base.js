@@ -437,7 +437,7 @@ const negativeTests = [
     }
   },
   {
-    name: "an article with missing 16:9 lead asset should fall back to use 3:2",
+    name: "an article with missing 16:9 lead asset",
     test() {
       const testInstance = TestRenderer.create(
         <Article
@@ -461,7 +461,9 @@ const negativeTests = [
         />
       );
 
-      expect(testInstance).toMatchSnapshot();
+      const leadAssetProps = testInstance.root.instance.props.article.leadAsset;
+      expect(leadAssetProps.crop169).toEqual(null);
+      expect(leadAssetProps.crop32).not.toEqual(null);
     }
   }
 ];
