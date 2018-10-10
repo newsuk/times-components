@@ -10,7 +10,6 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import {
@@ -263,7 +262,7 @@ export default {
         const sectionColour = selectSection(select);
 
         return (
-          <StorybookProvider>
+          <MockedProvider>
             {renderArticle({
               adConfig: articleAdConfig,
               analyticsStream: storybookReporter,
@@ -272,7 +271,7 @@ export default {
               scale,
               sectionColour
             })}
-          </StorybookProvider>
+          </MockedProvider>
         );
       }
     }
