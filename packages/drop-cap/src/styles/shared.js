@@ -22,7 +22,7 @@ const sharedStyles = scale => {
     },
     dropCapTextElement: {
       ...fontFactory({
-        font: "body",
+        font: "dropCap",
         fontSize: "dropCap"
       }),
       marginRight: spacing(1),

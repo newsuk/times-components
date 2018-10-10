@@ -35,7 +35,7 @@ class DropCapParagraph extends Component {
     const { screenWidth } = this.state;
 
     const {
-      dropCapTextElement: { fontSize: dropCapSize, marginRight: dropCapRight },
+      dropCapTextElement: { fontFamily: dropCapFontFamily, fontSize: dropCapSize, marginRight: dropCapRight },
       articleTextElement: { fontFamily, fontSize },
       articleMainContentRow: { paddingLeft, paddingRight }
     } = stylesScaled;
@@ -46,7 +46,7 @@ class DropCapParagraph extends Component {
       text: dropCap,
       width: screenWidth - margins,
       fontSize: dropCapSize,
-      fontFamily
+      fontFamily: dropCapFontFamily
     })
       .then(({ width }) =>
         RNTextSize.measure({

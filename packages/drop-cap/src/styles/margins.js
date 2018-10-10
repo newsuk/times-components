@@ -10,9 +10,9 @@ export default scale => {
     case scales.xlarge:
       return {
         bottom: -22,
-        top: -18
+        top: -16
       };
     default:
-      return { bottom: -30, top: -10 };
+      return { bottom: -30, top: -12 };
   }
 };
