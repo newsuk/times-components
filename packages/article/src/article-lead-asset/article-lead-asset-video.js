@@ -12,7 +12,6 @@ const ArticleLeadAssetVideo = ({
   onVideoPress,
   skySports
 }) => {
-
   const crop = getStandardTemplateCrop(posterImage);
   const { ratio, url } = crop;
   const [ratioWidth, ratioHeight] = ratio.split(":");

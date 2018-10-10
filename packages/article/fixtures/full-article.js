@@ -634,9 +634,7 @@ const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 
 export const videoLeadAsset = (
-  {
-    brightcovePolicyKey = defaultBrightcovePolicyKey
-  } = {}
+  { brightcovePolicyKey = defaultBrightcovePolicyKey } = {}
 ) => ({
   brightcoveVideoId: "5831024132001",
   brightcovePolicyKey,
