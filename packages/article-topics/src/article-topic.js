@@ -31,13 +31,13 @@ ArticleTopic.propTypes = propTypes;
 export default withTrackEvents(ArticleTopic, {
   analyticsEvents: [
     {
-      eventName: "onPress",
       actionName: "Pressed",
-      trackingName: "TopicLink",
+      eventName: "onPress",
       getAttrs: ({ name, slug }) => ({
         name,
         slug
-      })
+      }),
+      trackingName: "TopicLink"
     }
   ]
 });

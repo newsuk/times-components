@@ -9,8 +9,8 @@ jest.mock("@times-components/pagination", () => "Pagination");
 jest.mock("@times-components/tracking", () => {
   const mockTracking = component => component;
   return {
-    withTrackingContext: mockTracking,
     withTrackEvents: mockTracking,
+    withTrackingContext: mockTracking,
     withTrackScrollDepth: mockTracking
   };
 });

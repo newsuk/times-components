@@ -14,47 +14,47 @@ import reviewFixture from "./fixtures/review";
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 export default {
-  name: "Composed/Article Summary",
   children: [
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...defaultFixture()} />),
       name: "Default",
-      component: () => story(<ArticleSummary {...defaultFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...withSummaryLinksFixture()} />),
       name: "With links in summary",
-      component: () => story(<ArticleSummary {...withSummaryLinksFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...withBylineLinksFixture()} />),
       name: "With byline links",
-      component: () => story(<ArticleSummary {...withBylineLinksFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...noBylineFixture()} />),
       name: "No byline",
-      component: () => story(<ArticleSummary {...noBylineFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...articleMultiFixture()} />),
       name: "Summary with multiple paragraphs",
-      component: () => story(<ArticleSummary {...articleMultiFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...videoLabelFixture()} />),
       name: "Video label",
-      component: () => story(<ArticleSummary {...videoLabelFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...noLabelFixture()} />),
       name: "No label",
-      component: () => story(<ArticleSummary {...noLabelFixture()} />)
+      type: "story"
     },
     {
-      type: "story",
+      component: () => story(<ArticleSummary {...reviewFixture()} />),
       name: "Review/Rating summary",
-      component: () => story(<ArticleSummary {...reviewFixture()} />)
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Article Summary"
 };

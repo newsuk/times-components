@@ -15,44 +15,35 @@ export default (
     paragraph = defaultParagraph
   } = {}
 ) => ({
-  labelProps: {
-    title: label,
-    color: colours.functional.primary
-  },
-  datePublicationProps: {
-    date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
-  },
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
   bylineProps: {
     ast: [
       {
-        name: "author",
         attributes: {
           slug: "camilla-long"
         },
         children: [
           {
-            name: "text",
             attributes: {
               value: "Camilla Long"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "author"
       },
       {
-        name: "inline",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: ", Environment Editor"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "inline"
       }
     ],
     hasBylineLinks: true
@@ -61,19 +52,28 @@ export default (
     <ArticleSummaryContent
       ast={[
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         }
       ]}
     />
-  )
+  ),
+  datePublicationProps: {
+    date: "2017-11-17T00:01:00.000Z",
+    publication: "TIMES"
+  },
+  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  labelProps: {
+    color: colours.functional.primary,
+    title: label
+  }
 });

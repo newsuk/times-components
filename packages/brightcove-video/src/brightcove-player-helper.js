@@ -34,8 +34,8 @@ class BrightcoveVideo extends Component {
     this.state = {
       // eslint-disable-next-line react/no-unused-state
       appState: AppState.currentState,
-      isPlaying: false,
       isFinished: false,
+      isPlaying: false,
       progress: 0
     };
 
@@ -45,8 +45,8 @@ class BrightcoveVideo extends Component {
     this.handleAppStateChange = this.handleAppStateChange.bind(this);
 
     this.publicMethods = {
-      play: this.play.bind(this),
-      pause: this.pause.bind(this)
+      pause: this.pause.bind(this),
+      play: this.play.bind(this)
     };
   }
 
@@ -70,10 +70,10 @@ class BrightcoveVideo extends Component {
 
   handleChange(evt) {
     const newState = {
-      isPlaying: evt.nativeEvent.isPlaying,
       duration: evt.nativeEvent.duration,
-      progress: evt.nativeEvent.progress,
-      isFinished: evt.nativeEvent.isFinished
+      isFinished: evt.nativeEvent.isFinished,
+      isPlaying: evt.nativeEvent.isPlaying,
+      progress: evt.nativeEvent.progress
     };
 
     const playerStatusChanged = newState.isPlaying !== this.state.isPlaying;
@@ -151,8 +151,8 @@ class BrightcoveVideo extends Component {
         }}
         style={{
           height: this.props.height,
-          width: this.props.width,
           position: this.props.position,
+          width: this.props.width,
           zIndex: this.props.zIndex
         }} // android handler seems to be reserved on iOS
         videoId={this.props.videoId} // so we use this instead
@@ -163,20 +163,20 @@ class BrightcoveVideo extends Component {
 
 BrightcoveVideo.defaultProps = Object.assign(
   {
-    runNativeCommand: () => {},
     onChange: () => {},
     position: "relative",
+    runNativeCommand: () => {},
     zIndex: 0
   },
   defaults
 );
 BrightcoveVideo.propTypes = {
-  runNativeCommand: PropTypes.func.isRequired,
-  onChange: PropTypes.func,
-  position: PropTypes.string,
-  zIndex: PropTypes.number,
   ...propTypes,
-  policyKey: PropTypes.string.isRequired
+  onChange: PropTypes.func,
+  policyKey: PropTypes.string.isRequired,
+  position: PropTypes.string,
+  runNativeCommand: PropTypes.func.isRequired,
+  zIndex: PropTypes.number
 };
 
 export default BrightcoveVideo;

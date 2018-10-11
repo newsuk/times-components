@@ -52,11 +52,8 @@ const pageSize = 10;
 const slug = "deborah-haynes";
 
 export default {
-  name: "Composed/Article List",
   children: [
     {
-      type: "story",
-      name: "Default with images",
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
@@ -104,11 +101,11 @@ export default {
             </MockedProvider>
           )}
         />
-      )
+      ),
+      name: "Default with images",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Default without images",
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
@@ -156,11 +153,11 @@ export default {
             </MockedProvider>
           )}
         />
-      )
+      ),
+      name: "Default without images",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With a short headline",
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
@@ -219,11 +216,11 @@ export default {
             </MockedProvider>
           )}
         />
-      )
+      ),
+      name: "With a short headline",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With a header",
       component: (_, { decorateAction }) => {
         const articleListHeader = (
           <View
@@ -288,27 +285,27 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "With a header",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading articles",
       component: (_, { decorateAction }) => (
         <TrackedArticleList {...getProps(decorateAction)} articlesLoading />
-      )
+      ),
+      name: "Loading articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Error getting page-level data",
       component: (_, { decorateAction }) => (
         <ArticleListPageError
           refetch={preventDefaultedAction(decorateAction)("refetch")}
         />
-      )
+      ),
+      name: "Error getting page-level data",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Error getting article list data",
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
@@ -357,11 +354,11 @@ export default {
             </MockedProvider>
           )}
         />
-      )
+      ),
+      name: "Error getting article list data",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Empty article list",
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
@@ -409,7 +406,10 @@ export default {
             </MockedProvider>
           )}
         />
-      )
+      ),
+      name: "Empty article list",
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Article List"
 };

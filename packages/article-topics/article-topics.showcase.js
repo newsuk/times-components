@@ -14,11 +14,8 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 export default {
-  name: "Primitives/Article Topics",
   children: [
     {
-      type: "story",
-      name: "Group of Topics",
       component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, scales.medium);
         return (
@@ -29,17 +26,20 @@ export default {
             />
           </Context.Provider>
         );
-      }
+      },
+      name: "Group of Topics",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Single Topic",
       component: (_, { decorateAction }) => (
         <ArticleTopics
           onPress={preventDefaultedAction(decorateAction)("onPress")}
           topics={[topicsData[0]]}
         />
-      )
+      ),
+      name: "Single Topic",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Article Topics"
 };

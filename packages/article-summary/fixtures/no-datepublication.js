@@ -17,25 +17,20 @@ export default (
     paragraph = defaultParagraph
   } = {}
 ) => ({
-  labelProps: {
-    title: label,
-    color: colours.functional.primary
-  },
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
   bylineProps: {
     ast: [
       {
-        name: "inline",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: byline
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "inline"
       }
     ]
   },
@@ -43,19 +38,24 @@ export default (
     <ArticleSummaryContent
       ast={[
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         }
       ]}
     />
-  )
+  ),
+  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  labelProps: {
+    color: colours.functional.primary,
+    title: label
+  }
 });

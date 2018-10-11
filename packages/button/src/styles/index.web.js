@@ -11,14 +11,14 @@ const styles = {
     cursor: "pointer",
     height: 45,
     justifyContent: "center",
+    lineHeight: 0,
     minWidth: 100,
+    paddingTop: 4,
+    width: 160,
     ...fontFactory({
       font: "supporting",
       fontSize: "button"
-    }),
-    paddingTop: 4,
-    lineHeight: 0,
-    width: 160
+    })
   }
 };
 

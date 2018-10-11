@@ -22,73 +22,73 @@ export default (
     id2 = defaultId2
   } = {}
 ) => ({
-  labelProps: {
-    title: label,
-    color: colours.functional.primary
-  },
+  content: () => (
+    <ArticleSummaryContent
+      ast={[
+        {
+          children: [
+            {
+              attributes: {
+                canonicalId: id1,
+                href: link1,
+                type: "article"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Sajid Javid"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
+            },
+            {
+              attributes: {
+                value:
+                  " has warned the Home Office to expect an overhaul after the "
+              },
+              children: [],
+              name: "text"
+            },
+            {
+              attributes: {
+                canonicalId: id2,
+                href: link2,
+                type: "article"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Windrush scandal"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
+            },
+            {
+              attributes: {
+                value: " as he ditches the policy of creating a “hostile"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "paragraph"
+        }
+      ]}
+    />
+  ),
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
   headline: () => <ArticleSummaryHeadline headline={headline} />,
-  content: () => (
-    <ArticleSummaryContent
-      ast={[
-        {
-          name: "paragraph",
-          children: [
-            {
-              name: "link",
-              attributes: {
-                href: link1,
-                type: "article",
-                canonicalId: id1
-              },
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Sajid Javid"
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "text",
-              attributes: {
-                value:
-                  " has warned the Home Office to expect an overhaul after the "
-              },
-              children: []
-            },
-            {
-              name: "link",
-              attributes: {
-                href: link2,
-                type: "article",
-                canonicalId: id2
-              },
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Windrush scandal"
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "text",
-              attributes: {
-                value: " as he ditches the policy of creating a “hostile"
-              },
-              children: []
-            }
-          ]
-        }
-      ]}
-    />
-  )
+  labelProps: {
+    color: colours.functional.primary,
+    title: label
+  }
 });

@@ -9,28 +9,28 @@ const defaultParagraph =
 export default (
   { headline = defaultHeadline, paragraph = defaultParagraph } = {}
 ) => ({
-  datePublicationProps: {
-    date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
-  },
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
   content: () => (
     <ArticleSummaryContent
       ast={[
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         }
       ]}
     />
-  )
+  ),
+  datePublicationProps: {
+    date: "2017-11-17T00:01:00.000Z",
+    publication: "TIMES"
+  },
+  headline: () => <ArticleSummaryHeadline headline={headline} />
 });

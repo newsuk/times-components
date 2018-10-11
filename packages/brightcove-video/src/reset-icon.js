@@ -34,9 +34,9 @@ ResetIcon.defaultProps = {
 };
 
 ResetIcon.propTypes = {
-  width: PropTypes.number.isRequired,
   strW: PropTypes.number,
-  svgW: PropTypes.number
+  svgW: PropTypes.number,
+  width: PropTypes.number.isRequired
 };
 
 export default ResetIcon;

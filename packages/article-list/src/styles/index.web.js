@@ -6,10 +6,6 @@ const { colours, fontFactory, spacing } = styleguide();
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  paginationSpacing: {
-    ...sharedStyles.paginationSpacing,
-    flex: 1
-  },
   adContainer: {
     borderBottomWidth: 1,
     borderColor: colours.functional.keyline,
@@ -21,17 +17,10 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: spacing(3)
   },
-  listErrorHeading: {
-    ...sharedStyles.listErrorHeading,
+  listEmptyBackButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
     marginTop: spacing(4)
-  },
-  listErrorMessage: {
-    ...sharedStyles.listErrorMessage,
-    lineHeight: 27
-  },
-  listEmptyStateContainer: {
-    height: "100vh",
-    justifyContent: "flex-end"
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
@@ -44,13 +33,24 @@ const styles = StyleSheet.create({
     textAlign: "center",
     top: "140px"
   },
+  listEmptyStateContainer: {
+    height: "100vh",
+    justifyContent: "flex-end"
+  },
   listEmptyWatermarkContainer: {
     alignSelf: "flex-end"
   },
-  listEmptyBackButton: {
-    alignSelf: "center",
-    marginBottom: spacing(2),
+  listErrorHeading: {
+    ...sharedStyles.listErrorHeading,
     marginTop: spacing(4)
+  },
+  listErrorMessage: {
+    ...sharedStyles.listErrorMessage,
+    lineHeight: 27
+  },
+  paginationSpacing: {
+    ...sharedStyles.paginationSpacing,
+    flex: 1
   }
 });
 
@@ -61,9 +61,9 @@ const retryButtonStyles = {
 };
 
 const watermarkStyles = {
-  width: 500,
   height: 350,
-  viewBox: "0 0 350 200"
+  viewBox: "0 0 350 200",
+  width: 500
 };
 
 export { retryButtonStyles, watermarkStyles };

@@ -6,18 +6,18 @@ const numberOrString = PropTypes.oneOfType([
 ]);
 
 export default {
-  videoId: PropTypes.string.isRequired,
   accountId: PropTypes.string.isRequired,
-  policyKey: PropTypes.string,
-  playerId: PropTypes.string,
-  width: numberOrString,
-  height: numberOrString,
-  onError: PropTypes.func,
-  onPlay: PropTypes.func,
-  onPause: PropTypes.func,
-  onFinish: PropTypes.func,
-  onProgress: PropTypes.func,
-  onDuration: PropTypes.func,
   autoplay: PropTypes.bool,
-  hideFullScreenButton: PropTypes.bool
+  height: numberOrString,
+  hideFullScreenButton: PropTypes.bool,
+  onDuration: PropTypes.func,
+  onError: PropTypes.func,
+  onFinish: PropTypes.func,
+  onPause: PropTypes.func,
+  onPlay: PropTypes.func,
+  onProgress: PropTypes.func,
+  playerId: PropTypes.string,
+  policyKey: PropTypes.string,
+  videoId: PropTypes.string.isRequired,
+  width: numberOrString
 };

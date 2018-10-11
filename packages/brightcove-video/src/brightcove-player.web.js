@@ -86,10 +86,10 @@ class BrightcoveVideo extends Component {
     BrightcoveVideo.globalErrors.forEach(this.props.onError);
 
     this.state = {
-      id: `${props.videoId}-${props.accountId}-${index}`,
       errors: [].concat(BrightcoveVideo.globalErrors),
-      isPlaying: "paused",
+      id: `${props.videoId}-${props.accountId}-${index}`,
       isFinished: false,
+      isPlaying: "paused",
       progress: 0
     };
   }
@@ -171,9 +171,9 @@ class BrightcoveVideo extends Component {
 
   onPlay(player) {
     this.setState({
+      isFinished: false,
       isPlaying: true,
-      progress: BrightcoveVideo.getCurrentTimeMs(player),
-      isFinished: false
+      progress: BrightcoveVideo.getCurrentTimeMs(player)
     });
   }
 
@@ -188,8 +188,8 @@ class BrightcoveVideo extends Component {
 
   onSeeked(player) {
     this.setState({
-      progress: BrightcoveVideo.getCurrentTimeMs(player),
-      isFinished: false
+      isFinished: false,
+      progress: BrightcoveVideo.getCurrentTimeMs(player)
     });
   }
 
@@ -260,10 +260,18 @@ class BrightcoveVideo extends Component {
     /* eslint jsx-a11y/media-has-caption: "off" */
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
-      <div style={{ width: this.props.width, height: this.props.height }}>
+      <div
+        style={{
+          height: this.props.height,
+          width: this.props.width
+        }}
+      >
         <video
           id={this.state.id}
-          style={{ width: this.props.width, height: this.props.height }}
+          style={{
+            height: this.props.height,
+            width: this.props.width
+          }}
           {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
           // following 'autoplay' can not expected to always work on web
           // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html

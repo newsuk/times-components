@@ -6,12 +6,12 @@ import PlayIcon from "./play-icon";
 
 const styles = StyleSheet.create({
   overlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
+    alignItems: "center",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    left: 0,
+    position: "absolute",
+    top: 0
   }
 });
 
@@ -22,42 +22,55 @@ const addMissingProtocolToPoster = poster => ({
 const Splash = ({ poster, width, height, playIcon }) => (
   <View
     accessibilityLabel="splash-component"
-    style={{ width, height }}
+    style={{
+      height,
+      width
+    }}
     testID="splash-component"
   >
     {poster ? (
       <Image
         source={addMissingProtocolToPoster(poster)}
         style={{
-          width,
-          height
+          height,
+          width
         }}
       />
     ) : (
       <View
         style={{
-          width,
+          backgroundColor: "black",
           height,
-          backgroundColor: "black"
+          width
         }}
       />
     )}
-    <View style={[styles.overlay, { width, height }]}>
+    <View
+      style={[
+        styles.overlay,
+        {
+          height,
+          width
+        }
+      ]}
+    >
       <PlayIcon icon={playIcon} />
     </View>
   </View>
 );
 
 Splash.defaultProps = {
-  poster: null,
-  playIcon: null
+  playIcon: null,
+  poster: null
 };
 
 Splash.propTypes = {
-  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   playIcon: PropTypes.node,
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+  poster: PropTypes.shape({
+    uri: PropTypes.string.isRequired
+  }),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default Splash;

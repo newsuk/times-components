@@ -51,9 +51,9 @@ class VideoAdder extends Component {
 }
 
 VideoAdder.propTypes = {
-  videoId: PropTypes.string.isRequired,
   accountId: PropTypes.string.isRequired,
-  policyKey: PropTypes.string.isRequired
+  policyKey: PropTypes.string.isRequired,
+  videoId: PropTypes.string.isRequired
 };
 
 export default VideoAdder;

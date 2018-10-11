@@ -12,8 +12,8 @@ class BrightcoveVideo extends Component {
     super(props);
 
     this.state = {
-      isLaunched: props.autoplay,
-      error: null
+      error: null,
+      isLaunched: props.autoplay
     };
 
     this.play = this.play.bind(this);
@@ -47,7 +47,10 @@ class BrightcoveVideo extends Component {
   }
 
   reset() {
-    this.setState({ isLaunched: false, error: null });
+    this.setState({
+      error: null,
+      isLaunched: false
+    });
   }
 
   handleFinish() {

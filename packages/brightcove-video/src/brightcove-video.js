@@ -23,8 +23,8 @@ class BrightcoveVideo extends Component {
     super(props);
 
     this.state = {
-      isLaunched: props.autoplay,
-      error: null
+      error: null,
+      isLaunched: props.autoplay
     };
   }
 
@@ -53,8 +53,8 @@ class BrightcoveVideo extends Component {
     if (nativeModule && this.props.directToFullscreen) {
       nativeModule.playVideo({
         accountId: this.props.accountId,
-        videoId: this.props.videoId,
-        policyKey: this.props.policyKey
+        policyKey: this.props.policyKey,
+        videoId: this.props.videoId
       });
     } else {
       if (this.playerRef) {
@@ -72,7 +72,10 @@ class BrightcoveVideo extends Component {
   };
 
   reset = () => {
-    this.setState({ isLaunched: false, error: null });
+    this.setState({
+      error: null,
+      isLaunched: false
+    });
   };
 
   handlePlay = () => {
@@ -121,7 +124,12 @@ class BrightcoveVideo extends Component {
 
     return (
       <TouchableWithoutFeedback onPress={this.play}>
-        <View style={{ width: this.props.width, height: this.props.height }}>
+        <View
+          style={{
+            height: this.props.height,
+            width: this.props.width
+          }}
+        >
           <Splash {...this.props} />
         </View>
       </TouchableWithoutFeedback>
