@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.4.0"></a>
+# [5.4.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.3.0...@times-components/article@5.4.0) (2018-10-11)
+
+
+### Features
+
+* add lazy load to article ([#1387](https://github.com/newsuk/times-components/issues/1387)) ([cd05e83](https://github.com/newsuk/times-components/commit/cd05e83))
+* add lead asset image crop fallbacks ([#1391](https://github.com/newsuk/times-components/issues/1391)) ([11c7ef6](https://github.com/newsuk/times-components/commit/11c7ef6))
+
+
+
+
+
 <a name="5.3.0"></a>
 # [5.3.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.2.9...@times-components/article@5.3.0) (2018-10-06)
 

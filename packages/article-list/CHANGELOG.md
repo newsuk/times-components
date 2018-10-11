@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.3.0"></a>
+# [5.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.2.11...@times-components/article-list@5.3.0) (2018-10-11)
+
+
+### Bug Fixes
+
+* missing item in article list ([#1399](https://github.com/newsuk/times-components/issues/1399)) ([c87ce69](https://github.com/newsuk/times-components/commit/c87ce69))
+
+
+### Features
+
+* add lazy load to article ([#1387](https://github.com/newsuk/times-components/issues/1387)) ([cd05e83](https://github.com/newsuk/times-components/commit/cd05e83))
+
+
+
+
+
 <a name="5.2.11"></a>
 ## [5.2.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.2.10...@times-components/article-list@5.2.11) (2018-10-06)
 

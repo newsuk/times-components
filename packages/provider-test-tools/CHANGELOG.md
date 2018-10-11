@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.6.0...@times-components/provider-test-tools@1.7.0) (2018-10-11)
+
+
+### Features
+
+* add lead asset image crop fallbacks ([#1391](https://github.com/newsuk/times-components/issues/1391)) ([11c7ef6](https://github.com/newsuk/times-components/commit/11c7ef6))
+
+
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.5.3...@times-components/provider-test-tools@1.6.0) (2018-10-06)
 
