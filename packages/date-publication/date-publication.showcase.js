@@ -21,11 +21,8 @@ const timezones = [
 ];
 
 export default {
-  name: "Primitives/Date Publication",
   children: [
     {
-      type: "story",
-      name: "Default",
       component: ({ selectV2 }) => (
         <Text style={styles.text}>
           <DatePublication
@@ -33,16 +30,19 @@ export default {
             publication="SUNDAYTIMES"
           />
         </Text>
-      )
+      ),
+      name: "Default",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Without Publication",
       component: () => (
         <Text style={styles.text}>
           <DatePublication date="2017-07-01T14:32:00.000Z" />
         </Text>
-      )
+      ),
+      name: "Without Publication",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Date Publication"
 };
