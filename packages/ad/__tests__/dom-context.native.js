@@ -18,9 +18,9 @@ export default () => {
   const makeMessageEvent = (type, detail) => ({
     nativeEvent: {
       data: JSON.stringify({
+        detail,
         isTngMessage: true,
-        type,
-        detail
+        type
       })
     }
   });

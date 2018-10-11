@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 export const propTypes = {
   adConfig: PropTypes.shape({
-    networkId: PropTypes.string.isRequired,
     adUnit: PropTypes.string.isRequired,
-    pageTargeting: PropTypes.shape({}),
-    slotTargeting: PropTypes.shape({}),
     biddersConfig: PropTypes.shape({}),
-    bidderSlots: PropTypes.arrayOf(PropTypes.string)
+    bidderSlots: PropTypes.arrayOf(PropTypes.string),
+    networkId: PropTypes.string.isRequired,
+    pageTargeting: PropTypes.shape({}),
+    slotTargeting: PropTypes.shape({})
   }),
   children: PropTypes.oneOfType([
     PropTypes.element,
@@ -18,37 +18,37 @@ export const propTypes = {
 // @TODO: check these are sensible
 export const defaultProps = {
   adConfig: {
-    networkId: "25436805",
     adUnit: "d.thetimes.co.uk",
-    pageTargeting: {
-      title: "This is title",
-      label: "This is label"
-    },
-    slotTargeting: {
-      section: "news"
-    },
     biddersConfig: {
-      timeout: 3000,
-      minPrice: 0.01,
-      maxBid: 15,
-      bucketSize: 0.25,
       bidders: {
+        amazon: {
+          accountId: "3360"
+        },
         appnexus: {
           placementId: "5823281"
+        },
+        indexExchange: {
+          siteId: "188830"
         },
         rubicon: {
           accountId: "14062",
           siteId: "70608",
           zoneId: "335918"
-        },
-        amazon: {
-          accountId: "3360"
-        },
-        indexExchange: {
-          siteId: "188830"
         }
-      }
+      },
+      bucketSize: 0.25,
+      maxBid: 15,
+      minPrice: 0.01,
+      timeout: 3000
     },
-    bidderSlots: ["ad-header", "ad-article-inline"]
+    bidderSlots: ["ad-header", "ad-article-inline"],
+    networkId: "25436805",
+    pageTargeting: {
+      label: "This is label",
+      title: "This is title"
+    },
+    slotTargeting: {
+      section: "news"
+    }
   }
 };

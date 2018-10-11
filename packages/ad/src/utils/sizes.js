@@ -48,18 +48,18 @@ const sizes = {
       width: 1024
     }
   ],
-  pixel: [
-    {
-      height: 0,
-      sizes: [[1, 1]],
-      width: 0
-    }
-  ],
   native: [
     {
       height: 250,
       sizes: [[300, 250]],
       width: 300
+    }
+  ],
+  pixel: [
+    {
+      height: 0,
+      sizes: [[1, 1]],
+      width: 0
     }
   ]
 };

@@ -7,9 +7,9 @@ export default () => {
   const dummyValue = 99;
 
   const { adserverTargeting } = prebidConfig.bidderSettings({
+    bucketSize,
     maxBid,
-    minPrice,
-    bucketSize
+    minPrice
   });
 
   it("should return the correct value for the hd_bidder", () => {

@@ -64,11 +64,8 @@ const renderAd = slotName => (
 );
 
 export default {
-  name: "Primitives/Advertisement",
   children: [
     {
-      type: "story",
-      name: "Placeholder",
       component: ({ selectV2 }) =>
         renderAdPlaceholder(
           selectV2(
@@ -76,11 +73,11 @@ export default {
             placeholderSizes,
             placeholderSizes[0]
           )
-        )
+        ),
+      name: "Placeholder",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Ad Loading State",
       component: () =>
         withOpenInNewWindow(
           <Ad
@@ -89,15 +86,18 @@ export default {
             section="news"
             slotName="header"
           />
-        )
+        ),
+      name: "Ad Loading State",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Ad",
       component: ({ selectV2 }) =>
         withOpenInNewWindow(
           renderAd(selectV2("Slot Name:", slotNames, slotNames[1]))
-        )
+        ),
+      name: "Ad",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Advertisement"
 };
