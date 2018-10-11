@@ -17,9 +17,9 @@ class GradientBase extends Component {
 
   onLayout = ({ nativeEvent: { layout: { width, height } } }) => {
     this.setState({
-  height,
-  width
-});
+      height,
+      width
+    });
   };
 
   render() {

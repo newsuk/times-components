@@ -16,13 +16,15 @@ iterator([
           [
             {
               attributes: {},
-              children: [{
-                attributes: {
-                  value: "some text here"
-                },
-                children: [],
-                name: "text"
-              }],
+              children: [
+                {
+                  attributes: {
+                    value: "some text here"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
               name: "bold"
             }
           ],
