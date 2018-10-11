@@ -12,52 +12,72 @@ const readFile = promisify(fs.readFile);
 const mockSchema = {
   data: {
     __schema: {
-      queryType: { name: "Query" },
-      mutationType: { name: "Mutation" },
+      directives: [],
+      mutationType: {
+        name: "Mutation"
+      },
+      queryType: {
+        name: "Query"
+      },
       subscriptionType: null,
       types: [
         {
-          kind: "OBJECT",
-          name: "Query",
           description: "",
+          enumValues: null,
           fields: [
             {
-              name: "author",
-              description: "A list of authors",
               args: [],
-              type: { kind: "OBJECT", name: "Author", ofType: null },
+              deprecationReason: null,
+              description: "A list of authors",
               isDeprecated: false,
-              deprecationReason: null
+              name: "author",
+              type: {
+                kind: "OBJECT",
+                name: "Author",
+                ofType: null
+              }
             }
           ],
           inputFields: null,
           interfaces: [],
-          enumValues: null,
+          kind: "OBJECT",
+          name: "Query",
           possibleTypes: null
         },
         {
-          name: "leadAsset",
-          description: "",
           args: [],
-          type: { kind: "UNION", name: "Media", ofType: null },
+          deprecationReason: null,
+          description: "",
           isDeprecated: false,
-          deprecationReason: null
+          name: "leadAsset",
+          type: {
+            kind: "UNION",
+            name: "Media",
+            ofType: null
+          }
         },
         {
-          kind: "UNION",
-          name: "Media",
           description: "",
+          enumValues: null,
           fields: null,
           inputFields: null,
           interfaces: null,
-          enumValues: null,
+          kind: "UNION",
+          name: "Media",
           possibleTypes: [
-            { kind: "OBJECT", name: "Image", ofType: null },
-            { kind: "OBJECT", name: "Video", ofType: null }
+            {
+              kind: "OBJECT",
+              name: "Image",
+              ofType: null
+            },
+            {
+              kind: "OBJECT",
+              name: "Video",
+              ofType: null
+            }
           ]
         }
-      ],
-      directives: []
+      ]
     }
   }
 };

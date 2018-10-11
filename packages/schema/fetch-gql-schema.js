@@ -9,13 +9,13 @@ const writeFile = promisify(fs.writeFile);
 
 const fetchIntrospection = async (fetch, endpoint) => {
   const fetchResult = await fetch(endpoint, {
-    method: "POST",
     body: JSON.stringify({
       query: introspectionQuery
     }),
     headers: {
       "Content-Type": "application/json"
-    }
+    },
+    method: "POST"
   });
 
   return fetchResult.json();
