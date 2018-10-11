@@ -8,8 +8,8 @@ export const propTypes = {
   children: PropTypes.element,
   credits: PropTypes.string,
   style: PropTypes.shape({
-    text: TextPropTypesStyle,
-    container: ViewPropTypesStyle
+    container: ViewPropTypesStyle,
+    text: TextPropTypesStyle
   }),
   text: PropTypes.string
 };
