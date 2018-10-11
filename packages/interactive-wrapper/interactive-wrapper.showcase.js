@@ -5,11 +5,8 @@ import InteractiveWrapper from "./src/interactive-wrapper";
 import fixtures from "./fixtures";
 
 export default {
-  name: "Primitives/Interactive Wrapper",
   children: [
     {
-      type: "story",
-      name: "Interactive Wrapper",
       component: ({ select }) => {
         const value = select(
           "Interactive Wrapper",
@@ -38,7 +35,10 @@ export default {
             ))}
           </ScrollView>
         );
-      }
+      },
+      name: "Interactive Wrapper",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Interactive Wrapper"
 };

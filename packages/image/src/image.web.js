@@ -80,18 +80,18 @@ class TimesImage extends Component {
 
     const styles = StyleSheet.create({
       placeholder: {
-        position: "absolute",
-        top: 0,
         bottom: 0,
         left: 0,
+        position: "absolute",
         right: 0,
+        top: 0,
         zIndex: 0
       },
       wrapper: {
+        display: "table",
         height: 0,
         overflow: "hidden",
-        paddingBottom: `${100 / aspectRatio}%`,
-        display: "table"
+        paddingBottom: `${100 / aspectRatio}%`
       }
     });
 

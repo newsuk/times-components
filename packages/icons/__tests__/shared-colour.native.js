@@ -16,8 +16,8 @@ export default () => {
     compose(
       print,
       replaceTransform({
-        ARTSurfaceView: justChildren,
-        ARTGroup: justChildren
+        ARTGroup: justChildren,
+        ARTSurfaceView: justChildren
       }),
       flattenStyleTransform,
       minimaliseTransform((value, key) => key !== "stroke" && key !== "fill")

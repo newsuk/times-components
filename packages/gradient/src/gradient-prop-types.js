@@ -13,7 +13,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  degrees: 265,
   children: null,
+  degrees: 265,
   style: null
 };

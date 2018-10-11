@@ -17,12 +17,16 @@ const IconStar = ({
   <Svg
     role="img"
     viewBox={viewBox}
-    {...clean({ title, height, width: width || height })}
+    {...clean({
+      height,
+      title,
+      width: width || height
+    })}
   >
     <Polygon
       {...clean({
-        stroke: strokeColour,
-        fill: fillColour
+        fill: fillColour,
+        stroke: strokeColour
       })}
       points="20.5 24.9716827 15.0965 27.8124708 16.1284766 21.7955851 11.7569533 17.5344029 17.79825 16.6565511 20.5 11.1822077 23.20175 16.6565511 29.2430467 17.5344029 24.8715234 21.7955851 25.9035 27.8124708"
     />

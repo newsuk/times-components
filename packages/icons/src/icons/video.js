@@ -18,12 +18,16 @@ const IconVideo = ({
   <Svg
     role="img"
     viewBox={viewBox}
-    {...clean({ title, height, width: width || height * ratio })}
+    {...clean({
+      height,
+      title,
+      width: width || height * ratio
+    })}
   >
     <Rect
       {...clean({
-        stroke: strokeColour,
-        fill: fillColour
+        fill: fillColour,
+        stroke: strokeColour
       })}
       height="13.5721404"
       width="15.4550103"
@@ -32,15 +36,15 @@ const IconVideo = ({
     />
     <Polygon
       {...clean({
-        stroke: strokeColour,
-        fill: fillColour
+        fill: fillColour,
+        stroke: strokeColour
       })}
       points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
     />
     <Polygon
       {...clean({
-        stroke: strokeColour,
-        fill: fillColour
+        fill: fillColour,
+        stroke: strokeColour
       })}
       points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
     />
