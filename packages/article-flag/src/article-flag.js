@@ -21,8 +21,8 @@ const ArticleFlag = ({ title, color }) => (
 );
 
 ArticleFlag.propTypes = {
-  title: PropTypes.string.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  title: PropTypes.string.isRequired
 };
 
 ArticleFlag.defaultProps = {
