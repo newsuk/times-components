@@ -2,13 +2,8 @@
 
 exports[`card with reversed layout 1`] = `
 .c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-.c1 {
   display: block;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -16,7 +11,7 @@ exports[`card with reversed layout 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -66,8 +61,8 @@ exports[`card with reversed layout 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex-direction": "column",
-    "margin-bottom": "0px",
-    "min-width": "0px",
+    "margin-bottom": "10px",
+    "min-width": "100%",
   },
   "S3": {
     "-ms-flex-align": "stretch",
@@ -80,8 +75,8 @@ exports[`card with reversed layout 1`] = `
     "align-items": "stretch",
     "display": "flex",
     "flex-direction": "column",
-    "margin-bottom": "10px",
-    "min-width": "100%",
+    "margin-bottom": "0px",
+    "min-width": "0px",
   },
   "S4": {
     "-ms-flex-align": "stretch",
@@ -127,19 +122,13 @@ exports[`card with reversed layout 1`] = `
   className="S5"
 >
   <div
-    className="S3"
+    className="S2"
   >
-    <indexweb__FadeIn>
-      <div
-        className="c0 S2"
-      >
-        <div
-          className="S1"
-        >
-          A card in reverse
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div
+      className="S1"
+    >
+      A card in reverse
+    </div>
   </div>
   <div
     className="S4"

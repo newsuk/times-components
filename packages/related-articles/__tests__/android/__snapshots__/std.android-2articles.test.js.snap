@@ -13,104 +13,110 @@ exports[`1. two related articles 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://first.io"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://crop1.io"
-            isReversed={false}
-            lowResSize={100}
-            showImage={true}
+            url="https://first.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://crop1.io"
+              isReversed={false}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  FIRST LABEL
+                <View>
+                  <Text>
+                    FIRST LABEL
+                  </Text>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  First Short Headline
                 </Text>
-              </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                First Short Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Camilla Long, Environment Editor
                   </Text>
                 </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-              <Text>
-                <Text>
-                  Camilla Long, Environment Editor
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://second.io"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://crop2.io"
-            isReversed={false}
-            lowResSize={100}
-            showImage={true}
+            url="https://second.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://crop2.io"
+              isReversed={false}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  SECOND LABEL
+                <View>
+                  <Text>
+                    SECOND LABEL
+                  </Text>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Second Short Headline
                 </Text>
-              </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Second Short Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  January 17 2018, 12:00pm
+                </Text>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Camilla Long, Environment Editor
                   </Text>
                 </Text>
               </View>
-              <Text>
-                January 17 2018, 12:00pm
-              </Text>
-              <Text>
-                <Text>
-                  Camilla Long, Environment Editor
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

@@ -19,7 +19,8 @@ const LeadAssetComponent = ({
   aspectRatio,
   displayImage,
   isVideo,
-  leadAsset
+  leadAsset,
+  width
 }) => {
   if (!leadAsset) {
     return null;
@@ -39,7 +40,7 @@ const LeadAssetComponent = ({
       width="100%"
     />
   ) : (
-    <Image uri={url} />
+    <Image highResSize={width} lowResSize={100} uri={url} />
   );
 
   return (
@@ -59,6 +60,9 @@ const LeadAssetComponent = ({
 };
 
 LeadAssetComponent.propTypes = {
+  aspectRatio: PropTypes.string,
+  displayImage: cropPropTypes,
+  isVideo: PropTypes.bool,
   leadAsset: PropTypes.shape({
     caption: PropTypes.string,
     credits: PropTypes.string,
@@ -70,16 +74,15 @@ LeadAssetComponent.propTypes = {
     crop45: cropPropTypes,
     crop23: cropPropTypes
   }),
-  isVideo: PropTypes.bool,
-  aspectRatio: PropTypes.string,
-  displayImage: cropPropTypes
+  width: PropTypes.number
 };
 
 LeadAssetComponent.defaultProps = {
-  leadAsset: null,
-  isVideo: false,
   aspectRatio: "1",
-  displayImage: null
+  displayImage: null,
+  isVideo: false,
+  leadAsset: null,
+  width: null
 };
 
 export default LeadAssetComponent;

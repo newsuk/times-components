@@ -13,208 +13,211 @@ exports[`1. has video 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
-            isReversed={false}
-            lowResSize={100}
-            showImage={true}
+            url="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+              isReversed={false}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
                 <View>
                   <View>
-                    <ARTSurfaceView>
-                      <ARTGroup
-                        opacity={1}
-                        transform={
-                          Array [
-                            0.5982608695652174,
-                            0,
-                            0,
-                            0.5982608695652174,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <ARTShape
-                          d={
-                            Array [
-                              0,
-                              0.154639175,
-                              0.139754386,
-                              2,
-                              15.609649475,
-                              0.139754386,
-                              2,
-                              15.609649475,
-                              13.711894786,
-                              2,
-                              0.1546391749999998,
-                              13.711894786,
-                              2,
-                              0.1546391749999998,
-                              0.1397543859999999,
-                            ]
-                          }
-                          fill={
-                            Array [
-                              0,
-                              0.8588235294117647,
-                              0.07450980392156863,
-                              0.23137254901960785,
-                              1,
-                            ]
-                          }
+                    <View>
+                      <ARTSurfaceView>
+                        <ARTGroup
                           opacity={1}
-                          stroke={null}
-                          strokeCap={1}
-                          strokeDash={null}
-                          strokeJoin={1}
-                          strokeWidth={1}
                           transform={
                             Array [
-                              1,
+                              0.5982608695652174,
                               0,
                               0,
-                              1,
-                              0,
-                              0,
-                            ]
-                          }
-                        />
-                        <ARTShape
-                          d={
-                            Array [
-                              0,
-                              16.3405361,
-                              4.14989474,
-                              2,
-                              16.3405361,
-                              9.66442105,
-                              2,
-                              22.0216082,
-                              12.8146667,
-                              2,
-                              22.0216082,
-                              0.999894737,
-                            ]
-                          }
-                          fill={
-                            Array [
-                              0,
-                              0.8588235294117647,
-                              0.07450980392156863,
-                              0.23137254901960785,
-                              1,
-                            ]
-                          }
-                          opacity={1}
-                          stroke={null}
-                          strokeCap={1}
-                          strokeDash={null}
-                          strokeJoin={1}
-                          strokeWidth={1}
-                          transform={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              1,
+                              0.5982608695652174,
                               0,
                               0,
                             ]
                           }
-                        />
-                        <ARTShape
-                          d={
-                            Array [
-                              0,
-                              23.7538144,
-                              0.0496140351,
-                              2,
-                              22.7616495,
-                              0.643508772,
-                              2,
-                              22.7616495,
-                              13.1902105,
-                              2,
-                              23.7538144,
-                              13.7782105,
-                            ]
-                          }
-                          fill={
-                            Array [
-                              0,
-                              0.8588235294117647,
-                              0.07450980392156863,
-                              0.23137254901960785,
-                              1,
-                            ]
-                          }
-                          opacity={1}
-                          stroke={null}
-                          strokeCap={1}
-                          strokeDash={null}
-                          strokeJoin={1}
-                          strokeWidth={1}
-                          transform={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                            ]
-                          }
-                        />
-                      </ARTGroup>
-                    </ARTSurfaceView>
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                0,
+                                0.154639175,
+                                0.139754386,
+                                2,
+                                15.609649475,
+                                0.139754386,
+                                2,
+                                15.609649475,
+                                13.711894786,
+                                2,
+                                0.1546391749999998,
+                                13.711894786,
+                                2,
+                                0.1546391749999998,
+                                0.1397543859999999,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                0,
+                                0.8588235294117647,
+                                0.07450980392156863,
+                                0.23137254901960785,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                          <ARTShape
+                            d={
+                              Array [
+                                0,
+                                16.3405361,
+                                4.14989474,
+                                2,
+                                16.3405361,
+                                9.66442105,
+                                2,
+                                22.0216082,
+                                12.8146667,
+                                2,
+                                22.0216082,
+                                0.999894737,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                0,
+                                0.8588235294117647,
+                                0.07450980392156863,
+                                0.23137254901960785,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                          <ARTShape
+                            d={
+                              Array [
+                                0,
+                                23.7538144,
+                                0.0496140351,
+                                2,
+                                22.7616495,
+                                0.643508772,
+                                2,
+                                22.7616495,
+                                13.1902105,
+                                2,
+                                23.7538144,
+                                13.7782105,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                0,
+                                0.8588235294117647,
+                                0.07450980392156863,
+                                0.23137254901960785,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTGroup>
+                      </ARTSurfaceView>
+                    </View>
+                    <Text>
+                      BAYEUX TAPESTRY
+                    </Text>
                   </View>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Bringing the fragile masterpiece over safely
+                </Text>
+                <View>
                   <Text>
-                    BAYEUX TAPESTRY
+                    <Text>
+                      
+                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                      ...
+                    </Text>
                   </Text>
                 </View>
-              </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Bringing the fragile masterpiece over safely
-              </Text>
-              <View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
                 <Text>
                   <Text>
-                    
-                    Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
-                    ...
+                    Camilla Long
+                  </Text>
+                  <Text>
+                    , Environment Editor
                   </Text>
                 </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-              <Text>
-                <Text>
-                  Camilla Long
-                </Text>
-                <Text>
-                  , Environment Editor
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

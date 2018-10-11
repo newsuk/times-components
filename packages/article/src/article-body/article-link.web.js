@@ -17,13 +17,8 @@ const responsiveLinkStyles = {
   `
 };
 
-const ArticleLink = ({ children, target, url, uuid }) => (
-  <Link
-    index={`link-${uuid}`}
-    responsiveLinkStyles={responsiveLinkStyles}
-    target={target}
-    url={url}
-  >
+const ArticleLink = ({ children, target, url }) => (
+  <Link responsiveLinkStyles={responsiveLinkStyles} target={target} url={url}>
     {children}
   </Link>
 );

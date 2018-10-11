@@ -50,117 +50,119 @@ exports[`default styles 1`] = `
           }
         }
       >
-        <Link>
-          <Card>
-            <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 0,
-                  }
-                }
-              >
-                <Text
+        <div>
+          <Link>
+            <Card>
+              <View>
+                <View
                   style={
                     Object {
-                      "color": "#13354E",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
                 >
-                  TEST LABEL
-                </Text>
-              </View>
-              <Text
-                style={
-                  Object {
-                    "color": "#850029",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 24,
-                    "marginBottom": 0,
-                    "marginTop": 0,
-                  }
-                }
-              >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#13354E",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 14,
+                        "marginBottom": 0,
+                      }
+                    }
+                  >
+                    TEST LABEL
+                  </Text>
+                </View>
                 <Text
                   style={
                     Object {
-                      "color": "#13354E",
-                      "flexDirection": "row",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
+                      "color": "#850029",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 24,
+                      "marginBottom": 0,
+                      "marginTop": 0,
                     }
                   }
                 >
-                  Sathnam Sanghera
+                  <Text
+                    style={
+                      Object {
+                        "color": "#13354E",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
+                    }
+                  >
+                    Sathnam Sanghera
+                  </Text>
                 </Text>
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 25,
-                    "marginBottom": 5,
-                    "marginTop": 0,
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 25,
+                      "marginBottom": 5,
+                      "marginTop": 0,
+                    }
                   }
-                }
-              >
-                Test Short Headline
-              </Text>
-              <View
-                style={
-                  Object {
-                    "paddingRight": 10,
-                    "width": "60%",
+                >
+                  Test Short Headline
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "paddingRight": 10,
+                      "width": "60%",
+                    }
                   }
-                }
-              >
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
                 <Text
                   style={
                     Object {
                       "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
                     }
                   }
                 >
-                  <Text>
-                    
-                    Summary 125
-                    ...
-                  </Text>
+                  March 13 2015, 06:54pm
                 </Text>
               </View>
-              <Text
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                March 13 2015, 06:54pm
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

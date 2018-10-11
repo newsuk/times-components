@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
@@ -15,110 +15,139 @@ import {
 import styles from "./styles";
 import getHeadline from "./utils";
 
-const RelatedArticleItem = ({
-  article,
-  bylineClass,
-  contentContainerClass,
-  headlineClass,
-  imageConfig,
-  imageContainerClass,
-  isOpinionByline,
-  isReversed,
-  onPress,
-  showImage,
-  showSummary,
-  summaryConfig
-}) => {
-  const {
-    byline,
-    hasVideo,
-    headline,
-    label,
-    leadAsset,
-    publishedTime,
-    section,
-    shortHeadline,
-    url
-  } = article;
-  const {
-    lengths: summaryLengths = [],
-    style: summaryStyle = {},
-    type: summaryType
-  } = summaryConfig;
-  const {
-    cropSize = "169",
-    imageRatio = 16 / 9,
-    style: imageStyle = {}
-  } = imageConfig;
+class RelatedArticleItem extends Component {
+  constructor(props) {
+    super(props);
 
-  const imageUri =
-    leadAsset && leadAsset.posterImage
-      ? get(article, `leadAsset.posterImage.crop${cropSize}.url`)
-      : get(article, `leadAsset.crop${cropSize}.url`);
+    this.state = {
+      highResSize: null
+    };
+  }
 
-  return (
-    <Link
-      linkStyle={{ padding: 10 }}
-      onPress={e => onPress(e, { url: article.url })}
-      url={url}
-    >
-      <Card
-        contentContainerClass={contentContainerClass}
-        imageContainerClass={imageContainerClass}
-        imageRatio={imageRatio}
-        imageStyle={imageStyle}
-        imageUri={imageUri}
-        isReversed={isReversed}
-        lowResSize={100}
-        showImage={showImage}
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.imageConfig.showHiRes !== this.props.imageConfig.showHiRes &&
+      this.props.imageConfig.showHiRes
+    ) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({
+        highResSize: this.node.clientWidth
+      });
+    }
+  }
+
+  render() {
+    const {
+      article: {
+        byline,
+        hasVideo,
+        headline,
+        label,
+        leadAsset,
+        publishedTime,
+        section,
+        shortHeadline,
+        url
+      },
+      bylineClass,
+      contentContainerClass,
+      headlineClass,
+      imageConfig: {
+        cropSize = "169",
+        imageRatio = 16 / 9,
+        style: imageStyle = {}
+      },
+      imageContainerClass,
+      isOpinionByline,
+      isReversed,
+      onPress,
+      showImage,
+      showSummary,
+      summaryConfig: {
+        lengths: summaryLengths = [],
+        style: summaryStyle = {},
+        type: summaryType
+      }
+    } = this.props;
+
+    const imageUri =
+      leadAsset && leadAsset.posterImage
+        ? get(leadAsset, `posterImage.crop${cropSize}.url`)
+        : get(leadAsset, `crop${cropSize}.url`);
+
+    return (
+      <div
+        ref={node => {
+          this.node = node;
+        }}
       >
-        <ArticleSummary
-          bylineProps={{
-            ast: byline,
-            bylineClass,
-            bylineStyle: isOpinionByline ? styles.opinionByline : styles.byline,
-            color: colours.section[section] || colours.section.default,
-            isOpinionByline
-          }}
-          content={() =>
-            showSummary && (
-              <View style={summaryStyle}>
-                {summaryLengths.map(item => {
-                  const summaryClassSuffix = `${item}Class`;
-                  const summaryClass = summaryType
-                    ? `${summaryType}Summary`
-                    : `summary`;
-                  return (
-                    <ArticleSummaryContent
-                      ast={article[`summary${item}`]}
-                      className={`summaryHidden ${summaryClass}${
-                        summaryClassSuffix
-                      }`}
-                      key={item}
-                    />
-                  );
-                })}
-              </View>
-            )
-          }
-          datePublicationProps={{ date: publishedTime, showDay: false }}
-          headline={() => (
-            <ArticleSummaryHeadline
-              className={headlineClass}
-              headline={getHeadline(headline, shortHeadline)}
-              style={styles.headline}
+        <Link
+          linkStyle={{ padding: 10 }}
+          onPress={e => onPress(e, { url })}
+          url={url}
+        >
+          <Card
+            contentContainerClass={contentContainerClass}
+            highResSize={this.state.highResSize}
+            imageContainerClass={imageContainerClass}
+            imageRatio={imageRatio}
+            imageStyle={imageStyle}
+            imageUri={imageUri}
+            isReversed={isReversed}
+            lowResSize={100}
+            showImage={showImage}
+          >
+            <ArticleSummary
+              bylineProps={{
+                ast: byline,
+                bylineClass,
+                bylineStyle: isOpinionByline
+                  ? styles.opinionByline
+                  : styles.byline,
+                color: colours.section[section] || colours.section.default,
+                isOpinionByline
+              }}
+              content={() =>
+                showSummary && (
+                  <View style={summaryStyle}>
+                    {summaryLengths.map(item => {
+                      const summaryClassSuffix = `${item}Class`;
+                      const summaryClass = summaryType
+                        ? `${summaryType}Summary`
+                        : `summary`;
+                      return (
+                        <ArticleSummaryContent
+                          ast={this.props.article[`summary${item}`]}
+                          className={`summaryHidden ${summaryClass}${
+                            summaryClassSuffix
+                          }`}
+                          key={item}
+                        />
+                      );
+                    })}
+                  </View>
+                )
+              }
+              datePublicationProps={{ date: publishedTime, showDay: false }}
+              headline={() => (
+                <ArticleSummaryHeadline
+                  className={headlineClass}
+                  headline={getHeadline(headline, shortHeadline)}
+                  style={styles.headline}
+                />
+              )}
+              labelProps={{
+                color: colours.section[section] || colours.section.default,
+                isVideo: hasVideo,
+                title: label
+              }}
             />
-          )}
-          labelProps={{
-            color: colours.section[section] || colours.section.default,
-            isVideo: hasVideo,
-            title: label
-          }}
-        />
-      </Card>
-    </Link>
-  );
-};
+          </Card>
+        </Link>
+      </div>
+    );
+  }
+}
 
 RelatedArticleItem.propTypes = relatedArticleItemPropTypes;
 RelatedArticleItem.defaultProps = relatedArticleItemDefaultProps;

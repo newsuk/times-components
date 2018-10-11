@@ -82,7 +82,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     <figure>
       <img
         alt=""
-        src="https://crop169.io"
+        src="https://crop169.io?resize=100"
       />
       <figcaption>
         Some Caption
@@ -92,7 +92,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   </header>
   <img
     alt=""
-    src="https://image.io"
+    src="https://image.io?resize=100"
   />
   An image caption
   THE IMAGE CREDITS
@@ -159,7 +159,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       Topic
     </a>
   </nav>
-  <aside>
+  <aside
+    id="related-articles"
+  >
     <h3
       aria-level="3"
       role="heading"

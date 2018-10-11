@@ -5,6 +5,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
+import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
@@ -15,7 +16,10 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 import ArticleComments from "./article-comments/article-comments";
 import stylesFactory from "./styles/article-body";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import {
+  articlePagePropTypes,
+  articlePageDefaultProps
+} from "./article-page-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
 
@@ -23,7 +27,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = analyticsStream => (
+const renderRow = (analyticsStream, width) => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -42,6 +46,7 @@ const renderRow = analyticsStream => (
           <ArticleLeadAsset
             data={{ ...rowData.data, onVideoPress }}
             key={rowData.type}
+            width={width}
           />
         </View>
       );
@@ -135,7 +140,8 @@ class ArticlePage extends Component {
 
     if (props.article && !props.isLoading && !props.error) {
       this.state = {
-        dataSource: listViewDataHelper(props.article)
+        dataSource: listViewDataHelper(props.article),
+        width: normaliseWidth(screenWidthInPixels())
       };
     } else {
       this.state = {
@@ -167,7 +173,7 @@ class ArticlePage extends Component {
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
         pageSize={listViewPageSize}
-        renderRow={renderRow(this.props.analyticsStream)}
+        renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );
@@ -179,7 +185,7 @@ class ArticlePage extends Component {
 }
 
 ArticlePage.propTypes = {
-  ...articlePropTypes,
+  ...articlePagePropTypes,
   refetch: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -188,6 +194,6 @@ ArticlePage.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
-ArticlePage.defaultProps = articleDefaultProps;
+ArticlePage.defaultProps = articlePageDefaultProps;
 
 export default articleTrackingContext(ArticlePage);

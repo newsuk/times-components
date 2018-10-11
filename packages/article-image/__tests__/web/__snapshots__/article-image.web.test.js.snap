@@ -94,3 +94,39 @@ Array [
   </div>,
 ]
 `;
+
+exports[`9. primary image with given resolutions 1`] = `
+Array [
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="https://imageserver/someImage?resize=900"
+        />
+        <img
+          alt=""
+          src="https://imageserver/someImage?resize=50"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDIT
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

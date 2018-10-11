@@ -11,7 +11,7 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      highResIsLoaded: false,
+      highResIsLoaded: props.lowResSize && props.highResSize,
       highResIsVisible: false,
       lowResIsLoaded: !props.fadeImageIn
     };

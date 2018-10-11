@@ -298,3 +298,41 @@ exports[`9. fade in the low res image 2`] = `
   </div>
 </div>
 `;
+
+exports[`10. both high and low res sizes 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+<div>
+  <div>
+    <img
+      alt=""
+      src="https://image.io?resize=900"
+    />
+    <img
+      alt=""
+      src="https://image.io?resize=200"
+    />
+    <div>
+      <div />
+    </div>
+  </div>
+</div>
+`;

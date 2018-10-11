@@ -30,22 +30,24 @@ exports[`1. article list 1`] = `
               lowResSize={100}
               showImage={true}
             >
-              <ArticleSummary
-                bylineProps={null}
-                datePublicationProps={
-                  Object {
-                    "date": "2017-11-17T00:01:00.000Z",
-                    "publication": "TIMES",
+              <div>
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
                   }
-                }
-                labelProps={
-                  Object {
-                    "color": "#636C17",
-                    "isVideo": true,
-                    "title": "Label 1",
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </Card>
           </div>
         </Link>
@@ -71,41 +73,43 @@ exports[`1. article list 1`] = `
               lowResSize={100}
               showImage={true}
             >
-              <ArticleSummary
-                bylineProps={
-                  Object {
-                    "ast": Array [
-                      Object {
-                        "attributes": Object {},
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Byline 2",
+              <div>
+                <ArticleSummary
+                  bylineProps={
+                    Object {
+                      "ast": Array [
+                        Object {
+                          "attributes": Object {},
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "Byline 2",
+                              },
+                              "children": Array [],
+                              "name": "text",
                             },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "paragraph",
-                      },
-                    ],
-                    "color": "#333333",
+                          ],
+                          "name": "paragraph",
+                        },
+                      ],
+                      "color": "#333333",
+                    }
                   }
-                }
-                datePublicationProps={
-                  Object {
-                    "date": "2017-11-17T00:01:00.000Z",
-                    "publication": "SUNDAYTIMES",
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "SUNDAYTIMES",
+                    }
                   }
-                }
-                labelProps={
-                  Object {
-                    "color": "#333333",
-                    "isVideo": false,
-                    "title": "Label 2",
+                  labelProps={
+                    Object {
+                      "color": "#333333",
+                      "isVideo": false,
+                      "title": "Label 2",
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </Card>
           </div>
         </Link>
@@ -131,41 +135,43 @@ exports[`1. article list 1`] = `
               lowResSize={100}
               showImage={true}
             >
-              <ArticleSummary
-                bylineProps={
-                  Object {
-                    "ast": Array [
-                      Object {
-                        "attributes": Object {},
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Byline 3",
+              <div>
+                <ArticleSummary
+                  bylineProps={
+                    Object {
+                      "ast": Array [
+                        Object {
+                          "attributes": Object {},
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "Byline 3",
+                              },
+                              "children": Array [],
+                              "name": "text",
                             },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "paragraph",
-                      },
-                    ],
-                    "color": "#333333",
+                          ],
+                          "name": "paragraph",
+                        },
+                      ],
+                      "color": "#333333",
+                    }
                   }
-                }
-                datePublicationProps={
-                  Object {
-                    "date": "2017-11-17T00:01:00.000Z",
-                    "publication": "SUNDAYTIMES",
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "SUNDAYTIMES",
+                    }
                   }
-                }
-                labelProps={
-                  Object {
-                    "color": "#333333",
-                    "isVideo": false,
-                    "title": "Label 3",
+                  labelProps={
+                    Object {
+                      "color": "#333333",
+                      "isVideo": false,
+                      "title": "Label 3",
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </Card>
           </div>
         </Link>
@@ -191,41 +197,43 @@ exports[`1. article list 1`] = `
               lowResSize={100}
               showImage={true}
             >
-              <ArticleSummary
-                bylineProps={
-                  Object {
-                    "ast": Array [
-                      Object {
-                        "attributes": Object {},
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Byline 4",
+              <div>
+                <ArticleSummary
+                  bylineProps={
+                    Object {
+                      "ast": Array [
+                        Object {
+                          "attributes": Object {},
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "Byline 4",
+                              },
+                              "children": Array [],
+                              "name": "text",
                             },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "paragraph",
-                      },
-                    ],
-                    "color": "#333333",
+                          ],
+                          "name": "paragraph",
+                        },
+                      ],
+                      "color": "#333333",
+                    }
                   }
-                }
-                datePublicationProps={
-                  Object {
-                    "date": "2017-11-17T00:01:00.000Z",
-                    "publication": "SUNDAYTIMES",
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "SUNDAYTIMES",
+                    }
                   }
-                }
-                labelProps={
-                  Object {
-                    "color": "#333333",
-                    "isVideo": false,
-                    "title": "Label 4",
+                  labelProps={
+                    Object {
+                      "color": "#333333",
+                      "isVideo": false,
+                      "title": "Label 4",
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </Card>
           </div>
         </Link>
@@ -277,40 +285,42 @@ exports[`2. article list with no images 1`] = `
               showImage={false}
             >
               <div>
-                <ArticleSummary
-                  bylineProps={null}
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "TIMES",
+                <div>
+                  <ArticleSummary
+                    bylineProps={null}
+                    datePublicationProps={
+                      Object {
+                        "date": "2017-11-17T00:01:00.000Z",
+                        "publication": "TIMES",
+                      }
                     }
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#636C17",
-                      "isVideo": true,
-                      "title": "Label 1",
+                    labelProps={
+                      Object {
+                        "color": "#636C17",
+                        "isVideo": true,
+                        "title": "Label 1",
+                      }
                     }
-                  }
-                />
-              </div>
-              <div>
-                <ArticleSummary
-                  bylineProps={null}
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "TIMES",
+                  />
+                </div>
+                <div>
+                  <ArticleSummary
+                    bylineProps={null}
+                    datePublicationProps={
+                      Object {
+                        "date": "2017-11-17T00:01:00.000Z",
+                        "publication": "TIMES",
+                      }
                     }
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#636C17",
-                      "isVideo": true,
-                      "title": "Label 1",
+                    labelProps={
+                      Object {
+                        "color": "#636C17",
+                        "isVideo": true,
+                        "title": "Label 1",
+                      }
                     }
-                  }
-                />
+                  />
+                </div>
               </div>
             </Card>
           </div>
@@ -360,40 +370,42 @@ exports[`3. article list with missing image 1`] = `
               showImage={false}
             >
               <div>
-                <ArticleSummary
-                  bylineProps={null}
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "TIMES",
+                <div>
+                  <ArticleSummary
+                    bylineProps={null}
+                    datePublicationProps={
+                      Object {
+                        "date": "2017-11-17T00:01:00.000Z",
+                        "publication": "TIMES",
+                      }
                     }
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#636C17",
-                      "isVideo": true,
-                      "title": "Label 1",
+                    labelProps={
+                      Object {
+                        "color": "#636C17",
+                        "isVideo": true,
+                        "title": "Label 1",
+                      }
                     }
-                  }
-                />
-              </div>
-              <div>
-                <ArticleSummary
-                  bylineProps={null}
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "TIMES",
+                  />
+                </div>
+                <div>
+                  <ArticleSummary
+                    bylineProps={null}
+                    datePublicationProps={
+                      Object {
+                        "date": "2017-11-17T00:01:00.000Z",
+                        "publication": "TIMES",
+                      }
                     }
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#636C17",
-                      "isVideo": true,
-                      "title": "Label 1",
+                    labelProps={
+                      Object {
+                        "color": "#636C17",
+                        "isVideo": true,
+                        "title": "Label 1",
+                      }
                     }
-                  }
-                />
+                  />
+                </div>
               </div>
             </Card>
           </div>

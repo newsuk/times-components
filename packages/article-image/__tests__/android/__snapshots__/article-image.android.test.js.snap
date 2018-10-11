@@ -88,3 +88,30 @@ exports[`8. primary image renders with caption and credits 1`] = `
   </View>
 </View>
 `;
+
+exports[`9. primary image with given resolutions 1`] = `
+<View>
+  <View>
+    <ModalImage
+      aspectRatio={1.7777777777777777}
+      caption="Some caption"
+      credits="Some credit"
+      highResSize={900}
+      lowResSize={50}
+      uri="https://imageserver/someImage"
+    />
+  </View>
+  <View>
+    <View>
+      <View>
+        <Text>
+          Some caption
+        </Text>
+        <Text>
+          SOME CREDIT
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

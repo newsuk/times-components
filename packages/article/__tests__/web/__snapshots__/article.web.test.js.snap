@@ -95,6 +95,8 @@ exports[`2. a full article with an image as the lead asset 1`] = `
             <div>
               <div>
                 <Image
+                  highResSize={null}
+                  lowResSize={100}
                   uri="https://crop169.io"
                 />
               </div>
@@ -112,25 +114,30 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       </div>
     </header>
     <div>
-      <div>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "An image caption",
-              "credits": "The image credits",
+      <div
+        id="0"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "An image caption",
+                "credits": "The image credits",
+              }
             }
-          }
-          imageOptions={
-            Object {
-              "display": "primary",
-              "ratio": "1500:1000",
-              "uri": "https://image.io",
+            imageOptions={
+              Object {
+                "display": "primary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io",
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
       <Link
-        index="link-1"
         target="_blank"
         url="https://link.io"
       >
@@ -195,8 +202,11 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       />
     </nav>
   </div>
-  <aside>
+  <aside
+    id="related-articles"
+  >
     <RelatedArticles
+      isVisible={false}
       slice={
         Object {
           "__typename": "StandardSlice",
@@ -336,7 +346,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"
@@ -398,7 +410,9 @@ exports[`4. an article with no lead asset 1`] = `
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"
@@ -460,7 +474,9 @@ exports[`5. an article with ads 1`] = `
       />
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"
@@ -528,7 +544,9 @@ exports[`7. an article with updated byline 1`] = `
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"
@@ -614,7 +632,9 @@ exports[`7. an article with updated byline 2`] = `
       </div>
     </div>
   </div>
-  <aside />
+  <aside
+    id="related-articles"
+  />
   <Ad
     contextUrl="https://url.io"
     section="Some Section"

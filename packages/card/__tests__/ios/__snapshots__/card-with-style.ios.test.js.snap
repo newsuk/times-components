@@ -38,17 +38,9 @@ exports[`1. card default state 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-    >
-      <Text>
-        A card
-      </Text>
-    </View>
+    <Text>
+      A card
+    </Text>
   </View>
 </View>
 `;
@@ -75,17 +67,9 @@ exports[`2. card with reversed state 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-    >
-      <Text>
-        A card in reverse
-      </Text>
-    </View>
+    <Text>
+      A card in reverse
+    </Text>
   </View>
   <View
     style={
@@ -153,52 +137,44 @@ exports[`3. card loading state 1`] = `
         }
       }
     >
-      <View
+      <Gradient
+        degrees={264}
         style={
           Object {
-            "opacity": 1,
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
           }
         }
-      >
-        <Gradient
-          degrees={264}
-          style={
-            Object {
-              "height": 24,
-              "marginBottom": 10,
-              "maxWidth": 300,
-            }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 0,
-              "maxWidth": 240,
-            }
-          }
-        />
-      </View>
+        }
+      />
     </View>
   </View>
 </View>
@@ -234,52 +210,44 @@ exports[`4. card reversed loading state 1`] = `
         }
       }
     >
-      <View
+      <Gradient
+        degrees={264}
         style={
           Object {
-            "opacity": 1,
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
           }
         }
-      >
-        <Gradient
-          degrees={264}
-          style={
-            Object {
-              "height": 24,
-              "marginBottom": 10,
-              "maxWidth": 300,
-            }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            }
+        }
+      />
+      <Gradient
+        degrees={267}
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
           }
-        />
-        <Gradient
-          degrees={267}
-          style={
-            Object {
-              "height": 10,
-              "marginBottom": 0,
-              "maxWidth": 240,
-            }
-          }
-        />
-      </View>
+        }
+      />
     </View>
     <View
       style={
