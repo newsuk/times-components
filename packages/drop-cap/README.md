@@ -1,14 +1,16 @@
-# Drop Cap (Android Only)
+# Drop Cap (Android & Web Only)
 
-This package provides a paragraph starting with a drop cap letter. In native,
-this is done by measuring the length of the text and splitting it into 3
-textboxes.
+This package provides a paragraph starting with a drop cap letter.
+
+In native, this is done by measuring the length of the text and splitting it
+into 3 textboxes. Uses a
+[3rd party library](https://github.com/aMarCruz/react-native-text-size) to
+measure text sizes.
+
+On the web, this is done by using CSS floats.
 
 Currently, this component only supports plain text paragraphs, so any text given
 should have the markups stripped.
-
-Uses [3rd party library](https://github.com/aMarCruz/react-native-text-size) to
-measure text sizes on native
 
 ## Contributing
 
@@ -34,6 +36,7 @@ Testing can be done on each platform individually
 
 ```
 yarn test:android
+yarn test:web
 ```
 
 Or the tests for all platforms can be run
@@ -48,5 +51,5 @@ https://components.thetimes.co.uk/?knob-Lead%20Asset=true&knob-Size%20of%20ad%20
 
 ## Future
 
-Planning to support complex markups in the paragraph text. Web and iOS support
-coming soon.
+Planning to support complex markups in the paragraph text. iOS support coming
+soon.
