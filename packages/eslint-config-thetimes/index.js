@@ -15,7 +15,7 @@ module.exports = {
         reservedFirst: false
       }
     ],
-    "sort-keys": ["error", "asc", {"caseSensitive": false, "natural": true}],
+    "sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": [
       "error",

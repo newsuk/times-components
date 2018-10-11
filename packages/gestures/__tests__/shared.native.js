@@ -14,12 +14,12 @@ const mapTouches = ({ x, y }) => ({
 });
 
 const makeTouchEvent = (active, history = []) => ({
+  nativeEvent: {
+    touches: active.map(mapTouches)
+  },
   touchHistory: {
     numberActiveTouches: history.length,
     touchBank: history.map(mapTouches)
-  },
-  nativeEvent: {
-    touches: active.map(mapTouches)
   }
 });
 

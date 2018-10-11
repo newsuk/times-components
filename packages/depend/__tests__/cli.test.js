@@ -11,19 +11,34 @@ chalk.enabled = false;
 describe("depend cli tests", () => {
   it("prints graph", async () => {
     const log = jest.fn();
-    const argv = { graph: "*=>*", expr: "package.json" };
+    const argv = {
+      expr: "package.json",
+      graph: "*=>*"
+    };
     const getPackages = () => simple;
-    await main({ log, getPackages, argv });
+    await main({
+      argv,
+      getPackages,
+      log
+    });
     expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("list all dependencies", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { list: 1, expr: "*" };
+    const argv = {
+      expr: "*",
+      list: 1
+    };
     const getPackages = () => simple;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
   });
@@ -31,10 +46,18 @@ describe("depend cli tests", () => {
   it("list with divergent", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { list: 1, expr: "*" };
+    const argv = {
+      expr: "*",
+      list: 1
+    };
     const getPackages = () => divergent;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
   });
@@ -42,10 +65,18 @@ describe("depend cli tests", () => {
   it("list all rules", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { showRules: 1, expr: "*" };
+    const argv = {
+      expr: "*",
+      showRules: 1
+    };
     const getPackages = () => simple;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
   });
@@ -53,10 +84,18 @@ describe("depend cli tests", () => {
   it("list all hints", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { hint: 1, expr: "*" };
+    const argv = {
+      expr: "*",
+      hint: 1
+    };
     const getPackages = () => simple;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
   });
@@ -67,7 +106,12 @@ describe("depend cli tests", () => {
     const argv = { bail: 1, expr: "*" };
     const getPackages = () => wrong;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([[1]]);
     expect(log.mock.calls).toMatchSnapshot();
   });
@@ -78,7 +122,12 @@ describe("depend cli tests", () => {
     const argv = { bail: 1, expr: "*" };
     const getPackages = () => ["", []];
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([[1]]);
   });
 
@@ -88,9 +137,18 @@ describe("depend cli tests", () => {
     const writeJson = jest.fn();
 
     const log = jest.fn();
-    const argv = { fix: true, expr: "*" };
+    const argv = {
+      expr: "*",
+      fix: true
+    };
 
-    await main({ log, argv, getPackages, exit, writeJson });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log,
+      writeJson
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(writeJson.mock.calls).toEqual(wrongFixed);
   });
@@ -101,9 +159,18 @@ describe("depend cli tests", () => {
     const getPackages = jest.fn(() => simple);
 
     const log = jest.fn();
-    const argv = { list: "", lerna: "project/root" };
+    const argv = {
+      lerna: "project/root",
+      list: ""
+    };
 
-    await main({ log, argv, getPackages, exit, readJson });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log,
+      readJson
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(readJson.mock.calls).toEqual([["project/root/lerna.json"]]);
     expect(getPackages.mock.calls).toEqual([["project/root/*/package.json"]]);
@@ -116,7 +183,13 @@ describe("depend cli tests", () => {
 
     const log = jest.fn();
     const argv = { list: "" };
-    await main({ log, argv, getPackages, exit, readJson });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log,
+      readJson
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(readJson.mock.calls).toEqual([["lerna.json"]]);
     expect(getPackages.mock.calls).toEqual([["*/package.json"]]);
@@ -130,7 +203,13 @@ describe("depend cli tests", () => {
 
     const log = jest.fn();
     const argv = { lerna: "." };
-    await main({ log, argv, getPackages, exit, readJson });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log,
+      readJson
+    });
     expect(exit.mock.calls).toEqual([[1]]);
     expect(log.mock.calls).toEqual([[error]]);
   });
@@ -138,10 +217,19 @@ describe("depend cli tests", () => {
   it("restricts to only requested packages", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { list: 1, expr: "*", only: "{a,b}" };
+    const argv = {
+      expr: "*",
+      list: 1,
+      only: "{a,b}"
+    };
     const getPackages = () => divergent;
 
-    await main({ log, argv, getPackages, exit });
+    await main({
+      argv,
+      exit,
+      getPackages,
+      log
+    });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
   });

@@ -14,15 +14,18 @@ class BadComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  text: { color: "white", fontSize: fontSizes.smallestHeadline },
   background: {
     backgroundColor: "red"
   },
   customError: {
-    width: 400,
-    height: 300,
     alignItems: "center",
-    justifyContent: "center"
+    height: 300,
+    justifyContent: "center",
+    width: 400
+  },
+  text: {
+    color: "white",
+    fontSize: fontSizes.smallestHeadline
   }
 });
 
@@ -60,11 +63,8 @@ FiresOnError.propTypes = {
 };
 
 export default {
-  name: "Primitives/Error View",
   children: [
     {
-      type: "story",
-      name: "Error",
       component: () => (
         <ErrorView>
           {({ hasError, error }) =>
@@ -75,11 +75,11 @@ export default {
             )
           }
         </ErrorView>
-      )
+      ),
+      name: "Error",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Async error",
       component: () => (
         <ErrorView>
           {({ hasError, onError, error }) =>
@@ -90,7 +90,10 @@ export default {
             )
           }
         </ErrorView>
-      )
+      ),
+      name: "Async error",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Error View"
 };

@@ -17,9 +17,9 @@ export function suggestFix(packageJson = {}, rules = {}) {
   const fixup = (dep = {}) =>
     entries(dep)
       .map(([name, version]) => ({
+        expected: rules[name],
         name,
-        version,
-        expected: rules[name]
+        version
       }))
       .filter(x => x.expected)
       .filter(x => x.expected !== x.version)
@@ -57,12 +57,12 @@ export const applyPatch = (
 export function getAllRequirements(packages) {
   return packages
     .map(p => ({
-      name: p.name,
-      version: p.version,
       deps: [
         ...entries(p.dependencies || {}),
         ...entries(p.devDependencies || {})
-      ]
+      ],
+      name: p.name,
+      version: p.version
     }))
     .flatMap(({ name, version, deps }) =>
       deps.map(([depName, depVersion]) => ({
@@ -102,8 +102,8 @@ export function computeReverseLookupMap(requirements, versionSets) {
       [dependency]: [
         ...versions.map(version => ({
           name: dependency,
-          version,
-          usedBy: [...(flatReverseLookup[`${dependency}@${version}`] || [])]
+          usedBy: [...(flatReverseLookup[`${dependency}@${version}`] || [])],
+          version
         }))
       ]
     }))
@@ -119,10 +119,10 @@ export function findWrongVersions(packages) {
   return packages.flatMap(p =>
     [...entries(p.dependencies || {}), ...entries(p.devDependencies || {})]
       .map(([name, installs]) => ({
-        usedBy: p.name,
-        package: name,
+        expected: expectedVersions[name],
         installs,
-        expected: expectedVersions[name]
+        package: name,
+        usedBy: p.name
       }))
       .filter(({ installs, expected }) => expected && installs !== expected)
   );
@@ -157,9 +157,9 @@ export function getSuggestions(todo) {
 export function getTodos(packagesList, rules) {
   return packagesList
     .map(([path, packageJson]) => ({
-      path,
       packageJson,
-      patch: suggestFix(packageJson, rules)
+      patch: suggestFix(packageJson, rules),
+      path
     }))
     .filter(x => x.patch);
 }
@@ -175,8 +175,8 @@ export function applyStrategy(requirements, strategy) {
   const versionSets = computeVersionSets(requirements);
   if (!strategy) {
     return {
-      versionSets,
-      resolved: []
+      resolved: [],
+      versionSets
     };
   }
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
@@ -184,8 +184,8 @@ export function applyStrategy(requirements, strategy) {
   const resolved = divergent.map(c => resolveConflicts(strategy, c));
 
   return {
-    versionSets,
-    resolved
+    resolved,
+    versionSets
   };
 }
 
@@ -218,11 +218,11 @@ export default async function compute(
   const suggestions = getSuggestions(todo);
 
   return {
+    fixedPackages,
     requirements: targetRequirements,
-    versionSets,
-    wrong,
     rules,
     suggestions,
-    fixedPackages
+    versionSets,
+    wrong
   };
 }

@@ -8,4 +8,11 @@ import main from "./main";
 // eslint-disable-next-line no-console
 const log = (...args) => console.log(...args);
 const argv = parser.parse(process.argv);
-main({ log, readJson, writeJson, getPackages, argv, exit });
+main({
+  argv,
+  exit,
+  getPackages,
+  log,
+  readJson,
+  writeJson
+});
