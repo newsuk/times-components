@@ -10,14 +10,11 @@ import getLeadAsset from "./article-lead-asset/get-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 
-import styles from "./styles";
-
 import {
   MainContainer,
   HeaderContainer,
   MetaContainer,
   LeadAssetContainer,
-  BodyContainer,
   HeaderAdContainer
 } from "./styles/responsive";
 
@@ -83,9 +80,10 @@ const renderArticle = (
             <LeadAssetComponent {...leadAssetProps} />
           </LeadAssetContainer>
         </header>
-        <BodyContainer>
-          <Text>Article Body will go here</Text>
-        </BodyContainer>
+        <Text>Article Body will go here</Text>
+        <Ad contextUrl={url} section={section} slotName="pixel" />
+        <Ad contextUrl={url} section={section} slotName="pixelteads" />
+        <Ad contextUrl={url} section={section} slotName="pixelskin" />
     </MainContainer>
   </article>
 );

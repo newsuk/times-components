@@ -73,5 +73,5 @@ export const LeadAssetContainer = styled(View)`
 
 export const BodyContainer = styled(View)`
   display: block;
-  order: 4;
+  // order: 4;
 `;

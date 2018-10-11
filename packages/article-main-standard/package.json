@@ -39,7 +39,9 @@
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "*",
     "@times-components/jest-configurator": "*",
+    "@times-components/provider-test-tools": "1.6.0",
     "@times-components/storybook": "*",
+    "@times-components/tealium-utils": "0.6.11",
     "@times-components/webpack-configurator": "*",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
@@ -53,7 +55,25 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/ad": "2.1.44"
+    "@times-components/ad": "2.1.44",
+    "@times-components/article-byline": "3.0.42",
+    "@times-components/article-flag": "2.1.41",
+    "@times-components/article-label": "2.2.14",
+    "@times-components/article-topics": "3.2.20",
+    "@times-components/button": "2.2.21",
+    "@times-components/caption": "2.1.40",
+    "@times-components/context": "0.4.30",
+    "@times-components/date-publication": "0.19.29",
+    "@times-components/image": "4.0.13",
+    "@times-components/styleguide": "3.5.0",
+    "@times-components/tracking": "2.1.30",
+    "@times-components/utils": "4.0.3",
+    "@times-components/video": "4.1.0",
+    "@times-components/video-label": "2.1.41",
+    "lodash.get": "4.4.2",
+    "lodash.invert": "4.3.0",
+    "prop-types": "15.6.2",
+    "styled-components": "3.4.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
