@@ -67,12 +67,12 @@ LeadAssetComponent.propTypes = {
     caption: PropTypes.string,
     credits: PropTypes.string,
     crop: cropPropTypes,
-    crop169: cropPropTypes,
-    crop32: cropPropTypes,
-    crop1251: cropPropTypes,
     crop11: cropPropTypes,
+    crop23: cropPropTypes,
+    crop32: cropPropTypes,
     crop45: cropPropTypes,
-    crop23: cropPropTypes
+    crop169: cropPropTypes,
+    crop1251: cropPropTypes
   }),
   width: PropTypes.number
 };

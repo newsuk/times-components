@@ -54,6 +54,10 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+<<<<<<< HEAD
+=======
+          refetch={() => {}}
+>>>>>>> chore: reorder article object keys
         />
       );
 
@@ -82,24 +86,28 @@ export const snapshotTests = renderComponent => [
               href: "https://link.io",
               target: "_blank"
             },
-            children: [{
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }],
+            children: [
+              {
+                attributes: {
+                  value: "Some Link"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
             name: "link"
           },
           {
             attributes: {},
-            children: [{
-              attributes: {
-                value: "Some content"
-              },
-              children: [],
-              name: "text"
-            }],
+            children: [
+              {
+                attributes: {
+                  value: "Some content"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
             name: "paragraph"
           },
           {
@@ -134,16 +142,16 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={article}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -156,7 +164,7 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
@@ -165,14 +173,14 @@ export const snapshotTests = renderComponent => [
               brightcovePolicyKey: "1.2.3.4"
             })
           })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -185,19 +193,19 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle
           })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -210,7 +218,7 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
@@ -222,14 +230,14 @@ export const snapshotTests = renderComponent => [
               }
             ]
           })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -242,17 +250,17 @@ export const snapshotTests = renderComponent => [
       const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture()}
           isLoading
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -290,20 +298,20 @@ export const snapshotTests = renderComponent => [
             >
               <Article
                 adConfig={adConfig}
-                analyticsStream={() => { }}
+                analyticsStream={() => {}}
                 article={articleFixture({
                   ...testFixture,
                   ...emptyArticle,
                   byline
                 })}
-                onAuthorPress={() => { }}
-                onCommentGuidelinesPress={() => { }}
-                onCommentsPress={() => { }}
-                onLinkPress={() => { }}
-                onRelatedArticlePress={() => { }}
-                onTopicPress={() => { }}
-                onTwitterLinkPress={() => { }}
-                onVideoPress={() => { }}
+                onAuthorPress={() => {}}
+                onCommentGuidelinesPress={() => {}}
+                onCommentsPress={() => {}}
+                onLinkPress={() => {}}
+                onRelatedArticlePress={() => {}}
+                onTopicPress={() => {}}
+                onTwitterLinkPress={() => {}}
+                onVideoPress={() => {}}
               />
             </Context.Provider>
           )}
@@ -326,19 +334,19 @@ const negativeTests = [
       const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
             flags: null
           })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -353,16 +361,16 @@ const negativeTests = [
       const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, byline: null })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -377,16 +385,16 @@ const negativeTests = [
       const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, label: null })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 
@@ -401,19 +409,19 @@ const negativeTests = [
       const testInstance = TestRenderer.create(
         <Article
           adConfig={adConfig}
-          analyticsStream={() => { }}
+          analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
             standfirst: null
           })}
-          onAuthorPress={() => { }}
-          onCommentGuidelinesPress={() => { }}
-          onCommentsPress={() => { }}
-          onLinkPress={() => { }}
-          onRelatedArticlePress={() => { }}
-          onTopicPress={() => { }}
-          onTwitterLinkPress={() => { }}
-          onVideoPress={() => { }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
         />
       );
 

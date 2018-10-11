@@ -7,9 +7,18 @@ const AspectRatioContainer = ({ aspectRatio, children }) => {
   const aspectRatioPercent = ratioHeight / ratioWidth * 100;
   return (
     <View
-      style={{ position: "relative", paddingBottom: `${aspectRatioPercent}%` }}
+      style={{
+        paddingBottom: `${aspectRatioPercent}%`,
+        position: "relative"
+      }}
     >
-      <View style={{ position: "absolute", width: "100%", height: "100%" }}>
+      <View
+        style={{
+          height: "100%",
+          position: "absolute",
+          width: "100%"
+        }}
+      >
         {children}
       </View>
     </View>

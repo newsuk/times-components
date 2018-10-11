@@ -2,6 +2,13 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
+  articleFlag: {
+    flexDirection: "row",
+    marginBottom: spacing(2)
+  },
+  articleFlagContainer: {
+    marginRight: spacing(3)
+  },
   articleHeadLineText: {
     ...fontFactory({
       font: "headline",
@@ -10,6 +17,10 @@ const sharedStyles = {
     color: colours.functional.brandColour,
     marginBottom: 7
   },
+  articleLabel: {
+    paddingBottom: spacing(1),
+    paddingTop: spacing(1)
+  },
   standFirst: {
     ...fontFactory({
       font: "headlineRegular",
@@ -17,17 +28,6 @@ const sharedStyles = {
     }),
     color: colours.functional.primary,
     paddingBottom: spacing(2)
-  },
-  articleLabel: {
-    paddingTop: spacing(1),
-    paddingBottom: spacing(1)
-  },
-  articleFlag: {
-    marginBottom: spacing(2),
-    flexDirection: "row"
-  },
-  articleFlagContainer: {
-    marginRight: spacing(3)
   }
 };
 

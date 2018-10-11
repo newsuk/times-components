@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   articleMetaElement: {
     ...sharedStyles.articleMetaElement,
-    paddingTop: spacing(1),
-    paddingBottom: spacing(1)
+    paddingBottom: spacing(1),
+    paddingTop: spacing(1)
   }
 });
 

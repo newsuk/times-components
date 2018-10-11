@@ -40,19 +40,19 @@ ArticleContent.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       data: PropTypes.object.isRequired,
-      type: PropTypes.string.isRequired,
-      index: PropTypes.number
+      index: PropTypes.number,
+      type: PropTypes.string.isRequired
     })
   ).isRequired,
-  renderRow: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
+  onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  renderRow: PropTypes.func.isRequired
 };
 
 export default ArticleContent;

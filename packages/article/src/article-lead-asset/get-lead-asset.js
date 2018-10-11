@@ -1,10 +1,10 @@
 import getStandardTemplateCrop from "./crop-config";
 
 export const defaultAsset = {
-  isVideo: false,
-  leadAsset: null,
+  aspectRatio: "1:1",
   displayImage: null,
-  aspectRatio: "1:1"
+  isVideo: false,
+  leadAsset: null
 };
 
 export default function getLeadAsset({ leadAsset }) {
@@ -19,9 +19,12 @@ export default function getLeadAsset({ leadAsset }) {
   const aspectRatio = displayImage.ratio;
 
   return {
-    isVideo,
-    leadAsset: { ...leadAsset, isVideo },
+    aspectRatio,
     displayImage,
-    aspectRatio
+    isVideo,
+    leadAsset: {
+      ...leadAsset,
+      isVideo
+    }
   };
 }

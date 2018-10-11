@@ -113,13 +113,15 @@ export default () => {
                     href: "https://link.io",
                     target: "_blank"
                   },
-                  children: [{
-                    attributes: {
-                      value: "Press Me"
-                    },
-                    children: [],
-                    name: "text"
-                  }],
+                  children: [
+                    {
+                      attributes: {
+                        value: "Press Me"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
                   name: "link"
                 }
               ]

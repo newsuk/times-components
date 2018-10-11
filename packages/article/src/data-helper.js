@@ -1,35 +1,47 @@
 import getLeadAsset from "./article-lead-asset/get-lead-asset";
 
-const prepend = ({ type, data }, list) => {
+const prepend = ({ data, type }, list) => {
   if (!data) {
     return list;
   }
 
-  return [{ type, data }, ...list];
+  return [
+    {
+      data,
+      type
+    },
+    ...list
+  ];
 };
 
-const append = ({ type, data }, list) => {
+const append = ({ data, type }, list) => {
   if (!data) {
     return list;
   }
 
-  return [...list, { type, data }];
+  return [
+    ...list,
+    {
+      data,
+      type
+    }
+  ];
 };
 
 const prepareDataForListView = articleData => {
   const { isVideo, leadAsset } = getLeadAsset(articleData);
   const articleHeaderData = {
-    label: articleData.label,
+    flags: articleData.flags,
     hasVideo: articleData.hasVideo,
     headline: articleData.headline,
-    standfirst: articleData.standfirst,
-    flags: articleData.flags,
-    isVideo
+    isVideo,
+    label: articleData.label,
+    standfirst: articleData.standfirst
   };
   const articleMidContainerData = {
+    byline: articleData.byline,
     publicationName: articleData.publicationName,
-    publishedTime: articleData.publishedTime,
-    byline: articleData.byline
+    publishedTime: articleData.publishedTime
   };
 
   const relatedArticleSliceData = articleData.relatedArticleSlice
@@ -48,31 +60,54 @@ const prepareDataForListView = articleData => {
   };
 
   const data = [
-    { type: "header", data: articleHeaderData },
-    { type: "middleContainer", data: articleMidContainerData },
+    {
+      data: articleHeaderData,
+      type: "header"
+    },
+    {
+      data: articleMidContainerData,
+      type: "middleContainer"
+    },
     ...articleData.content.map((rowData, index) => {
       const item = {
-        type: "articleBodyRow",
         data: Object.assign({}, rowData),
-        index
+        index,
+        type: "articleBodyRow"
       };
       if (rowData.name === "ad") {
         item.data.attributes = {
           ...item.data.attributes,
-          ...{ section: articleData.section, contextUrl: articleData.url }
+          ...{
+            contextUrl: articleData.url,
+            section: articleData.section
+          }
         };
       }
       return item;
     }),
-    { type: "topics", data: { topics: articleData.topics } }
+    {
+      data: {
+        topics: articleData.topics
+      },
+      type: "topics"
+    }
   ];
 
   return prepend(
-    { type: "leadAsset", data: leadAsset },
+    {
+      data: leadAsset,
+      type: "leadAsset"
+    },
     append(
-      { type: "comments", data: commentsData },
+      {
+        data: commentsData,
+        type: "comments"
+      },
       append(
-        { type: "relatedArticleSlice", data: relatedArticleSliceData },
+        {
+          data: relatedArticleSliceData,
+          type: "relatedArticleSlice"
+        },
         data
       )
     )

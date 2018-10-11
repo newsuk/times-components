@@ -51,24 +51,28 @@ const tests = [
               href: "https://link.io",
               target: "_blank"
             },
-            children: [{
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }],
+            children: [
+              {
+                attributes: {
+                  value: "Some Link"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
             name: "link"
           },
           {
             attributes: {},
-            children: [{
-              attributes: {
-                value: "Some content"
-              },
-              children: [],
-              name: "text"
-            }],
+            children: [
+              {
+                attributes: {
+                  value: "Some content"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
             name: "paragraph"
           },
           {
