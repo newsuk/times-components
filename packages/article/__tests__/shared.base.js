@@ -54,10 +54,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-<<<<<<< HEAD
-=======
           refetch={() => {}}
->>>>>>> chore: reorder article object keys
         />
       );
 

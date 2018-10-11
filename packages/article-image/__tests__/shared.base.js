@@ -179,16 +179,16 @@ export default makeTest => {
       name: "primary image with given resolutions",
       test: () => {
         const primaryImage = {
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          },
           imageOptions: {
             display: "primary",
             highResSize: 900,
             lowResSize: 50,
             ratio: "16:9",
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: "Some caption",
-            credits: "Some credit"
           }
         };
 

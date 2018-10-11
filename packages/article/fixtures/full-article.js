@@ -1311,7 +1311,7 @@ const defaultLeadAsset = {
     ratio: "3:2",
     url: "https://crop32.io/"
   },
-  crop45:{
+  crop45: {
     __typename: "Crop",
     ratio: "4:5",
     url: "https://crop45.io/"
@@ -1809,12 +1809,14 @@ const defaultRelatedArticleSlice = {
             crop32: {
               __typename: "Crop",
               ratio: "3:2",
-              url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0"
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0"
             },
             crop169: {
               __typename: "Crop",
               ratio: "16:9",
-              url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0"
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0"
             },
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: ""

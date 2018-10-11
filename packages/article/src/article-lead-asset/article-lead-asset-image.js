@@ -16,12 +16,12 @@ const ArticleLeadAssetImage = ({
   width
 }) => {
   const crop = getStandardTemplateCrop({
-    crop169,
-    crop32,
-    crop1251,
     crop11,
+    crop23,
+    crop32,
     crop45,
-    crop23
+    crop169,
+    crop1251
   });
 
   const { ratio, url } = crop;
@@ -42,24 +42,24 @@ const ArticleLeadAssetImage = ({
 ArticleLeadAssetImage.propTypes = {
   caption: PropTypes.string,
   credits: PropTypes.string,
-  crop169: cropPropTypes,
-  crop32: cropPropTypes,
-  crop1251: cropPropTypes,
   crop11: cropPropTypes,
-  crop45: cropPropTypes,
   crop23: cropPropTypes,
+  crop32: cropPropTypes,
+  crop45: cropPropTypes,
+  crop169: cropPropTypes,
+  crop1251: cropPropTypes,
   width: PropTypes.number
 };
 
 ArticleLeadAssetImage.defaultProps = {
   caption: null,
   credits: null,
-  crop169: null,
-  crop32: null,
-  crop1251: null,
   crop11: null,
-  crop45: null,
   crop23: null,
+  crop32: null,
+  crop45: null,
+  crop169: null,
+  crop1251: null,
   width: null
 };
 

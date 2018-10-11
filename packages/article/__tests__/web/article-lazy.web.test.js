@@ -94,15 +94,15 @@ iterator([
         ...testFixture,
         content: [
           {
-            name: "image",
             attributes: {
+              caption: "An image caption",
+              credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
-              caption: "An image caption",
-              credits: "The image credits"
+              url: "https://image.io"
             },
-            children: []
+            children: [],
+            name: "image"
           }
         ]
       });
@@ -138,26 +138,26 @@ iterator([
         ...testFixture,
         content: [
           {
-            name: "image",
             attributes: {
+              caption: "An image caption",
+              credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
-              caption: "An image caption",
-              credits: "The image credits"
+              url: "https://image.io"
             },
-            children: []
+            children: [],
+            name: "image"
           },
           {
-            name: "image",
             attributes: {
+              caption: "An image caption",
+              credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
-              caption: "An image caption",
-              credits: "The image credits"
+              url: "https://image.io"
             },
-            children: []
+            children: [],
+            name: "image"
           }
         ]
       });

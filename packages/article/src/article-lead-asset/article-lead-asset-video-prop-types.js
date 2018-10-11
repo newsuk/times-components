@@ -7,8 +7,8 @@ export const articleLeadAssetVideoPropTypes = {
   brightcoveVideoId: PropTypes.string.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   posterImage: PropTypes.shape({
-    crop169: cropPropTypes,
-    crop32: cropPropTypes
+    crop32: cropPropTypes,
+    crop169: cropPropTypes
   }).isRequired,
   skySports: PropTypes.bool
 };
