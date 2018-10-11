@@ -302,6 +302,35 @@ exports[`1. article list 1`] = `
         </Link>
       </div>
     </div>
+    <div>
+      <div
+        className="c0 S3"
+      >
+        <div
+          className="c3 S3"
+        >
+          <div
+            className="S4"
+          />
+        </div>
+        <Link>
+          <div
+            className="c1 S3"
+          >
+            <Card
+              contentContainerClass="articleListContent"
+              imageContainerClass="articleListImage"
+            >
+              <div
+                className="c2 S3"
+              >
+                <ArticleSummary />
+              </div>
+            </Card>
+          </div>
+        </Link>
+      </div>
+    </div>
     <Ad
       className="IS1"
     />
