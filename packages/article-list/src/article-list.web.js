@@ -124,9 +124,13 @@ class ArticleList extends Component {
             data.map((article, index) => {
               const { elementId } = article;
 
-              if (index === this.advertPosition && hasAdvertConfig) {
-                return renderAdComponent({ key: `advert${index}` });
-              }
+              const renderAd = () => {
+                if (index === this.advertPosition && hasAdvertConfig) {
+                  return renderAdComponent({ key: `advert${index}` });
+                }
+
+                return null;
+              };
 
               const renderSeperator = () => {
                 if (index === 0) {
@@ -166,6 +170,7 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
+                  {renderAd()}
                 </Fragment>
               );
             })}
