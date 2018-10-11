@@ -19,7 +19,6 @@ export default {
       // eslint-disable-next-line react/prop-types
       component: ({ boolean }) => {
         const withHighRes = boolean("As high resolution");
-        const withLowRes = boolean("As low resolution");
 
         const imageOptions = {
           ...primaryImage.imageOptions
@@ -27,9 +26,7 @@ export default {
 
         if (withHighRes) {
           imageOptions.highResSize = 900;
-        }
-
-        if (withLowRes) {
+        } else {
           imageOptions.lowResSize = 100;
         }
 
