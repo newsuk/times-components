@@ -1,5 +1,5 @@
 const { IntrospectionFragmentMatcher } = require("apollo-cache-inmemory");
- 
+
 const introspectionQueryResultData = {
   __schema: {
     types: [
