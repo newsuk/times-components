@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.2.0...@times-components/ssr@1.2.1) (2018-10-12)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.1.3...@times-components/ssr@1.2.0) (2018-10-11)
 
