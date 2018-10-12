@@ -1,17 +1,16 @@
 import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
+import { scales } from "@times-components/styleguide";
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
-  flattenStyleTransform,
   minimalNativeTransform,
+  flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
+import shared from "./shared.base";
 import "./mock-text-measure-module";
-import DropCapWithContext from "../src/drop-cap-with-context";
 import DropCap from "../src/drop-cap";
 
 const mockDropCap = "I";
@@ -21,17 +20,10 @@ const mockText =
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
     compose(print, minimalNativeTransform, flattenStyleTransform)
   );
 
-  it("paragraph with single drop cap", () => {
-    const testInstance = TestRenderer.create(
-      <DropCapWithContext dropCap={mockDropCap} text={mockText} />
-    );
-
-    expect(testInstance).toMatchSnapshot();
-  });
+  shared();
 
   it("re-measures when scale changes", () => {
     const testInstance = TestRenderer.create(

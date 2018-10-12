@@ -10,7 +10,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:all": "yarn test:android --coverage",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage && yarn test:web --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -37,7 +38,8 @@
     "prop-types": "15.6.2",
     "@times-components/context": "0.4.30",
     "@times-components/styleguide": "3.5.0",
-    "lodash.invert": "4.3.0"
+    "lodash.invert": "4.3.0",
+    "styled-components": "3.4.0"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
@@ -47,8 +49,10 @@
     "@times-components/storybook": "3.1.15",
     "@times-components/webpack-configurator": "2.0.6",
     "babel-cli": "6.26.0",
+    "babel-plugin-styled-components": "1.5.1",
     "eslint": "4.9.0",
     "jest": "23.3.0",
+    "jest-styled-components": "5.0.1",
     "prettier": "1.8.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",

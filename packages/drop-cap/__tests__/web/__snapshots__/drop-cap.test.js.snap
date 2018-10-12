@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`paragraph with single drop cap 1`] = `
+.c0 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-family: TimesDigitalW04;
+  color: #333333px;
+}
+
+.c1 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 9px 10px 0 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: TimesModern-Regular;
+  color: #333333px;
+}
+
+<p>
+  <span>
+    I
+  </span>
+  <span>
+    n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the wars, he said later that he had learnt “lessons which I have never forgotten. 
+  </span>
+</p>
+`;
