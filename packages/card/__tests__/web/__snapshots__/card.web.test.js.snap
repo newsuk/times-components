@@ -12,13 +12,9 @@ exports[`1. card default state 1`] = `
     />
   </div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          A card
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      A card
+    </div>
   </div>
 </div>
 `;
@@ -35,13 +31,9 @@ exports[`2. pass an empty state to the image component 1`] = `
     />
   </div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          A card with an empty image
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      A card with an empty image
+    </div>
   </div>
 </div>
 `;
@@ -49,13 +41,9 @@ exports[`2. pass an empty state to the image component 1`] = `
 exports[`3. card without an image when showimage is false 1`] = `
 <div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          No image
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      No image
+    </div>
   </div>
 </div>
 `;
@@ -72,13 +60,9 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
     />
   </div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          No URI
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      No URI
+    </div>
   </div>
 </div>
 `;
@@ -86,13 +70,9 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
 exports[`5. card with reversed layout 1`] = `
 <div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          A card in reverse
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      A card in reverse
+    </div>
   </div>
   <div>
     <TimesImage
@@ -109,13 +89,9 @@ exports[`5. card with reversed layout 1`] = `
 exports[`6. card with reversed layout and no image 1`] = `
 <div>
   <div>
-    <indexweb__FadeIn>
-      <div>
-        <div>
-          A card in reverse with no image
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div>
+      A card in reverse with no image
+    </div>
   </div>
 </div>
 `;
@@ -134,24 +110,20 @@ exports[`7. card with a loading state 1`] = `
         />
       </div>
       <div>
-        <indexweb__FadeIn>
-          <div>
-            <Component>
-              <Gradient
-                degrees={264}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            degrees={264}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+        </Component>
       </div>
     </div>
   </div>
@@ -163,24 +135,20 @@ exports[`8. card with a loading state and no image 1`] = `
   <div>
     <div>
       <div>
-        <indexweb__FadeIn>
-          <div>
-            <Component>
-              <Gradient
-                degrees={264}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            degrees={264}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+        </Component>
       </div>
     </div>
   </div>
@@ -192,24 +160,20 @@ exports[`9. card with reversed loading state 1`] = `
   <div>
     <div>
       <div>
-        <indexweb__FadeIn>
-          <div>
-            <Component>
-              <Gradient
-                degrees={264}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            degrees={264}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+        </Component>
       </div>
       <div>
         <TimesImage
@@ -230,24 +194,20 @@ exports[`10. card with reversed loading state with no image 1`] = `
   <div>
     <div>
       <div>
-        <indexweb__FadeIn>
-          <div>
-            <Component>
-              <Gradient
-                degrees={264}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-              <Gradient
-                degrees={267}
-              />
-            </Component>
-          </div>
-        </indexweb__FadeIn>
+        <Component>
+          <Gradient
+            degrees={264}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+          <Gradient
+            degrees={267}
+          />
+        </Component>
       </div>
     </div>
   </div>
@@ -275,9 +235,7 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        Do not re-render me
-      </div>
+      Do not re-render me
     </div>
   </div>
 </div>
@@ -304,9 +262,7 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
   </div>
   <div>
     <div>
-      <div>
-        Do not re-render me
-      </div>
+      Do not re-render me
     </div>
   </div>
 </div>
@@ -333,9 +289,7 @@ exports[`12. card should re-render when image uri changes 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some text
-      </div>
+      Some text
     </div>
   </div>
 </div>
@@ -362,9 +316,7 @@ exports[`12. card should re-render when image uri changes 2`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some text
-      </div>
+      Some text
     </div>
   </div>
 </div>
@@ -391,9 +343,7 @@ exports[`13. card should re-render when low res size changes 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some content
-      </div>
+      Some content
     </div>
   </div>
 </div>
@@ -416,9 +366,7 @@ exports[`13. card should re-render when low res size changes 2`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some content
-      </div>
+      Some content
     </div>
   </div>
 </div>
@@ -445,9 +393,7 @@ exports[`14. card should re-render when high res size changes 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some content
-      </div>
+      Some content
     </div>
   </div>
 </div>
@@ -470,9 +416,7 @@ exports[`14. card should re-render when high res size changes 2`] = `
   </div>
   <div>
     <div>
-      <div>
-        Some content
-      </div>
+      Some content
     </div>
   </div>
 </div>
@@ -499,12 +443,10 @@ exports[`15. card should re-render when loading state changes 1`] = `
       </div>
     </div>
     <div>
-      <div>
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
   </div>
 </div>
@@ -531,9 +473,7 @@ exports[`15. card should re-render when loading state changes 2`] = `
   </div>
   <div>
     <div>
-      <div>
-        Re-render me
-      </div>
+      Re-render me
     </div>
   </div>
 </div>

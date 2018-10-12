@@ -1,40 +1,53 @@
-import React from "react";
+import React, { Component } from "react";
 import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
 import { getConfig, getConfigWrapper } from "./config";
 
-const StandardSlice = ({ itemCount, renderItems }) => {
-  const ConfigWrapper = getConfigWrapper({ itemCount });
-  const config = getConfig({ itemCount });
-  const ChildrenContainer = getChildrenContainer({
-    childCount: itemCount
-  });
-  const Separator = getSeparator({ hasLeftRightMargin: true });
-  const items = renderItems(config);
+const Separator = getSeparator({ hasLeftRightMargin: true });
 
-  if (items.length === 0) {
-    return null;
+class StandardSlice extends Component {
+  constructor(props) {
+    super(props);
+
+    const { itemCount } = this.props;
+    this.ConfigWrapper = getConfigWrapper({ itemCount });
+    this.config = getConfig({ itemCount });
+    this.ChildrenContainer = getChildrenContainer({
+      childCount: itemCount
+    });
   }
 
-  return (
-    <ConfigWrapper>
-      <SliceContainer>
-        <ChildrenContainer>
-          {items
-            .map(item => (
-              <ChildContainer key={item.props.id}>{item}</ChildContainer>
-            ))
-            .reduce((previous, current) => [
-              ...(previous.length > 0 ? previous : [previous]),
-              <Separator key={`separator-${current.key}`} />,
-              current
-            ])}
-        </ChildrenContainer>
-      </SliceContainer>
-    </ConfigWrapper>
-  );
-};
+  render() {
+    const { renderItems } = this.props;
+
+    const items = renderItems(this.config);
+
+    if (items.length === 0) {
+      return null;
+    }
+
+    const { ChildrenContainer, ConfigWrapper } = this;
+
+    return (
+      <ConfigWrapper>
+        <SliceContainer>
+          <ChildrenContainer>
+            {items
+              .map(item => (
+                <ChildContainer key={item.props.id}>{item}</ChildContainer>
+              ))
+              .reduce((previous, current) => [
+                ...(previous.length > 0 ? previous : [previous]),
+                <Separator key={`separator-${current.key}`} />,
+                current
+              ])}
+          </ChildrenContainer>
+        </SliceContainer>
+      </ConfigWrapper>
+    );
+  }
+}
 
 StandardSlice.propTypes = propTypes;
 

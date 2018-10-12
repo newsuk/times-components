@@ -6,6 +6,7 @@ const { InMemoryCache: Cache } = require("apollo-cache-inmemory");
 const { fragmentMatcher } = require("@times-components/schema");
 const fetch = require("node-fetch");
 const { createHttpLink } = require("apollo-link-http");
+const shrinkRay = require("shrink-ray");
 const getData = require("./get-data");
 const adConfig = require("./ad-config.json");
 const article = require("./article");
@@ -15,11 +16,19 @@ const topic = require("./topic");
 const port = 3000;
 const server = express();
 
+server.use(shrinkRay());
+server.use(express.static("dist"));
+
 const makeClient = () =>
   new ApolloClient({
     ssrMode: true,
     link: createHttpLink({
       fetch,
+      headers: {
+        authorization: process.env.AUTH_TOKEN
+          ? `Bearer ${process.env.AUTH_TOKEN}`
+          : ""
+      },
       uri: process.env.GRAPHQL_ENDPOINT
     }),
     cache: new Cache({ addTypename: true, fragmentMatcher })
@@ -133,7 +142,5 @@ server.get("/topic/:slug", (req, res) => {
     )
   );
 });
-
-server.use(express.static("dist"));
 
 server.listen(port, () => console.log(`Serving at http://localhost:${port}`));

@@ -13,53 +13,56 @@ exports[`1. one lead related article 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://test.io"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://crop169.io"
-            isReversed={false}
-            lowResSize={100}
-            showImage={true}
+            url="https://test.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://crop169.io"
+              isReversed={false}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  TEST LABEL
+                <View>
+                  <Text>
+                    TEST LABEL
+                  </Text>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Test Short Headline
                 </Text>
-              </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Test Short Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Deborah Haynes
                   </Text>
                 </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-              <Text>
-                <Text>
-                  Deborah Haynes
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

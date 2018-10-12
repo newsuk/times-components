@@ -13,105 +13,111 @@ exports[`1. one opinion and one support related article 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
-            }
-          }
-          url="https://first.io"
-        >
-          <Card
-            imageRatio={0.6135458167330677}
-            imageStyle={
+        <div>
+          <Link
+            linkStyle={
               Object {
-                "bottom": 0,
-                "marginTop": -140,
-                "maxWidth": "40%",
-                "minWidth": "40%",
-                "position": "relative",
-                "right": 0,
+                "padding": 10,
               }
             }
-            imageUri="https://crop23-1.io"
-            isReversed={true}
-            lowResSize={100}
-            showImage={true}
+            url="https://first.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={0.6135458167330677}
+              imageStyle={
+                Object {
+                  "bottom": 0,
+                  "marginTop": -140,
+                  "maxWidth": "40%",
+                  "minWidth": "40%",
+                  "position": "relative",
+                  "right": 0,
+                }
+              }
+              imageUri="https://crop23-1.io"
+              isReversed={true}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  FIRST LABEL
-                </Text>
-              </View>
-              <Text>
-                <Text>
-                  Sathnam Sanghera
-                </Text>
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                First Short Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    FIRST LABEL
+                  </Text>
+                </View>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Sathnam Sanghera
                   </Text>
                 </Text>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  First Short Headline
+                </Text>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://second.io"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://crop169-2.io"
-            isReversed={false}
-            lowResSize={100}
-            showImage={false}
+            url="https://second.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://crop169-2.io"
+              isReversed={false}
+              lowResSize={100}
+              showImage={false}
+            >
               <View>
+                <View>
+                  <Text>
+                    SECOND LABEL
+                  </Text>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Second Short Headline
+                </Text>
                 <Text>
-                  SECOND LABEL
+                  January 17 2018, 12:00pm
+                </Text>
+                <Text>
+                  <Text>
+                    Deborah Haynes
+                  </Text>
                 </Text>
               </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Second Short Headline
-              </Text>
-              <Text>
-                January 17 2018, 12:00pm
-              </Text>
-              <Text>
-                <Text>
-                  Deborah Haynes
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

@@ -1,14 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`card with default layout 1`] = `
-.c2 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
 .c0 {
   display: block;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -139,17 +134,11 @@ exports[`card with default layout 1`] = `
   <div
     className="S4"
   >
-    <indexweb__FadeIn>
-      <div
-        className="c2 S1"
-      >
-        <div
-          className="S3"
-        >
-          A card
-        </div>
-      </div>
-    </indexweb__FadeIn>
+    <div
+      className="S3"
+    >
+      A card
+    </div>
   </div>
 </div>
 `;

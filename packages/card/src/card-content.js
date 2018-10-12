@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Animations } from "@times-components/styleguide";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
@@ -72,9 +71,7 @@ class CardContent extends Component {
             isLoading ? styles.loadingContentContainer : ""
           ]}
         >
-          <Animations.FadeIn>
-            {isLoading ? <Loading /> : children}
-          </Animations.FadeIn>
+          {isLoading ? <Loading /> : children}
         </View>
         {isReversed ? renderImage() : null}
       </View>

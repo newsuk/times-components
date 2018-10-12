@@ -49,108 +49,110 @@ exports[`default styles 1`] = `
           }
         }
       >
-        <Link>
-          <Card>
-            <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 0,
-                  }
-                }
-              >
-                <Text
+        <div>
+          <Link>
+            <Card>
+              <View>
+                <View
                   style={
                     Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 14,
                       "marginBottom": 0,
                     }
                   }
                 >
-                  TEST LABEL
-                </Text>
-              </View>
-              <Text
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 25,
-                    "marginBottom": 5,
-                    "marginTop": 0,
-                  }
-                }
-              >
-                Test Short Headline
-              </Text>
-              <View>
-                <Text
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 14,
+                        "marginBottom": 0,
+                      }
                     }
-                  }
-                >
-                  <Text>
-                    
-                    Summary 125
-                    ...
+                  >
+                    TEST LABEL
                   </Text>
-                </Text>
-              </View>
-              <Text
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                March 13 2015, 06:54pm
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 0,
-                  }
-                }
-              >
+                </View>
                 <Text
                   style={
                     Object {
                       "color": "#333333",
-                      "flexDirection": "row",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 25,
+                      "marginBottom": 5,
+                      "marginTop": 0,
                     }
                   }
                 >
-                  Deborah Haynes
+                  Test Short Headline
                 </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+                <View>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  March 13 2015, 06:54pm
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
+                    }
+                  >
+                    Deborah Haynes
+                  </Text>
+                </Text>
+              </View>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

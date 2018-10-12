@@ -11,7 +11,7 @@ export default (
 ) => ({
   imageOptions: {
     display: "primary",
-    ratio: "1500:1200",
+    ratio: "15:12",
     uri
   },
   captionOptions: {

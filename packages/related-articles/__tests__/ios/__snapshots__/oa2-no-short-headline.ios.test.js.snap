@@ -13,63 +13,66 @@ exports[`1. no short headline 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
-            }
-          }
-          url="https://test.io"
-        >
-          <Card
-            imageRatio={0.6135458167330677}
-            imageStyle={
+        <div>
+          <Link
+            linkStyle={
               Object {
-                "bottom": 0,
-                "marginTop": -140,
-                "maxWidth": "40%",
-                "minWidth": "40%",
-                "position": "relative",
-                "right": 0,
+                "padding": 10,
               }
             }
-            imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
-            isReversed={true}
-            lowResSize={100}
-            showImage={true}
+            url="https://test.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={0.6135458167330677}
+              imageStyle={
+                Object {
+                  "bottom": 0,
+                  "marginTop": -140,
+                  "maxWidth": "40%",
+                  "minWidth": "40%",
+                  "position": "relative",
+                  "right": 0,
+                }
+              }
+              imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+              isReversed={true}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  TEST LABEL
-                </Text>
-              </View>
-              <Text>
-                <Text>
-                  Sathnam Sanghera
-                </Text>
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Test Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    TEST LABEL
+                  </Text>
+                </View>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Sathnam Sanghera
                   </Text>
                 </Text>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Test Headline
+                </Text>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

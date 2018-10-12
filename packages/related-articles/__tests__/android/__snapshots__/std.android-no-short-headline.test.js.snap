@@ -13,56 +13,59 @@ exports[`1. no short headline 1`] = `
   <View>
     <View>
       <View>
-        <Link
-          linkStyle={
-            Object {
-              "padding": 10,
+        <div>
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
+              }
             }
-          }
-          url="https://test.io"
-        >
-          <Card
-            imageRatio={1.7777777777777777}
-            imageUri="https://crop.io"
-            isReversed={false}
-            lowResSize={100}
-            showImage={true}
+            url="https://test.io"
           >
-            <View>
+            <Card
+              highResSize={null}
+              imageRatio={1.7777777777777777}
+              imageUri="https://crop.io"
+              isReversed={false}
+              lowResSize={100}
+              showImage={true}
+            >
               <View>
-                <Text>
-                  TEST LABEL
+                <View>
+                  <Text>
+                    TEST LABEL
+                  </Text>
+                </View>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                >
+                  Test Headline
                 </Text>
-              </View>
-              <Text
-                accessibilityRole="heading"
-                aria-level="3"
-              >
-                Test Headline
-              </Text>
-              <View>
+                <View>
+                  <Text>
+                    <Text>
+                      
+                      Summary 125
+                      ...
+                    </Text>
+                  </Text>
+                </View>
+                <Text>
+                  March 13 2015, 06:54pm
+                </Text>
                 <Text>
                   <Text>
-                    
-                    Summary 125
-                    ...
+                    Camilla Long
+                  </Text>
+                  <Text>
+                    , Environment Editor
                   </Text>
                 </Text>
               </View>
-              <Text>
-                March 13 2015, 06:54pm
-              </Text>
-              <Text>
-                <Text>
-                  Camilla Long
-                </Text>
-                <Text>
-                  , Environment Editor
-                </Text>
-              </Text>
-            </View>
-          </Card>
-        </Link>
+            </Card>
+          </Link>
+        </div>
       </View>
     </View>
   </View>

@@ -14,64 +14,67 @@ exports[`1. no short headline 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
+          <div>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
               }
-            }
-            url="https://test.io"
-          >
-            <Card
-              imageRatio={0.6135458167330677}
-              imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
-              isReversed={true}
-              lowResSize={100}
-              showImage={true}
+              url="https://test.io"
             >
-              <div>
+              <Card
+                highResSize={null}
+                imageRatio={0.6135458167330677}
+                imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+                isReversed={true}
+                lowResSize={100}
+                showImage={true}
+              >
                 <div>
                   <div>
-                    TEST LABEL
-                  </div>
-                </div>
-                <div>
-                  <span>
-                    Sathnam Sanghera
-                  </span>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  Test Headline
-                </h3>
-                <div>
-                  <div>
-                    <span>
-                      
-                      Summary 125
-                      ...
-                    </span>
+                    <div>
+                      TEST LABEL
+                    </div>
                   </div>
                   <div>
                     <span>
-                      
-                      The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
-                      ...
+                      Sathnam Sanghera
                     </span>
                   </div>
-                </div>
-                <div>
-                  <time
-                    dateTime="2015-03-13T18:54:58.000Z"
+                  <h3
+                    aria-level="3"
+                    role="heading"
                   >
-                    March 13 2015, 06:54pm
-                  </time>
+                    Test Headline
+                  </h3>
+                  <div>
+                    <div>
+                      <span>
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
+                        ...
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <time
+                      dateTime="2015-03-13T18:54:58.000Z"
+                    >
+                      March 13 2015, 06:54pm
+                    </time>
+                  </div>
                 </div>
-              </div>
-            </Card>
-          </Link>
+              </Card>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

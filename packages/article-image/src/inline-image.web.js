@@ -22,7 +22,7 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const InlineImage = ({ imageOptions, captionOptions }) => {
-  const { display, highResSize, ratio, uri } = imageOptions;
+  const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
   const imgCaption = renderCaption(display, caption, credits);
@@ -37,7 +37,12 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
   return (
     <figure style={{ margin: 0 }}>
       <InsetImageStyle key="img">
-        <Image aspectRatio={aspectRatio} highResSize={highResSize} uri={uri} />
+        <Image
+          aspectRatio={aspectRatio}
+          highResSize={highResSize}
+          lowResSize={lowResSize}
+          uri={uri}
+        />
       </InsetImageStyle>
       {imgCaption}
     </figure>

@@ -7,16 +7,12 @@ import {
 import styles from "../styles/article-body";
 
 const BodyParagraph = props => (
-  <ParagraphContainer
-    key={`paragraph-${props.uid}`}
-    style={[styles.articleMainContentRow]}
-  >
+  <ParagraphContainer style={[styles.articleMainContentRow]}>
     <Paragraph style={[styles.articleTextElement]}>{props.children}</Paragraph>
   </ParagraphContainer>
 );
 
 BodyParagraph.propTypes = {
-  uid: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
   ).isRequired

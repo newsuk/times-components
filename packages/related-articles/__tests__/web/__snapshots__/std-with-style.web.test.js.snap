@@ -292,64 +292,66 @@ exports[`default styles 1`] = `
         <div
           className="c7 S4"
         >
-          <Link>
-            <Card>
-              <div
-                className="S4"
-              >
+          <div>
+            <Link>
+              <Card>
                 <div
                   className="S4"
                 >
                   <div
-                    className="S3 IS1"
+                    className="S4"
                   >
-                    TEST LABEL
+                    <div
+                      className="S3 IS1"
+                    >
+                      TEST LABEL
+                    </div>
                   </div>
-                </div>
-                <h3
-                  className="headlineClass S5"
-                >
-                  Test Short Headline
-                </h3>
-                <div
-                  className="S4"
-                >
+                  <h3
+                    className="headlineClass S5"
+                  >
+                    Test Short Headline
+                  </h3>
                   <div
-                    className="summaryHidden summary125Class S7"
+                    className="S4"
+                  >
+                    <div
+                      className="summaryHidden summary125Class S7"
+                    >
+                      <span
+                        className="S6"
+                      >
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="S8"
+                  >
+                    <time>
+                      March 13 2015, 06:54pm
+                    </time>
+                  </div>
+                  <div
+                    className="S10"
                   >
                     <span
-                      className="S6"
+                      className="S9 IS2"
                     >
-                      
-                      Summary 125
-                      ...
+                      Camilla Long
+                    </span>
+                    <span
+                      className="S9 IS3"
+                    >
+                      , Environment Editor
                     </span>
                   </div>
                 </div>
-                <div
-                  className="S8"
-                >
-                  <time>
-                    March 13 2015, 06:54pm
-                  </time>
-                </div>
-                <div
-                  className="S10"
-                >
-                  <span
-                    className="S9 IS2"
-                  >
-                    Camilla Long
-                  </span>
-                  <span
-                    className="S9 IS3"
-                  >
-                    , Environment Editor
-                  </span>
-                </div>
-              </div>
-            </Card>
-          </Link>
+              </Card>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

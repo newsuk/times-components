@@ -14,74 +14,6 @@ exports[`1. one opinion and one support related article 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://first.io"
-          >
-            <Card
-              imageRatio={0.6135458167330677}
-              imageUri="https://crop23-1.io"
-              isReversed={true}
-              lowResSize={100}
-              showImage={true}
-            >
-              <div>
-                <div>
-                  <div>
-                    FIRST LABEL
-                  </div>
-                </div>
-                <div>
-                  <span>
-                    Sathnam Sanghera
-                  </span>
-                </div>
-                <h3
-                  aria-level="3"
-                  role="heading"
-                >
-                  First Short Headline
-                </h3>
-                <div>
-                  <div>
-                    <span>
-                      
-                      Summary 125
-                      ...
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      
-                      Summary 145
-                      ...
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      
-                      Summary 225
-                      ...
-                    </span>
-                  </div>
-                </div>
-                <div>
-                  <time
-                    dateTime="2015-03-13T18:54:58.000Z"
-                  >
-                    March 13 2015, 06:54pm
-                  </time>
-                </div>
-              </div>
-            </Card>
-          </Link>
-        </div>
-        <div />
-        <div>
           <div>
             <Link
               linkStyle={
@@ -89,43 +21,117 @@ exports[`1. one opinion and one support related article 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://second.io"
+              url="https://first.io"
             >
               <Card
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop169-2.io"
-                isReversed={false}
+                highResSize={null}
+                imageRatio={0.6135458167330677}
+                imageUri="https://crop23-1.io"
+                isReversed={true}
                 lowResSize={100}
                 showImage={true}
               >
                 <div>
                   <div>
                     <div>
-                      SECOND LABEL
+                      FIRST LABEL
                     </div>
+                  </div>
+                  <div>
+                    <span>
+                      Sathnam Sanghera
+                    </span>
                   </div>
                   <h3
                     aria-level="3"
                     role="heading"
                   >
-                    Second Short Headline
+                    First Short Headline
                   </h3>
-                  <div />
                   <div>
-                    <time
-                      dateTime="2018-01-17T12:00:00.000Z"
-                    >
-                      January 17 2018, 12:00pm
-                    </time>
+                    <div>
+                      <span>
+                        
+                        Summary 125
+                        ...
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        
+                        Summary 145
+                        ...
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        
+                        Summary 225
+                        ...
+                      </span>
+                    </div>
                   </div>
                   <div>
-                    <span>
-                      Deborah Haynes
-                    </span>
+                    <time
+                      dateTime="2015-03-13T18:54:58.000Z"
+                    >
+                      March 13 2015, 06:54pm
+                    </time>
                   </div>
                 </div>
               </Card>
             </Link>
+          </div>
+        </div>
+        <div />
+        <div>
+          <div>
+            <div>
+              <Link
+                linkStyle={
+                  Object {
+                    "padding": 10,
+                  }
+                }
+                url="https://second.io"
+              >
+                <Card
+                  highResSize={null}
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop169-2.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
+                  <div>
+                    <div>
+                      <div>
+                        SECOND LABEL
+                      </div>
+                    </div>
+                    <h3
+                      aria-level="3"
+                      role="heading"
+                    >
+                      Second Short Headline
+                    </h3>
+                    <div />
+                    <div>
+                      <time
+                        dateTime="2018-01-17T12:00:00.000Z"
+                      >
+                        January 17 2018, 12:00pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Deborah Haynes
+                      </span>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

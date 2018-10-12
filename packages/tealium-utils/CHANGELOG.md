@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.6.11...@times-components/tealium-utils@0.7.0) (2018-10-11)
+
+
+### Features
+
+* expose tracking events to native storybook ([#1380](https://github.com/newsuk/times-components/issues/1380)) ([3551a0a](https://github.com/newsuk/times-components/commit/3551a0a))
+
+
+
+
+
 <a name="0.6.11"></a>
 ## [0.6.11](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.6.10...@times-components/tealium-utils@0.6.11) (2018-09-28)
 

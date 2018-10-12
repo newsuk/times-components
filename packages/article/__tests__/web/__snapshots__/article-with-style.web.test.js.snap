@@ -377,24 +377,21 @@ exports[`full article with style 1`] = `
     "marginBottom": 0,
   },
   "IS10": {
-    "position": "relative",
-  },
-  "IS11": {
     "height": "100%",
     "width": "100%",
   },
-  "IS12": {
+  "IS11": {
     "height": "100%",
     "position": "absolute",
     "width": "100%",
   },
-  "IS13": {
+  "IS12": {
     "paddingBottom": "56.25%",
   },
-  "IS14": {
+  "IS13": {
     "margin": 0,
   },
-  "IS15": {
+  "IS14": {
     "borderBottomColor": "#DBDBDB",
     "borderBottomWidth": 1,
     "borderTopColor": "#DBDBDB",
@@ -404,28 +401,25 @@ exports[`full article with style 1`] = `
     "paddingHorizontal": "10px",
     "paddingVertical": "10px",
   },
-  "IS16": {
+  "IS15": {
     "borderTopColor": "#DBDBDB",
     "borderTopWidth": 1,
   },
   "IS2": {
-    "color": "rgba(51,51,51,1.00)",
-  },
-  "IS3": {
     "justifyContent": "flex-start",
   },
-  "IS4": {
+  "IS3": {
     "height": "100%",
     "position": "absolute",
     "width": "100%",
   },
-  "IS5": {
+  "IS4": {
     "paddingBottom": "56.25%",
   },
-  "IS6": {
+  "IS5": {
     "margin": 0,
   },
-  "IS7": {
+  "IS6": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 17,
@@ -433,13 +427,16 @@ exports[`full article with style 1`] = `
     "marginBottom": "25px",
     "marginTop": 0,
   },
-  "IS8": {
+  "IS7": {
     "paddingLeft": "10px",
     "paddingRight": "10px",
   },
-  "IS9": {
+  "IS8": {
     "height": "100%",
     "width": "100%",
+  },
+  "IS9": {
+    "position": "relative",
   },
   "S1": {
     "-ms-flex-align": "stretch",
@@ -570,7 +567,7 @@ exports[`full article with style 1`] = `
             className="c3 S3"
           >
             <div
-              className="IS2 S2"
+              className="S2"
             >
               SOME LABEL
             </div>
@@ -626,7 +623,7 @@ exports[`full article with style 1`] = `
         >
           <nav>
             <ArticleTopics
-              className="IS3"
+              className="IS2"
             />
           </nav>
         </div>
@@ -638,13 +635,13 @@ exports[`full article with style 1`] = `
           className="c10 S1"
         >
           <figure
-            className="IS6"
+            className="IS5"
           >
             <div
-              className="IS5 S10"
+              className="IS4 S10"
             >
               <div
-                className="IS4 S1"
+                className="IS3 S1"
               >
                 <Image />
               </div>
@@ -663,19 +660,21 @@ exports[`full article with style 1`] = `
     <div
       className="c12 S1"
     >
-      <div
-        className="c13 S1"
-      >
-        <ArticleImage />
+      <div>
+        <div
+          className="c13 S1"
+        >
+          <ArticleImage />
+        </div>
       </div>
       <Link>
         Some Link
       </Link>
       <div
-        className="c14 IS8"
+        className="c14 IS7"
       >
         <p
-          className="c15 IS7"
+          className="c15 IS6"
         >
           Some content
         </p>
@@ -693,22 +692,22 @@ exports[`full article with style 1`] = `
         className="c13 S1"
       >
         <figure
-          className="IS14"
+          className="IS13"
         >
           <div
-            className="IS13 S10"
+            className="IS12 S10"
           >
             <div
-              className="IS12 S1"
+              className="IS11 S1"
             >
               <div
-                className="IS11"
+                className="IS10"
               >
                 <div
-                  className="IS10"
+                  className="IS9"
                 >
                   <video
-                    className="video-js IS9"
+                    className="video-js IS8"
                   />
                 </div>
               </div>
@@ -724,17 +723,21 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS15"
+        className="IS14"
       />
-      <div
-        className="c19 S1"
-      >
-        <ArticleImage />
+      <div>
+        <div
+          className="c19 S1"
+        >
+          <ArticleImage />
+        </div>
       </div>
-      <div
-        className="c20 S1"
-      >
-        <ArticleImage />
+      <div>
+        <div
+          className="c20 S1"
+        >
+          <ArticleImage />
+        </div>
       </div>
     </div>
   </div>
@@ -743,7 +746,7 @@ exports[`full article with style 1`] = `
   >
     <nav>
       <ArticleTopics
-        className="IS16"
+        className="IS15"
       />
     </nav>
   </div>
