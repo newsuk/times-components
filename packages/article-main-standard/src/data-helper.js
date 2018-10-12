@@ -50,20 +50,21 @@ const prepareDataForListView = articleData => {
   const data = [
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData },
-    ...articleData.content.map((rowData, index) => {
-      const item = {
-        type: "articleBodyRow",
-        data: Object.assign({}, rowData),
-        index
-      };
-      if (rowData.name === "ad") {
-        item.data.attributes = {
-          ...item.data.attributes,
-          ...{ section: articleData.section, contextUrl: articleData.url }
-        };
-      }
-      return item;
-    }),
+    { type: "content", data: articleData},
+    // ...articleData.content.map((rowData, index) => {
+    //   const item = {
+    //     type: "articleBodyRow",
+    //     data: Object.assign({}, rowData),
+    //     index
+    //   };
+    //   if (rowData.name === "ad") {
+    //     item.data.attributes = {
+    //       ...item.data.attributes,
+    //       ...{ section: articleData.section, contextUrl: articleData.url }
+    //     };
+    //   }
+    //   return item;
+    // }),
     { type: "topics", data: { topics: articleData.topics } }
   ];
 

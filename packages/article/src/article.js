@@ -42,54 +42,6 @@ const renderRow = (analyticsStream, width) => (
 ) => {
   // eslint-disable-next-line default-case
   switch (rowData.type) {
-    case "leadAsset": {
-      return (
-        <View key="leadAsset" testID="leadAsset">
-          <ArticleLeadAsset
-            data={{ ...rowData.data, onVideoPress }}
-            key={rowData.type}
-            width={width}
-          />
-        </View>
-      );
-    }
-
-    case "header": {
-      const {
-        flags,
-        hasVideo,
-        headline,
-        label,
-        shortHeadline,
-        standfirst
-      } = rowData.data;
-      const styles = stylesFactory();
-      return (
-        <ArticleHeader
-          flags={flags}
-          hasVideo={hasVideo}
-          headline={getHeadline(headline, shortHeadline)}
-          key={rowData.type}
-          label={label}
-          standfirst={standfirst}
-          style={[styles.articleMainContentRow]}
-        />
-      );
-    }
-
-    case "middleContainer": {
-      const { byline, publishedTime, publicationName } = rowData.data;
-      return (
-        <ArticleMeta
-          byline={byline}
-          key={rowData.type}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-        />
-      );
-    }
-
     case "articleBodyRow": {
       return (
         <ArticleRow
@@ -170,25 +122,7 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, refetch, isLoading, receiveChildList } = this.props;
-
-    if (error) {
-      return <ArticleError refetch={refetch} />;
-    }
-
-    if (isLoading) {
-      return <ArticleLoading />;
-    }
-
-    const articleData = this.state.dataSource.map((item, index) => ({
-      ...item,
-      elementId: `${item.type}.${index}`,
-      name: item.type
-    }));
-
-    receiveChildList(articleData);
-
-    const ArticleListView = (
+    return (
       <ArticleContent
         data={articleData}
         initialListSize={listViewSize}
@@ -208,10 +142,6 @@ class ArticlePage extends Component {
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );
-
-    return (
-      <AdComposer adConfig={this.props.adConfig}>{ArticleListView}</AdComposer>
-    );
   }
 }
 
@@ -227,4 +157,4 @@ ArticlePage.propTypes = {
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
+export default ArticlePage;
