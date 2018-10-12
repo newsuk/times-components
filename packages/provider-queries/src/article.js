@@ -26,43 +26,29 @@ export default addTypenameToDocument(gql`
       relatedArticleSlice {
         ... on StandardSlice {
           items {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
         }
         ... on LeadOneAndTwoSlice {
           lead {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
           support1 {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
           support2 {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
         }
         ... on OpinionOneAndTwoSlice {
           opinion {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
           support1 {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
           support2 {
-            article {
-              ...relatedProps
-            }
+            ...relatedProps
           }
         }
       }
@@ -125,7 +111,7 @@ export default addTypenameToDocument(gql`
     url
   }
 
-  fragment relatedProps on Article {
+  fragment relatedProps on Tile {
     leadAsset {
       ... on Image {
         crop169: crop(ratio: "16:9") {
@@ -150,8 +136,34 @@ export default addTypenameToDocument(gql`
         }
       }
     }
-    ...articleProps
-    ...summaries
+    article {
+      leadAsset {
+        ... on Image {
+          crop169: crop(ratio: "16:9") {
+            url
+          }
+          crop32: crop(ratio: "3:2") {
+            url
+          }
+          id
+          title
+        }
+        ... on Video {
+          posterImage {
+            crop169: crop(ratio: "16:9") {
+              url
+            }
+            crop32: crop(ratio: "3:2") {
+              url
+            }
+            id
+            title
+          }
+        }
+      }
+      ...articleProps
+      ...summaries
+    }
   }
 
   fragment summaries on Article {

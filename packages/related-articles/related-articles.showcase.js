@@ -18,6 +18,7 @@ import leadAndTwo3RelatedArticlesFixture from "./fixtures/leadandtwo/3-articles.
 import opinionAndTwo1RelatedArticleFixture from "./fixtures/opinionandtwo/1-article.js";
 import opinionAndTwo2RelatedArticlesFixture from "./fixtures/opinionandtwo/2-articles.js";
 import opinionAndTwo3RelatedArticlesFixture from "./fixtures/opinionandtwo/3-articles.js";
+import opinionAndTwo3RelatedArticlesLeadAssetOverrideFixture from "./fixtures/opinionandtwo/3-articles-lead-asset-override";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -160,6 +161,16 @@ export default {
           opinionAndTwo3RelatedArticlesFixture().data
         ),
       name: "Opinion and two template with three related articles",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) =>
+        createRelatedArticles(
+          decorateAction,
+          opinionAndTwo3RelatedArticlesLeadAssetOverrideFixture().data
+        ),
+      name:
+        "Opinion and two template with three related articles and lead asset override",
       type: "story"
     }
   ],

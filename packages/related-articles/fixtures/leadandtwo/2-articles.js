@@ -343,7 +343,8 @@ export default ({
           summary175: firstSummary175,
           summary225: firstSummary225,
           url: firstUrl
-        }
+        },
+        leadAsset: null
       },
       sliceName: "LeadOneAndTwoSlice",
       support1: {
@@ -390,7 +391,8 @@ export default ({
           summary175: secondSummary175,
           summary225: secondSummary225,
           url: secondUrl
-        }
+        },
+        leadAsset: null
       }
     }
   }

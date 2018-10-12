@@ -14,6 +14,18 @@ import {
 import styles from "./styles";
 import getHeadline from "./utils";
 
+const getImageUri = (leadAsset, leadAssetOverride, cropSize) => {
+  const asset = leadAssetOverride || leadAsset;
+
+  if (!asset) {
+    return null;
+  }
+
+  return asset.posterImage
+    ? get(asset, `posterImage.crop${cropSize}.url`)
+    : get(asset, `crop${cropSize}.url`);
+};
+
 class RelatedArticleItem extends Component {
   constructor(props) {
     super(props);
@@ -59,6 +71,7 @@ class RelatedArticleItem extends Component {
       imageContainerClass,
       isOpinionByline,
       isReversed,
+      leadAssetOverride,
       onPress,
       showImage,
       showSummary,
@@ -69,10 +82,7 @@ class RelatedArticleItem extends Component {
       }
     } = this.props;
 
-    const imageUri =
-      leadAsset && leadAsset.posterImage
-        ? get(leadAsset, `posterImage.crop${cropSize}.url`)
-        : get(leadAsset, `crop${cropSize}.url`);
+    const imageUri = getImageUri(leadAsset, leadAssetOverride, cropSize);
 
     return children({
       article: this.props.article,

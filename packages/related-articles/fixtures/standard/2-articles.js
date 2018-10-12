@@ -442,7 +442,8 @@ export default ({
             summary175: firstSummary175,
             summary225: firstSummary225,
             url: firstUrl
-          }
+          },
+          leadAsset: null
         },
         {
           article: {
@@ -488,7 +489,8 @@ export default ({
             summary175: secondSummary175,
             summary225: secondSummary225,
             url: secondUrl
-          }
+          },
+          leadAsset: null
         }
       ],
       sliceName: "StandardSlice"
