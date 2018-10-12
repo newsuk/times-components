@@ -59,6 +59,17 @@ export default {
     },
     {
       type: "story",
+      name: "Falls back to display the placeholder",
+      component: () => (
+        <View>
+          <View style={{ width: 300 }}>
+            <Image aspectRatio={16 / 9} uri={null} />
+          </View>
+        </View>
+      )
+    },
+    {
+      type: "story",
       name: "Can be styled and keep aspect ratio",
       component: () => (
         <View>
