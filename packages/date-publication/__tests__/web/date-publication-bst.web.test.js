@@ -1,8 +1,9 @@
 import shared from "../shared-london";
-import { dateBST } from "../constants";
+import { dateBSTAM, dateBSTPM } from "../constants";
 
 const realIntl = Intl;
 
-shared(dateBST);
+shared(dateBSTAM);
+shared(dateBSTPM);
 
 global.Intl = realIntl;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
@@ -12,16 +13,23 @@ const styles = StyleSheet.create({
   }
 });
 
+const timezones = [
+  "2017-07-01T04:32:00.000Z",
+  "2017-01-01T04:32:00.000Z",
+  "2017-07-01T14:32:00.000Z",
+  "2017-01-01T14:32:00.000Z"
+];
+
 export default {
   name: "Primitives/Date Publication",
   children: [
     {
       type: "story",
       name: "Default",
-      component: () => (
+      component: ({ selectV2 }) => (
         <Text style={styles.text}>
           <DatePublication
-            date="2017-07-01T14:32:00.000Z"
+            date={selectV2("Date:", timezones, timezones[0])}
             publication="SUNDAYTIMES"
           />
         </Text>

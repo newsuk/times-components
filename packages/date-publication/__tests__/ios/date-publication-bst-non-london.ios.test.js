@@ -1,4 +1,5 @@
 import shared from "../shared-non-london";
-import { dateBST } from "../constants";
+import { dateBSTAM, dateBSTPM } from "../constants";
 
-shared(dateBST);
+shared(dateBSTAM);
+shared(dateBSTPM);

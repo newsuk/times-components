@@ -1,4 +1,5 @@
 import shared from "../shared-london";
-import { dateGMT } from "../constants";
+import { dateGMTAM, dateGMTPM } from "../constants";
 
-shared(dateGMT);
+shared(dateGMTAM);
+shared(dateGMTPM);

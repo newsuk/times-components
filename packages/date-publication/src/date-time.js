@@ -28,8 +28,8 @@ class DatePublication extends Component {
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
     const formatString = showDay
-      ? "dddd MMMM DD YYYY, hh:mma"
-      : "MMMM DD YYYY, hh:mma";
+      ? "dddd MMMM DD YYYY, h:mma"
+      : "MMMM DD YYYY, h:mma";
 
     return children(
       `${format(datetimeLondonTimezone, formatString)}${this.state.tz}`

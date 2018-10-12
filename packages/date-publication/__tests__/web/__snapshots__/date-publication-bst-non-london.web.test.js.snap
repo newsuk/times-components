@@ -3,9 +3,22 @@
 exports[`1. date and times publication 1`] = `
 Array [
   <time
+    dateTime="2017-07-01T04:32:00.000Z"
+  >
+    Saturday July 01 2017, 5:32am BST
+  </time>,
+  <span>
+    , The Times
+  </span>,
+]
+`;
+
+exports[`1. date and times publication 2`] = `
+Array [
+  <time
     dateTime="2017-07-01T14:32:00.000Z"
   >
-    Saturday July 01 2017, 03:32pm BST
+    Saturday July 01 2017, 3:32pm BST
   </time>,
   <span>
     , The Times
