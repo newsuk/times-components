@@ -12,72 +12,52 @@ const readFile = promisify(fs.readFile);
 const mockSchema = {
   data: {
     __schema: {
-      directives: [],
-      mutationType: {
-        name: "Mutation"
-      },
-      queryType: {
-        name: "Query"
-      },
+      queryType: { name: "Query" },
+      mutationType: { name: "Mutation" },
       subscriptionType: null,
       types: [
         {
+          kind: "OBJECT",
+          name: "Query",
           description: "",
-          enumValues: null,
           fields: [
             {
-              args: [],
-              deprecationReason: null,
-              description: "A list of authors",
-              isDeprecated: false,
               name: "author",
-              type: {
-                kind: "OBJECT",
-                name: "Author",
-                ofType: null
-              }
+              description: "A list of authors",
+              args: [],
+              type: { kind: "OBJECT", name: "Author", ofType: null },
+              isDeprecated: false,
+              deprecationReason: null
             }
           ],
           inputFields: null,
           interfaces: [],
-          kind: "OBJECT",
-          name: "Query",
+          enumValues: null,
           possibleTypes: null
         },
         {
-          args: [],
-          deprecationReason: null,
-          description: "",
-          isDeprecated: false,
           name: "leadAsset",
-          type: {
-            kind: "UNION",
-            name: "Media",
-            ofType: null
-          }
+          description: "",
+          args: [],
+          type: { kind: "UNION", name: "Media", ofType: null },
+          isDeprecated: false,
+          deprecationReason: null
         },
         {
+          kind: "UNION",
+          name: "Media",
           description: "",
-          enumValues: null,
           fields: null,
           inputFields: null,
           interfaces: null,
-          kind: "UNION",
-          name: "Media",
+          enumValues: null,
           possibleTypes: [
-            {
-              kind: "OBJECT",
-              name: "Image",
-              ofType: null
-            },
-            {
-              kind: "OBJECT",
-              name: "Video",
-              ofType: null
-            }
+            { kind: "OBJECT", name: "Image", ofType: null },
+            { kind: "OBJECT", name: "Video", ofType: null }
           ]
         }
-      ]
+      ],
+      directives: []
     }
   }
 };
