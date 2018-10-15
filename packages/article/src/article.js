@@ -153,7 +153,6 @@ ArticlePage.propTypes = {
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
-  refetch: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 

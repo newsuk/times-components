@@ -2,16 +2,19 @@ import React from "react";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 import articleLeadAssetVideoPropTypes from "./article-lead-asset-video-prop-types";
+import getStandardTemplateCrop from "./crop-config";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
   brightcovePolicyKey,
   brightcoveAccountId,
-  posterImage: { crop: { ratio: image_ratio, url: imageUrl } },
+  posterImage,
   onVideoPress,
   skySports
 }) => {
-  const [ratioWidth, ratioHeight] = image_ratio.split(":");
+  const crop = getStandardTemplateCrop(posterImage);
+  const { ratio, url } = crop;
+  const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
   const width = screenWidth();
@@ -23,7 +26,7 @@ const ArticleLeadAssetVideo = ({
       height={height}
       onVideoPress={onVideoPress}
       policyKey={brightcovePolicyKey}
-      poster={{ uri: imageUrl }}
+      poster={{ uri: url }}
       skySports={skySports}
       videoId={brightcoveVideoId}
       width={width}

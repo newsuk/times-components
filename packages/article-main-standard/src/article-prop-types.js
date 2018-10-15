@@ -4,28 +4,20 @@ import ArticleMeta from "./article-meta/article-meta";
 
 const articlePropTypes = {
   adConfig: PropTypes.shape({}).isRequired,
-  article: PropTypes.shape({
+  analyticsStream: PropTypes.func.isRequired,
+  data: PropTypes.shape({
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
   }),
-  error: PropTypes.shape({
-    graphQLErrors: PropTypes.array,
-    message: PropTypes.string,
-    networkError: PropTypes.shape({
-      message: PropTypes.string
-    })
-  }),
-  isLoading: PropTypes.bool,
-  pageSection: PropTypes.string,
+  observed: PropTypes.object.isRequired,
+  onAuthorPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired
+  onTopicPress: PropTypes.func.isRequired,
+  registerNode: PropTypes.func.isRequired
 };
 
 const articleDefaultProps = {
-  article: null,
-  error: null,
-  pageSection: null,
-  isLoading: false
+  data: null
 };
 
 export { articlePropTypes, articleDefaultProps };

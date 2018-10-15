@@ -6,7 +6,8 @@ export const articleLeadAssetVideoPropTypes = {
   brightcovePolicyKey: PropTypes.string.isRequired,
   brightcoveAccountId: PropTypes.string.isRequired,
   posterImage: PropTypes.shape({
-    crop: cropPropTypes.isRequired
+    crop169: cropPropTypes,
+    crop32: cropPropTypes
   }).isRequired,
   onVideoPress: PropTypes.func.isRequired,
   skySports: PropTypes.bool
