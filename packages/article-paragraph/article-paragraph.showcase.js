@@ -2,66 +2,60 @@
 import React from "react";
 import invert from "lodash.invert";
 import Context from "@times-components/context";
+import coreRenderers from "@times-components/markup";
+import { renderTree } from "@times-components/markup-forest";
 import { colours, scales } from "@times-components/styleguide";
-import DropCapWithContext from "./src/drop-cap-with-context";
+import Parapgraph from "./src";
+import paragraphData from "./fixtures/paragraph-showcase.json";
+import dropCapData from "./fixtures/drop-cap-showcase.json";
+import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
+import DropCapView from "./src/drop-cap";
 
-const selectScales = select => select("Scale", scales, scales.medium);
-const selectSection = select =>
-  select("Section", invert(colours.section), colours.section.default);
+const renderParagraph = (select, ast) => {
+  const scale = select("Scale", scales, scales.medium);
+  const colour = select(
+    "Section",
+    invert(colours.section),
+    colours.section.default
+  );
+
+  return (
+    <Context.Provider value={{ theme: { scale } }}>
+      <Parapgraph ast={ast} colour={colour}>
+        {renderTree(ast, {
+          ...coreRenderers,
+          dropCap(key, { value }) {
+            return {
+              element: (
+                <DropCapView colour={colour} key={key}>
+                  {value}
+                </DropCapView>
+              )
+            };
+          }
+        })}
+      </Parapgraph>
+    </Context.Provider>
+  );
+};
 
 export default {
   name: "Primitives/Article Paragraph",
   children: [
     {
       type: "story",
-      name: "Simple dropCap",
-      component: ({ select }) => {
-        const scale = selectScales(select);
-        const colour = selectSection(select);
-        return (
-          <Context.Provider value={{ theme: { scale } }}>
-            <DropCapWithContext
-              colour={colour}
-              dropCap="I"
-              text="n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the wars, he said later that he had learnt “lessons which I have never forgotten. If, in some respects, they may have left too deep an impression on my mind, the gain was greater than the loss.” The gain was a lifelong conviction that the central aim of domestic policy must be to avoid the horror of mass unemployment. Forget ideological posturing; the job of a responsible Conservative government was to keep people in work."
-            />
-          </Context.Provider>
-        );
-      }
+      name: "Paragraph",
+      component: ({ select }) => renderParagraph(select, paragraphData)
     },
     {
       type: "story",
-      name: "Multi character dropCap",
-      component: ({ select }) => {
-        const scale = selectScales(select);
-        const colour = selectSection(select);
-        return (
-          <Context.Provider value={{ theme: { scale } }}>
-            <DropCapWithContext
-              colour={colour}
-              dropCap="&ldquo;Q"
-              text="q 1924&rdquo; Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the wars, he said later that he had learnt “lessons which I have never forgotten. If, in some respects, they may have left too deep an impression on my mind, the gain was greater than the loss.” The gain was a lifelong conviction that the central aim of domestic policy must be to avoid the horror of mass unemployment. Forget ideological posturing; the job of a responsible Conservative government was to keep people in work."
-            />
-          </Context.Provider>
-        );
-      }
+      name: "Paragraph with dropcap",
+      component: ({ select }) => renderParagraph(select, dropCapData)
     },
     {
       type: "story",
-      name: "DropCap with short text",
-      component: ({ select }) => {
-        const scale = selectScales(select);
-        const colour = selectSection(select);
-        return (
-          <Context.Provider value={{ theme: { scale } }}>
-            <DropCapWithContext
-              colour={colour}
-              dropCap="I"
-              text="n 1924&quot; Harold Macmillan became MP for Stockton-on-Tees."
-            />
-          </Context.Provider>
-        );
-      }
+      name: "DropCap paragraph with short text",
+      component: ({ select }) => renderParagraph(select, dropCapShortTextData)
     }
   ]
 };

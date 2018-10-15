@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`paragraph with single drop cap 1`] = `
+.c0 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 9px 10px 0 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: "TimesModern-Regular";
+  color: #333333;
+}
+
+<span />
+`;

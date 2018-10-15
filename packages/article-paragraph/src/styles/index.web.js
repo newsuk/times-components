@@ -1,4 +1,3 @@
-import { fontFactory } from "@times-components/styleguide";
 import sharedStylesFactory from "./shared";
 
 const sharedStyles = sharedStylesFactory();
