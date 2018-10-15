@@ -36,17 +36,17 @@ export default () => {
       test: () => {
         const ast = [
           {
-            name: "paragraph",
             attributes: {},
             children: [
               {
-                name: "text",
                 attributes: {
                   value: "Test"
                 },
-                children: []
+                children: [],
+                name: "text"
               }
-            ]
+            ],
+            name: "paragraph"
           }
         ];
 

@@ -23,8 +23,8 @@ class ArticleList extends Component {
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
     this.fetchMoreOnEndReached = this.fetchMoreOnEndReached.bind(this);
     this.state = {
-      loadMoreError: null,
       loadingMore: false,
+      loadMoreError: null,
       width: normaliseWidth(screenWidthInPixels())
     };
   }
@@ -57,7 +57,13 @@ class ArticleList extends Component {
         .fetchMore(data.length)
         .then(() => this.setState({ loadingMore: false }, res))
         .catch(loadMoreError =>
-          this.setState({ loadMoreError, loadingMore: false }, rej)
+          this.setState(
+            {
+              loadingMore: false,
+              loadMoreError
+            },
+            rej
+          )
         )
     );
   }

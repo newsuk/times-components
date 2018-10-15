@@ -4,11 +4,11 @@ export default {
   },
   biography: [
     {
-      name: "text",
       attributes: {
         value: "Camilla Long"
       },
-      children: []
+      children: [],
+      name: "text"
     }
   ],
   hasLeadAssets: true,

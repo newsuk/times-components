@@ -95,14 +95,22 @@ class DOMContext extends PureComponent {
       }
     });
     return (
-      <View style={{ width, height }}>
+      <View
+        style={{
+          height,
+          width
+        }}
+      >
         <WebView
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
           ref={ref => {
             this.webView = ref;
           }}
-          source={{ html, baseUrl: this.props.baseUrl }}
+          source={{
+            baseUrl: this.props.baseUrl,
+            html
+          }}
           style={{ backgroundColor: "transparent" }}
           {...postMessageBugWorkaround}
         />

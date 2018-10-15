@@ -50,12 +50,8 @@ class SeenText extends Component {
 }
 
 export default {
-  name: "Helpers/Lazy load",
   children: [
     {
-      type: "story",
-      name: "Default",
-      platform: "web",
       component: () => (
         <LazyLoad rootMargin="100px" threshold={0.5}>
           {({ observed, registerNode }) => (
@@ -77,7 +73,11 @@ export default {
             </ul>
           )}
         </LazyLoad>
-      )
+      ),
+      name: "Default",
+      platform: "web",
+      type: "story"
     }
-  ]
+  ],
+  name: "Helpers/Lazy load"
 };

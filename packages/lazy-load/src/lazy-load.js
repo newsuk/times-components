@@ -120,9 +120,9 @@ class LazyLoad extends Component {
   render() {
     return this.props.children({
       clientHasRendered: this.state.clientHasRendered,
+      isObserving: this.isObserving,
       observed: this.state.nodes,
-      registerNode: this.registerNode,
-      isObserving: this.isObserving
+      registerNode: this.registerNode
     });
   }
 }

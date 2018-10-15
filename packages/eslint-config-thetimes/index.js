@@ -15,6 +15,7 @@ module.exports = {
         reservedFirst: false
       }
     ],
+    "sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": [
       "error",
@@ -49,7 +50,7 @@ module.exports = {
       {
         object: "React",
         property: "PureComponent",
-        message: "Please destruct Component from React."
+        message: "Please destruct PureComponent from React."
       }
     ]
   },

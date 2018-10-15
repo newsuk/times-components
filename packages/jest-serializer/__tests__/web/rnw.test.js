@@ -28,11 +28,11 @@ describe("The React Native Web serializer should", () => {
     addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
-      parent: {
-        flex: 1
-      },
       child: {
         fontSize: 9
+      },
+      parent: {
+        flex: 1
       }
     });
 
@@ -50,10 +50,6 @@ describe("The React Native Web serializer should", () => {
     addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
-      parent: {
-        flex: 1,
-        backgroundColor: "red"
-      },
       child1: {
         fontSize: 9
       },
@@ -62,6 +58,10 @@ describe("The React Native Web serializer should", () => {
       },
       child3: {
         fontSize: 11
+      },
+      parent: {
+        backgroundColor: "red",
+        flex: 1
       }
     });
 
@@ -83,10 +83,6 @@ describe("The React Native Web serializer should", () => {
     addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
-      parent: {
-        flex: 1,
-        backgroundColor: "red"
-      },
       child1: {
         fontSize: 10
       },
@@ -95,6 +91,10 @@ describe("The React Native Web serializer should", () => {
       },
       child3: {
         fontSize: 10
+      },
+      parent: {
+        backgroundColor: "red",
+        flex: 1
       }
     });
 
@@ -116,11 +116,11 @@ describe("The React Native Web serializer should", () => {
     addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
-      parent: {
-        flex: 1
-      },
       child: {
         fontSize: 9
+      },
+      parent: {
+        flex: 1
       }
     });
 

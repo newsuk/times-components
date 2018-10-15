@@ -26,9 +26,9 @@ const compose = (printer, ...transformers) =>
         if (!n) {
           return {
             accum: a,
+            children: c,
             node: n,
-            props: p,
-            children: c
+            props: p
           };
         }
 
@@ -36,9 +36,9 @@ const compose = (printer, ...transformers) =>
       },
       {
         accum,
+        children,
         node,
-        props,
-        children
+        props
       }
     )
   );

@@ -10,8 +10,8 @@ const isComponentDisplayed = async (id, timeout = 2000) => {
 
 const props = {
   ...fullArticleFixture.data,
-  isLoading: false,
-  fructoseID: "defaultArticle"
+  fructoseID: "defaultArticle",
+  isLoading: false
 };
 withComponent(
   <Article {...props} />,

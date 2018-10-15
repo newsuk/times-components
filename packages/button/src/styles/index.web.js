@@ -4,6 +4,10 @@ const { colours, fontFactory } = styleguide();
 
 const styles = {
   button: {
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "button"
+    }),
     alignItems: "center",
     backgroundColor: colours.functional.action,
     borderRadius: 2,
@@ -11,13 +15,9 @@ const styles = {
     cursor: "pointer",
     height: 45,
     justifyContent: "center",
-    minWidth: 100,
-    ...fontFactory({
-      font: "supporting",
-      fontSize: "button"
-    }),
-    paddingTop: 4,
     lineHeight: 0,
+    minWidth: 100,
+    paddingTop: 4,
     width: 160
   }
 };

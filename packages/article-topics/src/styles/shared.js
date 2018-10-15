@@ -11,6 +11,10 @@ const styles = {
     paddingRight: spacing(3),
     paddingTop: 12
   },
+  spacer: {
+    marginRight: spacing(2),
+    marginTop: spacing(2)
+  },
   text: {
     color: colours.functional.secondary,
     ...fontFactory({
@@ -23,10 +27,6 @@ const styles = {
     flexWrap: "wrap",
     justifyContent: "center",
     marginBottom: spacing(2)
-  },
-  spacer: {
-    marginRight: spacing(2),
-    marginTop: spacing(2)
   }
 };
 

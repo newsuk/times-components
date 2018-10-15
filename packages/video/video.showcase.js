@@ -15,20 +15,20 @@ const skySportsPosterImageURI =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F82d8be88-c422-11e8-8cd0-138e4f72a3e1.jpg?crop=1280%2C720%2C0%2C0";
 
 const defaultVideoProps = {
-  policyKey,
-  videoId,
   accountId,
-  poster: {
-    uri: posterImageURI
-  },
-  width: 320,
   height: 180,
   onVideoPress: () => {
     Alert.alert(
       "onVideoPress called",
       "(Storybook does not play videos on native - it is handled by the host app)"
     );
-  }
+  },
+  policyKey,
+  poster: {
+    uri: posterImageURI
+  },
+  videoId,
+  width: 320
 };
 
 const skySportsVideoProps = {
@@ -39,55 +39,76 @@ const skySportsVideoProps = {
 };
 
 export default {
-  name: "Primitives/Video",
   children: [
     {
-      type: "story",
-      name: "default player",
       component: () => (
         <View>
-          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 10
+            }}
+          >
+            Mobile size:
+          </Text>
           <Video {...defaultVideoProps} />
-          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
+            Desktop size:
+          </Text>
           <Video {...defaultVideoProps} height={374} width={664} />
         </View>
-      )
+      ),
+      name: "default player",
+      type: "story"
     },
     {
-      type: "story",
-      name: "two players with different videos",
       component: () => (
         <View>
           <Video {...defaultVideoProps} />
           <View style={{ height: 20 }} />
           <Video {...defaultVideoProps} videoId="5612887446001" />
         </View>
-      )
+      ),
+      name: "two players with different videos",
+      type: "story"
     },
     {
-      type: "story",
+      component: () => (
+        <View
+          style={{
+            height: "100%",
+            width: "100%"
+          }}
+        >
+          <Video {...defaultVideoProps} height="100%" width="100%" />
+        </View>
+      ),
       name: "100% width and height",
       platform: "native",
-      component: () => (
-        <View style={{ width: "100%", height: "100%" }}>
-          <Video {...defaultVideoProps} height="100%" width="100%" />
-        </View>
-      )
+      type: "story"
     },
     {
-      type: "story",
+      component: () => (
+        <View
+          style={{
+            height: "100vh",
+            overflow: "hidden",
+            width: "100vw"
+          }}
+        >
+          <Video {...defaultVideoProps} height="100%" width="100%" />
+        </View>
+      ),
       name: "100% width and height",
       platform: "web",
-      component: () => (
-        <View style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-          <Video {...defaultVideoProps} height="100%" width="100%" />
-        </View>
-      )
+      type: "story"
     },
     {
-      type: "story",
-      name: "paidOnly state",
-      platform: "web",
       component: ({ boolean }) => (
         <View>
           <IsPaidSubscriber.Provider
@@ -99,33 +120,66 @@ export default {
             />
           </IsPaidSubscriber.Provider>
         </View>
-      )
+      ),
+      name: "paidOnly state",
+      platform: "web",
+      type: "story"
     },
     {
-      type: "story",
-      name: "skysports video",
       component: () => (
         <View>
-          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 10
+            }}
+          >
+            Mobile size:
+          </Text>
           <Video {...skySportsVideoProps} skySports />
-          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
+            Desktop size:
+          </Text>
           <Video {...skySportsVideoProps} height={374} skySports width={664} />
-          <Text style={{ marginTop: 20, marginBottom: 10 }}>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
             Non sky sports:
           </Text>
           <Video {...defaultVideoProps} height={374} width={664} />
         </View>
-      )
+      ),
+      name: "skysports video",
+      type: "story"
     },
     {
-      type: "story",
-      name: "with error",
-      platform: "web",
       component: () => (
         <View>
-          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 10
+            }}
+          >
+            Mobile size:
+          </Text>
           <Video {...defaultVideoProps} videoId="invalid id" />
-          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
+            Desktop size:
+          </Text>
           <Video
             {...defaultVideoProps}
             height={374}
@@ -133,16 +187,31 @@ export default {
             width={664}
           />
         </View>
-      )
+      ),
+      name: "with error",
+      platform: "web",
+      type: "story"
     },
     {
-      type: "story",
-      name: "no poster image",
       component: () => (
         <View>
-          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 10
+            }}
+          >
+            Mobile size:
+          </Text>
           <Video {...defaultVideoProps} poster={null} />
-          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Text
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
+            Desktop size:
+          </Text>
           <Video
             {...defaultVideoProps}
             height={374}
@@ -150,7 +219,10 @@ export default {
             width={664}
           />
         </View>
-      )
+      ),
+      name: "no poster image",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Video"
 };

@@ -88,9 +88,9 @@ export default () => {
             {...reviewFixture({
               headline,
               label,
+              paragraph,
               review1Title: "Review 1",
-              review2Title: "Review 2",
-              paragraph
+              review2Title: "Review 2"
             })}
           />
         );

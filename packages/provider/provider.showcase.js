@@ -18,11 +18,8 @@ import connectGraphql, {
 } from "./src/provider.js";
 
 export default {
-  name: "Helpers/Provider",
   children: [
     {
-      type: "story",
-      name: "Props and fetched data",
       component: () => {
         const query = gql`
           {
@@ -56,11 +53,11 @@ export default {
             </WithData>
           </MockedProvider>
         );
-      }
+      },
+      name: "Props and fetched data",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Errors",
       component: () => {
         const query = gql`
           {
@@ -74,11 +71,11 @@ export default {
 
         const mocks = [
           {
-            request: {
-              query
-            },
             error: {
               message: "some error from the server"
+            },
+            request: {
+              query
             }
           }
         ];
@@ -90,11 +87,11 @@ export default {
             </WithData>
           </MockedProvider>
         );
-      }
+      },
+      name: "Errors",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Author Profile",
       component: () => {
         const articleImageRatio = "3:2";
         const pageSize = 2;
@@ -127,11 +124,11 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "Author Profile",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article",
       component: () => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
 
@@ -151,11 +148,11 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "Article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Author Profile Articles with Images",
       component: () => {
         const articleImageRatio = "3:2";
         const pageSize = 2;
@@ -188,11 +185,11 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "Author Profile Articles with Images",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Topic",
       component: () => {
         const articleImageRatio = "3:2";
         const name = "Chelsea";
@@ -221,11 +218,11 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "Topic",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Topic Articles",
       component: () => {
         const articleImageRatio = "3:2";
         const name = "Chelsea";
@@ -259,7 +256,10 @@ export default {
             )}
           />
         );
-      }
+      },
+      name: "Topic Articles",
+      type: "story"
     }
-  ]
+  ],
+  name: "Helpers/Provider"
 };

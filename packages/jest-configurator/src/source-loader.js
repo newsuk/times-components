@@ -61,7 +61,6 @@ const transform = (
 
   const transformResult = babelTransform(source, {
     filename,
-    presets: [jestPreset],
     plugins: [
       [
         babelIstanbulPlugin,
@@ -70,7 +69,8 @@ const transform = (
           exclude: coveragePathIgnorePatterns
         }
       ]
-    ]
+    ],
+    presets: [jestPreset]
   });
 
   return transformResult || source;

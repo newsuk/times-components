@@ -126,8 +126,8 @@ describe("DOMContext Web", () => {
     const mockDestroySlots = jest.fn();
     const mockInit = jest.fn();
     mockInit.mockReturnValue({
-      init: () => {},
-      destroySlots: mockDestroySlots
+      destroySlots: mockDestroySlots,
+      init: () => {}
     });
 
     const wrapper = shallow(

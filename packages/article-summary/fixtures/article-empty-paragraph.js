@@ -19,29 +19,20 @@ export default (
     paragraph2 = defaultParagraph2
   } = {}
 ) => ({
-  labelProps: {
-    title: label,
-    color: colours.functional.primary
-  },
-  datePublicationProps: {
-    date: "2017-07-01T14:32:00.000Z",
-    publication: "SUNDAYTIMES"
-  },
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
   bylineProps: {
     ast: [
       {
-        name: "inline",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: byline
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "inline"
       }
     ]
   },
@@ -49,37 +40,46 @@ export default (
     <ArticleSummaryContent
       ast={[
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph1
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         },
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph2
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         },
         {
-          name: "paragraph",
           attributes: {},
-          children: []
+          children: [],
+          name: "paragraph"
         }
       ]}
     />
-  )
+  ),
+  datePublicationProps: {
+    date: "2017-07-01T14:32:00.000Z",
+    publication: "SUNDAYTIMES"
+  },
+  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  labelProps: {
+    color: colours.functional.primary,
+    title: label
+  }
 });

@@ -16,108 +16,117 @@ const SixteenNineImage = props => (
 );
 
 export default {
-  name: "Primitives/Image",
   children: [
     {
-      type: "story",
+      component: () => <SquareImage />,
       name: "Fills parent width",
-      component: () => <SquareImage />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => (
+        <View>
+          <View style={{ width: 300 }}>
+            <SixteenNineImage />
+          </View>
+          <View style={{ width: 200 }}>
+            <SixteenNineImage />
+          </View>
+          <View style={{ width: 100 }}>
+            <SixteenNineImage />
+          </View>
+        </View>
+      ),
       name: "Maintains aspect ratio",
+      type: "story"
+    },
+    {
       component: () => (
         <View>
           <View style={{ width: 300 }}>
-            <SixteenNineImage />
+            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
           </View>
           <View style={{ width: 200 }}>
-            <SixteenNineImage />
+            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
           </View>
           <View style={{ width: 100 }}>
-            <SixteenNineImage />
+            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
           </View>
         </View>
-      )
-    },
-    {
-      type: "story",
+      ),
       name: "Maintains aspect ratio with placeholders",
-      component: () => (
-        <View>
-          <View style={{ width: 300 }}>
-            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </View>
-          <View style={{ width: 200 }}>
-            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </View>
-          <View style={{ width: 100 }}>
-            <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </View>
-        </View>
-      )
+      type: "story"
     },
     {
-      type: "story",
-      name: "Falls back to display the placeholder",
       component: () => (
         <View>
           <View style={{ width: 300 }}>
             <Image aspectRatio={16 / 9} uri={null} />
           </View>
         </View>
-      )
+      ),
+      name: "Falls back to display the placeholder",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Can be styled and keep aspect ratio",
       component: () => (
         <View>
           <SquareImage
             style={{
-              width: 200,
-              height: 200,
               borderRadius: 100,
-              overflow: "hidden"
+              height: 200,
+              overflow: "hidden",
+              width: 200
             }}
           />
           <SquareImage
             style={{
-              width: 100,
-              height: 100,
               borderRadius: 50,
-              overflow: "hidden"
+              height: 100,
+              overflow: "hidden",
+              width: 100
             }}
           />
           <SquareImage
             style={{
-              width: 50,
-              height: 50,
               borderRadius: 25,
-              overflow: "hidden"
+              height: 50,
+              overflow: "hidden",
+              width: 50
             }}
           />
         </View>
-      )
+      ),
+      name: "Can be styled and keep aspect ratio",
+      type: "story"
     },
     {
-      type: "story",
-      name:
-        "Handles incorrect aspect ratios inconsistently (web native mismatch)",
       component: () => (
         <View>
-          <View style={{ width: 200, borderWidth: 1, borderColor: "black" }}>
+          <View
+            style={{
+              borderColor: "black",
+              borderWidth: 1,
+              width: 200
+            }}
+          >
             <Image aspectRatio={1 / 1} uri={sixteenNineUri} />
           </View>
-          <View style={{ width: 200, borderWidth: 1, borderColor: "black" }}>
+          <View
+            style={{
+              borderColor: "black",
+              borderWidth: 1,
+              width: 200
+            }}
+          >
             <Image aspectRatio={16 / 9} uri={squareUri} />
           </View>
         </View>
-      )
+      ),
+      name:
+        "Handles incorrect aspect ratios inconsistently (web native mismatch)",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Defaults schema to https",
       component: () => (
         <View style={{ width: 300 }}>
           <Image
@@ -125,7 +134,10 @@ export default {
             uri="//feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
           />
         </View>
-      )
+      ),
+      name: "Defaults schema to https",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Image"
 };

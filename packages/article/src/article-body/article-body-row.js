@@ -36,15 +36,6 @@ const ArticleRow = ({
         )
       };
     },
-    paragraph(key, attributes, children) {
-      return {
-        element: (
-          <BodyParagraph key={index} uid={index}>
-            {children}
-          </BodyParagraph>
-        )
-      };
-    },
     image(key, { display, ratio, url, caption, credits }) {
       return {
         element: (
@@ -64,17 +55,11 @@ const ArticleRow = ({
         )
       };
     },
-    pullQuote(key, { content, caption: { name, twitter } }) {
+    interactive(key, { id }) {
       return {
         element: (
-          <View key={key}>
-            <PullQuote
-              caption={name}
-              content={content}
-              key={key}
-              onTwitterLinkPress={onTwitterLinkPress}
-              twitter={twitter}
-            />
+          <View key={key} style={styles.interactiveContainer}>
+            <InteractiveWrapper id={id} />
           </View>
         )
       };
@@ -94,9 +79,9 @@ const ArticleRow = ({
             key={index}
             onPress={e =>
               onLinkPress(e, {
-                url: attributes.href,
+                canonicalId: attributes.canonicalId,
                 type: attributes.type,
-                canonicalId: attributes.canonicalId
+                url: attributes.href
               })
             }
             url={url}
@@ -104,6 +89,30 @@ const ArticleRow = ({
           >
             {children}
           </ArticleLink>
+        )
+      };
+    },
+    paragraph(key, attributes, children) {
+      return {
+        element: (
+          <BodyParagraph key={index} uid={index}>
+            {children}
+          </BodyParagraph>
+        )
+      };
+    },
+    pullQuote(key, { content, caption: { name, twitter } }) {
+      return {
+        element: (
+          <View key={key}>
+            <PullQuote
+              caption={name}
+              content={content}
+              key={key}
+              onTwitterLinkPress={onTwitterLinkPress}
+              twitter={twitter}
+            />
+          </View>
         )
       };
     },
@@ -137,15 +146,6 @@ const ArticleRow = ({
               width={width}
             />
             <InsetCaption caption={caption} />
-          </View>
-        )
-      };
-    },
-    interactive(key, { id }) {
-      return {
-        element: (
-          <View key={key} style={styles.interactiveContainer}>
-            <InteractiveWrapper id={id} />
           </View>
         )
       };

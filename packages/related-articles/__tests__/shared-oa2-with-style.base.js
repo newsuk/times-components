@@ -5,14 +5,14 @@ import opinionAndTwo1ArticleFixture from "../fixtures/opinionandtwo/1-article";
 import { createRelatedArticlesProps, testSummary } from "./shared-util";
 
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "news",
   shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
-  summary160: testSummary(160)
+  summary160: testSummary(160),
+  url: "https://test.io"
 }).data;
 
 export default renderComponent => {

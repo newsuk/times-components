@@ -20,60 +20,57 @@ const childStyle = {
 };
 
 export default {
-  name: "Composed/Card",
   children: [
     {
-      type: "story",
+      component: () => (
+        <CardWrapper>
+          <Card
+            {...cardProps}
+            contentContainerClass="exampleCardContent"
+            imageContainerClass="exampleCardImage"
+            showImage
+          >
+            <View style={childStyle} />
+          </Card>
+        </CardWrapper>
+      ),
       name: "Default",
+      type: "story"
+    },
+    {
       component: () => (
         <CardWrapper>
           <Card
             {...cardProps}
             contentContainerClass="exampleCardContent"
+            image={null}
             imageContainerClass="exampleCardImage"
             showImage
           >
             <View style={childStyle} />
           </Card>
         </CardWrapper>
-      )
-    },
-    {
-      type: "story",
+      ),
       name: "Default - with placeholder",
+      type: "story"
+    },
+    {
       component: () => (
         <CardWrapper>
           <Card
             {...cardProps}
             contentContainerClass="exampleCardContent"
-            image={null}
             imageContainerClass="exampleCardImage"
-            showImage
+            showImage={false}
           >
             <View style={childStyle} />
           </Card>
         </CardWrapper>
-      )
-    },
-    {
-      type: "story",
+      ),
       name: "Default - no image",
-      component: () => (
-        <CardWrapper>
-          <Card
-            {...cardProps}
-            contentContainerClass="exampleCardContent"
-            imageContainerClass="exampleCardImage"
-            showImage={false}
-          >
-            <View style={childStyle} />
-          </Card>
-        </CardWrapper>
-      )
+      type: "story"
     },
     {
-      type: "story",
-      name: "Default - reversed",
       component: () => (
         <ReversedCardWrapper>
           <Card
@@ -86,11 +83,11 @@ export default {
             <View style={childStyle} />
           </Card>
         </ReversedCardWrapper>
-      )
+      ),
+      name: "Default - reversed",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Default - reversed with placeholder",
       component: () => (
         <ReversedCardWrapper>
           <Card
@@ -104,11 +101,11 @@ export default {
             <View style={childStyle} />
           </Card>
         </ReversedCardWrapper>
-      )
+      ),
+      name: "Default - reversed with placeholder",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Default - reversed, no image",
       component: () => (
         <ReversedCardWrapper>
           <Card
@@ -121,11 +118,28 @@ export default {
             <View style={childStyle} />
           </Card>
         </ReversedCardWrapper>
-      )
+      ),
+      name: "Default - reversed, no image",
+      type: "story"
     },
     {
-      type: "story",
+      component: () => (
+        <CardWrapper>
+          <Card
+            {...cardProps}
+            contentContainerClass="exampleCardContent"
+            imageContainerClass="exampleCardImage"
+            isLoading
+            showImage
+          >
+            <Text>Is loading</Text>
+          </Card>
+        </CardWrapper>
+      ),
       name: "Loading",
+      type: "story"
+    },
+    {
       component: () => (
         <CardWrapper>
           <Card
@@ -133,33 +147,16 @@ export default {
             contentContainerClass="exampleCardContent"
             imageContainerClass="exampleCardImage"
             isLoading
-            showImage
+            showImage={false}
           >
             <Text>Is loading</Text>
           </Card>
         </CardWrapper>
-      )
-    },
-    {
-      type: "story",
+      ),
       name: "Loading - no image",
-      component: () => (
-        <CardWrapper>
-          <Card
-            {...cardProps}
-            contentContainerClass="exampleCardContent"
-            imageContainerClass="exampleCardImage"
-            isLoading
-            showImage={false}
-          >
-            <Text>Is loading</Text>
-          </Card>
-        </CardWrapper>
-      )
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading - reversed",
       component: () => (
         <ReversedCardWrapper>
           <Card
@@ -173,11 +170,11 @@ export default {
             <Text>Is loading</Text>
           </Card>
         </ReversedCardWrapper>
-      )
+      ),
+      name: "Loading - reversed",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading - reversed, no image",
       component: () => (
         <ReversedCardWrapper>
           <Card
@@ -191,7 +188,10 @@ export default {
             <Text>Is loading</Text>
           </Card>
         </ReversedCardWrapper>
-      )
+      ),
+      name: "Loading - reversed, no image",
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/Card"
 };

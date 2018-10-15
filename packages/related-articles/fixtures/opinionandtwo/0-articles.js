@@ -1,8 +1,8 @@
 export default {
   data: {
     relatedArticleSlice: {
-      sliceName: "OpinionOneAndTwoSlice",
       opinion: null,
+      sliceName: "OpinionOneAndTwoSlice",
       support1: null,
       support2: null
     }

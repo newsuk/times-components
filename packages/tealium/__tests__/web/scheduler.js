@@ -8,10 +8,10 @@ export default () => {
     afterAll(() => jest.useRealTimers());
 
     const trackingOptions = {
+      account: "newsuk",
       enabled: true,
-      profile: "times.2017",
       env: "dev",
-      account: "newsuk"
+      profile: "times.2017"
     };
 
     const realUtag = global.window.utag;

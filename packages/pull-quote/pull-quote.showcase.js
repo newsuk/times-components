@@ -16,11 +16,8 @@ const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
 export default {
-  name: "Primitives/Pull Quotes",
   children: [
     {
-      type: "story",
-      name: "Default",
       component: ({ color, text }, { decorateAction }) => (
         <PullQuotes
           caption={text("Caption: ", caption)}
@@ -32,7 +29,10 @@ export default {
           quoteColour={color("Quote Colour: ", "#850029")}
           twitter={text("Twitter Link: ", twitter)}
         />
-      )
+      ),
+      name: "Default",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Pull Quotes"
 };

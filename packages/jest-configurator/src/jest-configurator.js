@@ -9,39 +9,39 @@ export type Platform = "node" | "android" | "ios" | "web";
 export const mockReactNativeComponent = mockRNComponent;
 
 const nativeSpecific = (platform: Platform) => ({
-  moduleNameMapper: {
-    "\\.(png)$": "RelativeImageStub"
-  },
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
     providesModuleNodeModules: ["react", "react-native"]
+  },
+  moduleNameMapper: {
+    "\\.(png)$": "RelativeImageStub"
   }
 });
 
 const webSpecific = {
+  moduleFileExtensions: ["web.js", "js", "json"],
   moduleNameMapper: {
-    "^react-native$": "react-native-web",
-    "\\.(png)$": "identity-obj-proxy"
+    "\\.(png)$": "identity-obj-proxy",
+    "^react-native$": "react-native-web"
   },
-  testEnvironment: "jsdom",
-  moduleFileExtensions: ["web.js", "js", "json"]
+  testEnvironment: "jsdom"
 };
 
 const nodeSpecific = {
+  moduleFileExtensions: ["node.js", "web.js", "js", "json"],
   moduleNameMapper: {
-    "^react-native$": "react-native-web",
-    "\\.(png)$": "identity-obj-proxy"
+    "\\.(png)$": "identity-obj-proxy",
+    "^react-native$": "react-native-web"
   },
-  testEnvironment: "node",
-  moduleFileExtensions: ["node.js", "web.js", "js", "json"]
+  testEnvironment: "node"
 };
 
 const platformIndependentSpecific = {
+  moduleFileExtensions: ["js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy"
-  },
-  moduleFileExtensions: ["js", "json"]
+  }
 };
 
 const platformCode = platform => {
@@ -79,26 +79,26 @@ export default (
   const platformPath = platform ? `${platform}/` : "";
 
   const config = {
-    preset: "react-native",
     ...platformCode(platform),
-    rootDir,
-    transform: {
-      "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
-    },
-    transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
-    ],
-    coverageDirectory: path.join(module, "coverage", platformPath),
     collectCoverageFrom: [path.join(rootDir, module)],
+    coverageDirectory: path.join(module, "coverage", platformPath),
     coveragePathIgnorePatterns: coverageIgnoreGlobs,
+    preset: "react-native",
+    rootDir,
+    setupFiles: [
+      path.resolve(__dirname, "../setup-jest.js"),
+      "jest-plugin-context/setup"
+    ],
     testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
       path.join(module, "__tests__", platformPath, "jest.config.js")
     ],
     testURL: "http://localhost",
-    setupFiles: [
-      path.resolve(__dirname, "../setup-jest.js"),
-      "jest-plugin-context/setup"
+    transform: {
+      "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
+    },
+    transformIgnorePatterns: [
+      "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
     ]
   };
 

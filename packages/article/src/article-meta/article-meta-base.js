@@ -55,8 +55,8 @@ const ArticleMetaBase = ({
 const TextNode = PropTypes.shape({ text: PropTypes.string });
 
 const childNode = {
-  name: PropTypes.string.isRequired,
-  attributes: PropTypes.object.isRequired
+  attributes: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 const nodeShape = {
@@ -67,15 +67,15 @@ const nodeShape = {
 
 ArticleMetaBase.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
-  publishedTime: PropTypes.string,
+  onAuthorPress: PropTypes.func.isRequired,
   publicationName: PropTypes.string,
-  onAuthorPress: PropTypes.func.isRequired
+  publishedTime: PropTypes.string
 };
 
 ArticleMetaBase.defaultProps = {
   byline: [],
-  publishedTime: null,
   publicationName: null,
+  publishedTime: null,
   RowWrapper: View
 };
 

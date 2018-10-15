@@ -5,13 +5,13 @@ import standard1ArticleFixture from "../fixtures/standard/1-article";
 import { createRelatedArticlesProps, testSummary } from "./shared-util";
 
 const standard1ArticleFixtureData = standard1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
-  shortHeadline: "Test Short Headline",
   label: "test label",
   section: "thedish",
-  summary125: testSummary(125)
+  shortHeadline: "Test Short Headline",
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 export default renderComponent => {

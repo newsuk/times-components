@@ -7,32 +7,32 @@ import generateQueries from "./generate-queries";
 
 const description = [
   {
-    name: "text",
     attributes: {
       value: "Chelsea is known for its "
     },
-    children: []
+    children: [],
+    name: "text"
   },
   {
-    name: "italic",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "affluent"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "italic"
   },
   {
-    name: "text",
     attributes: {
       value:
         " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores."
     },
-    children: []
+    children: [],
+    name: "text"
   }
 ];
 
@@ -84,22 +84,10 @@ export default ({
     let imageIndex = (iteration - 1) * pageSize;
 
     return {
-      error: articleError(iteration),
       defaults: {
-        values: {
-          topic: () => ({
-            articles: {
-              count,
-              list(_, { first }) {
-                return new MockList(Math.min(count, first));
-              }
-            }
-          })
-        },
         types: {
           Article: () => {
             itemIndex += 1;
-
             return makeItem(
               {
                 byline: [],
@@ -123,7 +111,6 @@ export default ({
           }),
           Image: () => {
             imageIndex += 1;
-
             return {
               __typename: "Image",
               id: `e98c2${imageIndex
@@ -136,9 +123,21 @@ export default ({
             __typename: "Image"
           }),
           SectionName: () => "bricksmortar"
+        },
+        values: {
+          topic: () => ({
+            articles: {
+              count,
+
+              list(_, { first }) {
+                return new MockList(Math.min(count, first));
+              }
+            }
+          })
         }
       },
       delay,
+      error: articleError(iteration),
       query: articleQuery,
       variables: articleVariables(iteration)
     };

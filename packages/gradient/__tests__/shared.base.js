@@ -11,8 +11,8 @@ export default renderMethod => {
   const makeMessageEvent = ({ width, height }) => ({
     nativeEvent: {
       layout: {
-        width,
-        height
+        height,
+        width
       }
     }
   });
@@ -61,8 +61,8 @@ export default renderMethod => {
         );
         component.instance().onLayout(
           makeMessageEvent({
-            width: 100,
-            height: 100
+            height: 100,
+            width: 100
           })
         );
         expect(component.state().width).toEqual(100);

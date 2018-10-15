@@ -8,11 +8,11 @@ export const makeAdInitMocks = () => {
     addListener: jest.fn()
   }));
   const pubAds = {
-    setTargeting: jest.fn(),
+    addEventListener: jest.fn(),
     disableInitialLoad: jest.fn(),
     enableSingleRequest: jest.fn(),
     refresh: jest.fn(),
-    addEventListener: jest.fn()
+    setTargeting: jest.fn()
   };
   const slot = {
     addService: jest.fn(),
@@ -25,11 +25,11 @@ export const makeAdInitMocks = () => {
   };
   const googletag = {
     cmd: [],
+    defineSlot: jest.fn().mockImplementation(() => slot),
     destroySlots: jest.fn(),
     display: jest.fn(),
-    pubads: jest.fn().mockImplementation(() => pubAds),
-    defineSlot: jest.fn().mockImplementation(() => slot),
     enableServices: jest.fn(),
+    pubads: jest.fn().mockImplementation(() => pubAds),
     sizeMapping: jest.fn().mockImplementation(() => sizeMapping)
   };
   window.googletag = googletag;
@@ -39,63 +39,63 @@ export const makeAdInitMocks = () => {
   };
   const slotConfig = {
     containerID: "mock-code",
-    slotName: "mock-code",
-    sizes: [],
-    maxSizes: {
-      width: 0,
-      height: 0
-    },
     mappings: [
       {
-        width: 100,
         height: 250,
-        sizes: [[1, 1]]
+        sizes: [[1, 1]],
+        width: 100
       }
-    ]
+    ],
+    maxSizes: {
+      height: 0,
+      width: 0
+    },
+    sizes: [],
+    slotName: "mock-code"
   };
   const initOptions = {
-    el: document.createElement("div"),
     data: {
-      config: slotConfig,
-      section: "mockSection",
-      sizingMap: [],
-      networkId: "mockNetwork",
       adUnit: "mockAdUnit",
+      config: slotConfig,
+      networkId: "mockNetwork",
       pageTargeting: {
         pageOptionName: "pageOptionValue"
       },
+      prebidConfig: {
+        bidders: {},
+        bidderSettings: () => {},
+        bucketSize: 0,
+        maxBid: 0,
+        minPrice: 0,
+        timeout: 0
+      },
+      section: "mockSection",
+      sizingMap: [],
+      slotName: "mockCode",
+      slots: [],
       slotTargeting: {
         slotOptionName: "slotOptionValue"
-      },
-      slotName: "mockCode",
-      prebidConfig: {
-        timeout: 0,
-        minPrice: 0,
-        maxBid: 0,
-        bucketSize: 0,
-        bidders: {},
-        bidderSettings: () => {}
-      },
-      slots: []
+      }
     },
-    window,
-    renderComplete: jest.fn(),
+    el: document.createElement("div"),
+    eventCallback: jest.fn(),
     platform: "web",
-    eventCallback: jest.fn()
+    renderComplete: jest.fn(),
+    window
   };
 
   return {
+    initOptions,
     mock: {
       document,
-      window,
-      pubAds,
-      slot,
-      sizeMapping,
       googletag,
       processGoogletagCommandQueue,
-      slotConfig
-    },
-    initOptions
+      pubAds,
+      sizeMapping,
+      slot,
+      slotConfig,
+      window
+    }
   };
 };
 

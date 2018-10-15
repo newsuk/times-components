@@ -5,98 +5,98 @@ const defaultShortHeadline = "Defence of the Realm";
 const defaultLabel = "leading article";
 const defaultSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultTitle = "";
@@ -121,32 +121,31 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "LeadOneAndTwoSlice",
       lead: {
         article: {
           byline: [
             {
-              name: "inline",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: "Deborah Haynes"
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "inline"
             }
           ],
           headline,
-          label,
           id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          label,
           leadAsset: {
-            title,
             crop169: {
               url: crop169
-            }
+            },
+            title
           },
           publicationName: "TIMES",
           publishedTime: "2015-03-13T18:54:58.000Z",
@@ -159,7 +158,8 @@ export default (
           summary225,
           url
         }
-      }
+      },
+      sliceName: "LeadOneAndTwoSlice"
     }
   }
 });

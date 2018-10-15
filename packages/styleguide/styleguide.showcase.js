@@ -19,8 +19,8 @@ const ColourBox = ({ name, hex }) => (
 );
 
 ColourBox.propTypes = {
-  name: PropTypes.string.isRequired,
-  hex: PropTypes.string.isRequired
+  hex: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 const fontDisplayer = (fontFamily, phrase, fontSizes) =>
@@ -98,12 +98,8 @@ const fontFixture = select => {
 };
 
 export default {
-  name: "Helpers/Styleguide",
   children: [
     {
-      type: "story",
-      name: "Functional Colours",
-      platform: "native",
       component: () => {
         const colourBoxes = Object.keys(colours.functional).map(colourName => (
           <ColourBox
@@ -114,12 +110,12 @@ export default {
         ));
 
         return <ScrollView>{colourBoxes}</ScrollView>;
-      }
+      },
+      name: "Functional Colours",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Functional Colours",
-      platform: "web",
       component: () => {
         const colourBoxes = Object.keys(colours.functional).map(colourName => (
           <ColourBox
@@ -130,12 +126,12 @@ export default {
         ));
 
         return <View style={styles.display}>{colourBoxes}</View>;
-      }
+      },
+      name: "Functional Colours",
+      platform: "web",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Section Colours",
-      platform: "native",
       component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
@@ -146,12 +142,12 @@ export default {
         ));
 
         return <ScrollView>{colourBoxes}</ScrollView>;
-      }
+      },
+      name: "Section Colours",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Section Colours",
-      platform: "web",
       component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
@@ -162,25 +158,29 @@ export default {
         ));
 
         return <View style={styles.display}>{colourBoxes}</View>;
-      }
+      },
+      name: "Section Colours",
+      platform: "web",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Animations",
       component: () => (
         <Animations.FadeIn>
           <View style={styles.animationBox}>
             <Text style={styles.text}>Fade In</Text>
           </View>
         </Animations.FadeIn>
-      )
+      ),
+      name: "Animations",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Fonts",
       component({ select }) {
         return fontFixture(select);
-      }
+      },
+      name: "Fonts",
+      type: "story"
     }
-  ]
+  ],
+  name: "Helpers/Styleguide"
 };

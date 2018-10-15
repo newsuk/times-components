@@ -11,11 +11,8 @@ const landscapeInlineImage = landscapeInlineImageFixture();
 const portraitInlineImage = portraitInlineImageFixture();
 
 export default {
-  name: "Primitives/Article Image",
   children: [
     {
-      type: "story",
-      name: "Primary",
       // eslint-disable-next-line react/prop-types
       component: ({ boolean }) => {
         const withHighRes = boolean("As high resolution");
@@ -36,37 +33,40 @@ export default {
             imageOptions={imageOptions}
           />
         );
-      }
+      },
+      name: "Primary",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Secondary",
       component: () => (
         <ArticleImage
           captionOptions={secondaryImage.captionOptions}
           imageOptions={secondaryImage.imageOptions}
         />
-      )
+      ),
+      name: "Secondary",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Inline (portrait)",
       component: () => (
         <ArticleImage
           captionOptions={portraitInlineImage.captionOptions}
           imageOptions={portraitInlineImage.imageOptions}
         />
-      )
+      ),
+      name: "Inline (portrait)",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Inline (landscape)",
       component: () => (
         <ArticleImage
           captionOptions={landscapeInlineImage.captionOptions}
           imageOptions={landscapeInlineImage.imageOptions}
         />
-      )
+      ),
+      name: "Inline (landscape)",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Article Image"
 };

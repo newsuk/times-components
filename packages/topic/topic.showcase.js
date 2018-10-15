@@ -68,11 +68,8 @@ const makeTopic = (decorateAction, params) => (
 );
 
 export default {
-  name: "Pages/Topic",
   children: [
     {
-      type: "story",
-      name: "Default",
       component: (_, { decorateAction }) =>
         makeTopic(
           decorateAction,
@@ -94,11 +91,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "Default",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading",
       component: (_, { decorateAction }) => (
         <MockedProvider isLoading mocks={[]}>
           <Topic
@@ -108,11 +105,11 @@ export default {
             slug={slug}
           />
         </MockedProvider>
-      )
+      ),
+      name: "Loading",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Empty State",
       component: (_, { decorateAction }) =>
         makeTopic(
           decorateAction,
@@ -129,11 +126,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "Empty State",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With an error getting Topic",
       component: (_, { decorateAction }) =>
         makeTopic(
           decorateAction,
@@ -150,7 +147,10 @@ export default {
             slug,
             topicError: () => new Error("Topics Broke")
           })
-        )
+        ),
+      name: "With an error getting Topic",
+      type: "story"
     }
-  ]
+  ],
+  name: "Pages/Topic"
 };

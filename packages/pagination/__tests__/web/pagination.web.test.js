@@ -53,9 +53,9 @@ const tests = [
       const props = {
         count: 20,
         generatePageLink: mockGenerateLink,
+        hideResults: true,
         page: 5,
-        pageSize: 3,
-        hideResults: true
+        pageSize: 3
       };
 
       const wrapper = mount(<Pagination {...props} />);
@@ -99,9 +99,9 @@ const tests = [
       const props = {
         count: 20,
         generatePageLink: mockGenerateLink,
+        hideResults: true,
         page: 5,
-        pageSize: 4,
-        hideResults: true
+        pageSize: 4
       };
 
       const wrapper = mount(<Pagination {...props} />);
@@ -115,9 +115,9 @@ const tests = [
       const props = {
         count: 20,
         generatePageLink: mockGenerateLink,
+        hideResults: true,
         page: 1,
-        pageSize: 4,
-        hideResults: true
+        pageSize: 4
       };
 
       const wrapper = mount(<Pagination {...props} />);
@@ -142,12 +142,12 @@ const tests = [
         .simulate("press");
 
       expect(stream).toHaveBeenCalledWith({
-        component: "Pagination",
         action: "Pressed",
         attrs: {
-          direction: "next",
-          destinationPage: 2
-        }
+          destinationPage: 2,
+          direction: "next"
+        },
+        component: "Pagination"
       });
     }
   },
@@ -168,12 +168,12 @@ const tests = [
         .simulate("press");
 
       expect(stream).toHaveBeenCalledWith({
-        component: "Pagination",
         action: "Pressed",
         attrs: {
-          direction: "previous",
-          destinationPage: 1
-        }
+          destinationPage: 1,
+          direction: "previous"
+        },
+        component: "Pagination"
       });
     }
   }

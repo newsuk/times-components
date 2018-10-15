@@ -29,15 +29,15 @@ export default () =>
               ...emptyArticle,
               content: [
                 {
-                  name: "image",
                   attributes: {
+                    caption: "A Caption",
+                    credits: "Some Credits",
                     display: "secondary",
                     ratio: "3:2",
-                    url: "https://image-2.io",
-                    caption: "A Caption",
-                    credits: "Some Credits"
+                    url: "https://image-2.io"
                   },
-                  children: []
+                  children: [],
+                  name: "image"
                 }
               ]
             })}
@@ -67,15 +67,15 @@ export default () =>
               ...emptyArticle,
               content: [
                 {
-                  name: "image",
                   attributes: {
+                    caption: "A Caption",
+                    credits: "Some Credits",
                     display: "inline",
                     ratio: "9:4",
-                    url: "https://image-inline.io",
-                    caption: "A Caption",
-                    credits: "Some Credits"
+                    url: "https://image-inline.io"
                   },
-                  children: []
+                  children: [],
+                  name: "image"
                 }
               ]
             })}

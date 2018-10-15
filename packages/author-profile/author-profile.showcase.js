@@ -81,11 +81,8 @@ const makeAuthorProfile = (
 );
 
 export default {
-  name: "Pages/Author Profile",
   children: [
     {
-      type: "story",
-      name: "Default with images",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -107,11 +104,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "Default with images",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Default without images",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -148,11 +145,11 @@ export default {
           {
             hasLeadAssets: false
           }
-        )
+        ),
+      name: "Default without images",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading",
       component: (_, { decorateAction }) => (
         <MockedProvider isLoading mocks={[]}>
           <AuthorProfile
@@ -162,11 +159,11 @@ export default {
             slug={slug}
           />
         </MockedProvider>
-      )
+      ),
+      name: "Loading",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With an error getting author",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -182,11 +179,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "With an error getting author",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With an error getting articles",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -202,11 +199,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "With an error getting articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With an error on pagination",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -223,11 +220,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "With an error on pagination",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With an error rendering a card",
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
@@ -245,17 +242,17 @@ export default {
                 itemIndex === 2
                   ? [
                       {
-                        name: "paragraph",
                         attributes: {},
                         children: [
                           {
-                            name: "text",
                             attributes: {
                               value: "This will error"
                             },
-                            children: {}
+                            children: {},
+                            name: "text"
                           }
-                        ]
+                        ],
+                        name: "paragraph"
                       }
                     ]
                   : item.summary
@@ -263,11 +260,11 @@ export default {
             pageSize,
             slug
           })
-        )
+        ),
+      name: "With an error rendering a card",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With Provider and Tracking",
       component: (_, { decorateAction }) => (
         <StorybookProvider>
           <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
@@ -281,7 +278,10 @@ export default {
             )}
           </AuthorProfileProvider>
         </StorybookProvider>
-      )
+      ),
+      name: "With Provider and Tracking",
+      type: "story"
     }
-  ]
+  ],
+  name: "Pages/Author Profile"
 };

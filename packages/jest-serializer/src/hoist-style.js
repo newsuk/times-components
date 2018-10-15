@@ -7,9 +7,9 @@ export const hoistStyleTransform = (accum, node, props, children) => {
   if (!style) {
     return {
       accum,
+      children,
       node,
-      props,
-      children
+      props
     };
   }
 
@@ -24,9 +24,9 @@ export const hoistStyleTransform = (accum, node, props, children) => {
 
     return {
       accum,
+      children,
       node,
-      props: omittedStyle,
-      children
+      props: omittedStyle
     };
   }
 
@@ -44,12 +44,12 @@ export const hoistStyleTransform = (accum, node, props, children) => {
         [inlineStyleClass]: style
       }
     },
+    children,
     node,
     props: {
       className: newClassName,
       ...other
-    },
-    children
+    }
   };
 };
 

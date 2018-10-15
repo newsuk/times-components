@@ -14,9 +14,9 @@ describe("The replace serializer should", () => {
       expect,
       replace({
         Text: () => ({
+          children: [<Text>Replaced</Text>],
           node: { type: "Placeholder" },
-          props: {},
-          children: [<Text>Replaced</Text>]
+          props: {}
         })
       })
     );

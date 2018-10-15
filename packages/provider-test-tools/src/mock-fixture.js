@@ -7,8 +7,8 @@ const makeMocks = mm(schema);
 
 const makeQuery = ({ defaults, delay, error, query, variables }) =>
   makeMocks(defaults)(query, { variables }).then(mock => ({
-    delay,
     defaults,
+    delay,
     error,
     mock,
     query,
@@ -54,8 +54,8 @@ MockFixture.propTypes = {
   params: PropTypes.arrayOf(
     PropTypes.shape({
       defaults: PropTypes.shape({
-        values: PropTypes.any,
-        types: PropTypes.any
+        types: PropTypes.any,
+        values: PropTypes.any
       }),
       delay: null,
       query: PropTypes.object.isRequired,

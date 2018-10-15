@@ -8,13 +8,13 @@ export default (
   caption = defaultCaption,
   credits = defaultCredits
 ) => ({
+  captionOptions: {
+    caption,
+    credits
+  },
   imageOptions: {
     display: "inline",
     ratio: "3:2",
     uri
-  },
-  captionOptions: {
-    caption,
-    credits
   }
 });

@@ -26,8 +26,15 @@ describe("ArticleProvider", () => {
           ...article,
           content: [
             {
-              name: "paragraph",
-              children: [{ name: "text", attributes: { value: "test" } }]
+              children: [
+                {
+                  attributes: {
+                    value: "test"
+                  },
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
             }
           ],
           relatedArticleSlice: {
@@ -36,15 +43,17 @@ describe("ArticleProvider", () => {
               {
                 byline: [
                   {
-                    name: "inline",
                     attributes: {},
                     children: [
                       {
-                        name: "text",
-                        attributes: { value: "Patrick Kidd" },
-                        children: []
+                        attributes: {
+                          value: "Patrick Kidd"
+                        },
+                        children: [],
+                        name: "text"
                       }
-                    ]
+                    ],
+                    name: "inline"
                   }
                 ],
                 hasVideo: true,
@@ -52,17 +61,17 @@ describe("ArticleProvider", () => {
                 id: "ea16d744-cb4a-11e4-a202-50ac5def393a",
                 label: "Health",
                 leadAsset: {
-                  crop169: {
-                    url:
-                      "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40"
-                  },
+                  __typename: "Image",
                   crop32: {
                     url:
                       "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0"
                   },
+                  crop169: {
+                    url:
+                      "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40"
+                  },
                   id: "6c1c108e-ed63-47af-df1d-46c63be16627",
-                  title: "TMS: Pratchett’s law of the jungle",
-                  __typename: "Image"
+                  title: "TMS: Pratchett’s law of the jungle"
                 },
                 publicationName: "TIMES",
                 publishedTime: "2015-03-23T19:39:39.000Z",
@@ -71,36 +80,38 @@ describe("ArticleProvider", () => {
                 slug: "related-article-slug",
                 summary125: [
                   {
-                    name: "paragraph",
                     attributes: {},
                     children: [
                       {
-                        name: "text",
                         attributes: {
                           value:
                             "Terry Pratchett, who died last week, began his career on the "
                         },
-                        children: []
+                        children: [],
+                        name: "text"
                       },
                       {
-                        name: "italic",
                         attributes: {},
                         children: [
                           {
-                            name: "text",
-                            attributes: { value: "Bucks Free Press" },
-                            children: []
+                            attributes: {
+                              value: "Bucks Free Press"
+                            },
+                            children: [],
+                            name: "text"
                           }
-                        ]
+                        ],
+                        name: "italic"
                       },
                       {
-                        name: "text",
                         attributes: {
                           value: " in 1965, aged 17, and the paper recalls in a"
                         },
-                        children: []
+                        children: [],
+                        name: "text"
                       }
-                    ]
+                    ],
+                    name: "paragraph"
                   }
                 ],
                 url:

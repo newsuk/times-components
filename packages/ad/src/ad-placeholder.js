@@ -5,7 +5,10 @@ import { propTypes, defaultProps } from "./ad-placeholder-prop-types";
 import styles, { calculateViewBox } from "./styles";
 
 const AdPlaceholder = ({ height, style, width }) => {
-  const box = calculateViewBox({ width, height });
+  const box = calculateViewBox({
+    height,
+    width
+  });
   const viewBox = `${-box.marginLeft} ${-box.marginTop} ${box.svgWidth} ${
     box.svgHeight
   }`;

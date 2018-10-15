@@ -1,22 +1,28 @@
 import { getEvents, getResolvedQueries, getRenderedQueries } from "../src";
 
 const operationEvent = {
-  type: "resolved",
   operation: {
     operationName: "Test",
-    variables: { foo: 1 }
-  }
+    variables: {
+      foo: 1
+    }
+  },
+  type: "resolved"
 };
 
 const tidyOperationEvent = {
-  type: "resolved",
   query: "Test",
-  vars: { foo: 1 }
+  type: "resolved",
+  vars: {
+    foo: 1
+  }
 };
 
 const renderEvent = {
-  type: "render",
-  props: { foo: 1 }
+  props: {
+    foo: 1
+  },
+  type: "render"
 };
 
 const mockTestLink = {

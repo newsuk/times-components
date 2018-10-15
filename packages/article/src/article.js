@@ -186,13 +186,13 @@ class ArticlePage extends Component {
 
 ArticlePage.propTypes = {
   ...articlePagePropTypes,
-  refetch: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
+  onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  refetch: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 

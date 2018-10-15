@@ -83,11 +83,11 @@ describe("Provider Tests", () => {
   it("returns an error", done => {
     const customMocks = [
       {
-        request: {
-          query
-        },
         error: {
           message: "some error from the server"
+        },
+        request: {
+          query
         }
       }
     ];
@@ -105,11 +105,11 @@ describe("Provider Tests", () => {
   it("re-renders with refetched data after error", done => {
     const customMocks = [
       {
-        request: {
-          query
-        },
         error: {
           message: "some error from the server"
+        },
+        request: {
+          query
         }
       },
       {
@@ -144,19 +144,19 @@ describe("Provider Tests", () => {
   it("supports another refetch after error during refetch", done => {
     const customMocks = [
       {
-        request: {
-          query
-        },
         error: {
           message: "some error from the server"
+        },
+        request: {
+          query
         }
       },
       {
-        request: {
-          query
-        },
         error: {
           message: "some error from the server"
+        },
+        request: {
+          query
         }
       },
       {

@@ -48,10 +48,10 @@ const getSlotConfig = (slotName, width) => {
   const maxSizes = getMaxSizes(adSizes);
 
   return {
-    slotName,
-    sizes: adSizes,
+    mappings,
     maxSizes,
-    mappings
+    sizes: adSizes,
+    slotName
   };
 };
 

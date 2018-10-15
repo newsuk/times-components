@@ -143,8 +143,8 @@ describe("brightcove-video web component", () => {
 
     window.bc = jest.fn();
     window.videojs = jest.fn().mockReturnValue({
-      ready: readyMock,
-      on: onMock
+      on: onMock,
+      ready: readyMock
     });
 
     renderer.create(

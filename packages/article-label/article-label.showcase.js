@@ -5,11 +5,8 @@ import { colours } from "@times-components/styleguide";
 import ArticleLabel from "./src/article-label";
 
 export default {
-  name: "Primitives/Article Label",
   children: [
     {
-      type: "story",
-      name: "Article Label",
       component: ({ select }) => (
         <ArticleLabel
           color={select(
@@ -19,7 +16,10 @@ export default {
           )}
           title="swimming"
         />
-      )
+      ),
+      name: "Article Label",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Article Label"
 };

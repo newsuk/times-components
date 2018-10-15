@@ -36,9 +36,9 @@ const webviewEventCallbackSetup = options => {
   window.eventCallback = (type, detail) => {
     window.postMessage(
       JSON.stringify({
+        detail,
         isTngMessage: true,
-        type,
-        detail
+        type
       })
     );
   };

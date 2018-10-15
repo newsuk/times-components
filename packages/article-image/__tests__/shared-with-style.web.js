@@ -22,8 +22,8 @@ export default () => {
     compose(
       print,
       replaceTransform({
-        ArticleImageWeb: justChildren,
         ArticleImage: justChildren,
+        ArticleImageWeb: justChildren,
         Caption: justChildren,
         InlineImage: justChildren,
         InsetCaptionWeb: justChildren,

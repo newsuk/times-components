@@ -15,9 +15,9 @@ module.exports = () => {
     const withTestTracking = WrappedComponent => {
       const TestTracking = (props, context) => {
         context.tracking.analytics({
-          component: "TestComponent",
           action: "Viewed",
-          attrs: {}
+          attrs: {},
+          component: "TestComponent"
         });
         return <WrappedComponent {...props} />;
       };
@@ -35,8 +35,8 @@ module.exports = () => {
       const WithTrackingAndContext = withTrackingContext(
         withTestTracking(TestComponent),
         {
-          trackingObjectName: "TestObject",
-          getAttrs: props => ({ one: props.keyTwo, three: "four" })
+          getAttrs: props => ({ one: props.keyTwo, three: "four" }),
+          trackingObjectName: "TestObject"
         }
       );
       const reporter = jest.fn();
@@ -58,7 +58,12 @@ module.exports = () => {
         withTrackingContext(withTestTracking(TestComponent), {
           getAttrs: () => ({ one: "three" })
         }),
-        { trackingObjectName: "TestObject", getAttrs: () => ({ one: "two" }) }
+        {
+          getAttrs: () => ({
+            one: "two"
+          }),
+          trackingObjectName: "TestObject"
+        }
       );
       const reporter = jest.fn();
 
@@ -85,8 +90,8 @@ module.exports = () => {
 
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
-          object: "TestObject",
-          action: "Viewed"
+          action: "Viewed",
+          object: "TestObject"
         })
       );
     });
@@ -104,8 +109,8 @@ module.exports = () => {
 
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
-          object: "TestObject2",
-          action: "Viewed"
+          action: "Viewed",
+          object: "TestObject2"
         })
       );
     });
@@ -133,17 +138,17 @@ module.exports = () => {
 
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
-          object: "AuthorProfile",
           action: "Viewed",
-          component: "Page"
+          component: "Page",
+          object: "AuthorProfile"
         })
       );
     });
 
     it("tracks page views when data is ready", () => {
       const WithTrackingAndContext = withTrackingContext(TestComponent, {
-        trackingObjectName: "AuthorProfile",
-        isDataReady: () => true
+        isDataReady: () => true,
+        trackingObjectName: "AuthorProfile"
       });
       const reporter = jest.fn();
 
@@ -151,17 +156,17 @@ module.exports = () => {
 
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
-          object: "AuthorProfile",
           action: "Viewed",
-          component: "Page"
+          component: "Page",
+          object: "AuthorProfile"
         })
       );
     });
 
     it("doesnt track page views when data is not ready", () => {
       const WithTrackingAndContext = withTrackingContext(TestComponent, {
-        trackingObjectName: "AuthorProfile",
-        isDataReady: () => false
+        isDataReady: () => false,
+        trackingObjectName: "AuthorProfile"
       });
       const reporter = jest.fn();
 
@@ -173,8 +178,8 @@ module.exports = () => {
     it("only tracks page views when data is ready, with multiple updates", () => {
       let isReady = false;
       const WithTrackingAndContext = withTrackingContext(TestComponent, {
-        trackingObjectName: "AuthorProfile",
-        isDataReady: () => isReady
+        isDataReady: () => isReady,
+        trackingObjectName: "AuthorProfile"
       });
       const reporter = jest.fn();
       const testRenderer = renderer.create(

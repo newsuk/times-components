@@ -3,11 +3,8 @@ import React from "react";
 import { Article } from "./src/pages";
 
 export default {
-  name: "Pages with provider",
   children: [
     {
-      type: "story",
-      name: "Article",
       component: ({ text }) => {
         const articleId = text(
           "Article id",
@@ -37,7 +34,10 @@ export default {
             platformAdConfig={{ sectionName: "news" }}
           />
         );
-      }
+      },
+      name: "Article",
+      type: "story"
     }
-  ]
+  ],
+  name: "Pages with provider"
 };

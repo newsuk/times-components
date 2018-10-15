@@ -49,11 +49,11 @@ const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
       bidder: "rubicon",
       params: {
         accountId: biddersConfig.rubicon.accountId,
-        siteId: biddersConfig.rubicon.siteId,
-        zoneId: biddersConfig.rubicon.zoneId,
         inventory: {
           section
-        }
+        },
+        siteId: biddersConfig.rubicon.siteId,
+        zoneId: biddersConfig.rubicon.zoneId
       }
     },
     {
@@ -65,10 +65,10 @@ const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
     }
   ];
   return {
+    bids,
     // NOTE: for the prebidding the position of the ad in the page is called code
     code: pos,
-    sizes,
-    bids
+    sizes
   };
 };
 

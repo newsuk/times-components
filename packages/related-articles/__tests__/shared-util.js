@@ -7,17 +7,17 @@ import RelatedArticleItem from "../src/related-article-item";
 
 export const testSummary = summary => [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: `Summary ${summary}`
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 

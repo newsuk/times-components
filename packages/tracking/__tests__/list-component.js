@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 class ListComponent extends Component {
   static get propTypes() {
     return {
-      onViewed: PropTypes.func.isRequired,
       items: PropTypes.arrayOf(
         PropTypes.shape({
           someKey: PropTypes.string,
           someValue: PropTypes.string
         })
       ),
+      onViewed: PropTypes.func.isRequired,
       receiveChildList: PropTypes.func
     };
   }

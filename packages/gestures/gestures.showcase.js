@@ -39,16 +39,12 @@ const styles = StyleSheet.create({
 });
 
 export default {
-  name: "Helpers/Gestures",
   children: [
     {
-      type: "decorator",
-      decorator: CenteredDecorator
+      decorator: CenteredDecorator,
+      type: "decorator"
     },
     {
-      type: "story",
-      platform: "native",
-      name: "Default",
       component: () => (
         <Gestures style={styles.gestures}>
           <View style={styles.box}>
@@ -64,7 +60,11 @@ export default {
             </View>
           </View>
         </Gestures>
-      )
+      ),
+      name: "Default",
+      platform: "native",
+      type: "story"
     }
-  ]
+  ],
+  name: "Helpers/Gestures"
 };

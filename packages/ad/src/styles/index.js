@@ -42,20 +42,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center"
   },
-  placeholderWrapper: {
-    alignItems: "center",
-    backgroundColor: colours.functional.backgroundPrimary,
-    borderColor: colours.functional.keyline,
-    borderStyle: "solid",
-    borderWidth: 1,
-    justifyContent: "center",
-    overflow: "hidden"
-  },
-  watermarkContainer: {
-    left: 0,
-    position: "absolute",
-    top: 0
-  },
   placeholderText: {
     backgroundColor: colours.functional.backgroundPrimary,
     borderColor: colours.functional.keyline,
@@ -72,6 +58,20 @@ const styles = StyleSheet.create({
     paddingRight: spacing(2),
     paddingTop: spacing(1),
     zIndex: 1
+  },
+  placeholderWrapper: {
+    alignItems: "center",
+    backgroundColor: colours.functional.backgroundPrimary,
+    borderColor: colours.functional.keyline,
+    borderStyle: "solid",
+    borderWidth: 1,
+    justifyContent: "center",
+    overflow: "hidden"
+  },
+  watermarkContainer: {
+    left: 0,
+    position: "absolute",
+    top: 0
   }
 });
 

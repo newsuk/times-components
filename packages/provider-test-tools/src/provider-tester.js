@@ -54,7 +54,10 @@ export default function providerTester(
           {state => (
             <WrappedComponent {...state}>
               {props => {
-                link.pushEvent({ type: "render", props });
+                link.pushEvent({
+                  props,
+                  type: "render"
+                });
                 return null;
               }}
             </WrappedComponent>
@@ -66,8 +69,8 @@ export default function providerTester(
 
   return {
     client,
+    component,
     link,
-    setProps,
-    component
+    setProps
   };
 }

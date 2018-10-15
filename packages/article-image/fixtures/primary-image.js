@@ -9,13 +9,13 @@ export default (
   caption = defaultCaption,
   credits = defaultCredits
 ) => ({
+  captionOptions: {
+    caption,
+    credits
+  },
   imageOptions: {
     display: "primary",
     ratio: "15:12",
     uri
-  },
-  captionOptions: {
-    caption,
-    credits
   }
 });

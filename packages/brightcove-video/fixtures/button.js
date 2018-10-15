@@ -7,8 +7,8 @@ const Button = props => (
     onPress={props.onPress}
     style={{
       backgroundColor: "blue",
-      padding: 5,
       margin: 5,
+      padding: 5,
       width: 200
     }}
     testID={props.testID}
@@ -20,14 +20,14 @@ const Button = props => (
 );
 
 Button.propTypes = {
-  onPress: PropTypes.func,
   buttonText: PropTypes.string,
+  onPress: PropTypes.func,
   testID: PropTypes.string
 };
 
 Button.defaultProps = {
-  onPress: () => {},
   buttonText: "click here",
+  onPress: () => {},
   testID: "button"
 };
 
