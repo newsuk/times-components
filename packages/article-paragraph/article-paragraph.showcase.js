@@ -5,7 +5,7 @@ import Context from "@times-components/context";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import { colours, scales } from "@times-components/styleguide";
-import Parapgraph from "./src";
+import ArticleParagraph from "./src";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
@@ -21,20 +21,27 @@ const renderParagraph = (select, ast) => {
 
   return (
     <Context.Provider value={{ theme: { scale } }}>
-      <Parapgraph ast={ast} colour={colour}>
-        {renderTree(ast, {
-          ...coreRenderers,
-          dropCap(key, { value }) {
-            return {
-              element: (
-                <DropCapView colour={colour} key={key}>
-                  {value}
-                </DropCapView>
-              )
-            };
-          }
-        })}
-      </Parapgraph>
+      {renderTree(ast, {
+        ...coreRenderers,
+        paragraph(key, attributes, children, indx, node) {
+          return {
+            element: (
+              <ArticleParagraph ast={node} key={indx} uid={indx}>
+                {children}
+              </ArticleParagraph>
+            )
+          };
+        },
+        dropCap(key, { value }) {
+          return {
+            element: (
+              <DropCapView colour={colour} key={key}>
+                {value}
+              </DropCapView>
+            )
+          };
+        }
+      })}
     </Context.Provider>
   );
 };

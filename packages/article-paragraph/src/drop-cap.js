@@ -79,7 +79,7 @@ class DropCapParagraph extends Component {
       <View
         style={[
           stylesScaled.articleMainContentRow,
-          stylesScaled.dropCapWrapper
+          stylesScaled.dropCapContainer
         ]}
       >
         <Text
@@ -133,9 +133,6 @@ class DropCapParagraph extends Component {
 
 DropCapParagraph.propTypes = {
   ...propTypes,
-  children: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired,
   dropCap: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   scale: PropTypes.string.isRequired
