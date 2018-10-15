@@ -4,11 +4,12 @@ import { renderTree, renderTreeAsText } from "@times-components/markup-forest";
 import ArticleParagraph from "./article-paragraph"
 import DropCapWrapper from "./drop-cap-with-context";
 
-const ArticleParagraphWrapper = ({ ast, colour }) => {
+const ArticleParagraphWrapper = (props) => {
+  const { ast } = props;
   const { children, attributes } = ast;
   const [{ name, attributes: { value } }, ...rest] = children;
   if (name === "dropCap") {
-    return (<DropCapWrapper colour={colour} dropCapText={value} text={"renderTreeAsText(rest)"} />);
+    return (<DropCapWrapper dropCapText={value} text={"renderTreeAsText(rest)"} {...props} />);
   } else {
     return (null);
   }

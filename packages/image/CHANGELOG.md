@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.1.0...@times-components/image@4.2.0) (2018-10-12)
+
+
+### Features
+
+* add story to demonstrate image fallback ([#1395](https://github.com/newsuk/times-components/issues/1395)) ([b137e53](https://github.com/newsuk/times-components/commit/b137e53))
+
+
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.0.13...@times-components/image@4.1.0) (2018-10-11)
 

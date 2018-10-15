@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.2"></a>
+## [4.2.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.2.1...@times-components/related-articles@4.2.2) (2018-10-15)
+
+
+### Bug Fixes
+
+* remove date leading zero ([#1402](https://github.com/newsuk/times-components/issues/1402)) ([d888c3c](https://github.com/newsuk/times-components/commit/d888c3c))
+
+
+
+
+
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.2.0...@times-components/related-articles@4.2.1) (2018-10-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.1.9...@times-components/related-articles@4.2.0) (2018-10-11)
 
