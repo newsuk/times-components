@@ -15,10 +15,12 @@ const sharedStyles = scale => {
       color: colours.functional.primary
     },
     articleMainContentRow: {
-      flexDirection: "row",
-      flexWrap: "wrap",
       paddingLeft: spacing(2),
       paddingRight: spacing(2)
+    },
+    dropCapContainer: {
+      flexDirection: "row",
+      flexWrap: "wrap"
     },
     dropCapTextElement: {
       ...fontFactory({

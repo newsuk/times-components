@@ -16,6 +16,10 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
+.c18 {
+  padding-left: 10px;
+}
+
 .c10 {
   margin-bottom: 10px;
 }
@@ -67,10 +71,6 @@ exports[`full article with style 1`] = `
 
 .c16 {
   display: block;
-}
-
-.c18 {
-  padding-left: 10px;
 }
 
 .c4 {
@@ -150,6 +150,12 @@ exports[`full article with style 1`] = `
   .c15 {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    padding-left: 0px;
   }
 }
 
@@ -243,12 +249,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c16 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    padding-left: 0px;
   }
 }
 

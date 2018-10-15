@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
-import { propTypes, defaultProps } from "./prop-types";
+import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 const { RNTextSize } = NativeModules;
 
@@ -76,7 +76,12 @@ class DropCapParagraph extends Component {
     const { paddingLeft, paddingRight } = stylesScaled.articleMainContentRow;
 
     return (
-      <View style={stylesScaled.articleMainContentRow}>
+      <View
+        style={[
+          stylesScaled.articleMainContentRow,
+          stylesScaled.dropCapWrapper
+        ]}
+      >
         <Text
           selectable
           style={[
@@ -128,6 +133,11 @@ class DropCapParagraph extends Component {
 
 DropCapParagraph.propTypes = {
   ...propTypes,
+  children: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  ).isRequired,
+  dropCap: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   scale: PropTypes.string.isRequired
 };
 

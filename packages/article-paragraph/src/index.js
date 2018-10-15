@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import ArticleParagraph from "./article-paragraph";
 import DropCapWrapper from "./drop-cap-with-context";
-import { propTypes, defaultProps } from "./prop-types";
+import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 const ArticleParagraphWrapper = props => {
   const { ast, children, colour } = props;

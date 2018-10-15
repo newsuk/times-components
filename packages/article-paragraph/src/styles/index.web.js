@@ -7,10 +7,6 @@ export default {
   ...sharedStyles,
   articleTextElement: {
     ...sharedStyles.articleTextElement,
-    ...fontFactory({
-      font: "body",
-      fontSize: "body"
-    }),
     marginTop: 0
   }
 };

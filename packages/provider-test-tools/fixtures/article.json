@@ -22,17 +22,10 @@
       "attributes": {},
       "children": [
         {
-          "name": "dropCap",
-          "attributes": {
-            "value": "A"
-          },
-          "children": []
-        },
-        {
           "name": "text",
           "attributes": {
             "value":
-              "s I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”"
+              "As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”"
           },
           "children": []
         }
