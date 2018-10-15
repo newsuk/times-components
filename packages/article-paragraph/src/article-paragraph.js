@@ -7,11 +7,7 @@ import styleFactory from "./styles";
 const styles = styleFactory();
 
 const BodyParagraph = props => (
-  <View
-    key={`paragraph-${props.uid}`}
-    style={[styles.articleMainContentRow]}
-    testID={`paragraph-${props.uid}`}
-  >
+  <View style={[styles.articleMainContentRow]}>
     <Context.Consumer>
       {({ theme: { scale } }) => {
         const stylesScaled = styleFactory(scale);
@@ -26,7 +22,6 @@ const BodyParagraph = props => (
 );
 
 BodyParagraph.propTypes = {
-  uid: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
   ).isRequired

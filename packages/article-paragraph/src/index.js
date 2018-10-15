@@ -1,18 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { renderTree, renderTreeAsText } from "@times-components/markup-forest";
+import { renderTreeAsText } from "@times-components/markup-forest";
 import ArticleParagraph from "./article-paragraph"
 import DropCapWrapper from "./drop-cap-with-context";
 
 const ArticleParagraphWrapper = (props) => {
-  const { ast } = props;
-  const { children, attributes } = ast;
-  const [{ name, attributes: { value } }, ...rest] = children;
+  const { ast, children, colour } = props;
+  const { children: astChildren } = ast;
+  const [{ name, attributes: { value } }, ...rest] = astChildren;
   if (name === "dropCap") {
-    return (<DropCapWrapper dropCapText={value} text={"renderTreeAsText(rest)"} {...props} />);
-  } else {
-    return (null);
+    const text = renderTreeAsText(ast).slice(1);
+    return (<DropCapWrapper
+      colour={colour}
+      dropCap={value} key={`paragraph-${props.uid}`} testID={`paragraph-${props.uid}`} text={text} />);
   }
+  return (<ArticleParagraph
+    key={`paragraph-${props.uid}`}
+    testID={`paragraph-${props.uid}`}>
+    {children}
+  </ArticleParagraph>);
 }
 
 ArticleParagraphWrapper.propTypes = {
