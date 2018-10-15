@@ -148,7 +148,7 @@
   "dependencies": {
     "aws-sdk": "2.238.1",
     "babel-preset-es2015": "6.24.1",
-    "expo": "29.0.0",
+    "expo": "30.0.0",
     "react-art": "16.5.2",
     "react-native": "0.55.4",
     "react-native-showcase-loader": "1.1.0"
