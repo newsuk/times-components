@@ -13,7 +13,7 @@ exports[`1. no short headline 1`] = `
   <View>
     <View>
       <View>
-        <div>
+        <View>
           <Link
             linkStyle={
               Object {
@@ -65,7 +65,7 @@ exports[`1. no short headline 1`] = `
               </View>
             </Card>
           </Link>
-        </div>
+        </View>
       </View>
     </View>
   </View>
