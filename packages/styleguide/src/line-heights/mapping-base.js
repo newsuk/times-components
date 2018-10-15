@@ -14,6 +14,7 @@ const mapping = {
     cardMetaMobile: 12,
     meta: 14
   },
+  dropCap: {},
   headline: {
     commentsHeadline: 29,
     headline: 30,
