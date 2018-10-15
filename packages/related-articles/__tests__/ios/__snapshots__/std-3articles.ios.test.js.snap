@@ -13,7 +13,7 @@ exports[`1. three related articles 1`] = `
   <View>
     <View>
       <View>
-        <div>
+        <View>
           <Link
             linkStyle={
               Object {
@@ -62,12 +62,12 @@ exports[`1. three related articles 1`] = `
               </View>
             </Card>
           </Link>
-        </div>
+        </View>
       </View>
     </View>
     <View>
       <View>
-        <div>
+        <View>
           <Link
             linkStyle={
               Object {
@@ -116,12 +116,12 @@ exports[`1. three related articles 1`] = `
               </View>
             </Card>
           </Link>
-        </div>
+        </View>
       </View>
     </View>
     <View>
       <View>
-        <div>
+        <View>
           <Link
             linkStyle={
               Object {
@@ -170,7 +170,7 @@ exports[`1. three related articles 1`] = `
               </View>
             </Card>
           </Link>
-        </div>
+        </View>
       </View>
     </View>
   </View>

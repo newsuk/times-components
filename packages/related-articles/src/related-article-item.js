@@ -76,7 +76,7 @@ class RelatedArticleItem extends Component {
         : get(leadAsset, `crop${cropSize}.url`);
 
     return (
-      <div
+      <View
         ref={node => {
           this.node = node;
         }}
@@ -144,7 +144,7 @@ class RelatedArticleItem extends Component {
             />
           </Card>
         </Link>
-      </div>
+      </View>
     );
   }
 }
