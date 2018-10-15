@@ -73,7 +73,7 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
-            (${webviewEventCallbackSetup})(window);
+            (${webviewEventCallbackSetup})({window, os: "${Platform.OS}"});
           </script>
           <script>
           (${init})({
