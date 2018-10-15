@@ -6,7 +6,7 @@ const DropCapView = ({ colour, children }) => (
   <DropCap style={{ color: colour }}>{children}</DropCap>
 );
 
-DropCap.propTypes = propTypes;
-DropCap.defaultProps = defaultProps;
+DropCapView.propTypes = propTypes;
+DropCapView.defaultProps = defaultProps;
 
 export default DropCapView;

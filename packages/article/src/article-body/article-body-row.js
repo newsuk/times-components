@@ -38,9 +38,11 @@ const ArticleRow = ({
     },
     paragraph(key, attributes, children, indx, node) {
       return {
-        element: <ArticleParagraph ast={node} key={index} uid={index} >
-          {children}
-        </ArticleParagraph>
+        element: (
+          <ArticleParagraph ast={node} key={index} uid={index}>
+            {children}
+          </ArticleParagraph>
+        )
       };
     },
     image(key, { display, ratio, url, caption, credits }) {
