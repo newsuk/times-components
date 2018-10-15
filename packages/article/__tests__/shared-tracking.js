@@ -31,6 +31,7 @@ export default () => {
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
         pageSection="News"
+        refetch={() => {}}
       />
     );
     const [[call]] = stream.mock.calls;
