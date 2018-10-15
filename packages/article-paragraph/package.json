@@ -1,9 +1,9 @@
 {
-  "name": "@times-components/drop-cap",
+  "name": "@times-components/article-paragraph",
   "version": "0.0.1",
-  "description": "Drop Cap Paragraph",
-  "main": "dist/drop-cap-with-context",
-  "dev": "src/drop-cap-with-context",
+  "description": "Article Paragraph",
+  "main": "dist/",
+  "dev": "src/",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -26,7 +26,7 @@
     "react",
     "native",
     "web",
-    "drop-cap",
+    "article-paragraph",
     "component"
   ],
   "license": "BSD-3-Clause",

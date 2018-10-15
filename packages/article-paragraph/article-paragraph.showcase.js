@@ -10,7 +10,7 @@ const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 
 export default {
-  name: "Primitives/DropCap",
+  name: "Primitives/Article Paragraph",
   children: [
     {
       type: "story",

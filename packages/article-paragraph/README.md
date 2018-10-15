@@ -1,4 +1,4 @@
-# Drop Cap (Android & Web Only)
+# Article Paragraph
 
 This package provides a paragraph starting with a drop cap letter.
 

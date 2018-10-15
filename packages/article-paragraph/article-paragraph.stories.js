@@ -1,4 +1,4 @@
 import { showcaseConverter } from "@times-components/storybook";
-import showcase from "./drop-cap.showcase";
+import showcase from "./article-paragraph.showcase";
 
 showcaseConverter(module, showcase);

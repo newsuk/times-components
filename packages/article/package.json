@@ -77,6 +77,7 @@
     "@times-components/article-flag": "2.1.42",
     "@times-components/article-image": "4.1.0",
     "@times-components/article-label": "2.2.15",
+    "@times-components/article-paragraph": "0.0.1",
     "@times-components/article-topics": "3.2.21",
     "@times-components/button": "2.2.22",
     "@times-components/caption": "2.1.41",

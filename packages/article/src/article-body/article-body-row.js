@@ -2,6 +2,7 @@ import React from "react";
 import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
+import ArticleParagraph from "@times-components/article-paragraph";
 import Ad from "@times-components/ad";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
@@ -9,7 +10,6 @@ import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
-import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
@@ -36,13 +36,10 @@ const ArticleRow = ({
         )
       };
     },
-    paragraph(key, attributes, children) {
+    paragraph(key, attributes, children, indx, node) {
       return {
-        element: (
-          <BodyParagraph key={index} uid={index}>
-            {children}
-          </BodyParagraph>
-        )
+        element: <ArticleParagraph ast={node} key={index} uid={index} />,
+        shouldRenderChildren: false
       };
     },
     image(key, { display, ratio, url, caption, credits }) {

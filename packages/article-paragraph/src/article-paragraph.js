@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import styleFactory from "../styles/article-body";
+import styleFactory from "./styles";
 
 const styles = styleFactory();
 
