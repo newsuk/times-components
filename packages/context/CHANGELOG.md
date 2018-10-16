@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/context@0.4.31...@times-components/context@0.5.0) (2018-10-16)
+
+
+### Features
+
+* adding canonical Urls for articles in topic and author-profile ([#1403](https://github.com/newsuk/times-components/issues/1403)) ([945913c](https://github.com/newsuk/times-components/commit/945913c))
+
+
+
+
+
 <a name="0.4.31"></a>
 ## [0.4.31](https://github.com/newsuk/times-components/compare/@times-components/context@0.4.30...@times-components/context@0.4.31) (2018-10-11)
 
