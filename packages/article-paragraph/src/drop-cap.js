@@ -47,18 +47,18 @@ class DropCapParagraph extends Component {
     const margins = paddingLeft + paddingRight + dropCapRight;
 
     RNTextSize.measure({
-      text: dropCap,
-      width: screenWidth - margins,
+      fontFamily: dropCapFontFamily,
       fontSize: dropCapSize,
-      fontFamily: dropCapFontFamily
+      text: dropCap,
+      width: screenWidth - margins
     })
       .then(({ width }) =>
         RNTextSize.measure({
-          text,
-          width: screenWidth - margins - width,
-          fontSize,
           fontFamily,
-          lineEndForLineNo: 2
+          fontSize,
+          lineEndForLineNo: 2,
+          text,
+          width: screenWidth - margins - width
         })
       )
       .then(({ lineEnd: slicePoint }) => {
@@ -134,8 +134,8 @@ class DropCapParagraph extends Component {
 DropCapParagraph.propTypes = {
   ...propTypes,
   dropCap: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  scale: PropTypes.string.isRequired
+  scale: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 };
 
 DropCapParagraph.defaultProps = defaultProps;

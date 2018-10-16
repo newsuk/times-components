@@ -16,6 +16,11 @@ const renderParagraph = ast => (
   <Context.Provider value={{ theme: { scale: scales.medium } }}>
     {renderTree(ast, {
       ...coreRenderers,
+      dropCap(key, { value }) {
+        return {
+          element: <DropCapView key={key}>{value}</DropCapView>
+        };
+      },
       paragraph(key, attributes, children, indx, node) {
         return {
           element: (
@@ -23,11 +28,6 @@ const renderParagraph = ast => (
               {children}
             </ArticleParagraph>
           )
-        };
-      },
-      dropCap(key, { value }) {
-        return {
-          element: <DropCapView key={key}>{value}</DropCapView>
         };
       }
     })}

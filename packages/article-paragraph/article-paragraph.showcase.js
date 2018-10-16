@@ -23,21 +23,21 @@ const renderParagraph = (select, ast) => {
     <Context.Provider value={{ theme: { scale } }}>
       {renderTree(ast, {
         ...coreRenderers,
-        paragraph(key, attributes, children, indx, node) {
-          return {
-            element: (
-              <ArticleParagraph ast={node} key={indx} uid={indx}>
-                {children}
-              </ArticleParagraph>
-            )
-          };
-        },
         dropCap(key, { value }) {
           return {
             element: (
               <DropCapView colour={colour} key={key}>
                 {value}
               </DropCapView>
+            )
+          };
+        },
+        paragraph(key, attributes, children, indx, node) {
+          return {
+            element: (
+              <ArticleParagraph ast={node} key={indx} uid={indx}>
+                {children}
+              </ArticleParagraph>
             )
           };
         }
@@ -47,22 +47,22 @@ const renderParagraph = (select, ast) => {
 };
 
 export default {
-  name: "Primitives/Article Paragraph",
   children: [
     {
-      type: "story",
+      component: ({ select }) => renderParagraph(select, paragraphData),
       name: "Paragraph",
-      component: ({ select }) => renderParagraph(select, paragraphData)
+      type: "story"
     },
     {
-      type: "story",
+      component: ({ select }) => renderParagraph(select, dropCapData),
       name: "Paragraph with dropcap",
-      component: ({ select }) => renderParagraph(select, dropCapData)
+      type: "story"
     },
     {
-      type: "story",
+      component: ({ select }) => renderParagraph(select, dropCapShortTextData),
       name: "DropCap paragraph with short text",
-      component: ({ select }) => renderParagraph(select, dropCapShortTextData)
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Article Paragraph"
 };

@@ -6,17 +6,17 @@ const sharedStyles = scale => {
   const dropCapMargins = margins(scale);
 
   return {
+    articleMainContentRow: {
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2)
+    },
     articleTextElement: {
       ...fontFactory({
         font: "body",
         fontSize: "bodyMobile"
       }),
-      marginBottom: spacing(5),
-      color: colours.functional.primary
-    },
-    articleMainContentRow: {
-      paddingLeft: spacing(2),
-      paddingRight: spacing(2)
+      color: colours.functional.primary,
+      marginBottom: spacing(5)
     },
     dropCapContainer: {
       flexDirection: "row",
@@ -27,10 +27,10 @@ const sharedStyles = scale => {
         font: "dropCap",
         fontSize: "dropCap"
       }),
-      marginRight: spacing(1),
-      marginTop: dropCapMargins.top,
+      color: colours.functional.primary,
       marginBottom: dropCapMargins.bottom,
-      color: colours.functional.primary
+      marginRight: spacing(1),
+      marginTop: dropCapMargins.top
     }
   };
 };

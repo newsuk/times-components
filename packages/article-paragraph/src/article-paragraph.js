@@ -24,8 +24,7 @@ const BodyParagraph = props => (
 BodyParagraph.propTypes = {
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired,
-  uid: PropTypes.number.isRequired
+  ).isRequired
 };
 
 export default BodyParagraph;
