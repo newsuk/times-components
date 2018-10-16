@@ -366,6 +366,10 @@ const defaultSecondSummary225 = [
 const defaultSecondUrl =
   "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
 
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
+
 export default (
   {
     firstCrop169 = defaultFirstCrop169,
@@ -381,6 +385,8 @@ export default (
     firstSummary225 = defaultFirstSummary225,
     firstTitle = defaultFirstTitle,
     firstUrl = defaultFirstUrl,
+    firstSlug = defaultSlug,
+    firstShortIdentifier = defaultShortIdentifier,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
     secondLabel = defaultSecondLabel,
@@ -435,6 +441,8 @@ export default (
             summary160: firstSummary160,
             summary175: firstSummary175,
             summary225: firstSummary225,
+            slug: firstSlug,
+            shortIdentifier: firstShortIdentifier,
             url: firstUrl
           }
         },
@@ -479,6 +487,8 @@ export default (
             summary160: secondSummary160,
             summary175: secondSummary175,
             summary225: secondSummary225,
+            slug: firstSlug,
+            shortIdentifier: firstShortIdentifier,
             url: secondUrl
           }
         }

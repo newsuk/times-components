@@ -106,6 +106,9 @@ const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
 const defaultFirstUrl =
   "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultSecondCrop169 =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108";
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
@@ -493,6 +496,8 @@ export default (
     firstSummary225 = defaultFirstSummary225,
     firstTitle = defaultFirstTitle,
     firstUrl = defaultFirstUrl,
+    firstSlug = defaultSlug,
+    firstShortIdentifier = defaultShortIdentifier,
     secondCrop169 = defaultSecondCrop169,
     secondHeadline = defaultSecondHeadline,
     secondLabel = defaultSecondLabel,
@@ -560,6 +565,8 @@ export default (
             summary160: firstSummary160,
             summary175: firstSummary175,
             summary225: firstSummary225,
+            slug: firstSlug,
+            shortIdentifier: firstShortIdentifier,
             url: firstUrl
           }
         },
@@ -598,6 +605,8 @@ export default (
             summary160: secondSummary160,
             summary175: secondSummary175,
             summary225: secondSummary225,
+            slug: firstSlug,
+            shortIdentifier: firstShortIdentifier,
             url: secondUrl
           }
         },
@@ -638,6 +647,8 @@ export default (
             summary160: thirdSummary160,
             summary175: thirdSummary175,
             summary225: thirdSummary225,
+            slug: firstSlug,
+            shortIdentifier: firstShortIdentifier,
             url: thirdUrl
           }
         }

@@ -1,24 +1,26 @@
 import PropTypes from "prop-types";
 
 export const propTypesBase = {
-  fadeImageIn: PropTypes.bool,
-  headline: PropTypes.string,
-  highResSize: PropTypes.number,
-  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-  label: PropTypes.string,
-  leadAsset: PropTypes.shape({
-    crop: PropTypes.shape({
-      url: PropTypes.string
+  article: PropTypes.shape({
+    headline: PropTypes.string,
+    id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+    label: PropTypes.string,
+    leadAsset: PropTypes.shape({
+      crop: PropTypes.shape({
+        url: PropTypes.string
+      }),
+      title: PropTypes.string
     }),
-    title: PropTypes.string
+    longSummary: PropTypes.array,
+    publicationName: PropTypes.string,
+    publishedTime: PropTypes.string,
+    shortHeadline: PropTypes.string,
+    shortSummary: PropTypes.array,
+    summary: PropTypes.array,
+    url: PropTypes.string
   }),
-  longSummary: PropTypes.array,
-  publicationName: PropTypes.string,
-  publishedTime: PropTypes.string,
-  shortHeadline: PropTypes.string,
-  shortSummary: PropTypes.array,
-  summary: PropTypes.array,
-  url: PropTypes.string
+  fadeImageIn: PropTypes.bool,
+  highResSize: PropTypes.number
 };
 
 export const propTypes = {
@@ -30,17 +32,10 @@ export const propTypes = {
 };
 
 export const defaultProps = {
+  article: null,
   fadeImageIn: false,
-  headline: "",
   highResSize: null,
   imageRatio: 1,
-  label: "",
-  longSummary: [],
-  publicationName: "",
-  publishedTime: "",
-  shortHeadline: "",
-  shortSummary: [],
   showImage: true,
-  summary: [],
-  url: null
+  summary: []
 };

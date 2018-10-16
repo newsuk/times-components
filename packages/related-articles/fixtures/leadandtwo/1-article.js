@@ -3,100 +3,103 @@ const defaultCrop169 =
 const defaultHeadline = "Defence of the Realm";
 const defaultShortHeadline = "Defence of the Realm";
 const defaultLabel = "leading article";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultSummary105 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultSummary125 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultSummary145 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultSummary160 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultSummary175 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultSummary225 = [
   {
+    name: "paragraph",
     attributes: {},
     children: [
       {
+        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the"
         },
-        children: [],
-        name: "text"
+        children: []
       }
-    ],
-    name: "paragraph"
+    ]
   }
 ];
 const defaultTitle = "";
@@ -108,6 +111,8 @@ export default (
     crop169 = defaultCrop169,
     headline = defaultHeadline,
     label = defaultLabel,
+    slug = defaultSlug,
+    shortIdentifier = defaultShortIdentifier,
     shortHeadline = defaultShortHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
@@ -121,31 +126,34 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
+      sliceName: "LeadOneAndTwoSlice",
       lead: {
         article: {
           byline: [
             {
+              name: "inline",
               attributes: {},
               children: [
                 {
+                  name: "text",
                   attributes: {
                     value: "Deborah Haynes"
                   },
-                  children: [],
-                  name: "text"
+                  children: []
                 }
-              ],
-              name: "inline"
+              ]
             }
           ],
           headline,
-          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          slug,
+          shortIdentifier,
           label,
+          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
           leadAsset: {
+            title,
             crop169: {
               url: crop169
-            },
-            title
+            }
           },
           publicationName: "TIMES",
           publishedTime: "2015-03-13T18:54:58.000Z",
@@ -158,8 +166,7 @@ export default (
           summary225,
           url
         }
-      },
-      sliceName: "LeadOneAndTwoSlice"
+      }
     }
   }
 });

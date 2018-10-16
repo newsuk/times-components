@@ -346,8 +346,8 @@ exports[`default styles 1`] = `
         <div
           className="c6 c7 c8 S4"
         >
-          <div>
-            <Link>
+          <Link>
+            <div>
               <Card>
                 <div
                   className="S4"
@@ -410,8 +410,8 @@ exports[`default styles 1`] = `
                   </div>
                 </div>
               </Card>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

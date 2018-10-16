@@ -100,6 +100,8 @@ export default ({
                 publicationName: "TIMES",
                 publishedTime: "2018-06-01",
                 shortHeadline: `Test Short Headline ${itemIndex}`,
+                shortIdentifier: `968n7tdck${itemIndex}`,
+                slug: `this-is-slug-${itemIndex}`,
                 summary: [],
                 url: "https://url.io"
               },
