@@ -85,15 +85,13 @@ class Article extends Component {
           }}
         />
       ) : null;
-    
-    // const contentData = content.map((item, index) => ({
-    //   ...item,
-    //   elementId: `${item.name}.${index}`
-    // }));
 
-    receiveChildList([{
-      elementId: "related-articles"
-    }]);
+    receiveChildList([
+      {
+        elementId: "related-articles",
+        name: "related articles"
+      }
+    ]);
 
     return (
       <article

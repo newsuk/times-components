@@ -41,7 +41,7 @@ ArticleContent.propTypes = {
     PropTypes.shape({
       data: PropTypes.object.isRequired,
       index: PropTypes.number,
-      type: PropTypes.string.isRequired
+      type: PropTypes.string.isRequired 
     })
   ).isRequired,
   onAuthorPress: PropTypes.func.isRequired,

@@ -5,6 +5,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleHeader from "./article-header/article-header";
@@ -95,11 +96,14 @@ const renderRow = (analyticsStream, width) => (
     case "relatedArticleSlice": {
       const { relatedArticleSlice } = rowData.data;
       return (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          onPress={onRelatedArticlePress}
-          slice={relatedArticleSlice}
-        />
+        <View elementId="related-articles">
+          <RelatedArticles
+            analyticsStream={analyticsStream}
+            id="related-articles"
+            onPress={onRelatedArticlePress}
+            slice={relatedArticleSlice}
+          />
+        </View>
       );
     }
 
@@ -151,7 +155,7 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, refetch, isLoading } = this.props;
+    const { error, refetch, isLoading, receiveChildList } = this.props;
 
     if (error) {
       return <ArticleError refetch={refetch} />;
@@ -160,6 +164,14 @@ class ArticlePage extends Component {
     if (isLoading) {
       return <ArticleLoading />;
     }
+
+    receiveChildList([
+      {
+        elementId: "related-articles",
+        name: "related articles"
+      }
+    ]);
+
     const ArticleListView = (
       <ArticleContent
         data={this.state.dataSource}
@@ -196,4 +208,4 @@ ArticlePage.propTypes = {
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(ArticlePage);
+export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
