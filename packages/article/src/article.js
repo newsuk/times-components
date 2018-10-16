@@ -1,27 +1,18 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
-import { AdComposer } from "@times-components/ad";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
-import ArticleHeader from "./article-header/article-header";
-import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
-import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
-import ArticleError from "./article-error";
-import ArticleLoading from "./article-loading";
-import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
 } from "./article-page-prop-types";
-import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
 import getHeadline from "./utils";
 
@@ -29,7 +20,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = (analyticsStream, width) => (
+const renderRow = (analyticsStream) => (
   rowData,
   onAuthorPress,
   onCommentsPress,

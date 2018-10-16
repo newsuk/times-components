@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Caption from "@times-components/caption";
 import Image from "@times-components/image";
-import AspectRatioContainer from "@times-components/utils";
+import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
 import {

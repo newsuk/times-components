@@ -1,5 +1,3 @@
-import getLeadAsset from "./article-lead-asset/get-lead-asset";
-
 const prepend = ({ data, type }, list) => {
   if (!data) {
     return list;
@@ -29,16 +27,6 @@ const append = ({ data, type }, list) => {
 };
 
 const prepareDataForListView = articleData => {
-  const { isVideo, leadAsset } = getLeadAsset(articleData);
-  const articleHeaderData = {
-    flags: articleData.flags,
-    hasVideo: articleData.hasVideo,
-    headline: articleData.headline,
-    isVideo,
-    label: articleData.label,
-    shortHeadline: articleData.shortHeadline,
-    standfirst: articleData.standfirst
-  };
   const articleMidContainerData = {
     byline: articleData.byline,
     publicationName: articleData.publicationName,
@@ -61,10 +49,6 @@ const prepareDataForListView = articleData => {
   };
 
   const data = [
-    {
-      data: articleHeaderData,
-      type: "header"
-    },
     {
       data: articleMidContainerData,
       type: "middleContainer"
@@ -95,11 +79,6 @@ const prepareDataForListView = articleData => {
   ];
 
   return prepend(
-    {
-      data: leadAsset,
-      type: "leadAsset"
-    },
-    append(
       {
         data: commentsData,
         type: "comments"
