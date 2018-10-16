@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "5.5.0",
+  "version": "5.5.1",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -72,7 +72,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/ad": "2.1.46",
+    "@times-components/ad": "2.1.47",
     "@times-components/article-byline": "3.0.44",
     "@times-components/article-flag": "2.1.43",
     "@times-components/article-image": "4.1.2",
@@ -91,7 +91,7 @@
     "@times-components/markup-forest": "1.0.8",
     "@times-components/provider": "1.6.0",
     "@times-components/pull-quote": "3.2.33",
-    "@times-components/related-articles": "4.3.0",
+    "@times-components/related-articles": "4.3.1",
     "@times-components/styleguide": "3.5.2",
     "@times-components/tracking": "2.1.32",
     "@times-components/utils": "4.0.5",

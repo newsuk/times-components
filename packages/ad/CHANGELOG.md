@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.47"></a>
+## [2.1.47](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.45...@times-components/ad@2.1.47) (2018-10-16)
+
+
+### Bug Fixes
+
+* make platform specific post message ([#1405](https://github.com/newsuk/times-components/issues/1405)) ([276c954](https://github.com/newsuk/times-components/commit/276c954))
+
+
+
+
+
 <a name="2.1.46"></a>
 ## [2.1.46](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.45...@times-components/ad@2.1.46) (2018-10-16)
 

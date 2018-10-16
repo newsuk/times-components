@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.4.21",
+  "version": "0.4.22",
   "license": "BSD-3-Clause",
   "scripts": {
     "build:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output assets/js/index.ios.bundle --assets-dest assets/res/",
@@ -12,7 +12,7 @@
     "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
-    "@times-components/pages": "1.5.51",
+    "@times-components/pages": "1.5.52",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-native": "0.55.4",
