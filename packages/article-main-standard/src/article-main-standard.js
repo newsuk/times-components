@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
@@ -87,7 +87,7 @@ const renderRow = (
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
         />
-      )
+      );
     }
   }
 };
@@ -153,13 +153,13 @@ class ArticlePage extends Component {
 
 ArticlePage.propTypes = {
   ...articlePropTypes,
-  refetch: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
+  onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  refetch: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articleDefaultProps;
 

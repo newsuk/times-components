@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ArticleTopics from "@times-components/article-topics";
 import styles from "./styles";
 
-const ShowTopics = ({ topics, onPress }) => {
+const ShowTopics = ({ onPress, topics }) => {
   if (topics && topics.length > 0) {
     return (
       <View style={styles.topicsContainer}>
@@ -17,13 +17,13 @@ const ShowTopics = ({ topics, onPress }) => {
 };
 
 ShowTopics.propTypes = {
+  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       slug: PropTypes.string.isRequired
     }).isRequired
-  ),
-  onPress: PropTypes.func.isRequired
+  )
 };
 
 ShowTopics.defaultProps = {

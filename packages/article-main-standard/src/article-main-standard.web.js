@@ -49,92 +49,88 @@ class ArticlePage extends Component {
     const {
       analyticsStream,
       data: {
+        byline,
         hasVideo,
         headline,
         flags,
-        standfirst,
         label,
-        byline,
-        publishedTime,
         publicationName,
-        content,
+        publishedTime,
         section,
-        url,
+        standfirst,
         topics,
-        relatedArticleSlice
+        url
       },
       observed,
       onAuthorPress,
-      onRelatedArticlePress,
       onTopicPress,
       registerNode
     } = this.props;
     const leadAssetProps = getLeadAsset(this.props.data);
 
-  return (
-  <article
-    ref={node => {
-      this.node = node;
-    }}
-  >
-    <HeaderAdContainer key="headerAd">
-        <Ad
-          contextUrl={url}
-          section={section}
-          slotName="header"
-          style={adStyle}
-        />
-      </HeaderAdContainer>
-      <MainContainer>
-        <header>
-        <HeaderContainer>
-            <ArticleHeader
-              flags={flags}
-              hasVideo={hasVideo}
-              headline={headline}
-              label={label}
-              standfirst={standfirst}
-            />
-          </HeaderContainer>
-          <MetaContainer>
-            <ArticleMeta
-              byline={byline}
-              onAuthorPress={onAuthorPress}
-              publicationName={publicationName}
-              publishedTime={publishedTime}
-            />
-            <ArticleTopics
-              device="DESKTOP"
-              onPress={onTopicPress}
-              topics={topics}
-            />
-          </MetaContainer>
-          <LeadAssetContainer>
-            <LeadAssetComponent
-              {...leadAssetProps}
-              width={this.state.articleWidth}
-            />
-          </LeadAssetContainer>
-        </header>
-        <Article
-          analyticsStream={analyticsStream}
-          data={this.props.data}
-          observed={observed}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          registerNode={registerNode}
-        />
-        <Ad contextUrl={url} section={section} slotName="pixel" />
-        <Ad contextUrl={url} section={section} slotName="pixelteads" />
-        <Ad contextUrl={url} section={section} slotName="pixelskin" />
-    </MainContainer>
-  </article>
-);
+    return (
+      <article
+        ref={node => {
+          this.node = node;
+        }}
+      >
+        <HeaderAdContainer key="headerAd">
+          <Ad
+            contextUrl={url}
+            section={section}
+            slotName="header"
+            style={adStyle}
+          />
+        </HeaderAdContainer>
+        <MainContainer>
+          <header>
+            <HeaderContainer>
+              <ArticleHeader
+                flags={flags}
+                hasVideo={hasVideo}
+                headline={headline}
+                label={label}
+                standfirst={standfirst}
+              />
+            </HeaderContainer>
+            <MetaContainer>
+              <ArticleMeta
+                byline={byline}
+                onAuthorPress={onAuthorPress}
+                publicationName={publicationName}
+                publishedTime={publishedTime}
+              />
+              <ArticleTopics
+                device="DESKTOP"
+                onPress={onTopicPress}
+                topics={topics}
+              />
+            </MetaContainer>
+            <LeadAssetContainer>
+              <LeadAssetComponent
+                {...leadAssetProps}
+                width={this.state.articleWidth}
+              />
+            </LeadAssetContainer>
+          </header>
+          <Article
+            analyticsStream={analyticsStream}
+            data={this.props.data}
+            observed={observed}
+            onTopicPress={onTopicPress}
+            registerNode={registerNode}
+          />
+          <Ad contextUrl={url} section={section} slotName="pixel" />
+          <Ad contextUrl={url} section={section} slotName="pixelteads" />
+          <Ad contextUrl={url} section={section} slotName="pixelskin" />
+        </MainContainer>
+      </article>
+    );
   }
 }
 
-  ArticlePage.propTypes = articlePropTypes;
-  ArticlePage.defaultProps = articleDefaultProps;
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
 const ArticleMainStandard = ({
   adConfig,
@@ -143,7 +139,6 @@ const ArticleMainStandard = ({
   error,
   isLoading,
   onAuthorPress,
-  onRelatedArticlePress,
   onTopicPress
 }) => {
   if (error) {
@@ -170,7 +165,7 @@ const ArticleMainStandard = ({
       </LazyLoad>
     </AdComposer>
   );
-}
+};
 
 ArticleMainStandard.propTypes = articlePagePropTypes;
 ArticleMainStandard.defaultProps = articlePageDefaultProps;
