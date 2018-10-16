@@ -4,7 +4,7 @@
 /* eslint-env browser */
 
 const webviewEventCallbackSetup = options => {
-  const { window, os } = options;
+  const { os, window } = options;
 
   // Enqueue window messages until it's ready - See https://github.com/facebook/react-native/issues/11594#issuecomment-274689549 for details
   let isReactNativePostMessageReady = !!window.originalPostMessage;

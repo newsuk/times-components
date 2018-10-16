@@ -111,7 +111,7 @@ export default () => {
 
   it("posts a message to reactBridgePostMessage instead of postMessage on ios", () => {
     window.reactBridgePostMessage = jest.fn();
-    webviewEventCallbackSetup({ window, os: "ios" });
+    webviewEventCallbackSetup({ os: "ios", window });
     window.console.error("a");
     jest.runAllTimers();
     expect(window.reactBridgePostMessage).toHaveBeenCalled();
