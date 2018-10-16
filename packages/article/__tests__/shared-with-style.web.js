@@ -52,97 +52,97 @@ export default () => {
       ...testFixture,
       content: [
         {
-          name: "image",
           attributes: {
+            caption: "An image caption",
+            credits: "The image credits",
             display: "primary",
             ratio: "1500:1000",
-            url: "https://image.io",
-            caption: "An image caption",
-            credits: "The image credits"
+            url: "https://image.io"
           },
-          children: []
+          children: [],
+          name: "image"
         },
         {
-          name: "link",
           attributes: {
             href: "https://link.io",
             target: "_blank"
           },
           children: [
             {
-              name: "text",
               attributes: {
                 value: "Some Link"
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "link"
         },
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: "Some content"
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         },
         {
-          name: "pullQuote",
           attributes: {
-            content: "A pull quote",
             caption: {
               name: "AName",
               twitter: "@AName"
-            }
+            },
+            content: "A pull quote"
           },
-          children: []
+          children: [],
+          name: "pullQuote"
         },
         {
-          name: "video",
           attributes: {
-            display: "primary",
-            posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            brightcoveVideoId: "4084164751001",
-            brightcovePolicyKey: "1.2.3.4",
             brightcoveAccountId: "57838016001",
-            paidOnly: "false",
-            skySports: false,
+            brightcovePolicyKey: "1.2.3.4",
+            brightcoveVideoId: "4084164751001",
             caption: "This is video caption",
-            posterImageUrl: "https://image.io"
+            display: "primary",
+            paidOnly: "false",
+            posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+            posterImageUrl: "https://image.io",
+            skySports: false
           },
-          children: []
+          children: [],
+          name: "video"
         },
         {
-          name: "ad",
           attributes: {},
-          children: []
+          children: [],
+          name: "ad"
         },
         {
-          name: "image",
           attributes: {
+            caption: "A Caption",
+            credits: "Some Credits",
             display: "secondary",
             ratio: "3:2",
-            url: "https://image-2.io",
-            caption: "A Caption",
-            credits: "Some Credits"
+            url: "https://image-2.io"
           },
-          children: []
+          children: [],
+          name: "image"
         },
         {
-          name: "image",
           attributes: {
+            caption: "A Caption",
+            credits: "Some Credits",
             display: "inline",
             ratio: "9:4",
-            url: "https://image-inline.io",
-            caption: "A Caption",
-            credits: "Some Credits"
+            url: "https://image-inline.io"
           },
-          children: []
+          children: [],
+          name: "image"
         }
       ]
     });

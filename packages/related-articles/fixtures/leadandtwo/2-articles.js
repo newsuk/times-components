@@ -6,98 +6,98 @@ const defaultFirstLabel = "leading article";
 const defaultFirstSection = "thedish";
 const defaultFirstSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstTitle =
@@ -115,155 +115,155 @@ const defaultSecondTitle =
 const defaultSecondSection = "sport";
 const defaultSecondSummary105 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary125 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary145 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
-    children: []
+    children: [],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary160 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "However, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary175 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "However, the funding crisis that"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary225 = [
   {
-    name: "paragraph",
     attributes: {
       class: "dropcap@1"
     },
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "However, the funding crisis that is gripping the armed forces today is an"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondUrl =
@@ -301,33 +301,32 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "LeadOneAndTwoSlice",
       lead: {
         article: {
           byline: [
             {
-              name: "inline",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: "Deborah Haynes"
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "inline"
             }
           ],
           headline: firstHeadline,
+          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
           label: firstLabel,
           leadAsset: {
-            title: firstTitle,
             crop169: {
               url: firstCrop169
-            }
+            },
+            title: firstTitle
           },
-          id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
           publicationName: "TIMES",
           publishedTime: "2015-03-13T18:54:58.000Z",
           section: firstSection,
@@ -341,40 +340,41 @@ export default (
           url: firstUrl
         }
       },
+      sliceName: "LeadOneAndTwoSlice",
       support1: {
         article: {
           byline: [
             {
-              name: "inline",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: "Deborah Haynes"
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "inline"
             }
           ],
           headline: secondHeadline,
           id: "e121aac6-d15d-11e7-b1ec-8503a5941b97",
           label: secondLabel,
           leadAsset: {
-            title: secondTitle,
             crop169: {
               url: secondCrop169
-            }
+            },
+            title: secondTitle
           },
           publishedTime: "2018-01-17T12:00:00.000Z",
           section: secondSection,
           shortHeadline: secondShortHeadline,
           summary105: [
             {
-              name: "paragraph",
               attributes: {},
-              children: secondSummary105
+              children: secondSummary105,
+              name: "paragraph"
             }
           ],
           summary125: secondSummary125,

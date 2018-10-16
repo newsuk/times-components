@@ -5,8 +5,8 @@ module.exports = {
   coverageDirectory: `packages/jest-serializer/coverage/web`,
   moduleFileExtensions: ["web.js", "js", "json"],
   moduleNameMapper: {
-    "^react-native$": "react-native-web",
-    "\\.(png)$": "identity-obj-proxy"
+    "\\.(png)$": "identity-obj-proxy",
+    "^react-native$": "react-native-web"
   },
   preset: "react-native",
   rootDir: "../../",

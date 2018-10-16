@@ -31,13 +31,13 @@ class TimesImage extends Component {
       : addMissingProtocol(appendSize(uri, "resize", highResSize));
 
     const props = {
-      style: styles.imageBackground,
       onLoad: this.handleLoad,
       source: srcUri
         ? {
             uri: srcUri
           }
-        : null
+        : null,
+      style: styles.imageBackground
     };
 
     return (

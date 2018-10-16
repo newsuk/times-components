@@ -107,6 +107,6 @@ const print = (printer, transformElement) => (node, serialize) => {
 };
 
 module.exports = (printer, transformElement) => ({
-  test,
-  print: print(printer, transformElement)
+  print: print(printer, transformElement),
+  test
 });

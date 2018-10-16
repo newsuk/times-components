@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 import cropPropTypes from "./crop-prop-types";
 
 export const articleLeadAssetVideoPropTypes = {
-  brightcoveVideoId: PropTypes.string.isRequired,
-  brightcovePolicyKey: PropTypes.string.isRequired,
   brightcoveAccountId: PropTypes.string.isRequired,
-  posterImage: PropTypes.shape({
-    crop169: cropPropTypes,
-    crop32: cropPropTypes
-  }).isRequired,
+  brightcovePolicyKey: PropTypes.string.isRequired,
+  brightcoveVideoId: PropTypes.string.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  posterImage: PropTypes.shape({
+    crop32: cropPropTypes,
+    crop169: cropPropTypes
+  }).isRequired,
   skySports: PropTypes.bool
 };
 

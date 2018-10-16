@@ -7,20 +7,20 @@ const styles = {
     alignItems: "center",
     flexDirection: "row"
   },
+  iconContainer: {
+    paddingBottom: 2
+  },
   title: {
-    top: 2,
     ...fontFactory({
       font: "supporting",
       fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
     letterSpacing: 1.2,
-    padding: 0,
     marginLeft: 5,
-    position: "relative"
-  },
-  iconContainer: {
-    paddingBottom: 2
+    padding: 0,
+    position: "relative",
+    top: 2
   }
 };
 

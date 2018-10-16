@@ -2,42 +2,29 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const styles = {
-  loadingContainer: {
-    paddingVertical: spacing(5)
+  listEmptyMessage: {
+    color: colours.functional.secondary,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoTitle"
+    }),
+    marginHorizontal: spacing(8),
+    marginTop: spacing(12),
+    textAlign: "center"
   },
-  paginationContainer: {
-    alignItems: "stretch",
-    flexDirection: "row",
-    justifyContent: "center"
+  listEmptyStateContainer: {
+    flex: 1
   },
-  paginationSpacing: {
-    maxWidth: 760
-  },
-  listItemContainer: {
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(2)
-  },
-  listItemSeparatorContainer: {
-    paddingHorizontal: spacing(2)
-  },
-  listItemSeparator: {
-    backgroundColor: colours.functional.keyline,
-    height: 1
-  },
-  showMoreRetryContainer: {
-    alignSelf: "center",
-    padding: spacing(5),
-    width: "100%"
+  listEmptyWatermarkContainer: {
+    bottom: 0,
+    position: "absolute",
+    right: 0
   },
   listErrorContainer: {
     height: "100%",
     justifyContent: "space-between",
     marginHorizontal: spacing(2),
     paddingVertical: spacing(2)
-  },
-  listErrorImageContainer: {
-    alignSelf: "center",
-    marginVertical: spacing(4)
   },
   listErrorHeading: {
     alignSelf: "center",
@@ -49,6 +36,10 @@ const styles = {
     marginBottom: spacing(2),
     textAlign: "center"
   },
+  listErrorImageContainer: {
+    alignSelf: "center",
+    marginVertical: spacing(4)
+  },
   listErrorMessage: {
     color: colours.functional.secondary,
     ...fontFactory({
@@ -57,23 +48,32 @@ const styles = {
     }),
     textAlign: "center"
   },
-  listEmptyStateContainer: {
-    flex: 1
+  listItemContainer: {
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(2)
   },
-  listEmptyMessage: {
-    color: colours.functional.secondary,
-    ...fontFactory({
-      font: "bodyRegular",
-      fontSize: "infoTitle"
-    }),
-    marginHorizontal: spacing(8),
-    marginTop: spacing(12),
-    textAlign: "center"
+  listItemSeparator: {
+    backgroundColor: colours.functional.keyline,
+    height: 1
   },
-  listEmptyWatermarkContainer: {
-    bottom: 0,
-    position: "absolute",
-    right: 0
+  listItemSeparatorContainer: {
+    paddingHorizontal: spacing(2)
+  },
+  loadingContainer: {
+    paddingVertical: spacing(5)
+  },
+  paginationContainer: {
+    alignItems: "stretch",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  paginationSpacing: {
+    maxWidth: 760
+  },
+  showMoreRetryContainer: {
+    alignSelf: "center",
+    padding: spacing(5),
+    width: "100%"
   }
 };
 

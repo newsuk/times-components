@@ -1,29 +1,29 @@
 import getStandardTemplateCrop from "../src/article-lead-asset/crop-config";
 
 const leadAsset = {
-  crop169: {
-    ratio: "16:9",
-    url: "https://crop169.io/"
+  crop11: {
+    ratio: "1:1",
+    url: "https://crop11.io/"
+  },
+  crop23: {
+    ratio: "2:3",
+    url: "https://crop23.io/"
   },
   crop32: {
     ratio: "3:2",
     url: "https://crop32.io/"
   },
-  crop1251: {
-    ratio: "1.25:1",
-    url: "https://crop1251.io/"
-  },
-  crop11: {
-    ratio: "1:1",
-    url: "https://crop11.io/"
-  },
   crop45: {
     ratio: "4:5",
     url: "https://crop45.io/"
   },
-  crop23: {
-    ratio: "2:3",
-    url: "https://crop23.io/"
+  crop169: {
+    ratio: "16:9",
+    url: "https://crop169.io/"
+  },
+  crop1251: {
+    ratio: "1.25:1",
+    url: "https://crop1251.io/"
   }
 };
 
@@ -39,15 +39,19 @@ export default () => {
     });
 
     it("return the 1.25:1 crop", () => {
-      const leadAssetNo32 = { ...leadAsset, crop169: null, crop32: null };
+      const leadAssetNo32 = {
+        ...leadAsset,
+        crop32: null,
+        crop169: null
+      };
       expect(getStandardTemplateCrop(leadAssetNo32).ratio).toEqual("1.25:1");
     });
 
     it("return the 1:1 crop", () => {
       const leadAssetNo1251 = {
         ...leadAsset,
-        crop169: null,
         crop32: null,
+        crop169: null,
         crop1251: null
       };
       expect(getStandardTemplateCrop(leadAssetNo1251).ratio).toEqual("1:1");
@@ -56,10 +60,10 @@ export default () => {
     it("return the 4:5 crop", () => {
       const leadAssetNo11 = {
         ...leadAsset,
-        crop169: null,
+        crop11: null,
         crop32: null,
-        crop1251: null,
-        crop11: null
+        crop169: null,
+        crop1251: null
       };
       expect(getStandardTemplateCrop(leadAssetNo11).ratio).toEqual("4:5");
     });
@@ -67,11 +71,11 @@ export default () => {
     it("return the 2:3 crop", () => {
       const leadAssetNo23 = {
         ...leadAsset,
-        crop169: null,
-        crop32: null,
-        crop1251: null,
         crop11: null,
-        crop45: null
+        crop32: null,
+        crop45: null,
+        crop169: null,
+        crop1251: null
       };
       expect(getStandardTemplateCrop(leadAssetNo23).ratio).toEqual("2:3");
     });

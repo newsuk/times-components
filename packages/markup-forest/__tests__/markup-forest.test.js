@@ -18,17 +18,17 @@ iterator([
         renderTree(
           [
             {
-              name: "bold",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: "some text here"
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "bold"
             }
           ],
           {}

@@ -8,8 +8,8 @@ const fullArticleFixture = require("./fixtures/full-article.js");
 const props = {
   ...fullArticleFixture.data,
   analyticsStream: () => {},
-  isLoading: false,
-  fructoseID: "defaultArticle"
+  fructoseID: "defaultArticle",
+  isLoading: false
 };
 withComponent(
   <Article {...props} />,

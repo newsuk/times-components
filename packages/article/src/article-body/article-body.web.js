@@ -46,11 +46,6 @@ const renderers = ({ observed, registerNode }) => ({
       )
     };
   },
-  paragraph(key, attributes, children) {
-    return {
-      element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
-    };
-  },
   dropCap(key, { value }) {
     return {
       element: (
@@ -93,6 +88,54 @@ const renderers = ({ observed, registerNode }) => ({
       )
     };
   },
+  interactive(key, { url, element }) {
+    const { attributes, value } = element;
+    return {
+      element: (
+        <InteractiveContainer key={key}>
+          <InteractiveWrapper
+            attributes={attributes}
+            element={value}
+            key={key}
+            source={url}
+          />
+        </InteractiveContainer>
+      )
+    };
+  },
+  keyFacts(key, attributes, renderedChildren, indx, node) {
+    return {
+      element: <KeyFacts ast={node} key={key} />,
+      shouldRenderChildren: false
+    };
+  },
+  link(key, attributes, children) {
+    const { href, target } = attributes;
+
+    return {
+      element: (
+        <ArticleLink key={key} target={target} url={href}>
+          {children}
+        </ArticleLink>
+      )
+    };
+  },
+  paragraph(key, attributes, children) {
+    return {
+      element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
+    };
+  },
+  pullQuote(key, { content, caption: { name, twitter } }) {
+    return {
+      element: (
+        <PullQuoteContainer key={key}>
+          <PullQuoteResp>
+            <PullQuote caption={name} content={content} twitter={twitter} />
+          </PullQuoteResp>
+        </PullQuoteContainer>
+      )
+    };
+  },
   video(
     key,
     {
@@ -127,49 +170,6 @@ const renderers = ({ observed, registerNode }) => ({
         </MediaWrapper>
       )
     };
-  },
-  pullQuote(key, { content, caption: { name, twitter } }) {
-    return {
-      element: (
-        <PullQuoteContainer key={key}>
-          <PullQuoteResp>
-            <PullQuote caption={name} content={content} twitter={twitter} />
-          </PullQuoteResp>
-        </PullQuoteContainer>
-      )
-    };
-  },
-  keyFacts(key, attributes, renderedChildren, indx, node) {
-    return {
-      element: <KeyFacts ast={node} key={key} />,
-      shouldRenderChildren: false
-    };
-  },
-  link(key, attributes, children) {
-    const { href, target } = attributes;
-
-    return {
-      element: (
-        <ArticleLink key={key} target={target} url={href}>
-          {children}
-        </ArticleLink>
-      )
-    };
-  },
-  interactive(key, { url, element }) {
-    const { attributes, value } = element;
-    return {
-      element: (
-        <InteractiveContainer key={key}>
-          <InteractiveWrapper
-            attributes={attributes}
-            element={value}
-            key={key}
-            source={url}
-          />
-        </InteractiveContainer>
-      )
-    };
   }
 });
 
@@ -198,8 +198,8 @@ ArticleBody.propTypes = {
       name: PropTypes.string
     })
   ).isRequired,
-  section: PropTypes.string,
-  contextUrl: PropTypes.string.isRequired
+  contextUrl: PropTypes.string.isRequired,
+  section: PropTypes.string
 };
 
 export default ArticleBody;

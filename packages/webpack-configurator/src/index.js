@@ -1,4 +1,10 @@
 import { readFile, exists } from "fs-extra";
 import create from "./configurator";
 
-module.exports = create({ readFile, exists }, require.resolve);
+module.exports = create(
+  {
+    exists,
+    readFile
+  },
+  require.resolve
+);

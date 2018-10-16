@@ -149,9 +149,9 @@ export default () => {
     const adsSlot = [{ code: "ad-header", sizes: [[970, 250], [970, 90]] }];
     const amazonSlotConfig = [
       {
+        sizes: [[970, 250], [970, 90]],
         slotID: "ad-header",
-        slotName: "/3048/d.thetimes.co.uk",
-        sizes: [[970, 250], [970, 90]]
+        slotName: "/3048/d.thetimes.co.uk"
       }
     ];
     expect(

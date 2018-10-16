@@ -4,7 +4,15 @@ import { View, Text } from "react-native";
 import styles from "./styles";
 
 const VideoError = ({ height, width }) => (
-  <View style={[styles.background, { width, height }]}>
+  <View
+    style={[
+      styles.background,
+      {
+        height,
+        width
+      }
+    ]}
+  >
     <Text style={styles.heading}>Video unable to play</Text>
     <Text style={styles.body}>
       Please check your network connection and try refreshing the page. If that

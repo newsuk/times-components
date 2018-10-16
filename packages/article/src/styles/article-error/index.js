@@ -11,12 +11,8 @@ export default StyleSheet.create({
     height: "100%",
     justifyContent: "space-between",
     marginHorizontal: spacing(2),
-    paddingTop: spacing(2),
-    paddingBottom: spacing(14)
-  },
-  errorImageContainer: {
-    alignSelf: "center",
-    marginVertical: spacing(4)
+    paddingBottom: spacing(14),
+    paddingTop: spacing(2)
   },
   errorHeading: {
     alignSelf: "center",
@@ -26,6 +22,10 @@ export default StyleSheet.create({
     marginBottom: spacing(2),
     marginHorizontal: spacing(8),
     textAlign: "center"
+  },
+  errorImageContainer: {
+    alignSelf: "center",
+    marginVertical: spacing(4)
   },
   errorMessage: {
     color: colours.functional.secondary,

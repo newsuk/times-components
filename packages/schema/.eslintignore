@@ -1,3 +1,5 @@
+fragment-matcher.js
+fetch-gql-schema.test.js
 **/node_modules/*
 **/coverage/*
 rnw.js

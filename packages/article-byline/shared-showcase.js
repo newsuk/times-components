@@ -31,11 +31,8 @@ const getProps = (selectV2, decorateAction) => ({
 });
 
 export default (Component, name) => ({
-  name,
   children: [
     {
-      type: "story",
-      name: "Article Byline with a single author",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -43,11 +40,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with a single author",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline with a text only element",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -55,11 +52,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with a text only element",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline with multiple authors",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -67,11 +64,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with multiple authors",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline with author in the beginning",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -79,11 +76,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with author in the beginning",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline with author at the end",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -91,11 +88,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with author at the end",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline with styles",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -104,11 +101,11 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline with styles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article Byline that is impossibly long",
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
@@ -116,7 +113,10 @@ export default (Component, name) => ({
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
-      )
+      ),
+      name: "Article Byline that is impossibly long",
+      type: "story"
     }
-  ]
+  ],
+  name
 });

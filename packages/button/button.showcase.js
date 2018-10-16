@@ -20,14 +20,14 @@ const getProps = (decorateAction, knobs) => {
 };
 
 export default {
-  name: "Primitives/Button",
   children: [
     {
-      type: "story",
-      name: "Button",
       component: ({ number, text }, { decorateAction }) => (
         <Button {...getProps(decorateAction, { number, text })} />
-      )
+      ),
+      name: "Button",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Button"
 };

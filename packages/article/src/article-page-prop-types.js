@@ -16,16 +16,16 @@ const articlePagePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
-  pageSection: PropTypes.string,
   onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired
+  onTopicPress: PropTypes.func.isRequired,
+  pageSection: PropTypes.string
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
-  pageSection: null,
-  isLoading: false
+  isLoading: false,
+  pageSection: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

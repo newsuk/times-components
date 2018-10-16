@@ -10,10 +10,10 @@ class DOMContext extends Component {
     this.hasUnmounted = false;
 
     this.adInit = init({
+      data,
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
-      data,
       window
     });
 
@@ -34,7 +34,10 @@ class DOMContext extends Component {
   eventQueue = [];
 
   eventCallback = (type, detail) => {
-    this.eventQueue.push({ type, detail });
+    this.eventQueue.push({
+      detail,
+      type
+    });
     this.processEventQueue();
   };
 

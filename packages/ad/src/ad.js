@@ -68,22 +68,22 @@ class Ad extends Component {
     );
 
     const data = {
+      adUnit: adConfig.adUnit,
       config: this.state.config,
+      contextUrl,
+      networkId: adConfig.networkId,
+      pageTargeting: adConfig.pageTargeting,
       prebidConfig: Object.assign(this.prebidConfig, {
         bidders: adConfig.biddersConfig.bidders,
-        timeout: adConfig.biddersConfig.timeout,
-        minPrice: adConfig.biddersConfig.minPrice,
+        bucketSize: adConfig.biddersConfig.bucketSize,
         maxBid: adConfig.biddersConfig.maxBid,
-        bucketSize: adConfig.biddersConfig.bucketSize
+        minPrice: adConfig.biddersConfig.minPrice,
+        timeout: adConfig.biddersConfig.timeout
       }),
-      slots: this.slots,
-      slotName,
-      networkId: adConfig.networkId,
-      adUnit: adConfig.adUnit,
-      contextUrl,
       section,
       sizingMap: this.state.config.mappings,
-      pageTargeting: adConfig.pageTargeting,
+      slotName,
+      slots: this.slots,
       slotTargeting: adConfig.slotTargeting
     };
 

@@ -17,103 +17,103 @@ export default (
     <ArticleSummaryContent
       ast={[
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "bold",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: review1Title
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "bold"
             },
             {
-              name: "break",
               attributes: {},
-              children: []
+              children: [],
+              name: "break"
             },
             {
-              name: "text",
               attributes: {
                 value: " ITV"
               },
-              children: []
+              children: [],
+              name: "text"
             },
             {
-              name: "break",
               attributes: {},
-              children: []
+              children: [],
+              name: "break"
             },
             {
-              name: "text",
               attributes: {
                 value: "★★★★☆"
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         },
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "bold",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: review2Title
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "bold"
             },
             {
-              name: "break",
               attributes: {},
-              children: []
+              children: [],
+              name: "break"
             },
             {
-              name: "text",
               attributes: {
                 value: " BBC Two"
               },
-              children: []
+              children: [],
+              name: "text"
             },
             {
-              name: "break",
               attributes: {},
-              children: []
+              children: [],
+              name: "break"
             },
             {
-              name: "text",
               attributes: {
                 value: "★★★☆☆"
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         },
         {
-          name: "paragraph",
           attributes: {},
           children: [
             {
-              name: "text",
               attributes: {
                 value: paragraph
               },
-              children: []
+              children: [],
+              name: "text"
             }
-          ]
+          ],
+          name: "paragraph"
         }
       ]}
     />

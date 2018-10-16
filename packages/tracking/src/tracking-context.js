@@ -73,9 +73,9 @@ const withTrackingContext = (
         this.pageEventTriggered = true;
 
         this.fireAnalyticsEvent({
-          component: "Page",
           action: "Viewed",
-          attrs: resolveAttrs(getAttrs, props)
+          attrs: resolveAttrs(getAttrs, props),
+          component: "Page"
         });
       }
     }
@@ -87,12 +87,12 @@ const withTrackingContext = (
       attrs
     }: AnalyticsEventObjectType) => {
       const decoratedEvent = {
-        component,
         action,
         attrs: {
           ...resolveAttrs(getAttrs, this.props),
           ...attrs
         },
+        component,
         object: trackingObjectName
       };
 

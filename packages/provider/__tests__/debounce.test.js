@@ -15,12 +15,12 @@ describe("Debounce", () => {
     const Outer = withDebounce(Inner);
     const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
     expect(component.find("Inner").props()).toEqual({
-      foo: "initialFoo",
-      debounceTimeMs: 1000,
       debouncedProps: {
-        foo: "initialFoo",
-        debounceTimeMs: 1000
+        debounceTimeMs: 1000,
+        foo: "initialFoo"
       },
+      debounceTimeMs: 1000,
+      foo: "initialFoo",
       isDebouncing: false
     });
   });
@@ -30,12 +30,12 @@ describe("Debounce", () => {
     const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
     component.setProps({ foo: "initialFoo" });
     expect(component.find("Inner").props()).toEqual({
-      foo: "initialFoo",
-      debounceTimeMs: 1000,
       debouncedProps: {
-        foo: "initialFoo",
-        debounceTimeMs: 1000
+        debounceTimeMs: 1000,
+        foo: "initialFoo"
       },
+      debounceTimeMs: 1000,
+      foo: "initialFoo",
       isDebouncing: false
     });
   });
@@ -101,10 +101,10 @@ describe("Debounce", () => {
     const InnerWithStatics = props => props.foo;
     InnerWithStatics.staticMember = "staticMemberValue";
     InnerWithStatics.propTypes = {
-      foo: PropTypes.string,
       debouncedProps: PropTypes.shape({
         foo: PropTypes.string
-      }).isRequired
+      }).isRequired,
+      foo: PropTypes.string
     };
     InnerWithStatics.defaultProps = {
       foo: ""
@@ -115,8 +115,8 @@ describe("Debounce", () => {
     expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
     expect(Outer.staticMember).toEqual("staticMemberValue");
     expect(Outer.propTypes).toEqual({
-      foo: PropTypes.string,
-      debounceTimeMs: PropTypes.number.isRequired
+      debounceTimeMs: PropTypes.number.isRequired,
+      foo: PropTypes.string
     }); // debounceTimeMs removed
     expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
   });

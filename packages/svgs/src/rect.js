@@ -34,21 +34,21 @@ const Rect = ({
 };
 
 Rect.propTypes = {
+  fill: PropTypes.string,
+  fillOpacity: PropTypes.string,
+  height: PropTypes.string.isRequired,
   stroke: PropTypes.string,
   strokeWidth: PropTypes.string,
-  fill: PropTypes.string,
-  x: PropTypes.string.isRequired,
-  y: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  fillOpacity: PropTypes.string
+  x: PropTypes.string.isRequired,
+  y: PropTypes.string.isRequired
 };
 
 Rect.defaultProps = {
-  stroke: null,
-  strokeWidth: null,
   fill: null,
-  fillOpacity: null
+  fillOpacity: null,
+  stroke: null,
+  strokeWidth: null
 };
 
 export default Rect;

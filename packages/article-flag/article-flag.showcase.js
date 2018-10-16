@@ -7,32 +7,32 @@ import ArticleFlag, {
 } from "./src/article-flag";
 
 export default {
-  name: "Primitives/Article Flag",
   children: [
     {
-      type: "story",
+      component: () => <ArticleFlag title="Default" />,
       name: "Article Flag (Default)",
-      component: () => <ArticleFlag title="Default" />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <NewArticleFlag />,
       name: "Article Flag (New)",
-      component: () => <NewArticleFlag />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <UpdatedArticleFlag />,
       name: "Article Flag (Updated)",
-      component: () => <UpdatedArticleFlag />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <ExclusiveArticleFlag />,
       name: "Article Flag (Exclusive)",
-      component: () => <ExclusiveArticleFlag />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <SponsoredArticleFlag />,
       name: "Article Flag (Sponsored)",
-      component: () => <SponsoredArticleFlag />
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Article Flag"
 };

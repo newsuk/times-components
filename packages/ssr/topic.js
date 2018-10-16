@@ -19,10 +19,10 @@ module.exports = (client, slug, page) =>
         React.createElement(Topic, {
           adConfig: {},
           analyticsStream: () => {},
-          isLoading,
           error,
-          onTwitterLinkPress: () => {},
+          isLoading,
           onArticlePress: () => {},
+          onTwitterLinkPress: () => {},
           page,
           refetch,
           slug,

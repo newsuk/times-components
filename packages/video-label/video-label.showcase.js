@@ -5,11 +5,8 @@ import invert from "lodash.invert";
 import VideoLabel from "./src/video-label";
 
 export default {
-  name: "Primitives/Video Label",
   children: [
     {
-      type: "story",
-      name: "Without title",
       component: ({ select }) => (
         <VideoLabel
           color={select(
@@ -18,11 +15,11 @@ export default {
             colours.section.default
           )}
         />
-      )
+      ),
+      name: "Without title",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With title",
       component: ({ select }) => (
         <VideoLabel
           color={select(
@@ -32,7 +29,10 @@ export default {
           )}
           title="swimming"
         />
-      )
+      ),
+      name: "With title",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Video Label"
 };

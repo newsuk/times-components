@@ -22,8 +22,8 @@ import Ad, { AdComposer } from "../../src/ad";
 
 jest.mock("../../src/utils/ad-init");
 adInit.mockImplementation(() => ({
-  init: () => {},
-  destroySlots: () => {}
+  destroySlots: () => {},
+  init: () => {}
 }));
 
 const props = {

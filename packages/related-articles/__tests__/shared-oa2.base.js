@@ -13,7 +13,6 @@ import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles"
 
 const opinionAndTwo0ArticleFixtureData = opinionAndTwo0ArticleFixture.data;
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
-  url: "https://test.io",
   crop23: "https://crop23.io",
   crop169: "https://crop169.io",
   headline: "Test Headline",
@@ -23,17 +22,18 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   summary125: testSummary(125),
   summary145: testSummary(145),
   summary160: testSummary(160),
-  summary225: testSummary(225)
+  summary225: testSummary(225),
+  url: "https://test.io"
 }).data;
 
 const opinionAndTwoNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({

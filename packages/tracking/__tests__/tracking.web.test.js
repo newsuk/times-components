@@ -14,9 +14,11 @@ class FakeIntersectionObserver {
   static dispatchObservedAll() {
     this.observationCallback(
       this.observing.map(element => ({
-        isIntersecting: true,
         intersectionRatio: 1,
-        target: { id: element.id }
+        isIntersecting: true,
+        target: {
+          id: element.id
+        }
       }))
     );
   }
@@ -108,9 +110,21 @@ module.exports = () => {
         <ListWithChildTracking
           analyticsStream={reporter}
           items={[
-            { someKey: "1", someValue: "one", elementId: 1 },
-            { someKey: "2", someValue: "two", elementId: 2 },
-            { someKey: "3", someValue: "three", elementId: 3 }
+            {
+              elementId: 1,
+              someKey: "1",
+              someValue: "one"
+            },
+            {
+              elementId: 2,
+              someKey: "2",
+              someValue: "two"
+            },
+            {
+              elementId: 3,
+              someKey: "3",
+              someValue: "three"
+            }
           ]}
         />
       );
@@ -128,9 +142,21 @@ module.exports = () => {
       );
 
       const items = [
-        { someKey: "1", someValue: "one", elementId: 1 },
-        { someKey: "2", someValue: "two", elementId: 2 },
-        { someKey: "3", someValue: "three", elementId: 3 }
+        {
+          elementId: 1,
+          someKey: "1",
+          someValue: "one"
+        },
+        {
+          elementId: 2,
+          someKey: "2",
+          someValue: "two"
+        },
+        {
+          elementId: 3,
+          someKey: "3",
+          someValue: "three"
+        }
       ];
 
       const component = mount(
@@ -140,7 +166,14 @@ module.exports = () => {
       FakeIntersectionObserver.dispatchObservedAll();
 
       component.setProps({
-        items: [...items, { someKey: "4", someValue: "four", elementId: 4 }]
+        items: [
+          ...items,
+          {
+            elementId: 4,
+            someKey: "4",
+            someValue: "four"
+          }
+        ]
       });
 
       FakeIntersectionObserver.dispatchObservedAll();
@@ -159,7 +192,13 @@ module.exports = () => {
       renderer.create(
         <ListWithChildTracking
           analyticsStream={reporter}
-          items={[{ someKey: "1", someValue: "one", elementId: 1 }]}
+          items={[
+            {
+              elementId: 1,
+              someKey: "1",
+              someValue: "one"
+            }
+          ]}
         />
       );
 
@@ -212,8 +251,16 @@ module.exports = () => {
         <ListWithChildTracking
           analyticsStream={reporter}
           items={[
-            { someKey: "1", someValue: "one", elementId: 1 },
-            { someKey: "2", someValue: "two", elementId: 2 }
+            {
+              elementId: 1,
+              someKey: "1",
+              someValue: "one"
+            },
+            {
+              elementId: 2,
+              someKey: "2",
+              someValue: "two"
+            }
           ]}
         />
       );
@@ -294,8 +341,16 @@ module.exports = () => {
           <ListWithChildTracking
             analyticsStream={() => {}}
             items={[
-              { someKey: "1", someValue: "one", elementId: 1 },
-              { someKey: "2", someValue: "two", elementId: 2 }
+              {
+                elementId: 1,
+                someKey: "1",
+                someValue: "one"
+              },
+              {
+                elementId: 2,
+                someKey: "2",
+                someValue: "two"
+              }
             ]}
           />
         );
@@ -316,8 +371,16 @@ module.exports = () => {
           <ListWithChildTracking
             analyticsStream={() => {}}
             items={[
-              { someKey: "1", someValue: "one", elementId: 1 },
-              { someKey: "2", someValue: "two", elementId: 2 }
+              {
+                elementId: 1,
+                someKey: "1",
+                someValue: "one"
+              },
+              {
+                elementId: 2,
+                someKey: "2",
+                someValue: "two"
+              }
             ]}
           />
         );
@@ -341,9 +404,21 @@ module.exports = () => {
         <ListWithChildTracking
           analyticsStream={reporter}
           items={[
-            { someKey: "1", someValue: "one", elementId: 1 },
-            { someKey: "2", someValue: "two", elementId: 2 },
-            { someKey: "3", someValue: "three", elementId: 3 }
+            {
+              elementId: 1,
+              someKey: "1",
+              someValue: "one"
+            },
+            {
+              elementId: 2,
+              someKey: "2",
+              someValue: "two"
+            },
+            {
+              elementId: 3,
+              someKey: "3",
+              someValue: "three"
+            }
           ]}
         />
       );

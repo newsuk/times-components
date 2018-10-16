@@ -101,11 +101,8 @@ const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 
 export default {
-  name: "Pages/Article",
   children: [
     {
-      type: "story",
-      name: "Default",
       component: ({ boolean, select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
@@ -155,11 +152,11 @@ export default {
             }
           </Fragment>
         );
-      }
+      },
+      name: "Default",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Article with video asset",
       component: ({ select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
@@ -191,11 +188,11 @@ export default {
           scale,
           sectionColour
         });
-      }
+      },
+      name: "Article with video asset",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Long Article",
       component: ({ select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
@@ -216,11 +213,11 @@ export default {
           scale,
           sectionColour
         });
-      }
+      },
+      name: "Long Article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Loading",
       component: () => (
         <Article
           adConfig={articleAdConfig}
@@ -229,12 +226,11 @@ export default {
           onRelatedArticlePress={() => {}}
           onTopicPress={() => {}}
         />
-      )
+      ),
+      name: "Loading",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Error",
-      platform: "native",
       component: ({ select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
@@ -252,11 +248,12 @@ export default {
           scale,
           sectionColour
         });
-      }
+      },
+      name: "Error",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
-      name: "With Provider",
       component: ({ select, text }, { decorateAction }) => {
         const id = text("Article id", "");
         const scale = selectScales(select);
@@ -274,7 +271,10 @@ export default {
             })}
           </StorybookProvider>
         );
-      }
+      },
+      name: "With Provider",
+      type: "story"
     }
-  ]
+  ],
+  name: "Pages/Article"
 };

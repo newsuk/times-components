@@ -29,31 +29,35 @@ class Gestures extends Component {
     super(props);
 
     this.state = {
-      zoomRatio: new Animated.Value(1),
-      angle: new Animated.Value(0)
+      angle: new Animated.Value(0),
+      zoomRatio: new Animated.Value(1)
     };
 
     this.panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1,
       onMoveShouldSetPanResponder: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1,
-      onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
       onMoveShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
-      onPanResponderStart: evt => {
-        this.handlePinchStart(evt);
-      },
       onPanResponderMove: evt => {
         this.handlePinchChange(evt);
       },
       onPanResponderRelease: () => {
         Animated.parallel([
-          Animated.spring(this.state.zoomRatio, { toValue: 1 }),
-          Animated.spring(this.state.angle, { toValue: 0 })
+          Animated.spring(this.state.zoomRatio, {
+            toValue: 1
+          }),
+          Animated.spring(this.state.angle, {
+            toValue: 0
+          })
         ]).start();
-      }
+      },
+      onPanResponderStart: evt => {
+        this.handlePinchStart(evt);
+      },
+      onStartShouldSetPanResponder: (e, { numberActiveTouches }) =>
+        numberActiveTouches > 1,
+      onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
+        numberActiveTouches > 1
     });
   }
 

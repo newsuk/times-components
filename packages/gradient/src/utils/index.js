@@ -6,13 +6,13 @@ const angleToPoints = angle => {
   const y = op * Math.sin(angle);
 
   return {
-    start: {
-      x: x < 0 ? 1 : 0,
-      y: y < 0 ? 1 : 0
-    },
     end: {
       x: x >= 0 ? x : x + 1,
       y: y >= 0 ? y : y + 1
+    },
+    start: {
+      x: x < 0 ? 1 : 0,
+      y: y < 0 ? 1 : 0
     }
   };
 };

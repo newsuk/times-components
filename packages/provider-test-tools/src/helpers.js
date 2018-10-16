@@ -4,8 +4,8 @@ export function tidyEvent(e) {
   }
 
   return {
-    type: e.type,
     query: e.operation.operationName,
+    type: e.type,
     vars: e.operation.variables
   };
 }

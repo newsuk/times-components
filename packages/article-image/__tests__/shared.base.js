@@ -59,14 +59,14 @@ export default makeTest => {
       name: "inline image with no ratio only shows caption and credits",
       test: () => {
         const noRatio = {
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          },
           imageOptions: {
             display: "inline",
             ratio: null,
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: "Some caption",
-            credits: "Some credit"
           }
         };
 
@@ -104,14 +104,14 @@ export default makeTest => {
       name: "image with no display only shows given caption",
       test: () => {
         const noCredits = {
+          captionOptions: {
+            caption: "Some caption",
+            credits: null
+          },
           imageOptions: {
             display: null,
             ratio: "16:9",
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: "Some caption",
-            credits: null
           }
         };
 
@@ -129,14 +129,14 @@ export default makeTest => {
       name: "image with no display only shows given credits",
       test: () => {
         const noCredits = {
+          captionOptions: {
+            caption: null,
+            credits: "Some credit"
+          },
           imageOptions: {
             display: null,
             ratio: "16:9",
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: null,
-            credits: "Some credit"
           }
         };
 
@@ -154,14 +154,14 @@ export default makeTest => {
       name: "primary image renders with caption and credits",
       test: () => {
         const primaryImage = {
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          },
           imageOptions: {
             display: "primary",
             ratio: "16:9",
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: "Some caption",
-            credits: "Some credit"
           }
         };
 
@@ -179,16 +179,16 @@ export default makeTest => {
       name: "primary image with given resolutions",
       test: () => {
         const primaryImage = {
+          captionOptions: {
+            caption: "Some caption",
+            credits: "Some credit"
+          },
           imageOptions: {
             display: "primary",
             highResSize: 900,
             lowResSize: 50,
             ratio: "16:9",
             uri: testImageUrl
-          },
-          captionOptions: {
-            caption: "Some caption",
-            credits: "Some credit"
           }
         };
 

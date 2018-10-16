@@ -12,8 +12,8 @@ export default render => ({ isVideo, label }) => {
 
   return render(
     {
-      testID: "label",
-      style: styles.articleLabel
+      style: styles.articleLabel,
+      testID: "label"
     },
     <Context.Consumer>
       {({ theme: { sectionColour } }) => (

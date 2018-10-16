@@ -8,92 +8,92 @@ const defaultFirstLabel = "BAYEUX TAPESTRY";
 const defaultFirstSection = "thedish";
 const defaultFirstSummary105 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary125 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary145 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary160 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary175 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstSummary225 = [
   {
-    name: "paragraph",
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultFirstTitle =
@@ -110,257 +110,257 @@ const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
 const defaultSecondSummary105 = [
   {
-    name: "text",
     attributes: {
       value:
         "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
     },
-    children: []
+    children: [],
+    name: "text"
   },
   {
-    name: "italic",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "The Times"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "italic"
   },
   {
-    name: "text",
     attributes: {
       value: ", is"
     },
-    children: []
+    children: [],
+    name: "text"
   }
 ];
 const defaultSecondSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
-    children: []
+    children: [],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "Although the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value: "Although the museum stopped"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
         },
-        children: []
+        children: [],
+        name: "text"
       },
       {
-        name: "italic",
         attributes: {},
         children: [
           {
-            name: "text",
             attributes: {
               value: "The Times"
             },
-            children: []
+            children: [],
+            name: "text"
           }
-        ]
+        ],
+        name: "italic"
       },
       {
-        name: "text",
         attributes: {
           value: ", is expected to be to the British Museum in 2022."
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   },
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Although the museum stopped short of confirming that it had secured the loan"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSecondUrl =
@@ -398,33 +398,32 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "StandardSlice",
       items: [
         {
           article: {
             byline: [
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long, Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             headline: firstHeadline,
             id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             label: firstLabel,
             leadAsset: {
-              title: firstTitle,
               crop169: {
                 url: firstCrop169
-              }
+              },
+              title: firstTitle
             },
             publicationName: "TIMES",
             publishedTime: "2015-03-13T18:54:58.000Z",
@@ -443,36 +442,36 @@ export default (
           article: {
             byline: [
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long, Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             headline: secondHeadline,
             id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             label: secondLabel,
             leadAsset: {
-              title: secondTitle,
               crop169: {
                 url: secondCrop169
-              }
+              },
+              title: secondTitle
             },
             publishedTime: "2018-01-17T12:00:00.000Z",
             section: secondSection,
             shortHeadline: secondShortHeadline,
             summary105: [
               {
-                name: "paragraph",
                 attributes: {},
-                children: secondSummary105
+                children: secondSummary105,
+                name: "paragraph"
               }
             ],
             summary125: secondSummary125,
@@ -483,7 +482,8 @@ export default (
             url: secondUrl
           }
         }
-      ]
+      ],
+      sliceName: "StandardSlice"
     }
   }
 });

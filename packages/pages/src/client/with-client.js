@@ -8,19 +8,19 @@ import { fragmentMatcher } from "@times-components/schema";
 const withClient = WrappedComponent => ({ graphqlEndPoint }) => fetch => {
   const link = fetch
     ? createHttpLink({
-        uri: graphqlEndPoint,
         fetch: (uri, opts) =>
-          fetch(uri, opts).then(responseBody => new Response(responseBody))
+          fetch(uri, opts).then(responseBody => new Response(responseBody)),
+        uri: graphqlEndPoint
       })
     : createHttpLink({
         uri: graphqlEndPoint
       });
 
   const client = new ApolloClient({
-    link,
     cache: new InMemoryCache({
       fragmentMatcher
-    })
+    }),
+    link
   });
 
   return props => (

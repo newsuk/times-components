@@ -21,8 +21,8 @@ export default () => {
 
     const interactiveWrapper = new InteractiveWrapper();
     interactiveWrapper.webview = {
-      stopLoading: jest.fn(),
-      postMessage: jest.fn()
+      postMessage: jest.fn(),
+      stopLoading: jest.fn()
     };
     return interactiveWrapper;
   };

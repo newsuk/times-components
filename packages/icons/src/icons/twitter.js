@@ -16,12 +16,16 @@ const IconTwitter = ({
   <Svg
     role="img"
     viewBox="-354.2 -279.4 750 600"
-    {...clean({ title, height, width: width || height * ratio })}
+    {...clean({
+      height,
+      title,
+      width: width || height * ratio
+    })}
   >
     <Path
       {...clean({
-        stroke: strokeColour,
-        fill: fillColour
+        fill: fillColour,
+        stroke: strokeColour
       })}
       d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1
         	c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159

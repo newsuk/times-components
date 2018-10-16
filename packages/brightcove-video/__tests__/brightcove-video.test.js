@@ -13,13 +13,13 @@ const playIconEmoji = () => (
 );
 
 const defaultVideoProps = {
-  policyKey,
-  videoId,
   accountId,
+  policyKey,
   poster: {
     uri:
       "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
-  }
+  },
+  videoId
 };
 
 beforeEach(() => {
@@ -117,8 +117,8 @@ it("will call child components play and pause methods if child component is read
   const rootInstance = testInstance.getInstance();
 
   rootInstance.playerRef = {
-    play: jest.fn(),
-    pause: jest.fn()
+    pause: jest.fn(),
+    play: jest.fn()
   };
 
   rootInstance.play();

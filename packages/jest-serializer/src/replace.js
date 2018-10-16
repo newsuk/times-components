@@ -1,24 +1,28 @@
 import traverse from "./traverse";
 import print from "./printers";
 
-export const propsNoChildren = (node, props) => ({ node, props, children: [] });
+export const propsNoChildren = (node, props) => ({
+  children: [],
+  node,
+  props
+});
 
 export const justChildren = (node, props, children) => ({
   children
 });
 
 export const meltNative = {
-  View: justChildren,
-  Text: justChildren
+  Text: justChildren,
+  View: justChildren
 };
 
 export const replaceTransform = config => (accum, node, props, children) => {
   if (config[node.type] === undefined) {
     return {
       accum,
+      children,
       node,
-      props,
-      children
+      props
     };
   }
 
@@ -37,9 +41,9 @@ export const replaceTransform = config => (accum, node, props, children) => {
 
   return {
     accum,
+    children: tChildren,
     node: tNode,
-    props: tProps,
-    children: tChildren
+    props: tProps
   };
 };
 

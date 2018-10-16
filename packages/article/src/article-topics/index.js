@@ -17,13 +17,13 @@ const ShowTopics = ({ topics, onPress }) => {
 };
 
 ShowTopics.propTypes = {
+  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       slug: PropTypes.string.isRequired
     }).isRequired
-  ),
-  onPress: PropTypes.func.isRequired
+  )
 };
 
 ShowTopics.defaultProps = {

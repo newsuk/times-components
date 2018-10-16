@@ -33,17 +33,17 @@ module.exports = {
     rules: [babelConfig]
   },
   optimization: {
+    occurrenceOrder: true,
     splitChunks: {
       cacheGroups: {
         commons: {
-          name: "vendor",
           chunks: "initial",
           minChunks: 2,
-          minSize: 0
+          minSize: 0,
+          name: "vendor"
         }
       }
-    },
-    occurrenceOrder: true
+    }
   },
   output: {
     filename: "[name].bundle.js",

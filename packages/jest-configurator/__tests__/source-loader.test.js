@@ -31,8 +31,8 @@ const tests = [
       const fileContents = `fn main(){"println!("Hello World!");}`;
 
       const actual = transform(fileContents, "./fixtures/test.rs", {
-        cwd: "/home/cwd",
-        coveragePathIgnorePatterns: []
+        coveragePathIgnorePatterns: [],
+        cwd: "/home/cwd"
       });
 
       expect(actual).toEqual(fileContents);
@@ -44,8 +44,8 @@ const tests = [
       const fileContents = readFileSync("./fixtures/test.js").toString();
 
       const { code } = transform(fileContents, "./fixtures/test.js", {
-        cwd: "/home/cwd",
-        coveragePathIgnorePatterns: []
+        coveragePathIgnorePatterns: [],
+        cwd: "/home/cwd"
       });
 
       expect(code).toMatchSnapshot();
@@ -62,8 +62,8 @@ const tests = [
         fileContents,
         "./fixtures/times-components/dist/test.js",
         {
-          cwd: "/home/cwd",
-          coveragePathIgnorePatterns: []
+          coveragePathIgnorePatterns: [],
+          cwd: "/home/cwd"
         }
       );
 

@@ -40,124 +40,124 @@ const createRelatedArticles = (decorateAction, fixtureData) => {
 };
 
 export default {
-  name: "Composed/RelatedArticles",
   children: [
     {
-      type: "story",
-      name: "Standard template with one related article",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleFixture().data
-        )
+        ),
+      name: "Standard template with one related article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with one related article with video lead",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleFixtureVideoLead.data
-        )
+        ),
+      name: "Standard template with one related article with video lead",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with one related article with no image",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleNoImageFixture.data
-        )
+        ),
+      name: "Standard template with one related article with no image",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with one related article with no label",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleNoLabelFixture.data
-        )
+        ),
+      name: "Standard template with one related article with no label",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with one related article with no byline",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleNoBylineFixture.data
-        )
+        ),
+      name: "Standard template with one related article with no byline",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with two related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard2RelatedArticlesFixture().data
-        )
+        ),
+      name: "Standard template with two related articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Standard template with three related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard3RelatedArticlesFixture().data
-        )
+        ),
+      name: "Standard template with three related articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Lead and two template with one related article",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           leadAndTwo1RelatedArticleFixture().data
-        )
+        ),
+      name: "Lead and two template with one related article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Lead and two template with two related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           leadAndTwo2RelatedArticlesFixture().data
-        )
+        ),
+      name: "Lead and two template with two related articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Lead and two template with three related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           leadAndTwo3RelatedArticlesFixture().data
-        )
+        ),
+      name: "Lead and two template with three related articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Opinion and two template with one related article",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           opinionAndTwo1RelatedArticleFixture().data
-        )
+        ),
+      name: "Opinion and two template with one related article",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Opinion and two template with two related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           opinionAndTwo2RelatedArticlesFixture().data
-        )
+        ),
+      name: "Opinion and two template with two related articles",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Opinion and two template with three related articles",
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           opinionAndTwo3RelatedArticlesFixture().data
-        )
+        ),
+      name: "Opinion and two template with three related articles",
+      type: "story"
     }
-  ]
+  ],
+  name: "Composed/RelatedArticles"
 };

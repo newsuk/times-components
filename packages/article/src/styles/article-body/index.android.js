@@ -9,13 +9,13 @@ const androidStyles = scale => {
 
   return {
     ...sharedStyles,
-    leadAsset: {
-      marginBottom: 6
-    },
     articleTextElement: {
       ...sharedStyles.articleTextElement,
       fontStyle: "normal",
       marginBottom: spacing(4)
+    },
+    leadAsset: {
+      marginBottom: 6
     }
   };
 };

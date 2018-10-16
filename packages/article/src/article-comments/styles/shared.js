@@ -2,11 +2,16 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const styles = {
+  button: {
+    marginBottom: spacing(0),
+    marginTop: spacing(5),
+    maxWidth: 215
+  },
   container: {
     alignItems: "center",
+    borderStyle: "solid",
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1,
-    borderStyle: "solid",
     marginBottom: spacing(5),
     width: "100%"
   },
@@ -21,22 +26,17 @@ const styles = {
     paddingTop: spacing(6),
     textAlign: "center"
   },
+  link: {
+    color: colours.functional.action
+  },
   supporting: {
-    color: colours.functional.secondary,
     ...fontFactory({
       font: "supporting",
       fontSize: "tertiary"
     }),
-    textAlign: "center",
-    maxWidth: 280
-  },
-  link: {
-    color: colours.functional.action
-  },
-  button: {
-    marginTop: spacing(5),
-    maxWidth: 215,
-    marginBottom: spacing(0)
+    color: colours.functional.secondary,
+    maxWidth: 280,
+    textAlign: "center"
   }
 };
 

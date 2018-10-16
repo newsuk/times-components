@@ -8,29 +8,29 @@ const borderWidth = 1;
 const borderColor = colours.functional.keyline;
 
 const styles = StyleSheet.create({
-  wrapper: {
-    display: "flex",
-    flexWrap: "wrap",
-    flexDirection: "row",
-    margin: 20,
-    borderLeftWidth: borderWidth,
-    borderLeftColor: borderColor,
-    borderTopWidth: borderWidth,
-    borderTopColor: borderColor
-  },
   icon: {
-    flexGrow: 1,
-    padding: 20,
-    justifyContent: "center",
     alignItems: "center",
-    borderRightWidth: borderWidth,
-    borderRightColor: borderColor,
+    borderBottomColor: borderColor,
     borderBottomWidth: borderWidth,
-    borderBottomColor: borderColor
+    borderRightColor: borderColor,
+    borderRightWidth: borderWidth,
+    flexGrow: 1,
+    justifyContent: "center",
+    padding: 20
   },
   label: {
-    paddingTop: 15,
-    fontFamily: fonts.supporting
+    fontFamily: fonts.supporting,
+    paddingTop: 15
+  },
+  wrapper: {
+    borderLeftColor: borderColor,
+    borderLeftWidth: borderWidth,
+    borderTopColor: borderColor,
+    borderTopWidth: borderWidth,
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    margin: 20
   }
 });
 
@@ -55,16 +55,16 @@ const renderIcon = color => args => {
 };
 
 export default {
-  name: "Primitives/Icons",
   children: [
     {
-      type: "story",
-      name: "Icons",
       component: ({ color }) => (
         <View style={styles.wrapper}>
           {Object.entries(Icons).map(renderIcon(color))}
         </View>
-      )
+      ),
+      name: "Icons",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Icons"
 };

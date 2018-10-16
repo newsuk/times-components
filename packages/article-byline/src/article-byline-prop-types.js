@@ -4,16 +4,16 @@ import { propTypes as treePropType } from "@times-components/markup-forest";
 
 export const propTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
+  color: PropTypes.string,
   onAuthorPress: PropTypes.func,
   style: PropTypes.shape({
-    text: Text.propTypes.style,
-    link: Text.propTypes.style
-  }),
-  color: PropTypes.string
+    link: Text.propTypes.style,
+    text: Text.propTypes.style
+  })
 };
 
 export const defaultProps = {
+  color: "",
   onAuthorPress: () => null,
-  style: {},
-  color: ""
+  style: {}
 };

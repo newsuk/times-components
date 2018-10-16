@@ -81,34 +81,34 @@ const ArticleSummary = props => {
 };
 
 ArticleSummary.propTypes = {
-  labelProps: PropTypes.shape({
-    title: PropTypes.string,
-    color: PropTypes.string,
-    isVideo: PropTypes.bool
-  }),
-  headline: PropTypes.func,
-  content: PropTypes.func,
   bylineProps: PropTypes.shape({
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
     bylineStyle: TextPropTypesStyle,
-    isOpinionByline: PropTypes.bool,
-    hasBylineLinks: PropTypes.bool
+    hasBylineLinks: PropTypes.bool,
+    isOpinionByline: PropTypes.bool
   }),
+  content: PropTypes.func,
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
     publication: PropTypes.string
   }),
-  isOpinionByline: PropTypes.bool
+  headline: PropTypes.func,
+  isOpinionByline: PropTypes.bool,
+  labelProps: PropTypes.shape({
+    color: PropTypes.string,
+    isVideo: PropTypes.bool,
+    title: PropTypes.string
+  })
 };
 
 ArticleSummary.defaultProps = {
-  content: () => null,
-  headline: () => null,
   bylineProps: null,
-  labelProps: null,
+  content: () => null,
   datePublicationProps: null,
-  isOpinionByline: false
+  headline: () => null,
+  isOpinionByline: false,
+  labelProps: null
 };
 
 export {

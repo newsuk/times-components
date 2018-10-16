@@ -3,13 +3,13 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  title: {
-    ...sharedStyles.title,
-    top: 1
-  },
   iconContainer: {
     ...sharedStyles.iconContainer,
     paddingBottom: 0
+  },
+  title: {
+    ...sharedStyles.title,
+    top: 1
   }
 });
 

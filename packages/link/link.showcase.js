@@ -7,40 +7,37 @@ import Link, { TextLink } from "./src/link";
 const BigSquare = props => (
   <View
     style={{
-      width: 100,
+      backgroundColor: colours.functional.backgroundSecondary,
       height: 100,
-      backgroundColor: colours.functional.backgroundSecondary
+      width: 100
     }}
     {...props}
   />
 );
 
 export default {
-  name: "Primitives/Link",
   children: [
     {
-      type: "decorator",
       decorator: CenteredDecorator,
-      platform: "native"
+      platform: "native",
+      type: "decorator"
     },
     {
-      type: "story",
-      name: "Link with big content",
       component: (_, { action }) => (
         <Link onPress={action("onPress")} url="https://thetimes.co.uk">
           <View
             style={{
-              width: 100,
+              backgroundColor: colours.functional.backgroundSecondary,
               height: 100,
-              backgroundColor: colours.functional.backgroundSecondary
+              width: 100
             }}
           />
         </Link>
-      )
+      ),
+      name: "Link with big content",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Link can prevent browser navigation",
       component: (_, { action }) => (
         <Link
           onPress={e => {
@@ -51,20 +48,20 @@ export default {
         >
           <BigSquare />
         </Link>
-      )
+      ),
+      name: "Link can prevent browser navigation",
+      type: "story"
     },
     {
-      type: "story",
-      name: "TextLink",
       component: (_, { action }) => (
         <TextLink onPress={action("onPress")} url="https://thetimes.co.uk/">
           The Times
         </TextLink>
-      )
+      ),
+      name: "TextLink",
+      type: "story"
     },
     {
-      type: "story",
-      name: "TextLink with styles",
       component: (_, { action }) => (
         <TextLink
           onPress={action("onPress")}
@@ -73,7 +70,10 @@ export default {
         >
           The Times
         </TextLink>
-      )
+      ),
+      name: "TextLink with styles",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Link"
 };

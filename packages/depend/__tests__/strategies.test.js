@@ -26,8 +26,14 @@ describe("depend strategy tests", () => {
   });
 
   it("should pick version that is used by more packages if strategy is majority", async () => {
-    const old = { version: "1.0.0", usedBy: [1, 2] };
-    const newer = { version: "2.0.0", usedBy: [1] };
+    const old = {
+      usedBy: [1, 2],
+      version: "1.0.0"
+    };
+    const newer = {
+      usedBy: [1],
+      version: "2.0.0"
+    };
     const picked = majority(old, newer);
     expect(picked).toBe(-1);
     const picked2 = majority(newer, old);
@@ -35,8 +41,14 @@ describe("depend strategy tests", () => {
   });
 
   it("should pick version that is used by more packages if strategy is majorityConservative", async () => {
-    const old = { version: "1.0.0", usedBy: [1, 2] };
-    const newer = { version: "2.0.0", usedBy: [1, 2] };
+    const old = {
+      usedBy: [1, 2],
+      version: "1.0.0"
+    };
+    const newer = {
+      usedBy: [1, 2],
+      version: "2.0.0"
+    };
     const picked = majorityConservative(old, newer);
     expect(picked).toBe(-1);
     const picked2 = majorityConservative(newer, old);
@@ -44,8 +56,14 @@ describe("depend strategy tests", () => {
   });
 
   it("should pick version that is used by more packages if strategy is majorityProgressive", async () => {
-    const old = { version: "1.0.0", usedBy: [1, 2] };
-    const newer = { version: "2.0.0", usedBy: [1, 2] };
+    const old = {
+      usedBy: [1, 2],
+      version: "1.0.0"
+    };
+    const newer = {
+      usedBy: [1, 2],
+      version: "2.0.0"
+    };
     const picked = majorityProgressive(old, newer);
     expect(picked).toBe(1);
     const picked2 = majorityProgressive(newer, old);

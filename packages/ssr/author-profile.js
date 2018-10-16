@@ -20,10 +20,10 @@ module.exports = (client, slug, page) =>
           adConfig: {},
           analyticsStream: () => {},
           author,
-          isLoading,
           error,
-          onTwitterLinkPress: () => {},
+          isLoading,
           onArticlePress: () => {},
+          onTwitterLinkPress: () => {},
           page,
           refetch,
           slug

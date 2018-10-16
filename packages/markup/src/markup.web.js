@@ -21,14 +21,14 @@ export default {
       element: <em key={key}>{renderedChildren}</em>
     };
   },
-  italic(key, attributes, renderedChildren) {
-    return {
-      element: <i key={key}>{renderedChildren}</i>
-    };
-  },
   inline(key, attributes, renderedChildren) {
     return {
       element: <span key={key}>{renderedChildren}</span>
+    };
+  },
+  italic(key, attributes, renderedChildren) {
+    return {
+      element: <i key={key}>{renderedChildren}</i>
     };
   },
   paragraph(key, attributes, renderedChildren) {

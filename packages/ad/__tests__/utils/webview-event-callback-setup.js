@@ -10,22 +10,23 @@ export default () => {
   beforeEach(() => {
     jest.useFakeTimers();
     window = {
-      postMessage: jest.fn().mockImplementation(data => {
-        window.reactBridgePostMessageDecoded(JSON.parse(data));
-      }),
-      originalPostMessage: {},
-      reactBridgePostMessageDecoded: jest.fn(),
-      requestAnimationFrame: realWindow.requestAnimationFrame,
-      setTimeout: realWindow.setTimeout,
-      console: {},
       addEventListener: jest.fn().mockImplementation((name, handler) => {
         if (name === "error") {
           if (errorHandler) {
             throw new Error("Can't install 2 error handlers");
           }
+
           errorHandler = handler;
         }
-      })
+      }),
+      console: {},
+      originalPostMessage: {},
+      postMessage: jest.fn().mockImplementation(data => {
+        window.reactBridgePostMessageDecoded(JSON.parse(data));
+      }),
+      reactBridgePostMessageDecoded: jest.fn(),
+      requestAnimationFrame: realWindow.requestAnimationFrame,
+      setTimeout: realWindow.setTimeout
     };
     errorHandler = null;
   });
@@ -58,18 +59,18 @@ export default () => {
     errorHandler(error);
     jest.runAllTimers();
     expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith({
+      detail: messageDetail,
       isTngMessage: true,
-      type: "error",
-      detail: messageDetail
+      type: "error"
     });
   };
 
   it("posts a message to the parent when the global error handler is called", () => {
     const error = {
-      message: "a",
+      colno: "d",
       filename: "b",
       lineno: "c",
-      colno: "d"
+      message: "a"
     };
     expectMessageFromError(error, "msg=a, file=b, line=c, col=d");
   });
@@ -80,10 +81,10 @@ export default () => {
     const truncatedFileName =
       "0   + * & 10  + * & 20  + * & 30  + * & 40  + * & 50  + * & 60  + * & 70  + * & 80  + * & 90  + * & ";
     const error = {
-      message: "a",
+      colno: "d",
       filename: longFileName,
       lineno: "c",
-      colno: "d"
+      message: "a"
     };
     expectMessageFromError(
       error,
@@ -101,9 +102,9 @@ export default () => {
     window.console.error("a", "b", "c");
     jest.runAllTimers();
     expect(window.reactBridgePostMessageDecoded).toHaveBeenCalledWith({
+      detail: "a\nb\nc",
       isTngMessage: true,
-      type: "error",
-      detail: "a\nb\nc"
+      type: "error"
     });
   });
 };

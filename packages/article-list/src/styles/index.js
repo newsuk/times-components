@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
 });
 
 const watermarkStyles = {
-  width: 300,
-  height: 250
+  height: 250,
+  width: 300
 };
 
 export { watermarkStyles };

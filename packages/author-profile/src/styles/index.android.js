@@ -4,13 +4,13 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  twitter: {
-    ...sharedStyles.twitter,
-    alignItems: "center"
-  },
   jobTitle: {
     ...sharedStyles.jobTitle,
     marginTop: spacing(2)
+  },
+  twitter: {
+    ...sharedStyles.twitter,
+    alignItems: "center"
   }
 });
 

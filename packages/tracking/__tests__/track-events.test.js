@@ -14,14 +14,14 @@ module.exports = () => {
       return <Text>{props.someProp}</Text>;
     };
     TestComponent.propTypes = {
-      someProp: PropTypes.string,
       event1: PropTypes.func,
-      event2: PropTypes.func
+      event2: PropTypes.func,
+      someProp: PropTypes.string
     };
     TestComponent.defaultProps = {
-      someProp: "foo",
       event1: () => {},
-      event2: () => {}
+      event2: () => {},
+      someProp: "foo"
     };
     TestComponent.someStatic = { foo: "bar" };
 
@@ -36,7 +36,10 @@ module.exports = () => {
       const WithTrackingAndContext = withTrackingContext(
         withTrackEvents(TestComponent, {
           analyticsEvents: [
-            { eventName: "unknownEvent", actionName: "happened" }
+            {
+              actionName: "happened",
+              eventName: "unknownEvent"
+            }
           ]
         })
       );
@@ -52,7 +55,12 @@ module.exports = () => {
       const reporter = jest.fn();
       const WithTrackingAndContext = withTrackingContext(
         withTrackEvents(TestComponent, {
-          analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
+          analyticsEvents: [
+            {
+              actionName: "event1ed",
+              eventName: "event1"
+            }
+          ]
         })
       );
 
@@ -71,8 +79,14 @@ module.exports = () => {
       const addTracking = () =>
         withTrackEvents(TestComponent, {
           analyticsEvents: [
-            { eventName: "event1", actionName: "event1ed" },
-            { eventName: "event1", actionName: "event1ed" }
+            {
+              actionName: "event1ed",
+              eventName: "event1"
+            },
+            {
+              actionName: "event1ed",
+              eventName: "event1"
+            }
           ]
         });
 
@@ -103,8 +117,8 @@ module.exports = () => {
         withTrackEvents(TestComponent, {
           analyticsEvents: [
             {
-              eventName: "event1",
               actionName: "event1ed",
+              eventName: "event1",
               trackingName: "OverriddenName"
             }
           ]
@@ -125,12 +139,12 @@ module.exports = () => {
         withTrackEvents(TestComponent, {
           analyticsEvents: [
             {
-              eventName: "event1",
               actionName: "event1ed",
+              eventName: "event1",
               getAttrs: ({ aProp }, eventArgs) => ({
+                args: eventArgs,
                 fromProps: aProp,
-                static: "value",
-                args: eventArgs
+                static: "value"
               })
             }
           ]
@@ -149,9 +163,9 @@ module.exports = () => {
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
           attrs: expect.objectContaining({
+            args: ["event1 arg"],
             fromProps: "propValue",
-            static: "value",
-            args: ["event1 arg"]
+            static: "value"
           })
         })
       );
@@ -162,21 +176,21 @@ module.exports = () => {
         withTrackEvents(TestComponent, {
           analyticsEvents: [
             {
-              eventName: "event1",
               actionName: "event1ed",
+              eventName: "event1",
               getAttrs: ({ aProp }, eventArgs) => ({
+                args: eventArgs,
                 fromProps: aProp,
-                static: "value",
-                args: eventArgs
+                static: "value"
               })
             },
             {
-              eventName: "event2",
               actionName: "event2ed",
+              eventName: "event2",
               getAttrs: ({ aProp }, eventArgs) => ({
+                args: eventArgs,
                 fromProps: aProp,
-                static: "otherValue",
-                args: eventArgs
+                static: "otherValue"
               })
             }
           ]
@@ -200,7 +214,12 @@ module.exports = () => {
       const reporter = jest.fn();
       const WithTrackingAndContext = withTrackingContext(
         withTrackEvents(TestComponent, {
-          analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
+          analyticsEvents: [
+            {
+              actionName: "event1ed",
+              eventName: "event1"
+            }
+          ]
         })
       );
 

@@ -17,44 +17,40 @@ const style = {
 };
 
 export default {
-  name: "Primitives/Caption",
   children: [
     {
-      type: "story",
+      component: () => <Caption text={captionText} />,
       name: "Without credits",
-      component: () => <Caption text={captionText} />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <Caption credits={credits} text={captionText} />,
       name: "With credits",
-      component: () => <Caption credits={credits} text={captionText} />
+      type: "story"
     },
     {
-      type: "story",
+      component: () => <Caption credits={credits} />,
       name: "Credits only",
-      component: () => <Caption credits={credits} />
+      type: "story"
     },
     {
-      type: "story",
-      name: "With specific styles",
       component: () => (
         <Caption credits={credits} style={style} text={captionText} />
-      )
+      ),
+      name: "With specific styles",
+      type: "story"
     },
     {
-      type: "story",
-      platform: "native",
-      name: "Image with caption",
       component: () => (
         <Caption credits={credits} text={captionText}>
           <Image aspectRatio={16 / 9} uri={exampleImage} />
         </Caption>
-      )
+      ),
+      name: "Image with caption",
+      platform: "native",
+      type: "story"
     },
     {
-      type: "story",
-      platform: "web",
-      name: "Image with caption",
       component: () => (
         <Caption credits={credits} text={captionText}>
           <div
@@ -65,7 +61,11 @@ export default {
             <img alt="Man with beard" src={exampleImage} />
           </div>
         </Caption>
-      )
+      ),
+      name: "Image with caption",
+      platform: "web",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Caption"
 };

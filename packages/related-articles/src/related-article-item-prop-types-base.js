@@ -10,8 +10,8 @@ export const sharedPropTypes = {
     hasVideo: PropTypes.bool,
     headline: PropTypes.string,
     label: PropTypes.string,
-    shortHeadline: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
+    shortHeadline: PropTypes.string,
     summary105: PropTypes.arrayOf(treePropType),
     summary125: PropTypes.arrayOf(treePropType).isRequired,
     summary145: PropTypes.arrayOf(treePropType),
@@ -44,10 +44,10 @@ export const sharedDefaultProps = {
   isReversed: false,
   showImage: true,
   showSummary: true,
-  summaryConfig: {},
   summary105: [],
   summary145: [],
   summary160: [],
   summary175: [],
-  summary225: []
+  summary225: [],
+  summaryConfig: {}
 };

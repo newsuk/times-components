@@ -7,12 +7,12 @@ import PageLabel from "./page-label";
 
 const { colours, fontFactory, spacing } = styleguide();
 const textStyle = {
+  color: colours.functional.action,
   height: 15,
   ...fontFactory({
     font: "supporting",
     fontSize: "pagingMeta"
-  }),
-  color: colours.functional.action
+  })
 };
 
 const container = {
@@ -23,29 +23,29 @@ const container = {
 const styles = StyleSheet.create({
   nextContainer: Object.assign(
     {
-      paddingTop: "10px",
-      paddingBottom: "8px"
-    },
-    container
-  ),
-  previousContainer: Object.assign(
-    {
-      paddingTop: "10px",
-      paddingBottom: "8px"
+      paddingBottom: "8px",
+      paddingTop: "10px"
     },
     container
   ),
   nextText: Object.assign(
     {
-      textAlign: "right",
-      marginRight: spacing(2)
+      marginRight: spacing(2),
+      textAlign: "right"
     },
     textStyle
   ),
+  previousContainer: Object.assign(
+    {
+      paddingBottom: "8px",
+      paddingTop: "10px"
+    },
+    container
+  ),
   previousText: Object.assign(
     {
-      textAlign: "left",
-      marginLeft: spacing(2)
+      marginLeft: spacing(2),
+      textAlign: "left"
     },
     textStyle
   )

@@ -8,103 +8,103 @@ const defaultLabel = "BAYEUX TAPESTRY";
 const defaultSection = "thedish";
 const defaultSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
 const defaultSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
 const defaultSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
 const defaultSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
 const defaultSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
 const defaultSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 
@@ -133,50 +133,49 @@ export default (
 ) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "StandardSlice",
       items: [
         {
           article: {
             byline: [
               {
-                name: "author",
                 attributes: {
                   slug: "camilla-long"
                 },
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: "Camilla Long"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "author"
               },
               {
-                name: "inline",
                 attributes: {},
                 children: [
                   {
-                    name: "text",
                     attributes: {
                       value: ", Environment Editor"
                     },
-                    children: []
+                    children: [],
+                    name: "text"
                   }
-                ]
+                ],
+                name: "inline"
               }
             ],
             hasVideo,
             headline,
+            id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             label,
             leadAsset: {
-              title,
               crop169: {
                 url: crop169
-              }
+              },
+              title
             },
-            id: "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             publicationName: "TIMES",
             publishedTime: "2015-03-13T18:54:58.000Z",
             section,
@@ -190,7 +189,8 @@ export default (
             url
           }
         }
-      ]
+      ],
+      sliceName: "StandardSlice"
     }
   }
 });

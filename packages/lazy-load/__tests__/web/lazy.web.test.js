@@ -22,7 +22,10 @@ const intersectionObserverInstances = [];
 class FakeIntersectionObserver {
   constructor(cb) {
     this.instanceId = intersectionObserverInstances.length;
-    intersectionObserverInstances.push({ nodes: new Set(), cb });
+    intersectionObserverInstances.push({
+      cb,
+      nodes: new Set()
+    });
   }
 
   observe(node) {
@@ -98,8 +101,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -136,8 +139,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -201,8 +204,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -211,8 +214,8 @@ const tests = [
 
       const makeNewEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.25 : 0.75
+          intersectionRatio: indx === 0 ? 0.25 : 0.75,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);
@@ -249,8 +252,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map(node => ({
-          target: node,
-          intersectionRatio: 0.75
+          intersectionRatio: 0.75,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -259,8 +262,8 @@ const tests = [
 
       const makeNewEntries = nodes =>
         [...nodes].map(node => ({
-          target: node,
-          intersectionRatio: 0
+          intersectionRatio: 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);
@@ -299,8 +302,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -309,8 +312,8 @@ const tests = [
 
       const makeNewEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.25 : 0.75
+          intersectionRatio: indx === 0 ? 0.25 : 0.75,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);

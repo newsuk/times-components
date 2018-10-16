@@ -1,6 +1,6 @@
 import path from "path";
 
-export default ({ readFile, exists }, resolve) => {
+export default ({ exists, readFile }, resolve) => {
   const parseJson = async pathToJson =>
     (await exists(pathToJson))
       ? JSON.parse((await readFile(pathToJson, "utf8")).toString())
@@ -56,27 +56,17 @@ export default ({ readFile, exists }, resolve) => {
   }
 
   const configurator = (dir, entry) => async () => ({
-    target: "node",
     devtool: false,
-    mode: "production",
-    resolve: {
-      extensions: [".web.js", ".js"],
-      mainFields: ["dev", "module", "main"]
-    },
-    externals,
     entry: {
       index: await getEntry(dir, entry)
     },
-    output: {
-      path: dir,
-      filename: "rnw.js",
-      libraryTarget: "commonjs2"
-    },
+    externals,
+    mode: "production",
     module: {
       rules: [
         {
-          test: /\.js$/,
           exclude: /(node_module)/,
+          test: /\.js$/,
           use: {
             loader: "babel-loader",
             options: {
@@ -86,13 +76,23 @@ export default ({ readFile, exists }, resolve) => {
           }
         }
       ]
-    }
+    },
+    output: {
+      filename: "rnw.js",
+      libraryTarget: "commonjs2",
+      path: dir
+    },
+    resolve: {
+      extensions: [".web.js", ".js"],
+      mainFields: ["dev", "module", "main"]
+    },
+    target: "node"
   });
 
   return Object.assign(configurator, {
-    getEntry,
+    externals,
     getBabelConfig,
-    parseJson,
-    externals
+    getEntry,
+    parseJson
   });
 };

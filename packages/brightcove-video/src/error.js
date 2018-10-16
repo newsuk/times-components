@@ -13,45 +13,45 @@ import ResetIcon from "./reset-icon";
 const SourcePropType = Image.propTypes.source;
 
 const styles = StyleSheet.create({
-  overlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.7)"
+  errorBody: {
+    color: "white",
+    fontFamily: fonts.body,
+    fontSize: fontSizes.meta,
+    marginBottom: spacing(3),
+    opacity: 0.8,
+    textAlign: "center"
   },
   errorHead: {
     color: "white",
+    fontFamily: fonts.headline,
     fontSize: fontSizes.smallestHeadline,
-    marginBottom: spacing(1),
-    fontFamily: fonts.headline
+    marginBottom: spacing(1)
   },
-  errorBody: {
-    color: "white",
-    textAlign: "center",
-    marginBottom: spacing(3),
-    opacity: 0.8,
-    fontSize: fontSizes.meta,
-    fontFamily: fonts.body
+  overlay: {
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    flex: 1,
+    justifyContent: "center",
+    left: 0,
+    position: "absolute",
+    top: 0
   },
   resetButton: {
-    flexDirection: "row",
     backgroundColor: colours.functional.action,
-    paddingVertical: 12,
+    borderRadius: 2,
+    flexDirection: "row",
     paddingHorizontal: 16,
-    borderRadius: 2
+    paddingVertical: 12
   },
   resetText: {
     color: "white",
     fontFamily: fonts.supporting,
     fontSize: fontSizes.cardMeta,
-    lineHeight: 15,
-    position: "relative",
-    top: 3,
     letterSpacing: 1,
-    paddingLeft: spacing(1)
+    lineHeight: 15,
+    paddingLeft: spacing(1),
+    position: "relative",
+    top: 3
   }
 });
 
@@ -61,20 +61,28 @@ const VideoError = ({ poster, width, height, onReset }) => (
       <Image
         source={poster}
         style={{
-          width,
-          height
+          height,
+          width
         }}
       />
     ) : (
       <View
         style={{
-          width,
+          backgroundColor: "black",
           height,
-          backgroundColor: "black"
+          width
         }}
       />
     )}
-    <View style={[styles.overlay, { width, height }]}>
+    <View
+      style={[
+        styles.overlay,
+        {
+          height,
+          width
+        }
+      ]}
+    >
       <Text style={styles.errorHead}>Something’s gone wrong</Text>
       <Text style={styles.errorBody}>
         Please check your network connection{"\n"}and tap retry to continue
@@ -94,10 +102,10 @@ VideoError.defaultProps = {
 };
 
 VideoError.propTypes = {
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onReset: PropTypes.func.isRequired,
   poster: SourcePropType,
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default VideoError;

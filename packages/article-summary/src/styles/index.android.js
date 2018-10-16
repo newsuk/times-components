@@ -4,13 +4,13 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  labelWrapper: {
-    ...sharedStyles.labelWrapper,
-    marginBottom: spacing(0)
-  },
   headline: {
     ...sharedStyles.headline,
     fontWeight: "400"
+  },
+  labelWrapper: {
+    ...sharedStyles.labelWrapper,
+    marginBottom: spacing(0)
   }
 });
 

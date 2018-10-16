@@ -17,7 +17,11 @@ const IconEmail = ({
   <Svg
     role="img"
     viewBox={viewBox}
-    {...clean({ title, height, width: width || height * ratio })}
+    {...clean({
+      height,
+      title,
+      width: width || height * ratio
+    })}
   >
     <G
       fillRule="nonzero"

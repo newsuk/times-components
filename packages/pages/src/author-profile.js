@@ -46,10 +46,10 @@ const AuthorProfilePage = ({
 );
 
 AuthorProfilePage.propTypes = {
-  authorSlug: PropTypes.string.isRequired,
   analyticsStream: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired,
-  onArticlePress: PropTypes.func.isRequired
+  authorSlug: PropTypes.string.isRequired,
+  onArticlePress: PropTypes.func.isRequired,
+  onTwitterLinkPress: PropTypes.func.isRequired
 };
 
 export default withClient(AuthorProfilePage);

@@ -87,9 +87,6 @@ const AuthorProfile = ({
       }) => {
         const fetchMoreArticles = length =>
           fetchMore({
-            variables: {
-              skip: length
-            },
             updateQuery: (prev, { fetchMoreResult }) =>
               fetchMoreResult
                 ? {
@@ -104,7 +101,10 @@ const AuthorProfile = ({
                       }
                     }
                   }
-                : prev
+                : prev,
+            variables: {
+              skip: length
+            }
           });
 
         return (

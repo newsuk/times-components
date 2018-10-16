@@ -26,18 +26,22 @@ BoxWithButtons.propTypes = {
 };
 
 const BoxWithTrackingContext = withTrackingContext(Box, {
-  trackingObjectName: "TrackRenderStory",
-  getAttrs: props => ({ color: props.color })
+  getAttrs: props => ({
+    color: props.color
+  }),
+  trackingObjectName: "TrackRenderStory"
 });
 
 const BoxWithPressTrackingAndContext = withTrackingContext(
   withTrackEvents(BoxWithButtons, {
     analyticsEvents: [
       {
-        eventName: "onPress",
         actionName: "Pressed",
-        trackingName: "ColoredBox",
-        getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
+        eventName: "onPress",
+        getAttrs: (props, eventArgs) => ({
+          button: eventArgs[0]
+        }),
+        trackingName: "ColoredBox"
       }
     ]
   }),
@@ -54,36 +58,33 @@ const BoxesWithTrackingContext = withTrackingContext(
 );
 
 export default {
-  name: "Helpers/Tracking",
   children: [
     {
-      type: "story",
-      name: "Page tracking",
       component: () => (
         <BoxWithTrackingContext
           analyticsStream={storybookReporter}
           color="red"
         />
-      )
+      ),
+      name: "Page tracking",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Event tracking",
       component: () => (
         <BoxWithPressTrackingAndContext
           analyticsStream={storybookReporter}
           color="red"
           onPress={() => {}}
         />
-      )
+      ),
+      name: "Event tracking",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Scroll depth tracking",
       component: () => {
         const boxes = [...Array(50).keys()].map(i => ({
-          elementId: `box-${i + 1}`,
-          color: i % 2 === 0 ? "green" : "blue"
+          color: i % 2 === 0 ? "green" : "blue",
+          elementId: `box-${i + 1}`
         }));
         return (
           <BoxesWithTrackingContext
@@ -92,7 +93,10 @@ export default {
             onViewed={() => {}}
           />
         );
-      }
+      },
+      name: "Scroll depth tracking",
+      type: "story"
     }
-  ]
+  ],
+  name: "Helpers/Tracking"
 };

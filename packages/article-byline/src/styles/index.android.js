@@ -3,12 +3,12 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  text: {
-    ...sharedStyles.text,
-    lineHeight: 19
-  },
   link: {
     ...sharedStyles.link,
+    lineHeight: 19
+  },
+  text: {
+    ...sharedStyles.text,
     lineHeight: 19
   }
 });

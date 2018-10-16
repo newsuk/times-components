@@ -68,9 +68,9 @@ const ArticleListItem = props => {
       <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
     ),
     labelProps: {
-      title: label,
       color: colours.section[section] || colours.section.default,
-      isVideo: hasVideo
+      isVideo: hasVideo,
+      title: label
     }
   };
 

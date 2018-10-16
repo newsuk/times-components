@@ -1,8 +1,8 @@
 export default {
   data: {
     relatedArticleSlice: {
-      sliceName: "StandardSlice",
-      items: null
+      items: null,
+      sliceName: "StandardSlice"
     }
   }
 };

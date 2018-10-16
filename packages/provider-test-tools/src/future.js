@@ -5,10 +5,10 @@ export default function createFuture() {
   });
 
   return {
+    promise: () => promise,
     resolve: () => {
       resolve();
       return promise;
-    },
-    promise: () => promise
+    }
   };
 }

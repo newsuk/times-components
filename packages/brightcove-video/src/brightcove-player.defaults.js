@@ -1,13 +1,13 @@
 export default {
-  width: 320,
-  height: 180,
-  playerId: "default",
-  onError: () => {},
-  onPlay: () => {},
-  onPause: () => {},
-  onFinish: () => {},
-  onProgress: () => {},
-  onDuration: () => {},
   autoplay: false,
-  hideFullScreenButton: false
+  height: 180,
+  hideFullScreenButton: false,
+  onDuration: () => {},
+  onError: () => {},
+  onFinish: () => {},
+  onPause: () => {},
+  onPlay: () => {},
+  onProgress: () => {},
+  playerId: "default",
+  width: 320
 };

@@ -51,8 +51,8 @@ export default () => {
         const missingImage = {
           ...article,
           leadAsset: {
-            title: "Lead 1",
-            crop: {}
+            crop: {},
+            title: "Lead 1"
           }
         };
 

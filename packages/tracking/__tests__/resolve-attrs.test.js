@@ -16,12 +16,15 @@ module.exports = () => {
 
     it("forwards props and eventArgs to getAttrs", () => {
       const getAttrs = (props, eventArgs) => ({
-        someProp: props.one,
-        someArg: eventArgs[0].three
+        someArg: eventArgs[0].three,
+        someProp: props.one
       });
       const attrs = resolveAttrs(getAttrs, { one: "two" }, [{ three: "four" }]);
 
-      expect(attrs).toEqual({ someProp: "two", someArg: "four" });
+      expect(attrs).toEqual({
+        someArg: "four",
+        someProp: "two"
+      });
     });
   });
 };

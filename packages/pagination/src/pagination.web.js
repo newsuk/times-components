@@ -94,16 +94,16 @@ Pagination.defaultProps = {
 export default withTrackEvents(Pagination, {
   analyticsEvents: [
     {
-      eventName: "onNext",
       actionName: "Pressed",
+      eventName: "onNext",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
         direction: "next"
       })
     },
     {
-      eventName: "onPrev",
       actionName: "Pressed",
+      eventName: "onPrev",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
         direction: "previous"

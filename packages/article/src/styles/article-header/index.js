@@ -5,20 +5,23 @@ import sharedStyles from "./shared";
 
 const nativeStyles = {
   ...sharedStyles,
+  articleFlag: {
+    ...sharedStyles.articleFlag,
+    paddingTop: spacing(1)
+  },
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
     fontWeight: "700",
     marginTop: spacing(3)
   },
+  articleLabelWrapper: {
+    marginBottom: spacing(-2.75),
+    marginTop: spacing(2)
+  },
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
-  },
-  articleFlag: {
-    ...sharedStyles.articleFlag,
-    paddingTop: spacing(1)
-  },
-  articleLabelWrapper: { marginTop: spacing(2), marginBottom: spacing(-2.75) }
+  }
 };
 
 const styles = StyleSheet.create({

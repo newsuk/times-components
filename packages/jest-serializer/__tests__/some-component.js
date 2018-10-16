@@ -12,11 +12,11 @@ const SomeComponent = ({ style, children }) => (
 );
 
 SomeComponent.propTypes = {
-  style: ViewPropTypesStyle,
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+  ]).isRequired,
+  style: ViewPropTypesStyle
 };
 
 SomeComponent.defaultProps = {

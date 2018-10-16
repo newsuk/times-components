@@ -9,8 +9,8 @@ class FadeIn extends Component {
 
   componentDidMount() {
     Animated.timing(this.state.fadeAnim, {
-      toValue: 1,
-      duration: 300
+      duration: 300,
+      toValue: 1
     }).start();
   }
 

@@ -9,8 +9,8 @@ export const propTypes = {
   refetch: PropTypes.func.isRequired,
   slug: PropTypes.string.isRequired,
   topic: PropTypes.shape({
-    name: topicHeadPropTypes.name,
-    description: topicHeadPropTypes.description
+    description: topicHeadPropTypes.description,
+    name: topicHeadPropTypes.name
   })
 };
 

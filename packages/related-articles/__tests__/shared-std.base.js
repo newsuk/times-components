@@ -14,23 +14,23 @@ import standard3ArticlesFixture from "../fixtures/standard/3-articles";
 
 const standard0ArticleFixtureData = standard0ArticleFixture.data;
 const standard1ArticleFixtureData = standard1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "Test Short Headline",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const standardhasVideoFixtureData = standard1ArticleFixture({

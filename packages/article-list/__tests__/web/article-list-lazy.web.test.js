@@ -38,7 +38,10 @@ const intersectionObserverInstances = [];
 class FakeIntersectionObserver {
   constructor(cb) {
     this.instanceId = intersectionObserverInstances.length;
-    intersectionObserverInstances.push({ nodes: new Set(), cb });
+    intersectionObserverInstances.push({
+      cb,
+      nodes: new Set()
+    });
   }
 
   observe(node) {
@@ -100,8 +103,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
@@ -134,8 +137,8 @@ const tests = [
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
+          intersectionRatio: indx === 0 ? 0.75 : 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
@@ -168,19 +171,19 @@ const tests = [
           count={3}
         />,
         {
+          attachTo: mountPoint,
           context: {
             tracking: {
               analytics: reporter
             }
-          },
-          attachTo: mountPoint
+          }
         }
       );
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
-          target: node,
-          isIntersecting: indx === 0
+          isIntersecting: indx === 0,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);

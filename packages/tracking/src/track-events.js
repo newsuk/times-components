@@ -43,9 +43,9 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
         (attrs, actionName, trackingName) =>
           this.context.tracking &&
           this.context.tracking.analytics({
-            component: trackingName || componentName,
             action: actionName,
-            attrs
+            attrs,
+            component: trackingName || componentName
           })
       );
     }

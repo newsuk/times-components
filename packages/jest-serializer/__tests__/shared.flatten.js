@@ -14,11 +14,11 @@ export default () => {
       colored: {
         color: "red"
       },
-      padded: {
-        padding: 1
-      },
       custom: {
         backgroundColor: "blue"
+      },
+      padded: {
+        padding: 1
       }
     });
 

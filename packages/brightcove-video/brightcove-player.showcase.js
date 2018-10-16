@@ -19,22 +19,19 @@ const firstArgJSONAction = decorateAction =>
   decorateAction([args => [JSON.stringify(args[0])]]);
 
 export default {
-  name: "Primitives/Brightcove Player",
   children: [
     {
-      type: "story",
-      name: "Launcher with default values",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with default values",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with large player",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -43,11 +40,11 @@ export default {
           videoId={videoId}
           width={800}
         />
-      )
+      ),
+      name: "Launcher with large player",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with hidden fullscreen button",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -55,11 +52,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with hidden fullscreen button",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher fullscreen player",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -68,13 +65,18 @@ export default {
           videoId={videoId}
           width="100%"
         />
-      )
+      ),
+      name: "Launcher fullscreen player",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Inline launcher with default values to demonstrate fullscreen",
       component: () => (
-        <View style={{ width: "100%", height: "100%" }}>
+        <View
+          style={{
+            height: "100%",
+            width: "100%"
+          }}
+        >
           <Text>Line 1</Text>
           <Text>Line 2</Text>
           <Text>Line 3</Text>
@@ -87,11 +89,11 @@ export default {
           <Text>Line 5</Text>
           <Text>Line 6</Text>
         </View>
-      )
+      ),
+      name: "Inline launcher with default values to demonstrate fullscreen",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher fullscreen player with hidden Fullscreen button",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -101,13 +103,18 @@ export default {
           videoId={videoId}
           width="100%"
         />
-      )
+      ),
+      name: "Launcher fullscreen player with hidden Fullscreen button",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Two launchers",
       component: () => (
-        <View style={{ width: "100%", height: "100%" }}>
+        <View
+          style={{
+            height: "100%",
+            width: "100%"
+          }}
+        >
           <BrightcoveVideo
             accountId={accountId}
             height={200}
@@ -123,13 +130,18 @@ export default {
             width={320}
           />
         </View>
-      )
+      ),
+      name: "Two launchers",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with different videos",
       component: () => (
-        <View style={{ width: "100%", height: "100%" }}>
+        <View
+          style={{
+            height: "100%",
+            width: "100%"
+          }}
+        >
           <BrightcoveVideo
             accountId={accountId}
             height={200}
@@ -145,11 +157,11 @@ export default {
             width={320}
           />
         </View>
-      )
+      ),
+      name: "Launcher with different videos",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with poster image",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -159,11 +171,11 @@ export default {
           videoId="1532562858001"
           width={320}
         />
-      )
+      ),
+      name: "Launcher with poster image",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with bad video id",
       component: (_, { decorateAction }) => (
         <BrightcoveVideo
           accountId={accountId}
@@ -173,11 +185,11 @@ export default {
           videoId="x"
           width={800}
         />
-      )
+      ),
+      name: "Launcher with bad video id",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with poster image & bad video id",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -187,11 +199,11 @@ export default {
           videoId="x"
           width={440}
         />
-      )
+      ),
+      name: "Launcher with poster image & bad video id",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with bad account id",
       component: (_, { decorateAction }) => (
         <BrightcoveVideo
           accountId="x"
@@ -201,22 +213,22 @@ export default {
           videoId={videoId}
           width={800}
         />
-      )
+      ),
+      name: "Launcher with bad account id",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with external controls",
       component: () => (
         <VideoWithExternalControls
           accountId={accountId}
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with external controls",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with default play icon",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -224,16 +236,19 @@ export default {
           poster={{ uri: posterImageURI }}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with default play icon",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with play icon defined by Image component",
       component: () => {
         const playIconImage = () => (
           <Image
             source={{ uri: playIconURI }}
-            style={{ width: 70, height: 70 }}
+            style={{
+              height: 70,
+              width: 70
+            }}
           />
         );
 
@@ -246,11 +261,11 @@ export default {
             videoId={videoId}
           />
         );
-      }
+      },
+      name: "Launcher with play icon defined by Image component",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with autoplay",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -259,18 +274,18 @@ export default {
           poster={{ uri: posterImageURI }}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with autoplay",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with default values",
       component: () => (
         <Player accountId={accountId} policyKey={policyKey} videoId={videoId} />
-      )
+      ),
+      name: "Player with default values",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with large dimensions",
       component: () => (
         <Player
           accountId={accountId}
@@ -279,11 +294,11 @@ export default {
           videoId={videoId}
           width={800}
         />
-      )
+      ),
+      name: "Player with large dimensions",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with hidden fullscreen button",
       component: () => (
         <Player
           accountId={accountId}
@@ -291,11 +306,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Player with hidden fullscreen button",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player in fullscreen with hidden fullscreen button",
       component: () => (
         <Player
           accountId={accountId}
@@ -305,11 +320,11 @@ export default {
           videoId={videoId}
           width="100%"
         />
-      )
+      ),
+      name: "Player in fullscreen with hidden fullscreen button",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Two players",
       component: () => (
         <View>
           <Player
@@ -327,22 +342,22 @@ export default {
             width={320}
           />
         </View>
-      )
+      ),
+      name: "Two players",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Players lazy loaded",
       component: () => (
         <VideoAdder
           accountId={accountId}
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Players lazy loaded",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with different videos",
       component: () => (
         <View>
           <Player
@@ -360,11 +375,11 @@ export default {
             width={320}
           />
         </View>
-      )
+      ),
+      name: "Player with different videos",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with poster image",
       component: () => (
         <Player
           accountId={accountId}
@@ -374,11 +389,11 @@ export default {
           videoId="1532562858001"
           width={320}
         />
-      )
+      ),
+      name: "Player with poster image",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with bad video id",
       component: (_, { decorateAction }) => (
         <Player
           accountId={accountId}
@@ -388,11 +403,11 @@ export default {
           videoId="x"
           width={800}
         />
-      )
+      ),
+      name: "Player with bad video id",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with bad account id",
       component: (_, { decorateAction }) => (
         <Player
           accountId="x"
@@ -402,11 +417,11 @@ export default {
           videoId={videoId}
           width={800}
         />
-      )
+      ),
+      name: "Player with bad account id",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with event listeners",
       component: (_, { action }) => (
         <Player
           accountId={accountId}
@@ -418,11 +433,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Player with event listeners",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with event listeners",
       component: (_, { action }) => (
         <BrightcoveVideo
           accountId={accountId}
@@ -434,11 +449,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with event listeners",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with (android only) fullscreen event listeners",
       component: (_, { decorateAction }) => (
         <BrightcoveVideo
           accountId={accountId}
@@ -451,22 +466,22 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with (android only) fullscreen event listeners",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with external controls",
       component: () => (
         <VideoWithExternalControls
           accountId={accountId}
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Player with external controls",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with autoplay",
       component: () => (
         <Player
           accountId={accountId}
@@ -474,11 +489,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Player with autoplay",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Player with auto-play & event listener",
       component: (_, { action }) => (
         <Player
           accountId={accountId}
@@ -491,11 +506,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Player with auto-play & event listener",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with reset on finish",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -503,11 +518,11 @@ export default {
           resetOnFinish
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher with reset on finish",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher direct to fullscreen (native only)",
       component: () => (
         <BrightcoveVideo
           accountId={accountId}
@@ -515,12 +530,11 @@ export default {
           policyKey={policyKey}
           videoId={videoId}
         />
-      )
+      ),
+      name: "Launcher direct to fullscreen (native only)",
+      type: "story"
     },
     {
-      type: "story",
-      name: "Launcher with custom play icon defined by emoji",
-      platform: "web",
       component: () => {
         const playIconEmoji = () => (
           <span aria-label="play-video" role="img">
@@ -537,7 +551,11 @@ export default {
             videoId={videoId}
           />
         );
-      }
+      },
+      name: "Launcher with custom play icon defined by emoji",
+      platform: "web",
+      type: "story"
     }
-  ]
+  ],
+  name: "Primitives/Brightcove Player"
 };

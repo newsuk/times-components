@@ -31,9 +31,9 @@ const Svg = ({ width, viewBox, children }) => {
 };
 
 Svg.propTypes = {
-  width: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
   viewBox: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  width: PropTypes.number.isRequired
 };
 
 export default Svg;

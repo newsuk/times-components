@@ -7,13 +7,13 @@ const styles = StyleSheet.create({
     ...sharedStyles.container,
     marginBottom: 3
   },
-  title: {
-    ...sharedStyles.title,
-    lineHeight: 11
-  },
   iconContainer: {
     ...sharedStyles.iconContainer,
     paddingBottom: 3
+  },
+  title: {
+    ...sharedStyles.title,
+    lineHeight: 11
   }
 });
 

@@ -292,7 +292,9 @@ exports[`default styles 1`] = `
         <div
           className="c7 S4"
         >
-          <div>
+          <div
+            className="S4"
+          >
             <Link>
               <Card>
                 <div
