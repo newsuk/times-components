@@ -242,7 +242,11 @@ export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
   iterator(tests);
 };
 
-export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
+export const threeArticlesTests = ({
+  assert,
+  fixture,
+  name
+}) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -256,7 +260,12 @@ export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
             <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           </Context.Provider>
         );
-        expect(output).toMatchSnapshot();
+
+        if (assert) {
+          assert(expect, output);
+        } else {
+          expect(output).toMatchSnapshot();
+        }
       }
     },
     {
