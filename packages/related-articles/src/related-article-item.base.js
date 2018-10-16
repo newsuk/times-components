@@ -77,7 +77,7 @@ class RelatedArticleItem extends Component {
     return children({
       article: this.props.article,
       card: (
-        <div
+        <View
           ref={node => {
             this.node = node;
           }}
@@ -139,7 +139,7 @@ class RelatedArticleItem extends Component {
               }}
             />
           </Card>
-        </div>
+        </View>
       ),
       onPress
     });
