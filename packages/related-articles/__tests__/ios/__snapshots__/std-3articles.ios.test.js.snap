@@ -13,15 +13,15 @@ exports[`1. three related articles 1`] = `
   <View>
     <View>
       <View>
-        <View>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
+        <Link
+          linkStyle={
+            Object {
+              "padding": 10,
             }
-            url="https://first.io"
-          >
+          }
+          url="https://first.io"
+        >
+          <div>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -61,21 +61,21 @@ exports[`1. three related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </Link>
-        </View>
+          </div>
+        </Link>
       </View>
     </View>
     <View>
       <View>
-        <View>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
+        <Link
+          linkStyle={
+            Object {
+              "padding": 10,
             }
-            url="https://second.io"
-          >
+          }
+          url="https://second.io"
+        >
+          <div>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -115,21 +115,21 @@ exports[`1. three related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </Link>
-        </View>
+          </div>
+        </Link>
       </View>
     </View>
     <View>
       <View>
-        <View>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
+        <Link
+          linkStyle={
+            Object {
+              "padding": 10,
             }
-            url="https://third.io"
-          >
+          }
+          url="https://third.io"
+        >
+          <div>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -169,8 +169,8 @@ exports[`1. three related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </Link>
-        </View>
+          </div>
+        </Link>
       </View>
     </View>
   </View>

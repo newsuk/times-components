@@ -1,6 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import Context from "@times-components/context";
+import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
@@ -26,12 +27,14 @@ export default (additionalTests = []) => {
       name: "article list",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture}
-            emptyStateMessage="Empty state"
-            refetch={() => {}}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture}
+              emptyStateMessage="Empty state"
+              refetch={() => {}}
+            />
+          </Context.Provider>
         );
 
         expect(testInstance).toMatchSnapshot();

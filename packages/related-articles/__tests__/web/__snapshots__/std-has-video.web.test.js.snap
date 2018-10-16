@@ -14,15 +14,15 @@ exports[`1. has video 1`] = `
     <div>
       <div>
         <div>
-          <div>
-            <Link
-              linkStyle={
-                Object {
-                  "padding": 10,
-                }
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
               }
-              url="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
-            >
+            }
+            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          >
+            <div>
               <Card
                 highResSize={null}
                 imageRatio={1.7777777777777777}
@@ -99,8 +99,8 @@ exports[`1. has video 1`] = `
                   </div>
                 </div>
               </Card>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

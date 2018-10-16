@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.2.2...@times-components/ssr@1.3.0) (2018-10-16)
+
+
+### Features
+
+* adding canonical Urls for articles in topic and author-profile ([#1403](https://github.com/newsuk/times-components/issues/1403)) ([945913c](https://github.com/newsuk/times-components/commit/945913c))
+
+
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.2.1...@times-components/ssr@1.2.2) (2018-10-15)
 

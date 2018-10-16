@@ -13,26 +13,24 @@ import { getImageUri, getHeadline } from "./utils";
 import styles from "./styles";
 
 const ArticleListItem = props => {
+  const { highResSize, imageRatio, isLoading, onPress, showImage } = props;
+
   const {
     byline,
     headline,
     hasVideo,
-    highResSize,
-    imageRatio,
-    isLoading,
     label,
-    onPress,
     publicationName,
     publishedTime,
     section,
     shortHeadline,
     shortSummary,
-    showImage,
     summary,
     url
-  } = props;
+  } =
+    props.article || {};
 
-  const imageUri = getImageUri(props);
+  const imageUri = getImageUri(props.article);
   const content = showImage ? summary : shortSummary;
 
   return (

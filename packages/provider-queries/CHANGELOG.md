@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.5.0...@times-components/provider-queries@1.6.0) (2018-10-16)
+
+
+### Features
+
+* adding canonical Urls for articles in topic and author-profile ([#1403](https://github.com/newsuk/times-components/issues/1403)) ([945913c](https://github.com/newsuk/times-components/commit/945913c))
+
+
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.4.0...@times-components/provider-queries@1.5.0) (2018-10-11)
 

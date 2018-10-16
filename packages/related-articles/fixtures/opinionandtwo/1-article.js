@@ -7,6 +7,9 @@ const defaultHeadline =
 const defaultShortHeadline = "Nothing proves Jeremy Corbyn is anti-semitic";
 const defaultLabel = "opinion";
 const defaultSection = "comment";
+const defaultSlug =
+  "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
+const defaultShortIdentifier = "2k629tpvh";
 const defaultSummary105 = [
   {
     attributes: {},
@@ -114,6 +117,8 @@ export default (
     headline = defaultHeadline,
     label = defaultLabel,
     section = defaultSection,
+    slug = defaultSlug,
+    shortIdentifier = defaultShortIdentifier,
     shortHeadline = defaultShortHeadline,
     summary105 = defaultSummary105,
     summary125 = defaultSummary125,
@@ -146,6 +151,8 @@ export default (
           ],
           headline,
           id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          slug,
+          shortIdentifier,
           label,
           leadAsset: {
             crop23: {

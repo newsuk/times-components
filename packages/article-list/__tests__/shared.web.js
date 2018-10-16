@@ -6,6 +6,8 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
+import Context from "@times-components/context";
+import { makeArticleUrl } from "@times-components/test-utils";
 import TestRenderer from "react-test-renderer";
 import "./mocks";
 import { omitWeb as omitProps } from "./utils";
@@ -31,14 +33,16 @@ export default () => {
       name: "article list with no images",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={articlesFixture.slice(0, 1)}
-            emptyStateMessage="Empty state"
-            pageSize={3}
-            refetch={() => {}}
-            showImages={false}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={articlesFixture.slice(0, 1)}
+              emptyStateMessage="Empty state"
+              pageSize={3}
+              refetch={() => {}}
+              showImages={false}
+            />
+          </Context.Provider>
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -57,14 +61,16 @@ export default () => {
         };
 
         const testInstance = TestRenderer.create(
-          <ArticleList
-            adConfig={adConfig}
-            articles={[missingImage]}
-            emptyStateMessage="Empty state"
-            pageSize={3}
-            refetch={() => {}}
-            showImages={false}
-          />
+          <Context.Provider value={{ makeArticleUrl }}>
+            <ArticleList
+              adConfig={adConfig}
+              articles={[missingImage]}
+              emptyStateMessage="Empty state"
+              pageSize={3}
+              refetch={() => {}}
+              showImages={false}
+            />
+          </Context.Provider>
         );
 
         expect(testInstance).toMatchSnapshot();

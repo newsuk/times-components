@@ -55,9 +55,7 @@ exports[`4. loading state 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url={null}
-      >
+      <Link>
         <View>
           <Card
             highResSize={1440}
@@ -75,9 +73,7 @@ exports[`4. loading state 1`] = `
       </View>
     </View>
     <View>
-      <Link
-        url={null}
-      >
+      <Link>
         <View>
           <Card
             highResSize={1440}
@@ -95,9 +91,7 @@ exports[`4. loading state 1`] = `
       </View>
     </View>
     <View>
-      <Link
-        url={null}
-      >
+      <Link>
         <View>
           <Card
             highResSize={1440}
