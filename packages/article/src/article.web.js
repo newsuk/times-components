@@ -3,6 +3,7 @@ import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLoading from "./article-loading";
@@ -67,6 +68,7 @@ class Article extends Component {
       observed,
       onAuthorPress,
       onTopicPress,
+      receiveChildList,
       registerNode
     } = this.props;
 
@@ -83,6 +85,15 @@ class Article extends Component {
           }}
         />
       ) : null;
+    
+    // const contentData = content.map((item, index) => ({
+    //   ...item,
+    //   elementId: `${item.name}.${index}`
+    // }));
+
+    receiveChildList([{
+      elementId: "related-articles"
+    }]);
 
     return (
       <article
@@ -164,7 +175,8 @@ const ArticlePage = ({
   isLoading,
   onAuthorPress,
   onRelatedArticlePress,
-  onTopicPress
+  onTopicPress,
+  receiveChildList
 }) => {
   if (error) {
     return null;
@@ -185,6 +197,7 @@ const ArticlePage = ({
             onAuthorPress={onAuthorPress}
             onRelatedArticlePress={onRelatedArticlePress}
             onTopicPress={onTopicPress}
+            receiveChildList={receiveChildList}
             registerNode={registerNode}
           />
         )}
@@ -196,4 +209,4 @@ const ArticlePage = ({
 ArticlePage.propTypes = articlePagePropTypes;
 ArticlePage.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(ArticlePage);
+export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
