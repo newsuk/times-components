@@ -25,6 +25,7 @@ export default renderComponent => [
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            refetch={() => {}}
           />
         </Context.Provider>
       );
@@ -51,6 +52,7 @@ export default renderComponent => [
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            refetch={() => {}}
           />
         </Context.Provider>
       );
@@ -77,6 +79,7 @@ export default renderComponent => [
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            refetch={() => {}}
           />
         </Context.Provider>
       );

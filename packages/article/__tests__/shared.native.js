@@ -82,6 +82,7 @@ export default () => {
                 onTopicPress={() => {}}
                 onTwitterLinkPress={() => {}}
                 onVideoPress={() => {}}
+                refetch={() => {}}
               />
             )}
           </Wrapper>
@@ -134,6 +135,7 @@ export default () => {
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            refetch={() => {}}
           />
         );
 

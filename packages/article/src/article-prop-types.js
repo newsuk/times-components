@@ -3,7 +3,6 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 
 const articlePropTypes = {
-  adConfig: PropTypes.shape({}).isRequired,
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({
     ...ArticleHeader.propTypes,
