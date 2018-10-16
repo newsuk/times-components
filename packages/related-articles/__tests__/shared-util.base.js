@@ -1,6 +1,7 @@
 import React from "react";
 import mockDate from "mockdate";
 import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import Card from "@times-components/card";
 import Context from "@times-components/context";
 import RelatedArticles from "../src/related-articles";
 
@@ -242,8 +243,44 @@ export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
   iterator(tests);
 };
 
-export const threeArticlesTests = ({
-  assert,
+export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
+  beforeAndAfterEach();
+
+  const tests = [
+    {
+      name,
+      test() {
+        const events = jest.fn();
+
+        const output = renderComponent(
+          <Context.Provider value={{ makeArticleUrl }}>
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+          </Context.Provider>
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: `analytics for ${name}`,
+      test() {
+        const events = jest.fn();
+
+        renderComponent(
+          <Context.Provider value={{ makeArticleUrl }}>
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+          </Context.Provider>
+        );
+
+        expect(events.mock.calls).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
+};
+
+export const threeArticlesWithLeadAssetOverrideTests = ({
+  expected,
   fixture,
   name
 }) => renderComponent => {
@@ -260,26 +297,9 @@ export const threeArticlesTests = ({
             <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           </Context.Provider>
         );
-
-        if (assert) {
-          assert(expect, output);
-        } else {
-          expect(output).toMatchSnapshot();
-        }
-      }
-    },
-    {
-      name: `analytics for ${name}`,
-      test() {
-        const events = jest.fn();
-
-        renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+        expect(output.root.findAllByType(Card)[0].props).toMatchObject(
+          expected
         );
-
-        expect(events.mock.calls).toMatchSnapshot();
       }
     }
   ];

@@ -1,10 +1,10 @@
-import Card from "@times-components/card";
 import {
   noArticlesTests,
   noShortHeadlineTests,
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
+  threeArticlesWithLeadAssetOverrideTests,
   testSummary
 } from "./shared-util";
 import opinionAndTwo0ArticleFixture from "../fixtures/opinionandtwo/0-articles";
@@ -165,11 +165,14 @@ export const sharedThreeArticles = threeArticlesTests({
   name: "one opinion and two support related articles"
 });
 
-export const sharedThreeArticlesWithLeadAssetOverride = threeArticlesTests({
-  assert: (expect, output) =>
-    expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
-      "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
-    ),
-  fixture: opinionAndTwo3ArticlesWithLeadAssetOverrideFixtureData,
-  name: "one opinion and two support related articles with lead asset override"
-});
+export const sharedThreeArticlesWithLeadAssetOverride = threeArticlesWithLeadAssetOverrideTests(
+  {
+    expected: {
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
+    },
+    fixture: opinionAndTwo3ArticlesWithLeadAssetOverrideFixtureData,
+    name:
+      "one opinion and two support related articles with lead asset override"
+  }
+);

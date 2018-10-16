@@ -17,3 +17,6 @@ export const oneArticleTests = util.oneArticleTests();
 export const twoArticlesTests = util.twoArticlesTests;
 
 export const threeArticlesTests = util.threeArticlesTests;
+
+export const threeArticlesWithLeadAssetOverrideTests =
+  util.threeArticlesWithLeadAssetOverrideTests;
