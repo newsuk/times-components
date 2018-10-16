@@ -21,7 +21,7 @@ exports[`1. one opinion and two support related articles 1`] = `
           }
           url="https://first.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={0.6135458167330677}
@@ -71,7 +71,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>
@@ -85,7 +85,7 @@ exports[`1. one opinion and two support related articles 1`] = `
           }
           url="https://second.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -116,7 +116,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>
@@ -130,7 +130,7 @@ exports[`1. one opinion and two support related articles 1`] = `
           }
           url="https://third.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -161,7 +161,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>
