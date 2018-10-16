@@ -1,16 +1,16 @@
 # Article Paragraph
 
-This package provides a paragraph starting with a drop cap letter.
+This package provides an article paragraph view, including drop cap support.
 
-In native, this is done by measuring the length of the text and splitting it
-into 3 textboxes. Uses a
+Web renders paragraph including all markups. Drop cap is implemented as a
+regular children and rendered using CSS floats.
+
+On native, all markups are supported when it's a paragraph without a drop cap.
+If there is a drop cap in the children, a special paragraph is rendered to
+mimick drop cap layout. This is done by measuring the length of the text and
+splitting it into 3 textboxes. Uses a
 [3rd party library](https://github.com/aMarCruz/react-native-text-size) to
 measure text sizes.
-
-On the web, this is done by using CSS floats.
-
-Currently, this component only supports plain text paragraphs, so any text given
-should have the markups stripped.
 
 ## Contributing
 
@@ -47,9 +47,9 @@ yarn test:all
 
 Visit the official
 
-https://components.thetimes.co.uk/?knob-Lead%20Asset=true&knob-Size%20of%20ad%20placeholder%3A=default&knob-GraphQL%C2%A0Endpoint=&knob-Video=true&knob-Section=%23333333&knob-Flags=true&knob-Standfirst=true&knob-Scale=medium&knob-Linked%20Byline=true&knob-Article%20id=&knob-Label=true&selectedKind=Composed%2FDropCap&selectedStory=DropCap&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs
+https://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Scale=medium&knob-Section=%23333333&selectedKind=Primitives%2FArticle%20Paragraph&selectedStory=Paragraph&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs
 
 ## Future
 
-Planning to support complex markups in the paragraph text. iOS support coming
-soon.
+Planning to support complex markups in the drop cap paragraph text on native.
+iOS support for drop caps coming soon.
