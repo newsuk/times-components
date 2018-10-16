@@ -1,19 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import Caption from "@times-components/caption";
+import Image from "@times-components/image";
+import AspectRatioContainer from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
 import {
   LeadAsset,
   LeadAssetCaptionContainer
 } from "../styles/article-body/responsive";
-import AspectRatioContainer from "../media-aspect-ratio";
-
-AspectRatioContainer.propTypes = {
-  aspectRatio: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired
-};
 
 const LeadAssetComponent = ({
   aspectRatio,
