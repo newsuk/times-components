@@ -1,9 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`paragraph with single drop cap 1`] = `
+exports[`paragraph 1`] = `
 <View
   style={
     Object {
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+      }
+    }
+  >
+    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+  </Text>
+</View>
+`;
+
+exports[`paragraph with a drop cap 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
       "paddingLeft": 10,
       "paddingRight": 10,
     }
@@ -23,7 +52,7 @@ exports[`paragraph with single drop cap 1`] = `
       }
     }
   >
-    I
+    T
   </Text>
   <Text
     selectable={true}
@@ -39,7 +68,7 @@ exports[`paragraph with single drop cap 1`] = `
       }
     }
   >
-    n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the
+    his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related 
   </Text>
   <Text
     selectable={true}
@@ -55,7 +84,69 @@ exports[`paragraph with single drop cap 1`] = `
       }
     }
   >
-    wars, he said later that he had learnt “lessons which I have never forgotten.
+    Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+  </Text>
+</View>
+`;
+
+exports[`paragraph with a short text and a drop cap 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 96,
+        "lineHeight": undefined,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -12,
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
+    }
+  >
+    his being Black History Month, last week
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
+    }
+  >
+    
   </Text>
 </View>
 `;

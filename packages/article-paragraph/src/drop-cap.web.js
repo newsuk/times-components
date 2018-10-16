@@ -9,9 +9,7 @@ const DropCapView = ({ colour, children }) => (
 
 DropCapView.propTypes = {
   ...propTypes,
-  children: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired
+  children: PropTypes.string.isRequired
 };
 
 DropCapView.defaultProps = defaultProps;
