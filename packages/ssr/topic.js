@@ -3,7 +3,13 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { TopicProvider } = require("@times-components/provider/rnw");
+const Context = require("@times-components/context/rnw").default;
+const { scales } = require("@times-components/styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
+const makeArticleUrl = require("./make-url");
+
+const scale = scales.large;
+const sectionColour = "#FFFFFF";
 
 module.exports = (client, slug, page) =>
   React.createElement(
@@ -16,17 +22,21 @@ module.exports = (client, slug, page) =>
         slug
       },
       ({ isLoading, error, refetch, topic }) =>
-        React.createElement(Topic, {
-          adConfig: {},
-          analyticsStream: () => {},
-          error,
-          isLoading,
-          onArticlePress: () => {},
-          onTwitterLinkPress: () => {},
-          page,
-          refetch,
-          slug,
-          topic
-        })
+        React.createElement(
+          Context.Provider,
+          { value: { makeArticleUrl, theme: { scale, sectionColour } } },
+          React.createElement(Topic, {
+            adConfig: {},
+            analyticsStream: () => {},
+            error,
+            isLoading,
+            onArticlePress: () => {},
+            onTwitterLinkPress: () => {},
+            page,
+            refetch,
+            slug,
+            topic
+          })
+        )
     )
   );

@@ -121,8 +121,8 @@ class ArticleList extends Component {
             {paginationComponent({ autoScroll: false, hideResults: false })}
           </ListContentContainer>
           {data &&
-            data.map((article, index) => {
-              const { elementId } = article;
+            data.map((item, index) => {
+              const { elementId } = item;
 
               const renderAd = () => {
                 if (index === this.advertPosition && hasAdvertConfig) {
@@ -154,13 +154,14 @@ class ArticleList extends Component {
                           <ListContentContainer>
                             {renderSeperator()}
                             <ArticleListItem
-                              {...article}
+                              article={item.isLoading ? null : item}
                               fadeImageIn={clientHasRendered}
                               highResSize={ArticleList.getImageSize(
                                 observed.get(elementId)
                               )}
                               imageRatio={imageRatio}
                               index={index}
+                              isLoading={item.isLoading === true}
                               length={data.length}
                               lowResSize={100}
                               showImage={showImages}

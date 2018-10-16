@@ -4,7 +4,13 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
+const Context = require("@times-components/context/rnw").default;
+const { scales } = require("@times-components/styleguide/rnw");
+const makeArticleUrl = require("./make-url");
 const adConfig = require("./ad-config.json");
+
+const scale = scales.large;
+const sectionColour = "#FFFFFF";
 
 module.exports = (client, id) =>
   React.createElement(
@@ -17,16 +23,20 @@ module.exports = (client, id) =>
         id
       },
       ({ article, isLoading, error, refetch }) =>
-        React.createElement(Article, {
-          adConfig,
-          analyticsStream: () => {},
-          article,
-          error,
-          isLoading,
-          onAuthorPress: () => {},
-          onRelatedArticlePress: () => {},
-          onTopicPress: () => {},
-          refetch
-        })
+        React.createElement(
+          Context.Provider,
+          { value: { makeArticleUrl, theme: { scale, sectionColour } } },
+          React.createElement(Article, {
+            adConfig,
+            analyticsStream: () => {},
+            article,
+            error,
+            isLoading,
+            onAuthorPress: () => {},
+            onRelatedArticlePress: () => {},
+            onTopicPress: () => {},
+            refetch
+          })
+        )
     )
   );

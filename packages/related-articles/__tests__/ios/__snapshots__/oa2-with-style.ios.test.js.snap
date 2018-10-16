@@ -50,8 +50,8 @@ exports[`default styles 1`] = `
           }
         }
       >
-        <View>
-          <Link>
+        <Link>
+          <div>
             <Card>
               <View>
                 <View
@@ -161,8 +161,8 @@ exports[`default styles 1`] = `
                 </Text>
               </View>
             </Card>
-          </Link>
-        </View>
+          </div>
+        </Link>
       </View>
     </View>
   </View>

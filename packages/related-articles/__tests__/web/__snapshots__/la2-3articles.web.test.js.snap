@@ -14,15 +14,15 @@ exports[`1. one lead and two support related articles 1`] = `
     <div>
       <div>
         <div>
-          <div>
-            <Link
-              linkStyle={
-                Object {
-                  "padding": 10,
-                }
+          <Link
+            linkStyle={
+              Object {
+                "padding": 10,
               }
-              url="https://first.io"
-            >
+            }
+            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          >
+            <div>
               <Card
                 highResSize={null}
                 imageRatio={1.7777777777777777}
@@ -73,21 +73,21 @@ exports[`1. one lead and two support related articles 1`] = `
                   </div>
                 </div>
               </Card>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
         <div />
         <div>
           <div>
-            <div>
-              <Link
-                linkStyle={
-                  Object {
-                    "padding": 10,
-                  }
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
                 }
-                url="https://second.io"
-              >
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
                 <Card
                   highResSize={null}
                   imageRatio={1.7777777777777777}
@@ -123,19 +123,19 @@ exports[`1. one lead and two support related articles 1`] = `
                     </div>
                   </div>
                 </Card>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
           <div>
-            <div>
-              <Link
-                linkStyle={
-                  Object {
-                    "padding": 10,
-                  }
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
                 }
-                url="https://third.io"
-              >
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
                 <Card
                   highResSize={null}
                   imageRatio={1.7777777777777777}
@@ -171,8 +171,8 @@ exports[`1. one lead and two support related articles 1`] = `
                     </div>
                   </div>
                 </Card>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

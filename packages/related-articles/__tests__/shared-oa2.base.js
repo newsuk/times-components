@@ -13,27 +13,29 @@ import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles"
 
 const opinionAndTwo0ArticleFixtureData = opinionAndTwo0ArticleFixture.data;
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
+  url: "https://test.io",
   crop23: "https://crop23.io",
   crop169: "https://crop169.io",
   headline: "Test Headline",
   label: "test label",
   section: "gardening",
   shortHeadline: "Test Short Headline",
+  slug: "test-slug",
   summary125: testSummary(125),
   summary145: testSummary(145),
   summary160: testSummary(160),
-  summary225: testSummary(225),
-  url: "https://test.io"
+  summary225: testSummary(225)
 }).data;
 
 const opinionAndTwoNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture({
+  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "",
-  summary125: testSummary(125),
-  url: "https://test.io"
+  slug: "test-slug",
+  summary125: testSummary(125)
 }).data;
 
 const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
@@ -43,6 +45,7 @@ const opinionAndTwo2ArticlesFixtureData = opinionAndTwo2ArticlesFixture({
   firstLabel: "first label",
   firstSection: "home",
   firstShortHeadline: "First Short Headline",
+  firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstSummary160: testSummary(160),
@@ -68,6 +71,7 @@ const opinionAndTwo3ArticlesFixtureData = opinionAndTwo3ArticlesFixture({
   firstLabel: "first label",
   firstSection: "law",
   firstShortHeadline: "First Short Headline",
+  firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstSummary160: testSummary(160),

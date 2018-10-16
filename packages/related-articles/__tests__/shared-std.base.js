@@ -14,27 +14,30 @@ import standard3ArticlesFixture from "../fixtures/standard/3-articles";
 
 const standard0ArticleFixtureData = standard0ArticleFixture.data;
 const standard1ArticleFixtureData = standard1ArticleFixture({
+  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "Test Short Headline",
-  summary125: testSummary(125),
-  url: "https://test.io"
+  slug: "test-slug",
+  summary125: testSummary(125)
 }).data;
 
 const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
+  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "",
-  summary125: testSummary(125),
-  url: "https://test.io"
+  slug: "test-slug",
+  summary125: testSummary(125)
 }).data;
 
 const standardhasVideoFixtureData = standard1ArticleFixture({
-  hasVideo: true
+  hasVideo: true,
+  slug: "test-slug"
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
@@ -43,6 +46,7 @@ const standard2ArticlesFixtureData = standard2ArticlesFixture({
   firstLabel: "first label",
   firstSection: "puzzle",
   firstShortHeadline: "First Short Headline",
+  firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstUrl: "https://first.io",
   secondCrop169: "https://crop2.io",
@@ -60,6 +64,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   firstLabel: "first label",
   firstSection: "saturdayreview",
   firstShortHeadline: "First Short Headline",
+  firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
   firstUrl: "https://first.io",

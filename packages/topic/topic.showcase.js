@@ -6,6 +6,8 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
+import { makeArticleUrl } from "@times-components/utils";
+import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
@@ -35,33 +37,35 @@ const makeTopic = (decorateAction, params) => (
     params={params}
     render={mocks => (
       <MockedProvider mocks={mocks}>
-        <TopicProvider
-          articleImageRatio={articleImageRatio}
-          debounceTimeMs={250}
-          page={1}
-          pageSize={pageSize}
-          slug={slug}
-        >
-          {({
-            error,
-            isLoading,
-            page,
-            pageSize: authorPageSize,
-            refetch,
-            topic
-          }) => (
-            <Topic
-              error={error}
-              isLoading={isLoading}
-              page={page}
-              pageSize={authorPageSize}
-              refetch={refetch}
-              slug={slug}
-              topic={topic}
-              {...getProps(decorateAction)}
-            />
-          )}
-        </TopicProvider>
+        <Context.Provider value={{ makeArticleUrl }}>
+          <TopicProvider
+            articleImageRatio={articleImageRatio}
+            debounceTimeMs={250}
+            page={1}
+            pageSize={pageSize}
+            slug={slug}
+          >
+            {({
+              error,
+              isLoading,
+              page,
+              pageSize: authorPageSize,
+              refetch,
+              topic
+            }) => (
+              <Topic
+                error={error}
+                isLoading={isLoading}
+                page={page}
+                pageSize={authorPageSize}
+                refetch={refetch}
+                slug={slug}
+                topic={topic}
+                {...getProps(decorateAction)}
+              />
+            )}
+          </TopicProvider>
+        </Context.Provider>
       </MockedProvider>
     )}
   />

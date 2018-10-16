@@ -12,6 +12,7 @@ exports[`1. article list 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead1.io"
+            isLoading={false}
             showImage={true}
           >
             <ArticleSummary
@@ -46,6 +47,7 @@ exports[`1. article list 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead2.io"
+            isLoading={false}
             showImage={true}
           >
             <ArticleSummary
@@ -114,6 +116,7 @@ exports[`2. article list with no images 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead1.io"
+            isLoading={false}
             showImage={false}
           >
             <ArticleSummary
@@ -163,6 +166,7 @@ exports[`3. a retry button when load more fails 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead1.io"
+            isLoading={false}
             showImage={true}
           >
             <ArticleSummary
@@ -211,6 +215,7 @@ exports[`4. no footer with data equalling the count 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead1.io"
+            isLoading={false}
             showImage={true}
           >
             <ArticleSummary
@@ -263,6 +268,7 @@ Array [
         "publishedTime": "2017-11-17T00:01:00.000Z",
         "section": "world",
         "shortHeadline": "ShortHeadline 1",
+        "shortIdentifier": "968n7tdck1",
         "shortSummary": Array [
           Object {
             "attributes": Object {},
@@ -278,6 +284,7 @@ Array [
             "name": "paragraph",
           },
         ],
+        "slug": "this-is-slug-1",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -327,6 +334,7 @@ Array [
         "publicationName": "SUNDAYTIMES",
         "publishedTime": "2017-11-17T00:01:00.000Z",
         "shortHeadline": "ShortHeadline 2",
+        "shortIdentifier": "968n7tdck2",
         "shortSummary": Array [
           Object {
             "attributes": Object {},
@@ -342,6 +350,7 @@ Array [
             "name": "paragraph",
           },
         ],
+        "slug": "this-is-slug-2",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -376,6 +385,7 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
             highResSize={1440}
             imageRatio={1}
             imageUri="https://lead1.io"
+            isLoading={false}
             showImage={true}
           >
             <ArticleSummary
