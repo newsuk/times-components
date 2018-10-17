@@ -171,60 +171,63 @@ exports[`1. a secondary image 1`] = `
 }
 
 <style>
-{
-  "IS1": {
-    "marginBottom": 0,
-  },
-  "S1": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S2": {
-    "font-weight": "inherit",
-    "line-height": "30px",
-    "margin-bottom": "7px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "font-weight": "inherit",
-    "line-height": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S5": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "9px",
-  },
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: inherit;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 9px;
+}
+
+.IS1 {
+  margin-bottom: 0;
 }
 </style>
 
@@ -465,60 +468,63 @@ exports[`2. an inline image 1`] = `
 }
 
 <style>
-{
-  "IS1": {
-    "marginBottom": 0,
-  },
-  "S1": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S2": {
-    "font-weight": "inherit",
-    "line-height": "30px",
-    "margin-bottom": "7px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "font-weight": "inherit",
-    "line-height": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S5": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "9px",
-  },
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: inherit;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 9px;
+}
+
+.IS1 {
+  margin-bottom: 0;
 }
 </style>
 
