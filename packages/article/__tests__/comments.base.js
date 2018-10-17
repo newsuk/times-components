@@ -4,6 +4,7 @@ import TestRenderer from "react-test-renderer";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 const emptyArticle = {
   byline: null,
@@ -27,6 +28,7 @@ export default () =>
 
         const testInstance = TestRenderer.create(
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={article}
@@ -55,6 +57,7 @@ export default () =>
 
         const testInstance = TestRenderer.create(
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={article}

@@ -13,6 +13,7 @@ import shared from "./shared.base";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
 
@@ -61,6 +62,7 @@ export default () => {
           <Wrapper>
             {(byline, isLoading) => (
               <Article
+                {...articleProps}
                 adConfig={adConfig}
                 analyticsStream={() => {}}
                 article={articleFixture({
@@ -103,6 +105,7 @@ export default () => {
 
         const testInstance = TestRenderer.create(
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={articleFixture({
