@@ -1,6 +1,5 @@
 import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
-import { delay } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
