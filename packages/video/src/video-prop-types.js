@@ -20,5 +20,6 @@ export const propTypes = {
 export const defaultProps = {
   paidOnly: false,
   playerId: "default",
+  poster: null,
   skySports: false
 };
