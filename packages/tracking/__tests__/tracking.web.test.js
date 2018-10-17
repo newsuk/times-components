@@ -151,6 +151,11 @@ module.exports = () => {
           elementId: 2,
           someKey: "2",
           someValue: "two"
+        },
+        {
+          elementId: 3,
+          someKey: "3",
+          someValue: "three"
         }
       ];
 
