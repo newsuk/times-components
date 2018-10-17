@@ -40,7 +40,7 @@ exports[`paragraph 1`] = `
 
 <div>
   <p>
-    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
   </p>
 </div>
 `;
@@ -98,7 +98,7 @@ exports[`paragraph with a drop cap 1`] = `
     <span>
       T
     </span>
-    his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+    his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
   </p>
 </div>
 `;
@@ -156,7 +156,7 @@ exports[`paragraph with a short text and a drop cap 1`] = `
     <span>
       T
     </span>
-    his being Black History Month, last week
+    his being Black History
   </p>
 </div>
 `;

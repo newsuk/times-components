@@ -22,7 +22,7 @@ exports[`paragraph 1`] = `
       }
     }
   >
-    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
   </Text>
 </View>
 `;
@@ -68,7 +68,7 @@ exports[`paragraph with a drop cap 1`] = `
       }
     }
   >
-    his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related 
+    his being Black History 
   </Text>
   <Text
     selectable={true}
@@ -84,7 +84,7 @@ exports[`paragraph with a drop cap 1`] = `
       }
     }
   >
-    Policy Week. Both Theresa May and Jeremy Corbyn had their own announcement, each seemingly benign and right-on, each actually destructive and wrong-headed.
+    Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
   </Text>
 </View>
 `;
@@ -130,7 +130,7 @@ exports[`paragraph with a short text and a drop cap 1`] = `
       }
     }
   >
-    his being Black History Month, last week
+    his being Black History
   </Text>
   <Text
     selectable={true}
