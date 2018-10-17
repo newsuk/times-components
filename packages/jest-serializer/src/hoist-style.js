@@ -1,12 +1,21 @@
+import hyphenateStyleName from "hyphenate-style-name";
+import normalizeValue from "react-native-web/dist/cjs/exports/StyleSheet/normalizeValue";
+import createReactDOMStyle from "react-native-web/dist/cjs/exports/StyleSheet/createReactDOMStyle";
+import prefixStyles from "react-native-web/dist/cjs/modules/prefixStyles";
+
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
-const getNormalisedCSSPropertyName = property => property.replace(/([A-Z])/g, "-$1").toLowerCase();
-
-const normaliseCSSPropertyNames = (transformed, [propertyName, value]) => ({
-  ...transformed,
-  [getNormalisedCSSPropertyName(propertyName)]: value
+const transformRNStyleProperty = (acc, [propertyName, value]) => ({
+  ...acc,
+  [hyphenateStyleName(propertyName)]: normalizeValue(propertyName, value)
 });
+
+const transformRNStylesForWeb = style =>
+  Object.entries(createReactDOMStyle(prefixStyles({ ...style }))).reduce(
+    transformRNStyleProperty,
+    {}
+  );
 
 export const hoistStyleTransform = (accum, node, props, children) => {
   const { style, className, ...other } = props;
@@ -43,7 +52,7 @@ export const hoistStyleTransform = (accum, node, props, children) => {
     ? `${className} ${inlineStyleClass}`
     : inlineStyleClass;
 
-  const transformedStyle = Object.entries(style).reduce(normaliseCSSPropertyNames, {});
+  const transformedStyle = transformRNStylesForWeb(style);
 
   return {
     accum: {
