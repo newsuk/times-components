@@ -99,7 +99,6 @@ const renderRow = (analyticsStream, width) => (
         <View elementId="related-articles">
           <RelatedArticles
             analyticsStream={analyticsStream}
-            id="related-articles"
             onPress={onRelatedArticlePress}
             slice={relatedArticleSlice}
           />
