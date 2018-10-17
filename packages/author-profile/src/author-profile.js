@@ -118,7 +118,6 @@ const AuthorProfile = ({
             error={articlesError}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
-            isLoading={isHeaderLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}
