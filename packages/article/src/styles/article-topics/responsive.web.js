@@ -12,16 +12,4 @@ export const TopicsContainer = styled(View)`
     padding-left: 0;
     padding-right: 0;
   }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: none;
-  }
-`;
-
-export const TopicsMetaContainer = styled(View)`
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: block;
-  }
 `;

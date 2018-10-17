@@ -1,25 +1,11 @@
 import React from "react";
 import ArticleTopics from "@times-components/article-topics";
 import PropTypes from "prop-types";
-import styles from "./styles";
-import { TopicsContainer, TopicsMetaContainer } from "./styles/responsive";
+import styles from "../styles/article-topics";
+import { TopicsContainer } from "../styles/article-topics/responsive";
 
 const ShowTopics = ({ device, onPress, topics }) => {
   if (topics && topics.length > 0) {
-    if (device === "DESKTOP") {
-      return (
-        <TopicsMetaContainer>
-          <nav>
-            <ArticleTopics
-              onPress={onPress}
-              style={styles.topicsMetaContainer}
-              topics={topics}
-            />
-          </nav>
-        </TopicsMetaContainer>
-      );
-    }
-
     return (
       <TopicsContainer>
         <nav>

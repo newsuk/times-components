@@ -1,12 +1,11 @@
 import React from "react";
 import ArticleTopics from "@times-components/article-topics";
 import PropTypes from "prop-types";
-import styles from "./styles";
-import { TopicsContainer, TopicsMetaContainer } from "./styles/responsive";
+import styles from "../styles/article-topics";
+import { TopicsMetaContainer } from "../styles/article-topics/responsive";
 
-const ShowTopics = ({ device, onPress, topics }) => {
+const ShowTopics = ({ onPress, topics }) => {
   if (topics && topics.length > 0) {
-    if (device === "DESKTOP") {
       return (
         <TopicsMetaContainer>
           <nav>
@@ -18,26 +17,12 @@ const ShowTopics = ({ device, onPress, topics }) => {
           </nav>
         </TopicsMetaContainer>
       );
-    }
-
-    return (
-      <TopicsContainer>
-        <nav>
-          <ArticleTopics
-            onPress={onPress}
-            style={styles.topicsContainer}
-            topics={topics}
-          />
-        </nav>
-      </TopicsContainer>
-    );
   }
 
   return null;
 };
 
 ShowTopics.propTypes = {
-  device: PropTypes.oneOf(["DESKTOP", null]),
   onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({

@@ -5,7 +5,7 @@ import Context from "@times-components/context";
 import Button from "@times-components/button";
 import { TextLink } from "@times-components/link";
 import styleguide from "@times-components/styleguide";
-import styles from "./styles";
+import styles from "../styles/article-comments";
 
 const Comments = ({
   articleId,

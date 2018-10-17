@@ -1,10 +1,12 @@
 import { StyleSheet } from "react-native";
-import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
-  ...globalStyle,
-  ...sharedStyles
+  ...sharedStyles,
+  supporting: {
+    ...sharedStyles.supporting,
+    lineHeight: 21
+  }
 });
 
 export default styles;
