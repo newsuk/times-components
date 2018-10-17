@@ -79,7 +79,7 @@ Array [
       "attrs": Object {
         "scrollDepth": Object {
           "itemNumber": 1,
-          "name": undefined,
+          "name": "name1",
           "total": 3,
         },
       },
@@ -92,7 +92,7 @@ Array [
       "attrs": Object {
         "scrollDepth": Object {
           "itemNumber": 2,
-          "name": undefined,
+          "name": "name2",
           "total": 3,
         },
       },
@@ -105,7 +105,7 @@ Array [
       "attrs": Object {
         "scrollDepth": Object {
           "itemNumber": 3,
-          "name": undefined,
+          "name": "name3",
           "total": 3,
         },
       },
