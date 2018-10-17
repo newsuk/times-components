@@ -53,13 +53,18 @@ exports[`1. default image 1`] = `
 }
 
 .IS1 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS2 {
   display: table;
-  height: 0;
-  overflow: hidden;
+  height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding-bottom: 66.66666666666667%;
 }
 </style>
@@ -137,13 +142,18 @@ exports[`2. default modal 1`] = `
 }
 
 .IS1 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS2 {
   display: table;
-  height: 0;
-  overflow: hidden;
+  height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding-bottom: 66.66666666666667%;
 }
 </style>

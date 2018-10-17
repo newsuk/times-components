@@ -97,30 +97,39 @@ exports[`card with reversed layout 1`] = `
 }
 
 .IS1 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS2 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS3 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS4 {
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
   z-index: 0;
 }
 
 .IS5 {
   display: table;
-  height: 0;
-  overflow: hidden;
+  height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding-bottom: 150%;
 }
 </style>

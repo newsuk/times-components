@@ -227,7 +227,7 @@ exports[`1. a secondary image 1`] = `
 }
 
 .IS1 {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 </style>
 
@@ -524,7 +524,7 @@ exports[`2. an inline image 1`] = `
 }
 
 .IS1 {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 </style>
 
