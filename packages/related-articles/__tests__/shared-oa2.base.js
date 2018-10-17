@@ -167,10 +167,6 @@ export const sharedThreeArticles = threeArticlesTests({
 
 export const sharedThreeArticlesWithLeadAssetOverride = threeArticlesWithLeadAssetOverrideTests(
   {
-    expected: {
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
-    },
     fixture: opinionAndTwo3ArticlesWithLeadAssetOverrideFixtureData,
     name:
       "one opinion and two support related articles with lead asset override"
