@@ -96,13 +96,11 @@ const renderRow = (analyticsStream, width) => (
     case "relatedArticleSlice": {
       const { relatedArticleSlice } = rowData.data;
       return (
-        <View elementId="related-articles">
-          <RelatedArticles
-            analyticsStream={analyticsStream}
-            onPress={onRelatedArticlePress}
-            slice={relatedArticleSlice}
-          />
-        </View>
+        <RelatedArticles
+          analyticsStream={analyticsStream}
+          onPress={onRelatedArticlePress}
+          slice={relatedArticleSlice}
+        />
       );
     }
 
@@ -141,6 +139,8 @@ class ArticlePage extends Component {
   constructor(props) {
     super(props);
 
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+
     if (props.article && !props.isLoading && !props.error) {
       this.state = {
         dataSource: listViewDataHelper(props.article),
@@ -151,6 +151,18 @@ class ArticlePage extends Component {
         dataSource: {}
       };
     }
+  }
+
+  onViewableItemsChanged(info) {
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(
+        viewableItem =>
+          this.props.onViewed &&
+          this.props.onViewed(viewableItem.item, this.state.dataSource)
+      );
   }
 
   render() {
@@ -164,16 +176,17 @@ class ArticlePage extends Component {
       return <ArticleLoading />;
     }
 
-    receiveChildList([
-      {
-        elementId: "related-articles",
-        name: "related articles"
-      }
-    ]);
+    const articleData = this.state.dataSource.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
+    receiveChildList(articleData);
 
     const ArticleListView = (
       <ArticleContent
-        data={this.state.dataSource}
+        data={articleData}
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
         onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
@@ -183,6 +196,7 @@ class ArticlePage extends Component {
         onTopicPress={this.props.onTopicPress}
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
+        onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={listViewPageSize}
         renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}

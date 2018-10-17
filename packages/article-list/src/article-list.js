@@ -105,7 +105,7 @@ class ArticleList extends Component {
           }))
       : articles.map((article, index) => ({
           ...article,
-          elementId: `${article.id}.${index}`
+          elementId: `${article.type}.${index}`
         }));
 
     if (!articlesLoading) this.props.receiveChildList(data);

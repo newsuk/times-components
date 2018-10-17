@@ -12,13 +12,15 @@ const ArticleContent = ({
   onRelatedArticlePress,
   onTopicPress,
   onTwitterLinkPress,
-  onVideoPress
+  onVideoPress,
+  onViewableItemsChanged
 }) => (
   <FlatList
     data={data}
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
+    onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(
         item,
@@ -52,6 +54,7 @@ ArticleContent.propTypes = {
   onTopicPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  onViewableItemsChanged: PropTypes.func.isRequired,
   renderRow: PropTypes.func.isRequired
 };
 
