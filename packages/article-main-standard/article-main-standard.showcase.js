@@ -6,6 +6,7 @@ import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
+import { makeArticleUrl } from "@times-components/test-utils";
 import {
   ArticleConfigurator,
   makeArticleConfiguration
@@ -31,7 +32,8 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <Context.Provider
+        value={{ makeArticleUrl, theme: { scale, sectionColour } }}>
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}
@@ -122,7 +124,20 @@ export default {
       },
       name: "Default",
       type: "story"
-    }
+    },
+    {
+      component: () => (
+        <Article
+          adConfig={articleAdConfig}
+          analyticsStream={storybookReporter}
+          isLoading
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+        />
+      ),
+      name: "Loading",
+      type: "story"
+    },
   ],
   name: "Pages/Article/Main Standard"
 };
