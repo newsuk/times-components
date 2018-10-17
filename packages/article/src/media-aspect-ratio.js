@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
-  const aspectRatioPercent = ratioHeight / ratioWidth * 100;
+  const aspectRatioPercent = (ratioHeight / ratioWidth) * 100;
   return (
     <View
       style={{

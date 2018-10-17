@@ -6,13 +6,11 @@ const defaultReview2Title = "Lucy Worsley’s Nights at the Opera";
 const defaultParagraph =
   "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a";
 
-export default (
-  {
-    paragraph = defaultParagraph,
-    review1Title = defaultReview1Title,
-    review2Title = defaultReview2Title
-  } = {}
-) => ({
+export default ({
+  paragraph = defaultParagraph,
+  review1Title = defaultReview1Title,
+  review2Title = defaultReview2Title
+} = {}) => ({
   content: () => (
     <ArticleSummaryContent
       ast={[

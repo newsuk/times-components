@@ -9,14 +9,12 @@ const defaultParagraph1 =
 const defaultParagraph2 =
   "Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen";
 
-export default (
-  {
-    byline = defaultByline,
-    headline = defaultHeadline,
-    paragraph1 = defaultParagraph1,
-    paragraph2 = defaultParagraph2
-  } = {}
-) => ({
+export default ({
+  byline = defaultByline,
+  headline = defaultHeadline,
+  paragraph1 = defaultParagraph1,
+  paragraph2 = defaultParagraph2
+} = {}) => ({
   bylineProps: {
     ast: [
       {

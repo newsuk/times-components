@@ -7,21 +7,23 @@ import {
 } from "react-native";
 import PropTypes from "prop-types";
 
-const distanceBetweenTouches = (
-  [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
-) =>
+const distanceBetweenTouches = ([
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) =>
   // Android JS version doesn't support **
   // eslint-disable-next-line no-restricted-properties
   Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-const angleBetweenTouches = (
-  [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
-) => {
+const angleBetweenTouches = ([
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) => {
   const opposite = y1 - y2;
   const adjacent = x1 - x2;
   const rad = Math.atan2(opposite, adjacent);
 
-  return rad * 180 / Math.PI;
+  return (rad * 180) / Math.PI;
 };
 
 class Gestures extends Component {

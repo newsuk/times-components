@@ -39,23 +39,21 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 GRAPHQL_ENDPOINT="http://localhost:4000/graphql" yarn
 ```
 
-2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install
-   fontforge` (See [Fonts section](#fonts))
+2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
 3. Components can be seen running in a storybook:
 
-* web storybook
+- web storybook
   1. `yarn storybook`
   2. go to http://localhost:9001
-* native storybook
+- native storybook
   1. `yarn storybook-native` and leave it running
   2. `yarn ios` to start the iOS app
   3. To start the Android app:
-     * [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
-     * Check Android SDK path is exported to $ANDROID_HOME. In Mac, android sdk
-       is installed to ~/Library/Android/sdk by default. `export
-       ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
-     * `yarn android`
-     * If you get build errors, check your JDK version with `javac -version`,
+     - [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
+     - Check Android SDK path is exported to $ANDROID_HOME. In Mac, android sdk
+       is installed to ~/Library/Android/sdk by default. `export ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
+     - `yarn android`
+     - If you get build errors, check your JDK version with `javac -version`,
        which should print `javac 1.8.XXXX`. Earlier or later versions may not
        work.
   4. go to http://localhost:7007

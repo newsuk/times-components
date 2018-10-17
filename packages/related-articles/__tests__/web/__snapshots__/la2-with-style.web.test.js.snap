@@ -318,7 +318,9 @@ exports[`default styles 1`] = `
           className="c6 c7 c8 S4"
         >
           <Link>
-            <div>
+            <div
+              className="S4"
+            >
               <Card>
                 <div
                   className="S4"

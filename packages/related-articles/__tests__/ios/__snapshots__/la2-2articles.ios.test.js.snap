@@ -21,7 +21,7 @@ exports[`1. one lead and one support related article 1`] = `
           }
           url="https://first.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -61,7 +61,7 @@ exports[`1. one lead and one support related article 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>
@@ -75,7 +75,7 @@ exports[`1. one lead and one support related article 1`] = `
           }
           url="https://second.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -106,7 +106,7 @@ exports[`1. one lead and one support related article 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>

@@ -27,8 +27,7 @@ const ArticleListItem = props => {
     shortSummary,
     summary,
     url
-  } =
-    props.article || {};
+  } = props.article || {};
 
   const imageUri = getImageUri(props.article);
   const content = showImage ? summary : shortSummary;

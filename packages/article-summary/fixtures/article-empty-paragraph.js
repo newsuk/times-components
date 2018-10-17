@@ -10,15 +10,13 @@ const defaultParagraph1 =
   "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.";
 const defaultParagraph2 = "The former punk";
 
-export default (
-  {
-    byline = defaultByline,
-    headline = defaultHeadline,
-    label = defaultLabel,
-    paragraph1 = defaultParagraph1,
-    paragraph2 = defaultParagraph2
-  } = {}
-) => ({
+export default ({
+  byline = defaultByline,
+  headline = defaultHeadline,
+  label = defaultLabel,
+  paragraph1 = defaultParagraph1,
+  paragraph2 = defaultParagraph2
+} = {}) => ({
   bylineProps: {
     ast: [
       {

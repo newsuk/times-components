@@ -65,9 +65,7 @@ class BrightcoveVideo extends Component {
   }
 
   static getScriptUrl(accountId, playerId) {
-    return `//players.brightcove.net/${accountId}/${
-      playerId
-    }_default/index.min.js`;
+    return `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
   }
 
   static getCurrentTimeMs(player) {

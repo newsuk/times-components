@@ -67,5 +67,5 @@ specific to the publication (The Times / The Sunday Times)
 
 This should not apply in the following scenarios:
 
-* Any homepage slices
-* When the article page is missing it's lead image
+- Any homepage slices
+- When the article page is missing it's lead image

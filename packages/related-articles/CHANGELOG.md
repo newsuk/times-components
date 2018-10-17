@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.3.0...@times-components/related-articles@4.3.1) (2018-10-16)
+
+
+### Bug Fixes
+
+* remove div in related articles and use view instead ([#1411](https://github.com/newsuk/times-components/issues/1411)) ([b92822a](https://github.com/newsuk/times-components/commit/b92822a))
+
+
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.2.2...@times-components/related-articles@4.3.0) (2018-10-16)
 

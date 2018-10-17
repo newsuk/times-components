@@ -38,8 +38,7 @@ const ArticleListItem = props => {
     shortHeadline,
     shortSummary,
     summary
-  } =
-    props.article || {};
+  } = props.article || {};
 
   const imageUri = getImageUri(props.article);
   if (isLoading) {

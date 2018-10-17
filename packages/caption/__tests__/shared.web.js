@@ -11,7 +11,11 @@ import shared from "./shared.base";
 export default () => {
   addSerializers(
     expect,
-    compose(stylePrinter, minimalWebTransform, rnwTransform(AppRegistry))
+    compose(
+      stylePrinter,
+      minimalWebTransform,
+      rnwTransform(AppRegistry)
+    )
   );
 
   shared();

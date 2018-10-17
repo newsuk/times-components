@@ -272,38 +272,36 @@ const defaultSecondUrl =
 const defaultSlug =
   "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
-export default (
-  {
-    firstCrop169 = defaultFirstCrop169,
-    firstHeadline = defaultFirstHeadline,
-    firstLabel = defaultFirstLabel,
-    firstSection = defaultFirstSection,
-    firstShortHeadline = defaultFirstShortHeadline,
-    firstSummary105 = defaultFirstSummary105,
-    firstSummary125 = defaultFirstSummary125,
-    firstSummary145 = defaultFirstSummary145,
-    firstSummary160 = defaultFirstSummary160,
-    firstSummary175 = defaultFirstSummary175,
-    firstSummary225 = defaultFirstSummary225,
-    firstTitle = defaultFirstTitle,
-    firstUrl = defaultFirstUrl,
-    firstSlug = defaultSlug,
-    firstShortIdentifier = defaultShortIdentifier,
-    secondCrop169 = defaultSecondCrop169,
-    secondHeadline = defaultSecondHeadline,
-    secondLabel = defaultSecondLabel,
-    secondSection = defaultSecondSection,
-    secondShortHeadline = defaultSecondShortHeadline,
-    secondSummary105 = defaultSecondSummary105,
-    secondSummary125 = defaultSecondSummary125,
-    secondSummary145 = defaultSecondSummary145,
-    secondSummary160 = defaultSecondSummary160,
-    secondSummary175 = defaultSecondSummary175,
-    secondSummary225 = defaultSecondSummary225,
-    secondTitle = defaultSecondTitle,
-    secondUrl = defaultSecondUrl
-  } = {}
-) => ({
+export default ({
+  firstCrop169 = defaultFirstCrop169,
+  firstHeadline = defaultFirstHeadline,
+  firstLabel = defaultFirstLabel,
+  firstSection = defaultFirstSection,
+  firstShortHeadline = defaultFirstShortHeadline,
+  firstSummary105 = defaultFirstSummary105,
+  firstSummary125 = defaultFirstSummary125,
+  firstSummary145 = defaultFirstSummary145,
+  firstSummary160 = defaultFirstSummary160,
+  firstSummary175 = defaultFirstSummary175,
+  firstSummary225 = defaultFirstSummary225,
+  firstTitle = defaultFirstTitle,
+  firstUrl = defaultFirstUrl,
+  firstSlug = defaultSlug,
+  firstShortIdentifier = defaultShortIdentifier,
+  secondCrop169 = defaultSecondCrop169,
+  secondHeadline = defaultSecondHeadline,
+  secondLabel = defaultSecondLabel,
+  secondSection = defaultSecondSection,
+  secondShortHeadline = defaultSecondShortHeadline,
+  secondSummary105 = defaultSecondSummary105,
+  secondSummary125 = defaultSecondSummary125,
+  secondSummary145 = defaultSecondSummary145,
+  secondSummary160 = defaultSecondSummary160,
+  secondSummary175 = defaultSecondSummary175,
+  secondSummary225 = defaultSecondSummary225,
+  secondTitle = defaultSecondTitle,
+  secondUrl = defaultSecondUrl
+} = {}) => ({
   data: {
     relatedArticleSlice: {
       lead: {
@@ -336,14 +334,14 @@ export default (
           publishedTime: "2015-03-13T18:54:58.000Z",
           section: firstSection,
           shortHeadline: firstShortHeadline,
+          shortIdentifier: firstShortIdentifier,
+          slug: firstSlug,
           summary105: firstSummary105,
           summary125: firstSummary125,
           summary145: firstSummary145,
           summary160: firstSummary160,
           summary175: firstSummary175,
           summary225: firstSummary225,
-          slug: firstSlug,
-          shortIdentifier: firstShortIdentifier,
           url: firstUrl
         }
       },
@@ -377,6 +375,8 @@ export default (
           publishedTime: "2018-01-17T12:00:00.000Z",
           section: secondSection,
           shortHeadline: secondShortHeadline,
+          shortIdentifier: firstShortIdentifier,
+          slug: firstSlug,
           summary105: [
             {
               attributes: {},
@@ -389,8 +389,6 @@ export default (
           summary160: secondSummary160,
           summary175: secondSummary175,
           summary225: secondSummary225,
-          slug: firstSlug,
-          shortIdentifier: firstShortIdentifier,
           url: secondUrl
         }
       }

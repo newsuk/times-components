@@ -125,7 +125,13 @@ const renderers = ({ observed, registerNode }) => ({
       element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
     };
   },
-  pullQuote(key, { content, caption: { name, twitter } }) {
+  pullQuote(
+    key,
+    {
+      content,
+      caption: { name, twitter }
+    }
+  ) {
     return {
       element: (
         <PullQuoteContainer key={key}>

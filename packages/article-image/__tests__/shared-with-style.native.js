@@ -15,7 +15,11 @@ jest.mock("@times-components/image", () => ({
 export default () => {
   addSerializers(
     expect,
-    compose(print, flattenStyleTransform, minimalNativeTransform)
+    compose(
+      print,
+      flattenStyleTransform,
+      minimalNativeTransform
+    )
   );
 
   shared(component => {

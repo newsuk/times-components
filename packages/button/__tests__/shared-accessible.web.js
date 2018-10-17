@@ -14,7 +14,11 @@ export default () => {
   addSerializers(
     expect,
     enzymeRenderedSerializer(),
-    compose(print, rnwTransform(AppRegistry), minimalWebTransform)
+    compose(
+      print,
+      rnwTransform(AppRegistry),
+      minimalWebTransform
+    )
   );
 
   shared(mount);

@@ -116,26 +116,24 @@ const defaultUrl =
 const defaultSlug =
   "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
-export default (
-  {
-    crop169 = defaultCrop169,
-    hasVideo = defaultHasVideo,
-    headline = defaultHeadline,
-    label = defaultLabel,
-    section = defaultSection,
-    shortHeadline = defaultShortHeadline,
-    summary105 = defaultSummary105,
-    summary125 = defaultSummary125,
-    summary145 = defaultSummary145,
-    summary160 = defaultSummary160,
-    summary175 = defaultSummary175,
-    summary225 = defaultSummary225,
-    title = defaultTitle,
-    slug = defaultSlug,
-    shortIdentifier = defaultShortIdentifier,
-    url = defaultUrl
-  } = {}
-) => ({
+export default ({
+  crop169 = defaultCrop169,
+  hasVideo = defaultHasVideo,
+  headline = defaultHeadline,
+  label = defaultLabel,
+  section = defaultSection,
+  shortHeadline = defaultShortHeadline,
+  summary105 = defaultSummary105,
+  summary125 = defaultSummary125,
+  summary145 = defaultSummary145,
+  summary160 = defaultSummary160,
+  summary175 = defaultSummary175,
+  summary225 = defaultSummary225,
+  title = defaultTitle,
+  slug = defaultSlug,
+  shortIdentifier = defaultShortIdentifier,
+  url = defaultUrl
+} = {}) => ({
   data: {
     relatedArticleSlice: {
       items: [
@@ -185,14 +183,14 @@ export default (
             publishedTime: "2015-03-13T18:54:58.000Z",
             section,
             shortHeadline,
+            shortIdentifier,
+            slug,
             summary105,
             summary125,
             summary145,
             summary160,
             summary175,
             summary225,
-            slug,
-            shortIdentifier,
             url
           }
         }

@@ -27,7 +27,7 @@
     "@times-components/eslint-config-thetimes": "0.8.2",
     "@times-components/test-utils": "1.2.0",
     "eslint": "4.9.0",
-    "prettier": "1.8.2",
+    "prettier": "1.14.3",
     "rimraf": "2.6.1"
   },
   "dependencies": {

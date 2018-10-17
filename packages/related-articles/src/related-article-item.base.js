@@ -77,7 +77,7 @@ class RelatedArticleItem extends Component {
     return children({
       article: this.props.article,
       card: (
-        <div
+        <View
           ref={node => {
             this.node = node;
           }}
@@ -114,9 +114,7 @@ class RelatedArticleItem extends Component {
                       return (
                         <ArticleSummaryContent
                           ast={this.props.article[`summary${item}`]}
-                          className={`summaryHidden ${summaryClass}${
-                            summaryClassSuffix
-                          }`}
+                          className={`summaryHidden ${summaryClass}${summaryClassSuffix}`}
                           key={item}
                         />
                       );
@@ -139,7 +137,7 @@ class RelatedArticleItem extends Component {
               }}
             />
           </Card>
-        </div>
+        </View>
       ),
       onPress
     });

@@ -31,7 +31,9 @@ const renderComponent = () =>
   );
 
 const gestureHandlers = component => {
-  const { panResponder: { panHandlers } } = component;
+  const {
+    panResponder: { panHandlers }
+  } = component;
 
   return panHandlers;
 };

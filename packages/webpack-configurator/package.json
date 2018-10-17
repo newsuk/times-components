@@ -46,7 +46,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "4.9.0",
     "jest": "23.3.0",
-    "prettier": "1.8.2"
+    "prettier": "1.14.3"
   },
   "peerDependencies": {
     "babel-loader": "7.1.4",

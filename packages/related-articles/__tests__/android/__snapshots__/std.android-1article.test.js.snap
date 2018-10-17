@@ -21,7 +21,7 @@ exports[`1. a single related article 1`] = `
           }
           url="https://test.io"
         >
-          <div>
+          <View>
             <Card
               highResSize={null}
               imageRatio={1.7777777777777777}
@@ -64,7 +64,7 @@ exports[`1. a single related article 1`] = `
                 </Text>
               </View>
             </Card>
-          </div>
+          </View>
         </Link>
       </View>
     </View>
