@@ -29,7 +29,8 @@ const omitKeys = new Set([
   "horizontal",
   "selectable",
   "style",
-  "testID"
+  "testID",
+  "viewabilityConfigCallbackPairs"
 ]);
 
 export default () => {

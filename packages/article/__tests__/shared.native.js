@@ -22,7 +22,8 @@ const omitKeys = new Set([
   "disableVirtualization",
   "horizontal",
   "style",
-  "testID"
+  "testID",
+  "viewabilityConfigCallbackPairs"
 ]);
 
 export default () => {
