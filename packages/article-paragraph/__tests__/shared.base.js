@@ -20,7 +20,9 @@ export default () => {
   });
 
   it("paragraph with a short text and a drop cap", async () => {
-    const testInstance = TestRenderer.create(renderParagraph(dropCapShortTextData));
+    const testInstance = TestRenderer.create(
+      renderParagraph(dropCapShortTextData)
+    );
     await delay(0);
     expect(testInstance).toMatchSnapshot();
   });

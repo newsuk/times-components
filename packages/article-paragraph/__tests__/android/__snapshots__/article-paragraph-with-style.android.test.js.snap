@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`paragraph with a drop cap 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 96,
+        "lineHeight": undefined,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -12,
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
+    }
+  >
+    his being Black History 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
+    }
+  >
+    Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  </Text>
+</View>
+`;
