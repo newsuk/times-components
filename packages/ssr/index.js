@@ -76,7 +76,9 @@ const toNumber = s => {
 };
 
 server.get("/article/:id", (req, res) => {
-  const { params: { id } } = req;
+  const {
+    params: { id }
+  } = req;
   const client = makeClient();
   const App = article(client, id);
 
@@ -99,7 +101,10 @@ server.get("/article/:id", (req, res) => {
 });
 
 server.get("/profile/:slug", (req, res) => {
-  const { params: { slug }, query: { page } } = req;
+  const {
+    params: { slug },
+    query: { page }
+  } = req;
   const pageNum = toNumber(page) || 1;
   const client = makeClient();
   const App = authorProfile(client, slug, pageNum);
@@ -123,7 +128,10 @@ server.get("/profile/:slug", (req, res) => {
 });
 
 server.get("/topic/:slug", (req, res) => {
-  const { params: { slug }, query: { page } } = req;
+  const {
+    params: { slug },
+    query: { page }
+  } = req;
   const pageNum = toNumber(page) || 1;
   const client = makeClient();
   const App = topic(client, slug, pageNum);

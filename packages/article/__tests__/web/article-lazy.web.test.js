@@ -124,7 +124,9 @@ iterator([
       );
 
       const {
-        props: { imageOptions: { highResSize, lowResSize } }
+        props: {
+          imageOptions: { highResSize, lowResSize }
+        }
       } = testRenderer.root.findByType("ArticleImage");
 
       expect(highResSize).toEqual(null);
@@ -180,7 +182,11 @@ iterator([
 
       const [
         ,
-        { props: { imageOptions: { highResSize, lowResSize } } }
+        {
+          props: {
+            imageOptions: { highResSize, lowResSize }
+          }
+        }
       ] = testRenderer.root.findAllByType("ArticleImage");
 
       expect(highResSize).toEqual(600);

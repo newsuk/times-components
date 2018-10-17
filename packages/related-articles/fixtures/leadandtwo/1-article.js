@@ -8,156 +8,153 @@ const defaultSlug =
 const defaultShortIdentifier = "2k629tpvh";
 const defaultSummary105 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary125 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary145 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary160 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary175 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultSummary225 = [
   {
-    name: "paragraph",
     attributes: {},
     children: [
       {
-        name: "text",
         attributes: {
           value:
             "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the"
         },
-        children: []
+        children: [],
+        name: "text"
       }
-    ]
+    ],
+    name: "paragraph"
   }
 ];
 const defaultTitle = "";
 const defaultUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";
 
-export default (
-  {
-    crop169 = defaultCrop169,
-    headline = defaultHeadline,
-    label = defaultLabel,
-    slug = defaultSlug,
-    shortIdentifier = defaultShortIdentifier,
-    shortHeadline = defaultShortHeadline,
-    summary105 = defaultSummary105,
-    summary125 = defaultSummary125,
-    summary145 = defaultSummary145,
-    summary160 = defaultSummary160,
-    summary175 = defaultSummary175,
-    summary225 = defaultSummary225,
-    title = defaultTitle,
-    url = defaultUrl
-  } = {}
-) => ({
+export default ({
+  crop169 = defaultCrop169,
+  headline = defaultHeadline,
+  label = defaultLabel,
+  shortHeadline = defaultShortHeadline,
+  shortIdentifier = defaultShortIdentifier,
+  slug = defaultSlug,
+  summary105 = defaultSummary105,
+  summary125 = defaultSummary125,
+  summary145 = defaultSummary145,
+  summary160 = defaultSummary160,
+  summary175 = defaultSummary175,
+  summary225 = defaultSummary225,
+  title = defaultTitle,
+  url = defaultUrl
+} = {}) => ({
   data: {
     relatedArticleSlice: {
-      sliceName: "LeadOneAndTwoSlice",
       lead: {
         article: {
           byline: [
             {
-              name: "inline",
               attributes: {},
               children: [
                 {
-                  name: "text",
                   attributes: {
                     value: "Deborah Haynes"
                   },
-                  children: []
+                  children: [],
+                  name: "text"
                 }
-              ]
+              ],
+              name: "inline"
             }
           ],
           headline,
-          slug,
-          shortIdentifier,
-          label,
           id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+          label,
           leadAsset: {
-            title,
             crop169: {
               url: crop169
-            }
+            },
+            title
           },
           publicationName: "TIMES",
           publishedTime: "2015-03-13T18:54:58.000Z",
           shortHeadline,
+          shortIdentifier,
+          slug,
           summary105,
           summary125,
           summary145,
@@ -166,7 +163,8 @@ export default (
           summary225,
           url
         }
-      }
+      },
+      sliceName: "LeadOneAndTwoSlice"
     }
   }
 });

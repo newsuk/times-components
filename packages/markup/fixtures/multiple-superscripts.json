@@ -6,8 +6,7 @@
       {
         "name": "text",
         "attributes": {
-          "value":
-            "No three positive integers a, b and c satisfy the equation a"
+          "value": "No three positive integers a, b and c satisfy the equation a"
         },
         "children": []
       },
@@ -92,8 +91,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "No three positive integers a, b and c satisfy the equation a"
+              "value": "No three positive integers a, b and c satisfy the equation a"
             },
             "children": []
           },
@@ -180,8 +178,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "No three positive integers a, b and c satisfy the equation a"
+              "value": "No three positive integers a, b and c satisfy the equation a"
             },
             "children": []
           },

@@ -10,7 +10,10 @@ import { defaultProps, propTypes } from "./key-facts-prop-types";
 import styles from "./styles";
 
 const KeyFacts = ({ ast, onLinkPress }) => {
-  const { children, attributes: { title } } = ast;
+  const {
+    children,
+    attributes: { title }
+  } = ast;
   const { children: keyFactsItems } = children[0];
 
   const renderTitle = (color, fontSize) => {

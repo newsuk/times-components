@@ -15,7 +15,11 @@ jest.mock("@times-components/icons", () => ({ IconVideo: "IconVideo" }));
 export default () => {
   addSerializers(
     expect,
-    compose(print, minimalNativeTransform, flattenStyleTransform)
+    compose(
+      print,
+      minimalNativeTransform,
+      flattenStyleTransform
+    )
   );
 
   const tests = [

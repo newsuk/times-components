@@ -30,17 +30,17 @@ package has a `my-component.showcase.js` file which exports a showcase object.
 
 ## Showcase API
 
-* name - a "/" delineated string describing the location of the showcase in the
+- name - a "/" delineated string describing the location of the showcase in the
   component library. Each "/" moves the showcase one level deeper in the
   component library tree
-* children - an array of objects containing showcases
+- children - an array of objects containing showcases
 
 ### Showcase Object
 
-* type: string: story | decorator
-* name: string
-* platform: string: ios | android | native | web
-* component: function: The method can take optional arguments `knobs` and
+- type: string: story | decorator
+- name: string
+- platform: string: ios | android | native | web
+- component: function: The method can take optional arguments `knobs` and
   `decorators`
 
 ## `my-component.showcase.js`
@@ -76,11 +76,11 @@ NB: we provide a shim for the `select` knob, as it has crashed storybook.
 The showcase package provides some custom
 [decorators](https://storybook.js.org/addons/introduction/#1-decorators):
 
-* CenteredDecorator - centres the wrapped component
-* BarSpacingDecorator - provides some padding above the wrapped component
-* LateralSpacingDecorator - provides some padding on the left and right of the
+- CenteredDecorator - centres the wrapped component
+- BarSpacingDecorator - provides some padding above the wrapped component
+- LateralSpacingDecorator - provides some padding on the left and right of the
   wrapped component
-* WhiteBgColorDecorator - puts the wrapped component on a white background for
+- WhiteBgColorDecorator - puts the wrapped component on a white background for
   easier visual representation
 
 ## Contributing

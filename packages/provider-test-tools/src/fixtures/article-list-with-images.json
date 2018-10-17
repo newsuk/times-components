@@ -8,8 +8,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and"
+              "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and"
             },
             "children": []
           }
@@ -21,8 +20,7 @@
     "leadAsset": {
       "title": "Title",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -34,8 +32,7 @@
     "hasVideo:": false,
     "headline": "Top medal for forces dog who took a bite out of the Taliban",
     "shortHeadline": "Top medal for forces dog",
-    "url":
-      "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
+    "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
     "__typename": "Article"
   },
   {
@@ -47,8 +44,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist"
+              "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist"
             },
             "children": []
           }
@@ -60,8 +56,7 @@
     "leadAsset": {
       "title": "Title",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -70,11 +65,9 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-17T00:01:00.000Z",
     "hasVideo:": false,
-    "headline":
-      "Social media must raise game to beat terrorists, says UN chief",
+    "headline": "Social media must raise game to beat terrorists, says UN chief",
     "shortHeadline": "Social media must raise game to beat terrorists",
-    "url":
-      "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
+    "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
     "__typename": "Article"
   },
   {
@@ -86,8 +79,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Britain\u2019s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a"
+              "value": "Britain\u2019s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a"
             },
             "children": []
           }
@@ -99,8 +91,7 @@
     "leadAsset": {
       "title": "Nad e Ali in Helmand province, Afghanistan.",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -109,11 +100,9 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-14T17:00:00.000Z",
     "hasVideo:": false,
-    "headline":
-      "Cuts have left the army 20 years out of date, says former general",
+    "headline": "Cuts have left the army 20 years out of date, says former general",
     "shortHeadline": "Cuts have left the army 20 years out of date",
-    "url":
-      "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
+    "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
     "__typename": "Article"
   },
   {
@@ -125,8 +114,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Britain\u2019s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000"
+              "value": "Britain\u2019s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000"
             },
             "children": []
           }
@@ -138,8 +126,7 @@
     "leadAsset": {
       "title": "HMS Ocean Embarks British Marines",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06c0e50a-c667-11e7-9914-a38dcc178fcd.jpg?crop=3600%2C2400%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06c0e50a-c667-11e7-9914-a38dcc178fcd.jpg?crop=3600%2C2400%2C0%2C0",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -150,8 +137,7 @@
     "hasVideo:": false,
     "headline": "MoD recruits more civilians as Royal Marines face axe",
     "shortHeadline": "MoD recruits more civilians",
-    "url":
-      "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
+    "url": "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
     "__typename": "Article"
   },
   {
@@ -165,8 +151,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago."
+              "value": "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago."
             },
             "children": []
           }
@@ -191,8 +176,7 @@
     "leadAsset": {
       "title": "",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1d663086-c625-11e7-9914-a38dcc178fcd.jpg?crop=907%2C605%2C87%2C93",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1d663086-c625-11e7-9914-a38dcc178fcd.jpg?crop=907%2C605%2C87%2C93",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -201,11 +185,9 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-11T00:01:00.000Z",
     "hasVideo:": false,
-    "headline":
-      "Suits you: poppy power is branching out for Remembrance appeal",
+    "headline": "Suits you: poppy power is branching out for Remembrance appeal",
     "shortHeadline": "Poppy power is branching out for Remembrance appeal",
-    "url":
-      "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
+    "url": "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
     "__typename": "Article"
   },
   {
@@ -217,8 +199,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending"
+              "value": "The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending"
             },
             "children": []
           }
@@ -230,8 +211,7 @@
     "leadAsset": {
       "title": "Britain's recently appointed Defence Min",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c580c5a-c597-11e7-92dc-06edfbca4aab.jpg?crop=3656%2C2437%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c580c5a-c597-11e7-92dc-06edfbca4aab.jpg?crop=3656%2C2437%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -241,8 +221,7 @@
     "hasVideo:": false,
     "headline": "MoD heralds a \u2018renewed\u2019 US special relationship",
     "shortHeadline": "MoD heralds special relationship",
-    "url":
-      "https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs",
+    "url": "https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs",
     "__typename": "Article"
   },
   {
@@ -254,8 +233,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "A leading US general warned yesterday against cost cuts to Britain\u2019s armed forces as the new defence secretary made his first outing on the world"
+              "value": "A leading US general warned yesterday against cost cuts to Britain\u2019s armed forces as the new defence secretary made his first outing on the world"
             },
             "children": []
           }
@@ -267,8 +245,7 @@
     "leadAsset": {
       "title": "British troops in Iraq",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4c179870-c477-11e7-9914-a38dcc178fcd.jpg?crop=3484%2C2323%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4c179870-c477-11e7-9914-a38dcc178fcd.jpg?crop=3484%2C2323%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -276,11 +253,9 @@
     "publicationName": "TIMES",
     "publishedTime": "2017-11-09T00:01:00.000Z",
     "hasVideo:": false,
-    "headline":
-      "Defence cuts will hit Britain\u2019s standing, warns US general",
+    "headline": "Defence cuts will hit Britain\u2019s standing, warns US general",
     "shortHeadline": "Defence cuts will hit Britain\u2019s standing",
-    "url":
-      "https://www.thetimes.co.uk/article/us-general-ben-hodges-warns-britain-against-more-defence-cuts-wh7d6pn76",
+    "url": "https://www.thetimes.co.uk/article/us-general-ben-hodges-warns-britain-against-more-defence-cuts-wh7d6pn76",
     "__typename": "Article"
   },
   {
@@ -292,8 +267,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Britain\u2019s air war against Islamic State is set to wind down next year, with commanders looking at bringing Royal Air Force fast jets home from"
+              "value": "Britain\u2019s air war against Islamic State is set to wind down next year, with commanders looking at bringing Royal Air Force fast jets home from"
             },
             "children": []
           }
@@ -305,8 +279,7 @@
     "leadAsset": {
       "title": "Defence Secretary Visits UK Service Personnel in Cyprus",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65c3ef0c-c0b8-11e7-b58a-4186f6049f2e.jpg?crop=1500%2C1000%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65c3ef0c-c0b8-11e7-b58a-4186f6049f2e.jpg?crop=1500%2C1000%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -316,8 +289,7 @@
     "hasVideo:": false,
     "headline": "RAF ready to withdraw as Isis battle enters endgame",
     "shortHeadline": "RAF ready to withdraw",
-    "url":
-      "https://www.thetimes.co.uk/article/raf-ready-to-withdraw-as-isis-battle-enters-endgame-jj7l3b02v",
+    "url": "https://www.thetimes.co.uk/article/raf-ready-to-withdraw-as-isis-battle-enters-endgame-jj7l3b02v",
     "__typename": "Article"
   },
   {
@@ -329,8 +301,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Sir Michael Fallon was reported to No 10 for inappropriate behaviour this week by his cabinet colleague Andrea Leadsom, it has been claimed."
+              "value": "Sir Michael Fallon was reported to No 10 for inappropriate behaviour this week by his cabinet colleague Andrea Leadsom, it has been claimed."
             },
             "children": []
           }
@@ -355,8 +326,7 @@
     "leadAsset": {
       "title": "(FILES) This taken on October",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe1cca1e6-c024-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe1cca1e6-c024-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -366,8 +336,7 @@
     "hasVideo:": false,
     "headline": "Fallon denies lewd comment about Leadsom\u2019s cold hands",
     "shortHeadline": "Fallon denies lewd comment",
-    "url":
-      "https://www.thetimes.co.uk/article/fallon-denies-lewd-comment-about-leadsom-s-cold-hands-gkp3wnzn0",
+    "url": "https://www.thetimes.co.uk/article/fallon-denies-lewd-comment-about-leadsom-s-cold-hands-gkp3wnzn0",
     "__typename": "Article"
   },
   {
@@ -379,8 +348,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Shock and curiosity were the prevailing sentiments at the Ministry of Defence yesterday after Gavin Williamson was named the new secretary of"
+              "value": "Shock and curiosity were the prevailing sentiments at the Ministry of Defence yesterday after Gavin Williamson was named the new secretary of"
             },
             "children": []
           }
@@ -392,8 +360,7 @@
     "leadAsset": {
       "title": "Sexual harassment",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fece59432-c008-11e7-b58a-4186f6049f2e.jpg?crop=2879%2C1920%2C377%2C10",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fece59432-c008-11e7-b58a-4186f6049f2e.jpg?crop=2879%2C1920%2C377%2C10",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -403,8 +370,7 @@
     "hasVideo:": false,
     "headline": "Gavin who? Shock at MoD\u2019s latest recruit",
     "shortHeadline": "Shock at MoD\u2019s latest recruit",
-    "url":
-      "https://www.thetimes.co.uk/article/who-shock-at-mod-s-latest-recruit-gavin-williamson-968n7tdck",
+    "url": "https://www.thetimes.co.uk/article/who-shock-at-mod-s-latest-recruit-gavin-williamson-968n7tdck",
     "__typename": "Article"
   },
   {
@@ -416,8 +382,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Sir Michael Fallon resigned as defence secretary last night amid suggestions of inappropriate behaviour towards female journalists."
+              "value": "Sir Michael Fallon resigned as defence secretary last night amid suggestions of inappropriate behaviour towards female journalists."
             },
             "children": []
           }
@@ -442,8 +407,7 @@
     "leadAsset": {
       "title": "Britain's Defence Secretary Michael Fall",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc142d236-bf3b-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc142d236-bf3b-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -453,8 +417,7 @@
     "hasVideo:": false,
     "headline": "Fallon resigns as new sleaze claims emerge",
     "shortHeadline": "Fallon resigns",
-    "url":
-      "https://www.thetimes.co.uk/article/fallon-resigns-as-new-sleaze-claims-emerge-khsks7jpb",
+    "url": "https://www.thetimes.co.uk/article/fallon-resigns-as-new-sleaze-claims-emerge-khsks7jpb",
     "__typename": "Article"
   },
   {
@@ -466,8 +429,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Next February was to be a special month for Sir Michael Fallon."
+              "value": "Next February was to be a special month for Sir Michael Fallon."
             },
             "children": []
           }
@@ -480,8 +442,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "It would mark the moment he became the longest-serving Conservative defence"
+              "value": "It would mark the moment he became the longest-serving Conservative defence"
             },
             "children": []
           }
@@ -493,8 +454,7 @@
     "leadAsset": {
       "title": "FILE - Defence Secretary Sir Michael Fallon Resigns",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa16fe6f8-bf52-11e7-8bb9-94e1372175c0.jpg?crop=3000%2C2000%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa16fe6f8-bf52-11e7-8bb9-94e1372175c0.jpg?crop=3000%2C2000%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -504,8 +464,7 @@
     "hasVideo:": false,
     "headline": "Fallon admits falling short and leaves the job he loved",
     "shortHeadline": "Fallon admits falling short",
-    "url":
-      "https://www.thetimes.co.uk/article/sir-michael-fallon-admits-falling-short-and-leaves-the-job-he-loved-mdvrzvwq6",
+    "url": "https://www.thetimes.co.uk/article/sir-michael-fallon-admits-falling-short-and-leaves-the-job-he-loved-mdvrzvwq6",
     "__typename": "Article"
   },
   {
@@ -517,8 +476,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Defence chiefs are considering scrapping a special allowance given to soldiers serving in Iraq, provoking anger from troops, military sources"
+              "value": "Defence chiefs are considering scrapping a special allowance given to soldiers serving in Iraq, provoking anger from troops, military sources"
             },
             "children": []
           }
@@ -530,8 +488,7 @@
     "leadAsset": {
       "title": "British troops in Iraq",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0f23034c-be95-11e7-b58a-4186f6049f2e.jpg?crop=3484%2C2323%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0f23034c-be95-11e7-b58a-4186f6049f2e.jpg?crop=3484%2C2323%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -541,8 +498,7 @@
     "hasVideo:": false,
     "headline": "Troops posted to Iraq face losing \u00a329 daily allowance",
     "shortHeadline": "Troops posted to Iraq face losing allowance",
-    "url":
-      "https://www.thetimes.co.uk/article/british-troops-posted-to-iraq-face-losing-29-daily-allowance-qnnk80qb9",
+    "url": "https://www.thetimes.co.uk/article/british-troops-posted-to-iraq-face-losing-29-daily-allowance-qnnk80qb9",
     "__typename": "Article"
   },
   {
@@ -554,8 +510,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The need to scavenge parts from warships and submarines to keep the rest of the Royal Navy\u2019s frontline fleet running has jumped by almost 50 per"
+              "value": "The need to scavenge parts from warships and submarines to keep the rest of the Royal Navy\u2019s frontline fleet running has jumped by almost 50 per"
             },
             "children": []
           }
@@ -567,8 +522,7 @@
     "leadAsset": {
       "title": "British Royal Navy shortage of ships for the fleet",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0da1a784-be5f-11e7-b58a-4186f6049f2e.jpg?crop=3727%2C2485%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0da1a784-be5f-11e7-b58a-4186f6049f2e.jpg?crop=3727%2C2485%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -578,8 +532,7 @@
     "hasVideo:": false,
     "headline": "Navy has to scavenge more parts",
     "shortHeadline": "Navy has to scavenge more",
-    "url":
-      "https://www.thetimes.co.uk/article/royal-navy-has-to-scavenge-more-parts-national-audit-office-says-gzdxx7zpm",
+    "url": "https://www.thetimes.co.uk/article/royal-navy-has-to-scavenge-more-parts-national-audit-office-says-gzdxx7zpm",
     "__typename": "Article"
   },
   {
@@ -591,8 +544,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Britain\u2019s ability to support Nato operations will be damaged if military chiefs scrap their only two amphibious assault ships to save money"
+              "value": "Britain\u2019s ability to support Nato operations will be damaged if military chiefs scrap their only two amphibious assault ships to save money"
             },
             "children": []
           }
@@ -604,8 +556,7 @@
     "leadAsset": {
       "title": "HMS Bulwark.",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F419b3560-bcd3-11e7-8bb9-94e1372175c0.jpg?crop=3273%2C2182%2C430%2C55",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F419b3560-bcd3-11e7-8bb9-94e1372175c0.jpg?crop=3273%2C2182%2C430%2C55",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -615,8 +566,7 @@
     "hasVideo:": true,
     "headline": "Scrapping assault ships risks Nato role, military told",
     "shortHeadline": "Scrapping assault ships risks Nato role",
-    "url":
-      "https://www.thetimes.co.uk/article/scrapping-assault-ships-risks-nato-role-military-told-69ddr6qqr",
+    "url": "https://www.thetimes.co.uk/article/scrapping-assault-ships-risks-nato-role-military-told-69ddr6qqr",
     "__typename": "Article"
   },
   {
@@ -628,8 +578,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The estimated lifetime cost to operate and support the world\u2019s most expensive warplane has risen by almost a quarter in four years, a US spending"
+              "value": "The estimated lifetime cost to operate and support the world\u2019s most expensive warplane has risen by almost a quarter in four years, a US spending"
             },
             "children": []
           }
@@ -641,8 +590,7 @@
     "leadAsset": {
       "title": "",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe15fa92e-bb47-11e7-b7b5-90f864fcf112.jpg?crop=5076%2C3384%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe15fa92e-bb47-11e7-b7b5-90f864fcf112.jpg?crop=5076%2C3384%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -652,8 +600,7 @@
     "hasVideo:": true,
     "headline": "New warplane costs $1\u00a0trillion to operate",
     "shortHeadline": "New warplane costs $1\u00a0trillion",
-    "url":
-      "https://www.thetimes.co.uk/article/new-f-35-warplane-costs-1-trillion-to-operate-sp6p3wdw2",
+    "url": "https://www.thetimes.co.uk/article/new-f-35-warplane-costs-1-trillion-to-operate-sp6p3wdw2",
     "__typename": "Article"
   },
   {
@@ -665,8 +612,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Military chiefs must find an extra \u00a3300 million in savings this year to cover a rise in the cost of Britain\u2019s replacement fleet of Trident"
+              "value": "Military chiefs must find an extra \u00a3300 million in savings this year to cover a rise in the cost of Britain\u2019s replacement fleet of Trident"
             },
             "children": []
           }
@@ -678,8 +624,7 @@
     "leadAsset": {
       "title": "Defence Secretary visit to Faslane",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe4a27532-ba78-11e7-85ff-fb955b2fbca8.jpg?crop=3495%2C2330%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe4a27532-ba78-11e7-85ff-fb955b2fbca8.jpg?crop=3495%2C2330%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -689,8 +634,7 @@
     "hasVideo:": false,
     "headline": "Forces must find \u00a3300m for rising Trident costs",
     "shortHeadline": "Forces must find \u00a3300m",
-    "url":
-      "https://www.thetimes.co.uk/article/forces-must-find-300m-for-rising-trident-costs-bmxnl9577",
+    "url": "https://www.thetimes.co.uk/article/forces-must-find-300m-for-rising-trident-costs-bmxnl9577",
     "__typename": "Article"
   },
   {
@@ -702,8 +646,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Britain is considering selling frontline warships and has axed two mine-hunting vessels amid a funding crisis."
+              "value": "Britain is considering selling frontline warships and has axed two mine-hunting vessels amid a funding crisis."
             },
             "children": []
           }
@@ -728,8 +671,7 @@
     "leadAsset": {
       "title": "",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa86af5e8-b9c5-11e7-85ff-fb955b2fbca8.jpg?crop=5616%2C3744%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa86af5e8-b9c5-11e7-85ff-fb955b2fbca8.jpg?crop=5616%2C3744%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -739,8 +681,7 @@
     "hasVideo:": false,
     "headline": "Britain mulls warships sale as military cuts deepen",
     "shortHeadline": "Britain mulls warships sale",
-    "url":
-      "https://www.thetimes.co.uk/article/britain-mulls-warships-sale-as-military-cuts-deepen-2j0d0s5bs",
+    "url": "https://www.thetimes.co.uk/article/britain-mulls-warships-sale-as-military-cuts-deepen-2j0d0s5bs",
     "__typename": "Article"
   },
   {
@@ -752,8 +693,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Criticism of Saudi Arabia by MPs is not helping British arms sales to the kingdom, Sir Michael Fallon, the defence secretary, said yesterday."
+              "value": "Criticism of Saudi Arabia by MPs is not helping British arms sales to the kingdom, Sir Michael Fallon, the defence secretary, said yesterday."
             },
             "children": []
           }
@@ -778,8 +718,7 @@
     "leadAsset": {
       "title": "BAE Systems jobs",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4321de8c-b9c4-11e7-85ff-fb955b2fbca8.jpg?crop=3499%2C2333%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4321de8c-b9c4-11e7-85ff-fb955b2fbca8.jpg?crop=3499%2C2333%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -789,8 +728,7 @@
     "hasVideo:": false,
     "headline": "\u2018MP criticism could harm arms deal\u2019",
     "shortHeadline": "Citicism could harm arms deal",
-    "url":
-      "https://www.thetimes.co.uk/article/mp-criticism-could-harm-saudi-arms-deal-warns-fallon-k97dxp3vj",
+    "url": "https://www.thetimes.co.uk/article/mp-criticism-could-harm-saudi-arms-deal-warns-fallon-k97dxp3vj",
     "__typename": "Article"
   },
   {
@@ -802,8 +740,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Senior US military officers are warning against cuts to the Royal Marines, with one Marine colonel saying that it would be very damaging."
+              "value": "Senior US military officers are warning against cuts to the Royal Marines, with one Marine colonel saying that it would be very damaging."
             },
             "children": []
           }
@@ -826,11 +763,9 @@
     "id": "3f434bca-b8f7-11e7-b7b5-90f864fcf112",
     "label": "",
     "leadAsset": {
-      "title":
-        "Final Preparations Are Made Ahead Of The Opening Ceremony Of The Olympic Games",
+      "title": "Final Preparations Are Made Ahead Of The Opening Ceremony Of The Olympic Games",
       "crop": {
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c937b1c-b8e4-11e7-b7b5-90f864fcf112.jpg?crop=2877%2C1918%2C0%2C0",
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c937b1c-b8e4-11e7-b7b5-90f864fcf112.jpg?crop=2877%2C1918%2C0%2C0",
         "__typename": "Crop"
       },
       "__typename": "Image"
@@ -840,8 +775,7 @@
     "hasVideo:": false,
     "headline": "US military officers raise fears over Royal Marine cuts",
     "shortHeadline": "US military officers raise fears over cuts",
-    "url":
-      "https://www.thetimes.co.uk/article/us-military-officers-raise-fears-over-royal-marine-cuts-gphqtd6pq",
+    "url": "https://www.thetimes.co.uk/article/us-military-officers-raise-fears-over-royal-marine-cuts-gphqtd6pq",
     "__typename": "Article"
   }
 ]

@@ -7,10 +7,8 @@
           "article": {
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "hasVideo": true,
-            "headline":
-              "Now for a new battle: bringing the fragile masterpiece over safely",
-            "slug":
-              "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "slug": "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely",
             "shortIdentifier": "2k629tpvh",
             "shortHeadline": "Bringing the fragile masterpiece over safely",
             "section": "thedish",
@@ -22,8 +20,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
                     },
                     "children": []
                   }
@@ -38,8 +35,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
                     },
                     "children": []
                   }
@@ -54,8 +50,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
                     },
                     "children": []
                   }
@@ -70,8 +65,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
                     },
                     "children": []
                   }
@@ -86,8 +80,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
                     },
                     "children": []
                   }
@@ -102,8 +95,7 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value":
-                        "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
+                      "value": "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
                     },
                     "children": []
                   }
@@ -113,8 +105,7 @@
             "publicationName": "TIMES",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "label": "BAYEUX TAPESTRY",
-            "url":
-              "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
+            "url": "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
             "byline": [
               {
                 "name": "author",
@@ -148,11 +139,9 @@
             "leadAsset": {
               "type": "Video",
               "posterImage": {
-                "title":
-                  "*** BESTPIX *** TOPSHOT-SINGAPORE-US-NKOREA-DIPLOMACY-SUMMIT",
+                "title": "*** BESTPIX *** TOPSHOT-SINGAPORE-US-NKOREA-DIPLOMACY-SUMMIT",
                 "crop": {
-                  "url":
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
+                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
                 }
               }
             }

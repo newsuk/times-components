@@ -19,9 +19,9 @@ installs the latest version of each package found in the monorepo.
 `--list` prints all package versions found in the monorepo. Based on the used
 rules, packages will be rendered in different colours:
 
-* Green => nothing to do.
-* Yellow => rules available to resolve the conflict.
-* Red => no rule available to resolve this conflict.
+- Green => nothing to do.
+- Yellow => rules available to resolve the conflict.
+- Red => no rule available to resolve this conflict.
 
 If no rules are available, set a strategy or fix the issue by using `--pick`.
 
@@ -148,8 +148,7 @@ dependencies to _0.54.2_
 
 The filter allows you to restrict the nodes that will be part of the graph.
 
-The graph is described as a set of relationship of the shape `package@version =>
-dependency@version`. A Node is included in the graph if the supplied pattern
+The graph is described as a set of relationship of the shape `package@version => dependency@version`. A Node is included in the graph if the supplied pattern
 matches the relationship. Currently only supported placeholder symbol is "\*".
 
 #### Examples

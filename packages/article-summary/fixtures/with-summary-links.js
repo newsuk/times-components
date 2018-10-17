@@ -12,16 +12,14 @@ const defaultLink2 =
   "https://www.thetimes.co.uk/article/timeline-windrush-immigration-scandals-29s3vtp53";
 const defaultId2 = "timeline-windrush-immigration-scandals-29s3vtp53";
 
-export default (
-  {
-    headline = defaultHeadline,
-    label = defaultLabel,
-    link1 = defaultLink1,
-    id1 = defaultId1,
-    link2 = defaultLink2,
-    id2 = defaultId2
-  } = {}
-) => ({
+export default ({
+  headline = defaultHeadline,
+  label = defaultLabel,
+  link1 = defaultLink1,
+  id1 = defaultId1,
+  link2 = defaultLink2,
+  id2 = defaultId2
+} = {}) => ({
   content: () => (
     <ArticleSummaryContent
       ast={[

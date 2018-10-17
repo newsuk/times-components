@@ -12,8 +12,8 @@ requirements \* other than importing the desired serializers for your needs.
 
 ### Supported
 
-* Jest@21.2.1
-* Node@8.11.3
+- Jest@21.2.1
+- Node@8.11.3
 
 ## Getting started
 
@@ -232,7 +232,10 @@ e.g.
 ```javascript
 import { AppRegistry } from "react-native-web";
 
-compose(stylePrinter, rnwTransform(AppRegistry, ["color", "fontSize"]));
+compose(
+  stylePrinter,
+  rnwTransform(AppRegistry, ["color", "fontSize"])
+);
 ```
 
 will assign a generic `className` to the Node and print the styles with that

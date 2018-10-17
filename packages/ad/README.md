@@ -16,16 +16,16 @@ placeholder image.
 DFP is used by the commercial team to set up the campaigns. They use this to
 configure:
 
-* Ad images of various sizes
-* Type of ad (display, sponsored, etc)
-* Date range of campaign
-* Target number of impressions
-* Loading pattern (more impression up front or even spread over time)
-* Creatives per page (i.e. whether to repeat ads on page)
-* Rotation weighting rules (e.g. optimise to place best performing ad more
+- Ad images of various sizes
+- Type of ad (display, sponsored, etc)
+- Date range of campaign
+- Target number of impressions
+- Loading pattern (more impression up front or even spread over time)
+- Creatives per page (i.e. whether to repeat ads on page)
+- Rotation weighting rules (e.g. optimise to place best performing ad more
   often)
-* Frequency capping
-* Targeting
+- Frequency capping
+- Targeting
 
 ## Targeting
 
@@ -88,12 +88,12 @@ We have distinct positions on a page where we can display Ads. We refer to them
 as ad slots with a unique identifiers so that we can request ads for those
 positions uniquely from DFP. Each ad slot allows for certain fixed ad sizes.
 
-* Header - this is the slot on the top of the article page.
-* Inline - this is the ad slot after the 5th paragraph of an article body
-* Sponsored ads - TBD
-* Pixel - TBD
-* Pixelskin - TBD
-* Pixelteads - TBD
+- Header - this is the slot on the top of the article page.
+- Inline - this is the ad slot after the 5th paragraph of an article body
+- Sponsored ads - TBD
+- Pixel - TBD
+- Pixelskin - TBD
+- Pixelteads - TBD
 
 ## Testing GPT and Grapeshot
 
@@ -124,12 +124,12 @@ implement header bidding. We load a prebid script which adds a `pbjs` object
 onto the `window` object. The gpt request waits for prebid request to fulfill.
 These are some of the bidders:
 
-* appnexus
-* Rubicon
-* Criteo
-* Pubmatic
-* indexExchange
-* Amazon - has a separate script that does the bidding for amazon.
+- appnexus
+- Rubicon
+- Criteo
+- Pubmatic
+- indexExchange
+- Amazon - has a separate script that does the bidding for amazon.
 
 ## Testing
 

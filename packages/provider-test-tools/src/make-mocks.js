@@ -3,9 +3,10 @@ import { graphql } from "graphql";
 import { print } from "graphql/language/printer";
 import { printSchema, buildClientSchema } from "graphql/utilities";
 
-export default ({ data: { __schema } }) => (
-  { types: defaultTypes, values: defaultValues } = {}
-) => (query, { types = {}, values = {}, variables } = {}) => {
+export default ({ data: { __schema } }) => ({
+  types: defaultTypes,
+  values: defaultValues
+} = {}) => (query, { types = {}, values = {}, variables } = {}) => {
   const schemaSDL = printSchema(buildClientSchema({ __schema }));
 
   const schema = makeExecutableSchema({

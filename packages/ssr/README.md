@@ -35,8 +35,8 @@ yarn start
 Run a simple node server which serves up the various pages which currently
 include:
 
-* /profile/:author-slug
-* /topic/:topic-slug
+- /profile/:author-slug
+- /topic/:topic-slug
 
 They will use the client side bundle you generated above. You can optionally set
 `AUTH_TOKEN` as an envar (instructions should be available from your API
@@ -71,9 +71,9 @@ yarn lint
 
 ## Future
 
-* Publish : potentially we want to look at using this as our source of truth for
+- Publish : potentially we want to look at using this as our source of truth for
   server-side rendering, this would mean exporting and publishing the code to be
   used by render, so it's "all the same code"
 
-* Bundle Size: we bundle packages on CI in master, we could then bundle here and
+- Bundle Size: we bundle packages on CI in master, we could then bundle here and
   lint for excessively sized bundles
