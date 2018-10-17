@@ -1,6 +1,13 @@
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
+const getNormalisedCSSPropertyName = property => property.replace(/([A-Z])/g, "-$1").toLowerCase();
+
+const normaliseCSSPropertyNames = (transformed, [propertyName, value]) => ({
+  ...transformed,
+  [getNormalisedCSSPropertyName(propertyName)]: value
+});
+
 export const hoistStyleTransform = (accum, node, props, children) => {
   const { style, className, ...other } = props;
 
@@ -36,12 +43,14 @@ export const hoistStyleTransform = (accum, node, props, children) => {
     ? `${className} ${inlineStyleClass}`
     : inlineStyleClass;
 
+  const transformedStyle = Object.entries(style).reduce(normaliseCSSPropertyNames, {});
+
   return {
     accum: {
       ...accum,
       inlineStyles: {
         ...accum.inlineStyles,
-        [inlineStyleClass]: style
+        [inlineStyleClass]: transformedStyle
       }
     },
     children,
