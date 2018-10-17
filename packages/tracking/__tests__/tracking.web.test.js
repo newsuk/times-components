@@ -112,19 +112,16 @@ module.exports = () => {
           items={[
             {
               elementId: 1,
-              name: "name1",
               someKey: "1",
               someValue: "one"
             },
             {
               elementId: 2,
-              name: "name2",
               someKey: "2",
               someValue: "two"
             },
             {
               elementId: 3,
-              name: "name3",
               someKey: "3",
               someValue: "three"
             }
@@ -147,21 +144,13 @@ module.exports = () => {
       const items = [
         {
           elementId: 1,
-          name: "name1",
           someKey: "1",
           someValue: "one"
         },
         {
           elementId: 2,
-          name: "name2",
           someKey: "2",
           someValue: "two"
-        },
-        {
-          elementId: 3,
-          name: "name3",
-          someKey: "3",
-          someValue: "three"
         }
       ];
 
@@ -176,7 +165,6 @@ module.exports = () => {
           ...items,
           {
             elementId: 4,
-            name: "name4",
             someKey: "4",
             someValue: "four"
           }
@@ -202,7 +190,6 @@ module.exports = () => {
           items={[
             {
               elementId: 1,
-              name: "name1",
               someKey: "1",
               someValue: "one"
             }
