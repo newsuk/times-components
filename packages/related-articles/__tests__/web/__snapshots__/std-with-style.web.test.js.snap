@@ -133,138 +133,148 @@ exports[`default styles 1`] = `
 }
 
 <style>
-{
-  "IS1": {
-    "color": "rgba(219,19,59,1.00)",
-  },
-  "IS2": {
-    "color": "rgba(219,19,59,1.00)",
-  },
-  "IS3": {
-    "color": "rgba(219,19,59,1.00)",
-  },
-  "S1": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(51,51,51,1.00)",
-    "display": "inline",
-    "font-family": "TimesModern-Bold",
-    "font-size": "25px",
-    "font-weight": "inherit",
-    "line-height": "27px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S10": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(105,105,105,1.00)",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S2": {
-    "-ms-flex-align": "center",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-pack": "center",
-    "-webkit-justify-content": "center",
-    "align-items": "center",
-    "border-bottom-color": "rgba(219,219,219,1.00)",
-    "border-bottom-width": "1px",
-    "border-top-color": "rgba(219,219,219,1.00)",
-    "border-top-width": "1px",
-    "display": "flex",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S3": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "12px",
-    "font-weight": "400",
-    "line-height": "14px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-align": "stretch",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "align-items": "stretch",
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "flex",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S5": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(51,51,51,1.00)",
-    "display": "inline",
-    "font-family": "TimesModern-Bold",
-    "font-size": "22px",
-    "font-weight": "400",
-    "line-height": "27px",
-    "margin-bottom": "5px",
-    "margin-top": "0px",
-  },
-  "S6": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "inherit",
-    "display": "inline",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "font-weight": "inherit",
-    "line-height": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
-  "S7": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(105,105,105,1.00)",
-    "display": "inline",
-    "font-family": "TimesDigitalW04",
-    "font-size": "14px",
-    "font-weight": "inherit",
-    "line-height": "20px",
-    "margin-bottom": "10px",
-    "margin-top": "0px",
-  },
-  "S8": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "color": "rgba(105,105,105,1.00)",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "5px",
-    "margin-top": "0px",
-  },
-  "S9": {
-    "border-bottom-width": "0px",
-    "border-top-width": "0px",
-    "display": "inline",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-  },
+.S1 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(51,51,51,1.00);
+  display: inline;
+  font-family: TimesModern-Bold;
+  font-size: 25px;
+  font-weight: inherit;
+  line-height: 27px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-top-width: 1px;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  display: inline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(51,51,51,1.00);
+  display: inline;
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.S6 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: inherit;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S7 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(105,105,105,1.00);
+  display: inline;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.S8 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(105,105,105,1.00);
+  display: inline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.S9 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  display: inline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S10 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(105,105,105,1.00);
+  display: inline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(219,19,59,1.00);
+}
+
+.IS2 {
+  color: rgba(219,19,59,1.00);
+}
+
+.IS3 {
+  color: rgba(219,19,59,1.00);
 }
 </style>
 

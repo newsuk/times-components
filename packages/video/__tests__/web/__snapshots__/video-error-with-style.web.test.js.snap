@@ -2,45 +2,46 @@
 
 exports[`1. video with error 1`] = `
 <style>
-{
-  "IS1": {
-    "height": "100px",
-    "width": "100px",
-  },
-  "S1": {
-    "color": "rgba(255,255,255,1.00)",
-    "display": "inline",
-    "font-family": "TimesModern-Bold",
-    "font-size": "20px",
-    "height": "auto",
-    "margin-bottom": "10px",
-    "text-align": "center",
-    "width": "auto",
-  },
-  "S2": {
-    "color": "rgba(255,255,255,0.80)",
-    "display": "inline",
-    "font-family": "TimesDigitalW04",
-    "font-size": "14px",
-    "height": "auto",
-    "margin-bottom": "0px",
-    "max-width": "80%",
-    "text-align": "center",
-    "width": "410px",
-  },
-  "S3": {
-    "-ms-flex-align": "center",
-    "-ms-flex-pack": "center",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-pack": "center",
-    "-webkit-justify-content": "center",
-    "align-items": "center",
-    "background-color": "rgba(0,0,0,0.60)",
-    "display": "flex",
-    "justify-content": "center",
-    "margin-bottom": "0px",
-  },
+.S1 {
+  color: rgba(255,255,255,1.00);
+  display: inline;
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: auto;
+}
+
+.S2 {
+  color: rgba(255,255,255,0.80);
+  display: inline;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  height: auto;
+  margin-bottom: 0px;
+  max-width: 80%;
+  text-align: center;
+  width: 410px;
+}
+
+.S3 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.60);
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  height: 100px;
+  width: 100px;
 }
 </style>
 
