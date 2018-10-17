@@ -107,22 +107,30 @@ exports[`1. an article list header 1`] = `
 }
 
 .IS1 {
-  border-color: #FFFFFF;
-  border-radius: 50;
+  border-top-color: rgba(255,255,255,1.00);
+  border-right-color: rgba(255,255,255,1.00);
+  border-bottom-color: rgba(255,255,255,1.00);
+  border-left-color: rgba(255,255,255,1.00);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  width: 100;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100px;
 }
 
 .IS2 {
-  color: #006699;
+  -webkit-text-decoration-line: none;
+  color: rgba(0,102,153,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 17;
+  font-size: 15px;
+  line-height: 17px;
   padding-left: 5px;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 </style>
 
@@ -209,7 +217,11 @@ exports[`2. an article list header loading 1`] = `
 
 
 .IS1 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 </style>
 

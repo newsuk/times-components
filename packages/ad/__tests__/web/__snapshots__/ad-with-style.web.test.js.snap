@@ -4,35 +4,59 @@ exports[`1. multiple ad slots 1`] = `
 <style>
 .IS1 {
   height: auto;
-  overflow: hidden;
-  width: 970;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
 }
 
 .IS2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 
 .IS3 {
   height: auto;
-  overflow: hidden;
-  width: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 1px;
 }
 
 .IS4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 
 .IS5 {
   height: auto;
-  overflow: hidden;
-  width: 970;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
 }
 
 .IS6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 
@@ -112,21 +136,30 @@ exports[`1. multiple ad slots 1`] = `
 exports[`2. placeholder when isloading 1`] = `
 <style>
 .IS1 {
-  left: 0;
+  left: 0px;
   position: absolute;
-  top: 0;
+  top: 0px;
 }
 
 .IS2 {
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  color: #696969;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04;
-  font-size: 11;
-  line-height: 15;
-  letter-spacing: 1.5;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -140,30 +173,67 @@ exports[`2. placeholder when isloading 1`] = `
 }
 
 .IS4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   align-items: center;
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  height: 250px;
   justify-content: center;
-  overflow: hidden;
-  height: 250;
-  width: 970;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
 }
 
 .IS5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-flex: 1;
+  -webkit-justify-content: center;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   justify-content: center;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .IS6 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 
@@ -227,26 +297,36 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 <style>
 .IS1 {
   height: auto;
-  overflow: hidden;
-  width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 0px;
 }
 
 .IS2 {
-  left: 0;
+  left: 0px;
   position: absolute;
-  top: 0;
+  top: 0px;
 }
 
 .IS3 {
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  color: #696969;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04;
-  font-size: 11;
-  line-height: 15;
-  letter-spacing: 1.5;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -260,30 +340,67 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 }
 
 .IS5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   align-items: center;
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  height: 250px;
   justify-content: center;
-  overflow: hidden;
-  height: 250;
-  width: 970;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
 }
 
 .IS6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-flex: 1;
+  -webkit-justify-content: center;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   justify-content: center;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .IS7 {
-  flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
 }
 
 .IS8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 

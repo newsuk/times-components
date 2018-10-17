@@ -119,12 +119,13 @@ exports[`different colours 1`] = `
 }
 
 .IS3 {
+  -webkit-text-decoration-line: none;
+  color: rgba(0,102,153,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13;
-  color: #006699;
-  margin-left: 3;
-  text-decoration-line: none;
+  font-size: 13px;
+  line-height: 13px;
+  margin-left: 3px;
+  text-decoration: none;
 }
 </style>
 
