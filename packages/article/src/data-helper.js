@@ -78,7 +78,7 @@ const prepareDataForListView = articleData => {
     }
   ];
 
-  return prepend(
+  return append(
       {
         data: commentsData,
         type: "comments"
@@ -90,7 +90,6 @@ const prepareDataForListView = articleData => {
         },
         data
       )
-    )
   );
 };
 
