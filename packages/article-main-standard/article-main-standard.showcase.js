@@ -11,7 +11,7 @@ import {
   makeArticleConfiguration
 } from "./showcase-helper";
 import Article from "./src/article-main-standard";
-import articleAdConfig from "./fixtures/article-ad-config.json";
+import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([

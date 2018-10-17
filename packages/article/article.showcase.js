@@ -19,7 +19,7 @@ import {
   makeArticleConfiguration
 } from "./showcase-helper";
 import Article from "./src/article";
-import articleAdConfig from "./fixtures/article-ad-config.json";
+import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
