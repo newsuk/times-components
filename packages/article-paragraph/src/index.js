@@ -9,7 +9,10 @@ import { propTypes, defaultProps } from "./drop-cap-prop-types";
 const ArticleParagraphWrapper = props => {
   const { ast, children, colour } = props;
   const { children: astChildren } = ast;
-  const { name, attributes: { value } } = astChildren[0];
+  const {
+    name,
+    attributes: { value }
+  } = astChildren[0];
   if (name === "dropCap") {
     const text = renderTreeAsText(ast).slice(1);
     return (
