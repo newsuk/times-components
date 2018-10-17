@@ -9,6 +9,7 @@ import {
   flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
+import { delay } from "@times-components/test-utils";
 import shared from "./shared.base";
 import "./mock-text-measure-module";
 import DropCap from "../src/drop-cap";
@@ -25,11 +26,12 @@ export default () => {
 
   shared();
 
-  it("re-measures when scale changes", () => {
+  it("re-measures when scale changes", async () => {
     const testInstance = TestRenderer.create(
       <DropCap dropCap={mockDropCap} scale={scales.large} text={mockText} />
     );
 
+    await delay(0);
     expect(
       testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
     ).toBe(115);
@@ -37,6 +39,7 @@ export default () => {
       <DropCap dropCap={mockDropCap} scale={scales.xlarge} text={mockText} />
     );
 
+    await delay(0);
     expect(
       testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
     ).toBe(124);

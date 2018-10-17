@@ -1,7 +1,7 @@
 jest.mock("react-native", () => {
   const rn = require.requireActual("react-native");
   rn.NativeModules.RNTextSize = {
-    measure: () => ({ then: () => ({ then: done => done({ lineEnd: 99 }) }) })
+    measure: () => Promise.resolve({ lineEnd: 99, width: 100 })
   };
   return rn;
 });
