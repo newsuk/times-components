@@ -24,12 +24,10 @@
       "type": "Image",
       "__typename": "Image",
       "id": "ff895c4b-06db-4e00-ebe8-3d58e6cbd47e",
-      "title":
-        ": North Korea's leader Kim Jong Un listens to U.S. President Trump at the start of their summit on the resort island of Sentosa, Singapore",
+      "title": ": North Korea's leader Kim Jong Un listens to U.S. President Trump at the start of their summit on the resort island of Sentosa, Singapore",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1364f41e-707f-11e8-85ce-4c0c3fdda365.jpg?crop=2711%2C1807%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1364f41e-707f-11e8-85ce-4c0c3fdda365.jpg?crop=2711%2C1807%2C0%2C0"
       }
     },
     "section": "world",
@@ -42,16 +40,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Cracks have begun to appear in the US-North Korea summit agreement, with President Trump’s chief diplomat denying"
+              "value": "Cracks have begun to appear in the US-North Korea summit agreement, with President Trump’s chief diplomat denying"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/us-and-kim-at-odds-over-when-north-korea-sanctions-will-end-822b3lq37"
+    "url": "https://www.thetimes.co.uk/article/us-and-kim-at-odds-over-when-north-korea-sanctions-will-end-822b3lq37"
   },
   {
     "__typename": "Article",
@@ -82,8 +78,7 @@
         "title": "",
         "crop": {
           "__typename": "Crop",
-          "url":
-            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F71b21d5e-7065-11e8-85ce-4c0c3fdda365.jpg?crop=1080%2C720%2C100%2C0"
+          "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F71b21d5e-7065-11e8-85ce-4c0c3fdda365.jpg?crop=1080%2C720%2C100%2C0"
         }
       }
     },
@@ -97,8 +92,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Footage of President Trump saluting a North Korean general has raised eyebrows among military personnel."
+              "value": "Footage of President Trump saluting a North Korean general has raised eyebrows among military personnel."
             },
             "children": []
           }
@@ -117,8 +111,7 @@
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/trump-criticized-for-saluting-north-korean-general-kczv6wgtc"
+    "url": "https://www.thetimes.co.uk/article/trump-criticized-for-saluting-north-korean-general-kczv6wgtc"
   },
   {
     "__typename": "Article",
@@ -145,12 +138,10 @@
       "type": "Image",
       "__typename": "Image",
       "id": "f8b3e9a3-c7f5-4c42-b03a-6fcc72bcdd36",
-      "title":
-        "President of the North Korean Presidium of the Supreme People's Assembly Kim Yong-nam visits Moscow",
+      "title": "President of the North Korean Presidium of the Supreme People's Assembly Kim Yong-nam visits Moscow",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d41f1f8-6ffc-11e8-85ce-4c0c3fdda365.jpg?crop=4310%2C2873%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d41f1f8-6ffc-11e8-85ce-4c0c3fdda365.jpg?crop=4310%2C2873%2C0%2C0"
       }
     },
     "section": "world",
@@ -163,16 +154,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "President Putin has invited Kim Jong-un to visit Russia while praising the result of the summit between the North"
+              "value": "President Putin has invited Kim Jong-un to visit Russia while praising the result of the summit between the North"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/putin-asks-kim-jong-un-to-visit-russia-after-summit-success-skmvktfkg"
+    "url": "https://www.thetimes.co.uk/article/putin-asks-kim-jong-un-to-visit-russia-after-summit-success-skmvktfkg"
   },
   {
     "__typename": "Article",
@@ -191,8 +180,7 @@
       }
     ],
     "hasVideo:": false,
-    "headline":
-      "Shinzo Abe seeks own summit to learn truth about North Korea kidnaps",
+    "headline": "Shinzo Abe seeks own summit to learn truth about North Korea kidnaps",
     "shortHeadline": "Shinzo Abe seeks summit about North Korea kidnaps",
     "id": "f6e08b4e-6fd6-11e8-85ce-4c0c3fdda365",
     "label": "",
@@ -203,8 +191,7 @@
       "title": "",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4e2d3d3c-707e-11e8-85ce-4c0c3fdda365.jpg?crop=3000%2C2000%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4e2d3d3c-707e-11e8-85ce-4c0c3fdda365.jpg?crop=3000%2C2000%2C0%2C0"
       }
     },
     "section": "world",
@@ -247,8 +234,7 @@
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/shinzo-abe-to-seek-meeting-with-kim-jong-un-over-missing-japanese-citizens-5xr5thgfn"
+    "url": "https://www.thetimes.co.uk/article/shinzo-abe-to-seek-meeting-with-kim-jong-un-over-missing-japanese-citizens-5xr5thgfn"
   },
   {
     "__typename": "Article",
@@ -267,8 +253,7 @@
       }
     ],
     "hasVideo:": false,
-    "headline":
-      "Donald Trump, Kim Jong-un and North Korea — what dissidents think",
+    "headline": "Donald Trump, Kim Jong-un and North Korea — what dissidents think",
     "shortHeadline": "Donald Trump, Kim Jong-un and North Korea",
     "id": "4d1501e4-6f36-11e8-85ce-4c0c3fdda365",
     "label": "",
@@ -279,8 +264,7 @@
       "title": "Hyeonseo Lee Portrait",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbc4595ca-6f03-11e8-85ce-4c0c3fdda365.png?crop=3392%2C2262%2C43%2C29"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbc4595ca-6f03-11e8-85ce-4c0c3fdda365.png?crop=3392%2C2262%2C43%2C29"
       }
     },
     "section": "times2",
@@ -312,8 +296,7 @@
               {
                 "name": "text",
                 "attributes": {
-                  "value":
-                    "Hyeonseo Lee, 38, defected from North Korea at the age of 17. After ten years living illegally in"
+                  "value": "Hyeonseo Lee, 38, defected from North Korea at the age of 17. After ten years living illegally in"
                 },
                 "children": []
               }
@@ -322,8 +305,7 @@
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/donald-trump-kim-jong-un-and-north-korea-what-dissidents-think-fzhh0dwwx"
+    "url": "https://www.thetimes.co.uk/article/donald-trump-kim-jong-un-and-north-korea-what-dissidents-think-fzhh0dwwx"
   },
   {
     "__typename": "Article",
@@ -350,12 +332,10 @@
       "type": "Image",
       "__typename": "Image",
       "id": "e64aa381-c14d-47a0-a8aa-046c74eac142",
-      "title":
-        "U.S. Secretary of State Mike Pompeo walks with U.S. General Vincent K. Brooks, commander of United States Forces Korea, upon his arrival at Osan Air Base in Pyeongtaek, South Korea",
+      "title": "U.S. Secretary of State Mike Pompeo walks with U.S. General Vincent K. Brooks, commander of United States Forces Korea, upon his arrival at Osan Air Base in Pyeongtaek, South Korea",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe0539fd2-6ef6-11e8-85ce-4c0c3fdda365.jpg?crop=3102%2C2068%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe0539fd2-6ef6-11e8-85ce-4c0c3fdda365.jpg?crop=3102%2C2068%2C0%2C0"
       }
     },
     "section": "world",
@@ -368,16 +348,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Cracks have begun to appear in the US-North Korean summit agreement, with President Trump’s chief diplomat denying"
+              "value": "Cracks have begun to appear in the US-North Korean summit agreement, with President Trump’s chief diplomat denying"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/north-korea-will-give-up-nuclear-weapons-by-2021-says-mike-pompeo-prskxstt7"
+    "url": "https://www.thetimes.co.uk/article/north-korea-will-give-up-nuclear-weapons-by-2021-says-mike-pompeo-prskxstt7"
   },
   {
     "__typename": "Article",
@@ -396,8 +374,7 @@
       }
     ],
     "hasVideo:": false,
-    "headline":
-      "Singapore summit: North Korea trumpets Kim’s triumph over Trump",
+    "headline": "Singapore summit: North Korea trumpets Kim’s triumph over Trump",
     "shortHeadline": "North Korea trumpets Kim’s triumph over Trump",
     "id": "36f3f95c-6ef4-11e8-85ce-4c0c3fdda365",
     "label": "",
@@ -405,12 +382,10 @@
       "type": "Image",
       "__typename": "Image",
       "id": "2c5b4471-0ada-40d6-a709-4b65c7ccefb3",
-      "title":
-        "U.S. Secretary of State Mike Pompeo Arrives at Osan Military Base",
+      "title": "U.S. Secretary of State Mike Pompeo Arrives at Osan Military Base",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdcfc33b2-6ef6-11e8-85ce-4c0c3fdda365.jpg?crop=4568%2C3045%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdcfc33b2-6ef6-11e8-85ce-4c0c3fdda365.jpg?crop=4568%2C3045%2C0%2C0"
       }
     },
     "section": "world",
@@ -423,16 +398,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Kim Jong-un has made a triumphant return to Pyongyang, where his summit with President Trump was hailed as a"
+              "value": "Kim Jong-un has made a triumphant return to Pyongyang, where his summit with President Trump was hailed as a"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/north-korea-trumpets-kims-triumph-over-trump-qk085q0n6"
+    "url": "https://www.thetimes.co.uk/article/north-korea-trumpets-kims-triumph-over-trump-qk085q0n6"
   },
   {
     "__typename": "Article",
@@ -443,8 +416,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Richard Lloyd Parry, Singapore | Boer Deng, Washington | Michael Evans"
+              "value": "Richard Lloyd Parry, Singapore | Boer Deng, Washington | Michael Evans"
             },
             "children": []
           }
@@ -464,8 +436,7 @@
         "title": "*** BESTPIX *** TOPSHOT-SINGAPORE-US-NKOREA-DIPLOMACY-SUMMIT",
         "crop": {
           "__typename": "Crop",
-          "url":
-            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
+          "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99f6424c-6e5b-11e8-bea3-bf1a5a054f3a.png?crop=1622%2C1081%2C150%2C0"
         }
       }
     },
@@ -479,16 +450,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "President Trump ordered a surprise halt to military exercises involving US forces on the Korean peninsula yesterday"
+              "value": "President Trump ordered a surprise halt to military exercises involving US forces on the Korean peninsula yesterday"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/no-more-games-president-trump-gives-kim-jong-un-path-to-peace-tx6f69hb2"
+    "url": "https://www.thetimes.co.uk/article/no-more-games-president-trump-gives-kim-jong-un-path-to-peace-tx6f69hb2"
   },
   {
     "__typename": "Article",
@@ -519,8 +488,7 @@
         "title": "",
         "crop": {
           "__typename": "Crop",
-          "url":
-            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd620df66-6e51-11e8-85ce-4c0c3fdda365.jpg?crop=1080%2C720%2C100%2C0"
+          "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd620df66-6e51-11e8-85ce-4c0c3fdda365.jpg?crop=1080%2C720%2C100%2C0"
         }
       }
     },
@@ -534,16 +502,14 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "President Trump added a new chapter to the annals of unorthodox efforts to build relationships with foreign leaders"
+              "value": "President Trump added a new chapter to the annals of unorthodox efforts to build relationships with foreign leaders"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/trump-kim-summit-blockbuster-diplomacy-wins-over-dictator-r290fdh8w"
+    "url": "https://www.thetimes.co.uk/article/trump-kim-summit-blockbuster-diplomacy-wins-over-dictator-r290fdh8w"
   },
   {
     "__typename": "Article",
@@ -565,22 +531,18 @@
       }
     ],
     "hasVideo:": false,
-    "headline":
-      "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet abroad if I could fit it in the locker",
-    "shortHeadline":
-      "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet",
+    "headline": "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet abroad if I could fit it in the locker",
+    "shortHeadline": "Carol Midgley: Like Kim Jong‑un, I’d take a travel toilet",
     "id": "aa11ccba-6e64-11e8-85ce-4c0c3fdda365",
     "label": "THE WEDNESDAY COLUMN",
     "leadAsset": {
       "type": "Image",
       "__typename": "Image",
       "id": "aab39c81-69e7-4cab-ea33-ead11b2b7427",
-      "title":
-        "North Korean Leader Kim Jong-un Arrives In Singapore Ahead Of The U.S.-DPRK Summit",
+      "title": "North Korean Leader Kim Jong-un Arrives In Singapore Ahead Of The U.S.-DPRK Summit",
       "crop": {
         "__typename": "Crop",
-        "url":
-          "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F88dbbcd4-6e66-11e8-85ce-4c0c3fdda365.jpg?crop=4724%2C3149%2C0%2C0"
+        "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F88dbbcd4-6e66-11e8-85ce-4c0c3fdda365.jpg?crop=4724%2C3149%2C0%2C0"
       }
     },
     "section": "times2",
@@ -593,15 +555,13 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "Historic, extraordinary, groundbreaking: these were all words used to describe the summit between Donald Trump and"
+              "value": "Historic, extraordinary, groundbreaking: these were all words used to describe the summit between Donald Trump and"
             },
             "children": []
           }
         ]
       }
     ],
-    "url":
-      "https://www.thetimes.co.uk/article/carol-midgley-like-kim-jongun-id-take-a-travel-toilet-abroad-if-i-could-fit-it-in-the-locker-p90lgd6n3"
+    "url": "https://www.thetimes.co.uk/article/carol-midgley-like-kim-jongun-id-take-a-travel-toilet-abroad-if-i-could-fit-it-in-the-locker-p90lgd6n3"
   }
 ]

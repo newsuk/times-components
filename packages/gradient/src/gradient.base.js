@@ -15,7 +15,11 @@ class GradientBase extends Component {
     };
   }
 
-  onLayout = ({ nativeEvent: { layout: { width, height } } }) => {
+  onLayout = ({
+    nativeEvent: {
+      layout: { width, height }
+    }
+  }) => {
     this.setState({
       height,
       width
@@ -26,7 +30,7 @@ class GradientBase extends Component {
     const { height, width } = this.state;
     const { children, degrees, startColour, endColour, style } = this.props;
 
-    const { start, end } = angleToPoints((degrees + 90) / 180 * Math.PI);
+    const { start, end } = angleToPoints(((degrees + 90) / 180) * Math.PI);
 
     const d = new Path()
       .line(width, 0)

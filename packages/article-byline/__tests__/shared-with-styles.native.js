@@ -10,7 +10,11 @@ import shared from "./shared-with-styles.base";
 export default Component => {
   addSerializers(
     expect,
-    compose(print, flattenStyleTransform, minimalNativeTransform)
+    compose(
+      print,
+      flattenStyleTransform,
+      minimalNativeTransform
+    )
   );
 
   shared(Component);

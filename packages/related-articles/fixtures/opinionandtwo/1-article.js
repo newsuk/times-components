@@ -110,26 +110,24 @@ const defaultTitle = "";
 const defaultUrl =
   "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t";
 
-export default (
-  {
-    crop23 = defaultCrop23,
-    crop169 = defaultCrop169,
-    headline = defaultHeadline,
-    label = defaultLabel,
-    section = defaultSection,
-    slug = defaultSlug,
-    shortIdentifier = defaultShortIdentifier,
-    shortHeadline = defaultShortHeadline,
-    summary105 = defaultSummary105,
-    summary125 = defaultSummary125,
-    summary145 = defaultSummary145,
-    summary160 = defaultSummary160,
-    summary175 = defaultSummary175,
-    summary225 = defaultSummary225,
-    title = defaultTitle,
-    url = defaultUrl
-  } = {}
-) => ({
+export default ({
+  crop23 = defaultCrop23,
+  crop169 = defaultCrop169,
+  headline = defaultHeadline,
+  label = defaultLabel,
+  section = defaultSection,
+  slug = defaultSlug,
+  shortIdentifier = defaultShortIdentifier,
+  shortHeadline = defaultShortHeadline,
+  summary105 = defaultSummary105,
+  summary125 = defaultSummary125,
+  summary145 = defaultSummary145,
+  summary160 = defaultSummary160,
+  summary175 = defaultSummary175,
+  summary225 = defaultSummary225,
+  title = defaultTitle,
+  url = defaultUrl
+} = {}) => ({
   data: {
     relatedArticleSlice: {
       opinion: {
@@ -151,8 +149,6 @@ export default (
           ],
           headline,
           id: "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-          slug,
-          shortIdentifier,
           label,
           leadAsset: {
             crop23: {
@@ -167,6 +163,8 @@ export default (
           publishedTime: "2015-03-13T18:54:58.000Z",
           section,
           shortHeadline,
+          shortIdentifier,
+          slug,
           summary105,
           summary125,
           summary145,

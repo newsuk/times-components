@@ -14,9 +14,9 @@ This package provides an `ErrorView` wrapper component that takes a render prop
 as a direct child of the component. This function returns three possible values
 which can be used to handle the enclosed child components:
 
-* `error` - the error that was returned
-* `hasError` - boolean, did the component error
-* `onError` - a function that handles errors and triggers the error view
+- `error` - the error that was returned
+- `hasError` - boolean, did the component error
+- `onError` - a function that handles errors and triggers the error view
   components error handling
 
 ## Contributing

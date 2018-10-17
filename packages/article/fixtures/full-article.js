@@ -635,9 +635,9 @@ export const longContent = [
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 
-export const videoLeadAsset = (
-  { brightcovePolicyKey = defaultBrightcovePolicyKey } = {}
-) => ({
+export const videoLeadAsset = ({
+  brightcovePolicyKey = defaultBrightcovePolicyKey
+} = {}) => ({
   __typename: "Video",
   brightcoveAccountId: "5436121857001",
   brightcovePolicyKey,
@@ -1968,27 +1968,25 @@ const addProp = (obj, key, value) => {
   return obj;
 };
 
-const makeDefaultConfig = (
-  {
-    byline = defaultByline,
-    commentsEnabled = defaultCommentsEnabled,
-    commentCount = defaultCommentCount,
-    content = defaultContent,
-    flags = defaultFlags,
-    hasVideo = defaultHasVideo,
-    headline = defaultHeadline,
-    keywords = defaultKeywords,
-    label = defaultLabel,
-    leadAsset = defaultLeadAsset,
-    relatedArticleSlice = defaultRelatedArticleSlice,
-    section = defaultSection,
-    shortIdentifier = defaultShortIdentifier,
-    slug = defaultSlug,
-    standfirst = defaultStandfirst,
-    topics = defaultTopics,
-    url = defaultUrl
-  } = {}
-) => ({
+const makeDefaultConfig = ({
+  byline = defaultByline,
+  commentsEnabled = defaultCommentsEnabled,
+  commentCount = defaultCommentCount,
+  content = defaultContent,
+  flags = defaultFlags,
+  hasVideo = defaultHasVideo,
+  headline = defaultHeadline,
+  keywords = defaultKeywords,
+  label = defaultLabel,
+  leadAsset = defaultLeadAsset,
+  relatedArticleSlice = defaultRelatedArticleSlice,
+  section = defaultSection,
+  shortIdentifier = defaultShortIdentifier,
+  slug = defaultSlug,
+  standfirst = defaultStandfirst,
+  topics = defaultTopics,
+  url = defaultUrl
+} = {}) => ({
   byline,
   commentCount,
   commentsEnabled,

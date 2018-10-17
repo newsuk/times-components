@@ -8,13 +8,11 @@ const defaultLabel = "Camilla Long";
 const defaultParagraph =
   "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.";
 
-export default (
-  {
-    headline = defaultHeadline,
-    label = defaultLabel,
-    paragraph = defaultParagraph
-  } = {}
-) => ({
+export default ({
+  headline = defaultHeadline,
+  label = defaultLabel,
+  paragraph = defaultParagraph
+} = {}) => ({
   bylineProps: {
     ast: [
       {

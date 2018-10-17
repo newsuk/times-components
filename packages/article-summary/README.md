@@ -11,9 +11,9 @@ Abstract Syntax Tree ("AST") which a component can handle by itself.
 These components make up the core of an article summary and so, although not
 required, are made up of specific components.
 
-* date publication - article summary wraps the `DatePublication` component and
+- date publication - article summary wraps the `DatePublication` component and
   simply passes on the date props it receives
-* label - article summary passes label props onto either `ArticleLabel` or
+- label - article summary passes label props onto either `ArticleLabel` or
   `VideoLabel`
 
 ## Components with a render prop
@@ -21,13 +21,13 @@ required, are made up of specific components.
 Components that can be specified by the consumer can be passed in as render
 props.
 
-* headline - `ArticleSummaryHeadline` lays out an accessible article headline
-* content - `ArticleSummaryContent` handles an AST, but is passed into the
+- headline - `ArticleSummaryHeadline` lays out an accessible article headline
+- content - `ArticleSummaryContent` handles an AST, but is passed into the
   summary as a render prop
 
 ## Components with an AST
 
-* byline - passes the given AST to `ArticleByline` or `ArticleBylineWithLinks`
+- byline - passes the given AST to `ArticleByline` or `ArticleBylineWithLinks`
 
 ## Contributing
 

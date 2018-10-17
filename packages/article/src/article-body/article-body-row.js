@@ -101,7 +101,13 @@ const ArticleRow = ({
         )
       };
     },
-    pullQuote(key, { content, caption: { name, twitter } }) {
+    pullQuote(
+      key,
+      {
+        content,
+        caption: { name, twitter }
+      }
+    ) {
       return {
         element: (
           <View key={key}>

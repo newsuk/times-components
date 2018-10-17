@@ -9,7 +9,11 @@ const {
 
 addSerializers(
   expect,
-  compose(print, minimalWebTransform, rnwTransform(AppRegistry))
+  compose(
+    print,
+    minimalWebTransform,
+    rnwTransform(AppRegistry)
+  )
 );
 
 // eslint-disable-next-line global-require

@@ -57,9 +57,7 @@ class DOMContext extends PureComponent {
     const html = `
       <html>
         <head>
-        <meta name="viewport" content="width=${width},height=${
-      height
-    },initial-scale=1,user-scalable=no">
+        <meta name="viewport" content="width=${width},height=${height},initial-scale=1,user-scalable=no">
         <style>
           html, body {
             height: 100%;

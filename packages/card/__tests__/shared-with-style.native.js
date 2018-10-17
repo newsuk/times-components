@@ -14,7 +14,11 @@ jest.mock("@times-components/gradient", () => "Gradient");
 export default () => {
   addSerializers(
     expect,
-    compose(print, flattenStyleTransform, minimalNativeTransform)
+    compose(
+      print,
+      flattenStyleTransform,
+      minimalNativeTransform
+    )
   );
 
   shared(TestRenderer.create);

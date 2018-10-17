@@ -79,9 +79,9 @@ class InteractiveWrapper extends Component {
             this.webview = webview;
           }}
           source={{
-            uri: `${editorialLambdaProtocol}${editorialLambdaOrigin}/${
-              editorialLambdaSlug
-            }/${this.props.id}`
+            uri: `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${
+              this.props.id
+            }`
           }}
           style={{ height: this.state.height }}
           {...InteractiveWrapper.postMessageBugWorkaround()}

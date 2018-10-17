@@ -114,9 +114,7 @@ class RelatedArticleItem extends Component {
                       return (
                         <ArticleSummaryContent
                           ast={this.props.article[`summary${item}`]}
-                          className={`summaryHidden ${summaryClass}${
-                            summaryClassSuffix
-                          }`}
+                          className={`summaryHidden ${summaryClass}${summaryClassSuffix}`}
                           key={item}
                         />
                       );

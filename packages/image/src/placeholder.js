@@ -14,7 +14,11 @@ class Placeholder extends Component {
     this.handleLayout = this.handleLayout.bind(this);
   }
 
-  handleLayout({ nativeEvent: { layout: { width } } }) {
+  handleLayout({
+    nativeEvent: {
+      layout: { width }
+    }
+  }) {
     this.setState({
       width
     });

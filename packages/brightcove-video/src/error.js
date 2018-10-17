@@ -85,7 +85,9 @@ const VideoError = ({ poster, width, height, onReset }) => (
     >
       <Text style={styles.errorHead}>Something’s gone wrong</Text>
       <Text style={styles.errorBody}>
-        Please check your network connection{"\n"}and tap retry to continue
+        Please check your network connection
+        {"\n"}
+        and tap retry to continue
       </Text>
       <TouchableOpacity onPress={onReset}>
         <View style={styles.resetButton}>
