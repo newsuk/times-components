@@ -2,34 +2,61 @@
 
 exports[`1. multiple ad slots 1`] = `
 <style>
-{
-  "IS1": {
-    "height": "auto",
-    "overflow": "hidden",
-    "width": 970,
-  },
-  "IS2": {
-    "alignItems": "center",
-    "flex": 1,
-  },
-  "IS3": {
-    "height": "auto",
-    "overflow": "hidden",
-    "width": 1,
-  },
-  "IS4": {
-    "alignItems": "center",
-    "flex": 1,
-  },
-  "IS5": {
-    "height": "auto",
-    "overflow": "hidden",
-    "width": 970,
-  },
-  "IS6": {
-    "alignItems": "center",
-    "flex": 1,
-  },
+.IS1 {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+}
+
+.IS3 {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 1px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+}
+
+.IS5 {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
+}
+
+.IS6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 
@@ -108,55 +135,105 @@ exports[`1. multiple ad slots 1`] = `
 
 exports[`2. placeholder when isloading 1`] = `
 <style>
-{
-  "IS1": {
-    "left": 0,
-    "position": "absolute",
-    "top": 0,
-  },
-  "IS2": {
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "color": "#696969",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 11,
-    "letterSpacing": 1.5,
-    "lineHeight": 15,
-    "paddingBottom": "5px",
-    "paddingLeft": "10px",
-    "paddingRight": "10px",
-    "paddingTop": "5px",
-    "zIndex": 1,
-  },
-  "IS3": {
-    "height": "250px",
-    "width": "970px",
-  },
-  "IS4": {
-    "alignItems": "center",
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "height": 250,
-    "justifyContent": "center",
-    "overflow": "hidden",
-    "width": 970,
-  },
-  "IS5": {
-    "alignItems": "center",
-    "flex": 1,
-    "justifyContent": "center",
-  },
-  "IS6": {
-    "flex": 1,
-  },
-  "IS7": {
-    "alignItems": "center",
-    "flex": 1,
-  },
+.IS1 {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.IS2 {
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.IS3 {
+  height: 250px;
+  width: 970px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  height: 250px;
+  justify-content: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
+}
+
+.IS5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-flex: 1;
+  -webkit-justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: center;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+
+.IS6 {
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+}
+
+.IS7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 
@@ -218,60 +295,112 @@ exports[`2. placeholder when isloading 1`] = `
 
 exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 <style>
-{
-  "IS1": {
-    "height": "auto",
-    "overflow": "hidden",
-    "width": 0,
-  },
-  "IS2": {
-    "left": 0,
-    "position": "absolute",
-    "top": 0,
-  },
-  "IS3": {
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "color": "#696969",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 11,
-    "letterSpacing": 1.5,
-    "lineHeight": 15,
-    "paddingBottom": "5px",
-    "paddingLeft": "10px",
-    "paddingRight": "10px",
-    "paddingTop": "5px",
-    "zIndex": 1,
-  },
-  "IS4": {
-    "height": "250px",
-    "width": "970px",
-  },
-  "IS5": {
-    "alignItems": "center",
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "height": 250,
-    "justifyContent": "center",
-    "overflow": "hidden",
-    "width": 970,
-  },
-  "IS6": {
-    "alignItems": "center",
-    "flex": 1,
-    "justifyContent": "center",
-  },
-  "IS7": {
-    "flex": 1,
-  },
-  "IS8": {
-    "alignItems": "center",
-    "flex": 1,
-  },
+.IS1 {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 0px;
+}
+
+.IS2 {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.IS3 {
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.IS4 {
+  height: 250px;
+  width: 970px;
+}
+
+.IS5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  background-color: rgba(249,249,249,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  height: 250px;
+  justify-content: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 970px;
+}
+
+.IS6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-flex: 1;
+  -webkit-justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: center;
+  -ms-flex: 1;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+
+.IS7 {
+  -webkit-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+}
+
+.IS8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-flex: 1;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  -ms-flex: 1;
+  -ms-flex-align: center;
 }
 </style>
 

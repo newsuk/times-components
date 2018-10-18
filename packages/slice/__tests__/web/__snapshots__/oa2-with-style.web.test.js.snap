@@ -190,14 +190,12 @@ exports[`1. a single child element 1`] = `
 }
 
 <style>
-{
-  "S1": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 </style>
 
@@ -526,14 +524,12 @@ exports[`2. two child elements 1`] = `
 }
 
 <style>
-{
-  "S1": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 </style>
 
@@ -940,14 +936,12 @@ exports[`3. three child elements 1`] = `
 }
 
 <style>
-{
-  "S1": {
-    "border-bottom-width": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 </style>
 
