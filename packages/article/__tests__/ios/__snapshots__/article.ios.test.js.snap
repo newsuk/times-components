@@ -6,7 +6,11 @@ exports[`1. an error 1`] = `
     <Image
       accessibilityLabel="Server error"
       resizeMode="contain"
-      source={1}
+      source={
+        Object {
+          "testUri": "../../../packages/article/assets/article-error.png",
+        }
+      }
     />
     <Text>
       Something's gone wrong
