@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
+import ArticleLoading from "@times-components/article-loading";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleHeader from "./article-header/article-header";
-import ArticleLoading from "./article-loading";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";

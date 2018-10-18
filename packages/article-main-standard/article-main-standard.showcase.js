@@ -4,6 +4,12 @@ import React, { Fragment } from "react";
 import invert from "lodash.invert";
 import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
+import {
+  article as makeParams,
+  fixtures,
+  MockFixture,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { makeArticleUrl } from "@times-components/test-utils";
@@ -63,6 +69,32 @@ const renderArticle = ({
       </Context.Provider>
     )}
   </ArticleProvider>
+);
+
+const mockArticle = ({
+  adConfig = articleAdConfig,
+  analyticsStream = storybookReporter,
+  decorateAction,
+  id,
+  params,
+  scale,
+  sectionColour
+}) => (
+  <MockFixture
+    params={params}
+    render={mocks => (
+      <MockedProvider mocks={mocks}>
+        {renderArticle({
+          adConfig,
+          analyticsStream,
+          decorateAction,
+          id,
+          scale,
+          sectionColour
+        })}
+      </MockedProvider>
+    )}
+  />
 );
 
 const selectScales = select => select("Scale", scales, scales.medium);
@@ -138,6 +170,29 @@ export default {
       name: "Loading",
       type: "story"
     },
+      {
+        component: ({ select }, { decorateAction }) => {
+          const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
+          const scale = selectScales(select);
+          const sectionColour = selectSection(select);
+
+          return mockArticle({
+            decorateAction,
+            id,
+            params: makeParams({
+              error: () => new Error("Article error"),
+              variables: () => ({
+                id
+              })
+            }),
+            scale,
+            sectionColour
+          });
+        },
+        name: "Error",
+        platform: "native",
+        type: "story"
+    }
   ],
   name: "Pages/Article/Main Standard"
 };
