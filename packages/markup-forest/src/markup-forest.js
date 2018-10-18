@@ -20,6 +20,15 @@ export const renderTree = (tree, renderers, key = "0", indx = 0) => {
   return result.element;
 };
 
+export const renderTreeAsText = (
+  { attributes: { value } = {}, children },
+  key = "0"
+) =>
+  value ||
+  children
+    .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
+    .join("");
+
 const nodeShape = {
   attributes: PropTypes.object,
   name: PropTypes.string.isRequired

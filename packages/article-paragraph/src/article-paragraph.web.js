@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  ParagraphContainer,
-  Paragraph
-} from "../styles/article-body/responsive";
-import styles from "../styles/article-body";
+import { ParagraphContainer, Paragraph } from "./styles/responsive";
+import styles from "./styles";
 
 const BodyParagraph = props => (
   <ParagraphContainer style={[styles.articleMainContentRow]}>

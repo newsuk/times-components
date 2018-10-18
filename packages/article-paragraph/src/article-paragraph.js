@@ -2,16 +2,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import styleFactory from "../styles/article-body";
+import styleFactory from "./styles";
 
 const styles = styleFactory();
 
 const BodyParagraph = props => (
-  <View
-    key={`paragraph-${props.uid}`}
-    style={[styles.articleMainContentRow]}
-    testID={`paragraph-${props.uid}`}
-  >
+  <View style={[styles.articleMainContentRow]}>
     <Context.Consumer>
       {({ theme: { scale } }) => {
         const stylesScaled = styleFactory(scale);
@@ -28,8 +24,7 @@ const BodyParagraph = props => (
 BodyParagraph.propTypes = {
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired,
-  uid: PropTypes.number.isRequired
+  ).isRequired
 };
 
 export default BodyParagraph;

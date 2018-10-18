@@ -2,13 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import Ad from "@times-components/ad";
 import ArticleImage from "@times-components/article-image";
+import ArticleParagraph, {
+  DropCapView
+} from "@times-components/article-paragraph";
+import Context from "@times-components/context";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import { colours } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
-import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import AspectRatioContainer from "../media-aspect-ratio";
 import InsetCaption from "./inset-caption";
@@ -39,6 +43,22 @@ const renderers = ({ observed, registerNode }) => ({
     return {
       element: (
         <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+      )
+    };
+  },
+  dropCap(key, { value }) {
+    return {
+      element: (
+        <Context.Consumer>
+          {({ theme: { sectionColour } }) => (
+            <DropCapView
+              colour={sectionColour || colours.section.default}
+              key={key}
+            >
+              {value}
+            </DropCapView>
+          )}
+        </Context.Consumer>
       )
     };
   },
@@ -102,7 +122,7 @@ const renderers = ({ observed, registerNode }) => ({
   },
   paragraph(key, attributes, children) {
     return {
-      element: <BodyParagraph key={key}>{children}</BodyParagraph>
+      element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
     };
   },
   pullQuote(
