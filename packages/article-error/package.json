@@ -14,7 +14,8 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -46,7 +47,9 @@
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.5.2"
+    "react-test-renderer": "16.5.2",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "peerDependencies": {
     "react": ">=16.5",

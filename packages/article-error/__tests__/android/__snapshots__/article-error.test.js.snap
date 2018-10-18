@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "space-between",
+      "marginHorizontal": 10,
+      "paddingBottom": 70,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View>
+    <Image
+      accessibilityLabel="Server error"
+      accessible={true}
+      resizeMode="contain"
+      source={1}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "marginVertical": 20,
+          },
+          Object {
+            "height": 270,
+            "width": 240,
+          },
+        ]
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "marginBottom": 10,
+          "marginHorizontal": 40,
+          "textAlign": "center",
+        }
+      }
+    >
+      Something's gone wrong
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 15,
+          "marginHorizontal": 40,
+          "textAlign": "center",
+        }
+      }
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="Retry"
+    accessibilityTraits="button"
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#006699",
+          "borderRadius": 2,
+          "elevation": 3,
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 100,
+          "width": "100%",
+        },
+        null,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 16,
+            "lineHeight": 14,
+            "paddingTop": 0,
+          },
+          null,
+          null,
+        ]
+      }
+      title="Retry"
+    >
+      Retry
+    </Text>
+  </View>
+</View>
+`;
