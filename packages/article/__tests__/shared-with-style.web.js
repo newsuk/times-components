@@ -15,6 +15,7 @@ import "./mocks.web";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 const styles = [
   "alignItems",
@@ -149,6 +150,7 @@ export default () => {
 
     const output = TestRenderer.create(
       <Article
+        {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}
