@@ -1,6 +1,7 @@
 import React from "react";
 import mockDate from "mockdate";
 import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import Card from "@times-components/card";
 import Context from "@times-components/context";
 import RelatedArticles from "../src/related-articles";
 
@@ -271,6 +272,34 @@ export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
         );
 
         expect(events.mock.calls).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
+};
+
+export const threeArticlesWithLeadAssetOverrideTests = ({
+  fixture,
+  name
+}) => renderComponent => {
+  beforeAndAfterEach();
+
+  const tests = [
+    {
+      name,
+      test() {
+        const events = jest.fn();
+
+        const output = renderComponent(
+          <Context.Provider value={{ makeArticleUrl }}>
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
+          </Context.Provider>
+        );
+
+        expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
+          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
+        );
       }
     }
   ];

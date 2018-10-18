@@ -192,7 +192,8 @@ export default ({
             summary175,
             summary225,
             url
-          }
+          },
+          leadAsset: null
         }
       ],
       sliceName: "StandardSlice"
