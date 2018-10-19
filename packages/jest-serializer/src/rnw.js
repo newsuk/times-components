@@ -36,7 +36,7 @@ const getStyleSheet = AppRegistry => {
   const { getStyleElement } = AppRegistry.getApplication("App");
   const ssString = ReactDOMServer.renderToStaticMarkup(getStyleElement());
 
-  const [, match] = ssString.match(/<style.*>(.*)<\/style>/s); // eslint-disable-line no-empty-character-class
+  const [, match] = ssString.match(/<style.*>(.*)<\/style>/s);
 
   if (!match) {
     return {};

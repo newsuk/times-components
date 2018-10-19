@@ -44,7 +44,7 @@
     "@times-components/eslint-config-thetimes": "0.8.3",
     "babel-plugin-react-native-web": "0.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "jest": "23.3.0",
     "prettier": "1.14.3"
   },
