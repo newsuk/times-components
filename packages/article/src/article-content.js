@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FlatList } from "react-native";
 
+const viewabilityConfig = {
+  viewAreaCoveragePercentThreshold: 100,
+  waitForInteraction: false
+};
+
 const ArticleContent = ({
   data,
   renderRow,
@@ -35,6 +40,7 @@ const ArticleContent = ({
       )
     }
     testID="flat-list-article"
+    viewabilityConfig={viewabilityConfig}
   />
 );
 

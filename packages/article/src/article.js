@@ -159,9 +159,7 @@ class ArticlePage extends Component {
     return info.changed
       .filter(viewableItem => viewableItem.isViewable)
       .map(
-        viewableItem =>
-          this.props.onViewed &&
-          this.props.onViewed(viewableItem.item, this.state.dataSource)
+        viewableItem => this.props.onViewed(viewableItem.item, this.state.dataSource)
       );
   }
 
@@ -196,7 +194,7 @@ class ArticlePage extends Component {
         onTopicPress={this.props.onTopicPress}
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
-        onViewableItemsChanged={this.onViewableItemsChanged}
+        onViewableItemsChanged={this.props.onViewed ? this.onViewableItemsChanged : null}
         pageSize={listViewPageSize}
         renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
