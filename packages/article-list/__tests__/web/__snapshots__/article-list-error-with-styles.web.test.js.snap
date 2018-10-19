@@ -153,23 +153,20 @@ exports[`1. page error 1`] = `
 }
 
 .IS1 {
-  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS2 {
   display: table;
-  height: 0px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: 0;
+  overflow: hidden;
   padding-bottom: 110%;
 }
 
 .IS3 {
-  -webkit-align-self: center;
   align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
-  -ms-flex-item-align: center;
 }
 </style>
 

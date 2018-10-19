@@ -35,14 +35,14 @@ exports[`1. red article flag 1`] = `
 
 .IS3 {
   -webkit-align-items: center;
-  -webkit-box-align: center;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-align: center;
-  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 

@@ -168,15 +168,11 @@ exports[`1. article list 1`] = `
 }
 
 .IS1 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-top-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  top: 1px;
+  border-bottom-width: 1;
+  border-color: #DBDBDB;
+  border-top-width: 1;
+  padding-vertical: 10px;
+  top: 1;
 }
 </style>
 

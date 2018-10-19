@@ -146,100 +146,91 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS1 {
-  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS2 {
-  -webkit-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  -ms-flex: 1;
+  flex: 1;
 }
 
 .IS3 {
-  -webkit-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  -ms-flex: 1;
+  flex: 1;
 }
 
 .IS4 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
 }
 
 .IS5 {
   display: table;
-  height: 0px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: 0;
+  overflow: hidden;
   padding-bottom: 150%;
 }
 
 .IS6 {
-  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS7 {
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS8 {
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS9 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS10 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS11 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS12 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS13 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS14 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS15 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS16 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS17 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 </style>
 
@@ -435,99 +426,90 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS1 {
-  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS2 {
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS3 {
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS4 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS5 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS6 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS7 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS8 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS9 {
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS10 {
-  background-image: -webkit-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS11 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS12 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS13 {
-  background-image: -webkit-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),-moz-linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%),linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS14 {
-  -webkit-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  -ms-flex: 1;
+  flex: 1;
 }
 
 .IS15 {
-  -webkit-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  -ms-flex: 1;
+  flex: 1;
 }
 
 .IS16 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
 }
 
 .IS17 {
   display: table;
-  height: 0px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: 0;
+  overflow: hidden;
   padding-bottom: 150%;
 }
 </style>
