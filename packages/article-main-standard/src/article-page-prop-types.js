@@ -7,6 +7,7 @@ const articlePagePropTypes = {
   article: PropTypes.shape({
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
+    // Could have more here.
   }),
   error: PropTypes.shape({
     graphQLErrors: PropTypes.array,
@@ -15,17 +16,13 @@ const articlePagePropTypes = {
       message: PropTypes.string
     })
   }),
-  isLoading: PropTypes.bool,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  pageSection: PropTypes.string
+  isLoading: PropTypes.bool
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  pageSection: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

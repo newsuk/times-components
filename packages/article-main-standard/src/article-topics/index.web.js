@@ -4,13 +4,12 @@ import PropTypes from "prop-types";
 import styles from "../styles/article-topics";
 import { TopicsMetaContainer } from "../styles/article-topics/responsive";
 
-const ShowTopics = ({ onPress, topics }) => {
+const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
       return (
         <TopicsMetaContainer>
           <nav>
             <ArticleTopics
-              onPress={onPress}
               style={styles.topicsMetaContainer}
               topics={topics}
             />
@@ -23,7 +22,6 @@ const ShowTopics = ({ onPress, topics }) => {
 };
 
 ShowTopics.propTypes = {
-  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

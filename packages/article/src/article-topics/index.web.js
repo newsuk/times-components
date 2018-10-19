@@ -4,13 +4,12 @@ import PropTypes from "prop-types";
 import styles from "../styles/article-topics";
 import { TopicsContainer } from "../styles/article-topics/responsive";
 
-const ShowTopics = ({ device, onPress, topics }) => {
+const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
       <TopicsContainer>
         <nav>
           <ArticleTopics
-            onPress={onPress}
             style={styles.topicsContainer}
             topics={topics}
           />
@@ -23,8 +22,6 @@ const ShowTopics = ({ device, onPress, topics }) => {
 };
 
 ShowTopics.propTypes = {
-  device: PropTypes.oneOf(["DESKTOP", null]),
-  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -34,7 +31,6 @@ ShowTopics.propTypes = {
 };
 
 ShowTopics.defaultProps = {
-  device: null,
   topics: null
 };
 

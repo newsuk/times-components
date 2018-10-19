@@ -7,14 +7,14 @@ import styles from "./styles";
 const ArticleError = ({ refetch }) => (
   <View style={styles.errorContainer}>
     <View>
-      <Image
+      {/* <Image
         accessibilityLabel="Server error"
         accessible
         resizeMode="contain"
         // eslint-disable-next-line global-require
         source={require("../assets/article-error.png")}
         style={[styles.errorImageContainer, { height: 270, width: 240 }]}
-      />
+      /> */}
 
       <Text style={styles.errorHeading}>Something&apos;s gone wrong</Text>
       <Text style={styles.errorMessage}>

@@ -67,7 +67,7 @@ const nodeShape = {
 
 ArticleMetaBase.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
-  onAuthorPress: PropTypes.func.isRequired,
+  onAuthorPress: PropTypes.func,
   publicationName: PropTypes.string,
   publishedTime: PropTypes.string
 };

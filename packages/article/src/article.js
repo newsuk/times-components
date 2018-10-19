@@ -74,7 +74,7 @@ const renderRow = (analyticsStream) => (
   }
 };
 
-class ArticlePage extends Component {
+class Article extends Component {
   static getDerivedStateFromProps(props, state) {
     if (!props.isLoading && !props.error) {
       return {
@@ -136,7 +136,7 @@ class ArticlePage extends Component {
   }
 }
 
-ArticlePage.propTypes = {
+Article.propTypes = {
   ...articlePagePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
@@ -145,6 +145,6 @@ ArticlePage.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
 };
-ArticlePage.defaultProps = articlePageDefaultProps;
+Article.defaultProps = articlePageDefaultProps;
 
-export default ArticlePage;
+export default Article;

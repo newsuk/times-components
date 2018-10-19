@@ -8,7 +8,7 @@ import {
   BodyContainer,
 } from "./styles/responsive";
 
-const ArticlePage = (props) => {
+const Article = (props) => {
     const {
       analyticsStream,
       data: {
@@ -19,7 +19,6 @@ const ArticlePage = (props) => {
         relatedArticleSlice
       },
       observed,
-      onTopicPress,
       registerNode
     } = props;
 
@@ -47,7 +46,7 @@ const ArticlePage = (props) => {
           section={section}
         />
       </BodyContainer>
-      <ArticleTopics onPress={onTopicPress} topics={topics} />
+      <ArticleTopics topics={topics} />
       <aside id="related-articles" ref={node => registerNode(node)}>
         {displayRelatedArticles({
           isVisible: !!observed.get("related-articles")
@@ -57,7 +56,7 @@ const ArticlePage = (props) => {
     );
 };
 
-ArticlePage.propTypes = articlePropTypes;
-ArticlePage.defaultProps = articleDefaultProps;
+Article.propTypes = articlePropTypes;
+Article.defaultProps = articleDefaultProps;
 
-export default ArticlePage;
+export default Article;

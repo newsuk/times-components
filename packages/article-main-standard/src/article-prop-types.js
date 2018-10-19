@@ -8,11 +8,9 @@ const articlePropTypes = {
   data: PropTypes.shape({
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
+    // Could have more here
   }),
   observed: PropTypes.object.isRequired,
-  onAuthorPress: PropTypes.func.isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
   registerNode: PropTypes.func.isRequired
 };
 
