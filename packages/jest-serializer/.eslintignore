@@ -2,5 +2,4 @@
 **/coverage/*
 dist
 rnw.js
-hoist-style.js
-printers.js
+!src/rnw.js
