@@ -13,9 +13,6 @@ const nativeSpecific = (platform: Platform) => ({
     defaultPlatform: platform,
     platforms: [platform],
     providesModuleNodeModules: ["react", "react-native"]
-  },
-  moduleNameMapper: {
-    "\\.(png)$": "RelativeImageStub"
   }
 });
 
@@ -95,10 +92,13 @@ export default (
     ],
     testURL: "http://localhost",
     transform: {
+      // @todo Remove this when upgrading to above react 0.56.0 (blocked by expo-sdk as of 2018/10/18)
+      "^.+\\.(bmp|gif|jpg|jpeg|mp4|png|psd|svg|webp)$":
+        "<rootDir>/node_modules/react-native/jest/assetFileTransformer.js",
       "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
+      "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components|@storybook/react-native)/)"
     ]
   };
 
