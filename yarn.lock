@@ -9509,7 +9509,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-hyphenate-style-name@^1.0.1, hyphenate-style-name@^1.0.2:
+hyphenate-style-name@1.0.2, hyphenate-style-name@^1.0.1, hyphenate-style-name@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
   integrity sha1-MRYKNpMK2vH8BMYHT360FGXU7Es=

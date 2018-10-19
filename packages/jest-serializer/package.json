@@ -47,10 +47,11 @@
     "react-test-renderer": "16.5.2"
   },
   "dependencies": {
+    "css": "^2.2.1",
+    "hyphenate-style-name": "1.0.2",
     "enzyme-to-json": "3.3.4",
     "lodash.isequal": "4.4.0",
-    "lodash.omitby": "4.6.0",
-    "css": "^2.2.1"
+    "lodash.omitby": "4.6.0"
   },
   "peerDependencies": {
     "react": ">=16",
