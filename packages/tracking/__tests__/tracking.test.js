@@ -78,11 +78,13 @@ module.exports = () => {
             changed: [
               {
                 elementId: 1,
-                isViewable: true
+                isViewable: true,
+                name: "example-name"
               },
               {
                 elementId: 1,
-                isViewable: true
+                isViewable: true,
+                name: "example-name"
               }
             ]
           }
