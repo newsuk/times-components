@@ -17,4 +17,3 @@ export const topicsPropTypes = {
 export const topicsDefaultProps = {
   style: null
 };
-

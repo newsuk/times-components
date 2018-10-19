@@ -97,9 +97,7 @@ class ArticlePage extends Component {
                 publicationName={publicationName}
                 publishedTime={publishedTime}
               />
-              <ArticleTopics
-                topics={topics}
-              />
+              <ArticleTopics topics={topics} />
             </MetaContainer>
             <LeadAssetContainer>
               <LeadAssetComponent

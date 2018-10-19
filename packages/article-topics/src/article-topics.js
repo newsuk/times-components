@@ -4,7 +4,10 @@ import Context from "@times-components/context";
 import styleguide from "@times-components/styleguide";
 import ArticleTopic from "./article-topic";
 import styles from "./styles";
-import { topicsDefaultProps, topicsPropTypes } from "./article-topics-prop-types";
+import {
+  topicsDefaultProps,
+  topicsPropTypes
+} from "./article-topics-prop-types";
 
 const renderArticleTopics = (topics, onPress, fontStyle) =>
   topics.map(({ name, slug }) => (

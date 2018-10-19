@@ -2,11 +2,11 @@
 /* eslint-env browser */
 import React, { Fragment } from "react";
 import invert from "lodash.invert";
+import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
-  fixtures,
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
@@ -18,7 +18,6 @@ import {
   makeArticleConfiguration
 } from "./showcase-helper";
 import Article from "./src/article-main-standard";
-import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -39,7 +38,8 @@ const renderArticle = ({
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
       <Context.Provider
-        value={{ makeArticleUrl, theme: { scale, sectionColour } }}>
+        value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+      >
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}
@@ -170,28 +170,28 @@ export default {
       name: "Loading",
       type: "story"
     },
-      {
-        component: ({ select }, { decorateAction }) => {
-          const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-          const scale = selectScales(select);
-          const sectionColour = selectSection(select);
+    {
+      component: ({ select }, { decorateAction }) => {
+        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
+        const scale = selectScales(select);
+        const sectionColour = selectSection(select);
 
-          return mockArticle({
-            decorateAction,
-            id,
-            params: makeParams({
-              error: () => new Error("Article error"),
-              variables: () => ({
-                id
-              })
-            }),
-            scale,
-            sectionColour
-          });
-        },
-        name: "Error",
-        platform: "native",
-        type: "story"
+        return mockArticle({
+          decorateAction,
+          id,
+          params: makeParams({
+            error: () => new Error("Article error"),
+            variables: () => ({
+              id
+            })
+          }),
+          scale,
+          sectionColour
+        });
+      },
+      name: "Error",
+      platform: "native",
+      type: "story"
     }
   ],
   name: "Pages/Article/Main Standard"

@@ -22,7 +22,7 @@ const articlePagePropTypes = {
 const articlePageDefaultProps = {
   article: null,
   error: null,
-  isLoading: false,
+  isLoading: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };
