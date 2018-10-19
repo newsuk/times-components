@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.6.0"></a>
+# [5.6.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.5.2...@times-components/article@5.6.0) (2018-10-19)
+
+
+### Features
+
+* drop cap ([#1410](https://github.com/newsuk/times-components/issues/1410)) ([f34514f](https://github.com/newsuk/times-components/commit/f34514f))
+
+
+
+
+
 <a name="5.5.2"></a>
 ## [5.5.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.5.1...@times-components/article@5.5.2) (2018-10-17)
 
