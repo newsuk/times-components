@@ -12,7 +12,7 @@ import ArticleContent from "./article-content";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
-} from "./article-page-prop-types";
+} from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
 import getHeadline from "./utils";
 

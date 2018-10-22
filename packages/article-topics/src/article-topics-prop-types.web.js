@@ -8,8 +8,8 @@ export const topicsPropTypes = {
   style: ViewPropTypesStyle,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.name.isRequired,
-      slug: PropTypes.slug.isRequired
+      name: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired
     }).isRequired
   ).isRequired
 };
