@@ -1,12 +1,14 @@
 # Article Paragraph
 
-This package provides an article paragraph view, including support for
-displaying a "drop cap" at the beginning of the paragraph.
+This packages provides a component for displaying an article paragraph
+on android and web, including support for displaying a "drop
+cap" at the beginning of a paragraph.
 
 On the web, the drop cap is implemented using CSS floats, and should work with
 any styling or markup used.
 
-On native, the drop cap is implemented by rendering three separate text boxes to
+React Native does not support CSS floats. Therefore, on android,
+the drop cap is implemented by rendering three separate text boxes to
 mimic the expected layout, as shown below.
 
 ```
@@ -24,13 +26,17 @@ mimic the expected layout, as shown below.
  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 ```
 
-To implement this, we must know the number of words that can fit next to the
-specified drop cap character, and then split the paragraph text at this point.
-Because of this, all styling or markup must be stripped. This means on native,
-you cannot have styling or markup in a paragraph containing a drop cap.
+## Gotchas
+
+To implement this on android, we must know the number of words that can fit
+next to the specified drop cap character, and then split the paragraph text at
+this point. Because of this, all styling or markup must be stripped.
+**This means on android, you cannot have styling or markup in a paragraph containing a drop cap.**
 
 We use a [3rd party library](https://github.com/aMarCruz/react-native-text-size)
-to calculate the text to fit next to the drop cap.
+to calculate the text to fit next to the drop cap. There is not currently support for iOS
+for some of features of this library that we make use of. **Therefore, this package
+does not currently have support for iOS.**
 
 ## Contributing
 
@@ -71,5 +77,15 @@ https://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&
 
 ## Future
 
-Planning to support complex markups in the drop cap paragraph text on native.
-iOS support for drop caps coming soon.
+The API for this package is likely to change radically in the foreseeable
+future. It was written with the intention of supporting arbitrary numbers of
+characters being displayed as a drop cap. However, the acceptance criteria for the
+feature we use this package for has since changed, and this presents the opportunity for
+simplifying the API. **In the future, this package will simply have a toggle for displaying a drop cap,
+and will display the first character as a drop cap when it is enabled.**
+
+We would like to support paragraph styling on android when drop caps are enabled,
+but this is tricky and therefore it may take some time before support is
+implemented.
+
+We intend to add iOS support to this package.
