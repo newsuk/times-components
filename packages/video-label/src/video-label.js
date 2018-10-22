@@ -10,7 +10,7 @@ const VideoLabel = ({ color, title }) => (
       <IconVideo fillColour={color} height={8} />
     </View>
     <Text style={[styles.title, { color }]}>
-      {title.toUpperCase() || "VIDEO"}
+      {title ? title.toUpperCase() : "VIDEO"}
     </Text>
   </View>
 );

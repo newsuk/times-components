@@ -44,6 +44,16 @@ export default () => {
       }
     },
     {
+      name: "video label with null title shows VIDEO",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <VideoLabel color="#008347" title={null} />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "video label with the black default colour",
       test: () => {
         const testInstance = TestRenderer.create(<VideoLabel />);

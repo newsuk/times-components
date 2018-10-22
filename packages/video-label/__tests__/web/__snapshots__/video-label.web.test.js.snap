@@ -38,7 +38,26 @@ exports[`2. video label without a title shows video 1`] = `
 </VideoLabel>
 `;
 
-exports[`3. video label with the black default colour 1`] = `
+exports[`3. video label with null title shows video 1`] = `
+<VideoLabel
+  color="#008347"
+  title={null}
+>
+  <div>
+    <div>
+      <IconVideo
+        fillColour="#008347"
+        height={8}
+      />
+    </div>
+    <div>
+      VIDEO
+    </div>
+  </div>
+</VideoLabel>
+`;
+
+exports[`4. video label with the black default colour 1`] = `
 <VideoLabel
   color="black"
   title=""
