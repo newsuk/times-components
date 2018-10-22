@@ -33,7 +33,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.3",
     "depcheck": "0.6.9",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "prettier": "1.14.3",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"

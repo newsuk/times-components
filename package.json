@@ -115,7 +115,7 @@
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "dextrose": "4.0.7",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "3.1.0",
     "eslint-plugin-import": "2.8.0",

@@ -29,7 +29,7 @@
     "@times-components/eslint-config-thetimes": "0.8.3",
     "@times-components/webpack-configurator": "2.0.9",
     "babel-cli": "6.26.0",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "eslint-plugin-graphql": "2.1.1",
     "prettier": "1.14.3",
     "webpack": "4.6.0",

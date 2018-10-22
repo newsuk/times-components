@@ -2,72 +2,74 @@
 
 exports[`1. group of topics 1`] = `
 <style>
-{
-  "IS1": {
-    "textDecoration": "none",
-  },
-  "S1": {
-    "color": "rgba(105,105,105,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "2.5px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "12px",
-    "padding-left": "15px",
-    "padding-right": "15px",
-    "padding-top": "12px",
-  },
-  "S3": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "10px",
-    "margin-top": "10px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-direction": "row",
-    "-ms-flex-pack": "center",
-    "-ms-flex-wrap": "wrap",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-lines": "multiple",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "row",
-    "-webkit-flex-wrap": "wrap",
-    "-webkit-justify-content": "center",
-    "flex-direction": "row",
-    "flex-wrap": "wrap",
-    "justify-content": "center",
-    "margin-bottom": "10px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 2.5px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
+.S3 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S4 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.IS1 {
+  text-decoration: none;
 }
 </style>
 
@@ -96,72 +98,74 @@ exports[`1. group of topics 1`] = `
 
 exports[`2. group of topics at large scale 1`] = `
 <style>
-{
-  "IS1": {
-    "textDecoration": "none",
-  },
-  "S1": {
-    "color": "rgba(105,105,105,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "2.5px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "12px",
-    "padding-left": "15px",
-    "padding-right": "15px",
-    "padding-top": "12px",
-  },
-  "S3": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "10px",
-    "margin-top": "10px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-direction": "row",
-    "-ms-flex-pack": "center",
-    "-ms-flex-wrap": "wrap",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-lines": "multiple",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "row",
-    "-webkit-flex-wrap": "wrap",
-    "-webkit-justify-content": "center",
-    "flex-direction": "row",
-    "flex-wrap": "wrap",
-    "justify-content": "center",
-    "margin-bottom": "10px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 2.5px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
+.S3 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S4 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.IS1 {
+  text-decoration: none;
 }
 </style>
 
@@ -190,72 +194,74 @@ exports[`2. group of topics at large scale 1`] = `
 
 exports[`3. group of topics at xlarge scale 1`] = `
 <style>
-{
-  "IS1": {
-    "textDecoration": "none",
-  },
-  "S1": {
-    "color": "rgba(105,105,105,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "2.5px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "12px",
-    "padding-left": "15px",
-    "padding-right": "15px",
-    "padding-top": "12px",
-  },
-  "S3": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-    "margin-bottom": "0px",
-    "margin-right": "10px",
-    "margin-top": "10px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "-ms-flex-direction": "row",
-    "-ms-flex-pack": "center",
-    "-ms-flex-wrap": "wrap",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-lines": "multiple",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-box-pack": "center",
-    "-webkit-flex-direction": "row",
-    "-webkit-flex-wrap": "wrap",
-    "-webkit-justify-content": "center",
-    "flex-direction": "row",
-    "flex-wrap": "wrap",
-    "justify-content": "center",
-    "margin-bottom": "10px",
-    "margin-right": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-left": "0px",
-    "padding-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 2.5px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
+.S3 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S4 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.IS1 {
+  text-decoration: none;
 }
 </style>
 

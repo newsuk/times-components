@@ -89,71 +89,76 @@ exports[`1. renders 1`] = `
 }
 
 <style>
-{
-  "IS1": {
-    "textDecoration": "none",
-  },
-  "IS2": {
-    "textDecoration": "none",
-  },
-  "S1": {
-    "color": "rgba(105,105,105,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "15px",
-    "margin-right": "0px",
-    "padding-top": "4px",
-  },
-  "S2": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "flex-direction": "column",
-    "margin-right": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-right": "0px",
-    "padding-top": "0px",
-  },
-  "S4": {
-    "color": "rgba(0,102,153,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "15px",
-    "height": "15px",
-    "margin-right": "0px",
-    "padding-top": "0px",
-    "text-align": "left",
-  },
-  "S5": {
-    "-ms-flex-align": "center",
-    "-ms-flex-direction": "row",
-    "-webkit-align-items": "center",
-    "-webkit-box-align": "center",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "align-items": "center",
-    "flex-direction": "row",
-    "margin-right": "0px",
-    "padding-top": "10px",
-  },
-  "S6": {
-    "color": "rgba(0,102,153,1.00)",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "15px",
-    "height": "15px",
-    "margin-right": "10px",
-    "padding-top": "0px",
-    "text-align": "right",
-  },
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 15px;
+  margin-right: 0px;
+  padding-top: 4px;
+}
+
+.S2 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-right: 0px;
+  padding-top: 0px;
+}
+
+.S3 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 0px;
+  padding-top: 0px;
+}
+
+.S4 {
+  color: rgba(0,102,153,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 15px;
+  height: 15px;
+  margin-right: 0px;
+  padding-top: 0px;
+  text-align: left;
+}
+
+.S5 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-right: 0px;
+  padding-top: 10px;
+}
+
+.S6 {
+  color: rgba(0,102,153,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 15px;
+  height: 15px;
+  margin-right: 10px;
+  padding-top: 0px;
+  text-align: right;
+}
+
+.IS1 {
+  text-decoration: none;
+}
+
+.IS2 {
+  text-decoration: none;
 }
 </style>
 
@@ -277,20 +282,18 @@ exports[`2. renders with no results 1`] = `
 }
 
 <style>
-{
-  "S1": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-direction": "column",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "align-items": "stretch",
-    "flex-direction": "column",
-    "margin-right": "0px",
-    "padding-top": "0px",
-  },
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-right: 0px;
+  padding-top: 0px;
 }
 </style>
 

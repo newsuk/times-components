@@ -2,10 +2,8 @@
 
 exports[`hoist-style should hoist a style and leave existing props untouched 1`] = `
 <style>
-{
-  "IS1": {
-    "color": "rgba(255,0,0,1.00)",
-  },
+.IS1 {
+  color: rgba(255,0,0,1.00);
 }
 </style>
 
@@ -20,13 +18,12 @@ exports[`hoist-style should hoist a style and leave existing props untouched 1`]
 
 exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
 <style>
-{
-  "IS1": {
-    "color": "rgba(255,0,0,1.00)",
-  },
-  "S1": {
-    "border-top-width": "0px",
-  },
+.S1 {
+  border-top-width: 0px;
+}
+
+.IS1 {
+  color: rgba(255,0,0,1.00);
 }
 </style>
 

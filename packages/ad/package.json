@@ -47,7 +47,7 @@
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "jest": "23.3.0",
     "jsdom": "9.12.0",
     "lodash.merge": "4.6.0",

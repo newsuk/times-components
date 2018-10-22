@@ -2,25 +2,24 @@
 
 exports[`1. with a single author 1`] = `
 <style>
-{
-  "S1": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "color": "rgba(0,102,153,1.00)",
-    "flex-direction": "row",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-  },
+.S1 {
+  color: rgba(0,102,153,1.00);
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 </style>
 
@@ -39,27 +38,27 @@ exports[`1. with a single author 1`] = `
 
 exports[`2. with a given section colour 1`] = `
 <style>
-{
-  "IS1": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "S1": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-  },
+.S1 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.IS1 {
+  color: rgba(0,0,255,1.00);
 }
 </style>
 
@@ -78,27 +77,27 @@ exports[`2. with a given section colour 1`] = `
 
 exports[`3. with given styles 1`] = `
 <style>
-{
-  "IS1": {
-    "color": "rgba(255,0,0,1.00)",
-  },
-  "S1": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-  },
+.S1 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.IS1 {
+  color: rgba(255,0,0,1.00);
 }
 </style>
 
@@ -117,42 +116,47 @@ exports[`3. with given styles 1`] = `
 
 exports[`4. with a a very long byline 1`] = `
 <style>
-{
-  "IS1": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "IS2": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "IS3": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "IS4": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "IS5": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "IS6": {
-    "color": "rgba(0,0,255,1.00)",
-  },
-  "S1": {
-    "-ms-flex-direction": "row",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "horizontal",
-    "-webkit-flex-direction": "row",
-    "flex-direction": "row",
-    "font-family": "GillSansMTStd-Medium",
-    "font-size": "13px",
-    "line-height": "15px",
-  },
-  "S2": {
-    "-ms-flex-direction": "column",
-    "-webkit-box-direction": "normal",
-    "-webkit-box-orient": "vertical",
-    "-webkit-flex-direction": "column",
-    "flex-direction": "column",
-  },
+.S1 {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.S2 {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.IS1 {
+  color: rgba(0,0,255,1.00);
+}
+
+.IS2 {
+  color: rgba(0,0,255,1.00);
+}
+
+.IS3 {
+  color: rgba(0,0,255,1.00);
+}
+
+.IS4 {
+  color: rgba(0,0,255,1.00);
+}
+
+.IS5 {
+  color: rgba(0,0,255,1.00);
+}
+
+.IS6 {
+  color: rgba(0,0,255,1.00);
 }
 </style>
 
