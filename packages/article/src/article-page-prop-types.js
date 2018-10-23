@@ -18,14 +18,16 @@ const articlePagePropTypes = {
   isLoading: PropTypes.bool,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired,
-  pageSection: PropTypes.string
+  pageSection: PropTypes.string,
+  receiveChildList: PropTypes.func
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  pageSection: null
+  pageSection: null,
+  receiveChildList: () => {}
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

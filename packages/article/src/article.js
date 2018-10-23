@@ -5,6 +5,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleHeader from "./article-header/article-header";
@@ -138,6 +139,8 @@ class ArticlePage extends Component {
   constructor(props) {
     super(props);
 
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+
     if (props.article && !props.isLoading && !props.error) {
       this.state = {
         dataSource: listViewDataHelper(props.article),
@@ -150,8 +153,18 @@ class ArticlePage extends Component {
     }
   }
 
+  onViewableItemsChanged(info) {
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(viewableItem =>
+        this.props.onViewed(viewableItem.item, this.state.dataSource)
+      );
+  }
+
   render() {
-    const { error, refetch, isLoading } = this.props;
+    const { error, refetch, isLoading, receiveChildList } = this.props;
 
     if (error) {
       return <ArticleError refetch={refetch} />;
@@ -160,9 +173,18 @@ class ArticlePage extends Component {
     if (isLoading) {
       return <ArticleLoading />;
     }
+
+    const articleData = this.state.dataSource.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
+    receiveChildList(articleData);
+
     const ArticleListView = (
       <ArticleContent
-        data={this.state.dataSource}
+        data={articleData}
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
         onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
@@ -172,6 +194,9 @@ class ArticlePage extends Component {
         onTopicPress={this.props.onTopicPress}
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
+        onViewableItemsChanged={
+          this.props.onViewed ? this.onViewableItemsChanged : null
+        }
         pageSize={listViewPageSize}
         renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
@@ -196,4 +221,4 @@ ArticlePage.propTypes = {
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(ArticlePage);
+export default articleTrackingContext(withTrackScrollDepth(ArticlePage));

@@ -134,10 +134,10 @@ export default () => {
             articles={articlesFixture}
             emptyStateMessage="Empty state"
             onArticlePress={() => {}}
+            onViewed={() => {}}
             refetch={() => {}}
           />
         );
-
         expect(
           testInstance.root
             .findByType(FlatList)

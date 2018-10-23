@@ -14,9 +14,12 @@ const omitKeys = new Set([
   "data",
   "disableVirtualization",
   "horizontal",
+  "onViewableItemsChanged",
   "selectable",
   "style",
-  "testID"
+  "testID",
+  "viewabilityConfig",
+  "viewabilityConfigCallbackPairs"
 ]);
 
 export default () => {

@@ -87,6 +87,7 @@ Array [
       "attrs": Object {
         "scrollDepth": Object {
           "itemNumber": 0,
+          "name": "example-name",
           "total": 3,
         },
       },

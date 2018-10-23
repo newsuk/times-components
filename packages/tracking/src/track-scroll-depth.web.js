@@ -65,6 +65,7 @@ export default (
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
             itemNumber: childProps.index + 1,
+            name: childProps.name,
             total: childProps.total
           }
         },
