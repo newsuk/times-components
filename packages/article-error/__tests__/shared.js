@@ -4,7 +4,6 @@ import {
   addSerializers,
   compose,
   flattenStyleTransform,
-  minimaliseTransform,
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
