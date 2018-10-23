@@ -33,12 +33,6 @@ exports[`2. a full article with an image as the lead asset 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -253,12 +247,6 @@ exports[`3. an article with a video as the lead asset 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -332,12 +320,6 @@ exports[`4. an article with no lead asset 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -389,12 +371,6 @@ exports[`5. an article with ads 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -454,12 +430,6 @@ exports[`7. an article with updated byline 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -511,12 +481,6 @@ exports[`7. an article with updated byline 2`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -592,12 +556,6 @@ exports[`8. an article that moves to a loading state 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>

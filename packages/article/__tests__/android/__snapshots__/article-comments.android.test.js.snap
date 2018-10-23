@@ -8,12 +8,6 @@ exports[`1. a full article with enabled comments 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -73,12 +67,6 @@ exports[`2. a full article with disabled comments 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>

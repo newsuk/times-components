@@ -18,6 +18,7 @@ const omitKeys = new Set([
   "selectable",
   "style",
   "testID",
+  "viewabilityConfig",
   "viewabilityConfigCallbackPairs"
 ]);
 

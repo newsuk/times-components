@@ -8,12 +8,6 @@ exports[`1. a secondary image 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>
@@ -73,12 +67,6 @@ exports[`2. an inline image 1`] = `
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
   updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
   windowSize={21}
 >
   <View>

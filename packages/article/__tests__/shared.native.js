@@ -24,6 +24,7 @@ const omitKeys = new Set([
   "onViewableItemsChanged",
   "style",
   "testID",
+  "viewabilityConfig",
   "viewabilityConfigCallbackPairs"
 ]);
 
