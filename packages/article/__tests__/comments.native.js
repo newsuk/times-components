@@ -27,6 +27,7 @@ const omitKeys = new Set([
   "data",
   "disableVirtualization",
   "horizontal",
+  "onViewableItemsChanged",
   "selectable",
   "style",
   "testID",

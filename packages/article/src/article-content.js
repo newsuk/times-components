@@ -60,8 +60,12 @@ ArticleContent.propTypes = {
   onTopicPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
-  onViewableItemsChanged: PropTypes.func.isRequired,
+  onViewableItemsChanged: PropTypes.func,
   renderRow: PropTypes.func.isRequired
+};
+
+ArticleContent.defaultProps = {
+  onViewableItemsChanged: () => {}
 };
 
 export default ArticleContent;
