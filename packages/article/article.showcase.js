@@ -63,26 +63,13 @@ export default {
 
         const config = {
           commentsEnabled: commentsEnabled ? undefined : false,
-          relatedArticleSlice: relatedArticleSlice ? undefined : {},
+          relatedArticleSlice: relatedArticleSlice ? undefined : null,
           topics: topics ? undefined : [],
         };
 
         return renderComponent(config, scale, sectionColour);
       },
       name: "Default",
-      type: "story"
-    },
-    {
-      component: () => (
-        <Article
-          adConfig={articleAdConfig}
-          analyticsStream={storybookReporter}
-          isLoading
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-        />
-      ),
-      name: "Loading",
       type: "story"
     },
     {
@@ -109,5 +96,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Pages/Article"
+  name: "Composed/Article"
 };

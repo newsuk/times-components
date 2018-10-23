@@ -127,9 +127,10 @@ const ArticleMainStandard = ({
   adConfig,
   analyticsStream,
   article,
+  isLoading,
   error
 }) => {
-  if (error) {
+  if (error || isLoading) {
     return null;
   }
 

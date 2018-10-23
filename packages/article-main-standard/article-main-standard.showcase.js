@@ -154,45 +154,9 @@ export default {
           </Fragment>
         );
       },
-      name: "Default",
-      type: "story"
-    },
-    {
-      component: () => (
-        <Article
-          adConfig={articleAdConfig}
-          analyticsStream={storybookReporter}
-          isLoading
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-        />
-      ),
-      name: "Loading",
-      type: "story"
-    },
-    {
-      component: ({ select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-        const scale = selectScales(select);
-        const sectionColour = selectSection(select);
-
-        return mockArticle({
-          decorateAction,
-          id,
-          params: makeParams({
-            error: () => new Error("Article error"),
-            variables: () => ({
-              id
-            })
-          }),
-          scale,
-          sectionColour
-        });
-      },
-      name: "Error",
-      platform: "native",
+      name: "Main Standard",
       type: "story"
     }
   ],
-  name: "Pages/Article/Main Standard"
+  name: "Pages/Article"
 };
