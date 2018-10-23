@@ -13,7 +13,7 @@ import PullQuote from "@times-components/pull-quote";
 import { colours } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
-import AspectRatioContainer from "@times-components/utils";
+import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import {
