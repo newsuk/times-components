@@ -219,7 +219,6 @@ export default {
         return mockArticle({
           decorateAction,
           id,
-<<<<<<< HEAD
           params: [
             ...makeParams({
               makeArticle: article => ({
@@ -229,12 +228,6 @@ export default {
               variables: () => ({
                 id
               })
-=======
-          params: makeParams({
-            makeArticle: article => ({
-              ...article,
-              seoContent: [...article.seoContent, ...article.seoContent]
->>>>>>> feat: start swapping content for seoContet
             }),
             ...makeArticleCommentsParams({
               count: 123,
