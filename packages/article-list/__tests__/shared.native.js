@@ -127,6 +127,26 @@ export default () => {
     },
     {
       name:
+        "onViewableItemsChanged returns an empty list when nothing has changed",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ArticleList
+            articles={articlesFixture}
+            emptyStateMessage="Empty state"
+            onArticlePress={() => {}}
+            onViewed={() => {}}
+            refetch={() => {}}
+          />
+        );
+         expect(
+          testInstance.root
+            .findByType(FlatList)
+            .props.onViewableItemsChanged({ changed: [] })
+        ).toEqual([]);
+      }
+    },
+    {
+      name:
         "fetchMore is called with the expected number when the end of the list is reached",
       test() {
         const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
