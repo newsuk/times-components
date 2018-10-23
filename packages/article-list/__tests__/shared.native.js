@@ -138,7 +138,7 @@ export default () => {
             refetch={() => {}}
           />
         );
-         expect(
+        expect(
           testInstance.root
             .findByType(FlatList)
             .props.onViewableItemsChanged({ changed: [] })
