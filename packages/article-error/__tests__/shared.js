@@ -1,8 +1,16 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import {
+  addSerializers,
+  compose,
+  flattenStyleTransform,
+  minimaliseTransform,
+  minimalNativeTransform,
+  print
+} from "@times-components/jest-serializer";
 import ArticleError from "../src/article-error";
 
-export default () => {
+const shared = () => {
   it("renders correctly", () => {
     const testInstance = TestRenderer.create(
       <ArticleError refetch={() => null} />
@@ -10,4 +18,17 @@ export default () => {
 
     expect(testInstance.toJSON()).toMatchSnapshot();
   });
+};
+
+export default () => {
+  addSerializers(
+    expect,
+    compose(
+      print,
+      flattenStyleTransform,
+      minimalNativeTransform
+    )
+  );
+
+  shared();
 };
