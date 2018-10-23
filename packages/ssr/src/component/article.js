@@ -2,40 +2,39 @@
 
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
-const { TopicProvider } = require("@times-components/provider/rnw");
+const { ArticleProvider } = require("@times-components/provider/rnw");
+const Article = require("@times-components/article/rnw").default;
 const Context = require("@times-components/context/rnw").default;
 const { scales } = require("@times-components/styleguide/rnw");
-const Topic = require("@times-components/topic/rnw").default;
-const makeArticleUrl = require("./make-url");
+const makeArticleUrl = require("../lib/make-url");
 
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
-module.exports = (client, slug, page) =>
+module.exports = (client, id, adConfig) =>
   React.createElement(
     ApolloProvider,
     { client },
     React.createElement(
-      TopicProvider,
+      ArticleProvider,
       {
         debounceTimeMs: 0,
-        slug
+        id
       },
-      ({ isLoading, error, refetch, topic }) =>
+      ({ article, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
           { value: { makeArticleUrl, theme: { scale, sectionColour } } },
-          React.createElement(Topic, {
-            adConfig: {},
+          React.createElement(Article, {
+            adConfig,
             analyticsStream: () => {},
+            article,
             error,
             isLoading,
-            onArticlePress: () => {},
-            onTwitterLinkPress: () => {},
-            page,
-            refetch,
-            slug,
-            topic
+            onAuthorPress: () => {},
+            onRelatedArticlePress: () => {},
+            onTopicPress: () => {},
+            refetch
           })
         )
     )

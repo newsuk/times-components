@@ -1,17 +1,9 @@
 /* eslint-disable no-console */
 
 const express = require("express");
-const { ApolloClient } = require("apollo-client");
-const { InMemoryCache: Cache } = require("apollo-cache-inmemory");
-const { fragmentMatcher } = require("@times-components/schema");
-const fetch = require("node-fetch");
-const { createHttpLink } = require("apollo-link-http");
 const shrinkRay = require("shrink-ray");
-const getData = require("./get-data");
-const adConfig = require("./ad-config.json");
-const article = require("./article");
-const authorProfile = require("./author-profile");
-const topic = require("./topic");
+
+const ssr = require("./src/server");
 
 const port = 3000;
 const server = express();
@@ -19,26 +11,8 @@ const server = express();
 server.use(shrinkRay());
 server.use(express.static("dist"));
 
-const makeClient = () =>
-  new ApolloClient({
-    cache: new Cache({
-      addTypename: true,
-      fragmentMatcher
-    }),
-    link: createHttpLink({
-      fetch,
-      headers: {
-        authorization: process.env.AUTH_TOKEN
-          ? `Bearer ${process.env.AUTH_TOKEN}`
-          : ""
-      },
-      uri: process.env.GRAPHQL_ENDPOINT
-    }),
-    ssrMode: true
-  });
-
 const makeHtml = (
-  client,
+  extract,
   nuk,
   { bundleName, html, rnwStyles, scStyles, title }
 ) => `
@@ -51,7 +25,7 @@ const makeHtml = (
             ${scStyles}
             <script>
             window.nuk = ${JSON.stringify(nuk)};
-            window.__APOLLO_STATE__=${JSON.stringify(client.extract()).replace(
+            window.__APOLLO_STATE__=${JSON.stringify(extract).replace(
               /</g,
               "\\\u003c"
             )};
@@ -65,8 +39,8 @@ const makeHtml = (
         </html>
       `;
 
-const toNumber = s => {
-  const parsed = Number.parseInt(s, 10);
+const toNumber = input => {
+  const parsed = Number.parseInt(input, 10);
 
   if (Number.isNaN(parsed)) {
     return null;
@@ -75,17 +49,14 @@ const toNumber = s => {
   return parsed;
 };
 
-server.get("/article/:id", (req, res) => {
+server.get("/article/:id", (request, response) => {
   const {
     params: { id }
-  } = req;
-  const client = makeClient();
-  const App = article(client, id);
-
-  getData(App).then(props =>
-    res.send(
+  } = request;
+  ssr.article(id).then(({ props, extract, adConfig }) =>
+    response.send(
       makeHtml(
-        client,
+        extract,
         {
           adConfig,
           id
@@ -100,19 +71,17 @@ server.get("/article/:id", (req, res) => {
   );
 });
 
-server.get("/profile/:slug", (req, res) => {
+server.get("/profile/:slug", (request, response) => {
   const {
     params: { slug },
     query: { page }
-  } = req;
+  } = request;
   const pageNum = toNumber(page) || 1;
-  const client = makeClient();
-  const App = authorProfile(client, slug, pageNum);
 
-  getData(App).then(props =>
-    res.send(
+  ssr.authorProfile(slug, pageNum).then(({ props, extract }) =>
+    response.send(
       makeHtml(
-        client,
+        extract,
         {
           page: pageNum,
           slug
@@ -127,19 +96,17 @@ server.get("/profile/:slug", (req, res) => {
   );
 });
 
-server.get("/topic/:slug", (req, res) => {
+server.get("/topic/:slug", (request, response) => {
   const {
     params: { slug },
     query: { page }
-  } = req;
+  } = request;
   const pageNum = toNumber(page) || 1;
-  const client = makeClient();
-  const App = topic(client, slug, pageNum);
 
-  getData(App).then(props =>
-    res.send(
+  ssr.topic(slug, pageNum).then(({ props, extract }) =>
+    response.send(
       makeHtml(
-        client,
+        extract,
         {
           page: pageNum,
           slug
