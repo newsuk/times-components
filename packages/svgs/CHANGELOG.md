@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.16"></a>
+## [2.1.16](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.1.13...@times-components/svgs@2.1.16) (2018-10-23)
+
+**Note:** Version bump only for package @times-components/svgs
+
+
+
+
+
 <a name="2.1.15"></a>
 ## [2.1.15](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.1.13...@times-components/svgs@2.1.15) (2018-10-19)
 

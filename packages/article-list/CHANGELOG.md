@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.5.0"></a>
+# [5.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.4.2...@times-components/article-list@5.5.0) (2018-10-23)
+
+
+### Features
+
+* add article scroll tracking ([#1413](https://github.com/newsuk/times-components/issues/1413)) ([05eaec7](https://github.com/newsuk/times-components/commit/05eaec7))
+
+
+
+
+
 <a name="5.4.3"></a>
 ## [5.4.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@5.4.2...@times-components/article-list@5.4.3) (2018-10-19)
 

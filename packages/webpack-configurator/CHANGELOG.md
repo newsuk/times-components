@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.10"></a>
+## [2.0.10](https://github.com/newsuk/times-components/compare/@times-components/webpack-configurator@2.0.7...@times-components/webpack-configurator@2.0.10) (2018-10-23)
+
+**Note:** Version bump only for package @times-components/webpack-configurator
+
+
+
+
+
 <a name="2.0.9"></a>
 ## [2.0.9](https://github.com/newsuk/times-components/compare/@times-components/webpack-configurator@2.0.7...@times-components/webpack-configurator@2.0.9) (2018-10-19)
 
