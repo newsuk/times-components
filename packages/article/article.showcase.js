@@ -207,7 +207,7 @@ export default {
           params: makeParams({
             makeArticle: article => ({
               ...article,
-              seoContent: [...article.seoContent, ...article.seoContent]
+              content: [...article.content, ...article.content]
             }),
             variables: () => ({
               id
