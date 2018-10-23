@@ -13,16 +13,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": true,
-    "networkStatus": 1,
     "refetch": [Function],
     "slug": "1",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "debounceTimeMs": 1000,
@@ -35,16 +27,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": true,
-    "networkStatus": 1,
     "refetch": [Function],
     "slug": "2",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -62,16 +46,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": false,
-    "networkStatus": 7,
     "refetch": [Function],
     "slug": "2",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -89,16 +65,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": true,
-    "networkStatus": 2,
     "refetch": [Function],
     "slug": "2",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "2",
-    },
   },
 ]
 `;
@@ -116,16 +84,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": true,
-    "networkStatus": 1,
     "refetch": [Function],
     "slug": "1",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -143,16 +103,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": false,
-    "networkStatus": 7,
     "refetch": [Function],
     "slug": "1",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -170,16 +122,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": false,
-    "networkStatus": 7,
     "refetch": [Function],
     "slug": "2",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -197,16 +141,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": true,
     "isLoading": false,
-    "networkStatus": 7,
     "refetch": [Function],
     "slug": "3",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "1",
-    },
   },
   Object {
     "author": Object {
@@ -224,16 +160,8 @@ Array [
     "fetchMore": [Function],
     "isDebouncing": false,
     "isLoading": true,
-    "networkStatus": 2,
     "refetch": [Function],
     "slug": "3",
-    "startPolling": [Function],
-    "stopPolling": [Function],
-    "subscribeToMore": [Function],
-    "updateQuery": [Function],
-    "variables": Object {
-      "slug": "3",
-    },
   },
 ]
 `;
