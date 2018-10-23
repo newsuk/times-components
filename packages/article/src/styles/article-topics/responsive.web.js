@@ -2,7 +2,7 @@ import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const TopicsContainer = styled(View)`
+export default styled(View)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 
