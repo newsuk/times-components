@@ -21,6 +21,7 @@ const omitKeys = new Set([
   "data",
   "disableVirtualization",
   "horizontal",
+  "onViewableItemsChanged",
   "style",
   "testID",
   "viewabilityConfigCallbackPairs"
