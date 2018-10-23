@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
-import ArticleLoading from "@times-components/article-loading";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -128,15 +127,10 @@ const ArticleMainStandard = ({
   adConfig,
   analyticsStream,
   article,
-  error,
-  isLoading
+  error
 }) => {
   if (error) {
     return null;
-  }
-
-  if (isLoading) {
-    return <ArticleLoading />;
   }
 
   return (

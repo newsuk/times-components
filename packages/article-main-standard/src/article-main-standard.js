@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
-import ArticleLoading from "@times-components/article-loading";
 import Article from "@times-components/article";
 import ArticleError from "@times-components/article-error";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -94,7 +93,7 @@ const renderRow = (
 
 class ArticlePage extends Component {
   static getDerivedStateFromProps(props, state) {
-    if (!props.isLoading && !props.error) {
+    if (!props.error) {
       return {
         ...state,
         dataSource: listViewDataHelper(props.article)
@@ -106,7 +105,7 @@ class ArticlePage extends Component {
   constructor(props) {
     super(props);
 
-    if (props.article && !props.isLoading && !props.error) {
+    if (props.article && !props.error) {
       this.state = {
         dataSource: listViewDataHelper(props.article)
       };
@@ -118,15 +117,12 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, refetch, isLoading } = this.props;
+    const { error, refetch } = this.props;
 
     if (error) {
       return <ArticleError refetch={refetch} />;
     }
 
-    if (isLoading) {
-      return <ArticleLoading />;
-    }
     const ArticleListView = (
       <ArticleContent
         data={this.state.dataSource}
