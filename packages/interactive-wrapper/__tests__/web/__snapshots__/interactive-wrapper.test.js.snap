@@ -8,8 +8,8 @@ Array [
   />,
   <chapter-header
     chaptercounter="Chapter%20one"
-    heading="Xxxx%20xxxxxx%20xxxx%20xxxxx%20"
-    standfirst="Xxxx%20xxxxxx%20xxxx%20xxxxx%20xxxxxxxx%20xxxxxx%20xxxx%20xx%20xxxxxxxx"
+    heading="A heading"
+    standfirst="A standfirst"
   />,
 ]
 `;
