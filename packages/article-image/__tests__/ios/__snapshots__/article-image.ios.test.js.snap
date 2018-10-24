@@ -30,7 +30,7 @@ exports[`5. image with no caption 1`] = `
       aspectRatio={1.7777777777777777}
       caption={null}
       credits={null}
-      uri="https://imageserver/someImage"
+      uri="https://img/someImage"
     />
   </View>
 </View>
@@ -71,7 +71,7 @@ exports[`8. primary image renders with caption and credits 1`] = `
       aspectRatio={1.7777777777777777}
       caption="Some caption"
       credits="Some credit"
-      uri="https://imageserver/someImage"
+      uri="https://img/someImage"
     />
   </View>
   <View>
@@ -98,7 +98,7 @@ exports[`9. primary image with given resolutions 1`] = `
       credits="Some credit"
       highResSize={900}
       lowResSize={50}
-      uri="https://imageserver/someImage"
+      uri="https://img/someImage"
     />
   </View>
   <View>

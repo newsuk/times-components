@@ -30,7 +30,7 @@ Array [
       fadeImageIn={false}
       highResSize={null}
       lowResSize={null}
-      uri="https://imageserver/someImage"
+      uri="https://img/someImage"
     />
   </div>,
   <div>
@@ -74,7 +74,7 @@ Array [
       fadeImageIn={false}
       highResSize={null}
       lowResSize={null}
-      uri="https://imageserver/someImage"
+      uri="https://img/someImage"
     />
   </div>,
   <div>
@@ -169,7 +169,7 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
-        uri="https://imageserver/someImage"
+        uri="https://img/someImage"
       />
     </div>
   </responsiveweb__InsetImageStyle>
@@ -271,7 +271,7 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
-        uri="https://imageserver/someImage"
+        uri="https://img/someImage"
       />
     </div>
   </responsiveweb__InsetImageStyle>
