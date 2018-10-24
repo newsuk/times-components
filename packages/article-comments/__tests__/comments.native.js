@@ -7,7 +7,6 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import "./mocks.native";
 import shared from "./comments.base";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
