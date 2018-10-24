@@ -31,6 +31,7 @@ function QueryProvider({ query, propsToVariables, children, ...props }) {
           isLoading: loading,
           refetch: () => refetch(),
           variables,
+          ...props,
           ...data
         })
       }
@@ -63,14 +64,12 @@ QueryProvider.defaultProps = {
   propsToVariables: i => i
 };
 
-const DebouncedQueryProvider = withDebounce(QueryProvider);
-
-const connectGraphql = (query, propsToVariables) => props => (
-  <DebouncedQueryProvider
+const connectGraphql = (query, propsToVariables) => withDebounce(props => (
+  <QueryProvider
     {...props}
     propsToVariables={propsToVariables}
     query={query}
   />
-);
+));
 
 export default connectGraphql;
