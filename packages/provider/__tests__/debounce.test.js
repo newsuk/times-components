@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { shallow } from "enzyme";
 import Inner from "./inner";
-import withDebounce from "../src/debounce";
+import withDebounce, { Debounce } from "../src/debounce";
 
 jest.useFakeTimers();
 
@@ -12,8 +12,13 @@ jest.advanceTimersByTime = jest.runTimersToTime;
 
 describe("Debounce", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
-    const Outer = withDebounce(Inner);
-    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
+    const component = shallow(
+      <Debounce
+        debounceRender={props => <Inner {...props} />}
+        debounceTimeMs={1000}
+        foo="initialFoo"
+      />
+    );
     expect(component.find("Inner").props()).toEqual({
       debouncedProps: {
         debounceTimeMs: 1000,
@@ -26,8 +31,13 @@ describe("Debounce", () => {
   });
 
   it("does not change debouncing status if component recieves same props", () => {
-    const Outer = withDebounce(Inner);
-    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
+    const component = shallow(
+      <Debounce
+        debounceRender={props => <Inner {...props} />}
+        debounceTimeMs={1000}
+        foo="initialFoo"
+      />
+    );
     component.setProps({ foo: "initialFoo" });
     expect(component.find("Inner").props()).toEqual({
       debouncedProps: {
@@ -41,9 +51,12 @@ describe("Debounce", () => {
   });
 
   const testUpdateInnerPropsAfterDelay = delay => {
-    const Outer = withDebounce(Inner);
     const component = shallow(
-      <Outer debounceTimeMs={delay} foo="initialFoo" />
+      <Debounce
+        debounceRender={props => <Inner {...props} />}
+        debounceTimeMs={delay}
+        foo="initialFoo"
+      />
     );
     const innerProps = () =>
       component
@@ -81,8 +94,13 @@ describe("Debounce", () => {
   });
 
   it("does not atttempt to update props after unmount", () => {
-    const Outer = withDebounce(Inner);
-    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
+    const component = shallow(
+      <Debounce
+        debounceRender={props => <Inner {...props} />}
+        debounceTimeMs={1000}
+        foo="initialFoo"
+      />
+    );
     const setState = jest.spyOn(component.instance(), "handleDebounceTimer");
 
     expect(setState.mock.calls.length).toEqual(0);
@@ -97,27 +115,29 @@ describe("Debounce", () => {
     expect(setState.mock.calls.length).toEqual(1);
   });
 
-  it("has appropriate static members on the outer component", () => {
-    const InnerWithStatics = props => props.foo;
-    InnerWithStatics.staticMember = "staticMemberValue";
-    InnerWithStatics.propTypes = {
-      debouncedProps: PropTypes.shape({
+  describe("withDebounce", () => {
+    it("has appropriate static members on the outer component", () => {
+      const InnerWithStatics = props => props.foo;
+      InnerWithStatics.staticMember = "staticMemberValue";
+      InnerWithStatics.propTypes = {
+        debouncedProps: PropTypes.shape({
+          foo: PropTypes.string
+        }).isRequired,
         foo: PropTypes.string
-      }).isRequired,
-      foo: PropTypes.string
-    };
-    InnerWithStatics.defaultProps = {
-      foo: ""
-    };
-    InnerWithStatics.displayName = "InnerWithStatics";
+      };
+      InnerWithStatics.defaultProps = {
+        foo: ""
+      };
+      InnerWithStatics.displayName = "InnerWithStatics";
 
-    const Outer = withDebounce(InnerWithStatics);
-    expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
-    expect(Outer.staticMember).toEqual("staticMemberValue");
-    expect(Outer.propTypes).toEqual({
-      debounceTimeMs: PropTypes.number.isRequired,
-      foo: PropTypes.string
-    }); // debounceTimeMs removed
-    expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
+      const Outer = withDebounce(InnerWithStatics);
+      expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
+      expect(Outer.staticMember).toEqual("staticMemberValue");
+      expect(Outer.propTypes).toEqual({
+        debounceTimeMs: PropTypes.number.isRequired,
+        foo: PropTypes.string
+      }); // debounceTimeMs removed
+      expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
+    });
   });
 });
