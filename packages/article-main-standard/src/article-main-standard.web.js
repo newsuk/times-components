@@ -8,7 +8,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
-import getLeadAsset from "./article-lead-asset/get-lead-asset";
+import { getLeadAsset } from "@times-components/utils";
 import articleTrackingContext from "./article-tracking-context";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import {

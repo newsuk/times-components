@@ -1,4 +1,4 @@
-import getLeadAsset from "./article-lead-asset/get-lead-asset";
+import { getLeadAsset } from "@times-components/utils";
 
 const prepend = ({ data, type }, list) => {
   if (!data) {

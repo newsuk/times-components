@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ModalImage } from "@times-components/image";
 import cropPropTypes from "./crop-prop-types";
-import getStandardTemplateCrop from "./crop-config";
+import { getStandardTemplateCrop } from "@times-components/utils";
 
 const ArticleLeadAssetImage = ({
   caption,
