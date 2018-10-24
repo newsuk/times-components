@@ -9,14 +9,17 @@ import {
 } from "@times-components/provider-test-tools";
 
 const FLAGS = 1;
-const LABEL = 2;
-const LEAD_ASSET = 4;
-const LINKED_BYLINE = 8;
-const STANDFIRST = 16;
-const VIDEO = 32;
+const HEADLINE = 2;
+const LABEL = 4;
+const LEAD_ASSET = 8;
+const LINKED_BYLINE = 16;
+const STANDFIRST = 32;
+const VIDEO = 64;
+
 
 export const makeArticleConfiguration = ({
   withFlags,
+  withHeadline,
   withLabel,
   withLeadAsset,
   withLinkedByline,
@@ -27,6 +30,10 @@ export const makeArticleConfiguration = ({
 
   if (withFlags) {
     mask = mask | FLAGS;
+  }
+
+  if (withHeadline) {
+    mask = mask | HEADLINE;
   }
 
   if (withLabel) {
@@ -57,6 +64,10 @@ const makeArticle = configuration => article => {
 
   if (!(configuration & FLAGS)) {
     configuredArticle.flags = [];
+  }
+
+  if (!(configuration & HEADLINE)) {
+    configuredArticle.headline = null;
   }
 
   if (!(configuration & LABEL)) {

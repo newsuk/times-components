@@ -57,9 +57,9 @@ export default {
 
         const scale = selectScales(select);
         const sectionColour = selectSection(select);
-        const commentsEnabled = boolean("Comments Enabled?", true, "TOGGLE")
-        const relatedArticleSlice = boolean("Related Articles?", true, "TOGGLE")
-        const topics = boolean("Topics?", true, "TOGGLE")
+        const commentsEnabled = boolean("Comments Enabled?", true)
+        const relatedArticleSlice = boolean("Related Articles?", true)
+        const topics = boolean("Topics?", true)
 
         const config = {
           commentsEnabled: commentsEnabled ? undefined : false,
