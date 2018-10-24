@@ -69,9 +69,13 @@ export const MetaContainer = styled(View)`
 
 export const LeadAssetContainer = styled(View)`
   order: 1;
+
+@media (min-width: ${breakpoints.wide}px) {
+  order: 1;
+}
 `;
 
 export const BodyContainer = styled(View)`
   display: block;
-  // order: 4;
+  order: 4;
 `;

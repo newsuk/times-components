@@ -21,7 +21,8 @@ import {
   HeaderContainer,
   MetaContainer,
   LeadAssetContainer,
-  HeaderAdContainer
+  HeaderAdContainer,
+  BodyContainer
 } from "./styles/responsive";
 
 const adStyle = {
@@ -80,7 +81,6 @@ class ArticlePage extends Component {
           />
         </HeaderAdContainer>
         <MainContainer>
-          <header>
             <HeaderContainer>
               <ArticleHeader
                 flags={flags}
@@ -104,13 +104,14 @@ class ArticlePage extends Component {
                 width={this.state.articleWidth}
               />
             </LeadAssetContainer>
-          </header>
-          <Article
-            analyticsStream={analyticsStream}
-            data={this.props.data}
-            observed={observed}
-            registerNode={registerNode}
-          />
+            <BodyContainer>
+              <Article
+                analyticsStream={analyticsStream}
+                data={this.props.data}
+                observed={observed}
+                registerNode={registerNode}
+              />
+            </BodyContainer>
           <Ad contextUrl={url} section={section} slotName="pixel" />
           <Ad contextUrl={url} section={section} slotName="pixelteads" />
           <Ad contextUrl={url} section={section} slotName="pixelskin" />
