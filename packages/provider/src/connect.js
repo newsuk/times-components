@@ -24,13 +24,14 @@ function QueryProvider({ query, propsToVariables, children, ...props }) {
 
   return (
     <Query query={query} variables={variables}>
-      {({ loading, data, refetch, fetchMore, error }) =>
+      {({ loading, data, refetch, fetchMore, error, ...queryProps }) =>
         children({
           error,
           fetchMore,
           isLoading: loading,
           refetch: () => refetch(),
           ...data,
+          ...queryProps,
           ...props
         })
       }
