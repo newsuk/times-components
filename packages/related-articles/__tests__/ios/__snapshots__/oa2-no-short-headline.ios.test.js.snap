@@ -35,16 +35,17 @@ exports[`1. no short headline 1`] = `
                   "right": 0,
                 }
               }
-              imageUri="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+              imageUri="https://crop23.io"
               isReversed={true}
               lowResSize={100}
               showImage={true}
             >
               <View>
                 <View>
-                  <Text>
-                    TEST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#004D6D"
+                    title="test label"
+                  />
                 </View>
                 <Text>
                   <Text>

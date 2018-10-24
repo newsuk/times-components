@@ -11,6 +11,9 @@ import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article";
 import leadAndTwo2ArticlesFixture from "../fixtures/leadandtwo/2-articles";
 import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles";
 
+jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components/article-label", () => "ArticleLabel");
+
 const leadAndTwo0ArticleFixtureData = leadAndTwo0ArticleFixture.data;
 const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   crop169: "https://crop169.io",
@@ -24,6 +27,7 @@ const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
 }).data;
 
 const leadAndTwoNoShortHeadlineFixtureData = leadAndTwo1ArticleFixture({
+  crop23: "https://crop23.io",
   crop169: "https://crop169.io",
   headline: "Test Headline",
   label: "test label",

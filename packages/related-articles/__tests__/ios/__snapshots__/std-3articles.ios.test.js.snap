@@ -32,9 +32,10 @@ exports[`1. three related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    FIRST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#A31D24"
+                    title="first label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
@@ -86,9 +87,10 @@ exports[`1. three related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    SECOND LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#008347"
+                    title="second label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
@@ -140,9 +142,10 @@ exports[`1. three related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    THIRD LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#1A1F24"
+                    title="third label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
