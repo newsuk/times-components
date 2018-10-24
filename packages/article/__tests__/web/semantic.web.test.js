@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { hash, iterator, makeArticleUrl } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
@@ -17,6 +17,15 @@ import Article from "../../src/article";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
 
+const omitProps = new Set([
+  "className",
+  "fill",
+  "fillRule",
+  "stroke",
+  "strokeWidth",
+  "style"
+]);
+
 addSerializers(
   expect,
   compose(
@@ -26,7 +35,7 @@ addSerializers(
       div: justChildren
     }),
     replacePropTransform((value, key) => (key === "d" ? hash(value) : value)),
-    minimaliseTransform((value, key) => key === "className" || key === "style")
+    minimaliseTransform((value, key) => omitProps.has(key))
   )
 );
 
@@ -110,7 +119,10 @@ const tests = [
       const sectionColour = "#FFFFFF";
       const testInstance = TestRenderer.create(
         <Context.Provider
-          value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+          value={{
+            makeArticleUrl: () => "https://some-url.io",
+            theme: { scale, sectionColour }
+          }}
         >
           <Article
             adConfig={adConfig}
