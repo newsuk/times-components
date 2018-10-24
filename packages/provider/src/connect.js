@@ -4,12 +4,10 @@ import { Query } from "react-apollo";
 import PropTypes from "prop-types";
 import withDebounce from "./debounce";
 
-const identity = a => a;
-
 const flatten = l =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
 
-const getQueryVariableValues = query =>
+const getQueryVariableNames = query =>
   flatten(
     query.definitions.map(definition =>
       (definition.variableDefinitions || []).map(
@@ -18,20 +16,14 @@ const getQueryVariableValues = query =>
     )
   );
 
-export const makeVariableFactory = (
-  variableNames,
-  propsToVariables = identity
-) => props =>
-  pick(propsToVariables(props.debouncedProps || props), variableNames);
-
-const connectGraphql = (query, propsToVariables) => {
-  const variablesFactory = makeVariableFactory(
-    getQueryVariableValues(query),
-    propsToVariables
+function QueryProvider({ query, propsToVariables, children, ...props }) {
+  const variables = pick(
+    propsToVariables(props.debouncedProps || props),
+    getQueryVariableNames(query)
   );
 
-  const Wrapper = ({ children, ...props }) => (
-    <Query query={query} variables={variablesFactory(props)}>
+  return (
+    <Query query={query} variables={variables}>
       {({ loading, data, refetch, fetchMore, error }) =>
         children({
           error,
@@ -39,18 +31,46 @@ const connectGraphql = (query, propsToVariables) => {
           isLoading: loading,
           refetch: () => refetch(),
           ...data,
-          ...props,
+          ...props
         })
       }
     </Query>
   );
+}
 
-  Wrapper.propTypes = {
-    children: PropTypes.func.isRequired,
-    debouncedProps: PropTypes.shape({}).isRequired
-  };
-
-  return withDebounce(Wrapper);
+QueryProvider.propTypes = {
+  children: PropTypes.func.isRequired,
+  debouncedProps: PropTypes.shape({}).isRequired,
+  propsToVariables: PropTypes.func,
+  query: PropTypes.shape({
+    definitions: PropTypes.arrayOf(
+      PropTypes.shape({
+        variableDefinitions: PropTypes.arrayOf(
+          PropTypes.shape({
+            variable: PropTypes.shape({
+              name: PropTypes.shape({
+                value: PropTypes.string.isRequired
+              }).isRequired
+            }).isRequired
+          })
+        )
+      })
+    ).isRequired
+  }).isRequired
 };
+
+QueryProvider.defaultProps = {
+  propsToVariables: i => i
+};
+
+const DebouncedQueryProvider = withDebounce(QueryProvider);
+
+const connectGraphql = (query, propsToVariables) => props => (
+  <DebouncedQueryProvider
+    {...props}
+    propsToVariables={propsToVariables}
+    query={query}
+  />
+);
 
 export default connectGraphql;
