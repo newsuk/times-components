@@ -19,7 +19,7 @@ exports[`1. article list 1`] = `
     >
       <div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -63,7 +63,7 @@ exports[`1. article list 1`] = `
           <div />
         </div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-2-968n7tdck2"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -126,7 +126,7 @@ exports[`1. article list 1`] = `
           <div />
         </div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-3-968n7tdck3"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -189,7 +189,7 @@ exports[`1. article list 1`] = `
           <div />
         </div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-4-968n7tdck4"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -252,7 +252,7 @@ exports[`1. article list 1`] = `
           <div />
         </div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-5-968n7tdck5"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -340,7 +340,7 @@ exports[`2. article list with no images 1`] = `
     >
       <div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
+          url="https://test.io"
         >
           <div>
             <Card
@@ -426,7 +426,7 @@ exports[`3. article list with missing image 1`] = `
     >
       <div>
         <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
+          url="https://test.io"
         >
           <div>
             <Card
