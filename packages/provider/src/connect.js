@@ -2,7 +2,7 @@ import React from "react";
 import pick from "lodash.pick";
 import { Query } from "react-apollo";
 import PropTypes from "prop-types";
-import withDebounce from "./debounce";
+import { Debounce } from "./debounce";
 
 const flatten = l =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
@@ -16,32 +16,43 @@ const getQueryVariableNames = query =>
     )
   );
 
-function QueryProvider({ query, propsToVariables, children, ...props }) {
-  const variables = pick(
-    propsToVariables(props.debouncedProps || props),
-    getQueryVariableNames(query)
-  );
+const QueryProvider = ({
+  query,
+  propsToVariables,
+  debounceTimeMs,
+  ...props
+}) => (
+  <Debounce
+    debounceRender={({ children, ...renderProps }) => {
+      const variables = pick(
+        propsToVariables(renderProps.debouncedProps || renderProps),
+        getQueryVariableNames(query)
+      );
 
-  return (
-    <Query query={query} variables={variables}>
-      {({ loading, data, refetch, fetchMore, error }) =>
-        children({
-          error,
-          fetchMore,
-          isLoading: loading,
-          refetch: () => refetch(),
-          variables,
-          ...props,
-          ...data
-        })
-      }
-    </Query>
-  );
-}
+      return (
+        <Query query={query} variables={variables}>
+          {({ loading, data, refetch, fetchMore, error }) =>
+            children({
+              error,
+              fetchMore,
+              isLoading: loading,
+              refetch: () => refetch(),
+              variables,
+              ...renderProps,
+              ...data
+            })
+          }
+        </Query>
+      );
+    }}
+    debounceTimeMs={debounceTimeMs}
+    {...props}
+  />
+);
 
 QueryProvider.propTypes = {
   children: PropTypes.func.isRequired,
-  debouncedProps: PropTypes.shape({}).isRequired,
+  debounceTimeMs: PropTypes.number.isRequired,
   propsToVariables: PropTypes.func,
   query: PropTypes.shape({
     definitions: PropTypes.arrayOf(
@@ -64,12 +75,8 @@ QueryProvider.defaultProps = {
   propsToVariables: i => i
 };
 
-const connectGraphql = (query, propsToVariables) => withDebounce(props => (
-  <QueryProvider
-    {...props}
-    propsToVariables={propsToVariables}
-    query={query}
-  />
-));
+const connectGraphql = (query, propsToVariables) => props => (
+  <QueryProvider {...props} propsToVariables={propsToVariables} query={query} />
+);
 
 export default connectGraphql;
