@@ -11,8 +11,8 @@ exports[`Provider Tests returns an error 1`] = `[Error: Network error: some erro
 
 exports[`Provider Tests returns config data 1`] = `
 Object {
-  "config1": undefined,
-  "config2": undefined,
+  "config1": "c1",
+  "config2": "c2",
 }
 `;
 
