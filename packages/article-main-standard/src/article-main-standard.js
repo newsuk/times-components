@@ -5,14 +5,18 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
-import ArticleError from "@times-components/article-error";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleContent from "./article-content";
+import ArticleError from "@times-components/article-error";
 import stylesFactory from "./styles/article-body";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import {
+  articlePagePropTypes,
+  articlePageDefaultProps
+} from "./article-page-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
 
@@ -20,7 +24,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = (
+const renderRow = (analyticsStream, width) => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -39,6 +43,7 @@ const renderRow = (
           <ArticleLeadAsset
             data={{ ...rowData.data, onVideoPress }}
             key={rowData.type}
+            width={width}
           />
         </View>
       );
@@ -76,7 +81,7 @@ const renderRow = (
     case "content": {
       return (
         <Article
-          article={rowData.data}
+          data={rowData.data}
           onAuthorPress={onAuthorPress}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
@@ -86,14 +91,14 @@ const renderRow = (
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
         />
-      );
+      )
     }
   }
 };
 
 class ArticlePage extends Component {
   static getDerivedStateFromProps(props, state) {
-    if (!props.error) {
+    if (!props.isLoading && !props.error) {
       return {
         ...state,
         dataSource: listViewDataHelper(props.article)
@@ -105,9 +110,12 @@ class ArticlePage extends Component {
   constructor(props) {
     super(props);
 
-    if (props.article && !props.error) {
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+
+    if (props.article && !props.isLoading && !props.error) {
       this.state = {
-        dataSource: listViewDataHelper(props.article)
+        dataSource: listViewDataHelper(props.article),
+        width: normaliseWidth(screenWidthInPixels())
       };
     } else {
       this.state = {
@@ -116,16 +124,38 @@ class ArticlePage extends Component {
     }
   }
 
+  onViewableItemsChanged(info) {
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(viewableItem =>
+        this.props.onViewed(viewableItem.item, this.state.dataSource)
+      );
+  }
+
   render() {
-    const { error, refetch } = this.props;
+    const { error, refetch, isLoading, receiveChildList } = this.props;
 
     if (error) {
       return <ArticleError refetch={refetch} />;
     }
 
+    if (isLoading) {
+      return null;
+    }
+
+    const articleData = this.state.dataSource.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
+    receiveChildList(articleData);
+
     const ArticleListView = (
       <ArticleContent
-        data={this.state.dataSource}
+        data={articleData}
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
         onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
@@ -135,8 +165,11 @@ class ArticlePage extends Component {
         onTopicPress={this.props.onTopicPress}
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
+        onViewableItemsChanged={
+          this.props.onViewed ? this.onViewableItemsChanged : null
+        }
         pageSize={listViewPageSize}
-        renderRow={renderRow}
+        renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );
@@ -148,7 +181,7 @@ class ArticlePage extends Component {
 }
 
 ArticlePage.propTypes = {
-  ...articlePropTypes,
+  ...articlePagePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -157,6 +190,6 @@ ArticlePage.propTypes = {
   onVideoPress: PropTypes.func.isRequired,
   refetch: PropTypes.func.isRequired
 };
-ArticlePage.defaultProps = articleDefaultProps;
+ArticlePage.defaultProps = articlePageDefaultProps;
 
 export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
