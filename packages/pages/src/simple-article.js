@@ -9,7 +9,9 @@ import adTargetConfig from "./client/ad-targeting-config";
 const ArticleDetailsPage = ({
   article,
   analyticsStream,
+  error,
   platformAdConfig,
+  refetch,
   onArticlePress,
   onAuthorPress,
   onCommentsPress,
@@ -34,7 +36,7 @@ const ArticleDetailsPage = ({
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         article={article}
-        error={null}
+        error={error}
         isLoading={false}
         onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
         onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
@@ -55,7 +57,7 @@ const ArticleDetailsPage = ({
         onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
         onVideoPress={(event, info) => onVideoPress(info)}
         pageSection={pageSection}
-        refetch={() => { }}
+        refetch={refetch}
       />
     </Context.Provider>
   );
@@ -63,7 +65,8 @@ const ArticleDetailsPage = ({
 
 ArticleDetailsPage.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
-  article: PropTypes.shape({}).isRequired,
+  article: PropTypes.shape({}),
+  error: PropTypes.shape({}),
   onArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
@@ -72,8 +75,15 @@ ArticleDetailsPage.propTypes = {
   onTopicPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   platformAdConfig: PropTypes.shape({}).isRequired,
+  refetch: PropTypes.func,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string.isRequired
+};
+
+ArticleDetailsPage.defaultProps = {
+  article: null,
+  error: null,
+  refetch: () => {}
 };
 
 export default withClient(ArticleDetailsPage);

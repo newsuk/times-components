@@ -14,7 +14,8 @@ const {
   onCommentGuidelinesPress,
   onLinkPress,
   onTopicPress,
-  onVideoPress
+  onVideoPress,
+  refetch
 } = NativeModules.ArticleEvents;
 const SimpleArticlePageView = SimpleArticle(config)(fetch);
 
@@ -33,6 +34,7 @@ const ArticleView = ({
   adTestMode,
   article,
   articleId,
+  error,
   omitErrors,
   scale,
   sectionName
@@ -50,6 +52,7 @@ const ArticleView = ({
           track(event);
         }
       }}
+      error={error}
       omitErrors={omitErrors}
       onArticlePress={onArticlePress}
       onAuthorPress={onAuthorPress}
@@ -59,6 +62,7 @@ const ArticleView = ({
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
       platformAdConfig={adConfig}
+      refetch={articleId => refetch(articleId)}
       scale={scale}
       sectionName={sectionName}
     />
@@ -67,15 +71,19 @@ const ArticleView = ({
 
 ArticleView.propTypes = {
   adTestMode: PropTypes.string,
-  article: PropTypes.shape({}).isRequired,
+  article: PropTypes.shape({}),
   articleId: PropTypes.string.isRequired,
+  error: PropTypes.shape({}),
   omitErrors: PropTypes.bool.isRequired,
   scale: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired
+  sectionName: PropTypes.string
 };
 
 ArticleView.defaultProps = {
-  adTestMode: ""
+  adTestMode: "",
+  article: null,
+  error: null,
+  sectionName: ""
 };
 
 export default ArticleView;
