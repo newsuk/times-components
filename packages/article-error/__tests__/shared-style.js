@@ -10,7 +10,7 @@ import {
 import ArticleError from "../src/article-error";
 
 const shared = () => {
-  it("renders correctly", () => {
+  it("renders correctly with style", () => {
     const testInstance = TestRenderer.create(
       <ArticleError refetch={() => null} />
     );
