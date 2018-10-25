@@ -23,6 +23,7 @@ const QueryProvider = ({
   ...props
 }) => (
   <Debounce
+    {...props}
     debounceRender={({ children, ...renderProps }) => {
       const variables = pick(
         propsToVariables(renderProps.debouncedProps || renderProps),
@@ -46,7 +47,6 @@ const QueryProvider = ({
       );
     }}
     debounceTimeMs={debounceTimeMs}
-    {...props}
   />
 );
 

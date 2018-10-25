@@ -4,6 +4,7 @@ exports[`Debounce handles different debounce delays 1`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "initialFoo",
   },
@@ -16,6 +17,7 @@ exports[`Debounce handles different debounce delays 2`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "initialFoo",
   },
@@ -28,6 +30,7 @@ exports[`Debounce handles different debounce delays 3`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "updatedFoo",
   },
@@ -40,6 +43,7 @@ exports[`Debounce handles zero debounce delay 1`] = `
 Object {
   "debounceTimeMs": 0,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 0,
     "foo": "updatedFoo",
   },
@@ -52,6 +56,7 @@ exports[`Debounce immediately updates props, but delays update of debouncedProps
 Object {
   "debounceTimeMs": 1000,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 1000,
     "foo": "initialFoo",
   },
@@ -64,6 +69,7 @@ exports[`Debounce immediately updates props, but delays update of debouncedProps
 Object {
   "debounceTimeMs": 1000,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 1000,
     "foo": "initialFoo",
   },
@@ -76,6 +82,7 @@ exports[`Debounce immediately updates props, but delays update of debouncedProps
 Object {
   "debounceTimeMs": 1000,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 1000,
     "foo": "updatedFoo",
   },

@@ -6,6 +6,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -23,6 +24,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -45,6 +47,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -67,6 +70,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "2",
     },
@@ -89,6 +93,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -111,6 +116,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -133,6 +139,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -155,6 +162,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "1",
     },
@@ -177,6 +185,7 @@ Array [
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
       "children": [Function],
+      "debounceRender": [Function],
       "debounceTimeMs": 1000,
       "slug": "3",
     },

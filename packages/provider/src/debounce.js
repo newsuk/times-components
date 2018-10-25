@@ -69,12 +69,10 @@ export class Debounce extends Component {
 
   render() {
     const { debounceRender, ...props } = this.props;
-    const { debounceRender: _, ...debouncedProps } = this.state.debouncedProps;
 
     return debounceRender({
       ...props,
       ...this.state,
-      debouncedProps
     });
   }
 }

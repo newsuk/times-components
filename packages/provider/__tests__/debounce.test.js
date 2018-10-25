@@ -21,6 +21,7 @@ describe("Debounce", () => {
     );
     expect(component.find("Inner").props()).toEqual({
       debouncedProps: {
+        debounceRender: expect.any(Function),
         debounceTimeMs: 1000,
         foo: "initialFoo"
       },
@@ -41,8 +42,9 @@ describe("Debounce", () => {
     component.setProps({ foo: "initialFoo" });
     expect(component.find("Inner").props()).toEqual({
       debouncedProps: {
+        debounceRender: expect.any(Function),
         debounceTimeMs: 1000,
-        foo: "initialFoo"
+        foo: "initialFoo",
       },
       debounceTimeMs: 1000,
       foo: "initialFoo",
