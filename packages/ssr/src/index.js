@@ -3,7 +3,7 @@
 const express = require("express");
 const shrinkRay = require("shrink-ray");
 
-const ssr = require("./src/server");
+const ssr = require("./../src/server");
 
 const port = 3000;
 const server = express();
