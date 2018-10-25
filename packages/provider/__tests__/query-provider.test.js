@@ -1,6 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
+import omit from "lodash.omit";
+import {
+  addSerializers,
+  minimalise
+} from "@times-components/jest-serializer";
 import QueryProvider from "../src/query-provider";
 
 jest.mock("react-apollo", () => ({
@@ -14,6 +19,13 @@ jest.mock("react-apollo", () => ({
     })
 }));
 
+addSerializers(expect, minimalise((value, key) => key !== "results"));
+
+const prepareMockForSnapshot = (fn) => ({
+  ...fn.mock.calls[0][0],
+  debouncedProps: omit(fn.mock.calls[0][0].debouncedProps, 'children')
+});
+
 const query = gql`
   {
     author(slug: "fiona-hamilton") {
@@ -21,6 +33,7 @@ const query = gql`
     }
   }
 `;
+
 const queryWithVariable = gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
@@ -37,7 +50,7 @@ describe("QueryProvider", () => {
         {child}
       </QueryProvider>
     );
-    expect(child).toMatchSnapshot();
+    expect(prepareMockForSnapshot(child)).toMatchSnapshot();
   });
 
   it("2 when passing props to variables, it should call its children with the correct props", () => {
@@ -52,7 +65,7 @@ describe("QueryProvider", () => {
         {child}
       </QueryProvider>
     );
-    expect(child).toMatchSnapshot();
+    expect(prepareMockForSnapshot(child)).toMatchSnapshot();
   });
 
   it("3 should render the result of children", () => {
