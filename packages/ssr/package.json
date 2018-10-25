@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ssr",
-  "private": true,
+  "main": "src/server",
   "version": "1.3.5",
   "scripts": {
     "cleanup-dist": "rm -rf dist",
@@ -11,7 +11,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
