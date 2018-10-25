@@ -2,10 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
 import omit from "lodash.omit";
-import {
-  addSerializers,
-  minimalise
-} from "@times-components/jest-serializer";
+import { addSerializers, minimalise } from "@times-components/jest-serializer";
 import QueryProvider from "../src/query-provider";
 
 jest.mock("react-apollo", () => ({
@@ -21,9 +18,9 @@ jest.mock("react-apollo", () => ({
 
 addSerializers(expect, minimalise((value, key) => key !== "results"));
 
-const prepareMockForSnapshot = (fn) => ({
+const prepareMockForSnapshot = fn => ({
   ...fn.mock.calls[0][0],
-  debouncedProps: omit(fn.mock.calls[0][0].debouncedProps, 'children')
+  debouncedProps: omit(fn.mock.calls[0][0].debouncedProps, "children")
 });
 
 const query = gql`

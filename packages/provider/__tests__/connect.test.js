@@ -6,10 +6,14 @@ import {
 } from "@times-components/jest-serializer";
 import { shallow } from "enzyme";
 import gql from "graphql-tag";
-import QueryProvider from '../src/query-provider';
+import QueryProvider from "../src/query-provider";
 import connectGraphql from "../src/provider";
 
-addSerializers(expect, enzymeRenderedSerializer(), minimalise((value, key) => key === "query"));
+addSerializers(
+  expect,
+  enzymeRenderedSerializer(),
+  minimalise((value, key) => key === "query")
+);
 
 const query = gql`
   {
@@ -18,7 +22,6 @@ const query = gql`
     }
   }
 `;
-
 
 const propsToVariables = () => ({});
 
@@ -32,9 +35,11 @@ describe("connectGraphql", () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.find(QueryProvider).props()).toEqual(expect.objectContaining({
-      propsToVariables,
-      query
-    }))
+    expect(component.find(QueryProvider).props()).toEqual(
+      expect.objectContaining({
+        propsToVariables,
+        query
+      })
+    );
   });
 });
