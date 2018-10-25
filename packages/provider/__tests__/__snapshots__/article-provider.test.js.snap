@@ -38,7 +38,7 @@ Object {
     "EXCLUSIVE",
   ],
   "hasVideo": true,
-  "headline": "Supplement In Depth Template (Style)",
+  "headline": "A test headline",
   "id": "113e9875-b7bf-4dd7-ac99-dee231bf6e74",
   "keywords": Array [
     "Supplement",
@@ -55,7 +55,7 @@ Object {
     "crop11": Object {
       "__typename": "Crop",
       "ratio": "16:9",
-      "url": "https://placeimg.com/100/100/tech",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0",
       Symbol(id): "$Image:263b03a1-2ce6-4b94-b053-0d35316548c5.crop({\\"ratio\\":\\"1:1\\"})",
     },
     "crop1251": Object {
@@ -67,7 +67,7 @@ Object {
     "crop169": Object {
       "__typename": "Crop",
       "ratio": "16:9",
-      "url": "https://placeimg.com/320/180/tech",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
       Symbol(id): "$Image:263b03a1-2ce6-4b94-b053-0d35316548c5.crop({\\"ratio\\":\\"16:9\\"})",
     },
     "crop2251": Object {
@@ -79,19 +79,19 @@ Object {
     "crop23": Object {
       "__typename": "Crop",
       "ratio": "16:9",
-      "url": "https://placeimg.com/100/100/tech",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0",
       Symbol(id): "$Image:263b03a1-2ce6-4b94-b053-0d35316548c5.crop({\\"ratio\\":\\"2:3\\"})",
     },
     "crop32": Object {
       "__typename": "Crop",
       "ratio": "16:9",
-      "url": "https://placeimg.com/300/200/tech",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0",
       Symbol(id): "$Image:263b03a1-2ce6-4b94-b053-0d35316548c5.crop({\\"ratio\\":\\"3:2\\"})",
     },
     "crop45": Object {
       "__typename": "Crop",
       "ratio": "16:9",
-      "url": "https://placeimg.com/100/100/tech",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0",
       Symbol(id): "$Image:263b03a1-2ce6-4b94-b053-0d35316548c5.crop({\\"ratio\\":\\"4:5\\"})",
     },
     "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
@@ -130,12 +130,12 @@ Object {
             "__typename": "Image",
             "crop169": Object {
               "__typename": "Crop",
-              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
               Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
             },
             "crop32": Object {
               "__typename": "Crop",
-              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
               Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
             },
             "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
@@ -190,17 +190,17 @@ Object {
           "__typename": "Image",
           "crop169": Object {
             "__typename": "Crop",
-            "url": "https://placeimg.com/320/180/tech",
-            Symbol(id): "$Image:a-u-u-i-d.crop({\\"ratio\\":\\"16:9\\"})",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+            Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
           },
           "crop32": Object {
             "__typename": "Crop",
-            "url": "https://placeimg.com/300/200/tech",
-            Symbol(id): "$Image:a-u-u-i-d.crop({\\"ratio\\":\\"3:2\\"})",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+            Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
           },
-          "id": "a-u-u-i-d",
-          "title": "Hello World",
-          Symbol(id): "Image:a-u-u-i-d",
+          "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+          "title": "TMS: Pratchett’s law of the jungle",
+          Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
         },
         Symbol(id): "$Article:113e9875-b7bf-4dd7-ac99-dee231bf6e74.relatedArticleSlice.items.0",
       },

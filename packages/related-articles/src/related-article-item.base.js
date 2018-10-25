@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { View } from "react-native";
+import React, { createRef, Component } from "react";
+import { findNodeHandle, View } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -30,6 +30,8 @@ class RelatedArticleItem extends Component {
   constructor(props) {
     super(props);
 
+    this.node = createRef();
+
     this.state = {
       highResSize: null
     };
@@ -42,7 +44,7 @@ class RelatedArticleItem extends Component {
     ) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
-        highResSize: this.node.clientWidth
+        highResSize: findNodeHandle(this.node.current).clientWidth
       });
     }
   }
@@ -87,11 +89,7 @@ class RelatedArticleItem extends Component {
     return children({
       article: this.props.article,
       card: (
-        <View
-          ref={node => {
-            this.node = node;
-          }}
-        >
+        <View ref={this.node}>
           <Card
             contentContainerClass={contentContainerClass}
             highResSize={this.state.highResSize}
