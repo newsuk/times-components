@@ -3,19 +3,22 @@ import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
-  flattenStyleTransform,
+  minimaliseTransform,
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import Button from "@times-components/button";
 import ArticleError from "../src/article-error";
 
 const shared = () => {
-  it("renders correctly with style", () => {
+  it("refetch button is clickable", () => {
+    const refetch = jest.fn();
     const testInstance = TestRenderer.create(
-      <ArticleError refetch={() => null} />
+      <ArticleError refetch={refetch} />
     );
 
-    expect(testInstance).toMatchSnapshot();
+    testInstance.root.findByType(Button).props.onPress();
+    expect(refetch).toHaveBeenCalled();
   });
 };
 
@@ -24,8 +27,8 @@ export default () => {
     expect,
     compose(
       print,
-      flattenStyleTransform,
-      minimalNativeTransform
+      minimalNativeTransform,
+      minimaliseTransform((value, key) => key === "style" || key === "testID")
     )
   );
 
