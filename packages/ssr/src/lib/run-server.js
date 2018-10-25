@@ -3,7 +3,7 @@
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native-web");
 const { createHttpLink } = require("apollo-link-http");
-const fetch = require("node-fetch");
+const fetch = require("unfetch").default;
 const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache: Cache } = require("apollo-cache-inmemory");
@@ -48,7 +48,8 @@ const renderData = App =>
 
 module.exports = async (component, ...parameters) => {
   const client = makeClient();
-  const App = component(client, ...parameters);
+  const analyticsStream = () => {};
+  const App = component(client, analyticsStream, ...parameters);
 
   const { extraStyles, markup, styles } = await renderData(App);
 

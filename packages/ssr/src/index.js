@@ -27,7 +27,7 @@ const makeHtml = (
             ${initialState};
           </head>
           <body style="margin:0">
-            <div id="app">${markup}</div>
+            <div id="main-container">${markup}</div>
           </body>
           <script src="/vendor.bundle.js"></script>
           <script src="/${bundleName}.bundle.js"></script>
