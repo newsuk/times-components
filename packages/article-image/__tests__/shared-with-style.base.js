@@ -6,7 +6,7 @@ import secondaryImageFixture from "../fixtures/secondary-image";
 import landscapeInlineImageFixture from "../fixtures/landscape-inline-image";
 import portraitInlineImageFixture from "../fixtures/portrait-inline-image";
 
-const testImageUrl = "https://imageserver/someImage";
+const testImageUrl = "https://img/someImage";
 const primaryImage = primaryImageFixture(
   testImageUrl,
   "Some caption",

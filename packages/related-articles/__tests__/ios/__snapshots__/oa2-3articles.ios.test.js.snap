@@ -42,9 +42,10 @@ exports[`1. one opinion and two support related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    FIRST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#691D26"
+                    title="first label"
+                  />
                 </View>
                 <Text>
                   <Text>
@@ -96,9 +97,10 @@ exports[`1. one opinion and two support related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    SECOND LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#333333"
+                    title="second label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
@@ -141,9 +143,10 @@ exports[`1. one opinion and two support related articles 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    THIRD LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#006A74"
+                    title="third label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"

@@ -8,16 +8,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     width={970}
   >
     <g
-      fill="none"
-      fillRule="evenodd"
       id="watermark"
       opacity="0.07"
-      stroke="none"
-      strokeWidth="1"
     >
       <path
         d="53a8dae08c4e492d934bf2f094a46ab4"
-        fill="#1D1D1B"
         id="shape"
       />
     </g>
@@ -48,9 +43,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <title>
         Diamond Icon
       </title>
-      <g
-        fill="#E34605"
-      >
+      <g>
         <path
           d="90928a4d6e9b702222e7187e68c282b7"
         />
@@ -125,7 +118,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </title>
       <path
         d="ebf51b280a2c9ea0e632fdbf86606550"
-        fill="#006699"
       />
     </svg>
     <a
@@ -169,7 +161,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       Related articles
     </h3>
     <a
-      href="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      href="https://some-url.io"
     >
       <img
         alt=""
@@ -195,16 +187,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     width={1}
   >
     <g
-      fill="none"
-      fillRule="evenodd"
       id="watermark"
       opacity="0.07"
-      stroke="none"
-      strokeWidth="1"
     >
       <path
         d="53a8dae08c4e492d934bf2f094a46ab4"
-        fill="#1D1D1B"
         id="shape"
       />
     </g>
@@ -216,16 +203,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     width={1}
   >
     <g
-      fill="none"
-      fillRule="evenodd"
       id="watermark"
       opacity="0.07"
-      stroke="none"
-      strokeWidth="1"
     >
       <path
         d="53a8dae08c4e492d934bf2f094a46ab4"
-        fill="#1D1D1B"
         id="shape"
       />
     </g>
@@ -237,16 +219,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     width={1}
   >
     <g
-      fill="none"
-      fillRule="evenodd"
       id="watermark"
       opacity="0.07"
-      stroke="none"
-      strokeWidth="1"
     >
       <path
         d="53a8dae08c4e492d934bf2f094a46ab4"
-        fill="#1D1D1B"
         id="shape"
       />
     </g>

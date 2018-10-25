@@ -20,7 +20,7 @@ exports[`1. a single related article 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -33,9 +33,11 @@ exports[`1. a single related article 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      TEST LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#004D6D"
+                      isVideo={false}
+                      title="test label"
+                    />
                   </div>
                   <h3
                     aria-level="3"

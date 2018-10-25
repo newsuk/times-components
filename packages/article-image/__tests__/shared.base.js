@@ -2,7 +2,7 @@ import React from "react";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 
-const testImageUrl = "https://imageserver/someImage";
+const testImageUrl = "https://img/someImage";
 
 export default makeTest => {
   const tests = [

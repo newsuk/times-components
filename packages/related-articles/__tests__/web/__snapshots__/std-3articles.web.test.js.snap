@@ -20,7 +20,7 @@ exports[`1. three related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -33,9 +33,10 @@ exports[`1. three related articles 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      FIRST LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#A31D24"
+                      title="first label"
+                    />
                   </div>
                   <h3
                     aria-level="3"
@@ -84,7 +85,7 @@ exports[`1. three related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -97,9 +98,10 @@ exports[`1. three related articles 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      SECOND LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#008347"
+                      title="second label"
+                    />
                   </div>
                   <h3
                     aria-level="3"
@@ -148,7 +150,7 @@ exports[`1. three related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -161,9 +163,10 @@ exports[`1. three related articles 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      THIRD LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#1A1F24"
+                      title="third label"
+                    />
                   </div>
                   <h3
                     aria-level="3"

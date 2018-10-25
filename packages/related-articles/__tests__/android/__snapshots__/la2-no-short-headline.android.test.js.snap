@@ -32,9 +32,10 @@ exports[`1. no short headline 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    TEST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#333333"
+                    title="test label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"

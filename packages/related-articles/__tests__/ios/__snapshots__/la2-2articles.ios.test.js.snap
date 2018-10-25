@@ -32,9 +32,10 @@ exports[`1. one lead and one support related article 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    FIRST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#005B8D"
+                    title="first label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
@@ -86,9 +87,10 @@ exports[`1. one lead and one support related article 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    SECOND LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#006469"
+                    title="second label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"
