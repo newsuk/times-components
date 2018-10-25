@@ -1923,8 +1923,7 @@ const defaultRelatedArticleSlice = {
   ]
 };
 const defaultSection = "news";
-const defaultShortHeadline =
-  "Caribbean islands devastated by Hurricane Irma";
+const defaultShortHeadline = "Caribbean islands devastated by Hurricane Irma";
 const defaultShortIdentifier = "37b27qd2s";
 const defaultSlug = "france-defies-may-over-russia";
 const defaultStandfirst =

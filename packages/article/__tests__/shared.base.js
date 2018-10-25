@@ -216,12 +216,6 @@ export const snapshotTests = renderComponent => [
   {
     name: "an article with no headline falls back to use shortHeadline",
     test() {
-
-      console.log(articleFixture({
-        ...testFixture,
-        ...emptyArticle,
-        headline: null
-      }));
       const output = renderComponent(
         <Article
           {...articleProps}
