@@ -44,7 +44,7 @@ describe("Debounce", () => {
       debouncedProps: {
         debounceRender: expect.any(Function),
         debounceTimeMs: 1000,
-        foo: "initialFoo",
+        foo: "initialFoo"
       },
       debounceTimeMs: 1000,
       foo: "initialFoo",

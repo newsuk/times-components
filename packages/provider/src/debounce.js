@@ -72,7 +72,7 @@ export class Debounce extends Component {
 
     return debounceRender({
       ...props,
-      ...this.state,
+      ...this.state
     });
   }
 }

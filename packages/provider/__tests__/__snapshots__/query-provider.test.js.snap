@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueryProvider 1 when passing no props to variables, it should call its children with the correct props 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "debounceTimeMs": 1000,
+        "debouncedProps": Object {
+          "children": [MockFunction] {
+            "calls": [Circular],
+            "results": Array [
+              Object {
+                "isThrow": false,
+                "value": null,
+              },
+            ],
+          },
+          "debounceRender": [Function],
+          "debounceTimeMs": 1000,
+          "foo": "bar",
+        },
+        "error": null,
+        "fetchMore": [Function],
+        "foo": "bar",
+        "isDebouncing": false,
+        "isLoading": false,
+        "refetch": [Function],
+        "variables": Object {},
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": null,
+    },
+  ],
+}
+`;
+
+exports[`QueryProvider 2 when passing props to variables, it should call its children with the correct props 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "articleId": "123",
+        "debounceTimeMs": 1000,
+        "debouncedProps": Object {
+          "articleId": "123",
+          "children": [MockFunction] {
+            "calls": [Circular],
+            "results": Array [
+              Object {
+                "isThrow": false,
+                "value": null,
+              },
+            ],
+          },
+          "debounceRender": [Function],
+          "debounceTimeMs": 1000,
+        },
+        "error": null,
+        "fetchMore": [Function],
+        "foo": "bar",
+        "isDebouncing": false,
+        "isLoading": false,
+        "refetch": [Function],
+        "variables": Object {
+          "id": "123",
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": null,
+    },
+  ],
+}
+`;
+
+exports[`QueryProvider 3 should render the result of children 1`] = `
+<div>
+  Hello, World
+</div>
+`;
