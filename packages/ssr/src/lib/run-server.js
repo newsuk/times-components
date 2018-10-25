@@ -8,25 +8,8 @@ const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache: Cache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
+const safeStringify = require("./safe-stringify");
 const { ServerStyleSheet } = require("styled-components");
-
-const renderData = App =>
-  getDataFromTree(App).then(() => {
-    AppRegistry.registerComponent("App", () => () => App);
-
-    const { element, getStyleElement } = AppRegistry.getApplication("App");
-    const serverStylesheet = new ServerStyleSheet();
-
-    const html = ReactDOMServer.renderToString(
-      serverStylesheet.collectStyles(element)
-    );
-
-    const scStyles = serverStylesheet.getStyleTags();
-
-    const rnwStyles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
-
-    return { html, rnwStyles, scStyles };
-  });
 
 const makeClient = () =>
   new ApolloClient({
@@ -46,12 +29,31 @@ const makeClient = () =>
     ssrMode: true
   });
 
+const renderData = App =>
+  getDataFromTree(App).then(() => {
+    AppRegistry.registerComponent("App", () => () => App);
+
+    const { element, getStyleElement } = AppRegistry.getApplication("App");
+    const serverStylesheet = new ServerStyleSheet();
+
+    const markup = ReactDOMServer.renderToString(
+      serverStylesheet.collectStyles(element)
+    );
+
+    const extraStyles = serverStylesheet.getStyleTags();
+    const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
+
+    return { extraStyles, markup, styles };
+  });
+
 module.exports = async (component, ...parameters) => {
   const client = makeClient();
   const App = component(client, ...parameters);
 
-  const props = await renderData(App);
-  const extract = client.extract();
+  const { extraStyles, markup, styles } = await renderData(App);
 
-  return { extract, props };
+  const state = safeStringify(client.extract());
+  const initialState = `<script>window.__APOLLO_STATE__ = ${state};</script>`;
+
+  return { extraStyles, initialState, markup, styles };
 };

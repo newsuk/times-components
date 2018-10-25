@@ -12,27 +12,22 @@ server.use(shrinkRay());
 server.use(express.static("dist"));
 
 const makeHtml = (
-  extract,
+  initialState,
   nuk,
-  { bundleName, html, rnwStyles, scStyles, title }
+  { bundleName, extraStyles, markup, styles, title }
 ) => `
         <!DOCTYPE html>
         <html>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>${title}</title>
-            ${rnwStyles}
-            ${scStyles}
-            <script>
-            window.nuk = ${JSON.stringify(nuk)};
-            window.__APOLLO_STATE__=${JSON.stringify(extract).replace(
-              /</g,
-              "\\\u003c"
-            )};
-            </script>
+            ${styles}
+            ${extraStyles}
+            <script>window.nuk = ${JSON.stringify(nuk)};</script>
+            ${initialState};
           </head>
           <body style="margin:0">
-            <div id="app">${html}</div>
+            <div id="app">${markup}</div>
           </body>
           <script src="/vendor.bundle.js"></script>
           <script src="/${bundleName}.bundle.js"></script>
@@ -53,22 +48,26 @@ server.get("/article/:id", (request, response) => {
   const {
     params: { id }
   } = request;
-  ssr.article(id).then(({ props, extract, adConfig }) =>
-    response.send(
-      makeHtml(
-        extract,
-        {
-          adConfig,
-          id
-        },
-        {
-          ...props,
-          bundleName: "article",
-          title: "Article"
-        }
+  ssr
+    .article(id)
+    .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
+      response.send(
+        makeHtml(
+          initialState,
+          {
+            adConfig,
+            id
+          },
+          {
+            bundleName: "article",
+            extraStyles,
+            markup,
+            styles,
+            title: "Article"
+          }
+        )
       )
-    )
-  );
+    );
 });
 
 server.get("/profile/:slug", (request, response) => {
@@ -78,22 +77,26 @@ server.get("/profile/:slug", (request, response) => {
   } = request;
   const pageNum = toNumber(page) || 1;
 
-  ssr.authorProfile(slug, pageNum).then(({ props, extract }) =>
-    response.send(
-      makeHtml(
-        extract,
-        {
-          page: pageNum,
-          slug
-        },
-        {
-          ...props,
-          bundleName: "author-profile",
-          title: slug
-        }
+  ssr
+    .authorProfile(slug, pageNum)
+    .then(({ extraStyles, initialState, markup, styles }) =>
+      response.send(
+        makeHtml(
+          initialState,
+          {
+            page: pageNum,
+            slug
+          },
+          {
+            bundleName: "author-profile",
+            extraStyles,
+            markup,
+            styles,
+            title: slug
+          }
+        )
       )
-    )
-  );
+    );
 });
 
 server.get("/topic/:slug", (request, response) => {
@@ -103,22 +106,26 @@ server.get("/topic/:slug", (request, response) => {
   } = request;
   const pageNum = toNumber(page) || 1;
 
-  ssr.topic(slug, pageNum).then(({ props, extract }) =>
-    response.send(
-      makeHtml(
-        extract,
-        {
-          page: pageNum,
-          slug
-        },
-        {
-          ...props,
-          bundleName: "topic",
-          title: slug
-        }
+  ssr
+    .topic(slug, pageNum)
+    .then(({ extraStyles, initialState, markup, styles }) =>
+      response.send(
+        makeHtml(
+          initialState,
+          {
+            page: pageNum,
+            slug
+          },
+          {
+            bundleName: "topic",
+            extraStyles,
+            markup,
+            styles,
+            title: slug
+          }
+        )
       )
-    )
-  );
+    );
 });
 
 server.listen(port, () => console.log(`Serving at http://localhost:${port}`));
