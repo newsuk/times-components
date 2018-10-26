@@ -137,6 +137,7 @@
     "react-native": "0.55.4",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.9.0",
+    "react-native-web-image-loader": "0.0.6",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",

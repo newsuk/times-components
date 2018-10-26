@@ -15116,6 +15116,14 @@ react-native-vector-icons@4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
+react-native-web-image-loader@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-web-image-loader/-/react-native-web-image-loader-0.0.6.tgz#4c8a6d100838b7b975de05bd27f90fc09e71c247"
+  integrity sha512-/iaPKhL2uIaCa1aCnXqP8hxPfbJlztoa0izXNOeBoqYV7315qf5nyR7TUqdPEb9cKPEPFB87JdyIls9dEmHfPQ==
+  dependencies:
+    image-size "^0.5.1"
+    loader-utils "^0.2.16"
+
 react-native-web@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.9.0.tgz#293bcc109165b62e2f8f1796208b0b8f8eb8751f"
