@@ -23,9 +23,9 @@ if (!process.env.GRAPHQL_ENDPOINT) {
 module.exports = options => ({
   ...options,
   entry: {
-    article: "./src/client/article.js",
-    "author-profile": "./src/client/author-profile.js",
-    topic: "./src/client/topic.js"
+    // article: "./src/client/entry/article.js",
+    "author-profile": "./src/client/entry/author-profile.js",
+    // topic: "./src/client/entry/topic.js"
   },
   module: {
     rules: [babelConfig]

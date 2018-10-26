@@ -1,6 +1,6 @@
-const articleClient = require("./src/client/article");
-const authorProfileClient = require("./src/client/author-profile");
-const topicClient = require("./src/client/topic");
+const articleClient = require("./src/client/common/article");
+const authorProfileClient = require("./src/client/common/author-profile");
+const topicClient = require("./src/client/common/topic");
 
 module.exports = {
   article: articleClient,

@@ -1,14 +1,6 @@
 const authorProfile = require("../component/author-profile");
 const runServer = require("../lib/run-server");
-
-const defaultMapProfileToConfig = () => ({
-    adUnit: '',
-    biddersConfig: {},
-    bidderSlots: [],
-    networkId: '',
-    pageTargeting: {},
-    slotTargeting: {}
-});
+const defaultMapProfileToConfig = require("../lib/make-ad-config");
 
 module.exports = ({ currentPage, debounceTime = 0, makeArticleUrl, perPage = 20, slug, uri }) => {
   const options = {

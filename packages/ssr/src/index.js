@@ -15,7 +15,6 @@ server.use(express.static("dist"));
 const makeHtml = (
   initialState,
   initialProps,
-  nuk,
   { bundleName, extraStyles, markup, styles, title }
 ) => `
         <!DOCTYPE html>
@@ -25,7 +24,6 @@ const makeHtml = (
             <title>${title}</title>
             ${styles}
             ${extraStyles}
-            <script>window.nuk = ${JSON.stringify(nuk)};</script>
           </head>
           <body style="margin:0">
             ${initialProps}
@@ -78,21 +76,16 @@ server.get("/profile/:slug", (request, response) => {
     params: { slug },
     query: { page }
   } = request;
-  const pageNum = toNumber(page) || 1;
+  const currentPage = toNumber(page) || 1;
   const uri = process.env.GRAPHQL_ENDPOINT;
-  const currentPage = page;
 
   ssr
-    .authorProfile(slug, pageNum, makeArticleUrl, uri, currentPage )
+    .authorProfile(slug, currentPage, makeArticleUrl, uri)
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(
           initialState,
           initialProps,
-          {
-            page: pageNum,
-            slug
-          },
           {
             bundleName: "author-profile",
             extraStyles,
