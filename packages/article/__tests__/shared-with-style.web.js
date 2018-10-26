@@ -51,7 +51,7 @@ export default () => {
   it("full article with style", () => {
     const article = articleFixture({
       ...testFixture,
-      content: [
+      seoContent: [
         {
           attributes: {
             caption: "An image caption",
