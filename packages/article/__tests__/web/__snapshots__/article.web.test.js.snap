@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an error 1`] = `null`;
+
+exports[`7. an article loading state 1`] = `
+<div>
+  Loading ...
+</div>
+`;
