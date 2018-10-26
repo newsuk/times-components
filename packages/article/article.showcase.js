@@ -26,26 +26,46 @@ import fullArticleFixture, {
   videoLeadAsset
 } from "./fixtures/full-article";
 
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
+
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 
-const renderComponent = (config, scale, sectionColour) => {
+const renderComponent = (config, decorateAction, scale, sectionColour) => {
   const data = fullArticleFixture(config);
   return (
     <AdComposer adConfig={articleAdConfig}>
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-      {({ observed, registerNode }) => (
-        <Context.Provider value={{ makeArticleUrl, theme: { scale, sectionColour } }}>
-          <Article
-            analyticsStream={storybookReporter}
-            data={data}
-            observed={observed}
-            registerNode={registerNode}
-          />
-        </Context.Provider>
-      )}
-    </LazyLoad>
+      <Context.Provider value={{ makeArticleUrl, theme: { scale, sectionColour } }}>
+        <Article
+          analyticsStream={storybookReporter}
+          data={data}
+          onAuthorPress={preventDefaultedAction(decorateAction)(
+            "onAuthorPress"
+          )}
+          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+            "onCommentGuidelinesPress"
+          )}
+          onCommentsPress={preventDefaultedAction(decorateAction)(
+            "onCommentsPress"
+          )}
+          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+            "onRelatedArticlePress"
+          )}
+          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          )}
+          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+        />
+      </Context.Provider>
   </AdComposer>
   )
 }
@@ -67,7 +87,7 @@ export default {
           topics: topics ? undefined : [],
         };
 
-        return renderComponent(config, scale, sectionColour);
+        return renderComponent(config, decorateAction, scale, sectionColour);
       },
       name: "Default",
       type: "story"
