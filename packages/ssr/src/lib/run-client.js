@@ -18,9 +18,11 @@ const makeClient = options => {
   }
 
   const networkInterfaceOptions = { fetch, headers: {}, uri: options.uri };
-  networkInterfaceOptions.headers["content-type"] =
-    "application/x-www-form-urlencoded";
-  networkInterfaceOptions.useGETForQueries = true;
+
+  if (options.useGET) {
+    networkInterfaceOptions.headers['content-type'] = 'application/x-www-form-urlencoded';
+    networkInterfaceOptions.useGETForQueries = true;
+  }
 
   return new ApolloClient({
     cache: new InMemoryCache({ fragmentMatcher }).restore(

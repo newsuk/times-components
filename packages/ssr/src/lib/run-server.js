@@ -6,28 +6,33 @@ const { createHttpLink } = require("apollo-link-http");
 const fetch = require("unfetch").default;
 const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
-const { InMemoryCache: Cache } = require("apollo-cache-inmemory");
+const { InMemoryCache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
 const safeStringify = require("./safe-stringify");
 const { ServerStyleSheet } = require("styled-components");
 
-const makeClient = () =>
-  new ApolloClient({
-    cache: new Cache({
-      addTypename: true,
-      fragmentMatcher
-    }),
-    link: createHttpLink({
-      fetch,
-      headers: {
-        authorization: process.env.AUTH_TOKEN
-          ? `Bearer ${process.env.AUTH_TOKEN}`
-          : ""
-      },
-      uri: process.env.GRAPHQL_ENDPOINT
-    }),
+const makeClient = options => {
+  if (!options.uri) {
+    throw new Error("API endpoint is empty");
+  }
+
+  const networkInterfaceOptions = {
+    fetch,
+    headers: {'content-type': 'application/x-www-form-urlencoded'},
+    uri: options.uri,
+    useGETForQueries: true
+  };
+
+  if (options.headers) {
+    Object.assign(networkInterfaceOptions.headers, options.headers);
+  }
+
+  return new ApolloClient({
+    cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),
+    link: createHttpLink(networkInterfaceOptions),
     ssrMode: true
   });
+};
 
 const renderData = App =>
   getDataFromTree(App).then(() => {
@@ -46,10 +51,10 @@ const renderData = App =>
     return { extraStyles, markup, styles };
   });
 
-module.exports = async (component, ...parameters) => {
-  const client = makeClient();
+module.exports = async (component, options) => {
+  const client = makeClient({ uri: options.uri });
   const analyticsStream = () => {};
-  const App = component(client, analyticsStream, ...parameters);
+  const App = component(client, analyticsStream, options);
 
   const { extraStyles, markup, styles } = await renderData(App);
 

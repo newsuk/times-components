@@ -4,38 +4,37 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
 const Context = require("@times-components/context/rnw").default;
-const { scales } = require("@times-components/styleguide/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
-const makeArticleUrl = require("../lib/make-url");
 
-const scale = scales.large;
-const sectionColour = "#FFFFFF";
-
-module.exports = (client, analyticsStream, slug, page) =>
+module.exports = (client, analyticsStream, props) =>
   React.createElement(
     ApolloProvider,
     { client },
     React.createElement(
       AuthorProfileProvider,
       {
-        debounceTimeMs: 0,
-        slug
+        debounceTimeMs: props.debounceTimeMs,
+        page: props.page,
+        pageSize: props.pageSize,
+        slug: props.slug
       },
       ({ author, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
-          { value: { makeArticleUrl, theme: { scale, sectionColour } } },
+          { value: { makeArticleUrl: props.makeArticleUrl } },
           React.createElement(AuthorProfile, {
-            adConfig: {},
+            adConfig: props.mapProfileToAdConfig(),
             analyticsStream,
             author,
+            debounceTimeMs: props.debounceTimeMs,
             error,
             isLoading,
             onArticlePress: () => {},
             onTwitterLinkPress: () => {},
-            page,
+            page: props.page,
+            pageSize: props.pageSize,
             refetch,
-            slug
+            slug: props.slug,
           })
         )
     )
