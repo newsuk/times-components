@@ -6,36 +6,38 @@ const { AuthorProfileProvider } = require("@times-components/provider/rnw");
 const Context = require("@times-components/context/rnw").default;
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
 
-module.exports = (client, analyticsStream, props) =>
+const ProfileProvider = (client, analyticsStream, data) =>
   React.createElement(
     ApolloProvider,
     { client },
     React.createElement(
       AuthorProfileProvider,
       {
-        debounceTimeMs: props.debounceTimeMs,
-        page: props.page,
-        pageSize: props.pageSize,
-        slug: props.slug
+        debounceTimeMs: data.debounceTimeMs,
+        page: data.page,
+        pageSize: data.pageSize,
+        slug: data.slug
       },
       ({ author, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
-          { value: { makeArticleUrl: props.makeArticleUrl } },
+          { value: { makeArticleUrl: data.makeArticleUrl } },
           React.createElement(AuthorProfile, {
-            adConfig: props.mapProfileToAdConfig(),
+            adConfig: data.mapProfileToAdConfig(),
             analyticsStream,
             author,
-            debounceTimeMs: props.debounceTimeMs,
+            debounceTimeMs: data.debounceTimeMs,
             error,
             isLoading,
             onArticlePress: () => {},
             onTwitterLinkPress: () => {},
-            page: props.page,
-            pageSize: props.pageSize,
+            page: data.page,
+            pageSize: data.pageSize,
             refetch,
-            slug: props.slug,
+            slug: data.slug
           })
         )
     )
   );
+
+module.exports = ProfileProvider;

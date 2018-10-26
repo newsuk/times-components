@@ -18,7 +18,7 @@ const makeClient = options => {
 
   const networkInterfaceOptions = {
     fetch,
-    headers: {'content-type': 'application/x-www-form-urlencoded'},
+    headers: { "content-type": "application/x-www-form-urlencoded" },
     uri: options.uri,
     useGETForQueries: true
   };
@@ -60,17 +60,17 @@ module.exports = async (component, options) => {
 
   const props = safeStringify(options);
   const initialProps = `<script>window.nuk['${
-      options.name
+    options.name
   }'] = ${props};</script>`;
 
   const state = safeStringify(client.extract());
   const initialState = `<script>window.__APOLLO_STATE__ = ${state};</script>`;
 
   return {
-  extraStyles,
-  initialProps,
-  initialState,
-  markup,
-  styles
-};
+    extraStyles,
+    initialProps,
+    initialState,
+    markup,
+    styles
+  };
 };

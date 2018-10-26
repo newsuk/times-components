@@ -1,8 +1,8 @@
 module.exports = () => ({
-  adUnit: '',
+  adUnit: "",
   biddersConfig: {},
   bidderSlots: [],
-  networkId: '',
+  networkId: "",
   pageTargeting: {},
   slotTargeting: {}
 });

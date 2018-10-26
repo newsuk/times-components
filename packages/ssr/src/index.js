@@ -80,20 +80,16 @@ server.get("/profile/:slug", (request, response) => {
   const uri = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .authorProfile({slug, currentPage, makeArticleUrl, uri})
+    .authorProfile({ currentPage, makeArticleUrl, slug, uri })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
-        makeHtml(
-          initialState,
-          initialProps,
-          {
-            bundleName: "author-profile",
-            extraStyles,
-            markup,
-            styles,
-            title: slug
-          }
-        )
+        makeHtml(initialState, initialProps, {
+          bundleName: "author-profile",
+          extraStyles,
+          markup,
+          styles,
+          title: slug
+        })
       )
     );
 });
