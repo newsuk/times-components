@@ -6,7 +6,7 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
- const emptyArticle = {
+const emptyArticle = {
   byline: null,
   flags: null,
   label: null,
@@ -16,7 +16,7 @@ import articleProps from "./shared-article-props";
   topics: null
 };
 
- export default () =>
+export default () =>
   iterator([
     {
       name: "a secondary image",
@@ -53,7 +53,7 @@ import articleProps from "./shared-article-props";
             onVideoPress={() => {}}
           />
         );
-         expect(output).toMatchSnapshot();
+        expect(output).toMatchSnapshot();
       }
     },
     {
@@ -91,7 +91,7 @@ import articleProps from "./shared-article-props";
             onVideoPress={() => {}}
           />
         );
-         expect(output).toMatchSnapshot();
+        expect(output).toMatchSnapshot();
       }
     }
   ]);
