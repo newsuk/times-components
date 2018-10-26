@@ -9,7 +9,7 @@ import {
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import "./mocks.native";
-import { snapshotTests } from "./shared.base";
+import { snapshotTests } from "./shared.base.native";
 
 jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
 

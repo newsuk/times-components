@@ -6,7 +6,7 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import shared from "./images.base";
+import shared from "./images.base.native";
 
 jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
 
