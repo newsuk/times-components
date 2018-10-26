@@ -4,6 +4,7 @@ const express = require("express");
 const shrinkRay = require("shrink-ray");
 
 const ssr = require("./../src/server");
+const makeArticleUrl = require("./../src/lib/make-url");
 
 const port = 3000;
 const server = express();
@@ -13,6 +14,7 @@ server.use(express.static("dist"));
 
 const makeHtml = (
   initialState,
+  initialProps,
   nuk,
   { bundleName, extraStyles, markup, styles, title }
 ) => `
@@ -24,9 +26,10 @@ const makeHtml = (
             ${styles}
             ${extraStyles}
             <script>window.nuk = ${JSON.stringify(nuk)};</script>
-            ${initialState};
           </head>
           <body style="margin:0">
+            ${initialProps}
+            ${initialState};
             <div id="main-container">${markup}</div>
           </body>
           <script src="/vendor.bundle.js"></script>
@@ -76,13 +79,16 @@ server.get("/profile/:slug", (request, response) => {
     query: { page }
   } = request;
   const pageNum = toNumber(page) || 1;
+  const uri = process.env.GRAPHQL_ENDPOINT;
+  const currentPage = page;
 
   ssr
-    .authorProfile(slug, pageNum)
-    .then(({ extraStyles, initialState, markup, styles }) =>
+    .authorProfile(slug, pageNum, makeArticleUrl, uri, currentPage )
+    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(
           initialState,
+          initialProps,
           {
             page: pageNum,
             slug
