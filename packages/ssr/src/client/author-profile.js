@@ -12,7 +12,6 @@ module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
   } = window.nuk.authorProfile || {};
 
   const props = {
-    analyticsStream: reporter.analytics,
     debounceTimeMs,
     makeArticleUrl,
     mapProfileToAdConfig,

@@ -2,12 +2,12 @@ const authorProfile = require("../component/author-profile");
 const runServer = require("../lib/run-server");
 
 const defaultMapProfileToConfig = () => ({
-    networkId: '',
     adUnit: '',
-    pageTargeting: {},
-    slotTargeting: {},
     biddersConfig: {},
-    bidderSlots: []
+    bidderSlots: [],
+    networkId: '',
+    pageTargeting: {},
+    slotTargeting: {}
 });
 
 module.exports = ({ currentPage, debounceTime = 0, makeArticleUrl, perPage = 20, slug, uri }) => {
@@ -15,11 +15,12 @@ module.exports = ({ currentPage, debounceTime = 0, makeArticleUrl, perPage = 20,
       debounceTimeMs: debounceTime,
       makeArticleUrl,
       mapProfileToAdConfig: defaultMapProfileToConfig,
+      name: 'authorProfile',
       page: currentPage,
       pageSize: perPage,
       slug,
       uri
   };
 
-  runServer(authorProfile, options);
+  return runServer(authorProfile, options);
 }

@@ -62,6 +62,7 @@
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",
     "express": "4.16.3",
+    "node-fetch": "2.2.0",
     "react": "16.5.2",
     "react-apollo": "2.1.4",
     "react-art": "16.5.2",

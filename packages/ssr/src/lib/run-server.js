@@ -3,7 +3,7 @@
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native-web");
 const { createHttpLink } = require("apollo-link-http");
-const fetch = require("unfetch").default;
+const fetch = require("node-fetch");
 const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache } = require("apollo-cache-inmemory");
@@ -58,8 +58,19 @@ module.exports = async (component, options) => {
 
   const { extraStyles, markup, styles } = await renderData(App);
 
+  const props = safeStringify(options);
+  const initialProps = `<script>window.nuk['${
+      options.name
+  }'] = ${props};</script>`;
+
   const state = safeStringify(client.extract());
   const initialState = `<script>window.__APOLLO_STATE__ = ${state};</script>`;
 
-  return { extraStyles, initialState, markup, styles };
+  return {
+  extraStyles,
+  initialProps,
+  initialState,
+  markup,
+  styles
+};
 };
