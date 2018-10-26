@@ -1,7 +1,7 @@
 /* eslint-env browser */
 
-const authorProfile = require("../component/author-profile");
-const runClient = require("../lib/run-client");
+const authorProfile = require("../../component/author-profile");
+const runClient = require("../../lib/run-client");
 
 module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
   const {

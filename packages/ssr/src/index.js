@@ -27,7 +27,7 @@ const makeHtml = (
           </head>
           <body style="margin:0">
             ${initialProps}
-            ${initialState};
+            ${initialState}
             <div id="main-container">${markup}</div>
           </body>
           <script src="/vendor.bundle.js"></script>
@@ -45,31 +45,31 @@ const toNumber = input => {
   return parsed;
 };
 
-server.get("/article/:id", (request, response) => {
-  const {
-    params: { id }
-  } = request;
-  ssr
-    .article(id)
-    .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
-      response.send(
-        makeHtml(
-          initialState,
-          {
-            adConfig,
-            id
-          },
-          {
-            bundleName: "article",
-            extraStyles,
-            markup,
-            styles,
-            title: "Article"
-          }
-        )
-      )
-    );
-});
+// server.get("/article/:id", (request, response) => {
+//   const {
+//     params: { id }
+//   } = request;
+//   ssr
+//     .article(id)
+//     .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
+//       response.send(
+//         makeHtml(
+//           initialState,
+//           {
+//             adConfig,
+//             id
+//           },
+//           {
+//             bundleName: "article",
+//             extraStyles,
+//             markup,
+//             styles,
+//             title: "Article"
+//           }
+//         )
+//       )
+//     );
+// });
 
 server.get("/profile/:slug", (request, response) => {
   const {
@@ -80,7 +80,7 @@ server.get("/profile/:slug", (request, response) => {
   const uri = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .authorProfile(slug, currentPage, makeArticleUrl, uri)
+    .authorProfile({slug, currentPage, makeArticleUrl, uri})
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(
@@ -98,34 +98,34 @@ server.get("/profile/:slug", (request, response) => {
     );
 });
 
-server.get("/topic/:slug", (request, response) => {
-  const {
-    params: { slug },
-    query: { page }
-  } = request;
-  const pageNum = toNumber(page) || 1;
+// server.get("/topic/:slug", (request, response) => {
+//   const {
+//     params: { slug },
+//     query: { page }
+//   } = request;
+//   const pageNum = toNumber(page) || 1;
 
-  ssr
-    .topic(slug, pageNum)
-    .then(({ extraStyles, initialState, markup, styles }) =>
-      response.send(
-        makeHtml(
-          initialState,
-          {
-            page: pageNum,
-            slug
-          },
-          {
-            bundleName: "topic",
-            extraStyles,
-            markup,
-            styles,
-            title: slug
-          }
-        )
-      )
-    );
-});
+//   ssr
+//     .topic(slug, pageNum)
+//     .then(({ extraStyles, initialState, markup, styles }) =>
+//       response.send(
+//         makeHtml(
+//           initialState,
+//           {
+//             page: pageNum,
+//             slug
+//           },
+//           {
+//             bundleName: "topic",
+//             extraStyles,
+//             markup,
+//             styles,
+//             title: slug
+//           }
+//         )
+//       )
+//     );
+// });
 
 const App = server.listen(port, () =>
   console.log(`Serving at http://localhost:${port}`)
