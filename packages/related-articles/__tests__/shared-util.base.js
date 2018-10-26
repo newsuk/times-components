@@ -1,9 +1,11 @@
 import React from "react";
 import mockDate from "mockdate";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import Card from "@times-components/card";
 import Context from "@times-components/context";
 import RelatedArticles from "../src/related-articles";
+
+const makeArticleUrl = () => "https://some-url.io";
 
 export const testSummary = summary => [
   {

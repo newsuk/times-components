@@ -20,7 +20,7 @@ exports[`1. two related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -33,9 +33,10 @@ exports[`1. two related articles 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      FIRST LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#C74600"
+                      title="first label"
+                    />
                   </div>
                   <h3
                     aria-level="3"
@@ -77,7 +78,7 @@ exports[`1. two related articles 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -90,9 +91,10 @@ exports[`1. two related articles 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      SECOND LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#6C6C69"
+                      title="second label"
+                    />
                   </div>
                   <h3
                     aria-level="3"

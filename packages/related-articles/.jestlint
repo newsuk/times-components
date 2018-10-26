@@ -1,4 +1,6 @@
 {
+  "maxAttributes": 7,
   "maxAttributeStringLength": 44,
+  "maxDepth": 11,
   "maxLines": 431
 }

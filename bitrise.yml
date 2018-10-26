@@ -5,7 +5,7 @@ project_type: other
 workflows:
   fructose-tests:
     steps:
-    - script@1.1.4:
+    - script@1.1.5:
         title: build app
         inputs:
         - content: |-
@@ -25,7 +25,7 @@ workflows:
             yarn ios -- --simulator "iPhone 7"
             kill -9 $(lsof -ti :8081)
             echo 'should exit with 0'
-    - script@1.1.4:
+    - script@1.1.5:
         title: run fructose tests
         inputs:
         - content: |-
@@ -52,7 +52,7 @@ workflows:
             # tests
             yarn functional-test:ios
             yarn functional-test:web
-    - script@1.1.4:
+    - script@1.1.5:
         title: screenshot of desktop
         inputs:
         - content: |-

@@ -16,6 +16,15 @@ module.exports = {
     mainFields: ["devModule", "dev", "module", "main"],
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'react-native-web-image-loader?name=[hash].[ext]',
+      }
+    ]
+  },
+
   plugins: [
     // Use the DLL in development.
     new webpack.DllReferencePlugin({

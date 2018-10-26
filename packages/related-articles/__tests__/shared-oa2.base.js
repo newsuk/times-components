@@ -13,6 +13,9 @@ import opinionAndTwo2ArticlesFixture from "../fixtures/opinionandtwo/2-articles"
 import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles";
 import opinionAndTwo3ArticlesLeadAssetOverrideFixture from "../fixtures/opinionandtwo/3-articles-lead-asset-override";
 
+jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components/article-label", () => "ArticleLabel");
+
 const opinionAndTwo0ArticleFixtureData = opinionAndTwo0ArticleFixture.data;
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   crop23: "https://crop23.io",
@@ -30,6 +33,7 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
 }).data;
 
 const opinionAndTwoNoShortHeadlineFixtureData = opinionAndTwo1ArticleFixture({
+  crop23: "https://crop23.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",

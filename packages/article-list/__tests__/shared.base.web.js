@@ -1,10 +1,12 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import Context from "@times-components/context";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
+
+const makeArticleUrl = () => "https://test.io";
 
 export default (additionalTests = []) => {
   const realIntl = Intl;
