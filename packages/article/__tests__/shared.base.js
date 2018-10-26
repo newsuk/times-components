@@ -527,6 +527,8 @@ export default (renderComponent, platformTests = []) => {
   });
 
   iterator([
+    ...snapshotTests(renderComponent),
+    ...platformTests,
     ...negativeTests
   ]);
 };
