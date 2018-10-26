@@ -6,7 +6,6 @@ export default addTypenameToDocument(gql`
     article(id: $id) {
       commentCount
       commentsEnabled
-      content
       flags
       keywords
       leadAsset {
@@ -52,6 +51,7 @@ export default addTypenameToDocument(gql`
           }
         }
       }
+      seoContent
       standfirst
       topics(maxCount: 5) {
         name

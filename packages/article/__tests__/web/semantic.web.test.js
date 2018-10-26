@@ -45,7 +45,7 @@ const tests = [
     test() {
       const article = articleFixture({
         ...testFixture,
-        content: [
+        seoContent: [
           {
             attributes: {
               caption: "An image caption",

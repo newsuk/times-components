@@ -60,7 +60,7 @@ class Article extends Component {
         byline,
         publishedTime,
         publicationName,
-        content,
+        seoContent,
         section,
         shortHeadline,
         url,
@@ -142,7 +142,7 @@ class Article extends Component {
           </header>
           <BodyContainer>
             <ArticleBody
-              content={content}
+              content={seoContent}
               contextUrl={url}
               observed={observed}
               registerNode={registerNode}
