@@ -378,7 +378,9 @@ exports[`5. an article with no headline falls back to use shortheadline 1`] = `
       <View>
         <Text
           selectable={true}
-        />
+        >
+          Some Short Headline
+        </Text>
       </View>
     </View>
     <View>

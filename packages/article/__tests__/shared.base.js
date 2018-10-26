@@ -224,7 +224,7 @@ export const snapshotTests = renderComponent => [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
-            headline: null
+            headline: ""
           })}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}

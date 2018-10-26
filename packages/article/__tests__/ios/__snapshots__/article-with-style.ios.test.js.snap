@@ -551,7 +551,9 @@ exports[`5. an article with no headline falls back to use shortheadline 1`] = `
               "marginTop": 15,
             }
           }
-        />
+        >
+          Some Short Headline
+        </Text>
       </View>
     </View>
     <View>

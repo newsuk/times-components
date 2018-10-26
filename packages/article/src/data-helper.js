@@ -36,6 +36,7 @@ const prepareDataForListView = articleData => {
     headline: articleData.headline,
     isVideo,
     label: articleData.label,
+    shortHeadline: articleData.shortHeadline,
     standfirst: articleData.standfirst
   };
   const articleMidContainerData = {

@@ -363,7 +363,58 @@ exports[`4. an article with no lead asset 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. an article with ads 1`] = `
+exports[`5. an article with no headline falls back to use shortheadline 1`] = `
+<RCTScrollView
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View>
+      <View>
+        <Text
+          selectable={true}
+        >
+          Some Short Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View>
+          <Text>
+            Friday March 13 2015, 6:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text
+          selectable={true}
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentCount={65}
+        commentsEnabled={true}
+        url="https://url.io"
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`6. an article with ads 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -412,7 +463,7 @@ exports[`5. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`6. an article loading state 1`] = `
+exports[`7. an article loading state 1`] = `
 <View>
   <ActivityIndicator
     animating={true}
@@ -422,7 +473,7 @@ exports[`6. an article loading state 1`] = `
 </View>
 `;
 
-exports[`7. an article with updated byline 1`] = `
+exports[`8. an article with updated byline 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -473,7 +524,7 @@ exports[`7. an article with updated byline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`7. an article with updated byline 2`] = `
+exports[`8. an article with updated byline 2`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -548,7 +599,7 @@ exports[`7. an article with updated byline 2`] = `
 </RCTScrollView>
 `;
 
-exports[`8. an article that moves to a loading state 1`] = `
+exports[`9. an article that moves to a loading state 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -599,7 +650,7 @@ exports[`8. an article that moves to a loading state 1`] = `
 </RCTScrollView>
 `;
 
-exports[`8. an article that moves to a loading state 2`] = `
+exports[`9. an article that moves to a loading state 2`] = `
 <View>
   <ActivityIndicator
     animating={true}
