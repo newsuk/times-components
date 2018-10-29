@@ -531,7 +531,109 @@ exports[`4. an article with no lead asset 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. an article with ads 1`] = `
+exports[`5. an article with no headline falls back to use shortheadline 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 33,
+              "marginBottom": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Some Short Headline
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 1,
+              "paddingBottom": 6,
+              "paddingTop": 7,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Friday March 13 2015, 6:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <ArticleComments />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`6. an article with ads 1`] = `
 <RCTScrollView>
   <View>
     <View>
@@ -623,7 +725,7 @@ exports[`5. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`6. an article loading state 1`] = `
+exports[`7. an article loading state 1`] = `
 <View
   style={
     Object {
@@ -638,7 +740,7 @@ exports[`6. an article loading state 1`] = `
 </View>
 `;
 
-exports[`7. an article with updated byline 1`] = `
+exports[`8. an article with updated byline 1`] = `
 <RCTScrollView>
   <View>
     <View>
@@ -740,7 +842,7 @@ exports[`7. an article with updated byline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`7. an article with updated byline 2`] = `
+exports[`8. an article with updated byline 2`] = `
 <RCTScrollView>
   <View>
     <View>

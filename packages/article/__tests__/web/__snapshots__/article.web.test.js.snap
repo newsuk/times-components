@@ -433,7 +433,71 @@ exports[`4. an article with no lead asset 1`] = `
 </article>
 `;
 
-exports[`5. an article with ads 1`] = `
+exports[`5. an article with no headline falls back to use shortheadline 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <header>
+      <div>
+        <div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Short Headline
+          </h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <span>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div />
+    </header>
+    <div>
+      <div>
+        <p>
+          Some content
+        </p>
+      </div>
+    </div>
+  </div>
+  <aside
+    id="related-articles"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixel"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelteads"
+  />
+  <Ad
+    contextUrl="https://url.io"
+    section="Some Section"
+    slotName="pixelskin"
+  />
+</article>
+`;
+
+exports[`6. an article with ads 1`] = `
 <article>
   <div>
     <Ad
@@ -497,13 +561,13 @@ exports[`5. an article with ads 1`] = `
 </article>
 `;
 
-exports[`6. an article loading state 1`] = `
+exports[`7. an article loading state 1`] = `
 <div>
   Loading ...
 </div>
 `;
 
-exports[`7. an article with updated byline 1`] = `
+exports[`8. an article with updated byline 1`] = `
 <article>
   <div>
     <Ad
@@ -567,7 +631,7 @@ exports[`7. an article with updated byline 1`] = `
 </article>
 `;
 
-exports[`7. an article with updated byline 2`] = `
+exports[`8. an article with updated byline 2`] = `
 <article>
   <div>
     <Ad

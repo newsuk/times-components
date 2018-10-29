@@ -1923,6 +1923,7 @@ const defaultRelatedArticleSlice = {
   ]
 };
 const defaultSection = "news";
+const defaultShortHeadline = "Caribbean islands devastated by Hurricane Irma";
 const defaultShortIdentifier = "37b27qd2s";
 const defaultSlug = "france-defies-may-over-russia";
 const defaultStandfirst =
@@ -1981,6 +1982,7 @@ const makeDefaultConfig = ({
   leadAsset = defaultLeadAsset,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
+  shortHeadline = defaultShortHeadline,
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
   standfirst = defaultStandfirst,
@@ -1999,6 +2001,7 @@ const makeDefaultConfig = ({
   leadAsset,
   relatedArticleSlice,
   section,
+  shortHeadline,
   shortIdentifier,
   slug,
   standfirst,
@@ -2144,6 +2147,7 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
+  shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",

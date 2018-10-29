@@ -23,6 +23,7 @@ import {
 } from "./article-page-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
+import getHeadline from "./utils";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -54,13 +55,20 @@ const renderRow = (analyticsStream, width) => (
     }
 
     case "header": {
-      const { flags, hasVideo, headline, label, standfirst } = rowData.data;
+      const {
+        flags,
+        hasVideo,
+        headline,
+        label,
+        shortHeadline,
+        standfirst
+      } = rowData.data;
       const styles = stylesFactory();
       return (
         <ArticleHeader
           flags={flags}
           hasVideo={hasVideo}
-          headline={headline}
+          headline={getHeadline(headline, shortHeadline)}
           key={rowData.type}
           label={label}
           standfirst={standfirst}
