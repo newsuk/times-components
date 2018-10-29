@@ -5,9 +5,9 @@ const runClient = require("../../lib/run-client");
 
 module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
   const { debounceTimeMs, page, pageSize, slug } =
-    window.nuk.authorProfile || {};
+    (window.nuk && window.nuk.authorProfile) || {};
 
-  const props = {
+  const data = {
     debounceTimeMs,
     makeArticleUrl,
     mapProfileToAdConfig,
@@ -16,5 +16,5 @@ module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
     slug
   };
 
-  runClient(authorProfile, props);
+  runClient(authorProfile, data);
 };

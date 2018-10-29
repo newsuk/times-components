@@ -1,8 +1,19 @@
 const article = require("../component/article");
 const runServer = require("../lib/run-server");
-const adConfig = require("../lib/make-ad-config");
 
-module.exports = async id => {
-  const data = await runServer(article, id, adConfig);
-  return { ...data, adConfig: adConfig() };
+module.exports = ({ debounceTimeMs, headers, id, makeArticleUrl, uri }) => {
+  const options = {
+    client: {
+      headers,
+      uri
+    },
+    data: {
+      debounceTimeMs,
+      id,
+      makeArticleUrl
+    },
+    name: "article"
+  };
+
+  return runServer(article, options);
 };

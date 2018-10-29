@@ -52,13 +52,13 @@ const renderData = App =>
   });
 
 module.exports = async (component, options) => {
-  const client = makeClient({ uri: options.uri });
+  const client = makeClient(options.client);
   const analyticsStream = () => {};
   const App = component(client, analyticsStream, options);
 
   const { extraStyles, markup, styles } = await renderData(App);
 
-  const props = safeStringify(options);
+  const props = safeStringify(options.data);
   const initialProps = `<script>window.nuk['${
     options.name
   }'] = ${props};</script>`;

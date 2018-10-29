@@ -10,14 +10,18 @@ module.exports = ({
   uri
 }) => {
   const options = {
-    debounceTimeMs: debounceTime,
-    makeArticleUrl,
-    mapProfileToAdConfig: () => ({}),
-    name: "authorProfile",
-    page: currentPage,
-    pageSize: perPage,
-    slug,
-    uri
+    client: {
+      uri
+    },
+    data: {
+      debounceTimeMs: debounceTime,
+      makeArticleUrl,
+      mapProfileToAdConfig: () => ({}),
+      page: currentPage,
+      pageSize: perPage,
+      slug
+    },
+    name: "authorProfile"
   };
 
   return runServer(authorProfile, options);
