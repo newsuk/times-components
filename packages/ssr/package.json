@@ -13,7 +13,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "run:test": "yarn start:tpamock & yarn start:test & cypress run",
-    "start": "node src/index.js",
+    "start": "node src/standalone-renderer/app.js"
     "start:test": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on http://localhost:3000",
     "start:tpamock": "node ./mock-server & wait-on http://localhost:4000",
     "test:integration": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn bundle:dev && yarn run:test && yarn cleanup:servers"

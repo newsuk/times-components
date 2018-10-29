@@ -3,8 +3,8 @@
 const express = require("express");
 const shrinkRay = require("shrink-ray");
 
-const ssr = require("./../src/server");
-const makeArticleUrl = require("./../src/lib/make-url");
+const ssr = require("../server");
+const makeArticleUrl = require("../lib/make-url");
 
 const port = 3000;
 const server = express();
