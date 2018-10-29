@@ -1,17 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-<<<<<<< HEAD
-.c14 {
-=======
 Array [
-  .c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c3 {
->>>>>>> chore: Some web test scrubbing
+  .c1 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -22,15 +13,27 @@ Array [
   padding-left: 10px;
 }
 
-<<<<<<< HEAD
-.c17 {
-=======
-.c6 {
->>>>>>> chore: Some web test scrubbing
+.c2 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 9px 10px 0 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: "TimesModern-Regular";
+  color: #333333;
+}
+
+.c9 {
   padding-left: 10px;
 }
 
-.c1 {
+.c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.c4 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -38,11 +41,7 @@ Array [
   padding-bottom: 25px;
 }
 
-<<<<<<< HEAD
-.c18 {
-=======
-.c7 {
->>>>>>> chore: Some web test scrubbing
+.c5 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -55,11 +54,7 @@ Array [
   padding-bottom: 25px;
 }
 
-<<<<<<< HEAD
-.c19 {
-=======
-.c8 {
->>>>>>> chore: Some web test scrubbing
+.c6 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -73,50 +68,14 @@ Array [
   display: block;
 }
 
-<<<<<<< HEAD
-.c16 {
-=======
-.c5 {
->>>>>>> chore: Some web test scrubbing
+.c8 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-.c15 {
-  display: block;
-}
-
-.c4 {
-  font-size: 30px;
-  color: #1D1D1B;
-  margin-bottom: 8px;
-  font-family: "TimesModern-Bold";
-  font-weight: 400;
-  line-height: 30px;
-}
-
 .c7 {
-  border-top: 1px solid #DBDBDB;
-}
-
-.c6 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c20 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c8 {
-  display: none;
-=======
-.c4 {
   display: block;
->>>>>>> chore: Some web test scrubbing
 }
 
 .c0 {
@@ -124,15 +83,9 @@ Array [
 }
 
 @media (min-width:768px) {
-<<<<<<< HEAD
-  .c14 {
+  .c1 {
     font-size: 18px;
     line-height: 30px;
-=======
-  .c2 {
-    width: 80.8%;
-    margin: 0 auto;
->>>>>>> chore: Some web test scrubbing
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -140,93 +93,78 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c1 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-<<<<<<< HEAD
-  .c17 {
-=======
-  .c3 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
->>>>>>> chore: Some web test scrubbing
+  .c9 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-<<<<<<< HEAD
-  .c18 {
-=======
-  .c7 {
->>>>>>> chore: Some web test scrubbing
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width:1024px) {
-<<<<<<< HEAD
-  .c18 {
-=======
-  .c7 {
->>>>>>> chore: Some web test scrubbing
+  .c3 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-<<<<<<< HEAD
-  .c19 {
-=======
-  .c8 {
->>>>>>> chore: Some web test scrubbing
+  .c4 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
 @media (min-width:1024px) {
-<<<<<<< HEAD
-  .c19 {
-=======
-  .c8 {
->>>>>>> chore: Some web test scrubbing
+  .c4 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-<<<<<<< HEAD
-  .c16 {
-=======
   .c5 {
->>>>>>> chore: Some web test scrubbing
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -238,123 +176,16 @@ Array [
 }
 
 @media (min-width:768px) {
-<<<<<<< HEAD
-  .c15 {
+  .c7 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c15 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 45px;
-    line-height: 45px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    margin-top: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 }
 
 @media (min-width:1024px) {
   .c7 {
-    line-height: 18px;
-    padding-bottom: 25px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c6 {
-    padding-top: 0px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-=======
-  .c4 {
->>>>>>> chore: Some web test scrubbing
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-<<<<<<< HEAD
-  .c20 {
-    display: none;
-  }
-}
-
-@media (min-width:1024px) {
-  .c8 {
-    display: block;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding-top: 20px;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top-color: #DBDBDB;
-    border-bottom-color: #DBDBDB;
-    border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c2 {
-=======
-  .c4 {
->>>>>>> chore: Some web test scrubbing
     width: 56.2%;
   }
 }
@@ -388,6 +219,10 @@ Array [
 }
 
 .IS1 {
+  color: #333333;
+}
+
+.IS2 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -396,93 +231,80 @@ Array [
   margin-top: 0;
 }
 
-<<<<<<< HEAD
-.IS7 {
-=======
-.IS2 {
-  padding-left: 10px;
-  padding-right: 10px;
+.IS3 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
 }
 
-.IS3 {
->>>>>>> chore: Some web test scrubbing
+.IS4 {
   height: 100%;
   width: 100%;
-}
-
-<<<<<<< HEAD
-.IS8 {
-  position: relative;
-}
-
-.IS9 {
-=======
-.IS4 {
-  position: relative;
 }
 
 .IS5 {
->>>>>>> chore: Some web test scrubbing
+  position: relative;
+}
+
+.IS6 {
   height: 100%;
   width: 100%;
 }
 
-<<<<<<< HEAD
-.IS10 {
-=======
-.IS6 {
->>>>>>> chore: Some web test scrubbing
+.IS7 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-<<<<<<< HEAD
-.IS11 {
-  padding-bottom: 56.25%;
-}
-
-.IS12 {
-  margin: 0;
-}
-
-.IS13 {
-=======
-.IS7 {
-  padding-bottom: 56.25%;
-}
-
 .IS8 {
-  margin: 0;
+  padding-bottom: 56.25%;
 }
 
 .IS9 {
->>>>>>> chore: Some web test scrubbing
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1;
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-  margin-bottom: 30px;
-  padding-horizontal: 10px;
-  padding-vertical: 10px;
-  margin-top: 30px;
+  margin: 0;
 }
-<<<<<<< HEAD
-
-.IS14 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-}
-=======
->>>>>>> chore: Some web test scrubbing
 </style>
 
 <div
     className="c0 S1"
   >
+    <p
+      className="c1 IS2"
+    >
+      <span
+        className="c2 IS1"
+      >
+        T
+      </span>
+      his being Black History Month, last week
+    </p>
+    <div
+      className="c3"
+    >
+      <link />
+      <times-datawrapper />
+    </div>
     <div>
       <div
-        className="c1 S1"
+        className="c4 S1"
+      >
+        <ArticleImage />
+      </div>
+    </div>
+    <div>
+      <div
+        className="c5 S1"
+      >
+        <ArticleImage />
+      </div>
+    </div>
+    <div>
+      <div
+        className="c6 S1"
       >
         <ArticleImage />
       </div>
@@ -490,161 +312,55 @@ Array [
     <Link>
       Some Link
     </Link>
-    <div
-      className="c2 IS2"
+    <p
+      className="c1 IS3"
     >
-      <p
-        className="c3 IS1"
-      >
-        Some content
-      </p>
-    </div>
+      Some content
+    </p>
     <div
-      className="c4 S1"
+      className="c7 S1"
     >
-<<<<<<< HEAD
-      <div>
-        <div
-          className="c13 S1"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <p
-        className="c14 IS6"
-      >
-        Some content
-      </p>
       <div
-        className="c15 S1"
-      >
-        <div
-          className="c16 S1"
-        >
-          <PullQuote />
-        </div>
-      </div>
-      <div
-        className="c13 S1"
-      >
-        <figure
-          className="IS12"
-        >
-          <div
-            className="IS11 S10"
-          >
-            <div
-              className="IS10 S1"
-            >
-              <div
-                className="IS9"
-              >
-                <div
-                  className="IS8"
-                >
-                  <video
-                    className="video-js IS7"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <figcaption>
-            <div
-              className="c17 S1"
-            >
-              <Caption />
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS13"
-      />
-      <div>
-        <div
-          className="c18 S1"
-        >
-          <ArticleImage />
-=======
-      <div
-        className="c5 S1"
+        className="c8 S1"
       >
         <PullQuote />
       </div>
     </div>
     <div
-      className="c1 S1"
+      className="c4 S1"
     >
       <figure
-        className="IS8"
+        className="IS9"
       >
         <div
-          className="IS7 S2"
+          className="IS8 S2"
         >
           <div
-            className="IS6 S1"
+            className="IS7 S1"
           >
             <div
-              className="IS5"
+              className="IS6"
             >
               <div
-                className="IS4"
+                className="IS5"
               >
                 <video
-                  className="video-js IS3"
+                  className="video-js IS4"
                 />
               </div>
             </div>
           </div>
->>>>>>> chore: Some web test scrubbing
         </div>
         <figcaption>
           <div
-            className="c6 S1"
+            className="c9 S1"
           >
             <Caption />
           </div>
         </figcaption>
       </figure>
     </div>
-    <Ad
-      className="IS9"
-    />
-    <div>
-      <div
-        className="c7 S1"
-      >
-        <ArticleImage />
-      </div>
-<<<<<<< HEAD
-      <div>
-        <div
-          className="c19 S1"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c20 S1"
-  >
-    <nav>
-      <ArticleTopics
-        className="IS14"
-=======
-    </div>
-    <div>
-      <div
-        className="c8 S1"
-      >
-        <ArticleImage />
-      </div>
-    </div>
+    <KeyFacts />
   </div>,
   .c0 {
   padding-left: 10px;
@@ -687,7 +403,6 @@ Array [
     <nav>
       <ArticleTopics
         className="IS1"
->>>>>>> chore: Some web test scrubbing
       />
     </nav>
   </div>,

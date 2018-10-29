@@ -50,44 +50,6 @@ addSerializers(
 
 iterator([
   {
-    name: "a lead asset with both resolutions when mounted",
-    test() {
-      const article = articleFixture({ ...testFixture });
-
-      const testRenderer = TestRenderer.create(
-        <Article
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          data={article}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
-      const articleElement = testRenderer.root.find(
-        node => node.type.displayName === "Article"
-      );
-
-      /* not ideal to test implementation but mounting the article is painful
-      and still doesn't help with the ref node */
-      articleElement.instance.node = { clientWidth: 900 };
-      articleElement.instance.componentDidMount();
-
-      const {
-        props: { highResSize, lowResSize }
-      } = testRenderer.root.findByType("Image");
-
-      expect(highResSize).toEqual(900);
-      expect(lowResSize).toEqual(100);
-    }
-  },
-  {
     name: "a low quality image if not viewed",
     test() {
       const article = articleFixture({
