@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
+import { getHeadline, normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
@@ -50,13 +50,13 @@ const renderRow = (analyticsStream, width) => (
     }
 
     case "header": {
-      const { flags, hasVideo, headline, label, standfirst } = rowData.data;
+      const { flags, hasVideo, headline, label, shortHeadline, standfirst } = rowData.data;
       const styles = stylesFactory();
       return (
         <ArticleHeader
           flags={flags}
           hasVideo={hasVideo}
-          headline={headline}
+          headline={getHeadline(headline, shortHeadline)}
           key={rowData.type}
           label={label}
           standfirst={standfirst}

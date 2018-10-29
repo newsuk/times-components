@@ -2,6 +2,7 @@ import React from "react";
 import Link from "@times-components/link";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
+// SHOULD BE IN STYLES
 const responsiveLinkStyles = {
   base: `
       color: ${colours.functional.action};

@@ -8,7 +8,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
-import { getLeadAsset } from "@times-components/utils";
+import { getLeadAsset, getHeadline } from "@times-components/utils";
 import articleTrackingContext from "./article-tracking-context";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import {
@@ -57,6 +57,7 @@ class ArticlePage extends Component {
         publicationName,
         publishedTime,
         section,
+        shortHeadline,
         standfirst,
         topics,
         url
@@ -85,7 +86,7 @@ class ArticlePage extends Component {
               <ArticleHeader
                 flags={flags}
                 hasVideo={hasVideo}
-                headline={headline}
+                headline={getHeadline(headline, shortHeadline)}
                 label={label}
                 standfirst={standfirst}
               />
@@ -137,6 +138,7 @@ const ArticleMainStandard = ({
 
   return (
     <AdComposer adConfig={adConfig}>
+       {/* LAZY LOADING TO COME OUT */}
       <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
         {({ observed, registerNode }) => (
           <ArticlePage

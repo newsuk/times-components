@@ -13,11 +13,6 @@ const append = ({ data, type }, list) => {
 };
 
 const prepareDataForListView = articleData => {
-  const articleMidContainerData = {
-    byline: articleData.byline,
-    publicationName: articleData.publicationName,
-    publishedTime: articleData.publishedTime
-  };
 
   const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
@@ -35,10 +30,6 @@ const prepareDataForListView = articleData => {
   };
 
   const data = [
-    {
-      data: articleMidContainerData,
-      type: "middleContainer"
-    },
     ...articleData.content.map((rowData, index) => {
       const item = {
         data: Object.assign({}, rowData),

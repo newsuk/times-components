@@ -5,6 +5,7 @@ import { breakpoints, spacing } from "@times-components/styleguide";
 
 import Caption from "@times-components/caption";
 
+// SHOULD BE IN STYLES
 const InsetCaptionStyle = styled(View)`
   padding-left: ${spacing(2)};
 
