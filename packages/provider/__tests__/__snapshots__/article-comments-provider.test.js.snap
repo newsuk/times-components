@@ -5,6 +5,7 @@ Object {
   "__typename": "Article",
   "commentCount": 123,
   "commentsEnabled": true,
-  Symbol(id): "$ROOT_QUERY.article({\\"id\\":\\"113e9875-b7bf-4dd7-ac99-dee231bf6e74\\"})",
+  "id": "113e9875-b7bf-4dd7-ac99-dee231bf6e74",
+  Symbol(id): "Article:113e9875-b7bf-4dd7-ac99-dee231bf6e74",
 }
 `;

@@ -15,6 +15,7 @@ const renderComponent = child => {
       params={makeArticleCommentsParams({
         count: 123,
         enabled: true,
+        id,
         variables: () => ({
           id
         })

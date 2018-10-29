@@ -4,6 +4,7 @@ export default ({
   error = () => {},
   enabled = true,
   count = 123,
+  id,
   variables = () => {}
 }) => {
   const queryVariables = variables();
@@ -14,7 +15,8 @@ export default ({
         types: {
           Article: () => ({
             commentCount: count,
-            commentsEnabled: enabled
+            commentsEnabled: enabled,
+            id
           })
         }
       },
