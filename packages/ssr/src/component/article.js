@@ -27,7 +27,7 @@ module.exports = (client, analyticsStream, data) =>
           Context.Provider,
           { value: { makeArticleUrl, theme: { scale, sectionColour } } },
           React.createElement(Article, {
-            adConfig: data.mapArticleToAdConfig(),
+            adConfig: data.mapArticleToAdConfig(article),
             analyticsStream,
             article,
             error,
