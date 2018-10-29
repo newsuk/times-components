@@ -26,6 +26,7 @@ const makeHtml = (
             ${extraStyles}
           </head>
           <body style="margin:0">
+            <script>window.nuk = {graphqlapi: {url: "${process.env.GRAPHQL_ENDPOINT}"}};</script>
             ${initialProps}
             ${initialState}
             <div id="main-container">${markup}</div>
