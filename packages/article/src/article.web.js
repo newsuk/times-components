@@ -17,6 +17,7 @@ import {
   articlePagePropTypes,
   articlePageDefaultProps
 } from "./article-page-prop-types";
+import getHeadline from "./utils";
 
 import {
   MainContainer,
@@ -61,6 +62,7 @@ class Article extends Component {
         publicationName,
         content,
         section,
+        shortHeadline,
         url,
         topics,
         relatedArticleSlice
@@ -113,7 +115,7 @@ class Article extends Component {
               <ArticleHeader
                 flags={flags}
                 hasVideo={hasVideo}
-                headline={headline}
+                headline={getHeadline(headline, shortHeadline)}
                 label={label}
                 standfirst={standfirst}
               />

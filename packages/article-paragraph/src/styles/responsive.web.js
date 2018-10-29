@@ -7,34 +7,26 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const ParagraphContainer = styled.div`
-  padding-left: ${spacing(2)};
-  padding-right: ${spacing(2)};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
-`;
-
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
+  display: block;
   font-family: "${fonts.bodyRegular}";
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
-  margin-bottom: ${spacing(5)};
-  margin-top: 0;
-  display: block;
+  margin: 0 auto ${spacing(5)};
+  padding-right: ${spacing(2)};
+  padding-left: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.body}px;
     line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
   }
 `;
 

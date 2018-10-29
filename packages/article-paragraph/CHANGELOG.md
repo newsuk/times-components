@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.1...@times-components/article-paragraph@0.2.2) (2018-10-29)
+
+
+### Bug Fixes
+
+* remove surrounding divs from p tags in article ([#1440](https://github.com/newsuk/times-components/issues/1440)) ([2ae8c38](https://github.com/newsuk/times-components/commit/2ae8c38))
+
+
+
+
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.0...@times-components/article-paragraph@0.2.1) (2018-10-29)
+
+
+### Bug Fixes
+
+* undefined value in para wrapper ([#1438](https://github.com/newsuk/times-components/issues/1438)) ([f8ac949](https://github.com/newsuk/times-components/commit/f8ac949))
+
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-10-23)
 
