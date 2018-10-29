@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. comments error 1`] = `
+<articleCommentsProvider>
+  <View>
+    <Text>
+      You’re offline
+    </Text>
+    <Text>
+      You must have a network connection to view and post comments. Please check your connection and retry.
+    </Text>
+    <View
+      accessibilityComponentType="button"
+      accessibilityLabel="Retry"
+      accessibilityTraits="button"
+    >
+      <Text
+        title="Retry"
+      >
+        Retry
+      </Text>
+    </View>
+  </View>
+</articleCommentsProvider>
+`;

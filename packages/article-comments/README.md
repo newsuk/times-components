@@ -1,6 +1,6 @@
 # ArticleComments
 
-<!-- Add the description of the package here. -->
+This package provides a comment component for Android & iOS applications. The package has its own provider within the package so it can retrieve comment counts independent from the parent article.
 
 ## Contributing
 
@@ -27,7 +27,6 @@ Testing can be done on each platform individually
 ```
 yarn test:android
 yarn test:ios
-yarn test:web
 ```
 
 Or the tests for all platforms can be run
@@ -37,9 +36,5 @@ yarn test:all
 ```
 
 Visit the official
-
-<!-- Add the storybook link here. -->
-
-## Future
-
-<!-- Add details of future development here. -->
+[storybook](http://components.thetimes.co.uk/)
+to see our available article topics templates.
