@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { shallow } from "enzyme";
+import { iterator } from "@times-components/test-utils";
 import Inner from "./inner";
 import withDebounce, { Debounce } from "../src/debounce";
 
@@ -11,47 +12,6 @@ jest.useFakeTimers();
 jest.advanceTimersByTime = jest.runTimersToTime;
 
 describe("Debounce", () => {
-  it("adds debounceProps to the props passed to the inner component", () => {
-    const component = shallow(
-      <Debounce
-        debounceRender={props => <Inner {...props} />}
-        debounceTimeMs={1000}
-        foo="initialFoo"
-      />
-    );
-    expect(component.find("Inner").props()).toEqual({
-      debouncedProps: {
-        debounceRender: expect.any(Function),
-        debounceTimeMs: 1000,
-        foo: "initialFoo"
-      },
-      debounceTimeMs: 1000,
-      foo: "initialFoo",
-      isDebouncing: false
-    });
-  });
-
-  it("does not change debouncing status if component recieves same props", () => {
-    const component = shallow(
-      <Debounce
-        debounceRender={props => <Inner {...props} />}
-        debounceTimeMs={1000}
-        foo="initialFoo"
-      />
-    );
-    component.setProps({ foo: "initialFoo" });
-    expect(component.find("Inner").props()).toEqual({
-      debouncedProps: {
-        debounceRender: expect.any(Function),
-        debounceTimeMs: 1000,
-        foo: "initialFoo"
-      },
-      debounceTimeMs: 1000,
-      foo: "initialFoo",
-      isDebouncing: false
-    });
-  });
-
   const testUpdateInnerPropsAfterDelay = delay => {
     const component = shallow(
       <Debounce
@@ -83,63 +43,133 @@ describe("Debounce", () => {
     expect(innerProps()).toMatchSnapshot();
   };
 
-  it("immediately updates props, but delays update of debouncedProps", () => {
-    testUpdateInnerPropsAfterDelay(1000);
-  });
+  iterator([
+    {
+      name: "adds debounceProps to the props passed to the inner component",
+      test() {
+        const component = shallow(
+          <Debounce
+            debounceRender={props => <Inner {...props} />}
+            debounceTimeMs={1000}
+            foo="initialFoo"
+          />
+        );
+        expect(component.find("Inner").props()).toEqual({
+          debouncedProps: {
+            debounceRender: expect.any(Function),
+            debounceTimeMs: 1000,
+            foo: "initialFoo"
+          },
+          debounceTimeMs: 1000,
+          foo: "initialFoo",
+          isDebouncing: false
+        });
+      }
+    },
 
-  it("handles different debounce delays", () => {
-    testUpdateInnerPropsAfterDelay(2500);
-  });
+    {
+      name:
+        "does not change debouncing status if component recieves same props",
+      test() {
+        const component = shallow(
+          <Debounce
+            debounceRender={props => <Inner {...props} />}
+            debounceTimeMs={1000}
+            foo="initialFoo"
+          />
+        );
+        component.setProps({ foo: "initialFoo" });
+        expect(component.find("Inner").props()).toEqual({
+          debouncedProps: {
+            debounceRender: expect.any(Function),
+            debounceTimeMs: 1000,
+            foo: "initialFoo"
+          },
+          debounceTimeMs: 1000,
+          foo: "initialFoo",
+          isDebouncing: false
+        });
+      }
+    },
 
-  it("handles zero debounce delay", () => {
-    testUpdateInnerPropsAfterDelay(0);
-  });
+    {
+      name: "immediately updates props, but delays update of debouncedProps",
+      test() {
+        testUpdateInnerPropsAfterDelay(1000);
+      }
+    },
 
-  it("does not atttempt to update props after unmount", () => {
-    const component = shallow(
-      <Debounce
-        debounceRender={props => <Inner {...props} />}
-        debounceTimeMs={1000}
-        foo="initialFoo"
-      />
-    );
-    const setState = jest.spyOn(component.instance(), "handleDebounceTimer");
+    {
+      name: "handles different debounce delays",
+      test() {
+        testUpdateInnerPropsAfterDelay(2500);
+      }
+    },
 
-    expect(setState.mock.calls.length).toEqual(0);
+    {
+      name: "handles zero debounce delay",
+      test() {
+        testUpdateInnerPropsAfterDelay(0);
+      }
+    },
 
-    component.setProps({ foo: "updatedFoo1" });
-    jest.advanceTimersByTime(1200);
-    expect(setState.mock.calls.length).toEqual(1);
+    {
+      name: "does not attempt to update props after unmount",
+      test() {
+        const component = shallow(
+          <Debounce
+            debounceRender={props => <Inner {...props} />}
+            debounceTimeMs={1000}
+            foo="initialFoo"
+          />
+        );
+        const setState = jest.spyOn(
+          component.instance(),
+          "handleDebounceTimer"
+        );
 
-    component.setProps({ foo: "updatedFoo2" });
-    component.unmount();
-    jest.advanceTimersByTime(1200);
-    expect(setState.mock.calls.length).toEqual(1);
-  });
+        expect(setState.mock.calls.length).toEqual(0);
+
+        component.setProps({ foo: "updatedFoo1" });
+        jest.advanceTimersByTime(1200);
+        expect(setState.mock.calls.length).toEqual(1);
+
+        component.setProps({ foo: "updatedFoo2" });
+        component.unmount();
+        jest.advanceTimersByTime(1200);
+        expect(setState.mock.calls.length).toEqual(1);
+      }
+    }
+  ]);
 
   describe("withDebounce", () => {
-    it("has appropriate static members on the outer component", () => {
-      const InnerWithStatics = props => props.foo;
-      InnerWithStatics.staticMember = "staticMemberValue";
-      InnerWithStatics.propTypes = {
-        debouncedProps: PropTypes.shape({
-          foo: PropTypes.string
-        }).isRequired,
-        foo: PropTypes.string
-      };
-      InnerWithStatics.defaultProps = {
-        foo: ""
-      };
-      InnerWithStatics.displayName = "InnerWithStatics";
+    iterator([
+      {
+        name: "has appropriate static members on the outer component",
+        test() {
+          const InnerWithStatics = props => props.foo;
+          InnerWithStatics.staticMember = "staticMemberValue";
+          InnerWithStatics.propTypes = {
+            debouncedProps: PropTypes.shape({
+              foo: PropTypes.string
+            }).isRequired,
+            foo: PropTypes.string
+          };
+          InnerWithStatics.defaultProps = {
+            foo: ""
+          };
+          InnerWithStatics.displayName = "InnerWithStatics";
 
-      const Outer = withDebounce(InnerWithStatics);
-      expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
-      expect(Outer.staticMember).toEqual("staticMemberValue");
-      expect(Outer.propTypes).toEqual({
-        debounceTimeMs: PropTypes.number.isRequired,
-        foo: PropTypes.string
-      }); // debounceTimeMs removed
-      expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
-    });
+          const Outer = withDebounce(InnerWithStatics);
+          expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
+          expect(Outer.staticMember).toEqual("staticMemberValue");
+          expect(Outer.propTypes).toEqual({
+            debounceTimeMs: PropTypes.number.isRequired,
+            foo: PropTypes.string
+          }); // debounceTimeMs removed
+          expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
+        }
+      }
+    ]);
   });
 });
