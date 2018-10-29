@@ -11,7 +11,7 @@ const makeArticleUrl = require("../lib/make-url");
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
-module.exports = (client, analyticsStream, id, adConfig) =>
+module.exports = (client, analyticsStream, data) =>
   React.createElement(
     ApolloProvider,
     { client },
@@ -19,15 +19,15 @@ module.exports = (client, analyticsStream, id, adConfig) =>
       ArticleProvider,
       {
         analyticsStream,
-        debounceTimeMs: 0,
-        id
+        debounceTimeMs: data.debounceTimeMs,
+        id: data.id
       },
       ({ article, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
           { value: { makeArticleUrl, theme: { scale, sectionColour } } },
           React.createElement(Article, {
-            adConfig,
+            adConfig: data.mapArticleToAdConfig(),
             analyticsStream,
             article,
             error,

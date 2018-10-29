@@ -1,7 +1,8 @@
 const article = require("../component/article");
 const runServer = require("../lib/run-server");
+const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
 
-module.exports = ({ debounceTimeMs, headers, id, makeArticleUrl, uri }) => {
+module.exports = ({ debounceTimeMs = 0, headers, id, makeArticleUrl, uri }) => {
   const options = {
     client: {
       headers,
@@ -10,7 +11,8 @@ module.exports = ({ debounceTimeMs, headers, id, makeArticleUrl, uri }) => {
     data: {
       debounceTimeMs,
       id,
-      makeArticleUrl
+      makeArticleUrl,
+      mapArticleToAdConfig: defaultAdConfig
     },
     name: "article"
   };

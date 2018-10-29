@@ -54,7 +54,7 @@ const renderData = App =>
 module.exports = async (component, options) => {
   const client = makeClient(options.client);
   const analyticsStream = () => {};
-  const App = component(client, analyticsStream, options);
+  const App = component(client, analyticsStream, options.data);
 
   const { extraStyles, markup, styles } = await renderData(App);
 

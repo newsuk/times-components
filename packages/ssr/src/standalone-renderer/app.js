@@ -52,24 +52,24 @@ server.get("/article/:id", (request, response) => {
   const {
     params: { id }
   } = request;
+  const uri = process.env.GRAPHQL_ENDPOINT;
+  const headers = process.env.GRAPHQL_TOKEN
+    ? {
+        "nuk-tpatoken": process.env.GRAPHQL_TOKEN
+      }
+    : null;
+
   ssr
-    .article(id)
-    .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
+    .article({ headers, id, makeArticleUrl, uri })
+    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
-        makeHtml(
-          initialState,
-          {
-            adConfig,
-            id
-          },
-          {
-            bundleName: "article",
-            extraStyles,
-            markup,
-            styles,
-            title: "Article"
-          }
-        )
+        makeHtml(initialState, initialProps, {
+          bundleName: "article",
+          extraStyles,
+          markup,
+          styles,
+          title: "Article"
+        })
       )
     );
 });
