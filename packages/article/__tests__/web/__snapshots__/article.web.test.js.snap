@@ -143,11 +143,9 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       >
         Some Link
       </Link>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
       <div>
         <div>
           <PullQuote
@@ -341,11 +339,9 @@ exports[`3. an article with a video as the lead asset 1`] = `
       </div>
     </header>
     <div>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
     </div>
   </div>
   <aside
@@ -405,11 +401,9 @@ exports[`4. an article with no lead asset 1`] = `
       <div />
     </header>
     <div>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
     </div>
   </div>
   <aside
@@ -469,11 +463,9 @@ exports[`5. an article with no headline falls back to use shortheadline 1`] = `
       <div />
     </header>
     <div>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
     </div>
   </div>
   <aside
@@ -603,11 +595,9 @@ exports[`8. an article with updated byline 1`] = `
       <div />
     </header>
     <div>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
     </div>
   </div>
   <aside
@@ -691,11 +681,9 @@ exports[`8. an article with updated byline 2`] = `
       <div />
     </header>
     <div>
-      <div>
-        <p>
-          Some content
-        </p>
-      </div>
+      <p>
+        Some content
+      </p>
     </div>
   </div>
   <aside
