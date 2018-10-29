@@ -45,31 +45,31 @@ const toNumber = input => {
   return parsed;
 };
 
-// server.get("/article/:id", (request, response) => {
-//   const {
-//     params: { id }
-//   } = request;
-//   ssr
-//     .article(id)
-//     .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
-//       response.send(
-//         makeHtml(
-//           initialState,
-//           {
-//             adConfig,
-//             id
-//           },
-//           {
-//             bundleName: "article",
-//             extraStyles,
-//             markup,
-//             styles,
-//             title: "Article"
-//           }
-//         )
-//       )
-//     );
-// });
+server.get("/article/:id", (request, response) => {
+  const {
+    params: { id }
+  } = request;
+  ssr
+    .article(id)
+    .then(({ adConfig, extraStyles, initialState, markup, styles }) =>
+      response.send(
+        makeHtml(
+          initialState,
+          {
+            adConfig,
+            id
+          },
+          {
+            bundleName: "article",
+            extraStyles,
+            markup,
+            styles,
+            title: "Article"
+          }
+        )
+      )
+    );
+});
 
 server.get("/profile/:slug", (request, response) => {
   const {
@@ -94,34 +94,34 @@ server.get("/profile/:slug", (request, response) => {
     );
 });
 
-// server.get("/topic/:slug", (request, response) => {
-//   const {
-//     params: { slug },
-//     query: { page }
-//   } = request;
-//   const pageNum = toNumber(page) || 1;
+server.get("/topic/:slug", (request, response) => {
+  const {
+    params: { slug },
+    query: { page }
+  } = request;
+  const pageNum = toNumber(page) || 1;
 
-//   ssr
-//     .topic(slug, pageNum)
-//     .then(({ extraStyles, initialState, markup, styles }) =>
-//       response.send(
-//         makeHtml(
-//           initialState,
-//           {
-//             page: pageNum,
-//             slug
-//           },
-//           {
-//             bundleName: "topic",
-//             extraStyles,
-//             markup,
-//             styles,
-//             title: slug
-//           }
-//         )
-//       )
-//     );
-// });
+  ssr
+    .topic(slug, pageNum)
+    .then(({ extraStyles, initialState, markup, styles }) =>
+      response.send(
+        makeHtml(
+          initialState,
+          {
+            page: pageNum,
+            slug
+          },
+          {
+            bundleName: "topic",
+            extraStyles,
+            markup,
+            styles,
+            title: slug
+          }
+        )
+      )
+    );
+});
 
 const App = server.listen(port, () =>
   console.log(`Serving at http://localhost:${port}`)
