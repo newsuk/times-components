@@ -58,5 +58,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/ArticleComments"
+  name: "Composed/Article Comments"
 };
