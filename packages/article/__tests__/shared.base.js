@@ -1,16 +1,12 @@
 /* eslint-disable react/no-multi-comp */
 
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
-import articleFixture, {
-  testFixture,
-  videoLeadAsset
-} from "../fixtures/full-article";
+import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
@@ -34,40 +30,71 @@ const emptyArticle = {
   topics: null
 };
 
+const renderArticle = data => (
+  // <AdComposer adConfig={articleAdConfig}>
+  <Context.Provider
+    value={{
+      makeArticleUrl,
+      theme: { scale: scales.medium, sectionColour: "#FF0000" }
+    }}
+  >
+    <Article
+      analyticsStream={() => {}}
+      data={data}
+      onAuthorPress={() => {}}
+      onCommentGuidelinesPress={() => {}}
+      onCommentsPress={() => {}}
+      onLinkPress={() => {}}
+      onRelatedArticlePress={() => {}}
+      onTopicPress={() => {}}
+      onTwitterLinkPress={() => {}}
+    />
+  </Context.Provider>
+  // </AdComposer>
+);
+
 export const snapshotTests = renderComponent => [
   {
-    name: "an error",
-    test() {
-      const props = {
-        error: { message: "An example error." }
-      };
-
-      const output = renderComponent(
-        <Article
-          {...props}
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "a full article with an image as the lead asset",
+    name: "a full article with all content items",
     test() {
       const article = articleFixture({
         ...testFixture,
         content: [
+          {
+            children: [
+              {
+                attributes: {
+                  value: "T"
+                },
+                children: [],
+                name: "dropCap"
+              },
+              {
+                attributes: {
+                  value: "his being Black History Month, last week"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
+            name: "paragraph"
+          },
+          {
+            attributes: {
+              display: "secondary",
+              element: {
+                attributes: {
+                  "chart-id": "csmgb"
+                },
+                value: "times-datawrapper"
+              },
+              id: "d2f83305-d558-4f78-f582-32115c659355",
+              url:
+                "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+            },
+            children: [],
+            name: "interactive"
+          },
           {
             attributes: {
               caption: "An image caption",
@@ -75,6 +102,28 @@ export const snapshotTests = renderComponent => [
               display: "primary",
               ratio: "1500:1000",
               url: "https://image.io"
+            },
+            children: [],
+            name: "image"
+          },
+          {
+            attributes: {
+              caption: "A secondary image caption",
+              credits: "The secondary image credits",
+              display: "secondary",
+              ratio: "1500:1000",
+              url: "https://image.io/secondary"
+            },
+            children: [],
+            name: "image"
+          },
+          {
+            attributes: {
+              caption: "An inline image caption",
+              credits: "The inline image credits",
+              display: "inline",
+              ratio: "1500:1000",
+              url: "https://image.io/inline"
             },
             children: [],
             name: "image"
@@ -133,85 +182,127 @@ export const snapshotTests = renderComponent => [
             },
             children: [],
             name: "video"
+          },
+          {
+            attributes: {
+              title: "Example title"
+            },
+            children: [
+              {
+                children: [
+                  {
+                    children: [
+                      {
+                        attributes: {
+                          value: "Example bullet text"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "listElement"
+                  },
+                  {
+                    children: [
+                      {
+                        attributes: {
+                          value: "An example "
+                        },
+                        children: [],
+                        name: "text"
+                      },
+                      {
+                        attributes: {
+                          href: "https://example.io",
+                          target: "_blank",
+                          type: "topic"
+                        },
+                        children: [
+                          {
+                            attributes: {
+                              value: "link"
+                            },
+                            children: [],
+                            name: "text"
+                          }
+                        ],
+                        name: "link"
+                      }
+                    ],
+                    name: "listElement"
+                  },
+                  {
+                    children: [
+                      {
+                        attributes: {
+                          value: "More example text."
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "listElement"
+                  },
+                  {
+                    children: [
+                      {
+                        attributes: {
+                          value: "Example text "
+                        },
+                        children: [],
+                        name: "text"
+                      },
+                      {
+                        attributes: {},
+                        children: [
+                          {
+                            attributes: {
+                              value: "this is bold "
+                            },
+                            children: [],
+                            name: "text"
+                          }
+                        ],
+                        name: "bold"
+                      },
+                      {
+                        attributes: {},
+                        children: [
+                          {
+                            attributes: {
+                              value: "this is in italics."
+                            },
+                            children: [],
+                            name: "text"
+                          }
+                        ],
+                        name: "italic"
+                      }
+                    ],
+                    name: "listElement"
+                  }
+                ],
+                name: "unorderedList"
+              }
+            ],
+            name: "keyFacts"
           }
         ]
       });
 
-      const output = renderComponent(
-        <Article
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={article}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
+      const output = renderComponent(renderArticle(article));
 
       expect(output).toMatchSnapshot();
     }
   },
   {
-    name: "an article with a video as the lead asset",
+    name: "an empty article",
     test() {
-      const output = renderComponent(
-        <Article
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={articleFixture({
-            ...testFixture,
-            ...emptyArticle,
-            hasVideo: true,
-            leadAsset: videoLeadAsset({
-              brightcovePolicyKey: "1.2.3.4"
-            })
-          })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
+      const article = articleFixture(emptyArticle);
+      const output = renderComponent(renderArticle(article));
       expect(output).toMatchSnapshot();
     }
-  },
-  {
-    name: "an article with no lead asset",
-    test() {
-      const output = renderComponent(
-        <Article
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={articleFixture({
-            ...testFixture,
-            ...emptyArticle
-          })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
-      expect(output).toMatchSnapshot();
-    }
+<<<<<<< HEAD
   },
   {
     name: "an article with no headline falls back to use shortHeadline",
@@ -508,6 +599,8 @@ const negativeTests = [
       expect(crop169).toEqual(null);
       expect(crop32).not.toEqual(null);
     }
+=======
+>>>>>>> chore: Some web test scrubbing
   }
 ];
 
@@ -528,8 +621,7 @@ export default (renderComponent, platformTests = []) => {
 
   iterator([
     ...snapshotTests(renderComponent),
-    ...platformTests,
-    ...negativeTests
+    ...platformTests
   ]);
 };
 

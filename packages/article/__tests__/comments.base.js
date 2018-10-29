@@ -19,30 +19,19 @@ const emptyArticle = {
 export default () =>
   iterator([
     {
-      name: "a secondary image",
+      name: "a full article with enabled comments",
       test() {
-        const output = TestRenderer.create(
+        const article = articleFixture({
+          ...testFixture,
+          ...emptyArticle
+        });
+
+        const testInstance = TestRenderer.create(
           <Article
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            data={articleFixture({
-              ...testFixture,
-              ...emptyArticle,
-              content: [
-                {
-                  attributes: {
-                    caption: "A Caption",
-                    credits: "Some Credits",
-                    display: "secondary",
-                    ratio: "3:2",
-                    url: "https://image-2.io"
-                  },
-                  children: [],
-                  name: "image"
-                }
-              ]
-            })}
+            data={article}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
@@ -54,34 +43,24 @@ export default () =>
           />
         );
 
-        expect(output).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
-      name: "an inline image",
+      name: "a full article with disabled comments",
       test() {
-        const output = TestRenderer.create(
+        const article = articleFixture({
+          ...testFixture,
+          ...emptyArticle,
+          commentsEnabled: false
+        });
+
+        const testInstance = TestRenderer.create(
           <Article
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            data={articleFixture({
-              ...testFixture,
-              ...emptyArticle,
-              content: [
-                {
-                  attributes: {
-                    caption: "A Caption",
-                    credits: "Some Credits",
-                    display: "inline",
-                    ratio: "9:4",
-                    url: "https://image-inline.io"
-                  },
-                  children: [],
-                  name: "image"
-                }
-              ]
-            })}
+            data={article}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
@@ -93,7 +72,7 @@ export default () =>
           />
         );
 
-        expect(output).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ]);

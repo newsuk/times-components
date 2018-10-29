@@ -9,10 +9,7 @@ const ShowTopics = ({ topics }) => {
     return (
       <TopicsContainer>
         <nav>
-          <ArticleTopics
-            style={styles.topicsContainer}
-            topics={topics}
-          />
+          <ArticleTopics style={styles.topicsContainer} topics={topics} />
         </nav>
       </TopicsContainer>
     );

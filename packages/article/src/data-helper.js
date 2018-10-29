@@ -1,17 +1,3 @@
-const prepend = ({ data, type }, list) => {
-  if (!data) {
-    return list;
-  }
-
-  return [
-    {
-      data,
-      type
-    },
-    ...list
-  ];
-};
-
 const append = ({ data, type }, list) => {
   if (!data) {
     return list;
@@ -79,17 +65,17 @@ const prepareDataForListView = articleData => {
   ];
 
   return append(
+    {
+      data: commentsData,
+      type: "comments"
+    },
+    append(
       {
-        data: commentsData,
-        type: "comments"
+        data: relatedArticleSliceData,
+        type: "relatedArticleSlice"
       },
-      append(
-        {
-          data: relatedArticleSliceData,
-          type: "relatedArticleSlice"
-        },
-        data
-      )
+      data
+    )
   );
 };
 

@@ -58,7 +58,7 @@ iterator([
         <Article
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={article}
+          data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
@@ -111,7 +111,7 @@ iterator([
         <Article
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={article}
+          data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
@@ -168,7 +168,7 @@ iterator([
         <Article
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={article}
+          data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
@@ -204,7 +204,7 @@ iterator([
         <Article
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={article}
+          data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}

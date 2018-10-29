@@ -20,7 +20,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = (analyticsStream) => (
+const renderRow = analyticsStream => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -115,7 +115,11 @@ class Article extends Component {
   render() {
     return (
       <ArticleContent
+<<<<<<< HEAD
         data={articleData}
+=======
+        data={this.state.dataSource}
+>>>>>>> chore: Some web test scrubbing
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
         onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
@@ -125,9 +129,12 @@ class Article extends Component {
         onTopicPress={this.props.onTopicPress}
         onTwitterLinkPress={this.props.onTwitterLinkPress}
         onVideoPress={this.props.onVideoPress}
+<<<<<<< HEAD
         onViewableItemsChanged={
           this.props.onViewed ? this.onViewableItemsChanged : null
         }
+=======
+>>>>>>> chore: Some web test scrubbing
         pageSize={listViewPageSize}
         renderRow={renderRow(this.props.analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
@@ -143,7 +150,7 @@ Article.propTypes = {
   onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 Article.defaultProps = articlePageDefaultProps;
 

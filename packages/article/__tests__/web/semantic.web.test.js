@@ -127,7 +127,7 @@ const tests = [
           <Article
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={article}
+            data={article}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}

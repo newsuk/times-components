@@ -153,7 +153,7 @@ export default () => {
         {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
-        article={article}
+        data={article}
         onAuthorPress={() => {}}
         onLinkPress={() => {}}
         onRelatedArticlePress={() => {}}

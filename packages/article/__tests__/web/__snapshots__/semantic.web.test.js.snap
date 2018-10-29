@@ -1,6 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a full article with an image as the lead asset 1`] = `
+<<<<<<< HEAD
 <article>
   <svg
     height={250}
@@ -30,57 +31,79 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       aria-level="2"
       data-testid="standfirst"
       role="heading"
+=======
+Array [
+  Array [
+    <img
+      alt=""
+      src="https://image.io?resize=100"
+    />,
+    "An image caption",
+    "THE IMAGE CREDITS",
+    <a
+      href="https://link.io"
+      target="_blank"
+>>>>>>> chore: Some web test scrubbing
     >
-      Some Standfirst
-    </h2>
-    <svg
-      aria-label="[title]"
-      height={8}
-      role="img"
-      viewBox="0 0 20 20"
-      width={8}
+      Some Link
+    </a>,
+    <p>
+      Some content
+    </p>,
+    <blockquote
+      url="https://twitter.com/@AName"
     >
+<<<<<<< HEAD
       <title>
         Diamond Icon
       </title>
       <g>
+=======
+      “
+      A pull quote
+      <cite>
+        AName
+      </cite>
+      <svg
+        aria-label="[title]"
+        height={10}
+        role="img"
+        viewBox="-354.2 -279.4 750 600"
+        width={12}
+      >
+        <title>
+          Twitter Icon
+        </title>
+>>>>>>> chore: Some web test scrubbing
         <path
-          d="90928a4d6e9b702222e7187e68c282b7"
+          d="ebf51b280a2c9ea0e632fdbf86606550"
+          fill="#006699"
         />
-      </g>
-    </svg>
-    new
-    <span>
-      <span>
-        Some byline
-      </span>
-    </span>
-    <span>
-      <time
-        dateTime="2015-03-13T18:54:58.000Z"
-      >
-        Friday March 13 2015, 6:54pm
-      </time>
-      <span>
-        , The Times
-      </span>
-    </span>
-    <nav>
+      </svg>
       <a
-        href="/topic/topic"
+        href="https://twitter.com/@AName"
+        rel=" noopener noreferrer"
+        role="link"
+        target="_blank"
       >
-        Topic
+        @AName
       </a>
-    </nav>
+    </blockquote>,
     <figure>
-      <img
-        alt=""
-        src="https://crop169.io?resize=100"
+      <video
+        controls={true}
+        data-account="57838016001"
+        data-application-id={true}
+        data-embed="default"
+        data-player="default"
+        data-video-id="4084164751001"
+        id="4084164751001-57838016001-1"
+        poster="https://image.io"
       />
       <figcaption>
-        Some Caption
-        SOME CREDITS
+        This is video caption
       </figcaption>
+<<<<<<< HEAD
     </figure>
   </header>
   <img
@@ -144,13 +167,17 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       This is video caption
     </figcaption>
   </figure>
+=======
+    </figure>,
+  ],
+>>>>>>> chore: Some web test scrubbing
   <nav>
     <a
       href="/topic/topic"
     >
       Topic
     </a>
-  </nav>
+  </nav>,
   <aside
     id="related-articles"
   >
@@ -180,6 +207,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         March 23 2015, 7:39pm
       </time>
     </a>
+<<<<<<< HEAD
   </aside>
   <svg
     height={1}
@@ -230,4 +258,8 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   </svg>
   ADVERTISEMENT
 </article>
+=======
+  </aside>,
+]
+>>>>>>> chore: Some web test scrubbing
 `;

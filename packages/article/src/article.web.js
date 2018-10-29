@@ -6,39 +6,29 @@ import ArticleBody from "./article-body/article-body";
 import ArticleTopics from "./article-topics";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 
-import {
-  BodyContainer,
-} from "./styles/responsive";
+import { BodyContainer } from "./styles/responsive";
 
-const Article = (props) => {
-    const {
-      analyticsStream,
-      data: {
-        content,
-        section,
-        url,
-        topics,
-        relatedArticleSlice
-      },
-      observed,
-      registerNode
-    } = props;
+const Article = props => {
+  const {
+    analyticsStream,
+    data: { content, section, url, topics, relatedArticleSlice }
+  } = props;
 
-    // eslint-disable-next-line react/prop-types
-    const displayRelatedArticles = ({ isVisible }) =>
-      relatedArticleSlice ? (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={isVisible}
-          slice={{
-            ...relatedArticleSlice,
-            sliceName: relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
-          }}
-        />
-      ) : null;
+  // eslint-disable-next-line react/prop-types
+  const displayRelatedArticles = ({ isVisible }) =>
+    relatedArticleSlice ? (
+      <RelatedArticles
+        analyticsStream={analyticsStream}
+        isVisible={isVisible}
+        slice={{
+          ...relatedArticleSlice,
+          sliceName: relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
+        }}
+      />
+    ) : null;
 
-    return (
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+  return (
+    <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
       {({ observed, registerNode }) => (
         <Fragment>
           <BodyContainer>
@@ -58,8 +48,8 @@ const Article = (props) => {
           </aside>
         </Fragment>
       )}
-      </LazyLoad>
-    );
+    </LazyLoad>
+  );
 };
 
 Article.propTypes = articlePropTypes;

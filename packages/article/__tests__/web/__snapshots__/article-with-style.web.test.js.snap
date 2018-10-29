@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
+<<<<<<< HEAD
 .c14 {
+=======
+Array [
+  .c2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c3 {
+>>>>>>> chore: Some web test scrubbing
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,19 +22,15 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
+<<<<<<< HEAD
 .c17 {
+=======
+.c6 {
+>>>>>>> chore: Some web test scrubbing
   padding-left: 10px;
 }
 
-.c10 {
-  margin-bottom: 10px;
-}
-
-.c11 {
-  display: none;
-}
-
-.c13 {
+.c1 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -32,7 +38,11 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .c18 {
+=======
+.c7 {
+>>>>>>> chore: Some web test scrubbing
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -45,7 +55,11 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .c19 {
+=======
+.c8 {
+>>>>>>> chore: Some web test scrubbing
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -59,12 +73,17 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
+<<<<<<< HEAD
 .c16 {
+=======
+.c5 {
+>>>>>>> chore: Some web test scrubbing
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .c15 {
   display: block;
 }
@@ -94,43 +113,26 @@ exports[`full article with style 1`] = `
 
 .c8 {
   display: none;
+=======
+.c4 {
+  display: block;
+>>>>>>> chore: Some web test scrubbing
 }
 
 .c0 {
-  display: none;
-}
-
-.c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.c5 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c9 {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.c12 {
   display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c14 {
     font-size: 18px;
     line-height: 30px;
+=======
+  .c2 {
+    width: 80.8%;
+    margin: 0 auto;
+>>>>>>> chore: Some web test scrubbing
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -138,55 +140,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c2 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c17 {
+=======
+  .c3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+>>>>>>> chore: Some web test scrubbing
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c10 {
-    width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
+  .c1 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c1 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c18 {
+=======
+  .c7 {
+>>>>>>> chore: Some web test scrubbing
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -195,13 +189,21 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+<<<<<<< HEAD
   .c18 {
+=======
+  .c7 {
+>>>>>>> chore: Some web test scrubbing
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c19 {
+=======
+  .c8 {
+>>>>>>> chore: Some web test scrubbing
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -210,13 +212,21 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+<<<<<<< HEAD
   .c19 {
+=======
+  .c8 {
+>>>>>>> chore: Some web test scrubbing
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c16 {
+=======
+  .c5 {
+>>>>>>> chore: Some web test scrubbing
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -228,6 +238,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
   .c15 {
     width: 80.8%;
     margin: 0 auto;
@@ -285,6 +296,9 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c20 {
+=======
+  .c4 {
+>>>>>>> chore: Some web test scrubbing
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -293,6 +307,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+<<<<<<< HEAD
   .c20 {
     display: none;
   }
@@ -337,27 +352,10 @@ exports[`full article with style 1`] = `
 
 @media (min-width:1024px) {
   .c2 {
+=======
+  .c4 {
+>>>>>>> chore: Some web test scrubbing
     width: 56.2%;
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    left: 0;
-    width: 20.8333%;
-    z-index: 1;
   }
 }
 
@@ -377,93 +375,6 @@ exports[`full article with style 1`] = `
 }
 
 .S2 {
-  font-weight: 400;
-  line-height: 14px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.S4 {
-  font-weight: inherit;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-bottom: 7px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S5 {
-  font-weight: inherit;
-  line-height: 26px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-}
-
-.S6 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S7 {
-  font-weight: inherit;
-  line-height: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S8 {
-  font-weight: inherit;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.S9 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  padding-bottom: 0px;
-  padding-top: 9px;
-}
-
-.S10 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -477,28 +388,6 @@ exports[`full article with style 1`] = `
 }
 
 .IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  justify-content: flex-start;
-}
-
-.IS3 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS4 {
-  padding-bottom: 56.25%;
-}
-
-.IS5 {
-  margin: 0;
-}
-
-.IS6 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -507,26 +396,48 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 .IS7 {
+=======
+.IS2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.IS3 {
+>>>>>>> chore: Some web test scrubbing
   height: 100%;
   width: 100%;
 }
 
+<<<<<<< HEAD
 .IS8 {
   position: relative;
 }
 
 .IS9 {
+=======
+.IS4 {
+  position: relative;
+}
+
+.IS5 {
+>>>>>>> chore: Some web test scrubbing
   height: 100%;
   width: 100%;
 }
 
+<<<<<<< HEAD
 .IS10 {
+=======
+.IS6 {
+>>>>>>> chore: Some web test scrubbing
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
+<<<<<<< HEAD
 .IS11 {
   padding-bottom: 56.25%;
 }
@@ -536,6 +447,17 @@ exports[`full article with style 1`] = `
 }
 
 .IS13 {
+=======
+.IS7 {
+  padding-bottom: 56.25%;
+}
+
+.IS8 {
+  margin: 0;
+}
+
+.IS9 {
+>>>>>>> chore: Some web test scrubbing
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -545,128 +467,42 @@ exports[`full article with style 1`] = `
   padding-vertical: 10px;
   margin-top: 30px;
 }
+<<<<<<< HEAD
 
 .IS14 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
+=======
+>>>>>>> chore: Some web test scrubbing
 </style>
 
-<article>
-  <div
+<div
     className="c0 S1"
   >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 S1"
-  >
-    <header>
+    <div>
       <div
-        className="c2 S1"
+        className="c1 S1"
       >
-        <div
-          className="S1"
-        >
-          <div
-            className="c3 S3"
-          >
-            <div
-              className="S2"
-            >
-              SOME LABEL
-            </div>
-          </div>
-          <h1
-            className="c4 S4"
-          >
-            Some Headline
-          </h1>
-          <h2
-            className="S5"
-          >
-            Some Standfirst
-          </h2>
-          <div
-            className="S6"
-          >
-            <div
-              className="S1"
-            >
-              <NewArticleFlag />
-            </div>
-          </div>
-        </div>
+        <ArticleImage />
       </div>
-      <div
-        className="c5 S1"
-      >
-        <div
-          className="c6 S9"
-        >
-          <div
-            className="c7 S8"
-          >
-            <span
-              className="S7"
-            >
-              <ArticleBylineWithLinks />
-            </span>
-          </div>
-          <div
-            className="c7 S8"
-          >
-            <span
-              className="S7"
-            >
-              <DatePublication />
-            </span>
-          </div>
-        </div>
-        <div
-          className="c8 S1"
-        >
-          <nav>
-            <ArticleTopics
-              className="IS2"
-            />
-          </nav>
-        </div>
-      </div>
-      <div
-        className="c9 S1"
-      >
-        <div
-          className="c10 S1"
-        >
-          <figure
-            className="IS5"
-          >
-            <div
-              className="IS4 S10"
-            >
-              <div
-                className="IS3 S1"
-              >
-                <Image />
-              </div>
-            </div>
-            <div
-              className="c11 S1"
-            >
-              <figcaption>
-                <Caption />
-              </figcaption>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </header>
+    </div>
+    <Link>
+      Some Link
+    </Link>
     <div
-      className="c12 S1"
+      className="c2 IS2"
     >
+      <p
+        className="c3 IS1"
+      >
+        Some content
+      </p>
+    </div>
+    <div
+      className="c4 S1"
+    >
+<<<<<<< HEAD
       <div>
         <div
           className="c13 S1"
@@ -733,8 +569,58 @@ exports[`full article with style 1`] = `
           className="c18 S1"
         >
           <ArticleImage />
-        </div>
+=======
+      <div
+        className="c5 S1"
+      >
+        <PullQuote />
       </div>
+    </div>
+    <div
+      className="c1 S1"
+    >
+      <figure
+        className="IS8"
+      >
+        <div
+          className="IS7 S2"
+        >
+          <div
+            className="IS6 S1"
+          >
+            <div
+              className="IS5"
+            >
+              <div
+                className="IS4"
+              >
+                <video
+                  className="video-js IS3"
+                />
+              </div>
+            </div>
+          </div>
+>>>>>>> chore: Some web test scrubbing
+        </div>
+        <figcaption>
+          <div
+            className="c6 S1"
+          >
+            <Caption />
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    <Ad
+      className="IS9"
+    />
+    <div>
+      <div
+        className="c7 S1"
+      >
+        <ArticleImage />
+      </div>
+<<<<<<< HEAD
       <div>
         <div
           className="c19 S1"
@@ -750,14 +636,63 @@ exports[`full article with style 1`] = `
     <nav>
       <ArticleTopics
         className="IS14"
+=======
+    </div>
+    <div>
+      <div
+        className="c8 S1"
+      >
+        <ArticleImage />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<style>
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.IS1 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+}
+</style>
+
+<div
+    className="c0 S1"
+  >
+    <nav>
+      <ArticleTopics
+        className="IS1"
+>>>>>>> chore: Some web test scrubbing
       />
     </nav>
-  </div>
+  </div>,
   <aside>
     <RelatedArticles />
-  </aside>
-  <Ad />
-  <Ad />
-  <Ad />
-</article>
+  </aside>,
+]
 `;
