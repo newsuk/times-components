@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.7.2"></a>
+## [5.7.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.7.1...@times-components/article@5.7.2) (2018-10-29)
+
+
+### Bug Fixes
+
+* article headline fallback ([#1437](https://github.com/newsuk/times-components/issues/1437)) ([229bac0](https://github.com/newsuk/times-components/commit/229bac0))
+
+
+
+
+
 <a name="5.7.1"></a>
 ## [5.7.1](https://github.com/newsuk/times-components/compare/@times-components/article@5.7.0...@times-components/article@5.7.1) (2018-10-25)
 
