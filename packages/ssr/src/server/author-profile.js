@@ -1,6 +1,5 @@
 const authorProfile = require("../component/author-profile");
 const runServer = require("../lib/run-server");
-const defaultMapProfileToConfig = require("../lib/make-ad-config");
 
 module.exports = ({
   currentPage,
@@ -13,7 +12,7 @@ module.exports = ({
   const options = {
     debounceTimeMs: debounceTime,
     makeArticleUrl,
-    mapProfileToAdConfig: defaultMapProfileToConfig,
+    mapProfileToAdConfig: () => ({}),
     name: "authorProfile",
     page: currentPage,
     pageSize: perPage,
