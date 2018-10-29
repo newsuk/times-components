@@ -34,7 +34,3 @@ Or the tests for all platforms can be run
 ```
 yarn test:all
 ```
-
-Visit the official
-[storybook](http://components.thetimes.co.uk/)
-to see our available article topics templates.

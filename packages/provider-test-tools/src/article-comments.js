@@ -17,7 +17,8 @@ export default ({
             commentCount: count,
             commentsEnabled: enabled,
             id
-          })
+          }),
+          UUID: () => "a-u-u-i-d"
         }
       },
       error: error(),
