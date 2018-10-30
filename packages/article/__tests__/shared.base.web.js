@@ -34,7 +34,7 @@ const emptyArticle = {
   topics: null
 };
 
-export const snapshotTests = renderComponent => [
+export const snapshotTests = [
   {
     name: "an error",
     test() {
@@ -42,7 +42,7 @@ export const snapshotTests = renderComponent => [
         error: { message: "An example error." }
       };
 
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Article
           {...props}
           {...articleProps}
@@ -59,14 +59,13 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "a full article with an image as the lead asset",
     test() {
       const article = articleFixture({
-        ...testFixture,
         seoContent: [
           {
             attributes: {
@@ -142,7 +141,7 @@ export const snapshotTests = renderComponent => [
         ]
       });
 
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -159,13 +158,13 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with a video as the lead asset",
     test() {
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -189,13 +188,13 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with no lead asset",
     test() {
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -215,13 +214,13 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with ads",
     test() {
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -248,13 +247,13 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article loading state",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -272,7 +271,7 @@ export const snapshotTests = renderComponent => [
         />
       );
 
-      expect(testInstance).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
@@ -296,7 +295,7 @@ export const snapshotTests = renderComponent => [
         children: PropTypes.func.isRequired
       };
 
-      const output = renderComponent(
+      const testRenderer = TestRenderer.create(
         <Wrapper>
           {byline => (
             <Context.Provider
@@ -327,11 +326,11 @@ export const snapshotTests = renderComponent => [
         </Wrapper>
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
 
-      output.getInstance().setState({ byline: testFixture.byline });
+      testRenderer.getInstance().setState({ byline: testFixture.byline });
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   }
 ];
@@ -340,7 +339,7 @@ const negativeTests = [
   {
     name: "an article with no flags",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -360,7 +359,7 @@ const negativeTests = [
         />
       );
 
-      const flags = findComponents(testInstance, "Flag");
+      const flags = findComponents(testRenderer, "Flag");
 
       expect(flags).toEqual([]);
     }
@@ -368,7 +367,7 @@ const negativeTests = [
   {
     name: "an article with no byline",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -385,7 +384,7 @@ const negativeTests = [
         />
       );
 
-      const byline = findComponents(testInstance, "ArticleBylineWithLinks");
+      const byline = findComponents(testRenderer, "ArticleBylineWithLinks");
 
       expect(byline).toEqual([]);
     }
@@ -393,7 +392,7 @@ const negativeTests = [
   {
     name: "an article with no label",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -410,7 +409,7 @@ const negativeTests = [
         />
       );
 
-      const label = findComponents(testInstance, "ArticleLabel");
+      const label = findComponents(testRenderer, "ArticleLabel");
 
       expect(label).toEqual([]);
     }
@@ -418,7 +417,7 @@ const negativeTests = [
   {
     name: "an article with no standfirst",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -438,7 +437,7 @@ const negativeTests = [
         />
       );
 
-      const textNodes = testInstance.root.findAll(node => {
+      const textNodes = testRenderer.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&
@@ -456,7 +455,7 @@ const negativeTests = [
   {
     name: "an article with missing 16:9 lead asset",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -482,14 +481,14 @@ const negativeTests = [
       const {
         crop169,
         crop32
-      } = testInstance.root.instance.props.article.leadAsset;
+      } = testRenderer.root.instance.props.article.leadAsset;
       expect(crop169).toEqual(null);
       expect(crop32).not.toEqual(null);
     }
   }
 ];
 
-export default (renderComponent, platformTests = []) => {
+export default (platformTests = []) => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -504,11 +503,7 @@ export default (renderComponent, platformTests = []) => {
     global.Intl = realIntl;
   });
 
-  iterator([
-    ...snapshotTests(renderComponent),
-    ...platformTests,
-    ...negativeTests
-  ]);
+  iterator([...snapshotTests, ...platformTests, ...negativeTests]);
 };
 
 export { adConfig };

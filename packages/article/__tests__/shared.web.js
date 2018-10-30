@@ -1,4 +1,3 @@
-import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -28,5 +27,5 @@ export default () => {
     )
   );
 
-  shared(TestRenderer.create);
+  shared();
 };
