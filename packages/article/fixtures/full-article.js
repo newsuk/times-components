@@ -2149,6 +2149,21 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
+  seoContent: [
+    {
+      attributes: {},
+      children: [
+        {
+          attributes: {
+            value: "Some content"
+          },
+          children: [],
+          name: "text"
+        }
+      ],
+      name: "paragraph"
+    }
+  ],
   shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
