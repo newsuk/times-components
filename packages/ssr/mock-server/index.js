@@ -9,6 +9,12 @@ const schema = makeMocks(defaults);
 
 const server = new ApolloServer({ schema });
 
-server.listen().then(({ url }) => {
+const App = server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
+});
+
+process.on("SIGTERM", () => {
+  App.close(() => {
+    process.exit(0);
+  });
 });
