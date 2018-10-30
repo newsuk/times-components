@@ -3,7 +3,7 @@
 const topic = require("../../component/topic");
 const runClient = require("../../lib/run-client");
 
-module.exports = (makeArticleUrl, mapTopicToAdConfig) => {
+module.exports = (rootTag, makeArticleUrl, mapTopicToAdConfig) => {
   const { debounceTimeMs, page, pageSize, slug } = window.nuk.topicPage || {};
 
   const data = {
@@ -15,7 +15,10 @@ module.exports = (makeArticleUrl, mapTopicToAdConfig) => {
     slug
   };
 
-  const useGET = true;
+  const clientOptions = {
+    rootTag,
+    useGET: true
+  };
 
-  runClient(topic, useGET, data);
+  runClient(topic, clientOptions, data);
 };

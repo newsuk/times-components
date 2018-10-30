@@ -3,4 +3,6 @@ const makeArticleUrl = require("../../lib/make-url");
 const defaultMapTopicToConfig = require("../../lib/make-ad-config")
   .defaultClient;
 
-topic(makeArticleUrl, defaultMapTopicToConfig);
+const rootTag = "main-container";
+
+topic(rootTag, makeArticleUrl, defaultMapTopicToConfig);

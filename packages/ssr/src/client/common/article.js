@@ -3,7 +3,7 @@
 const article = require("../../component/article");
 const runClient = require("../../lib/run-client");
 
-module.exports = (makeArticleUrl, mapArticleToAdConfig) => {
+module.exports = (rootTag, makeArticleUrl, mapArticleToAdConfig) => {
   const { id, debounceTimeMs } = (window.nuk && window.nuk.article) || {};
 
   const data = {
@@ -13,7 +13,10 @@ module.exports = (makeArticleUrl, mapArticleToAdConfig) => {
     mapArticleToAdConfig
   };
 
-  const useGET = false;
+  const clientOptions = {
+    rootTag,
+    useGET: false
+  };
 
-  runClient(article, useGET, data);
+  runClient(article, clientOptions, data);
 };

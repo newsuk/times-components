@@ -43,24 +43,23 @@ const makeAnalyticsStream = options => {
   return reporter.analytics;
 };
 
-module.exports = (component, useGET, ...parameters) => {
-  const clientOptions = {
+module.exports = (component, clientOptions, data) => {
+  const client = makeClient({
     initialState: window.__APOLLO_STATE__,
     uri: window.nuk.graphqlapi.url,
-    useGET
-  };
-  const client = makeClient(clientOptions);
+    useGET: clientOptions.useGET
+  });
 
   const reporterOptions = {
     tracking: window.nuk.tracking
   };
   const analyticsStream = makeAnalyticsStream(reporterOptions);
 
-  const App = component(client, analyticsStream, ...parameters);
+  const App = component(client, analyticsStream, data);
 
   AppRegistry.registerComponent("App", () => () => App);
 
   AppRegistry.runApplication("App", {
-    rootTag: document.getElementById("main-container")
+    rootTag: document.getElementById(clientOptions.rootTag)
   });
 };

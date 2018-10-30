@@ -3,7 +3,7 @@
 const authorProfile = require("../../component/author-profile");
 const runClient = require("../../lib/run-client");
 
-module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
+module.exports = (rootTag, makeArticleUrl, mapProfileToAdConfig) => {
   const { debounceTimeMs, page, pageSize, slug } =
     (window.nuk && window.nuk.authorProfile) || {};
 
@@ -16,7 +16,10 @@ module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
     slug
   };
 
-  const useGET = true;
+  const clientOptions = {
+    rootTag,
+    useGET: true
+  };
 
-  runClient(authorProfile, useGET, data);
+  runClient(authorProfile, clientOptions, data);
 };
