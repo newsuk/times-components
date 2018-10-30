@@ -9,7 +9,7 @@ const viewabilityConfig = {
 
 const ArticleContent = ({
   data,
-  renderRow,
+  header,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -19,12 +19,14 @@ const ArticleContent = ({
   onTwitterLinkPress,
   onVideoPress,
   onViewableItemsChanged
+  renderRow,
 }) => (
   <FlatList
     data={data}
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
+    ListHeaderComponent={header}
     onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(

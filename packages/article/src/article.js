@@ -113,30 +113,22 @@ class Article extends Component {
   }
 
   render() {
+    const { analyticsStream, header, onAuthorPress, onCommentGuidelinesPress, onCommentsPress, onLinkPress, onRelatedArticlePress, onTopicPress, onTwitterLinkPress, onVideoPress } = this.props;
     return (
       <ArticleContent
-<<<<<<< HEAD
-        data={articleData}
-=======
         data={this.state.dataSource}
->>>>>>> chore: Some web test scrubbing
+        header={header}
         initialListSize={listViewSize}
-        onAuthorPress={this.props.onAuthorPress}
-        onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
-        onCommentsPress={this.props.onCommentsPress}
-        onLinkPress={this.props.onLinkPress}
-        onRelatedArticlePress={this.props.onRelatedArticlePress}
-        onTopicPress={this.props.onTopicPress}
-        onTwitterLinkPress={this.props.onTwitterLinkPress}
-        onVideoPress={this.props.onVideoPress}
-<<<<<<< HEAD
-        onViewableItemsChanged={
-          this.props.onViewed ? this.onViewableItemsChanged : null
-        }
-=======
->>>>>>> chore: Some web test scrubbing
+        onAuthorPress={onAuthorPress}
+        onCommentGuidelinesPress={onCommentGuidelinesPress}
+        onCommentsPress={onCommentsPress}
+        onLinkPress={onLinkPress}
+        onRelatedArticlePress={onRelatedArticlePress}
+        onTopicPress={onTopicPress}
+        onTwitterLinkPress={onTwitterLinkPress}
+        onVideoPress={onVideoPress}
         pageSize={listViewPageSize}
-        renderRow={renderRow(this.props.analyticsStream, this.state.width)}
+        renderRow={renderRow(analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );

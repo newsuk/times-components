@@ -11,7 +11,8 @@ import { BodyContainer } from "./styles/responsive";
 const Article = props => {
   const {
     analyticsStream,
-    data: { content, section, url, topics, relatedArticleSlice }
+    data: { content, section, url, topics, relatedArticleSlice },
+    header
   } = props;
 
   // eslint-disable-next-line react/prop-types
@@ -31,6 +32,7 @@ const Article = props => {
     <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
       {({ observed, registerNode }) => (
         <Fragment>
+          {header()}
           <BodyContainer>
             <ArticleBody
               content={content}
