@@ -266,49 +266,47 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       >
         Some Link
       </Link>
-      <span>
-        <p>
-          Some content
-        </p>
+      <p>
+        Some content
+      </p>
+      <div>
         <div>
-          <div>
-            <PullQuote
-              caption="AName"
-              content="A pull quote"
-              twitter="@AName"
-            />
-          </div>
+          <PullQuote
+            caption="AName"
+            content="A pull quote"
+            twitter="@AName"
+          />
         </div>
-        <div>
-          <figure>
+      </div>
+      <div>
+        <figure>
+          <div>
             <div>
               <div>
                 <div>
-                  <div>
-                    <video
-                      controls={true}
-                      data-account="57838016001"
-                      data-application-id={true}
-                      data-embed="default"
-                      data-player="default"
-                      data-video-id="4084164751001"
-                      id="4084164751001-57838016001-1"
-                      poster="https://image.io"
-                    />
-                  </div>
+                  <video
+                    controls={true}
+                    data-account="57838016001"
+                    data-application-id={true}
+                    data-embed="default"
+                    data-player="default"
+                    data-video-id="4084164751001"
+                    id="4084164751001-57838016001-1"
+                    poster="https://image.io"
+                  />
                 </div>
               </div>
             </div>
-            <figcaption>
-              <div>
-                <Caption
-                  text="This is video caption"
-                />
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </span>
+          </div>
+          <figcaption>
+            <div>
+              <Caption
+                text="This is video caption"
+              />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
   <div>
