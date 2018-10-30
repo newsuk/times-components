@@ -6,7 +6,7 @@
     "bundle:dev": "webpack --config=webpack.config.dev.js",
     "bundle:prod": "NODE_ENV=production webpack --config=webpack.config.prod.js -p",
     "bundle:profile": "webpack --config=webpack.config.prod.js --profile --json > dist/stats.json",
-    "cleanup:servers": "killall node",
+    "cleanup:servers": "pkill node",
     "cleanup-dist": "rm -rf dist",
     "depcheck": "depcheck --ignores='cypress, depcheck,eslint,graphql,prettier,react-art,wait-on,webpack*' --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
