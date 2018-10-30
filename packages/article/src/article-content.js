@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FlatList } from "react-native";
 
+const viewabilityConfig = {
+  viewAreaCoveragePercentThreshold: 100,
+  waitForInteraction: false
+};
+
 const ArticleContent = ({
   data,
   renderRow,
@@ -12,13 +17,15 @@ const ArticleContent = ({
   onRelatedArticlePress,
   onTopicPress,
   onTwitterLinkPress,
-  onVideoPress
+  onVideoPress,
+  onViewableItemsChanged
 }) => (
   <FlatList
     data={data}
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
+    onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(
         item,
@@ -33,6 +40,7 @@ const ArticleContent = ({
       )
     }
     testID="flat-list-article"
+    viewabilityConfig={viewabilityConfig}
   />
 );
 
@@ -52,7 +60,12 @@ ArticleContent.propTypes = {
   onTopicPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  onViewableItemsChanged: PropTypes.func,
   renderRow: PropTypes.func.isRequired
+};
+
+ArticleContent.defaultProps = {
+  onViewableItemsChanged: () => {}
 };
 
 export default ArticleContent;

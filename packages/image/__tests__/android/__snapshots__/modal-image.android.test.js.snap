@@ -14,7 +14,11 @@ exports[`1. modal image 1`] = `
         >
           <Image
             resizeMode="contain"
-            source={1}
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
           />
         </View>
       </View>

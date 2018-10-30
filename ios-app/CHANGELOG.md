@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.29"></a>
+## [0.4.29](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.28...@times-components/ios-app@0.4.29) (2018-10-29)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.28"></a>
+## [0.4.28](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.27...@times-components/ios-app@0.4.28) (2018-10-29)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.27"></a>
+## [0.4.27](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.26...@times-components/ios-app@0.4.27) (2018-10-25)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.26"></a>
+## [0.4.26](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.24...@times-components/ios-app@0.4.26) (2018-10-23)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.25"></a>
+## [0.4.25](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.24...@times-components/ios-app@0.4.25) (2018-10-19)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 <a name="0.4.24"></a>
 ## [0.4.24](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.23...@times-components/ios-app@0.4.24) (2018-10-17)
 

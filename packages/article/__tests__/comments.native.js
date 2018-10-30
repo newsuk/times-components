@@ -12,6 +12,7 @@ import shared from "./comments.base";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 const findViewByText = (testInstance, text) =>
   testInstance.root.find(
@@ -26,9 +27,12 @@ const omitKeys = new Set([
   "data",
   "disableVirtualization",
   "horizontal",
+  "onViewableItemsChanged",
   "selectable",
   "style",
-  "testID"
+  "testID",
+  "viewabilityConfig",
+  "viewabilityConfigCallbackPairs"
 ]);
 
 export default () => {
@@ -65,6 +69,7 @@ export default () => {
 
     const testInstance = TestRenderer.create(
       <Article
+        {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}

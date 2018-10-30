@@ -6,9 +6,10 @@ const defaultHeadline =
 const defaultParagraph =
   "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.";
 
-export default (
-  { headline = defaultHeadline, paragraph = defaultParagraph } = {}
-) => ({
+export default ({
+  headline = defaultHeadline,
+  paragraph = defaultParagraph
+} = {}) => ({
   content: () => (
     <ArticleSummaryContent
       ast={[

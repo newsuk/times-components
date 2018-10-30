@@ -4,6 +4,7 @@ import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 export default renderComponent => [
   {
@@ -12,6 +13,7 @@ export default renderComponent => [
       const output = renderComponent(
         <Context.Provider value={{ theme: { scale: scales.medium } }}>
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={articleFixture({
@@ -38,6 +40,7 @@ export default renderComponent => [
       const output = renderComponent(
         <Context.Provider value={{ theme: { scale: scales.large } }}>
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={articleFixture({
@@ -64,6 +67,7 @@ export default renderComponent => [
       const output = renderComponent(
         <Context.Provider value={{ theme: { scale: scales.xlarge } }}>
           <Article
+            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={articleFixture({

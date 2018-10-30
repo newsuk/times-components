@@ -18,7 +18,11 @@ jest.mock("@times-components/icons", () => ({
 export default () => {
   addSerializers(
     expect,
-    compose(print, minimalNativeTransform, flattenStyleTransform)
+    compose(
+      print,
+      minimalNativeTransform,
+      flattenStyleTransform
+    )
   );
 
   shared(TestRenderer.create);

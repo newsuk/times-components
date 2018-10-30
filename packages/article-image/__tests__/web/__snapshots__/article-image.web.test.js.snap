@@ -29,7 +29,7 @@ exports[`5. image with no caption 1`] = `
     <div>
       <img
         alt=""
-        src="https://imageserver/someImage"
+        src="https://img/someImage"
       />
       <div>
         <div />
@@ -70,7 +70,7 @@ Array [
       <div>
         <img
           alt=""
-          src="https://imageserver/someImage"
+          src="https://img/someImage"
         />
         <div>
           <div />
@@ -102,11 +102,11 @@ Array [
       <div>
         <img
           alt=""
-          src="https://imageserver/someImage?resize=900"
+          src="https://img/someImage?resize=900"
         />
         <img
           alt=""
-          src="https://imageserver/someImage?resize=50"
+          src="https://img/someImage?resize=50"
         />
         <div>
           <div />

@@ -8,6 +8,7 @@ export const omitNative = new Set([
   "maxToRenderPerBatch",
   "numColumns",
   "onEndReachedThreshold",
+  "onViewableItemsChanged",
   "pageSize",
   "scrollEventThrottle",
   "style",

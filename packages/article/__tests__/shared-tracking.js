@@ -4,6 +4,7 @@ import mockDate from "mockdate";
 import Article from "../src/article";
 import { adConfig } from "./ad-mock";
 import articleFixture from "../fixtures/full-article";
+import articleProps from "./shared-article-props";
 
 export default () => {
   beforeEach(() => {
@@ -19,6 +20,7 @@ export default () => {
 
     renderer.create(
       <Article
+        {...articleProps}
         adConfig={adConfig}
         analyticsStream={stream}
         article={articleFixture()}

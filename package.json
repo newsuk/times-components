@@ -6,7 +6,7 @@
   "main": "index.js",
   "engines": {
     "node": ">=8.10.0 <10",
-    "yarn": "1.10.1"
+    "yarn": "1.12.1"
   },
   "bin": {
     "times-components": "times-components"
@@ -115,9 +115,9 @@
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "dextrose": "4.0.7",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
+    "eslint-config-prettier": "3.1.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "6.0.2",
     "eslint-plugin-react": "7.4.0",
@@ -130,13 +130,14 @@
     "lerna": "3.2.1",
     "mkdirp": "0.5.1",
     "node-fetch": "2.2.0",
-    "prettier": "1.8.2",
+    "prettier": "1.14.3",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.9.0",
+    "react-native-web-image-loader": "0.0.6",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",

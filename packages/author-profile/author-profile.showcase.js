@@ -25,7 +25,9 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const { defaultProps: { adConfig } } = AdComposer;
+const {
+  defaultProps: { adConfig }
+} = AdComposer;
 
 const getProps = decorateAction => ({
   adConfig,

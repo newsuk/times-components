@@ -186,6 +186,22 @@ Object {
           "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
           Symbol(id): "Article:ea16d744-cb4a-11e4-a202-50ac5def393a",
         },
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop169": Object {
+            "__typename": "Crop",
+            "url": "https://placeimg.com/320/180/tech",
+            Symbol(id): "$Image:a-u-u-i-d.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "crop32": Object {
+            "__typename": "Crop",
+            "url": "https://placeimg.com/300/200/tech",
+            Symbol(id): "$Image:a-u-u-i-d.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "a-u-u-i-d",
+          "title": "Hello World",
+          Symbol(id): "Image:a-u-u-i-d",
+        },
         Symbol(id): "$Article:113e9875-b7bf-4dd7-ac99-dee231bf6e74.relatedArticleSlice.items.0",
       },
     ],

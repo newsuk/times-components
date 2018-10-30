@@ -11,7 +11,11 @@ import shared from "../shared";
 
 addSerializers(
   expect,
-  compose(print, flattenStyleTransform, minimalNativeTransform)
+  compose(
+    print,
+    flattenStyleTransform,
+    minimalNativeTransform
+  )
 );
 
 iterator(shared(Text));

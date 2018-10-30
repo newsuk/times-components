@@ -17,29 +17,17 @@ exports[`renders correctly 1`] = `
   >
     <RCTWebView
       injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
-      messagingEnabled={true}
-      onLoadingError={[Function]}
-      onLoadingFinish={[Function]}
-      onLoadingStart={[Function]}
-      onMessage={[Function]}
-      scalesPageToFit={true}
       source={
         Object {
           "uri": "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/a0534eee-682e-4955-8e1e-84b428ef1e79",
         }
       }
       style={
-        Array [
-          Object {
-            "flex": 1,
-          },
-          Object {
-            "backgroundColor": "#ffffff",
-          },
-          Object {
-            "height": 0,
-          },
-        ]
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "height": 0,
+        }
       }
     />
   </View>

@@ -20,7 +20,7 @@ exports[`1. one opinion related article 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -33,9 +33,10 @@ exports[`1. one opinion related article 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      TEST LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#00313B"
+                      title="test label"
+                    />
                   </div>
                   <div>
                     <span>

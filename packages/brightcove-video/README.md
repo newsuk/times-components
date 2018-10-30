@@ -10,8 +10,8 @@ package instead.
 
 ## Getting started
 
-* `yarn add @times-components/brightcove-video`
-* `react-native link`
+- `yarn add @times-components/brightcove-video`
+- `react-native link`
 
 :warning: For native, the `policyKey` is required, see
 [Brightcove's Policy API](https://docs.brightcove.com/en/video-cloud/policy-api/getting-started/api-overview.html)

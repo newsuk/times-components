@@ -6,8 +6,7 @@
       {
         "name": "text",
         "attributes": {
-          "value":
-            "The Fibonacci sequence is defined by the recurrence relation u"
+          "value": "The Fibonacci sequence is defined by the recurrence relation u"
         },
         "children": []
       },
@@ -80,8 +79,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The Fibonacci sequence is defined by the recurrence relation u"
+              "value": "The Fibonacci sequence is defined by the recurrence relation u"
             },
             "children": []
           },
@@ -156,8 +154,7 @@
           {
             "name": "text",
             "attributes": {
-              "value":
-                "The Fibonacci sequence is defined by the recurrence relation u"
+              "value": "The Fibonacci sequence is defined by the recurrence relation u"
             },
             "children": []
           },

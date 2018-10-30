@@ -5,9 +5,9 @@ for a user to navigate to should they be interested. The related articles
 component uses three templates which are configured within the
 [slice package](https://github.com/newsuk/times-components/tree/master/packages/slice):
 
-* `StandardSlice`
-* `LeadAndTwoSlice`
-* `OpinionAndTwoSlice`
+- `StandardSlice`
+- `LeadAndTwoSlice`
+- `OpinionAndTwoSlice`
 
 ## Standard template
 

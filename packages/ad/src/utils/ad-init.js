@@ -87,9 +87,7 @@ const adInit = args => {
 
           if (!slot) {
             throw new Error(
-              `Ad slot ${slotName} ${
-                adUnitPath
-              } could not be defined, probably it was already defined`
+              `Ad slot ${slotName} ${adUnitPath} could not be defined, probably it was already defined`
             );
           }
 
@@ -396,9 +394,7 @@ const adInit = args => {
         } catch (e) {
           eventCallback(
             "log",
-            `Could not insert script "${scriptUri}" (${
-              e
-            }) - could be caused by ad blocker`
+            `Could not insert script "${scriptUri}" (${e}) - could be caused by ad blocker`
           );
         }
       },

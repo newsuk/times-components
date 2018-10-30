@@ -20,7 +20,7 @@ exports[`1. no short headline 1`] = `
                 "padding": 10,
               }
             }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            url="https://some-url.io"
           >
             <div>
               <Card
@@ -33,9 +33,10 @@ exports[`1. no short headline 1`] = `
               >
                 <div>
                   <div>
-                    <div>
-                      TEST LABEL
-                    </div>
+                    <ArticleLabel
+                      color="#333333"
+                      title="test label"
+                    />
                   </div>
                   <h3
                     aria-level="3"

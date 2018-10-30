@@ -14,7 +14,11 @@ export default withPageState => {
   addSerializers(
     expect,
     enzymeRenderedSerializer(),
-    compose(print, minimalWebTransform, rnwTransform(AppRegistry))
+    compose(
+      print,
+      minimalWebTransform,
+      rnwTransform(AppRegistry)
+    )
   );
 
   shared(withPageState, mount);

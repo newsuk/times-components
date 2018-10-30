@@ -26,7 +26,8 @@ export default {
       element: (
         <Text key={key}>
           {padding}
-          {renderedChildren}...
+          {renderedChildren}
+          ...
         </Text>
       )
     };

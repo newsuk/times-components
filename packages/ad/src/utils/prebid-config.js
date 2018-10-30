@@ -23,7 +23,7 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
         if (bidResponse.cpm < bucketSize) {
           return minPrice.toFixed(2);
         }
-        return (bidResponse.cpm - bidResponse.cpm % bucketSize).toFixed(2);
+        return (bidResponse.cpm - (bidResponse.cpm % bucketSize)).toFixed(2);
       }
     },
     {

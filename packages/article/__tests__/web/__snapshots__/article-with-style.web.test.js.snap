@@ -2,18 +2,18 @@
 
 exports[`full article with style 1`] = `
 .c14 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c15 {
   color: #333333;
+  display: block;
   font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 0;
-  display: block;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c17 {
+  padding-left: 10px;
 }
 
 .c10 {
@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c19 {
+.c18 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -45,7 +45,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c20 {
+.c19 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -59,18 +59,14 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c17 {
+.c16 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c16 {
+.c15 {
   display: block;
-}
-
-.c18 {
-  padding-left: 10px;
 }
 
 .c4 {
@@ -91,7 +87,7 @@ exports[`full article with style 1`] = `
   margin-right: 10px;
 }
 
-.c21 {
+.c20 {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -133,10 +129,11 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c14 {
-    width: 80.8%;
-    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
     padding-left: 0;
     padding-right: 0;
+    width: 80.8%;
   }
 }
 
@@ -147,9 +144,8 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
-    font-size: 18px;
-    line-height: 30px;
+  .c17 {
+    padding-left: 0px;
   }
 }
 
@@ -190,6 +186,21 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
   .c19 {
     width: 80.8%;
     margin: 0 auto;
@@ -205,22 +216,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
+  .c16 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -232,7 +228,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c15 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -241,14 +237,8 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c16 {
+  .c15 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    padding-left: 0px;
   }
 }
 
@@ -294,7 +284,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c20 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -303,7 +293,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c20 {
     display: none;
   }
 }
@@ -372,176 +362,193 @@ exports[`full article with style 1`] = `
 }
 
 <style>
-{
-  "IS1": {
-    "marginBottom": 0,
-  },
-  "IS10": {
-    "height": "100%",
-    "width": "100%",
-  },
-  "IS11": {
-    "height": "100%",
-    "position": "absolute",
-    "width": "100%",
-  },
-  "IS12": {
-    "paddingBottom": "56.25%",
-  },
-  "IS13": {
-    "margin": 0,
-  },
-  "IS14": {
-    "borderBottomColor": "#DBDBDB",
-    "borderBottomWidth": 1,
-    "borderTopColor": "#DBDBDB",
-    "borderTopWidth": 1,
-    "marginBottom": "30px",
-    "marginTop": "30px",
-    "paddingHorizontal": "10px",
-    "paddingVertical": "10px",
-  },
-  "IS15": {
-    "borderTopColor": "#DBDBDB",
-    "borderTopWidth": 1,
-  },
-  "IS2": {
-    "justifyContent": "flex-start",
-  },
-  "IS3": {
-    "height": "100%",
-    "position": "absolute",
-    "width": "100%",
-  },
-  "IS4": {
-    "paddingBottom": "56.25%",
-  },
-  "IS5": {
-    "margin": 0,
-  },
-  "IS6": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 17,
-    "lineHeight": 26,
-    "marginBottom": "25px",
-    "marginTop": 0,
-  },
-  "IS7": {
-    "paddingLeft": "10px",
-    "paddingRight": "10px",
-  },
-  "IS8": {
-    "height": "100%",
-    "width": "100%",
-  },
-  "IS9": {
-    "position": "relative",
-  },
-  "S1": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S10": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-top": "0px",
-  },
-  "S2": {
-    "font-weight": "400",
-    "line-height": "14px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S3": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S4": {
-    "font-weight": "inherit",
-    "line-height": "30px",
-    "margin-bottom": "7px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S5": {
-    "font-weight": "inherit",
-    "line-height": "26px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "10px",
-    "padding-top": "0px",
-  },
-  "S6": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "10px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S7": {
-    "font-weight": "inherit",
-    "line-height": "15px",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "0px",
-  },
-  "S8": {
-    "font-weight": "inherit",
-    "line-height": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-bottom": "5px",
-    "padding-top": "5px",
-  },
-  "S9": {
-    "-ms-flex-align": "stretch",
-    "-ms-flex-preferred-size": "auto",
-    "-webkit-align-items": "stretch",
-    "-webkit-box-align": "stretch",
-    "-webkit-flex-basis": "auto",
-    "align-items": "stretch",
-    "flex-basis": "auto",
-    "margin-bottom": "20px",
-    "margin-top": "0px",
-    "padding-bottom": "0px",
-    "padding-top": "9px",
-  },
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S5 {
+  font-weight: inherit;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.S6 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S7 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S8 {
+  font-weight: inherit;
+  line-height: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.S9 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 9px;
+}
+
+.S10 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.IS1 {
+  margin-bottom: 0;
+}
+
+.IS2 {
+  justify-content: flex-start;
+}
+
+.IS3 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS4 {
+  padding-bottom: 56.25%;
+}
+
+.IS5 {
+  margin: 0;
+}
+
+.IS6 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.IS7 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS8 {
+  position: relative;
+}
+
+.IS9 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS10 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS11 {
+  padding-bottom: 56.25%;
+}
+
+.IS12 {
+  margin: 0;
+}
+
+.IS13 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+}
+
+.IS14 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
 }
 </style>
 
@@ -670,20 +677,16 @@ exports[`full article with style 1`] = `
       <Link>
         Some Link
       </Link>
-      <div
-        className="c14 IS7"
+      <p
+        className="c14 IS6"
       >
-        <p
-          className="c15 IS6"
-        >
-          Some content
-        </p>
-      </div>
+        Some content
+      </p>
       <div
-        className="c16 S1"
+        className="c15 S1"
       >
         <div
-          className="c17 S1"
+          className="c16 S1"
         >
           <PullQuote />
         </div>
@@ -692,22 +695,22 @@ exports[`full article with style 1`] = `
         className="c13 S1"
       >
         <figure
-          className="IS13"
+          className="IS12"
         >
           <div
-            className="IS12 S10"
+            className="IS11 S10"
           >
             <div
-              className="IS11 S1"
+              className="IS10 S1"
             >
               <div
-                className="IS10"
+                className="IS9"
               >
                 <div
-                  className="IS9"
+                  className="IS8"
                 >
                   <video
-                    className="video-js IS8"
+                    className="video-js IS7"
                   />
                 </div>
               </div>
@@ -715,7 +718,7 @@ exports[`full article with style 1`] = `
           </div>
           <figcaption>
             <div
-              className="c18 S1"
+              className="c17 S1"
             >
               <Caption />
             </div>
@@ -723,8 +726,15 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS14"
+        className="IS13"
       />
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
       <div>
         <div
           className="c19 S1"
@@ -732,21 +742,14 @@ exports[`full article with style 1`] = `
           <ArticleImage />
         </div>
       </div>
-      <div>
-        <div
-          className="c20 S1"
-        >
-          <ArticleImage />
-        </div>
-      </div>
     </div>
   </div>
   <div
-    className="c21 S1"
+    className="c20 S1"
   >
     <nav>
       <ArticleTopics
-        className="IS15"
+        className="IS14"
       />
     </nav>
   </div>

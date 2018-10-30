@@ -1,6 +1,6 @@
 {
   "name": "@times-components/depend",
-  "version": "2.1.6",
+  "version": "2.1.8",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
@@ -53,14 +53,14 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.2",
+    "@times-components/eslint-config-thetimes": "0.8.4",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
-    "eslint": "4.9.0",
+    "eslint": "4.19.1",
     "jest": "23.3.0",
-    "prettier": "1.8.2"
+    "prettier": "1.14.3"
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "6.23.0",

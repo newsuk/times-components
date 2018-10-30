@@ -24,7 +24,7 @@ class RelatedArticles extends Component {
 
     if (!sliceName || (!items && !lead && !opinion)) return null;
 
-    const renderArticleItem = (config, article) => {
+    const renderArticleItem = (config, article, leadAssetOverride) => {
       const {
         bylineClass = "",
         contentContainerClass,
@@ -49,6 +49,7 @@ class RelatedArticles extends Component {
           isOpinionByline={isOpinionByline}
           isReversed={isReversed}
           key={article.id}
+          leadAssetOverride={leadAssetOverride}
           onPress={onPress}
           showImage={showImage}
           showSummary={showSummary}
@@ -65,21 +66,33 @@ class RelatedArticles extends Component {
             <StandardSlice
               itemCount={items.length}
               renderItems={config =>
-                items.map(item => renderArticleItem(config, item.article))
+                items.map(item =>
+                  renderArticleItem(config, item.article, item.leadAsset)
+                )
               }
             />
           );
         case "LeadOneAndTwoSlice":
           return (
             <LeadOneAndTwoSlice
-              renderLead={config => renderArticleItem(config, lead.article)}
+              renderLead={config =>
+                renderArticleItem(config, lead.article, lead.leadAsset)
+              }
               renderSupport1={config => {
                 if (!support1) return null;
-                return renderArticleItem(config, support1.article);
+                return renderArticleItem(
+                  config,
+                  support1.article,
+                  support1.leadAsset
+                );
               }}
               renderSupport2={config => {
                 if (!support2) return null;
-                return renderArticleItem(config, support2.article);
+                return renderArticleItem(
+                  config,
+                  support2.article,
+                  support2.leadAsset
+                );
               }}
             />
           );
@@ -87,15 +100,23 @@ class RelatedArticles extends Component {
           return (
             <OpinionOneAndTwoSlice
               renderOpinion={config =>
-                renderArticleItem(config, opinion.article)
+                renderArticleItem(config, opinion.article, opinion.leadAsset)
               }
               renderSupport1={config => {
                 if (!support1) return null;
-                return renderArticleItem(config, support1.article);
+                return renderArticleItem(
+                  config,
+                  support1.article,
+                  support1.leadAsset
+                );
               }}
               renderSupport2={config => {
                 if (!support2) return null;
-                return renderArticleItem(config, support2.article);
+                return renderArticleItem(
+                  config,
+                  support2.article,
+                  support2.leadAsset
+                );
               }}
             />
           );

@@ -51,3 +51,6 @@ export const oneArticleTests = util.oneArticleTests(fixture => [
 export const twoArticlesTests = util.twoArticlesTests;
 
 export const threeArticlesTests = util.threeArticlesTests;
+
+export const threeArticlesWithLeadAssetOverrideTests =
+  util.threeArticlesWithLeadAssetOverrideTests;

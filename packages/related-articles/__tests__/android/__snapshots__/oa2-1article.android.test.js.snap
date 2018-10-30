@@ -42,9 +42,10 @@ exports[`1. one opinion related article 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    TEST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#00313B"
+                    title="test label"
+                  />
                 </View>
                 <Text>
                   <Text>

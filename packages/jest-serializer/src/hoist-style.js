@@ -1,5 +1,15 @@
+import hyphenateStyleName from "hyphenate-style-name";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
+
+const hyphenateStyles = styles =>
+  Object.entries(styles).reduce(
+    (acc, [property, value]) => ({
+      ...acc,
+      [hyphenateStyleName(property)]: value
+    }),
+    {}
+  );
 
 export const hoistStyleTransform = (accum, node, props, children) => {
   const { style, className, ...other } = props;
@@ -41,7 +51,7 @@ export const hoistStyleTransform = (accum, node, props, children) => {
       ...accum,
       inlineStyles: {
         ...accum.inlineStyles,
-        [inlineStyleClass]: style
+        [inlineStyleClass]: hyphenateStyles(style)
       }
     },
     children,

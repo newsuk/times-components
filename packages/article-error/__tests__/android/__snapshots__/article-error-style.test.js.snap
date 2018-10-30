@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with style 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "height": "100%",
+          "justifyContent": "space-between",
+          "marginHorizontal": 10,
+          "paddingBottom": 70,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <View>
+        <Image
+          accessibilityLabel="Server error"
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/article-error/assets/article-error.png",
+            }
+          }
+          style={
+            Object {
+              "alignSelf": "center",
+              "height": 270,
+              "marginVertical": 20,
+              "width": 240,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 26,
+              "marginBottom": 10,
+              "marginHorizontal": 40,
+              "textAlign": "center",
+            }
+          }
+        >
+          Something's gone wrong
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 15,
+              "marginHorizontal": 40,
+              "textAlign": "center",
+            }
+          }
+        >
+          We can't load the page you have requested. Please check your network connection and retry to continue
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType="button"
+        accessibilityLabel="Retry"
+        accessibilityTraits="button"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#006699",
+            "borderRadius": 2,
+            "elevation": 3,
+            "height": 36,
+            "justifyContent": "center",
+            "minWidth": 100,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 14,
+              "paddingTop": 0,
+            }
+          }
+          title="Retry"
+        >
+          Retry
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

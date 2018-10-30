@@ -4,8 +4,8 @@ The gradient component wraps any children and adds a gradient background. The
 gradient's angle can be configured by the consumer of gradient. There are two
 exported components:
 
-* `Gradient` - used for image placeholders and loading screens
-* `OverlayGradient` - developed for use when overlaying text over parts of an
+- `Gradient` - used for image placeholders and loading screens
+- `OverlayGradient` - developed for use when overlaying text over parts of an
   image
 
 ## How to use

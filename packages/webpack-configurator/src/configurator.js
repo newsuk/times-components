@@ -36,9 +36,7 @@ export default ({ exists, readFile }, resolve) => {
       return (await exists(web)) ? web : generic;
     } catch (_) {
       throw new Error(
-        `could not resolve "${main}". Make sure "${entry}" in "${
-          pathToPackage
-        }" points to the right file`
+        `could not resolve "${main}". Make sure "${entry}" in "${pathToPackage}" points to the right file`
       );
     }
   };

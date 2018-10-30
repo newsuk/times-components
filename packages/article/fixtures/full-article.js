@@ -635,9 +635,9 @@ export const longContent = [
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 
-export const videoLeadAsset = (
-  { brightcovePolicyKey = defaultBrightcovePolicyKey } = {}
-) => ({
+export const videoLeadAsset = ({
+  brightcovePolicyKey = defaultBrightcovePolicyKey
+} = {}) => ({
   __typename: "Video",
   brightcoveAccountId: "5436121857001",
   brightcovePolicyKey,
@@ -1923,6 +1923,7 @@ const defaultRelatedArticleSlice = {
   ]
 };
 const defaultSection = "news";
+const defaultShortHeadline = "Caribbean islands devastated by Hurricane Irma";
 const defaultShortIdentifier = "37b27qd2s";
 const defaultSlug = "france-defies-may-over-russia";
 const defaultStandfirst =
@@ -1968,27 +1969,26 @@ const addProp = (obj, key, value) => {
   return obj;
 };
 
-const makeDefaultConfig = (
-  {
-    byline = defaultByline,
-    commentsEnabled = defaultCommentsEnabled,
-    commentCount = defaultCommentCount,
-    content = defaultContent,
-    flags = defaultFlags,
-    hasVideo = defaultHasVideo,
-    headline = defaultHeadline,
-    keywords = defaultKeywords,
-    label = defaultLabel,
-    leadAsset = defaultLeadAsset,
-    relatedArticleSlice = defaultRelatedArticleSlice,
-    section = defaultSection,
-    shortIdentifier = defaultShortIdentifier,
-    slug = defaultSlug,
-    standfirst = defaultStandfirst,
-    topics = defaultTopics,
-    url = defaultUrl
-  } = {}
-) => ({
+const makeDefaultConfig = ({
+  byline = defaultByline,
+  commentsEnabled = defaultCommentsEnabled,
+  commentCount = defaultCommentCount,
+  content = defaultContent,
+  flags = defaultFlags,
+  hasVideo = defaultHasVideo,
+  headline = defaultHeadline,
+  keywords = defaultKeywords,
+  label = defaultLabel,
+  leadAsset = defaultLeadAsset,
+  relatedArticleSlice = defaultRelatedArticleSlice,
+  section = defaultSection,
+  shortHeadline = defaultShortHeadline,
+  shortIdentifier = defaultShortIdentifier,
+  slug = defaultSlug,
+  standfirst = defaultStandfirst,
+  topics = defaultTopics,
+  url = defaultUrl
+} = {}) => ({
   byline,
   commentCount,
   commentsEnabled,
@@ -2001,6 +2001,7 @@ const makeDefaultConfig = (
   leadAsset,
   relatedArticleSlice,
   section,
+  shortHeadline,
   shortIdentifier,
   slug,
   standfirst,
@@ -2146,6 +2147,7 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
+  shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",

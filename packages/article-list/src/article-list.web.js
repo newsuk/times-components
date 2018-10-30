@@ -58,9 +58,10 @@ class ArticleList extends Component {
 
     const hasAdvertConfig = Object.keys(adConfig).length > 0;
 
-    const paginationComponent = (
-      { hideResults = false, autoScroll = false } = {}
-    ) => (
+    const paginationComponent = ({
+      hideResults = false,
+      autoScroll = false
+    } = {}) => (
       <ArticleListPagination
         count={count}
         hideResults={hideResults}

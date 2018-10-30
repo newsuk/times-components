@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.7.3"></a>
+## [5.7.3](https://github.com/newsuk/times-components/compare/@times-components/article@5.7.2...@times-components/article@5.7.3) (2018-10-29)
+
+
+### Bug Fixes
+
+* remove surrounding divs from p tags in article ([#1440](https://github.com/newsuk/times-components/issues/1440)) ([2ae8c38](https://github.com/newsuk/times-components/commit/2ae8c38))
+
+
+
+
+
+<a name="5.7.2"></a>
+## [5.7.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.7.1...@times-components/article@5.7.2) (2018-10-29)
+
+
+### Bug Fixes
+
+* article headline fallback ([#1437](https://github.com/newsuk/times-components/issues/1437)) ([229bac0](https://github.com/newsuk/times-components/commit/229bac0))
+
+
+
+
+
+<a name="5.7.1"></a>
+## [5.7.1](https://github.com/newsuk/times-components/compare/@times-components/article@5.7.0...@times-components/article@5.7.1) (2018-10-25)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="5.7.0"></a>
+# [5.7.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.5.2...@times-components/article@5.7.0) (2018-10-23)
+
+
+### Features
+
+* add article scroll tracking ([#1413](https://github.com/newsuk/times-components/issues/1413)) ([05eaec7](https://github.com/newsuk/times-components/commit/05eaec7))
+* drop cap ([#1410](https://github.com/newsuk/times-components/issues/1410)) ([f34514f](https://github.com/newsuk/times-components/commit/f34514f))
+
+
+
+
+
+<a name="5.6.0"></a>
+# [5.6.0](https://github.com/newsuk/times-components/compare/@times-components/article@5.5.2...@times-components/article@5.6.0) (2018-10-19)
+
+
+### Features
+
+* drop cap ([#1410](https://github.com/newsuk/times-components/issues/1410)) ([f34514f](https://github.com/newsuk/times-components/commit/f34514f))
+
+
+
+
+
 <a name="5.5.2"></a>
 ## [5.5.2](https://github.com/newsuk/times-components/compare/@times-components/article@5.5.1...@times-components/article@5.5.2) (2018-10-17)
 

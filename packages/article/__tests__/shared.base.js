@@ -12,6 +12,7 @@ import articleFixture, {
   videoLeadAsset
 } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleProps from "./shared-article-props";
 
 const findComponents = (testInstance, componentName) =>
   testInstance.root.findAll(node => {
@@ -44,6 +45,7 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <Article
           {...props}
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           onAuthorPress={() => {}}
@@ -54,7 +56,6 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          refetch={() => {}}
         />
       );
 
@@ -138,6 +139,7 @@ export const snapshotTests = renderComponent => [
 
       const output = renderComponent(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={article}
@@ -160,6 +162,7 @@ export const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -189,6 +192,7 @@ export const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -210,10 +214,38 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "an article with no headline falls back to use shortHeadline",
+    test() {
+      const output = renderComponent(
+        <Article
+          {...articleProps}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={articleFixture({
+            ...testFixture,
+            ...emptyArticle,
+            headline: ""
+          })}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "an article with ads",
     test() {
       const output = renderComponent(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -246,6 +278,7 @@ export const snapshotTests = renderComponent => [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture()}
@@ -294,6 +327,7 @@ export const snapshotTests = renderComponent => [
               }}
             >
               <Article
+                {...articleProps}
                 adConfig={adConfig}
                 analyticsStream={() => {}}
                 article={articleFixture({
@@ -330,6 +364,7 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -357,6 +392,7 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, byline: null })}
@@ -381,6 +417,7 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, label: null })}
@@ -405,6 +442,7 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -442,6 +480,7 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <Article
+          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({

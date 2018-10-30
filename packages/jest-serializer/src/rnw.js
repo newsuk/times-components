@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
 import isEqual from "lodash.isequal";
@@ -77,7 +76,7 @@ const filterNames = (className, toInclude) => {
 const findStyle = (rnwStyles = {}, style) => {
   const kv = Object.entries(rnwStyles);
 
-  for (let i = 0; i < kv.length; i++) {
+  for (let i = 0; i < kv.length; i += 1) {
     const [key, value] = kv[i];
 
     if (isEqual(value, style)) {
@@ -156,9 +155,9 @@ export const rnwTransform = (AppRegistry, includeStyleProps) => (
 
   return {
     accum: updatedMap.styleMap,
+    children,
     node,
     props: newProps,
-    children
   };
 };
 

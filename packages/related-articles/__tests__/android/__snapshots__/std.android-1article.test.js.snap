@@ -32,9 +32,11 @@ exports[`1. a single related article 1`] = `
             >
               <View>
                 <View>
-                  <Text>
-                    TEST LABEL
-                  </Text>
+                  <ArticleLabel
+                    color="#004D6D"
+                    isVideo={false}
+                    title="test label"
+                  />
                 </View>
                 <Text
                   accessibilityRole="heading"

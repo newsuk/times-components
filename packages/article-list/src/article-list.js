@@ -38,10 +38,8 @@ class ArticleList extends Component {
 
     return info.changed
       .filter(viewableItem => viewableItem.isViewable)
-      .map(
-        viewableItem =>
-          this.props.onViewed &&
-          this.props.onViewed(viewableItem.item, this.props.articles)
+      .map(viewableItem =>
+        this.props.onViewed(viewableItem.item, this.props.articles)
       );
   }
 
@@ -173,7 +171,9 @@ class ArticleList extends Component {
           data.length > 0 ? this.fetchMoreOnEndReached(data) : null
         }
         onEndReachedThreshold={2}
-        onViewableItemsChanged={this.onViewableItemsChanged}
+        onViewableItemsChanged={
+          this.props.onViewed ? this.onViewableItemsChanged : null
+        }
         pageSize={pageSize}
         renderItem={({ item, index }) => (
           <ErrorView>

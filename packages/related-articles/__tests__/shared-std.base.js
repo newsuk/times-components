@@ -12,32 +12,40 @@ import standard1ArticleFixture from "../fixtures/standard/1-article";
 import standard2ArticlesFixture from "../fixtures/standard/2-articles";
 import standard3ArticlesFixture from "../fixtures/standard/3-articles";
 
+jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components/article-label", () => "ArticleLabel");
+
 const standard0ArticleFixtureData = standard0ArticleFixture.data;
 const standard1ArticleFixtureData = standard1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "Test Short Headline",
   slug: "test-slug",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
-  url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
   label: "test label",
   section: "newsreview",
   shortHeadline: "",
   slug: "test-slug",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const standardhasVideoFixtureData = standard1ArticleFixture({
+  crop169: "https://crop169.io",
   hasVideo: true,
-  slug: "test-slug"
+  headline: "Test Headline",
+  shortHeadline: "",
+  slug: "test-slug",
+  summary125: testSummary(125),
+  url: "https://test.io"
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
