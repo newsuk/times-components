@@ -401,8 +401,6 @@ exports[`5. an article with no headline falls back to use shortheadline 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
