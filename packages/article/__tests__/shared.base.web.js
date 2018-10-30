@@ -218,6 +218,33 @@ export const snapshotTests = [
     }
   },
   {
+    name: "an article with no headline falls back to use shortHeadline",
+    test() {
+      const testRenderer = TestRenderer.create(
+        <Article
+          {...articleProps}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={articleFixture({
+            ...testFixture,
+            ...emptyArticle,
+            headline: ""
+          })}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      expect(testRenderer).toMatchSnapshot();
+    }
+  },
+  {
     name: "an article with ads",
     test() {
       const testRenderer = TestRenderer.create(
