@@ -20,7 +20,7 @@ export default () =>
     {
       name: "a secondary image",
       test() {
-        const output = TestRenderer.create(
+        const testRenderer = TestRenderer.create(
           <Article
             {...articleProps}
             adConfig={adConfig}
@@ -52,13 +52,13 @@ export default () =>
             onVideoPress={() => {}}
           />
         );
-        expect(output).toMatchSnapshot();
+        expect(testRenderer).toMatchSnapshot();
       }
     },
     {
       name: "an inline image",
       test() {
-        const output = TestRenderer.create(
+        const testRenderer = TestRenderer.create(
           <Article
             {...articleProps}
             adConfig={adConfig}
@@ -90,7 +90,7 @@ export default () =>
             onVideoPress={() => {}}
           />
         );
-        expect(output).toMatchSnapshot();
+        expect(testRenderer).toMatchSnapshot();
       }
     }
   ]);
