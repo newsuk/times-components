@@ -26,7 +26,6 @@ const ProfileProvider = (client, analyticsStream, data) =>
             adConfig: data.mapProfileToAdConfig(),
             analyticsStream,
             author,
-            debounceTimeMs: data.debounceTimeMs,
             error,
             isLoading,
             onArticlePress: () => {},

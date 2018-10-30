@@ -10,10 +10,9 @@ module.exports = ({ debounceTimeMs = 0, makeArticleUrl, page, slug, uri }) => {
       debounceTimeMs,
       makeArticleUrl,
       page,
-      slug,
-      uri
+      slug
     },
-    name: "topic"
+    name: "topicPage"
   };
   return runServer(topic, options);
 };
