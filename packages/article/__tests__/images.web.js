@@ -7,7 +7,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import shared from "./images.base";
+import shared from "./images.base.web";
 
 jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
 
