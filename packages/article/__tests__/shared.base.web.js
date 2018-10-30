@@ -95,48 +95,43 @@ export const snapshotTests = [
             name: "link"
           },
           {
+            attributes: {},
             children: [
               {
-                attributes: {},
-                children: [
-                  {
-                    attributes: {
-                      value: "Some content"
-                    },
-                    children: [],
-                    name: "text"
-                  }
-                ],
-                name: "paragraph"
-              },
-              {
                 attributes: {
-                  caption: {
-                    name: "AName",
-                    twitter: "@AName"
-                  },
-                  content: "A pull quote"
+                  value: "Some content"
                 },
                 children: [],
-                name: "pullQuote"
-              },
-              {
-                attributes: {
-                  brightcoveAccountId: "57838016001",
-                  brightcovePolicyKey: "1.2.3.4",
-                  brightcoveVideoId: "4084164751001",
-                  caption: "This is video caption",
-                  display: "primary",
-                  paidOnly: "false",
-                  posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-                  posterImageUrl: "https://image.io",
-                  skySports: false
-                },
-                children: [],
-                name: "video"
+                name: "text"
               }
             ],
-            name: "paywall"
+            name: "paragraph"
+          },
+          {
+            attributes: {
+              caption: {
+                name: "AName",
+                twitter: "@AName"
+              },
+              content: "A pull quote"
+            },
+            children: [],
+            name: "pullQuote"
+          },
+          {
+            attributes: {
+              brightcoveAccountId: "57838016001",
+              brightcovePolicyKey: "1.2.3.4",
+              brightcoveVideoId: "4084164751001",
+              caption: "This is video caption",
+              display: "primary",
+              paidOnly: "false",
+              posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+              posterImageUrl: "https://image.io",
+              skySports: false
+            },
+            children: [],
+            name: "video"
           }
         ]
       });
