@@ -43,10 +43,11 @@ const makeAnalyticsStream = options => {
   return reporter.analytics;
 };
 
-module.exports = (component, ...parameters) => {
+module.exports = (component, useGET, ...parameters) => {
   const clientOptions = {
     initialState: window.__APOLLO_STATE__,
-    uri: window.nuk.graphqlapi.url
+    uri: window.nuk.graphqlapi.url,
+    useGET
   };
   const client = makeClient(clientOptions);
 

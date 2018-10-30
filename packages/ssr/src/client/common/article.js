@@ -13,5 +13,7 @@ module.exports = (makeArticleUrl, mapArticleToAdConfig) => {
     mapArticleToAdConfig
   };
 
-  runClient(article, data);
+  const useGET = false;
+
+  runClient(article, useGET, data);
 };

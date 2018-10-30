@@ -16,5 +16,7 @@ module.exports = (makeArticleUrl, mapProfileToAdConfig) => {
     slug
   };
 
-  runClient(authorProfile, data);
+  const useGET = true;
+
+  runClient(authorProfile, useGET, data);
 };

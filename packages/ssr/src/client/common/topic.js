@@ -15,5 +15,7 @@ module.exports = (makeArticleUrl, mapTopicToAdConfig) => {
     slug
   };
 
-  runClient(topic, data);
+  const useGET = true;
+
+  runClient(topic, useGET, data);
 };
