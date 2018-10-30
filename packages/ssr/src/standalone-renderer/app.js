@@ -103,25 +103,24 @@ server.get("/topic/:slug", (request, response) => {
     query: { page }
   } = request;
   const pageNum = toNumber(page) || 1;
+  const uri = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic(slug, pageNum)
-    .then(({ extraStyles, initialState, markup, styles }) =>
+    .topic({
+      makeArticleUrl,
+      page: pageNum,
+      slug,
+      uri
+    })
+    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
-        makeHtml(
-          initialState,
-          {
-            page: pageNum,
-            slug
-          },
-          {
-            bundleName: "topic",
-            extraStyles,
-            markup,
-            styles,
-            title: slug
-          }
-        )
+        makeHtml(initialState, initialProps, {
+          bundleName: "topic",
+          extraStyles,
+          markup,
+          styles,
+          title: slug
+        })
       )
     );
 });
