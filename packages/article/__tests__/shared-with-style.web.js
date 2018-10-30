@@ -93,57 +93,62 @@ export default () => {
           name: "paragraph"
         },
         {
-          attributes: {
-            caption: {
-              name: "AName",
-              twitter: "@AName"
+          children: [
+            {
+              attributes: {
+                caption: {
+                  name: "AName",
+                  twitter: "@AName"
+                },
+                content: "A pull quote"
+              },
+              children: [],
+              name: "pullQuote"
             },
-            content: "A pull quote"
-          },
-          children: [],
-          name: "pullQuote"
-        },
-        {
-          attributes: {
-            brightcoveAccountId: "57838016001",
-            brightcovePolicyKey: "1.2.3.4",
-            brightcoveVideoId: "4084164751001",
-            caption: "This is video caption",
-            display: "primary",
-            paidOnly: "false",
-            posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            posterImageUrl: "https://image.io",
-            skySports: false
-          },
-          children: [],
-          name: "video"
-        },
-        {
-          attributes: {},
-          children: [],
-          name: "ad"
-        },
-        {
-          attributes: {
-            caption: "A Caption",
-            credits: "Some Credits",
-            display: "secondary",
-            ratio: "3:2",
-            url: "https://image-2.io"
-          },
-          children: [],
-          name: "image"
-        },
-        {
-          attributes: {
-            caption: "A Caption",
-            credits: "Some Credits",
-            display: "inline",
-            ratio: "9:4",
-            url: "https://image-inline.io"
-          },
-          children: [],
-          name: "image"
+            {
+              attributes: {
+                brightcoveAccountId: "57838016001",
+                brightcovePolicyKey: "1.2.3.4",
+                brightcoveVideoId: "4084164751001",
+                caption: "This is video caption",
+                display: "primary",
+                paidOnly: "false",
+                posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+                posterImageUrl: "https://image.io",
+                skySports: false
+              },
+              children: [],
+              name: "video"
+            },
+            {
+              attributes: {},
+              children: [],
+              name: "ad"
+            },
+            {
+              attributes: {
+                caption: "A Caption",
+                credits: "Some Credits",
+                display: "secondary",
+                ratio: "3:2",
+                url: "https://image-2.io"
+              },
+              children: [],
+              name: "image"
+            },
+            {
+              attributes: {
+                caption: "A Caption",
+                credits: "Some Credits",
+                display: "inline",
+                ratio: "9:4",
+                url: "https://image-inline.io"
+              },
+              children: [],
+              name: "image"
+            }
+          ],
+          name: "paywall"
         }
       ]
     });

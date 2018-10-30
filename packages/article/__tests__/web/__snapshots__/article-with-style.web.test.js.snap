@@ -682,66 +682,70 @@ exports[`full article with style 1`] = `
       >
         Some content
       </p>
-      <div
-        className="c15 S1"
+      <span
+        className="paywall"
       >
         <div
-          className="c16 S1"
-        >
-          <PullQuote />
-        </div>
-      </div>
-      <div
-        className="c13 S1"
-      >
-        <figure
-          className="IS12"
+          className="c15 S1"
         >
           <div
-            className="IS11 S10"
+            className="c16 S1"
+          >
+            <PullQuote />
+          </div>
+        </div>
+        <div
+          className="c13 S1"
+        >
+          <figure
+            className="IS12"
           >
             <div
-              className="IS10 S1"
+              className="IS11 S10"
             >
               <div
-                className="IS9"
+                className="IS10 S1"
               >
                 <div
-                  className="IS8"
+                  className="IS9"
                 >
-                  <video
-                    className="video-js IS7"
-                  />
+                  <div
+                    className="IS8"
+                  >
+                    <video
+                      className="video-js IS7"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
+            <figcaption>
+              <div
+                className="c17 S1"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <Ad
+          className="IS13"
+        />
+        <div>
+          <div
+            className="c18 S1"
+          >
+            <ArticleImage />
           </div>
-          <figcaption>
-            <div
-              className="c17 S1"
-            >
-              <Caption />
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS13"
-      />
-      <div>
-        <div
-          className="c18 S1"
-        >
-          <ArticleImage />
         </div>
-      </div>
-      <div>
-        <div
-          className="c19 S1"
-        >
-          <ArticleImage />
+        <div>
+          <div
+            className="c19 S1"
+          >
+            <ArticleImage />
+          </div>
         </div>
-      </div>
+      </span>
     </div>
   </div>
   <div

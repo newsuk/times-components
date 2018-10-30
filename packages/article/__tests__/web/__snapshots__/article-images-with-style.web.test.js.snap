@@ -2,14 +2,16 @@
 
 exports[`1. a secondary image 1`] = `
 .c9 {
-  color: #333333;
-  display: block;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin: 0 auto 25px;
-  padding-right: 10px;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
 }
 
 .c3 {
@@ -63,11 +65,10 @@ exports[`1. a secondary image 1`] = `
 
 @media (min-width:768px) {
   .c9 {
-    font-size: 18px;
-    line-height: 30px;
+    width: 80.8%;
+    margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    width: 80.8%;
   }
 }
 
@@ -228,15 +229,6 @@ exports[`1. a secondary image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
-
-.IS2 {
-  font-family: TimesDigitalW04;
-  font-size: 17;
-  line-height: 26;
-  color: #333333;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
 </style>
 
 <article>
@@ -288,11 +280,13 @@ exports[`1. a secondary image 1`] = `
     <div
       className="c8 S1"
     >
-      <p
-        className="c9 IS2"
-      >
-        Some content
-      </p>
+      <div>
+        <div
+          className="c9 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
     </div>
   </div>
   <aside />
@@ -304,14 +298,17 @@ exports[`1. a secondary image 1`] = `
 
 exports[`2. an inline image 1`] = `
 .c9 {
-  color: #333333;
-  display: block;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin: 0 auto 25px;
-  padding-right: 10px;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
 }
 
 .c3 {
@@ -365,11 +362,10 @@ exports[`2. an inline image 1`] = `
 
 @media (min-width:768px) {
   .c9 {
-    font-size: 18px;
-    line-height: 30px;
+    width: 80.8%;
+    margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    width: 80.8%;
   }
 }
 
@@ -530,15 +526,6 @@ exports[`2. an inline image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
-
-.IS2 {
-  font-family: TimesDigitalW04;
-  font-size: 17;
-  line-height: 26;
-  color: #333333;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
 </style>
 
 <article>
@@ -590,11 +577,13 @@ exports[`2. an inline image 1`] = `
     <div
       className="c8 S1"
     >
-      <p
-        className="c9 IS2"
-      >
-        Some content
-      </p>
+      <div>
+        <div
+          className="c9 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
     </div>
   </div>
   <aside />
