@@ -2,6 +2,8 @@
 
 exports[`article page 1`] = `
 <Article
+  article={null}
+  error={null}
   isLoading={true}
   pageSection="News"
 />
