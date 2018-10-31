@@ -25,7 +25,9 @@ jest.mock("react-apollo", () => ({
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  minimalise((_, key) => ["query", "propsToVariable", "results", "propsToVariables"].includes(key))
+  minimalise((_, key) =>
+    ["query", "propsToVariable", "results", "propsToVariables"].includes(key)
+  )
 );
 
 const query = gql`
