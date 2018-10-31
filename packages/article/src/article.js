@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
+import AdComposer from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
@@ -109,27 +110,43 @@ class Article extends Component {
       name: item.type
     }));
 
-    const { analyticsStream, header, onAuthorPress, onCommentGuidelinesPress, onCommentsPress, onLinkPress, onRelatedArticlePress, onTopicPress, onTwitterLinkPress, onViewableItemsChanged, onVideoPress, receiveChildList } = this.props;
-    // receiveChildList(articleData);
+    const {
+      articleAdConfig,
+      analyticsStream,
+      header,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onViewableItemsChanged,
+      onVideoPress,
+      receiveChildList
+    } = this.props;
+    receiveChildList(articleData);
 
     return (
-      <ArticleContent
-        data={articleData}
-        header={header}
-        initialListSize={listViewSize}
-        onAuthorPress={onAuthorPress}
-        onCommentGuidelinesPress={onCommentGuidelinesPress}
-        onCommentsPress={onCommentsPress}
-        onLinkPress={onLinkPress}
-        onRelatedArticlePress={onRelatedArticlePress}
-        onTopicPress={onTopicPress}
-        onTwitterLinkPress={onTwitterLinkPress}
-        onVideoPress={onVideoPress}
-        onViewableItemsChanged={onViewableItemsChanged}
-        pageSize={listViewPageSize}
-        renderRow={renderRow(analyticsStream, this.state.width)}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-      />
+      <AdComposer adConfig={articleAdConfig}>
+        <ArticleContent
+          data={articleData}
+          header={header}
+          initialListSize={listViewSize}
+          onAuthorPress={onAuthorPress}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          onLinkPress={onLinkPress}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPress}
+          onTwitterLinkPress={onTwitterLinkPress}
+          onVideoPress={onVideoPress}
+          onViewableItemsChanged={onViewableItemsChanged}
+          pageSize={listViewPageSize}
+          renderRow={renderRow(analyticsStream, this.state.width)}
+          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+        />
+      </AdComposer>
     );
   }
 }

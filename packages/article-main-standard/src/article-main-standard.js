@@ -95,7 +95,6 @@ class ArticlePage extends Component {
 
     return(
       <AdComposer adConfig={this.props.adConfig}>
-        <Fragment>
         <Article
           data={this.props.article}
           header={this.renderHeader}
@@ -110,8 +109,8 @@ class ArticlePage extends Component {
           onViewableItemsChanged={
             this.props.onViewed ? this.onViewableItemsChanged : null
           }
+          receiveChildList={receiveChildList}
         />
-        </Fragment>
       </AdComposer>
     )
   }

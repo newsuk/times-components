@@ -13,7 +13,6 @@ const append = ({ data, type }, list) => {
 };
 
 const prepareDataForListView = articleData => {
-
   const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
         relatedArticleSlice: {

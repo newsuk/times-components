@@ -1,23 +1,11 @@
 /* eslint-disable react/no-multi-comp */
-
 import React from "react";
-import TestRenderer from "react-test-renderer";
 import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
-
-const findComponents = (testInstance, componentName) =>
-  testInstance.root.findAll(node => {
-    if (typeof node.type === "string") {
-      return node.type.includes(componentName);
-    }
-
-    return false;
-  });
 
 const emptyArticle = {
   byline: null,
@@ -31,7 +19,6 @@ const emptyArticle = {
 };
 
 const renderArticle = data => (
-  // <AdComposer adConfig={articleAdConfig}>
   <Context.Provider
     value={{
       makeArticleUrl,
@@ -50,7 +37,6 @@ const renderArticle = data => (
       onTwitterLinkPress={() => {}}
     />
   </Context.Provider>
-  // </AdComposer>
 );
 
 export const snapshotTests = renderComponent => [
@@ -320,10 +306,7 @@ export default (renderComponent, platformTests = []) => {
     global.Intl = realIntl;
   });
 
-  iterator([
-    ...snapshotTests(renderComponent),
-    ...platformTests
-  ]);
+  iterator([...snapshotTests(renderComponent), ...platformTests]);
 };
 
 export { adConfig };

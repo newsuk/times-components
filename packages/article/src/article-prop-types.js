@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 const articlePropTypes = {
+  adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({}),
   header: PropTypes.func,
@@ -8,6 +9,7 @@ const articlePropTypes = {
 };
 
 const articleDefaultProps = {
+  adConfig: {},
   data: null,
   header: () => null,
   receiveChildList: () => {}

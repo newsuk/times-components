@@ -19,7 +19,7 @@ const ArticleContent = ({
   onTwitterLinkPress,
   onVideoPress,
   onViewableItemsChanged,
-  renderRow,
+  renderRow
 }) => (
   <FlatList
     data={data}
@@ -54,6 +54,7 @@ ArticleContent.propTypes = {
       type: PropTypes.string.isRequired
     })
   ).isRequired,
+  header: PropTypes.func,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -67,6 +68,7 @@ ArticleContent.propTypes = {
 };
 
 ArticleContent.defaultProps = {
+  header: () => null,
   onViewableItemsChanged: () => {}
 };
 

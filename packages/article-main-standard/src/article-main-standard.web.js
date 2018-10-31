@@ -126,7 +126,8 @@ const ArticleMainStandard = ({
   analyticsStream,
   article,
   isLoading,
-  error
+  error,
+  receiveChildList
 }) => {
   if (error || isLoading) {
     return null;
@@ -137,6 +138,7 @@ const ArticleMainStandard = ({
       <ArticlePage
         analyticsStream={analyticsStream}
         data={article}
+        receiveChildList={receiveChildList}
       />
     </AdComposer>
   );

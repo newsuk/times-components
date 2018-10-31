@@ -16,13 +16,15 @@ const articlePagePropTypes = {
       message: PropTypes.string
     })
   }),
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
+  receiveChildList: PropTypes.func
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
-  isLoading: false
+  isLoading: false,
+  receiveChildList: () => {}
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };
