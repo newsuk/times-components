@@ -48,6 +48,7 @@ const SimpleArticleView = ({ article, articleId, error }) => (
     onVideoPress={onVideoPress}
     onTopicPress={onTopicPress}
     platformAdConfig={platformAdConfig}
+    refetch={() => refetch(articleId)}
   />
 );
 

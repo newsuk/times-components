@@ -62,7 +62,7 @@ const ArticleView = ({
       onVideoPress={onVideoPress}
       onTopicPress={onTopicPress}
       platformAdConfig={adConfig}
-      refetch={articleId => refetch(articleId)}
+      refetch={() => refetch(articleId)}
       scale={scale}
       sectionName={sectionName}
     />
