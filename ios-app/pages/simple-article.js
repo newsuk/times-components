@@ -36,11 +36,12 @@ const platformAdConfig = {
 
 const SimpleArticlePageView = SimpleArticle(config)(fetch);
 
-const SimpleArticleView = ({ article, articleId }) => (
+const SimpleArticleView = ({ article, articleId, error }) => (
   <SimpleArticlePageView
-    article={article}
+    article={article ? JSON.parse(article).data.article : null}
     articleId={articleId}
     analyticsStream={track}
+    error={error}
     onArticlePress={onArticlePress}
     onAuthorPress={onAuthorPress}
     onLinkPress={onLinkPress}
@@ -51,7 +52,14 @@ const SimpleArticleView = ({ article, articleId }) => (
 );
 
 SimpleArticleView.propTypes = {
-  articleId: PropTypes.string.isRequired
+  article: PropTypes.shape({}),
+  articleId: PropTypes.string.isRequired,
+  error: PropTypes.shape({})
+};
+
+SimpleArticleView.defaultProps = {
+  article: null,
+  error: null
 };
 
 export default SimpleArticleView;

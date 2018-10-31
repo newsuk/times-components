@@ -44,7 +44,7 @@ const ArticleView = ({
   return (
     <SimpleArticlePageView
       articleId={articleId}
-      article={JSON.parse(article).data.article}
+      article={article ? JSON.parse(article).data.article : null}
       analyticsStream={event => {
         if (event.object === "Article" && event.action === "Viewed") {
           onArticleLoaded(event.attrs.articleId, event);
