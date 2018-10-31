@@ -12,7 +12,8 @@ const Article = props => {
   const {
     analyticsStream,
     data: { content, section, url, topics, relatedArticleSlice },
-    header
+    header,
+    receiveChildList
   } = props;
 
   // eslint-disable-next-line react/prop-types
@@ -27,6 +28,13 @@ const Article = props => {
         }}
       />
     ) : null;
+
+    receiveChildList([
+      {
+        elementId: "related-articles",
+        name: "related articles"
+      }
+    ]);
 
   return (
     <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
