@@ -1,11 +1,16 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import Context from "@times-components/context";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import ArticleListPageError from "../src/article-list-page-error";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 jest.mock("@times-components/button", () => "Button");
 jest.mock("../src/article-list-item", () => ({ article }) => {
