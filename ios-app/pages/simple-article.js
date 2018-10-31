@@ -41,7 +41,7 @@ const SimpleArticleView = ({ article, articleId, error }) => (
     article={article ? JSON.parse(article).data.article : null}
     articleId={articleId}
     analyticsStream={track}
-    error={error}
+    error={error ? { message: error } : null}
     onArticlePress={onArticlePress}
     onAuthorPress={onAuthorPress}
     onLinkPress={onLinkPress}
@@ -54,7 +54,7 @@ const SimpleArticleView = ({ article, articleId, error }) => (
 SimpleArticleView.propTypes = {
   article: PropTypes.shape({}),
   articleId: PropTypes.string.isRequired,
-  error: PropTypes.shape({})
+  error: PropTypes.string
 };
 
 SimpleArticleView.defaultProps = {

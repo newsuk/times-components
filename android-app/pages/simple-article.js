@@ -52,7 +52,7 @@ const ArticleView = ({
           track(event);
         }
       }}
-      error={error}
+      error={error ? { message: error } : null}
       omitErrors={omitErrors}
       onArticlePress={onArticlePress}
       onAuthorPress={onAuthorPress}
@@ -73,7 +73,7 @@ ArticleView.propTypes = {
   adTestMode: PropTypes.string,
   article: PropTypes.shape({}),
   articleId: PropTypes.string.isRequired,
-  error: PropTypes.shape({}),
+  error: PropTypes.string,
   omitErrors: PropTypes.bool.isRequired,
   scale: PropTypes.string.isRequired,
   sectionName: PropTypes.string
