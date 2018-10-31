@@ -8,7 +8,8 @@ const {
   onLinkPress,
   onAuthorPress,
   onVideoPress,
-  onTopicPress
+  onTopicPress,
+  refetch
 } = NativeModules.NativeModuleArticleActions;
 const config = NativeModules.NativeModuleReactConfig;
 const { fetch } = NativeModules.NativeModuleFetch;
