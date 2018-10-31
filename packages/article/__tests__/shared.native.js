@@ -46,7 +46,7 @@ export default () => {
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture,
               content: [
                 {

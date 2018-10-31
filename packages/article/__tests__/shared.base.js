@@ -1,5 +1,6 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
+import { Text, View } from "react-native";
 import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
@@ -18,7 +19,7 @@ const emptyArticle = {
   topics: null
 };
 
-const renderArticle = data => (
+const renderArticle = (data, header) => (
   <Context.Provider
     value={{
       makeArticleUrl,
@@ -26,8 +27,10 @@ const renderArticle = data => (
     }}
   >
     <Article
+      adConfig={adConfig}
       analyticsStream={() => {}}
       data={data}
+      header={header}
       onAuthorPress={() => {}}
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
@@ -278,6 +281,15 @@ export const snapshotTests = renderComponent => [
 
       const output = renderComponent(renderArticle(article));
 
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "article with header",
+    test() {
+      const header = () => <View><Text>Example Header</Text></View>
+      const article = articleFixture(...testFixture);
+      const output = renderComponent(renderArticle(article), header);
       expect(output).toMatchSnapshot();
     }
   },

@@ -6,28 +6,9 @@ exports[`1. scaled medium full article 1`] = `
     <View>
       <View />
       <View>
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
-            }
-          >
-            Some content
-          </Text>
-        </View>
+        <ArticleParagraph>
+          Some content
+        </ArticleParagraph>
       </View>
       <View>
         <View
@@ -60,28 +41,9 @@ exports[`2. scaled large full article 1`] = `
     <View>
       <View />
       <View>
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 21,
-                "lineHeight": 31,
-                "marginBottom": 20,
-              }
-            }
-          >
-            Some content
-          </Text>
-        </View>
+        <ArticleParagraph>
+          Some content
+        </ArticleParagraph>
       </View>
       <View>
         <View
@@ -114,28 +76,9 @@ exports[`3. scaled xlarge full article 1`] = `
     <View>
       <View />
       <View>
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 23,
-                "lineHeight": 33,
-                "marginBottom": 20,
-              }
-            }
-          >
-            Some content
-          </Text>
-        </View>
+        <ArticleParagraph>
+          Some content
+        </ArticleParagraph>
       </View>
       <View>
         <View
