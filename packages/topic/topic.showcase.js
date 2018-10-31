@@ -6,7 +6,7 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
-import { makeArticleUrl } from "@times-components/utils";
+import { makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";

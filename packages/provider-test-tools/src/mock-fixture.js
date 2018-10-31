@@ -1,19 +1,23 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 import schema from "@times-components/schema/schema.json";
+import { graphql } from "graphql";
+import { print } from "graphql/language/printer";
 import mm from "./make-mocks";
 
 const makeMocks = mm(schema);
 
 const makeQuery = ({ defaults, delay, error, query, variables }) =>
-  makeMocks(defaults)(query, { variables }).then(mock => ({
-    defaults,
-    delay,
-    error,
-    mock,
-    query,
-    variables
-  }));
+  graphql(makeMocks(defaults), print(query), null, null, variables).then(
+    mock => ({
+      defaults,
+      delay,
+      error,
+      mock,
+      query,
+      variables
+    })
+  );
 
 const toResponse = ({ delay, error, mock, query, variables }) => ({
   delay,
