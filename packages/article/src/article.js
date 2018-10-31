@@ -127,6 +127,7 @@ class Article extends Component {
         onTopicPress={onTopicPress}
         onTwitterLinkPress={onTwitterLinkPress}
         onVideoPress={onVideoPress}
+        onViewableItemsChanged={onViewableItemsChanged}
         pageSize={listViewPageSize}
         renderRow={renderRow(analyticsStream, this.state.width)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
