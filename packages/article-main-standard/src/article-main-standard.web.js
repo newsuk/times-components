@@ -61,9 +61,7 @@ class ArticlePage extends Component {
         standfirst,
         topics,
         url
-      },
-      observed,
-      registerNode
+      }
     } = this.props;
     const leadAssetProps = getLeadAsset(this.props.data);
 
@@ -109,8 +107,6 @@ class ArticlePage extends Component {
               <Article
                 analyticsStream={analyticsStream}
                 data={this.props.data}
-                observed={observed}
-                registerNode={registerNode}
               />
             </BodyContainer>
           <Ad contextUrl={url} section={section} slotName="pixel" />
@@ -138,17 +134,10 @@ const ArticleMainStandard = ({
 
   return (
     <AdComposer adConfig={adConfig}>
-       {/* LAZY LOADING TO COME OUT */}
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-        {({ observed, registerNode }) => (
-          <ArticlePage
-            analyticsStream={analyticsStream}
-            data={article}
-            observed={observed}
-            registerNode={registerNode}
-          />
-        )}
-      </LazyLoad>
+      <ArticlePage
+        analyticsStream={analyticsStream}
+        data={article}
+      />
     </AdComposer>
   );
 };
