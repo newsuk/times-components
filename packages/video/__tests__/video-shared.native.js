@@ -9,7 +9,8 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import { hash, iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 

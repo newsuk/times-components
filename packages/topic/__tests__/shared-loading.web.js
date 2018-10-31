@@ -5,7 +5,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import { hash } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 import shared from "./shared-loading.base";
 import topic from "./fixtures";
 

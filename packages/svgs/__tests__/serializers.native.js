@@ -7,7 +7,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import { hash } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 
 const longValues = new Set(["d", "transform"]);
 

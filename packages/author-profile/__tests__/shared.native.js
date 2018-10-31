@@ -8,7 +8,7 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import { hash } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 import shared from "./shared.base";
 import AuthorProfile from "../src/author-profile";
 import author from "./fixtures";

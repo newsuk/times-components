@@ -9,7 +9,7 @@ import {
   replacePropTransform,
   replaceTransform
 } from "@times-components/jest-serializer";
-import { hash } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 import shared from "./shared-colour.base";
 import longKeysSet from "./shared-long-keys-set";
 

@@ -6,7 +6,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import { hash } from "@times-components/test-utils";
+import hash from "@times-components/test-utils/hash";
 import { omitNative as omitProps } from "./utils";
 import shared from "./shared-error.base.native";
 
