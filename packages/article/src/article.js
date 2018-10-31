@@ -10,8 +10,8 @@ import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
 import {
-  articlePagePropTypes,
-  articlePageDefaultProps
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
 import getHeadline from "./utils";
@@ -75,16 +75,6 @@ const renderRow = analyticsStream => (
 };
 
 class Article extends Component {
-  static getDerivedStateFromProps(props, state) {
-    if (!props.isLoading && !props.error) {
-      return {
-        ...state,
-        dataSource: listViewDataHelper(props.data)
-      };
-    }
-    return state;
-  }
-
   constructor(props) {
     super(props);
 
@@ -113,10 +103,18 @@ class Article extends Component {
   }
 
   render() {
-    const { analyticsStream, header, onAuthorPress, onCommentGuidelinesPress, onCommentsPress, onLinkPress, onRelatedArticlePress, onTopicPress, onTwitterLinkPress, onVideoPress } = this.props;
+    const articleData = this.state.dataSource.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
+    const { analyticsStream, header, onAuthorPress, onCommentGuidelinesPress, onCommentsPress, onLinkPress, onRelatedArticlePress, onTopicPress, onTwitterLinkPress, onViewableItemsChanged, onVideoPress, receiveChildList } = this.props;
+    // receiveChildList(articleData);
+
     return (
       <ArticleContent
-        data={this.state.dataSource}
+        data={articleData}
         header={header}
         initialListSize={listViewSize}
         onAuthorPress={onAuthorPress}
@@ -137,7 +135,7 @@ class Article extends Component {
 }
 
 Article.propTypes = {
-  ...articlePagePropTypes,
+  ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -146,6 +144,6 @@ Article.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
-Article.defaultProps = articlePageDefaultProps;
+Article.defaultProps = articleDefaultProps;
 
 export default Article;

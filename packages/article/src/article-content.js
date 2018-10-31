@@ -18,7 +18,7 @@ const ArticleContent = ({
   onTopicPress,
   onTwitterLinkPress,
   onVideoPress,
-  onViewableItemsChanged
+  onViewableItemsChanged,
   renderRow,
 }) => (
   <FlatList
