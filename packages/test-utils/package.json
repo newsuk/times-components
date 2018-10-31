@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -37,8 +37,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.4",
-    "@times-components/webpack-configurator": "2.0.10",
+    "@times-components/eslint-config-thetimes": "0.8.5",
+    "@times-components/webpack-configurator": "2.0.11",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
