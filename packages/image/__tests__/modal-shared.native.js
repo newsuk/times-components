@@ -10,8 +10,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
-import hash from "@times-components/test-utils/hash";
+import { hash, iterator } from "@times-components/test-utils";
 import "./mocks";
 import { ModalImage } from "../src";
 

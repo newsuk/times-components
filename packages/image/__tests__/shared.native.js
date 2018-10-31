@@ -9,7 +9,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import hash from "@times-components/test-utils/hash";
+import { hash } from "@times-components/test-utils";
 import "./mocks";
 import Image from "../src";
 import shared from "./shared.base";

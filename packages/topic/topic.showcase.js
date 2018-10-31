@@ -6,7 +6,6 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
-import { makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
@@ -31,6 +30,11 @@ const articleImageRatio = "3:2";
 const name = "Chelsea";
 const pageSize = 20;
 const slug = "chelsea";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const makeTopic = (decorateAction, params) => (
   <MockFixture

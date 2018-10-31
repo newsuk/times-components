@@ -1,6 +1,6 @@
 import iterator from "./iterator";
-import makeArticleUrl from "./make-url";
+import hash from "./hash";
 import mockNativeModules from "./mock-native-modules";
 
-export { iterator, makeArticleUrl, mockNativeModules };
+export { iterator, hash, mockNativeModules };
 export * from "./faketime";

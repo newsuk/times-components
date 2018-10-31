@@ -6,7 +6,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import hash from "@times-components/test-utils/hash";
+import { hash } from "@times-components/test-utils";
 
 const longValues = new Set(["points"]);
 

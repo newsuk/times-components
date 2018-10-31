@@ -8,7 +8,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import hash from "@times-components/test-utils/hash";
+import { hash } from "@times-components/test-utils";
 import Watermark from "../src/watermark";
 
 jest.mock("../assets/watermark.png", () => ({ uri: "watermark-asset" }));

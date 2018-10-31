@@ -6,7 +6,7 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
-import hash from "@times-components/test-utils/hash";
+import { hash } from "@times-components/test-utils";
 import shared from "./shared.base";
 import author from "./fixtures";
 

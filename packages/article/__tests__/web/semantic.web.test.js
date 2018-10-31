@@ -1,7 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
-import hash from "@times-components/test-utils/hash";
+import { hash, iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
