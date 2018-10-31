@@ -128,4 +128,12 @@ server.get("/topic/:slug", (request, response) => {
     );
 });
 
-server.listen(port, () => console.log(`Serving at http://localhost:${port}`));
+const App = server.listen(port, () =>
+  console.log(`Serving at http://localhost:${port}`)
+);
+
+process.on("SIGTERM", () => {
+  App.close(() => {
+    process.exit(0);
+  });
+});

@@ -3,15 +3,20 @@
   "main": "src/server",
   "version": "1.3.9",
   "scripts": {
-    "cleanup-dist": "rm -rf dist",
     "bundle:dev": "webpack --config=webpack.config.dev.js",
     "bundle:prod": "NODE_ENV=production webpack --config=webpack.config.prod.js -p",
     "bundle:profile": "webpack --config=webpack.config.prod.js --profile --json > dist/stats.json",
-    "depcheck": "depcheck --ignores='depcheck,eslint,prettier,react-art,webpack*' --skip-missing",
+    "cleanup:servers": "pkill node",
+    "cleanup-dist": "rm -rf dist",
+    "depcheck": "depcheck --ignores='cypress, depcheck,eslint,graphql,prettier,react-art,wait-on,webpack*' --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "start": "node src/index.js"
+    "run:test": "yarn start:tpamock & yarn start:test & cypress run",
+    "start": "node src/index.js",
+    "start:test": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on http://localhost:3000",
+    "start:tpamock": "node ./mock-server & wait-on http://localhost:4000",
+    "test:integration": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn bundle:dev && yarn run:test && yarn cleanup:servers"
   },
   "repository": {
     "type": "git",
@@ -32,9 +37,15 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.4",
+    "@times-components/provider-test-tools": "1.8.2",
+    "apollo-server": "2.1.0",
+    "cypress": "3.1.0",
     "depcheck": "0.6.9",
     "eslint": "4.19.1",
+    "eslint-plugin-cypress": "2.0.1",
+    "graphql": "0.13.2",
     "prettier": "1.14.3",
+    "wait-on": "3.1.0",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },

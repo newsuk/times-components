@@ -21,6 +21,7 @@ module.exports = {
       "error",
       {
         devDependencies: [
+          "**/mock-*/**",
           "**/__tests__/**",
           "**/*.test.*",
           "**/fixtures/**",

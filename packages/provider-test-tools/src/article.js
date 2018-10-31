@@ -14,6 +14,14 @@ const convertRatio = ratio => {
   return "100/100";
 };
 
+const getMediaUrl = (obj, ratio) => {
+  const crop = obj[`crop${ratio.replace(":", "")}`];
+
+  return {
+    url: crop ? crop.url : `https://placeimg.com/${convertRatio(ratio)}/tech`
+  };
+};
+
 export default ({
   chooseMedia = () => ({ __typename: "Image" }),
   error = () => {},
@@ -21,9 +29,8 @@ export default ({
   makeRelatedArticle = x => x,
   relatedArticleCount = 3,
   variables = () => {}
-}) => {
+} = {}) => {
   const queryVariables = variables();
-  let articleIndex = -1;
   let mediaIndex = -1;
 
   return [
@@ -38,41 +45,23 @@ export default ({
               });
             }
 
-            articleIndex += 1;
-
-            return makeRelatedArticle(
-              article.relatedArticleSlice.items[articleIndex],
-              articleIndex
-            );
+            return makeRelatedArticle(parent);
           },
           ArticleSlice: () => ({
             __typename: "StandardSlice",
             items: new MockList(relatedArticleCount)
           }),
           Crop: (parent, { ratio }) => {
-            const relatedArticle =
-              article.relatedArticleSlice.items[articleIndex];
-
-            if (relatedArticle && relatedArticle.leadAsset) {
-              const crop =
-                relatedArticle.leadAsset[`crop${ratio.replace(":", "")}`];
-
-              return {
-                url: crop
-                  ? crop.url
-                  : `https://placeimg.com/${convertRatio(ratio)}/tech`
-              };
+            if (parent.posterImage) {
+              return getMediaUrl(parent.posterImage, ratio);
             }
 
-            return {
-              url: `https://placeimg.com/${convertRatio(ratio)}/tech`
-            };
+            return getMediaUrl(parent, ratio);
           },
+          DateTime: () => "2018-10-25",
           Markup: (parent, { maxCharCount }) => {
-            if (maxCharCount && articleIndex >= 0 && articleIndex <= 3) {
-              return article.relatedArticleSlice.items[articleIndex][
-                `summary${maxCharCount}`
-              ];
+            if (maxCharCount) {
+              return parent[`summary${maxCharCount}`] || {};
             }
 
             // this oddly returns the provided fixture
@@ -89,6 +78,8 @@ export default ({
             __typename: "StandardSlice",
             items: []
           }),
+          Tile: () => ({}),
+          URL: () => "https://test.io",
           UUID: () => "a-u-u-i-d"
         }
       },
