@@ -29,7 +29,7 @@ const getProps = decorateAction => ({
 const articleImageRatio = "3:2";
 const name = "Chelsea";
 const pageSize = 20;
-const articleSlug = "chelsea";
+const topicSlug = "chelsea";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
@@ -47,7 +47,7 @@ const makeTopic = (decorateAction, params) => (
             debounceTimeMs={250}
             page={1}
             pageSize={pageSize}
-            slug={articleSlug}
+            slug={topicSlug}
           >
             {({
               error,
@@ -63,7 +63,7 @@ const makeTopic = (decorateAction, params) => (
                 page={page}
                 pageSize={authorPageSize}
                 refetch={refetch}
-                slug={articleSlug}
+                slug={topicSlug}
                 topic={topic}
                 {...getProps(decorateAction)}
               />
@@ -86,7 +86,7 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug: articleSlug
+              slug: topicSlug
             }),
             makeItem(item, itemIndex) {
               if (fixtures.topicArticles[itemIndex]) {
@@ -97,7 +97,7 @@ export default {
             },
             name,
             pageSize,
-            slug: articleSlug
+            slug: topicSlug
           })
         ),
       name: "Default",
@@ -110,7 +110,7 @@ export default {
             {...getProps(decorateAction)}
             isLoading
             refetch={() => {}}
-            slug={articleSlug}
+            slug={topicSlug}
           />
         </MockedProvider>
       ),
@@ -126,13 +126,13 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug: articleSlug
+              slug: topicSlug
             }),
             count: 0,
             delay: 1500,
             name,
             pageSize,
-            slug: articleSlug
+            slug: topicSlug
           })
         ),
       name: "Empty State",
@@ -147,12 +147,12 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug: articleSlug
+              slug: topicSlug
             }),
             delay: 1000,
             name,
             pageSize,
-            slug: articleSlug,
+            slug: topicSlug,
             topicError: () => new Error("Topics Broke")
           })
         ),
