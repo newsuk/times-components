@@ -7,9 +7,13 @@ import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.jso
 import Context from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
-import { makeArticleUrl } from "@times-components/test-utils";
 import Article from "./src/article";
 import fullArticleFixture from "./fixtures/full-article";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const TestHeader = () => (
   <View
