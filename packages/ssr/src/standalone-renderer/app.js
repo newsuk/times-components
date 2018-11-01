@@ -40,6 +40,8 @@ const makeHtml = (
         </html>
       `;
 
+const logger = loggerFactory("silly");
+
 const toNumber = input => {
   const parsed = Number.parseInt(input, 10);
 
@@ -61,7 +63,6 @@ server.get("/article/:id", (request, response) => {
       }
     : null;
 
-  const logger = loggerFactory("silly");
   ssr
     .article({ headers, id, logger, makeArticleUrl, uri })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
@@ -86,7 +87,7 @@ server.get("/profile/:slug", (request, response) => {
   const uri = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .authorProfile({ currentPage, makeArticleUrl, slug, uri })
+    .authorProfile({ currentPage, logger, makeArticleUrl, slug, uri })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
@@ -110,6 +111,7 @@ server.get("/topic/:slug", (request, response) => {
 
   ssr
     .topic({
+      logger,
       makeArticleUrl,
       page: pageNum,
       slug,

@@ -1,9 +1,17 @@
 const topic = require("../component/topic");
 const runServer = require("../lib/run-server");
 
-module.exports = ({ debounceTimeMs = 0, makeArticleUrl, page, slug, uri }) => {
+module.exports = ({
+  debounceTimeMs = 0,
+  logger,
+  makeArticleUrl,
+  page,
+  slug,
+  uri
+}) => {
   const options = {
     client: {
+      logger,
       uri
     },
     data: {

@@ -5,6 +5,7 @@ const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
 module.exports = ({
   currentPage,
   debounceTime = 0,
+  logger,
   makeArticleUrl,
   perPage = 20,
   slug,
@@ -12,6 +13,7 @@ module.exports = ({
 }) => {
   const options = {
     client: {
+      logger,
       uri
     },
     data: {
