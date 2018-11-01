@@ -81,16 +81,10 @@ class Article extends Component {
 
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
 
-    if (props.data && !props.isLoading && !props.error) {
-      this.state = {
-        dataSource: listViewDataHelper(props.data),
-        width: normaliseWidth(screenWidthInPixels())
-      };
-    } else {
-      this.state = {
-        dataSource: {}
-      };
-    }
+    this.state = {
+      dataSource: listViewDataHelper(props.data),
+      width: normaliseWidth(screenWidthInPixels())
+    };
   }
 
   onViewableItemsChanged(info) {

@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@times-components/button"
-import ArticleComments from "../src/article-comments/article-comments"
 import { iterator } from "@times-components/test-utils";
+import ArticleComments from "../src/article-comments/article-comments"
 import TestRenderer from "react-test-renderer";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";

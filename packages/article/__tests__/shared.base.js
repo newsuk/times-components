@@ -7,6 +7,7 @@ import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import ArticleContent from "../src/article-content";
 
 const emptyArticle = {
   byline: null,
@@ -145,6 +146,11 @@ export const snapshotTests = renderComponent => [
               }
             ],
             name: "paragraph"
+          },
+          {
+            attributes: {},
+            children: [],
+            name: "ad"
           },
           {
             attributes: {
