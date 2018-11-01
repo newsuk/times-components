@@ -1,31 +1,42 @@
 import React from "react";
+import { NativeModules } from "react-native";
 import Article from "@times-components/article";
 import Context, { defaults } from "@times-components/context";
 import { colours } from "@times-components/styleguide";
-import adTargetConfig from "./client/ad-targeting-config";
+import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
 
-const ArticleBase = ({
-  article,
-  analyticsStream,
-  error,
-  isLoading,
-  platformAdConfig,
-  refetch,
-  omitErrors,
+const { track } = NativeModules.ReactAnalytics;
+const {
   onArticlePress,
+  onArticleLoaded,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
-  onVideoPress,
   onLinkPress,
   onTopicPress,
+  onVideoPress
+} = NativeModules.ArticleEvents;
+
+const ArticleBase = ({
+  adTestMode,
+  article,
+  error,
+  isLoading,
+  refetch,
+  omitErrors,
   scale,
   sectionName: pageSection
 }) => {
-  const adConfig =
-    isLoading || error ? {} : adTargetConfig(platformAdConfig, article);
   const articleSection = article ? article.section : null;
+  const adConfig =
+    isLoading || error
+      ? {}
+      : adTargetConfig({
+          adTestMode,
+          article,
+          sectionName: pageSection || articleSection
+        });
   const theme = {
     scale: scale || defaults.theme.scale,
     sectionColour: colours.section[pageSection || articleSection]
@@ -35,7 +46,13 @@ const ArticleBase = ({
     <Context.Provider value={{ theme }}>
       <Article
         adConfig={adConfig}
-        analyticsStream={analyticsStream}
+        analyticsStream={event => {
+          if (event.object === "Article" && event.action === "Viewed") {
+            onArticleLoaded(event.attrs.articleId, event);
+          } else {
+            track(event);
+          }
+        }}
         article={article}
         error={omitErrors ? null : error}
         isLoading={isLoading || (omitErrors && error)}
