@@ -43,7 +43,7 @@ const Article = props => {
       <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
         {({ observed, registerNode }) => (
           <Fragment>
-            {header()}
+            {header}
             <BodyContainer>
               <ArticleBody
                 content={content}
