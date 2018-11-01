@@ -1,9 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Debounce handles different debounce delays 1`] = `
+exports[`1. immediately updates props, but delays update of debouncedprops 1`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceRender": [Function],
+    "debounceTimeMs": 1000,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;
+
+exports[`1. immediately updates props, but delays update of debouncedprops 2`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceRender": [Function],
+    "debounceTimeMs": 1000,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;
+
+exports[`1. immediately updates props, but delays update of debouncedprops 3`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceRender": [Function],
+    "debounceTimeMs": 1000,
+    "foo": "updatedFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;
+
+exports[`2. handles different debounce delays 1`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "initialFoo",
   },
@@ -12,10 +52,11 @@ Object {
 }
 `;
 
-exports[`Debounce handles different debounce delays 2`] = `
+exports[`2. handles different debounce delays 2`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "initialFoo",
   },
@@ -24,10 +65,11 @@ Object {
 }
 `;
 
-exports[`Debounce handles different debounce delays 3`] = `
+exports[`2. handles different debounce delays 3`] = `
 Object {
   "debounceTimeMs": 2500,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 2500,
     "foo": "updatedFoo",
   },
@@ -36,10 +78,11 @@ Object {
 }
 `;
 
-exports[`Debounce handles zero debounce delay 1`] = `
+exports[`3. handles zero debounce delay 1`] = `
 Object {
   "debounceTimeMs": 0,
   "debouncedProps": Object {
+    "debounceRender": [Function],
     "debounceTimeMs": 0,
     "foo": "updatedFoo",
   },
@@ -48,38 +91,18 @@ Object {
 }
 `;
 
-exports[`Debounce immediately updates props, but delays update of debouncedProps 1`] = `
-Object {
-  "debounceTimeMs": 1000,
-  "debouncedProps": Object {
-    "debounceTimeMs": 1000,
-    "foo": "initialFoo",
-  },
-  "foo": "updatedFoo",
-  "isDebouncing": false,
-}
+exports[`6. the hoc returned by withdebounce renders the correct debounce component 1`] = `
+<Debounce
+  debounceTimeMs={1000}
+/>
 `;
 
-exports[`Debounce immediately updates props, but delays update of debouncedProps 2`] = `
-Object {
-  "debounceTimeMs": 1000,
-  "debouncedProps": Object {
-    "debounceTimeMs": 1000,
-    "foo": "initialFoo",
-  },
-  "foo": "updatedFoo",
-  "isDebouncing": false,
-}
-`;
-
-exports[`Debounce immediately updates props, but delays update of debouncedProps 3`] = `
-Object {
-  "debounceTimeMs": 1000,
-  "debouncedProps": Object {
-    "debounceTimeMs": 1000,
-    "foo": "updatedFoo",
-  },
-  "foo": "updatedFoo",
-  "isDebouncing": false,
-}
+exports[`7. the debounce component returned by hoc returned by withdebounce renders correctly 1`] = `
+<Inner
+  debouncedProps={
+    Object {
+      "foo": "bar",
+    }
+  }
+/>
 `;

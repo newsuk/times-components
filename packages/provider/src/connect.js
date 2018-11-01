@@ -1,56 +1,82 @@
+import React from "react";
 import pick from "lodash.pick";
-import { graphql } from "react-apollo";
+import { Query } from "react-apollo";
 import PropTypes from "prop-types";
-import withDebounce from "./debounce";
-
-const identity = a => a;
+import { Debounce } from "./debounce";
 
 const flatten = l =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
 
-const getQueryVariables = definitions =>
+const getQueryVariableNames = query =>
   flatten(
-    definitions.map(definition =>
+    query.definitions.map(definition =>
       (definition.variableDefinitions || []).map(
         variable => variable.variable.name.value
       )
     )
   );
 
-export const makeGraphqlOptions = (
-  variableNames,
-  propsToVariables = identity
-) => props => ({
-  variables: pick(
-    propsToVariables(props.debouncedProps || props),
-    variableNames
-  )
-});
+export const QueryProvider = ({
+  query,
+  propsToVariables,
+  debounceTimeMs,
+  ...props
+}) => (
+  <Debounce
+    {...props}
+    debounceRender={({ children, ...renderProps }) => {
+      const variables = pick(
+        propsToVariables(renderProps.debouncedProps || renderProps),
+        getQueryVariableNames(query)
+      );
 
-const connectGraphql = (query, propsToVariables) => {
-  const variableNames = getQueryVariables(query.definitions);
-  const Wrapper = ({
-    data: { error, loading, refetch, fetchMore, ...result },
-    children,
-    ...props
-  }) =>
-    children({
-      error,
-      fetchMore,
-      isLoading: loading,
-      refetch: () => refetch(), // using shorthand causes a react-native error
-      ...result,
-      ...props
-    });
-  Wrapper.propTypes = {
-    debouncedProps: PropTypes.shape({}).isRequired
-  };
+      return (
+        <Query query={query} variables={variables}>
+          {({ loading, data, refetch, fetchMore, error }) =>
+            children({
+              error,
+              fetchMore,
+              isLoading: loading,
+              refetch: () => refetch(),
+              variables,
+              ...renderProps,
+              ...data
+            })
+          }
+        </Query>
+      );
+    }}
+    debounceTimeMs={debounceTimeMs}
+  />
+);
 
-  const GraphQlComponent = graphql(query, {
-    options: makeGraphqlOptions(variableNames, propsToVariables)
-  })(Wrapper);
-
-  return withDebounce(GraphQlComponent);
+QueryProvider.propTypes = {
+  children: PropTypes.func.isRequired,
+  debounceTimeMs: PropTypes.number.isRequired,
+  propsToVariables: PropTypes.func,
+  query: PropTypes.shape({
+    definitions: PropTypes.arrayOf(
+      PropTypes.shape({
+        variableDefinitions: PropTypes.arrayOf(
+          PropTypes.shape({
+            variable: PropTypes.shape({
+              name: PropTypes.shape({
+                value: PropTypes.string.isRequired
+              }).isRequired
+            }).isRequired
+          })
+        )
+      })
+    ).isRequired
+  }).isRequired
 };
+
+QueryProvider.defaultProps = {
+  propsToVariables: i => i
+};
+
+const connectGraphql = (query, propsToVariables) => props => (
+  <QueryProvider {...props} propsToVariables={propsToVariables} query={query} />
+);
 
 export default connectGraphql;

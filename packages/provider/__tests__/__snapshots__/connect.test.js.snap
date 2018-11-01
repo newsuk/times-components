@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. connectgraphql renders the correct queryprovider component 1`] = `
+<QueryProvider
+  debounceTimeMs={1000}
+  foo="baz"
+>
+  <Component />
+</QueryProvider>
+`;
+
+exports[`2. when passing no props to variables, it should call its children with the correct props 1`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceRender": [Function],
+    "debounceTimeMs": 1000,
+    "foo": "bar",
+  },
+  "error": null,
+  "fetchMore": [Function],
+  "foo": "bar",
+  "isDebouncing": false,
+  "isLoading": false,
+  "refetch": [Function],
+  "variables": Object {},
+}
+`;
+
+exports[`3. when passing props to variables, it should call its children with the correct props 1`] = `
+Object {
+  "articleId": "123",
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "articleId": "123",
+    "debounceRender": [Function],
+    "debounceTimeMs": 1000,
+  },
+  "error": null,
+  "fetchMore": [Function],
+  "foo": "bar",
+  "isDebouncing": false,
+  "isLoading": false,
+  "refetch": [Function],
+  "variables": Object {
+    "id": "123",
+  },
+}
+`;
+
+exports[`4. should render the result of children 1`] = `
+<div>
+  Hello, World
+</div>
+`;
