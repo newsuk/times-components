@@ -33,8 +33,9 @@ const makeHtml = (
             ${initialState}
             <div id="main-container">${markup}</div>
           </body>
-          <script src="/vendor.bundle.js"></script>
-          <script src="/${bundleName}.bundle.js"></script>
+          <script src="/common.react.bundle.js"></script>
+          <script src="/${bundleName}.init.js"></script>
+          <script src="/${bundleName}.react.bundle.js"></script>
         </html>
       `;
 
