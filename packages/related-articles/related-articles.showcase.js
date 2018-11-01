@@ -1,7 +1,6 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import Context from "@times-components/context";
-import { makeArticleUrl } from "@times-components/test-utils";
 import storybookReporter from "@times-components/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
@@ -19,6 +18,11 @@ import opinionAndTwo1RelatedArticleFixture from "./fixtures/opinionandtwo/1-arti
 import opinionAndTwo2RelatedArticlesFixture from "./fixtures/opinionandtwo/2-articles.js";
 import opinionAndTwo3RelatedArticlesFixture from "./fixtures/opinionandtwo/3-articles.js";
 import opinionAndTwo3RelatedArticlesLeadAssetOverrideFixture from "./fixtures/opinionandtwo/3-articles-lead-asset-override";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([

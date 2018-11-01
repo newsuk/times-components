@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
@@ -14,6 +14,11 @@ import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
 import { omitWeb as omitProps } from "./utils";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 export default () => {
   addSerializers(

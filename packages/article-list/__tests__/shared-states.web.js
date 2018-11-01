@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Context from "@times-components/context";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   compose,
@@ -22,6 +22,11 @@ const omitProps = new Set([
   "datePublicationProps",
   "labelProps"
 ]);
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 export default () => {
   addSerializers(

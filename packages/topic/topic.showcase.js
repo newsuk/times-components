@@ -6,7 +6,6 @@ import {
   MockFixture,
   topic as makeParams
 } from "@times-components/provider-test-tools";
-import { makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
@@ -30,7 +29,12 @@ const getProps = decorateAction => ({
 const articleImageRatio = "3:2";
 const name = "Chelsea";
 const pageSize = 20;
-const slug = "chelsea";
+const topicSlug = "chelsea";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const makeTopic = (decorateAction, params) => (
   <MockFixture
@@ -43,7 +47,7 @@ const makeTopic = (decorateAction, params) => (
             debounceTimeMs={250}
             page={1}
             pageSize={pageSize}
-            slug={slug}
+            slug={topicSlug}
           >
             {({
               error,
@@ -59,7 +63,7 @@ const makeTopic = (decorateAction, params) => (
                 page={page}
                 pageSize={authorPageSize}
                 refetch={refetch}
-                slug={slug}
+                slug={topicSlug}
                 topic={topic}
                 {...getProps(decorateAction)}
               />
@@ -82,7 +86,7 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug: topicSlug
             }),
             makeItem(item, itemIndex) {
               if (fixtures.topicArticles[itemIndex]) {
@@ -93,7 +97,7 @@ export default {
             },
             name,
             pageSize,
-            slug
+            slug: topicSlug
           })
         ),
       name: "Default",
@@ -106,7 +110,7 @@ export default {
             {...getProps(decorateAction)}
             isLoading
             refetch={() => {}}
-            slug={slug}
+            slug={topicSlug}
           />
         </MockedProvider>
       ),
@@ -122,13 +126,13 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug: topicSlug
             }),
             count: 0,
             delay: 1500,
             name,
             pageSize,
-            slug
+            slug: topicSlug
           })
         ),
       name: "Empty State",
@@ -143,12 +147,12 @@ export default {
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug: topicSlug
             }),
             delay: 1000,
             name,
             pageSize,
-            slug,
+            slug: topicSlug,
             topicError: () => new Error("Topics Broke")
           })
         ),

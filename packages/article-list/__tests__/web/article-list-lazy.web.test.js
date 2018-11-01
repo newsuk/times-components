@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { mount } from "enzyme";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   enzymeRenderedSerializer,
@@ -15,6 +15,11 @@ import ArticleList from "../../src/article-list";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const omitProps = new Set(["class", "className", "style"]);
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 addSerializers(
   expect,
