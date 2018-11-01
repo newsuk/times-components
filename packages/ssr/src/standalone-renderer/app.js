@@ -5,6 +5,7 @@ const shrinkRay = require("shrink-ray");
 
 const ssr = require("../server");
 const makeArticleUrl = require("../lib/make-url");
+const loggerFactory = require("../logger/logger");
 
 const port = 3000;
 const server = express();
@@ -60,8 +61,9 @@ server.get("/article/:id", (request, response) => {
       }
     : null;
 
+  const logger = loggerFactory("silly");
   ssr
-    .article({ headers, id, makeArticleUrl, uri })
+    .article({ headers, id, logger, makeArticleUrl, uri })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {

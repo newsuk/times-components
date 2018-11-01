@@ -10,6 +10,9 @@ const { InMemoryCache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
 const safeStringify = require("./safe-stringify");
 const { ServerStyleSheet } = require("styled-components");
+const { ApolloLink } = require("apollo-link");
+const errorLink = require("./graphql-error-link");
+const LoggingLink = require("./graphql-logging-link");
 
 const makeClient = options => {
   if (!options.uri) {
@@ -27,9 +30,17 @@ const makeClient = options => {
     Object.assign(networkInterfaceOptions.headers, options.headers);
   }
 
+  const httpLink = createHttpLink(networkInterfaceOptions);
+
+  const link = ApolloLink.from([
+    new LoggingLink(options.uri, options.logger),
+    errorLink(options.logger),
+    httpLink
+  ]);
+
   return new ApolloClient({
     cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),
-    link: createHttpLink(networkInterfaceOptions),
+    link,
     ssrMode: true
   });
 };
