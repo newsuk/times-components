@@ -27,9 +27,9 @@ const angleBetweenTouches = ([
 };
 
 const pointBetweenTwoTouches = ([
-                                  { pageX: x1, pageY: y1 },
-                                  { pageX: x2, pageY: y2 }
-                                ]) => ({
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) => ({
   pageX: (x1 + x2) / 2,
   pageY: (y1 + y2) / 2
 });
@@ -40,9 +40,14 @@ class Gestures extends Component {
 
     this.state = {
       angle: new Animated.Value(0),
-      zoomRatio: new Animated.Value(1),
-      viewLayout: { width: 0, height: 0, x: 0, y: 0 },
-      center: { pageX: new Animated.Value(0), pageY: new Animated.Value(0) }
+      center: { pageX: new Animated.Value(0), pageY: new Animated.Value(0) },
+      viewLayout: {
+        height: new Animated.Value(0),
+        width: new Animated.Value(0),
+        x: new Animated.Value(0),
+        y: new Animated.Value(0)
+      },
+      zoomRatio: new Animated.Value(1)
     };
 
     this.panResponder = PanResponder.create({
@@ -75,6 +80,15 @@ class Gestures extends Component {
     this.onViewLayout = this.onViewLayout.bind(this);
   }
 
+  onViewLayout(evt) {
+    const { x, y, width, height } = evt.nativeEvent.layout;
+
+    this.state.viewLayout.x.setValue(x);
+    this.state.viewLayout.y.setValue(y);
+    this.state.viewLayout.width.setValue(width);
+    this.state.viewLayout.height.setValue(height);
+  }
+
   handlePinchStart({ nativeEvent: { touches } }) {
     this.startDistance = distanceBetweenTouches(touches);
     this.startAngle = angleBetweenTouches(touches);
@@ -87,47 +101,51 @@ class Gestures extends Component {
     const zoomRatio = distanceBetweenTouches(touches) / this.startDistance;
     const currentAngle = angleBetweenTouches(touches);
     const angle = (currentAngle - this.startAngle) % 360;
+    const center = pointBetweenTwoTouches(touches);
 
     this.state.zoomRatio.setValue(zoomRatio);
     this.state.angle.setValue(angle);
-
-    const center = pointBetweenTwoTouches(touches);
     this.state.center.pageX.setValue(center.pageX);
     this.state.center.pageY.setValue(center.pageY);
   }
 
-  onViewLayout(evt) {
-    this.setState({ viewLayout: evt.nativeEvent.layout });
-  }
-
   render() {
-    console.log(this.state.viewLayout.x, this.state.viewLayout.y);
-    const translateX = Animated.add(this.state.center.pageX, new Animated.Value(-this.state.viewLayout.x));
-    const translateY = Animated.add(this.state.center.pageY, new Animated.Value(-this.state.viewLayout.y));
+    const translateX = Animated.add(
+      this.state.center.pageX,
+      Animated.multiply(this.state.viewLayout.x, -1)
+    );
+    const translateY = Animated.add(
+      this.state.center.pageY,
+      Animated.multiply(this.state.viewLayout.y, -1)
+    );
 
     const transformStyle = {
       transform: [
-        { translateX: -(this.state.viewLayout.width / 2) },
-        { translateY: -(this.state.viewLayout.height / 2) },
+        { translateX: Animated.multiply(this.state.viewLayout.width, -0.5) },
+        { translateY: Animated.multiply(this.state.viewLayout.height, -0.5) },
         { translateX },
         { translateY },
         { scale: this.state.zoomRatio },
+        { translateX: Animated.multiply(translateX, -1) },
+        { translateY: Animated.multiply(translateY, -1) },
+        { translateX: Animated.divide(this.state.viewLayout.width, 2) },
+        { translateY: Animated.divide(this.state.viewLayout.height, 2) },
         {
           rotate: this.state.angle.interpolate({
             inputRange: [0, 359],
             outputRange: ["0 deg", "359 deg"]
           })
         },
-        { translateX: Animated.multiply(translateX, new Animated.Value(-1)) },
-        { translateY: Animated.multiply(translateY, new Animated.Value(-1)) },
-        { translateX: this.state.viewLayout.width / 2 },
-        { translateY: this.state.viewLayout.height / 2 },
         { perspective: 1000 } // Required to make animations work on Android
       ]
     };
 
     return (
-      <View style={{ flexGrow: 1 }} {...this.panResponder.panHandlers} onLayout={this.onViewLayout}>
+      <View
+        onLayout={this.onViewLayout}
+        style={{ flexGrow: 1 }}
+        {...this.panResponder.panHandlers}
+      >
         <TouchableWithoutFeedback>
           <View {...this.props}>
             <Animated.View style={transformStyle}>
