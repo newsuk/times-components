@@ -34,6 +34,26 @@ const pointBetweenTwoTouches = ([
   pageY: (y1 + y2) / 2
 });
 
+
+const translate = ({ translateX, translateY }, transformations) => [
+  { translateX },
+  { translateY },
+  ...transformations,
+  { translateX: Animated.multiply(translateX, -1) },
+  { translateY: Animated.multiply(translateY, -1) }
+];
+
+const resetOrigin = ({ width, height }, transformations) =>
+  translate(
+    {
+      translateX: Animated.multiply(width, -0.5),
+      translateY: Animated.multiply(height, -0.5)
+    },
+    transformations
+  );
+
+const subtract = (a, b) => Animated.add(a, Animated.multiply(b, -1));
+
 class Gestures extends Component {
   constructor(props) {
     super(props);
@@ -110,26 +130,18 @@ class Gestures extends Component {
   }
 
   render() {
-    const translateX = Animated.add(
-      this.state.center.pageX,
-      Animated.multiply(this.state.viewLayout.x, -1)
-    );
-    const translateY = Animated.add(
-      this.state.center.pageY,
-      Animated.multiply(this.state.viewLayout.y, -1)
-    );
-
     const transformStyle = {
       transform: [
-        { translateX: Animated.multiply(this.state.viewLayout.width, -0.5) },
-        { translateY: Animated.multiply(this.state.viewLayout.height, -0.5) },
-        { translateX },
-        { translateY },
-        { scale: this.state.zoomRatio },
-        { translateX: Animated.multiply(translateX, -1) },
-        { translateY: Animated.multiply(translateY, -1) },
-        { translateX: Animated.divide(this.state.viewLayout.width, 2) },
-        { translateY: Animated.divide(this.state.viewLayout.height, 2) },
+        ...resetOrigin(
+          this.state.viewLayout,
+          translate(
+            {
+              translateX: subtract(this.state.center.pageX, this.state.viewLayout.x),
+              translateY: subtract(this.state.center.pageY, this.state.viewLayout.y),
+            },
+            [{ scale: this.state.zoomRatio }]
+          )
+        ),
         {
           rotate: this.state.angle.interpolate({
             inputRange: [0, 359],
