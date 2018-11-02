@@ -34,7 +34,6 @@ const pointBetweenTwoTouches = ([
   pageY: (y1 + y2) / 2
 });
 
-
 const translate = ({ translateX, translateY }, transformations) => [
   { translateX },
   { translateY },
@@ -136,8 +135,14 @@ class Gestures extends Component {
           this.state.viewLayout,
           translate(
             {
-              translateX: subtract(this.state.center.pageX, this.state.viewLayout.x),
-              translateY: subtract(this.state.center.pageY, this.state.viewLayout.y),
+              translateX: subtract(
+                this.state.center.pageX,
+                this.state.viewLayout.x
+              ),
+              translateY: subtract(
+                this.state.center.pageY,
+                this.state.viewLayout.y
+              )
             },
             [{ scale: this.state.zoomRatio }]
           )
