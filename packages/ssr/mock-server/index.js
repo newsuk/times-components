@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 const { ApolloServer } = require("apollo-server");
-const { article, authorProfile, makeMocks } = require("@times-components/provider-test-tools");
+const { article, authorProfile, makeMocks, authorProfileNew } = require("@times-components/provider-test-tools");
 
 function combineDefaults(...bits) {
   let defaults = {};
@@ -22,15 +22,17 @@ function combineDefaults(...bits) {
 //   article()
 // );
 
-const [{defaults: articleDefaults}] = article();
-const [{defaults: authorDefaults}] = authorProfile({slug: 'deborah-haynes', pageSize: 1});
+// const [{defaults: articleDefaults}] = article();
+// const [{defaults: authorDefaults}] = authorProfile({slug: 'deborah-haynes', pageSize: 10, articleCount: 22});
 
-const defaults = {
-  types: Object.assign({}, articleDefaults.types, authorDefaults.types),
-  values: Object.assign({}, articleDefaults.values, authorDefaults.values)
-};
+// const defaults = {
+//   types: Object.assign({}, articleDefaults.types, authorDefaults.types),
+//   values: Object.assign({}, articleDefaults.values, authorDefaults.values)
+// };
 
-const schema = makeMocks(defaults);
+console.log(authorProfileNew);
+
+const schema = makeMocks(authorProfileNew());
 
 const server = new ApolloServer({ schema,
   formatError: error => {
