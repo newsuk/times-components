@@ -12,12 +12,16 @@ import {
 } from "@times-components/provider-test-tools";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
-import { makeArticleUrl } from "@times-components/test-utils";
 import {
   ArticleConfigurator,
   makeArticleConfiguration
 } from "./showcase-helper";
 import Article from "./src/article-main-standard";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -28,7 +32,7 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderArticle = ({
-  adConfig,
+  adConfig = articleAdConfig,
   analyticsStream,
   decorateAction,
   id,
@@ -181,7 +185,7 @@ export default {
       name: "Error",
       platform: "native",
       type: "story"
-    },
+    }
   ],
   name: "Pages/Article"
 };

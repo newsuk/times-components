@@ -8,9 +8,7 @@ const articlePropTypes = {
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
     // Could have more here
-  }),
-  observed: PropTypes.object.isRequired,
-  registerNode: PropTypes.func.isRequired
+  })
 };
 
 const articleDefaultProps = {

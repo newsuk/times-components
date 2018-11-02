@@ -4,21 +4,24 @@ import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
+import ArticleError from "@times-components/article-error";
 import Article from "@times-components/article";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { getHeadline, getLeadAsset, normaliseWidth, screenWidthInPixels } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  normaliseWidth,
+  screenWidthInPixels
+} from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
-import ArticleContent from "./article-content";
-import ArticleError from "@times-components/article-error";
 import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
 } from "./article-page-prop-types";
 import articleTrackingContext from "./article-tracking-context";
-import listViewDataHelper from "./data-helper";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -32,8 +35,7 @@ class ArticlePage extends Component {
         dataSource: props.article,
         width: normaliseWidth(screenWidthInPixels())
       };
-    }
-    else {
+    } else {
       this.state = {
         dataSource: {}
       };
@@ -50,36 +52,47 @@ class ArticlePage extends Component {
       );
   }
 
-  renderHeader(){
-    const { byline, flags, hasVideo, headline, label,publicationName, publishedTime, shortHeadline, standfirst } = this.props.article;
+  renderHeader() {
+    const {
+      byline,
+      flags,
+      hasVideo,
+      headline,
+      label,
+      publicationName,
+      publishedTime,
+      shortHeadline,
+      standfirst
+    } = this.props.article;
     const { article, onAuthorPress, onVideoPress } = this.props;
     const { isVideo, leadAsset } = getLeadAsset(article);
     const styles = stylesFactory();
 
     return (
       <Fragment>
-      <View key="leadAsset" testID="leadAsset">
-        <ArticleLeadAsset
-          data={{ ...leadAsset, onVideoPress }}
-          width={this.state.width}
+        <View key="leadAsset" testID="leadAsset">
+          <ArticleLeadAsset
+            data={{ ...leadAsset, onVideoPress }}
+            width={this.state.width}
+          />
+        </View>
+        <ArticleHeader
+          flags={flags}
+          hasVideo={hasVideo}
+          headline={getHeadline(headline, shortHeadline)}
+          isVideo={isVideo}
+          label={label}
+          standfirst={standfirst}
+          style={[styles.articleMainContentRow]}
         />
-      </View>
-      <ArticleHeader
-        flags={flags}
-        hasVideo={hasVideo}
-        headline={getHeadline(headline, shortHeadline)}
-        label={label}
-        standfirst={standfirst}
-        style={[styles.articleMainContentRow]}
-      />
-      <ArticleMeta
-        byline={byline}
-        onAuthorPress={onAuthorPress}
-        publicationName={publicationName}
-        publishedTime={publishedTime}
-      />
+        <ArticleMeta
+          byline={byline}
+          onAuthorPress={onAuthorPress}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+        />
       </Fragment>
-    )
+    );
   }
 
   render() {
@@ -93,9 +106,11 @@ class ArticlePage extends Component {
       return null;
     }
 
-    return(
+    return (
       <AdComposer adConfig={this.props.adConfig}>
         <Article
+          adConfig={this.props.adConfig}
+          analyticsStream={this.props.analyticsStream}
           data={this.props.article}
           header={this.renderHeader}
           onAuthorPress={this.props.onAuthorPress}
@@ -112,7 +127,7 @@ class ArticlePage extends Component {
           receiveChildList={receiveChildList}
         />
       </AdComposer>
-    )
+    );
   }
 }
 

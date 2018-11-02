@@ -16,7 +16,6 @@ const LINKED_BYLINE = 16;
 const STANDFIRST = 32;
 const VIDEO = 64;
 
-
 export const makeArticleConfiguration = ({
   withFlags,
   withHeadline,

@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
-import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import { getLeadAsset, getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
-import { getLeadAsset, getHeadline } from "@times-components/utils";
 import articleTrackingContext from "./article-tracking-context";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import {
@@ -47,6 +45,7 @@ class ArticlePage extends Component {
 
   render() {
     const {
+      adConfig,
       analyticsStream,
       data: {
         byline,
@@ -61,7 +60,8 @@ class ArticlePage extends Component {
         standfirst,
         topics,
         url
-      }
+      },
+      receiveChildList
     } = this.props;
     const leadAssetProps = getLeadAsset(this.props.data);
 
@@ -80,35 +80,37 @@ class ArticlePage extends Component {
           />
         </HeaderAdContainer>
         <MainContainer>
-            <HeaderContainer>
-              <ArticleHeader
-                flags={flags}
-                hasVideo={hasVideo}
-                headline={getHeadline(headline, shortHeadline)}
-                label={label}
-                standfirst={standfirst}
-              />
-            </HeaderContainer>
-            <MetaContainer>
-              <ArticleMeta
-                byline={byline}
-                publicationName={publicationName}
-                publishedTime={publishedTime}
-              />
-              <ArticleTopics topics={topics} />
-            </MetaContainer>
-            <LeadAssetContainer>
-              <LeadAssetComponent
-                {...leadAssetProps}
-                width={this.state.articleWidth}
-              />
-            </LeadAssetContainer>
-            <BodyContainer>
-              <Article
-                analyticsStream={analyticsStream}
-                data={this.props.data}
-              />
-            </BodyContainer>
+          <HeaderContainer>
+            <ArticleHeader
+              flags={flags}
+              hasVideo={hasVideo}
+              headline={getHeadline(headline, shortHeadline)}
+              label={label}
+              standfirst={standfirst}
+            />
+          </HeaderContainer>
+          <MetaContainer>
+            <ArticleMeta
+              byline={byline}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
+            />
+            <ArticleTopics topics={topics} />
+          </MetaContainer>
+          <LeadAssetContainer>
+            <LeadAssetComponent
+              {...leadAssetProps}
+              width={this.state.articleWidth}
+            />
+          </LeadAssetContainer>
+          <BodyContainer>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={analyticsStream}
+              data={this.props.data}
+              receiveChildList={receiveChildList}
+            />
+          </BodyContainer>
           <Ad contextUrl={url} section={section} slotName="pixel" />
           <Ad contextUrl={url} section={section} slotName="pixelteads" />
           <Ad contextUrl={url} section={section} slotName="pixelskin" />
@@ -136,6 +138,7 @@ const ArticleMainStandard = ({
   return (
     <AdComposer adConfig={adConfig}>
       <ArticlePage
+        adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}
         receiveChildList={receiveChildList}
@@ -147,5 +150,6 @@ const ArticleMainStandard = ({
 ArticleMainStandard.propTypes = articlePagePropTypes;
 ArticleMainStandard.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(withTrackScrollDepth(ArticleMainStandard));
-
+export default articleTrackingContext(
+  withTrackScrollDepth(ArticleMainStandard)
+);

@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import AdComposer from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
-import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";

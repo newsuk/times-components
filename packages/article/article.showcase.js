@@ -75,8 +75,8 @@ const renderComponent = (
         onTwitterLinkPress={preventDefaultedAction(decorateAction)(
           "onTwitterLinkPress"
         )}
-        onViewableItemsChanged={() => null}
         onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+        onViewableItemsChanged={() => null}
       />
     </Context.Provider>
   );
