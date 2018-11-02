@@ -1,25 +1,134 @@
-import { makeGraphqlOptions } from "../src/connect";
+import React from "react";
+import {
+  addSerializers,
+  enzymeRenderedSerializer,
+  minimalise
+} from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
+import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
+import gql from "graphql-tag";
+import omit from "lodash.omit";
+import connectGraphql, { QueryProvider } from "../src/connect";
 
-describe("connect.js", () => {
-  it("picks only required variables from the supplied props", () => {
-    const options = makeGraphqlOptions(["a", "b"]);
-    const props = { a: 1, b: 2, c: 3 };
+jest.mock("react-apollo", () => ({
+  Query: ({ children }) =>
+    children({
+      data: { foo: "bar" },
+      error: null,
+      fetchMore: () => null,
+      loading: false,
+      refetch: () => null
+    })
+}));
 
-    expect(options(props)).toEqual({ variables: { a: 1, b: 2 } });
-  });
+addSerializers(
+  expect,
+  enzymeRenderedSerializer(),
+  minimalise((_, key) =>
+    ["query", "propsToVariable", "results", "propsToVariables"].includes(key)
+  )
+);
 
-  it("prefers the debouncedProps object, if it exists", () => {
-    const options = makeGraphqlOptions(["a", "b"]);
-    const props = { a: 1, b: 2, c: 3, debouncedProps: { a: 10, b: 20, c: 30 } };
+const query = gql`
+  {
+    author(slug: "fiona-hamilton") {
+      name
+    }
+  }
+`;
 
-    expect(options(props)).toEqual({ variables: { a: 10, b: 20 } });
-  });
+const queryWithVariable = gql`
+  query ArticleQuery($id: ID!) {
+    article(id: $id) {
+      content
+    }
+  }
+`;
 
-  it("transforms props with the propsToVariables function", () => {
-    const propsToVariables = ({ a, b }) => ({ A: a + 10, B: b + 10 });
-    const options = makeGraphqlOptions(["A", "B"], propsToVariables);
-    const props = { a: 1, b: 2, c: 3 };
+const propsToVariables = () => ({});
 
-    expect(options(props)).toEqual({ variables: { A: 11, B: 12 } });
-  });
+const prepareMockForSnapshot = fn => ({
+  ...fn.mock.calls[0][0],
+  debouncedProps: omit(fn.mock.calls[0][0].debouncedProps, "children")
 });
+
+iterator([
+  {
+    name: "connectGraphql renders the correct QueryProvider component",
+    test() {
+      const ConnectedComponent = connectGraphql(query, propsToVariables);
+      const component = shallow(
+        <ConnectedComponent debounceTimeMs={1000} foo="baz">
+          {() => null}
+        </ConnectedComponent>
+      );
+
+      expect(component).toMatchSnapshot();
+    }
+  },
+  {
+    name:
+      "when passing no props to variables, it should call its children with the correct props",
+    test() {
+      const child = jest.fn(() => null);
+      renderer.create(
+        <QueryProvider debounceTimeMs={1000} foo="bar" query={query}>
+          {child}
+        </QueryProvider>
+      );
+      expect(prepareMockForSnapshot(child)).toMatchSnapshot();
+    }
+  },
+
+  {
+    name:
+      "when passing props to variables, it should call its children with the correct props",
+    test() {
+      const child = jest.fn(() => null);
+      renderer.create(
+        <QueryProvider
+          articleId="123"
+          debounceTimeMs={1000}
+          propsToVariables={props => ({ id: props.articleId })}
+          query={queryWithVariable}
+        >
+          {child}
+        </QueryProvider>
+      );
+      expect(prepareMockForSnapshot(child)).toMatchSnapshot();
+    }
+  },
+
+  {
+    name: "should render the result of children",
+    test() {
+      const component = renderer.create(
+        <QueryProvider debounceTimeMs={1000} query={query}>
+          {() => <div>Hello, World</div>}
+        </QueryProvider>
+      );
+      expect(component).toMatchSnapshot();
+    }
+  },
+
+  {
+    name:
+      "connectGraphql HOC passes the correct query and propsToVariables to the QueryProvider",
+    test() {
+      const ConnectedComponent = connectGraphql(query, propsToVariables);
+      const component = shallow(
+        <ConnectedComponent debounceTimeMs={1000} foo="baz">
+          {() => null}
+        </ConnectedComponent>
+      );
+
+      expect(component.find(QueryProvider).props()).toEqual(
+        expect.objectContaining({
+          propsToVariables,
+          query
+        })
+      );
+    }
+  }
+]);

@@ -8,7 +8,6 @@ import {
   MockFixture
 } from "@times-components/provider-test-tools";
 import Context from "@times-components/context";
-import { makeArticleUrl } from "@times-components/test-utils";
 import {
   authorArticlesNoImages as authorArticlesNoImagesQuery,
   authorArticlesWithImages as authorArticlesWithImagesQuery
@@ -21,6 +20,11 @@ import get from "lodash.get";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 import adConfig from "./fixtures/article-ad-config.json";
 import { ratioTextToFloat } from "../utils/dist";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
