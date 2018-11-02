@@ -10,7 +10,8 @@ jest.mock("react-native", () => {
     onCommentsPress: () => {},
     onLinkPress: () => {},
     onTopicPress: () => {},
-    onVideoPress: () => {}
+    onVideoPress: () => {},
+    refetch: () => {}
   };
   rn.NativeModules.AuthorProfileEvents = {
     onArticlePress: () => {}

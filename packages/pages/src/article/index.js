@@ -1,10 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NativeModules } from "react-native";
 import { ApolloProvider } from "react-apollo";
 import { ArticleProvider } from "@times-components/provider";
 import ArticleBase from "./article-base";
 import { propTypes, defaultProps } from "./article-prop-types";
 import client from "../apollo-client";
+
+const { refetch: refetchArticle } = NativeModules.ArticleEvents;
 
 const ArticleWrapper = props => {
   const { article, articleId, error } = props;
@@ -16,6 +19,7 @@ const ArticleWrapper = props => {
           {...props}
           article={article ? JSON.parse(article).data.article : null}
           error={error ? { message: error } : null}
+          refetch={() => refetchArticle(articleId)}
         />
       </ApolloProvider>
     );
