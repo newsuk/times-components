@@ -105,7 +105,7 @@ class Article extends Component {
     }));
 
     const {
-      articleAdConfig,
+      adConfig,
       analyticsStream,
       header,
       onAuthorPress,
@@ -122,7 +122,7 @@ class Article extends Component {
     receiveChildList(articleData);
 
     return (
-      <AdComposer adConfig={articleAdConfig}>
+      <AdComposer adConfig={adConfig}>
         <ArticleContent
           data={articleData}
           header={header}

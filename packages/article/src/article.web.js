@@ -39,7 +39,7 @@ const Article = props => {
   ]);
 
   return (
-    <AdComposer adConfig={articleAdConfig}>
+    <AdComposer adConfig={adConfig}>
       <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
         {({ observed, registerNode }) => (
           <Fragment>
