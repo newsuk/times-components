@@ -35,8 +35,9 @@ yarn start
 Run a simple node server which serves up the various pages which currently
 include:
 
-- /profile/:author-slug
-- /topic/:topic-slug
+- `/article/:article-id`
+- `/profile/:author-slug`
+- `/topic/:topic-slug`
 
 They will use the client side bundle you generated above. You can optionally set
 `AUTH_TOKEN` as an envar (instructions should be available from your API

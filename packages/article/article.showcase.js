@@ -11,7 +11,6 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import { makeArticleUrl } from "@times-components/test-utils";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
@@ -21,6 +20,11 @@ import {
 } from "./showcase-helper";
 import Article from "./src/article";
 import articleAdConfig from "./fixtures/article-ad-config.json";
+
+const makeArticleUrl = ({ slug, shortIdentifier }) =>
+  slug && shortIdentifier
+    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
+    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([

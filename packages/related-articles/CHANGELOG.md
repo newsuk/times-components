@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.3.5...@times-components/related-articles@5.0.0) (2018-11-01)
+
+
+* BREAKING CHANGE fix: remove makeArticleUrl & usages of test-utils from showcases (#1449) ([8e7cab5](https://github.com/newsuk/times-components/commit/8e7cab5)), closes [#1449](https://github.com/newsuk/times-components/issues/1449)
+
+
+### BREAKING CHANGES
+
+* fix: remove usages of test-utils in showcases (removes makeArticleUrl from test-utils)
+
+* chore: lint
+
+* fix: inline more usages of makeArticleUrl
+
+* chore: add generated file used in dextrose build to prettier ignore
+
+* chore: fix incorrect var name
+
+
+
+
+
 <a name="4.3.5"></a>
 ## [4.3.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@4.3.4...@times-components/related-articles@4.3.5) (2018-10-31)
 
