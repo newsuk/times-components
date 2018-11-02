@@ -7,7 +7,6 @@ import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import ArticleContent from "../src/article-content";
 
 const emptyArticle = {
   byline: null,
@@ -293,7 +292,11 @@ export const snapshotTests = renderComponent => [
   {
     name: "article with header",
     test() {
-      const header = () => <View><Text>Example Header</Text></View>
+      const header = () => (
+        <View>
+          <Text>Example Header</Text>
+        </View>
+      );
       const article = articleFixture(...testFixture);
       const output = renderComponent(renderArticle(article), header);
       expect(output).toMatchSnapshot();

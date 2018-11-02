@@ -1,11 +1,10 @@
 /* eslint-disable consistent-return */
 
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import AdComposer from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
@@ -14,7 +13,6 @@ import {
   articleDefaultProps
 } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
-import getHeadline from "@times-components/utils";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -74,57 +72,55 @@ const renderRow = analyticsStream => (
   }
 };
 
-class Article extends Component {
-  render() {
-    const {
-      adConfig,
-      analyticsStream,
-      data,
-      header,
-      onAuthorPress,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress,
-      onTwitterLinkPress,
-      onViewableItemsChanged,
-      onVideoPress,
-      receiveChildList
-    } = this.props;
+const Article = props => {
+  const {
+    adConfig,
+    analyticsStream,
+    data,
+    header,
+    onAuthorPress,
+    onCommentGuidelinesPress,
+    onCommentsPress,
+    onLinkPress,
+    onRelatedArticlePress,
+    onTopicPress,
+    onTwitterLinkPress,
+    onViewableItemsChanged,
+    onVideoPress,
+    receiveChildList
+  } = props;
 
-    const articleOrganised = listViewDataHelper(data)
-    const articleData = articleOrganised.map((item, index) => ({
-      ...item,
-      elementId: `${item.type}.${index}`,
-      name: item.type
-    }));
+  const articleOrganised = listViewDataHelper(data);
+  const articleData = articleOrganised.map((item, index) => ({
+    ...item,
+    elementId: `${item.type}.${index}`,
+    name: item.type
+  }));
 
-    receiveChildList(articleData);
+  receiveChildList(articleData);
 
-    return (
-      <AdComposer adConfig={adConfig}>
-        <ArticleContent
-          data={articleData}
-          header={header}
-          initialListSize={listViewSize}
-          onAuthorPress={onAuthorPress}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onLinkPress={onLinkPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-          onViewableItemsChanged={onViewableItemsChanged}
-          pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream)}
-          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-        />
-      </AdComposer>
-    );
-  }
-}
+  return (
+    <AdComposer adConfig={adConfig}>
+      <ArticleContent
+        data={articleData}
+        header={header}
+        initialListSize={listViewSize}
+        onAuthorPress={onAuthorPress}
+        onCommentGuidelinesPress={onCommentGuidelinesPress}
+        onCommentsPress={onCommentsPress}
+        onLinkPress={onLinkPress}
+        onRelatedArticlePress={onRelatedArticlePress}
+        onTopicPress={onTopicPress}
+        onTwitterLinkPress={onTwitterLinkPress}
+        onVideoPress={onVideoPress}
+        onViewableItemsChanged={onViewableItemsChanged}
+        pageSize={listViewPageSize}
+        renderRow={renderRow(analyticsStream)}
+        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+      />
+    </AdComposer>
+  );
+};
 
 Article.propTypes = {
   ...articlePropTypes,

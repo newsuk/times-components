@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "@times-components/button"
-import { iterator } from "@times-components/test-utils";
-import ArticleComments from "../src/article-comments/article-comments"
 import TestRenderer from "react-test-renderer";
+import Button from "@times-components/button";
+import { iterator } from "@times-components/test-utils";
+import ArticleComments from "../src/article-comments/article-comments";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -109,7 +109,7 @@ export default () =>
       name: "onCommentsPress works as expected",
       test() {
         const article = articleFixture({
-          ...testFixture,
+          ...testFixture
         });
 
         const commentClick = jest.fn();
@@ -130,7 +130,10 @@ export default () =>
           />
         );
 
-        testInstance.root.findByType(ArticleComments).findByType(Button).props.onPress();
+        testInstance.root
+          .findByType(ArticleComments)
+          .findByType(Button)
+          .props.onPress();
         expect(commentClick).toHaveBeenCalled();
       }
     }
