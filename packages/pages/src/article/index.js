@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { ApolloProvider } from "react-apollo";
 import { ArticleProvider } from "@times-components/provider";
 import ArticleBase from "./article-base";
@@ -35,7 +36,11 @@ const ArticleWrapper = props => {
     </ApolloProvider>
   );
 };
-ArticleWrapper.propTypes = propTypes;
+ArticleWrapper.propTypes = {
+  ...propTypes,
+  article: PropTypes.string,
+  error: PropTypes.string
+};
 ArticleWrapper.defaultProps = defaultProps;
 
 export default ArticleWrapper;
