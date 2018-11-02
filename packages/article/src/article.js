@@ -76,37 +76,11 @@ const renderRow = analyticsStream => (
 };
 
 class Article extends Component {
-  constructor(props) {
-    super(props);
-
-    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-
-    this.state = {
-      dataSource: listViewDataHelper(props.data),
-      width: normaliseWidth(screenWidthInPixels())
-    };
-  }
-
-  onViewableItemsChanged(info) {
-    if (!info.changed.length) return [];
-
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem =>
-        this.props.onViewed(viewableItem.item, this.state.dataSource)
-      );
-  }
-
   render() {
-    const articleData = this.state.dataSource.map((item, index) => ({
-      ...item,
-      elementId: `${item.type}.${index}`,
-      name: item.type
-    }));
-
     const {
       adConfig,
       analyticsStream,
+      data,
       header,
       onAuthorPress,
       onCommentGuidelinesPress,
@@ -119,6 +93,14 @@ class Article extends Component {
       onVideoPress,
       receiveChildList
     } = this.props;
+
+    const articleOrganised = listViewDataHelper(data)
+    const articleData = articleOrganised.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
     receiveChildList(articleData);
 
     return (
@@ -137,7 +119,7 @@ class Article extends Component {
           onVideoPress={onVideoPress}
           onViewableItemsChanged={onViewableItemsChanged}
           pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream, this.state.width)}
+          renderRow={renderRow(analyticsStream)}
           scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         />
       </AdComposer>
