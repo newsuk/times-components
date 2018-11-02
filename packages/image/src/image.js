@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Image, View } from "react-native";
-import { addMissingProtocol } from "@times-components/utils";
+import {
+  addMissingProtocol,
+  normaliseWidth,
+  screenWidthInPixels
+} from "@times-components/utils";
 import appendSize from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
@@ -11,7 +15,8 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false
+      isLoaded: false,
+      width: normaliseWidth(screenWidthInPixels())
     };
     this.handleLoad = this.handleLoad.bind(this);
   }
@@ -22,13 +27,13 @@ class TimesImage extends Component {
 
   render() {
     const { aspectRatio, highResSize, style, uri } = this.props;
-    const { isLoaded } = this.state;
+    const { isLoaded, width } = this.state;
 
     const isDataImageUri = uri && uri.indexOf("data:") > -1;
 
     const srcUri = isDataImageUri
       ? uri
-      : addMissingProtocol(appendSize(uri, "resize", highResSize));
+      : addMissingProtocol(appendSize(uri, "resize", highResSize || width));
 
     const props = {
       onLoad: this.handleLoad,
