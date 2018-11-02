@@ -5,7 +5,7 @@ const shrinkRay = require("shrink-ray");
 
 const ssr = require("../server");
 const makeArticleUrl = require("../lib/make-url");
-const loggerFactory = require("../logger/logger");
+const logger = require("../lib/simple-logger");
 
 const port = 3000;
 const server = express();
@@ -39,8 +39,6 @@ const makeHtml = (
           <script src="/${bundleName}.react.bundle.js"></script>
         </html>
       `;
-
-const logger = loggerFactory("silly");
 
 const toNumber = input => {
   const parsed = Number.parseInt(input, 10);
