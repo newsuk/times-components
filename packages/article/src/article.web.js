@@ -11,7 +11,7 @@ import { BodyContainer } from "./styles/responsive";
 
 const Article = props => {
   const {
-    articleAdConfig,
+    adConfig,
     analyticsStream,
     data: { content, section, url, topics, relatedArticleSlice },
     header,

@@ -50,7 +50,7 @@ const renderComponent = (
   sectionColour
 ) => {
   const data = fullArticleFixture(config);
-  const showHeader = header ? TestHeader : null;
+  const showHeader = header ? <TestHeader /> : null;
   return (
     <Context.Provider
       value={{ makeArticleUrl, theme: { scale, sectionColour } }}

@@ -20,7 +20,7 @@ const emptyArticle = {
   topics: null
 };
 
-const renderArticle = (data, header) => (
+const renderArticle = (data, header = null) => (
   <Context.Provider
     value={{
       makeArticleUrl,

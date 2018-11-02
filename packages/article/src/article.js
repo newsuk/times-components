@@ -15,7 +15,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
-import getHeadline from "./utils";
+import getHeadline from "@times-components/utils";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
