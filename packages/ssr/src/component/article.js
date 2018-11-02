@@ -24,7 +24,12 @@ module.exports = (client, analyticsStream, data) =>
       ({ article, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
-          { value: { makeArticleUrl: data.makeArticleUrl, theme: { scale, sectionColour } } },
+          {
+            value: {
+              makeArticleUrl: data.makeArticleUrl,
+              theme: { scale, sectionColour }
+            }
+          },
           React.createElement(Article, {
             adConfig: data.mapArticleToAdConfig(article),
             analyticsStream,
