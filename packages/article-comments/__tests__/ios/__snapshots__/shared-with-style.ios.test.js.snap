@@ -35,7 +35,7 @@ exports[`comments error 1`] = `
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 15,
-        "lineHeight": 21,
+        "lineHeight": 17,
         "maxWidth": 330,
         "textAlign": "center",
       }
@@ -49,8 +49,7 @@ exports[`comments error 1`] = `
         "alignItems": "center",
         "backgroundColor": "#006699",
         "borderRadius": 2,
-        "elevation": 3,
-        "height": 36,
+        "height": 45,
         "justifyContent": "center",
         "marginBottom": 0,
         "marginTop": 25,
@@ -67,7 +66,7 @@ exports[`comments error 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 16,
           "lineHeight": 16,
-          "paddingTop": 0,
+          "paddingTop": 5,
         }
       }
     >
@@ -112,7 +111,7 @@ exports[`disabled comments 1`] = `
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 15,
-        "lineHeight": 21,
+        "lineHeight": 17,
         "maxWidth": 280,
         "textAlign": "center",
       }
@@ -170,7 +169,7 @@ exports[`enabled comments 1`] = `
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 15,
-        "lineHeight": 21,
+        "lineHeight": 17,
         "maxWidth": 280,
         "textAlign": "center",
       }
@@ -194,8 +193,7 @@ exports[`enabled comments 1`] = `
         "alignItems": "center",
         "backgroundColor": "#006699",
         "borderRadius": 2,
-        "elevation": 3,
-        "height": 36,
+        "height": 45,
         "justifyContent": "center",
         "marginBottom": 0,
         "marginTop": 25,
@@ -212,7 +210,7 @@ exports[`enabled comments 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 16,
           "lineHeight": 16,
-          "paddingTop": 0,
+          "paddingTop": 5,
         }
       }
     >
