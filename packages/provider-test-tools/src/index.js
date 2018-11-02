@@ -15,6 +15,7 @@ import topic from "./topic";
 import topicArticles from "./fixtures/topic-articles.json";
 import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
+import authorProfileNew from "./author-profile-new";
 
 const fixtures = {
   articleListNoImages,
@@ -40,5 +41,6 @@ export {
   MockFixture,
   providerTester,
   schemaToMocks,
-  topic
+  topic,
+  authorProfileNew
 };

@@ -30,8 +30,6 @@ function combineDefaults(...bits) {
 //   values: Object.assign({}, articleDefaults.values, authorDefaults.values)
 // };
 
-console.log(authorProfileNew);
-
 const schema = makeMocks(authorProfileNew());
 
 const server = new ApolloServer({ schema,
