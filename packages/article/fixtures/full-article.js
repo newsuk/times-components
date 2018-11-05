@@ -2000,9 +2000,9 @@ const makeDefaultConfig = ({
   keywords,
   label,
   leadAsset,
+  paywalledContent,
   relatedArticleSlice,
   section,
-  paywalledContent,
   shortHeadline,
   shortIdentifier,
   slug,
@@ -2109,6 +2109,21 @@ export const testFixture = {
     id: "id-123",
     title: "Some Title"
   },
+  paywalledContent: [
+    {
+      attributes: {},
+      children: [
+        {
+          attributes: {
+            value: "Some content"
+          },
+          children: [],
+          name: "text"
+        }
+      ],
+      name: "paragraph"
+    }
+  ],
   relatedArticleSlice: {
     __typename: "StandardSlice",
     items: [
@@ -2149,21 +2164,6 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
-  paywalledContent: [
-    {
-      attributes: {},
-      children: [
-        {
-          attributes: {
-            value: "Some content"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "paragraph"
-    }
-  ],
   shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",

@@ -53,6 +53,7 @@ export default () =>
             onVideoPress={() => {}}
           />
         );
+
         expect(output).toMatchSnapshot();
       }
     },
@@ -91,6 +92,7 @@ export default () =>
             onVideoPress={() => {}}
           />
         );
+
         expect(output).toMatchSnapshot();
       }
     }
