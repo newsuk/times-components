@@ -1,9 +1,9 @@
 import { articleComments as articleCommentsQuery } from "@times-components/provider-queries";
 
 export default ({
-  error = () => {},
-  enabled = true,
   count = 123,
+  enabled = true,
+  error = () => {},
   id,
   variables = () => {}
 }) => {
