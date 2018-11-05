@@ -20,7 +20,7 @@ import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
-} from "./article-page-prop-types";
+} from "./article-prop-types/article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 
 class ArticlePage extends Component {
@@ -96,7 +96,7 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, refetch, isLoading, receiveChildList } = this.props;
+    const { error, refetch, isLoading } = this.props;
 
     if (error) {
       return <ArticleError refetch={refetch} />;
@@ -118,11 +118,12 @@ class ArticlePage extends Component {
       onTopicPress,
       onTwitterLinkPress,
       onVideoPress,
-      onViewed
+      onViewed,
+      receiveChildList
     } = this.props;
 
     return (
-      <AdComposer adConfig={this.props.adConfig}>
+      <AdComposer adConfig={adConfig}>
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}

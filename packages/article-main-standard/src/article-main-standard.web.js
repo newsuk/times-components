@@ -8,11 +8,14 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import {
+  articlePropTypes,
+  articleDefaultProps
+} from "./article-prop-types/article-prop-types";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
-} from "./article-page-prop-types";
+} from "./article-prop-types/article-page-prop-types";
 
 import {
   MainContainer,
