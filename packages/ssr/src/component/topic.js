@@ -17,9 +17,10 @@ module.exports = (client, analyticsStream, data) =>
     React.createElement(
       TopicProvider,
       {
+        debounceTimeMs: data.debounceTime,
         page: data.page,
         pageSize: data.pageSize,
-        slug: data.slug
+        slug: data.topicSlug
       },
       ({ isLoading, error, refetch, topic }) =>
         React.createElement(
@@ -39,7 +40,7 @@ module.exports = (client, analyticsStream, data) =>
             onTwitterLinkPress: () => {},
             page: data.page,
             refetch,
-            slug: data.slug,
+            slug: data.topicSlug,
             topic
           })
         )

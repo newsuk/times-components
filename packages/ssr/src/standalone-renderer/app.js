@@ -52,7 +52,7 @@ const toNumber = input => {
 
 server.get("/article/:id", (request, response) => {
   const {
-    params: { id }
+    params: { id: articleId }
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const headers = process.env.GRAPHQL_TOKEN
@@ -62,7 +62,7 @@ server.get("/article/:id", (request, response) => {
     : null;
 
   ssr
-    .article(id, headers, { graphqlApiUrl, logger, makeArticleUrl })
+    .article(articleId, headers, { graphqlApiUrl, logger, makeArticleUrl })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
@@ -78,7 +78,7 @@ server.get("/article/:id", (request, response) => {
 
 server.get("/profile/:slug", (request, response) => {
   const {
-    params: { slug },
+    params: { slug: authorSlug },
     query: { page }
   } = request;
   const currentPage = toNumber(page) || 1;
@@ -86,7 +86,7 @@ server.get("/profile/:slug", (request, response) => {
 
   ssr
     .authorProfile(
-      { currentPage, slug },
+      { authorSlug, currentPage },
       { graphqlApiUrl, logger, makeArticleUrl }
     )
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
@@ -96,7 +96,7 @@ server.get("/profile/:slug", (request, response) => {
           extraStyles,
           markup,
           styles,
-          title: slug
+          title: authorSlug
         })
       )
     );
@@ -104,14 +104,14 @@ server.get("/profile/:slug", (request, response) => {
 
 server.get("/topic/:slug", (request, response) => {
   const {
-    params: { slug },
+    params: { slug: topicSlug },
     query: { page }
   } = request;
   const currentPage = toNumber(page) || 1;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic({ currentPage, slug }, { graphqlApiUrl, logger, makeArticleUrl })
+    .topic({ currentPage, topicSlug }, { graphqlApiUrl, logger, makeArticleUrl })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
@@ -119,7 +119,7 @@ server.get("/topic/:slug", (request, response) => {
           extraStyles,
           markup,
           styles,
-          title: slug
+          title: topicSlug
         })
       )
     );

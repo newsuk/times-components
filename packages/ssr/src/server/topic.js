@@ -2,11 +2,11 @@ const topic = require("../component/topic");
 const runServer = require("../lib/run-server");
 
 module.exports = (
-  { currentPage, slug },
+  { currentPage, topicSlug },
   { graphqlApiUrl, logger, makeArticleUrl }
 ) => {
-  if (typeof slug !== "string") {
-    throw new Error(`Slug should be a string. Received ${slug}`);
+  if (typeof topicSlug !== "string") {
+    throw new Error(`Topic slug should be a string. Received ${topicSlug}`);
   }
   if (!Number.isInteger(currentPage) || currentPage < 1) {
     throw new Error(
@@ -32,9 +32,10 @@ module.exports = (
     },
     data: {
       makeArticleUrl,
+      debounceTime: 0,
       page: currentPage,
       pageSize: 20,
-      slug
+      topicSlug
     },
     name: "topicPage"
   };

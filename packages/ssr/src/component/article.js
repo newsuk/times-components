@@ -18,7 +18,8 @@ module.exports = (client, analyticsStream, data) =>
       ArticleProvider,
       {
         analyticsStream,
-        id: data.id
+        debounceTimeMs: data.debounceTime,
+        id: data.articleId
       },
       ({ article, isLoading, error, refetch }) =>
         React.createElement(

@@ -29,7 +29,8 @@ module.exports = (
       uri: graphqlApiUrl
     },
     data: {
-      id: articleId,
+      articleId,
+      debounceTime: 0,
       makeArticleUrl,
       mapArticleToAdConfig: defaultAdConfig
     },

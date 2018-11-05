@@ -3,11 +3,11 @@ const runServer = require("../lib/run-server");
 const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
 
 module.exports = (
-  { currentPage, slug },
+  { authorSlug, currentPage },
   { graphqlApiUrl, logger, makeArticleUrl }
 ) => {
-  if (typeof slug !== "string") {
-    throw new Error(`Slug should be a string. Received ${slug}`);
+  if (typeof authorSlug !== "string") {
+    throw new Error(`Author slug should be a string. Received ${authorSlug}`);
   }
   if (!Number.isInteger(currentPage) || currentPage < 1) {
     throw new Error(
@@ -32,11 +32,12 @@ module.exports = (
       uri: graphqlApiUrl
     },
     data: {
+      authorSlug,
+      debounceTime: 0,
       makeArticleUrl,
       mapProfileToAdConfig: defaultAdConfig,
       page: currentPage,
-      pageSize: 20,
-      slug
+      pageSize: 20
     },
     name: "authorProfile"
   };

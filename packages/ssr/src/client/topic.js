@@ -3,15 +3,15 @@ const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
   const { rootTag, makeArticleUrl, mapTopicToAdConfig } = window.nuk.ssr;
-  const { debounceTimeMs, page, pageSize, slug } = window.nuk.topicPage;
+  const { debounceTime, page, pageSize, topicSlug } = window.nuk.topicPage;
 
   const data = {
-    debounceTimeMs,
+    debounceTime,
     makeArticleUrl,
     mapTopicToAdConfig,
     page,
     pageSize,
-    slug
+    topicSlug
   };
 
   const clientOptions = {
