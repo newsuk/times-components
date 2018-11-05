@@ -1,23 +1,11 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
-import { Text, View } from "react-native";
 import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-
-const emptyArticle = {
-  byline: null,
-  flags: null,
-  hasVideo: null,
-  label: null,
-  leadAsset: null,
-  relatedArticleSlice: null,
-  standfirst: null,
-  topics: null
-};
 
 const renderArticle = (data, header = null) => (
   <Context.Provider
@@ -38,6 +26,7 @@ const renderArticle = (data, header = null) => (
       onRelatedArticlePress={() => {}}
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
+      onVideoPress={() => {}}
     />
   </Context.Provider>
 );
@@ -78,8 +67,7 @@ export const snapshotTests = renderComponent => [
                 value: "times-datawrapper"
               },
               id: "d2f83305-d558-4f78-f582-32115c659355",
-              url:
-                "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+              url: "https://interactive.io"
             },
             children: [],
             name: "interactive"
@@ -286,27 +274,6 @@ export const snapshotTests = renderComponent => [
 
       const output = renderComponent(renderArticle(article));
 
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "article with header",
-    test() {
-      const header = () => (
-        <View>
-          <Text>Example Header</Text>
-        </View>
-      );
-      const article = articleFixture(...testFixture);
-      const output = renderComponent(renderArticle(article), header);
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "an empty article",
-    test() {
-      const article = articleFixture(emptyArticle);
-      const output = renderComponent(renderArticle(article));
       expect(output).toMatchSnapshot();
     }
   }

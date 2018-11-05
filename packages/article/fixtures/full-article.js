@@ -798,8 +798,7 @@ const defaultContent = [
               },
               {
                 attributes: {
-                  href:
-                    "https://www.thetimes.co.uk/edition/news/may-hit-by-another-brexit-walkout-amid-claims-of-establishment-coup-k9x69qlb8",
+                  href: "https://www.thetimes.co.uk/",
                   target: "_blank",
                   type: "article"
                 },
@@ -923,8 +922,7 @@ const defaultContent = [
       },
       {
         attributes: {
-          href:
-            "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+          href: "https://link.io"
         },
         children: [
           {
@@ -978,15 +976,13 @@ const defaultContent = [
   {
     attributes: {
       brightcoveAccountId: "5436121857001",
-      brightcovePolicyKey:
-        "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+      brightcovePolicyKey: "1.2.3.4",
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption",
       display: "primary",
       paidOnly: "false",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-      posterImageUrl:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+      posterImageUrl: "http://placekitten.com/1000/1000"
     },
     children: [],
     name: "video"
@@ -1014,14 +1010,12 @@ const defaultContent = [
   {
     attributes: {
       brightcoveAccountId: "5436121857001",
-      brightcovePolicyKey:
-        "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+      brightcovePolicyKey: "1.2.3.4",
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption secondary",
       display: "secondary",
       paidOnly: "false",
-      posterImageUrl:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+      posterImageUrl: "http://placekitten.com/500/500"
     },
     children: [],
     name: "video"
@@ -1032,8 +1026,7 @@ const defaultContent = [
       credits: "The credits",
       display: "primary",
       ratio: "1500:1000",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
+      url: "http://image.io"
     },
     children: [],
     name: "image"
@@ -1062,8 +1055,7 @@ const defaultContent = [
         value: "times-datawrapper"
       },
       id: "d2f83305-d558-4f78-f582-32115c659355",
-      url:
-        "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+      url: "https://interactive.io"
     },
     children: [],
     name: "interactive"
@@ -1088,8 +1080,7 @@ const defaultContent = [
       credits: "The credits",
       display: "secondary",
       ratio: "3:2",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
+      url: "https://image.io"
     },
     children: [],
     name: "image"
@@ -1185,8 +1176,7 @@ const defaultContent = [
         name: "JudgeSapnara",
         twitter: "@JudgeSapnara"
       },
-      content:
-        "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child"
+      content: "A pull quote is here."
     },
     children: [],
     name: "pullQuote"
@@ -1955,8 +1945,7 @@ const defaultTopics = [
     slug: "rugby-union"
   }
 ];
-const defaultUrl =
-  "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const defaultUrl = "https://www.thetimes.co.uk/";
 
 const addProp = (obj, key, value) => {
   if (value != null) {
