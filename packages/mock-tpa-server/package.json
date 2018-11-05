@@ -1,0 +1,82 @@
+{
+  "name": "@times-components/mock-tpa-server",
+  "version": "1.0.0",
+  "description": "utillity for testing times component clients with mocked api",
+  "main": "./src/index",
+  "scripts": {
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "test": "jest",
+    "transpile": "babel src -d dist --copy-files"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "testEnvironment": "jsdom",
+    "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/provider-test-tools/src/*.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@times-components)/)"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
+    ],
+    "testURL": "http://localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "web",
+    "graphql",
+    "provider",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.8.5",
+    "@times-components/test-utils": "2.0.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "depcheck": "0.6.9",
+    "eslint": "4.19.1",
+    "eslint-plugin-graphql": "2.1.1",
+    "jest": "23.3.0",
+    "prettier": "1.14.3"
+  },
+  "dependencies": {
+    "@times-components/schema": "0.1.11",
+    "apollo-cache-inmemory": "1.1.10",
+    "apollo-client": "2.3.7",
+    "apollo-link": "1.2.2",
+    "apollo-utilities": "1.0.18",
+    "graphql": "0.13.2",
+    "graphql-tag": "2.8.0",
+    "graphql-tools": "3.1.1",
+    "prop-types": "15.6.2",
+    "react": "16.5.2",
+    "react-apollo": "2.1.4",
+    "react-test-renderer": "16.5.2",
+    "zen-observable": "0.8.9"
+  },
+  "peerDependencies": {
+    "react": ">=16.5",
+    "react-dom": ">=16.5",
+    "react-native": ">=0.55",
+    "react-native-web": "0.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
