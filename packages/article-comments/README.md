@@ -1,4 +1,4 @@
-# ArticleComments
+# Article Comments
 
 This package provides a comment component for Android & iOS applications. The package has its own provider within the package so it can retrieve comment counts independent from the parent article.
 
