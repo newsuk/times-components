@@ -7,7 +7,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import shared from "./images.base.web";
+import shared from "./images.base";
 
 const omitProps = new Set([
   "className",

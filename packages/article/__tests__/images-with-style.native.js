@@ -6,7 +6,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import shared from "./images.base.native";
+import shared from "./images.base";
 
 export default () => {
   addSerializers(

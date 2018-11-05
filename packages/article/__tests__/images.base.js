@@ -16,6 +16,18 @@ const emptyArticle = {
   topics: null
 };
 
+const imageAST = {
+  attributes: {
+    caption: "A Caption",
+    credits: "Some Credits",
+    display: "inline",
+    ratio: "9:4",
+    url: "https://image-inline.io"
+  },
+  children: [],
+  name: "image"
+};
+
 export default () =>
   iterator([
     {
@@ -31,15 +43,24 @@ export default () =>
               ...emptyArticle,
               content: [
                 {
+                  ...imageAST,
                   attributes: {
-                    caption: "A Caption",
-                    credits: "Some Credits",
+                    ...imageAST.attributes,
                     display: "secondary",
                     ratio: "3:2",
                     url: "https://image-2.io"
-                  },
-                  children: [],
-                  name: "image"
+                  }
+                }
+              ],
+              paywalledContent: [
+                {
+                  ...imageAST,
+                  attributes: {
+                    ...imageAST.attributes,
+                    display: "secondary",
+                    ratio: "3:2",
+                    url: "https://image-2.io"
+                  }
                 }
               ]
             })}
@@ -68,19 +89,8 @@ export default () =>
             article={articleFixture({
               ...testFixture,
               ...emptyArticle,
-              content: [
-                {
-                  attributes: {
-                    caption: "A Caption",
-                    credits: "Some Credits",
-                    display: "inline",
-                    ratio: "9:4",
-                    url: "https://image-inline.io"
-                  },
-                  children: [],
-                  name: "image"
-                }
-              ]
+              content: [imageAST],
+              paywalledContent: [imageAST]
             })}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}

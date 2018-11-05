@@ -10,7 +10,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import shared from "./images.base.web";
+import shared from "./images.base";
 
 const styles = [
   "alignItems",
