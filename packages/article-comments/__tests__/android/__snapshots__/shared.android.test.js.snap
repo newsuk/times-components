@@ -66,3 +66,57 @@ exports[`enabled comments 1`] = `
   </View>
 </View>
 `;
+
+exports[`single comment 1`] = `
+<View>
+  <Text>
+    1 comment
+  </Text>
+  <Text>
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      accessibilityRole="link"
+    >
+      here
+    </Text>
+  </Text>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="View comments"
+    accessibilityTraits="button"
+  >
+    <Text
+      title="View comments"
+    >
+      View comments
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`zero comments 1`] = `
+<View>
+  <Text>
+    0 comments
+  </Text>
+  <Text>
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      accessibilityRole="link"
+    >
+      here
+    </Text>
+  </Text>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="Post a comment"
+    accessibilityTraits="button"
+  >
+    <Text
+      title="Post a comment"
+    >
+      Post a comment
+    </Text>
+  </View>
+</View>
+`;
