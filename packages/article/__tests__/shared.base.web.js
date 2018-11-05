@@ -66,7 +66,7 @@ export const snapshotTests = [
     name: "a full article with an image as the lead asset",
     test() {
       const article = articleFixture({
-        seoContent: [
+        paywalledContent: [
           {
             attributes: {
               caption: "An image caption",
@@ -250,7 +250,7 @@ export const snapshotTests = [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
-            seoContent: [
+            paywalledContent: [
               {
                 attributes: {},
                 children: [],

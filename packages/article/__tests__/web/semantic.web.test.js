@@ -45,7 +45,7 @@ const tests = [
     test() {
       const article = articleFixture({
         ...testFixture,
-        seoContent: [
+        paywalledContent: [
           {
             attributes: {
               caption: "An image caption",

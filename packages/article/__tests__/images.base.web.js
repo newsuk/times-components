@@ -28,7 +28,7 @@ export default () =>
             article={articleFixture({
               ...testFixture,
               ...emptyArticle,
-              seoContent: [
+              paywalledContent: [
                 {
                   attributes: {
                     caption: "A Caption",
@@ -66,7 +66,7 @@ export default () =>
             article={articleFixture({
               ...testFixture,
               ...emptyArticle,
-              seoContent: [
+              paywalledContent: [
                 {
                   attributes: {
                     caption: "A Caption",

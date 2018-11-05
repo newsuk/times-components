@@ -1982,7 +1982,7 @@ const makeDefaultConfig = ({
   leadAsset = defaultLeadAsset,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
-  seoContent = defaultContent,
+  paywalledContent = defaultContent,
   shortHeadline = defaultShortHeadline,
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
@@ -2002,7 +2002,7 @@ const makeDefaultConfig = ({
   leadAsset,
   relatedArticleSlice,
   section,
-  seoContent,
+  paywalledContent,
   shortHeadline,
   shortIdentifier,
   slug,
@@ -2149,7 +2149,7 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
-  seoContent: [
+  paywalledContent: [
     {
       attributes: {},
       children: [

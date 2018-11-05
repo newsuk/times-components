@@ -51,7 +51,7 @@ export default addTypenameToDocument(gql`
           }
         }
       }
-      seoContent
+      paywalledContent
       standfirst
       topics(maxCount: 5) {
         name
