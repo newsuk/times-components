@@ -56,10 +56,10 @@ const renderData = App =>
       serverStylesheet.collectStyles(element)
     );
 
-    const extraStyles = serverStylesheet.getStyleTags();
+    const responsiveStyles = serverStylesheet.getStyleTags();
     const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
 
-    return { extraStyles, markup, styles };
+    return { markup, responsiveStyles, styles };
   });
 
 module.exports = async (component, options) => {
@@ -67,7 +67,7 @@ module.exports = async (component, options) => {
   const analyticsStream = () => {};
   const App = component(client, analyticsStream, options.data);
 
-  const { extraStyles, markup, styles } = await renderData(App);
+  const { markup, responsiveStyles, styles } = await renderData(App);
 
   const props = safeStringify(options.data);
   const initialProps = `<script>window.nuk['${
@@ -78,10 +78,10 @@ module.exports = async (component, options) => {
   const initialState = `<script>window.__APOLLO_STATE__ = ${state};</script>`;
 
   return {
-    extraStyles,
     initialProps,
     initialState,
     markup,
+    responsiveStyles,
     styles
   };
 };

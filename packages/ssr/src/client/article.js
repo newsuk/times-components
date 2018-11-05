@@ -3,11 +3,11 @@ const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.article) {
   const { rootTag, makeArticleUrl, mapArticleToAdConfig } = window.nuk.ssr;
-  const { articleId, debounceTime } = window.nuk.article;
+  const { articleId, debounceTimeMs } = window.nuk.article;
 
   const data = {
     articleId,
-    debounceTime,
+    debounceTimeMs,
     makeArticleUrl,
     mapArticleToAdConfig
   };

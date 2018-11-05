@@ -16,7 +16,7 @@ server.use(express.static("dist"));
 const makeHtml = (
   initialState,
   initialProps,
-  { bundleName, extraStyles, markup, styles, title }
+  { bundleName, markup, responsiveStyles, styles, title }
 ) => `
         <!DOCTYPE html>
         <html>
@@ -24,7 +24,7 @@ const makeHtml = (
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>${title}</title>
             ${styles}
-            ${extraStyles}
+            ${responsiveStyles}
           </head>
           <body style="margin:0">
             <script>window.nuk = {graphqlapi: {url: "${
@@ -63,12 +63,12 @@ server.get("/article/:id", (request, response) => {
 
   ssr
     .article(articleId, headers, { graphqlApiUrl, logger, makeArticleUrl })
-    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
+    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
           bundleName: "article",
-          extraStyles,
           markup,
+          responsiveStyles,
           styles,
           title: "Article"
         })
@@ -89,12 +89,12 @@ server.get("/profile/:slug", (request, response) => {
       { authorSlug, currentPage },
       { graphqlApiUrl, logger, makeArticleUrl }
     )
-    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
+    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
           bundleName: "author-profile",
-          extraStyles,
           markup,
+          responsiveStyles,
           styles,
           title: authorSlug
         })
@@ -111,13 +111,16 @@ server.get("/topic/:slug", (request, response) => {
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic({ currentPage, topicSlug }, { graphqlApiUrl, logger, makeArticleUrl })
-    .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
+    .topic(
+      { currentPage, topicSlug },
+      { graphqlApiUrl, logger, makeArticleUrl }
+    )
+    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
           bundleName: "topic",
-          extraStyles,
           markup,
+          responsiveStyles,
           styles,
           title: topicSlug
         })

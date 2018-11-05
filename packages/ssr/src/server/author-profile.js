@@ -33,7 +33,7 @@ module.exports = (
     },
     data: {
       authorSlug,
-      debounceTime: 0,
+      debounceTimeMs: 0,
       makeArticleUrl,
       mapProfileToAdConfig: defaultAdConfig,
       page: currentPage,

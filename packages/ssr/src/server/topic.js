@@ -31,8 +31,8 @@ module.exports = (
       uri: graphqlApiUrl
     },
     data: {
+      debounceTimeMs: 0,
       makeArticleUrl,
-      debounceTime: 0,
       page: currentPage,
       pageSize: 20,
       topicSlug

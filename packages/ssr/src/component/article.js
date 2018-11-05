@@ -10,28 +10,35 @@ const { scales } = require("@times-components/styleguide/rnw");
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
-module.exports = (client, analyticsStream, data) =>
-  React.createElement(
+module.exports = (client, analyticsStream, data) => {
+  const {
+    articleId,
+    debounceTimeMs,
+    makeArticleUrl,
+    mapArticleToAdConfig
+  } = data;
+
+  return React.createElement(
     ApolloProvider,
     { client },
     React.createElement(
       ArticleProvider,
       {
         analyticsStream,
-        debounceTimeMs: data.debounceTime,
-        id: data.articleId
+        debounceTimeMs,
+        id: articleId
       },
       ({ article, isLoading, error, refetch }) =>
         React.createElement(
           Context.Provider,
           {
             value: {
-              makeArticleUrl: data.makeArticleUrl,
+              makeArticleUrl,
               theme: { scale, sectionColour }
             }
           },
           React.createElement(Article, {
-            adConfig: data.mapArticleToAdConfig(article),
+            adConfig: mapArticleToAdConfig(article),
             analyticsStream,
             article,
             error,
@@ -44,3 +51,4 @@ module.exports = (client, analyticsStream, data) =>
         )
     )
   );
+};

@@ -10,24 +10,26 @@ const Topic = require("@times-components/topic/rnw").default;
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
-module.exports = (client, analyticsStream, data) =>
-  React.createElement(
+module.exports = (client, analyticsStream, data) => {
+  const { debounceTimeMs, makeArticleUrl, page, pageSize, topicSlug } = data;
+
+  return React.createElement(
     ApolloProvider,
     { client },
     React.createElement(
       TopicProvider,
       {
-        debounceTimeMs: data.debounceTime,
-        page: data.page,
-        pageSize: data.pageSize,
-        slug: data.topicSlug
+        debounceTimeMs,
+        page,
+        pageSize,
+        slug: topicSlug
       },
       ({ isLoading, error, refetch, topic }) =>
         React.createElement(
           Context.Provider,
           {
             value: {
-              makeArticleUrl: data.makeArticleUrl,
+              makeArticleUrl,
               theme: { scale, sectionColour }
             }
           },
@@ -38,11 +40,13 @@ module.exports = (client, analyticsStream, data) =>
             isLoading,
             onArticlePress: () => {},
             onTwitterLinkPress: () => {},
-            page: data.page,
+            page,
+            pageSize,
             refetch,
-            slug: data.topicSlug,
+            slug: topicSlug,
             topic
           })
         )
     )
   );
+};

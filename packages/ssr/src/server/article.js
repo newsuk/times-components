@@ -30,7 +30,7 @@ module.exports = (
     },
     data: {
       articleId,
-      debounceTime: 0,
+      debounceTimeMs: 0,
       makeArticleUrl,
       mapArticleToAdConfig: defaultAdConfig
     },
