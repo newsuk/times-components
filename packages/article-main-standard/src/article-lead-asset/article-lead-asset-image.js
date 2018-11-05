@@ -24,6 +24,10 @@ const ArticleLeadAssetImage = ({
     crop1251
   });
 
+  if(crop === null){
+    return null;
+  }
+
   const { ratio, url } = crop;
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;

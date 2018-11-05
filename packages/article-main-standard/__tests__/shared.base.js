@@ -6,7 +6,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
-import Article from "../src/article-main-standard";
+import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
@@ -40,7 +40,7 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <Article
+        <ArticleMainStandard
           {...props}
           {...articleProps}
           adConfig={adConfig}
@@ -63,7 +63,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with no headline falls back to use shortHeadline",
     test() {
       const output = renderComponent(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -90,7 +90,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with ads",
     test() {
       const output = renderComponent(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -118,65 +118,6 @@ export const snapshotTests = renderComponent => [
 
       expect(output).toMatchSnapshot();
     }
-  },
-  {
-    name: "an article with updated byline",
-    test() {
-      class Wrapper extends Component {
-        constructor(props) {
-          super(props);
-
-          this.state = {
-            byline: null
-          };
-        }
-
-        render() {
-          return this.props.children(this.state.byline);
-        }
-      }
-
-      Wrapper.propTypes = {
-        children: PropTypes.func.isRequired
-      };
-
-      const output = renderComponent(
-        <Wrapper>
-          {byline => (
-            <Context.Provider
-              value={{
-                theme: { scale: scales.medium, sectionColour: "#FFFFFF" }
-              }}
-            >
-              <Article
-                {...articleProps}
-                adConfig={adConfig}
-                analyticsStream={() => {}}
-                article={articleFixture({
-                  ...testFixture,
-                  ...emptyArticle,
-                  byline
-                })}
-                onAuthorPress={() => {}}
-                onCommentGuidelinesPress={() => {}}
-                onCommentsPress={() => {}}
-                onLinkPress={() => {}}
-                onRelatedArticlePress={() => {}}
-                onTopicPress={() => {}}
-                onTwitterLinkPress={() => {}}
-                onVideoPress={() => {}}
-              />
-            </Context.Provider>
-          )}
-        </Wrapper>
-      );
-
-      expect(output).toMatchSnapshot();
-
-      output.getInstance().setState({ byline: testFixture.byline });
-
-      expect(output).toMatchSnapshot();
-    }
   }
 ];
 
@@ -185,7 +126,7 @@ const negativeTests = [
     name: "an article with no flags",
     test() {
       const testInstance = TestRenderer.create(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -213,7 +154,7 @@ const negativeTests = [
     name: "an article with no byline",
     test() {
       const testInstance = TestRenderer.create(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -238,7 +179,7 @@ const negativeTests = [
     name: "an article with no label",
     test() {
       const testInstance = TestRenderer.create(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -263,7 +204,7 @@ const negativeTests = [
     name: "an article with no standfirst",
     test() {
       const testInstance = TestRenderer.create(
-        <Article
+        <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
