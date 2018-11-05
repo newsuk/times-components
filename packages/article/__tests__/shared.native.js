@@ -9,7 +9,7 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import shared from "./shared.base.native";
+import shared from "./shared.base";
 import Article from "../src/article";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";

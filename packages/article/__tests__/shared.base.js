@@ -34,7 +34,76 @@ const emptyArticle = {
   topics: null
 };
 
-export const snapshotTests = [
+const fullArticleAST = [
+  {
+    attributes: {
+      caption: "An image caption",
+      credits: "The image credits",
+      display: "primary",
+      ratio: "1500:1000",
+      url: "https://image.io"
+    },
+    children: [],
+    name: "image"
+  },
+  {
+    attributes: {
+      href: "https://link.io",
+      target: "_blank"
+    },
+    children: [
+      {
+        attributes: {
+          value: "Some Link"
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "link"
+  },
+  {
+    attributes: {},
+    children: [
+      {
+        attributes: {
+          value: "Some content"
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "paragraph"
+  },
+  {
+    attributes: {
+      caption: {
+        name: "AName",
+        twitter: "@AName"
+      },
+      content: "A pull quote"
+    },
+    children: [],
+    name: "pullQuote"
+  },
+  {
+    attributes: {
+      brightcoveAccountId: "57838016001",
+      brightcovePolicyKey: "1.2.3.4",
+      brightcoveVideoId: "4084164751001",
+      caption: "This is video caption",
+      display: "primary",
+      paidOnly: "false",
+      posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+      posterImageUrl: "https://image.io",
+      skySports: false
+    },
+    children: [],
+    name: "video"
+  }
+];
+
+export const snapshotTests = renderComponent => [
   {
     name: "an error",
     test() {
@@ -42,7 +111,7 @@ export const snapshotTests = [
         error: { message: "An example error." }
       };
 
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...props}
           {...articleProps}
@@ -59,84 +128,19 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "a full article with an image as the lead asset",
     test() {
       const article = articleFixture({
-        paywalledContent: [
-          {
-            attributes: {
-              caption: "An image caption",
-              credits: "The image credits",
-              display: "primary",
-              ratio: "1500:1000",
-              url: "https://image.io"
-            },
-            children: [],
-            name: "image"
-          },
-          {
-            attributes: {
-              href: "https://link.io",
-              target: "_blank"
-            },
-            children: [
-              {
-                attributes: {
-                  value: "Some Link"
-                },
-                children: [],
-                name: "text"
-              }
-            ],
-            name: "link"
-          },
-          {
-            attributes: {},
-            children: [
-              {
-                attributes: {
-                  value: "Some content"
-                },
-                children: [],
-                name: "text"
-              }
-            ],
-            name: "paragraph"
-          },
-          {
-            attributes: {
-              caption: {
-                name: "AName",
-                twitter: "@AName"
-              },
-              content: "A pull quote"
-            },
-            children: [],
-            name: "pullQuote"
-          },
-          {
-            attributes: {
-              brightcoveAccountId: "57838016001",
-              brightcovePolicyKey: "1.2.3.4",
-              brightcoveVideoId: "4084164751001",
-              caption: "This is video caption",
-              display: "primary",
-              paidOnly: "false",
-              posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-              posterImageUrl: "https://image.io",
-              skySports: false
-            },
-            children: [],
-            name: "video"
-          }
-        ]
+        ...testFixture,
+        content: fullArticleAST,
+        paywalledContent: fullArticleAST
       });
 
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -153,13 +157,13 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article with a video as the lead asset",
     test() {
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -183,13 +187,13 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article with no lead asset",
     test() {
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -209,13 +213,13 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article with no headline falls back to use shortHeadline",
     test() {
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -236,13 +240,13 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article with ads",
     test() {
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -250,6 +254,13 @@ export const snapshotTests = [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
+            content: [
+              {
+                attributes: {},
+                children: [],
+                name: "ad"
+              }
+            ],
             paywalledContent: [
               {
                 attributes: {},
@@ -269,13 +280,13 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article loading state",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -293,7 +304,7 @@ export const snapshotTests = [
         />
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(testInstance).toMatchSnapshot();
     }
   },
   {
@@ -317,7 +328,7 @@ export const snapshotTests = [
         children: PropTypes.func.isRequired
       };
 
-      const testRenderer = TestRenderer.create(
+      const output = renderComponent(
         <Wrapper>
           {byline => (
             <Context.Provider
@@ -348,11 +359,11 @@ export const snapshotTests = [
         </Wrapper>
       );
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
 
-      testRenderer.getInstance().setState({ byline: testFixture.byline });
+      output.getInstance().setState({ byline: testFixture.byline });
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(output).toMatchSnapshot();
     }
   }
 ];
@@ -361,7 +372,7 @@ const negativeTests = [
   {
     name: "an article with no flags",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -381,7 +392,7 @@ const negativeTests = [
         />
       );
 
-      const flags = findComponents(testRenderer, "Flag");
+      const flags = findComponents(testInstance, "Flag");
 
       expect(flags).toEqual([]);
     }
@@ -389,7 +400,7 @@ const negativeTests = [
   {
     name: "an article with no byline",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -406,7 +417,7 @@ const negativeTests = [
         />
       );
 
-      const byline = findComponents(testRenderer, "ArticleBylineWithLinks");
+      const byline = findComponents(testInstance, "ArticleBylineWithLinks");
 
       expect(byline).toEqual([]);
     }
@@ -414,7 +425,7 @@ const negativeTests = [
   {
     name: "an article with no label",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -431,7 +442,7 @@ const negativeTests = [
         />
       );
 
-      const label = findComponents(testRenderer, "ArticleLabel");
+      const label = findComponents(testInstance, "ArticleLabel");
 
       expect(label).toEqual([]);
     }
@@ -439,7 +450,7 @@ const negativeTests = [
   {
     name: "an article with no standfirst",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -459,7 +470,7 @@ const negativeTests = [
         />
       );
 
-      const textNodes = testRenderer.root.findAll(node => {
+      const textNodes = testInstance.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&
@@ -477,7 +488,7 @@ const negativeTests = [
   {
     name: "an article with missing 16:9 lead asset",
     test() {
-      const testRenderer = TestRenderer.create(
+      const testInstance = TestRenderer.create(
         <Article
           {...articleProps}
           adConfig={adConfig}
@@ -503,14 +514,14 @@ const negativeTests = [
       const {
         crop169,
         crop32
-      } = testRenderer.root.instance.props.article.leadAsset;
+      } = testInstance.root.instance.props.article.leadAsset;
       expect(crop169).toEqual(null);
       expect(crop32).not.toEqual(null);
     }
   }
 ];
 
-export default (platformTests = []) => {
+export default (renderComponent, platformTests = []) => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -525,7 +536,11 @@ export default (platformTests = []) => {
     global.Intl = realIntl;
   });
 
-  iterator([...snapshotTests, ...platformTests, ...negativeTests]);
+  iterator([
+    ...snapshotTests(renderComponent),
+    ...platformTests,
+    ...negativeTests
+  ]);
 };
 
 export { adConfig };

@@ -1,3 +1,4 @@
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -7,7 +8,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import shared from "./shared.base.web";
+import shared from "./shared.base";
 
 const omitProps = new Set([
   "className",
@@ -27,5 +28,5 @@ export default () => {
     )
   );
 
-  shared();
+  shared(TestRenderer.create);
 };
