@@ -5,7 +5,7 @@ const topicPropTypes = {
   lineHeight: PropTypes.number,
   name: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  slug: PropTypes.string
+  slug: PropTypes.string.isRequired
 };
 
 export default topicPropTypes;
