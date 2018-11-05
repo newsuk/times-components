@@ -1,16 +1,12 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
   flattenStyleTransform,
-  hoistStyleTransform,
   minimaliseTransform,
   minimalNativeTransform,
-  print,
-  rnwTransform,
-  stylePrinter
+  print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
 import ArticleMainStandard from "../src/article-main-standard";

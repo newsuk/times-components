@@ -24,7 +24,7 @@ const ArticleLeadAssetImage = ({
     crop1251
   });
 
-  if(crop === null){
+  if (crop === null) {
     return null;
   }
 

@@ -1,11 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import Context from "@times-components/context";
-import { scales } from "@times-components/styleguide";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";

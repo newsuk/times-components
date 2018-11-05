@@ -8,7 +8,6 @@ import ArticleLeadAssetVideo, {
 } from "./article-lead-asset-video";
 
 const ArticleLeadAsset = ({ data, width }) => {
-
   const LeadAsset = data.isVideo
     ? ArticleLeadAssetVideo
     : ArticleLeadAssetImage;

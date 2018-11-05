@@ -106,24 +106,37 @@ class ArticlePage extends Component {
       return null;
     }
 
+    const {
+      adConfig,
+      analyticsStream,
+      article,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onVideoPress,
+      onViewed
+    } = this.props;
+
     return (
       <AdComposer adConfig={this.props.adConfig}>
         <Article
-          adConfig={this.props.adConfig}
-          analyticsStream={this.props.analyticsStream}
-          data={this.props.article}
+          adConfig={adConfig}
+          analyticsStream={analyticsStream}
+          data={article}
           header={this.renderHeader}
-          onAuthorPress={this.props.onAuthorPress}
-          onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
-          onCommentsPress={this.props.onCommentsPress}
-          onLinkPress={this.props.onLinkPress}
-          onRelatedArticlePress={this.props.onRelatedArticlePress}
-          onTopicPress={this.props.onTopicPress}
-          onTwitterLinkPress={this.props.onTwitterLinkPress}
-          onVideoPress={this.props.onVideoPress}
-          onViewableItemsChanged={
-            this.props.onViewed ? this.onViewableItemsChanged : null
-          }
+          onAuthorPress={onAuthorPress}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          onLinkPress={onLinkPress}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPress}
+          onTwitterLinkPress={onTwitterLinkPress}
+          onVideoPress={onVideoPress}
+          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           receiveChildList={receiveChildList}
         />
       </AdComposer>
