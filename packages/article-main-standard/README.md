@@ -1,6 +1,8 @@
-# ArticleMainStandard
+# Article Main Standard (Template)
 
-<!-- Add the description of the package here. -->
+This package is the default template for Articles. Its main responsibility is to manage its own header and uses the `article` package to render its body content, essentially creating a composed dumb component of a page.
+
+It is also responsible for tracking and ads.
 
 ## Contributing
 
@@ -38,7 +40,7 @@ yarn test:all
 
 Visit the official
 
-<!-- Add the storybook link here. -->
+http://components.thetimes.co.uk/?knob-Lead%20Asset=true&knob-Size%20of%20ad%20placeholder%3A=default&knob-Video=true&knob-Headline=true&knob-Section=%23333333&knob-Flags=true&knob-Standfirst=true&knob-Scale=medium&knob-Linked%20Byline=true&knob-Label=true&selectedKind=Pages%2FArticle&selectedStory=Main%20Standard&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs
 
 ## Future
 
