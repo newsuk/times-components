@@ -13,7 +13,6 @@ const ProfileProvider = (client, analyticsStream, data) =>
     React.createElement(
       AuthorProfileProvider,
       {
-        debounceTimeMs: data.debounceTimeMs,
         page: data.page,
         pageSize: data.pageSize,
         slug: data.slug

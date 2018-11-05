@@ -54,7 +54,7 @@ server.get("/article/:id", (request, response) => {
   const {
     params: { id }
   } = request;
-  const uri = process.env.GRAPHQL_ENDPOINT;
+  const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const headers = process.env.GRAPHQL_TOKEN
     ? {
         "nuk-tpatoken": process.env.GRAPHQL_TOKEN
@@ -62,7 +62,7 @@ server.get("/article/:id", (request, response) => {
     : null;
 
   ssr
-    .article({ headers, id, logger, makeArticleUrl, uri })
+    .article(id, headers, { graphqlApiUrl, logger, makeArticleUrl })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
@@ -82,10 +82,13 @@ server.get("/profile/:slug", (request, response) => {
     query: { page }
   } = request;
   const currentPage = toNumber(page) || 1;
-  const uri = process.env.GRAPHQL_ENDPOINT;
+  const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .authorProfile({ currentPage, logger, makeArticleUrl, slug, uri })
+    .authorProfile(
+      { currentPage, slug },
+      { graphqlApiUrl, logger, makeArticleUrl }
+    )
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {
@@ -104,17 +107,11 @@ server.get("/topic/:slug", (request, response) => {
     params: { slug },
     query: { page }
   } = request;
-  const pageNum = toNumber(page) || 1;
-  const uri = process.env.GRAPHQL_ENDPOINT;
+  const currentPage = toNumber(page) || 1;
+  const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic({
-      logger,
-      makeArticleUrl,
-      page: pageNum,
-      slug,
-      uri
-    })
+    .topic({ currentPage, slug }, { graphqlApiUrl, logger, makeArticleUrl })
     .then(({ extraStyles, initialProps, initialState, markup, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {

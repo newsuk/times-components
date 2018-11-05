@@ -18,7 +18,6 @@ module.exports = (client, analyticsStream, data) =>
       ArticleProvider,
       {
         analyticsStream,
-        debounceTimeMs: data.debounceTimeMs,
         id: data.id
       },
       ({ article, isLoading, error, refetch }) =>

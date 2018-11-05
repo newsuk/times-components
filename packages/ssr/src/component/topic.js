@@ -17,7 +17,8 @@ module.exports = (client, analyticsStream, data) =>
     React.createElement(
       TopicProvider,
       {
-        debounceTimeMs: data.debounceTimeMs,
+        page: data.page,
+        pageSize: data.pageSize,
         slug: data.slug
       },
       ({ isLoading, error, refetch, topic }) =>
