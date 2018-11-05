@@ -1980,9 +1980,9 @@ const makeDefaultConfig = ({
   keywords = defaultKeywords,
   label = defaultLabel,
   leadAsset = defaultLeadAsset,
+  paywalledContent = defaultContent,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
-  paywalledContent = defaultContent,
   shortHeadline = defaultShortHeadline,
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
@@ -2024,6 +2024,10 @@ export default ({ withAds = true, ...config } = {}) => {
 
   if (!withAds) {
     filteredContent.content = filteredContent.content.filter(
+      ({ name }) => name !== "ad"
+    );
+
+    filteredContent.paywalledContent = filteredContent.paywalledContent.filter(
       ({ name }) => name !== "ad"
     );
   }
