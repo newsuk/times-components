@@ -23,12 +23,24 @@ const makeTouchEvent = (active, history = []) => ({
   }
 });
 
-const renderComponent = () =>
-  TestRenderer.create(
+const renderComponent = () => {
+  const testRenderer = TestRenderer.create(
     <Gesture>
       <Text>Hello world!</Text>
     </Gesture>
   );
+  testRenderer.getInstance().onViewLayout({
+    nativeEvent: {
+      layout: {
+        height: 50,
+        width: 30,
+        x: 20,
+        y: 60
+      }
+    }
+  });
+  return testRenderer;
+};
 
 const gestureHandlers = component => {
   const {
