@@ -1,4 +1,4 @@
-const mockTpa = require("../../mock-tpa-server/dist/index");
+const mockTpa = require("@times-components/mock-tpa-server");
 
 mockTpa.start();
 

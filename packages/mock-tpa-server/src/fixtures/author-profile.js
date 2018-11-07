@@ -53,7 +53,8 @@ const createArticle = (index) => ({
       types: {
         Media: () => ({
           __typename: "Image"
-        })
+        }),
+        Slug: () => 'fiona-hamilton'
       },
       values: {
         author: (_, authorRequestParams, __, gqlQuery, data) => {

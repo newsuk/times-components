@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
 
 import {  ApolloServer } from "apollo-server";
-import {  makeMocks } from "@times-components/provider-test-tools";
+import { article, makeMocks } from "@times-components/provider-test-tools";
 import authorProfile from "./fixtures/author-profile"
 
 let server;
 
 export function start () {
-    const schema = makeMocks(authorProfile());
+    const [{ defaults }] = article();
+    const schema = makeMocks(defaults);
 
     server = new ApolloServer({
       schema
@@ -21,9 +22,7 @@ export function start () {
   }
 
 
-export function stop(){ 
-  return server.
-  
-
-
+export function stop() { 
+  return server.stop();
+}
   
