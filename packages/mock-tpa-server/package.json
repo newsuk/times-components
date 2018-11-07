@@ -1,31 +1,14 @@
 {
   "name": "@times-components/mock-tpa-server",
   "version": "1.0.0",
-  "description": "utillity for testing times component clients with mocked api",
-  "main": "./src/index",
+  "description": "utility for testing times component clients with mocked api",
+  "main": "./dist/index",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test": "jest",
     "transpile": "babel src -d dist --copy-files"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "testEnvironment": "jsdom",
-    "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/provider-test-tools/src/*.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
-    ],
-    "testURL": "http://localhost"
   },
   "repository": {
     "type": "git",
