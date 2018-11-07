@@ -1,10 +1,9 @@
 import * as React from "react";
 import { NativeModules } from "react-native";
 import PropTypes from "prop-types";
-import { ApolloProvider } from "react-apollo";
 import AuthorProfile from "@times-components/author-profile";
 import { AuthorProfileProvider } from "@times-components/provider";
-import client from "../apollo-client";
+import withNativeProvider from "../with-native-provider";
 
 const { track } = NativeModules.ReactAnalytics;
 const {
@@ -12,8 +11,8 @@ const {
   onTwitterLinkPress
 } = NativeModules.AuthorProfileEvents;
 
-const AuthorProfilePage = ({ authorSlug }) => (
-  <ApolloProvider client={client}>
+const AuthorProfilePage = ({ authorSlug }) => {
+  const AuthorProfileView = withNativeProvider(
     <AuthorProfileProvider
       articleImageRatio="4:3"
       debounceTimeMs={250}
@@ -47,8 +46,9 @@ const AuthorProfilePage = ({ authorSlug }) => (
         />
       )}
     </AuthorProfileProvider>
-  </ApolloProvider>
-);
+  );
+  return <AuthorProfileView />;
+};
 
 AuthorProfilePage.propTypes = {
   authorSlug: PropTypes.string.isRequired

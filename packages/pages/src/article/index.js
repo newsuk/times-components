@@ -1,50 +1,47 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
-import { ApolloProvider } from "react-apollo";
 import { ArticleProvider } from "@times-components/provider";
 import ArticleBase from "./article-base";
 import { propTypes, defaultProps } from "./article-prop-types";
-import client from "../apollo-client";
+import withNativeProvider from "../with-native-provider";
 
 const { refetch: refetchArticle } = NativeModules.ArticleEvents;
 
-const ArticleWrapper = props => {
+const ArticlePage = props => {
   const { article, articleId, error } = props;
 
   if (article || error) {
-    return (
-      <ApolloProvider client={client}>
+    const ArticlePageView = withNativeProvider(
+      <ArticleBase
+        {...props}
+        article={article ? JSON.parse(article).data.article : null}
+        error={error ? { message: error } : null}
+        refetch={() => refetchArticle(articleId)}
+      />
+    );
+    return <ArticlePageView />;
+  }
+  const ArticlePageView = withNativeProvider(
+    <ArticleProvider debounceTimeMs={100} id={articleId}>
+      {({ article: articleData, isLoading, error: errorData, refetch }) => (
         <ArticleBase
           {...props}
-          article={article ? JSON.parse(article).data.article : null}
-          error={error ? { message: error } : null}
-          refetch={() => refetchArticle(articleId)}
+          article={articleData}
+          error={errorData}
+          isLoading={isLoading}
+          refetch={refetch}
         />
-      </ApolloProvider>
-    );
-  }
-  return (
-    <ApolloProvider client={client}>
-      <ArticleProvider debounceTimeMs={100} id={articleId}>
-        {({ article: articleData, isLoading, error: errorData, refetch }) => (
-          <ArticleBase
-            {...props}
-            article={articleData}
-            error={errorData}
-            isLoading={isLoading}
-            refetch={refetch}
-          />
-        )}
-      </ArticleProvider>
-    </ApolloProvider>
+      )}
+    </ArticleProvider>
   );
+  return <ArticlePageView />;
 };
-ArticleWrapper.propTypes = {
+ArticlePage.propTypes = {
   ...propTypes,
   article: PropTypes.string,
   error: PropTypes.string
 };
-ArticleWrapper.defaultProps = defaultProps;
+ArticlePage.defaultProps = defaultProps;
 
-export default ArticleWrapper;
+export default ArticlePage;
