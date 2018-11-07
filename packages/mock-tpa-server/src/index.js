@@ -1,28 +1,23 @@
 /* eslint-disable no-console */
 
-import {  ApolloServer } from "apollo-server";
+import { ApolloServer } from "apollo-server";
 import { article, makeMocks } from "@times-components/provider-test-tools";
-import authorProfile from "./fixtures/author-profile"
 
 let server;
 
-export function start () {
-    const [{ defaults }] = article();
-    const schema = makeMocks(defaults);
+export function start() {
+  const [{ defaults }] = article();
+  const schema = makeMocks(defaults);
 
-    server = new ApolloServer({
-      schema
-    });
+  server = new ApolloServer({
+    schema
+  });
 
-    return server.listen().then(({
-      url
-    }) => {
-      console.log(`🚀 TPA Server ready at ${url}`);
-    });
-  }
+  return server.listen().then(({ url }) => {
+    console.log(`🚀 TPA Server ready at ${url}`);
+  });
+}
 
-
-export function stop() { 
+export function stop() {
   return server.stop();
 }
-  
