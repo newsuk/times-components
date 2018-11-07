@@ -75,6 +75,16 @@ export default () => {
             .source.uri
         ).toEqual(dataUri);
       }
+    },
+    {
+      name: "use screen width if highResSize is not provided",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Image {...props} highResSize={undefined} />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 

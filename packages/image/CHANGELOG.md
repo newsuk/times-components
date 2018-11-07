@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.2.5...@times-components/image@4.3.0) (2018-11-06)
+
+
+### Features
+
+* add off-centre zoom for images on native ([#1451](https://github.com/newsuk/times-components/issues/1451)) ([3bee605](https://github.com/newsuk/times-components/commit/3bee605))
+
+
+
+
+
 <a name="4.2.5"></a>
 ## [4.2.5](https://github.com/newsuk/times-components/compare/@times-components/image@4.2.4...@times-components/image@4.2.5) (2018-11-01)
 

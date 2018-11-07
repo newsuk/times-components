@@ -14,7 +14,6 @@ export default (uriString, key, value) => {
   try {
     url = new URL(uriString);
   } catch (e) {
-    console.error("Invalid URL", uriString);
     return uriString;
   }
 

@@ -53,7 +53,31 @@ exports[`1. default modal 1`] = `
               Object {
                 "transform": Array [
                   Object {
+                    "translateX": -0,
+                  },
+                  Object {
+                    "translateY": -0,
+                  },
+                  Object {
+                    "translateX": 0,
+                  },
+                  Object {
+                    "translateY": 0,
+                  },
+                  Object {
                     "scale": 1,
+                  },
+                  Object {
+                    "translateX": -0,
+                  },
+                  Object {
+                    "translateY": -0,
+                  },
+                  Object {
+                    "translateX": 0,
+                  },
+                  Object {
+                    "translateY": 0,
                   },
                   Object {
                     "rotate": "0 deg",
