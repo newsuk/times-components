@@ -303,8 +303,6 @@ exports[`3. an article with a video as the lead asset 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -354,8 +352,6 @@ exports[`4. an article with no lead asset 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -405,8 +401,6 @@ exports[`5. an article with no headline falls back to use shortheadline 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -454,8 +448,6 @@ exports[`6. an article with ads 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -515,8 +507,6 @@ exports[`8. an article with updated byline 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -590,8 +580,6 @@ exports[`8. an article with updated byline 2`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>
@@ -641,8 +629,6 @@ exports[`9. an article that moves to a loading state 1`] = `
     <View>
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentCount={65}
-        commentsEnabled={true}
         url="https://url.io"
       />
     </View>

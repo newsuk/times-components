@@ -8,8 +8,6 @@ import {
 import "./mocks.native";
 import shared from "./images.base";
 
-jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
-
 export default () => {
   addSerializers(
     expect,

@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
+import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
@@ -15,7 +16,6 @@ import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import ArticleComments from "./article-comments/article-comments";
 import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
@@ -122,8 +122,6 @@ const renderRow = (analyticsStream, width) => (
       return (
         <ArticleComments
           articleId={rowData.data.articleId}
-          commentCount={rowData.data.commentCount}
-          commentsEnabled={rowData.data.commentsEnabled}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
           url={rowData.data.url}
