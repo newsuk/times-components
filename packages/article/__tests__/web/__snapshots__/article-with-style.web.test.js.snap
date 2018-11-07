@@ -682,7 +682,7 @@ exports[`full article with style 1`] = `
       >
         Some content
       </p>
-      <span
+      <div
         className="paywall"
       >
         <div
@@ -745,7 +745,7 @@ exports[`full article with style 1`] = `
             <ArticleImage />
           </div>
         </div>
-      </span>
+      </div>
     </div>
   </div>
   <div

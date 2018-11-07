@@ -92,7 +92,7 @@ iterator([
     test() {
       const article = articleFixture({
         ...testFixture,
-        paywalledContent: [
+        content: [
           {
             attributes: {
               caption: "An image caption",
@@ -138,7 +138,7 @@ iterator([
     test() {
       const article = articleFixture({
         ...testFixture,
-        paywalledContent: [
+        content: [
           {
             attributes: {
               caption: "An image caption",

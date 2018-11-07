@@ -34,75 +34,6 @@ const emptyArticle = {
   topics: null
 };
 
-const fullArticleAST = [
-  {
-    attributes: {
-      caption: "An image caption",
-      credits: "The image credits",
-      display: "primary",
-      ratio: "1500:1000",
-      url: "https://image.io"
-    },
-    children: [],
-    name: "image"
-  },
-  {
-    attributes: {
-      href: "https://link.io",
-      target: "_blank"
-    },
-    children: [
-      {
-        attributes: {
-          value: "Some Link"
-        },
-        children: [],
-        name: "text"
-      }
-    ],
-    name: "link"
-  },
-  {
-    attributes: {},
-    children: [
-      {
-        attributes: {
-          value: "Some content"
-        },
-        children: [],
-        name: "text"
-      }
-    ],
-    name: "paragraph"
-  },
-  {
-    attributes: {
-      caption: {
-        name: "AName",
-        twitter: "@AName"
-      },
-      content: "A pull quote"
-    },
-    children: [],
-    name: "pullQuote"
-  },
-  {
-    attributes: {
-      brightcoveAccountId: "57838016001",
-      brightcovePolicyKey: "1.2.3.4",
-      brightcoveVideoId: "4084164751001",
-      caption: "This is video caption",
-      display: "primary",
-      paidOnly: "false",
-      posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-      posterImageUrl: "https://image.io",
-      skySports: false
-    },
-    children: [],
-    name: "video"
-  }
-];
-
 export const snapshotTests = renderComponent => [
   {
     name: "an error",
@@ -136,8 +67,74 @@ export const snapshotTests = renderComponent => [
     test() {
       const article = articleFixture({
         ...testFixture,
-        content: fullArticleAST,
-        paywalledContent: fullArticleAST
+        content: [
+          {
+            attributes: {
+              caption: "An image caption",
+              credits: "The image credits",
+              display: "primary",
+              ratio: "1500:1000",
+              url: "https://image.io"
+            },
+            children: [],
+            name: "image"
+          },
+          {
+            attributes: {
+              href: "https://link.io",
+              target: "_blank"
+            },
+            children: [
+              {
+                attributes: {
+                  value: "Some Link"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
+            name: "link"
+          },
+          {
+            attributes: {},
+            children: [
+              {
+                attributes: {
+                  value: "Some content"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
+            name: "paragraph"
+          },
+          {
+            attributes: {
+              caption: {
+                name: "AName",
+                twitter: "@AName"
+              },
+              content: "A pull quote"
+            },
+            children: [],
+            name: "pullQuote"
+          },
+          {
+            attributes: {
+              brightcoveAccountId: "57838016001",
+              brightcovePolicyKey: "1.2.3.4",
+              brightcoveVideoId: "4084164751001",
+              caption: "This is video caption",
+              display: "primary",
+              paidOnly: "false",
+              posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+              posterImageUrl: "https://image.io",
+              skySports: false
+            },
+            children: [],
+            name: "video"
+          }
+        ]
       });
 
       const output = renderComponent(
@@ -255,13 +252,6 @@ export const snapshotTests = renderComponent => [
             ...testFixture,
             ...emptyArticle,
             content: [
-              {
-                attributes: {},
-                children: [],
-                name: "ad"
-              }
-            ],
-            paywalledContent: [
               {
                 attributes: {},
                 children: [],
