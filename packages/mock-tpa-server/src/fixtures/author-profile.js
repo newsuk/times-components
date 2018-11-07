@@ -15,7 +15,7 @@ const createArticle = () => ({
   slug: `british-trio-stopped-on-the-way-to-join-isis`,
   summary: [],
   url:
-    "http://localhost:4000/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn" // TODO localhost should be an env variable.
+    "/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn" // TODO localhost should be an env variable.
 });
 
 const createArticles = count =>
