@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.5",
-    "@times-components/provider-test-tools": "1.8.5",
+    "@times-components/provider-test-tools": "1.9.0",
     "apollo-server": "2.1.0",
     "cypress": "3.1.0",
     "depcheck": "0.6.9",
@@ -52,14 +52,14 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article": "6.0.3",
-    "@times-components/author-profile": "5.0.3",
+    "@times-components/article": "6.1.0",
+    "@times-components/author-profile": "5.0.4",
     "@times-components/context": "0.5.4",
-    "@times-components/provider": "1.6.5",
+    "@times-components/provider": "1.7.0",
     "@times-components/schema": "0.1.11",
     "@times-components/styleguide": "3.7.2",
     "@times-components/tealium": "1.6.9",
-    "@times-components/topic": "4.0.3",
+    "@times-components/topic": "4.0.4",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link": "1.2.3",

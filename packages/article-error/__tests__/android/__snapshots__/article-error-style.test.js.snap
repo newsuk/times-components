@@ -84,7 +84,7 @@ exports[`renders correctly with style 1`] = `
               "color": "#FFFFFF",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 16,
-              "lineHeight": 14,
+              "lineHeight": 16,
               "paddingTop": 0,
             }
           }
