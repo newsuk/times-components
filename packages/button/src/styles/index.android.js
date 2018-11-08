@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   },
   text: {
     ...sharedStyles.text,
-    lineHeight: 14,
     paddingTop: 0
   }
 });

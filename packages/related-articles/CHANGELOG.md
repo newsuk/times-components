@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.3"></a>
+## [5.0.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.2...@times-components/related-articles@5.0.3) (2018-11-08)
+
+
+### Bug Fixes
+
+* lazy loading for related articles slice ([#1459](https://github.com/newsuk/times-components/issues/1459)) ([91e7c33](https://github.com/newsuk/times-components/commit/91e7c33))
+
+
+
+
+
 <a name="5.0.2"></a>
 ## [5.0.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.1...@times-components/related-articles@5.0.2) (2018-11-07)
 
