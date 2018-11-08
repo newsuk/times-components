@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.4"></a>
+## [1.4.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.3...@times-components/ssr@1.4.4) (2018-11-08)
+
+
+### Bug Fixes
+
+* colour byline by article section ([#1461](https://github.com/newsuk/times-components/issues/1461)) ([5c2624b](https://github.com/newsuk/times-components/commit/5c2624b))
+
+
+
+
+
 <a name="1.4.3"></a>
 ## [1.4.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.2...@times-components/ssr@1.4.3) (2018-11-08)
 
