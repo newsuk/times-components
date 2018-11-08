@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import RelatedArticles from "@times-components/related-articles";
@@ -6,6 +6,8 @@ import { spacing } from "@times-components/styleguide";
 import ArticleBody from "./article-body/article-body";
 import ArticleTopics from "./article-topics";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import { withTrackScrollDepth } from "@times-components/tracking";
+import articleTrackingContext from "./article-tracking-context";
 
 import { BodyContainer, HeaderAdContainer, MainContainer } from "./styles/responsive";
 
@@ -13,14 +15,30 @@ const adStyle = {
   marginBottom: 0
 };
 
-const Article = props => {
+class Article extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      articleWidth: null
+    };
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line react/no-did-mount-set-state
+    this.setState({
+      articleWidth: this.node && this.node.clientWidth
+    });
+  }
+
+  render(){
   const {
     adConfig,
     analyticsStream,
     data: { content, section, url, topics, relatedArticleSlice },
-    header,
+    Header,
     receiveChildList
-  } = props;
+  } = this.props;
 
   // eslint-disable-next-line react/prop-types
   const displayRelatedArticles = ({ isVisible }) =>
@@ -60,7 +78,7 @@ const Article = props => {
             />
           </HeaderAdContainer>
           <MainContainer>
-            {header() || null}
+            <Header width={this.state.articleWidth} />
             <BodyContainer>
               <ArticleBody
                 content={content}
@@ -85,9 +103,12 @@ const Article = props => {
       </LazyLoad>
     </AdComposer>
   );
+            }
 };
 
 Article.propTypes = articlePropTypes;
 Article.defaultProps = articleDefaultProps;
 
-export default Article;
+export default articleTrackingContext(
+  withTrackScrollDepth(Article)
+);

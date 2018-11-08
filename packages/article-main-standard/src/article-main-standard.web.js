@@ -34,22 +34,10 @@ const adStyle = {
 class ArticlePage extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      articleWidth: null
-    };
-
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  componentDidMount() {
-    // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState({
-      articleWidth: this.node && this.node.clientWidth
-    });
-  }
-
-  renderHeader() {
+  renderHeader(parentProps) {
     const {
         byline,
         hasVideo,
@@ -61,8 +49,8 @@ class ArticlePage extends Component {
         shortHeadline,
         standfirst,
         topics,
-    } = this.props.data;
-    const leadAssetProps = getLeadAsset(this.props.data);
+    } = this.props.article;
+    const leadAssetProps = getLeadAsset(this.props.article);
 
     return (
     <Wrapper>
@@ -86,7 +74,7 @@ class ArticlePage extends Component {
       <LeadAssetContainer>
         <LeadAssetComponent
           {...leadAssetProps}
-          width={this.state.articleWidth}
+          width={parentProps.width}
         />
       </LeadAssetContainer>
       </Wrapper>
@@ -96,57 +84,31 @@ class ArticlePage extends Component {
   render() {
     const {
       adConfig,
+      article,
       analyticsStream,
-      data: {
-        section,
-        url
-      },
+      error,
+      isLoading,
       receiveChildList
     } = this.props;
-    const leadAssetProps = getLeadAsset(this.props.data);
+
+    if (error || isLoading) {
+          return null;
+        }
 
     return (
       <Article
         adConfig={adConfig}
         analyticsStream={analyticsStream}
-        data={this.props.data}
-        header={this.renderHeader}
+        data={article}
+        Header={this.renderHeader}
         receiveChildList={receiveChildList}
       />
     );
   }
 }
 
-ArticlePage.propTypes = articlePropTypes;
-ArticlePage.defaultProps = articleDefaultProps;
+// NEED TO UPDATE THIS
+// ArticlePage.propTypes = articlePropTypes;
+// ArticlePage.defaultProps = articleDefaultProps;
 
-const ArticleMainStandard = ({
-  adConfig,
-  analyticsStream,
-  article,
-  isLoading,
-  error,
-  receiveChildList
-}) => {
-  if (error || isLoading) {
-    return null;
-  }
-
-  return (
-    // <AdComposer adConfig={adConfig}>
-      <ArticlePage
-        adConfig={adConfig}
-        analyticsStream={analyticsStream}
-        data={article}
-        receiveChildList={receiveChildList}
-      />
-    // </AdComposer>
-  );
-};
-
-ArticleMainStandard.propTypes = articlePagePropTypes;
-ArticleMainStandard.defaultProps = articlePageDefaultProps;
-
-export default articleTrackingContext(
-  withTrackScrollDepth(ArticleMainStandard)
-);
+export default ArticlePage;
