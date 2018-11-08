@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import {
   article as makeParams,
+  articleComments as makeArticleCommentsParams,
   fixtures,
   MockedProvider,
   schemaToMocks
@@ -93,14 +94,23 @@ export class ArticleConfigurator extends Component {
   }
 
   componentDidMount() {
-    schemaToMocks(
-      makeParams({
+    const { id } = this.props;
+    schemaToMocks([
+      ...makeParams({
         makeArticle: makeArticle(this.props.configuration),
         variables: () => ({
-          id: this.props.id
+          id
+        })
+      }),
+      ...makeArticleCommentsParams({
+        count: 123,
+        enabled: true,
+        id,
+        variables: () => ({
+          id
         })
       })
-    ).then(mocks => this.setState({ mocks }));
+    ]).then(mocks => this.setState({ mocks }));
   }
 
   componentDidUpdate(prevProps) {

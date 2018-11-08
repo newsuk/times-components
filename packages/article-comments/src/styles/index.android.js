@@ -3,6 +3,10 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  errorBody: {
+    ...sharedStyles.errorBody,
+    lineHeight: 21
+  },
   supporting: {
     ...sharedStyles.supporting,
     lineHeight: 21

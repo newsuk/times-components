@@ -37,16 +37,27 @@ class RelatedArticleItem extends Component {
     };
   }
 
+  componentDidMount() {
+    if (
+      this.props.imageConfig.showHiRes
+    ) {
+      this.setHighResSize();
+    }
+  }
+
   componentDidUpdate(prevProps) {
     if (
       prevProps.imageConfig.showHiRes !== this.props.imageConfig.showHiRes &&
       this.props.imageConfig.showHiRes
     ) {
-      // eslint-disable-next-line react/no-did-update-set-state
-      this.setState({
-        highResSize: findNodeHandle(this.node.current).clientWidth
-      });
+      this.setHighResSize();
     }
+  }
+
+  setHighResSize() {
+    this.setState({
+      highResSize: findNodeHandle(this.node.current).clientWidth
+    });
   }
 
   render() {

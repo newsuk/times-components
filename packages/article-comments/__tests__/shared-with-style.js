@@ -5,8 +5,7 @@ import {
   minimaliseTransform,
   print
 } from "@times-components/jest-serializer";
-import "./mocks.native";
-import shared from "./comments.base";
+import shared from "./shared-base";
 
 export default () => {
   addSerializers(
@@ -17,20 +16,6 @@ export default () => {
       minimaliseTransform((value, key) => key !== "style")
     )
   );
-
-  const realIntl = Intl;
-
-  beforeEach(() => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
-    };
-  });
-
-  afterEach(() => {
-    global.Intl = realIntl;
-  });
 
   shared();
 };

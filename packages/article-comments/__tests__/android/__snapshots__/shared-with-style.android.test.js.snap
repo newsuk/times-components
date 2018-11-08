@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`comments error 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 25,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 27,
+        "lineHeight": 29,
+        "maxWidth": 315,
+        "paddingBottom": 10,
+        "paddingTop": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    You’re offline
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "lineHeight": 21,
+        "maxWidth": 330,
+        "textAlign": "center",
+      }
+    }
+  >
+    You must have a network connection to view and post comments. Please check your connection and retry.
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#006699",
+        "borderRadius": 2,
+        "elevation": 3,
+        "height": 36,
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 25,
+        "maxWidth": 165,
+        "minWidth": 100,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 16,
+          "lineHeight": 16,
+          "paddingTop": 0,
+        }
+      }
+    >
+      Retry
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`disabled comments 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 25,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 27,
+        "lineHeight": 29,
+        "maxWidth": 315,
+        "paddingBottom": 10,
+        "paddingTop": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    Comments for this article have been turned off
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "lineHeight": 21,
+        "maxWidth": 280,
+        "textAlign": "center",
+      }
+    }
+  >
+    For more details, please see our 
+    
+
+    <Text
+      style={
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
+      }
+    >
+      community guidelines
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`enabled comments 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 25,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 27,
+        "lineHeight": 29,
+        "maxWidth": 315,
+        "paddingBottom": 10,
+        "paddingTop": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    123 comments
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "lineHeight": 21,
+        "maxWidth": 280,
+        "textAlign": "center",
+      }
+    }
+  >
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      style={
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
+      }
+    >
+      here
+    </Text>
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#006699",
+        "borderRadius": 2,
+        "elevation": 3,
+        "height": 36,
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 25,
+        "maxWidth": 215,
+        "minWidth": 100,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 16,
+          "lineHeight": 16,
+          "paddingTop": 0,
+        }
+      }
+    >
+      View comments
+    </Text>
+  </View>
+</View>
+`;

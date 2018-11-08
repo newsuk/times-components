@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.0...@times-components/image@4.3.1) (2018-11-07)
+
+
+### Bug Fixes
+
+* Use screen width if highRes is not provided in images ([#1452](https://github.com/newsuk/times-components/issues/1452)) ([91c16e7](https://github.com/newsuk/times-components/commit/91c16e7))
+
+
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.2.5...@times-components/image@4.3.0) (2018-11-06)
 

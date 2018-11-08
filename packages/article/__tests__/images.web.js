@@ -9,8 +9,6 @@ import {
 import "./mocks.web";
 import shared from "./images.base";
 
-jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
-
 const omitProps = new Set([
   "className",
   "data-testid",
