@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.6.1...@times-components/pages@1.7.0) (2018-11-08)
+
+
+### Features
+
+* Filter interactives from article ast ([#1464](https://github.com/newsuk/times-components/issues/1464)) ([a6a6b9f](https://github.com/newsuk/times-components/commit/a6a6b9f))
+
+
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.6.0...@times-components/pages@1.6.1) (2018-11-08)
 
