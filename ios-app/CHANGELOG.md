@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.35...@times-components/ios-app@0.5.0) (2018-11-08)
+
+
+### Features
+
+* simple article ([#1448](https://github.com/newsuk/times-components/issues/1448)) ([ebdf299](https://github.com/newsuk/times-components/commit/ebdf299))
+
+
+
+
+
 <a name="0.4.35"></a>
 ## [0.4.35](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.34...@times-components/ios-app@0.4.35) (2018-11-08)
 
