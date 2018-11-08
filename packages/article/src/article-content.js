@@ -9,7 +9,7 @@ const viewabilityConfig = {
 
 const ArticleContent = ({
   data,
-  header,
+  Header,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -26,7 +26,7 @@ const ArticleContent = ({
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
-    ListHeaderComponent={header}
+    ListHeaderComponent={<Header />}
     onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(

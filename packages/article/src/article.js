@@ -13,6 +13,8 @@ import {
   articleDefaultProps
 } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
+import { withTrackScrollDepth } from "@times-components/tracking";
+import articleTrackingContext from "./article-tracking-context";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -77,7 +79,7 @@ const Article = props => {
     adConfig,
     analyticsStream,
     data,
-    header,
+    Header,
     onAuthorPress,
     onCommentGuidelinesPress,
     onCommentsPress,
@@ -103,7 +105,7 @@ const Article = props => {
     <AdComposer adConfig={adConfig}>
       <ArticleContent
         data={articleData}
-        header={header}
+        Header={Header}
         initialListSize={listViewSize}
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
@@ -134,4 +136,4 @@ Article.propTypes = {
 };
 Article.defaultProps = articleDefaultProps;
 
-export default Article;
+export default articleTrackingContext(withTrackScrollDepth(Article));

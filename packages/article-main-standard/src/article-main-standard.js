@@ -123,12 +123,11 @@ class ArticlePage extends Component {
     } = this.props;
 
     return (
-      <AdComposer adConfig={adConfig}>
         <Article
           adConfig={adConfig}
           analyticsStream={analyticsStream}
           data={article}
-          header={this.renderHeader}
+          Header={this.renderHeader}
           onAuthorPress={onAuthorPress}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
@@ -140,7 +139,6 @@ class ArticlePage extends Component {
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           receiveChildList={receiveChildList}
         />
-      </AdComposer>
     );
   }
 }
@@ -157,4 +155,4 @@ ArticlePage.propTypes = {
 };
 ArticlePage.defaultProps = articlePageDefaultProps;
 
-export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
+export default ArticlePage;
