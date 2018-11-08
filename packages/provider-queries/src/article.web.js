@@ -106,6 +106,7 @@ export default addTypenameToDocument(gql`
     publishedTime
     section
     shortIdentifier
+    shortHeadline
     slug
     url
   }
