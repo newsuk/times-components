@@ -24,6 +24,10 @@ export const HeaderAdContainer = styled(View)`
   }
 `;
 
+export const Wrapper = styled(View)`
+  order: 0;
+`;
+
 /* --- Header --- */
 
 export const HeaderContainer = styled(View)`
@@ -71,11 +75,10 @@ export const LeadAssetContainer = styled(View)`
   order: 1;
 
   @media (min-width: ${breakpoints.wide}px) {
-    order: 1;
+    order: 2;
   }
 `;
 
 export const BodyContainer = styled(View)`
   display: block;
-  order: 4;
 `;

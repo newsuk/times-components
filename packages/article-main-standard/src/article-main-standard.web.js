@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import Article from "@times-components/article";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -23,7 +23,8 @@ import {
   MetaContainer,
   LeadAssetContainer,
   HeaderAdContainer,
-  BodyContainer
+  BodyContainer,
+  Wrapper
 } from "./styles/responsive";
 
 const adStyle = {
@@ -37,6 +38,8 @@ class ArticlePage extends Component {
     this.state = {
       articleWidth: null
     };
+
+    this.renderHeader = this.renderHeader.bind(this);
   }
 
   componentDidMount() {
@@ -46,11 +49,8 @@ class ArticlePage extends Component {
     });
   }
 
-  render() {
+  renderHeader() {
     const {
-      adConfig,
-      analyticsStream,
-      data: {
         byline,
         hasVideo,
         headline,
@@ -58,10 +58,47 @@ class ArticlePage extends Component {
         label,
         publicationName,
         publishedTime,
-        section,
         shortHeadline,
         standfirst,
         topics,
+    } = this.props.data;
+    const leadAssetProps = getLeadAsset(this.props.data);
+
+    return (
+    <Wrapper>
+      <HeaderContainer>
+      <ArticleHeader
+        flags={flags}
+        hasVideo={hasVideo}
+        headline={getHeadline(headline, shortHeadline)}
+        label={label}
+        standfirst={standfirst}
+      />
+    </HeaderContainer>
+      <MetaContainer>
+        <ArticleMeta
+          byline={byline}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+        />
+        <ArticleTopics topics={topics} />
+      </MetaContainer>
+      <LeadAssetContainer>
+        <LeadAssetComponent
+          {...leadAssetProps}
+          width={this.state.articleWidth}
+        />
+      </LeadAssetContainer>
+      </Wrapper>
+      );
+  }
+
+  render() {
+    const {
+      adConfig,
+      analyticsStream,
+      data: {
+        section,
         url
       },
       receiveChildList
@@ -69,56 +106,13 @@ class ArticlePage extends Component {
     const leadAssetProps = getLeadAsset(this.props.data);
 
     return (
-      <article
-        ref={node => {
-          this.node = node;
-        }}
-      >
-        <HeaderAdContainer key="headerAd">
-          <Ad
-            contextUrl={url}
-            section={section}
-            slotName="header"
-            style={adStyle}
-          />
-        </HeaderAdContainer>
-        <MainContainer>
-          <HeaderContainer>
-            <ArticleHeader
-              flags={flags}
-              hasVideo={hasVideo}
-              headline={getHeadline(headline, shortHeadline)}
-              label={label}
-              standfirst={standfirst}
-            />
-          </HeaderContainer>
-          <MetaContainer>
-            <ArticleMeta
-              byline={byline}
-              publicationName={publicationName}
-              publishedTime={publishedTime}
-            />
-            <ArticleTopics topics={topics} />
-          </MetaContainer>
-          <LeadAssetContainer>
-            <LeadAssetComponent
-              {...leadAssetProps}
-              width={this.state.articleWidth}
-            />
-          </LeadAssetContainer>
-          <BodyContainer>
-            <Article
-              adConfig={adConfig}
-              analyticsStream={analyticsStream}
-              data={this.props.data}
-              receiveChildList={receiveChildList}
-            />
-          </BodyContainer>
-          <Ad contextUrl={url} section={section} slotName="pixel" />
-          <Ad contextUrl={url} section={section} slotName="pixelteads" />
-          <Ad contextUrl={url} section={section} slotName="pixelskin" />
-        </MainContainer>
-      </article>
+      <Article
+        adConfig={adConfig}
+        analyticsStream={analyticsStream}
+        data={this.props.data}
+        header={this.renderHeader}
+        receiveChildList={receiveChildList}
+      />
     );
   }
 }
@@ -139,14 +133,14 @@ const ArticleMainStandard = ({
   }
 
   return (
-    <AdComposer adConfig={adConfig}>
+    // <AdComposer adConfig={adConfig}>
       <ArticlePage
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}
         receiveChildList={receiveChildList}
       />
-    </AdComposer>
+    // </AdComposer>
   );
 };
 

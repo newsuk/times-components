@@ -29,7 +29,7 @@ export const HeaderAdContainer = styled(View)`
 export const HeaderContainer = styled(View)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
-  order: 2;
+  // order: 1;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
@@ -44,33 +44,9 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-/* --- Meta --- */
 
-export const MetaContainer = styled(View)`
-  order: 3;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    margin-bottom: ${spacing(4)};
-    padding-right: ${spacing(4)};
-    padding-left: ${spacing(4)};
-    position: absolute;
-    left: 0;
-    width: 20.8333%;
-    z-index: 1;
-  }
-`;
-
-/* --- Body --- */
-
-export const LeadAssetContainer = styled(View)`
-  order: 1;
-`;
 
 export const BodyContainer = styled(View)`
+  // order: 2;
   display: block;
 `;
