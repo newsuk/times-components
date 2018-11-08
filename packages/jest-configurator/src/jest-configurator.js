@@ -1,14 +1,10 @@
-// @flow
-
 import findNodeModules from "find-node-modules";
 import path from "path";
 import mockRNComponent from "./react-native-mock-components";
 
-export type Platform = "node" | "android" | "ios" | "web";
-
 export const mockReactNativeComponent = mockRNComponent;
 
-const nativeSpecific = (platform: Platform) => ({
+const nativeSpecific = platform => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
@@ -56,16 +52,8 @@ const platformCode = platform => {
   }
 };
 
-type Options = {
-  coverageIgnoreGlobs?: Array<string>,
-  setupTestFrameworkScriptFile: string
-};
-
-export default (
-  platform: Platform,
-  cwd: string,
-  { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile }: Options = {}
-) => {
+export default (platform, cwd, options = {}) => {
+  const { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile } = options;
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
