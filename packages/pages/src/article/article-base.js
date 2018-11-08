@@ -5,6 +5,7 @@ import Context, { defaults } from "@times-components/context";
 import { colours } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
+import filterInteractives from "./filter-interactives";
 
 const { track } = NativeModules.ReactAnalytics;
 const {
@@ -26,7 +27,8 @@ const ArticleBase = ({
   refetch,
   omitErrors,
   scale,
-  sectionName: pageSection
+  sectionName: pageSection,
+  showInteractives
 }) => {
   const articleSection = article ? article.section : null;
   const adConfig =
@@ -53,7 +55,7 @@ const ArticleBase = ({
             track(event);
           }
         }}
-        article={article}
+        article={showInteractives ? article : filterInteractives(article)}
         error={omitErrors ? null : error}
         isLoading={isLoading || (omitErrors && error)}
         onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
