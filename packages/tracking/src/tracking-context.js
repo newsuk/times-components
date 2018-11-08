@@ -1,34 +1,27 @@
-// @flow
-
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
-import type {
-  AnalyticsEventObjectType,
-  TrackingContextObjectType,
-  TrackingContextPropsType
-} from "./tracking.flow";
 import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
-  WrappedComponent: any,
+  WrappedComponent,
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
     isDataReady = ({ isLoading }) => !isLoading
-  }: TrackingContextObjectType = {}
+  } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackingContext extends Component<TrackingContextPropsType> {
+  class WithTrackingContext extends Component {
     static defaultProps = {
       ...WrappedComponent.defaultProps
     };
 
-    constructor(props: TrackingContextPropsType, context: {}) {
+    constructor(props, context) {
       super(props, context);
 
       this.pageEventTriggered = false;
@@ -62,9 +55,7 @@ const withTrackingContext = (
       this.attemptTrackPageEvent(this.props);
     }
 
-    pageEventTriggered: boolean;
-
-    attemptTrackPageEvent(props: TrackingContextPropsType) {
+    attemptTrackPageEvent(props) {
       if (
         isDataReady(props) &&
         this.isRootTrackingContext() &&
@@ -80,12 +71,7 @@ const withTrackingContext = (
       }
     }
 
-    fireAnalyticsEvent = ({
-      object,
-      component,
-      action,
-      attrs
-    }: AnalyticsEventObjectType) => {
+    fireAnalyticsEvent = ({ object, component, action, attrs }) => {
       const decoratedEvent = {
         action,
         attrs: {
@@ -111,7 +97,7 @@ const withTrackingContext = (
       return !this.context || !this.context.tracking;
     }
 
-    analyticsStream(analyticsEvent: AnalyticsEventObjectType) {
+    analyticsStream(analyticsEvent) {
       const stream =
         get(this.context, "tracking.analytics") || this.props.analyticsStream;
       return stream && stream(analyticsEvent);
