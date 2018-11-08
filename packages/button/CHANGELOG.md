@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.28"></a>
+## [2.2.28](https://github.com/newsuk/times-components/compare/@times-components/button@2.2.27...@times-components/button@2.2.28) (2018-11-08)
+
+
+### Bug Fixes
+
+* button android default style ([#1460](https://github.com/newsuk/times-components/issues/1460)) ([ea02c96](https://github.com/newsuk/times-components/commit/ea02c96))
+
+
+
+
+
 <a name="2.2.27"></a>
 ## [2.2.27](https://github.com/newsuk/times-components/compare/@times-components/button@2.2.26...@times-components/button@2.2.27) (2018-11-01)
 
