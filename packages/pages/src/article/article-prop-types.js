@@ -7,7 +7,8 @@ export const propTypes = {
   omitErrors: PropTypes.bool,
   refetch: PropTypes.func,
   scale: PropTypes.string,
-  sectionName: PropTypes.string
+  sectionName: PropTypes.string,
+  showInteractives: PropTypes.bool
 };
 
 export const defaultProps = {
@@ -17,5 +18,6 @@ export const defaultProps = {
   omitErrors: false,
   refetch: () => {},
   scale: null,
-  sectionName: null
+  sectionName: null,
+  showInteractives: false
 };
