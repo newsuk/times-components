@@ -19,14 +19,15 @@ const ArticleContent = ({
   onTwitterLinkPress,
   onVideoPress,
   onViewableItemsChanged,
-  renderRow
+  renderRow,
+  width
 }) => (
   <FlatList
     data={data}
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
-    ListHeaderComponent={<Header />}
+    ListHeaderComponent={<Header width={width} />}
     onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(

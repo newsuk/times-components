@@ -1,6 +1,6 @@
 /* eslint-disable consistent-return */
 
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import AdComposer from "@times-components/ad";
@@ -15,6 +15,8 @@ import {
 import listViewDataHelper from "./data-helper";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import articleTrackingContext from "./article-tracking-context";
+import {   normaliseWidth,
+  screenWidthInPixels } from "@times-components/utils";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -74,7 +76,34 @@ const renderRow = analyticsStream => (
   }
 };
 
-const Article = props => {
+class Article extends Component {
+  constructor(props) {
+    super(props);
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+
+    if (props.data) {
+      this.state = {
+        dataSource: props.data,
+        width: normaliseWidth(screenWidthInPixels())
+      };
+    } else {
+      this.state = {
+        dataSource: {}
+      };
+    }
+  }
+
+  onViewableItemsChanged(info) {
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(viewableItem =>
+        this.props.onViewed(viewableItem.item, this.state.dataSource)
+      );
+  }
+
+  render(){
   const {
     adConfig,
     analyticsStream,
@@ -87,12 +116,17 @@ const Article = props => {
     onRelatedArticlePress,
     onTopicPress,
     onTwitterLinkPress,
-    onViewableItemsChanged,
+    onViewed,
     onVideoPress,
     receiveChildList
-  } = props;
+  } = this.props;
 
-  const articleOrganised = listViewDataHelper(data);
+  if(!this.state.dataSource.content){
+    return null;
+  }
+
+
+  const articleOrganised = listViewDataHelper(this.state.dataSource);
   const articleData = articleOrganised.map((item, index) => ({
     ...item,
     elementId: `${item.type}.${index}`,
@@ -115,13 +149,15 @@ const Article = props => {
         onTopicPress={onTopicPress}
         onTwitterLinkPress={onTwitterLinkPress}
         onVideoPress={onVideoPress}
-        onViewableItemsChanged={onViewableItemsChanged}
+        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
         pageSize={listViewPageSize}
         renderRow={renderRow(analyticsStream)}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+        width={this.state.width}
       />
     </AdComposer>
   );
+  }
 };
 
 Article.propTypes = {
@@ -136,4 +172,5 @@ Article.propTypes = {
 };
 Article.defaultProps = articleDefaultProps;
 
+// export default Article;
 export default articleTrackingContext(withTrackScrollDepth(Article));

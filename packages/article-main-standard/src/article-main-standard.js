@@ -24,35 +24,12 @@ import {
 import articleTrackingContext from "./article-tracking-context";
 
 class ArticlePage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+  constructor() {
+    super();
     this.renderHeader = this.renderHeader.bind(this);
-
-    if (props.article && !props.isLoading && !props.error) {
-      this.state = {
-        dataSource: props.article,
-        width: normaliseWidth(screenWidthInPixels())
-      };
-    } else {
-      this.state = {
-        dataSource: {}
-      };
-    }
   }
 
-  onViewableItemsChanged(info) {
-    if (!info.changed.length) return [];
-
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem =>
-        this.props.onViewed(viewableItem.item, this.state.dataSource)
-      );
-  }
-
-  renderHeader() {
+  renderHeader(parentProps) {
     const {
       byline,
       flags,
@@ -73,7 +50,7 @@ class ArticlePage extends Component {
         <View key="leadAsset" testID="leadAsset">
           <ArticleLeadAsset
             data={{ ...leadAsset, onVideoPress }}
-            width={this.state.width}
+            width={parentProps.width}
           />
         </View>
         <ArticleHeader
