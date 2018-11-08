@@ -5,10 +5,9 @@ const { ApolloProvider } = require("react-apollo");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
 const Context = require("@times-components/context/rnw").default;
-const { scales } = require("@times-components/styleguide/rnw");
+const { scales, colours } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;
-const sectionColour = "#FFFFFF";
 
 module.exports = (client, analyticsStream, data) => {
   const {
@@ -34,7 +33,7 @@ module.exports = (client, analyticsStream, data) => {
           {
             value: {
               makeArticleUrl,
-              theme: { scale, sectionColour }
+              theme: { scale, sectionColour: colours.section[article.section] }
             }
           },
           React.createElement(Article, {
