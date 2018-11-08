@@ -38,9 +38,7 @@ class RelatedArticleItem extends Component {
   }
 
   componentDidMount() {
-    if (
-      this.props.imageConfig.showHiRes
-    ) {
+    if (this.props.imageConfig.showHiRes) {
       this.setHighResSize();
     }
   }
