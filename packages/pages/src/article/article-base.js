@@ -37,11 +37,11 @@ const ArticleBase = ({
       : adTargetConfig({
           adTestMode,
           article,
-          sectionName: pageSection || articleSection
+          sectionName: pageSection || articleSection || ""
         });
   const theme = {
     scale: scale || defaults.theme.scale,
-    sectionColour: colours.section[pageSection || articleSection]
+    sectionColour: colours.section[pageSection || articleSection || "default"]
   };
 
   return (
