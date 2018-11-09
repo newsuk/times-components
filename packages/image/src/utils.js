@@ -5,6 +5,10 @@ export default (uriString, key, value) => {
     return uriString;
   }
 
+  if (uriString.includes(`?${key}`) || uriString.includes(`&${key}`)) {
+    return uriString;
+  }
+
   if (typeof URL === "undefined") {
     return `${uriString}&${key}=${value}`;
   }
