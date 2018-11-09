@@ -24,7 +24,6 @@ export const HeaderAdContainer = styled(View)`
   }
 `;
 
-
 export const BodyContainer = styled(View)`
   display: block;
   order: 3;

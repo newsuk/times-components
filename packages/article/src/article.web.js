@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
 import Ad, { AdComposer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import RelatedArticles from "@times-components/related-articles";
@@ -67,48 +66,55 @@ class Article extends Component {
 
     return (
       <article
-              ref={node => {
-                this.node = node;
-              }}
-            >
-      <AdComposer adConfig={adConfig}>
-        <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-          {({ observed, registerNode }) => (
+        ref={node => {
+          this.node = node;
+        }}
+      >
+        <AdComposer adConfig={adConfig}>
+          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+            {({ observed, registerNode }) => (
               <Fragment>
-              <HeaderAdContainer key="headerAd">
-                <Ad
-                  contextUrl={url}
-                  section={section}
-                  slotName="header"
-                  style={adStyle}
-                />
-              </HeaderAdContainer>
-              <MainContainer>
-                <Header width={this.state.articleWidth} />
-                <BodyContainer>
-                  <ArticleBody
-                    content={content}
+                <HeaderAdContainer key="headerAd">
+                  <Ad
                     contextUrl={url}
-                    observed={observed}
-                    registerNode={registerNode}
                     section={section}
+                    slotName="header"
+                    style={adStyle}
                   />
+                </HeaderAdContainer>
+                <MainContainer>
+                  <Header width={this.state.articleWidth} />
+                  <BodyContainer>
+                    <ArticleBody
+                      content={content}
+                      contextUrl={url}
+                      observed={observed}
+                      registerNode={registerNode}
+                      section={section}
+                    />
 
-                <ArticleTopics topics={topics} />
-                <aside id="related-articles" ref={node => registerNode(node)}>
-                  {displayRelatedArticles({
-                    isVisible: !!observed.get("related-articles")
-                  })}
-                </aside>
-                </BodyContainer>
-                <Ad contextUrl={url} section={section} slotName="pixel" />
-                <Ad contextUrl={url} section={section} slotName="pixelteads" />
-                <Ad contextUrl={url} section={section} slotName="pixelskin" />
-              </MainContainer>
+                    <ArticleTopics topics={topics} />
+                    <aside
+                      id="related-articles"
+                      ref={node => registerNode(node)}
+                    >
+                      {displayRelatedArticles({
+                        isVisible: !!observed.get("related-articles")
+                      })}
+                    </aside>
+                  </BodyContainer>
+                  <Ad contextUrl={url} section={section} slotName="pixel" />
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="pixelteads"
+                  />
+                  <Ad contextUrl={url} section={section} slotName="pixelskin" />
+                </MainContainer>
               </Fragment>
-          )}
-        </LazyLoad>
-      </AdComposer>
+            )}
+          </LazyLoad>
+        </AdComposer>
       </article>
     );
   }

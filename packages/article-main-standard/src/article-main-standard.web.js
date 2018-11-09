@@ -13,8 +13,7 @@ import {
 import {
   HeaderContainer,
   LeadAssetContainer,
-  MetaContainer,
-  Wrapper
+  MetaContainer
 } from "./styles/responsive";
 
 class ArticlePage extends Component {
