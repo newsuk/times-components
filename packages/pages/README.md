@@ -1,7 +1,7 @@
 # Pages
 
 This component combines dumb components with their respective providers to
-create smart components, to be ready to use by native apps and web.
+create smart components, to be ready to use by native apps.
 
 ## Contributing
 
@@ -31,8 +31,3 @@ yarn test:all
 yarn test:android
 yarn test:ios
 ```
-
-## Future
-
-For now, the pages are only being used by native apps, but going forward, they
-should also be consumable by web.

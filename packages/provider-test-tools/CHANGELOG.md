@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.0...@times-components/provider-test-tools@1.9.1) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.8.5...@times-components/provider-test-tools@1.9.0) (2018-11-08)
+
+
+### Features
+
+* split article comments ([#1443](https://github.com/newsuk/times-components/issues/1443)) ([6746c30](https://github.com/newsuk/times-components/commit/6746c30))
+
+
+
+
+
+<a name="1.8.5"></a>
+## [1.8.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.8.4...@times-components/provider-test-tools@1.8.5) (2018-11-06)
+
+
+### Bug Fixes
+
+* lint error ([#1456](https://github.com/newsuk/times-components/issues/1456)) ([5b41b6c](https://github.com/newsuk/times-components/commit/5b41b6c))
+
+
+
+
+
 <a name="1.8.4"></a>
 ## [1.8.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.8.3...@times-components/provider-test-tools@1.8.4) (2018-11-01)
 

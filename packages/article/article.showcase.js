@@ -6,6 +6,7 @@ import Context from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
+  articleComments as makeArticleCommentsParams,
   fixtures,
   MockFixture,
   MockedProvider
@@ -172,26 +173,36 @@ export default {
         return mockArticle({
           decorateAction,
           id,
-          params: makeParams({
-            chooseMedia: mediaIndex => {
-              if (mediaIndex === 0) {
-                return {
-                  __typename: "Video"
-                };
-              }
+          params: [
+            ...makeParams({
+              chooseMedia: mediaIndex => {
+                if (mediaIndex === 0) {
+                  return {
+                    __typename: "Video"
+                  };
+                }
 
-              return {
-                __typename: "Image"
-              };
-            },
-            makeArticle: a => ({
-              ...a,
-              leadAsset: fixtures.video
+                return {
+                  __typename: "Image"
+                };
+              },
+              makeArticle: a => ({
+                ...a,
+                leadAsset: fixtures.video
+              }),
+              variables: () => ({
+                id
+              })
             }),
-            variables: () => ({
-              id
+            ...makeArticleCommentsParams({
+              count: 123,
+              enabled: true,
+              id,
+              variables: () => ({
+                id
+              })
             })
-          }),
+          ],
           scale,
           sectionColour
         });
@@ -208,15 +219,25 @@ export default {
         return mockArticle({
           decorateAction,
           id,
-          params: makeParams({
-            makeArticle: article => ({
-              ...article,
-              content: [...article.content, ...article.content]
+          params: [
+            ...makeParams({
+              makeArticle: article => ({
+                ...article,
+                content: [...article.content, ...article.content]
+              }),
+              variables: () => ({
+                id
+              })
             }),
-            variables: () => ({
-              id
+            ...makeArticleCommentsParams({
+              count: 123,
+              enabled: true,
+              id,
+              variables: () => ({
+                id
+              })
             })
-          }),
+          ],
           scale,
           sectionColour
         });

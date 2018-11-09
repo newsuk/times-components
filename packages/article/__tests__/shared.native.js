@@ -15,8 +15,6 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
-jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
-
 const omitKeys = new Set([
   "data",
   "disableVirtualization",

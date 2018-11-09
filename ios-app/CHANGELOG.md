@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.5.1...@times-components/ios-app@0.5.2) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.5.0...@times-components/ios-app@0.5.1) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.35...@times-components/ios-app@0.5.0) (2018-11-08)
+
+
+### Features
+
+* simple article ([#1448](https://github.com/newsuk/times-components/issues/1448)) ([ebdf299](https://github.com/newsuk/times-components/commit/ebdf299))
+
+
+
+
+
+<a name="0.4.35"></a>
+## [0.4.35](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.34...@times-components/ios-app@0.4.35) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.34"></a>
+## [0.4.34](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.33...@times-components/ios-app@0.4.34) (2018-11-07)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.33"></a>
+## [0.4.33](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.32...@times-components/ios-app@0.4.33) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+<a name="0.4.32"></a>
+## [0.4.32](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.31...@times-components/ios-app@0.4.32) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 <a name="0.4.31"></a>
 ## [0.4.31](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.4.30...@times-components/ios-app@0.4.31) (2018-11-01)
 

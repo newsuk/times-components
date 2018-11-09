@@ -26,12 +26,46 @@ const angleBetweenTouches = ([
   return (rad * 180) / Math.PI;
 };
 
+const pointBetweenTwoTouches = ([
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) => ({
+  pageX: (x1 + x2) / 2,
+  pageY: (y1 + y2) / 2
+});
+
+const translate = ({ translateX, translateY }, transformations) => [
+  { translateX },
+  { translateY },
+  ...transformations,
+  { translateX: Animated.multiply(translateX, -1) },
+  { translateY: Animated.multiply(translateY, -1) }
+];
+
+const resetOrigin = ({ width, height }, transformations) =>
+  translate(
+    {
+      translateX: Animated.multiply(width, -0.5),
+      translateY: Animated.multiply(height, -0.5)
+    },
+    transformations
+  );
+
+const subtract = (a, b) => Animated.add(a, Animated.multiply(b, -1));
+
 class Gestures extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       angle: new Animated.Value(0),
+      center: { pageX: new Animated.Value(0), pageY: new Animated.Value(0) },
+      viewLayout: {
+        height: new Animated.Value(0),
+        width: new Animated.Value(0),
+        x: new Animated.Value(0),
+        y: new Animated.Value(0)
+      },
       zoomRatio: new Animated.Value(1)
     };
 
@@ -61,6 +95,17 @@ class Gestures extends Component {
       onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1
     });
+
+    this.onViewLayout = this.onViewLayout.bind(this);
+  }
+
+  onViewLayout(evt) {
+    const { x, y, width, height } = evt.nativeEvent.layout;
+
+    this.state.viewLayout.x.setValue(x);
+    this.state.viewLayout.y.setValue(y);
+    this.state.viewLayout.width.setValue(width);
+    this.state.viewLayout.height.setValue(height);
   }
 
   handlePinchStart({ nativeEvent: { touches } }) {
@@ -75,15 +120,33 @@ class Gestures extends Component {
     const zoomRatio = distanceBetweenTouches(touches) / this.startDistance;
     const currentAngle = angleBetweenTouches(touches);
     const angle = (currentAngle - this.startAngle) % 360;
+    const center = pointBetweenTwoTouches(touches);
 
     this.state.zoomRatio.setValue(zoomRatio);
     this.state.angle.setValue(angle);
+    this.state.center.pageX.setValue(center.pageX);
+    this.state.center.pageY.setValue(center.pageY);
   }
 
   render() {
     const transformStyle = {
       transform: [
-        { scale: this.state.zoomRatio },
+        ...resetOrigin(
+          this.state.viewLayout,
+          translate(
+            {
+              translateX: subtract(
+                this.state.center.pageX,
+                this.state.viewLayout.x
+              ),
+              translateY: subtract(
+                this.state.center.pageY,
+                this.state.viewLayout.y
+              )
+            },
+            [{ scale: this.state.zoomRatio }]
+          )
+        ),
         {
           rotate: this.state.angle.interpolate({
             inputRange: [0, 359],
@@ -95,7 +158,11 @@ class Gestures extends Component {
     };
 
     return (
-      <View style={{ flexGrow: 1 }} {...this.panResponder.panHandlers}>
+      <View
+        onLayout={this.onViewLayout}
+        style={{ flexGrow: 1 }}
+        {...this.panResponder.panHandlers}
+      >
         <TouchableWithoutFeedback>
           <View {...this.props}>
             <Animated.View style={transformStyle}>

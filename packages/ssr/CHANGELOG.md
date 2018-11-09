@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.5"></a>
+## [1.4.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.4...@times-components/ssr@1.4.5) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.4.4"></a>
+## [1.4.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.3...@times-components/ssr@1.4.4) (2018-11-08)
+
+
+### Bug Fixes
+
+* colour byline by article section ([#1461](https://github.com/newsuk/times-components/issues/1461)) ([5c2624b](https://github.com/newsuk/times-components/commit/5c2624b))
+
+
+
+
+
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.2...@times-components/ssr@1.4.3) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.1...@times-components/ssr@1.4.2) (2018-11-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.4.0...@times-components/ssr@1.4.1) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.3.12...@times-components/ssr@1.4.0) (2018-11-06)
+
+
+### Features
+
+* turn SSR into the react renderer of the Times website ([#1453](https://github.com/newsuk/times-components/issues/1453)) ([2e7d89e](https://github.com/newsuk/times-components/commit/2e7d89e))
+
+
+
+
+
 <a name="1.3.12"></a>
 ## [1.3.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.3.11...@times-components/ssr@1.3.12) (2018-11-01)
 

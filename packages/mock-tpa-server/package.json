@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "apollo-server": "2.1.0",
-    "@times-components/provider-test-tools": "1.8.4",
+    "@times-components/provider-test-tools": "1.9.1",
     "@times-components/schema": "0.1.11",
     "graphql": "0.13.2"
   }

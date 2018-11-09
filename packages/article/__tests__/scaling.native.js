@@ -11,8 +11,6 @@ import { iterator } from "@times-components/test-utils";
 import "./mocks.native";
 import snapshotTests from "./scaling.base";
 
-jest.mock("../src/article-comments/article-comments", () => "ArticleComments");
-
 export default () => {
   addSerializers(
     expect,

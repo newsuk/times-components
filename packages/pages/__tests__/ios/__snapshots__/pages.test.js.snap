@@ -1,7 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`adConfig is set correctly 1`] = `
+Object {
+  "adUnit": "thetimes.mob.ios",
+  "bidderSlots": Array [],
+  "biddersConfig": Object {},
+  "networkId": "dummy-ad-network-id",
+  "pageTargeting": Object {
+    "Shared": "0",
+    "aid": "this-is-a-id",
+    "cont_type": "art",
+    "cos": "iOS",
+    "cov": "123",
+    "cpn": "dummy-cookie-eid",
+    "did": "dummy-device-id",
+    "eid": "dummy-cookie-eid",
+    "kw": "this,is,a,headline",
+    "log": "0",
+    "section": "sectionName",
+    "testmode": "testMode",
+    "vid": "",
+  },
+  "slotTargeting": Object {
+    "path": "/sectionname",
+    "section": "sectionName",
+    "slot": "sectionname",
+    "zone": "current_edition",
+  },
+}
+`;
+
 exports[`article page 1`] = `
 <Article
+  article={null}
+  error={null}
   isLoading={true}
   pageSection="News"
 />

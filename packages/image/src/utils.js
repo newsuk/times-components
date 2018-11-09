@@ -5,6 +5,10 @@ export default (uriString, key, value) => {
     return uriString;
   }
 
+  if (uriString.includes(`?${key}`) || uriString.includes(`&${key}`)) {
+    return uriString;
+  }
+
   if (typeof URL === "undefined") {
     return `${uriString}&${key}=${value}`;
   }
@@ -14,7 +18,6 @@ export default (uriString, key, value) => {
   try {
     url = new URL(uriString);
   } catch (e) {
-    console.error("Invalid URL", uriString);
     return uriString;
   }
 

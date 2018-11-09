@@ -2,27 +2,15 @@ import React from "react";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
 import { Article } from "../src/pages";
-import getAdTargetingConfig from "../src/client/ad-targeting-config";
+import getAdTargetingConfig from "../src/article/ad-targeting-config";
+import filterInteractives from "../src/article/filter-interactives";
 
 export default makeTest => {
   it("article page", () => {
-    const config = {};
-    const fetch = () => {};
-    const ArticlePageView = Article(config)(fetch);
-
     expect(
       makeTest(
-        <ArticlePageView
-          analyticsStream={() => {}}
+        <Article
           articleId="test-article-id"
-          onArticlePress={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onTopicPress={() => {}}
-          onVideoPress={() => {}}
-          platformAdConfig={{}}
           scale={scales.large}
           sectionName="News"
         />
@@ -30,23 +18,46 @@ export default makeTest => {
     ).toMatchSnapshot();
   });
 
-  it("adUnit and networkId are set correctly", () => {
-    const platformAdConfig = {
-      adUnit: "1234",
-      networkId: "5678",
-      sectionName: ""
-    };
-
-    const articleAdConfig = {
+  it("adConfig is set correctly", () => {
+    const article = {
       headline: "This is a headline",
+      id: "this-is-a-id",
       keywords: ["this", "is", "a", "headline"]
     };
 
-    const adTargetingConfig = getAdTargetingConfig(
-      platformAdConfig,
-      articleAdConfig
-    );
-    expect(adTargetingConfig.adUnit).toBe("1234");
-    expect(adTargetingConfig.networkId).toBe("5678");
+    const adTargetingConfig = getAdTargetingConfig({
+      adTestMode: "testMode",
+      article,
+      sectionName: "sectionName"
+    });
+
+    expect(adTargetingConfig).toMatchSnapshot();
+  });
+
+  it("filter interactives from article ast as expected", () => {
+    const article = {
+      content: [
+        { name: "paragraph", value: "dummy value" },
+        { name: "paragraph", value: "dummy value" },
+        { name: "ad", value: "dummy value" },
+        { name: "interactive", value: "dummy value" },
+        { name: "paragraph", value: "dummy value" }
+      ],
+      headline: "This is a headline",
+      id: "this-is-a-id"
+    };
+
+    const filteredArticle = {
+      content: [
+        { name: "paragraph", value: "dummy value" },
+        { name: "paragraph", value: "dummy value" },
+        { name: "ad", value: "dummy value" },
+        { name: "paragraph", value: "dummy value" }
+      ],
+      headline: "This is a headline",
+      id: "this-is-a-id"
+    };
+
+    expect(filterInteractives(article)).toEqual(filteredArticle);
   });
 };

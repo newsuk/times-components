@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.2"></a>
+## [0.10.2](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.1...@times-components/android-app@0.10.2) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.0...@times-components/android-app@0.10.1) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.38...@times-components/android-app@0.10.0) (2018-11-08)
+
+
+### Features
+
+* simple article ([#1448](https://github.com/newsuk/times-components/issues/1448)) ([ebdf299](https://github.com/newsuk/times-components/commit/ebdf299))
+
+
+
+
+
+<a name="0.9.38"></a>
+## [0.9.38](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.37...@times-components/android-app@0.9.38) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+<a name="0.9.37"></a>
+## [0.9.37](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.36...@times-components/android-app@0.9.37) (2018-11-07)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+<a name="0.9.36"></a>
+## [0.9.36](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.35...@times-components/android-app@0.9.36) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+<a name="0.9.35"></a>
+## [0.9.35](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.34...@times-components/android-app@0.9.35) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 <a name="0.9.34"></a>
 ## [0.9.34](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.9.33...@times-components/android-app@0.9.34) (2018-11-01)
 

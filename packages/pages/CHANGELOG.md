@@ -3,6 +3,75 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.6.1...@times-components/pages@1.7.0) (2018-11-08)
+
+
+### Features
+
+* Filter interactives from article ast ([#1464](https://github.com/newsuk/times-components/issues/1464)) ([a6a6b9f](https://github.com/newsuk/times-components/commit/a6a6b9f))
+
+
+
+
+
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.6.0...@times-components/pages@1.6.1) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.65...@times-components/pages@1.6.0) (2018-11-08)
+
+
+### Features
+
+* simple article ([#1448](https://github.com/newsuk/times-components/issues/1448)) ([ebdf299](https://github.com/newsuk/times-components/commit/ebdf299))
+
+
+
+
+
+<a name="1.5.65"></a>
+## [1.5.65](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.64...@times-components/pages@1.5.65) (2018-11-08)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.5.64"></a>
+## [1.5.64](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.63...@times-components/pages@1.5.64) (2018-11-07)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.5.63"></a>
+## [1.5.63](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.62...@times-components/pages@1.5.63) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.5.62"></a>
+## [1.5.62](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.61...@times-components/pages@1.5.62) (2018-11-06)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 <a name="1.5.61"></a>
 ## [1.5.61](https://github.com/newsuk/times-components/compare/@times-components/pages@1.5.60...@times-components/pages@1.5.61) (2018-11-01)
 
