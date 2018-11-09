@@ -71,9 +71,6 @@ const introspectionQueryResultData = {
         enumValues: null,
         possibleTypes: [
           { kind: "OBJECT", name: "StandardSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
-          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
           { kind: "OBJECT", name: "FocusSlice", ofType: null },
           { kind: "OBJECT", name: "LeadersSlice", ofType: null },
           { kind: "OBJECT", name: "LeadOneAndFourSlice", ofType: null },
@@ -86,15 +83,8 @@ const introspectionQueryResultData = {
             ofType: null
           },
           { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryOneSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "SecondaryOneAndColumnistSlice",
-            ofType: null
-          },
           { kind: "OBJECT", name: "SecondaryOneAndFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryTwoAndTwoSlice", ofType: null },
           {
@@ -102,7 +92,17 @@ const introspectionQueryResultData = {
             name: "SecondaryTwoNoPicAndTwoSlice",
             ofType: null
           },
-          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null }
+          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null },
+          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
+          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
+          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
+          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
+          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
+          {
+            kind: "OBJECT",
+            name: "SecondaryOneAndColumnistSlice",
+            ofType: null
+          }
         ]
       },
       {
@@ -197,7 +197,7 @@ const introspectionQueryResultData = {
       },
       {
         kind: "UNION",
-        name: "StandardSectionSlice",
+        name: "StandardSectionItem",
         description: "",
         fields: null,
         inputFields: null,
@@ -205,10 +205,7 @@ const introspectionQueryResultData = {
         enumValues: null,
         possibleTypes: [
           { kind: "OBJECT", name: "StandardSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
-          { kind: "OBJECT", name: "InTheNewsSlice", ofType: null },
-          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
+          { kind: "OBJECT", name: "PuffSlice", ofType: null },
           { kind: "OBJECT", name: "FocusSlice", ofType: null },
           { kind: "OBJECT", name: "LeadersSlice", ofType: null },
           { kind: "OBJECT", name: "LeadOneAndFourSlice", ofType: null },
@@ -221,15 +218,8 @@ const introspectionQueryResultData = {
             ofType: null
           },
           { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryOneSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "SecondaryOneAndColumnistSlice",
-            ofType: null
-          },
           { kind: "OBJECT", name: "SecondaryOneAndFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryTwoAndTwoSlice", ofType: null },
           {
@@ -237,14 +227,12 @@ const introspectionQueryResultData = {
             name: "SecondaryTwoNoPicAndTwoSlice",
             ofType: null
           },
-          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null },
-          { kind: "OBJECT", name: "PuffSlice", ofType: null },
-          { kind: "OBJECT", name: "DailyUniversalRegister", ofType: null }
+          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null }
         ]
       },
       {
         kind: "UNION",
-        name: "PuzzleSectionSlice",
+        name: "PuzzleSectionItem",
         description: "",
         fields: null,
         inputFields: null,
@@ -257,7 +245,7 @@ const introspectionQueryResultData = {
       },
       {
         kind: "UNION",
-        name: "MagazineSectionSlice",
+        name: "MagazineSectionItem",
         description: "",
         fields: null,
         inputFields: null,
@@ -265,9 +253,7 @@ const introspectionQueryResultData = {
         enumValues: null,
         possibleTypes: [
           { kind: "OBJECT", name: "StandardSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
-          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
+          { kind: "OBJECT", name: "PuffSlice", ofType: null },
           { kind: "OBJECT", name: "FocusSlice", ofType: null },
           { kind: "OBJECT", name: "LeadersSlice", ofType: null },
           { kind: "OBJECT", name: "LeadOneAndFourSlice", ofType: null },
@@ -280,15 +266,8 @@ const introspectionQueryResultData = {
             ofType: null
           },
           { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryOneSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "SecondaryOneAndColumnistSlice",
-            ofType: null
-          },
           { kind: "OBJECT", name: "SecondaryOneAndFourSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryTwoAndTwoSlice", ofType: null },
           {
@@ -296,8 +275,7 @@ const introspectionQueryResultData = {
             name: "SecondaryTwoNoPicAndTwoSlice",
             ofType: null
           },
-          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null },
-          { kind: "OBJECT", name: "PuffSlice", ofType: null }
+          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null }
         ]
       }
     ]
