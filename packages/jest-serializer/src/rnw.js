@@ -36,7 +36,7 @@ const getStyleSheet = AppRegistry => {
   const { getStyleElement } = AppRegistry.getApplication("App");
   const ssString = ReactDOMServer.renderToStaticMarkup(getStyleElement());
 
-  const [, match] = ssString.match(/<style.*>(.*)<\/style>/s);
+  const [, match] = ssString.match(/<style[\s\S]*>([\s\S]*)<\/style>/);
 
   if (!match) {
     return {};
