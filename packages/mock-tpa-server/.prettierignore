@@ -12,6 +12,3 @@ LICENSE
 yarn.lock
 *.log
 rnw.js
-stats.json
-*.mp4
-*.png

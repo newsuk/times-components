@@ -37,9 +37,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/mock-tpa-server": "0.0.1",
     "@times-components/eslint-config-thetimes": "0.8.5",
-    "@times-components/provider-test-tools": "1.9.1",
-    "apollo-server": "2.1.0",
     "cypress": "3.1.0",
     "depcheck": "0.6.9",
     "eslint": "4.19.1",
