@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a secondary image 1`] = `
-Array [
-  .c1 {
+.c3 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -16,11 +15,18 @@ Array [
 }
 
 .c0 {
+  display: none;
+}
+
+.c2 {
   display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -29,8 +35,30 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c3 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -48,26 +76,44 @@ Array [
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.IS1 {
+  margin-bottom: 0;
+}
 </style>
 
-<div
+<article>
+  <div
     className="c0 S1"
   >
-    <div>
-      <div
-        className="c1 S1"
-      >
-        <ArticleImage />
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="c2 S1"
+    >
+      <div>
+        <div
+          className="c3 S1"
+        >
+          <ArticleImage />
+        </div>
       </div>
+      <aside />
     </div>
-  </div>,
-  <aside />,
-]
+    <Ad />
+    <Ad />
+    <Ad />
+  </div>
+</article>
 `;
 
 exports[`2. an inline image 1`] = `
-Array [
-  .c1 {
+.c3 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -82,11 +128,18 @@ Array [
 }
 
 .c0 {
+  display: none;
+}
+
+.c2 {
   display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -95,8 +148,30 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c3 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -114,19 +189,38 @@ Array [
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.IS1 {
+  margin-bottom: 0;
+}
 </style>
 
-<div
+<article>
+  <div
     className="c0 S1"
   >
-    <div>
-      <div
-        className="c1 S1"
-      >
-        <ArticleImage />
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="c2 S1"
+    >
+      <div>
+        <div
+          className="c3 S1"
+        >
+          <ArticleImage />
+        </div>
       </div>
+      <aside />
     </div>
-  </div>,
-  <aside />,
-]
+    <Ad />
+    <Ad />
+    <Ad />
+  </div>
+</article>
 `;

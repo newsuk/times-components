@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-Array [
-  .c1 {
+.c3 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -13,7 +12,7 @@ Array [
   padding-left: 10px;
 }
 
-.c2 {
+.c4 {
   float: left;
   -webkit-margin-before: 11px !important;
   padding: 9px 10px 0 0;
@@ -23,17 +22,17 @@ Array [
   color: #333333;
 }
 
-.c9 {
+.c11 {
   padding-left: 10px;
 }
 
-.c3 {
+.c5 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
 }
 
-.c4 {
+.c6 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -41,7 +40,7 @@ Array [
   padding-bottom: 25px;
 }
 
-.c5 {
+.c7 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -54,7 +53,7 @@ Array [
   padding-bottom: 25px;
 }
 
-.c6 {
+.c8 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -68,22 +67,34 @@ Array [
   display: block;
 }
 
-.c8 {
+.c10 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c7 {
+.c9 {
   display: block;
+}
+
+.c12 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .c0 {
+  display: none;
+}
+
+.c2 {
   display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c3 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -93,19 +104,19 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c3 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c11 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c5 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -115,34 +126,6 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
   .c5 {
     width: 56.2%;
   }
@@ -152,19 +135,47 @@ Array [
   .c6 {
     width: 80.8%;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    width: 80.8%;
+    margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c8 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -176,7 +187,7 @@ Array [
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -185,8 +196,39 @@ Array [
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c9 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -219,16 +261,11 @@ Array [
 }
 
 .IS1 {
-  color: #333333;
+  margin-bottom: 0;
 }
 
 .IS2 {
-  font-family: TimesDigitalW04;
-  font-size: 17;
-  line-height: 26;
   color: #333333;
-  margin-bottom: 25px;
-  margin-top: 0;
 }
 
 .IS3 {
@@ -241,173 +278,167 @@ Array [
 }
 
 .IS4 {
-  height: 100%;
-  width: 100%;
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .IS5 {
-  position: relative;
-}
-
-.IS6 {
   height: 100%;
   width: 100%;
 }
 
+.IS6 {
+  position: relative;
+}
+
 .IS7 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS8 {
+.IS9 {
   padding-bottom: 56.25%;
 }
 
-.IS9 {
+.IS10 {
   margin: 0;
 }
-</style>
 
-<div
-    className="c0 S1"
-  >
-    <p
-      className="c1 IS2"
-    >
-      <span
-        className="c2 IS1"
-      >
-        T
-      </span>
-      his being Black History Month, last week
-    </p>
-    <div
-      className="c3"
-    >
-      <link />
-      <times-datawrapper />
-    </div>
-    <div>
-      <div
-        className="c4 S1"
-      >
-        <ArticleImage />
-      </div>
-    </div>
-    <div>
-      <div
-        className="c5 S1"
-      >
-        <ArticleImage />
-      </div>
-    </div>
-    <div>
-      <div
-        className="c6 S1"
-      >
-        <ArticleImage />
-      </div>
-    </div>
-    <Link>
-      Some Link
-    </Link>
-    <p
-      className="c1 IS3"
-    >
-      Some content
-    </p>
-    <div
-      className="c7 S1"
-    >
-      <div
-        className="c8 S1"
-      >
-        <PullQuote />
-      </div>
-    </div>
-    <div
-      className="c4 S1"
-    >
-      <figure
-        className="IS9"
-      >
-        <div
-          className="IS8 S2"
-        >
-          <div
-            className="IS7 S1"
-          >
-            <div
-              className="IS6"
-            >
-              <div
-                className="IS5"
-              >
-                <video
-                  className="video-js IS4"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <figcaption>
-          <div
-            className="c9 S1"
-          >
-            <Caption />
-          </div>
-        </figcaption>
-      </figure>
-    </div>
-    <KeyFacts />
-  </div>,
-  .c0 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-<style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.IS1 {
+.IS11 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
 </style>
 
-<div
+<article>
+  <div
     className="c0 S1"
   >
-    <nav>
-      <ArticleTopics
-        className="IS1"
-      />
-    </nav>
-  </div>,
-  <aside>
-    <RelatedArticles />
-  </aside>,
-]
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="c2 S1"
+    >
+      <p
+        className="c3 IS3"
+      >
+        <span
+          className="c4 IS2"
+        >
+          T
+        </span>
+        his being Black History Month, last week
+      </p>
+      <div
+        className="c5"
+      >
+        <link />
+        <times-datawrapper />
+      </div>
+      <div>
+        <div
+          className="c6 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c7 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c8 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <Link>
+        Some Link
+      </Link>
+      <p
+        className="c3 IS4"
+      >
+        Some content
+      </p>
+      <div
+        className="c9 S1"
+      >
+        <div
+          className="c10 S1"
+        >
+          <PullQuote />
+        </div>
+      </div>
+      <div
+        className="c6 S1"
+      >
+        <figure
+          className="IS10"
+        >
+          <div
+            className="IS9 S2"
+          >
+            <div
+              className="IS8 S1"
+            >
+              <div
+                className="IS7"
+              >
+                <div
+                  className="IS6"
+                >
+                  <video
+                    className="video-js IS5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c11 S1"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <KeyFacts />
+      <div
+        className="c12 S1"
+      >
+        <nav>
+          <ArticleTopics
+            className="IS11"
+          />
+        </nav>
+      </div>
+      <aside>
+        <RelatedArticles />
+      </aside>
+    </div>
+    <Ad />
+    <Ad />
+    <Ad />
+  </div>
+</article>
 `;
