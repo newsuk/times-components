@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mock-tpa-server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "utility for testing times component clients with mocked api",
   "main": "./dist/index",
   "scripts": {
