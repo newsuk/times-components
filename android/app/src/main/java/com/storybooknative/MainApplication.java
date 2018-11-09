@@ -8,6 +8,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.facebook.stetho.Stetho;
+import com.storybooknative.stubs.StorybookStubPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,7 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.asList(
                     new MainReactPackage(),
-                    new ComponentsPackage()
+                    new ComponentsPackage(),
+                    new StorybookStubPackage()
             );
         }
 
