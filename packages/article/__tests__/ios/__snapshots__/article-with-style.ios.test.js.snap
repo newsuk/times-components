@@ -3,6 +3,7 @@
 exports[`1. a full article with all content items 1`] = `
 <RCTScrollView>
   <View>
+    <View />
     <View>
       <ArticleParagraph>
         his being Black History Month, last week

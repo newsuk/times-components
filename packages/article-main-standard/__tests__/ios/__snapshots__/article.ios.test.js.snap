@@ -4,6 +4,11 @@ exports[`1. an error 1`] = `<ArticleError />`;
 
 exports[`2. an article with no headline falls back to use shortheadline 1`] = `
 <RCTScrollView
+  ListHeaderComponent={
+    <bound renderHeader
+      width={1440}
+    />
+  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -41,24 +46,10 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <Button
-          fontSize={16}
-          lineHeight={16}
-          title="View comments"
-        />
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -66,6 +57,11 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`3. an article with ads 1`] = `
 <RCTScrollView
+  ListHeaderComponent={
+    <bound renderHeader
+      width={1440}
+    />
+  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -101,24 +97,10 @@ exports[`3. an article with ads 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <Button
-          fontSize={16}
-          lineHeight={16}
-          title="View comments"
-        />
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>

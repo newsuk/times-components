@@ -2,6 +2,11 @@
 
 exports[`1. a full article with an image as the lead asset 1`] = `
 <RCTScrollView
+  ListHeaderComponent={
+    <bound renderHeader
+      width={1440}
+    />
+  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -206,24 +211,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       />
     </View>
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <Button
-          fontSize={16}
-          lineHeight={16}
-          title="View comments"
-        />
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -231,6 +222,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
 
 exports[`2. an article with a video as the lead asset 1`] = `
 <RCTScrollView
+  ListHeaderComponent={
+    <bound renderHeader
+      width={1440}
+    />
+  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -287,24 +283,10 @@ exports[`2. an article with a video as the lead asset 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <Button
-          fontSize={16}
-          lineHeight={16}
-          title="View comments"
-        />
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -312,6 +294,11 @@ exports[`2. an article with a video as the lead asset 1`] = `
 
 exports[`3. an article with no lead asset 1`] = `
 <RCTScrollView
+  ListHeaderComponent={
+    <bound renderHeader
+      width={1440}
+    />
+  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -349,24 +336,10 @@ exports[`3. an article with no lead asset 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <Text>
-          65 comments
-        </Text>
-        <Text>
-          Comments are subject to our community guidelines, which can be viewed 
-          <Text
-            accessibilityRole="link"
-          >
-            here
-          </Text>
-        </Text>
-        <Button
-          fontSize={16}
-          lineHeight={16}
-          title="View comments"
-        />
-      </View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
     </View>
   </View>
 </RCTScrollView>
