@@ -85,6 +85,21 @@ export default () => {
 
         expect(testInstance).toMatchSnapshot();
       }
+    },
+    {
+      name: "do not append resize if url already contains resize",
+      test: () => {
+        const uri =
+          "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100";
+        const testInstance = TestRenderer.create(
+          <Image aspectRatio={3 / 2} highResSize={999} uri={uri} />
+        );
+
+        expect(
+          testInstance.root.find(node => node.type === ReactNativeImage).props
+            .source.uri
+        ).toEqual(uri);
+      }
     }
   ];
 
