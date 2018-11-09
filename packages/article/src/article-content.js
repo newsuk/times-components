@@ -55,7 +55,7 @@ ArticleContent.propTypes = {
       type: PropTypes.string.isRequired
     })
   ).isRequired,
-  header: PropTypes.func,
+  Header: PropTypes.func,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -65,12 +65,14 @@ ArticleContent.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onViewableItemsChanged: PropTypes.func,
-  renderRow: PropTypes.func.isRequired
+  renderRow: PropTypes.func.isRequired,
+  width: PropTypes.number
 };
 
 ArticleContent.defaultProps = {
-  header: () => null,
-  onViewableItemsChanged: () => {}
+  Header: () => null,
+  onViewableItemsChanged: () => {},
+  width: null
 };
 
 export default ArticleContent;

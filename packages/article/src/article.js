@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import AdComposer from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
+import { withTrackScrollDepth } from "@times-components/tracking";
+import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
@@ -13,10 +15,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
-import { withTrackScrollDepth } from "@times-components/tracking";
 import articleTrackingContext from "./article-tracking-context";
-import {   normaliseWidth,
-  screenWidthInPixels } from "@times-components/utils";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -103,62 +102,60 @@ class Article extends Component {
       );
   }
 
-  render(){
-  const {
-    adConfig,
-    analyticsStream,
-    data,
-    Header,
-    onAuthorPress,
-    onCommentGuidelinesPress,
-    onCommentsPress,
-    onLinkPress,
-    onRelatedArticlePress,
-    onTopicPress,
-    onTwitterLinkPress,
-    onViewed,
-    onVideoPress,
-    receiveChildList
-  } = this.props;
+  render() {
+    const {
+      adConfig,
+      analyticsStream,
+      Header,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onViewed,
+      onVideoPress,
+      receiveChildList
+    } = this.props;
 
-  if(!this.state.dataSource.content){
-    return null;
+    if (!this.state.dataSource.content) {
+      return null;
+    }
+
+    const articleOrganised = listViewDataHelper(this.state.dataSource);
+    const articleData = articleOrganised.map((item, index) => ({
+      ...item,
+      elementId: `${item.type}.${index}`,
+      name: item.type
+    }));
+
+    receiveChildList(articleData);
+
+    return (
+      <AdComposer adConfig={adConfig}>
+        <ArticleContent
+          data={articleData}
+          Header={Header}
+          initialListSize={listViewSize}
+          onAuthorPress={onAuthorPress}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          onLinkPress={onLinkPress}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPress}
+          onTwitterLinkPress={onTwitterLinkPress}
+          onVideoPress={onVideoPress}
+          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+          pageSize={listViewPageSize}
+          renderRow={renderRow(analyticsStream)}
+          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+          width={this.state.width}
+        />
+      </AdComposer>
+    );
   }
-
-
-  const articleOrganised = listViewDataHelper(this.state.dataSource);
-  const articleData = articleOrganised.map((item, index) => ({
-    ...item,
-    elementId: `${item.type}.${index}`,
-    name: item.type
-  }));
-
-  receiveChildList(articleData);
-
-  return (
-    <AdComposer adConfig={adConfig}>
-      <ArticleContent
-        data={articleData}
-        Header={Header}
-        initialListSize={listViewSize}
-        onAuthorPress={onAuthorPress}
-        onCommentGuidelinesPress={onCommentGuidelinesPress}
-        onCommentsPress={onCommentsPress}
-        onLinkPress={onLinkPress}
-        onRelatedArticlePress={onRelatedArticlePress}
-        onTopicPress={onTopicPress}
-        onTwitterLinkPress={onTwitterLinkPress}
-        onVideoPress={onVideoPress}
-        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-        pageSize={listViewPageSize}
-        renderRow={renderRow(analyticsStream)}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-        width={this.state.width}
-      />
-    </AdComposer>
-  );
-  }
-};
+}
 
 Article.propTypes = {
   ...articlePropTypes,

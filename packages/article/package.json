@@ -93,6 +93,7 @@
     "@times-components/pull-quote": "3.2.37",
     "@times-components/related-articles": "5.0.4",
     "@times-components/styleguide": "3.7.2",
+    "@times-components/tracking": "2.2.2",
     "@times-components/utils": "4.0.9",
     "@times-components/video": "4.1.10",
     "@times-components/video-label": "2.1.47",

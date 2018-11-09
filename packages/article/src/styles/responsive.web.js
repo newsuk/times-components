@@ -44,8 +44,6 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-
-
 export const BodyContainer = styled(View)`
   // order: 2;
   display: block;

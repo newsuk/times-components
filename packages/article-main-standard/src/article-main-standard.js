@@ -3,16 +3,9 @@
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { AdComposer } from "@times-components/ad";
 import ArticleError from "@times-components/article-error";
 import Article from "@times-components/article";
-import { withTrackScrollDepth } from "@times-components/tracking";
-import {
-  getHeadline,
-  getLeadAsset,
-  normaliseWidth,
-  screenWidthInPixels
-} from "@times-components/utils";
+import { getHeadline, getLeadAsset } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
@@ -21,7 +14,6 @@ import {
   articlePagePropTypes,
   articlePageDefaultProps
 } from "./article-prop-types/article-prop-types";
-import articleTrackingContext from "./article-tracking-context";
 
 class ArticlePage extends Component {
   constructor() {
@@ -100,22 +92,22 @@ class ArticlePage extends Component {
     } = this.props;
 
     return (
-        <Article
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          data={article}
-          Header={this.renderHeader}
-          onAuthorPress={onAuthorPress}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onLinkPress={onLinkPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          receiveChildList={receiveChildList}
-        />
+      <Article
+        adConfig={adConfig}
+        analyticsStream={analyticsStream}
+        data={article}
+        Header={this.renderHeader}
+        onAuthorPress={onAuthorPress}
+        onCommentGuidelinesPress={onCommentGuidelinesPress}
+        onCommentsPress={onCommentsPress}
+        onLinkPress={onLinkPress}
+        onRelatedArticlePress={onRelatedArticlePress}
+        onTopicPress={onTopicPress}
+        onTwitterLinkPress={onTwitterLinkPress}
+        onVideoPress={onVideoPress}
+        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+        receiveChildList={receiveChildList}
+      />
     );
   }
 }

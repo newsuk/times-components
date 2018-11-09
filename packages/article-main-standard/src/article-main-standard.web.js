@@ -1,35 +1,21 @@
-import React, { Component, Fragment } from "react";
-import Ad, { AdComposer } from "@times-components/ad";
+import React, { Component } from "react";
 import Article from "@times-components/article";
-import { withTrackScrollDepth } from "@times-components/tracking";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
-import articleTrackingContext from "./article-tracking-context";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
-import {
-  articlePagePropTypes,
-  articlePageDefaultProps
-} from "./article-prop-types/article-page-prop-types";
 
 import {
-  MainContainer,
   HeaderContainer,
-  MetaContainer,
   LeadAssetContainer,
-  HeaderAdContainer,
-  BodyContainer,
+  MetaContainer,
   Wrapper
 } from "./styles/responsive";
-
-const adStyle = {
-  marginBottom: 0
-};
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -39,46 +25,43 @@ class ArticlePage extends Component {
 
   renderHeader(parentProps) {
     const {
-        byline,
-        hasVideo,
-        headline,
-        flags,
-        label,
-        publicationName,
-        publishedTime,
-        shortHeadline,
-        standfirst,
-        topics,
+      byline,
+      hasVideo,
+      headline,
+      flags,
+      label,
+      publicationName,
+      publishedTime,
+      shortHeadline,
+      standfirst,
+      topics
     } = this.props.article;
     const leadAssetProps = getLeadAsset(this.props.article);
 
     return (
-    <Wrapper>
-      <HeaderContainer>
-      <ArticleHeader
-        flags={flags}
-        hasVideo={hasVideo}
-        headline={getHeadline(headline, shortHeadline)}
-        label={label}
-        standfirst={standfirst}
-      />
-    </HeaderContainer>
-      <MetaContainer>
-        <ArticleMeta
-          byline={byline}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-        />
-        <ArticleTopics topics={topics} />
-      </MetaContainer>
-      <LeadAssetContainer>
-        <LeadAssetComponent
-          {...leadAssetProps}
-          width={parentProps.width}
-        />
-      </LeadAssetContainer>
+      <Wrapper>
+        <HeaderContainer>
+          <ArticleHeader
+            flags={flags}
+            hasVideo={hasVideo}
+            headline={getHeadline(headline, shortHeadline)}
+            label={label}
+            standfirst={standfirst}
+          />
+        </HeaderContainer>
+        <MetaContainer>
+          <ArticleMeta
+            byline={byline}
+            publicationName={publicationName}
+            publishedTime={publishedTime}
+          />
+          <ArticleTopics topics={topics} />
+        </MetaContainer>
+        <LeadAssetContainer>
+          <LeadAssetComponent {...leadAssetProps} width={parentProps.width} />
+        </LeadAssetContainer>
       </Wrapper>
-      );
+    );
   }
 
   render() {
@@ -92,8 +75,8 @@ class ArticlePage extends Component {
     } = this.props;
 
     if (error || isLoading) {
-          return null;
-        }
+      return null;
+    }
 
     return (
       <Article
@@ -107,8 +90,7 @@ class ArticlePage extends Component {
   }
 }
 
-// NEED TO UPDATE THIS
-// ArticlePage.propTypes = articlePropTypes;
-// ArticlePage.defaultProps = articleDefaultProps;
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
 export default ArticlePage;
