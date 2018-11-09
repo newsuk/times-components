@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import { View } from "react-native";
 import Ad, { AdComposer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import RelatedArticles from "@times-components/related-articles";
@@ -65,14 +66,15 @@ class Article extends Component {
     ]);
 
     return (
-      <AdComposer adConfig={adConfig}>
-        <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-          {({ observed, registerNode }) => (
-            <article
+      <article
               ref={node => {
                 this.node = node;
               }}
             >
+      <AdComposer adConfig={adConfig}>
+        <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+          {({ observed, registerNode }) => (
+              <Fragment>
               <HeaderAdContainer key="headerAd">
                 <Ad
                   contextUrl={url}
@@ -91,21 +93,23 @@ class Article extends Component {
                     registerNode={registerNode}
                     section={section}
                   />
-                </BodyContainer>
+
                 <ArticleTopics topics={topics} />
                 <aside id="related-articles" ref={node => registerNode(node)}>
                   {displayRelatedArticles({
                     isVisible: !!observed.get("related-articles")
                   })}
                 </aside>
+                </BodyContainer>
                 <Ad contextUrl={url} section={section} slotName="pixel" />
                 <Ad contextUrl={url} section={section} slotName="pixelteads" />
                 <Ad contextUrl={url} section={section} slotName="pixelskin" />
               </MainContainer>
-            </article>
+              </Fragment>
           )}
         </LazyLoad>
       </AdComposer>
+      </article>
     );
   }
 }

@@ -24,10 +24,6 @@ export const HeaderAdContainer = styled(View)`
   }
 `;
 
-export const Wrapper = styled(View)`
-  order: 0;
-`;
-
 /* --- Header --- */
 
 export const HeaderContainer = styled(View)`

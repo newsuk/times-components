@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Article from "@times-components/article";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
@@ -39,7 +39,7 @@ class ArticlePage extends Component {
     const leadAssetProps = getLeadAsset(this.props.article);
 
     return (
-      <Wrapper>
+      <Fragment>
         <HeaderContainer>
           <ArticleHeader
             flags={flags}
@@ -60,7 +60,7 @@ class ArticlePage extends Component {
         <LeadAssetContainer>
           <LeadAssetComponent {...leadAssetProps} width={parentProps.width} />
         </LeadAssetContainer>
-      </Wrapper>
+      </Fragment>
     );
   }
 

@@ -10,10 +10,7 @@ import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
-import {
-  articlePropTypes,
-  articleDefaultProps
-} from "./article-prop-types";
+import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
 

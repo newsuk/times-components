@@ -4,14 +4,14 @@ const articlePropTypes = {
   adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({}),
-  header: PropTypes.func,
+  Header: PropTypes.func,
   receiveChildList: PropTypes.func
 };
 
 const articleDefaultProps = {
   adConfig: {},
   data: null,
-  header: () => null,
+  Header: () => null,
   receiveChildList: () => {}
 };
 

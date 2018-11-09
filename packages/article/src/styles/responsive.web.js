@@ -24,27 +24,8 @@ export const HeaderAdContainer = styled(View)`
   }
 `;
 
-/* --- Header --- */
-
-export const HeaderContainer = styled(View)`
-  padding-left: ${spacing(2)};
-  padding-right: ${spacing(2)};
-  // order: 1;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin-bottom: ${spacing(3)};
-  }
-`;
 
 export const BodyContainer = styled(View)`
-  // order: 2;
   display: block;
+  order: 3;
 `;

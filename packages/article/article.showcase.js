@@ -50,7 +50,8 @@ const renderComponent = (
   sectionColour
 ) => {
   const data = fullArticleFixture(config);
-  const showHeader = header ? <TestHeader /> : null;
+  const showHeader = header ? () => <TestHeader /> : () => null;
+
   return (
     <Context.Provider
       value={{ makeArticleUrl, theme: { scale, sectionColour } }}
@@ -59,7 +60,7 @@ const renderComponent = (
         adConfig={articleAdConfig}
         analyticsStream={storybookReporter}
         data={data}
-        header={showHeader}
+        Header={showHeader}
         onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
         onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
           "onCommentGuidelinesPress"
