@@ -24,7 +24,7 @@
         {
           "name": "text",
           "attributes": {
-            "value": "Lindsay McIntosh Scottish Political Editor"
+            "value": "Lindsay McIntosh, Scottish Political Editor"
           },
           "children": []
         }
@@ -69,7 +69,7 @@
         {
           "name": "text",
           "attributes": {
-            "value": "RBS Six Nations "
+            "value": "RBS Six Nations, "
           },
           "children": []
         }
@@ -143,6 +143,79 @@
           "name": "text",
           "attributes": {
             "value": ", "
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "alexandra-frean"
+      },
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "Alexandra Frean"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "multipleAuthorsPipeSeparated": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "camilla-long"
+      },
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": " | "
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "mike-atherton"
+      },
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "Mike Atherton"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": " | "
           },
           "children": []
         }
@@ -260,7 +333,7 @@
         {
           "name": "text",
           "attributes": {
-            "value": ", Environment Editor, "
+            "value": ", Environment Editor | "
           },
           "children": []
         }
@@ -288,7 +361,7 @@
         {
           "name": "text",
           "attributes": {
-            "value": ", Environment Editor, "
+            "value": ", Environment Editor | "
           },
           "children": []
         }

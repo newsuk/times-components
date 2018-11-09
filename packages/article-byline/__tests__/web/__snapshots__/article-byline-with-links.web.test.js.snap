@@ -3,7 +3,7 @@
 exports[`1. single inline element 1`] = `
 <div>
   <div>
-    Lindsay McIntosh Scottish Political Editor
+    Lindsay McIntosh, Scottish Political Editor
   </div>
 </div>
 `;
@@ -25,7 +25,7 @@ exports[`2. with the author in the begining 1`] = `
 exports[`3. with the author at the end 1`] = `
 <div>
   <div>
-    RBS Six Nations 
+    RBS Six Nations, 
   </div>
   <a
     href="/profile/mike-atherton"
@@ -36,7 +36,36 @@ exports[`3. with the author at the end 1`] = `
 </div>
 `;
 
-exports[`4. with multiple authors separated by text with commas 1`] = `
+exports[`4. with multiple authors separated by a pipe 1`] = `
+<div>
+  <a
+    href="/profile/camilla-long"
+    role="link"
+  >
+    Camilla Long
+  </a>
+  <div>
+     | 
+  </div>
+  <a
+    href="/profile/mike-atherton"
+    role="link"
+  >
+    Mike Atherton
+  </a>
+  <div>
+     | 
+  </div>
+  <a
+    href="/profile/alexandra-frean"
+    role="link"
+  >
+    Alexandra Frean
+  </a>
+</div>
+`;
+
+exports[`5. with multiple authors separated by text with commas 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -65,7 +94,7 @@ exports[`4. with multiple authors separated by text with commas 1`] = `
 </div>
 `;
 
-exports[`5. with multiple authors separated by spaces 1`] = `
+exports[`6. with multiple authors separated by spaces 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -94,4 +123,4 @@ exports[`5. with multiple authors separated by spaces 1`] = `
 </div>
 `;
 
-exports[`6. null with an empty ast 1`] = `null`;
+exports[`7. null with an empty ast 1`] = `null`;

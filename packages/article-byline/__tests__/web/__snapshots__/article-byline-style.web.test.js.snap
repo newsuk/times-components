@@ -166,7 +166,7 @@ exports[`4. with a a very long byline 1`] = `
   <div
     className="IS2 S1"
   >
-    , Environment Editor, 
+    , Environment Editor | 
   </div>
   <div
     className="IS3 S1"
@@ -176,7 +176,7 @@ exports[`4. with a a very long byline 1`] = `
   <div
     className="IS4 S1"
   >
-    , Environment Editor, 
+    , Environment Editor | 
   </div>
   <div
     className="IS5 S1"

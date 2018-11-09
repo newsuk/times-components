@@ -60,7 +60,7 @@ export default (Component, name) => ({
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
-            ast={authorsAST.multipleAuthorsCommaSeparated}
+            ast={authorsAST.multipleAuthorsPipeSeparated}
             {...getProps(selectV2, decorateAction)}
           />
         </ComponentWrapper>
@@ -96,7 +96,7 @@ export default (Component, name) => ({
       component: ({ selectV2 }, { decorateAction }) => (
         <ComponentWrapper>
           <Component
-            ast={authorsAST.multipleAuthorsCommaSeparated}
+            ast={authorsAST.multipleAuthorsPipeSeparated}
             style={styles}
             {...getProps(selectV2, decorateAction)}
           />
