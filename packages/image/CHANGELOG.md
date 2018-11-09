@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.2"></a>
+## [4.3.2](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.1...@times-components/image@4.3.2) (2018-11-09)
+
+
+### Bug Fixes
+
+* Check if resize already exists in url ([#1468](https://github.com/newsuk/times-components/issues/1468)) ([c73d7b9](https://github.com/newsuk/times-components/commit/c73d7b9))
+
+
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.0...@times-components/image@4.3.1) (2018-11-07)
 
