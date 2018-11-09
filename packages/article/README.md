@@ -1,8 +1,8 @@
 # Article
 
-The article component is a composed collection of components and features which go to make up an article. This is distinct from the concept of an article page in the pages package, as that page deals with the data provider, whereas the	article component is intended to be a dumb component. It does however compose	ads and lazy loading features on web.
+The article component is a composed collection of components and features which go to make up an article. This is distinct from the concept of an article page in the pages package, as that page deals with the data provider, whereas the article component is intended to be a dumb component. It does however compose ads and lazy loading features on web.
 
-Article consumes components such as `ArticleHeader`, `ArticleTopics` and `RelatedArticles`, all of which are related to a specific article. Some of these components are self-contained within the article package itself. Components that	are quite large or complex (e.g. related articles), or are used elsewhere (e.g. article label) are separated and put into separate packages.
+Article consumes components such as `ArticleHeader`, `ArticleTopics` and `RelatedArticles`, all of which are related to a specific article. Some of these components are self-contained within the article package itself. Components that are quite large or complex (e.g. related articles), or are used elsewhere (e.g. article label) are separated and put into separate packages.
 
 It takes a Header as a prop so that each template can use the `Article` and provide its own unique spin on it.
 
