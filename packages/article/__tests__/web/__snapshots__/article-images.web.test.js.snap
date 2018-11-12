@@ -10,31 +10,6 @@ exports[`1. a secondary image 1`] = `
     />
   </div>
   <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
     <div>
       <div
         id="0"
@@ -59,26 +34,26 @@ exports[`1. a secondary image 1`] = `
           />
         </div>
       </div>
+      <aside
+        id="related-articles"
+      />
     </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
 </article>
 `;
 
@@ -92,31 +67,6 @@ exports[`2. an inline image 1`] = `
     />
   </div>
   <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
     <div>
       <div
         id="0"
@@ -141,25 +91,25 @@ exports[`2. an inline image 1`] = `
           />
         </div>
       </div>
+      <aside
+        id="related-articles"
+      />
     </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
 </article>
 `;

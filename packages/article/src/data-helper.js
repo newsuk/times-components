@@ -1,19 +1,3 @@
-import getLeadAsset from "./article-lead-asset/get-lead-asset";
-
-const prepend = ({ data, type }, list) => {
-  if (!data) {
-    return list;
-  }
-
-  return [
-    {
-      data,
-      type
-    },
-    ...list
-  ];
-};
-
 const append = ({ data, type }, list) => {
   if (!data) {
     return list;
@@ -29,22 +13,6 @@ const append = ({ data, type }, list) => {
 };
 
 const prepareDataForListView = articleData => {
-  const { isVideo, leadAsset } = getLeadAsset(articleData);
-  const articleHeaderData = {
-    flags: articleData.flags,
-    hasVideo: articleData.hasVideo,
-    headline: articleData.headline,
-    isVideo,
-    label: articleData.label,
-    shortHeadline: articleData.shortHeadline,
-    standfirst: articleData.standfirst
-  };
-  const articleMidContainerData = {
-    byline: articleData.byline,
-    publicationName: articleData.publicationName,
-    publishedTime: articleData.publishedTime
-  };
-
   const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
         relatedArticleSlice: {
@@ -61,14 +29,6 @@ const prepareDataForListView = articleData => {
   };
 
   const data = [
-    {
-      data: articleHeaderData,
-      type: "header"
-    },
-    {
-      data: articleMidContainerData,
-      type: "middleContainer"
-    },
     ...articleData.content.map((rowData, index) => {
       const item = {
         data: Object.assign({}, rowData),
@@ -94,23 +54,17 @@ const prepareDataForListView = articleData => {
     }
   ];
 
-  return prepend(
+  return append(
     {
-      data: leadAsset,
-      type: "leadAsset"
+      data: commentsData,
+      type: "comments"
     },
     append(
       {
-        data: commentsData,
-        type: "comments"
+        data: relatedArticleSliceData,
+        type: "relatedArticleSlice"
       },
-      append(
-        {
-          data: relatedArticleSliceData,
-          type: "relatedArticleSlice"
-        },
-        data
-      )
+      data
     )
   );
 };

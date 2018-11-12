@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. an error 1`] = `null`;
-
-exports[`2. a full article with an image as the lead asset 1`] = `
+exports[`1. a full article with all content items 1`] = `
 <article>
   <div>
     <Ad
@@ -12,110 +10,24 @@ exports[`2. a full article with an image as the lead asset 1`] = `
     />
   </div>
   <div>
-    <header>
-      <div>
-        <div>
-          <div>
-            <div>
-              SOME LABEL
-            </div>
-          </div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-          <h2
-            aria-level="2"
-            role="heading"
-          >
-            Some Standfirst
-          </h2>
-          <div>
-            <div>
-              <NewArticleFlag />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <ArticleBylineWithLinks
-                ast={
-                  Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ]
-                }
-                color="#333333"
-              />
-            </span>
-          </div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-        <div>
-          <nav>
-            <ArticleTopics
-              topics={
-                Array [
-                  Object {
-                    "name": "Topic",
-                    "slug": "topic",
-                  },
-                ]
-              }
-            />
-          </nav>
-        </div>
-      </div>
-      <div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <Image
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
-              </div>
-            </div>
-            <div>
-              <figcaption>
-                <Caption
-                  credits="Some Credits"
-                  text="Some Caption"
-                />
-              </figcaption>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </header>
     <div>
+      <p>
+        <span>
+          T
+        </span>
+        his being Black History Month, last week
+      </p>
+      <div>
+        <link
+          href="https://interactive.io"
+          rel="import"
+        />
+        <times-datawrapper
+          chart-id="csmgb"
+        />
+      </div>
       <div
-        id="0"
+        id="2"
       >
         <div>
           <ArticleImage
@@ -137,6 +49,52 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           />
         </div>
       </div>
+      <div
+        id="3"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A secondary image caption",
+                "credits": "The secondary image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "secondary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io/secondary",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        id="4"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "An inline image caption",
+                "credits": "The inline image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "inline",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io/inline",
+              }
+            }
+          />
+        </div>
+      </div>
       <Link
         target="_blank"
         url="https://link.io"
@@ -146,6 +104,11 @@ exports[`2. a full article with an image as the lead asset 1`] = `
       <p>
         Some content
       </p>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="inline-ad"
+      />
       <div>
         <div>
           <PullQuote
@@ -184,525 +147,193 @@ exports[`2. a full article with an image as the lead asset 1`] = `
           </figcaption>
         </figure>
       </div>
-    </div>
-  </div>
-  <div>
-    <nav>
-      <ArticleTopics
-        topics={
-          Array [
-            Object {
-              "name": "Topic",
-              "slug": "topic",
+      <KeyFacts
+        ast={
+          Object {
+            "attributes": Object {
+              "title": "Example title",
             },
-          ]
-        }
-      />
-    </nav>
-  </div>
-  <aside
-    id="related-articles"
-  >
-    <RelatedArticles
-      isVisible={false}
-      slice={
-        Object {
-          "__typename": "StandardSlice",
-          "items": Array [
-            Object {
-              "article": Object {
-                "__typename": "Article",
-                "byline": Array [],
-                "hasVideo": false,
-                "headline": "RA Headline",
-                "id": "ra-1",
-                "label": "RA Label",
-                "leadAsset": Object {
-                  "__typename": "Image",
-                  "crop169": Object {
-                    "__typename": "Crop",
-                    "url": "https://racrop169.io",
-                  },
-                  "crop32": Object {
-                    "__typename": "Crop",
-                    "url": "https://racrop32.io",
-                  },
-                  "title": "RA Title",
-                },
-                "publicationName": "TIMES",
-                "publishedTime": "2015-03-23T19:39:39.000Z",
-                "shortHeadline": "Headline",
-                "shortIdentifier": "2k629tpvh",
-                "slug": "this-is-slug",
-                "summary105": Array [],
-                "summary125": Array [],
-                "summary145": Array [],
-                "summary160": Array [],
-                "summary175": Array [],
-                "summary225": Array [],
-                "url": "https://ra.io",
-              },
-            },
-          ],
-          "sliceName": "StandardSlice",
-        }
-      }
-    />
-  </aside>
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`3. an article with a video as the lead asset 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <div>
-            <VideoLabel
-              color="#333333"
-              title={null}
-            />
-          </div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <video
-                      controls={true}
-                      data-account="5436121857001"
-                      data-application-id={true}
-                      data-embed="default"
-                      data-player="default"
-                      data-video-id="5831024132001"
-                      id="5831024132001-5436121857001-2"
-                      poster="https://video169.io"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <figcaption>
-                <Caption
-                  text="This is video caption"
-                />
-              </figcaption>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </header>
-    <div>
-      <p>
-        Some content
-      </p>
-    </div>
-  </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`4. an article with no lead asset 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <p>
-        Some content
-      </p>
-    </div>
-  </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`5. an article with no headline falls back to use shortheadline 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Short Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <p>
-        Some content
-      </p>
-    </div>
-  </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`6. an article with ads 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="inline-ad"
-      />
-    </div>
-  </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`7. an article loading state 1`] = `
-<div>
-  Loading ...
-</div>
-`;
-
-exports[`8. an article with updated byline 1`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div />
-    </header>
-    <div>
-      <p>
-        Some content
-      </p>
-    </div>
-  </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
-</article>
-`;
-
-exports[`8. an article with updated byline 2`] = `
-<article>
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
-    <header>
-      <div>
-        <div>
-          <h1
-            aria-level="1"
-            role="heading"
-          >
-            Some Headline
-          </h1>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <span>
-              <ArticleBylineWithLinks
-                ast={
-                  Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
-                          },
-                          "children": Array [],
-                          "name": "text",
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Example bullet text",
                         },
-                      ],
-                      "name": "inline",
-                    },
-                  ]
-                }
-                color="#FFFFFF"
-              />
-            </span>
-          </div>
-          <div>
-            <span>
-              <DatePublication
-                date="2015-03-13T18:54:58.000Z"
-                publication="TIMES"
-              />
-            </span>
-          </div>
-        </div>
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "An example ",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                      Object {
+                        "attributes": Object {
+                          "href": "https://example.io",
+                          "target": "_blank",
+                          "type": "topic",
+                        },
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "link",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "link",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "More example text.",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Example text ",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "this is bold ",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "bold",
+                      },
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "this is in italics.",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "italic",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                ],
+                "name": "unorderedList",
+              },
+            ],
+            "name": "keyFacts",
+          }
+        }
+      />
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </nav>
       </div>
-      <div />
-    </header>
-    <div>
-      <p>
-        Some content
-      </p>
+      <aside
+        id="related-articles"
+      >
+        <RelatedArticles
+          isVisible={false}
+          slice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "byline": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+        />
+      </aside>
     </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </div>
-  <aside
-    id="related-articles"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixel"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelteads"
-  />
-  <Ad
-    contextUrl="https://url.io"
-    section="Some Section"
-    slotName="pixelskin"
-  />
 </article>
 `;

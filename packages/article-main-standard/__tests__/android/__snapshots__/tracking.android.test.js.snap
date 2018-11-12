@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. analytics when rendering an Article page 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "articleId": "",
+    "byline": "",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "headline": "",
+    "label": "",
+    "pageName": "-",
+    "publishedTime": "",
+    "section": "",
+    "template": "Default",
+    "topics": undefined,
+  },
+  "component": "Page",
+  "object": "Article",
+}
+`;

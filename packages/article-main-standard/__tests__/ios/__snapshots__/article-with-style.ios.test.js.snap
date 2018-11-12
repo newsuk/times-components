@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`full article with style 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View>
+        <ModalImage />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": -13.75,
+              "marginTop": 10,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 30,
+              "marginBottom": 7,
+              "marginTop": 15,
+            }
+          }
+        >
+          Some Headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 20,
+              "lineHeight": 25,
+              "paddingBottom": 10,
+            }
+          }
+        >
+          Some Standfirst
+        </Text>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+              "paddingTop": 5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 15,
+              }
+            }
+          >
+            <NewArticleFlag />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "marginBottom": 20,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 1,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            <ArticleBylineWithLinks />
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#DBDBDB",
+              "borderTopWidth": 1,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015, 6:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 17,
+            "lineHeight": 26,
+            "marginBottom": 25,
+            "marginTop": 0,
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        Some Link
+      </Text>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <PullQuote />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <Video />
+        <View>
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingTop": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 16,
+                }
+              }
+            >
+              This is video caption
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <Ad
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 20,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+          }
+        }
+      >
+        <ArticleTopics />
+      </View>
+    </View>
+    <View>
+      <RelatedArticles />
+    </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;

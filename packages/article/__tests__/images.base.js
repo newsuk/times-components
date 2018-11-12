@@ -26,7 +26,7 @@ export default () =>
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture,
               ...emptyArticle,
               content: [
@@ -65,7 +65,7 @@ export default () =>
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture,
               ...emptyArticle,
               content: [

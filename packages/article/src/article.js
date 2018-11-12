@@ -1,35 +1,24 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
-import { AdComposer } from "@times-components/ad";
 import ArticleComments from "@times-components/article-comments";
+import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
-import ArticleHeader from "./article-header/article-header";
-import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
-import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
-import ArticleError from "./article-error";
-import ArticleLoading from "./article-loading";
-import stylesFactory from "./styles/article-body";
-import {
-  articlePagePropTypes,
-  articlePageDefaultProps
-} from "./article-page-prop-types";
-import articleTrackingContext from "./article-tracking-context";
+import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import listViewDataHelper from "./data-helper";
-import getHeadline from "./utils";
+import articleTrackingContext from "./article-tracking-context";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = (analyticsStream, width) => (
+const renderRow = analyticsStream => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -42,54 +31,6 @@ const renderRow = (analyticsStream, width) => (
 ) => {
   // eslint-disable-next-line default-case
   switch (rowData.type) {
-    case "leadAsset": {
-      return (
-        <View key="leadAsset" testID="leadAsset">
-          <ArticleLeadAsset
-            data={{ ...rowData.data, onVideoPress }}
-            key={rowData.type}
-            width={width}
-          />
-        </View>
-      );
-    }
-
-    case "header": {
-      const {
-        flags,
-        hasVideo,
-        headline,
-        label,
-        shortHeadline,
-        standfirst
-      } = rowData.data;
-      const styles = stylesFactory();
-      return (
-        <ArticleHeader
-          flags={flags}
-          hasVideo={hasVideo}
-          headline={getHeadline(headline, shortHeadline)}
-          key={rowData.type}
-          label={label}
-          standfirst={standfirst}
-          style={[styles.articleMainContentRow]}
-        />
-      );
-    }
-
-    case "middleContainer": {
-      const { byline, publishedTime, publicationName } = rowData.data;
-      return (
-        <ArticleMeta
-          byline={byline}
-          key={rowData.type}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-        />
-      );
-    }
-
     case "articleBodyRow": {
       return (
         <ArticleRow
@@ -131,25 +72,14 @@ const renderRow = (analyticsStream, width) => (
   }
 };
 
-class ArticlePage extends Component {
-  static getDerivedStateFromProps(props, state) {
-    if (!props.isLoading && !props.error) {
-      return {
-        ...state,
-        dataSource: listViewDataHelper(props.article)
-      };
-    }
-    return state;
-  }
-
+class Article extends Component {
   constructor(props) {
     super(props);
-
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
 
-    if (props.article && !props.isLoading && !props.error) {
+    if (props.data) {
       this.state = {
-        dataSource: listViewDataHelper(props.article),
+        dataSource: props.data,
         width: normaliseWidth(screenWidthInPixels())
       };
     } else {
@@ -170,17 +100,28 @@ class ArticlePage extends Component {
   }
 
   render() {
-    const { error, refetch, isLoading, receiveChildList } = this.props;
+    const {
+      adConfig,
+      analyticsStream,
+      Header,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onViewed,
+      onVideoPress,
+      receiveChildList
+    } = this.props;
 
-    if (error) {
-      return <ArticleError refetch={refetch} />;
+    if (!this.state.dataSource.content) {
+      return null;
     }
 
-    if (isLoading) {
-      return <ArticleLoading />;
-    }
-
-    const articleData = this.state.dataSource.map((item, index) => ({
+    const articleOrganised = listViewDataHelper(this.state.dataSource);
+    const articleData = articleOrganised.map((item, index) => ({
       ...item,
       elementId: `${item.type}.${index}`,
       name: item.type
@@ -188,43 +129,42 @@ class ArticlePage extends Component {
 
     receiveChildList(articleData);
 
-    const ArticleListView = (
-      <ArticleContent
-        data={articleData}
-        initialListSize={listViewSize}
-        onAuthorPress={this.props.onAuthorPress}
-        onCommentGuidelinesPress={this.props.onCommentGuidelinesPress}
-        onCommentsPress={this.props.onCommentsPress}
-        onLinkPress={this.props.onLinkPress}
-        onRelatedArticlePress={this.props.onRelatedArticlePress}
-        onTopicPress={this.props.onTopicPress}
-        onTwitterLinkPress={this.props.onTwitterLinkPress}
-        onVideoPress={this.props.onVideoPress}
-        onViewableItemsChanged={
-          this.props.onViewed ? this.onViewableItemsChanged : null
-        }
-        pageSize={listViewPageSize}
-        renderRow={renderRow(this.props.analyticsStream, this.state.width)}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-      />
-    );
-
     return (
-      <AdComposer adConfig={this.props.adConfig}>{ArticleListView}</AdComposer>
+      <AdComposer adConfig={adConfig}>
+        <ArticleContent
+          data={articleData}
+          Header={Header}
+          initialListSize={listViewSize}
+          onAuthorPress={onAuthorPress}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          onLinkPress={onLinkPress}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPress}
+          onTwitterLinkPress={onTwitterLinkPress}
+          onVideoPress={onVideoPress}
+          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+          pageSize={listViewPageSize}
+          renderRow={renderRow(analyticsStream)}
+          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+          width={this.state.width}
+        />
+      </AdComposer>
     );
   }
 }
 
-ArticlePage.propTypes = {
-  ...articlePagePropTypes,
+Article.propTypes = {
+  ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
+  onRelatedArticlePress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  refetch: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired
 };
-ArticlePage.defaultProps = articlePageDefaultProps;
+Article.defaultProps = articleDefaultProps;
 
-export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
+// export default Article;
+export default articleTrackingContext(withTrackScrollDepth(Article));

@@ -1,31 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
-import RelatedArticles from "@times-components/related-articles";
 import LazyLoad from "@times-components/lazy-load";
+import RelatedArticles from "@times-components/related-articles";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
-import ArticleHeader from "./article-header/article-header";
-import ArticleLoading from "./article-loading";
-import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
-import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
-import getLeadAsset from "./article-lead-asset/get-lead-asset";
-import articleTrackingContext from "./article-tracking-context";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
-import {
-  articlePagePropTypes,
-  articlePageDefaultProps
-} from "./article-page-prop-types";
-import getHeadline from "./utils";
+import articleTrackingContext from "./article-tracking-context";
 
 import {
-  MainContainer,
-  HeaderContainer,
-  MetaContainer,
-  LeadAssetContainer,
   BodyContainer,
-  HeaderAdContainer
+  HeaderAdContainer,
+  MainContainer
 } from "./styles/responsive";
 
 const adStyle = {
@@ -50,31 +37,13 @@ class Article extends Component {
 
   render() {
     const {
+      adConfig,
       analyticsStream,
-      data: {
-        hasVideo,
-        headline,
-        flags,
-        standfirst,
-        label,
-        byline,
-        publishedTime,
-        publicationName,
-        content,
-        section,
-        shortHeadline,
-        url,
-        topics,
-        relatedArticleSlice
-      },
-      observed,
-      onAuthorPress,
-      onTopicPress,
-      receiveChildList,
-      registerNode
+      data: { content, section, url, topics, relatedArticleSlice },
+      Header,
+      receiveChildList
     } = this.props;
 
-    const leadAssetProps = getLeadAsset(this.props.data);
     // eslint-disable-next-line react/prop-types
     const displayRelatedArticles = ({ isVisible }) =>
       relatedArticleSlice ? (
@@ -101,64 +70,51 @@ class Article extends Component {
           this.node = node;
         }}
       >
-        <HeaderAdContainer key="headerAd">
-          <Ad
-            contextUrl={url}
-            section={section}
-            slotName="header"
-            style={adStyle}
-          />
-        </HeaderAdContainer>
-        <MainContainer>
-          <header>
-            <HeaderContainer>
-              <ArticleHeader
-                flags={flags}
-                hasVideo={hasVideo}
-                headline={getHeadline(headline, shortHeadline)}
-                label={label}
-                standfirst={standfirst}
-              />
-            </HeaderContainer>
-            <MetaContainer>
-              <ArticleMeta
-                byline={byline}
-                onAuthorPress={onAuthorPress}
-                publicationName={publicationName}
-                publishedTime={publishedTime}
-              />
-              <ArticleTopics
-                device="DESKTOP"
-                onPress={onTopicPress}
-                topics={topics}
-              />
-            </MetaContainer>
-            <LeadAssetContainer>
-              <LeadAssetComponent
-                {...leadAssetProps}
-                width={this.state.articleWidth}
-              />
-            </LeadAssetContainer>
-          </header>
-          <BodyContainer>
-            <ArticleBody
-              content={content}
-              contextUrl={url}
-              observed={observed}
-              registerNode={registerNode}
-              section={section}
-            />
-          </BodyContainer>
-        </MainContainer>
-        <ArticleTopics onPress={onTopicPress} topics={topics} />
-        <aside id="related-articles" ref={node => registerNode(node)}>
-          {displayRelatedArticles({
-            isVisible: !!observed.get("related-articles")
-          })}
-        </aside>
-        <Ad contextUrl={url} section={section} slotName="pixel" />
-        <Ad contextUrl={url} section={section} slotName="pixelteads" />
-        <Ad contextUrl={url} section={section} slotName="pixelskin" />
+        <AdComposer adConfig={adConfig}>
+          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+            {({ observed, registerNode }) => (
+              <Fragment>
+                <HeaderAdContainer key="headerAd">
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="header"
+                    style={adStyle}
+                  />
+                </HeaderAdContainer>
+                <MainContainer>
+                  <Header width={this.state.articleWidth} />
+                  <BodyContainer>
+                    <ArticleBody
+                      content={content}
+                      contextUrl={url}
+                      observed={observed}
+                      registerNode={registerNode}
+                      section={section}
+                    />
+
+                    <ArticleTopics topics={topics} />
+                    <aside
+                      id="related-articles"
+                      ref={node => registerNode(node)}
+                    >
+                      {displayRelatedArticles({
+                        isVisible: !!observed.get("related-articles")
+                      })}
+                    </aside>
+                  </BodyContainer>
+                  <Ad contextUrl={url} section={section} slotName="pixel" />
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="pixelteads"
+                  />
+                  <Ad contextUrl={url} section={section} slotName="pixelskin" />
+                </MainContainer>
+              </Fragment>
+            )}
+          </LazyLoad>
+        </AdComposer>
       </article>
     );
   }
@@ -167,46 +123,4 @@ class Article extends Component {
 Article.propTypes = articlePropTypes;
 Article.defaultProps = articleDefaultProps;
 
-const ArticlePage = ({
-  adConfig,
-  analyticsStream,
-  article,
-  error,
-  isLoading,
-  onAuthorPress,
-  onRelatedArticlePress,
-  onTopicPress,
-  receiveChildList
-}) => {
-  if (error) {
-    return null;
-  }
-
-  if (isLoading) {
-    return <ArticleLoading />;
-  }
-
-  return (
-    <AdComposer adConfig={adConfig}>
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-        {({ observed, registerNode }) => (
-          <Article
-            analyticsStream={analyticsStream}
-            data={article}
-            observed={observed}
-            onAuthorPress={onAuthorPress}
-            onRelatedArticlePress={onRelatedArticlePress}
-            onTopicPress={onTopicPress}
-            receiveChildList={receiveChildList}
-            registerNode={registerNode}
-          />
-        )}
-      </LazyLoad>
-    </AdComposer>
-  );
-};
-
-ArticlePage.propTypes = articlePagePropTypes;
-ArticlePage.defaultProps = articlePageDefaultProps;
-
-export default articleTrackingContext(withTrackScrollDepth(ArticlePage));
+export default articleTrackingContext(withTrackScrollDepth(Article));

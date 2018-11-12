@@ -1,22 +1,18 @@
 import PropTypes from "prop-types";
-import ArticleHeader from "./article-header/article-header";
-import ArticleMeta from "./article-meta/article-meta";
 
 const articlePropTypes = {
+  adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
-  data: PropTypes.shape({
-    ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes
-  }),
-  observed: PropTypes.object.isRequired,
-  onAuthorPress: PropTypes.func.isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  registerNode: PropTypes.func.isRequired
+  data: PropTypes.shape({}),
+  Header: PropTypes.func,
+  receiveChildList: PropTypes.func
 };
 
 const articleDefaultProps = {
-  data: null
+  adConfig: {},
+  data: null,
+  Header: () => null,
+  receiveChildList: () => {}
 };
 
 export { articlePropTypes, articleDefaultProps };

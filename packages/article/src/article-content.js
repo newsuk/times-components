@@ -9,7 +9,7 @@ const viewabilityConfig = {
 
 const ArticleContent = ({
   data,
-  renderRow,
+  Header,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -18,13 +18,16 @@ const ArticleContent = ({
   onTopicPress,
   onTwitterLinkPress,
   onVideoPress,
-  onViewableItemsChanged
+  onViewableItemsChanged,
+  renderRow,
+  width
 }) => (
   <FlatList
     data={data}
     keyExtractor={item =>
       item.index ? `${item.type}.${item.index}` : item.type
     }
+    ListHeaderComponent={<Header width={width} />}
     onViewableItemsChanged={onViewableItemsChanged}
     renderItem={({ item }) =>
       renderRow(
@@ -52,6 +55,7 @@ ArticleContent.propTypes = {
       type: PropTypes.string.isRequired
     })
   ).isRequired,
+  Header: PropTypes.func,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -61,11 +65,14 @@ ArticleContent.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onViewableItemsChanged: PropTypes.func,
-  renderRow: PropTypes.func.isRequired
+  renderRow: PropTypes.func.isRequired,
+  width: PropTypes.number
 };
 
 ArticleContent.defaultProps = {
-  onViewableItemsChanged: () => {}
+  Header: () => null,
+  onViewableItemsChanged: () => {},
+  width: null
 };
 
 export default ArticleContent;

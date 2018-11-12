@@ -1,30 +1,34 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
-import React, { Fragment } from "react";
+import React from "react";
+import { Text, View } from "react-native";
 import invert from "lodash.invert";
+import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import Context from "@times-components/context";
-import { ArticleProvider } from "@times-components/provider";
-import {
-  article as makeParams,
-  articleComments as makeArticleCommentsParams,
-  fixtures,
-  MockFixture,
-  MockedProvider
-} from "@times-components/provider-test-tools";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
-import {
-  ArticleConfigurator,
-  makeArticleConfiguration
-} from "./showcase-helper";
 import Article from "./src/article";
-import articleAdConfig from "./fixtures/article-ad-config.json";
+import fullArticleFixture from "./fixtures/full-article";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
     ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
     : "";
+
+const TestHeader = () => (
+  <View
+    style={{
+      alignItems: "center",
+      borderColor: "#66666",
+      borderWidth: 1,
+      justfyContent: "center",
+      margin: 20,
+      padding: 20
+    }}
+  >
+    <Text>THIS IS A TEST ARTICLE HEADER</Text>
+  </View>
+);
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -34,275 +38,79 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const renderArticle = ({
-  adConfig,
-  analyticsStream,
-  decorateAction,
-  id,
-  scale,
-  sectionColour
-}) => (
-  <ArticleProvider debounceTimeMs={0} id={id}>
-    {({ article, isLoading, error, refetch }) => (
-      <Context.Provider
-        value={{ makeArticleUrl, theme: { scale, sectionColour } }}
-      >
-        <Article
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          article={article}
-          error={error}
-          isLoading={isLoading}
-          onAuthorPress={preventDefaultedAction(decorateAction)(
-            "onAuthorPress"
-          )}
-          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-            "onCommentGuidelinesPress"
-          )}
-          onCommentsPress={preventDefaultedAction(decorateAction)(
-            "onCommentsPress"
-          )}
-          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-            "onRelatedArticlePress"
-          )}
-          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-          refetch={refetch}
-        />
-      </Context.Provider>
-    )}
-  </ArticleProvider>
-);
-
-const mockArticle = ({
-  adConfig = articleAdConfig,
-  analyticsStream = storybookReporter,
-  decorateAction,
-  id,
-  params,
-  scale,
-  sectionColour
-}) => (
-  <MockFixture
-    params={params}
-    render={mocks => (
-      <MockedProvider mocks={mocks}>
-        {renderArticle({
-          adConfig,
-          analyticsStream,
-          decorateAction,
-          id,
-          scale,
-          sectionColour
-        })}
-      </MockedProvider>
-    )}
-  />
-);
-
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
+
+const renderComponent = (
+  config,
+  decorateAction,
+  header,
+  scale,
+  sectionColour
+) => {
+  const data = fullArticleFixture(config);
+  const showHeader = header ? () => <TestHeader /> : () => null;
+
+  return (
+    <Context.Provider
+      value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+    >
+      <Article
+        adConfig={articleAdConfig}
+        analyticsStream={storybookReporter}
+        data={data}
+        Header={showHeader}
+        onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+        onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+          "onCommentGuidelinesPress"
+        )}
+        onCommentsPress={preventDefaultedAction(decorateAction)(
+          "onCommentsPress"
+        )}
+        onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+        onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+          "onRelatedArticlePress"
+        )}
+        onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+        onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+          "onTwitterLinkPress"
+        )}
+        onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+        onViewableItemsChanged={() => null}
+      />
+    </Context.Provider>
+  );
+};
 
 export default {
   children: [
     {
       component: ({ boolean, select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
         const sectionColour = selectSection(select);
-        const withFlags = boolean("Flags", true);
-        const withLabel = boolean("Label", true);
-        const withLeadAsset = boolean("Lead Asset", true);
-        const withLinkedByline = boolean("Linked Byline", true);
-        const withStandfirst = boolean("Standfirst", true);
-        const withVideo = boolean("Video", true);
+        const commentsEnabled = boolean("Comments Enabled?", true);
+        const relatedArticleSlice = boolean("Related Articles?", true);
+        const topics = boolean("Topics?", true);
+        const header = boolean("Header?", false);
 
-        const link = typeof document === "object" &&
-          window !== window.top && (
-            <a
-              href={`/iframe.html${window.top.location.search}`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Open in new window
-            </a>
-          );
+        const config = {
+          commentsEnabled: commentsEnabled ? undefined : false,
+          relatedArticleSlice: relatedArticleSlice ? undefined : null,
+          topics: topics ? undefined : []
+        };
 
-        return (
-          <Fragment>
-            {link}
-            {
-              <ArticleConfigurator
-                configuration={makeArticleConfiguration({
-                  withFlags,
-                  withLabel,
-                  withLeadAsset,
-                  withLinkedByline,
-                  withStandfirst,
-                  withVideo
-                })}
-                id={id}
-              >
-                {renderArticle({
-                  adConfig: articleAdConfig,
-                  analyticsStream: storybookReporter,
-                  decorateAction,
-                  id,
-                  scale,
-                  sectionColour
-                })}
-              </ArticleConfigurator>
-            }
-          </Fragment>
+        return renderComponent(
+          config,
+          decorateAction,
+          header,
+          scale,
+          sectionColour
         );
       },
       name: "Default",
       type: "story"
-    },
-    {
-      component: ({ select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-        const scale = selectScales(select);
-        const sectionColour = selectSection(select);
-
-        return mockArticle({
-          decorateAction,
-          id,
-          params: [
-            ...makeParams({
-              chooseMedia: mediaIndex => {
-                if (mediaIndex === 0) {
-                  return {
-                    __typename: "Video"
-                  };
-                }
-
-                return {
-                  __typename: "Image"
-                };
-              },
-              makeArticle: a => ({
-                ...a,
-                leadAsset: fixtures.video
-              }),
-              variables: () => ({
-                id
-              })
-            }),
-            ...makeArticleCommentsParams({
-              count: 123,
-              enabled: true,
-              id,
-              variables: () => ({
-                id
-              })
-            })
-          ],
-          scale,
-          sectionColour
-        });
-      },
-      name: "Article with video asset",
-      type: "story"
-    },
-    {
-      component: ({ select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-        const scale = selectScales(select);
-        const sectionColour = selectSection(select);
-
-        return mockArticle({
-          decorateAction,
-          id,
-          params: [
-            ...makeParams({
-              makeArticle: article => ({
-                ...article,
-                content: [...article.content, ...article.content]
-              }),
-              variables: () => ({
-                id
-              })
-            }),
-            ...makeArticleCommentsParams({
-              count: 123,
-              enabled: true,
-              id,
-              variables: () => ({
-                id
-              })
-            })
-          ],
-          scale,
-          sectionColour
-        });
-      },
-      name: "Long Article",
-      type: "story"
-    },
-    {
-      component: () => (
-        <Article
-          adConfig={articleAdConfig}
-          analyticsStream={storybookReporter}
-          isLoading
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-        />
-      ),
-      name: "Loading",
-      type: "story"
-    },
-    {
-      component: ({ select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-        const scale = selectScales(select);
-        const sectionColour = selectSection(select);
-
-        return mockArticle({
-          decorateAction,
-          id,
-          params: makeParams({
-            error: () => new Error("Article error"),
-            variables: () => ({
-              id
-            })
-          }),
-          scale,
-          sectionColour
-        });
-      },
-      name: "Error",
-      platform: "native",
-      type: "story"
-    },
-    {
-      component: ({ select, text }, { decorateAction }) => {
-        const id = text("Article id", "");
-        const scale = selectScales(select);
-        const sectionColour = selectSection(select);
-
-        return (
-          <StorybookProvider>
-            {renderArticle({
-              adConfig: articleAdConfig,
-              analyticsStream: storybookReporter,
-              decorateAction,
-              id,
-              scale,
-              sectionColour
-            })}
-          </StorybookProvider>
-        );
-      },
-      name: "With Provider",
-      type: "story"
     }
   ],
-  name: "Pages/Article"
+  name: "Composed/Article"
 };

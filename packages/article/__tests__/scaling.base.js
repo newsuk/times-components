@@ -16,7 +16,7 @@ export default renderComponent => [
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture
             })}
             onAuthorPress={() => {}}
@@ -43,7 +43,7 @@ export default renderComponent => [
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture
             })}
             onAuthorPress={() => {}}
@@ -70,7 +70,7 @@ export default renderComponent => [
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture({
+            data={articleFixture({
               ...testFixture
             })}
             onAuthorPress={() => {}}

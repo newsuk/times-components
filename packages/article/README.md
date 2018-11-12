@@ -1,30 +1,12 @@
 # Article
 
-The article component is a composed collection of components and features which
-go to make up an article. This is distinct from the concept of an article page
-in the pages package, as that page deals with the data provider, whereas the
-article component is intended to be a dumb component. It does however compose
-ads and lazy loading features on web.
+The article component is a composed collection of components and features which go to make up an article. This is distinct from the concept of an article page in the pages package, as that page deals with the data provider, whereas the article component is intended to be a dumb component. It does however compose ads and lazy loading features on web.
 
-Article consumes components such as `ArticleHeader`, `ArticleTopics` and
-`RelatedArticles`, all of which are related to a specific article. Some of these
-components are self-contained within the article package itself. Components that
-are quite large or complex (e.g. related articles), or are used elsewhere (e.g.
-article label) are separated and put into separate packages.
+Article consumes components such as `ArticleHeader`, `ArticleTopics` and `RelatedArticles`, all of which are related to a specific article. Some of these components are self-contained within the article package itself. Components that are quite large or complex (e.g. related articles), or are used elsewhere (e.g. article label) are separated and put into separate packages.
+
+It takes a Header as a prop so that each template can use the `Article` and provide its own unique spin on it.
 
 These are some of the packages that live within the article package:
-
-### Article Header & Article Header Label
-
-The intro content at the top of an article.
-
-### Article Meta
-
-The article publication date and byline data.
-
-### Article Lead Asset
-
-Manages the main lead image or video of an article.
 
 ### Article Body
 
@@ -82,7 +64,3 @@ yarn test:android
 yarn test:ios
 yarn test:web
 ```
-
-Visit the official
-[storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Pages%2FArticle&selectedStory=Default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
-to see our available article templates.

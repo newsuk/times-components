@@ -1,0 +1,91 @@
+{
+  "name": "@times-components/article-main-standard",
+  "version": "0.0.1",
+  "description": "Main Standard Article Template",
+  "main": "dist/article-main-standard",
+  "dev": "src/article-main-standard",
+  "scripts": {
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
+    "prepublishOnly": "yarn transpile && yarn bundle",
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "article-main-standard",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@thetimes/jest-lint": "*",
+    "@times-components/eslint-config-thetimes": "0.8.5",
+    "@times-components/jest-configurator": "2.1.14",
+    "@times-components/jest-serializer": "3.1.7",
+    "@times-components/provider": "1.7.1",
+    "@times-components/provider-test-tools": "1.9.1",
+    "@times-components/storybook": "3.1.21",
+    "@times-components/tealium-utils": "0.7.5",
+    "@times-components/test-utils": "2.0.0",
+    "@times-components/webpack-configurator": "2.0.11",
+    "babel-cli": "6.26.0",
+    "eslint": "4.19.1",
+    "jest": "23.3.0",
+    "jest-styled-components": "5.0.1",
+    "mockdate": "2.0.2",
+    "prettier": "1.14.3",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-native": "0.55.4",
+    "react-test-renderer": "16.5.2",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
+  },
+  "dependencies": {
+    "@times-components/ad": "2.1.51",
+    "@times-components/article": "6.1.2",
+    "@times-components/article-byline": "3.0.48",
+    "@times-components/article-error": "0.1.4",
+    "@times-components/article-flag": "2.1.47",
+    "@times-components/article-label": "2.2.20",
+    "@times-components/article-topics": "3.2.26",
+    "@times-components/caption": "2.1.46",
+    "@times-components/context": "0.5.4",
+    "@times-components/date-publication": "0.19.36",
+    "@times-components/image": "4.3.2",
+    "@times-components/styleguide": "3.7.2",
+    "@times-components/utils": "4.0.9",
+    "@times-components/video": "4.1.10",
+    "@times-components/video-label": "2.1.47",
+    "lodash.invert": "4.3.0",
+    "prop-types": "15.6.2",
+    "styled-components": "3.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.5",
+    "react-dom": ">=16.5",
+    "react-native": ">=0.55",
+    "react-native-web": "0.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

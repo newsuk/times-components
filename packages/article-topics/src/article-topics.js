@@ -1,13 +1,13 @@
 import React from "react";
-import { View, ViewPropTypes } from "react-native";
-import PropTypes from "prop-types";
+import { View } from "react-native";
 import Context from "@times-components/context";
 import styleguide from "@times-components/styleguide";
 import ArticleTopic from "./article-topic";
 import styles from "./styles";
-import propTypes from "./article-topic-prop-types";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+import {
+  topicsDefaultProps,
+  topicsPropTypes
+} from "./article-topics-prop-types";
 
 const renderArticleTopics = (topics, onPress, fontStyle) =>
   topics.map(({ name, slug }) => (
@@ -42,19 +42,7 @@ const ArticleTopics = ({ onPress, style, topics }) => (
   </Context.Consumer>
 );
 
-ArticleTopics.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  style: ViewPropTypesStyle,
-  topics: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: propTypes.name.isRequired,
-      slug: propTypes.slug.isRequired
-    }).isRequired
-  ).isRequired
-};
-
-ArticleTopics.defaultProps = {
-  style: null
-};
+ArticleTopics.propTypes = topicsPropTypes;
+ArticleTopics.defaultProps = topicsDefaultProps;
 
 export default ArticleTopics;
