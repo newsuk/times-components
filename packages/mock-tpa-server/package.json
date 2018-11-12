@@ -42,5 +42,8 @@
     "@times-components/schema": "0.1.11",
     "apollo-server": "2.1.0",
     "graphql": "0.13.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
