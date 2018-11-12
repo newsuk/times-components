@@ -6,7 +6,7 @@ export default addTypenameToDocument(gql`
     article(id: $id) {
       commentCount
       commentsEnabled
-      content
+      content: paywalledContent
       flags
       keywords
       leadAsset {
