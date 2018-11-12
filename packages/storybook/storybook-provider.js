@@ -7,7 +7,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { fragmentMatcher } from "@times-components/schema";
 import { text } from "@storybook/addon-knobs/react";
 
-const StorybookProvider = ({ children }) => {
+const StorybookProvider = props => {
   const nbsp = "\u00A0";
   const uri = text(
     `GraphQL${nbsp}Endpoint`,
@@ -29,7 +29,7 @@ const StorybookProvider = ({ children }) => {
 
   return (
     <ApolloProvider client={client} debounceTimeMs={250}>
-      {children}
+      {props.children}
     </ApolloProvider>
   );
 };
