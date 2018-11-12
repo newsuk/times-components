@@ -137,147 +137,152 @@ export default () => {
           name: "link"
         },
         {
-          attributes: {},
           children: [
+            {
+              attributes: {},
+              children: [
+                {
+                  attributes: {
+                    value: "Some content"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
+            },
             {
               attributes: {
-                value: "Some content"
+                caption: {
+                  name: "AName",
+                  twitter: "@AName"
+                },
+                content: "A pull quote"
               },
               children: [],
-              name: "text"
-            }
-          ],
-          name: "paragraph"
-        },
-        {
-          attributes: {
-            caption: {
-              name: "AName",
-              twitter: "@AName"
+              name: "pullQuote"
             },
-            content: "A pull quote"
-          },
-          children: [],
-          name: "pullQuote"
-        },
-        {
-          attributes: {
-            brightcoveAccountId: "57838016001",
-            brightcovePolicyKey: "1.2.3.4",
-            brightcoveVideoId: "4084164751001",
-            caption: "This is video caption",
-            display: "primary",
-            paidOnly: "false",
-            posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            posterImageUrl: "https://image.io",
-            skySports: false
-          },
-          children: [],
-          name: "video"
-        },
-        {
-          attributes: {
-            title: "Example title"
-          },
-          children: [
             {
+              attributes: {
+                brightcoveAccountId: "57838016001",
+                brightcovePolicyKey: "1.2.3.4",
+                brightcoveVideoId: "4084164751001",
+                caption: "This is video caption",
+                display: "primary",
+                paidOnly: "false",
+                posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+                posterImageUrl: "https://image.io",
+                skySports: false
+              },
+              children: [],
+              name: "video"
+            },
+            {
+              attributes: {
+                title: "Example title"
+              },
               children: [
                 {
                   children: [
                     {
-                      attributes: {
-                        value: "Example bullet text"
-                      },
-                      children: [],
-                      name: "text"
-                    }
-                  ],
-                  name: "listElement"
-                },
-                {
-                  children: [
-                    {
-                      attributes: {
-                        value: "An example "
-                      },
-                      children: [],
-                      name: "text"
-                    },
-                    {
-                      attributes: {
-                        href: "https://example.io",
-                        target: "_blank",
-                        type: "topic"
-                      },
                       children: [
                         {
                           attributes: {
-                            value: "link"
+                            value: "Example bullet text"
                           },
                           children: [],
                           name: "text"
                         }
                       ],
-                      name: "link"
-                    }
-                  ],
-                  name: "listElement"
-                },
-                {
-                  children: [
-                    {
-                      attributes: {
-                        value: "More example text."
-                      },
-                      children: [],
-                      name: "text"
-                    }
-                  ],
-                  name: "listElement"
-                },
-                {
-                  children: [
-                    {
-                      attributes: {
-                        value: "Example text "
-                      },
-                      children: [],
-                      name: "text"
+                      name: "listElement"
                     },
                     {
-                      attributes: {},
                       children: [
                         {
                           attributes: {
-                            value: "this is bold "
+                            value: "An example "
+                          },
+                          children: [],
+                          name: "text"
+                        },
+                        {
+                          attributes: {
+                            href: "https://example.io",
+                            target: "_blank",
+                            type: "topic"
+                          },
+                          children: [
+                            {
+                              attributes: {
+                                value: "link"
+                              },
+                              children: [],
+                              name: "text"
+                            }
+                          ],
+                          name: "link"
+                        }
+                      ],
+                      name: "listElement"
+                    },
+                    {
+                      children: [
+                        {
+                          attributes: {
+                            value: "More example text."
                           },
                           children: [],
                           name: "text"
                         }
                       ],
-                      name: "bold"
+                      name: "listElement"
                     },
                     {
-                      attributes: {},
                       children: [
                         {
                           attributes: {
-                            value: "this is in italics."
+                            value: "Example text "
                           },
                           children: [],
                           name: "text"
+                        },
+                        {
+                          attributes: {},
+                          children: [
+                            {
+                              attributes: {
+                                value: "this is bold "
+                              },
+                              children: [],
+                              name: "text"
+                            }
+                          ],
+                          name: "bold"
+                        },
+                        {
+                          attributes: {},
+                          children: [
+                            {
+                              attributes: {
+                                value: "this is in italics."
+                              },
+                              children: [],
+                              name: "text"
+                            }
+                          ],
+                          name: "italic"
                         }
                       ],
-                      name: "italic"
+                      name: "listElement"
                     }
                   ],
-                  name: "listElement"
+                  name: "unorderedList"
                 }
               ],
-              name: "unorderedList"
+              name: "keyFacts"
             }
           ],
-          name: "keyFacts"
+          name: "paywall"
         }
       ]
     });

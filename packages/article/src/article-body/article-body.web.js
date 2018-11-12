@@ -125,6 +125,15 @@ const renderers = ({ observed, registerNode }) => ({
       element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
     };
   },
+  paywall(key, attributes, children) {
+    return {
+      element: (
+        <div className="paywall" key={key}>
+          {children}
+        </div>
+      )
+    };
+  },
   pullQuote(
     key,
     {
