@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.2.1"></a>
+## [6.2.1](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.0...@times-components/article@6.2.1) (2018-11-12)
+
+
+### Bug Fixes
+
+* article analytics props ([#1477](https://github.com/newsuk/times-components/issues/1477)) ([e63bc2a](https://github.com/newsuk/times-components/commit/e63bc2a))
+
+
+
+
+
 <a name="6.2.0"></a>
 # [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.1.3...@times-components/article@6.2.0) (2018-11-12)
 

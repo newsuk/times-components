@@ -1,6 +1,6 @@
 {
   "name": "@times-components/eslint-config-thetimes",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "The eslint config for Times Components",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,8 @@
   "dependencies": {
     "babel-eslint": "10.0.1",
     "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-flowtype": "3.2.0",
     "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-flowtype": "3.2.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-react": "7.11.1",
