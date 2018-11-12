@@ -21,17 +21,17 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "babel-eslint": "8.2.1",
+    "babel-eslint": "10.0.1",
     "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-flowtype": "2.41.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
+    "eslint-plugin-flowtype": "3.2.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
     "prettier": "1.14.3"
   },
   "peerDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "5.9.0"
   },
   "publishConfig": {
     "access": "public"

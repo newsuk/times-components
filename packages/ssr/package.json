@@ -41,7 +41,7 @@
     "@times-components/mock-tpa-server": "0.1.2",
     "cypress": "3.1.0",
     "depcheck": "0.6.9",
-    "eslint": "4.19.1",
+    "eslint": "5.9.0",
     "eslint-plugin-cypress": "2.0.1",
     "express": "4.16.3",
     "graphql": "0.13.2",
