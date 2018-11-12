@@ -46,6 +46,16 @@ export default Component => {
       }
     },
     {
+      name: "with multiple authors separated by a pipe",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.multipleAuthorsPipeSeparated
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "with multiple authors separated by text with commas",
       test: () => {
         const testInstance = renderArticleByline({

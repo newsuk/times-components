@@ -81,7 +81,7 @@ exports[`4. with a a very long byline 1`] = `
       }
     }
   >
-    , Environment Editor, 
+    , Environment Editor | 
   </Text>
   <Text
     style={
@@ -107,7 +107,7 @@ exports[`4. with a a very long byline 1`] = `
       }
     }
   >
-    , Environment Editor, 
+    , Environment Editor | 
   </Text>
   <Text
     style={
