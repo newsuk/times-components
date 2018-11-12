@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.1.3...@times-components/article@6.2.0) (2018-11-12)
+
+
+### Features
+
+* add flexible sampling for web ([#1473](https://github.com/newsuk/times-components/issues/1473)) ([78ffd58](https://github.com/newsuk/times-components/commit/78ffd58))
+
+
+
+
+
 <a name="6.1.3"></a>
 ## [6.1.3](https://github.com/newsuk/times-components/compare/@times-components/article@6.1.2...@times-components/article@6.1.3) (2018-11-12)
 
