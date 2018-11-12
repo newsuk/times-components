@@ -374,55 +374,59 @@ exports[`full article with style 1`] = `
       <Link>
         Some Link
       </Link>
-      <p
-        className="c3 IS4"
-      >
-        Some content
-      </p>
       <div
-        className="c9 S1"
+        className="paywall"
       >
-        <div
-          className="c10 S1"
+        <p
+          className="c3 IS4"
         >
-          <PullQuote />
-        </div>
-      </div>
-      <div
-        className="c6 S1"
-      >
-        <figure
-          className="IS10"
+          Some content
+        </p>
+        <div
+          className="c9 S1"
         >
           <div
-            className="IS9 S2"
+            className="c10 S1"
+          >
+            <PullQuote />
+          </div>
+        </div>
+        <div
+          className="c6 S1"
+        >
+          <figure
+            className="IS10"
           >
             <div
-              className="IS8 S1"
+              className="IS9 S2"
             >
               <div
-                className="IS7"
+                className="IS8 S1"
               >
                 <div
-                  className="IS6"
+                  className="IS7"
                 >
-                  <video
-                    className="video-js IS5"
-                  />
+                  <div
+                    className="IS6"
+                  >
+                    <video
+                      className="video-js IS5"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <figcaption>
-            <div
-              className="c11 S1"
-            >
-              <Caption />
-            </div>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <div
+                className="c11 S1"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <KeyFacts />
       </div>
-      <KeyFacts />
       <div
         className="c12 S1"
       >
