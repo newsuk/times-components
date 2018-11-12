@@ -40,7 +40,7 @@
     "@times-components/jest-serializer": "3.1.7",
     "@times-components/storybook": "3.1.21",
     "babel-cli": "6.26.0",
-    "eslint": "4.19.1",
+    "eslint": "5.9.0",
     "jest": "23.3.0",
     "prettier": "1.14.3",
     "react": "16.5.2",

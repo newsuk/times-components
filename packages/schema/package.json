@@ -26,7 +26,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.5",
     "@times-components/test-utils": "2.0.0",
-    "eslint": "4.19.1",
+    "eslint": "5.9.0",
     "prettier": "1.14.3",
     "rimraf": "2.6.1"
   },
