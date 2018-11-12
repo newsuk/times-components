@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "3.2.26",
+  "version": "3.2.27",
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "2.1.47",
+  "version": "2.1.48",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -63,7 +63,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.2.36",
+    "@times-components/icons": "2.2.37",
     "@times-components/styleguide": "3.7.2",
     "prop-types": "15.6.2"
   },
