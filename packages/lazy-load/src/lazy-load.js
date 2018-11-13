@@ -60,15 +60,9 @@ class LazyLoad extends Component {
     const { nodes } = this.state;
 
     entries.forEach(({ target, intersectionRatio }) => {
-      if (
-        intersectionRatio >= threshold &&
-        !nodes.get(target.id)
-      ) {
+      if (intersectionRatio >= threshold && !nodes.get(target.id)) {
         this.pending.add(target);
-      } else if (
-        intersectionRatio < threshold &&
-        this.pending.has(target)
-      ) {
+      } else if (intersectionRatio < threshold && this.pending.has(target)) {
         this.pending.delete(target);
       }
     });

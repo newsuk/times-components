@@ -44,13 +44,16 @@ function withNativeCommand(WrappedComponent) {
     }
 
     onChange(evt) {
-      if (evt.isFullscreen !== this.state.isFullscreen) {
+      const { onEnterFullscreen, onExitFullscreen } = this.props;
+      const { isFullscreen } = this.state;
+
+      if (evt.isFullscreen !== isFullscreen) {
         this.setState({ isFullscreen: evt.isFullscreen });
 
         if (evt.isFullscreen) {
-          this.props.onEnterFullscreen();
+          onEnterFullscreen();
         } else {
-          this.props.onExitFullscreen();
+          onExitFullscreen();
         }
       }
     }
@@ -64,11 +67,12 @@ function withNativeCommand(WrappedComponent) {
     }
 
     render() {
+      const { isFullscreen } = this.state;
       const androidSpecificProps = {
         onChange: this.onChange
       };
 
-      if (this.state.isFullscreen) {
+      if (isFullscreen) {
         androidSpecificProps.width = "100%";
         androidSpecificProps.height = "100%";
         androidSpecificProps.position = "absolute";

@@ -31,6 +31,7 @@ class BrightcoveVideo extends Component {
   componentDidMount() {
     BrightcoveVideo.activePlayers.push(this);
   }
+
   // specifically check if is launched has changed and block update if it has not;
   // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {

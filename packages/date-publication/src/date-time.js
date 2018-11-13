@@ -12,15 +12,18 @@ class DatePublication extends Component {
     };
     this.updateTimezone = this.updateTimezone.bind(this);
   }
+
   componentDidMount() {
     this.updateTimezone();
   }
+
   updateTimezone() {
     const dateUTC = getUTCTime(this.props.date);
     if (!isLondonTimezone()) {
       this.setState({ tz: isBST(dateUTC) ? " BST" : " GMT" });
     }
   }
+
   render() {
     const { children, date, showDay } = this.props;
     const datetimeUTC = getUTCTime(date);

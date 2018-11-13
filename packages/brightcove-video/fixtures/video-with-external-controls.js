@@ -7,15 +7,17 @@ import BrightcoveVideo from "../src/brightcove-video";
 
 class VideoWithExternalControls extends Component {
   render() {
+    const { accountId, policyKey, videoId } = this.props;
+
     return (
       <View>
         <BrightcoveVideo
-          accountId={this.props.accountId}
-          policyKey={this.props.policyKey}
+          accountId={accountId}
+          policyKey={policyKey}
           ref={ref => {
             this.bcVideo = ref;
           }}
-          videoId={this.props.videoId}
+          videoId={videoId}
         />
         <Button
           buttonText="play"
