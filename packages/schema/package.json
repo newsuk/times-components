@@ -2,6 +2,9 @@
   "name": "@times-components/schema",
   "version": "0.1.12",
   "main": "fragment-matcher.js",
+  "bin": {
+    "getSchema": "./index.js"
+  },
   "scripts": {
     "bundle": "cp fragment-matcher.js rnw.js",
     "fmt": "prettier --write '**/*.*'",
