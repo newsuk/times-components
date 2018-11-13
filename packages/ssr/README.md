@@ -99,8 +99,7 @@ Currently there is one simple test that is run separately in CI with no coverage
 The tests can be developed as follows:
 
 ```bash
-yarn start:tpamock
-yarn start:test
+yarn start:testservers
 npx cypress open
 ```
 

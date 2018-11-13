@@ -6,18 +6,16 @@
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
     "bundle:profile": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js --profile --json > dist/stats.json",
-    "cleanup:servers": "pkill node",
     "cleanup-dist": "rm -rf dist",
     "depcheck": "depcheck --ignores='cypress, depcheck,eslint,graphql,prettier,react-art,wait-on,webpack*' --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn bundle:prod",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "run:test": "yarn start:tpamock & yarn start:test & cypress run",
     "start": "webpack --config=src/standalone-renderer/webpack.config.js && node src/standalone-renderer/app.js",
-    "start:test": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on http://localhost:3000",
-    "start:tpamock": "node ./mock-server & wait-on http://localhost:4000",
-    "test:integration": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn bundle:dev && yarn run:test && yarn cleanup:servers"
+    "start:testservers": "node ./mock-server & wait-on tcp:4000 && GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on tcp:3000",
+    "stop:testservers": "kill $(lsof -t -i:3000,4000)",
+    "test:integration": "yarn bundle:dev && yarn start:testservers; cypress run; yarn stop:testservers"
   },
   "repository": {
     "type": "git",

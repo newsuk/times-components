@@ -128,12 +128,14 @@ server.get("/topic/:slug", (request, response) => {
     );
 });
 
+const serviceName = "Stand-alone renderer server";
+
 const App = server.listen(port, () =>
-  console.log(`Serving at http://localhost:${port}`)
+  console.log(`🚀  ${serviceName} ready at http://localhost:${port}`)
 );
 
 process.on("SIGTERM", () => {
   App.close(() => {
-    process.exit(0);
+    console.log(`${serviceName} closed`);
   });
 });
