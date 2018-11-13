@@ -1,6 +1,8 @@
 # FixtureGenerator
 
-<!-- Add the description of the package here. -->
+This package is meant to create a single testable location for our fixtures. Enabling us to generate fixture data using schema introspection and graphql gen that is typesafe and reliable.
+
+The aim for this package is to give us a single location for integration tests, showcase and UI tests all to use.
 
 ## Contributing
 
@@ -13,33 +15,16 @@ Please see our main [README.md](../README.md) to get the project running locally
 
 ## Development
 
-The code can be formatted and linted in accordance with the agreed standards.
+This project is in typescript so you've got that do deal with. The reason for which is so we can enforce the types that we generate from graphql gen.
+
+In order to build the project just run:
 
 ```
-yarn fmt
-yarn lint
+yarn build
 ```
+
+You do not need to have typescript on your machine as we install the compiler as a dev dependency.
 
 ## Testing
 
-Testing can be done on each platform individually
 
-```
-yarn test:android
-yarn test:ios
-yarn test:web
-```
-
-Or the tests for all platforms can be run
-
-```
-yarn test:all
-```
-
-Visit the official
-
-<!-- Add the storybook link here. -->
-
-## Future
-
-<!-- Add details of future development here. -->
