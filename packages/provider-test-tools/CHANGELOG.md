@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.9.5"></a>
+## [1.9.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.4...@times-components/provider-test-tools@1.9.5) (2018-11-13)
+
+
+### Bug Fixes
+
+* missing paywalledContent field in fixture data ([#1482](https://github.com/newsuk/times-components/issues/1482)) ([47087c6](https://github.com/newsuk/times-components/commit/47087c6))
+
+
+
+
+
 <a name="1.9.4"></a>
 ## [1.9.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.3...@times-components/provider-test-tools@1.9.4) (2018-11-13)
 
