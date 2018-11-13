@@ -8,7 +8,9 @@ class Inner extends Component {
   }
 
   componentDidUpdate({ debouncedProps }) {
-    if (debouncedProps !== this.props.debouncedProps) {
+    const { debouncedProps: propsDebouncedProps } = this.props;
+
+    if (debouncedProps !== propsDebouncedProps) {
       this.numberOfDebouncedPropsUpdates += 1;
     }
   }

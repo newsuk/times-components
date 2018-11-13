@@ -41,9 +41,10 @@ class SeenText extends Component {
   }
 
   render() {
+    const { showVisibleText } = this.state;
     return (
       <span>
-        {this.state.showVisibleText ? "You've seen me" : "I am hiding"}
+        {showVisibleText ? "You've seen me" : "I am hiding"}
       </span>
     );
   }
