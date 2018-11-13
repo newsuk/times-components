@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.2"></a>
+## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.8.1...@times-components/provider-queries@1.8.2) (2018-11-13)
+
+
+### Bug Fixes
+
+* add id to images inside author and topic articles queries ([#1479](https://github.com/newsuk/times-components/issues/1479)) ([e8c8858](https://github.com/newsuk/times-components/commit/e8c8858))
+
+
+
+
+
 <a name="1.8.1"></a>
 ## [1.8.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.8.0...@times-components/provider-queries@1.8.1) (2018-11-12)
 

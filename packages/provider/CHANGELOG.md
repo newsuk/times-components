@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.3...@times-components/provider@1.7.4) (2018-11-13)
+
+
+### Bug Fixes
+
+* add id to images inside author and topic articles queries ([#1479](https://github.com/newsuk/times-components/issues/1479)) ([e8c8858](https://github.com/newsuk/times-components/commit/e8c8858))
+
+
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.2...@times-components/provider@1.7.3) (2018-11-12)
 

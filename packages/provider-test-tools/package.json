@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -67,7 +67,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/provider-queries": "1.8.1",
+    "@times-components/provider-queries": "1.8.2",
     "@times-components/schema": "0.1.12",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
