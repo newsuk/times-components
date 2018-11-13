@@ -39,7 +39,9 @@ export default function providerTester(
     }
 
     render() {
-      return this.props.children(this.state);
+      const { children } = this.props;
+
+      return children(this.state);
     }
   }
 

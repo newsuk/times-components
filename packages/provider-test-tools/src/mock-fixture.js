@@ -44,13 +44,16 @@ class MockFixture extends Component {
   }
 
   componentDidMount() {
-    schemaToMocks(this.props.params).then(mocks => this.setState({ mocks }));
+    const { params } = this.props;
+
+    schemaToMocks(params).then(mocks => this.setState({ mocks }));
   }
 
   render() {
-    return this.state.mocks.length === 0
-      ? null
-      : this.props.render(this.state.mocks);
+    const { render } = this.props;
+    const { mocks } = this.state;
+
+    return mocks.length === 0 ? null : render(mocks);
   }
 }
 

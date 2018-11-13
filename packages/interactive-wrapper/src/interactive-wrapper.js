@@ -69,8 +69,11 @@ class InteractiveWrapper extends Component {
   }
 
   render() {
+    const { id } = this.props;
+    const { height } = this.state;
+
     return (
-      <View style={{ height: this.state.height }}>
+      <View style={{ height }}>
         <WebView
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
@@ -80,10 +83,10 @@ class InteractiveWrapper extends Component {
           }}
           source={{
             uri: `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${
-              this.props.id
+              id
             }`
           }}
-          style={{ height: this.state.height }}
+          style={{ height }}
           {...InteractiveWrapper.postMessageBugWorkaround()}
         />
       </View>
