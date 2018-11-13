@@ -61,7 +61,7 @@ class BrightcoveVideo extends Component {
   }
 
   onError(evt) {
-    const{ onError } = this.props;
+    const { onError } = this.props;
 
     onError(evt.nativeEvent);
   }
@@ -78,7 +78,14 @@ class BrightcoveVideo extends Component {
       progress: evt.nativeEvent.progress
     };
 
-    const { onChange, onDuration, onFinish, onPause, onPlay, onProgress } = this.props;
+    const {
+      onChange,
+      onDuration,
+      onFinish,
+      onPause,
+      onPlay,
+      onProgress
+    } = this.props;
     const { duration, isFinished, isPlaying, progress } = this.state;
 
     const playerStatusChanged = newState.isPlaying !== isPlaying;
@@ -133,10 +140,10 @@ class BrightcoveVideo extends Component {
 
   play() {
     const { runNativeCommand } = this.props;
-    
+
     runNativeCommand("play", []);
   }
-  
+
   pause() {
     const { runNativeCommand } = this.props;
 
@@ -144,7 +151,17 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    const { accountId, autoplay, height, hideFullScreenButton, policyKey, position, videoId, width, zIndex } = this.props;
+    const {
+      accountId,
+      autoplay,
+      height,
+      hideFullScreenButton,
+      policyKey,
+      position,
+      videoId,
+      width,
+      zIndex
+    } = this.props;
     const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (

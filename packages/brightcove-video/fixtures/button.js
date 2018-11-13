@@ -13,9 +13,7 @@ const Button = ({ buttonText, onPress, testID }) => (
     }}
     testID={testID}
   >
-    <Text style={{ color: "white", textAlign: "center" }}>
-      {buttonText}
-    </Text>
+    <Text style={{ color: "white", textAlign: "center" }}>{buttonText}</Text>
   </TouchableOpacity>
 );
 
