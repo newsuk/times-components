@@ -118,7 +118,10 @@ export default ({
             imageIndex += 1;
             return {
               __typename: "Image",
-              title: `Some title ${imageIndex}`
+              title: `Some title ${imageIndex}`,
+              id: `e98c2${imageIndex
+                .toString()
+                .padStart(2)}c-cb16-11e7-b529-95e3fc05f40f`,
             };
           },
           Media: () => ({
