@@ -10,7 +10,8 @@ export default (uriString, key, value) => {
   }
 
   if (typeof URL === "undefined") {
-    return `${uriString}&${key}=${value}`;
+    const separator = uriString.includes("?") ? "&" : "?";
+    return `${uriString}${separator}${key}=${value}`;
   }
 
   let url;
