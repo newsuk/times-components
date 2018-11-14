@@ -11,8 +11,8 @@ const HeaderStandfirst = ({ standfirst }) => {
     <StandfirstContainer
         accessibilityRole="heading"
         aria-level="2"
-        style={styles.standFirst}
         testID="standfirst"
+        style={styles.standFirst}
       >
         {standfirst}
     </StandfirstContainer>

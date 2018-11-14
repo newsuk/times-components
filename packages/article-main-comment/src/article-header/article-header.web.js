@@ -6,9 +6,9 @@ import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
 import Image from "@times-components/image";
 
-import HeaderLabel from "../article-header-label/article-header-label";
-import HeaderFlags from "./article-header-flags";
-import HeaderStandfirst from "./article-header-standfirst";
+import HeaderLabel from "../article-label/article-label";
+import HeaderFlags from "../article-flags/article-flags";
+import HeaderStandfirst from "../article-standfirst/article-standfirst";
 import styles from "../styles/article-header";
 
 import { AuthorImageContainer, HeaderContainer, HeadlineContainer, Meta, MetaContainer, Seperator } from "../styles/article-header/responsive";

@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Text, View, ViewPropTypes } from "react-native";
 
-import HeaderLabel from "../article-header-label/article-header-label";
-import HeaderFlags from "./article-header-flags";
-import HeaderStandfirst from "./article-header-standfirst";
+import HeaderLabel from "../article-label/article-label";
+import HeaderFlags from "../article-flags/article-flags";
+import HeaderStandfirst from "../article-standfirst/article-standfirst";
 import styles from "../styles/article-header";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
