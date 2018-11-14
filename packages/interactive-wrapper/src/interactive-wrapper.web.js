@@ -1,3 +1,4 @@
+/* eslint-env browser */
 /* eslint-disable react/forbid-prop-types */
 import React from "react";
 import PropTypes from "prop-types";
@@ -5,12 +6,13 @@ import PropTypes from "prop-types";
 export default class InteractiveWrapper extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.div = React.createRef(null);
+    this.placeholder = React.createRef(null);
   }
 
   componentDidMount() {
-    const div = this.div.current;
-    const parent = div.parentNode;
+    const placeholder = this.placeholder.current;
+    const { parentNode } = placeholder;
+
     const element = document.createElement(this.props.element);
     const link = document.createElement('link');
 
@@ -21,13 +23,14 @@ export default class InteractiveWrapper extends React.PureComponent {
       ([key, value]) => element.setAttribute(key, value)
     );
 
-    parent.appendChild(element);
-    parent.appendChild(link);
-    parent.removeChild(div);
+    parentNode.replaceChild(element, placeholder);
+    parentNode.insertBefore(link, element);
+
+    delete this.placeholder.current;
   }
 
   render() {
-    return <div ref={this.div} />;
+    return <div ref={this.placeholder} />;
   }
 }
 
