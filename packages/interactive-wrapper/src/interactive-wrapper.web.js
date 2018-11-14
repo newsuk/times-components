@@ -19,8 +19,8 @@ export default class InteractiveWrapper extends Component {
     link.setAttribute("href", this.props.source);
     link.setAttribute("rel", "import");
 
-    Object.entries(this.props.attributes).forEach(([key, value]) =>
-      element.setAttribute(key, value)
+    Object.keys(this.props.attributes).forEach(key =>
+      element.setAttribute(key, this.props.attributes[key])
     );
 
     parentNode.replaceChild(element, placeholder);
