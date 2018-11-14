@@ -1,9 +1,9 @@
 /* eslint-env browser */
 /* eslint-disable react/forbid-prop-types */
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-export default class InteractiveWrapper extends React.PureComponent {
+export default class InteractiveWrapper extends Component {
   constructor(props) {
     super(props);
     this.placeholder = React.createRef(null);
@@ -14,13 +14,13 @@ export default class InteractiveWrapper extends React.PureComponent {
     const { parentNode } = placeholder;
 
     const element = document.createElement(this.props.element);
-    const link = document.createElement('link');
+    const link = document.createElement("link");
 
-    link.setAttribute('href', this.props.source);
-    link.setAttribute('rel', 'import');
+    link.setAttribute("href", this.props.source);
+    link.setAttribute("rel", "import");
 
-    Object.entries(this.props.attributes).forEach(
-      ([key, value]) => element.setAttribute(key, value)
+    Object.entries(this.props.attributes).forEach(([key, value]) =>
+      element.setAttribute(key, value)
     );
 
     parentNode.replaceChild(element, placeholder);

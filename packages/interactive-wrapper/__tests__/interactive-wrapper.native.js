@@ -31,7 +31,6 @@ addSerializers(
   )
 );
 
-
 export default () => {
   afterEach(() => {
     jest.resetModules();

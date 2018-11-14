@@ -1,16 +1,13 @@
 /* eslint-env browser */
-import React from 'react';
+import React from "react";
 import {
   addSerializers,
-  enzymeTreeSerializer,
+  enzymeTreeSerializer
 } from "@times-components/jest-serializer";
-import { mount } from 'enzyme';
+import { mount } from "enzyme";
 import InteractiveWrapper from "../../src/interactive-wrapper";
 
-addSerializers(
-  expect,
-  enzymeTreeSerializer()
-);
+addSerializers(expect, enzymeTreeSerializer());
 
 it("renders correctly", () => {
   const props = {
@@ -24,7 +21,7 @@ it("renders correctly", () => {
     source:
       "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
   };
-  const container = document.createElement('div');
+  const container = document.createElement("div");
 
   mount(<InteractiveWrapper {...props} />, { attachTo: container });
   expect(container.innerHTML).toMatchSnapshot();
