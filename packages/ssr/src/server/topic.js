@@ -1,5 +1,6 @@
 const topic = require("../component/topic");
 const runServer = require("../lib/run-server");
+const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
 
 module.exports = (
   { currentPage, topicSlug },
@@ -33,6 +34,7 @@ module.exports = (
     data: {
       debounceTimeMs: 0,
       makeArticleUrl,
+      mapTopicToAdConfig: defaultAdConfig,
       page: currentPage,
       pageSize: 20,
       topicSlug
