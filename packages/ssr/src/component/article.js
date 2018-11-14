@@ -3,7 +3,7 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { ArticleProvider } = require("@times-components/provider/rnw");
-const Article = require("@times-components/article/rnw").default;
+const Article = require("@times-components/article-main-standard/rnw").default;
 const Context = require("@times-components/context/rnw").default;
 const { scales, colours } = require("@times-components/styleguide/rnw");
 
