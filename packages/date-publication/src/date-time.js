@@ -18,7 +18,9 @@ class DatePublication extends Component {
   }
 
   updateTimezone() {
-    const dateUTC = getUTCTime(this.props.date);
+    const { date } = this.props;
+
+    const dateUTC = getUTCTime(date);
     if (!isLondonTimezone()) {
       this.setState({ tz: isBST(dateUTC) ? " BST" : " GMT" });
     }
