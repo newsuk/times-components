@@ -1,453 +1,420 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a full article with an image as the lead asset 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={
-    Object {
-      "__typename": "Article",
-      "byline": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some byline",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "inline",
-        },
-      ],
-      "commentCount": 65,
-      "commentsEnabled": true,
-      "content": Array [
-        Object {
-          "attributes": Object {
-            "caption": "An image caption",
-            "credits": "The image credits",
-            "display": "primary",
-            "ratio": "1500:1000",
-            "url": "https://image.io",
-          },
-          "children": Array [],
-          "name": "image",
-        },
-        Object {
-          "attributes": Object {
-            "href": "https://link.io",
-            "target": "_blank",
-          },
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some Link",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "link",
-        },
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some content",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-        Object {
-          "attributes": Object {
-            "caption": Object {
-              "name": "AName",
-              "twitter": "@AName",
-            },
-            "content": "A pull quote",
-          },
-          "children": Array [],
-          "name": "pullQuote",
-        },
-        Object {
-          "attributes": Object {
-            "brightcoveAccountId": "57838016001",
-            "brightcovePolicyKey": "1.2.3.4",
-            "brightcoveVideoId": "4084164751001",
-            "caption": "This is video caption",
-            "display": "primary",
-            "paidOnly": "false",
-            "posterImageId": "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            "posterImageUrl": "https://image.io",
-            "skySports": false,
-          },
-          "children": Array [],
-          "name": "video",
-        },
-      ],
-      "flags": Array [
-        "NEW",
-      ],
-      "hasVideo": false,
-      "headline": "Some Headline",
-      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-      "keywords": Array [
-        "Supplement",
-        "In",
-        "Depth",
-        "Template",
-        "Style",
-      ],
-      "label": "Some Label",
-      "leadAsset": Object {
-        "__typename": "Image",
-        "caption": "Some Caption",
-        "credits": "Some Credits",
-        "crop11": Object {
-          "__typename": "Crop",
-          "ratio": "1:1",
-          "url": "https://crop11.io",
-        },
-        "crop1251": Object {
-          "__typename": "Crop",
-          "ratio": "1.25:1",
-          "url": "https://crop1251.io",
-        },
-        "crop169": Object {
-          "__typename": "Crop",
-          "ratio": "16:9",
-          "url": "https://crop169.io",
-        },
-        "crop23": Object {
-          "__typename": "Crop",
-          "ratio": "2:3",
-          "url": "https://crop23.io",
-        },
-        "crop32": Object {
-          "__typename": "Crop",
-          "ratio": "3:2",
-          "url": "https://crop32.io",
-        },
-        "crop45": Object {
-          "__typename": "Crop",
-          "ratio": "4:5",
-          "url": "https://crop45.io",
-        },
-        "id": "id-123",
-        "title": "Some Title",
-      },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-13T18:54:58.000Z",
-      "relatedArticleSlice": Object {
-        "__typename": "StandardSlice",
-        "items": Array [
-          Object {
-            "article": Object {
-              "__typename": "Article",
-              "byline": Array [],
-              "hasVideo": false,
-              "headline": "RA Headline",
-              "id": "ra-1",
-              "label": "RA Label",
-              "leadAsset": Object {
-                "__typename": "Image",
-                "crop169": Object {
-                  "__typename": "Crop",
-                  "url": "https://racrop169.io",
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            SOME LABEL
+          </div>
+        </div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+        <h2
+          aria-level="2"
+          role="heading"
+        >
+          Some Standfirst
+        </h2>
+        <div>
+          <div>
+            <NewArticleFlag />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Some byline",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
+              }
+              color="#333333"
+            />
+          </span>
+        </div>
+        <div>
+          <span>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </span>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
                 },
-                "crop32": Object {
-                  "__typename": "Crop",
-                  "url": "https://racrop32.io",
+              ]
+            }
+          />
+        </nav>
+      </div>
+    </div>
+    <div>
+      <div>
+        <figure>
+          <div>
+            <div>
+              <Image
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
+            </div>
+          </div>
+          <div>
+            <figcaption>
+              <Caption
+                credits="Some Credits"
+                text="Some Caption"
+              />
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div>
+      <div
+        id="0"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "An image caption",
+                "credits": "The image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "primary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io",
+              }
+            }
+          />
+        </div>
+      </div>
+      <Link
+        target="_blank"
+        url="https://link.io"
+      >
+        Some Link
+      </Link>
+      <p>
+        Some content
+      </p>
+      <div>
+        <div>
+          <PullQuote
+            caption="AName"
+            content="A pull quote"
+            twitter="@AName"
+          />
+        </div>
+      </div>
+      <div>
+        <figure>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <video
+                    controls={true}
+                    data-account="57838016001"
+                    data-application-id={true}
+                    data-embed="default"
+                    data-player="default"
+                    data-video-id="4084164751001"
+                    id="4084164751001-57838016001-1"
+                    poster="https://image.io"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div>
+              <Caption
+                text="This is video caption"
+              />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
                 },
-                "title": "RA Title",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-23T19:39:39.000Z",
-              "shortHeadline": "Headline",
-              "shortIdentifier": "2k629tpvh",
-              "slug": "this-is-slug",
-              "summary105": Array [],
-              "summary125": Array [],
-              "summary145": Array [],
-              "summary160": Array [],
-              "summary175": Array [],
-              "summary225": Array [],
-              "url": "https://ra.io",
-            },
-          },
-        ],
-      },
-      "section": "Some Section",
-      "shortHeadline": "Some Short Headline",
-      "shortIdentifier": "2k629tpvh",
-      "slug": "this-is-slug",
-      "standfirst": "Some Standfirst",
-      "topics": Array [
-        Object {
-          "name": "Topic",
-          "slug": "topic",
-        },
-      ],
-      "url": "https://url.io",
-    }
-  }
-/>
+              ]
+            }
+          />
+        </nav>
+      </div>
+      <aside
+        id="related-articles"
+      >
+        <RelatedArticles
+          isVisible={false}
+          slice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "byline": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+        />
+      </aside>
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
 `;
 
 exports[`2. an article with a video as the lead asset 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={
-    Object {
-      "__typename": "Article",
-      "commentCount": 65,
-      "commentsEnabled": true,
-      "content": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some content",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "hasVideo": true,
-      "headline": "Some Headline",
-      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-      "keywords": Array [
-        "Supplement",
-        "In",
-        "Depth",
-        "Template",
-        "Style",
-      ],
-      "leadAsset": Object {
-        "__typename": "Video",
-        "brightcoveAccountId": "5436121857001",
-        "brightcovePolicyKey": "1.2.3.4",
-        "brightcoveVideoId": "5831024132001",
-        "caption": "This is video caption",
-        "paidOnly": "false",
-        "posterImage": Object {
-          "__typename": "Image",
-          "caption": "CCTV captures moment of the explosion",
-          "credits": "",
-          "crop169": Object {
-            "__typename": "Crop",
-            "ratio": "16:9",
-            "url": "https://video169.io",
-          },
-          "crop32": Object {
-            "__typename": "Crop",
-            "ratio": "3:2",
-            "url": "https://video32.io",
-          },
-          "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
-          "title": "",
-        },
-      },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-13T18:54:58.000Z",
-      "section": "Some Section",
-      "shortHeadline": "Some Short Headline",
-      "shortIdentifier": "2k629tpvh",
-      "slug": "this-is-slug",
-      "url": "https://url.io",
-    }
-  }
-/>
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <VideoLabel
+            color="#333333"
+            title={null}
+          />
+        </div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <figure>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <video
+                    controls={true}
+                    data-account="5436121857001"
+                    data-application-id={true}
+                    data-embed="default"
+                    data-player="default"
+                    data-video-id="5831024132001"
+                    id="5831024132001-5436121857001-2"
+                    poster="https://video169.io"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <figcaption>
+              <Caption
+                text="This is video caption"
+              />
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div>
+      <p>
+        Some content
+      </p>
+      <aside
+        id="related-articles"
+      />
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
 `;
 
 exports[`3. an article with no lead asset 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={
-    Object {
-      "__typename": "Article",
-      "commentCount": 65,
-      "commentsEnabled": true,
-      "content": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some content",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "headline": "Some Headline",
-      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-      "keywords": Array [
-        "Supplement",
-        "In",
-        "Depth",
-        "Template",
-        "Style",
-      ],
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-13T18:54:58.000Z",
-      "section": "Some Section",
-      "shortHeadline": "Some Short Headline",
-      "shortIdentifier": "2k629tpvh",
-      "slug": "this-is-slug",
-      "url": "https://url.io",
-    }
-  }
-/>
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div />
+    <div>
+      <p>
+        Some content
+      </p>
+      <aside
+        id="related-articles"
+      />
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
 `;

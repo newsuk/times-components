@@ -3,173 +3,123 @@
 exports[`1. an error 1`] = `null`;
 
 exports[`2. an article with no headline falls back to use shortheadline 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={
-    Object {
-      "__typename": "Article",
-      "commentCount": 65,
-      "commentsEnabled": true,
-      "content": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Some content",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "headline": "",
-      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-      "keywords": Array [
-        "Supplement",
-        "In",
-        "Depth",
-        "Template",
-        "Style",
-      ],
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-13T18:54:58.000Z",
-      "section": "Some Section",
-      "shortHeadline": "Some Short Headline",
-      "shortIdentifier": "2k629tpvh",
-      "slug": "this-is-slug",
-      "url": "https://url.io",
-    }
-  }
-/>
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Short Headline
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div />
+    <div>
+      <p>
+        Some content
+      </p>
+      <aside
+        id="related-articles"
+      />
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
 `;
 
 exports[`3. an article with ads 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={
-    Object {
-      "__typename": "Article",
-      "commentCount": 65,
-      "commentsEnabled": true,
-      "content": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [],
-          "name": "ad",
-        },
-      ],
-      "headline": "Some Headline",
-      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-      "keywords": Array [
-        "Supplement",
-        "In",
-        "Depth",
-        "Template",
-        "Style",
-      ],
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-13T18:54:58.000Z",
-      "section": "Some Section",
-      "shortHeadline": "Some Short Headline",
-      "shortIdentifier": "2k629tpvh",
-      "slug": "this-is-slug",
-      "url": "https://url.io",
-    }
-  }
-/>
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div />
+    <div>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="inline-ad"
+      />
+      <aside
+        id="related-articles"
+      />
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
 `;

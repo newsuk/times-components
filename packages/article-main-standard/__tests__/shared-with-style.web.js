@@ -12,7 +12,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import Article from "../src/article-main-standard";
+import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
@@ -149,7 +149,7 @@ export default () => {
     });
 
     const output = TestRenderer.create(
-      <Article
+      <ArticleMainStandard
         {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
