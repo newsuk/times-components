@@ -36,10 +36,10 @@ const ArticleBase = ({
     isLoading || error
       ? {}
       : adTargetConfig({
-        adTestMode,
-        article,
-        sectionName: pageSection || articleSection || ""
-      });
+          adTestMode,
+          article,
+          sectionName: pageSection || articleSection || ""
+        });
   const theme = {
     scale: scale || defaults.theme.scale,
     sectionColour: colours.section[pageSection || articleSection || "default"]

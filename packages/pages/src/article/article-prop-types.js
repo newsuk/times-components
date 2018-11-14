@@ -18,7 +18,7 @@ export const defaultProps = {
   isLoading: false,
   omitErrors: false,
   referralUrl: null,
-  refetch: () => { },
+  refetch: () => {},
   scale: null,
   sectionName: null,
   showInteractives: false
