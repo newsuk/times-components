@@ -12,7 +12,9 @@ export default Component =>
       publishedTime: get(data, "publishedTime", ""),
       section: pageSection || get(data, "section", ""),
       template: get(data, "template", "Default"),
-      topics: get(data, "topics")
+      topics: get(data, "topics", [])
+        .map(topic => topic.name)
+        .join(",")
     }),
     trackingObjectName: "Article"
   });
