@@ -5,6 +5,7 @@ export const propTypes = {
   error: PropTypes.shape({}),
   isLoading: PropTypes.bool,
   omitErrors: PropTypes.bool,
+  referralUrl: PropTypes.string,
   refetch: PropTypes.func,
   scale: PropTypes.string,
   sectionName: PropTypes.string,
@@ -16,7 +17,8 @@ export const defaultProps = {
   error: null,
   isLoading: false,
   omitErrors: false,
-  refetch: () => {},
+  referralUrl: null,
+  refetch: () => { },
   scale: null,
   sectionName: null,
   showInteractives: false

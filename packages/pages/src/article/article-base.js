@@ -24,6 +24,7 @@ const ArticleBase = ({
   article,
   error,
   isLoading,
+  referralUrl,
   refetch,
   omitErrors,
   scale,
@@ -35,10 +36,10 @@ const ArticleBase = ({
     isLoading || error
       ? {}
       : adTargetConfig({
-          adTestMode,
-          article,
-          sectionName: pageSection || articleSection || ""
-        });
+        adTestMode,
+        article,
+        sectionName: pageSection || articleSection || ""
+      });
   const theme = {
     scale: scale || defaults.theme.scale,
     sectionColour: colours.section[pageSection || articleSection || "default"]
@@ -77,6 +78,7 @@ const ArticleBase = ({
         onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
         onVideoPress={(event, info) => onVideoPress(info)}
         pageSection={pageSection}
+        referralUrl={referralUrl}
         refetch={refetch}
       />
     </Context.Provider>
