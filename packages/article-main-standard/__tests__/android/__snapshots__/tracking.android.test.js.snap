@@ -13,33 +13,7 @@ Object {
     "publishedTime": "2015-03-13T18:54:58.000Z",
     "section": "news",
     "template": "Default",
-    "topics": Array [
-      Object {
-        "__typename": "Topic",
-        "name": "Football",
-        "slug": "football",
-      },
-      Object {
-        "__typename": "Topic",
-        "name": "Manchester United FC",
-        "slug": "manchester-united",
-      },
-      Object {
-        "__typename": "Topic",
-        "name": "Chelsea FC",
-        "slug": "chelsea",
-      },
-      Object {
-        "__typename": "Topic",
-        "name": "Arsenal",
-        "slug": "arsenal",
-      },
-      Object {
-        "__typename": "Topic",
-        "name": "Rugby Union",
-        "slug": "rugby-union",
-      },
-    ],
+    "topics": "Football,Manchester United FC,Chelsea FC,Arsenal,Rugby Union",
   },
   "component": "Page",
   "object": "Article",
