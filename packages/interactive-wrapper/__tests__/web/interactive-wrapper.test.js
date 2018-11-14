@@ -2,22 +2,13 @@
 import React from 'react';
 import {
   addSerializers,
-  compose,
-  flattenStyleTransform,
-  minimalWebTransform,
   enzymeTreeSerializer,
-  print
 } from "@times-components/jest-serializer";
 import { mount } from 'enzyme';
 import InteractiveWrapper from "../../src/interactive-wrapper";
 
 addSerializers(
   expect,
-  compose(
-    print,
-    flattenStyleTransform,
-    minimalWebTransform,
-  ),
   enzymeTreeSerializer()
 );
 
