@@ -11,7 +11,14 @@ const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
 module.exports = (client, analyticsStream, data) => {
-  const { debounceTimeMs, makeArticleUrl, page, pageSize, topicSlug } = data;
+  const {
+    debounceTimeMs,
+    makeArticleUrl,
+    mapTopicToAdConfig,
+    page,
+    pageSize,
+    topicSlug
+  } = data;
 
   return React.createElement(
     ApolloProvider,
@@ -34,7 +41,7 @@ module.exports = (client, analyticsStream, data) => {
             }
           },
           React.createElement(Topic, {
-            adConfig: {},
+            adConfig: mapTopicToAdConfig(),
             analyticsStream,
             error,
             isLoading,
