@@ -4,7 +4,8 @@ const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleFlag: {
     flexDirection: "row",
-    marginBottom: spacing(2)
+    marginBottom: spacing(3),
+    marginTop: spacing(1)
   },
   articleFlagContainer: {
     marginRight: spacing(3)
@@ -15,7 +16,7 @@ const sharedStyles = {
       fontSize: "headline"
     }),
     color: colours.functional.brandColour,
-    marginBottom: 7,
+    marginBottom: spacing(2),
     textAlign: "center"
   },
   articleLabel: {
@@ -26,8 +27,8 @@ const sharedStyles = {
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: colours.functional.keyline,
-    marginBottom: spacing(6),
-    paddingBottom: spacing(6),
+    marginBottom: spacing(4),
+    paddingBottom: spacing(5),
   },
   datePublication :{
     ...fontFactory({
@@ -39,7 +40,7 @@ const sharedStyles = {
   meta: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginTop: spacing(3),
+    marginTop: spacing(3)
   },
   standFirst: {
     ...fontFactory({

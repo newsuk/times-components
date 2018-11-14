@@ -11,7 +11,7 @@ import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
-import { AuthorImageContainer, HeadlineContainer, MetaContainer, Seperator } from "../styles/article-header/responsive";
+import { AuthorImageContainer, HeaderContainer, HeadlineContainer, Meta, MetaContainer, Seperator } from "../styles/article-header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -26,7 +26,7 @@ const ArticleHeader = ({
   publishedTime,
   standfirst
 }) => (
-  <View style={styles.container}>
+  <HeaderContainer>
     <AuthorImageContainer>
       <Image
         aspectRatio={1}
@@ -44,8 +44,7 @@ const ArticleHeader = ({
     <HeaderFlags flags={flags} />
     <HeaderStandfirst standfirst={standfirst} />
     <MetaContainer>
-      <Fragment>
-        <View style={styles.meta}>
+        <Meta>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
             <ArticleBylineWithLinks
@@ -55,16 +54,15 @@ const ArticleHeader = ({
             />
           )}
         </Context.Consumer>
-        </View>
+        </Meta>
         <Seperator />
-        <View style={styles.meta}>
+        <Meta>
           <Text style={styles.datePublication}>
             <DatePublication date={publishedTime} publication={publicationName} />
           </Text>
-        </View>
-        </Fragment>
+        </Meta>
     </MetaContainer>
-  </View>
+  </HeaderContainer>
 );
 
 ArticleHeader.propTypes = {

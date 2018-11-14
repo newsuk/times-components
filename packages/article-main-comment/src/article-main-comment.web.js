@@ -35,7 +35,6 @@ class ArticlePage extends Component {
     const leadAssetProps = getLeadAsset(this.props.article);
 
     return (
-      <HeaderContainer>
         <ArticleHeader
           byline={byline}
           flags={flags}
@@ -46,7 +45,6 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-      </HeaderContainer>
     );
   }
 

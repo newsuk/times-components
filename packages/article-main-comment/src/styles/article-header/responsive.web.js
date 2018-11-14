@@ -23,14 +23,15 @@ export const AuthorImageContainer = styled(View)`
 export const HeadlineContainer = styled(Text)`
   font-size: ${fontSizes.headline}px;
   color: ${colours.functional.brandColour};
-  margin-bottom: 8px;
+
   font-family: "${fonts.headline}";
   font-weight: 400;
   line-height: 30px;
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
-    line-height: 45px;
+    line-height: 50px;
+    margin-bottom: ${spacing(1)};
   }
 `;
 
@@ -40,9 +41,23 @@ export const LabelContainer = styled(View)`
   }
 `;
 
+export const Meta = styled(View)`
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: ${spacing(3)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-top: 0
+  }
+`
+
 export const MetaContainer = styled(View)`
+  align-items: center;
+
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: ${spacing(3)}
   }
 `;
 
@@ -58,3 +73,39 @@ export const Seperator = styled(View)`
 
   }
 `
+
+export const StandfirstContainer = styled(Text)`
+  text-align: center;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+`;
+
+export const HeaderContainer = styled(View)`
+  align-items: center;
+  align-self: center;
+  border-bottom: 1px ${colours.functional.keyline} solid;
+  margin-bottom: ${spacing(4)};
+  padding-bottom: ${spacing(5)};
+  margin-left: ${spacing(2)};
+  margin-right: ${spacing(2)};
+  order: 2;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: ${spacing(7)};
+    margin-bottom: ${spacing(6)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+    padding-bottom: ${spacing(7)};
+    margin-bottom: ${spacing(7)};
+  }
+`;
