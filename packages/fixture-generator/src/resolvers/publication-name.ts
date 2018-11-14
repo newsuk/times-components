@@ -1,3 +1,5 @@
-import { PublicationName } from '../types';
+import { PublicationName } from "../types";
 
-export default (name :PublicationName = PublicationName.TIMES) :PublicationName => name;
+export default (
+  name: PublicationName = PublicationName.TIMES
+): PublicationName => name;

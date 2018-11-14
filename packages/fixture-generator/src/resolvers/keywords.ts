@@ -1,3 +1,3 @@
-import { Article } from '../types';
+import { Article } from "../types";
 
-export default () :Article['keywords'] => ['keyword'];
+export default (): Article["keywords"] => ["keyword"];

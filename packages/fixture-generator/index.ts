@@ -1,3 +1,3 @@
-import fixtureGenerator from './src/mock-article';
+import fixtureGenerator from "./src/mock-article";
 
-export default fixtureGenerator
+export default fixtureGenerator;

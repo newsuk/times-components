@@ -26,5 +26,3 @@ yarn build
 You do not need to have typescript on your machine as we install the compiler as a dev dependency.
 
 ## Testing
-
-

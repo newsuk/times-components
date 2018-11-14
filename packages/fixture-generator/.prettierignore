@@ -1,0 +1,17 @@
+**/node_modules/*
+dist
+__snapshots__
+android/*
+ios/*
+CHANGELOG.md
+!*.json
+**/package.json
+**/coverage/*
+LICENSE
+yarn.lock
+*.log
+rnw.js
+stats.json
+*.mp4
+*.png
+**/fragment-matcher.js
