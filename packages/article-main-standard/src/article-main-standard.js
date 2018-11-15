@@ -88,7 +88,8 @@ class ArticlePage extends Component {
       onTwitterLinkPress,
       onVideoPress,
       onViewed,
-      receiveChildList
+      receiveChildList,
+      referralUrl
     } = this.props;
 
     return (
@@ -107,6 +108,7 @@ class ArticlePage extends Component {
         onVideoPress={onVideoPress}
         onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
         receiveChildList={receiveChildList}
+        referralUrl={referralUrl}
       />
     );
   }
@@ -120,8 +122,12 @@ ArticlePage.propTypes = {
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  referralUrl: PropTypes.string,
   refetch: PropTypes.func.isRequired
 };
-ArticlePage.defaultProps = articlePageDefaultProps;
+ArticlePage.defaultProps = {
+  ...articlePageDefaultProps,
+  referralUrl: null
+};
 
 export default ArticlePage;
