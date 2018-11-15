@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.9"></a>
+## [1.5.9](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.8...@times-components/ssr@1.5.9) (2018-11-15)
+
+
+### Bug Fixes
+
+* add adconfig stuff to ssr server topic ([#1488](https://github.com/newsuk/times-components/issues/1488)) ([4653599](https://github.com/newsuk/times-components/commit/4653599))
+* add missing ad config method to ssr topic ([#1486](https://github.com/newsuk/times-components/issues/1486)) ([5ed78d0](https://github.com/newsuk/times-components/commit/5ed78d0))
+
+
+
+
+
 <a name="1.5.8"></a>
 ## [1.5.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.7...@times-components/ssr@1.5.8) (2018-11-13)
 
