@@ -10,7 +10,7 @@ import { colours } from "@times-components/styleguide";
 import HeaderLabel from "../article-label/article-label";
 import HeaderFlags from "../article-flags/article-flags";
 import HeaderStandfirst from "../article-standfirst/article-standfirst";
-import styles from "../styles/article-header";
+import styles from "../styles";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -23,10 +23,9 @@ const ArticleHeader = ({
   onAuthorPress,
   publicationName,
   publishedTime,
-  standfirst,
-  style
+  standfirst
 }) => (
-  <View style={[...style, styles.container]}>
+  <View style={styles.container}>
       <Image
         aspectRatio={1}
         style={{width: 100, height: 100, borderRadius: 50, overflow: "hidden"}}

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text } from "react-native";
-import styles from "../styles/article-header";
-import { StandfirstContainer } from "../styles/article-header/responsive.web";
+import styles from "../styles";
+import { StandfirstContainer } from "../styles/responsive.web";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;

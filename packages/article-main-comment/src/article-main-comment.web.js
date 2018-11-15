@@ -7,12 +7,6 @@ import {
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
-import {
-  HeaderContainer,
-  LeadAssetContainer,
-  MetaContainer
-} from "./styles/responsive";
-
 class ArticlePage extends Component {
   constructor(props) {
     super(props);
@@ -22,7 +16,6 @@ class ArticlePage extends Component {
   renderHeader(parentProps) {
     const {
       byline,
-      hasVideo,
       headline,
       flags,
       label,
@@ -30,16 +23,13 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      topics
     } = this.props.article;
-    const leadAssetProps = getLeadAsset(this.props.article);
 
     return (
         <ArticleHeader
           byline={byline}
-          flags={flags}
-          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
+          flags={flags}
           label={label}
           publicationName={publicationName}
           publishedTime={publishedTime}

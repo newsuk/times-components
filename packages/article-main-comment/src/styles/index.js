@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
-import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
 const nativeStyles = {
@@ -26,7 +25,6 @@ const nativeStyles = {
 };
 
 const styles = StyleSheet.create({
-  ...globalStyle,
   ...nativeStyles
 });
 

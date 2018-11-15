@@ -9,9 +9,9 @@ import Image from "@times-components/image";
 import HeaderLabel from "../article-label/article-label";
 import HeaderFlags from "../article-flags/article-flags";
 import HeaderStandfirst from "../article-standfirst/article-standfirst";
-import styles from "../styles/article-header";
+import styles from "../styles";
 
-import { AuthorImageContainer, HeaderContainer, HeadlineContainer, Meta, MetaContainer, Seperator } from "../styles/article-header/responsive";
+import { AuthorImageContainer, HeaderContainer, HeadlineContainer, Meta, MetaContainer, Seperator } from "../styles/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 

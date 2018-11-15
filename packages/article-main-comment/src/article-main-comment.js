@@ -7,7 +7,6 @@ import ArticleError from "@times-components/article-error";
 import Article from "@times-components/article";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
-import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
@@ -23,7 +22,6 @@ class ArticlePage extends Component {
     const {
       byline,
       flags,
-      hasVideo,
       headline,
       label,
       publicationName,
@@ -32,22 +30,17 @@ class ArticlePage extends Component {
       standfirst
     } = this.props.article;
     const { article, onAuthorPress, onVideoPress } = this.props;
-    const { isVideo, leadAsset } = getLeadAsset(article);
-    const styles = stylesFactory();
 
     return (
         <ArticleHeader
           byline={byline}
           flags={flags}
-          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
-          isVideo={isVideo}
           label={label}
           publicationName={publicationName}
           publishedTime={publishedTime}
           onAuthorPress={onAuthorPress}
           standfirst={standfirst}
-          style={[styles.articleMainContentRow]}
         />
     );
   }

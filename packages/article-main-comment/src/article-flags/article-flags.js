@@ -7,7 +7,7 @@ import {
   UpdatedArticleFlag,
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
-import styles from "../styles/article-header";
+import styles from "../styles";
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
