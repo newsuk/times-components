@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.1.54",
-    "@times-components/article-comments": "0.1.7",
+    "@times-components/article-comments": "0.1.8",
     "@times-components/article-image": "4.1.14",
     "@times-components/article-paragraph": "0.2.6",
     "@times-components/article-topics": "3.2.29",
