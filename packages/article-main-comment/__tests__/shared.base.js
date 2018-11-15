@@ -6,7 +6,6 @@ import { iterator } from "@times-components/test-utils";
 import ArticleMainStandard from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 const findComponents = (testInstance, componentName) =>
   testInstance.root.findAll(node => {
@@ -39,7 +38,6 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <ArticleMainStandard
           {...props}
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           onAuthorPress={() => {}}
@@ -50,6 +48,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 
@@ -61,7 +60,6 @@ export const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <ArticleMainStandard
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -77,6 +75,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 
@@ -88,7 +87,6 @@ export const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <ArticleMainStandard
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -110,6 +108,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 
@@ -124,7 +123,6 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMainStandard
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -139,6 +137,7 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 
@@ -148,36 +147,10 @@ const negativeTests = [
     }
   },
   {
-    name: "an article with no byline",
-    test() {
-      const testInstance = TestRenderer.create(
-        <ArticleMainStandard
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={articleFixture({ ...testFixture, byline: null })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
-      const byline = findComponents(testInstance, "ArticleBylineWithLinks");
-
-      expect(byline).toEqual([]);
-    }
-  },
-  {
     name: "an article with no label",
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMainStandard
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, label: null })}
@@ -189,6 +162,7 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 
@@ -202,7 +176,6 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMainStandard
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -217,6 +190,7 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          receiveChildList={() => {}}
         />
       );
 

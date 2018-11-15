@@ -54,6 +54,9 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
   data={
     Object {
       "__typename": "Article",
+      "author": Object {
+        "image": "https://image.io",
+      },
       "commentCount": 65,
       "commentsEnabled": true,
       "content": Array [
@@ -144,6 +147,9 @@ exports[`3. an article with ads 1`] = `
   data={
     Object {
       "__typename": "Article",
+      "author": Object {
+        "image": "https://image.io",
+      },
       "commentCount": 65,
       "commentsEnabled": true,
       "content": Array [

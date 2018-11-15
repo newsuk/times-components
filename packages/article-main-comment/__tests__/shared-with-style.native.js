@@ -12,7 +12,6 @@ import "./mocks.native";
 import ArticleMainStandard from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 export default () => {
   addSerializers(
@@ -28,6 +27,9 @@ export default () => {
   it("full article with style", () => {
     const article = articleFixture({
       ...testFixture,
+      author: {
+        image: "https://image.io"
+      },
       content: [
         {
           attributes: {
@@ -127,7 +129,6 @@ export default () => {
 
     const output = TestRenderer.create(
       <ArticleMainStandard
-        {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}
@@ -139,6 +140,7 @@ export default () => {
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
+        refetch={() => {}}
       />
     );
 

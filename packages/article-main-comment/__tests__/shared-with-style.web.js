@@ -15,7 +15,6 @@ import "./mocks.web";
 import Article from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 const styles = [
   "alignItems",
@@ -51,6 +50,9 @@ export default () => {
   it("full article with style", () => {
     const article = articleFixture({
       ...testFixture,
+      author: {
+        image: "https://image.io"
+      },
       content: [
         {
           attributes: {
@@ -150,16 +152,9 @@ export default () => {
 
     const output = TestRenderer.create(
       <Article
-        {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}
-        onAuthorPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
-        onTwitterLinkPress={() => {}}
-        onVideoPress={() => {}}
       />
     );
 

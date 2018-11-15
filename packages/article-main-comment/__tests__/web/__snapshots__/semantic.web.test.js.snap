@@ -18,6 +18,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </g>
   </svg>
   ADVERTISEMENT
+  <img
+    alt=""
+    src="https://image.io"
+  />
   SOME LABEL
   <h1
     aria-level="1"
@@ -25,13 +29,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     Some Headline
   </h1>
-  <h2
-    aria-level="2"
-    data-testid="standfirst"
-    role="heading"
-  >
-    Some Standfirst
-  </h2>
   <svg
     aria-label="[title]"
     height={8}
@@ -49,38 +46,22 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </g>
   </svg>
   new
+  <h2
+    aria-level="2"
+    data-testid="standfirst"
+    role="heading"
+  >
+    Some Standfirst
+  </h2>
+  Some byline
+  <time
+    dateTime="2015-03-13T18:54:58.000Z"
+  >
+    Friday March 13 2015, 6:54pm
+  </time>
   <span>
-    <span>
-      Some byline
-    </span>
+    , The Times
   </span>
-  <span>
-    <time
-      dateTime="2015-03-13T18:54:58.000Z"
-    >
-      Friday March 13 2015, 6:54pm
-    </time>
-    <span>
-      , The Times
-    </span>
-  </span>
-  <nav>
-    <a
-      href="/topic/topic"
-    >
-      Topic
-    </a>
-  </nav>
-  <figure>
-    <img
-      alt=""
-      src="https://crop169.io?resize=100"
-    />
-    <figcaption>
-      Some Caption
-      SOME CREDITS
-    </figcaption>
-  </figure>
   <img
     alt=""
     src="https://image.io?resize=100"
