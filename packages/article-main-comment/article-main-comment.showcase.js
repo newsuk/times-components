@@ -41,6 +41,7 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => {
+      // When work is completed in TPA, the schema should do this for us
       const data = {
         author: {
           image:
