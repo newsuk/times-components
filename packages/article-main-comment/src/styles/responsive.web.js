@@ -22,7 +22,9 @@ export const AuthorImageContainer = styled(View)`
 export const DatePublicationContainer = styled(View)`
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: ${spacing(3)} @media (min-width: ${breakpoints.medium}px) {
+  margin-top: ${spacing(3)};
+
+  @media (min-width: ${breakpoints.medium}px) {
     margin-top: 0;
   }
 `;
