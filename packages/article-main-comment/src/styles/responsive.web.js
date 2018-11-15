@@ -19,6 +19,14 @@ export const AuthorImageContainer = styled(View)`
   }
 `;
 
+export const DatePublicationContainer = styled(View)`
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: ${spacing(3)} @media (min-width: ${breakpoints.medium}px) {
+    margin-top: 0;
+  }
+`;
+
 export const HeadlineContainer = styled(Text)`
   font-size: ${fontSizes.headline}px;
   line-height: 30px;
@@ -48,7 +56,6 @@ export const MetaContainer = styled(View)`
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: ${spacing(3)};
   }
 `;
 
@@ -68,6 +75,11 @@ export const StandfirstContainer = styled(Text)`
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 22px;
     line-height: 30px;
+    margin-bottom: ${spacing(5)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    margin-bottom: ${spacing(4)};
   }
 `;
 

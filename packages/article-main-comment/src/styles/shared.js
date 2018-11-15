@@ -8,8 +8,11 @@ const sharedStyles = {
       fontSize: "headline"
     }),
     color: colours.functional.brandColour,
-    marginBottom: spacing(2),
+    marginBottom: spacing(1),
     textAlign: "center"
+  },
+  authorImage: {
+    marginBottom: spacing(5)
   },
   container: {
     alignItems: "center",
@@ -26,7 +29,8 @@ const sharedStyles = {
       font: "supporting",
       fontSize: "cardMeta"
     }),
-    color: colours.functional.secondary
+    color: colours.functional.secondary,
+    marginTop: spacing(3)
   },
   flag: {
     flexDirection: "row",
@@ -37,13 +41,11 @@ const sharedStyles = {
     marginRight: spacing(3)
   },
   label: {
-    marginBottom: spacing(2),
-    marginTop: spacing(5)
+    marginBottom: spacing(2)
   },
   meta: {
     flexDirection: "row",
-    flexWrap: "wrap",
-    marginTop: spacing(3)
+    flexWrap: "wrap"
   },
   standFirst: {
     ...fontFactory({
@@ -51,6 +53,7 @@ const sharedStyles = {
       fontSize: "smallestHeadline"
     }),
     color: colours.functional.primary,
+    marginBottom: spacing(3),
     textAlign: "center"
   }
 };

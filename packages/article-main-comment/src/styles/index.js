@@ -5,6 +5,7 @@ import sharedStyles from "./shared";
 const nativeStyles = {
   ...sharedStyles,
   authorImage: {
+    ...sharedStyles.authorImage,
     borderRadius: 50,
     height: 100,
     overflow: "hidden",
