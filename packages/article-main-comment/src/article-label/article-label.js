@@ -6,21 +6,26 @@ import Context from "@times-components/context";
 import { colours } from "@times-components/styleguide";
 import styles from "../styles";
 
-const Label = ({ label }) => (
-  <Context.Consumer>
-    {({ theme: { sectionColour } }) => (
-      <View style={styles.label}>
-        <ArticleLabel
-          color={sectionColour || colours.section.default}
-          title={label}
-        />
-      </View>
-    )}
-  </Context.Consumer>
-);
+const Label = ({ label }) =>
+  label ? (
+    <Context.Consumer>
+      {({ theme: { sectionColour } }) => (
+        <View style={styles.label}>
+          <ArticleLabel
+            color={sectionColour || colours.section.default}
+            title={label}
+          />
+        </View>
+      )}
+    </Context.Consumer>
+  ) : null;
 
 Label.propTypes = {
-  label: PropTypes.string.isRequired
+  label: PropTypes.string
+};
+
+Label.defaultProps = {
+  label: null
 };
 
 export default Label;

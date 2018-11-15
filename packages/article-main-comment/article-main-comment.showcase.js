@@ -120,12 +120,9 @@ export default {
         const scale = selectScales(select);
         const sectionColour = selectSection(select);
         const withFlags = boolean("Flags", true);
-        const withHeadline = boolean("Headline", true);
         const withLabel = boolean("Label", true);
-        const withLeadAsset = boolean("Lead Asset", true);
         const withLinkedByline = boolean("Linked Byline", true);
         const withStandfirst = boolean("Standfirst", true);
-        const withVideo = boolean("Video", true);
 
         const link = typeof document === "object" &&
           window !== window.top && (
@@ -145,12 +142,10 @@ export default {
               <ArticleConfigurator
                 configuration={makeArticleConfiguration({
                   withFlags,
-                  withHeadline,
                   withLabel,
-                  withLeadAsset,
                   withLinkedByline,
                   withStandfirst,
-                  withVideo
+                  withVideo: false
                 })}
                 id={id}
               >
