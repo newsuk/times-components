@@ -18,13 +18,7 @@ exports[`1. a full article with all content items 1`] = `
         his being Black History Month, last week
       </p>
       <div>
-        <link
-          href="https://interactive.io"
-          rel="import"
-        />
-        <times-datawrapper
-          chart-id="csmgb"
-        />
+        <div />
       </div>
       <div
         id="2"
