@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
 import styles from "../styles";
 import { StandfirstContainer } from "../styles/responsive.web";
 
@@ -11,8 +10,8 @@ const HeaderStandfirst = ({ standfirst }) => {
     <StandfirstContainer
         accessibilityRole="heading"
         aria-level="2"
-        testID="standfirst"
         style={styles.standFirst}
+        testID="standfirst"
       >
         {standfirst}
     </StandfirstContainer>

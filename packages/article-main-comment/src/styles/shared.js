@@ -19,17 +19,13 @@ const sharedStyles = {
     marginBottom: spacing(2),
     textAlign: "center",
   },
-  articleLabel: {
-    paddingBottom: spacing(1),
-    paddingTop: spacing(1)
-  },
   container: {
     alignItems: "center",
-    borderBottomWidth: 1,
     borderBottomColor: colours.functional.keyline,
-    paddingTop: spacing(7),
-    paddingBottom: spacing(5),
+    borderBottomWidth: 1,
     marginBottom: spacing(4),
+    paddingBottom: spacing(5),
+    paddingTop: spacing(7),
   },
   datePublication :{
     ...fontFactory({
@@ -37,6 +33,10 @@ const sharedStyles = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.secondary
+  },
+  label: {
+    marginBottom: spacing(2),
+    marginTop: spacing(5),
   },
   meta: {
     flexDirection: "row",

@@ -2041,7 +2041,7 @@ export const testFixture = {
   __typename: "Article",
   author: {
     image: "https://image.io"
-  }
+  },
   byline: [
     {
       attributes: {},

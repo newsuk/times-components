@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Text, View, ViewPropTypes } from "react-native";
+import { Text, View } from "react-native";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
@@ -10,14 +9,12 @@ import { colours } from "@times-components/styleguide";
 import HeaderLabel from "../article-label/article-label";
 import HeaderFlags from "../article-flags/article-flags";
 import HeaderStandfirst from "../article-standfirst/article-standfirst";
+import { articleHeaderPropTypes, articleHeaderDefaultProps } from "./article-header-prop-types";
 import styles from "../styles";
-
-const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleHeader = ({
   byline,
   flags,
-  hasVideo,
   headline,
   label,
   onAuthorPress,
@@ -31,7 +28,7 @@ const ArticleHeader = ({
         style={{width: 100, height: 100, borderRadius: 50, overflow: "hidden"}}
         uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
       />
-    <HeaderLabel isVideo={hasVideo} label={label} />
+    <HeaderLabel label={label} />
     <Text style={styles.articleHeadLineText}>
       {headline}
     </Text>
@@ -58,22 +55,11 @@ const ArticleHeader = ({
   </View>
 );
 
-ArticleHeader.propTypes = {
-  flags: PropTypes.arrayOf(PropTypes.string),
-  hasVideo: PropTypes.bool,
-  headline: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  standfirst: PropTypes.string,
-  style: ViewStylePropTypes
-};
+ArticleHeader.propTypes = articleHeaderPropTypes;
 
 ArticleHeader.defaultProps = {
-  flags: [],
-  hasVideo: false,
-  label: null,
-  onAuthorPress: () => {},
-  standfirst: null,
-  style: {},
+  ...articleHeaderDefaultProps,
+  onAuthorPress: () => {}
 };
 
 export default ArticleHeader;

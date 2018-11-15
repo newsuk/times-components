@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Article from "@times-components/article";
-import { getLeadAsset, getHeadline } from "@times-components/utils";
+import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
@@ -13,11 +13,11 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader(parentProps) {
+  renderHeader() {
     const {
       byline,
-      headline,
       flags,
+      headline,
       label,
       publicationName,
       publishedTime,
@@ -28,8 +28,8 @@ class ArticlePage extends Component {
     return (
         <ArticleHeader
           byline={byline}
-          headline={getHeadline(headline, shortHeadline)}
           flags={flags}
+          headline={getHeadline(headline, shortHeadline)}
           label={label}
           publicationName={publicationName}
           publishedTime={publishedTime}

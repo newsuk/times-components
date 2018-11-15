@@ -1,11 +1,9 @@
 /* eslint-disable consistent-return */
 
-import React, { Component, Fragment } from "react";
-import { View } from "react-native";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
 import ArticleError from "@times-components/article-error";
 import Article from "@times-components/article";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePagePropTypes,
@@ -18,7 +16,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader(parentProps) {
+  renderHeader() {
     const {
       byline,
       flags,
@@ -29,7 +27,7 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst
     } = this.props.article;
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    const { onAuthorPress } = this.props;
 
     return (
         <ArticleHeader
@@ -37,9 +35,9 @@ class ArticlePage extends Component {
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
+          onAuthorPress={onAuthorPress}
           publicationName={publicationName}
           publishedTime={publishedTime}
-          onAuthorPress={onAuthorPress}
           standfirst={standfirst}
         />
     );
@@ -93,16 +91,7 @@ class ArticlePage extends Component {
   }
 }
 
-ArticlePage.propTypes = {
-  ...articlePagePropTypes,
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  refetch: PropTypes.func.isRequired
-};
+ArticlePage.propTypes = articlePagePropTypes;
 ArticlePage.defaultProps = articlePageDefaultProps;
 
 export default ArticlePage;
