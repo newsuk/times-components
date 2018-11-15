@@ -58,6 +58,4 @@ const sharedStyles = {
   }
 };
 
-console.log(sharedStyles);
-
 export default sharedStyles;

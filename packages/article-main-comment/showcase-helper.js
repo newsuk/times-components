@@ -138,8 +138,6 @@ export class ArticleConfigurator extends Component {
       return null;
     }
 
-    console.log(this.state.mocks);
-
     return (
       <MockedProvider mocks={this.state.mocks}>
         {this.props.children}

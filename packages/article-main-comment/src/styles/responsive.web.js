@@ -19,7 +19,7 @@ export const AuthorImageContainer = styled(View)`
   }
 `;
 
-export const DatePublicationContainer = styled(View)`
+export const DatePublicationContainer = styled(Text)`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(3)};

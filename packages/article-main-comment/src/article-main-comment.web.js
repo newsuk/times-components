@@ -15,6 +15,7 @@ class ArticlePage extends Component {
 
   renderHeader() {
     const {
+      author,
       byline,
       flags,
       headline,
@@ -27,6 +28,7 @@ class ArticlePage extends Component {
 
     return (
       <ArticleHeader
+        authorImage={author.image}
         byline={byline}
         flags={flags}
         headline={getHeadline(headline, shortHeadline)}

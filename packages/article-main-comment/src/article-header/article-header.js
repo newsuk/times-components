@@ -13,6 +13,7 @@ import {
 import styles from "../styles";
 
 const ArticleHeader = ({
+  authorImage,
   byline,
   flags,
   headline,
@@ -23,11 +24,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <View style={styles.container}>
-    <Image
-      aspectRatio={1}
-      style={styles.authorImage}
-      uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
-    />
+    <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
     <Label label={label} />
     <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />

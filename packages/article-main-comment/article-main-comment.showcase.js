@@ -41,7 +41,14 @@ const renderArticle = ({
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => {
-      console.log(article);
+      const data = {
+        author: {
+          image:
+            "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
+        },
+        ...article
+      };
+
       return (
         <Context.Provider
           value={{ makeArticleUrl, theme: { scale, sectionColour } }}
@@ -49,7 +56,7 @@ const renderArticle = ({
           <Article
             adConfig={adConfig}
             analyticsStream={analyticsStream}
-            article={article}
+            article={data}
             error={error}
             isLoading={isLoading}
             onAuthorPress={preventDefaultedAction(decorateAction)(
