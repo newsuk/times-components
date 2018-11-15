@@ -126,8 +126,7 @@ export default ({
           },
           Media: () => ({
             __typename: "Image"
-          }),
-          UUID: () => "a-u-u-i-d"
+          })
         },
         values: {
           author: () => ({
