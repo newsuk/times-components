@@ -2,12 +2,10 @@ import PropTypes from "prop-types";
 import {
   articlePropTypesBase,
   articleDefaultPropsBase
-} from "./article-prop-types.web";
+} from "./article-prop-types.base";
 
 const articlePropTypes = {
   ...articlePropTypesBase,
-  error: PropTypes.bool.isRequired,
-  isLoading: PropTypes.bool.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -16,6 +14,7 @@ const articlePropTypes = {
   onTopicPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  onViewed: PropTypes.func.isRequired,
   refetch: PropTypes.func.isRequired
 };
 

@@ -1,13 +1,9 @@
 import PropTypes from "prop-types";
-import ArticleHeader from "../article-header/article-header";
 
 const articlePagePropTypes = {
   adConfig: PropTypes.shape({}).isRequired,
   analyticsStream: PropTypes.func.isRequired,
-  article: PropTypes.shape({
-    ...ArticleHeader.propTypes,
-    // Could have more here.
-  }),
+  article: PropTypes.shape({}),
   error: PropTypes.shape({
     graphQLErrors: PropTypes.array,
     message: PropTypes.string,

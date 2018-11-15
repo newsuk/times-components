@@ -1,19 +1,12 @@
 import PropTypes from "prop-types";
-import ArticleHeader from "../article-header/article-header";
+import { articlePagePropTypes, articlePageDefaultProps } from "./article-prop-types.base";
 
-const articlePropTypesBase = {
-  adConfig: PropTypes.shape({}).isRequired,
-  analyticsStream: PropTypes.func.isRequired,
-  data: PropTypes.shape({
-    ...ArticleHeader.propTypes,
-    // Could have more here
-  }),
-  receiveChildList: PropTypes.func
+const articlePropTypes = {
+  ...articlePagePropTypes
 };
 
-const articleDefaultPropsBase = {
-  data: null,
-  receiveChildList: () => {}
+const articleDefaultProps = {
+  ...articlePageDefaultProps
 };
 
-export { articlePropTypesBase, articleDefaultPropsBase };
+export { articlePropTypes, articleDefaultProps };
