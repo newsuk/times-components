@@ -10,13 +10,6 @@ export default class InteractiveWrapper extends Component {
   }
 
   componentDidMount() {
-    if (this.placeholder.current) {
-      this.replacePlaceholderWithInteractive();
-      delete this.placeholder.current;
-    }
-  }
-
-  replacePlaceholderWithInteractive() {
     const placeholder = this.placeholder.current;
     const { parentNode } = placeholder;
 
@@ -32,6 +25,8 @@ export default class InteractiveWrapper extends Component {
 
     parentNode.replaceChild(element, placeholder);
     parentNode.insertBefore(link, element);
+
+    delete this.placeholder.current;
   }
 
   render() {
