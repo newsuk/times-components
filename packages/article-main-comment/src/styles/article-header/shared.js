@@ -17,7 +17,7 @@ const sharedStyles = {
     }),
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
-    textAlign: "center"
+    textAlign: "center",
   },
   articleLabel: {
     paddingBottom: spacing(1),
@@ -27,8 +27,9 @@ const sharedStyles = {
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: colours.functional.keyline,
-    marginBottom: spacing(4),
+    paddingTop: spacing(7),
     paddingBottom: spacing(5),
+    marginBottom: spacing(4),
   },
   datePublication :{
     ...fontFactory({

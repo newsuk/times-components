@@ -7,8 +7,6 @@ import ArticleError from "@times-components/article-error";
 import Article from "@times-components/article";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
-import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
-import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
 import {
   articlePagePropTypes,
@@ -38,29 +36,19 @@ class ArticlePage extends Component {
     const styles = stylesFactory();
 
     return (
-      <Fragment>
-        <View key="leadAsset" testID="leadAsset">
-          <ArticleLeadAsset
-            data={{ ...leadAsset, onVideoPress }}
-            width={parentProps.width}
-          />
-        </View>
         <ArticleHeader
+          byline={byline}
           flags={flags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           isVideo={isVideo}
           label={label}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+          onAuthorPress={onAuthorPress}
           standfirst={standfirst}
           style={[styles.articleMainContentRow]}
         />
-        <ArticleMeta
-          byline={byline}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-        />
-      </Fragment>
     );
   }
 

@@ -9,11 +9,6 @@ const nativeStyles = {
     ...sharedStyles.articleFlag,
     paddingTop: spacing(1)
   },
-  articleHeadLineText: {
-    ...sharedStyles.articleHeadLineText,
-    fontWeight: "700",
-    marginTop: spacing(3)
-  },
   articleLabelWrapper: {
     marginBottom: spacing(-2.75),
     marginTop: spacing(2)
