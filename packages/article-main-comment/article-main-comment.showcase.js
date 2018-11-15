@@ -43,37 +43,42 @@ const renderArticle = ({
     {({ article, isLoading, error, refetch }) => {
       console.log(article);
       return (
-      <Context.Provider
-        value={{ makeArticleUrl, theme: { scale, sectionColour } }}
-      >
-        <Article
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          article={article}
-          error={error}
-          isLoading={isLoading}
-          onAuthorPress={preventDefaultedAction(decorateAction)(
-            "onAuthorPress"
-          )}
-          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-            "onCommentGuidelinesPress"
-          )}
-          onCommentsPress={preventDefaultedAction(decorateAction)(
-            "onCommentsPress"
-          )}
-          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-            "onRelatedArticlePress"
-          )}
-          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-          refetch={refetch}
-        />
-      </Context.Provider>
-    )}}
+        <Context.Provider
+          value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+        >
+          <Article
+            adConfig={adConfig}
+            analyticsStream={analyticsStream}
+            article={article}
+            error={error}
+            isLoading={isLoading}
+            onAuthorPress={preventDefaultedAction(decorateAction)(
+              "onAuthorPress"
+            )}
+            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+              "onCommentGuidelinesPress"
+            )}
+            onCommentsPress={preventDefaultedAction(decorateAction)(
+              "onCommentsPress"
+            )}
+            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+              "onRelatedArticlePress"
+            )}
+            onTopicPress={preventDefaultedAction(decorateAction)(
+              "onTopicPress"
+            )}
+            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+              "onTwitterLinkPress"
+            )}
+            onVideoPress={preventDefaultedAction(decorateAction)(
+              "onVideoPress"
+            )}
+            refetch={refetch}
+          />
+        </Context.Provider>
+      );
+    }}
   </ArticleProvider>
 );
 

@@ -4,19 +4,15 @@ import sharedStyles from "./shared";
 
 const nativeStyles = {
   ...sharedStyles,
-  articleFlag: {
-    ...sharedStyles.articleFlag,
-    paddingTop: spacing(1)
-  },
-  articleLabelWrapper: {
-    marginBottom: spacing(-2.75),
-    marginTop: spacing(2)
-  },
   authorImage: {
     borderRadius: 50,
     height: 100,
     overflow: "hidden",
-    width: 100,
+    width: 100
+  },
+  flag: {
+    ...sharedStyles.flag,
+    paddingTop: spacing(1)
   },
   standFirst: {
     ...sharedStyles.standFirst,

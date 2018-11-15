@@ -2,22 +2,14 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
-  articleFlag: {
-    flexDirection: "row",
-    marginBottom: spacing(3),
-    marginTop: spacing(1)
-  },
-  articleFlagContainer: {
-    marginRight: spacing(3)
-  },
-  articleHeadLineText: {
+  articleHeadline: {
     ...fontFactory({
       font: "headline",
       fontSize: "headline"
     }),
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
-    textAlign: "center",
+    textAlign: "center"
   },
   container: {
     alignItems: "center",
@@ -25,18 +17,26 @@ const sharedStyles = {
     borderBottomWidth: 1,
     marginBottom: spacing(4),
     paddingBottom: spacing(5),
-    paddingTop: spacing(7),
+    paddingTop: spacing(7)
   },
-  datePublication :{
+  datePublication: {
     ...fontFactory({
       font: "supporting",
       fontSize: "cardMeta"
     }),
     color: colours.functional.secondary
   },
+  flag: {
+    flexDirection: "row",
+    marginBottom: spacing(3),
+    marginTop: spacing(1)
+  },
+  flagContainer: {
+    marginRight: spacing(3)
+  },
   label: {
     marginBottom: spacing(2),
-    marginTop: spacing(5),
+    marginTop: spacing(5)
   },
   meta: {
     flexDirection: "row",
@@ -52,5 +52,7 @@ const sharedStyles = {
     textAlign: "center"
   }
 };
+
+console.log(sharedStyles);
 
 export default sharedStyles;

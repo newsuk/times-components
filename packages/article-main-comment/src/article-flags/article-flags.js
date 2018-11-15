@@ -19,9 +19,9 @@ const flagsMapping = new Map([
 const HeaderFlags = ({ flags }) => {
   if (!flags.length) return null;
   return (
-    <View style={styles.articleFlag}>
+    <View style={styles.flag}>
       {flags.map(flag => (
-        <View key={flag} style={styles.articleFlagContainer}>
+        <View key={flag} style={styles.flagContainer}>
           {flagsMapping.get(flag)}
         </View>
       ))}

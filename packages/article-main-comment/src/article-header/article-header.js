@@ -9,7 +9,10 @@ import { colours } from "@times-components/styleguide";
 import HeaderLabel from "../article-label/article-label";
 import HeaderFlags from "../article-flags/article-flags";
 import HeaderStandfirst from "../article-standfirst/article-standfirst";
-import { articleHeaderPropTypes, articleHeaderDefaultProps } from "./article-header-prop-types";
+import {
+  articleHeaderPropTypes,
+  articleHeaderDefaultProps
+} from "./article-header-prop-types";
 import styles from "../styles";
 
 const ArticleHeader = ({
@@ -23,15 +26,13 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <View style={styles.container}>
-      <Image
-        aspectRatio={1}
-        style={{width: 100, height: 100, borderRadius: 50, overflow: "hidden"}}
-        uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
-      />
+    <Image
+      aspectRatio={1}
+      style={styles.authorImage}
+      uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
+    />
     <HeaderLabel label={label} />
-    <Text style={styles.articleHeadLineText}>
-      {headline}
-    </Text>
+    <Text style={styles.articleHeadline}>{headline}</Text>
     <HeaderFlags flags={flags} />
     <HeaderStandfirst standfirst={standfirst} />
     <View style={styles.metaContainer}>

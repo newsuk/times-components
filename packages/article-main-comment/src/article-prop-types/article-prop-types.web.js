@@ -1,4 +1,7 @@
-import { articlePagePropTypes, articlePageDefaultProps } from "./article-prop-types.base";
+import {
+  articlePagePropTypes,
+  articlePageDefaultProps
+} from "./article-prop-types.base";
 
 const articlePropTypes = {
   ...articlePagePropTypes

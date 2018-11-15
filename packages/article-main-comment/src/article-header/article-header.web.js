@@ -4,17 +4,28 @@ import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
 import Image from "@times-components/image";
+import { colours } from "@times-components/styleguide";
 
 import HeaderLabel from "../article-label/article-label";
 import HeaderFlags from "../article-flags/article-flags";
 import HeaderStandfirst from "../article-standfirst/article-standfirst";
-import { articleHeaderPropTypes, articleHeaderDefaultProps } from "./article-header-prop-types";
+import {
+  articleHeaderPropTypes,
+  articleHeaderDefaultProps
+} from "./article-header-prop-types";
 import styles from "../styles";
 
-import { AuthorImageContainer, HeaderContainer, HeadlineContainer, Meta, MetaContainer, Seperator } from "../styles/responsive";
+import {
+  AuthorImageContainer,
+  HeaderContainer,
+  HeadlineContainer,
+  Meta,
+  MetaContainer,
+  Seperator
+} from "../styles/responsive";
 
 const ArticleHeader = ({
-  authorImage,
+  // authorImage,
   byline,
   flags,
   headline,
@@ -34,14 +45,14 @@ const ArticleHeader = ({
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"
-      style={styles.articleHeadLineText}
+      style={styles.articleHeadline}
     >
       {headline}
     </HeadlineContainer>
     <HeaderFlags flags={flags} />
     <HeaderStandfirst standfirst={standfirst} />
     <MetaContainer>
-        <Meta>
+      <Meta>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
             <ArticleBylineWithLinks
@@ -50,13 +61,13 @@ const ArticleHeader = ({
             />
           )}
         </Context.Consumer>
-        </Meta>
-        <Seperator />
-        <Meta>
-          <Text style={styles.datePublication}>
-            <DatePublication date={publishedTime} publication={publicationName} />
-          </Text>
-        </Meta>
+      </Meta>
+      <Seperator />
+      <Meta>
+        <Text style={styles.datePublication}>
+          <DatePublication date={publishedTime} publication={publicationName} />
+        </Text>
+      </Meta>
     </MetaContainer>
   </HeaderContainer>
 );

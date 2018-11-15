@@ -7,14 +7,14 @@ const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
 
   return (
-      <Text
-        accessibilityRole="heading"
-        aria-level="2"
-        style={styles.standFirst}
-        testID="standfirst"
-      >
-        {standfirst}
-      </Text>
+    <Text
+      accessibilityRole="heading"
+      aria-level="2"
+      style={styles.standFirst}
+      testID="standfirst"
+    >
+      {standfirst}
+    </Text>
   );
 };
 

@@ -8,12 +8,12 @@ const HeaderStandfirst = ({ standfirst }) => {
 
   return (
     <StandfirstContainer
-        accessibilityRole="heading"
-        aria-level="2"
-        style={styles.standFirst}
-        testID="standfirst"
-      >
-        {standfirst}
+      accessibilityRole="heading"
+      aria-level="2"
+      style={styles.standFirst}
+      testID="standfirst"
+    >
+      {standfirst}
     </StandfirstContainer>
   );
 };

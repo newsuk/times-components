@@ -30,16 +30,16 @@ class ArticlePage extends Component {
     const { onAuthorPress } = this.props;
 
     return (
-        <ArticleHeader
-          byline={byline}
-          flags={flags}
-          headline={getHeadline(headline, shortHeadline)}
-          label={label}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-          standfirst={standfirst}
-        />
+      <ArticleHeader
+        byline={byline}
+        flags={flags}
+        headline={getHeadline(headline, shortHeadline)}
+        label={label}
+        onAuthorPress={onAuthorPress}
+        publicationName={publicationName}
+        publishedTime={publishedTime}
+        standfirst={standfirst}
+      />
     );
   }
 

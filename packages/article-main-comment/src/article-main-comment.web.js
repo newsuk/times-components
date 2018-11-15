@@ -22,19 +22,19 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst,
+      standfirst
     } = this.props.article;
 
     return (
-        <ArticleHeader
-          byline={byline}
-          flags={flags}
-          headline={getHeadline(headline, shortHeadline)}
-          label={label}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-          standfirst={standfirst}
-        />
+      <ArticleHeader
+        byline={byline}
+        flags={flags}
+        headline={getHeadline(headline, shortHeadline)}
+        label={label}
+        publicationName={publicationName}
+        publishedTime={publishedTime}
+        standfirst={standfirst}
+      />
     );
   }
 

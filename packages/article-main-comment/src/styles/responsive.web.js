@@ -47,9 +47,9 @@ export const Meta = styled(View)`
   margin-top: ${spacing(3)};
 
   @media (min-width: ${breakpoints.medium}px) {
-    margin-top: 0
+    margin-top: 0;
   }
-`
+`;
 
 export const MetaContainer = styled(View)`
   align-items: center;
@@ -57,7 +57,7 @@ export const MetaContainer = styled(View)`
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: ${spacing(3)}
+    margin-top: ${spacing(3)};
   }
 `;
 
@@ -72,7 +72,7 @@ export const Seperator = styled(View)`
     width: 1px;
 
   }
-`
+`;
 
 export const StandfirstContainer = styled(Text)`
   text-align: center;
@@ -81,7 +81,6 @@ export const StandfirstContainer = styled(Text)`
     font-size: 22px;
     line-height: 30px;
   }
-
 `;
 
 export const HeaderContainer = styled(View)`
