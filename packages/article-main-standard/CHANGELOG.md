@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.0.8...@times-components/article-main-standard@0.1.0) (2018-11-15)
+
+
+### Features
+
+* Add referral url to article analytics ([#1487](https://github.com/newsuk/times-components/issues/1487)) ([1c3eb81](https://github.com/newsuk/times-components/commit/1c3eb81))
+
+
+
+
+
 <a name="0.0.8"></a>
 ## [0.0.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.0.7...@times-components/article-main-standard@0.0.8) (2018-11-15)
 
