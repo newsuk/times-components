@@ -27,7 +27,7 @@ const ArticleHeader = ({
   publishedTime,
   standfirst
 }) => (
-  <HeaderContainer>
+  <HeaderContainer style={styles.container}>
     <AuthorImageContainer>
       <Image
         aspectRatio={1}

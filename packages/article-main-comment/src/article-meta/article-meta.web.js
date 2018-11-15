@@ -11,7 +11,7 @@ import styles from "../styles";
 
 const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
   <MetaContainer>
-    <Meta>
+    <Meta style={styles.meta}>
       <Context.Consumer>
         {({ theme: { sectionColour } }) => (
           <ArticleBylineWithLinks
@@ -22,7 +22,7 @@ const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
       </Context.Consumer>
     </Meta>
     <Seperator />
-    <Meta>
+    <Meta style={styles.meta}>
       <Text style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />
       </Text>

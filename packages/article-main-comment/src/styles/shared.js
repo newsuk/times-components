@@ -16,6 +16,8 @@ const sharedStyles = {
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
     marginBottom: spacing(4),
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
     paddingBottom: spacing(5),
     paddingTop: spacing(7)
   },
