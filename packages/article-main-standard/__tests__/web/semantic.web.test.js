@@ -96,11 +96,11 @@ const tests = [
             },
             children: [
               {
-                "name": "text",
-                "attributes": {
-                  "value": "The pull quote content"
+                attributes: {
+                  value: "The pull quote content"
                 },
-                "children": []
+                children: [],
+                name: "text"
               }
             ],
             name: "pullQuote"
