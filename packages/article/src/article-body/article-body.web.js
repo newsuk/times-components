@@ -137,17 +137,29 @@ const renderers = ({ observed, registerNode }) => ({
   pullQuote(
     key,
     {
-      content,
-      caption: { name, twitter }
-    }
+      caption: { name, text, twitter }
+    },
+    children
   ) {
     return {
       element: (
-        <PullQuoteContainer key={key}>
-          <PullQuoteResp>
-            <PullQuote caption={name} content={content} twitter={twitter} />
-          </PullQuoteResp>
-        </PullQuoteContainer>
+        <Context.Consumer>
+          {({ theme: { sectionColour } }) => (
+            <PullQuoteContainer key={key}>
+              <PullQuoteResp>
+                <PullQuote
+                  caption={name}
+                  captionColour={sectionColour || colours.section.default}
+                  quoteColour={sectionColour || colours.section.default}
+                  text={text}
+                  twitter={twitter}
+                >
+                  {children}
+                </PullQuote>
+              </PullQuoteResp>
+            </PullQuoteContainer>
+          )}
+        </Context.Consumer>
       )
     };
   },
