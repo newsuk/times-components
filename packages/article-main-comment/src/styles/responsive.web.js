@@ -4,6 +4,7 @@ import {
   breakpoints,
   colours,
   fontSizes,
+  lineHeight,
   spacing
 } from "@times-components/styleguide";
 
@@ -75,8 +76,8 @@ export const Seperator = styled(View)`
 
 export const StandfirstContainer = styled(Text)`
   @media (min-width: ${breakpoints.medium}px) {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: ${fontSizes.infoTitle}px;
+    lline-height: ${lineHeight({ font: "bodyRegular", fontSize: "infoTitle" })}px;
     margin-bottom: ${spacing(5)};
   }
 
