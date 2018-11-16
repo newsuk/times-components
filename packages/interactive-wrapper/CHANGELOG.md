@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.23"></a>
+## [0.0.23](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.0.22...@times-components/interactive-wrapper@0.0.23) (2018-11-16)
+
+
+### Bug Fixes
+
+* interactives ([#1485](https://github.com/newsuk/times-components/issues/1485)) ([f367e2e](https://github.com/newsuk/times-components/commit/f367e2e))
+
+
+
+
+
 <a name="0.0.22"></a>
 ## [0.0.22](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.0.21...@times-components/interactive-wrapper@0.0.22) (2018-11-15)
 
