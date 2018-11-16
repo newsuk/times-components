@@ -118,7 +118,6 @@ const ArticleRow = ({
                 <PullQuote
                   caption={name}
                   captionColour={sectionColour || colours.section.default}
-                  key={key}
                   onTwitterLinkPress={onTwitterLinkPress}
                   quoteColour={sectionColour || colours.section.default}
                   text={text}
