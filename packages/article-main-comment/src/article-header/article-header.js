@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
+import PropTypes from "prop-types";
 import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";
@@ -38,11 +39,11 @@ const ArticleHeader = ({
   </View>
 );
 
-ArticleHeader.propTypes = articleHeaderPropTypes;
-
-ArticleHeader.defaultProps = {
-  ...articleHeaderDefaultProps,
-  onAuthorPress: () => {}
+ArticleHeader.propTypes = {
+  ...articleHeaderPropTypes,
+  onAuthorPress: PropTypes.func.isRequired
 };
+
+ArticleHeader.defaultProps = articleHeaderDefaultProps;
 
 export default ArticleHeader;

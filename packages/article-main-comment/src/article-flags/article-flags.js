@@ -17,7 +17,7 @@ const flagsMapping = new Map([
 ]);
 
 const HeaderFlags = ({ flags }) => {
-  if (!flags.length) return null;
+  if (!flags || flags.length === 0) return null;
   return (
     <View style={styles.flag}>
       {flags.map(flag => (

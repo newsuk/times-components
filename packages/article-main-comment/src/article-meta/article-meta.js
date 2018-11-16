@@ -37,11 +37,7 @@ const ArticleMeta = ({
 
 ArticleMeta.propTypes = {
   ...metaPropTypes,
-  onAuthorPress: PropTypes.func
-};
-
-ArticleMeta.defaultProps = {
-  onAuthorPress: () => {}
+  onAuthorPress: PropTypes.func.isRequired
 };
 
 export default ArticleMeta;

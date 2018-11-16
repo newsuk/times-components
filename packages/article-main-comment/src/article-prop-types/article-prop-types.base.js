@@ -12,14 +12,13 @@ const articlePagePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
-  receiveChildList: PropTypes.func
+  receiveChildList: PropTypes.func.isRequired
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
-  isLoading: false,
-  receiveChildList: () => {}
+  isLoading: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

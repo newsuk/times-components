@@ -17,14 +17,9 @@ const findComponents = (testInstance, componentName) =>
   });
 
 const emptyArticle = {
-  byline: null,
-  flags: null,
-  hasVideo: null,
+  flags: [],
   label: null,
-  leadAsset: null,
-  relatedArticleSlice: null,
-  standfirst: null,
-  topics: null
+  standfirst: null
 };
 
 export const snapshotTests = renderComponent => [
@@ -33,6 +28,60 @@ export const snapshotTests = renderComponent => [
     test() {
       const props = {
         error: { message: "An example error." }
+      };
+
+      const output = renderComponent(
+        <ArticleMainStandard
+          {...props}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+          receiveChildList={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "loading",
+    test() {
+      const props = {
+        isLoading: true
+      };
+
+      const output = renderComponent(
+        <ArticleMainStandard
+          {...props}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+          receiveChildList={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "onViewed should use the local onViewableItemsChanged function",
+    test() {
+      const props = {
+        onViewed: true
       };
 
       const output = renderComponent(

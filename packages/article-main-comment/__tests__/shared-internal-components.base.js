@@ -1,8 +1,13 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 
+import Context from "@times-components/context";
 import Flags from "../src/article-flags/article-flags";
+import Label from "../src/article-label/article-label";
+import Meta from "../src/article-meta/article-meta";
 import Standfirst from "../src/article-standfirst/article-standfirst";
+
+import { bylineWithLink } from "../fixtures/full-article";
 
 const snapshotTests = renderComponent => [
   {
@@ -38,10 +43,54 @@ const snapshotTests = renderComponent => [
 
       expect(output).toMatchSnapshot();
     }
+  },
+  {
+    name: "article label without a section colour",
+    test() {
+      const output = renderComponent(
+        <Context.Provider
+          value={{
+            theme: { sectionColour: null }
+          }}
+        >
+          <Label label="Random Label" />
+        </Context.Provider>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "article label renders null if there is no text",
+    test() {
+      const output = renderComponent(<Label />);
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "article meta without a section colour",
+    test() {
+      const output = renderComponent(
+        <Context.Provider
+          value={{
+            theme: { sectionColour: null }
+          }}
+        >
+          <Meta
+            byline={bylineWithLink()}
+            publicationName="TIMES"
+            publishedTime="2015-03-23T19:39:39.000Z"
+          />
+        </Context.Provider>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
   }
 ];
 
-export default renderComponent => {
+export default (renderComponent, platformTests = []) => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -56,5 +105,5 @@ export default renderComponent => {
     global.Intl = realIntl;
   });
 
-  iterator([...snapshotTests(renderComponent)]);
+  iterator([...snapshotTests(renderComponent), ...platformTests]);
 };
