@@ -63,6 +63,20 @@ exports[`different colours 1`] = `
     >
       A caption
     </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+          "paddingTop": 4,
+        }
+      }
+    >
+      
+    </Text>
     <View
       style={
         Object {

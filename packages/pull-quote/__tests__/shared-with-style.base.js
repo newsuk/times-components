@@ -11,11 +11,12 @@ export default renderComponent => {
       <PullQuotes
         caption={caption}
         captionColour="#850029"
-        content={content}
         onTwitterLinkPress={() => null}
         quoteColour="#850029"
         twitter={twitter}
-      />
+      >
+        {content}
+      </PullQuotes>
     );
 
     expect(output).toMatchSnapshot();
