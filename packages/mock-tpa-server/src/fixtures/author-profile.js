@@ -1,9 +1,12 @@
+import {fixtures} from "@times-components/provider-test-tools";
+
 const createArticle = () => ({
   hasVideo: false,
   headline: `British Trio Stopped on the way to join Isis`,
   id: `97c64f20-cb67-11e4-a202-50ac5def393a`,
   label: "EXAMPLE LABEL",
   leadAsset: {
+    id: "34d64f20-cb67-11e4-a202-50ac5def393a",
     crop: {
       url:
         "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F93ca91ce-e071-11e8-9ca5-2dc8c6b25903.jpg?crop=2592%2C1728%2C204%2C100"

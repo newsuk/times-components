@@ -16,8 +16,10 @@ import topic from "./topic";
 import topicArticles from "./fixtures/topic-articles.json";
 import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
+import articleFixtures from "../fixtures/article.json";
 
 const fixtures = {
+  articleFixtures,
   articleListNoImages,
   articleListWithImages,
   author,
