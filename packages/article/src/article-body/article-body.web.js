@@ -49,12 +49,9 @@ const renderers = ({ observed, registerNode }) => ({
   dropCap(key, { value }) {
     return {
       element: (
-        <Context.Consumer>
+        <Context.Consumer key={key}>
           {({ theme: { sectionColour } }) => (
-            <DropCapView
-              colour={sectionColour || colours.section.default}
-              key={key}
-            >
+            <DropCapView colour={sectionColour || colours.section.default}>
               {value}
             </DropCapView>
           )}
@@ -143,9 +140,9 @@ const renderers = ({ observed, registerNode }) => ({
   ) {
     return {
       element: (
-        <Context.Consumer>
+        <Context.Consumer key={key}>
           {({ theme: { sectionColour } }) => (
-            <PullQuoteContainer key={key}>
+            <PullQuoteContainer>
               <PullQuoteResp>
                 <PullQuote
                   caption={name}

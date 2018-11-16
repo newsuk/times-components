@@ -387,7 +387,9 @@ exports[`full article with style 1`] = `
           <div
             className="c10 S1"
           >
-            <PullQuote />
+            <PullQuote>
+              The pull quote content
+            </PullQuote>
           </div>
         </div>
         <div

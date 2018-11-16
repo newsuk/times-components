@@ -78,7 +78,7 @@ const ArticleRow = ({
       return {
         element: (
           <ArticleLink
-            key={index}
+            key={key}
             onPress={e =>
               onLinkPress(e, {
                 canonicalId: attributes.canonicalId,
@@ -97,7 +97,7 @@ const ArticleRow = ({
     paragraph(key, attributes, children, indx, node) {
       return {
         element: (
-          <ArticleParagraph ast={node} key={index} uid={index}>
+          <ArticleParagraph ast={node} key={key} uid={index}>
             {children}
           </ArticleParagraph>
         )
@@ -112,9 +112,9 @@ const ArticleRow = ({
     ) {
       return {
         element: (
-          <Context.Consumer>
+          <Context.Consumer key={key}>
             {({ theme: { sectionColour } }) => (
-              <View key={key}>
+              <View>
                 <PullQuote
                   caption={name}
                   captionColour={sectionColour || colours.section.default}
