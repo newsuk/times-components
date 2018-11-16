@@ -16,7 +16,7 @@ import {
   ArticleConfigurator,
   makeArticleConfiguration
 } from "./showcase-helper";
-import Article from "./src/article-main-comment";
+import ArticleMainCommment from "./src/article-main-comment";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
@@ -54,7 +54,7 @@ const renderArticle = ({
         <Context.Provider
           value={{ makeArticleUrl, theme: { scale, sectionColour } }}
         >
-          <Article
+          <ArticleMainCommment
             adConfig={adConfig}
             analyticsStream={analyticsStream}
             article={data}

@@ -21,7 +21,7 @@ exports[`3. article standfirst with content 1`] = `
 
 exports[`4. article standfirst with no content 1`] = `null`;
 
-exports[`5. article label without a section colour 1`] = `
+exports[`5. article label uses default section colour 1`] = `
 <div>
   <div>
     RANDOM LABEL
@@ -31,7 +31,7 @@ exports[`5. article label without a section colour 1`] = `
 
 exports[`6. article label renders null if there is no text 1`] = `null`;
 
-exports[`7. article meta without a section colour 1`] = `
+exports[`7. article meta uses default section colour 1`] = `
 <div>
   <div>
     <ArticleBylineWithLinks

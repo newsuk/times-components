@@ -45,7 +45,7 @@ const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "article label without a section colour",
+    name: "article label uses default section colour",
     test() {
       const output = renderComponent(
         <Context.Provider
@@ -69,7 +69,7 @@ const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "article meta without a section colour",
+    name: "article meta uses default section colour",
     test() {
       const output = renderComponent(
         <Context.Provider

@@ -41,7 +41,7 @@ addSerializers(
 
 const tests = [
   {
-    name: "a full article with an image as the lead asset",
+    name: "a full article",
     test() {
       const article = articleFixture({
         ...testFixture,
@@ -135,6 +135,7 @@ const tests = [
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
+            receiveChildList={() => {}}
           />
         </Context.Provider>
       );

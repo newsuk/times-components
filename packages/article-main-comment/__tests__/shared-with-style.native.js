@@ -9,7 +9,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import ArticleMainStandard from "../src/article-main-comment";
+import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
@@ -128,7 +128,7 @@ export default () => {
     });
 
     const output = TestRenderer.create(
-      <ArticleMainStandard
+      <ArticleMainComment
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}

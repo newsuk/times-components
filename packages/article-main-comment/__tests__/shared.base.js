@@ -3,7 +3,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import ArticleMainStandard from "../src/article-main-comment";
+import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
@@ -31,7 +31,7 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <ArticleMainStandard
+        <ArticleMainComment
           {...props}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -58,7 +58,7 @@ export const snapshotTests = renderComponent => [
       };
 
       const output = renderComponent(
-        <ArticleMainStandard
+        <ArticleMainComment
           {...props}
           adConfig={adConfig}
           analyticsStream={() => {}}
@@ -81,7 +81,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with no headline falls back to use shortHeadline",
     test() {
       const output = renderComponent(
-        <ArticleMainStandard
+        <ArticleMainComment
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -108,7 +108,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with ads",
     test() {
       const output = renderComponent(
-        <ArticleMainStandard
+        <ArticleMainComment
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -145,7 +145,7 @@ const negativeTests = [
     name: "an article with no flags",
     test() {
       const testInstance = TestRenderer.create(
-        <ArticleMainStandard
+        <ArticleMainComment
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({
@@ -173,7 +173,7 @@ const negativeTests = [
     name: "an article with no label",
     test() {
       const testInstance = TestRenderer.create(
-        <ArticleMainStandard
+        <ArticleMainComment
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({ ...testFixture, label: null })}
@@ -198,7 +198,7 @@ const negativeTests = [
     name: "an article with no standfirst",
     test() {
       const testInstance = TestRenderer.create(
-        <ArticleMainStandard
+        <ArticleMainComment
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={articleFixture({

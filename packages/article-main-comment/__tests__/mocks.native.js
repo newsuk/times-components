@@ -26,5 +26,4 @@ jest.mock("@times-components/tracking", () => ({
 }));
 jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/video", () => "Video");
-jest.mock("@times-components/video-label", () => "VideoLabel");
 mockNativeModules();
