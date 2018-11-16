@@ -4,60 +4,7 @@ exports[`1. an error 1`] = `null`;
 
 exports[`2. loading 1`] = `null`;
 
-exports[`3. onviewed should use the local onviewableitemschanged function 1`] = `
-<Article
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  data={null}
-/>
-`;
-
-exports[`4. an article with no headline falls back to use shortheadline 1`] = `
+exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <Article
   adConfig={
     Object {
@@ -249,7 +196,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 />
 `;
 
-exports[`5. an article with ads 1`] = `
+exports[`4. an article with ads 1`] = `
 <Article
   adConfig={
     Object {

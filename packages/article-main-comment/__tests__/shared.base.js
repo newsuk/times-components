@@ -130,6 +130,7 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          onViewed
           receiveChildList={() => {}}
         />
       );

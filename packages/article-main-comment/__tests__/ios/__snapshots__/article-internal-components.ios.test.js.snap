@@ -1,263 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. an error 1`] = `<ArticleError />`;
-
-exports[`2. loading 1`] = `null`;
-
-exports[`3. an article with no headline falls back to use shortheadline 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
+exports[`1. article flags with content 1`] = `
+<View>
   <View>
-    <View>
-      <View>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-        <Text>
-          Some Short Headline
-        </Text>
-        <View>
-          <View>
-            <ArticleBylineWithLinks
-              ast={
-                Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Some byline",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ]
-              }
-              color="#333333"
-            />
-          </View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <Text
-          selectable={true}
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleTopics
-          topics={
-            Array [
-              Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <RelatedArticles
-        slice={
-          Object {
-            "__typename": "StandardSlice",
-            "items": Array [
-              Object {
-                "article": Object {
-                  "__typename": "Article",
-                  "byline": Array [],
-                  "hasVideo": false,
-                  "headline": "RA Headline",
-                  "id": "ra-1",
-                  "label": "RA Label",
-                  "leadAsset": Object {
-                    "__typename": "Image",
-                    "crop169": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop169.io",
-                    },
-                    "crop32": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop32.io",
-                    },
-                    "title": "RA Title",
-                  },
-                  "publicationName": "TIMES",
-                  "publishedTime": "2015-03-23T19:39:39.000Z",
-                  "shortHeadline": "Headline",
-                  "shortIdentifier": "2k629tpvh",
-                  "slug": "this-is-slug",
-                  "summary105": Array [],
-                  "summary125": Array [],
-                  "summary145": Array [],
-                  "summary160": Array [],
-                  "summary175": Array [],
-                  "summary225": Array [],
-                  "url": "https://ra.io",
-                },
-              },
-            ],
-            "sliceName": "StandardSlice",
-          }
-        }
-      />
-    </View>
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
+    <NewArticleFlag />
   </View>
-</RCTScrollView>
+</View>
 `;
 
-exports[`4. an article with ads 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
+exports[`2. article flags with no content 1`] = `null`;
+
+exports[`3. article standfirst with content 1`] = `
+<Text
+  accessibilityRole="heading"
+  aria-level="2"
 >
+  This is a standfirst
+</Text>
+`;
+
+exports[`4. article standfirst with no content 1`] = `null`;
+
+exports[`5. article label without a section colour 1`] = `
+<View>
+  <ArticleLabel
+    color="#333333"
+    title="Random Label"
+  />
+</View>
+`;
+
+exports[`6. article label renders null if there is no text 1`] = `null`;
+
+exports[`7. article meta without a section colour 1`] = `
+<View>
   <View>
-    <View>
-      <View>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-        <Text>
-          Some Headline
-        </Text>
-        <View>
-          <View>
-            <ArticleBylineWithLinks
-              ast={
-                Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Some byline",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ]
-              }
-              color="#333333"
-            />
-          </View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="native-inline-ad"
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleTopics
-          topics={
-            Array [
-              Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <RelatedArticles
-        slice={
+    <ArticleBylineWithLinks
+      ast={
+        Array [
           Object {
-            "__typename": "StandardSlice",
-            "items": Array [
+            "attributes": Object {
+              "slug": "kaya-burgess",
+            },
+            "children": Array [
               Object {
-                "article": Object {
-                  "__typename": "Article",
-                  "byline": Array [],
-                  "hasVideo": false,
-                  "headline": "RA Headline",
-                  "id": "ra-1",
-                  "label": "RA Label",
-                  "leadAsset": Object {
-                    "__typename": "Image",
-                    "crop169": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop169.io",
-                    },
-                    "crop32": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop32.io",
-                    },
-                    "title": "RA Title",
-                  },
-                  "publicationName": "TIMES",
-                  "publishedTime": "2015-03-23T19:39:39.000Z",
-                  "shortHeadline": "Headline",
-                  "shortIdentifier": "2k629tpvh",
-                  "slug": "this-is-slug",
-                  "summary105": Array [],
-                  "summary125": Array [],
-                  "summary145": Array [],
-                  "summary160": Array [],
-                  "summary175": Array [],
-                  "summary225": Array [],
-                  "url": "https://ra.io",
+                "attributes": Object {
+                  "value": "Kaya Burgess",
                 },
+                "children": Array [],
+                "name": "text",
               },
             ],
-            "sliceName": "StandardSlice",
-          }
-        }
-      />
-    </View>
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Religious Affairs Correspondent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+      color="#333333"
+    />
   </View>
-</RCTScrollView>
+  <View>
+    <Text>
+      Monday March 23 2015, 7:39pm, The Times
+    </Text>
+  </View>
+</View>
 `;
