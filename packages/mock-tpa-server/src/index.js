@@ -8,14 +8,17 @@ const serviceName = "Mock TPA server";
 let server;
 
 export function start() {
-  const [{ defaults }] = article();
-  const schema = makeMocks(defaults);
+  return new Promise(resolve => {
+     const [{ defaults }] = article();
+      const schema = makeMocks(defaults);
 
-  server = new ApolloServer({ schema });
+      server = new ApolloServer({ schema });
 
-  server.listen().then(({ url }) => {
-    console.log(`🚀  ${serviceName} ready at ${url}`);
-  });
+      server.listen().then(({ url }) => {
+        console.log(`🚀  ${serviceName} ready at ${url}`);
+        resolve(true)
+      });
+   })
 }
 
 export function stop() {

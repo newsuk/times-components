@@ -1,6 +1,9 @@
+
 describe("Article", () => {
   beforeEach(() => {
-    cy.visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
+    cy.task('startServer').then(() => 
+      cy.visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+    );
   });
 
   it("loads hi-res images for related articles", () =>
