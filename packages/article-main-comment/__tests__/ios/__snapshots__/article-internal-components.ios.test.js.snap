@@ -8,11 +8,6 @@ exports[`3. onviewed should use the local onviewableitemschanged function 1`] = 
 
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <RCTScrollView
-  ListHeaderComponent={
-    <bound renderHeader
-      width={1440}
-    />
-  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -143,11 +138,6 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`5. an article with ads 1`] = `
 <RCTScrollView
-  ListHeaderComponent={
-    <bound renderHeader
-      width={1440}
-    />
-  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
