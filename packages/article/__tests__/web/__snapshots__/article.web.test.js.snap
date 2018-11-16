@@ -18,12 +18,14 @@ exports[`1. a full article with all content items 1`] = `
         his being Black History Month, last week
       </p>
       <div>
-        <link
-          href="https://interactive.io"
-          rel="import"
-        />
-        <times-datawrapper
-          chart-id="csmgb"
+        <InteractiveWrapper
+          attributes={
+            Object {
+              "chart-id": "csmgb",
+            }
+          }
+          element="times-datawrapper"
+          source="https://interactive.io"
         />
       </div>
       <div

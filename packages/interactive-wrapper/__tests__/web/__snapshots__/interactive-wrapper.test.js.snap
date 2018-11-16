@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-Array [
+<div>
   <link
     href="//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
     rel="import"
-  />,
+  />
   <chapter-header
     chaptercounter="Chapter%20one"
     heading="A heading"
     standfirst="A standfirst"
-  />,
-]
+  />
+</div>
 `;

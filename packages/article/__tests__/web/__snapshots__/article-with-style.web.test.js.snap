@@ -347,8 +347,7 @@ exports[`full article with style 1`] = `
       <div
         className="c5"
       >
-        <link />
-        <times-datawrapper />
+        <InteractiveWrapper />
       </div>
       <div>
         <div
