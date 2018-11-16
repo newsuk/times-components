@@ -2,7 +2,8 @@ import {fixtures} from "@times-components/provider-test-tools";
 
 const createArticle = () => ({
   hasVideo: false,
-  headline: `British Trio Stopped on the way to join Isis`,
+  byline: [],
+  headline: `Patisserie calls in turnaround king after chief executive quits`,
   id: `97c64f20-cb67-11e4-a202-50ac5def393a`,
   label: "EXAMPLE LABEL",
   leadAsset: {
@@ -16,12 +17,25 @@ const createArticle = () => ({
   shortHeadline: `Stopped on the way to join Isis`,
   shortIdentifier: `57nwljmbn`,
   slug: `british-trio-stopped-on-the-way-to-join-isis`,
-  summary: [],
+  summary: [
+    {
+      "name": "paragraph",
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "In 2004, when I met Michael Bublé for the first time, he was an unknown 28-year-old launching himself as a jazzy"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
   url: "/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn" // TODO localhost should be an env variable.
 });
 
-const createArticles = count =>
-  new Array(count).fill(0).map(() => createArticle());
+const createArticles = pageArtCount =>
+  new Array(pageArtCount).fill(0).map(() => createArticle());
 
 const createBiography = () => [
   {
@@ -54,9 +68,62 @@ const createBiography = () => [
   }
 ];
 
-const articleCount = 22;
+const description = () => [
+  {
+    attributes: {
+      value: "Chelsea is known for its "
+    },
+    children: [],
+    name: "text"
+  },
+  {
+    attributes: {},
+    children: [
+      {
+        attributes: {
+          value: "affluent"
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "italic"
+  },
+  {
+    attributes: {
+      value:
+        " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores."
+    },
+    children: [],
+    name: "text"
+  }
+];
 
-export default function() {
+const byline = () => [
+  {
+    name: "author",
+    "attributes": {
+      "slug": "will-hodgkinson"
+    },
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "Will Hodgkinson"
+        },
+        "children": []
+      }
+    ]
+  }
+]
+const totalArticleCount = 22;
+const pageArtCount = 20;
+
+const id = "97c64f20-cb67-11e4-a202-50ac5def393a";
+
+const artFixtures = fixtures.articleFixtures;
+
+export default function(makeArticle = x => x) {
   return {
     types: {
       Media: () => ({
@@ -69,8 +136,8 @@ export default function() {
         __typename: "Author",
         articles: {
           __typename: "Articles",
-          count: articleCount,
-          list: createArticles(articleCount)
+          count: totalArticleCount,
+          list: createArticles(pageArtCount)
         },
         biography: createBiography(),
         hasLeadAssets: false,
@@ -79,6 +146,17 @@ export default function() {
         name: "Fiona Hamilton",
         slug: "fiona-hamilton",
         twitter: "jdoe"
+      }),
+      topic: () => ({
+        __typename: "Topic",
+        articles: {
+          __typename: "Articles",
+          count: totalArticleCount,
+          list: createArticles(pageArtCount)
+        },
+        byline,
+        name: "Canada",
+        description: description
       })
     }
   };
