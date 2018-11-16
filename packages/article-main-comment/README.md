@@ -38,8 +38,6 @@ yarn test:all
 
 Visit the official
 
-http://components.thetimes.co.uk/?knob-Lead%20Asset=true&knob-Size%20of%20ad%20placeholder%3A=default&knob-Video=true&knob-Headline=true&knob-Section=%23333333&knob-Flags=true&knob-Standfirst=true&knob-Scale=medium&knob-Linked%20Byline=true&knob-Label=true&selectedKind=Pages%2FArticle&selectedStory=Main%20Standard&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs
+http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Scale=medium&knob-Section=%23850029&knob-Flags=true&knob-Label=true&knob-Linked%20Byline=true&knob-Standfirst=true&selectedKind=Pages%2FArticle&selectedStory=Main%20Comment&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs
 
 ## Future
-
-<!-- Add details of future development here. -->

@@ -4,9 +4,7 @@ exports[`1. an error 1`] = `<ArticleError />`;
 
 exports[`2. loading 1`] = `null`;
 
-exports[`3. onviewed should use the local onviewableitemschanged function 1`] = `null`;
-
-exports[`4. an article with no headline falls back to use shortheadline 1`] = `
+exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -136,7 +134,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. an article with ads 1`] = `
+exports[`4. an article with ads 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}

@@ -78,33 +78,6 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "onViewed should use the local onViewableItemsChanged function",
-    test() {
-      const props = {
-        onViewed: true
-      };
-
-      const output = renderComponent(
-        <ArticleMainStandard
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
-        />
-      );
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
     name: "an article with no headline falls back to use shortHeadline",
     test() {
       const output = renderComponent(
