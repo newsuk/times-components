@@ -13,6 +13,7 @@ const preventDefaultedAction = decorateAction =>
 const content =
   "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child";
 const caption = "Judge Sapnara";
+const title = "Author";
 const twitter = "@henrywinter";
 
 export default {
@@ -22,13 +23,15 @@ export default {
         <PullQuotes
           caption={text("Caption: ", caption)}
           captionColour={color("Caption Colour: ", "#850029")}
-          content={text("Content: ", content)}
           onTwitterLinkPress={preventDefaultedAction(decorateAction)(
             "onTwitterLinkPress"
           )}
           quoteColour={color("Quote Colour: ", "#850029")}
+          text={text("Title: ", title)}
           twitter={text("Twitter Link: ", twitter)}
-        />
+        >
+          {text("Content: ", content)}
+        </PullQuotes>
       ),
       name: "Default",
       type: "story"
