@@ -1,0 +1,99 @@
+/* eslint-disable consistent-return */
+
+import React, { Component } from "react";
+import ArticleError from "@times-components/article-error";
+import Article from "@times-components/article";
+import { getHeadline } from "@times-components/utils";
+import ArticleHeader from "./article-header/article-header";
+import {
+  articlePagePropTypes,
+  articlePageDefaultProps
+} from "./article-prop-types/article-prop-types";
+
+class ArticlePage extends Component {
+  constructor() {
+    super();
+    this.renderHeader = this.renderHeader.bind(this);
+  }
+
+  renderHeader() {
+    const {
+      author,
+      byline,
+      flags,
+      headline,
+      label,
+      publicationName,
+      publishedTime,
+      shortHeadline,
+      standfirst
+    } = this.props.article;
+    const { onAuthorPress } = this.props;
+
+    return (
+      <ArticleHeader
+        authorImage={author.image}
+        byline={byline}
+        flags={flags}
+        headline={getHeadline(headline, shortHeadline)}
+        label={label}
+        onAuthorPress={onAuthorPress}
+        publicationName={publicationName}
+        publishedTime={publishedTime}
+        standfirst={standfirst}
+      />
+    );
+  }
+
+  render() {
+    const { error, refetch, isLoading } = this.props;
+
+    if (error) {
+      return <ArticleError refetch={refetch} />;
+    }
+
+    if (isLoading) {
+      return null;
+    }
+
+    const {
+      adConfig,
+      analyticsStream,
+      article,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onVideoPress,
+      onViewed,
+      receiveChildList
+    } = this.props;
+
+    return (
+      <Article
+        adConfig={adConfig}
+        analyticsStream={analyticsStream}
+        data={article}
+        Header={this.renderHeader}
+        onAuthorPress={onAuthorPress}
+        onCommentGuidelinesPress={onCommentGuidelinesPress}
+        onCommentsPress={onCommentsPress}
+        onLinkPress={onLinkPress}
+        onRelatedArticlePress={onRelatedArticlePress}
+        onTopicPress={onTopicPress}
+        onTwitterLinkPress={onTwitterLinkPress}
+        onVideoPress={onVideoPress}
+        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+        receiveChildList={receiveChildList}
+      />
+    );
+  }
+}
+
+ArticlePage.propTypes = articlePagePropTypes;
+ArticlePage.defaultProps = articlePageDefaultProps;
+
+export default ArticlePage;
