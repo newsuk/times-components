@@ -3,12 +3,12 @@ import PullQuoteBase from "./pull-quote.base";
 import makeTwitterUrl from "./utils";
 import { propTypes, defaultProps } from "./pull-quote-prop-types";
 
-const PullQuote = ({ caption, ...props }) => {
+const PullQuote = ({ children, ...props }) => {
   const { twitter } = props;
   return (
     <blockquote url={twitter ? makeTwitterUrl(twitter) : ""}>
       <PullQuoteBase {...props}>
-        <cite>{caption}</cite>
+        <cite>{children}</cite>
       </PullQuoteBase>
     </blockquote>
   );

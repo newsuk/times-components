@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
   link: {
     ...sharedStyles.link,
     paddingTop: 2
+  },
+  text: {
+    ...sharedStyles.text,
+    paddingTop: 4
   }
 });
 

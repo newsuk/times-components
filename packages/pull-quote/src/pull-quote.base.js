@@ -6,18 +6,20 @@ import { propTypes, defaultProps } from "./pull-quote-prop-types";
 import styles from "./styles";
 
 const PullQuotes = ({
+  caption,
   captionColour,
   children,
-  content,
   onTwitterLinkPress,
   quoteColour,
+  text,
   twitter
 }) => (
   <View style={styles.container}>
     <Text style={[styles.quotes, { color: quoteColour }]}>&ldquo;</Text>
-    <PullQuoteContent>{content}</PullQuoteContent>
+    <PullQuoteContent>{children}</PullQuoteContent>
     <View style={styles.captionContainer}>
-      <Text style={[styles.caption, { color: captionColour }]}>{children}</Text>
+      <Text style={[styles.caption, { color: captionColour }]}>{caption}</Text>
+      <Text style={styles.text}>{caption && text ? `, ${text}` : text}</Text>
       <PullQuoteTwitterLink
         onTwitterLinkPress={onTwitterLinkPress}
         twitter={twitter}

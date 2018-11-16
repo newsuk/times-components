@@ -42,6 +42,14 @@ const sharedStyles = {
     marginBottom: spacing(-8),
     marginTop: 0
   },
+  text: {
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "caption"
+    }),
+    color: colours.functional.secondary,
+    marginBottom: 0
+  },
   twitterContainer: {
     alignItems: "center",
     borderLeftColor: colours.functional.keyline,
