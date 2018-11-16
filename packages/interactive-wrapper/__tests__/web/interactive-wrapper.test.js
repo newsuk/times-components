@@ -24,5 +24,5 @@ it("renders correctly", () => {
   const container = document.createElement("div");
 
   mount(<InteractiveWrapper {...props} />, { attachTo: container });
-  expect(container.innerHTML).toMatchSnapshot();
+  expect(container).toMatchSnapshot();
 });
