@@ -1,6 +1,7 @@
 const topic = require("../component/topic");
 const runServer = require("../lib/run-server");
-const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
+const defaultAdConfig = require("../lib/ads/make-topic-ad-config")
+  .defaultServer;
 
 module.exports = (
   { currentPage, topicSlug },
