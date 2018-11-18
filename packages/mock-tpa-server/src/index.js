@@ -1,12 +1,9 @@
 /* eslint-disable no-console */
 
 import { ApolloServer } from "apollo-server";
-import { makeMocks, article } from "@times-components/provider-test-tools";
+import { makeMocks } from "@times-components/provider-test-tools";
+import mockData from "./fixtures/mock-data";
 
-import {
-  authorArticlesWithImages as authorArticlesWithImagesQuery
-} from "@times-components/provider-queries";
-import authorProfile from "./fixtures/author-profile"
 const serviceName = "Mock TPA server";
 
 let server;
@@ -14,7 +11,7 @@ let server;
 export function start() {
 
   console.log('Inside Mock TPA start');
-  const schema = makeMocks(authorProfile());
+  const schema = makeMocks(mockData());
 
   server = new ApolloServer({ schema });
 

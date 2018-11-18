@@ -1,37 +1,33 @@
-import {fixtures, article} from "@times-components/provider-test-tools";
+import {article} from "@times-components/provider-test-tools";
 
 const createArticle = () => ({
-  hasVideo: false,
   byline: [],
+  hasVideo: false,
   headline: `Patisserie calls in turnaround king after chief executive quits`,
   id: `97c64f20-cb67-11e4-a202-50ac5def393a`,
   label: "EXAMPLE LABEL",
   leadAsset: {
-    id: "34d64f20-cb67-11e4-a202-50ac5def393a",
     crop: {
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F93ca91ce-e071-11e8-9ca5-2dc8c6b25903.jpg?crop=2592%2C1728%2C204%2C100"
-    }
+      url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F93ca91ce-e071-11e8-9ca5-2dc8c6b25903.jpg?crop=2592%2C1728%2C204%2C100"
+    },
+    id: "34d64f20-cb67-11e4-a202-50ac5def393a"
   },
   publishedTime: new Date(0),
   shortHeadline: `Stopped on the way to join Isis`,
   shortIdentifier: `57nwljmbn`,
   slug: `british-trio-stopped-on-the-way-to-join-isis`,
-  summary: [
-    {
-      "name": "paragraph",
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value": "In 2004, when I met Michael Bublé for the first time, he was an unknown 28-year-old launching himself as a jazzy"
-          },
-          "children": []
-        }
-      ]
-    }
-  ],
+  summary: [{
+    "children": [{
+      "attributes": {
+        "value": "In 2004, when I met Michael Bublé for the first time, he was an unknown 28-year-old launching himself as a jazzy"
+      },
+      "children": [],
+      "name": "text"
+    }],
+    "name": "paragraph"
+  }],
   url: "/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn" // TODO localhost should be an env variable.
+
 });
 
 const createArticles = pageArtCount =>
@@ -100,32 +96,26 @@ const description = () => [
 ];
 
 const byline = () => [
-  {
-    name: "author",
+{
     "attributes": {
       "slug": "will-hodgkinson"
     },
-    "children": [
-      {
-        "name": "text",
-        "attributes": {
-          "value": "Will Hodgkinson"
-        },
-        "children": []
-      }
-    ]
+    "children": [{
+      "attributes": {
+        "value": "Will Hodgkinson"
+      },
+      "children": [],
+      "name": "text"
+    }],
+    name: "author"
   }
 ]
 const totalArticleCount = 40;
 const pageArtCount = 20;
 
-const id = "97c64f20-cb67-11e4-a202-50ac5def393a";
-
 const [{defaults}] = article();
 
-export default (  makeArticle = x => x,
-  makeRelatedArticle = x => x) => {
-  return {
+export default () => ({
     types: {
       Media: () => ({
         __typename: "Image"
@@ -156,9 +146,9 @@ export default (  makeArticle = x => x,
           list: createArticles(pageArtCount)
         },
         byline,
-        name: "Canada",
-        description: description
+        description,
+        name: "Canada"
       })
     }
-  };
-}
+  });
+
