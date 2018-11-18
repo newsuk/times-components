@@ -133,18 +133,7 @@ export default ({
             __typename: "Image"
           }),
           UUID: () => "a-u-u-i-d"
-        }//,
-        // values: {
-        //   author: () => ({
-        //     articles: {
-        //       count,
-
-        //       list(_, { first }) {
-        //         return new MockList(Math.min(count, first));
-        //       }
-        //     }
-        //   })
-        // }
+        }
       },
       error: articleError(),
       query: authorArticlesWithImages,
