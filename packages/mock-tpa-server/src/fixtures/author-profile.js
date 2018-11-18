@@ -1,4 +1,4 @@
-import {fixtures} from "@times-components/provider-test-tools";
+import {fixtures, article} from "@times-components/provider-test-tools";
 
 const createArticle = () => ({
   hasVideo: false,
@@ -116,20 +116,68 @@ const byline = () => [
     ]
   }
 ]
-const totalArticleCount = 22;
+const totalArticleCount = 40;
 const pageArtCount = 20;
 
 const id = "97c64f20-cb67-11e4-a202-50ac5def393a";
 
 const artFixtures = fixtures.articleFixtures;
 
-export default function(makeArticle = x => x) {
+const convertRatio = ratio => {
+  if (ratio === "16:9") {
+    return "320/180";
+  }
+
+  if (ratio === "3:2") {
+    return "300/200";
+  }
+
+  return "100/100";
+};
+
+const getMediaUrl = (obj, ratio) => {
+  const crop = obj[`crop${ratio.replace(":", "")}`];
+
+  return {
+    url: crop ? crop.url : `https://placeimg.com/${convertRatio(ratio)}/tech`
+  };
+};
+
+export default (  makeArticle = x => x,
+  makeRelatedArticle = x => x) => {
   return {
     types: {
       Media: () => ({
         __typename: "Image"
       }),
-      Slug: () => "fiona-hamilton"
+      Article: (parent, { id }) => {
+        if (!parent) {
+          return makeArticle({
+            ...artFixtures,
+            id
+          });
+        }
+
+        return makeRelatedArticle(parent);
+      },
+      Crop: (parent, { ratio }) => {
+        if (parent.posterImage) {
+          return getMediaUrl(parent.posterImage, ratio);
+        }
+
+        return getMediaUrl(parent, ratio);
+      },
+      Markup: (parent, { maxCharCount }) => {
+        if (maxCharCount) {
+          return parent[`summary${maxCharCount}`] || {};
+        }
+
+        // this oddly returns the provided fixture
+        return {};
+      },
+      Ratio: () => "16:9",
+      URL: () => "https://test.io",
+      UUID: () => "a-u-u-i-d"
     },
     values: {
       author: () => ({
