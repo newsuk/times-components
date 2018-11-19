@@ -1,4 +1,7 @@
+import sharedTest from "../shared-article-list";
+
 describe("AuthorProfile", () => {
+  const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
   beforeEach(() => {
     cy.visit("/profile/fiona-hamilton");
   });
@@ -11,24 +14,16 @@ describe("AuthorProfile", () => {
   });
 
   it("Author has article elememts on the page", () => {
-    cy.get('div[data-testid="97c64f20-cb67-11e4-a202-50ac5def393a.0"]');
+    cy.get(`div[data-testid="${id}"]`);
   });
 
-  it("Click on Author list takes you to an article", () => {
-    cy.get('div[data-testid="97c64f20-cb67-11e4-a202-50ac5def393a.0"]').click();
+  it("Click on an article in the author list takes you to the corresponding article", () => {
+    cy.get(`div[data-testid="${id}"]`).click();
     cy.url().should(
       "eq",
       "http://localhost:3000/article/97c64f20-cb67-11e4-a202-50ac5def393a"
     );
   });
 
-  it("Next and Previous Pagination works", () => {
-    cy.get('div[data-testid="pagination-button-next"]')
-      .first()
-      .click();
-    cy.get('div[data-testid="pagination-button-previous"]')
-      .first()
-      .click();
-    cy.get('div[data-testid="pagination-button-next"]');
-  });
+  sharedTest();
 });

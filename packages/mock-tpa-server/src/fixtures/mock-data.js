@@ -32,7 +32,7 @@ const createArticle = () => ({
       name: "paragraph"
     }
   ],
-  url: "/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn" // TODO localhost should be an env variable.
+  url: "/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn"
 });
 
 const createArticles = pageArtCount =>
