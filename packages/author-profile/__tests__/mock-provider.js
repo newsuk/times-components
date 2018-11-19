@@ -57,11 +57,12 @@ export class AuthorArticlesNoImagesProvider extends Component {
 
   render() {
     const { children, pageSize } = this.props;
+    const { author: stateAuthor } = this.state;
 
     return (
       <authorArticlesNoImagesProvider>
         {children({
-          author: this.state.author,
+          author: stateAuthor,
           fetchMore: this.fetchMore,
           pageSize,
           variables: {}
@@ -91,11 +92,12 @@ export class AuthorArticlesWithImagesProvider extends Component {
 
   render() {
     const { children, pageSize } = this.props;
+    const { author: stateAuthor } = this.state;
 
     return (
       <authorArticlesWithImagesProvider>
         {children({
-          author: this.state.author,
+          author: stateAuthor,
           fetchMore: this.fetchMore,
           pageSize,
           variables: {

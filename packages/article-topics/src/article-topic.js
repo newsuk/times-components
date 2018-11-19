@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
-import { topicPropTypes } from "./article-topic-prop-types";
+import topicPropTypes from "./article-topic-prop-types";
 
 const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
   const fontSizeStyle = fontSize ? { fontSize } : null;

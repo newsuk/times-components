@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleLeadAssetImage, {
-  propTypes as imagePropTypes
-} from "./article-lead-asset-image";
-import ArticleLeadAssetVideo, {
-  propTypes as videoPropTypes
-} from "./article-lead-asset-video";
+import ArticleLeadAssetImage from "./article-lead-asset-image";
+import ArticleLeadAssetVideo from "./article-lead-asset-video";
 
 const ArticleLeadAsset = ({ data, width }) => {
   const LeadAsset = data.isVideo
@@ -17,8 +13,8 @@ const ArticleLeadAsset = ({ data, width }) => {
 
 ArticleLeadAsset.propTypes = {
   data: PropTypes.oneOfType([
-    PropTypes.shape(videoPropTypes),
-    PropTypes.shape(imagePropTypes)
+    PropTypes.shape(ArticleLeadAssetVideo.propTypes),
+    PropTypes.shape(ArticleLeadAssetImage.propTypes)
   ]).isRequired,
   width: PropTypes.number
 };

@@ -20,6 +20,7 @@ class DOMContext extends PureComponent {
   }
 
   handleMessageEvent = e => {
+    const { onRenderComplete } = this.props;
     const json = e.nativeEvent.data;
     if (json.indexOf("isTngMessage") === -1) {
       // don't try and process postMessage events from 3rd party scripts
@@ -31,17 +32,18 @@ class DOMContext extends PureComponent {
       throw new Error(`Error inside WebView: ${detail}`);
     }
     if (type === "renderComplete") {
-      this.props.onRenderComplete();
+      onRenderComplete();
     } else if (type === "log") {
       console.log(detail); // eslint-disable-line no-console
     }
   };
 
   handleNavigationStateChange = ({ url }) => {
+    const { baseUrl } = this.props;
     const reactPostmessageBridgePrefix = "react-js-navigation://";
     if (
       url.indexOf(reactPostmessageBridgePrefix) !== 0 &&
-      DOMContext.hasDifferentOrigin(url, this.props.baseUrl)
+      DOMContext.hasDifferentOrigin(url, baseUrl)
     ) {
       this.webView.stopLoading();
       DOMContext.openURLInBrowser(url);
@@ -49,7 +51,7 @@ class DOMContext extends PureComponent {
   };
 
   render() {
-    const { data, init, width, height } = this.props;
+    const { baseUrl, data, init, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
@@ -106,7 +108,7 @@ class DOMContext extends PureComponent {
             this.webView = ref;
           }}
           source={{
-            baseUrl: this.props.baseUrl,
+            baseUrl,
             html
           }}
           style={{ backgroundColor: "transparent" }}

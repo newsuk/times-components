@@ -56,16 +56,13 @@ class LazyLoad extends Component {
   }
 
   handleObservation(entries) {
+    const { threshold } = this.props;
+    const { nodes } = this.state;
+
     entries.forEach(({ target, intersectionRatio }) => {
-      if (
-        intersectionRatio >= this.props.threshold &&
-        !this.state.nodes.get(target.id)
-      ) {
+      if (intersectionRatio >= threshold && !nodes.get(target.id)) {
         this.pending.add(target);
-      } else if (
-        intersectionRatio < this.props.threshold &&
-        this.pending.has(target)
-      ) {
+      } else if (intersectionRatio < threshold && this.pending.has(target)) {
         this.pending.delete(target);
       }
     });
@@ -78,12 +75,12 @@ class LazyLoad extends Component {
           return;
         }
 
-        this.setState({
+        this.setState(state => ({
           nodes: new Map([
-            ...this.state.nodes,
+            ...state.nodes,
             ...[...this.pending].map(n => [n.id, n])
           ])
-        });
+        }));
 
         this.pending.clear();
       }, 100);
@@ -118,10 +115,13 @@ class LazyLoad extends Component {
   }
 
   render() {
-    return this.props.children({
-      clientHasRendered: this.state.clientHasRendered,
+    const { children } = this.props;
+    const { clientHasRendered, nodes } = this.state;
+
+    return children({
+      clientHasRendered,
       isObserving: this.isObserving,
-      observed: this.state.nodes,
+      observed: nodes,
       registerNode: this.registerNode
     });
   }

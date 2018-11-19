@@ -10,12 +10,12 @@ import {
 import Box, { boxStyles } from "./storybook-components/box";
 import Boxes from "./storybook-components/boxes";
 
-const BoxWithButtons = props => (
-  <View style={[boxStyles.box, { backgroundColor: props.color }]}>
-    <Button onPress={() => props.onPress("button 1")} title="Press me" />
+const BoxWithButtons = ({ color, onPress }) => (
+  <View style={[boxStyles.box, { backgroundColor: color }]}>
+    <Button onPress={() => onPress("button 1")} title="Press me" />
     <Button
       color="limegreen"
-      onPress={() => props.onPress("button 2")}
+      onPress={() => onPress("button 2")}
       title="Or me"
     />
   </View>

@@ -2,20 +2,18 @@ import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import PropTypes from "prop-types";
 
-const Button = props => (
+const Button = ({ buttonText, onPress, testID }) => (
   <TouchableOpacity
-    onPress={props.onPress}
+    onPress={onPress}
     style={{
       backgroundColor: "blue",
       margin: 5,
       padding: 5,
       width: 200
     }}
-    testID={props.testID}
+    testID={testID}
   >
-    <Text style={{ color: "white", textAlign: "center" }}>
-      {props.buttonText}
-    </Text>
+    <Text style={{ color: "white", textAlign: "center" }}>{buttonText}</Text>
   </TouchableOpacity>
 );
 

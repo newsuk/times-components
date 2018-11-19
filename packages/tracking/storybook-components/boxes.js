@@ -10,22 +10,25 @@ const viewabilityConfig = {
 export default class Boxes extends Component {
   constructor(props) {
     super(props);
+    const { boxes, receiveChildList } = this.props;
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-    this.props.receiveChildList(this.props.boxes);
+    receiveChildList(boxes);
   }
+
   onViewableItemsChanged(info) {
+    const { boxes, onViewed } = this.props;
     if (info.changed) {
       info.changed
         .filter(viewableItem => viewableItem.isViewable)
-        .map(viewableItem =>
-          this.props.onViewed(viewableItem.item, this.props.boxes)
-        );
+        .map(viewableItem => onViewed(viewableItem.item, boxes));
     }
   }
+
   render() {
+    const { boxes } = this.props;
     return (
       <FlatList
-        data={this.props.boxes}
+        data={boxes}
         keyExtractor={({ id }) => id}
         onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => (

@@ -20,7 +20,8 @@ export default (
     }
 
     onChildView(childProps) {
-      this.context.tracking.analytics({
+      const { tracking } = this.context;
+      tracking.analytics({
         action: "Scrolled",
         attrs: {
           ...resolveAttrs(getAttrs, childProps),

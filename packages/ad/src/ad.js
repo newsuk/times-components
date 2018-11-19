@@ -54,7 +54,7 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { hasError, isAdReady, windowWidth } = this.state;
+    const { config, hasError, isAdReady, windowWidth } = this.state;
 
     if (hasError) return null;
 
@@ -69,7 +69,7 @@ class Ad extends Component {
 
     const data = {
       adUnit: adConfig.adUnit,
-      config: this.state.config,
+      config,
       contextUrl,
       networkId: adConfig.networkId,
       pageTargeting: adConfig.pageTargeting,
@@ -81,7 +81,7 @@ class Ad extends Component {
         timeout: adConfig.biddersConfig.timeout
       }),
       section,
-      sizingMap: this.state.config.mappings,
+      sizingMap: config.mappings,
       slotName,
       slots: this.slots,
       slotTargeting: adConfig.slotTargeting
@@ -90,8 +90,8 @@ class Ad extends Component {
     const sizeProps = !isAdReady
       ? { height: 0, width: 0 }
       : {
-          height: this.state.config.maxSizes.height,
-          width: this.state.config.maxSizes.width
+          height: config.maxSizes.height,
+          width: config.maxSizes.width
         };
 
     const AdComponent = (
@@ -107,9 +107,9 @@ class Ad extends Component {
 
     const AdPlaceholderComponent = (
       <AdPlaceholder
-        height={this.state.config.maxSizes.height}
+        height={config.maxSizes.height}
         style={styles.children}
-        width={this.state.config.maxSizes.width}
+        width={config.maxSizes.width}
       />
     );
 

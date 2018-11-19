@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleSummaryContent } from "../";
+import { ArticleSummaryContent } from "..";
 
 const defaultReview1Title = "Victoria";
 const defaultReview2Title = "Lucy Worsley’s Nights at the Opera";

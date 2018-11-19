@@ -92,11 +92,12 @@ class Article extends Component {
   onViewableItemsChanged(info) {
     if (!info.changed.length) return [];
 
+    const { onViewed } = this.props;
+    const { dataSource } = this.state;
+
     return info.changed
       .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem =>
-        this.props.onViewed(viewableItem.item, this.state.dataSource)
-      );
+      .map(viewableItem => onViewed(viewableItem.item, dataSource));
   }
 
   render() {
@@ -115,12 +116,13 @@ class Article extends Component {
       onVideoPress,
       receiveChildList
     } = this.props;
+    const { dataSource, width } = this.state;
 
-    if (!this.state.dataSource.content) {
+    if (!dataSource.content) {
       return null;
     }
 
-    const articleOrganised = listViewDataHelper(this.state.dataSource);
+    const articleOrganised = listViewDataHelper(dataSource);
     const articleData = articleOrganised.map((item, index) => ({
       ...item,
       elementId: `${item.type}.${index}`,
@@ -147,7 +149,7 @@ class Article extends Component {
           pageSize={listViewPageSize}
           renderRow={renderRow(analyticsStream)}
           scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-          width={this.state.width}
+          width={width}
         />
       </AdComposer>
     );

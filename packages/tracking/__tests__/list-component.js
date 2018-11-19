@@ -15,29 +15,36 @@ class ListComponent extends Component {
       receiveChildList: PropTypes.func
     };
   }
+
   static get defaultProps() {
     return {
       items: [{ someKey: "1", someValue: "one" }],
       receiveChildList: () => {}
     };
   }
+
   static get someStatic() {
     return { foo: "bar" };
   }
+
   constructor(props, context) {
     super(props, context);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
     props.receiveChildList(props.items);
   }
+
   onViewableItemsChanged({ info }) {
+    const { onViewed } = this.props;
     const filtered = info.changed.filter(item => item.isViewable);
-    filtered.forEach(item => this.props.onViewed(item));
+    filtered.forEach(item => onViewed(item));
   }
+
   render() {
+    const { items } = this.props;
     return (
       <FlatList
-        data={this.props.items}
-        initialNumToRender={this.props.items.length}
+        data={items}
+        initialNumToRender={items.length}
         keyExtractor={({ someKey }) => someKey}
         onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => <Text>Item {item.someValue}</Text>}

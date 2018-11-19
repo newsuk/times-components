@@ -4,7 +4,8 @@ import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import CardContent from "./card-content";
 
 const CardComponent = props => {
-  if (props.isLoading) {
+  const { isLoading } = props;
+  if (isLoading) {
     return (
       <Animations.FadeIn>
         <CardContent {...props} />

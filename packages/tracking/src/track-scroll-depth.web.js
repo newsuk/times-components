@@ -45,7 +45,8 @@ export default (
     }
 
     onObserved(observed = []) {
-      if (!this.context.tracking) {
+      const { tracking } = this.context;
+      if (!tracking) {
         return;
       }
 
@@ -59,7 +60,8 @@ export default (
     }
 
     onChildView(childProps) {
-      this.context.tracking.analytics({
+      const { tracking } = this.context;
+      tracking.analytics({
         action: "Scrolled",
         attrs: {
           ...resolveAttrs(getAttrs, childProps),

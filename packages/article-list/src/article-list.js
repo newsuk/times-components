@@ -34,31 +34,31 @@ class ArticleList extends Component {
   }
 
   onViewableItemsChanged(info) {
+    const { articles, onViewed } = this.props;
     if (!info.changed.length) return [];
 
     return info.changed
       .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem =>
-        this.props.onViewed(viewableItem.item, this.props.articles)
-      );
+      .map(viewableItem => onViewed(viewableItem.item, articles));
   }
 
   fetchMoreOnEndReached(data) {
-    if (this.state.loadMoreError || this.state.loadingMore) {
+    const { fetchMore } = this.props;
+    const { loadingMore, loadMoreError } = this.state;
+    if (loadMoreError || loadingMore) {
       return null;
     }
 
     this.setState({ loadingMore: true });
 
     return new Promise((res, rej) =>
-      this.props
-        .fetchMore(data.length)
+      fetchMore(data.length)
         .then(() => this.setState({ loadingMore: false }, res))
-        .catch(loadMoreError =>
+        .catch(error =>
           this.setState(
             {
               loadingMore: false,
-              loadMoreError
+              loadMoreError: error
             },
             rej
           )
@@ -76,10 +76,13 @@ class ArticleList extends Component {
       error,
       imageRatio,
       onArticlePress,
+      onViewed,
       pageSize,
+      receiveChildList,
       refetch,
       showImages
     } = this.props;
+    const { loadMoreError, width } = this.state;
 
     if (error) {
       return (
@@ -106,12 +109,13 @@ class ArticleList extends Component {
           elementId: `${article.id}.${index}`
         }));
 
-    if (!articlesLoading) this.props.receiveChildList(data);
+    if (!articlesLoading) receiveChildList(data);
 
     const articleListFooter = () => {
       if (data.length >= count) {
         return null;
-      } else if (this.state.loadMoreError) {
+      }
+      if (loadMoreError) {
         return (
           <View>
             <ArticleListItemSeparator />
@@ -171,9 +175,7 @@ class ArticleList extends Component {
           data.length > 0 ? this.fetchMoreOnEndReached(data) : null
         }
         onEndReachedThreshold={2}
-        onViewableItemsChanged={
-          this.props.onViewed ? this.onViewableItemsChanged : null
-        }
+        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
         pageSize={pageSize}
         renderItem={({ item, index }) => (
           <ErrorView>
@@ -181,7 +183,7 @@ class ArticleList extends Component {
               hasError ? null : (
                 <ArticleListItem
                   article={item.isLoading ? null : item}
-                  highResSize={this.state.width}
+                  highResSize={width}
                   imageRatio={imageRatio}
                   index={index}
                   isLoading={item.isLoading === true}

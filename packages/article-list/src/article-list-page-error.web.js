@@ -8,7 +8,7 @@ import {
   PageErrorImageContainer,
   PageErrorContentContainer
 } from "./styles/responsive";
-import { retryButtonStyles } from "./styles";
+import { retryButtonStyles } from "./styles/index.web";
 
 const ArticleListPageError = ({ refetch }) => (
   <PageErrorContainer>

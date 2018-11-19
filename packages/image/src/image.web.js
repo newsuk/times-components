@@ -40,13 +40,12 @@ class TimesImage extends Component {
   }
 
   highResImage({ highResSize, lowResSize, url }) {
+    const { highResIsLoaded } = this.state;
     if (!lowResSize || highResSize) {
       return (
         <StyledImage
           alt=""
-          isLoaded={
-            lowResSize && highResSize ? this.state.highResIsLoaded : true
-          }
+          isLoaded={lowResSize && highResSize ? highResIsLoaded : true}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
           src={appendSize(url, "resize", highResSize)}
@@ -59,11 +58,12 @@ class TimesImage extends Component {
   }
 
   lowResImage({ lowResSize, url }) {
-    if (lowResSize && !this.state.highResIsVisible) {
+    const { highResIsVisible, lowResIsLoaded } = this.state;
+    if (lowResSize && !highResIsVisible) {
       return (
         <StyledImage
           alt=""
-          isLoaded={this.state.lowResIsLoaded}
+          isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
           src={appendSize(url, "resize", lowResSize)}
           zIndex={1}

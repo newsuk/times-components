@@ -14,6 +14,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
+    const { article } = this.props;
     const {
       author,
       byline,
@@ -24,7 +25,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst
-    } = this.props.article;
+    } = article;
 
     return (
       <ArticleHeader

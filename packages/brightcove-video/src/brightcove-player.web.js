@@ -79,9 +79,11 @@ class BrightcoveVideo extends Component {
   constructor(props) {
     super(props);
 
+    const { onError } = this.props;
+
     index += 1;
 
-    BrightcoveVideo.globalErrors.forEach(this.props.onError);
+    BrightcoveVideo.globalErrors.forEach(onError);
 
     this.state = {
       errors: [].concat(BrightcoveVideo.globalErrors),
@@ -93,7 +95,10 @@ class BrightcoveVideo extends Component {
   }
 
   componentDidMount() {
-    if (this.state.errors.length) {
+    const { onError } = this.props;
+    const { errors } = this.state;
+
+    if (errors.length) {
       return;
     }
 
@@ -118,7 +123,7 @@ class BrightcoveVideo extends Component {
 
         BrightcoveVideo.globalErrors.push(uriErr);
 
-        this.props.onError(uriErr);
+        onError(uriErr);
       };
 
       BrightcoveVideo.appendScript(s);
@@ -129,28 +134,27 @@ class BrightcoveVideo extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    const playerStatusChanged = prevState.isPlaying !== this.state.isPlaying;
+    const { duration, isFinished, isPlaying, progress } = this.state;
 
-    if (prevState.duration !== this.state.duration) {
-      prevProps.onDuration(this.state.duration);
+    const playerStatusChanged = prevState.isPlaying !== isPlaying;
+
+    if (prevState.duration !== duration) {
+      prevProps.onDuration(duration);
     }
 
-    if (playerStatusChanged && this.state.isPlaying) {
+    if (playerStatusChanged && isPlaying) {
       prevProps.onPlay();
     }
 
-    if (prevState.progress !== this.state.progress) {
-      prevProps.onProgress(this.state.progress);
+    if (prevState.progress !== progress) {
+      prevProps.onProgress(progress);
     }
 
-    if (playerStatusChanged && !this.state.isPlaying) {
+    if (playerStatusChanged && !isPlaying) {
       prevProps.onPause();
     }
 
-    if (
-      prevState.isFinished !== this.state.isFinished &&
-      this.state.isFinished
-    ) {
+    if (prevState.isFinished !== isFinished && isFinished) {
       prevProps.onFinish();
     }
 
@@ -164,7 +168,9 @@ class BrightcoveVideo extends Component {
   }
 
   onError(player) {
-    this.props.onError(player.error());
+    const { onError } = this.props;
+
+    onError(player.error());
   }
 
   onPlay(player) {
@@ -207,11 +213,10 @@ class BrightcoveVideo extends Component {
   }
 
   createScript() {
+    const { accountId, playerId } = this.props;
+
     const s = document.createElement("script");
-    s.src = BrightcoveVideo.getScriptUrl(
-      this.props.accountId,
-      this.props.playerId
-    );
+    s.src = BrightcoveVideo.getScriptUrl(accountId, playerId);
 
     return s;
   }
@@ -225,9 +230,11 @@ class BrightcoveVideo extends Component {
   }
 
   initVideo(id) {
+    const { hideFullScreenButton } = this.props;
+
     bc(document.getElementById(id), {
       controlBar: {
-        fullscreenToggle: !this.props.hideFullScreenButton
+        fullscreenToggle: !hideFullScreenButton
       }
     });
 
@@ -235,8 +242,10 @@ class BrightcoveVideo extends Component {
   }
 
   init() {
+    const { id } = this.state;
+
     if (window.bc && window.videojs) {
-      this.initVideo(this.state.id);
+      this.initVideo(id);
     } else {
       BrightcoveVideo.players.push(this);
     }
@@ -255,32 +264,43 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
+    const {
+      accountId,
+      autoplay,
+      height,
+      playerId,
+      poster,
+      videoId,
+      width
+    } = this.props;
+    const { id } = this.state;
+
     /* eslint jsx-a11y/media-has-caption: "off" */
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
       <div
         style={{
-          height: this.props.height,
-          width: this.props.width
+          height,
+          width
         }}
       >
         <video
-          id={this.state.id}
+          id={id}
           style={{
-            height: this.props.height,
-            width: this.props.width
+            height,
+            width
           }}
-          {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
+          {...(poster ? { poster: poster.uri } : {})}
           // following 'autoplay' can not expected to always work on web
           // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
-          autoPlay={this.props.autoplay}
+          autoPlay={autoplay}
           className="video-js"
           controls
-          data-account={this.props.accountId}
+          data-account={accountId}
           data-application-id
           data-embed="default"
-          data-player={this.props.playerId}
-          data-video-id={this.props.videoId}
+          data-player={playerId}
+          data-video-id={videoId}
         />
       </div>
     );
@@ -289,8 +309,7 @@ class BrightcoveVideo extends Component {
 
 BrightcoveVideo.globalErrors = [];
 
-BrightcoveVideo.defaultProps = defaults;
-
 BrightcoveVideo.propTypes = { poster: SourcePropType, ...propTypes };
+BrightcoveVideo.defaultProps = defaults;
 
 export default BrightcoveVideo;

@@ -43,6 +43,7 @@ class Article extends Component {
       Header,
       receiveChildList
     } = this.props;
+    const { articleWidth } = this.state;
 
     // eslint-disable-next-line react/prop-types
     const displayRelatedArticles = ({ isVisible }) =>
@@ -83,7 +84,7 @@ class Article extends Component {
                   />
                 </HeaderAdContainer>
                 <MainContainer>
-                  <Header width={this.state.articleWidth} />
+                  <Header width={articleWidth} />
                   <BodyContainer>
                     <ArticleBody
                       content={content}

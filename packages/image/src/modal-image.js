@@ -5,10 +5,7 @@ import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import CloseButton from "./close-button";
 import Image from "./image";
-import {
-  modalImageDefaultProps,
-  modalImagePropTypes
-} from "./modal-image-prop-types";
+import { modalPropTypes, modalDefaultProps } from "./modal-image-prop-types";
 import styles, { captionStyles } from "./styles";
 
 class ModalImage extends Component {
@@ -31,13 +28,14 @@ class ModalImage extends Component {
 
   render() {
     const { caption, credits } = this.props;
+    const { showModal } = this.state;
 
     return (
       <View>
         <Modal
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
-          visible={this.state.showModal}
+          visible={showModal}
         >
           <View style={styles.modal}>
             <View style={styles.buttonContainer}>
@@ -57,7 +55,7 @@ class ModalImage extends Component {
   }
 }
 
-ModalImage.propTypes = modalImagePropTypes;
-ModalImage.defaultProps = modalImageDefaultProps;
+ModalImage.propTypes = modalPropTypes;
+ModalImage.defaultProps = modalDefaultProps;
 
 export default ModalImage;

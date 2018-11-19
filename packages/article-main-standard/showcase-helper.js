@@ -103,18 +103,20 @@ export class ArticleConfigurator extends Component {
   }
 
   componentDidMount() {
+    const { configuration, id } = this.props;
     schemaToMocks(
       makeParams({
-        makeArticle: makeArticle(this.props.configuration),
+        makeArticle: makeArticle(configuration),
         variables: () => ({
-          id: this.props.id
+          id
         })
       })
     ).then(mocks => this.setState({ mocks }));
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.configuration !== prevProps.configuration) {
+    const { configuration, id } = this.props;
+    if (configuration !== prevProps.configuration) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState(
         {
@@ -123,9 +125,9 @@ export class ArticleConfigurator extends Component {
         () =>
           schemaToMocks(
             makeParams({
-              makeArticle: makeArticle(this.props.configuration),
+              makeArticle: makeArticle(configuration),
               variables: () => ({
-                id: this.props.id
+                id
               })
             })
           ).then(mocks => this.setState({ mocks, reRendering: false }))
@@ -134,14 +136,12 @@ export class ArticleConfigurator extends Component {
   }
 
   render() {
-    if (!this.state.mocks.length || this.state.reRendering) {
+    const { children } = this.props;
+    const { mocks, reRendering } = this.state;
+    if (!mocks.length || reRendering) {
       return null;
     }
 
-    return (
-      <MockedProvider mocks={this.state.mocks}>
-        {this.props.children}
-      </MockedProvider>
-    );
+    return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
   }
 }

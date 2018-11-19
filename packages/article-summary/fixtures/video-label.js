@@ -1,6 +1,6 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
+import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultByline = "Camilla Long, Environment Editor";
 const defaultHeadline =

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { propTypesBase as articleItemPropTypes } from "./article-list-item-prop-types";
+import { propTypes as articleItemPropTypes } from "./article-list-item-prop-types";
 
 export const propTypes = {
   articleListHeader: PropTypes.element,

@@ -7,14 +7,15 @@ import { withTrackingContext } from "../src/tracking";
 
 module.exports = () => {
   describe("WithTrackingContext", () => {
-    const TestComponent = props => <Text>{props.someProp}</Text>;
+    const TestComponent = ({ someProp }) => <Text>{someProp}</Text>;
     TestComponent.propTypes = { someProp: PropTypes.string };
     TestComponent.defaultProps = { someProp: "foo" };
     TestComponent.someStatic = { foo: "bar" };
 
     const withTestTracking = WrappedComponent => {
       const TestTracking = (props, context) => {
-        context.tracking.analytics({
+        const { tracking } = context;
+        tracking.analytics({
           action: "Viewed",
           attrs: {},
           component: "TestComponent"

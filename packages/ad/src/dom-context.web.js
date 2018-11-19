@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 class DOMContext extends Component {
+  eventQueue = [];
+
   componentDidMount() {
     const { data, init } = this.props;
 
@@ -31,8 +33,6 @@ class DOMContext extends Component {
     this.adInit.destroySlots();
   }
 
-  eventQueue = [];
-
   eventCallback = (type, detail) => {
     this.eventQueue.push({
       detail,
@@ -41,23 +41,24 @@ class DOMContext extends Component {
     this.processEventQueue();
   };
 
+  processEvent = ({ type, detail }) => {
+    const { onRenderComplete, onRenderError } = this.props;
+    if (this.eventQueue.length === 0) return;
+    if (type === "error") {
+      throw new Error(`DomContext error: ${detail}`);
+    } else if (type === "scriptLoadingError") {
+      onRenderError();
+    } else if (type === "renderComplete") {
+      onRenderComplete();
+    }
+  };
+
   processEventQueue() {
     if (!this.initExecuting && !this.hasUnmounted) {
       this.eventQueue.forEach(this.processEvent);
       this.eventQueue = [];
     }
   }
-
-  processEvent = ({ type, detail }) => {
-    if (this.eventQueue.length === 0) return;
-    if (type === "error") {
-      throw new Error(`DomContext error: ${detail}`);
-    } else if (type === "scriptLoadingError") {
-      this.props.onRenderError();
-    } else if (type === "renderComplete") {
-      this.props.onRenderComplete();
-    }
-  };
 
   render() {
     const { width } = this.props;

@@ -191,6 +191,7 @@ describe("brightcove-player native component", () => {
           super(props);
           propsCache = props;
         }
+
         render() {
           return null;
         }

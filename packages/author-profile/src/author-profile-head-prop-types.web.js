@@ -1,6 +1,6 @@
 import {
   propTypes as basePropTypes,
-  defaultPropTypes as baseDefaultPropTypes
+  defaultProps as baseDefaultPropTypes
 } from "./author-profile-head-prop-types.base";
 
 export const propTypes = {

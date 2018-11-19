@@ -31,12 +31,15 @@ class BrightcoveVideo extends Component {
   componentDidMount() {
     BrightcoveVideo.activePlayers.push(this);
   }
+
   // specifically check if is launched has changed and block update if it has not;
   // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {
+    const { error, isLaunched } = this.state;
+
     return (
-      nextState.isLaunched !== this.state.isLaunched ||
-      nextState.error !== this.state.error ||
+      nextState.isLaunched !== isLaunched ||
+      nextState.error !== error ||
       nextProps !== this.props
     );
   }
@@ -48,13 +51,15 @@ class BrightcoveVideo extends Component {
   }
 
   play = () => {
+    const { accountId, directToFullscreen, policyKey, videoId } = this.props;
+
     const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
 
-    if (nativeModule && this.props.directToFullscreen) {
+    if (nativeModule && directToFullscreen) {
       nativeModule.playVideo({
-        accountId: this.props.accountId,
-        policyKey: this.props.policyKey,
-        videoId: this.props.videoId
+        accountId,
+        policyKey,
+        videoId
       });
     } else {
       if (this.playerRef) {
@@ -87,27 +92,34 @@ class BrightcoveVideo extends Component {
   };
 
   handleFinish = () => {
-    if (this.props.resetOnFinish) {
+    const { onFinish, resetOnFinish } = this.props;
+
+    if (resetOnFinish) {
       this.reset();
     }
 
-    this.props.onFinish();
+    onFinish();
   };
 
   handleError = error => {
+    const { onError } = this.props;
+
     this.setState({ error });
 
-    this.props.onError(error);
+    onError(error);
   };
 
   render() {
+    const { height, width } = this.props;
+    const { error, isLaunched } = this.state;
+
     this.playerRef = null;
 
-    if (this.state.error) {
+    if (error) {
       return <VideoError {...this.props} onReset={this.reset} />;
     }
 
-    if (this.state.isLaunched) {
+    if (isLaunched) {
       return (
         <Player
           ref={ref => {
@@ -126,8 +138,8 @@ class BrightcoveVideo extends Component {
       <TouchableWithoutFeedback onPress={this.play}>
         <View
           style={{
-            height: this.props.height,
-            width: this.props.width
+            height,
+            width
           }}
         >
           <Splash {...this.props} />

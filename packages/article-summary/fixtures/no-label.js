@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
+import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultByline = "Camilla Long, Environment Editor";
 const defaultHeadline =
