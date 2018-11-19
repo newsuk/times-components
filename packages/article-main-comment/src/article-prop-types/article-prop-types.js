@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import {
-  articlePropTypesBase,
-  articleDefaultPropsBase
+  articlePagePropTypes,
+  articlePageDefaultProps
 } from "./article-prop-types.base";
 
 const articlePropTypes = {
-  ...articlePropTypesBase,
+  ...articlePagePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -19,7 +19,7 @@ const articlePropTypes = {
 };
 
 const articleDefaultProps = {
-  ...articleDefaultPropsBase
+  ...articlePageDefaultProps
 };
 
 export { articlePropTypes, articleDefaultProps };

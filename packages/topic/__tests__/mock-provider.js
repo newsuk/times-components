@@ -63,14 +63,14 @@ export class TopicArticlesProvider extends Component {
 
   render() {
     const { children, pageSize } = this.props;
-    const { topic } = this.state;
+    const { topic: stateTopic } = this.state;
 
     return (
       <topicArticlesProvider>
         {children({
           fetchMore: this.fetchMore,
           pageSize,
-          topic,
+          topic: stateTopic,
           variables: {
             imageRatio: "5:4"
           }

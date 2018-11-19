@@ -10,7 +10,8 @@ import styles from "./styles";
 
 export class AuthorProfileHeadBase extends Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.isLoading !== nextProps.isLoading;
+    const { isLoading } = this.props;
+    return isLoading !== nextProps.isLoading;
   }
 
   render() {

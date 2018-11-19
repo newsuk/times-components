@@ -6,8 +6,8 @@ import Article from "@times-components/article";
 import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePagePropTypes,
-  articlePageDefaultProps
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
@@ -17,6 +17,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
+    const { article, onAuthorPress } = this.props;
     const {
       author,
       byline,
@@ -27,8 +28,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst
-    } = this.props.article;
-    const { onAuthorPress } = this.props;
+    } = article;
 
     return (
       <ArticleHeader
@@ -93,7 +93,7 @@ class ArticlePage extends Component {
   }
 }
 
-ArticlePage.propTypes = articlePagePropTypes;
-ArticlePage.defaultProps = articlePageDefaultProps;
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
 export default ArticlePage;

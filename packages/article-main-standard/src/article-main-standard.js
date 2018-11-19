@@ -11,8 +11,8 @@ import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
 import {
-  articlePagePropTypes,
-  articlePageDefaultProps
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
@@ -22,6 +22,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader(parentProps) {
+    const { article, onAuthorPress, onVideoPress } = this.props;
     const {
       byline,
       flags,
@@ -32,8 +33,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst
-    } = this.props.article;
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    } = article;
     const { isVideo, leadAsset } = getLeadAsset(article);
     const styles = stylesFactory();
 
@@ -115,7 +115,7 @@ class ArticlePage extends Component {
 }
 
 ArticlePage.propTypes = {
-  ...articlePagePropTypes,
+  ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -126,7 +126,7 @@ ArticlePage.propTypes = {
   refetch: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = {
-  ...articlePageDefaultProps,
+  ...articleDefaultProps,
   referralUrl: null
 };
 
