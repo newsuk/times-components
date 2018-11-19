@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.1.55",
-    "@times-components/article": "6.3.4",
+    "@times-components/article": "6.3.5",
     "@times-components/article-byline": "3.0.52",
     "@times-components/article-error": "0.1.8",
     "@times-components/article-flag": "2.1.51",

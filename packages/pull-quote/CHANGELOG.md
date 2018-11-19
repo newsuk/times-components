@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.42"></a>
+## [3.2.42](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.2.41...@times-components/pull-quote@3.2.42) (2018-11-19)
+
+
+### Bug Fixes
+
+* pull quotes markup ([#1494](https://github.com/newsuk/times-components/issues/1494)) ([a1adc2c](https://github.com/newsuk/times-components/commit/a1adc2c))
+
+
+
+
+
 <a name="3.2.41"></a>
 ## [3.2.41](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.2.40...@times-components/pull-quote@3.2.41) (2018-11-19)
 
