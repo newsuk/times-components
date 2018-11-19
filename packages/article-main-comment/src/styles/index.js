@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const nativeStyles = {

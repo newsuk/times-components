@@ -31,10 +31,9 @@ export const DatePublicationContainer = styled(Text)`
 `;
 
 export const FlagsContainer = styled(View)`
-
-@media (min-width: ${breakpoints.medium}px) {
-  padding-top: 0;
-}
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-top: 0;
+  }
 `;
 
 export const HeaderContainer = styled(View)`
@@ -113,5 +112,3 @@ export const StandfirstContainer = styled(Text)`
     margin-bottom: ${spacing(4)};
   }
 `;
-
-
