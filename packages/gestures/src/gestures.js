@@ -116,7 +116,11 @@ class Gestures extends Component {
   }
 
   handlePinchChange({ nativeEvent: { touches } }) {
-    const { stateAngle, stateCenter, stateZoomRatio } = this.state;
+    const {
+      angle: stateAngle,
+      center: stateCenter,
+      zoomRatio: stateZoomRatio
+    } = this.state;
     if (touches.length < 2) {
       return;
     }
