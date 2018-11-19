@@ -1,6 +1,6 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { ArticleSummaryHeadline } from "../";
+import { ArticleSummaryHeadline } from "..";
 
 const defaultHeadline =
   "OK, so Putin’s not a lady, but he does have the wildest man‑PMT";

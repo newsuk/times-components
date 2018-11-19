@@ -10,21 +10,22 @@ export default class InteractiveWrapper extends Component {
   }
 
   componentDidMount() {
+    const { attributes, element, source } = this.props;
     const placeholder = this.placeholder.current;
     const { parentNode } = placeholder;
 
-    const element = document.createElement(this.props.element);
+    const newElement = document.createElement(element);
     const link = document.createElement("link");
 
-    link.setAttribute("href", this.props.source);
+    link.setAttribute("href", source);
     link.setAttribute("rel", "import");
 
-    Object.keys(this.props.attributes).forEach(key =>
-      element.setAttribute(key, this.props.attributes[key])
+    Object.keys(attributes).forEach(key =>
+      newElement.setAttribute(key, attributes[key])
     );
 
-    parentNode.replaceChild(element, placeholder);
-    parentNode.insertBefore(link, element);
+    parentNode.replaceChild(newElement, placeholder);
+    parentNode.insertBefore(link, newElement);
 
     delete this.placeholder.current;
   }

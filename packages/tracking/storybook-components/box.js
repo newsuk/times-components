@@ -12,9 +12,9 @@ export const boxStyles = StyleSheet.create({
   }
 });
 
-const Box = props => (
-  <View id={props.id} style={[boxStyles.box, { backgroundColor: props.color }]}>
-    {props.children}
+const Box = ({ children, color, id }) => (
+  <View id={id} style={[boxStyles.box, { backgroundColor: color }]}>
+    {children}
   </View>
 );
 Box.propTypes = {

@@ -9,9 +9,10 @@ import sharedTrackingTests from "./shared-tracking-tests";
 module.exports = () => {
   describe("TrackEvents", () => {
     const TestComponent = ({ event1, event2, ...props }) => {
+      const { someProp } = props;
       event1("event1 arg");
       event2("event2 arg");
-      return <Text>{props.someProp}</Text>;
+      return <Text>{someProp}</Text>;
     };
     TestComponent.propTypes = {
       event1: PropTypes.func,

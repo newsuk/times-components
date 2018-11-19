@@ -1,6 +1,6 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
+import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultHeadline =
   "Top medal for forces dog who took a bite out of the Taliban";

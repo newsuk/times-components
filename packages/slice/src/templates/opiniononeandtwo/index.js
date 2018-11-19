@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "../styles";
 import { opinionConfig, supportConfig } from "./config";
-import { propTypes, defaultProps } from "./proptypes";
+import propTypes from "./proptypes";
 import opinionStyles from "./styles";
 
 const OpinionOneAndTwoSlice = ({
@@ -30,6 +30,5 @@ const OpinionOneAndTwoSlice = ({
 };
 
 OpinionOneAndTwoSlice.propTypes = propTypes;
-OpinionOneAndTwoSlice.defaultProps = defaultProps;
 
 export default OpinionOneAndTwoSlice;

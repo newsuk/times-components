@@ -141,14 +141,8 @@ class Gestures extends Component {
           viewLayout,
           translate(
             {
-              translateX: subtract(
-                center.pageX,
-                viewLayout.x
-              ),
-              translateY: subtract(
-                center.pageY,
-                viewLayout.y
-              )
+              translateX: subtract(center.pageX, viewLayout.x),
+              translateY: subtract(center.pageY, viewLayout.y)
             },
             [{ scale: zoomRatio }]
           )
@@ -171,9 +165,7 @@ class Gestures extends Component {
       >
         <TouchableWithoutFeedback>
           <View {...this.props}>
-            <Animated.View style={transformStyle}>
-              {children}
-            </Animated.View>
+            <Animated.View style={transformStyle}>{children}</Animated.View>
           </View>
         </TouchableWithoutFeedback>
       </View>

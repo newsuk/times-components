@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Paragraph } from "./styles/responsive";
 import styles from "./styles";
 
-const BodyParagraph = props => (
-  <Paragraph style={[styles.articleTextElement]}>{props.children}</Paragraph>
+const BodyParagraph = ({ children }) => (
+  <Paragraph style={[styles.articleTextElement]}>{children}</Paragraph>
 );
 
 BodyParagraph.propTypes = {

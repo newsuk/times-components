@@ -8,14 +8,14 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
 import LazyLoad from "@times-components/lazy-load";
-import { scrollUpToPaging } from "./utils";
+import { scrollUpToPaging } from "./utils/index.web";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
-import styles, { retryButtonStyles } from "./styles";
+import styles, { retryButtonStyles } from "./styles/index.web";
 import { ListContentContainer } from "./styles/responsive";
 
 class ArticleList extends Component {
@@ -34,7 +34,8 @@ class ArticleList extends Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    return this.props.page === nextProps.page;
+    const { page } = this.props;
+    return page === nextProps.page;
   }
 
   render() {

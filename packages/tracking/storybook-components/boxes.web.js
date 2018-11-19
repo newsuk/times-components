@@ -5,10 +5,13 @@ import Box from "./box";
 
 export default class Boxes extends Component {
   componentDidMount() {
-    this.props.receiveChildList(this.props.boxes);
+    const { boxes, receiveChildList } = this.props;
+    receiveChildList(boxes);
   }
+
   render() {
-    return this.props.boxes.map(item => (
+    const { boxes } = this.props;
+    return boxes.map(item => (
       <Box id={item.elementId} key={item.elementId} {...item}>
         <Text>{item.elementId}</Text>
       </Box>

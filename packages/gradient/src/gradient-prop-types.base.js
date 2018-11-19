@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import {
   propTypes as sharedPropTypes,
-  defaultPropTypes as sharedDefaultPropTypes
+  defaultProps as sharedDefaultPropTypes
 } from "./gradient-prop-types";
 
 export const propTypes = {

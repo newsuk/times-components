@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { propTypes, defaultProps } from "./proptypes";
+import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
@@ -7,7 +7,11 @@ import {
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
-import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
+import {
+  getLeadConfig,
+  getSupportConfig,
+  getConfigWrapper
+} from "./config.web";
 
 const supportConfig = getSupportConfig();
 const Separator = getSeparator({ hasLeftRightMargin: false });
@@ -73,6 +77,5 @@ class LeadOneAndTwoSlice extends Component {
 }
 
 LeadOneAndTwoSlice.propTypes = propTypes;
-LeadOneAndTwoSlice.defaultProps = defaultProps;
 
 export default LeadOneAndTwoSlice;

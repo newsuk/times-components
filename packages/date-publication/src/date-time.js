@@ -8,7 +8,7 @@ class DatePublication extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tz: ""
+      timezone: ""
     };
     this.updateTimezone = this.updateTimezone.bind(this);
   }
@@ -22,12 +22,13 @@ class DatePublication extends Component {
 
     const dateUTC = getUTCTime(date);
     if (!isLondonTimezone()) {
-      this.setState({ tz: isBST(dateUTC) ? " BST" : " GMT" });
+      this.setState({ timezone: isBST(dateUTC) ? " BST" : " GMT" });
     }
   }
 
   render() {
     const { children, date, showDay } = this.props;
+    const { timezone } = this.state;
     const datetimeUTC = getUTCTime(date);
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
@@ -38,7 +39,7 @@ class DatePublication extends Component {
       : baseFormatString;
 
     return children(
-      `${format(datetimeLondonTimezone, formatString)}${this.state.tz}`
+      `${format(datetimeLondonTimezone, formatString)}${timezone}`
     );
   }
 }

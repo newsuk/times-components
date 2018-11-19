@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
-import { getConfig, getConfigWrapper } from "./config";
+import { getConfig, getConfigWrapper } from "./config.web";
 
 const Separator = getSeparator({ hasLeftRightMargin: true });
 

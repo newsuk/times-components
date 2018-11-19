@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { leadConfig, supportConfig } from "./config";
-import { propTypes, defaultProps } from "./proptypes";
+import propTypes from "./proptypes";
 import styles from "../styles";
 
 const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
@@ -23,6 +23,5 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
 };
 
 LeadOneAndTwoSlice.propTypes = propTypes;
-LeadOneAndTwoSlice.defaultProps = defaultProps;
 
 export default LeadOneAndTwoSlice;

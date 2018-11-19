@@ -38,11 +38,12 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
 
   class WithTrackEvents extends Component {
     get wrappedAnalyticsEvents() {
+      const { tracking } = this.context;
       return this.wrapWithTracking(
         analyticsEvents,
         (attrs, actionName, trackingName) =>
-          this.context.tracking &&
-          this.context.tracking.analytics({
+          tracking &&
+          tracking.analytics({
             action: actionName,
             attrs,
             component: trackingName || componentName
@@ -59,7 +60,7 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
           const funcWrapped = (...args) => {
             const attrs = resolveAttrs(getAttrs, this.props, args);
             tracking(attrs, actionName, trackingName);
-            return this.props[eventName] && this.props[eventName](...args);
+            return this.props[eventName] && this.props[eventName](...args); // eslint-disable-line react/destructuring-assignment
           };
 
           return {
