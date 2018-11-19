@@ -2,7 +2,7 @@
 
 import { ApolloServer } from "apollo-server";
 import { article, makeMocks } from "@times-components/provider-test-tools";
-import MockArticle  from "../../fixture-generator/dist/index";
+import { MockArticle, MockImage}  from "../../fixture-generator/dist/index";
 import wholeschema from "../../schema/schema.json" 
 import { printSchema, buildClientSchema } from "graphql/utilities";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
@@ -14,11 +14,8 @@ let server;
 
 export function start() {
   return new Promise(resolve => {
-    // const [{ defaults }] = article();
-    console.log("HELLO")
     const __schema = wholeschema.data.__schema
     const schemaSDL = printSchema(buildClientSchema({__schema}));
-
 
     const schema = makeExecutableSchema({
       resolverValidationOptions: {
@@ -27,12 +24,14 @@ export function start() {
       typeDefs: schemaSDL
     });
 
-    console.log(schema)
 
-   const article = new MockArticle().withSundayTimes().fetch();
+   const article = new MockArticle().withSundayTimes().withImage().fetch();
+   console.log(article)
+   const image = new MockImage().fetch();
     addMockFunctionsToSchema({
       mocks: {
-        Article: () => article
+        Article: () => article,
+        Media: () => ({__typename: "Image", image})
       },
       preserveResolvers: true,
       schema
@@ -54,19 +53,3 @@ export function stop() {
   }
 }
 
-
-
-// export default ({ data: { __schema } }) => ({
-//   types: defaultTypes,
-//   values: defaultValues
-// } = {}) => {
- 
-    // resolvers: {
-    //   Query: {
-    //     ...defaultValues
-    //   }
-    // },
-    
-
-//   return schema;
-// };

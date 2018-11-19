@@ -1,3 +1,4 @@
 import MockArticle from "./src/mock-article";
+import MockImage from "./src/resolvers/image";
 
-export default  MockArticle;
+export { MockArticle, MockImage }
