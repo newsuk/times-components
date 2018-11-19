@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mock-tpa-server",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "utility for testing times component clients with mocked api",
   "main": "./dist/index",
   "scripts": {
@@ -38,7 +38,7 @@
     "prettier": "1.14.3"
   },
   "dependencies": {
-    "@times-components/provider-test-tools": "1.9.7",
+    "@times-components/provider-test-tools": "1.9.8",
     "@times-components/schema": "0.1.13",
     "apollo-server": "2.1.0",
     "graphql": "0.13.2"
