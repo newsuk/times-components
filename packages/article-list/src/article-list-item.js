@@ -14,7 +14,7 @@ import styles from "./styles";
 
 const ArticleListItem = props => {
   const {
-    article = {},
+    article,
     highResSize,
     imageRatio,
     isLoading,
@@ -34,7 +34,7 @@ const ArticleListItem = props => {
     shortSummary,
     summary,
     url
-  } = article;
+  } = article || {};
 
   const imageUri = getImageUri(article);
   const content = showImage ? summary : shortSummary;
