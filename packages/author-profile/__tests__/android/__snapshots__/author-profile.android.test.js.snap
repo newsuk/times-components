@@ -308,6 +308,9 @@ exports[`10. an article list header only changes on loading state change 2`] = `
       >
         title 1
       </Text>
+      <View>
+        <Text />
+      </View>
     </View>
   </View>
 </View>
@@ -327,6 +330,9 @@ exports[`10. an article list header only changes on loading state change 3`] = `
       >
         title 1
       </Text>
+      <View>
+        <Text />
+      </View>
     </View>
   </View>
 </View>
