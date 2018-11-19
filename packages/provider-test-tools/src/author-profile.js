@@ -1,4 +1,3 @@
-
 import { MockList } from "graphql-tools";
 import { author as authorQuery } from "@times-components/provider-queries";
 import generateQueries from "./generate-queries";

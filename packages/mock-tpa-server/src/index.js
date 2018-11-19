@@ -9,8 +9,6 @@ const serviceName = "Mock TPA server";
 let server;
 
 export function start() {
-
-  console.log('Inside Mock TPA start');
   const schema = makeMocks(mockData());
 
   server = new ApolloServer({ schema });
