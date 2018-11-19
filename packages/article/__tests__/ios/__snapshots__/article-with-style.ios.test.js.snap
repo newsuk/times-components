@@ -76,7 +76,9 @@ exports[`1. a full article with all content items 1`] = `
     </View>
     <View>
       <View>
-        <PullQuote />
+        <PullQuote>
+          The pull quote content
+        </PullQuote>
       </View>
     </View>
     <View>

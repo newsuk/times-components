@@ -49,12 +49,9 @@ const renderers = ({ observed, registerNode }) => ({
   dropCap(key, { value }) {
     return {
       element: (
-        <Context.Consumer>
+        <Context.Consumer key={key}>
           {({ theme: { sectionColour } }) => (
-            <DropCapView
-              colour={sectionColour || colours.section.default}
-              key={key}
-            >
+            <DropCapView colour={sectionColour || colours.section.default}>
               {value}
             </DropCapView>
           )}
@@ -137,17 +134,29 @@ const renderers = ({ observed, registerNode }) => ({
   pullQuote(
     key,
     {
-      content,
-      caption: { name, twitter }
-    }
+      caption: { name, text, twitter }
+    },
+    children
   ) {
     return {
       element: (
-        <PullQuoteContainer key={key}>
-          <PullQuoteResp>
-            <PullQuote caption={name} content={content} twitter={twitter} />
-          </PullQuoteResp>
-        </PullQuoteContainer>
+        <Context.Consumer key={key}>
+          {({ theme: { sectionColour } }) => (
+            <PullQuoteContainer>
+              <PullQuoteResp>
+                <PullQuote
+                  caption={name}
+                  captionColour={sectionColour || colours.section.default}
+                  quoteColour={sectionColour || colours.section.default}
+                  text={text}
+                  twitter={twitter}
+                >
+                  {children}
+                </PullQuote>
+              </PullQuoteResp>
+            </PullQuoteContainer>
+          )}
+        </Context.Consumer>
       )
     };
   },

@@ -90,11 +90,19 @@ const tests = [
             attributes: {
               caption: {
                 name: "AName",
+                text: "a text",
                 twitter: "@AName"
-              },
-              content: "A pull quote"
+              }
             },
-            children: [],
+            children: [
+              {
+                attributes: {
+                  value: "The pull quote content"
+                },
+                children: [],
+                name: "text"
+              }
+            ],
             name: "pullQuote"
           },
           {

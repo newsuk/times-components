@@ -100,10 +100,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     url="https://twitter.com/@AName"
   >
     “
-    A pull quote
     <cite>
-      AName
+      The pull quote content
     </cite>
+    AName
+    , a text
     <svg
       aria-label="[title]"
       height={10}

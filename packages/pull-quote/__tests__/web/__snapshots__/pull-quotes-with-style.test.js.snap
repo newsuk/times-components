@@ -54,6 +54,19 @@ exports[`different colours 1`] = `
 }
 
 .S4 {
+  border-left-width: 0px;
+  color: rgba(105,105,105,1.00);
+  display: inline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 13px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S5 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -73,7 +86,7 @@ exports[`different colours 1`] = `
   padding-left: 7px;
 }
 
-.S5 {
+.S6 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -92,7 +105,7 @@ exports[`different colours 1`] = `
   padding-left: 0px;
 }
 
-.S6 {
+.S7 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -132,7 +145,7 @@ exports[`different colours 1`] = `
   url="https://twitter.com/@twitter"
 >
   <div
-    className="S6"
+    className="S7"
   >
     <div
       className="IS1 S1"
@@ -142,20 +155,25 @@ exports[`different colours 1`] = `
     <div
       className="c0 S2"
     >
-      Some content
+      <cite>
+        Some content
+      </cite>
     </div>
     <div
-      className="S5"
+      className="S6"
     >
       <div
         className="IS2 S3"
       >
-        <cite>
-          A caption
-        </cite>
+        A caption
       </div>
       <div
         className="S4"
+      >
+        
+      </div>
+      <div
+        className="S5"
       >
         <IconTwitter
           height={10}
