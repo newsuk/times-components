@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "2.2.22",
+  "version": "2.2.23",
   "description": "The article label",
   "main": "dist/article-label",
   "dev": "src/article-label",
@@ -36,17 +36,17 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.7.4",
+    "@times-components/styleguide": "3.7.5",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.6",
-    "@times-components/jest-configurator": "2.1.15",
-    "@times-components/jest-serializer": "3.1.8",
-    "@times-components/storybook": "3.1.23",
-    "@times-components/webpack-configurator": "2.0.12",
+    "@times-components/eslint-config-thetimes": "0.8.7",
+    "@times-components/jest-configurator": "2.1.16",
+    "@times-components/jest-serializer": "3.1.9",
+    "@times-components/storybook": "3.1.24",
+    "@times-components/webpack-configurator": "2.0.13",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
