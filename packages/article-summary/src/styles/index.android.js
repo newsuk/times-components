@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   labelWrapper: {
     ...sharedStyles.labelWrapper,
-    marginBottom: spacing(0)
+    marginBottom: spacing(1)
   }
 });
 

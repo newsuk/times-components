@@ -8,7 +8,7 @@ const sharedStyles = {
       fontSize: "headline"
     }),
     color: colours.functional.brandColour,
-    marginBottom: spacing(1),
+    marginBottom: spacing(2),
     textAlign: "center"
   },
   authorImage: {
@@ -54,6 +54,7 @@ const sharedStyles = {
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
+    paddingHorizontal: spacing(2),
     textAlign: "center"
   }
 };
