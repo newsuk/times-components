@@ -5,8 +5,7 @@ import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
 
 const ArticleImageNative = props => {
-  const { imageOptions } = props;
-  const { display, uri } = imageOptions;
+  const { imageOptions: { display, uri } } = props
 
   return (
     <View key={uri} style={styles[`${display}Container`]}>

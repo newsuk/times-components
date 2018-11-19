@@ -18,7 +18,7 @@ import {
 
 const ArticleListItem = props => {
   const {
-    article,
+    article = {},
     fadeImageIn,
     highResSize,
     imageRatio,
@@ -39,7 +39,7 @@ const ArticleListItem = props => {
     shortHeadline,
     shortSummary,
     summary
-  } = article || {};
+  } = article;
 
   const imageUri = getImageUri(article);
   if (isLoading) {
