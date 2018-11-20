@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "1.5.16",
+  "version": "1.5.17",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -36,7 +36,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.7",
-    "@times-components/mock-tpa-server": "0.1.11",
+    "@times-components/mock-tpa-server": "0.1.12",
     "cypress": "3.1.0",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
