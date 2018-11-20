@@ -5,7 +5,6 @@ module.exports = {
     "prettier",
     "prettier/react"
   ],
-  plugins: ["flowtype"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
     "react/jsx-sort-props": [
