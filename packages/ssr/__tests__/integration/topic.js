@@ -1,5 +1,4 @@
-import sharedTest from "../shared-article-list";
-
+/* eslint-disable no-unused-expressions */
 describe("Topic", () => {
   const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
   beforeEach(() => {
@@ -26,5 +25,9 @@ describe("Topic", () => {
     );
   });
 
-  sharedTest();
+  it("Next and Previous Pagination works", () => {
+    cy.goToNextArticle();
+    cy.goToPreviousArticle();
+    expect(cy.get('div[data-testid="pagination-button-next"]')).to.exist;
+  });
 });

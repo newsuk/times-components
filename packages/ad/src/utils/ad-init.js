@@ -32,13 +32,12 @@ const adInit = args => {
             slots,
             networkId,
             adUnit,
-            section,
-            this.gpt
+            section
           )
         );
       }
 
-      if (platform === "web" && window.matchMedia) {
+      if (enablePrebidding && window.matchMedia) {
         Object.keys(this.utils.breakpoints).forEach(b => {
           window
             .matchMedia(this.utils.breakpoints[b])
@@ -53,8 +52,17 @@ const adInit = args => {
 
     finaliseAds(enablePrebidding) {
       if (enablePrebidding) {
-        this.prebid.applyPrebidTargeting();
-        this.prebid.applyAmazonTargeting();
+        this.gpt.scheduleAction(() => {
+          try {
+            window.pbjs.setTargetingForGPTAsync();
+            if (window.apstag) {
+              window.apstag.setDisplayBids();
+            }
+            this.gpt.displayAds();
+          } catch (err) {
+            //
+          }
+        });
       }
     },
 
@@ -207,17 +215,6 @@ const adInit = args => {
     },
 
     prebid: {
-      applyAmazonTargeting() {
-        if (window.apstag) {
-          window.apstag.setDisplayBids();
-        }
-      },
-
-      applyPrebidTargeting() {
-        window.pbjs.enableSendAllBids();
-        window.pbjs.setTargetingForGPTAsync();
-      },
-
       createPbjsGlobals() {
         window.pbjs = window.pbjs || {};
         window.pbjs.que = window.pbjs.que || [];
@@ -245,15 +242,22 @@ const adInit = args => {
         }));
       },
 
-      requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
+      requestBidsAsync(prebidConfig, slots, networkId, adUnit, section) {
         const amazonAccountID =
           prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
+        const { bidderSettings, init } = prebidConfig;
         window.pbjs.bidderTimeout = prebidConfig.timeout;
-        window.pbjs.bidderSettings = prebidConfig.bidderSettings(prebidConfig);
+        window.pbjs.bidderSettings = prebidConfig.bidderSettings({
+          bidderSettings
+        });
+        this.schedulePrebidAction(() => {
+          window.pbjs.setConfig(init);
+        });
 
         if (amazonAccountID) {
-          this.setupApstag(amazonAccountID, prebidConfig.timeout); // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
+          this.setupApstag(amazonAccountID, prebidConfig.timeout);
+          // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
           // because we call init just one time (window.initCalled)
           // to be fixed in REPLAT-1370
 
@@ -268,10 +272,7 @@ const adInit = args => {
           );
         }
 
-        biddingActions.push(
-          gpt.waitUntilReady(),
-          this.requestPrebidBids(slots)
-        );
+        biddingActions.push(this.requestPrebidBids(slots));
         return Promise.all(biddingActions);
       },
 
@@ -306,14 +307,16 @@ const adInit = args => {
             adUnit,
             section
           );
-          window.apstag.fetchBids(
-            {
-              slots: amazonSlots
-            },
-            aBids => {
-              resolve(aBids);
-            }
-          );
+          if (amazonSlots.length > 0) {
+            window.apstag.fetchBids(
+              {
+                slots: amazonSlots
+              },
+              aBids => {
+                resolve(aBids);
+              }
+            );
+          }
         });
       },
 
@@ -350,6 +353,9 @@ const adInit = args => {
         window.apstag.init({
           adServer: "googletag",
           bidTimeout: timeout,
+          gdpr: {
+            cmpTimeout: timeout
+          },
           pubID: amazonAccountID
         });
       },
@@ -358,7 +364,7 @@ const adInit = args => {
         this.createPbjsGlobals();
         const scriptPromises = [
           utils.loadScript(
-            "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
+            "https://www.thetimes.co.uk/d/js/vendor/newPrebid.min-7526ce2390.js"
           )
         ];
 

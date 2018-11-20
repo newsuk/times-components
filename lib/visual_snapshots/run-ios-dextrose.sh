@@ -11,7 +11,7 @@ npx lerna ls --json --since > fructose/changedPackages.json
 node fructose/changedComponents.js
 
 ## create components file of all showcase file following pattern
-npx rnscl --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
+npx rnscl --stacktrace --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
 
 ./node_modules/.bin/react-native start --root $(pwd)/fructose --projectRoots $(pwd)/fructose,$(pwd) --reset-cache &
 ./node_modules/.bin/react-native run-ios --no-packager

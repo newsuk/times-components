@@ -12,7 +12,7 @@ npx lerna ls --json --since > fructose/changedPackages.json
 node fructose/changedComponents.js
 
 ## create components file of all showcase file following pattern
-npx rnscl --pattern '*.showcase!(.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
+npx rnscl --stacktrace --pattern '*.showcase!(.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
 
 ## run fructose app
 npx fructose-web -d ./fructose &

@@ -45,7 +45,7 @@
         "accountId": "3360",
         "slots": []
       },
-      "indexExchange": {
+      "ix": {
         "siteId": "1234"
       }
     }
