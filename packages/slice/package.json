@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "3.1.8",
+  "version": "3.1.9",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
@@ -68,7 +68,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.7.5",
+    "@times-components/styleguide": "3.8.0",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
