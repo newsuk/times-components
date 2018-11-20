@@ -30,10 +30,34 @@ export const DatePublicationContainer = styled(Text)`
   }
 `;
 
-export const HeadlineContainer = styled(Text)`
-  font-size: ${fontSizes.headline}px;
-  line-height: 30px;
+export const FlagsContainer = styled(View)`
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-top: 0;
+  }
+`;
 
+export const HeaderContainer = styled(View)`
+  order: 2;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: ${spacing(7)};
+    margin-bottom: ${spacing(6)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+    padding-bottom: ${spacing(7)};
+    padding-left: ${spacing(12)};
+    padding-right: ${spacing(12)};
+    margin-bottom: ${spacing(7)};
+  }
+`;
+
+export const HeadlineContainer = styled(Text)`
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -86,24 +110,5 @@ export const StandfirstContainer = styled(Text)`
 
   @media (min-width: ${breakpoints.wide}px) {
     margin-bottom: ${spacing(4)};
-  }
-`;
-
-export const HeaderContainer = styled(View)`
-  order: 2;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: ${spacing(7)};
-    margin-bottom: ${spacing(6)};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    padding-bottom: ${spacing(7)};
-    margin-bottom: ${spacing(7)};
   }
 `;

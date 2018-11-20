@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
-              "lineHeight": 30,
+              "lineHeight": 35,
               "marginBottom": 7,
               "marginTop": 15,
             }

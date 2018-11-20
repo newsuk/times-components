@@ -56,7 +56,7 @@ exports[`default styles 1`] = `
                 <View
                   style={
                     Object {
-                      "marginBottom": 0,
+                      "marginBottom": 5,
                     }
                   }
                 >

@@ -1,15 +1,15 @@
 /* eslint-disable no-console */
 
 import { ApolloServer } from "apollo-server";
-import { article, makeMocks } from "@times-components/provider-test-tools";
+import { makeMocks } from "@times-components/provider-test-tools";
+import mockData from "./fixtures/mock-data";
 
 const serviceName = "Mock TPA server";
 
 let server;
 
 export function start() {
-  const [{ defaults }] = article();
-  const schema = makeMocks(defaults);
+  const schema = makeMocks(mockData());
 
   server = new ApolloServer({ schema });
 
