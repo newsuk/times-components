@@ -91,17 +91,18 @@ class MockArticle {
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       byline: "markup",
       content: articleContent,
+      headline: "test headline",
       publishedTime: new Date(0)
     }; 
   }
 
-  withImage() {
+  withImageLeadAsset() {
     this.article.leadAsset = new MockImage().fetch()
     return this;
   }
   
-  withRelatedArticles() {
-    this.article.relatedArticleSlice = getArticleSlice()
+  withRelatedArticles(count: 3) {
+    this.article.relatedArticleSlice = getArticleSlice(count)
     return this;
   }
 

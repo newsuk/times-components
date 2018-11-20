@@ -24,7 +24,7 @@ export function start() {
     });
 
 
-   const article = new MockArticle().withSundayTimes().withImage().withRelatedArticles().fetch();
+   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles().fetch();
    console.log(article.relatedArticleSlice.items)
 
     addMockFunctionsToSchema({
