@@ -3,6 +3,8 @@ import keywords from "./resolvers/keywords";
 import UUID from "./resolvers/UUID";
 import getPublicationName from "./resolvers/publication-name"; 
 import MockImage from "./resolvers/image";
+import { MockList } from "apollo-server";
+import getArticleSlice from "./resolvers/article-slice";
 
 const articleContent =  [
   {
@@ -31,6 +33,50 @@ const articleContent =  [
       }
     ]
   },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "Reynolds Gordon, 30, has a light beard, wears a white T-shirt, jeans and no shoes, and while self-satisfaction oozes from him, it seems to mask a fragility. We are sitting at an elegant dining table in a crimson room that mixes old and new. Oil paintings in gold frames adorn the walls. There is a sofa with a tiger-skin throw draped over it. He speaks quickly in middle-class tones. “The people coming to the parties are probably people you work with,” he says. “You’d be shocked. Absolutely shocked. It’s teachers, doctors, lawyers, journalists.”"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "His parties cater largely to couples and single girls. There are different formats – three women to two men; all women; the masquerade ball. Everyone has to be under 35. The organisers like the women to make the first move and there is a “zero tolerance policy” if any one of them complains to security. Photography is banned unless it is a “Heaven Sinema” party, where you get a nice DVD. Some people, “especially celebrities”, wear masks. “We’ve had Grammy winners,” Reynolds Gordon boasts. “We had a model who was on the cover of Vogue. This is going on all over London. Sex is a drug.”"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "This building, 33 Portland Place, comes complete with stained-glass billiard room and hydraulic wall; Amy Winehouse shot the video for Rehab here. Reynolds Gordon makes a cup of tea and sits down on a green chaise longue that was used in filming The King’s Speech. He says he pays astronomical rent, and will have to move because the owner, his friend and convicted fraudster Edward “Fast Eddie” Davenport, got out of prison last year, to be faced with a £12 million confiscation order."
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "ad",
+    "attributes": {},
+    "children": []
+  }
 ]
 class MockArticle {
   article: Article;
@@ -51,6 +97,11 @@ class MockArticle {
 
   withImage() {
     this.article.leadAsset = new MockImage().fetch()
+    return this;
+  }
+  
+  withRelatedArticles() {
+    this.article.relatedArticleSlice = getArticleSlice()
     return this;
   }
 
