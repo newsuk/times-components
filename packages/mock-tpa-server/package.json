@@ -31,6 +31,7 @@
     "@times-components/eslint-config-thetimes": "0.8.7",
     "babel-core": "6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "6.24.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
