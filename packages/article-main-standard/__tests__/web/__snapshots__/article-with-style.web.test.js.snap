@@ -403,7 +403,7 @@ exports[`full article with style 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 30px;
+  line-height: 35px;
   margin-top: 0px;
   margin-bottom: 7px;
   padding-top: 0px;

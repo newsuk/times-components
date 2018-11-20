@@ -13,6 +13,7 @@ import styles from "../styles";
 
 import {
   AuthorImageContainer,
+  FlagsContainer,
   HeaderContainer,
   HeadlineContainer
 } from "../styles/responsive";
@@ -39,7 +40,9 @@ const ArticleHeader = ({
     >
       {headline}
     </HeadlineContainer>
-    <Flags flags={flags} />
+    <FlagsContainer>
+      <Flags flags={flags} />
+    </FlagsContainer>
     <Standfirst standfirst={standfirst} />
     <Meta
       byline={byline}
