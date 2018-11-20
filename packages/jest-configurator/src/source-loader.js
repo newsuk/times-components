@@ -1,5 +1,3 @@
-// @flow
-
 import * as babelJest from "babel-jest";
 import jestPreset from "babel-preset-jest";
 import { transform as babelTransform, util as babelUtil } from "babel-core";
