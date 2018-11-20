@@ -31,7 +31,8 @@ export function start() {
     addMockFunctionsToSchema({
       mocks: {
         Article: () => article,
-        Media: () => ({__typename: "Image", image})
+        Media: () => ({__typename: "Image", image}),
+        Slug: () => "some-slug",
       },
       preserveResolvers: true,
       schema
