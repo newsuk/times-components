@@ -1,10 +1,13 @@
 const { defaultClient, defaultServer } = require("./base-ad-config");
-const listPageTargeting = require("./list-page-targeting");
+const basePageTargeting = require("./base-page-targeting-config");
 
 module.exports = {
   defaultClient: () => ({
     ...defaultClient,
-    ...listPageTargeting,
+    pageTargeting: {
+      ...basePageTargeting,
+      cont: "listing"
+    },
     slotTargeting: {
       path: "profile/lucy-fisher",
       section: "profile/lucy-fisher",
