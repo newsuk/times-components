@@ -36,6 +36,7 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007 --haul ./.storybook.native/webpack.haul.storybook.js --platform all",
     "preios": "yarn fetch-fonts",
     "ios": "react-native run-ios --no-packager",
+    "ios:build-lib": "lerna run --scope @times-components/ios-app build:all --stream",
     "ios:app": "cd ios-app && yarn start",
     "start-emulator": "./lib/start_android_emulator.sh",
     "preandroid": "yarn fetch-fonts && yarn start-emulator",
