@@ -2,6 +2,7 @@
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components/test-utils";
 import paragraphData from "./fixtures/paragraph-showcase.json";
+import emptyParagraphData from "./fixtures/empty-paragraph.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
 import renderParagraph from "./renderer";
@@ -9,6 +10,14 @@ import renderParagraph from "./renderer";
 export default () => {
   it("paragraph", async () => {
     const testInstance = TestRenderer.create(renderParagraph(paragraphData));
+    await delay(0);
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("empty paragraph", async () => {
+    const testInstance = TestRenderer.create(
+      renderParagraph(emptyParagraphData)
+    );
     await delay(0);
     expect(testInstance).toMatchSnapshot();
   });
