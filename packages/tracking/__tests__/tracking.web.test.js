@@ -11,6 +11,7 @@ class FakeIntersectionObserver {
   static clearObserving() {
     FakeIntersectionObserver.observing.splice(0);
   }
+
   static dispatchObservedAll() {
     this.observationCallback(
       this.observing.map(element => ({
@@ -22,15 +23,19 @@ class FakeIntersectionObserver {
       }))
     );
   }
+
   static dispatchObservedAllAsUndefined() {
     this.observationCallback();
   }
+
   constructor(callback) {
     this.constructor.observationCallback = callback;
   }
+
   observe(element) {
     this.constructor.observing.push(element);
   }
+
   disconnect() {
     this.constructor.clearObserving();
   }
@@ -51,26 +56,33 @@ class ListComponent extends Component {
       receiveChildList: PropTypes.func
     };
   }
+
   static get defaultProps() {
     return {
       items: [{ someKey: "1", someValue: "one" }],
       receiveChildList: () => {}
     };
   }
+
   static get someStatic() {
     return { foo: "bar" };
   }
+
   constructor(props) {
     super(props);
     props.receiveChildList(props.items);
   }
+
   componentDidUpdate() {
-    this.props.receiveChildList(this.props.items);
+    const { items, receiveChildList } = this.props;
+    receiveChildList(items);
   }
+
   render() {
+    const { items } = this.props;
     return (
       <View>
-        {this.props.items.map(item => (
+        {items.map(item => (
           <Text id={item.elementId} key={item.someKey}>
             Item {item.someValue}
           </Text>

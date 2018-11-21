@@ -23,6 +23,7 @@ export default addTypenameToDocument(gql`
               crop(ratio: $imageRatio) {
                 url
               }
+              id
               title
             }
             ... on Video {
@@ -30,6 +31,7 @@ export default addTypenameToDocument(gql`
                 crop(ratio: $imageRatio) {
                   url
                 }
+                id
                 title
               }
             }

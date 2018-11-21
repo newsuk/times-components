@@ -3,6 +3,118 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.17"></a>
+## [1.5.17](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.16...@times-components/ssr@1.5.17) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.16"></a>
+## [1.5.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.15...@times-components/ssr@1.5.16) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.15"></a>
+## [1.5.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.14...@times-components/ssr@1.5.15) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.14"></a>
+## [1.5.14](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.13...@times-components/ssr@1.5.14) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.13"></a>
+## [1.5.13](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.12...@times-components/ssr@1.5.13) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.12"></a>
+## [1.5.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.11...@times-components/ssr@1.5.12) (2018-11-16)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.11"></a>
+## [1.5.11](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.10...@times-components/ssr@1.5.11) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.10"></a>
+## [1.5.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.9...@times-components/ssr@1.5.10) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.9"></a>
+## [1.5.9](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.8...@times-components/ssr@1.5.9) (2018-11-15)
+
+
+### Bug Fixes
+
+* add adconfig stuff to ssr server topic ([#1488](https://github.com/newsuk/times-components/issues/1488)) ([4653599](https://github.com/newsuk/times-components/commit/4653599))
+* add missing ad config method to ssr topic ([#1486](https://github.com/newsuk/times-components/issues/1486)) ([5ed78d0](https://github.com/newsuk/times-components/commit/5ed78d0))
+
+
+
+
+
+<a name="1.5.8"></a>
+## [1.5.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.7...@times-components/ssr@1.5.8) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.7"></a>
+## [1.5.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.6...@times-components/ssr@1.5.7) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.6"></a>
+## [1.5.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.5...@times-components/ssr@1.5.6) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 <a name="1.5.5"></a>
 ## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.4...@times-components/ssr@1.5.5) (2018-11-13)
 

@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.8"></a>
+## [4.3.8](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.7...@times-components/image@4.3.8) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+<a name="4.3.7"></a>
+## [4.3.7](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.6...@times-components/image@4.3.7) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+<a name="4.3.6"></a>
+## [4.3.6](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.5...@times-components/image@4.3.6) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+<a name="4.3.5"></a>
+## [4.3.5](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.4...@times-components/image@4.3.5) (2018-11-13)
+
+
+### Bug Fixes
+
+* native resize append util ([#1478](https://github.com/newsuk/times-components/issues/1478)) ([a70ab56](https://github.com/newsuk/times-components/commit/a70ab56))
+
+
+
+
+
 <a name="4.3.4"></a>
 ## [4.3.4](https://github.com/newsuk/times-components/compare/@times-components/image@4.3.3...@times-components/image@4.3.4) (2018-11-12)
 

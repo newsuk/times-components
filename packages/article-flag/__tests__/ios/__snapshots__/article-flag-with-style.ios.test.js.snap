@@ -23,10 +23,11 @@ exports[`1. red article flag 1`] = `
       Object {
         "color": "red",
         "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 12,
+        "fontSize": 14,
         "fontWeight": "400",
         "letterSpacing": 1.4,
         "lineHeight": 12,
+        "marginTop": 5,
       }
     }
   >

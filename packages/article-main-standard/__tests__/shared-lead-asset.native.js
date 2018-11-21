@@ -10,6 +10,7 @@ import "./mocks.native";
 import shared from "./shared-lead-asset.base";
 
 const omitKeys = new Set([
+  "ListHeaderComponent",
   "data",
   "disableVirtualization",
   "horizontal",

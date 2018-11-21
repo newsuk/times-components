@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.52"></a>
+## [2.1.52](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.51...@times-components/video-label@2.1.52) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+<a name="2.1.51"></a>
+## [2.1.51](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.50...@times-components/video-label@2.1.51) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+<a name="2.1.50"></a>
+## [2.1.50](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.49...@times-components/video-label@2.1.50) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
 <a name="2.1.49"></a>
 ## [2.1.49](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.48...@times-components/video-label@2.1.49) (2018-11-12)
 

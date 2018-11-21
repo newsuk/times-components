@@ -6,29 +6,56 @@ import PullQuoteTwitterLink from "../src/pull-quote-twitter-link";
 
 const content = "Some content";
 const caption = "A caption";
+const text = "Some extra text";
 const twitter = "@twitter";
 
 export default renderComponent => {
   const tests = [
     {
-      name: "with a caption",
+      name: "with a caption and a text",
       test() {
         const output = renderComponent(
           <PullQuotes
             caption={caption}
-            content={content}
             onTwitterLinkPress={() => null}
-          />
+            text={text}
+          >
+            {content}
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
       }
     },
     {
-      name: "without a caption",
+      name: "with a caption but no text",
       test() {
         const output = renderComponent(
-          <PullQuotes content={content} onTwitterLinkPress={() => null} />
+          <PullQuotes onTwitterLinkPress={() => null} text={text}>
+            {content}
+          </PullQuotes>
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "with a text but no caption",
+      test() {
+        const output = renderComponent(
+          <PullQuotes onTwitterLinkPress={() => null} text={text}>
+            {content}
+          </PullQuotes>
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "without a caption or a text",
+      test() {
+        const output = renderComponent(
+          <PullQuotes onTwitterLinkPress={() => null}>{content}</PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
@@ -40,10 +67,11 @@ export default renderComponent => {
         const output = renderComponent(
           <PullQuotes
             caption={caption}
-            content={content}
             onTwitterLinkPress={() => null}
             twitter={twitter}
-          />
+          >
+            {content}
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();

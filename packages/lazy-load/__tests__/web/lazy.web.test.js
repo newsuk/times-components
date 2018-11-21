@@ -64,6 +64,7 @@ const tests = [
         constructor(cb, opts) {
           optsSpy(opts);
         }
+
         observe() {} // eslint-disable-line class-methods-use-this
       };
 

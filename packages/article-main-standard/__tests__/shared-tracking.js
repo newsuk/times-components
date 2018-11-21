@@ -33,6 +33,7 @@ export default () => {
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
         pageSection="News"
+        referralUrl="thetimes.co.uk/article/dummy-article-url"
       />
     );
     const [[call]] = stream.mock.calls;

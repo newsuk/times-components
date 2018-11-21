@@ -78,11 +78,12 @@ class Gestures extends Component {
         this.handlePinchChange(evt);
       },
       onPanResponderRelease: () => {
+        const { angle, zoomRatio } = this.state;
         Animated.parallel([
-          Animated.spring(this.state.zoomRatio, {
+          Animated.spring(zoomRatio, {
             toValue: 1
           }),
-          Animated.spring(this.state.angle, {
+          Animated.spring(angle, {
             toValue: 0
           })
         ]).start();
@@ -100,12 +101,13 @@ class Gestures extends Component {
   }
 
   onViewLayout(evt) {
+    const { viewLayout } = this.state;
     const { x, y, width, height } = evt.nativeEvent.layout;
 
-    this.state.viewLayout.x.setValue(x);
-    this.state.viewLayout.y.setValue(y);
-    this.state.viewLayout.width.setValue(width);
-    this.state.viewLayout.height.setValue(height);
+    viewLayout.x.setValue(x);
+    viewLayout.y.setValue(y);
+    viewLayout.width.setValue(width);
+    viewLayout.height.setValue(height);
   }
 
   handlePinchStart({ nativeEvent: { touches } }) {
@@ -114,6 +116,11 @@ class Gestures extends Component {
   }
 
   handlePinchChange({ nativeEvent: { touches } }) {
+    const {
+      angle: stateAngle,
+      center: stateCenter,
+      zoomRatio: stateZoomRatio
+    } = this.state;
     if (touches.length < 2) {
       return;
     }
@@ -122,33 +129,30 @@ class Gestures extends Component {
     const angle = (currentAngle - this.startAngle) % 360;
     const center = pointBetweenTwoTouches(touches);
 
-    this.state.zoomRatio.setValue(zoomRatio);
-    this.state.angle.setValue(angle);
-    this.state.center.pageX.setValue(center.pageX);
-    this.state.center.pageY.setValue(center.pageY);
+    stateZoomRatio.setValue(zoomRatio);
+    stateAngle.setValue(angle);
+    stateCenter.pageX.setValue(center.pageX);
+    stateCenter.pageY.setValue(center.pageY);
   }
 
   render() {
+    const { children } = this.props;
+    const { angle, center, viewLayout, zoomRatio } = this.state;
+
     const transformStyle = {
       transform: [
         ...resetOrigin(
-          this.state.viewLayout,
+          viewLayout,
           translate(
             {
-              translateX: subtract(
-                this.state.center.pageX,
-                this.state.viewLayout.x
-              ),
-              translateY: subtract(
-                this.state.center.pageY,
-                this.state.viewLayout.y
-              )
+              translateX: subtract(center.pageX, viewLayout.x),
+              translateY: subtract(center.pageY, viewLayout.y)
             },
-            [{ scale: this.state.zoomRatio }]
+            [{ scale: zoomRatio }]
           )
         ),
         {
-          rotate: this.state.angle.interpolate({
+          rotate: angle.interpolate({
             inputRange: [0, 359],
             outputRange: ["0 deg", "359 deg"]
           })
@@ -165,9 +169,7 @@ class Gestures extends Component {
       >
         <TouchableWithoutFeedback>
           <View {...this.props}>
-            <Animated.View style={transformStyle}>
-              {this.props.children}
-            </Animated.View>
+            <Animated.View style={transformStyle}>{children}</Animated.View>
           </View>
         </TouchableWithoutFeedback>
       </View>

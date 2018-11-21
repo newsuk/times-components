@@ -2,11 +2,6 @@
 
 exports[`1. a full article with an image as the lead asset 1`] = `
 <RCTScrollView
-  ListHeaderComponent={
-    <bound renderHeader
-      width={1440}
-    />
-  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -121,9 +116,13 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <View>
         <PullQuote
           caption="AName"
-          content="A pull quote"
+          captionColour="#333333"
+          quoteColour="#333333"
+          text="a text"
           twitter="@AName"
-        />
+        >
+          The pull quote content
+        </PullQuote>
       </View>
     </View>
     <View>
@@ -222,11 +221,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
 
 exports[`2. an article with a video as the lead asset 1`] = `
 <RCTScrollView
-  ListHeaderComponent={
-    <bound renderHeader
-      width={1440}
-    />
-  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}
@@ -294,11 +288,6 @@ exports[`2. an article with a video as the lead asset 1`] = `
 
 exports[`3. an article with no lead asset 1`] = `
 <RCTScrollView
-  ListHeaderComponent={
-    <bound renderHeader
-      width={1440}
-    />
-  }
   initialNumToRender={10}
   maxToRenderPerBatch={10}
   numColumns={1}

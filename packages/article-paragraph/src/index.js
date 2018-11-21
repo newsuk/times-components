@@ -6,8 +6,7 @@ import ArticleParagraph from "./article-paragraph";
 import DropCapWrapper from "./drop-cap-with-context";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
-const ArticleParagraphWrapper = props => {
-  const { ast, children, colour } = props;
+const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
   const { children: astChildren } = ast;
   const { name, attributes } = astChildren[0];
   if (name === "dropCap") {
@@ -17,17 +16,14 @@ const ArticleParagraphWrapper = props => {
       <DropCapWrapper
         colour={colour}
         dropCap={value}
-        key={`paragraph-${props.uid}`}
-        testID={`paragraph-${props.uid}`}
+        key={`paragraph-${uid}`}
+        testID={`paragraph-${uid}`}
         text={text}
       />
     );
   }
   return (
-    <ArticleParagraph
-      key={`paragraph-${props.uid}`}
-      testID={`paragraph-${props.uid}`}
-    >
+    <ArticleParagraph key={`paragraph-${uid}`} testID={`paragraph-${uid}`}>
       {children}
     </ArticleParagraph>
   );

@@ -3,6 +3,114 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.3.6"></a>
+## [6.3.6](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.5...@times-components/article@6.3.6) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.5"></a>
+## [6.3.5](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.4...@times-components/article@6.3.5) (2018-11-19)
+
+
+### Bug Fixes
+
+* pull quotes markup ([#1494](https://github.com/newsuk/times-components/issues/1494)) ([a1adc2c](https://github.com/newsuk/times-components/commit/a1adc2c))
+
+
+
+
+
+<a name="6.3.4"></a>
+## [6.3.4](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.3...@times-components/article@6.3.4) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.3"></a>
+## [6.3.3](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.2...@times-components/article@6.3.3) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.2"></a>
+## [6.3.2](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.1...@times-components/article@6.3.2) (2018-11-16)
+
+
+### Bug Fixes
+
+* interactives ([#1485](https://github.com/newsuk/times-components/issues/1485)) ([f367e2e](https://github.com/newsuk/times-components/commit/f367e2e))
+
+
+
+
+
+<a name="6.3.1"></a>
+## [6.3.1](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.0...@times-components/article@6.3.1) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.0"></a>
+# [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.5...@times-components/article@6.3.0) (2018-11-15)
+
+
+### Features
+
+* Add referral url to article analytics ([#1487](https://github.com/newsuk/times-components/issues/1487)) ([1c3eb81](https://github.com/newsuk/times-components/commit/1c3eb81))
+
+
+
+
+
+<a name="6.2.5"></a>
+## [6.2.5](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.4...@times-components/article@6.2.5) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.2.4"></a>
+## [6.2.4](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.3...@times-components/article@6.2.4) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.2.3"></a>
+## [6.2.3](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.2...@times-components/article@6.2.3) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.2.2"></a>
+## [6.2.2](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.1...@times-components/article@6.2.2) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 <a name="6.2.1"></a>
 ## [6.2.1](https://github.com/newsuk/times-components/compare/@times-components/article@6.2.0...@times-components/article@6.2.1) (2018-11-12)
 

@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 
 class Erroring extends Component {
   componentDidMount() {
-    this.props.onError(new Error("some error"));
+    const { onError } = this.props;
+
+    onError(new Error("some error"));
   }
 
   render() {

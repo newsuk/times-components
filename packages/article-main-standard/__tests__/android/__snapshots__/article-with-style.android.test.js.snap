@@ -185,7 +185,9 @@ exports[`full article with style 1`] = `
     </View>
     <View>
       <View>
-        <PullQuote />
+        <PullQuote>
+          The pull quote content
+        </PullQuote>
       </View>
     </View>
     <View>

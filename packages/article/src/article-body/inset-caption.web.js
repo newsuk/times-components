@@ -14,9 +14,9 @@ const InsetCaptionStyle = styled(View)`
   }
 `;
 
-const InsetCaptionWeb = props => (
+const InsetCaptionWeb = ({ caption, credits }) => (
   <InsetCaptionStyle>
-    <Caption credits={props.credits} text={props.caption} />
+    <Caption credits={credits} text={caption} />
   </InsetCaptionStyle>
 );
 

@@ -23,6 +23,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader(parentProps) {
+    const { article } = this.props;
     const {
       byline,
       hasVideo,
@@ -34,8 +35,8 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       topics
-    } = this.props.article;
-    const leadAssetProps = getLeadAsset(this.props.article);
+    } = article;
+    const leadAssetProps = getLeadAsset(article);
 
     return (
       <Fragment>

@@ -3,6 +3,75 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.9...@times-components/provider@1.8.0) (2018-11-20)
+
+
+### Features
+
+* Comment template design review ([#1499](https://github.com/newsuk/times-components/issues/1499)) ([2e131c4](https://github.com/newsuk/times-components/commit/2e131c4))
+
+
+
+
+
+<a name="1.7.9"></a>
+## [1.7.9](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.8...@times-components/provider@1.7.9) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+<a name="1.7.8"></a>
+## [1.7.8](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.7...@times-components/provider@1.7.8) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+<a name="1.7.7"></a>
+## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.6...@times-components/provider@1.7.7) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+<a name="1.7.6"></a>
+## [1.7.6](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.5...@times-components/provider@1.7.6) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+<a name="1.7.5"></a>
+## [1.7.5](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.4...@times-components/provider@1.7.5) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.3...@times-components/provider@1.7.4) (2018-11-13)
+
+
+### Bug Fixes
+
+* add id to images inside author and topic articles queries ([#1479](https://github.com/newsuk/times-components/issues/1479)) ([e8c8858](https://github.com/newsuk/times-components/commit/e8c8858))
+
+
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.7.2...@times-components/provider@1.7.3) (2018-11-12)
 

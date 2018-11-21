@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.10...@times-components/related-articles@5.1.0) (2018-11-20)
+
+
+### Features
+
+* Comment template design review ([#1499](https://github.com/newsuk/times-components/issues/1499)) ([2e131c4](https://github.com/newsuk/times-components/commit/2e131c4))
+
+
+
+
+
+<a name="5.0.10"></a>
+## [5.0.10](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.9...@times-components/related-articles@5.0.10) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+<a name="5.0.9"></a>
+## [5.0.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.8...@times-components/related-articles@5.0.9) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+<a name="5.0.8"></a>
+## [5.0.8](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.7...@times-components/related-articles@5.0.8) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 <a name="5.0.7"></a>
 ## [5.0.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.0.6...@times-components/related-articles@5.0.7) (2018-11-12)
 

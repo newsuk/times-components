@@ -25,9 +25,11 @@ class BrightcoveVideo extends Component {
   // specifically check if is launched has changed and block update if it has not;
   // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {
+    const { error, isLaunched } = this.state;
+
     return (
-      nextState.isLaunched !== this.state.isLaunched ||
-      nextState.error !== this.state.error ||
+      nextState.isLaunched !== isLaunched ||
+      nextState.error !== error ||
       nextProps !== this.props
     );
   }
@@ -54,21 +56,27 @@ class BrightcoveVideo extends Component {
   }
 
   handleFinish() {
-    if (this.props.resetOnFinish) {
+    const { onFinish, resetOnFinish } = this.props;
+
+    if (resetOnFinish) {
       this.reset();
     }
 
-    this.props.onFinish();
+    onFinish();
   }
 
   handleError(error) {
+    const { onError } = this.props;
+
     this.setState({ error });
 
-    this.props.onError(error);
+    onError(error);
   }
 
   render() {
-    if (this.state.error) {
+    const { error } = this.state;
+
+    if (error) {
       return <VideoError {...this.props} onReset={this.reset} />;
     }
 

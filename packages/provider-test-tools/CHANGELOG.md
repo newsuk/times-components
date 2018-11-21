@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.9...@times-components/provider-test-tools@1.10.0) (2018-11-20)
+
+
+### Features
+
+* Comment template design review ([#1499](https://github.com/newsuk/times-components/issues/1499)) ([2e131c4](https://github.com/newsuk/times-components/commit/2e131c4))
+
+
+
+
+
+<a name="1.9.9"></a>
+## [1.9.9](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.8...@times-components/provider-test-tools@1.9.9) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+<a name="1.9.8"></a>
+## [1.9.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.7...@times-components/provider-test-tools@1.9.8) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+<a name="1.9.7"></a>
+## [1.9.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.6...@times-components/provider-test-tools@1.9.7) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+<a name="1.9.6"></a>
+## [1.9.6](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.5...@times-components/provider-test-tools@1.9.6) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+<a name="1.9.5"></a>
+## [1.9.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.4...@times-components/provider-test-tools@1.9.5) (2018-11-13)
+
+
+### Bug Fixes
+
+* missing paywalledContent field in fixture data ([#1482](https://github.com/newsuk/times-components/issues/1482)) ([47087c6](https://github.com/newsuk/times-components/commit/47087c6))
+
+
+
+
+
+<a name="1.9.4"></a>
+## [1.9.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.3...@times-components/provider-test-tools@1.9.4) (2018-11-13)
+
+
+### Bug Fixes
+
+* add id to images inside author and topic articles queries ([#1479](https://github.com/newsuk/times-components/issues/1479)) ([e8c8858](https://github.com/newsuk/times-components/commit/e8c8858))
+
+
+
+
+
 <a name="1.9.3"></a>
 ## [1.9.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.9.2...@times-components/provider-test-tools@1.9.3) (2018-11-12)
 

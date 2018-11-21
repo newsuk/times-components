@@ -12,7 +12,7 @@ class MockedProvider extends Component {
   constructor(props, context) {
     super(props, context);
 
-    const link = this.props.isLoading
+    const link = props.isLoading
       ? new ApolloLink(() => Observable.of())
       : new MockLink(props.mocks);
 
@@ -26,11 +26,9 @@ class MockedProvider extends Component {
   }
 
   render() {
-    return (
-      <ApolloProvider client={this.client}>
-        {this.props.children}
-      </ApolloProvider>
-    );
+    const { children } = this.props;
+
+    return <ApolloProvider client={this.client}>{children}</ApolloProvider>;
   }
 }
 

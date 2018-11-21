@@ -4,11 +4,13 @@ import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph from "@times-components/article-paragraph";
 import Ad from "@times-components/ad";
+import Context from "@times-components/context";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import { colours } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -76,7 +78,7 @@ const ArticleRow = ({
       return {
         element: (
           <ArticleLink
-            key={index}
+            key={key}
             onPress={e =>
               onLinkPress(e, {
                 canonicalId: attributes.canonicalId,
@@ -95,7 +97,7 @@ const ArticleRow = ({
     paragraph(key, attributes, children, indx, node) {
       return {
         element: (
-          <ArticleParagraph ast={node} key={index} uid={index}>
+          <ArticleParagraph ast={node} key={key} uid={index}>
             {children}
           </ArticleParagraph>
         )
@@ -104,21 +106,28 @@ const ArticleRow = ({
     pullQuote(
       key,
       {
-        content,
-        caption: { name, twitter }
-      }
+        caption: { name, text, twitter }
+      },
+      children
     ) {
       return {
         element: (
-          <View key={key}>
-            <PullQuote
-              caption={name}
-              content={content}
-              key={key}
-              onTwitterLinkPress={onTwitterLinkPress}
-              twitter={twitter}
-            />
-          </View>
+          <Context.Consumer key={key}>
+            {({ theme: { sectionColour } }) => (
+              <View>
+                <PullQuote
+                  caption={name}
+                  captionColour={sectionColour || colours.section.default}
+                  onTwitterLinkPress={onTwitterLinkPress}
+                  quoteColour={sectionColour || colours.section.default}
+                  text={text}
+                  twitter={twitter}
+                >
+                  {children}
+                </PullQuote>
+              </View>
+            )}
+          </Context.Consumer>
         )
       };
     },

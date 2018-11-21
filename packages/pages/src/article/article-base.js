@@ -24,6 +24,7 @@ const ArticleBase = ({
   article,
   error,
   isLoading,
+  referralUrl,
   refetch,
   omitErrors,
   scale,
@@ -77,6 +78,7 @@ const ArticleBase = ({
         onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
         onVideoPress={(event, info) => onVideoPress(info)}
         pageSection={pageSection}
+        referralUrl={referralUrl}
         refetch={refetch}
       />
     </Context.Provider>

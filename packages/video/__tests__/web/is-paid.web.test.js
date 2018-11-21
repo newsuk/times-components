@@ -1,4 +1,4 @@
-import { isPaidOnly } from "../../src/video";
+import { isPaidOnly } from "../../src/video.web";
 
 it("isPaidOnly true should be true", () => {
   expect(isPaidOnly(true)).toBe(true);

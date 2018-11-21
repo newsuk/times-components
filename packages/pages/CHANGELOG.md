@@ -3,6 +3,108 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.6"></a>
+## [1.8.6](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.5...@times-components/pages@1.8.6) (2018-11-20)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.5"></a>
+## [1.8.5](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.4...@times-components/pages@1.8.5) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.4"></a>
+## [1.8.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.3...@times-components/pages@1.8.4) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.3"></a>
+## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.2...@times-components/pages@1.8.3) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.2"></a>
+## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.1...@times-components/pages@1.8.2) (2018-11-16)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.1"></a>
+## [1.8.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.0...@times-components/pages@1.8.1) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.10...@times-components/pages@1.8.0) (2018-11-15)
+
+
+### Features
+
+* Add referral url to article analytics ([#1487](https://github.com/newsuk/times-components/issues/1487)) ([1c3eb81](https://github.com/newsuk/times-components/commit/1c3eb81))
+
+
+
+
+
+<a name="1.7.10"></a>
+## [1.7.10](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.9...@times-components/pages@1.7.10) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.7.9"></a>
+## [1.7.9](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.8...@times-components/pages@1.7.9) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.7.8"></a>
+## [1.7.8](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.7...@times-components/pages@1.7.8) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+<a name="1.7.7"></a>
+## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.6...@times-components/pages@1.7.7) (2018-11-13)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 <a name="1.7.6"></a>
 ## [1.7.6](https://github.com/newsuk/times-components/compare/@times-components/pages@1.7.5...@times-components/pages@1.7.6) (2018-11-12)
 

@@ -23,7 +23,7 @@ class DropCapParagraph extends Component {
   componentDidUpdate(prevProps) {
     const { dropCap, scale, text } = this.props;
 
-    if (prevProps.scale !== this.props.scale) {
+    if (prevProps.scale !== scale) {
       this.measureTextBoxes(dropCap, text, scale);
     }
   }

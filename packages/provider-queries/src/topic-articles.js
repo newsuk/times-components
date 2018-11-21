@@ -21,18 +21,19 @@ export default addTypenameToDocument(gql`
           shortIdentifier
           leadAsset {
             ... on Image {
-              id
-              title
               crop(ratio: $imageRatio) {
                 url
               }
+              id
+              title
             }
             ... on Video {
               posterImage {
-                title
                 crop(ratio: $imageRatio) {
                   url
                 }
+                id
+                title
               }
             }
           }

@@ -206,7 +206,9 @@ describe("Provider Tests", () => {
       }
 
       render() {
-        return this.props.children;
+        const { children } = this.props;
+
+        return children;
       }
     }
     ErrorSpy.propTypes = {

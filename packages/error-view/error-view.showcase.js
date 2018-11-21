@@ -50,7 +50,8 @@ ErrorState.propTypes = {
 
 class FiresOnError extends Component {
   componentDidMount() {
-    setTimeout(() => this.props.onError(new Error("async error")), 500);
+    const { onError } = this.props;
+    setTimeout(() => onError(new Error("async error")), 500);
   }
 
   render() {

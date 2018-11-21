@@ -12,7 +12,8 @@ import withTrackingContext from "./related-articles-tracking-context";
 
 class RelatedArticles extends Component {
   shouldComponentUpdate(nextProps) {
-    return nextProps.isVisible !== this.props.isVisible;
+    const { isVisible } = this.props;
+    return nextProps.isVisible !== isVisible;
   }
 
   render() {

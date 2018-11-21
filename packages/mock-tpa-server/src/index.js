@@ -6,6 +6,8 @@ import wholeschema from "../../schema/schema.json"
 import { printSchema, buildClientSchema } from "graphql/utilities";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 
+import { makeMocks } from "@times-components/provider-test-tools";
+import mockData from "./fixtures/mock-data";
 
 const serviceName = "Mock TPA server";
 
@@ -23,6 +25,7 @@ export function start() {
       typeDefs: schemaSDL
     });
 
+  //const schema = makeMocks(mockData());
 
    const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles().fetch();
    console.log(article.relatedArticleSlice.items)

@@ -17,7 +17,7 @@ const mapping = {
   dropCap: {},
   headline: {
     commentsHeadline: 29,
-    headline: 30,
+    headline: 35,
     leadHeadline: 26,
     pageComponentHeadline: 27,
     pageHeadline: 40,

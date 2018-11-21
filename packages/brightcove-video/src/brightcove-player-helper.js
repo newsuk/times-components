@@ -61,7 +61,9 @@ class BrightcoveVideo extends Component {
   }
 
   onError(evt) {
-    this.props.onError(evt.nativeEvent);
+    const { onError } = this.props;
+
+    onError(evt.nativeEvent);
   }
 
   getNodeHandle() {
@@ -76,30 +78,40 @@ class BrightcoveVideo extends Component {
       progress: evt.nativeEvent.progress
     };
 
-    const playerStatusChanged = newState.isPlaying !== this.state.isPlaying;
+    const {
+      onChange,
+      onDuration,
+      onFinish,
+      onPause,
+      onPlay,
+      onProgress
+    } = this.props;
+    const { duration, isFinished, isPlaying, progress } = this.state;
 
-    if (newState.duration !== this.state.duration) {
-      this.props.onDuration(newState.duration);
+    const playerStatusChanged = newState.isPlaying !== isPlaying;
+
+    if (newState.duration !== duration) {
+      onDuration(newState.duration);
     }
 
     if (playerStatusChanged && newState.isPlaying) {
-      this.props.onPlay();
+      onPlay();
     }
 
-    if (newState.progress !== this.state.progress) {
-      this.props.onProgress(newState.progress);
+    if (newState.progress !== progress) {
+      onProgress(newState.progress);
     }
 
     if (playerStatusChanged && !newState.isPlaying) {
-      this.props.onPause();
+      onPause();
     }
 
-    if (newState.isFinished !== this.state.isFinished && newState.isFinished) {
-      this.props.onFinish();
+    if (newState.isFinished !== isFinished && newState.isFinished) {
+      onFinish();
     }
 
-    if (this.props.onChange) {
-      this.props.onChange(evt.nativeEvent);
+    if (onChange) {
+      onChange(evt.nativeEvent);
     }
 
     this.setState(newState);
@@ -127,35 +139,50 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    this.props.runNativeCommand("play", []);
+    const { runNativeCommand } = this.props;
+
+    runNativeCommand("play", []);
   }
 
   pause() {
-    this.props.runNativeCommand("pause", []);
+    const { runNativeCommand } = this.props;
+
+    runNativeCommand("pause", []);
   }
 
   render() {
+    const {
+      accountId,
+      autoplay,
+      height,
+      hideFullScreenButton,
+      policyKey,
+      position,
+      videoId,
+      width,
+      zIndex
+    } = this.props;
     const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
       <NativeBrightcove
-        accountId={this.props.accountId}
-        autoplay={this.props.autoplay}
-        hideFullScreenButton={this.props.hideFullScreenButton}
+        accountId={accountId}
+        autoplay={autoplay}
+        hideFullScreenButton={hideFullScreenButton}
         onChange={this.handleChange}
         onIOSError={this.onError}
         onLoadingError={this.onError}
-        policyKey={this.props.policyKey}
+        policyKey={policyKey}
         ref={ref => {
           this.bcPlayer = ref;
         }}
         style={{
-          height: this.props.height,
-          position: this.props.position,
-          width: this.props.width,
-          zIndex: this.props.zIndex
+          height,
+          position,
+          width,
+          zIndex
         }} // android handler seems to be reserved on iOS
-        videoId={this.props.videoId} // so we use this instead
+        videoId={videoId} // so we use this instead
       />
     );
   }

@@ -12,7 +12,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import Article from "../src/article-main-standard";
+import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
@@ -96,11 +96,19 @@ export default () => {
           attributes: {
             caption: {
               name: "AName",
+              text: "a text",
               twitter: "@AName"
-            },
-            content: "A pull quote"
+            }
           },
-          children: [],
+          children: [
+            {
+              attributes: {
+                value: "The pull quote content"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
           name: "pullQuote"
         },
         {
@@ -149,7 +157,7 @@ export default () => {
     });
 
     const output = TestRenderer.create(
-      <Article
+      <ArticleMainStandard
         {...articleProps}
         adConfig={adConfig}
         analyticsStream={() => {}}

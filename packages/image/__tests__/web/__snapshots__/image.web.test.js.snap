@@ -132,7 +132,7 @@ exports[`5. no url in environment 1`] = `
   <div>
     <img
       alt=""
-      src="not-valid&resize=1400"
+      src="not-valid?resize=1400"
     />
     <div>
       <div />

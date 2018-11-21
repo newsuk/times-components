@@ -38,15 +38,17 @@ class RelatedArticleItem extends Component {
   }
 
   componentDidMount() {
-    if (this.props.imageConfig.showHiRes) {
+    const { imageConfig } = this.props;
+    if (imageConfig.showHiRes) {
       this.setHighResSize();
     }
   }
 
   componentDidUpdate(prevProps) {
+    const { imageConfig } = this.props;
     if (
-      prevProps.imageConfig.showHiRes !== this.props.imageConfig.showHiRes &&
-      this.props.imageConfig.showHiRes
+      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes &&
+      imageConfig.showHiRes
     ) {
       this.setHighResSize();
     }
@@ -92,16 +94,18 @@ class RelatedArticleItem extends Component {
         type: summaryType
       }
     } = this.props;
+    const { article } = this.props;
+    const { highResSize } = this.state;
 
     const imageUri = getImageUri(leadAsset, leadAssetOverride, cropSize);
 
     return children({
-      article: this.props.article,
+      article,
       card: (
         <View ref={this.node}>
           <Card
             contentContainerClass={contentContainerClass}
-            highResSize={this.state.highResSize}
+            highResSize={highResSize}
             imageContainerClass={imageContainerClass}
             imageRatio={imageRatio}
             imageStyle={imageStyle}
@@ -130,7 +134,7 @@ class RelatedArticleItem extends Component {
                         : `summary`;
                       return (
                         <ArticleSummaryContent
-                          ast={this.props.article[`summary${item}`]}
+                          ast={article[`summary${item}`]}
                           className={`summaryHidden ${summaryClass}${summaryClassSuffix}`}
                           key={item}
                         />

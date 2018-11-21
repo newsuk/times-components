@@ -14,17 +14,19 @@ class VideoAdder extends Component {
   }
 
   getVideos(count) {
+    const { accountId, policyKey, videoId } = this.props;
+
     const videos = [];
     let i = 0;
 
     while (i < count) {
       videos.push(
         <BrightcoveVideo
-          accountId={this.props.accountId}
+          accountId={accountId}
           height={200}
           key={i}
-          policyKey={this.props.policyKey}
-          videoId={this.props.videoId}
+          policyKey={policyKey}
+          videoId={videoId}
           width={300}
         />
       );
@@ -36,13 +38,15 @@ class VideoAdder extends Component {
   }
 
   render() {
+    const { videoCount } = this.state;
+
     return (
       <View>
-        {this.getVideos(this.state.videoCount)}
+        {this.getVideos(videoCount)}
         <Button
           buttonText="click here to add a video"
           onPress={() => {
-            this.setState({ videoCount: this.state.videoCount + 1 });
+            this.setState(state => ({ videoCount: state.videoCount + 1 }));
           }}
         />
       </View>

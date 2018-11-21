@@ -36,5 +36,6 @@ exports[`article page 1`] = `
   error={null}
   isLoading={true}
   pageSection="News"
+  referralUrl={null}
 />
 `;

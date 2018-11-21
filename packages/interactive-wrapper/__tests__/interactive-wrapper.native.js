@@ -1,7 +1,35 @@
 import React from "react";
 import { Linking } from "react-native";
 import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
+import {
+  addSerializers,
+  compose,
+  flattenStyleTransform,
+  minimaliseTransform,
+  minimalNativeTransform,
+  print
+} from "@times-components/jest-serializer";
+
 import InteractiveWrapper from "../src/interactive-wrapper";
+
+const omitProps = new Set([
+  "javaScriptEnabled",
+  "messagingEnabled",
+  "saveFormDataDisabled",
+  "scalesPageToFit",
+  "thirdPartyCookiesEnabled"
+]);
+
+addSerializers(
+  expect,
+  compose(
+    print,
+    flattenStyleTransform,
+    minimalNativeTransform,
+    minimaliseTransform((value, key) => omitProps.has(key))
+  )
+);
 
 export default () => {
   afterEach(() => {
@@ -31,6 +59,23 @@ export default () => {
     nativeEvent: {
       data: height
     }
+  });
+
+  it("renders correctly", () => {
+    const props = {
+      attributes: {
+        chaptercounter: "Chapter%20one",
+        heading: "A heading",
+        standfirst: "A standfirst"
+      },
+      element: "chapter-header",
+      id: "a0534eee-682e-4955-8e1e-84b428ef1e79",
+      source:
+        "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
+    };
+    const testInstance = TestRenderer.create(<InteractiveWrapper {...props} />);
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 
   it("When receiving a message from the webview, the height is set in state", () => {

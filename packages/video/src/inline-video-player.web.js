@@ -40,8 +40,11 @@ const css = `
 
 class InlineVideoPlayer extends Component {
   static index = 0;
+
   static scriptLoadError = false;
+
   static activePlayers = [];
+
   static brightcoveSDKLoadedStarted = false;
 
   static brightcoveSDKHasLoaded() {
@@ -135,10 +138,9 @@ class InlineVideoPlayer extends Component {
   }
 
   createBrightcoveScript() {
+    const { accountId, playerId } = this.props;
     const s = document.createElement("script");
-    s.src = `//players.brightcove.net/${this.props.accountId}/${
-      this.props.playerId
-    }_default/index.min.js`;
+    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
 
     return s;
   }
@@ -160,8 +162,9 @@ class InlineVideoPlayer extends Component {
 
   render() {
     const { width, height, poster, videoId, accountId, playerId } = this.props;
+    const { error, showSkyBanner } = this.state;
 
-    if (this.state.error) {
+    if (error) {
       throw new Error(); // caught by parent ErrorView
     }
 
@@ -170,11 +173,11 @@ class InlineVideoPlayer extends Component {
       // Added a wrapping div as brightcove adds siblings to the video tag
       <div data-testid="video-component" style={{ height, width }}>
         <div style={{ position: "relative" }}>
-          {this.state.showSkyBanner && <SkySportsBanner />}
+          {showSkyBanner && <SkySportsBanner />}
           <video
             id={this.id}
             style={{ height, width }}
-            {...(poster ? { poster: this.props.poster.uri } : {})}
+            {...(poster ? { poster: poster.uri } : {})}
             className="video-js"
             controls
             data-account={accountId}

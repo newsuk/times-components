@@ -11,8 +11,8 @@ import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
 import {
-  articlePagePropTypes,
-  articlePageDefaultProps
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
@@ -22,6 +22,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader(parentProps) {
+    const { article, onAuthorPress, onVideoPress } = this.props;
     const {
       byline,
       flags,
@@ -32,8 +33,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst
-    } = this.props.article;
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    } = article;
     const { isVideo, leadAsset } = getLeadAsset(article);
     const styles = stylesFactory();
 
@@ -88,7 +88,8 @@ class ArticlePage extends Component {
       onTwitterLinkPress,
       onVideoPress,
       onViewed,
-      receiveChildList
+      receiveChildList,
+      referralUrl
     } = this.props;
 
     return (
@@ -107,21 +108,26 @@ class ArticlePage extends Component {
         onVideoPress={onVideoPress}
         onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
         receiveChildList={receiveChildList}
+        referralUrl={referralUrl}
       />
     );
   }
 }
 
 ArticlePage.propTypes = {
-  ...articlePagePropTypes,
+  ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
+  referralUrl: PropTypes.string,
   refetch: PropTypes.func.isRequired
 };
-ArticlePage.defaultProps = articlePageDefaultProps;
+ArticlePage.defaultProps = {
+  ...articleDefaultProps,
+  referralUrl: null
+};
 
 export default ArticlePage;

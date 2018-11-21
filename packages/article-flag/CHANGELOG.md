@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.51...@times-components/article-flag@2.2.0) (2018-11-20)
+
+
+### Features
+
+* Comment template design review ([#1499](https://github.com/newsuk/times-components/issues/1499)) ([2e131c4](https://github.com/newsuk/times-components/commit/2e131c4))
+
+
+
+
+
+<a name="2.1.51"></a>
+## [2.1.51](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.50...@times-components/article-flag@2.1.51) (2018-11-19)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+<a name="2.1.50"></a>
+## [2.1.50](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.49...@times-components/article-flag@2.1.50) (2018-11-15)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
 <a name="2.1.49"></a>
 ## [2.1.49](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.1.48...@times-components/article-flag@2.1.49) (2018-11-12)
 

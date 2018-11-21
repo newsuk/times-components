@@ -149,9 +149,13 @@ exports[`1. a full article with all content items 1`] = `
       <View>
         <PullQuote
           caption="AName"
-          content="A pull quote"
+          captionColour="#FF0000"
+          quoteColour="#FF0000"
+          text="a text"
           twitter="@AName"
-        />
+        >
+          The pull quote content
+        </PullQuote>
       </View>
     </View>
     <View>

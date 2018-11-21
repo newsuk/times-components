@@ -33,6 +33,7 @@ export default PaginatedComponent => {
     }
 
     componentDidMount() {
+      const { page } = this.state;
       if (typeof window !== "undefined") {
         window.onpopstate = event => {
           if (event.state) {
@@ -43,7 +44,7 @@ export default PaginatedComponent => {
         };
       }
 
-      Helper.replaceHistory(this.state.page);
+      Helper.replaceHistory(page);
     }
 
     componentWillUnmount() {

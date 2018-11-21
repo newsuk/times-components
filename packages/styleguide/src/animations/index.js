@@ -8,17 +8,20 @@ class FadeIn extends Component {
   };
 
   componentDidMount() {
-    Animated.timing(this.state.fadeAnim, {
+    const { fadeAnim } = this.state;
+
+    Animated.timing(fadeAnim, {
       duration: 300,
       toValue: 1
     }).start();
   }
 
   render() {
+    const { fadeAnim } = this.state;
+    const { children } = this.props;
+
     return (
-      <Animated.View style={{ opacity: this.state.fadeAnim }}>
-        {this.props.children}
-      </Animated.View>
+      <Animated.View style={{ opacity: fadeAnim }}>{children}</Animated.View>
     );
   }
 }

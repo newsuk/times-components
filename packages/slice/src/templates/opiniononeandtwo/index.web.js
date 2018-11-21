@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { propTypes, defaultProps } from "./proptypes";
+import propTypes from "./proptypes";
 import { SliceContainer } from "../styles/responsive";
 import {
   getSeparator,
@@ -8,7 +8,11 @@ import {
   getSupportContainer,
   getSupportsContainer
 } from "./responsive";
-import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
+import {
+  getOpinionConfig,
+  getSupportConfig,
+  getConfigWrapper
+} from "./config.web";
 
 const supportConfig = getSupportConfig();
 
@@ -86,6 +90,5 @@ class OpinionOneAndTwoSlice extends Component {
 }
 
 OpinionOneAndTwoSlice.propTypes = propTypes;
-OpinionOneAndTwoSlice.defaultProps = defaultProps;
 
 export default OpinionOneAndTwoSlice;

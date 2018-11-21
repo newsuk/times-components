@@ -8,7 +8,7 @@ const PullQuoteContent = ({ children }) => (
 );
 
 PullQuoteContent.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired
 };
 
 export default PullQuoteContent;
