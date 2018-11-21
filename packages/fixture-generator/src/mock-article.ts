@@ -20,6 +20,7 @@ class MockArticle {
 
   constructor() {
     this.article = {
+      leadAsset: new MockImage().create(),
       hasVideo: false,
       commentsEnabled: false,
       isBookmarked: false,
@@ -30,7 +31,7 @@ class MockArticle {
       paywalledContent: new MockMarkup().withXParagraphs(5).withAd().create(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
-      commentCount: 65,
+      commentCount: 0,
       template: TemplateType.mainstandard,
       byline: new MockMarkup().withInline().create(),
       flags: [Flag.EXCLUSIVE],

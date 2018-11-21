@@ -28,7 +28,7 @@ describe("get markup", () => {
     }
   })
 
-  it("should return expected shape", () => {
+  it("should generate large markup shapes", () => {
     const expected = [{
         name: "paragraph",
         attributes: {},

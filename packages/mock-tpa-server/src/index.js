@@ -27,7 +27,7 @@ export function start() {
 
   //const schema = makeMocks(mockData());
 
-   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(5).create();
+   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(3).create();
 
     addMockFunctionsToSchema({
       mocks: {

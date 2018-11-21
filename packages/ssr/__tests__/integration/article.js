@@ -1,13 +1,11 @@
 
-describe("Article", () => {
-  beforeEach(() => {
-    cy.task('startServer').then(() => 
-      cy.visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
-    );
-  });
+import { MockArticle }  from "@times-components/fixture-generator"
 
-  it("loads hi-res images for related articles", () =>
-    cy
+describe("Article", () => {
+
+  it("loads hi-res images for related articles", () => {
+    return cy.task('startMockServerWith', new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(3).create())
+      .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
       .get("#related-articles")
       .scrollIntoView()
       .then(() => {
@@ -25,5 +23,6 @@ describe("Article", () => {
 
           expect(url.searchParams.get("resize")).to.equal("306");
         });
-      }));
+      })
+    });
 });
