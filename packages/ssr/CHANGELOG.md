@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.20"></a>
+## [1.5.20](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.19...@times-components/ssr@1.5.20) (2018-11-21)
+
+
+### Bug Fixes
+
+* SSR - separate ad config for article, topic and author profile ([#1495](https://github.com/newsuk/times-components/issues/1495)) ([458d3a5](https://github.com/newsuk/times-components/commit/458d3a5))
+
+
+
+
+
 <a name="1.5.19"></a>
 ## [1.5.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.18...@times-components/ssr@1.5.19) (2018-11-21)
 
