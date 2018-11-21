@@ -12,4 +12,14 @@ describe("The mock Article", () => {
     const mockArticle = new MockArticle().withSundayTimes().fetch();
     expect(mockArticle.publicationName).toBe("SUNDAYTIMES");
   });
+
+  it("returns an image", () => {
+    const mockArticle = new MockArticle().withImageLeadAsset().fetch();
+    expect(mockArticle.leadAsset).toHaveProperty("crop")
+  })
+
+  it("returns related articles", () => {
+    const mockArticle = new MockArticle().withRelatedArticles(5).fetch();
+    expect(mockArticle.relatedArticleSlice!.items.length).toBe(5);
+  })
 });

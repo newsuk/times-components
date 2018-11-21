@@ -101,7 +101,7 @@ class MockArticle {
     return this;
   }
   
-  withRelatedArticles(count: 3) {
+  withRelatedArticles(count = 3) {
     this.article.relatedArticleSlice = getArticleSlice(count)
     return this;
   }
