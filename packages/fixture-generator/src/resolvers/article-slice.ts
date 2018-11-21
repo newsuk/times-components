@@ -3,7 +3,7 @@ import  MockArticle  from "../mock-article";
 
 
 export default (count: number): ArticleSlice => {
-    const articles = new Array(5).fill(0).map(() => {
+    const articles = new Array(count).fill(0).map(() => {
         const article =  new MockArticle().withImageLeadAsset().fetch()
         return { article, headline: article.headline, leadAsset: article.leadAsset }
     })

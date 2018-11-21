@@ -10,7 +10,8 @@ class MockImage {
             crop: {
                 ratio: "16:9",
                 url: "url"
-            }
+            },
+            title: "Rise of centenarian drivers as elderly push on",
         }
     }
 

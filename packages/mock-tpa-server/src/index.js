@@ -27,17 +27,35 @@ export function start() {
 
   //const schema = makeMocks(mockData());
 
-   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles().fetch();
+   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(5).fetch();
    console.log(article.relatedArticleSlice.items)
 
     addMockFunctionsToSchema({
       mocks: {
         Article: () => article,
         Media: () => ({__typename: "Image"}),
-        Slug: () => "some-slug",
+       
         ArticleSlice: () => ({
           __typename: "StandardSlice",
         }),
+       // Slug: () => "some-slug",
+        // Markup: (parent, { maxCharCount }) => {
+        //   if (maxCharCount) {
+        //     return parent[`summary${maxCharCount}`] || {};
+        //   }
+
+        //   // this oddly returns the provided fixture
+        //   return {};
+        // },
+        // Ratio: () => "16:9",
+        // Tile: () => ({}),
+        // URL: () => "https://test.io",
+        // UUID: () => "a-u-u-i-d",
+        // DateTime: () => "2018-10-25",
+        // StandardSlice: () => ({
+        //   __typename: "StandardSlice",
+        //   items: []
+        // }),
       },
       preserveResolvers: true,
       schema
