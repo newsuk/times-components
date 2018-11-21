@@ -1,4 +1,4 @@
-const defaultMapProfileToConfig = require("../../lib/make-ad-config")
+const defaultMapProfileToConfig = require("../../lib/ads/make-author-profile-ad-config")
   .defaultClient;
 const makeArticleUrl = require("../../lib/make-url");
 

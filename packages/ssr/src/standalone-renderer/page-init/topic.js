@@ -1,4 +1,4 @@
-const defaultMapTopicToConfig = require("../../lib/make-ad-config")
+const defaultMapTopicToConfig = require("../../lib/ads/make-topic-ad-config")
   .defaultClient;
 const makeArticleUrl = require("../../lib/make-url");
 
