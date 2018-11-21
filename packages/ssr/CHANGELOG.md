@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.18"></a>
+## [1.5.18](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.17...@times-components/ssr@1.5.18) (2018-11-21)
+
+
+### Bug Fixes
+
+* article cypress test ([#1503](https://github.com/newsuk/times-components/issues/1503)) ([468e37b](https://github.com/newsuk/times-components/commit/468e37b))
+
+
+
+
+
 <a name="1.5.17"></a>
 ## [1.5.17](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.16...@times-components/ssr@1.5.17) (2018-11-20)
 

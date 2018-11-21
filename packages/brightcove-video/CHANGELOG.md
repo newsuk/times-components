@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.53"></a>
+## [3.1.53](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.1.52...@times-components/brightcove-video@3.1.53) (2018-11-21)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
 <a name="3.1.52"></a>
 ## [3.1.52](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.1.51...@times-components/brightcove-video@3.1.52) (2018-11-20)
 
