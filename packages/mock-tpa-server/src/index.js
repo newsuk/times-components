@@ -27,7 +27,7 @@ export function start() {
 
   //const schema = makeMocks(mockData());
 
-   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(5).fetch();
+   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(5).create();
    console.log(article.relatedArticleSlice.items)
 
     addMockFunctionsToSchema({
@@ -38,7 +38,7 @@ export function start() {
         ArticleSlice: () => ({
           __typename: "StandardSlice",
         }),
-       // Slug: () => "some-slug",
+        Slug: () => "some-slug",
         // Markup: (parent, { maxCharCount }) => {
         //   if (maxCharCount) {
         //     return parent[`summary${maxCharCount}`] || {};

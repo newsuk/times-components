@@ -15,7 +15,7 @@ class MockImage {
         }
     }
 
-    fetch() {
+    create() {
         return this.image;
     }
 }

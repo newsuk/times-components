@@ -105,7 +105,7 @@ class MockArticle {
       publicationName: getPublicationName(),
       paywalledContent: articleContent,
       url: "/article/123" as Url,
-      slug: `british-trio-stopped-on-the-way-to-join-isis`,
+      // slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 65,
       template: TemplateType.mainstandard,
       byline: [
@@ -133,37 +133,37 @@ class MockArticle {
       shortIdentifier: "37b27qd2s",
       standfirst: "standfirst",
       title: "title",
-      summary: [
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value:
-                  "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
-              },
-              children: []
-            }
-          ]
-        }
-      ],
-      topics: [
-        {
-          name: "Islington",
-          slug: "islington"
-        },
-        {
-          name: "Chelsea",
-          slug: "chelsea"
-        }
-      ]
+      // summary: [
+      //   {
+      //     name: "paragraph",
+      //     attributes: {},
+      //     children: [
+      //       {
+      //         name: "text",
+      //         attributes: {
+      //           value:
+      //             "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
+      //         },
+      //         children: []
+      //       }
+      //     ]
+      //   }
+      // ],
+      // topics: [
+      //   {
+      //     name: "Islington",
+      //     slug: "islington"
+      //   },
+      //   {
+      //     name: "Chelsea",
+      //     slug: "chelsea"
+      //   }
+      // ]
     };
   }
 
   withImageLeadAsset() {
-    this.article.leadAsset = new MockImage().fetch();
+    this.article.leadAsset = new MockImage().create();
     return this;
   }
 
@@ -179,7 +179,7 @@ class MockArticle {
     return this;
   }
 
-  fetch() {
+  create() {
     return this.article;
   }
 }
