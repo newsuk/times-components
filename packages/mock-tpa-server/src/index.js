@@ -28,7 +28,6 @@ export function start() {
   //const schema = makeMocks(mockData());
 
    const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(5).create();
-   console.log(article.relatedArticleSlice.items)
 
     addMockFunctionsToSchema({
       mocks: {
@@ -39,14 +38,7 @@ export function start() {
           __typename: "StandardSlice",
         }),
         Slug: () => "some-slug",
-        // Markup: (parent, { maxCharCount }) => {
-        //   if (maxCharCount) {
-        //     return parent[`summary${maxCharCount}`] || {};
-        //   }
-
-        //   // this oddly returns the provided fixture
-        //   return {};
-        // },
+        Markup: () => ({}),
         // Ratio: () => "16:9",
         // Tile: () => ({}),
         // URL: () => "https://test.io",
