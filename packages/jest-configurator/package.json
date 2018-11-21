@@ -8,8 +8,8 @@
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,flow-bin,identity-obj-proxy,jest*,prettier' --ignore-bin-package=false --skip-missing",
-    "lint": "flow check && eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,identity-obj-proxy,jest*,prettier' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "pretest": "./setup.sh",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
@@ -73,12 +73,10 @@
     "@times-components/eslint-config-thetimes": "0.8.7",
     "babel-cli": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
-    "flow-bin": "0.63.1",
     "prettier": "1.14.3"
   },
   "peerDependencies": {

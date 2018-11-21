@@ -23,7 +23,7 @@ Following these guidelines helps to get issues organised and PRs merged faster!
 
 * In general we use [yarn](https://yarnpkg.com/en/), add a yarn.lock file and
   keep it up to date for faster builds
-* We use [flow](https://flow.org/) and
+* We use
   [Prettier](https://github.com/prettier/prettier) to ensure code consistency
   and reliability, this pattern should also be followed to avoid typical dev
   bike-shedding

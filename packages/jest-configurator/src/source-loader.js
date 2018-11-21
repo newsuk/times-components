@@ -1,5 +1,3 @@
-// @flow
-
 import * as babelJest from "babel-jest";
 import jestPreset from "babel-preset-jest";
 import { transform as babelTransform, util as babelUtil } from "babel-core";
@@ -8,45 +6,30 @@ import { readFileSync } from "fs";
 import { createHash } from "crypto";
 import path from "path";
 
-const readSource = (filename: string): string =>
-  readFileSync(filename).toString();
+const readSource = filename => readFileSync(filename).toString();
 
-const isPackageFile = (filename: string): boolean =>
-  filename.includes("times-components");
+const isPackageFile = filename => filename.includes("times-components");
 
-const pointToSource = (filename: string): string =>
-  filename.replace("dist", "src");
+const pointToSource = filename => filename.replace("dist", "src");
 
 /* Based upon the babel-jest impl, but only
  * changes if raw source code has been updated.
  */
-const getPackageCacheKey = (filename: string): string =>
+const getPackageCacheKey = filename =>
   createHash("md5")
     .update(readSource(pointToSource(filename)))
     .digest("hex");
 
-type Config = {
-  cwd: string,
-  coveragePathIgnorePatterns: Array<string>
-};
-
-const getCacheKey = (
-  src: string,
-  filename: string,
-  config: string,
-  cacheOptions: {
-    rootDir: string
-  }
-): string =>
+const getCacheKey = (src, filename, config, cacheOptions) =>
   isPackageFile(filename)
     ? getPackageCacheKey(filename)
     : babelJest.getCacheKey(src, filename, config, cacheOptions);
 
 const transform = (
-  src: string,
-  targetFilename: string,
-  { cwd, coveragePathIgnorePatterns }: Config
-): string => {
+  src,
+  targetFilename,
+  { cwd, coveragePathIgnorePatterns }
+) => {
   let source = src;
   let filename = targetFilename;
 
