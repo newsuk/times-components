@@ -1,4 +1,4 @@
-import MockImage from "../src/resolvers/image";
+import MockImage from "../resolvers/image";
 
 describe("The Mock Image", () => {
   it("returns the minimum image requirements", () => {

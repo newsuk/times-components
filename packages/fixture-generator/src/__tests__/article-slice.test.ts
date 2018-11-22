@@ -1,4 +1,4 @@
-import ArticleSlice from "../src/resolvers/article-slice";
+import ArticleSlice from "../resolvers/article-slice";
 
 describe("The Mock Image", () => {
   it("returns the minimum articleSlice requirements", () => {

@@ -1,4 +1,4 @@
-import MockMarkup from "../src/resolvers/mock-markup"
+import MockMarkup from "../resolvers/mock-markup"
 
 describe("get markup", () => {
 

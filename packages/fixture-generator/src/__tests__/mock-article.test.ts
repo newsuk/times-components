@@ -1,4 +1,4 @@
-import MockArticle from "../src/mock-article";
+import MockArticle from "../mock-article";
 
 describe("The mock Article", () => {
   it("returns the minimum article requirements", () => {
