@@ -66,4 +66,9 @@ const sectionColours = {
   World: sectionColourBase.world
 };
 
+const secondarySectionColours = {
+  thesundaytimesmagazine: "#F13D00"
+};
+
 export default { ...sectionColourBase, ...sectionColours };
+export { secondarySectionColours };
