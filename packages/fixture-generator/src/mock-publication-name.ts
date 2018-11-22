@@ -1,7 +1,9 @@
 import { PublicationName } from "./types";
 
-function mockPublicationName (
+function mockPublicationName(
   name: PublicationName = PublicationName.TIMES
-): PublicationName { return name };
+): PublicationName {
+  return name;
+}
 
 export default mockPublicationName;

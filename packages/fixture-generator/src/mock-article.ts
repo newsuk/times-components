@@ -26,7 +26,10 @@ class MockArticle {
       id: UUID(),
       keywords: keywords(),
       publicationName: getPublicationName(),
-      paywalledContent: new MockMarkup().withXParagraphs(5).withAd().create(),
+      paywalledContent: new MockMarkup()
+        .withXParagraphs(5)
+        .withAd()
+        .create(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 0,
@@ -34,7 +37,10 @@ class MockArticle {
       byline: new MockMarkup().withInline().create(),
       flags: [Flag.EXCLUSIVE],
       label: "label",
-      content:  new MockMarkup().withXParagraphs(3).withAd().create(),
+      content: new MockMarkup()
+        .withXParagraphs(3)
+        .withAd()
+        .create(),
       headline: "test headline",
       publishedTime: new Date(0),
       section: SectionName.business,
