@@ -4,6 +4,9 @@ module.exports = (on, config) => {
   on('task', {
     startMockServerWith (mockData) {
       return mockTpa.startWithMockData(mockData) 
+    },
+    stopMockServer() {
+      return mockTpa.stop();
     }
   })
 }

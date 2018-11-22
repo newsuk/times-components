@@ -25,4 +25,8 @@ describe("Article", () => {
         });
       })
     );
+
+    afterEach(() => {
+      cy.task('stopMockServer');
+    })
 });

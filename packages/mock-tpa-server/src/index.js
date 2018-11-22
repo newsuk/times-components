@@ -40,8 +40,14 @@ export function startWithMockData(mockData) {
 }
 
 export function stop() {
-  if (server) {
-    server.stop();
-    console.log(`${serviceName} closed`);
-  }
+  return new Promise(resolve => {
+    if (server) {
+      server.stop().then(() => {
+        console.log(`${serviceName} closed`);
+        resolve(true)
+      })
+    }
+    resolve(true);
+  })
+ 
 }
