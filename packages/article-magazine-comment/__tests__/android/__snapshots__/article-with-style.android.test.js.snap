@@ -8,12 +8,9 @@ exports[`full article with style 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "marginBottom": 20,
+            "marginBottom": 25,
             "marginLeft": 10,
             "marginRight": 10,
-            "paddingBottom": 25,
             "paddingTop": 35,
           }
         }
@@ -119,6 +116,43 @@ exports[`full article with style 1`] = `
               Friday March 13 2015, 6:54pm, The Times
             </Text>
           </View>
+        </View>
+      </View>
+      <ModalImage />
+      <View>
+        <View
+          style={
+            Object {
+              "paddingTop": 5,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Some Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
         </View>
       </View>
     </View>
