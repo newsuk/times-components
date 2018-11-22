@@ -1,6 +1,6 @@
 import sharedTest from "../shared-article-list";
 
-describe("AuthorProfile", () => {
+xdescribe("AuthorProfile", () => {
   const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
   beforeEach(() => {
     cy.visit("/profile/fiona-hamilton");
