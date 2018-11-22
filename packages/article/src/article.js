@@ -1,172 +1,23 @@
-/* eslint-disable consistent-return */
+import React from "react";
+import ArticleMainStandard from "@times-components/article-main-standard";
+import ArticleMainComment from "@times-components/article-main-comment";
 
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import ArticleComments from "@times-components/article-comments";
-import { AdComposer } from "@times-components/ad";
-import RelatedArticles from "@times-components/related-articles";
-import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
-import ArticleRow from "./article-body/article-body-row";
-import ArticleTopics from "./article-topics";
-import ArticleContent from "./article-content";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
-import listViewDataHelper from "./data-helper";
-import articleTrackingContext from "./article-tracking-context";
+export const MAIN_STANDARD = "mainstandard";
+export const MAIN_COMMENT = "maincomment";
+export const MAGAZINE_STANDARD = "magazinestandard";
+export const MAGAZINE_COMMENT = "magazinecomment";
+export const IN_DEPTH = "indepth";
 
-const listViewPageSize = 1;
-const listViewSize = 10;
-const listViewScrollRenderAheadDistance = 10;
-
-const renderRow = analyticsStream => (
-  rowData,
-  onAuthorPress,
-  onCommentsPress,
-  onCommentGuidelinesPress,
-  onLinkPress,
-  onRelatedArticlePress,
-  onTopicPress,
-  onTwitterLinkPress,
-  onVideoPress
-) => {
-  // eslint-disable-next-line default-case
-  switch (rowData.type) {
-    case "articleBodyRow": {
-      return (
-        <ArticleRow
-          content={rowData}
-          onLinkPress={onLinkPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-        />
-      );
-    }
-
-    case "relatedArticleSlice": {
-      const { relatedArticleSlice } = rowData.data;
-      return (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          onPress={onRelatedArticlePress}
-          slice={relatedArticleSlice}
-        />
-      );
-    }
-
-    case "topics": {
-      return (
-        <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
-      );
-    }
-
-    case "comments": {
-      return (
-        <ArticleComments
-          articleId={rowData.data.articleId}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          url={rowData.data.url}
-        />
-      );
-    }
+const ArticleTemplate = props => {
+  const { template } = props.article;
+  switch (template) {
+    case MAIN_STANDARD:
+      return <ArticleMainStandard {...props} />;
+    case MAIN_COMMENT:
+      return <ArticleMainComment {...props} />;
+    default:
+      return <ArticleMainStandard {...props} />;
   }
 };
 
-class Article extends Component {
-  constructor(props) {
-    super(props);
-    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-
-    if (props.data) {
-      this.state = {
-        dataSource: props.data,
-        width: normaliseWidth(screenWidthInPixels())
-      };
-    } else {
-      this.state = {
-        dataSource: {}
-      };
-    }
-  }
-
-  onViewableItemsChanged(info) {
-    if (!info.changed.length) return [];
-
-    const { onViewed } = this.props;
-    const { dataSource } = this.state;
-
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem => onViewed(viewableItem.item, dataSource));
-  }
-
-  render() {
-    const {
-      adConfig,
-      analyticsStream,
-      Header,
-      onAuthorPress,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress,
-      onTwitterLinkPress,
-      onViewed,
-      onVideoPress,
-      receiveChildList
-    } = this.props;
-    const { dataSource, width } = this.state;
-
-    if (!dataSource.content) {
-      return null;
-    }
-
-    const articleOrganised = listViewDataHelper(dataSource);
-    const articleData = articleOrganised.map((item, index) => ({
-      ...item,
-      elementId: `${item.type}.${index}`,
-      name: item.type
-    }));
-
-    receiveChildList(articleData);
-
-    return (
-      <AdComposer adConfig={adConfig}>
-        <ArticleContent
-          data={articleData}
-          Header={Header}
-          initialListSize={listViewSize}
-          onAuthorPress={onAuthorPress}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onLinkPress={onLinkPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream)}
-          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-          width={width}
-        />
-      </AdComposer>
-    );
-  }
-}
-
-Article.propTypes = {
-  ...articlePropTypes,
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
-};
-Article.defaultProps = articleDefaultProps;
-
-// export default Article;
-export default articleTrackingContext(withTrackScrollDepth(Article));
+export default ArticleTemplate;

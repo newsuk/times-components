@@ -187,5 +187,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Pages/Article"
+  name: "Pages/Templates"
 };
