@@ -62,6 +62,16 @@ exports[`1. a full article 1`] = `
   <span>
     , The Times
   </span>
+  <figure>
+    <img
+      alt=""
+      src="https://crop169.io?resize=100"
+    />
+    <figcaption>
+      Some Caption
+      SOME CREDITS
+    </figcaption>
+  </figure>
   <img
     alt=""
     src="https://image.io?resize=100"
