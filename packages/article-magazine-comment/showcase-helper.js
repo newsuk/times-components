@@ -73,7 +73,13 @@ const makeArticle = configuration => article => {
     configuredArticle.label = null;
   }
 
-  if (!(configuration & LEAD_ASSET)) {
+  if (configuration & LEAD_ASSET) {
+    configuredArticle.leadAsset = {
+      ...configuredArticle.leadAsset,
+      caption: null,
+      credits: "Illustration by Jeremy"
+    };
+  } else {
     configuredArticle.leadAsset = null;
   }
 

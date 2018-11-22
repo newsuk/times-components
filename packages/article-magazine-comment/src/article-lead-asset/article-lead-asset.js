@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
+import Caption from "@times-components/caption";
 import ArticleLeadAssetImage from "./article-lead-asset-image";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
 
@@ -8,7 +9,7 @@ const ArticleLeadAsset = ({ data, width }) => {
     ? ArticleLeadAssetVideo
     : ArticleLeadAssetImage;
 
-  return <LeadAsset {...data} width={width} />;
+  return <Fragment><LeadAsset {...data} width={width} /><Caption credits={data.credits} text={data.caption} /></Fragment>
 };
 
 ArticleLeadAsset.propTypes = {
