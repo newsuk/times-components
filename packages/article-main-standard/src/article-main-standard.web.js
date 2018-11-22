@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Article from "@times-components/article";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
@@ -79,7 +79,7 @@ class ArticlePage extends Component {
     }
 
     return (
-      <Article
+      <ArticleSkeleton
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}
