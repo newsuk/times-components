@@ -1,4 +1,4 @@
-
+import createMockFunctions from "../src/create-mock-functions"
 
 describe("create mock functions", () => {
     it("should return an object", () => {
@@ -38,6 +38,11 @@ describe("create mock functions", () => {
         expect(typeof Slug()).toBe('string')
    })
 
+   it("should append __typename to object default types", () => {
+    const {Article} = createMockFunctions();
+    expect(Article()).toEqual({__typename: 'Article'})
+   })
+
    it("should not append __typename to primitive objects types if mock is provided", () => {
     const mockData = {
         Slug: 'i-am-slug'
@@ -47,39 +52,3 @@ describe("create mock functions", () => {
     })
 })
 
-function isObject(data) {
-    return typeof data === 'object';
-}
-
-function createMockFunctions(mockData) {
-    const defaultMockTypes = {
-      Article: {__typename: "Article"},
-      Media: {__typename: "Image"},
-      ArticleSlice: {
-        __typename: "StandardSlice",
-      },
-      Slug: "some-slug",
-      Markup: {__typename: "Markup"},
-    }
-
-    if (mockData && !Object.keys(mockData).every(key => defaultMockTypes[key])) {
-      throw new Error(`Your mocks do not match the default types, provided mocks are: ${Object.keys(mockData)}`)
-    }
-
-    return Object.keys(defaultMockTypes).reduce(( newObj, key ) => {
-        if (mockData && mockData[key]) {
-            newObj[key] = isObject(mockData[key]) ?  
-            () => ({
-                __typename: defaultMockTypes[key].__typename,
-                ...mockData[key]
-            }) :
-            () => mockData[key];
-        } else {
-            newObj[key] = isObject(defaultMockTypes[key]) ? 
-            () => ({...defaultMockTypes[key]}) : 
-            () => defaultMockTypes[key]
-        }
-        return newObj;
-    }, {})
-  }
-  

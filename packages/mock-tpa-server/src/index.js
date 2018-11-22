@@ -3,11 +3,8 @@
 import { ApolloServer } from "apollo-server";
 import { printSchema, buildClientSchema } from "graphql/utilities";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
-
-import { makeMocks } from "@times-components/provider-test-tools";
-import wholeschema from "../../schema/schema.json" 
-import { MockArticle }  from "../../fixture-generator/dist/index";
-import mockData from "./fixtures/mock-data";
+import tpaSchema from "../../schema/schema.json" 
+import createMockFunctions from "./create-mock-functions"
 
 const serviceName = "Mock TPA server";
 
@@ -15,34 +12,22 @@ let server;
 
 export function startWithMockData(mockData) {
   return new Promise(resolve => {
-    const __schema = wholeschema.data.__schema
+    const __schema = tpaSchema.data.__schema
     const schemaSDL = printSchema(buildClientSchema({__schema}));
 
-    const schema = makeExecutableSchema({
+    const executableSchema = makeExecutableSchema({
       resolverValidationOptions: {
         requireResolversForResolveType: false
       },
       typeDefs: schemaSDL
     });
 
-    
-
-    //const mockFunctions = createMockFunctions(mockData)
+    const mocks = createMockFunctions(mockData)
 
     addMockFunctionsToSchema({
-      mocks: {
-        Article: () => ({__typename: "Article", ...mockData.Article}),
-        Media: () => ({__typename: "Image"}),
-       
-        ArticleSlice: () => ({
-          __typename: "StandardSlice",
-        }),
-        Slug: () => ({__typename: 'Slug'}), //"some-slug",
-        Markup: () => ({}),
-       
-      },
+      mocks,
       preserveResolvers: true,
-      schema
+      schema: executableSchema
     });
 
       server = new ApolloServer({ schema });
