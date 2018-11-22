@@ -44,10 +44,9 @@ export function stop() {
     if (server) {
       server.stop().then(() => {
         console.log(`${serviceName} closed`);
-        resolve(true)
-      })
+        resolve(true);
+      });
     }
     resolve(true);
-  })
- 
+  });
 }
