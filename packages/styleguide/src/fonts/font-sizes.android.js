@@ -10,6 +10,7 @@ const fontSizes = scale => {
         button: 15,
         cardMetaMobile: 17,
         dropCap: 115,
+        keyFactsTitle: 17,
         link: 14,
         secondary: 21
       };
@@ -20,6 +21,7 @@ const fontSizes = scale => {
         button: 16,
         cardMetaMobile: 19,
         dropCap: 124,
+        keyFactsTitle: 19,
         link: 15,
         secondary: 23
       };
