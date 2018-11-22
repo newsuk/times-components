@@ -1,5 +1,5 @@
-import { Image, Media } from "../types";
-import UUID from "./UUID";
+import { Image, Media } from "./types";
+import UUID from "./mock-UUID";
 
 class MockImage {
     image: Image

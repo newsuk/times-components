@@ -1,5 +1,4 @@
-import { Markup } from "../types";
-
+import { Markup } from "./types";
 
 const markupTypes = {
     paragraph: {

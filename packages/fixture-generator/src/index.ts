@@ -1,4 +1,4 @@
 import MockArticle from "./mock-article";
-import MockImage from "./resolvers/image";
+import MockImage from "./mock-image";
 
 export { MockArticle, MockImage }

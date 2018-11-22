@@ -2,18 +2,16 @@ import {
   Article,
   PublicationName,
   Url,
-  Slug,
   Flag,
   SectionName,
   TemplateType
 } from "./types";
-import keywords from "./resolvers/keywords";
-import UUID from "./resolvers/UUID";
-import getPublicationName from "./resolvers/publication-name";
-import MockImage from "./resolvers/image";
-import { MockList } from "apollo-server";
-import getArticleSlice from "./resolvers/article-slice";
-import MockMarkup from "./resolvers/mock-markup";
+import keywords from "./mock-keywords";
+import UUID from "./mock-UUID";
+import getPublicationName from "./mock-publication-name";
+import MockImage from "./mock-image";
+import getArticleSlice from "./mock-article-slice";
+import MockMarkup from "./mock-markup";
 
 class MockArticle {
   article: Article;
@@ -45,16 +43,6 @@ class MockArticle {
       standfirst: "standfirst",
       title: "title",
       summary: new MockMarkup().withParagraph().create()
-      // topics: [
-      //   {
-      //     name: "Islington",
-      //     slug: "islington"
-      //   },
-      //   {
-      //     name: "Chelsea",
-      //     slug: "chelsea"
-      //   }
-      // ]
     };
   }
 

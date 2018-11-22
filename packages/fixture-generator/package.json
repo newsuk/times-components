@@ -8,7 +8,7 @@
     "build": "yarn getSchema && yarn gentypes && tsc",
     "gentypes": "gql-gen --schema ./schema.json --template graphql-codegen-typescript-template --out ./src/types.ts",
     "getSchema": "GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql getSchema",
-    "test": "jest ./__tests__/*",
+    "test": "jest ./src/__tests__/*",
     "lint": "yarn prettier:diff && yarn depcheck",
     "fmt": "prettier --write 'src/*.*'",
     "prettier:diff": "prettier --list-different 'src/*.*'",
