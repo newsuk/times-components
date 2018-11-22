@@ -51,7 +51,7 @@ class MockArticle {
       summary: new MockMarkup().withParagraph().create()
     };
   }
-  
+
   withRelatedArticles(count = 3) {
     this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
