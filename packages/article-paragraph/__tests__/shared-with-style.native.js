@@ -7,7 +7,7 @@ import {
   flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
-import { delay } from "@times-components/test-utils";
+import { delay, iterator } from "@times-components/test-utils";
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 
@@ -22,9 +22,14 @@ export default () => {
     )
   );
 
-  it("paragraph with a drop cap", async () => {
-    const testInstance = TestRenderer.create(renderParagraph(dropCapData));
-    await delay(0);
-    expect(testInstance).toMatchSnapshot();
-  });
+  iterator([
+    {
+      name: "paragraph with a drop cap",
+      test: async () => {
+        const testInstance = TestRenderer.create(renderParagraph(dropCapData));
+        await delay(0);
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ]);
 };

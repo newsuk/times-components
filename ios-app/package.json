@@ -1,18 +1,18 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.5.19",
+  "version": "0.5.22",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output assets/js/index.ios.bundle --assets-dest assets/res/",
-    "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > assets/js/index.ios.bundle.meta",
-    "build": "yarn build:js && yarn build:meta",
+    "build:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
+    "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/index.ios.bundle.meta",
+    "build:all": "yarn build:js && yarn build:meta",
     "start": "haul start --platform ios",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
-    "@times-components/pages": "1.8.6",
+    "@times-components/pages": "1.8.9",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-native": "0.55.4",

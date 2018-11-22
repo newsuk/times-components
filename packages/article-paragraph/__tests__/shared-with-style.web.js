@@ -9,6 +9,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import renderParagraph from "./renderer";
 
@@ -29,7 +30,14 @@ export default () => {
   // eslint-disable-next-line global-require
   require("jest-styled-components");
 
-  it("paragraph with a drop cap", () => {
-    expect(TestRenderer.create(renderParagraph(dropCapData))).toMatchSnapshot();
-  });
+  iterator([
+    {
+      name: "mpu config",
+      test: () => {
+        expect(
+          TestRenderer.create(renderParagraph(dropCapData))
+        ).toMatchSnapshot();
+      }
+    }
+  ]);
 };

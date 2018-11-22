@@ -1,6 +1,7 @@
 const article = require("../component/article");
 const runServer = require("../lib/run-server");
-const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
+const defaultAdConfig = require("../lib/ads/make-article-ad-config")
+  .defaultServer;
 
 module.exports = (
   articleId,

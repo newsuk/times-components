@@ -1,4 +1,5 @@
 import { AppRegistry } from "react-native-web";
+import { iterator } from "@times-components/test-utils";
 
 import {
   addSerializers,
@@ -26,5 +27,5 @@ export default () => {
     )
   );
 
-  shared();
+  iterator(shared());
 };

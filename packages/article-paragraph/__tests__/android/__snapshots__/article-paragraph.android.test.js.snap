@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`paragraph 1`] = `
+exports[`1. paragraph 1`] = `
 <View>
   <Text
     selectable={true}
@@ -10,7 +10,9 @@ exports[`paragraph 1`] = `
 </View>
 `;
 
-exports[`paragraph with a drop cap 1`] = `
+exports[`2. empty paragraph 1`] = `null`;
+
+exports[`3. paragraph with a drop cap 1`] = `
 <View>
   <Text
     selectable={true}
@@ -30,7 +32,7 @@ exports[`paragraph with a drop cap 1`] = `
 </View>
 `;
 
-exports[`paragraph with a short text and a drop cap 1`] = `
+exports[`4. paragraph with a short text and a drop cap 1`] = `
 <View>
   <Text
     selectable={true}

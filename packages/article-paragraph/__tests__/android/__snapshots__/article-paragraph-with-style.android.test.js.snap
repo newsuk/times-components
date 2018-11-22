@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`paragraph with a drop cap 1`] = `
+exports[`1. paragraph with a drop cap 1`] = `
 <View
   style={
     Object {
