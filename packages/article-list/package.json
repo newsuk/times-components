@@ -48,7 +48,7 @@
     "@times-components/test-utils": "2.0.3",
     "@times-components/webpack-configurator": "2.0.14",
     "apollo-client": "2.3.7",
-    "babel-cli": "7.1.5",
+    "@babel/cli": "^7.0.0",
     "babel-loader": "8.0.4",
     "babel-preset-react-native": "4.0.1",
     "depcheck": "0.6.9",
