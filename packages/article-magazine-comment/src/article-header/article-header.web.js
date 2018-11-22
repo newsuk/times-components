@@ -19,39 +19,38 @@ import {
 } from "../styles/responsive";
 
 const ArticleHeader = ({
-   authorImage,
-   byline,
-   flags,
-   headline,
-   label,
-   publicationName,
-   publishedTime,
-   standfirst,
- }) =>
-  (
-    <HeaderContainer style={styles.container}>
-      <AuthorImageContainer style={styles.authorImage}>
-        <Image aspectRatio={1} uri={authorImage}/>
-      </AuthorImageContainer>
-      <Label label={label}/>
-      <HeadlineContainer
-        accessibilityRole="heading"
-        aria-level="1"
-        style={styles.articleHeadline}
-      >
-        {headline}
-      </HeadlineContainer>
-      <FlagsContainer>
-        <Flags flags={flags}/>
-      </FlagsContainer>
-      <Standfirst standfirst={standfirst}/>
-      <Meta
-        byline={byline}
-        publicationName={publicationName}
-        publishedTime={publishedTime}
-      />
-    </HeaderContainer>
-  );
+  authorImage,
+  byline,
+  flags,
+  headline,
+  label,
+  publicationName,
+  publishedTime,
+  standfirst
+}) => (
+  <HeaderContainer style={styles.container}>
+    <AuthorImageContainer style={styles.authorImage}>
+      <Image aspectRatio={1} uri={authorImage} />
+    </AuthorImageContainer>
+    <Label label={label} />
+    <HeadlineContainer
+      accessibilityRole="heading"
+      aria-level="1"
+      style={styles.articleHeadline}
+    >
+      {headline}
+    </HeadlineContainer>
+    <FlagsContainer>
+      <Flags flags={flags} />
+    </FlagsContainer>
+    <Standfirst standfirst={standfirst} />
+    <Meta
+      byline={byline}
+      publicationName={publicationName}
+      publishedTime={publishedTime}
+    />
+  </HeaderContainer>
+);
 
 ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;

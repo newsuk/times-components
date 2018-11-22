@@ -41,10 +41,7 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset
-          {...leadAssetProps}
-          width={width}
-        />
+        <LeadAsset {...leadAssetProps} width={width} />
       </Fragment>
     );
   }

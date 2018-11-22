@@ -1298,7 +1298,7 @@ const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "HURRICANE IRMA";
 const defaultLeadAsset = {
   __typename: "Image",
-  caption: "Chris Reynolds Gordon at one of his party venues in London",
+  caption: null,
   credits: "The credits",
   crop11: {
     __typename: "Crop",

@@ -11,7 +11,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
-class ArticlePage extends Component {
+class ArticleMagazineComment extends Component {
   constructor() {
     super();
     this.renderHeader = this.renderHeader.bind(this);
@@ -35,20 +35,17 @@ class ArticlePage extends Component {
     return (
       <Fragment>
         <ArticleHeader
-        authorImage={author.image}
-        byline={byline}
-        flags={flags}
-        headline={getHeadline(headline, shortHeadline)}
-        label={label}
-        onAuthorPress={onAuthorPress}
-        publicationName={publicationName}
-        publishedTime={publishedTime}
-        standfirst={standfirst}
-      />
-        <LeadAsset
-          data={{ ...leadAsset, onVideoPress }}
-          width={width}
+          authorImage={author.image}
+          byline={byline}
+          flags={flags}
+          headline={getHeadline(headline, shortHeadline)}
+          label={label}
+          onAuthorPress={onAuthorPress}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+          standfirst={standfirst}
         />
+        <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
       </Fragment>
     );
   }
@@ -101,7 +98,7 @@ class ArticlePage extends Component {
   }
 }
 
-ArticlePage.propTypes = articlePropTypes;
-ArticlePage.defaultProps = articleDefaultProps;
+ArticleMagazineComment.propTypes = articlePropTypes;
+ArticleMagazineComment.defaultProps = articleDefaultProps;
 
-export default ArticlePage;
+export default ArticleMagazineComment;

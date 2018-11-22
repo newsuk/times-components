@@ -14,31 +14,30 @@ import {
 import styles from "../styles";
 
 const ArticleHeader = ({
-   authorImage,
-   byline,
-   flags,
-   headline,
-   label,
-   onAuthorPress,
-   publicationName,
-   publishedTime,
-   standfirst,
- }) =>
-  (
-    <View style={styles.container}>
-      <Image aspectRatio={1} style={styles.authorImage} uri={authorImage}/>
-      <Label label={label}/>
-      <Text style={styles.articleHeadline}>{headline}</Text>
-      <Flags flags={flags}/>
-      <Standfirst standfirst={standfirst}/>
-      <Meta
-        byline={byline}
-        onAuthorPress={onAuthorPress}
-        publicationName={publicationName}
-        publishedTime={publishedTime}
-      />
-    </View>
-  );
+  authorImage,
+  byline,
+  flags,
+  headline,
+  label,
+  onAuthorPress,
+  publicationName,
+  publishedTime,
+  standfirst
+}) => (
+  <View style={styles.container}>
+    <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
+    <Label label={label} />
+    <Text style={styles.articleHeadline}>{headline}</Text>
+    <Flags flags={flags} />
+    <Standfirst standfirst={standfirst} />
+    <Meta
+      byline={byline}
+      onAuthorPress={onAuthorPress}
+      publicationName={publicationName}
+      publishedTime={publishedTime}
+    />
+  </View>
+);
 
 ArticleHeader.propTypes = {
   ...articleHeaderPropTypes,
