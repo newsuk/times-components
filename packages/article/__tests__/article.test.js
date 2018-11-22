@@ -24,7 +24,7 @@ const requiredProps = {
 
 describe("Article", () => {
   it("renders with ArticleMainStandard as the default template if no template is provided", () => {
-    const testRenderer = TestRenderer.create(<Article {...requiredProps} />);
+    const testRenderer = TestRenderer.create(<Article article={{}} {...requiredProps} />);
     const testInstance = testRenderer.root;
 
     expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
