@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article flags with content 1`] = `
+<View>
+  <View>
+    <NewArticleFlag />
+  </View>
+</View>
+`;
+
+exports[`2. article flags with no content 1`] = `null`;
+
+exports[`3. article standfirst with content 1`] = `
+<Text
+  accessibilityRole="heading"
+  aria-level="2"
+>
+  This is a standfirst
+</Text>
+`;
+
+exports[`4. article standfirst with no content 1`] = `null`;
+
+exports[`5. article label uses default section colour 1`] = `
+<View>
+  <ArticleLabel
+    color="#333333"
+    title="Random Label"
+  />
+</View>
+`;
+
+exports[`6. article label renders null if there is no text 1`] = `null`;
+
+exports[`7. article meta uses default section colour 1`] = `
+<View>
+  <View>
+    <ArticleBylineWithLinks
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "kaya-burgess",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Kaya Burgess",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Religious Affairs Correspondent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+      color="#333333"
+    />
+  </View>
+  <View>
+    <Text>
+      Monday March 23 2015, 7:39pm, The Times
+    </Text>
+  </View>
+</View>
+`;
