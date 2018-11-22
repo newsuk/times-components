@@ -9,9 +9,6 @@ const styles = {
   },
   container: {
     alignItems: "center",
-    borderStyle: "solid",
-    borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1,
     marginBottom: spacing(5),
     width: "100%"
   },
