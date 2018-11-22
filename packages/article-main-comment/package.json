@@ -46,7 +46,7 @@
     "@times-components/tealium-utils": "0.7.8",
     "@times-components/test-utils": "2.0.3",
     "@times-components/webpack-configurator": "2.0.14",
-    "babel-cli": "6.26.0",
+    "babel-cli": "7.1.5",
     "eslint": "5.9.0",
     "jest": "23.3.0",
     "jest-styled-components": "5.0.1",

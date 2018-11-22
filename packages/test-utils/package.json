@@ -39,7 +39,7 @@
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/webpack-configurator": "2.0.14",
-    "babel-preset-react-native": "4.0.0",
+    "babel-preset-react-native": "4.0.1",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",

@@ -28,7 +28,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/webpack-configurator": "2.0.14",
-    "babel-cli": "6.26.0",
+    "babel-cli": "7.1.5",
     "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
     "prettier": "1.14.3",

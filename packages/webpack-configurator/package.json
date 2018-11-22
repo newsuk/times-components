@@ -49,7 +49,7 @@
     "prettier": "1.14.3"
   },
   "peerDependencies": {
-    "babel-loader": "7.1.4",
+    "babel-loader": "8.0.4",
     "react-native-web": "0.9.0",
     "webpack": ">=4.2.0"
   },
