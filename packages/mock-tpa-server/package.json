@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@times-components/provider-test-tools": "1.10.0",
+    "graphql-tools": "4.0.3",
     "@times-components/schema": "0.1.14",
     "apollo-server": "2.1.0",
     "graphql": "0.13.2"
