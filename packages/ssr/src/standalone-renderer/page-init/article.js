@@ -1,4 +1,4 @@
-const defaultMapArticleToConfig = require("../../lib/make-ad-config")
+const defaultMapArticleToConfig = require("../../lib/ads/make-article-ad-config")
   .defaultClient;
 const makeArticleUrl = require("../../lib/make-url");
 

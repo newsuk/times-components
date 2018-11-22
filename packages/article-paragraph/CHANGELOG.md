@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.10"></a>
+## [0.2.10](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.9...@times-components/article-paragraph@0.2.10) (2018-11-22)
+
+
+### Bug Fixes
+
+* Check for children length in paragraph ([#1505](https://github.com/newsuk/times-components/issues/1505)) ([5bdf907](https://github.com/newsuk/times-components/commit/5bdf907))
+
+
+
+
+
+<a name="0.2.9"></a>
+## [0.2.9](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.8...@times-components/article-paragraph@0.2.9) (2018-11-21)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
 <a name="0.2.8"></a>
 ## [0.2.8](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.7...@times-components/article-paragraph@0.2.8) (2018-11-20)
 

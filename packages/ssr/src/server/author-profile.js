@@ -1,6 +1,7 @@
 const authorProfile = require("../component/author-profile");
 const runServer = require("../lib/run-server");
-const defaultAdConfig = require("../lib/make-ad-config").defaultServer;
+const defaultAdConfig = require("../lib/ads/make-author-profile-ad-config")
+  .defaultServer;
 
 module.exports = (
   { authorSlug, currentPage },

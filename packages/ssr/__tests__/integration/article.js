@@ -20,7 +20,7 @@ describe("Article", () => {
         cy.get("@raImages").each(item => {
           const url = new URL(item.attr("src"));
 
-          expect(url.searchParams.get("resize")).to.equal("301");
+          expect(url.searchParams.get("resize")).to.equal("306");
         });
       }));
 });

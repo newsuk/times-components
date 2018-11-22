@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`paragraph with a drop cap 1`] = `
+exports[`1. mpu config 1`] = `
 .c0 {
   color: #333333;
   display: block;

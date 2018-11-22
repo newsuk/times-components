@@ -10,7 +10,7 @@ import {
   flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
-import { delay } from "@times-components/test-utils";
+import { delay, iterator } from "@times-components/test-utils";
 import shared from "./shared.base";
 import "./mock-text-measure-module";
 import DropCap from "../src/drop-cap";
@@ -30,24 +30,32 @@ export default () => {
     )
   );
 
-  shared();
+  iterator([
+    ...shared(),
+    {
+      name: "re-measures when scale changes",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <DropCap dropCap={mockDropCap} scale={scales.large} text={mockText} />
+        );
 
-  it("re-measures when scale changes", async () => {
-    const testInstance = TestRenderer.create(
-      <DropCap dropCap={mockDropCap} scale={scales.large} text={mockText} />
-    );
+        await delay(0);
+        expect(
+          testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
+        ).toBe(115);
+        testInstance.update(
+          <DropCap
+            dropCap={mockDropCap}
+            scale={scales.xlarge}
+            text={mockText}
+          />
+        );
 
-    await delay(0);
-    expect(
-      testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
-    ).toBe(115);
-    testInstance.update(
-      <DropCap dropCap={mockDropCap} scale={scales.xlarge} text={mockText} />
-    );
-
-    await delay(0);
-    expect(
-      testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
-    ).toBe(124);
-  });
+        await delay(0);
+        expect(
+          testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
+        ).toBe(124);
+      }
+    }
+  ]);
 };

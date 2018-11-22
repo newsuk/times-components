@@ -10,7 +10,7 @@ const styles = {
   },
   view: {
     ...sharedStyles.view,
-    marginTop: -3
+    marginTop: -5
   }
 };
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup-forest",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Utility functions for traversing The Times' AST",
   "main": "dist/markup-forest",
   "dev": "src/markup-forest",
@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.7",
-    "@times-components/jest-configurator": "2.1.16",
-    "@times-components/test-utils": "2.0.2",
-    "@times-components/webpack-configurator": "2.0.13",
+    "@times-components/eslint-config-thetimes": "0.8.8",
+    "@times-components/jest-configurator": "2.1.17",
+    "@times-components/test-utils": "2.0.3",
+    "@times-components/webpack-configurator": "2.0.14",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
     "jest": "23.3.0",

@@ -8,6 +8,10 @@ import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
   const { children: astChildren } = ast;
+  if (!astChildren || astChildren.length === 0) {
+    return null;
+  }
+
   const { name, attributes } = astChildren[0];
   if (name === "dropCap") {
     const { value } = attributes;
