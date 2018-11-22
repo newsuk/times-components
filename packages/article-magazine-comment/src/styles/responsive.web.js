@@ -41,19 +41,14 @@ export const HeaderContainer = styled(View)`
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
-    margin: 0 auto;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: ${spacing(7)};
     margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    padding-bottom: ${spacing(7)};
-    padding-left: ${spacing(12)};
-    padding-right: ${spacing(12)};
-    margin-bottom: ${spacing(7)};
   }
 `;
 
@@ -115,6 +110,7 @@ export const StandfirstContainer = styled(Text)`
 
 export const LeadAsset = styled(View)`
   margin-bottom: ${spacing(2)};
+  order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
     margin-bottom: ${spacing(4)};
@@ -128,9 +124,5 @@ export const LeadAsset = styled(View)`
 `;
 
 export const LeadAssetCaptionContainer = styled(View)`
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: flex;
-  }
+  display: flex;
 `;
