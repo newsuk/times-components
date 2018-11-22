@@ -32,7 +32,7 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article template="mainstandard" {...requiredProps} />
+      <Article article={{ template: "mainstandard" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -41,7 +41,7 @@ describe("Article", () => {
 
   it("renders with ArticleComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article template="maincomment" {...requiredProps} />
+      <Article article={{ template: "maincomment" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
