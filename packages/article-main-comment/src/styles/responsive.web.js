@@ -51,8 +51,6 @@ export const HeaderContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
     padding-bottom: ${spacing(7)};
-    padding-left: ${spacing(12)};
-    padding-right: ${spacing(12)};
     margin-bottom: ${spacing(7)};
   }
 `;

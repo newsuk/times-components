@@ -16,12 +16,9 @@ const sharedStyles = {
   },
   container: {
     alignItems: "center",
-    borderBottomColor: colours.functional.keyline,
-    borderBottomWidth: 1,
-    marginBottom: spacing(4),
+    marginBottom: spacing(5),
     marginLeft: spacing(2),
     marginRight: spacing(2),
-    paddingBottom: spacing(5),
     paddingTop: spacing(7)
   },
   datePublication: {
