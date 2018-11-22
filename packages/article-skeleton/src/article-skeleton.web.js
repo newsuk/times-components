@@ -6,7 +6,10 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
 import ArticleTopics from "./article-topics";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import {
+  articleSkeletonPropTypes,
+  articleSkeletonDefaultProps
+} from "./article-skeleton-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 
 import {
@@ -19,7 +22,7 @@ const adStyle = {
   marginBottom: 0
 };
 
-class Article extends Component {
+class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
 
@@ -121,7 +124,7 @@ class Article extends Component {
   }
 }
 
-Article.propTypes = articlePropTypes;
-Article.defaultProps = articleDefaultProps;
+ArticleSkeleton.propTypes = articleSkeletonPropTypes;
+ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
-export default articleTrackingContext(withTrackScrollDepth(Article));
+export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

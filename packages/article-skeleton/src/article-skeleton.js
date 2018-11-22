@@ -10,7 +10,10 @@ import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
+import {
+  articleSkeletonPropTypes,
+  articleSkeletonDefaultProps
+} from "./article-skeleton-prop-types";
 import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
 
@@ -72,7 +75,7 @@ const renderRow = analyticsStream => (
   }
 };
 
-class Article extends Component {
+class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
@@ -156,8 +159,8 @@ class Article extends Component {
   }
 }
 
-Article.propTypes = {
-  ...articlePropTypes,
+ArticleSkeleton.propTypes = {
+  ...articleSkeletonPropTypes,
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -166,7 +169,6 @@ Article.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
-Article.defaultProps = articleDefaultProps;
+ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
-// export default Article;
-export default articleTrackingContext(withTrackScrollDepth(Article));
+export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

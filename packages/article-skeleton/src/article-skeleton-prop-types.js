@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const articlePropTypes = {
+const articleSkeletonPropTypes = {
   adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({}),
@@ -8,11 +8,11 @@ const articlePropTypes = {
   receiveChildList: PropTypes.func
 };
 
-const articleDefaultProps = {
+const articleSkeletonDefaultProps = {
   adConfig: {},
   data: null,
   Header: () => null,
   receiveChildList: () => {}
 };
 
-export { articlePropTypes, articleDefaultProps };
+export { articleSkeletonPropTypes, articleSkeletonDefaultProps };
