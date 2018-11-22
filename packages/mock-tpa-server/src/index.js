@@ -1,19 +1,19 @@
 /* eslint-disable no-console */
 
 import { ApolloServer } from "apollo-server";
-import { MockArticle }  from "../../fixture-generator/dist/index";
-import wholeschema from "../../schema/schema.json" 
 import { printSchema, buildClientSchema } from "graphql/utilities";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 
 import { makeMocks } from "@times-components/provider-test-tools";
+import wholeschema from "../../schema/schema.json" 
+import { MockArticle }  from "../../fixture-generator/dist/index";
 import mockData from "./fixtures/mock-data";
 
 const serviceName = "Mock TPA server";
 
 let server;
 
-export function start() {
+export function startWithMockData(mockData) {
   return new Promise(resolve => {
     const __schema = wholeschema.data.__schema
     const schemaSDL = printSchema(buildClientSchema({__schema}));
@@ -25,29 +25,21 @@ export function start() {
       typeDefs: schemaSDL
     });
 
-  //const schema = makeMocks(mockData());
+    
 
-   const article = new MockArticle().withSundayTimes().withImageLeadAsset().withRelatedArticles(3).create();
+    //const mockFunctions = createMockFunctions(mockData)
 
     addMockFunctionsToSchema({
       mocks: {
-        Article: () => article,
+        Article: () => ({__typename: "Article", ...mockData.Article}),
         Media: () => ({__typename: "Image"}),
        
         ArticleSlice: () => ({
           __typename: "StandardSlice",
         }),
-        Slug: () => "some-slug",
+        Slug: () => ({__typename: 'Slug'}), //"some-slug",
         Markup: () => ({}),
-        // Ratio: () => "16:9",
-        // Tile: () => ({}),
-        // URL: () => "https://test.io",
-        // UUID: () => "a-u-u-i-d",
-        // DateTime: () => "2018-10-25",
-        // StandardSlice: () => ({
-        //   __typename: "StandardSlice",
-        //   items: []
-        // }),
+       
       },
       preserveResolvers: true,
       schema

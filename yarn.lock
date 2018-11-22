@@ -1630,6 +1630,17 @@
     webpack-dev-server "3.1.7"
     webpack-merge "^4.1.1"
 
+"@times-components/schema@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@times-components/schema/-/schema-0.1.12.tgz#3b160a9cfe37e9192d60d70f1df5fc806bc53243"
+  integrity sha512-hv6685J2sQs47A2AxpR4ezpwR4gNjXDY/LGOfJ9USNyMd+erHB4KoqXJSnxFPIIYugwudBIEUyBLnLvtGRzVGQ==
+  dependencies:
+    apollo-cache-inmemory "1.1.10"
+    chalk "2.4.1"
+    graphql "0.13.2"
+    mkdirp "0.5.1"
+    node-fetch "2.2.0"
+
 "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
