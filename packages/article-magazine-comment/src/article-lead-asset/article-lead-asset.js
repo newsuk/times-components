@@ -9,7 +9,12 @@ const ArticleLeadAsset = ({ data, width }) => {
     ? ArticleLeadAssetVideo
     : ArticleLeadAssetImage;
 
-  return <Fragment><LeadAsset {...data} width={width} /><Caption credits={data.credits} text={data.caption} /></Fragment>
+  return (
+    <Fragment>
+      <LeadAsset {...data} width={width} />
+      <Caption credits={data.credits} text={data.caption} />
+    </Fragment>
+  );
 };
 
 ArticleLeadAsset.propTypes = {

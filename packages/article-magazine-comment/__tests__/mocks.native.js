@@ -20,7 +20,7 @@ jest.mock("@times-components/button", () => "Button");
 jest.mock("@times-components/image", () => ({
   __esModule: true,
   default: "Image",
-  ModalImage: "ModalImage",
+  ModalImage: "ModalImage"
 }));
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");

@@ -5,10 +5,7 @@ import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
-import {
-  LeadAsset,
-  LeadAssetCaptionContainer
-} from "../styles/responsive";
+import { LeadAsset, LeadAssetCaptionContainer } from "../styles/responsive";
 
 const LeadAssetComponent = ({
   aspectRatio,
