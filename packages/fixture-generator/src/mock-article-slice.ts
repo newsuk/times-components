@@ -3,7 +3,7 @@ import MockArticle from "./mock-article";
 
 function mockArticleSlice(count: number): ArticleSlice {
   const articles = new Array(count).fill(0).map(() => {
-    const article = new MockArticle().withImageLeadAsset().create();
+    const article = new MockArticle().create();
     return {
       article,
       headline: article.headline,

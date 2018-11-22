@@ -5,5 +5,6 @@ describe("The Mock Image", () => {
     const mockImage = new MockImage().create();
     expect(mockImage).toHaveProperty("id");
     expect(mockImage).toHaveProperty("crop");
+    expect(mockImage).toHaveProperty("title");
   });
 });

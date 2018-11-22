@@ -51,12 +51,7 @@ class MockArticle {
       summary: new MockMarkup().withParagraph().create()
     };
   }
-
-  withImageLeadAsset() {
-    this.article.leadAsset = new MockImage().create();
-    return this;
-  }
-
+  
   withRelatedArticles(count = 3) {
     this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
