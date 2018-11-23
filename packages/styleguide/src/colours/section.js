@@ -66,9 +66,16 @@ const primaryColours = {
   World: primaryColoursBase.world
 };
 
-const secondarySectionColours = {
+const secondaryColoursBase = {
   thesundaytimesmagazine: "#F13D00"
 };
 
-export default { ...sectionColourBase, ...sectionColours };
-export { secondarySectionColours };
+const secondaryColours = {
+  "The Sunday Times Magazine": secondaryColoursBase.thesundaytimesmagazine
+};
+
+export default { ...primaryColoursBase, ...primaryColours };
+export const secondarySectionColours = {
+  ...secondaryColoursBase,
+  ...secondaryColours
+};
