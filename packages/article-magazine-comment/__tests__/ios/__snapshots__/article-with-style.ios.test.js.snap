@@ -118,41 +118,49 @@ exports[`full article with style 1`] = `
           </View>
         </View>
       </View>
-      <ModalImage />
-      <View>
-        <View
-          style={
-            Object {
-              "paddingTop": 10,
-            }
+      <View
+        style={
+          Object {
+            "marginBottom": 20,
           }
-        >
-          <Text
+        }
+      >
+        <ModalImage />
+        <View>
+          <View
             style={
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 16,
+                "paddingTop": 10,
               }
             }
           >
-            Some Caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 16,
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 16,
+                }
               }
-            }
-          >
-            SOME CREDITS
-          </Text>
+            >
+              Some Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 9,
+                  "fontWeight": "400",
+                  "letterSpacing": 1,
+                  "lineHeight": 16,
+                }
+              }
+            >
+              SOME CREDITS
+            </Text>
+          </View>
         </View>
       </View>
     </View>

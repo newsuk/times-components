@@ -109,17 +109,16 @@ export const StandfirstContainer = styled(Text)`
 `;
 
 export const LeadAsset = styled(View)`
-  margin-bottom: ${spacing(2)};
   order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
+    margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 

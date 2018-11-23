@@ -6,6 +6,7 @@ import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
 import { LeadAsset, LeadAssetCaptionContainer } from "../styles/responsive";
+import styles from "../styles";
 
 const LeadAssetComponent = ({
   aspectRatio,
@@ -36,7 +37,7 @@ const LeadAssetComponent = ({
   );
 
   return (
-    <LeadAsset>
+    <LeadAsset style={styles.leadAssetContainer}>
       <figure style={{ margin: 0 }}>
         <AspectRatioContainer aspectRatio={aspectRatio}>
           {leadAssetView}

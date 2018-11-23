@@ -13,7 +13,7 @@ const ArticleLeadAssetImage = ({
   crop45,
   crop169,
   crop1251,
-  width
+  width,
 }) => {
   const crop = getStandardTemplateCrop({
     crop11,
