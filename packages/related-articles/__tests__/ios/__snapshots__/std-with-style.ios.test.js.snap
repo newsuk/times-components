@@ -24,6 +24,7 @@ exports[`default styles 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 25,
           "lineHeight": 27,
+          "paddingVertical": 5,
         }
       }
     >
