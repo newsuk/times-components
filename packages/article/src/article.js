@@ -11,6 +11,7 @@ export const templates = {
 };
 
 const Article = props => {
+  console.log(props.article);
   const { template } = props.article;
   switch (template) {
     case templates.mainstandard:
