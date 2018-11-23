@@ -6,5 +6,5 @@
   "pluginsFile": false,
   "screenshotsFolder": "__tests__/screenshots",
   "supportFile": "__tests__/cypress/support",
-  "videosFolder": "__tests__/videos"
+  "video": false
 }
