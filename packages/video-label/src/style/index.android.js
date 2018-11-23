@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...sharedStyles.title,
-    top: 1
+    top: 0
   }
 });
 
