@@ -1,18 +1,38 @@
 import sectionColours, { secondarySectionColours } from "../colours/section";
 
 const sectionColourPicker = (section, template) => {
-  switch (template) {
-    case "magazinestandard":
-    case "magazinecomment":
-    case "indepth":
-      if (section === "thesundaytimesmagazine") {
-        return secondarySectionColours[section];
+  const config = {
+    indepth: {
+      default: {
+        sectionColours
+      },
+      thesundaytimesmagazine: {
+        secondarySectionColours
       }
-      return sectionColours[section];
+    },
+    magazinecomment: {
+      default: {
+        sectionColours
+      }
+    },
+    magazinestandard: {
+      default: {
+        sectionColours
+      }
+    },
+    maincomment: {
+      default: {
+        sectionColours
+      }
+    },
+    mainstandard: {
+      default: {
+        sectionColours
+      }
+    }
+  };
 
-    default:
-      return sectionColours[section];
-  }
+  return config[template][section] || config[template].default;
 };
 
 export default (section, template) => ({
