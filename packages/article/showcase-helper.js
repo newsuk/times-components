@@ -142,8 +142,6 @@ export class ArticleConfigurator extends Component {
       return null;
     }
 
-    console.log(mocks);
-
     return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
   }
 }
