@@ -1,6 +1,6 @@
 # Article
 
-<!-- Add the description of the package here. -->
+Chooses which template to use based on template names.
 
 ## Contributing
 
