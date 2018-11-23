@@ -79,6 +79,7 @@ const ArticleRow = ({
         element: (
           <ArticleLink
             key={key}
+            linkType={attributes.type}
             onPress={e =>
               onLinkPress(e, {
                 canonicalId: attributes.canonicalId,
