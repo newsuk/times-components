@@ -40,6 +40,9 @@ const sharedStyles = {
   label: {
     marginBottom: spacing(2)
   },
+  leadAssetContainer: {
+    marginBottom: spacing(4)
+  },
   meta: {
     flexDirection: "row",
     flexWrap: "wrap"
@@ -53,9 +56,6 @@ const sharedStyles = {
     marginBottom: spacing(3),
     paddingHorizontal: spacing(2),
     textAlign: "center"
-  },
-  leadAssetContainer: {
-    marginBottom: spacing(4),
   }
 };
 
