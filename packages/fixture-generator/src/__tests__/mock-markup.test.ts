@@ -7,8 +7,7 @@ describe("get markup", () => {
   })
 
   it("should be able to generate paragraphs of markup", () => {
-    const mockMarkup = new MockMarkup().withParagraph().withParagraph()
-      .withParagraph().create()
+    const mockMarkup = new MockMarkup().withParagraph().create()
     for (const markup of mockMarkup) {
       expect(markup.name).toBe('paragraph')
     }
