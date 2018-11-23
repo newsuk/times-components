@@ -60,10 +60,17 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@times-components/ad": "2.1.59",
     "@times-components/article-main-comment": "0.1.6",
     "@times-components/article-main-standard": "0.2.6",
     "@times-components/context": "0.5.10",
+=======
+    "@times-components/ad": "2.1.58",
+    "@times-components/article-main-comment": "0.1.4",
+    "@times-components/article-main-standard": "0.2.4",
+    "@times-components/context": "0.5.9",
+>>>>>>> chore: Dependency fixes
     "@times-components/provider": "1.8.1",
     "@times-components/styleguide": "3.8.2",
     "lodash.invert": "4.3.0",
