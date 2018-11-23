@@ -54,21 +54,23 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </View>
         </View>
       </View>
-      <ModalImage
-        aspectRatio={1.7777777777777777}
-        caption="Some Caption"
-        credits="Some Credits"
-        highResSize={1440}
-        uri="https://crop169.io"
-      />
       <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption="Some Caption"
+          credits="Some Credits"
+          highResSize={1440}
+          uri="https://crop169.io"
+        />
         <View>
-          <Text>
-            Some Caption
-          </Text>
-          <Text>
-            SOME CREDITS
-          </Text>
+          <View>
+            <Text>
+              Some Caption
+            </Text>
+            <Text>
+              SOME CREDITS
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -201,21 +203,23 @@ exports[`4. an article with ads 1`] = `
           </View>
         </View>
       </View>
-      <ModalImage
-        aspectRatio={1.7777777777777777}
-        caption="Some Caption"
-        credits="Some Credits"
-        highResSize={1440}
-        uri="https://crop169.io"
-      />
       <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption="Some Caption"
+          credits="Some Credits"
+          highResSize={1440}
+          uri="https://crop169.io"
+        />
         <View>
-          <Text>
-            Some Caption
-          </Text>
-          <Text>
-            SOME CREDITS
-          </Text>
+          <View>
+            <Text>
+              Some Caption
+            </Text>
+            <Text>
+              SOME CREDITS
+            </Text>
+          </View>
         </View>
       </View>
     </View>

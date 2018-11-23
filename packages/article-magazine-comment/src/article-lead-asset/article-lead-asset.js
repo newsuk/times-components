@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
+import React  from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Caption from "@times-components/caption";
 import ArticleLeadAssetImage from "./article-lead-asset-image";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
+import styles from "../styles";
 
 const ArticleLeadAsset = ({ data, width }) => {
   const LeadAsset = data.isVideo
@@ -10,10 +12,10 @@ const ArticleLeadAsset = ({ data, width }) => {
     : ArticleLeadAssetImage;
 
   return (
-    <Fragment>
+    <View style={styles.leadAssetContainer}>
       <LeadAsset {...data} width={width} />
       <Caption credits={data.credits} text={data.caption} />
-    </Fragment>
+    </View>
   );
 };
 
