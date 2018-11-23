@@ -9,7 +9,7 @@ describe("The mock Article", () => {
   });
 
   it("should return a sunday times article", () => {
-    const mockArticle = new MockArticle().withSundayTimes().create();
+    const mockArticle = new MockArticle().sundayTimes().create();
     expect(mockArticle.publicationName).toBe("SUNDAYTIMES");
   });
 

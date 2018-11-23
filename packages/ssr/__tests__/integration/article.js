@@ -5,7 +5,7 @@ describe("Article", () => {
     cy
       .task("startMockServerWith", {
         Article: new MockArticle()
-          .withSundayTimes()
+          .sundayTimes()
           .withRelatedArticles(1)
           .create()
       })

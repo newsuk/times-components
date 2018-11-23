@@ -57,7 +57,7 @@ class MockArticle {
     return this;
   }
 
-  withSundayTimes() {
+  sundayTimes() {
     this.article.publicationName = getPublicationName(
       PublicationName.SUNDAYTIMES
     );
