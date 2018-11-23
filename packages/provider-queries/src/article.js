@@ -51,6 +51,7 @@ export default addTypenameToDocument(gql`
         }
       }
       standfirst
+      template
       topics(maxCount: 5) {
         name
         slug
