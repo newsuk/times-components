@@ -125,9 +125,9 @@ const renderers = ({ observed, registerNode }) => ({
   paywall(key, attributes, children) {
     return {
       element: (
-        <div className="paywall" key={key}>
+        <span className="paywall" key={key}>
           {children}
-        </div>
+        </span>
       )
     };
   },
