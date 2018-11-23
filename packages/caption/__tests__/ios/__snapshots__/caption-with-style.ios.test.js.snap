@@ -39,3 +39,45 @@ exports[`caption with specific styles 1`] = `
   </View>
 </View>
 `;
+
+exports[`centred caption with specific styles 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "red",
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some caption text goes in here
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;

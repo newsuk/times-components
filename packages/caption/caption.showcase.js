@@ -1,12 +1,12 @@
 import React from "react";
 import { Image } from "react-native";
-import Caption from "./src/caption";
+import Caption, { CentredCaption } from "./src/caption";
 
 const captionText =
   'The prime minister said HMS Queen Elizabeth was a symbol of Britain’s status as a "great maritime nation"';
 const credits = "BEN STANSALL/PA WIRE";
 const exampleImage =
-  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685";
+  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff10d34c8-abaf-11e8-9969-06853d7144fd.jpg?crop=1688%2C949%2C0%2C88&resize=685";
 const style = {
   container: {
     backgroundColor: "blue"
@@ -31,6 +31,11 @@ export default {
     {
       component: () => <Caption credits={credits} />,
       name: "Credits only",
+      type: "story"
+    },
+    {
+      component: () => <CentredCaption credits={credits} text={captionText} />,
+      name: "Centred caption",
       type: "story"
     },
     {

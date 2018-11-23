@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Caption from "../src/caption";
+import Caption, { CentredCaption } from "../src/caption";
 
 const captionText = "Some caption text goes in here";
 const credits = "Just credits";
@@ -17,6 +17,14 @@ export default () => {
   it("caption with specific styles", () => {
     const testInstance = TestRenderer.create(
       <Caption credits={credits} style={style} text={captionText} />
+    );
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
+  });
+
+  it("centred caption with specific styles", () => {
+    const testInstance = TestRenderer.create(
+      <CentredCaption credits={credits} style={style} text={captionText} />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();
