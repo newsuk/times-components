@@ -32,6 +32,7 @@ const mapping = {
     caption: 13,
     cardMeta: 15,
     cardMetaMobile: 14,
+    keyFactsTitle: 18,
     link: 13,
     meta: 14,
     pagingMeta: 15,

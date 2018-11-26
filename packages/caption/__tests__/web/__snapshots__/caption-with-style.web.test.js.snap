@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`caption with only container styles 1`] = `
+<style>
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 17px;
+  padding-top: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 17px;
+  padding-top: 0px;
+}
+
+.S3 {
+  padding-top: 10px;
+}
+
+.S4 {
+  padding-top: 0px;
+}
+
+.IS1 {
+  background-color: rgba(0,0,255,1.00);
+}
+</style>
+
+<div
+  className="S4"
+>
+  <div
+    className="IS1 S3"
+  >
+    <div
+      className="S1"
+    >
+      Some caption text goes in here
+    </div>
+    <div
+      className="S2"
+    >
+      JUST CREDITS
+    </div>
+  </div>
+</div>
+`;
+
 exports[`caption with specific styles 1`] = `
 <style>
 .S1 {
