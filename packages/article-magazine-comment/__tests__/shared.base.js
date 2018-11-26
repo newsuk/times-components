@@ -4,6 +4,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
+import sharedProps from "./shared-props";
 import { adConfig } from "./ad-mock";
 
 const findComponents = (testInstance, componentName) =>
@@ -19,22 +20,6 @@ const emptyArticle = {
   flags: [],
   label: null,
   standfirst: null
-};
-
-const sharedProps = {
-  adConfig,
-  analyticsStream: () => {},
-onAuthorPress: () => {},
-onCommentGuidelinesPress: () => {},
-onCommentsPress: () => {},
-onLinkPress: () => {},
-onRelatedArticlePress: () => {},
-onTopicPress: () => {},
-onTwitterLinkPress: () => {},
-onVideoPress: () => {},
-onViewed: () => {},
-receiveChildList: () => {},
-refetch: () => {},
 };
 
 export const snapshotTests = renderComponent => [
@@ -55,10 +40,7 @@ export const snapshotTests = renderComponent => [
     name: "loading",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMagazineComment
-          {...sharedProps}
-          isLoading
-        />
+        <ArticleMagazineComment {...sharedProps} isLoading />
       );
 
       expect(testRenderer).toMatchSnapshot();
