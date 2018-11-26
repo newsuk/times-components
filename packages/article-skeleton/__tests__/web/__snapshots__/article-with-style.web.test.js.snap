@@ -373,7 +373,7 @@ exports[`full article with style 1`] = `
       <Link>
         Some Link
       </Link>
-      <div
+      <span
         className="paywall"
       >
         <p
@@ -427,7 +427,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <KeyFacts />
-      </div>
+      </span>
       <div
         className="c12 S1"
       >
