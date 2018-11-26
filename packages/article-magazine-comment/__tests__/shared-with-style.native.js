@@ -135,7 +135,7 @@ export default () => {
       ]
     });
 
-    const output = TestRenderer.create(
+    const testRenderer = TestRenderer.create(
       <ArticleMagazineComment
         adConfig={adConfig}
         analyticsStream={() => {}}
@@ -152,6 +152,6 @@ export default () => {
       />
     );
 
-    expect(output).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 };
