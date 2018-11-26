@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    "plugin:flowtype/recommended",
     "airbnb",
     "prettier",
     "prettier/react"
