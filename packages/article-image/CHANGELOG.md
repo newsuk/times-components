@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.19"></a>
+## [4.1.19](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.1.18...@times-components/article-image@4.1.19) (2018-11-26)
+
+
+### Bug Fixes
+
+* replat 4405 design review ([#1509](https://github.com/newsuk/times-components/issues/1509)) ([aa5a40d](https://github.com/newsuk/times-components/commit/aa5a40d))
+
+
+
+
+
 <a name="4.1.18"></a>
 ## [4.1.18](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.1.17...@times-components/article-image@4.1.18) (2018-11-21)
 

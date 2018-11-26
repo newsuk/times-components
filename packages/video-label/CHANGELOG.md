@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.55"></a>
+## [2.1.55](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.54...@times-components/video-label@2.1.55) (2018-11-26)
+
+
+### Bug Fixes
+
+* replat 4405 design review ([#1509](https://github.com/newsuk/times-components/issues/1509)) ([aa5a40d](https://github.com/newsuk/times-components/commit/aa5a40d))
+
+
+
+
+
 <a name="2.1.54"></a>
 ## [2.1.54](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.1.53...@times-components/video-label@2.1.54) (2018-11-21)
 
