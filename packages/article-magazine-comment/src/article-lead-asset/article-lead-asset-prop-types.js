@@ -7,5 +7,5 @@ export const leadAssetPropTypes = {
 
 export const leadAssetDefaults = {
   caption: null,
-  credits: null,
+  credits: null
 };
