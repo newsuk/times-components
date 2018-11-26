@@ -30,7 +30,11 @@ export default () => {
 
   it("caption with only container styles", () => {
     const testInstance = TestRenderer.create(
-      <Caption credits={credits} style={containerOnlyStyle} text={captionText} />
+      <Caption
+        credits={credits}
+        style={containerOnlyStyle}
+        text={captionText}
+      />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();
