@@ -76,9 +76,9 @@
     "@times-components/eslint-config-thetimes": "0.8.8",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.7.1",
-    "babel-preset-react-native": "4.0.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
+    "metro-react-native-babel-preset": "0.49.2",
     "prettier": "1.14.3"
   },
   "peerDependencies": {
