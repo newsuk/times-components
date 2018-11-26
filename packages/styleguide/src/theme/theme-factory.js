@@ -1,6 +1,9 @@
 import sectionColours, { secondarySectionColours } from "../colours/section";
 
-const sectionColourPicker = (section, template) => {
+const sectionColourPicker = (
+  section = "default",
+  template = "mainstandard"
+) => {
   const config = {
     indepth: {
       ...sectionColours,
@@ -20,7 +23,7 @@ const sectionColourPicker = (section, template) => {
     }
   };
 
-  return config[template][section] || config[template].default;
+  return config[template][section];
 };
 
 export default (section, template) => ({
