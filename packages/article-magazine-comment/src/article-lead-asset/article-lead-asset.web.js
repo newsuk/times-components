@@ -7,6 +7,7 @@ import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
 import { LeadAsset, LeadAssetCaptionContainer } from "../styles/responsive";
 import styles from "../styles";
+import { leadAssetPropTypes } from "./article-lead-asset-prop-types";
 
 const LeadAssetComponent = ({
   aspectRatio,
@@ -56,17 +57,7 @@ LeadAssetComponent.propTypes = {
   aspectRatio: PropTypes.string,
   displayImage: cropPropTypes,
   isVideo: PropTypes.bool,
-  leadAsset: PropTypes.shape({
-    caption: PropTypes.string,
-    credits: PropTypes.string,
-    crop: cropPropTypes,
-    crop11: cropPropTypes,
-    crop23: cropPropTypes,
-    crop32: cropPropTypes,
-    crop45: cropPropTypes,
-    crop169: cropPropTypes,
-    crop1251: cropPropTypes
-  }),
+  leadAsset: PropTypes.shape(leadAssetPropTypes),
   width: PropTypes.number
 };
 
