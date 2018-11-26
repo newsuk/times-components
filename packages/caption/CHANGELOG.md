@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/caption@2.1.52...@times-components/caption@2.2.0) (2018-11-26)
+
+
+### Features
+
+* Add support for centred captions ([#1510](https://github.com/newsuk/times-components/issues/1510)) ([3015588](https://github.com/newsuk/times-components/commit/3015588))
+
+
+
+
+
+<a name="2.1.52"></a>
+## [2.1.52](https://github.com/newsuk/times-components/compare/@times-components/caption@2.1.51...@times-components/caption@2.1.52) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 <a name="2.1.51"></a>
 ## [2.1.51](https://github.com/newsuk/times-components/compare/@times-components/caption@2.1.50...@times-components/caption@2.1.51) (2018-11-21)
 

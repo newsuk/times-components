@@ -40,8 +40,6 @@ exports[`1. group of topics 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 13,
-              "paddingBottom": 5,
-              "paddingTop": 5,
             }
           }
         >
@@ -93,8 +91,6 @@ exports[`2. group of topics at large scale 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 14,
               "lineHeight": 14,
-              "paddingBottom": 5,
-              "paddingTop": 5,
             }
           }
         >
@@ -146,8 +142,6 @@ exports[`3. group of topics at xlarge scale 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
               "lineHeight": 15,
-              "paddingBottom": 5,
-              "paddingTop": 5,
             }
           }
         >

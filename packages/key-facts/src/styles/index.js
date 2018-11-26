@@ -41,7 +41,7 @@ export default StyleSheet.create({
   },
   title: {
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.cardMetaMobile,
+    fontSize: fontSizes.keyFactsTitle,
     fontWeight: "400",
     letterSpacing: 1.2,
     marginBottom: spacing(4)

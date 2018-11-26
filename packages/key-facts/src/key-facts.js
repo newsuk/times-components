@@ -16,10 +16,10 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   } = ast;
   const { children: keyFactsItems } = children[0];
 
-  const renderTitle = (color, fontSize) => {
+  const renderTitle = (color, fontStyle) => {
     if (!title) return null;
 
-    return <KeyFactsTitle color={color} fontSize={fontSize} title={title} />;
+    return <KeyFactsTitle color={color} fontStyle={fontStyle} title={title} />;
   };
 
   const renderKeyFact = (item, listIndex, fontStyle, backgroundColor) => (
@@ -43,7 +43,10 @@ const KeyFacts = ({ ast, onLinkPress }) => {
           <KeyFactsContainer>
             {renderTitle(
               sectionColour || colours.functional.brandColour,
-              themedStyles.fontSizes.cardMetaMobile
+              themedStyles.fontFactory({
+                font: "supporting",
+                fontSize: "keyFactsTitle"
+              })
             )}
             <KeyFactsWrapper>
               {keyFactsItems.map((item, index) =>

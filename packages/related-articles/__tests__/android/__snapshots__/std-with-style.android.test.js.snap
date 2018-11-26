@@ -13,7 +13,7 @@ exports[`default styles 1`] = `
         "borderTopWidth": 1,
         "display": "flex",
         "justifyContent": "center",
-        "padding": 15,
+        "padding": 10,
       }
     }
   >
@@ -24,7 +24,7 @@ exports[`default styles 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 25,
           "lineHeight": 27,
-          "paddingTop": 0,
+          "paddingVertical": 5,
         }
       }
     >
@@ -83,9 +83,9 @@ exports[`default styles 1`] = `
                       "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
                       "fontWeight": "400",
-                      "lineHeight": 27,
+                      "lineHeight": 25,
                       "marginBottom": 5,
-                      "marginTop": -5,
+                      "marginTop": 0,
                     }
                   }
                 >

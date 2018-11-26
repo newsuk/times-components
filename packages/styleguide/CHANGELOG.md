@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.8.2"></a>
+## [3.8.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.8.1...@times-components/styleguide@3.8.2) (2018-11-26)
+
+
+### Bug Fixes
+
+* replat 4405 design review ([#1509](https://github.com/newsuk/times-components/issues/1509)) ([aa5a40d](https://github.com/newsuk/times-components/commit/aa5a40d))
+
+
+
+
+
 <a name="3.8.1"></a>
 ## [3.8.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.8.0...@times-components/styleguide@3.8.1) (2018-11-21)
 
