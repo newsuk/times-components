@@ -163,6 +163,7 @@ export default () => {
         adConfig={adConfig}
         analyticsStream={() => {}}
         article={article}
+        onViewed={() => {}}
         receiveChildList={() => {}}
       />
     );
