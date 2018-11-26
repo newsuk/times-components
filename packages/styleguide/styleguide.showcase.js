@@ -133,6 +133,42 @@ export default {
     },
     {
       component: () => {
+        const colourBoxes = Object.keys(colours.secondarySectionColours).map(
+          colourName => (
+            <ColourBox
+              hex={colours.secondarySectionColours[colourName]}
+              key={colourName}
+              name={colourName}
+            />
+          )
+        );
+
+        return <ScrollView>{colourBoxes}</ScrollView>;
+      },
+      name: "Secondary Section Colours",
+      platform: "native",
+      type: "story"
+    },
+    {
+      component: () => {
+        const colourBoxes = Object.keys(colours.secondarySectionColours).map(
+          colourName => (
+            <ColourBox
+              hex={colours.secondarySectionColours[colourName]}
+              key={colourName}
+              name={colourName}
+            />
+          )
+        );
+
+        return <View style={styles.display}>{colourBoxes}</View>;
+      },
+      name: "Secondary Section Colours",
+      platform: "web",
+      type: "story"
+    },
+    {
+      component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
             hex={colours.section[colourName]}
