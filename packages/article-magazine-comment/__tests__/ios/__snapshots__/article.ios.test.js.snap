@@ -62,16 +62,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           highResSize={1440}
           uri="https://crop169.io"
         />
-        <View>
-          <View>
-            <Text>
-              Some Caption
-            </Text>
-            <Text>
-              SOME CREDITS
-            </Text>
-          </View>
-        </View>
+        <CenteredCaption
+          credits="Some Credits"
+          text="Some Caption"
+        />
       </View>
     </View>
     <View>
@@ -211,16 +205,10 @@ exports[`4. an article with ads 1`] = `
           highResSize={1440}
           uri="https://crop169.io"
         />
-        <View>
-          <View>
-            <Text>
-              Some Caption
-            </Text>
-            <Text>
-              SOME CREDITS
-            </Text>
-          </View>
-        </View>
+        <CenteredCaption
+          credits="Some Credits"
+          text="Some Caption"
+        />
       </View>
     </View>
     <View>

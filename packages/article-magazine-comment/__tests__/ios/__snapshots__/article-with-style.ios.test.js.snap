@@ -126,42 +126,7 @@ exports[`full article with style 1`] = `
         }
       >
         <ModalImage />
-        <View>
-          <View
-            style={
-              Object {
-                "paddingTop": 10,
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              Some Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 9,
-                  "fontWeight": "400",
-                  "letterSpacing": 1,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              SOME CREDITS
-            </Text>
-          </View>
-        </View>
+        <CenteredCaption />
       </View>
     </View>
     <View>
@@ -228,29 +193,15 @@ exports[`full article with style 1`] = `
         }
       >
         <Video />
-        <View>
-          <View
-            style={
-              Object {
+        <Caption
+          style={
+            Object {
+              "container": Object {
                 "paddingLeft": 10,
-                "paddingTop": 10,
-              }
+              },
             }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              This is video caption
-            </Text>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
     <View>
