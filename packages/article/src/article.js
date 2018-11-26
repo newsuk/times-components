@@ -2,24 +2,18 @@ import React from "react";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 
-export const templates = {
-  indepth: "indepth",
-  magazinecomment: "magazinecomment",
-  magazinestandard: "magazinestandard",
-  maincomment: "maincomment",
-  mainstandard: "mainstandard"
+const templates = {
+  maincomment: ArticleMainComment,
+  mainstandard: ArticleMainStandard
 };
 
 const Article = props => {
-  const { template } = props.article;
-  switch (template) {
-    case templates.mainstandard:
-      return <ArticleMainStandard {...props} />;
-    case templates.maincomment:
-      return <ArticleMainComment {...props} />;
-    default:
-      return <ArticleMainStandard {...props} />;
-  }
+  const {
+    article: { template = "mainstandard" }
+  } = props;
+
+  const Component = templates[template];
+  return <Component {...props} />;
 };
 
 export default Article;

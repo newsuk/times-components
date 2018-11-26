@@ -11,7 +11,7 @@ import {
   ArticleConfigurator,
   makeArticleConfiguration
 } from "./showcase-helper";
-import Article, { templates } from "./src/article";
+import Article from "./src/article";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
@@ -88,6 +88,11 @@ const renderArticle = ({
     }}
   </ArticleProvider>
 );
+
+const templates = {
+  maincomment: "maincomment",
+  mainstandard: "mainstandard"
+};
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
