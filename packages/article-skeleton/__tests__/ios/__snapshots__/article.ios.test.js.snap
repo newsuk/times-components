@@ -186,3 +186,26 @@ exports[`1. a full article with all content items 1`] = `
   </View>
 </RCTScrollView>
 `;
+
+exports[`3. an inline link reports analytics event on press 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+    "byline": "Some byline",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "headline": "Some Headline",
+    "label": "Some Label",
+    "linkType": "",
+    "linkUrl": "https://link.io",
+    "pageName": "this-is-slug-2k629tpvh",
+    "publishedTime": "2015-03-13T18:54:58.000Z",
+    "referralUrl": "",
+    "section": "Some Section",
+    "template": "Default",
+    "topics": "Topic",
+  },
+  "component": "ArticleLink",
+  "object": "Article",
+}
+`;

@@ -23,11 +23,12 @@ const ArticleLink = props => (
 );
 
 ArticleLink.defaultProps = {
-  ...TextLink.defaultProps
+  ...TextLink.defaultProps,
+  linkType: ""
 };
 
 ArticleLink.propTypes = {
   ...TextLink.propTypes,
-  linkType: PropTypes.string.isRequired
+  linkType: PropTypes.string
 };
 export default articleLinkTrackingEvents(ArticleLink);
