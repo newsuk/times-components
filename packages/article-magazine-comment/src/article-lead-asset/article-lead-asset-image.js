@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { ModalImage } from "@times-components/image";
 import { getStandardTemplateCrop } from "@times-components/utils";
 import cropPropTypes from "./crop-prop-types";
+import { leadAssetDefaults, leadAssetPropTypes } from "./article-lead-asset-prop-types";
 
 const ArticleLeadAssetImage = ({
   caption,
@@ -44,8 +45,7 @@ const ArticleLeadAssetImage = ({
 };
 
 ArticleLeadAssetImage.propTypes = {
-  caption: PropTypes.string,
-  credits: PropTypes.string,
+  ...leadAssetPropTypes,
   crop11: cropPropTypes,
   crop23: cropPropTypes,
   crop32: cropPropTypes,
@@ -56,8 +56,7 @@ ArticleLeadAssetImage.propTypes = {
 };
 
 ArticleLeadAssetImage.defaultProps = {
-  caption: null,
-  credits: null,
+  ...leadAssetDefaults,
   crop11: null,
   crop23: null,
   crop32: null,
