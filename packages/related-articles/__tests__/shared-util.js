@@ -37,6 +37,7 @@ export const oneArticleTests = util.oneArticleTests(fixture => [
       const eventMock = {};
       wrapper
         .dive()
+        .dive()
         .find("Link")
         .at(0)
         .simulate("press", eventMock);
