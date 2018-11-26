@@ -40,6 +40,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-react-display-name": "7.0.0",
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/jest-configurator": "2.1.17",
@@ -49,8 +50,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
     "babel-loader": "8.0.4",
-    "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.7.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "23.3.0",

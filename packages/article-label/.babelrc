@@ -3,7 +3,6 @@
     "module:metro-react-native-babel-preset"
   ],
   "plugins": [
-    "styled-components",
-    "add-react-displayname"
+    "@babel/plugin-transform-react-display-name"
   ]
 }
