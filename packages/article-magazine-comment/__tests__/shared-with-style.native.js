@@ -148,6 +148,7 @@ export default () => {
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
+        onViewed={() => {}}
         refetch={() => {}}
       />
     );

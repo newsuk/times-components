@@ -21,95 +21,72 @@ const emptyArticle = {
   standfirst: null
 };
 
+const sharedProps = {
+  adConfig,
+  analyticsStream: () => {},
+onAuthorPress: () => {},
+onCommentGuidelinesPress: () => {},
+onCommentsPress: () => {},
+onLinkPress: () => {},
+onRelatedArticlePress: () => {},
+onTopicPress: () => {},
+onTwitterLinkPress: () => {},
+onVideoPress: () => {},
+onViewed: () => {},
+receiveChildList: () => {},
+refetch: () => {},
+};
+
 export const snapshotTests = renderComponent => [
   {
     name: "an error",
     test() {
-      const props = {
-        error: { message: "An example error." }
-      };
-
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMagazineComment
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
+          {...sharedProps}
+          error={{ message: "An example error." }}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "loading",
     test() {
-      const props = {
-        isLoading: true
-      };
-
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMagazineComment
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
+          {...sharedProps}
+          isLoading
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with no headline falls back to use shortHeadline",
     test() {
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMagazineComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
             headline: ""
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with ads",
     test() {
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMagazineComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
@@ -121,20 +98,10 @@ export const snapshotTests = renderComponent => [
               }
             ]
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          onViewed
-          receiveChildList={() => {}}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   }
 ];
@@ -145,21 +112,11 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMagazineComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             flags: null
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
@@ -173,18 +130,8 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMagazineComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({ ...testFixture, label: null })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
@@ -198,21 +145,11 @@ const negativeTests = [
     test() {
       const testInstance = TestRenderer.create(
         <ArticleMagazineComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             standfirst: null
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
