@@ -16,9 +16,10 @@ exports[`key facts with title 1`] = `
       Object {
         "color": "#1D1D1B",
         "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
+        "fontSize": 15,
         "fontWeight": "400",
         "letterSpacing": 1.2,
+        "lineHeight": 18,
         "marginBottom": 20,
       }
     }
@@ -241,6 +242,7 @@ exports[`key facts with title and context theme 1`] = `
         "fontSize": 17,
         "fontWeight": "400",
         "letterSpacing": 1.2,
+        "lineHeight": 20,
         "marginBottom": 20,
       }
     }

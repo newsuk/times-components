@@ -3,8 +3,8 @@ import propTypes from "./key-facts-title-prop-types";
 import { KeyFactsTitleResponsive } from "./styles/responsive";
 import styles from "./styles";
 
-const KeyFactsTitle = ({ color, fontSize, title }) => (
-  <KeyFactsTitleResponsive style={[styles.title, { color, fontSize }]}>
+const KeyFactsTitle = ({ color, fontStyle, title }) => (
+  <KeyFactsTitleResponsive style={[styles.title, { color }, fontStyle]}>
     {title.toUpperCase()}
   </KeyFactsTitleResponsive>
 );

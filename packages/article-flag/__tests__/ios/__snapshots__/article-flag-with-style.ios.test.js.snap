@@ -6,6 +6,7 @@ exports[`1. red article flag 1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
+      "marginTop": -5,
     }
   }
 >

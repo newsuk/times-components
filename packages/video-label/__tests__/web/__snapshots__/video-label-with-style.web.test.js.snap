@@ -28,7 +28,7 @@ exports[`1. video label with a title 1`] = `
   margin-left: 5px;
   padding-bottom: 0px;
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 
 .S3 {
@@ -64,7 +64,7 @@ exports[`1. video label with a title 1`] = `
   margin-left: 5;
   padding: 0;
   position: relative;
-  top: 2;
+  top: 1;
   color: #008347;
 }
 
@@ -87,7 +87,7 @@ exports[`1. video label with a title 1`] = `
     >
       <IconVideo
         fillColour="#008347"
-        height={8}
+        height={9}
       />
     </div>
     <div
@@ -127,7 +127,7 @@ exports[`2. video label without a title shows video 1`] = `
   margin-left: 5px;
   padding-bottom: 0px;
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 
 .S3 {
@@ -163,7 +163,7 @@ exports[`2. video label without a title shows video 1`] = `
   margin-left: 5;
   padding: 0;
   position: relative;
-  top: 2;
+  top: 1;
   color: #008347;
 }
 
@@ -186,7 +186,7 @@ exports[`2. video label without a title shows video 1`] = `
     >
       <IconVideo
         fillColour="#008347"
-        height={8}
+        height={9}
       />
     </div>
     <div
@@ -226,7 +226,7 @@ exports[`3. video label with the black default colour 1`] = `
   margin-left: 5px;
   padding-bottom: 0px;
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 
 .S3 {
@@ -262,7 +262,7 @@ exports[`3. video label with the black default colour 1`] = `
   margin-left: 5;
   padding: 0;
   position: relative;
-  top: 2;
+  top: 1;
   color: black;
 }
 
@@ -285,7 +285,7 @@ exports[`3. video label with the black default colour 1`] = `
     >
       <IconVideo
         fillColour="black"
-        height={8}
+        height={9}
       />
     </div>
     <div

@@ -18,7 +18,7 @@ exports[`1. video label with a title 1`] = `
   >
     <IconVideo
       fillColour="#008347"
-      height={8}
+      height={9}
     />
   </View>
   <Text
@@ -60,7 +60,7 @@ exports[`2. video label without a title shows video 1`] = `
   >
     <IconVideo
       fillColour="#008347"
-      height={8}
+      height={9}
     />
   </View>
   <Text
@@ -102,7 +102,7 @@ exports[`3. video label with the black default colour 1`] = `
   >
     <IconVideo
       fillColour="black"
-      height={8}
+      height={9}
     />
   </View>
   <Text
