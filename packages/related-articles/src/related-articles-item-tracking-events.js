@@ -1,5 +1,4 @@
 import { withTrackEvents } from "@times-components/tracking";
-import getHeadline from "./utils";
 
 export default Component =>
   withTrackEvents(Component, {
@@ -7,9 +6,10 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onPress",
-        getAttrs: ({ article: { headline, id, shortHeadline } }) => ({
-          articleHeadline: shortHeadline || headline,
-          articleId: id
+        getAttrs: ({ article: { headline, id, url, shortHeadline } }) => ({
+          targetArticleHeadline: shortHeadline || headline,
+          targetArticleId: id,
+          targetArticleUrl: url
         })
       }
     ]
