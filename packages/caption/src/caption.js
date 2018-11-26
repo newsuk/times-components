@@ -36,3 +36,4 @@ Caption.propTypes = propTypes;
 Caption.defaultProps = defaultProps;
 
 export default Caption;
+export { default as CentredCaption } from "./centred-caption";

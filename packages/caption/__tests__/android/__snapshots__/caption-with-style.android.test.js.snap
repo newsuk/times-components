@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`caption with only container styles 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "paddingTop": 5,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 20,
+        }
+      }
+    >
+      Some caption text goes in here
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 20,
+        }
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`caption with specific styles 1`] = `
 <View>
   <View
