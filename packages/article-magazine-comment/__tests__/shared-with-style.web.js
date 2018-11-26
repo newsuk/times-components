@@ -14,7 +14,7 @@ import {
 import "./mocks.web";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
-import { adConfig } from "./ad-mock";
+import sharedProps from "./shared-props";
 
 const styles = [
   "alignItems",
@@ -159,13 +159,7 @@ export default () => {
     });
 
     const testRenderer = TestRenderer.create(
-      <ArticleMagazineComment
-        adConfig={adConfig}
-        analyticsStream={() => {}}
-        article={article}
-        onViewed={() => {}}
-        receiveChildList={() => {}}
-      />
+      <ArticleMagazineComment {...sharedProps} article={article} />
     );
 
     expect(testRenderer).toMatchSnapshot();
