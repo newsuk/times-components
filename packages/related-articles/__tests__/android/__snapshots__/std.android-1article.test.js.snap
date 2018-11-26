@@ -98,3 +98,15 @@ Array [
   ],
 ]
 `;
+
+exports[`4. on press analytics triggered 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "targetArticleHeadline": "Test Short Headline",
+    "targetArticleId": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+    "targetArticleUrl": "https://test.io",
+  },
+  "component": "RelatedArticleItem",
+}
+`;
