@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { ModalImage } from "@times-components/image";
 import { getStandardTemplateCrop } from "@times-components/utils";
 import cropPropTypes from "./crop-prop-types";
-import { leadAssetDefaults, leadAssetPropTypes } from "./article-lead-asset-prop-types";
+import {
+  leadAssetDefaults,
+  leadAssetPropTypes
+} from "./article-lead-asset-prop-types";
 
 const ArticleLeadAssetImage = ({
   caption,
