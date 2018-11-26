@@ -1,6 +1,5 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
-
 import Context from "@times-components/context";
 import Flags from "../src/article-flags/article-flags";
 import Label from "../src/article-label/article-label";
