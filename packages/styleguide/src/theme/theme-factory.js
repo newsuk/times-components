@@ -3,32 +3,20 @@ import sectionColours, { secondarySectionColours } from "../colours/section";
 const sectionColourPicker = (section, template) => {
   const config = {
     indepth: {
-      default: {
-        sectionColours
-      },
-      thesundaytimesmagazine: {
-        secondarySectionColours
-      }
+      ...sectionColours,
+      ...secondarySectionColours
     },
     magazinecomment: {
-      default: {
-        sectionColours
-      }
+      ...sectionColours
     },
     magazinestandard: {
-      default: {
-        sectionColours
-      }
+      ...sectionColours
     },
     maincomment: {
-      default: {
-        sectionColours
-      }
+      ...sectionColours
     },
     mainstandard: {
-      default: {
-        sectionColours
-      }
+      ...sectionColours
     }
   };
 

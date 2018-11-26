@@ -3,14 +3,14 @@
 import React, { Fragment } from "react";
 import invert from "lodash.invert";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context from "@times-components/context";
+import Context, { defaults } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import { colours, scales } from "@times-components/styleguide";
+import { colours, scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import {
   ArticleConfigurator,
@@ -31,18 +31,26 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const templateName = "mainstandard";
+
 const renderArticle = ({
   adConfig = articleAdConfig,
   analyticsStream,
   decorateAction,
   id,
   scale,
-  sectionColour
+  section
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => (
       <Context.Provider
-        value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+        value={{
+          makeArticleUrl,
+          theme: {
+            ...themeFactory(section, templateName),
+            scale: scale || defaults.theme.scale
+          }
+        }}
       >
         <Article
           adConfig={adConfig}
@@ -103,7 +111,9 @@ const mockArticle = ({
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
-  select("Section", invert(colours.section), colours.section.default);
+  invert(colours.section)[
+    select("Section", invert(colours.section), colours.section.default)
+  ];
 
 export default {
   children: [
@@ -111,7 +121,7 @@ export default {
       component: ({ boolean, select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
         const scale = selectScales(select);
-        const sectionColour = selectSection(select);
+        const section = selectSection(select);
         const withFlags = boolean("Flags", true);
         const withHeadline = boolean("Headline", true);
         const withLabel = boolean("Label", true);
@@ -153,7 +163,7 @@ export default {
                   decorateAction,
                   id,
                   scale,
-                  sectionColour
+                  section
                 })}
               </ArticleConfigurator>
             }
