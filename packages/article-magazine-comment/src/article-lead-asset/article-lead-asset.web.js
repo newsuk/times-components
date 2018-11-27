@@ -45,7 +45,10 @@ const LeadAssetComponent = ({
         </AspectRatioContainer>
         <LeadAssetCaptionContainer>
           <figcaption>
-            <CentredCaption credits={leadAsset.credits} text={leadAsset.caption} />
+            <CentredCaption
+              credits={leadAsset.credits}
+              text={leadAsset.caption}
+            />
           </figcaption>
         </LeadAssetCaptionContainer>
       </figure>
