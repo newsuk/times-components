@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.9...@times-components/article-main-comment@0.1.10) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.8...@times-components/article-main-comment@0.1.9) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.7...@times-components/article-main-comment@0.1.8) (2018-11-26)
+
+
+### Bug Fixes
+
+* Small fixes noticed in SSR ([#1513](https://github.com/newsuk/times-components/issues/1513)) ([c468ff5](https://github.com/newsuk/times-components/commit/c468ff5))
+
+
+
+
+
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.6...@times-components/article-main-comment@0.1.7) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.5...@times-components/article-main-comment@0.1.6) (2018-11-26)
 
