@@ -64,18 +64,6 @@ export default () => {
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
   });
 
-  it("does not fetches bids from Amazon when there are no ad slots", () => {
-    const init = adInit(merge(initOptions, amazonInitExtension));
-    init.prebid.setupApstag();
-    jest
-      .spyOn(mock.window.apstag, "fetchBids")
-      .mockImplementation((slots, callback) => {
-        callback();
-      });
-    init.prebid.scheduleRequestAmazonBids([], "", "", "", "");
-    expect(mock.window.apstag.fetchBids).not.toHaveBeenCalled();
-  });
-
   it("fetches bids from Amazon when there are ad slots", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     init.prebid.setupApstag();

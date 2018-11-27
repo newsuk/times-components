@@ -32,7 +32,8 @@ const adInit = args => {
             slots,
             networkId,
             adUnit,
-            section
+            section,
+            this.gpt
           )
         );
       }
@@ -242,7 +243,7 @@ const adInit = args => {
         }));
       },
 
-      requestBidsAsync(prebidConfig, slots, networkId, adUnit, section) {
+      requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
         const amazonAccountID =
           prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
@@ -272,7 +273,10 @@ const adInit = args => {
           );
         }
 
-        biddingActions.push(this.requestPrebidBids(slots));
+        biddingActions.push([
+          gpt.waitUntilReady(),
+          this.requestPrebidBids(slots)
+        ]);
         return Promise.all(biddingActions);
       },
 
@@ -307,16 +311,14 @@ const adInit = args => {
             adUnit,
             section
           );
-          if (amazonSlots.length > 0) {
-            window.apstag.fetchBids(
-              {
-                slots: amazonSlots
-              },
-              aBids => {
-                resolve(aBids);
-              }
-            );
-          }
+          window.apstag.fetchBids(
+            {
+              slots: amazonSlots
+            },
+            aBids => {
+              resolve(aBids);
+            }
+          );
         });
       },
 
