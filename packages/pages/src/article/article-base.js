@@ -2,7 +2,7 @@ import React from "react";
 import { NativeModules } from "react-native";
 import Article from "@times-components/article";
 import Context, { defaults } from "@times-components/context";
-import { colours } from "@times-components/styleguide";
+import { themeFactory } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
 import filterInteractives from "./filter-interactives";
@@ -31,18 +31,19 @@ const ArticleBase = ({
   sectionName: pageSection,
   showInteractives
 }) => {
-  const articleSection = article ? article.section : null;
+  const { section: articleSection, template } = article || {};
+  const section = pageSection || articleSection || "default";
   const adConfig =
     isLoading || error
       ? {}
       : adTargetConfig({
           adTestMode,
           article,
-          sectionName: pageSection || articleSection || ""
+          sectionName: section
         });
   const theme = {
-    scale: scale || defaults.theme.scale,
-    sectionColour: colours.section[pageSection || articleSection || "default"]
+    ...themeFactory(section, template),
+    scale: scale || defaults.theme.scale
   };
 
   return (
