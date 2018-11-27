@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "@times-components/link";
-import RelatedArticleItem from "./related-article-item.base";
+import RelatedArticleItemBase from "./related-article-item.base";
+import relatedArticlesItemTrackingEvents from "./related-articles-item-tracking-events";
 
-export default props => (
-  <RelatedArticleItem {...props}>
+const RelatedArticleItem = props => (
+  <RelatedArticleItemBase {...props}>
     {({ article: { url }, card, onPress }) => (
       <Link
         linkStyle={{ padding: 10 }}
@@ -13,5 +14,7 @@ export default props => (
         {card}
       </Link>
     )}
-  </RelatedArticleItem>
+  </RelatedArticleItemBase>
 );
+
+export default relatedArticlesItemTrackingEvents(RelatedArticleItem);

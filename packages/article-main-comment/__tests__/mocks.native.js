@@ -20,10 +20,6 @@ jest.mock("@times-components/button", () => "Button");
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
-jest.mock("@times-components/tracking", () => ({
-  withTrackingContext: x => x,
-  withTrackScrollDepth: x => x
-}));
 jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/video", () => "Video");
 mockNativeModules();

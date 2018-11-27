@@ -73,19 +73,14 @@ const ArticleRow = ({
       };
     },
     link(key, attributes, children) {
-      const url = attributes.href;
+      const { canonicalId, href: url, type } = attributes;
 
       return {
         element: (
           <ArticleLink
             key={key}
-            onPress={e =>
-              onLinkPress(e, {
-                canonicalId: attributes.canonicalId,
-                type: attributes.type,
-                url: attributes.href
-              })
-            }
+            linkType={attributes.type}
+            onPress={e => onLinkPress(e, { canonicalId, type, url })}
             url={url}
             uuid={index}
           >

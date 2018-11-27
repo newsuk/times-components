@@ -1,7 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { TextLink } from "@times-components/link";
 import styleFactory from "../styles/article-body";
+import articleLinkTrackingEvents from "./article-link-tracking-events";
 
 const ArticleLink = props => (
   <Context.Consumer>
@@ -21,10 +23,12 @@ const ArticleLink = props => (
 );
 
 ArticleLink.defaultProps = {
-  ...TextLink.defaultProps
+  ...TextLink.defaultProps,
+  linkType: ""
 };
 
 ArticleLink.propTypes = {
-  ...TextLink.propTypes
+  ...TextLink.propTypes,
+  linkType: PropTypes.string
 };
-export default ArticleLink;
+export default articleLinkTrackingEvents(ArticleLink);
