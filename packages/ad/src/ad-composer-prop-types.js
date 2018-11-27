@@ -27,7 +27,7 @@ export const defaultProps = {
         appnexus: {
           placementId: "5823281"
         },
-        ix: {
+        indexExchange: {
           siteId: "188830"
         },
         rubicon: {

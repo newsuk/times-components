@@ -37,29 +37,15 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
 
 const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
   const sizes = getAdSizes(pos, width);
-  const bids = [];
-  if (biddersConfig.ix && biddersConfig.ix.siteId) {
-    bids.concat(
-      sizes.map(size => ({
-        bidder: "ix",
-        params: {
-          siteId: biddersConfig.ix.siteId,
-          size
-        }
-      }))
-    );
-  }
-  if (biddersConfig.appnexus && biddersConfig.appnexus.placementId) {
-    bids.push({
+  const bids = [
+    {
       bidder: "appnexus",
       params: {
         placementId: biddersConfig.appnexus.placementId,
         section
       }
-    });
-  }
-  if (biddersConfig.rubicon && biddersConfig.rubicon.accountId) {
-    bids.push({
+    },
+    {
       bidder: "rubicon",
       params: {
         accountId: biddersConfig.rubicon.accountId,
@@ -69,47 +55,25 @@ const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
         siteId: biddersConfig.rubicon.siteId,
         zoneId: biddersConfig.rubicon.zoneId
       }
-    });
-  }
+    },
+    {
+      bidder: "indexExchange",
+      params: {
+        id: pos,
+        siteID: biddersConfig.indexExchange.siteId
+      }
+    }
+  ];
   return {
     bids,
     // NOTE: for the prebidding the position of the ad in the page is called code
     code: pos,
-    mediaTypes: {
-      banner: {
-        sizes
-      }
-    },
     sizes
   };
 };
 
 const prebidConfig = {
-  bidderSettings,
-  init: {
-    bidderSequence: "random",
-    bidTimeout: 3000,
-    cache: {
-      url: "https://prebid.adnxs.com/pbc/v1/cache"
-    },
-    consentManagement: {
-      allowAuctionWithoutConsent: true,
-      cmpApi: "iab",
-      timeout: 3000
-    },
-    debug: false,
-    disableAjaxTimeout: false,
-    enableSendAllBids: true,
-    maxRequestsPerOrigin: 4,
-    priceGranularity: "medium",
-    timeoutBuffer: 400,
-    userSync: {
-      enableOverride: false,
-      syncDelay: 3000,
-      syncEnabled: true,
-      syncsPerBidder: 5
-    }
-  }
+  bidderSettings
 };
 
 export { prebidConfig, getPrebidSlotConfig };

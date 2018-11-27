@@ -15,7 +15,7 @@ export const adConfig = {
           "120x600": "764877"
         }
       },
-      ix: {
+      indexExchange: {
         siteId: "188830"
       },
       pubmatic: {
