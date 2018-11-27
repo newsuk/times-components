@@ -64,7 +64,7 @@ export default () => {
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
   });
 
-  it("fetches bids from Amazon", () => {
+  it("does not fetches bids from Amazon when there are no ad slots", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     init.prebid.setupApstag();
     jest
@@ -73,14 +73,29 @@ export default () => {
         callback();
       });
     init.prebid.scheduleRequestAmazonBids([], "", "", "", "");
-    expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
+    expect(mock.window.apstag.fetchBids).not.toHaveBeenCalled();
   });
 
-  it("applies prebid targeting on finaliseAds()", () => {
-    const init = adInit(initOptions);
-    jest.spyOn(init.prebid, "applyPrebidTargeting").mockImplementation();
-    init.finaliseAds(true);
-    expect(init.prebid.applyPrebidTargeting).toHaveBeenCalled();
+  it("fetches bids from Amazon when there are ad slots", () => {
+    const init = adInit(merge(initOptions, amazonInitExtension));
+    init.prebid.setupApstag();
+    jest
+      .spyOn(mock.window.apstag, "fetchBids")
+      .mockImplementation((slots, callback) => {
+        callback();
+      });
+    init.prebid.scheduleRequestAmazonBids(
+      [
+        {
+          ad1: "test"
+        }
+      ],
+      "",
+      "",
+      "",
+      ""
+    );
+    expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
   });
 
   it("requestPrebidBids fetches bids using pbjs", done => {
@@ -104,30 +119,6 @@ export default () => {
 
     expect(mock.window.pbjs.removeAdUnit).toHaveBeenCalled();
     expect(mock.window.pbjs.addAdUnits).toHaveBeenCalled();
-  });
-
-  it("applyPrebidTargeting calls pbjs.setTargetingForGPTAsync", () => {
-    const init = adInit(initOptions);
-    init.prebid.createPbjsGlobals();
-    mock.window.pbjs.enableSendAllBids = jest.fn();
-    mock.window.pbjs.setTargetingForGPTAsync = jest.fn();
-    init.prebid.applyPrebidTargeting();
-    expect(mock.window.pbjs.setTargetingForGPTAsync).toHaveBeenCalled();
-  });
-
-  it("applyAmazonTargeting calls apstag.setDisplayBids", () => {
-    const init = adInit(initOptions);
-    init.prebid.setupApstag();
-    jest.spyOn(mock.window.apstag, "setDisplayBids");
-    init.prebid.applyAmazonTargeting();
-    expect(mock.window.apstag.setDisplayBids).toHaveBeenCalled();
-  });
-
-  it("applyAmazonTargeting does not error if apstag is not set up", () => {
-    const init = adInit(initOptions);
-    expect(() => {
-      init.prebid.applyAmazonTargeting();
-    }).not.toThrow();
   });
 
   it("calculates the ad unit path correctly", () => {
@@ -169,7 +160,6 @@ export default () => {
   it("sets up Amazon apstag", () => {
     const init = adInit(initOptions);
     /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
-    expect(mock.window.apstag).toEqual(undefined);
     init.prebid.setupApstag("3360", 3000);
     expect(mock.window.apstag._Q).toBeTruthy();
   });

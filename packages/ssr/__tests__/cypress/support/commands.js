@@ -1,25 +1,38 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add("dismiss", { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This is will overwrite an existing command --
-// Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+/* eslint-disable no-unused-expressions */
+Cypress.Commands.add("goToNextArticle", () => {
+  cy.get('div[data-testid="pagination-button-next"]')
+    .first()
+    .click();
+});
+
+Cypress.Commands.add("goToPreviousArticle", () => {
+  cy.get('div[data-testid="pagination-button-previous"]')
+    .first()
+    .click();
+});
+
+Cypress.Commands.add("loadedAd", selector => {
+  //  open devtools
+  // cy.get(selector).debug().pause();
+  cy.wait(2000);
+  cy.get(selector).should(element => {
+    expect(element).to.exist;
+    expect(element).to.be.visible;
+    expect(element).to.not.be.empty;
+  });
+  cy.get(selector)
+    .get("googleQueryId")
+    .should("not.be.empty");
+});
+
+Cypress.Commands.add("loadedGlobalAds", () => {
+  cy.loadedAd("#pixel");
+  cy.loadedAd("#pixelteads");
+  cy.loadedAd("#pixelskin");
+  cy.loadedAd("#header");
+});
+
+Cypress.Commands.add("loadedArticleAds", () => {
+  cy.loadedGlobalAds();
+  cy.loadedAd("#inline-ad");
+});

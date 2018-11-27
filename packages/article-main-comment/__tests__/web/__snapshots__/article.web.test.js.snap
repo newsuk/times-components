@@ -26,7 +26,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               "120x600": "764877",
             },
           },
-          "indexExchange": Object {
+          "ix": Object {
             "siteId": "188830",
           },
           "pubmatic": Object {
@@ -218,7 +218,7 @@ exports[`4. an article with ads 1`] = `
               "120x600": "764877",
             },
           },
-          "indexExchange": Object {
+          "ix": Object {
             "siteId": "188830",
           },
           "pubmatic": Object {

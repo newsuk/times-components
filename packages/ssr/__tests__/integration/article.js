@@ -23,4 +23,8 @@ describe("Article", () => {
           expect(url.searchParams.get("resize")).to.equal("301");
         });
       }));
+
+  it("loaded all the required article ads", () => {
+    cy.loadedArticleAds();
+  });
 });
