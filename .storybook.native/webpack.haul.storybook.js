@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = ({ platform }, { module, resolve, plugins }) => ({
   entry: path.resolve(__dirname, "./index.js"),
   plugins,
+  mode: 'development',
   module: {
     ...module,
     rules: [
@@ -11,7 +12,7 @@ module.exports = ({ platform }, { module, resolve, plugins }) => ({
         test: /\.jsx?$/,
         loader: require.resolve('babel-loader'),
         options: {
-          presets: ["react-native"],
+          presets: ["module:metro-react-native-babel-preset"],
         },
         exclude: /node_modules\/(?!react|@expo|svgs|pretty-format|haul|metro)/,
       },

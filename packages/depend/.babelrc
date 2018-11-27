@@ -3,6 +3,9 @@
     "module:metro-react-native-babel-preset"
   ],
   "plugins": [
-    "@babel/plugin-transform-react-display-name"
+    "@babel/plugin-transform-react-display-name",
+    ["@babel/plugin-transform-runtime", {
+        "corejs": 2
+    }]
   ]
 }
