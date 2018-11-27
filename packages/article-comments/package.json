@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
@@ -35,11 +35,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/button": "2.2.36",
-    "@times-components/context": "0.5.10",
-    "@times-components/link": "3.1.11",
+    "@times-components/button": "2.2.37",
+    "@times-components/context": "0.5.11",
+    "@times-components/link": "3.1.12",
     "@times-components/provider": "1.8.3",
-    "@times-components/styleguide": "3.8.2",
+    "@times-components/styleguide": "3.8.3",
     "prop-types": "15.6.2"
   },
   "devDependencies": {
