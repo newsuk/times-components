@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a full article 1`] = `
+<article>
+  <svg
+    height={250}
+    viewBox="-630 120 1200 50"
+    width={970}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+  <img
+    alt=""
+    src="https://image.io"
+  />
+  SOME LABEL
+  <h1
+    aria-level="1"
+    role="heading"
+  >
+    Some Headline
+  </h1>
+  <svg
+    aria-label="[title]"
+    height={8}
+    role="img"
+    viewBox="0 0 20 20"
+    width={8}
+  >
+    <title>
+      Diamond Icon
+    </title>
+    <g>
+      <path
+        d="90928a4d6e9b702222e7187e68c282b7"
+      />
+    </g>
+  </svg>
+  new
+  <h2
+    aria-level="2"
+    data-testid="standfirst"
+    role="heading"
+  >
+    Some Standfirst
+  </h2>
+  Some byline
+  <time
+    dateTime="2015-03-13T18:54:58.000Z"
+  >
+    Friday March 13 2015, 6:54pm
+  </time>
+  <span>
+    , The Times
+  </span>
+  <figure>
+    <img
+      alt=""
+      src="https://crop169.io?resize=100"
+    />
+    <figcaption>
+      Some Caption
+      SOME CREDITS
+    </figcaption>
+  </figure>
+  <img
+    alt=""
+    src="https://image.io?resize=100"
+  />
+  An image caption
+  THE IMAGE CREDITS
+  <a
+    href="https://link.io"
+    target="_blank"
+  >
+    Some Link
+  </a>
+  <p>
+    Some content
+  </p>
+  <blockquote
+    url="https://twitter.com/@AName"
+  >
+    “
+    <cite>
+      The pull quote content
+    </cite>
+    AName
+    , a text
+    <svg
+      aria-label="[title]"
+      height={10}
+      role="img"
+      viewBox="-354.2 -279.4 750 600"
+      width={12}
+    >
+      <title>
+        Twitter Icon
+      </title>
+      <path
+        d="ebf51b280a2c9ea0e632fdbf86606550"
+      />
+    </svg>
+    <a
+      href="https://twitter.com/@AName"
+      rel=" noopener noreferrer"
+      role="link"
+      target="_blank"
+    >
+      @AName
+    </a>
+  </blockquote>
+  <figure>
+    <video
+      controls={true}
+      data-account="57838016001"
+      data-application-id={true}
+      data-embed="default"
+      data-player="default"
+      data-video-id="4084164751001"
+      id="4084164751001-57838016001-1"
+      poster="https://image.io"
+    />
+    <figcaption>
+      This is video caption
+    </figcaption>
+  </figure>
+  <nav>
+    <a
+      href="/topic/topic"
+    >
+      Topic
+    </a>
+  </nav>
+  <aside
+    id="related-articles"
+  >
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Related articles
+    </h3>
+    <a
+      href="https://some-url.io"
+    >
+      <img
+        alt=""
+        src="https://racrop169.io?resize=100"
+      />
+      RA LABEL
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Headline
+      </h3>
+      <time
+        dateTime="2015-03-23T19:39:39.000Z"
+      >
+        March 23 2015, 7:39pm
+      </time>
+    </a>
+  </aside>
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+</article>
+`;

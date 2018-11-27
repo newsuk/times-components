@@ -41,17 +41,14 @@ export const HeaderContainer = styled(View)`
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
-    margin: 0 auto;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: ${spacing(7)};
     margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    padding-bottom: ${spacing(7)};
-    margin-bottom: ${spacing(7)};
   }
 `;
 
@@ -88,7 +85,7 @@ export const Seperator = styled(View)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
-    background-color: ${colours.functional.keyline};
+    background-color: ${colours.functional.keyline}
     display: flex;
     height: ${spacing(3)};
     margin: 0 ${spacing(2)};
@@ -109,4 +106,22 @@ export const StandfirstContainer = styled(Text)`
   @media (min-width: ${breakpoints.wide}px) {
     margin-bottom: ${spacing(4)};
   }
+`;
+
+export const LeadAsset = styled(View)`
+  order: 2;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: ${spacing(6)};
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+export const LeadAssetCaptionContainer = styled(View)`
+  display: flex;
 `;
