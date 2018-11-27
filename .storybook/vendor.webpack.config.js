@@ -7,6 +7,8 @@ module.exports = {
     vendor: ["prop-types", "react", "react-dom", "react-native-web"]
   },
 
+  mode: 'production',
+
   output: {
     filename: "[name].dll.js",
     path: path.resolve("./dist/public"),

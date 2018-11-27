@@ -2,8 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleByline, {
-  ArticleBylineWithLinks,
-  articleBylinePropTypes
+  ArticleBylineWithLinks
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
@@ -15,6 +14,7 @@ import renderer from "./article-summary-renderer";
 import styles from "./styles";
 import summarise from "./summarise";
 
+const articleBylinePropTypes = ArticleByline.propTypes;
 const { style: TextPropTypesStyle } = Text;
 
 function renderAst(ast) {
