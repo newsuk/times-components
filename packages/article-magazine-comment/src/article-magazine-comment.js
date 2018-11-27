@@ -2,7 +2,7 @@
 
 import React, { Component, Fragment } from "react";
 import ArticleError from "@times-components/article-error";
-import Article from "@times-components/article";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import LeadAsset from "./article-lead-asset/article-lead-asset";
@@ -78,7 +78,7 @@ class ArticleMagazineComment extends Component {
     } = this.props;
 
     return (
-      <Article
+      <ArticleSkeleton
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}
