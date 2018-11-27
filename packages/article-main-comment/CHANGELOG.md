@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.2.0...@times-components/article-main-comment@0.3.0) (2018-11-27)
+
+
+### Features
+
+* magazine comment template ([#1519](https://github.com/newsuk/times-components/issues/1519)) ([8a35dda](https://github.com/newsuk/times-components/commit/8a35dda))
+
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.1.10...@times-components/article-main-comment@0.2.0) (2018-11-27)
 
