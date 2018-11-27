@@ -44,18 +44,18 @@
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/jest-configurator": "2.1.17",
     "@times-components/webpack-configurator": "2.0.14",
-    "babel-core": "~7.0.0-beta.40",
+    
     "babel-jest": "^23.4.2",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.22.0",
+    "webpack-cli": "3.1.2"
   },
   "peerDependencies": {
     "react": ">=16",

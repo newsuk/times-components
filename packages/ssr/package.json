@@ -48,8 +48,8 @@
     "graphql": "0.13.2",
     "prettier": "1.14.3",
     "wait-on": "3.1.0",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.22.0",
+    "webpack-cli": "3.1.2"
   },
   "dependencies": {
     "@times-components/article": "6.4.2",

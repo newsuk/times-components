@@ -2292,7 +2292,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @times-components/author-profile
 
-<a name="0.57.5"></a>
+<a name="0.55.4"></a>
 ## [0.57.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.57.4...@times-components/author-profile@0.57.5) (2018-04-19)
 
 
