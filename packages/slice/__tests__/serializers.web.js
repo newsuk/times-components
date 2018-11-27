@@ -2,9 +2,11 @@ import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
+  justChildren,
   minimalWebTransform,
   minimaliseTransform,
-  print
+  print,
+  replaceTransform
 } from "@times-components/jest-serializer";
 
 addSerializers(
@@ -13,6 +15,9 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => key === "style" || key === "className")
+    minimaliseTransform((value, key) => key === "style" || key === "className"),
+    replaceTransform({
+      ForwardRef: justChildren
+    })
   )
 );

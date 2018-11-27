@@ -3,8 +3,10 @@ import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
+  justChildren,
   flattenStyleTransform,
   minimalWebTransform,
+  replaceTransform,
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
@@ -27,6 +29,9 @@ addSerializers(
     stylePrinter,
     minimalWebTransform,
     flattenStyleTransform,
+    replaceTransform({
+      ForwardRef: justChildren
+    }),
     rnwTransform(AppRegistry, styles)
   )
 );
