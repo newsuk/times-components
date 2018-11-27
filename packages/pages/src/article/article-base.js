@@ -1,6 +1,6 @@
 import React from "react";
 import { NativeModules } from "react-native";
-import Article from "@times-components/article-main-standard";
+import Article from "@times-components/article";
 import Context, { defaults } from "@times-components/context";
 import { colours } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
