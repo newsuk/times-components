@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.29...@times-components/ssr@1.6.0) (2018-11-27)
+
+
+### Features
+
+* upgrade prebid ([#1504](https://github.com/newsuk/times-components/issues/1504)) ([55b28fd](https://github.com/newsuk/times-components/commit/55b28fd))
+
+
+
+
+
 <a name="1.5.29"></a>
 ## [1.5.29](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.28...@times-components/ssr@1.5.29) (2018-11-27)
 

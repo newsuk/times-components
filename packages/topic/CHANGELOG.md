@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/newsuk/times-components/compare/@times-components/topic@4.0.24...@times-components/topic@4.1.0) (2018-11-27)
+
+
+### Features
+
+* upgrade prebid ([#1504](https://github.com/newsuk/times-components/issues/1504)) ([55b28fd](https://github.com/newsuk/times-components/commit/55b28fd))
+
+
+
+
+
 <a name="4.0.24"></a>
 ## [4.0.24](https://github.com/newsuk/times-components/compare/@times-components/topic@4.0.23...@times-components/topic@4.0.24) (2018-11-27)
 

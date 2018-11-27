@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.60...@times-components/ad@2.2.0) (2018-11-27)
+
+
+### Features
+
+* upgrade prebid ([#1504](https://github.com/newsuk/times-components/issues/1504)) ([55b28fd](https://github.com/newsuk/times-components/commit/55b28fd))
+
+
+
+
+
 <a name="2.1.60"></a>
 ## [2.1.60](https://github.com/newsuk/times-components/compare/@times-components/ad@2.1.59...@times-components/ad@2.1.60) (2018-11-27)
 
