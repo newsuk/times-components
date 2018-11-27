@@ -1676,7 +1676,7 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@storybook/addon-actions@4.0.9":
+"@storybook/addon-actions@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-4.0.9.tgz#6733e37641329751a7b90722f71893dc019d20b5"
   integrity sha512-CRMofmt1wF8D2MLxXlm/IKSfDpNatooUliRo57jaHMa+0F+alDQbujgQJR7mAvHVN/MFQQ2Go+5PXDnfijKkHw==
@@ -1695,7 +1695,7 @@
     react-inspector "^2.3.0"
     uuid "^3.3.2"
 
-"@storybook/addon-info@4.0.9":
+"@storybook/addon-info@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-4.0.9.tgz#4ca3cd32e30e7959bef2bc07dc00a5a9041395d3"
   integrity sha512-fhenKMloeKbMVg1J6/FOU7fOrxwLUjnuTfO/6dI9pZkmjV8CD2w2x4ZxMQM3ilA3xharuZwYgF5lGfx2O5ZC7Q==
@@ -1713,7 +1713,7 @@
     react-lifecycles-compat "^3.0.4"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-knobs@4.0.9":
+"@storybook/addon-knobs@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-4.0.9.tgz#9ac559405d76a827f949bfe50b64fd7dd61d60e9"
   integrity sha512-UBJfi48Zrd5bcuw6APU8meQItNHM1q4ZjDINfVt+sO1Ucz8cMWsCv9XiroknWs37DKzVVgoWa+OkJ09zTn9oXA==
@@ -1732,31 +1732,31 @@
     react-lifecycles-compat "^3.0.4"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-options@4.0.9":
-  version "4.1.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-4.1.0-alpha.8.tgz#1b690f5113cfd49bf87f6128a1a5e4a7b7ea1a65"
-  integrity sha512-wKDkN4swX/dyIGv0/DZ7NSaXHmBdGOeCgg1AIOLj7gcyI6zglYBH00jNairqybIVt8d8XkS3JeralAlcmH/AMQ==
+"@storybook/addon-options@^4.0.0-alpha.25":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-4.0.8.tgz#9c3c9205a651d7b57220f444ad71cd91759b53d3"
+  integrity sha512-vUVN2EdBJkmReRThGpgpS8bgbu/uS0+ToS+T1ofZ9CEvg5wcaiPNo6jnHqLZni0lncCAeDKh4uwbS7dFZCdmsA==
   dependencies:
-    "@storybook/addons" "4.1.0-alpha.8"
+    "@storybook/addons" "4.0.8"
     util-deprecate "^1.0.2"
 
-"@storybook/addons@4.0.9":
+"@storybook/addons@4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.8.tgz#841848c57406296f7b513708c15dc865f6b37fc7"
+  integrity sha512-rcLqzRHFPYQ5S0/NKc3Qk7klUseiq3YCAKghYjGzXPENgID6rKnqAYrlOybPgR0aUWs6koXKiIjtco9tT1UBxQ==
+  dependencies:
+    "@storybook/channels" "4.0.8"
+    "@storybook/components" "4.0.8"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@4.0.9", "@storybook/addons@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.9.tgz#cfa18fe10ddda454dbbc3aae17562e46d04d3955"
   integrity sha512-D+RsN1fNywgk46UxG6Lue+p9Egf7/DpgEJtQb6RS+UoyOF24p3FlwWMh36kpRfSSgGqFZ+a0jIKhXuRSr31UNQ==
   dependencies:
     "@storybook/channels" "4.0.8"
     "@storybook/components" "4.0.9"
-    global "^4.3.2"
-    util-deprecate "^1.0.2"
-
-"@storybook/addons@4.1.0-alpha.8":
-  version "4.1.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.1.0-alpha.8.tgz#2af64632de920a98cac94439318dec4873189610"
-  integrity sha512-8orGHlD27Pq0QRcLlbStFL9khqWkqKQHQXiyKW65noA6L3l+YVQdumYXn06QMIFfrjuYed/dghnzZn4IO7Zoow==
-  dependencies:
-    "@storybook/channels" "4.1.0-alpha.8"
-    "@storybook/components" "4.1.0-alpha.8"
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
@@ -1782,20 +1782,15 @@
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.8.tgz#36d96ad714c685f144fd1f1e5394faf0e0291032"
   integrity sha512-nGMVPN4eOJlAXxS2u3a5aj7YJ4ChhlLx0+4HC6xaU5Uv+PaL6ba0gh84Zd9K73JnTSPPMq/4Mg3oncZumyeN9Q==
 
-"@storybook/channels@4.1.0-alpha.8":
-  version "4.1.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.1.0-alpha.8.tgz#635be4471ee70d48f0eb7b8edaeb88b4e1e6eda9"
-  integrity sha512-5up+bHEWPMvLKG+bjMs8dQlYq5H0lNUMkMBC2qBgRAZuFbv5XC7jP0xc0JMma1p1dYDz5cAO5HDmiYDWb7iVjw==
-
 "@storybook/client-logger@4.0.8":
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.8.tgz#159bc1732811c543393d86e06a7c32b41047d217"
   integrity sha512-q2PNkSVjQGLvJp9K8hTUjyRYtN8PDbLBddT2fmb/CFGFLXWTDe79+DuJGEFhUKfbtrvixIPXOeWeDYarwxnhAw==
 
-"@storybook/components@4.0.9":
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.9.tgz#c5cc9f52768fd7a6078d9601cecacd0e357dc130"
-  integrity sha512-EoPJitDUBkNdg4UiWyrmU6IkpLmJTjJO6KD382isHXA7qCxBJQTPb2m3GXy35KKF510NtJ9H0l4k5x7yg5Wzng==
+"@storybook/components@4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.8.tgz#0c0701e64b52538acb0d39412db476549a3d7579"
+  integrity sha512-6r6/B2i2sQrDPvOgzo5YgCtSCj3q4E54e6V5fkbrYhSvH7Ro8fwca6Pee0uHbKECT+N8+HzWveV0WKg20TZvIg==
   dependencies:
     "@emotion/core" "^0.13.1"
     "@emotion/provider" "^0.11.2"
@@ -1808,10 +1803,10 @@
     react-textarea-autosize "^7.0.4"
     render-fragment "^0.1.1"
 
-"@storybook/components@4.1.0-alpha.8":
-  version "4.1.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.1.0-alpha.8.tgz#5c159ff96f3c34575b399168bfc38c310ce43ae1"
-  integrity sha512-Og5Iyxw9RbUal/Ih2RtSQnqgNTe67P9KikksTo2C/MB6naV3MRSg2MCy+ix6YnOWlqOzzZnjukzhD3NamrECbw==
+"@storybook/components@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.9.tgz#c5cc9f52768fd7a6078d9601cecacd0e357dc130"
+  integrity sha512-EoPJitDUBkNdg4UiWyrmU6IkpLmJTjJO6KD382isHXA7qCxBJQTPb2m3GXy35KKF510NtJ9H0l4k5x7yg5Wzng==
   dependencies:
     "@emotion/core" "^0.13.1"
     "@emotion/provider" "^0.11.2"
@@ -1930,7 +1925,7 @@
     lodash "^4.17.11"
     shallowequal "^1.1.0"
 
-"@storybook/react-native@4.0.9":
+"@storybook/react-native@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-4.0.9.tgz#ca9ef9fcb6cd382e1337d2c24400e297a5ef06d8"
   integrity sha512-1YSifhyyCge+P9ImDSkXhXHXmVKhV20z5hq/bJFqRLgKe4BjRnVvcw8yvqUIoLo66KrIjuxYXPa+N5VaTBsUbQ==
@@ -1992,7 +1987,7 @@
   dependencies:
     babel-runtime "^6.5.0"
 
-"@storybook/react@4.0.9":
+"@storybook/react@^4.0.0-alpha.25":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-4.0.9.tgz#700ba60ad2e21270a1fe04964e0cd41524854ead"
   integrity sha512-YYBdvwgBJ9paSVzqXwJIiRtqdjvaY+9Wr3EpBy7E8wHWyPUoPcfiD6aMyt0TnGR+mnbbg0B/kLgMGvddxEixYQ==
@@ -3843,7 +3838,16 @@ babel-plugin-minify-type-constructors@^0.4.3:
   dependencies:
     babel-helper-is-void-0 "^0.4.3"
 
-babel-plugin-module-resolver@3.1.1, babel-plugin-module-resolver@^3.1.1:
+babel-plugin-module-resolver@^2.3.0, babel-plugin-module-resolver@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-2.7.1.tgz#18be3c42ddf59f7a456c9e0512cd91394f6e4be1"
+  integrity sha1-GL48Qt31n3pFbJ4FEs2ROU9uS+E=
+  dependencies:
+    find-babel-config "^1.0.1"
+    glob "^7.1.1"
+    resolve "^1.2.0"
+
+babel-plugin-module-resolver@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-3.1.1.tgz#881cf67e3d4b8400d5eaaefc1be44d2dc1fe404f"
   integrity sha512-1Q77Al4ydp6nYApJ7sQ2fmgz30WuQgJZegIYuyOdbdpxenB/bSezQ3hDPsumIXGlUS4vUIv+EwFjzzXZNWtARw==
@@ -3853,15 +3857,6 @@ babel-plugin-module-resolver@3.1.1, babel-plugin-module-resolver@^3.1.1:
     pkg-up "^2.0.0"
     reselect "^3.0.1"
     resolve "^1.4.0"
-
-babel-plugin-module-resolver@^2.3.0, babel-plugin-module-resolver@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-2.7.1.tgz#18be3c42ddf59f7a456c9e0512cd91394f6e4be1"
-  integrity sha1-GL48Qt31n3pFbJ4FEs2ROU9uS+E=
-  dependencies:
-    find-babel-config "^1.0.1"
-    glob "^7.1.1"
-    resolve "^1.2.0"
 
 babel-plugin-react-docgen@^2.0.0:
   version "2.0.0"

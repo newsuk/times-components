@@ -45,9 +45,9 @@
     "react-test-renderer": "16.5.2"
   },
   "dependencies": {
-    "@storybook/addon-actions": "4.0.9",
-    "@storybook/addon-knobs": "4.0.9",
-    "@storybook/react-native": "4.0.9",
+    "@storybook/addon-actions": "^4.0.0-alpha.25",
+    "@storybook/addon-knobs": "^4.0.0-alpha.25",
+    "@storybook/react-native": "^4.0.0-alpha.25",
     "@times-components/schema": "0.1.15",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
