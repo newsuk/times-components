@@ -13,7 +13,9 @@ class LogLink extends ApolloLink {
     }`;
     this.logger.debug(msg);
 
+   
     return forward(operation).map(data => {
+      console.log(data)
       msg = `Ending GraphQL request for ${operation.operationName}`;
       this.logger.debug(msg);
       return data;

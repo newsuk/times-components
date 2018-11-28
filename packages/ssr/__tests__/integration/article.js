@@ -7,7 +7,7 @@ describe("Article", () => {
         Article: new MockArticle()
           .sundayTimes()
           .withRelatedArticles(1)
-          .create()
+          .get()
       })
       .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
       .get("#related-articles")

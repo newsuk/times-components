@@ -17,7 +17,7 @@ class MockImage {
     };
   }
 
-  create() {
+  get() {
     return this.image;
   }
 }

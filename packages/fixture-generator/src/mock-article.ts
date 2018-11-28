@@ -18,7 +18,7 @@ class MockArticle {
 
   constructor() {
     this.article = {
-      leadAsset: new MockImage().create(),
+      leadAsset: new MockImage().get(),
       hasVideo: false,
       commentsEnabled: false,
       isBookmarked: false,
@@ -29,18 +29,18 @@ class MockArticle {
       paywalledContent: new MockMarkup()
         .withXParagraphs(5)
         .withAd()
-        .create(),
+        .get(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 0,
       template: TemplateType.mainstandard,
-      byline: new MockMarkup().withInline().create(),
+      byline: new MockMarkup().withInline().get(),
       flags: [Flag.EXCLUSIVE],
       label: "label",
       content: new MockMarkup()
         .withXParagraphs(3)
         .withAd()
-        .create(),
+        .get(),
       headline: "test headline",
       publishedTime: new Date(0),
       section: SectionName.business,
@@ -48,7 +48,7 @@ class MockArticle {
       shortIdentifier: "37b27qd2s",
       standfirst: "standfirst",
       title: "title",
-      summary: new MockMarkup().withParagraph().create()
+      summary: new MockMarkup().withParagraph().get()
     };
   }
 
@@ -64,7 +64,7 @@ class MockArticle {
     return this;
   }
 
-  create() {
+  get() {
     return this.article;
   }
 }

@@ -60,7 +60,7 @@ class MockMarkup {
     return this;
   }
 
-  create() {
+  get() {
     return this.markup;
   }
 }

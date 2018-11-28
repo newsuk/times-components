@@ -20,7 +20,7 @@ const introspectionQueryResultData = {
         kind: "INTERFACE",
         name: "Layout",
         description:
-          "A selection of template types that have opinions over how they should be\npresented. Usually used within the context of an associated list of articles",
+          "A selection of template types that have opinions over how they should be presented. Usually used within the context of an associated list of articles",
         fields: [
           {
             name: "template",
@@ -35,9 +35,9 @@ const introspectionQueryResultData = {
         interfaces: null,
         enumValues: null,
         possibleTypes: [
-          { kind: "OBJECT", name: "Default", ofType: null },
           { kind: "OBJECT", name: "LeadAndTwo", ofType: null },
-          { kind: "OBJECT", name: "OpinionAndTwo", ofType: null }
+          { kind: "OBJECT", name: "OpinionAndTwo", ofType: null },
+          { kind: "OBJECT", name: "Default", ofType: null }
         ]
       },
       {
@@ -70,7 +70,9 @@ const introspectionQueryResultData = {
         interfaces: null,
         enumValues: null,
         possibleTypes: [
+          { kind: "OBJECT", name: "StandardSlice", ofType: null },
           { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
+          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
           { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
           { kind: "OBJECT", name: "FocusSlice", ofType: null },
           { kind: "OBJECT", name: "LeadersSlice", ofType: null },
@@ -84,8 +86,6 @@ const introspectionQueryResultData = {
             ofType: null
           },
           { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
-          { kind: "OBJECT", name: "StandardSlice", ofType: null },
           { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
           { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
           { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
@@ -163,54 +163,9 @@ const introspectionQueryResultData = {
         interfaces: null,
         enumValues: null,
         possibleTypes: [
-          { kind: "OBJECT", name: "MagazineSection", ofType: null },
           { kind: "OBJECT", name: "StandardSection", ofType: null },
-          { kind: "OBJECT", name: "PuzzleSection", ofType: null }
-        ]
-      },
-      {
-        kind: "UNION",
-        name: "MagazineSectionSlice",
-        description: "",
-        fields: null,
-        inputFields: null,
-        interfaces: null,
-        enumValues: null,
-        possibleTypes: [
-          { kind: "OBJECT", name: "StandardSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
-          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
-          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
-          { kind: "OBJECT", name: "FocusSlice", ofType: null },
-          { kind: "OBJECT", name: "LeadersSlice", ofType: null },
-          { kind: "OBJECT", name: "LeadOneAndFourSlice", ofType: null },
-          { kind: "OBJECT", name: "LeadOneAndOneSlice", ofType: null },
-          { kind: "OBJECT", name: "LeadOneAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "LeadOneFullWidthSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "LeadOneNoPicAndOneAndPortraitSlice",
-            ofType: null
-          },
-          { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
-          { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
-          { kind: "OBJECT", name: "SecondaryOneSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "SecondaryOneAndColumnistSlice",
-            ofType: null
-          },
-          { kind: "OBJECT", name: "SecondaryOneAndFourSlice", ofType: null },
-          { kind: "OBJECT", name: "SecondaryTwoAndTwoSlice", ofType: null },
-          {
-            kind: "OBJECT",
-            name: "SecondaryTwoNoPicAndTwoSlice",
-            ofType: null
-          },
-          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null },
-          { kind: "OBJECT", name: "PuffSlice", ofType: null }
+          { kind: "OBJECT", name: "PuzzleSection", ofType: null },
+          { kind: "OBJECT", name: "MagazineSection", ofType: null }
         ]
       },
       {
@@ -297,6 +252,51 @@ const introspectionQueryResultData = {
         enumValues: null,
         possibleTypes: [
           { kind: "OBJECT", name: "Puzzle", ofType: null },
+          { kind: "OBJECT", name: "PuffSlice", ofType: null }
+        ]
+      },
+      {
+        kind: "UNION",
+        name: "MagazineSectionSlice",
+        description: "",
+        fields: null,
+        inputFields: null,
+        interfaces: null,
+        enumValues: null,
+        possibleTypes: [
+          { kind: "OBJECT", name: "StandardSlice", ofType: null },
+          { kind: "OBJECT", name: "CommentLeadAndCartoonSlice", ofType: null },
+          { kind: "OBJECT", name: "LetterThundererPodcastSlice", ofType: null },
+          { kind: "OBJECT", name: "CommentTwoAndNotebookSlice", ofType: null },
+          { kind: "OBJECT", name: "FocusSlice", ofType: null },
+          { kind: "OBJECT", name: "LeadersSlice", ofType: null },
+          { kind: "OBJECT", name: "LeadOneAndFourSlice", ofType: null },
+          { kind: "OBJECT", name: "LeadOneAndOneSlice", ofType: null },
+          { kind: "OBJECT", name: "LeadOneAndTwoSlice", ofType: null },
+          { kind: "OBJECT", name: "LeadOneFullWidthSlice", ofType: null },
+          {
+            kind: "OBJECT",
+            name: "LeadOneNoPicAndOneAndPortraitSlice",
+            ofType: null
+          },
+          { kind: "OBJECT", name: "LeadTwoNoPicAndTwoSlice", ofType: null },
+          { kind: "OBJECT", name: "ObituariesLeadAndTwoSlice", ofType: null },
+          { kind: "OBJECT", name: "OpinionOneAndTwoSlice", ofType: null },
+          { kind: "OBJECT", name: "SecondaryFourSlice", ofType: null },
+          { kind: "OBJECT", name: "SecondaryOneSlice", ofType: null },
+          {
+            kind: "OBJECT",
+            name: "SecondaryOneAndColumnistSlice",
+            ofType: null
+          },
+          { kind: "OBJECT", name: "SecondaryOneAndFourSlice", ofType: null },
+          { kind: "OBJECT", name: "SecondaryTwoAndTwoSlice", ofType: null },
+          {
+            kind: "OBJECT",
+            name: "SecondaryTwoNoPicAndTwoSlice",
+            ofType: null
+          },
+          { kind: "OBJECT", name: "TwoPicAndSixNoPicSlice", ofType: null },
           { kind: "OBJECT", name: "PuffSlice", ofType: null }
         ]
       }
