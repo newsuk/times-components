@@ -90,7 +90,7 @@ describe("get markup", () => {
       }
     ];
 
-    const mockMarkup = new MockMarkup().withXParagraphs(5).withAd().get()
+    const mockMarkup = new MockMarkup().withParagraphs(5).withAd().get()
 
     expect(mockMarkup).toEqual(expected)
 

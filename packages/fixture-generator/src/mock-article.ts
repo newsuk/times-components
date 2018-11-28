@@ -27,7 +27,7 @@ class MockArticle {
       keywords: keywords(),
       publicationName: getPublicationName(),
       paywalledContent: new MockMarkup()
-        .withXParagraphs(5)
+        .withParagraphs(5)
         .withAd()
         .get(),
       url: "/article/123" as Url,
@@ -38,7 +38,7 @@ class MockArticle {
       flags: [Flag.EXCLUSIVE],
       label: "label",
       content: new MockMarkup()
-        .withXParagraphs(3)
+        .withParagraphs(3)
         .withAd()
         .get(),
       headline: "test headline",

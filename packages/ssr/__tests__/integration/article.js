@@ -1,12 +1,14 @@
 import { MockArticle } from "@times-components/fixture-generator";
 
+const relatedArticleCount = 3;
+
 describe("Article", () => {
   it("loads hi-res images for related articles", () =>
     cy
       .task("startMockServerWith", {
         Article: new MockArticle()
           .sundayTimes()
-          .withRelatedArticles(1)
+          .withRelatedArticles(relatedArticleCount)
           .get()
       })
       .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
@@ -20,12 +22,12 @@ describe("Article", () => {
 
         cy.get("@raImages")
           .its("length")
-          .should("eq", 3);
+          .should("eq", relatedArticleCount);
 
         cy.get("@raImages").each(item => {
           const url = new URL(item.attr("src"));
 
-          expect(url.searchParams.get("resize")).to.equal("301");
+          expect(url.searchParams.get("resize")).to.equal("306");
         });
       }));
 

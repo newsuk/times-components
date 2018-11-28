@@ -41,7 +41,7 @@ class MockMarkup {
     this.markup = [];
   }
 
-  withXParagraphs(length: number) {
+  withParagraphs(length: number) {
     new Array(length).fill(0).map(() => this.withParagraph());
     return this;
   }
