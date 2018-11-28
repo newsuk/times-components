@@ -126,7 +126,7 @@ const mockArticle = ({
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
-  sections[select("Section", sections, "Comment")];
+  sections[select("Section", sections, "The Sunday Times Magazine")];
 
 export default {
   children: [
