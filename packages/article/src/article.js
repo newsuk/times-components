@@ -10,9 +10,8 @@ export const templates = {
 };
 
 const Article = props => {
-  const {
-    article: { template = "mainstandard" }
-  } = props;
+  const { article } = props;
+  const { template = "mainstandard" } = article || {};
 
   const Component = templates[template];
   return <Component {...props} />;
