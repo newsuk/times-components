@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Caption from "@times-components/caption";
+import { CentredCaption } from "@times-components/caption";
 import ArticleLeadAssetImage from "./article-lead-asset-image";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
 import styles from "../styles";
@@ -14,7 +14,7 @@ const ArticleLeadAsset = ({ data, width }) => {
   return (
     <View style={styles.leadAssetContainer}>
       <LeadAsset {...data} width={width} />
-      <Caption credits={data.credits} text={data.caption} />
+      <CentredCaption credits={data.credits} text={data.caption} />
     </View>
   );
 };

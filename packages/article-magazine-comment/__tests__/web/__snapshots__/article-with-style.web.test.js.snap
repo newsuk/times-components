@@ -642,7 +642,7 @@ exports[`full article with style 1`] = `
           className="c12 S1"
         >
           <figcaption>
-            <Caption />
+            <CenteredCaption />
           </figcaption>
         </div>
       </figure>

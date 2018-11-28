@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Caption from "@times-components/caption";
+import { CentredCaption } from "@times-components/caption";
 import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
@@ -45,7 +45,10 @@ const LeadAssetComponent = ({
         </AspectRatioContainer>
         <LeadAssetCaptionContainer>
           <figcaption>
-            <Caption credits={leadAsset.credits} text={leadAsset.caption} />
+            <CentredCaption
+              credits={leadAsset.credits}
+              text={leadAsset.caption}
+            />
           </figcaption>
         </LeadAssetCaptionContainer>
       </figure>
