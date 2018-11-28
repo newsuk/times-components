@@ -89,7 +89,10 @@ const renderArticle = ({
   </ArticleProvider>
 );
 
-const templateNames = Object.keys(templates).reduce((t, key) => ({ ...t, [key]: key }), {});
+const templateNames = Object.keys(templates).reduce(
+  (t, key) => ({ ...t, [key]: key }),
+  {}
+);
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
