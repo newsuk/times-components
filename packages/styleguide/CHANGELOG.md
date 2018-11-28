@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.9.0"></a>
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.8.4...@times-components/styleguide@3.9.0) (2018-11-28)
+
+
+### Features
+
+* Add support for secondary colour overrides for `magazine-comment` and `magazinestandard` ([#1526](https://github.com/newsuk/times-components/issues/1526)) ([0f3c899](https://github.com/newsuk/times-components/commit/0f3c899))
+
+
+
+
+
 <a name="3.8.4"></a>
 ## [3.8.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.8.3...@times-components/styleguide@3.8.4) (2018-11-28)
 
