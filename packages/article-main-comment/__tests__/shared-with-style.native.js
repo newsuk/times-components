@@ -11,7 +11,7 @@ import {
 import "./mocks.native";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
-import { adConfig } from "./ad-mock";
+import sharedProps from "./shared-props";
 
 export default () => {
   addSerializers(
@@ -135,23 +135,10 @@ export default () => {
       ]
     });
 
-    const output = TestRenderer.create(
-      <ArticleMainComment
-        adConfig={adConfig}
-        analyticsStream={() => {}}
-        article={article}
-        onAuthorPress={() => {}}
-        onCommentGuidelinesPress={() => {}}
-        onCommentsPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
-        onTwitterLinkPress={() => {}}
-        onVideoPress={() => {}}
-        refetch={() => {}}
-      />
+    const testRenderer = TestRenderer.create(
+      <ArticleMainComment {...sharedProps} article={article} />
     );
 
-    expect(output).toMatchSnapshot();
+    expect(testRenderer).toMatchSnapshot();
   });
 };

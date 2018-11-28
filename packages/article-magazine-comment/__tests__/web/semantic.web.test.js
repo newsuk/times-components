@@ -125,7 +125,7 @@ const tests = [
 
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <Context.Provider
           value={{
             makeArticleUrl: () => "https://some-url.io",
@@ -148,7 +148,7 @@ const tests = [
         </Context.Provider>
       );
 
-      expect(testInstance).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   }
 ];
