@@ -98,7 +98,7 @@ exports[`1. one opinion and two support related articles 1`] = `
               <View>
                 <View>
                   <ArticleLabel
-                    color="#333333"
+                    color="#1D1D1B"
                     title="second label"
                   />
                 </View>

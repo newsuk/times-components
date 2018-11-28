@@ -67,7 +67,7 @@ exports[`7. article meta uses default section colour 1`] = `
           },
         ]
       }
-      color="#333333"
+      color="#1D1D1B"
     />
   </div>
   <div />

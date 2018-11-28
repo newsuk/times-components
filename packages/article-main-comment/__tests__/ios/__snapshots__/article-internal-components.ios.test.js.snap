@@ -24,7 +24,7 @@ exports[`4. article standfirst with no content 1`] = `null`;
 exports[`5. article label uses default section colour 1`] = `
 <View>
   <ArticleLabel
-    color="#333333"
+    color="#1D1D1B"
     title="Random Label"
   />
 </View>
@@ -68,7 +68,7 @@ exports[`7. article meta uses default section colour 1`] = `
           },
         ]
       }
-      color="#333333"
+      color="#1D1D1B"
     />
   </View>
   <View>
