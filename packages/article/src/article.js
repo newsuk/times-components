@@ -11,7 +11,7 @@ export const templates = {
 
 const Article = props => {
   const {
-    article: { template = "mainstandard" }
+    article: { template = "mainstandard" } = { template: "mainstandard" }
   } = props;
 
   const Component = templates[template];
