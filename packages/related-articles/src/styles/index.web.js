@@ -4,6 +4,10 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  title: {
+    ...sharedStyles.title,
+    paddingTop: spacing(1)
+  },
   titleContainer: {
     ...sharedStyles.titleContainer,
     padding: spacing(3)

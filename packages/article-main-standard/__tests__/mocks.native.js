@@ -22,10 +22,6 @@ jest.mock("@times-components/image", () => ({
 }));
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
-jest.mock("@times-components/tracking", () => ({
-  withTrackingContext: x => x,
-  withTrackScrollDepth: x => x
-}));
 jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/video", () => "Video");
 jest.mock("@times-components/video-label", () => "VideoLabel");

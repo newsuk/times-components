@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.4.1"></a>
+## [6.4.1](https://github.com/newsuk/times-components/compare/@times-components/article@6.4.0...@times-components/article@6.4.1) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.4.0"></a>
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.14...@times-components/article@6.4.0) (2018-11-27)
+
+
+### Features
+
+* upgrade prebid ([#1504](https://github.com/newsuk/times-components/issues/1504)) ([55b28fd](https://github.com/newsuk/times-components/commit/55b28fd))
+
+
+
+
+
+<a name="6.3.14"></a>
+## [6.3.14](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.13...@times-components/article@6.3.14) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.13"></a>
+## [6.3.13](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.12...@times-components/article@6.3.13) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.12"></a>
+## [6.3.12](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.11...@times-components/article@6.3.12) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.11"></a>
+## [6.3.11](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.10...@times-components/article@6.3.11) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+<a name="6.3.10"></a>
+## [6.3.10](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.9...@times-components/article@6.3.10) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 <a name="6.3.9"></a>
 ## [6.3.9](https://github.com/newsuk/times-components/compare/@times-components/article@6.3.8...@times-components/article@6.3.9) (2018-11-22)
 

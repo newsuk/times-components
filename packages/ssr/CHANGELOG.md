@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.6.0...@times-components/ssr@1.6.1) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.29...@times-components/ssr@1.6.0) (2018-11-27)
+
+
+### Features
+
+* upgrade prebid ([#1504](https://github.com/newsuk/times-components/issues/1504)) ([55b28fd](https://github.com/newsuk/times-components/commit/55b28fd))
+
+
+
+
+
+<a name="1.5.29"></a>
+## [1.5.29](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.28...@times-components/ssr@1.5.29) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.28"></a>
+## [1.5.28](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.27...@times-components/ssr@1.5.28) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.27"></a>
+## [1.5.27](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.26...@times-components/ssr@1.5.27) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.26"></a>
+## [1.5.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.25...@times-components/ssr@1.5.26) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.25"></a>
+## [1.5.25](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.24...@times-components/ssr@1.5.25) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.24"></a>
+## [1.5.24](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.23...@times-components/ssr@1.5.24) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+<a name="1.5.23"></a>
+## [1.5.23](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.22...@times-components/ssr@1.5.23) (2018-11-23)
+
+
+### Bug Fixes
+
+* script to run from bitrise ([#1507](https://github.com/newsuk/times-components/issues/1507)) ([dd96b00](https://github.com/newsuk/times-components/commit/dd96b00))
+
+
+
+
+
+<a name="1.5.22"></a>
+## [1.5.22](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.21...@times-components/ssr@1.5.22) (2018-11-22)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 <a name="1.5.21"></a>
 ## [1.5.21](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.5.20...@times-components/ssr@1.5.21) (2018-11-22)
 

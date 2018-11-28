@@ -22,7 +22,6 @@ const styles = {
   },
   title: {
     color: colours.functional.primary,
-    paddingTop: spacing(1),
     ...fontFactory({
       font: "headline",
       fontSize: "pageComponentHeadline"

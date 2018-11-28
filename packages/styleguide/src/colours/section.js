@@ -1,4 +1,4 @@
-const sectionColourBase = {
+const primaryColoursBase = {
   artsfeatures: "#622956",
   bricksmortar: "#006469",
   business: "#005B8D",
@@ -33,37 +33,49 @@ const sectionColourBase = {
   world: "#636C17"
 };
 
-const sectionColours = {
-  "Arts & Features": sectionColourBase.artsfeatures,
-  "Bricks & Mortar": sectionColourBase.bricksmortar,
-  Business: sectionColourBase.business,
-  Comment: sectionColourBase.comment,
-  Culture: sectionColourBase.culture,
-  Driving: sectionColourBase.driving,
-  Focus: sectionColourBase.focus,
-  Gardening: sectionColourBase.gardening,
-  Home: sectionColourBase.home,
-  Ireland: sectionColourBase.ireland,
-  Law: sectionColourBase.law,
-  Money: sectionColourBase.money,
-  News: sectionColourBase.news,
-  "News Review": sectionColourBase.newsreview,
-  Puzzle: sectionColourBase.puzzle,
-  Register: sectionColourBase.register,
-  "Saturday Review": sectionColourBase.saturdayreview,
-  Scotland: sectionColourBase.scotland,
-  Sport: sectionColourBase.sport,
-  Style: sectionColourBase.style,
-  "Tech & Games": sectionColourBase.techgames,
-  "The Dish": sectionColourBase.thedish,
-  "The Game": sectionColourBase.thegame,
-  "The Sunday Times Magazine": sectionColourBase.thesundaytimesmagazine,
-  "The Times Magazine": sectionColourBase.thetimesmagazine,
-  Times2: sectionColourBase.times2,
-  "Today's Magazines": sectionColourBase.todaysmagazines,
-  Travel: sectionColourBase.travel,
-  Weekend: sectionColourBase.weekend,
-  World: sectionColourBase.world
+const primaryColours = {
+  "Arts & Features": primaryColoursBase.artsfeatures,
+  "Bricks & Mortar": primaryColoursBase.bricksmortar,
+  Business: primaryColoursBase.business,
+  Comment: primaryColoursBase.comment,
+  Culture: primaryColoursBase.culture,
+  Driving: primaryColoursBase.driving,
+  Focus: primaryColoursBase.focus,
+  Gardening: primaryColoursBase.gardening,
+  Home: primaryColoursBase.home,
+  Ireland: primaryColoursBase.ireland,
+  Law: primaryColoursBase.law,
+  Money: primaryColoursBase.money,
+  News: primaryColoursBase.news,
+  "News Review": primaryColoursBase.newsreview,
+  Puzzle: primaryColoursBase.puzzle,
+  Register: primaryColoursBase.register,
+  "Saturday Review": primaryColoursBase.saturdayreview,
+  Scotland: primaryColoursBase.scotland,
+  Sport: primaryColoursBase.sport,
+  Style: primaryColoursBase.style,
+  "Tech & Games": primaryColoursBase.techgames,
+  "The Dish": primaryColoursBase.thedish,
+  "The Game": primaryColoursBase.thegame,
+  "The Sunday Times Magazine": primaryColoursBase.thesundaytimesmagazine,
+  "The Times Magazine": primaryColoursBase.thetimesmagazine,
+  Times2: primaryColoursBase.times2,
+  "Today's Magazines": primaryColoursBase.todaysmagazines,
+  Travel: primaryColoursBase.travel,
+  Weekend: primaryColoursBase.weekend,
+  World: primaryColoursBase.world
 };
 
-export default { ...sectionColourBase, ...sectionColours };
+const secondaryColoursBase = {
+  thesundaytimesmagazine: "#F13D00"
+};
+
+const secondaryColours = {
+  "The Sunday Times Magazine": secondaryColoursBase.thesundaytimesmagazine
+};
+
+export default { ...primaryColoursBase, ...primaryColours };
+export const secondarySectionColours = {
+  ...secondaryColoursBase,
+  ...secondaryColours
+};

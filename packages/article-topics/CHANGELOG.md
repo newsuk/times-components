@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.34"></a>
+## [3.2.34](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.33...@times-components/article-topics@3.2.34) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+<a name="3.2.33"></a>
+## [3.2.33](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.32...@times-components/article-topics@3.2.33) (2018-11-26)
+
+
+### Bug Fixes
+
+* replat 4405 design review ([#1509](https://github.com/newsuk/times-components/issues/1509)) ([aa5a40d](https://github.com/newsuk/times-components/commit/aa5a40d))
+
+
+
+
+
 <a name="3.2.32"></a>
 ## [3.2.32](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.31...@times-components/article-topics@3.2.32) (2018-11-21)
 

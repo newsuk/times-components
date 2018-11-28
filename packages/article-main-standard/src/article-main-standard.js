@@ -4,7 +4,7 @@ import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
-import Article from "@times-components/article";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
@@ -93,7 +93,7 @@ class ArticlePage extends Component {
     } = this.props;
 
     return (
-      <Article
+      <ArticleSkeleton
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}

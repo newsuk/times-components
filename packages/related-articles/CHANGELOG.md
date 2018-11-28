@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.1.5...@times-components/related-articles@5.2.0) (2018-11-27)
+
+
+### Features
+
+* article link analytics ([#1518](https://github.com/newsuk/times-components/issues/1518)) ([46d721b](https://github.com/newsuk/times-components/commit/46d721b))
+
+
+
+
+
+<a name="5.1.5"></a>
+## [5.1.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.1.4...@times-components/related-articles@5.1.5) (2018-11-27)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+<a name="5.1.4"></a>
+## [5.1.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.1.3...@times-components/related-articles@5.1.4) (2018-11-26)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+<a name="5.1.3"></a>
+## [5.1.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.1.2...@times-components/related-articles@5.1.3) (2018-11-26)
+
+
+### Bug Fixes
+
+* replat 4405 design review ([#1509](https://github.com/newsuk/times-components/issues/1509)) ([aa5a40d](https://github.com/newsuk/times-components/commit/aa5a40d))
+
+
+
+
+
 <a name="5.1.2"></a>
 ## [5.1.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.1.1...@times-components/related-articles@5.1.2) (2018-11-21)
 

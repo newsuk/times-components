@@ -37,6 +37,23 @@ export const makeAdInitMocks = () => {
     window.googletag.cmd.forEach(cmd => cmd());
     window.googletag.cmd = [];
   };
+  const pbjs = {
+    addAdUnits: jest.fn(),
+    que: [],
+    removeAdUnit: jest.fn(),
+    requestBids: jest.fn(),
+    setConfig: jest.fn(),
+    setTargetingForGPTAsync: jest.fn()
+  };
+  window.pbjs = pbjs;
+  const apstag = {
+    _Q: [],
+    fetchBids: jest.fn(),
+    init: jest.fn(),
+    setDisplayBids: jest.fn(),
+    targetingKeys: jest.fn()
+  };
+  window.apstag = apstag;
   const slotConfig = {
     containerID: "mock-code",
     mappings: [

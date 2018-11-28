@@ -7,7 +7,7 @@ import styles from "./style";
 const VideoLabel = ({ color, title }) => (
   <View style={styles.container}>
     <View style={styles.iconContainer}>
-      <IconVideo fillColour={color} height={8} />
+      <IconVideo fillColour={color} height={9} />
     </View>
     <Text style={[styles.title, { color }]}>
       {title ? title.toUpperCase() : "VIDEO"}

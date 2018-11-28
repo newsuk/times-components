@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import ArticleError from "@times-components/article-error";
-import Article from "@times-components/article";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
@@ -30,9 +30,11 @@ class ArticlePage extends Component {
       standfirst
     } = article;
 
+    const authorImage = author && author.image ? author.image : null;
+
     return (
       <ArticleHeader
-        authorImage={author.image}
+        authorImage={authorImage}
         byline={byline}
         flags={flags}
         headline={getHeadline(headline, shortHeadline)}
@@ -73,7 +75,7 @@ class ArticlePage extends Component {
     } = this.props;
 
     return (
-      <Article
+      <ArticleSkeleton
         adConfig={adConfig}
         analyticsStream={analyticsStream}
         data={article}

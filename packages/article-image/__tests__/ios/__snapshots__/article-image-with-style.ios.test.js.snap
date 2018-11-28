@@ -23,7 +23,7 @@ exports[`1. primary image with caption and credits 1`] = `
       <View
         style={
           Object {
-            "paddingLeft": 10,
+            "paddingHorizontal": 10,
             "paddingTop": 10,
           }
         }

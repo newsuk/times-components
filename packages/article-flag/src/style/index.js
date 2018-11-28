@@ -7,6 +7,10 @@ const styles = {
     ...sharedStyles.title,
     fontSize: fontSizes.meta,
     marginTop: 5
+  },
+  view: {
+    ...sharedStyles.view,
+    marginTop: -5
   }
 };
 

@@ -51,8 +51,6 @@ export const HeaderContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
     padding-bottom: ${spacing(7)};
-    padding-left: ${spacing(12)};
-    padding-right: ${spacing(12)};
     margin-bottom: ${spacing(7)};
   }
 `;
@@ -90,7 +88,7 @@ export const Seperator = styled(View)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
-    background-color: ${colours.functional.keyline}
+    background-color: ${colours.functional.keyline};
     display: flex;
     height: ${spacing(3)};
     margin: 0 ${spacing(2)};

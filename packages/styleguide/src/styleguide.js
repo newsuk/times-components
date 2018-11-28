@@ -1,4 +1,4 @@
-import sectionColours from "./colours/section";
+import sectionColours, { secondarySectionColours } from "./colours/section";
 import functionalColours from "./colours/functional";
 
 import FadeIn from "./animations";
@@ -7,12 +7,14 @@ import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
 import timesFontFactory from "./fonts/font-factory";
+import themeFactory from "./theme/theme-factory";
 
 import scales from "./scales";
 import spacing from "./spacing";
 
 const colours = {
   functional: functionalColours,
+  secondarySectionColours,
   section: sectionColours
 };
 
@@ -39,7 +41,8 @@ export {
   fontSizes,
   lineHeight,
   scales,
-  spacing
+  spacing,
+  themeFactory
 };
 export default ({ scale = scales.medium } = {}) => ({
   Animations,
