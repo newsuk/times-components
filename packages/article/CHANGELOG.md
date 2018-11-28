@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.4.5"></a>
+## [6.4.5](https://github.com/newsuk/times-components/compare/@times-components/article@6.4.4...@times-components/article@6.4.5) (2018-11-28)
+
+
+### Bug Fixes
+
+* Section list in article storybook ([#1529](https://github.com/newsuk/times-components/issues/1529)) ([0377fec](https://github.com/newsuk/times-components/commit/0377fec))
+* Support null article data on article package ([#1528](https://github.com/newsuk/times-components/issues/1528)) ([4538ac8](https://github.com/newsuk/times-components/commit/4538ac8))
+
+
+
+
+
 <a name="6.4.4"></a>
 ## [6.4.4](https://github.com/newsuk/times-components/compare/@times-components/article@6.4.3...@times-components/article@6.4.4) (2018-11-28)
 
