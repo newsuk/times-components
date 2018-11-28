@@ -2,7 +2,7 @@
 /* eslint-env browser */
 import React, { Fragment } from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context from "@times-components/context";
+import Context, { defaults } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
