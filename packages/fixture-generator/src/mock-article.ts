@@ -27,19 +27,19 @@ class MockArticle {
       keywords: keywords(),
       publicationName: getPublicationName(),
       paywalledContent: new MockMarkup()
-        .withParagraphs(5)
-        .withAd()
+        .setParagraphs(5)
+        .setAd()
         .get(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 0,
       template: TemplateType.mainstandard,
-      byline: new MockMarkup().withInline().get(),
+      byline: new MockMarkup().setInline().get(),
       flags: [Flag.EXCLUSIVE],
       label: "label",
       content: new MockMarkup()
-        .withParagraphs(3)
-        .withAd()
+        .setParagraphs(3)
+        .setAd()
         .get(),
       headline: "test headline",
       publishedTime: new Date(0),
@@ -48,11 +48,11 @@ class MockArticle {
       shortIdentifier: "37b27qd2s",
       standfirst: "standfirst",
       title: "title",
-      summary: new MockMarkup().withParagraph().get()
+      summary: new MockMarkup().setParagraph().get()
     };
   }
 
-  withRelatedArticles(count = 3) {
+  setRelatedArticles(count = 3) {
     this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
   }

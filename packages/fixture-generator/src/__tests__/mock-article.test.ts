@@ -14,7 +14,7 @@ describe("The mock Article", () => {
   });
 
   it("should return x related articles", () => {
-    const mockArticle = new MockArticle().withRelatedArticles(5).get();
+    const mockArticle = new MockArticle().setRelatedArticles(5).get();
     expect(mockArticle.relatedArticleSlice!.items.length).toBe(5);
   })
 });

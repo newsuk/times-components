@@ -6,7 +6,7 @@ describe("get markup", () => {
   });
 
   it("should be able to generate paragraph of markup", () => {
-    expect(new MockMarkup().withParagraph().get()).toMatchInlineSnapshot(`
+    expect(new MockMarkup().setParagraph().get()).toMatchInlineSnapshot(`
 Array [
   Object {
     "attributes": Object {},
@@ -26,7 +26,7 @@ Array [
   });
 
   it("should be able to generate markup with ads", () => {
-    expect(new MockMarkup().withAd().get()).toMatchInlineSnapshot(`
+    expect(new MockMarkup().setAd().get()).toMatchInlineSnapshot(`
 Array [
   Object {
     "attributes": Object {},
@@ -38,7 +38,7 @@ Array [
   });
 
   it("should be able to generate inline of markup", () => {
-    expect(new MockMarkup().withInline().get()).toMatchInlineSnapshot(`
+    expect(new MockMarkup().setInline().get()).toMatchInlineSnapshot(`
 Array [
   Object {
     "attributes": Object {},
@@ -60,8 +60,8 @@ Array [
   it("should generate large markup shapes", () => {
     expect(
       new MockMarkup()
-        .withParagraphs(5)
-        .withAd()
+        .setParagraphs(5)
+        .setAd()
         .get()
     ).toMatchInlineSnapshot(`
 Array [

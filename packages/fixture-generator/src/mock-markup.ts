@@ -41,21 +41,21 @@ class MockMarkup {
     this.markup = [];
   }
 
-  withParagraphs(length: number) {
-    new Array(length).fill(0).map(() => this.withParagraph());
+  setParagraphs(length: number) {
+    new Array(length).fill(0).map(() => this.setParagraph());
     return this;
   }
 
-  withParagraph() {
+  setParagraph() {
     this.markup.push(markupTypes.paragraph);
     return this;
   }
 
-  withAd() {
+  setAd() {
     this.markup.push(markupTypes.ad);
     return this;
   }
-  withInline() {
+  setInline() {
     this.markup.push(markupTypes.inline);
     return this;
   }
