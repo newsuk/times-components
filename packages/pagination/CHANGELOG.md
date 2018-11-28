@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.30"></a>
+## [3.1.30](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.1.29...@times-components/pagination@3.1.30) (2018-11-28)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 <a name="3.1.29"></a>
 ## [3.1.29](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.1.28...@times-components/pagination@3.1.29) (2018-11-27)
 

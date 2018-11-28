@@ -1,8 +1,10 @@
 import React from "react";
+import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 
-const templates = {
+export const templates = {
+  magazinecomment: ArticleMagazineComment,
   maincomment: ArticleMainComment,
   mainstandard: ArticleMainStandard
 };

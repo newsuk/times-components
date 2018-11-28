@@ -1,10 +1,10 @@
 /* eslint-disable react/no-multi-comp */
-
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
+import sharedProps from "./shared-props";
 import { adConfig } from "./ad-mock";
 
 const findComponents = (testInstance, componentName) =>
@@ -26,91 +26,49 @@ export const snapshotTests = renderComponent => [
   {
     name: "an error",
     test() {
-      const props = {
-        error: { message: "An example error." }
-      };
-
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMainComment
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
+          {...sharedProps}
+          error={{ message: "An example error." }}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "loading",
     test() {
-      const props = {
-        isLoading: true
-      };
-
-      const output = renderComponent(
-        <ArticleMainComment
-          {...props}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
-        />
+      const testRenderer = renderComponent(
+        <ArticleMainComment {...sharedProps} isLoading />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with no headline falls back to use shortHeadline",
     test() {
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMainComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
             headline: ""
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   },
   {
     name: "an article with ads",
     test() {
-      const output = renderComponent(
+      const testRenderer = renderComponent(
         <ArticleMainComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
@@ -122,20 +80,10 @@ export const snapshotTests = renderComponent => [
               }
             ]
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          onViewed
-          receiveChildList={() => {}}
         />
       );
 
-      expect(output).toMatchSnapshot();
+      expect(testRenderer).toMatchSnapshot();
     }
   }
 ];
@@ -144,27 +92,17 @@ const negativeTests = [
   {
     name: "an article with no flags",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMainComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             flags: null
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
-      const flags = findComponents(testInstance, "Flag");
+      const flags = findComponents(testRenderer, "Flag");
 
       expect(flags).toEqual([]);
     }
@@ -172,24 +110,14 @@ const negativeTests = [
   {
     name: "an article with no label",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMainComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({ ...testFixture, label: null })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
-      const label = findComponents(testInstance, "ArticleLabel");
+      const label = findComponents(testRenderer, "ArticleLabel");
 
       expect(label).toEqual([]);
     }
@@ -197,27 +125,17 @@ const negativeTests = [
   {
     name: "an article with no standfirst",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMainComment
-          adConfig={adConfig}
-          analyticsStream={() => {}}
+          {...sharedProps}
           article={articleFixture({
             ...testFixture,
             standfirst: null
           })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-          receiveChildList={() => {}}
         />
       );
 
-      const textNodes = testInstance.root.findAll(node => {
+      const textNodes = testRenderer.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&
