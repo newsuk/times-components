@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React, { Fragment } from "react";
-import invert from "lodash.invert";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import Context, { defaults } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
@@ -10,7 +9,8 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import { colours, scales, themeFactory } from "@times-components/styleguide";
+import { sections } from "@times-components/storybook";
+import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import {
   ArticleConfigurator,
@@ -126,9 +126,7 @@ const mockArticle = ({
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
-  invert(colours.section)[
-    select("Section", invert(colours.section), colours.section.comment)
-  ];
+  sections[select("Section", sections, "The Sunday Times Magazine")];
 
 export default {
   children: [

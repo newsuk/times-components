@@ -75,7 +75,6 @@
     "@times-components/utils": "4.0.14",
     "@times-components/video": "4.1.21",
     "@times-components/video-label": "2.1.56",
-    "lodash.invert": "4.3.0",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
