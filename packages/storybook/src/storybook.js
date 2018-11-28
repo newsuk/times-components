@@ -4,6 +4,7 @@ import * as decorators from "./decorators";
 import showcaseToStoryBook from "./showcase-to-storybook";
 import knobs from "./knobs";
 import select from "./select-shim";
+import sections from "./sections";
 
 const {
   CenteredDecorator,
@@ -18,6 +19,7 @@ export {
   BarSpacingDecorator,
   CenteredDecorator,
   LateralSpacingDecorator,
+  sections,
   select,
   showcaseConverter,
   WhiteBgColorDecorator
