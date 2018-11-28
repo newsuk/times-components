@@ -92,7 +92,7 @@ const negativeTests = [
   {
     name: "an article with no flags",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMagazineComment
           {...sharedProps}
           article={articleFixture({
@@ -102,7 +102,7 @@ const negativeTests = [
         />
       );
 
-      const flags = findComponents(testInstance, "Flag");
+      const flags = findComponents(testRenderer, "Flag");
 
       expect(flags).toEqual([]);
     }
@@ -110,14 +110,14 @@ const negativeTests = [
   {
     name: "an article with no label",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMagazineComment
           {...sharedProps}
           article={articleFixture({ ...testFixture, label: null })}
         />
       );
 
-      const label = findComponents(testInstance, "ArticleLabel");
+      const label = findComponents(testRenderer, "ArticleLabel");
 
       expect(label).toEqual([]);
     }
@@ -125,7 +125,7 @@ const negativeTests = [
   {
     name: "an article with no standfirst",
     test() {
-      const testInstance = TestRenderer.create(
+      const testRenderer = TestRenderer.create(
         <ArticleMagazineComment
           {...sharedProps}
           article={articleFixture({
@@ -135,7 +135,7 @@ const negativeTests = [
         />
       );
 
-      const textNodes = testInstance.root.findAll(node => {
+      const textNodes = testRenderer.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&

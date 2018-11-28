@@ -11,7 +11,7 @@ import {
   ArticleConfigurator,
   makeArticleConfiguration
 } from "./showcase-helper";
-import Article from "./src/article";
+import Article, { templates } from "./src/article";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
   slug && shortIdentifier
@@ -89,16 +89,16 @@ const renderArticle = ({
   </ArticleProvider>
 );
 
-const templates = {
-  maincomment: "maincomment",
-  mainstandard: "mainstandard"
-};
+const templateNames = Object.keys(templates).reduce(
+  (t, key) => ({ ...t, [key]: key }),
+  {}
+);
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 const selectTemplate = select =>
-  select("Template", templates, templates.mainstandard);
+  select("Template", templateNames, templateNames.mainstandard);
 
 export default {
   children: [

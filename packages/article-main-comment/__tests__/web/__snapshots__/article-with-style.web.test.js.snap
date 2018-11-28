@@ -1,3 +1,676 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`full article with style 1`] = `<ArticleSkeleton />`;
+exports[`full article with style 1`] = `
+.c13 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c16 {
+  padding-left: 10px;
+}
+
+.c12 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c17 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c15 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c14 {
+  display: block;
+}
+
+.c19 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 {
+  display: none;
+}
+
+.c11 {
+  display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c3 {
+  border-radius: 50%;
+  height: 100px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.c10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .c13 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c12 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c17 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    height: 118px;
+    width: 118px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    margin: 0 10px;
+    width: 1px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    margin-bottom: 20px;
+  }
+}
+
+<style>
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S5 {
+  font-weight: inherit;
+  line-height: 35px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S6 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S7 {
+  font-weight: inherit;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S8 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S9 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  padding-top: 35px;
+}
+
+.S10 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.IS1 {
+  margin-bottom: 0;
+}
+
+.IS2 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.IS3 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS4 {
+  position: relative;
+}
+
+.IS5 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS6 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS7 {
+  padding-bottom: 56.25%;
+}
+
+.IS8 {
+  margin: 0;
+}
+
+.IS9 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+}
+
+.IS10 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+}
+</style>
+
+<article>
+  <div
+    className="c0 S1"
+  >
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="c2 S9"
+    >
+      <div
+        className="c3 S2"
+      >
+        <Image />
+      </div>
+      <div
+        className="S4"
+      >
+        <div
+          className="S3"
+        >
+          SOME LABEL
+        </div>
+      </div>
+      <h1
+        className="c4 S5"
+      >
+        Some Headline
+      </h1>
+      <div
+        className="c5 S1"
+      >
+        <div
+          className="S6"
+        >
+          <div
+            className="S1"
+          >
+            <NewArticleFlag />
+          </div>
+        </div>
+      </div>
+      <h2
+        className="c6 S7"
+      >
+        Some Standfirst
+      </h2>
+      <div
+        className="c7 S1"
+      >
+        <div
+          className="c8 S1"
+        >
+          <ArticleBylineWithLinks />
+        </div>
+        <div
+          className="c9 S1"
+        />
+        <div
+          className="c8 S1"
+        >
+          <div
+            className="c10 S8"
+          >
+            <DatePublication />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c11 S1"
+    >
+      <div>
+        <div
+          className="c12 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <Link>
+        Some Link
+      </Link>
+      <p
+        className="c13 IS2"
+      >
+        Some content
+      </p>
+      <div
+        className="c14 S1"
+      >
+        <div
+          className="c15 S1"
+        >
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </div>
+      </div>
+      <div
+        className="c12 S1"
+      >
+        <figure
+          className="IS8"
+        >
+          <div
+            className="IS7 S10"
+          >
+            <div
+              className="IS6 S1"
+            >
+              <div
+                className="IS5"
+              >
+                <div
+                  className="IS4"
+                >
+                  <video
+                    className="video-js IS3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c16 S1"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <Ad
+        className="IS9"
+      />
+      <div>
+        <div
+          className="c17 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div
+        className="c19 S1"
+      >
+        <nav>
+          <ArticleTopics
+            className="IS10"
+          />
+        </nav>
+      </div>
+      <aside>
+        <RelatedArticles />
+      </aside>
+    </div>
+    <Ad />
+    <Ad />
+    <Ad />
+  </div>
+</article>
+`;

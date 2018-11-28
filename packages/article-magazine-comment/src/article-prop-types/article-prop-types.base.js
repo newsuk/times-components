@@ -12,7 +12,7 @@ const articlePagePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
-  receiveChildList: PropTypes.func
+  receiveChildList: PropTypes.func.isRequired
 };
 
 const articlePageDefaultProps = {

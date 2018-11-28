@@ -31,7 +31,10 @@ const HeaderFlags = ({ flags }) => {
 
 HeaderFlags.propTypes = {
   flags: PropTypes.arrayOf(PropTypes.oneOf(Array.from(flagsMapping.keys())))
-    .isRequired
+};
+
+HeaderFlags.defaultProps = {
+  flags: []
 };
 
 export default HeaderFlags;
