@@ -1,4 +1,4 @@
-import { getAdSizes } from "./generate-config";
+import { getSlotConfig } from "./generate-config";
 
 const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   adserverTargeting: [
@@ -35,11 +35,11 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   ]
 });
 
-const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
-  const sizes = getAdSizes(pos, width);
-  const bids = [];
+const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
+  const { sizes } = getSlotConfig(slot, width);
+  let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
-    bids.concat(
+    bids = bids.concat(
       sizes.map(size => ({
         bidder: "ix",
         params: {
@@ -73,8 +73,7 @@ const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
   }
   return {
     bids,
-    // NOTE: for the prebidding the position of the ad in the page is called code
-    code: pos,
+    code: slot,
     mediaTypes: {
       banner: {
         sizes
@@ -97,7 +96,6 @@ const prebidConfig = {
       cmpApi: "iab",
       timeout: 3000
     },
-    debug: false,
     disableAjaxTimeout: false,
     enableSendAllBids: true,
     maxRequestsPerOrigin: 4,

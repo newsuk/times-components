@@ -10,7 +10,7 @@ module.exports = {
         appnexus: {
           placementId: "5823281"
         },
-        indexExchange: {
+        ix: {
           siteId: "1234"
         },
         rubicon: {

@@ -1,7 +1,5 @@
 import sizes from "./sizes";
 
-// Given all the valid ad sizes returns the maximum height possible
-// for the element
 const getMaxSizes = adSizes => {
   if (!adSizes) {
     return { height: 0, width: 0 };
@@ -19,6 +17,7 @@ const getMaxSizes = adSizes => {
 const getSizeMaps = slotName => {
   switch (slotName) {
     case "header":
+    case "ad-header":
       return sizes.header;
     case "pixel":
     case "pixelskin":
@@ -32,7 +31,6 @@ const getSizeMaps = slotName => {
   }
 };
 
-// Returns the valid ad sizes given the ad slotName and window width
 const getAdSizes = (sizeMap, width) => {
   for (let i = sizeMap.length - 1; i >= 0; i -= 1) {
     if (width >= sizeMap[i].width) {
