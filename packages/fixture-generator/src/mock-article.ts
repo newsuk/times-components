@@ -52,7 +52,7 @@ class MockArticle {
     };
   }
 
-  setRelatedArticles(count = 3) {
+  setRelatedArticles(count: number) {
     this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
   }
