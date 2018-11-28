@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React, { Fragment } from "react";
-import invert from "lodash.invert";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context from "@times-components/context";
+import Context, { defaults } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
-import { colours, scales } from "@times-components/styleguide";
+import { sections } from "@times-components/storybook";
+import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import {
   ArticleConfigurator,
@@ -32,7 +32,7 @@ const renderArticle = ({
   decorateAction,
   id,
   scale,
-  sectionColour,
+  section,
   template
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
@@ -51,7 +51,13 @@ const renderArticle = ({
       };
       return (
         <Context.Provider
-          value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+          value={{
+            makeArticleUrl,
+            theme: {
+              ...themeFactory(section, template),
+              scale: scale || defaults.theme.scale
+            }
+          }}
         >
           <Article
             adConfig={adConfig}
@@ -96,7 +102,8 @@ const templateNames = Object.keys(templates).reduce(
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
-  select("Section", invert(colours.section), colours.section.default);
+  sections[select("Section", sections, sections.default)];
+
 const selectTemplate = select =>
   select("Template", templateNames, templateNames.mainstandard);
 
@@ -106,7 +113,7 @@ export default {
       component: ({ boolean, select }, { decorateAction }) => {
         const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
         const scale = selectScales(select);
-        const sectionColour = selectSection(select);
+        const section = selectSection(select);
         const template = selectTemplate(select);
         const withFlags = boolean("Flags", true);
         const withHeadline = boolean("Headline", true);
@@ -149,7 +156,7 @@ export default {
                   decorateAction,
                   id,
                   scale,
-                  sectionColour,
+                  section,
                   template
                 })}
               </ArticleConfigurator>
