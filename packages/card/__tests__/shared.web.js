@@ -28,6 +28,7 @@ export default () => {
       replaceTransform({
         CardComponent: justChildren,
         CardContent: justChildren,
+        ForwardRef: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
         TimesImage: propsNoChildren,

@@ -36,8 +36,10 @@ export default () => {
       replaceTransform({
         CardComponent: justChildren,
         CardContent: justChildren,
+        ForwardRef: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
+        StyledComponent: justChildren,
         TimesImage: propsNoChildren,
         ...meltNative
       }),

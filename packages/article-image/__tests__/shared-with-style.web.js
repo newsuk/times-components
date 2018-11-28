@@ -25,9 +25,12 @@ export default () => {
         ArticleImage: justChildren,
         ArticleImageWeb: justChildren,
         Caption: justChildren,
+        ForwardRef: justChildren,
         InlineImage: justChildren,
         InsetCaptionWeb: justChildren,
         "responsive-styles__component": justChildren,
+        responsiveweb__InsetImageStyle: justChildren,
+        StyledComponent: justChildren,
         TimesImage: propsNoChildren,
         ...meltNative
       }),

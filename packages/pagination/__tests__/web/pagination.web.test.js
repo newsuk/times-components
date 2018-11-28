@@ -5,10 +5,12 @@ import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
+  justChildren,
   minimaliseTransform,
   minimalWebTransform,
   rnwTransform,
   stylePrinter,
+  replaceTransform,
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
@@ -25,7 +27,10 @@ addSerializers(
       (value, key) =>
         key === "style" || key === "className" || key === "data-testid"
     ),
-    replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+    replacePropTransform((value, key) => (key === "d" ? hash(value) : value)),
+    replaceTransform({
+      ForwardRef: justChildren
+    })
   )
 );
 

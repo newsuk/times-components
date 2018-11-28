@@ -34,22 +34,20 @@ Array [
     />
   </div>,
   <div>
-    <responsiveweb__InsetCaptionStyle>
-      <div
-        className="c1"
-      >
+    <div
+      className="c1"
+    >
+      <div>
         <div>
           <div>
-            <div>
-              Some caption
-            </div>
-            <div>
-              SOME CREDITS
-            </div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDITS
           </div>
         </div>
       </div>
-    </responsiveweb__InsetCaptionStyle>
+    </div>
   </div>,
 ]
 `;
@@ -160,37 +158,33 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 }
 
 <figure>
-  <responsiveweb__InsetImageStyle>
-    <div
-      className="c0"
-    >
-      <TimesImage
-        aspectRatio={1.5}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        uri="https://img/someImage"
-      />
-    </div>
-  </responsiveweb__InsetImageStyle>
-  <responsiveweb__InsetCaptionContainerStyle>
-    <div
-      className="c2"
-    >
-      <figcaption>
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={1.5}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div
+    className="c2"
+  >
+    <figcaption>
+      <div>
         <div>
           <div>
-            <div>
-              Landscape caption
-            </div>
-            <div>
-              LANDSCAPE CREDITS
-            </div>
+            Landscape caption
+          </div>
+          <div>
+            LANDSCAPE CREDITS
           </div>
         </div>
-      </figcaption>
-    </div>
-  </responsiveweb__InsetCaptionContainerStyle>
+      </div>
+    </figcaption>
+  </div>
 </figure>
 `;
 
@@ -262,36 +256,32 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
 }
 
 <figure>
-  <responsiveweb__InsetImageStyle>
-    <div
-      className="c0"
-    >
-      <TimesImage
-        aspectRatio={0.6666666666666666}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        uri="https://img/someImage"
-      />
-    </div>
-  </responsiveweb__InsetImageStyle>
-  <responsiveweb__InsetCaptionContainerStyle>
-    <div
-      className="c2"
-    >
-      <figcaption>
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div
+    className="c2"
+  >
+    <figcaption>
+      <div>
         <div>
           <div>
-            <div>
-              Portrait caption
-            </div>
-            <div>
-              PORTRAIT CREDITS
-            </div>
+            Portrait caption
+          </div>
+          <div>
+            PORTRAIT CREDITS
           </div>
         </div>
-      </figcaption>
-    </div>
-  </responsiveweb__InsetCaptionContainerStyle>
+      </div>
+    </figcaption>
+  </div>
 </figure>
 `;

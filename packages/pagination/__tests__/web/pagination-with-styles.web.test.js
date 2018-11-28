@@ -5,6 +5,7 @@ import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
+  justChildren,
   hoistStyleTransform,
   minimalWebTransform,
   replaceTransform,
@@ -33,6 +34,7 @@ addSerializers(
   compose(
     stylePrinter,
     replaceTransform({
+      ForwardRef: justChildren,
       svg: null
     }),
     rnwTransform(AppRegistry, styles),

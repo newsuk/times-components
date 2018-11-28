@@ -3,8 +3,10 @@ import {
   addSerializers,
   compose,
   flattenStyleTransform,
+  justChildren,
   minimalNativeTransform,
-  print
+  print,
+  replaceTransform
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-style.base";
 
@@ -17,7 +19,10 @@ export default () => {
     compose(
       print,
       flattenStyleTransform,
-      minimalNativeTransform
+      minimalNativeTransform,
+      replaceTransform({
+        ForwardRef: justChildren
+      })
     )
   );
 

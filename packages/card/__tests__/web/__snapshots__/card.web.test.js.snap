@@ -97,7 +97,42 @@ exports[`6. card with reversed layout and no image 1`] = `
 `;
 
 exports[`7. card with a loading state 1`] = `
-<indexweb__FadeIn>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "indexweb__FadeIn-gNxVQn",
+        "isStatic": true,
+        "lastClassName": "cqvuVo",
+        "rules": Array [
+          "animation:",
+          Keyframes {
+            "id": "sc-keyframes-eMLfYp",
+            "inject": [Function],
+            "name": "eMLfYp",
+            "rules": Array [
+              "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+            ],
+            "toString": [Function],
+          },
+          " 0.3s ease-in-out;",
+        ],
+      },
+      "displayName": "indexweb__FadeIn",
+      "render": [Function],
+      "styledComponentId": "indexweb__FadeIn-gNxVQn",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <div>
     <div>
       <div>
@@ -127,11 +162,46 @@ exports[`7. card with a loading state 1`] = `
       </div>
     </div>
   </div>
-</indexweb__FadeIn>
+</StyledComponent>
 `;
 
 exports[`8. card with a loading state and no image 1`] = `
-<indexweb__FadeIn>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "indexweb__FadeIn-gNxVQn",
+        "isStatic": true,
+        "lastClassName": "cqvuVo",
+        "rules": Array [
+          "animation:",
+          Keyframes {
+            "id": "sc-keyframes-eMLfYp",
+            "inject": [Function],
+            "name": "eMLfYp",
+            "rules": Array [
+              "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+            ],
+            "toString": [Function],
+          },
+          " 0.3s ease-in-out;",
+        ],
+      },
+      "displayName": "indexweb__FadeIn",
+      "render": [Function],
+      "styledComponentId": "indexweb__FadeIn-gNxVQn",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <div>
     <div>
       <div>
@@ -152,11 +222,46 @@ exports[`8. card with a loading state and no image 1`] = `
       </div>
     </div>
   </div>
-</indexweb__FadeIn>
+</StyledComponent>
 `;
 
 exports[`9. card with reversed loading state 1`] = `
-<indexweb__FadeIn>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "indexweb__FadeIn-gNxVQn",
+        "isStatic": true,
+        "lastClassName": "cqvuVo",
+        "rules": Array [
+          "animation:",
+          Keyframes {
+            "id": "sc-keyframes-eMLfYp",
+            "inject": [Function],
+            "name": "eMLfYp",
+            "rules": Array [
+              "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+            ],
+            "toString": [Function],
+          },
+          " 0.3s ease-in-out;",
+        ],
+      },
+      "displayName": "indexweb__FadeIn",
+      "render": [Function],
+      "styledComponentId": "indexweb__FadeIn-gNxVQn",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <div>
     <div>
       <div>
@@ -186,11 +291,46 @@ exports[`9. card with reversed loading state 1`] = `
       </div>
     </div>
   </div>
-</indexweb__FadeIn>
+</StyledComponent>
 `;
 
 exports[`10. card with reversed loading state with no image 1`] = `
-<indexweb__FadeIn>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "indexweb__FadeIn-gNxVQn",
+        "isStatic": true,
+        "lastClassName": "cqvuVo",
+        "rules": Array [
+          "animation:",
+          Keyframes {
+            "id": "sc-keyframes-eMLfYp",
+            "inject": [Function],
+            "name": "eMLfYp",
+            "rules": Array [
+              "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+            ],
+            "toString": [Function],
+          },
+          " 0.3s ease-in-out;",
+        ],
+      },
+      "displayName": "indexweb__FadeIn",
+      "render": [Function],
+      "styledComponentId": "indexweb__FadeIn-gNxVQn",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <div>
     <div>
       <div>
@@ -211,7 +351,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
       </div>
     </div>
   </div>
-</indexweb__FadeIn>
+</StyledComponent>
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `

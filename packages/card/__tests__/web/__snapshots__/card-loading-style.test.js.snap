@@ -234,49 +234,47 @@ exports[`1. card loading state 1`] = `
 }
 </style>
 
-<indexweb__FadeIn>
+<div
+  className="c0 S1"
+>
   <div
-    className="c0 S1"
+    className="S7"
   >
     <div
-      className="S7"
+      className="S2"
     >
-      <div
-        className="S2"
-      >
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          fadeImageIn={false}
-          highResSize={800}
-          lowResSize={60}
-          uri="https://img.io/img"
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        fadeImageIn={false}
+        highResSize={800}
+        lowResSize={60}
+        uri="https://img.io/img"
+      />
+    </div>
+    <div
+      className="S6"
+    >
+      <Component>
+        <Gradient
+          className="IS8"
+          degrees={264}
         />
-      </div>
-      <div
-        className="S6"
-      >
-        <Component>
-          <Gradient
-            className="IS8"
-            degrees={264}
-          />
-          <Gradient
-            className="IS11"
-            degrees={267}
-          />
-          <Gradient
-            className="IS14"
-            degrees={267}
-          />
-          <Gradient
-            className="IS17"
-            degrees={267}
-          />
-        </Component>
-      </div>
+        <Gradient
+          className="IS11"
+          degrees={267}
+        />
+        <Gradient
+          className="IS14"
+          degrees={267}
+        />
+        <Gradient
+          className="IS17"
+          degrees={267}
+        />
+      </Component>
     </div>
   </div>
-</indexweb__FadeIn>
+</div>
 `;
 
 exports[`2. card with reversed loading state 1`] = `
@@ -514,47 +512,45 @@ exports[`2. card with reversed loading state 1`] = `
 }
 </style>
 
-<indexweb__FadeIn>
+<div
+  className="c0 S5"
+>
   <div
-    className="c0 S5"
+    className="S7"
   >
     <div
-      className="S7"
+      className="S4"
     >
-      <div
-        className="S4"
-      >
-        <Component>
-          <Gradient
-            className="IS3"
-            degrees={264}
-          />
-          <Gradient
-            className="IS6"
-            degrees={267}
-          />
-          <Gradient
-            className="IS9"
-            degrees={267}
-          />
-          <Gradient
-            className="IS12"
-            degrees={267}
-          />
-        </Component>
-      </div>
-      <div
-        className="S6"
-      >
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          fadeImageIn={false}
-          highResSize={800}
-          lowResSize={60}
-          uri="https://img.io/img"
+      <Component>
+        <Gradient
+          className="IS3"
+          degrees={264}
         />
-      </div>
+        <Gradient
+          className="IS6"
+          degrees={267}
+        />
+        <Gradient
+          className="IS9"
+          degrees={267}
+        />
+        <Gradient
+          className="IS12"
+          degrees={267}
+        />
+      </Component>
+    </div>
+    <div
+      className="S6"
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        fadeImageIn={false}
+        highResSize={800}
+        lowResSize={60}
+        uri="https://img.io/img"
+      />
     </div>
   </div>
-</indexweb__FadeIn>
+</div>
 `;

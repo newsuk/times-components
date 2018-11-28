@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,7 +18,7 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c7 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -26,19 +26,19 @@ exports[`default styles 1`] = `
   padding-right: 10px;
 }
 
-.c2 .imageContainerClass {
+.c0 .imageContainerClass {
   display: block;
 }
 
-.c2 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c2 .summary125Class {
+.c0 .summary125Class {
   display: block;
 }
 
-.c6 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -54,13 +54,13 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c3 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -70,18 +70,18 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 .imageContainerClass {
+  .c0 .imageContainerClass {
     display: block;
   }
 
-  .c2 .headlineClass {
+  .c0 .headlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 .imageContainerClass {
+  .c0 .imageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -90,7 +90,7 @@ exports[`default styles 1`] = `
     padding-right: 10px;
   }
 
-  .c1 .contentContainerClass {
+  .c0 .contentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -113,7 +113,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -121,13 +121,13 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -291,16 +291,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 c2 S4"
+    className="c0 S4"
   >
     <div
-      className="c3 S4"
+      className="c1 S4"
     >
       <div
-        className="c4 c5 c6 S4"
+        className="c2 S4"
       >
         <div
-          className="c7 S4"
+          className="c3 S4"
         >
           <Link>
             <div

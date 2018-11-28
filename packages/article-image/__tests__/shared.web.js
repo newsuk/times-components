@@ -25,6 +25,7 @@ export default () => {
         ArticleImage: justChildren,
         ArticleImageWeb: justChildren,
         Caption: justChildren,
+        ForwardRef: justChildren,
         TimesImage: propsNoChildren,
         ...meltNative
       }),
