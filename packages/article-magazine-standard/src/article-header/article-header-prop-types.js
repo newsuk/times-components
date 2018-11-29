@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const articleHeaderPropTypes = {
-  authorImage: PropTypes.string.isRequired,
   byline: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   flags: PropTypes.arrayOf(PropTypes.string),
   headline: PropTypes.string.isRequired,

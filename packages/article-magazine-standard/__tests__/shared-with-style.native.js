@@ -27,9 +27,6 @@ export default () => {
   it("full article with style", () => {
     const article = articleFixture({
       ...testFixture,
-      author: {
-        image: "https://image.io"
-      },
       content: [
         {
           attributes: {

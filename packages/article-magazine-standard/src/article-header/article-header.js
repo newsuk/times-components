@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -14,7 +13,6 @@ import {
 import styles from "../styles";
 
 const ArticleHeader = ({
-  authorImage,
   byline,
   flags,
   headline,
@@ -25,7 +23,6 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <View style={styles.container}>
-    <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
     <Label label={label} />
     <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />

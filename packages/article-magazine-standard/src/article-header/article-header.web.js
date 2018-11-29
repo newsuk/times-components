@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -12,14 +11,12 @@ import {
 import styles from "../styles";
 
 import {
-  AuthorImageContainer,
   FlagsContainer,
   HeaderContainer,
   HeadlineContainer
 } from "../styles/responsive";
 
 const ArticleHeader = ({
-  authorImage,
   byline,
   flags,
   headline,
@@ -29,9 +26,6 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <HeaderContainer style={styles.container}>
-    <AuthorImageContainer style={styles.authorImage}>
-      <Image aspectRatio={1} uri={authorImage} />
-    </AuthorImageContainer>
     <Label label={label} />
     <HeadlineContainer
       accessibilityRole="heading"

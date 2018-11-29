@@ -18,10 +18,6 @@ exports[`1. a full article 1`] = `
     </g>
   </svg>
   ADVERTISEMENT
-  <img
-    alt=""
-    src="https://image.io"
-  />
   SOME LABEL
   <h1
     aria-level="1"

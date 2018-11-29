@@ -15,12 +15,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
       <h1
         aria-level="1"
         role="heading"
@@ -181,12 +175,6 @@ exports[`4. an article with ads 1`] = `
   </div>
   <div>
     <div>
-      <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
       <h1
         aria-level="1"
         role="heading"

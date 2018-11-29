@@ -15,17 +15,6 @@ exports[`full article with style 1`] = `
           }
         }
       >
-        <Image
-          style={
-            Object {
-              "borderRadius": 50,
-              "height": 100,
-              "marginBottom": 25,
-              "overflow": "hidden",
-              "width": 100,
-            }
-          }
-        />
         <View
           style={
             Object {

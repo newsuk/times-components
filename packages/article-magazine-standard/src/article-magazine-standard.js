@@ -20,7 +20,6 @@ class ArticleMagazineStandard extends Component {
   renderHeader({ width }) {
     const { article, onAuthorPress, onVideoPress } = this.props;
     const {
-      author,
       byline,
       flags,
       headline,
@@ -35,7 +34,6 @@ class ArticleMagazineStandard extends Component {
     return (
       <Fragment>
         <ArticleHeader
-          authorImage={author.image}
           byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}

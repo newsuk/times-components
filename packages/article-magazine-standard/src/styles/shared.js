@@ -11,9 +11,6 @@ const sharedStyles = {
     marginBottom: spacing(2),
     textAlign: "center"
   },
-  authorImage: {
-    marginBottom: spacing(5)
-  },
   container: {
     alignItems: "center",
     marginBottom: spacing(5),

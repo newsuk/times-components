@@ -8,18 +8,6 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const AuthorImageContainer = styled(View)`
-  border-radius: 50%;
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    height: 118px;
-    width: 118px;
-  }
-`;
-
 export const DatePublicationContainer = styled(Text)`
   flex-direction: row;
   flex-wrap: wrap;
