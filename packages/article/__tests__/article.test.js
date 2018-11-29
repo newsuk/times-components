@@ -23,6 +23,15 @@ const requiredProps = {
 };
 
 describe("Article", () => {
+  it("renders with ArticleMainStandard as the default template if article is null", () => {
+    const testRenderer = TestRenderer.create(
+      <Article {...requiredProps} article={null} />
+    );
+    const testInstance = testRenderer.root;
+
+    expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
+  });
+
   it("renders with ArticleMainStandard as the default template if no template is provided", () => {
     const testRenderer = TestRenderer.create(
       <Article article={{}} {...requiredProps} />

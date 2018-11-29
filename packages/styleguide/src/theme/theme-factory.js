@@ -10,10 +10,12 @@ const sectionColourPicker = (
       ...secondarySectionColours
     },
     magazinecomment: {
-      ...sectionColours
+      ...sectionColours,
+      ...secondarySectionColours
     },
     magazinestandard: {
-      ...sectionColours
+      ...sectionColours,
+      ...secondarySectionColours
     },
     maincomment: {
       ...sectionColours

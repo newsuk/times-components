@@ -24,7 +24,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <View>
         <View>
           <ArticleLabel
-            color="#333333"
+            color="#1D1D1B"
             title="Some Label"
           />
         </View>
@@ -66,7 +66,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
                   },
                 ]
               }
-              color="#333333"
+              color="#1D1D1B"
             />
           </Text>
         </View>
@@ -116,8 +116,8 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <View>
         <PullQuote
           caption="AName"
-          captionColour="#333333"
-          quoteColour="#333333"
+          captionColour="#1D1D1B"
+          quoteColour="#1D1D1B"
           text="a text"
           twitter="@AName"
         >
@@ -248,7 +248,7 @@ exports[`2. an article with a video as the lead asset 1`] = `
       <View>
         <View>
           <VideoLabel
-            color="#333333"
+            color="#1D1D1B"
             title={null}
           />
         </View>
