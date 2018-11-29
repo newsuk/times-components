@@ -76,7 +76,7 @@ const makeArticle = configuration => article => {
   if (configuration & LEAD_ASSET) {
     configuredArticle.leadAsset = {
       ...configuredArticle.leadAsset,
-      caption: null,
+      caption: "A caption",
       credits: "Illustration by Jeremy"
     };
   } else {
