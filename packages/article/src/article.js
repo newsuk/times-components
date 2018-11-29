@@ -8,7 +8,7 @@ export const templates = {
   magazinecomment: ArticleMagazineComment,
   magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard,
+  mainstandard: ArticleMainStandard
 };
 
 const Article = props => {
