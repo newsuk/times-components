@@ -1,12 +1,14 @@
 import React from "react";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
+import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 
 export const templates = {
   magazinecomment: ArticleMagazineComment,
+  magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard
+  mainstandard: ArticleMainStandard,
 };
 
 const Article = props => {
