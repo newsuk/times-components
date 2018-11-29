@@ -265,7 +265,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  color: #333333;
+  color: #1D1D1B;
 }
 
 .IS3 {

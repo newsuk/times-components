@@ -33,7 +33,7 @@ exports[`1. one lead related article 1`] = `
               <View>
                 <View>
                   <ArticleLabel
-                    color="#333333"
+                    color="#1D1D1B"
                     title="test label"
                   />
                 </View>

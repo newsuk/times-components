@@ -199,7 +199,6 @@ exports[`default styles 1`] = `
 .S3 {
   border-top-width: 0px;
   border-bottom-width: 0px;
-  color: rgba(51,51,51,1.00);
   display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
@@ -276,7 +275,6 @@ exports[`default styles 1`] = `
 .S9 {
   border-top-width: 0px;
   border-bottom-width: 0px;
-  color: rgba(51,51,51,1.00);
   display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -297,6 +295,14 @@ exports[`default styles 1`] = `
   line-height: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
 }
 </style>
 
@@ -336,7 +342,7 @@ exports[`default styles 1`] = `
                     className="S4"
                   >
                     <div
-                      className="S3"
+                      className="S3 IS1"
                     >
                       TEST LABEL
                     </div>
@@ -372,7 +378,7 @@ exports[`default styles 1`] = `
                     className="S10"
                   >
                     <span
-                      className="S9"
+                      className="S9 IS2"
                     >
                       Deborah Haynes
                     </span>

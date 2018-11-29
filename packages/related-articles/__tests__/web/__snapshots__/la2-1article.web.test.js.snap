@@ -34,7 +34,7 @@ exports[`1. one lead related article 1`] = `
                 <div>
                   <div>
                     <ArticleLabel
-                      color="#333333"
+                      color="#1D1D1B"
                       title="test label"
                     />
                   </div>

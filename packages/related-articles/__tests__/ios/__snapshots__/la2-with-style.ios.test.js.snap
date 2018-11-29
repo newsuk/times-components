@@ -63,7 +63,7 @@ exports[`default styles 1`] = `
                   <Text
                     style={
                       Object {
-                        "color": "#333333",
+                        "color": "#1D1D1B",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 12,
                         "fontWeight": "400",
@@ -138,7 +138,7 @@ exports[`default styles 1`] = `
                   <Text
                     style={
                       Object {
-                        "color": "#333333",
+                        "color": "#1D1D1B",
                         "flexDirection": "row",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,

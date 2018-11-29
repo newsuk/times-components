@@ -58,7 +58,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
                   },
                 ]
               }
-              color="#333333"
+              color="#1D1D1B"
             />
           </span>
         </div>
@@ -146,8 +146,8 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         <div>
           <PullQuote
             caption="AName"
-            captionColour="#333333"
-            quoteColour="#333333"
+            captionColour="#1D1D1B"
+            quoteColour="#1D1D1B"
             text="a text"
             twitter="@AName"
           >
@@ -281,7 +281,7 @@ exports[`2. an article with a video as the lead asset 1`] = `
       <div>
         <div>
           <VideoLabel
-            color="#333333"
+            color="#1D1D1B"
             title={null}
           />
         </div>

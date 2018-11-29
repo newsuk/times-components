@@ -68,7 +68,7 @@ exports[`1. article list 1`] = `
                       "name": "paragraph",
                     },
                   ],
-                  "color": "#333333",
+                  "color": "#1D1D1B",
                 }
               }
               datePublicationProps={
@@ -79,7 +79,7 @@ exports[`1. article list 1`] = `
               }
               labelProps={
                 Object {
-                  "color": "#333333",
+                  "color": "#1D1D1B",
                   "isVideo": false,
                   "title": "Label 2",
                 }
