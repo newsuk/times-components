@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "yarn getSchema && yarn gentypes && tsc",
+    "transpile": "yarn getSchema && yarn gentypes && tsc",
     "gentypes": "gql-gen --schema ./schema.json --template graphql-codegen-typescript-template --out ./src/types.ts",
     "getSchema": "GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql getSchema",
     "test": "jest ./src/__tests__/*",
