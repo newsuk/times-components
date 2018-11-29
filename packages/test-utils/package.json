@@ -41,7 +41,7 @@
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/webpack-configurator": "2.0.14",
-    
+    "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.4.2",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",

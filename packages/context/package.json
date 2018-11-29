@@ -44,7 +44,7 @@
     "@times-components/eslint-config-thetimes": "0.8.8",
     "@times-components/jest-configurator": "2.1.17",
     "@times-components/webpack-configurator": "2.0.14",
-    
+    "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.4.2",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",

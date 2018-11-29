@@ -33,7 +33,7 @@
     "@thetimes/jest-lint": "*",
     "@times-components/jest-configurator": "2.1.17",
     "@times-components/jest-serializer": "3.1.10",
-    
+    "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.4.2",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
@@ -52,7 +52,6 @@
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.7",
     "apollo-link-http": "1.5.3",
-    
     "babel-runtime": "6.26.0",
     "prop-types": "15.6.2",
     "react": "16.5.2",

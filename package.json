@@ -101,6 +101,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "7.1.6",
     "@babel/runtime": "7.1.5",
@@ -113,6 +114,7 @@
     "@storybook/react-native": "^4.0.0-alpha.25",
     "@times-components/depend": "*",
     "@times-components/fructose": "3.11.4",
+    "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.4.2",
     "babel-loader": "8.0.4",
     "babel-plugin-module-resolver": "^3.1.1",
@@ -131,7 +133,7 @@
     "fs-extra": "7.0.0",
     "global": "4.3.2",
     "handlebars": "4.0.10",
-    "haul": "1.0.0-rc.6",
+    "haul": "1.0.0-rc.10",
     "jest": "23.6.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
@@ -157,7 +159,6 @@
   },
   "dependencies": {
     "aws-sdk": "2.238.1",
-    "expo": "30.0.0",
     "react-art": "16.5.2",
     "react-native": "0.55.4",
     "react-native-showcase-loader": "1.1.0"
