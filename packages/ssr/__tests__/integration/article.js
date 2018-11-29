@@ -8,7 +8,7 @@ describe("Article", () => {
       .task("startMockServerWith", {
         Article: new MockArticle()
           .sundayTimes()
-          .withRelatedArticles(relatedArticleCount)
+          .setRelatedArticles(relatedArticleCount)
           .get()
       })
       .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")

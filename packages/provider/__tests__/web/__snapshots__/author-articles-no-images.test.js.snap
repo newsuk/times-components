@@ -15,7 +15,6 @@ Object {
         "label": "Test Label 1",
         "leadAsset": Object {
           "__typename": "Image",
-          Symbol(id): "$Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f.leadAsset",
         },
         "longSummary": Array [],
         "publicationName": "TIMES",
@@ -25,11 +24,8 @@ Object {
         "shortSummary": Array [],
         "slug": "this-is-slug-1",
         "url": "https://url.io",
-        Symbol(id): "Article:d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
       },
     ],
-    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",
   },
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"})",
 }
 `;
