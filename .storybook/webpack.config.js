@@ -16,8 +16,6 @@ module.exports = {
     mainFields: ["devModule", "dev", "module", "main"],
   },
 
-  mode: 'production',
-
   module: {
     rules: [
       {
