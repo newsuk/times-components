@@ -6,55 +6,18 @@ describe("get markup", () => {
   });
 
   it("should be able to generate paragraph of markup", () => {
-    expect(new MockMarkup().setParagraph().get()).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-]
-`);
+    const mockMarkup = new MockMarkup().setParagraph().get();
+    expect(mockMarkup).toMatchObject([ { name: "paragraph" } ]); 
   });
 
   it("should be able to generate markup with ads", () => {
-    expect(new MockMarkup().setAd().get()).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "attributes": Object {},
-    "children": Array [],
-    "name": "ad",
-  },
-]
-`);
+    const mockMarkup = new MockMarkup().setAd().get();
+    expect(mockMarkup).toMatchObject([ { name: "ad" } ]); 
   });
 
   it("should be able to generate inline of markup", () => {
-    expect(new MockMarkup().setInline().get()).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "inline markup",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "inline",
-  },
-]
-`);
+    const mockMarkup = new MockMarkup().setInline().get();
+    expect(mockMarkup).toMatchObject([ { name: "inline" } ]); 
   });
 
   it("should generate large markup shapes", () => {
@@ -63,79 +26,13 @@ Array [
         .setParagraphs(5)
         .setAd()
         .get()
-    ).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-  Object {
-    "attributes": Object {},
-    "children": Array [
-      Object {
-        "attributes": Object {
-          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
-        "children": Array [],
-        "name": "text",
-      },
-    ],
-    "name": "paragraph",
-  },
-  Object {
-    "attributes": Object {},
-    "children": Array [],
-    "name": "ad",
-  },
-]
-`);
+    ).toMatchObject([
+      { name: "paragraph" },
+      { name: "paragraph" },
+      { name: "paragraph" },
+      { name: "paragraph" },
+      { name: "paragraph" },
+      { name: "ad" }
+    ])
   });
 });
