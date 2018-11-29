@@ -6,25 +6,25 @@ describe("get markup", () => {
   });
 
   it("should be able to generate paragraph of markup", () => {
-    const mockMarkup = new MockMarkup().setParagraph().get();
+    const mockMarkup = new MockMarkup().addParagraphs().get();
     expect(mockMarkup).toMatchObject([ { name: "paragraph" } ]); 
   });
 
   it("should be able to generate markup with ads", () => {
-    const mockMarkup = new MockMarkup().setAd().get();
+    const mockMarkup = new MockMarkup().addAds().get();
     expect(mockMarkup).toMatchObject([ { name: "ad" } ]); 
   });
 
   it("should be able to generate inline of markup", () => {
-    const mockMarkup = new MockMarkup().setInline().get();
+    const mockMarkup = new MockMarkup().addInlines().get();
     expect(mockMarkup).toMatchObject([ { name: "inline" } ]); 
   });
 
   it("should generate large markup shapes", () => {
     expect(
       new MockMarkup()
-        .setParagraphs(5)
-        .setAd()
+        .addParagraphs(5)
+        .addAds()
         .get()
     ).toMatchObject([
       { name: "paragraph" },
