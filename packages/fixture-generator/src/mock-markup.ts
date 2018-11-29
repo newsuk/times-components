@@ -1,6 +1,6 @@
 import { Markup } from "./types";
 
-const markupTypes : Markup = {
+const markupTypes: Markup = {
   paragraph: {
     name: "paragraph",
     attributes: {},
@@ -35,10 +35,16 @@ const markupTypes : Markup = {
   }
 };
 
-const generateMarkup = (array: Array<Markup>, markupType: Markup, iterations: number) => {
-    new Array(iterations).fill(0).forEach(() => array.push(markupTypes[markupType]))
-    return array;
-}
+const generateMarkup = (
+  array: Array<Markup>,
+  markupType: Markup,
+  iterations: number
+) => {
+  new Array(iterations)
+    .fill(0)
+    .forEach(() => array.push(markupTypes[markupType]));
+  return array;
+};
 class MockMarkup {
   markup: Markup;
 
@@ -47,16 +53,20 @@ class MockMarkup {
   }
 
   addParagraphs(length: number = 1) {
-    this.markup = generateMarkup(this.markup, markupTypes.paragraph.name, length)
+    this.markup = generateMarkup(
+      this.markup,
+      markupTypes.paragraph.name,
+      length
+    );
     return this;
   }
 
   addAds(length: number = 1) {
-    this.markup = generateMarkup(this.markup, markupTypes.ad.name, length)
+    this.markup = generateMarkup(this.markup, markupTypes.ad.name, length);
     return this;
   }
   addInlines(length: number = 1) {
-    this.markup = generateMarkup(this.markup,  markupTypes.inline.name, length)
+    this.markup = generateMarkup(this.markup, markupTypes.inline.name, length);
     return this;
   }
 
