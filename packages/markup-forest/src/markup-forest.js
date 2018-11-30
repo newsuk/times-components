@@ -11,7 +11,7 @@ const mutateAST = (firstTextChild, children) => {
     name,
     attributes: { value }
   } = firstTextChild;
-  let child = children;
+  // let child = children;
   if (name === "text") {
     const dropCapElement = {
       attributes: {
@@ -27,15 +27,16 @@ const mutateAST = (firstTextChild, children) => {
       children: [],
       name: "text"
     };
-    child = [dropCapElement, newTextElement, ...children.slice(1)];
+    children = [dropCapElement, newTextElement, ...children.slice(1)];
   }
-  return child;
+  console.log('mutated child is', children);
+  return children;
 };
 
 export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
-  const { name, attributes, children } = tree;
-  let newChildren = children;
+  let { name, attributes, children } = tree;
 
+  console.log('markup index is>>', indx, 'template is>>>', template);
   if (
     template &&
     templateWithDropCaps.includes(template) &&
@@ -43,20 +44,26 @@ export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
     name === "paragraph" &&
     children.length > 0
   ) {
+    console.log('ready to be mutated');
     // mutate AST
-    newChildren = mutateAST(children[0], children);
+    children = mutateAST(children[0], children);
+
+    console.log('children', children);
   }
 
   const renderer = renderers[name];
 
   if (!renderer) return null;
 
+  console.log('before tree', tree);
+  tree.children = children;
+  console.log('agter tree', tree);
   const initialResult = renderer(key, attributes, [], indx, tree);
   const { element, shouldRenderChildren = true } = initialResult;
 
   if (!shouldRenderChildren) return element;
 
-  const renderedChildren = newChildren.map((child, index) =>
+  const renderedChildren = children.map((child, index) =>
     renderTree(child, renderers, `${key}.${index}`, index)
   );
   const result = renderer(key, attributes, renderedChildren, indx, tree);

@@ -18,13 +18,16 @@ import styleFactory from "../styles/article-body";
 
 const styles = styleFactory();
 
+const template = 'maincomment';
+
 const ArticleRow = ({
   content: { data, index },
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
 }) =>
-  renderTree(data, {
+  { console.log('indx in body row is >>>>',index);
+    return renderTree(data, {
     ...coreRenderers,
     ad(key, attributes) {
       return {
@@ -90,9 +93,10 @@ const ArticleRow = ({
       };
     },
     paragraph(key, attributes, children, indx, node) {
+       console.log('in para index is>>>', node);
       return {
         element: (
-          <ArticleParagraph ast={node} key={key} uid={index}>
+          <ArticleParagraph ast={node} key={key} uid={indx}>
             {children}
           </ArticleParagraph>
         )
@@ -160,7 +164,7 @@ const ArticleRow = ({
         )
       };
     }
-  });
+  }, index, index, template)};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({

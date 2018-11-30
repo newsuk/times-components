@@ -202,13 +202,14 @@ const decorateAd = ({ contextUrl, section }) => element =>
     ? { ...element, attributes: { ...element.attributes, contextUrl, section } }
     : element;
 
-const template = "maincomment";
+// const template = "maincomment";
 const ArticleBody = ({
   content: bodyContent,
   contextUrl,
   observed,
   registerNode,
-  section
+  section,
+  template
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),

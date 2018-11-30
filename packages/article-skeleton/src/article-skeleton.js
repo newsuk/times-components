@@ -35,6 +35,7 @@ const renderRow = analyticsStream => (
   // eslint-disable-next-line default-case
   switch (rowData.type) {
     case "articleBodyRow": {
+      // console.log('index from skeleton is >>>>>', rowData.index);
       return (
         <ArticleRow
           content={rowData}

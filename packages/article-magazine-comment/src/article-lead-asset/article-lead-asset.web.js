@@ -38,21 +38,7 @@ const LeadAssetComponent = ({
   );
 
   return (
-    <LeadAsset style={styles.leadAssetContainer}>
-      <figure style={{ margin: 0 }}>
-        <AspectRatioContainer aspectRatio={aspectRatio}>
-          {leadAssetView}
-        </AspectRatioContainer>
-        <LeadAssetCaptionContainer>
-          <figcaption>
-            <CentredCaption
-              credits={leadAsset.credits}
-              text={leadAsset.caption}
-            />
-          </figcaption>
-        </LeadAssetCaptionContainer>
-      </figure>
-    </LeadAsset>
+null
   );
 };
 

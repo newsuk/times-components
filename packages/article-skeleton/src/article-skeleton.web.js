@@ -42,12 +42,12 @@ class ArticleSkeleton extends Component {
     const {
       adConfig,
       analyticsStream,
-      data: { content, section, url, topics, relatedArticleSlice },
+      data: { content, section, url, topics, relatedArticleSlice, template },
       Header,
       receiveChildList
     } = this.props;
     const { articleWidth } = this.state;
-
+    console.log('template>>>', template);
     // eslint-disable-next-line react/prop-types
     const displayRelatedArticles = ({ isVisible }) =>
       relatedArticleSlice ? (
@@ -95,6 +95,7 @@ class ArticleSkeleton extends Component {
                       observed={observed}
                       registerNode={registerNode}
                       section={section}
+                      template='maincomment'
                     />
 
                     <ArticleTopics topics={topics} />
