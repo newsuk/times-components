@@ -25,14 +25,6 @@ const sharedStyles = {
     }),
     marginBottom: spacing(1)
   },
-  opinionByline: {
-    color: colours.section.comment,
-    ...fontFactory({
-      font: "headline",
-      fontSize: "smallHeadline"
-    }),
-    fontWeight: "400"
-  },
   text: {
     color: colours.functional.secondary,
     flexWrap: "wrap",

@@ -5,7 +5,7 @@ exports[`1. with a single author 1`] = `
   <Text
     style={
       Object {
-        "color": "#006699",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -18,49 +18,12 @@ exports[`1. with a single author 1`] = `
 </View>
 `;
 
-exports[`2. with a given section colour 1`] = `
+exports[`2. with a very long byline 1`] = `
 <View>
   <Text
     style={
       Object {
-        "color": "blue",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 19,
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>
-</View>
-`;
-
-exports[`3. with given styles 1`] = `
-<View>
-  <Text
-    style={
-      Object {
-        "color": "red",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 19,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>
-</View>
-`;
-
-exports[`4. with a a very long byline 1`] = `
-<View>
-  <Text
-    style={
-      Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -73,7 +36,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -86,7 +49,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -99,7 +62,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -112,7 +75,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -125,7 +88,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#333333",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,

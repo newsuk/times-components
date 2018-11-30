@@ -4,11 +4,6 @@ exports[`1. with a single author 1`] = `
 <style>
 .S1 {
   color: rgba(0,102,153,1.00);
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 15px;
@@ -36,9 +31,17 @@ exports[`1. with a single author 1`] = `
 </div>
 `;
 
-exports[`2. with a given section colour 1`] = `
+exports[`2. with a very long byline 1`] = `
 <style>
 .S1 {
+  color: rgba(0,102,153,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.S2 {
+  color: rgba(105,105,105,1.00);
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -49,153 +52,51 @@ exports[`2. with a given section colour 1`] = `
   line-height: 15px;
 }
 
-.S2 {
+.S3 {
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-
-.IS1 {
-  color: rgba(0,0,255,1.00);
-}
 </style>
 
 <div
-  className="S2"
+  className="S3"
 >
   <a
-    className="IS1 S1"
-    href="/profile/alexandra-frean"
-    role="link"
-  >
-    Alexandra Frean
-  </a>
-</div>
-`;
-
-exports[`3. with given styles 1`] = `
-<style>
-.S1 {
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-}
-
-.S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-.IS1 {
-  color: rgba(255,0,0,1.00);
-}
-</style>
-
-<div
-  className="S2"
->
-  <a
-    className="IS1 S1"
-    href="/profile/alexandra-frean"
-    role="link"
-  >
-    Alexandra Frean
-  </a>
-</div>
-`;
-
-exports[`4. with a a very long byline 1`] = `
-<style>
-.S1 {
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-}
-
-.S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-.IS1 {
-  color: rgba(0,0,255,1.00);
-}
-
-.IS2 {
-  color: rgba(0,0,255,1.00);
-}
-
-.IS3 {
-  color: rgba(0,0,255,1.00);
-}
-
-.IS4 {
-  color: rgba(0,0,255,1.00);
-}
-
-.IS5 {
-  color: rgba(0,0,255,1.00);
-}
-
-.IS6 {
-  color: rgba(0,0,255,1.00);
-}
-</style>
-
-<div
-  className="S2"
->
-  <a
-    className="IS1 S1"
+    className="S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="IS2 S1"
+    className="S2"
   >
     , Environment Editor | 
   </div>
   <a
-    className="IS3 S1"
+    className="S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="IS4 S1"
+    className="S2"
   >
     , Environment Editor | 
   </div>
   <a
-    className="IS5 S1"
+    className="S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="IS6 S1"
+    className="S2"
   >
     , Environment Editor
   </div>

@@ -1,20 +1,22 @@
 import React from "react";
 import { Text } from "react-native";
-import { getBylineStyles, renderByline } from "./utils";
+import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
+import styles from "./styles";
 
-const renderAuthorComponent = (children, bylineStyles, key) => ({
+const renderAuthorComponent = (children, key) => ({
   element: (
-    <Text key={key} style={bylineStyles}>
+    <Text key={key} style={styles.nonLinkText}>
       {children}
     </Text>
   )
 });
 
-const ArticleByline = ({ ast, style, color }) => {
-  const bylineStyles = getBylineStyles(style, color);
-  return renderByline(renderAuthorComponent, ast, bylineStyles);
+const ArticleByline = ({ ast, isOpinionByline }) => {
+  const style = isOpinionByline ? styles.opinion : styles.nonLinkText;
+  return renderByline(renderAuthorComponent, ast, style);
 };
+
 ArticleByline.displayName = "ArticleByline";
 
 ArticleByline.propTypes = propTypes;

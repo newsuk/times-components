@@ -31,7 +31,7 @@ exports[`5. article label uses default section colour 1`] = `
 
 exports[`6. article label renders null if there is no text 1`] = `null`;
 
-exports[`7. article meta uses default section colour 1`] = `
+exports[`7. article meta 1`] = `
 <div>
   <div>
     <ArticleBylineWithLinks
@@ -67,7 +67,6 @@ exports[`7. article meta uses default section colour 1`] = `
           },
         ]
       }
-      color="#1D1D1B"
     />
   </div>
   <div />

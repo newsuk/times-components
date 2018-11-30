@@ -44,7 +44,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   },
                 ]
               }
-              color="#1D1D1B"
             />
           </View>
           <View>
@@ -187,7 +186,6 @@ exports[`4. an article with ads 1`] = `
                   },
                 ]
               }
-              color="#1D1D1B"
             />
           </View>
           <View>
