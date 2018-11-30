@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -12,73 +12,83 @@ import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
 import styles from "./styles";
 
-const ArticleListItem = props => {
-  const {
-    article,
-    highResSize,
-    imageRatio,
-    isLoading,
-    onPress,
-    showImage
-  } = props;
+class ArticleListItem extends Component {
+  shouldComponentUpdate(nextProps) {
+    const { article } = this.props;
+    const { article: nextArticle } = nextProps;
+    return (
+      !article || !nextArticle || nextArticle.elementId !== article.elementId
+    );
+  }
 
-  const {
-    byline,
-    headline,
-    hasVideo,
-    label,
-    publicationName,
-    publishedTime,
-    section,
-    shortHeadline,
-    shortSummary,
-    summary,
-    url
-  } = article || {};
+  render() {
+    const {
+      article,
+      highResSize,
+      imageRatio,
+      isLoading,
+      onPress,
+      showImage
+    } = this.props;
 
-  const imageUri = getImageUri(article);
-  const content = showImage ? summary : shortSummary;
+    const {
+      byline,
+      headline,
+      hasVideo,
+      label,
+      publicationName,
+      publishedTime,
+      section,
+      shortHeadline,
+      shortSummary,
+      summary,
+      url
+    } = article || {};
 
-  return (
-    <Link onPress={onPress} url={url}>
-      <View style={styles.listItemContainer}>
-        <Card
-          highResSize={highResSize}
-          imageRatio={imageRatio}
-          imageUri={imageUri}
-          isLoading={isLoading}
-          showImage={showImage}
-        >
-          <ArticleSummary
-            bylineProps={
-              byline
-                ? {
-                    ast: byline,
-                    color: colours.section.default
-                  }
-                : null
-            }
-            content={() => <ArticleSummaryContent ast={content} />}
-            datePublicationProps={{
-              date: publishedTime,
-              publication: publicationName
-            }}
-            headline={() => (
-              <ArticleSummaryHeadline
-                headline={getHeadline(headline, shortHeadline)}
-              />
-            )}
-            labelProps={{
-              color: colours.section[section] || colours.section.default,
-              isVideo: hasVideo,
-              title: label
-            }}
-          />
-        </Card>
-      </View>
-    </Link>
-  );
-};
+    const imageUri = getImageUri(article);
+    const content = showImage ? summary : shortSummary;
+
+    return (
+      <Link onPress={onPress} url={url}>
+        <View style={styles.listItemContainer}>
+          <Card
+            highResSize={highResSize}
+            imageRatio={imageRatio}
+            imageUri={imageUri}
+            isLoading={isLoading}
+            showImage={showImage}
+          >
+            <ArticleSummary
+              bylineProps={
+                byline
+                  ? {
+                      ast: byline,
+                      color: colours.section.default
+                    }
+                  : null
+              }
+              content={() => <ArticleSummaryContent ast={content} />}
+              datePublicationProps={{
+                date: publishedTime,
+                publication: publicationName
+              }}
+              headline={() => (
+                <ArticleSummaryHeadline
+                  headline={getHeadline(headline, shortHeadline)}
+                />
+              )}
+              labelProps={{
+                color: colours.section[section] || colours.section.default,
+                isVideo: hasVideo,
+                title: label
+              }}
+            />
+          </Card>
+        </View>
+      </Link>
+    );
+  }
+}
 
 ArticleListItem.propTypes = propTypes;
 ArticleListItem.defaultProps = defaultProps;
