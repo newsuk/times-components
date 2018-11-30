@@ -59,30 +59,6 @@ export const InteractiveContainer = styled.div`
   }
 `;
 
-/* --- Lead Asset Styles --- */
-
-export const LeadAsset = styled(View)`
-  margin-bottom: ${spacing(2)};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-`;
-
-export const LeadAssetCaptionContainer = styled(View)`
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: flex;
-  }
-`;
-
 /* --- Article Images --- */
 
 export const PrimaryImg = styled(View)`

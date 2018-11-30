@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
 
 export const MainContainer = styled(View)`
@@ -27,4 +27,17 @@ export const HeaderAdContainer = styled(View)`
 export const BodyContainer = styled(View)`
   display: block;
   order: 3;
+`;
+
+/* --- LeadAsset --- */
+export const LeadAsset = styled(View)``;
+
+export const LeadAssetCaptionContainer = styled(View)`
+  display: flex;
+  
+  ${props => !props.showCaptionOnNative && css`
+    @media (max-width: ${breakpoints.wide}px) {
+      display: none;
+    }
+  `}
 `;

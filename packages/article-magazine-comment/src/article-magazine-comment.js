@@ -4,12 +4,14 @@ import React, { Component, Fragment } from "react";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { CentredCaption } from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import styles from "./styles";
 
 class ArticleMagazineComment extends Component {
   constructor() {
@@ -45,7 +47,13 @@ class ArticleMagazineComment extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
+        <LeadAsset
+          CaptionComponent={CentredCaption}
+          data={{ ...leadAsset, onVideoPress }}
+          showCaptionOnNative
+          style={styles.leadAssetContainer}
+          width={width}
+        />
       </Fragment>
     );
   }

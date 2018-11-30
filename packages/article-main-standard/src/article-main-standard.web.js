@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
+import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
@@ -58,7 +59,7 @@ class ArticlePage extends Component {
           <ArticleTopics topics={topics} />
         </MetaContainer>
         <LeadAssetContainer>
-          <LeadAssetComponent {...leadAssetProps} width={parentProps.width} />
+          <LeadAssetComponent {...leadAssetProps} CaptionComponent={Caption} width={parentProps.width} />
         </LeadAssetContainer>
       </Fragment>
     );

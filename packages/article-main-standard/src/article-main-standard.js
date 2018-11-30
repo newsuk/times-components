@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
+import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
@@ -41,6 +42,7 @@ class ArticlePage extends Component {
       <Fragment>
         <View key="leadAsset" testID="leadAsset">
           <ArticleLeadAsset
+            CaptionComponent={Caption}
             data={{ ...leadAsset, onVideoPress }}
             width={parentProps.width}
           />

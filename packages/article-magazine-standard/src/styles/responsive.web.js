@@ -95,21 +95,3 @@ export const StandfirstContainer = styled(Text)`
     margin-bottom: ${spacing(4)};
   }
 `;
-
-export const LeadAsset = styled(View)`
-  order: 2;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(6)};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-`;
-
-export const LeadAssetCaptionContainer = styled(View)`
-  display: flex;
-`;

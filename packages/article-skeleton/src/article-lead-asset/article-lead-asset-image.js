@@ -49,23 +49,11 @@ const ArticleLeadAssetImage = ({
 
 ArticleLeadAssetImage.propTypes = {
   ...leadAssetPropTypes,
-  crop11: cropPropTypes,
-  crop23: cropPropTypes,
-  crop32: cropPropTypes,
-  crop45: cropPropTypes,
-  crop169: cropPropTypes,
-  crop1251: cropPropTypes,
   width: PropTypes.number
 };
 
 ArticleLeadAssetImage.defaultProps = {
   ...leadAssetDefaults,
-  crop11: null,
-  crop23: null,
-  crop32: null,
-  crop45: null,
-  crop169: null,
-  crop1251: null,
   width: null
 };
 

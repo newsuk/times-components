@@ -7,6 +7,8 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import styles from "./styles";
+import { CentredCaption } from "@times-components/caption";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -39,7 +41,12 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset {...leadAssetProps} width={width} />
+        <LeadAsset
+          {...leadAssetProps}
+          CaptionComponent={CentredCaption}
+          showCaptionOnNative
+          style={styles.leadAssetContainer}
+          width={width} />
       </Fragment>
     );
   }
