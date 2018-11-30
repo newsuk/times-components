@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 
-import Label from "../article-label/article-label";
+import { LabelWithTheme } from "@times-components/article-label";
 import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -23,7 +23,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <View style={styles.container}>
-    <Label label={label} />
+    <LabelWithTheme label={label} style={styles.label} />
     <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />
     <Standfirst standfirst={standfirst} />

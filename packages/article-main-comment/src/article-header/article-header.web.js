@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "@times-components/image";
 
-import Label from "../article-label/article-label";
+import { LabelWithTheme } from "@times-components/article-label";
 import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -32,7 +32,7 @@ const ArticleHeader = ({
     <AuthorImageContainer style={styles.authorImage}>
       <Image aspectRatio={1} uri={authorImage} />
     </AuthorImageContainer>
-    <Label label={label} />
+    <LabelWithTheme label={label} style={styles.label} />
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"

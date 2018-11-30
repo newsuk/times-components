@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import ArticleLabel from "@times-components/article-label";
 import Context from "@times-components/context";
 import { colours } from "@times-components/styleguide";
-import styles from "../styles";
 
-const Label = ({ label }) =>
+import ArticleLabel from "./article-label";
+
+const LabelWithTheme = ({ label, LabelComponent, ...props }) =>
   label ? (
     <Context.Consumer>
       {({ theme: { sectionColour } }) => (
-        <View style={styles.label}>
-          <ArticleLabel
+        <View {...props}>
+          <LabelComponent
             color={sectionColour || colours.section.default}
             title={label}
           />
@@ -20,12 +20,14 @@ const Label = ({ label }) =>
     </Context.Consumer>
   ) : null;
 
-Label.propTypes = {
-  label: PropTypes.string
+LabelWithTheme.propTypes = {
+  label: PropTypes.string,
+  LabelComponent: PropTypes.func
 };
 
-Label.defaultProps = {
-  label: null
+LabelWithTheme.defaultProps = {
+  label: null,
+  LabelComponent: ArticleLabel
 };
 
-export default Label;
+export default LabelWithTheme;

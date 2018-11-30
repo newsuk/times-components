@@ -1,6 +1,6 @@
 import React from "react";
 
-import Label from "../article-label/article-label";
+import { LabelWithTheme } from "@times-components/article-label";
 import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -26,7 +26,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <HeaderContainer style={styles.container}>
-    <Label label={label} />
+    <LabelWithTheme label={label} style={styles.label} />
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"

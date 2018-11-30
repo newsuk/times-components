@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 
-import Label from "../article-label/article-label";
+import { LabelWithTheme } from "@times-components/article-label";
 import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -26,7 +26,7 @@ const ArticleHeader = ({
 }) => (
   <View style={styles.container}>
     <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
-    <Label label={label} />
+    <LabelWithTheme label={label} style={styles.label} />
     <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />
     <Standfirst standfirst={standfirst} />
