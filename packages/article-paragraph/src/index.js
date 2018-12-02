@@ -13,7 +13,6 @@ const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
   }
 
   const { name, attributes } = astChildren[0];
-
   if (name === "dropCap") {
     const { value } = attributes;
     const text = renderTreeAsText(ast).slice(1);

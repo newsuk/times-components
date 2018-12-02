@@ -202,7 +202,6 @@ const decorateAd = ({ contextUrl, section }) => element =>
     ? { ...element, attributes: { ...element.attributes, contextUrl, section } }
     : element;
 
-// const template = "maincomment";
 const ArticleBody = ({
   content: bodyContent,
   contextUrl,
