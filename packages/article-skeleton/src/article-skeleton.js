@@ -21,7 +21,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = analyticsStream => (
+const renderRow = (analyticsStream, template) => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -35,13 +35,13 @@ const renderRow = analyticsStream => (
   // eslint-disable-next-line default-case
   switch (rowData.type) {
     case "articleBodyRow": {
-      // console.log('index from skeleton is >>>>>', rowData.index);
       return (
         <ArticleRow
           content={rowData}
           onLinkPress={onLinkPress}
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
+          template={template}
         />
       );
     }
@@ -125,7 +125,7 @@ class ArticleSkeleton extends Component {
     if (!dataSource.content) {
       return null;
     }
-
+    const template = dataSource.template;
     const articleOrganised = listViewDataHelper(dataSource);
     const articleData = articleOrganised.map((item, index) => ({
       ...item,
@@ -151,7 +151,7 @@ class ArticleSkeleton extends Component {
           onVideoPress={onVideoPress}
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream)}
+          renderRow={renderRow(analyticsStream, template)}
           scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
           width={width}
         />

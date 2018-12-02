@@ -47,7 +47,6 @@ class ArticleSkeleton extends Component {
       receiveChildList
     } = this.props;
     const { articleWidth } = this.state;
-    console.log('template>>>', template);
     // eslint-disable-next-line react/prop-types
     const displayRelatedArticles = ({ isVisible }) =>
       relatedArticleSlice ? (
@@ -95,7 +94,7 @@ class ArticleSkeleton extends Component {
                       observed={observed}
                       registerNode={registerNode}
                       section={section}
-                      template='maincomment'
+                      template={template}
                     />
 
                     <ArticleTopics topics={topics} />

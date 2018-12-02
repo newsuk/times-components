@@ -18,153 +18,156 @@ import styleFactory from "../styles/article-body";
 
 const styles = styleFactory();
 
-const template = 'maincomment';
-
 const ArticleRow = ({
   content: { data, index },
   onLinkPress,
   onTwitterLinkPress,
-  onVideoPress
+  onVideoPress,
+  template
 }) =>
-  { console.log('indx in body row is >>>>',index);
-    return renderTree(data, {
-    ...coreRenderers,
-    ad(key, attributes) {
-      return {
-        element: (
-          <Ad
-            key={key}
-            slotName="native-inline-ad"
-            style={styles.ad}
-            {...attributes}
-          />
-        )
-      };
-    },
-    image(key, { display, ratio, url, caption, credits }) {
-      return {
-        element: (
-          <View key={key}>
-            <ArticleImage
-              captionOptions={{
-                caption,
-                credits
-              }}
-              imageOptions={{
-                display,
-                ratio,
-                uri: url
-              }}
+  renderTree(
+    data,
+    {
+      ...coreRenderers,
+      ad(key, attributes) {
+        return {
+          element: (
+            <Ad
+              key={key}
+              slotName="native-inline-ad"
+              style={styles.ad}
+              {...attributes}
             />
-          </View>
-        )
-      };
-    },
-    interactive(key, { id }) {
-      return {
-        element: (
-          <View key={key} style={styles.interactiveContainer}>
-            <InteractiveWrapper id={id} />
-          </View>
-        )
-      };
-    },
-    keyFacts(key, attributes, renderedChildren, indx, node) {
-      return {
-        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
-        shouldRenderChildren: false
-      };
-    },
-    link(key, attributes, children) {
-      const { canonicalId, href: url, type } = attributes;
-
-      return {
-        element: (
-          <ArticleLink
-            key={key}
-            linkType={attributes.type}
-            onPress={e => onLinkPress(e, { canonicalId, type, url })}
-            url={url}
-            uuid={index}
-          >
-            {children}
-          </ArticleLink>
-        )
-      };
-    },
-    paragraph(key, attributes, children, indx, node) {
-       console.log('in para index is>>>', node);
-      return {
-        element: (
-          <ArticleParagraph ast={node} key={key} uid={indx}>
-            {children}
-          </ArticleParagraph>
-        )
-      };
-    },
-    pullQuote(
-      key,
-      {
-        caption: { name, text, twitter }
+          )
+        };
       },
-      children
-    ) {
-      return {
-        element: (
-          <Context.Consumer key={key}>
-            {({ theme: { sectionColour } }) => (
-              <View>
-                <PullQuote
-                  caption={name}
-                  captionColour={sectionColour || colours.section.default}
-                  onTwitterLinkPress={onTwitterLinkPress}
-                  quoteColour={sectionColour || colours.section.default}
-                  text={text}
-                  twitter={twitter}
-                >
-                  {children}
-                </PullQuote>
-              </View>
-            )}
-          </Context.Consumer>
-        )
-      };
-    },
-    video(
-      key,
-      {
-        brightcovePolicyKey,
-        brightcoveVideoId,
-        brightcoveAccountId,
-        posterImageUrl,
-        caption,
-        skySports
+      image(key, { display, ratio, url, caption, credits }) {
+        return {
+          element: (
+            <View key={key}>
+              <ArticleImage
+                captionOptions={{
+                  caption,
+                  credits
+                }}
+                imageOptions={{
+                  display,
+                  ratio,
+                  uri: url
+                }}
+              />
+            </View>
+          )
+        };
+      },
+      interactive(key, { id }) {
+        return {
+          element: (
+            <View key={key} style={styles.interactiveContainer}>
+              <InteractiveWrapper id={id} />
+            </View>
+          )
+        };
+      },
+      keyFacts(key, attributes, renderedChildren, indx, node) {
+        return {
+          element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+          shouldRenderChildren: false
+        };
+      },
+      link(key, attributes, children) {
+        const { canonicalId, href: url, type } = attributes;
+
+        return {
+          element: (
+            <ArticleLink
+              key={key}
+              linkType={attributes.type}
+              onPress={e => onLinkPress(e, { canonicalId, type, url })}
+              url={url}
+              uuid={index}
+            >
+              {children}
+            </ArticleLink>
+          )
+        };
+      },
+      paragraph(key, attributes, children, indx, node) {
+        return {
+          element: (
+            <ArticleParagraph ast={node} key={key} uid={indx}>
+              {children}
+            </ArticleParagraph>
+          )
+        };
+      },
+      pullQuote(
+        key,
+        {
+          caption: { name, text, twitter }
+        },
+        children
+      ) {
+        return {
+          element: (
+            <Context.Consumer key={key}>
+              {({ theme: { sectionColour } }) => (
+                <View>
+                  <PullQuote
+                    caption={name}
+                    captionColour={sectionColour || colours.section.default}
+                    onTwitterLinkPress={onTwitterLinkPress}
+                    quoteColour={sectionColour || colours.section.default}
+                    text={text}
+                    twitter={twitter}
+                  >
+                    {children}
+                  </PullQuote>
+                </View>
+              )}
+            </Context.Consumer>
+          )
+        };
+      },
+      video(
+        key,
+        {
+          brightcovePolicyKey,
+          brightcoveVideoId,
+          brightcoveAccountId,
+          posterImageUrl,
+          caption,
+          skySports
+        }
+      ) {
+        const aspectRatio = 16 / 9;
+
+        const { width } = Dimensions.get("window");
+        const height = width / aspectRatio;
+
+        return {
+          element: (
+            <View key={key} style={styles.primaryContainer}>
+              <Video
+                accountId={brightcoveAccountId}
+                height={height}
+                onVideoPress={onVideoPress}
+                policyKey={brightcovePolicyKey}
+                poster={{ uri: posterImageUrl }}
+                skySports={skySports}
+                videoId={brightcoveVideoId}
+                width={width}
+              />
+              <InsetCaption caption={caption} />
+            </View>
+          )
+        };
       }
-    ) {
-      const aspectRatio = 16 / 9;
-
-      const { width } = Dimensions.get("window");
-      const height = width / aspectRatio;
-
-      return {
-        element: (
-          <View key={key} style={styles.primaryContainer}>
-            <Video
-              accountId={brightcoveAccountId}
-              height={height}
-              onVideoPress={onVideoPress}
-              policyKey={brightcovePolicyKey}
-              poster={{ uri: posterImageUrl }}
-              skySports={skySports}
-              videoId={brightcoveVideoId}
-              width={width}
-            />
-            <InsetCaption caption={caption} />
-          </View>
-        )
-      };
-    }
-  }, index, index, template)};
+    },
+    index,
+    index,
+    template
+  );
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({

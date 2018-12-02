@@ -7,7 +7,6 @@ import DropCapWrapper from "./drop-cap-with-context";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
-  console.log('ArticleParagraphWrapper index is>>', children, ast);
   const { children: astChildren } = ast;
   if (!astChildren || astChildren.length === 0) {
     return null;
