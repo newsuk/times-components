@@ -262,6 +262,37 @@ iterator([
     }
   },
   {
+    name: "paragraph for a dropcap",
+    test: () => {
+      const output = TestRenderer.create(
+        <div>
+          {renderTrees(
+            paragraphAST,
+            {
+              dropCap(key, { value }) {
+                return {
+                  element: `Dropcap is ${value}`
+                };
+              },
+              paragraph(key, attributes, renderedChildren) {
+                return {
+                  element: <p key={key}>{renderedChildren}</p>
+                };
+              },
+              text(key, { value }) {
+                return {
+                  element: value
+                };
+              }
+            },
+            "maincomment"
+          )}
+        </div>
+      );
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "nested tags with a text only renderer",
     test: () => {
       const output = renderTreeAsText(nestedAST);
