@@ -27,7 +27,9 @@ const ArticleHeader = ({
   <View style={styles.container}>
     <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
     <Label label={label} />
+    <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />
+    <Standfirst standfirst={standfirst} />
     <Meta
       byline={byline}
       onAuthorPress={onAuthorPress}

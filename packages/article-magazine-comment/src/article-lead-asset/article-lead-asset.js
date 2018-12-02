@@ -12,7 +12,10 @@ const ArticleLeadAsset = ({ data, width }) => {
     : ArticleLeadAssetImage;
 
   return (
-  null
+    <View style={styles.leadAssetContainer}>
+      <LeadAsset {...data} width={width} />
+      <CentredCaption credits={data.credits} text={data.caption} />
+    </View>
   );
 };
 

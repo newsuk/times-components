@@ -33,7 +33,8 @@ const mutateAST = (firstTextChild, children) => {
 };
 
 export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
-  const { name, attributes, children } = tree;
+  const newTree = tree;
+  const { name, attributes, children } = newTree;
   let newChildren = children;
   if (
     template &&
@@ -50,9 +51,9 @@ export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
 
   if (!renderer) return null;
 
-  tree.children = newChildren;
+  newTree.children = newChildren;
 
-  const initialResult = renderer(key, attributes, [], indx, tree);
+  const initialResult = renderer(key, attributes, [], indx, newTree);
   const { element, shouldRenderChildren = true } = initialResult;
 
   if (!shouldRenderChildren) return element;
@@ -60,7 +61,7 @@ export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
   const renderedChildren = newChildren.map((child, index) =>
     renderTree(child, renderers, `${key}.${index}`, index)
   );
-  const result = renderer(key, attributes, renderedChildren, indx, tree);
+  const result = renderer(key, attributes, renderedChildren, indx, newTree);
 
   return result.element;
 };

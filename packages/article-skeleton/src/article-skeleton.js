@@ -121,11 +121,11 @@ class ArticleSkeleton extends Component {
       receiveChildList
     } = this.props;
     const { dataSource, width } = this.state;
-
+    const { template } = dataSource;
     if (!dataSource.content) {
       return null;
     }
-    const template = dataSource.template;
+
     const articleOrganised = listViewDataHelper(dataSource);
     const articleData = articleOrganised.map((item, index) => ({
       ...item,
