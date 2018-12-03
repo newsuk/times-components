@@ -212,6 +212,7 @@ class ArticleList extends Component {
         )}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
+        windowSize={5}
       />
     );
   }
