@@ -9,6 +9,7 @@ import bioAST from "../fixtures/bio.json";
 import mixtureAST from "../fixtures/mixture.json";
 import nestedAST from "../fixtures/nested.json";
 import paragraphAST from "../fixtures/paragraphs.json";
+import paragraphAST_1 from "../fixtures/paragraphs_1.json";
 
 iterator([
   {
@@ -286,6 +287,37 @@ iterator([
               }
             },
             "maincomment"
+          )}
+        </div>
+      );
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "paragraph for not a dropcap",
+    test: () => {
+      const output = TestRenderer.create(
+        <div>
+          {renderTrees(
+            paragraphAST_1,
+            {
+              dropCap(key, { value }) {
+                return {
+                  element: `Dropcap is ${value}`
+                };
+              },
+              paragraph(key, attributes, renderedChildren) {
+                return {
+                  element: <p key={key}>{renderedChildren}</p>
+                };
+              },
+              text(key, { value }) {
+                return {
+                  element: value
+                };
+              }
+            },
+            "mainstandard"
           )}
         </div>
       );

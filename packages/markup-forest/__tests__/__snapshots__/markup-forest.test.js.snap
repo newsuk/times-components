@@ -166,4 +166,15 @@ exports[`10. paragraph for a dropcap 1`] = `
 </div>
 `;
 
-exports[`11. nested tags with a text only renderer 1`] = `"Some text is here and there is some more text and in heretext of a special elementinline text of a special element after it too and here"`;
+exports[`11. paragraph for not a dropcap 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
+
+exports[`12. nested tags with a text only renderer 1`] = `"Some text is here and there is some more text and in heretext of a special elementinline text of a special element after it too and here"`;
