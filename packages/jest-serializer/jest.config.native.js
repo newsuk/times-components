@@ -13,6 +13,10 @@ module.exports = {
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy"
   },
+  modulePathIgnorePatterns: [
+    "node_modules/haul/node_modules/react/",
+    "node_modules/redbox-react/node_modules/react/"
+  ],
   preset: "react-native",
   rootDir: "../../",
   testMatch: [`**/jest-serializer/__tests__/ios/**.test.js`],
