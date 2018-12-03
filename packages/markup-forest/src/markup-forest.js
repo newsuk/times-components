@@ -6,7 +6,7 @@ const templateWithDropCaps = [
   "magazinecomment"
 ];
 
-const mutateAST = (firstTextChild, children) => {
+const insertDropcapIntoAST = (firstTextChild, children) => {
   const {
     name,
     attributes: { value }
@@ -33,7 +33,8 @@ const mutateAST = (firstTextChild, children) => {
 };
 
 export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
-  const newTree = tree;
+  const newTree = Object.assign({}, tree);
+
   const { name, attributes, children } = newTree;
   let newChildren = children;
   if (
@@ -43,8 +44,7 @@ export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
     name === "paragraph" &&
     children.length > 0
   ) {
-    // mutate AST
-    newChildren = mutateAST(children[0], children);
+    newChildren = insertDropcapIntoAST(children[0], children);
   }
 
   const renderer = renderers[name];

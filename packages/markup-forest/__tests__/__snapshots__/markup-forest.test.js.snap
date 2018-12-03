@@ -154,9 +154,10 @@ exports[`9. multiple children 1`] = `
 </div>
 `;
 
-exports[`10. paragraph for not a dropcap 1`] = `
+exports[`10. paragraph with double quotes as a dropcap 1`] = `
 <div>
   <p>
+    Dropcap is "
     This is the text for paragraph one
   </p>
   <p>
@@ -165,23 +166,22 @@ exports[`10. paragraph for not a dropcap 1`] = `
 </div>
 `;
 
-exports[`11. paragraph with double quotes as a dropcap 1`] = `
+exports[`11. paragraph with first letter as a dropcap 1`] = `
 <div>
   <p>
-    Dropcap is: "
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`12. paragraph with first letter as a dropcap 1`] = `
-<div>
-  <p>
-    Dropcap is: T
+    Dropcap is T
     his is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
+
+exports[`12. paragraph for not a dropcap 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
   </p>
   <p>
     This is the text for paragraph two

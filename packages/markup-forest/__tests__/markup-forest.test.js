@@ -11,6 +11,24 @@ import nestedAST from "../fixtures/nested.json";
 import paragraphAST from "../fixtures/paragraphs.json";
 import paragraphASTWithQuotes from "../fixtures/paragraphsWithQuotes.json";
 
+const dropCapRenderer = {
+  dropCap(key, { value }) {
+    return {
+      element: `Dropcap is ${value}`
+    };
+  },
+  paragraph(key, attributes, renderedChildren) {
+    return {
+      element: <p key={key}>{renderedChildren}</p>
+    };
+  },
+  text(key, { value }) {
+    return {
+      element: value
+    };
+  }
+};
+
 iterator([
   {
     name: "no renderers",
@@ -263,62 +281,12 @@ iterator([
     }
   },
   {
-    name: "paragraph for not a dropcap",
-    test: () => {
-      const output = TestRenderer.create(
-        <div>
-          {renderTrees(
-            paragraphAST,
-            {
-              dropCap(key, { value }) {
-                return {
-                  element: `Dropcap is ${value}`
-                };
-              },
-              paragraph(key, attributes, renderedChildren) {
-                return {
-                  element: <p key={key}>{renderedChildren}</p>
-                };
-              },
-              text(key, { value }) {
-                return {
-                  element: value
-                };
-              }
-            },
-            "mainstandard"
-          )}
-        </div>
-      );
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
     name: "paragraph with double quotes as a dropcap",
     test: () => {
+      const template = "maincomment";
       const output = TestRenderer.create(
         <div>
-          {renderTrees(
-            paragraphASTWithQuotes,
-            {
-              dropCap(key, { value }) {
-                return {
-                  element: `Dropcap is: ${value}`
-                };
-              },
-              paragraph(key, attributes, renderedChildren) {
-                return {
-                  element: <p key={key}>{renderedChildren}</p>
-                };
-              },
-              text(key, { value }) {
-                return {
-                  element: value
-                };
-              }
-            },
-            "maincomment"
-          )}
+          {renderTrees(paragraphASTWithQuotes, dropCapRenderer, template)}
         </div>
       );
       expect(output).toMatchSnapshot();
@@ -327,30 +295,19 @@ iterator([
   {
     name: "paragraph with first letter as a dropcap",
     test: () => {
+      const template = "maincomment";
       const output = TestRenderer.create(
-        <div>
-          {renderTrees(
-            paragraphAST,
-            {
-              dropCap(key, { value }) {
-                return {
-                  element: `Dropcap is: ${value}`
-                };
-              },
-              paragraph(key, attributes, renderedChildren) {
-                return {
-                  element: <p key={key}>{renderedChildren}</p>
-                };
-              },
-              text(key, { value }) {
-                return {
-                  element: value
-                };
-              }
-            },
-            "maincomment"
-          )}
-        </div>
+        <div>{renderTrees(paragraphAST, dropCapRenderer, template)}</div>
+      );
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "paragraph for not a dropcap",
+    test: () => {
+      const template = "mainstandard";
+      const output = TestRenderer.create(
+        <div>{renderTrees(paragraphAST, dropCapRenderer, template)}</div>
       );
       expect(output).toMatchSnapshot();
     }
