@@ -33,7 +33,7 @@ const insertDropcapIntoAST = (firstTextChild, children) => {
 };
 
 export const renderTree = (tree, renderers, key = "0", indx = 0, template) => {
-  const newTree = Object.assign({}, tree);
+  const newTree = { ...tree };
 
   const { name, attributes, children } = newTree;
   let newChildren = children;
