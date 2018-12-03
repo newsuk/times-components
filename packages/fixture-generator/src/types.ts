@@ -197,6 +197,8 @@ export interface Image {
   credits?: string | null;
 
   crop?: Crop | null;
+
+  crops: Crop[];
 }
 /** The selected area for a given image and its ratio */
 export interface Crop {

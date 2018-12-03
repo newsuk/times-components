@@ -7,6 +7,7 @@ class MockImage {
   constructor() {
     this.image = {
       id: UUID(),
+      crops: [],
       crop: {
         ratio: "16:9",
         url:
