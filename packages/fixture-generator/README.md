@@ -20,7 +20,7 @@ This project is in typescript so you've got that do deal with. The reason for wh
 In order to build the project just run:
 
 ```
-yarn build
+yarn transpile
 ```
 
 You do not need to have typescript on your machine as we install the compiler as a dev dependency.
