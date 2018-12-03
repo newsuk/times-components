@@ -75,7 +75,7 @@ exports[`2. article summary with opinion byline 1`] = `
     />
   </View>
   <Text>
-    <ArticleByline
+    <ArticleBylineOpinion
       ast={
         Array [
           Object {
