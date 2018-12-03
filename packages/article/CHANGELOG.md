@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.5.0"></a>
+# [6.5.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.4.6...@times-components/article@6.5.0) (2018-12-03)
+
+
+### Features
+
+* magazine standard ([#1531](https://github.com/newsuk/times-components/issues/1531)) ([ab521e0](https://github.com/newsuk/times-components/commit/ab521e0))
+
+
+
+
+
 <a name="6.4.6"></a>
 ## [6.4.6](https://github.com/newsuk/times-components/compare/@times-components/article@6.4.5...@times-components/article@6.4.6) (2018-12-03)
 
