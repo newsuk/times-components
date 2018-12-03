@@ -112,6 +112,23 @@ describe("The showcase converter should", () => {
     expect(builder.items).toMatchSnapshot();
   });
 
+  it("turn off strict mode", () => {
+    const showcase = {
+      children: [
+        {
+          component: () => <div>Hello World!</div>,
+          name: "My Story",
+          type: "story"
+        }
+      ],
+      name: "My Showcase"
+    };
+
+    converter(module, showcase, false);
+
+    expect(builder.items).toMatchSnapshot();
+  });
+
   it("add a story with a decorator", () => {
     const showcase = {
       children: [
