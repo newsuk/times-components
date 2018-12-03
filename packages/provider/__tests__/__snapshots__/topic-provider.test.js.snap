@@ -33,6 +33,5 @@ Object {
     },
   ],
   "name": "Chelsea",
-  Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"})",
 }
 `;

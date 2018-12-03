@@ -6,7 +6,6 @@ Object {
   "articles": Object {
     "__typename": "AuthorArticles",
     "count": 200,
-    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",
   },
   "biography": Array [
     Object {
@@ -42,6 +41,5 @@ Object {
   "jobTitle": "Defence Editor",
   "name": "Deborah Haynes",
   "twitter": "jdoe",
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"})",
 }
 `;

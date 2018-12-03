@@ -1,0 +1,62 @@
+{
+  "name": "@times-components/fixture-generator",
+  "version": "0.0.1",
+  "description": "Creates fixture data for testing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "transpile": "yarn getSchema && yarn gentypes && tsc",
+    "gentypes": "gql-gen --schema ./schema.json --template graphql-codegen-typescript-template --out ./src/types.ts",
+    "getSchema": "GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql getSchema",
+    "test": "jest ./src/__tests__/*",
+    "lint": "yarn prettier:diff && yarn depcheck",
+    "fmt": "prettier --write 'src/*.*'",
+    "prettier:diff": "prettier --list-different 'src/*.*'",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,jest,prettier,@times-components/schema,graphql-codegen-typescript-template,@types/jest,graphql-code-generator,ts-jest,typescript,typings' --ignore-bin-package=false --skip-missing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "fixture-generator",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/schema": "0.1.15",
+    "graphql-codegen-typescript-template": "0.13.0",
+    "depcheck": "0.6.9",
+    "prettier": "1.14.3",
+    "@types/jest": "23.3.9",
+    "graphql-code-generator": "0.13.0",
+    "jest": "23.3.0",
+    "ts-jest": "23.10.4",
+    "typescript": "3.1.6",
+    "typings": "^2.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+
+  }
+}

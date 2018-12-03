@@ -2,6 +2,9 @@
   "name": "@times-components/schema",
   "version": "0.1.15",
   "main": "fragment-matcher.js",
+  "bin": {
+    "getSchema": "./index.js"
+  },
   "scripts": {
     "bundle": "cp fragment-matcher.js rnw.js",
     "fmt": "prettier --write '**/*.*'",
@@ -31,7 +34,7 @@
     "rimraf": "2.6.1"
   },
   "dependencies": {
-    "apollo-cache-inmemory": "1.1.10",
+    "apollo-cache-inmemory": "1.3.0",
     "chalk": "2.4.1",
     "graphql": "0.13.2",
     "mkdirp": "0.5.1",

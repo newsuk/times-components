@@ -3,7 +3,6 @@
 exports[`Provider Tests re-renders with refetched data after error 1`] = `
 Object {
   "name": "fiona-hamilton",
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
 }
 `;
 
@@ -21,13 +20,11 @@ exports[`Provider Tests returns loading state with no author 1`] = `undefined`;
 exports[`Provider Tests returns query result 1`] = `
 Object {
   "name": "fiona-hamilton",
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
 }
 `;
 
 exports[`Provider Tests supports another refetch after error during refetch 1`] = `
 Object {
   "name": "fiona-hamilton",
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
 }
 `;

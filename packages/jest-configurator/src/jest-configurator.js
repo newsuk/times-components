@@ -68,6 +68,10 @@ export default (platform, cwd, options = {}) => {
     collectCoverageFrom: [path.join(rootDir, module)],
     coverageDirectory: path.join(module, "coverage", platformPath),
     coveragePathIgnorePatterns: coverageIgnoreGlobs,
+    modulePathIgnorePatterns: [
+      "node_modules/haul/node_modules/react/",
+      "node_modules/redbox-react/node_modules/react/"
+    ],
     preset: "react-native",
     rootDir,
     setupFiles: [

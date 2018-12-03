@@ -8,7 +8,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "transpile": "babel src -d dist --copy-files"
+    "transpile": "babel src -d dist --copy-files",
+    "test": "jest __tests__/*"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   },
   "dependencies": {
     "@times-components/provider-test-tools": "1.10.3",
+    "graphql-tools": "3.1.1",
     "@times-components/schema": "0.1.15",
     "apollo-server": "2.1.0",
     "graphql": "0.13.2"
