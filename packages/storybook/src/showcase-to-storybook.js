@@ -11,7 +11,13 @@ React.Fragment.displayName = "React.Fragment";
 // eslint-disable-next-line react/prop-types
 const StrictWrapper = ({ children }) => <StrictMode>{children}</StrictMode>;
 
-const addStories = (builder, knobs, actions, [child, ...children]) => {
+const addStories = (
+  builder,
+  knobs,
+  actions,
+  [child, ...children],
+  strictMode = true
+) => {
   if (!child) {
     return;
   }
@@ -19,9 +25,15 @@ const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (child.type === "story") {
     const args = [knobs, actions];
 
-    builder.add(child.name, () => (
-      <StrictWrapper>{child.component(...args)}</StrictWrapper>
-    ));
+    builder.add(
+      child.name,
+      () =>
+        strictMode ? (
+          <StrictWrapper>{child.component(...args)}</StrictWrapper>
+        ) : (
+          child.component(...args)
+        )
+    );
   }
 
   if (child.type === "decorator") {
@@ -38,13 +50,15 @@ export const isCorrectPlatform = ({ platform }) =>
 
 const converter = (storiesOf, knobs, actions) => (
   module,
-  { name, children = [] } = {}
+  { name, children = [] } = {},
+  strictMode
 ) =>
   addStories(
     storiesOf(name, module),
     knobs,
     actions,
-    children.filter(isCorrectPlatform)
+    children.filter(isCorrectPlatform),
+    strictMode
   );
 
 export default converter;
