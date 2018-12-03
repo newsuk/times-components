@@ -2,6 +2,8 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
+import ArticleMagazineStandard from "@times-components/article-magazine-standard";
+import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import Article from "../src/article";
 
 const requiredProps = {
@@ -50,12 +52,30 @@ describe("Article", () => {
     expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
   });
 
-  it("renders with ArticleComment if the correct template is chosen", () => {
+  it("renders with ArticleMainComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article article={{ template: "maincomment" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
     expect(testInstance.findByType(ArticleMainComment)).toBeTruthy();
+  });
+
+  it("renders with ArticleMagazineStandard if the correct template is chosen", () => {
+    const testRenderer = TestRenderer.create(
+      <Article article={{ template: "magazinestandard" }} {...requiredProps} />
+    );
+    const testInstance = testRenderer.root;
+
+    expect(testInstance.findByType(ArticleMagazineStandard)).toBeTruthy();
+  });
+
+  it("renders with ArticleMagazineComment if the correct template is chosen", () => {
+    const testRenderer = TestRenderer.create(
+      <Article article={{ template: "magazinecomment" }} {...requiredProps} />
+    );
+    const testInstance = testRenderer.root;
+
+    expect(testInstance.findByType(ArticleMagazineComment)).toBeTruthy();
   });
 });

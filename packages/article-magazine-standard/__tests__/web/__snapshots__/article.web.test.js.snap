@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an error 1`] = `null`;
+
+exports[`2. loading 1`] = `null`;
+
+exports[`3. an article with no headline falls back to use shortheadline 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <h1
+        aria-level="1"
+        role="heading"
+      >
+        Some Short Headline
+      </h1>
+      <div />
+      <div>
+        <div>
+          <ArticleBylineWithLinks
+            ast={
+              Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Some byline",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ]
+            }
+            color="#1D1D1B"
+          />
+        </div>
+        <div />
+        <div>
+          <div>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <Image
+              highResSize={null}
+              lowResSize={100}
+              uri="https://crop169.io"
+            />
+          </div>
+        </div>
+        <div>
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div>
+      <p>
+        Some content
+      </p>
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </nav>
+      </div>
+      <aside
+        id="related-articles"
+      >
+        <RelatedArticles
+          isVisible={false}
+          slice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "byline": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+        />
+      </aside>
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
+`;
+
+exports[`4. an article with ads 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <h1
+        aria-level="1"
+        role="heading"
+      >
+        Some Headline
+      </h1>
+      <div />
+      <div>
+        <div>
+          <ArticleBylineWithLinks
+            ast={
+              Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Some byline",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ]
+            }
+            color="#1D1D1B"
+          />
+        </div>
+        <div />
+        <div>
+          <div>
+            <DatePublication
+              date="2015-03-13T18:54:58.000Z"
+              publication="TIMES"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <Image
+              highResSize={null}
+              lowResSize={100}
+              uri="https://crop169.io"
+            />
+          </div>
+        </div>
+        <div>
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="inline-ad"
+      />
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </nav>
+      </div>
+      <aside
+        id="related-articles"
+      >
+        <RelatedArticles
+          isVisible={false}
+          slice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "byline": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+        />
+      </aside>
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
+`;
