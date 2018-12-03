@@ -26,8 +26,8 @@ describe("Article", () => {
 
         cy.get("@raImages").each(item => {
           const url = new URL(item.attr("src"));
-
-          expect(url.searchParams.get("resize")).to.equal("306");
+          const initialResize = "100"
+          expect(url.searchParams.get("resize")).to.not.equal(initialResize);
         });
       }));
 
