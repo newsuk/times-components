@@ -9,7 +9,7 @@ import bioAST from "../fixtures/bio.json";
 import mixtureAST from "../fixtures/mixture.json";
 import nestedAST from "../fixtures/nested.json";
 import paragraphAST from "../fixtures/paragraphs.json";
-import paragraphAST_1 from "../fixtures/paragraphs_1.json";
+import paragraphASTWithQuotes from "../fixtures/paragraphsWithQuotes.json";
 
 iterator([
   {
@@ -263,7 +263,7 @@ iterator([
     }
   },
   {
-    name: "paragraph for a dropcap",
+    name: "paragraph for not a dropcap",
     test: () => {
       const output = TestRenderer.create(
         <div>
@@ -286,7 +286,7 @@ iterator([
                 };
               }
             },
-            "maincomment"
+            "mainstandard"
           )}
         </div>
       );
@@ -294,16 +294,16 @@ iterator([
     }
   },
   {
-    name: "paragraph for not a dropcap",
+    name: "paragraph with double quotes as a dropcap",
     test: () => {
       const output = TestRenderer.create(
         <div>
           {renderTrees(
-            paragraphAST_1,
+            paragraphASTWithQuotes,
             {
               dropCap(key, { value }) {
                 return {
-                  element: `Dropcap is ${value}`
+                  element: `Dropcap is: ${value}`
                 };
               },
               paragraph(key, attributes, renderedChildren) {
@@ -317,7 +317,38 @@ iterator([
                 };
               }
             },
-            "mainstandard"
+            "maincomment"
+          )}
+        </div>
+      );
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "paragraph with first letter as a dropcap",
+    test: () => {
+      const output = TestRenderer.create(
+        <div>
+          {renderTrees(
+            paragraphAST,
+            {
+              dropCap(key, { value }) {
+                return {
+                  element: `Dropcap is: ${value}`
+                };
+              },
+              paragraph(key, attributes, renderedChildren) {
+                return {
+                  element: <p key={key}>{renderedChildren}</p>
+                };
+              },
+              text(key, { value }) {
+                return {
+                  element: value
+                };
+              }
+            },
+            "maincomment"
           )}
         </div>
       );
