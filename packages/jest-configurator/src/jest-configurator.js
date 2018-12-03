@@ -78,6 +78,7 @@ export default (platform, cwd, options = {}) => {
     testPathIgnorePatterns: [
       path.join(module, "__tests__", platformPath, "jest.config.js")
     ],
+    modulePathIgnorePatterns: ["node_modules/haul/node_modules/react/", "node_modules/redbox-react/node_modules/react/"],
     testURL: "http://localhost",
     transform: {
       // @todo Remove this when upgrading to above react 0.56.0 (blocked by expo-sdk as of 2018/10/18)
