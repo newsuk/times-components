@@ -13,6 +13,11 @@ import { getImageUri, getHeadline } from "./utils";
 import styles from "./styles";
 
 class ArticleListItem extends Component {
+  constructor(props) {
+    super(props);
+    this.onItemPress = this.onItemPress.bind(this);
+  }
+
   shouldComponentUpdate(nextProps) {
     const { article } = this.props;
     const { article: nextArticle } = nextProps;
@@ -21,13 +26,20 @@ class ArticleListItem extends Component {
     );
   }
 
+  onItemPress(event) {
+    const {
+      article: { id, url },
+      onPress
+    } = this.props;
+    onPress(event, { id, url });
+  }
+
   render() {
     const {
       article,
       highResSize,
       imageRatio,
       isLoading,
-      onPress,
       showImage
     } = this.props;
 
@@ -49,7 +61,7 @@ class ArticleListItem extends Component {
     const content = showImage ? summary : shortSummary;
 
     return (
-      <Link onPress={onPress} url={url}>
+      <Link onPress={this.onItemPress} url={url}>
         <View style={styles.listItemContainer}>
           <Card
             highResSize={highResSize}
