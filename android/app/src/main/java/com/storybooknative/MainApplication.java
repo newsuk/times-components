@@ -2,7 +2,6 @@ package com.storybooknative;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -50,18 +49,12 @@ public class MainApplication extends Application implements ReactApplication {
     }
 
     @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
-
-    @Override
     public void onCreate() {
         super.onCreate();
         Stetho.initializeWithDefaults(this);
         SoLoader.init(this, /* native exopackage */ false);
 
-        if (BuildConfig.DEBUG && FlipperUtils.shouldEnableFlipper(this)) {
+        if (FlipperUtils.shouldEnableFlipper(this)) {
             final FlipperClient client = AndroidFlipperClient.getInstance(this);
             client.addPlugin(new InspectorFlipperPlugin(this, DescriptorMapping.withDefaults()));
             client.start();
