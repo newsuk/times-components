@@ -211,6 +211,17 @@ Array [
 ]
 `;
 
+exports[`The showcase converter should turn off strict mode 1`] = `
+Array [
+  Object {
+    "component": <div>
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;
+
 exports[`White Background Decorator 1`] = `
 <View
   style={
