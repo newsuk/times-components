@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. with a single author 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    Alexandra Frean
+  </Text>
+</View>
+`;
+
+exports[`2. with a very long byline 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor | 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor | 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 19,
+      }
+    }
+  >
+    , Environment Editor
+  </Text>
+</View>
+`;

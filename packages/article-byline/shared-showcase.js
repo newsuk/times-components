@@ -32,7 +32,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline with a single author",
+      name: "Byline with a single author",
       type: "story"
     },
     {
@@ -44,7 +44,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline with a text only element",
+      name: "Byline with a text only element",
       type: "story"
     },
     {
@@ -56,7 +56,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline with multiple authors",
+      name: "Byline with multiple authors",
       type: "story"
     },
     {
@@ -68,7 +68,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline with author in the beginning",
+      name: "Byline with author in the beginning",
       type: "story"
     },
     {
@@ -80,7 +80,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline with author at the end",
+      name: "Byline with author at the end",
       type: "story"
     },
     {
@@ -92,7 +92,7 @@ export default (Component, name) => ({
           />
         </ComponentWrapper>
       ),
-      name: "Article Byline that is very long",
+      name: "Byline that is very long",
       type: "story"
     }
   ],

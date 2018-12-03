@@ -12,15 +12,14 @@ const renderAuthorComponent = (children, key) => ({
   )
 });
 
-const ArticleByline = ({ ast, isOpinionByline }) => {
-  const style = isOpinionByline ? styles.opinion : styles.nonLinkText;
-  return renderByline(renderAuthorComponent, ast, style);
-};
+const ArticleByline = ({ ast }) =>
+  renderByline(renderAuthorComponent, ast, styles.nonLinkText);
 
 ArticleByline.displayName = "ArticleByline";
 
 ArticleByline.propTypes = propTypes;
 ArticleByline.defaultProps = defaultProps;
 
+export { default as ArticleBylineOpinion } from "./article-byline-opinion";
 export { default as ArticleBylineWithLinks } from "./article-byline-with-links";
 export default ArticleByline;

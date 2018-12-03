@@ -14,9 +14,7 @@ import styles from "../styles";
 const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
   <MetaContainer>
     <Meta style={styles.meta}>
-      <ArticleBylineWithLinks
-        ast={byline}
-      />
+      <ArticleBylineWithLinks ast={byline} />
     </Meta>
     <Seperator />
     <Meta style={styles.meta}>

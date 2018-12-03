@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleByline, {
+  ArticleBylineOpinion,
   articleBylinePropTypes
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
@@ -32,7 +33,11 @@ const ArticleSummary = props => {
 
     return (
       <Text className={bylineProps.bylineClass}>
-        <ArticleByline {...bylineProps} />
+        {bylineProps.isOpinionByline ? (
+          <ArticleBylineOpinion {...bylineProps} />
+        ) : (
+          <ArticleByline {...bylineProps} />
+        )}
       </Text>
     );
   };

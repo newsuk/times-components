@@ -31,10 +31,7 @@ const ArticleMetaBase = ({
     return [
       ArticleMetaRow(
         styles.byline,
-        <ArticleBylineWithLinks
-          ast={byline}
-          onAuthorPress={onAuthorPress}
-        />,
+        <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
       ),

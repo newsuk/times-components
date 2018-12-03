@@ -15,10 +15,7 @@ const ArticleMeta = ({
 }) => (
   <View style={styles.metaContainer}>
     <View style={styles.meta}>
-      <ArticleBylineWithLinks
-        ast={byline}
-        onAuthorPress={onAuthorPress}
-      />
+      <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
     </View>
     <View style={styles.meta}>
       <Text style={styles.datePublication}>

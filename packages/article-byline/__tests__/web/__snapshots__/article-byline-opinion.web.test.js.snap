@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. single inline element 1`] = `
+<div>
+  <div>
+    Lindsay McIntosh, Scottish Political Editor
+  </div>
+</div>
+`;
+
+exports[`2. with the author in the begining 1`] = `
+<div>
+  <div>
+    Camilla Long
+  </div>
+  <div>
+    , Environment Editor
+  </div>
+</div>
+`;
+
+exports[`3. with the author at the end 1`] = `
+<div>
+  <div>
+    RBS Six Nations, 
+  </div>
+  <div>
+    Mike Atherton
+  </div>
+</div>
+`;
+
+exports[`4. with multiple authors separated by a pipe 1`] = `
+<div>
+  <div>
+    Camilla Long
+  </div>
+  <div>
+     | 
+  </div>
+  <div>
+    Mike Atherton
+  </div>
+  <div>
+     | 
+  </div>
+  <div>
+    Alexandra Frean
+  </div>
+</div>
+`;
+
+exports[`5. with multiple authors separated by text with commas 1`] = `
+<div>
+  <div>
+    Camilla Long
+  </div>
+  <div>
+    , 
+  </div>
+  <div>
+    Mike Atherton
+  </div>
+  <div>
+    , 
+  </div>
+  <div>
+    Alexandra Frean
+  </div>
+</div>
+`;
+
+exports[`6. with multiple authors separated by spaces 1`] = `
+<div>
+  <div>
+    Camilla Long
+  </div>
+  <div>
+     
+  </div>
+  <div>
+    Mike Atherton
+  </div>
+  <div>
+     
+  </div>
+  <div>
+    Alexandra Frean
+  </div>
+</div>
+`;
+
+exports[`7. null with an empty ast 1`] = `null`;
