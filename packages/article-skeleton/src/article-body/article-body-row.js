@@ -164,7 +164,7 @@ const ArticleRow = ({
         };
       }
     },
-    index,
+    `${index}`,
     index,
     template
   );
