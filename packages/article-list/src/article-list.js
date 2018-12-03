@@ -29,6 +29,18 @@ class ArticleList extends Component {
     };
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    const { articles } = this.props;
+    const { articles: nextArticles } = nextProps;
+    return (
+      !articles ||
+      !nextArticles ||
+      articles !== nextArticles ||
+      articles.length !== nextArticles.length ||
+      this.state !== nextState
+    );
+  }
+
   componentWillUnmount() {
     global.cancelAnimationFrame(this.scrollAnimationFrame);
   }
@@ -167,7 +179,7 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
           </View>
         )}
-        keyExtractor={item => `${item.elementId}`}
+        keyExtractor={item => item.elementId}
         ListFooterComponent={articleListFooter}
         ListHeaderComponent={articleListHeader}
         onEndReached={() =>
