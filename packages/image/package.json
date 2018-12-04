@@ -64,7 +64,6 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/caption": "2.2.11",
     "@times-components/gestures": "3.2.17",
     "@times-components/gradient": "2.2.24",
     "@times-components/link": "3.1.22",

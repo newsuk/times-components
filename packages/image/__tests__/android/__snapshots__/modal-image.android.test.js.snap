@@ -45,14 +45,9 @@ exports[`1. modal image 1`] = `
         </View>
       </View>
       <View>
-        <View>
-          <Text>
-            Test caption
-          </Text>
-          <Text>
-            TEST CREDITS
-          </Text>
-        </View>
+        <Text>
+          Caption
+        </Text>
       </View>
     </View>
   </Modal>

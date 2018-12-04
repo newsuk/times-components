@@ -29,9 +29,11 @@ class ModalImage extends Component {
     const { caption } = this.props;
     const { showModal } = this.state;
 
-    const captionWithStyles = caption && React.cloneElement(caption, {
-      style: captionStyles
-    });
+    const captionWithStyles =
+      caption &&
+      React.cloneElement(caption, {
+        style: captionStyles
+      });
 
     return (
       <View>
