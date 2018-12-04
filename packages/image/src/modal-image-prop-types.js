@@ -3,14 +3,12 @@ import { defaultProps, propTypes } from "./image-prop-types";
 
 export const modalPropTypes = {
   ...propTypes,
-  caption: PropTypes.string,
-  credits: PropTypes.string,
-  show: PropTypes.boolean
+  caption: PropTypes.node,
+  show: PropTypes.bool
 };
 
 export const modalDefaultProps = {
   ...defaultProps,
-  caption: "",
-  credits: "",
+  caption: null,
   show: false
 };

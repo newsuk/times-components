@@ -1,21 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Caption from "@times-components/caption";
 import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-prop-types";
-import {
-  LeadAsset,
-  LeadAssetCaptionContainer
-} from "../styles/article-body/responsive";
+import { LeadAsset } from "./styles/responsive.web";
+import { propTypes, defaultProps } from "./article-lead-asset-prop-types";
 
 const LeadAssetComponent = ({
   aspectRatio,
+  caption,
   displayImage,
   isVideo,
   leadAsset,
-  width
+  width,
+  ...props
 }) => {
   if (!leadAsset) {
     return null;
@@ -39,22 +38,19 @@ const LeadAssetComponent = ({
   );
 
   return (
-    <LeadAsset>
+    <LeadAsset {...props}>
       <figure style={{ margin: 0 }}>
         <AspectRatioContainer aspectRatio={aspectRatio}>
           {leadAssetView}
         </AspectRatioContainer>
-        <LeadAssetCaptionContainer>
-          <figcaption>
-            <Caption credits={leadAsset.credits} text={leadAsset.caption} />
-          </figcaption>
-        </LeadAssetCaptionContainer>
+        {caption && <figcaption>{caption}</figcaption>}
       </figure>
     </LeadAsset>
   );
 };
 
 LeadAssetComponent.propTypes = {
+  ...propTypes,
   aspectRatio: PropTypes.string,
   displayImage: cropPropTypes,
   isVideo: PropTypes.bool,
@@ -69,15 +65,14 @@ LeadAssetComponent.propTypes = {
     crop169: cropPropTypes,
     crop1251: cropPropTypes
   }),
-  width: PropTypes.number
 };
 
 LeadAssetComponent.defaultProps = {
+  ...defaultProps,
   aspectRatio: "1",
   displayImage: null,
   isVideo: false,
   leadAsset: null,
-  width: null
 };
 
 export default LeadAssetComponent;

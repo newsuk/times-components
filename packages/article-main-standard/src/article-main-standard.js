@@ -5,9 +5,10 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
+import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
-import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
 import {
@@ -42,6 +43,13 @@ class ArticlePage extends Component {
         <View key="leadAsset" testID="leadAsset">
           <ArticleLeadAsset
             data={{ ...leadAsset, onVideoPress }}
+            modalCaption={
+              <Caption
+                credits={leadAsset.credits}
+                text={leadAsset.caption}
+              />
+            }
+            style={styles.leadAsset}
             width={parentProps.width}
           />
         </View>

@@ -5,14 +5,13 @@ import { getStandardTemplateCrop } from "@times-components/utils";
 import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetImage = ({
-  caption,
-  credits,
   crop11,
   crop23,
   crop32,
   crop45,
   crop169,
   crop1251,
+  modalCaption,
   width
 }) => {
   const crop = getStandardTemplateCrop({
@@ -35,8 +34,7 @@ const ArticleLeadAssetImage = ({
   return (
     <ModalImage
       aspectRatio={aspectRatio}
-      caption={caption}
-      credits={credits}
+      caption={modalCaption}
       highResSize={width}
       uri={url}
     />
@@ -44,26 +42,24 @@ const ArticleLeadAssetImage = ({
 };
 
 ArticleLeadAssetImage.propTypes = {
-  caption: PropTypes.string,
-  credits: PropTypes.string,
   crop11: cropPropTypes,
   crop23: cropPropTypes,
   crop32: cropPropTypes,
   crop45: cropPropTypes,
   crop169: cropPropTypes,
   crop1251: cropPropTypes,
+  modalCaption: PropTypes.node,
   width: PropTypes.number
 };
 
 ArticleLeadAssetImage.defaultProps = {
-  caption: null,
-  credits: null,
   crop11: null,
   crop23: null,
   crop32: null,
   crop45: null,
   crop169: null,
   crop1251: null,
+  modalCaption: null,
   width: null
 };
 
