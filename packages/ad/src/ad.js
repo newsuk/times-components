@@ -54,7 +54,7 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { config, hasError, isAdReady, windowWidth } = this.state;
+    const { config, hasError, isAdReady } = this.state;
 
     if (hasError) return null;
 
@@ -62,7 +62,7 @@ class Ad extends Component {
       getPrebidSlotConfig(
         slot,
         "article",
-        windowWidth,
+        config.maxSizes.width,
         adConfig.biddersConfig.bidders
       )
     );
@@ -71,6 +71,7 @@ class Ad extends Component {
       adUnit: adConfig.adUnit,
       config,
       contextUrl,
+      debug: adConfig.debug || false,
       networkId: adConfig.networkId,
       pageTargeting: adConfig.pageTargeting,
       prebidConfig: Object.assign(this.prebidConfig, {

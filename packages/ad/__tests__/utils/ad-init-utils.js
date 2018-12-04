@@ -18,19 +18,6 @@ export default () => {
     expect(scripts.length).toBe(1);
   });
 
-  it("logs an error and swallows the exception if adding a script tag throws an exception", () => {
-    jest
-      .spyOn(mock.window.document.head, "appendChild")
-      .mockImplementation(() => {
-        throw new Error("lala");
-      });
-    utils.createScriptElement("mock-uri");
-    expect(initOptions.eventCallback).toHaveBeenCalledWith(
-      "log",
-      'Could not insert script "mock-uri" (Error: lala) - could be caused by ad blocker'
-    );
-  });
-
   it("resolves the promise on script element load event", done => {
     jest
       .spyOn(utils, "createScriptElement")
@@ -50,17 +37,5 @@ export default () => {
         onError();
       });
     utils.loadScript("my-script", 0).catch(() => done());
-  });
-
-  it("errors if the same script is loaded twice", () => {
-    const doLoadScript = () => utils.loadScript("my-script", 0).catch(() => {});
-    doLoadScript();
-    expect(doLoadScript).toThrow('Inserting "my-script" twice');
-  });
-
-  it("rejects the promise if the timeout elapses before the script loads", done => {
-    jest.spyOn(utils, "createScriptElement").mockImplementation();
-    utils.loadScript("my-script", 1000).catch(() => done());
-    jest.runTimersToTime(1000);
   });
 };

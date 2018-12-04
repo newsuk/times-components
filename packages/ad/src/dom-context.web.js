@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
+import logger from "./utils/logger";
 
 class DOMContext extends Component {
   eventQueue = [];
@@ -42,14 +43,19 @@ class DOMContext extends Component {
   };
 
   processEvent = ({ type, detail }) => {
-    const { onRenderComplete, onRenderError } = this.props;
+    const { onRenderComplete, onRenderError, data } = this.props;
     if (this.eventQueue.length === 0) return;
-    if (type === "error") {
-      throw new Error(`DomContext error: ${detail}`);
-    } else if (type === "scriptLoadingError") {
-      onRenderError();
-    } else if (type === "renderComplete") {
-      onRenderComplete();
+    switch (type) {
+      case "renderFailed":
+        onRenderError();
+        break;
+      case "renderComplete":
+        onRenderComplete();
+        break;
+      default:
+        if (data.debug) {
+          logger(type, detail);
+        }
     }
   };
 

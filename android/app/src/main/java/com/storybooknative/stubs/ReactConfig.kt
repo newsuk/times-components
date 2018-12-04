@@ -20,7 +20,7 @@ class ReactConfig : BaseJavaModule() {
             put("cookieEid", "")
             put("isLoggedIn", "")
             put("graphqlEndPoint", "https://api.thetimes.co.uk/graphql")
-            put("adNetworkId", "")
+            put("adNetworkId", "25436805")
             put("timezone", "")
         }
     }

@@ -15,10 +15,8 @@
     "start": "webpack --config=src/standalone-renderer/webpack.config.js && node src/standalone-renderer/app.js",
     "start:testservers": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on tcp:3000",
     "stop:testservers": "kill $(lsof -t -i:3000,4000)",
-    "cypress:debug": "DEBUG=cypress:* cypress open",
     "test:integration": "yarn bundle:prod && yarn start:testservers && cypress run; exitCode=$?; yarn stop:testservers; exit $exitCode",
-    "test:integration:dev": "yarn bundle:dev && yarn start:testservers && cypress run --headed; exitCode=$?; yarn stop:testservers; exit $exitCode",
-    "test:integration:debug": "yarn bundle:dev && yarn start:testservers && DEBUG=cypress:* cypress run --headed; exitCode=$?; yarn stop:testservers; exit $exitCode"
+    "test:integration:debug": "yarn bundle:prod && yarn start:testservers && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testservers; exit $exitCode"
   },
   "repository": {
     "type": "git",

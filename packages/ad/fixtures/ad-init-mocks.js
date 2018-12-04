@@ -1,7 +1,7 @@
 import { jsdom } from "jsdom";
 import adInitOriginal from "../src/utils/ad-init";
 
-export const makeAdInitMocks = () => {
+export const makeAdInitMocks = (withHeaderBidding = false) => {
   const document = jsdom("<html></html>");
   const window = document.defaultView;
   window.matchMedia = jest.fn().mockImplementation(() => ({
@@ -47,11 +47,20 @@ export const makeAdInitMocks = () => {
   };
   window.pbjs = pbjs;
   const apstag = {
+    /* eslint-disable prefer-rest-params, no-underscore-dangle */
     _Q: [],
-    fetchBids: jest.fn(),
-    init: jest.fn(),
+    addToQueue(action, d) {
+      this._Q.push([action, d]);
+    },
+    fetchBids() {
+      this.addToQueue("f", arguments);
+    },
+    init() {
+      this.addToQueue("i", arguments);
+    },
+    /* eslint-enable prefer-rest-params, no-underscore-dangle */
     setDisplayBids: jest.fn(),
-    targetingKeys: jest.fn()
+    targetingKeys: jest.fn().mockReturnValue([])
   };
   window.apstag = apstag;
   const slotConfig = {
@@ -70,10 +79,20 @@ export const makeAdInitMocks = () => {
     sizes: [],
     slotName: "mock-code"
   };
+  const nuk = {
+    ads: withHeaderBidding
+      ? {
+          fetchBids: Promise.resolve(),
+          loaded: Promise.resolve()
+        }
+      : false
+  };
+  window.nuk = nuk;
   const initOptions = {
     data: {
       adUnit: "mockAdUnit",
       config: slotConfig,
+      debug: true,
       networkId: "mockNetwork",
       pageTargeting: {
         pageOptionName: "pageOptionValue"
@@ -106,6 +125,7 @@ export const makeAdInitMocks = () => {
     mock: {
       document,
       googletag,
+      nuk,
       processGoogletagCommandQueue,
       pubAds,
       sizeMapping,
