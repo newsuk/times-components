@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.6.7...@times-components/ssr@1.6.8) (2018-12-04)
+
+
+### Bug Fixes
+
+* fix prebid ads ([#1530](https://github.com/newsuk/times-components/issues/1530)) ([a689fb0](https://github.com/newsuk/times-components/commit/a689fb0))
+
+
+
+
+
 <a name="1.6.7"></a>
 ## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.6.6...@times-components/ssr@1.6.7) (2018-12-03)
 

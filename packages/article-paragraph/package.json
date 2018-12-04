@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-paragraph",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "Article Paragraph",
   "main": "dist/",
   "dev": "src/",
@@ -35,9 +35,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/context": "0.5.14",
-    "@times-components/markup-forest": "1.2.5",
-    "@times-components/styleguide": "3.9.1",
+    "@times-components/context": "0.5.15",
+    "@times-components/markup-forest": "1.2.6",
+    "@times-components/styleguide": "3.9.2",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
@@ -45,10 +45,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.8",
-    "@times-components/jest-configurator": "2.1.17",
-    "@times-components/jest-serializer": "3.1.10",
-    "@times-components/markup": "3.2.26",
-    "@times-components/storybook": "3.2.0",
+    "@times-components/jest-configurator": "2.1.18",
+    "@times-components/jest-serializer": "3.1.11",
+    "@times-components/markup": "3.2.27",
+    "@times-components/storybook": "3.2.1",
     "@times-components/test-utils": "2.0.3",
     "@times-components/webpack-configurator": "2.0.14",
     "babel-cli": "6.26.0",
