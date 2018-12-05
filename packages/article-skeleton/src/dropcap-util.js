@@ -9,8 +9,7 @@ const insertDropcap = (firstTextChild, children) => {
     name,
     attributes: { value }
   } = firstTextChild;
-  let child = children;
-  if (name === "text") {
+  if (name === "text" && value.trim().length > 0) {
     const dropCapElement = {
       attributes: {
         value: value.slice(0, 1)
@@ -25,13 +24,13 @@ const insertDropcap = (firstTextChild, children) => {
       children: [],
       name: "text"
     };
-    child = [dropCapElement, newTextElement, ...children.slice(1)];
+    return [dropCapElement, newTextElement, ...children.slice(1)];
   }
-  return child;
+  return children;
 };
 
 const insertDropcapIntoAST = (firstContentChild, template) => {
-  let child = firstContentChild;
+  const child = firstContentChild;
   const { name, children } = child;
   let newChildren = children;
   if (
@@ -42,8 +41,7 @@ const insertDropcapIntoAST = (firstContentChild, template) => {
   ) {
     newChildren = insertDropcap(children[0], children);
   }
-  child = { ...child, children: newChildren };
-  return child;
+  return { ...child, children: newChildren };
 };
 
 export default insertDropcapIntoAST;
