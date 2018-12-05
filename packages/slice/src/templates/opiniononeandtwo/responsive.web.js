@@ -12,7 +12,7 @@ export const getContainer = ({ supportCount }) => styled(View)`
   width: 100%;
 
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
+    flex-direction: ${supportCount > 0 ? "row" : "column"};
     width: ${supportCount === 1 ? "100%" : "80.8%"};
 
     a {
@@ -153,7 +153,6 @@ export const getSupportContainer = ({ index, supportCount }) => {
 
     @media (min-width: ${breakpoints.medium}px) {
       flex-basis: 0 !important;
-      padding-right: 0;
     }
   `;
 
@@ -175,11 +174,16 @@ export const getSupportContainer = ({ index, supportCount }) => {
         padding-right: ${supportCount === 2 ? 0 : spacing(2)};
         padding-top: 0;
       }
+
+      @media (min-width: ${breakpoints.wide}px) {
+        padding-right: ${supportCount === 2 ? spacing(2) : 0};
+      }
     `;
   } else {
     Base = styled(Base)`
       @media (min-width: ${breakpoints.medium}px) {
         padding-left: ${supportCount === 2 ? "0" : spacing(2)};
+        padding-right: ${supportCount === 2 ? "0" : spacing(2)};
       }
     `;
   }
