@@ -32,16 +32,15 @@ const insertDropcap = (firstTextChild, children) => {
 const insertDropcapIntoAST = (firstContentChild, template) => {
   const child = firstContentChild;
   const { name, children } = child;
-  let newChildren = children;
   if (
     template &&
     templateWithDropCaps.includes(template) &&
     name === "paragraph" &&
     children.length > 0
   ) {
-    newChildren = insertDropcap(children[0], children);
+    return { ...child, children: insertDropcap(children[0], children) };
   }
-  return { ...child, children: newChildren };
+  return { ...child, children };
 };
 
 export default insertDropcapIntoAST;
