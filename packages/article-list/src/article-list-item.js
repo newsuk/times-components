@@ -13,11 +13,41 @@ import { getImageUri, getHeadline } from "./utils";
 import styles from "./styles";
 
 class ArticleListItem extends Component {
+  constructor(props) {
+    super(props);
+    this.onItemPress = this.onItemPress.bind(this);
+    this.renderContent = this.renderContent.bind(this);
+    this.renderHeadline = this.renderHeadline.bind(this);
+  }
+
   shouldComponentUpdate(nextProps) {
     const { article } = this.props;
     const { article: nextArticle } = nextProps;
     return (
       !article || !nextArticle || nextArticle.elementId !== article.elementId
+    );
+  }
+
+  onItemPress(event) {
+    const {
+      article: { id, url },
+      onPress
+    } = this.props;
+    onPress(event, { id, url });
+  }
+
+  renderContent() {
+    const { article = {} } = this.props;
+    const { showImage, shortSummary, summary } = article;
+    const content = showImage ? summary : shortSummary;
+    return <ArticleSummaryContent ast={content} />;
+  }
+
+  renderHeadline() {
+    const { article = {} } = this.props;
+    const { headline, shortHeadline } = article;
+    return (
+      <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
     );
   }
 
@@ -27,29 +57,23 @@ class ArticleListItem extends Component {
       highResSize,
       imageRatio,
       isLoading,
-      onPress,
       showImage
     } = this.props;
 
     const {
       byline,
-      headline,
       hasVideo,
       label,
       publicationName,
       publishedTime,
       section,
-      shortHeadline,
-      shortSummary,
-      summary,
       url
     } = article || {};
 
     const imageUri = getImageUri(article);
-    const content = showImage ? summary : shortSummary;
 
     return (
-      <Link onPress={onPress} url={url}>
+      <Link onPress={this.onItemPress} url={url}>
         <View style={styles.listItemContainer}>
           <Card
             highResSize={highResSize}
@@ -67,16 +91,12 @@ class ArticleListItem extends Component {
                     }
                   : null
               }
-              content={() => <ArticleSummaryContent ast={content} />}
+              content={this.renderContent}
               datePublicationProps={{
                 date: publishedTime,
                 publication: publicationName
               }}
-              headline={() => (
-                <ArticleSummaryHeadline
-                  headline={getHeadline(headline, shortHeadline)}
-                />
-              )}
+              headline={this.renderHeadline}
               labelProps={{
                 color: colours.section[section] || colours.section.default,
                 isVideo: hasVideo,

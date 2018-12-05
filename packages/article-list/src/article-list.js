@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
 import Button from "@times-components/button";
-import ErrorView from "@times-components/error-view";
 import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleListError from "./article-list-error";
-import ArticleListItem from "./article-list-item";
+import ArticleListItemWithError from "./article-list-item-with-error";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
@@ -22,6 +21,7 @@ class ArticleList extends Component {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
     this.fetchMoreOnEndReached = this.fetchMoreOnEndReached.bind(this);
+    this.renderItem = this.renderItem.bind(this);
     this.state = {
       loadingMore: false,
       loadMoreError: null,
@@ -78,6 +78,32 @@ class ArticleList extends Component {
     );
   }
 
+  renderItem({ item, index }) {
+    const {
+      articles,
+      articlesLoading,
+      imageRatio,
+      onArticlePress,
+      pageSize,
+      showImages
+    } = this.props;
+    const { width } = this.state;
+
+    return (
+      <ArticleListItemWithError
+        article={item.isLoading ? null : item}
+        highResSize={width}
+        imageRatio={imageRatio}
+        index={index}
+        isLoading={item.isLoading === true}
+        length={articlesLoading ? pageSize : articles.length}
+        onPress={onArticlePress}
+        showImage={showImages}
+        testID={`articleList-${index}`}
+      />
+    );
+  }
+
   render() {
     const {
       articleListHeader,
@@ -86,15 +112,12 @@ class ArticleList extends Component {
       count,
       emptyStateMessage,
       error,
-      imageRatio,
-      onArticlePress,
       onViewed,
       pageSize,
       receiveChildList,
-      refetch,
-      showImages
+      refetch
     } = this.props;
-    const { loadMoreError, width } = this.state;
+    const { loadMoreError } = this.state;
 
     if (error) {
       return (
@@ -188,30 +211,10 @@ class ArticleList extends Component {
         }
         onEndReachedThreshold={2}
         onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-        pageSize={pageSize}
-        renderItem={({ item, index }) => (
-          <ErrorView>
-            {({ hasError }) =>
-              hasError ? null : (
-                <ArticleListItem
-                  article={item.isLoading ? null : item}
-                  highResSize={width}
-                  imageRatio={imageRatio}
-                  index={index}
-                  isLoading={item.isLoading === true}
-                  length={data.length}
-                  onPress={e =>
-                    onArticlePress(e, { id: item.id, url: item.url })
-                  }
-                  showImage={showImages}
-                  testID={`articleList-${index}`}
-                />
-              )
-            }
-          </ErrorView>
-        )}
+        renderItem={this.renderItem}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
+        windowSize={5}
       />
     );
   }
