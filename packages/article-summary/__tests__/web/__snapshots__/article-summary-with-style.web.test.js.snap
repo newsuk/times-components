@@ -86,7 +86,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="S5"
+    className="S1"
   >
     <ArticleByline
       ast={

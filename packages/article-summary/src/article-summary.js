@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleByline, {
-  ArticleBylineWithLinks,
+  ArticleBylineOpinion,
   articleBylinePropTypes
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
@@ -14,8 +14,6 @@ import ArticleSummaryHeadline from "./article-summary-headline";
 import renderer from "./article-summary-renderer";
 import styles from "./styles";
 import summarise from "./summarise";
-
-const { style: TextPropTypesStyle } = Text;
 
 function renderAst(ast) {
   return renderTrees(summarise(ast), renderer);
@@ -32,20 +30,15 @@ const ArticleSummary = props => {
 
   const renderByline = () => {
     if (bylineProps.ast.length === 0) return null;
+
     return (
-      <Text
-        className={bylineProps.bylineClass}
-        style={[
-          bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText,
-          bylineProps.bylineStyle
-        ]}
-      >
-        {bylineProps.hasBylineLinks ? (
-          <ArticleBylineWithLinks {...bylineProps} />
+      <View className={bylineProps.bylineClass}>
+        {bylineProps.isOpinionByline ? (
+          <ArticleBylineOpinion {...bylineProps} />
         ) : (
           <ArticleByline {...bylineProps} />
         )}
-      </Text>
+      </View>
     );
   };
 
@@ -84,8 +77,6 @@ ArticleSummary.propTypes = {
   bylineProps: PropTypes.shape({
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
-    bylineStyle: TextPropTypesStyle,
-    hasBylineLinks: PropTypes.bool,
     isOpinionByline: PropTypes.bool
   }),
   content: PropTypes.func,
@@ -94,7 +85,6 @@ ArticleSummary.propTypes = {
     publication: PropTypes.string
   }),
   headline: PropTypes.func,
-  isOpinionByline: PropTypes.bool,
   labelProps: PropTypes.shape({
     color: PropTypes.string,
     isVideo: PropTypes.bool,
@@ -107,7 +97,6 @@ ArticleSummary.defaultProps = {
   content: () => null,
   datePublicationProps: null,
   headline: () => null,
-  isOpinionByline: false,
   labelProps: null
 };
 

@@ -124,21 +124,11 @@ exports[`default styles 1`] = `
                 >
                   March 13 2015, 6:54pm
                 </Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 0,
-                    }
-                  }
-                >
+                <View>
                   <Text
                     style={
                       Object {
-                        "color": "#1D1D1B",
+                        "color": "#333333",
                         "flexDirection": "row",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
@@ -148,7 +138,7 @@ exports[`default styles 1`] = `
                   >
                     Deborah Haynes
                   </Text>
-                </Text>
+                </View>
               </View>
             </Card>
           </View>

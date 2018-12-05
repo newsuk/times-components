@@ -243,19 +243,7 @@ exports[`default styles 1`] = `
 .S9 {
   border-top-width: 0px;
   border-bottom-width: 0px;
-  display: inline;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  font-weight: inherit;
-  line-height: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.S10 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  color: rgba(105,105,105,1.00);
+  color: rgba(51,51,51,1.00);
   display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -266,14 +254,6 @@ exports[`default styles 1`] = `
 }
 
 .IS1 {
-  color: rgba(219,19,59,1.00);
-}
-
-.IS2 {
-  color: rgba(219,19,59,1.00);
-}
-
-.IS3 {
   color: rgba(219,19,59,1.00);
 }
 </style>
@@ -347,18 +327,18 @@ exports[`default styles 1`] = `
                     </time>
                   </div>
                   <div
-                    className="S10"
+                    className="S4"
                   >
-                    <span
-                      className="S9 IS2"
+                    <div
+                      className="S9"
                     >
                       Camilla Long
-                    </span>
-                    <span
-                      className="S9 IS3"
+                    </div>
+                    <div
+                      className="S9"
                     >
                       , Environment Editor
-                    </span>
+                    </div>
                   </div>
                 </div>
               </Card>

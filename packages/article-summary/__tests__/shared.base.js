@@ -15,7 +15,11 @@ import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
 import videoLabelFixture from "../fixtures/video-label";
 
-jest.mock("@times-components/article-byline", () => "ArticleByline");
+jest.mock("@times-components/article-byline", () => ({
+  __esModule: true,
+  ArticleBylineOpinion: "ArticleBylineOpinion",
+  default: "ArticleByline"
+}));
 jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/video-label", () => "VideoLabel");

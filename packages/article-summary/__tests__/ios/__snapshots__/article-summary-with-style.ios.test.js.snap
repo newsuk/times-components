@@ -64,17 +64,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -109,7 +99,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 

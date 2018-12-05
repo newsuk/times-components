@@ -47,11 +47,11 @@ exports[`1. no short headline 1`] = `
                     title="test label"
                   />
                 </View>
-                <Text>
+                <View>
                   <Text>
                     Sathnam Sanghera
                   </Text>
-                </Text>
+                </View>
                 <Text
                   accessibilityRole="heading"
                   aria-level="3"

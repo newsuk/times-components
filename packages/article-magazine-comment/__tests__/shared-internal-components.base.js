@@ -68,21 +68,15 @@ const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "article meta uses default section colour",
+    name: "article meta",
     test() {
       const output = renderComponent(
-        <Context.Provider
-          value={{
-            theme: { sectionColour: null }
-          }}
-        >
-          <Meta
-            byline={bylineWithLink()}
-            onAuthorPress={() => {}}
-            publicationName="TIMES"
-            publishedTime="2015-03-23T19:39:39.000Z"
-          />
-        </Context.Provider>
+        <Meta
+          byline={bylineWithLink()}
+          onAuthorPress={() => {}}
+          publicationName="TIMES"
+          publishedTime="2015-03-23T19:39:39.000Z"
+        />
       );
 
       expect(output).toMatchSnapshot();

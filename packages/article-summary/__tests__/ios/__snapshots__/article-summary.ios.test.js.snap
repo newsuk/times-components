@@ -27,7 +27,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -62,7 +62,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 
@@ -74,8 +74,8 @@ exports[`2. article summary with opinion byline 1`] = `
       title="Test label"
     />
   </View>
-  <Text>
-    <ArticleByline
+  <View>
+    <ArticleBylineOpinion
       ast={
         Array [
           Object {
@@ -95,7 +95,7 @@ exports[`2. article summary with opinion byline 1`] = `
       }
       isOpinionByline={true}
     />
-  </Text>
+  </View>
   <Text
     accessibilityRole="heading"
     aria-level="3"
@@ -143,7 +143,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -163,7 +163,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 
@@ -305,7 +305,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
       publication="SUNDAYTIMES"
     />
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -325,7 +325,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 
@@ -374,7 +374,7 @@ exports[`9. article summary component with no label 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -394,7 +394,7 @@ exports[`9. article summary component with no label 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 
@@ -443,7 +443,7 @@ exports[`11. article summary component with no date publication 1`] = `
       ...
     </Text>
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -463,7 +463,7 @@ exports[`11. article summary component with no date publication 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;
 
@@ -495,7 +495,7 @@ exports[`12. article summary component with a video label 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
+  <View>
     <ArticleByline
       ast={
         Array [
@@ -515,6 +515,6 @@ exports[`12. article summary component with a video label 1`] = `
         ]
       }
     />
-  </Text>
+  </View>
 </View>
 `;

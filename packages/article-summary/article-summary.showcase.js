@@ -4,7 +4,6 @@ import ArticleSummary from "./src/article-summary";
 
 import defaultFixture from "./fixtures/default";
 import withSummaryLinksFixture from "./fixtures/with-summary-links";
-import withBylineLinksFixture from "./fixtures/with-byline-links";
 import articleMultiFixture from "./fixtures/article-multi";
 import noBylineFixture from "./fixtures/no-byline";
 import noLabelFixture from "./fixtures/no-label";
@@ -23,11 +22,6 @@ export default {
     {
       component: () => story(<ArticleSummary {...withSummaryLinksFixture()} />),
       name: "With links in summary",
-      type: "story"
-    },
-    {
-      component: () => story(<ArticleSummary {...withBylineLinksFixture()} />),
-      name: "With byline links",
       type: "story"
     },
     {

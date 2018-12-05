@@ -248,29 +248,17 @@ exports[`default styles 1`] = `
 .S5 {
   border-top-width: 0px;
   border-bottom-width: 0px;
-  display: inline;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  font-weight: inherit;
-  line-height: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.S6 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(133,0,41,1.00);
   display: inline;
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 0px;
+  line-height: 27px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   border-top-width: 0px;
   border-bottom-width: 0px;
   color: rgba(51,51,51,1.00);
@@ -283,7 +271,7 @@ exports[`default styles 1`] = `
   margin-top: 0px;
 }
 
-.S8 {
+.S7 {
   border-top-width: 0px;
   border-bottom-width: 0px;
   color: inherit;
@@ -296,7 +284,7 @@ exports[`default styles 1`] = `
   margin-bottom: 0px;
 }
 
-.S9 {
+.S8 {
   border-top-width: 0px;
   border-bottom-width: 0px;
   color: rgba(105,105,105,1.00);
@@ -309,7 +297,7 @@ exports[`default styles 1`] = `
   margin-bottom: 10px;
 }
 
-.S10 {
+.S9 {
   border-top-width: 0px;
   border-bottom-width: 0px;
   color: rgba(105,105,105,1.00);
@@ -323,10 +311,6 @@ exports[`default styles 1`] = `
 }
 
 .IS1 {
-  color: rgba(19,53,78,1.00);
-}
-
-.IS2 {
   color: rgba(19,53,78,1.00);
 }
 </style>
@@ -373,16 +357,16 @@ exports[`default styles 1`] = `
                     </div>
                   </div>
                   <div
-                    className="opinionBylineClass S6"
+                    className="opinionBylineClass S4"
                   >
-                    <span
-                      className="S5 IS2"
+                    <div
+                      className="S5"
                     >
                       Sathnam Sanghera
-                    </span>
+                    </div>
                   </div>
                   <h3
-                    className="opinionHeadlineClass S7"
+                    className="opinionHeadlineClass S6"
                   >
                     Test Short Headline
                   </h3>
@@ -390,10 +374,10 @@ exports[`default styles 1`] = `
                     className="S4"
                   >
                     <div
-                      className="summaryHidden opinionSummary125Class S9"
+                      className="summaryHidden opinionSummary125Class S8"
                     >
                       <span
-                        className="S8"
+                        className="S7"
                       >
                         
                         Summary 125
@@ -401,10 +385,10 @@ exports[`default styles 1`] = `
                       </span>
                     </div>
                     <div
-                      className="summaryHidden opinionSummary160Class S9"
+                      className="summaryHidden opinionSummary160Class S8"
                     >
                       <span
-                        className="S8"
+                        className="S7"
                       >
                         
                         Summary 160
@@ -413,7 +397,7 @@ exports[`default styles 1`] = `
                     </div>
                   </div>
                   <div
-                    className="S10"
+                    className="S9"
                   >
                     <time>
                       March 13 2015, 6:54pm

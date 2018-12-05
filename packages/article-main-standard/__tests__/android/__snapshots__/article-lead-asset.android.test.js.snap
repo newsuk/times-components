@@ -66,7 +66,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
                   },
                 ]
               }
-              color="#1D1D1B"
             />
           </Text>
         </View>

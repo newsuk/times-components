@@ -56,14 +56,14 @@ exports[`1. no short headline 1`] = `
                 <Text>
                   March 13 2015, 6:54pm
                 </Text>
-                <Text>
+                <View>
                   <Text>
                     Camilla Long
                   </Text>
                   <Text>
                     , Environment Editor
                   </Text>
-                </Text>
+                </View>
               </View>
             </Card>
           </View>

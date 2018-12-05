@@ -7,7 +7,6 @@ exports[`1. with a single author 1`] = `
     style={
       Object {
         "color": "#006699",
-        "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
@@ -20,54 +19,13 @@ exports[`1. with a single author 1`] = `
 </View>
 `;
 
-exports[`2. with a given section colour 1`] = `
+exports[`2. with a very long byline 1`] = `
 <View>
   <Text
     accessibilityRole="link"
     style={
       Object {
-        "color": "blue",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 19,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>
-</View>
-`;
-
-exports[`3. with given styles 1`] = `
-<View>
-  <Text
-    accessibilityRole="link"
-    style={
-      Object {
-        "color": "red",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 19,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>
-</View>
-`;
-
-exports[`4. with a a very long byline 1`] = `
-<View>
-  <Text
-    accessibilityRole="link"
-    style={
-      Object {
-        "color": "blue",
-        "flexDirection": "row",
+        "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
@@ -80,7 +38,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#696969",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -94,8 +52,7 @@ exports[`4. with a a very long byline 1`] = `
     accessibilityRole="link"
     style={
       Object {
-        "color": "blue",
-        "flexDirection": "row",
+        "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
@@ -108,7 +65,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#696969",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
@@ -122,8 +79,7 @@ exports[`4. with a a very long byline 1`] = `
     accessibilityRole="link"
     style={
       Object {
-        "color": "blue",
-        "flexDirection": "row",
+        "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
@@ -136,7 +92,7 @@ exports[`4. with a a very long byline 1`] = `
   <Text
     style={
       Object {
-        "color": "blue",
+        "color": "#696969",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,

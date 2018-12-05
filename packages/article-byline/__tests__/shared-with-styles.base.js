@@ -4,13 +4,6 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import authorsFixture from "../fixtures/authors.json";
 
-const styles = {
-  link: {
-    color: "red",
-    textDecorationLine: "underline"
-  }
-};
-
 export default Component => {
   const renderArticleByline = props =>
     TestRenderer.create(
@@ -31,33 +24,10 @@ export default Component => {
       }
     },
     {
-      name: "with a given section colour",
+      name: "with a very long byline",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.singleAuthor,
-          color: "blue"
-        });
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "with given styles",
-      test: () => {
-        const testInstance = renderArticleByline({
-          ast: authorsFixture.singleAuthor,
-          style: styles
-        });
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "with a a very long byline",
-      test: () => {
-        const testInstance = renderArticleByline({
-          ast: authorsFixture.veryLongByline,
-          color: "blue"
+          ast: authorsFixture.veryLongByline
         });
 
         expect(testInstance).toMatchSnapshot();

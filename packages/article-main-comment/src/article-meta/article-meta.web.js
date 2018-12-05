@@ -1,8 +1,6 @@
 import React from "react";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
-import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
 
 import metaPropTypes from "./article-meta-prop-types";
 import {
@@ -16,14 +14,7 @@ import styles from "../styles";
 const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
   <MetaContainer>
     <Meta style={styles.meta}>
-      <Context.Consumer>
-        {({ theme: { sectionColour } }) => (
-          <ArticleBylineWithLinks
-            ast={byline}
-            color={sectionColour || colours.section.default}
-          />
-        )}
-      </Context.Consumer>
+      <ArticleBylineWithLinks ast={byline} />
     </Meta>
     <Seperator />
     <Meta style={styles.meta}>

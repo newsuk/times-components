@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
-import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
 import styles from "../styles/article-meta";
 
 const ArticleMetaRow = (textStyle, component, key, RowWrapper) => (
@@ -33,15 +31,7 @@ const ArticleMetaBase = ({
     return [
       ArticleMetaRow(
         styles.byline,
-        <Context.Consumer>
-          {({ theme: { sectionColour } }) => (
-            <ArticleBylineWithLinks
-              ast={byline}
-              color={sectionColour || colours.section.default}
-              onAuthorPress={onAuthorPress}
-            />
-          )}
-        </Context.Consumer>,
+        <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
       ),

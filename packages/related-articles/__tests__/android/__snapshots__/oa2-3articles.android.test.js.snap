@@ -47,11 +47,11 @@ exports[`1. one opinion and two support related articles 1`] = `
                     title="first label"
                   />
                 </View>
-                <Text>
+                <View>
                   <Text>
                     Sathnam Sanghera
                   </Text>
-                </Text>
+                </View>
                 <Text
                   accessibilityRole="heading"
                   aria-level="3"
@@ -111,11 +111,11 @@ exports[`1. one opinion and two support related articles 1`] = `
                 <Text>
                   January 17 2018, 12:00pm
                 </Text>
-                <Text>
+                <View>
                   <Text>
                     Deborah Haynes
                   </Text>
-                </Text>
+                </View>
               </View>
             </Card>
           </View>
@@ -157,11 +157,11 @@ exports[`1. one opinion and two support related articles 1`] = `
                 <Text>
                   January 17 2018, 12:00pm
                 </Text>
-                <Text>
+                <View>
                   <Text>
                     Deborah Haynes
                   </Text>
-                </Text>
+                </View>
               </View>
             </Card>
           </View>
