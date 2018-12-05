@@ -16,11 +16,11 @@ exports[`2. mixture of tags 1`] = `
 
 exports[`3. nested tags 1`] = `
 <div>
-  Some text is here
+  Some text is here 
   <div>
-    and there is some
+    and there is some 
     <div>
-      more text
+      more text 
       <span>
         and in here
       </span>
@@ -33,11 +33,11 @@ exports[`3. nested tags 1`] = `
 
 exports[`4. ignore children of nested tags 1`] = `
 <div>
-  Some text is here
+  Some text is here 
   <div>
-    and there is some
+    and there is some 
     <div>
-      more text
+      more text 
       <span>
         and in here
       </span>
@@ -131,11 +131,11 @@ Array [
 
 exports[`8. wrapped tags 1`] = `
 <div>
-  Camilla Long is
+  Camilla Long is 
   <em>
     the Sunday Times
   </em>
-   film critic. She also writes interviews and a column, and was named
+   film critic. She also writes interviews and a column, and was named 
   <strong>
     interviewer of the year
   </strong>
