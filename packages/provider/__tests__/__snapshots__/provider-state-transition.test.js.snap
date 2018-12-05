@@ -42,7 +42,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
@@ -65,7 +64,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
@@ -111,7 +109,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
@@ -134,7 +131,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
@@ -157,7 +153,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {
@@ -180,7 +175,6 @@ Array [
     "author": Object {
       "__typename": "Author",
       "name": "1",
-      Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"1\\"})",
     },
     "debounceTimeMs": 1000,
     "debouncedProps": Object {

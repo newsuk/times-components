@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { WebView, View, Linking, Platform } from "react-native";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
+import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 class DOMContext extends PureComponent {
@@ -20,21 +21,24 @@ class DOMContext extends PureComponent {
   }
 
   handleMessageEvent = e => {
-    const { onRenderComplete } = this.props;
+    const { onRenderComplete, onRenderError, data } = this.props;
     const json = e.nativeEvent.data;
     if (json.indexOf("isTngMessage") === -1) {
       // don't try and process postMessage events from 3rd party scripts
       return;
     }
     const { type, detail } = JSON.parse(json);
-    if (type === "error" && process.env.NODE_ENV !== "production") {
-      // don't throw in production because 3rd party scripts in WebView can error
-      throw new Error(`Error inside WebView: ${detail}`);
-    }
-    if (type === "renderComplete") {
-      onRenderComplete();
-    } else if (type === "log") {
-      console.log(detail); // eslint-disable-line no-console
+    switch (type) {
+      case "renderFailed":
+        onRenderError();
+        break;
+      case "renderComplete":
+        onRenderComplete();
+        break;
+      default:
+        if (data.debug) {
+          logger(type, detail);
+        }
     }
   };
 

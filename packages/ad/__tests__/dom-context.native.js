@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Linking } from "react-native";
 import DOMContextNative from "../src/dom-context";
 
@@ -22,36 +23,6 @@ export default () => {
         isTngMessage: true,
         type
       })
-    }
-  });
-
-  it("throws an exception when the webview reports an error outside production mode", () => {
-    const originalEnv = process.env.NODE_ENV;
-    try {
-      process.env.NODE_ENV = "development";
-      const component = new DOMContextNative({
-        ...DOMContextNative.defaultProps
-      });
-      const f = () =>
-        component.handleMessageEvent(makeMessageEvent("error", "message"));
-      expect(f).toThrowError(new Error("Error inside WebView: message"));
-    } finally {
-      process.env.NODE_ENV = originalEnv;
-    }
-  });
-
-  it("does not throw an exception when the webview reports an error in production mode", () => {
-    const originalEnv = process.env.NODE_ENV;
-    try {
-      process.env.NODE_ENV = "production";
-      const component = new DOMContextNative({
-        ...DOMContextNative.defaultProps
-      });
-      const f = () =>
-        component.handleMessageEvent(makeMessageEvent("error", "message"));
-      expect(f).not.toThrow();
-    } finally {
-      process.env.NODE_ENV = originalEnv;
     }
   });
 
@@ -80,16 +51,76 @@ export default () => {
     expect(onRenderComplete).toHaveBeenCalledTimes(1);
   });
 
-  it("logs a console message when it receives a log event from the webview", () => {
-    jest.spyOn(console, "log").mockImplementation();
-
+  it("calls onRenderError when it receives a onRenderError event from the webview", () => {
+    const onRenderError = jest.fn();
     const component = new DOMContextNative({
-      ...DOMContextNative.defaultProps
+      ...DOMContextNative.defaultProps,
+      onRenderError
     });
 
-    expect(console.log).not.toHaveBeenCalled(); // eslint-disable-line no-console
+    expect(onRenderError).not.toHaveBeenCalled();
+    component.handleMessageEvent(makeMessageEvent("renderFailed"));
+    expect(onRenderError).toHaveBeenCalledTimes(1);
+  });
+
+  it("logs a console message when it receives a log event from the webview in debug mode", () => {
+    jest.spyOn(console, "log").mockImplementation();
+    jest.spyOn(console, "error").mockImplementation();
+    jest.spyOn(console, "warn").mockImplementation();
+    jest.spyOn(console, "debug").mockImplementation();
+    jest.spyOn(console, "info").mockImplementation();
+
+    const props = DOMContextNative.defaultProps;
+    props.data.debug = true;
+    const component = new DOMContextNative({
+      ...props
+    });
+
+    expect(console.log).not.toHaveBeenCalled();
     component.handleMessageEvent(makeMessageEvent("log", "message"));
-    expect(console.log).toHaveBeenCalledWith("message"); // eslint-disable-line no-console
+    expect(console.log).toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("error", "message"));
+    expect(console.error).toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("warn", "message"));
+    expect(console.warn).toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("info", "message"));
+    expect(console.info).toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("debug", "message"));
+    expect(console.debug).toHaveBeenCalledWith("message");
+  });
+
+  it("does not log a console message when it receives a log event from the webview", () => {
+    jest.spyOn(console, "log").mockImplementation();
+    jest.spyOn(console, "error").mockImplementation();
+    jest.spyOn(console, "warn").mockImplementation();
+    jest.spyOn(console, "info").mockImplementation();
+    jest.spyOn(console, "debug").mockImplementation();
+
+    const props = DOMContextNative.defaultProps;
+    props.data.debug = false;
+    const component = new DOMContextNative({
+      ...props
+    });
+
+    expect(console.log).not.toHaveBeenCalled();
+    component.handleMessageEvent(makeMessageEvent("log", "message"));
+    expect(console.log).not.toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("error", "message"));
+    expect(console.error).not.toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("warn", "message"));
+    expect(console.warn).not.toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("info", "message"));
+    expect(console.info).not.toHaveBeenCalledWith("message");
+
+    component.handleMessageEvent(makeMessageEvent("debug", "message"));
+    expect(console.debug).not.toHaveBeenCalledWith("message");
   });
 
   it("hasDifferentOrigin does not allow null origins", () => {

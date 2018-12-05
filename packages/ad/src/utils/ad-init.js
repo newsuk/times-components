@@ -1,69 +1,19 @@
 /* eslint-env browser */
-
 // NOTE: this function must be self-contained, i.e. contain no references to variables
 // defined outside the function, so that it can be passed into a WebView.
-
 const adInit = args => {
   const { el, data, platform, eventCallback, window } = args;
   const { document, setTimeout, Promise } = window;
-
+  const enablePrebidding = platform === "web";
+  const hasBidInitialiser =
+    window.nuk && window.nuk.ads && window.nuk.ads.loaded;
+  const withoutHeaderBidding = enablePrebidding && !hasBidInitialiser;
   const scriptsInserted = {};
   let initCalled = false;
-  let hasScriptLoadingError = false;
 
-  const initialiser = {
+  return {
     destroySlots() {
       this.gpt.destroySlots();
-    },
-
-    doPageAdSetupAsync() {
-      const { networkId, adUnit, prebidConfig, section, slots } = data;
-      const parallelActions = [
-        this.gpt.setupAsync(this.utils),
-        this.grapeshot.setupAsync(this.gpt, this.utils)
-      ];
-      const enablePrebidding = platform === "web";
-
-      if (enablePrebidding) {
-        parallelActions.push(
-          this.prebid.setupAsync(prebidConfig, this.utils),
-          this.prebid.requestBidsAsync(
-            prebidConfig,
-            slots,
-            networkId,
-            adUnit,
-            section
-          )
-        );
-      }
-
-      if (enablePrebidding && window.matchMedia) {
-        Object.keys(this.utils.breakpoints).forEach(b => {
-          window
-            .matchMedia(this.utils.breakpoints[b])
-            .addListener(this.handleBreakpointChange.bind(this, b));
-        });
-      }
-
-      return Promise.all(parallelActions)
-        .then(this.gpt.waitUntilReady.bind(this.gpt))
-        .then(this.finaliseAds.bind(this, enablePrebidding));
-    },
-
-    finaliseAds(enablePrebidding) {
-      if (enablePrebidding) {
-        this.gpt.scheduleAction(() => {
-          try {
-            window.pbjs.setTargetingForGPTAsync();
-            if (window.apstag) {
-              window.apstag.setDisplayBids();
-            }
-            this.gpt.displayAds();
-          } catch (err) {
-            //
-          }
-        });
-      }
     },
 
     gpt: {
@@ -88,43 +38,77 @@ const adInit = args => {
           section,
           slotTargeting
         } = data;
-        this.scheduleAction(() => {
-          const adUnitPath = `/${networkId}/${adUnit}/${section}`;
-          const { slotName, sizes, mappings } = slotConfig;
-          const slot = window.googletag.defineSlot(adUnitPath, sizes, slotName);
+        return new Promise(resolve => {
+          try {
+            this.scheduleAction(() => {
+              const adUnitPath = `/${networkId}/${adUnit}/${section}`;
+              const { slotName, sizes, mappings } = slotConfig;
+              const slot = window.googletag.defineSlot(
+                adUnitPath,
+                sizes,
+                slotName
+              );
 
-          if (!slot) {
-            throw new Error(
-              `Ad slot ${slotName} ${adUnitPath} could not be defined, probably it was already defined`
-            );
+              if (!slot) {
+                throw new Error(
+                  `Ad slot ${slotName} ${adUnitPath} could not be defined, probably it was already defined`
+                );
+              }
+
+              this.setElement(slotName);
+              this.setSlotTargeting(slot, slotName, mappings, slotTargeting);
+              window.googletag.display(slotName);
+              window.googletag.pubads().refresh();
+              const msg = `[Google] INFO: set slot targeting - ${slotName}`;
+              eventCallback("warn", msg);
+              resolve(msg);
+            });
+          } catch (err) {
+            eventCallback("error", err.stack);
+            resolve(err);
           }
-
-          slot.addService(window.googletag.pubads());
-          /* eslint-disable no-param-reassign */
-
-          el.id = `wrapper-${slotName}`;
-          el.innerHTML = `<div id="${slotName}"></div>`;
-          el.style.display = "flex";
-          el.style.alignItems = "center";
-          el.style.justifyContent = "center";
-          el.style.margin = "0 auto";
-          el.style.height = "100%";
-          /* eslint-enable no-param-reassign */
-
-          const gptMapping = window.googletag.sizeMapping();
-          mappings.forEach(size =>
-            gptMapping.addSize([size.width, size.height], size.sizes)
-          );
-          slot.defineSizeMapping(gptMapping.build());
-          Object.keys(slotTargeting || []).forEach(key =>
-            slot.setTargeting(key, slotTargeting[key])
-          );
-          const randomTestingGroup = Math.floor(Math.random() * 10).toString();
-          slot.setTargeting("timestestgroup", randomTestingGroup);
-          slot.setTargeting("pos", slotName);
-          window.googletag.display(slotName);
-          window.googletag.pubads().refresh();
         });
+      },
+
+      enableService() {
+        return new Promise(resolve => {
+          this.scheduleAction(() => {
+            window.googletag.enableServices();
+            const msg = "[Google] INFO: enable services";
+            eventCallback("warn", msg);
+            resolve(msg);
+          });
+        });
+      },
+
+      gptInitialised() {
+        return this.enableService().then(
+          () =>
+            new Promise(resolve => {
+              this.scheduleAction(() => {
+                if (enablePrebidding) {
+                  try {
+                    window.pbjs.setTargetingForGPTAsync();
+                    const { prebidConfig } = data;
+                    const amazonAccountID =
+                      prebidConfig.bidders.amazon &&
+                      prebidConfig.bidders.amazon.accountId;
+                    if (window.apstag && amazonAccountID) {
+                      window.apstag.setDisplayBids();
+                    }
+                  } catch (err) {
+                    eventCallback("error", err.stack);
+                  }
+                }
+                setTimeout(() => {
+                  this.displayAds();
+                  const msg = "[Google] INFO: displayed ads";
+                  eventCallback("warn", msg);
+                  resolve(msg);
+                }, 100);
+              });
+            })
+        );
       },
 
       scheduleAction(action) {
@@ -132,51 +116,90 @@ const adInit = args => {
       },
 
       scheduleSetPageTargetingValues(keyValuePairs) {
-        this.scheduleAction(() => {
-          const pubads = window.googletag.pubads();
-          Object.keys(keyValuePairs).forEach(key => {
-            pubads.setTargeting(key, keyValuePairs[key]);
+        return new Promise((resolve, reject) => {
+          this.scheduleAction(() => {
+            try {
+              const pubads = window.googletag.pubads();
+              Object.keys(keyValuePairs).forEach(key => {
+                pubads.setTargeting(key, keyValuePairs[key]);
+              });
+              eventCallback("warn", keyValuePairs);
+              resolve(keyValuePairs);
+            } catch (err) {
+              eventCallback("error", err.stack);
+              reject(err);
+            }
           });
         });
       },
 
-      setupAsync(utils) {
-        window.googletag = window.googletag || {};
-        window.googletag.cmd = window.googletag.cmd || [];
-        this.scheduleSetPageTargetingValues(data.pageTargeting);
-        this.scheduleAction(() => {
-          const pubads = window.googletag.pubads();
-          pubads.disableInitialLoad();
-          pubads.enableSingleRequest();
-          window.googletag.enableServices();
-        });
-        return utils.loadScript(
-          "https://www.googletagservices.com/tag/js/gpt.js"
-        );
+      setElement(slotName) {
+        /* eslint-disable no-param-reassign */
+        el.id = `wrapper-${slotName}`;
+        el.innerHTML = `<div id="${slotName}"></div>`;
+        el.style.display = "flex";
+        el.style.alignItems = "center";
+        el.style.justifyContent = "center";
+        el.style.margin = "0 auto";
+        el.style.height = "100%";
+        /* eslint-enable no-param-reassign */
       },
 
-      waitUntilReady() {
-        return new Promise(resolve =>
-          this.scheduleAction(() => {
-            resolve();
-          })
+      setSlotTargeting(slot, slotName, mappings, slotTargeting) {
+        slot.addService(window.googletag.pubads());
+        const gptMapping = window.googletag.sizeMapping();
+        mappings.forEach(size =>
+          gptMapping.addSize([size.width, size.height], size.sizes)
         );
+        slot.defineSizeMapping(gptMapping.build());
+        Object.keys(slotTargeting || []).forEach(key =>
+          slot.setTargeting(key, slotTargeting[key])
+        );
+        const randomTestingGroup = Math.floor(Math.random() * 10).toString();
+        slot.setTargeting("timestestgroup", randomTestingGroup);
+        slot.setTargeting("pos", slotName);
+      },
+
+      setupAsync() {
+        window.googletag = window.googletag || {};
+        window.googletag.cmd = window.googletag.cmd || [];
+        const setPageTarget = this.scheduleSetPageTargetingValues(
+          data.pageTargeting
+        );
+        const initGPT = new Promise((resolve, reject) => {
+          this.scheduleAction(() => {
+            try {
+              const pubads = window.googletag.pubads();
+              pubads.disableInitialLoad();
+              pubads.enableSingleRequest();
+              const msg = "[Google] INFO: setupAsync";
+              eventCallback("warn", msg);
+              resolve(msg);
+            } catch (err) {
+              eventCallback("error", err.stack);
+              reject(err);
+            }
+          });
+        });
+        return Promise.all([setPageTarget, initGPT]);
       }
     },
+
     grapeshot: {
       setupAsync(gpt, utils) {
         const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
         )}`;
         return utils
-          .loadScript(grapeshotUrl, 1000)
+          .loadScript(grapeshotUrl)
           .then(() => {
             gpt.scheduleSetPageTargetingValues({
               gs_cat: window.gs_channels
             });
           })
-          .catch(() => {
-            // allow grapeshot to error or time out silently
+          .catch(err => {
+            eventCallback("error", err.stack);
+            return Promise.resolve(err);
           });
       }
     },
@@ -191,35 +214,80 @@ const adInit = args => {
       }
     },
 
+    handleError(err) {
+      this.gpt.destroySlots();
+      eventCallback("error", err.stack);
+      eventCallback("renderFailed");
+      return Promise.reject(err.message);
+    },
+
     init() {
       if (initCalled) {
-        throw new Error("init() has already been called");
+        return Promise.reject(new Error("init() has already been called"));
       }
-
       initCalled = true;
 
-      if (!window.initCalled) {
-        window.initCalled = true;
-        this.doPageAdSetupAsync();
+      return this.initSetup()
+        .then(() => {
+          const { networkId, adUnit, prebidConfig, section, slots } = data;
+          return this.prebid.requestBidsAsync(
+            prebidConfig,
+            slots,
+            networkId,
+            adUnit,
+            section
+          );
+        })
+        .then(() => this.gpt.gptInitialised())
+        .then(() => eventCallback("renderComplete"))
+        .catch(err => this.handleError(err));
+    },
+
+    initPageAsync() {
+      const { prebidConfig } = data;
+      const parallelActions = [
+        this.gpt.setupAsync(this.utils),
+        this.gpt.doSlotAdSetup()
+      ];
+
+      if (enablePrebidding && window.matchMedia) {
+        Object.keys(this.utils.breakpoints).forEach(b => {
+          window
+            .matchMedia(this.utils.breakpoints[b])
+            .addListener(this.handleBreakpointChange.bind(this, b));
+        });
+      }
+      if (!hasBidInitialiser) {
+        this.grapeshot.setupAsync(this.gpt, this.utils);
+        parallelActions.push(
+          this.utils.loadScript(
+            "https://www.googletagservices.com/tag/js/gpt.js"
+          )
+        );
+      }
+      if (withoutHeaderBidding) {
+        parallelActions.push(this.prebid.setupAsync(prebidConfig, this.utils));
       }
 
-      this.gpt.doSlotAdSetup();
-      this.gpt.waitUntilReady().then(() => {
-        if (hasScriptLoadingError) {
-          this.destroySlots();
-          return eventCallback("scriptLoadingError");
-        }
+      return Promise.all(parallelActions);
+    },
 
-        return eventCallback("renderComplete");
-      });
+    initSetup() {
+      try {
+        if (hasBidInitialiser) {
+          return Promise.all([window.nuk.ads.loaded, this.gpt.doSlotAdSetup()]);
+        }
+        if (!window.initCalled) {
+          window.initCalled = true;
+          return this.initPageAsync();
+        }
+        return this.gpt.doSlotAdSetup();
+      } catch (err) {
+        return this.handleError(err);
+      }
     },
 
     prebid: {
-      createPbjsGlobals() {
-        window.pbjs = window.pbjs || {};
-        window.pbjs.que = window.pbjs.que || [];
-      },
-
       getAdUnitPath(params) {
         return params.reduce(
           (acc, cur, index) =>
@@ -243,48 +311,67 @@ const adInit = args => {
       },
 
       requestBidsAsync(prebidConfig, slots, networkId, adUnit, section) {
+        if (!enablePrebidding) {
+          return Promise.resolve("no prebid on native platform");
+        }
+
+        window.pbjs.bidderTimeout = prebidConfig.timeout;
+        window.pbjs.bidderSettings = prebidConfig.bidderSettings(prebidConfig);
+        const initPrebid = new Promise(resolve => {
+          this.schedulePrebidAction(() => {
+            try {
+              const { debug } = data;
+              const { init } = prebidConfig;
+              init.debug = debug;
+              window.pbjs.setConfig(init);
+              eventCallback("warn", init);
+              resolve(init);
+            } catch (err) {
+              eventCallback("error", err.stack);
+              resolve(err);
+            }
+          });
+        });
+        const biddingActions = [initPrebid, this.requestPrebidBids(slots)];
+
         const amazonAccountID =
           prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
-        const biddingActions = [];
-        const { bidderSettings, init } = prebidConfig;
-        window.pbjs.bidderTimeout = prebidConfig.timeout;
-        window.pbjs.bidderSettings = prebidConfig.bidderSettings({
-          bidderSettings
-        });
-        this.schedulePrebidAction(() => {
-          window.pbjs.setConfig(init);
-        });
-
         if (amazonAccountID) {
-          this.setupApstag(amazonAccountID, prebidConfig.timeout);
-          // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
+          // TODO: at the moment we configure the amazon bids with just one slot (the first one)
           // because we call init just one time (window.initCalled)
           // to be fixed in REPLAT-1370
-
+          if (withoutHeaderBidding) {
+            biddingActions.push(
+              this.setupApstag(amazonAccountID, prebidConfig.timeout)
+            );
+          }
           biddingActions.push(
-            this.scheduleRequestAmazonBids(
-              slots,
-              amazonAccountID,
-              networkId,
-              adUnit,
-              section
-            )
+            this.scheduleRequestAmazonBids(slots, networkId, adUnit, section)
           );
         }
 
-        biddingActions.push(this.requestPrebidBids(slots));
         return Promise.all(biddingActions);
       },
 
       requestPrebidBids(slots) {
         return new Promise(resolve => {
           this.schedulePrebidAction(() => {
-            this.setAdUnits(slots);
-            window.pbjs.requestBids({
-              bidsBackHandler(bids) {
-                resolve(bids);
+            try {
+              if (slots.length < 1) {
+                throw new Error("no ad slots are defined");
               }
-            });
+              eventCallback("warn", slots);
+              this.setAdUnits(slots);
+              window.pbjs.requestBids({
+                bidsBackHandler(bids) {
+                  eventCallback("warn", bids);
+                  resolve(bids);
+                }
+              });
+            } catch (err) {
+              eventCallback("error", err.stack);
+              resolve(err);
+            }
           });
         });
       },
@@ -293,75 +380,80 @@ const adInit = args => {
         window.pbjs.que.push(action);
       },
 
-      scheduleRequestAmazonBids(
-        adsSlots,
-        amazonPudID,
-        networkId,
-        adUnit,
-        section
-      ) {
+      scheduleRequestAmazonBids(adsSlots, networkId, adUnit, section) {
         return new Promise(resolve => {
-          const amazonSlots = this.getAmazonConfig(
-            adsSlots,
-            networkId,
-            adUnit,
-            section
-          );
-          if (amazonSlots.length > 0) {
+          try {
+            const amazonSlots = this.getAmazonConfig(
+              adsSlots,
+              networkId,
+              adUnit,
+              section
+            );
+            if (amazonSlots.length < 1) {
+              throw new Error("no amazon ad slots are defined");
+            }
+            eventCallback("warn", amazonSlots);
             window.apstag.fetchBids(
               {
                 slots: amazonSlots
               },
               aBids => {
+                eventCallback("warn", aBids);
                 resolve(aBids);
               }
             );
+          } catch (err) {
+            eventCallback("error", err.stack);
+            resolve(err);
           }
         });
       },
 
       setAdUnits(adsSlots) {
-        this.schedulePrebidAction(() => {
-          adsSlots.forEach(slot => window.pbjs.removeAdUnit(slot.code));
-          window.pbjs.addAdUnits(adsSlots);
-        });
+        adsSlots.forEach(slot => window.pbjs.removeAdUnit(slot.code));
+        window.pbjs.addAdUnits(adsSlots);
       },
 
       setupApstag(amazonAccountID, timeout) {
-        // NOTE: this is Amazon code, change it carefully
-        window.apstag = {
+        window.apstag = window.apstag || {
           _Q: [],
-
           addToQueue(action, d) {
             this._Q.push([action, d]); // eslint-disable-line no-underscore-dangle
           },
-
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-
           init() {
             this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
           },
-
           setDisplayBids() {},
-
           targetingKeys() {
             return [];
           }
         };
-        window.apstag.init({
-          adServer: "googletag",
-          bidTimeout: timeout,
-          gdpr: {
-            cmpTimeout: timeout
-          },
-          pubID: amazonAccountID
+        return new Promise(resolve => {
+          try {
+            const apstagConfig = {
+              adServer: "googletag",
+              bidTimeout: timeout,
+              gdpr: {
+                cmpTimeout: timeout
+              },
+              pubID: amazonAccountID
+            };
+            window.apstag.init(apstagConfig);
+            eventCallback("warn", apstagConfig);
+            resolve(apstagConfig);
+          } catch (err) {
+            eventCallback("error", err.stack);
+            resolve(err);
+          }
         });
       },
 
       setupAsync(prebidConfig, utils) {
-        this.createPbjsGlobals();
+        window.pbjs = window.pbjs || {};
+        window.pbjs.que = window.pbjs.que || [];
         const scriptPromises = [
           utils.loadScript(
             "https://www.thetimes.co.uk/d/js/vendor/newPrebid.min-7526ce2390.js"
@@ -380,6 +472,7 @@ const adInit = args => {
         return Promise.all(scriptPromises);
       }
     },
+
     utils: {
       breakpoints: {
         huge: "(min-width: 1320px)",
@@ -398,16 +491,13 @@ const adInit = args => {
           script.src = scriptUri;
           document.head.appendChild(script);
         } catch (e) {
-          eventCallback(
-            "log",
-            `Could not insert script "${scriptUri}" (${e}) - could be caused by ad blocker`
-          );
+          eventCallback("error", e.stack);
         }
       },
 
-      loadScript(scriptUri, timeout) {
+      loadScript(scriptUri) {
         if (scriptsInserted[scriptUri]) {
-          throw new Error(`Inserting "${scriptUri}" twice.`);
+          return Promise.resolve(`Inserting "${scriptUri}" twice.`);
         }
 
         scriptsInserted[scriptUri] = true;
@@ -415,39 +505,16 @@ const adInit = args => {
           this.createScriptElement(
             scriptUri,
             () => {
-              resolve();
+              resolve(`loaded ${scriptUri}`);
             },
             () => {
-              hasScriptLoadingError = true;
               reject(new Error(`load error for ${scriptUri}`));
             }
           );
-
-          if (timeout) {
-            setTimeout(reject, timeout, new Error(`timeout for ${scriptUri}`));
-          }
         });
       }
     }
   };
-
-  // uncomment this to enable logging of ad initialisation logic - every method
-  // call will be logged
-  // NOTE: do not delete this code, it's super-useful for the next person who needs to debug ads on native
-  // for (let groupName in initialiser) {
-  //   let group = initialiser[groupName];
-  //   for (let methodName in group) {
-  //     let method = group[methodName];
-  //     group[methodName] = function () {
-  //       const args = Array.prototype.slice.call(arguments);
-  //       console.log(`ad-init: ${groupName}.${methodName}`, ...args);
-  //       eventCallback("log", `ad-init: ${groupName}.${methodName}(${args.join(", ")})`);
-  //       return method.apply(this, args);
-  //     };
-  //   }
-  // }
-
-  return initialiser;
 };
 
 export default adInit;

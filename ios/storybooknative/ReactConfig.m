@@ -15,7 +15,7 @@ RCT_EXPORT_MODULE();
             @"cookieEid":@"",
             @"isLoggedIn":@"",
             @"graphqlEndPoint":@"https://api.thetimes.co.uk/graphql",
-            @"adNetworkId":@"",
+            @"adNetworkId":@"25436805",
             @"timezone":@""
             };
 }

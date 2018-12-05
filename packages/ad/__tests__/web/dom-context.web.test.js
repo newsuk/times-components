@@ -53,20 +53,6 @@ describe("DOMContext Web", () => {
     expect(runWithError).toThrowError("broken");
   });
 
-  it("throw an error", () => {
-    const runWithError = () => {
-      mount(
-        <DOMContext
-          {...props}
-          data={{ foo: "bar" }}
-          init={({ eventCallback }) => eventCallback("error", "error message")}
-        />
-      );
-    };
-
-    expect(runWithError).toThrowError("DomContext error: error message");
-  });
-
   it("calls the renderComplete callback when a renderComplete event is dispatched", () => {
     const onRenderComplete = jest.fn();
 
@@ -87,7 +73,7 @@ describe("DOMContext Web", () => {
     mount(
       <DOMContext
         {...props}
-        init={({ eventCallback }) => eventCallback("scriptLoadingError")}
+        init={({ eventCallback }) => eventCallback("renderFailed")}
         onRenderError={onRenderErrorMock}
       />
     );

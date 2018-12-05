@@ -20,22 +20,22 @@ export default () => {
     const init1 = adInit(initOptions);
     const init2 = adInit(initOptions);
 
-    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation();
-    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation();
+    jest.spyOn(init1, "initPageAsync").mockReturnValue(Promise.resolve());
+    jest.spyOn(init2, "initPageAsync").mockReturnValue(Promise.resolve());
 
     init1.init();
     init2.init();
 
-    expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
-    expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
+    expect(init1.initPageAsync).toHaveBeenCalledTimes(1);
+    expect(init2.initPageAsync).toHaveBeenCalledTimes(0);
   });
 
   it("performs slot-level setup for every slot", () => {
     const init1 = adInit(initOptions);
     const init2 = adInit(initOptions);
 
-    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
-    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
+    jest.spyOn(init1.gpt, "doSlotAdSetup").mockReturnValue(Promise.resolve());
+    jest.spyOn(init2.gpt, "doSlotAdSetup").mockReturnValue(Promise.resolve());
 
     init1.init();
     init2.init();
@@ -80,9 +80,10 @@ export default () => {
   it("throws if the init hook is called twice", () => {
     const init = adInit(initOptions);
     init.init();
-    expect(() => init.init()).toThrowError(
-      new Error("init() has already been called")
-    );
+    return init.init().catch(err => {
+      const expectedError = new Error("init() has already been called");
+      expect(err).toEqual(expectedError);
+    });
   });
 
   it("destroys all slots", () => {
@@ -93,5 +94,17 @@ export default () => {
     init.destroySlots();
 
     expect(init.gpt.destroySlots).toHaveBeenCalledTimes(1);
+  });
+
+  it("handleError", () => {
+    const init = adInit(initOptions);
+
+    jest.spyOn(init.gpt, "destroySlots").mockImplementation();
+
+    init.handleError(new Error("Test"));
+
+    expect(init.gpt.destroySlots).toHaveBeenCalledTimes(1);
+    expect(initOptions.eventCallback).toHaveBeenCalledTimes(2);
+    expect(initOptions.eventCallback).toHaveBeenCalledWith("renderFailed");
   });
 };

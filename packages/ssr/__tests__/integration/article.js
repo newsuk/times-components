@@ -1,10 +1,17 @@
-describe("Article", () => {
-  beforeEach(() => {
-    cy.visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
-  });
+import { MockArticle } from "@times-components/fixture-generator";
 
+const relatedArticleCount = 3;
+
+describe("Article", () => {
   it("loads hi-res images for related articles", () =>
     cy
+      .task("startMockServerWith", {
+        Article: new MockArticle()
+          .sundayTimes()
+          .setRelatedArticles(relatedArticleCount)
+          .get()
+      })
+      .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
       .get("#related-articles")
       .scrollIntoView()
       .then(() => {
@@ -15,16 +22,16 @@ describe("Article", () => {
 
         cy.get("@raImages")
           .its("length")
-          .should("eq", 3);
+          .should("eq", relatedArticleCount);
 
         cy.get("@raImages").each(item => {
           const url = new URL(item.attr("src"));
-
-          expect(url.searchParams.get("resize")).to.equal("301");
+          const initialResize = "100";
+          expect(url.searchParams.get("resize")).to.not.equal(initialResize);
         });
       }));
 
-  it("loaded all the required article ads", () => {
+  xit("loaded all the required article ads", () => {
     cy.loadedArticleAds();
   });
 });

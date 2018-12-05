@@ -36,11 +36,13 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007 --haul ./.storybook.native/webpack.haul.storybook.js --platform all",
     "preios": "yarn fetch-fonts",
     "ios": "react-native run-ios --no-packager",
+    "ios:logs" : "yarn ios && react-native log-ios",
     "ios:build-lib": "lerna run --scope @times-components/ios-app build:all --stream",
     "ios:app": "cd ios-app && yarn start",
     "start-emulator": "./lib/start_android_emulator.sh",
     "preandroid": "yarn fetch-fonts && yarn start-emulator",
     "android": "react-native run-android --no-packager",
+    "android:logs": "yarn android && react-native log-android",
     "android:app": "cd android-app && yarn start",
     "android:build-lib": "lerna run --scope @times-components/android-app build:all --stream",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
@@ -55,7 +57,6 @@
     "clean-snaps": "rm -rf dextrose/snappy/*.png",
     "commit": "git-cz",
     "test:e2e": "lerna run bundle && lerna run test:integration --stream",
-    "test:e2e:dev": "lerna run bundle && lerna run test:integration:dev --stream",
     "test:e2e:debug": "lerna run bundle && lerna run test:integration:debug --stream"
   },
   "jest": {
