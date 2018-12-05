@@ -81,7 +81,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const Seperator = styled(View)`
+export const Separator = styled(View)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {

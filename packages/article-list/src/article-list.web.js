@@ -134,7 +134,7 @@ class ArticleList extends Component {
                 return null;
               };
 
-              const renderSeperator = () => {
+              const renderSeparator = () => {
                 if (index === 0) {
                   return null;
                 }
@@ -154,7 +154,7 @@ class ArticleList extends Component {
                       {({ hasError }) =>
                         hasError ? null : (
                           <ListContentContainer>
-                            {renderSeperator()}
+                            {renderSeparator()}
                             <ArticleListItem
                               article={item.isLoading ? null : item}
                               fadeImageIn={clientHasRendered}
