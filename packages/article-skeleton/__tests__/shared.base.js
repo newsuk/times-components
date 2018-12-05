@@ -38,7 +38,7 @@ const fixtureArgs = {
       children: [
         {
           attributes: {
-            value: "His being Black History Month, last week"
+            value: "This being Black History Month, last week"
           },
           children: [],
           name: "text"

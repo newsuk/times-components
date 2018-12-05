@@ -13,9 +13,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     <div>
       <p>
         <span>
-          H
+          T
         </span>
-        is being Black History Month, last week
+        his being Black History Month, last week
       </p>
       <div>
         <InteractiveWrapper
@@ -356,7 +356,7 @@ exports[`2. a full article with all content items with not a dropcap template 1`
   <div>
     <div>
       <p>
-        His being Black History Month, last week
+        This being Black History Month, last week
       </p>
       <div>
         <InteractiveWrapper

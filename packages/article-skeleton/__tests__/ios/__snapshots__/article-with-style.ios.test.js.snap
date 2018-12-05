@@ -6,7 +6,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     <View />
     <View>
       <ArticleParagraph>
-        is being Black History Month, last week
+        his being Black History Month, last week
       </ArticleParagraph>
     </View>
     <View>
@@ -134,7 +134,7 @@ exports[`2. a full article with all content items with not a dropcap template 1`
     <View />
     <View>
       <ArticleParagraph>
-        His being Black History Month, last week
+        This being Black History Month, last week
       </ArticleParagraph>
     </View>
     <View>
