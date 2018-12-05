@@ -16,6 +16,8 @@ class ArticleListItem extends Component {
   constructor(props) {
     super(props);
     this.onItemPress = this.onItemPress.bind(this);
+    this.renderContent = this.renderContent.bind(this);
+    this.renderHeadline = this.renderHeadline.bind(this);
   }
 
   shouldComponentUpdate(nextProps) {
@@ -34,6 +36,21 @@ class ArticleListItem extends Component {
     onPress(event, { id, url });
   }
 
+  renderContent() {
+    const { article = {} } = this.props;
+    const { showImage, shortSummary, summary } = article;
+    const content = showImage ? summary : shortSummary;
+    return <ArticleSummaryContent ast={content} />;
+  }
+
+  renderHeadline() {
+    const { article = {} } = this.props;
+    const { headline, shortHeadline } = article;
+    return (
+      <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
+    );
+  }
+
   render() {
     const {
       article,
@@ -45,20 +62,15 @@ class ArticleListItem extends Component {
 
     const {
       byline,
-      headline,
       hasVideo,
       label,
       publicationName,
       publishedTime,
       section,
-      shortHeadline,
-      shortSummary,
-      summary,
       url
     } = article || {};
 
     const imageUri = getImageUri(article);
-    const content = showImage ? summary : shortSummary;
 
     return (
       <Link onPress={this.onItemPress} url={url}>
@@ -79,16 +91,12 @@ class ArticleListItem extends Component {
                     }
                   : null
               }
-              content={() => <ArticleSummaryContent ast={content} />}
+              content={this.renderContent}
               datePublicationProps={{
                 date: publishedTime,
                 publication: publicationName
               }}
-              headline={() => (
-                <ArticleSummaryHeadline
-                  headline={getHeadline(headline, shortHeadline)}
-                />
-              )}
+              headline={this.renderHeadline}
               labelProps={{
                 color: colours.section[section] || colours.section.default,
                 isVideo: hasVideo,

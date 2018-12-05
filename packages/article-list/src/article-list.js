@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
 import Button from "@times-components/button";
-import ErrorView from "@times-components/error-view";
 import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleListError from "./article-list-error";
-import ArticleListItem from "./article-list-item";
+import ArticleListItemWithError from "./article-list-item-with-error";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
@@ -91,23 +90,17 @@ class ArticleList extends Component {
     const { width } = this.state;
 
     return (
-      <ErrorView>
-        {({ hasError }) =>
-          hasError ? null : (
-            <ArticleListItem
-              article={item.isLoading ? null : item}
-              highResSize={width}
-              imageRatio={imageRatio}
-              index={index}
-              isLoading={item.isLoading === true}
-              length={articlesLoading ? pageSize : articles.length}
-              onPress={onArticlePress}
-              showImage={showImages}
-              testID={`articleList-${index}`}
-            />
-          )
-        }
-      </ErrorView>
+      <ArticleListItemWithError
+        article={item.isLoading ? null : item}
+        highResSize={width}
+        imageRatio={imageRatio}
+        index={index}
+        isLoading={item.isLoading === true}
+        length={articlesLoading ? pageSize : articles.length}
+        onPress={onArticlePress}
+        showImage={showImages}
+        testID={`articleList-${index}`}
+      />
     );
   }
 
