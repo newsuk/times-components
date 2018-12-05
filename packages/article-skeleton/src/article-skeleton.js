@@ -126,12 +126,13 @@ class ArticleSkeleton extends Component {
       return null;
     }
 
-    let newDatasource = { ...dataSource };
-    const newContent = [...newDatasource.content];
+    const newContent = [...dataSource.content];
     newContent[0] = insertDropcapIntoAST(newContent[0], template);
-    newDatasource = { ...dataSource, content: newContent };
 
-    const articleOrganised = listViewDataHelper(newDatasource);
+    const articleOrganised = listViewDataHelper({
+      ...dataSource,
+      content: newContent
+    });
     const articleData = articleOrganised.map((item, index) => ({
       ...item,
       elementId: `${item.type}.${index}`,
