@@ -22,7 +22,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = (analyticsStream, template) => (
+const renderRow = analyticsStream => (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -42,7 +42,6 @@ const renderRow = (analyticsStream, template) => (
           onLinkPress={onLinkPress}
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
-          template={template}
         />
       );
     }
@@ -157,7 +156,7 @@ class ArticleSkeleton extends Component {
           onVideoPress={onVideoPress}
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream, template)}
+          renderRow={renderRow(analyticsStream)}
           scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
           width={width}
         />
