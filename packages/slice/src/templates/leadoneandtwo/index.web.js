@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
@@ -26,7 +26,7 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
   const hasSupports = supportCount > 0;
 
   const ConfigWrapper = getConfigWrapper({ supportCount });
-  const Container = getContainer({ hasSupports: hasSupports });
+  const Container = getContainer({ hasSupports });
   const LeadContainer = getLeadContainer({
     hasSupports,
     supportCount
@@ -38,9 +38,7 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
       {supports.map((support, index) => {
         const SupportContainer = getSupportContainer({ index });
         return (
-          <SupportContainer key={support.props.id}>
-            {support}
-          </SupportContainer>
+          <SupportContainer key={support.props.id}>{support}</SupportContainer>
         );
       })}
     </SupportsContainer>
@@ -57,7 +55,7 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
       </SliceContainer>
     </ConfigWrapper>
   );
-}
+};
 
 LeadOneAndTwoSlice.propTypes = propTypes;
 
