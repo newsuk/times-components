@@ -29,8 +29,7 @@ const insertDropcap = (firstTextChild, children) => {
   return children;
 };
 
-const insertDropcapIntoAST = (firstContentChild, template) => {
-  const child = firstContentChild;
+const insertDropcapIntoAST = (child, template) => {
   const { name, children } = child;
   if (
     template &&
@@ -40,7 +39,7 @@ const insertDropcapIntoAST = (firstContentChild, template) => {
   ) {
     return { ...child, children: insertDropcap(children[0], children) };
   }
-  return { ...child, children };
+  return child;
 };
 
 export default insertDropcapIntoAST;
