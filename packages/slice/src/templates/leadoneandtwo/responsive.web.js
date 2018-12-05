@@ -65,7 +65,6 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
   } else {
     Base = styled(Base)`
       @media (min-width: ${breakpoints.medium}px) {
-        flex-grow: 0;
         padding-left: 0;
         padding-right: 0;
       }
@@ -110,7 +109,7 @@ export const getSupportContainer = ({ index }) => {
       }
 
       @media (min-width: ${breakpoints.wide}px) {
-        margin-top: ${index > 0 ? spacing(2) : "0"};
+        margin-top: ${spacing(2)};
       }
     `;
   }
@@ -127,7 +126,7 @@ export const getSupportContainer = ({ index }) => {
     }
 
     @media (min-width: ${breakpoints.wide}px) {
-      margin-top: ${index > 0 ? spacing(2) : "0"};
+      margin-top: 0;
     }
   `;
 };

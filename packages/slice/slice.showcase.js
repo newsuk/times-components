@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView, View } from "react-native";
-import LeadOneAndTwoSlice from "./src/templates/leadoneandtwo";
-import OpinionOneAndTwoSlice from "./src/templates/opiniononeandtwo";
-import StandardSlice from "./src/templates/standard";
+import {
+  LeadOneAndTwoSlice,
+  OpinionOneAndTwoSlice,
+  StandardSlice
+} from "./src/slice";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
@@ -26,17 +28,11 @@ const createItems = noOfItems =>
     .filter(item => item !== false);
 
 const Support1 = () => (
-  <View
-    id="support1"
-    style={[{ minHeight: 150 }, { backgroundColor: "green" }]}
-  />
+  <View style={[{ minHeight: 150 }, { backgroundColor: "green" }]} />
 );
 
 const Support2 = () => (
-  <View
-    id="support2"
-    style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]}
-  />
+  <View style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]} />
 );
 
 export default {
@@ -75,7 +71,7 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 />}
+            renderSupport1={() => <Support1 id="support1" />}
             renderSupport2={() => null}
           />
         </ScrollView>
@@ -96,8 +92,8 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 />}
-            renderSupport2={() => <Support2 />}
+            renderSupport1={() => <Support1 id="support1" />}
+            renderSupport2={() => <Support2 id="support2" />}
           />
         </ScrollView>
       ),
@@ -138,7 +134,7 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 />}
+            renderSupport1={() => <Support1 id="support1" />}
             renderSupport2={() => null}
           />
         </ScrollView>
@@ -159,8 +155,8 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 />}
-            renderSupport2={() => <Support2 />}
+            renderSupport1={() => <Support1 id="support1" />}
+            renderSupport2={() => <Support2 id="support2" />}
           />
         </ScrollView>
       ),

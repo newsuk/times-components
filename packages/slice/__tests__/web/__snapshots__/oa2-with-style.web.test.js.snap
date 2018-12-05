@@ -142,9 +142,9 @@ exports[`1. a single child element 1`] = `
 
 @media (min-width:768px) {
   .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 80.8%;
   }
 
@@ -501,13 +501,13 @@ exports[`2. two child elements 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    padding-right: 0;
   }
 }
 
 @media (min-width:768px) {
   .c15 {
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -879,13 +879,13 @@ exports[`3. three child elements 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    padding-right: 0;
   }
 }
 
 @media (min-width:768px) {
   .c16 {
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -906,7 +906,6 @@ exports[`3. three child elements 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    padding-right: 0;
   }
 }
 
@@ -920,6 +919,12 @@ exports[`3. three child elements 1`] = `
     margin-top: 0;
     padding-right: 0;
     padding-top: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    padding-right: 10px;
   }
 }
 
