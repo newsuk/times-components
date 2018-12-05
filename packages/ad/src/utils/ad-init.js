@@ -82,33 +82,29 @@ const adInit = args => {
       },
 
       gptInitialised() {
-        return this.enableService().then(
-          () =>
-            new Promise(resolve => {
-              this.scheduleAction(() => {
-                if (enablePrebidding) {
-                  try {
-                    window.pbjs.setTargetingForGPTAsync();
-                    const { prebidConfig } = data;
-                    const amazonAccountID =
-                      prebidConfig.bidders.amazon &&
-                      prebidConfig.bidders.amazon.accountId;
-                    if (window.apstag && amazonAccountID) {
-                      window.apstag.setDisplayBids();
-                    }
-                  } catch (err) {
-                    eventCallback("error", err.stack);
+        return this.enableService().then(() => {
+          setTimeout(() => {
+            this.scheduleAction(() => {
+              if (enablePrebidding) {
+                try {
+                  window.pbjs.setTargetingForGPTAsync();
+                  const { prebidConfig } = data;
+                  const amazonAccountID =
+                    prebidConfig.bidders.amazon &&
+                    prebidConfig.bidders.amazon.accountId;
+                  if (window.apstag && amazonAccountID) {
+                    window.apstag.setDisplayBids();
                   }
+                } catch (err) {
+                  eventCallback("error", err.stack);
                 }
-                setTimeout(() => {
-                  this.displayAds();
-                  const msg = "[Google] INFO: displayed ads";
-                  eventCallback("warn", msg);
-                  resolve(msg);
-                }, 100);
-              });
-            })
-        );
+              }
+              this.displayAds();
+              const msg = "[Google] INFO: displayed ads";
+              eventCallback("warn", msg);
+            }, 100);
+          });
+        });
       },
 
       scheduleAction(action) {

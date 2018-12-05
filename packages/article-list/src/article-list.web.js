@@ -91,16 +91,6 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
-    const renderAdComponent = ({ key }) => (
-      <AdComposer adConfig={adConfig} key={key}>
-        <Ad
-          isLoading={articlesLoading}
-          slotName="inline-ad"
-          style={styles.adContainer}
-        />
-      </AdComposer>
-    );
-
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
@@ -128,7 +118,14 @@ class ArticleList extends Component {
 
               const renderAd = () => {
                 if (index === this.advertPosition && hasAdvertConfig) {
-                  return renderAdComponent({ key: `advert${index}` });
+                  return (
+                    <Ad
+                      key={`advert${index}`}
+                      isLoading={articlesLoading}
+                      slotName="inline-ad"
+                      style={styles.adContainer}
+                    />
+                  );
                 }
 
                 return null;
@@ -184,20 +181,27 @@ class ArticleList extends Component {
     if (!articlesLoading) receiveChildList(data);
 
     return (
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-        {({ clientHasRendered, observed, registerNode }) => (
-          <View>
-            {articleListHeader}
-            {error
-              ? ErrorComponent
-              : Contents({
-                  clientHasRendered,
-                  observed,
-                  registerNode
-                })}
-          </View>
-        )}
-      </LazyLoad>
+      <AdComposer adConfig={adConfig}>
+        <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+          <Fragment>
+            {({ clientHasRendered, observed, registerNode }) => (
+              <View>
+                {articleListHeader}
+                {error
+                  ? ErrorComponent
+                  : Contents({
+                      clientHasRendered,
+                      observed,
+                      registerNode
+                    })}
+              </View>
+            )}
+            <Ad section="pixel" slotName="pixel" />
+            <Ad section="pixelteads" slotName="pixelteads" />
+            <Ad section="pixelskin" slotName="pixelskin" />
+          </Fragment>
+        </LazyLoad>
+      </AdComposer>
     );
   }
 }

@@ -29,10 +29,15 @@ Cypress.Commands.add("loadedGlobalAds", () => {
   cy.loadedAd("#pixel");
   cy.loadedAd("#pixelteads");
   cy.loadedAd("#pixelskin");
-  cy.loadedAd("#header");
 });
 
 Cypress.Commands.add("loadedArticleAds", () => {
+  cy.loadedGlobalAds();
+  cy.loadedAd("#header");
+  cy.loadedAd("#inline-ad");
+});
+
+Cypress.Commands.add("loadedArticleListAds", () => {
   cy.loadedGlobalAds();
   cy.loadedAd("#inline-ad");
 });
