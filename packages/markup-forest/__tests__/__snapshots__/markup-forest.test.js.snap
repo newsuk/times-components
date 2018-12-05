@@ -16,11 +16,11 @@ exports[`2. mixture of tags 1`] = `
 
 exports[`3. nested tags 1`] = `
 <div>
-  Some text is here 
+  Some text is here
   <div>
-    and there is some 
+    and there is some
     <div>
-      more text 
+      more text
       <span>
         and in here
       </span>
@@ -33,11 +33,11 @@ exports[`3. nested tags 1`] = `
 
 exports[`4. ignore children of nested tags 1`] = `
 <div>
-  Some text is here 
+  Some text is here
   <div>
-    and there is some 
+    and there is some
     <div>
-      more text 
+      more text
       <span>
         and in here
       </span>
@@ -131,11 +131,11 @@ Array [
 
 exports[`8. wrapped tags 1`] = `
 <div>
-  Camilla Long is 
+  Camilla Long is
   <em>
     the Sunday Times
   </em>
-   film critic. She also writes interviews and a column, and was named 
+   film critic. She also writes interviews and a column, and was named
   <strong>
     interviewer of the year
   </strong>
@@ -154,39 +154,4 @@ exports[`9. multiple children 1`] = `
 </div>
 `;
 
-exports[`10. paragraph with double quotes as a dropcap 1`] = `
-<div>
-  <p>
-    Dropcap is "
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`11. paragraph with first letter as a dropcap 1`] = `
-<div>
-  <p>
-    Dropcap is T
-    his is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`12. paragraph for not a dropcap 1`] = `
-<div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`13. nested tags with a text only renderer 1`] = `"Some text is here and there is some more text and in heretext of a special elementinline text of a special element after it too and here"`;
+exports[`10. nested tags with a text only renderer 1`] = `"Some text is here and there is some more text and in heretext of a special elementinline text of a special element after it too and here"`;

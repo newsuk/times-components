@@ -207,13 +207,11 @@ const ArticleBody = ({
   contextUrl,
   observed,
   registerNode,
-  section,
-  template
+  section
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ observed, registerNode }),
-    template
+    renderers({ observed, registerNode })
   );
 
 ArticleBody.propTypes = {

@@ -16,6 +16,7 @@ import {
 } from "./article-skeleton-prop-types";
 import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
+import insertDropcapIntoAST from "./dropcap-util";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -126,7 +127,12 @@ class ArticleSkeleton extends Component {
       return null;
     }
 
-    const articleOrganised = listViewDataHelper(dataSource);
+    let newDatasource = { ...dataSource };
+    const newContent = [...newDatasource.content];
+    newContent[0] = insertDropcapIntoAST(newContent[0], template);
+    newDatasource = { ...dataSource, content: newContent };
+
+    const articleOrganised = listViewDataHelper(newDatasource);
     const articleData = articleOrganised.map((item, index) => ({
       ...item,
       elementId: `${item.type}.${index}`,

@@ -11,7 +11,7 @@ import {
   articleSkeletonDefaultProps
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./article-tracking-context";
-
+import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
@@ -59,6 +59,8 @@ class ArticleSkeleton extends Component {
           }}
         />
       ) : null;
+    const newContent = [...content];
+    newContent[0] = insertDropcapIntoAST(newContent[0], template);
 
     receiveChildList([
       {
@@ -89,12 +91,11 @@ class ArticleSkeleton extends Component {
                   <Header width={articleWidth} />
                   <BodyContainer>
                     <ArticleBody
-                      content={content}
+                      content={newContent}
                       contextUrl={url}
                       observed={observed}
                       registerNode={registerNode}
                       section={section}
-                      template={template}
                     />
 
                     <ArticleTopics topics={topics} />
