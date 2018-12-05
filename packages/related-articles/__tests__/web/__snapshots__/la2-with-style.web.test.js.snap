@@ -146,10 +146,6 @@ exports[`default styles 1`] = `
 
 @media (min-width:768px) {
   .c7 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
     padding-left: 0;
     padding-right: 0;
   }

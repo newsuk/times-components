@@ -146,10 +146,6 @@ exports[`1. a single child element 1`] = `
 
 @media (min-width:768px) {
   .c7 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -568,6 +564,11 @@ exports[`3. three child elements 1`] = `
 .c12 {
   padding-left: 10px;
   padding-right: 10px;
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
@@ -738,7 +739,7 @@ exports[`3. three child elements 1`] = `
 
 @media (min-width:1024px) {
   .c12 {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
