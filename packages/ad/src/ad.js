@@ -72,6 +72,7 @@ class Ad extends Component {
       config,
       contextUrl,
       debug: adConfig.debug || false,
+      disableAds: adConfig.disabled || false,
       networkId: adConfig.networkId,
       pageTargeting: adConfig.pageTargeting,
       prebidConfig: Object.assign(this.prebidConfig, {

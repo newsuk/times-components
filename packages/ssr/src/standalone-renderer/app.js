@@ -25,6 +25,9 @@ const makeHtml = (
             <title>${title}</title>
             ${styles}
             ${responsiveStyles}
+            <script src="https://c.amazon-adsystem.com/aax2/apstag.js"></script>
+            <script src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+            <script src="https://www.thetimes.co.uk/d/js/vendor/newPrebid.min-7526ce2390.js"></script>
           </head>
           <body style="margin:0">
             <script>window.nuk = {graphqlapi: {url: "${

@@ -7,6 +7,8 @@ const adInit = args => {
   const enablePrebidding = platform === "web";
   const hasBidInitialiser =
     window.nuk && window.nuk.ads && window.nuk.ads.loaded;
+  const adsDisabled =
+    window.nuk && window.nuk.ads && window.nuk.ads.adsDisabled;
   const withoutHeaderBidding = enablePrebidding && !hasBidInitialiser;
   const scriptsInserted = {};
   let initCalled = false;
@@ -218,14 +220,19 @@ const adInit = args => {
       this.gpt.destroySlots();
       eventCallback("error", err.stack);
       eventCallback("renderFailed");
-      return Promise.reject(err.message);
+      return Promise.reject(err);
     },
 
     init() {
       if (initCalled) {
-        return Promise.reject(new Error("init() has already been called"));
+        return this.handleError(new Error("init() has already been called"));
       }
       initCalled = true;
+
+      const { disableAds } = data;
+      if (disableAds || adsDisabled) {
+        return this.handleError(new Error("ads disabled"));
+      }
 
       return this.initSetup()
         .then(() => {
