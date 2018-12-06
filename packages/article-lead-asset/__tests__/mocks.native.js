@@ -18,7 +18,6 @@ jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
 jest.mock("@times-components/button", () => "Button");
-jest.mock("@times-components/caption", () => "Caption");
 jest.mock("@times-components/image", () => ({
   ModalImage: "ModalImage"
 }));

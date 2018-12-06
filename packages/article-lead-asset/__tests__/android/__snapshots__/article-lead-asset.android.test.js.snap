@@ -14,11 +14,54 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     <View>
       <View>
         <ArticleLeadAsset
-          modalCaption={
-            <Caption
-              credits="Some Credits"
-              text="Some Caption"
-            />
+          aspectRatio="16:9"
+          displayImage={
+            Object {
+              "__typename": "Crop",
+              "ratio": "16:9",
+              "url": "https://crop169.io",
+            }
+          }
+          isVideo={false}
+          leadAsset={
+            Object {
+              "__typename": "Image",
+              "caption": "Some Caption",
+              "credits": "Some Credits",
+              "crop11": Object {
+                "__typename": "Crop",
+                "ratio": "1:1",
+                "url": "https://crop11.io",
+              },
+              "crop1251": Object {
+                "__typename": "Crop",
+                "ratio": "1.25:1",
+                "url": "https://crop1251.io",
+              },
+              "crop169": Object {
+                "__typename": "Crop",
+                "ratio": "16:9",
+                "url": "https://crop169.io",
+              },
+              "crop23": Object {
+                "__typename": "Crop",
+                "ratio": "2:3",
+                "url": "https://crop23.io",
+              },
+              "crop32": Object {
+                "__typename": "Crop",
+                "ratio": "3:2",
+                "url": "https://crop32.io",
+              },
+              "crop45": Object {
+                "__typename": "Crop",
+                "ratio": "4:5",
+                "url": "https://crop45.io",
+              },
+              "id": "id-123",
+              "isVideo": false,
+              "title": "Some Title",
+            }
           }
           width={1440}
         />
@@ -234,11 +277,42 @@ exports[`2. an article with a video as the lead asset 1`] = `
     <View>
       <View>
         <ArticleLeadAsset
-          modalCaption={
-            <Caption
-              credits=""
-              text="This is video caption"
-            />
+          aspectRatio="16:9"
+          displayImage={
+            Object {
+              "__typename": "Crop",
+              "ratio": "16:9",
+              "url": "https://video169.io",
+            }
+          }
+          isVideo={true}
+          leadAsset={
+            Object {
+              "__typename": "Video",
+              "brightcoveAccountId": "5436121857001",
+              "brightcovePolicyKey": "1.2.3.4",
+              "brightcoveVideoId": "5831024132001",
+              "caption": "This is video caption",
+              "isVideo": true,
+              "paidOnly": "false",
+              "posterImage": Object {
+                "__typename": "Image",
+                "caption": "CCTV captures moment of the explosion",
+                "credits": "",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "ratio": "16:9",
+                  "url": "https://video169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "ratio": "3:2",
+                  "url": "https://video32.io",
+                },
+                "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
+                "title": "",
+              },
+            }
           }
           width={1440}
         />
@@ -296,7 +370,15 @@ exports[`3. an article with no lead asset 1`] = `
 >
   <View>
     <View>
-      <View />
+      <View>
+        <ArticleLeadAsset
+          aspectRatio="1:1"
+          displayImage={null}
+          isVideo={false}
+          leadAsset={null}
+          width={1440}
+        />
+      </View>
       <View>
         <Text
           selectable={true}
