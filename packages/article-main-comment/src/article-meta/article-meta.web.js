@@ -7,7 +7,7 @@ import {
   DatePublicationContainer,
   Meta,
   MetaContainer,
-  Seperator
+  Separator
 } from "../styles/responsive.web";
 import styles from "../styles";
 
@@ -16,7 +16,7 @@ const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
     <Meta style={styles.meta}>
       <ArticleBylineWithLinks ast={byline} />
     </Meta>
-    <Seperator />
+    <Separator />
     <Meta style={styles.meta}>
       <DatePublicationContainer style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />

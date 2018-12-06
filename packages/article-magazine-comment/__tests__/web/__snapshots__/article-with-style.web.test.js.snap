@@ -309,7 +309,11 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c9 {
-    background-color: #DBDBDB display:flex;
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     height: 15px;
     margin: 0 10px;
     width: 1px;
