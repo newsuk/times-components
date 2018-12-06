@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
-import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
@@ -27,12 +26,6 @@ const ArticleHeader = ({
     <Text style={styles.articleHeadline}>{headline}</Text>
     <Flags flags={flags} />
     <Standfirst standfirst={standfirst} />
-    {/* <Meta
-      byline={byline}
-      onAuthorPress={onAuthorPress}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-    /> */}
   </View>
 );
 

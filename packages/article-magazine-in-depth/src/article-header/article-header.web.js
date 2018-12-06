@@ -2,7 +2,6 @@ import React from "react";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
-import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
@@ -38,11 +37,6 @@ const ArticleHeader = ({
       <Flags flags={flags} />
     </FlagsContainer>
     <Standfirst standfirst={standfirst} />
-    {/* <Meta
-      byline={byline}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-    /> */}
   </HeaderContainer>
 );
 

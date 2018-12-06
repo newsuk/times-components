@@ -1,6 +1,7 @@
 /* eslint-disable consistent-return */
 
 import React, { Component, Fragment } from "react";
+import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
@@ -10,6 +11,9 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import Meta from "./article-meta/article-meta";
+import styles from "./styles";
+
 
 class ArticleMagazineInDepth extends Component {
   constructor() {
@@ -44,6 +48,13 @@ class ArticleMagazineInDepth extends Component {
           standfirst={standfirst}
         />
         <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
+        <View style={styles.metaContainer}>
+          <Meta
+            byline={byline}
+            publicationName={publicationName}
+            publishedTime={publishedTime}
+          />
+        </View>
       </Fragment>
     );
   }

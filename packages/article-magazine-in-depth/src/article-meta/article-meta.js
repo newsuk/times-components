@@ -15,7 +15,7 @@ const ArticleMeta = ({
   publicationName,
   publishedTime
 }) => (
-  <View style={styles.metaContainer}>
+  <View>
     <View style={styles.meta}>
       <Context.Consumer>
         {({ theme: { sectionColour } }) => (
