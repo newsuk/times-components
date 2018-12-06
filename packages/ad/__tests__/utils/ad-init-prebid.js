@@ -19,7 +19,9 @@ export default () => {
   });
 
   it("perform bidding request for web", () => {
-    const init = adInit(initOptions);
+    const init = adInit(
+      merge(initOptions, { data: { bidInitialiser: false } })
+    );
     jest.spyOn(init.prebid, "setupAsync");
     init.init();
     expect(init.prebid.setupAsync).toHaveBeenCalledTimes(1);
@@ -34,7 +36,7 @@ export default () => {
 
   it("sets up Amazon bidding if amazon account ID is set", () => {
     const option = merge(initOptions, amazonInitExtension);
-    const init = adInit(option);
+    const init = adInit(merge(option, { data: { bidInitialiser: false } }));
     jest.spyOn(init.prebid, "setupApstag");
     const { networkId, adUnit, prebidConfig, section, slots } = option.data;
     init.prebid.requestBidsAsync(

@@ -25,6 +25,10 @@ xdescribe("Topic", () => {
     );
   });
 
+  it("loads inline-ad", () => {
+    cy.loadedAd("#inline-ad");
+  });
+
   it("Next and Previous Pagination works", () => {
     cy.goToNextArticle();
     cy.goToPreviousArticle();

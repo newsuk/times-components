@@ -3,8 +3,15 @@
 exports[`adConfig is set correctly 1`] = `
 Object {
   "adUnit": "thetimes.mob.ios",
+  "bidInitialiser": Promise {
+    "_40": 0,
+    "_55": undefined,
+    "_65": 1,
+    "_72": null,
+  },
   "bidderSlots": Array [],
   "biddersConfig": Object {},
+  "globalSlots": Array [],
   "networkId": "dummy-ad-network-id",
   "pageTargeting": Object {
     "Shared": "0",

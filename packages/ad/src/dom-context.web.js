@@ -31,7 +31,6 @@ class DOMContext extends Component {
   componentWillUnmount() {
     this.eventQueue = [];
     this.hasUnmounted = true;
-    this.adInit.destroySlots();
   }
 
   eventCallback = (type, detail) => {

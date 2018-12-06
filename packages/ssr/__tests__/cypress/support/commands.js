@@ -24,15 +24,3 @@ Cypress.Commands.add("loadedAd", selector => {
     .get("googleQueryId")
     .should("not.be.empty");
 });
-
-Cypress.Commands.add("loadedGlobalAds", () => {
-  cy.loadedAd("#pixel");
-  cy.loadedAd("#pixelteads");
-  cy.loadedAd("#pixelskin");
-  cy.loadedAd("#header");
-});
-
-Cypress.Commands.add("loadedArticleAds", () => {
-  cy.loadedGlobalAds();
-  cy.loadedAd("#inline-ad");
-});
