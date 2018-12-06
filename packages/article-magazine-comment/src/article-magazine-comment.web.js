@@ -18,7 +18,9 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const leadAssetProps = getLeadAsset(article);
     const {
-      author,
+      author = {
+        image: null
+      },
       byline,
       flags,
       headline,
@@ -29,12 +31,10 @@ class ArticlePage extends Component {
       standfirst
     } = article;
 
-    const authorImage = author && author.image ? author.image : null;
-
     return (
       <Fragment>
         <ArticleHeader
-          authorImage={authorImage}
+          authorImage={author.image}
           byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
