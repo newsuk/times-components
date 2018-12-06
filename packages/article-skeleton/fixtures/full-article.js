@@ -1451,6 +1451,7 @@ const defaultTopics = [
   }
 ];
 const defaultUrl = "https://www.thetimes.co.uk/";
+const defaultTemplate = "mainstandard";
 
 const addProp = (obj, key, value) => {
   if (value != null) {
@@ -1481,6 +1482,7 @@ const makeDefaultConfig = ({
   slug = defaultSlug,
   standfirst = defaultStandfirst,
   topics = defaultTopics,
+  template = defaultTemplate,
   url = defaultUrl
 } = {}) => ({
   byline,
@@ -1499,6 +1501,7 @@ const makeDefaultConfig = ({
   shortIdentifier,
   slug,
   standfirst,
+  template,
   topics,
   url
 });
