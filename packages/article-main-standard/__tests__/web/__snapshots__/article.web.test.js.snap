@@ -34,7 +34,15 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
         </div>
       </div>
     </div>
-    <div />
+    <div>
+      <ArticleLeadAsset
+        aspectRatio="1:1"
+        displayImage={null}
+        isVideo={false}
+        leadAsset={null}
+        width={null}
+      />
+    </div>
     <div>
       <p>
         Some content
@@ -83,7 +91,15 @@ exports[`3. an article with ads 1`] = `
         </div>
       </div>
     </div>
-    <div />
+    <div>
+      <ArticleLeadAsset
+        aspectRatio="1:1"
+        displayImage={null}
+        isVideo={false}
+        leadAsset={null}
+        width={null}
+      />
+    </div>
     <div>
       <Ad
         contextUrl="https://url.io"

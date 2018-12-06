@@ -14,7 +14,15 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
 >
   <View>
     <View>
-      <View />
+      <View>
+        <ArticleLeadAsset
+          aspectRatio="1:1"
+          displayImage={null}
+          isVideo={false}
+          leadAsset={null}
+          width={1440}
+        />
+      </View>
       <View>
         <Text
           selectable={true}
@@ -62,7 +70,15 @@ exports[`3. an article with ads 1`] = `
 >
   <View>
     <View>
-      <View />
+      <View>
+        <ArticleLeadAsset
+          aspectRatio="1:1"
+          displayImage={null}
+          isVideo={false}
+          leadAsset={null}
+          width={1440}
+        />
+      </View>
       <View>
         <Text
           selectable={true}
