@@ -121,8 +121,6 @@ export default () => {
           top: 0
         });
 
-        expect(true).toBeTruthy();
-
         windowSpy.mockRestore();
         consoleSpy.mockRestore();
       }
