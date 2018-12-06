@@ -6,7 +6,11 @@ import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
-import { getHeadline, getLeadAsset, getStandardTemplateCrop } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
 import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
@@ -44,7 +48,9 @@ class ArticlePage extends Component {
             {...getLeadAsset(article)}
             getImageCrop={getStandardTemplateCrop}
             onVideoPress={onVideoPress}
-            renderModalCaption={({ captionProps }) => <Caption {...captionProps} />}
+            renderModalCaption={({ captionProps }) => (
+              <Caption {...captionProps} />
+            )}
             style={styles.leadAsset}
             width={parentProps.width}
           />

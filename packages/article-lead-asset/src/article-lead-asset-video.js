@@ -5,21 +5,16 @@ import Video from "@times-components/video";
 import { videoPropTypes, videoDefaultProps } from "./prop-types";
 
 const ArticleLeadAssetVideo = ({
-  getImageCrop,
+  aspectRatio,
   leadAsset: {
     brightcoveVideoId,
     brightcovePolicyKey,
     brightcoveAccountId,
-    posterImage,
     skySports
   },
+  url,
   onVideoPress
 }) => {
-  const crop = getImageCrop(posterImage);
-  const { ratio, url } = crop;
-  const [ratioWidth, ratioHeight] = ratio.split(":");
-  const aspectRatio = ratioWidth / ratioHeight;
-
   const width = screenWidth();
   const height = width / aspectRatio;
 

@@ -1,17 +1,19 @@
 import React from "react";
+import { View } from "react-native";
 import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
-import { LeadAsset } from "./styles/responsive.web";
 
-import { defaultProps, propTypes } from "./prop-types";
+import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
 
 const ArticleLeadAsset = ({
+  className,
   aspectRatio,
   renderCaption,
   displayImage,
   isVideo,
   leadAsset,
+  style,
   width
 }) => {
   if (!leadAsset) {
@@ -41,7 +43,7 @@ const ArticleLeadAsset = ({
   );
 
   return (
-    <LeadAsset>
+    <View className={className} style={style}>
       <figure style={{ margin: 0 }}>
         <AspectRatioContainer aspectRatio={aspectRatio}>
           {leadAssetView}
@@ -50,7 +52,7 @@ const ArticleLeadAsset = ({
           <figcaption>{renderCaption({ captionProps })}</figcaption>
         )}
       </figure>
-    </LeadAsset>
+    </View>
   );
 };
 

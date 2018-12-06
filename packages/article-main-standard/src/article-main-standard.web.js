@@ -64,11 +64,11 @@ class ArticlePage extends Component {
         <LeadAssetContainer>
           <LeadAsset
             {...getLeadAsset(article)}
-            renderCaption={({ captionProps }) =>
+            renderCaption={({ captionProps }) => (
               <LeadAssetCaptionContainer>
                 <Caption {...captionProps} />
               </LeadAssetCaptionContainer>
-            }
+            )}
             width={parentProps.width}
           />
         </LeadAssetContainer>

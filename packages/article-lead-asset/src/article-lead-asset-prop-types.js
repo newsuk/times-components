@@ -17,9 +17,10 @@ const videoLeadAssetPropTypes = {
 };
 
 export const videoPropTypes = {
-  getImageCrop: PropTypes.func.isRequired,
+  aspectRatio: PropTypes.number.isRequired,
   leadAsset: PropTypes.shape(videoLeadAssetPropTypes),
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  url: PropTypes.string.isRequired
 };
 
 export const videoDefaultProps = {
@@ -40,30 +41,9 @@ export const leadAssetImagePropTypes = {
   crop1251: cropPropTypes
 };
 
-export const imagePropTypes = {
-  caption: PropTypes.node,
-  getImageCrop: PropTypes.func.isRequired,
-  leadAsset: PropTypes.shape(leadAssetImagePropTypes),
-  width: PropTypes.number
-};
-
-export const imageDefaultProps = {
-  caption: null,
-  leadAsset: {
-    caption: null,
-    credits: null,
-    crop11: null,
-    crop23: null,
-    crop32: null,
-    crop45: null,
-    crop169: null,
-    crop1251: null
-  },
-  width: null
-};
-
 export const propTypes = {
   aspectRatio: PropTypes.string,
+  className: PropTypes.string,
   displayImage: cropPropTypes,
   isVideo: PropTypes.bool,
   leadAsset: PropTypes.oneOfType([
@@ -72,15 +52,18 @@ export const propTypes = {
   ]),
   renderCaption: PropTypes.func,
   renderModalCaption: PropTypes.func,
+  style: PropTypes.object,
   width: PropTypes.number
 };
 
 export const defaultProps = {
   aspectRatio: "1",
+  className: "",
   displayImage: null,
   isVideo: false,
   leadAsset: null,
   renderCaption: () => null,
+  style: {},
   width: null
 };
 
