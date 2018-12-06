@@ -42,44 +42,55 @@ const renderArticle = ({
   section
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
-    {({ article, isLoading, error, refetch }) => (
-      <Context.Provider
-        value={{
-          makeArticleUrl,
-          theme: {
-            ...themeFactory(section, templateName),
-            scale: scale || defaults.theme.scale
-          }
-        }}
-      >
-        <ArticleMagazineStandard
-          adConfig={adConfig}
-          analyticsStream={analyticsStream}
-          article={article}
-          error={error}
-          isLoading={isLoading}
-          onAuthorPress={preventDefaultedAction(decorateAction)(
-            "onAuthorPress"
-          )}
-          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-            "onCommentGuidelinesPress"
-          )}
-          onCommentsPress={preventDefaultedAction(decorateAction)(
-            "onCommentsPress"
-          )}
-          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-            "onRelatedArticlePress"
-          )}
-          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-          refetch={refetch}
-        />
-      </Context.Provider>
-    )}
+    {({ article, isLoading, error, refetch }) => {
+      const data = {
+        ...article,
+        template: "magazinestandard"
+      };
+
+      return (
+        <Context.Provider
+          value={{
+            makeArticleUrl,
+            theme: {
+              ...themeFactory(section, templateName),
+              scale: scale || defaults.theme.scale
+            }
+          }}
+        >
+          <ArticleMagazineStandard
+            adConfig={adConfig}
+            analyticsStream={analyticsStream}
+            article={data}
+            error={error}
+            isLoading={isLoading}
+            onAuthorPress={preventDefaultedAction(decorateAction)(
+              "onAuthorPress"
+            )}
+            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+              "onCommentGuidelinesPress"
+            )}
+            onCommentsPress={preventDefaultedAction(decorateAction)(
+              "onCommentsPress"
+            )}
+            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+              "onRelatedArticlePress"
+            )}
+            onTopicPress={preventDefaultedAction(decorateAction)(
+              "onTopicPress"
+            )}
+            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+              "onTwitterLinkPress"
+            )}
+            onVideoPress={preventDefaultedAction(decorateAction)(
+              "onVideoPress"
+            )}
+            refetch={refetch}
+          />
+        </Context.Provider>
+      );
+    }}
   </ArticleProvider>
 );
 

@@ -69,11 +69,11 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const Seperator = styled(View)`
+export const Separator = styled(View)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
-    background-color: ${colours.functional.keyline}
+    background-color: ${colours.functional.keyline};
     display: flex;
     height: ${spacing(3)};
     margin: 0 ${spacing(2)};

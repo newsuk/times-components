@@ -11,7 +11,7 @@ import {
   articleSkeletonDefaultProps
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./article-tracking-context";
-
+import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
@@ -42,12 +42,11 @@ class ArticleSkeleton extends Component {
     const {
       adConfig,
       analyticsStream,
-      data: { content, section, url, topics, relatedArticleSlice },
+      data: { content, section, url, topics, relatedArticleSlice, template },
       Header,
       receiveChildList
     } = this.props;
     const { articleWidth } = this.state;
-
     // eslint-disable-next-line react/prop-types
     const displayRelatedArticles = ({ isVisible }) =>
       relatedArticleSlice ? (
@@ -60,6 +59,8 @@ class ArticleSkeleton extends Component {
           }}
         />
       ) : null;
+    const newContent = [...content];
+    newContent[0] = insertDropcapIntoAST(newContent[0], template);
 
     receiveChildList([
       {
@@ -90,7 +91,7 @@ class ArticleSkeleton extends Component {
                   <Header width={articleWidth} />
                   <BodyContainer>
                     <ArticleBody
-                      content={content}
+                      content={newContent}
                       contextUrl={url}
                       observed={observed}
                       registerNode={registerNode}

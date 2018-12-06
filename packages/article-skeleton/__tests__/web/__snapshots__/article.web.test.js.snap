@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. a full article with all content items 1`] = `
+exports[`1. a full article with all content items with dropcap template 1`] = `
 <article>
   <div>
     <Ad
@@ -138,6 +138,347 @@ exports[`1. a full article with all content items 1`] = `
                     data-player="default"
                     data-video-id="4084164751001"
                     id="4084164751001-57838016001-1"
+                    poster="https://image.io"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div>
+              <Caption
+                text="This is video caption"
+              />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <KeyFacts
+        ast={
+          Object {
+            "attributes": Object {
+              "title": "Example title",
+            },
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Example bullet text",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "An example ",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                      Object {
+                        "attributes": Object {
+                          "href": "https://example.io",
+                          "target": "_blank",
+                          "type": "topic",
+                        },
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "link",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "link",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "More example text.",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Example text ",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "this is bold ",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "bold",
+                      },
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "this is in italics.",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "italic",
+                      },
+                    ],
+                    "name": "listElement",
+                  },
+                ],
+                "name": "unorderedList",
+              },
+            ],
+            "name": "keyFacts",
+          }
+        }
+      />
+      <div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </nav>
+      </div>
+      <aside
+        id="related-articles"
+      >
+        <RelatedArticles
+          isVisible={false}
+          slice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "byline": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+        />
+      </aside>
+    </div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
+  </div>
+</article>
+`;
+
+exports[`2. a full article with all content items with not a dropcap template 1`] = `
+<article>
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <p>
+        This being Black History Month, last week
+      </p>
+      <div>
+        <InteractiveWrapper
+          attributes={
+            Object {
+              "chart-id": "csmgb",
+            }
+          }
+          element="times-datawrapper"
+          source="https://interactive.io"
+        />
+      </div>
+      <div
+        id="2"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "An image caption",
+                "credits": "The image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "primary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        id="3"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A secondary image caption",
+                "credits": "The secondary image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "secondary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io/secondary",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        id="4"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "An inline image caption",
+                "credits": "The inline image credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "inline",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "1500:1000",
+                "uri": "https://image.io/inline",
+              }
+            }
+          />
+        </div>
+      </div>
+      <Link
+        target="_blank"
+        url="https://link.io"
+      >
+        Some Link
+      </Link>
+      <p>
+        Some content
+      </p>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="inline-ad"
+      />
+      <div>
+        <div>
+          <PullQuote
+            caption="AName"
+            captionColour="#FF0000"
+            quoteColour="#FF0000"
+            text="a text"
+            twitter="@AName"
+          >
+            The pull quote content
+          </PullQuote>
+        </div>
+      </div>
+      <div>
+        <figure>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <video
+                    controls={true}
+                    data-account="57838016001"
+                    data-application-id={true}
+                    data-embed="default"
+                    data-player="default"
+                    data-video-id="4084164751001"
+                    id="4084164751001-57838016001-2"
                     poster="https://image.io"
                   />
                 </div>

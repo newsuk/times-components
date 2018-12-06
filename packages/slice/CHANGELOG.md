@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.17](https://github.com/newsuk/times-components/compare/@times-components/slice@3.1.16...@times-components/slice@3.1.17) (2018-12-05)
+
+
+### Bug Fixes
+
+* related articles styling ([#1544](https://github.com/newsuk/times-components/issues/1544)) ([d715771](https://github.com/newsuk/times-components/commit/d715771))
+
+
+
+
+
 ## [3.1.16](https://github.com/newsuk/times-components/compare/@times-components/slice@3.1.15...@times-components/slice@3.1.16) (2018-12-04)
 
 **Note:** Version bump only for package @times-components/slice
