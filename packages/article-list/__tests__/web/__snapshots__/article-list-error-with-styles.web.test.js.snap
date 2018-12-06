@@ -503,3 +503,292 @@ exports[`2. article list 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. article list colin 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.c3 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+.c6 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c0 {
+    max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    border-top-width: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<style>
+.S1 {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 4px;
+}
+
+.S2 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  min-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  max-width: 760px;
+  min-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.S4 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  min-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S2"
+  >
+    <div
+      className="c0 S2"
+    >
+      <div
+        className="S4"
+      >
+        <div
+          className="S3"
+        >
+          <div
+            className="c1 S2"
+          >
+            <div
+              className="c2 S2"
+            >
+              <div
+                className="S1"
+              >
+                Showing -2 - 0 of 0 results
+              </div>
+            </div>
+            <div
+              className="c3 S2"
+            >
+              <div
+                className="c4 S2"
+              />
+              <div
+                className="c4 S2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="c0 S2"
+      >
+        ArticleListItem
+      </div>
+    </div>
+    <div />
+    <div
+      className="S4"
+    >
+      <div
+        className="S3"
+      >
+        <div
+          className="c5 S2"
+        >
+          <div
+            className="c6 S2"
+          >
+            <div
+              className="c4 S2"
+            />
+            <div
+              className="c4 S2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
