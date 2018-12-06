@@ -44,7 +44,7 @@
     "@times-components/storybook": "3.2.1",
     "@times-components/tealium-utils": "0.7.9",
     "@times-components/test-utils": "2.0.3",
-    "apollo-client": "2.3.7",
+    "apollo-client": "2.4.7",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
