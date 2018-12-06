@@ -1,26 +1,29 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
-import cropPropTypes from "./crop-prop-types";
 import { LeadAsset } from "./styles/responsive.web";
-import { propTypes, defaultProps } from "./article-lead-asset-prop-types";
 
-const LeadAssetComponent = ({
+import { defaultProps, propTypes } from "./prop-types";
+
+const ArticleLeadAsset = ({
   aspectRatio,
-  caption,
+  renderCaption,
   displayImage,
   isVideo,
   leadAsset,
-  width,
-  ...props
+  width
 }) => {
   if (!leadAsset) {
     return null;
   }
 
   const { url } = displayImage;
+  const captionProps = {
+    credits: leadAsset.credits,
+    text: leadAsset.caption
+  };
+
   const leadAssetView = isVideo ? (
     <Video
       accountId={leadAsset.brightcoveAccountId}
@@ -38,41 +41,20 @@ const LeadAssetComponent = ({
   );
 
   return (
-    <LeadAsset {...props}>
+    <LeadAsset>
       <figure style={{ margin: 0 }}>
         <AspectRatioContainer aspectRatio={aspectRatio}>
           {leadAssetView}
         </AspectRatioContainer>
-        {caption && <figcaption>{caption}</figcaption>}
+        {renderCaption && (
+          <figcaption>{renderCaption({ captionProps })}</figcaption>
+        )}
       </figure>
     </LeadAsset>
   );
 };
 
-LeadAssetComponent.propTypes = {
-  ...propTypes,
-  aspectRatio: PropTypes.string,
-  displayImage: cropPropTypes,
-  isVideo: PropTypes.bool,
-  leadAsset: PropTypes.shape({
-    caption: PropTypes.string,
-    credits: PropTypes.string,
-    crop: cropPropTypes,
-    crop11: cropPropTypes,
-    crop23: cropPropTypes,
-    crop32: cropPropTypes,
-    crop45: cropPropTypes,
-    crop169: cropPropTypes,
-    crop1251: cropPropTypes
-  }),
-};
+ArticleLeadAsset.propTypes = propTypes;
+ArticleLeadAsset.defaultProps = defaultProps;
 
-LeadAssetComponent.defaultProps = {
-  ...defaultProps,
-  aspectRatio: "1",
-  displayImage: null,
-  isVideo: false,
-  leadAsset: null,
-};
-
-export default LeadAssetComponent;
+export default ArticleLeadAsset;

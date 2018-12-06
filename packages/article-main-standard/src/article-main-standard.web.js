@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Text } from "react-native";
-import LeadAssetComponent from "@times-components/article-lead-asset";
+import LeadAsset from "@times-components/article-lead-asset";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
 import Caption from "@times-components/caption";
@@ -12,7 +11,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import {
-  LeadAsset,
+  // LeadAsset,
   LeadAssetCaptionContainer
 } from "./styles/article-body/responsive";
 
@@ -42,7 +41,6 @@ class ArticlePage extends Component {
       standfirst,
       topics
     } = article;
-    const leadAssetProps = getLeadAsset(article);
 
     return (
       <Fragment>
@@ -64,14 +62,13 @@ class ArticlePage extends Component {
           <ArticleTopics topics={topics} />
         </MetaContainer>
         <LeadAssetContainer>
-          <LeadAssetComponent
-            {...leadAssetProps}
-            caption={
+          <LeadAsset
+            {...getLeadAsset(article)}
+            renderCaption={({ captionProps }) =>
               <LeadAssetCaptionContainer>
-                <Caption credits={leadAssetProps.leadAsset.credits} text={leadAssetProps.leadAsset.caption}  />
+                <Caption {...captionProps} />
               </LeadAssetCaptionContainer>
             }
-            style={styles.leadAsset}
             width={parentProps.width}
           />
         </LeadAssetContainer>

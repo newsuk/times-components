@@ -5,7 +5,13 @@ exports[`full article with style 1`] = `
   <View>
     <View>
       <View>
-        <ModalImage />
+        <ArticleLeadAsset
+          style={
+            Object {
+              "marginBottom": 6,
+            }
+          }
+        />
       </View>
       <View
         style={

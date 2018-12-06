@@ -15,6 +15,7 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import { getStandardTemplateCrop } from "@times-components/utils";
 
 class ArticlePage extends Component {
   constructor() {
@@ -35,20 +36,16 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst
     } = article;
-    const { isVideo, leadAsset } = getLeadAsset(article);
     const styles = stylesFactory();
 
     return (
       <Fragment>
         <View key="leadAsset" testID="leadAsset">
           <ArticleLeadAsset
-            data={{ ...leadAsset, onVideoPress }}
-            modalCaption={
-              <Caption
-                credits={leadAsset.credits}
-                text={leadAsset.caption}
-              />
-            }
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            onVideoPress={onVideoPress}
+            renderModalCaption={({ captionProps }) => <Caption {...captionProps} />}
             style={styles.leadAsset}
             width={parentProps.width}
           />
@@ -57,7 +54,6 @@ class ArticlePage extends Component {
           flags={flags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
-          isVideo={isVideo}
           label={label}
           standfirst={standfirst}
           style={[styles.articleMainContentRow]}

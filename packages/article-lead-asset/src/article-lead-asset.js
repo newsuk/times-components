@@ -1,29 +1,40 @@
 import React from "react";
 import { View } from "react-native";
-import PropTypes from "prop-types";
-import { propTypes, defaultProps } from "./article-lead-asset-prop-types";
 import ArticleLeadAssetImage from "./article-lead-asset-image";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
 
-const ArticleLeadAsset = ({ caption, data, modalCaption = caption, width, ...props }) => {
-  const LeadAsset = data.isVideo
-    ? ArticleLeadAssetVideo
-    : ArticleLeadAssetImage;
+import { nativePropTypes, nativeDefaultProps } from "./prop-types";
 
-  return <View {...props}>
-    <LeadAsset {...data} modalCaption={modalCaption} width={width} />
-    {caption}
-  </View>;
+const ArticleLeadAsset = ({
+  getImageCrop,
+  renderCaption,
+  renderModalCaption = renderCaption,
+  isVideo,
+  leadAsset,
+  onVideoPress,
+  width
+}) => {
+  const LeadAsset = isVideo ? ArticleLeadAssetVideo : ArticleLeadAssetImage;
+  const captionProps = {
+    credits: leadAsset.credits,
+    text: leadAsset.caption
+  };
+
+  return (
+    <View>
+      <LeadAsset
+        caption={renderModalCaption({ captionProps })}
+        getImageCrop={getImageCrop}
+        leadAsset={leadAsset}
+        onVideoPress={onVideoPress}
+        width={width}
+      />
+      {renderCaption({ captionProps })}
+    </View>
+  );
 };
 
-ArticleLeadAsset.propTypes = {
-  ...propTypes,
-  data: PropTypes.oneOfType([
-    PropTypes.shape(ArticleLeadAssetVideo.propTypes),
-    PropTypes.shape(ArticleLeadAssetImage.propTypes)
-  ]).isRequired,
-};
-
-ArticleLeadAsset.defaultProps = defaultProps;
+ArticleLeadAsset.propTypes = nativePropTypes;
+ArticleLeadAsset.defaultProps = nativeDefaultProps;
 
 export default ArticleLeadAsset;

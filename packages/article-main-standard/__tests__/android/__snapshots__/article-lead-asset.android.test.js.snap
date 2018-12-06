@@ -13,12 +13,14 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   <View>
     <View>
       <View>
-        <ModalImage
-          aspectRatio={1.7777777777777777}
-          caption="Some Caption"
-          credits="Some Credits"
-          highResSize={1440}
-          uri="https://crop169.io"
+        <ArticleLeadAsset
+          modalCaption={
+            <Caption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          }
+          width={1440}
         />
       </View>
       <View>
@@ -231,17 +233,14 @@ exports[`2. an article with a video as the lead asset 1`] = `
   <View>
     <View>
       <View>
-        <Video
-          accountId="5436121857001"
-          height={421.875}
-          policyKey="1.2.3.4"
-          poster={
-            Object {
-              "uri": "https://video169.io",
-            }
+        <ArticleLeadAsset
+          modalCaption={
+            <Caption
+              credits=""
+              text="This is video caption"
+            />
           }
-          videoId="5831024132001"
-          width={750}
+          width={1440}
         />
       </View>
       <View>
