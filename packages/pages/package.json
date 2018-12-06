@@ -63,7 +63,7 @@
     "apollo-link-http": "1.5.7",
     "graphql": "14.0.2",
     "prop-types": "15.6.2",
-    "react-apollo": "2.3.2"
+    "react-apollo": "2.3.2-beta.3"
   },
   "peerDependencies": {
     "react": ">=16",

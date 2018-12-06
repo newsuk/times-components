@@ -16676,10 +16676,10 @@ react-addons-create-fragment@^15.5.3:
     loose-envify "^1.3.1"
     object-assign "^4.1.0"
 
-react-apollo@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.3.2.tgz#b8e287d2813722b9e0a886cabf8149ab3b84a3b7"
-  integrity sha512-3lU9iqmj4KMIZvlWWSuLihxMGLEAL6oNmnSTWrb3/mRP36Zy0zJD4rdaonDx4WzqFYQAnUPaOiFnHGp0UQUTwA==
+react-apollo@2.3.2-beta.3:
+  version "2.3.2-beta.3"
+  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.3.2-beta.3.tgz#4d28a29f19fb90f1f8d119f77dbb5623c245b171"
+  integrity sha512-Wzxz/yZV/Rj+aZ8rfURsVA4uEF/Q1qexJXsqAAiW7dQnr7qi8zjO3QC8M3O2va8Wg/MyoZOnDlkBwdIJdCOXKQ==
   dependencies:
     fbjs "^1.0.0"
     hoist-non-react-statics "^3.0.0"
