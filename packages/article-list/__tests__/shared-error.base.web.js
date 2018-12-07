@@ -51,7 +51,7 @@ export default () => {
               adConfig={adConfig}
               articles={articlesFixture.slice(0, 2)}
               emptyStateMessage="Empty state"
-              pageSize={3}
+              pageSize={1}
               refetch={() => {}}
             />
           </Context.Provider>
