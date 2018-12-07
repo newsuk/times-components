@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { getHeadline, getLeadAsset, getStandardTemplateCrop } from "@times-components/utils";
+import { CentredCaption } from "@times-components/caption";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
-import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import styles from "./styles";
+import { LeadAssetContainer } from "./styles/responsive.web";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -16,7 +19,6 @@ class ArticlePage extends Component {
 
   renderHeader({ width }) {
     const { article } = this.props;
-    const leadAssetProps = getLeadAsset(article);
     const {
       author = {
         image: null
@@ -43,7 +45,16 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset {...leadAssetProps} width={width} />
+        <LeadAssetContainer style={styles.leadAssetContainer}>
+          <ArticleLeadAsset
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            renderCaption={({ captionProps }) => (
+              <CentredCaption {...captionProps} />
+            )}
+            width={width}
+          />
+        </LeadAssetContainer>
       </Fragment>
     );
   }
