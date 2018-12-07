@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.11...@times-components/article-list@6.1.12) (2018-12-07)
+
+
+### Bug Fixes
+
+* article list storybook warnings ([#1550](https://github.com/newsuk/times-components/issues/1550)) ([50fb88c](https://github.com/newsuk/times-components/commit/50fb88c))
+
+
+
+
+
 ## [6.1.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.10...@times-components/article-list@6.1.11) (2018-12-07)
 
 **Note:** Version bump only for package @times-components/article-list
