@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.3.11...@times-components/article-main-comment@0.3.12) (2018-12-07)
+
+
+### Bug Fixes
+
+* Handle empty author object in article comment templates  ([#1549](https://github.com/newsuk/times-components/issues/1549)) ([b22ead3](https://github.com/newsuk/times-components/commit/b22ead3))
+
+
+
+
+
 ## [0.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.3.10...@times-components/article-main-comment@0.3.11) (2018-12-07)
 
 **Note:** Version bump only for package @times-components/article-main-comment
