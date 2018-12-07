@@ -124,14 +124,7 @@ exports[`default styles 1`] = `
                 >
                   March 13 2015, 6:54pm
                 </Text>
-                <View
-                  style={
-                    Object {
-                      "flexDirection": "row",
-                      "flexWrap": "wrap",
-                    }
-                  }
-                >
+                <Text>
                   <Text
                     style={
                       Object {
@@ -158,7 +151,7 @@ exports[`default styles 1`] = `
                   >
                     , Environment Editor
                   </Text>
-                </View>
+                </Text>
               </View>
             </Card>
           </View>

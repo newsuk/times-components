@@ -77,14 +77,7 @@ exports[`default styles 1`] = `
                     TEST LABEL
                   </Text>
                 </View>
-                <View
-                  style={
-                    Object {
-                      "flexDirection": "row",
-                      "flexWrap": "wrap",
-                    }
-                  }
-                >
+                <Text>
                   <Text
                     style={
                       Object {
@@ -98,7 +91,7 @@ exports[`default styles 1`] = `
                   >
                     Sathnam Sanghera
                   </Text>
-                </View>
+                </Text>
                 <Text
                   style={
                     Object {

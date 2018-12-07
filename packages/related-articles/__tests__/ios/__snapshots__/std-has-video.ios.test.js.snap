@@ -56,14 +56,14 @@ exports[`1. has video 1`] = `
                 <Text>
                   March 13 2015, 6:54pm
                 </Text>
-                <View>
+                <Text>
                   <Text>
                     Camilla Long
                   </Text>
                   <Text>
                     , Environment Editor
                   </Text>
-                </View>
+                </Text>
               </View>
             </Card>
           </View>

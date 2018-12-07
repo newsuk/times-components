@@ -47,10 +47,11 @@ exports[`1. article summary component with a single paragraph 1`] = `
 }
 
 .S6 {
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
   margin-bottom: 0px;
 }
 </style>
