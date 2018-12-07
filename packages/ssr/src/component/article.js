@@ -14,7 +14,8 @@ module.exports = (client, analyticsStream, data) => {
     articleId,
     debounceTimeMs,
     makeArticleUrl,
-    mapArticleToAdConfig
+    mapArticleToAdConfig,
+    spotAccountId
   } = data;
 
   return React.createElement(
@@ -45,7 +46,8 @@ module.exports = (client, analyticsStream, data) => {
             onAuthorPress: () => {},
             onRelatedArticlePress: () => {},
             onTopicPress: () => {},
-            refetch
+            refetch,
+            spotAccountId
           })
         )
     )

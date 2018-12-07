@@ -1,16 +1,13 @@
 # SSR
 
-An unpublished package which allows developers to easily play with
-server-side-rendering (SSR). Add any "pages" (top level components) here for
-rendering, by adding a route and the webpack config necessary to create a client
-bundle.
+The renderer used to render top level components server side and to create client
+bundles. Add any "pages" (top level components) here for rendering, by adding a
+route and the webpack config necessary to create a client bundle.
 
 ## Usage
 
-Before each command below you should set the envar `GRAPHQL_ENDPOINT` which will
-be used for data fetching. In order to create a bundle it relies on each package
-having it's own `rnw` bundle generated. Use `npx lerna run bundle` at the root
-to simulate a published package.
+In order to create a bundle, we need for all packages to have their own `rnw` bundle.
+Use `npx lerna run bundle` at the root to simulate a published package.
 
 ```bash
 yarn bundle:dev
@@ -29,7 +26,7 @@ warnings/errors. The server-side response is also compressed for testing client
 perf.
 
 ```bash
-yarn start
+GRAPHQL_ENDPOINT=<API endpoint> SPOT_ID=<SpotIM ID> yarn start
 ```
 
 Run a simple node server which serves up the various pages which currently
@@ -39,9 +36,12 @@ include:
 - `/profile/:author-slug`
 - `/topic/:topic-slug`
 
-They will use the client side bundle you generated above. You can optionally set
-`AUTH_TOKEN` as an envar (instructions should be available from your API
-provider) to get unteased articles.
+They will use the client side bundle you generated above.
+
+- `GRAPHQL_ENDPOINT` is used for data fetching.
+- `SPOT_ID` is used to render comments on article pages.
+- You can optionally set `GRAPHQL_TOKEN` (instructions should be available from your
+  API provider) to get unteased articles.
 
 ```bash
 yarn bundle:profile
@@ -53,21 +53,12 @@ visualise the webpack bundle or upload it to other tools
 [suggested by webpack](https://webpack.js.org/guides/code-splitting/#bundle-analysis)
 
 ```bash
-yarn start:tpamock
+yarn start:testserver
 ```
 
-This starts an [Apollo sever](https://www.apollographql.com/docs/apollo-server/)
-with a mock implementation using the fixture generator from `provider-test-tools`.
-This should be expanded on to provide different use cases for particular queries
-and used for testing with Cypress so that we have a closely integration
-"fixture server" for robust e2e testing.
-
-```bash
-yarn start:test
-```
-
-Simply starts the SSR server but sets the `GRAPHQL_ENDPOINT` to port 4000 which
-is where the mock TPA server should be running using `yarn start:tpamock`.
+Simply starts the SSR server but sets the `SPOT_ID` to a fixed dummy value (so
+the SpotIM script will written on the article page, but not found/run), and sets
+`GRAPHQL_ENDPOINT` to port 4000 which is where the test TPA server should be running.
 
 ## Contributing
 

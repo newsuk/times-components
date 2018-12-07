@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
+.c13 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c14 {
+  color: #696969;
+  font-family: "GillSansMTStd-Medium";
+  font-size: 13px;
+  margin-bottom: -10px;
+  margin-left: 7px;
+  margin-top: 25px;
+}
+
 .c3 {
   color: #333333;
   display: block;
@@ -91,6 +105,18 @@ exports[`full article with style 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media (min-width:768px) {
+  .c13 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
 }
 
 @media (min-width:768px) {
@@ -440,6 +466,21 @@ exports[`full article with style 1`] = `
       <aside>
         <RelatedArticles />
       </aside>
+      <div
+        className="c13"
+      >
+        <p
+          className="c14"
+        >
+          Comments are subject to our community guidelines, which can be viewed
+           
+          <a>
+            here
+          </a>
+          .
+        </p>
+        <div />
+      </div>
     </div>
   </div>
 </article>

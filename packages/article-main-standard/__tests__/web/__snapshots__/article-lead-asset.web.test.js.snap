@@ -246,6 +246,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           }
         />
       </aside>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>
@@ -327,6 +330,9 @@ exports[`2. an article with a video as the lead asset 1`] = `
       <aside
         id="related-articles"
       />
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>
@@ -371,6 +377,9 @@ exports[`3. an article with no lead asset 1`] = `
       </p>
       <aside
         id="related-articles"
+      />
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       />
     </div>
   </div>

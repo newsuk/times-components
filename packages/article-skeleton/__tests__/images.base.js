@@ -51,6 +51,7 @@ export default () =>
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            spotAccountId=""
           />
         );
 
@@ -90,6 +91,7 @@ export default () =>
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
+            spotAccountId=""
           />
         );
 

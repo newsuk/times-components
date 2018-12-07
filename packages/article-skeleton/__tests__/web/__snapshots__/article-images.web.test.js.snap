@@ -37,6 +37,19 @@ exports[`1. a secondary image 1`] = `
       <aside
         id="related-articles"
       />
+      <div>
+        <p>
+          Comments are subject to our community guidelines, which can be viewed
+           
+          <a
+            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+          >
+            here
+          </a>
+          .
+        </p>
+        <div />
+      </div>
     </div>
   </div>
 </article>
@@ -79,6 +92,19 @@ exports[`2. an inline image 1`] = `
       <aside
         id="related-articles"
       />
+      <div>
+        <p>
+          Comments are subject to our community guidelines, which can be viewed
+           
+          <a
+            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+          >
+            here
+          </a>
+          .
+        </p>
+        <div />
+      </div>
     </div>
   </div>
 </article>

@@ -13,10 +13,10 @@
     "prepublishOnly": "yarn bundle:prod",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "start": "webpack --config=src/standalone-renderer/webpack.config.js && node src/standalone-renderer/app.js",
-    "start:testservers": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql yarn start & wait-on tcp:3000",
-    "stop:testservers": "kill $(lsof -t -i:3000,4000)",
-    "test:integration": "yarn bundle:prod && yarn start:testservers && cypress run; exitCode=$?; yarn stop:testservers; exit $exitCode",
-    "test:integration:debug": "yarn bundle:prod && yarn start:testservers && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testservers; exit $exitCode"
+    "start:testserver": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql SPOT_ID=5p0t_1m_1d yarn start & wait-on tcp:3000",
+    "stop:testserver": "kill $(lsof -t -i:3000)",
+    "test:integration": "yarn bundle:prod && yarn start:testserver && cypress run; exitCode=$?; yarn stop:testserver; exit $exitCode",
+    "test:integration:debug": "yarn bundle:prod && yarn start:testserver && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testserver; exit $exitCode"
   },
   "repository": {
     "type": "git",

@@ -710,6 +710,7 @@ exports[`full article with style 1`] = `
       <aside>
         <RelatedArticles />
       </aside>
+      <ArticleComments />
     </div>
   </div>
 </article>

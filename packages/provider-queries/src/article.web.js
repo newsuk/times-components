@@ -4,7 +4,6 @@ import gql from "graphql-tag";
 export default addTypenameToDocument(gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
-      commentCount
       commentsEnabled
       content: paywalledContent
       flags

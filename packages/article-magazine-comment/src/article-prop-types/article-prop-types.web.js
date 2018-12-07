@@ -1,10 +1,12 @@
+import PropTypes from "prop-types";
 import {
   articlePagePropTypes,
   articlePageDefaultProps
 } from "./article-prop-types.base";
 
 const articlePropTypes = {
-  ...articlePagePropTypes
+  ...articlePagePropTypes,
+  spotAccountId: PropTypes.string.isRequired
 };
 
 const articleDefaultProps = {
