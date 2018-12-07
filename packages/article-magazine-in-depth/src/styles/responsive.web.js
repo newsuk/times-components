@@ -104,7 +104,7 @@ export const LeadAsset = styled(View)`
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
