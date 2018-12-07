@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c12 {
+.c13 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,28 +12,15 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c15 {
+.c16 {
   padding-left: 10px;
 }
 
-.c11 {
+.c12 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c16 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -47,21 +34,34 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c14 {
+.c15 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c13 {
+.c14 {
   display: block;
 }
 
-.c18 {
+.c19 {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -70,7 +70,7 @@ exports[`full article with style 1`] = `
   display: none;
 }
 
-.c10 {
+.c11 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -99,6 +99,10 @@ exports[`full article with style 1`] = `
   display: none;
 }
 
+.c10 {
+  display: none;
+}
+
 .c2 {
   padding-left: 10px;
   padding-right: 10px;
@@ -121,7 +125,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -131,62 +135,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
   .c12 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+  .c17 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c17 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
   .c15 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c16 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c16 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c17 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c14 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -198,7 +202,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -207,13 +211,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c14 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c19 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -287,6 +291,15 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c8 {
     display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -457,6 +470,38 @@ exports[`full article with style 1`] = `
   padding-top: 0px;
 }
 
+.S11 {
+  font-weight: inherit;
+  line-height: 17px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S12 {
+  font-weight: 400;
+  line-height: 17px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S13 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
 .IS1 {
   margin-bottom: 0;
 }
@@ -466,6 +511,20 @@ exports[`full article with style 1`] = `
 }
 
 .IS3 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS4 {
+  padding-bottom: 56.25%;
+}
+
+.IS5 {
+  margin: 0;
+}
+
+.IS6 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -474,35 +533,35 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS4 {
+.IS7 {
   height: 100%;
   width: 100%;
 }
 
-.IS5 {
+.IS8 {
   position: relative;
 }
 
-.IS6 {
+.IS9 {
   height: 100%;
   width: 100%;
 }
 
-.IS7 {
+.IS10 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS8 {
+.IS11 {
   padding-bottom: 56.25%;
 }
 
-.IS9 {
+.IS12 {
   margin: 0;
 }
 
-.IS10 {
+.IS13 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -513,7 +572,7 @@ exports[`full article with style 1`] = `
   margin-top: 30px;
 }
 
-.IS11 {
+.IS14 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
@@ -604,14 +663,54 @@ exports[`full article with style 1`] = `
     <div
       className="c9 S1"
     >
-      <ArticleLeadAsset />
+      <div
+        className="S1"
+      >
+        <figure
+          className="IS5"
+        >
+          <div
+            className="IS4 S10"
+          >
+            <div
+              className="IS3 S1"
+            >
+              <Image />
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c10 S1"
+            >
+              <div
+                className="S1"
+              >
+                <div
+                  className="S13"
+                >
+                  <div
+                    className="S11"
+                  >
+                    Some Caption
+                  </div>
+                  <div
+                    className="S12"
+                  >
+                    SOME CREDITS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
     </div>
     <div
-      className="c10 S1"
+      className="c11 S1"
     >
       <div>
         <div
-          className="c11 S1"
+          className="c12 S1"
         >
           <ArticleImage />
         </div>
@@ -620,15 +719,15 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c12 IS3"
+        className="c13 IS6"
       >
         Some content
       </p>
       <div
-        className="c13 S1"
+        className="c14 S1"
       >
         <div
-          className="c14 S1"
+          className="c15 S1"
         >
           <PullQuote>
             The pull quote content
@@ -636,25 +735,25 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <div
-        className="c11 S1"
+        className="c12 S1"
       >
         <figure
-          className="IS9"
+          className="IS12"
         >
           <div
-            className="IS8 S10"
+            className="IS11 S10"
           >
             <div
-              className="IS7 S1"
+              className="IS10 S1"
             >
               <div
-                className="IS6"
+                className="IS9"
               >
                 <div
-                  className="IS5"
+                  className="IS8"
                 >
                   <video
-                    className="video-js IS4"
+                    className="video-js IS7"
                   />
                 </div>
               </div>
@@ -662,23 +761,28 @@ exports[`full article with style 1`] = `
           </div>
           <figcaption>
             <div
-              className="c15 S1"
+              className="c16 S1"
             >
-              <Caption />
+              <div
+                className="S1"
+              >
+                <div
+                  className="S13"
+                >
+                  <div
+                    className="S11"
+                  >
+                    This is video caption
+                  </div>
+                </div>
+              </div>
             </div>
           </figcaption>
         </figure>
       </div>
       <Ad
-        className="IS10"
+        className="IS13"
       />
-      <div>
-        <div
-          className="c16 S1"
-        >
-          <ArticleImage />
-        </div>
-      </div>
       <div>
         <div
           className="c17 S1"
@@ -686,12 +790,19 @@ exports[`full article with style 1`] = `
           <ArticleImage />
         </div>
       </div>
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
       <div
-        className="c18 S1"
+        className="c19 S1"
       >
         <nav>
           <ArticleTopics
-            className="IS11"
+            className="IS14"
           />
         </nav>
       </div>

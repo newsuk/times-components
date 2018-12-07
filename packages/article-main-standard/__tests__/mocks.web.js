@@ -11,9 +11,7 @@ jest.mock("@times-components/article-flag", () => ({
   UpdatedArticleFlag: "UpdatedArticleFlag"
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
-jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
-jest.mock("@times-components/caption", () => "Caption");
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/interactive-wrapper", () => "InteractiveWrapper");
