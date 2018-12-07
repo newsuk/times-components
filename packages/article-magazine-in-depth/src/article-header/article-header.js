@@ -11,16 +11,7 @@ import {
 } from "./article-header-prop-types";
 import styles from "../styles";
 
-const ArticleHeader = ({
-  byline,
-  flags,
-  headline,
-  label,
-  onAuthorPress,
-  publicationName,
-  publishedTime,
-  standfirst
-}) => (
+const ArticleHeader = ({ flags, headline, label, standfirst }) => (
   <View style={styles.container}>
     <Label label={label} />
     <Text style={styles.articleHeadline}>{headline}</Text>
@@ -31,7 +22,6 @@ const ArticleHeader = ({
 
 ArticleHeader.propTypes = {
   ...articleHeaderPropTypes,
-  onAuthorPress: PropTypes.func.isRequired
 };
 
 ArticleHeader.defaultProps = articleHeaderDefaultProps;

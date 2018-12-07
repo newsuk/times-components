@@ -15,15 +15,7 @@ import {
   HeadlineContainer
 } from "../styles/responsive";
 
-const ArticleHeader = ({
-  byline,
-  flags,
-  headline,
-  label,
-  publicationName,
-  publishedTime,
-  standfirst
-}) => (
+const ArticleHeader = ({ flags, headline, label, standfirst }) => (
   <HeaderContainer style={styles.container}>
     <Label label={label} />
     <HeadlineContainer

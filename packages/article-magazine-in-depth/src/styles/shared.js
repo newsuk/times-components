@@ -16,18 +16,7 @@ const sharedStyles = {
     marginBottom: spacing(5),
     marginLeft: spacing(2),
     marginRight: spacing(2),
-    paddingTop: spacing(7),
-  },
-  metaContainer: {
-    alignItems: "center",
-    marginBottom: spacing(5),
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
-    paddingTop: spacing(2),
-    paddingBottom: spacing(2),
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    borderColor: colours.functional.keyline
+    paddingTop: spacing(7)
   },
   datePublication: {
     ...fontFactory({
@@ -54,6 +43,17 @@ const sharedStyles = {
   meta: {
     flexDirection: "row",
     flexWrap: "wrap"
+  },
+  metaContainer: {
+    alignItems: "center",
+    borderBottomWidth: 1,
+    borderColor: colours.functional.keyline,
+    borderTopWidth: 1,
+    marginBottom: spacing(5),
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
+    paddingBottom: spacing(2),
+    paddingTop: spacing(2)
   },
   standFirst: {
     ...fontFactory({

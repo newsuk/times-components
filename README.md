@@ -105,7 +105,7 @@ To debug our native Storybook:
 
 1. `yarn storybook-native` and leave it running
 2. `yarn android:logs` or `yarn ios:logs` (this will build storybook app and output logs)
-2a. Or you could just run `yarn android` or `yarn ios` to just build the apps
+   2a. Or you could just run `yarn android` or `yarn ios` to just build the apps
 3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS)
    and tap _Debug JS Remotely_
 4. navigate to http://localhost:8081/debugger-ui if it hasn't opened

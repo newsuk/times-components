@@ -9,9 +9,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import {
-  HeaderContainer
-} from "./styles/responsive";
+import { HeaderContainer } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -36,12 +34,9 @@ class ArticlePage extends Component {
     return (
       <Fragment>
         <ArticleHeader
-          byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
           standfirst={standfirst}
         />
         <LeadAsset {...leadAssetProps} width={width} />

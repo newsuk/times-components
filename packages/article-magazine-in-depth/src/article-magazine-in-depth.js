@@ -14,7 +14,6 @@ import {
 import Meta from "./article-meta/article-meta";
 import styles from "./styles";
 
-
 class ArticleMagazineInDepth extends Component {
   constructor() {
     super();
@@ -38,19 +37,16 @@ class ArticleMagazineInDepth extends Component {
     return (
       <Fragment>
         <ArticleHeader
-          byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
           standfirst={standfirst}
         />
         <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
         <View style={styles.metaContainer}>
           <Meta
             byline={byline}
+            onAuthorPress={onAuthorPress}
             publicationName={publicationName}
             publishedTime={publishedTime}
           />
