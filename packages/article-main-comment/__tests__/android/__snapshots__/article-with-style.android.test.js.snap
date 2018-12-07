@@ -86,7 +86,13 @@ exports[`full article with style 1`] = `
         >
           Some Standfirst
         </Text>
-        <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+            }
+          }
+        >
           <View
             style={
               Object {

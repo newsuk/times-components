@@ -47,6 +47,9 @@ const sharedStyles = {
     flexDirection: "row",
     flexWrap: "wrap"
   },
+  metaContainer: {
+    alignItems: "center"
+  },
   standFirst: {
     ...fontFactory({
       font: "headlineRegular",
