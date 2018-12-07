@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.12](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.11...@times-components/article-summary@3.3.12) (2018-12-07)
+
+
+### Bug Fixes
+
+* Update byline wrapper to a textview for better linebreaking ([#1553](https://github.com/newsuk/times-components/issues/1553)) ([afbc796](https://github.com/newsuk/times-components/commit/afbc796))
+
+
+
+
+
 ## [3.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.10...@times-components/article-summary@3.3.11) (2018-12-07)
 
 

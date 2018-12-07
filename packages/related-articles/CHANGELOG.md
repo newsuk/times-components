@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.2.8...@times-components/related-articles@5.2.9) (2018-12-07)
+
+
+### Bug Fixes
+
+* Update byline wrapper to a textview for better linebreaking ([#1553](https://github.com/newsuk/times-components/issues/1553)) ([afbc796](https://github.com/newsuk/times-components/commit/afbc796))
+
+
+
+
+
 ## [5.2.8](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.2.7...@times-components/related-articles@5.2.8) (2018-12-07)
 
 
