@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.8](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.2.7...@times-components/related-articles@5.2.8) (2018-12-07)
+
+
+### Bug Fixes
+
+* Change wrapping view to a text view on article summary byline ([#1551](https://github.com/newsuk/times-components/issues/1551)) ([e4e9936](https://github.com/newsuk/times-components/commit/e4e9936))
+
+
+
+
+
 ## [5.2.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.2.6...@times-components/related-articles@5.2.7) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/related-articles

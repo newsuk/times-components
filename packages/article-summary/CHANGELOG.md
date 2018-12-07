@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.10...@times-components/article-summary@3.3.11) (2018-12-07)
+
+
+### Bug Fixes
+
+* Change wrapping view to a text view on article summary byline ([#1551](https://github.com/newsuk/times-components/issues/1551)) ([e4e9936](https://github.com/newsuk/times-components/commit/e4e9936))
+
+
+
+
+
 ## [3.3.10](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.9...@times-components/article-summary@3.3.10) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/article-summary
