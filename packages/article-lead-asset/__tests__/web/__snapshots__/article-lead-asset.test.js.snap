@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<style>
+.IS1 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS2 {
+  padding-bottom: 100%;
+}
+
+.IS3 {
+  margin: 0;
+}
+</style>
+
+<div>
+  <figure
+    className="IS3"
+  >
+    <div
+      className="IS2"
+    >
+      <div
+        className="IS1"
+      >
+        <Image
+          highResSize={null}
+          lowResSize={100}
+          uri="https://crop169.io/"
+        />
+      </div>
+    </div>
+    <figcaption>
+      <div>
+        Chris Reynolds Gordon at one of his party venues in London
+      </div>
+      <div>
+        The credits
+      </div>
+    </figcaption>
+  </figure>
+</div>
+`;

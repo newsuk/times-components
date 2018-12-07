@@ -16,7 +16,7 @@ const ArticleLeadAsset = ({
   style,
   width
 }) => {
-  if (!leadAsset) {
+  if (!leadAsset || !displayImage) {
     return null;
   }
 

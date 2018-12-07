@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "border": "1px solid black",
+    }
+  }
+>
+  <ModalImage
+    aspectRatio={1.7777777777777777}
+    caption={
+      <React.Fragment>
+        <Text>
+          Chris Reynolds Gordon at one of his party venues in London
+        </Text>
+        <Text>
+          The credits
+        </Text>
+      </React.Fragment>
+    }
+    leadAsset={
+      Object {
+        "__typename": "Image",
+        "caption": "Chris Reynolds Gordon at one of his party venues in London",
+        "credits": "The credits",
+        "crop1251": Object {
+          "__typename": "Crop",
+          "ratio": "1.25:1",
+          "url": "https://crop1251.io/",
+        },
+        "crop169": Object {
+          "__typename": "Crop",
+          "ratio": "16:9",
+          "url": "https://crop169.io/",
+        },
+      }
+    }
+    url="https://crop169.io/"
+    width={null}
+  />
+  <Text>
+    Chris Reynolds Gordon at one of his party venues in London
+  </Text>
+  <Text>
+    The credits
+  </Text>
+</View>
+`;
+
+exports[`2. passes the caption rendered by rendermodalcaption to the modalimage 1`] = `
+<View>
+  <ModalImage
+    aspectRatio={1}
+    caption={
+      <Text>
+        Modal Caption
+      </Text>
+    }
+    onVideoPress={null}
+    width={null}
+  />
+  <Text>
+    Caption
+  </Text>
+</View>
+`;

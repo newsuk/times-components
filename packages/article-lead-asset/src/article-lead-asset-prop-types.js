@@ -57,7 +57,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  aspectRatio: "1",
+  aspectRatio: "1:1",
   className: "",
   displayImage: null,
   isVideo: false,
