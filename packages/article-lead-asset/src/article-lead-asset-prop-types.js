@@ -43,7 +43,6 @@ export const leadAssetImagePropTypes = {
 
 export const propTypes = {
   aspectRatio: PropTypes.string,
-  className: PropTypes.string,
   displayImage: cropPropTypes,
   isVideo: PropTypes.bool,
   leadAsset: PropTypes.oneOfType([
@@ -52,18 +51,15 @@ export const propTypes = {
   ]),
   renderCaption: PropTypes.func,
   renderModalCaption: PropTypes.func,
-  style: PropTypes.object,
   width: PropTypes.number
 };
 
 export const defaultProps = {
   aspectRatio: "1:1",
-  className: "",
   displayImage: null,
   isVideo: false,
   leadAsset: null,
   renderCaption: () => null,
-  style: {},
   width: null
 };
 

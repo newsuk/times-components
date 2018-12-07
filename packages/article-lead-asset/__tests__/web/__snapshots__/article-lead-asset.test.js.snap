@@ -17,31 +17,29 @@ exports[`renders correctly 1`] = `
 }
 </style>
 
-<div>
-  <figure
-    className="IS3"
+<figure
+  className="IS3"
+>
+  <div
+    className="IS2"
   >
     <div
-      className="IS2"
+      className="IS1"
     >
-      <div
-        className="IS1"
-      >
-        <Image
-          highResSize={null}
-          lowResSize={100}
-          uri="https://crop169.io/"
-        />
-      </div>
+      <Image
+        highResSize={null}
+        lowResSize={100}
+        uri="https://crop169.io/"
+      />
     </div>
-    <figcaption>
-      <div>
-        Chris Reynolds Gordon at one of his party venues in London
-      </div>
-      <div>
-        The credits
-      </div>
-    </figcaption>
-  </figure>
-</div>
+  </div>
+  <figcaption>
+    <div>
+      Chris Reynolds Gordon at one of his party venues in London
+    </div>
+    <div>
+      The credits
+    </div>
+  </figcaption>
+</figure>
 `;

@@ -663,47 +663,43 @@ exports[`full article with style 1`] = `
     <div
       className="c9 S1"
     >
-      <div
-        className="S1"
+      <figure
+        className="IS5"
       >
-        <figure
-          className="IS5"
+        <div
+          className="IS4 S10"
         >
           <div
-            className="IS4 S10"
+            className="IS3 S1"
+          >
+            <Image />
+          </div>
+        </div>
+        <figcaption>
+          <div
+            className="c10 S1"
           >
             <div
-              className="IS3 S1"
-            >
-              <Image />
-            </div>
-          </div>
-          <figcaption>
-            <div
-              className="c10 S1"
+              className="S1"
             >
               <div
-                className="S1"
+                className="S13"
               >
                 <div
-                  className="S13"
+                  className="S11"
                 >
-                  <div
-                    className="S11"
-                  >
-                    Some Caption
-                  </div>
-                  <div
-                    className="S12"
-                  >
-                    SOME CREDITS
-                  </div>
+                  Some Caption
+                </div>
+                <div
+                  className="S12"
+                >
+                  SOME CREDITS
                 </div>
               </div>
             </div>
-          </figcaption>
-        </figure>
-      </div>
+          </div>
+        </figcaption>
+      </figure>
     </div>
     <div
       className="c11 S1"

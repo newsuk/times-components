@@ -1,15 +1,18 @@
 /* eslint-disable consistent-return */
 
 import React, { Component, Fragment } from "react";
+import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { getHeadline, getLeadAsset, getStandardTemplateCrop } from "@times-components/utils";
+import Caption, { CentredCaption } from "@times-components/caption";
+import LeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
-import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import styles from "./styles";
 
 class ArticleMagazineStandard extends Component {
   constructor() {
@@ -29,7 +32,6 @@ class ArticleMagazineStandard extends Component {
       shortHeadline,
       standfirst
     } = article;
-    const { leadAsset } = getLeadAsset(article);
 
     return (
       <Fragment>
@@ -43,7 +45,20 @@ class ArticleMagazineStandard extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
+        <View style={styles.leadAssetContainer}>
+          <LeadAsset
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            onVideoPress={onVideoPress}
+            renderCaption={({ captionProps }) => (
+              <CentredCaption {...captionProps} />
+            )}
+            renderModalCaption={({ captionProps }) => (
+              <Caption {...captionProps} />
+            )}
+            width={width}
+          />
+        </View>
       </Fragment>
     );
   }
