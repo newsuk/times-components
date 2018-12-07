@@ -62,12 +62,12 @@ exports[`1. has video 1`] = `
                     </time>
                   </div>
                   <div>
-                    <div>
+                    <span>
                       Camilla Long
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                       , Environment Editor
-                    </div>
+                    </span>
                   </div>
                 </div>
               </Card>

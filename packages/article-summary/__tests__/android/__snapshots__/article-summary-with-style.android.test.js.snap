@@ -64,14 +64,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
       publication="TIMES"
     />
   </Text>
-  <View
-    style={
-      Object {
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
-    }
-  >
+  <Text>
     <ArticleByline
       ast={
         Array [
@@ -106,7 +99,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
         ]
       }
     />
-  </View>
+  </Text>
 </View>
 `;
 
