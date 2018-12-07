@@ -72,6 +72,32 @@ exports[`full article with style 1`] = `
         >
           Some Standfirst
         </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 20,
+          }
+        }
+      >
+        <ModalImage />
+        <CenteredCaption />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 25,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
         <View>
           <View
             style={
@@ -106,16 +132,6 @@ exports[`full article with style 1`] = `
             </Text>
           </View>
         </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 20,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
       </View>
     </View>
     <View>

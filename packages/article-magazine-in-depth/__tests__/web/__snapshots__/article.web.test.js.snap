@@ -22,6 +22,29 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         Some Short Headline
       </h1>
       <div />
+    </div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <Image
+              highResSize={null}
+              lowResSize={100}
+              uri="https://crop169.io"
+            />
+          </div>
+        </div>
+        <div>
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div>
       <div>
         <div>
           <ArticleBylineWithLinks
@@ -55,27 +78,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <figure>
-        <div>
-          <div>
-            <Image
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
-            />
-          </div>
-        </div>
-        <div>
-          <figcaption>
-            <CenteredCaption
-              credits="Some Credits"
-              text="Some Caption"
-            />
-          </figcaption>
-        </div>
-      </figure>
     </div>
     <div>
       <p>
@@ -182,6 +184,29 @@ exports[`4. an article with ads 1`] = `
         Some Headline
       </h1>
       <div />
+    </div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <Image
+              highResSize={null}
+              lowResSize={100}
+              uri="https://crop169.io"
+            />
+          </div>
+        </div>
+        <div>
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div>
       <div>
         <div>
           <ArticleBylineWithLinks
@@ -215,27 +240,6 @@ exports[`4. an article with ads 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <figure>
-        <div>
-          <div>
-            <Image
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
-            />
-          </div>
-        </div>
-        <div>
-          <figcaption>
-            <CenteredCaption
-              credits="Some Credits"
-              text="Some Caption"
-            />
-          </figcaption>
-        </div>
-      </figure>
     </div>
     <div>
       <Ad

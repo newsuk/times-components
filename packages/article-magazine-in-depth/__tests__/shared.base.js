@@ -2,7 +2,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import ArticleMagazineInDepth from "../src/article-magazine-standard";
+import ArticleMagazineInDepth from "../src/article-magazine-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 import { adConfig } from "./ad-mock";

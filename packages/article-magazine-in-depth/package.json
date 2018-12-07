@@ -2,8 +2,8 @@
   "name": "@times-components/article-magazine-in-depth",
   "version": "0.1.4",
   "description": "Magazine In Depth Template",
-  "main": "dist/article-magazine-standard",
-  "dev": "src/article-magazine-standard",
+  "main": "dist/article-magazine-in-depth",
+  "dev": "src/article-magazine-in-depth",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "article-magazine-standard",
+    "article-magazine-in-depth",
     "component"
   ],
   "license": "BSD-3-Clause",

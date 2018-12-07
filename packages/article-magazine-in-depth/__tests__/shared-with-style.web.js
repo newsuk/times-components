@@ -12,7 +12,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
-import ArticleMagazineInDepth from "../src/article-magazine-standard";
+import ArticleMagazineInDepth from "../src/article-magazine-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
