@@ -92,8 +92,9 @@ export default () => {
     {
       name: "scrolls to top when using bottom next pager",
       test() {
-        jest.spyOn(window, "scroll");
+        const windowSpy = jest.spyOn(window, "scroll");
         const onNext = jest.fn();
+        const consoleSpy = jest.spyOn(console, "error").mockImplementation();
         const testInstance = TestRenderer.create(
           <Context.Provider value={{ makeArticleUrl }}>
             <ArticleList
@@ -119,6 +120,9 @@ export default () => {
           left: 0,
           top: 0
         });
+
+        windowSpy.mockRestore();
+        consoleSpy.mockRestore();
       }
     },
     {
@@ -131,6 +135,8 @@ export default () => {
         jest.spyOn(window, "scroll");
 
         const onNext = jest.fn();
+        const spy = jest.spyOn(console, "error").mockImplementation();
+
         const wrapper = shallow(
           <ArticleList
             adConfig={adConfig}
@@ -158,13 +164,15 @@ export default () => {
           .onPress();
 
         global.window = window;
+        spy.mockRestore();
       }
     },
     {
       name: "scrolls to top when using bottom previous pager",
       test() {
-        jest.spyOn(window, "scroll");
+        const windowSpy = jest.spyOn(window, "scroll");
         const onPrev = jest.fn();
+        const consoleSpy = jest.spyOn(console, "error").mockImplementation();
         const testInstance = TestRenderer.create(
           <Context.Provider value={{ makeArticleUrl }}>
             <ArticleList
@@ -186,7 +194,13 @@ export default () => {
 
         prevPage.props.onPress();
 
-        expect(onPrev).toHaveBeenCalled();
+        expect(windowSpy).toHaveBeenCalledWith({
+          left: 0,
+          top: 0
+        });
+
+        windowSpy.mockRestore();
+        consoleSpy.mockRestore();
       }
     },
     {
@@ -199,6 +213,8 @@ export default () => {
         jest.spyOn(window, "scroll");
 
         const onPrev = jest.fn();
+        const spy = jest.spyOn(console, "error").mockImplementation();
+
         const wrapper = shallow(
           <ArticleList
             adConfig={adConfig}
@@ -226,6 +242,7 @@ export default () => {
           .onPress();
 
         global.window = window;
+        spy.mockRestore();
       }
     }
   ];

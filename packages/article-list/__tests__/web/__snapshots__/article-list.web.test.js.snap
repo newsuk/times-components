@@ -7,7 +7,9 @@ exports[`1. article list 1`] = `
       <div>
         <div>
           <Pagination
+            count={0}
             hideResults={false}
+            page={0}
             pageSize={10}
           />
         </div>
@@ -312,7 +314,9 @@ exports[`1. article list 1`] = `
     <div>
       <div>
         <Pagination
+          count={0}
           hideResults={true}
+          page={0}
           pageSize={10}
         />
       </div>
@@ -328,7 +332,9 @@ exports[`2. article list with no images 1`] = `
       <div>
         <div>
           <Pagination
+            count={0}
             hideResults={false}
+            page={0}
             pageSize={3}
           />
         </div>
@@ -398,7 +404,9 @@ exports[`2. article list with no images 1`] = `
     <div>
       <div>
         <Pagination
+          count={0}
           hideResults={true}
+          page={0}
           pageSize={3}
         />
       </div>
@@ -414,7 +422,9 @@ exports[`3. article list with missing image 1`] = `
       <div>
         <div>
           <Pagination
+            count={0}
             hideResults={false}
+            page={0}
             pageSize={3}
           />
         </div>
@@ -484,7 +494,9 @@ exports[`3. article list with missing image 1`] = `
     <div>
       <div>
         <Pagination
+          count={0}
           hideResults={true}
+          page={0}
           pageSize={3}
         />
       </div>
