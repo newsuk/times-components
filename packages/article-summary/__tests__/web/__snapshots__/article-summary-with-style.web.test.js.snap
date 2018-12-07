@@ -45,6 +45,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
   line-height: 15px;
   margin-bottom: 5px;
 }
+
+.S6 {
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
 </style>
 
 <div
@@ -86,7 +94,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="S1"
+    className="S6"
   >
     <ArticleByline
       ast={

@@ -32,7 +32,7 @@ const ArticleSummary = props => {
     if (bylineProps.ast.length === 0) return null;
 
     return (
-      <View className={bylineProps.bylineClass}>
+      <View className={bylineProps.bylineClass} style={styles.bylineWrapper}>
         {bylineProps.isOpinionByline ? (
           <ArticleBylineOpinion {...bylineProps} />
         ) : (

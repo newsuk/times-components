@@ -2,6 +2,10 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, fonts, spacing } = styleguide();
 const sharedStyles = {
+  bylineWrapper: {
+    flexDirection: "row",
+    flexWrap: "wrap"
+  },
   headline: {
     color: colours.functional.primary,
     fontFamily: fonts.headline,
