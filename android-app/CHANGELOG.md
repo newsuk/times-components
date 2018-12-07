@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.47](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.46...@times-components/android-app@0.10.47) (2018-12-07)
+
+
+### Bug Fixes
+
+* Add RNTextSize to be bundled inside xnative ([#1554](https://github.com/newsuk/times-components/issues/1554)) ([6115cf4](https://github.com/newsuk/times-components/commit/6115cf4))
+
+
+
+
+
 ## [0.10.46](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.45...@times-components/android-app@0.10.46) (2018-12-07)
 
 **Note:** Version bump only for package @times-components/android-app
