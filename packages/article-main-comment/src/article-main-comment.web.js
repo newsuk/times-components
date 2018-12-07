@@ -16,7 +16,9 @@ class ArticlePage extends Component {
   renderHeader() {
     const { article } = this.props;
     const {
-      author,
+      author = {
+        image: null
+      },
       byline,
       flags,
       headline,
@@ -27,11 +29,9 @@ class ArticlePage extends Component {
       standfirst
     } = article;
 
-    const authorImage = author && author.image ? author.image : null;
-
     return (
       <ArticleHeader
-        authorImage={authorImage}
+        authorImage={author.image}
         byline={byline}
         flags={flags}
         headline={getHeadline(headline, shortHeadline)}
