@@ -17,7 +17,7 @@ const ArticleLeadAsset = ({
   isVideo,
   leadAsset,
   onVideoPress,
-  width,
+  width
 }) => {
   if (!leadAsset) {
     return null;
