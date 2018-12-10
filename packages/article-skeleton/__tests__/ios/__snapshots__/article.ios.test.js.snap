@@ -454,7 +454,91 @@ exports[`3. an article with no content 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. an inline link reports analytics event on press 1`] = `
+exports[`4. an article with a nested markup in first paragraph displays no drop cap 1`] = `
+<RCTScrollView
+  ListHeaderComponent={
+    <Header
+      width={1440}
+    />
+  }
+  initialNumToRender={10}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+>
+  <View>
+    <View />
+    <View>
+      <ArticleParagraph
+        ast={
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "bold",
+              },
+            ],
+            "name": "paragraph",
+          }
+        }
+        uid={0}
+      >
+        <Text>
+          Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
+        </Text>
+      </ArticleParagraph>
+    </View>
+    <View>
+      <ArticleParagraph
+        ast={
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "When she does come to social events, she dominates.",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "bold",
+              },
+            ],
+            "name": "paragraph",
+          }
+        }
+        uid={1}
+      >
+        <Text>
+          When she does come to social events, she dominates.
+        </Text>
+      </ArticleParagraph>
+    </View>
+    <View />
+    <View>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        url="https://url.io"
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`6. an inline link reports analytics event on press 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
