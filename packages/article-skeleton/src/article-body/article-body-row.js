@@ -92,9 +92,17 @@ const ArticleRow = ({
     paragraph(key, attributes, children, indx, node) {
       return {
         element: (
-          <ArticleParagraph ast={node} key={key} uid={index}>
-            {children}
-          </ArticleParagraph>
+          <Context.Consumer key={key}>
+            {({ theme: { sectionColour } }) => (
+              <ArticleParagraph
+                ast={node}
+                dropCapColour={sectionColour || colours.section.default}
+                uid={index}
+              >
+                {children}
+              </ArticleParagraph>
+            )}
+          </Context.Consumer>
         )
       };
     },

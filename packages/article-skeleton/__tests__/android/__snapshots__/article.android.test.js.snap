@@ -40,6 +40,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={0}
       >
         his being Black History Month, last week
@@ -133,6 +134,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={6}
       >
         Some content
@@ -220,6 +222,7 @@ exports[`2. a full article with all content items with not a dropcap template 1`
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={0}
       >
         This being Black History Month, last week
@@ -313,6 +316,7 @@ exports[`2. a full article with all content items with not a dropcap template 1`
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={6}
       >
         Some content
