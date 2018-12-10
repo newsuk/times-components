@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
-import * as baseTypes from "./article-list-prop-types-base";
+import {
+  propTypes as basePropTypes,
+  defaultProps as baseDefaultProps
+} from "./article-list-prop-types-base";
 
 export const propTypes = {
-  ...baseTypes.propTypes,
+  ...basePropTypes,
   onArticlePress: PropTypes.func.isRequired,
   onViewed: PropTypes.func
 };
 
-// eslint-disable-next-line prefer-destructuring
-export const defaultProps = baseTypes.defaultProps;
+export const defaultProps = baseDefaultProps;

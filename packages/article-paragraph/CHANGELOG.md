@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.18](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.17...@times-components/article-paragraph@0.2.18) (2018-12-10)
+
+
+### Bug Fixes
+
+* drop cap section colouring ([#1561](https://github.com/newsuk/times-components/issues/1561)) ([4a05174](https://github.com/newsuk/times-components/commit/4a05174))
+
+
+
+
+
 ## [0.2.17](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.16...@times-components/article-paragraph@0.2.17) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/article-paragraph
