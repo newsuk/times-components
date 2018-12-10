@@ -9,7 +9,9 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   }));
   const pubAds = {
     addEventListener: jest.fn(),
+    collapseEmptyDivs: jest.fn(),
     disableInitialLoad: jest.fn(),
+    enableAsyncRendering: jest.fn(),
     enableSingleRequest: jest.fn(),
     refresh: jest.fn(),
     setTargeting: jest.fn()
@@ -39,6 +41,9 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   };
   const pbjs = {
     addAdUnits: jest.fn(),
+    collapseEmptyDivs: jest.fn(),
+    disableInitialLoad: jest.fn(),
+    enableSingleRequest: jest.fn(),
     que: [],
     removeAdUnit: jest.fn(),
     requestBids: jest.fn(),
@@ -91,8 +96,14 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   const initOptions = {
     data: {
       adUnit: "mockAdUnit",
+      allSlotConfigs: [
+        Object.assign({}, slotConfig),
+        Object.assign({}, slotConfig)
+      ],
+      bidInitialiser: Promise.resolve(),
       config: slotConfig,
       debug: true,
+      disableAds: false,
       networkId: "mockNetwork",
       pageTargeting: {
         pageOptionName: "pageOptionValue"

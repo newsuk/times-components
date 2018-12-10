@@ -73,6 +73,28 @@ class DOMContext extends PureComponent {
             overflow: hidden;
           }
         </style>
+        <script>
+          window.googletag = window.googletag || {};
+          window.googletag.cmd = window.googletag.cmd || [];
+          window.pbjs = window.pbjs || {};
+          window.pbjs.que = window.pbjs.que || [];
+          window.apstag = {
+            _Q: [],
+            addToQueue(action, d) {
+              this._Q.push([action, d]);
+            },
+            fetchBids() {
+              this.addToQueue("f", arguments);
+            },
+            init() {
+              this.addToQueue("i", arguments);
+            },
+            setDisplayBids() {},
+            targetingKeys() {
+              return [];
+            }
+          };
+        </script>
         </head>
         <body>
           <div></div>

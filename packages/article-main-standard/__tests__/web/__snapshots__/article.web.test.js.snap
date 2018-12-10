@@ -43,21 +43,6 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
         id="related-articles"
       />
     </div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixel"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelteads"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelskin"
-    />
   </div>
 </article>
 `;
@@ -105,21 +90,6 @@ exports[`3. an article with ads 1`] = `
         id="related-articles"
       />
     </div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixel"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelteads"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelskin"
-    />
   </div>
 </article>
 `;

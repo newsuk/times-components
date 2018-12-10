@@ -61,17 +61,24 @@ class Ad extends Component {
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
-        "article",
+        section,
         config.maxSizes.width,
         adConfig.biddersConfig.bidders
       )
     );
 
+    this.allSlotConfigs = adConfig.globalSlots
+      .concat(adConfig.bidderSlots)
+      .map(slot => getSlotConfig(slot, screenWidth()));
+
     const data = {
       adUnit: adConfig.adUnit,
+      allSlotConfigs: this.allSlotConfigs || this.slots,
+      bidInitialiser: adConfig.bidInitialiser || false,
       config,
       contextUrl,
       debug: adConfig.debug || false,
+      disableAds: adConfig.disabled || false,
       networkId: adConfig.networkId,
       pageTargeting: adConfig.pageTargeting,
       prebidConfig: Object.assign(this.prebidConfig, {

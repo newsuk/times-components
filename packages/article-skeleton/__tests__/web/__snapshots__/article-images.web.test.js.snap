@@ -38,21 +38,6 @@ exports[`1. a secondary image 1`] = `
         id="related-articles"
       />
     </div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixel"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelteads"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelskin"
-    />
   </div>
 </article>
 `;
@@ -95,21 +80,6 @@ exports[`2. an inline image 1`] = `
         id="related-articles"
       />
     </div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixel"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelteads"
-    />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="pixelskin"
-    />
   </div>
 </article>
 `;

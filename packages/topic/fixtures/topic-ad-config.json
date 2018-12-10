@@ -53,5 +53,6 @@
       }
     }
   },
-  "bidderSlots": ["ad-header", "ad-inline"]
+  "bidderSlots": ["inline-ad"],
+  "globalSlots": ["ad-pixel", "ad-pixelskin", "ad-pixelteads"]
 }

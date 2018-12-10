@@ -31,7 +31,7 @@ describe("Article", () => {
         });
       }));
 
-  xit("loaded all the required article ads", () => {
-    cy.loadedArticleAds();
+  it("loaded all the required article ads", () => {
+    cy.loadedAd("#header");
   });
 });

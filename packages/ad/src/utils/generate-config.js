@@ -20,8 +20,11 @@ const getSizeMaps = slotName => {
     case "ad-header":
       return sizes.header;
     case "pixel":
+    case "ad-pixel":
     case "pixelskin":
+    case "ad-pixelskin":
     case "pixelteads":
+    case "ad-pixelteads":
     case "article-sponsored-ad":
       return sizes.pixel;
     case "native-inline-ad":

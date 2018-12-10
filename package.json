@@ -58,8 +58,8 @@
     "clean-snaps": "rm -rf dextrose/snappy/*.png",
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
-    "test:e2e": "lerna run bundle && lerna run test:integration --stream",
-    "test:e2e:debug": "lerna run bundle && lerna run test:integration:debug --stream"
+    "test:e2e": "yarn bundle && lerna run test:integration --stream",
+    "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream"
   },
   "jest": {
     "preset": "react-native",

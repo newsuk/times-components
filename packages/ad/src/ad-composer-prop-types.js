@@ -41,7 +41,9 @@ export const defaultProps = {
       minPrice: 0.01,
       timeout: 3000
     },
-    bidderSlots: ["ad-header", "ad-article-inline"],
+    bidderSlots: ["header", "inline-ad"],
+    bidInitialiser: Promise.resolve(),
+    globalSlots: ["ad-pixel", "ad-pixelskin", "ad-pixelteads"],
     networkId: "25436805",
     pageTargeting: {
       label: "This is label",
