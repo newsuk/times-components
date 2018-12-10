@@ -4,9 +4,12 @@ import PropTypes from "prop-types";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import ArticleParagraph from "./article-paragraph";
 import DropCapWrapper from "./drop-cap-with-context";
-import { propTypes, defaultProps } from "./drop-cap-prop-types";
+import {
+  propTypes as dropCapPropTypes,
+  defaultProps as dropCapDefaultProps
+} from "./drop-cap-prop-types";
 
-const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
+const ArticleParagraphWrapper = ({ ast, children, dropCapColour, uid }) => {
   const { children: astChildren } = ast;
   if (!astChildren || astChildren.length === 0) {
     return null;
@@ -18,7 +21,7 @@ const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
     const text = renderTreeAsText(ast).slice(1);
     return (
       <DropCapWrapper
-        colour={colour}
+        colour={dropCapColour}
         dropCap={value}
         key={`paragraph-${uid}`}
         testID={`paragraph-${uid}`}
@@ -34,11 +37,14 @@ const ArticleParagraphWrapper = ({ ast, children, colour, uid }) => {
 };
 
 ArticleParagraphWrapper.propTypes = {
-  ...propTypes,
   ast: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
+  dropCapColour: dropCapPropTypes.colour,
   uid: PropTypes.number.isRequired
 };
 
-ArticleParagraphWrapper.defaultProps = defaultProps;
+ArticleParagraphWrapper.defaultProps = {
+  dropCapColour: dropCapDefaultProps.dropCapColour
+};
 
 export default ArticleParagraphWrapper;
