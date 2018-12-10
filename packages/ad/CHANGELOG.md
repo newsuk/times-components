@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.2.5...@times-components/ad@2.2.6) (2018-12-10)
+
+
+### Bug Fixes
+
+* settimeout adrefresh and set prebid flag ([#1542](https://github.com/newsuk/times-components/issues/1542)) ([dc90841](https://github.com/newsuk/times-components/commit/dc90841))
+
+
+
+
+
 ## [2.2.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.2.4...@times-components/ad@2.2.5) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/ad

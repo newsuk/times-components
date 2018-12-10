@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.13](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.12...@times-components/article-list@6.1.13) (2018-12-10)
+
+
+### Bug Fixes
+
+* settimeout adrefresh and set prebid flag ([#1542](https://github.com/newsuk/times-components/issues/1542)) ([dc90841](https://github.com/newsuk/times-components/commit/dc90841))
+
+
+
+
+
 ## [6.1.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.11...@times-components/article-list@6.1.12) (2018-12-07)
 
 
