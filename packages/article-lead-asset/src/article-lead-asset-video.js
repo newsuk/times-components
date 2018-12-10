@@ -15,7 +15,7 @@ const ArticleLeadAssetVideo = ({
     brightcoveAccountId,
     skySports
   },
-  url,
+  uri,
   onVideoPress
 }) => {
   const width = screenWidth();
@@ -27,7 +27,7 @@ const ArticleLeadAssetVideo = ({
       height={height}
       onVideoPress={onVideoPress}
       policyKey={brightcovePolicyKey}
-      poster={{ uri: url }}
+      poster={{ uri }}
       skySports={skySports}
       videoId={brightcoveVideoId}
       width={width}

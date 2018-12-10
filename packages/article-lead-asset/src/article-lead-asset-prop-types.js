@@ -20,7 +20,7 @@ export const videoPropTypes = {
   aspectRatio: PropTypes.number.isRequired,
   leadAsset: PropTypes.shape(videoLeadAssetPropTypes),
   onVideoPress: PropTypes.func.isRequired,
-  url: PropTypes.string.isRequired
+  uri: PropTypes.string.isRequired
 };
 
 export const videoDefaultProps = {

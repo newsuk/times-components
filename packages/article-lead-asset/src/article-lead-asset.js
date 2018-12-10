@@ -6,8 +6,8 @@ import {
   nativeDefaultProps
 } from "./article-lead-asset-prop-types";
 
-const ArticleLeadAssetModalImage = ({ aspectRatio, caption, url, width }) => (
-  <ModalImage {...{ aspectRatio, caption, url, width }} />
+const ArticleLeadAssetModalImage = ({ aspectRatio, caption, uri, width }) => (
+  <ModalImage {...{ aspectRatio, caption, uri, width }} />
 );
 
 const ArticleLeadAsset = ({
@@ -23,7 +23,9 @@ const ArticleLeadAsset = ({
     return null;
   }
 
-  const crop = getImageCrop(isVideo ? leadAsset.posterImage : leadAsset);
+  const imageContainer =  isVideo ? leadAsset.posterImage : leadAsset;
+  const crop = getImageCrop(imageContainer);
+
   if (!crop) {
     return null;
   }
@@ -36,8 +38,8 @@ const ArticleLeadAsset = ({
     : ArticleLeadAssetModalImage;
 
   const captionProps = {
-    credits: leadAsset.credits,
-    text: leadAsset.caption
+    credits: imageContainer.credits,
+    text: imageContainer.caption
   };
 
   return (
@@ -47,7 +49,7 @@ const ArticleLeadAsset = ({
         caption={renderModalCaption({ captionProps })}
         leadAsset={leadAsset}
         onVideoPress={onVideoPress}
-        url={url}
+        uri={url}
         width={width}
       />
       {renderCaption({ captionProps })}

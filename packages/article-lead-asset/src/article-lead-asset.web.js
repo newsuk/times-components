@@ -17,10 +17,10 @@ const ArticleLeadAsset = ({
     return null;
   }
 
-  const { url } = displayImage;
+  const captionContainer = isVideo ? leadAsset.posterImage : leadAsset;
   const captionProps = {
-    credits: leadAsset.credits,
-    text: leadAsset.caption
+    credits: captionContainer.credits,
+    text: captionContainer.caption
   };
 
   const leadAssetView = isVideo ? (
@@ -30,13 +30,13 @@ const ArticleLeadAsset = ({
       paidOnly={leadAsset.paidOnly}
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
-      poster={{ uri: url }}
+      poster={{ uri: displayImage.url }}
       skySports={leadAsset.skySports}
       videoId={leadAsset.brightcoveVideoId}
       width="100%"
     />
   ) : (
-    <Image highResSize={width} lowResSize={100} uri={url} />
+    <Image highResSize={width} lowResSize={100} uri={displayImage.url} />
   );
 
   return (

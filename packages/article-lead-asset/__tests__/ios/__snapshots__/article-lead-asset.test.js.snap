@@ -14,7 +14,7 @@ Array [
         </Text>
       </React.Fragment>
     }
-    url="https://crop169.io/"
+    uri="https://crop169.io/"
     width={null}
   />,
   <Text>
