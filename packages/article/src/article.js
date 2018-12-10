@@ -15,7 +15,7 @@ const Article = props => {
   const { article } = props;
   const { template = "mainstandard" } = article || {};
 
-  const Component = templates[template];
+  const Component = templates[template] || ArticleMainStandard;
   return <Component {...props} />;
 };
 
