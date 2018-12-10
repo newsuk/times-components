@@ -4,6 +4,7 @@ import { iterator, makeArticleUrl } from "@times-components/test-utils";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
+import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
@@ -285,6 +286,32 @@ export const snapshotTests = renderComponent => [
     test() {
       const template = "mainstandard";
       const article = articleFixture({ ...fixtureArgs, template });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with no content",
+    test() {
+      const article = articleFixture({ ...fixtureArgs, content: [] });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name:
+      "an article with a nested markup in first paragraph displays no drop cap",
+    test() {
+      const template = "maincomment";
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: contentWithNestedFirstParagraph,
+        relatedArticleSlice: null,
+        template,
+        topics: []
+      });
       const output = renderComponent(renderArticle(article));
 
       expect(output).toMatchSnapshot();

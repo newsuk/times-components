@@ -28,31 +28,33 @@ const prepareDataForListView = articleData => {
     url: articleData.url
   };
 
-  const data = [
-    ...articleData.content.map((rowData, index) => {
-      const item = {
-        data: Object.assign({}, rowData),
-        index,
-        type: "articleBodyRow"
-      };
-      if (rowData.name === "ad") {
-        item.data.attributes = {
-          ...item.data.attributes,
-          ...{
-            contextUrl: articleData.url,
-            section: articleData.section
+  const data = articleData.content
+    ? [
+        ...articleData.content.map((rowData, index) => {
+          const item = {
+            data: Object.assign({}, rowData),
+            index,
+            type: "articleBodyRow"
+          };
+          if (rowData.name === "ad") {
+            item.data.attributes = {
+              ...item.data.attributes,
+              ...{
+                contextUrl: articleData.url,
+                section: articleData.section
+              }
+            };
           }
-        };
-      }
-      return item;
-    }),
-    {
-      data: {
-        topics: articleData.topics
-      },
-      type: "topics"
-    }
-  ];
+          return item;
+        }),
+        {
+          data: {
+            topics: articleData.topics
+          },
+          type: "topics"
+        }
+      ]
+    : [];
 
   return append(
     {

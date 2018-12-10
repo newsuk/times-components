@@ -5,11 +5,14 @@ const templateWithDropCaps = [
 ];
 
 const insertDropcap = (firstTextChild, children) => {
-  const {
-    name,
-    attributes: { value }
-  } = firstTextChild;
-  if (name === "text" && value.trim().length > 0) {
+  const { name, attributes } = firstTextChild;
+  if (
+    attributes &&
+    attributes.value &&
+    name === "text" &&
+    attributes.value.trim().length > 0
+  ) {
+    const { value } = attributes;
     const dropCapElement = {
       attributes: {
         value: value.slice(0, 1)
