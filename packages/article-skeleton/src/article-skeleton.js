@@ -127,7 +127,9 @@ class ArticleSkeleton extends Component {
     }
 
     const newContent = [...dataSource.content];
-    newContent[0] = insertDropcapIntoAST(newContent[0], template);
+    if (newContent && newContent.length > 0) {
+      newContent[0] = insertDropcapIntoAST(newContent[0], template);
+    }
 
     const articleOrganised = listViewDataHelper({
       ...dataSource,
