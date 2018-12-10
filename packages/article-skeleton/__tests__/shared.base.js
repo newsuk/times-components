@@ -289,6 +289,15 @@ export const snapshotTests = renderComponent => [
 
       expect(output).toMatchSnapshot();
     }
+  },
+  {
+    name: "an article with no content",
+    test() {
+      const article = articleFixture({ ...fixtureArgs, content: [] });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
   }
 ];
 
