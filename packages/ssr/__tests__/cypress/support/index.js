@@ -18,3 +18,17 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on('fail', (error, runnable) => {
+    debugger;
+    throw error;
+});
+
+Cypress.on('uncaught:exception', (err) => {
+    // should only contain errors that are occuring inside of third party scripts
+    console.log(err.message);
+    if (err.message.includes("cross-origin-script-error")) {
+        return false;
+    }
+    return true;
+});
