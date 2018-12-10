@@ -129,6 +129,7 @@ exports[`1. article with header 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={1}
       >
         Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
@@ -192,6 +193,7 @@ exports[`1. article with header 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={3}
       >
         <Text>
@@ -258,6 +260,7 @@ exports[`1. article with header 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={6}
       >
         When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
@@ -287,6 +290,7 @@ exports[`1. article with header 1`] = `
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={8}
       >
         Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
