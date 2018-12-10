@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-skeleton",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "The article skeleton",
   "main": "dist/article-skeleton",
   "dev": "src/article-skeleton",
@@ -73,7 +73,7 @@
     "@times-components/ad": "2.2.5",
     "@times-components/article-comments": "0.1.22",
     "@times-components/article-image": "4.1.26",
-    "@times-components/article-paragraph": "0.2.17",
+    "@times-components/article-paragraph": "0.2.18",
     "@times-components/article-topics": "3.2.39",
     "@times-components/caption": "2.2.6",
     "@times-components/context": "0.5.16",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.10...@times-components/article-skeleton@0.1.11) (2018-12-10)
+
+
+### Bug Fixes
+
+* drop cap section colouring ([#1561](https://github.com/newsuk/times-components/issues/1561)) ([4a05174](https://github.com/newsuk/times-components/commit/4a05174))
+
+
+
+
+
 ## [0.1.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.9...@times-components/article-skeleton@0.1.10) (2018-12-07)
 
 **Note:** Version bump only for package @times-components/article-skeleton
