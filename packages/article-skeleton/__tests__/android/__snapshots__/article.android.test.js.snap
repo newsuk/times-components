@@ -496,6 +496,7 @@ exports[`4. an article with a nested markup in first paragraph displays no drop 
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={0}
       >
         <Text>
@@ -524,6 +525,7 @@ exports[`4. an article with a nested markup in first paragraph displays no drop 
             "name": "paragraph",
           }
         }
+        dropCapColour="#FF0000"
         uid={1}
       >
         <Text>
