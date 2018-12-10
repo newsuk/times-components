@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.10...@times-components/article@6.5.11) (2018-12-10)
+
+
+### Bug Fixes
+
+* article template errors ([#1558](https://github.com/newsuk/times-components/issues/1558)) ([a8cefa7](https://github.com/newsuk/times-components/commit/a8cefa7))
+
+
+
+
+
 ## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.9...@times-components/article@6.5.10) (2018-12-10)
 
 **Note:** Version bump only for package @times-components/article
