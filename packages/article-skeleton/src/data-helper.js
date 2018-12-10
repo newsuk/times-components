@@ -15,11 +15,11 @@ const append = ({ data, type }, list) => {
 const prepareDataForListView = articleData => {
   const relatedArticleSliceData = articleData.relatedArticleSlice
     ? {
-      relatedArticleSlice: {
-        ...articleData.relatedArticleSlice,
-        sliceName: articleData.relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
+        relatedArticleSlice: {
+          ...articleData.relatedArticleSlice,
+          sliceName: articleData.relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
+        }
       }
-    }
     : null;
   const commentsData = {
     articleId: articleData.id,
@@ -28,31 +28,33 @@ const prepareDataForListView = articleData => {
     url: articleData.url
   };
 
-  const data = articleData.content ? [
-    ...articleData.content.map((rowData, index) => {
-      const item = {
-        data: Object.assign({}, rowData),
-        index,
-        type: "articleBodyRow"
-      };
-      if (rowData.name === "ad") {
-        item.data.attributes = {
-          ...item.data.attributes,
-          ...{
-            contextUrl: articleData.url,
-            section: articleData.section
+  const data = articleData.content
+    ? [
+        ...articleData.content.map((rowData, index) => {
+          const item = {
+            data: Object.assign({}, rowData),
+            index,
+            type: "articleBodyRow"
+          };
+          if (rowData.name === "ad") {
+            item.data.attributes = {
+              ...item.data.attributes,
+              ...{
+                contextUrl: articleData.url,
+                section: articleData.section
+              }
+            };
           }
-        };
-      }
-      return item;
-    }),
-    {
-      data: {
-        topics: articleData.topics
-      },
-      type: "topics"
-    }
-  ] : [];
+          return item;
+        }),
+        {
+          data: {
+            topics: articleData.topics
+          },
+          type: "topics"
+        }
+      ]
+    : [];
 
   return append(
     {
