@@ -17,6 +17,8 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
+jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
+
 const styles = [
   "alignItems",
   "flex",

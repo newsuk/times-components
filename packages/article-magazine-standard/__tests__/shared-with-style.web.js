@@ -18,6 +18,8 @@ import ArticleMagazineStandard from "../src/article-magazine-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
+jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
+
 const styles = [
   "alignItems",
   "flex",

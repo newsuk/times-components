@@ -10,10 +10,7 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
-import {
-  // LeadAsset,
-  LeadAssetCaptionContainer
-} from "./styles/article-body/responsive";
+import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
 import {
   HeaderContainer,

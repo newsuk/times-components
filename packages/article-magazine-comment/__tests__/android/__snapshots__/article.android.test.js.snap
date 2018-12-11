@@ -62,7 +62,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               text="Some Caption"
             />
           }
-          url="https://crop169.io"
+          uri="https://crop169.io"
           width={1440}
         />
         <CenteredCaption
@@ -208,7 +208,7 @@ exports[`4. an article with ads 1`] = `
               text="Some Caption"
             />
           }
-          url="https://crop169.io"
+          uri="https://crop169.io"
           width={1440}
         />
         <CenteredCaption

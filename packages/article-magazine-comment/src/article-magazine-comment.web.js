@@ -1,6 +1,10 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset, getStandardTemplateCrop } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";

@@ -429,8 +429,9 @@ exports[`full article with style 1`] = `
   -webkit-flex-basis: auto;
   flex-basis: auto;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .S10 {
@@ -442,9 +443,8 @@ exports[`full article with style 1`] = `
   -webkit-flex-basis: auto;
   flex-basis: auto;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .IS1 {
@@ -452,20 +452,6 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS3 {
-  padding-bottom: 56.25%;
-}
-
-.IS4 {
-  margin: 0;
-}
-
-.IS5 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -474,35 +460,35 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS6 {
+.IS3 {
   height: 100%;
   width: 100%;
 }
 
-.IS7 {
+.IS4 {
   position: relative;
 }
 
-.IS8 {
+.IS5 {
   height: 100%;
   width: 100%;
 }
 
-.IS9 {
+.IS6 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS10 {
+.IS7 {
   padding-bottom: 56.25%;
 }
 
-.IS11 {
+.IS8 {
   margin: 0;
 }
 
-.IS12 {
+.IS9 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -513,7 +499,7 @@ exports[`full article with style 1`] = `
   margin-top: 30px;
 }
 
-.IS13 {
+.IS10 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
@@ -588,24 +574,9 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="c10 S10"
+      className="c10 S9"
     >
-      <figure
-        className="IS4"
-      >
-        <div
-          className="IS3 S9"
-        >
-          <div
-            className="IS2 S1"
-          >
-            <Image />
-          </div>
-        </div>
-        <figcaption>
-          <CenteredCaption />
-        </figcaption>
-      </figure>
+      <ArticleLeadAsset />
     </div>
     <div
       className="c11 S1"
@@ -621,7 +592,7 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c13 IS5"
+        className="c13 IS2"
       >
         Some content
       </p>
@@ -640,22 +611,22 @@ exports[`full article with style 1`] = `
         className="c12 S1"
       >
         <figure
-          className="IS11"
+          className="IS8"
         >
           <div
-            className="IS10 S9"
+            className="IS7 S10"
           >
             <div
-              className="IS9 S1"
+              className="IS6 S1"
             >
               <div
-                className="IS8"
+                className="IS5"
               >
                 <div
-                  className="IS7"
+                  className="IS4"
                 >
                   <video
-                    className="video-js IS6"
+                    className="video-js IS3"
                   />
                 </div>
               </div>
@@ -671,7 +642,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS12"
+        className="IS9"
       />
       <div>
         <div
@@ -692,7 +663,7 @@ exports[`full article with style 1`] = `
       >
         <nav>
           <ArticleTopics
-            className="IS13"
+            className="IS10"
           />
         </nav>
       </div>

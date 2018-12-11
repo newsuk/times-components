@@ -4,7 +4,11 @@ import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset, getStandardTemplateCrop } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
 import Caption, { CentredCaption } from "@times-components/caption";
 import LeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
