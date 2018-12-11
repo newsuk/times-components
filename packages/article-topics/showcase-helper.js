@@ -10,9 +10,11 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-export default ({ data, decorateAction }) => (
+const renderArticleTopics = ({ data, decorateAction }) => (
   <ArticleTopics
     onPress={preventDefaultedAction(decorateAction)("onPress")}
     topics={data}
   />
 );
+
+export default renderArticleTopics;
