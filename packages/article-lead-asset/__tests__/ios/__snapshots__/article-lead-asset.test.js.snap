@@ -15,7 +15,7 @@ Array [
       </React.Fragment>
     }
     uri="https://crop169.io/"
-    width={null}
+    width={600}
   />,
   <Text>
     Chris Reynolds Gordon at one of his party venues in London
@@ -60,7 +60,7 @@ Array [
         Modal Caption
       </Text>
     }
-    width={null}
+    width={600}
   />,
   <Text>
     Caption

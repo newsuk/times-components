@@ -32,6 +32,7 @@ export default () =>
             leadAsset={{}}
             renderCaption={() => <Text>Caption</Text>}
             renderModalCaption={() => <Text>Modal Caption</Text>}
+            width={600}
           />
         );
 
@@ -42,7 +43,11 @@ export default () =>
       name: "renders correctly when there is no available crop",
       test() {
         const testRenderer = TestRenderer.create(
-          <ArticleLeadAsset getImageCrop={() => null} leadAsset={{}} />
+          <ArticleLeadAsset
+            getImageCrop={() => null}
+            leadAsset={{}}
+            width={600}
+          />
         );
 
         expect(testRenderer).toMatchSnapshot();

@@ -51,7 +51,7 @@ export const propTypes = {
   ]),
   renderCaption: PropTypes.func,
   renderModalCaption: PropTypes.func,
-  width: PropTypes.number
+  width: PropTypes.number.isRequired
 };
 
 export const defaultProps = {
@@ -59,8 +59,7 @@ export const defaultProps = {
   displayImage: null,
   isVideo: false,
   leadAsset: null,
-  renderCaption: () => null,
-  width: null
+  renderCaption: () => null
 };
 
 export const nativePropTypes = {

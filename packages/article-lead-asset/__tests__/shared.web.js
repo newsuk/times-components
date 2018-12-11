@@ -32,7 +32,7 @@ export default () =>
       name: "correctly renders when there is no displayImage",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleLeadAsset displayImage={null} leadAsset={{}} />
+          <ArticleLeadAsset displayImage={null} leadAsset={{}} width={600} />
         );
 
         expect(testInstance).toMatchSnapshot();

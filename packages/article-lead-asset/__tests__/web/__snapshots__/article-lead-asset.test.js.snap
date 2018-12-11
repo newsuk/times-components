@@ -27,7 +27,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
       className="IS1"
     >
       <Image
-        highResSize={null}
+        highResSize={600}
         lowResSize={100}
         uri="https://crop169.io/"
       />

@@ -39,7 +39,8 @@ const props = {
       <Text>{captionProps.text}</Text>
       <Text>{captionProps.credits}</Text>
     </Fragment>
-  )
+  ),
+  width: 600
 };
 
 const videoProps = {
