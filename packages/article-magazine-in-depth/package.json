@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-in-depth",
-  "version": "0.1.4",
+  "version": "0.0.1",
   "description": "Magazine In Depth Template",
   "main": "dist/article-magazine-in-depth",
   "dev": "src/article-magazine-in-depth",
