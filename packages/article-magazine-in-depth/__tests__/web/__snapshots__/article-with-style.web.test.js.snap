@@ -87,6 +87,12 @@ exports[`full article with style 1`] = `
   margin-top: 15px;
 }
 
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
 .c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -96,6 +102,12 @@ exports[`full article with style 1`] = `
 
 .c10 {
   display: none;
+}
+
+.c6 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .c7 {
@@ -474,7 +486,10 @@ exports[`full article with style 1`] = `
 
 .IS5 {
   background-color: rgba(29,29,27,1.00);
+  -webkit-order: 2;
+  order: 2;
   width: 100%;
+  -ms-flex-order: 2;
 }
 
 .IS6 {
