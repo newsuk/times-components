@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.15...@times-components/article-skeleton@0.1.16) (2018-12-11)
+
+
+### Bug Fixes
+
+* Don't add drop cap markup on ios ([#1565](https://github.com/newsuk/times-components/issues/1565)) ([38505fc](https://github.com/newsuk/times-components/commit/38505fc))
+
+
+
+
+
 ## [0.1.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.14...@times-components/article-skeleton@0.1.15) (2018-12-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton
