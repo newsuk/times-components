@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import invert from "lodash.invert";
-import { ScrollView } from "react-native";
 import Context from "@times-components/context";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import { colours, scales } from "@times-components/styleguide";
@@ -30,23 +29,15 @@ export default {
       type: "decorator"
     },
     {
-      component: ({ select }) => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts(data, select)}
-        </ScrollView>
-      ),
+      component: ({ select }) => renderKeyFacts(data, select),
       name: "with title",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {
-      component: ({ select }) => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts(dataNoTitle, select)}
-        </ScrollView>
-      ),
+      component: ({ select }) => renderKeyFacts(dataNoTitle, select),
       name: "without title",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],
