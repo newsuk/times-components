@@ -47,17 +47,20 @@ export default {
       component: ({ select }) =>
         renderParagraphWithScale(select, paragraphData),
       name: "Paragraph",
+      platform: "native",
       type: "story"
     },
     {
       component: ({ select }) => renderParagraphWithScale(select, dropCapData),
       name: "Paragraph with dropcap",
+      platform: "native",
       type: "story"
     },
     {
       component: ({ select }) =>
         renderParagraphWithScale(select, dropCapShortTextData),
       name: "DropCap paragraph with short text",
+      platform: "native",
       type: "story"
     }
   ],
