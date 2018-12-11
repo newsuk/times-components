@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.54](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.53...@times-components/android-app@0.10.54) (2018-12-11)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.10.53](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.10.52...@times-components/android-app@0.10.53) (2018-12-11)
 
 **Note:** Version bump only for package @times-components/android-app

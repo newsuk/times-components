@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.40](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.39...@times-components/article-topics@3.2.40) (2018-12-11)
+
+
+### Bug Fixes
+
+* article topics stories ([#1564](https://github.com/newsuk/times-components/issues/1564)) ([6ec7ae6](https://github.com/newsuk/times-components/commit/6ec7ae6))
+
+
+
+
+
 ## [3.2.39](https://github.com/newsuk/times-components/compare/@times-components/article-topics@3.2.38...@times-components/article-topics@3.2.39) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/article-topics
