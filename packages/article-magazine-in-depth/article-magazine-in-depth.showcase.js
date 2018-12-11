@@ -45,7 +45,9 @@ const renderArticle = ({
     {({ article, isLoading, error, refetch }) => {
       const data = {
         ...article,
-        template: "indepth"
+        backgroundColour: "#3C81BE",
+        template: "indepth",
+        textColour: "#FFFFFF"
       };
 
       return (

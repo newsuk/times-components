@@ -23,6 +23,7 @@ class ArticleMagazineInDepth extends Component {
   renderHeader({ width }) {
     const { article, onAuthorPress, onVideoPress } = this.props;
     const {
+      backgroundColour,
       byline,
       flags,
       headline,
@@ -30,25 +31,30 @@ class ArticleMagazineInDepth extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      textColour
     } = article;
     const { leadAsset } = getLeadAsset(article);
 
     return (
       <Fragment>
         <ArticleHeader
+          backgroundColour={backgroundColour}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           standfirst={standfirst}
+          textColour={textColour}
         />
         <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
         <View style={styles.metaContainer}>
           <Meta
+            backgroundColour={backgroundColour}
             byline={byline}
             onAuthorPress={onAuthorPress}
             publicationName={publicationName}
             publishedTime={publishedTime}
+            textColour={textColour}
           />
         </View>
       </Fragment>

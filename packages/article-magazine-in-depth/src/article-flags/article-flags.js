@@ -9,20 +9,21 @@ import {
 } from "@times-components/article-flag";
 import styles from "../styles";
 
-const flagsMapping = new Map([
-  ["NEW", <NewArticleFlag />],
-  ["UPDATED", <UpdatedArticleFlag />],
-  ["EXCLUSIVE", <ExclusiveArticleFlag />],
-  ["SPONSORED", <SponsoredArticleFlag />]
-]);
+const flagsMapping = color =>
+  new Map([
+    ["NEW", <NewArticleFlag color={color} />],
+    ["UPDATED", <UpdatedArticleFlag color={color} />],
+    ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
+    ["SPONSORED", <SponsoredArticleFlag color={color} />]
+  ]);
 
-const HeaderFlags = ({ flags }) => {
+const HeaderFlags = ({ flags, color }) => {
   if (!flags || flags.length === 0) return null;
   return (
     <View style={styles.flag}>
       {flags.map(flag => (
         <View key={flag} style={styles.flagContainer}>
-          {flagsMapping.get(flag)}
+          {flagsMapping(color).get(flag)}
         </View>
       ))}
     </View>
@@ -30,10 +31,12 @@ const HeaderFlags = ({ flags }) => {
 };
 
 HeaderFlags.propTypes = {
-  flags: PropTypes.arrayOf(PropTypes.oneOf(Array.from(flagsMapping.keys())))
+  color: PropTypes.string,
+  flags: PropTypes.arrayOf(PropTypes.oneOf(Array.from(flagsMapping().keys())))
 };
 
 HeaderFlags.defaultProps = {
+  color: "#1D1D1B",
   flags: []
 };
 

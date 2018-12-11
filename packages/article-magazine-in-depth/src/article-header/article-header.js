@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, View } from "react-native";
-import PropTypes from "prop-types";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -11,17 +10,31 @@ import {
 } from "./article-header-prop-types";
 import styles from "../styles";
 
-const ArticleHeader = ({ flags, headline, label, standfirst }) => (
-  <View style={styles.container}>
-    <Label label={label} />
-    <Text style={styles.articleHeadline}>{headline}</Text>
-    <Flags flags={flags} />
-    <Standfirst standfirst={standfirst} />
+const ArticleHeader = ({
+  backgroundColour,
+  flags,
+  headline,
+  label,
+  standfirst,
+  textColour
+}) => (
+  <View
+    style={[
+      styles.container,
+      { backgroundColor: backgroundColour, width: "100%" }
+    ]}
+  >
+    <Label color={textColour} label={label} />
+    <Text style={[styles.articleHeadline, { color: textColour }]}>
+      {headline}
+    </Text>
+    <Flags color={textColour} flags={flags} />
+    <Standfirst color={textColour} standfirst={standfirst} />
   </View>
 );
 
 ArticleHeader.propTypes = {
-  ...articleHeaderPropTypes,
+  ...articleHeaderPropTypes
 };
 
 ArticleHeader.defaultProps = articleHeaderDefaultProps;

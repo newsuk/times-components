@@ -21,6 +21,7 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const leadAssetProps = getLeadAsset(article);
     const {
+      backgroundColour,
       byline,
       flags,
       headline,
@@ -28,23 +29,28 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      textColour
     } = article;
 
     return (
       <Fragment>
         <ArticleHeader
+          backgroundColour={backgroundColour}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           standfirst={standfirst}
+          textColour={textColour}
         />
         <LeadAsset {...leadAssetProps} width={width} />
         <HeaderContainer style={styles.metaContainer}>
           <Meta
+            backgroundColour={backgroundColour}
             byline={byline}
             publicationName={publicationName}
             publishedTime={publishedTime}
+            textColour={textColour}
           />
         </HeaderContainer>
       </Fragment>

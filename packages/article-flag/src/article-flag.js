@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
 import styles from "./style";
+import {
+  articleFlagTypesPropTypes,
+  articleFlagTypesDefaultProps
+} from "./article-flag-prop-types";
 
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
@@ -21,29 +25,36 @@ const ArticleFlag = ({ title, color }) => (
 );
 
 ArticleFlag.propTypes = {
-  color: PropTypes.string,
+  ...articleFlagTypesPropTypes,
   title: PropTypes.string.isRequired
 };
 
-ArticleFlag.defaultProps = {
-  color: "black"
-};
+ArticleFlag.defaultProps = articleFlagTypesDefaultProps;
 
-const NewArticleFlag = () => (
-  <ArticleFlag color={colours.functional.articleFlagNew} title="new" />
+const NewArticleFlag = ({ color }) => (
+  <ArticleFlag color={color || colours.functional.tertiary} title="new" />
 );
-const UpdatedArticleFlag = () => (
-  <ArticleFlag color={colours.functional.articleFlagUpdated} title="updated" />
+const UpdatedArticleFlag = ({ color }) => (
+  <ArticleFlag color={color || colours.functional.tertiary} title="updated" />
 );
-const ExclusiveArticleFlag = () => (
-  <ArticleFlag
-    color={colours.functional.articleFlagExclusive}
-    title="exclusive"
-  />
+const ExclusiveArticleFlag = ({ color }) => (
+  <ArticleFlag color={color || colours.functional.tertiary} title="exclusive" />
 );
-const SponsoredArticleFlag = () => (
-  <ArticleFlag color={colours.functional.tertiary} title="sponsored" />
+const SponsoredArticleFlag = ({ color }) => (
+  <ArticleFlag color={color || colours.functional.tertiary} title="sponsored" />
 );
+
+NewArticleFlag.propTypes = articleFlagTypesPropTypes;
+NewArticleFlag.defaultProps = articleFlagTypesDefaultProps;
+
+UpdatedArticleFlag.propTypes = articleFlagTypesPropTypes;
+UpdatedArticleFlag.defaultProps = articleFlagTypesDefaultProps;
+
+ExclusiveArticleFlag.propTypes = articleFlagTypesPropTypes;
+ExclusiveArticleFlag.defaultProps = articleFlagTypesDefaultProps;
+
+SponsoredArticleFlag.propTypes = articleFlagTypesPropTypes;
+SponsoredArticleFlag.defaultProps = articleFlagTypesDefaultProps;
 
 export default ArticleFlag;
 
