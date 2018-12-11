@@ -5,13 +5,12 @@ import Context from "@times-components/context";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import { colours, scales } from "@times-components/styleguide";
-import ArticleParagraph from "./src";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
-import DropCapView from "./src/drop-cap";
+import ArticleParagraph from "./src";
 
-const renderParagraph = (select, ast) => {
+const renderParagraphWithScale = (select, ast) => {
   const scale = select("Scale", scales, scales.medium);
   const colour = select(
     "Section",
@@ -23,19 +22,15 @@ const renderParagraph = (select, ast) => {
     <Context.Provider value={{ theme: { scale } }}>
       {renderTree(ast, {
         ...coreRenderers,
-        dropCap(key, { value }) {
-          return {
-            element: (
-              <DropCapView colour={colour} key={key}>
-                {value}
-              </DropCapView>
-            )
-          };
-        },
         paragraph(key, attributes, children, indx, node) {
           return {
             element: (
-              <ArticleParagraph ast={node} key={indx} uid={indx}>
+              <ArticleParagraph
+                ast={node}
+                dropCapColour={colour}
+                key={indx}
+                uid={indx}
+              >
                 {children}
               </ArticleParagraph>
             )
@@ -49,18 +44,23 @@ const renderParagraph = (select, ast) => {
 export default {
   children: [
     {
-      component: ({ select }) => renderParagraph(select, paragraphData),
+      component: ({ select }) =>
+        renderParagraphWithScale(select, paragraphData),
       name: "Paragraph",
+      platform: "native",
       type: "story"
     },
     {
-      component: ({ select }) => renderParagraph(select, dropCapData),
+      component: ({ select }) => renderParagraphWithScale(select, dropCapData),
       name: "Paragraph with dropcap",
+      platform: "native",
       type: "story"
     },
     {
-      component: ({ select }) => renderParagraph(select, dropCapShortTextData),
+      component: ({ select }) =>
+        renderParagraphWithScale(select, dropCapShortTextData),
       name: "DropCap paragraph with short text",
+      platform: "native",
       type: "story"
     }
   ],
