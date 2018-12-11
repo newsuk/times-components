@@ -2,16 +2,8 @@
 import React from "react";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
-import ArticleTopics from "./src/article-topics";
 import topicsData from "./fixtures/topics";
-
-const preventDefaultedAction = decorateAction =>
-  decorateAction([
-    ([e, ...args]) => {
-      e.preventDefault();
-      return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
-  ]);
+import renderArticleTopics from "./showcase-helper";
 
 export default {
   children: [
@@ -20,24 +12,25 @@ export default {
         const scale = select("Scale", scales, scales.medium);
         return (
           <Context.Provider value={{ theme: { scale } }}>
-            <ArticleTopics
-              onPress={preventDefaultedAction(decorateAction)("onPress")}
-              topics={topicsData}
-            />
+            {renderArticleTopics({ data: topicsData, decorateAction })}
           </Context.Provider>
         );
       },
       name: "Group of Topics",
+      platform: "native",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <ArticleTopics
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          topics={[topicsData[0]]}
-        />
-      ),
+      component: ({ select }, { decorateAction }) => {
+        const scale = select("Scale", scales, scales.medium);
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            {renderArticleTopics({ data: [topicsData[0]], decorateAction })}
+          </Context.Provider>
+        );
+      },
       name: "Single Topic",
+      platform: "native",
       type: "story"
     }
   ],
