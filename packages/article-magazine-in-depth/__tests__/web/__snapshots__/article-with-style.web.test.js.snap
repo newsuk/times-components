@@ -87,12 +87,6 @@ exports[`full article with style 1`] = `
   margin-top: 15px;
 }
 
-.c2 {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
 .c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -102,12 +96,6 @@ exports[`full article with style 1`] = `
 
 .c10 {
   display: none;
-}
-
-.c6 {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
 }
 
 .c7 {
@@ -473,20 +461,37 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS3 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS4 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS5 {
+  background-color: rgba(29,29,27,1.00);
+  width: 100%;
+}
+
+.IS6 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS3 {
+.IS7 {
   padding-bottom: 56.25%;
 }
 
-.IS4 {
+.IS8 {
   margin: 0;
 }
 
-.IS5 {
+.IS9 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -495,35 +500,35 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS6 {
+.IS10 {
   height: 100%;
   width: 100%;
 }
 
-.IS7 {
+.IS11 {
   position: relative;
 }
 
-.IS8 {
+.IS12 {
   height: 100%;
   width: 100%;
 }
 
-.IS9 {
+.IS13 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS10 {
+.IS14 {
   padding-bottom: 56.25%;
 }
 
-.IS11 {
+.IS15 {
   margin: 0;
 }
 
-.IS12 {
+.IS16 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -534,7 +539,7 @@ exports[`full article with style 1`] = `
   margin-top: 30px;
 }
 
-.IS13 {
+.IS17 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
@@ -552,52 +557,56 @@ exports[`full article with style 1`] = `
     className="c1 S1"
   >
     <div
-      className="c2 S7"
+      className="IS5 S1"
     >
       <div
-        className="S3"
+        className="c2 S7"
       >
         <div
-          className="S2"
-        >
-          SOME LABEL
-        </div>
-      </div>
-      <h1
-        className="c3 S4"
-      >
-        Some Headline
-      </h1>
-      <div
-        className="c4 S1"
-      >
-        <div
-          className="S5"
+          className="S3"
         >
           <div
-            className="S1"
+            className="IS2 S2"
           >
-            <NewArticleFlag />
+            SOME LABEL
           </div>
         </div>
+        <h1
+          className="c3 IS3 S4"
+        >
+          Some Headline
+        </h1>
+        <div
+          className="c4 S1"
+        >
+          <div
+            className="S5"
+          >
+            <div
+              className="S1"
+            >
+              <NewArticleFlag />
+            </div>
+          </div>
+        </div>
+        <h2
+          className="c5 IS4 S6"
+        >
+          Some Standfirst
+        </h2>
       </div>
-      <h2
-        className="c5 S6"
-      >
-        Some Standfirst
-      </h2>
     </div>
     <div
       className="c6 S9"
     >
       <figure
-        className="IS4"
+        className="IS8"
       >
         <div
-          className="IS3 S8"
+          className="IS7 S8"
         >
           <div
-            className="IS2 S1"
+            className="IS6 S1"
           >
             <Image />
           </div>
@@ -650,7 +659,7 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c14 IS5"
+        className="c14 IS9"
       >
         Some content
       </p>
@@ -669,22 +678,22 @@ exports[`full article with style 1`] = `
         className="c13 S1"
       >
         <figure
-          className="IS11"
+          className="IS15"
         >
           <div
-            className="IS10 S8"
+            className="IS14 S8"
           >
             <div
-              className="IS9 S1"
+              className="IS13 S1"
             >
               <div
-                className="IS8"
+                className="IS12"
               >
                 <div
-                  className="IS7"
+                  className="IS11"
                 >
                   <video
-                    className="video-js IS6"
+                    className="video-js IS10"
                   />
                 </div>
               </div>
@@ -700,7 +709,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS12"
+        className="IS16"
       />
       <div>
         <div
@@ -721,7 +730,7 @@ exports[`full article with style 1`] = `
       >
         <nav>
           <ArticleTopics
-            className="IS13"
+            className="IS17"
           />
         </nav>
       </div>

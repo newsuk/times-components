@@ -3,7 +3,9 @@
 exports[`1. article flags with content 1`] = `
 <div>
   <div>
-    <NewArticleFlag />
+    <NewArticleFlag
+      color="#1D1D1B"
+    />
   </div>
 </div>
 `;
