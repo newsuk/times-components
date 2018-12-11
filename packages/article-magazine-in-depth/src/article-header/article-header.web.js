@@ -23,7 +23,7 @@ const ArticleHeader = ({
   standfirst,
   textColour
 }) => (
-  <View style={{ backgroundColor: backgroundColour, width: "100%" }}>
+  <View style={{ backgroundColor: backgroundColour, order: -4, width: "100%" }}>
     <HeaderContainer style={styles.container}>
       <Label color={textColour} label={label} />
       <HeadlineContainer
