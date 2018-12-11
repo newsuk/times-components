@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`1. renders correctly with an image lead asset 1`] = `
 <style>
 .IS1 {
   height: 100%;
@@ -9,7 +9,7 @@ exports[`renders correctly 1`] = `
 }
 
 .IS2 {
-  padding-bottom: 100%;
+  padding-bottom: 56.25%;
 }
 
 .IS3 {
@@ -43,3 +43,59 @@ exports[`renders correctly 1`] = `
   </figcaption>
 </figure>
 `;
+
+exports[`2. renders correctly with a video lead asset 1`] = `
+<style>
+.IS1 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS2 {
+  padding-bottom: 56.25%;
+}
+
+.IS3 {
+  margin: 0;
+}
+</style>
+
+<figure
+  className="IS3"
+>
+  <div
+    className="IS2"
+  >
+    <div
+      className="IS1"
+    >
+      <Video
+        accountId="1234"
+        height="100%"
+        policyKey="policyKey"
+        position="absolute"
+        poster={
+          Object {
+            "uri": "https://crop169.io/",
+          }
+        }
+        videoId="5678"
+        width="100%"
+      />
+    </div>
+  </div>
+  <figcaption>
+    <div>
+      Chris Reynolds Gordon at one of his party venues in London
+    </div>
+    <div>
+      The credits
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`3. renders correctly when there is no lead asset 1`] = `null`;
+
+exports[`4. correctly renders when there is no displayimage 1`] = `null`;

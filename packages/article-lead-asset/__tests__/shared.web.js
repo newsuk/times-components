@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Text } from "react-native";
+import React from "react";
+import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -10,10 +10,10 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import ArticleLeadAsset from "../src/article-lead-asset";
-import { AppRegistry } from "react-native-web";
+import { iterator } from "@times-components/test-utils";
+import shared from "./shared.base";
 
-jest.mock("@times-components/Image", () => "Image");
+import ArticleLeadAsset from "../src/article-lead-asset";
 
 addSerializers(
   expect,
@@ -25,55 +25,17 @@ addSerializers(
     rnwTransform(AppRegistry)
   )
 );
+export default () =>
+  iterator([
+    ...shared(),
+    {
+      name: "correctly renders when there is no displayImage",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ArticleLeadAsset displayImage={null} leadAsset={{}} />
+        );
 
-const getImageCrop = leadAsset => {
-  return leadAsset.crop169;
-};
-
-export default () => {
-  let props;
-
-  beforeEach(() => {
-    props = {
-      getImageCrop,
-      onVideoPress: jest.fn(),
-      // eslint-disable-next-line react/prop-types
-      renderCaption: ({ captionProps }) => (
-        <Fragment>
-          <Text>{captionProps.text}</Text>
-          <Text>{captionProps.credits}</Text>
-        </Fragment>
-      )
-    };
-  });
-
-  it("renders correctly", () => {
-    const testInstance = TestRenderer.create(
-      <ArticleLeadAsset
-        {...props}
-        displayImage={{
-          __typename: "Crop",
-          ratio: "16:9",
-          url: "https://crop169.io/"
-        }}
-        leadAsset={{
-          __typename: "Image",
-          caption: "Chris Reynolds Gordon at one of his party venues in London",
-          credits: "The credits",
-          crop169: {
-            __typename: "Crop",
-            ratio: "16:9",
-            url: "https://crop169.io/"
-          },
-          crop1251: {
-            __typename: "Crop",
-            ratio: "1.25:1",
-            url: "https://crop1251.io/"
-          }
-        }}
-      />
-    );
-
-    expect(testInstance).toMatchSnapshot();
-  });
-};
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ]);

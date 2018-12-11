@@ -9,15 +9,16 @@ import {
 
 const ArticleLeadAssetVideo = ({
   aspectRatio,
-  leadAsset: {
+  leadAsset,
+  uri,
+  onVideoPress
+}) => {
+  const {
     brightcoveVideoId,
     brightcovePolicyKey,
     brightcoveAccountId,
     skySports
-  },
-  uri,
-  onVideoPress
-}) => {
+  } = leadAsset;
   const width = screenWidth();
   const height = width / aspectRatio;
 

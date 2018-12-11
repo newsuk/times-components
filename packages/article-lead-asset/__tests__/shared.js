@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
@@ -8,12 +8,8 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import ArticleLeadAsset from "../src/article-lead-asset";
 import shared from "./shared.base";
-
-jest.mock("@times-components/Image", () => ({
-  ModalImage: "ModalImage"
-}));
+import ArticleLeadAsset from "../src/article-lead-asset";
 
 addSerializers(
   expect,
@@ -30,7 +26,7 @@ export default () =>
       name:
         "passes the caption rendered by renderModalCaption to the ModalImage",
       test() {
-        const testInstance = TestRenderer.create(
+        const testRenderer = TestRenderer.create(
           <ArticleLeadAsset
             getImageCrop={() => ({ ratio: "1:1", uri: "http://image" })}
             leadAsset={{}}
@@ -39,7 +35,17 @@ export default () =>
           />
         );
 
-        expect(testInstance).toMatchSnapshot();
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders correctly when there is no available crop",
+      test() {
+        const testRenderer = TestRenderer.create(
+          <ArticleLeadAsset getImageCrop={() => null} leadAsset={{}} />
+        );
+
+        expect(testRenderer).toMatchSnapshot();
       }
     }
   ]);

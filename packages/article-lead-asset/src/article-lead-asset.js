@@ -5,6 +5,7 @@ import {
   nativePropTypes,
   nativeDefaultProps
 } from "./article-lead-asset-prop-types";
+import getRatio from "./get-ratio";
 
 const ArticleLeadAssetModalImage = ({ aspectRatio, caption, uri, width }) => (
   <ModalImage {...{ aspectRatio, caption, uri, width }} />
@@ -23,16 +24,12 @@ const ArticleLeadAsset = ({
     return null;
   }
 
-  const imageContainer =  isVideo ? leadAsset.posterImage : leadAsset;
+  const imageContainer = isVideo ? leadAsset.posterImage : leadAsset;
   const crop = getImageCrop(imageContainer);
 
   if (!crop) {
     return null;
   }
-  const { ratio, url } = crop;
-  const [ratioWidth, ratioHeight] = ratio.split(":");
-  const aspectRatio = Number(ratioWidth) / Number(ratioHeight);
-
   const LeadAsset = isVideo
     ? ArticleLeadAssetVideo
     : ArticleLeadAssetModalImage;
@@ -45,11 +42,11 @@ const ArticleLeadAsset = ({
   return (
     <Fragment>
       <LeadAsset
-        aspectRatio={aspectRatio}
+        aspectRatio={getRatio(crop.ratio)}
         caption={renderModalCaption({ captionProps })}
         leadAsset={leadAsset}
         onVideoPress={onVideoPress}
-        uri={url}
+        uri={crop.url}
         width={width}
       />
       {renderCaption({ captionProps })}
