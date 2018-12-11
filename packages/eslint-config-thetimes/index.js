@@ -26,6 +26,7 @@ module.exports = {
           "**/fixtures/**",
           "**/*.stories*",
           "**/*.showcase*",
+          "**/showcase-helper*",
           "**/scripts/**",
           "webpack.config*.js"
         ],
