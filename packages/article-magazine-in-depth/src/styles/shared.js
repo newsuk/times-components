@@ -13,8 +13,6 @@ const sharedStyles = {
   },
   container: {
     alignItems: "center",
-    marginBottom: spacing(5),
-    marginLeft: spacing(2),
     marginRight: spacing(2),
     paddingTop: spacing(7)
   },
