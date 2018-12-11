@@ -13,6 +13,13 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const renderArticleTopics = ({ data, decorateAction }) => (
+  <ArticleTopics
+    onPress={preventDefaultedAction(decorateAction)("onPress")}
+    topics={data}
+  />
+);
+
 export default {
   children: [
     {
@@ -20,24 +27,25 @@ export default {
         const scale = select("Scale", scales, scales.medium);
         return (
           <Context.Provider value={{ theme: { scale } }}>
-            <ArticleTopics
-              onPress={preventDefaultedAction(decorateAction)("onPress")}
-              topics={topicsData}
-            />
+            {renderArticleTopics({ data: topicsData, decorateAction })}
           </Context.Provider>
         );
       },
       name: "Group of Topics",
+      platform: "native",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <ArticleTopics
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          topics={[topicsData[0]]}
-        />
-      ),
+      component: ({ select }, { decorateAction }) => {
+        const scale = select("Scale", scales, scales.medium);
+        return (
+          <Context.Provider value={{ theme: { scale } }}>
+            {renderArticleTopics({ data: [topicsData[0]], decorateAction })}
+          </Context.Provider>
+        );
+      },
       name: "Single Topic",
+      platform: "native",
       type: "story"
     }
   ],
