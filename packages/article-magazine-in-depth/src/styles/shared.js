@@ -38,8 +38,7 @@ const sharedStyles = {
     marginBottom: spacing(2)
   },
   leadAssetContainer: {
-    marginBottom: spacing(4),
-    order: 2
+    marginBottom: spacing(4)
   },
   meta: {
     flexDirection: "row",
@@ -53,7 +52,6 @@ const sharedStyles = {
     marginBottom: spacing(5),
     marginLeft: spacing(2),
     marginRight: spacing(2),
-    order: 2,
     paddingBottom: spacing(2),
     paddingTop: spacing(2)
   },

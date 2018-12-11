@@ -25,6 +25,7 @@ export const FlagsContainer = styled(View)`
 `;
 
 export const HeaderContainer = styled(View)`
+  order: 2;
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
     margin-top: 0;
@@ -95,6 +96,8 @@ export const StandfirstContainer = styled(Text)`
 `;
 
 export const LeadAsset = styled(View)`
+  order: 2;
+
   @media (min-width: ${breakpoints.medium}px) {
     margin-bottom: ${spacing(6)};
   }
