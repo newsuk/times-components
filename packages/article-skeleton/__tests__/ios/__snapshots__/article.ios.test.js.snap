@@ -24,14 +24,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "T",
-                },
-                "children": Array [],
-                "name": "dropCap",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "his being Black History Month, last week",
+                  "value": "This being Black History Month, last week",
                 },
                 "children": Array [],
                 "name": "text",
@@ -43,7 +36,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         dropCapColour="#FF0000"
         uid={0}
       >
-        his being Black History Month, last week
+        This being Black History Month, last week
       </ArticleParagraph>
     </View>
     <View>
