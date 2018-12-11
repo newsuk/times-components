@@ -8,10 +8,10 @@ exports[`full article with style 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "marginBottom": 25,
-            "marginLeft": 10,
+            "backgroundColor": "#1D1D1B",
             "marginRight": 10,
             "paddingTop": 35,
+            "width": "100%",
           }
         }
       >
@@ -27,7 +27,7 @@ exports[`full article with style 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#FFFFFF",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "lineHeight": 35,
@@ -60,7 +60,7 @@ exports[`full article with style 1`] = `
         <Text
           style={
             Object {
-              "color": "#333333",
+              "color": "#FFFFFF",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,

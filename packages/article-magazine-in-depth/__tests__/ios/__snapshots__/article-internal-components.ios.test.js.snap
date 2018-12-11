@@ -3,7 +3,9 @@
 exports[`1. article flags with content 1`] = `
 <View>
   <View>
-    <NewArticleFlag />
+    <NewArticleFlag
+      color="#1D1D1B"
+    />
   </View>
 </View>
 `;
@@ -24,7 +26,7 @@ exports[`4. article standfirst with no content 1`] = `null`;
 exports[`5. article label uses default section colour 1`] = `
 <View>
   <ArticleLabel
-    color="#1D1D1B"
+    color="#FFFFFF"
     title="Random Label"
   />
 </View>
