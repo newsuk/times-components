@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.19](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.18...@times-components/article-paragraph@0.2.19) (2018-12-11)
+
+
+### Bug Fixes
+
+* article para stories ([#1563](https://github.com/newsuk/times-components/issues/1563)) ([d1db853](https://github.com/newsuk/times-components/commit/d1db853))
+
+
+
+
+
 ## [0.2.18](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.17...@times-components/article-paragraph@0.2.18) (2018-12-10)
 
 
