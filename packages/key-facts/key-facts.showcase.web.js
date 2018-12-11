@@ -1,24 +1,7 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import invert from "lodash.invert";
-import Context from "@times-components/context";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import { colours } from "@times-components/styleguide";
-import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts-showcase.json";
 import dataNoTitle from "./fixtures/key-facts-no-title-showcase.json";
-
-const selectSection = select =>
-  select("Section", invert(colours.section), colours.section.default);
-
-const renderKeyFacts = (ast, select) => {
-  const sectionColour = selectSection(select);
-  return (
-    <Context.Provider value={{ theme: { sectionColour } }}>
-      <KeyFacts ast={ast} onLinkPress={() => {}} />
-    </Context.Provider>
-  );
-};
+import renderKeyFacts from "./showcase-helper";
 
 export default {
   children: [
@@ -27,13 +10,15 @@ export default {
       type: "decorator"
     },
     {
-      component: ({ select }) => renderKeyFacts(data, select),
+      component: ({ select }) =>
+        renderKeyFacts({ ast: data, hasScaling: false, select }),
       name: "with title",
       platform: "web",
       type: "story"
     },
     {
-      component: ({ select }) => renderKeyFacts(dataNoTitle, select),
+      component: ({ select }) =>
+        renderKeyFacts({ ast: dataNoTitle, hasScaling: false, select }),
       name: "without title",
       platform: "web",
       type: "story"
