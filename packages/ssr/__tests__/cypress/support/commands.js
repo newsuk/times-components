@@ -10,17 +10,3 @@ Cypress.Commands.add("goToPreviousArticle", () => {
     .first()
     .click();
 });
-
-Cypress.Commands.add("loadedAd", selector => {
-  //  open devtools
-  // cy.get(selector).debug().pause();
-  cy.wait(2000);
-  cy.get(selector).should(element => {
-    expect(element).to.exist;
-    expect(element).to.be.visible;
-    expect(element).to.not.be.empty;
-  });
-  cy.get(selector)
-    .get("googleQueryId")
-    .should("not.be.empty");
-});

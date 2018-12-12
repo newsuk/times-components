@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.18...@times-components/article-skeleton@0.2.0) (2018-12-12)
+
+
+### Features
+
+* add SpotIM comments to articles on web ([#1562](https://github.com/newsuk/times-components/issues/1562)) ([52dc2d7](https://github.com/newsuk/times-components/commit/52dc2d7))
+
+
+
+
+
+## [0.1.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.17...@times-components/article-skeleton@0.1.18) (2018-12-12)
+
+
+### Bug Fixes
+
+* article skeleton story ([#1567](https://github.com/newsuk/times-components/issues/1567)) ([8260362](https://github.com/newsuk/times-components/commit/8260362))
+
+
+
+
+
+## [0.1.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.16...@times-components/article-skeleton@0.1.17) (2018-12-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.1.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.15...@times-components/article-skeleton@0.1.16) (2018-12-11)
+
+
+### Bug Fixes
+
+* Don't add drop cap markup on ios ([#1565](https://github.com/newsuk/times-components/issues/1565)) ([38505fc](https://github.com/newsuk/times-components/commit/38505fc))
+
+
+
+
+
 ## [0.1.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.1.14...@times-components/article-skeleton@0.1.15) (2018-12-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton

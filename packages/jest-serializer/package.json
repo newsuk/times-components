@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "3.1.11",
+  "version": "3.1.12",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.8",
+    "@times-components/eslint-config-thetimes": "0.8.9",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",

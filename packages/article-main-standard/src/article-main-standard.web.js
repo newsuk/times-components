@@ -71,7 +71,8 @@ class ArticlePage extends Component {
       analyticsStream,
       error,
       isLoading,
-      receiveChildList
+      receiveChildList,
+      spotAccountId
     } = this.props;
 
     if (error || isLoading) {
@@ -85,6 +86,7 @@ class ArticlePage extends Component {
         data={article}
         Header={this.renderHeader}
         receiveChildList={receiveChildList}
+        spotAccountId={spotAccountId}
       />
     );
   }

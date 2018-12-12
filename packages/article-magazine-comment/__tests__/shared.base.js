@@ -149,6 +149,19 @@ const negativeTests = [
 
       expect(textNodes).toEqual([]);
     }
+  },
+  {
+    name: "an article with no author",
+    test() {
+      const testRenderer = TestRenderer.create(
+        <ArticleMagazineComment
+          {...sharedProps}
+          article={articleFixture({ ...testFixture, author: null })}
+        />
+      );
+
+      expect(testRenderer).toMatchSnapshot();
+    }
   }
 ];
 

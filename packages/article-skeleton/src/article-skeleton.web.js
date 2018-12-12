@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
+import ArticleComments from "@times-components/article-comments";
 import LazyLoad from "@times-components/lazy-load";
 import RelatedArticles from "@times-components/related-articles";
 import { spacing } from "@times-components/styleguide";
@@ -42,9 +43,19 @@ class ArticleSkeleton extends Component {
     const {
       adConfig,
       analyticsStream,
-      data: { content, section, url, topics, relatedArticleSlice, template },
+      data: {
+        commentsEnabled,
+        content,
+        id: articleId,
+        section,
+        url,
+        topics,
+        relatedArticleSlice,
+        template
+      },
       Header,
-      receiveChildList
+      receiveChildList,
+      spotAccountId
     } = this.props;
     const { articleWidth } = this.state;
     // eslint-disable-next-line react/prop-types
@@ -109,6 +120,12 @@ class ArticleSkeleton extends Component {
                         isVisible: !!observed.get("related-articles")
                       })}
                     </aside>
+                    {commentsEnabled && (
+                      <ArticleComments
+                        articleId={articleId}
+                        spotAccountId={spotAccountId}
+                      />
+                    )}
                   </BodyContainer>
                 </MainContainer>
               </Fragment>

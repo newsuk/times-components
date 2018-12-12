@@ -143,6 +143,7 @@ const tests = [
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
+            spotAccountId=""
           />
         </Context.Provider>
       );

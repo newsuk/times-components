@@ -28,6 +28,7 @@ const renderArticle = (data, header = null) => (
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
+      spotAccountId=""
     />
   </Context.Provider>
 );
