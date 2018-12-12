@@ -30,12 +30,11 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst
     } = article;
-    const authorImage = author && author.image ? author.image : null;
 
     return (
       <Fragment>
         <ArticleHeader
-          authorImage={authorImage}
+          authorImage={author.image}
           byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}

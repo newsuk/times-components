@@ -20,7 +20,9 @@ class ArticleMagazineComment extends Component {
   renderHeader({ width }) {
     const { article, onAuthorPress, onVideoPress } = this.props;
     const {
-      author,
+      author = {
+        image: null
+      },
       byline,
       flags,
       headline,
@@ -31,12 +33,11 @@ class ArticleMagazineComment extends Component {
       standfirst
     } = article;
     const { leadAsset } = getLeadAsset(article);
-    const authorImage = author && author.image ? author.image : null;
 
     return (
       <Fragment>
         <ArticleHeader
-          authorImage={authorImage}
+          authorImage={author.image}
           byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
