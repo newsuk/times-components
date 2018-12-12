@@ -9,7 +9,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import ArticleMagazineInDepth from "../src/article-magazine-in-depth";
+import ArticleInDepth from "../src/article-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
@@ -133,7 +133,7 @@ export default () => {
     });
 
     const testRenderer = TestRenderer.create(
-      <ArticleMagazineInDepth {...sharedProps} article={article} />
+      <ArticleInDepth {...sharedProps} article={article} />
     );
 
     expect(testRenderer).toMatchSnapshot();

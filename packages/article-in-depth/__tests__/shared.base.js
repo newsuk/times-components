@@ -2,7 +2,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import ArticleMagazineInDepth from "../src/article-magazine-in-depth";
+import ArticleInDepth from "../src/article-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 import { adConfig } from "./ad-mock";
@@ -27,7 +27,7 @@ export const snapshotTests = renderComponent => [
     name: "an error",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           error={{ message: "An example error." }}
         />
@@ -40,7 +40,7 @@ export const snapshotTests = renderComponent => [
     name: "loading",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMagazineInDepth {...sharedProps} isLoading />
+        <ArticleInDepth {...sharedProps} isLoading />
       );
 
       expect(testRenderer).toMatchSnapshot();
@@ -50,7 +50,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with no headline falls back to use shortHeadline",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           article={articleFixture({
             ...testFixture,
@@ -67,7 +67,7 @@ export const snapshotTests = renderComponent => [
     name: "an article with ads",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           article={articleFixture({
             ...testFixture,
@@ -93,7 +93,7 @@ const negativeTests = [
     name: "an article with no flags",
     test() {
       const testRenderer = TestRenderer.create(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           article={articleFixture({
             ...testFixture,
@@ -111,7 +111,7 @@ const negativeTests = [
     name: "an article with no label",
     test() {
       const testRenderer = TestRenderer.create(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           article={articleFixture({ ...testFixture, label: null })}
         />
@@ -126,7 +126,7 @@ const negativeTests = [
     name: "an article with no standfirst",
     test() {
       const testRenderer = TestRenderer.create(
-        <ArticleMagazineInDepth
+        <ArticleInDepth
           {...sharedProps}
           article={articleFixture({
             ...testFixture,

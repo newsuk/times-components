@@ -13,7 +13,7 @@ import {
 } from "@times-components/jest-serializer";
 import Context from "@times-components/context";
 import { scales } from "@times-components/styleguide";
-import Article from "../../src/article-magazine-in-depth";
+import Article from "../../src/article-in-depth";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
 
