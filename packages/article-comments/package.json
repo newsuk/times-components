@@ -57,6 +57,7 @@
     "babel-plugin-styled-components": "1.5.1",
     "eslint": "5.9.0",
     "jest": "23.3.0",
+    "jest-styled-components": "5.0.1",
     "prettier": "1.14.3",
     "react": "16.5.2",
     "react-dom": "16.5.2",
