@@ -34,7 +34,7 @@ const ArticleLeadAsset = ({
     ? ArticleLeadAssetVideo
     : ArticleLeadAssetModalImage;
 
-  const captionProps = {
+  const caption = {
     credits: imageContainer.credits,
     text: imageContainer.caption
   };
@@ -43,13 +43,13 @@ const ArticleLeadAsset = ({
     <Fragment>
       <LeadAsset
         aspectRatio={getRatio(crop.ratio)}
-        caption={renderModalCaption({ captionProps })}
+        caption={renderModalCaption({ caption })}
         leadAsset={leadAsset}
         onVideoPress={onVideoPress}
         uri={crop.url}
         width={width}
       />
-      {renderCaption({ captionProps })}
+      {renderCaption({ caption })}
     </Fragment>
   );
 };

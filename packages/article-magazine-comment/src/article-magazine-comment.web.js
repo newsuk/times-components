@@ -53,9 +53,7 @@ class ArticlePage extends Component {
           <ArticleLeadAsset
             {...getLeadAsset(article)}
             getImageCrop={getStandardTemplateCrop}
-            renderCaption={({ captionProps }) => (
-              <CentredCaption {...captionProps} />
-            )}
+            renderCaption={({ caption }) => <CentredCaption {...caption} />}
             width={width}
           />
         </LeadAssetContainer>

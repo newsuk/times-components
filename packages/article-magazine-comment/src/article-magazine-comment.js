@@ -58,12 +58,8 @@ class ArticleMagazineComment extends Component {
             {...getLeadAsset(article)}
             getImageCrop={getStandardTemplateCrop}
             onVideoPress={onVideoPress}
-            renderCaption={({ captionProps }) => (
-              <CentredCaption {...captionProps} />
-            )}
-            renderModalCaption={({ captionProps }) => (
-              <Caption {...captionProps} />
-            )}
+            renderCaption={({ caption }) => <CentredCaption {...caption} />}
+            renderModalCaption={({ caption }) => <Caption {...caption} />}
             width={width}
           />
         </View>

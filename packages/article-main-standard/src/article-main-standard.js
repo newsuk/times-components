@@ -49,9 +49,7 @@ class ArticlePage extends Component {
               {...getLeadAsset(article)}
               getImageCrop={getStandardTemplateCrop}
               onVideoPress={onVideoPress}
-              renderModalCaption={({ captionProps }) => (
-                <Caption {...captionProps} />
-              )}
+              renderModalCaption={({ caption }) => <Caption {...caption} />}
               width={parentProps.width}
             />
           </View>

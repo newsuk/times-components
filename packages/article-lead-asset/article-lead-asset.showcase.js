@@ -30,7 +30,7 @@ const videoLeadAsset = {
 };
 
 // eslint-disable-next-line react/prop-types
-const createCaption = label => ({ captionProps: { text, credits } }) => (
+const createCaption = label => ({ caption: { text, credits } }) => (
   <Text>
     {label}: {text} {credits}
   </Text>

@@ -34,10 +34,10 @@ const props = {
   getImageCrop: leadAsset => leadAsset.crop169,
   leadAsset: imageLeadAsset,
   // eslint-disable-next-line react/prop-types
-  renderCaption: ({ captionProps }) => (
+  renderCaption: ({ caption }) => (
     <Fragment>
-      <Text>{captionProps.text}</Text>
-      <Text>{captionProps.credits}</Text>
+      <Text>{caption.text}</Text>
+      <Text>{caption.credits}</Text>
     </Fragment>
   ),
   width: 600

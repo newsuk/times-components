@@ -36,12 +36,12 @@ which crop to use for the lead asset based on the available crops.
     getImageCrop={leadAsset => leadAsset.crop169 || leadAsset.crop32}
 
     // Used to render inline caption on both web and native
-    renderCaption={({ captionProps }) => <Caption {...captionProps } />}
+    renderCaption={({ caption }) => <Caption {...caption } />}
 
     // Used to render caption inside the modal. Only used on native
     // Defaults to value of renderCaption, but specify only this prop if you
     // wish to render a caption only within the modal
-    renderModalCaption={({ captionProps }) => <Caption {...captionProps } /> }
+    renderModalCaption={({ caption }) => <Caption {...caption } /> }
 
     // Specify the width to render the asset at.
     // Rendered at this size on native platforms, and used for lazy loading

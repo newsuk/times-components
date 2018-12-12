@@ -18,7 +18,7 @@ const ArticleLeadAsset = ({
   }
 
   const captionContainer = isVideo ? leadAsset.posterImage : leadAsset;
-  const captionProps = {
+  const caption = {
     credits: captionContainer.credits,
     text: captionContainer.caption
   };
@@ -44,9 +44,7 @@ const ArticleLeadAsset = ({
       <AspectRatioContainer aspectRatio={aspectRatio}>
         {leadAssetView}
       </AspectRatioContainer>
-      {renderCaption && (
-        <figcaption>{renderCaption({ captionProps })}</figcaption>
-      )}
+      {renderCaption && <figcaption>{renderCaption({ caption })}</figcaption>}
     </figure>
   );
 };
