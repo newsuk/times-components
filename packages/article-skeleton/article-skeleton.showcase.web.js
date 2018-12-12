@@ -7,11 +7,11 @@ export default {
         renderArticleSkeleton({
           boolean,
           decorateAction,
-          hasScaling: true,
+          hasScaling: false,
           select
         }),
       name: "Default",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],
