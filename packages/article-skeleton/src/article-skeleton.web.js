@@ -120,12 +120,11 @@ class ArticleSkeleton extends Component {
                         isVisible: !!observed.get("related-articles")
                       })}
                     </aside>
-                    {commentsEnabled && (
-                      <ArticleComments
-                        articleId={articleId}
-                        spotAccountId={spotAccountId}
-                      />
-                    )}
+                    <ArticleComments
+                      articleId={articleId}
+                      isEnabled={commentsEnabled}
+                      spotAccountId={spotAccountId}
+                    />
                   </BodyContainer>
                 </MainContainer>
               </Fragment>

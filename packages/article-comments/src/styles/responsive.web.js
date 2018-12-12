@@ -20,11 +20,29 @@ export const CommentContainer = styled.div`
   }
 `;
 
-export const CommentGuidelines = styled.p`
+export const CommentEnabledGuidelines = styled.p`
   color: ${colours.functional.secondary};
   font-family: "${fonts.supporting}";
   font-size: ${fontSizes.commentsGuidelines}px;
-  margin-bottom: ${spacing(-2)};
-  margin-left: 7px;
-  margin-top: ${spacing(5)};
+  padding-bottom: ${spacing(-2)};
+  padding-left: 7px;
+  padding-top: ${spacing(6)};
+`;
+
+export const CommentDisabledGuidelines = styled.p`
+  color: ${colours.functional.secondary};
+  font-family: "${fonts.supporting}";
+  font-size: ${fontSizes.commentsGuidelines}px;
+  padding-bottom: ${spacing(1)};
+  padding-top: ${spacing(1)};
+  text-align: center;
+`;
+
+export const CommentDisabledHeadline = styled.p`
+  color: ${colours.functional.primary};
+  font-family: "${fonts.headline}";
+  font-size: ${fontSizes.commentsHeadline}px;
+  padding-bottom: ${spacing(1)};
+  padding-top: ${spacing(6)};
+  text-align: center;
 `;
