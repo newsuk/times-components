@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.41](https://github.com/newsuk/times-components/compare/@times-components/key-facts@1.3.40...@times-components/key-facts@1.3.41) (2018-12-12)
+
+
+### Bug Fixes
+
+* key facts stories ([#1566](https://github.com/newsuk/times-components/issues/1566)) ([3e09b2a](https://github.com/newsuk/times-components/commit/3e09b2a))
+
+
+
+
+
 ## [1.3.40](https://github.com/newsuk/times-components/compare/@times-components/key-facts@1.3.39...@times-components/key-facts@1.3.40) (2018-12-06)
 
 **Note:** Version bump only for package @times-components/key-facts
