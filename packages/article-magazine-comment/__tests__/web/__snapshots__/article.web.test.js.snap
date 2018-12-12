@@ -149,6 +149,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           }
         />
       </aside>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>
@@ -301,6 +304,9 @@ exports[`4. an article with ads 1`] = `
           }
         />
       </aside>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>
@@ -468,6 +474,9 @@ exports[`8. an article with no author 1`] = `
           }
         />
       </aside>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>

@@ -27,9 +27,11 @@ const makeHtml = (
             ${responsiveStyles}
           </head>
           <body style="margin:0">
-            <script>window.nuk = {graphqlapi: {url: "${
-              process.env.GRAPHQL_ENDPOINT
-            }"}, tracking: {enabled: false}};</script>
+            <script>window.nuk = {
+              graphqlapi: {url: "${process.env.GRAPHQL_ENDPOINT}"},
+              ssr: {spotAccountId: "${process.env.SPOT_ID}"},
+              tracking: {enabled: false}
+            };</script>
             ${initialProps}
             ${initialState}
             <div id="main-container">${markup}</div>
@@ -55,6 +57,7 @@ server.get("/article/:id", (request, response) => {
     params: { id: articleId }
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
+  const spotAccountId = process.env.SPOT_ID;
   const headers = process.env.GRAPHQL_TOKEN
     ? {
         "nuk-tpatoken": process.env.GRAPHQL_TOKEN
@@ -62,7 +65,12 @@ server.get("/article/:id", (request, response) => {
     : null;
 
   ssr
-    .article(articleId, headers, { graphqlApiUrl, logger, makeArticleUrl })
+    .article(articleId, headers, {
+      graphqlApiUrl,
+      logger,
+      makeArticleUrl,
+      spotAccountId
+    })
     .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
       response.send(
         makeHtml(initialState, initialProps, {

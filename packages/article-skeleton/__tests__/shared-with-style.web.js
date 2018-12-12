@@ -307,6 +307,7 @@ export default () => {
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
+        spotAccountId=""
       />
     );
 

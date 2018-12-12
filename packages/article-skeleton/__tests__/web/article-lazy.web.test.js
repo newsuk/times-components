@@ -82,6 +82,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          spotAccountId=""
         />
       );
 
@@ -139,6 +140,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          spotAccountId=""
         />
       );
 
@@ -175,6 +177,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
+          spotAccountId=""
         />
       );
 

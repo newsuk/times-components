@@ -42,6 +42,9 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
       <aside
         id="related-articles"
       />
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      />
     </div>
   </div>
 </article>
@@ -88,6 +91,9 @@ exports[`3. an article with ads 1`] = `
       />
       <aside
         id="related-articles"
+      />
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       />
     </div>
   </div>

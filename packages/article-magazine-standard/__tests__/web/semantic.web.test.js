@@ -144,6 +144,7 @@ const tests = [
             onTopicPress={() => {}}
             onVideoPress={() => {}}
             receiveChildList={() => {}}
+            spotAccountId=""
           />
         </Context.Provider>
       );
