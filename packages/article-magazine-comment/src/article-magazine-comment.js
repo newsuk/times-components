@@ -31,11 +31,12 @@ class ArticleMagazineComment extends Component {
       standfirst
     } = article;
     const { leadAsset } = getLeadAsset(article);
+    const authorImage = author && author.image ? author.image : null;
 
     return (
       <Fragment>
         <ArticleHeader
-          authorImage={author.image}
+          authorImage={authorImage}
           byline={byline}
           flags={flags}
           headline={getHeadline(headline, shortHeadline)}
