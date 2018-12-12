@@ -23,6 +23,7 @@ export default () => {
 
   it("comments error", async done => {
     renderComments({
+      enabled: true,
       error: () => ({ error: "Error" }),
       onReady: testInstance => {
         expect(testInstance).toMatchSnapshot();
