@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.9](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.8.8...@times-components/eslint-config-thetimes@0.8.9) (2018-12-12)
+
+
+### Bug Fixes
+
+* article skeleton story ([#1567](https://github.com/newsuk/times-components/issues/1567)) ([8260362](https://github.com/newsuk/times-components/commit/8260362))
+
+
+
+
+
 <a name="0.8.8"></a>
 ## [0.8.8](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.8.7...@times-components/eslint-config-thetimes@0.8.8) (2018-11-21)
 
