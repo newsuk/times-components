@@ -166,8 +166,12 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
   >
     <ModalImage
       aspectRatio={1.5}
-      caption="Landscape caption"
-      credits="Landscape credits"
+      caption={
+        <Caption
+          credits="Landscape credits"
+          text="Landscape caption"
+        />
+      }
       uri="https://img/someImage"
     />
   </View>
@@ -242,8 +246,12 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
   >
     <ModalImage
       aspectRatio={0.6666666666666666}
-      caption="Portrait caption"
-      credits="Portrait credits"
+      caption={
+        <Caption
+          credits="Portrait credits"
+          text="Portrait caption"
+        />
+      }
       uri="https://img/someImage"
     />
   </View>

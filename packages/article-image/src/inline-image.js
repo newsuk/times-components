@@ -34,8 +34,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
     <View key="img" style={styles.inlineImage}>
       <ModalImage
         aspectRatio={aspectRatio}
-        caption={caption}
-        credits={credits}
+        caption={<Caption credits={credits} text={caption} />}
         highResSize={highResSize}
         lowResSize={lowResSize}
         uri={uri}

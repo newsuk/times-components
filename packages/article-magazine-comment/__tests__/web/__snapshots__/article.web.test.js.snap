@@ -395,14 +395,12 @@ exports[`8. an article with no author 1`] = `
             />
           </div>
         </div>
-        <div>
-          <figcaption>
-            <CenteredCaption
-              credits="Some Credits"
-              text="Some Caption"
-            />
-          </figcaption>
-        </div>
+        <figcaption>
+          <CenteredCaption
+            credits="Some Credits"
+            text="Some Caption"
+          />
+        </figcaption>
       </figure>
     </div>
     <div>
