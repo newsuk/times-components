@@ -28,8 +28,12 @@ exports[`5. image with no caption 1`] = `
   <View>
     <ModalImage
       aspectRatio={1.7777777777777777}
-      caption={null}
-      credits={null}
+      caption={
+        <Caption
+          credits={null}
+          text={null}
+        />
+      }
       uri="https://img/someImage"
     />
   </View>
@@ -69,8 +73,12 @@ exports[`8. primary image renders with caption and credits 1`] = `
   <View>
     <ModalImage
       aspectRatio={1.7777777777777777}
-      caption="Some caption"
-      credits="Some credit"
+      caption={
+        <Caption
+          credits="Some credit"
+          text="Some caption"
+        />
+      }
       uri="https://img/someImage"
     />
   </View>
@@ -94,8 +102,12 @@ exports[`9. primary image with given resolutions 1`] = `
   <View>
     <ModalImage
       aspectRatio={1.7777777777777777}
-      caption="Some caption"
-      credits="Some credit"
+      caption={
+        <Caption
+          credits="Some credit"
+          text="Some caption"
+        />
+      }
       highResSize={900}
       lowResSize={50}
       uri="https://img/someImage"

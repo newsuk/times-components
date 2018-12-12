@@ -25,8 +25,12 @@ Array [
   <div>
     <TimesImage
       aspectRatio={1.25}
-      caption="Some caption"
-      credits="Some credits"
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
       fadeImageIn={false}
       highResSize={null}
       lowResSize={null}
@@ -69,8 +73,12 @@ Array [
   <div>
     <TimesImage
       aspectRatio={1.5}
-      caption="Another caption"
-      credits="Other credits"
+      caption={
+        <Caption
+          credits="Other credits"
+          text="Another caption"
+        />
+      }
       fadeImageIn={false}
       highResSize={null}
       lowResSize={null}
