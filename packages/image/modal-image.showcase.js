@@ -14,10 +14,12 @@ export default {
           <Text>Click on the image to open the modal</Text>
           <ModalImage
             aspectRatio={16 / 9}
-            caption={<Text>
-              {text("Caption: ", "An example caption")}
-              {text("Credits: ", "Example credits")}
-            </Text>}
+            caption={
+              <Text>
+                {text("Caption: ", "An example caption")}
+                {text("Credits: ", "Example credits")}
+              </Text>
+            }
             uri={uri}
           />
         </Fragment>
