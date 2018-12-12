@@ -4,13 +4,13 @@ import TestRenderer from "react-test-renderer";
 import ArticleLeadAsset from "../src/article-lead-asset";
 import getRatio from "../src/get-ratio";
 
-jest.mock("@times-components/Image", () => ({
+jest.mock("@times-components/image", () => ({
   __esModule: true,
   default: "Image",
   ModalImage: "ModalImage"
 }));
 
-jest.mock("@times-components/Video", () => "Video");
+jest.mock("@times-components/video", () => "Video");
 
 const imageLeadAsset = {
   caption: "Chris Reynolds Gordon at one of his party venues in London",
