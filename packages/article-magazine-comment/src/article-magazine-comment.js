@@ -20,7 +20,9 @@ class ArticleMagazineComment extends Component {
   renderHeader({ width }) {
     const { article, onAuthorPress, onVideoPress } = this.props;
     const {
-      author,
+      author = {
+        image: null
+      },
       byline,
       flags,
       headline,
