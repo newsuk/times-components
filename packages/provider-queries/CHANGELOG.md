@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.8.7...@times-components/provider-queries@1.9.0) (2018-12-12)
+
+
+### Features
+
+* add SpotIM comments to articles on web ([#1562](https://github.com/newsuk/times-components/issues/1562)) ([52dc2d7](https://github.com/newsuk/times-components/commit/52dc2d7))
+
+
+
+
+
 ## [1.8.7](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.8.6...@times-components/provider-queries@1.8.7) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/provider-queries

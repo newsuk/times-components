@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.9.4...@times-components/styleguide@3.10.0) (2018-12-12)
+
+
+### Features
+
+* add SpotIM comments to articles on web ([#1562](https://github.com/newsuk/times-components/issues/1562)) ([52dc2d7](https://github.com/newsuk/times-components/commit/52dc2d7))
+
+
+
+
+
 ## [3.9.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.9.3...@times-components/styleguide@3.9.4) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/styleguide

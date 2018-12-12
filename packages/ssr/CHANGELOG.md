@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.6.28...@times-components/ssr@1.7.0) (2018-12-12)
+
+
+### Features
+
+* add SpotIM comments to articles on web ([#1562](https://github.com/newsuk/times-components/issues/1562)) ([52dc2d7](https://github.com/newsuk/times-components/commit/52dc2d7))
+
+
+
+
+
 ## [1.6.28](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.6.27...@times-components/ssr@1.6.28) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/ssr

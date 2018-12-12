@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.52](https://github.com/newsuk/times-components/compare/@times-components/icons@2.2.51...@times-components/icons@2.2.52) (2018-12-12)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
 ## [2.2.51](https://github.com/newsuk/times-components/compare/@times-components/icons@2.2.50...@times-components/icons@2.2.51) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/icons
