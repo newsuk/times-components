@@ -1,5 +1,18 @@
 /* eslint-disable react/prop-types */
+/* eslint-env browser */
+import React from "react";
 import renderArticleConfig from "./showcase-helper";
+
+const link = typeof document === "object" &&
+  window !== window.top && (
+    <a
+      href={`/iframe.html${window.top.location.search}`}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Open in new window
+    </a>
+  );
 
 export default {
   children: [
@@ -8,11 +21,12 @@ export default {
         renderArticleConfig({
           boolean,
           decorateAction,
-          hasScaling: true,
+          hasScaling: false,
+          link,
           select
         }),
       name: "Article with template choice",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],
