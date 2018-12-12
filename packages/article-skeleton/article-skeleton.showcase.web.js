@@ -5,7 +5,7 @@ import { Text, View } from "react-native";
 import invert from "lodash.invert";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import Context from "@times-components/context";
-import { colours, scales } from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import ArticleSkeleton from "./src/article-skeleton";
 import fullArticleFixture from "./fixtures/full-article";
@@ -38,7 +38,6 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
   select("Section", invert(colours.section), colours.section.default);
 
@@ -46,7 +45,6 @@ const renderComponent = (
   config,
   decorateAction,
   header,
-  scale,
   sectionColour
 ) => {
   const data = fullArticleFixture(config);
@@ -54,7 +52,7 @@ const renderComponent = (
 
   return (
     <Context.Provider
-      value={{ makeArticleUrl, theme: { scale, sectionColour } }}
+      value={{ makeArticleUrl, theme: { sectionColour } }}
     >
       <ArticleSkeleton
         adConfig={articleAdConfig}
@@ -87,7 +85,6 @@ export default {
   children: [
     {
       component: ({ boolean, select }, { decorateAction }) => {
-        const scale = selectScales(select);
         const sectionColour = selectSection(select);
         const commentsEnabled = boolean("Comments Enabled?", true);
         const relatedArticleSlice = boolean("Related Articles?", true);
@@ -104,12 +101,11 @@ export default {
           config,
           decorateAction,
           header,
-          scale,
           sectionColour
         );
       },
       name: "Default",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],
