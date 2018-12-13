@@ -1,8 +1,8 @@
 const templateWithDropCaps = [
+  "indepth",
   "maincomment",
   "magazinestandard",
-  "magazinecomment",
-  "indepth"
+  "magazinecomment"
 ];
 
 const insertDropcap = (firstTextChild, children) => {

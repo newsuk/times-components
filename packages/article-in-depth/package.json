@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-in-depth",
   "version": "0.0.1",
-  "description": "In Depth Template",
+  "description": "In Depth Article Template",
   "main": "dist/article-in-depth",
   "dev": "src/article-in-depth",
   "scripts": {

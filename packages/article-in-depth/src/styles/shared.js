@@ -48,10 +48,8 @@ const sharedStyles = {
     borderColor: colours.functional.keyline,
     borderTopWidth: 1,
     marginBottom: spacing(5),
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
-    paddingBottom: spacing(2),
-    paddingTop: spacing(2)
+    marginHorizontal: spacing(2),
+    paddingVertical: spacing(2)
   },
   standFirst: {
     ...fontFactory({
