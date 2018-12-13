@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 
-const articleFlagTypesPropTypes = {
+const articleFlagPropTypes = {
   color: PropTypes.string
 };
 
-const articleFlagTypesDefaultProps = {
+const articleFlagDefaultProps = {
   color: colours.functional.white
 };
 
-export { articleFlagTypesPropTypes, articleFlagTypesDefaultProps };
+export { articleFlagPropTypes, articleFlagDefaultProps };
