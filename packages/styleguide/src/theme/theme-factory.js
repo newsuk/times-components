@@ -34,36 +34,29 @@ const magazineFontPicker = (
   section = "default",
   template = "mainstandard"
 ) => {
+  const magazineSections = {
+    culture: "cultureMagazine",
+    Culture: "cultureMagazine",
+    style: "styleMagazine",
+    Style: "styleMagazine",
+    "The Sunday Times Magazine": "stMagazine",
+    thesundaytimesmagazine: "stMagazine"
+  };
+
   const config = {
-    indepth: {
-      culture: fonts.cultureMagazine,
-      style: fonts.styleMagazine,
-      thesundaytimesmagazine: fonts.stMagazine
-    },
-    magazinecomment: {
-      culture: fonts.cultureMagazine,
-      style: fonts.styleMagazine,
-      thesundaytimesmagazine: fonts.stMagazine
-    },
-    magazinestandard: {
-      culture: fonts.cultureMagazine,
-      style: fonts.styleMagazine,
-      thesundaytimesmagazine: fonts.stMagazine
-    },
+    indepth: magazineSections,
+    magazinecomment: magazineSections,
+    magazinestandard: magazineSections,
     maincomment: {},
-    mainstandard: {
-      culture: fonts.cultureMagazine,
-      style: fonts.styleMagazine,
-      thesundaytimesmagazine: fonts.stMagazine
-    }
+    mainstandard: magazineSections
   };
 
   return config[template][section] || defaultFont;
 };
 
 export default (section, template) => ({
-  dropCapFont: magazineFontPicker(fonts.dropCap, section, template),
-  headlineFont: magazineFontPicker(fonts.headline, section, template),
-  pullQuoteFont: magazineFontPicker(fonts.headlineRegular, section, template),
+  dropCapFont: magazineFontPicker("dropCap", section, template),
+  headlineFont: magazineFontPicker("headline", section, template),
+  pullQuoteFont: magazineFontPicker("headlineRegular", section, template),
   sectionColour: sectionColourPicker(section, template)
 });

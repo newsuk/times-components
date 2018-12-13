@@ -93,10 +93,11 @@ const ArticleRow = ({
       return {
         element: (
           <Context.Consumer key={key}>
-            {({ theme: { sectionColour } }) => (
+            {({ theme: { dropCapFont, sectionColour } }) => (
               <ArticleParagraph
                 ast={node}
                 dropCapColour={sectionColour || colours.section.default}
+                dropCapFont={dropCapFont}
                 uid={index}
               >
                 {children}

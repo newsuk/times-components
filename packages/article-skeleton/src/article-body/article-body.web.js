@@ -50,8 +50,11 @@ const renderers = ({ observed, registerNode }) => ({
     return {
       element: (
         <Context.Consumer key={key}>
-          {({ theme: { sectionColour } }) => (
-            <DropCapView colour={sectionColour || colours.section.default}>
+          {({ theme: { dropCapFont, sectionColour } }) => (
+            <DropCapView
+              colour={sectionColour || colours.section.default}
+              font={dropCapFont}
+            >
               {value}
             </DropCapView>
           )}
