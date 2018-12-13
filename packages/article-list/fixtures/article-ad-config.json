@@ -50,6 +50,6 @@
       }
     }
   },
-  "bidderSlots": ["header", "ad-article-inline"],
+  "bidderSlots": ["header", "inline-ad"],
   "globalSlots": ["ad-pixel", "ad-pixelskin", "ad-pixelteads"]
 }
