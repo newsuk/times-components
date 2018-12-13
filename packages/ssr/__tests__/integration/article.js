@@ -9,7 +9,7 @@ const articleTemplateTest = template =>
       sundayTimesArticleWithThreeRelatedArticles = new MockArticle()
         .sundayTimes()
         .setRelatedArticles(relatedArticleCount)
-        .template(template)
+        .setTemplate(template)
         .get();
     });
 
