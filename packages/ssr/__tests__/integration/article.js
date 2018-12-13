@@ -1,4 +1,5 @@
 import { MockArticle } from "@times-components/fixture-generator";
+
 const relatedArticleCount = 3;
 
 const articleTemplateTest = template =>
@@ -91,7 +92,6 @@ const articleTemplateTest = template =>
       cy.get("script[data-spotim-module]").should("not.exist");
     });
   });
-
 
 articleTemplateTest("mainstandard");
 articleTemplateTest("maincomment");
