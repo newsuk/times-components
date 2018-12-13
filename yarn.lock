@@ -2126,20 +2126,6 @@
     "@times-components/styleguide" "3.9.3"
     prop-types "15.6.2"
 
-"@times-components/eslint-config-thetimes@0.8.8":
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/@times-components/eslint-config-thetimes/-/eslint-config-thetimes-0.8.8.tgz#560f6f94ef6cbd7388adcb7a55958d5dd8edd7cd"
-  integrity sha512-G9AJfQk2glYYwe/+eg+TFo0rQlYsCV9oro3OiSih3SKduM6SZi+f1k/F1UxUizo7fRnrUMm4ZDw/TBGz+cRWdw==
-  dependencies:
-    babel-eslint "10.0.1"
-    eslint-config-airbnb "17.1.0"
-    eslint-config-prettier "3.3.0"
-    eslint-plugin-flowtype "3.2.0"
-    eslint-plugin-import "2.14.0"
-    eslint-plugin-jsx-a11y "6.1.2"
-    eslint-plugin-react "7.11.1"
-    prettier "1.14.3"
-
 "@times-components/fructose@3.11.4":
   version "3.11.4"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.11.4.tgz#c653664a2aa7722550e949c10880737f2b6704b9"
@@ -2214,35 +2200,6 @@
   dependencies:
     prop-types "15.6.2"
 
-"@times-components/jest-configurator@2.1.18":
-  version "2.1.18"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-2.1.18.tgz#f60e04faa92fe59cede66399ccac8d55fa819d2d"
-  integrity sha512-0ZvjMNMbj2XxUkpkFu5n9YH4BJ21MtnETzs39FavV0kdowSN/tmsPgrP4WViDvSgahSv6pjs+IbZAoBFULV7nw==
-  dependencies:
-    "@times-components/test-utils" "2.0.3"
-    babel-core "6.26.0"
-    babel-jest "23.4.2"
-    babel-plugin-istanbul "4.1.6"
-    babel-preset-jest "23.2.0"
-    enzyme "3.6.0"
-    enzyme-adapter-react-16 "1.5.0"
-    find-node-modules "1.0.4"
-    identity-obj-proxy "3.0.0"
-    jest "23.3.0"
-    jest-plugin-context "2.6.0"
-    jest-plugins "2.9.0"
-
-"@times-components/jest-serializer@3.1.11":
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-serializer/-/jest-serializer-3.1.11.tgz#9d9758b941e615c5291b9d9f2fba75164c6de4bd"
-  integrity sha512-SYmXlb80v40zBQqTG3jxx/yy+ntYrknFCbbW9GF4wloSSNr+bwVq+9KYzcKeB6e9Fddz86oSEOH2e332bs+3SQ==
-  dependencies:
-    css "^2.2.1"
-    enzyme-to-json "3.3.4"
-    hyphenate-style-name "1.0.2"
-    lodash.isequal "4.4.0"
-    lodash.omitby "4.6.0"
-
 "@times-components/key-facts@1.3.40":
   version "1.3.40"
   resolved "https://registry.yarnpkg.com/@times-components/key-facts/-/key-facts-1.3.40.tgz#e59eed5891b70b222a94a640aa92e462a7162d37"
@@ -2296,27 +2253,6 @@
     graphql "14.0.2"
     graphql-tag "2.10.0"
 
-"@times-components/provider-test-tools@1.10.5":
-  version "1.10.5"
-  resolved "https://registry.yarnpkg.com/@times-components/provider-test-tools/-/provider-test-tools-1.10.5.tgz#21fdaf530e4ad80b96cc268ca117482053d9814d"
-  integrity sha512-4H9SuEbUo8yLeSXlf+2cgtjHuFVG0sXf+NDqi8mLQ7QVzWQFSj7O4upA0DS3rpgtE85e5ELoKNEQyVTQIn4dbw==
-  dependencies:
-    "@times-components/provider-queries" "1.8.6"
-    "@times-components/schema" "0.1.17"
-    apollo-cache-inmemory "1.3.11"
-    apollo-client "2.4.7"
-    apollo-link "1.2.4"
-    apollo-utilities "1.0.26"
-    graphql "14.0.2"
-    graphql-tag "2.10.0"
-    graphql-tools "4.0.3"
-    lodash.isequal "4.4.0"
-    prop-types "15.6.2"
-    react "16.5.2"
-    react-apollo "2.1.4"
-    react-test-renderer "16.5.2"
-    zen-observable "0.8.9"
-
 "@times-components/provider@1.8.7":
   version "1.8.7"
   resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-1.8.7.tgz#cef2f91457d5d0f256d9780b7f73367d3b56ceaa"
@@ -2358,17 +2294,6 @@
     lodash.get "4.4.2"
     prop-types "15.6.2"
 
-"@times-components/schema@0.1.17":
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/@times-components/schema/-/schema-0.1.17.tgz#463e7670b2400d0f62eeeeaf7d7c0912075b2126"
-  integrity sha512-oHOlsk5FL08UIWrlEfqGx4MstAbTntfb0eatyElynTxqQt5PwRZJ2uD6kvPsnxcbZAIMAY/O+Cq8CFOB4CiMJw==
-  dependencies:
-    apollo-cache-inmemory "1.3.11"
-    chalk "2.4.1"
-    graphql "14.0.2"
-    mkdirp "0.5.1"
-    node-fetch "2.2.0"
-
 "@times-components/slice@3.1.18":
   version "3.1.18"
   resolved "https://registry.yarnpkg.com/@times-components/slice/-/slice-3.1.18.tgz#719b27c3e96ce0790ab94d894034c2f39c8a336e"
@@ -2377,25 +2302,6 @@
     "@times-components/styleguide" "3.9.3"
     prop-types "15.6.2"
     styled-components "3.4.0"
-
-"@times-components/storybook@3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-3.2.2.tgz#3b5172130579c41c5354a45789bc6e1bf144e45c"
-  integrity sha512-xL8L+juDAn27hALH7jpbXp9Vd7uVdxOi8L2U86oqowJj8p2bw+78UlzoNBamEElHqYec8z6kuddqgzj644LvZw==
-  dependencies:
-    "@storybook/addon-actions" "3.4.10"
-    "@storybook/addon-knobs" "3.4.10"
-    "@storybook/react-native" "3.4.10"
-    "@times-components/schema" "0.1.17"
-    apollo-cache-inmemory "1.3.11"
-    apollo-client "2.4.7"
-    apollo-link-http "1.5.7"
-    babel-core "6.26.0"
-    babel-runtime "6.26.0"
-    prop-types "15.6.2"
-    react "16.5.2"
-    react-apollo "2.1.4"
-    react-test-renderer "16.5.2"
 
 "@times-components/styleguide@3.9.3":
   version "3.9.3"
@@ -2412,24 +2318,6 @@
   dependencies:
     prop-types "15.6.2"
     svgs "3.2.1"
-
-"@times-components/tealium-utils@0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@times-components/tealium-utils/-/tealium-utils-0.7.9.tgz#3d27a16e524c839fade5b4bae78a20782fc721e1"
-  integrity sha512-qz13Jy/qBqjgYTLv9elSCGQy1DaWgJ0U0TE477MVQVM3s/SPLjFPJNzjl3sW+IOKacZckseJuUi+uMOJjuVdpA==
-  dependencies:
-    "@storybook/addon-actions" "3.4.10"
-    "@times-components/tealium" "1.6.13"
-
-"@times-components/tealium@1.6.13":
-  version "1.6.13"
-  resolved "https://registry.yarnpkg.com/@times-components/tealium/-/tealium-1.6.13.tgz#62c874ede9e3e9ade8c4a45fef49a6606db30e7b"
-  integrity sha512-QMXtjaVYmfhJLbVidjrKRofiMzJl1D40l2Lhuho26IO1DrcdxdNC2tW915BXWMto9KaLBXFJIEqnHz7+vY32ug==
-
-"@times-components/test-utils@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@times-components/test-utils/-/test-utils-2.0.3.tgz#5aa805ebc554df4281719c859d3cb065f6444179"
-  integrity sha512-kat8TyIQhKqsG79wu34Q9xqwyB/lV0M3ju6imAS3iHVYT103CY8a7OFOgeSlXnvBOCvvnoJQBndC4K3/5QhX4Q==
 
 "@times-components/tracking@2.2.10":
   version "2.2.10"
@@ -2481,13 +2369,6 @@
     "@times-components/styleguide" "3.9.3"
     "@times-components/svgs" "2.1.22"
     prop-types "15.6.2"
-
-"@times-components/webpack-configurator@2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@times-components/webpack-configurator/-/webpack-configurator-2.0.14.tgz#3181e4453b82a1a14660b56271943711a506d85c"
-  integrity sha512-gfGxnA38UHpH2v1M5Emcx29+2941GMEujoNLvPKvxOsdGRGjtIloES5Fl9nb/l9ebQ/VnCRbdVeeBLPBxoxWnw==
-  dependencies:
-    fs-extra "7.0.0"
 
 "@types/accepts@^1.3.5":
   version "1.3.5"
