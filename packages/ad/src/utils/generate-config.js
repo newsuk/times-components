@@ -14,6 +14,24 @@ const getMaxSizes = adSizes => {
   );
 };
 
+const getPosition = slotName => {
+  switch (slotName) {
+    case "header":
+    case "ad-header":
+      return 1;
+    case "pixel":
+    case "ad-pixel":
+    case "pixelskin":
+    case "ad-pixelskin":
+    case "pixelteads":
+    case "ad-pixelteads":
+    case "article-sponsored-ad":
+      return 2;
+    default:
+      return 0;
+  }
+};
+
 const getSizeMaps = slotName => {
   switch (slotName) {
     case "header":
@@ -56,4 +74,4 @@ const getSlotConfig = (slotName, width) => {
   };
 };
 
-export { getAdSizes, getSizeMaps, getSlotConfig, getMaxSizes };
+export { getAdSizes, getSizeMaps, getSlotConfig, getMaxSizes, getPosition };
