@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-/* eslint-env browser */
-import React, { Fragment } from "react";
+import React from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import Context, { defaults } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
@@ -12,10 +11,6 @@ import {
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
-import {
-  ArticleConfigurator,
-  makeArticleConfiguration
-} from "./showcase-helper";
 import ArticleMagazineStandard from "./src/article-magazine-standard";
 
 const makeArticleUrl = ({ slug, shortIdentifier }) =>
@@ -126,59 +121,6 @@ const selectSection = select =>
 
 export default {
   children: [
-    {
-      component: ({ boolean, select }, { decorateAction }) => {
-        const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
-        const scale = selectScales(select);
-        const section = selectSection(select);
-        const withFlags = boolean("Flags", true);
-        const withLabel = boolean("Label", true);
-        const withLeadAsset = boolean("Lead Asset", true);
-        const withLinkedByline = boolean("Linked Byline", true);
-        const withStandfirst = boolean("Standfirst", true);
-
-        const link = typeof document === "object" &&
-          window !== window.top && (
-            <a
-              href={`/iframe.html${window.top.location.search}`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Open in new window
-            </a>
-          );
-
-        return (
-          <Fragment>
-            {link}
-            {
-              <ArticleConfigurator
-                configuration={makeArticleConfiguration({
-                  withFlags,
-                  withLabel,
-                  withLeadAsset,
-                  withLinkedByline,
-                  withStandfirst,
-                  withVideo: false
-                })}
-                id={id}
-              >
-                {renderArticle({
-                  adConfig: articleAdConfig,
-                  analyticsStream: storybookReporter,
-                  decorateAction,
-                  id,
-                  scale,
-                  section
-                })}
-              </ArticleConfigurator>
-            }
-          </Fragment>
-        );
-      },
-      name: "Magazine Standard",
-      type: "story"
-    },
     {
       component: ({ select }, { decorateAction }) => {
         const id = "198c4b2f-ecec-4f34-be53-c89f83bc1b44";
