@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.10.0...@times-components/styleguide@3.11.0) (2018-12-13)
+
+
+### Features
+
+* Add new fonts to styleguide ([#1574](https://github.com/newsuk/times-components/issues/1574)) ([f08a859](https://github.com/newsuk/times-components/commit/f08a859))
+
+
+
+
+
 # [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.9.4...@times-components/styleguide@3.10.0) (2018-12-12)
 
 
