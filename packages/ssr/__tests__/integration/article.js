@@ -2,7 +2,7 @@ import { MockArticle } from "@times-components/fixture-generator";
 const relatedArticleCount = 3;
 
 const articleTemplateTest = template =>
-  describe("Article", () => {
+  describe(`Article - template=${template}`, () => {
     let sundayTimesArticleWithThreeRelatedArticles;
 
     beforeEach(() => {
