@@ -1,5 +1,4 @@
 import sectionColours, { secondarySectionColours } from "../colours/section";
-import fonts from "../fonts/fonts";
 
 const sectionColourPicker = (
   section = "default",
