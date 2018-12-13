@@ -98,18 +98,18 @@ const fontFixture = select => {
           Style Magazine (Century Gothic Bold)
         </Text>
         <Text>
-          Used for theme specific headlines, drop caps and pull-quotes in style
-          magazines
+          Used for theme specific headlines, drop caps and pull-quotes in the
+          Style magazine
         </Text>
-        {fontDisplayer(fonts.stylemagazine, phrase, styleguide.fontSizes)}
+        {fontDisplayer(fonts.styleMagazine, phrase, styleguide.fontSizes)}
       </View>
       <View style={styles.showoffFontsContainer}>
         <Text style={styles.headline}>Culture Magazine (Flama Bold)</Text>
         <Text>
-          Used for theme specific headlines, drop caps and pull-quotes in
-          culture magazines
+          Used for theme specific headlines, drop caps and pull-quotes in the
+          Culture magazine
         </Text>
-        {fontDisplayer(fonts.culturemagazine, phrase, styleguide.fontSizes)}
+        {fontDisplayer(fonts.cultureMagazine, phrase, styleguide.fontSizes)}
       </View>
       <View style={styles.showoffFontsContainer}>
         <Text style={styles.headline}>
@@ -117,9 +117,9 @@ const fontFixture = select => {
         </Text>
         <Text>
           Used for theme specific headlines, drop caps and pull-quotes in the
-          Sunday Times magazines
+          Sunday Times Magazine
         </Text>
-        {fontDisplayer(fonts.stmagazine, phrase, styleguide.fontSizes)}
+        {fontDisplayer(fonts.stMagazine, phrase, styleguide.fontSizes)}
       </View>
     </ScrollView>
   );

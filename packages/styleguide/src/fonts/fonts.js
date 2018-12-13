@@ -2,12 +2,12 @@ const fonts = {
   body: "TimesDigitalW04",
   bodyRegular: "TimesDigitalW04-Regular",
   bodyRegularSmallCaps: "TimesDigitalW04-RegularSC",
-  culturemagazine: "Flama-Bold",
+  cultureMagazine: "Flama-Bold",
   dropCap: "TimesModern-Regular",
   headline: "TimesModern-Bold",
   headlineRegular: "TimesModern-Regular",
-  stmagazine: "Tiempos-Headline-Bold",
-  stylemagazine: "CenturyGothic-Bold",
+  stMagazine: "Tiempos-Headline-Bold",
+  styleMagazine: "CenturyGothic-Bold",
   supporting: "GillSansMTStd-Medium"
 };
 
