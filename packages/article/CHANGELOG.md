@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.20](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.19...@times-components/article@6.5.20) (2018-12-13)
+
+
+### Bug Fixes
+
+* remove web scaling in article storybook ([#1569](https://github.com/newsuk/times-components/issues/1569)) ([650df9f](https://github.com/newsuk/times-components/commit/650df9f))
+
+
+
+
+
 ## [6.5.19](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.18...@times-components/article@6.5.19) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/article
