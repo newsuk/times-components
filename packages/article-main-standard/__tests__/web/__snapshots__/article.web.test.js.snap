@@ -44,6 +44,7 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
       />
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
       />
     </div>
   </div>
@@ -94,6 +95,7 @@ exports[`3. an article with ads 1`] = `
       />
       <ArticleComments
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
       />
     </div>
   </div>

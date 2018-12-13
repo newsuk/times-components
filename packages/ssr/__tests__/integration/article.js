@@ -49,7 +49,6 @@ describe("Article", () => {
       .wait(2000);
 
     cy.get("#header")
-      .should("exist")
       .should("be.visible")
       .should("not.be.empty");
 
@@ -58,7 +57,7 @@ describe("Article", () => {
       .should("not.be.empty");
   });
 
-  it("has SpotIM comment tag", () => {
+  it("has SpotIM comment tag when article comments are enabled", () => {
     const articleWithCommentsEnabled = {
       ...sundayTimesArticleWithThreeRelatedArticles,
       commentsEnabled: true
@@ -76,5 +75,18 @@ describe("Article", () => {
         "data-post-url",
         `https://www.thetimes.co.uk/article/${articleWithCommentsEnabled.id}`
       );
+  });
+
+  it("does not have SpotIM comment tag when article comments are disabled", () => {
+    const articleWithCommentsDisabled = {
+      ...sundayTimesArticleWithThreeRelatedArticles,
+      commentsEnabled: false
+    };
+
+    cy.task("startMockServerWith", {
+      Article: articleWithCommentsDisabled
+    }).visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
+
+    cy.get("script[data-spotim-module]").should("not.exist");
   });
 });

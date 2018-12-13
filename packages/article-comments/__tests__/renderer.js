@@ -24,8 +24,10 @@ export default ({ count, enabled, error, onReady }) => {
     component: (
       <ArticleComments
         articleId="dummy-article-id"
+        isEnabled={enabled}
         onCommentGuidelinesPress={() => {}}
         onCommentsPress={() => {}}
+        spotAccountId=""
         url="dummy-article-url"
       />
     ),

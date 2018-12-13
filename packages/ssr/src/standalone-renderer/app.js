@@ -29,7 +29,6 @@ const makeHtml = (
           <body style="margin:0">
             <script>window.nuk = {
               graphqlapi: {url: "${process.env.GRAPHQL_ENDPOINT}"},
-              ssr: {spotAccountId: "${process.env.SPOT_ID}"},
               tracking: {enabled: false}
             };</script>
             ${initialProps}
