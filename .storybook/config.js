@@ -15,6 +15,7 @@ setDefaults({
 })
 
 setOptions({
+  addonPanelInRight: true,
   name: 'Times Components',
   hierarchySeparator: /\//
 });
