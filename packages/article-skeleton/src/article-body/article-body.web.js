@@ -143,12 +143,13 @@ const renderers = ({ observed, registerNode }) => ({
     return {
       element: (
         <Context.Consumer key={key}>
-          {({ theme: { sectionColour = colours.section.default } }) => (
+          {({ theme: { pullQuoteFont, sectionColour = colours.section.default } }) => (
             <PullQuoteContainer>
               <PullQuoteResp>
                 <PullQuote
                   caption={name}
                   captionColour={sectionColour}
+                  font={pullQuoteFont}
                   quoteColour={sectionColour}
                   text={text}
                   twitter={twitter}
