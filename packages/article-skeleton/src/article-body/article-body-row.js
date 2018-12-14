@@ -93,10 +93,12 @@ const ArticleRow = ({
       return {
         element: (
           <Context.Consumer key={key}>
-            {({ theme: { dropCapFont, sectionColour } }) => (
+            {({
+              theme: { dropCapFont, sectionColour = colours.section.default }
+            }) => (
               <ArticleParagraph
                 ast={node}
-                dropCapColour={sectionColour || colours.section.default}
+                dropCapColour={sectionColour}
                 dropCapFont={dropCapFont}
                 uid={index}
               >
@@ -117,13 +119,13 @@ const ArticleRow = ({
       return {
         element: (
           <Context.Consumer key={key}>
-            {({ theme: { sectionColour } }) => (
+            {({ theme: { sectionColour = colours.section.default } }) => (
               <View>
                 <PullQuote
                   caption={name}
-                  captionColour={sectionColour || colours.section.default}
+                  captionColour={sectionColour}
                   onTwitterLinkPress={onTwitterLinkPress}
-                  quoteColour={sectionColour || colours.section.default}
+                  quoteColour={sectionColour}
                   text={text}
                   twitter={twitter}
                 >

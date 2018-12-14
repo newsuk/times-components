@@ -50,11 +50,10 @@ const renderers = ({ observed, registerNode }) => ({
     return {
       element: (
         <Context.Consumer key={key}>
-          {({ theme: { dropCapFont, sectionColour } }) => (
-            <DropCapView
-              colour={sectionColour || colours.section.default}
-              font={dropCapFont}
-            >
+          {({
+            theme: { dropCapFont, sectionColour = colours.section.default }
+          }) => (
+            <DropCapView colour={sectionColour} font={dropCapFont}>
               {value}
             </DropCapView>
           )}
@@ -144,13 +143,13 @@ const renderers = ({ observed, registerNode }) => ({
     return {
       element: (
         <Context.Consumer key={key}>
-          {({ theme: { sectionColour } }) => (
+          {({ theme: { sectionColour = colours.section.default } }) => (
             <PullQuoteContainer>
               <PullQuoteResp>
                 <PullQuote
                   caption={name}
-                  captionColour={sectionColour || colours.section.default}
-                  quoteColour={sectionColour || colours.section.default}
+                  captionColour={sectionColour}
+                  quoteColour={sectionColour}
                   text={text}
                   twitter={twitter}
                 >
