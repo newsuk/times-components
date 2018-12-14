@@ -9,6 +9,7 @@ export const propTypes = {
   caption: PropTypes.string,
   captionColour: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+  font: PropTypes.string.isRequired,
   onTwitterLinkPress: twitterPropTypes.onTwitterLinkPress,
   quoteColour: PropTypes.string,
   text: PropTypes.string,
