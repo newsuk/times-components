@@ -29,7 +29,7 @@ const margins = (font, scale) => {
   const config = {
     cultureMagazine: {
       large: { bottom: -26, top: -14 },
-      medium: { bottom: -30, top: -12 },
+      medium: { bottom: -30, top: -17 },
       xlarge: { bottom: -22, top: -16 }
     },
     dropCap: {
@@ -39,12 +39,12 @@ const margins = (font, scale) => {
     },
     stMagazine: {
       large: { bottom: -26, top: -14 },
-      medium: { bottom: -30, top: -12 },
+      medium: { bottom: -30, top: -17 },
       xlarge: { bottom: -22, top: -16 }
     },
     styleMagazine: {
       large: { bottom: -26, top: -14 },
-      medium: { bottom: -30, top: -12 },
+      medium: { bottom: -30, top: -17 },
       xlarge: { bottom: -22, top: -16 }
     }
   };
