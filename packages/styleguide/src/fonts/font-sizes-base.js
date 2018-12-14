@@ -11,7 +11,6 @@ const fontSizes = {
   commentsGuidelines: 13,
   commentsHeadline: 27,
   credits: 9,
-  dropCap: 96,
   headline: 30,
   imageOverlayTextSmall: 11,
   infoSubText: 15,
