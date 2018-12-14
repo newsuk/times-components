@@ -10,7 +10,7 @@ exports[`full article with style 1`] = `
   color: #696969;
   font-family: "GillSansMTStd-Medium";
   font-size: 13px;
-  padding-bottom: -10px;
+  margin: 0 0 -10px 0;
   padding-left: 7px;
   padding-top: 30px;
 }
