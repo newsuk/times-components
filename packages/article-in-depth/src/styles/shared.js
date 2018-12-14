@@ -13,9 +13,9 @@ const sharedStyles = {
   },
   container: {
     alignItems: "center",
+    paddingBottom: spacing(9),
     paddingHorizontal: spacing(2),
-    paddingTop: spacing(7),
-    paddingBottom: spacing(9)
+    paddingTop: spacing(7)
   },
   datePublication: {
     ...fontFactory({
