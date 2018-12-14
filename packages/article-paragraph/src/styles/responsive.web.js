@@ -30,12 +30,12 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const DropCap = styled.span`
+export const dropCap = font => styled.span`
   float: left;
   -webkit-margin-before: 11px !important;
   padding: 9px 10px 0 0;
   line-height: 0.6em;
   font-size: ${fontSizes.dropCap}px;
-  font-family: "${fonts.dropCap}";
+  font-family: "${fonts[font]}";
   color: ${colours.functional.primary};
 `;
