@@ -1,4 +1,6 @@
 import React from "react";
+import Context from "@times-components/context"
+import { fonts } from "@times-components/styleguide"
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -24,27 +26,29 @@ const ArticleHeader = ({
   publicationName,
   publishedTime,
   standfirst
-}) => (
-  <HeaderContainer style={styles.container}>
-    <Label label={label} />
-    <HeadlineContainer
-      accessibilityRole="heading"
-      aria-level="1"
-      style={styles.articleHeadline}
-    >
-      {headline}
-    </HeadlineContainer>
-    <FlagsContainer>
-      <Flags flags={flags} />
-    </FlagsContainer>
-    <Standfirst standfirst={standfirst} />
-    <Meta
-      byline={byline}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-    />
-  </HeaderContainer>
-);
+}) => (<Context.Consumer>
+  {({ theme: { headlineFont } }) => (
+    <HeaderContainer style={styles.container}>
+      <Label label={label} />
+      <HeadlineContainer
+        accessibilityRole="heading"
+        aria-level="1"
+        style={[styles.articleHeadline, { fontFamily: fonts[headlineFont] }]}
+      >
+        {headline}
+      </HeadlineContainer>
+      <FlagsContainer>
+        <Flags flags={flags} />
+      </FlagsContainer>
+      <Standfirst standfirst={standfirst} />
+      <Meta
+        byline={byline}
+        publicationName={publicationName}
+        publishedTime={publishedTime}
+      />
+    </HeaderContainer>)}
+</Context.Consumer>
+  );
 
 ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;

@@ -47,7 +47,7 @@ const magazineFontPicker = (
     magazinecomment: magazineSections,
     magazinestandard: magazineSections,
     maincomment: {},
-    mainstandard: magazineSections
+    mainstandard: {}
   };
 
   return config[template][section] || defaultFont;
