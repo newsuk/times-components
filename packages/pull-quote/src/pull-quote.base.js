@@ -18,7 +18,11 @@ const PullQuotes = ({
 }) => (
   <View style={styles.container}>
     <Text
-      style={[styles.quotes, { color: quoteColour, fontFamily: fonts[font] }]}
+      style={[
+        styles.quotes,
+        { color: quoteColour },
+        font ? { fontFamily: fonts[font] } : null
+      ]}
     >
       &ldquo;
     </Text>

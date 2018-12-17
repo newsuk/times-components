@@ -26,16 +26,6 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c4 {
-  float: left;
-  -webkit-margin-before: 11px !important;
-  padding: 9px 10px 0 0;
-  line-height: 0.6em;
-  font-size: 110px;
-  font-family: "TimesModern-Regular";
-  color: #333333;
-}
-
 .c11 {
   padding-left: 10px;
 }
@@ -105,6 +95,16 @@ exports[`full article with style 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+.c4 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 9px 10px 0px 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: "TimesModern-Regular";
+  color: #333333;
 }
 
 @media (min-width:768px) {
