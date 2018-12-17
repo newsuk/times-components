@@ -15,7 +15,7 @@ exports[`1. mpu config 1`] = `
 .c1 {
   float: left;
   -webkit-margin-before: 11px !important;
-  padding: 9px 10px 0 0;
+  padding: 9px 10px 0px 0;
   line-height: 0.6em;
   font-size: 110px;
   font-family: "TimesModern-Regular";
