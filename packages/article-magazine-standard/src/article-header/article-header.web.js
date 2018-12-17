@@ -34,7 +34,10 @@ const ArticleHeader = ({
         <HeadlineContainer
           accessibilityRole="heading"
           aria-level="1"
-          style={[styles.articleHeadline, { fontFamily: fonts[headlineFont] }]}
+          style={[
+            styles.articleHeadline,
+            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+          ]}
         >
           {headline}
         </HeadlineContainer>

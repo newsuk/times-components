@@ -32,7 +32,10 @@ const ArticleHeader = ({
         <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
         <Label label={label} />
         <Text
-          style={[styles.articleHeadline, { fontFamily: fonts[headlineFont] }]}
+          style={[
+            styles.articleHeadline,
+            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+          ]}
         >
           {headline}
         </Text>
