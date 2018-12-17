@@ -47,7 +47,9 @@ export const Paragraph = styled.p`
 export const dropCap = (font = "dropCap") => styled.span`
   float: left;
   -webkit-margin-before: 11px !important;
-  padding: ${dropCapTopPaddings[font].top}px 10px ${dropCapTopPaddings[font].bottom}px 0;
+  padding: ${dropCapTopPaddings[font].top}px 10px ${
+  dropCapTopPaddings[font].bottom
+}px 0;
   line-height: 0.6em;
   font-size: ${dropCapFontSizes[font]}px;
   font-family: "${fonts[font]}";

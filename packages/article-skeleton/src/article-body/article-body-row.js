@@ -119,7 +119,9 @@ const ArticleRow = ({
       return {
         element: (
           <Context.Consumer key={key}>
-            {({ theme: { pullQuoteFont, sectionColour = colours.section.default } }) => (
+            {({
+              theme: { pullQuoteFont, sectionColour = colours.section.default }
+            }) => (
               <View>
                 <PullQuote
                   caption={name}
