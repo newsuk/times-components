@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
+.c21 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c22 {
+  color: #696969;
+  font-family: "GillSansMTStd-Medium";
+  font-size: 13px;
+  margin: 0 0 -10px 0;
+  padding-left: 7px;
+  padding-top: 30px;
+}
+
 .c14 {
   color: #333333;
   display: block;
@@ -84,7 +98,7 @@ exports[`full article with style 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .c2 {
@@ -115,6 +129,18 @@ exports[`full article with style 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
 }
 
 @media (min-width:768px) {
@@ -256,8 +282,8 @@ exports[`full article with style 1`] = `
   .c2 {
     width: 80.8%;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-bottom: 30px;
   }
 }
@@ -413,9 +439,9 @@ exports[`full article with style 1`] = `
   -webkit-flex-basis: auto;
   flex-basis: auto;
   margin-top: 0px;
-  margin-bottom: 25px;
-  padding-bottom: 0px;
-  padding-top: 35px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  padding-top: 60px;
 }
 
 .S8 {
@@ -449,7 +475,7 @@ exports[`full article with style 1`] = `
   font-weight: inherit;
   line-height: 15px;
   margin-bottom: 0px;
-  margin-top: 15px;
+  margin-top: 5px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -464,7 +490,7 @@ exports[`full article with style 1`] = `
   flex-basis: auto;
   margin-top: 0px;
   margin-bottom: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-top: 10px;
 }
 
@@ -752,10 +778,22 @@ exports[`full article with style 1`] = `
       <aside>
         <RelatedArticles />
       </aside>
+      <div
+        className="c21"
+      >
+        <p
+          className="c22"
+        >
+          Comments are subject to our community guidelines, which can be viewed
+           
+          <a>
+            here
+          </a>
+          .
+        </p>
+        <div />
+      </div>
     </div>
-    <Ad />
-    <Ad />
-    <Ad />
   </div>
 </article>
 `;

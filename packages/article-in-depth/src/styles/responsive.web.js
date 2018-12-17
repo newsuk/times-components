@@ -11,7 +11,7 @@ import {
 export const DatePublicationContainer = styled(Text)`
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: ${spacing(3)};
+  margin-top: ${spacing(1)};
 
   @media (min-width: ${breakpoints.medium}px) {
     margin-top: 0;

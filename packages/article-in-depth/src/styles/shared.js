@@ -25,7 +25,7 @@ const sharedStyles = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.secondary,
-    marginTop: spacing(3)
+    marginTop: spacing(1)
   },
   flag: {
     flexDirection: "row",
@@ -52,7 +52,8 @@ const sharedStyles = {
     borderTopWidth: 1,
     marginBottom: spacing(5),
     marginHorizontal: spacing(2),
-    paddingVertical: spacing(2)
+    paddingBottom: 6,
+    paddingTop: spacing(2)
   },
   standFirst: {
     ...fontFactory({
