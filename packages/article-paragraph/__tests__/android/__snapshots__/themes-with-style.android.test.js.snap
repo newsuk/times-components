@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. paragraph with a drop cap in culture magazine 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "Flama-Bold",
+        "fontSize": 90,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -17,
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
+    }
+  >
+    his being Black History 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
+    }
+  >
+    Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  </Text>
+</View>
+`;
+
+exports[`2. paragraph with a drop cap in style magazine 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "CenturyGothic-Bold",
+        "fontSize": 90,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -17,
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
+    }
+  >
+    his being Black History 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
+    }
+  >
+    Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  </Text>
+</View>
+`;
+
+exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "Tiempos-Headline-Bold",
+        "fontSize": 90,
+        "marginBottom": -30,
+        "marginRight": 5,
+        "marginTop": -17,
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "flex": 1,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 0,
+      }
+    }
+  >
+    his being Black History 
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "lineHeight": 26,
+        "marginBottom": 20,
+        "width": 730,
+      }
+    }
+  >
+    Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  </Text>
+</View>
+`;

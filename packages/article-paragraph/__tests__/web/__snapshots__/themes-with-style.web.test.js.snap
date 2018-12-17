@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. paragraph with a drop cap in culture magazine 1`] = `
+.c0 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c1 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 0px 10px 15px 0;
+  line-height: 0.6em;
+  font-size: 100px;
+  font-family: "Flama-Bold";
+  color: #333333;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<p
+  className="c0"
+  style={
+    Array [
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "lineHeight": 26,
+        "marginBottom": "25px",
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <span
+    className="c1"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    T
+  </span>
+  his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+</p>
+`;
+
+exports[`2. paragraph with a drop cap in style magazine 1`] = `
+.c0 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c1 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 0px 10px 10px 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: "CenturyGothic-Bold";
+  color: #333333;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<p
+  className="c0"
+  style={
+    Array [
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "lineHeight": 26,
+        "marginBottom": "25px",
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <span
+    className="c1"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    T
+  </span>
+  his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+</p>
+`;
+
+exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
+.c0 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c1 {
+  float: left;
+  -webkit-margin-before: 11px !important;
+  padding: 0px 10px 10px 0;
+  line-height: 0.6em;
+  font-size: 110px;
+  font-family: "Tiempos-Headline-Bold";
+  color: #333333;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<p
+  className="c0"
+  style={
+    Array [
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 17,
+        "lineHeight": 26,
+        "marginBottom": "25px",
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <span
+    className="c1"
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    T
+  </span>
+  his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+</p>
+`;
