@@ -167,53 +167,15 @@ exports[`1. a full article 1`] = `
       </time>
     </a>
   </aside>
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
+  <p>
+    Comments are subject to our community guidelines, which can be viewed
+     
+    <a
+      href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
     >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
+      here
+    </a>
+    .
+  </p>
 </article>
 `;
