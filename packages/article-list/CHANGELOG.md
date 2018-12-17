@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.16...@times-components/article-list@6.1.17) (2018-12-17)
+
+
+### Bug Fixes
+
+* correct storybook adslot config ([#1579](https://github.com/newsuk/times-components/issues/1579)) ([53dc125](https://github.com/newsuk/times-components/commit/53dc125))
+
+
+
+
+
 ## [6.1.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.1.15...@times-components/article-list@6.1.16) (2018-12-13)
 
 **Note:** Version bump only for package @times-components/article-list
