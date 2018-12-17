@@ -36,7 +36,7 @@ Object {
     "EXCLUSIVE",
   ],
   "hasVideo": true,
-  "headline": "A test headline",
+  "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
   "id": "113e9875-b7bf-4dd7-ac99-dee231bf6e74",
   "keywords": Array [
     "Supplement",
@@ -49,7 +49,7 @@ Object {
   "leadAsset": Object {
     "__typename": "Image",
     "caption": "Chris Reynolds Gordon at one of his party venues in London",
-    "credits": null,
+    "credits": "Gareth Philips",
     "crop11": Object {
       "__typename": "Crop",
       "ratio": "16:9",
@@ -192,7 +192,7 @@ Object {
   "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
   "shortIdentifier": "37b27qd2s",
   "slug": "france-defies-may-over-russia",
-  "standfirst": "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",
+  "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
   "template": "mainstandard",
   "topics": Array [
     Object {
