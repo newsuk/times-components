@@ -6,7 +6,7 @@ const articleFlagPropTypes = {
 };
 
 const articleFlagDefaultProps = {
-  color: colours.functional.white
+  color: colours.functional.primary
 };
 
 export { articleFlagPropTypes, articleFlagDefaultProps };

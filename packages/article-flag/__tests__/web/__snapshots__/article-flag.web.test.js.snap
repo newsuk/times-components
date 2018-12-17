@@ -4,7 +4,7 @@ exports[`1. article flag 1`] = `
 <div>
   <div>
     <IconDiamond
-      fillColour="black"
+      fillColour="#333333"
       height={8}
       width={8}
     />

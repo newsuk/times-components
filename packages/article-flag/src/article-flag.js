@@ -31,30 +31,36 @@ ArticleFlag.propTypes = {
 
 ArticleFlag.defaultProps = articleFlagDefaultProps;
 
-const NewArticleFlag = ({ color = colours.functional.articleFlagNew }) => (
-  <ArticleFlag color={color} title="new" />
+const NewArticleFlag = ({ color }) => <ArticleFlag color={color} title="new" />;
+const UpdatedArticleFlag = ({ color }) => (
+  <ArticleFlag color={color} title="updated" />
 );
-const UpdatedArticleFlag = ({
-  color = colours.functional.articleFlagUpdated
-}) => <ArticleFlag color={color} title="updated" />;
-const ExclusiveArticleFlag = ({
-  color = colours.functional.articleFlagExclusive
-}) => <ArticleFlag color={color} title="exclusive" />;
-const SponsoredArticleFlag = ({ color = colours.functional.tertiary }) => (
+const ExclusiveArticleFlag = ({ color }) => (
+  <ArticleFlag color={color} title="exclusive" />
+);
+const SponsoredArticleFlag = ({ color }) => (
   <ArticleFlag color={color} title="sponsored" />
 );
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
-NewArticleFlag.defaultProps = articleFlagDefaultProps;
+NewArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagNew
+};
 
 UpdatedArticleFlag.propTypes = articleFlagPropTypes;
-UpdatedArticleFlag.defaultProps = articleFlagDefaultProps;
+UpdatedArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagUpdated
+};
 
 ExclusiveArticleFlag.propTypes = articleFlagPropTypes;
-ExclusiveArticleFlag.defaultProps = articleFlagDefaultProps;
+ExclusiveArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagExclusive
+};
 
 SponsoredArticleFlag.propTypes = articleFlagPropTypes;
-SponsoredArticleFlag.defaultProps = articleFlagDefaultProps;
+SponsoredArticleFlag.defaultProps = {
+  color: colours.functional.tertiary
+};
 
 export default ArticleFlag;
 
