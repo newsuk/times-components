@@ -7,5 +7,5 @@ export const propTypes = {
 
 export const defaultProps = {
   colour: "black",
-  font: null
+  font: "dropCap"
 };

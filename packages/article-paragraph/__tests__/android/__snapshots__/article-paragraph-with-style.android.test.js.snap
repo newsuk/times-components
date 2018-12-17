@@ -17,7 +17,6 @@ exports[`1. paragraph with a drop cap 1`] = `
         "color": "black",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 96,
-        "lineHeight": undefined,
         "marginBottom": -30,
         "marginRight": 5,
         "marginTop": -12,
