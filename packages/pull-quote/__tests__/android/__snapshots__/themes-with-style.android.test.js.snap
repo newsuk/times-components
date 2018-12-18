@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. pull quote in culture magazine 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 30,
+      "marginTop": 0,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "Flama-Bold",
+        "fontSize": 75,
+        "marginBottom": -40,
+        "marginTop": 0,
+      }
+    }
+  >
+    “
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 25,
+        "lineHeight": 32,
+      }
+    }
+  >
+    Some content
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      A caption
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      , Some extra text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. pull quote in style magazine 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 30,
+      "marginTop": 0,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "CenturyGothic-Bold",
+        "fontSize": 75,
+        "marginBottom": -40,
+        "marginTop": 0,
+      }
+    }
+  >
+    “
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 25,
+        "lineHeight": 32,
+      }
+    }
+  >
+    Some content
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      A caption
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      , Some extra text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`3. pull quote in the sunday times magazine 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 30,
+      "marginTop": 0,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "Tiempos-Headline-Bold",
+        "fontSize": 75,
+        "marginBottom": -40,
+        "marginTop": 0,
+      }
+    }
+  >
+    “
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 25,
+        "lineHeight": 32,
+      }
+    }
+  >
+    Some content
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      A caption
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      , Some extra text
+    </Text>
+  </View>
+</View>
+`;

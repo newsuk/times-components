@@ -9,6 +9,7 @@ export const propTypes = {
   caption: PropTypes.string,
   captionColour: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+  font: PropTypes.string,
   onTwitterLinkPress: twitterPropTypes.onTwitterLinkPress,
   quoteColour: PropTypes.string,
   text: PropTypes.string,
@@ -18,6 +19,7 @@ export const propTypes = {
 export const defaultProps = {
   caption: "",
   captionColour: colours.functional.secondary,
+  font: null,
   quoteColour: colours.functional.secondary,
   text: "",
   twitter: twitterDefaultTypes.twitter

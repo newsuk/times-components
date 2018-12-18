@@ -757,3 +757,2280 @@ exports[`full article with style 1`] = `
   </div>
 </article>
 `;
+
+exports[`full article with style in the culture magazine 1`] = `
+.c14 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c17 {
+  padding-left: 10px;
+}
+
+.c13 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c19 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c16 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c15 {
+  display: block;
+}
+
+.c20 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 {
+  display: none;
+}
+
+.c12 {
+  display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c11 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: none;
+}
+
+.c6 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:768px) {
+  .c14 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin-top: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    margin: 0 10px;
+    width: 1px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+<style>
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: 35px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S6 {
+  font-weight: inherit;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S7 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  padding-top: 60px;
+}
+
+.S8 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.S9 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S10 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S11 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+}
+
+.IS1 {
+  margin-bottom: 0;
+}
+
+.IS2 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS3 {
+  color: rgba(255,255,255,1.00);
+  font-family: Flama-Bold;
+}
+
+.IS4 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS5 {
+  background-color: rgba(29,29,27,1.00);
+  -webkit-order: 2;
+  order: 2;
+  width: 100%;
+  -ms-flex-order: 2;
+}
+
+.IS6 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS7 {
+  padding-bottom: 56.25%;
+}
+
+.IS8 {
+  margin: 0;
+}
+
+.IS9 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
+  position: relative;
+}
+
+.IS12 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS13 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS14 {
+  padding-bottom: 56.25%;
+}
+
+.IS15 {
+  margin: 0;
+}
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+}
+
+.IS17 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+}
+</style>
+
+<article>
+  <div
+    className="c0 S1"
+  >
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="IS5 S1"
+    >
+      <div
+        className="c2 S7"
+      >
+        <div
+          className="S3"
+        >
+          <div
+            className="IS2 S2"
+          >
+            SOME LABEL
+          </div>
+        </div>
+        <h1
+          className="c3 IS3 S4"
+        >
+          Some Headline
+        </h1>
+        <div
+          className="c4 S1"
+        >
+          <div
+            className="S5"
+          >
+            <div
+              className="S1"
+            >
+              <NewArticleFlag />
+            </div>
+          </div>
+        </div>
+        <h2
+          className="c5 IS4 S6"
+        >
+          Some Standfirst
+        </h2>
+      </div>
+    </div>
+    <div
+      className="c6 S9"
+    >
+      <figure
+        className="IS8"
+      >
+        <div
+          className="IS7 S8"
+        >
+          <div
+            className="IS6 S1"
+          >
+            <Image />
+          </div>
+        </div>
+        <div
+          className="c7 S1"
+        >
+          <figcaption>
+            <CenteredCaption />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div
+      className="c2 S11"
+    >
+      <div
+        className="c8 S1"
+      >
+        <div
+          className="c9 S1"
+        >
+          <ArticleBylineWithLinks />
+        </div>
+        <div
+          className="c10 S1"
+        />
+        <div
+          className="c9 S1"
+        >
+          <div
+            className="c11 S10"
+          >
+            <DatePublication />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c12 S1"
+    >
+      <div>
+        <div
+          className="c13 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <Link>
+        Some Link
+      </Link>
+      <p
+        className="c14 IS9"
+      >
+        Some content
+      </p>
+      <div
+        className="c15 S1"
+      >
+        <div
+          className="c16 S1"
+        >
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </div>
+      </div>
+      <div
+        className="c13 S1"
+      >
+        <figure
+          className="IS15"
+        >
+          <div
+            className="IS14 S8"
+          >
+            <div
+              className="IS13 S1"
+            >
+              <div
+                className="IS12"
+              >
+                <div
+                  className="IS11"
+                >
+                  <video
+                    className="video-js IS10"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c17 S1"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <Ad
+        className="IS16"
+      />
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c19 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div
+        className="c20 S1"
+      >
+        <nav>
+          <ArticleTopics
+            className="IS17"
+          />
+        </nav>
+      </div>
+      <aside>
+        <RelatedArticles />
+      </aside>
+      <ArticleComments />
+    </div>
+  </div>
+</article>
+`;
+
+exports[`full article with style in the style magazine 1`] = `
+.c14 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c17 {
+  padding-left: 10px;
+}
+
+.c13 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c19 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c16 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c15 {
+  display: block;
+}
+
+.c20 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 {
+  display: none;
+}
+
+.c12 {
+  display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c11 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: none;
+}
+
+.c6 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:768px) {
+  .c14 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin-top: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    margin: 0 10px;
+    width: 1px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+<style>
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: 35px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S6 {
+  font-weight: inherit;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S7 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  padding-top: 60px;
+}
+
+.S8 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.S9 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S10 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S11 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+}
+
+.IS1 {
+  margin-bottom: 0;
+}
+
+.IS2 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS3 {
+  color: rgba(255,255,255,1.00);
+  font-family: CenturyGothic-Bold;
+}
+
+.IS4 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS5 {
+  background-color: rgba(29,29,27,1.00);
+  -webkit-order: 2;
+  order: 2;
+  width: 100%;
+  -ms-flex-order: 2;
+}
+
+.IS6 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS7 {
+  padding-bottom: 56.25%;
+}
+
+.IS8 {
+  margin: 0;
+}
+
+.IS9 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
+  position: relative;
+}
+
+.IS12 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS13 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS14 {
+  padding-bottom: 56.25%;
+}
+
+.IS15 {
+  margin: 0;
+}
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+}
+
+.IS17 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+}
+</style>
+
+<article>
+  <div
+    className="c0 S1"
+  >
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="IS5 S1"
+    >
+      <div
+        className="c2 S7"
+      >
+        <div
+          className="S3"
+        >
+          <div
+            className="IS2 S2"
+          >
+            SOME LABEL
+          </div>
+        </div>
+        <h1
+          className="c3 IS3 S4"
+        >
+          Some Headline
+        </h1>
+        <div
+          className="c4 S1"
+        >
+          <div
+            className="S5"
+          >
+            <div
+              className="S1"
+            >
+              <NewArticleFlag />
+            </div>
+          </div>
+        </div>
+        <h2
+          className="c5 IS4 S6"
+        >
+          Some Standfirst
+        </h2>
+      </div>
+    </div>
+    <div
+      className="c6 S9"
+    >
+      <figure
+        className="IS8"
+      >
+        <div
+          className="IS7 S8"
+        >
+          <div
+            className="IS6 S1"
+          >
+            <Image />
+          </div>
+        </div>
+        <div
+          className="c7 S1"
+        >
+          <figcaption>
+            <CenteredCaption />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div
+      className="c2 S11"
+    >
+      <div
+        className="c8 S1"
+      >
+        <div
+          className="c9 S1"
+        >
+          <ArticleBylineWithLinks />
+        </div>
+        <div
+          className="c10 S1"
+        />
+        <div
+          className="c9 S1"
+        >
+          <div
+            className="c11 S10"
+          >
+            <DatePublication />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c12 S1"
+    >
+      <div>
+        <div
+          className="c13 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <Link>
+        Some Link
+      </Link>
+      <p
+        className="c14 IS9"
+      >
+        Some content
+      </p>
+      <div
+        className="c15 S1"
+      >
+        <div
+          className="c16 S1"
+        >
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </div>
+      </div>
+      <div
+        className="c13 S1"
+      >
+        <figure
+          className="IS15"
+        >
+          <div
+            className="IS14 S8"
+          >
+            <div
+              className="IS13 S1"
+            >
+              <div
+                className="IS12"
+              >
+                <div
+                  className="IS11"
+                >
+                  <video
+                    className="video-js IS10"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c17 S1"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <Ad
+        className="IS16"
+      />
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c19 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div
+        className="c20 S1"
+      >
+        <nav>
+          <ArticleTopics
+            className="IS17"
+          />
+        </nav>
+      </div>
+      <aside>
+        <RelatedArticles />
+      </aside>
+      <ArticleComments />
+    </div>
+  </div>
+</article>
+`;
+
+exports[`full article with style in the sunday times magazine 1`] = `
+.c14 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c17 {
+  padding-left: 10px;
+}
+
+.c13 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c19 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c16 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c15 {
+  display: block;
+}
+
+.c20 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 {
+  display: none;
+}
+
+.c12 {
+  display: block;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c11 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: none;
+}
+
+.c6 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:768px) {
+  .c14 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-color: #DBDBDB;
+    border-bottom-color: #DBDBDB;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin-top: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    margin: 0 10px;
+    width: 1px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+<style>
+.S1 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S2 {
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S4 {
+  font-weight: inherit;
+  line-height: 35px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S6 {
+  font-weight: inherit;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S7 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  padding-top: 60px;
+}
+
+.S8 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.S9 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S10 {
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S11 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+}
+
+.IS1 {
+  margin-bottom: 0;
+}
+
+.IS2 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS3 {
+  color: rgba(255,255,255,1.00);
+  font-family: Tiempos-Headline-Bold;
+}
+
+.IS4 {
+  color: rgba(255,255,255,1.00);
+}
+
+.IS5 {
+  background-color: rgba(29,29,27,1.00);
+  -webkit-order: 2;
+  order: 2;
+  width: 100%;
+  -ms-flex-order: 2;
+}
+
+.IS6 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS7 {
+  padding-bottom: 56.25%;
+}
+
+.IS8 {
+  margin: 0;
+}
+
+.IS9 {
+  font-family: TimesDigitalW04;
+  font-size: 17;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
+  position: relative;
+}
+
+.IS12 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS13 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS14 {
+  padding-bottom: 56.25%;
+}
+
+.IS15 {
+  margin: 0;
+}
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+}
+
+.IS17 {
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+}
+</style>
+
+<article>
+  <div
+    className="c0 S1"
+  >
+    <Ad
+      className="IS1"
+    />
+  </div>
+  <div
+    className="c1 S1"
+  >
+    <div
+      className="IS5 S1"
+    >
+      <div
+        className="c2 S7"
+      >
+        <div
+          className="S3"
+        >
+          <div
+            className="IS2 S2"
+          >
+            SOME LABEL
+          </div>
+        </div>
+        <h1
+          className="c3 IS3 S4"
+        >
+          Some Headline
+        </h1>
+        <div
+          className="c4 S1"
+        >
+          <div
+            className="S5"
+          >
+            <div
+              className="S1"
+            >
+              <NewArticleFlag />
+            </div>
+          </div>
+        </div>
+        <h2
+          className="c5 IS4 S6"
+        >
+          Some Standfirst
+        </h2>
+      </div>
+    </div>
+    <div
+      className="c6 S9"
+    >
+      <figure
+        className="IS8"
+      >
+        <div
+          className="IS7 S8"
+        >
+          <div
+            className="IS6 S1"
+          >
+            <Image />
+          </div>
+        </div>
+        <div
+          className="c7 S1"
+        >
+          <figcaption>
+            <CenteredCaption />
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+    <div
+      className="c2 S11"
+    >
+      <div
+        className="c8 S1"
+      >
+        <div
+          className="c9 S1"
+        >
+          <ArticleBylineWithLinks />
+        </div>
+        <div
+          className="c10 S1"
+        />
+        <div
+          className="c9 S1"
+        >
+          <div
+            className="c11 S10"
+          >
+            <DatePublication />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c12 S1"
+    >
+      <div>
+        <div
+          className="c13 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <Link>
+        Some Link
+      </Link>
+      <p
+        className="c14 IS9"
+      >
+        Some content
+      </p>
+      <div
+        className="c15 S1"
+      >
+        <div
+          className="c16 S1"
+        >
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </div>
+      </div>
+      <div
+        className="c13 S1"
+      >
+        <figure
+          className="IS15"
+        >
+          <div
+            className="IS14 S8"
+          >
+            <div
+              className="IS13 S1"
+            >
+              <div
+                className="IS12"
+              >
+                <div
+                  className="IS11"
+                >
+                  <video
+                    className="video-js IS10"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div
+              className="c17 S1"
+            >
+              <Caption />
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <Ad
+        className="IS16"
+      />
+      <div>
+        <div
+          className="c18 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div>
+        <div
+          className="c19 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
+      <div
+        className="c20 S1"
+      >
+        <nav>
+          <ArticleTopics
+            className="IS17"
+          />
+        </nav>
+      </div>
+      <aside>
+        <RelatedArticles />
+      </aside>
+      <ArticleComments />
+    </div>
+  </div>
+</article>
+`;

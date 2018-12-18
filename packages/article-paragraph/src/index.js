@@ -9,7 +9,13 @@ import {
   defaultProps as dropCapDefaultProps
 } from "./drop-cap-prop-types";
 
-const ArticleParagraphWrapper = ({ ast, children, dropCapColour, uid }) => {
+const ArticleParagraphWrapper = ({
+  ast,
+  children,
+  dropCapColour,
+  dropCapFont,
+  uid
+}) => {
   const { children: astChildren } = ast;
   if (!astChildren || astChildren.length === 0) {
     return null;
@@ -23,6 +29,7 @@ const ArticleParagraphWrapper = ({ ast, children, dropCapColour, uid }) => {
       <DropCapWrapper
         colour={dropCapColour}
         dropCap={value}
+        font={dropCapFont}
         key={`paragraph-${uid}`}
         testID={`paragraph-${uid}`}
         text={text}
@@ -40,11 +47,13 @@ ArticleParagraphWrapper.propTypes = {
   ast: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   dropCapColour: dropCapPropTypes.colour,
+  dropCapFont: dropCapPropTypes.font,
   uid: PropTypes.number.isRequired
 };
 
 ArticleParagraphWrapper.defaultProps = {
-  dropCapColour: dropCapDefaultProps.dropCapColour
+  dropCapColour: dropCapDefaultProps.dropCapColour,
+  dropCapFont: dropCapDefaultProps.font
 };
 
 export default ArticleParagraphWrapper;

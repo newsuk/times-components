@@ -1,5 +1,7 @@
 import React from "react";
+import Context from "@times-components/context";
 import Image from "@times-components/image";
+import { fonts } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -28,28 +30,35 @@ const ArticleHeader = ({
   publishedTime,
   standfirst
 }) => (
-  <HeaderContainer style={styles.container}>
-    <AuthorImageContainer style={styles.authorImage}>
-      <Image aspectRatio={1} uri={authorImage} />
-    </AuthorImageContainer>
-    <Label label={label} />
-    <HeadlineContainer
-      accessibilityRole="heading"
-      aria-level="1"
-      style={styles.articleHeadline}
-    >
-      {headline}
-    </HeadlineContainer>
-    <FlagsContainer>
-      <Flags flags={flags} />
-    </FlagsContainer>
-    <Standfirst standfirst={standfirst} />
-    <Meta
-      byline={byline}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-    />
-  </HeaderContainer>
+  <Context.Consumer>
+    {({ theme: { headlineFont } }) => (
+      <HeaderContainer style={styles.container}>
+        <AuthorImageContainer style={styles.authorImage}>
+          <Image aspectRatio={1} uri={authorImage} />
+        </AuthorImageContainer>
+        <Label label={label} />
+        <HeadlineContainer
+          accessibilityRole="heading"
+          aria-level="1"
+          style={[
+            styles.articleHeadline,
+            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+          ]}
+        >
+          {headline}
+        </HeadlineContainer>
+        <FlagsContainer>
+          <Flags flags={flags} />
+        </FlagsContainer>
+        <Standfirst standfirst={standfirst} />
+        <Meta
+          byline={byline}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+        />
+      </HeaderContainer>
+    )}
+  </Context.Consumer>
 );
 
 ArticleHeader.propTypes = articleHeaderPropTypes;

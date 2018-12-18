@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+import Context from "@times-components/context";
+import { fonts } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -22,18 +24,29 @@ const ArticleHeader = ({
   publishedTime,
   standfirst
 }) => (
-  <View style={styles.container}>
-    <Label label={label} />
-    <Text style={styles.articleHeadline}>{headline}</Text>
-    <Flags flags={flags} />
-    <Standfirst standfirst={standfirst} />
-    <Meta
-      byline={byline}
-      onAuthorPress={onAuthorPress}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-    />
-  </View>
+  <Context.Consumer>
+    {({ theme: { headlineFont } }) => (
+      <View style={styles.container}>
+        <Label label={label} />
+        <Text
+          style={[
+            styles.articleHeadline,
+            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+          ]}
+        >
+          {headline}
+        </Text>
+        <Flags flags={flags} />
+        <Standfirst standfirst={standfirst} />
+        <Meta
+          byline={byline}
+          onAuthorPress={onAuthorPress}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+        />
+      </View>
+    )}
+  </Context.Consumer>
 );
 
 ArticleHeader.propTypes = {

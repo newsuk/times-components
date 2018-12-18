@@ -29,8 +29,8 @@ class DropCapParagraph extends Component {
   }
 
   measureTextBoxes() {
-    const { dropCap, scale, text } = this.props;
-    const stylesScaled = styleFactory(scale);
+    const { dropCap, font, scale, text } = this.props;
+    const stylesThemedAndScaled = styleFactory(font, scale);
 
     const { screenWidth } = this.state;
 
@@ -42,7 +42,7 @@ class DropCapParagraph extends Component {
       },
       articleTextElement: { fontFamily, fontSize },
       articleMainContentRow: { paddingLeft, paddingRight }
-    } = stylesScaled;
+    } = stylesThemedAndScaled;
 
     const margins = paddingLeft + paddingRight + dropCapRight;
 
@@ -69,23 +69,26 @@ class DropCapParagraph extends Component {
   }
 
   renderParagraph() {
-    const { colour, dropCap, scale, text } = this.props;
+    const { colour, dropCap, font, scale, text } = this.props;
     const { screenWidth, slicePoint } = this.state;
 
-    const stylesScaled = styleFactory(scale);
-    const { paddingLeft, paddingRight } = stylesScaled.articleMainContentRow;
+    const stylesThemedAndScaled = styleFactory(font, scale);
+    const {
+      paddingLeft,
+      paddingRight
+    } = stylesThemedAndScaled.articleMainContentRow;
 
     return (
       <View
         style={[
-          stylesScaled.articleMainContentRow,
-          stylesScaled.dropCapContainer
+          stylesThemedAndScaled.articleMainContentRow,
+          stylesThemedAndScaled.dropCapContainer
         ]}
       >
         <Text
           selectable
           style={[
-            stylesScaled.dropCapTextElement,
+            stylesThemedAndScaled.dropCapTextElement,
             {
               color: colour
             }
@@ -96,7 +99,7 @@ class DropCapParagraph extends Component {
         <Text
           selectable
           style={[
-            stylesScaled.articleTextElement,
+            stylesThemedAndScaled.articleTextElement,
             {
               flex: 1,
               marginBottom: 0
@@ -109,7 +112,7 @@ class DropCapParagraph extends Component {
         <Text
           selectable
           style={[
-            stylesScaled.articleTextElement,
+            stylesThemedAndScaled.articleTextElement,
             {
               width: screenWidth - paddingLeft - paddingRight
             }

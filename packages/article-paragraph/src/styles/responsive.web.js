@@ -7,6 +7,20 @@ import {
   spacing
 } from "@times-components/styleguide";
 
+const dropCapFontSizes = {
+  cultureMagazine: 100,
+  dropCap: 110,
+  stMagazine: 110,
+  styleMagazine: 110
+};
+
+const dropCapTopPaddings = {
+  cultureMagazine: { bottom: 15, top: 0 },
+  dropCap: { bottom: 0, top: 9 },
+  stMagazine: { bottom: 10, top: 0 },
+  styleMagazine: { bottom: 10, top: 0 }
+};
+
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   display: block;
@@ -30,12 +44,14 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const DropCap = styled.span`
+export const dropCap = (font = "dropCap") => styled.span`
   float: left;
   -webkit-margin-before: 11px !important;
-  padding: 9px 10px 0 0;
+  padding: ${dropCapTopPaddings[font].top}px 10px ${
+  dropCapTopPaddings[font].bottom
+}px 0;
   line-height: 0.6em;
-  font-size: ${fontSizes.dropCap}px;
-  font-family: "${fonts.dropCap}";
+  font-size: ${dropCapFontSizes[font]}px;
+  font-family: "${fonts[font]}";
   color: ${colours.functional.primary};
 `;

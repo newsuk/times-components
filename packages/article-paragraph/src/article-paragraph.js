@@ -9,8 +9,8 @@ const styles = styleFactory();
 const BodyParagraph = props => (
   <View style={[styles.articleMainContentRow]}>
     <Context.Consumer>
-      {({ theme: { scale } }) => {
-        const stylesScaled = styleFactory(scale);
+      {({ theme: { dropCapFont, scale } }) => {
+        const stylesScaled = styleFactory(dropCapFont, scale);
         return (
           <Text selectable style={stylesScaled.articleTextElement}>
             {props.children}

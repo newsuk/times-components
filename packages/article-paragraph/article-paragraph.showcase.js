@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import invert from "lodash.invert";
 import Context from "@times-components/context";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
-import { colours, scales } from "@times-components/styleguide";
+import { sections } from "@times-components/storybook";
+import { scales, themeFactory } from "@times-components/styleguide";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
@@ -12,11 +12,8 @@ import ArticleParagraph from "./src";
 
 const renderParagraphWithScale = (select, ast) => {
   const scale = select("Scale", scales, scales.medium);
-  const colour = select(
-    "Section",
-    invert(colours.section),
-    colours.section.default
-  );
+  const section = sections[select("Section", sections, sections.default)];
+  const theme = themeFactory(section, "magazinestandard");
 
   return (
     <Context.Provider value={{ theme: { scale } }}>
@@ -27,7 +24,8 @@ const renderParagraphWithScale = (select, ast) => {
             element: (
               <ArticleParagraph
                 ast={node}
-                dropCapColour={colour}
+                dropCapColour={theme.sectionColour}
+                dropCapFont={theme.dropCapFont}
                 key={indx}
                 uid={indx}
               >

@@ -1,9 +1,10 @@
-import styleguide from "@times-components/styleguide";
-import margins from "./margins";
+import styleguide, { scales, fonts } from "@times-components/styleguide";
+import { fontSize, margins } from "./drop-cap-sizes";
 
-const sharedStyles = scale => {
+const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
   const { colours, fontFactory, spacing } = styleguide({ scale });
-  const dropCapMargins = margins(scale);
+  const dropCapMargins = margins(dropCapFont, scale);
+  const dropCapFontSize = fontSize(dropCapFont, scale);
 
   return {
     articleMainContentRow: {
@@ -23,11 +24,9 @@ const sharedStyles = scale => {
       flexWrap: "wrap"
     },
     dropCapTextElement: {
-      ...fontFactory({
-        font: "dropCap",
-        fontSize: "dropCap"
-      }),
       color: colours.functional.primary,
+      fontFamily: fonts[dropCapFont],
+      fontSize: dropCapFontSize,
       marginBottom: dropCapMargins.bottom,
       marginRight: spacing(1),
       marginTop: dropCapMargins.top

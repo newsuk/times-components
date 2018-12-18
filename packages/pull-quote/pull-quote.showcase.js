@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { sections } from "@times-components/storybook";
+import { themeFactory } from "@times-components/styleguide";
 import PullQuotes from "./src/pull-quote";
 
 const preventDefaultedAction = decorateAction =>
@@ -19,20 +21,25 @@ const twitter = "@henrywinter";
 export default {
   children: [
     {
-      component: ({ color, text }, { decorateAction }) => (
-        <PullQuotes
-          caption={text("Caption: ", caption)}
-          captionColour={color("Caption Colour: ", "#850029")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          quoteColour={color("Quote Colour: ", "#850029")}
-          text={text("Title: ", title)}
-          twitter={text("Twitter Link: ", twitter)}
-        >
-          {text("Content: ", content)}
-        </PullQuotes>
-      ),
+      component: ({ color, select, text }, { decorateAction }) => {
+        const section = sections[select("Section", sections, sections.default)];
+        const theme = themeFactory(section, "magazinestandard");
+        return (
+          <PullQuotes
+            caption={text("Caption: ", caption)}
+            captionColour={color("Caption Colour: ", "#850029")}
+            font={theme.pullQuoteFont}
+            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+              "onTwitterLinkPress"
+            )}
+            quoteColour={color("Quote Colour: ", "#850029")}
+            text={text("Title: ", title)}
+            twitter={text("Twitter Link: ", twitter)}
+          >
+            {text("Content: ", content)}
+          </PullQuotes>
+        );
+      },
       name: "Default",
       type: "story"
     }
