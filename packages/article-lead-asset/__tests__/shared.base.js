@@ -25,7 +25,7 @@ const imageLeadAsset = {
   }
 };
 
-const props = {
+export const props = {
   aspectRatio: "16:9",
   displayImage: {
     ratio: "16:9",

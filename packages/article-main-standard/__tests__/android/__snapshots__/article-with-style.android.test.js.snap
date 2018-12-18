@@ -8,7 +8,7 @@ exports[`full article with style 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 6,
+              "marginBottom": 5,
             }
           }
         >

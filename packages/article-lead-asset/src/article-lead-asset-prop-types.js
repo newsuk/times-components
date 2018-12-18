@@ -51,6 +51,7 @@ export const propTypes = {
   ]),
   renderCaption: PropTypes.func,
   renderModalCaption: PropTypes.func,
+  style: PropTypes.any,
   width: PropTypes.number
 };
 

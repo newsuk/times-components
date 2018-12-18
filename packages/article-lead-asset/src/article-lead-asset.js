@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { View } from "react-native";
 import { ModalImage } from "@times-components/image";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
 import {
@@ -18,7 +19,8 @@ const ArticleLeadAsset = ({
   isVideo,
   leadAsset,
   onVideoPress,
-  width
+  width,
+  style
 }) => {
   if (!leadAsset) {
     return null;
@@ -40,7 +42,7 @@ const ArticleLeadAsset = ({
   };
 
   return (
-    <Fragment>
+    <View style={style}>
       <LeadAsset
         aspectRatio={getRatio(crop.ratio)}
         caption={renderModalCaption({ caption })}
@@ -50,7 +52,7 @@ const ArticleLeadAsset = ({
         width={width}
       />
       {renderCaption({ caption })}
-    </Fragment>
+    </View>
   );
 };
 

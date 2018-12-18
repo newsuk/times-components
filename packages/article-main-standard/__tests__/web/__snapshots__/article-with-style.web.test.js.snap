@@ -624,11 +624,9 @@ exports[`full article with style 1`] = `
         </nav>
       </div>
     </div>
-    <div
-      className="c9 S1"
-    >
-      <ArticleLeadAsset />
-    </div>
+    <ArticleLeadAsset
+      className="c9"
+    />
     <div
       className="c10 S1"
     >

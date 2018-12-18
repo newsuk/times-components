@@ -11,7 +11,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import shared from "./shared.base";
+import shared, { props } from "./shared.base";
 
 import ArticleLeadAsset from "../src/article-lead-asset";
 
@@ -32,7 +32,17 @@ export default () =>
       name: "correctly renders when there is no displayImage",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleLeadAsset displayImage={null} leadAsset={{}} width={600} />
+          <ArticleLeadAsset {...props} displayImage={null} leadAsset={{}} width={600} />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "it renders correctly with a className",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ArticleLeadAsset {...props} className="test-class-name"  />
         );
 
         expect(testInstance).toMatchSnapshot();

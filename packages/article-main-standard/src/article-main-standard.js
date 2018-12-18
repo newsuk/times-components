@@ -44,15 +44,14 @@ class ArticlePage extends Component {
     return (
       <Fragment>
         <View key="leadAsset" testID="leadAsset">
-          <View style={styles.leadAsset}>
-            <ArticleLeadAsset
-              {...getLeadAsset(article)}
-              getImageCrop={getStandardTemplateCrop}
-              onVideoPress={onVideoPress}
-              renderModalCaption={({ caption }) => <Caption {...caption} />}
-              width={parentProps.width}
-            />
-          </View>
+          <ArticleLeadAsset
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            onVideoPress={onVideoPress}
+            renderModalCaption={({ caption }) => <Caption {...caption} />}
+            style={styles.leadAsset}
+            width={parentProps.width}
+          />
         </View>
         <ArticleHeader
           flags={flags}

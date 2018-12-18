@@ -429,20 +429,6 @@ exports[`full article with style 1`] = `
   -webkit-flex-basis: auto;
   flex-basis: auto;
   margin-top: 0px;
-  margin-bottom: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S10 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
 }
@@ -452,6 +438,10 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
+  margin-bottom: 20px;
+}
+
+.IS3 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 26;
@@ -460,35 +450,35 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS3 {
+.IS4 {
   height: 100%;
   width: 100%;
-}
-
-.IS4 {
-  position: relative;
 }
 
 .IS5 {
+  position: relative;
+}
+
+.IS6 {
   height: 100%;
   width: 100%;
 }
 
-.IS6 {
+.IS7 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS8 {
   padding-bottom: 56.25%;
 }
 
-.IS8 {
+.IS9 {
   margin: 0;
 }
 
-.IS9 {
+.IS10 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -499,7 +489,7 @@ exports[`full article with style 1`] = `
   margin-top: 30px;
 }
 
-.IS10 {
+.IS11 {
   border-top-color: #DBDBDB;
   border-top-width: 1;
 }
@@ -573,11 +563,9 @@ exports[`full article with style 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="c10 S9"
-    >
-      <ArticleLeadAsset />
-    </div>
+    <ArticleLeadAsset
+      className="c10 IS2"
+    />
     <div
       className="c11 S1"
     >
@@ -592,7 +580,7 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c13 IS2"
+        className="c13 IS3"
       >
         Some content
       </p>
@@ -611,22 +599,22 @@ exports[`full article with style 1`] = `
         className="c12 S1"
       >
         <figure
-          className="IS8"
+          className="IS9"
         >
           <div
-            className="IS7 S10"
+            className="IS8 S9"
           >
             <div
-              className="IS6 S1"
+              className="IS7 S1"
             >
               <div
-                className="IS5"
+                className="IS6"
               >
                 <div
-                  className="IS4"
+                  className="IS5"
                 >
                   <video
-                    className="video-js IS3"
+                    className="video-js IS4"
                   />
                 </div>
               </div>
@@ -642,7 +630,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS9"
+        className="IS10"
       />
       <div>
         <div
@@ -663,7 +651,7 @@ exports[`full article with style 1`] = `
       >
         <nav>
           <ArticleTopics
-            className="IS10"
+            className="IS11"
           />
         </nav>
       </div>

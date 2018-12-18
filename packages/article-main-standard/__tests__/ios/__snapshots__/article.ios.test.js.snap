@@ -14,9 +14,7 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
 >
   <View>
     <View>
-      <View>
-        <View />
-      </View>
+      <View />
       <View>
         <Text
           selectable={true}
@@ -64,9 +62,7 @@ exports[`3. an article with ads 1`] = `
 >
   <View>
     <View>
-      <View>
-        <View />
-      </View>
+      <View />
       <View>
         <Text
           selectable={true}

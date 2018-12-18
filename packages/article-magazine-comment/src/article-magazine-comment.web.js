@@ -6,14 +6,13 @@ import {
   getStandardTemplateCrop
 } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import { LeadAssetContainer } from "./styles/responsive.web";
+import { LeadAsset } from "./styles/responsive.web";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -49,14 +48,13 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAssetContainer style={styles.leadAssetContainer}>
-          <ArticleLeadAsset
-            {...getLeadAsset(article)}
-            getImageCrop={getStandardTemplateCrop}
-            renderCaption={({ caption }) => <CentredCaption {...caption} />}
-            width={width}
-          />
-        </LeadAssetContainer>
+        <LeadAsset
+          {...getLeadAsset(article)}
+          getImageCrop={getStandardTemplateCrop}
+          renderCaption={({ caption }) => <CentredCaption {...caption} />}
+          style={styles.leadAssetContainer}
+          width={width}
+        />
       </Fragment>
     );
   }

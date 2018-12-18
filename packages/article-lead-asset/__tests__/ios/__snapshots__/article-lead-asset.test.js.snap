@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders correctly with an image lead asset 1`] = `
-Array [
+<View>
   <ModalImage
     aspectRatio={1.7777777777777777}
     caption={
@@ -16,18 +16,18 @@ Array [
     }
     uri="https://crop169.io/"
     width={600}
-  />,
+  />
   <Text>
     Chris Reynolds Gordon at one of his party venues in London
-  </Text>,
+  </Text>
   <Text>
     The credits
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`2. renders correctly with a video lead asset 1`] = `
-Array [
+<View>
   <Video
     accountId="1234"
     height={421.875}
@@ -39,20 +39,20 @@ Array [
     }
     videoId="5678"
     width={750}
-  />,
+  />
   <Text>
     Chris Reynolds Gordon at one of his party venues in London
-  </Text>,
+  </Text>
   <Text>
     The credits
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`3. renders correctly when there is no lead asset 1`] = `null`;
 
 exports[`4. passes the caption rendered by rendermodalcaption to the modalimage 1`] = `
-Array [
+<View>
   <ModalImage
     aspectRatio={1}
     caption={
@@ -61,11 +61,11 @@ Array [
       </Text>
     }
     width={600}
-  />,
+  />
   <Text>
     Caption
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`5. renders correctly when there is no available crop 1`] = `null`;

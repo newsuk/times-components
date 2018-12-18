@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import LeadAsset from "@times-components/article-lead-asset";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getLeadAsset, getHeadline } from "@times-components/utils";
 import Caption from "@times-components/caption";
@@ -12,11 +11,13 @@ import {
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
-import {
-  HeaderContainer,
-  LeadAssetContainer,
-  MetaContainer
-} from "./styles/responsive";
+import { HeaderContainer, LeadAsset, MetaContainer } from "./styles/responsive";
+
+const renderCaption = ({ caption }) => (
+  <LeadAssetCaptionContainer>
+    <Caption {...caption} />
+  </LeadAssetCaptionContainer>
+);
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -38,7 +39,6 @@ class ArticlePage extends Component {
       standfirst,
       topics
     } = article;
-
     return (
       <Fragment>
         <HeaderContainer>
@@ -58,17 +58,11 @@ class ArticlePage extends Component {
           />
           <ArticleTopics topics={topics} />
         </MetaContainer>
-        <LeadAssetContainer>
-          <LeadAsset
-            {...getLeadAsset(article)}
-            renderCaption={({ caption }) => (
-              <LeadAssetCaptionContainer>
-                <Caption {...caption} />
-              </LeadAssetCaptionContainer>
-            )}
-            width={parentProps.width}
-          />
-        </LeadAssetContainer>
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={renderCaption}
+          width={parentProps.width}
+        />
       </Fragment>
     );
   }

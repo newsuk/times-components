@@ -1,7 +1,6 @@
 /* eslint-disable consistent-return */
 
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import {
@@ -49,16 +48,15 @@ class ArticleMagazineStandard extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <View style={styles.leadAssetContainer}>
-          <LeadAsset
-            {...getLeadAsset(article)}
-            getImageCrop={getStandardTemplateCrop}
-            onVideoPress={onVideoPress}
-            renderCaption={({ caption }) => <CentredCaption {...caption} />}
-            renderModalCaption={({ caption }) => <Caption {...caption} />}
-            width={width}
-          />
-        </View>
+        <LeadAsset
+          {...getLeadAsset(article)}
+          getImageCrop={getStandardTemplateCrop}
+          onVideoPress={onVideoPress}
+          renderCaption={({ caption }) => <CentredCaption {...caption} />}
+          renderModalCaption={({ caption }) => <Caption {...caption} />}
+          style={styles.leadAssetContainer}
+          width={width}
+        />
       </Fragment>
     );
   }
