@@ -1,4 +1,5 @@
 const templateWithDropCaps = [
+  "indepth",
   "maincomment",
   "magazinestandard",
   "magazinecomment"

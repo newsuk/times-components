@@ -32,6 +32,11 @@ export default {
       component: () => <SponsoredArticleFlag />,
       name: "Article Flag (Sponsored)",
       type: "story"
+    },
+    {
+      component: () => <NewArticleFlag color="blue" />,
+      name: "Article Flag with text colour",
+      type: "story"
     }
   ],
   name: "Primitives/Article Flag"

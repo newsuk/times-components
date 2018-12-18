@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.2.10",
+    "@times-components/article-in-depth": "0.0.1",
     "@times-components/article-magazine-comment": "0.2.6",
     "@times-components/article-magazine-standard": "0.2.6",
     "@times-components/article-main-comment": "0.4.6",

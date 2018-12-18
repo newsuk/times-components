@@ -17,9 +17,10 @@ const link = typeof document === "object" &&
 export default {
   children: [
     {
-      component: ({ boolean, select }, { decorateAction }) =>
+      component: ({ boolean, color, select }, { decorateAction }) =>
         renderArticleConfig({
           boolean,
+          color,
           decorateAction,
           hasScaling: false,
           link,
