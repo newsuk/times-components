@@ -12,11 +12,6 @@ jest.mock("@times-components/article-flag", () => ({
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
-jest.mock("@times-components/caption", () => ({
-  __esModule: true,
-  CentredCaption: "CenteredCaption",
-  default: "Caption"
-}));
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/link", () => "Link");

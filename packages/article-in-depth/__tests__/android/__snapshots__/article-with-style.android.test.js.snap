@@ -82,7 +82,6 @@ exports[`full article with style 1`] = `
         }
       >
         <ModalImage />
-        <CenteredCaption />
       </View>
       <View
         style={
@@ -199,15 +198,29 @@ exports[`full article with style 1`] = `
         }
       >
         <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
+        <View>
+          <View
+            style={
+              Object {
                 "paddingLeft": 10,
-              },
+                "paddingTop": 5,
+              }
             }
-          }
-        />
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 20,
+                }
+              }
+            >
+              This is video caption
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
     <View>
