@@ -32,7 +32,12 @@ export default () =>
       name: "correctly renders when there is no displayImage",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleLeadAsset {...props} displayImage={null} leadAsset={{}} width={600} />
+          <ArticleLeadAsset
+            {...props}
+            displayImage={null}
+            leadAsset={{}}
+            width={600}
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -42,7 +47,7 @@ export default () =>
       name: "it renders correctly with a className",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleLeadAsset {...props} className="test-class-name"  />
+          <ArticleLeadAsset {...props} className="test-class-name" />
         );
 
         expect(testInstance).toMatchSnapshot();
