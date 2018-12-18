@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.2.55...@times-components/pull-quote@3.3.0) (2018-12-18)
+
+
+### Features
+
+* font theming ([#1580](https://github.com/newsuk/times-components/issues/1580)) ([a7b210b](https://github.com/newsuk/times-components/commit/a7b210b))
+
+
+
+
+
 ## [3.2.55](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.2.54...@times-components/pull-quote@3.2.55) (2018-12-13)
 
 **Note:** Version bump only for package @times-components/pull-quote

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "3.2.31",
+  "version": "3.2.32",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
@@ -64,7 +64,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.11.0"
+    "@times-components/styleguide": "3.12.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

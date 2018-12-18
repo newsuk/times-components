@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "3.1.64",
+  "version": "3.1.65",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -66,7 +66,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.11.0",
+    "@times-components/styleguide": "3.12.0",
     "@times-components/svgs": "2.1.23",
     "@times-components/utils": "4.0.16",
     "prop-types": "15.6.2"

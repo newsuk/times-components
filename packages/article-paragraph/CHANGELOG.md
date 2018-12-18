@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.22...@times-components/article-paragraph@0.3.0) (2018-12-18)
+
+
+### Features
+
+* font theming ([#1580](https://github.com/newsuk/times-components/issues/1580)) ([a7b210b](https://github.com/newsuk/times-components/commit/a7b210b))
+
+
+
+
+
 ## [0.2.22](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.2.21...@times-components/article-paragraph@0.2.22) (2018-12-13)
 
 **Note:** Version bump only for package @times-components/article-paragraph
