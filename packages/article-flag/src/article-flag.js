@@ -31,15 +31,13 @@ ArticleFlag.propTypes = {
 
 ArticleFlag.defaultProps = articleFlagDefaultProps;
 
-const NewArticleFlag = ({ color }) => <ArticleFlag color={color} title="new" />;
-const UpdatedArticleFlag = ({ color }) => (
-  <ArticleFlag color={color} title="updated" />
+const NewArticleFlag = props => <ArticleFlag {...props} title="new" />;
+const UpdatedArticleFlag = props => <ArticleFlag {...props} title="updated" />;
+const ExclusiveArticleFlag = props => (
+  <ArticleFlag {...props} title="exclusive" />
 );
-const ExclusiveArticleFlag = ({ color }) => (
-  <ArticleFlag color={color} title="exclusive" />
-);
-const SponsoredArticleFlag = ({ color }) => (
-  <ArticleFlag color={color} title="sponsored" />
+const SponsoredArticleFlag = props => (
+  <ArticleFlag {...props} title="sponsored" />
 );
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
