@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
 import styles from "./style";
+import {
+  articleFlagPropTypes,
+  articleFlagDefaultProps
+} from "./article-flag-prop-types";
 
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
@@ -21,29 +25,40 @@ const ArticleFlag = ({ title, color }) => (
 );
 
 ArticleFlag.propTypes = {
-  color: PropTypes.string,
+  ...articleFlagPropTypes,
   title: PropTypes.string.isRequired
 };
 
-ArticleFlag.defaultProps = {
-  color: "black"
+ArticleFlag.defaultProps = articleFlagDefaultProps;
+
+const NewArticleFlag = props => <ArticleFlag {...props} title="new" />;
+const UpdatedArticleFlag = props => <ArticleFlag {...props} title="updated" />;
+const ExclusiveArticleFlag = props => (
+  <ArticleFlag {...props} title="exclusive" />
+);
+const SponsoredArticleFlag = props => (
+  <ArticleFlag {...props} title="sponsored" />
+);
+
+NewArticleFlag.propTypes = articleFlagPropTypes;
+NewArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagNew
 };
 
-const NewArticleFlag = () => (
-  <ArticleFlag color={colours.functional.articleFlagNew} title="new" />
-);
-const UpdatedArticleFlag = () => (
-  <ArticleFlag color={colours.functional.articleFlagUpdated} title="updated" />
-);
-const ExclusiveArticleFlag = () => (
-  <ArticleFlag
-    color={colours.functional.articleFlagExclusive}
-    title="exclusive"
-  />
-);
-const SponsoredArticleFlag = () => (
-  <ArticleFlag color={colours.functional.tertiary} title="sponsored" />
-);
+UpdatedArticleFlag.propTypes = articleFlagPropTypes;
+UpdatedArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagUpdated
+};
+
+ExclusiveArticleFlag.propTypes = articleFlagPropTypes;
+ExclusiveArticleFlag.defaultProps = {
+  color: colours.functional.articleFlagExclusive
+};
+
+SponsoredArticleFlag.propTypes = articleFlagPropTypes;
+SponsoredArticleFlag.defaultProps = {
+  color: colours.functional.tertiary
+};
 
 export default ArticleFlag;
 

@@ -4,9 +4,10 @@ import renderArticleConfig from "./showcase-helper";
 export default {
   children: [
     {
-      component: ({ boolean, select }, { decorateAction }) =>
+      component: ({ boolean, color, select }, { decorateAction }) =>
         renderArticleConfig({
           boolean,
+          color,
           decorateAction,
           hasScaling: true,
           select

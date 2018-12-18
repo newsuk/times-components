@@ -170,6 +170,8 @@ const renderArticle = ({
   analyticsStream,
   decorateAction,
   id,
+  inDepthBackgroundColour,
+  inDepthTextColour,
   scale,
   section,
   template
@@ -186,7 +188,9 @@ const renderArticle = ({
           image:
             "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
         },
-        template
+        backgroundColour: inDepthBackgroundColour,
+        template,
+        textColour: inDepthTextColour
       };
       return (
         <Context.Provider
@@ -247,6 +251,7 @@ const selectTemplate = select =>
 
 const renderArticleConfig = ({
   boolean,
+  color,
   decorateAction,
   hasScaling,
   link = null,
@@ -264,6 +269,12 @@ const renderArticleConfig = ({
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
   const template = selectTemplate(select);
+  const inDepthBackgroundColour =
+    template === "indepth"
+      ? color("In Depth Background Colour: ", "#3C81BE")
+      : null;
+  const inDepthTextColour =
+    template === "indepth" ? color("In Depth Text Colour: ", "#FFFFFF") : null;
 
   return (
     <Fragment>
@@ -286,6 +297,8 @@ const renderArticleConfig = ({
             analyticsStream: storybookReporter,
             decorateAction,
             id,
+            inDepthBackgroundColour,
+            inDepthTextColour,
             scale,
             section,
             template
