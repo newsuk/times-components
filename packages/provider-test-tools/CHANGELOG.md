@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.10.7...@times-components/provider-test-tools@1.10.8) (2018-12-18)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
 ## [1.10.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.10.6...@times-components/provider-test-tools@1.10.7) (2018-12-12)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
