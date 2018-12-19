@@ -124,20 +124,18 @@ exports[`default styles 1`] = `
                 >
                   March 13 2015, 6:54pm
                 </Text>
-                <Text>
-                  <Text
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "flexDirection": "row",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      }
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "flexDirection": "row",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
                     }
-                  >
-                    Deborah Haynes
-                  </Text>
+                  }
+                >
+                  Deborah Haynes
                 </Text>
               </View>
             </Card>

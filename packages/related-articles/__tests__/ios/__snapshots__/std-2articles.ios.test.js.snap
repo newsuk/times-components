@@ -56,9 +56,7 @@ exports[`1. two related articles 1`] = `
                   March 13 2015, 6:54pm
                 </Text>
                 <Text>
-                  <Text>
-                    Camilla Long, Environment Editor
-                  </Text>
+                  Camilla Long, Environment Editor
                 </Text>
               </View>
             </Card>
@@ -111,9 +109,7 @@ exports[`1. two related articles 1`] = `
                   January 17 2018, 12:00pm
                 </Text>
                 <Text>
-                  <Text>
-                    Camilla Long, Environment Editor
-                  </Text>
+                  Camilla Long, Environment Editor
                 </Text>
               </View>
             </Card>

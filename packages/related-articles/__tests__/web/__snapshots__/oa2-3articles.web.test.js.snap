@@ -39,9 +39,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                     />
                   </div>
                   <div>
-                    <span>
-                      Sathnam Sanghera
-                    </span>
+                    Sathnam Sanghera
                   </div>
                   <h3
                     aria-level="3"
@@ -119,9 +117,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
-                        Deborah Haynes
-                      </span>
+                      Deborah Haynes
                     </div>
                   </div>
                 </Card>
@@ -168,9 +164,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
-                        Deborah Haynes
-                      </span>
+                      Deborah Haynes
                     </div>
                   </div>
                 </Card>

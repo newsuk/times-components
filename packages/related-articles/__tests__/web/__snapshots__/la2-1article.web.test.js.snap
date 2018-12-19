@@ -61,9 +61,7 @@ exports[`1. one lead related article 1`] = `
                     </time>
                   </div>
                   <div>
-                    <span>
-                      Deborah Haynes
-                    </span>
+                    Deborah Haynes
                   </div>
                 </div>
               </Card>

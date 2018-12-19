@@ -61,9 +61,7 @@ exports[`1. two related articles 1`] = `
                     </time>
                   </div>
                   <div>
-                    <span>
-                      Camilla Long, Environment Editor
-                    </span>
+                    Camilla Long, Environment Editor
                   </div>
                 </div>
               </Card>
@@ -119,9 +117,7 @@ exports[`1. two related articles 1`] = `
                     </time>
                   </div>
                   <div>
-                    <span>
-                      Camilla Long, Environment Editor
-                    </span>
+                    Camilla Long, Environment Editor
                   </div>
                 </div>
               </Card>

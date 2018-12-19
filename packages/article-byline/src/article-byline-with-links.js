@@ -8,13 +8,13 @@ const renderAuthorComponent = (
   children,
   key,
   attributes,
-  { onAuthorPress, ...props }
+  { onAuthorPress, className }
 ) => {
   const url = `/profile/${attributes.slug}`;
   return {
     element: (
       <TextLink
-        {...props}
+        className={className}
         key={key}
         onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
         style={styles.link}

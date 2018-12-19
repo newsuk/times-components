@@ -68,9 +68,7 @@ exports[`1. one lead and two support related articles 1`] = `
                     </time>
                   </div>
                   <div>
-                    <span>
-                      Deborah Haynes
-                    </span>
+                    Deborah Haynes
                   </div>
                 </div>
               </Card>
@@ -119,9 +117,7 @@ exports[`1. one lead and two support related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
-                        Deborah Haynes
-                      </span>
+                      Deborah Haynes
                     </div>
                   </div>
                 </Card>
@@ -168,9 +164,7 @@ exports[`1. one lead and two support related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
-                        Deborah Haynes
-                      </span>
+                      Deborah Haynes
                     </div>
                   </div>
                 </Card>

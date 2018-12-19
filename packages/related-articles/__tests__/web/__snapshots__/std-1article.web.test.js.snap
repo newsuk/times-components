@@ -62,12 +62,10 @@ exports[`1. a single related article 1`] = `
                     </time>
                   </div>
                   <div>
-                    <span>
-                      Camilla Long
-                    </span>
-                    <span>
-                      , Environment Editor
-                    </span>
+                    Camilla Long
+                  </div>
+                  <div>
+                    , Environment Editor
                   </div>
                 </div>
               </Card>
