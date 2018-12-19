@@ -324,19 +324,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
         />
       </aside>
-      <div>
-        <p>
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a
-            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-          >
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
+        spotAccountId=""
+      />
     </div>
   </div>
 </article>
@@ -663,19 +655,11 @@ exports[`2. a full article with all content items with not a dropcap template 1`
           }
         />
       </aside>
-      <div>
-        <p>
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a
-            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-          >
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
+        spotAccountId=""
+      />
     </div>
   </div>
 </article>
@@ -755,19 +739,11 @@ exports[`3. an article with no content 1`] = `
           }
         />
       </aside>
-      <div>
-        <p>
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a
-            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-          >
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
+        spotAccountId=""
+      />
     </div>
   </div>
 </article>
@@ -797,19 +773,11 @@ exports[`4. an article with a nested markup in first paragraph displays no drop 
       <aside
         id="related-articles"
       />
-      <div>
-        <p>
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a
-            href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-          >
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        isEnabled={true}
+        spotAccountId=""
+      />
     </div>
   </div>
 </article>
