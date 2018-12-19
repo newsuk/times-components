@@ -8,8 +8,9 @@ const styles = StyleSheet.create({
   }
 });
 
-const TextLink = ({ children, onPress, style, target, url }) => {
-  const props = {
+const TextLink = ({ children, onPress, style, target, url, ...props }) => {
+  const textProps = {
+    ...props,
     accessibilityRole: "link",
     href: url,
     onPress,
@@ -17,11 +18,11 @@ const TextLink = ({ children, onPress, style, target, url }) => {
   };
 
   return target ? (
-    <Text {...props} target={target}>
+    <Text {...textProps} target={target}>
       {children}
     </Text>
   ) : (
-    <Text {...props}>{children}</Text>
+    <Text {...textProps}>{children}</Text>
   );
 };
 

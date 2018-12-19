@@ -27,42 +27,40 @@ exports[`1. article summary component with a single paragraph 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {
-              "slug": "camilla-long",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {
+            "slug": "camilla-long",
+          },
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
             },
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
+          ],
+          "name": "author",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": ", Environment Editor",
               },
-            ],
-            "name": "author",
-          },
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": ", Environment Editor",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
@@ -74,28 +72,26 @@ exports[`2. article summary with opinion byline 1`] = `
       title="Test label"
     />
   </View>
-  <Text>
-    <ArticleBylineOpinion
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleBylineOpinion
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-      isOpinionByline={true}
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+    isOpinionByline={true}
+  />
   <Text
     accessibilityRole="heading"
     aria-level="3"
@@ -143,27 +139,25 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
@@ -305,27 +299,25 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
       publication="SUNDAYTIMES"
     />
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
@@ -374,27 +366,25 @@ exports[`9. article summary component with no label 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
@@ -443,27 +433,25 @@ exports[`11. article summary component with no date publication 1`] = `
       ...
     </Text>
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
@@ -495,26 +483,24 @@ exports[`12. article summary component with a video label 1`] = `
       publication="TIMES"
     />
   </Text>
-  <Text>
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+  <ArticleByline
+    ast={
+      Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "A byline",
               },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </Text>
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ]
+    }
+  />
 </View>
 `;

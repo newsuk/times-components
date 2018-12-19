@@ -31,15 +31,11 @@ const ArticleSummary = props => {
   const renderByline = () => {
     if (bylineProps.ast.length === 0) return null;
 
-    return (
-      <Text className={bylineProps.bylineClass}>
-        {bylineProps.isOpinionByline ? (
-          <ArticleBylineOpinion {...bylineProps} />
-        ) : (
-          <ArticleByline {...bylineProps} />
-        )}
-      </Text>
-    );
+    const Byline = bylineProps.isOpinionByline
+      ? ArticleBylineOpinion
+      : ArticleByline;
+
+    return <Byline {...bylineProps} className={bylineProps.bylineClass} />;
   };
 
   const renderLabel = () => {
