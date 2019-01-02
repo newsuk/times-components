@@ -146,7 +146,7 @@ class ArticleList extends Component {
                 <Fragment key={elementId}>
                   <div
                     accessibility-label={elementId}
-                    data-testid={elementId}
+                    data-testid={`article-list-item-${index}`}
                     id={elementId}
                     ref={node => registerNode(node)}
                   >

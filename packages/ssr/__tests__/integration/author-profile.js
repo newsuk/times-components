@@ -1,36 +1,53 @@
 /* eslint-disable no-unused-expressions */
-xdescribe("AuthorProfile", () => {
-  const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
-  beforeEach(() => {
-    cy.visit("/profile/fiona-hamilton");
-  });
+import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
 
-  it("Author head has required elements", () => {
+describe("AuthorProfile", () => {
+
+  const articleId = "522abf2c-e752-11e8-9f32-f2801f1b9fd1";
+
+  before(() => 
+    cy.task("startMockServerWith", {
+      Author: new MockAuthor()
+        .setAuthorArticles(35)
+        .get(),
+      Article: new MockArticle().get()
+    })
+  );
+
+  beforeEach(() => {
+    cy.visit("/profile/fiona-hamilton")
+  })
+
+  after(() => 
+    cy.task("stopMockServer")
+  );
+
+  it("Should have the Author head required elements", () => {
     cy.get('div[data-testid="author-head"]');
     cy.get('h1[data-testid="author-name"]');
     cy.get('h2[role="heading"]');
     cy.get('div[data-testid="author-bio"]');
   });
 
-  it("Author has article elememts on the page", () => {
-    cy.get(`div[data-testid="${id}"]`);
+  it("Click on an article in the author article list takes you to the article page", () => {
+    cy
+      .get(`div[data-testid="article-list-item-0"]`)
+      .click();
+    
+    expect(cy.get('[data-testid="standfirst"]')).to.exist;
+
   });
 
-  it("Click on an article in the author list takes you to the corresponding article", () => {
-    cy.get(`div[data-testid="${id}"]`).click();
-    cy.url().should(
-      "eq",
-      "http://localhost:3000/article/97c64f20-cb67-11e4-a202-50ac5def393a"
-    );
-  });
-
-  it("loads inline-ad", () => {
+  xit("loads inline-ad", () => {
     cy.loadedAd("#inline-ad");
   });
 
-  it("Next and Previous Pagination works", () => {
+   it("Next and Previous Pagination works", () => {
+    cy.url().should('include', '?page=1')
     cy.goToNextArticle();
+    cy.url().should('include', '?page=2')
     cy.goToPreviousArticle();
-    expect(cy.get('div[data-testid="pagination-button-next"]')).to.exist;
+    cy.url().should('include', '?page=1')
+
   });
 });
