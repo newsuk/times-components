@@ -52,6 +52,11 @@ class MockArticle {
     };
   }
 
+  setCommentsEnabled(enabled: boolean) {
+    this.article.commentsEnabled = enabled;
+    return this;
+  }
+
   setRelatedArticles(count: number) {
     this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
