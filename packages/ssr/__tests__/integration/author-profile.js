@@ -3,8 +3,6 @@ import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
 
 describe("AuthorProfile", () => {
 
-  const articleId = "522abf2c-e752-11e8-9f32-f2801f1b9fd1";
-
   before(() => 
     cy.task("startMockServerWith", {
       Author: new MockAuthor()
@@ -35,11 +33,10 @@ describe("AuthorProfile", () => {
       .click();
     
     expect(cy.get('[data-testid="standfirst"]')).to.exist;
-
   });
 
-  xit("loads inline-ad", () => {
-    cy.loadedAd("#inline-ad");
+  it("loads inline-ad", () => {
+    expect(cy.get('#inline-ad')).to.exist
   });
 
    it("Next and Previous Pagination works", () => {
@@ -48,6 +45,5 @@ describe("AuthorProfile", () => {
     cy.url().should('include', '?page=2')
     cy.goToPreviousArticle();
     cy.url().should('include', '?page=1')
-
   });
 });
