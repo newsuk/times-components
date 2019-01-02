@@ -58,10 +58,10 @@ describe("Article", () => {
   });
 
   it("has SpotIM comment tag when article comments are enabled", () => {
-    const articleWithCommentsEnabled = {
-      ...sundayTimesArticleWithThreeRelatedArticles,
-      commentsEnabled: true
-    };
+    const articleWithCommentsEnabled = new MockArticle()
+      .sundayTimes()
+      .setCommentsEnabled(true)
+      .get();
 
     cy.task("startMockServerWith", {
       Article: articleWithCommentsEnabled
@@ -78,10 +78,10 @@ describe("Article", () => {
   });
 
   it("does not have SpotIM comment tag when article comments are disabled", () => {
-    const articleWithCommentsDisabled = {
-      ...sundayTimesArticleWithThreeRelatedArticles,
-      commentsEnabled: false
-    };
+    const articleWithCommentsDisabled = new MockArticle()
+      .sundayTimes()
+      .setCommentsEnabled(false)
+      .get();
 
     cy.task("startMockServerWith", {
       Article: articleWithCommentsDisabled
