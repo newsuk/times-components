@@ -8,12 +8,12 @@ const defaultMockTypes = {
   Author: {
     __typename: "Author" 
   },
+  DateTime: "2019-01-02",
   Markup: { __typename: "Markup" },
   Media: { __typename: "Image" },
   Slug: "a-slug",
   URL: "url",
   UUID: "uuid",
-  DateTime: "2019-01-02"
 };
 
 function isObject(data) {
