@@ -7,7 +7,9 @@ const defaultMockTypes = {
   },
   Markup: { __typename: "Markup" },
   Media: { __typename: "Image" },
-  Slug: "a-slug"
+  Slug: "a-slug",
+  URL: "url",
+  UUID: "uuid"
 };
 
 function isObject(data) {
