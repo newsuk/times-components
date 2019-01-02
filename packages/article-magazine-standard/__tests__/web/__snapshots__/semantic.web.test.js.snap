@@ -171,7 +171,8 @@ exports[`1. a full article 1`] = `
     Comments are subject to our community guidelines, which can be viewed
      
     <a
-      href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+      href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+      role="link"
     >
       here
     </a>

@@ -2,11 +2,13 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { TextLink } from "@times-components/link";
 import {
   CommentContainer,
   CommentEnabledGuidelines
 } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
+import styles from "./styles";
 
 class Comments extends Component {
   constructor() {
@@ -65,9 +67,12 @@ class Comments extends Component {
       <CommentContainer>
         <CommentEnabledGuidelines>
           Comments are subject to our community guidelines, which can be viewed{" "}
-          <a href="//www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32">
+          <TextLink
+            style={styles.link}
+            url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+          >
             here
-          </a>
+          </TextLink>
           .
         </CommentEnabledGuidelines>
         <div

@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a secondary image 1`] = `
-.c4 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.c5 {
-  color: #696969;
-  font-family: "GillSansMTStd-Medium";
-  font-size: 13px;
-  margin: 0 0 -10px 0;
-  padding-left: 7px;
-  padding-top: 30px;
-}
-
 .c3 {
   width: 100%;
   -webkit-flex-direction: row;
@@ -37,18 +23,6 @@ exports[`1. a secondary image 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
-  }
 }
 
 @media (min-width:768px) {
@@ -130,41 +104,13 @@ exports[`1. a secondary image 1`] = `
         </div>
       </div>
       <aside />
-      <div
-        className="c4"
-      >
-        <p
-          className="c5"
-        >
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a>
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments />
     </div>
   </div>
 </article>
 `;
 
 exports[`2. an inline image 1`] = `
-.c4 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.c5 {
-  color: #696969;
-  font-family: "GillSansMTStd-Medium";
-  font-size: 13px;
-  margin: 0 0 -10px 0;
-  padding-left: 7px;
-  padding-top: 30px;
-}
-
 .c3 {
   width: 100%;
   -webkit-flex-direction: row;
@@ -191,18 +137,6 @@ exports[`2. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
   .c3 {
     width: 80.8%;
     margin: 0 auto;
@@ -281,21 +215,7 @@ exports[`2. an inline image 1`] = `
         </div>
       </div>
       <aside />
-      <div
-        className="c4"
-      >
-        <p
-          className="c5"
-        >
-          Comments are subject to our community guidelines, which can be viewed
-           
-          <a>
-            here
-          </a>
-          .
-        </p>
-        <div />
-      </div>
+      <ArticleComments />
     </div>
   </div>
 </article>
