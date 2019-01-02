@@ -21,7 +21,7 @@ export function startWithMockData(mockData) {
       },
       typeDefs: schemaSDL
     });
-  
+
     const mocks = createMockFunctions(mockData);
 
     addMockFunctionsToSchema({
