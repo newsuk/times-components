@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "4.1.30",
+  "version": "4.1.31",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.9",
     "@times-components/jest-configurator": "2.1.19",
     "@times-components/jest-serializer": "3.1.12",
-    "@times-components/storybook": "3.2.3",
+    "@times-components/storybook": "3.2.4",
     "@times-components/test-utils": "2.0.4",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
@@ -68,9 +68,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/caption": "2.2.10",
-    "@times-components/image": "4.3.22",
-    "@times-components/styleguide": "3.12.0",
+    "@times-components/caption": "2.2.11",
+    "@times-components/image": "4.3.23",
+    "@times-components/styleguide": "3.12.1",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
