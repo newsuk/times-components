@@ -1,36 +1,42 @@
 /* eslint-disable no-unused-expressions */
-xdescribe("AuthorProfile", () => {
-  const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
+import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
+
+describe("AuthorProfile", () => {
+  before(() =>
+    cy.task("startMockServerWith", {
+      Article: new MockArticle().get(),
+      Author: new MockAuthor().setAuthorArticles(35).get()
+    })
+  );
+
   beforeEach(() => {
     cy.visit("/profile/fiona-hamilton");
   });
 
-  it("Author head has required elements", () => {
+  after(() => cy.task("stopMockServer"));
+
+  it("should have the required Author head elements", () => {
     cy.get('div[data-testid="author-head"]');
     cy.get('h1[data-testid="author-name"]');
     cy.get('h2[role="heading"]');
     cy.get('div[data-testid="author-bio"]');
   });
 
-  it("Author has article elememts on the page", () => {
-    cy.get(`div[data-testid="${id}"]`);
-  });
+  it("should take you to the article page once an article has been selected", () => {
+    cy.get(`div[data-testid="article-list-item-0"]`).click();
 
-  it("Click on an article in the author list takes you to the corresponding article", () => {
-    cy.get(`div[data-testid="${id}"]`).click();
-    cy.url().should(
-      "eq",
-      "http://localhost:3000/article/97c64f20-cb67-11e4-a202-50ac5def393a"
-    );
+    expect(cy.get('[data-testid="standfirst"]')).to.exist;
   });
 
   it("loads inline-ad", () => {
-    cy.loadedAd("#inline-ad");
+    expect(cy.get("#inline-ad")).to.exist;
   });
 
-  it("Next and Previous Pagination works", () => {
+  it("navigates between article pages", () => {
+    cy.url().should("include", "?page=1");
     cy.goToNextArticle();
+    cy.url().should("include", "?page=2");
     cy.goToPreviousArticle();
-    expect(cy.get('div[data-testid="pagination-button-next"]')).to.exist;
+    cy.url().should("include", "?page=1");
   });
 });

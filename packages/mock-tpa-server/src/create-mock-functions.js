@@ -5,6 +5,10 @@ const defaultMockTypes = {
   ArticleSlice: {
     __typename: "StandardSlice"
   },
+  Author: {
+    __typename: "Author"
+  },
+  DateTime: "2019-01-02",
   Markup: { __typename: "Markup" },
   Media: { __typename: "Image" },
   Slug: "a-slug",
@@ -28,7 +32,9 @@ function createMockFunctions(mockData) {
 
     if (missingMocks.length !== 0)
       throw new Error(
-        `Your mocks do not match the default types of ${defaultMockTypes}, offending provided mocks are ${missingMocks}`
+        `Your provided mocks do not match the default types of ${Object.keys(
+          defaultMockTypes
+        )}, \n offending provided mocks are ${missingMocks}`
       );
   }
 

@@ -85,3 +85,6 @@ ios/main.jsbundle.meta
 # Haul
 #
 haul-debug.log
+
+
+fragment-matcher.js
