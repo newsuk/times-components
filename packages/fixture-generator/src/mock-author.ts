@@ -16,10 +16,10 @@ class MockAuthor {
       articles: getAuthorArticles(0),
       biography: new MockMarkup().addParagraphs(1).get(),
       image: "url",
-      jobTitle: "God",
-      name: "fiona hamilton",
+      jobTitle: "legal editor",
+      name: "Fiona Hamilton",
       hasLeadAssets: false,
-      twitter: "twitter handle",
+      twitter: "fiona-hamilton",
       slug: "fiona-hamilton"
     };
   }
