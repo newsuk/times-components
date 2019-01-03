@@ -1,37 +1,46 @@
 /* eslint-disable no-unused-expressions */
-xdescribe("Topic", () => {
-  const id = "97c64f20-cb67-11e4-a202-50ac5def393a.0";
+
+import { MockTopic, MockArticle } from "@times-components/fixture-generator";
+
+describe("The Topic Page", () => {
+  before(() => {
+    cy.task("startMockServerWith", {
+      Article: new MockArticle().get(),
+      Topic: new MockTopic().setTopicArticles(25).get()
+    });
+  });
+
   beforeEach(() => {
     cy.visit("/topic/canada");
+  });
+
+  after(() => {
+    cy.task("stopMockServer");
   });
 
   it("Topic head has required elements", () => {
     cy.get("#main-container > div:nth-child(1)");
     cy.get("#main-container h1")
       .first()
-      .contains("Canada");
+      .contains("Topic Page");
     cy.get('div[data-testid="topic-description"]');
   });
 
-  it("Topic has article elememts on the page", () => {
-    cy.get(`div[data-testid="${id}"]`);
-  });
+  it("should take you to the article page once an article has been selected", () => {
+    cy.get(`div[data-testid="article-list-item-0"]`).click();
 
-  it("Click on an article in the topic list takes you to the corresponding article", () => {
-    cy.get(`div[data-testid="${id}"]`).click();
-    cy.url().should(
-      "eq",
-      "http://localhost:3000/article/97c64f20-cb67-11e4-a202-50ac5def393a"
-    );
+    expect(cy.get('[data-testid="standfirst"]')).to.exist;
   });
 
   it("loads inline-ad", () => {
-    cy.loadedAd("#inline-ad");
+    expect(cy.get("#inline-ad")).to.exist;
   });
 
-  it("Next and Previous Pagination works", () => {
+  it("navigates between article pages", () => {
+    cy.url().should("include", "?page=1");
     cy.goToNextArticle();
+    cy.url().should("include", "?page=2");
     cy.goToPreviousArticle();
-    expect(cy.get('div[data-testid="pagination-button-next"]')).to.exist;
+    cy.url().should("include", "?page=1");
   });
 });

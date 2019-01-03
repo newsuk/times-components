@@ -35,6 +35,11 @@ const markupTypes: Markup = {
   }
 };
 
+interface MarkupConfig {
+  length: number;
+  overrideText?: string;
+}
+
 const generateMarkup = (
   array: Array<Markup>,
   markupType: Markup,
@@ -65,6 +70,7 @@ class MockMarkup {
     this.markup = generateMarkup(this.markup, markupTypes.ad.name, length);
     return this;
   }
+
   addInlines(length: number = 1) {
     this.markup = generateMarkup(this.markup, markupTypes.inline.name, length);
     return this;

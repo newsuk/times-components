@@ -1,20 +1,6 @@
 /* eslint-disable no-param-reassign, no-underscore-dangle */
 
-const defaultMockTypes = {
-  Article: { __typename: "Article" },
-  ArticleSlice: {
-    __typename: "StandardSlice"
-  },
-  Author: {
-    __typename: "Author"
-  },
-  DateTime: "2019-01-02",
-  Markup: { __typename: "Markup" },
-  Media: { __typename: "Image" },
-  Slug: "a-slug",
-  URL: "url",
-  UUID: "uuid"
-};
+import defaultMockTypes from "./default-mock-types";
 
 function isObject(data) {
   return typeof data === "object";
