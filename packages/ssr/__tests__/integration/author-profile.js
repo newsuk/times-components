@@ -15,14 +15,14 @@ describe("AuthorProfile", () => {
 
   after(() => cy.task("stopMockServer"));
 
-  it("Should have the Author head required elements", () => {
+  it("should have the required Author head elements", () => {
     cy.get('div[data-testid="author-head"]');
     cy.get('h1[data-testid="author-name"]');
     cy.get('h2[role="heading"]');
     cy.get('div[data-testid="author-bio"]');
   });
 
-  it("Click on an article in the author article list takes you to the article page", () => {
+  it("should take you to the article page once an article has been selected", () => {
     cy.get(`div[data-testid="article-list-item-0"]`).click();
 
     expect(cy.get('[data-testid="standfirst"]')).to.exist;
@@ -32,7 +32,7 @@ describe("AuthorProfile", () => {
     expect(cy.get("#inline-ad")).to.exist;
   });
 
-  it("Next and Previous Pagination works", () => {
+  it("navigates between article pages", () => {
     cy.url().should("include", "?page=1");
     cy.goToNextArticle();
     cy.url().should("include", "?page=2");
