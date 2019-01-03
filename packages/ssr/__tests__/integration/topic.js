@@ -4,16 +4,15 @@ import { MockTopic, MockArticle } from "@times-components/fixture-generator";
 
 describe("The Topic Page", () => {
   before(() => {
-    cy
-      .task("startMockServerWith", {
-        Article: new MockArticle().get(),
-        Topic: new MockTopic().setTopicArticles(25).get()
-      })
+    cy.task("startMockServerWith", {
+      Article: new MockArticle().get(),
+      Topic: new MockTopic().setTopicArticles(25).get()
+    });
   });
 
   beforeEach(() => {
     cy.visit("/topic/canada");
-  }); 
+  });
 
   after(() => {
     cy.task("stopMockServer");
@@ -33,7 +32,6 @@ describe("The Topic Page", () => {
     expect(cy.get('[data-testid="standfirst"]')).to.exist;
   });
 
-
   it("loads inline-ad", () => {
     expect(cy.get("#inline-ad")).to.exist;
   });
@@ -43,6 +41,6 @@ describe("The Topic Page", () => {
     cy.goToNextArticle();
     cy.url().should("include", "?page=2");
     cy.goToPreviousArticle();
-    cy.url().should("include", "?page=1")
+    cy.url().should("include", "?page=1");
   });
 });

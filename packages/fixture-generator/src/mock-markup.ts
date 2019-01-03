@@ -36,8 +36,8 @@ const markupTypes: Markup = {
 };
 
 interface MarkupConfig {
-  length: number,
-  overrideText?: string
+  length: number;
+  overrideText?: string;
 }
 
 const generateMarkup = (
