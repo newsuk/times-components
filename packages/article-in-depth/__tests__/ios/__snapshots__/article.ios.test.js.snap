@@ -25,7 +25,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <ModalImage
           aspectRatio={1.7777777777777777}
           caption={
-            <CentredCaption
+            <CenteredCaption
               credits="Some Credits"
               text="Some Caption"
             />
@@ -166,7 +166,7 @@ exports[`4. an article with ads 1`] = `
         <ModalImage
           aspectRatio={1.7777777777777777}
           caption={
-            <CentredCaption
+            <CenteredCaption
               credits="Some Credits"
               text="Some Caption"
             />

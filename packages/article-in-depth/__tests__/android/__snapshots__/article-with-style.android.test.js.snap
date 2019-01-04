@@ -198,29 +198,15 @@ exports[`full article with style 1`] = `
         }
       >
         <Video />
-        <View>
-          <View
-            style={
-              Object {
+        <Caption
+          style={
+            Object {
+              "container": Object {
                 "paddingLeft": 10,
-                "paddingTop": 5,
-              }
+              },
             }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 20,
-                }
-              }
-            >
-              This is video caption
-            </Text>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
     <View>
@@ -358,7 +344,6 @@ exports[`full article with style in the culture magazine 1`] = `
         }
       >
         <ModalImage />
-        <CenteredCaption />
       </View>
       <View
         style={
@@ -621,7 +606,6 @@ exports[`full article with style in the style magazine 1`] = `
         }
       >
         <ModalImage />
-        <CenteredCaption />
       </View>
       <View
         style={
@@ -884,7 +868,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
         }
       >
         <ModalImage />
-        <CenteredCaption />
       </View>
       <View
         style={
