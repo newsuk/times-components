@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
+import { isTablet } from "@times-components/utils";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
 import styles from "./styles";
@@ -39,7 +40,7 @@ class CardContent extends Component {
         <View
           className={imageContainerClass}
           style={[
-            styles.imageContainer,
+            isTablet ? styles.imageContainerTablet : styles.imageContainer,
             imageStyle,
             isReversed ? styles.reversedImageContainer : ""
           ]}
@@ -58,7 +59,7 @@ class CardContent extends Component {
     return (
       <View
         style={[
-          styles.cardContainer,
+          isTablet ? styles.cardContainerTablet : styles.cardContainer,
           isReversed ? styles.reversedCardContainer : ""
         ]}
       >
@@ -66,7 +67,7 @@ class CardContent extends Component {
         <View
           className={contentContainerClass}
           style={[
-            styles.contentContainer,
+            isTablet ? styles.contentContainerTablet : styles.contentContainer,
             isReversed ? styles.reversedContentContainer : "",
             isLoading ? styles.loadingContentContainer : ""
           ]}
