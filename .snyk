@@ -5,7 +5,7 @@ ignore:
   'npm:ws:20171108':
     - '*':
         reason: None Given
-        expires: 2019-01-04T12:57:07.950Z
+        expires: 2019-02-03T16:48:16.700Z
   'npm:hoek:20180212':
     - '*':
         reason: None Given
@@ -13,13 +13,21 @@ ignore:
   'npm:lodash:20180130':
     - '*':
         reason: None Given
-        expires: 2018-05-09T14:07:30.762Z
+        expires: 2019-02-03T16:50:30.839Z
   'npm:braces:20180219':
     - '*':
         reason: None Given
-        expires: 2018-05-09T14:07:55.149Z
+        expires: 2019-02-03T16:50:37.924Z
   'npm:plist:20180219':
     - '*':
         reason: None Given
-        expires: 2018-05-17T11:30:22.672Z
+        expires: 2019-02-03T16:50:44.877Z
+  'npm:chownr:20180731':
+    - '*':
+        reason: None Given
+        expires: 2019-02-03T16:48:28.553Z
+  'npm:mem:20180117':
+    - '*':
+        reason: None Given
+        expires: 2019-02-03T16:48:38.443Z
 patch: {}
