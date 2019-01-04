@@ -77,8 +77,9 @@ exports[`2. a single child element 1`] = `
   }
 
   .c2 .headlineClass {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 5px;
   }
 }
 
@@ -267,8 +268,9 @@ exports[`3. two child elements 1`] = `
   }
 
   .c1 .headlineClass {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 5px;
   }
 }
 
@@ -447,8 +449,9 @@ exports[`4. three child elements 1`] = `
   }
 
   .c1 .headlineClass {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 5px;
   }
 }
 

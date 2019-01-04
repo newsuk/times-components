@@ -3,16 +3,16 @@ import { Text } from "react-native";
 import renderTrees from "@times-components/markup-forest";
 import renderers from "@times-components/markup";
 
-const bylineRenderers = (renderAuthorComponent, textStyle, onAuthorPress) => ({
+const bylineRenderers = (renderAuthorComponent, textStyle, props = {}) => ({
   ...renderers,
   author(key, attributes, children) {
-    return renderAuthorComponent(children, key, attributes, onAuthorPress);
+    return renderAuthorComponent(children, key, attributes, props);
   },
 
   inline(key, attributes, children) {
     return {
       element: (
-        <Text key={key} style={textStyle}>
+        <Text className={props.className} key={key} style={textStyle}>
           {children}
         </Text>
       )
@@ -20,10 +20,7 @@ const bylineRenderers = (renderAuthorComponent, textStyle, onAuthorPress) => ({
   }
 });
 
-const renderByline = (renderAuthorComponent, ast, textStyle, onAuthorPress) =>
-  renderTrees(
-    ast,
-    bylineRenderers(renderAuthorComponent, textStyle, onAuthorPress)
-  );
+const renderByline = (renderAuthorComponent, ast, textStyle, props = {}) =>
+  renderTrees(ast, bylineRenderers(renderAuthorComponent, textStyle, props));
 
 export default renderByline;

@@ -75,8 +75,9 @@ exports[`default styles 1`] = `
   }
 
   .c2 .headlineClass {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 5px;
   }
 }
 
@@ -253,19 +254,6 @@ exports[`default styles 1`] = `
   margin-bottom: 0px;
 }
 
-.S10 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   color: rgba(219,19,59,1.00);
 }
@@ -340,18 +328,14 @@ exports[`default styles 1`] = `
                     </time>
                   </div>
                   <div
-                    className="S10"
+                    className="S9"
                   >
-                    <span
-                      className="S9"
-                    >
-                      Camilla Long
-                    </span>
-                    <span
-                      className="S9"
-                    >
-                      , Environment Editor
-                    </span>
+                    Camilla Long
+                  </div>
+                  <div
+                    className="S9"
+                  >
+                    , Environment Editor
                   </div>
                 </div>
               </Card>

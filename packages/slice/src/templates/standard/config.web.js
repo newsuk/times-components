@@ -37,8 +37,9 @@ export const getConfigWrapper = ({ itemCount }) => {
       }
 
       .headlineClass {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 25px;
+        line-height: 28px;
+        margin-top: ${spacing(1)};
       }
     }
   `;

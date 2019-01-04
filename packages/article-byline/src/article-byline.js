@@ -4,16 +4,16 @@ import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
-const renderAuthorComponent = (children, key) => ({
+const renderAuthorComponent = (children, key, attributes, { className }) => ({
   element: (
-    <Text key={key} style={styles.nonLinkText}>
+    <Text className={className} key={key} style={styles.nonLinkText}>
       {children}
     </Text>
   )
 });
 
-const ArticleByline = ({ ast }) =>
-  renderByline(renderAuthorComponent, ast, styles.nonLinkText);
+const ArticleByline = ({ ast, ...props }) =>
+  renderByline(renderAuthorComponent, ast, styles.nonLinkText, props);
 
 ArticleByline.displayName = "ArticleByline";
 
