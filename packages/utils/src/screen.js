@@ -1,7 +1,13 @@
 import { PixelRatio } from "react-native";
 
-import { acceptedWidths, normaliseWidth, screenWidth } from "./screen.base.js";
+import {
+  acceptedWidths,
+  isTablet,
+  normaliseWidth,
+  screenWidth,
+  tabletWidth
+} from "./screen.base.js";
 
-export { acceptedWidths, normaliseWidth, screenWidth };
+export { acceptedWidths, isTablet, normaliseWidth, screenWidth, tabletWidth };
 export const screenWidthInPixels = () =>
   PixelRatio.getPixelSizeForLayoutSize(screenWidth());
