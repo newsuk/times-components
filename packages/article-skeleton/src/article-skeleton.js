@@ -121,13 +121,13 @@ class ArticleSkeleton extends Component {
       receiveChildList
     } = this.props;
     const { dataSource, width } = this.state;
-    const { template } = dataSource;
+    const { template, dropcapsDisabled } = dataSource;
     if (!dataSource.content) {
       return null;
     }
 
     const newContent = [...dataSource.content];
-    if (newContent && newContent.length > 0) {
+    if ((newContent && newContent.length > 0) && !(dropcapsDisabled)) {
       newContent[0] = insertDropcapIntoAST(newContent[0], template);
     }
 

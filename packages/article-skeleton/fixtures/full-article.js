@@ -1452,7 +1452,7 @@ const defaultTopics = [
 ];
 const defaultUrl = "https://www.thetimes.co.uk/";
 const defaultTemplate = "mainstandard";
-
+// const defaultDropcapsDisabled = undefined;
 const addProp = (obj, key, value) => {
   if (value != null) {
     return {
@@ -1469,6 +1469,7 @@ const makeDefaultConfig = ({
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
+  dropcapsDisabled,
   flags = defaultFlags,
   hasVideo = defaultHasVideo,
   headline = defaultHeadline,
@@ -1489,6 +1490,7 @@ const makeDefaultConfig = ({
   commentCount,
   commentsEnabled,
   content,
+  dropcapsDisabled,
   flags,
   hasVideo,
   headline,

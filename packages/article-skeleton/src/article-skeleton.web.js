@@ -46,6 +46,7 @@ class ArticleSkeleton extends Component {
       data: {
         commentsEnabled,
         content,
+        dropcapsDisabled,
         id: articleId,
         section,
         url,
@@ -71,7 +72,8 @@ class ArticleSkeleton extends Component {
         />
       ) : null;
     const newContent = [...content];
-    if (newContent && newContent.length > 0) {
+    console.log('dropcapsDisabled is', dropcapsDisabled, 'value', !(dropcapsDisabled) );
+    if ((newContent && newContent.length > 0) && !(dropcapsDisabled)) {
       newContent[0] = insertDropcapIntoAST(newContent[0], template);
     }
 

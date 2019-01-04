@@ -293,9 +293,21 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "a full article with all content items a dropcap template but disabled flag",
+    test() {
+      const template = "maincomment";
+      const dropcapsDisabled = true;
+      const article = articleFixture({ ...fixtureArgs, template, dropcapsDisabled: true });
+      console.log('article is dooh', article);
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "an article with no content",
     test() {
-      const article = articleFixture({ ...fixtureArgs, content: [] });
+      const article = articleFixture({ ...fixtureArgs, content: [], dropcapsDisabled: undefined});
       const output = renderComponent(renderArticle(article));
 
       expect(output).toMatchSnapshot();
@@ -311,6 +323,7 @@ export const snapshotTests = renderComponent => [
         content: contentWithNestedFirstParagraph,
         relatedArticleSlice: null,
         template,
+        dropcapsDisabled: undefined,
         topics: []
       });
       const output = renderComponent(renderArticle(article));
