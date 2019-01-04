@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-standard",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Magazine Standard Article Template",
   "main": "dist/article-magazine-standard",
   "dev": "src/article-magazine-standard",
@@ -60,12 +60,12 @@
   },
   "dependencies": {
     "@times-components/ad": "2.2.12",
-    "@times-components/article-byline": "3.0.67",
+    "@times-components/article-byline": "3.0.68",
     "@times-components/article-error": "0.1.23",
     "@times-components/article-flag": "2.2.15",
     "@times-components/article-label": "2.2.37",
-    "@times-components/article-lead-asset": "0.0.1",
-    "@times-components/article-skeleton": "0.3.2",
+    "@times-components/article-lead-asset": "0.1.0",
+    "@times-components/article-skeleton": "0.3.3",
     "@times-components/caption": "2.2.11",
     "@times-components/context": "0.5.21",
     "@times-components/date-publication": "0.19.53",

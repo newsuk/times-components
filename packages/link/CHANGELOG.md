@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.23](https://github.com/newsuk/times-components/compare/@times-components/link@3.1.22...@times-components/link@3.1.23) (2019-01-04)
+
+
+### Bug Fixes
+
+* related articles layout ([#1585](https://github.com/newsuk/times-components/issues/1585)) ([73a53cc](https://github.com/newsuk/times-components/commit/73a53cc))
+
+
+
+
+
 ## [3.1.22](https://github.com/newsuk/times-components/compare/@times-components/link@3.1.21...@times-components/link@3.1.22) (2019-01-03)
 
 **Note:** Version bump only for package @times-components/link
