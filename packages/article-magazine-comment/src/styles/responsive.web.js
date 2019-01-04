@@ -8,6 +8,8 @@ import {
   spacing
 } from "@times-components/styleguide";
 
+import ArticleLeadAsset from "@times-components/article-lead-asset";
+
 export const AuthorImageContainer = styled(View)`
   border-radius: 50%;
   height: 100px;
@@ -108,7 +110,7 @@ export const StandfirstContainer = styled(Text)`
   }
 `;
 
-export const LeadAsset = styled(View)`
+export const LeadAsset = styled(ArticleLeadAsset)`
   order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -120,8 +122,4 @@ export const LeadAsset = styled(View)`
     margin-left: auto;
     margin-right: auto;
   }
-`;
-
-export const LeadAssetCaptionContainer = styled(View)`
-  display: flex;
 `;

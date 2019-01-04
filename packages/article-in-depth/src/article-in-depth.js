@@ -4,9 +4,14 @@ import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
+import { CentredCaption } from "@times-components/caption";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
-import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
@@ -34,8 +39,6 @@ class ArticleInDepth extends Component {
       standfirst,
       textColour
     } = article;
-    const { leadAsset } = getLeadAsset(article);
-
     return (
       <Fragment>
         <ArticleHeader
@@ -46,7 +49,14 @@ class ArticleInDepth extends Component {
           standfirst={standfirst}
           textColour={textColour}
         />
-        <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
+        <ArticleLeadAsset
+          {...getLeadAsset(article)}
+          getImageCrop={getStandardTemplateCrop}
+          onVideoPress={onVideoPress}
+          renderModalCaption={({ caption }) => <CentredCaption {...caption} />}
+          style={styles.leadAsset}
+          width={width}
+        />
         <View style={styles.metaContainer}>
           <Meta
             backgroundColour={backgroundColour}

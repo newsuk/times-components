@@ -5,7 +5,15 @@ exports[`full article with style 1`] = `
   <View>
     <View>
       <View>
-        <ModalImage />
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <ModalImage />
+        </View>
       </View>
       <View
         style={
@@ -199,29 +207,15 @@ exports[`full article with style 1`] = `
         }
       >
         <Video />
-        <View>
-          <View
-            style={
-              Object {
+        <Caption
+          style={
+            Object {
+              "container": Object {
                 "paddingLeft": 10,
-                "paddingTop": 10,
-              }
+              },
             }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              This is video caption
-            </Text>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
     <View>

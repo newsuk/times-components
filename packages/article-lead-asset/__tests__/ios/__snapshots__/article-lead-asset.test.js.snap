@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders correctly with an image lead asset 1`] = `
+<View>
+  <ModalImage
+    aspectRatio={1.7777777777777777}
+    caption={
+      <React.Fragment>
+        <Text>
+          Chris Reynolds Gordon at one of his party venues in London
+        </Text>
+        <Text>
+          The credits
+        </Text>
+      </React.Fragment>
+    }
+    uri="https://crop169.io/"
+    width={600}
+  />
+  <Text>
+    Chris Reynolds Gordon at one of his party venues in London
+  </Text>
+  <Text>
+    The credits
+  </Text>
+</View>
+`;
+
+exports[`2. renders correctly with a video lead asset 1`] = `
+<View>
+  <Video
+    accountId="1234"
+    height={421.875}
+    policyKey="policyKey"
+    poster={
+      Object {
+        "uri": "https://crop169.io/",
+      }
+    }
+    videoId="5678"
+    width={750}
+  />
+  <Text>
+    Chris Reynolds Gordon at one of his party venues in London
+  </Text>
+  <Text>
+    The credits
+  </Text>
+</View>
+`;
+
+exports[`3. renders correctly when there is no lead asset 1`] = `null`;
+
+exports[`4. passes the caption rendered by rendermodalcaption to the modalimage 1`] = `
+<View>
+  <ModalImage
+    aspectRatio={1}
+    caption={
+      <Text>
+        Modal Caption
+      </Text>
+    }
+    width={600}
+  />
+  <Text>
+    Caption
+  </Text>
+</View>
+`;
+
+exports[`5. renders correctly when there is no available crop 1`] = `null`;

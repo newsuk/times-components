@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Modal, View } from "react-native";
-import Caption from "@times-components/caption";
 import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import CloseButton from "./close-button";
@@ -27,8 +26,14 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { caption, credits } = this.props;
+    const { caption } = this.props;
     const { showModal } = this.state;
+
+    const captionWithStyles =
+      caption &&
+      React.cloneElement(caption, {
+        style: captionStyles
+      });
 
     return (
       <View>
@@ -44,7 +49,7 @@ class ModalImage extends Component {
             <Gestures style={styles.imageContainer}>
               <Image {...this.props} style={styles.image} />
             </Gestures>
-            <Caption credits={credits} style={captionStyles} text={caption} />
+            {captionWithStyles}
           </View>
         </Modal>
         <Button onPress={this.showModal}>

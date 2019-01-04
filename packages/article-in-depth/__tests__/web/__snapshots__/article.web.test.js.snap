@@ -36,14 +36,18 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             />
           </div>
         </div>
-        <div>
-          <figcaption>
-            <CenteredCaption
-              credits="Some Credits"
-              text="Some Caption"
-            />
-          </figcaption>
-        </div>
+        <figcaption>
+          <div>
+            <div>
+              <div>
+                Some Caption
+              </div>
+              <div>
+                SOME CREDITS
+              </div>
+            </div>
+          </div>
+        </figcaption>
       </figure>
     </div>
     <div>
@@ -189,14 +193,18 @@ exports[`4. an article with ads 1`] = `
             />
           </div>
         </div>
-        <div>
-          <figcaption>
-            <CenteredCaption
-              credits="Some Credits"
-              text="Some Caption"
-            />
-          </figcaption>
-        </div>
+        <figcaption>
+          <div>
+            <div>
+              <div>
+                Some Caption
+              </div>
+              <div>
+                SOME CREDITS
+              </div>
+            </div>
+          </div>
+        </figcaption>
       </figure>
     </div>
     <div>

@@ -36,7 +36,7 @@ const sharedStyles = {
   label: {
     marginBottom: spacing(2)
   },
-  leadAssetContainer: {
+  leadAsset: {
     marginBottom: spacing(4)
   },
   meta: {

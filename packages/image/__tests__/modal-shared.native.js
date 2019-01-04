@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-native";
+import { Modal, Text, View } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import {
@@ -13,6 +13,13 @@ import {
 import { hash, iterator } from "@times-components/test-utils";
 import "./mocks";
 import { ModalImage } from "../src";
+
+// eslint-disable-next-line react/prop-types
+const MockCaption = ({ style: { text, container } }) => (
+  <View style={container}>
+    <Text style={text}>Caption</Text>
+  </View>
+);
 
 export default () => {
   addSerializers(
@@ -29,8 +36,7 @@ export default () => {
 
   const props = {
     aspectRatio: 3 / 2,
-    caption: "Test caption",
-    credits: "Test credits",
+    caption: <MockCaption />,
     highResSize: 1440,
     uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };

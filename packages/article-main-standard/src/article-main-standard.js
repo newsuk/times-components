@@ -5,9 +5,14 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
+import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
-import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
 import {
@@ -34,14 +39,17 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst
     } = article;
-    const { isVideo, leadAsset } = getLeadAsset(article);
     const styles = stylesFactory();
 
     return (
       <Fragment>
         <View key="leadAsset" testID="leadAsset">
           <ArticleLeadAsset
-            data={{ ...leadAsset, onVideoPress }}
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            onVideoPress={onVideoPress}
+            renderModalCaption={({ caption }) => <Caption {...caption} />}
+            style={styles.leadAsset}
             width={parentProps.width}
           />
         </View>
@@ -49,7 +57,6 @@ class ArticlePage extends Component {
           flags={flags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
-          isVideo={isVideo}
           label={label}
           standfirst={standfirst}
           style={[styles.articleMainContentRow]}

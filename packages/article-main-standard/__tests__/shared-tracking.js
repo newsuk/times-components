@@ -1,43 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import mockDate from "mockdate";
-import Article from "../src/article-main-standard";
-import { adConfig } from "./ad-mock";
-import articleFixture from "../fixtures/full-article";
-import articleProps from "./shared-article-props";
+import "./mocks.native";
 
-export default () => {
-  beforeEach(() => {
-    mockDate.set(1514764800000, 0);
-  });
+import shared from "./shared-tracking.base";
 
-  afterEach(() => {
-    mockDate.reset();
-  });
-
-  it("1. analytics when rendering an Article page", () => {
-    const stream = jest.fn();
-
-    renderer.create(
-      <Article
-        {...articleProps}
-        adConfig={adConfig}
-        analyticsStream={stream}
-        article={articleFixture()}
-        onAuthorPress={() => {}}
-        onCommentGuidelinesPress={() => {}}
-        onCommentsPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
-        onTwitterLinkPress={() => {}}
-        onVideoPress={() => {}}
-        pageSection="News"
-        referralUrl="thetimes.co.uk/article/dummy-article-url"
-      />
-    );
-    const [[call]] = stream.mock.calls;
-
-    expect(call).toMatchSnapshot();
-  });
-};
+export default shared;

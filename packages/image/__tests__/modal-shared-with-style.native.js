@@ -1,4 +1,5 @@
 import React from "react";
+import { Text, View } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -12,10 +13,16 @@ import { iterator } from "@times-components/test-utils";
 import "./mocks";
 import { ModalImage } from "../src";
 
+// eslint-disable-next-line react/prop-types
+const MockCaption = ({ style: { text, container } }) => (
+  <View style={container}>
+    <Text style={text}>Caption</Text>
+  </View>
+);
+
 const props = {
   aspectRatio: 3 / 2,
-  caption: "Test caption",
-  credits: "Test credits",
+  caption: <MockCaption />,
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 

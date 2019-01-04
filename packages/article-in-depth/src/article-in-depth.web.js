@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { CentredCaption } from "@times-components/caption";
 import Meta from "./article-meta/article-meta";
 import ArticleHeader from "./article-header/article-header";
-import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import { HeaderContainer } from "./styles/responsive";
+import { HeaderContainer, LeadAsset } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -19,7 +19,6 @@ class ArticlePage extends Component {
 
   renderHeader({ width }) {
     const { article } = this.props;
-    const leadAssetProps = getLeadAsset(article);
     const {
       backgroundColour,
       byline,
@@ -43,7 +42,12 @@ class ArticlePage extends Component {
           standfirst={standfirst}
           textColour={textColour}
         />
-        <LeadAsset {...leadAssetProps} width={width} />
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={({ caption }) => <CentredCaption {...caption} />}
+          style={styles.leadAsset}
+          width={width}
+        />
         <HeaderContainer style={styles.metaContainer}>
           <Meta
             backgroundColour={backgroundColour}

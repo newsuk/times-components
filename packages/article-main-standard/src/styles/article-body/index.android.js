@@ -15,7 +15,7 @@ const androidStyles = scale => {
       marginBottom: spacing(4)
     },
     leadAsset: {
-      marginBottom: 6
+      marginBottom: spacing(1)
     }
   };
 };

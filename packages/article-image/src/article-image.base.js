@@ -48,7 +48,6 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   }
 
   const children = [renderCaption(display, caption, credits)];
-
   if (!display || !ratio) {
     return children;
   }
@@ -60,8 +59,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
     <View key="img" style={styles[`${display}Image`]}>
       <ModalImage
         aspectRatio={aspectRatio}
-        caption={caption}
-        credits={credits}
+        caption={<Caption credits={credits} text={caption} />}
         highResSize={highResSize}
         lowResSize={lowResSize}
         uri={uri}

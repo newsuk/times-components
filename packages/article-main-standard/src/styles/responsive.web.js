@@ -1,6 +1,7 @@
 import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
 
 export const MainContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {
@@ -67,10 +68,18 @@ export const MetaContainer = styled(View)`
 
 /* --- Body --- */
 
-export const LeadAssetContainer = styled(View)`
+export const LeadAsset = styled(ArticleLeadAsset)`
   order: 1;
+  margin-bottom: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: ${spacing(4)};
+  }
 
   @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+    margin: 0 auto;
+    padding-bottom: ${spacing(4)};
     order: 2;
   }
 `;

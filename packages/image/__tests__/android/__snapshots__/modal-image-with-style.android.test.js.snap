@@ -126,43 +126,23 @@ exports[`1. default modal 1`] = `
           </View>
         </View>
       </View>
-      <View>
-        <View
+      <View
+        style={
+          Object {
+            "marginBottom": 14,
+            "marginHorizontal": 16,
+          }
+        }
+      >
+        <Text
           style={
             Object {
-              "marginBottom": 14,
-              "marginHorizontal": 16,
-              "paddingTop": 5,
+              "color": "#FFFFFF",
             }
           }
         >
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              }
-            }
-          >
-            Test caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              }
-            }
-          >
-            TEST CREDITS
-          </Text>
-        </View>
+          Caption
+        </Text>
       </View>
     </View>
   </Modal>

@@ -3,13 +3,19 @@
 import React, { Component, Fragment } from "react";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  getStandardTemplateCrop
+} from "@times-components/utils";
+import Caption, { CentredCaption } from "@times-components/caption";
+import LeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
-import LeadAsset from "./article-lead-asset/article-lead-asset";
 import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
+import styles from "./styles";
 
 class ArticleMagazineStandard extends Component {
   constructor() {
@@ -29,7 +35,6 @@ class ArticleMagazineStandard extends Component {
       shortHeadline,
       standfirst
     } = article;
-    const { leadAsset } = getLeadAsset(article);
 
     return (
       <Fragment>
@@ -43,7 +48,15 @@ class ArticleMagazineStandard extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <LeadAsset data={{ ...leadAsset, onVideoPress }} width={width} />
+        <LeadAsset
+          {...getLeadAsset(article)}
+          getImageCrop={getStandardTemplateCrop}
+          onVideoPress={onVideoPress}
+          renderCaption={({ caption }) => <CentredCaption {...caption} />}
+          renderModalCaption={({ caption }) => <Caption {...caption} />}
+          style={styles.leadAssetContainer}
+          width={width}
+        />
       </Fragment>
     );
   }
