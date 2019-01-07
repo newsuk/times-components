@@ -46,7 +46,7 @@
     "eslint": "5.9.0",
     "jest": "23.3.0",
     "prettier": "1.14.3",
-    "react": "16.5.2",
+    "react": "16.6.3",
     "react-native": "0.55.4",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
