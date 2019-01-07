@@ -33,11 +33,12 @@ const insertDropcap = (firstTextChild, children) => {
   return children;
 };
 
-const insertDropcapIntoAST = (child, template) => {
+const insertDropcapIntoAST = (child, template, isDropcapDisabled) => {
   const { name, children } = child;
   if (
     template &&
     templateWithDropCaps.includes(template) &&
+    !isDropcapDisabled &&
     name === "paragraph" &&
     children.length > 0
   ) {

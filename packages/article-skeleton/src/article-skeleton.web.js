@@ -72,8 +72,12 @@ class ArticleSkeleton extends Component {
         />
       ) : null;
     const newContent = [...content];
-    if (newContent && newContent.length > 0 && !dropcapsDisabled) {
-      newContent[0] = insertDropcapIntoAST(newContent[0], template);
+    if (newContent && newContent.length > 0) {
+      newContent[0] = insertDropcapIntoAST(
+        newContent[0],
+        template,
+        dropcapsDisabled
+      );
     }
 
     receiveChildList([
