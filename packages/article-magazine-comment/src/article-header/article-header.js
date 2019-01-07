@@ -19,6 +19,7 @@ const ArticleHeader = ({
   authorImage,
   byline,
   flags,
+  hasVideo,
   headline,
   label,
   onAuthorPress,
@@ -30,7 +31,7 @@ const ArticleHeader = ({
     {({ theme: { headlineFont } }) => (
       <View style={styles.container}>
         <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
-        <Label label={label} />
+        <Label isVideo={hasVideo} label={label} />
         <Text
           style={[
             styles.articleHeadline,

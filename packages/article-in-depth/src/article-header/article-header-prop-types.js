@@ -6,6 +6,7 @@ const { colours } = styleguide();
 const articleHeaderPropTypes = {
   backgroundColour: PropTypes.string,
   flags: PropTypes.arrayOf(PropTypes.string),
+  hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
@@ -15,6 +16,7 @@ const articleHeaderPropTypes = {
 const articleHeaderDefaultProps = {
   backgroundColour: colours.functional.brandColour,
   flags: null,
+  hasVideo: false,
   label: null,
   standfirst: null,
   textColour: colours.functional.white

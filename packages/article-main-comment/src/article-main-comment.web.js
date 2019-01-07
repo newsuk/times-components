@@ -21,6 +21,7 @@ class ArticlePage extends Component {
       },
       byline,
       flags,
+      hasVideo,
       headline,
       label,
       publicationName,
@@ -34,6 +35,7 @@ class ArticlePage extends Component {
         authorImage={author.image}
         byline={byline}
         flags={flags}
+        hasVideo={hasVideo}
         headline={getHeadline(headline, shortHeadline)}
         label={label}
         publicationName={publicationName}

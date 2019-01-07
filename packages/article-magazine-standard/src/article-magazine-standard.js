@@ -28,6 +28,7 @@ class ArticleMagazineStandard extends Component {
     const {
       byline,
       flags,
+      hasVideo,
       headline,
       label,
       publicationName,
@@ -41,6 +42,7 @@ class ArticleMagazineStandard extends Component {
         <ArticleHeader
           byline={byline}
           flags={flags}
+          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           onAuthorPress={onAuthorPress}

@@ -23,6 +23,7 @@ class ArticlePage extends Component {
       backgroundColour,
       byline,
       flags,
+      hasVideo,
       headline,
       label,
       publicationName,
@@ -37,6 +38,7 @@ class ArticlePage extends Component {
         <ArticleHeader
           backgroundColour={backgroundColour}
           flags={flags}
+          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           standfirst={standfirst}

@@ -22,6 +22,7 @@ const ArticleHeader = ({
   authorImage,
   byline,
   flags,
+  hasVideo,
   headline,
   label,
   publicationName,
@@ -32,7 +33,7 @@ const ArticleHeader = ({
     <AuthorImageContainer style={styles.authorImage}>
       <Image aspectRatio={1} uri={authorImage} />
     </AuthorImageContainer>
-    <Label label={label} />
+    <Label isVideo={hasVideo} label={label} />
     <HeadlineContainer
       accessibilityRole="heading"
       aria-level="1"

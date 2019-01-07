@@ -15,6 +15,7 @@ import styles from "../styles";
 const ArticleHeader = ({
   backgroundColour,
   flags,
+  hasVideo,
   headline,
   label,
   standfirst,
@@ -28,7 +29,7 @@ const ArticleHeader = ({
           { backgroundColor: backgroundColour, width: "100%" }
         ]}
       >
-        <Label color={textColour} label={label} />
+        <Label color={textColour} isVideo={hasVideo} label={label} />
         <Text
           style={[
             styles.articleHeadline,

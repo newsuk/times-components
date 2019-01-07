@@ -1,31 +1,36 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
 import ArticleLabel from "@times-components/article-label";
+import VideoLabel from "@times-components/video-label";
 import Context from "@times-components/context";
 import { colours } from "@times-components/styleguide";
+
+import {
+  articleLabelPropTypes,
+  articleLabelDefaultProps
+} from "./article-label-prop-types";
 import styles from "../styles";
 
-const Label = ({ label }) =>
-  label ? (
+const HeaderLabel = ({ isVideo, label }) => {
+  if (!isVideo && !label) return null;
+
+  const Label = isVideo ? VideoLabel : ArticleLabel;
+
+  return (
     <Context.Consumer>
       {({ theme: { sectionColour } }) => (
         <View style={styles.label}>
-          <ArticleLabel
+          <Label
             color={sectionColour || colours.section.default}
             title={label}
           />
         </View>
       )}
     </Context.Consumer>
-  ) : null;
-
-Label.propTypes = {
-  label: PropTypes.string
+  );
 };
 
-Label.defaultProps = {
-  label: null
-};
+HeaderLabel.propTypes = articleLabelPropTypes;
+HeaderLabel.defaultProps = articleLabelDefaultProps;
 
-export default Label;
+export default HeaderLabel;
