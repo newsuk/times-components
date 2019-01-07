@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.30](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.1.29...@times-components/author-profile@5.1.30) (2019-01-07)
+
+
+### Bug Fixes
+
+* don't show images on author pages with no lead assets turned on ([#1594](https://github.com/newsuk/times-components/issues/1594)) ([d21e186](https://github.com/newsuk/times-components/commit/d21e186))
+
+
+
+
+
 ## [5.1.29](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.1.28...@times-components/author-profile@5.1.29) (2019-01-04)
 
 **Note:** Version bump only for package @times-components/author-profile
