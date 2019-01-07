@@ -121,14 +121,18 @@ class ArticleSkeleton extends Component {
       receiveChildList
     } = this.props;
     const { dataSource, width } = this.state;
-    const { template } = dataSource;
+    const { dropcapsDisabled, template } = dataSource;
     if (!dataSource.content) {
       return null;
     }
 
     const newContent = [...dataSource.content];
     if (newContent && newContent.length > 0) {
-      newContent[0] = insertDropcapIntoAST(newContent[0], template);
+      newContent[0] = insertDropcapIntoAST(
+        newContent[0],
+        template,
+        dropcapsDisabled
+      );
     }
 
     const articleOrganised = listViewDataHelper({

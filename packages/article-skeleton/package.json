@@ -11,6 +11,7 @@
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test": "jest --config='./__tests__/common/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",

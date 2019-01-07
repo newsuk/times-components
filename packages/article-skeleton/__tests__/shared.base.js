@@ -283,16 +283,6 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "a full article with all content items with not a dropcap template",
-    test() {
-      const template = "mainstandard";
-      const article = articleFixture({ ...fixtureArgs, template });
-      const output = renderComponent(renderArticle(article));
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
     name: "an article with no content",
     test() {
       const article = articleFixture({ ...fixtureArgs, content: [] });

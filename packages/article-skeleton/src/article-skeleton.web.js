@@ -46,6 +46,7 @@ class ArticleSkeleton extends Component {
       data: {
         commentsEnabled,
         content,
+        dropcapsDisabled,
         id: articleId,
         section,
         url,
@@ -72,7 +73,11 @@ class ArticleSkeleton extends Component {
       ) : null;
     const newContent = [...content];
     if (newContent && newContent.length > 0) {
-      newContent[0] = insertDropcapIntoAST(newContent[0], template);
+      newContent[0] = insertDropcapIntoAST(
+        newContent[0],
+        template,
+        dropcapsDisabled
+      );
     }
 
     receiveChildList([
