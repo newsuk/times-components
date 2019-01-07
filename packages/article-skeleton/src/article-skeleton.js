@@ -121,7 +121,7 @@ class ArticleSkeleton extends Component {
       receiveChildList
     } = this.props;
     const { dataSource, width } = this.state;
-    const { template, dropcapsDisabled } = dataSource;
+    const { dropcapsDisabled, template } = dataSource;
     if (!dataSource.content) {
       return null;
     }
