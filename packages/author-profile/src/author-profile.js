@@ -17,7 +17,6 @@ const AuthorProfile = ({
   adConfig,
   author,
   error,
-  hasLeadAssets = true,
   isLoading: isHeaderLoading,
   onArticlePress,
   onNext,
@@ -38,6 +37,7 @@ const AuthorProfile = ({
   const {
     articles,
     biography,
+    hasLeadAssets = true,
     image: uri,
     jobTitle,
     name,

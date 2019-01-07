@@ -55,7 +55,6 @@ export default (props, platformTests = []) => {
           <AuthorProfile
             {...props}
             author={{ ...props.author, hasLeadAssets: false, image: "" }}
-            hasLeadAssets={false}
             isLoading={false}
             pageSize={12}
           />
@@ -87,7 +86,6 @@ export default (props, platformTests = []) => {
           <AuthorProfile
             {...props}
             author={{ ...props.author, hasLeadAssets: false }}
-            hasLeadAssets={false}
             isLoading={false}
             page={2}
           />

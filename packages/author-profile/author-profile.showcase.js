@@ -46,11 +46,7 @@ const articleImageRatio = "3:2";
 const pageSize = 20;
 const slug = "deborah-haynes";
 
-const makeAuthorProfile = (
-  decorateAction,
-  params,
-  { hasLeadAssets = true } = {}
-) => (
+const makeAuthorProfile = (decorateAction, params) => (
   <MockFixture
     params={params}
     render={mocks => (
@@ -74,7 +70,6 @@ const makeAuthorProfile = (
               <AuthorProfile
                 author={author}
                 error={error}
-                hasLeadAssets={hasLeadAssets}
                 isLoading={isLoading}
                 page={page}
                 pageSize={authorPageSize}
@@ -151,10 +146,7 @@ export default {
             },
             pageSize,
             slug
-          }),
-          {
-            hasLeadAssets: false
-          }
+          })
         ),
       name: "Default without images",
       type: "story"
