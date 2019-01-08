@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.48](https://github.com/newsuk/times-components/compare/@times-components/button@2.2.47...@times-components/button@2.2.48) (2019-01-08)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
 ## [2.2.47](https://github.com/newsuk/times-components/compare/@times-components/button@2.2.46...@times-components/button@2.2.47) (2019-01-03)
 
 **Note:** Version bump only for package @times-components/button

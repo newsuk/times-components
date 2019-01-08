@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.63](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.1.62...@times-components/error-view@2.1.63) (2019-01-08)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
 ## [2.1.62](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.1.61...@times-components/error-view@2.1.62) (2019-01-03)
 
 **Note:** Version bump only for package @times-components/error-view
