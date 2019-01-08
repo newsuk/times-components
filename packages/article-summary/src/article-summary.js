@@ -35,7 +35,11 @@ const ArticleSummary = props => {
       ? ArticleBylineOpinion
       : ArticleByline;
 
-    return <Byline {...bylineProps} className={bylineProps.bylineClass} />;
+    return (
+      <Text>
+        <Byline {...bylineProps} className={bylineProps.bylineClass} />
+      </Text>
+    );
   };
 
   const renderLabel = () => {

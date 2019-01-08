@@ -39,7 +39,9 @@ exports[`1. no short headline 1`] = `
                     />
                   </div>
                   <div>
-                    Sathnam Sanghera
+                    <span>
+                      Sathnam Sanghera
+                    </span>
                   </div>
                   <h3
                     aria-level="3"

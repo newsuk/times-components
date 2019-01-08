@@ -48,7 +48,9 @@ exports[`1. one opinion and one support related article 1`] = `
                   />
                 </View>
                 <Text>
-                  Sathnam Sanghera
+                  <Text>
+                    Sathnam Sanghera
+                  </Text>
                 </Text>
                 <Text
                   accessibilityRole="heading"
@@ -110,7 +112,9 @@ exports[`1. one opinion and one support related article 1`] = `
                   January 17 2018, 12:00pm
                 </Text>
                 <Text>
-                  Deborah Haynes
+                  <Text>
+                    Deborah Haynes
+                  </Text>
                 </Text>
               </View>
             </Card>
