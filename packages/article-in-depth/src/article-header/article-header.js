@@ -20,31 +20,46 @@ const ArticleHeader = ({
   label,
   standfirst,
   textColour
-}) => (
-  <Context.Consumer>
-    {({ theme: { headlineFont } }) => (
-      <View
-        style={[
-          styles.container,
-          { backgroundColor: backgroundColour, width: "100%" }
-        ]}
-      >
-        <Label color={textColour} isVideo={hasVideo} label={label} />
-        <Text
+}) => {
+  const bgColour =
+    backgroundColour && backgroundColour.rgba
+      ? `rgba(${backgroundColour.rgba.red}, ${backgroundColour.rgba.green}, ${
+          backgroundColour.rgba.blue
+        }, ${backgroundColour.rgba.alpha})`
+      : null;
+  const txtColour =
+    textColour && textColour.rgba
+      ? `rgba(${textColour.rgba.red}, ${textColour.rgba.green}, ${
+          textColour.rgba.blue
+        }, ${textColour.rgba.alpha})`
+      : null;
+
+  return (
+    <Context.Consumer>
+      {({ theme: { headlineFont } }) => (
+        <View
           style={[
-            styles.articleHeadline,
-            { color: textColour },
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            styles.container,
+            { backgroundColor: bgColour, width: "100%" }
           ]}
         >
-          {headline}
-        </Text>
-        <Flags color={textColour} flags={flags} />
-        <Standfirst color={textColour} standfirst={standfirst} />
-      </View>
-    )}
-  </Context.Consumer>
-);
+        <Label color={textColour} isVideo={hasVideo} label={label} />
+          <Text
+            style={[
+              styles.articleHeadline,
+              { color: txtColour },
+              headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            ]}
+          >
+            {headline}
+          </Text>
+          <Flags color={textColour} flags={flags} />
+          <Standfirst color={txtColour} standfirst={standfirst} />
+        </View>
+      )}
+    </Context.Consumer>
+  );
+};
 
 ArticleHeader.propTypes = {
   ...articleHeaderPropTypes

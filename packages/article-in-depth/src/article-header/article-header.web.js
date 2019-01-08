@@ -26,34 +26,47 @@ const ArticleHeader = ({
   label,
   standfirst,
   textColour
-}) => (
-  <Context.Consumer>
-    {({ theme: { headlineFont } }) => (
-      <View
-        style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
-      >
-        <HeaderContainer style={styles.container}>
-          <Label color={textColour} isVideo={hasVideo} label={label} />
-          <HeadlineContainer
-            accessibilityRole="heading"
-            aria-level="1"
-            style={[
-              styles.articleHeadline,
-              { color: textColour },
-              headlineFont ? { fontFamily: fonts[headlineFont] } : null
-            ]}
-          >
-            {headline}
-          </HeadlineContainer>
-          <FlagsContainer>
-            <Flags color={textColour} flags={flags} />
-          </FlagsContainer>
-          <Standfirst color={textColour} standfirst={standfirst} />
-        </HeaderContainer>
-      </View>
-    )}
-  </Context.Consumer>
-);
+}) => {
+  const bgColour =
+    backgroundColour && backgroundColour.rgba
+      ? `rgba(${backgroundColour.rgba.red}, ${backgroundColour.rgba.green}, ${
+          backgroundColour.rgba.blue
+        }, ${backgroundColour.rgba.alpha})`
+      : null;
+  const txtColour =
+    textColour && textColour.rgba
+      ? `rgba(${textColour.rgba.red}, ${textColour.rgba.green}, ${
+          textColour.rgba.blue
+        }, ${textColour.rgba.alpha})`
+      : null;
+
+  return (
+    <Context.Consumer>
+      {({ theme: { headlineFont } }) => (
+        <View style={{ backgroundColor: bgColour, order: 2, width: "100%" }}>
+          <HeaderContainer style={styles.container}>
+            <Label color={textColour} isVideo={hasVideo} label={label} />
+            <HeadlineContainer
+              accessibilityRole="heading"
+              aria-level="1"
+              style={[
+                styles.articleHeadline,
+                { color: txtColour },
+                headlineFont ? { fontFamily: fonts[headlineFont] } : null
+              ]}
+            >
+              {headline}
+            </HeadlineContainer>
+            <FlagsContainer>
+              <Flags color={txtColour} flags={flags} />
+            </FlagsContainer>
+            <Standfirst color={txtColour} standfirst={standfirst} />
+          </HeaderContainer>
+        </View>
+      )}
+    </Context.Consumer>
+  );
+};
 
 ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;
