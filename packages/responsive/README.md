@@ -6,6 +6,8 @@ orientation changes and provides layout information through context named
 `ResponsiveContext`. Any child component can then use this layout information by
 consuming `ResponsiveContext`.
 
+On web, it just passes the screenWidth through the context and does not include any orientation listeners.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
@@ -31,6 +33,7 @@ Testing can be done on each platform individually
 ```
 yarn test:android
 yarn test:ios
+yarn test:web
 ```
 
 Or the tests for all platforms can be run
