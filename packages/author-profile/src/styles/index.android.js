@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
-import { tabletWidth } from "@times-components/utils";
+import { spacing, tabletWidth } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({

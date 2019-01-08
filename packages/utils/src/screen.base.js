@@ -9,7 +9,3 @@ export const normaliseWidth = width => {
 };
 
 export const screenWidth = () => Dimensions.get("window").width;
-
-export const tabletWidth = 660;
-
-export const isTablet = () => screenWidth() > tabletWidth;

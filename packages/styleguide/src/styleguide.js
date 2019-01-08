@@ -31,6 +31,7 @@ const fonts = timesFonts;
 const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
 const lineHeight = timesLineHeightsFactory();
+const tabletWidth = 660;
 
 export {
   Animations,
@@ -42,6 +43,7 @@ export {
   lineHeight,
   scales,
   spacing,
+  tabletWidth,
   themeFactory
 };
 export default ({ scale = scales.medium } = {}) => ({

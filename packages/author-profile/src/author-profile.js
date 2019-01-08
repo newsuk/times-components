@@ -8,7 +8,8 @@ import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
-import { ratioTextToFloat, Responsive } from "@times-components/utils";
+import Responsive from "@times-components/responsive";
+import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
@@ -69,46 +70,46 @@ const AuthorProfile = ({
     : AuthorArticlesNoImagesProvider;
 
   return (
-    <Responsive>
-      <SelectedProvider
-        articleImageRatio="3:2"
-        debounceTimeMs={250}
-        page={page}
-        pageSize={initPageSize}
-        slug={slug}
-      >
-        {({
-          author: data,
-          error: articlesError,
-          isLoading: articlesLoading,
-          pageSize,
-          refetch: refetchArticles,
-          fetchMore,
-          variables: { imageRatio = "3:2" }
-        }) => {
-          const fetchMoreArticles = length =>
-            fetchMore({
-              updateQuery: (prev, { fetchMoreResult }) =>
-                fetchMoreResult
-                  ? {
-                      author: {
-                        ...prev.author,
-                        articles: {
-                          ...prev.author.articles,
-                          list: [
-                            ...prev.author.articles.list,
-                            ...fetchMoreResult.author.articles.list
-                          ]
-                        }
+    <SelectedProvider
+      articleImageRatio="3:2"
+      debounceTimeMs={250}
+      page={page}
+      pageSize={initPageSize}
+      slug={slug}
+    >
+      {({
+        author: data,
+        error: articlesError,
+        isLoading: articlesLoading,
+        pageSize,
+        refetch: refetchArticles,
+        fetchMore,
+        variables: { imageRatio = "3:2" }
+      }) => {
+        const fetchMoreArticles = length =>
+          fetchMore({
+            updateQuery: (prev, { fetchMoreResult }) =>
+              fetchMoreResult
+                ? {
+                    author: {
+                      ...prev.author,
+                      articles: {
+                        ...prev.author.articles,
+                        list: [
+                          ...prev.author.articles.list,
+                          ...fetchMoreResult.author.articles.list
+                        ]
                       }
                     }
-                  : prev,
-              variables: {
-                skip: length
-              }
-            });
+                  }
+                : prev,
+            variables: {
+              skip: length
+            }
+          });
 
-          return (
+        return (
+          <Responsive>
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}
@@ -127,10 +128,10 @@ const AuthorProfile = ({
               refetch={refetchArticles}
               showImages={hasLeadAssets}
             />
-          );
-        }}
-      </SelectedProvider>
-    </Responsive>
+          </Responsive>
+        );
+      }}
+    </SelectedProvider>
   );
 };
 
