@@ -4,90 +4,98 @@ exports[`1. article list 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url="https://article1.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead1.io"
-            isLoading={false}
-            showImage={true}
+          <Link
+            url="https://article1.io"
           >
-            <ArticleSummary
-              bylineProps={null}
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "TIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#636C17",
-                  "isVideo": true,
-                  "title": "Label 1",
-                }
-              }
-            />
-          </Card>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead1.io"
+                isLoading={false}
+                showImage={true}
+              >
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <Link
-        url="https://article2.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead2.io"
-            isLoading={false}
-            showImage={true}
+          <Link
+            url="https://article2.io"
           >
-            <ArticleSummary
-              bylineProps={
-                Object {
-                  "ast": Array [
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead2.io"
+                isLoading={false}
+                showImage={true}
+              >
+                <ArticleSummary
+                  bylineProps={
                     Object {
-                      "attributes": Object {},
-                      "children": Array [
+                      "ast": Array [
                         Object {
-                          "attributes": Object {
-                            "value": "Byline 2",
-                          },
-                          "children": Array [],
-                          "name": "text",
+                          "attributes": Object {},
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "Byline 2",
+                              },
+                              "children": Array [],
+                              "name": "text",
+                            },
+                          ],
+                          "name": "paragraph",
                         },
                       ],
-                      "name": "paragraph",
-                    },
-                  ],
-                  "color": "#1D1D1B",
-                }
-              }
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "SUNDAYTIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#1D1D1B",
-                  "isVideo": false,
-                  "title": "Label 2",
-                }
-              }
-            />
-          </Card>
+                      "color": "#1D1D1B",
+                    }
+                  }
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "SUNDAYTIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#1D1D1B",
+                      "isVideo": false,
+                      "title": "Label 2",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -108,36 +116,40 @@ exports[`2. article list with no images 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url="https://article1.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead1.io"
-            isLoading={false}
-            showImage={false}
+          <Link
+            url="https://article1.io"
           >
-            <ArticleSummary
-              bylineProps={null}
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "TIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#636C17",
-                  "isVideo": true,
-                  "title": "Label 1",
-                }
-              }
-            />
-          </Card>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead1.io"
+                isLoading={false}
+                showImage={false}
+              >
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -158,36 +170,40 @@ exports[`3. a retry button when load more fails 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url="https://article1.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead1.io"
-            isLoading={false}
-            showImage={true}
+          <Link
+            url="https://article1.io"
           >
-            <ArticleSummary
-              bylineProps={null}
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "TIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#636C17",
-                  "isVideo": true,
-                  "title": "Label 1",
-                }
-              }
-            />
-          </Card>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead1.io"
+                isLoading={false}
+                showImage={true}
+              >
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -207,36 +223,40 @@ exports[`4. no footer with data equalling the count 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url="https://article1.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead1.io"
-            isLoading={false}
-            showImage={true}
+          <Link
+            url="https://article1.io"
           >
-            <ArticleSummary
-              bylineProps={null}
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "TIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#636C17",
-                  "isVideo": true,
-                  "title": "Label 1",
-                }
-              }
-            />
-          </Card>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead1.io"
+                isLoading={false}
+                showImage={true}
+              >
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View />
   </View>
@@ -377,36 +397,40 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link
-        url="https://article1.io"
-      >
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri="https://lead1.io"
-            isLoading={false}
-            showImage={true}
+          <Link
+            url="https://article1.io"
           >
-            <ArticleSummary
-              bylineProps={null}
-              datePublicationProps={
-                Object {
-                  "date": "2017-11-17T00:01:00.000Z",
-                  "publication": "TIMES",
-                }
-              }
-              labelProps={
-                Object {
-                  "color": "#636C17",
-                  "isVideo": true,
-                  "title": "Label 1",
-                }
-              }
-            />
-          </Card>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri="https://lead1.io"
+                isLoading={false}
+                showImage={true}
+              >
+                <ArticleSummary
+                  bylineProps={null}
+                  datePublicationProps={
+                    Object {
+                      "date": "2017-11-17T00:01:00.000Z",
+                      "publication": "TIMES",
+                    }
+                  }
+                  labelProps={
+                    Object {
+                      "color": "#636C17",
+                      "isVideo": true,
+                      "title": "Label 1",
+                    }
+                  }
+                />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>

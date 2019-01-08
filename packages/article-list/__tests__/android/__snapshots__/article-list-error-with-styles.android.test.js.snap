@@ -63,6 +63,8 @@ exports[`2. article list 1`] = `
       <View
         style={
           Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
             "paddingHorizontal": 10,
           }
         }
@@ -71,7 +73,9 @@ exports[`2. article list 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />
@@ -84,7 +88,9 @@ exports[`2. article list 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />
