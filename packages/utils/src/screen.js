@@ -1,10 +1,6 @@
 import { PixelRatio } from "react-native";
 
-import {
-  acceptedWidths,
-  normaliseWidth,
-  screenWidth
-} from "./screen.base.js";
+import { acceptedWidths, normaliseWidth, screenWidth } from "./screen.base.js";
 
 export { acceptedWidths, normaliseWidth, screenWidth };
 export const screenWidthInPixels = () =>
