@@ -44,10 +44,10 @@
     "eslint": "5.9.0",
     "jest": "23.3.0",
     "prettier": "1.14.3",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.5.2",
+    "react-test-renderer": "16.6.3",
     "webpack": "4.6.0"
   },
   "dependencies": {
