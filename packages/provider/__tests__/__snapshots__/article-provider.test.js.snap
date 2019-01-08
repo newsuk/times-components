@@ -3,6 +3,16 @@
 exports[`ArticleProvider returns query result 1`] = `
 Object {
   "__typename": "Article",
+  "backgroundColour": Object {
+    "__typename": "Colour",
+    "rgba": Object {
+      "__typename": "RGBA",
+      "alpha": 13,
+      "blue": 29,
+      "green": -5,
+      "red": 17,
+    },
+  },
   "byline": Array [
     Object {
       "attributes": Object {},
@@ -31,6 +41,7 @@ Object {
       "name": "paragraph",
     },
   ],
+  "dropcapsDisabled": true,
   "flags": Array [
     "NEW",
     "EXCLUSIVE",
@@ -188,12 +199,24 @@ Object {
       },
     ],
   },
+  "savingEnabled": true,
   "section": "business",
+  "sharingEnabled": true,
   "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
   "shortIdentifier": "37b27qd2s",
   "slug": "france-defies-may-over-russia",
   "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
   "template": "mainstandard",
+  "textColour": Object {
+    "__typename": "Colour",
+    "rgba": Object {
+      "__typename": "RGBA",
+      "alpha": -77,
+      "blue": -37,
+      "green": 92,
+      "red": 33,
+    },
+  },
   "topics": Array [
     Object {
       "__typename": "Topic",

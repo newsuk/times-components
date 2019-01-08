@@ -4,7 +4,16 @@ import gql from "graphql-tag";
 export default addTypenameToDocument(gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
+      backgroundColour {
+        rgba {
+          red
+          green
+          blue
+          alpha
+        }
+      }
       content
+      dropcapsDisabled
       flags
       keywords
       leadAsset {
@@ -50,8 +59,18 @@ export default addTypenameToDocument(gql`
           }
         }
       }
+      savingEnabled
+      sharingEnabled
       standfirst
       template
+      textColour {
+        rgba {
+          red
+          green
+          blue
+          alpha
+        }
+      }
       topics(maxCount: 5) {
         name
         slug
