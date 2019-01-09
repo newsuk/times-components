@@ -48,7 +48,9 @@ exports[`1. one opinion related article 1`] = `
                   />
                 </View>
                 <Text>
-                  Sathnam Sanghera
+                  <Text>
+                    Sathnam Sanghera
+                  </Text>
                 </Text>
                 <Text
                   accessibilityRole="heading"

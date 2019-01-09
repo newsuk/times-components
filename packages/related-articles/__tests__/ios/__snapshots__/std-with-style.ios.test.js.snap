@@ -124,31 +124,33 @@ exports[`default styles 1`] = `
                 >
                   March 13 2015, 6:54pm
                 </Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "flexDirection": "row",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
+                <Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
                     }
-                  }
-                >
-                  Camilla Long
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "flexDirection": "row",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
+                  >
+                    Camilla Long
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
                     }
-                  }
-                >
-                  , Environment Editor
+                  >
+                    , Environment Editor
+                  </Text>
                 </Text>
               </View>
             </Card>

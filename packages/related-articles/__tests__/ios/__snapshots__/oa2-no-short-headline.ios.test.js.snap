@@ -48,7 +48,9 @@ exports[`1. no short headline 1`] = `
                   />
                 </View>
                 <Text>
-                  Sathnam Sanghera
+                  <Text>
+                    Sathnam Sanghera
+                  </Text>
                 </Text>
                 <Text
                   accessibilityRole="heading"

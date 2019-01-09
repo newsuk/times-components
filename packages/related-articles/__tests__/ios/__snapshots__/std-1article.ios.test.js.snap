@@ -57,10 +57,12 @@ exports[`1. a single related article 1`] = `
                   March 13 2015, 6:54pm
                 </Text>
                 <Text>
-                  Camilla Long
-                </Text>
-                <Text>
-                  , Environment Editor
+                  <Text>
+                    Camilla Long
+                  </Text>
+                  <Text>
+                    , Environment Editor
+                  </Text>
                 </Text>
               </View>
             </Card>
