@@ -1,4 +1,12 @@
 {
+  "backgroundColour": {
+    "rgba": {
+      "alpha": 1,
+      "blue": 255,
+      "green": 255,
+      "red": 255
+    }
+  },
   "byline": [
     {
       "name": "inline",
@@ -17,6 +25,7 @@
   "paywalledContent": true,
   "commentCount": 65,
   "commentsEnabled": true,
+  "dropcapsDisabled": false,
   "paywalledContent": [
     {
       "name": "paragraph",
@@ -1530,12 +1539,22 @@
       }
     ]
   },
+  "savingEnabled": true,
+  "sharingEnabled": true,
   "section": "business",
   "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
   "shortIdentifier": "37b27qd2s",
   "slug": "france-defies-may-over-russia",
   "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
   "template": "mainstandard",
+  "textColour": {
+    "rgba": {
+      "alpha": 1,
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    }
+  },
   "topics": [
     {
       "name": "Islington",

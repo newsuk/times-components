@@ -7,10 +7,10 @@ Object {
     "__typename": "Colour",
     "rgba": Object {
       "__typename": "RGBA",
-      "alpha": 66,
-      "blue": 70,
-      "green": 91,
-      "red": 84,
+      "alpha": 1,
+      "blue": 255,
+      "green": 255,
+      "red": 255,
     },
   },
   "byline": Array [
@@ -41,7 +41,7 @@ Object {
       "name": "paragraph",
     },
   ],
-  "dropcapsDisabled": true,
+  "dropcapsDisabled": false,
   "flags": Array [
     "NEW",
     "EXCLUSIVE",
@@ -211,10 +211,10 @@ Object {
     "__typename": "Colour",
     "rgba": Object {
       "__typename": "RGBA",
-      "alpha": 34,
-      "blue": 68,
-      "green": 25,
-      "red": 17,
+      "alpha": 1,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
     },
   },
   "topics": Array [
