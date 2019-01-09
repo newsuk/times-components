@@ -7,3 +7,4 @@ export { default as AspectRatioContainer } from "./media-aspect-ratio";
 export { default as getLeadAsset } from "./get-lead-asset";
 export { default as getStandardTemplateCrop } from "./crop-config";
 export { default as getHeadline } from "./get-headline";
+export { default as gqlRgbaToStyle } from "./gql-rgba-to-style";

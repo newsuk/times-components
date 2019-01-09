@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
+import { gqlRgbaToStyle } from "@times-components/utils"
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -27,18 +28,8 @@ const ArticleHeader = ({
   standfirst,
   textColour
 }) => {
-  const bgColour =
-    backgroundColour && backgroundColour.rgba
-      ? `rgba(${backgroundColour.rgba.red}, ${backgroundColour.rgba.green}, ${
-          backgroundColour.rgba.blue
-        }, ${backgroundColour.rgba.alpha})`
-      : null;
-  const txtColour =
-    textColour && textColour.rgba
-      ? `rgba(${textColour.rgba.red}, ${textColour.rgba.green}, ${
-          textColour.rgba.blue
-        }, ${textColour.rgba.alpha})`
-      : null;
+  const bgColour = gqlRgbaToStyle(backgroundColour);
+  const txtColour = gqlRgbaToStyle(textColour);
 
   return (
     <Context.Consumer>
