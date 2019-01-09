@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.20](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.19...@times-components/article-summary@3.3.20) (2019-01-09)
+
+
+### Bug Fixes
+
+* multiple article bylines should appear on a single line ([#1598](https://github.com/newsuk/times-components/issues/1598)) ([a2c6597](https://github.com/newsuk/times-components/commit/a2c6597))
+
+
+
+
+
 ## [3.3.19](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.18...@times-components/article-summary@3.3.19) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/article-summary
