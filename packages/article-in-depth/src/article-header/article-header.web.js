@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
-import { gqlRgbaToStyle } from "@times-components/utils"
+import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
