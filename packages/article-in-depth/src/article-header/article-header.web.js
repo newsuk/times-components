@@ -21,6 +21,7 @@ import {
 const ArticleHeader = ({
   backgroundColour,
   flags,
+  hasVideo,
   headline,
   label,
   standfirst,
@@ -32,7 +33,7 @@ const ArticleHeader = ({
         style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
       >
         <HeaderContainer style={styles.container}>
-          <Label color={textColour} label={label} />
+          <Label color={textColour} isVideo={hasVideo} label={label} />
           <HeadlineContainer
             accessibilityRole="heading"
             aria-level="1"

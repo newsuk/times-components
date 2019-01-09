@@ -21,6 +21,7 @@ import {
 const ArticleHeader = ({
   byline,
   flags,
+  hasVideo,
   headline,
   label,
   publicationName,
@@ -30,7 +31,7 @@ const ArticleHeader = ({
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
       <HeaderContainer style={styles.container}>
-        <Label label={label} />
+        <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer
           accessibilityRole="heading"
           aria-level="1"

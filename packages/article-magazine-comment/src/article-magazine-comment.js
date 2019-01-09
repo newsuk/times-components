@@ -31,6 +31,7 @@ class ArticleMagazineComment extends Component {
       },
       byline,
       flags,
+      hasVideo,
       headline,
       label,
       publicationName,
@@ -45,6 +46,7 @@ class ArticleMagazineComment extends Component {
           authorImage={author.image}
           byline={byline}
           flags={flags}
+          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           onAuthorPress={onAuthorPress}
