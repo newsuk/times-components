@@ -1,6 +1,6 @@
 import styleguideFactory from "@times-components/styleguide";
 
-const { colours, fonts, fontFactory, spacing } = styleguideFactory();
+const { colours, fontFactory, spacing } = styleguideFactory();
 const sharedStyles = {
   caption: {
     ...fontFactory({
@@ -35,12 +35,6 @@ const sharedStyles = {
     color: colours.functional.action,
     marginLeft: 3,
     textDecorationLine: "none"
-  },
-  quotes: {
-    fontFamily: fonts.headlineRegular,
-    fontSize: 75,
-    marginBottom: spacing(-8),
-    marginTop: 0
   },
   text: {
     ...fontFactory({
