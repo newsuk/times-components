@@ -62,6 +62,11 @@ class MockArticle {
     return this;
   }
 
+  setTemplate(template: TemplateType) {
+    this.article.template = template;
+    return this;
+  }
+
   sundayTimes() {
     this.article.publicationName = getPublicationName(
       PublicationName.SUNDAYTIMES
