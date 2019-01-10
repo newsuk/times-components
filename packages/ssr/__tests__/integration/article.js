@@ -3,7 +3,7 @@ import { MockArticle } from "@times-components/fixture-generator";
 const relatedArticleCount = 3;
 
 const articleTemplateTest = template =>
-  describe("Article", () => {
+  describe(`Article - ${template}`, () => {
     let sundayTimesArticleWithThreeRelatedArticles;
 
     beforeEach(() => {
@@ -93,6 +93,7 @@ const articleTemplateTest = template =>
     });
   });
 
+articleTemplateTest("indepth");
 articleTemplateTest("mainstandard");
 articleTemplateTest("maincomment");
 articleTemplateTest("magazinestandard");
