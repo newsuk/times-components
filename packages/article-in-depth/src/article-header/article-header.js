@@ -35,7 +35,7 @@ const ArticleHeader = ({
             { backgroundColor: bgColour, width: "100%" }
           ]}
         >
-        <Label color={textHex} isVideo={hasVideo} label={label} />
+          <Label color={textHex} isVideo={hasVideo} label={label} />
           <Text
             style={[
               styles.articleHeadline,

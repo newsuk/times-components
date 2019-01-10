@@ -27,5 +27,5 @@ describe("gqlRgbaToHex should", () => {
   it("return null for an invalid object", () => {
     const invalidColour = delete colour.rgba;
     expect(gqlRgbaToHex(invalidColour)).toEqual(null);
-  })
-})
+  });
+});
