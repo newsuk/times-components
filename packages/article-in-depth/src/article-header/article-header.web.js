@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
-import { gqlRgbaToStyle } from "@times-components/utils";
+import { gqlRgbaToHex, gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -30,13 +30,14 @@ const ArticleHeader = ({
 }) => {
   const bgColour = gqlRgbaToStyle(backgroundColour);
   const txtColour = gqlRgbaToStyle(textColour);
+  const textHex = gqlRgbaToHex(textColour);
 
   return (
     <Context.Consumer>
       {({ theme: { headlineFont } }) => (
         <View style={{ backgroundColor: bgColour, order: 2, width: "100%" }}>
           <HeaderContainer style={styles.container}>
-            <Label color={textColour} isVideo={hasVideo} label={label} />
+            <Label color={textHex} isVideo={hasVideo} label={label} />
             <HeadlineContainer
               accessibilityRole="heading"
               aria-level="1"
@@ -49,7 +50,7 @@ const ArticleHeader = ({
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <Flags color={txtColour} flags={flags} />
+              <Flags color={textHex} flags={flags} />
             </FlagsContainer>
             <Standfirst color={txtColour} standfirst={standfirst} />
           </HeaderContainer>
