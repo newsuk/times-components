@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
+import { gqlRgbaToHex, gqlRgbaToStyle } from "@times-components/utils";
 import styles from "./style";
 import {
   articleFlagPropTypes,
@@ -12,11 +13,15 @@ import {
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
     <View style={styles.diamond}>
-      <IconDiamond fillColour={color} height={8} width={8} />
+      <IconDiamond
+        fillColour={gqlRgbaToHex(color) || color}
+        height={8}
+        width={8}
+      />
     </View>
     <Text
       accessibilityLabel={`${title} Flag`}
-      style={[styles.title, { color }]}
+      style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}

@@ -20,3 +20,24 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
   SWIMMING
 </Text>
 `;
+
+exports[`Article Label test on ios renders ArticleLabel with GraphQL Colour type 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#008347",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 12,
+      "fontWeight": "400",
+      "letterSpacing": 1.2,
+      "lineHeight": 14,
+      "marginBottom": 0,
+    }
+  }
+>
+  SWIMMING
+</Text>
+`;

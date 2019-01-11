@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
-import { gqlRgbaToHex, gqlRgbaToStyle } from "@times-components/utils";
+import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Flags from "../article-flags/article-flags";
@@ -24,7 +24,6 @@ const ArticleHeader = ({
 }) => {
   const bgColour = gqlRgbaToStyle(backgroundColour);
   const txtColour = gqlRgbaToStyle(textColour);
-  const textHex = gqlRgbaToHex(textColour);
 
   return (
     <Context.Consumer>
@@ -35,7 +34,7 @@ const ArticleHeader = ({
             { backgroundColor: bgColour, width: "100%" }
           ]}
         >
-          <Label color={textHex} isVideo={hasVideo} label={label} />
+          <Label color={textColour} isVideo={hasVideo} label={label} />
           <Text
             style={[
               styles.articleHeadline,
@@ -45,7 +44,7 @@ const ArticleHeader = ({
           >
             {headline}
           </Text>
-          <Flags color={textHex} flags={flags} />
+          <Flags color={textColour} flags={flags} />
           <Standfirst color={txtColour} standfirst={standfirst} />
         </View>
       )}

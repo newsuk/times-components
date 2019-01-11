@@ -64,6 +64,7 @@
   "dependencies": {
     "@times-components/icons": "2.2.56",
     "@times-components/styleguide": "3.12.2",
+    "@times-components/utils": "4.0.17",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
