@@ -51,23 +51,6 @@ exports[`3. hex colour article flag 1`] = `
 </View>
 `;
 
-exports[`3. new article flag 1`] = `
-<View>
-  <View>
-    <IconDiamond
-      fillColour="#E34605"
-      height={8}
-      width={8}
-    />
-  </View>
-  <Text
-    accessibilityLabel="new Flag"
-  >
-    new
-  </Text>
-</View>
-`;
-
 exports[`4. rgba colour article flag 1`] = `
 <View>
   <View>
@@ -85,40 +68,6 @@ exports[`4. rgba colour article flag 1`] = `
 </View>
 `;
 
-exports[`4. updated article flag 1`] = `
-<View>
-  <View>
-    <IconDiamond
-      fillColour="#3C81BE"
-      height={8}
-      width={8}
-    />
-  </View>
-  <Text
-    accessibilityLabel="updated Flag"
-  >
-    updated
-  </Text>
-</View>
-`;
-
-exports[`5. exclusive article flag 1`] = `
-<View>
-  <View>
-    <IconDiamond
-      fillColour="#C51D24"
-      height={8}
-      width={8}
-    />
-  </View>
-  <Text
-    accessibilityLabel="exclusive Flag"
-  >
-    exclusive
-  </Text>
-</View>
-`;
-
 exports[`5. new article flag 1`] = `
 <View>
   <View>
@@ -132,23 +81,6 @@ exports[`5. new article flag 1`] = `
     accessibilityLabel="new Flag"
   >
     new
-  </Text>
-</View>
-`;
-
-exports[`6. sponsored article flag 1`] = `
-<View>
-  <View>
-    <IconDiamond
-      fillColour="#4D4D4D"
-      height={8}
-      width={8}
-    />
-  </View>
-  <Text
-    accessibilityLabel="sponsored Flag"
-  >
-    sponsored
   </Text>
 </View>
 `;
