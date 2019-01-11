@@ -19,10 +19,7 @@ exports[`1. pull quote in culture magazine 1`] = `
 .S1 {
   border-left-width: 0px;
   display: inline;
-  font-size: 75px;
   line-height: inherit;
-  margin-left: 0px;
-  margin-bottom: -40px;
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -105,6 +102,9 @@ exports[`1. pull quote in culture magazine 1`] = `
 .IS1 {
   color: rgba(105,105,105,1.00);
   font-family: Flama-Bold;
+  font-size: 75px;
+  margin-bottom: -40px;
+  margin-left: -3px;
 }
 
 .IS2 {
@@ -168,10 +168,7 @@ exports[`2. pull quote in style magazine 1`] = `
   border-left-width: 0px;
   color: rgba(105,105,105,1.00);
   display: inline;
-  font-size: 75px;
   line-height: inherit;
-  margin-left: 0px;
-  margin-bottom: -40px;
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -241,6 +238,9 @@ exports[`2. pull quote in style magazine 1`] = `
 
 .IS1 {
   font-family: CenturyGothic-Bold;
+  font-size: 75px;
+  margin-bottom: -40px;
+  margin-left: -5px;
 }
 </style>
 
@@ -300,10 +300,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   border-left-width: 0px;
   color: rgba(105,105,105,1.00);
   display: inline;
-  font-size: 75px;
   line-height: inherit;
-  margin-left: 0px;
-  margin-bottom: -40px;
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -373,6 +370,9 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
 
 .IS1 {
   font-family: Tiempos-Headline-Bold;
+  font-size: 75px;
+  margin-bottom: -40px;
+  margin-left: -2px;
 }
 </style>
 

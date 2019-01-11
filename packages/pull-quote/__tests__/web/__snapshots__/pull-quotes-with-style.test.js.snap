@@ -19,11 +19,8 @@ exports[`different colours 1`] = `
 .S1 {
   border-left-width: 0px;
   display: inline;
-  font-family: TimesModern-Regular;
-  font-size: 75px;
   line-height: inherit;
   margin-left: 0px;
-  margin-bottom: -40px;
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -125,6 +122,9 @@ exports[`different colours 1`] = `
 
 .IS1 {
   color: rgba(133,0,41,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 75px;
+  margin-bottom: -40px;
 }
 
 .IS2 {
