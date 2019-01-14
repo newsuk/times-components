@@ -1,25 +1,50 @@
 import PropTypes from "prop-types";
-import styleguide from "@times-components/styleguide";
-
-const { colours } = styleguide();
 
 const articleHeaderPropTypes = {
-  backgroundColour: PropTypes.string,
+  backgroundColour: PropTypes.shape({
+    rgba: PropTypes.shape({
+      alpha: PropTypes.number,
+      blue: PropTypes.number,
+      green: PropTypes.number,
+      red: PropTypes.number
+    })
+  }),
   flags: PropTypes.arrayOf(PropTypes.string),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  textColour: PropTypes.string
+  textColour: PropTypes.shape({
+    rgba: PropTypes.shape({
+      alpha: PropTypes.number,
+      blue: PropTypes.number,
+      green: PropTypes.number,
+      red: PropTypes.number
+    })
+  })
 };
 
 const articleHeaderDefaultProps = {
-  backgroundColour: colours.functional.brandColour,
+  backgroundColour: {
+    rgba: {
+      alpha: 1,
+      blue: 255,
+      green: 255,
+      red: 255
+    }
+  },
   flags: null,
   hasVideo: false,
   label: null,
   standfirst: null,
-  textColour: colours.functional.white
+  textColour: {
+    rgba: {
+      alpha: 1,
+      blue: 0,
+      green: 0,
+      red: 0
+    }
+  }
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

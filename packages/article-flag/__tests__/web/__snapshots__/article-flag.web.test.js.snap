@@ -34,7 +34,41 @@ exports[`2. red article flag 1`] = `
 </div>
 `;
 
-exports[`3. new article flag 1`] = `
+exports[`3. hex colour article flag 1`] = `
+<div>
+  <div>
+    <IconDiamond
+      fillColour="#FF0000"
+      height={8}
+      width={8}
+    />
+  </div>
+  <div
+    aria-label="Coloured Red Flag"
+  >
+    coloured red
+  </div>
+</div>
+`;
+
+exports[`4. rgba colour article flag 1`] = `
+<div>
+  <div>
+    <IconDiamond
+      fillColour="#0B0308"
+      height={8}
+      width={8}
+    />
+  </div>
+  <div
+    aria-label="Coloured Red Flag"
+  >
+    coloured red
+  </div>
+</div>
+`;
+
+exports[`5. new article flag 1`] = `
 <div>
   <div>
     <IconDiamond
@@ -51,7 +85,7 @@ exports[`3. new article flag 1`] = `
 </div>
 `;
 
-exports[`4. updated article flag 1`] = `
+exports[`6. updated article flag 1`] = `
 <div>
   <div>
     <IconDiamond
@@ -68,7 +102,7 @@ exports[`4. updated article flag 1`] = `
 </div>
 `;
 
-exports[`5. exclusive article flag 1`] = `
+exports[`7. exclusive article flag 1`] = `
 <div>
   <div>
     <IconDiamond
@@ -85,7 +119,7 @@ exports[`5. exclusive article flag 1`] = `
 </div>
 `;
 
-exports[`6. sponsored article flag 1`] = `
+exports[`8. sponsored article flag 1`] = `
 <div>
   <div>
     <IconDiamond

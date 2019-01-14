@@ -34,7 +34,41 @@ exports[`2. red article flag 1`] = `
 </View>
 `;
 
-exports[`3. new article flag 1`] = `
+exports[`3. hex colour article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#FF0000"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="Coloured Red Flag"
+  >
+    coloured red
+  </Text>
+</View>
+`;
+
+exports[`4. rgba colour article flag 1`] = `
+<View>
+  <View>
+    <IconDiamond
+      fillColour="#0B0308"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="Coloured Red Flag"
+  >
+    coloured red
+  </Text>
+</View>
+`;
+
+exports[`5. new article flag 1`] = `
 <View>
   <View>
     <IconDiamond
@@ -51,7 +85,7 @@ exports[`3. new article flag 1`] = `
 </View>
 `;
 
-exports[`4. updated article flag 1`] = `
+exports[`6. updated article flag 1`] = `
 <View>
   <View>
     <IconDiamond
@@ -68,7 +102,7 @@ exports[`4. updated article flag 1`] = `
 </View>
 `;
 
-exports[`5. exclusive article flag 1`] = `
+exports[`7. exclusive article flag 1`] = `
 <View>
   <View>
     <IconDiamond
@@ -85,7 +119,7 @@ exports[`5. exclusive article flag 1`] = `
 </View>
 `;
 
-exports[`6. sponsored article flag 1`] = `
+exports[`8. sponsored article flag 1`] = `
 <View>
   <View>
     <IconDiamond

@@ -40,7 +40,14 @@ const renderArticle = ({
     {({ article, isLoading, error, refetch }) => {
       const data = {
         ...article,
-        backgroundColour: "#3C81BE",
+        backgroundColour: {
+          rgba: {
+            alpha: 1,
+            blue: 190,
+            green: 129,
+            red: 60
+          }
+        },
         template: "indepth",
         textColour: "#FFFFFF"
       };

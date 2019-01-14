@@ -3,6 +3,16 @@
 exports[`ArticleProvider returns query result 1`] = `
 Object {
   "__typename": "Article",
+  "backgroundColour": Object {
+    "__typename": "Colour",
+    "rgba": Object {
+      "__typename": "RGBA",
+      "alpha": 1,
+      "blue": 255,
+      "green": 255,
+      "red": 255,
+    },
+  },
   "byline": Array [
     Object {
       "attributes": Object {},
@@ -31,6 +41,7 @@ Object {
       "name": "paragraph",
     },
   ],
+  "dropcapsDisabled": false,
   "flags": Array [
     "NEW",
     "EXCLUSIVE",
@@ -194,6 +205,16 @@ Object {
   "slug": "france-defies-may-over-russia",
   "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
   "template": "mainstandard",
+  "textColour": Object {
+    "__typename": "Colour",
+    "rgba": Object {
+      "__typename": "RGBA",
+      "alpha": 1,
+      "blue": 0,
+      "green": 0,
+      "red": 0,
+    },
+  },
   "topics": Array [
     Object {
       "__typename": "Topic",

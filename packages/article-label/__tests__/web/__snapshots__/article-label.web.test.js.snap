@@ -12,3 +12,16 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
   SWIMMING
 </div>
 `;
+
+exports[`Article Label test on web renders ArticleLabel with GraphQL Colour type 1`] = `
+<div
+  dir="auto"
+  style={
+    Object {
+      "color": "rgba(0,131,71,1.00)",
+    }
+  }
+>
+  SWIMMING
+</div>
+`;
