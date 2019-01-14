@@ -93,8 +93,4 @@ const articleTemplateTest = template =>
     });
   });
 
-articleTemplateTest("indepth");
-articleTemplateTest("mainstandard");
-articleTemplateTest("maincomment");
-articleTemplateTest("magazinestandard");
-articleTemplateTest("magazinecomment");
+export default articleTemplateTest;
