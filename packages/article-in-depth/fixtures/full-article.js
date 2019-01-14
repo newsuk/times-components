@@ -2034,6 +2034,14 @@ export default ({ withAds = true, ...config } = {}) => {
 
 export const testFixture = {
   __typename: "Article",
+  backgroundColour: {
+    rgba: {
+      alpha: 1,
+      blue: 190,
+      green: 129,
+      red: 60
+    }
+  },
   byline: [
     {
       attributes: {},
@@ -2151,6 +2159,14 @@ export const testFixture = {
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",
+  textColour: {
+    rgba: {
+      alpha: 1,
+      blue: 255,
+      green: 255,
+      red: 255
+    }
+  },
   topics: [
     {
       name: "Topic",

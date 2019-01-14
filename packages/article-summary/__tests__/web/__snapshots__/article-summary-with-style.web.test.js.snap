@@ -45,6 +45,15 @@ exports[`1. article summary component with a single paragraph 1`] = `
   line-height: 15px;
   margin-bottom: 5px;
 }
+
+.S6 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
 </style>
 
 <div
@@ -85,40 +94,44 @@ exports[`1. article summary component with a single paragraph 1`] = `
       publication="TIMES"
     />
   </div>
-  <ArticleByline
-    ast={
-      Array [
-        Object {
-          "attributes": Object {
-            "slug": "camilla-long",
+  <div
+    className="S6"
+  >
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
           },
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Camilla Long",
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
               },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "author",
-        },
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": ", Environment Editor",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "inline",
-        },
-      ]
-    }
-  />
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </div>
 </div>
 `;
 

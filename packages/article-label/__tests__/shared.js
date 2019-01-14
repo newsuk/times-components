@@ -10,4 +10,19 @@ module.exports = () => {
 
     expect(testInstance.toJSON()).toMatchSnapshot();
   });
+  it("renders ArticleLabel with GraphQL Colour type", () => {
+    const color = {
+      rgba: {
+        alpha: 1,
+        blue: 71,
+        green: 131,
+        red: 0
+      }
+    };
+    const testInstance = TestRenderer.create(
+      <ArticleLabel color={color} title="swimming" />
+    );
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
+  });
 };

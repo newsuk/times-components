@@ -17,6 +17,7 @@ import styles from "../styles";
 const ArticleHeader = ({
   byline,
   flags,
+  hasVideo,
   headline,
   label,
   onAuthorPress,
@@ -27,7 +28,7 @@ const ArticleHeader = ({
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
       <View style={styles.container}>
-        <Label label={label} />
+        <Label isVideo={hasVideo} label={label} />
         <Text
           style={[
             styles.articleHeadline,

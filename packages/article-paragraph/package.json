@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-paragraph",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Article Paragraph",
   "main": "dist/",
   "dev": "src/",

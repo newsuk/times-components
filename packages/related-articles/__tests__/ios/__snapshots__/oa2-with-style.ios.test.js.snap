@@ -77,18 +77,20 @@ exports[`default styles 1`] = `
                     TEST LABEL
                   </Text>
                 </View>
-                <Text
-                  style={
-                    Object {
-                      "color": "#850029",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 27,
+                <Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#850029",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 27,
+                      }
                     }
-                  }
-                >
-                  Sathnam Sanghera
+                  >
+                    Sathnam Sanghera
+                  </Text>
                 </Text>
                 <Text
                   style={

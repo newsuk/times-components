@@ -31,6 +31,34 @@ export default () => {
       }
     },
     {
+      name: "hex colour article flag",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleFlag color="#FF0000" title="Coloured Red" />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "rgba colour article flag",
+      test: () => {
+        const gqlRgbaColour = {
+          rgba: {
+            alpha: 1,
+            blue: 8,
+            green: 3,
+            red: 11
+          }
+        };
+        const testInstance = TestRenderer.create(
+          <ArticleFlag color={gqlRgbaColour} title="Coloured Red" />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "new article flag",
       test: () => {
         const testInstance = TestRenderer.create(<NewArticleFlag />);

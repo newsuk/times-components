@@ -251,7 +251,6 @@ const selectTemplate = select =>
 
 const renderArticleConfig = ({
   boolean,
-  color,
   decorateAction,
   hasScaling,
   link = null,
@@ -271,10 +270,12 @@ const renderArticleConfig = ({
   const template = selectTemplate(select);
   const inDepthBackgroundColour =
     template === "indepth"
-      ? color("In Depth Background Colour: ", "#3C81BE")
+      ? { rgba: { alpha: 1, blue: 190, green: 129, red: 60 } }
       : null;
   const inDepthTextColour =
-    template === "indepth" ? color("In Depth Text Colour: ", "#FFFFFF") : null;
+    template === "indepth"
+      ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
+      : null;
 
   return (
     <Fragment>

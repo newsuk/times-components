@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.3.2...@times-components/article-paragraph@0.3.3) (2019-01-11)
+
+
+### Bug Fixes
+
+* pull quotes and drop caps should be aligned correctly at different scales ([#1600](https://github.com/newsuk/times-components/issues/1600)) ([2802a16](https://github.com/newsuk/times-components/commit/2802a16))
+
+
+
+
+
 ## [0.3.2](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.3.1...@times-components/article-paragraph@0.3.2) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/article-paragraph

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.5.1...@times-components/article-magazine-comment@0.5.2) (2019-01-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.5.0...@times-components/article-magazine-comment@0.5.1) (2019-01-11)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.4.3...@times-components/article-magazine-comment@0.5.0) (2019-01-09)
+
+
+### Features
+
+* add support for video label in all article templates ([#1596](https://github.com/newsuk/times-components/issues/1596)) ([195b573](https://github.com/newsuk/times-components/commit/195b573))
+
+
+
+
+
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.4.2...@times-components/article-magazine-comment@0.4.3) (2019-01-09)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.4.1...@times-components/article-magazine-comment@0.4.2) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

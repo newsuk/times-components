@@ -25,6 +25,7 @@ class ArticlePage extends Component {
     const {
       byline,
       flags,
+      hasVideo,
       headline,
       label,
       publicationName,
@@ -38,6 +39,7 @@ class ArticlePage extends Component {
         <ArticleHeader
           byline={byline}
           flags={flags}
+          hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
           publicationName={publicationName}

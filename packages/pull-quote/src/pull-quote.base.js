@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { fonts } from "@times-components/styleguide";
 import PullQuoteContent from "./pull-quote-content";
 import PullQuoteTwitterLink from "./pull-quote-twitter-link";
 import { propTypes, defaultProps } from "./pull-quote-prop-types";
 import styles from "./styles";
+import quoteStyleFactory from "./styles/quotes";
 
 const PullQuotes = ({
   caption,
@@ -17,13 +17,7 @@ const PullQuotes = ({
   twitter
 }) => (
   <View style={styles.container}>
-    <Text
-      style={[
-        styles.quotes,
-        { color: quoteColour },
-        font ? { fontFamily: fonts[font] } : null
-      ]}
-    >
+    <Text style={[quoteStyleFactory(font), { color: quoteColour }]}>
       &ldquo;
     </Text>
     <PullQuoteContent>{children}</PullQuoteContent>
