@@ -1,4 +1,4 @@
-import { getSlotConfig, getPosition } from "./generate-config";
+import { getSlotConfig, slotPositions } from "./generate-config";
 
 const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   adserverTargeting: [
@@ -36,7 +36,7 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
 });
 
 const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
-  const position = getPosition(slot);
+  const position = slotPositions[slot] || slotPositions["default"];
   const { sizes } = getSlotConfig(slot, width);
   let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
