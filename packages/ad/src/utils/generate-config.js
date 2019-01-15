@@ -35,23 +35,23 @@ const sizeMap = {
   "article-sponsored-ad": sizes.pixel,
   default: sizes.intervention,
   header: sizes.header,
-  "native-inline-ad": sizeMap.native,
+  "native-inline-ad": sizes.native,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
   pixelteads: sizes.pixel
 };
 
-const getAdSizes = (sizeMap, width) => {
-  for (let i = sizeMap.length - 1; i >= 0; i -= 1) {
-    if (width >= sizeMap[i].width) {
-      return sizeMap[i].sizes;
+const getAdSizes = (adSizeMap, width) => {
+  for (let i = adSizeMap.length - 1; i >= 0; i -= 1) {
+    if (width >= adSizeMap[i].width) {
+      return adSizeMap[i].sizes;
     }
   }
   return [];
 };
 
 const getSlotConfig = (slotName, width) => {
-  const mappings = sizeMap[slotName] || sizeMap["default"];
+  const mappings = sizeMap[slotName] || sizeMap.default;
   const adSizes = getAdSizes(mappings, width);
   const maxSizes = getMaxSizes(adSizes);
 
