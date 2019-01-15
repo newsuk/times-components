@@ -27,6 +27,8 @@ jest.mock("@times-components/image", () => ({
 }));
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
+// eslint-disable-next-line global-require
+jest.mock("@times-components/responsive", () => require("./responsive-mock"));
 jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/video", () => "Video");
 jest.mock("@times-components/video-label", () => "VideoLabel");
