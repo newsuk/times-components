@@ -56,6 +56,7 @@ exports[`1. an article list header 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 15,
           "lineHeight": 26,
+          "maxWidth": 660,
           "paddingBottom": 40,
           "textAlign": "center",
         }

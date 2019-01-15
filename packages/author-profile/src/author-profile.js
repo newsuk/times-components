@@ -8,6 +8,7 @@ import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
+import Responsive from "@times-components/responsive";
 import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
@@ -108,24 +109,26 @@ const AuthorProfile = ({
           });
 
         return (
-          <ArticleList
-            adConfig={adConfig}
-            articleListHeader={articleListHeader}
-            articles={get(data, "articles.list", [])}
-            articlesLoading={articlesLoading}
-            count={get(articles, "count", 0)}
-            emptyStateMessage={emptyStateMessage}
-            error={articlesError}
-            fetchMore={fetchMoreArticles}
-            imageRatio={ratioTextToFloat(imageRatio)}
-            onArticlePress={onArticlePress}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-            refetch={refetchArticles}
-            showImages={hasLeadAssets}
-          />
+          <Responsive>
+            <ArticleList
+              adConfig={adConfig}
+              articleListHeader={articleListHeader}
+              articles={get(data, "articles.list", [])}
+              articlesLoading={articlesLoading}
+              count={get(articles, "count", 0)}
+              emptyStateMessage={emptyStateMessage}
+              error={articlesError}
+              fetchMore={fetchMoreArticles}
+              imageRatio={ratioTextToFloat(imageRatio)}
+              onArticlePress={onArticlePress}
+              onNext={onNext}
+              onPrev={onPrev}
+              page={page}
+              pageSize={pageSize}
+              refetch={refetchArticles}
+              showImages={hasLeadAssets}
+            />
+          </Responsive>
         );
       }}
     </SelectedProvider>

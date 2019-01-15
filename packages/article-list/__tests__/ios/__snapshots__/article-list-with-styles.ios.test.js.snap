@@ -4,23 +4,43 @@ exports[`1. article list 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link>
-        <View
-          style={
-            Object {
-              "paddingHorizontal": 10,
-              "paddingVertical": 10,
-            }
-          }
-        >
-          <Card>
-            <ArticleSummary />
-          </Card>
-        </View>
-      </Link>
       <View
         style={
           Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 660,
+            }
+          }
+        >
+          <Link>
+            <View
+              style={
+                Object {
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Card>
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
             "paddingHorizontal": 10,
           }
         }
@@ -29,27 +49,47 @@ exports[`1. article list 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />
       </View>
     </View>
     <View>
-      <Link>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
-              "paddingVertical": 10,
+              "flex": 1,
+              "maxWidth": 660,
             }
           }
         >
-          <Card>
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View
+              style={
+                Object {
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Card>
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -57,7 +97,9 @@ exports[`1. article list 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />
@@ -78,20 +120,38 @@ exports[`2. article list with no images 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
-              "paddingVertical": 10,
+              "flex": 1,
+              "maxWidth": 660,
             }
           }
         >
-          <Card>
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View
+              style={
+                Object {
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Card>
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -99,7 +159,9 @@ exports[`2. article list with no images 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />
@@ -120,20 +182,38 @@ exports[`3. a retry button when load more fails 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
-              "paddingVertical": 10,
+              "flex": 1,
+              "maxWidth": 660,
             }
           }
         >
-          <Card>
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View
+              style={
+                Object {
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Card>
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>
@@ -141,7 +221,9 @@ exports[`3. a retry button when load more fails 1`] = `
           style={
             Object {
               "backgroundColor": "#DBDBDB",
+              "flex": 1,
               "height": 1,
+              "maxWidth": 660,
             }
           }
         />

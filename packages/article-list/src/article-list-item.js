@@ -5,8 +5,9 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
+import { ResponsiveContext } from "@times-components/responsive";
 import Link from "@times-components/link";
-import { colours } from "@times-components/styleguide";
+import { colours, tabletWidth } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
@@ -73,39 +74,54 @@ class ArticleListItem extends Component {
     const imageUri = getImageUri(article);
 
     return (
-      <Link onPress={this.onItemPress} url={url}>
-        <View style={styles.listItemContainer}>
-          <Card
-            highResSize={highResSize}
-            imageRatio={imageRatio}
-            imageUri={imageUri}
-            isLoading={isLoading}
-            showImage={showImage}
-          >
-            <ArticleSummary
-              bylineProps={
-                byline
-                  ? {
-                      ast: byline,
-                      color: colours.section.default
-                    }
-                  : null
-              }
-              content={this.renderContent}
-              datePublicationProps={{
-                date: publishedTime,
-                publication: publicationName
-              }}
-              headline={this.renderHeadline}
-              labelProps={{
-                color: colours.section[section] || colours.section.default,
-                isVideo: hasVideo,
-                title: label
-              }}
-            />
-          </Card>
-        </View>
-      </Link>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <View style={{ flex: 1, maxWidth: tabletWidth }}>
+              <Link onPress={this.onItemPress} url={url}>
+                <View
+                  style={
+                    isTablet
+                      ? styles.listItemContainerTablet
+                      : styles.listItemContainer
+                  }
+                >
+                  <Card
+                    highResSize={highResSize}
+                    imageRatio={imageRatio}
+                    imageUri={imageUri}
+                    isLoading={isLoading}
+                    showImage={showImage}
+                  >
+                    <ArticleSummary
+                      bylineProps={
+                        byline
+                          ? {
+                              ast: byline,
+                              color: colours.section.default
+                            }
+                          : null
+                      }
+                      content={this.renderContent}
+                      datePublicationProps={{
+                        date: publishedTime,
+                        publication: publicationName
+                      }}
+                      headline={this.renderHeadline}
+                      labelProps={{
+                        color:
+                          colours.section[section] || colours.section.default,
+                        isVideo: hasVideo,
+                        title: label
+                      }}
+                    />
+                  </Card>
+                </View>
+              </Link>
+            </View>
+          </View>
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 }

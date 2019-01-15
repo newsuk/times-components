@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
+import { ResponsiveContext } from "@times-components/responsive";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
@@ -32,14 +33,14 @@ class CardContent extends Component {
       showImage
     } = this.props;
 
-    const renderImage = () => {
+    const renderImage = isTablet => {
       if (!showImage) return null;
 
       return (
         <View
           className={imageContainerClass}
           style={[
-            styles.imageContainer,
+            isTablet ? styles.imageContainerTablet : styles.imageContainer,
             imageStyle,
             isReversed ? styles.reversedImageContainer : ""
           ]}
@@ -56,25 +57,31 @@ class CardContent extends Component {
     };
 
     return (
-      <View
-        style={[
-          styles.cardContainer,
-          isReversed ? styles.reversedCardContainer : ""
-        ]}
-      >
-        {!isReversed ? renderImage() : null}
-        <View
-          className={contentContainerClass}
-          style={[
-            styles.contentContainer,
-            isReversed ? styles.reversedContentContainer : "",
-            isLoading ? styles.loadingContentContainer : ""
-          ]}
-        >
-          {isLoading ? <Loading /> : children}
-        </View>
-        {isReversed ? renderImage() : null}
-      </View>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <View
+            style={[
+              isTablet ? styles.cardContainerTablet : styles.cardContainer,
+              isReversed ? styles.reversedCardContainer : ""
+            ]}
+          >
+            {!isReversed ? renderImage(isTablet) : null}
+            <View
+              className={contentContainerClass}
+              style={[
+                isTablet
+                  ? styles.contentContainerTablet
+                  : styles.contentContainer,
+                isReversed ? styles.reversedContentContainer : "",
+                isLoading ? styles.loadingContentContainer : ""
+              ]}
+            >
+              {isLoading ? <Loading /> : children}
+            </View>
+            {isReversed ? renderImage(isTablet) : null}
+          </View>
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 }

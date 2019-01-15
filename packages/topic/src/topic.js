@@ -5,6 +5,7 @@ import ArticleList, {
 } from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import { TopicArticlesProvider } from "@times-components/provider";
+import Responsive from "@times-components/responsive";
 import { ratioTextToFloat } from "@times-components/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
@@ -85,24 +86,26 @@ const Topic = ({
           });
 
         return (
-          <ArticleList
-            adConfig={adConfig}
-            articleListHeader={articleListHeader}
-            articles={get(data, "articles.list", [])}
-            articlesLoading={articlesLoading}
-            count={get(data, "articles.count", 0)}
-            emptyStateMessage={emptyStateMessage}
-            error={articlesError}
-            fetchMore={fetchMoreArticles}
-            imageRatio={ratioTextToFloat(imageRatio)}
-            onArticlePress={onArticlePress}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-            refetch={refetchArticles}
-            showImages
-          />
+          <Responsive>
+            <ArticleList
+              adConfig={adConfig}
+              articleListHeader={articleListHeader}
+              articles={get(data, "articles.list", [])}
+              articlesLoading={articlesLoading}
+              count={get(data, "articles.count", 0)}
+              emptyStateMessage={emptyStateMessage}
+              error={articlesError}
+              fetchMore={fetchMoreArticles}
+              imageRatio={ratioTextToFloat(imageRatio)}
+              onArticlePress={onArticlePress}
+              onNext={onNext}
+              onPrev={onPrev}
+              page={page}
+              pageSize={pageSize}
+              refetch={refetchArticles}
+              showImages
+            />
+          </Responsive>
         );
       }}
     </TopicArticlesProvider>

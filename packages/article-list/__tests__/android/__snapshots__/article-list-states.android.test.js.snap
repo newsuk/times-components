@@ -55,55 +55,67 @@ exports[`4. loading state 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <Link>
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri={null}
-            isLoading={true}
-            showImage={true}
-          >
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri={null}
+                isLoading={true}
+                showImage={true}
+              >
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <Link>
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri={null}
-            isLoading={true}
-            showImage={true}
-          >
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri={null}
+                isLoading={true}
+                showImage={true}
+              >
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
       <View>
         <View />
       </View>
     </View>
     <View>
-      <Link>
+      <View>
         <View>
-          <Card
-            highResSize={1440}
-            imageRatio={1}
-            imageUri={null}
-            isLoading={true}
-            showImage={true}
-          >
-            <ArticleSummary />
-          </Card>
+          <Link>
+            <View>
+              <Card
+                highResSize={1440}
+                imageRatio={1}
+                imageUri={null}
+                isLoading={true}
+                showImage={true}
+              >
+                <ArticleSummary />
+              </Card>
+            </View>
+          </Link>
         </View>
-      </Link>
+      </View>
     </View>
     <View>
       <View>

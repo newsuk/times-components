@@ -9,10 +9,19 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "flex-end"
   },
+  cardContainerTablet: {
+    alignItems: "flex-start",
+    flexDirection: "row",
+    flexWrap: "wrap"
+  },
   contentContainer: {
     flex: 1,
     marginBottom: 0,
     minWidth: "100%"
+  },
+  contentContainerTablet: {
+    flex: 1,
+    marginBottom: 0
   },
   headerContainer: {
     height: 24,
@@ -23,6 +32,11 @@ const styles = StyleSheet.create({
     flex: 1,
     marginBottom: spacing(2),
     minWidth: "100%"
+  },
+  imageContainerTablet: {
+    flex: 1,
+    marginRight: spacing(4),
+    maxWidth: 320
   },
   lastBar: {
     marginBottom: 0,

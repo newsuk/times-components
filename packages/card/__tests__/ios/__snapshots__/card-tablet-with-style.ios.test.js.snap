@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. card default state 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginRight": 20,
+        "maxWidth": 320,
+      }
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+      fadeImageIn={false}
+      highResSize={900}
+      lowResSize={25}
+      uri="https://img.io/img"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+      }
+    }
+  >
+    <Text>
+      A card
+    </Text>
+  </View>
+</View>
+`;
