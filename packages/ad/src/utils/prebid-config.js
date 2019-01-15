@@ -1,4 +1,4 @@
-import { getSlotConfig } from "./generate-config";
+import { getSlotConfig, slotPositions } from "./generate-config";
 
 const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   adserverTargeting: [
@@ -36,6 +36,7 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
 });
 
 const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
+  const position = slotPositions[slot] || slotPositions.default;
   const { sizes } = getSlotConfig(slot, width);
   let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
@@ -53,8 +54,12 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
     bids.push({
       bidder: "appnexus",
       params: {
+        keywords: {
+          pos: position,
+          section
+        },
         placementId: biddersConfig.appnexus.placementId,
-        section
+        position
       }
     });
   }
@@ -63,9 +68,8 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
       bidder: "rubicon",
       params: {
         accountId: biddersConfig.rubicon.accountId,
-        inventory: {
-          section
-        },
+        keywords: [section],
+        position: position === 1 ? "atf" : "btf",
         siteId: biddersConfig.rubicon.siteId,
         zoneId: biddersConfig.rubicon.zoneId
       }

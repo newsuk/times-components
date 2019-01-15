@@ -14,37 +14,44 @@ const getMaxSizes = adSizes => {
   );
 };
 
-const getSizeMaps = slotName => {
-  switch (slotName) {
-    case "header":
-    case "ad-header":
-      return sizes.header;
-    case "pixel":
-    case "ad-pixel":
-    case "pixelskin":
-    case "ad-pixelskin":
-    case "pixelteads":
-    case "ad-pixelteads":
-    case "article-sponsored-ad":
-      return sizes.pixel;
-    case "native-inline-ad":
-      return sizes.native;
-    default:
-      return sizes.intervention;
-  }
+const slotPositions = {
+  "ad-header": 1,
+  "ad-pixel": 2,
+  "ad-pixelskin": 2,
+  "ad-pixelteads": 2,
+  "article-sponsored-ad": 2,
+  default: 0,
+  header: 1,
+  pixel: 2,
+  pixelskin: 2,
+  pixelteads: 2
 };
 
-const getAdSizes = (sizeMap, width) => {
-  for (let i = sizeMap.length - 1; i >= 0; i -= 1) {
-    if (width >= sizeMap[i].width) {
-      return sizeMap[i].sizes;
+const sizeMap = {
+  "ad-header": sizes.header,
+  "ad-pixel": sizes.pixel,
+  "ad-pixelskin": sizes.pixelskin,
+  "ad-pixelteads": sizes.pixelteads,
+  "article-sponsored-ad": sizes.pixel,
+  default: sizes.intervention,
+  header: sizes.header,
+  "native-inline-ad": sizes.native,
+  pixel: sizes.pixel,
+  pixelskin: sizes.pixel,
+  pixelteads: sizes.pixel
+};
+
+const getAdSizes = (adSizeMap, width) => {
+  for (let i = adSizeMap.length - 1; i >= 0; i -= 1) {
+    if (width >= adSizeMap[i].width) {
+      return adSizeMap[i].sizes;
     }
   }
   return [];
 };
 
 const getSlotConfig = (slotName, width) => {
-  const mappings = getSizeMaps(slotName);
+  const mappings = sizeMap[slotName] || sizeMap.default;
   const adSizes = getAdSizes(mappings, width);
   const maxSizes = getMaxSizes(adSizes);
 
@@ -56,4 +63,4 @@ const getSlotConfig = (slotName, width) => {
   };
 };
 
-export { getAdSizes, getSizeMaps, getSlotConfig, getMaxSizes };
+export { getAdSizes, getSlotConfig, getMaxSizes, slotPositions };
