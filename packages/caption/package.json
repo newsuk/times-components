@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "2.2.12",
+  "version": "2.2.13",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.12.2",
+    "@times-components/styleguide": "3.13.0",
     "prop-types": "15.6.2"
   },
   "devDependencies": {

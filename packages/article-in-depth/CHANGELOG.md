@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.3.2...@times-components/article-in-depth@0.4.0) (2019-01-15)
+
+
+### Features
+
+* listing page tablet ([#1591](https://github.com/newsuk/times-components/issues/1591)) ([221398d](https://github.com/newsuk/times-components/commit/221398d))
+
+
+
+
+
 ## [0.3.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.3.1...@times-components/article-in-depth@0.3.2) (2019-01-14)
 
 **Note:** Version bump only for package @times-components/article-in-depth

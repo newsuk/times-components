@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.1.33...@times-components/author-profile@5.2.0) (2019-01-15)
+
+
+### Features
+
+* listing page tablet ([#1591](https://github.com/newsuk/times-components/issues/1591)) ([221398d](https://github.com/newsuk/times-components/commit/221398d))
+
+
+
+
+
 ## [5.1.33](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.1.32...@times-components/author-profile@5.1.33) (2019-01-14)
 
 **Note:** Version bump only for package @times-components/author-profile
