@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.2.15...@times-components/ad@2.3.0) (2019-01-15)
+
+
+### Features
+
+* adding section and position to prebid vendors ([#1576](https://github.com/newsuk/times-components/issues/1576)) ([df8fd86](https://github.com/newsuk/times-components/commit/df8fd86))
+
+
+
+
+
 ## [2.2.15](https://github.com/newsuk/times-components/compare/@times-components/ad@2.2.14...@times-components/ad@2.2.15) (2019-01-15)
 
 **Note:** Version bump only for package @times-components/ad
