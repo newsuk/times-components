@@ -34,7 +34,7 @@ const ArticleHeader = ({
             { backgroundColor: bgColour, width: "100%" }
           ]}
         >
-          <Label color={textColour} isVideo={hasVideo} label={label} />
+          <Label color={txtColour} isVideo={hasVideo} label={label} />
           <Text
             style={[
               styles.articleHeadline,
@@ -44,7 +44,7 @@ const ArticleHeader = ({
           >
             {headline}
           </Text>
-          <Flags color={textColour} flags={flags} />
+          <Flags color={txtColour} flags={flags} />
           <Standfirst color={txtColour} standfirst={standfirst} />
         </View>
       )}

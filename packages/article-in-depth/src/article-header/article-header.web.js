@@ -36,7 +36,7 @@ const ArticleHeader = ({
       {({ theme: { headlineFont } }) => (
         <View style={{ backgroundColor: bgColour, order: 2, width: "100%" }}>
           <HeaderContainer style={styles.container}>
-            <Label color={textColour} isVideo={hasVideo} label={label} />
+            <Label color={txtColour} isVideo={hasVideo} label={label} />
             <HeadlineContainer
               accessibilityRole="heading"
               aria-level="1"
@@ -49,7 +49,7 @@ const ArticleHeader = ({
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <Flags color={textColour} flags={flags} />
+              <Flags color={txtColour} flags={flags} />
             </FlagsContainer>
             <Standfirst color={txtColour} standfirst={standfirst} />
           </HeaderContainer>
