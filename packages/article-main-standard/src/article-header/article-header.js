@@ -15,9 +15,8 @@ const ArticleHeader = ({
   headline,
   label,
   standfirst,
-  style
 }) => (
-  <View style={[...style]}>
+  <View style={styles.articleMainContentRow}>
     <HeaderLabel isVideo={hasVideo} label={label} />
     <Text selectable style={styles.articleHeadLineText}>
       {headline}
