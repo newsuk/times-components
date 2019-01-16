@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "6.5.38",
+  "version": "6.5.39",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -65,7 +65,7 @@
     "@times-components/article-magazine-comment": "0.5.4",
     "@times-components/article-magazine-standard": "0.5.4",
     "@times-components/article-main-comment": "0.5.4",
-    "@times-components/article-main-standard": "0.5.7",
+    "@times-components/article-main-standard": "0.6.0",
     "@times-components/context": "0.5.23",
     "@times-components/provider": "1.8.13",
     "@times-components/styleguide": "3.13.0",

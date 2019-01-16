@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.5.7...@times-components/article-main-standard@0.6.0) (2019-01-16)
+
+
+### Features
+
+* move lead asset on tablet on article main standard ([#1601](https://github.com/newsuk/times-components/issues/1601)) ([e89eb51](https://github.com/newsuk/times-components/commit/e89eb51))
+
+
+
+
+
 ## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.5.6...@times-components/article-main-standard@0.5.7) (2019-01-15)
 
 **Note:** Version bump only for package @times-components/article-main-standard
