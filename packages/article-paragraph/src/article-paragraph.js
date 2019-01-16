@@ -2,14 +2,18 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
+import {ResponsiveContext} from "@times-components/responsive";
 import styleFactory from "./styles";
 
 const styles = styleFactory();
 
 const BodyParagraph = props => (
-  <View style={[styles.articleMainContentRow]}>
+  <ResponsiveContext.Consumer>
+    {({ isTablet }) => (
+  <View style={isTablet ? styles.articleMainContentRowTablet : styles.articleMainContentRow}>
     <Context.Consumer>
       {({ theme: { dropCapFont, scale } }) => {
+        console.log(isTablet)
         const stylesScaled = styleFactory(dropCapFont, scale);
         return (
           <Text selectable style={stylesScaled.articleTextElement}>
@@ -19,6 +23,8 @@ const BodyParagraph = props => (
       }}
     </Context.Consumer>
   </View>
+    )}
+  </ResponsiveContext.Consumer>
 );
 
 BodyParagraph.propTypes = {

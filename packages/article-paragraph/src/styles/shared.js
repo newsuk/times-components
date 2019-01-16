@@ -1,4 +1,4 @@
-import styleguide, { scales, fonts } from "@times-components/styleguide";
+import styleguide, { scales, fonts, tabletWidth } from "@times-components/styleguide";
 import { fontSize, margins } from "./drop-cap-sizes";
 
 const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
@@ -8,6 +8,12 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
 
   return {
     articleMainContentRow: {
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2)
+    },
+    articleMainContentRowTablet: {
+      alignSelf: "center",
+      maxWidth: tabletWidth,
       paddingLeft: spacing(2),
       paddingRight: spacing(2)
     },
