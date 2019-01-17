@@ -69,8 +69,13 @@ class InteractiveWrapper extends Component {
   }
 
   render() {
-    const { id } = this.props;
+    const {
+      config: { dev, environment, platform, version },
+      id
+    } = this.props;
     const { height } = this.state;
+
+    const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
 
     return (
       <View style={{ height }}>
@@ -81,9 +86,7 @@ class InteractiveWrapper extends Component {
           ref={webview => {
             this.webview = webview;
           }}
-          source={{
-            uri: `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}`
-          }}
+          source={{ uri }}
           style={{ height }}
           {...InteractiveWrapper.postMessageBugWorkaround()}
         />
@@ -93,7 +96,12 @@ class InteractiveWrapper extends Component {
 }
 
 InteractiveWrapper.propTypes = {
+  config: PropTypes.shape({}),
   id: PropTypes.string.isRequired
+};
+
+InteractiveWrapper.defaultProps = {
+  config: {}
 };
 
 export default InteractiveWrapper;
