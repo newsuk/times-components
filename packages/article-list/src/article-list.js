@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
 import Button from "@times-components/button";
-import { colours } from "@times-components/styleguide";
+import { colours, tabletWidth } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleListError from "./article-list-error";
@@ -173,13 +173,15 @@ class ArticleList extends Component {
       }
 
       return (
-        <View>
-          <ArticleListItemSeparator />
-          <ActivityIndicator
-            color={colours.functional.keyline}
-            size="large"
-            style={styles.loadingContainer}
-          />
+        <View style={{ flexDirection: "row", justifyContent: "center" }}>
+          <View style={{ flex: 1, maxWidth: tabletWidth }}>
+            <ArticleListItemSeparator />
+            <ActivityIndicator
+              color={colours.functional.keyline}
+              size="large"
+              style={styles.loadingContainer}
+            />
+          </View>
         </View>
       );
     };

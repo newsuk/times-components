@@ -99,13 +99,15 @@ exports[`1. article list 1`] = `
     </View>
     <View>
       <View>
-        <View />
-        <ActivityIndicator
-          animating={true}
-          color="#DBDBDB"
-          hidesWhenStopped={true}
-          size="large"
-        />
+        <View>
+          <View />
+          <ActivityIndicator
+            animating={true}
+            color="#DBDBDB"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -153,13 +155,15 @@ exports[`2. article list with no images 1`] = `
     </View>
     <View>
       <View>
-        <View />
-        <ActivityIndicator
-          animating={true}
-          color="#DBDBDB"
-          hidesWhenStopped={true}
-          size="large"
-        />
+        <View>
+          <View />
+          <ActivityIndicator
+            animating={true}
+            color="#DBDBDB"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -434,13 +438,15 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
     </View>
     <View>
       <View>
-        <View />
-        <ActivityIndicator
-          animating={true}
-          color="#DBDBDB"
-          hidesWhenStopped={true}
-          size="large"
-        />
+        <View>
+          <View />
+          <ActivityIndicator
+            animating={true}
+            color="#DBDBDB"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
       </View>
     </View>
   </View>
