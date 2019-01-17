@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.2.1...@times-components/article-list@6.2.2) (2019-01-17)
+
+
+### Bug Fixes
+
+* Tablet layout of loading spinner keyline ([#1603](https://github.com/newsuk/times-components/issues/1603)) ([c130541](https://github.com/newsuk/times-components/commit/c130541))
+
+
+
+
+
 ## [6.2.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.2.0...@times-components/article-list@6.2.1) (2019-01-15)
 
 **Note:** Version bump only for package @times-components/article-list
