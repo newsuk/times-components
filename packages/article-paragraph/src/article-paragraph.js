@@ -13,7 +13,6 @@ const BodyParagraph = props => (
   <View style={isTablet ? styles.articleMainContentRowTablet : styles.articleMainContentRow}>
     <Context.Consumer>
       {({ theme: { dropCapFont, scale } }) => {
-        console.log(isTablet)
         const stylesScaled = styleFactory(dropCapFont, scale);
         return (
           <Text selectable style={stylesScaled.articleTextElement}>

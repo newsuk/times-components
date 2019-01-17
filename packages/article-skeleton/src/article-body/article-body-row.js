@@ -10,6 +10,7 @@ import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import { ResponsiveContext } from "@times-components/responsive";
 import { colours } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import ArticleLink from "./article-link";
@@ -42,34 +43,50 @@ const ArticleRow = ({
     image(key, { display, ratio, url, caption, credits }) {
       return {
         element: (
-          <View key={key}>
-            <ArticleImage
-              captionOptions={{
-                caption,
-                credits
-              }}
-              imageOptions={{
-                display,
-                ratio,
-                uri: url
-              }}
-            />
-          </View>
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => (
+              <View key={key} style={isTablet ? styles.imageContainerTablet : null}>
+                <ArticleImage
+                  captionOptions={{
+                    caption,
+                    credits
+                  }}
+                  imageOptions={{
+                    display,
+                    ratio,
+                    uri: url
+                  }}
+                />
+              </View>
+            )}
+          </ResponsiveContext.Consumer>
         )
       };
     },
     interactive(key, { id }) {
       return {
         element: (
-          <View key={key} style={styles.interactiveContainer}>
-            <InteractiveWrapper config={interactiveConfig} id={id} />
-          </View>
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => (
+              <View key={key} style={isTablet ? styles.interactiveContainerTablet : styles.interactiveContainer}>
+                <InteractiveWrapper config={interactiveConfig} id={id} />
+              </View>
+            )}
+          </ResponsiveContext.Consumer>
         )
       };
     },
     keyFacts(key, attributes, renderedChildren, indx, node) {
       return {
-        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        element: (
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => (
+              <View style={isTablet ? styles.keyFactsContainerTablet : null}>
+                <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
+              </View>
+            )}
+          </ResponsiveContext.Consumer>
+            ),
         shouldRenderChildren: false
       };
     },
