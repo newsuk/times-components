@@ -1,11 +1,13 @@
 import React from "react";
-import { NativeModules } from "react-native";
+import { NativeModules, Platform } from "react-native";
 import Article from "@times-components/article";
 import Context, { defaults } from "@times-components/context";
 import { themeFactory } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
 import filterInteractives from "./filter-interactives";
+
+const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
 
 const { track } = NativeModules.ReactAnalytics;
 const {
@@ -22,6 +24,7 @@ const {
 const ArticleBase = ({
   adTestMode,
   article,
+  devInteractives,
   error,
   isLoading,
   referralUrl,
@@ -37,13 +40,20 @@ const ArticleBase = ({
     isLoading || error
       ? {}
       : adTargetConfig({
-          adTestMode,
-          article,
-          sectionName: section
-        });
+        adTestMode,
+        article,
+        sectionName: section
+      });
   const theme = {
     ...themeFactory(section, template),
     scale: scale || defaults.theme.scale
+  };
+
+  const interactiveConfig = {
+    dev: devInteractives,
+    environment,
+    platform: Platform.OS,
+    version: appVersion
   };
 
   return (
@@ -59,6 +69,7 @@ const ArticleBase = ({
         }}
         article={showInteractives ? article : filterInteractives(article)}
         error={omitErrors ? null : error}
+        interactiveConfig={interactiveConfig}
         isLoading={isLoading || (omitErrors && error)}
         onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
         onCommentGuidelinesPress={() => onCommentGuidelinesPress()}

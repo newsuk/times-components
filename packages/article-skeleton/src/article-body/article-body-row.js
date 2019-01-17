@@ -20,6 +20,7 @@ const styles = styleFactory();
 
 const ArticleRow = ({
   content: { data, index },
+  interactiveConfig,
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
@@ -61,7 +62,7 @@ const ArticleRow = ({
       return {
         element: (
           <View key={key} style={styles.interactiveContainer}>
-            <InteractiveWrapper id={id} />
+            <InteractiveWrapper config={interactiveConfig} id={id} />
           </View>
         )
       };
@@ -185,6 +186,7 @@ ArticleRow.propTypes = {
     }),
     index: PropTypes.number
   }).isRequired,
+  interactiveConfig: PropTypes.shape({}).isRequired,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired

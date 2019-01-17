@@ -31,7 +31,8 @@ const renderRow = analyticsStream => (
   onRelatedArticlePress,
   onTopicPress,
   onTwitterLinkPress,
-  onVideoPress
+  onVideoPress,
+  interactiveConfig
 ) => {
   // eslint-disable-next-line default-case
   switch (rowData.type) {
@@ -39,6 +40,7 @@ const renderRow = analyticsStream => (
       return (
         <ArticleRow
           content={rowData}
+          interactiveConfig={interactiveConfig}
           onLinkPress={onLinkPress}
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
@@ -109,6 +111,7 @@ class ArticleSkeleton extends Component {
       adConfig,
       analyticsStream,
       Header,
+      interactiveConfig,
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
@@ -153,6 +156,7 @@ class ArticleSkeleton extends Component {
           data={articleData}
           Header={Header}
           initialListSize={listViewSize}
+          interactiveConfig={interactiveConfig}
           onAuthorPress={onAuthorPress}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
@@ -174,6 +178,7 @@ class ArticleSkeleton extends Component {
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
+  interactiveConfig: PropTypes.shape({}),
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -182,6 +187,9 @@ ArticleSkeleton.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
 };
-ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
+ArticleSkeleton.defaultProps = {
+  ...articleSkeletonDefaultProps,
+  interactiveConfig: {}
+};
 
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

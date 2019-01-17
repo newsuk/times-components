@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 export const propTypes = {
   article: PropTypes.shape({}),
+  devInteractives: PropTypes.bool,
   error: PropTypes.shape({}),
   isLoading: PropTypes.bool,
   omitErrors: PropTypes.bool,
@@ -14,6 +15,7 @@ export const propTypes = {
 
 export const defaultProps = {
   article: null,
+  devInteractives: false,
   error: null,
   isLoading: false,
   omitErrors: false,

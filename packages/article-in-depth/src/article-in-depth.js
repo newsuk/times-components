@@ -88,6 +88,7 @@ class ArticleInDepth extends Component {
       adConfig,
       analyticsStream,
       article,
+      interactiveConfig,
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
@@ -106,6 +107,7 @@ class ArticleInDepth extends Component {
         analyticsStream={analyticsStream}
         data={article}
         Header={this.renderHeader}
+        interactiveConfig={interactiveConfig}
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
