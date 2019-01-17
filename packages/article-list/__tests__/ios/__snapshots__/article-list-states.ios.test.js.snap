@@ -119,13 +119,15 @@ exports[`4. loading state 1`] = `
     </View>
     <View>
       <View>
-        <View />
-        <ActivityIndicator
-          animating={true}
-          color="#DBDBDB"
-          hidesWhenStopped={true}
-          size="large"
-        />
+        <View>
+          <View />
+          <ActivityIndicator
+            animating={true}
+            color="#DBDBDB"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
       </View>
     </View>
   </View>
