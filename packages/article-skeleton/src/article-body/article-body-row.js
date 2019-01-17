@@ -11,7 +11,7 @@ import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import { ResponsiveContext } from "@times-components/responsive";
-import { colours } from "@times-components/styleguide";
+import { colours, tabletWidth } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -169,26 +169,31 @@ const ArticleRow = ({
         skySports
       }
     ) {
-      const aspectRatio = 16 / 9;
-
-      const { width } = Dimensions.get("window");
-      const height = width / aspectRatio;
-
       return {
         element: (
-          <View key={key} style={styles.primaryContainer}>
-            <Video
-              accountId={brightcoveAccountId}
-              height={height}
-              onVideoPress={onVideoPress}
-              policyKey={brightcovePolicyKey}
-              poster={{ uri: posterImageUrl }}
-              skySports={skySports}
-              videoId={brightcoveVideoId}
-              width={width}
-            />
-            <InsetCaption caption={caption} />
-          </View>
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => {
+                    const aspectRatio = 16 / 9;
+
+                    // Number accounts for the padding
+                    const { width } = isTablet ? { width: (tabletWidth - 20) } : Dimensions.get("window");
+                    const height = width / aspectRatio;
+                    return (
+              <View key={key} style={isTablet ? styles.primaryContainerTablet : styles.primaryContainer}>
+                <Video
+                  accountId={brightcoveAccountId}
+                  height={height}
+                  onVideoPress={onVideoPress}
+                  policyKey={brightcovePolicyKey}
+                  poster={{ uri: posterImageUrl }}
+                  skySports={skySports}
+                  videoId={brightcoveVideoId}
+                  width={width}
+                />
+                <InsetCaption caption={caption} />
+              </View>
+              )}}
+          </ResponsiveContext.Consumer>
         )
       };
     }

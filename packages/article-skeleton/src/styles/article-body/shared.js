@@ -60,6 +60,12 @@ const sharedStyles = scale => {
       flexDirection: "column",
       paddingBottom: spacing(5),
       width: "100%"
+    },
+    primaryContainerTablet: {
+      alignSelf: "center",
+      flexDirection: "column",
+      paddingBottom: spacing(5),
+      maxWidth: tabletWidth
     }
   };
 };
