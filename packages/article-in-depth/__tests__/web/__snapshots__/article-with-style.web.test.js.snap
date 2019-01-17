@@ -475,19 +475,19 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS3 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS4 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS5 {
-  background-color: rgba(255,255,255,1.00);
+  background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
   width: 100%;
@@ -1216,20 +1216,20 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS3 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
   font-family: Flama-Bold;
 }
 
 .IS4 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS5 {
-  background-color: rgba(255,255,255,1.00);
+  background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
   width: 100%;
@@ -1958,20 +1958,20 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS3 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
   font-family: CenturyGothic-Bold;
 }
 
 .IS4 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS5 {
-  background-color: rgba(255,255,255,1.00);
+  background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
   width: 100%;
@@ -2700,20 +2700,20 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS3 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
   font-family: Tiempos-Headline-Bold;
 }
 
 .IS4 {
-  color: rgba(0,0,0,1.00);
+  color: rgba(255,255,255,1.00);
 }
 
 .IS5 {
-  background-color: rgba(255,255,255,1.00);
+  background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
   width: 100%;

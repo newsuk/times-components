@@ -8,7 +8,7 @@ exports[`full article with style 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
             "paddingBottom": 45,
             "paddingHorizontal": 20,
             "paddingTop": 60,
@@ -28,7 +28,7 @@ exports[`full article with style 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "lineHeight": 35,
@@ -61,7 +61,7 @@ exports[`full article with style 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
@@ -270,7 +270,7 @@ exports[`full article with style in the culture magazine 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
             "paddingBottom": 45,
             "paddingHorizontal": 20,
             "paddingTop": 60,
@@ -290,7 +290,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "Flama-Bold",
               "fontSize": 30,
               "lineHeight": 35,
@@ -323,7 +323,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
@@ -532,7 +532,7 @@ exports[`full article with style in the style magazine 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
             "paddingBottom": 45,
             "paddingHorizontal": 20,
             "paddingTop": 60,
@@ -552,7 +552,7 @@ exports[`full article with style in the style magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "CenturyGothic-Bold",
               "fontSize": 30,
               "lineHeight": 35,
@@ -585,7 +585,7 @@ exports[`full article with style in the style magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,
@@ -794,7 +794,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
             "paddingBottom": 45,
             "paddingHorizontal": 20,
             "paddingTop": 60,
@@ -814,7 +814,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "Tiempos-Headline-Bold",
               "fontSize": 30,
               "lineHeight": 35,
@@ -847,7 +847,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <Text
           style={
             Object {
-              "color": "rgba(0, 0, 0, 1)",
+              "color": "rgba(255, 255, 255, 1)",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 20,
               "lineHeight": 25,

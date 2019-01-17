@@ -14,16 +14,16 @@ import {
 import styles from "../styles";
 
 const ArticleHeader = ({
-  backgroundColour,
+  backgroundColour: rgbBackgroundColour,
   flags,
   hasVideo,
   headline,
   label,
   standfirst,
-  textColour
+  textColour: rgbTextColour
 }) => {
-  const bgColour = gqlRgbaToStyle(backgroundColour);
-  const txtColour = gqlRgbaToStyle(textColour);
+  const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
+  const textColour = gqlRgbaToStyle(rgbTextColour);
 
   return (
     <Context.Consumer>
@@ -31,21 +31,21 @@ const ArticleHeader = ({
         <View
           style={[
             styles.container,
-            { backgroundColor: bgColour, width: "100%" }
+            { backgroundColor: backgroundColour, width: "100%" }
           ]}
         >
           <Label color={textColour} isVideo={hasVideo} label={label} />
           <Text
             style={[
               styles.articleHeadline,
-              { color: txtColour },
+              { color: textColour },
               headlineFont ? { fontFamily: fonts[headlineFont] } : null
             ]}
           >
             {headline}
           </Text>
           <Flags color={textColour} flags={flags} />
-          <Standfirst color={txtColour} standfirst={standfirst} />
+          <Standfirst color={textColour} standfirst={standfirst} />
         </View>
       )}
     </Context.Consumer>
