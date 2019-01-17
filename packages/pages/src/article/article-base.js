@@ -40,10 +40,10 @@ const ArticleBase = ({
     isLoading || error
       ? {}
       : adTargetConfig({
-        adTestMode,
-        article,
-        sectionName: section
-      });
+          adTestMode,
+          article,
+          sectionName: section
+        });
   const theme = {
     ...themeFactory(section, template),
     scale: scale || defaults.theme.scale
