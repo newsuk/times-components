@@ -635,6 +635,17 @@ export const longContent = [
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 
+const defaultBackgroundColour = {
+  __typename: "Colour",
+  rgba: {
+    __typename: "RGBA",
+    alpha: 1,
+    blue: 190,
+    green: 129,
+    red: 60
+  }
+};
+
 export const videoLeadAsset = ({
   brightcovePolicyKey = defaultBrightcovePolicyKey
 } = {}) => ({
@@ -1955,6 +1966,18 @@ const defaultTopics = [
     slug: "rugby-union"
   }
 ];
+
+const defaultTextColour = {
+  __typename: "Colour",
+  rgba: {
+    __typename: "RGBA",
+    alpha: 1,
+    blue: 255,
+    green: 255,
+    red: 255
+  }
+};
+
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
@@ -1970,6 +1993,7 @@ const addProp = (obj, key, value) => {
 };
 
 const makeDefaultConfig = ({
+  backgroundColour = defaultBackgroundColour,
   byline = defaultByline,
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
@@ -1986,9 +2010,11 @@ const makeDefaultConfig = ({
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
   standfirst = defaultStandfirst,
+  textColour = defaultTextColour,
   topics = defaultTopics,
   url = defaultUrl
 } = {}) => ({
+  backgroundColour,
   byline,
   commentCount,
   commentsEnabled,
@@ -2005,6 +2031,7 @@ const makeDefaultConfig = ({
   shortIdentifier,
   slug,
   standfirst,
+  textColour,
   topics,
   url
 });
@@ -2034,14 +2061,7 @@ export default ({ withAds = true, ...config } = {}) => {
 
 export const testFixture = {
   __typename: "Article",
-  backgroundColour: {
-    rgba: {
-      alpha: 1,
-      blue: 190,
-      green: 129,
-      red: 60
-    }
-  },
+  backgroundColour: defaultBackgroundColour,
   byline: [
     {
       attributes: {},
@@ -2159,14 +2179,7 @@ export const testFixture = {
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",
-  textColour: {
-    rgba: {
-      alpha: 1,
-      blue: 255,
-      green: 255,
-      red: 255
-    }
-  },
+  textColour: defaultTextColour,
   topics: [
     {
       name: "Topic",

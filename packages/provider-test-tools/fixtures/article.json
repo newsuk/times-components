@@ -1,6 +1,8 @@
 {
   "backgroundColour": {
+    "__typename": "Colour",
     "rgba": {
+      "__typename": "RGBA",
       "alpha": 1,
       "blue": 255,
       "green": 255,
