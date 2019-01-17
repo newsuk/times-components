@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {
@@ -39,7 +39,7 @@
     "@times-components/eslint-config-thetimes": "0.8.9",
     "@times-components/jest-configurator": "2.1.20",
     "@times-components/jest-serializer": "3.1.13",
-    "@times-components/storybook": "3.2.5",
+    "@times-components/storybook": "3.2.6",
     "@times-components/test-utils": "2.0.5",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
@@ -67,10 +67,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/gradient": "2.2.26",
-    "@times-components/image": "4.4.3",
-    "@times-components/responsive": "0.1.0",
-    "@times-components/styleguide": "3.13.0",
+    "@times-components/gradient": "2.2.27",
+    "@times-components/image": "4.4.4",
+    "@times-components/responsive": "0.1.1",
+    "@times-components/styleguide": "3.13.1",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.67...@times-components/pages@1.9.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* Downgrade graphql tools to fix storybook native issue ([#1605](https://github.com/newsuk/times-components/issues/1605)) ([9b3e579](https://github.com/newsuk/times-components/commit/9b3e579))
+
+
+### Features
+
+* interactive debug params android ([#1604](https://github.com/newsuk/times-components/issues/1604)) ([2677e91](https://github.com/newsuk/times-components/commit/2677e91))
+
+
+
+
+
 ## [1.8.67](https://github.com/newsuk/times-components/compare/@times-components/pages@1.8.66...@times-components/pages@1.8.67) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/pages

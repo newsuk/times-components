@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.21](https://github.com/newsuk/times-components/compare/@times-components/schema@0.1.20...@times-components/schema@0.1.21) (2019-01-17)
+
+
+### Bug Fixes
+
+* Downgrade graphql tools to fix storybook native issue ([#1605](https://github.com/newsuk/times-components/issues/1605)) ([9b3e579](https://github.com/newsuk/times-components/commit/9b3e579))
+
+
+
+
+
 ## [0.1.20](https://github.com/newsuk/times-components/compare/@times-components/schema@0.1.19...@times-components/schema@0.1.20) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/schema

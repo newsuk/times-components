@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@0.5.4...@times-components/article-magazine-standard@0.6.0) (2019-01-17)
+
+
+### Features
+
+* interactive debug params android ([#1604](https://github.com/newsuk/times-components/issues/1604)) ([2677e91](https://github.com/newsuk/times-components/commit/2677e91))
+
+
+
+
+
 ## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@0.5.3...@times-components/article-magazine-standard@0.5.4) (2019-01-15)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

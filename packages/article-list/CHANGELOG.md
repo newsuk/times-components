@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.2.2...@times-components/article-list@6.2.3) (2019-01-17)
+
+
+### Bug Fixes
+
+* Downgrade graphql tools to fix storybook native issue ([#1605](https://github.com/newsuk/times-components/issues/1605)) ([9b3e579](https://github.com/newsuk/times-components/commit/9b3e579))
+
+
+
+
+
 ## [6.2.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.2.1...@times-components/article-list@6.2.2) (2019-01-17)
 
 

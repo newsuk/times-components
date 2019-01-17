@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.0.32...@times-components/interactive-wrapper@0.1.0) (2019-01-17)
+
+
+### Features
+
+* interactive debug params android ([#1604](https://github.com/newsuk/times-components/issues/1604)) ([2677e91](https://github.com/newsuk/times-components/commit/2677e91))
+
+
+
+
+
 ## [0.0.32](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.0.31...@times-components/interactive-wrapper@0.0.32) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper

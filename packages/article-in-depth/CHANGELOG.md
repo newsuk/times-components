@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.4.1...@times-components/article-in-depth@0.5.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* fixing indepth label to not take the color ([#1602](https://github.com/newsuk/times-components/issues/1602)) ([f59a5f9](https://github.com/newsuk/times-components/commit/f59a5f9))
+
+
+### Features
+
+* interactive debug params android ([#1604](https://github.com/newsuk/times-components/issues/1604)) ([2677e91](https://github.com/newsuk/times-components/commit/2677e91))
+
+
+
+
+
 ## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.4.0...@times-components/article-in-depth@0.4.1) (2019-01-15)
 
 **Note:** Version bump only for package @times-components/article-in-depth
