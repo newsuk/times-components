@@ -98,6 +98,7 @@ class ArticlePage extends Component {
       adConfig,
       analyticsStream,
       article,
+      interactiveConfig,
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
@@ -117,6 +118,7 @@ class ArticlePage extends Component {
         analyticsStream={analyticsStream}
         data={article}
         Header={this.renderHeader}
+        interactiveConfig={interactiveConfig}
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
@@ -135,6 +137,7 @@ class ArticlePage extends Component {
 
 ArticlePage.propTypes = {
   ...articlePropTypes,
+  interactiveConfig: PropTypes.shape({}),
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -146,6 +149,7 @@ ArticlePage.propTypes = {
 };
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
+  interactiveConfig: {},
   referralUrl: null
 };
 

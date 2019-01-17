@@ -10,6 +10,7 @@ const viewabilityConfig = {
 const ArticleContent = ({
   data,
   Header,
+  interactiveConfig,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -39,7 +40,8 @@ const ArticleContent = ({
         onRelatedArticlePress,
         onTopicPress,
         onTwitterLinkPress,
-        onVideoPress
+        onVideoPress,
+        interactiveConfig
       )
     }
     testID="flat-list-article"
@@ -56,6 +58,7 @@ ArticleContent.propTypes = {
     })
   ).isRequired,
   Header: PropTypes.func,
+  interactiveConfig: PropTypes.shape({}),
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -71,6 +74,7 @@ ArticleContent.propTypes = {
 
 ArticleContent.defaultProps = {
   Header: () => null,
+  interactiveConfig: {},
   onViewableItemsChanged: () => {},
   width: null
 };

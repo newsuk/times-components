@@ -64,6 +64,7 @@ class ArticlePage extends Component {
       adConfig,
       analyticsStream,
       article,
+      interactiveConfig,
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
@@ -82,6 +83,7 @@ class ArticlePage extends Component {
         analyticsStream={analyticsStream}
         data={article}
         Header={this.renderHeader}
+        interactiveConfig={interactiveConfig}
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}

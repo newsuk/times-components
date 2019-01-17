@@ -1,5 +1,5 @@
 import React from "react";
-import { Linking } from "react-native";
+import { Linking, Platform } from "react-native";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import {
@@ -30,6 +30,13 @@ addSerializers(
     minimaliseTransform((value, key) => omitProps.has(key))
   )
 );
+
+const config = {
+  dev: false,
+  environment: "jest",
+  platform: Platform.OS,
+  version: "0.0.0"
+};
 
 export default () => {
   afterEach(() => {
@@ -68,6 +75,7 @@ export default () => {
         heading: "A heading",
         standfirst: "A standfirst"
       },
+      config,
       element: "chapter-header",
       id: "a0534eee-682e-4955-8e1e-84b428ef1e79",
       source:
@@ -79,7 +87,9 @@ export default () => {
   });
 
   it("When receiving a message from the webview, the height is set in state", () => {
-    const component = shallow(<InteractiveWrapper id="123456789" />);
+    const component = shallow(
+      <InteractiveWrapper config={config} id="123456789" />
+    );
     component.instance().onMessage(makeMessageEvent(400));
     expect(component.state().height).toEqual(400);
   });

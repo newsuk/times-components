@@ -41,6 +41,14 @@ exports[`article page 1`] = `
 <Article
   article={null}
   error={null}
+  interactiveConfig={
+    Object {
+      "dev": false,
+      "environment": "prod",
+      "platform": "ios",
+      "version": "",
+    }
+  }
   isLoading={true}
   pageSection="News"
   referralUrl={null}

@@ -6,6 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
+  interactiveConfig: PropTypes.shape({}),
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
@@ -19,7 +20,8 @@ const articlePropTypes = {
 };
 
 const articleDefaultProps = {
-  ...articlePageDefaultProps
+  ...articlePageDefaultProps,
+  interactiveConfig: {}
 };
 
 export { articlePropTypes, articleDefaultProps };

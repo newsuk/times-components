@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
       injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
       source={
         Object {
-          "uri": "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/a0534eee-682e-4955-8e1e-84b428ef1e79",
+          "uri": "https://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/dev/component/a0534eee-682e-4955-8e1e-84b428ef1e79?dev=false&env=jest&platform=ios&version=0.0.0",
         }
       }
       style={

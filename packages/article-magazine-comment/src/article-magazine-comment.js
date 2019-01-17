@@ -82,6 +82,7 @@ class ArticleMagazineComment extends Component {
       adConfig,
       analyticsStream,
       article,
+      interactiveConfig,
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
@@ -100,6 +101,7 @@ class ArticleMagazineComment extends Component {
         analyticsStream={analyticsStream}
         data={article}
         Header={this.renderHeader}
+        interactiveConfig={interactiveConfig}
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
