@@ -1,9 +1,32 @@
-<!--
-Thank you for your PR!
+<!--- Provide a general summary of your changes in the Title above -->
 
-Please provide clear instructions on how you verified your work.
+## Description
+<!--- Describe your changes in detail -->
 
-If there are any visual changes, include screenshots and demo videos (try https://giphy.com/apps/giphycapture).
+## Motivation and Context
+<!--- Why is this change required? What problem does it solve? -->
+<!--- If it fixes an open issue, please link to the issue here. -->
 
-:-)
--->
+## How Has This Been Tested?
+<!--- Please describe in detail how you tested your changes. -->
+<!--- Include details of your testing environment, tests ran to see how -->
+<!--- your change affects other areas of the code, etc. -->
+- [ ] Has Unit tests
+- [ ] Did Integration tests, on web/mobile?
+- [ ] Has E2E tests
+
+## Screenshots (if appropriate):
+
+## Types of changes
+<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+
+## Checklist:
+<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
+<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+- [ ] My code follows the code style of this project.
+- [ ] My PR is named according to the convention (prefixed with feat:, fix:, chore:, etc)
+- [ ] My change requires a change to the documentation.
+- [ ] I have updated the documentation accordingly.
