@@ -1,5 +1,5 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
 
 module.exports = jestConfigurator("android", __dirname, {
-  coverageIgnoreGlobs: ["slice.js"]
+  coverageIgnoreGlobs: ["slice-layout.js"]
 });

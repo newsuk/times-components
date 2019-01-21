@@ -4,7 +4,7 @@ import {
   standardRoles,
   leadOneAndTwoRoles,
   opinionOneAndTwoRoles
-} from "@times-components/slice";
+} from "@times-components/slice-layout";
 import getHeadline from "./utils";
 
 export default Component =>

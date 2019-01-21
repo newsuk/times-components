@@ -6,9 +6,9 @@ ideas, conventions and information on submitting a PR
 
 ## Creating a new template
 
-Slice templates sit within their own named directory within the `/templates`
+Slice layout templates sit within their own named directory within the `/templates`
 directory. The Components take functions as `props` (render props) that pass
-configuration objects to consumers of Slice. The configuration objects are
+configuration objects to consumers of Slice layout. The configuration objects are
 generated from `config.js` and `config.web.js` for native and web respectively.
 The objects manage JS properties for native and both JS properties _and_
 responsive CSS class names for web, that provide a suggested layout and format
@@ -19,7 +19,7 @@ for the children that will be laid out in each template.
 ### How it works
 
 +----------------------------------------------------------+
-|  Slice                                                   |
+|  Slice layout                                                   |
 |                                                          |
 |                     renderProp                           |
 |  +              <-------------------+                    |
