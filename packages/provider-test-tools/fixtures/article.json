@@ -11,6 +11,21 @@
   },
   "bylines": [{
     "__typename": "TextByline",
+    "byline": [
+      {
+        "name": "inline",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Rick Broadbent"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
     "image": {
       "__typename": "Image",
       "caption": "some caption",
