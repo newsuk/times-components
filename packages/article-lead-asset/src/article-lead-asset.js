@@ -16,6 +16,7 @@ const ArticleLeadAsset = ({
   getImageCrop,
   renderCaption,
   renderModalCaption = renderCaption,
+  isTablet,
   isVideo,
   leadAsset,
   onVideoPress,
@@ -46,6 +47,7 @@ const ArticleLeadAsset = ({
       <LeadAsset
         aspectRatio={getRatio(crop.ratio)}
         caption={renderModalCaption({ caption })}
+        isTablet={isTablet}
         leadAsset={leadAsset}
         onVideoPress={onVideoPress}
         uri={crop.url}

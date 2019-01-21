@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
+import { tabletWidth } from "@times-components/styleguide";
 
 export const acceptedWidths = [320, 440, 660, 800, 1080, 1440];
 
@@ -8,4 +9,5 @@ export const normaliseWidth = width => {
   return nWidth || acceptedWidths[acceptedWidths.length - 1];
 };
 
-export const screenWidth = () => Dimensions.get("window").width;
+export const screenWidth = isTablet =>
+  isTablet ? tabletWidth - 20 : Dimensions.get("window").width;

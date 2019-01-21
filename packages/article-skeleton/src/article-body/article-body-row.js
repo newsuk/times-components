@@ -43,23 +43,19 @@ const ArticleRow = ({
     image(key, { display, ratio, url, caption, credits }) {
       return {
         element: (
-          <ResponsiveContext.Consumer>
-            {({ isTablet }) => (
-              <View key={key} style={isTablet ? styles.imageContainerTablet : null}>
-                <ArticleImage
-                  captionOptions={{
-                    caption,
-                    credits
-                  }}
-                  imageOptions={{
-                    display,
-                    ratio,
-                    uri: url
-                  }}
-                />
-              </View>
-            )}
-          </ResponsiveContext.Consumer>
+          <View key={key}>
+            <ArticleImage
+              captionOptions={{
+                caption,
+                credits
+              }}
+              imageOptions={{
+                display,
+                ratio,
+                uri: url
+              }}
+            />
+          </View>
         )
       };
     },
@@ -86,7 +82,7 @@ const ArticleRow = ({
               </View>
             )}
           </ResponsiveContext.Consumer>
-            ),
+        ),
         shouldRenderChildren: false
       };
     },
@@ -140,19 +136,25 @@ const ArticleRow = ({
             {({
               theme: { pullQuoteFont, sectionColour = colours.section.default }
             }) => (
-              <View>
-                <PullQuote
-                  caption={name}
-                  captionColour={sectionColour}
-                  font={pullQuoteFont}
-                  onTwitterLinkPress={onTwitterLinkPress}
-                  quoteColour={sectionColour}
-                  text={text}
-                  twitter={twitter}
-                >
-                  {children}
-                </PullQuote>
-              </View>
+              <ResponsiveContext.Consumer>
+                {({ isTablet }) => (
+                  <View
+                    style={isTablet ? styles.pullQuoteContainerTablet : null}
+                  >
+                    <PullQuote
+                      caption={name}
+                      captionColour={sectionColour}
+                      font={pullQuoteFont}
+                      onTwitterLinkPress={onTwitterLinkPress}
+                      quoteColour={sectionColour}
+                      text={text}
+                      twitter={twitter}
+                    >
+                      {children}
+                    </PullQuote>
+                  </View>
+                )}
+              </ResponsiveContext.Consumer>
             )}
           </Context.Consumer>
         )
@@ -173,26 +175,36 @@ const ArticleRow = ({
         element: (
           <ResponsiveContext.Consumer>
             {({ isTablet }) => {
-                    const aspectRatio = 16 / 9;
+              const aspectRatio = 16 / 9;
 
-                    // Number accounts for the padding
-                    const { width } = isTablet ? { width: (tabletWidth - 20) } : Dimensions.get("window");
-                    const height = width / aspectRatio;
-                    return (
-              <View key={key} style={isTablet ? styles.primaryContainerTablet : styles.primaryContainer}>
-                <Video
-                  accountId={brightcoveAccountId}
-                  height={height}
-                  onVideoPress={onVideoPress}
-                  policyKey={brightcovePolicyKey}
-                  poster={{ uri: posterImageUrl }}
-                  skySports={skySports}
-                  videoId={brightcoveVideoId}
-                  width={width}
-                />
-                <InsetCaption caption={caption} />
-              </View>
-              )}}
+              // Number accounts for the padding
+              const { width } = isTablet
+                ? { width: tabletWidth - 20 }
+                : Dimensions.get("window");
+              const height = width / aspectRatio;
+              return (
+                <View
+                  key={key}
+                  style={
+                    isTablet
+                      ? styles.primaryContainerTablet
+                      : styles.primaryContainer
+                  }
+                >
+                  <Video
+                    accountId={brightcoveAccountId}
+                    height={height}
+                    onVideoPress={onVideoPress}
+                    policyKey={brightcovePolicyKey}
+                    poster={{ uri: posterImageUrl }}
+                    skySports={skySports}
+                    videoId={brightcoveVideoId}
+                    width={width}
+                  />
+                  <InsetCaption caption={caption} />
+                </View>
+              );
+            }}
           </ResponsiveContext.Consumer>
         )
       };

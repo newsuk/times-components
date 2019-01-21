@@ -7,6 +7,7 @@ import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 import { ResponsiveContext } from "@times-components/responsive";
+import { tabletWidth } from "@times-components/styleguide";
 import {
   getHeadline,
   getLeadAsset,
@@ -25,6 +26,27 @@ class ArticlePage extends Component {
   constructor() {
     super();
     this.renderHeader = this.renderHeader.bind(this);
+    this.renderLeadAsset = this.renderLeadAsset.bind(this);
+  }
+
+  renderLeadAsset({
+    article,
+    isTablet,
+    onVideoPress,
+    styles
+  }) {
+    return (
+      <View key="leadAsset" testID="leadAsset">
+        <ArticleLeadAsset
+          {...getLeadAsset(article)}
+          getImageCrop={getStandardTemplateCrop}
+          isTablet={isTablet}
+          onVideoPress={onVideoPress}
+          renderModalCaption={({ caption }) => <Caption {...caption} />}
+          style={[styles.leadAsset]}
+        />
+      </View>
+    );
   }
 
   renderHeader(parentProps) {

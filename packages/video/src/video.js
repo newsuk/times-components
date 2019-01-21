@@ -29,7 +29,7 @@ const Video = ({
     }}
     testID="splash-component"
   >
-    <View style={[{ height, width, alignSelf: "center" }]}>
+    <View style={[{ alignSelf: "center", height, width }]}>
       {skySports && <SkySportsBanner />}
       {poster ? (
         <Image

@@ -10,8 +10,9 @@ import {
 const ArticleLeadAssetVideo = ({
   aspectRatio,
   leadAsset,
-  uri,
-  onVideoPress
+  isTablet,
+  onVideoPress,
+  uri
 }) => {
   const {
     brightcoveVideoId,
@@ -19,7 +20,8 @@ const ArticleLeadAssetVideo = ({
     brightcoveAccountId,
     skySports
   } = leadAsset;
-  const width = screenWidth();
+  console.log(isTablet);
+  const width = screenWidth(isTablet);
   const height = width / aspectRatio;
 
   return (
