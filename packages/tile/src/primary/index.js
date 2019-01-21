@@ -1,32 +1,25 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import ArticleSummary, { ArticleSummaryHeadline } from "@times-components/article-summary";
+import ArticleSummary, { ArticleSummaryContent, ArticleSummaryHeadline } from "@times-components/article-summary";
 import Image from "@times-components/image";
 import { colours, spacing } from "@times-components/styleguide";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 
-const renderImage = imageUri => {
-  console.log("RenderImage:", imageUri);
-  return (
-    <View
-      style={{
-        backgroundColor: "blue",
-        flex: 1,
-        marginBottom: spacing(2),
-        minWidth: "100%"
-      }}>
-      <Image
-        highResSize={normaliseWidth(screenWidthInPixels())}
-        imageRatio={16 / 9}
-        uri={imageUri}
-      />
-    </View >
-  );
-};
+const renderImage = imageUri => (
+  <View
+    style={{
+      backgroundColor: "blue",
+      marginBottom: spacing(2),
+      width: "100%"
+    }}>
+    <Image aspectRatio={16 / 9} uri={imageUri} />
+  </View >
+);
 
-const PrimaryTile = ({ tile: { article: { hasVideo, headline, label, leadAsset, section, shortHeadline } }, withImage }) => (
-  <View style={{ backgroundColor: "red", height: 600 }}>
+const renderSummaryContent = summary => (<ArticleSummaryContent ast={summary} />);
+
+const PrimaryTile = ({ tile: { article: { hasVideo, headline, label, leadAsset, section, shortHeadline, summary125 } }, withImage }) => (
+  <View>
     <ArticleSummary
       headline={() => (
         <ArticleSummaryHeadline headline={headline || shortHeadline} />
@@ -37,9 +30,8 @@ const PrimaryTile = ({ tile: { article: { hasVideo, headline, label, leadAsset, 
           colours.section[section] || colours.section.default,
         isVideo: hasVideo,
         title: label
-      }}
-      style={{ marginHorizontal: 10 }} />
-    {withImage ? renderImage(leadAsset.crop169.url) : null}
+      }} />
+    {withImage ? renderImage(leadAsset.crop169.url) : renderSummaryContent(summary125)}
   </View>
 );
 
