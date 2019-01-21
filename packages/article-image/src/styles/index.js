@@ -1,9 +1,17 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import {
+  spacing,
+  tabletRowPadding,
+  tabletWidth
+} from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: 0
+  },
+  imageContainerTablet: {
+    alignSelf: "center",
+    width: tabletWidth - tabletRowPadding
   },
   inlineCaption: {
     paddingLeft: spacing(2),
