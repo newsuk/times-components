@@ -51,7 +51,7 @@
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.2",
     "react-native": "0.55.4",
-    "@times-components/styleguide": "3.13.0"
+    "@times-components/styleguide": "3.13.1"
   },
   "peerDependencies": {
     "react": ">=16.5",

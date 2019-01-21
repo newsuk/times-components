@@ -1,4 +1,5 @@
-import styleguide, { tabletWidth } from "@times-components/styleguide";
+import Dimension from "react-native";
+import styleguide, { tabletWidth, tabletRowPadding } from "@times-components/styleguide";
 
 const sharedStyles = scale => {
   const { colours, fontFactory, spacing } = styleguide({ scale });
