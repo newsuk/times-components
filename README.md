@@ -65,6 +65,8 @@ server via:
 
 `yarn android:app` or `yarn ios:app`
 
+For step by step guide, see the corresponding Readme documentation for [android](./android-app/README.md) and [ios](./ios-app/README.md)
+
 ## Haul
 
 We use Haul in lieu of the standard `react-native` CLI so that we can generate
