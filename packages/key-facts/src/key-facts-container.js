@@ -1,10 +1,19 @@
 import React from "react";
 import { View } from "react-native";
+import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import propTypes from "./key-facts-shared-prop-types";
 import styles from "./styles";
 
 const KeyFactsContainer = ({ children }) => (
-  <View style={styles.container}>{children}</View>
+    <Responsive>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) =>
+          <View style={[styles.container, isTablet && styles.containerTablet]}>
+            {children}
+          </View>
+        }
+      </ResponsiveContext.Consumer>
+    </Responsive>
 );
 
 KeyFactsContainer.propTypes = propTypes;
