@@ -1973,9 +1973,43 @@ const addProp = (obj, key, value) => {
   return obj;
 };
 
+const defaultBylines = [
+  {
+    __typename: "TextByline",
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: "Rick Broadbent"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ],
+    image: {
+      __typename: "Image",
+      caption: "some caption",
+      credits: "some credits",
+      crop: {
+        ratio: "1:1",
+        url:
+          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38"
+      },
+      id: "372bc095-34c4-47e4-8b1e-d352f5641ee5",
+      title: "some title"
+    }
+  }
+];
+
 const makeDefaultConfig = ({
   author = defaultAuthor,
   byline = defaultByline,
+  bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
@@ -1996,6 +2030,7 @@ const makeDefaultConfig = ({
 } = {}) => ({
   author,
   byline,
+  bylines,
   commentCount,
   commentsEnabled,
   content,

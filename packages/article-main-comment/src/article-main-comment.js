@@ -19,7 +19,6 @@ class ArticlePage extends Component {
   renderHeader() {
     const { article, onAuthorPress } = this.props;
     const {
-      author,
       bylines,
       flags,
       hasVideo,
@@ -31,7 +30,14 @@ class ArticlePage extends Component {
       standfirst
     } = article;
 
-    const authorImage = bylines && bylines.length > 0 && bylines[0].image && Object.keys(bylines[0].image).length !== 0 && bylines[0].image.crop ? bylines[0].image.crop.url : null;
+    const authorImage =
+      bylines &&
+      bylines.length > 0 &&
+      bylines[0].image &&
+      Object.keys(bylines[0].image).length !== 0 &&
+      bylines[0].image.crop
+        ? bylines[0].image.crop.url
+        : null;
 
     return (
       <ArticleHeader
