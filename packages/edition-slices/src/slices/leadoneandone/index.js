@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { LeadOneAndTwoSlice } from "@times-components/slice";
+import { LeadOneAndTwoSlice } from "@times-components/slice-layout";
 import { PrimaryTile } from "../../tiles";
 
 const LeadOneAndOneSlice = ({ lead, support }) => (
