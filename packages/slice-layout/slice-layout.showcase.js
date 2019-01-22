@@ -5,7 +5,7 @@ import {
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice,
   StandardSlice
-} from "./src/slice";
+} from "./src/slice-layout";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
@@ -187,5 +187,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/Slice"
+  name: "Primitives/Slice Layout"
 };

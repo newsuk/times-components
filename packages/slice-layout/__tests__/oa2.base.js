@@ -1,7 +1,7 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
-import { OpinionOneAndTwoSlice } from "../src/slice";
+import { OpinionOneAndTwoSlice } from "../src/slice-layout";
 
 export default renderComponent => {
   const tests = [
