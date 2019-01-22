@@ -26,14 +26,11 @@ class Responsive extends Component {
   }
 
   onDimensionChange({ window: { width } }) {
-    console.log("Responsive", "onDimensionChange");
     this.setState(calculateState(width));
   }
 
   render() {
     const { children } = this.props;
-
-    console.log("Responsive", "render", { state: this.state, children });
 
     return (
       <ResponsiveContext.Provider value={this.state}>

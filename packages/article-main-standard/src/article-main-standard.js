@@ -43,43 +43,41 @@ class ArticlePage extends Component {
     const styles = stylesFactory();
 
     return (
-      <Responsive>
-        <ResponsiveContext.Consumer>
-          {({ isTablet }) => {
-            const leadAsset = (
-              <View key="leadAsset" testID="leadAsset">
-                <ArticleLeadAsset
-                  {...getLeadAsset(article)}
-                  getImageCrop={getStandardTemplateCrop}
-                  onVideoPress={onVideoPress}
-                  renderModalCaption={({ caption }) => <Caption {...caption} />}
-                  style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
-                  width={parentProps.width}
-                />
-              </View>
-            );
-            const header = (
-              <Fragment key="header">
-                <ArticleHeader
-                  flags={flags}
-                  hasVideo={hasVideo}
-                  headline={getHeadline(headline, shortHeadline)}
-                  label={label}
-                  standfirst={standfirst}
-                  style={[styles.articleMainContentRow]}
-                />
-                <ArticleMeta
-                  byline={byline}
-                  onAuthorPress={onAuthorPress}
-                  publicationName={publicationName}
-                  publishedTime={publishedTime}
-                />
-              </Fragment>
-            );
-            return isTablet ? [header, leadAsset] : [leadAsset, header];
-          }}
-        </ResponsiveContext.Consumer>
-      </Responsive>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => {
+          const leadAsset = (
+            <View key="leadAsset" testID="leadAsset">
+              <ArticleLeadAsset
+                {...getLeadAsset(article)}
+                getImageCrop={getStandardTemplateCrop}
+                onVideoPress={onVideoPress}
+                renderModalCaption={({ caption }) => <Caption {...caption} />}
+                style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
+                width={parentProps.width}
+              />
+            </View>
+          );
+          const header = (
+            <Fragment key="header">
+              <ArticleHeader
+                flags={flags}
+                hasVideo={hasVideo}
+                headline={getHeadline(headline, shortHeadline)}
+                label={label}
+                standfirst={standfirst}
+                style={[styles.articleMainContentRow]}
+              />
+              <ArticleMeta
+                byline={byline}
+                onAuthorPress={onAuthorPress}
+                publicationName={publicationName}
+                publishedTime={publishedTime}
+              />
+            </Fragment>
+          );
+          return isTablet ? [header, leadAsset] : [leadAsset, header];
+        }}
+      </ResponsiveContext.Consumer>
     );
   }
 
