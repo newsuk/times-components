@@ -12,6 +12,7 @@ import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import { ResponsiveContext } from "@times-components/responsive";
 import { colours } from "@times-components/styleguide";
+import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -176,7 +177,7 @@ const ArticleRow = ({
           <ResponsiveContext.Consumer>
             {({ isTablet }) => {
               const aspectRatio = 16 / 9;
-              const { width } = screenWidth(isTablet)
+              const width = screenWidth(isTablet)
               const height = width / aspectRatio;
               return (
                 <View

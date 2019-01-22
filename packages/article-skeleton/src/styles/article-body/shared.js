@@ -1,4 +1,3 @@
-import Dimension from "react-native";
 import styleguide, { tabletWidth, tabletRowPadding } from "@times-components/styleguide";
 
 const sharedStyles = scale => {
@@ -36,7 +35,6 @@ const sharedStyles = scale => {
     },
     imageContainerTablet: {
       alignSelf: "center"
-      // maxWidth: tabletWidth
     },
     interactiveContainer: {
       marginBottom: spacing(4),

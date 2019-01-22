@@ -13,7 +13,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "marginBottom": 20,
+            "maxWidth": 660,
             "paddingLeft": 10,
             "paddingRight": 10,
           }
@@ -75,7 +77,14 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       />
     </View>
     <View>
-      <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "width": 660,
+          }
+        }
+      >
         <PullQuote>
           The pull quote content
         </PullQuote>
@@ -85,9 +94,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "flexDirection": "column",
+            "maxWidth": 660,
             "paddingBottom": 25,
-            "width": "100%",
           }
         }
       >
