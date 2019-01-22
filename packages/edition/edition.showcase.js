@@ -12,7 +12,9 @@ export default {
       type: "story"
     },
     {
-      component: () => <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />,
+      component: () => (
+        <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />
+      ),
       name: "Tile - Primary (without image)",
       type: "story"
     },
@@ -23,7 +25,12 @@ export default {
       type: "story"
     },
     {
-      component: () => <LeadOneAndOneSlice lead={leadOneAndOneData.lead} support={leadOneAndOneData.support} />,
+      component: () => (
+        <LeadOneAndOneSlice
+          lead={leadOneAndOneData.lead}
+          support={leadOneAndOneData.support}
+        />
+      ),
       name: "Slice - Lead One And One",
       type: "story"
     }
