@@ -153,25 +153,29 @@ class ArticleSkeleton extends Component {
 
     return (
       <AdComposer adConfig={adConfig}>
-        <Responsive><ArticleContent
-          data={articleData}
-          Header={Header}
-          initialListSize={listViewSize}
-          interactiveConfig={interactiveConfig}
-          onAuthorPress={onAuthorPress}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onLinkPress={onLinkPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream)}
-          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-          width={width}
-        /></Responsive>
+        <Responsive>
+          <ArticleContent
+            data={articleData}
+            Header={Header}
+            initialListSize={listViewSize}
+            interactiveConfig={interactiveConfig}
+            onAuthorPress={onAuthorPress}
+            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentsPress={onCommentsPress}
+            onLinkPress={onLinkPress}
+            onRelatedArticlePress={onRelatedArticlePress}
+            onTopicPress={onTopicPress}
+            onTwitterLinkPress={onTwitterLinkPress}
+            onVideoPress={onVideoPress}
+            onViewableItemsChanged={
+              onViewed ? this.onViewableItemsChanged : null
+            }
+            pageSize={listViewPageSize}
+            renderRow={renderRow(analyticsStream)}
+            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+            width={width}
+          />
+        </Responsive>
       </AdComposer>
     );
   }

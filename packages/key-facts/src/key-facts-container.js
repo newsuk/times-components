@@ -5,15 +5,13 @@ import propTypes from "./key-facts-shared-prop-types";
 import styles from "./styles";
 
 const KeyFactsContainer = ({ children }) => (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => {
-          console.log("KeyFactsContainer", "ResponsiveContext.Consumer re-render", { isTablet });
-          return <View style={[styles.container, isTablet && styles.containerTablet]}>
-            {children}
-          </View>;
-        }
-        }
-      </ResponsiveContext.Consumer>
+  <ResponsiveContext.Consumer>
+    {({ isTablet }) => (
+      <View style={[styles.container, isTablet && styles.containerTablet]}>
+        {children}
+      </View>
+    )}
+  </ResponsiveContext.Consumer>
 );
 
 KeyFactsContainer.propTypes = propTypes;

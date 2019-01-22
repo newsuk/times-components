@@ -29,7 +29,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     marginHorizontal: 0,
     marginVertical: spacing(2),
-    width: "80.8%",
+    width: "80.8%"
   },
   link: {
     color: colours.functional.action
@@ -52,8 +52,8 @@ export default StyleSheet.create({
     marginBottom: spacing(4)
   },
   titleTablet: {
-    width: "20%",
-    paddingRight: spacing(4)
+    paddingRight: spacing(4),
+    width: "20%"
   },
   wrapper: {
     flex: 1

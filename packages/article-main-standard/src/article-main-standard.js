@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
-import Responsive, { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components/responsive";
 import {
   getHeadline,
   getLeadAsset,

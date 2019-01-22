@@ -68,6 +68,7 @@
     "@times-components/link": "3.1.26",
     "@times-components/markup": "3.2.36",
     "@times-components/markup-forest": "1.2.8",
+    "@times-components/responsive": "0.1.1",
     "@times-components/styleguide": "3.13.1",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2",

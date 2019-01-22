@@ -4,10 +4,8 @@ exports[`key facts with title 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 5,
-      "marginLeft": 10,
-      "marginRight": 10,
-      "marginTop": 5,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
     }
   }
 >
@@ -26,7 +24,13 @@ exports[`key facts with title 1`] = `
   >
     EXAMPLE TITLE
   </Text>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -227,10 +231,8 @@ exports[`key facts with title and context theme 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 5,
-      "marginLeft": 10,
-      "marginRight": 10,
-      "marginTop": 5,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
     }
   }
 >
@@ -249,7 +251,13 @@ exports[`key facts with title and context theme 1`] = `
   >
     EXAMPLE TITLE
   </Text>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {

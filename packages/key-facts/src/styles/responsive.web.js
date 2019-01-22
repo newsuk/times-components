@@ -6,9 +6,9 @@ export const KeyFactsResponsiveContainer = styled(View)`
   margin: 5px 10px;
 
   @media (min-width: ${breakpoints.medium}px) {
-      flex-direction: row;
-      margin: 10px auto;
-      width: 80.8%;
+    flex-direction: row;
+    margin: 10px auto;
+    width: 80.8%;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
