@@ -38,7 +38,7 @@
   "dependencies": {
     "@times-components/article-summary": "3.3.23",
     "@times-components/image": "4.4.4",
-    "@times-components/slice": "3.1.27",
+    "@times-components/slice-layout": "0.0.1",
     "@times-components/styleguide": "3.13.1",
     "prop-types": "15.6.2"
   },
