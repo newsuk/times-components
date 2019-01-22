@@ -1,9 +1,9 @@
 {
-  "name": "@times-components/edition",
+  "name": "@times-components/edition-slices",
   "version": "0.0.1",
-  "description": "Section page, slices and tiles",
-  "main": "dist/edition",
-  "dev": "src/edition",
+  "description": "Components used in edition pages including slices and tiles",
+  "main": "dist/edition-slices",
+  "dev": "src/edition-slices",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "edition",
+    "edition-slices",
     "component"
   ],
   "license": "BSD-3-Clause",
