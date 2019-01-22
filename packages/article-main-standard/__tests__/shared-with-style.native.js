@@ -8,8 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import "./mocks.native";
-import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
+import { setIsTablet } from "./mocks.native";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";

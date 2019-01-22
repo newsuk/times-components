@@ -77,9 +77,9 @@
     "graphql-tools": "3.1.1",
     "lodash.isequal": "4.4.0",
     "prop-types": "15.6.2",
-    "react": "16.6.3",
+    "react": "16.5.2",
     "react-apollo": "2.1.4",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "16.5.2",
     "zen-observable": "0.8.9"
   },
   "peerDependencies": {

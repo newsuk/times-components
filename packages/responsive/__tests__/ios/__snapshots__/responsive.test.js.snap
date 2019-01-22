@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`with default values 1`] = `"{\\"isTablet\\":true,\\"screenWidth\\":750}"`;
+exports[`with default values 1`] = `"{\\"isTablet\\":false,\\"screenWidth\\":500}"`;
 
 exports[`with default values: after width update 1`] = `"{\\"isTablet\\":true,\\"screenWidth\\":1000}"`;
