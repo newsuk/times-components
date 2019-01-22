@@ -5,15 +5,15 @@ export default addTypenameToDocument(gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
       bylines {
-        ... on TextByline {
+        ... on Byline {
           byline
           image {
             id
-            caption,
-            credits,
-            title,
+            caption
+            credits
+            title
             crop(ratio: "1:1") {
-              ratio,
+              ratio
               url
             }
           }

@@ -43,11 +43,16 @@ class ArticlePage extends Component {
         ? bylines[0].image.crop.url
         : null;
 
+    const authorByline =
+      bylines && bylines.length > 0 && Object.keys(bylines[0]).length !== 0
+        ? bylines[0].byline
+        : null;
+
     return (
       <Fragment>
         <ArticleHeader
           authorImage={authorImage}
-          byline={bylines[0].byline}
+          byline={authorByline}
           flags={flags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
