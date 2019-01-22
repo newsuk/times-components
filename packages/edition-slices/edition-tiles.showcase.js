@@ -6,14 +6,14 @@ export default {
   children: [
     {
       component: () => <PrimaryTile tile={leadOneAndOneData.lead} withImage />,
-      name: "Tile - Primary (with image)",
+      name: "Primary (with image)",
       type: "story"
     },
     {
       component: () => (
         <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />
       ),
-      name: "Tile - Primary (without image)",
+      name: "Primary (without image)",
       type: "story"
     }
   ],
