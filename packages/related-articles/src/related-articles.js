@@ -4,7 +4,7 @@ import {
   StandardSlice,
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice
-} from "@times-components/slice";
+} from "@times-components/slice-layout";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import propTypes from "./related-articles-prop-types";

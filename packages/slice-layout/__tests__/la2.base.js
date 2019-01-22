@@ -1,7 +1,7 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
-import { LeadOneAndTwoSlice } from "../src/slice";
+import { LeadOneAndTwoSlice } from "../src/slice-layout";
 
 export default renderComponent => {
   const tests = [

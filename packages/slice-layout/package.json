@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/slice",
-  "version": "3.1.27",
-  "description": "Slice",
-  "main": "dist/slice",
+  "name": "@times-components/slice-layout",
+  "version": "0.0.1",
+  "description": "Slice layout",
+  "main": "dist/slice-layout",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "slice",
+    "slice-layout",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -80,5 +80,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "dev": "src/slice"
+  "dev": "src/slice-layout"
 }
