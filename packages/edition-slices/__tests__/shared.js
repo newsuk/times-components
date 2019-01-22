@@ -5,7 +5,6 @@ import { PrimaryTile } from "../src/tiles";
 import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "../src/slices";
 
 export default () => {
-  // Tiles
   it("primary tile", () => {
     const testInstance = TestRenderer.create(
       <PrimaryTile tile={leadOneAndOneData.lead} withImage />
