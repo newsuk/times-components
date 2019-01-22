@@ -38,7 +38,7 @@
   "dependencies": {
     "@times-components/article-summary": "3.3.23",
     "@times-components/image": "4.4.4",
-    "@times-components/slice-layout": "0.0.1",
+    "@times-components/slice-layout": "0.0.2",
     "@times-components/styleguide": "3.13.1",
     "prop-types": "15.6.2"
   },
@@ -52,10 +52,10 @@
     "eslint": "5.9.0",
     "jest": "23.3.0",
     "prettier": "1.14.3",
-    "react": "16.6.3",
-    "react-dom": "16.6.3",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
     "react-native": "0.55.4",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "16.5.2",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },
