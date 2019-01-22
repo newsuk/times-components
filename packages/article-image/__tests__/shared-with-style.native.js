@@ -1,3 +1,5 @@
+import "./mocks.native";
+import React from "react";
 import {
   addSerializers,
   compose,
@@ -6,11 +8,11 @@ import {
   print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import shared from "./shared-with-style.base";
+import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
 
-jest.mock("@times-components/image", () => ({
-  ModalImage: "ModalImage"
-}));
+import ArticleImage from "../src/article-image";
+import primaryImageFixture from "../fixtures/primary-image";
+import shared from "./shared-with-style.base";
 
 export default () => {
   addSerializers(
@@ -22,9 +24,29 @@ export default () => {
     )
   );
 
-  shared(component => {
+  const makeTest = component => {
     const testInstance = TestRenderer.create(component);
-
     return testInstance.toJSON();
-  });
+  }
+
+  shared(makeTest);
+
+  it("should render an ArticleImage with Responsive Tablet styling", () => {
+    setIsTablet(true);
+
+    const primaryImage = primaryImageFixture(
+      "https://img/someImage",
+      "Some caption",
+      "Some credits"
+    );
+
+    expect(
+      makeTest(
+        <ArticleImage
+          captionOptions={primaryImage.captionOptions}
+          imageOptions={primaryImage.imageOptions}
+        />
+      )
+    ).toMatchSnapshot();
+  })
 };
