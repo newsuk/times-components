@@ -1,6 +1,6 @@
 import React from "react";
 import { LeadOneAndTwoSlice } from "@times-components/slice";
-import { PrimaryTile } from "@times-components/tile";
+import { PrimaryTile } from "../../tiles";
 
 const LeadOneAndOneSlice = ({ lead, support }) => (
   <LeadOneAndTwoSlice
