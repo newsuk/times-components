@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-skeleton",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "The article skeleton",
   "main": "dist/article-skeleton",
   "dev": "src/article-skeleton",
@@ -85,7 +85,7 @@
     "@times-components/markup": "3.2.36",
     "@times-components/markup-forest": "1.2.8",
     "@times-components/pull-quote": "3.3.7",
-    "@times-components/related-articles": "5.2.20",
+    "@times-components/related-articles": "5.2.21",
     "@times-components/styleguide": "3.13.1",
     "@times-components/tracking": "2.2.14",
     "@times-components/utils": "4.0.18",
