@@ -20,7 +20,6 @@ const ArticleLeadAssetVideo = ({
     brightcoveAccountId,
     skySports
   } = leadAsset;
-  console.log(isTablet);
   const width = screenWidth(isTablet);
   const height = width / aspectRatio;
 
