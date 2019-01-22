@@ -1997,8 +1997,7 @@ const defaultBylines = [
       credits: "some credits",
       crop: {
         ratio: "1:1",
-        url:
-          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38"
+        url: "https://image.io"
       },
       id: "372bc095-34c4-47e4-8b1e-d352f5641ee5",
       title: "some title"
