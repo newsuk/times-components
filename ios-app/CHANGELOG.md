@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.5.83...@times-components/ios-app@0.6.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [0.5.83](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.5.82...@times-components/ios-app@0.5.83) (2019-01-22)
 
 **Note:** Version bump only for package @times-components/ios-app

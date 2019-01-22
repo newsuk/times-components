@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.2.19...@times-components/article-flag@2.3.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [2.2.19](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.2.18...@times-components/article-flag@2.2.19) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/article-flag

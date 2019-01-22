@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.23...@times-components/article-summary@3.4.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [3.3.23](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.3.22...@times-components/article-summary@3.3.23) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/article-summary

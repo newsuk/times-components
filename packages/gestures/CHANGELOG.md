@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/newsuk/times-components/compare/@times-components/gestures@3.2.20...@times-components/gestures@3.3.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [3.2.20](https://github.com/newsuk/times-components/compare/@times-components/gestures@3.2.19...@times-components/gestures@3.2.20) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/gestures
