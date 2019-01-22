@@ -1,24 +1,36 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import ArticleSummary, { ArticleSummaryContent, ArticleSummaryHeadline } from "@times-components/article-summary";
+import ArticleSummary, {
+  ArticleSummaryContent,
+  ArticleSummaryHeadline
+} from "@times-components/article-summary";
 import Image from "@times-components/image";
-import { colours, spacing } from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
+import styles from "./styles";
 
 const renderImage = imageUri => (
-  <View
-    style={{
-      backgroundColor: "blue",
-      marginBottom: spacing(2),
-      width: "100%"
-    }}>
+  <View style={styles.imageContainer}>
     <Image aspectRatio={16 / 9} uri={imageUri} />
-  </View >
+  </View>
 );
 
-const renderSummaryContent = summary => (<ArticleSummaryContent ast={summary} />);
+const renderSummaryContent = summary => <ArticleSummaryContent ast={summary} />;
 
-const PrimaryTile = ({ tile: { article: { hasVideo, headline, label, leadAsset, section, shortHeadline, summary125 } }, withImage }) => (
+const PrimaryTile = ({
+  tile: {
+    article: {
+      hasVideo,
+      headline,
+      label,
+      leadAsset,
+      section,
+      shortHeadline,
+      summary125
+    }
+  },
+  withImage
+}) => (
   <View>
     <ArticleSummary
       headline={() => (
@@ -26,21 +38,24 @@ const PrimaryTile = ({ tile: { article: { hasVideo, headline, label, leadAsset, 
       )}
       label={label}
       labelProps={{
-        color:
-          colours.section[section] || colours.section.default,
+        color: colours.section[section] || colours.section.default,
         isVideo: hasVideo,
         title: label
-      }} />
-    {withImage ? renderImage(leadAsset.crop169.url) : renderSummaryContent(summary125)}
+      }}
+    />
+    {withImage
+      ? renderImage(leadAsset.crop169.url)
+      : renderSummaryContent(summary125)}
   </View>
 );
 
 PrimaryTile.propTypes = {
+  tile: PropTypes.shape({}).isRequired,
   withImage: PropTypes.bool
-}
+};
 
 PrimaryTile.defaultProps = {
   withImage: true
-}
+};
 
 export default PrimaryTile;

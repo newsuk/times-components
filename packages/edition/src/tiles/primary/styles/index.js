@@ -1,8 +1,12 @@
 import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
+import { spacing } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
-  ...sharedStyles
+  imageContainer: {
+    backgroundColor: "blue",
+    marginBottom: spacing(2),
+    width: "100%"
+  }
 });
 
 export default styles;
