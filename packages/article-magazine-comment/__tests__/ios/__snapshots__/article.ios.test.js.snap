@@ -19,7 +19,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <View>
         <Image
           aspectRatio={1}
-          uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38"
+          uri="https://image.io"
         />
         <Text>
           Some Short Headline
@@ -170,7 +170,7 @@ exports[`4. an article with ads 1`] = `
       <View>
         <Image
           aspectRatio={1}
-          uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38"
+          uri="https://image.io"
         />
         <Text>
           Some Headline
