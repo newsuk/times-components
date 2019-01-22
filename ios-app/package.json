@@ -14,7 +14,7 @@
   "dependencies": {
     "@times-components/pages": "1.9.1",
     "prop-types": "15.6.2",
-    "react": "16.6.3",
+    "react": "16.5.2",
     "react-native": "0.55.4",
     "url-polyfill": "1.1.0"
   },
