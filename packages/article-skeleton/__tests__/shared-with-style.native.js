@@ -7,9 +7,10 @@ import {
   minimaliseTransform,
   minimalNativeTransform
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
 import "./mocks.native";
-import { snapshotTests } from "./shared.base";
+import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
+import articleFixture from "../fixtures/full-article";
+import shared, { renderArticle, fixtureArgs } from "./shared.base";
 
 export default () => {
   addSerializers(
@@ -22,5 +23,19 @@ export default () => {
     )
   );
 
-  iterator(snapshotTests(TestRenderer.create));
+  const tests = [
+    {
+      name: "an Article Skeleton with responsive items",
+      test() {
+        setIsTablet(true);
+
+        const article = articleFixture({ ...fixtureArgs });
+        const testInstance = TestRenderer.create(renderArticle(article));
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
+
+  shared(TestRenderer.create, tests);
 };
