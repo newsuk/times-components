@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { LeadOneAndTwoSlice } from "@times-components/slice-layout";
+import { LeadOneAndTwoSlice } from "@times-components/slice";
 import { PrimaryTile } from "../../tiles";
 
 const LeadOneAndOneSlice = ({ lead, support }) => (
   <LeadOneAndTwoSlice
     renderLead={() => <PrimaryTile tile={lead} withImage />}
-    renderSupport1={() => <PrimaryTile tile={support} />}
+    renderSupport1={() => <PrimaryTile tile={support} withImage={false} />}
     renderSupport2={() => null}
   />
 );

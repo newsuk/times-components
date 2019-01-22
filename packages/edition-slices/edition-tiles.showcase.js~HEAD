@@ -1,19 +1,19 @@
 import React from "react";
 import { PrimaryTile } from "./src/tiles";
-import leadOneAndOneData from "./fixtures/leadoneandone";
+import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
+
+const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [
     {
       component: () => <PrimaryTile tile={leadOneAndOneData.lead} withImage />,
-      name: "Tile - Primary (with image)",
+      name: "Primary (with image)",
       type: "story"
     },
     {
-      component: () => (
-        <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />
-      ),
-      name: "Tile - Primary (without image)",
+      component: () => <PrimaryTile tile={leadOneAndOneData.lead} />,
+      name: "Primary (without image)",
       type: "story"
     }
   ],
