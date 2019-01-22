@@ -88,6 +88,7 @@
     "@times-components/related-articles": "5.2.20",
     "@times-components/styleguide": "3.13.1",
     "@times-components/tracking": "2.2.14",
+    "@times-components/responsive": "0.1.1",
     "@times-components/utils": "4.0.18",
     "@times-components/video": "4.1.36",
     "lodash.get": "4.4.2",
