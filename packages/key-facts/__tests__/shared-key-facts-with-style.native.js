@@ -10,8 +10,10 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
 import KeyFacts from "../src/key-facts";
-import data from "../fixtures/key-facts-test.json";
+import dataWithTitle from "../fixtures/key-facts-test.json";
+import dataWithoutTitle from "../fixtures/key-facts-no-title-test.json";
 
 export default () => {
   addSerializers(
@@ -24,9 +26,35 @@ export default () => {
     )
   );
 
-  it("key facts with title", () => {
+  it("key facts with title on mobile", () => {
     const testInstance = TestRenderer.create(
-      <KeyFacts ast={data} onLinkPress={() => {}} />
+      <KeyFacts ast={dataWithTitle} onLinkPress={() => {}} />
+    );
+
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("key facts with title on tablet", () => {
+    setIsTablet(true);
+    const testInstance = TestRenderer.create(
+      <KeyFacts ast={dataWithTitle} onLinkPress={() => {}} />
+    );
+
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("key facts without title on mobile", () => {
+    const testInstance = TestRenderer.create(
+      <KeyFacts ast={dataWithoutTitle} onLinkPress={() => {}} />
+    );
+
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("key facts without title on tablet", () => {
+    setIsTablet(true);
+    const testInstance = TestRenderer.create(
+      <KeyFacts ast={dataWithoutTitle} onLinkPress={() => {}} />
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -38,7 +66,7 @@ export default () => {
 
     const testInstance = TestRenderer.create(
       <Context.Provider value={{ theme: { scale, sectionColour } }}>
-        <KeyFacts ast={data} onLinkPress={() => {}} />
+        <KeyFacts ast={dataWithTitle} onLinkPress={() => {}} />
       </Context.Provider>
     );
 
