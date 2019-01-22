@@ -17,7 +17,6 @@ const ArticleLeadAsset = ({
   getImageCrop,
   renderCaption,
   renderModalCaption = renderCaption,
-  isTablet,
   isVideo,
   leadAsset,
   onVideoPress,
@@ -45,20 +44,20 @@ const ArticleLeadAsset = ({
 
   return (
     <ResponsiveContext.Consumer>
-      {({ isTablet }) =>
-      <View style={style}>
-        <LeadAsset
-          aspectRatio={getRatio(crop.ratio)}
-          caption={renderModalCaption({ caption })}
-          isTablet={isTablet}
-          leadAsset={leadAsset}
-          onVideoPress={onVideoPress}
-          uri={crop.url}
-          width={width}
-        />
-        {renderCaption({ caption })}
-      </View>
-      }
+      {({ isTablet }) => (
+        <View style={style}>
+          <LeadAsset
+            aspectRatio={getRatio(crop.ratio)}
+            caption={renderModalCaption({ caption })}
+            isTablet={isTablet}
+            leadAsset={leadAsset}
+            onVideoPress={onVideoPress}
+            uri={crop.url}
+            width={width}
+          />
+          {renderCaption({ caption })}
+        </View>
+      )}
     </ResponsiveContext.Consumer>
   );
 };

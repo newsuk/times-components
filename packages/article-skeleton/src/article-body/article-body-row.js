@@ -65,7 +65,14 @@ const ArticleRow = ({
         element: (
           <ResponsiveContext.Consumer>
             {({ isTablet }) => (
-              <View key={key} style={isTablet ? styles.interactiveContainerTablet : styles.interactiveContainer}>
+              <View
+                key={key}
+                style={
+                  isTablet
+                    ? styles.interactiveContainerTablet
+                    : styles.interactiveContainer
+                }
+              >
                 <InteractiveWrapper config={interactiveConfig} id={id} />
               </View>
             )}
@@ -177,7 +184,7 @@ const ArticleRow = ({
           <ResponsiveContext.Consumer>
             {({ isTablet }) => {
               const aspectRatio = 16 / 9;
-              const width = screenWidth(isTablet)
+              const width = screenWidth(isTablet);
               const height = width / aspectRatio;
               return (
                 <View

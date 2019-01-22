@@ -57,7 +57,7 @@ const styles = {
     marginTop: spacing(2)
   },
   videoTabletContainer: {
-    alignSelf: "center",
+    alignSelf: "center"
   }
 };
 

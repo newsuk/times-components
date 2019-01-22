@@ -1,11 +1,11 @@
 export default ({ children }) => children;
 
- let isTablet = false;
+let isTablet = false;
 
- export const mockSetIsTablet = isTabletValue => {
+export const mockSetIsTablet = isTabletValue => {
   isTablet = isTabletValue;
 };
 
- export const ResponsiveContext = {
+export const ResponsiveContext = {
   Consumer: ({ children }) => children({ isTablet })
 };

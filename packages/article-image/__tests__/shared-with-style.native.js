@@ -27,7 +27,7 @@ export default () => {
   const makeTest = component => {
     const testInstance = TestRenderer.create(component);
     return testInstance.toJSON();
-  }
+  };
 
   shared(makeTest);
 
@@ -48,5 +48,5 @@ export default () => {
         />
       )
     ).toMatchSnapshot();
-  })
+  });
 };

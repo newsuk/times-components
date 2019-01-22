@@ -12,7 +12,7 @@ import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
 import { delay, iterator } from "@times-components/test-utils";
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
-import paragraphData from "./fixtures/paragraph-showcase.json"
+import paragraphData from "./fixtures/paragraph-showcase.json";
 
 export default () => {
   addSerializers(
@@ -38,7 +38,9 @@ export default () => {
       name: "responsive tablet paragraph",
       test: async () => {
         setIsTablet(true);
-        const testInstance = TestRenderer.create(renderParagraph(paragraphData));
+        const testInstance = TestRenderer.create(
+          renderParagraph(paragraphData)
+        );
         await delay(0);
         expect(testInstance).toMatchSnapshot();
       }
