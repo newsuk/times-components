@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. primary tile 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  margin-bottom: 10px;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S2"
+  >
+    <h3
+      aria-level="3"
+      className="S1"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div
+    className="S3"
+  >
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. primary tiles without image 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S2"
+  >
+    <h3
+      aria-level="3"
+      className="S1"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div
+    className="S4"
+  >
+    <span
+      className="S3"
+    >
+      
+      The 
+      <span
+        className="S3"
+      >
+        Duke of Edinburgh
+      </span>
+       could be charged with driving without due care and attention after his car accident yesterday
+      ...
+    </span>
+  </div>
+</div>
+`;
+
+exports[`3. lead one full width slice 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  margin-bottom: 10px;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S2"
+  >
+    <h3
+      aria-level="3"
+      className="S1"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div
+    className="S3"
+  >
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
+
+exports[`4. lead one and one slice 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  margin-bottom: 10px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+</style>
+
+<div
+  className="configweb__Base-kjGEdW cNGWYk configweb__Base-eXHdFh jFKTdO S2"
+>
+  <div
+    className="responsiveweb__SliceContainer-kEikFj fWXWTf S2"
+  >
+    <div
+      className="responsiveweb__Base-kQMzah cxejRh responsiveweb__Base-jXvbcq dmuCnu responsiveweb__Base-dIyxxW eFWEvM S2"
+    >
+      <div
+        className="responsiveweb__Base-iFMijX gmChNY responsiveweb__Base-drDvXX xjUQC responsiveweb__Base-jIurKX hSGlCR S2"
+      >
+        <div
+          className="S2"
+        >
+          <div
+            className="S2"
+          >
+            <h3
+              aria-level="3"
+              className="S1"
+              role="heading"
+            >
+              Prince Philip ‘could be prosecuted’ over car crash
+            </h3>
+          </div>
+          <div
+            className="S3"
+          >
+            <Image
+              aspectRatio={1.7777777777777777}
+              uri="https://img/someImage"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsiveweb-fhQnWB dWVMyV S2"
+      />
+      <div
+        className="responsiveweb__SupportsContainer-eXSNWD dpijfw S2"
+      >
+        <div
+          className="responsiveweb-brngwq gvaiUN S2"
+        >
+          <div
+            className="S2"
+          >
+            <div
+              className="S2"
+            >
+              <h3
+                aria-level="3"
+                className="S1"
+                role="heading"
+              >
+                GCHQ gives girls free cyber-classes to tackle gender gap
+              </h3>
+            </div>
+            <div
+              className="S5"
+            >
+              <span
+                className="S4"
+              >
+                
+                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+              </span>
+              <span
+                className="S4"
+              >
+                 
+                The intelligence
+                ...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
