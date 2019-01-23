@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys */
-export default ({ imageUrl }) => ({
+export default ({ imageUrl } = {}) => ({
   __typename: "LeadOneAndOneSlice",
   lead: {
     article: {
