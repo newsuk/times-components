@@ -28,7 +28,7 @@ export default () => {
       name: "primary tiles without image",
       test: () => {
         const output = TestRenderer.create(
-          <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />
+          <PrimaryTile tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
