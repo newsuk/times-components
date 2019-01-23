@@ -1,3 +1,4 @@
+import React from "react";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -8,7 +9,9 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
-import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
+import Responsive from "@times-components/responsive";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
+
 import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
 
@@ -30,7 +33,11 @@ export default () => {
         setIsTablet(true);
 
         const article = articleFixture({ ...fixtureArgs });
-        const testInstance = TestRenderer.create(renderArticle(article));
+        const testInstance = TestRenderer.create(
+          <Responsive>
+            {renderArticle(article)}
+          </Responsive>
+          );
 
         expect(testInstance).toMatchSnapshot();
       }

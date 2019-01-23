@@ -1,4 +1,4 @@
-import "./mocks.native";
+import React from "react";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -8,8 +8,10 @@ import {
   flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
-import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
+import Responsive from "@times-components/responsive";
 import { delay, iterator } from "@times-components/test-utils";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
+
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import paragraphData from "./fixtures/paragraph-showcase.json";
@@ -39,7 +41,9 @@ export default () => {
       test: async () => {
         setIsTablet(true);
         const testInstance = TestRenderer.create(
-          renderParagraph(paragraphData)
+          <Responsive>
+            {renderParagraph(paragraphData)}
+          </Responsive>
         );
         await delay(0);
         expect(testInstance).toMatchSnapshot();
@@ -49,7 +53,11 @@ export default () => {
       name: "responsive tablet paragraph with a drop cap",
       test: async () => {
         setIsTablet(true);
-        const testInstance = TestRenderer.create(renderParagraph(dropCapData));
+        const testInstance = TestRenderer.create(
+          <Responsive>
+            {renderParagraph(dropCapData)}
+          </Responsive>
+        );
         await delay(0);
         expect(testInstance).toMatchSnapshot();
       }

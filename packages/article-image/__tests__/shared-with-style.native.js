@@ -8,11 +8,16 @@ import {
   print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import { mockSetIsTablet as setIsTablet } from "@times-components/responsive";
+import Responsive from "@times-components/responsive";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
 
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import shared from "./shared-with-style.base";
+
+jest.mock("@times-components/image", () => ({
+  ModalImage: "ModalImage"
+}));
 
 export default () => {
   addSerializers(
@@ -42,10 +47,12 @@ export default () => {
 
     expect(
       makeTest(
-        <ArticleImage
-          captionOptions={primaryImage.captionOptions}
-          imageOptions={primaryImage.imageOptions}
-        />
+        <Responsive>
+          <ArticleImage
+            captionOptions={primaryImage.captionOptions}
+            imageOptions={primaryImage.imageOptions}
+          />
+        </Responsive>
       )
     ).toMatchSnapshot();
   });
