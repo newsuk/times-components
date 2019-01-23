@@ -33,6 +33,10 @@ const sharedStyles = scale => {
       color: colours.functional.primary,
       marginBottom: spacing(5)
     },
+    containerTablet: {
+      alignSelf: "center",
+      width: tabletWidth
+    },
     imageContainerTablet: {
       alignSelf: "center"
     },
@@ -45,10 +49,6 @@ const sharedStyles = scale => {
       alignSelf: "center",
       maxWidth: tabletWidth
     },
-    keyFactsContainerTablet: {
-      alignSelf: "center",
-      maxWidth: tabletWidth
-    },
     leadAsset: {
       marginBottom: spacing(2)
     },
@@ -56,14 +56,6 @@ const sharedStyles = scale => {
       flexDirection: "column",
       paddingBottom: spacing(5),
       width: "100%"
-    },
-    primaryContainerTablet: {
-      alignSelf: "center",
-      width: tabletWidth
-    },
-    pullQuoteContainerTablet: {
-      alignSelf: "center",
-      width: tabletWidth
     }
   };
 };

@@ -84,7 +84,7 @@ const ArticleRow = ({
         element: (
           <ResponsiveContext.Consumer>
             {({ isTablet }) => (
-              <View style={isTablet && styles.keyFactsContainerTablet}>
+              <View style={isTablet && styles.containerTablet}>
                 <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
               </View>
             )}
@@ -145,7 +145,7 @@ const ArticleRow = ({
             }) => (
               <ResponsiveContext.Consumer>
                 {({ isTablet }) => (
-                  <View style={isTablet && styles.pullQuoteContainerTablet}>
+                  <View style={isTablet && styles.containerTablet}>
                     <PullQuote
                       caption={name}
                       captionColour={sectionColour}
@@ -188,7 +188,7 @@ const ArticleRow = ({
                   key={key}
                   style={[
                     styles.primaryContainer,
-                    isTablet && styles.primaryContainerTablet
+                    isTablet && styles.containerTablet
                   ]}
                 >
                   <Video
