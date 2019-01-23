@@ -5,142 +5,144 @@ exports[`full article with style on mobile 1`] = `
   <View>
     <View>
       <View>
-        <View
-          style={
-            Object {
-              "marginBottom": 5,
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 5,
+              }
             }
-          }
-        >
-          <ModalImage />
+          >
+            <ModalImage />
+          </View>
         </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
         <View
           style={
             Object {
-              "marginBottom": -13.75,
-              "marginTop": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 33,
-              "marginBottom": 15,
-              "marginTop": 15,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 28,
-              "marginTop": -7,
-              "paddingBottom": 12,
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 10,
-              "paddingTop": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 15,
+                "marginBottom": -13.75,
+                "marginTop": 10,
               }
             }
           >
-            <NewArticleFlag />
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "fontWeight": "400",
+                "lineHeight": 33,
+                "marginBottom": 15,
+                "marginTop": 15,
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 28,
+                "marginTop": -7,
+                "paddingBottom": 12,
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 10,
+                "paddingTop": 5,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <NewArticleFlag />
+            </View>
           </View>
         </View>
-      </View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
         <View
           style={
             Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 1,
-              "paddingBottom": 6,
-              "paddingTop": 7,
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
+              "marginBottom": 20,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 9,
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "paddingBottom": 6,
+                "paddingTop": 7,
               }
             }
           >
-            <ArticleBylineWithLinks />
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 1,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 21,
+                }
+              }
+            >
+              <ArticleBylineWithLinks />
+            </Text>
+          </View>
+          <View
             style={
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "paddingBottom": 6,
+                "paddingTop": 7,
               }
             }
           >
-            Friday March 13 2015, 6:54pm, The Times
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 21,
+                }
+              }
+            >
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -280,141 +282,155 @@ exports[`full article with style on tablet 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "paddingLeft": 10,
             "paddingRight": 10,
+            "width": 660,
           }
         }
       >
         <View
           style={
             Object {
-              "marginBottom": -13.75,
-              "marginTop": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 33,
-              "marginBottom": 15,
-              "marginTop": 15,
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 28,
-              "marginTop": -7,
-              "paddingBottom": 12,
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 10,
-              "paddingTop": 5,
+              "alignSelf": "center",
+              "marginTop": 30,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "width": 660,
             }
           }
         >
           <View
             style={
               Object {
-                "marginRight": 15,
+                "marginBottom": -13.75,
+                "marginTop": 10,
               }
             }
           >
-            <NewArticleFlag />
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 45,
+                "fontWeight": "400",
+                "lineHeight": 45,
+                "marginBottom": 15,
+                "marginTop": 15,
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 28,
+                "marginTop": -7,
+                "paddingBottom": 12,
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 10,
+                "paddingTop": 5,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <NewArticleFlag />
+            </View>
           </View>
         </View>
-      </View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
         <View
           style={
             Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 1,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 1,
-              "paddingBottom": 6,
-              "paddingTop": 7,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 21,
-              }
-            }
-          >
-            Friday March 13 2015, 6:54pm, The Times
-          </Text>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
               "marginBottom": 20,
-              "paddingBottom": 20,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 9,
             }
           }
         >
-          <ModalImage />
+          <View
+            style={
+              Object {
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "paddingBottom": 6,
+                "paddingTop": 7,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 21,
+                }
+              }
+            >
+              <ArticleBylineWithLinks />
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "paddingBottom": 6,
+                "paddingTop": 7,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 21,
+                }
+              }
+            >
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingBottom": 20,
+              }
+            }
+          >
+            <ModalImage />
+          </View>
         </View>
       </View>
     </View>

@@ -63,19 +63,31 @@ class ArticlePage extends Component {
                 flags={flags}
                 hasVideo={hasVideo}
                 headline={getHeadline(headline, shortHeadline)}
+                isTablet={isTablet}
                 label={label}
                 standfirst={standfirst}
-                style={[styles.articleMainContentRow]}
               />
               <ArticleMeta
                 byline={byline}
+                isTablet={isTablet}
                 onAuthorPress={onAuthorPress}
                 publicationName={publicationName}
                 publishedTime={publishedTime}
               />
             </Fragment>
           );
-          return isTablet ? [header, leadAsset] : [leadAsset, header];
+          return (
+            <View
+              style={
+                isTablet && [
+                  styles.articleMainContentRow,
+                  styles.articleMainContentRowTablet
+                ]
+              }
+            >
+              {isTablet ? [header, leadAsset] : [leadAsset, header]}
+            </View>
+          );
         }}
       </ResponsiveContext.Consumer>
     );
