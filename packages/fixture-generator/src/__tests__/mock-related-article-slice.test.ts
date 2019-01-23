@@ -1,4 +1,4 @@
-import ArticleSlice from "../mock-article-slice";
+import ArticleSlice from "../mock-related-article-slice";
 
 describe("The Mock ArticleSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
