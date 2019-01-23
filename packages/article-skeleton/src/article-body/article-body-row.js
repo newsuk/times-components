@@ -85,7 +85,7 @@ const ArticleRow = ({
         element: (
           <ResponsiveContext.Consumer>
             {({ isTablet }) => (
-              <View style={isTablet ? styles.keyFactsContainerTablet : null}>
+              <View style={isTablet && styles.keyFactsContainerTablet}>
                 <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
               </View>
             )}
@@ -147,7 +147,7 @@ const ArticleRow = ({
               <ResponsiveContext.Consumer>
                 {({ isTablet }) => (
                   <View
-                    style={isTablet ? styles.pullQuoteContainerTablet : null}
+                    style={isTablet && styles.pullQuoteContainerTablet}
                   >
                     <PullQuote
                       caption={name}

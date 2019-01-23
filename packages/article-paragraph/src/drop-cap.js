@@ -86,7 +86,7 @@ class DropCapParagraph extends Component {
             style={[
               stylesThemedAndScaled.articleMainContentRow,
               stylesThemedAndScaled.dropCapContainer,
-              isTablet ? stylesThemedAndScaled.dropCapContainerTablet : null
+              isTablet && stylesThemedAndScaled.dropCapContainerTablet
             ]}
           >
             <Text
