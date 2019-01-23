@@ -45,7 +45,7 @@
     "@times-components/storybook": "3.3.0",
     "@times-components/tealium-utils": "0.7.12",
     "@times-components/test-utils": "2.1.0",
-    "@times-components/utils": "4.0.18",
+    "@times-components/utils": "4.0.19",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
