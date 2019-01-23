@@ -1,4 +1,8 @@
-import styleguide, { scales, fonts } from "@times-components/styleguide";
+import styleguide, {
+  scales,
+  fonts,
+  tabletWidth
+} from "@times-components/styleguide";
 import { fontSize, margins } from "./drop-cap-sizes";
 
 const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
@@ -11,6 +15,10 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
       paddingLeft: spacing(2),
       paddingRight: spacing(2)
     },
+    articleMainContentRowTablet: {
+      alignSelf: "center",
+      width: tabletWidth
+    },
     articleTextElement: {
       ...fontFactory({
         font: "body",
@@ -22,6 +30,10 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
     dropCapContainer: {
       flexDirection: "row",
       flexWrap: "wrap"
+    },
+    dropCapContainerTablet: {
+      alignSelf: "center",
+      width: tabletWidth
     },
     dropCapTextElement: {
       color: colours.functional.primary,

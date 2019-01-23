@@ -11,6 +11,7 @@ exports[`1. video 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "center",
         "height": 200,
         "width": 300,
       }
@@ -62,6 +63,7 @@ exports[`2. video without a poster image 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "center",
         "height": 200,
         "width": 300,
       }
@@ -114,6 +116,7 @@ exports[`3. sky sports video 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "center",
         "height": 200,
         "width": 300,
       }

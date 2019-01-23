@@ -55,6 +55,9 @@ const styles = {
       fontSize: "imageOverlayTextSmall"
     }),
     marginTop: spacing(2)
+  },
+  videoTabletContainer: {
+    alignSelf: "center"
   }
 };
 

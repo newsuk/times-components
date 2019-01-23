@@ -55,6 +55,7 @@
   "dependencies": {
     "@times-components/image": "4.5.0",
     "@times-components/jest-serializer": "3.2.0",
+    "@times-components/responsive": "0.2.0",
     "@times-components/test-utils": "2.1.0",
     "@times-components/utils": "4.0.19",
     "@times-components/video": "4.2.0",
