@@ -7,11 +7,8 @@ import {
   print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
+import "./mocks.native.js";
 import shared from "./shared.base";
-
-jest.mock("@times-components/image", () => ({
-  ModalImage: "ModalImage"
-}));
 
 export default () => {
   addSerializers(

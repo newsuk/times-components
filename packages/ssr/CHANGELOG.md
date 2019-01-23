@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.7.26...@times-components/ssr@1.8.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [1.7.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.7.25...@times-components/ssr@1.7.26) (2019-01-22)
 
 **Note:** Version bump only for package @times-components/ssr

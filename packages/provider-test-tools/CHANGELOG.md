@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.10.12...@times-components/provider-test-tools@1.11.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [1.10.12](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.10.11...@times-components/provider-test-tools@1.10.12) (2019-01-17)
 
 

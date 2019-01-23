@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@2.2.27...@times-components/gradient@2.3.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [2.2.27](https://github.com/newsuk/times-components/compare/@times-components/gradient@2.2.26...@times-components/gradient@2.2.27) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/gradient

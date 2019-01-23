@@ -157,7 +157,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View>
         <Video
           accountId="57838016001"
-          height={421.875}
+          height={360}
           policyKey="1.2.3.4"
           poster={
             Object {
@@ -166,7 +166,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
           skySports={false}
           videoId="4084164751001"
-          width={750}
+          width={640}
         />
         <View>
           <View>

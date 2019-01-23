@@ -154,8 +154,10 @@ exports[`full article with style 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "paddingLeft": 10,
             "paddingRight": 10,
+            "width": 660,
           }
         }
       >
@@ -175,7 +177,14 @@ exports[`full article with style 1`] = `
       </View>
     </View>
     <View>
-      <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "width": 660,
+          }
+        }
+      >
         <PullQuote>
           The pull quote content
         </PullQuote>
@@ -185,9 +194,10 @@ exports[`full article with style 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "flexDirection": "column",
             "paddingBottom": 25,
-            "width": "100%",
+            "width": 660,
           }
         }
       >

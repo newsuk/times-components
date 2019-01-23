@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.0.71...@times-components/article-byline@3.1.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [3.0.71](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.0.70...@times-components/article-byline@3.0.71) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/article-byline

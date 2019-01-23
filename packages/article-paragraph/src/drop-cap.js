@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Dimensions, NativeModules, Text, View } from "react-native";
 import PropTypes from "prop-types";
+import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
@@ -79,48 +80,53 @@ class DropCapParagraph extends Component {
     } = stylesThemedAndScaled.articleMainContentRow;
 
     return (
-      <View
-        style={[
-          stylesThemedAndScaled.articleMainContentRow,
-          stylesThemedAndScaled.dropCapContainer
-        ]}
-      >
-        <Text
-          selectable
-          style={[
-            stylesThemedAndScaled.dropCapTextElement,
-            {
-              color: colour
-            }
-          ]}
-        >
-          {dropCap}
-        </Text>
-        <Text
-          selectable
-          style={[
-            stylesThemedAndScaled.articleTextElement,
-            {
-              flex: 1,
-              marginBottom: 0
-            }
-          ]}
-        >
-          {slicePoint > 0 ? text.slice(0, slicePoint) : text}
-        </Text>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <View
+            style={[
+              stylesThemedAndScaled.articleMainContentRow,
+              stylesThemedAndScaled.dropCapContainer,
+              isTablet && stylesThemedAndScaled.dropCapContainerTablet
+            ]}
+          >
+            <Text
+              selectable
+              style={[
+                stylesThemedAndScaled.dropCapTextElement,
+                {
+                  color: colour
+                }
+              ]}
+            >
+              {dropCap}
+            </Text>
+            <Text
+              selectable
+              style={[
+                stylesThemedAndScaled.articleTextElement,
+                {
+                  flex: 1,
+                  marginBottom: 0
+                }
+              ]}
+            >
+              {slicePoint > 0 ? text.slice(0, slicePoint) : text}
+            </Text>
 
-        <Text
-          selectable
-          style={[
-            stylesThemedAndScaled.articleTextElement,
-            {
-              width: screenWidth - paddingLeft - paddingRight
-            }
-          ]}
-        >
-          {slicePoint > 0 ? text.slice(slicePoint).trim() : null}
-        </Text>
-      </View>
+            <Text
+              selectable
+              style={[
+                stylesThemedAndScaled.articleTextElement,
+                {
+                  width: screenWidth - paddingLeft - paddingRight
+                }
+              ]}
+            >
+              {slicePoint > 0 ? text.slice(slicePoint).trim() : null}
+            </Text>
+          </View>
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 

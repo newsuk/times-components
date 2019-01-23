@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { ModalImage } from "@times-components/image";
+import { ResponsiveContext } from "@times-components/responsive";
 import ArticleLeadAssetVideo from "./article-lead-asset-video";
 import {
   nativePropTypes,
@@ -42,17 +43,22 @@ const ArticleLeadAsset = ({
   };
 
   return (
-    <View style={style}>
-      <LeadAsset
-        aspectRatio={getRatio(crop.ratio)}
-        caption={renderModalCaption({ caption })}
-        leadAsset={leadAsset}
-        onVideoPress={onVideoPress}
-        uri={crop.url}
-        width={width}
-      />
-      {renderCaption({ caption })}
-    </View>
+    <ResponsiveContext.Consumer>
+      {({ isTablet }) => (
+        <View style={style}>
+          <LeadAsset
+            aspectRatio={getRatio(crop.ratio)}
+            caption={renderModalCaption({ caption })}
+            isTablet={isTablet}
+            leadAsset={leadAsset}
+            onVideoPress={onVideoPress}
+            uri={crop.url}
+            width={width}
+          />
+          {renderCaption({ caption })}
+        </View>
+      )}
+    </ResponsiveContext.Consumer>
   );
 };
 

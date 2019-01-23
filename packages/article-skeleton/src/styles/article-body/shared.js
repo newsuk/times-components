@@ -1,4 +1,4 @@
-import styleguide from "@times-components/styleguide";
+import styleguide, { tabletWidth } from "@times-components/styleguide";
 
 const sharedStyles = scale => {
   const { colours, fontFactory, spacing } = styleguide({ scale });
@@ -33,10 +33,21 @@ const sharedStyles = scale => {
       color: colours.functional.primary,
       marginBottom: spacing(5)
     },
+    containerTablet: {
+      alignSelf: "center",
+      width: tabletWidth
+    },
+    imageContainerTablet: {
+      alignSelf: "center"
+    },
     interactiveContainer: {
       marginBottom: spacing(4),
       paddingLeft: spacing(2),
       paddingRight: spacing(2)
+    },
+    interactiveContainerTablet: {
+      alignSelf: "center",
+      maxWidth: tabletWidth
     },
     leadAsset: {
       marginBottom: spacing(2)

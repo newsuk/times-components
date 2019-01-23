@@ -1,5 +1,5 @@
 import React from "react";
-import { Dimensions, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph from "@times-components/article-paragraph";
@@ -10,7 +10,9 @@ import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import { ResponsiveContext } from "@times-components/responsive";
 import { colours } from "@times-components/styleguide";
+import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -61,15 +63,33 @@ const ArticleRow = ({
     interactive(key, { id }) {
       return {
         element: (
-          <View key={key} style={styles.interactiveContainer}>
-            <InteractiveWrapper config={interactiveConfig} id={id} />
-          </View>
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => (
+              <View
+                key={key}
+                style={[
+                  styles.interactiveContainer,
+                  isTablet && styles.interactiveContainerTablet
+                ]}
+              >
+                <InteractiveWrapper config={interactiveConfig} id={id} />
+              </View>
+            )}
+          </ResponsiveContext.Consumer>
         )
       };
     },
     keyFacts(key, attributes, renderedChildren, indx, node) {
       return {
-        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        element: (
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => (
+              <View style={isTablet && styles.containerTablet}>
+                <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
+              </View>
+            )}
+          </ResponsiveContext.Consumer>
+        ),
         shouldRenderChildren: false
       };
     },
@@ -123,19 +143,23 @@ const ArticleRow = ({
             {({
               theme: { pullQuoteFont, sectionColour = colours.section.default }
             }) => (
-              <View>
-                <PullQuote
-                  caption={name}
-                  captionColour={sectionColour}
-                  font={pullQuoteFont}
-                  onTwitterLinkPress={onTwitterLinkPress}
-                  quoteColour={sectionColour}
-                  text={text}
-                  twitter={twitter}
-                >
-                  {children}
-                </PullQuote>
-              </View>
+              <ResponsiveContext.Consumer>
+                {({ isTablet }) => (
+                  <View style={isTablet && styles.containerTablet}>
+                    <PullQuote
+                      caption={name}
+                      captionColour={sectionColour}
+                      font={pullQuoteFont}
+                      onTwitterLinkPress={onTwitterLinkPress}
+                      quoteColour={sectionColour}
+                      text={text}
+                      twitter={twitter}
+                    >
+                      {children}
+                    </PullQuote>
+                  </View>
+                )}
+              </ResponsiveContext.Consumer>
             )}
           </Context.Consumer>
         )
@@ -152,26 +176,36 @@ const ArticleRow = ({
         skySports
       }
     ) {
-      const aspectRatio = 16 / 9;
-
-      const { width } = Dimensions.get("window");
-      const height = width / aspectRatio;
-
       return {
         element: (
-          <View key={key} style={styles.primaryContainer}>
-            <Video
-              accountId={brightcoveAccountId}
-              height={height}
-              onVideoPress={onVideoPress}
-              policyKey={brightcovePolicyKey}
-              poster={{ uri: posterImageUrl }}
-              skySports={skySports}
-              videoId={brightcoveVideoId}
-              width={width}
-            />
-            <InsetCaption caption={caption} />
-          </View>
+          <ResponsiveContext.Consumer>
+            {({ isTablet }) => {
+              const aspectRatio = 16 / 9;
+              const width = screenWidth(isTablet);
+              const height = width / aspectRatio;
+              return (
+                <View
+                  key={key}
+                  style={[
+                    styles.primaryContainer,
+                    isTablet && styles.containerTablet
+                  ]}
+                >
+                  <Video
+                    accountId={brightcoveAccountId}
+                    height={height}
+                    onVideoPress={onVideoPress}
+                    policyKey={brightcovePolicyKey}
+                    poster={{ uri: posterImageUrl }}
+                    skySports={skySports}
+                    videoId={brightcoveVideoId}
+                    width={width}
+                  />
+                  <InsetCaption caption={caption} />
+                </View>
+              );
+            }}
+          </ResponsiveContext.Consumer>
         )
       };
     }

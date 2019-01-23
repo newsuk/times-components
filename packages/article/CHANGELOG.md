@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.41...@times-components/article@6.6.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [6.5.41](https://github.com/newsuk/times-components/compare/@times-components/article@6.5.40...@times-components/article@6.5.41) (2019-01-22)
 
 **Note:** Version bump only for package @times-components/article
