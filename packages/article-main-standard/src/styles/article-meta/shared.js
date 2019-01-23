@@ -15,6 +15,10 @@ const sharedStyles = {
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1
   },
+  articleMetaTablet: {
+    marginLeft: 0,
+    marginRight: 0
+  },
   articleMiddleContainer: {
     paddingTop: 9
   },

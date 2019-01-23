@@ -15,6 +15,7 @@ const mapping = {
     meta: 14
   },
   headline: {
+    articleHeadline: 45,
     commentsHeadline: 29,
     headline: 35,
     leadHeadline: 26,
