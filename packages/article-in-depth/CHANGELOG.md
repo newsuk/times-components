@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.6.0...@times-components/article-in-depth@0.7.0) (2019-01-23)
+
+
+### Features
+
+* REPLAT-4853 article max width ([#1613](https://github.com/newsuk/times-components/issues/1613)) ([f800d9a](https://github.com/newsuk/times-components/commit/f800d9a))
+
+
+
+
+
 # [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.5.1...@times-components/article-in-depth@0.6.0) (2019-01-22)
 
 

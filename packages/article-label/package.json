@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "The article label",
   "main": "dist/article-label",
   "dev": "src/article-label",
@@ -36,8 +36,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.14.0",
-    "@times-components/utils": "4.0.19",
+    "@times-components/styleguide": "3.15.0",
+    "@times-components/utils": "4.1.0",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2"
   },
