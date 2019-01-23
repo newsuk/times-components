@@ -1,6 +1,8 @@
 import React from "react";
 import { PrimaryTile } from "./src/tiles";
-import leadOneAndOneData from "./fixtures/leadoneandone";
+import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
+
+const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [
