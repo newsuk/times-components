@@ -1,11 +1,11 @@
 import React from "react";
 import { View } from "react-native";
+import { ArticleFlags } from "@times-components/article-flag";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
-import Flags from "../article-flags/article-flags";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
@@ -50,7 +50,7 @@ const ArticleHeader = ({
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <Flags color={textColour} flags={flags} />
+              <ArticleFlags color={textColour} flags={flags} />
             </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
           </HeaderContainer>

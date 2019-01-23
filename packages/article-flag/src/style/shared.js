@@ -9,8 +9,7 @@ const styles = {
     marginRight: spacing(3)
   },
   flags: {
-    flexDirection: "row",
-    marginVertical: spacing(1)
+    flexDirection: "row"
   },
   title: {
     ...fontFactory({

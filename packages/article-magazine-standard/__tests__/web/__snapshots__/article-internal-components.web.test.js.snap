@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. article flags with content 1`] = `
-<div>
-  <div>
-    <NewArticleFlag />
-  </div>
-</div>
-`;
-
-exports[`2. article flags with no content 1`] = `null`;
-
-exports[`3. article standfirst with content 1`] = `
+exports[`1. article standfirst with content 1`] = `
 <h2
   aria-level="2"
   role="heading"
@@ -19,9 +9,9 @@ exports[`3. article standfirst with content 1`] = `
 </h2>
 `;
 
-exports[`4. article standfirst with no content 1`] = `null`;
+exports[`2. article standfirst with no content 1`] = `null`;
 
-exports[`5. article label uses default section colour 1`] = `
+exports[`3. article label uses default section colour 1`] = `
 <div>
   <div>
     RANDOM LABEL
@@ -29,9 +19,9 @@ exports[`5. article label uses default section colour 1`] = `
 </div>
 `;
 
-exports[`6. article label renders null if there is no text 1`] = `null`;
+exports[`4. article label renders null if there is no text 1`] = `null`;
 
-exports[`7. article meta uses default section colour 1`] = `
+exports[`5. article meta uses default section colour 1`] = `
 <div>
   <div>
     <ArticleBylineWithLinks

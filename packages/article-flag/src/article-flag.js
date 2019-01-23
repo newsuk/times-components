@@ -66,20 +66,21 @@ SponsoredArticleFlag.defaultProps = {
   color: colours.functional.tertiary
 };
 
-const flagsMapping = new Map([
-  ["NEW", <NewArticleFlag />],
-  ["UPDATED", <UpdatedArticleFlag />],
-  ["EXCLUSIVE", <ExclusiveArticleFlag />],
-  ["SPONSORED", <SponsoredArticleFlag />]
-]);
+const flagsMapping = color =>
+  new Map([
+    ["NEW", <NewArticleFlag color={color} />],
+    ["UPDATED", <UpdatedArticleFlag color={color} />],
+    ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
+    ["SPONSORED", <SponsoredArticleFlag color={color} />]
+  ]);
 
-const ArticleFlags = ({ flags }) => {
+const ArticleFlags = ({ flags, color }) => {
   if (!flags || flags.length === 0) return null;
   return (
     <View style={styles.flags}>
       {flags.map(flag => (
         <View key={flag} style={styles.flag}>
-          {flagsMapping.get(flag)}
+          {flagsMapping(color).get(flag)}
         </View>
       ))}
     </View>
