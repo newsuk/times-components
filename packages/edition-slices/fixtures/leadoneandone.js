@@ -9,7 +9,8 @@ export default {
       template: "mainstandard",
       publishedTime: "2019-01-18T12:00:00.000Z",
       updatedTime: "2019-01-18T12:52:41.000Z",
-      label: null,
+      label: "Royals",
+      flags: ["NEW", "EXCLUSIVE"],
       standfirst: null,
       leadAsset: {
         crop169: {
@@ -73,6 +74,7 @@ export default {
       publishedTime: "2019-01-17T17:00:00.000Z",
       updatedTime: "2019-01-18T16:00:34.000Z",
       label: null,
+      flags: ["NEW", "EXCLUSIVE"],
       standfirst: null,
       leadAsset: {
         crop169: {

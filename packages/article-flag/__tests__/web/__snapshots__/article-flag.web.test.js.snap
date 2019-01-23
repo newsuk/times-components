@@ -135,3 +135,40 @@ exports[`8. sponsored article flag 1`] = `
   </div>
 </div>
 `;
+
+exports[`9. article flags 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <IconDiamond
+          fillColour="#3C81BE"
+          height={8}
+          width={8}
+        />
+      </div>
+      <div
+        aria-label="updated Flag"
+      >
+        updated
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <IconDiamond
+          fillColour="#C51D24"
+          height={8}
+          width={8}
+        />
+      </div>
+      <div
+        aria-label="exclusive Flag"
+      >
+        exclusive
+      </div>
+    </div>
+  </div>
+</div>
+`;

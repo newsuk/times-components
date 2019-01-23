@@ -1,5 +1,6 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
+import { ArticleFlags } from "@times-components/article-flag";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultHeadline =
@@ -68,6 +69,7 @@ export default ({
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
+  flags: () => <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />,
   headline: () => <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,

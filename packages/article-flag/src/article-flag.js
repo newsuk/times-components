@@ -7,6 +7,7 @@ import { gqlRgbaToHex, gqlRgbaToStyle } from "@times-components/utils";
 import styles from "./style";
 import {
   articleFlagPropTypes,
+  articleFlagsPropTypes,
   articleFlagDefaultProps
 } from "./article-flag-prop-types";
 
@@ -65,9 +66,35 @@ SponsoredArticleFlag.defaultProps = {
   color: colours.functional.tertiary
 };
 
+const flagsMapping = new Map([
+  ["NEW", <NewArticleFlag />],
+  ["UPDATED", <UpdatedArticleFlag />],
+  ["EXCLUSIVE", <ExclusiveArticleFlag />],
+  ["SPONSORED", <SponsoredArticleFlag />]
+]);
+
+const ArticleFlags = ({ flags }) => {
+  if (!flags || flags.length === 0) return null;
+  return (
+    <View style={styles.flags}>
+      {flags.map(flag => (
+        <View key={flag} style={styles.flag}>
+          {flagsMapping.get(flag)}
+        </View>
+      ))}
+    </View>
+  );
+};
+
+ArticleFlags.propTypes = articleFlagsPropTypes;
+ArticleFlags.defaultProps = {
+  flags: []
+};
+
 export default ArticleFlag;
 
 export {
+  ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,

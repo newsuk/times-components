@@ -8,6 +8,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
       title="Test label"
     />
   </View>
+  <ArticleFlags
+    flags={
+      Array [
+        "UPDATED",
+        "EXCLUSIVE",
+      ]
+    }
+  />
   <Text
     accessibilityRole="heading"
     aria-level="3"
