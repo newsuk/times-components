@@ -11,11 +11,10 @@ const BodyParagraph = props => (
   <ResponsiveContext.Consumer>
     {({ isTablet }) => (
       <View
-        style={
-          isTablet
-            ? styles.articleMainContentRowTablet
-            : styles.articleMainContentRow
-        }
+        style={[
+          styles.articleMainContentRow,
+          isTablet && styles.articleMainContentRowTablet
+        ]}
       >
         <Context.Consumer>
           {({ theme: { dropCapFont, scale } }) => {

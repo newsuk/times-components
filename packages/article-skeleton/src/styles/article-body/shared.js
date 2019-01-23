@@ -43,10 +43,7 @@ const sharedStyles = scale => {
     },
     interactiveContainerTablet: {
       alignSelf: "center",
-      marginBottom: spacing(4),
-      maxWidth: tabletWidth,
-      paddingLeft: spacing(2),
-      paddingRight: spacing(2)
+      maxWidth: tabletWidth
     },
     keyFactsContainerTablet: {
       alignSelf: "center",
@@ -62,9 +59,7 @@ const sharedStyles = scale => {
     },
     primaryContainerTablet: {
       alignSelf: "center",
-      flexDirection: "column",
-      maxWidth: tabletWidth,
-      paddingBottom: spacing(5)
+      width: tabletWidth
     },
     pullQuoteContainerTablet: {
       alignSelf: "center",

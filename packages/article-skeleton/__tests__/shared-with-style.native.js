@@ -34,10 +34,8 @@ export default () => {
 
         const article = articleFixture({ ...fixtureArgs });
         const testInstance = TestRenderer.create(
-          <Responsive>
-            {renderArticle(article)}
-          </Responsive>
-          );
+          <Responsive>{renderArticle(article)}</Responsive>
+        );
 
         expect(testInstance).toMatchSnapshot();
       }

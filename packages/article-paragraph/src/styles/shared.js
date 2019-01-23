@@ -17,8 +17,6 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
     },
     articleMainContentRowTablet: {
       alignSelf: "center",
-      paddingLeft: spacing(2),
-      paddingRight: spacing(2),
       width: tabletWidth
     },
     articleTextElement: {

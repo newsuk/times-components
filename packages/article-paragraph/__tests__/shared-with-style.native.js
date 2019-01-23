@@ -41,9 +41,7 @@ export default () => {
       test: async () => {
         setIsTablet(true);
         const testInstance = TestRenderer.create(
-          <Responsive>
-            {renderParagraph(paragraphData)}
-          </Responsive>
+          <Responsive>{renderParagraph(paragraphData)}</Responsive>
         );
         await delay(0);
         expect(testInstance).toMatchSnapshot();
@@ -54,9 +52,7 @@ export default () => {
       test: async () => {
         setIsTablet(true);
         const testInstance = TestRenderer.create(
-          <Responsive>
-            {renderParagraph(dropCapData)}
-          </Responsive>
+          <Responsive>{renderParagraph(dropCapData)}</Responsive>
         );
         await delay(0);
         expect(testInstance).toMatchSnapshot();

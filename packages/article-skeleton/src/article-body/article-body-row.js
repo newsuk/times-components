@@ -67,11 +67,10 @@ const ArticleRow = ({
             {({ isTablet }) => (
               <View
                 key={key}
-                style={
-                  isTablet
-                    ? styles.interactiveContainerTablet
-                    : styles.interactiveContainer
-                }
+                style={[
+                  styles.interactiveContainer,
+                  isTablet && styles.interactiveContainerTablet
+                ]}
               >
                 <InteractiveWrapper config={interactiveConfig} id={id} />
               </View>
@@ -146,9 +145,7 @@ const ArticleRow = ({
             }) => (
               <ResponsiveContext.Consumer>
                 {({ isTablet }) => (
-                  <View
-                    style={isTablet && styles.pullQuoteContainerTablet}
-                  >
+                  <View style={isTablet && styles.pullQuoteContainerTablet}>
                     <PullQuote
                       caption={name}
                       captionColour={sectionColour}
@@ -189,11 +186,10 @@ const ArticleRow = ({
               return (
                 <View
                   key={key}
-                  style={
-                    isTablet
-                      ? styles.primaryContainerTablet
-                      : styles.primaryContainer
-                  }
+                  style={[
+                    styles.primaryContainer,
+                    isTablet && styles.primaryContainerTablet
+                  ]}
                 >
                   <Video
                     accountId={brightcoveAccountId}
