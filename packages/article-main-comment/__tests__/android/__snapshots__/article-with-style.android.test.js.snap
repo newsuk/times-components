@@ -197,8 +197,8 @@ exports[`full article with style 1`] = `
           Object {
             "alignSelf": "center",
             "flexDirection": "column",
-            "maxWidth": 660,
             "paddingBottom": 25,
+            "width": 660,
           }
         }
       >

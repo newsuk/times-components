@@ -201,8 +201,8 @@ exports[`full article with style 1`] = `
           Object {
             "alignSelf": "center",
             "flexDirection": "column",
-            "maxWidth": 660,
             "paddingBottom": 25,
+            "width": 660,
           }
         }
       >
@@ -472,8 +472,8 @@ exports[`full article with style in the culture magazine 1`] = `
           Object {
             "alignSelf": "center",
             "flexDirection": "column",
-            "maxWidth": 660,
             "paddingBottom": 25,
+            "width": 660,
           }
         }
       >
@@ -743,8 +743,8 @@ exports[`full article with style in the style magazine 1`] = `
           Object {
             "alignSelf": "center",
             "flexDirection": "column",
-            "maxWidth": 660,
             "paddingBottom": 25,
+            "width": 660,
           }
         }
       >
@@ -1014,8 +1014,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Object {
             "alignSelf": "center",
             "flexDirection": "column",
-            "maxWidth": 660,
             "paddingBottom": 25,
+            "width": 660,
           }
         }
       >
