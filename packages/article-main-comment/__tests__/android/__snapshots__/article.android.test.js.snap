@@ -17,39 +17,41 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   <View>
     <View>
       <View>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-        <Text>
-          Some Short Headline
-        </Text>
         <View>
+          <Image
+            aspectRatio={1}
+            uri="https://image.io"
+          />
+          <Text>
+            Some Short Headline
+          </Text>
           <View>
-            <ArticleBylineWithLinks
-              ast={
-                Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Some byline",
+            <View>
+              <ArticleBylineWithLinks
+                ast={
+                  Array [
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
                         },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ]
-              }
-            />
-          </View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
+                      ],
+                      "name": "inline",
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View>
+              <Text>
+                Friday March 13 2015, 6:54pm, The Times
+              </Text>
+            </View>
           </View>
         </View>
       </View>
@@ -146,39 +148,41 @@ exports[`4. an article with ads 1`] = `
   <View>
     <View>
       <View>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-        <Text>
-          Some Headline
-        </Text>
         <View>
+          <Image
+            aspectRatio={1}
+            uri="https://image.io"
+          />
+          <Text>
+            Some Headline
+          </Text>
           <View>
-            <ArticleBylineWithLinks
-              ast={
-                Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Some byline",
+            <View>
+              <ArticleBylineWithLinks
+                ast={
+                  Array [
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
                         },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ]
-              }
-            />
-          </View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
+                      ],
+                      "name": "inline",
+                    },
+                  ]
+                }
+              />
+            </View>
+            <View>
+              <Text>
+                Friday March 13 2015, 6:54pm, The Times
+              </Text>
+            </View>
           </View>
         </View>
       </View>
