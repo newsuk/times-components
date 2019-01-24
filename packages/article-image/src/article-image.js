@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { ResponsiveContext } from "@times-components/responsive";
 import ArticleImage from "./article-image.base";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
@@ -10,9 +11,15 @@ const ArticleImageNative = props => {
   } = props;
 
   return (
-    <View key={uri} style={styles[`${display}Container`]}>
-      <ArticleImage {...props} />
-    </View>
+    <ResponsiveContext.Consumer>
+      {({ isTablet }) => (
+        <View style={isTablet && styles.imageContainerTablet}>
+          <View key={uri} style={styles[`${display}Container`]}>
+            <ArticleImage {...props} />
+          </View>
+        </View>
+      )}
+    </ResponsiveContext.Consumer>
   );
 };
 

@@ -1,9 +1,4 @@
-import React from "react";
-import { Text } from "react-native";
-import styles from "./styles";
+import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "./slices";
+import { PrimaryTile } from "./tiles";
 
-const EditionSlices = () => (
-  <Text style={styles.EditionSlicesBody}>EditionSlices</Text>
-);
-
-export default EditionSlices;
+export { LeadOneFullWidthSlice, LeadOneAndOneSlice, PrimaryTile };

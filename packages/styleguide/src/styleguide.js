@@ -27,6 +27,7 @@ const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
 const lineHeight = timesLineHeightsFactory();
 const { nativeTablet: tabletWidth } = breakpoints;
+const tabletRowPadding = 20;
 
 export {
   Animations,
@@ -38,6 +39,7 @@ export {
   lineHeight,
   scales,
   spacing,
+  tabletRowPadding,
   tabletWidth,
   themeFactory
 };

@@ -1,6 +1,8 @@
 import React from "react";
 import { PrimaryTile } from "./src/tiles";
-import leadOneAndOneData from "./fixtures/leadoneandone";
+import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
+
+const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [
@@ -10,9 +12,7 @@ export default {
       type: "story"
     },
     {
-      component: () => (
-        <PrimaryTile tile={leadOneAndOneData.lead} withImage={false} />
-      ),
+      component: () => <PrimaryTile tile={leadOneAndOneData.lead} />,
       name: "Primary (without image)",
       type: "story"
     }

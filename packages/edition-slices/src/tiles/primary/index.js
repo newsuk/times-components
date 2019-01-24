@@ -58,7 +58,7 @@ PrimaryTile.propTypes = {
 };
 
 PrimaryTile.defaultProps = {
-  withImage: true
+  withImage: false
 };
 
 export default PrimaryTile;

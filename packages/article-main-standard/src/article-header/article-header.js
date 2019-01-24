@@ -1,25 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View, ViewPropTypes } from "react-native";
+import { Text, View } from "react-native";
 import { ArticleFlags } from "@times-components/article-flag";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
-const { style: ViewStylePropTypes } = ViewPropTypes;
-
 const ArticleHeader = ({
   flags,
   hasVideo,
   headline,
+  isTablet,
   label,
-  standfirst,
-  style
+  standfirst
 }) => (
-  <View style={[...style]}>
+  <View
+    style={[
+      styles.articleMainContentRow,
+      isTablet && styles.articleMainContentRowTablet,
+      isTablet && styles.headerTablet
+    ]}
+  >
     <HeaderLabel isVideo={hasVideo} label={label} />
-    <Text selectable style={styles.articleHeadLineText}>
+    <Text
+      selectable
+      style={[
+        styles.articleHeadLineText,
+        isTablet && styles.articleHeadLineTextTablet
+      ]}
+    >
       {headline}
     </Text>
     <HeaderStandfirst standfirst={standfirst} />
@@ -33,17 +43,17 @@ ArticleHeader.propTypes = {
   flags: PropTypes.arrayOf(PropTypes.string),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
+  isTablet: PropTypes.bool,
   label: PropTypes.string,
-  standfirst: PropTypes.string,
-  style: ViewStylePropTypes
+  standfirst: PropTypes.string
 };
 
 ArticleHeader.defaultProps = {
   flags: [],
   hasVideo: false,
+  isTablet: false,
   label: null,
-  standfirst: null,
-  style: {}
+  standfirst: null
 };
 
 export default ArticleHeader;

@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
+import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
@@ -152,25 +153,29 @@ class ArticleSkeleton extends Component {
 
     return (
       <AdComposer adConfig={adConfig}>
-        <ArticleContent
-          data={articleData}
-          Header={Header}
-          initialListSize={listViewSize}
-          interactiveConfig={interactiveConfig}
-          onAuthorPress={onAuthorPress}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onLinkPress={onLinkPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          pageSize={listViewPageSize}
-          renderRow={renderRow(analyticsStream)}
-          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-          width={width}
-        />
+        <Responsive>
+          <ArticleContent
+            data={articleData}
+            Header={Header}
+            initialListSize={listViewSize}
+            interactiveConfig={interactiveConfig}
+            onAuthorPress={onAuthorPress}
+            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentsPress={onCommentsPress}
+            onLinkPress={onLinkPress}
+            onRelatedArticlePress={onRelatedArticlePress}
+            onTopicPress={onTopicPress}
+            onTwitterLinkPress={onTwitterLinkPress}
+            onVideoPress={onVideoPress}
+            onViewableItemsChanged={
+              onViewed ? this.onViewableItemsChanged : null
+            }
+            pageSize={listViewPageSize}
+            renderRow={renderRow(analyticsStream)}
+            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+            width={width}
+          />
+        </Responsive>
       </AdComposer>
     );
   }

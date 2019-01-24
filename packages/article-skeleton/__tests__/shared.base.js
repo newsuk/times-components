@@ -8,7 +8,7 @@ import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
-const renderArticle = (data, header = null) => (
+export const renderArticle = (data, header = null) => (
   <Context.Provider
     value={{
       makeArticleUrl,
@@ -33,7 +33,7 @@ const renderArticle = (data, header = null) => (
   </Context.Provider>
 );
 
-const fixtureArgs = {
+export const fixtureArgs = {
   ...testFixture,
   content: [
     {

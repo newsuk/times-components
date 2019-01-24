@@ -42,8 +42,4 @@ yarn test:all
 
 Visit the official
 
-<!-- Add the storybook link here. -->
-
-## Future
-
-<!-- Add details of future development here. -->
+http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Composed%2FEdition%2FSlices&selectedStory=Lead%20One%20Full%20Width&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybooks%2Fstorybook-addon-knobs

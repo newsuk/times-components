@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.1.24...@times-components/lazy-load@0.2.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [0.1.24](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.1.23...@times-components/lazy-load@0.1.24) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/lazy-load

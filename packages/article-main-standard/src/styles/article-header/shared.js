@@ -10,12 +10,21 @@ const sharedStyles = {
     color: colours.functional.brandColour,
     marginBottom: 7
   },
+  articleHeadLineTextTablet: {
+    ...fontFactory({
+      font: "headline",
+      fontSize: "articleHeadline"
+    })
+  },
   articleLabel: {
     paddingBottom: spacing(1),
     paddingTop: spacing(1)
   },
   flags: {
     marginBottom: spacing(2)
+  },
+  headerTablet: {
+    marginTop: spacing(6)
   },
   standFirst: {
     ...fontFactory({

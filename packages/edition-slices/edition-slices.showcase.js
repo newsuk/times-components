@@ -1,6 +1,8 @@
 import React from "react";
 import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "./src/slices";
-import leadOneAndOneData from "./fixtures/leadoneandone";
+import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
+
+const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [

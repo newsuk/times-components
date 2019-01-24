@@ -1,63 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. primary image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "column",
-      "paddingBottom": 15,
-      "width": "100%",
-    }
-  }
->
-  <View>
-    <ModalImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
+<View>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+        "paddingBottom": 15,
+        "width": "100%",
       }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View>
+    }
+  >
     <View>
-      <View
-        style={
-          Object {
-            "paddingHorizontal": 10,
-            "paddingTop": 5,
-          }
+      <ModalImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
         }
-      >
-        <Text
+        uri="https://img/someImage"
+      />
+    </View>
+    <View>
+      <View>
+        <View
           style={
             Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 20,
+              "paddingHorizontal": 10,
+              "paddingTop": 5,
             }
           }
         >
-          Some caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 20,
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
             }
-          }
-        >
-          SOME CREDITS
-        </Text>
+          >
+            Some caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -65,79 +67,81 @@ exports[`1. primary image with caption and credits 1`] = `
 `;
 
 exports[`2. secondary image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 20,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-      "width": "100%",
-    }
-  }
->
+<View>
   <View
     style={
       Object {
-        "width": "50%",
-      }
-    }
-  >
-    <ModalImage
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Other credits"
-          text="Another caption"
-        />
-      }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View
-    style={
-      Object {
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "paddingBottom": 20,
         "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
+        "paddingRight": 10,
+        "width": "100%",
       }
     }
   >
-    <View>
-      <View
-        style={
-          Object {
-            "paddingTop": 0,
-          }
+    <View
+      style={
+        Object {
+          "width": "50%",
         }
-      >
-        <Text
+      }
+    >
+      <ModalImage
+        aspectRatio={1.5}
+        caption={
+          <Caption
+            credits="Other credits"
+            text="Another caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 0,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
           style={
             Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 20,
+              "paddingTop": 0,
             }
           }
         >
-          Another caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 20,
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
             }
-          }
-        >
-          OTHER CREDITS
-        </Text>
+          >
+            Another caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            OTHER CREDITS
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -145,79 +149,81 @@ exports[`2. secondary image with caption and credits 1`] = `
 `;
 
 exports[`3. inline image (landscape) with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-      "width": "100%",
-    }
-  }
->
+<View>
   <View
     style={
       Object {
-        "width": "50%",
-      }
-    }
-  >
-    <ModalImage
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Landscape credits"
-          text="Landscape caption"
-        />
-      }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View
-    style={
-      Object {
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "paddingBottom": 25,
         "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
+        "paddingRight": 10,
+        "width": "100%",
       }
     }
   >
-    <View>
-      <View
-        style={
-          Object {
-            "paddingTop": 0,
-          }
+    <View
+      style={
+        Object {
+          "width": "50%",
         }
-      >
-        <Text
+      }
+    >
+      <ModalImage
+        aspectRatio={1.5}
+        caption={
+          <Caption
+            credits="Landscape credits"
+            text="Landscape caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 0,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
           style={
             Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 20,
+              "paddingTop": 0,
             }
           }
         >
-          Landscape caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 20,
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
             }
-          }
-        >
-          LANDSCAPE CREDITS
-        </Text>
+          >
+            Landscape caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            LANDSCAPE CREDITS
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -225,79 +231,154 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 `;
 
 exports[`4. inline image (portrait) with caption and credits 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "paddingBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <ModalImage
+        aspectRatio={0.6666666666666666}
+        caption={
+          <Caption
+            credits="Portrait credits"
+            text="Portrait caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 0,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
+            }
+          >
+            Portrait caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            PORTRAIT CREDITS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should render an ArticleImage with Responsive Tablet styling 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-      "width": "100%",
+      "alignSelf": "center",
+      "width": 640,
     }
   }
 >
   <View
     style={
       Object {
-        "width": "50%",
-      }
-    }
-  >
-    <ModalImage
-      aspectRatio={0.6666666666666666}
-      caption={
-        <Caption
-          credits="Portrait credits"
-          text="Portrait caption"
-        />
-      }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
+        "flexDirection": "column",
+        "paddingBottom": 15,
+        "width": "100%",
       }
     }
   >
     <View>
-      <View
-        style={
-          Object {
-            "paddingTop": 0,
-          }
+      <ModalImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
         }
-      >
-        <Text
+        uri="https://img/someImage"
+      />
+    </View>
+    <View>
+      <View>
+        <View
           style={
             Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 20,
+              "paddingHorizontal": 10,
+              "paddingTop": 5,
             }
           }
         >
-          Portrait caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 20,
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 20,
+              }
             }
-          }
-        >
-          PORTRAIT CREDITS
-        </Text>
+          >
+            Some caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 20,
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
+        </View>
       </View>
     </View>
   </View>

@@ -14,19 +14,21 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
 >
   <View>
     <View>
-      <View />
       <View>
-        <Text
-          selectable={true}
-        >
-          Some Short Headline
-        </Text>
-      </View>
-      <View>
+        <View />
         <View>
-          <Text>
-            Friday March 13 2015, 6:54pm, The Times
+          <Text
+            selectable={true}
+          >
+            Some Short Headline
           </Text>
+        </View>
+        <View>
+          <View>
+            <Text>
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -62,19 +64,21 @@ exports[`3. an article with ads 1`] = `
 >
   <View>
     <View>
-      <View />
       <View>
-        <Text
-          selectable={true}
-        >
-          Some Headline
-        </Text>
-      </View>
-      <View>
+        <View />
         <View>
-          <Text>
-            Friday March 13 2015, 6:54pm, The Times
+          <Text
+            selectable={true}
+          >
+            Some Headline
           </Text>
+        </View>
+        <View>
+          <View>
+            <Text>
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
         </View>
       </View>
     </View>

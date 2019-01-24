@@ -1,3 +1,4 @@
+import React from "react";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -7,9 +8,13 @@ import {
   flattenStyleTransform,
   print
 } from "@times-components/jest-serializer";
+import Responsive from "@times-components/responsive";
 import { delay, iterator } from "@times-components/test-utils";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
+
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
+import paragraphData from "./fixtures/paragraph-showcase.json";
 
 export default () => {
   addSerializers(
@@ -27,6 +32,28 @@ export default () => {
       name: "paragraph with a drop cap",
       test: async () => {
         const testInstance = TestRenderer.create(renderParagraph(dropCapData));
+        await delay(0);
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "responsive tablet paragraph",
+      test: async () => {
+        setIsTablet(true);
+        const testInstance = TestRenderer.create(
+          <Responsive>{renderParagraph(paragraphData)}</Responsive>
+        );
+        await delay(0);
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "responsive tablet paragraph with a drop cap",
+      test: async () => {
+        setIsTablet(true);
+        const testInstance = TestRenderer.create(
+          <Responsive>{renderParagraph(dropCapData)}</Responsive>
+        );
         await delay(0);
         expect(testInstance).toMatchSnapshot();
       }

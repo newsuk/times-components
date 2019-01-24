@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.2.8...@times-components/markup-forest@1.3.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [1.2.8](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.2.7...@times-components/markup-forest@1.2.8) (2019-01-08)
 
 **Note:** Version bump only for package @times-components/markup-forest

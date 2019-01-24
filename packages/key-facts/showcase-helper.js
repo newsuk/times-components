@@ -2,6 +2,7 @@
 import React from "react";
 import invert from "lodash.invert";
 import Context from "@times-components/context";
+import Responsive from "@times-components/responsive";
 import { colours, scales } from "@times-components/styleguide";
 import KeyFacts from "./src/key-facts";
 
@@ -14,7 +15,9 @@ const renderKeyFacts = ({ ast, select, hasScaling = false }) => {
   const sectionColour = selectSection(select);
   return (
     <Context.Provider value={{ theme: { scale, sectionColour } }}>
-      <KeyFacts ast={ast} onLinkPress={() => {}} />
+      <Responsive>
+        <KeyFacts ast={ast} onLinkPress={() => {}} />
+      </Responsive>
     </Context.Provider>
   );
 };

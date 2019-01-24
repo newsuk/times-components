@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.4.0...@times-components/article-paragraph@0.5.0) (2019-01-23)
+
+
+### Features
+
+* REPLAT-4853 article max width ([#1613](https://github.com/newsuk/times-components/issues/1613)) ([f800d9a](https://github.com/newsuk/times-components/commit/f800d9a))
+
+
+
+
+
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.3.5...@times-components/article-paragraph@0.4.0) (2019-01-22)
+
+
+### Features
+
+* key facts tablet layout ([#1612](https://github.com/newsuk/times-components/issues/1612)) ([0793a0a](https://github.com/newsuk/times-components/commit/0793a0a))
+
+
+
+
+
 ## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.3.4...@times-components/article-paragraph@0.3.5) (2019-01-17)
 
 **Note:** Version bump only for package @times-components/article-paragraph

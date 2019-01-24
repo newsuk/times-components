@@ -21,10 +21,15 @@ export default StyleSheet.create({
     width: "100%"
   },
   container: {
-    marginBottom: spacing(1),
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
-    marginTop: spacing(1)
+    marginHorizontal: spacing(2),
+    marginVertical: spacing(1)
+  },
+  containerTablet: {
+    alignSelf: "center",
+    flexDirection: "row",
+    marginHorizontal: 0,
+    marginVertical: spacing(2),
+    width: "80.8%"
   },
   link: {
     color: colours.functional.action
@@ -45,5 +50,12 @@ export default StyleSheet.create({
     fontWeight: "400",
     letterSpacing: 1.2,
     marginBottom: spacing(4)
+  },
+  titleTablet: {
+    paddingRight: spacing(4),
+    width: "20%"
+  },
+  wrapper: {
+    flex: 1
   }
 });
