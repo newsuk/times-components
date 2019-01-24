@@ -24,6 +24,7 @@ const ArticleSummary = props => {
     bylineProps,
     content,
     datePublicationProps,
+    flags,
     headline,
     labelProps
   } = props;
@@ -60,6 +61,7 @@ const ArticleSummary = props => {
   return (
     <View>
       {renderLabel()}
+      {flags()}
       {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
       {content()}
@@ -84,6 +86,7 @@ ArticleSummary.propTypes = {
     date: PropTypes.string,
     publication: PropTypes.string
   }),
+  flags: PropTypes.func,
   headline: PropTypes.func,
   labelProps: PropTypes.shape({
     color: PropTypes.string,
@@ -96,6 +99,7 @@ ArticleSummary.defaultProps = {
   bylineProps: null,
   content: () => null,
   datePublicationProps: null,
+  flags: () => null,
   headline: () => null,
   labelProps: null
 };

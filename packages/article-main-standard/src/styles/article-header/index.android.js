@@ -5,10 +5,6 @@ import sharedStyles from "./shared";
 
 const androidStyles = {
   ...sharedStyles,
-  articleFlag: {
-    ...sharedStyles.articleFlag,
-    paddingTop: spacing(1)
-  },
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
     fontSize: fontSizes.headline,
@@ -20,6 +16,10 @@ const androidStyles = {
   articleLabelWrapper: {
     marginBottom: spacing(-2.75),
     marginTop: spacing(2)
+  },
+  flags: {
+    ...sharedStyles.flags,
+    marginTop: spacing(1)
   },
   standFirst: {
     ...sharedStyles.standFirst,

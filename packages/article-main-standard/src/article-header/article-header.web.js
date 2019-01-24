@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
+import { ArticleFlags } from "@times-components/article-flag";
 
 import HeaderLabel from "../article-header-label/article-header-label";
-import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
@@ -29,7 +29,9 @@ const ArticleHeader = ({
       {headline}
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
-    <HeaderFlags flags={flags} />
+    <View style={styles.flags}>
+      <ArticleFlags flags={flags} />
+    </View>
   </View>
 );
 

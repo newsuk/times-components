@@ -7,7 +7,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import shared from "./shared.base";
+import shared from "./shared-slices.base";
 
 export default () => {
   addSerializers(

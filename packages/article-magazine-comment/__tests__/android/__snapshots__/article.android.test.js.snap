@@ -25,6 +25,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           Some Short Headline
         </Text>
         <View>
+          <ArticleFlags />
+        </View>
+        <View>
           <View>
             <ArticleBylineWithLinks
               ast={
@@ -171,6 +174,9 @@ exports[`4. an article with ads 1`] = `
           Some Headline
         </Text>
         <View>
+          <ArticleFlags />
+        </View>
+        <View>
           <View>
             <ArticleBylineWithLinks
               ast={
@@ -294,7 +300,7 @@ exports[`4. an article with ads 1`] = `
 </RCTScrollView>
 `;
 
-exports[`8. an article with no author 1`] = `
+exports[`7. an article with no author 1`] = `
 <RCTScrollView
   initialNumToRender={10}
   maxToRenderPerBatch={10}
@@ -321,9 +327,13 @@ exports[`8. an article with no author 1`] = `
           Some Headline
         </Text>
         <View>
-          <View>
-            <NewArticleFlag />
-          </View>
+          <ArticleFlags
+            flags={
+              Array [
+                "NEW",
+              ]
+            }
+          />
         </View>
         <Text
           accessibilityRole="heading"

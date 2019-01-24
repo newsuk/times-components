@@ -1,9 +1,15 @@
 import styleguide from "@times-components/styleguide";
 
-const { fontFactory } = styleguide();
+const { fontFactory, spacing } = styleguide();
 const styles = {
   diamond: {
-    marginRight: 5
+    marginRight: spacing(1)
+  },
+  flag: {
+    marginRight: spacing(3)
+  },
+  flags: {
+    flexDirection: "row"
   },
   title: {
     ...fontFactory({

@@ -6,7 +6,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import shared from "./shared.base";
+import shared from "./shared-slices.base";
 
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/gradient", () => "Gradient");

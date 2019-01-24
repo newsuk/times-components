@@ -1,8 +1,8 @@
 import React from "react";
+import { ArticleFlags } from "@times-components/article-flag";
 import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";
-import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
@@ -42,7 +42,7 @@ const ArticleHeader = ({
       {headline}
     </HeadlineContainer>
     <FlagsContainer>
-      <Flags flags={flags} />
+      <ArticleFlags flags={flags} />
     </FlagsContainer>
     <Standfirst standfirst={standfirst} />
     <Meta

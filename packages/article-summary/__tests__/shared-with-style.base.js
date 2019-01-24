@@ -5,6 +5,9 @@ import ArticleSummary, { ArticleSummaryContent } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 
 jest.mock("@times-components/article-byline", () => "ArticleByline");
+jest.mock("@times-components/article-flag", () => ({
+  ArticleFlags: "ArticleFlags"
+}));
 jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/video-label", () => "VideoLabel");

@@ -20,6 +20,9 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
         >
           Some Short Headline
         </h1>
+        <div>
+          <ArticleFlags />
+        </div>
       </div>
     </div>
     <div>
@@ -68,6 +71,9 @@ exports[`3. an article with ads 1`] = `
         >
           Some Headline
         </h1>
+        <div>
+          <ArticleFlags />
+        </div>
       </div>
     </div>
     <div>

@@ -15,8 +15,12 @@ const articleFlagPropTypes = {
   ])
 };
 
+const articleFlagsPropTypes = {
+  flags: PropTypes.arrayOf(PropTypes.string)
+};
+
 const articleFlagDefaultProps = {
   color: colours.functional.primary
 };
 
-export { articleFlagPropTypes, articleFlagDefaultProps };
+export { articleFlagPropTypes, articleFlagsPropTypes, articleFlagDefaultProps };

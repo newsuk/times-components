@@ -2,6 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import ArticleFlag, {
+  ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
@@ -86,6 +87,16 @@ export default () => {
       name: "sponsored article flag",
       test: () => {
         const testInstance = TestRenderer.create(<SponsoredArticleFlag />);
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article flags",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />
+        );
 
         expect(testInstance).toMatchSnapshot();
       }

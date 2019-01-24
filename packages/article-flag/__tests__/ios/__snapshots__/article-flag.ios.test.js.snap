@@ -135,3 +135,40 @@ exports[`8. sponsored article flag 1`] = `
   </Text>
 </View>
 `;
+
+exports[`9. article flags 1`] = `
+<View>
+  <View>
+    <View>
+      <View>
+        <IconDiamond
+          fillColour="#3C81BE"
+          height={8}
+          width={8}
+        />
+      </View>
+      <Text
+        accessibilityLabel="updated Flag"
+      >
+        updated
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <View>
+        <IconDiamond
+          fillColour="#C51D24"
+          height={8}
+          width={8}
+        />
+      </View>
+      <Text
+        accessibilityLabel="exclusive Flag"
+      >
+        exclusive
+      </Text>
+    </View>
+  </View>
+</View>
+`;

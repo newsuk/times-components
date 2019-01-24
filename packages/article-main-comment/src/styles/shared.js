@@ -31,13 +31,9 @@ const sharedStyles = {
     color: colours.functional.secondary,
     marginTop: spacing(3)
   },
-  flag: {
-    flexDirection: "row",
+  flags: {
     marginBottom: spacing(3),
     marginTop: spacing(1)
-  },
-  flagContainer: {
-    marginRight: spacing(3)
   },
   header: {
     borderBottomColor: colours.functional.keyline,

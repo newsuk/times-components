@@ -5,10 +5,6 @@ import sharedStyles from "./shared";
 
 const nativeStyles = {
   ...sharedStyles,
-  articleFlag: {
-    ...sharedStyles.articleFlag,
-    paddingTop: spacing(1)
-  },
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
     fontWeight: "700",
@@ -17,6 +13,10 @@ const nativeStyles = {
   articleLabelWrapper: {
     marginBottom: spacing(-2.75),
     marginTop: spacing(2)
+  },
+  flags: {
+    ...sharedStyles.flags,
+    marginTop: spacing(1)
   },
   standFirst: {
     ...sharedStyles.standFirst,
