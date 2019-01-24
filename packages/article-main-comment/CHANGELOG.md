@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.8.0...@times-components/article-main-comment@0.9.0) (2019-01-24)
+
+
+### Features
+
+* main comment tablet header design ([#1619](https://github.com/newsuk/times-components/issues/1619)) ([25041ea](https://github.com/newsuk/times-components/commit/25041ea))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.7.0...@times-components/article-main-comment@0.8.0) (2019-01-23)
 
 

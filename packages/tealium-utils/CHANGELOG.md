@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.13](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.12...@times-components/tealium-utils@0.7.13) (2019-01-24)
+
+**Note:** Version bump only for package @times-components/tealium-utils
+
+
+
+
+
 ## [0.7.12](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.11...@times-components/tealium-utils@0.7.12) (2019-01-22)
 
 **Note:** Version bump only for package @times-components/tealium-utils

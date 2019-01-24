@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.16.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.15.0...@times-components/styleguide@3.16.0) (2019-01-24)
+
+
+### Features
+
+* tablet layout for main standard article headers ([#1614](https://github.com/newsuk/times-components/issues/1614)) ([d27081a](https://github.com/newsuk/times-components/commit/d27081a))
+
+
+
+
+
 # [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.14.0...@times-components/styleguide@3.15.0) (2019-01-23)
 
 
