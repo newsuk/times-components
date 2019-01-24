@@ -4,6 +4,8 @@ This package is meant to create a single testable location for our fixtures. Ena
 
 The aim for this package is to give us a single location for integration tests, showcase and UI tests all to use.
 
+Note: Since Jest depends on javascript, this package needs to be transpiled before running any Jest tests. Make sure to re-transpile after making any changes on this package.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
