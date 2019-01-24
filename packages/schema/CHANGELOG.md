@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.23](https://github.com/newsuk/times-components/compare/@times-components/schema@0.1.22...@times-components/schema@0.1.23) (2019-01-24)
+
+
+### Bug Fixes
+
+* Versions due to multiple master merges ([#1617](https://github.com/newsuk/times-components/issues/1617)) ([9f732e2](https://github.com/newsuk/times-components/commit/9f732e2))
+
+
+
+
+
 ## [0.1.22](https://github.com/newsuk/times-components/compare/@times-components/schema@0.1.21...@times-components/schema@0.1.22) (2019-01-22)
 
 **Note:** Version bump only for package @times-components/schema
