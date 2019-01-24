@@ -70,6 +70,7 @@
     "@times-components/context": "0.6.2",
     "@times-components/date-publication": "0.20.2",
     "@times-components/image": "4.5.2",
+    "@times-components/responsive": "0.2.2",
     "@times-components/styleguide": "3.16.0",
     "@times-components/utils": "4.1.1",
     "@times-components/video-label": "2.2.2",

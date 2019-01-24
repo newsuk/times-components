@@ -27,6 +27,12 @@ const mapping = {
     pageComponentHeadline: 30,
     smallestHeadline: 26
   },
+  stMagazine: {
+    pageHeadline: 42
+  },
+  styleMagazine: {
+    pageHeadline: 42
+  },
   supporting: {
     button: 16,
     caption: 13,

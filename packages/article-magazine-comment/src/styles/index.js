@@ -10,6 +10,10 @@ const nativeStyles = {
     overflow: "hidden",
     width: 100
   },
+  authorImageTablet: {
+    height: 108,
+    width: 108
+  },
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
