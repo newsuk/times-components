@@ -1,4 +1,4 @@
-import styleguide from "@times-components/styleguide";
+import styleguide, { tabletWidth } from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
@@ -16,13 +16,12 @@ const sharedStyles = {
   },
   container: {
     alignItems: "center",
-    borderBottomColor: colours.functional.keyline,
-    borderBottomWidth: 1,
-    marginBottom: spacing(4),
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
-    paddingBottom: spacing(5),
-    paddingTop: spacing(7)
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
+  },
+  containerTablet: {
+    alignSelf: "center",
+    width: tabletWidth
   },
   datePublication: {
     ...fontFactory({
@@ -39,6 +38,13 @@ const sharedStyles = {
   },
   flagContainer: {
     marginRight: spacing(3)
+  },
+  header: {
+    borderBottomColor: colours.functional.keyline,
+    borderBottomWidth: 1,
+    marginBottom: spacing(4),
+    paddingBottom: spacing(5),
+    paddingTop: spacing(7)
   },
   label: {
     marginBottom: spacing(2)
