@@ -9,6 +9,9 @@ jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/video-label", () => "VideoLabel");
 
+// eslint-disable-next-line global-require
+jest.mock("@times-components/svgs", () => require("./mock-svg"));
+
 export default () => {
   const headline = "Test Headline";
   const label = "Test label";

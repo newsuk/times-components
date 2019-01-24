@@ -117,8 +117,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 5px;
-  margin-bottom: 5px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -136,7 +134,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="IS9"
+    className="IS9 S1"
   >
     <div
       className="IS4 S1"
@@ -147,24 +145,21 @@ exports[`1. article summary component with a single paragraph 1`] = `
         <div
           className="IS1 S1"
         >
-          <svg
-            aria-label="[title]"
+          <Svg
             height={8}
             role="img"
+            title="Diamond Icon"
             viewBox="0 0 20 20"
             width={8}
           >
-            <title>
-              Diamond Icon
-            </title>
-            <g
+            <G
               fill="#3C81BE"
             >
-              <path
+              <Path
                 d="M 0,10 10,20 20,10 10,0 Z"
               />
-            </g>
-          </svg>
+            </G>
+          </Svg>
         </div>
         <div
           aria-label="updated Flag"
@@ -184,24 +179,21 @@ exports[`1. article summary component with a single paragraph 1`] = `
         <div
           className="IS5 S1"
         >
-          <svg
-            aria-label="[title]"
+          <Svg
             height={8}
             role="img"
+            title="Diamond Icon"
             viewBox="0 0 20 20"
             width={8}
           >
-            <title>
-              Diamond Icon
-            </title>
-            <g
+            <G
               fill="#C51D24"
             >
-              <path
+              <Path
                 d="M 0,10 10,20 20,10 10,0 Z"
               />
-            </g>
-          </svg>
+            </G>
+          </Svg>
         </div>
         <div
           aria-label="exclusive Flag"
