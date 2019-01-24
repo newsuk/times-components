@@ -10,7 +10,7 @@ export default ({ imageUrl } = {}) => ({
       publishedTime: "2019-01-18T12:00:00.000Z",
       updatedTime: "2019-01-18T12:52:41.000Z",
       label: "ROYALS",
-      flags: ["NEW", "EXCLUSIVE"],
+      flags: ["NEW"],
       standfirst: null,
       leadAsset: {
         crop169: {
@@ -76,7 +76,7 @@ export default ({ imageUrl } = {}) => ({
       publishedTime: "2019-01-17T17:00:00.000Z",
       updatedTime: "2019-01-18T16:00:34.000Z",
       label: "CYBER CRIME",
-      flags: ["NEW", "EXCLUSIVE"],
+      flags: ["UPDATED"],
       standfirst: null,
       leadAsset: {
         crop169: {
