@@ -10,6 +10,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { themeFactory } from "@times-components/styleguide";
+import { setIsTablet } from "@times-components/test-utils/dimensions";
 import "./mocks.native";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
@@ -172,6 +173,39 @@ export default () => {
   });
 
   it("full article with style in the sunday times magazine", () => {
+    const testRenderer = TestRenderer.create(
+      <Context.Provider value={themeForSection("thesundaytimesmagazine")}>
+        <ArticleMagazineComment {...sharedProps} article={article} />
+      </Context.Provider>
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("tablet full article with style in the culture magazine", () => {
+    setIsTablet(true);
+    const testRenderer = TestRenderer.create(
+      <Context.Provider value={themeForSection("culture")}>
+        <ArticleMagazineComment {...sharedProps} article={article} />
+      </Context.Provider>
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("tablet full article with style in the style magazine", () => {
+    setIsTablet(true);
+    const testRenderer = TestRenderer.create(
+      <Context.Provider value={themeForSection("style")}>
+        <ArticleMagazineComment {...sharedProps} article={article} />
+      </Context.Provider>
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("tablet full article with style in the sunday times magazine", () => {
+    setIsTablet(true);
     const testRenderer = TestRenderer.create(
       <Context.Provider value={themeForSection("thesundaytimesmagazine")}>
         <ArticleMagazineComment {...sharedProps} article={article} />
