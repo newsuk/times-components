@@ -1,12 +1,12 @@
 import React from "react";
-import { mockEditionSlice } from "@times-components/fixture-generator";
+import { mockLeadOneFullWidthSlice } from "@times-components/fixture-generator";
 import { PrimaryTile } from "./src/tiles";
 
 export default {
   children: [
     {
       component: () => {
-        const slice = mockEditionSlice("LeadOneFullWidthSlice");
+        const slice = mockLeadOneFullWidthSlice();
         return <PrimaryTile tile={slice.lead} withImage />;
       },
       name: "Primary (with image)",
@@ -14,7 +14,7 @@ export default {
     },
     {
       component: () => {
-        const slice = mockEditionSlice("LeadOneFullWidthSlice");
+        const slice = mockLeadOneFullWidthSlice();
         return <PrimaryTile tile={slice.lead} />;
       },
       name: "Primary (without image)",

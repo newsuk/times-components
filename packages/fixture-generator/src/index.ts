@@ -1,7 +1,20 @@
 import MockArticle from "./mock-article";
 import MockImage from "./mock-image";
 import MockAuthor from "./mock-author";
-import mockEditionSlice from "./mock-edition-slice";
+import mockEditionSlice, {
+  mockLeadOneFullWidthSlice,
+  mockLeadOneAndOneSlice,
+  mockLeadOneAndTwoSlice
+} from "./mock-slice";
 import MockTopic from "./mock-topic";
 
-export { MockArticle, mockEditionSlice, MockImage, MockAuthor, MockTopic };
+export {
+  mockLeadOneFullWidthSlice,
+  mockLeadOneAndOneSlice,
+  mockLeadOneAndTwoSlice,
+  MockArticle,
+  mockEditionSlice,
+  MockImage,
+  MockAuthor,
+  MockTopic
+};

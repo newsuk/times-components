@@ -10,7 +10,7 @@ import keywords from "./mock-keywords";
 import UUID from "./mock-UUID";
 import getPublicationName from "./mock-publication-name";
 import MockImage from "./mock-image";
-import getRelatedArticleSlice from "./mock-related-article-slice";
+import getArticleSlice from "./mock-slice";
 import MockMarkup from "./mock-markup";
 
 class MockArticle {
@@ -58,7 +58,7 @@ class MockArticle {
   }
 
   setRelatedArticles(count: number) {
-    this.article.relatedArticleSlice = getRelatedArticleSlice(count);
+    this.article.relatedArticleSlice = getArticleSlice(count);
     return this;
   }
 
