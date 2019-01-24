@@ -1,12 +1,12 @@
 import React from "react";
-import { MockEditionSlice } from "@times-components/fixture-generator";
+import { mockEditionSlice } from "@times-components/fixture-generator";
 import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "./src/slices";
 
 export default {
   children: [
     {
       component: () => {
-        const slice = MockEditionSlice("LeadOneFullWidthSlice");
+        const slice = mockEditionSlice("LeadOneFullWidthSlice");
         return <LeadOneFullWidthSlice lead={slice.lead} />;
       },
       name: "Lead One Full Width",
@@ -14,7 +14,7 @@ export default {
     },
     {
       component: () => {
-        const slice = MockEditionSlice("LeadOneAndOneSlice");
+        const slice = mockEditionSlice("LeadOneAndOneSlice");
         return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
       },
       name: "Lead One And One",
