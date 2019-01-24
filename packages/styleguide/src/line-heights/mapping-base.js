@@ -14,6 +14,10 @@ const mapping = {
     cardMetaMobile: 12,
     meta: 14
   },
+  cultureMagazine: {
+    headline: 35,
+    pageHeadline: 42
+  },
   headline: {
     articleHeadline: 45,
     commentsHeadline: 29,
@@ -26,6 +30,14 @@ const mapping = {
   headlineRegular: {
     pageComponentHeadline: 30,
     smallestHeadline: 26
+  },
+  stMagazine: {
+    headline: 35,
+    pageHeadline: 42
+  },
+  styleMagazine: {
+    headline: 35,
+    pageHeadline: 42
   },
   supporting: {
     button: 16,

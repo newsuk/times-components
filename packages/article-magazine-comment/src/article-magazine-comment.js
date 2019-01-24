@@ -10,6 +10,7 @@ import {
 } from "@times-components/utils";
 import Caption, { CentredCaption } from "@times-components/caption";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
+import { ResponsiveContext } from "@times-components/responsive";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
@@ -41,29 +42,37 @@ class ArticleMagazineComment extends Component {
     } = article;
 
     return (
-      <Fragment>
-        <ArticleHeader
-          authorImage={author.image}
-          byline={byline}
-          flags={flags}
-          hasVideo={hasVideo}
-          headline={getHeadline(headline, shortHeadline)}
-          label={label}
-          onAuthorPress={onAuthorPress}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-          standfirst={standfirst}
-        />
-        <ArticleLeadAsset
-          {...getLeadAsset(article)}
-          getImageCrop={getStandardTemplateCrop}
-          onVideoPress={onVideoPress}
-          renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          renderModalCaption={({ caption }) => <Caption {...caption} />}
-          style={styles.leadAssetContainer}
-          width={width}
-        />
-      </Fragment>
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <Fragment>
+            <ArticleHeader
+              authorImage={author.image}
+              byline={byline}
+              flags={flags}
+              hasVideo={hasVideo}
+              headline={getHeadline(headline, shortHeadline)}
+              isTablet={isTablet}
+              label={label}
+              onAuthorPress={onAuthorPress}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
+              standfirst={standfirst}
+            />
+            <ArticleLeadAsset
+              {...getLeadAsset(article)}
+              getImageCrop={getStandardTemplateCrop}
+              onVideoPress={onVideoPress}
+              renderCaption={({ caption }) => <CentredCaption {...caption} />}
+              renderModalCaption={({ caption }) => <Caption {...caption} />}
+              style={[
+                styles.leadAssetContainer,
+                isTablet && styles.leadAssetContainerTablet
+              ]}
+              width={width}
+            />
+          </Fragment>
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 

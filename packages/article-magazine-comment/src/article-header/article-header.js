@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { ArticleFlags } from "@times-components/article-flag";
 import Image from "@times-components/image";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
+import { fontFactory } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
@@ -21,6 +21,7 @@ const ArticleHeader = ({
   flags,
   hasVideo,
   headline,
+  isTablet,
   label,
   onAuthorPress,
   publicationName,
@@ -29,13 +30,22 @@ const ArticleHeader = ({
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
-      <View style={styles.container}>
-        <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
+      <View style={[styles.container, isTablet && styles.containerTablet]}>
+        <Image
+          aspectRatio={1}
+          style={[styles.authorImage, isTablet && styles.authorImageTablet]}
+          uri={authorImage}
+        />
         <Label isVideo={hasVideo} label={label} />
         <Text
           style={[
             styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            {
+              ...fontFactory({
+                font: headlineFont || "headline",
+                fontSize: isTablet ? "pageHeadline" : "headline"
+              })
+            }
           ]}
         >
           {headline}
