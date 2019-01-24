@@ -22,7 +22,7 @@ exports[`2. an article with no headline falls back to use shortheadline 1`] = `
           >
             Some Short Headline
           </Text>
-          <View />
+          <ArticleFlags />
         </View>
         <View>
           <View>
@@ -73,7 +73,7 @@ exports[`3. an article with ads 1`] = `
           >
             Some Headline
           </Text>
-          <View />
+          <ArticleFlags />
         </View>
         <View>
           <View>

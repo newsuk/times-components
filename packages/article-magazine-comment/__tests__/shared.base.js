@@ -90,24 +90,6 @@ export const snapshotTests = renderComponent => [
 
 const negativeTests = [
   {
-    name: "an article with no flags",
-    test() {
-      const testRenderer = TestRenderer.create(
-        <ArticleMagazineComment
-          {...sharedProps}
-          article={articleFixture({
-            ...testFixture,
-            flags: null
-          })}
-        />
-      );
-
-      const flags = findComponents(testRenderer, "Flag");
-
-      expect(flags).toEqual([]);
-    }
-  },
-  {
     name: "an article with no label",
     test() {
       const testRenderer = TestRenderer.create(

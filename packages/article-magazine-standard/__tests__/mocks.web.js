@@ -5,10 +5,7 @@ jest.mock("@times-components/article-byline", () => ({
 }));
 jest.mock("@times-components/article-comments", () => "ArticleComments");
 jest.mock("@times-components/article-flag", () => ({
-  ExclusiveArticleFlag: "ExclusiveArticleFlag",
-  NewArticleFlag: "NewArticleFlag",
-  SponsoredArticleFlag: "SponsoredArticleFlag",
-  UpdatedArticleFlag: "UpdatedArticleFlag"
+  ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");

@@ -47,69 +47,7 @@ exports[`full article with style 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "marginTop": -5,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "marginRight": 5,
-                    }
-                  }
-                >
-                  <ARTSurfaceView
-                    style={
-                      Object {
-                        "height": 8,
-                        "width": 8,
-                      }
-                    }
-                  >
-                    <ARTGroup>
-                      <ARTGroup>
-                        <ARTShape />
-                      </ARTGroup>
-                    </ARTGroup>
-                  </ARTSurfaceView>
-                </View>
-                <Text
-                  style={
-                    Object {
-                      "color": "rgba(255, 255, 255, 1)",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.4,
-                      "lineHeight": 12,
-                      "marginTop": 5,
-                    }
-                  }
-                >
-                  new
-                </Text>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -371,69 +309,7 @@ exports[`full article with style in the culture magazine 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "marginTop": -5,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "marginRight": 5,
-                    }
-                  }
-                >
-                  <ARTSurfaceView
-                    style={
-                      Object {
-                        "height": 8,
-                        "width": 8,
-                      }
-                    }
-                  >
-                    <ARTGroup>
-                      <ARTGroup>
-                        <ARTShape />
-                      </ARTGroup>
-                    </ARTGroup>
-                  </ARTSurfaceView>
-                </View>
-                <Text
-                  style={
-                    Object {
-                      "color": "rgba(255, 255, 255, 1)",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.4,
-                      "lineHeight": 12,
-                      "marginTop": 5,
-                    }
-                  }
-                >
-                  new
-                </Text>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -695,69 +571,7 @@ exports[`full article with style in the style magazine 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "marginTop": -5,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "marginRight": 5,
-                    }
-                  }
-                >
-                  <ARTSurfaceView
-                    style={
-                      Object {
-                        "height": 8,
-                        "width": 8,
-                      }
-                    }
-                  >
-                    <ARTGroup>
-                      <ARTGroup>
-                        <ARTShape />
-                      </ARTGroup>
-                    </ARTGroup>
-                  </ARTSurfaceView>
-                </View>
-                <Text
-                  style={
-                    Object {
-                      "color": "rgba(255, 255, 255, 1)",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.4,
-                      "lineHeight": 12,
-                      "marginTop": 5,
-                    }
-                  }
-                >
-                  new
-                </Text>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -1019,69 +833,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "marginTop": -5,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "marginRight": 5,
-                    }
-                  }
-                >
-                  <ARTSurfaceView
-                    style={
-                      Object {
-                        "height": 8,
-                        "width": 8,
-                      }
-                    }
-                  >
-                    <ARTGroup>
-                      <ARTGroup>
-                        <ARTShape />
-                      </ARTGroup>
-                    </ARTGroup>
-                  </ARTSurfaceView>
-                </View>
-                <Text
-                  style={
-                    Object {
-                      "color": "rgba(255, 255, 255, 1)",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.4,
-                      "lineHeight": 12,
-                      "marginTop": 5,
-                    }
-                  }
-                >
-                  new
-                </Text>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={

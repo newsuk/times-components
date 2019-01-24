@@ -62,78 +62,7 @@ exports[`full article with style on mobile 1`] = `
           >
             Some Standfirst
           </Text>
-          <View
-            style={
-              Object {
-                "marginBottom": 10,
-                "marginTop": 5,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginRight": 15,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "marginTop": -5,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "marginRight": 5,
-                      }
-                    }
-                  >
-                    <ARTSurfaceView
-                      style={
-                        Object {
-                          "height": 8,
-                          "width": 8,
-                        }
-                      }
-                    >
-                      <ARTGroup>
-                        <ARTGroup>
-                          <ARTShape />
-                        </ARTGroup>
-                      </ARTGroup>
-                    </ARTSurfaceView>
-                  </View>
-                  <Text
-                    style={
-                      Object {
-                        "color": "#E34605",
-                        "fontFamily": "TimesDigitalW04-RegularSC",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.4,
-                        "lineHeight": 12,
-                        "marginTop": 5,
-                      }
-                    }
-                  >
-                    new
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <View
           style={
@@ -389,78 +318,7 @@ exports[`full article with style on tablet 1`] = `
           >
             Some Standfirst
           </Text>
-          <View
-            style={
-              Object {
-                "marginBottom": 10,
-                "marginTop": 5,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginRight": 15,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "marginTop": -5,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "marginRight": 5,
-                      }
-                    }
-                  >
-                    <ARTSurfaceView
-                      style={
-                        Object {
-                          "height": 8,
-                          "width": 8,
-                        }
-                      }
-                    >
-                      <ARTGroup>
-                        <ARTGroup>
-                          <ARTShape />
-                        </ARTGroup>
-                      </ARTGroup>
-                    </ARTSurfaceView>
-                  </View>
-                  <Text
-                    style={
-                      Object {
-                        "color": "#E34605",
-                        "fontFamily": "TimesDigitalW04-RegularSC",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.4,
-                        "lineHeight": 12,
-                        "marginTop": 5,
-                      }
-                    }
-                  >
-                    new
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <View
           style={

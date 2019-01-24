@@ -120,34 +120,6 @@ export const snapshotTests = renderComponent => [
 
 const negativeTests = [
   {
-    name: "an article with no flags",
-    test() {
-      const testInstance = TestRenderer.create(
-        <ArticleMainStandard
-          {...articleProps}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          article={articleFixture({
-            ...testFixture,
-            flags: null
-          })}
-          onAuthorPress={() => {}}
-          onCommentGuidelinesPress={() => {}}
-          onCommentsPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onTwitterLinkPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      );
-
-      const flags = findComponents(testInstance, "Flag");
-
-      expect(flags).toEqual([]);
-    }
-  },
-  {
     name: "an article with no byline",
     test() {
       const testInstance = TestRenderer.create(
