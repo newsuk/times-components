@@ -8,6 +8,9 @@ import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "../src/slices";
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/gradient", () => "Gradient");
 
+// eslint-disable-next-line global-require
+jest.mock("@times-components/svgs", () => require("./mock-svg"));
+
 const leadOneAndOneData = leadOneAndOneDataGenerator({
   imageUrl: "https://img/someImage"
 });

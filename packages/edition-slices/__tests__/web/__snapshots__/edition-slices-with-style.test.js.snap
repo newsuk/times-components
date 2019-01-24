@@ -127,24 +127,21 @@ exports[`1. primary tile 1`] = `
           <div
             className="IS2 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#E34605"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="new Flag"
@@ -164,24 +161,21 @@ exports[`1. primary tile 1`] = `
           <div
             className="IS6 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#C51D24"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="exclusive Flag"
@@ -357,24 +351,21 @@ exports[`2. primary tiles without image 1`] = `
           <div
             className="IS2 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#E34605"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="new Flag"
@@ -394,24 +385,21 @@ exports[`2. primary tiles without image 1`] = `
           <div
             className="IS6 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#C51D24"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="exclusive Flag"
@@ -578,24 +566,21 @@ exports[`3. lead one full width slice 1`] = `
           <div
             className="IS2 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#E34605"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="new Flag"
@@ -615,24 +600,21 @@ exports[`3. lead one full width slice 1`] = `
           <div
             className="IS6 S2"
           >
-            <svg
-              aria-label="[title]"
+            <Svg
               height={8}
               role="img"
+              title="Diamond Icon"
               viewBox="0 0 20 20"
               width={8}
             >
-              <title>
-                Diamond Icon
-              </title>
-              <g
+              <G
                 fill="#C51D24"
               >
-                <path
+                <Path
                   d="M 0,10 10,20 20,10 10,0 Z"
                 />
-              </g>
-            </svg>
+              </G>
+            </Svg>
           </div>
           <div
             aria-label="exclusive Flag"
@@ -890,24 +872,21 @@ exports[`4. lead one and one slice 1`] = `
                   <div
                     className="IS2 S2"
                   >
-                    <svg
-                      aria-label="[title]"
+                    <Svg
                       height={8}
                       role="img"
+                      title="Diamond Icon"
                       viewBox="0 0 20 20"
                       width={8}
                     >
-                      <title>
-                        Diamond Icon
-                      </title>
-                      <g
+                      <G
                         fill="#E34605"
                       >
-                        <path
+                        <Path
                           d="M 0,10 10,20 20,10 10,0 Z"
                         />
-                      </g>
-                    </svg>
+                      </G>
+                    </Svg>
                   </div>
                   <div
                     aria-label="new Flag"
@@ -927,24 +906,21 @@ exports[`4. lead one and one slice 1`] = `
                   <div
                     className="IS6 S2"
                   >
-                    <svg
-                      aria-label="[title]"
+                    <Svg
                       height={8}
                       role="img"
+                      title="Diamond Icon"
                       viewBox="0 0 20 20"
                       width={8}
                     >
-                      <title>
-                        Diamond Icon
-                      </title>
-                      <g
+                      <G
                         fill="#C51D24"
                       >
-                        <path
+                        <Path
                           d="M 0,10 10,20 20,10 10,0 Z"
                         />
-                      </g>
-                    </svg>
+                      </G>
+                    </Svg>
                   </div>
                   <div
                     aria-label="exclusive Flag"
@@ -1010,24 +986,21 @@ exports[`4. lead one and one slice 1`] = `
                     <div
                       className="IS12 S2"
                     >
-                      <svg
-                        aria-label="[title]"
+                      <Svg
                         height={8}
                         role="img"
+                        title="Diamond Icon"
                         viewBox="0 0 20 20"
                         width={8}
                       >
-                        <title>
-                          Diamond Icon
-                        </title>
-                        <g
+                        <G
                           fill="#E34605"
                         >
-                          <path
+                          <Path
                             d="M 0,10 10,20 20,10 10,0 Z"
                           />
-                        </g>
-                      </svg>
+                        </G>
+                      </Svg>
                     </div>
                     <div
                       aria-label="new Flag"
@@ -1047,24 +1020,21 @@ exports[`4. lead one and one slice 1`] = `
                     <div
                       className="IS16 S2"
                     >
-                      <svg
-                        aria-label="[title]"
+                      <Svg
                         height={8}
                         role="img"
+                        title="Diamond Icon"
                         viewBox="0 0 20 20"
                         width={8}
                       >
-                        <title>
-                          Diamond Icon
-                        </title>
-                        <g
+                        <G
                           fill="#C51D24"
                         >
-                          <path
+                          <Path
                             d="M 0,10 10,20 20,10 10,0 Z"
                           />
-                        </g>
-                      </svg>
+                        </G>
+                      </Svg>
                     </div>
                     <div
                       aria-label="exclusive Flag"

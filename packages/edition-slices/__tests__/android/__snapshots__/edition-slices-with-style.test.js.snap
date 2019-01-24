@@ -3,6 +3,129 @@
 exports[`1. primary tile 1`] = `
 <View>
   <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#E34605",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            new
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#C51D24",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            exclusive
+          </Text>
+        </View>
+      </View>
+    </View>
     <Text
       style={
         Object {
@@ -35,6 +158,129 @@ exports[`1. primary tile 1`] = `
 exports[`2. primary tiles without image 1`] = `
 <View>
   <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#E34605",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            new
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#C51D24",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            exclusive
+          </Text>
+        </View>
+      </View>
+    </View>
     <Text
       style={
         Object {
@@ -78,6 +324,129 @@ exports[`2. primary tiles without image 1`] = `
 exports[`3. lead one full width slice 1`] = `
 <View>
   <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#E34605",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            new
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginRight": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": -5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 5,
+              }
+            }
+          >
+            <Svg>
+              <G>
+                <Path />
+              </G>
+            </Svg>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#C51D24",
+                "fontFamily": "TimesDigitalW04-RegularSC",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "letterSpacing": 1.4,
+                "lineHeight": 12,
+                "marginTop": 5,
+              }
+            }
+          >
+            exclusive
+          </Text>
+        </View>
+      </View>
+    </View>
     <Text
       style={
         Object {
@@ -128,6 +497,129 @@ exports[`4. lead one and one slice 1`] = `
     >
       <View>
         <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              ROYALS
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginTop": -5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <Svg>
+                    <G>
+                      <Path />
+                    </G>
+                  </Svg>
+                </View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#E34605",
+                      "fontFamily": "TimesDigitalW04-RegularSC",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.4,
+                      "lineHeight": 12,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  new
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginTop": -5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <Svg>
+                    <G>
+                      <Path />
+                    </G>
+                  </Svg>
+                </View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#C51D24",
+                      "fontFamily": "TimesDigitalW04-RegularSC",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.4,
+                      "lineHeight": 12,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  exclusive
+                </Text>
+              </View>
+            </View>
+          </View>
           <Text
             style={
               Object {
@@ -176,6 +668,129 @@ exports[`4. lead one and one slice 1`] = `
     >
       <View>
         <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              CYBER CRIME
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginTop": -5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <Svg>
+                    <G>
+                      <Path />
+                    </G>
+                  </Svg>
+                </View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#E34605",
+                      "fontFamily": "TimesDigitalW04-RegularSC",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.4,
+                      "lineHeight": 12,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  new
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "marginRight": 15,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginTop": -5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <Svg>
+                    <G>
+                      <Path />
+                    </G>
+                  </Svg>
+                </View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#C51D24",
+                      "fontFamily": "TimesDigitalW04-RegularSC",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.4,
+                      "lineHeight": 12,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  exclusive
+                </Text>
+              </View>
+            </View>
+          </View>
           <Text
             style={
               Object {
