@@ -33,9 +33,7 @@ const ArticleHeader = ({
       {headline}
     </Text>
     <HeaderStandfirst standfirst={standfirst} />
-    <View style={styles.flags}>
-      <ArticleFlags flags={flags} />
-    </View>
+    <ArticleFlags flags={flags} />
   </View>
 );
 

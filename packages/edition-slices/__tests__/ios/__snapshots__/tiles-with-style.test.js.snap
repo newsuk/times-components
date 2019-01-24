@@ -26,60 +26,7 @@ exports[`1. primary tile 1`] = `
         ROYALS
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "marginRight": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": -5,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 5,
-              }
-            }
-          >
-            <Svg>
-              <G>
-                <Path />
-              </G>
-            </Svg>
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#E34605",
-                "fontFamily": "TimesDigitalW04-RegularSC",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 1.4,
-                "lineHeight": 12,
-                "marginTop": 5,
-              }
-            }
-          >
-            new
-          </Text>
-        </View>
-      </View>
-    </View>
+    <ArticleFlags />
     <Text
       style={
         Object {
@@ -135,60 +82,7 @@ exports[`2. primary tiles without image 1`] = `
         ROYALS
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "marginRight": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": -5,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 5,
-              }
-            }
-          >
-            <Svg>
-              <G>
-                <Path />
-              </G>
-            </Svg>
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#E34605",
-                "fontFamily": "TimesDigitalW04-RegularSC",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 1.4,
-                "lineHeight": 12,
-                "marginTop": 5,
-              }
-            }
-          >
-            new
-          </Text>
-        </View>
-      </View>
-    </View>
+    <ArticleFlags />
     <Text
       style={
         Object {

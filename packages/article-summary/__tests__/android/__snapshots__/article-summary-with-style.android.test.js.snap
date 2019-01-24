@@ -14,128 +14,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
       title="Test label"
     />
   </View>
-  <View
-    style={
-      Object {
-        "flexDirection": "row",
-      }
+  <ArticleFlags
+    flags={
+      Array [
+        "UPDATED",
+        "EXCLUSIVE",
+      ]
     }
-  >
-    <View
-      style={
-        Object {
-          "marginRight": 15,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": -5,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginRight": 5,
-            }
-          }
-        >
-          <Svg
-            height={8}
-            role="img"
-            title="Diamond Icon"
-            viewBox="0 0 20 20"
-            width={8}
-          >
-            <G
-              fill="#3C81BE"
-            >
-              <Path
-                d="M 0,10 10,20 20,10 10,0 Z"
-              />
-            </G>
-          </Svg>
-        </View>
-        <Text
-          accessibilityLabel="updated Flag"
-          style={
-            Object {
-              "color": "#3C81BE",
-              "fontFamily": "TimesDigitalW04-RegularSC",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "letterSpacing": 1.4,
-              "lineHeight": 12,
-              "marginTop": 5,
-            }
-          }
-        >
-          updated
-        </Text>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "marginRight": 15,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": -5,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginRight": 5,
-            }
-          }
-        >
-          <Svg
-            height={8}
-            role="img"
-            title="Diamond Icon"
-            viewBox="0 0 20 20"
-            width={8}
-          >
-            <G
-              fill="#C51D24"
-            >
-              <Path
-                d="M 0,10 10,20 20,10 10,0 Z"
-              />
-            </G>
-          </Svg>
-        </View>
-        <Text
-          accessibilityLabel="exclusive Flag"
-          style={
-            Object {
-              "color": "#C51D24",
-              "fontFamily": "TimesDigitalW04-RegularSC",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "letterSpacing": 1.4,
-              "lineHeight": 12,
-              "marginTop": 5,
-            }
-          }
-        >
-          exclusive
-        </Text>
-      </View>
-    </View>
-  </View>
+  />
   <Text
     accessibilityRole="heading"
     aria-level="3"

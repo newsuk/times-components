@@ -54,72 +54,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   line-height: inherit;
   margin-bottom: 0px;
 }
-
-.IS1 {
-  margin-right: 5px;
-}
-
-.IS2 {
-  color: rgba(60,129,190,1.00);
-  font-family: TimesDigitalW04-RegularSC;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1.4px;
-  line-height: 12px;
-}
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS4 {
-  margin-right: 15px;
-}
-
-.IS5 {
-  margin-right: 5px;
-}
-
-.IS6 {
-  color: rgba(197,29,36,1.00);
-  font-family: TimesDigitalW04-RegularSC;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1.4px;
-  line-height: 12px;
-}
-
-.IS7 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS8 {
-  margin-right: 15px;
-}
-
-.IS9 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
 <div
@@ -133,78 +67,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
       title="Test label"
     />
   </div>
-  <div
-    className="IS9 S1"
-  >
-    <div
-      className="IS4 S1"
-    >
-      <div
-        className="IS3 S1"
-      >
-        <div
-          className="IS1 S1"
-        >
-          <Svg
-            height={8}
-            role="img"
-            title="Diamond Icon"
-            viewBox="0 0 20 20"
-            width={8}
-          >
-            <G
-              fill="#3C81BE"
-            >
-              <Path
-                d="M 0,10 10,20 20,10 10,0 Z"
-              />
-            </G>
-          </Svg>
-        </div>
-        <div
-          aria-label="updated Flag"
-          className="IS2 S1"
-          data-testid="flag-updated"
-        >
-          updated
-        </div>
-      </div>
-    </div>
-    <div
-      className="IS8 S1"
-    >
-      <div
-        className="IS7 S1"
-      >
-        <div
-          className="IS5 S1"
-        >
-          <Svg
-            height={8}
-            role="img"
-            title="Diamond Icon"
-            viewBox="0 0 20 20"
-            width={8}
-          >
-            <G
-              fill="#C51D24"
-            >
-              <Path
-                d="M 0,10 10,20 20,10 10,0 Z"
-              />
-            </G>
-          </Svg>
-        </div>
-        <div
-          aria-label="exclusive Flag"
-          className="IS6 S1"
-          data-testid="flag-exclusive"
-        >
-          exclusive
-        </div>
-      </div>
-    </div>
-  </div>
+  <ArticleFlags
+    flags={
+      Array [
+        "UPDATED",
+        "EXCLUSIVE",
+      ]
+    }
+  />
   <h3
     aria-level="3"
     className="S2"

@@ -5,7 +5,6 @@ import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
-  __esModule: true,
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/image", () => "Image");

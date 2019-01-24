@@ -21,7 +21,6 @@ jest.mock("@times-components/article-byline", () => ({
   default: "ArticleByline"
 }));
 jest.mock("@times-components/article-flag", () => ({
-  __esModule: true,
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-label", () => "ArticleLabel");
