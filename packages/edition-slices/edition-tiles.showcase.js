@@ -15,7 +15,7 @@ export default {
     {
       component: () => {
         const slice = MockEditionSlice("LeadOneFullWidthSlice");
-        return <PrimaryTile tile={slice.lead}/>;
+        return <PrimaryTile tile={slice.lead} />;
       },
       name: "Primary (without image)",
       type: "story"
