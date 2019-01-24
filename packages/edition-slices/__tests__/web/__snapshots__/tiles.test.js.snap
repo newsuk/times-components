@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. primary tile 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <Svg
+              height={8}
+              role="img"
+              title="Diamond Icon"
+              viewBox="0 0 20 20"
+              width={8}
+            >
+              <G
+                fill="#E34605"
+              >
+                <Path
+                  d="M 0,10 10,20 20,10 10,0 Z"
+                />
+              </G>
+            </Svg>
+          </div>
+          <div
+            aria-label="new Flag"
+            data-testid="flag-new"
+          >
+            new
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. primary tiles without image 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <Svg
+              height={8}
+              role="img"
+              title="Diamond Icon"
+              viewBox="0 0 20 20"
+              width={8}
+            >
+              <G
+                fill="#E34605"
+              >
+                <Path
+                  d="M 0,10 10,20 20,10 10,0 Z"
+                />
+              </G>
+            </Svg>
+          </div>
+          <div
+            aria-label="new Flag"
+            data-testid="flag-new"
+          >
+            new
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div>
+    <span>
+      
+      The 
+      <span>
+        Duke of Edinburgh
+      </span>
+       could be charged with driving without due care and attention after his car accident yesterday
+      ...
+    </span>
+  </div>
+</div>
+`;

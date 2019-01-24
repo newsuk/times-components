@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. lead one full width slice 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. lead one and one slice 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                ROYALS
+              </div>
+            </div>
+            <ArticleFlags
+              flags={
+                Array [
+                  "NEW",
+                ]
+              }
+            />
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Prince Philip ‘could be prosecuted’ over car crash
+            </h3>
+          </div>
+          <div>
+            <Image
+              aspectRatio={1.7777777777777777}
+              uri="https://img/someImage"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  CYBER CRIME
+                </div>
+              </div>
+              <ArticleFlags
+                flags={
+                  Array [
+                    "UPDATED",
+                  ]
+                }
+              />
+              <h3
+                aria-level="3"
+                role="heading"
+              >
+                GCHQ gives girls free cyber-classes to tackle gender gap
+              </h3>
+            </div>
+            <div>
+              <span>
+                
+                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+              </span>
+              <span>
+                 
+                The intelligence
+                ...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
