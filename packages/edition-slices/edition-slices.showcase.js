@@ -7,7 +7,8 @@ import {
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
-  SecondaryOneSlice
+  SecondaryOneSlice,
+  SecondaryFour
 } from "./src/slices";
 
 export default {

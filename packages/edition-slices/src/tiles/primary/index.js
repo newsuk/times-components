@@ -27,7 +27,7 @@ const PrimaryTile = ({
   tile: {
     article: {
       flags,
-      hasVideo,
+      hasVideo = false,
       headline,
       label,
       leadAsset,

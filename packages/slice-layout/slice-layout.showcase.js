@@ -4,7 +4,8 @@ import { ScrollView, View } from "react-native";
 import {
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice,
-  StandardSlice
+  StandardSlice,
+  SecondaryFourSlice
 } from "./src/slice-layout";
 
 const colours = [
@@ -33,6 +34,14 @@ const Support1 = () => (
 
 const Support2 = () => (
   <View style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]} />
+);
+
+const Support3 = () => (
+  <View style={[{ minHeight: 150 }, { backgroundColor: "red" }]} />
+);
+
+const Support4 = () => (
+  <View style={[{ minHeight: 150 }, { backgroundColor: "blue" }]} />
 );
 
 export default {
@@ -164,6 +173,20 @@ export default {
         </ScrollView>
       ),
       name: "OpinionOneAndTwo With 2 Supports",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <SecondaryFourSlice
+            renderSecondary1={() => <Support1 id="support1" />}
+            renderSecondary2={() => <Support2 id="support2" />}
+            renderSecondary3={() => <Support3 id="support3" />}
+            renderSecondary4={() => <Support4 id="support4" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryFourSlice",
       type: "story"
     },
     {
