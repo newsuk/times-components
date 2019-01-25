@@ -1,4 +1,8 @@
 import { mockNativeModules } from "@times-components/test-utils";
+
+// eslint-disable-next-line import/prefer-default-export
+export { setIsTablet } from "@times-components/test-utils/dimensions";
+
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));
 jest.mock("@times-components/article-byline", () => ({
@@ -7,10 +11,7 @@ jest.mock("@times-components/article-byline", () => ({
 jest.mock("@times-components/article-comments", () => "ArticleComments");
 jest.mock("@times-components/article-error", () => "ArticleError");
 jest.mock("@times-components/article-flag", () => ({
-  ExclusiveArticleFlag: "ExclusiveArticleFlag",
-  NewArticleFlag: "NewArticleFlag",
-  SponsoredArticleFlag: "SponsoredArticleFlag",
-  UpdatedArticleFlag: "UpdatedArticleFlag"
+  ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-label", () => "ArticleLabel");

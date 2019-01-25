@@ -20,6 +20,9 @@ export const DatePublicationContainer = styled(Text)`
 `;
 
 export const FlagsContainer = styled(View)`
+  padding-top: ${spacing(1)};
+  padding-bottom: ${spacing(3)};
+
   @media (min-width: ${breakpoints.medium}px) {
     padding-top: 0;
   }

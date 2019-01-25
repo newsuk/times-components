@@ -62,25 +62,7 @@ exports[`full article with style on mobile 1`] = `
           >
             Some Standfirst
           </Text>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 10,
-                "paddingTop": 5,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <NewArticleFlag />
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <View
           style={
@@ -336,25 +318,7 @@ exports[`full article with style on tablet 1`] = `
           >
             Some Standfirst
           </Text>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 10,
-                "paddingTop": 5,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "marginRight": 15,
-                }
-              }
-            >
-              <NewArticleFlag />
-            </View>
-          </View>
+          <ArticleFlags />
         </View>
         <View
           style={

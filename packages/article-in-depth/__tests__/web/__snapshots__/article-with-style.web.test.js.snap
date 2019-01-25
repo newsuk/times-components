@@ -87,6 +87,11 @@ exports[`full article with style 1`] = `
   margin-top: 5px;
 }
 
+.c4 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
 .c2 {
   -webkit-order: 2;
   -ms-flex-order: 2;
@@ -375,20 +380,6 @@ exports[`full article with style 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S6 {
   font-weight: inherit;
   line-height: 26px;
   margin-top: 0px;
@@ -397,7 +388,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -411,7 +402,7 @@ exports[`full article with style 1`] = `
   padding-top: 60px;
 }
 
-.S8 {
+.S7 {
   font-weight: inherit;
   line-height: 15px;
   margin-bottom: 0px;
@@ -420,7 +411,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 0px;
 }
 
-.S9 {
+.S8 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -434,7 +425,7 @@ exports[`full article with style 1`] = `
   padding-top: 10px;
 }
 
-.S10 {
+.S9 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -447,7 +438,7 @@ exports[`full article with style 1`] = `
   padding-top: 0px;
 }
 
-.S11 {
+.S10 {
   font-weight: inherit;
   line-height: 17px;
   margin-top: 0px;
@@ -456,7 +447,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 0px;
 }
 
-.S12 {
+.S11 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -567,7 +558,7 @@ exports[`full article with style 1`] = `
       className="IS5 S1"
     >
       <div
-        className="c2 S7"
+        className="c2 S6"
       >
         <div
           className="S3"
@@ -586,18 +577,10 @@ exports[`full article with style 1`] = `
         <div
           className="c4 S1"
         >
-          <div
-            className="S5"
-          >
-            <div
-              className="S1"
-            >
-              <NewArticleFlag />
-            </div>
-          </div>
+          <ArticleFlags />
         </div>
         <h2
-          className="c5 IS4 S6"
+          className="c5 IS4 S5"
         >
           Some Standfirst
         </h2>
@@ -607,7 +590,7 @@ exports[`full article with style 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 S9"
+      className="c2 S8"
     >
       <div
         className="c7 S1"
@@ -624,7 +607,7 @@ exports[`full article with style 1`] = `
           className="c8 S1"
         >
           <div
-            className="c10 S8"
+            className="c10 S7"
           >
             <DatePublication />
           </div>
@@ -667,7 +650,7 @@ exports[`full article with style 1`] = `
           className="IS13"
         >
           <div
-            className="IS12 S10"
+            className="IS12 S9"
           >
             <div
               className="IS11 S1"
@@ -693,10 +676,10 @@ exports[`full article with style 1`] = `
                 className="S1"
               >
                 <div
-                  className="S12"
+                  className="S11"
                 >
                   <div
-                    className="S11"
+                    className="S10"
                   >
                     This is video caption
                   </div>
@@ -828,6 +811,11 @@ exports[`full article with style in the culture magazine 1`] = `
   margin-top: 5px;
 }
 
+.c4 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
 .c2 {
   -webkit-order: 2;
   -ms-flex-order: 2;
@@ -1116,20 +1104,6 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S6 {
   font-weight: inherit;
   line-height: 26px;
   margin-top: 0px;
@@ -1138,7 +1112,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1152,7 +1126,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-top: 60px;
 }
 
-.S8 {
+.S7 {
   font-weight: inherit;
   line-height: 15px;
   margin-bottom: 0px;
@@ -1161,7 +1135,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S9 {
+.S8 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1175,7 +1149,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-top: 10px;
 }
 
-.S10 {
+.S9 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -1188,7 +1162,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-top: 0px;
 }
 
-.S11 {
+.S10 {
   font-weight: inherit;
   line-height: 17px;
   margin-top: 0px;
@@ -1197,7 +1171,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S12 {
+.S11 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -1309,7 +1283,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="IS5 S1"
     >
       <div
-        className="c2 S7"
+        className="c2 S6"
       >
         <div
           className="S3"
@@ -1328,18 +1302,10 @@ exports[`full article with style in the culture magazine 1`] = `
         <div
           className="c4 S1"
         >
-          <div
-            className="S5"
-          >
-            <div
-              className="S1"
-            >
-              <NewArticleFlag />
-            </div>
-          </div>
+          <ArticleFlags />
         </div>
         <h2
-          className="c5 IS4 S6"
+          className="c5 IS4 S5"
         >
           Some Standfirst
         </h2>
@@ -1349,7 +1315,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 S9"
+      className="c2 S8"
     >
       <div
         className="c7 S1"
@@ -1366,7 +1332,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c8 S1"
         >
           <div
-            className="c10 S8"
+            className="c10 S7"
           >
             <DatePublication />
           </div>
@@ -1409,7 +1375,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="IS13"
         >
           <div
-            className="IS12 S10"
+            className="IS12 S9"
           >
             <div
               className="IS11 S1"
@@ -1435,10 +1401,10 @@ exports[`full article with style in the culture magazine 1`] = `
                 className="S1"
               >
                 <div
-                  className="S12"
+                  className="S11"
                 >
                   <div
-                    className="S11"
+                    className="S10"
                   >
                     This is video caption
                   </div>
@@ -1570,6 +1536,11 @@ exports[`full article with style in the style magazine 1`] = `
   margin-top: 5px;
 }
 
+.c4 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
 .c2 {
   -webkit-order: 2;
   -ms-flex-order: 2;
@@ -1858,20 +1829,6 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S6 {
   font-weight: inherit;
   line-height: 26px;
   margin-top: 0px;
@@ -1880,7 +1837,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1894,7 +1851,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-top: 60px;
 }
 
-.S8 {
+.S7 {
   font-weight: inherit;
   line-height: 15px;
   margin-bottom: 0px;
@@ -1903,7 +1860,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S9 {
+.S8 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1917,7 +1874,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-top: 10px;
 }
 
-.S10 {
+.S9 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -1930,7 +1887,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-top: 0px;
 }
 
-.S11 {
+.S10 {
   font-weight: inherit;
   line-height: 17px;
   margin-top: 0px;
@@ -1939,7 +1896,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S12 {
+.S11 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -2051,7 +2008,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="IS5 S1"
     >
       <div
-        className="c2 S7"
+        className="c2 S6"
       >
         <div
           className="S3"
@@ -2070,18 +2027,10 @@ exports[`full article with style in the style magazine 1`] = `
         <div
           className="c4 S1"
         >
-          <div
-            className="S5"
-          >
-            <div
-              className="S1"
-            >
-              <NewArticleFlag />
-            </div>
-          </div>
+          <ArticleFlags />
         </div>
         <h2
-          className="c5 IS4 S6"
+          className="c5 IS4 S5"
         >
           Some Standfirst
         </h2>
@@ -2091,7 +2040,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 S9"
+      className="c2 S8"
     >
       <div
         className="c7 S1"
@@ -2108,7 +2057,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c8 S1"
         >
           <div
-            className="c10 S8"
+            className="c10 S7"
           >
             <DatePublication />
           </div>
@@ -2151,7 +2100,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="IS13"
         >
           <div
-            className="IS12 S10"
+            className="IS12 S9"
           >
             <div
               className="IS11 S1"
@@ -2177,10 +2126,10 @@ exports[`full article with style in the style magazine 1`] = `
                 className="S1"
               >
                 <div
-                  className="S12"
+                  className="S11"
                 >
                   <div
-                    className="S11"
+                    className="S10"
                   >
                     This is video caption
                   </div>
@@ -2312,6 +2261,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin-top: 5px;
 }
 
+.c4 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
 .c2 {
   -webkit-order: 2;
   -ms-flex-order: 2;
@@ -2600,20 +2554,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S6 {
   font-weight: inherit;
   line-height: 26px;
   margin-top: 0px;
@@ -2622,7 +2562,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2636,7 +2576,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-top: 60px;
 }
 
-.S8 {
+.S7 {
   font-weight: inherit;
   line-height: 15px;
   margin-bottom: 0px;
@@ -2645,7 +2585,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S9 {
+.S8 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2659,7 +2599,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-top: 10px;
 }
 
-.S10 {
+.S9 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -2672,7 +2612,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-top: 0px;
 }
 
-.S11 {
+.S10 {
   font-weight: inherit;
   line-height: 17px;
   margin-top: 0px;
@@ -2681,7 +2621,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 0px;
 }
 
-.S12 {
+.S11 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -2793,7 +2733,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="IS5 S1"
     >
       <div
-        className="c2 S7"
+        className="c2 S6"
       >
         <div
           className="S3"
@@ -2812,18 +2752,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div
           className="c4 S1"
         >
-          <div
-            className="S5"
-          >
-            <div
-              className="S1"
-            >
-              <NewArticleFlag />
-            </div>
-          </div>
+          <ArticleFlags />
         </div>
         <h2
-          className="c5 IS4 S6"
+          className="c5 IS4 S5"
         >
           Some Standfirst
         </h2>
@@ -2833,7 +2765,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 S9"
+      className="c2 S8"
     >
       <div
         className="c7 S1"
@@ -2850,7 +2782,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c8 S1"
         >
           <div
-            className="c10 S8"
+            className="c10 S7"
           >
             <DatePublication />
           </div>
@@ -2893,7 +2825,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="IS13"
         >
           <div
-            className="IS12 S10"
+            className="IS12 S9"
           >
             <div
               className="IS11 S1"
@@ -2919,10 +2851,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 className="S1"
               >
                 <div
-                  className="S12"
+                  className="S11"
                 >
                   <div
-                    className="S11"
+                    className="S10"
                   >
                     This is video caption
                   </div>

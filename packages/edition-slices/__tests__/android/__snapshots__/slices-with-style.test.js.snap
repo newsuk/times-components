@@ -1,83 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary tile 1`] = `
+exports[`1. lead one full width slice 1`] = `
 <View>
   <View>
-    <Text
+    <View
       style={
         Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 27,
           "marginBottom": 5,
         }
       }
     >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "blue",
-        "marginBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <Image />
-  </View>
-</View>
-`;
-
-exports[`2. primary tiles without image 1`] = `
-<View>
-  <View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 27,
-          "marginBottom": 5,
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
         }
-      }
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-  </View>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The 
-      <Text>
-        Duke of Edinburgh
+      >
+        ROYALS
       </Text>
-       could be charged with driving without due care and attention after his car accident yesterday
-      ...
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`3. lead one full width slice 1`] = `
-<View>
-  <View>
+    </View>
+    <ArticleFlags />
     <Text
       style={
         Object {
@@ -107,7 +56,7 @@ exports[`3. lead one full width slice 1`] = `
 </View>
 `;
 
-exports[`4. lead one and one slice 1`] = `
+exports[`2. lead one and one slice 1`] = `
 <View>
   <View
     style={
@@ -128,6 +77,30 @@ exports[`4. lead one and one slice 1`] = `
     >
       <View>
         <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              ROYALS
+            </Text>
+          </View>
+          <ArticleFlags />
           <Text
             style={
               Object {
@@ -176,6 +149,30 @@ exports[`4. lead one and one slice 1`] = `
     >
       <View>
         <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              CYBER CRIME
+            </Text>
+          </View>
+          <ArticleFlags />
           <Text
             style={
               Object {

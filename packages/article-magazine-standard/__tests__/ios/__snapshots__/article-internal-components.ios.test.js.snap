@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. article flags with content 1`] = `
-<View>
-  <View>
-    <NewArticleFlag />
-  </View>
-</View>
-`;
-
-exports[`2. article flags with no content 1`] = `null`;
-
-exports[`3. article standfirst with content 1`] = `
+exports[`1. article standfirst with content 1`] = `
 <Text
   accessibilityRole="heading"
   aria-level="2"
@@ -19,9 +9,9 @@ exports[`3. article standfirst with content 1`] = `
 </Text>
 `;
 
-exports[`4. article standfirst with no content 1`] = `null`;
+exports[`2. article standfirst with no content 1`] = `null`;
 
-exports[`5. article label uses default section colour 1`] = `
+exports[`3. article label uses default section colour 1`] = `
 <View>
   <ArticleLabel
     color="#1D1D1B"
@@ -30,9 +20,9 @@ exports[`5. article label uses default section colour 1`] = `
 </View>
 `;
 
-exports[`6. article label renders null if there is no text 1`] = `null`;
+exports[`4. article label renders null if there is no text 1`] = `null`;
 
-exports[`7. article meta uses default section colour 1`] = `
+exports[`5. article meta uses default section colour 1`] = `
 <View>
   <View>
     <ArticleBylineWithLinks

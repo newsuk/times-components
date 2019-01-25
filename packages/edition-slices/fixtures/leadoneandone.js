@@ -9,7 +9,8 @@ export default ({ imageUrl } = {}) => ({
       template: "mainstandard",
       publishedTime: "2019-01-18T12:00:00.000Z",
       updatedTime: "2019-01-18T12:52:41.000Z",
-      label: null,
+      label: "ROYALS",
+      flags: ["NEW"],
       standfirst: null,
       leadAsset: {
         crop169: {
@@ -74,7 +75,8 @@ export default ({ imageUrl } = {}) => ({
       template: "mainstandard",
       publishedTime: "2019-01-17T17:00:00.000Z",
       updatedTime: "2019-01-18T16:00:34.000Z",
-      label: null,
+      label: "CYBER CRIME",
+      flags: ["UPDATED"],
       standfirst: null,
       leadAsset: {
         crop169: {

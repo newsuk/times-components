@@ -20,12 +20,16 @@ jest.mock("@times-components/article-byline", () => ({
   ArticleBylineOpinion: "ArticleBylineOpinion",
   default: "ArticleByline"
 }));
+jest.mock("@times-components/article-flag", () => ({
+  ArticleFlags: "ArticleFlags"
+}));
 jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/video-label", () => "VideoLabel");
 
 export default () => {
   const byline = "A byline";
+  const flags = ["UPDATED"];
   const headline = "Test Headline";
   const label = "Test label";
   const paragraph = "Test paragraph";
@@ -39,6 +43,7 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleSummary
             {...defaultFixture({
+              flags,
               headline,
               label,
               paragraph

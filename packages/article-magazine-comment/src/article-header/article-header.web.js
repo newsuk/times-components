@@ -3,8 +3,8 @@ import Context from "@times-components/context";
 import Image from "@times-components/image";
 import { fonts } from "@times-components/styleguide";
 
+import { ArticleFlags } from "@times-components/article-flag";
 import Label from "../article-label/article-label";
-import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
@@ -49,7 +49,7 @@ const ArticleHeader = ({
           {headline}
         </HeadlineContainer>
         <FlagsContainer>
-          <Flags flags={flags} />
+          <ArticleFlags flags={flags} />
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta

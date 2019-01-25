@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+import { ArticleFlags } from "@times-components/article-flag";
 import Image from "@times-components/image";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
+import { fontFactory } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
-import Flags from "../article-flags/article-flags";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
@@ -21,6 +21,7 @@ const ArticleHeader = ({
   flags,
   hasVideo,
   headline,
+  isTablet,
   label,
   onAuthorPress,
   publicationName,
@@ -29,18 +30,29 @@ const ArticleHeader = ({
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
-      <View style={styles.container}>
-        <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
+      <View style={[styles.container, isTablet && styles.containerTablet]}>
+        <Image
+          aspectRatio={1}
+          style={[styles.authorImage, isTablet && styles.authorImageTablet]}
+          uri={authorImage}
+        />
         <Label isVideo={hasVideo} label={label} />
         <Text
           style={[
             styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            {
+              ...fontFactory({
+                font: headlineFont || "headline",
+                fontSize: isTablet ? "pageHeadline" : "headline"
+              })
+            }
           ]}
         >
           {headline}
         </Text>
-        <Flags flags={flags} />
+        <View style={styles.flags}>
+          <ArticleFlags flags={flags} />
+        </View>
         <Standfirst standfirst={standfirst} />
         <Meta
           byline={byline}

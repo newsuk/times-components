@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import { ArticleFlags } from "@times-components/article-flag";
 import ArticleSummary, {
   ArticleSummaryContent,
   ArticleSummaryHeadline
@@ -20,6 +21,7 @@ const renderSummaryContent = summary => <ArticleSummaryContent ast={summary} />;
 const PrimaryTile = ({
   tile: {
     article: {
+      flags,
       hasVideo,
       headline,
       label,
@@ -33,6 +35,7 @@ const PrimaryTile = ({
 }) => (
   <View>
     <ArticleSummary
+      flags={() => <ArticleFlags flags={flags} />}
       headline={() => (
         <ArticleSummaryHeadline headline={headline || shortHeadline} />
       )}

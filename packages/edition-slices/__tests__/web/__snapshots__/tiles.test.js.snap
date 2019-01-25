@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. primary tile 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. primary tiles without image 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+  </div>
+  <div>
+    <span>
+      
+      The 
+      <span>
+        Duke of Edinburgh
+      </span>
+       could be charged with driving without due care and attention after his car accident yesterday
+      ...
+    </span>
+  </div>
+</div>
+`;

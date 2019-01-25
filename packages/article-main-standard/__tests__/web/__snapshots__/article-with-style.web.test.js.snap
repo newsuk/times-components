@@ -581,11 +581,7 @@ exports[`full article with style 1`] = `
         <div
           className="S6"
         >
-          <div
-            className="S1"
-          >
-            <NewArticleFlag />
-          </div>
+          <ArticleFlags />
         </div>
       </div>
     </div>
