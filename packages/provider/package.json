@@ -39,7 +39,7 @@
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/provider-test-tools": "1.11.1",
     "@times-components/storybook": "3.3.1",
-    "@times-components/test-utils": "2.1.2",
+    "@times-components/test-utils": "2.1.3",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
