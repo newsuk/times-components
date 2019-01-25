@@ -17,6 +17,7 @@ import styles from "../styles";
 const ArticleHeader = ({
   byline,
   flags,
+  isTablet,
   hasVideo,
   headline,
   label,
@@ -27,7 +28,7 @@ const ArticleHeader = ({
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
-      <View style={styles.container}>
+      <View style={[styles.container, isTablet && styles.tabletContainer]}>
         <Label isVideo={hasVideo} label={label} />
         <Text
           style={[
