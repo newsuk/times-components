@@ -5,7 +5,7 @@
     "lib": [
       "es6"
     ] ,
-    "outDir": "./dist",
+    "outDir": "./build",
     "rootDir": "./src", 
     "strict": true,
     "esModuleInterop": true,

@@ -2,8 +2,8 @@
   "name": "@times-components/fixture-generator",
   "version": "0.0.12",
   "description": "Creates fixture data for testing",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "transpile": "yarn getSchema && yarn gentypes && tsc",
     "gentypes": "gql-gen --schema ./schema.json --template graphql-codegen-typescript-template --out ./src/types.ts",
