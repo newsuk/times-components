@@ -19,7 +19,9 @@ export default () => {
   });
 
   it("perform bidding request for web", () => {
-    const init = adInit(initOptions);
+    const init = adInit(
+      merge(initOptions, { data: { bidInitialiser: false } })
+    );
     jest.spyOn(init.prebid, "setupAsync");
     init.init();
     expect(init.prebid.setupAsync).toHaveBeenCalledTimes(1);
@@ -33,9 +35,17 @@ export default () => {
   });
 
   it("sets up Amazon bidding if amazon account ID is set", () => {
-    const init = adInit(merge(initOptions, amazonInitExtension));
+    const option = merge(initOptions, amazonInitExtension);
+    const init = adInit(merge(option, { data: { bidInitialiser: false } }));
     jest.spyOn(init.prebid, "setupApstag");
-    init.init();
+    const { networkId, adUnit, prebidConfig, section, slots } = option.data;
+    init.prebid.requestBidsAsync(
+      prebidConfig,
+      slots,
+      networkId,
+      adUnit,
+      section
+    );
     expect(init.prebid.setupApstag).toHaveBeenCalledWith(
       "mockAmazonAccount",
       1234
@@ -100,7 +110,6 @@ export default () => {
 
   it("requestPrebidBids fetches bids using pbjs", done => {
     const init = adInit(initOptions);
-    init.prebid.createPbjsGlobals();
     mock.window.pbjs.addAdUnits = jest.fn();
     jest
       .spyOn(init.prebid, "schedulePrebidAction")
