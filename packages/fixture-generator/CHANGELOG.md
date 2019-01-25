@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.13](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.0.12...@times-components/fixture-generator@0.0.13) (2019-01-25)
+
+
+### Bug Fixes
+
+* Change ts build folder to build from dist ([#1618](https://github.com/newsuk/times-components/issues/1618)) ([39890f0](https://github.com/newsuk/times-components/commit/39890f0))
+
+
+
+
+
 ## [0.0.12](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.0.11...@times-components/fixture-generator@0.0.12) (2019-01-24)
 
 **Note:** Version bump only for package @times-components/fixture-generator

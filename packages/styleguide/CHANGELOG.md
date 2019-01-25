@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.17.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.16.0...@times-components/styleguide@3.17.0) (2019-01-25)
+
+
+### Features
+
+* magazine comment tablet ([#1620](https://github.com/newsuk/times-components/issues/1620)) ([a330d98](https://github.com/newsuk/times-components/commit/a330d98))
+
+
+
+
+
 # [3.16.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.15.0...@times-components/styleguide@3.16.0) (2019-01-24)
 
 
