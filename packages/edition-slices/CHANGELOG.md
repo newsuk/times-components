@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.1.0...@times-components/edition-slices@0.2.0) (2019-01-25)
+
+
+### Features
+
+* edition slice fixture generator ([#1616](https://github.com/newsuk/times-components/issues/1616)) ([ad35856](https://github.com/newsuk/times-components/commit/ad35856))
+* magazine standard tablet layout header ([#1622](https://github.com/newsuk/times-components/issues/1622)) ([e9d025c](https://github.com/newsuk/times-components/commit/e9d025c))
+
+
+
+
+
 # [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.0.2...@times-components/edition-slices@0.1.0) (2019-01-25)
 
 

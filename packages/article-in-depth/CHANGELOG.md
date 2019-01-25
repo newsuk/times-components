@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.8.0...@times-components/article-in-depth@0.9.0) (2019-01-25)
+
+
+### Features
+
+* magazine standard tablet layout header ([#1622](https://github.com/newsuk/times-components/issues/1622)) ([e9d025c](https://github.com/newsuk/times-components/commit/e9d025c))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.7.1...@times-components/article-in-depth@0.8.0) (2019-01-25)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.2.1...@times-components/lazy-load@0.3.0) (2019-01-25)
+
+
+### Features
+
+* magazine standard tablet layout header ([#1622](https://github.com/newsuk/times-components/issues/1622)) ([e9d025c](https://github.com/newsuk/times-components/commit/e9d025c))
+
+
+
+
+
 ## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.2.0...@times-components/lazy-load@0.2.1) (2019-01-24)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.1.22...@times-components/jest-configurator@2.2.0) (2019-01-25)
+
+
+### Features
+
+* magazine standard tablet layout header ([#1622](https://github.com/newsuk/times-components/issues/1622)) ([e9d025c](https://github.com/newsuk/times-components/commit/e9d025c))
+
+
+
+
+
 ## [2.1.22](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.1.21...@times-components/jest-configurator@2.1.22) (2019-01-24)
 
 

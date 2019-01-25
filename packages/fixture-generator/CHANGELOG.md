@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.0.13...@times-components/fixture-generator@0.1.0) (2019-01-25)
+
+
+### Features
+
+* edition slice fixture generator ([#1616](https://github.com/newsuk/times-components/issues/1616)) ([ad35856](https://github.com/newsuk/times-components/commit/ad35856))
+
+
+
+
+
 ## [0.0.13](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.0.12...@times-components/fixture-generator@0.0.13) (2019-01-25)
 
 

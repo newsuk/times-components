@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.3.1...@times-components/markup-forest@1.4.0) (2019-01-25)
+
+
+### Features
+
+* magazine standard tablet layout header ([#1622](https://github.com/newsuk/times-components/issues/1622)) ([e9d025c](https://github.com/newsuk/times-components/commit/e9d025c))
+
+
+
+
+
 ## [1.3.1](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.3.0...@times-components/markup-forest@1.3.1) (2019-01-24)
 
 
