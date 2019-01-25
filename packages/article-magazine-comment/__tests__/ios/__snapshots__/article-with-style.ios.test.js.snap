@@ -306,21 +306,12 @@ exports[`full article with style in the culture magazine 1`] = `
         <View
           style={
             Object {
-              "flexDirection": "row",
               "marginBottom": 15,
               "marginTop": 5,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginRight": 15,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -569,21 +560,12 @@ exports[`full article with style in the style magazine 1`] = `
         <View
           style={
             Object {
-              "flexDirection": "row",
               "marginBottom": 15,
               "marginTop": 5,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginRight": 15,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -832,21 +814,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <View
           style={
             Object {
-              "flexDirection": "row",
               "marginBottom": 15,
               "marginTop": 5,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginRight": 15,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
+          <ArticleFlags />
         </View>
         <Text
           style={
