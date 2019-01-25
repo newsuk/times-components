@@ -10,7 +10,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { themeFactory } from "@times-components/styleguide";
-import "./mocks.native";
+import { setIsTablet } from "./mocks.native";
 import ArticleMagazineStandard from "../src/article-magazine-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -140,7 +140,16 @@ export default () => {
     )
   );
 
-  it("full article with style", () => {
+  it("phone full article with style", () => {
+    const testRenderer = TestRenderer.create(
+      <ArticleMagazineStandard {...sharedProps} article={article} />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("tablet full article with style", () => {
+    setIsTablet(true);
     const testRenderer = TestRenderer.create(
       <ArticleMagazineStandard {...sharedProps} article={article} />
     );
