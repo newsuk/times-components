@@ -1,18 +1,22 @@
 import React from "react";
+import { mockLeadOneFullWidthSlice } from "@times-components/fixture-generator";
 import { PrimaryTile } from "./src/tiles";
-import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
-
-const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [
     {
-      component: () => <PrimaryTile tile={leadOneAndOneData.lead} withImage />,
+      component: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <PrimaryTile tile={slice.lead} withImage />;
+      },
       name: "Primary (with image)",
       type: "story"
     },
     {
-      component: () => <PrimaryTile tile={leadOneAndOneData.lead} />,
+      component: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <PrimaryTile tile={slice.lead} />;
+      },
       name: "Primary (without image)",
       type: "story"
     }

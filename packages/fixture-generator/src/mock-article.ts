@@ -10,7 +10,7 @@ import keywords from "./mock-keywords";
 import UUID from "./mock-UUID";
 import getPublicationName from "./mock-publication-name";
 import MockImage from "./mock-image";
-import getArticleSlice from "./mock-article-slice";
+import getArticleSlice from "./mock-slice";
 import MockMarkup from "./mock-markup";
 
 class MockArticle {

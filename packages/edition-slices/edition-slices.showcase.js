@@ -1,23 +1,25 @@
 import React from "react";
+import {
+  mockLeadOneFullWidthSlice,
+  mockLeadOneAndOneSlice
+} from "@times-components/fixture-generator";
 import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "./src/slices";
-import leadOneAndOneDataGenerator from "./fixtures/leadoneandone";
-
-const leadOneAndOneData = leadOneAndOneDataGenerator();
 
 export default {
   children: [
     {
-      component: () => <LeadOneFullWidthSlice lead={leadOneAndOneData.lead} />,
+      component: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <LeadOneFullWidthSlice lead={slice.lead} />;
+      },
       name: "Lead One Full Width",
       type: "story"
     },
     {
-      component: () => (
-        <LeadOneAndOneSlice
-          lead={leadOneAndOneData.lead}
-          support={leadOneAndOneData.support}
-        />
-      ),
+      component: () => {
+        const slice = mockLeadOneAndOneSlice();
+        return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
+      },
       name: "Lead One And One",
       type: "story"
     }
