@@ -12,7 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
 import "./mocks";
-import { ModalImage } from "../src";
+import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
 const MockCaption = ({ style: { text, container } }) => (
@@ -46,6 +46,12 @@ export default () => {
       name: "modal image",
       test() {
         const testInstance = TestRenderer.create(<ModalImage {...props} />);
+
+        testInstance.root.findAllByType(Image).forEach(img =>
+          img.children[0].props.onLayout({
+            nativeEvent: { layout: { width: 700 } }
+          })
+        );
 
         expect(testInstance).toMatchSnapshot();
       }

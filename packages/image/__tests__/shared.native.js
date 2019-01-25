@@ -14,6 +14,10 @@ import "./mocks";
 import Image from "../src";
 import shared from "./shared.base";
 
+const getLayoutEventForWidth = width => ({
+  nativeEvent: { layout: { width } }
+});
+
 export default () => {
   addSerializers(
     expect,
@@ -44,6 +48,10 @@ export default () => {
           />
         );
 
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
         expect(testInstance).toMatchSnapshot();
       }
     },
@@ -51,6 +59,10 @@ export default () => {
       name: "handle onload event",
       test: () => {
         const testInstance = TestRenderer.create(<Image {...props} />);
+
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
 
         expect(testInstance).toMatchSnapshot();
 
@@ -70,6 +82,10 @@ export default () => {
           <Image {...props} uri={dataUri} />
         );
 
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
         expect(
           testInstance.root.find(node => node.type === ReactNativeImage).props
             .source.uri
@@ -77,10 +93,14 @@ export default () => {
       }
     },
     {
-      name: "use screen width if highResSize is not provided",
+      name: "uses highResSize if it is smaller than layout width",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image {...props} highResSize={undefined} />
+          <Image {...props} highResSize={10} />
+        );
+
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -95,6 +115,10 @@ export default () => {
           <Image aspectRatio={3 / 2} highResSize={999} uri={uri} />
         );
 
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
         expect(
           testInstance.root.find(node => node.type === ReactNativeImage).props
             .source.uri
@@ -103,5 +127,11 @@ export default () => {
     }
   ];
 
-  shared(TestRenderer.create, tests);
+  shared(component => {
+    const testInstance = TestRenderer.create(component);
+
+    testInstance.root.children[0].props.onLayout(getLayoutEventForWidth(700));
+
+    return testInstance;
+  }, tests);
 };

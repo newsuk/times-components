@@ -1,6 +1,7 @@
 /* global context */
 import {
   acceptedWidths,
+  convertToPixels,
   normaliseWidth,
   screenWidth,
   screenWidthInPixels
@@ -36,4 +37,10 @@ describe("screen utilities", () => {
       expect(screenWidthInPixels()).toMatchSnapshot();
     });
   });
+
+  context("convertToPixels", () => {
+    it("should convert a number to pixels using pixel density", () => {
+      expect(convertToPixels(50)).toMatchSnapshot();
+    })
+  })
 });
