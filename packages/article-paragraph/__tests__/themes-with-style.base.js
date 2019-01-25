@@ -1,7 +1,7 @@
 import TestRenderer from "react-test-renderer";
-import { delay } from "@times-components/test-utils";
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
+import { callAllLayouts } from "./shared.base";
 
 export default [
   {
@@ -10,7 +10,7 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "culture")
       );
-      await delay(0);
+      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   },
@@ -20,7 +20,7 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "style")
       );
-      await delay(0);
+      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   },
@@ -30,7 +30,7 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "thesundaytimesmagazine")
       );
-      await delay(0);
+      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   }

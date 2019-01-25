@@ -13,8 +13,6 @@ public class ComponentsPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        // TODO: Replace this with a library once react-native-text-size is updated: (https://github.com/aMarCruz/react-native-text-size)
-        modules.add(new RNTextSizeModule(reactContext));
         return modules;
     }
 
