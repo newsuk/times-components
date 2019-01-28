@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.4...@times-components/ad@2.4.5) (2019-01-28)
+
+
+### Bug Fixes
+
+* ads on native ([#1623](https://github.com/newsuk/times-components/issues/1623)) ([896dc96](https://github.com/newsuk/times-components/commit/896dc96))
+
+
+
+
+
 ## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.3...@times-components/ad@2.4.4) (2019-01-25)
 
 **Note:** Version bump only for package @times-components/ad

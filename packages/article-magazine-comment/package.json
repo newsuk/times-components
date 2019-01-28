@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-comment",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",
@@ -59,13 +59,13 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/ad": "2.4.4",
+    "@times-components/ad": "2.4.5",
     "@times-components/article-byline": "3.1.4",
     "@times-components/article-error": "0.2.4",
     "@times-components/article-flag": "2.4.1",
     "@times-components/article-label": "2.3.4",
     "@times-components/article-lead-asset": "0.3.3",
-    "@times-components/article-skeleton": "0.6.3",
+    "@times-components/article-skeleton": "0.6.4",
     "@times-components/caption": "2.3.4",
     "@times-components/context": "0.6.4",
     "@times-components/date-publication": "0.20.4",
