@@ -4,7 +4,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}
@@ -186,7 +186,7 @@ exports[`2. an article with no content 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}
@@ -273,7 +273,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}

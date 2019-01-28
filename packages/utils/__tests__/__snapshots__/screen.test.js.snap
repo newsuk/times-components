@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`screen utilities convertToPixels should convert a number to pixels using pixel density 1`] = `100`;
+
 exports[`screen utilities screenWidth should return the device screen width 1`] = `750`;
 
 exports[`screen utilities screenWidth should return the tablet width as screen width minus the needed padding 1`] = `640`;

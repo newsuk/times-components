@@ -1,5 +1,4 @@
 import React from "react";
-import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Image from "../src";
 import Placeholder from "../src/placeholder";
@@ -36,7 +35,7 @@ export default (renderComponent, platformTests = []) => {
     {
       name: "handle layout change",
       test() {
-        const testInstance = TestRenderer.create(<Image {...props} />);
+        const testInstance = renderComponent(<Image {...props} />);
 
         const placeholder = testInstance.root.find(
           node => node.type === Placeholder

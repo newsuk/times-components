@@ -3,7 +3,7 @@ import { Image, View } from "react-native";
 import {
   addMissingProtocol,
   normaliseWidth,
-  screenWidthInPixels
+  convertToPixels
 } from "@times-components/utils";
 import appendSize from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
@@ -15,10 +15,24 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false,
-      width: normaliseWidth(screenWidthInPixels())
+      imageRes: null,
+      isLoaded: false
     };
     this.handleLoad = this.handleLoad.bind(this);
+    this.onImageLayout = this.onImageLayout.bind(this);
+  }
+
+  onImageLayout({
+    nativeEvent: {
+      layout: { width }
+    }
+  }) {
+    const { highResSize } = this.props;
+    const imageRes = normaliseWidth(
+      convertToPixels(highResSize ? Math.min(width, highResSize) : width)
+    );
+
+    this.setState({ imageRes });
   }
 
   handleLoad() {
@@ -26,27 +40,32 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { aspectRatio, highResSize, style, uri } = this.props;
-    const { isLoaded, width } = this.state;
+    const { aspectRatio, style, uri } = this.props;
+    const { isLoaded, imageRes } = this.state;
 
     const isDataImageUri = uri && uri.indexOf("data:") > -1;
 
     const srcUri = isDataImageUri
       ? uri
-      : addMissingProtocol(appendSize(uri, "resize", highResSize || width));
+      : addMissingProtocol(appendSize(uri, "resize", imageRes));
 
     const props = {
       onLoad: this.handleLoad,
-      source: srcUri
-        ? {
-            uri: srcUri
-          }
-        : null,
+      source:
+        srcUri && imageRes
+          ? {
+              uri: srcUri
+            }
+          : null,
       style: styles.imageBackground
     };
 
     return (
-      <View aspectRatio={aspectRatio} style={style}>
+      <View
+        aspectRatio={aspectRatio}
+        onLayout={this.onImageLayout}
+        style={style}
+      >
         {isLoaded ? null : <Placeholder />}
         <Image {...props} />
       </View>

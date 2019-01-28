@@ -36,7 +36,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             />
           }
           uri="https://crop169.io"
-          width={1440}
+          width={1670}
         />
       </View>
       <View>
@@ -182,7 +182,7 @@ exports[`4. an article with ads 1`] = `
             />
           }
           uri="https://crop169.io"
-          width={1440}
+          width={1670}
         />
       </View>
       <View>
