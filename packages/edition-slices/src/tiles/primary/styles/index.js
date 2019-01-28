@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   summaryContainer: {
-    marginHorizontal: spacing(2)
+    marginHorizontal: spacing(2),
+    marginVertical: spacing(1)
   }
 });
 

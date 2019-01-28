@@ -6,6 +6,7 @@ exports[`1. lead one full width slice 1`] = `
     style={
       Object {
         "marginHorizontal": 10,
+        "marginVertical": 5,
       }
     }
   >
@@ -67,9 +68,6 @@ exports[`2. lead one and one slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
         "width": "100%",
       }
     }
@@ -86,6 +84,7 @@ exports[`2. lead one and one slice 1`] = `
           style={
             Object {
               "marginHorizontal": 10,
+              "marginVertical": 5,
             }
           }
         >
@@ -145,9 +144,6 @@ exports[`2. lead one and one slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
         "width": "100%",
       }
     }
@@ -164,6 +160,7 @@ exports[`2. lead one and one slice 1`] = `
           style={
             Object {
               "marginHorizontal": 10,
+              "marginVertical": 5,
             }
           }
         >
@@ -216,6 +213,7 @@ exports[`2. lead one and one slice 1`] = `
               "lineHeight": 20,
               "marginBottom": 10,
               "marginHorizontal": 10,
+              "marginVertical": 5,
             }
           }
         >
