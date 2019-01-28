@@ -7,5 +7,4 @@ export { acceptedWidths, normaliseWidth, screenWidth };
 export const convertToPixels = points =>
   PixelRatio.getPixelSizeForLayoutSize(points);
 
-export const screenWidthInPixels = () =>
-  convertToPixels(screenWidth());
+export const screenWidthInPixels = () => convertToPixels(screenWidth());

@@ -41,6 +41,6 @@ describe("screen utilities", () => {
   context("convertToPixels", () => {
     it("should convert a number to pixels using pixel density", () => {
       expect(convertToPixels(50)).toMatchSnapshot();
-    })
-  })
+    });
+  });
 });
