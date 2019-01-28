@@ -8,6 +8,12 @@ exports[`1. article summary component with a single paragraph 1`] = `
       title="Test label"
     />
   </div>
+  <h3
+    aria-level="3"
+    role="heading"
+  >
+    Test Headline
+  </h3>
   <ArticleFlags
     flags={
       Array [
@@ -16,12 +22,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ]
     }
   />
-  <h3
-    aria-level="3"
-    role="heading"
-  >
-    Test Headline
-  </h3>
   <div>
     <span>
       
