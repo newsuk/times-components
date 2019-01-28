@@ -1,5 +1,7 @@
 import { Markup } from "./types";
 
+const paragraphText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 const markupTypes: Markup = {
   paragraph: {
     name: "paragraph",
@@ -8,8 +10,7 @@ const markupTypes: Markup = {
       {
         name: "text",
         attributes: {
-          value:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+          value: paragraphText
         },
         children: []
       }
@@ -28,6 +29,84 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value: "inline markup"
+        },
+        children: []
+      }
+    ]
+  },
+  summary105: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 125)
+        },
+        children: []
+      }
+    ]
+  },
+  summary125: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 125)
+        },
+        children: []
+      }
+    ]
+  },
+  summary145: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 145)
+        },
+        children: []
+      }
+    ]
+  },
+  summary160: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 160)
+        },
+        children: []
+      }
+    ]
+  },
+  summary175: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 175)
+        },
+        children: []
+      }
+    ]
+  },
+  summary225: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value: paragraphText.substring(0, 225)
         },
         children: []
       }
@@ -73,6 +152,11 @@ class MockMarkup {
 
   addInlines(length: number = 1) {
     this.markup = generateMarkup(this.markup, markupTypes.inline.name, length);
+    return this;
+  }
+
+  addSummary(summaryName: string) {
+    this.markup = generateMarkup(this.markup, summaryName, 1);
     return this;
   }
 

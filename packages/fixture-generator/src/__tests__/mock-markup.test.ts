@@ -35,4 +35,10 @@ describe("get markup", () => {
       { name: "ad" }
     ])
   });
+
+  it("should be able to generate summaries", () => {
+    const mockMarkup = new MockMarkup().addSummary("summary125").get();
+    expect(mockMarkup).toMatchObject([ { name: "paragraph" } ]); 
+    expect(mockMarkup[0].children[0].attributes.value.length).toBe(125);
+  });
 });
