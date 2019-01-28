@@ -1,6 +1,9 @@
 import React from "react";
-import { mockLeadOneFullWidthSlice } from "@times-components/fixture-generator";
-import { PrimaryTile } from "./src/tiles";
+import {
+  mockLeadOneFullWidthSlice,
+  mockSecondaryOneSlice
+} from "@times-components/fixture-generator";
+import { PrimaryTile, SecondaryTile } from "./src/tiles";
 
 export default {
   children: [
@@ -18,6 +21,14 @@ export default {
         return <PrimaryTile tile={slice.lead} withSummaryMargins />;
       },
       name: "Primary (without image, with summary margins)",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryOneSlice();
+        return <SecondaryTile tile={slice.secondary} />;
+      },
+      name: "Secondary",
       type: "story"
     }
   ],

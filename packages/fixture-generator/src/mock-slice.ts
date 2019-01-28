@@ -3,6 +3,7 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
+  SecondaryOneSlice,
   Tile
 } from "./types";
 import MockArticle from "./mock-article";
@@ -47,6 +48,14 @@ function mockLeadOneAndTwoSlice(): LeadOneAndTwoSlice {
   };
 }
 
+function mockSecondaryOneSlice(): SecondaryOneSlice {
+  const tiles = getTiles(1);
+  return <SecondaryOneSlice>{
+    secondary: tiles[0],
+    items: tiles
+  };
+}
+
 function mockArticleSlice(count: number): ArticleSlice {
   return { items: getTiles(count) };
 }
@@ -55,5 +64,6 @@ export default mockArticleSlice;
 export {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
-  mockLeadOneAndTwoSlice
+  mockLeadOneAndTwoSlice,
+  mockSecondaryOneSlice
 };

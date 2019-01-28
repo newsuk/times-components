@@ -1,9 +1,14 @@
 import React from "react";
 import {
   mockLeadOneFullWidthSlice,
-  mockLeadOneAndOneSlice
+  mockLeadOneAndOneSlice,
+  mockSecondaryOneSlice
 } from "@times-components/fixture-generator";
-import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "./src/slices";
+import {
+  LeadOneFullWidthSlice,
+  LeadOneAndOneSlice,
+  SecondaryOneSlice
+} from "./src/slices";
 
 export default {
   children: [
@@ -21,6 +26,14 @@ export default {
         return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
       },
       name: "Lead One And One",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryOneSlice();
+        return <SecondaryOneSlice secondary={slice.secondary} />;
+      },
+      name: "Secondary One",
       type: "story"
     }
   ],
