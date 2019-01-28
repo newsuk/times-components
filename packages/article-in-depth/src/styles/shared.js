@@ -1,4 +1,7 @@
-import styleguide, { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import styleguide, {
+  tabletWidth,
+  tabletWidthMax
+} from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
@@ -19,7 +22,7 @@ const sharedStyles = {
   },
   containerTablet: {
     alignSelf: "center",
-    maxWidth: tabletWidthMax,
+    maxWidth: tabletWidthMax
   },
   datePublication: {
     ...fontFactory({
@@ -72,11 +75,11 @@ const sharedStyles = {
     width: "100%"
   },
   seperator: {
-    borderRightWidth: 1,
     borderRightColor: colours.functional.keyline,
+    borderRightWidth: 1,
     height: spacing(3),
     marginRight: spacing(2),
-    paddingLeft: spacing(2),
+    paddingLeft: spacing(2)
   },
   standFirst: {
     ...fontFactory({

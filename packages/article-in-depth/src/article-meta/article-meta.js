@@ -28,9 +28,14 @@ const ArticleMeta = ({
         )}
       </Context.Consumer>
     </View>
-    {isTablet && <View style={styles.seperator}></View>}
+    {isTablet && <View style={styles.seperator} />}
     <View style={styles.meta}>
-      <Text style={[styles.datePublication, isTablet && styles.datePulicationTablet]}>
+      <Text
+        style={[
+          styles.datePublication,
+          isTablet && styles.datePulicationTablet
+        ]}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </Text>
     </View>

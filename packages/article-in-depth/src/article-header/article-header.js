@@ -2,7 +2,6 @@ import React from "react";
 import { Text, View } from "react-native";
 import { ArticleFlags } from "@times-components/article-flag";
 import Context from "@times-components/context";
-import { ResponsiveContext } from "@times-components/responsive";
 import { fontFactory } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
@@ -34,7 +33,7 @@ const ArticleHeader = ({
           style={[
             styles.container,
             { backgroundColor: backgroundColour, width: "100%" },
-            isTablet && styles.containerTablet,
+            isTablet && styles.containerTablet
           ]}
         >
           <Label color={textColour} isVideo={hasVideo} label={label} />
@@ -42,7 +41,8 @@ const ArticleHeader = ({
             style={[
               styles.articleHeadline,
               // headlineFont ? { fontFamily: fonts[headlineFont] } : null
-              { color: textColour,
+              {
+                color: textColour,
                 ...fontFactory({
                   font: headlineFont || "headline",
                   fontSize: isTablet ? "pageHeadline" : "headline"

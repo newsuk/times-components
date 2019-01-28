@@ -43,39 +43,46 @@ class ArticleInDepth extends Component {
     } = article;
     return (
       <ResponsiveContext.Consumer>
-        {({ isTablet}) =>
-        <Fragment>
-          <ArticleHeader
-            backgroundColour={backgroundColour}
-            flags={flags}
-            hasVideo={hasVideo}
-            headline={getHeadline(headline, shortHeadline)}
-            isTablet={isTablet}
-            label={label}
-            standfirst={standfirst}
-            textColour={textColour}
-          />
-          <ArticleLeadAsset
-            {...getLeadAsset(article)}
-            getImageCrop={getStandardTemplateCrop}
-            onVideoPress={onVideoPress}
-            renderModalCaption={({ caption }) => <CentredCaption {...caption} />}
-            style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
-            width={width}
-          />
-        <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet ]}>
-          <Meta
-            backgroundColour={backgroundColour}
-            byline={byline}
-            isTablet={isTablet}
-            onAuthorPress={onAuthorPress}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-            textColour={textColour}
-          />
-        </View>
-        </Fragment>
-        }
+        {({ isTablet }) => (
+          <Fragment>
+            <ArticleHeader
+              backgroundColour={backgroundColour}
+              flags={flags}
+              hasVideo={hasVideo}
+              headline={getHeadline(headline, shortHeadline)}
+              isTablet={isTablet}
+              label={label}
+              standfirst={standfirst}
+              textColour={textColour}
+            />
+            <ArticleLeadAsset
+              {...getLeadAsset(article)}
+              getImageCrop={getStandardTemplateCrop}
+              onVideoPress={onVideoPress}
+              renderModalCaption={({ caption }) => (
+                <CentredCaption {...caption} />
+              )}
+              style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
+              width={width}
+            />
+            <View
+              style={[
+                styles.metaContainer,
+                isTablet && styles.metaContainerTablet
+              ]}
+            >
+              <Meta
+                backgroundColour={backgroundColour}
+                byline={byline}
+                isTablet={isTablet}
+                onAuthorPress={onAuthorPress}
+                publicationName={publicationName}
+                publishedTime={publishedTime}
+                textColour={textColour}
+              />
+            </View>
+          </Fragment>
+        )}
       </ResponsiveContext.Consumer>
     );
   }
