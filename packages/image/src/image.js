@@ -28,8 +28,8 @@ class TimesImage extends Component {
     }
   }) {
     const { highResSize } = this.props;
-    const imageRes = convertToPixels(
-      normaliseWidth(highResSize ? Math.min(width, highResSize) : width)
+    const imageRes = normaliseWidth(
+      convertToPixels(highResSize ? Math.min(width, highResSize) : width)
     );
 
     this.setState({ imageRes });
