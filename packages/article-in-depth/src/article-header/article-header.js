@@ -40,7 +40,6 @@ const ArticleHeader = ({
           <Text
             style={[
               styles.articleHeadline,
-              // headlineFont ? { fontFamily: fonts[headlineFont] } : null
               {
                 color: textColour,
                 ...fontFactory({
