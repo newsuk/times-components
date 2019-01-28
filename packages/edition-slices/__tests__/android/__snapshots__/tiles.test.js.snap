@@ -8,6 +8,12 @@ exports[`1. primary tile 1`] = `
         ROYALS
       </Text>
     </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -15,12 +21,6 @@ exports[`1. primary tile 1`] = `
         ]
       }
     />
-    <Text
-      accessibilityRole="heading"
-      aria-level="3"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
   </View>
   <View>
     <Image
@@ -39,6 +39,12 @@ exports[`2. primary tiles without image 1`] = `
         ROYALS
       </Text>
     </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -46,12 +52,6 @@ exports[`2. primary tiles without image 1`] = `
         ]
       }
     />
-    <Text
-      accessibilityRole="heading"
-      aria-level="3"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
   </View>
   <Text>
     <Text>
