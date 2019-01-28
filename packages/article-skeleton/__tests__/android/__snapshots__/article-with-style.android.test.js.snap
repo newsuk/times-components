@@ -147,7 +147,9 @@ exports[`2. an article with no content 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View>
+        <RelatedArticles />
+      </View>
     </View>
     <View>
       <ArticleComments />

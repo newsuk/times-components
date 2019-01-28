@@ -250,7 +250,17 @@ exports[`full article with style 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
@@ -513,7 +523,17 @@ exports[`full article with style in the culture magazine 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
@@ -776,7 +796,17 @@ exports[`full article with style in the style magazine 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
@@ -1039,7 +1069,17 @@ exports[`full article with style in the sunday times magazine 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
