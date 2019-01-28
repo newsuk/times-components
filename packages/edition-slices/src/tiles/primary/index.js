@@ -24,6 +24,7 @@ const renderSummaryContent = (summary, withMargins) => (
 );
 
 const PrimaryTile = ({
+  imagePosition,
   tile: {
     article: {
       flags,
