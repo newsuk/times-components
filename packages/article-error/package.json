@@ -14,7 +14,9 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -57,9 +59,11 @@
   "dependencies": {
     "@times-components/button": "2.3.4",
     "@times-components/styleguide": "3.17.1",
-    "prop-types": "15.6.2"
+    "prop-types": "15.6.2",
+    "snyk": "^1.123.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
