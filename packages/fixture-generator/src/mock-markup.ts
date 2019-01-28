@@ -9,7 +9,7 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "Critically, he said this would not necessarily require the withdrawal agreement to be reopened but could instead be done by a legally binding codicil. He added that should his amendment be passed in a Commons vote tomorrow it would give “enormous firepower” to the prime minister when she returned to Brussels."
         },
         children: []
       }
@@ -28,6 +28,90 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value: "inline markup"
+        },
+        children: []
+      }
+    ]
+  },
+  summary105: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught"
+        },
+        children: []
+      }
+    ]
+  },
+  summary125: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty."
+        },
+        children: []
+      }
+    ]
+  },
+  summary145: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty."
+        },
+        children: []
+      }
+    ]
+  },
+  summary160: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting"
+        },
+        children: []
+      }
+    ]
+  },
+  summary175: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take"
+        },
+        children: []
+      }
+    ]
+  },
+  summary225: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take control of the Brexit process themselves. To do this a"
         },
         children: []
       }
@@ -73,6 +157,11 @@ class MockMarkup {
 
   addInlines(length: number = 1) {
     this.markup = generateMarkup(this.markup, markupTypes.inline.name, length);
+    return this;
+  }
+
+  addSummary(summaryName: string) {
+    this.markup = generateMarkup(this.markup, summaryName, 1);
     return this;
   }
 

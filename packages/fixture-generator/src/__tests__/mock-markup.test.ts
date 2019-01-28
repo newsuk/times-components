@@ -7,17 +7,17 @@ describe("get markup", () => {
 
   it("should be able to generate paragraph of markup", () => {
     const mockMarkup = new MockMarkup().addParagraphs().get();
-    expect(mockMarkup).toMatchObject([ { name: "paragraph" } ]); 
+    expect(mockMarkup).toMatchObject([{ name: "paragraph" }]);
   });
 
   it("should be able to generate markup with ads", () => {
     const mockMarkup = new MockMarkup().addAds().get();
-    expect(mockMarkup).toMatchObject([ { name: "ad" } ]); 
+    expect(mockMarkup).toMatchObject([{ name: "ad" }]);
   });
 
   it("should be able to generate inline of markup", () => {
     const mockMarkup = new MockMarkup().addInlines().get();
-    expect(mockMarkup).toMatchObject([ { name: "inline" } ]); 
+    expect(mockMarkup).toMatchObject([{ name: "inline" }]);
   });
 
   it("should generate large markup shapes", () => {
@@ -34,5 +34,11 @@ describe("get markup", () => {
       { name: "paragraph" },
       { name: "ad" }
     ])
+  });
+
+  it("should be able to generate summaries", () => {
+    const mockMarkup = new MockMarkup().addSummary("summary125").get();
+    expect(mockMarkup).toMatchObject([{ name: "paragraph" }]);
+    expect(mockMarkup[0].children[0].attributes.value.length).toBeLessThanOrEqual(125);
   });
 });
