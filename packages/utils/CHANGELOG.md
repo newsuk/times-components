@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/utils@4.1.3...@times-components/utils@4.2.0) (2019-01-28)
+
+
+### Features
+
+* use image layout to decide which res image to request ([#1624](https://github.com/newsuk/times-components/issues/1624)) ([f94beea](https://github.com/newsuk/times-components/commit/f94beea))
+
+
+
+
+
 ## [4.1.3](https://github.com/newsuk/times-components/compare/@times-components/utils@4.1.2...@times-components/utils@4.1.3) (2019-01-25)
 
 **Note:** Version bump only for package @times-components/utils

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.1.0...@times-components/fixture-generator@0.2.0) (2019-01-28)
+
+
+### Features
+
+* Add all summaries to article fixtures ([#1634](https://github.com/newsuk/times-components/issues/1634)) ([c321101](https://github.com/newsuk/times-components/commit/c321101))
+
+
+
+
+
 # [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.0.13...@times-components/fixture-generator@0.1.0) (2019-01-25)
 
 

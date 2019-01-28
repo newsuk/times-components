@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.6.4...@times-components/article-skeleton@0.7.0) (2019-01-28)
+
+
+### Features
+
+* use image layout to decide which res image to request ([#1624](https://github.com/newsuk/times-components/issues/1624)) ([f94beea](https://github.com/newsuk/times-components/commit/f94beea))
+
+
+
+
+
 ## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.6.3...@times-components/article-skeleton@0.6.4) (2019-01-28)
 
 **Note:** Version bump only for package @times-components/article-skeleton

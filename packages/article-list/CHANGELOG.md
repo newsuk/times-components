@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.3.5...@times-components/article-list@6.4.0) (2019-01-28)
+
+
+### Features
+
+* use image layout to decide which res image to request ([#1624](https://github.com/newsuk/times-components/issues/1624)) ([f94beea](https://github.com/newsuk/times-components/commit/f94beea))
+
+
+
+
+
 ## [6.3.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.3.4...@times-components/article-list@6.3.5) (2019-01-28)
 
 **Note:** Version bump only for package @times-components/article-list
