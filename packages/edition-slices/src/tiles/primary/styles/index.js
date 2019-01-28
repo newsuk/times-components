@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     marginBottom: spacing(2),
     width: "100%"
+  },
+  summaryContainer: {
+    marginHorizontal: spacing(2)
   }
 });
 
