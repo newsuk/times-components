@@ -4,7 +4,7 @@ exports[`1. a secondary image 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}
@@ -51,7 +51,7 @@ exports[`2. an inline image 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}

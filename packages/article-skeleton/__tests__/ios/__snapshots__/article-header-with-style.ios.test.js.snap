@@ -4,7 +4,7 @@ exports[`1. article with header 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <Header
-      width={1440}
+      width={1670}
     />
   }
   initialNumToRender={10}
