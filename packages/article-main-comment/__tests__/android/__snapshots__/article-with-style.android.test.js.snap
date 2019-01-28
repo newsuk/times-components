@@ -322,8 +322,8 @@ exports[`tablet full article with style 1`] = `
               Object {
                 "color": "#1D1D1B",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 30,
-                "lineHeight": 35,
+                "fontSize": 45,
+                "lineHeight": 45,
                 "marginBottom": 10,
                 "textAlign": "center",
               }

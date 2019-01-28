@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { ArticleFlags } from "@times-components/article-flag";
-import { fonts } from "@times-components/styleguide";
+import { fontFactory } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
@@ -33,7 +33,12 @@ const ArticleHeader = ({
         <Text
           style={[
             styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            {
+              ...fontFactory({
+                font: headlineFont || "headline",
+                fontSize: isTablet ? "pageHeadline" : "headline"
+              })
+            }
           ]}
         >
           {headline}
