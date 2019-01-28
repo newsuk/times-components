@@ -6,16 +6,16 @@ import { PrimaryTile } from "../../tiles";
 const SecondaryFour = ({ secondary1, secondary2, secondary3, secondary4 }) => (
   <SecondaryFourSlice
     renderSecondary1={() => (
-      <PrimaryTile tile={secondary1} withImagePosition="top" />
+      <PrimaryTile tile={secondary1} imagePosition="top" />
     )}
     renderSecondary2={() => (
-      <PrimaryTile tile={secondary2} withImagePosition="top" />
+      <PrimaryTile tile={secondary2} imagePosition="top" />
     )}
     renderSecondary3={() => (
-      <PrimaryTile tile={secondary3} withImagePosition="top" />
+      <PrimaryTile tile={secondary3} imagePosition="top" />
     )}
     renderSecondary4={() => (
-      <PrimaryTile tile={secondary4} withImagePosition="top" />
+      <PrimaryTile tile={secondary4} imagePosition="top" />
     )}
   />
 );

@@ -9,26 +9,26 @@ const SecondaryFourSlice = ({
   renderSecondary3,
   renderSecondary4
 }) => {
-  const renderSecondaryRowOne = [renderSecondary1(), renderSecondary2()];
-  const renderSecondaryRowTwo = [renderSecondary3(), renderSecondary4()];
+  const renderRowOne = [renderSecondary1(), renderSecondary2()];
+  const renderRowTwo = [renderSecondary3(), renderSecondary4()];
   return (
     <View style={styles.container}>
       <View style={styles.itemContainer}>
-        <View key={renderSecondaryRowOne[0].props.id} style={styles.item}>
-          {renderSecondaryRowOne[0]}
+        <View key={renderRowOne[0].props.id} style={styles.item}>
+          {renderRowOne[0]}
         </View>
         <View style={styles.itemSeparator} />
-        <View key={renderSecondaryRowOne[1].props.id} style={styles.item}>
-          {renderSecondaryRowOne[1]}
+        <View key={renderRowOne[1].props.id} style={styles.item}>
+          {renderRowOne[1]}
         </View>
       </View>
       <View style={styles.itemContainer}>
-        <View key={renderSecondaryRowTwo[0].props.id} style={styles.item}>
-          {renderSecondaryRowTwo[0]}
+        <View key={renderRowTwo[0].props.id} style={styles.item}>
+          {renderRowTwo[0]}
         </View>
         <View style={styles.itemSeparator} />
-        <View key={renderSecondaryRowTwo[1].props.id} style={styles.item}>
-          {renderSecondaryRowTwo[1]}
+        <View key={renderRowTwo[1].props.id} style={styles.item}>
+          {renderRowTwo[1]}
         </View>
       </View>
     </View>
