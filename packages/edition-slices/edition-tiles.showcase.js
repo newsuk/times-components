@@ -7,17 +7,17 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <PrimaryTile tile={slice.lead} withImage />;
+        return <PrimaryTile tile={slice.lead} withImage withSummaryMargins />;
       },
-      name: "Primary (with image)",
+      name: "Primary (with image, with summary margins)",
       type: "story"
     },
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <PrimaryTile tile={slice.lead} />;
+        return <PrimaryTile tile={slice.lead} withSummaryMargins />;
       },
-      name: "Primary (without image)",
+      name: "Primary (without image, with summary margins)",
       type: "story"
     }
   ],
