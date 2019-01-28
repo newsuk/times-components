@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleFlag, {
+import {
   ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,
