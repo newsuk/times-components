@@ -9,6 +9,9 @@ const styles = {
     borderBottomWidth: 1,
     borderStyle: "solid",
     width: "100%"
+  },
+  itemContainerWithoutBorders: {
+    width: "100%"
   }
 };
 
