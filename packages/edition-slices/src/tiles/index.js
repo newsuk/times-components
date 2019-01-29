@@ -1,4 +1,2 @@
-import PrimaryTile from "./primary";
-
-// eslint-disable-next-line import/prefer-default-export
-export { PrimaryTile };
+export { default as PrimaryTile } from "./primary";
+export { default as SecondaryTile } from "./secondary";

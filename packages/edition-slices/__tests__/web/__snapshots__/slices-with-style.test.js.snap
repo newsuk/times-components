@@ -254,3 +254,115 @@ exports[`2. lead one and one slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. secondary one slice 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S2"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="S3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        The 
+        <span
+          className="S4"
+        >
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
+      </span>
+    </div>
+  </div>
+  <div
+    className="S6"
+  >
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;

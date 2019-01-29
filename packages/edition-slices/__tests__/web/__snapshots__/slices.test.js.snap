@@ -107,3 +107,45 @@ exports[`2. lead one and one slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. secondary one slice 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <div>
+      <span>
+        
+        The 
+        <span>
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
+      </span>
+    </div>
+  </div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</div>
+`;
