@@ -31,7 +31,14 @@ const ArticleHeader = ({
         <View style={[styles.container, isTablet && styles.containerTablet]}>
           <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
           <Label isVideo={hasVideo} label={label} />
-          <Text style={styles.articleHeadline}>{headline}</Text>
+          <Text
+            style={[
+              styles.articleHeadline,
+              isTablet && styles.articleHeadlineTablet
+            ]}
+          >
+            {headline}
+          </Text>
           <View style={styles.flags}>
             <ArticleFlags flags={flags} />
           </View>

@@ -31,8 +31,8 @@ exports[`full article with style in the culture magazine 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "Flama-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
+              "fontSize": 40,
+              "lineHeight": 42,
               "marginBottom": 10,
               "textAlign": "center",
             }
@@ -301,8 +301,8 @@ exports[`full article with style in the style magazine 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "CenturyGothic-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
+              "fontSize": 40,
+              "lineHeight": 42,
               "marginBottom": 10,
               "textAlign": "center",
             }
@@ -571,8 +571,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "Tiempos-Headline-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
+              "fontSize": 40,
+              "lineHeight": 42,
               "marginBottom": 10,
               "textAlign": "center",
             }
@@ -1087,8 +1087,8 @@ exports[`tablet full article with style 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
+              "fontSize": 40,
+              "lineHeight": 40,
               "marginBottom": 10,
               "textAlign": "center",
             }

@@ -11,6 +11,12 @@ const sharedStyles = {
     marginBottom: spacing(2),
     textAlign: "center"
   },
+  articleHeadlineTablet: {
+    ...fontFactory({
+      font: "headline",
+      fontSize: "articleHeadline"
+    })
+  },
   authorImage: {
     marginBottom: spacing(5)
   },
