@@ -2,7 +2,14 @@
 
 exports[`1. lead one full width slice 1`] = `
 <View>
-  <View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 10,
+        "marginVertical": 5,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -26,21 +33,21 @@ exports[`1. lead one full width slice 1`] = `
         ROYALS
       </Text>
     </View>
-    <ArticleFlags />
     <Text
       style={
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 32,
           "fontWeight": "400",
-          "lineHeight": 27,
+          "lineHeight": 32,
           "marginBottom": 5,
         }
       }
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
+    <ArticleFlags />
   </View>
   <View
     style={
@@ -61,9 +68,6 @@ exports[`2. lead one and one slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
         "width": "100%",
       }
     }
@@ -76,7 +80,14 @@ exports[`2. lead one and one slice 1`] = `
       }
     >
       <View>
-        <View>
+        <View
+          style={
+            Object {
+              "marginHorizontal": 10,
+              "marginVertical": 5,
+            }
+          }
+        >
           <View
             style={
               Object {
@@ -100,21 +111,21 @@ exports[`2. lead one and one slice 1`] = `
               ROYALS
             </Text>
           </View>
-          <ArticleFlags />
           <Text
             style={
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
+                "fontSize": 32,
                 "fontWeight": "400",
-                "lineHeight": 27,
+                "lineHeight": 32,
                 "marginBottom": 5,
               }
             }
           >
             Prince Philip ‘could be prosecuted’ over car crash
           </Text>
+          <ArticleFlags />
         </View>
         <View
           style={
@@ -133,9 +144,6 @@ exports[`2. lead one and one slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
         "width": "100%",
       }
     }
@@ -148,7 +156,14 @@ exports[`2. lead one and one slice 1`] = `
       }
     >
       <View>
-        <View>
+        <View
+          style={
+            Object {
+              "marginHorizontal": 10,
+              "marginVertical": 5,
+            }
+          }
+        >
           <View
             style={
               Object {
@@ -172,21 +187,21 @@ exports[`2. lead one and one slice 1`] = `
               CYBER CRIME
             </Text>
           </View>
-          <ArticleFlags />
           <Text
             style={
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
+                "fontSize": 32,
                 "fontWeight": "400",
-                "lineHeight": 27,
+                "lineHeight": 32,
                 "marginBottom": 5,
               }
             }
           >
             GCHQ gives girls free cyber-classes to tackle gender gap
           </Text>
+          <ArticleFlags />
         </View>
         <Text
           style={
@@ -197,6 +212,8 @@ exports[`2. lead one and one slice 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 10,
+              "marginHorizontal": 10,
+              "marginVertical": 5,
             }
           }
         >

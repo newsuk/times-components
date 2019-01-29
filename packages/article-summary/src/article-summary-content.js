@@ -5,21 +5,23 @@ import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
 import styles from "./styles";
 
-const ArticleSummaryContent = ({ ast, className }) =>
+const ArticleSummaryContent = ({ ast, className, style }) =>
   ast.length > 0 ? (
-    <Text className={className} style={styles.text}>
+    <Text className={className} style={[styles.text, style]}>
       {renderAst(ast)}
     </Text>
   ) : null;
 
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType),
-  className: PropTypes.string
+  className: PropTypes.string,
+  style: PropTypes.shape({})
 };
 
 ArticleSummaryContent.defaultProps = {
   ast: [],
-  className: ""
+  className: "",
+  style: null
 };
 
 export default ArticleSummaryContent;

@@ -17,13 +17,17 @@ exports[`1. lead one full width slice 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 32px;
   margin-bottom: 5px;
 }
 
 .S4 {
+  margin-bottom: 5px;
+}
+
+.S5 {
   margin-bottom: 10px;
 }
 
@@ -36,7 +40,7 @@ exports[`1. lead one full width slice 1`] = `
   className="S2"
 >
   <div
-    className="S2"
+    className="S4"
   >
     <div
       className="S2"
@@ -47,13 +51,6 @@ exports[`1. lead one full width slice 1`] = `
         ROYALS
       </div>
     </div>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
     <h3
       aria-level="3"
       className="S3"
@@ -61,9 +58,16 @@ exports[`1. lead one full width slice 1`] = `
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
   </div>
   <div
-    className="S4"
+    className="S5"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -90,17 +94,21 @@ exports[`2. lead one and one slice 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 32px;
   margin-bottom: 5px;
 }
 
 .S4 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .S5 {
+  margin-bottom: 10px;
+}
+
+.S6 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -109,7 +117,7 @@ exports[`2. lead one and one slice 1`] = `
   margin-bottom: 0px;
 }
 
-.S6 {
+.S7 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -147,7 +155,7 @@ exports[`2. lead one and one slice 1`] = `
           className="S2"
         >
           <div
-            className="S2"
+            className="S4"
           >
             <div
               className="S2"
@@ -158,13 +166,6 @@ exports[`2. lead one and one slice 1`] = `
                 ROYALS
               </div>
             </div>
-            <ArticleFlags
-              flags={
-                Array [
-                  "NEW",
-                ]
-              }
-            />
             <h3
               aria-level="3"
               className="S3"
@@ -172,9 +173,16 @@ exports[`2. lead one and one slice 1`] = `
             >
               Prince Philip ‘could be prosecuted’ over car crash
             </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "NEW",
+                ]
+              }
+            />
           </div>
           <div
-            className="S4"
+            className="S5"
           >
             <Image
               aspectRatio={1.7777777777777777}
@@ -196,7 +204,7 @@ exports[`2. lead one and one slice 1`] = `
             className="S2"
           >
             <div
-              className="S2"
+              className="S4"
             >
               <div
                 className="S2"
@@ -207,13 +215,6 @@ exports[`2. lead one and one slice 1`] = `
                   CYBER CRIME
                 </div>
               </div>
-              <ArticleFlags
-                flags={
-                  Array [
-                    "UPDATED",
-                  ]
-                }
-              />
               <h3
                 aria-level="3"
                 className="S3"
@@ -221,18 +222,25 @@ exports[`2. lead one and one slice 1`] = `
               >
                 GCHQ gives girls free cyber-classes to tackle gender gap
               </h3>
+              <ArticleFlags
+                flags={
+                  Array [
+                    "UPDATED",
+                  ]
+                }
+              />
             </div>
             <div
-              className="S6"
+              className="S7"
             >
               <span
-                className="S5"
+                className="S6"
               >
                 
                 GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
               </span>
               <span
-                className="S5"
+                className="S6"
               >
                  
                 The intelligence

@@ -26,21 +26,21 @@ exports[`1. primary tile 1`] = `
         ROYALS
       </Text>
     </View>
-    <ArticleFlags />
     <Text
       style={
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 32,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 32,
           "marginBottom": 5,
         }
       }
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
+    <ArticleFlags />
   </View>
   <View
     style={
@@ -82,21 +82,21 @@ exports[`2. primary tiles without image 1`] = `
         ROYALS
       </Text>
     </View>
-    <ArticleFlags />
     <Text
       style={
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 32,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 32,
           "marginBottom": 5,
         }
       }
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
+    <ArticleFlags />
   </View>
   <Text
     style={

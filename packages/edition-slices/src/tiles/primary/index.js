@@ -16,7 +16,12 @@ const renderImage = imageUri => (
   </View>
 );
 
-const renderSummaryContent = summary => <ArticleSummaryContent ast={summary} />;
+const renderSummaryContent = (summary, withMargins) => (
+  <ArticleSummaryContent
+    ast={summary}
+    style={withMargins && styles.summaryContainer}
+  />
+);
 
 const PrimaryTile = ({
   tile: {
@@ -31,13 +36,17 @@ const PrimaryTile = ({
       summary125
     }
   },
-  withImage
+  withImage,
+  withSummaryMargins
 }) => (
   <View>
     <ArticleSummary
       flags={() => <ArticleFlags flags={flags} />}
       headline={() => (
-        <ArticleSummaryHeadline headline={headline || shortHeadline} />
+        <ArticleSummaryHeadline
+          headline={headline || shortHeadline}
+          style={styles.headline}
+        />
       )}
       label={label}
       labelProps={{
@@ -45,20 +54,23 @@ const PrimaryTile = ({
         isVideo: hasVideo,
         title: label
       }}
+      style={withSummaryMargins && styles.summaryContainer}
     />
     {withImage
       ? renderImage(leadAsset.crop169.url)
-      : renderSummaryContent(summary125)}
+      : renderSummaryContent(summary125, withSummaryMargins)}
   </View>
 );
 
 PrimaryTile.propTypes = {
   tile: PropTypes.shape({}).isRequired,
-  withImage: PropTypes.bool
+  withImage: PropTypes.bool,
+  withSummaryMargins: PropTypes.bool
 };
 
 PrimaryTile.defaultProps = {
-  withImage: false
+  withImage: false,
+  withSummaryMargins: false
 };
 
 export default PrimaryTile;

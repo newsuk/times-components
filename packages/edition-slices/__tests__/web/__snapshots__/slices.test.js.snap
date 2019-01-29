@@ -8,6 +8,12 @@ exports[`1. lead one full width slice 1`] = `
         ROYALS
       </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -15,12 +21,6 @@ exports[`1. lead one full width slice 1`] = `
         ]
       }
     />
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
   </div>
   <div>
     <Image
@@ -43,6 +43,12 @@ exports[`2. lead one and one slice 1`] = `
                 ROYALS
               </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Prince Philip ‘could be prosecuted’ over car crash
+            </h3>
             <ArticleFlags
               flags={
                 Array [
@@ -50,12 +56,6 @@ exports[`2. lead one and one slice 1`] = `
                 ]
               }
             />
-            <h3
-              aria-level="3"
-              role="heading"
-            >
-              Prince Philip ‘could be prosecuted’ over car crash
-            </h3>
           </div>
           <div>
             <Image
@@ -75,6 +75,12 @@ exports[`2. lead one and one slice 1`] = `
                   CYBER CRIME
                 </div>
               </div>
+              <h3
+                aria-level="3"
+                role="heading"
+              >
+                GCHQ gives girls free cyber-classes to tackle gender gap
+              </h3>
               <ArticleFlags
                 flags={
                   Array [
@@ -82,12 +88,6 @@ exports[`2. lead one and one slice 1`] = `
                   ]
                 }
               />
-              <h3
-                aria-level="3"
-                role="heading"
-              >
-                GCHQ gives girls free cyber-classes to tackle gender gap
-              </h3>
             </div>
             <div>
               <span>

@@ -8,6 +8,12 @@ exports[`1. lead one full width slice 1`] = `
         ROYALS
       </Text>
     </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -15,12 +21,6 @@ exports[`1. lead one full width slice 1`] = `
         ]
       }
     />
-    <Text
-      accessibilityRole="heading"
-      aria-level="3"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
   </View>
   <View>
     <Image
@@ -42,6 +42,12 @@ exports[`2. lead one and one slice 1`] = `
               ROYALS
             </Text>
           </View>
+          <Text
+            accessibilityRole="heading"
+            aria-level="3"
+          >
+            Prince Philip ‘could be prosecuted’ over car crash
+          </Text>
           <ArticleFlags
             flags={
               Array [
@@ -49,12 +55,6 @@ exports[`2. lead one and one slice 1`] = `
               ]
             }
           />
-          <Text
-            accessibilityRole="heading"
-            aria-level="3"
-          >
-            Prince Philip ‘could be prosecuted’ over car crash
-          </Text>
         </View>
         <View>
           <Image
@@ -74,6 +74,12 @@ exports[`2. lead one and one slice 1`] = `
               CYBER CRIME
             </Text>
           </View>
+          <Text
+            accessibilityRole="heading"
+            aria-level="3"
+          >
+            GCHQ gives girls free cyber-classes to tackle gender gap
+          </Text>
           <ArticleFlags
             flags={
               Array [
@@ -81,12 +87,6 @@ exports[`2. lead one and one slice 1`] = `
               ]
             }
           />
-          <Text
-            accessibilityRole="heading"
-            aria-level="3"
-          >
-            GCHQ gives girls free cyber-classes to tackle gender gap
-          </Text>
         </View>
         <Text>
           <Text>

@@ -26,7 +26,8 @@ const ArticleSummary = props => {
     datePublicationProps,
     flags,
     headline,
-    labelProps
+    labelProps,
+    style
   } = props;
 
   const renderByline = () => {
@@ -59,11 +60,11 @@ const ArticleSummary = props => {
   };
 
   return (
-    <View>
+    <View style={style}>
       {renderLabel()}
-      {flags()}
       {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
+      {flags()}
       {content()}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">
@@ -92,7 +93,8 @@ ArticleSummary.propTypes = {
     color: PropTypes.string,
     isVideo: PropTypes.bool,
     title: PropTypes.string
-  })
+  }),
+  style: PropTypes.shape({})
 };
 
 ArticleSummary.defaultProps = {
@@ -101,7 +103,8 @@ ArticleSummary.defaultProps = {
   datePublicationProps: null,
   flags: () => null,
   headline: () => null,
-  labelProps: null
+  labelProps: null,
+  style: null
 };
 
 export {
