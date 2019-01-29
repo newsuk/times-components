@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - '@times-components/utils > react-native > plist > xmlbuilder > lodash':
+        patched: '2019-01-29T01:08:42.890Z'
+    - '@times-components/image > @times-components/utils > react-native > plist > xmlbuilder > lodash':
+        patched: '2019-01-29T01:08:42.890Z'
+    - '@times-components/video > @times-components/image > @times-components/utils > react-native > plist > xmlbuilder > lodash':
+        patched: '2019-01-29T01:08:42.890Z'
