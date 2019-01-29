@@ -15,7 +15,7 @@ const sharedStyles = {
     ...fontFactory({
       font: "headline",
       fontSize: "articleHeadline"
-    }),
+    })
   },
   authorImage: {
     marginBottom: spacing(5)
