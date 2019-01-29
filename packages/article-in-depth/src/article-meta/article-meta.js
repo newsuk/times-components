@@ -11,11 +11,12 @@ import styles from "../styles";
 
 const ArticleMeta = ({
   byline,
+  isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
-  <View>
+  <View style={isTablet && styles.metaContainerTabletFlow}>
     <View style={styles.meta}>
       <Context.Consumer>
         {({ theme: { sectionColour } }) => (
@@ -27,8 +28,14 @@ const ArticleMeta = ({
         )}
       </Context.Consumer>
     </View>
+    {isTablet && <View style={styles.seperator} />}
     <View style={styles.meta}>
-      <Text style={styles.datePublication}>
+      <Text
+        style={[
+          styles.datePublication,
+          isTablet && styles.datePulicationTablet
+        ]}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </Text>
     </View>

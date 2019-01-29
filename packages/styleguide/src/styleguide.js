@@ -26,7 +26,10 @@ const fonts = timesFonts;
 const fontFactory = timesFontFactory();
 const fontSizes = timesFontSizes();
 const lineHeight = timesLineHeightsFactory();
-const { nativeTablet: tabletWidth } = breakpoints;
+const {
+  nativeTablet: tabletWidth,
+  nativeTabletWide: tabletWidthMax
+} = breakpoints;
 const tabletRowPadding = 20;
 
 export {
@@ -41,6 +44,7 @@ export {
   spacing,
   tabletRowPadding,
   tabletWidth,
+  tabletWidthMax,
   themeFactory
 };
 export default ({ scale = scales.medium } = {}) => ({

@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { ArticleFlags } from "@times-components/article-flag";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
+import { fontFactory } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
@@ -18,6 +18,7 @@ const ArticleHeader = ({
   flags,
   hasVideo,
   headline,
+  isTablet,
   label,
   standfirst,
   textColour: rgbTextColour
@@ -31,15 +32,21 @@ const ArticleHeader = ({
         <View
           style={[
             styles.container,
-            { backgroundColor: backgroundColour, width: "100%" }
+            { backgroundColor: backgroundColour, width: "100%" },
+            isTablet && styles.containerTablet
           ]}
         >
           <Label color={textColour} isVideo={hasVideo} label={label} />
           <Text
             style={[
               styles.articleHeadline,
-              { color: textColour },
-              headlineFont ? { fontFamily: fonts[headlineFont] } : null
+              {
+                color: textColour,
+                ...fontFactory({
+                  font: headlineFont || "headline",
+                  fontSize: isTablet ? "pageHeadline" : "headline"
+                })
+              }
             ]}
           >
             {headline}

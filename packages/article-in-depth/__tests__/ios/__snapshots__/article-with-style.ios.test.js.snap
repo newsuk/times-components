@@ -150,10 +150,8 @@ exports[`full article with style 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "paddingLeft": 10,
             "paddingRight": 10,
-            "width": 660,
           }
         }
       >
@@ -173,14 +171,7 @@ exports[`full article with style 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
+      <View>
         <PullQuote>
           The pull quote content
         </PullQuote>
@@ -190,10 +181,9 @@ exports[`full article with style 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "flexDirection": "column",
             "paddingBottom": 25,
-            "width": 660,
+            "width": "100%",
           }
         }
       >
@@ -249,17 +239,7 @@ exports[`full article with style 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
+      <RelatedArticles />
     </View>
     <View
       style={
@@ -422,10 +402,8 @@ exports[`full article with style in the culture magazine 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "paddingLeft": 10,
             "paddingRight": 10,
-            "width": 660,
           }
         }
       >
@@ -445,14 +423,7 @@ exports[`full article with style in the culture magazine 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
+      <View>
         <PullQuote>
           The pull quote content
         </PullQuote>
@@ -462,10 +433,9 @@ exports[`full article with style in the culture magazine 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "flexDirection": "column",
             "paddingBottom": 25,
-            "width": 660,
+            "width": "100%",
           }
         }
       >
@@ -521,17 +491,7 @@ exports[`full article with style in the culture magazine 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
+      <RelatedArticles />
     </View>
     <View
       style={
@@ -694,10 +654,8 @@ exports[`full article with style in the style magazine 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "paddingLeft": 10,
             "paddingRight": 10,
-            "width": 660,
           }
         }
       >
@@ -717,14 +675,7 @@ exports[`full article with style in the style magazine 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
+      <View>
         <PullQuote>
           The pull quote content
         </PullQuote>
@@ -734,10 +685,9 @@ exports[`full article with style in the style magazine 1`] = `
       <View
         style={
           Object {
-            "alignSelf": "center",
             "flexDirection": "column",
             "paddingBottom": 25,
-            "width": 660,
+            "width": "100%",
           }
         }
       >
@@ -793,17 +743,7 @@ exports[`full article with style in the style magazine 1`] = `
       </View>
     </View>
     <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
+      <RelatedArticles />
     </View>
     <View
       style={
@@ -931,6 +871,893 @@ exports[`full article with style in the sunday times magazine 1`] = `
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginTop": 5,
+                }
+              }
+            >
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 17,
+            "lineHeight": 26,
+            "marginBottom": 25,
+            "marginTop": 0,
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        Some Link
+      </Text>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <PullQuote>
+          The pull quote content
+        </PullQuote>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <Video />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingLeft": 10,
+              },
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <Ad
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 20,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+          }
+        }
+      >
+        <ArticleTopics />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`tablet full article with style in the culture magazine 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
+            "maxWidth": 1180,
+            "paddingBottom": 45,
+            "paddingHorizontal": 20,
+            "paddingTop": 60,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "Flama-Bold",
+              "fontSize": 40,
+              "lineHeight": 42,
+              "marginBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Headline
+        </Text>
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+              "marginTop": 5,
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 20,
+              "lineHeight": 25,
+              "marginBottom": 15,
+              "paddingHorizontal": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Standfirst
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "marginBottom": 20,
+            "maxWidth": 1180,
+            "width": "100%",
+          }
+        }
+      >
+        <ModalImage />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 25,
+            "marginHorizontal": 10,
+            "paddingBottom": 6,
+            "paddingTop": 10,
+            "width": 660,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <ArticleBylineWithLinks />
+          </View>
+          <View
+            style={
+              Object {
+                "borderRightColor": "#DBDBDB",
+                "borderRightWidth": 1,
+                "height": 15,
+                "marginRight": 10,
+                "paddingLeft": 10,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginTop": 0,
+                }
+              }
+            >
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 17,
+            "lineHeight": 26,
+            "marginBottom": 25,
+            "marginTop": 0,
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        Some Link
+      </Text>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "width": 660,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "width": 660,
+          }
+        }
+      >
+        <PullQuote>
+          The pull quote content
+        </PullQuote>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": 660,
+          }
+        }
+      >
+        <Video />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingLeft": 10,
+              },
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <Ad
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 20,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+          }
+        }
+      >
+        <ArticleTopics />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`tablet full article with style in the style magazine 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
+            "maxWidth": 1180,
+            "paddingBottom": 45,
+            "paddingHorizontal": 20,
+            "paddingTop": 60,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "CenturyGothic-Bold",
+              "fontSize": 40,
+              "lineHeight": 42,
+              "marginBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Headline
+        </Text>
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+              "marginTop": 5,
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 20,
+              "lineHeight": 25,
+              "marginBottom": 15,
+              "paddingHorizontal": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Standfirst
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "marginBottom": 20,
+            "maxWidth": 1180,
+            "width": "100%",
+          }
+        }
+      >
+        <ModalImage />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 25,
+            "marginHorizontal": 10,
+            "paddingBottom": 6,
+            "paddingTop": 10,
+            "width": 660,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <ArticleBylineWithLinks />
+          </View>
+          <View
+            style={
+              Object {
+                "borderRightColor": "#DBDBDB",
+                "borderRightWidth": 1,
+                "height": 15,
+                "marginRight": 10,
+                "paddingLeft": 10,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginTop": 0,
+                }
+              }
+            >
+              Friday March 13 2015, 6:54pm, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 17,
+            "lineHeight": 26,
+            "marginBottom": 25,
+            "marginTop": 0,
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        Some Link
+      </Text>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "width": 660,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          Some content
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "width": 660,
+          }
+        }
+      >
+        <PullQuote>
+          The pull quote content
+        </PullQuote>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": 660,
+          }
+        }
+      >
+        <Video />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingLeft": 10,
+              },
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <Ad
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 20,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleImage />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+          }
+        }
+      >
+        <ArticleTopics />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`tablet full article with style in the sunday times magazine 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "rgba(60, 129, 190, 1)",
+            "maxWidth": 1180,
+            "paddingBottom": 45,
+            "paddingHorizontal": 20,
+            "paddingTop": 60,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "Tiempos-Headline-Bold",
+              "fontSize": 40,
+              "lineHeight": 42,
+              "marginBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Headline
+        </Text>
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+              "marginTop": 5,
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 20,
+              "lineHeight": 25,
+              "marginBottom": 15,
+              "paddingHorizontal": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Some Standfirst
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "marginBottom": 20,
+            "maxWidth": 1180,
+            "width": "100%",
+          }
+        }
+      >
+        <ModalImage />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "marginBottom": 25,
+            "marginHorizontal": 10,
+            "paddingBottom": 6,
+            "paddingTop": 10,
+            "width": 660,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <ArticleBylineWithLinks />
+          </View>
+          <View
+            style={
+              Object {
+                "borderRightColor": "#DBDBDB",
+                "borderRightWidth": 1,
+                "height": 15,
+                "marginRight": 10,
+                "paddingLeft": 10,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginTop": 0,
                 }
               }
             >

@@ -63,6 +63,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               color="#1D1D1B"
             />
           </View>
+          <View />
           <View>
             <Text>
               Friday March 13 2015, 6:54pm, The Times
@@ -211,6 +212,7 @@ exports[`4. an article with ads 1`] = `
               color="#1D1D1B"
             />
           </View>
+          <View />
           <View>
             <Text>
               Friday March 13 2015, 6:54pm, The Times
