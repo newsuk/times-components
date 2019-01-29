@@ -1,0 +1,31 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - shrink-ray > debug:
+        patched: '2019-01-29T14:26:16.650Z'
+  'npm:hoek:20180212':
+    - shrink-ray > node-zopfli > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > hawk > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+    - shrink-ray > node-zopfli > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-01-29T14:26:16.650Z'
+  'npm:lodash:20180130':
+    - react-native > plist > xmlbuilder > lodash:
+        patched: '2019-01-29T14:26:16.650Z'
+  'npm:ms:20170412':
+    - shrink-ray > debug > ms:
+        patched: '2019-01-29T14:26:16.650Z'
