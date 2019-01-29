@@ -24,7 +24,17 @@ exports[`1. scaled medium full article 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View>
       <ArticleComments />
@@ -57,7 +67,17 @@ exports[`2. scaled large full article 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View>
       <ArticleComments />
@@ -90,7 +110,17 @@ exports[`3. scaled xlarge full article 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View>
       <ArticleComments />

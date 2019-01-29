@@ -1,11 +1,12 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
-import Responsive from "@times-components/responsive";
+import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
@@ -18,6 +19,7 @@ import {
 import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
+import styles from "./styles/shared";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -52,11 +54,17 @@ const renderRow = analyticsStream => (
     case "relatedArticleSlice": {
       const { relatedArticleSlice } = rowData.data;
       return (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          onPress={onRelatedArticlePress}
-          slice={relatedArticleSlice}
-        />
+        <ResponsiveContext.Consumer>
+          {({ isTablet }) => (
+            <View style={isTablet && styles.relatedArticlesTablet}>
+              <RelatedArticles
+                analyticsStream={analyticsStream}
+                onPress={onRelatedArticlePress}
+                slice={relatedArticleSlice}
+              />
+            </View>
+          )}
+        </ResponsiveContext.Consumer>
       );
     }
 

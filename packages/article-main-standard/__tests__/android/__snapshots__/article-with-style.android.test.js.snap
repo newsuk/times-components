@@ -244,7 +244,9 @@ exports[`full article with style on mobile 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View>
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
@@ -524,7 +526,17 @@ exports[`full article with style on tablet 1`] = `
       </View>
     </View>
     <View>
-      <RelatedArticles />
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 660,
+            "width": "100%",
+          }
+        }
+      >
+        <RelatedArticles />
+      </View>
     </View>
     <View
       style={
