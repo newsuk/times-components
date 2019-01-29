@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -48,7 +48,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.17.1",
+    "@times-components/styleguide": "3.17.2",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.2",
     "react-native": "0.55.4"

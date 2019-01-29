@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.5.2...@times-components/article-summary@3.6.0) (2019-01-29)
+
+
+### Features
+
+* Lead One and One & Lead One Full Width tiles ([#1631](https://github.com/newsuk/times-components/issues/1631)) ([9a6e0fe](https://github.com/newsuk/times-components/commit/9a6e0fe))
+
+
+
+
+
 ## [3.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.5.1...@times-components/article-summary@3.5.2) (2019-01-28)
 
 **Note:** Version bump only for package @times-components/article-summary

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.10.0...@times-components/article-magazine-comment@0.11.0) (2019-01-29)
+
+
+### Features
+
+* Allow related articles to be smaller on a native tablet breakpoint ([#1632](https://github.com/newsuk/times-components/issues/1632)) ([4e2bcac](https://github.com/newsuk/times-components/commit/4e2bcac))
+
+
+
+
+
 # [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.9.2...@times-components/article-magazine-comment@0.10.0) (2019-01-28)
 
 

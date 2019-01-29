@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.1.4...@times-components/slice-layout@0.2.0) (2019-01-29)
+
+
+### Features
+
+* Lead One and One & Lead One Full Width tiles ([#1631](https://github.com/newsuk/times-components/issues/1631)) ([9a6e0fe](https://github.com/newsuk/times-components/commit/9a6e0fe))
+
+
+
+
+
 ## [0.1.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.1.3...@times-components/slice-layout@0.1.4) (2019-01-25)
 
 **Note:** Version bump only for package @times-components/slice-layout

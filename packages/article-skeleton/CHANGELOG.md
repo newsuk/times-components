@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.7.0...@times-components/article-skeleton@0.8.0) (2019-01-29)
+
+
+### Features
+
+* Allow related articles to be smaller on a native tablet breakpoint ([#1632](https://github.com/newsuk/times-components/issues/1632)) ([4e2bcac](https://github.com/newsuk/times-components/commit/4e2bcac))
+
+
+
+
+
 # [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.6.4...@times-components/article-skeleton@0.7.0) (2019-01-28)
 
 
