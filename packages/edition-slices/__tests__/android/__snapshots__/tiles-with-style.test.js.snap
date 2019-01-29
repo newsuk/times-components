@@ -149,7 +149,6 @@ exports[`3. secondary tile 1`] = `
         ROYALS
       </Text>
     </View>
-    <ArticleFlags />
     <Text
       style={
         Object {
@@ -164,6 +163,7 @@ exports[`3. secondary tile 1`] = `
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
+    <ArticleFlags />
     <Text
       style={
         Object {

@@ -113,6 +113,12 @@ exports[`3. secondary one slice 1`] = `
         ROYALS
       </Text>
     </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -120,12 +126,6 @@ exports[`3. secondary one slice 1`] = `
         ]
       }
     />
-    <Text
-      accessibilityRole="heading"
-      aria-level="3"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
     <Text>
       <Text>
         

@@ -324,13 +324,6 @@ exports[`3. secondary one slice 1`] = `
         ROYALS
       </div>
     </div>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
     <h3
       aria-level="3"
       className="S3"
@@ -338,6 +331,13 @@ exports[`3. secondary one slice 1`] = `
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
     <div
       className="S5"
     >

@@ -259,7 +259,6 @@ exports[`3. secondary one slice 1`] = `
         ROYALS
       </Text>
     </View>
-    <ArticleFlags />
     <Text
       style={
         Object {
@@ -274,6 +273,7 @@ exports[`3. secondary one slice 1`] = `
     >
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
+    <ArticleFlags />
     <Text
       style={
         Object {

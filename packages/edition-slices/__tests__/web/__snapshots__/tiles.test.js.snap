@@ -75,6 +75,12 @@ exports[`3. secondary tile 1`] = `
         ROYALS
       </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -82,12 +88,6 @@ exports[`3. secondary tile 1`] = `
         ]
       }
     />
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
     <div>
       <span>
         
