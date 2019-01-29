@@ -16,18 +16,13 @@ const renderImage = imageUri => (
   </View>
 );
 
-const renderSummaryContent = (summary, withMargins) => (
-  <ArticleSummaryContent
-    ast={summary}
-    style={withMargins && styles.summaryContainer}
-  />
-);
+const renderSummaryContent = summary => <ArticleSummaryContent ast={summary} />;
 
 const PrimaryTile = ({
   tile: {
     article: {
       flags,
-      hasVideo,
+      hasVideo = false,
       headline,
       label,
       leadAsset,
@@ -36,17 +31,15 @@ const PrimaryTile = ({
       summary125
     }
   },
-  withImage,
-  withSummaryMargins
+  withImage
 }) => (
   <View>
+    {withImage ? renderImage(leadAsset.crop169.url)
+      : null}
     <ArticleSummary
       flags={() => <ArticleFlags flags={flags} />}
       headline={() => (
-        <ArticleSummaryHeadline
-          headline={headline || shortHeadline}
-          style={styles.headline}
-        />
+        <ArticleSummaryHeadline headline={headline || shortHeadline} />
       )}
       label={label}
       labelProps={{
@@ -54,23 +47,17 @@ const PrimaryTile = ({
         isVideo: hasVideo,
         title: label
       }}
-      style={withSummaryMargins && styles.summaryContainer}
     />
-    {withImage
-      ? renderImage(leadAsset.crop169.url)
-      : renderSummaryContent(summary125, withSummaryMargins)}
   </View>
 );
 
 PrimaryTile.propTypes = {
-  tile: PropTypes.shape({}).isRequired,
   withImage: PropTypes.bool,
-  withSummaryMargins: PropTypes.bool
+  tile: PropTypes.shape({}).isRequired
 };
 
 PrimaryTile.defaultProps = {
-  withImage: false,
-  withSummaryMargins: false
+  withImage: false
 };
 
 export default PrimaryTile;

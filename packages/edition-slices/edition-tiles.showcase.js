@@ -3,7 +3,7 @@ import {
   mockLeadOneFullWidthSlice,
   mockSecondaryOneSlice
 } from "@times-components/fixture-generator";
-import { PrimaryTile, SecondaryTile } from "./src/tiles";
+import { PrimaryTile, SecondaryTile, SecondaryImageReversedTile } from "./src/tiles";
 
 export default {
   children: [
@@ -29,6 +29,14 @@ export default {
         return <SecondaryTile tile={slice.secondary} />;
       },
       name: "Secondary",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <SecondaryImageReversedTile tile={slice.secondary} />;
+      },
+      name: "SecondaryImageReversedTile",
       type: "story"
     }
   ],

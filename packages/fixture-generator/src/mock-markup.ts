@@ -15,6 +15,20 @@ const markupTypes: Markup = {
       }
     ]
   },
+  summary125: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty."
+        },
+        children: []
+      }
+    ]
+  },
   ad: {
     name: "ad",
     attributes: {},
@@ -139,6 +153,11 @@ class MockMarkup {
 
   constructor() {
     this.markup = [];
+  }
+
+  addSummary(summaryName: string) {
+    this.markup = generateMarkup(this.markup, summaryName, 1);
+    return this;
   }
 
   addParagraphs(length: number = 1) {

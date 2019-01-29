@@ -5,7 +5,8 @@ import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
-  SecondaryOneSlice
+  SecondaryOneSlice,
+  SecondaryFour
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -17,6 +18,8 @@ jest.mock("@times-components/gradient", () => "Gradient");
 const leadOneAndOneData = leadOneAndOneDataGenerator({
   imageUrl: "https://img/someImage"
 });
+
+const secondaryFourData = secondaryFourDataGenerator();
 
 export default () => {
   const tests = [
@@ -48,6 +51,20 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <SecondaryOneSlice secondary={leadOneAndOneData.lead} />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary Four",
+      test: () => {
+        const output = TestRenderer.create(
+          <SecondaryFour
+            secondary1={secondaryFourData.secondary1}
+            secondary2={secondaryFourData.secondary2}
+            secondary3={secondaryFourData.secondary3}
+            secondary4={secondaryFourData.secondary4}
+          />
         );
 
         expect(output).toMatchSnapshot();
