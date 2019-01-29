@@ -2,7 +2,11 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
-import { LeadOneFullWidthSlice, LeadOneAndOneSlice } from "../src/slices";
+import {
+  LeadOneFullWidthSlice,
+  LeadOneAndOneSlice,
+  SecondaryOneSlice
+} from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -34,6 +38,16 @@ export default () => {
             lead={leadOneAndOneData.lead}
             support={leadOneAndOneData.support}
           />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary one slice",
+      test: () => {
+        const output = TestRenderer.create(
+          <SecondaryOneSlice secondary={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

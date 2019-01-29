@@ -1,5 +1,3 @@
-import LeadOneFullWidthSlice from "./leadonefullwidth";
-import LeadOneAndOneSlice from "./leadoneandone";
-import SecondaryOneSlice from "./secondaryone";
-
-export { LeadOneFullWidthSlice, LeadOneAndOneSlice, SecondaryOneSlice };
+export { default as LeadOneFullWidthSlice } from "./leadonefullwidth";
+export { default as LeadOneAndOneSlice } from "./leadoneandone";
+export { default as SecondaryOneSlice } from "./secondaryone";
