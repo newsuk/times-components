@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
@@ -13,9 +13,13 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={styles.metaContainer}>
-    <View style={styles.meta}>
-      <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
-    </View>
+    {byline && (
+      <Fragment>
+        <View style={styles.meta}>
+          <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
+        </View>
+      </Fragment>
+    )}
     <View style={styles.meta}>
       <Text style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />
