@@ -6,7 +6,7 @@ export const propTypes = {
     credits: PropTypes.string
   }),
   imageOptions: PropTypes.shape({
-    display: PropTypes.oneOf(["primary", "secondary", "inline"]),
+    display: PropTypes.oneOf(["primary", "secondary", "inline", "fullwidth"]),
     highResSize: PropTypes.number,
     lowResSize: PropTypes.number,
     ratio: PropTypes.string,

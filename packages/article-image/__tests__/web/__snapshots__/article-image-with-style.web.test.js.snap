@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary image with caption and credits 1`] = `
+exports[`1. mobile primary image with caption and credits 1`] = `
 .c0 {
   display: block;
   opacity: 1;
@@ -58,7 +58,181 @@ Array [
 ]
 `;
 
-exports[`2. secondary image with caption and credits 1`] = `
+exports[`2. tablet primary image with caption and credits 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 10px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+  }
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div>
+    <responsiveweb__InsetCaptionStyle>
+      <div
+        className="c1"
+      >
+        <div>
+          <div>
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDITS
+            </div>
+          </div>
+        </div>
+      </div>
+    </responsiveweb__InsetCaptionStyle>
+  </div>,
+]
+`;
+
+exports[`3. mobile fullwidth image with caption and credits 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 10px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+  }
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div>
+    <responsiveweb__InsetCaptionStyle>
+      <div
+        className="c1"
+      >
+        <div>
+          <div>
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDITS
+            </div>
+          </div>
+        </div>
+      </div>
+    </responsiveweb__InsetCaptionStyle>
+  </div>,
+]
+`;
+
+exports[`4. tablet fullwidth image with caption and credits 1`] = `
+.c0 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 10px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+  }
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div>
+    <responsiveweb__InsetCaptionStyle>
+      <div
+        className="c1"
+      >
+        <div>
+          <div>
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDITS
+            </div>
+          </div>
+        </div>
+      </div>
+    </responsiveweb__InsetCaptionStyle>
+  </div>,
+]
+`;
+
+exports[`5. secondary image with caption and credits 1`] = `
 .c0 {
   display: block;
   opacity: 1;
@@ -100,7 +274,7 @@ Array [
 ]
 `;
 
-exports[`3. inline image (landscape) with caption and credits 1`] = `
+exports[`6. inline image (landscape) with caption and credits 1`] = `
 .c1 {
   display: block;
   opacity: 1;
@@ -202,7 +376,7 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 </figure>
 `;
 
-exports[`4. inline image (portrait) with caption and credits 1`] = `
+exports[`7. inline image (portrait) with caption and credits 1`] = `
 .c1 {
   display: block;
   opacity: 1;
