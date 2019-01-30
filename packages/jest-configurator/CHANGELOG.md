@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.2.0...@times-components/jest-configurator@2.2.1) (2019-01-30)
+
+
+### Bug Fixes
+
+* deps ([#1650](https://github.com/newsuk/times-components/issues/1650)) ([7062592](https://github.com/newsuk/times-components/commit/7062592))
+
+
+
+
+
 # [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.1.22...@times-components/jest-configurator@2.2.0) (2019-01-25)
 
 

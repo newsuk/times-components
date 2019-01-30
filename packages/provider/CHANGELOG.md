@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.10.0...@times-components/provider@1.10.1) (2019-01-30)
+
+
+### Bug Fixes
+
+* deps ([#1650](https://github.com/newsuk/times-components/issues/1650)) ([7062592](https://github.com/newsuk/times-components/commit/7062592))
+
+
+
+
+
 # [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.9.1...@times-components/provider@1.10.0) (2019-01-25)
 
 

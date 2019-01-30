@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.3.0...@times-components/svgs@2.3.1) (2019-01-30)
+
+
+### Bug Fixes
+
+* deps ([#1650](https://github.com/newsuk/times-components/issues/1650)) ([7062592](https://github.com/newsuk/times-components/commit/7062592))
+
+
+
+
+
 # [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.2.1...@times-components/svgs@2.3.0) (2019-01-25)
 
 
