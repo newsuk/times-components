@@ -6,6 +6,11 @@ import {
   tabletWidthMax
 } from "@times-components/styleguide";
 
+const containerShared = {
+  alignSelf: "center",
+  width: tabletWidth - tabletRowPadding
+};
+
 const styles = StyleSheet.create({
   container: {
     paddingTop: 0
@@ -16,10 +21,6 @@ const styles = StyleSheet.create({
   },
   fullwidthContainer: {
     maxWidth: tabletWidthMax
-  },
-  imageContainerTablet: {
-    alignSelf: "center",
-    width: tabletWidth - tabletRowPadding
   },
   inlineCaption: {
     paddingLeft: spacing(2),
@@ -34,6 +35,11 @@ const styles = StyleSheet.create({
     paddingRight: spacing(2),
     width: "100%"
   },
+  inlineContainerTablet: {
+    ...containerShared,
+    paddingLeft: spacing(0),
+    paddingRight: spacing(0)
+  },
   inlineImage: {
     width: "50%"
   },
@@ -41,6 +47,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     paddingBottom: spacing(3),
     width: "100%"
+  },
+  primaryContainerTablet: {
+    ...containerShared
   },
   secondaryCaption: {
     paddingLeft: spacing(2),
@@ -54,6 +63,11 @@ const styles = StyleSheet.create({
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
     width: "100%"
+  },
+  secondaryContainerTablet: {
+    ...containerShared,
+    paddingLeft: spacing(0),
+    paddingRight: spacing(0)
   },
   secondaryImage: {
     width: "50%"

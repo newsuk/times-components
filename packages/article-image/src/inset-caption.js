@@ -1,5 +1,6 @@
 import React from "react";
 import Caption from "@times-components/caption";
+import { ResponsiveContext } from "@times-components/responsive";
 import { spacing } from "@times-components/styleguide";
 
 const captionStyle = {
@@ -9,7 +10,15 @@ const captionStyle = {
 };
 
 const CaptionComponentPrimaryNative = ({ caption, credits }) => (
-  <Caption credits={credits} style={captionStyle} text={caption} />
+  <ResponsiveContext>
+    {({ isTablet }) => (
+      <Caption
+        credits={credits}
+        style={!isTablet && captionStyle}
+        text={caption}
+      />
+    )}
+  </ResponsiveContext>
 );
 
 CaptionComponentPrimaryNative.propTypes = {
