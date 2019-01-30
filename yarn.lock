@@ -1961,6 +1961,21 @@
     webpack-dev-server "3.1.7"
     webpack-merge "^4.1.1"
 
+"@times-components/styleguide@3.17.1":
+  version "3.17.1"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.17.1.tgz#dfb02124d654e9de2f1040ee94989e56f6e502ec"
+  integrity sha512-pyacZtc1priPCK/ZFkT7zr1TjbyVKjgRL90phgW3no4MEwkO85RqYXjRrh6sLlMXRb1JWkTB0xZ7/7Fylm6abg==
+  dependencies:
+    prop-types "15.6.2"
+    styled-components "3.4.0"
+
+"@times-components/test-utils@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@times-components/test-utils/-/test-utils-2.1.4.tgz#b3569da894f75ab642b4f9c9673c152e143de5d5"
+  integrity sha512-vSU+1B1eG8405T9BYMs/aPTIR4xe1fGVhyVpr4vUxTMoG3bD3QuDHq1yuL94fpDfWjpVImiXq1beFNkOzTOZiQ==
+  dependencies:
+    "@times-components/styleguide" "3.17.1"
+
 "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
