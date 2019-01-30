@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.31](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.1.30...@times-components/mock-tpa-server@0.1.31) (2019-01-30)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
 ## [0.1.30](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.1.29...@times-components/mock-tpa-server@0.1.30) (2019-01-30)
 
 **Note:** Version bump only for package @times-components/mock-tpa-server

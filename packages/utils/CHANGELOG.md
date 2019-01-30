@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.4](https://github.com/newsuk/times-components/compare/@times-components/utils@4.2.2...@times-components/utils@4.2.4) (2019-01-30)
+
+
+### Bug Fixes
+
+* versions ([#1651](https://github.com/newsuk/times-components/issues/1651)) ([c57f1de](https://github.com/newsuk/times-components/commit/c57f1de))
+
+
+
+
+
 ## [4.2.2](https://github.com/newsuk/times-components/compare/@times-components/utils@4.2.1...@times-components/utils@4.2.2) (2019-01-30)
 
 **Note:** Version bump only for package @times-components/utils
