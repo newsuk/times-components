@@ -1,6 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import { mockSecondaryFourSlice } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
   LeadOneFullWidthSlice,
@@ -18,8 +19,6 @@ jest.mock("@times-components/gradient", () => "Gradient");
 const leadOneAndOneData = leadOneAndOneDataGenerator({
   imageUrl: "https://img/someImage"
 });
-
-const secondaryFourData = secondaryFourDataGenerator();
 
 export default () => {
   const tests = [
@@ -58,6 +57,7 @@ export default () => {
     {
       name: "Secondary Four",
       test: () => {
+        const secondaryFourData = mockSecondaryFourSlice();
         const output = TestRenderer.create(
           <SecondaryFour
             secondary1={secondaryFourData.secondary1}

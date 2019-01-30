@@ -40,14 +40,15 @@ export default {
     },
     {
       component: () => {
-      const slice = mockSecondaryFourSlice();
-      return (
-      <SecondaryFour
-        secondary1={slice.secondary1}
-        secondary2={slice.secondary2}
-        secondary3={slice.secondary3}
-        secondary4={slice.secondary4}
-      />);
+        const slice = mockSecondaryFourSlice();
+        return (
+          <SecondaryFour
+            secondary1={slice.secondary1}
+            secondary2={slice.secondary2}
+            secondary3={slice.secondary3}
+            secondary4={slice.secondary4}
+          />
+        );
       },
       name: "Secondary Four",
       type: "story"

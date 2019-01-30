@@ -3,7 +3,6 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleFlags } from "@times-components/article-flag";
 import ArticleSummary, {
-  ArticleSummaryContent,
   ArticleSummaryHeadline
 } from "@times-components/article-summary";
 import Image from "@times-components/image";
@@ -16,9 +15,7 @@ const renderImage = imageUri => (
   </View>
 );
 
-const renderSummaryContent = summary => <ArticleSummaryContent ast={summary} />;
-
-const PrimaryTile = ({
+const SecondaryTileImageReversed = ({
   tile: {
     article: {
       flags,
@@ -27,15 +24,13 @@ const PrimaryTile = ({
       label,
       leadAsset,
       section,
-      shortHeadline,
-      summary125
+      shortHeadline
     }
   },
   withImage
 }) => (
   <View>
-    {withImage ? renderImage(leadAsset.crop169.url)
-      : null}
+    {withImage ? renderImage(leadAsset.crop169.url) : null}
     <ArticleSummary
       flags={() => <ArticleFlags flags={flags} />}
       headline={() => (
@@ -51,13 +46,13 @@ const PrimaryTile = ({
   </View>
 );
 
-PrimaryTile.propTypes = {
-  withImage: PropTypes.bool,
-  tile: PropTypes.shape({}).isRequired
+SecondaryTileImageReversed.propTypes = {
+  tile: PropTypes.shape({}).isRequired,
+  withImage: PropTypes.bool
 };
 
-PrimaryTile.defaultProps = {
+SecondaryTileImageReversed.defaultProps = {
   withImage: false
 };
 
-export default PrimaryTile;
+export default SecondaryTileImageReversed;

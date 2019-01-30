@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { SecondaryFourSlice } from "@times-components/slice-layout";
-import { PrimaryTile } from "../../tiles";
+import { SecondaryTileImageReversed } from "../../tiles";
 
 const SecondaryFour = ({ secondary1, secondary2, secondary3, secondary4 }) => (
   <SecondaryFourSlice
     renderSecondary1={() => (
-      <PrimaryTile imagePosition="top" tile={secondary1} />
+      <SecondaryTileImageReversed tile={secondary1} withImage />
     )}
     renderSecondary2={() => (
-      <PrimaryTile imagePosition="top" tile={secondary2} />
+      <SecondaryTileImageReversed tile={secondary2} withImage />
     )}
     renderSecondary3={() => (
-      <PrimaryTile imagePosition="top" tile={secondary3} />
+      <SecondaryTileImageReversed tile={secondary3} withImage />
     )}
     renderSecondary4={() => (
-      <PrimaryTile imagePosition="top" tile={secondary4} />
+      <SecondaryTileImageReversed tile={secondary4} withImage />
     )}
   />
 );
