@@ -58,7 +58,6 @@ function mockSecondaryOneSlice(): SecondaryOneSlice {
 }
 
 function mockSecondaryFourSlice(): SecondaryFourSlice {
-  console.log('inside>>>>>>');
   const tiles = getTiles(4);
   return <SecondaryFourSlice>{
     secondary1: tiles[0],
