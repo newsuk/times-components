@@ -108,3 +108,34 @@ exports[`3. secondary tile 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. secondary image reversed tile 1`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </View>
+</View>
+`;

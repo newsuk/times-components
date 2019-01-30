@@ -7,7 +7,7 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFour
+  SecondaryFourSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -59,7 +59,7 @@ export default () => {
       test: () => {
         const secondaryFourData = mockSecondaryFourSlice();
         const output = TestRenderer.create(
-          <SecondaryFour
+          <SecondaryFourSlice
             secondary1={secondaryFourData.secondary1}
             secondary2={secondaryFourData.secondary2}
             secondary3={secondaryFourData.secondary3}

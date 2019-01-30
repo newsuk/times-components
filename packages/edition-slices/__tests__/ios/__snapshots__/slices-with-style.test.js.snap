@@ -309,3 +309,302 @@ exports[`3. secondary one slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. secondary four 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "flexDirection": "row",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <Image />
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#005B8D",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              LABEL
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "900",
+                "lineHeight": 25,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </Text>
+          <ArticleFlags />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderLeftWidth": 0.25,
+          "borderStyle": "solid",
+          "margin": 5,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <Image />
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#005B8D",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              LABEL
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "900",
+                "lineHeight": 25,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </Text>
+          <ArticleFlags />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "flexDirection": "row",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <Image />
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#005B8D",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              LABEL
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "900",
+                "lineHeight": 25,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </Text>
+          <ArticleFlags />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderLeftWidth": 0.25,
+          "borderStyle": "solid",
+          "margin": 5,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <Image />
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#005B8D",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 14,
+                  "marginBottom": 0,
+                }
+              }
+            >
+              LABEL
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "900",
+                "lineHeight": 25,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </Text>
+          <ArticleFlags />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
