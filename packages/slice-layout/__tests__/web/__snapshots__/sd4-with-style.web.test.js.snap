@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. four child element 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  border-bottom-width: 0px;
+}
+
+.S3 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    className="S3"
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "borderBottomWidth": "0.5px",
+        "flexDirection": "row",
+        "marginBottom": "5px",
+        "marginLeft": "5px",
+        "marginRight": "5px",
+        "marginTop": "5px",
+        "msFlexDirection": "row",
+      }
+    }
+  >
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "paddingLeft": "5px",
+          "paddingRight": "5px",
+          "paddingTop": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        secondary-1
+      </div>
+    </div>
+    <div
+      className="S1"
+      style={
+        Object {
+          "borderLeftWidth": "0.25px",
+          "marginBottom": "5px",
+          "marginLeft": "5px",
+          "marginRight": "5px",
+          "marginTop": "5px",
+        }
+      }
+    />
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "paddingLeft": "5px",
+          "paddingRight": "5px",
+          "paddingTop": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        secondary-2
+      </div>
+    </div>
+  </div>
+  <div
+    className="S3"
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "borderBottomWidth": "0.5px",
+        "flexDirection": "row",
+        "marginBottom": "5px",
+        "marginLeft": "5px",
+        "marginRight": "5px",
+        "marginTop": "5px",
+        "msFlexDirection": "row",
+      }
+    }
+  >
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "paddingLeft": "5px",
+          "paddingRight": "5px",
+          "paddingTop": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        secondary-3
+      </div>
+    </div>
+    <div
+      className="S1"
+      style={
+        Object {
+          "borderLeftWidth": "0.25px",
+          "marginBottom": "5px",
+          "marginLeft": "5px",
+          "marginRight": "5px",
+          "marginTop": "5px",
+        }
+      }
+    />
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "paddingLeft": "5px",
+          "paddingRight": "5px",
+          "paddingTop": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        secondary-4
+      </div>
+    </div>
+  </div>
+</div>
+`;
