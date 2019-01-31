@@ -1,11 +1,13 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import { mockSecondaryFourSlice } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
-  SecondaryOneSlice
+  SecondaryOneSlice,
+  SecondaryFourSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -48,6 +50,21 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <SecondaryOneSlice secondary={leadOneAndOneData.lead} />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary Four",
+      test: () => {
+        const secondaryFourData = mockSecondaryFourSlice();
+        const output = TestRenderer.create(
+          <SecondaryFourSlice
+            secondary1={secondaryFourData.secondary1}
+            secondary2={secondaryFourData.secondary2}
+            secondary3={secondaryFourData.secondary3}
+            secondary4={secondaryFourData.secondary4}
+          />
         );
 
         expect(output).toMatchSnapshot();

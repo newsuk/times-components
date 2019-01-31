@@ -1,14 +1,21 @@
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
-  SecondaryOneSlice
+  SecondaryOneSlice,
+  SecondaryFourSlice
 } from "./slices";
-import { PrimaryTile, SecondaryTile } from "./tiles";
+import {
+  PrimaryTile,
+  SecondaryTile,
+  SecondaryTileImageReversed
+} from "./tiles";
 
 export {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
+  SecondaryFourSlice,
   PrimaryTile,
-  SecondaryTile
+  SecondaryTile,
+  SecondaryTileImageReversed
 };

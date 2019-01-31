@@ -1,9 +1,14 @@
 import React from "react";
 import {
   mockLeadOneFullWidthSlice,
-  mockSecondaryOneSlice
+  mockSecondaryOneSlice,
+  mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
-import { PrimaryTile, SecondaryTile } from "./src/tiles";
+import {
+  PrimaryTile,
+  SecondaryTile,
+  SecondaryTileImageReversed
+} from "./src/tiles";
 
 export default {
   children: [
@@ -29,6 +34,14 @@ export default {
         return <SecondaryTile tile={slice.secondary} />;
       },
       name: "Secondary",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryFourSlice();
+        return <SecondaryTileImageReversed tile={slice.secondary1} withImage />;
+      },
+      name: "SecondaryTileImageReversed",
       type: "story"
     }
   ],

@@ -199,3 +199,58 @@ exports[`3. secondary tile 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. secondary image reversed tile 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "900",
+          "lineHeight": 25,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags />
+  </View>
+</View>
+`;

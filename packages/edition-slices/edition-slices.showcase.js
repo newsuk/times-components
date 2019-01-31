@@ -2,12 +2,14 @@ import React from "react";
 import {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
-  mockSecondaryOneSlice
+  mockSecondaryOneSlice,
+  mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
-  SecondaryOneSlice
+  SecondaryOneSlice,
+  SecondaryFourSlice
 } from "./src/slices";
 
 export default {
@@ -34,6 +36,21 @@ export default {
         return <SecondaryOneSlice secondary={slice.secondary} />;
       },
       name: "Secondary One",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryFourSlice();
+        return (
+          <SecondaryFourSlice
+            secondary1={slice.secondary1}
+            secondary2={slice.secondary2}
+            secondary3={slice.secondary3}
+            secondary4={slice.secondary4}
+          />
+        );
+      },
+      name: "Secondary Four",
       type: "story"
     }
   ],

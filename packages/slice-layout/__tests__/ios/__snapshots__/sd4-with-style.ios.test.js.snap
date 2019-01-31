@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. four child element 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "flexDirection": "row",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderLeftWidth": 0.25,
+          "borderStyle": "solid",
+          "margin": 5,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-2
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "flexDirection": "row",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-3
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderLeftWidth": 0.25,
+          "borderStyle": "solid",
+          "margin": 5,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "borderStyle": "solid",
+          "padding": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-4
+      </Text>
+    </View>
+  </View>
+</View>
+`;

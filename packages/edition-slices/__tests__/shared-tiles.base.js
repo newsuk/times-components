@@ -2,7 +2,11 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
-import { PrimaryTile, SecondaryTile } from "../src/tiles";
+import {
+  PrimaryTile,
+  SecondaryTile,
+  SecondaryTileImageReversed
+} from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -41,6 +45,16 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <SecondaryTile tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary image reversed tile",
+      test: () => {
+        const output = TestRenderer.create(
+          <SecondaryTileImageReversed tile={leadOneAndOneData.lead} withImage />
         );
 
         expect(output).toMatchSnapshot();
