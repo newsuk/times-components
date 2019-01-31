@@ -38,9 +38,9 @@ exports[`1. lead one full width slice 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 32,
+          "fontSize": 35,
           "fontWeight": "900",
-          "lineHeight": 32,
+          "lineHeight": 35,
           "marginBottom": 5,
         }
       }
@@ -48,28 +48,6 @@ exports[`1. lead one full width slice 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
     <ArticleFlags />
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 10,
-        }
-      }
-    >
-      <Text>
-        
-        The 
-        <Text>
-          Duke of Edinburgh
-        </Text>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </Text>
-    </Text>
   </View>
   <View
     style={
@@ -137,9 +115,9 @@ exports[`2. lead one and one slice 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 32,
+                "fontSize": 35,
                 "fontWeight": "900",
-                "lineHeight": 32,
+                "lineHeight": 35,
                 "marginBottom": 5,
               }
             }
@@ -147,28 +125,6 @@ exports[`2. lead one and one slice 1`] = `
             Prince Philip ‘could be prosecuted’ over car crash
           </Text>
           <ArticleFlags />
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-                "marginBottom": 10,
-              }
-            }
-          >
-            <Text>
-              
-              The 
-              <Text>
-                Duke of Edinburgh
-              </Text>
-               could be charged with driving without due care and attention after his car accident yesterday
-              ...
-            </Text>
-          </Text>
         </View>
         <View
           style={
@@ -234,9 +190,9 @@ exports[`2. lead one and one slice 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 32,
+                "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 32,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }

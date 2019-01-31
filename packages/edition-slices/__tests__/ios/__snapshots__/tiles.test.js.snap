@@ -21,17 +21,6 @@ exports[`1. tile a 1`] = `
         ]
       }
     />
-    <Text>
-      <Text>
-        
-        The 
-        <Text>
-          Duke of Edinburgh
-        </Text>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </Text>
-    </Text>
   </View>
   <View>
     <Image

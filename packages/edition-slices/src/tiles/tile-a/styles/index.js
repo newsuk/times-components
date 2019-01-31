@@ -1,15 +1,13 @@
 import { StyleSheet } from "react-native";
 import styleguideFactory from "@times-components/styleguide";
 
-const { fontFactory, spacing } = styleguideFactory();
+const { fonts, spacing } = styleguideFactory();
 
 const styles = StyleSheet.create({
   headline: {
-    ...fontFactory({
-      font: "headline",
-      fontSize: "sliceHeadline"
-    }),
-    lineHeight: 32
+    fontFamily: fonts.headline,
+    fontSize: 35,
+    lineHeight: 35
   },
   imageContainer: {
     marginBottom: spacing(2),

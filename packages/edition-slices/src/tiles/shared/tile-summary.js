@@ -18,7 +18,9 @@ const TileSummary = ({
   summary
 }) => (
   <ArticleSummary
-    content={() => <ArticleSummaryContent ast={summary} />}
+    content={
+      summary ? () => <ArticleSummaryContent ast={summary} /> : undefined
+    }
     flags={() => <ArticleFlags flags={flags} />}
     headline={() => (
       <ArticleSummaryHeadline headline={headline} style={headlineStyle} />

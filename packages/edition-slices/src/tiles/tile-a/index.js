@@ -15,8 +15,7 @@ const TileA = ({
         crop169: { url: imageUrl }
       },
       section,
-      shortHeadline,
-      summary125
+      shortHeadline
     }
   }
 }) => (
@@ -29,7 +28,6 @@ const TileA = ({
       label={label}
       section={section}
       style={styles.summaryContainer}
-      summary={summary125}
     />
     <TileImage
       aspectRatio={16 / 9}
