@@ -9,7 +9,7 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFour
+  SecondaryFourSlice
 } from "./src/slices";
 
 export default {
@@ -42,7 +42,7 @@ export default {
       component: () => {
         const slice = mockSecondaryFourSlice();
         return (
-          <SecondaryFour
+          <SecondaryFourSlice
             secondary1={slice.secondary1}
             secondary2={slice.secondary2}
             secondary3={slice.secondary3}

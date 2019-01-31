@@ -2,7 +2,7 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFour
+  SecondaryFourSlice
 } from "./slices";
 import {
   PrimaryTile,
@@ -14,7 +14,7 @@ export {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFour,
+  SecondaryFourSlice,
   PrimaryTile,
   SecondaryTile,
   SecondaryTileImageReversed
