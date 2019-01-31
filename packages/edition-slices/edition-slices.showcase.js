@@ -19,7 +19,7 @@ export default {
         const slice = mockLeadOneFullWidthSlice();
         return <LeadOneFullWidthSlice lead={slice.lead} />;
       },
-      name: "Lead One Full Width",
+      name: "Lead One Full Width (A)",
       type: "story"
     },
     {
@@ -27,7 +27,7 @@ export default {
         const slice = mockLeadOneAndOneSlice();
         return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
       },
-      name: "Lead One And One",
+      name: "Lead One And One (A + B)",
       type: "story"
     },
     {
