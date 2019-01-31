@@ -5,7 +5,8 @@ import {
   SecondaryFourSlice
 } from "./slices";
 import {
-  PrimaryTile,
+  TileA,
+  TileB,
   SecondaryTile,
   SecondaryTileImageReversed
 } from "./tiles";
@@ -15,7 +16,8 @@ export {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  PrimaryTile,
+  TileA,
+  TileB,
   SecondaryTile,
   SecondaryTileImageReversed
 };

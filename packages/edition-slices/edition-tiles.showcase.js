@@ -5,7 +5,8 @@ import {
   mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
 import {
-  PrimaryTile,
+  TileA,
+  TileB,
   SecondaryTile,
   SecondaryTileImageReversed
 } from "./src/tiles";
@@ -15,17 +16,17 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <PrimaryTile tile={slice.lead} withImage withSummaryMargins />;
+        return <TileA tile={slice.lead} />;
       },
-      name: "Primary (with image, with summary margins)",
+      name: "TileA (Bottom image, 35 headline, no teaser)",
       type: "story"
     },
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <PrimaryTile tile={slice.lead} withSummaryMargins />;
+        return <TileB tile={slice.lead} />;
       },
-      name: "Primary (without image, with summary margins)",
+      name: "TileB (No image, 35 headline, no teaser)",
       type: "story"
     },
     {

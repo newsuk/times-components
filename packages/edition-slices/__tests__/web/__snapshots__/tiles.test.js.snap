@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary tile 1`] = `
+exports[`1. tile a 1`] = `
 <div>
   <div>
     <div>
@@ -21,6 +21,17 @@ exports[`1. primary tile 1`] = `
         ]
       }
     />
+    <div>
+      <span>
+        
+        The 
+        <span>
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
+      </span>
+    </div>
   </div>
   <div>
     <Image
@@ -31,7 +42,7 @@ exports[`1. primary tile 1`] = `
 </div>
 `;
 
-exports[`2. primary tile without image 1`] = `
+exports[`2. tile b 1`] = `
 <div>
   <div>
     <div>
@@ -52,17 +63,17 @@ exports[`2. primary tile without image 1`] = `
         ]
       }
     />
-  </div>
-  <div>
-    <span>
-      
-      The 
+    <div>
       <span>
-        Duke of Edinburgh
+        
+        The 
+        <span>
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
       </span>
-       could be charged with driving without due care and attention after his car accident yesterday
-      ...
-    </span>
+    </div>
   </div>
 </div>
 `;

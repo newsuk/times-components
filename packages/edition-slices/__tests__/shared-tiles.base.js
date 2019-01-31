@@ -3,7 +3,8 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
-  PrimaryTile,
+  TileA,
+  TileB,
   SecondaryTile,
   SecondaryTileImageReversed
 } from "../src/tiles";
@@ -21,20 +22,20 @@ const leadOneAndOneData = leadOneAndOneDataGenerator({
 export default () => {
   const tests = [
     {
-      name: "primary tile",
+      name: "tile a",
       test: () => {
         const output = TestRenderer.create(
-          <PrimaryTile tile={leadOneAndOneData.lead} withImage />
+          <TileA tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
       }
     },
     {
-      name: "primary tile without image",
+      name: "tile b",
       test: () => {
         const output = TestRenderer.create(
-          <PrimaryTile tile={leadOneAndOneData.lead} />
+          <TileB tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

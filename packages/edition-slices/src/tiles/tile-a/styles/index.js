@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     lineHeight: 32
   },
   imageContainer: {
-    backgroundColor: "blue",
     marginBottom: spacing(2),
     width: "100%"
   },

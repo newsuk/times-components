@@ -24,10 +24,32 @@ exports[`1. lead one full width slice 1`] = `
 }
 
 .S4 {
-  margin-bottom: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
 }
 
 .S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 5px;
+}
+
+.S7 {
   margin-bottom: 10px;
 }
 
@@ -40,7 +62,7 @@ exports[`1. lead one full width slice 1`] = `
   className="S2"
 >
   <div
-    className="S4"
+    className="S6"
   >
     <div
       className="S2"
@@ -65,9 +87,26 @@ exports[`1. lead one full width slice 1`] = `
         ]
       }
     />
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        The 
+        <span
+          className="S4"
+        >
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
+      </span>
+    </div>
   </div>
   <div
-    className="S5"
+    className="S7"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -101,14 +140,6 @@ exports[`2. lead one and one slice 1`] = `
 }
 
 .S4 {
-  margin-bottom: 5px;
-}
-
-.S5 {
-  margin-bottom: 10px;
-}
-
-.S6 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -117,7 +148,7 @@ exports[`2. lead one and one slice 1`] = `
   margin-bottom: 0px;
 }
 
-.S7 {
+.S5 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -127,6 +158,14 @@ exports[`2. lead one and one slice 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 5px;
+}
+
+.S7 {
   margin-bottom: 10px;
 }
 
@@ -155,7 +194,7 @@ exports[`2. lead one and one slice 1`] = `
           className="S2"
         >
           <div
-            className="S4"
+            className="S6"
           >
             <div
               className="S2"
@@ -180,9 +219,26 @@ exports[`2. lead one and one slice 1`] = `
                 ]
               }
             />
+            <div
+              className="S5"
+            >
+              <span
+                className="S4"
+              >
+                
+                The 
+                <span
+                  className="S4"
+                >
+                  Duke of Edinburgh
+                </span>
+                 could be charged with driving without due care and attention after his car accident yesterday
+                ...
+              </span>
+            </div>
           </div>
           <div
-            className="S5"
+            className="S7"
           >
             <Image
               aspectRatio={1.7777777777777777}
@@ -204,7 +260,7 @@ exports[`2. lead one and one slice 1`] = `
             className="S2"
           >
             <div
-              className="S4"
+              className="S6"
             >
               <div
                 className="S2"
@@ -229,23 +285,23 @@ exports[`2. lead one and one slice 1`] = `
                   ]
                 }
               />
-            </div>
-            <div
-              className="S7"
-            >
-              <span
-                className="S6"
+              <div
+                className="S5"
               >
-                
-                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-              </span>
-              <span
-                className="S6"
-              >
-                 
-                The intelligence
-                ...
-              </span>
+                <span
+                  className="S4"
+                >
+                  
+                  GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+                </span>
+                <span
+                  className="S4"
+                >
+                   
+                  The intelligence
+                  ...
+                </span>
+              </div>
             </div>
           </div>
         </div>
