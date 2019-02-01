@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.5.0...@times-components/article-image@4.6.0) (2019-02-01)
+
+
+### Features
+
+* Left align caption and credits on tablet body images ([#1649](https://github.com/newsuk/times-components/issues/1649)) ([e48c873](https://github.com/newsuk/times-components/commit/e48c873))
+
+
+
+
+
 # [4.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.4.7...@times-components/article-image@4.5.0) (2019-02-01)
 
 
