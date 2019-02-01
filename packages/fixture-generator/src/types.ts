@@ -8,6 +8,9 @@
 // Scalars
 // ====================================================
 
+/** Text or structured bylines for one or more authors */
+export type ArticleByline = any;
+
 /** A lower kebab case string */
 export type Slug = any;
 
@@ -123,6 +126,8 @@ export interface AuthorArticles {
 export interface Article {
   /** An AST of one or more authors that may contain job titles and/or locations */
   byline?: Markup | null;
+  /** Text or structured bylines for one or more authors */
+  bylines?: ArticleByline | null;
   /** The content for the article in the shape of an AST */
   content?: Markup | null;
   /** The paywalled content for the article in the shape of an AST. After the free content, the rest of the markup is wrapped in a paywall element to allow flexible sampling to work with a classname */
@@ -734,6 +739,8 @@ export interface ArticleInput {
   listingAsset?: MediaInput | null;
 
   byline: Markup;
+
+  bylines: ArticleByline;
 
   authors: Slug[];
 

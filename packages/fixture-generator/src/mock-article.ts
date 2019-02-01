@@ -45,6 +45,7 @@ class MockArticle {
       commentCount: 0,
       template: TemplateType.mainstandard,
       byline: new MockMarkup().addInlines().get(),
+      bylines: [],
       flags: [Flag.EXCLUSIVE],
       label: "label",
       content: new MockMarkup()
