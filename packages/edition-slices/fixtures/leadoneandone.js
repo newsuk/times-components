@@ -23,6 +23,11 @@ export default ({ imageUrl } = {}) => ({
             imageUrl ||
             "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1556%2C1037%2C189%2C38"
         },
+        crop45: {
+          ratio: "4:5",
+          url:
+            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=654%2C817%2C1585%2C107"
+        },
         id: "372bc095-34c4-47e4-8b1e-d352f5641ee5",
         title:
           "PREMIUM EXCLUSIVE - Prince Philip's overturned SUV after it crashed (Mega is representing the exclusive licensing and syndication rights to the images in question.)"

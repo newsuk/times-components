@@ -97,3 +97,65 @@ exports[`3. tile c 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. tile d 1`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={1.5}
+      uri="https://img/someImage"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`5. tile e 1`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={0.8}
+      uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=654%2C817%2C1585%2C107"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </View>
+</View>
+`;
