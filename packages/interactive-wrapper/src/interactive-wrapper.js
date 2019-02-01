@@ -88,6 +88,7 @@ class InteractiveWrapper extends Component {
           }}
           source={{ uri }}
           style={{ height }}
+          scrollEnabled={false}
           {...InteractiveWrapper.postMessageBugWorkaround()}
         />
       </View>
