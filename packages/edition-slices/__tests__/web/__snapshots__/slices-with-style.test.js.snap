@@ -17,22 +17,29 @@ exports[`1. lead one full width slice 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 32px;
   font-weight: 400;
-  line-height: 32px;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 5px;
-}
-
-.S5 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
   color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  margin-bottom: 10px;
+  width: 100%;
 }
 </style>
 
@@ -40,7 +47,7 @@ exports[`1. lead one full width slice 1`] = `
   className="S2"
 >
   <div
-    className="S4"
+    className="IS3"
   >
     <div
       className="S2"
@@ -53,7 +60,7 @@ exports[`1. lead one full width slice 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="S3"
+      className="IS2 S3"
       role="heading"
     >
       Prince Philip ‘could be prosecuted’ over car crash
@@ -67,7 +74,7 @@ exports[`1. lead one full width slice 1`] = `
     />
   </div>
   <div
-    className="S5"
+    className="IS4"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -94,9 +101,7 @@ exports[`2. lead one and one slice 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 32px;
   font-weight: 400;
-  line-height: 32px;
   margin-bottom: 5px;
 }
 
@@ -105,7 +110,11 @@ exports[`2. lead one and one slice 1`] = `
 }
 
 .S5 {
-  margin-bottom: 10px;
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .S6 {
@@ -135,7 +144,33 @@ exports[`2. lead one and one slice 1`] = `
 }
 
 .IS2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.IS5 {
   color: rgba(29,29,27,1.00);
+}
+
+.IS6 {
+  line-height: 22px;
+}
+
+.IS7 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 </style>
 
@@ -155,7 +190,7 @@ exports[`2. lead one and one slice 1`] = `
           className="S2"
         >
           <div
-            className="S4"
+            className="IS3 S4"
           >
             <div
               className="S2"
@@ -168,7 +203,7 @@ exports[`2. lead one and one slice 1`] = `
             </div>
             <h3
               aria-level="3"
-              className="S3"
+              className="IS2 S3"
               role="heading"
             >
               Prince Philip ‘could be prosecuted’ over car crash
@@ -182,7 +217,7 @@ exports[`2. lead one and one slice 1`] = `
             />
           </div>
           <div
-            className="S5"
+            className="IS4"
           >
             <Image
               aspectRatio={1.7777777777777777}
@@ -204,20 +239,20 @@ exports[`2. lead one and one slice 1`] = `
             className="S2"
           >
             <div
-              className="S4"
+              className="IS7 S4"
             >
               <div
                 className="S2"
               >
                 <div
-                  className="IS2 S1"
+                  className="IS5 S1"
                 >
                   CYBER CRIME
                 </div>
               </div>
               <h3
                 aria-level="3"
-                className="S3"
+                className="IS6 S5"
                 role="heading"
               >
                 GCHQ gives girls free cyber-classes to tackle gender gap
@@ -229,23 +264,23 @@ exports[`2. lead one and one slice 1`] = `
                   ]
                 }
               />
-            </div>
-            <div
-              className="S7"
-            >
-              <span
-                className="S6"
+              <div
+                className="S7"
               >
-                
-                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-              </span>
-              <span
-                className="S6"
-              >
-                 
-                The intelligence
-                ...
-              </span>
+                <span
+                  className="S6"
+                >
+                  
+                  GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+                </span>
+                <span
+                  className="S6"
+                >
+                   
+                  The intelligence
+                  ...
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -272,40 +307,35 @@ exports[`3. secondary one slice 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
 }
 
 .S4 {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S5 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
 .IS1 {
   color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  width: 100%;
 }
 </style>
 
@@ -313,7 +343,7 @@ exports[`3. secondary one slice 1`] = `
   className="S2"
 >
   <div
-    className="S2"
+    className="IS3 S4"
   >
     <div
       className="S2"
@@ -326,7 +356,7 @@ exports[`3. secondary one slice 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="S3"
+      className="IS2 S3"
       role="heading"
     >
       Prince Philip ‘could be prosecuted’ over car crash
@@ -338,26 +368,9 @@ exports[`3. secondary one slice 1`] = `
         ]
       }
     />
-    <div
-      className="S5"
-    >
-      <span
-        className="S4"
-      >
-        
-        The 
-        <span
-          className="S4"
-        >
-          Duke of Edinburgh
-        </span>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </span>
-    </div>
   </div>
   <div
-    className="S6"
+    className="IS4 S5"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -390,7 +403,6 @@ exports[`4. secondary four 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
 }
 
@@ -399,28 +411,18 @@ exports[`4. secondary four 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
+  width: 100%;
 }
 
 .IS2 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  width: 50%;
-}
-
-.IS3 {
-  border-left-width: 0.25px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.IS4 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS5 {
+.IS3 {
+  line-height: 22px;
+}
+
+.IS4 {
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
@@ -428,15 +430,15 @@ exports[`4. secondary four 1`] = `
   width: 50%;
 }
 
-.IS6 {
-  border-bottom-width: 0.5px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+.IS5 {
+  border-left-width: 0.25px;
+  margin-top: 5px;
   margin-right: 5px;
   margin-left: 5px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+}
+
+.IS6 {
+  width: 100%;
 }
 
 .IS7 {
@@ -444,24 +446,10 @@ exports[`4. secondary four 1`] = `
 }
 
 .IS8 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  width: 50%;
+  line-height: 22px;
 }
 
 .IS9 {
-  border-left-width: 0.25px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.IS10 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS11 {
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
@@ -469,18 +457,78 @@ exports[`4. secondary four 1`] = `
   width: 50%;
 }
 
-.IS12 {
+.IS10 {
   border-bottom-width: 0.5px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-top: 5px;
   margin-right: 5px;
   margin-left: 5px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
+.IS11 {
+  width: 100%;
+}
+
+.IS12 {
+  color: rgba(0,91,141,1.00);
+}
+
 .IS13 {
+  line-height: 22px;
+}
+
+.IS14 {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 50%;
+}
+
+.IS15 {
+  border-left-width: 0.25px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.IS16 {
+  width: 100%;
+}
+
+.IS17 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS18 {
+  line-height: 22px;
+}
+
+.IS19 {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 50%;
+}
+
+.IS20 {
+  border-bottom-width: 0.5px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS21 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -495,19 +543,19 @@ exports[`4. secondary four 1`] = `
 </style>
 
 <div
-  className="IS13 S3"
+  className="IS21 S3"
 >
   <div
-    className="IS6 S5"
+    className="IS10 S5"
   >
     <div
-      className="IS2 S3"
+      className="IS4 S3"
     >
       <div
         className="S3"
       >
         <div
-          className="S1"
+          className="IS1 S1"
         >
           <Image
             aspectRatio={1.7777777777777777}
@@ -521,14 +569,14 @@ exports[`4. secondary four 1`] = `
             className="S3"
           >
             <div
-              className="IS1 S2"
+              className="IS2 S2"
             >
               LABEL
             </div>
           </div>
           <h3
             aria-level="3"
-            className="S4"
+            className="IS3 S4"
             role="heading"
           >
             Venezuela shows how Corbyn’s socialism works
@@ -544,63 +592,16 @@ exports[`4. secondary four 1`] = `
       </div>
     </div>
     <div
-      className="IS3 S5"
+      className="IS5 S5"
     />
     <div
-      className="IS5 S3"
+      className="IS9 S3"
     >
       <div
         className="S3"
       >
         <div
-          className="S1"
-        >
-          <Image
-            aspectRatio={1.7777777777777777}
-            uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-          />
-        </div>
-        <div
-          className="S3"
-        >
-          <div
-            className="S3"
-          >
-            <div
-              className="IS4 S2"
-            >
-              LABEL
-            </div>
-          </div>
-          <h3
-            aria-level="3"
-            className="S4"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="IS12 S5"
-  >
-    <div
-      className="IS8 S3"
-    >
-      <div
-        className="S3"
-      >
-        <div
-          className="S1"
+          className="IS6 S1"
         >
           <Image
             aspectRatio={1.7777777777777777}
@@ -621,7 +622,54 @@ exports[`4. secondary four 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="S4"
+            className="IS8 S4"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="IS20 S5"
+  >
+    <div
+      className="IS14 S3"
+    >
+      <div
+        className="S3"
+      >
+        <div
+          className="IS11 S1"
+        >
+          <Image
+            aspectRatio={1.7777777777777777}
+            uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+          />
+        </div>
+        <div
+          className="S3"
+        >
+          <div
+            className="S3"
+          >
+            <div
+              className="IS12 S2"
+            >
+              LABEL
+            </div>
+          </div>
+          <h3
+            aria-level="3"
+            className="IS13 S4"
             role="heading"
           >
             Venezuela shows how Corbyn’s socialism works
@@ -637,16 +685,16 @@ exports[`4. secondary four 1`] = `
       </div>
     </div>
     <div
-      className="IS9 S5"
+      className="IS15 S5"
     />
     <div
-      className="IS11 S3"
+      className="IS19 S3"
     >
       <div
         className="S3"
       >
         <div
-          className="S1"
+          className="IS16 S1"
         >
           <Image
             aspectRatio={1.7777777777777777}
@@ -660,14 +708,14 @@ exports[`4. secondary four 1`] = `
             className="S3"
           >
             <div
-              className="IS10 S2"
+              className="IS17 S2"
             >
               LABEL
             </div>
           </div>
           <h3
             aria-level="3"
-            className="S4"
+            className="IS18 S4"
             role="heading"
           >
             Venezuela shows how Corbyn’s socialism works

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary tile 1`] = `
+exports[`1. tile a 1`] = `
 <div>
   <div>
     <div>
@@ -31,43 +31,7 @@ exports[`1. primary tile 1`] = `
 </div>
 `;
 
-exports[`2. primary tile without image 1`] = `
-<div>
-  <div>
-    <div>
-      <div>
-        ROYALS
-      </div>
-    </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
-  </div>
-  <div>
-    <span>
-      
-      The 
-      <span>
-        Duke of Edinburgh
-      </span>
-       could be charged with driving without due care and attention after his car accident yesterday
-      ...
-    </span>
-  </div>
-</div>
-`;
-
-exports[`3. secondary tile 1`] = `
+exports[`2. tile b 1`] = `
 <div>
   <div>
     <div>
@@ -100,16 +64,10 @@ exports[`3. secondary tile 1`] = `
       </span>
     </div>
   </div>
-  <div>
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
-    />
-  </div>
 </div>
 `;
 
-exports[`4. secondary image reversed tile 1`] = `
+exports[`3. tile c 1`] = `
 <div>
   <div>
     <Image

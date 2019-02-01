@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { PrimaryTile } from "../../tiles";
+import { TileA } from "../../tiles";
 
-const LeadOneFullWidthSlice = ({ lead }) => (
-  <PrimaryTile tile={lead} withImage withSummaryMargins />
-);
+const LeadOneFullWidthSlice = ({ lead }) => <TileA tile={lead} />;
 
 LeadOneFullWidthSlice.propTypes = {
   lead: PropTypes.shape({}).isRequired

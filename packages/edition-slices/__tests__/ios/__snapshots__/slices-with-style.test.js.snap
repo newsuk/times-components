@@ -38,9 +38,9 @@ exports[`1. lead one full width slice 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 32,
+          "fontSize": 35,
           "fontWeight": "900",
-          "lineHeight": 32,
+          "lineHeight": 35,
           "marginBottom": 5,
         }
       }
@@ -52,7 +52,6 @@ exports[`1. lead one full width slice 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "blue",
         "marginBottom": 10,
         "width": "100%",
       }
@@ -116,9 +115,9 @@ exports[`2. lead one and one slice 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 32,
+                "fontSize": 35,
                 "fontWeight": "900",
-                "lineHeight": 32,
+                "lineHeight": 35,
                 "marginBottom": 5,
               }
             }
@@ -130,7 +129,6 @@ exports[`2. lead one and one slice 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "blue",
               "marginBottom": 10,
               "width": "100%",
             }
@@ -192,9 +190,9 @@ exports[`2. lead one and one slice 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 32,
+                "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 32,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }
@@ -202,31 +200,29 @@ exports[`2. lead one and one slice 1`] = `
             GCHQ gives girls free cyber-classes to tackle gender gap
           </Text>
           <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 10,
-              "marginHorizontal": 10,
-              "marginVertical": 5,
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "flexWrap": "wrap",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "marginBottom": 10,
+              }
             }
-          }
-        >
-          <Text>
-            
-            GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+          >
+            <Text>
+              
+              GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+            </Text>
+            <Text>
+               
+              The intelligence
+              ...
+            </Text>
           </Text>
-          <Text>
-             
-            The intelligence
-            ...
-          </Text>
-        </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -235,7 +231,14 @@ exports[`2. lead one and one slice 1`] = `
 
 exports[`3. secondary one slice 1`] = `
 <View>
-  <View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 10,
+        "marginVertical": 5,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -264,9 +267,9 @@ exports[`3. secondary one slice 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 35,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 35,
           "marginBottom": 5,
         }
       }
@@ -274,28 +277,6 @@ exports[`3. secondary one slice 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
     <ArticleFlags />
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 10,
-        }
-      }
-    >
-      <Text>
-        
-        The 
-        <Text>
-          Duke of Edinburgh
-        </Text>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </Text>
-    </Text>
   </View>
   <View
     style={
@@ -379,7 +360,7 @@ exports[`4. secondary four 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 25,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }
@@ -450,7 +431,7 @@ exports[`4. secondary four 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 25,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }
@@ -523,7 +504,7 @@ exports[`4. secondary four 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 25,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }
@@ -594,7 +575,7 @@ exports[`4. secondary four 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 22,
                 "fontWeight": "900",
-                "lineHeight": 25,
+                "lineHeight": 22,
                 "marginBottom": 5,
               }
             }

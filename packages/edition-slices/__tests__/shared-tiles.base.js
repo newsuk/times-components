@@ -2,11 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
-import {
-  PrimaryTile,
-  SecondaryTile,
-  SecondaryTileImageReversed
-} from "../src/tiles";
+import { TileA, TileB, TileC } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -21,40 +17,30 @@ const leadOneAndOneData = leadOneAndOneDataGenerator({
 export default () => {
   const tests = [
     {
-      name: "primary tile",
+      name: "tile a",
       test: () => {
         const output = TestRenderer.create(
-          <PrimaryTile tile={leadOneAndOneData.lead} withImage />
+          <TileA tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
       }
     },
     {
-      name: "primary tile without image",
+      name: "tile b",
       test: () => {
         const output = TestRenderer.create(
-          <PrimaryTile tile={leadOneAndOneData.lead} />
+          <TileB tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
       }
     },
     {
-      name: "secondary tile",
+      name: "tile c",
       test: () => {
         const output = TestRenderer.create(
-          <SecondaryTile tile={leadOneAndOneData.lead} />
-        );
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "secondary image reversed tile",
-      test: () => {
-        const output = TestRenderer.create(
-          <SecondaryTileImageReversed tile={leadOneAndOneData.lead} withImage />
+          <TileC tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

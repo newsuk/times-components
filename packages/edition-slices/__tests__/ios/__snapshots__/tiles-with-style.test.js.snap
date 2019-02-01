@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary tile 1`] = `
+exports[`1. tile a 1`] = `
 <View>
-  <View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 10,
+        "marginVertical": 5,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -31,9 +38,9 @@ exports[`1. primary tile 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 32,
+          "fontSize": 35,
           "fontWeight": "900",
-          "lineHeight": 32,
+          "lineHeight": 35,
           "marginBottom": 5,
         }
       }
@@ -45,7 +52,6 @@ exports[`1. primary tile 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "blue",
         "marginBottom": 10,
         "width": "100%",
       }
@@ -56,76 +62,16 @@ exports[`1. primary tile 1`] = `
 </View>
 `;
 
-exports[`2. primary tile without image 1`] = `
+exports[`2. tile b 1`] = `
 <View>
-  <View>
-    <View
-      style={
-        Object {
-          "marginBottom": 0,
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "#1D1D1B",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 14,
-            "marginBottom": 0,
-          }
-        }
-      >
-        ROYALS
-      </Text>
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 32,
-          "fontWeight": "900",
-          "lineHeight": 32,
-          "marginBottom": 5,
-        }
-      }
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-    <ArticleFlags />
-  </View>
-  <Text
+  <View
     style={
       Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
+        "marginHorizontal": 10,
+        "marginVertical": 5,
       }
     }
   >
-    <Text>
-      
-      The 
-      <Text>
-        Duke of Edinburgh
-      </Text>
-       could be charged with driving without due care and attention after his car accident yesterday
-      ...
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`3. secondary tile 1`] = `
-<View>
-  <View>
     <View
       style={
         Object {
@@ -156,7 +102,7 @@ exports[`3. secondary tile 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 22,
           "marginBottom": 5,
         }
       }
@@ -187,20 +133,10 @@ exports[`3. secondary tile 1`] = `
       </Text>
     </Text>
   </View>
-  <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <Image />
-  </View>
 </View>
 `;
 
-exports[`4. secondary image reversed tile 1`] = `
+exports[`3. tile c 1`] = `
 <View>
   <View
     style={
@@ -243,7 +179,7 @@ exports[`4. secondary image reversed tile 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 22,
           "marginBottom": 5,
         }
       }

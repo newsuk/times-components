@@ -88,17 +88,17 @@ exports[`2. lead one and one slice 1`] = `
                   ]
                 }
               />
-            </div>
-            <div>
-              <span>
-                
-                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-              </span>
-              <span>
-                 
-                The intelligence
-                ...
-              </span>
+              <div>
+                <span>
+                  
+                  GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+                </span>
+                <span>
+                   
+                  The intelligence
+                  ...
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -129,17 +129,6 @@ exports[`3. secondary one slice 1`] = `
         ]
       }
     />
-    <div>
-      <span>
-        
-        The 
-        <span>
-          Duke of Edinburgh
-        </span>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </span>
-    </div>
   </div>
   <div>
     <Image
