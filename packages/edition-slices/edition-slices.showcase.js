@@ -35,7 +35,7 @@ export default {
         const slice = mockSecondaryOneSlice();
         return <SecondaryOneSlice secondary={slice.secondary} />;
       },
-      name: "Secondary One",
+      name: "Secondary One (A)",
       type: "story"
     },
     {
@@ -50,7 +50,7 @@ export default {
           />
         );
       },
-      name: "Secondary Four",
+      name: "Secondary Four (4xC)",
       type: "story"
     }
   ],

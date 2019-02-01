@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SecondaryTile } from "../../tiles";
+import { TileA } from "../../tiles";
 
-const SecondaryOneSlice = ({ secondary }) => <SecondaryTile tile={secondary} />;
+const SecondaryOneSlice = ({ secondary }) => <TileA tile={secondary} />;
 
 SecondaryOneSlice.propTypes = {
   secondary: PropTypes.shape({}).isRequired

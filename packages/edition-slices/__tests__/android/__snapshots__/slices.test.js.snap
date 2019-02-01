@@ -126,17 +126,6 @@ exports[`3. secondary one slice 1`] = `
         ]
       }
     />
-    <Text>
-      <Text>
-        
-        The 
-        <Text>
-          Duke of Edinburgh
-        </Text>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </Text>
-    </Text>
   </View>
   <View>
     <Image
