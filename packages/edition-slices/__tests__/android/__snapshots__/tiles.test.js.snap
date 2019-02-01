@@ -134,7 +134,7 @@ exports[`5. tile e 1`] = `
   <View>
     <Image
       aspectRatio={0.8}
-      uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=654%2C817%2C1585%2C107"
+      uri="http://image.io/4by5"
     />
   </View>
   <View>

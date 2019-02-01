@@ -25,8 +25,7 @@ export default ({ imageUrl } = {}) => ({
         },
         crop45: {
           ratio: "4:5",
-          url:
-            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=654%2C817%2C1585%2C107"
+          url: "http://image.io/4by5"
         },
         id: "372bc095-34c4-47e4-8b1e-d352f5641ee5",
         title:
