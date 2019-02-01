@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.4...@times-components/interactive-wrapper@0.2.5) (2019-02-01)
+
+
+### Bug Fixes
+
+* disable scroll in interactive web wrapper ([#1655](https://github.com/newsuk/times-components/issues/1655)) ([69fe0a8](https://github.com/newsuk/times-components/commit/69fe0a8))
+
+
+
+
+
 ## [0.2.4](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.3...@times-components/interactive-wrapper@0.2.4) (2019-01-30)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
