@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
@@ -15,17 +15,21 @@ import styles from "../styles";
 
 const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
   <MetaContainer>
-    <Meta style={styles.meta}>
-      <Context.Consumer>
-        {({ theme: { sectionColour } }) => (
-          <ArticleBylineWithLinks
-            ast={byline}
-            color={sectionColour || colours.section.default}
-          />
-        )}
-      </Context.Consumer>
-    </Meta>
-    <Separator />
+    {byline && (
+      <Fragment>
+        <Meta style={styles.meta}>
+          <Context.Consumer>
+            {({ theme: { sectionColour } }) => (
+              <ArticleBylineWithLinks
+                ast={byline}
+                color={sectionColour || colours.section.default}
+              />
+            )}
+          </Context.Consumer>
+        </Meta>
+        <Separator />
+      </Fragment>
+    )}
     <Meta style={styles.meta}>
       <DatePublicationContainer style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />

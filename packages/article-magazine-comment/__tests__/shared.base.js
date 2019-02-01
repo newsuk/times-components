@@ -138,7 +138,29 @@ const negativeTests = [
       const testRenderer = TestRenderer.create(
         <ArticleMagazineComment
           {...sharedProps}
-          article={articleFixture({ ...testFixture, author: null })}
+          article={articleFixture({
+            ...testFixture,
+            bylines: [
+              {
+                byline: [
+                  {
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: "Rick Broadbent"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "inline"
+                  }
+                ],
+                image: null
+              }
+            ]
+          })}
         />
       );
 

@@ -16,17 +16,19 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={styles.metaContainer}>
-    <View style={styles.meta}>
-      <Context.Consumer>
-        {({ theme: { sectionColour } }) => (
-          <ArticleBylineWithLinks
-            ast={byline}
-            color={sectionColour || colours.section.default}
-            onAuthorPress={onAuthorPress}
-          />
-        )}
-      </Context.Consumer>
-    </View>
+    {byline && (
+      <View style={styles.meta}>
+        <Context.Consumer>
+          {({ theme: { sectionColour } }) => (
+            <ArticleBylineWithLinks
+              ast={byline}
+              color={sectionColour || colours.section.default}
+              onAuthorPress={onAuthorPress}
+            />
+          )}
+        </Context.Consumer>
+      </View>
+    )}
     <View style={styles.meta}>
       <Text style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />

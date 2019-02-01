@@ -1973,9 +1973,42 @@ const addProp = (obj, key, value) => {
   return obj;
 };
 
+const defaultBylines = [
+  {
+    __typename: "TextByline",
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: "Rick Broadbent"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ],
+    image: {
+      __typename: "Image",
+      caption: "some caption",
+      credits: "some credits",
+      crop: {
+        ratio: "1:1",
+        url: "https://image.io"
+      },
+      id: "372bc095-34c4-47e4-8b1e-d352f5641ee5",
+      title: "some title"
+    }
+  }
+];
+
 const makeDefaultConfig = ({
   author = defaultAuthor,
   byline = defaultByline,
+  bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
@@ -1996,6 +2029,7 @@ const makeDefaultConfig = ({
 } = {}) => ({
   author,
   byline,
+  bylines,
   commentCount,
   commentsEnabled,
   content,

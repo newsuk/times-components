@@ -16,10 +16,7 @@ class ArticlePage extends Component {
   renderHeader() {
     const { article } = this.props;
     const {
-      author = {
-        image: null
-      },
-      byline,
+      bylines,
       flags,
       hasVideo,
       headline,
@@ -30,10 +27,24 @@ class ArticlePage extends Component {
       standfirst
     } = article;
 
+    const authorImage =
+      bylines &&
+      bylines.length > 0 &&
+      bylines[0].image &&
+      Object.keys(bylines[0].image).length !== 0 &&
+      bylines[0].image.crop
+        ? bylines[0].image.crop.url
+        : null;
+
+    const authorByline =
+      bylines && bylines.length > 0 && Object.keys(bylines[0]).length !== 0
+        ? bylines[0].byline
+        : null;
+
     return (
       <ArticleHeader
-        authorImage={author.image}
-        byline={byline}
+        authorImage={authorImage}
+        byline={authorByline}
         flags={flags}
         hasVideo={hasVideo}
         headline={getHeadline(headline, shortHeadline)}

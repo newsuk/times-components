@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
@@ -17,18 +17,22 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={isTablet && styles.metaContainerTabletFlow}>
-    <View style={styles.meta}>
-      <Context.Consumer>
-        {({ theme: { sectionColour } }) => (
-          <ArticleBylineWithLinks
-            ast={byline}
-            color={sectionColour || colours.section.default}
-            onAuthorPress={onAuthorPress}
-          />
-        )}
-      </Context.Consumer>
-    </View>
-    {isTablet && <View style={styles.seperator} />}
+    {byline && (
+      <Fragment>
+        <View style={styles.meta}>
+          <Context.Consumer>
+            {({ theme: { sectionColour } }) => (
+              <ArticleBylineWithLinks
+                ast={byline}
+                color={sectionColour || colours.section.default}
+                onAuthorPress={onAuthorPress}
+              />
+            )}
+          </Context.Consumer>
+        </View>
+        {isTablet && <View style={styles.seperator} />}
+      </Fragment>
+    )}
     <View style={styles.meta}>
       <Text
         style={[

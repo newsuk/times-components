@@ -37,7 +37,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                     "children": Array [
                       Object {
                         "attributes": Object {
-                          "value": "Some byline",
+                          "value": "Rick Broadbent",
                         },
                         "children": Array [],
                         "name": "text",
@@ -188,7 +188,7 @@ exports[`4. an article with ads 1`] = `
                     "children": Array [
                       Object {
                         "attributes": Object {
-                          "value": "Some byline",
+                          "value": "Rick Broadbent",
                         },
                         "children": Array [],
                         "name": "text",
@@ -355,7 +355,7 @@ exports[`7. an article with no author 1`] = `
                     "children": Array [
                       Object {
                         "attributes": Object {
-                          "value": "Some byline",
+                          "value": "Rick Broadbent",
                         },
                         "children": Array [],
                         "name": "text",
