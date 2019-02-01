@@ -13,7 +13,11 @@ const ArticleImageNative = props => {
   return (
     <ResponsiveContext.Consumer>
       {({ isTablet }) => (
-        <View style={isTablet && styles.imageContainerTablet}>
+        <View
+          style={
+            isTablet && display !== "fullwidth" && styles.imageContainerTablet
+          }
+        >
           <View key={uri} style={styles[`${display}Container`]}>
             <ArticleImage {...props} />
           </View>

@@ -2,12 +2,20 @@ import { StyleSheet } from "react-native";
 import {
   spacing,
   tabletRowPadding,
-  tabletWidth
+  tabletWidth,
+  tabletWidthMax
 } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: 0
+  },
+  fullwidthCaption: {
+    alignSelf: "center",
+    maxWidth: tabletWidth - tabletRowPadding
+  },
+  fullwidthContainer: {
+    maxWidth: tabletWidthMax
   },
   imageContainerTablet: {
     alignSelf: "center",

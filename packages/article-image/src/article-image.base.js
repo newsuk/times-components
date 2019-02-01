@@ -1,38 +1,42 @@
 import React from "react";
 import { View } from "react-native";
-import Caption from "@times-components/caption";
+import Caption, { CentredCaption } from "@times-components/caption";
 import { ModalImage } from "@times-components/image";
 import InsetCaption from "./inset-caption";
 import InlineImage from "./inline-image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
 
-const renderCaption = (display, caption, credits) => {
-  if (!caption && !credits) {
-    return null;
+const captionStyle = {
+  secondary: {
+    container: {
+      paddingTop: 0
+    }
+  }
+};
+
+function getCaptionComponent(display, caption, credits) {
+  if (display === "primary") {
+    return <InsetCaption caption={caption} credits={credits} />;
   }
 
-  const captionStyle = {
-    secondary: {
-      container: {
-        paddingTop: 0
-      }
-    }
-  };
-
-  const CaptionComponent =
-    display === "primary" ? (
-      <InsetCaption caption={caption} credits={credits} />
-    ) : (
-      <Caption credits={credits} style={captionStyle[display]} text={caption} />
-    );
+  const CaptionComponent = display === "fullwidth" ? CentredCaption : Caption;
 
   return (
-    <View key="caption" style={styles[`${display}Caption`]}>
-      {CaptionComponent}
-    </View>
+    <CaptionComponent
+      credits={credits}
+      style={captionStyle[display]}
+      text={caption}
+    />
   );
-};
+}
+
+const renderCaption = (display, caption, credits) =>
+  caption || credits ? (
+    <View key="caption" style={styles[`${display}Caption`]}>
+      {getCaptionComponent(display, caption, credits)}
+    </View>
+  ) : null;
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
   const { display, highResSize, lowResSize, ratio, uri } = imageOptions;

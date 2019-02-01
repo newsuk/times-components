@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. primary image with caption and credits 1`] = `
+exports[`1. mobile primary image with caption and credits 1`] = `
 <View>
   <View
     style={
@@ -66,8 +66,232 @@ exports[`1. primary image with caption and credits 1`] = `
 </View>
 `;
 
-exports[`2. secondary image with caption and credits 1`] = `
+exports[`2. tablet primary image with caption and credits 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": 640,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+        "paddingBottom": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <View>
+      <ModalImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Some caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 16,
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. mobile fullwidth image with caption and credits 1`] = `
 <View>
+  <View
+    style={
+      Object {
+        "maxWidth": 1180,
+      }
+    }
+  >
+    <View>
+      <ModalImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "maxWidth": 640,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "paddingTop": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 16,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 16,
+                "textAlign": "center",
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. tablet fullwidth image with caption and credits 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "maxWidth": 1180,
+      }
+    }
+  >
+    <View>
+      <ModalImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        uri="https://img/someImage"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "maxWidth": 640,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "paddingTop": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 16,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 16,
+                "textAlign": "center",
+              }
+            }
+          >
+            SOME CREDITS
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. secondary image with caption and credits 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": 640,
+    }
+  }
+>
   <View
     style={
       Object {
@@ -148,8 +372,15 @@ exports[`2. secondary image with caption and credits 1`] = `
 </View>
 `;
 
-exports[`3. inline image (landscape) with caption and credits 1`] = `
-<View>
+exports[`6. inline image (landscape) with caption and credits 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": 640,
+    }
+  }
+>
   <View
     style={
       Object {
@@ -230,8 +461,15 @@ exports[`3. inline image (landscape) with caption and credits 1`] = `
 </View>
 `;
 
-exports[`4. inline image (portrait) with caption and credits 1`] = `
-<View>
+exports[`7. inline image (portrait) with caption and credits 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": 640,
+    }
+  }
+>
   <View
     style={
       Object {
@@ -304,79 +542,6 @@ exports[`4. inline image (portrait) with caption and credits 1`] = `
             }
           >
             PORTRAIT CREDITS
-          </Text>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`should render an ArticleImage with Responsive Tablet styling 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "width": 640,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flexDirection": "column",
-        "paddingBottom": 15,
-        "width": "100%",
-      }
-    }
-  >
-    <View>
-      <ModalImage
-        aspectRatio={1.25}
-        caption={
-          <Caption
-            credits="Some credits"
-            text="Some caption"
-          />
-        }
-        uri="https://img/someImage"
-      />
-    </View>
-    <View>
-      <View>
-        <View
-          style={
-            Object {
-              "paddingHorizontal": 10,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 16,
-              }
-            }
-          >
-            Some caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 16,
-              }
-            }
-          >
-            SOME CREDITS
           </Text>
         </View>
       </View>
