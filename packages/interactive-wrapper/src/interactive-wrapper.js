@@ -86,9 +86,9 @@ class InteractiveWrapper extends Component {
           ref={webview => {
             this.webview = webview;
           }}
+          scrollEnabled={false}
           source={{ uri }}
           style={{ height }}
-          scrollEnabled={false}
           {...InteractiveWrapper.postMessageBugWorkaround()}
         />
       </View>
