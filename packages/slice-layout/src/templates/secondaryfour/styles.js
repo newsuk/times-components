@@ -4,19 +4,23 @@ const styles = {
   },
   item: {
     borderStyle: "solid",
-    padding: 5,
+    paddingBottom: 10,
     width: "50%"
   },
   itemContainer: {
     borderBottomWidth: 0.5,
     borderStyle: "solid",
     flexDirection: "row",
-    margin: 5
+    marginBottom: 12,
+    marginLeft: 12,
+    marginRight: 12,
+    marginTop: 10
   },
   itemSeparator: {
-    borderLeftWidth: 0.25,
+    borderLeftWidth: 0.5,
     borderStyle: "solid",
-    margin: 5
+    marginLeft: 9,
+    marginRight: 9
   }
 };
 
