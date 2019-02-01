@@ -27,7 +27,7 @@ export default {
         const slice = mockLeadOneAndOneSlice();
         return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
       },
-      name: "Lead One And One (A + B)",
+      name: "Lead One And One (AB)",
       type: "story"
     },
     {
@@ -50,7 +50,7 @@ export default {
           />
         );
       },
-      name: "Secondary Four (4xC)",
+      name: "Secondary Four (CCCC)",
       type: "story"
     }
   ],
