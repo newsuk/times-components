@@ -1,9 +1,6 @@
-import { StyleSheet } from "react-native";
-import styleguideFactory from "@times-components/styleguide";
+import { fonts, spacing } from "@times-components/styleguide";
 
-const { fonts, spacing } = styleguideFactory();
-
-const styles = StyleSheet.create({
+const styles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 22,
@@ -13,6 +10,6 @@ const styles = StyleSheet.create({
     marginHorizontal: spacing(2),
     marginVertical: spacing(1)
   }
-});
+};
 
 export default styles;

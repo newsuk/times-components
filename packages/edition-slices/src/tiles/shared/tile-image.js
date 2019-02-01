@@ -11,7 +11,7 @@ const TileImage = ({ aspectRatio, style, uri }) => (
 
 TileImage.propTypes = {
   aspectRatio: PropTypes.number.isRequired,
-  style: PropTypes.number,
+  style: PropTypes.shape({}),
   uri: PropTypes.string.isRequired
 };
 

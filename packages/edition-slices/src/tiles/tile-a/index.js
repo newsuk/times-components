@@ -4,35 +4,17 @@ import PropTypes from "prop-types";
 import { TileImage, TileSummary } from "../shared";
 import styles from "./styles";
 
-const TileA = ({
-  tile: {
-    article: {
-      flags,
-      hasVideo,
-      headline,
-      label,
-      leadAsset: {
-        crop169: { url: imageUrl }
-      },
-      section,
-      shortHeadline
-    }
-  }
-}) => (
+const TileA = ({ tile }) => (
   <View>
     <TileSummary
-      flags={flags}
-      hasVideo={hasVideo}
-      headline={headline || shortHeadline}
       headlineStyle={styles.headline}
-      label={label}
-      section={section}
       style={styles.summaryContainer}
+      tile={tile}
     />
     <TileImage
       aspectRatio={16 / 9}
       style={styles.imageContainer}
-      uri={imageUrl}
+      uri={tile.article.leadAsset.crop169.url}
     />
   </View>
 );
