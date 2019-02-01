@@ -12,7 +12,7 @@ export default {
         const slice = mockLeadOneFullWidthSlice();
         return <TileA tile={slice.lead} />;
       },
-      name: "TileA (Bottom image, 35pt headline, no summary)",
+      name: "TileA (Bottom image, 35pt headline, no teaser)",
       type: "story"
     },
     {
@@ -20,7 +20,7 @@ export default {
         const slice = mockLeadOneFullWidthSlice();
         return <TileB tile={slice.lead} />;
       },
-      name: "TileB (No image, 22pt headline, with summary)",
+      name: "TileB (No image, 22pt headline, with teaser)",
       type: "story"
     },
     {
@@ -28,7 +28,7 @@ export default {
         const slice = mockSecondaryFourSlice();
         return <TileC tile={slice.secondary1} />;
       },
-      name: "TileC (Top image, 22pt headline, no summary",
+      name: "TileC (Top image, 22pt headline, no teaser",
       type: "story"
     }
   ],
