@@ -14,6 +14,7 @@ import blankFixture from "../fixtures/blank";
 import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
 import videoLabelFixture from "../fixtures/video-label";
+import straplineFixture from "../fixtures/strapline";
 
 jest.mock("@times-components/article-byline", () => ({
   __esModule: true,
@@ -35,6 +36,7 @@ export default () => {
   const paragraph = "Test paragraph";
   const paragraph1 = "Test paragraph 1.";
   const paragraph2 = "Test paragraph 2";
+  const strapline = "Test Strapline";
 
   const tests = [
     {
@@ -209,6 +211,24 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleSummary
             {...videoLabelFixture({ byline, headline, label, paragraph })}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary component with a strapline",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummary
+            {...straplineFixture({
+              flags,
+              headline,
+              label,
+              paragraph,
+              strapline
+            })}
           />
         );
 

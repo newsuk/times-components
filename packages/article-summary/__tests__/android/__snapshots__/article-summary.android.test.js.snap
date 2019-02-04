@@ -526,3 +526,83 @@ exports[`12. article summary component with a video label 1`] = `
   </Text>
 </View>
 `;
+
+exports[`13. article summary component with a strapline 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </View>
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text
+    accessibilityRole="heading"
+    aria-level="4"
+  >
+    Test Strapline
+  </Text>
+  <ArticleFlags
+    flags={
+      Array [
+        "UPDATED",
+        "EXCLUSIVE",
+      ]
+    }
+  />
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;
