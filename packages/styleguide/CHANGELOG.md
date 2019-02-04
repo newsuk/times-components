@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.18.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.17.4...@times-components/styleguide@3.18.0) (2019-02-04)
+
+
+### Features
+
+* Tile D and E ([#1658](https://github.com/newsuk/times-components/issues/1658)) ([9668f6c](https://github.com/newsuk/times-components/commit/9668f6c))
+
+
+
+
+
 ## [3.17.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.17.3...@times-components/styleguide@3.17.4) (2019-01-30)
 
 

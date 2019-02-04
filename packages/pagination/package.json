@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -41,7 +41,7 @@
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.3.4",
     "@times-components/tealium-utils": "0.7.16",
-    "@times-components/test-utils": "2.1.8",
+    "@times-components/test-utils": "2.1.9",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -68,8 +68,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/link": "3.2.7",
-    "@times-components/styleguide": "3.17.4",
+    "@times-components/link": "3.2.8",
+    "@times-components/styleguide": "3.18.0",
     "@times-components/svgs": "2.3.2",
     "@times-components/tracking": "2.3.4",
     "prop-types": "15.6.2",
