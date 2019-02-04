@@ -11,6 +11,7 @@ import DatePublication from "@times-components/date-publication";
 import renderTrees from "@times-components/markup-forest";
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";
+import ArticleSummaryStrapline from "./article-summary-strapline";
 import renderer from "./article-summary-renderer";
 import styles from "./styles";
 import summarise from "./summarise";
@@ -27,7 +28,8 @@ const ArticleSummary = props => {
     flags,
     headline,
     labelProps,
-    style
+    style,
+    strapline
   } = props;
 
   const renderByline = () => {
@@ -64,6 +66,7 @@ const ArticleSummary = props => {
       {renderLabel()}
       {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
+      {strapline()}
       {flags()}
       {content()}
       {datePublicationProps ? (
@@ -94,6 +97,7 @@ ArticleSummary.propTypes = {
     isVideo: PropTypes.bool,
     title: PropTypes.string
   }),
+  strapline: PropTypes.func,
   style: PropTypes.shape({})
 };
 
@@ -104,12 +108,14 @@ ArticleSummary.defaultProps = {
   flags: () => null,
   headline: () => null,
   labelProps: null,
+  strapline: () => null,
   style: null
 };
 
 export {
   ArticleSummaryContent,
   ArticleSummaryHeadline,
+  ArticleSummaryStrapline,
   renderAst,
   renderer,
   summarise

@@ -30,7 +30,8 @@ const mapping = {
   },
   headlineRegular: {
     pageComponentHeadline: 30,
-    smallestHeadline: 26
+    smallestHeadline: 26,
+    strapline: 21
   },
   stMagazine: {
     headline: 35,

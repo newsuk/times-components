@@ -28,6 +28,7 @@ const fontSizes = {
   sliceHeadline: 32,
   smallestHeadline: 20,
   smallHeadline: 22,
+  strapline: 19,
   teaser: 14,
   tertiary: 15
 };
