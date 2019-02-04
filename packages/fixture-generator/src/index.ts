@@ -8,7 +8,8 @@ import mockEditionSlice, {
   mockLeadOneAndTwoSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
-  mockSecondaryTwoNoPicAndTwoSlice
+  mockSecondaryTwoNoPicAndTwoSlice,
+  mockList2AndSixNoPicSlice
 } from "./mock-slice";
 import MockTopic from "./mock-topic";
 
@@ -20,6 +21,7 @@ export {
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
+  mockList2AndSixNoPicSlice,
   MockArticle,
   mockEditionSlice,
   MockImage,

@@ -30,14 +30,17 @@ const ListTwoAndSixNoPic = ({
         <View key={renderRowItem1.props.id} style={styles.leadItem}>
           {renderRowItem1}
         </View>
-        <View style={styles.keySeparator} />
+        <View style={styles.keyRightSeparator} />
         <View key={renderRowItem2.props.id} style={styles.leadItem}>
           {renderRowItem2}
         </View>
       </View>
       <View style={styles.supportContainer}>
         {supportItems.map(item => (
-          <View style={styles.supportItem}>{item()}</View>
+          <View>
+            <View style={styles.supportItem}>{item()}</View>
+            <View style={styles.keyBottomSeparator} />
+          </View>
         ))}
       </View>
     </View>

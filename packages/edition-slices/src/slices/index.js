@@ -5,3 +5,4 @@ export { default as SecondaryFourSlice } from "./secondaryfour";
 export {
   default as SecondaryTwoNoPicAndTwoSlice
 } from "./secondarytwonopicandtwo";
+export { default as ListTwoAndSixNoPicSlice } from "./listtwoandsixnopic";
