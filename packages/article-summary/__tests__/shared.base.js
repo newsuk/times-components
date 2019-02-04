@@ -14,6 +14,7 @@ import blankFixture from "../fixtures/blank";
 import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
 import videoLabelFixture from "../fixtures/video-label";
+import straplineFixture from "../fixtures/strapline";
 
 jest.mock("@times-components/article-byline", () => ({
   __esModule: true,
@@ -221,7 +222,7 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <ArticleSummary
-            {...defaultFixture({
+            {...straplineFixture({
               flags,
               headline,
               label,
