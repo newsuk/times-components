@@ -1,3 +1,4 @@
+import { Dimensions } from "react-native";
 import { colours, fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
@@ -13,7 +14,7 @@ const styles = {
   },
   imageContainer: {
     borderColor: colours.functional.contrast,
-    borderRadius: "50%",
+    borderRadius: Dimensions.get('window').width / 4,
     marginLeft: "auto",
     marginRight: "auto",
     overflow: "hidden",
