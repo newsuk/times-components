@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.8.9...@times-components/article-skeleton@0.9.0) (2019-02-04)
+
+
+### Features
+
+* Article Summary Strapline ([#1660](https://github.com/newsuk/times-components/issues/1660)) ([b33d90c](https://github.com/newsuk/times-components/commit/b33d90c))
+
+
+
+
+
 ## [0.8.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.8.7...@times-components/article-skeleton@0.8.9) (2019-02-04)
 
 **Note:** Version bump only for package @times-components/article-skeleton
