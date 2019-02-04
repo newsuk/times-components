@@ -2,13 +2,13 @@ import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    margin: spacing(2)
+    width: "100%"
   },
   itemSeparator: {
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
     borderStyle: "solid",
-    marginVertical: spacing(2)
+    marginHorizontal: spacing(2)
   }
 };
 

@@ -3,7 +3,8 @@ import { colours, fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    flexDirection: "row"
+    flexDirection: "row",
+    padding: spacing(2)
   },
   headline: {
     ...fontFactory({
@@ -13,7 +14,7 @@ const styles = {
   },
   imageContainer: {
     borderColor: colours.functional.contrast,
-    borderRadius: Dimensions.get('window').width / 4,
+    borderRadius: Dimensions.get("window").width / 4,
     marginLeft: "auto",
     marginRight: "auto",
     overflow: "hidden",
