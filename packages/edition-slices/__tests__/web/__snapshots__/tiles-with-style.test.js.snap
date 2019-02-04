@@ -43,9 +43,7 @@ exports[`1. tile a 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3"
   >
@@ -81,7 +79,7 @@ exports[`1. tile a 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`2. tile b 1`] = `
@@ -147,9 +145,7 @@ exports[`2. tile b 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3 S6"
   >
@@ -194,7 +190,7 @@ exports[`2. tile b 1`] = `
       </span>
     </div>
   </div>
-</div>
+</Link>
 `;
 
 exports[`3. tile c 1`] = `
@@ -236,9 +232,7 @@ exports[`3. tile c 1`] = `
 }
 </style>
 
-<div
-  className="S3"
->
+<Link>
   <div
     className="IS1 S1"
   >
@@ -274,7 +268,7 @@ exports[`3. tile c 1`] = `
       }
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`4. tile d 1`] = `
@@ -318,19 +312,9 @@ exports[`4. tile d 1`] = `
   padding-left: 10px;
   width: 55%;
 }
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
-<div
-  className="IS5 S1"
->
+<Link>
   <div
     className="IS1 S1"
   >
@@ -366,7 +350,7 @@ exports[`4. tile d 1`] = `
       }
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`5. tile e 1`] = `
@@ -410,19 +394,9 @@ exports[`5. tile e 1`] = `
   padding-left: 10px;
   width: 55%;
 }
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
-<div
-  className="IS5 S1"
->
+<Link>
   <div
     className="IS1 S1"
   >
@@ -458,5 +432,5 @@ exports[`5. tile e 1`] = `
       }
     />
   </div>
-</div>
+</Link>
 `;

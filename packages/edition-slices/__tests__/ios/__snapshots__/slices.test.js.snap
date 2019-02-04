@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one full width slice 1`] = `
-<View>
+<Link>
   <View>
     <View>
       <Text>
@@ -28,14 +28,14 @@ exports[`1. lead one full width slice 1`] = `
       uri="https://img/someImage"
     />
   </View>
-</View>
+</Link>
 `;
 
 exports[`2. lead one and one slice 1`] = `
 <View>
   <View>
     <View>
-      <View>
+      <Link>
         <View>
           <View>
             <Text>
@@ -62,12 +62,12 @@ exports[`2. lead one and one slice 1`] = `
             uri="https://img/someImage"
           />
         </View>
-      </View>
+      </Link>
     </View>
   </View>
   <View>
     <View>
-      <View>
+      <Link>
         <View>
           <View>
             <Text>
@@ -99,14 +99,14 @@ exports[`2. lead one and one slice 1`] = `
             </Text>
           </Text>
         </View>
-      </View>
+      </Link>
     </View>
   </View>
 </View>
 `;
 
 exports[`3. secondary one slice 1`] = `
-<View>
+<Link>
   <View>
     <View>
       <Text>
@@ -133,14 +133,16 @@ exports[`3. secondary one slice 1`] = `
       uri="https://img/someImage"
     />
   </View>
-</View>
+</Link>
 `;
 
 exports[`4. secondary four 1`] = `
 <View>
   <View>
     <View>
-      <View>
+      <Link
+        url="/article/123"
+      >
         <View>
           <Image
             aspectRatio={1.7777777777777777}
@@ -167,11 +169,13 @@ exports[`4. secondary four 1`] = `
             }
           />
         </View>
-      </View>
+      </Link>
     </View>
     <View />
     <View>
-      <View>
+      <Link
+        url="/article/123"
+      >
         <View>
           <Image
             aspectRatio={1.7777777777777777}
@@ -198,12 +202,14 @@ exports[`4. secondary four 1`] = `
             }
           />
         </View>
-      </View>
+      </Link>
     </View>
   </View>
   <View>
     <View>
-      <View>
+      <Link
+        url="/article/123"
+      >
         <View>
           <Image
             aspectRatio={1.7777777777777777}
@@ -230,11 +236,13 @@ exports[`4. secondary four 1`] = `
             }
           />
         </View>
-      </View>
+      </Link>
     </View>
     <View />
     <View>
-      <View>
+      <Link
+        url="/article/123"
+      >
         <View>
           <Image
             aspectRatio={1.7777777777777777}
@@ -261,7 +269,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </View>
-      </View>
+      </Link>
     </View>
   </View>
 </View>

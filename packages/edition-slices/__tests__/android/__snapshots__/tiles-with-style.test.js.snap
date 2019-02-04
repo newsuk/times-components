@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. tile a 1`] = `
-<View>
+<Link>
   <View
     style={
       Object {
@@ -59,11 +59,11 @@ exports[`1. tile a 1`] = `
   >
     <Image />
   </View>
-</View>
+</Link>
 `;
 
 exports[`2. tile b 1`] = `
-<View>
+<Link>
   <View
     style={
       Object {
@@ -133,11 +133,11 @@ exports[`2. tile b 1`] = `
       </Text>
     </Text>
   </View>
-</View>
+</Link>
 `;
 
 exports[`3. tile c 1`] = `
-<View>
+<Link>
   <View
     style={
       Object {
@@ -188,17 +188,11 @@ exports[`3. tile c 1`] = `
     </Text>
     <ArticleFlags />
   </View>
-</View>
+</Link>
 `;
 
 exports[`4. tile d 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-    }
-  }
->
+<Link>
   <View
     style={
       Object {
@@ -256,17 +250,11 @@ exports[`4. tile d 1`] = `
     </Text>
     <ArticleFlags />
   </View>
-</View>
+</Link>
 `;
 
 exports[`5. tile e 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-    }
-  }
->
+<Link>
   <View
     style={
       Object {
@@ -324,5 +312,5 @@ exports[`5. tile e 1`] = `
     </Text>
     <ArticleFlags />
   </View>
-</View>
+</Link>
 `;

@@ -43,9 +43,7 @@ exports[`1. lead one full width slice 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3"
   >
@@ -81,7 +79,7 @@ exports[`1. lead one full width slice 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`2. lead one and one slice 1`] = `
@@ -186,9 +184,7 @@ exports[`2. lead one and one slice 1`] = `
       <div
         className="responsiveweb__Base-iFMijX gmChNY responsiveweb__Base-drDvXX xjUQC responsiveweb__Base-jIurKX hSGlCR S2"
       >
-        <div
-          className="S2"
-        >
+        <Link>
           <div
             className="IS3 S4"
           >
@@ -224,7 +220,7 @@ exports[`2. lead one and one slice 1`] = `
               uri="https://img/someImage"
             />
           </div>
-        </div>
+        </Link>
       </div>
       <div
         className="responsiveweb-fhQnWB dWVMyV S2"
@@ -235,9 +231,7 @@ exports[`2. lead one and one slice 1`] = `
         <div
           className="responsiveweb-brngwq gvaiUN S2"
         >
-          <div
-            className="S2"
-          >
+          <Link>
             <div
               className="IS7 S4"
             >
@@ -282,7 +276,7 @@ exports[`2. lead one and one slice 1`] = `
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -339,9 +333,7 @@ exports[`3. secondary one slice 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3 S4"
   >
@@ -377,7 +369,7 @@ exports[`3. secondary one slice 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`4. secondary four 1`] = `
@@ -551,8 +543,8 @@ exports[`4. secondary four 1`] = `
     <div
       className="IS4 S3"
     >
-      <div
-        className="S3"
+      <Link
+        url="/article/123"
       >
         <div
           className="IS1 S1"
@@ -589,7 +581,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
     <div
       className="IS5 S5"
@@ -597,8 +589,8 @@ exports[`4. secondary four 1`] = `
     <div
       className="IS9 S3"
     >
-      <div
-        className="S3"
+      <Link
+        url="/article/123"
       >
         <div
           className="IS6 S1"
@@ -635,7 +627,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
   </div>
   <div
@@ -644,8 +636,8 @@ exports[`4. secondary four 1`] = `
     <div
       className="IS14 S3"
     >
-      <div
-        className="S3"
+      <Link
+        url="/article/123"
       >
         <div
           className="IS11 S1"
@@ -682,7 +674,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
     <div
       className="IS15 S5"
@@ -690,8 +682,8 @@ exports[`4. secondary four 1`] = `
     <div
       className="IS19 S3"
     >
-      <div
-        className="S3"
+      <Link
+        url="/article/123"
       >
         <div
           className="IS16 S1"
@@ -728,7 +720,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
   </div>
 </div>
