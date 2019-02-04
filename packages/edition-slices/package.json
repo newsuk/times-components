@@ -39,6 +39,7 @@
     "@times-components/article-flag": "2.4.6",
     "@times-components/article-summary": "3.6.3",
     "@times-components/image": "4.6.4",
+    "@times-components/link": "3.2.8",
     "@times-components/slice-layout": "0.3.1",
     "@times-components/styleguide": "3.18.0",
     "prop-types": "15.6.2"
