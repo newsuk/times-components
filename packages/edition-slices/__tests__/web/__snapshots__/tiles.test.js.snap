@@ -101,30 +101,32 @@ exports[`3. tile c 1`] = `
 exports[`4. tile d 1`] = `
 <Link>
   <div>
-    <Image
-      aspectRatio={1.5}
-      uri="https://img/someImage"
-    />
-  </div>
-  <div>
+    <div>
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
+    </div>
     <div>
       <div>
-        ROYALS
+        <div>
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
 </Link>
 `;
@@ -132,30 +134,32 @@ exports[`4. tile d 1`] = `
 exports[`5. tile e 1`] = `
 <Link>
   <div>
-    <Image
-      aspectRatio={0.8}
-      uri="http://image.io/4by5"
-    />
-  </div>
-  <div>
+    <div>
+      <Image
+        aspectRatio={0.8}
+        uri="http://image.io/4by5"
+      />
+    </div>
     <div>
       <div>
-        ROYALS
+        <div>
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
 </Link>
 `;

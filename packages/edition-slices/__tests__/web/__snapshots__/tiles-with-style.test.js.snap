@@ -312,43 +312,55 @@ exports[`4. tile d 1`] = `
   padding-left: 10px;
   width: 55%;
 }
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
 </style>
 
 <Link>
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={1.5}
-      uri="https://img/someImage"
-    />
-  </div>
-  <div
-    className="IS4 S1"
+    className="IS5 S1"
   >
     <div
-      className="S1"
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="IS4 S1"
     >
       <div
-        className="IS2 S2"
+        className="S1"
       >
-        ROYALS
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      className="IS3 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
 </Link>
 `;
@@ -394,43 +406,55 @@ exports[`5. tile e 1`] = `
   padding-left: 10px;
   width: 55%;
 }
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
 </style>
 
 <Link>
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={0.8}
-      uri="http://image.io/4by5"
-    />
-  </div>
-  <div
-    className="IS4 S1"
+    className="IS5 S1"
   >
     <div
-      className="S1"
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={0.8}
+        uri="http://image.io/4by5"
+      />
+    </div>
+    <div
+      className="IS4 S1"
     >
       <div
-        className="IS2 S2"
+        className="S1"
       >
-        ROYALS
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      className="IS3 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
 </Link>
 `;
