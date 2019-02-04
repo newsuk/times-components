@@ -25,6 +25,14 @@ const sharedStyles = {
     }),
     marginBottom: spacing(1)
   },
+  strapline: {
+    ...fontFactory({
+      font: "headlineRegular",
+      fontSize: "strapline"
+    }),
+    color: colours.functional.secondary,
+    paddingBottom: spacing(2)
+  },
   text: {
     color: colours.functional.secondary,
     flexWrap: "wrap",

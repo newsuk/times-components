@@ -9,6 +9,7 @@ import noBylineFixture from "./fixtures/no-byline";
 import noLabelFixture from "./fixtures/no-label";
 import videoLabelFixture from "./fixtures/video-label";
 import reviewFixture from "./fixtures/review";
+import straplineFixture from "./fixtures/strapline";
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
@@ -47,6 +48,11 @@ export default {
     {
       component: () => story(<ArticleSummary {...reviewFixture()} />),
       name: "Review/Rating summary",
+      type: "story"
+    },
+    {
+      component: () => story(<ArticleSummary {...straplineFixture()} />),
+      name: "with Strapline",
       type: "story"
     }
   ],
