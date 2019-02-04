@@ -1,11 +1,10 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileImage, TileSummary } from "../shared";
+import { TileImage, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
-const TileD = ({ tile }) => (
-  <View style={styles.container}>
+const TileD = ({ onPress, tile }) => (
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
     <TileImage
       aspectRatio={3 / 2}
       style={styles.imageContainer}
@@ -16,10 +15,11 @@ const TileD = ({ tile }) => (
       style={styles.summaryContainer}
       tile={tile}
     />
-  </View>
+  </TileLink>
 );
 
 TileD.propTypes = {
+  onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 
