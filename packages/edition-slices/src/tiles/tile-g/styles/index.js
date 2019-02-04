@@ -3,8 +3,7 @@ import { colours, fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    flexDirection: "row",
-    margin: spacing(2)
+    flexDirection: "row"
   },
   headline: {
     ...fontFactory({

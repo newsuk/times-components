@@ -5,6 +5,7 @@ import leadOneAndTwoRoles from "./templates/leadoneandtwo/roles";
 import OpinionOneAndTwoSlice from "./templates/opiniononeandtwo";
 import opinionOneAndTwoRoles from "./templates/opiniononeandtwo/roles";
 import SecondaryFourSlice from "./templates/secondaryfour";
+import SecondaryTwoNoPicAndTwoSlice from "./templates/secondarytwonopicandtwo";
 
 export {
   StandardSlice,
@@ -13,5 +14,6 @@ export {
   leadOneAndTwoRoles,
   OpinionOneAndTwoSlice,
   opinionOneAndTwoRoles,
-  SecondaryFourSlice
+  SecondaryFourSlice,
+  SecondaryTwoNoPicAndTwoSlice
 };

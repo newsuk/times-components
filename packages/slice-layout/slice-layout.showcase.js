@@ -5,13 +5,15 @@ import {
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice,
   StandardSlice,
-  SecondaryFourSlice
+  SecondaryFourSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "./src/slice-layout";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
   { backgroundColor: "green", id: 2 },
-  { backgroundColor: "red", id: 3 }
+  { backgroundColor: "red", id: 3 },
+  { backgroundColor: "blue", id: 4 }
 ];
 
 const createItems = noOfItems =>
@@ -187,6 +189,20 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryFourSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <SecondaryTwoNoPicAndTwoSlice
+            renderSecondary1={() => <Support1 id="support1" />}
+            renderSecondary2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support3 id="support3" />}
+            renderSupport2={() => <Support4 id="support4" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryTwoNoPicAndTwoSlice",
       type: "story"
     },
     {

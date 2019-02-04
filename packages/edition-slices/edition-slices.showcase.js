@@ -9,7 +9,8 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryFourSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "./src/slices";
 
 export default {
@@ -60,6 +61,21 @@ export default {
         );
       },
       name: "Secondary Four (CCCC)",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryFourSlice();
+        return (
+          <SecondaryTwoNoPicAndTwoSlice
+            secondary1={slice.secondary1}
+            secondary2={slice.secondary2}
+            support1={slice.secondary3}
+            support2={slice.secondary4}
+          />
+        );
+      },
+      name: "Secondary Two No Pic And Two (BBGG)",
       type: "story"
     }
   ],
