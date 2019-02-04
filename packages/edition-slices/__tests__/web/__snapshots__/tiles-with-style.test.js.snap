@@ -220,7 +220,6 @@ exports[`3. tile c 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -233,6 +232,7 @@ exports[`3. tile c 1`] = `
 
 .IS3 {
   line-height: 22px;
+  margin-bottom: 11px;
 }
 </style>
 

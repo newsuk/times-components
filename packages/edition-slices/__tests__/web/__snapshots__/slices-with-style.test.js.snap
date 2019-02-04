@@ -403,11 +403,6 @@ exports[`4. secondary four 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S5 {
-  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -420,21 +415,18 @@ exports[`4. secondary four 1`] = `
 
 .IS3 {
   line-height: 22px;
+  margin-bottom: 11px;
 }
 
 .IS4 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
 .IS5 {
-  border-left-width: 0.25px;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
+  border-left-width: 0.5px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .IS6 {
@@ -447,13 +439,11 @@ exports[`4. secondary four 1`] = `
 
 .IS8 {
   line-height: 22px;
+  margin-bottom: 11px;
 }
 
 .IS9 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -462,9 +452,10 @@ exports[`4. secondary four 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -479,21 +470,18 @@ exports[`4. secondary four 1`] = `
 
 .IS13 {
   line-height: 22px;
+  margin-bottom: 11px;
 }
 
 .IS14 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
 .IS15 {
-  border-left-width: 0.25px;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
+  border-left-width: 0.5px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .IS16 {
@@ -506,13 +494,11 @@ exports[`4. secondary four 1`] = `
 
 .IS18 {
   line-height: 22px;
+  margin-bottom: 11px;
 }
 
 .IS19 {
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -521,9 +507,10 @@ exports[`4. secondary four 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -546,7 +533,7 @@ exports[`4. secondary four 1`] = `
   className="IS21 S3"
 >
   <div
-    className="IS10 S5"
+    className="IS10"
   >
     <div
       className="IS4 S3"
@@ -592,7 +579,7 @@ exports[`4. secondary four 1`] = `
       </div>
     </div>
     <div
-      className="IS5 S5"
+      className="IS5 S3"
     />
     <div
       className="IS9 S3"
@@ -639,7 +626,7 @@ exports[`4. secondary four 1`] = `
     </div>
   </div>
   <div
-    className="IS20 S5"
+    className="IS20"
   >
     <div
       className="IS14 S3"
@@ -685,7 +672,7 @@ exports[`4. secondary four 1`] = `
       </div>
     </div>
     <div
-      className="IS15 S5"
+      className="IS15 S3"
     />
     <div
       className="IS19 S3"
