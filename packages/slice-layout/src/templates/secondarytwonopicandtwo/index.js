@@ -11,7 +11,7 @@ const SecondaryTwoNoPicAndTwoSlice = ({
   renderSupport1,
   renderSupport2
 }) => (
-  <View style={styles.container}>
+  <View>
     {renderSecondary1()}
     {renderItemSeparator()}
     {renderSecondary2()}

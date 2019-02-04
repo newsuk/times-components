@@ -601,13 +601,7 @@ exports[`4. secondary four 1`] = `
 `;
 
 exports[`5. secondary two no pic and two 1`] = `
-<View
-  style={
-    Object {
-      "width": "100%",
-    }
-  }
->
+<View>
   <View
     style={
       Object {

@@ -1,9 +1,6 @@
 import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
-  container: {
-    width: "100%"
-  },
   itemSeparator: {
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,

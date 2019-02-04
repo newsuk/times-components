@@ -912,14 +912,10 @@ exports[`5. secondary two no pic and two 1`] = `
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
-
-.IS20 {
-  width: 100%;
-}
 </style>
 
 <div
-  className="IS20 S2"
+  className="S2"
 >
   <div
     className="IS3 S2"
