@@ -6,7 +6,8 @@ import {
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  ListTwoAndSixNoPic
 } from "./src/slice-layout";
 
 const colours = [
@@ -203,6 +204,24 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryTwoNoPicAndTwoSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <ListTwoAndSixNoPic
+            renderLead1={() => <Support3 id="support1" />}
+            renderLead2={() => <Support4 id="support2" />}
+            renderSupport1={() => <Support1 id="support3" />}
+            renderSupport2={() => <Support2 id="support4" />}
+            renderSupport3={() => <Support3 id="support5" />}
+            renderSupport4={() => <Support4 id="support6" />}
+            renderSupport5={() => <Support1 id="support7" />}
+            renderSupport6={() => <Support2 id="support8" />}
+          />
+        </ScrollView>
+      ),
+      name: "ListTwoAndSixNoPic",
       type: "story"
     },
     {

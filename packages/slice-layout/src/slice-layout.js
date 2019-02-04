@@ -6,6 +6,7 @@ import OpinionOneAndTwoSlice from "./templates/opiniononeandtwo";
 import opinionOneAndTwoRoles from "./templates/opiniononeandtwo/roles";
 import SecondaryFourSlice from "./templates/secondaryfour";
 import SecondaryTwoNoPicAndTwoSlice from "./templates/secondarytwonopicandtwo";
+import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
 
 export {
   StandardSlice,
@@ -15,5 +16,6 @@ export {
   OpinionOneAndTwoSlice,
   opinionOneAndTwoRoles,
   SecondaryFourSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  ListTwoAndSixNoPic
 };
