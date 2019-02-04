@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.19.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.18.2...@times-components/styleguide@3.19.0) (2019-02-04)
+
+
+### Features
+
+* Article Summary Strapline ([#1660](https://github.com/newsuk/times-components/issues/1660)) ([b33d90c](https://github.com/newsuk/times-components/commit/b33d90c))
+
+
+
+
+
 ## [3.18.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.18.0...@times-components/styleguide@3.18.2) (2019-02-04)
 
 **Note:** Version bump only for package @times-components/styleguide
