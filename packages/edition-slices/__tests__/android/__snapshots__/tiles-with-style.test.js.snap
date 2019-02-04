@@ -190,3 +190,139 @@ exports[`3. tile c 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. tile d 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "45%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "paddingVertical": 5,
+        "width": "55%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+          "lineHeight": 22,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags />
+  </View>
+</View>
+`;
+
+exports[`5. tile e 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "45%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "paddingVertical": 5,
+        "width": "55%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
+            "marginBottom": 0,
+          }
+        }
+      >
+        ROYALS
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+          "lineHeight": 22,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </Text>
+    <ArticleFlags />
+  </View>
+</View>
+`;

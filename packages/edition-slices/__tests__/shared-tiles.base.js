@@ -2,7 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
-import { TileA, TileB, TileC } from "../src/tiles";
+import { TileA, TileB, TileC, TileD, TileE } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -41,6 +41,26 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <TileC tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile d",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileD tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile e",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileE tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
