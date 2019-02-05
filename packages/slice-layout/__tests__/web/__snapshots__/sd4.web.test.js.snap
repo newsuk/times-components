@@ -15,6 +15,7 @@ exports[`1. four child element 1`] = `
       </div>
     </div>
   </div>
+  <div />
   <div>
     <div>
       <div>

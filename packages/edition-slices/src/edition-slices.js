@@ -3,7 +3,6 @@ import {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  ListTwoAndSixNoPic,
   ListTwoAndSixNoPicSlice
 } from "./slices";
 
@@ -12,6 +11,5 @@ export {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  ListTwoAndSixNoPic,
   ListTwoAndSixNoPicSlice
 };

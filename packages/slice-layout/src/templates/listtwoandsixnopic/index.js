@@ -36,12 +36,12 @@ const ListTwoAndSixNoPic = ({
         </View>
       </View>
       <View style={styles.keyBottomSeparator} />
-        {supportItems.map(item => (
-          <View>
-            {item()}
-            <View style={styles.keyBottomSeparator} />
-          </View>
-        ))}
+      {supportItems.map(item => (
+        <View key={item().props.id}>
+          {item()}
+          <View style={styles.keyBottomSeparator} />
+        </View>
+      ))}
     </View>
   );
 };

@@ -5,13 +5,13 @@ const styles = {
   item: {
     width: "50%"
   },
-  itemContainer: {
-    flexDirection: "row"
-  },
   itemColumnSeparator: {
     borderLeftWidth: 1,
-    marginTop: 10,
-    marginBottom: 12
+    marginBottom: 12,
+    marginTop: 10
+  },
+  itemContainer: {
+    flexDirection: "row"
   },
   itemRowSeparator: {
     borderBottomWidth: 0.5,

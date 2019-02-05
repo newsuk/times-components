@@ -11,10 +11,6 @@ exports[`1. four child element 1`] = `
 }
 
 .S2 {
-  border-bottom-width: 0px;
-}
-
-.S3 {
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -40,30 +36,21 @@ exports[`1. four child element 1`] = `
   }
 >
   <div
-    className="S3"
+    className="S1"
     style={
       Object {
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "horizontal",
         "WebkitFlexDirection": "row",
-        "borderBottomWidth": "0.5px",
         "flexDirection": "row",
-        "marginBottom": "5px",
-        "marginLeft": "5px",
-        "marginRight": "5px",
-        "marginTop": "5px",
         "msFlexDirection": "row",
       }
     }
   >
     <div
-      className="S2"
+      className="S1"
       style={
         Object {
-          "paddingBottom": "5px",
-          "paddingLeft": "5px",
-          "paddingRight": "5px",
-          "paddingTop": "5px",
           "width": "50%",
         }
       }
@@ -78,22 +65,16 @@ exports[`1. four child element 1`] = `
       className="S1"
       style={
         Object {
-          "borderLeftWidth": "0.25px",
-          "marginBottom": "5px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
-          "marginTop": "5px",
+          "borderLeftWidth": "1px",
+          "marginBottom": "12px",
+          "marginTop": "10px",
         }
       }
     />
     <div
-      className="S2"
+      className="S1"
       style={
         Object {
-          "paddingBottom": "5px",
-          "paddingLeft": "5px",
-          "paddingRight": "5px",
-          "paddingTop": "5px",
           "width": "50%",
         }
       }
@@ -106,30 +87,31 @@ exports[`1. four child element 1`] = `
     </div>
   </div>
   <div
-    className="S3"
+    className="S2"
+    style={
+      Object {
+        "borderBottomWidth": "0.5px",
+        "marginLeft": "12px",
+        "marginRight": "12px",
+      }
+    }
+  />
+  <div
+    className="S1"
     style={
       Object {
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "horizontal",
         "WebkitFlexDirection": "row",
-        "borderBottomWidth": "0.5px",
         "flexDirection": "row",
-        "marginBottom": "5px",
-        "marginLeft": "5px",
-        "marginRight": "5px",
-        "marginTop": "5px",
         "msFlexDirection": "row",
       }
     }
   >
     <div
-      className="S2"
+      className="S1"
       style={
         Object {
-          "paddingBottom": "5px",
-          "paddingLeft": "5px",
-          "paddingRight": "5px",
-          "paddingTop": "5px",
           "width": "50%",
         }
       }
@@ -144,22 +126,16 @@ exports[`1. four child element 1`] = `
       className="S1"
       style={
         Object {
-          "borderLeftWidth": "0.25px",
-          "marginBottom": "5px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
-          "marginTop": "5px",
+          "borderLeftWidth": "1px",
+          "marginBottom": "12px",
+          "marginTop": "10px",
         }
       }
     />
     <div
-      className="S2"
+      className="S1"
       style={
         Object {
-          "paddingBottom": "5px",
-          "paddingLeft": "5px",
-          "paddingRight": "5px",
-          "paddingTop": "5px",
           "width": "50%",
         }
       }

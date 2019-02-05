@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. eight child element 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        lead-1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#dcdcdc",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        lead-2
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#dcdcdc",
+        "borderStyle": "solid",
+        "marginHorizontal": 12,
+      }
+    }
+  />
+  <View>
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      support-2
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      support-3
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      support-4
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      support-5
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      support-6
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#dcdcdc",
+          "borderStyle": "solid",
+          "marginHorizontal": 12,
+        }
+      }
+    />
+  </View>
+</View>
+`;

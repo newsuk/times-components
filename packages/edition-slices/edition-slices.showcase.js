@@ -40,7 +40,7 @@ export default {
       type: "story"
     },
     {
-      component: () => {office
+      component: () => {
         const slice = mockSecondaryOneSlice();
         return (
           <SecondaryOneSlice onPress={() => {}} secondary={slice.secondary} />
