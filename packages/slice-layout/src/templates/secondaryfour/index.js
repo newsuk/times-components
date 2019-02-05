@@ -17,16 +17,17 @@ const SecondaryFourSlice = ({
         <View key={renderRowOne[0].props.id} style={styles.item}>
           {renderRowOne[0]}
         </View>
-        <View style={styles.itemSeparator} />
+        <View style={styles.itemColumnSeparator} />
         <View key={renderRowOne[1].props.id} style={styles.item}>
           {renderRowOne[1]}
         </View>
       </View>
+      <View style={styles.itemRowSeparator} />
       <View style={styles.itemContainer}>
         <View key={renderRowTwo[0].props.id} style={styles.item}>
           {renderRowTwo[0]}
         </View>
-        <View style={styles.itemSeparator} />
+        <View style={styles.itemColumnSeparator} />
         <View key={renderRowTwo[1].props.id} style={styles.item}>
           {renderRowTwo[1]}
         </View>

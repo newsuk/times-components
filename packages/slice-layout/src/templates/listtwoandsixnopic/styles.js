@@ -19,10 +19,8 @@ const styles = {
     borderColor: "#dcdcdc",
     borderStyle: "solid",
     flexDirection: "row",
-    marginBottom: 10,
-    marginLeft: 12,
-    marginRight: 12,
-    marginTop: 10
+    marginVertical: 10,
+    marginHorizontal: 12,
   },
   leadItem: {
     paddingBottom: 5,
@@ -30,12 +28,10 @@ const styles = {
   },
   supportContainer: {
     marginBottom: 10,
-    marginLeft: 12,
-    marginRight: 12,
+    marginHorizontal: 12,
   },
   supportItem: {
-    marginBottom: 10,
-    marginTop: 10
+    marginVertical: 10
   }
 };
 
