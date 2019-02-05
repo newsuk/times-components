@@ -5,7 +5,7 @@ import {
   normaliseWidth,
   convertToPixels
 } from "@times-components/utils";
-import appendSize from "./utils";
+import appendToUrl from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
@@ -47,17 +47,24 @@ class TimesImage extends Component {
 
     const srcUri = isDataImageUri
       ? uri
-      : addMissingProtocol(appendSize(uri, "resize", imageRes));
+      : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
 
     const props = {
       onLoad: this.handleLoad,
       source:
         srcUri && imageRes
           ? {
-              uri: srcUri
-            }
+            uri: srcUri
+          }
           : null,
       style: styles.imageBackground
+    };
+
+    const lazyLoadProps = {
+      ...props,
+      source: props.source ? {
+        uri: appendToUrl(props.source.uri, "offline", true)
+      } : null
     };
 
     return (
@@ -67,6 +74,7 @@ class TimesImage extends Component {
         style={style}
       >
         {isLoaded ? null : <Placeholder />}
+        <Image {...lazyLoadProps} />
         <Image {...props} />
       </View>
     );
