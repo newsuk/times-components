@@ -1,6 +1,10 @@
 import { fonts } from "@times-components/styleguide";
 
 const styles = {
+  container: {
+    paddingHorizontal: 12,
+    paddingVertical: 10
+  },
   headlineStyle: {
     fontFamily: fonts.headline,
     fontSize: 22,

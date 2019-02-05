@@ -5,7 +5,7 @@ import { TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileL = ({ tile }) => (
-  <View>
+  <View style={styles.container}>
     <TileSummary headlineStyle={styles.headlineStyle} tile={tile} />
   </View>
 );
