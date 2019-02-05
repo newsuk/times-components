@@ -1,5 +1,6 @@
 import {
   ArticleSlice,
+  LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
@@ -21,6 +22,18 @@ function getTile(): Tile {
 
 function getTiles(count: number): Array<Tile> {
   return new Array(count).fill(0).map(() => getTile());
+}
+
+function mockLeadOneAndFourSlice(): LeadOneAndFourSlice {
+  const tiles = getTiles(5);
+  return <LeadOneAndFourSlice>{
+    lead: tiles[0],
+    items: tiles,
+    support1: tiles[1],
+    support2: tiles[2],
+    support3: tiles[3],
+    support4: tiles[4]
+  };
 }
 
 function mockLeadOneFullWidthSlice(): LeadOneFullWidthSlice {
@@ -86,6 +99,7 @@ function mockArticleSlice(count: number): ArticleSlice {
 
 export default mockArticleSlice;
 export {
+  mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,

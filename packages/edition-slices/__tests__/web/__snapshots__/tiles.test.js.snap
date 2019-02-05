@@ -198,3 +198,65 @@ exports[`6. tile g 1`] = `
   </div>
 </Link>
 `;
+
+exports[`7. tile i 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`8. tile j 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={1.5}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;

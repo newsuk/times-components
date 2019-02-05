@@ -1,4 +1,4 @@
-import mockArticleSlice, { mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice } from "../mock-slice";
+import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice } from "../mock-slice";
 
 describe("The Mock EditionSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
@@ -6,6 +6,16 @@ describe("The Mock EditionSlice", () => {
     expect(articleSlice.items[0]).toHaveProperty("article");
     expect(articleSlice.items[0]).toHaveProperty("headline");
     expect(articleSlice.items[0]).toHaveProperty("leadAsset");
+  });
+
+  it("returns LeadOneAndFourSlice", () => {
+    const articleSlice = mockLeadOneAndFourSlice();
+    expect(articleSlice.items.length).toBe(5);
+    expect(articleSlice.lead).toBeDefined();
+    expect(articleSlice.support1).toBeDefined();
+    expect(articleSlice.support2).toBeDefined();
+    expect(articleSlice.support3).toBeDefined();
+    expect(articleSlice.support4).toBeDefined();
   });
 
   it("returns LeadOneFullWidthSlice", () => {
