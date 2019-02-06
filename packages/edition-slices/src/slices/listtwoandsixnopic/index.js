@@ -11,17 +11,18 @@ const ListTwoAndSixNoPicSlice = ({
   support3,
   support4,
   support5,
-  support6
+  support6,
+  onPress
 }) => (
   <ListTwoAndSixNoPic
-    renderLead1={() => <TileC tile={lead1} />}
-    renderLead2={() => <TileC tile={lead2} />}
-    renderSupport1={() => <TileL tile={support1} />}
-    renderSupport2={() => <TileL tile={support2} />}
-    renderSupport3={() => <TileL tile={support3} />}
-    renderSupport4={() => <TileL tile={support4} />}
-    renderSupport5={() => <TileL tile={support5} />}
-    renderSupport6={() => <TileL tile={support6} />}
+    renderLead1={() => <TileC onPress={onPress} tile={lead1} />}
+    renderLead2={() => <TileC onPress={onPress} tile={lead2} />}
+    renderSupport1={() => <TileL onPress={onPress} tile={support1} />}
+    renderSupport2={() => <TileL onPress={onPress} tile={support2} />}
+    renderSupport3={() => <TileL onPress={onPress} tile={support3} />}
+    renderSupport4={() => <TileL onPress={onPress} tile={support4} />}
+    renderSupport5={() => <TileL onPress={onPress} tile={support5} />}
+    renderSupport6={() => <TileL onPress={onPress} tile={support6} />}
   />
 );
 
@@ -33,7 +34,8 @@ ListTwoAndSixNoPicSlice.propTypes = {
   support3: PropTypes.shape({}).isRequired,
   support4: PropTypes.shape({}).isRequired,
   support5: PropTypes.shape({}).isRequired,
-  support6: PropTypes.shape({}).isRequired
+  support6: PropTypes.shape({}).isRequired,
+  onPress: PropTypes.func.isRequired
 };
 
 export default ListTwoAndSixNoPicSlice;

@@ -38,7 +38,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileL tile={slice.lead} />;
+        return <TileL onPress={() => {}} tile={slice.lead} />;
       },
       name: "TileL (No image, 22pt headline, no teaser)",
       type: "story"

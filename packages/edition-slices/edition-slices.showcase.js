@@ -74,6 +74,7 @@ export default {
             secondary2={slice.secondary2}
             support1={slice.secondary3}
             support2={slice.secondary4}
+            onPress={() => {}}
           />
         );
       },
@@ -93,6 +94,7 @@ export default {
             support4={slice.support4}
             support5={slice.support5}
             support6={slice.support6}
+            onPress={() => {}}
           />
         );
       },
