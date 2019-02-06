@@ -56,14 +56,6 @@ export default {
       type: "story"
     },
     {
-      component: () => {
-        const slice = mockLeadOneFullWidthSlice();
-        return <TileL onPress={() => {}} tile={slice.lead} />;
-      },
-      name: "TileL (No image, 22pt headline, no teaser)",
-      type: "story"
-    },
-    {
       component: (_, { decorateAction }) => {
         const slice = mockSecondaryFourSlice();
         return (
@@ -103,30 +95,6 @@ export default {
       type: "story"
     },
     {
-      component: () => {
-        const slice = mockLeadOneFullWidthSlice();
-        return <TileG tile={slice.lead} />;
-      },
-      name: "Tile G - Roundel image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: () => {
-        const slice = mockLeadOneAndFourSlice();
-        return <TileI tile={slice.lead} />;
-      },
-      name: "Tile I - Vertical, top image, centered aligned summary",
-      type: "story"
-    },
-    {
-      component: () => {
-        const slice = mockLeadOneAndFourSlice();
-        return <TileJ tile={slice.support1} />;
-      },
-      name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
-      type: "story"
-    },
-    {
       component: (_, { decorateAction }) => {
         const slice = mockLeadTwoNoPicAndTwoSlice();
         return (
@@ -136,7 +104,39 @@ export default {
           />
         );
       },
-      name: "TileF (???)",
+      name: "TileF (35pt Headline, no image, strapline and teaser)",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <TileG onPress={preventDefaultedAction(decorateAction)("onPress")} tile={slice.lead} />;
+      },
+      name: "Tile G - Roundel image, 22pt headline, no teaser",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneAndFourSlice();
+        return <TileI onPress={preventDefaultedAction(decorateAction)("onPress")} tile={slice.lead} />;
+      },
+      name: "Tile I - Vertical, top image, centered aligned summary",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneAndFourSlice();
+        return <TileJ onPress={preventDefaultedAction(decorateAction)("onPress")} tile={slice.support1} />;
+      },
+      name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <TileL onPress={preventDefaultedAction(decorateAction)("onPress")} tile={slice.lead} />;
+      },
+      name: "TileL (No image, 22pt headline, no teaser)",
       type: "story"
     }
   ],
