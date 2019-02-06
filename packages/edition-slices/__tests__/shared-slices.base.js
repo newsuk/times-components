@@ -95,7 +95,7 @@ export default () => {
             secondary2={secondaryTwoNoPicAndTwoData.secondary2}
             support1={secondaryTwoNoPicAndTwoData.support1}
             support2={secondaryTwoNoPicAndTwoData.support2}
-            />
+          />
         );
         expect(output).toMatchSnapshot();
       }

@@ -808,35 +808,37 @@ exports[`9. tile l 1`] = `
 }
 </style>
 
-<div
-  className="IS3 S2"
->
+<Link>
   <div
-    className="S2"
+    className="IS3 S2"
   >
     <div
       className="S2"
     >
       <div
-        className="IS1 S1"
+        className="S2"
       >
-        ROYALS
+        <div
+          className="IS1 S1"
+        >
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      className="IS2 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
-</div>
+</Link>
 `;

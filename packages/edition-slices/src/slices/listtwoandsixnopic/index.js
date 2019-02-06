@@ -29,13 +29,13 @@ const ListTwoAndSixNoPicSlice = ({
 ListTwoAndSixNoPicSlice.propTypes = {
   lead1: PropTypes.shape({}).isRequired,
   lead2: PropTypes.shape({}).isRequired,
+  onPress: PropTypes.func.isRequired,
   support1: PropTypes.shape({}).isRequired,
   support2: PropTypes.shape({}).isRequired,
   support3: PropTypes.shape({}).isRequired,
   support4: PropTypes.shape({}).isRequired,
   support5: PropTypes.shape({}).isRequired,
-  support6: PropTypes.shape({}).isRequired,
-  onPress: PropTypes.func.isRequired
+  support6: PropTypes.shape({}).isRequired
 };
 
 export default ListTwoAndSixNoPicSlice;

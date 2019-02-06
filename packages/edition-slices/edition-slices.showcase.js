@@ -70,11 +70,11 @@ export default {
         const slice = mockSecondaryFourSlice();
         return (
           <SecondaryTwoNoPicAndTwoSlice
+            onPress={() => {}}
             secondary1={slice.secondary1}
             secondary2={slice.secondary2}
             support1={slice.secondary3}
             support2={slice.secondary4}
-            onPress={() => {}}
           />
         );
       },
@@ -88,13 +88,13 @@ export default {
           <ListTwoAndSixNoPicSlice
             lead1={slice.lead1}
             lead2={slice.lead2}
+            onPress={() => {}}
             support1={slice.support1}
             support2={slice.support2}
             support3={slice.support3}
             support4={slice.support4}
             support5={slice.support5}
             support6={slice.support6}
-            onPress={() => {}}
           />
         );
       },

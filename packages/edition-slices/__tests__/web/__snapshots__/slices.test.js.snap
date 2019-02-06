@@ -502,153 +502,177 @@ exports[`6. list two and six no pic 1`] = `
   </div>
   <div />
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
   <div>
-    <div>
+    <Link
+      url="/article/123"
+    >
       <div>
         <div>
           <div>
-            LABEL
+            <div>
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div />
   </div>
 </div>

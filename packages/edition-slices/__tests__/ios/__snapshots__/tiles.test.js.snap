@@ -266,26 +266,28 @@ exports[`8. tile j 1`] = `
 `;
 
 exports[`9. tile l 1`] = `
-<View>
+<Link>
   <View>
     <View>
-      <Text>
-        ROYALS
+      <View>
+        <Text>
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
       </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </View>
-    <Text
-      accessibilityRole="heading"
-      aria-level="3"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </View>
-</View>
+</Link>
 `;

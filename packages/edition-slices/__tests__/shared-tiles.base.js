@@ -107,10 +107,10 @@ export default () => {
           <TileJ tile={leadOneAndOneData.lead} />
         );
 
-                expect(output).toMatchSnapshot();
-              }
-            },
-            {
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "tile l",
       test: () => {
         const output = TestRenderer.create(

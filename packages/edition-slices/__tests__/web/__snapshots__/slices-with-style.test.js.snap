@@ -1534,37 +1534,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS16 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS16 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS14 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS14 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS15 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS15 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS17 S2"
     />
@@ -1572,37 +1576,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS20 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS20 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS18 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS18 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS19 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS19 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS21 S2"
     />
@@ -1610,37 +1618,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS24 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS24 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS22 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS22 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS23 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS23 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS25 S2"
     />
@@ -1648,37 +1660,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS28 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS28 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS26 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS26 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS27 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS27 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS29 S2"
     />
@@ -1686,37 +1702,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS32 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS32 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS30 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS30 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS31 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS31 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS33 S2"
     />
@@ -1724,37 +1744,41 @@ exports[`6. list two and six no pic 1`] = `
   <div
     className="S2"
   >
-    <div
-      className="IS36 S2"
+    <Link
+      url="/article/123"
     >
       <div
-        className="S2"
+        className="IS36 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS34 S3"
+            className="S2"
           >
-            LABEL
+            <div
+              className="IS34 S3"
+            >
+              LABEL
+            </div>
           </div>
+          <h3
+            aria-level="3"
+            className="IS35 S5"
+            role="heading"
+          >
+            Venezuela shows how Corbyn’s socialism works
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                "EXCLUSIVE",
+              ]
+            }
+          />
         </div>
-        <h3
-          aria-level="3"
-          className="IS35 S5"
-          role="heading"
-        >
-          Venezuela shows how Corbyn’s socialism works
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
       </div>
-    </div>
+    </Link>
     <div
       className="IS37 S2"
     />
