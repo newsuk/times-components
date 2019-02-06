@@ -29,9 +29,9 @@ const fontSizes = {
   smallestHeadline: 20,
   smallHeadline: 22,
   strapline: 19,
-  tileLeadHeadline: 35,
   teaser: 14,
-  tertiary: 15
+  tertiary: 15,
+  tileLeadHeadline: 35
 };
 
 export default fontSizes;

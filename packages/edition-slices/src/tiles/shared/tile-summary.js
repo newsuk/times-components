@@ -10,7 +10,7 @@ import { colours } from "@times-components/styleguide";
 
 const TileSummary = ({
   tile: {
-    article: { flags, hasVideo, headline, label, section, shortHeadline },
+    article: { flags, hasVideo, headline, label, section, shortHeadline }
   },
   headlineStyle,
   strapline,
@@ -35,13 +35,24 @@ const TileSummary = ({
       isVideo: hasVideo,
       title: label
     }}
-    strapline={ strapline ? () => <ArticleSummaryStrapline strapline={strapline} style={straplineStyle} /> : undefined }
+    strapline={
+      strapline
+        ? () => (
+            <ArticleSummaryStrapline
+              strapline={strapline}
+              style={straplineStyle}
+            />
+          )
+        : undefined
+    }
     style={style}
   />
 );
 
 TileSummary.propTypes = {
   headlineStyle: PropTypes.shape({}),
+  strapline: PropTypes.string,
+  straplineStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   summary: PropTypes.arrayOf(PropTypes.shape({})),
   tile: PropTypes.shape({}).isRequired
@@ -49,6 +60,8 @@ TileSummary.propTypes = {
 
 TileSummary.defaultProps = {
   headlineStyle: null,
+  strapline: null,
+  straplineStyle: null,
   style: null,
   summary: null
 };

@@ -19,20 +19,38 @@ import {
   TileL
 } from "./src/tiles";
 
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
+
 export default {
   children: [
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileA onPress={() => {}} tile={slice.lead} />;
+        return (
+          <TileA
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
       },
       name: "Tile A - Bottom image, 35pt headline, no teaser",
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileB onPress={() => {}} tile={slice.lead} />;
+        return (
+          <TileB
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
       },
       name: "Tile B - No image, 22pt headline, with teaser",
       type: "story"
@@ -46,25 +64,40 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockSecondaryFourSlice();
-        return <TileC onPress={() => {}} tile={slice.secondary1} />;
+        return (
+          <TileC
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.secondary1}
+          />
+        );
       },
       name: "Tile C - Top image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileD onPress={() => {}} tile={slice.lead} />;
+        return (
+          <TileD
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
       },
       name: "Tile D - Side 3/2 image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileE onPress={() => {}} tile={slice.lead} />;
+        return (
+          <TileE
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
       },
       name: "Tile E - Side 4/5 image, 22pt headline, no teaser",
       type: "story"
@@ -94,9 +127,14 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadTwoNoPicAndTwoSlice();
-        return <TileF tile={slice.lead1} />;
+        return (
+          <TileF
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead1}
+          />
+        );
       },
       name: "TileF (???)",
       type: "story"

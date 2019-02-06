@@ -6,7 +6,11 @@ import styles from "./styles";
 const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryStrapline = ({ strapline, style }) => (
-  <Text accessibilityRole="heading" aria-level="4" style={[styles.strapline, style]}>
+  <Text
+    accessibilityRole="heading"
+    aria-level="4"
+    style={[styles.strapline, style]}
+  >
     {strapline}
   </Text>
 );

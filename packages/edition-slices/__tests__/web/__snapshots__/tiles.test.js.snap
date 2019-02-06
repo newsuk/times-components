@@ -168,7 +168,47 @@ exports[`5. tile e 1`] = `
 </Link>
 `;
 
-exports[`6. tile g 1`] = `
+exports[`6. tile f 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Venezuela shows how Corbyn’s socialism works
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+    </h4>
+    <ArticleFlags
+      flags={
+        Array [
+          "EXCLUSIVE",
+        ]
+      }
+    />
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`7. tile g 1`] = `
 <Link
   url="/article/123"
 >
@@ -203,7 +243,7 @@ exports[`6. tile g 1`] = `
 </Link>
 `;
 
-exports[`7. tile i 1`] = `
+exports[`8. tile i 1`] = `
 <div>
   <div>
     <Image
@@ -234,7 +274,7 @@ exports[`7. tile i 1`] = `
 </div>
 `;
 
-exports[`8. tile j 1`] = `
+exports[`9. tile j 1`] = `
 <div>
   <div>
     <Image
@@ -265,7 +305,7 @@ exports[`8. tile j 1`] = `
 </div>
 `;
 
-exports[`9. tile l 1`] = `
+exports[`10. tile l 1`] = `
 <Link>
   <div>
     <div>
