@@ -67,7 +67,7 @@ export default () => {
         expect(testInstance).toMatchSnapshot();
 
         testInstance.root
-          .find(node => node.type === ReactNativeImage)
+          .findAll(node => node.type === ReactNativeImage)[0]
           .props.onLoad();
 
         expect(testInstance).toMatchSnapshot();
@@ -87,8 +87,8 @@ export default () => {
         );
 
         expect(
-          testInstance.root.find(node => node.type === ReactNativeImage).props
-            .source.uri
+          testInstance.root.findAll(node => node.type === ReactNativeImage)[0]
+            .props.source.uri
         ).toEqual(dataUri);
       }
     },
@@ -119,10 +119,10 @@ export default () => {
           getLayoutEventForWidth(700)
         );
 
-        expect(
-          testInstance.root.find(node => node.type === ReactNativeImage).props
-            .source.uri
-        ).toEqual(uri);
+        const images = testInstance.root.findAll(
+          node => node.type === ReactNativeImage
+        );
+        expect(images[images.length - 1].props.source.uri).toEqual(uri);
       }
     }
   ];

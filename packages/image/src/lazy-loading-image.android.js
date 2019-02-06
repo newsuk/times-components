@@ -6,16 +6,18 @@ export default props => {
   const { source } = props;
   return (
     <Fragment>
-      <Image
-        {...props}
-        source={
-          source
-            ? {
-                uri: appendToUrl(source.uri, "offline", true)
-              }
-            : null
-        }
-      />
+      {source && source.uri && !source.uri.includes("data:image/") ? (
+        <Image
+          {...props}
+          source={
+            source
+              ? {
+                  uri: appendToUrl(source.uri, "offline", true)
+                }
+              : null
+          }
+        />
+      ) : null}
       <Image {...props} />
     </Fragment>
   );
