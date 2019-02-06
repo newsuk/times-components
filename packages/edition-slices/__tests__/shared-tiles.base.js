@@ -4,7 +4,16 @@ import { iterator } from "@times-components/test-utils";
 import { mockSecondaryTwoNoPicAndTwoSlice } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 
-import { TileA, TileB, TileC, TileD, TileE, TileG } from "../src/tiles";
+import {
+  TileA,
+  TileB,
+  TileC,
+  TileD,
+  TileE,
+  TileG,
+  TileI,
+  TileJ
+} from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -75,6 +84,26 @@ export default () => {
         const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
         const output = TestRenderer.create(
           <TileG tile={secondaryTwoNoPicAndTwoData.support1} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile i",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileI tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile j",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileJ tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

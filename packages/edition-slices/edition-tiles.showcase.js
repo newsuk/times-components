@@ -1,9 +1,20 @@
 import React from "react";
 import {
+  mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
-import { TileA, TileB, TileC, TileD, TileE, TileG } from "./src/tiles";
+
+import {
+  TileA,
+  TileB,
+  TileC,
+  TileD,
+  TileE,
+  TileG,
+  TileI,
+  TileJ
+} from "./src/tiles";
 
 export default {
   children: [
@@ -53,6 +64,22 @@ export default {
         return <TileG tile={slice.lead} />;
       },
       name: "Tile G - Roundel image, 22pt headline, no teaser",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadOneAndFourSlice();
+        return <TileI tile={slice.lead} />;
+      },
+      name: "Tile I - Vertical, top image, centered aligned summary",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadOneAndFourSlice();
+        return <TileJ tile={slice.support1} />;
+      },
+      name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
       type: "story"
     }
   ],
