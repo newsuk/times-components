@@ -164,12 +164,6 @@ exports[`2. lead one and one slice 1`] = `
 .IS6 {
   line-height: 22px;
 }
-
-.IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <div
@@ -231,13 +225,7 @@ exports[`2. lead one and one slice 1`] = `
         <div
           className="responsiveweb-brngwq gvaiUN S2"
         >
-<<<<<<< HEAD
           <Link>
-=======
-          <div
-            className="IS7 S2"
-          >
->>>>>>> feat: update margins and create tests
             <div
               className="S2"
             >
@@ -785,40 +773,28 @@ exports[`5. secondary two no pic and two 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS6 {
+.IS5 {
   line-height: 22px;
 }
 
-.IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.IS8 {
+.IS6 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS9 {
+.IS7 {
   border-top-color: rgba(255,255,255,1.00);
   border-right-color: rgba(255,255,255,1.00);
   border-bottom-color: rgba(255,255,255,1.00);
@@ -834,15 +810,15 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 25%;
 }
 
-.IS10 {
+.IS8 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS11 {
+.IS9 {
   line-height: 22px;
 }
 
-.IS12 {
+.IS10 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -850,7 +826,7 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 75%;
 }
 
-.IS13 {
+.IS11 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -862,14 +838,14 @@ exports[`5. secondary two no pic and two 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS14 {
+.IS12 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS15 {
+.IS13 {
   border-top-color: rgba(255,255,255,1.00);
   border-right-color: rgba(255,255,255,1.00);
   border-bottom-color: rgba(255,255,255,1.00);
@@ -885,15 +861,15 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 25%;
 }
 
-.IS16 {
+.IS14 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS17 {
+.IS15 {
   line-height: 22px;
 }
 
-.IS18 {
+.IS16 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -901,7 +877,7 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 75%;
 }
 
-.IS19 {
+.IS17 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -917,8 +893,8 @@ exports[`5. secondary two no pic and two 1`] = `
 <div
   className="S2"
 >
-  <div
-    className="IS3 S2"
+  <Link
+    url="/article/123"
   >
     <div
       className="S2"
@@ -958,12 +934,12 @@ exports[`5. secondary two no pic and two 1`] = `
         </span>
       </div>
     </div>
-  </div>
+  </Link>
   <div
-    className="IS4 S2"
+    className="IS3 S2"
   />
-  <div
-    className="IS7 S2"
+  <Link
+    url="/article/123"
   >
     <div
       className="S2"
@@ -972,14 +948,14 @@ exports[`5. secondary two no pic and two 1`] = `
         className="S2"
       >
         <div
-          className="IS5 S1"
+          className="IS4 S1"
         >
           LABEL
         </div>
       </div>
       <h3
         aria-level="3"
-        className="IS6 S3"
+        className="IS5 S3"
         role="heading"
       >
         Venezuela shows how Corbyn’s socialism works
@@ -1003,90 +979,98 @@ exports[`5. secondary two no pic and two 1`] = `
         </span>
       </div>
     </div>
-  </div>
+  </Link>
   <div
-    className="IS8 S2"
+    className="IS6 S2"
   />
-  <div
-    className="IS13 S2"
+  <Link
+    url="/article/123"
   >
     <div
-      className="IS9 S2"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS12 S2"
+      className="IS11 S2"
     >
       <div
-        className="S2"
+        className="IS7 S2"
+      >
+        <Image
+          aspectRatio={1}
+          uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+        />
+      </div>
+      <div
+        className="IS10 S2"
       >
         <div
-          className="IS10 S1"
+          className="S2"
         >
-          LABEL
+          <div
+            className="IS8 S1"
+          >
+            LABEL
+          </div>
         </div>
+        <h3
+          aria-level="3"
+          className="IS9 S3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
-      <h3
-        aria-level="3"
-        className="IS11 S3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
     </div>
-  </div>
+  </Link>
   <div
-    className="IS14 S2"
+    className="IS12 S2"
   />
-  <div
-    className="IS19 S2"
+  <Link
+    url="/article/123"
   >
     <div
-      className="IS15 S2"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS18 S2"
+      className="IS17 S2"
     >
       <div
-        className="S2"
+        className="IS13 S2"
+      >
+        <Image
+          aspectRatio={1}
+          uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+        />
+      </div>
+      <div
+        className="IS16 S2"
       >
         <div
-          className="IS16 S1"
+          className="S2"
         >
-          LABEL
+          <div
+            className="IS14 S1"
+          >
+            LABEL
+          </div>
         </div>
+        <h3
+          aria-level="3"
+          className="IS15 S3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
-      <h3
-        aria-level="3"
-        className="IS17 S3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
     </div>
-  </div>
+  </Link>
 </div>
 `;
