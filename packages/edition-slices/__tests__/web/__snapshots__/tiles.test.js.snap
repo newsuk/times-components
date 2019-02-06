@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. tile a 1`] = `
+<Link>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</Link>
+`;
+
+exports[`2. tile b 1`] = `
+<Link>
+  <div>
+    <div>
+      <div>
+        <div>
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+      <div>
+        <span>
+          
+          The 
+          <span>
+            Duke of Edinburgh
+          </span>
+           could be charged with driving without due care and attention after his car accident yesterday
+          ...
+        </span>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`3. tile c 1`] = `
+<Link>
+  <div>
+    <div>
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="https://img/someImage"
+      />
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`4. tile d 1`] = `
+<Link>
+  <div>
+    <div>
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div>
+      <div>
+        <div>
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`5. tile e 1`] = `
+<Link>
+  <div>
+    <div>
+      <Image
+        aspectRatio={0.8}
+        uri="http://image.io/4by5"
+      />
+    </div>
+    <div>
+      <div>
+        <div>
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`6. tile g 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <Image
+        aspectRatio={1}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`7. tile i 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`8. tile j 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={1.5}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`9. tile l 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;

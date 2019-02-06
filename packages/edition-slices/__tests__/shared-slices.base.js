@@ -3,11 +3,8 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
   mockSecondaryFourSlice,
-<<<<<<< HEAD
-  mockSecondaryTwoNoPicAndTwoSlice
-=======
+  mockSecondaryTwoNoPicAndTwoSlice,
   mockList2AndSixNoPicSlice
->>>>>>> chore: adding tests
 } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
@@ -15,11 +12,8 @@ import {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-<<<<<<< HEAD
-  SecondaryTwoNoPicAndTwoSlice
-=======
+  SecondaryTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice
->>>>>>> chore: adding tests
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
