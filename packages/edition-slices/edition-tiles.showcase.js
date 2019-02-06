@@ -5,7 +5,16 @@ import {
   mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
 
-import { TileA, TileB, TileC, TileD, TileE, TileG, TileI, TileJ } from "./src/tiles";
+import {
+  TileA,
+  TileB,
+  TileC,
+  TileD,
+  TileE,
+  TileG,
+  TileI,
+  TileJ
+} from "./src/tiles";
 
 export default {
   children: [
