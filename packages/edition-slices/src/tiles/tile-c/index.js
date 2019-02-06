@@ -12,8 +12,8 @@ const TileC = ({ onPress, tile }) => (
         style={styles.imageContainer}
         uri={tile.article.leadAsset.crop169.url}
       />
+      <TileSummary headlineStyle={styles.headline} tile={tile} />
     </View>
-    <TileSummary headlineStyle={styles.headline} tile={tile} />
   </TileLink>
 );
 
