@@ -26,7 +26,8 @@ const mapping = {
     leadHeadline: 26,
     pageComponentHeadline: 27,
     pageHeadline: 40,
-    smallHeadline: 27
+    smallHeadline: 27,
+    tileLeadHeadline: 35
   },
   headlineRegular: {
     pageComponentHeadline: 30,

@@ -2,6 +2,7 @@ import React from "react";
 import {
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
+  mockLeadTwoNoPicAndTwoSlice,
   mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
 
@@ -11,6 +12,7 @@ import {
   TileC,
   TileD,
   TileE,
+  TileF,
   TileG,
   TileI,
   TileJ,
@@ -89,6 +91,14 @@ export default {
         return <TileJ tile={slice.support1} />;
       },
       name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadTwoNoPicAndTwoSlice();
+        return <TileF tile={slice.lead1} />;
+      },
+      name: "TileF (???)",
       type: "story"
     }
   ],

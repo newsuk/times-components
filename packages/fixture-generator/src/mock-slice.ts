@@ -4,6 +4,7 @@ import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
+  LeadTwoNoPicAndTwoSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
@@ -17,7 +18,8 @@ function getTile(): Tile {
   return {
     article,
     headline: article.headline,
-    leadAsset: article.leadAsset
+    leadAsset: article.leadAsset,
+    strapline: article.standfirst
   };
 }
 
@@ -60,6 +62,17 @@ function mockLeadOneAndTwoSlice(): LeadOneAndTwoSlice {
     lead: tiles[0],
     support1: tiles[1],
     support2: tiles[2],
+    items: tiles
+  };
+}
+
+function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSlice {
+  const tiles = getTiles(4);
+  return <LeadTwoNoPicAndTwoSlice>{
+    lead1: tiles[0],
+    lead2: tiles[1],
+    support1: tiles[3],
+    support2: tiles[4],
     items: tiles
   };
 }
@@ -119,6 +132,7 @@ export {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,
+  mockLeadTwoNoPicAndTwoSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
