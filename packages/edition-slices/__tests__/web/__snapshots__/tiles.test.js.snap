@@ -78,26 +78,26 @@ exports[`3. tile c 1`] = `
         uri="https://img/someImage"
       />
     </div>
-  </div>
-  <div>
     <div>
       <div>
-        ROYALS
+        <div>
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
 </Link>
 `;

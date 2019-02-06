@@ -155,26 +155,26 @@ exports[`4. secondary four 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>
@@ -190,26 +190,26 @@ exports[`4. secondary four 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>
@@ -227,26 +227,26 @@ exports[`4. secondary four 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>
@@ -262,26 +262,26 @@ exports[`4. secondary four 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>
@@ -441,26 +441,26 @@ exports[`6. list two and six no pic 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>
@@ -476,26 +476,26 @@ exports[`6. list two and six no pic 1`] = `
               uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
             />
           </div>
-        </div>
-        <div>
           <div>
             <div>
-              LABEL
+              <div>
+                LABEL
+              </div>
             </div>
+            <h3
+              aria-level="3"
+              role="heading"
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </h3>
+            <ArticleFlags
+              flags={
+                Array [
+                  "EXCLUSIVE",
+                ]
+              }
+            />
           </div>
-          <h3
-            aria-level="3"
-            role="heading"
-          >
-            Venezuela shows how Corbyn’s socialism works
-          </h3>
-          <ArticleFlags
-            flags={
-              Array [
-                "EXCLUSIVE",
-              ]
-            }
-          />
         </div>
       </Link>
     </div>

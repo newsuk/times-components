@@ -159,48 +159,48 @@ exports[`3. tile c 1`] = `
     >
       <Image />
     </View>
-  </View>
-  <View>
-    <View
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-    >
-      <Text
+    <View>
+      <View
         style={
           Object {
-            "color": "#1D1D1B",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 14,
-            "marginBottom": 0,
+            "marginBottom": 5,
           }
         }
       >
-        ROYALS
-      </Text>
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 5,
-          "paddingBottom": 6,
-          "paddingTop": 5,
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 5,
+            "paddingBottom": 6,
+            "paddingTop": 5,
+          }
         }
-      }
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-    <ArticleFlags />
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
   </View>
 </Link>
 `;

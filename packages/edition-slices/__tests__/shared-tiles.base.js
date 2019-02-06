@@ -114,7 +114,7 @@ export default () => {
       name: "tile l",
       test: () => {
         const output = TestRenderer.create(
-          <TileL tile={leadOneAndOneData.lead} />
+          <TileL onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

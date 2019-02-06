@@ -108,6 +108,7 @@ export default () => {
           <ListTwoAndSixNoPicSlice
             lead1={listTwoAndSixNoPic.lead1}
             lead2={listTwoAndSixNoPic.lead2}
+            onPress={() => {}}
             support1={listTwoAndSixNoPic.support1}
             support2={listTwoAndSixNoPic.support2}
             support3={listTwoAndSixNoPic.support3}
