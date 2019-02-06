@@ -41,7 +41,7 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { aspectRatio, style, uri } = this.props;
+    const { aspectRatio, borderRadius, style, uri } = this.props;
     const { isLoaded, imageRes } = this.state;
 
     const isDataImageUri = uri && uri.indexOf("data:") > -1;
@@ -51,6 +51,7 @@ class TimesImage extends Component {
       : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
 
     const props = {
+      borderRadius,
       onLoad: this.handleLoad,
       source:
         srcUri && imageRes

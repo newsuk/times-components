@@ -1,4 +1,3 @@
-import { Dimensions } from "react-native";
 import { colours, fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
@@ -14,16 +13,14 @@ const styles = {
   },
   imageContainer: {
     borderColor: colours.functional.contrast,
-    borderRadius: Dimensions.get("window").width / 4,
-    marginLeft: "auto",
-    marginRight: "auto",
+    borderWidth: 1,
     overflow: "hidden",
-    width: "25%"
+    width: "30%"
   },
   summaryContainer: {
     paddingHorizontal: spacing(2),
-    paddingVertical: spacing(1),
-    width: "75%"
+    paddingTop: spacing(1),
+    width: "70%"
   }
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import { TileImage, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
@@ -9,6 +9,7 @@ const TileG = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileImage
         aspectRatio={1}
+        borderRadius={Dimensions.get("window").width / 4}
         style={styles.imageContainer}
         uri={tile.article.leadAsset.crop11.url}
       />

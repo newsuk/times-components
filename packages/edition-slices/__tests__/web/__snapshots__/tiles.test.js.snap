@@ -216,6 +216,7 @@ exports[`7. tile g 1`] = `
     <div>
       <Image
         aspectRatio={1}
+        borderRadius={256}
         uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
       />
     </div>
@@ -244,7 +245,7 @@ exports[`7. tile g 1`] = `
 `;
 
 exports[`8. tile i 1`] = `
-<div>
+<Link>
   <div>
     <Image
       aspectRatio={1.7777777777777777}
@@ -271,38 +272,40 @@ exports[`8. tile i 1`] = `
       }
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`9. tile j 1`] = `
-<div>
-  <div>
-    <Image
-      aspectRatio={1.5}
-      uri="https://img/someImage"
-    />
-  </div>
+<Link>
   <div>
     <div>
-      <div>
-        ROYALS
-      </div>
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
     </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
+    <div>
+      <div>
+        <div>
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
   </div>
-</div>
+</Link>
 `;
 
 exports[`10. tile l 1`] = `

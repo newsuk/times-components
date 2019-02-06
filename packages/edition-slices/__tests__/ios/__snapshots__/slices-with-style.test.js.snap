@@ -808,11 +808,9 @@ exports[`5. secondary two no pic and two 1`] = `
         style={
           Object {
             "borderColor": "#FFFFFF",
-            "borderRadius": 187.5,
-            "marginLeft": "auto",
-            "marginRight": "auto",
+            "borderWidth": 1,
             "overflow": "hidden",
-            "width": "25%",
+            "width": "30%",
           }
         }
       >
@@ -822,8 +820,8 @@ exports[`5. secondary two no pic and two 1`] = `
         style={
           Object {
             "paddingHorizontal": 10,
-            "paddingVertical": 5,
-            "width": "75%",
+            "paddingTop": 5,
+            "width": "70%",
           }
         }
       >
@@ -891,11 +889,9 @@ exports[`5. secondary two no pic and two 1`] = `
         style={
           Object {
             "borderColor": "#FFFFFF",
-            "borderRadius": 187.5,
-            "marginLeft": "auto",
-            "marginRight": "auto",
+            "borderWidth": 1,
             "overflow": "hidden",
-            "width": "25%",
+            "width": "30%",
           }
         }
       >
@@ -905,8 +901,8 @@ exports[`5. secondary two no pic and two 1`] = `
         style={
           Object {
             "paddingHorizontal": 10,
-            "paddingVertical": 5,
-            "width": "75%",
+            "paddingTop": 5,
+            "width": "70%",
           }
         }
       >
