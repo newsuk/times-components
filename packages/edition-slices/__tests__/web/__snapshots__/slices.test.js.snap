@@ -277,3 +277,137 @@ exports[`4. secondary four 1`] = `
   </div>
 </div>
 `;
+
+exports[`5. secondary two no pic and two 1`] = `
+<div>
+  <Link
+    url="/article/123"
+  >
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <div>
+        <span>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+    </div>
+  </Link>
+  <div />
+  <Link
+    url="/article/123"
+  >
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <div>
+        <span>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+    </div>
+  </Link>
+  <div />
+  <Link
+    url="/article/123"
+  >
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+        />
+      </div>
+      <div>
+        <div>
+          <div>
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+  <div />
+  <Link
+    url="/article/123"
+  >
+    <div>
+      <div>
+        <Image
+          aspectRatio={1}
+          uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+        />
+      </div>
+      <div>
+        <div>
+          <div>
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+</div>
+`;

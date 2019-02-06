@@ -64,14 +64,7 @@ exports[`1. tile a 1`] = `
 
 exports[`2. tile b 1`] = `
 <Link>
-  <View
-    style={
-      Object {
-        "marginHorizontal": 10,
-        "marginVertical": 5,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
@@ -324,6 +317,82 @@ exports[`5. tile e 1`] = `
         }
       >
         Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`6. tile g 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "#FFFFFF",
+          "borderRadius": 187.5,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "overflow": "hidden",
+          "width": "25%",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingVertical": 5,
+          "width": "75%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>

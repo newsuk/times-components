@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. four child elements 1`] = `
+<View>
+  <Text>
+    secondary-1
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Text>
+    secondary-2
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Text>
+    support-1
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Text>
+    support-2
+  </Text>
+</View>
+`;

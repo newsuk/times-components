@@ -4,10 +4,9 @@ import { TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileB = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} tile={tile}>
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
     <TileSummary
       headlineStyle={styles.headline}
-      style={styles.summaryContainer}
       summary={tile.article.summary125}
       tile={tile}
     />

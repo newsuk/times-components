@@ -1,13 +1,17 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import { mockSecondaryFourSlice } from "@times-components/fixture-generator";
+import {
+  mockSecondaryFourSlice,
+  mockSecondaryTwoNoPicAndTwoSlice
+} from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryFourSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -73,6 +77,22 @@ export default () => {
             secondary2={secondaryFourData.secondary2}
             secondary3={secondaryFourData.secondary3}
             secondary4={secondaryFourData.secondary4}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary Two No Pic And Two",
+      test: () => {
+        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <SecondaryTwoNoPicAndTwoSlice
+            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
+            secondary2={secondaryTwoNoPicAndTwoData.secondary2}
+            support1={secondaryTwoNoPicAndTwoData.support1}
+            support2={secondaryTwoNoPicAndTwoData.support2}
           />
         );
 
