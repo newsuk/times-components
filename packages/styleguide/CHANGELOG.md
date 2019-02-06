@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.20.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.19.1...@times-components/styleguide@3.20.0) (2019-02-06)
+
+
+### Features
+
+* Tile F ([#1670](https://github.com/newsuk/times-components/issues/1670)) ([c96d1e2](https://github.com/newsuk/times-components/commit/c96d1e2))
+
+
+
+
+
 ## [3.19.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.19.0...@times-components/styleguide@3.19.1) (2019-02-04)
 
 **Note:** Version bump only for package @times-components/styleguide

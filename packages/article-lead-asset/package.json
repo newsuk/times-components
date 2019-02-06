@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-lead-asset",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Generalised Lead Asset component for templates to consume & style",
   "main": "dist/article-lead-asset",
   "dev": "src/article-lead-asset",
@@ -53,12 +53,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/image": "4.6.8",
+    "@times-components/image": "4.6.9",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/responsive": "0.2.12",
-    "@times-components/test-utils": "2.1.13",
-    "@times-components/utils": "4.2.9",
-    "@times-components/video": "4.3.12",
+    "@times-components/responsive": "0.2.13",
+    "@times-components/test-utils": "2.1.14",
+    "@times-components/utils": "4.2.10",
+    "@times-components/video": "4.3.13",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
