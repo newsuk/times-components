@@ -70,34 +70,36 @@ exports[`2. lead one and one slice 1`] = `
       <Link>
         <View>
           <View>
+            <View>
+              <Text>
+                CYBER CRIME
+              </Text>
+            </View>
+            <Text
+              accessibilityRole="heading"
+              aria-level="3"
+            >
+              GCHQ gives girls free cyber-classes to tackle gender gap
+            </Text>
+            <ArticleFlags
+              flags={
+                Array [
+                  "UPDATED",
+                ]
+              }
+            />
             <Text>
-              CYBER CRIME
+              <Text>
+                
+                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+              </Text>
+              <Text>
+                 
+                The intelligence
+                ...
+              </Text>
             </Text>
           </View>
-          <Text
-            accessibilityRole="heading"
-            aria-level="3"
-          >
-            GCHQ gives girls free cyber-classes to tackle gender gap
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                "UPDATED",
-              ]
-            }
-          />
-          <Text>
-            <Text>
-              
-              GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-            </Text>
-            <Text>
-               
-              The intelligence
-              ...
-            </Text>
-          </Text>
         </View>
       </Link>
     </View>
@@ -282,30 +284,32 @@ exports[`5. secondary two no pic and two 1`] = `
   >
     <View>
       <View>
+        <View>
+          <Text>
+            LABEL
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
         <Text>
-          LABEL
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
         </Text>
       </View>
-      <Text
-        accessibilityRole="heading"
-        aria-level="3"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </Text>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <Text>
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
-      </Text>
     </View>
   </Link>
   <View />
@@ -314,30 +318,32 @@ exports[`5. secondary two no pic and two 1`] = `
   >
     <View>
       <View>
+        <View>
+          <Text>
+            LABEL
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
         <Text>
-          LABEL
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
         </Text>
       </View>
-      <Text
-        accessibilityRole="heading"
-        aria-level="3"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </Text>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <Text>
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
-      </Text>
     </View>
   </Link>
   <View />

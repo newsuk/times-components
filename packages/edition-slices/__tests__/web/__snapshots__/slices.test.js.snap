@@ -72,32 +72,34 @@ exports[`2. lead one and one slice 1`] = `
             <div>
               <div>
                 <div>
-                  CYBER CRIME
+                  <div>
+                    CYBER CRIME
+                  </div>
                 </div>
-              </div>
-              <h3
-                aria-level="3"
-                role="heading"
-              >
-                GCHQ gives girls free cyber-classes to tackle gender gap
-              </h3>
-              <ArticleFlags
-                flags={
-                  Array [
-                    "UPDATED",
-                  ]
-                }
-              />
-              <div>
-                <span>
-                  
-                  GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-                </span>
-                <span>
-                   
-                  The intelligence
-                  ...
-                </span>
+                <h3
+                  aria-level="3"
+                  role="heading"
+                >
+                  GCHQ gives girls free cyber-classes to tackle gender gap
+                </h3>
+                <ArticleFlags
+                  flags={
+                    Array [
+                      "UPDATED",
+                    ]
+                  }
+                />
+                <div>
+                  <span>
+                    
+                    GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+                  </span>
+                  <span>
+                     
+                    The intelligence
+                    ...
+                  </span>
+                </div>
               </div>
             </div>
           </Link>
@@ -286,28 +288,30 @@ exports[`5. secondary two no pic and two 1`] = `
     <div>
       <div>
         <div>
-          LABEL
+          <div>
+            LABEL
+          </div>
         </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <div>
+          <span>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
       </div>
     </div>
   </Link>
@@ -318,28 +322,30 @@ exports[`5. secondary two no pic and two 1`] = `
     <div>
       <div>
         <div>
-          LABEL
+          <div>
+            LABEL
+          </div>
         </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <div>
+          <span>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
       </div>
     </div>
   </Link>

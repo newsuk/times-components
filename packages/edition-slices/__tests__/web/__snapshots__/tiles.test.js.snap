@@ -36,32 +36,34 @@ exports[`2. tile b 1`] = `
   <div>
     <div>
       <div>
-        ROYALS
+        <div>
+          ROYALS
+        </div>
       </div>
-    </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
-    <div>
-      <span>
-        
-        The 
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+      <div>
         <span>
-          Duke of Edinburgh
+          
+          The 
+          <span>
+            Duke of Edinburgh
+          </span>
+           could be charged with driving without due care and attention after his car accident yesterday
+          ...
         </span>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </span>
+      </div>
     </div>
   </div>
 </Link>
