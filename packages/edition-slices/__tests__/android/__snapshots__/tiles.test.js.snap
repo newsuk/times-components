@@ -72,10 +72,12 @@ exports[`2. tile b 1`] = `
 exports[`3. tile c 1`] = `
 <Link>
   <View>
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
-    />
+    <View>
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="https://img/someImage"
+      />
+    </View>
   </View>
   <View>
     <View>
@@ -261,4 +263,31 @@ exports[`8. tile j 1`] = `
     />
   </View>
 </View>
+`;
+
+exports[`9. tile l 1`] = `
+<Link>
+  <View>
+    <View>
+      <View>
+        <Text>
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </View>
+  </View>
+</Link>
 `;

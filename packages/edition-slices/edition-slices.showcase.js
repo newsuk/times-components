@@ -3,14 +3,16 @@ import {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockSecondaryOneSlice,
-  mockSecondaryFourSlice
+  mockSecondaryFourSlice,
+  mockList2AndSixNoPicSlice
 } from "@times-components/fixture-generator";
 import {
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  ListTwoAndSixNoPicSlice
 } from "./src/slices";
 
 export default {
@@ -68,6 +70,7 @@ export default {
         const slice = mockSecondaryFourSlice();
         return (
           <SecondaryTwoNoPicAndTwoSlice
+            onPress={() => {}}
             secondary1={slice.secondary1}
             secondary2={slice.secondary2}
             support1={slice.secondary3}
@@ -76,6 +79,26 @@ export default {
         );
       },
       name: "Secondary Two No Pic And Two (BBGG)",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockList2AndSixNoPicSlice();
+        return (
+          <ListTwoAndSixNoPicSlice
+            lead1={slice.lead1}
+            lead2={slice.lead2}
+            onPress={() => {}}
+            support1={slice.support1}
+            support2={slice.support2}
+            support3={slice.support3}
+            support4={slice.support4}
+            support5={slice.support5}
+            support6={slice.support6}
+          />
+        );
+      },
+      name: "List Two And Six No Pic Four (CCLLLLLL)",
       type: "story"
     }
   ],

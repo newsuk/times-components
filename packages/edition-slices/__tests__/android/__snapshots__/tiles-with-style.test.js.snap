@@ -143,12 +143,22 @@ exports[`3. tile c 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 10,
-        "width": "100%",
+        "paddingBottom": 15,
+        "paddingHorizontal": 12,
+        "paddingTop": 11,
       }
     }
   >
-    <Image />
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <Image />
+    </View>
   </View>
   <View>
     <View
@@ -183,6 +193,8 @@ exports[`3. tile c 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
+          "paddingBottom": 6,
+          "paddingTop": 5,
         }
       }
     >
@@ -542,4 +554,59 @@ exports[`8. tile j 1`] = `
     <ArticleFlags />
   </View>
 </View>
+`;
+
+exports[`9. tile l 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 12,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 11,
+            "marginTop": 5,
+          }
+        }
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
+  </View>
+</Link>
 `;

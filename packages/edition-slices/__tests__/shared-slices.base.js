@@ -3,7 +3,8 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
   mockSecondaryFourSlice,
-  mockSecondaryTwoNoPicAndTwoSlice
+  mockSecondaryTwoNoPicAndTwoSlice,
+  mockList2AndSixNoPicSlice
 } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
@@ -11,7 +12,8 @@ import {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  ListTwoAndSixNoPicSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -93,6 +95,25 @@ export default () => {
             secondary2={secondaryTwoNoPicAndTwoData.secondary2}
             support1={secondaryTwoNoPicAndTwoData.support1}
             support2={secondaryTwoNoPicAndTwoData.support2}
+          />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "List Two And Six No Pic",
+      test: () => {
+        const listTwoAndSixNoPic = mockList2AndSixNoPicSlice();
+        const output = TestRenderer.create(
+          <ListTwoAndSixNoPicSlice
+            lead1={listTwoAndSixNoPic.lead1}
+            lead2={listTwoAndSixNoPic.lead2}
+            support1={listTwoAndSixNoPic.support1}
+            support2={listTwoAndSixNoPic.support2}
+            support3={listTwoAndSixNoPic.support3}
+            support4={listTwoAndSixNoPic.support4}
+            support5={listTwoAndSixNoPic.support5}
+            support6={listTwoAndSixNoPic.support6}
           />
         );
 

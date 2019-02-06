@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. eight child element 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.S3 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "flexDirection": "row",
+        "msFlexDirection": "row",
+      }
+    }
+  >
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        lead-1
+      </div>
+    </div>
+    <div
+      className="S1"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderRightWidth": "1px",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        }
+      }
+    />
+    <div
+      className="S2"
+      style={
+        Object {
+          "paddingBottom": "5px",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="S1"
+      >
+        lead-2
+      </div>
+    </div>
+  </div>
+  <div
+    className="S3"
+    style={
+      Object {
+        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomWidth": "1px",
+        "borderLeftColor": "rgba(220,220,220,1.00)",
+        "borderRightColor": "rgba(220,220,220,1.00)",
+        "borderTopColor": "rgba(220,220,220,1.00)",
+        "marginLeft": "12px",
+        "marginRight": "12px",
+      }
+    }
+  />
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-1
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-2
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-3
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-4
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-5
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="S1"
+  >
+    <div
+      className="S1"
+    >
+      support-6
+    </div>
+    <div
+      className="S3"
+      style={
+        Object {
+          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(220,220,220,1.00)",
+          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(220,220,220,1.00)",
+          "marginLeft": "12px",
+          "marginRight": "12px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

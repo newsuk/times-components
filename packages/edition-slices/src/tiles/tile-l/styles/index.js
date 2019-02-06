@@ -2,20 +2,15 @@ import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    paddingBottom: spacing(3),
     paddingHorizontal: 12,
-    paddingTop: 11
+    paddingVertical: spacing(2)
   },
-  headline: {
+  headlineStyle: {
     fontFamily: fonts.headline,
     fontSize: 22,
     lineHeight: 22,
-    paddingBottom: 6,
-    paddingTop: 5
-  },
-  imageContainer: {
-    marginBottom: spacing(2),
-    width: "100%"
+    marginBottom: 11,
+    marginTop: spacing(1)
   }
 };
 

@@ -13,7 +13,8 @@ import {
   TileE,
   TileG,
   TileI,
-  TileJ
+  TileJ,
+  TileL
 } from "./src/tiles";
 
 export default {
@@ -32,6 +33,14 @@ export default {
         return <TileB onPress={() => {}} tile={slice.lead} />;
       },
       name: "Tile B - No image, 22pt headline, with teaser",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        return <TileL onPress={() => {}} tile={slice.lead} />;
+      },
+      name: "TileL (No image, 22pt headline, no teaser)",
       type: "story"
     },
     {

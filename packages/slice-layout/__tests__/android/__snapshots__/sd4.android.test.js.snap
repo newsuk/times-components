@@ -15,6 +15,7 @@ exports[`1. four child element 1`] = `
       </Text>
     </View>
   </View>
+  <View />
   <View>
     <View>
       <Text>

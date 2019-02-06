@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. eight child element 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        lead-1
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        lead-2
+      </div>
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-1
+    </div>
+    <div />
+  </div>
+  <div>
+    <div>
+      support-2
+    </div>
+    <div />
+  </div>
+  <div>
+    <div>
+      support-3
+    </div>
+    <div />
+  </div>
+  <div>
+    <div>
+      support-4
+    </div>
+    <div />
+  </div>
+  <div>
+    <div>
+      support-5
+    </div>
+    <div />
+  </div>
+  <div>
+    <div>
+      support-6
+    </div>
+    <div />
+  </div>
+</div>
+`;

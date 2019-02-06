@@ -3,20 +3,20 @@ const styles = {
     flex: 1
   },
   item: {
-    borderStyle: "solid",
-    padding: 5,
     width: "50%"
   },
+  itemColumnSeparator: {
+    borderLeftWidth: 1,
+    marginBottom: 12,
+    marginTop: 10
+  },
   itemContainer: {
+    flexDirection: "row"
+  },
+  itemRowSeparator: {
     borderBottomWidth: 0.5,
     borderStyle: "solid",
-    flexDirection: "row",
-    margin: 5
-  },
-  itemSeparator: {
-    borderLeftWidth: 0.25,
-    borderStyle: "solid",
-    margin: 5
+    marginHorizontal: 12
   }
 };
 
