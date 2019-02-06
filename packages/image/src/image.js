@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Image, View } from "react-native";
+import { View } from "react-native";
 import {
   addMissingProtocol,
   normaliseWidth,
   convertToPixels
 } from "@times-components/utils";
+import LazyLoadingImage from "./lazy-loading-image";
 import appendToUrl from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
@@ -54,17 +55,10 @@ class TimesImage extends Component {
       source:
         srcUri && imageRes
           ? {
-            uri: srcUri
-          }
+              uri: srcUri
+            }
           : null,
       style: styles.imageBackground
-    };
-
-    const lazyLoadProps = {
-      ...props,
-      source: props.source ? {
-        uri: appendToUrl(props.source.uri, "offline", true)
-      } : null
     };
 
     return (
@@ -74,8 +68,7 @@ class TimesImage extends Component {
         style={style}
       >
         {isLoaded ? null : <Placeholder />}
-        <Image {...lazyLoadProps} />
-        <Image {...props} />
+        <LazyLoadingImage {...props} />
       </View>
     );
   }
