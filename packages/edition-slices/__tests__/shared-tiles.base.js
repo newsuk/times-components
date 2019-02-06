@@ -1,8 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { mockLeadTwoNoPicAndTwoSlice } from "@times-components/fixture-generator";
 import { iterator } from "@times-components/test-utils";
-import { mockSecondaryTwoNoPicAndTwoSlice } from "@times-components/fixture-generator";
+import {
+  mockLeadTwoNoPicAndTwoSlice,
+  mockSecondaryTwoNoPicAndTwoSlice
+} from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 
 import {
