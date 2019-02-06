@@ -154,67 +154,76 @@ exports[`2. lead one and one slice 1`] = `
       }
     >
       <Link>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 10,
+              "paddingTop": 10,
             }
-          >
-            <Text
+          }
+        >
+          <View>
+            <View
               style={
                 Object {
-                  "color": "#1D1D1B",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "letterSpacing": 1.2,
-                  "lineHeight": 14,
                   "marginBottom": 0,
                 }
               }
             >
-              CYBER CRIME
+              <Text
+                style={
+                  Object {
+                    "color": "#1D1D1B",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 14,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                CYBER CRIME
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "900",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
+              }
+            >
+              GCHQ gives girls free cyber-classes to tackle gender gap
+            </Text>
+            <ArticleFlags />
+            <Text
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text>
+                
+                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+              </Text>
+              <Text>
+                 
+                The intelligence
+                ...
+              </Text>
             </Text>
           </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "900",
-                "lineHeight": 22,
-                "marginBottom": 5,
-              }
-            }
-          >
-            GCHQ gives girls free cyber-classes to tackle gender gap
-          </Text>
-          <ArticleFlags />
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-                "marginBottom": 10,
-              }
-            }
-          >
-            <Text>
-              
-              GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-            </Text>
-            <Text>
-               
-              The intelligence
-              ...
-            </Text>
-          </Text>
         </View>
       </Link>
     </View>
@@ -586,63 +595,72 @@ exports[`4. secondary four 1`] = `
 exports[`5. secondary two no pic and two 1`] = `
 <View>
   <Link>
-    <View>
-      <View
-        style={
-          Object {
-            "marginBottom": 0,
-          }
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingTop": 10,
         }
-      >
-        <Text
+      }
+    >
+      <View>
+        <View
           style={
             Object {
-              "color": "#005B8D",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "letterSpacing": 1.2,
-              "lineHeight": 14,
               "marginBottom": 0,
             }
           }
         >
-          LABEL
+          <Text
+            style={
+              Object {
+                "color": "#005B8D",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "letterSpacing": 1.2,
+                "lineHeight": 14,
+                "marginBottom": 0,
+              }
+            }
+          >
+            LABEL
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags />
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
         </Text>
       </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "900",
-            "lineHeight": 22,
-            "marginBottom": 5,
-          }
-        }
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </Text>
-      <ArticleFlags />
-      <Text
-        style={
-          Object {
-            "color": "#696969",
-            "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 14,
-            "lineHeight": 20,
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
-      </Text>
     </View>
   </Link>
   <View
@@ -656,63 +674,72 @@ exports[`5. secondary two no pic and two 1`] = `
     }
   />
   <Link>
-    <View>
-      <View
-        style={
-          Object {
-            "marginBottom": 0,
-          }
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingTop": 10,
         }
-      >
-        <Text
+      }
+    >
+      <View>
+        <View
           style={
             Object {
-              "color": "#005B8D",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "letterSpacing": 1.2,
-              "lineHeight": 14,
               "marginBottom": 0,
             }
           }
         >
-          LABEL
+          <Text
+            style={
+              Object {
+                "color": "#005B8D",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "letterSpacing": 1.2,
+                "lineHeight": 14,
+                "marginBottom": 0,
+              }
+            }
+          >
+            LABEL
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags />
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
         </Text>
       </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "900",
-            "lineHeight": 22,
-            "marginBottom": 5,
-          }
-        }
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </Text>
-      <ArticleFlags />
-      <Text
-        style={
-          Object {
-            "color": "#696969",
-            "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 14,
-            "lineHeight": 20,
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
-      </Text>
     </View>
   </Link>
   <View

@@ -164,6 +164,12 @@ exports[`2. lead one and one slice 1`] = `
 .IS6 {
   line-height: 22px;
 }
+
+.IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
 </style>
 
 <div
@@ -227,47 +233,51 @@ exports[`2. lead one and one slice 1`] = `
         >
           <Link>
             <div
-              className="S2"
+              className="IS7 S2"
             >
               <div
                 className="S2"
               >
                 <div
-                  className="IS5 S1"
+                  className="S2"
                 >
-                  CYBER CRIME
+                  <div
+                    className="IS5 S1"
+                  >
+                    CYBER CRIME
+                  </div>
                 </div>
-              </div>
-              <h3
-                aria-level="3"
-                className="IS6 S5"
-                role="heading"
-              >
-                GCHQ gives girls free cyber-classes to tackle gender gap
-              </h3>
-              <ArticleFlags
-                flags={
-                  Array [
-                    "UPDATED",
-                  ]
-                }
-              />
-              <div
-                className="S7"
-              >
-                <span
-                  className="S6"
+                <h3
+                  aria-level="3"
+                  className="IS6 S5"
+                  role="heading"
                 >
-                  
-                  GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-                </span>
-                <span
-                  className="S6"
+                  GCHQ gives girls free cyber-classes to tackle gender gap
+                </h3>
+                <ArticleFlags
+                  flags={
+                    Array [
+                      "UPDATED",
+                    ]
+                  }
+                />
+                <div
+                  className="S7"
                 >
-                   
-                  The intelligence
-                  ...
-                </span>
+                  <span
+                    className="S6"
+                  >
+                    
+                    GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+                  </span>
+                  <span
+                    className="S6"
+                  >
+                     
+                    The intelligence
+                    ...
+                  </span>
+                </div>
               </div>
             </div>
           </Link>
@@ -773,28 +783,40 @@ exports[`5. secondary two no pic and two 1`] = `
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .IS4 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS5 {
-  line-height: 22px;
-}
-
-.IS6 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
+.IS5 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS6 {
+  line-height: 22px;
+}
+
 .IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.IS8 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
   border-top-color: rgba(255,255,255,1.00);
   border-right-color: rgba(255,255,255,1.00);
   border-bottom-color: rgba(255,255,255,1.00);
@@ -810,15 +832,15 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 25%;
 }
 
-.IS8 {
+.IS10 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS9 {
+.IS11 {
   line-height: 22px;
 }
 
-.IS10 {
+.IS12 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -826,7 +848,7 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 75%;
 }
 
-.IS11 {
+.IS13 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -838,14 +860,14 @@ exports[`5. secondary two no pic and two 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS12 {
+.IS14 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS13 {
+.IS15 {
   border-top-color: rgba(255,255,255,1.00);
   border-right-color: rgba(255,255,255,1.00);
   border-bottom-color: rgba(255,255,255,1.00);
@@ -861,15 +883,15 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 25%;
 }
 
-.IS14 {
+.IS16 {
   color: rgba(0,91,141,1.00);
 }
 
-.IS15 {
+.IS17 {
   line-height: 22px;
 }
 
-.IS16 {
+.IS18 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -877,7 +899,7 @@ exports[`5. secondary two no pic and two 1`] = `
   width: 75%;
 }
 
-.IS17 {
+.IS19 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -897,100 +919,108 @@ exports[`5. secondary two no pic and two 1`] = `
     url="/article/123"
   >
     <div
-      className="S2"
+      className="IS3 S2"
     >
       <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="S2"
         >
-          LABEL
+          <div
+            className="IS1 S1"
+          >
+            LABEL
+          </div>
         </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
+        <h3
+          aria-level="3"
+          className="IS2 S3"
+          role="heading"
         >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <div
+          className="S5"
+        >
+          <span
+            className="S4"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
       </div>
     </div>
   </Link>
   <div
-    className="IS3 S2"
+    className="IS4 S2"
   />
   <Link
     url="/article/123"
   >
     <div
-      className="S2"
+      className="IS7 S2"
     >
       <div
         className="S2"
       >
         <div
-          className="IS4 S1"
+          className="S2"
         >
-          LABEL
+          <div
+            className="IS5 S1"
+          >
+            LABEL
+          </div>
         </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS5 S3"
-        role="heading"
-      >
-        Venezuela shows how Corbyn’s socialism works
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
+        <h3
+          aria-level="3"
+          className="IS6 S3"
+          role="heading"
         >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <div
+          className="S5"
+        >
+          <span
+            className="S4"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
       </div>
     </div>
   </Link>
   <div
-    className="IS6 S2"
+    className="IS8 S2"
   />
   <Link
     url="/article/123"
   >
     <div
-      className="IS11 S2"
+      className="IS13 S2"
     >
       <div
-        className="IS7 S2"
+        className="IS9 S2"
       >
         <Image
           aspectRatio={1}
@@ -998,20 +1028,20 @@ exports[`5. secondary two no pic and two 1`] = `
         />
       </div>
       <div
-        className="IS10 S2"
+        className="IS12 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS8 S1"
+            className="IS10 S1"
           >
             LABEL
           </div>
         </div>
         <h3
           aria-level="3"
-          className="IS9 S3"
+          className="IS11 S3"
           role="heading"
         >
           Venezuela shows how Corbyn’s socialism works
@@ -1027,16 +1057,16 @@ exports[`5. secondary two no pic and two 1`] = `
     </div>
   </Link>
   <div
-    className="IS12 S2"
+    className="IS14 S2"
   />
   <Link
     url="/article/123"
   >
     <div
-      className="IS17 S2"
+      className="IS19 S2"
     >
       <div
-        className="IS13 S2"
+        className="IS15 S2"
       >
         <Image
           aspectRatio={1}
@@ -1044,20 +1074,20 @@ exports[`5. secondary two no pic and two 1`] = `
         />
       </div>
       <div
-        className="IS16 S2"
+        className="IS18 S2"
       >
         <div
           className="S2"
         >
           <div
-            className="IS14 S1"
+            className="IS16 S1"
           >
             LABEL
           </div>
         </div>
         <h3
           aria-level="3"
-          className="IS15 S3"
+          className="IS17 S3"
           role="heading"
         >
           Venezuela shows how Corbyn’s socialism works

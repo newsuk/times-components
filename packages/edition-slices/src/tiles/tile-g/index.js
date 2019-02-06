@@ -5,7 +5,7 @@ import { TileImage, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileG = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+  <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileImage
         aspectRatio={1}

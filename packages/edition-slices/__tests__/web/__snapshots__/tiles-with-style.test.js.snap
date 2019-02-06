@@ -133,51 +133,61 @@ exports[`2. tile b 1`] = `
 .IS2 {
   line-height: 22px;
 }
+
+.IS3 {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
 </style>
 
 <Link>
   <div
-    className="S2"
+    className="IS3 S2"
   >
     <div
       className="S2"
     >
       <div
-        className="IS1 S1"
+        className="S2"
       >
-        ROYALS
+        <div
+          className="IS1 S1"
+        >
+          ROYALS
+        </div>
       </div>
-    </div>
-    <h3
-      aria-level="3"
-      className="IS2 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
-    <div
-      className="S5"
-    >
-      <span
-        className="S4"
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
       >
-        
-        The 
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+      <div
+        className="S5"
+      >
         <span
           className="S4"
         >
-          Duke of Edinburgh
+          
+          The 
+          <span
+            className="S4"
+          >
+            Duke of Edinburgh
+          </span>
+           could be charged with driving without due care and attention after his car accident yesterday
+          ...
         </span>
-         could be charged with driving without due care and attention after his car accident yesterday
-        ...
-      </span>
+      </div>
     </div>
   </div>
 </Link>
