@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.8.0...@times-components/edition-slices@0.8.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* padding on tiles ([#1668](https://github.com/newsuk/times-components/issues/1668)) ([429ebb9](https://github.com/newsuk/times-components/commit/429ebb9))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.7.0...@times-components/edition-slices@0.8.0) (2019-02-06)
 
 
