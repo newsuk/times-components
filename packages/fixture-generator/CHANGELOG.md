@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.6.0...@times-components/fixture-generator@0.7.0) (2019-02-06)
+
+
+### Features
+
+* Tile I and tile J ([#1667](https://github.com/newsuk/times-components/issues/1667)) ([b70ed36](https://github.com/newsuk/times-components/commit/b70ed36))
+
+
+
+
+
 # [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.5.3...@times-components/fixture-generator@0.6.0) (2019-02-06)
 
 
