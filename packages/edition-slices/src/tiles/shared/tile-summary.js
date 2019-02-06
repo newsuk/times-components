@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
-  ArticleSummaryHeadline
+  ArticleSummaryHeadline,
+  ArticleSummaryStrapline
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
@@ -12,6 +13,8 @@ const TileSummary = ({
     article: { flags, hasVideo, headline, label, section, shortHeadline }
   },
   headlineStyle,
+  strapline,
+  straplineStyle,
   style,
   summary
 }) => (
@@ -32,12 +35,24 @@ const TileSummary = ({
       isVideo: hasVideo,
       title: label
     }}
+    strapline={
+      strapline
+        ? () => (
+            <ArticleSummaryStrapline
+              strapline={strapline}
+              style={straplineStyle}
+            />
+          )
+        : undefined
+    }
     style={style}
   />
 );
 
 TileSummary.propTypes = {
   headlineStyle: PropTypes.shape({}),
+  strapline: PropTypes.string,
+  straplineStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   summary: PropTypes.arrayOf(PropTypes.shape({})),
   tile: PropTypes.shape({}).isRequired
@@ -45,6 +60,8 @@ TileSummary.propTypes = {
 
 TileSummary.defaultProps = {
   headlineStyle: null,
+  strapline: null,
+  straplineStyle: null,
   style: null,
   summary: null
 };

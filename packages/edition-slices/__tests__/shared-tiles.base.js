@@ -1,7 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import { mockSecondaryTwoNoPicAndTwoSlice } from "@times-components/fixture-generator";
+import {
+  mockLeadTwoNoPicAndTwoSlice,
+  mockSecondaryTwoNoPicAndTwoSlice
+} from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 
 import {
@@ -10,6 +13,7 @@ import {
   TileC,
   TileD,
   TileE,
+  TileF,
   TileG,
   TileI,
   TileJ,
@@ -74,6 +78,17 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <TileE onPress={() => {}} tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile f",
+      test: () => {
+        const slice = mockLeadTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <TileF onPress={() => {}} tile={slice.lead1} />
         );
 
         expect(output).toMatchSnapshot();
