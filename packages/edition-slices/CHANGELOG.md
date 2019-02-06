@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.5.4...@times-components/edition-slices@0.6.0) (2019-02-06)
+
+
+### Features
+
+* touchable tiles ([#1662](https://github.com/newsuk/times-components/issues/1662)) ([900cec8](https://github.com/newsuk/times-components/commit/900cec8))
+
+
+
+
+
 ## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.5.3...@times-components/edition-slices@0.5.4) (2019-02-04)
 
 **Note:** Version bump only for package @times-components/edition-slices
