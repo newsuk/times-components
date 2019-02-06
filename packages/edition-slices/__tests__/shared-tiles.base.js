@@ -8,6 +8,7 @@ jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/link", () => "Link");
 jest.mock("@times-components/gradient", () => "Gradient");
 
 const leadOneAndOneData = leadOneAndOneDataGenerator({
@@ -20,7 +21,7 @@ export default () => {
       name: "tile a",
       test: () => {
         const output = TestRenderer.create(
-          <TileA tile={leadOneAndOneData.lead} />
+          <TileA onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -30,7 +31,7 @@ export default () => {
       name: "tile b",
       test: () => {
         const output = TestRenderer.create(
-          <TileB tile={leadOneAndOneData.lead} />
+          <TileB onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -40,7 +41,7 @@ export default () => {
       name: "tile c",
       test: () => {
         const output = TestRenderer.create(
-          <TileC tile={leadOneAndOneData.lead} />
+          <TileC onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -50,7 +51,7 @@ export default () => {
       name: "tile d",
       test: () => {
         const output = TestRenderer.create(
-          <TileD tile={leadOneAndOneData.lead} />
+          <TileD onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -60,7 +61,7 @@ export default () => {
       name: "tile e",
       test: () => {
         const output = TestRenderer.create(
-          <TileE tile={leadOneAndOneData.lead} />
+          <TileE onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

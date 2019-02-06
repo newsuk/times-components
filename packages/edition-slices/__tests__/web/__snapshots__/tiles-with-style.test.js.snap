@@ -43,9 +43,7 @@ exports[`1. tile a 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3"
   >
@@ -81,7 +79,7 @@ exports[`1. tile a 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`2. tile b 1`] = `
@@ -147,9 +145,7 @@ exports[`2. tile b 1`] = `
 }
 </style>
 
-<div
-  className="S2"
->
+<Link>
   <div
     className="IS3 S6"
   >
@@ -194,7 +190,7 @@ exports[`2. tile b 1`] = `
       </span>
     </div>
   </div>
-</div>
+</Link>
 `;
 
 exports[`3. tile c 1`] = `
@@ -236,9 +232,7 @@ exports[`3. tile c 1`] = `
 }
 </style>
 
-<div
-  className="S3"
->
+<Link>
   <div
     className="IS1 S1"
   >
@@ -274,7 +268,7 @@ exports[`3. tile c 1`] = `
       }
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`4. tile d 1`] = `
@@ -328,45 +322,47 @@ exports[`4. tile d 1`] = `
 }
 </style>
 
-<div
-  className="IS5 S1"
->
+<Link>
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={1.5}
-      uri="https://img/someImage"
-    />
-  </div>
-  <div
-    className="IS4 S1"
+    className="IS5 S1"
   >
     <div
-      className="S1"
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="IS4 S1"
     >
       <div
-        className="IS2 S2"
+        className="S1"
       >
-        ROYALS
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      className="IS3 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
-</div>
+</Link>
 `;
 
 exports[`5. tile e 1`] = `
@@ -420,43 +416,45 @@ exports[`5. tile e 1`] = `
 }
 </style>
 
-<div
-  className="IS5 S1"
->
+<Link>
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={0.8}
-      uri="http://image.io/4by5"
-    />
-  </div>
-  <div
-    className="IS4 S1"
+    className="IS5 S1"
   >
     <div
-      className="S1"
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={0.8}
+        uri="http://image.io/4by5"
+      />
+    </div>
+    <div
+      className="IS4 S1"
     >
       <div
-        className="IS2 S2"
+        className="S1"
       >
-        ROYALS
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
       </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
-    <h3
-      aria-level="3"
-      className="IS3 S3"
-      role="heading"
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "NEW",
-        ]
-      }
-    />
   </div>
-</div>
+</Link>
 `;

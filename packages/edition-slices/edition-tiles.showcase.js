@@ -10,7 +10,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileA tile={slice.lead} />;
+        return <TileA onPress={() => {}} tile={slice.lead} />;
       },
       name: "TileA (Bottom image, 35pt headline, no teaser)",
       type: "story"
@@ -18,7 +18,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileB tile={slice.lead} />;
+        return <TileB onPress={() => {}} tile={slice.lead} />;
       },
       name: "TileB (No image, 22pt headline, with teaser)",
       type: "story"
@@ -26,7 +26,7 @@ export default {
     {
       component: () => {
         const slice = mockSecondaryFourSlice();
-        return <TileC tile={slice.secondary1} />;
+        return <TileC onPress={() => {}} tile={slice.secondary1} />;
       },
       name: "TileC (Top image, 22pt headline, no teaser)",
       type: "story"
@@ -34,7 +34,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileD tile={slice.lead} />;
+        return <TileD onPress={() => {}} tile={slice.lead} />;
       },
       name: "TileD (Side 3 / 2 image, 22pt headline, no teaser)",
       type: "story"
@@ -42,7 +42,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <TileE tile={slice.lead} />;
+        return <TileE onPress={() => {}} tile={slice.lead} />;
       },
       name: "TileE (Side 4 / 5 image, 22pt headline, no teaser)",
       type: "story"

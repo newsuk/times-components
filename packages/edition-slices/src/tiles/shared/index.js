@@ -1,4 +1,5 @@
 import TileImage from "./tile-image";
+import TileLink from "./tile-link";
 import TileSummary from "./tile-summary";
 
-export { TileImage, TileSummary };
+export { TileImage, TileLink, TileSummary };

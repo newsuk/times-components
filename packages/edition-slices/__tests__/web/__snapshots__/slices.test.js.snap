@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one full width slice 1`] = `
-<div>
+<Link>
   <div>
     <div>
       <div>
@@ -28,7 +28,7 @@ exports[`1. lead one full width slice 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`2. lead one and one slice 1`] = `
@@ -36,7 +36,7 @@ exports[`2. lead one and one slice 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <Link>
           <div>
             <div>
               <div>
@@ -63,12 +63,12 @@ exports[`2. lead one and one slice 1`] = `
               uri="https://img/someImage"
             />
           </div>
-        </div>
+        </Link>
       </div>
       <div />
       <div>
         <div>
-          <div>
+          <Link>
             <div>
               <div>
                 <div>
@@ -100,7 +100,7 @@ exports[`2. lead one and one slice 1`] = `
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@ exports[`2. lead one and one slice 1`] = `
 `;
 
 exports[`3. secondary one slice 1`] = `
-<div>
+<Link>
   <div>
     <div>
       <div>
@@ -136,14 +136,16 @@ exports[`3. secondary one slice 1`] = `
       uri="https://img/someImage"
     />
   </div>
-</div>
+</Link>
 `;
 
 exports[`4. secondary four 1`] = `
 <div>
   <div>
     <div>
-      <div>
+      <Link
+        url="/article/123"
+      >
         <div>
           <Image
             aspectRatio={1.7777777777777777}
@@ -170,11 +172,13 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
     <div />
     <div>
-      <div>
+      <Link
+        url="/article/123"
+      >
         <div>
           <Image
             aspectRatio={1.7777777777777777}
@@ -201,12 +205,14 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
   </div>
   <div>
     <div>
-      <div>
+      <Link
+        url="/article/123"
+      >
         <div>
           <Image
             aspectRatio={1.7777777777777777}
@@ -233,11 +239,13 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
     <div />
     <div>
-      <div>
+      <Link
+        url="/article/123"
+      >
         <div>
           <Image
             aspectRatio={1.7777777777777777}
@@ -264,7 +272,7 @@ exports[`4. secondary four 1`] = `
             }
           />
         </div>
-      </div>
+      </Link>
     </div>
   </div>
 </div>

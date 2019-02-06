@@ -17,7 +17,7 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneFullWidthSlice();
-        return <LeadOneFullWidthSlice lead={slice.lead} />;
+        return <LeadOneFullWidthSlice lead={slice.lead} onPress={() => {}} />;
       },
       name: "Lead One Full Width (A)",
       type: "story"
@@ -25,7 +25,13 @@ export default {
     {
       component: () => {
         const slice = mockLeadOneAndOneSlice();
-        return <LeadOneAndOneSlice lead={slice.lead} support={slice.support} />;
+        return (
+          <LeadOneAndOneSlice
+            lead={slice.lead}
+            onPress={() => {}}
+            support={slice.support}
+          />
+        );
       },
       name: "Lead One And One (AB)",
       type: "story"
@@ -33,7 +39,9 @@ export default {
     {
       component: () => {
         const slice = mockSecondaryOneSlice();
-        return <SecondaryOneSlice secondary={slice.secondary} />;
+        return (
+          <SecondaryOneSlice onPress={() => {}} secondary={slice.secondary} />
+        );
       },
       name: "Secondary One (A)",
       type: "story"
@@ -43,6 +51,7 @@ export default {
         const slice = mockSecondaryFourSlice();
         return (
           <SecondaryFourSlice
+            onPress={() => {}}
             secondary1={slice.secondary1}
             secondary2={slice.secondary2}
             secondary3={slice.secondary3}

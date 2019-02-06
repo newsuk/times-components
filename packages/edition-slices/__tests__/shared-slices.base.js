@@ -14,6 +14,7 @@ jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/link", () => "Link");
 jest.mock("@times-components/gradient", () => "Gradient");
 
 const leadOneAndOneData = leadOneAndOneDataGenerator({
@@ -26,7 +27,10 @@ export default () => {
       name: "lead one full width slice",
       test: () => {
         const output = TestRenderer.create(
-          <LeadOneFullWidthSlice lead={leadOneAndOneData.lead} />
+          <LeadOneFullWidthSlice
+            lead={leadOneAndOneData.lead}
+            onPress={() => {}}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -38,6 +42,7 @@ export default () => {
         const output = TestRenderer.create(
           <LeadOneAndOneSlice
             lead={leadOneAndOneData.lead}
+            onPress={() => {}}
             support={leadOneAndOneData.support}
           />
         );
@@ -49,7 +54,10 @@ export default () => {
       name: "secondary one slice",
       test: () => {
         const output = TestRenderer.create(
-          <SecondaryOneSlice secondary={leadOneAndOneData.lead} />
+          <SecondaryOneSlice
+            onPress={() => {}}
+            secondary={leadOneAndOneData.lead}
+          />
         );
         expect(output).toMatchSnapshot();
       }
@@ -60,6 +68,7 @@ export default () => {
         const secondaryFourData = mockSecondaryFourSlice();
         const output = TestRenderer.create(
           <SecondaryFourSlice
+            onPress={() => {}}
             secondary1={secondaryFourData.secondary1}
             secondary2={secondaryFourData.secondary2}
             secondary3={secondaryFourData.secondary3}
