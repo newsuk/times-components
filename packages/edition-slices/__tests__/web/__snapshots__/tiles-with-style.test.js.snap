@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. tile a 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  margin-bottom: 10px;
+  width: 100%;
+}
+</style>
+
+<Link>
+  <div
+    className="IS3"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+  <div
+    className="IS4"
+  >
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="https://img/someImage"
+    />
+  </div>
+</Link>
+`;
+
+exports[`2. tile b 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  line-height: 22px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<Link>
+  <div
+    className="IS3 S6"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        The 
+        <span
+          className="S4"
+        >
+          Duke of Edinburgh
+        </span>
+         could be charged with driving without due care and attention after his car accident yesterday
+        ...
+      </span>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`3. tile c 1`] = `
+<style>
+.S1 {
+  margin-bottom: 10px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 15px;
+  padding-top: 11px;
+}
+
+.IS3 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS4 {
+  line-height: 22px;
+  padding-bottom: 6px;
+  padding-top: 5px;
+}
+</style>
+
+<Link>
+  <div
+    className="IS2 S2"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="https://img/someImage"
+      />
+    </div>
+  </div>
+  <div
+    className="S2"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="IS3 S3"
+      >
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS4 S4"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`4. tile d 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  width: 45%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS3 {
+  line-height: 22px;
+}
+
+.IS4 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link>
+  <div
+    className="IS5 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`5. tile e 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  width: 45%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS3 {
+  line-height: 22px;
+}
+
+.IS4 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link>
+  <div
+    className="IS5 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={0.8}
+        uri="http://image.io/4by5"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`6. tile l 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS2 {
+  line-height: 22px;
+  margin-bottom: 11px;
+  margin-top: 5px;
+}
+
+.IS3 {
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+</style>
+
+<div
+  className="IS3 S2"
+>
+  <div
+    className="S2"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        ROYALS
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      Prince Philip ‘could be prosecuted’ over car crash
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          "NEW",
+        ]
+      }
+    />
+  </div>
+</div>
+`;
