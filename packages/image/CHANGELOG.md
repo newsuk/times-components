@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.1](https://github.com/newsuk/times-components/compare/@times-components/image@4.7.0...@times-components/image@4.7.1) (2019-02-07)
+
+
+### Bug Fixes
+
+* border radius bug in react native and add onPress handler to SecondaryTwoNoPicAndTwo ([#1673](https://github.com/newsuk/times-components/issues/1673)) ([ea24442](https://github.com/newsuk/times-components/commit/ea24442))
+
+
+
+
+
 # [4.7.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.6.9...@times-components/image@4.7.0) (2019-02-07)
 
 
