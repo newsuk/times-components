@@ -1,6 +1,7 @@
 import MockArticle from "./mock-article";
 import MockImage from "./mock-image";
 import MockAuthor from "./mock-author";
+import MockEdition from "./mock-edition";
 import mockEditionSlice, {
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
@@ -25,6 +26,7 @@ export {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockList2AndSixNoPicSlice,
   MockArticle,
+  MockEdition,
   mockEditionSlice,
   MockImage,
   MockAuthor,
