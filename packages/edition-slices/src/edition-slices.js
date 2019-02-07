@@ -2,6 +2,7 @@ import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice
@@ -11,6 +12,7 @@ export {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice

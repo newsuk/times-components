@@ -3,6 +3,7 @@ import { ScrollView } from "react-native";
 import {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
+  mockLeadTwoNoPicAndTwoSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockList2AndSixNoPicSlice
@@ -11,12 +12,21 @@ import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice
 } from "./src/slices";
+
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
 
 export default {
   children: [
@@ -27,7 +37,7 @@ export default {
           <ScrollView>
             <LeadOneAndFourSlice
               lead={slice.support5}
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               support1={slice.support1}
               support2={slice.support2}
               support3={slice.support3}
@@ -40,13 +50,13 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneAndOneSlice();
         return (
           <ScrollView>
             <LeadOneAndOneSlice
               lead={slice.lead}
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               support={slice.support}
             />
           </ScrollView>
@@ -60,7 +70,7 @@ export default {
         const slice = mockLeadOneFullWidthSlice();
         return (
           <ScrollView>
-            <LeadOneFullWidthSlice lead={slice.lead} onPress={() => {}} />
+            <LeadOneFullWidthSlice lead={slice.lead} onPress={preventDefaultedAction(decorateAction)("onPress")} />
           </ScrollView>
         );
       },
@@ -68,11 +78,27 @@ export default {
       type: "story"
     },
     {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadTwoNoPicAndTwoSlice();
+        return (
+          <LeadTwoNoPicAndTwoSlice
+            lead1={slice.lead1}
+            lead2={slice.lead2}
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            support1={slice.support1}
+            support2={slice.support2}
+          />
+        );
+      },
+      name: "Lead Two no pic and Two (FBDE)",
+      type: "story"
+    },
+    {
       component: () => {
         const slice = mockSecondaryOneSlice();
         return (
           <ScrollView>
-            <SecondaryOneSlice onPress={() => {}} secondary={slice.secondary} />
+            <SecondaryOneSlice onPress={preventDefaultedAction(decorateAction)("onPress")} secondary={slice.secondary} />
           </ScrollView>
         );
       },
@@ -80,12 +106,12 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockSecondaryFourSlice();
         return (
           <ScrollView>
             <SecondaryFourSlice
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               secondary1={slice.secondary1}
               secondary2={slice.secondary2}
               secondary3={slice.secondary3}
@@ -98,12 +124,12 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockSecondaryFourSlice();
         return (
           <ScrollView>
             <SecondaryTwoAndTwoSlice
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               secondary1={slice.secondary1}
               secondary2={slice.secondary2}
               support1={slice.secondary3}
@@ -121,7 +147,7 @@ export default {
         return (
           <ScrollView>
             <SecondaryTwoNoPicAndTwoSlice
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               secondary1={slice.secondary1}
               secondary2={slice.secondary2}
               support1={slice.secondary3}
@@ -134,14 +160,14 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockList2AndSixNoPicSlice();
         return (
           <ScrollView>
             <ListTwoAndSixNoPicSlice
               lead1={slice.lead1}
               lead2={slice.lead2}
-              onPress={() => {}}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
               support1={slice.support1}
               support2={slice.support2}
               support3={slice.support3}

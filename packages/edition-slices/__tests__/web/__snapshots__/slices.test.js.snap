@@ -91,11 +91,11 @@ exports[`2. lead one and one slice 1`] = `
                 />
                 <div>
                   <span>
-                    
+
                     GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
                   </span>
                   <span>
-                     
+
                     The intelligence
                     ...
                   </span>
@@ -148,7 +148,6 @@ exports[`3. lead one and four slice 1`] = `
     <div>
       <div>
         <Image
-          aspectRatio={1.5}
           uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
         />
       </div>
@@ -172,14 +171,6 @@ exports[`3. lead one and four slice 1`] = `
           }
         />
       </div>
-    </div>
-  </Link>
-  <div />
-  <Link
-    url="/article/123"
-  >
-    <div>
-      <div>
         <Image
           aspectRatio={1.5}
           uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
@@ -482,7 +473,7 @@ exports[`6. secondary two and two 1`] = `
         />
         <div>
           <span>
-            
+
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </span>
@@ -516,7 +507,7 @@ exports[`6. secondary two and two 1`] = `
         />
         <div>
           <span>
-            
+
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </span>
@@ -622,7 +613,7 @@ exports[`7. secondary two no pic and two 1`] = `
         />
         <div>
           <span>
-            
+
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </span>
@@ -656,7 +647,7 @@ exports[`7. secondary two no pic and two 1`] = `
         />
         <div>
           <span>
-            
+
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </span>
