@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Image, View } from "react-native";
+import { View } from "react-native";
 import {
   addMissingProtocol,
   normaliseWidth,
   convertToPixels
 } from "@times-components/utils";
-import appendSize from "./utils";
+import LazyLoadingImage from "./lazy-loading-image";
+import appendToUrl from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
@@ -47,7 +48,7 @@ class TimesImage extends Component {
 
     const srcUri = isDataImageUri
       ? uri
-      : addMissingProtocol(appendSize(uri, "resize", imageRes));
+      : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
 
     const props = {
       onLoad: this.handleLoad,
@@ -67,7 +68,7 @@ class TimesImage extends Component {
         style={style}
       >
         {isLoaded ? null : <Placeholder />}
-        <Image {...props} />
+        <LazyLoadingImage {...props} />
       </View>
     );
   }

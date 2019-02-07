@@ -20,6 +20,10 @@ The native image manages any malformed `uri` props by adding missing protocols
 and managing the width of the image (according to the device width) in the final
 query string.
 
+## Android only
+
+Supports offline image support for android only. Creates two image views on top of each other, one for the offline low-res image and another one for the network request with a higher res image.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this

@@ -36,6 +36,13 @@ exports[`1. modal image 1`] = `
               <Image
                 source={
                   Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
+                  }
+                }
+              />
+              <Image
+                source={
+                  Object {
                     "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
                   }
                 }
@@ -62,6 +69,13 @@ exports[`1. modal image 1`] = `
           degrees={264}
         />
       </View>
+      <Image
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
+          }
+        }
+      />
       <Image
         source={
           Object {
