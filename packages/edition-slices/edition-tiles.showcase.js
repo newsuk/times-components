@@ -104,7 +104,7 @@ export default {
           />
         );
       },
-      name: "TileF (35pt Headline, no image, strapline and teaser)",
+      name: "Tile F - 35pt Headline, no image, strapline and teaser",
       type: "story"
     },
     {
@@ -156,7 +156,7 @@ export default {
           />
         );
       },
-      name: "TileL (No image, 22pt headline, no teaser)",
+      name: "Tile L - No image, 22pt headline, no teaser",
       type: "story"
     }
   ],
