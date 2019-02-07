@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.6.9...@times-components/image@4.7.0) (2019-02-07)
+
+
+### Features
+
+* offline images lazy load ([#1672](https://github.com/newsuk/times-components/issues/1672)) ([1334174](https://github.com/newsuk/times-components/commit/1334174))
+
+
+
+
+
 ## [4.6.9](https://github.com/newsuk/times-components/compare/@times-components/image@4.6.8...@times-components/image@4.6.9) (2019-02-06)
 
 **Note:** Version bump only for package @times-components/image
