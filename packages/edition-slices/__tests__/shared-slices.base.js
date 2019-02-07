@@ -12,6 +12,7 @@ import {
   LeadOneAndOneSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice
 } from "../src/slices";
@@ -82,6 +83,22 @@ export default () => {
           />
         );
 
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary Two And Two",
+      test: () => {
+        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <SecondaryTwoAndTwoSlice
+            onPress={() => {}}
+            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
+            secondary2={secondaryTwoNoPicAndTwoData.secondary2}
+            support1={secondaryTwoNoPicAndTwoData.support1}
+            support2={secondaryTwoNoPicAndTwoData.support2}
+          />
+        );
         expect(output).toMatchSnapshot();
       }
     },
