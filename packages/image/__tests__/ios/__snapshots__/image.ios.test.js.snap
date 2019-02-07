@@ -144,3 +144,19 @@ exports[`7. uses highressize if it is smaller than layout width 1`] = `
   />
 </View>
 `;
+
+exports[`9. image with borderradius 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+  </View>
+  <Image
+    borderRadius={10}
+    source={null}
+  />
+</View>
+`;

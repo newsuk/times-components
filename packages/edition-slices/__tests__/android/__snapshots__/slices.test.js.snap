@@ -363,6 +363,7 @@ exports[`5. secondary two no pic and two 1`] = `
       <View>
         <Image
           aspectRatio={1}
+          borderRadius={187.5}
           uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
         />
       </View>
@@ -396,6 +397,7 @@ exports[`5. secondary two no pic and two 1`] = `
       <View>
         <Image
           aspectRatio={1}
+          borderRadius={187.5}
           uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
         />
       </View>

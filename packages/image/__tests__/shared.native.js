@@ -124,6 +124,20 @@ export default () => {
         );
         expect(images[images.length - 1].props.source.uri).toEqual(uri);
       }
+    },
+    {
+      name: "image with borderRadius",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Image
+            aspectRatio={3 / 2}
+            borderRadius={10}
+            highResSize={1000}
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
+        );
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 

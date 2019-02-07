@@ -442,11 +442,9 @@ exports[`7. tile g 1`] = `
       style={
         Object {
           "borderColor": "#FFFFFF",
-          "borderRadius": 187.5,
-          "marginLeft": "auto",
-          "marginRight": "auto",
+          "borderWidth": 1,
           "overflow": "hidden",
-          "width": "25%",
+          "width": "30%",
         }
       }
     >
@@ -456,8 +454,8 @@ exports[`7. tile g 1`] = `
       style={
         Object {
           "paddingHorizontal": 10,
-          "paddingVertical": 5,
-          "width": "75%",
+          "paddingTop": 5,
+          "width": "70%",
         }
       }
     >
@@ -505,7 +503,7 @@ exports[`7. tile g 1`] = `
 `;
 
 exports[`8. tile i 1`] = `
-<View>
+<Link>
   <View
     style={
       Object {
@@ -566,77 +564,79 @@ exports[`8. tile i 1`] = `
     </Text>
     <ArticleFlags />
   </View>
-</View>
+</Link>
 `;
 
 exports[`9. tile j 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-      "paddingHorizontal": 10,
-      "paddingVertical": 10,
-    }
-  }
->
+<Link>
   <View
     style={
       Object {
-        "width": "33.33%",
-      }
-    }
-  >
-    <Image />
-  </View>
-  <View
-    style={
-      Object {
+        "flexDirection": "row",
         "paddingHorizontal": 10,
-        "paddingVertical": 5,
-        "width": "66.66%",
+        "paddingVertical": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "width": "33.33%",
         }
       }
     >
-      <Text
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingVertical": 5,
+          "width": "66.66%",
+        }
+      }
+    >
+      <View
         style={
           Object {
-            "color": "#1D1D1B",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 14,
-            "marginBottom": 0,
+            "marginBottom": 5,
           }
         }
       >
-        ROYALS
-      </Text>
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 5,
+        <Text
+          style={
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 5,
+          }
         }
-      }
-    >
-      Prince Philip ‘could be prosecuted’ over car crash
-    </Text>
-    <ArticleFlags />
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
   </View>
-</View>
+</Link>
 `;
 
 exports[`10. tile l 1`] = `
