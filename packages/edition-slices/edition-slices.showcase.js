@@ -196,12 +196,14 @@ export default {
       component: () => {
         const slice = mockLeadersSlice();
         return (
-          <LeadersSlice
-            leader1={slice.leader1}
-            leader2={slice.leader2}
-            leader3={slice.leader3}
-            onPress={() => {}}
-          />
+          <ScrollView>
+            <LeadersSlice
+              leader1={slice.leader1}
+              leader2={slice.leader2}
+              leader3={slice.leader3}
+              onPress={() => {}}
+            />
+          </ScrollView>
         );
       },
       name: "Leaders (MMMM)",
