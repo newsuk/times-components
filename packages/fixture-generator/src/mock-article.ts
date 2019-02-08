@@ -56,7 +56,7 @@ class MockArticle {
       publishedTime: new Date(0),
       section: SectionName.business,
       shortHeadline:
-        "shortheadline - Venezuela shows how Corbyn’s socialism work",
+        "Driving Off",
       shortIdentifier: "37b27qd2s",
       standfirst:
         "Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all",
