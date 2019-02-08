@@ -7,6 +7,7 @@ import author from "./fixtures/author.json";
 import authorProfile from "./author-profile";
 import bylineWithLink from "./fixtures/byline-with-link.json";
 import clientTester from "./client-tester";
+import edition from "./edition";
 import generateQueries from "./generate-queries";
 import mm from "./make-mocks";
 import MockedProvider from "./mocked-provider";
@@ -35,6 +36,7 @@ export {
   articleComments,
   authorProfile,
   clientTester,
+  edition,
   fixtures,
   generateQueries,
   makeMocks,
