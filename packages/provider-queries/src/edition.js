@@ -1,6 +1,5 @@
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
-import articleFragment from "./article-fragment";
 
 export default addTypenameToDocument(
   gql`
@@ -28,16 +27,16 @@ export default addTypenameToDocument(
     }
 
     fragment magazineSection on MagazineSection {
-      __typename
+      name: __typename
       slices {
         ... on StandardSlice {
-          __typename
+          name: __typename
           items {
             ...tile
           }
         }
         ... on CommentLeadAndCartoonSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -46,7 +45,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LetterThundererPodcastSlice {
-          __typename
+          name: __typename
           letter {
             ...tile
           }
@@ -58,7 +57,7 @@ export default addTypenameToDocument(
           }
         }
         ... on CommentTwoAndNotebookSlice {
-          __typename
+          name: __typename
           main1 {
             ...tile
           }
@@ -70,13 +69,13 @@ export default addTypenameToDocument(
           }
         }
         ... on FocusSlice {
-          __typename
+          name: __typename
           main {
             ...tile
           }
         }
         ... on LeadersSlice {
-          __typename
+          name: __typename
           leader1 {
             ...tile
           }
@@ -88,7 +87,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndFourSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -106,7 +105,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndOneSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -115,7 +114,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndTwoSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -127,13 +126,13 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneFullWidthSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
         }
         ... on LeadOneNoPicAndOneAndPortraitSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -145,7 +144,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadTwoNoPicAndTwoSlice {
-          __typename
+          name: __typename
           lead1 {
             ...tile
           }
@@ -160,7 +159,7 @@ export default addTypenameToDocument(
           }
         }
         ... on ObituariesLeadAndTwoSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -172,7 +171,7 @@ export default addTypenameToDocument(
           }
         }
         ... on OpinionOneAndTwoSlice {
-          __typename
+          name: __typename
           opinion {
             ...tile
           }
@@ -184,7 +183,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryFourSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -199,13 +198,13 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryOneSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
         }
         ... on SecondaryOneAndColumnistSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
@@ -214,7 +213,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryOneAndFourSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
@@ -234,7 +233,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryTwoAndTwoSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -249,7 +248,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryTwoNoPicAndTwoSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -264,7 +263,7 @@ export default addTypenameToDocument(
           }
         }
         ... on TwoPicAndSixNoPicSlice {
-          __typename
+          name: __typename
           lead1 {
             ...tile
           }
@@ -294,10 +293,10 @@ export default addTypenameToDocument(
     }
 
     fragment puzzleSection on PuzzleSection {
-      __typename
+      name: __typename
       slices {
         ... on Puzzle {
-          __typename
+          name: __typename
           id
           title
           url
@@ -312,16 +311,16 @@ export default addTypenameToDocument(
     }
 
     fragment standardSection on StandardSection {
-      __typename
+      name: __typename
       slices {
         ... on StandardSlice {
-          __typename
+          name: __typename
           items {
             ...tile
           }
         }
         ... on CommentLeadAndCartoonSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -330,7 +329,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LetterThundererPodcastSlice {
-          __typename
+          name: __typename
           letter {
             ...tile
           }
@@ -342,7 +341,7 @@ export default addTypenameToDocument(
           }
         }
         ... on CommentTwoAndNotebookSlice {
-          __typename
+          name: __typename
           main1 {
             ...tile
           }
@@ -354,13 +353,13 @@ export default addTypenameToDocument(
           }
         }
         ... on FocusSlice {
-          __typename
+          name: __typename
           main {
             ...tile
           }
         }
         ... on LeadersSlice {
-          __typename
+          name: __typename
           leader1 {
             ...tile
           }
@@ -372,7 +371,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndFourSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -390,7 +389,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndOneSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -399,7 +398,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneAndTwoSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -411,13 +410,13 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadOneFullWidthSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
         }
         ... on LeadOneNoPicAndOneAndPortraitSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -429,7 +428,7 @@ export default addTypenameToDocument(
           }
         }
         ... on LeadTwoNoPicAndTwoSlice {
-          __typename
+          name: __typename
           lead1 {
             ...tile
           }
@@ -444,7 +443,7 @@ export default addTypenameToDocument(
           }
         }
         ... on ObituariesLeadAndTwoSlice {
-          __typename
+          name: __typename
           lead {
             ...tile
           }
@@ -456,7 +455,7 @@ export default addTypenameToDocument(
           }
         }
         ... on OpinionOneAndTwoSlice {
-          __typename
+          name: __typename
           opinion {
             ...tile
           }
@@ -468,7 +467,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryFourSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -483,13 +482,13 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryOneSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
         }
         ... on SecondaryOneAndColumnistSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
@@ -498,7 +497,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryOneAndFourSlice {
-          __typename
+          name: __typename
           secondary {
             ...tile
           }
@@ -518,7 +517,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryTwoAndTwoSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -533,7 +532,7 @@ export default addTypenameToDocument(
           }
         }
         ... on SecondaryTwoNoPicAndTwoSlice {
-          __typename
+          name: __typename
           secondary1 {
             ...tile
           }
@@ -548,7 +547,7 @@ export default addTypenameToDocument(
           }
         }
         ... on TwoPicAndSixNoPicSlice {
-          __typename
+          name: __typename
           lead1 {
             ...tile
           }
@@ -575,7 +574,7 @@ export default addTypenameToDocument(
           }
         }
         ... on DailyUniversalRegister {
-          __typename
+          name: __typename
           briefing {
             ...durItem
           }
@@ -607,6 +606,83 @@ export default addTypenameToDocument(
       }
     }
 
-    ${articleFragment}
+    fragment article on Article {
+      backgroundColour {
+        rgba {
+          red
+          green
+          blue
+          alpha
+        }
+      }
+      flags
+      leadAsset {
+        ... on Video {
+          brightcoveAccountId
+          brightcovePolicyKey
+          brightcoveVideoId
+          posterImage {
+            ...imageProps
+          }
+          skySports
+        }
+        ... on Image {
+          ...imageProps
+        }
+      }
+      standfirst
+      template
+      ...articleProps
+    }
+
+    fragment imageProps on Image {
+      caption
+      credits
+      crop169: crop(ratio: "16:9") {
+        ratio
+        url
+      }
+      crop32: crop(ratio: "3:2") {
+        ratio
+        url
+      }
+      crop1251: crop(ratio: "1.25:1") {
+        ratio
+        url
+      }
+      crop11: crop(ratio: "1:1") {
+        ratio
+        url
+      }
+      crop45: crop(ratio: "4:5") {
+        ratio
+        url
+      }
+      crop23: crop(ratio: "2:3") {
+        ratio
+        url
+      }
+      crop2251: crop(ratio: "2.25:1") {
+        ratio
+        url
+      }
+      id
+      title
+    }
+
+    fragment articleProps on Article {
+      byline
+      hasVideo
+      headline
+      id
+      label
+      publicationName
+      publishedTime
+      section
+      shortHeadline
+      shortIdentifier
+      slug
+      url
+    }
   `
 );
