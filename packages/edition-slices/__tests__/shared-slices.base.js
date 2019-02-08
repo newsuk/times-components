@@ -8,13 +8,14 @@ import {
 } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
-  LeadOneFullWidthSlice,
+  LeadOneAndFourSlice,
   LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
-  SecondaryTwoNoPicAndTwoSlice,
-  ListTwoAndSixNoPicSlice
+  SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -54,6 +55,23 @@ export default () => {
           />
         );
 
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "lead one and four slice",
+      test: () => {
+        const listTwoAndSixNoPic = mockList2AndSixNoPicSlice();
+        const output = TestRenderer.create(
+          <LeadOneAndFourSlice
+            lead={listTwoAndSixNoPic.lead1}
+            onPress={() => {}}
+            support1={listTwoAndSixNoPic.support1}
+            support2={listTwoAndSixNoPic.support2}
+            support3={listTwoAndSixNoPic.support3}
+            support4={listTwoAndSixNoPic.support4}
+          />
+        );
         expect(output).toMatchSnapshot();
       }
     },
