@@ -11,7 +11,7 @@ const SectionPage = ({ editionId, section }) => {
     <EditionProvider debounceTimeMs={0} id={editionId}>
       {({ edition, error, isLoading }) => {
         if (isLoading) {
-          return <ActivityIndicator />;
+          return <ActivityIndicator size="large" />;
         }
         if (error) {
           return <Text>{error}</Text>;
