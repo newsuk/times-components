@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.4.3...@times-components/slice-layout@0.5.0) (2019-02-08)
+
+
+### Features
+
+* Lead one and four slice ([#1676](https://github.com/newsuk/times-components/issues/1676)) ([845f951](https://github.com/newsuk/times-components/commit/845f951))
+* secondary 2 and 2 ([#1675](https://github.com/newsuk/times-components/issues/1675)) ([5e00af4](https://github.com/newsuk/times-components/commit/5e00af4))
+
+
+
+
+
 ## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.4.2...@times-components/slice-layout@0.4.3) (2019-02-07)
 
 **Note:** Version bump only for package @times-components/slice-layout
