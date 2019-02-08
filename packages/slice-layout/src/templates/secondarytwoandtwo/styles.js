@@ -1,11 +1,12 @@
+import { spacing } from "@times-components/styleguide";
+
 const styles = {
   container: {
     flex: 1
   },
   itemColumnSeparator: {
     borderLeftWidth: 1,
-    marginBottom: 12,
-    marginTop: 10
+    marginVertical: spacing(2)
   },
   itemContainer: {
     flexDirection: "row"
@@ -16,7 +17,7 @@ const styles = {
   itemRowSeparator: {
     borderBottomWidth: 0.5,
     borderStyle: "solid",
-    marginHorizontal: 12
+    marginHorizontal: spacing(2)
   }
 };
 

@@ -726,8 +726,7 @@ exports[`5. secondary two and two 1`] = `
       style={
         Object {
           "borderLeftWidth": 1,
-          "marginBottom": 12,
-          "marginTop": 10,
+          "marginVertical": 10,
         }
       }
     />
@@ -809,7 +808,7 @@ exports[`5. secondary two and two 1`] = `
       Object {
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
-        "marginHorizontal": 12,
+        "marginHorizontal": 10,
       }
     }
   />
@@ -891,7 +890,7 @@ exports[`5. secondary two and two 1`] = `
       Object {
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
-        "marginHorizontal": 12,
+        "marginHorizontal": 10,
       }
     }
   />

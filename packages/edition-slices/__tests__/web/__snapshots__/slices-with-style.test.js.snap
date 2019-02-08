@@ -814,7 +814,6 @@ exports[`5. secondary two and two 1`] = `
 
 .IS6 {
   border-left-width: 1px;
-  margin-bottom: 12px;
   margin-top: 10px;
 }
 
@@ -853,8 +852,8 @@ exports[`5. secondary two and two 1`] = `
 
 .IS13 {
   border-bottom-width: 0.5px;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS14 {
@@ -900,8 +899,8 @@ exports[`5. secondary two and two 1`] = `
 
 .IS19 {
   border-bottom-width: 0.5px;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS20 {
@@ -1013,7 +1012,7 @@ exports[`5. secondary two and two 1`] = `
       </Link>
     </div>
     <div
-      className="IS6"
+      className="IS6 S1"
     />
     <div
       className="IS11 S3"
