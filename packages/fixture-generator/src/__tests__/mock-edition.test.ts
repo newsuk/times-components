@@ -1,5 +1,5 @@
 import MockEdition from "../mock-edition"
-import { Section, StandardSection } from "../types";
+import { StandardSection } from "../types";
 
 describe("The Mock Edition", () => {
   it("returns the minimum edition requirements", () => {
