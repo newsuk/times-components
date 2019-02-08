@@ -174,7 +174,8 @@ function mockLeadersSlice(): LeadersSlice {
   return <LeadersSlice>{
     leader1: tiles[0],
     leader2: tiles[1],
-    leader3: tiles[2]
+    leader3: tiles[2],
+    items: tiles
   };
 }
 

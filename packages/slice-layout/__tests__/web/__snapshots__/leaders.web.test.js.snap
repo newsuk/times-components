@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. three child element 1`] = `
+<div>
+  <div>
+     IMG 
+  </div>
+  <div>
+    <div>
+       Leading Articles 
+    </div>
+  </div>
+  <div>
+    leader-1
+  </div>
+  <div />
+  <div>
+    leader-2
+  </div>
+  <div />
+  <div>
+    leader-3
+  </div>
+</div>
+`;

@@ -1,3 +1,3 @@
-import shared from "../leader-with-style.native";
+import shared from "../leaders-with-style.native";
 
 shared();

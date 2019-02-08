@@ -1,3 +1,3 @@
-import shared from "../leader-with-style.web";
+import shared from "../leaders-with-style.web";
 
 shared();

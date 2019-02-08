@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. three child element 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxPack": "center",
+      "WebkitJustifyContent": "center",
+      "justifyContent": "center",
+      "msFlexPack": "center",
+      "paddingBottom": "5px",
+      "paddingTop": "20px",
+    }
+  }
+>
+  <div>
+     IMG 
+  </div>
+  <div
+    style={
+      Object {
+        "paddingBottom": "5px",
+        "paddingTop": "10px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "rgba(133,0,41,1.00)",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": "16px",
+          "lineHeight": "15px",
+        }
+      }
+    >
+       Leading Articles 
+    </div>
+  </div>
+  <div>
+    leader-1
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomWidth": "1px",
+        "borderLeftColor": "rgba(220,220,220,1.00)",
+        "borderRightColor": "rgba(220,220,220,1.00)",
+        "borderTopColor": "rgba(220,220,220,1.00)",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    leader-2
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomWidth": "1px",
+        "borderLeftColor": "rgba(220,220,220,1.00)",
+        "borderRightColor": "rgba(220,220,220,1.00)",
+        "borderTopColor": "rgba(220,220,220,1.00)",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    leader-3
+  </div>
+</div>
+`;

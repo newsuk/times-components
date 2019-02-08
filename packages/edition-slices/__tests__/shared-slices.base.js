@@ -180,12 +180,12 @@ export default () => {
       test: () => {
         const leadersData = mockLeadersSlice();
         const output = TestRenderer.create(
-              <LeadersSlice
-              leader1={leadersData.leader1}
-              leader2={leadersData.leader2}
-              leader3={leadersData.leader3}
-              onPress={() => {}}
-            />
+          <LeadersSlice
+            leader1={leadersData.leader1}
+            leader2={leadersData.leader2}
+            leader3={leadersData.leader3}
+            onPress={() => {}}
+          />
         );
         expect(output).toMatchSnapshot();
       }
