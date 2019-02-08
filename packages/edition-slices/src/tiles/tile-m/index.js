@@ -10,7 +10,8 @@ const TileM = ({tile, onPress}) => {
     return (
     <TileLink onPress={onPress} tile={newTile}>
         <View style={styles.container}>
-            <TileSummary headlineStyle={styles.headlineStyle} tile={newTile}  strapline={strapline}/>
+            <TileSummary headlineStyle={styles.headlineStyle} tile={newTile}  strapline={strapline}
+            straplineStyle={styles.straplineStyle}/>
         </View>
     </TileLink>);
 };
