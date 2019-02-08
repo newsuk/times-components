@@ -985,15 +985,12 @@ exports[`11. tile m 1`] = `
 .IS1 {
   line-height: 22px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .IS2 {
-  -webkit-justify-content: center;
-  justify-content: center;
   padding-right: 40px;
   padding-left: 40px;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 </style>
 

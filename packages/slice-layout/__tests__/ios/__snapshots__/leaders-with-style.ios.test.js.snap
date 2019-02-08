@@ -4,15 +4,21 @@ exports[`1. three child element 1`] = `
 <View
   style={
     Object {
-      "justifyContent": "center",
       "paddingBottom": 5,
+      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }
 >
-  <Text>
-     IMG 
-  </Text>
+  <Image
+    style={
+      Object {
+        "height": 51,
+        "margin": "auto",
+        "width": 283,
+      }
+    }
+  />
   <View
     style={
       Object {
@@ -28,6 +34,7 @@ exports[`1. three child element 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 16,
           "lineHeight": 15,
+          "textAlign": "center",
         }
       }
     >

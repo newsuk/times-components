@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import propTypes from "./proptypes";
 
@@ -7,7 +7,12 @@ const keySeperator = () => <View style={styles.keySeperator} />;
 
 const Leaders = ({ renderLeader1, renderLeader2, renderLeader3 }) => (
   <View style={styles.container}>
-    <Text style={styles.text}> IMG </Text>
+    <Image
+      resizeMode="contain"
+      // eslint-disable-next-line global-require
+      source={require("../../../assets/leaders-masthead.png")}
+      style={styles.imageStyle}
+    />
     <View style={styles.leadTextContainer}>
       <Text style={[styles.leadText, styles.text]}> Leading Articles </Text>
     </View>

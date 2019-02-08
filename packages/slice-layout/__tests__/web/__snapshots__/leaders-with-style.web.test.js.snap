@@ -4,17 +4,33 @@ exports[`1. three child element 1`] = `
 <div
   style={
     Object {
-      "WebkitBoxPack": "center",
-      "WebkitJustifyContent": "center",
-      "justifyContent": "center",
-      "msFlexPack": "center",
       "paddingBottom": "5px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px",
       "paddingTop": "20px",
     }
   }
 >
-  <div>
-     IMG 
+  <div
+    style={
+      Object {
+        "height": "51px",
+        "marginBottom": "auto",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "auto",
+        "width": "283px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(\\"uri\\")",
+        }
+      }
+    />
+    <img />
   </div>
   <div
     style={
@@ -31,6 +47,7 @@ exports[`1. three child element 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": "16px",
           "lineHeight": "15px",
+          "textAlign": "center",
         }
       }
     >

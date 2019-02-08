@@ -3,7 +3,13 @@ import { fonts, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     paddingBottom: spacing(1),
+    paddingHorizontal: spacing(8),
     paddingTop: spacing(4)
+  },
+  imageStyle: {
+    height: 51,
+    margin: "auto",
+    width: 283
   },
   keySeperator: {
     borderBottomWidth: 1,
@@ -22,7 +28,7 @@ const styles = {
     paddingTop: spacing(2)
   },
   text: {
-      textAlign: "center"
+    textAlign: "center"
   }
 };
 

@@ -2507,3 +2507,199 @@ exports[`9. list two and six no pic 1`] = `
   </View>
 </View>
 `;
+
+exports[`7. leaders 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 5,
+      "paddingHorizontal": 40,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Image
+    style={
+      Object {
+        "height": 51,
+        "margin": "auto",
+        "width": 283,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingBottom": 5,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 16,
+          "lineHeight": 15,
+          "textAlign": "center",
+        }
+      }
+    >
+       Leading Articles 
+    </Text>
+  </View>
+  <Link>
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingHorizontal": 40,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 22,
+              "marginBottom": 5,
+              "marginTop": 20,
+              "textAlign": "center",
+            }
+          }
+        >
+          Driving Off
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "paddingBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </Link>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#dcdcdc",
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Link>
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingHorizontal": 40,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 22,
+              "marginBottom": 5,
+              "marginTop": 20,
+              "textAlign": "center",
+            }
+          }
+        >
+          Driving Off
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "paddingBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </Link>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#dcdcdc",
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Link>
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingHorizontal": 40,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 22,
+              "marginBottom": 5,
+              "marginTop": 20,
+              "textAlign": "center",
+            }
+          }
+        >
+          Driving Off
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "paddingBottom": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </Link>
+</View>
+`;

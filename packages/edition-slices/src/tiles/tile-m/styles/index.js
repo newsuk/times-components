@@ -11,13 +11,13 @@ const styles = {
     lineHeight: 22,
     marginBottom: spacing(1),
     marginTop: spacing(4),
-    textAlign: 'center'
+    textAlign: "center"
   },
   straplineStyle: {
     fontFamily: fonts.bodyRegular,
     fontSize: 14,
     lineHeight: 20,
-    textAlign: 'center'
+    textAlign: "center"
   }
 };
 

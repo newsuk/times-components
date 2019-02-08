@@ -3,7 +3,12 @@
 exports[`1. three child element 1`] = `
 <div>
   <div>
-     IMG 
+    <div />
+    <img
+      alt=""
+      draggable={false}
+      src="uri"
+    />
   </div>
   <div>
     <div>
