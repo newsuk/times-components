@@ -12,40 +12,14 @@ Object {
         "__typename": "Colour",
         "rgba": Object {
           "__typename": "RGBA",
-          "alpha": -22,
-          "blue": -98,
-          "green": -17,
-          "red": -53,
+          "alpha": 1,
+          "blue": 255,
+          "green": 255,
+          "red": 255,
         },
       },
-      "id": "a-u-u-i-d",
+      "id": "dummy-section-id",
       "name": "StandardSection",
-      "slices": Array [
-        Object {
-          "__typename": "InTheNewsSlice",
-        },
-        Object {
-          "__typename": "StandardSlice",
-          "items": Array [],
-          "name": "StandardSlice",
-        },
-      ],
-      "title": "Hello World",
-    },
-    Object {
-      "__typename": "MagazineSection",
-      "colour": Object {
-        "__typename": "Colour",
-        "rgba": Object {
-          "__typename": "RGBA",
-          "alpha": 53,
-          "blue": 12,
-          "green": -88,
-          "red": -90,
-        },
-      },
-      "id": "a-u-u-i-d",
-      "name": "MagazineSection",
       "slices": Array [
         Object {
           "__typename": "LeadOneFullWidthSlice",
@@ -141,8 +115,26 @@ Object {
           },
           "name": "LeadOneFullWidthSlice",
         },
+      ],
+      "title": "News",
+    },
+    Object {
+      "__typename": "StandardSection",
+      "colour": Object {
+        "__typename": "Colour",
+        "rgba": Object {
+          "__typename": "RGBA",
+          "alpha": 1,
+          "blue": 255,
+          "green": 255,
+          "red": 255,
+        },
+      },
+      "id": "dummy-section-id",
+      "name": "StandardSection",
+      "slices": Array [
         Object {
-          "__typename": "ObituariesLeadAndTwoSlice",
+          "__typename": "LeadOneFullWidthSlice",
           "lead": Object {
             "__typename": "Tile",
             "article": Object {
@@ -233,190 +225,10 @@ Object {
               "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
             },
           },
-          "name": "ObituariesLeadAndTwoSlice",
-          "support1": Object {
-            "__typename": "Tile",
-            "article": Object {
-              "__typename": "Article",
-              "backgroundColour": Object {
-                "__typename": "Colour",
-                "rgba": Object {
-                  "__typename": "RGBA",
-                  "alpha": 1,
-                  "blue": 255,
-                  "green": 255,
-                  "red": 255,
-                },
-              },
-              "byline": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "inline",
-                },
-              ],
-              "flags": Array [
-                "NEW",
-                "EXCLUSIVE",
-              ],
-              "hasVideo": true,
-              "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
-              "id": "a-u-u-i-d",
-              "label": "Random label",
-              "leadAsset": Object {
-                "__typename": "Image",
-                "caption": "Chris Reynolds Gordon at one of his party venues in London",
-                "credits": "Gareth Philips",
-                "crop11": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0",
-                },
-                "crop1251": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
-                },
-                "crop169": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
-                },
-                "crop2251": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
-                },
-                "crop23": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0",
-                },
-                "crop32": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0",
-                },
-                "crop45": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0",
-                },
-                "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
-                "title": "Chris Reynolds Gordon at one of his party venues in London",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-13T18:54:58.000Z",
-              "section": "business",
-              "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
-              "shortIdentifier": "37b27qd2s",
-              "slug": "france-defies-may-over-russia",
-              "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
-              "template": "mainstandard",
-              "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
-            },
-          },
-          "support2": Object {
-            "__typename": "Tile",
-            "article": Object {
-              "__typename": "Article",
-              "backgroundColour": Object {
-                "__typename": "Colour",
-                "rgba": Object {
-                  "__typename": "RGBA",
-                  "alpha": 1,
-                  "blue": 255,
-                  "green": 255,
-                  "red": 255,
-                },
-              },
-              "byline": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "inline",
-                },
-              ],
-              "flags": Array [
-                "NEW",
-                "EXCLUSIVE",
-              ],
-              "hasVideo": true,
-              "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
-              "id": "a-u-u-i-d",
-              "label": "Random label",
-              "leadAsset": Object {
-                "__typename": "Image",
-                "caption": "Chris Reynolds Gordon at one of his party venues in London",
-                "credits": "Gareth Philips",
-                "crop11": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0",
-                },
-                "crop1251": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
-                },
-                "crop169": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
-                },
-                "crop2251": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
-                },
-                "crop23": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0",
-                },
-                "crop32": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0",
-                },
-                "crop45": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0",
-                },
-                "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
-                "title": "Chris Reynolds Gordon at one of his party venues in London",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-13T18:54:58.000Z",
-              "section": "business",
-              "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
-              "shortIdentifier": "37b27qd2s",
-              "slug": "france-defies-may-over-russia",
-              "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
-              "template": "mainstandard",
-              "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
-            },
-          },
+          "name": "LeadOneFullWidthSlice",
         },
       ],
-      "title": "Hello World",
+      "title": "News",
     },
   ],
   "updateText": "Hello World",

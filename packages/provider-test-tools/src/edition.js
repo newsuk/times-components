@@ -1,4 +1,5 @@
 import { MockList } from "graphql-tools";
+import { mockEditionSlice } from "@times-components/fixture-generator";
 import { edition as editionQuery } from "@times-components/provider-queries";
 import article from "../fixtures/article.json";
 
@@ -43,6 +44,10 @@ export default ({ variables = () => {} } = {}) => {
             return getMediaUrl(parent, ratio);
           },
           DateTime: () => "2018-10-25",
+          LeadOneFullWidthSlice: () => ({
+            __typename: "LeadOneFullWidthSlice",
+            items: mockEditionSlice(1)
+          }),
           Markup: (parent, { maxCharCount }) => {
             if (maxCharCount) {
               return parent[`summary${maxCharCount}`] || {};
@@ -53,7 +58,29 @@ export default ({ variables = () => {} } = {}) => {
           },
           Media: () => ({ __typename: "Image" }),
           Ratio: () => "16:9",
+          Section: () => ({
+            __typename: "StandardSection",
+            slices: new MockList(3)
+          }),
           Slug: () => "some-slug",
+          StandardSection: () => ({
+            colour: {
+              rgba: {
+                alpha: 1,
+                blue: 255,
+                green: 255,
+                red: 255
+              }
+            },
+            id: "dummy-section-id",
+            slices: [mockEditionSlice(1)],
+            slug: "dummy-section-slug",
+            title: "News"
+          }),
+          StandardSectionSlice: () => ({
+            __typename: "LeadOneFullWidthSlice",
+            items: new MockList(1)
+          }),
           StandardSlice: () => ({
             __typename: "StandardSlice",
             items: []
