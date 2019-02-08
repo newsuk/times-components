@@ -14,6 +14,7 @@ import {
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice
 } from "./src/slices";
 
@@ -94,6 +95,24 @@ export default {
         );
       },
       name: "Secondary Four (CCCC)",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockSecondaryFourSlice();
+        return (
+          <ScrollView>
+            <SecondaryTwoAndTwoSlice
+              onPress={() => {}}
+              secondary1={slice.secondary1}
+              secondary2={slice.secondary2}
+              support1={slice.secondary3}
+              support2={slice.secondary4}
+            />
+          </ScrollView>
+        );
+      },
+      name: "Secondary Two And Two (CCGG)",
       type: "story"
     },
     {

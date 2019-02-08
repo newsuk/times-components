@@ -7,6 +7,7 @@ import {
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPic
 } from "./src/slice-layout";
@@ -206,6 +207,20 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryFourSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <SecondaryTwoAndTwoSlice
+            renderSecondary1={() => <Support1 id="support1" />}
+            renderSecondary2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support3 id="support3" />}
+            renderSupport2={() => <Support4 id="support4" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryTwoAndTwoSlice",
       type: "story"
     },
     {
