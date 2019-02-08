@@ -1,15 +1,17 @@
 import {
-  LeadOneFullWidthSlice,
+  LeadOneAndFourSlice,
   LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice,
-  ListTwoAndSixNoPicSlice
+  SecondaryFourSlice
 } from "./slices";
 
 export {
-  LeadOneFullWidthSlice,
+  LeadOneAndFourSlice,
   LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice,
-  ListTwoAndSixNoPicSlice
+  SecondaryFourSlice
 };

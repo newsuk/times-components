@@ -2,6 +2,7 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
 import {
+  LeadOneAndFourSlice,
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice,
   StandardSlice,
@@ -49,6 +50,21 @@ const Support4 = () => (
 
 export default {
   children: [
+    {
+      component: () => (
+        <ScrollView>
+          <LeadOneAndFourSlice
+            renderLead={() => <Support3 id="support1" />}
+            renderSupport1={() => <Support1 id="support2" />}
+            renderSupport2={() => <Support2 id="support3" />}
+            renderSupport3={() => <Support3 id="support4" />}
+            renderSupport4={() => <Support4 id="support5" />}
+          />
+        </ScrollView>
+      ),
+      name: "LeadOneAndFour",
+      type: "story"
+    },
     {
       component: () => (
         <ScrollView>

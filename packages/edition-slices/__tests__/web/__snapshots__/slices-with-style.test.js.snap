@@ -288,7 +288,438 @@ exports[`2. lead one and one slice 1`] = `
 </div>
 `;
 
-exports[`3. secondary one slice 1`] = `
+exports[`3. lead one and four slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS3 {
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(240,240,240,1.00);
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS5 {
+  width: 33.33%;
+}
+
+.IS6 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS7 {
+  line-height: 22px;
+}
+
+.IS8 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 66.66%;
+}
+
+.IS9 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS11 {
+  width: 33.33%;
+}
+
+.IS12 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS13 {
+  line-height: 22px;
+}
+
+.IS14 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 66.66%;
+}
+
+.IS15 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS16 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS17 {
+  width: 33.33%;
+}
+
+.IS18 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS19 {
+  line-height: 22px;
+}
+
+.IS20 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 66.66%;
+}
+
+.IS21 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS22 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS23 {
+  width: 33.33%;
+}
+
+.IS24 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS25 {
+  line-height: 22px;
+}
+
+.IS26 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 66.66%;
+}
+
+.IS27 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<div
+  className="S1"
+>
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
+  </Link>
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS9 S1"
+    >
+      <div
+        className="IS5 S1"
+      >
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+        />
+      </div>
+      <div
+        className="IS8 S1"
+      >
+        <div
+          className="S1"
+        >
+          <div
+            className="IS6 S2"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS7 S4"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS10 S1"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS15 S1"
+    >
+      <div
+        className="IS11 S1"
+      >
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+        />
+      </div>
+      <div
+        className="IS14 S1"
+      >
+        <div
+          className="S1"
+        >
+          <div
+            className="IS12 S2"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS13 S4"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS16 S1"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS21 S1"
+    >
+      <div
+        className="IS17 S1"
+      >
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+        />
+      </div>
+      <div
+        className="IS20 S1"
+      >
+        <div
+          className="S1"
+        >
+          <div
+            className="IS18 S2"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS19 S4"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS22 S1"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS27 S1"
+    >
+      <div
+        className="IS23 S1"
+      >
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+        />
+      </div>
+      <div
+        className="IS26 S1"
+      >
+        <div
+          className="S1"
+        >
+          <div
+            className="IS24 S2"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS25 S4"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+</div>
+`;
+
+exports[`4. secondary one slice 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -376,7 +807,7 @@ exports[`3. secondary one slice 1`] = `
 </Link>
 `;
 
-exports[`4. secondary four 1`] = `
+exports[`5. secondary four 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -761,7 +1192,7 @@ exports[`4. secondary four 1`] = `
 </div>
 `;
 
-exports[`5. secondary two no pic and two 1`] = `
+exports[`6. secondary two no pic and two 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1132,7 +1563,7 @@ exports[`5. secondary two no pic and two 1`] = `
 </div>
 `;
 
-exports[`6. list two and six no pic 1`] = `
+exports[`7. list two and six no pic 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
