@@ -2,7 +2,6 @@ import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    justifyContent: "center",
     paddingBottom: spacing(1),
     paddingTop: spacing(4)
   },
@@ -10,7 +9,7 @@ const styles = {
     borderBottomWidth: 1,
     borderColor: "#dcdcdc",
     borderStyle: "solid",
-    marginHorizontal: 10
+    marginHorizontal: spacing(2)
   },
   leadText: {
     color: "#850029",
@@ -21,6 +20,9 @@ const styles = {
   leadTextContainer: {
     paddingBottom: spacing(1),
     paddingTop: spacing(2)
+  },
+  text: {
+      textAlign: "center"
   }
 };
 

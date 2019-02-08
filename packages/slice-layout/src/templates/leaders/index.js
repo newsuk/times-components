@@ -7,9 +7,9 @@ const keySeperator = () => <View style={styles.keySeperator} />;
 
 const Leaders = ({ renderLeader1, renderLeader2, renderLeader3 }) => (
   <View style={styles.container}>
-    <Text> IMG </Text>
+    <Text style={styles.text}> IMG </Text>
     <View style={styles.leadTextContainer}>
-      <Text style={styles.leadText}> Leading Articles </Text>
+      <Text style={[styles.leadText, styles.text]}> Leading Articles </Text>
     </View>
     {renderLeader1()}
     {keySeperator()}
