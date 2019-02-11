@@ -139,16 +139,6 @@ exports[`1. eight child element 1`] = `
     <Text>
       support-6
     </Text>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
   </View>
 </View>
 `;

@@ -37,10 +37,10 @@ const ListTwoAndSixNoPic = ({
         </View>
       </View>
       <ItemRowSeparator />
-      {supportItems.map(item => (
+      {supportItems.map((item, index) => (
         <View key={item().props.id}>
           {item()}
-          <ItemRowSeparator />
+          {supportItems.length - 1 > index ? <ItemRowSeparator /> : null}
         </View>
       ))}
     </View>

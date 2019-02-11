@@ -2551,13 +2551,6 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS37 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS38 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2572,7 +2565,7 @@ exports[`9. list two and six no pic 1`] = `
 </style>
 
 <div
-  className="IS38 S3"
+  className="IS37 S3"
 >
   <div
     className="IS12 S3"
@@ -2926,9 +2919,6 @@ exports[`9. list two and six no pic 1`] = `
         </div>
       </div>
     </Link>
-    <div
-      className="IS37 S3"
-    />
   </div>
 </div>
 `;

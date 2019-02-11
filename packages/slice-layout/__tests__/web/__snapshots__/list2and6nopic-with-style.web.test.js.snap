@@ -218,17 +218,6 @@ exports[`1. eight child element 1`] = `
     >
       support-6
     </div>
-    <div
-      className="S3"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
-      }
-    />
   </div>
 </div>
 `;
