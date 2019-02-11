@@ -8,12 +8,14 @@ import {
 } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
-  LeadOneFullWidthSlice,
+  LeadOneAndFourSlice,
   LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  SecondaryTwoNoPicAndTwoSlice,
-  ListTwoAndSixNoPicSlice
+  SecondaryTwoAndTwoSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -57,6 +59,23 @@ export default () => {
       }
     },
     {
+      name: "lead one and four slice",
+      test: () => {
+        const listTwoAndSixNoPic = mockList2AndSixNoPicSlice();
+        const output = TestRenderer.create(
+          <LeadOneAndFourSlice
+            lead={listTwoAndSixNoPic.lead1}
+            onPress={() => {}}
+            support1={listTwoAndSixNoPic.support1}
+            support2={listTwoAndSixNoPic.support2}
+            support3={listTwoAndSixNoPic.support3}
+            support4={listTwoAndSixNoPic.support4}
+          />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "secondary one slice",
       test: () => {
         const output = TestRenderer.create(
@@ -82,6 +101,22 @@ export default () => {
           />
         );
 
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary Two And Two",
+      test: () => {
+        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <SecondaryTwoAndTwoSlice
+            onPress={() => {}}
+            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
+            secondary2={secondaryTwoNoPicAndTwoData.secondary2}
+            support1={secondaryTwoNoPicAndTwoData.support1}
+            support2={secondaryTwoNoPicAndTwoData.support2}
+          />
+        );
         expect(output).toMatchSnapshot();
       }
     },

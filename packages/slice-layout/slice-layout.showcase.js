@@ -2,10 +2,12 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
 import {
+  LeadOneAndFourSlice,
   LeadOneAndTwoSlice,
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPic
 } from "./src/slice-layout";
@@ -49,6 +51,21 @@ const Support4 = () => (
 
 export default {
   children: [
+    {
+      component: () => (
+        <ScrollView>
+          <LeadOneAndFourSlice
+            renderLead={() => <Support3 id="support1" />}
+            renderSupport1={() => <Support1 id="support2" />}
+            renderSupport2={() => <Support2 id="support3" />}
+            renderSupport3={() => <Support3 id="support4" />}
+            renderSupport4={() => <Support4 id="support5" />}
+          />
+        </ScrollView>
+      ),
+      name: "LeadOneAndFour",
+      type: "story"
+    },
     {
       component: () => (
         <ScrollView>
@@ -190,6 +207,20 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryFourSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <SecondaryTwoAndTwoSlice
+            renderSecondary1={() => <Support1 id="support1" />}
+            renderSecondary2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support3 id="support3" />}
+            renderSupport2={() => <Support4 id="support4" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryTwoAndTwoSlice",
       type: "story"
     },
     {
