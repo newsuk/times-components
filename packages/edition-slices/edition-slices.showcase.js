@@ -84,13 +84,15 @@ export default {
       component: (_, { decorateAction }) => {
         const slice = mockLeadTwoNoPicAndTwoSlice();
         return (
-          <LeadTwoNoPicAndTwoSlice
-            lead1={slice.lead1}
-            lead2={slice.lead2}
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            support1={slice.support1}
-            support2={slice.support2}
-          />
+          <ScrollView>
+            <LeadTwoNoPicAndTwoSlice
+              lead1={slice.lead1}
+              lead2={slice.lead2}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
+              support1={slice.support1}
+              support2={slice.support2}
+            />
+          </ScrollView>
         );
       },
       name: "Lead Two no pic and Two (FBDE)",
