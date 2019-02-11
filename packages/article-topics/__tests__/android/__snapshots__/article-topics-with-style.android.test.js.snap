@@ -41,6 +41,7 @@ exports[`1. group of topics 1`] = `
               "fontSize": 13,
               "lineHeight": 13,
               "position": "relative",
+              "top": 1,
             }
           }
         >
@@ -93,6 +94,7 @@ exports[`2. group of topics at large scale 1`] = `
               "fontSize": 14,
               "lineHeight": 14,
               "position": "relative",
+              "top": 1,
             }
           }
         >
@@ -145,6 +147,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
               "fontSize": 15,
               "lineHeight": 15,
               "position": "relative",
+              "top": 1,
             }
           }
         >

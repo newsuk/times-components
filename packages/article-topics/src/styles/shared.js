@@ -6,10 +6,10 @@ const styles = {
     borderColor: colours.functional.keyline,
     borderRadius: 2,
     borderWidth: 1,
-    paddingBottom: 10,
+    paddingBottom: spacing(2),
     paddingLeft: spacing(3),
     paddingRight: spacing(3),
-    paddingTop: 10
+    paddingTop: spacing(2)
   },
   spacer: {
     marginRight: spacing(2),
