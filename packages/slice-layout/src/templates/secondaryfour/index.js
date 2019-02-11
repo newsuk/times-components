@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
 import propTypes from "./proptypes";
+import { ItemColSeparator, ItemRowSeparator } from "../shared";
 
 const SecondaryFourSlice = ({
   renderSecondary1,
@@ -17,17 +18,17 @@ const SecondaryFourSlice = ({
         <View key={renderRowOne[0].props.id} style={styles.item}>
           {renderRowOne[0]}
         </View>
-        <View style={styles.itemColumnSeparator} />
+        <ItemColSeparator />
         <View key={renderRowOne[1].props.id} style={styles.item}>
           {renderRowOne[1]}
         </View>
       </View>
-      <View style={styles.itemRowSeparator} />
+      <ItemRowSeparator />
       <View style={styles.itemContainer}>
         <View key={renderRowTwo[0].props.id} style={styles.item}>
           {renderRowTwo[0]}
         </View>
-        <View style={styles.itemColumnSeparator} />
+        <ItemColSeparator />
         <View key={renderRowTwo[1].props.id} style={styles.item}>
           {renderRowTwo[1]}
         </View>
