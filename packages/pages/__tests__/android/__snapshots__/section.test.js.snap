@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`section page 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <LeadOneFullWidthSlice />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <LeadOneAndOneSlice />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <LeadTwoNoPicAndTwoSlice />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <SecondaryOneSlice />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <SecondaryFourSlice />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View />
+  </View>
+</RCTScrollView>
+`;

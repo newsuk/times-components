@@ -13,6 +13,43 @@ import {
 } from "./types";
 import MockArticle from "./mock-article";
 
+interface LeadOneAndFourSliceWithName extends LeadOneAndFourSlice {
+  name: string;
+}
+
+interface LeadOneFullWidthSliceWithName extends LeadOneFullWidthSlice {
+  name: string;
+}
+
+interface LeadOneAndOneSliceWithName extends LeadOneAndOneSlice {
+  name: string;
+}
+
+interface LeadOneAndTwoSliceWithName extends LeadOneAndTwoSlice {
+  name: string;
+}
+
+interface LeadTwoNoPicAndTwoSliceWithName extends LeadTwoNoPicAndTwoSlice {
+  name: string;
+}
+
+interface SecondaryOneSliceWithName extends SecondaryOneSlice {
+  name: string;
+}
+
+interface SecondaryFourSliceWithName extends SecondaryFourSlice {
+  name: string;
+}
+
+interface SecondaryTwoNoPicAndTwoSliceWithName
+  extends SecondaryTwoNoPicAndTwoSlice {
+  name: string;
+}
+
+interface TwoPicAndSixNoPicSliceWithName extends TwoPicAndSixNoPicSlice {
+  name: string;
+}
+
 function getTile(): Tile {
   const article = new MockArticle().get();
   return {
@@ -27,9 +64,10 @@ function getTiles(count: number): Array<Tile> {
   return new Array(count).fill(0).map(() => getTile());
 }
 
-function mockLeadOneAndFourSlice(): LeadOneAndFourSlice {
+function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
   const tiles = getTiles(5);
-  return <LeadOneAndFourSlice>{
+  return <LeadOneAndFourSliceWithName>{
+    name: "LeadOneAndFourSliceWithName",
     lead: tiles[0],
     items: tiles,
     support1: tiles[1],
@@ -39,26 +77,29 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSlice {
   };
 }
 
-function mockLeadOneFullWidthSlice(): LeadOneFullWidthSlice {
+function mockLeadOneFullWidthSlice(): LeadOneFullWidthSliceWithName {
   const tiles = getTiles(1);
-  return <LeadOneFullWidthSlice>{
+  return <LeadOneFullWidthSliceWithName>{
+    name: "LeadOneFullWidthSlice",
     lead: tiles[0],
     items: tiles
   };
 }
 
-function mockLeadOneAndOneSlice(): LeadOneAndOneSlice {
+function mockLeadOneAndOneSlice(): LeadOneAndOneSliceWithName {
   const tiles = getTiles(2);
-  return <LeadOneAndOneSlice>{
+  return <LeadOneAndOneSliceWithName>{
+    name: "LeadOneAndOneSlice",
     lead: tiles[0],
     support: tiles[1],
     items: tiles
   };
 }
 
-function mockLeadOneAndTwoSlice(): LeadOneAndTwoSlice {
+function mockLeadOneAndTwoSlice(): LeadOneAndTwoSliceWithName {
   const tiles = getTiles(3);
-  return <LeadOneAndTwoSlice>{
+  return <LeadOneAndTwoSliceWithName>{
+    name: "LeadOneAndTwoSlice",
     lead: tiles[0],
     support1: tiles[1],
     support2: tiles[2],
@@ -66,9 +107,10 @@ function mockLeadOneAndTwoSlice(): LeadOneAndTwoSlice {
   };
 }
 
-function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSlice {
+function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSliceWithName {
   const tiles = getTiles(4);
-  return <LeadTwoNoPicAndTwoSlice>{
+  return <LeadTwoNoPicAndTwoSliceWithName>{
+    name: "LeadTwoNoPicAndTwoSlice",
     lead1: tiles[0],
     lead2: tiles[1],
     support1: tiles[2],
@@ -77,17 +119,19 @@ function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSlice {
   };
 }
 
-function mockSecondaryOneSlice(): SecondaryOneSlice {
+function mockSecondaryOneSlice(): SecondaryOneSliceWithName {
   const tiles = getTiles(1);
-  return <SecondaryOneSlice>{
+  return <SecondaryOneSliceWithName>{
+    name: "SecondaryOneSlice",
     secondary: tiles[0],
     items: tiles
   };
 }
 
-function mockSecondaryFourSlice(): SecondaryFourSlice {
+function mockSecondaryFourSlice(): SecondaryFourSliceWithName {
   const tiles = getTiles(4);
-  return <SecondaryFourSlice>{
+  return <SecondaryFourSliceWithName>{
+    name: "SecondaryFourSlice",
     secondary1: tiles[0],
     secondary2: tiles[1],
     secondary3: tiles[2],
@@ -96,9 +140,10 @@ function mockSecondaryFourSlice(): SecondaryFourSlice {
   };
 }
 
-function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSlice {
+function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSliceWithName {
   const tiles = getTiles(4);
-  return <SecondaryTwoNoPicAndTwoSlice>{
+  return <SecondaryTwoNoPicAndTwoSliceWithName>{
+    name: "SecondaryTwoNoPicAndTwoSlice",
     secondary1: tiles[0],
     secondary2: tiles[1],
     support1: tiles[2],
@@ -107,9 +152,10 @@ function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSlice {
   };
 }
 
-function mockList2AndSixNoPicSlice(): TwoPicAndSixNoPicSlice {
+function mockList2AndSixNoPicSlice(): TwoPicAndSixNoPicSliceWithName {
   const tiles = getTiles(8);
-  return <TwoPicAndSixNoPicSlice>{
+  return <TwoPicAndSixNoPicSliceWithName>{
+    name: "TwoPicAndSixNoPicSlice",
     lead1: tiles[0],
     lead2: tiles[1],
     support1: tiles[2],

@@ -4,6 +4,7 @@ import AuthorArticlesNoImagesProvider from "./author-articles-no-images";
 import AuthorArticlesWithImagesProvider from "./author-articles-with-images";
 import ArticleProvider from "./article";
 import ArticleCommentsProvider from "./article-comments";
+import EditionProvider from "./edition";
 import TopicProvider from "./topic";
 import TopicArticlesProvider from "./topic-articles";
 
@@ -15,6 +16,7 @@ export {
   AuthorArticlesWithImagesProvider,
   ArticleProvider,
   ArticleCommentsProvider,
+  EditionProvider,
   TopicProvider,
   TopicArticlesProvider,
   QueryProvider
