@@ -19,8 +19,7 @@ import {
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
-  LeadersSlice,
-  ListTwoAndSixNoPicSlice
+  LeadersSlice
 } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>
