@@ -3,23 +3,17 @@ import { mockEditionSlice } from "@times-components/fixture-generator";
 import { edition as editionQuery } from "@times-components/provider-queries";
 import article from "../fixtures/article.json";
 
-const convertRatio = ratio => {
-  if (ratio === "16:9") {
-    return "320/180";
-  }
-
-  if (ratio === "3:2") {
-    return "300/200";
-  }
-
-  return "100/100";
-};
-
 const getMediaUrl = (obj, ratio) => {
   const crop = obj[`crop${ratio.replace(":", "")}`];
+  const ratios = {
+    "3:2": "300/200",
+    "16:9": "320/180"
+  };
 
   return {
-    url: crop ? crop.url : `https://placeimg.com/${convertRatio(ratio)}/tech`
+    url: crop
+      ? crop.url
+      : `https://placeimg.com/${ratios[ratio] || "100/100"}/tech`
   };
 };
 
