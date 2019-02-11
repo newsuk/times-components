@@ -2,17 +2,29 @@ import React from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
 import {
-  LeadOneFullWidthSlice,
+  LeadOneAndFourSlice,
   LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice,
-  ListTwoAndSixNoPicSlice
+  SecondaryFourSlice
 } from "@times-components/edition-slices";
 import SectionItemSeparator from "./section-item-separator";
 import styles from "./styles";
 
 const renderSlice = (slice, onPress) => {
   switch (slice.name) {
+    case "LeadOneAndFourSlice":
+      return (
+        <LeadOneAndFourSlice
+          lead={slice.lead}
+          onPress={onPress}
+          support1={slice.support1}
+          support2={slice.support2}
+          support3={slice.support3}
+          support4={slice.support4}
+        />
+      );
     case "LeadOneFullWidthSlice":
       return <LeadOneFullWidthSlice lead={slice.lead} onPress={onPress} />;
     case "LeadOneAndOneSlice":
