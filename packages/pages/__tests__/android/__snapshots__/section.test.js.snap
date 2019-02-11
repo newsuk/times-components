@@ -54,6 +54,7 @@ exports[`section page 1`] = `
       </View>
     </View>
     <View>
+      <LeadTwoNoPicAndTwoSlice />
       <View>
         <View
           style={

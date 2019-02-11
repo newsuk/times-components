@@ -13,8 +13,10 @@ import "./mocks";
 import Section from "../src/section/section";
 
 jest.mock("@times-components/edition-slices", () => ({
+  LeadOneAndFourSlice: "LeadOneAndFourSlice",
   LeadOneAndOneSlice: "LeadOneAndOneSlice",
   LeadOneFullWidthSlice: "LeadOneFullWidthSlice",
+  LeadTwoNoPicAndTwoSlice: "LeadTwoNoPicAndTwoSlice",
   ListTwoAndSixNoPicSlice: "ListTwoAndSixNoPicSlice",
   SecondaryFourSlice: "SecondaryFourSlice",
   SecondaryOneSlice: "SecondaryOneSlice"

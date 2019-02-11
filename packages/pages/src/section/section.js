@@ -5,6 +5,7 @@ import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice
@@ -33,6 +34,16 @@ const renderSlice = (slice, onPress) => {
           lead={slice.lead}
           onPress={onPress}
           support={slice.support}
+        />
+      );
+    case "LeadTwoNoPicAndTwoSlice":
+      return (
+        <LeadTwoNoPicAndTwoSlice
+          lead1={slice.lead1}
+          lead2={slice.lead2}
+          onPress={onPress}
+          support1={slice.support1}
+          support2={slice.support2}
         />
       );
     case "SecondaryOneSlice":
