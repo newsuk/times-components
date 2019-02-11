@@ -4,6 +4,7 @@ import { ScrollView, View } from "react-native";
 import {
   LeadOneAndFourSlice,
   LeadOneAndTwoSlice,
+  LeadTwoNoPicAndTwoSlice,
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
@@ -235,6 +236,20 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryTwoNoPicAndTwoSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <LeadTwoNoPicAndTwoSlice
+            renderLead1={() => <Support1 id="support1" />}
+            renderLead2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support3 id="support3" />}
+            renderSupport2={() => <Support4 id="support4" />}
+          />
+        </ScrollView>
+      ),
+      name: "LeadTwoNoPicAndTwoSlice",
       type: "story"
     },
     {

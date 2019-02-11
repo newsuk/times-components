@@ -546,7 +546,7 @@ exports[`3. lead one and four slice 1`] = `
       >
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </div>
       <div
@@ -592,7 +592,7 @@ exports[`3. lead one and four slice 1`] = `
       >
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </div>
       <div
@@ -638,7 +638,7 @@ exports[`3. lead one and four slice 1`] = `
       >
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </div>
       <div
@@ -684,7 +684,7 @@ exports[`3. lead one and four slice 1`] = `
       >
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </div>
       <div
@@ -719,7 +719,380 @@ exports[`3. lead one and four slice 1`] = `
 </div>
 `;
 
-exports[`4. secondary one slice 1`] = `
+exports[`4. lead two no pic and two 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 19px;
+  font-weight: inherit;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S6 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S7 {
+  margin-bottom: 5px;
+}
+
+.S8 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS3 {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS6 {
+  line-height: 22px;
+}
+
+.IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.IS8 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 45%;
+}
+
+.IS10 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS11 {
+  line-height: 22px;
+}
+
+.IS12 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.IS13 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS14 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS15 {
+  width: 45%;
+}
+
+.IS16 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS17 {
+  line-height: 22px;
+}
+
+.IS18 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.IS19 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS3 S7"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="IS1 S1"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <h4
+        aria-level="4"
+        className="S4"
+        role="heading"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </h4>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <div
+        className="S6"
+      >
+        <span
+          className="S5"
+        >
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS4 S2"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS7 S2"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="S2"
+        >
+          <div
+            className="IS5 S1"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS6 S8"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <div
+          className="S6"
+        >
+          <span
+            className="S5"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS8 S2"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS13 S2"
+    >
+      <div
+        className="IS9 S2"
+      >
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+        />
+      </div>
+      <div
+        className="IS12 S2"
+      >
+        <div
+          className="S2"
+        >
+          <div
+            className="IS10 S1"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS11 S8"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+  <div
+    className="IS14 S2"
+  />
+  <Link
+    url="/article/123"
+  >
+    <div
+      className="IS19 S2"
+    >
+      <div
+        className="IS15 S2"
+      >
+        <Image
+          aspectRatio={0.8}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+        />
+      </div>
+      <div
+        className="IS18 S2"
+      >
+        <div
+          className="S2"
+        >
+          <div
+            className="IS16 S1"
+          >
+            LABEL
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS17 S8"
+          role="heading"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </Link>
+</div>
+`;
+
+exports[`5. secondary one slice 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -807,7 +1180,7 @@ exports[`4. secondary one slice 1`] = `
 </Link>
 `;
 
-exports[`5. secondary four 1`] = `
+exports[`6. secondary four 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -1192,7 +1565,7 @@ exports[`5. secondary four 1`] = `
 </div>
 `;
 
-exports[`6. secondary two and two 1`] = `
+exports[`7. secondary two and two 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1313,7 +1686,6 @@ exports[`6. secondary two and two 1`] = `
   flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1361,7 +1733,6 @@ exports[`6. secondary two and two 1`] = `
   flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1563,7 +1934,7 @@ exports[`6. secondary two and two 1`] = `
 </div>
 `;
 
-exports[`7. secondary two no pic and two 1`] = `
+exports[`8. secondary two no pic and two 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1684,7 +2055,6 @@ exports[`7. secondary two no pic and two 1`] = `
   flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1732,7 +2102,6 @@ exports[`7. secondary two no pic and two 1`] = `
   flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1934,7 +2303,7 @@ exports[`7. secondary two no pic and two 1`] = `
 </div>
 `;
 
-exports[`8. list two and six no pic 1`] = `
+exports[`9. list two and six no pic 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -2059,7 +2428,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS16 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
@@ -2086,7 +2454,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS20 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
@@ -2113,7 +2480,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS24 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
@@ -2140,7 +2506,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS28 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
@@ -2167,7 +2532,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS32 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
@@ -2194,7 +2558,6 @@ exports[`8. list two and six no pic 1`] = `
 .IS36 {
   padding-top: 10px;
   padding-right: 12px;
-  padding-bottom: 10px;
   padding-left: 12px;
 }
 
