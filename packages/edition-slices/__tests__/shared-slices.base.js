@@ -78,6 +78,21 @@ export default () => {
       }
     },
     {
+      name: "Lead Two No Pic And Two",
+      test: () => {
+        const leadTwoNoPicAndTwoData = mockLeadTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <LeadTwoNoPicAndTwoSlice
+            lead1={leadTwoNoPicAndTwoData.lead1}
+            lead2={leadTwoNoPicAndTwoData.lead2}
+            support1={leadTwoNoPicAndTwoData.support1}
+            support2={leadTwoNoPicAndTwoData.support2}
+          />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "secondary one slice",
       test: () => {
         const output = TestRenderer.create(

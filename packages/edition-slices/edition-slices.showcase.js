@@ -31,7 +31,7 @@ const preventDefaultedAction = decorateAction =>
 export default {
   children: [
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockList2AndSixNoPicSlice();
         return (
           <ScrollView>
@@ -66,11 +66,14 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockLeadOneFullWidthSlice();
         return (
           <ScrollView>
-            <LeadOneFullWidthSlice lead={slice.lead} onPress={preventDefaultedAction(decorateAction)("onPress")} />
+            <LeadOneFullWidthSlice
+              lead={slice.lead}
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
+            />
           </ScrollView>
         );
       },
@@ -94,11 +97,14 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockSecondaryOneSlice();
         return (
           <ScrollView>
-            <SecondaryOneSlice onPress={preventDefaultedAction(decorateAction)("onPress")} secondary={slice.secondary} />
+            <SecondaryOneSlice
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
+              secondary={slice.secondary}
+            />
           </ScrollView>
         );
       },
@@ -142,7 +148,7 @@ export default {
       type: "story"
     },
     {
-      component: () => {
+      component: (_, { decorateAction }) => {
         const slice = mockSecondaryFourSlice();
         return (
           <ScrollView>
