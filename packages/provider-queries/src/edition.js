@@ -601,6 +601,23 @@ export default addTypenameToDocument(
     }
 
     fragment tile on Tile {
+      ...teasers
+      headline
+      leadAsset {
+        ... on Video {
+          brightcoveAccountId
+          brightcovePolicyKey
+          brightcoveVideoId
+          posterImage {
+            ...imageProps
+          }
+          skySports
+        }
+        ... on Image {
+          ...imageProps
+        }
+      }
+      strapline
       article {
         ...article
       }
@@ -671,6 +688,7 @@ export default addTypenameToDocument(
     }
 
     fragment articleProps on Article {
+      ...summaries
       byline
       hasVideo
       headline
@@ -683,6 +701,14 @@ export default addTypenameToDocument(
       shortIdentifier
       slug
       url
+    }
+
+    fragment summaries on Article {
+      summary125: summary(maxCharCount: 125)
+    }
+
+    fragment teasers on Tile {
+      teaser125: teaser(maxCharCount: 125)
     }
   `
 );
