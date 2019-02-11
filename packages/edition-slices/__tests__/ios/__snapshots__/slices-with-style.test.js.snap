@@ -604,7 +604,327 @@ exports[`3. lead one and four slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary one slice 1`] = `
+exports[`4. lead two no pic and two 1`] = `
+<View>
+  <Link>
+    <View
+      style={
+        Object {
+          "marginHorizontal": 10,
+          "marginVertical": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "fontWeight": "900",
+            "lineHeight": 35,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 19,
+            "lineHeight": 21,
+            "paddingBottom": 10,
+          }
+        }
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </Text>
+      <ArticleFlags />
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+    </View>
+  </Link>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Link>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#005B8D",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "letterSpacing": 1.2,
+                "lineHeight": 14,
+                "marginBottom": 0,
+              }
+            }
+          >
+            LABEL
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags />
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </Link>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Link>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "45%",
+          }
+        }
+      >
+        <Image />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "paddingVertical": 5,
+            "width": "55%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#005B8D",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "letterSpacing": 1.2,
+                "lineHeight": 14,
+                "marginBottom": 0,
+              }
+            }
+          >
+            LABEL
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </Link>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Link>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "45%",
+          }
+        }
+      >
+        <Image />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "paddingVertical": 5,
+            "width": "55%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#005B8D",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "letterSpacing": 1.2,
+                "lineHeight": 14,
+                "marginBottom": 0,
+              }
+            }
+          >
+            LABEL
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </Link>
+</View>
+`;
+
+exports[`5. secondary one slice 1`] = `
 <Link>
   <View
     style={
@@ -666,7 +986,7 @@ exports[`4. secondary one slice 1`] = `
 </Link>
 `;
 
-exports[`5. secondary four 1`] = `
+exports[`6. secondary four 1`] = `
 <View
   style={
     Object {
@@ -1008,7 +1328,7 @@ exports[`5. secondary four 1`] = `
 </View>
 `;
 
-exports[`6. secondary two and two 1`] = `
+exports[`7. secondary two and two 1`] = `
 <View>
   <Link>
     <View
@@ -1323,7 +1643,7 @@ exports[`6. secondary two and two 1`] = `
 </View>
 `;
 
-exports[`7. secondary two no pic and two 1`] = `
+exports[`8. secondary two no pic and two 1`] = `
 <View>
   <Link>
     <View
@@ -1638,7 +1958,7 @@ exports[`7. secondary two no pic and two 1`] = `
 </View>
 `;
 
-exports[`8. list two and six no pic 1`] = `
+exports[`9. list two and six no pic 1`] = `
 <View
   style={
     Object {

@@ -113,8 +113,8 @@ function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSliceWithName {
     name: "LeadTwoNoPicAndTwoSlice",
     lead1: tiles[0],
     lead2: tiles[1],
-    support1: tiles[3],
-    support2: tiles[4],
+    support1: tiles[2],
+    support2: tiles[3],
     items: tiles
   };
 }

@@ -2,6 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
+  mockLeadTwoNoPicAndTwoSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
   mockList2AndSixNoPicSlice
@@ -11,6 +12,7 @@ import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
@@ -70,6 +72,21 @@ export default () => {
             support2={listTwoAndSixNoPic.support2}
             support3={listTwoAndSixNoPic.support3}
             support4={listTwoAndSixNoPic.support4}
+          />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Lead Two No Pic And Two",
+      test: () => {
+        const leadTwoNoPicAndTwoData = mockLeadTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <LeadTwoNoPicAndTwoSlice
+            lead1={leadTwoNoPicAndTwoData.lead1}
+            lead2={leadTwoNoPicAndTwoData.lead2}
+            support1={leadTwoNoPicAndTwoData.support1}
+            support2={leadTwoNoPicAndTwoData.support2}
           />
         );
         expect(output).toMatchSnapshot();

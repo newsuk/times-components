@@ -146,7 +146,7 @@ exports[`3. lead one and four slice 1`] = `
       <View>
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </View>
       <View>
@@ -179,7 +179,7 @@ exports[`3. lead one and four slice 1`] = `
       <View>
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </View>
       <View>
@@ -212,7 +212,7 @@ exports[`3. lead one and four slice 1`] = `
       <View>
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </View>
       <View>
@@ -245,7 +245,7 @@ exports[`3. lead one and four slice 1`] = `
       <View>
         <Image
           aspectRatio={1.5}
-          uri="//thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe68da1ac-25af-11e9-8d35-0e32f390087a.jpg?crop=1225%2C817%2C1299%2C107"
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
         />
       </View>
       <View>
@@ -273,7 +273,149 @@ exports[`3. lead one and four slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary one slice 1`] = `
+exports[`4. lead two no pic and two 1`] = `
+<View>
+  <Link
+    url="/article/123"
+  >
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="4"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+    </View>
+  </Link>
+  <View />
+  <Link
+    url="/article/123"
+  >
+    <View>
+      <View>
+        <View>
+          <Text>
+            LABEL
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+        <Text>
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </Link>
+  <View />
+  <Link
+    url="/article/123"
+  >
+    <View>
+      <View>
+        <Image
+          aspectRatio={1.5}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+        />
+      </View>
+      <View>
+        <View>
+          <Text>
+            LABEL
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+    </View>
+  </Link>
+  <View />
+  <Link
+    url="/article/123"
+  >
+    <View>
+      <View>
+        <Image
+          aspectRatio={0.8}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+        />
+      </View>
+      <View>
+        <View>
+          <Text>
+            LABEL
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          Venezuela shows how Corbyn’s socialism works
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+    </View>
+  </Link>
+</View>
+`;
+
+exports[`5. secondary one slice 1`] = `
 <Link>
   <View>
     <View>
@@ -304,7 +446,7 @@ exports[`4. secondary one slice 1`] = `
 </Link>
 `;
 
-exports[`5. secondary four 1`] = `
+exports[`6. secondary four 1`] = `
 <View>
   <View>
     <View>
@@ -452,7 +594,7 @@ exports[`5. secondary four 1`] = `
 </View>
 `;
 
-exports[`6. secondary two and two 1`] = `
+exports[`7. secondary two and two 1`] = `
 <View>
   <Link
     url="/article/123"
@@ -592,7 +734,7 @@ exports[`6. secondary two and two 1`] = `
 </View>
 `;
 
-exports[`7. secondary two no pic and two 1`] = `
+exports[`8. secondary two no pic and two 1`] = `
 <View>
   <Link
     url="/article/123"
@@ -732,7 +874,7 @@ exports[`7. secondary two no pic and two 1`] = `
 </View>
 `;
 
-exports[`8. list two and six no pic 1`] = `
+exports[`9. list two and six no pic 1`] = `
 <View>
   <View>
     <View>

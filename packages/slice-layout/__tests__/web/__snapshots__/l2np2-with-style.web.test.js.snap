@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. two lead elements, two support elements 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+  className="S1"
+>
+  <div
+    className="S1"
+  >
+    lead-1
+  </div>
+  <div
+    className="S2"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+  >
+    lead-2
+  </div>
+  <div
+    className="S2"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+  >
+    support-1
+  </div>
+  <div
+    className="S2"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+  >
+    support-2
+  </div>
+</div>
+`;
