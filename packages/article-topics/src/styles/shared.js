@@ -6,10 +6,10 @@ const styles = {
     borderColor: colours.functional.keyline,
     borderRadius: 2,
     borderWidth: 1,
-    paddingBottom: 12,
+    paddingBottom: spacing(2),
     paddingLeft: spacing(3),
     paddingRight: spacing(3),
-    paddingTop: 12
+    paddingTop: spacing(2)
   },
   spacer: {
     marginRight: spacing(2),
@@ -20,7 +20,8 @@ const styles = {
     ...fontFactory({
       font: "supporting",
       fontSize: "link"
-    })
+    }),
+    position: "relative"
   },
   topicGroup: {
     flexDirection: "row",

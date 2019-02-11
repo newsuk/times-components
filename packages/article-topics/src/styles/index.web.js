@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -7,7 +6,7 @@ const styles = StyleSheet.create({
   text: {
     ...sharedStyles.text,
     // Gill Sans hack
-    paddingTop: spacing(0.5)
+    top: 2
   }
 });
 

@@ -26,10 +26,10 @@ exports[`1. group of topics 1`] = `
             "borderColor": "#DBDBDB",
             "borderRadius": 2,
             "borderWidth": 1,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
             "paddingLeft": 15,
             "paddingRight": 15,
-            "paddingTop": 12,
+            "paddingTop": 10,
           }
         }
       >
@@ -40,6 +40,8 @@ exports[`1. group of topics 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 13,
+              "position": "relative",
+              "top": 1,
             }
           }
         >
@@ -77,10 +79,10 @@ exports[`2. group of topics at large scale 1`] = `
             "borderColor": "#DBDBDB",
             "borderRadius": 2,
             "borderWidth": 1,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
             "paddingLeft": 15,
             "paddingRight": 15,
-            "paddingTop": 12,
+            "paddingTop": 10,
           }
         }
       >
@@ -91,6 +93,8 @@ exports[`2. group of topics at large scale 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 14,
               "lineHeight": 14,
+              "position": "relative",
+              "top": 1,
             }
           }
         >
@@ -128,10 +132,10 @@ exports[`3. group of topics at xlarge scale 1`] = `
             "borderColor": "#DBDBDB",
             "borderRadius": 2,
             "borderWidth": 1,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
             "paddingLeft": 15,
             "paddingRight": 15,
-            "paddingTop": 12,
+            "paddingTop": 10,
           }
         }
       >
@@ -142,6 +146,8 @@ exports[`3. group of topics at xlarge scale 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
               "lineHeight": 15,
+              "position": "relative",
+              "top": 1,
             }
           }
         >

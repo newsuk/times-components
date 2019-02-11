@@ -9,10 +9,10 @@ exports[`1. group of topics 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-top: 2.5px;
 }
 
 .S2 {
@@ -24,10 +24,10 @@ exports[`1. group of topics 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .S3 {
@@ -105,10 +105,10 @@ exports[`2. group of topics at large scale 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-top: 2.5px;
 }
 
 .S2 {
@@ -120,10 +120,10 @@ exports[`2. group of topics at large scale 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .S3 {
@@ -201,10 +201,10 @@ exports[`3. group of topics at xlarge scale 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-top: 2.5px;
 }
 
 .S2 {
@@ -216,10 +216,10 @@ exports[`3. group of topics at xlarge scale 1`] = `
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .S3 {
