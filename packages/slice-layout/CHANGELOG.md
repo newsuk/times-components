@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.5.0...@times-components/slice-layout@0.6.0) (2019-02-11)
+
+
+### Features
+
+* Lead Two No Pic and Two Slice for mobile only ([#1677](https://github.com/newsuk/times-components/issues/1677)) ([a017307](https://github.com/newsuk/times-components/commit/a017307))
+
+
+
+
+
 # [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.4.3...@times-components/slice-layout@0.5.0) (2019-02-08)
 
 
