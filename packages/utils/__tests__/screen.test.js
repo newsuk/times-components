@@ -26,10 +26,6 @@ describe("screen utilities", () => {
     it("should return the device screen width", () => {
       expect(screenWidth()).toMatchSnapshot();
     });
-
-    it("should return the tablet width as screen width minus the needed padding", () => {
-      expect(screenWidth(true)).toMatchSnapshot();
-    });
   });
 
   context("screenWidthInPixels", () => {

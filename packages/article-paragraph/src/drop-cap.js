@@ -1,94 +1,86 @@
 import React, { Component } from "react";
-import { Dimensions, NativeModules, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
+import {
+  measureElements,
+  measureContainer,
+  layoutText,
+  InlineElement,
+  screenWidth
+} from "@times-components/utils";
 import styleFactory from "./styles";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
-
-const { RNTextSize } = NativeModules;
 
 class DropCapParagraph extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      screenWidth: Dimensions.get("window").width
+      content: [],
+      height: null,
+      needsLayout: true,
+      screenWidth: screenWidth(props.isTablet)
     };
   }
 
   componentDidMount() {
-    const { dropCap, scale, text } = this.props;
-
-    this.measureTextBoxes(dropCap, text, scale);
+    this.calculateLayout();
   }
 
-  componentDidUpdate(prevProps) {
-    const { dropCap, scale, text } = this.props;
-
-    if (prevProps.scale !== scale) {
-      this.measureTextBoxes(dropCap, text, scale);
+  componentDidUpdate(prev) {
+    const { scale, font, text, dropCap, isTablet } = this.props;
+    const {
+      scale: pScale,
+      font: pFont,
+      text: pText,
+      dropCap: pDropCap,
+      isTablet: pIsTablet
+    } = prev;
+    if (
+      scale !== pScale ||
+      font !== pFont ||
+      text !== pText ||
+      dropCap !== pDropCap ||
+      isTablet !== pIsTablet
+    ) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState(
+        {
+          content: [],
+          height: null,
+          needsLayout: true,
+          screenWidth: screenWidth(isTablet)
+        },
+        () => {
+          this.calculateLayout();
+        }
+      );
     }
   }
 
-  measureTextBoxes() {
-    const { dropCap, font, scale, text } = this.props;
-    const stylesThemedAndScaled = styleFactory(font, scale);
-
-    const { screenWidth } = this.state;
-
-    const {
-      dropCapTextElement: {
-        fontFamily: dropCapFontFamily,
-        fontSize: dropCapSize,
-        marginRight: dropCapRight
-      },
-      articleTextElement: { fontFamily, fontSize },
-      articleMainContentRow: { paddingLeft, paddingRight }
-    } = stylesThemedAndScaled;
-
-    const margins = paddingLeft + paddingRight + dropCapRight;
-
-    RNTextSize.measure({
-      fontFamily: dropCapFontFamily,
-      fontSize: dropCapSize,
-      text: dropCap,
-      width: screenWidth - margins
-    })
-      .then(({ width }) =>
-        RNTextSize.measure({
-          fontFamily,
-          fontSize,
-          lineEndForLineNo: 2,
-          text,
-          width: screenWidth - margins - width
-        })
-      )
-      .then(({ lineEnd: slicePoint }) => {
-        this.setState({
-          slicePoint
-        });
-      });
+  async calculateLayout() {
+    const { elements, results } = measureElements(this.renderChildren());
+    const { screenWidth: width } = this.state;
+    this.setState({
+      content: elements
+    });
+    const sizes = await results;
+    const [laidOut, height] = layoutText(width, sizes);
+    this.setState({
+      content: laidOut,
+      height,
+      needsLayout: false
+    });
   }
 
-  renderParagraph() {
+  renderChildren() {
     const { colour, dropCap, font, scale, text } = this.props;
-    const { screenWidth, slicePoint } = this.state;
-
     const stylesThemedAndScaled = styleFactory(font, scale);
-    const {
-      paddingLeft,
-      paddingRight
-    } = stylesThemedAndScaled.articleMainContentRow;
 
-    return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <View
-            style={[
-              stylesThemedAndScaled.articleMainContentRow,
-              stylesThemedAndScaled.dropCapContainer,
-              isTablet && stylesThemedAndScaled.dropCapContainerTablet
-            ]}
-          >
+    return [
+      <InlineElement align="left" start={0}>
+        {style => (
+          <View key="dropcap" style={[style]}>
             <Text
               selectable
               style={[
@@ -100,43 +92,39 @@ class DropCapParagraph extends Component {
             >
               {dropCap}
             </Text>
-            <Text
-              selectable
-              style={[
-                stylesThemedAndScaled.articleTextElement,
-                {
-                  flex: 1,
-                  marginBottom: 0
-                }
-              ]}
-            >
-              {slicePoint > 0 ? text.slice(0, slicePoint) : text}
-            </Text>
-
-            <Text
-              selectable
-              style={[
-                stylesThemedAndScaled.articleTextElement,
-                {
-                  width: screenWidth - paddingLeft - paddingRight
-                }
-              ]}
-            >
-              {slicePoint > 0 ? text.slice(slicePoint).trim() : null}
-            </Text>
           </View>
         )}
-      </ResponsiveContext.Consumer>
-    );
+      </InlineElement>,
+      <Text selectable style={stylesThemedAndScaled.articleTextElement}>
+        {text}
+      </Text>
+    ];
   }
 
   render() {
-    const { slicePoint } = this.state;
+    const { font, scale, text, dropCap, isTablet } = this.props;
+    const { height, needsLayout, content } = this.state;
+    const stylesThemedAndScaled = styleFactory(font, scale);
 
-    if (slicePoint !== undefined) {
-      return this.renderParagraph();
-    }
-    return null;
+    return (
+      <View
+        style={[
+          stylesThemedAndScaled.articleMainContentRow,
+          stylesThemedAndScaled.dropCapContainer,
+          {
+            height
+          },
+          isTablet && stylesThemedAndScaled.dropCapContainerTablet
+        ]}
+      >
+        {needsLayout === true && (
+          <Text selectable style={[stylesThemedAndScaled.articleTextElement]}>
+            {dropCap + text}
+          </Text>
+        )}
+        {content.length !== 0 && measureContainer(content)}
+      </View>
+    );
   }
 }
 
@@ -149,4 +137,12 @@ DropCapParagraph.propTypes = {
 
 DropCapParagraph.defaultProps = defaultProps;
 
-export default DropCapParagraph;
+export default props => (
+  <ResponsiveContext.Consumer>
+    {({ isTablet }) => (
+      <DropCapParagraph {...props} isTablet={isTablet}>
+        {props.children}
+      </DropCapParagraph>
+    )}
+  </ResponsiveContext.Consumer>
+);
