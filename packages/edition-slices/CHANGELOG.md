@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.11.1...@times-components/edition-slices@0.11.2) (2019-02-12)
+
+
+### Bug Fixes
+
+* Secondary two and two slice export ([#1681](https://github.com/newsuk/times-components/issues/1681)) ([6c1b27a](https://github.com/newsuk/times-components/commit/6c1b27a))
+
+
+
+
+
 ## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.11.0...@times-components/edition-slices@0.11.1) (2019-02-12)
 
 **Note:** Version bump only for package @times-components/edition-slices
