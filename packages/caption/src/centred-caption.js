@@ -1,4 +1,5 @@
 import React from "react";
+import { spacing } from "@times-components/styleguide";
 import Caption from "./caption";
 import { defaultProps, propTypes } from "./caption-prop-types";
 
@@ -9,6 +10,7 @@ const CentredCaption = ({ children, credits, style, text }) => (
       ...style,
       text: {
         ...style.text,
+        paddingHorizontal: spacing(2),
         textAlign: "center"
       }
     }}
