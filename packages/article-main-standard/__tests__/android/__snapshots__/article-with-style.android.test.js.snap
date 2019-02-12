@@ -390,12 +390,13 @@ exports[`full article with style on tablet 1`] = `
           <View
             style={
               Object {
-                "marginBottom": 20,
-                "paddingBottom": 20,
+                "marginBottom": 10,
+                "paddingBottom": 10,
               }
             }
           >
             <ModalImage />
+            <Caption />
           </View>
         </View>
       </View>

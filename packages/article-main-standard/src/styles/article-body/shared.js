@@ -42,8 +42,8 @@ const sharedStyles = scale => {
       marginBottom: spacing(2)
     },
     leadAssetTablet: {
-      marginBottom: spacing(4),
-      paddingBottom: spacing(4)
+      marginBottom: spacing(2),
+      paddingBottom: spacing(2)
     },
     primaryContainer: {
       flexDirection: "column",
