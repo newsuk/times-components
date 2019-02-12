@@ -6,7 +6,7 @@ import { TileA, TileB } from "../../tiles";
 const LeadOneAndOne = ({ lead, onPress, support }) => (
   <LeadOneAndOneSlice
     renderLead={() => <TileA onPress={onPress} tile={lead} />}
-    renderSupport1={() => <TileB onPress={onPress} tile={support} />}
+    renderSupport={() => <TileB onPress={onPress} tile={support} />}
   />
 );
 
