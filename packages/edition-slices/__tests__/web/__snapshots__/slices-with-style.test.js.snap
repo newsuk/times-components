@@ -1624,7 +1624,11 @@ exports[`7. secondary two and two 1`] = `
 }
 
 .IS6 {
-  border-left-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
   margin-top: 10px;
 }
 
@@ -1662,7 +1666,8 @@ exports[`7. secondary two and two 1`] = `
 }
 
 .IS13 {
-  border-bottom-width: 0.5px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1708,7 +1713,8 @@ exports[`7. secondary two and two 1`] = `
 }
 
 .IS19 {
-  border-bottom-width: 0.5px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }

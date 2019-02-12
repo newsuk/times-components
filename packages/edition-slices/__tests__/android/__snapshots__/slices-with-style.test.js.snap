@@ -1421,7 +1421,9 @@ exports[`7. secondary two and two 1`] = `
     <View
       style={
         Object {
-          "borderLeftWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
           "marginVertical": 10,
         }
       }
@@ -1502,7 +1504,8 @@ exports[`7. secondary two and two 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 0.5,
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -1584,7 +1587,8 @@ exports[`7. secondary two and two 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 0.5,
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
