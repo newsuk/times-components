@@ -1124,20 +1124,22 @@ exports[`9. list two and six no pic 1`] = `
 </View>
 `;
 
-exports[`9. leaders 1`] = `
+exports[`10. leaders 1`] = `
 <View>
-  <Image
-    resizeMode="contain"
-    source={
-      Object {
-        "testUri": "../../../packages/slice-layout/assets/leaders-masthead.png",
-      }
-    }
-  />
   <View>
-    <Text>
-       Leading Articles 
-    </Text>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/leaders-masthead.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
   </View>
   <Link>
     <View>

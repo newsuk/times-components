@@ -1124,19 +1124,21 @@ exports[`9. list two and six no pic 1`] = `
 </div>
 `;
 
-exports[`9. leaders 1`] = `
+exports[`10. leaders 1`] = `
 <div>
   <div>
-    <div />
-    <img
-      alt=""
-      draggable={false}
-      src="uri"
-    />
-  </div>
-  <div>
     <div>
-       Leading Articles 
+      <div />
+      <img
+        alt=""
+        draggable={false}
+        src="uri"
+      />
+    </div>
+    <div>
+      <div>
+         Leading Articles 
+      </div>
     </div>
   </div>
   <Link>

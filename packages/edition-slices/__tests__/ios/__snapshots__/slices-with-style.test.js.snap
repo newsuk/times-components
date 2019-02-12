@@ -2508,7 +2508,7 @@ exports[`9. list two and six no pic 1`] = `
 </View>
 `;
 
-exports[`9. leaders 1`] = `
+exports[`10. leaders 1`] = `
 <View
   style={
     Object {
@@ -2518,36 +2518,38 @@ exports[`9. leaders 1`] = `
     }
   }
 >
-  <Image
-    style={
-      Object {
-        "height": 51,
-        "margin": "auto",
-        "width": 283,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "paddingBottom": 5,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
+  <View>
+    <Image
       style={
         Object {
-          "color": "#850029",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 16,
-          "lineHeight": 15,
-          "textAlign": "center",
+          "height": 51,
+          "margin": "auto",
+          "width": 283,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingTop": 10,
         }
       }
     >
-       Leading Articles 
-    </Text>
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 16,
+            "lineHeight": 15,
+            "textAlign": "center",
+          }
+        }
+      >
+         Leading Articles 
+      </Text>
+    </View>
   </View>
   <Link>
     <View

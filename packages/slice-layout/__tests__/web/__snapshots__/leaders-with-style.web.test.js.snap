@@ -11,48 +11,8 @@ exports[`1. three child element 1`] = `
     }
   }
 >
-  <div
-    style={
-      Object {
-        "height": "51px",
-        "marginBottom": "auto",
-        "marginLeft": "auto",
-        "marginRight": "auto",
-        "marginTop": "auto",
-        "width": "283px",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "backgroundImage": "url(\\"uri\\")",
-        }
-      }
-    />
-    <img />
-  </div>
-  <div
-    style={
-      Object {
-        "paddingBottom": "5px",
-        "paddingTop": "10px",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "color": "rgba(133,0,41,1.00)",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": "16px",
-          "lineHeight": "15px",
-          "textAlign": "center",
-        }
-      }
-    >
-       Leading Articles 
-    </div>
+  <div>
+    leader-4
   </div>
   <div>
     leader-1

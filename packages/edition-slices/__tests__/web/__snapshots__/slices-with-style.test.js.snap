@@ -2937,7 +2937,7 @@ exports[`9. list two and six no pic 1`] = `
 </div>
 `;
 
-exports[`9. leaders 1`] = `
+exports[`10. leaders 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3004,7 +3004,6 @@ exports[`9. leaders 1`] = `
 .IS7 {
   padding-right: 40px;
   padding-left: 40px;
-  padding-bottom: 10px;
 }
 
 .IS8 {
@@ -3071,24 +3070,28 @@ exports[`9. leaders 1`] = `
   className="IS16 S1"
 >
   <div
-    className="IS2"
+    className="S1"
   >
     <div
-      className="IS1 S1"
-    />
-    <img
-      alt=""
-      draggable={false}
-      src="uri"
-    />
-  </div>
-  <div
-    className="IS4 S1"
-  >
-    <div
-      className="IS3 S2"
+      className="IS2"
     >
-       Leading Articles 
+      <div
+        className="IS1 S1"
+      />
+      <img
+        alt=""
+        draggable={false}
+        src="uri"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="IS3 S2"
+      >
+         Leading Articles 
+      </div>
     </div>
   </div>
   <Link>

@@ -297,6 +297,7 @@ export default {
       component: () => (
         <ScrollView>
           <Leaders
+            renderHead={() => <Support4 id="support4" />}
             renderLeader1={() => <Support1 id="support1" />}
             renderLeader2={() => <Support2 id="support2" />}
             renderLeader3={() => <Support3 id="support3" />}

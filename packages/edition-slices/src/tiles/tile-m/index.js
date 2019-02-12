@@ -9,16 +9,16 @@ const TileM = ({ onPress, tile }) => {
     strapline,
     article: { shortHeadline }
   } = tile;
-  const newTile = { article: { shortHeadline } };
+  const tileWithoutLabelAndFlags = { article: { shortHeadline } };
 
   return (
-    <TileLink onPress={onPress} tile={newTile}>
+    <TileLink onPress={onPress} tile={tileWithoutLabelAndFlags}>
       <View style={styles.container}>
         <TileSummary
           headlineStyle={styles.headlineStyle}
           strapline={strapline}
           straplineStyle={styles.straplineStyle}
-          tile={newTile}
+          tile={tileWithoutLabelAndFlags}
         />
       </View>
     </TileLink>

@@ -2,19 +2,9 @@
 
 exports[`1. three child element 1`] = `
 <View>
-  <Image
-    resizeMode="contain"
-    source={
-      Object {
-        "testUri": "../../../packages/slice-layout/assets/leaders-masthead.png",
-      }
-    }
-  />
-  <View>
-    <Text>
-       Leading Articles 
-    </Text>
-  </View>
+  <Text>
+    leader-4
+  </Text>
   <Text>
     leader-1
   </Text>

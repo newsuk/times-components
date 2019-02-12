@@ -10,37 +10,9 @@ exports[`1. three child element 1`] = `
     }
   }
 >
-  <Image
-    style={
-      Object {
-        "height": 51,
-        "margin": "auto",
-        "width": 283,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "paddingBottom": 5,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#850029",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 16,
-          "lineHeight": 15,
-          "textAlign": "center",
-        }
-      }
-    >
-       Leading Articles 
-    </Text>
-  </View>
+  <Text>
+    leader-4
+  </Text>
   <Text>
     leader-1
   </Text>
