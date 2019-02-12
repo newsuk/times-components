@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.6.2...@times-components/slice-layout@0.6.3) (2019-02-12)
+
+
+### Bug Fixes
+
+* Add new slice layout for lead-1-and-1 slice to fix margin issues ([#1684](https://github.com/newsuk/times-components/issues/1684)) ([30551d0](https://github.com/newsuk/times-components/commit/30551d0))
+
+
+
+
+
 ## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.6.1...@times-components/slice-layout@0.6.2) (2019-02-12)
 
 
