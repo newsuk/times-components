@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.5.13...@times-components/article-paragraph@0.6.0) (2019-02-12)
+
+
+### Features
+
+* REPLAT-4861 Integrate tex-layout and use for dropcaps on both IOS and Android ([#1647](https://github.com/newsuk/times-components/issues/1647)) ([6718921](https://github.com/newsuk/times-components/commit/6718921))
+
+
+
+
+
 ## [0.5.13](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.5.12...@times-components/article-paragraph@0.5.13) (2019-02-07)
 
 **Note:** Version bump only for package @times-components/article-paragraph

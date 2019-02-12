@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.11.26...@times-components/android-app@0.12.0) (2019-02-12)
+
+
+### Features
+
+* REPLAT-4861 Integrate tex-layout and use for dropcaps on both IOS and Android ([#1647](https://github.com/newsuk/times-components/issues/1647)) ([6718921](https://github.com/newsuk/times-components/commit/6718921))
+
+
+
+
+
 ## [0.11.26](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.11.25...@times-components/android-app@0.11.26) (2019-02-11)
 
 **Note:** Version bump only for package @times-components/android-app
