@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. lead one and one 1`] = `
+<View>
+  <Text>
+    lead
+  </Text>
+  <Text>
+    support
+  </Text>
+</View>
+`;
