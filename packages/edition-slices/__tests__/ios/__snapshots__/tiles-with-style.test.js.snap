@@ -727,3 +727,149 @@ exports[`11. tile m 1`] = `
   </View>
 </Link>
 `;
+
+exports[`12. tile n 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#272D34",
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "paddingTop": 5,
+          "width": "50%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#CCC",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <ArticleFlags />
+      <Text
+        style={
+          Object {
+            "color": "#CCC",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`13. tile o 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#272D34",
+        "paddingHorizontal": 12,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#CCC",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 11,
+            "marginTop": 5,
+          }
+        }
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
+  </View>
+</Link>
+`;

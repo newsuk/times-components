@@ -9,6 +9,7 @@ import {
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
+  SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   Leaders,
@@ -241,10 +242,27 @@ export default {
             renderSecondary2={() => <Support2 id="support2" />}
             renderSupport1={() => <Support3 id="support3" />}
             renderSupport2={() => <Support4 id="support4" />}
+            renderSupport3={() => <Support1 id="support5" />}
+            renderSupport4={() => <Support2 id="support6" />}
           />
         </ScrollView>
       ),
       name: "SecondaryTwoAndTwoSlice",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <SecondaryOneAndFourSlice
+            renderSecondary1={() => <Support1 id="support1" />}
+            renderSupport1={() => <Support2 id="support2" />}
+            renderSupport2={() => <Support3 id="support3" />}
+            renderSupport3={() => <Support4 id="support4" />}
+            renderSupport4={() => <Support1 id="support5" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryOneAndFourSlice",
       type: "story"
     },
     {

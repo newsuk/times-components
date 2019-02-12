@@ -17,7 +17,9 @@ import {
   TileI,
   TileJ,
   TileL,
-  TileM
+  TileM,
+  TileN,
+  TileO
 } from "./src/tiles";
 
 const preventDefaultedAction = decorateAction =>
@@ -172,6 +174,34 @@ export default {
       },
       name:
         "Tile M - No image, 22pt headline, no teaser, comment article, center align",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneFullWidthSlice();
+        return (
+          <TileN
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
+      },
+      name:
+        "Tile N - Square image, 22pt headline, white color, black background",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneFullWidthSlice();
+        return (
+          <TileO
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
+      },
+      name:
+        "Tile O - No image, 20pt headline, no teaser, white color, black background",
       type: "story"
     }
   ],

@@ -1297,7 +1297,406 @@ exports[`6. secondary four 1`] = `
 </View>
 `;
 
-exports[`7. secondary two and two 1`] = `
+exports[`7. secondary one and four 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#272D34",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#272D34",
+        "flexDirection": "row",
+        "margin": 10,
+        "marginBottom": 0,
+      }
+    }
+  >
+    <TheTimesLogo />
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#4D4D4D",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#272D34",
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View>
+        <Link>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#272D34",
+                "flexDirection": "row",
+                "padding": 10,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": "50%",
+                }
+              }
+            >
+              <Image />
+            </View>
+            <View
+              style={
+                Object {
+                  "paddingHorizontal": 10,
+                  "paddingTop": 5,
+                  "width": "50%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#CCC",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 14,
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  LABEL
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                Venezuela shows how Corbyn’s socialism works
+              </Text>
+              <ArticleFlags />
+              <Text
+                style={
+                  Object {
+                    "color": "#CCC",
+                    "flexWrap": "wrap",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <Text>
+                  
+                  Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+                  ...
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </Link>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View>
+      <Link>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#272D34",
+              "paddingHorizontal": 12,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#CCC",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 14,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                LABEL
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 11,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </Text>
+            <ArticleFlags />
+          </View>
+        </View>
+      </Link>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View>
+      <Link>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#272D34",
+              "paddingHorizontal": 12,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#CCC",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 14,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                LABEL
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 11,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </Text>
+            <ArticleFlags />
+          </View>
+        </View>
+      </Link>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View>
+      <Link>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#272D34",
+              "paddingHorizontal": 12,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#CCC",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 14,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                LABEL
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 11,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </Text>
+            <ArticleFlags />
+          </View>
+        </View>
+      </Link>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View>
+      <Link>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#272D34",
+              "paddingHorizontal": 12,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#CCC",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 14,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                LABEL
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 11,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Venezuela shows how Corbyn’s socialism works
+            </Text>
+            <ArticleFlags />
+          </View>
+        </View>
+      </Link>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. secondary two and two 1`] = `
 <View
   style={
     Object {
@@ -1636,7 +2035,7 @@ exports[`7. secondary two and two 1`] = `
 </View>
 `;
 
-exports[`8. secondary two no pic and two 1`] = `
+exports[`9. secondary two no pic and two 1`] = `
 <View>
   <Link>
     <View
@@ -1949,7 +2348,7 @@ exports[`8. secondary two no pic and two 1`] = `
 </View>
 `;
 
-exports[`9. list two and six no pic 1`] = `
+exports[`10. list two and six no pic 1`] = `
 <View
   style={
     Object {
@@ -2508,7 +2907,7 @@ exports[`9. list two and six no pic 1`] = `
 </View>
 `;
 
-exports[`10. leaders 1`] = `
+exports[`11. leaders 1`] = `
 <View
   style={
     Object {

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. four child elements 1`] = `
+<View>
+  <View>
+    <View>
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-2
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-3
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-4
+    </Text>
+  </View>
+</View>
+`;

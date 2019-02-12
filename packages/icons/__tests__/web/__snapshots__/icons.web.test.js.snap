@@ -123,3 +123,20 @@ exports[`6. iconfacebook renders 1`] = `
   </g>
 </svg>
 `;
+
+exports[`7. thetimeslogo renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="eae950f6224db3cc30d6faf4914f846c"
+  width={20}
+>
+  <title>
+    TheTimesLogo
+  </title>
+  <path
+    d="d88c5eb2e78d8130ddd1354b0637b148"
+    fill="#FFFFFF"
+  />
+</svg>
+`;
