@@ -65,8 +65,12 @@ exports[`1. four child element 1`] = `
       className="S1"
       style={
         Object {
-          "borderLeftWidth": "1px",
-          "marginBottom": "12px",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightWidth": "1px",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginBottom": "10px",
           "marginTop": "10px",
         }
       }
@@ -90,9 +94,10 @@ exports[`1. four child element 1`] = `
     className="S2"
     style={
       Object {
-        "borderBottomWidth": "0.5px",
-        "marginLeft": "12px",
-        "marginRight": "12px",
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
       }
     }
   />
@@ -126,8 +131,12 @@ exports[`1. four child element 1`] = `
       className="S1"
       style={
         Object {
-          "borderLeftWidth": "1px",
-          "marginBottom": "12px",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightWidth": "1px",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginBottom": "10px",
           "marginTop": "10px",
         }
       }

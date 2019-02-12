@@ -1,9 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import styles from "./styles";
 import propTypes from "./proptypes";
-
-const renderItemSeparator = () => <View style={styles.itemSeparator} />;
+import { ItemRowSeparator } from "../shared";
 
 const SecondaryTwoNoPicAndTwoSlice = ({
   renderSecondary1,
@@ -13,11 +11,11 @@ const SecondaryTwoNoPicAndTwoSlice = ({
 }) => (
   <View>
     {renderSecondary1()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSecondary2()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSupport1()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSupport2()}
   </View>
 );

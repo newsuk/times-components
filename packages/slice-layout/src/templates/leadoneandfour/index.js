@@ -1,9 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import styles from "./styles";
+import { ItemRowSeparator } from "../shared";
 import propTypes from "./proptypes";
-
-const renderItemSeparator = () => <View style={styles.itemSeparator} />;
 
 const leadOneAndFourSlice = ({
   renderLead,
@@ -15,11 +13,11 @@ const leadOneAndFourSlice = ({
   <View>
     {renderLead()}
     {renderSupport1()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSupport2()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSupport3()}
-    {renderItemSeparator()}
+    <ItemRowSeparator />
     {renderSupport4()}
   </View>
 );
