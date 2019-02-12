@@ -1,20 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { LeadOneAndTwoSlice } from "@times-components/slice-layout";
+import { LeadOneAndOneSlice } from "@times-components/slice-layout";
 import { TileA, TileB } from "../../tiles";
 
-const LeadOneAndOneSlice = ({ lead, onPress, support }) => (
-  <LeadOneAndTwoSlice
+const LeadOneAndOne = ({ lead, onPress, support }) => (
+  <LeadOneAndOneSlice
     renderLead={() => <TileA onPress={onPress} tile={lead} />}
-    renderSupport1={() => <TileB onPress={onPress} tile={support} />}
-    renderSupport2={() => null}
+    renderSupport={() => <TileB onPress={onPress} tile={support} />}
   />
 );
 
-LeadOneAndOneSlice.propTypes = {
+LeadOneAndOne.propTypes = {
   lead: PropTypes.shape({}).isRequired,
   onPress: PropTypes.func.isRequired,
   support: PropTypes.shape({}).isRequired
 };
 
-export default LeadOneAndOneSlice;
+export default LeadOneAndOne;

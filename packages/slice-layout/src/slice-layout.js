@@ -1,6 +1,7 @@
 import StandardSlice from "./templates/standard";
 import standardRoles from "./templates/standard/roles";
 import LeadOneAndFourSlice from "./templates/leadoneandfour";
+import LeadOneAndOneSlice from "./templates/leadoneandone";
 import LeadOneAndTwoSlice from "./templates/leadoneandtwo";
 import leadOneAndTwoRoles from "./templates/leadoneandtwo/roles";
 import LeadTwoNoPicAndTwoSlice from "./templates/leadtwonopicandtwo";
@@ -15,6 +16,7 @@ export {
   StandardSlice,
   standardRoles,
   LeadOneAndFourSlice,
+  LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
   leadOneAndTwoRoles,
   LeadTwoNoPicAndTwoSlice,

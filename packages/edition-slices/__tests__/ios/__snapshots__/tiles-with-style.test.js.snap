@@ -68,7 +68,6 @@ exports[`2. tile b 1`] = `
     style={
       Object {
         "paddingHorizontal": 10,
-        "paddingTop": 10,
       }
     }
   >

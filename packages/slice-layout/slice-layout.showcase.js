@@ -3,6 +3,7 @@ import React from "react";
 import { ScrollView, View } from "react-native";
 import {
   LeadOneAndFourSlice,
+  LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
   LeadTwoNoPicAndTwoSlice,
   OpinionOneAndTwoSlice,
@@ -65,6 +66,27 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndFour",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <LeadOneAndOneSlice
+            renderLead={() => (
+              <View
+                id="lead"
+                style={{
+                  backgroundColor: "red",
+                  minHeight: 320
+                }}
+              />
+            )}
+            renderSupport={() => <Support1 id="support1" />}
+            withSeparators
+          />
+        </ScrollView>
+      ),
+      name: "LeadOneAndOne",
       type: "story"
     },
     {
