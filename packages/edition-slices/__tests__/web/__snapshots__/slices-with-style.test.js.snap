@@ -1232,8 +1232,11 @@ exports[`6. secondary four 1`] = `
 }
 
 .IS6 {
-  border-left-width: 1px;
-  margin-bottom: 12px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
   margin-top: 10px;
 }
 
@@ -1271,9 +1274,10 @@ exports[`6. secondary four 1`] = `
 }
 
 .IS13 {
-  border-bottom-width: 0.5px;
-  margin-right: 12px;
-  margin-left: 12px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS14 {
@@ -1302,8 +1306,11 @@ exports[`6. secondary four 1`] = `
 }
 
 .IS19 {
-  border-left-width: 1px;
-  margin-bottom: 12px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
   margin-top: 10px;
 }
 
@@ -1408,7 +1415,7 @@ exports[`6. secondary four 1`] = `
       </Link>
     </div>
     <div
-      className="IS6"
+      className="IS6 S1"
     />
     <div
       className="IS11 S3"
@@ -1512,7 +1519,7 @@ exports[`6. secondary four 1`] = `
       </Link>
     </div>
     <div
-      className="IS19"
+      className="IS19 S1"
     />
     <div
       className="IS24 S3"
@@ -2363,10 +2370,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS6 {
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
 }
@@ -2406,13 +2413,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS13 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS14 {
@@ -2432,13 +2436,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS17 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS18 {
@@ -2458,13 +2459,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS21 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS22 {
@@ -2484,13 +2482,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS25 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS26 {
@@ -2510,13 +2505,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS29 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS30 {
@@ -2536,13 +2528,10 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS33 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS34 {
@@ -2562,16 +2551,6 @@ exports[`9. list two and six no pic 1`] = `
 }
 
 .IS37 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
-  margin-right: 12px;
-  margin-left: 12px;
-}
-
-.IS38 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2586,7 +2565,7 @@ exports[`9. list two and six no pic 1`] = `
 </style>
 
 <div
-  className="IS38 S3"
+  className="IS37 S3"
 >
   <div
     className="IS12 S3"
@@ -2940,9 +2919,6 @@ exports[`9. list two and six no pic 1`] = `
         </div>
       </div>
     </Link>
-    <div
-      className="IS37 S3"
-    />
   </div>
 </div>
 `;

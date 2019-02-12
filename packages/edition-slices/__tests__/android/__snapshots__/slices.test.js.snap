@@ -1120,7 +1120,6 @@ exports[`9. list two and six no pic 1`] = `
         </View>
       </View>
     </Link>
-    <View />
   </View>
 </View>
 `;

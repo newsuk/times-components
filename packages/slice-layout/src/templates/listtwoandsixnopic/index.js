@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
+import { ItemRowSeparator, ItemColSeparator } from "../shared";
 import propTypes from "./proptypes";
 
 const ListTwoAndSixNoPic = ({
@@ -30,16 +31,16 @@ const ListTwoAndSixNoPic = ({
         <View key={renderRowItem1.props.id} style={styles.leadItem}>
           {renderRowItem1}
         </View>
-        <View style={styles.keyRightSeparator} />
+        <ItemColSeparator />
         <View key={renderRowItem2.props.id} style={styles.leadItem}>
           {renderRowItem2}
         </View>
       </View>
-      <View style={styles.keyBottomSeparator} />
-      {supportItems.map(item => (
+      <ItemRowSeparator />
+      {supportItems.map((item, index) => (
         <View key={item().props.id}>
           {item()}
-          <View style={styles.keyBottomSeparator} />
+          {supportItems.length - 1 > index ? <ItemRowSeparator /> : null}
         </View>
       ))}
     </View>

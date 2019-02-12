@@ -1076,9 +1076,10 @@ exports[`6. secondary four 1`] = `
     <View
       style={
         Object {
-          "borderLeftWidth": 1,
-          "marginBottom": 12,
-          "marginTop": 10,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
       }
     />
@@ -1158,9 +1159,10 @@ exports[`6. secondary four 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 0.5,
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 12,
+        "marginHorizontal": 10,
       }
     }
   />
@@ -1246,9 +1248,10 @@ exports[`6. secondary four 1`] = `
     <View
       style={
         Object {
-          "borderLeftWidth": 1,
-          "marginBottom": 12,
-          "marginTop": 10,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
       }
     />
@@ -2049,7 +2052,7 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
-          "borderColor": "#dcdcdc",
+          "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
           "marginVertical": 10,
@@ -2133,10 +2136,10 @@ exports[`9. list two and six no pic 1`] = `
   <View
     style={
       Object {
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
-        "borderColor": "#dcdcdc",
         "borderStyle": "solid",
-        "marginHorizontal": 12,
+        "marginHorizontal": 10,
       }
     }
   />
@@ -2196,10 +2199,10 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
           "borderStyle": "solid",
-          "marginHorizontal": 12,
+          "marginHorizontal": 10,
         }
       }
     />
@@ -2260,10 +2263,10 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
           "borderStyle": "solid",
-          "marginHorizontal": 12,
+          "marginHorizontal": 10,
         }
       }
     />
@@ -2324,10 +2327,10 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
           "borderStyle": "solid",
-          "marginHorizontal": 12,
+          "marginHorizontal": 10,
         }
       }
     />
@@ -2388,10 +2391,10 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
           "borderStyle": "solid",
-          "marginHorizontal": 12,
+          "marginHorizontal": 10,
         }
       }
     />
@@ -2452,10 +2455,10 @@ exports[`9. list two and six no pic 1`] = `
     <View
       style={
         Object {
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
           "borderStyle": "solid",
-          "marginHorizontal": 12,
+          "marginHorizontal": 10,
         }
       }
     />
@@ -2513,16 +2516,6 @@ exports[`9. list two and six no pic 1`] = `
         </View>
       </View>
     </Link>
-    <View
-      style={
-        Object {
-          "borderBottomWidth": 1,
-          "borderColor": "#dcdcdc",
-          "borderStyle": "solid",
-          "marginHorizontal": 12,
-        }
-      }
-    />
   </View>
 </View>
 `;

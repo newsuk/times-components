@@ -29,9 +29,10 @@ exports[`1. four child element 1`] = `
     <View
       style={
         Object {
-          "borderLeftWidth": 1,
-          "marginBottom": 12,
-          "marginTop": 10,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
       }
     />
@@ -50,9 +51,10 @@ exports[`1. four child element 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 0.5,
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 12,
+        "marginHorizontal": 10,
       }
     }
   />
@@ -77,9 +79,10 @@ exports[`1. four child element 1`] = `
     <View
       style={
         Object {
-          "borderLeftWidth": 1,
-          "marginBottom": 12,
-          "marginTop": 10,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
       }
     />

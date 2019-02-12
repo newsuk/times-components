@@ -73,11 +73,11 @@ exports[`1. eight child element 1`] = `
       className="S1"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
           "borderRightWidth": "1px",
-          "borderTopColor": "rgba(220,220,220,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
@@ -103,13 +103,10 @@ exports[`1. eight child element 1`] = `
     className="S3"
     style={
       Object {
-        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomWidth": "1px",
-        "borderLeftColor": "rgba(220,220,220,1.00)",
-        "borderRightColor": "rgba(220,220,220,1.00)",
-        "borderTopColor": "rgba(220,220,220,1.00)",
-        "marginLeft": "12px",
-        "marginRight": "12px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
       }
     }
   />
@@ -125,13 +122,10 @@ exports[`1. eight child element 1`] = `
       className="S3"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
@@ -148,13 +142,10 @@ exports[`1. eight child element 1`] = `
       className="S3"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
@@ -171,13 +162,10 @@ exports[`1. eight child element 1`] = `
       className="S3"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
@@ -194,13 +182,10 @@ exports[`1. eight child element 1`] = `
       className="S3"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
@@ -217,13 +202,10 @@ exports[`1. eight child element 1`] = `
       className="S3"
       style={
         Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
@@ -236,20 +218,6 @@ exports[`1. eight child element 1`] = `
     >
       support-6
     </div>
-    <div
-      className="S3"
-      style={
-        Object {
-          "borderBottomColor": "rgba(220,220,220,1.00)",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(220,220,220,1.00)",
-          "borderRightColor": "rgba(220,220,220,1.00)",
-          "borderTopColor": "rgba(220,220,220,1.00)",
-          "marginLeft": "12px",
-          "marginRight": "12px",
-        }
-      }
-    />
   </div>
 </div>
 `;
