@@ -2,20 +2,30 @@
 
 exports[`1. four child elements 1`] = `
 <View>
-  <Text>
-    secondary-1
-  </Text>
+  <View>
+    <View>
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+    <View />
+    <View>
+      <Text>
+        secondary-2
+      </Text>
+    </View>
+  </View>
   <View />
-  <Text>
-    secondary-2
-  </Text>
+  <View>
+    <Text>
+      support-1
+    </Text>
+  </View>
   <View />
-  <Text>
-    support-1
-  </Text>
-  <View />
-  <Text>
-    support-2
-  </Text>
+  <View>
+    <Text>
+      support-2
+    </Text>
+  </View>
 </View>
 `;

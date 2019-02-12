@@ -1,10 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. four child elements 1`] = `
-<View>
-  <Text>
-    secondary-1
-  </Text>
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <Text>
+        secondary-2
+      </Text>
+    </View>
+  </View>
   <View
     style={
       Object {
@@ -15,9 +58,11 @@ exports[`1. four child elements 1`] = `
       }
     }
   />
-  <Text>
-    secondary-2
-  </Text>
+  <View>
+    <Text>
+      support-1
+    </Text>
+  </View>
   <View
     style={
       Object {
@@ -28,21 +73,10 @@ exports[`1. four child elements 1`] = `
       }
     }
   />
-  <Text>
-    support-1
-  </Text>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <Text>
-    support-2
-  </Text>
+  <View>
+    <Text>
+      support-2
+    </Text>
+  </View>
 </View>
 `;
