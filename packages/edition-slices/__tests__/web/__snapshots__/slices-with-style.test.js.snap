@@ -168,123 +168,99 @@ exports[`2. lead one and one slice 1`] = `
 .IS7 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 </style>
 
 <div
-  className="configweb__Base-kjGEdW cNGWYk configweb__Base-eXHdFh jFKTdO S2"
+  className="S2"
 >
-  <div
-    className="responsiveweb__SliceContainer-kEikFj fWXWTf S2"
-  >
+  <Link>
     <div
-      className="responsiveweb__Base-kQMzah cxejRh responsiveweb__Base-jXvbcq dmuCnu responsiveweb__Base-dIyxxW eFWEvM S2"
+      className="IS3 S4"
     >
       <div
-        className="responsiveweb__Base-iFMijX gmChNY responsiveweb__Base-drDvXX xjUQC responsiveweb__Base-jIurKX hSGlCR S2"
-      >
-        <Link>
-          <div
-            className="IS3 S4"
-          >
-            <div
-              className="S2"
-            >
-              <div
-                className="IS1 S1"
-              >
-                ROYALS
-              </div>
-            </div>
-            <h3
-              aria-level="3"
-              className="IS2 S3"
-              role="heading"
-            >
-              Prince Philip ‘could be prosecuted’ over car crash
-            </h3>
-            <ArticleFlags
-              flags={
-                Array [
-                  "NEW",
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4"
-          >
-            <Image
-              aspectRatio={1.7777777777777777}
-              uri="https://img/someImage"
-            />
-          </div>
-        </Link>
-      </div>
-      <div
-        className="responsiveweb-fhQnWB dWVMyV S2"
-      />
-      <div
-        className="responsiveweb__SupportsContainer-eXSNWD dpijfw S2"
+        className="S2"
       >
         <div
-          className="responsiveweb-brngwq gvaiUN S2"
+          className="IS1 S1"
         >
-          <Link>
-            <div
-              className="IS7 S2"
-            >
-              <div
-                className="S2"
-              >
-                <div
-                  className="S2"
-                >
-                  <div
-                    className="IS5 S1"
-                  >
-                    CYBER CRIME
-                  </div>
-                </div>
-                <h3
-                  aria-level="3"
-                  className="IS6 S5"
-                  role="heading"
-                >
-                  GCHQ gives girls free cyber-classes to tackle gender gap
-                </h3>
-                <ArticleFlags
-                  flags={
-                    Array [
-                      "UPDATED",
-                    ]
-                  }
-                />
-                <div
-                  className="S7"
-                >
-                  <span
-                    className="S6"
-                  >
-                    
-                    GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-                  </span>
-                  <span
-                    className="S6"
-                  >
-                     
-                    The intelligence
-                    ...
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Link>
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </div>
+    <div
+      className="IS4"
+    >
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="https://img/someImage"
+      />
+    </div>
+  </Link>
+  <Link>
+    <div
+      className="IS7 S2"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="S2"
+        >
+          <div
+            className="IS5 S1"
+          >
+            CYBER CRIME
+          </div>
+        </div>
+        <h3
+          aria-level="3"
+          className="IS6 S5"
+          role="heading"
+        >
+          GCHQ gives girls free cyber-classes to tackle gender gap
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              "UPDATED",
+            ]
+          }
+        />
+        <div
+          className="S7"
+        >
+          <span
+            className="S6"
+          >
+            
+            GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+          </span>
+          <span
+            className="S6"
+          >
+             
+            The intelligence
+            ...
+          </span>
         </div>
       </div>
     </div>
-  </div>
+  </Link>
 </div>
 `;
 
@@ -816,7 +792,6 @@ exports[`4. lead two no pic and two 1`] = `
 .IS7 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 
 .IS8 {
@@ -2037,7 +2012,6 @@ exports[`8. secondary two no pic and two 1`] = `
 .IS3 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 
 .IS4 {
@@ -2058,7 +2032,6 @@ exports[`8. secondary two no pic and two 1`] = `
 .IS7 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 
 .IS8 {

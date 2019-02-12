@@ -33,77 +33,69 @@ exports[`1. lead one full width slice 1`] = `
 
 exports[`2. lead one and one slice 1`] = `
 <View>
-  <View>
+  <Link>
     <View>
-      <Link>
+      <View>
+        <Text>
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </View>
+    <View>
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="https://img/someImage"
+      />
+    </View>
+  </Link>
+  <Link>
+    <View>
+      <View>
         <View>
-          <View>
-            <Text>
-              ROYALS
-            </Text>
-          </View>
-          <Text
-            accessibilityRole="heading"
-            aria-level="3"
-          >
-            Prince Philip ‘could be prosecuted’ over car crash
+          <Text>
+            CYBER CRIME
           </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                "NEW",
-              ]
-            }
-          />
         </View>
-        <View>
-          <Image
-            aspectRatio={1.7777777777777777}
-            uri="https://img/someImage"
-          />
-        </View>
-      </Link>
+        <Text
+          accessibilityRole="heading"
+          aria-level="3"
+        >
+          GCHQ gives girls free cyber-classes to tackle gender gap
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              "UPDATED",
+            ]
+          }
+        />
+        <Text>
+          <Text>
+            
+            GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
+          </Text>
+          <Text>
+             
+            The intelligence
+            ...
+          </Text>
+        </Text>
+      </View>
     </View>
-  </View>
-  <View>
-    <View>
-      <Link>
-        <View>
-          <View>
-            <View>
-              <Text>
-                CYBER CRIME
-              </Text>
-            </View>
-            <Text
-              accessibilityRole="heading"
-              aria-level="3"
-            >
-              GCHQ gives girls free cyber-classes to tackle gender gap
-            </Text>
-            <ArticleFlags
-              flags={
-                Array [
-                  "UPDATED",
-                ]
-              }
-            />
-            <Text>
-              <Text>
-                
-                GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-              </Text>
-              <Text>
-                 
-                The intelligence
-                ...
-              </Text>
-            </Text>
-          </View>
-        </View>
-      </Link>
-    </View>
-  </View>
+  </Link>
 </View>
 `;
 
