@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { sections } from "@times-components/storybook";
-import { Article, AuthorProfile, Section, Topic } from "./src/pages";
+import Section from "./src/section";
+import { Article, AuthorProfile, Topic } from "./src/pages";
 
 export default {
   children: [
@@ -32,9 +33,9 @@ export default {
           "Edition id",
           "2b6e462c-225f-11e9-b782-40e94f317da5"
         );
-        const section = sections[select("Section", sections, "News")];
+        const sectionTitle = sections[select("Section", sections, "News")];
 
-        return <Section editionId={editionId} section={section} />;
+        return <Section editionId={editionId} sectionTitle={sectionTitle} />;
       },
       name: "Section",
       type: "story"

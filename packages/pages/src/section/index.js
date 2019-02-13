@@ -6,28 +6,41 @@ import Section from "./section";
 import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};
-const SectionPage = ({ editionId, section }) => {
+const SectionPage = ({ editionId, section, sectionTitle }) => {
   const SectionPageView = withNativeProvider(
-    <EditionProvider debounceTimeMs={0} id={editionId}>
-      {({ edition, error, isLoading }) => {
-        if (isLoading) {
-          return <ActivityIndicator size="large" />;
-        }
-        if (error) {
-          return <Text>{error}</Text>;
-        }
-        return edition.sections
-          .filter(({ title }) => title === section)
-          .map(({ slices }) => <Section onPress={onPress} slices={slices} />);
-      }}
-    </EditionProvider>
+    section ? (
+      <Section onPress={onPress} section={JSON.parse(section)} />
+    ) : (
+      <EditionProvider debounceTimeMs={0} id={editionId}>
+        {({ edition, error, isLoading }) => {
+          if (isLoading) {
+            return <ActivityIndicator size="large" />;
+          }
+          if (error) {
+            return <Text>{error}</Text>;
+          }
+          return edition.sections
+            .filter(({ title }) => title === sectionTitle)
+            .map(sectionData => (
+              <Section onPress={onPress} section={sectionData} />
+            ));
+        }}
+      </EditionProvider>
+    )
   );
   return <SectionPageView />;
 };
 
 SectionPage.propTypes = {
-  editionId: PropTypes.string.isRequired,
-  section: PropTypes.string.isRequired
+  editionId: PropTypes.string,
+  section: PropTypes.shape({}),
+  sectionTitle: PropTypes.string
+};
+
+SectionPage.defaultProps = {
+  editionId: null,
+  section: null,
+  sectionTitle: null
 };
 
 export default SectionPage;
