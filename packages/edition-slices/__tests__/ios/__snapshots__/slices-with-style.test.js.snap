@@ -2598,8 +2598,8 @@ exports[`10. leaders 1`] = `
   <View
     style={
       Object {
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
-        "borderColor": "#dcdcdc",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -2652,8 +2652,8 @@ exports[`10. leaders 1`] = `
   <View
     style={
       Object {
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
-        "borderColor": "#dcdcdc",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }

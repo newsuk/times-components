@@ -11,7 +11,7 @@ const renderHeader = () => (
       resizeMode="contain"
       // eslint-disable-next-line global-require
       source={require("../../../assets/leaders-masthead.png")}
-      style={styles.imageStyle}
+      style={styles.mastheadStyle}
     />
     <View style={styles.leadTextContainer}>
       <Text style={[styles.leadText, styles.text]}> Leading Articles </Text>

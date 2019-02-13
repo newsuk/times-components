@@ -1,9 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
+import { ItemRowSeparator } from "../shared";
 import propTypes from "./proptypes";
-
-const keySeperator = () => <View style={styles.keySeperator} />;
 
 const Leaders = ({
   renderLeader1,
@@ -14,9 +13,9 @@ const Leaders = ({
   <View style={styles.container}>
     {renderHead()}
     {renderLeader1()}
-    {keySeperator()}
+    <ItemRowSeparator />
     {renderLeader2()}
-    {keySeperator()}
+    <ItemRowSeparator />
     {renderLeader3()}
   </View>
 );

@@ -20,11 +20,8 @@ exports[`1. three child element 1`] = `
   <div
     style={
       Object {
-        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomWidth": "1px",
-        "borderLeftColor": "rgba(220,220,220,1.00)",
-        "borderRightColor": "rgba(220,220,220,1.00)",
-        "borderTopColor": "rgba(220,220,220,1.00)",
         "marginLeft": "10px",
         "marginRight": "10px",
       }
@@ -36,11 +33,8 @@ exports[`1. three child element 1`] = `
   <div
     style={
       Object {
-        "borderBottomColor": "rgba(220,220,220,1.00)",
+        "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomWidth": "1px",
-        "borderLeftColor": "rgba(220,220,220,1.00)",
-        "borderRightColor": "rgba(220,220,220,1.00)",
-        "borderTopColor": "rgba(220,220,220,1.00)",
         "marginLeft": "10px",
         "marginRight": "10px",
       }

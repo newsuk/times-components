@@ -3007,11 +3007,8 @@ exports[`10. leaders 1`] = `
 }
 
 .IS8 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -3033,11 +3030,8 @@ exports[`10. leaders 1`] = `
 }
 
 .IS12 {
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
-  border-top-color: rgba(220,220,220,1.00);
-  border-right-color: rgba(220,220,220,1.00);
-  border-bottom-color: rgba(220,220,220,1.00);
-  border-left-color: rgba(220,220,220,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
