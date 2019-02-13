@@ -73,6 +73,7 @@ exports[`full article with style 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -327,6 +328,7 @@ exports[`full article with style in the culture magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -581,6 +583,7 @@ exports[`full article with style in the style magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -835,6 +838,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -1094,6 +1098,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -1393,6 +1398,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={
@@ -1692,6 +1698,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
         }
       >
         <ModalImage />
+        <CenteredCaption />
       </View>
       <View
         style={

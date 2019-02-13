@@ -51,6 +51,9 @@ class ArticlePage extends Component {
                 {...getLeadAsset(article)}
                 getImageCrop={getStandardTemplateCrop}
                 onVideoPress={onVideoPress}
+                renderCaption={({ caption }) =>
+                  isTablet && <Caption {...caption} />
+                }
                 renderModalCaption={({ caption }) => <Caption {...caption} />}
                 style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
                 width={parentProps.width}
