@@ -6,7 +6,7 @@ const styles = {
     paddingTop: spacing(4)
   },
   leadText: {
-    color: colours.functional.leadersHeadline,
+    color: colours.section.comment,
     fontFamily: fonts.bodyRegular,
     fontSize: 16,
     lineHeight: 15

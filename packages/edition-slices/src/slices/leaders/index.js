@@ -1,14 +1,23 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import { Leaders } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
 import { TileM } from "../../tiles";
 import styles from "./styles";
 import MastHead from "./masthead";
 
+const renderHead = () => (
+  <View>
+    <MastHead />
+    <View style={styles.leadTextContainer}>
+      <Text style={[styles.leadText, styles.text]}> Leading Articles </Text>
+    </View>
+  </View>
+);
+
 const LeadersSlice = ({ leader1, leader2, leader3, onPress }) => (
   <View style={styles.container}>
-    <MastHead />
+    {renderHead()}
     <Leaders
       renderLeader1={() => <TileM onPress={onPress} tile={leader1} />}
       renderLeader2={() => <TileM onPress={onPress} tile={leader2} />}

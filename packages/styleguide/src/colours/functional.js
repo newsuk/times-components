@@ -11,7 +11,6 @@ const functionalColours = {
   bullet: "#103546",
   contrast: "#FFFFFF",
   keyline: "#DBDBDB",
-  leadersHeadline: "#850029",
   overlayGradientEnd: "rgba(0, 0, 0, 0)",
   overlayGradientStart: "rgba(1, 1, 1, 0.9)",
   primary: "#333333",
