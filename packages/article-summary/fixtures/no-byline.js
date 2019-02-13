@@ -10,6 +10,9 @@ export default ({
   headline = defaultHeadline,
   paragraph = defaultParagraph
 } = {}) => ({
+  bylineProps: {
+    ast: []
+  },
   content: () => (
     <ArticleSummaryContent
       ast={[

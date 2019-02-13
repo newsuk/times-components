@@ -606,3 +606,5 @@ exports[`13. article summary component with a strapline 1`] = `
   </Text>
 </View>
 `;
+
+exports[`14. article summary content component without an ast to render null 1`] = `null`;

@@ -1,7 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import ArticleSummary, { renderAst } from "../src/article-summary";
+import ArticleSummary, {
+  renderAst,
+  ArticleSummaryContent
+} from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 import withSummaryLinksFixture from "../fixtures/with-summary-links";
 import opinionBylineFixture from "../fixtures/opinion-byline";
@@ -230,6 +233,16 @@ export default () => {
               strapline
             })}
           />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary content component without an AST to render null",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent ast={[]} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
