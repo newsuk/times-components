@@ -1141,64 +1141,66 @@ exports[`10. leaders 1`] = `
       </div>
     </div>
   </div>
-  <Link>
-    <div>
+  <div>
+    <Link>
       <div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
       </div>
-    </div>
-  </Link>
-  <div />
-  <Link>
-    <div>
+    </Link>
+    <div />
+    <Link>
       <div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
       </div>
-    </div>
-  </Link>
-  <div />
-  <Link>
-    <div>
+    </Link>
+    <div />
+    <Link>
       <div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
       </div>
-    </div>
-  </Link>
+    </Link>
+  </div>
 </div>
 `;

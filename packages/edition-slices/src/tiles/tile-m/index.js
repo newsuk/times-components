@@ -15,9 +15,9 @@ const TileM = ({ onPress, tile }) => {
     <TileLink onPress={onPress} tile={tileWithoutLabelAndFlags}>
       <View style={styles.container}>
         <TileSummary
-          headlineStyle={styles.headlineStyle}
+          headlineStyle={styles.headline}
           strapline={strapline}
-          straplineStyle={styles.straplineStyle}
+          straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}
         />
       </View>

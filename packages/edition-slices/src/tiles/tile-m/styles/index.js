@@ -5,7 +5,7 @@ const styles = {
     paddingBottom: spacing(2),
     paddingHorizontal: spacing(8)
   },
-  headlineStyle: {
+  headline: {
     fontFamily: fonts.headline,
     fontSize: 22,
     lineHeight: 22,
@@ -13,7 +13,7 @@ const styles = {
     marginTop: spacing(4),
     textAlign: "center"
   },
-  straplineStyle: {
+  strapline: {
     fontFamily: fonts.bodyRegular,
     fontSize: 14,
     lineHeight: 20,

@@ -7,13 +7,9 @@ exports[`1. three child element 1`] = `
       "paddingBottom": "5px",
       "paddingLeft": "40px",
       "paddingRight": "40px",
-      "paddingTop": "20px",
     }
   }
 >
-  <div>
-    leader-4
-  </div>
   <div>
     leader-1
   </div>

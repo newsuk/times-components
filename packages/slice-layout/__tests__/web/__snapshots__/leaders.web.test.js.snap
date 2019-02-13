@@ -3,9 +3,6 @@
 exports[`1. three child element 1`] = `
 <div>
   <div>
-    leader-4
-  </div>
-  <div>
     leader-1
   </div>
   <div />

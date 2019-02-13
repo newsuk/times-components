@@ -1,6 +1,10 @@
 import { colours, fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
+  container: {
+    paddingHorizontal: spacing(8),
+    paddingTop: spacing(4)
+  },
   leadText: {
     color: colours.functional.leadersHeadline,
     fontFamily: fonts.bodyRegular,

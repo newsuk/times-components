@@ -171,7 +171,7 @@ export default {
         );
       },
       name:
-        "TileM (No image, 22pt headline, no teaser, comment article, center align)",
+        "Tile M (No image, 22pt headline, no teaser, comment article, center align)",
       type: "story"
     }
   ],

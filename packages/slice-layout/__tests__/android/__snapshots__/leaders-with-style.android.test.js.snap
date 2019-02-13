@@ -6,13 +6,9 @@ exports[`1. three child element 1`] = `
     Object {
       "paddingBottom": 5,
       "paddingHorizontal": 40,
-      "paddingTop": 20,
     }
   }
 >
-  <Text>
-    leader-4
-  </Text>
   <Text>
     leader-1
   </Text>

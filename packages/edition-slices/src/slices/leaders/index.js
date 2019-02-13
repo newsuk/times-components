@@ -20,12 +20,14 @@ const renderHeader = () => (
 );
 
 const LeadersSlice = ({ leader1, leader2, leader3, onPress }) => (
-  <Leaders
-    renderHead={renderHeader}
-    renderLeader1={() => <TileM onPress={onPress} tile={leader1} />}
-    renderLeader2={() => <TileM onPress={onPress} tile={leader2} />}
-    renderLeader3={() => <TileM onPress={onPress} tile={leader3} />}
-  />
+  <View style={styles.container}>
+    {renderHeader()}
+    <Leaders
+      renderLeader1={() => <TileM onPress={onPress} tile={leader1} />}
+      renderLeader2={() => <TileM onPress={onPress} tile={leader2} />}
+      renderLeader3={() => <TileM onPress={onPress} tile={leader3} />}
+    />
+  </View>
 );
 
 LeadersSlice.propTypes = {

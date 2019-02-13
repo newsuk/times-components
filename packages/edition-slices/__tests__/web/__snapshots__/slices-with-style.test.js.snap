@@ -3056,12 +3056,17 @@ exports[`10. leaders 1`] = `
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 5px;
+}
+
+.IS17 {
+  padding-right: 40px;
+  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
 
 <div
-  className="IS16 S1"
+  className="IS17 S1"
 >
   <div
     className="S1"
@@ -3088,86 +3093,90 @@ exports[`10. leaders 1`] = `
       </div>
     </div>
   </div>
-  <Link>
-    <div
-      className="IS7 S1"
-    >
-      <div
-        className="S1"
-      >
-        <h3
-          aria-level="3"
-          className="IS5 S3"
-          role="heading"
-        >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          className="IS6 S4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
-      </div>
-    </div>
-  </Link>
   <div
-    className="IS8 S1"
-  />
-  <Link>
-    <div
-      className="IS11 S1"
-    >
+    className="IS16 S1"
+  >
+    <Link>
       <div
-        className="S1"
+        className="IS7 S1"
       >
-        <h3
-          aria-level="3"
-          className="IS9 S3"
-          role="heading"
+        <div
+          className="S1"
         >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          className="IS10 S4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
+          <h3
+            aria-level="3"
+            className="IS5 S3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            className="IS6 S4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
       </div>
-    </div>
-  </Link>
-  <div
-    className="IS12 S1"
-  />
-  <Link>
+    </Link>
     <div
-      className="IS15 S1"
-    >
+      className="IS8 S1"
+    />
+    <Link>
       <div
-        className="S1"
+        className="IS11 S1"
       >
-        <h3
-          aria-level="3"
-          className="IS13 S3"
-          role="heading"
+        <div
+          className="S1"
         >
-          Driving Off
-        </h3>
-        <h4
-          aria-level="4"
-          className="IS14 S4"
-          role="heading"
-        >
-          Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-        </h4>
-        <ArticleFlags />
+          <h3
+            aria-level="3"
+            className="IS9 S3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            className="IS10 S4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
       </div>
-    </div>
-  </Link>
+    </Link>
+    <div
+      className="IS12 S1"
+    />
+    <Link>
+      <div
+        className="IS15 S1"
+      >
+        <div
+          className="S1"
+        >
+          <h3
+            aria-level="3"
+            className="IS13 S3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            className="IS14 S4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
+      </div>
+    </Link>
+  </div>
 </div>
 `;

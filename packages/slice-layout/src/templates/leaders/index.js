@@ -4,14 +4,8 @@ import styles from "./styles";
 import { ItemRowSeparator } from "../shared";
 import propTypes from "./proptypes";
 
-const Leaders = ({
-  renderLeader1,
-  renderLeader2,
-  renderLeader3,
-  renderHead
-}) => (
+const Leaders = ({ renderLeader1, renderLeader2, renderLeader3 }) => (
   <View style={styles.container}>
-    {renderHead()}
     {renderLeader1()}
     <ItemRowSeparator />
     {renderLeader2()}
