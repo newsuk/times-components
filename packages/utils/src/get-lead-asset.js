@@ -11,6 +11,7 @@ export default function getLeadAsset({ leadAsset }) {
   if (!leadAsset) return defaultAsset;
 
   /* eslint no-underscore-dangle: ["error", { "allow": ["__typename"] }] */
+
   const isVideo = leadAsset.__typename === "Video";
   const displayImage = isVideo
     ? getStandardTemplateCrop(leadAsset.posterImage)

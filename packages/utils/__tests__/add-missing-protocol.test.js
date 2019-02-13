@@ -12,4 +12,8 @@ describe("addMissingProtocol should", () => {
       "http://thetimes.co.uk"
     );
   });
+
+  it("return null of no uri is provided", () => {
+    expect(addMissingProtocol()).toEqual(null);
+  });
 });

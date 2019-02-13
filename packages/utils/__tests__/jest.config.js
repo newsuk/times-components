@@ -1,5 +1,3 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = jestConfigurator(null, __dirname, {
-  coverageIgnoreGlobs: ["index.js"]
-});
+module.exports = jestConfigurator(null, __dirname);

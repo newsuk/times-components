@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AspectRatioContainer should provide an appropriate container with childen based on a given aspect ratio 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": "56.25%",
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <Text>
+      Here are some children
+    </Text>
+  </View>
+</View>
+`;
