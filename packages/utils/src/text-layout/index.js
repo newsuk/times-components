@@ -27,7 +27,6 @@ export const measureText = texts => {
                 value: text.props.children,
                 width: e.nativeEvent.layout.width
               };
-              console.log("OnLayout:", e.nativeEvent);
               resolve(result);
             },
             style: {
