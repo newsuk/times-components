@@ -16,7 +16,8 @@ import {
   TileG,
   TileI,
   TileJ,
-  TileL
+  TileL,
+  TileM
 } from "./src/tiles";
 
 const preventDefaultedAction = decorateAction =>
@@ -157,6 +158,20 @@ export default {
         );
       },
       name: "Tile L - No image, 22pt headline, no teaser",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockLeadOneFullWidthSlice();
+        return (
+          <TileM
+            onPress={preventDefaultedAction(decorateAction)("onPress")}
+            tile={slice.lead}
+          />
+        );
+      },
+      name:
+        "Tile M - No image, 22pt headline, no teaser, comment article, center align",
       type: "story"
     }
   ],

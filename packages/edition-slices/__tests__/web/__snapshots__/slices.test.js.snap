@@ -1123,3 +1123,80 @@ exports[`9. list two and six no pic 1`] = `
   </div>
 </div>
 `;
+
+exports[`10. leaders 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.74}
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div>
+      <div>
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div>
+    <Link>
+      <div>
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
+      </div>
+    </Link>
+    <div />
+    <Link>
+      <div>
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
+      </div>
+    </Link>
+    <div />
+    <Link>
+      <div>
+        <div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            Driving Off
+          </h3>
+          <h4
+            aria-level="4"
+            role="heading"
+          >
+            Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+          </h4>
+          <ArticleFlags />
+        </div>
+      </div>
+    </Link>
+  </div>
+</div>
+`;

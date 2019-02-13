@@ -11,6 +11,7 @@ import {
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
+  Leaders,
   ListTwoAndSixNoPic
 } from "./src/slice-layout";
 
@@ -290,6 +291,19 @@ export default {
         </ScrollView>
       ),
       name: "ListTwoAndSixNoPic",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <Leaders
+            renderLeader1={() => <Support1 id="support1" />}
+            renderLeader2={() => <Support2 id="support2" />}
+            renderLeader3={() => <Support3 id="support3" />}
+          />
+        </ScrollView>
+      ),
+      name: "Leaders",
       type: "story"
     },
     {

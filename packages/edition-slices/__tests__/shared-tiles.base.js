@@ -17,7 +17,8 @@ import {
   TileG,
   TileI,
   TileJ,
-  TileL
+  TileL,
+  TileM
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -130,6 +131,16 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <TileL onPress={() => {}} tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile m",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileM onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
