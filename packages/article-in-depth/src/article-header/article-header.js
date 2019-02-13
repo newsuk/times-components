@@ -36,7 +36,9 @@ const ArticleHeader = ({
             isTablet && styles.containerTablet
           ]}
         >
-          <View style={[styles.headerText, isTablet && styles.headerTextTablet]}>
+          <View
+            style={[styles.headerText, isTablet && styles.headerTextTablet]}
+          >
             <Label color={textColour} isVideo={hasVideo} label={label} />
             <Text
               style={[

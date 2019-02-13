@@ -40,7 +40,7 @@ const sharedStyles = {
     marginTop: spacing(1)
   },
   headerText: {
-    alignItems: "center",
+    alignItems: "center"
   },
   headerTextTablet: {
     width: tabletWidth
