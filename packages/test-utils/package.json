@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "2.1.15",
+  "version": "2.1.16",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -20,7 +20,9 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "coveragePathIgnorePatterns": ["src/mock-native-modules.js"]
+    "coveragePathIgnorePatterns": [
+      "src/mock-native-modules.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -37,7 +39,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.20.1"
+    "@times-components/styleguide": "3.20.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

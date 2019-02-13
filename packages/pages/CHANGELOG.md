@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.11.4...@times-components/pages@1.12.0) (2019-02-13)
+
+
+### Features
+
+* Add section page entry point for apps ([#1688](https://github.com/newsuk/times-components/issues/1688)) ([f9463ba](https://github.com/newsuk/times-components/commit/f9463ba))
+
+
+
+
+
 ## [1.11.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.11.3...@times-components/pages@1.11.4) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/pages

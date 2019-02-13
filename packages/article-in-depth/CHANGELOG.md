@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.11.24...@times-components/article-in-depth@0.12.0) (2019-02-13)
+
+
+### Features
+
+* Updating keyline width for tablet articles ([#1689](https://github.com/newsuk/times-components/issues/1689)) ([32fa24a](https://github.com/newsuk/times-components/commit/32fa24a))
+
+
+
+
+
 ## [0.11.24](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.11.23...@times-components/article-in-depth@0.11.24) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/article-in-depth

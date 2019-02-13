@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.12.4...@times-components/android-app@0.13.0) (2019-02-13)
+
+
+### Features
+
+* Add section page entry point for apps ([#1688](https://github.com/newsuk/times-components/issues/1688)) ([f9463ba](https://github.com/newsuk/times-components/commit/f9463ba))
+
+
+
+
+
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.12.3...@times-components/android-app@0.12.4) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/android-app
