@@ -171,6 +171,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
@@ -186,6 +187,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
@@ -241,6 +243,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
@@ -256,6 +259,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
