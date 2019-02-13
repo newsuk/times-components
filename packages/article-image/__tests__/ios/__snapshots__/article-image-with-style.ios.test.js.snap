@@ -132,7 +132,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "maxWidth": 1180,
     }
   }
@@ -205,7 +205,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "maxWidth": 1180,
     }
   }
