@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 export default gql`
-  fragment article on Article {
+  fragment articlePageProps on Article {
     bylines {
       ... on Byline {
         byline

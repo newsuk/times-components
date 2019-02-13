@@ -597,35 +597,44 @@ export default gql`
     leadAsset {
       ... on Video {
         posterImage {
-          ...imageProps
+          ...sectionImageProps
         }
       }
       ... on Image {
-        ...imageProps
+        ...sectionImageProps
       }
     }
     strapline
     article {
-      ...article
+      ...sectionArticle
     }
   }
 
-  fragment article on Article {
+  fragment sectionArticle on Article {
+    byline
     flags
+    hasVideo
+    headline
+    id
+    label
     leadAsset {
       ... on Video {
         posterImage {
-          ...imageProps
+          ...sectionImageProps
         }
       }
       ... on Image {
-        ...imageProps
+        ...sectionImageProps
       }
     }
-    ...articleProps
+    publicationName
+    section
+    shortHeadline
+    summary125: summary(maxCharCount: 125)
+    url
   }
 
-  fragment imageProps on Image {
+  fragment sectionImageProps on Image {
     crop169: crop(ratio: "16:9") {
       ratio
       url
@@ -642,23 +651,6 @@ export default gql`
       ratio
       url
     }
-  }
-
-  fragment articleProps on Article {
-    ...summaries
-    byline
-    hasVideo
-    headline
-    id
-    label
-    publicationName
-    section
-    shortHeadline
-    url
-  }
-
-  fragment summaries on Article {
-    summary125: summary(maxCharCount: 125)
   }
 
   fragment teasers on Tile {
