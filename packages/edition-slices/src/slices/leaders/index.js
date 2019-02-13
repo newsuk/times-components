@@ -7,7 +7,7 @@ import styles from "./styles";
 import MastHead from "./masthead";
 
 const renderHead = () => (
-  <View>
+  <View style={styles.mastheadContainer}>
     <MastHead />
     <View style={styles.headingContainer}>
       <Text style={[styles.heading, styles.text]}> Leading Articles </Text>

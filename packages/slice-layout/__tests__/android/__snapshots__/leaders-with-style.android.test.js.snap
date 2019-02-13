@@ -5,7 +5,6 @@ exports[`1. three child element 1`] = `
   style={
     Object {
       "paddingBottom": 5,
-      "paddingHorizontal": 40,
     }
   }
 >

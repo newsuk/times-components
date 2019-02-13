@@ -5,19 +5,21 @@ const styles = {
     paddingHorizontal: spacing(8),
     paddingTop: spacing(4)
   },
-  leadText: {
+  heading: {
     color: colours.section.comment,
     fontFamily: fonts.bodyRegular,
     fontSize: 16,
     lineHeight: 15
   },
-  leadTextContainer: {
+  headingContainer: {
     paddingBottom: spacing(1),
     paddingTop: spacing(2)
   },
+  mastheadContainer: {
+    alignItems: "center"
+  },
   mastheadStyle: {
     height: 51,
-    margin: "auto",
     width: 283
   },
   text: {

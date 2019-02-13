@@ -2517,20 +2517,36 @@ exports[`10. leaders 1`] = `
     }
   }
 >
-  <View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
     <Image
       style={
         Object {
           "height": 51,
-          "margin": "auto",
           "width": 283,
         }
       }
     />
-    <View>
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingTop": 10,
+        }
+      }
+    >
       <Text
         style={
           Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 16,
+            "lineHeight": 15,
             "textAlign": "center",
           }
         }
@@ -2543,7 +2559,6 @@ exports[`10. leaders 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingHorizontal": 40,
       }
     }
   >
