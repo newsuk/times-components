@@ -1,14 +1,14 @@
 # Edition Checker
 
-A tool that allows you to crawl a specific edition or the past six days for issues in loading articles when using react. 
+A tool that allows you to crawl a specific edition or the past six days for issues in loading articles when using react.
 
 This requires being logged in to work, so you must set a `ACS_COOKIE` and `SACS_COOKIE` environment variable. We should probably set up credentials specifically for this tool in the long run.
 
 This also requires the use of an internal Times API, and you must set the path to this with the `TIMES_API_ROOT` environment variable.
 
-You can also configure the tool to post to Slack using a Slack incoming webhook with the `TIMES_SLACK_HOOK` and `TIMES_SLACK_USERNAME` environment variables. 
+You can also configure the tool to post to Slack using a Slack incoming webhook with the `TIMES_SLACK_HOOK` and `TIMES_SLACK_USERNAME` environment variables.
 
-In the long term, it might be useful to consider adding other kinds of checks to the crawler. Currently, the only checks it employs are checking that the status code is 200.  
+In the long term, it might be useful to consider adding other kinds of checks to the crawler. Currently, the only checks it employs are checking that the status code is 200.
 
 ```bash
 $ ./times-components check edition # check todays edition
