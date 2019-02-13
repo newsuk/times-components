@@ -7,7 +7,7 @@ const fontSize = (font, scale) => {
     },
     dropCap: {
       large: 115,
-      medium: 105,
+      medium: 100,
       xlarge: 124
     },
     stMagazine: {
@@ -33,9 +33,9 @@ const margins = (font, scale) => {
       xlarge: { bottom: -22, top: 0 }
     },
     dropCap: {
-      large: { bottom: -32, top: 4 },
-      medium: { bottom: -30, top: 0 },
-      xlarge: { bottom: -34, top: 4 }
+      large: { bottom: -33, top: -14 },
+      medium: { bottom: -22, top: -12 },
+      xlarge: { bottom: -34, top: -16 }
     },
     stMagazine: {
       large: { bottom: -26, top: 0 },

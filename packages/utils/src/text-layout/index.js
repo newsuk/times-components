@@ -8,11 +8,7 @@ import styles from "./styles";
 export { default as InlineElement } from "./inlineElement";
 
 export const measureContainer = children => (
-  <View
-    style={styles.container}
-  >
-    {children}
-  </View>
+  <View style={styles.container}>{children}</View>
 );
 
 export const measureText = texts => {
@@ -31,7 +27,6 @@ export const measureText = texts => {
                 value: text.props.children,
                 width: e.nativeEvent.layout.width
               };
-              console.log("OnLayout:", e.nativeEvent);
               resolve(result);
             }
           })

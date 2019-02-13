@@ -62,7 +62,7 @@ exports[`1. paragraph with a drop cap 1`] = `
           "marginBottom": 20,
           "position": "absolute",
           "top": 0,
-          "width": 400,
+          "width": 380,
         }
       }
     >
