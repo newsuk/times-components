@@ -277,11 +277,13 @@ exports[`tablet full article with style 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
             "marginBottom": 20,
             "paddingBottom": 25,
             "paddingTop": 35,
+            "width": 660,
           }
         }
       >
@@ -526,10 +528,12 @@ exports[`tablet full article with style 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
             "marginLeft": 10,
             "marginRight": 10,
+            "width": 660,
           }
         }
       >

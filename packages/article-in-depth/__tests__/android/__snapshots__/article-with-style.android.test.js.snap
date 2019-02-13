@@ -1291,10 +1291,12 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
             "marginLeft": 10,
             "marginRight": 10,
+            "width": 660,
           }
         }
       >
@@ -1592,10 +1594,12 @@ exports[`tablet full article with style in the style magazine 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
             "marginLeft": 10,
             "marginRight": 10,
+            "width": 660,
           }
         }
       >
@@ -1893,10 +1897,12 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       <View
         style={
           Object {
+            "alignSelf": "center",
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
             "marginLeft": 10,
             "marginRight": 10,
+            "width": 660,
           }
         }
       >

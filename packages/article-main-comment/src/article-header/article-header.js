@@ -27,7 +27,7 @@ const ArticleHeader = ({
 }) => (
   <ResponsiveContext.Consumer>
     {({ isTablet }) => (
-      <View style={styles.header}>
+      <View style={[styles.header, isTablet && styles.headerTablet]}>
         <View style={[styles.container, isTablet && styles.containerTablet]}>
           <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
           <Label isVideo={hasVideo} label={label} />
