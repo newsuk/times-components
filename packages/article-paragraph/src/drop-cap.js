@@ -110,7 +110,7 @@ class DropCapParagraph extends Component {
     const { font, scale, text, dropCap, isTablet } = this.props;
     const { height, needsLayout, content } = this.state;
     const stylesThemedAndScaled = styleFactory(font, scale);
-    
+
     return (
       <View
         style={[
