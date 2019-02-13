@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     maxWidth: tabletWidth - tabletRowPadding
   },
   fullwidthContainer: {
+    marginBottom: spacing(6),
     maxWidth: tabletWidthMax
   },
   inlineCaption: {
