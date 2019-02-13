@@ -74,7 +74,7 @@ const renderSlice = (slice, onPress) => {
       return null;
   }
 };
-const Section = ({ onPress, slices }) => (
+const Section = ({ onPress, section: { slices } }) => (
   <FlatList
     data={slices}
     ItemSeparatorComponent={() => (
@@ -87,7 +87,11 @@ const Section = ({ onPress, slices }) => (
 );
 
 Section.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  slices: PropTypes.arrayOf(PropTypes.shape({})).isRequired
+  onPress: PropTypes.func,
+  section: PropTypes.shape({}).isRequired
+};
+
+Section.defaultProps = {
+  onPress: () => {}
 };
 export default Section;

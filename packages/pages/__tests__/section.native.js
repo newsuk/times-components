@@ -38,7 +38,7 @@ export default () => {
 
     expect(
       TestRenderer.create(
-        <Section onPress={() => {}} slices={edition.sections[0].slices} />
+        <Section onPress={() => {}} section={edition.sections[0]} />
       ).toJSON()
     ).toMatchSnapshot();
   });
