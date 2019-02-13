@@ -10,7 +10,6 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <Leaders
-            renderHead={() => createItem("leader-4")}
             renderLeader1={() => createItem("leader-1")}
             renderLeader2={() => createItem("leader-2")}
             renderLeader3={() => createItem("leader-3")}
