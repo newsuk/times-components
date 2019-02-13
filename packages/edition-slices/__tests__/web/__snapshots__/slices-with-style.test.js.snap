@@ -2940,11 +2940,11 @@ exports[`9. list two and six no pic 1`] = `
 exports[`10. leaders 1`] = `
 <style>
 .S1 {
+  font-weight: inherit;
   margin-bottom: 0px;
 }
 
 .S2 {
-  font-weight: inherit;
   margin-bottom: 0px;
 }
 
@@ -2965,19 +2965,12 @@ exports[`10. leaders 1`] = `
 }
 
 .IS1 {
-  background-image: url("uri");
+  height: 51;
+  margin: auto;
+  width: 283;
 }
 
 .IS2 {
-  height: 51px;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  width: 283px;
-}
-
-.IS3 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
   font-size: 16px;
@@ -2985,80 +2978,80 @@ exports[`10. leaders 1`] = `
   text-align: center;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 5px;
   padding-top: 10px;
 }
 
-.IS5 {
+.IS4 {
   line-height: 22px;
   margin-top: 20px;
+  text-align: center;
+}
+
+.IS5 {
+  font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
 
 .IS6 {
-  font-family: TimesDigitalW04-Regular;
-  text-align: center;
-}
-
-.IS7 {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.IS8 {
+.IS7 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS9 {
+.IS8 {
   line-height: 22px;
   margin-top: 20px;
+  text-align: center;
+}
+
+.IS9 {
+  font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
 
 .IS10 {
-  font-family: TimesDigitalW04-Regular;
-  text-align: center;
-}
-
-.IS11 {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.IS12 {
+.IS11 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS13 {
+.IS12 {
   line-height: 22px;
   margin-top: 20px;
   text-align: center;
 }
 
-.IS14 {
+.IS13 {
   font-family: TimesDigitalW04-Regular;
   text-align: center;
+}
+
+.IS14 {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .IS15 {
   padding-right: 40px;
   padding-left: 40px;
-}
-
-.IS16 {
-  padding-right: 40px;
-  padding-left: 40px;
   padding-bottom: 5px;
 }
 
-.IS17 {
+.IS16 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -3066,53 +3059,46 @@ exports[`10. leaders 1`] = `
 </style>
 
 <div
-  className="IS17 S1"
+  className="IS16 S2"
 >
   <div
-    className="S1"
+    className="S2"
   >
+    <Image
+      aspectRatio={5.74}
+      className="IS1"
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
     <div
-      className="IS2"
+      className="IS3 S2"
     >
       <div
-        className="IS1 S1"
-      />
-      <img
-        alt=""
-        draggable={false}
-        src="uri"
-      />
-    </div>
-    <div
-      className="IS4 S1"
-    >
-      <div
-        className="IS3 S2"
+        className="IS2 S1"
       >
          Leading Articles 
       </div>
     </div>
   </div>
   <div
-    className="IS16 S1"
+    className="IS15 S2"
   >
     <Link>
       <div
-        className="IS7 S1"
+        className="IS6 S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
           <h3
             aria-level="3"
-            className="IS5 S3"
+            className="IS4 S3"
             role="heading"
           >
             Driving Off
           </h3>
           <h4
             aria-level="4"
-            className="IS6 S4"
+            className="IS5 S4"
             role="heading"
           >
             Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
@@ -3122,25 +3108,25 @@ exports[`10. leaders 1`] = `
       </div>
     </Link>
     <div
-      className="IS8 S1"
+      className="IS7 S2"
     />
     <Link>
       <div
-        className="IS11 S1"
+        className="IS10 S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
           <h3
             aria-level="3"
-            className="IS9 S3"
+            className="IS8 S3"
             role="heading"
           >
             Driving Off
           </h3>
           <h4
             aria-level="4"
-            className="IS10 S4"
+            className="IS9 S4"
             role="heading"
           >
             Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
@@ -3150,25 +3136,25 @@ exports[`10. leaders 1`] = `
       </div>
     </Link>
     <div
-      className="IS12 S1"
+      className="IS11 S2"
     />
     <Link>
       <div
-        className="IS15 S1"
+        className="IS14 S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
           <h3
             aria-level="3"
-            className="IS13 S3"
+            className="IS12 S3"
             role="heading"
           >
             Driving Off
           </h3>
           <h4
             aria-level="4"
-            className="IS14 S4"
+            className="IS13 S4"
             role="heading"
           >
             Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
