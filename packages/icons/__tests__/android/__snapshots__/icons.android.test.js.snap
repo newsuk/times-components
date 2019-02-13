@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond renders 1`] = `
+exports[`1. iconbullet renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -12,10 +12,10 @@ exports[`1. icondiamond renders 1`] = `
   <ARTGroup
     transform={
       Array [
-        1,
+        0.2,
         0,
         0,
-        1,
+        0.2,
         0,
         0,
       ]
@@ -34,7 +34,7 @@ exports[`1. icondiamond renders 1`] = `
       }
     >
       <ARTShape
-        d="c3ca00c47bbe3e1a429d0716c0592877"
+        d="7dd021d65584d3a3c778f9377993246e"
         fill={
           Array [
             0,

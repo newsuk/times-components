@@ -5,14 +5,10 @@ const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide();
 
 export default StyleSheet.create({
   bullet: {
-    height: 8,
+    borderRadius: 2.5,
+    height: 5,
     top: 2,
-    transform: [
-      {
-        rotate: "45deg"
-      }
-    ],
-    width: 8
+    width: 5
   },
   bulletContainer: {
     flexDirection: "row",

@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond renders with different colours 1`] = `
-Array [
-  <title>
-    Diamond Icon
-  </title>,
-  <g
-    fill="#facade"
-    stroke="#c0ffee"
-  >
-    <path />
-  </g>,
-]
-`;
-
-exports[`2. icontwitter renders with different colours 1`] = `
+exports[`1. icontwitter renders with different colours 1`] = `
 Array [
   <title>
     Twitter Icon
@@ -26,7 +12,7 @@ Array [
 ]
 `;
 
-exports[`3. iconvideo renders with different colours 1`] = `
+exports[`2. iconvideo renders with different colours 1`] = `
 Array [
   <title>
     Video Icon
@@ -46,7 +32,7 @@ Array [
 ]
 `;
 
-exports[`4. iconemail renders with different colours 1`] = `
+exports[`3. iconemail renders with different colours 1`] = `
 Array [
   <title>
     Email Icon
@@ -60,7 +46,7 @@ Array [
 ]
 `;
 
-exports[`5. iconstar renders with different colours 1`] = `
+exports[`4. iconstar renders with different colours 1`] = `
 Array [
   <title>
     Star Icon
@@ -72,7 +58,7 @@ Array [
 ]
 `;
 
-exports[`6. iconfacebook renders with different colours 1`] = `
+exports[`5. iconfacebook renders with different colours 1`] = `
 Array [
   <title>
     Facebook Icon

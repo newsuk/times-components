@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond sets a width when height is set 1`] = `
+exports[`1. iconbullet sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {

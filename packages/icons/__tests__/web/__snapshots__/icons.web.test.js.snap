@@ -1,26 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond renders 1`] = `
-<svg
-  aria-label="[title]"
-  role="img"
-  viewBox="064d9dc888226a281482b4aa9646de05"
-  width={20}
->
-  <title>
-    IconDiamond
-  </title>
-  <g
-    fill="#1D1D1B"
-  >
-    <path
-      d="6d46867616424ca1e758db3aec64d542"
-    />
-  </g>
-</svg>
-`;
-
-exports[`2. icontwitter renders 1`] = `
+exports[`1. icontwitter renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -37,7 +17,7 @@ exports[`2. icontwitter renders 1`] = `
 </svg>
 `;
 
-exports[`3. iconvideo renders 1`] = `
+exports[`2. iconvideo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -65,7 +45,7 @@ exports[`3. iconvideo renders 1`] = `
 </svg>
 `;
 
-exports[`4. iconemail renders 1`] = `
+exports[`3. iconemail renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -86,7 +66,7 @@ exports[`4. iconemail renders 1`] = `
 </svg>
 `;
 
-exports[`5. iconstar renders 1`] = `
+exports[`4. iconstar renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -103,7 +83,7 @@ exports[`5. iconstar renders 1`] = `
 </svg>
 `;
 
-exports[`6. iconfacebook renders 1`] = `
+exports[`5. iconfacebook renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"

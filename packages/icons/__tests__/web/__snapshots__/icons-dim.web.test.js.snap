@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond sets a width when height is set 1`] = `
-<svg
-  aria-label="[title]"
-  height={50}
-  role="img"
-  width={50}
-/>
-`;
-
-exports[`2. icontwitter sets a width when height is set 1`] = `
+exports[`1. icontwitter sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -18,7 +9,7 @@ exports[`2. icontwitter sets a width when height is set 1`] = `
 />
 `;
 
-exports[`3. iconvideo sets a width when height is set 1`] = `
+exports[`2. iconvideo sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -27,7 +18,7 @@ exports[`3. iconvideo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`4. iconemail sets a width when height is set 1`] = `
+exports[`3. iconemail sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -36,7 +27,7 @@ exports[`4. iconemail sets a width when height is set 1`] = `
 />
 `;
 
-exports[`5. iconstar sets a width when height is set 1`] = `
+exports[`4. iconstar sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -45,7 +36,7 @@ exports[`5. iconstar sets a width when height is set 1`] = `
 />
 `;
 
-exports[`6. iconfacebook sets a width when height is set 1`] = `
+exports[`5. iconfacebook sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
