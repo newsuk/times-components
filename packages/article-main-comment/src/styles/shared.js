@@ -46,7 +46,7 @@ const sharedStyles = {
     borderBottomWidth: 1,
     marginBottom: spacing(4),
     paddingBottom: spacing(5),
-    paddingTop: spacing(7),
+    paddingTop: spacing(7)
   },
   headerTablet: {
     alignSelf: "center",
