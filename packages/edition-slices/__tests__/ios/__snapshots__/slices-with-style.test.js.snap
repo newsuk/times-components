@@ -2527,21 +2527,10 @@ exports[`10. leaders 1`] = `
         }
       }
     />
-    <View
-      style={
-        Object {
-          "paddingBottom": 5,
-          "paddingTop": 10,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           Object {
-            "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 16,
-            "lineHeight": 15,
             "textAlign": "center",
           }
         }
