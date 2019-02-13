@@ -36,7 +36,7 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007 --haul ./.storybook.native/webpack.haul.storybook.js --platform all",
     "preios": "yarn fetch-fonts && ./lib/fix-ios-storybook.sh",
     "ios": "react-native run-ios --no-packager",
-    "ios:logs" : "yarn ios && react-native log-ios",
+    "ios:logs": "yarn ios && react-native log-ios",
     "ios:build-lib": "lerna run --scope @times-components/ios-app build:all --stream",
     "ios:app": "cd ios-app && yarn start",
     "start-emulator": "./lib/start_android_emulator.sh",
@@ -63,6 +63,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "coveragePathIgnorePatterns": [
+      "lib/cli/edition-checker/src/main.js"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ],
@@ -123,6 +126,7 @@
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "dextrose": "4.0.7",
+    "es6-promise-pool": "^2.5.0",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "3.3.0",
@@ -137,6 +141,7 @@
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
     "mkdirp": "0.5.1",
+    "mockdate": "2.0.2",
     "node-fetch": "2.2.0",
     "prettier": "1.14.3",
     "prop-types": "15.6.2",
