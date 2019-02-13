@@ -9,8 +9,8 @@ import MastHead from "./masthead";
 const renderHead = () => (
   <View>
     <MastHead />
-    <View style={styles.leadTextContainer}>
-      <Text style={[styles.leadText, styles.text]}> Leading Articles </Text>
+    <View style={styles.headingContainer}>
+      <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
     </View>
   </View>
 );
