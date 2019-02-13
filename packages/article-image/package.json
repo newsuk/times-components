@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "4.6.9",
+  "version": "4.6.10",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -68,7 +68,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/caption": "2.3.14",
+    "@times-components/caption": "2.3.15",
     "@times-components/image": "4.7.2",
     "@times-components/responsive": "0.2.14",
     "@times-components/styleguide": "3.20.1",

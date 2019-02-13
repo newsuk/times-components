@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.6.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.6.9...@times-components/article-image@4.6.10) (2019-02-13)
+
+
+### Bug Fixes
+
+* add horizontal padding to the centred caption ([#1683](https://github.com/newsuk/times-components/issues/1683)) ([b1ea387](https://github.com/newsuk/times-components/commit/b1ea387))
+
+
+
+
+
 ## [4.6.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.6.8...@times-components/article-image@4.6.9) (2019-02-12)
 
 **Note:** Version bump only for package @times-components/article-image
