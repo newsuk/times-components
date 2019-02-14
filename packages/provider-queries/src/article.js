@@ -6,7 +6,7 @@ export default addTypenameToDocument(
   gql`
     query ArticleQuery($id: ID!) {
       article(id: $id) {
-        ...article
+        ...articlePageProps
       }
     }
 
