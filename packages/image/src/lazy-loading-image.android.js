@@ -3,8 +3,8 @@ import { Image } from "react-native";
 import appendToUrl from "./utils";
 
 class LazyLoadingImage extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       error: null
     };
