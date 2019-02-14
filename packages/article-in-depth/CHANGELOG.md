@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.12.1...@times-components/article-in-depth@0.13.0) (2019-02-14)
+
+
+### Features
+
+* Restricting the width of the header text for indepth tablet ([#1694](https://github.com/newsuk/times-components/issues/1694)) ([f274eaf](https://github.com/newsuk/times-components/commit/f274eaf))
+
+
+
+
+
 ## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.12.0...@times-components/article-in-depth@0.12.1) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/article-in-depth
