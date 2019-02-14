@@ -37,6 +37,9 @@ const sharedStyles = {
     color: colours.functional.secondary,
     marginTop: spacing(3)
   },
+  datePublicationTablet: {
+    marginTop: "auto"
+  },
   flags: {
     marginBottom: spacing(3),
     marginTop: spacing(1)
@@ -61,6 +64,16 @@ const sharedStyles = {
   },
   metaContainer: {
     alignItems: "center"
+  },
+  metaContainerTablet: {
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  seperator: {
+    borderRightColor: colours.functional.keyline,
+    borderRightWidth: 1,
+    height: spacing(3),
+    marginHorizontal: spacing(2)
   },
   standFirst: {
     ...fontFactory({
