@@ -17,7 +17,7 @@ import {
 } from "./article-skeleton-prop-types";
 import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
-import insertDropcapIntoAST from "./dropcap-util";
+import insertDropcapIntoAST, { hasDropcap } from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";
 
@@ -144,14 +144,38 @@ class ArticleSkeleton extends Component {
       return null;
     }
 
-    const newContent = [...dataSource.content];
-    if (newContent && newContent.length > 0) {
-      newContent[0] = insertDropcapIntoAST(
-        newContent[0],
-        template,
-        dropcapsDisabled
-      );
+    let newContent = [...dataSource.content];
+    for (let i = 0; i < newContent.length; i += 1) {
+      const node = newContent[i];
+      if (i === 0 && hasDropcap(node, template, dropcapsDisabled)) {
+        newContent[0] = insertDropcapIntoAST(
+          newContent[0],
+          template,
+          dropcapsDisabled
+        );
+      };
+
+
+      if (node.name === "image" && node.attributes.display === "inline") {
+        // console.error(JSON.stringify(array[i], null, 2))
+        const newNode = { ...node }
+        const paragraphs = []
+        let next
+        do {
+          next = newContent[i + 1]
+          if (next.name === "paragraph") {
+            paragraphs.push(next)
+            newContent[i + 1] = null
+            i += 1
+            continue
+          }
+          break
+        } while (next)
+        newContent = newContent.filter(node => node !== null)
+      };
     }
+
+    // ===
 
     const articleOrganised = listViewDataHelper({
       ...dataSource,

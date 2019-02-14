@@ -117,15 +117,15 @@ const ArticleRow = ({
             {({
               theme: { dropCapFont, sectionColour = colours.section.default }
             }) => (
-              <ArticleParagraph
-                ast={node}
-                dropCapColour={sectionColour}
-                dropCapFont={dropCapFont}
-                uid={index}
-              >
-                {children}
-              </ArticleParagraph>
-            )}
+                <ArticleParagraph
+                  ast={node}
+                  dropCapColour={sectionColour}
+                  dropCapFont={dropCapFont}
+                  uid={index}
+                >
+                  {children}
+                </ArticleParagraph>
+              )}
           </Context.Consumer>
         )
       };
@@ -143,23 +143,23 @@ const ArticleRow = ({
             {({
               theme: { pullQuoteFont, sectionColour = colours.section.default }
             }) => (
-              <ResponsiveContext.Consumer>
-                {({ isTablet }) => (
-                  <View style={isTablet && styles.containerTablet}>
-                    <PullQuote
-                      caption={name}
-                      font={pullQuoteFont}
-                      onTwitterLinkPress={onTwitterLinkPress}
-                      quoteColour={sectionColour}
-                      text={text}
-                      twitter={twitter}
-                    >
-                      {children}
-                    </PullQuote>
-                  </View>
-                )}
-              </ResponsiveContext.Consumer>
-            )}
+                <ResponsiveContext.Consumer>
+                  {({ isTablet }) => (
+                    <View style={isTablet && styles.containerTablet}>
+                      <PullQuote
+                        caption={name}
+                        font={pullQuoteFont}
+                        onTwitterLinkPress={onTwitterLinkPress}
+                        quoteColour={sectionColour}
+                        text={text}
+                        twitter={twitter}
+                      >
+                        {children}
+                      </PullQuote>
+                    </View>
+                  )}
+                </ResponsiveContext.Consumer>
+              )}
           </Context.Consumer>
         )
       };
