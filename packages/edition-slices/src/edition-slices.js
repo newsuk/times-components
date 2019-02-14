@@ -1,21 +1,25 @@
 import {
+  LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  LeadersSlice,
   ListTwoAndSixNoPicSlice,
+  SecondaryFourSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryTwoAndTwoSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "./slices";
 
-export {
+export default {
+  LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  LeadersSlice,
   ListTwoAndSixNoPicSlice,
+  SecondaryFourSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryTwoAndTwoSlice,
+  SecondaryTwoNoPicAndTwoSlice
 };
