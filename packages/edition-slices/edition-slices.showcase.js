@@ -33,125 +33,73 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const renderSlice = (Component, data) => (_, { decorateAction }) => (
+  <ScrollView>
+    <Component
+      onPress={preventDefaultedAction(decorateAction)("onPress")}
+      slice={data}
+    />
+  </ScrollView>
+);
+
+const sliceStories = [
+  {
+    mock: mockLeadOneAndFourSlice(),
+    name: "Lead One And Four (IJJJJ)",
+    Slice: LeadOneAndFourSlice
+  },
+  {
+    mock: mockLeadOneAndOneSlice(),
+    name: "Lead One And One (AB)",
+    Slice: LeadOneAndOneSlice
+  },
+  {
+    mock: mockLeadOneFullWidthSlice(),
+    name: "Lead One Full Width (A)",
+    Slice: LeadOneFullWidthSlice
+  },
+  {
+    mock: mockLeadTwoNoPicAndTwoSlice(),
+    name: "Lead Two no pic and Two (FBDE)",
+    Slice: LeadTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockSecondaryOneSlice(),
+    name: "Secondary One (A)",
+    Slice: SecondaryOneSlice
+  },
+  {
+    mock: mockSecondaryFourSlice(),
+    name: "Secondary Four (CCCC)",
+    Slice: SecondaryFourSlice
+  },
+  {
+    mock: mockSecondaryTwoAndTwoSlice(),
+    name: "Secondary Two And Two (CCGG)",
+    Slice: SecondaryTwoAndTwoSlice
+  },
+  {
+    mock: mockSecondaryTwoNoPicAndTwoSlice(),
+    name: "Secondary Two No Pic And Two (BBGG)",
+    Slice: SecondaryTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockListTwoAndSixNoPicSlice(),
+    name: "List Two And Six No Pic Four (CCLLLLLL)",
+    Slice: ListTwoAndSixNoPicSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "Leaders (MMMM)",
+    Slice: LeadersSlice
+  }
+];
+
 export default {
-  children: [
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <LeadOneAndFourSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockLeadOneAndFourSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Lead One And Four (IJJJJ)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <LeadOneAndOneSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockLeadOneAndOneSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Lead One And One (AB)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <LeadOneFullWidthSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockLeadOneFullWidthSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Lead One Full Width (A)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <LeadTwoNoPicAndTwoSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockLeadTwoNoPicAndTwoSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Lead Two no pic and Two (FBDE)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <SecondaryOneSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockSecondaryOneSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Secondary One (A)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <SecondaryFourSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockSecondaryFourSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Secondary Four (CCCC)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <SecondaryTwoAndTwoSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockSecondaryTwoAndTwoSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Secondary Two And Two (CCGG)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <SecondaryTwoNoPicAndTwoSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockSecondaryTwoNoPicAndTwoSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "Secondary Two No Pic And Two (BBGG)",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => (
-        <ScrollView>
-          <ListTwoAndSixNoPicSlice
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            slice={mockListTwoAndSixNoPicSlice()}
-          />
-        </ScrollView>
-      ),
-      name: "List Two And Six No Pic Four (CCLLLLLL)",
-      type: "story"
-    },
-    {
-      component: () => (
-        <ScrollView>
-          <LeadersSlice onPress={() => {}} slice={mockLeadersSlice()} />
-        </ScrollView>
-      ),
-      name: "Leaders (MMMM)",
-      type: "story"
-    }
-  ],
+  children: sliceStories.map(({ mock, name, Slice }) => ({
+    component: renderSlice(Slice, mock),
+    name,
+    type: "story"
+  })),
   name: "Composed/Edition/Slices"
 };
