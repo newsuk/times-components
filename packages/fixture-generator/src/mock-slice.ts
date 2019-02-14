@@ -73,7 +73,7 @@ function getTiles(count: number): Array<Tile> {
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
   const tiles = getTiles(5);
   return <LeadOneAndFourSliceWithName>{
-    name: "LeadOneAndFourSliceWithName",
+    name: "LeadOneAndFourSlice",
     lead: tiles[0],
     items: tiles,
     support1: tiles[1],

@@ -11,15 +11,17 @@ import {
   SecondaryTwoNoPicAndTwoSlice
 } from "./slices";
 
-export default {
+const sliceMap = {
   LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  ListTwoAndSixNoPicSlice,
+  TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice,
   SecondaryFourSlice,
   SecondaryOneSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice
 };
+
+export default sliceMap;
