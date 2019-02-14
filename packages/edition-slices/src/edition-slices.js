@@ -17,11 +17,11 @@ const sliceMap = {
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice,
   SecondaryFourSlice,
   SecondaryOneSlice,
   SecondaryTwoAndTwoSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice
 };
 
 export default sliceMap;

@@ -24,115 +24,67 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const renderTile = Tile => (_, { decorateAction }) => (
+  <Tile
+    onPress={preventDefaultedAction(decorateAction)("onPress")}
+    tile={tile}
+  />
+);
+
 export default {
   children: [
     {
-      component: (_, { decorateAction }) => (
-        <TileA
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileA),
       name: "Tile A - Bottom image, 35pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileB
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileB),
       name: "Tile B - No image, 22pt headline, with teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileC
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileC),
       name: "Tile C - Top image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileD
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileD),
       name: "Tile D - Side 3/2 image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileE
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileE),
       name: "Tile E - Side 4/5 image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileF
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileF),
       name: "Tile F - 35pt Headline, no image, strapline and teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileG
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileG),
       name: "Tile G - Roundel image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileI
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileI),
       name: "Tile I - Vertical, top image, centered aligned summary",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileJ
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileJ),
       name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileL
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileL),
       name: "Tile L - No image, 22pt headline, no teaser",
       type: "story"
     },
     {
-      component: (_, { decorateAction }) => (
-        <TileM
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          tile={tile}
-        />
-      ),
+      component: renderTile(TileM),
       name:
         "Tile M - No image, 22pt headline, no teaser, comment article, center align",
       type: "story"
