@@ -7,7 +7,7 @@ import styles from "./styles";
 
 const renderSlice = (slice, onPress) => {
   const Slice = sliceMap[slice.name];
-  return <Slice onPress={onPress} slice={slice} />;
+  return Slice ? <Slice onPress={onPress} slice={slice} /> : null;
 };
 
 const Section = ({ onPress, section: { slices } }) => (
