@@ -1,24 +1,44 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { Image } from "react-native";
 import appendToUrl from "./utils";
 
-export default props => {
-  const { source } = props;
-  return (
-    <Fragment>
-      {source && source.uri && !source.uri.includes("data:image/") ? (
+class LazyLoadingImage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      error: null
+    };
+  }
+
+  render() {
+    const { source } = this.props;
+    const { error } = this.state;
+    return (
+      <Fragment>
+        {error &&
+        source &&
+        source.uri &&
+        !source.uri.includes("data:image/") ? (
+          <Image
+            {...this.props}
+            source={
+              source
+                ? {
+                    uri: appendToUrl(source.uri, "offline", true)
+                  }
+                : null
+            }
+          />
+        ) : null}
         <Image
-          {...props}
-          source={
-            source
-              ? {
-                  uri: appendToUrl(source.uri, "offline", true)
-                }
-              : null
-          }
+          {...this.props}
+          onError={({ nativeEvent: { error: imageError } }) => {
+            this.setState({ error: imageError });
+          }}
         />
-      ) : null}
-      <Image {...props} />
-    </Fragment>
-  );
-};
+      </Fragment>
+    );
+  }
+}
+
+export default LazyLoadingImage;

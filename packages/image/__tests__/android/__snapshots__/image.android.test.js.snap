@@ -12,13 +12,6 @@ exports[`1. default layout 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
-      }
-    }
-  />
-  <Image
-    source={
-      Object {
         "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
       }
     }
@@ -74,13 +67,6 @@ exports[`3. handle layout change 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
-      }
-    }
-  />
-  <Image
-    source={
-      Object {
         "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
       }
     }
@@ -97,13 +83,6 @@ exports[`4. prepend https schema 1`] = `
       degrees={264}
     />
   </View>
-  <Image
-    source={
-      Object {
-        "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
-      }
-    }
-  />
   <Image
     source={
       Object {
@@ -126,13 +105,6 @@ exports[`5. handle onload event 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
-      }
-    }
-  />
-  <Image
-    source={
-      Object {
         "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
       }
     }
@@ -144,13 +116,6 @@ exports[`5. handle onload event 2`] = `
 <View
   aspectRatio={1.5}
 >
-  <Image
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440&offline=true",
-      }
-    }
-  />
   <Image
     source={
       Object {
@@ -170,13 +135,6 @@ exports[`7. uses highressize if it is smaller than layout width 1`] = `
       degrees={264}
     />
   </View>
-  <Image
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=320&offline=true",
-      }
-    }
-  />
   <Image
     source={
       Object {
