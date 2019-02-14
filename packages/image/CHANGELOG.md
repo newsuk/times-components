@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.8.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.7.5...@times-components/image@4.8.0) (2019-02-14)
+
+
+### Features
+
+* offline fallback on images ([#1696](https://github.com/newsuk/times-components/issues/1696)) ([1f86a8d](https://github.com/newsuk/times-components/commit/1f86a8d))
+
+
+
+
+
 ## [4.7.5](https://github.com/newsuk/times-components/compare/@times-components/image@4.7.4...@times-components/image@4.7.5) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/image

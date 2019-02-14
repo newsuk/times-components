@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.12.2...@times-components/article-main-comment@0.13.0) (2019-02-14)
+
+
+### Features
+
+* Update the main comment byline design ([#1697](https://github.com/newsuk/times-components/issues/1697)) ([3eb4aa6](https://github.com/newsuk/times-components/commit/3eb4aa6))
+
+
+
+
+
 ## [0.12.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.12.1...@times-components/article-main-comment@0.12.2) (2019-02-14)
 
 **Note:** Version bump only for package @times-components/article-main-comment

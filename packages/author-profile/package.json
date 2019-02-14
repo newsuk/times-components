@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "5.3.23",
+  "version": "5.3.24",
   "description": "Author profile information along with a list of articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -72,11 +72,11 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-list": "6.4.17",
+    "@times-components/article-list": "6.4.18",
     "@times-components/context": "0.6.15",
     "@times-components/gradient": "2.3.15",
     "@times-components/icons": "2.3.19",
-    "@times-components/image": "4.7.5",
+    "@times-components/image": "4.8.0",
     "@times-components/link": "3.2.15",
     "@times-components/markup": "3.3.15",
     "@times-components/markup-forest": "1.4.7",
