@@ -30,7 +30,7 @@ exports[`2. renders correctly with a video lead asset 1`] = `
 <View>
   <Video
     accountId="1234"
-    height={421.875}
+    height={337.5}
     policyKey="policyKey"
     poster={
       Object {
@@ -38,7 +38,7 @@ exports[`2. renders correctly with a video lead asset 1`] = `
       }
     }
     videoId="5678"
-    width={750}
+    width={600}
   />
   <Text>
     Chris Reynolds Gordon at one of his party venues in London
