@@ -3,6 +3,7 @@ import {
   addSerializers,
   compose,
   hoistStyleTransform,
+  minimaliseTransform,
   minimalWebTransform,
   rnwTransform,
   stylePrinter
@@ -24,6 +25,7 @@ export default () => {
         "lineHeight",
         "marginBottom"
       ]),
+      minimaliseTransform((value, key) => key === "tile"),
       minimalWebTransform
     )
   );

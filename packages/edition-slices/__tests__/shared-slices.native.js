@@ -19,7 +19,7 @@ export default () => {
       print,
       minimalNativeTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key.includes("Class")
+        (value, key) => key === "style" || key.includes("Class") || key === "tile"
       )
     )
   );

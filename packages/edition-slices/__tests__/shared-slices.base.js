@@ -26,6 +26,22 @@ import {
   SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
+jest.mock("../src/tiles", () => ({
+  TileA: "TileA",
+  TileB: "TileB",
+  TileC: "TileC",
+  TileD: "TileD",
+  TileE: "TileE",
+  TileF: "TileF",
+  TileG: "TileG",
+  TileH: "TileH",
+  TileI: "TileI",
+  TileJ: "TileJ",
+  TileK: "TileK",
+  TileL: "TileL",
+  TileM: "TileM"
+}));
+
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
