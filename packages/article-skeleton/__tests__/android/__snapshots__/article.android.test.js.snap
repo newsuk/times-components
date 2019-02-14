@@ -1,367 +1,428 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a full article with all content items with dropcap template 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "children": Array [
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
               Object {
-                "attributes": Object {
-                  "value": "T",
-                },
-                "children": Array [],
-                "name": "dropCap",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "his being Black History Month, last week",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={0}
-      >
-        his being Black History Month, last week
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View>
-        <InteractiveWrapper
-          id="d2f83305-d558-4f78-f582-32115c659355"
-        />
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "T",
+                    },
+                    "children": Array [],
+                    "name": "dropCap",
+                  },
+                  Object {
+                    "attributes": Object {
+                      "value": "his being Black History Month, last week",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={0}
+          >
+            his being Black History Month, last week
+          </ArticleParagraph>
+        </View>
       </View>
-    </View>
-    <View>
       <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "An image caption",
-              "credits": "The image credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "primary",
-              "ratio": "1500:1000",
-              "uri": "https://image.io",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A secondary image caption",
-              "credits": "The secondary image credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "1500:1000",
-              "uri": "https://image.io/secondary",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "An inline image caption",
-              "credits": "The inline image credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "inline",
-              "ratio": "1500:1000",
-              "uri": "https://image.io/inline",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Text
-        accessibilityRole="link"
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Some content",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={6}
-      >
-        Some content
-      </ArticleParagraph>
-    </View>
-    <View>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="native-inline-ad"
-      />
-    </View>
-    <View>
-      <View>
-        <PullQuote
-          caption="AName"
-          captionColour="#FF0000"
-          quoteColour="#FF0000"
-          text="a text"
-          twitter="@AName"
-        >
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View>
-        <Video
-          accountId="57838016001"
-          height={360}
-          policyKey="1.2.3.4"
-          poster={
-            Object {
-              "uri": "https://image.io",
-            }
-          }
-          skySports={false}
-          videoId="4084164751001"
-          width={640}
-        />
         <View>
           <View>
-            <Text>
-              This is video caption
-            </Text>
+            <InteractiveWrapper
+              id="d2f83305-d558-4f78-f582-32115c659355"
+            />
           </View>
         </View>
       </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "An image caption",
+                  "credits": "The image credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "ratio": "1500:1000",
+                  "uri": "https://image.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A secondary image caption",
+                  "credits": "The secondary image credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "secondary",
+                  "ratio": "1500:1000",
+                  "uri": "https://image.io/secondary",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "An inline image caption",
+                  "credits": "The inline image credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "inline",
+                  "ratio": "1500:1000",
+                  "uri": "https://image.io/inline",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <Text
+            accessibilityRole="link"
+          >
+            Some Link
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Some content",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={6}
+          >
+            Some content
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View>
+          <Ad
+            contextUrl="https://url.io"
+            section="Some Section"
+            slotName="native-inline-ad"
+          />
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <PullQuote
+              caption="AName"
+              captionColour="#FF0000"
+              quoteColour="#FF0000"
+              text="a text"
+              twitter="@AName"
+            >
+              The pull quote content
+            </PullQuote>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <Video
+              accountId="57838016001"
+              height={360}
+              policyKey="1.2.3.4"
+              poster={
+                Object {
+                  "uri": "https://image.io",
+                }
+              }
+              skySports={false}
+              videoId="4084164751001"
+              width={640}
+            />
+            <View>
+              <View>
+                <Text>
+                  This is video caption
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View />
     </View>
-    <View />
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`2. an article with no content 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
-    <View>
-      <View>
-        <ArticleTopics
-          topics={
-            Array [
-              Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
         />
-      </View>
-    </View>
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
       <View>
-        <RelatedArticles
-          slice={
-            Object {
-              "__typename": "StandardSlice",
-              "items": Array [
-                Object {
-                  "article": Object {
-                    "__typename": "Article",
-                    "byline": Array [],
-                    "hasVideo": false,
-                    "headline": "RA Headline",
-                    "id": "ra-1",
-                    "label": "RA Label",
-                    "leadAsset": Object {
-                      "__typename": "Image",
-                      "crop169": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop169.io",
-                      },
-                      "crop32": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop32.io",
-                      },
-                      "title": "RA Title",
-                    },
-                    "publicationName": "TIMES",
-                    "publishedTime": "2015-03-23T19:39:39.000Z",
-                    "shortHeadline": "Headline",
-                    "shortIdentifier": "2k629tpvh",
-                    "slug": "this-is-slug",
-                    "summary105": Array [],
-                    "summary125": Array [],
-                    "summary145": Array [],
-                    "summary160": Array [],
-                    "summary175": Array [],
-                    "summary225": Array [],
-                    "url": "https://ra.io",
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleTopics
+              topics={
+                Array [
+                  Object {
+                    "name": "Topic",
+                    "slug": "topic",
                   },
-                },
-              ],
-              "sliceName": "StandardSlice",
-            }
-          }
-        />
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <RelatedArticles
+              slice={
+                Object {
+                  "__typename": "StandardSlice",
+                  "items": Array [
+                    Object {
+                      "article": Object {
+                        "__typename": "Article",
+                        "byline": Array [],
+                        "hasVideo": false,
+                        "headline": "RA Headline",
+                        "id": "ra-1",
+                        "label": "RA Label",
+                        "leadAsset": Object {
+                          "__typename": "Image",
+                          "crop169": Object {
+                            "__typename": "Crop",
+                            "url": "https://racrop169.io",
+                          },
+                          "crop32": Object {
+                            "__typename": "Crop",
+                            "url": "https://racrop32.io",
+                          },
+                          "title": "RA Title",
+                        },
+                        "publicationName": "TIMES",
+                        "publishedTime": "2015-03-23T19:39:39.000Z",
+                        "shortHeadline": "Headline",
+                        "shortIdentifier": "2k629tpvh",
+                        "slug": "this-is-slug",
+                        "summary105": Array [],
+                        "summary125": Array [],
+                        "summary145": Array [],
+                        "summary160": Array [],
+                        "summary175": Array [],
+                        "summary225": Array [],
+                        "url": "https://ra.io",
+                      },
+                    },
+                  ],
+                  "sliceName": "StandardSlice",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ArticleComments
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            url="https://url.io"
+          />
+        </View>
       </View>
     </View>
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`3. an article with a nested markup in first paragraph displays no drop cap 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "children": Array [
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
               Object {
                 "children": Array [
                   Object {
-                    "attributes": Object {
-                      "value": "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
-                    },
-                    "children": Array [],
-                    "name": "text",
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "bold",
                   },
                 ],
-                "name": "bold",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={0}
-      >
-        <Text>
-          Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
-        </Text>
-      </ArticleParagraph>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "children": Array [
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={0}
+          >
+            <Text>
+              Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
+            </Text>
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
               Object {
                 "children": Array [
                   Object {
-                    "attributes": Object {
-                      "value": "When she does come to social events, she dominates.",
-                    },
-                    "children": Array [],
-                    "name": "text",
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "When she does come to social events, she dominates.",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "bold",
                   },
                 ],
-                "name": "bold",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={1}
-      >
-        <Text>
-          When she does come to social events, she dominates.
-        </Text>
-      </ArticleParagraph>
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={1}
+          >
+            <Text>
+              When she does come to social events, she dominates.
+            </Text>
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleComments
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            url="https://url.io"
+          />
+        </View>
+      </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`5. an inline link reports analytics event on press 1`] = `
