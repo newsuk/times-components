@@ -36,25 +36,29 @@ const ArticleHeader = ({
             isTablet && styles.containerTablet
           ]}
         >
-          <Label color={textColour} isVideo={hasVideo} label={label} />
-          <Text
-            style={[
-              styles.articleHeadline,
-              {
-                color: textColour,
-                ...fontFactory({
-                  font: headlineFont || "headline",
-                  fontSize: isTablet ? "pageHeadline" : "headline"
-                })
-              }
-            ]}
+          <View
+            style={[styles.headerText, isTablet && styles.headerTextTablet]}
           >
-            {headline}
-          </Text>
-          <View style={styles.flags}>
-            <ArticleFlags color={textColour} flags={flags} />
+            <Label color={textColour} isVideo={hasVideo} label={label} />
+            <Text
+              style={[
+                styles.articleHeadline,
+                {
+                  color: textColour,
+                  ...fontFactory({
+                    font: headlineFont || "headline",
+                    fontSize: isTablet ? "pageHeadline" : "headline"
+                  })
+                }
+              ]}
+            >
+              {headline}
+            </Text>
+            <View style={styles.flags}>
+              <ArticleFlags color={textColour} flags={flags} />
+            </View>
+            <Standfirst color={textColour} standfirst={standfirst} />
           </View>
-          <Standfirst color={textColour} standfirst={standfirst} />
         </View>
       )}
     </Context.Consumer>
