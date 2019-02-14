@@ -4,12 +4,8 @@ import { LeadOneAndFourSlice } from "@times-components/slice-layout";
 import { TileI, TileJ } from "../../tiles";
 
 const LeadOneAndFour = ({
-  lead,
   onPress,
-  support1,
-  support2,
-  support3,
-  support4
+  slice: { lead, support1, support2, support3, support4 }
 }) => (
   <LeadOneAndFourSlice
     renderLead={() => <TileI onPress={onPress} tile={lead} />}
@@ -21,12 +17,14 @@ const LeadOneAndFour = ({
 );
 
 LeadOneAndFour.propTypes = {
-  lead: PropTypes.shape({}).isRequired,
   onPress: PropTypes.func.isRequired,
-  support1: PropTypes.shape({}).isRequired,
-  support2: PropTypes.shape({}).isRequired,
-  support3: PropTypes.shape({}).isRequired,
-  support4: PropTypes.shape({}).isRequired
+  slice: PropTypes.shape({
+    lead: PropTypes.shape({}).isRequired,
+    support1: PropTypes.shape({}).isRequired,
+    support2: PropTypes.shape({}).isRequired,
+    support3: PropTypes.shape({}).isRequired,
+    support4: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default LeadOneAndFour;

@@ -1,23 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one full width slice 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <div>
     <div>
       <div>
-        ROYALS
+        LABEL
       </div>
     </div>
     <h3
       aria-level="3"
       role="heading"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -25,7 +27,7 @@ exports[`1. lead one full width slice 1`] = `
   <div>
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
 </Link>
@@ -33,23 +35,25 @@ exports[`1. lead one full width slice 1`] = `
 
 exports[`2. lead one and one slice 1`] = `
 <div>
-  <Link>
+  <Link
+    url="/article/123"
+  >
     <div>
       <div>
         <div>
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
         aria-level="3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -57,39 +61,37 @@ exports[`2. lead one and one slice 1`] = `
     <div>
       <Image
         aspectRatio={1.7777777777777777}
-        uri="https://img/someImage"
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
       />
     </div>
   </Link>
-  <Link>
+  <Link
+    url="/article/123"
+  >
     <div>
       <div>
         <div>
           <div>
-            CYBER CRIME
+            LABEL
           </div>
         </div>
         <h3
           aria-level="3"
           role="heading"
         >
-          GCHQ gives girls free cyber-classes to tackle gender gap
+          Venezuela shows how Corbyn’s socialism works
         </h3>
         <ArticleFlags
           flags={
             Array [
-              "UPDATED",
+              "EXCLUSIVE",
             ]
           }
         />
         <div>
           <span>
             
-            GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-          </span>
-          <span>
-             
-            The intelligence
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </span>
         </div>
@@ -408,23 +410,25 @@ exports[`4. lead two no pic and two 1`] = `
 `;
 
 exports[`5. secondary one slice 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <div>
     <div>
       <div>
-        ROYALS
+        LABEL
       </div>
     </div>
     <h3
       aria-level="3"
       role="heading"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -432,7 +436,7 @@ exports[`5. secondary one slice 1`] = `
   <div>
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
 </Link>

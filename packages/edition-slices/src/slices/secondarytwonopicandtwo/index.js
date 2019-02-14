@@ -5,10 +5,7 @@ import { TileB, TileG } from "../../tiles";
 
 const SecondaryTwoNoPicAndTwo = ({
   onPress,
-  secondary1,
-  secondary2,
-  support1,
-  support2
+  slice: { secondary1, secondary2, support1, support2 }
 }) => (
   <SecondaryTwoNoPicAndTwoSlice
     renderSecondary1={() => <TileB onPress={onPress} tile={secondary1} />}
@@ -20,10 +17,12 @@ const SecondaryTwoNoPicAndTwo = ({
 
 SecondaryTwoNoPicAndTwo.propTypes = {
   onPress: PropTypes.func.isRequired,
-  secondary1: PropTypes.shape({}).isRequired,
-  secondary2: PropTypes.shape({}).isRequired,
-  support1: PropTypes.shape({}).isRequired,
-  support2: PropTypes.shape({}).isRequired
+  slice: PropTypes.shape({
+    secondary1: PropTypes.shape({}).isRequired,
+    secondary2: PropTypes.shape({}).isRequired,
+    support1: PropTypes.shape({}).isRequired,
+    support2: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default SecondaryTwoNoPicAndTwo;

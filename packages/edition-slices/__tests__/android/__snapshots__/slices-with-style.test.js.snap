@@ -20,7 +20,7 @@ exports[`1. lead one full width slice 1`] = `
       <Text
         style={
           Object {
-            "color": "#1D1D1B",
+            "color": "#005B8D",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
@@ -30,7 +30,7 @@ exports[`1. lead one full width slice 1`] = `
           }
         }
       >
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
@@ -45,7 +45,7 @@ exports[`1. lead one full width slice 1`] = `
         }
       }
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags />
   </View>
@@ -83,7 +83,7 @@ exports[`2. lead one and one slice 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -93,7 +93,7 @@ exports[`2. lead one and one slice 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -108,7 +108,7 @@ exports[`2. lead one and one slice 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -142,7 +142,7 @@ exports[`2. lead one and one slice 1`] = `
           <Text
             style={
               Object {
-                "color": "#1D1D1B",
+                "color": "#005B8D",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -152,7 +152,7 @@ exports[`2. lead one and one slice 1`] = `
               }
             }
           >
-            CYBER CRIME
+            LABEL
           </Text>
         </View>
         <Text
@@ -167,7 +167,7 @@ exports[`2. lead one and one slice 1`] = `
             }
           }
         >
-          GCHQ gives girls free cyber-classes to tackle gender gap
+          Venezuela shows how Corbyn’s socialism works
         </Text>
         <ArticleFlags />
         <Text
@@ -184,11 +184,7 @@ exports[`2. lead one and one slice 1`] = `
         >
           <Text>
             
-            GCHQ will give free cyber-classes to hundreds of girls in an attempt to boost diversity in the tech industry.
-          </Text>
-          <Text>
-             
-            The intelligence
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </Text>
         </Text>
@@ -910,7 +906,7 @@ exports[`5. secondary one slice 1`] = `
       <Text
         style={
           Object {
-            "color": "#1D1D1B",
+            "color": "#005B8D",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
@@ -920,7 +916,7 @@ exports[`5. secondary one slice 1`] = `
           }
         }
       >
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
@@ -935,7 +931,7 @@ exports[`5. secondary one slice 1`] = `
         }
       }
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags />
   </View>

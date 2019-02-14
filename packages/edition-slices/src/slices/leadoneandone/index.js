@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components/slice-layout";
 import { TileA, TileB } from "../../tiles";
 
-const LeadOneAndOne = ({ lead, onPress, support }) => (
+const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
   <LeadOneAndOneSlice
     renderLead={() => <TileA onPress={onPress} tile={lead} />}
     renderSupport={() => <TileB onPress={onPress} tile={support} />}
@@ -11,9 +11,11 @@ const LeadOneAndOne = ({ lead, onPress, support }) => (
 );
 
 LeadOneAndOne.propTypes = {
-  lead: PropTypes.shape({}).isRequired,
   onPress: PropTypes.func.isRequired,
-  support: PropTypes.shape({}).isRequired
+  slice: PropTypes.shape({
+    lead: PropTypes.shape({}).isRequired,
+    support: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default LeadOneAndOne;

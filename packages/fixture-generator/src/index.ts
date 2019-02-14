@@ -16,8 +16,9 @@ import mockEditionSlice, {
   mockLeadersSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
+  mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice
+  mockListTwoAndSixNoPicSlice
 } from "./mock-slice";
 import MockTopic from "./mock-topic";
 
@@ -30,8 +31,9 @@ export {
   mockLeadersSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
+  mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice,
+  mockListTwoAndSixNoPicSlice,
   mockMagazineSection,
   mockPuzzleSection,
   mockStandardSection,
