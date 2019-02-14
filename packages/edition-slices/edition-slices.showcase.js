@@ -4,6 +4,7 @@ import {
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadTwoNoPicAndTwoSlice,
+  mockLeadersSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockList2AndSixNoPicSlice
@@ -17,7 +18,8 @@ import {
   SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  LeadersSlice
 } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>
@@ -187,6 +189,23 @@ export default {
         );
       },
       name: "List Two And Six No Pic Four (CCLLLLLL)",
+      type: "story"
+    },
+    {
+      component: () => {
+        const slice = mockLeadersSlice();
+        return (
+          <ScrollView>
+            <LeadersSlice
+              leader1={slice.leader1}
+              leader2={slice.leader2}
+              leader3={slice.leader3}
+              onPress={() => {}}
+            />
+          </ScrollView>
+        );
+      },
+      name: "Leaders (MMMM)",
       type: "story"
     }
   ],

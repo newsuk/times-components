@@ -19,51 +19,59 @@ exports[`full article with style 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "lineHeight": 35,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -275,51 +283,59 @@ exports[`full article with style in the culture magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "Flama-Bold",
+                "fontSize": 30,
+                "lineHeight": 35,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "Flama-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -531,51 +547,59 @@ exports[`full article with style in the style magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "CenturyGothic-Bold",
+                "fontSize": 30,
+                "lineHeight": 35,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "CenturyGothic-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -787,51 +811,59 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "Tiempos-Headline-Bold",
+                "fontSize": 30,
+                "lineHeight": 35,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "Tiempos-Headline-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -1045,51 +1077,60 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
+              "width": 660,
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "Flama-Bold",
+                "fontSize": 40,
+                "lineHeight": 42,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "Flama-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -1348,51 +1389,60 @@ exports[`tablet full article with style in the style magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
+              "width": 660,
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "CenturyGothic-Bold",
+                "fontSize": 40,
+                "lineHeight": 42,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "CenturyGothic-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={
@@ -1651,51 +1701,60 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 10,
+              "alignItems": "center",
+              "width": 660,
             }
           }
         >
-          <ArticleLabel />
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "Tiempos-Headline-Bold",
+                "fontSize": 40,
+                "lineHeight": 42,
+                "marginBottom": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Headline
+          </Text>
+          <View
+            style={
+              Object {
+                "marginBottom": 15,
+                "marginTop": 5,
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 20,
+                "lineHeight": 25,
+                "marginBottom": 15,
+                "paddingHorizontal": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Some Standfirst
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "Tiempos-Headline-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "rgba(255, 255, 255, 1)",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
       </View>
       <View
         style={

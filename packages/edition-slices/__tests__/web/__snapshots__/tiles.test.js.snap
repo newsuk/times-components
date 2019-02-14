@@ -334,3 +334,19 @@ exports[`10. tile l 1`] = `
   </div>
 </Link>
 `;
+
+exports[`11. tile m 1`] = `
+<Link>
+  <div>
+    <div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags />
+    </div>
+  </div>
+</Link>
+`;

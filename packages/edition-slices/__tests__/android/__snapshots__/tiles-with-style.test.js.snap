@@ -694,3 +694,36 @@ exports[`10. tile l 1`] = `
   </View>
 </Link>
 `;
+
+exports[`11. tile m 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "paddingBottom": 10,
+        "paddingHorizontal": 40,
+      }
+    }
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 5,
+            "marginTop": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags />
+    </View>
+  </View>
+</Link>
+`;

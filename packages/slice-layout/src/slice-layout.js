@@ -11,6 +11,7 @@ import SecondaryFourSlice from "./templates/secondaryfour";
 import SecondaryTwoNoPicAndTwoSlice from "./templates/secondarytwonopicandtwo";
 import SecondaryTwoAndTwoSlice from "./templates/secondarytwoandtwo";
 import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
+import Leaders from "./templates/leaders";
 
 export {
   StandardSlice,
@@ -25,5 +26,6 @@ export {
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
+  Leaders,
   ListTwoAndSixNoPic
 };
