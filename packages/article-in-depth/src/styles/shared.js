@@ -39,6 +39,12 @@ const sharedStyles = {
     marginBottom: spacing(3),
     marginTop: spacing(1)
   },
+  headerText: {
+    alignItems: "center"
+  },
+  headerTextTablet: {
+    width: tabletWidth
+  },
   label: {
     marginBottom: spacing(2)
   },
