@@ -95,7 +95,6 @@ class RelatedArticles extends Component {
                   support2.leadAsset
                 );
               }}
-              withSeparators
             />
           );
         case "OpinionOneAndTwoSlice":

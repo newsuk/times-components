@@ -9,7 +9,10 @@ const styles = {
   },
   container: {
     alignItems: "center",
-    marginBottom: spacing(5),
+    borderStyle: "solid",
+    borderTopColor: colours.functional.keyline,
+    borderTopWidth: 1,
+    marginBottom: spacing(10),
     width: "100%"
   },
   errorBody: {

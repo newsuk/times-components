@@ -83,7 +83,6 @@ export default {
               />
             )}
             renderSupport={() => <Support1 id="support1" />}
-            withSeparators
           />
         </ScrollView>
       ),
@@ -105,7 +104,6 @@ export default {
             )}
             renderSupport1={() => null}
             renderSupport2={() => null}
-            withSeparators
           />
         </ScrollView>
       ),
@@ -127,7 +125,6 @@ export default {
             )}
             renderSupport1={() => <Support1 id="support1" />}
             renderSupport2={() => null}
-            withSeparators
           />
         </ScrollView>
       ),
@@ -149,7 +146,6 @@ export default {
             )}
             renderSupport1={() => <Support1 id="support1" />}
             renderSupport2={() => <Support2 id="support2" />}
-            withSeparators
           />
         </ScrollView>
       ),
