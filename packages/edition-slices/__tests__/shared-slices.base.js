@@ -12,7 +12,8 @@ import {
   mockListTwoAndSixNoPicSlice,
   mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockSecondaryOneAndFourSlice
+  mockSecondaryOneAndFourSlice,
+  mockPuzzleSlice
 } from "@times-components/fixture-generator";
 import {
   LeadOneAndFourSlice,
@@ -25,7 +26,8 @@ import {
   SecondaryFourSlice,
   SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  Puzzle
 } from "../src/slices";
 
 jest.mock("../src/tiles", () => {
@@ -100,6 +102,11 @@ const slices = [
     mock: mockLeadersSlice(),
     name: "leaders slice",
     Slice: LeadersSlice
+  },
+  {
+    mock: mockPuzzleSlice(),
+    name: "puzzle slice",
+    Slice: Puzzle
   }
 ];
 

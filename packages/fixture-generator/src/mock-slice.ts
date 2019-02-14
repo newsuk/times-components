@@ -12,9 +12,11 @@ import {
   SecondaryTwoNoPicAndTwoSlice,
   TwoPicAndSixNoPicSlice,
   Tile,
-  SecondaryOneAndFourSlice
+  SecondaryOneAndFourSlice,
+  Puzzle
 } from "./types";
 import MockArticle from "./mock-article";
+import MockPuzzle from "./mock-puzzle";
 
 interface LeadOneAndFourSliceWithName extends LeadOneAndFourSlice {
   name: string;
@@ -217,6 +219,15 @@ function mockArticleSlice(count: number): ArticleSlice {
   return { items: getTiles(count) };
 }
 
+function mockPuzzleSlice(): Puzzle {
+  const { title, url, image } = new MockPuzzle().get();
+  return <Puzzle>{
+    title,
+    url,
+    image: image.crop!.url
+  };
+}
+
 export default mockArticleSlice;
 export {
   mockLeadOneAndFourSlice,
@@ -230,5 +241,6 @@ export {
   mockSecondaryOneAndFourSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoAndTwoSlice,
-  mockSecondaryTwoNoPicAndTwoSlice
+  mockSecondaryTwoNoPicAndTwoSlice,
+  mockPuzzleSlice
 };

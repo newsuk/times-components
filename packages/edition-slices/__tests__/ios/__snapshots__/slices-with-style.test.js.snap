@@ -607,3 +607,52 @@ exports[`11. leaders slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`12. puzzle slice 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 15,
+          "width": "85%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 25,
+            "fontWeight": "900",
+            "lineHeight": 25,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+          "width": "85%",
+        }
+      }
+    >
+      <Image />
+    </View>
+  </View>
+</Link>
+`;

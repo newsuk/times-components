@@ -782,3 +782,79 @@ exports[`11. leaders slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`12. puzzle slice 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  font-size: 25px;
+}
+
+.IS2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS3 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS4 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS4 S2"
+  >
+    <div
+      className="IS2 S2"
+    >
+      <h3
+        aria-level="3"
+        className="IS1 S1"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+    </div>
+    <div
+      className="IS3 S2"
+    >
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+      />
+    </div>
+  </div>
+</Link>
+`;

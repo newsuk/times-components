@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. puzzle 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+}
+</style>
+
+<div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "backgroundColor": "rgba(240,240,240,1.00)",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    className="S2"
+    style={
+      Object {
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
+        "paddingTop": "15px",
+        "width": "85%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      support-1
+    </div>
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitAlignSelf": "flex-end",
+        "alignSelf": "flex-end",
+        "msFlexItemAlign": "end",
+        "width": "85%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      support-2
+    </div>
+  </div>
+</div>
+`;

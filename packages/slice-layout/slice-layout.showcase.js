@@ -13,7 +13,8 @@ import {
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   Leaders,
-  ListTwoAndSixNoPic
+  ListTwoAndSixNoPic,
+  PuzzleSlice
 } from "./src/slice-layout";
 
 const colours = [
@@ -305,6 +306,18 @@ export default {
         </ScrollView>
       ),
       name: "ListTwoAndSixNoPic",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <PuzzleSlice
+            renderBody={() => <Support2 id="support2" />}
+            renderHeader={() => <Support1 id="support1" />}
+          />
+        </ScrollView>
+      ),
+      name: "PuzzleSlice",
       type: "story"
     },
     {
