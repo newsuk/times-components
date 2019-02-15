@@ -1,4 +1,7 @@
-import { mockNativeModules } from "@times-components/test-utils";
+import {
+  mockNativeModules,
+  MockArticleSkeleton
+} from "@times-components/test-utils";
 
 // eslint-disable-next-line import/prefer-default-export
 export { setIsTablet } from "@times-components/test-utils/dimensions";
@@ -16,6 +19,7 @@ jest.mock("@times-components/article-flag", () => ({
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
+jest.mock("@times-components/article-skeleton", () => MockArticleSkeleton);
 jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
 jest.mock("@times-components/button", () => "Button");
 jest.mock("@times-components/caption", () => ({

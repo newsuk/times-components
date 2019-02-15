@@ -1,35 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a secondary image 1`] = `
-<RCTScrollView>
-  <View>
-    <View />
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
     <View>
       <View>
-        <ArticleImage />
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View>
+            <ArticleImage />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleComments />
+        </View>
       </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`2. an inline image 1`] = `
-<RCTScrollView>
-  <View>
-    <View />
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
     <View>
       <View>
-        <ArticleImage />
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View>
+            <ArticleImage />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleComments />
+        </View>
       </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;

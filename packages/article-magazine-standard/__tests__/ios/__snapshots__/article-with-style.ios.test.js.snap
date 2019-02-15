@@ -1,1330 +1,576 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style in the culture magazine 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "marginBottom": 25,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 35,
-            "width": 660,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "Flama-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </View>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "marginBottom": 20,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
-        <PullQuote>
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": 660,
-          }
-        }
-      >
-        <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingLeft": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingHorizontal": 10,
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 35,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "height": 0,
+          "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "Flama-Bold",
+          "fontSize": 30,
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+          "marginTop": 5,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 20,
+          "lineHeight": 25,
+          "marginBottom": 15,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Standfirst
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <ArticleBylineWithLinks />
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
   </View>
-</RCTScrollView>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    <ModalImage />
+    <CenteredCaption />
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`full article with style in the style magazine 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "marginBottom": 25,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 35,
-            "width": 660,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "CenturyGothic-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </View>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "marginBottom": 20,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
-        <PullQuote>
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": 660,
-          }
-        }
-      >
-        <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingLeft": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingHorizontal": 10,
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 35,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "height": 0,
+          "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "CenturyGothic-Bold",
+          "fontSize": 30,
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+          "marginTop": 5,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 20,
+          "lineHeight": 25,
+          "marginBottom": 15,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Standfirst
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <ArticleBylineWithLinks />
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
   </View>
-</RCTScrollView>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    <ModalImage />
+    <CenteredCaption />
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`full article with style in the sunday times magazine 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "marginBottom": 25,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 35,
-            "width": 660,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "Tiempos-Headline-Bold",
-              "fontSize": 40,
-              "lineHeight": 42,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </View>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "marginBottom": 20,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
-        <PullQuote>
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": 660,
-          }
-        }
-      >
-        <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingLeft": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingHorizontal": 10,
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 35,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "height": 0,
+          "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "Tiempos-Headline-Bold",
+          "fontSize": 30,
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+          "marginTop": 5,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 20,
+          "lineHeight": 25,
+          "marginBottom": 15,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Standfirst
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <ArticleBylineWithLinks />
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
   </View>
-</RCTScrollView>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    <ModalImage />
+    <CenteredCaption />
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`phone full article with style 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "marginBottom": 25,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 35,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "lineHeight": 35,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </View>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 20,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View>
-        <PullQuote>
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": "100%",
-          }
-        }
-      >
-        <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingLeft": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingHorizontal": 10,
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View>
-      <View>
-        <RelatedArticles />
-      </View>
-    </View>
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 35,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "height": 0,
+          "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+          "marginTop": 5,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 20,
+          "lineHeight": 25,
+          "marginBottom": 15,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Standfirst
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <ArticleBylineWithLinks />
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
   </View>
-</RCTScrollView>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    <ModalImage />
+    <CenteredCaption />
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`tablet full article with style 1`] = `
-<RCTScrollView>
-  <View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "marginBottom": 25,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 35,
-            "width": 660,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 40,
-              "lineHeight": 40,
-              "marginBottom": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Headline
-        </Text>
-        <View
-          style={
-            Object {
-              "marginBottom": 15,
-              "marginTop": 5,
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "marginBottom": 15,
-              "paddingHorizontal": 10,
-              "textAlign": "center",
-            }
-          }
-        >
-          Some Standfirst
-        </Text>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <ArticleBylineWithLinks />
-          </View>
-          <View
-            style={
-              Object {
-                "flexDirection": "row",
-                "flexWrap": "wrap",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 15,
-                }
-              }
-            >
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "marginBottom": 20,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ModalImage />
-        <CenteredCaption />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <Text
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 17,
-            "lineHeight": 26,
-            "marginBottom": 25,
-            "marginTop": 0,
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        Some Link
-      </Text>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Some content
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "width": 660,
-          }
-        }
-      >
-        <PullQuote>
-          The pull quote content
-        </PullQuote>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": 660,
-          }
-        }
-      >
-        <Video />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingLeft": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <Ad
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginBottom": 20,
-            "paddingHorizontal": 10,
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
-          }
-        }
-      >
-        <ArticleTopics />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginBottom": 25,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 35,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "height": 0,
+          "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+          "marginTop": 5,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 20,
+          "lineHeight": 25,
+          "marginBottom": 15,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Some Standfirst
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <ArticleBylineWithLinks />
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
   </View>
-</RCTScrollView>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    <ModalImage />
+    <CenteredCaption />
+  </View>
+</ArticleSkeleton>
 `;

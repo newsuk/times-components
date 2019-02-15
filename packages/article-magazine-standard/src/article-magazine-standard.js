@@ -10,6 +10,7 @@ import {
 } from "@times-components/utils";
 import Caption, { CentredCaption } from "@times-components/caption";
 import { ResponsiveContext } from "@times-components/responsive";
+import { tabletWidth } from "@times-components/styleguide";
 import LeadAsset from "@times-components/article-lead-asset";
 import ArticleHeader from "./article-header/article-header";
 import {
@@ -65,7 +66,7 @@ class ArticleMagazineStandard extends Component {
                 isTablet && styles.leadAssetContainerTablet,
                 isTablet && styles.tabletContainer
               ]}
-              width={width}
+              width={Math.min(width, tabletWidth)}
             />
           </Fragment>
         )}

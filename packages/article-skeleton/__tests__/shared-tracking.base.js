@@ -1,10 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import mockDate from "mockdate";
-import Article from "../src/article-main-standard";
-import { adConfig } from "./ad-mock";
+import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture from "../fixtures/full-article";
-import articleProps from "./shared-article-props";
+import articleSkeletonProps from "./shared-article-skeleton-props";
 
 export default () => {
   beforeEach(() => {
@@ -19,25 +18,20 @@ export default () => {
     const stream = jest.fn();
 
     renderer.create(
-      <Article
-        {...articleProps}
-        adConfig={adConfig}
+      <ArticleSkeleton
+        {...articleSkeletonProps}
         analyticsStream={stream}
-        article={articleFixture()}
+        data={articleFixture()}
+        Header={() => null}
         onAuthorPress={() => {}}
         onCommentGuidelinesPress={() => {}}
         onCommentsPress={() => {}}
         onLinkPress={() => {}}
         onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
-        pageSection="News"
-        referralUrl="thetimes.co.uk/article/dummy-article-url"
       />
     );
-    const [[call]] = stream.mock.calls;
-
-    expect(call).toMatchSnapshot();
+    expect(stream.mock.calls).toMatchSnapshot();
   });
 };

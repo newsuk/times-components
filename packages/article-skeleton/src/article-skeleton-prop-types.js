@@ -4,7 +4,7 @@ const articleSkeletonPropTypes = {
   adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({}),
-  Header: PropTypes.func,
+  Header: PropTypes.func.isRequired,
   receiveChildList: PropTypes.func,
   spotAccountId: PropTypes.string
 };

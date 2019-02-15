@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, FlatList } from "react-native";
 import PropTypes from "prop-types";
 import ArticleComments from "@times-components/article-comments";
 import { AdComposer } from "@times-components/ad";
@@ -11,7 +11,6 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
-import ArticleContent from "./article-content";
 import {
   articleSkeletonPropTypes,
   articleSkeletonDefaultProps
@@ -20,12 +19,18 @@ import listViewDataHelper from "./data-helper";
 import articleTrackingContext from "./article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
+import Gutter, { maxWidth } from "./gutter";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-const renderRow = analyticsStream => (
+const viewabilityConfig = {
+  viewAreaCoveragePercentThreshold: 100,
+  waitForInteraction: false
+};
+
+const renderRow = (
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -35,6 +40,7 @@ const renderRow = analyticsStream => (
   onTopicPress,
   onTwitterLinkPress,
   onVideoPress,
+  analyticsStream,
   interactiveConfig
 ) => {
   // eslint-disable-next-line default-case
@@ -162,27 +168,45 @@ class ArticleSkeleton extends Component {
     return (
       <AdComposer adConfig={adConfig}>
         <Responsive>
-          <ArticleContent
-            data={articleData}
-            Header={Header}
-            initialListSize={listViewSize}
-            interactiveConfig={interactiveConfig}
-            onAuthorPress={onAuthorPress}
-            onCommentGuidelinesPress={onCommentGuidelinesPress}
-            onCommentsPress={onCommentsPress}
-            onLinkPress={onLinkPress}
-            onRelatedArticlePress={onRelatedArticlePress}
-            onTopicPress={onTopicPress}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onVideoPress={onVideoPress}
-            onViewableItemsChanged={
-              onViewed ? this.onViewableItemsChanged : null
-            }
-            pageSize={listViewPageSize}
-            renderRow={renderRow(analyticsStream)}
-            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-            width={width}
-          />
+          <View style={styles.articleContainer}>
+            <FlatList
+              data={articleData}
+              initialListSize={listViewSize}
+              interactiveConfig={interactiveConfig}
+              keyExtractor={item =>
+                item.index ? `${item.type}.${item.index}` : item.type
+              }
+              ListHeaderComponent={
+                <Gutter>
+                  <Header width={Math.min(maxWidth, width)} />
+                </Gutter>
+              }
+              onViewableItemsChanged={
+                onViewed ? this.onViewableItemsChanged : null
+              }
+              pageSize={listViewPageSize}
+              renderItem={({ item }) => (
+                <Gutter>
+                  {renderRow(
+                    item,
+                    onAuthorPress,
+                    onCommentsPress,
+                    onCommentGuidelinesPress,
+                    onLinkPress,
+                    onRelatedArticlePress,
+                    onTopicPress,
+                    onTwitterLinkPress,
+                    onVideoPress,
+                    analyticsStream,
+                    interactiveConfig
+                  )}
+                </Gutter>
+              )}
+              scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+              testID="flat-list-article"
+              viewabilityConfig={viewabilityConfig}
+            />
+          </View>
         </Responsive>
       </AdComposer>
     );

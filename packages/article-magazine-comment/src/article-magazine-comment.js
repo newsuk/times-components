@@ -11,6 +11,7 @@ import {
 import Caption, { CentredCaption } from "@times-components/caption";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 import { ResponsiveContext } from "@times-components/responsive";
+import { tabletWidth } from "@times-components/styleguide";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
@@ -79,7 +80,7 @@ class ArticleMagazineComment extends Component {
                 styles.leadAssetContainer,
                 isTablet && styles.leadAssetContainerTablet
               ]}
-              width={width}
+              width={Math.min(width, tabletWidth)}
             />
           </Fragment>
         )}

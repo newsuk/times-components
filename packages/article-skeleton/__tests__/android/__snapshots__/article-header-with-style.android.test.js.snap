@@ -1,323 +1,352 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article with header 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
       <View>
+        <View />
+      </View>
+      <View>
         <View>
-          <Text>
-            NEW BREXIT REFERENDUM
-          </Text>
           <View>
             <View>
-              <View />
               <Text>
-                Another ministerial aide, 
-                <Text
-                  accessibilityRole="link"
-                >
-                  Robert Courts
-                </Text>
-                , resigned saying that he could not look himself in the mirror if he backed the Chequers proposals.
+                NEW BREXIT REFERENDUM
               </Text>
-            </View>
-            <View>
-              <View />
-              <Text>
-                Downing Street and Conservative Party bosses were seeking to assess the scale of a grassroots rebellion.
-              </Text>
-            </View>
-            <View>
-              <View />
-              <Text>
-                Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
-              </Text>
-            </View>
-            <View>
-              <View />
-              <Text>
-                Chuka Umunna, leader of the 
-                <Text>
-                  Labour Remainers
-                </Text>
-                , dismissed Mrs May’s 
-                <Text>
-                  compromise
-                </Text>
-                 as “anti-worker and anti-business” and said that it would “royally screw” Britain’s service sector.
-              </Text>
+              <View>
+                <View>
+                  <View />
+                  <Text>
+                    Another ministerial aide, 
+                    <Text
+                      accessibilityRole="link"
+                    >
+                      Robert Courts
+                    </Text>
+                    , resigned saying that he could not look himself in the mirror if he backed the Chequers proposals.
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    Downing Street and Conservative Party bosses were seeking to assess the scale of a grassroots rebellion.
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    Chuka Umunna, leader of the 
+                    <Text>
+                      Labour Remainers
+                    </Text>
+                    , dismissed Mrs May’s 
+                    <Text>
+                      compromise
+                    </Text>
+                     as “anti-worker and anti-business” and said that it would “royally screw” Britain’s service sector.
+                  </Text>
+                </View>
+              </View>
             </View>
           </View>
         </View>
       </View>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the ",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-              Object {
-                "attributes": Object {
-                  "href": "https://link.io",
-                },
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "police disclosure of evidence",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "link",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": " Telegraph ",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "italic",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "When Thatcher joined the campaign trail for the 2001 general election...",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "bold",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={1}
-      >
-        Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-        <Text
-          accessibilityRole="link"
-        >
-          police disclosure of evidence
-        </Text>
-        <Text>
-           Telegraph 
-        </Text>
-        last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-        <Text>
-          When Thatcher joined the campaign trail for the 2001 general election...
-        </Text>
-      </ArticleParagraph>
-    </View>
-    <View>
       <View>
-        <Video
-          accountId="5436121857001"
-          height={360}
-          policyKey="1.2.3.4"
-          poster={
-            Object {
-              "uri": "http://placekitten.com/1000/1000",
-            }
-          }
-          videoId="5831024132001"
-          width={640}
-        />
         <View>
-          <View>
-            <Text>
-              This is video caption
+          <ArticleParagraph
+            ast={
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the ",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                  Object {
+                    "attributes": Object {
+                      "href": "https://link.io",
+                    },
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "police disclosure of evidence",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "link",
+                  },
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": " Telegraph ",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "italic",
+                  },
+                  Object {
+                    "attributes": Object {
+                      "value": "last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "When Thatcher joined the campaign trail for the 2001 general election...",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "bold",
+                  },
+                ],
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={1}
+          >
+            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
+            <Text
+              accessibilityRole="link"
+            >
+              police disclosure of evidence
             </Text>
+            <Text>
+               Telegraph 
+            </Text>
+            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+            <Text>
+              When Thatcher joined the campaign trail for the 2001 general election...
+            </Text>
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <Video
+              accountId="5436121857001"
+              height={360}
+              policyKey="1.2.3.4"
+              poster={
+                Object {
+                  "uri": "http://placekitten.com/1000/1000",
+                }
+              }
+              videoId="5831024132001"
+              width={640}
+            />
+            <View>
+              <View>
+                <Text>
+                  This is video caption
+                </Text>
+              </View>
+            </View>
           </View>
         </View>
       </View>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "attributes": Object {},
-            "children": Array [
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "bold",
+                  },
+                ],
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#FF0000"
+            uid={3}
+          >
+            <Text>
+              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
+            </Text>
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <Video
+              accountId="5436121857001"
+              height={360}
+              policyKey="1.2.3.4"
+              poster={
+                Object {
+                  "uri": "http://placekitten.com/500/500",
+                }
+              }
+              videoId="5831024132001"
+              width={640}
+            />
+            <View>
+              <View>
+                <Text>
+                  This is video caption secondary
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "All the latest stories in culture and books.",
+                  "credits": "The credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "ratio": "1500:1000",
+                  "uri": "http://image.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
               Object {
                 "attributes": Object {},
                 "children": Array [
                   Object {
                     "attributes": Object {
-                      "value": "Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.",
+                      "value": "When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. ",
                     },
                     "children": Array [],
                     "name": "text",
                   },
                 ],
-                "name": "bold",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={3}
-      >
-        <Text>
-          Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-        </Text>
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View>
-        <Video
-          accountId="5436121857001"
-          height={360}
-          policyKey="1.2.3.4"
-          poster={
-            Object {
-              "uri": "http://placekitten.com/500/500",
+                "name": "paragraph",
+              }
             }
-          }
-          videoId="5831024132001"
-          width={640}
-        />
+            dropCapColour="#FF0000"
+            uid={6}
+          >
+            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
         <View>
           <View>
-            <Text>
-              This is video caption secondary
-            </Text>
+            <InteractiveWrapper
+              id="d2f83305-d558-4f78-f582-32115c659355"
+            />
           </View>
         </View>
       </View>
-    </View>
-    <View>
       <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "All the latest stories in culture and books.",
-              "credits": "The credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "primary",
-              "ratio": "1500:1000",
-              "uri": "http://image.io",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "attributes": Object {},
-            "children": Array [
+        <View>
+          <ArticleParagraph
+            ast={
               Object {
-                "attributes": Object {
-                  "value": "When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. ",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={6}
-      >
-        When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View>
-        <InteractiveWrapper
-          id="d2f83305-d558-4f78-f582-32115c659355"
-        />
-      </View>
-    </View>
-    <View>
-      <ArticleParagraph
-        ast={
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. ",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          }
-        }
-        dropCapColour="#FF0000"
-        uid={8}
-      >
-        Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "All the latest stories in culture and books.",
-              "credits": "The credits",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. ",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "paragraph",
+              }
             }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "3:2",
-              "uri": "https://image.io",
-            }
-          }
-        />
+            dropCapColour="#FF0000"
+            uid={8}
+          >
+            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+          </ArticleParagraph>
+        </View>
       </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "All the latest stories in culture and books.",
+                  "credits": "The credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "secondary",
+                  "ratio": "3:2",
+                  "uri": "https://image.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View />
     </View>
-    <View />
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;

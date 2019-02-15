@@ -30,6 +30,29 @@ const emptyArticle = {
 
 export const snapshotTests = renderComponent => [
   {
+    name: "an article",
+    test() {
+      const output = renderComponent(
+        <ArticleMainStandard
+          {...articleProps}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={articleFixture(testFixture)}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "an error",
     test() {
       const props = {

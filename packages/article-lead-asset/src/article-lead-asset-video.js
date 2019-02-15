@@ -1,5 +1,4 @@
 import React from "react";
-import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 
 import {
@@ -10,9 +9,9 @@ import {
 const ArticleLeadAssetVideo = ({
   aspectRatio,
   leadAsset,
-  isTablet,
   onVideoPress,
-  uri
+  uri,
+  width
 }) => {
   const {
     brightcoveVideoId,
@@ -20,7 +19,6 @@ const ArticleLeadAssetVideo = ({
     brightcoveAccountId,
     skySports
   } = leadAsset;
-  const width = screenWidth(isTablet);
   const height = width / aspectRatio;
 
   return (

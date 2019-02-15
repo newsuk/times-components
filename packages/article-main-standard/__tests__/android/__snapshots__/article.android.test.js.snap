@@ -1,103 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. an error 1`] = `<ArticleError />`;
-
-exports[`2. an article with no headline falls back to use shortheadline 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
+exports[`1. an article 1`] = `
+<ArticleSkeleton>
   <View>
     <View>
       <View>
-        <View />
-        <View>
-          <Text
-            selectable={true}
-          >
-            Some Short Headline
-          </Text>
-          <ArticleFlags />
-        </View>
-        <View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption={
+            <Caption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          }
+          uri="https://crop169.io"
+          width={660}
+        />
       </View>
     </View>
     <View>
       <View>
-        <Text
-          selectable={true}
-        >
-          Some content
+        <ArticleLabel
+          color="#1D1D1B"
+          title="Some Label"
+        />
+      </View>
+      <Text
+        selectable={true}
+      >
+        Some Headline
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="2"
+      >
+        Some Standfirst
+      </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          <ArticleBylineWithLinks
+            ast={
+              Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Some byline",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ]
+            }
+          />
+        </Text>
+      </View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
         </Text>
       </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
   </View>
-</RCTScrollView>
+</ArticleSkeleton>
 `;
 
-exports[`3. an article with ads 1`] = `
-<RCTScrollView
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
+exports[`2. an error 1`] = `<ArticleError />`;
+
+exports[`3. an article with no headline falls back to use shortheadline 1`] = `
+<ArticleSkeleton>
   <View>
-    <View>
-      <View>
-        <View />
-        <View>
-          <Text
-            selectable={true}
-          >
-            Some Headline
-          </Text>
-          <ArticleFlags />
-        </View>
-        <View>
-          <View>
-            <Text>
-              Friday March 13 2015, 6:54pm, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="native-inline-ad"
-      />
-    </View>
     <View />
     <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
+      <Text
+        selectable={true}
+      >
+        Some Short Headline
+      </Text>
+      <ArticleFlags />
+    </View>
+    <View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
     </View>
   </View>
-</RCTScrollView>
+</ArticleSkeleton>
+`;
+
+exports[`4. an article with ads 1`] = `
+<ArticleSkeleton>
+  <View>
+    <View />
+    <View>
+      <Text
+        selectable={true}
+      >
+        Some Headline
+      </Text>
+      <ArticleFlags />
+    </View>
+    <View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
 `;

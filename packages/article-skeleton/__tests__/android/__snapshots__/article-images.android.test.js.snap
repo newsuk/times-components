@@ -1,95 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a secondary image 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
       <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "secondary",
-              "ratio": "3:2",
-              "uri": "https://image-2.io",
-            }
-          }
-        />
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "secondary",
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleComments
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            url="https://url.io"
+          />
+        </View>
       </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`2. an inline image 1`] = `
-<RCTScrollView
-  ListHeaderComponent={
-    <Header
-      width={1670}
-    />
-  }
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-    <View />
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={1180}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
     <View>
       <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "inline",
-              "ratio": "9:4",
-              "uri": "https://image-inline.io",
-            }
-          }
-        />
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "inline",
+                  "ratio": "9:4",
+                  "uri": "https://image-inline.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleComments
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            url="https://url.io"
+          />
+        </View>
       </View>
     </View>
-    <View />
-    <View>
-      <ArticleComments
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        url="https://url.io"
-      />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;

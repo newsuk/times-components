@@ -1,136 +1,310 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. scaled medium full article 1`] = `
-<RCTScrollView>
-  <View>
-    <View />
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
     <View>
-      <ArticleParagraph>
-        Some content
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
           }
-        }
-      >
-        <ArticleTopics />
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleParagraph>
+            Some content
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "marginLeft": 10,
+                "marginRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <ArticleTopics />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "maxWidth": 660,
+                "width": "100%",
+              }
+            }
+          >
+            <RelatedArticles />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleComments />
+        </View>
       </View>
     </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`2. scaled large full article 1`] = `
-<RCTScrollView>
-  <View>
-    <View />
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
     <View>
-      <ArticleParagraph>
-        Some content
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
           }
-        }
-      >
-        <ArticleTopics />
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleParagraph>
+            Some content
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "marginLeft": 10,
+                "marginRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <ArticleTopics />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "maxWidth": 660,
+                "width": "100%",
+              }
+            }
+          >
+            <RelatedArticles />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleComments />
+        </View>
       </View>
     </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`3. scaled xlarge full article 1`] = `
-<RCTScrollView>
-  <View>
-    <View />
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
     <View>
-      <ArticleParagraph>
-        Some content
-      </ArticleParagraph>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "width": 660,
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
           }
-        }
-      >
-        <ArticleTopics />
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleParagraph>
+            Some content
+          </ArticleParagraph>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "marginLeft": 10,
+                "marginRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <ArticleTopics />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "maxWidth": 660,
+                "width": "100%",
+              }
+            }
+          >
+            <RelatedArticles />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "width": 1180,
+            }
+          }
+        >
+          <ArticleComments />
+        </View>
       </View>
     </View>
-    <View>
-      <View
-        style={
-          Object {
-            "alignSelf": "center",
-            "maxWidth": 660,
-            "width": "100%",
-          }
-        }
-      >
-        <RelatedArticles />
-      </View>
-    </View>
-    <View>
-      <ArticleComments />
-    </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
