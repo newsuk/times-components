@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.1](https://github.com/newsuk/times-components/compare/@times-components/utils@4.4.0...@times-components/utils@4.4.1) (2019-02-15)
+
+
+### Bug Fixes
+
+* articles should not be larger than screen width ([#1708](https://github.com/newsuk/times-components/issues/1708)) ([48d851b](https://github.com/newsuk/times-components/commit/48d851b))
+
+
+
+
+
 # [4.4.0](https://github.com/newsuk/times-components/compare/@times-components/utils@4.3.2...@times-components/utils@4.4.0) (2019-02-15)
 
 
