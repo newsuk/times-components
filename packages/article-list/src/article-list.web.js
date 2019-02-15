@@ -6,7 +6,7 @@ import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth } from "@times-components/utils";
+import { normaliseWidthForAssetRequestCache } from "@times-components/utils";
 import LazyLoad from "@times-components/lazy-load";
 import { scrollUpToPaging } from "./utils/index.web";
 import ArticleListError from "./article-list-error";
@@ -24,7 +24,7 @@ class ArticleList extends Component {
       return null;
     }
 
-    return node ? normaliseWidth(node.clientWidth) : null;
+    return node ? normaliseWidthForAssetRequestCache(node.clientWidth) : null;
   }
 
   constructor(props) {
