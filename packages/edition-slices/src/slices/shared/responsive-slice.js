@@ -6,8 +6,8 @@ import Gutter from "./gutter";
 
 const ResponsiveSlice = ({ renderSmall, renderMedium }) => (
   <ResponsiveContext.Consumer>
-    {({ editionBreakpoint, screenWidth }) =>
-      console.log("editionBreakpoint",editionBreakpoint, screenWidth) || editionBreakpoint === editionBreakpoints.small ? (
+    {({ editionBreakpoint }) =>
+      editionBreakpoint === editionBreakpoints.small ? (
         renderSmall()
       ) : (
         <Gutter>{renderMedium()}</Gutter>
