@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollView } from "react-native";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 
 import {
@@ -28,10 +29,12 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderTile = Tile => (_, { decorateAction }) => (
-  <Tile
-    onPress={preventDefaultedAction(decorateAction)("onPress")}
-    tile={tile}
-  />
+  <ScrollView>
+    <Tile
+      onPress={preventDefaultedAction(decorateAction)("onPress")}
+      tile={tile}
+    />
+  </ScrollView>
 );
 
 const tileStories = [
