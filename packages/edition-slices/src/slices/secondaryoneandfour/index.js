@@ -11,11 +11,7 @@ import styles from "./styles";
 
 const SecondaryOneAndFour = ({
   onPress,
-  secondary1,
-  support1,
-  support2,
-  support3,
-  support4
+  slice: { secondary, support1, support2, support3, support4 }
 }) => (
   <View style={styles.sliceWrapper}>
     <View style={styles.logoContainer}>
@@ -23,7 +19,7 @@ const SecondaryOneAndFour = ({
     </View>
     <ItemRowSeparator style={styles.separator} />
     <SecondaryOneAndFourSlice
-      renderSecondary1={() => <TileN onPress={onPress} tile={secondary1} />}
+      renderSecondary={() => <TileN onPress={onPress} tile={secondary} />}
       renderSupport1={() => <TileO onPress={onPress} tile={support1} />}
       renderSupport2={() => <TileO onPress={onPress} tile={support2} />}
       renderSupport3={() => <TileO onPress={onPress} tile={support3} />}
@@ -34,11 +30,13 @@ const SecondaryOneAndFour = ({
 
 SecondaryOneAndFour.propTypes = {
   onPress: PropTypes.func.isRequired,
-  secondary1: PropTypes.shape({}).isRequired,
-  support1: PropTypes.shape({}).isRequired,
-  support2: PropTypes.shape({}).isRequired,
-  support3: PropTypes.shape({}).isRequired,
-  support4: PropTypes.shape({}).isRequired
+  slice: PropTypes.shape({
+    secondary: PropTypes.shape({}).isRequired,
+    support1: PropTypes.shape({}).isRequired,
+    support2: PropTypes.shape({}).isRequired,
+    support3: PropTypes.shape({}).isRequired,
+    support4: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default SecondaryOneAndFour;

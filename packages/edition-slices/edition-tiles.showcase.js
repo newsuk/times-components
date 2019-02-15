@@ -84,7 +84,8 @@ const tileStories = [
     Tile: TileN
   },
   {
-    name: "Tile O - No image, 20pt headline, no teaser, white color, black background",
+    name:
+      "Tile O - No image, 20pt headline, no teaser, white color, black background",
     Tile: TileO
   }
 ];

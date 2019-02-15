@@ -114,7 +114,7 @@ exports[`4. lead two no pic and two 1`] = `
 
 exports[`5. secondary one slice 1`] = `<TileA />`;
 
-exports[`6. secondary four 1`] = `
+exports[`6. secondary four slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -236,7 +236,7 @@ exports[`6. secondary four 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and four 1`] = `
+exports[`7. secondary one and four slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -378,7 +378,7 @@ exports[`7. secondary one and four 1`] = `
 </div>
 `;
 
-exports[`8. secondary two and two 1`] = `
+exports[`8. secondary two and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -477,7 +477,7 @@ exports[`8. secondary two and two 1`] = `
 </div>
 `;
 
-exports[`9. secondary two no pic and two 1`] = `
+exports[`9. secondary two no pic and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -524,7 +524,7 @@ exports[`9. secondary two no pic and two 1`] = `
 </div>
 `;
 
-exports[`10. list two and six no pic 1`] = `
+exports[`10. list two and six no pic slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -685,7 +685,7 @@ exports[`10. list two and six no pic 1`] = `
 </div>
 `;
 
-exports[`11. leaders 1`] = `
+exports[`11. leaders slice 1`] = `
 <style>
 .S1 {
   font-weight: inherit;

@@ -5,13 +5,13 @@ import propTypes from "./proptypes";
 import { ItemRowSeparator } from "../shared";
 
 const SecondaryOneAndFourSlice = ({
-  renderSecondary1,
+  renderSecondary,
   renderSupport1,
   renderSupport2,
   renderSupport3,
   renderSupport4
 }) => {
-  const renderRowOne = renderSecondary1();
+  const renderRowOne = renderSecondary();
   const renderFourRows = [
     renderSupport1(),
     renderSupport2(),

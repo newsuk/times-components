@@ -71,6 +71,11 @@ const sliceStories = [
     Slice: SecondaryOneSlice
   },
   {
+    mock: mockSecondaryOneAndFourSlice(),
+    name: "Supplement Secondary One And Four (NOOOO)",
+    Slice: SecondaryOneAndFourSlice
+  },
+  {
     mock: mockSecondaryFourSlice(),
     name: "Secondary Four (CCCC)",
     Slice: SecondaryFourSlice
@@ -94,11 +99,6 @@ const sliceStories = [
     mock: mockLeadersSlice(),
     name: "Leaders (MMMM)",
     Slice: LeadersSlice
-  },
-  {
-    mock: mockSecondaryOneAndFourSlice(),
-    name: "Supplement Secondary One And Four (NOOOO)",
-    Slice: SecondaryOneAndFourSlice
   }
 ];
 

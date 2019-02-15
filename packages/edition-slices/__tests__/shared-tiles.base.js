@@ -29,7 +29,7 @@ jest.mock("@times-components/gradient", () => "Gradient");
 const tile = mockEditionSlice(1).items[0];
 
 const testTile = Tile => {
-  const output = TestRenderer.create(<Tile onPress={() => { }} tile={tile} />);
+  const output = TestRenderer.create(<Tile onPress={() => {}} tile={tile} />);
   expect(output).toMatchSnapshot();
 };
 
