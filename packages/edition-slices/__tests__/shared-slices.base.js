@@ -26,22 +26,13 @@ import {
   SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
-jest.mock("../src/tiles", () => ({
-  TileA: "TileA",
-  TileB: "TileB",
-  TileC: "TileC",
-  TileD: "TileD",
-  TileE: "TileE",
-  TileF: "TileF",
-  TileG: "TileG",
-  TileH: "TileH",
-  TileI: "TileI",
-  TileJ: "TileJ",
-  TileK: "TileK",
-  TileL: "TileL",
-  TileM: "TileM"
-}));
-
+jest.mock("../src/tiles", () => {
+  const tileMocks = {};
+  Object.keys(require.requireActual("../src/tiles")).forEach(key => {
+    tileMocks[key] = key;
+  });
+  return tileMocks;
+});
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
