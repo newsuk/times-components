@@ -64,6 +64,9 @@ const sharedStyles = {
     flexDirection: "row",
     justifyContent: "center"
   },
+  metaTablet: {
+    paddingTop: spacing(1)
+  },
   seperator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,

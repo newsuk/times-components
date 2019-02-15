@@ -1,12 +1,16 @@
 import { StyleSheet } from "react-native";
 import nativeStyles from "./native";
 
-const iosStyles = {
-  ...nativeStyles
+const androidStyles = {
+  ...nativeStyles,
+  metaTablet: {
+    ...nativeStyles.metaTablet,
+    paddingTop: "auto"
+  }
 };
 
 const styles = StyleSheet.create({
-  ...iosStyles
+  ...androidStyles
 });
 
 export default styles;

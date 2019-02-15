@@ -18,12 +18,12 @@ const ArticleMeta = ({
 }) => (
   <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
     {byline && (
-      <View style={styles.meta}>
+      <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
       </View>
     )}
     {isTablet ? <Seperator /> : null}
-    <View style={styles.meta}>
+    <View style={[styles.meta, isTablet && styles.metaTablet]}>
       <Text
         style={[
           styles.datePublication,
