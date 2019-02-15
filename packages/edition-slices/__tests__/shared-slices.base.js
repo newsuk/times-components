@@ -14,6 +14,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
+import Responsive from "@times-components/responsive";
 import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -108,7 +109,9 @@ export default () => {
     name,
     test: () => {
       const output = TestRenderer.create(
-        <Slice onPress={() => {}} slice={mock} />
+        <Responsive>
+          <Slice onPress={() => {}} slice={mock} />
+        </Responsive>
       );
 
       expect(output).toMatchSnapshot();

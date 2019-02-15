@@ -460,7 +460,6 @@ exports[`14. tile r 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
