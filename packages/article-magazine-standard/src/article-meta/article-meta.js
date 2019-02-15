@@ -9,15 +9,18 @@ import { colours } from "@times-components/styleguide";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
+const Seperator = () => <View style={styles.seperator} />;
+
 const ArticleMeta = ({
   byline,
+  isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
-  <View style={styles.metaContainer}>
+  <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
     {byline && (
-      <View style={styles.meta}>
+      <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
             <ArticleBylineWithLinks
@@ -29,8 +32,14 @@ const ArticleMeta = ({
         </Context.Consumer>
       </View>
     )}
-    <View style={styles.meta}>
-      <Text style={styles.datePublication}>
+    {isTablet ? <Seperator /> : null}
+    <View style={[styles.meta, isTablet && styles.metaTablet]}>
+      <Text
+        style={[
+          styles.datePublication,
+          isTablet && styles.datePublicationTablet
+        ]}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </Text>
     </View>
