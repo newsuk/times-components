@@ -32,22 +32,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     Some Standfirst
   </h2>
-  <svg
-    aria-label="[title]"
-    height={8}
-    role="img"
-    viewBox="0 0 20 20"
-    width={8}
-  >
-    <title>
-      Diamond Icon
-    </title>
-    <g>
-      <path
-        d="90928a4d6e9b702222e7187e68c282b7"
-      />
-    </g>
-  </svg>
   new
   <span>
     <span>

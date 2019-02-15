@@ -2,13 +2,7 @@
 
 exports[`1. article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#333333"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="No Colour Flag"
   >
@@ -19,13 +13,7 @@ exports[`1. article flag 1`] = `
 
 exports[`2. red article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="red"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
   >
@@ -36,13 +24,7 @@ exports[`2. red article flag 1`] = `
 
 exports[`3. hex colour article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#FF0000"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
   >
@@ -53,13 +35,7 @@ exports[`3. hex colour article flag 1`] = `
 
 exports[`4. rgba colour article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#0B0308"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
   >
@@ -70,13 +46,7 @@ exports[`4. rgba colour article flag 1`] = `
 
 exports[`5. new article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#E34605"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="new Flag"
   >
@@ -87,13 +57,7 @@ exports[`5. new article flag 1`] = `
 
 exports[`6. updated article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#3C81BE"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="updated Flag"
   >
@@ -104,13 +68,7 @@ exports[`6. updated article flag 1`] = `
 
 exports[`7. exclusive article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#C51D24"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="exclusive Flag"
   >
@@ -121,13 +79,7 @@ exports[`7. exclusive article flag 1`] = `
 
 exports[`8. sponsored article flag 1`] = `
 <View>
-  <View>
-    <IconDiamond
-      fillColour="#4D4D4D"
-      height={8}
-      width={8}
-    />
-  </View>
+  <View />
   <Text
     accessibilityLabel="sponsored Flag"
   >
@@ -140,13 +92,7 @@ exports[`9. article flags 1`] = `
 <View>
   <View>
     <View>
-      <View>
-        <IconDiamond
-          fillColour="#3C81BE"
-          height={8}
-          width={8}
-        />
-      </View>
+      <View />
       <Text
         accessibilityLabel="updated Flag"
       >
@@ -156,13 +102,7 @@ exports[`9. article flags 1`] = `
   </View>
   <View>
     <View>
-      <View>
-        <IconDiamond
-          fillColour="#C51D24"
-          height={8}
-          width={8}
-        />
-      </View>
+      <View />
       <Text
         accessibilityLabel="exclusive Flag"
       >

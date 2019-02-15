@@ -1,71 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icondiamond renders 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 20,
-      "width": 20,
-    }
-  }
->
-  <ARTGroup
-    transform={
-      Array [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-      ]
-    }
-  >
-    <ARTGroup
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    >
-      <ARTShape
-        d="c3ca00c47bbe3e1a429d0716c0592877"
-        fill={
-          Array [
-            0,
-            0.11372549019607843,
-            0.11372549019607843,
-            0.10588235294117647,
-            1,
-          ]
-        }
-        stroke={null}
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
-`;
-
-exports[`2. icontwitter renders 1`] = `
+exports[`1. icontwitter renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -117,7 +52,7 @@ exports[`2. icontwitter renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`3. iconvideo renders 1`] = `
+exports[`2. iconvideo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -223,7 +158,7 @@ exports[`3. iconvideo renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`4. iconemail renders 1`] = `
+exports[`3. iconemail renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -288,7 +223,7 @@ exports[`4. iconemail renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`5. iconstar renders 1`] = `
+exports[`4. iconstar renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -340,7 +275,7 @@ exports[`5. iconstar renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`6. iconfacebook renders 1`] = `
+exports[`5. iconfacebook renders 1`] = `
 <ARTSurfaceView
   style={
     Object {

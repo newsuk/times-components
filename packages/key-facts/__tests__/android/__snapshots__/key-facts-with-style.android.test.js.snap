@@ -45,14 +45,10 @@ exports[`key facts with title and context theme 1`] = `
         style={
           Object {
             "backgroundColor": "#FFFFFF",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -86,14 +82,10 @@ exports[`key facts with title and context theme 1`] = `
         style={
           Object {
             "backgroundColor": "#FFFFFF",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -137,14 +129,10 @@ exports[`key facts with title and context theme 1`] = `
         style={
           Object {
             "backgroundColor": "#FFFFFF",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -178,14 +166,10 @@ exports[`key facts with title and context theme 1`] = `
         style={
           Object {
             "backgroundColor": "#FFFFFF",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -272,14 +256,10 @@ exports[`key facts with title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -313,14 +293,10 @@ exports[`key facts with title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -364,14 +340,10 @@ exports[`key facts with title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -405,14 +377,10 @@ exports[`key facts with title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -499,14 +467,10 @@ exports[`key facts with title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -540,14 +504,10 @@ exports[`key facts with title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -591,14 +551,10 @@ exports[`key facts with title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -632,14 +588,10 @@ exports[`key facts with title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -711,14 +663,10 @@ exports[`key facts without title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -752,14 +700,10 @@ exports[`key facts without title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -803,14 +747,10 @@ exports[`key facts without title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -844,14 +784,10 @@ exports[`key facts without title on mobile 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -923,14 +859,10 @@ exports[`key facts without title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -964,14 +896,10 @@ exports[`key facts without title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -1015,14 +943,10 @@ exports[`key facts without title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
@@ -1056,14 +980,10 @@ exports[`key facts without title on tablet 1`] = `
         style={
           Object {
             "backgroundColor": "#103546",
-            "height": 8,
+            "borderRadius": 2.5,
+            "height": 5,
             "top": 2,
-            "transform": Array [
-              Object {
-                "rotate": "45deg",
-              },
-            ],
-            "width": 8,
+            "width": 5,
           }
         }
       />
