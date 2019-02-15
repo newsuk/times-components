@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.12.0...@times-components/edition-slices@0.12.1) (2019-02-15)
+
+
+### Bug Fixes
+
+* broken article label ([#1706](https://github.com/newsuk/times-components/issues/1706)) ([ad965af](https://github.com/newsuk/times-components/commit/ad965af))
+
+
+
+
+
 # [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.11.7...@times-components/edition-slices@0.12.0) (2019-02-15)
 
 
