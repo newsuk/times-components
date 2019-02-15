@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.21.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.20.2...@times-components/styleguide@3.21.0) (2019-02-15)
+
+
+### Features
+
+* REPLAT-5141: Add new slice layout and two new tiles N/O ([#1687](https://github.com/newsuk/times-components/issues/1687)) ([202c2d2](https://github.com/newsuk/times-components/commit/202c2d2))
+
+
+
+
+
 ## [3.20.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.20.1...@times-components/styleguide@3.20.2) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/styleguide

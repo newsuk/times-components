@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.3.19...@times-components/icons@2.4.0) (2019-02-15)
+
+
+### Features
+
+* Remove diamond icon and use bullet for key facts and article flags ([#1698](https://github.com/newsuk/times-components/issues/1698)) ([8127131](https://github.com/newsuk/times-components/commit/8127131))
+* REPLAT-5141: Add new slice layout and two new tiles N/O ([#1687](https://github.com/newsuk/times-components/issues/1687)) ([202c2d2](https://github.com/newsuk/times-components/commit/202c2d2))
+
+
+
+
+
 ## [2.3.19](https://github.com/newsuk/times-components/compare/@times-components/icons@2.3.18...@times-components/icons@2.3.19) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/icons

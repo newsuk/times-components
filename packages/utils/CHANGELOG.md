@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/newsuk/times-components/compare/@times-components/utils@4.3.2...@times-components/utils@4.4.0) (2019-02-15)
+
+
+### Features
+
+* gutters ([#1704](https://github.com/newsuk/times-components/issues/1704)) ([e209d18](https://github.com/newsuk/times-components/commit/e209d18))
+
+
+
+
+
 ## [4.3.2](https://github.com/newsuk/times-components/compare/@times-components/utils@4.3.1...@times-components/utils@4.3.2) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/utils

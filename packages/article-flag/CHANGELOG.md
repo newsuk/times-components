@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.4.16...@times-components/article-flag@2.5.0) (2019-02-15)
+
+
+### Features
+
+* Remove diamond icon and use bullet for key facts and article flags ([#1698](https://github.com/newsuk/times-components/issues/1698)) ([8127131](https://github.com/newsuk/times-components/commit/8127131))
+
+
+
+
+
 ## [2.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.4.15...@times-components/article-flag@2.4.16) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/article-flag

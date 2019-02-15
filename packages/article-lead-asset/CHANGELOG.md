@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@0.3.20...@times-components/article-lead-asset@0.4.0) (2019-02-15)
+
+
+### Features
+
+* gutters ([#1704](https://github.com/newsuk/times-components/issues/1704)) ([e209d18](https://github.com/newsuk/times-components/commit/e209d18))
+
+
+
+
+
 ## [0.3.20](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@0.3.19...@times-components/article-lead-asset@0.3.20) (2019-02-14)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

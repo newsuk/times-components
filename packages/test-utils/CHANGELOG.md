@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.1.16...@times-components/test-utils@2.2.0) (2019-02-15)
+
+
+### Features
+
+* gutters ([#1704](https://github.com/newsuk/times-components/issues/1704)) ([e209d18](https://github.com/newsuk/times-components/commit/e209d18))
+
+
+
+
+
 ## [2.1.16](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.1.15...@times-components/test-utils@2.1.16) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/test-utils
