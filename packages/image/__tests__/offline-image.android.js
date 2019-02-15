@@ -12,7 +12,7 @@ const getLayoutEventForWidth = width => ({
 export default () => {
   const tests = [
     {
-      name: "append offline=true on the first image only",
+      name: "fallback to offline image if online image throws an error",
       test: () => {
         const uri =
           "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100";
@@ -23,6 +23,11 @@ export default () => {
         testInstance.root.children[0].props.onLayout(
           getLayoutEventForWidth(700)
         );
+
+        const onlineImage = testInstance.root.find(
+          node => node.type === ReactNativeImage
+        );
+        onlineImage.props.onError({ nativeEvent: { error: "Mock Error" } });
 
         const images = testInstance.root.findAll(
           node => node.type === ReactNativeImage

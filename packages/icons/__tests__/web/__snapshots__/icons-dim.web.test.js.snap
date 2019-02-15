@@ -53,3 +53,12 @@ exports[`6. iconfacebook sets a width when height is set 1`] = `
   width={25}
 />
 `;
+
+exports[`7. thetimeslogo sets a width when height is set 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={50}
+/>
+`;

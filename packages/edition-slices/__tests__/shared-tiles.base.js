@@ -14,7 +14,9 @@ import {
   TileI,
   TileJ,
   TileL,
-  TileM
+  TileM,
+  TileN,
+  TileO
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -27,7 +29,7 @@ jest.mock("@times-components/gradient", () => "Gradient");
 const tile = mockEditionSlice(1).items[0];
 
 const testTile = Tile => {
-  const output = TestRenderer.create(<Tile onPress={() => {}} tile={tile} />);
+  const output = TestRenderer.create(<Tile onPress={() => { }} tile={tile} />);
   expect(output).toMatchSnapshot();
 };
 
@@ -76,6 +78,14 @@ export default () => {
     {
       name: "tile m",
       test: () => testTile(TileM)
+    },
+    {
+      name: "tile n",
+      test: () => testTile(TileN)
+    },
+    {
+      name: "tile O",
+      test: () => testTile(TileO)
     }
   ];
 

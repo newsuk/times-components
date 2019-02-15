@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. four child elements 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "backgroundColor": "rgba(39,45,52,1.00)",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "flexDirection": "row",
+        "msFlexDirection": "row",
+      }
+    }
+  >
+    <div>
+      <div>
+        secondary-1
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    <div>
+      support-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    <div>
+      support-2
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    <div>
+      support-3
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    <div>
+      support-4
+    </div>
+  </div>
+</div>
+`;

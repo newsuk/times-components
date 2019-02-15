@@ -9,3 +9,5 @@ export { default as TileI } from "./tile-i";
 export { default as TileJ } from "./tile-j";
 export { default as TileL } from "./tile-l";
 export { default as TileM } from "./tile-m";
+export { default as TileN } from "./tile-n";
+export { default as TileO } from "./tile-o";

@@ -16,13 +16,18 @@ const TileSummary = ({
   strapline,
   straplineStyle,
   style,
-  summary
+  summary,
+  summaryStyle,
+  flagColour,
+  labelColour
 }) => (
   <ArticleSummary
     content={
-      summary ? () => <ArticleSummaryContent ast={summary} /> : undefined
+      summary
+        ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
+        : undefined
     }
-    flags={() => <ArticleFlags flags={flags} />}
+    flags={() => <ArticleFlags color={flagColour} flags={flags} />}
     headline={() => (
       <ArticleSummaryHeadline
         headline={headline || shortHeadline}
@@ -31,7 +36,8 @@ const TileSummary = ({
     )}
     label={label}
     labelProps={{
-      color: colours.section[section] || colours.section.default,
+      color:
+        labelColour || (colours.section[section] || colours.section.default),
       isVideo: hasVideo,
       title: label
     }}
@@ -50,20 +56,26 @@ const TileSummary = ({
 );
 
 TileSummary.propTypes = {
+  flagColour: PropTypes.string,
   headlineStyle: PropTypes.shape({}),
+  labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   summary: PropTypes.arrayOf(PropTypes.shape({})),
+  summaryStyle: PropTypes.shape({}),
   tile: PropTypes.shape({}).isRequired
 };
 
 TileSummary.defaultProps = {
+  flagColour: null,
   headlineStyle: null,
+  labelColour: null,
   strapline: null,
   straplineStyle: null,
   style: null,
-  summary: null
+  summary: null,
+  summaryStyle: null
 };
 
 export default TileSummary;

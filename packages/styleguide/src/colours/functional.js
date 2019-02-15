@@ -10,6 +10,8 @@ const functionalColours = {
   brandColour: "#1D1D1B",
   bullet: "#103546",
   contrast: "#FFFFFF",
+  darkSupplement: "#272D34",
+  greyLabel: "#CCC",
   keyline: "#DBDBDB",
   overlayGradientEnd: "rgba(0, 0, 0, 0)",
   overlayGradientStart: "rgba(1, 1, 1, 0.9)",

@@ -362,6 +362,8 @@ exports[`tablet full article with style 1`] = `
             style={
               Object {
                 "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
               }
             }
           >
@@ -378,6 +380,16 @@ exports[`tablet full article with style 1`] = `
             <View
               style={
                 Object {
+                  "borderRightColor": "#DBDBDB",
+                  "borderRightWidth": 1,
+                  "height": 15,
+                  "marginHorizontal": 10,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
                   "flexDirection": "row",
                   "flexWrap": "wrap",
                 }
@@ -390,7 +402,7 @@ exports[`tablet full article with style 1`] = `
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginTop": 15,
+                    "marginTop": "auto",
                   }
                 }
               >

@@ -10,8 +10,10 @@ import opinionOneAndTwoRoles from "./templates/opiniononeandtwo/roles";
 import SecondaryFourSlice from "./templates/secondaryfour";
 import SecondaryTwoNoPicAndTwoSlice from "./templates/secondarytwonopicandtwo";
 import SecondaryTwoAndTwoSlice from "./templates/secondarytwoandtwo";
+import SecondaryOneAndFourSlice from "./templates/secondaryoneandfour";
 import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
 import Leaders from "./templates/leaders";
+import { ItemColSeparator, ItemRowSeparator } from "./templates/shared";
 
 export {
   StandardSlice,
@@ -25,7 +27,10 @@ export {
   opinionOneAndTwoRoles,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
+  SecondaryOneAndFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
   Leaders,
-  ListTwoAndSixNoPic
+  ListTwoAndSixNoPic,
+  ItemColSeparator,
+  ItemRowSeparator
 };

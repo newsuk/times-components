@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.11.0...@times-components/provider-queries@1.11.1) (2019-02-14)
+
+
+### Bug Fixes
+
+* Fragment name conflicts ([#1693](https://github.com/newsuk/times-components/issues/1693)) ([f808182](https://github.com/newsuk/times-components/commit/f808182))
+
+
+
+
+
 # [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.10.0...@times-components/provider-queries@1.11.0) (2019-02-13)
 
 

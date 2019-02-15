@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.6.13...@times-components/article-image@4.7.0) (2019-02-14)
+
+
+### Features
+
+* fullwidth image spacing ([#1695](https://github.com/newsuk/times-components/issues/1695)) ([8b8e6cb](https://github.com/newsuk/times-components/commit/8b8e6cb))
+
+
+
+
+
 ## [4.6.13](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.6.12...@times-components/article-image@4.6.13) (2019-02-13)
 
 **Note:** Version bump only for package @times-components/article-image

@@ -22,6 +22,7 @@ import {
   LeadersSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
+  SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
@@ -35,6 +36,9 @@ jest.mock("../src/tiles", () => {
 });
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
+}));
+jest.mock("@times-components/icons", () => ({
+  TheTimesLogo: "TheTimesLogo"
 }));
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/link", () => "Link");
@@ -114,6 +118,23 @@ export default () => {
           />
         );
 
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "Secondary One And Four",
+      test: () => {
+        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
+        const output = TestRenderer.create(
+          <SecondaryOneAndFourSlice
+            onPress={() => {}}
+            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
+            support1={secondaryTwoNoPicAndTwoData.support1}
+            support2={secondaryTwoNoPicAndTwoData.support2}
+            support3={secondaryTwoNoPicAndTwoData.support2}
+            support4={secondaryTwoNoPicAndTwoData.support2}
+          />
+        );
         expect(output).toMatchSnapshot();
       }
     },
