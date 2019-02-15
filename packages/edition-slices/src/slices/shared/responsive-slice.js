@@ -8,9 +8,9 @@ const ResponsiveSlice = ({ renderSmall, renderMedium }) => (
   <ResponsiveContext.Consumer>
     {({ editionBreakpoint }) =>
       editionBreakpoint === editionBreakpoints.small ? (
-        renderSmall()
+        renderSmall(editionBreakpoint)
       ) : (
-        <Gutter>{renderMedium()}</Gutter>
+        <Gutter>{renderMedium(editionBreakpoint)}</Gutter>
       )
     }
   </ResponsiveContext.Consumer>
