@@ -12,6 +12,7 @@ import {
   getLeadAsset,
   getStandardTemplateCrop
 } from "@times-components/utils";
+import { tabletWidth } from "@times-components/styleguide";
 import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
@@ -56,7 +57,7 @@ class ArticlePage extends Component {
                 }
                 renderModalCaption={({ caption }) => <Caption {...caption} />}
                 style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
-                width={parentProps.width}
+                width={Math.min(parentProps.width, tabletWidth)}
               />
             </View>
           );
