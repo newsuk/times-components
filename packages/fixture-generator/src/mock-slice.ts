@@ -1,5 +1,6 @@
 import {
   ArticleSlice,
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
@@ -213,12 +214,22 @@ function mockLeadersSlice(): LeadersSlice {
   };
 }
 
+function mockCommentLeadAndCartoonSlice(): CommentLeadAndCartoonSlice {
+  const tiles = getTiles(2);
+  return <CommentLeadAndCartoonSlice>{
+    lead: tiles[0],
+    cartoon: tiles[1],
+    items: tiles
+  };
+}
+
 function mockArticleSlice(count: number): ArticleSlice {
   return { items: getTiles(count) };
 }
 
 export default mockArticleSlice;
 export {
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,

@@ -1,5 +1,6 @@
 import {
   LeadersSlice,
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
@@ -13,10 +14,11 @@ import {
 } from "./slices";
 
 const sliceMap = {
-  LeadersSlice,
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadersSlice,
   LeadTwoNoPicAndTwoSlice,
   SecondaryFourSlice,
   SecondaryOneAndFourSlice,

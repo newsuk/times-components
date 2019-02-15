@@ -9,6 +9,7 @@ import {
 } from "./mock-section";
 import mockEditionSlice, {
   mockLeadersSlice,
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,
@@ -25,6 +26,7 @@ import MockTopic from "./mock-topic";
 
 export {
   mockLeadersSlice,
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,

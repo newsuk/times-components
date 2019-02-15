@@ -11,3 +11,4 @@ export { default as SecondaryTwoAndTwoSlice } from "./secondarytwoandtwo";
 export {
   default as SecondaryTwoNoPicAndTwoSlice
 } from "./secondarytwonopicandtwo";
+export { default as CommentLeadAndCartoonSlice } from "./commentleadandcartoon";
