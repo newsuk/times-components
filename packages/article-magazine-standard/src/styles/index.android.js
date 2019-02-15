@@ -1,19 +1,16 @@
 import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
+import nativeStyles from "./native";
 
-const nativeStyles = {
-  ...sharedStyles,
+const androidStyles = {
+  ...nativeStyles,
   metaTablet: {
+    ...nativeStyles.metaTablet,
     paddingTop: "auto"
-  },
-  standFirst: {
-    ...sharedStyles.standFirst,
-    lineHeight: 25
   }
 };
 
 const styles = StyleSheet.create({
-  ...nativeStyles
+  ...androidStyles
 });
 
 export default styles;
