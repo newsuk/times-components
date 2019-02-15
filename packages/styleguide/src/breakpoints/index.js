@@ -5,14 +5,16 @@ const editionBreakpoints = {
   xlarge: "xlarge"
 };
 
+const editionBreakpointWidths = [768, 1024, 1366]
+const editionMaxWidth = editionBreakpointWidths[editionBreakpointWidths.length - 1];
 const getEditionBreakpoint = width => {
-  if (width < 768) {
+  if (width < editionBreakpointWidths[0]) {
     return editionBreakpoints.small;
   }
-  if (width < 1024) {
+  if (width < editionBreakpointWidths[1]) {
     return editionBreakpoints.medium;
   }
-  if (width < 1366) {
+  if (width < editionBreakpointWidths[2]) {
     return editionBreakpoints.large;
   }
   return editionBreakpoints.xlarge;
@@ -26,4 +28,4 @@ export default {
   small: 520,
   wide: 1024
 };
-export { editionBreakpoints, getEditionBreakpoint };
+export { editionBreakpoints, editionMaxWidth, getEditionBreakpoint };

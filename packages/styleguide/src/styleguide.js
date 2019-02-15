@@ -5,6 +5,7 @@ import FadeIn from "./animations";
 
 import breakpoints, {
   editionBreakpoints,
+  editionMaxWidth,
   getEditionBreakpoint
 } from "./breakpoints";
 import timesLineHeightsFactory from "./line-heights";
@@ -40,6 +41,7 @@ export {
   breakpoints,
   colours,
   editionBreakpoints,
+  editionMaxWidth,
   fonts,
   fontFactory,
   fontSizes,
