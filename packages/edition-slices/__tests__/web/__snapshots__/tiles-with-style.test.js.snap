@@ -1278,14 +1278,6 @@ exports[`14. tile r 1`] = `
   margin-bottom: 5px;
 }
 
-.S4 {
-  margin-bottom: 5px;
-}
-
-.S5 {
-  margin-bottom: 10px;
-}
-
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -1296,20 +1288,10 @@ exports[`14. tile r 1`] = `
 }
 
 .IS3 {
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS4 {
-  width: 100%;
-}
-
-.IS5 {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 </style>
 
@@ -1317,10 +1299,10 @@ exports[`14. tile r 1`] = `
   url="/article/123"
 >
   <div
-    className="IS5"
+    className="IS3 S2"
   >
     <div
-      className="IS3 S4"
+      className="S2"
     >
       <div
         className="S2"
@@ -1348,7 +1330,7 @@ exports[`14. tile r 1`] = `
       />
     </div>
     <div
-      className="IS4 S5"
+      className="S2"
     >
       <Image
         aspectRatio={1.7777777777777777}

@@ -7,14 +7,9 @@ import styles from "./styles";
 const TileR = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
-      <TileSummary
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        tile={tile}
-      />
+      <TileSummary headlineStyle={styles.headline} tile={tile} />
       <TileImage
         aspectRatio={16 / 9}
-        style={styles.imageContainer}
         uri={tile.article.leadAsset.crop169.url}
       />
     </View>

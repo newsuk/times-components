@@ -889,20 +889,13 @@ exports[`14. tile r 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 15,
-        "marginHorizontal": 20,
-        "marginTop": 10,
+        "paddingBottom": 15,
+        "paddingHorizontal": 20,
+        "paddingTop": 10,
       }
     }
   >
-    <View
-      style={
-        Object {
-          "marginHorizontal": 10,
-          "marginVertical": 5,
-        }
-      }
-    >
+    <View>
       <View
         style={
           Object {
@@ -942,14 +935,7 @@ exports[`14. tile r 1`] = `
       </Text>
       <ArticleFlags />
     </View>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-          "width": "100%",
-        }
-      }
-    >
+    <View>
       <Image />
     </View>
   </View>

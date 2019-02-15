@@ -90,8 +90,7 @@ const tileStories = [
     Tile: TileO
   },
   {
-    name:
-      "Tile R - Bottom image, 45pt headline, no teaser",
+    name: "Tile R - Bottom image, 45pt headline, no teaser",
     Tile: TileR
   }
 ];
