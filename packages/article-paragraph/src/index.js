@@ -1,7 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React from "react";
 import PropTypes from "prop-types";
-import { renderTreeAsText } from "@times-components/markup-forest";
 import ArticleParagraph from "./article-paragraph";
 import DropCapWrapper from "./drop-cap-with-context";
 import {
@@ -14,7 +13,9 @@ const ArticleParagraphWrapper = ({
   children,
   dropCapColour,
   dropCapFont,
-  uid
+  uid,
+  embedded,
+  localRender
 }) => {
   const { children: astChildren } = ast;
   if (!astChildren || astChildren.length === 0) {
@@ -24,20 +25,29 @@ const ArticleParagraphWrapper = ({
   const { name, attributes } = astChildren[0];
   if (name === "dropCap") {
     const { value } = attributes;
-    const text = renderTreeAsText(ast).slice(1);
     return (
       <DropCapWrapper
         colour={dropCapColour}
         dropCap={value}
         font={dropCapFont}
         key={`paragraph-${uid}`}
+        localRender={localRender}
         testID={`paragraph-${uid}`}
-        text={text}
+        text={[
+          {
+            ...ast,
+            children: ast.children.slice(1)
+          }
+        ]}
       />
     );
   }
   return (
-    <ArticleParagraph key={`paragraph-${uid}`} testID={`paragraph-${uid}`}>
+    <ArticleParagraph
+      embedded={embedded}
+      key={`paragraph-${uid}`}
+      testID={`paragraph-${uid}`}
+    >
       {children}
     </ArticleParagraph>
   );
@@ -48,12 +58,15 @@ ArticleParagraphWrapper.propTypes = {
   children: PropTypes.node.isRequired,
   dropCapColour: dropCapPropTypes.colour,
   dropCapFont: dropCapPropTypes.font,
+  embedded: PropTypes.bool,
+  localRender: PropTypes.objectOf(PropTypes.func).isRequired,
   uid: PropTypes.number.isRequired
 };
 
 ArticleParagraphWrapper.defaultProps = {
   dropCapColour: dropCapDefaultProps.dropCapColour,
-  dropCapFont: dropCapDefaultProps.font
+  dropCapFont: dropCapDefaultProps.font,
+  embedded: false
 };
 
 export default ArticleParagraphWrapper;

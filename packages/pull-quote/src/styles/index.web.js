@@ -2,12 +2,15 @@ import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
-const styles = StyleSheet.create({
-  ...sharedStyles,
-  container: {
-    ...sharedStyles.container,
-    marginBottom: spacing(3)
-  }
-});
+const shared = sharedStyles();
+
+const styles = () =>
+  StyleSheet.create({
+    ...shared,
+    container: {
+      ...shared.container,
+      marginBottom: spacing(3)
+    }
+  });
 
 export default styles;

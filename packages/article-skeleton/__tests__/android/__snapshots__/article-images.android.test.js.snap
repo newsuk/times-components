@@ -42,6 +42,28 @@ exports[`1. a secondary image 1`] = `
                   "uri": "https://image-2.io",
                 }
               }
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
+                }
+              }
             />
           </View>
         </View>
@@ -102,6 +124,28 @@ exports[`2. an inline image 1`] = `
                   "display": "inline",
                   "ratio": "9:4",
                   "uri": "https://image-inline.io",
+                }
+              }
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
                 }
               }
             />

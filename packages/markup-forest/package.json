@@ -50,7 +50,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "publishConfig": {
     "access": "public"

@@ -7,7 +7,7 @@ const defaults = () => ({
     flagged: 100,
     line: 10
   },
-  tolerance: 2
+  tolerance: 10
 });
 
 export const infinity = 10000;
@@ -19,8 +19,8 @@ export const glue = (width, stretch, shrink) => ({
   width
 });
 
-export const box = (width, index, value) => ({
-  index,
+export const box = ({ markup, value, width }) => ({
+  markup,
   type: "box",
   value,
   width

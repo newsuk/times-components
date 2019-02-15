@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. mobile primary image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "column",
-      "paddingBottom": 15,
-      "width": "100%",
-    }
-  }
->
+<View>
   <View>
     <ModalImage
       aspectRatio={1.25}
@@ -65,16 +57,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 `;
 
 exports[`2. tablet primary image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "column",
-      "paddingBottom": 15,
-      "width": 640,
-    }
-  }
->
+<View>
   <View>
     <ModalImage
       aspectRatio={1.25}
@@ -129,14 +112,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
 `;
 
 exports[`3. mobile fullwidth image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "marginBottom": 10,
-      "maxWidth": 1194,
-    }
-  }
->
+<View>
   <View>
     <ModalImage
       aspectRatio={1.25}
@@ -149,14 +125,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
       uri="https://img/someImage"
     />
   </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 640,
-      }
-    }
-  >
+  <View>
     <View>
       <View
         style={
@@ -202,14 +171,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
 `;
 
 exports[`4. tablet fullwidth image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "marginBottom": 10,
-      "maxWidth": 1194,
-    }
-  }
->
+<View>
   <View>
     <ModalImage
       aspectRatio={1.25}
@@ -222,14 +184,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
       uri="https://img/someImage"
     />
   </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 640,
-      }
-    }
-  >
+  <View>
     <View>
       <View
         style={
@@ -275,26 +230,8 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
 `;
 
 exports[`5. secondary image with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 20,
-      "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "width": "50%",
-      }
-    }
-  >
+<View>
+  <View>
     <ModalImage
       aspectRatio={1.5}
       caption={
@@ -306,15 +243,7 @@ exports[`5. secondary image with caption and credits 1`] = `
       uri="https://img/someImage"
     />
   </View>
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
-      }
-    }
-  >
+  <View>
     <View>
       <View
         style={
@@ -355,179 +284,8 @@ exports[`5. secondary image with caption and credits 1`] = `
 </View>
 `;
 
-exports[`6. inline image (landscape) with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "width": "50%",
-      }
-    }
-  >
-    <ModalImage
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Landscape credits"
-          text="Landscape caption"
-        />
-      }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
-      }
-    }
-  >
-    <View>
-      <View
-        style={
-          Object {
-            "paddingTop": 0,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 16,
-            }
-          }
-        >
-          Landscape caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 16,
-            }
-          }
-        >
-          LANDSCAPE CREDITS
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`7. inline image (portrait) with caption and credits 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "width": "50%",
-      }
-    }
-  >
-    <ModalImage
-      aspectRatio={0.6666666666666666}
-      caption={
-        <Caption
-          credits="Portrait credits"
-          text="Portrait caption"
-        />
-      }
-      uri="https://img/someImage"
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
-      }
-    }
-  >
-    <View>
-      <View
-        style={
-          Object {
-            "paddingTop": 0,
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#696969",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 16,
-            }
-          }
-        >
-          Portrait caption
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 9,
-              "fontWeight": "400",
-              "letterSpacing": 1,
-              "lineHeight": 16,
-            }
-          }
-        >
-          PORTRAIT CREDITS
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`8. primary image with caption and credits with center caption override 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "column",
-      "paddingBottom": 15,
-      "width": 640,
-    }
-  }
->
+exports[`6. primary image with caption and credits with center caption override 1`] = `
+<View>
   <View>
     <ModalImage
       aspectRatio={1.25}
@@ -585,27 +343,9 @@ exports[`8. primary image with caption and credits with center caption override 
 </View>
 `;
 
-exports[`9. secondary image with caption and credits with center caption override 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "flexWrap": "nowrap",
-      "paddingBottom": 20,
-      "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "width": "50%",
-      }
-    }
-  >
+exports[`7. secondary image with caption and credits with center caption override 1`] = `
+<View>
+  <View>
     <ModalImage
       aspectRatio={1.5}
       caption={
@@ -617,15 +357,7 @@ exports[`9. secondary image with caption and credits with center caption overrid
       uri="https://img/someImage"
     />
   </View>
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingTop": 0,
-        "width": "50%",
-      }
-    }
-  >
+  <View>
     <View>
       <View
         style={

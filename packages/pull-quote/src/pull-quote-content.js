@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text } from "react-native";
-import styles from "./styles";
+import styleFactory from "./styles";
 
-const PullQuoteContent = ({ children }) => (
-  <Text style={styles.content}>{children}</Text>
-);
+const PullQuoteContent = ({ children, scale, isTablet }) => {
+  const styles = styleFactory(scale, isTablet);
+  return <Text style={styles.content}>{children}</Text>;
+};
 
 PullQuoteContent.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+  isTablet: PropTypes.bool.isRequired,
+  scale: PropTypes.string.isRequired
 };
 
 export default PullQuoteContent;

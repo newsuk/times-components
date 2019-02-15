@@ -4,7 +4,6 @@ exports[`different colours 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
       "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -73,35 +72,12 @@ exports[`different colours 1`] = `
     >
       
     </Text>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "borderLeftColor": "#DBDBDB",
-          "borderLeftWidth": 1,
-          "display": "flex",
-          "flexDirection": "row",
-          "height": 15,
-          "marginLeft": 7,
-          "paddingLeft": 7,
-        }
-      }
-    >
+    <View>
       <IconTwitter
         height={10}
         width={12}
       />
       <TextLink
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 13,
-            "marginLeft": 3,
-            "textDecorationLine": "none",
-          }
-        }
         target="_blank"
         url="https://twitter.com/@twitter"
       >

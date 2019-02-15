@@ -1,10 +1,7 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import TestRenderer from "react-test-renderer";
-import renderTrees, {
-  renderTree,
-  renderTreeAsText
-} from "../src/markup-forest";
+import renderTrees, { renderTree } from "../src/markup-forest";
 import bioAST from "../fixtures/bio.json";
 import mixtureAST from "../fixtures/mixture.json";
 import nestedAST from "../fixtures/nested.json";
@@ -257,14 +254,6 @@ iterator([
           })}
         </div>
       );
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
-    name: "nested tags with a text only renderer",
-    test: () => {
-      const output = renderTreeAsText(nestedAST);
 
       expect(output).toMatchSnapshot();
     }

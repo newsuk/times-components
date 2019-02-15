@@ -42,7 +42,7 @@ export const hasDropcap = (child, template, isDropcapDisabled) => {
     name === "paragraph" &&
     children.length > 0
   ) {
-    return true
+    return true;
   }
   return false;
 };

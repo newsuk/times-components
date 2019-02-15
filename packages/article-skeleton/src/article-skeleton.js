@@ -1,4 +1,5 @@
 /* eslint-disable consistent-return */
+/* eslint-disable no-continue */
 
 import React, { Component } from "react";
 import { View, FlatList } from "react-native";
@@ -153,29 +154,32 @@ class ArticleSkeleton extends Component {
           template,
           dropcapsDisabled
         );
-      };
+      }
 
-
-      if (node.name === "image" && node.attributes.display === "inline") {
-        // console.error(JSON.stringify(array[i], null, 2))
-        const newNode = { ...node }
-        const paragraphs = []
-        let next
+      if (
+        (node.name === "image" && node.attributes.display === "inline") ||
+        node.name === "pullQuote"
+      ) {
+        const newNode = { ...node };
+        const paragraphs = [...node.children];
+        const index = i;
+        let next;
         do {
-          next = newContent[i + 1]
+          next = newContent[i + 1];
+          if (!next) break;
           if (next.name === "paragraph") {
-            paragraphs.push(next)
-            newContent[i + 1] = null
-            i += 1
-            continue
+            paragraphs.push(next);
+            newContent[i + 1] = null;
+            i += 1;
+            continue;
           }
-          break
-        } while (next)
-        newContent = newContent.filter(node => node !== null)
-      };
+          break;
+        } while (next);
+        newNode.children = paragraphs;
+        newContent[index] = newNode;
+        newContent = newContent.filter(n => n !== null);
+      }
     }
-
-    // ===
 
     const articleOrganised = listViewDataHelper({
       ...dataSource,

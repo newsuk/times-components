@@ -2,6 +2,8 @@ import React from "react";
 import { Text, StyleSheet, View } from "react-native";
 import { subscriptMap, superscriptMap } from "./sub-sup";
 
+export { default as flatten } from "./flatten";
+
 const styles = StyleSheet.create({
   bold: {
     fontWeight: "bold"

@@ -13,7 +13,7 @@ const DropCapWrapper = props => (
 DropCapWrapper.propTypes = {
   ...propTypes,
   dropCap: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 DropCapWrapper.defaultProps = defaultProps;
 

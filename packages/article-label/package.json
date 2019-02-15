@@ -39,7 +39,7 @@
     "@times-components/styleguide": "3.26.3",
     "@times-components/utils": "4.7.4",
     "lodash.invert": "4.3.0",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

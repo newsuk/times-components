@@ -192,9 +192,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
         >
           <View>
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
+            <PullQuote />
           </View>
         </View>
       </View>
@@ -641,9 +639,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               }
             }
           >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
+            <PullQuote />
           </View>
         </View>
       </View>

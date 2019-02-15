@@ -67,7 +67,7 @@
     "hoist-non-react-statics": "2.5.5",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react-apollo": "2.1.4",
     "react-display-name": "0.2.3"
   },

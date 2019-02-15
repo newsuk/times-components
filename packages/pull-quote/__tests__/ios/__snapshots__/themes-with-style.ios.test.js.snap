@@ -6,7 +6,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     Object {
       "marginBottom": 0,
       "marginTop": 0,
-      "paddingBottom": 25,
+      "paddingBottom": 10,
       "paddingLeft": 10,
       "paddingRight": 10,
       "paddingTop": 5,
@@ -88,7 +88,7 @@ exports[`2. pull quote in style magazine 1`] = `
     Object {
       "marginBottom": 0,
       "marginTop": 0,
-      "paddingBottom": 25,
+      "paddingBottom": 10,
       "paddingLeft": 10,
       "paddingRight": 10,
       "paddingTop": 5,
@@ -170,7 +170,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     Object {
       "marginBottom": 0,
       "marginTop": 0,
-      "paddingBottom": 25,
+      "paddingBottom": 10,
       "paddingLeft": 10,
       "paddingRight": 10,
       "paddingTop": 5,

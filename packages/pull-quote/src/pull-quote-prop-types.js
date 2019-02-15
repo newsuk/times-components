@@ -7,7 +7,11 @@ import {
 
 export const propTypes = {
   caption: PropTypes.string,
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object, PropTypes.string]))
+      .isRequired,
+    PropTypes.object
+  ]),
   font: PropTypes.string,
   onTwitterLinkPress: twitterPropTypes.onTwitterLinkPress,
   quoteColour: PropTypes.string,

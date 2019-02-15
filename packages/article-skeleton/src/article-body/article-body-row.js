@@ -26,8 +26,8 @@ const ArticleRow = ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
-}) =>
-  renderTree(data, {
+}) => {
+  const renderers = {
     ...coreRenderers,
     ad(key, attributes) {
       return {
@@ -41,7 +41,13 @@ const ArticleRow = ({
         )
       };
     },
-    image(key, { display, ratio, url, caption, credits }) {
+    image(
+      key,
+      { display, ratio, url, caption, credits },
+      renderedChildren,
+      indx,
+      { children }
+    ) {
       return {
         element: (
           <View key={key}>
@@ -55,7 +61,10 @@ const ArticleRow = ({
                 ratio,
                 uri: url
               }}
-            />
+              localRender={renderers}
+            >
+              {children}
+            </ArticleImage>
           </View>
         )
       };
@@ -117,15 +126,17 @@ const ArticleRow = ({
             {({
               theme: { dropCapFont, sectionColour = colours.section.default }
             }) => (
-                <ArticleParagraph
-                  ast={node}
-                  dropCapColour={sectionColour}
-                  dropCapFont={dropCapFont}
-                  uid={index}
-                >
-                  {children}
-                </ArticleParagraph>
-              )}
+              <ArticleParagraph
+                ast={node}
+                dropCapColour={sectionColour}
+                dropCapFont={dropCapFont}
+                embedded={attributes && attributes.embedded}
+                localRender={renderers}
+                uid={index}
+              >
+                {children}
+              </ArticleParagraph>
+            )}
           </Context.Consumer>
         )
       };
@@ -135,7 +146,9 @@ const ArticleRow = ({
       {
         caption: { name, text, twitter }
       },
-      children
+      renderedChildren,
+      indx,
+      { children }
     ) {
       return {
         element: (
@@ -143,23 +156,25 @@ const ArticleRow = ({
             {({
               theme: { pullQuoteFont, sectionColour = colours.section.default }
             }) => (
-                <ResponsiveContext.Consumer>
-                  {({ isTablet }) => (
-                    <View style={isTablet && styles.containerTablet}>
-                      <PullQuote
-                        caption={name}
-                        font={pullQuoteFont}
-                        onTwitterLinkPress={onTwitterLinkPress}
-                        quoteColour={sectionColour}
-                        text={text}
-                        twitter={twitter}
-                      >
-                        {children}
-                      </PullQuote>
-                    </View>
-                  )}
-                </ResponsiveContext.Consumer>
-              )}
+              <ResponsiveContext.Consumer>
+                {({ isTablet }) => (
+                  <View style={isTablet && styles.containerTablet}>
+                    <PullQuote
+                      caption={name}
+                      font={pullQuoteFont}
+                      isTablet={isTablet}
+                      localRender={renderers}
+                      markup={children}
+                      onTwitterLinkPress={onTwitterLinkPress}
+                      quoteColour={sectionColour}
+                      renderedChildren={renderedChildren}
+                      text={text}
+                      twitter={twitter}
+                    />
+                  </View>
+                )}
+              </ResponsiveContext.Consumer>
+            )}
           </Context.Consumer>
         )
       };
@@ -208,7 +223,9 @@ const ArticleRow = ({
         )
       };
     }
-  });
+  };
+  return renderTree(data, renderers);
+};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({

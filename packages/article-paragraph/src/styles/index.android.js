@@ -10,7 +10,7 @@ export default (dropCapFont, scale) => {
     articleTextElement: {
       ...sharedStyles.articleTextElement,
       fontStyle: "normal",
-      marginBottom: spacing(4)
+      marginBottom: spacing(2)
     }
   };
 };

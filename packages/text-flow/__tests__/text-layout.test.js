@@ -8,7 +8,7 @@ import {
   measureContainer,
   measureElements,
   layoutText
-} from "../src/text-layout";
+} from "../src/text-flow";
 
 const callAllLayouts = async testInstance => {
   await delay(0);

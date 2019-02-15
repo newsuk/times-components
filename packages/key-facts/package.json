@@ -71,7 +71,7 @@
     "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",
     "lodash.invert": "4.3.0",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "styled-components": "3.4.0"
   },
   "peerDependencies": {

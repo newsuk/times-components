@@ -109,10 +109,10 @@ exports[`1. pull quote in culture magazine 1`] = `
     </div>
     <div
       className="c0 S2"
+      isTablet={false}
+      scale="medium"
     >
-      <cite>
-        Some content
-      </cite>
+      Some content
     </div>
     <div
       className="S4"
@@ -241,10 +241,10 @@ exports[`2. pull quote in style magazine 1`] = `
     </div>
     <div
       className="c0 S2"
+      isTablet={false}
+      scale="medium"
     >
-      <cite>
-        Some content
-      </cite>
+      Some content
     </div>
     <div
       className="S4"
@@ -373,10 +373,10 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     </div>
     <div
       className="c0 S2"
+      isTablet={false}
+      scale="medium"
     >
-      <cite>
-        Some content
-      </cite>
+      Some content
     </div>
     <div
       className="S4"

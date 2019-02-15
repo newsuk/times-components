@@ -75,7 +75,7 @@
     "@times-components/styleguide": "3.26.3",
     "@times-components/tracking": "2.4.7",
     "lodash.get": "4.4.2",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "peerDependencies": {
     "react": ">=16.5",

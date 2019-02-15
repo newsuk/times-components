@@ -65,9 +65,7 @@ exports[`1. a full article 1`] = `
     url="https://twitter.com/@AName"
   >
     “
-    <cite>
-      The pull quote content
-    </cite>
+    
     AName
     , a text
     <svg

@@ -11,32 +11,34 @@ import renderParagraph from "./renderer";
 export const callAllLayouts = async testInstance => {
   await delay(0);
   if (testInstance.root.findAllByType(View).length) {
-    testInstance.root
-      .findAllByType(View)[0]
-      .findAllByType(Text)
-      .forEach(word => {
-        const { onLayout } = word.props;
-        if (onLayout) {
-          const width = word.props.children.length;
-          onLayout({
-            nativeEvent: {
-              layout: {
-                height: 18,
-                width
-              }
+    testInstance.root.findAllByType(Text).forEach(word => {
+      const { onLayout } = word.props;
+      if (onLayout) {
+        const width = word.props.children.length;
+        onLayout({
+          nativeEvent: {
+            layout: {
+              height: 18,
+              width
             }
-          });
-        }
-      });
-
-    testInstance.root.findAllByType(View)[2].props.onLayout({
-      nativeEvent: {
-        layout: {
-          height: 100,
-          width: 100
-        }
+          }
+        });
       }
     });
+
+    testInstance.root
+      .findAllByType(View)
+      .filter(i => i.props && i.props.onLayout)
+      .map(el =>
+        el.props.onLayout({
+          nativeEvent: {
+            layout: {
+              height: 100,
+              width: 100
+            }
+          }
+        })
+      );
   }
   await delay(0);
 };

@@ -16,15 +16,22 @@ exports[`3. paragraph with a drop cap 1`] = `
 <View>
   <View>
     <View>
-      <Text
-        selectable={true}
-      >
-        T
-      </Text>
+      <View>
+        <View>
+          <Text
+            selectable={true}
+          >
+            T
+          </Text>
+        </View>
+      </View>
+      <View>
+        <Text>
+          his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+        </Text>
+      </View>
     </View>
-    <Text>
-      his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.  
-    </Text>
+    <Text />
   </View>
 </View>
 `;
@@ -33,15 +40,22 @@ exports[`4. paragraph with a short text and a drop cap 1`] = `
 <View>
   <View>
     <View>
-      <Text
-        selectable={true}
-      >
-        T
-      </Text>
+      <View>
+        <View>
+          <Text
+            selectable={true}
+          >
+            T
+          </Text>
+        </View>
+      </View>
+      <View>
+        <Text>
+          his being Black History
+        </Text>
+      </View>
     </View>
-    <Text>
-      his being Black History  
-    </Text>
+    <Text />
   </View>
 </View>
 `;

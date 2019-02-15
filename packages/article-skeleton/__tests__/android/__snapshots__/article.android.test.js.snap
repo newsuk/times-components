@@ -50,6 +50,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
             }
             dropCapColour="#FF0000"
+            localRender={
+              Object {
+                "ad": [Function],
+                "block": [Function],
+                "bold": [Function],
+                "break": [Function],
+                "emphasis": [Function],
+                "image": [Function],
+                "inline": [Function],
+                "interactive": [Function],
+                "italic": [Function],
+                "keyFacts": [Function],
+                "link": [Function],
+                "paragraph": [Function],
+                "pullQuote": [Function],
+                "strong": [Function],
+                "subscript": [Function],
+                "superscript": [Function],
+                "text": [Function],
+                "video": [Function],
+              }
+            }
             uid={0}
           >
             his being Black History Month, last week
@@ -82,6 +104,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "uri": "https://image.io",
                 }
               }
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
+                }
+              }
             />
           </View>
         </View>
@@ -103,6 +147,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "uri": "https://image.io/secondary",
                 }
               }
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
+                }
+              }
             />
           </View>
         </View>
@@ -122,6 +188,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "display": "inline",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
+                }
+              }
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
                 }
               }
             />
@@ -156,6 +244,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
             }
             dropCapColour="#FF0000"
+            localRender={
+              Object {
+                "ad": [Function],
+                "block": [Function],
+                "bold": [Function],
+                "break": [Function],
+                "emphasis": [Function],
+                "image": [Function],
+                "inline": [Function],
+                "interactive": [Function],
+                "italic": [Function],
+                "keyFacts": [Function],
+                "link": [Function],
+                "paragraph": [Function],
+                "pullQuote": [Function],
+                "strong": [Function],
+                "subscript": [Function],
+                "superscript": [Function],
+                "text": [Function],
+                "video": [Function],
+              }
+            }
             uid={6}
           >
             Some content
@@ -176,12 +286,49 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View>
             <PullQuote
               caption="AName"
+              isTablet={true}
+              localRender={
+                Object {
+                  "ad": [Function],
+                  "block": [Function],
+                  "bold": [Function],
+                  "break": [Function],
+                  "emphasis": [Function],
+                  "image": [Function],
+                  "inline": [Function],
+                  "interactive": [Function],
+                  "italic": [Function],
+                  "keyFacts": [Function],
+                  "link": [Function],
+                  "paragraph": [Function],
+                  "pullQuote": [Function],
+                  "strong": [Function],
+                  "subscript": [Function],
+                  "superscript": [Function],
+                  "text": [Function],
+                  "video": [Function],
+                }
+              }
+              markup={
+                Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The pull quote content",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ]
+              }
               quoteColour="#FF0000"
+              renderedChildren={
+                Array [
+                  "The pull quote content",
+                ]
+              }
               text="a text"
               twitter="@AName"
-            >
-              The pull quote content
-            </PullQuote>
+            />
           </View>
         </View>
       </View>
@@ -369,6 +516,28 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               }
             }
             dropCapColour="#FF0000"
+            localRender={
+              Object {
+                "ad": [Function],
+                "block": [Function],
+                "bold": [Function],
+                "break": [Function],
+                "emphasis": [Function],
+                "image": [Function],
+                "inline": [Function],
+                "interactive": [Function],
+                "italic": [Function],
+                "keyFacts": [Function],
+                "link": [Function],
+                "paragraph": [Function],
+                "pullQuote": [Function],
+                "strong": [Function],
+                "subscript": [Function],
+                "superscript": [Function],
+                "text": [Function],
+                "video": [Function],
+              }
+            }
             uid={0}
           >
             <Text>
@@ -400,6 +569,28 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               }
             }
             dropCapColour="#FF0000"
+            localRender={
+              Object {
+                "ad": [Function],
+                "block": [Function],
+                "bold": [Function],
+                "break": [Function],
+                "emphasis": [Function],
+                "image": [Function],
+                "inline": [Function],
+                "interactive": [Function],
+                "italic": [Function],
+                "keyFacts": [Function],
+                "link": [Function],
+                "paragraph": [Function],
+                "pullQuote": [Function],
+                "strong": [Function],
+                "subscript": [Function],
+                "superscript": [Function],
+                "text": [Function],
+                "video": [Function],
+              }
+            }
             uid={1}
           >
             <Text>

@@ -493,7 +493,7 @@ exports[`full article with style 1`] = `
   font-size: 17;
   line-height: 26;
   color: #333333;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-top: 0;
 }
 

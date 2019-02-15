@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. does not render an image if display is not received 1`] = `<View />`;
+exports[`1. does not render an image if display is not received 1`] = `
+<View>
+  <View>
+    <ModalImage
+      aspectRatio={1.7777777777777777}
+      caption={
+        <Caption
+          credits={null}
+          text={null}
+        />
+      }
+      uri="https://img/someImage"
+    />
+  </View>
+</View>
+`;
 
 exports[`2. does not render a primary image if ratio is not received 1`] = `<View />`;
 
@@ -43,6 +58,18 @@ exports[`5. image with no caption 1`] = `
 exports[`6. image with no display only shows given caption 1`] = `
 <View>
   <View>
+    <ModalImage
+      aspectRatio={1.7777777777777777}
+      caption={
+        <Caption
+          credits={null}
+          text="Some caption"
+        />
+      }
+      uri="https://img/someImage"
+    />
+  </View>
+  <View>
     <View>
       <View>
         <Text>
@@ -56,6 +83,18 @@ exports[`6. image with no display only shows given caption 1`] = `
 
 exports[`7. image with no display only shows given credits 1`] = `
 <View>
+  <View>
+    <ModalImage
+      aspectRatio={1.7777777777777777}
+      caption={
+        <Caption
+          credits="Some credit"
+          text={null}
+        />
+      }
+      uri="https://img/someImage"
+    />
+  </View>
   <View>
     <View>
       <View>

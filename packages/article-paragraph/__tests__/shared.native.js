@@ -11,13 +11,13 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
+import coreRenderers from "@times-components/markup";
 import shared, { callAllLayouts } from "./shared.base";
 import "./mock-text-measure-module";
 import DropCap from "../src/drop-cap";
+import paragraphData from "./fixtures/paragraph-showcase.json";
 
 const mockDropCap = "I";
-const mockText =
-  "n 1924 Harold Macmillan became MP for Stockton-on-Tees. Witnessing brutal poverty there between the wars, he said later that he had learnt “lessons which I have never forgotten. ";
 
 export default () => {
   addSerializers(
@@ -36,7 +36,12 @@ export default () => {
       name: "re-measures when scale changes",
       test: async () => {
         const testInstance = TestRenderer.create(
-          <DropCap dropCap={mockDropCap} scale={scales.large} text={mockText} />
+          <DropCap
+            dropCap={mockDropCap}
+            localRender={coreRenderers}
+            scale={scales.large}
+            text={[paragraphData]}
+          />
         );
 
         await callAllLayouts(testInstance);
@@ -47,8 +52,9 @@ export default () => {
         testInstance.update(
           <DropCap
             dropCap={mockDropCap}
+            localRender={coreRenderers}
             scale={scales.xlarge}
-            text={mockText}
+            text={[paragraphData]}
           />
         );
 

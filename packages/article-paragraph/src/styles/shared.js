@@ -25,7 +25,7 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
         fontSize: "bodyMobile"
       }),
       color: colours.functional.primary,
-      marginBottom: spacing(5)
+      marginBottom: spacing(2)
     },
     dropCapContainer: {
       flexDirection: "row",

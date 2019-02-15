@@ -40,7 +40,7 @@
     "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",
     "@times-components/tracking": "2.4.7",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

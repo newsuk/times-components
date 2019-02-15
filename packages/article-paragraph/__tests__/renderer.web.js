@@ -8,6 +8,36 @@ import DropCapView from "../src/drop-cap";
 
 export default (ast, section = "default") => {
   const theme = themeFactory(section, "magazinestandard");
+  const renderers = {
+    ...coreRenderers,
+    dropCap(key, { value }) {
+      return {
+        element: (
+          <DropCapView
+            font={theme.dropCapFont}
+            key={key}
+            localRender={renderers}
+          >
+            {value}
+          </DropCapView>
+        )
+      };
+    },
+    paragraph(key, attributes, children, indx, node) {
+      return {
+        element: (
+          <ArticleParagraph
+            ast={node}
+            key={indx}
+            localRender={renderers}
+            uid={indx}
+          >
+            {children}
+          </ArticleParagraph>
+        )
+      };
+    }
+  };
   return (
     <Context.Provider
       value={{
@@ -17,27 +47,7 @@ export default (ast, section = "default") => {
         }
       }}
     >
-      {renderTree(ast, {
-        ...coreRenderers,
-        dropCap(key, { value }) {
-          return {
-            element: (
-              <DropCapView font={theme.dropCapFont} key={key}>
-                {value}
-              </DropCapView>
-            )
-          };
-        },
-        paragraph(key, attributes, children, indx, node) {
-          return {
-            element: (
-              <ArticleParagraph ast={node} key={indx} uid={indx}>
-                {children}
-              </ArticleParagraph>
-            )
-          };
-        }
-      })}
+      {renderTree(ast, renderers)}
     </Context.Provider>
   );
 };

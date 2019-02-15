@@ -3,8 +3,9 @@ import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import PullQuotes from "../src/pull-quote";
 import PullQuoteTwitterLink from "../src/pull-quote-twitter-link";
+import testParagraph from "./fixtures/paragraph.json";
 
-const content = "Some content";
+const content = ["Some content", testParagraph];
 const caption = "A caption";
 const text = "Some extra text";
 const twitter = "@twitter";
@@ -18,6 +19,7 @@ export default renderComponent => {
           <PullQuotes
             caption={caption}
             onTwitterLinkPress={() => null}
+            renderedChildren={["Some content"]}
             text={text}
           >
             {content}
@@ -31,7 +33,11 @@ export default renderComponent => {
       name: "with a caption but no text",
       test() {
         const output = renderComponent(
-          <PullQuotes onTwitterLinkPress={() => null} text={text}>
+          <PullQuotes
+            onTwitterLinkPress={() => null}
+            renderedChildren={["Some content"]}
+            text={text}
+          >
             {content}
           </PullQuotes>
         );
@@ -43,7 +49,11 @@ export default renderComponent => {
       name: "with a text but no caption",
       test() {
         const output = renderComponent(
-          <PullQuotes onTwitterLinkPress={() => null} text={text}>
+          <PullQuotes
+            onTwitterLinkPress={() => null}
+            renderedChildren={["Some content"]}
+            text={text}
+          >
             {content}
           </PullQuotes>
         );
@@ -55,7 +65,12 @@ export default renderComponent => {
       name: "without a caption or a text",
       test() {
         const output = renderComponent(
-          <PullQuotes onTwitterLinkPress={() => null}>{content}</PullQuotes>
+          <PullQuotes
+            onTwitterLinkPress={() => null}
+            renderedChildren={["Some content"]}
+          >
+            {content}
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
@@ -68,6 +83,7 @@ export default renderComponent => {
           <PullQuotes
             caption={caption}
             onTwitterLinkPress={() => null}
+            renderedChildren={["Some content"]}
             twitter={twitter}
           >
             {content}
@@ -85,6 +101,7 @@ export default renderComponent => {
         const wrapper = shallow(
           <PullQuoteTwitterLink
             onTwitterLinkPress={onTwitterLinkPressMock}
+            renderedChildren={["Some content"]}
             twitter={twitter}
           />
         );

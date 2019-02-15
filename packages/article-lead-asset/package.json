@@ -58,7 +58,7 @@
     "@times-components/test-utils": "2.2.14",
     "@times-components/utils": "4.7.4",
     "@times-components/video": "4.4.9",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "peerDependencies": {
     "react": ">=16.5",

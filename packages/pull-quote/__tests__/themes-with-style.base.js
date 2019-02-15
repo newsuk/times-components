@@ -2,8 +2,9 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { themeFactory } from "@times-components/styleguide";
 import PullQuotes from "../src/pull-quote";
+import testParagraph from "./fixtures/paragraph.json";
 
-const content = "Some content";
+const content = ["Some content", testParagraph];
 const caption = "A caption";
 const text = "Some extra text";
 
@@ -17,6 +18,7 @@ export default [
           caption={caption}
           font={theme.pullQuoteFont}
           onTwitterLinkPress={() => null}
+          renderedChildren={["Some content"]}
           text={text}
         >
           {content}
@@ -34,6 +36,7 @@ export default [
           caption={caption}
           font={theme.pullQuoteFont}
           onTwitterLinkPress={() => null}
+          renderedChildren={["Some content"]}
           text={text}
         >
           {content}
@@ -51,6 +54,7 @@ export default [
           caption={caption}
           font={theme.pullQuoteFont}
           onTwitterLinkPress={() => null}
+          renderedChildren={["Some content"]}
           text={text}
         >
           {content}

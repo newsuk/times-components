@@ -8,6 +8,24 @@ import ArticleParagraph from "../src";
 
 export default (ast, section = "default") => {
   const theme = themeFactory(section, "magazinestandard");
+  const renderers = {
+    ...coreRenderers,
+    paragraph(key, attributes, children, indx, node) {
+      return {
+        element: (
+          <ArticleParagraph
+            ast={node}
+            dropCapFont={theme.dropCapFont}
+            key={indx}
+            localRender={renderers}
+            uid={indx}
+          >
+            {children}
+          </ArticleParagraph>
+        )
+      };
+    }
+  };
   return (
     <Context.Provider
       value={{
@@ -16,23 +34,7 @@ export default (ast, section = "default") => {
         }
       }}
     >
-      {renderTree(ast, {
-        ...coreRenderers,
-        paragraph(key, attributes, children, indx, node) {
-          return {
-            element: (
-              <ArticleParagraph
-                ast={node}
-                dropCapFont={theme.dropCapFont}
-                key={indx}
-                uid={indx}
-              >
-                {children}
-              </ArticleParagraph>
-            )
-          };
-        }
-      })}
+      {renderTree(ast, renderers)}
     </Context.Provider>
   );
 };

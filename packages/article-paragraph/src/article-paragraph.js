@@ -12,8 +12,8 @@ const BodyParagraph = props => (
     {({ isTablet }) => (
       <View
         style={[
-          styles.articleMainContentRow,
-          isTablet && styles.articleMainContentRowTablet
+          !props.embedded && styles.articleMainContentRow,
+          !props.embedded && isTablet && styles.articleMainContentRowTablet
         ]}
       >
         <Context.Consumer>
@@ -34,7 +34,12 @@ const BodyParagraph = props => (
 BodyParagraph.propTypes = {
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired
+  ).isRequired,
+  embedded: PropTypes.bool
+};
+
+BodyParagraph.defaultProps = {
+  embedded: false
 };
 
 export default BodyParagraph;
