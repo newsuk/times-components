@@ -2,8 +2,10 @@ import styleguide from "@times-components/styleguide";
 
 const { fontFactory, spacing } = styleguide();
 const styles = {
-  diamond: {
-    marginRight: spacing(1)
+  bullet: {
+    borderRadius: 2.5,
+    height: 5,
+    width: 5
   },
   flag: {
     marginRight: spacing(3)
@@ -17,7 +19,8 @@ const styles = {
       fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
-    letterSpacing: 1.4
+    letterSpacing: 1.4,
+    marginLeft: spacing(1)
   },
   view: {
     alignItems: "center",

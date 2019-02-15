@@ -13,12 +13,13 @@ exports[`1. red article flag 1`] = `
   <View
     style={
       Object {
-        "marginRight": 5,
+        "backgroundColor": "red",
+        "borderRadius": 2.5,
+        "height": 5,
+        "width": 5,
       }
     }
-  >
-    <IconDiamond />
-  </View>
+  />
   <Text
     style={
       Object {
@@ -28,6 +29,7 @@ exports[`1. red article flag 1`] = `
         "fontWeight": "400",
         "letterSpacing": 1.4,
         "lineHeight": 12,
+        "marginLeft": 5,
         "marginTop": 5,
       }
     }

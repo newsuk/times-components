@@ -62,7 +62,6 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.3.19",
     "@times-components/styleguide": "3.20.2",
     "@times-components/utils": "4.3.2",
     "prop-types": "15.6.2"

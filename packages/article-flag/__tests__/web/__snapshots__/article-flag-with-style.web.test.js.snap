@@ -12,6 +12,7 @@ exports[`1. red article flag 1`] = `
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
+  margin-right: 0px;
   margin-bottom: 0px;
 }
 
@@ -21,7 +22,13 @@ exports[`1. red article flag 1`] = `
 }
 
 .IS1 {
-  margin-right: 5px;
+  background-color: rgba(255,0,0,1.00);
+  border-top-left-radius: 2.5px;
+  border-top-right-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
+  height: 5px;
+  width: 5px;
 }
 
 .IS2 {
@@ -31,6 +38,7 @@ exports[`1. red article flag 1`] = `
   font-weight: 400;
   letter-spacing: 1.4px;
   line-height: 12px;
+  margin-left: 5px;
 }
 
 .IS3 {
@@ -51,9 +59,7 @@ exports[`1. red article flag 1`] = `
 >
   <div
     className="IS1 S1"
-  >
-    <IconDiamond />
-  </div>
+  />
   <div
     className="IS2 S2"
   >
