@@ -6,7 +6,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }
@@ -224,7 +224,7 @@ exports[`2. an article with no content 1`] = `
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }
@@ -328,7 +328,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }

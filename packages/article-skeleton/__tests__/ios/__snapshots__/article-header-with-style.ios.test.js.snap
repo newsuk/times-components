@@ -6,7 +6,7 @@ exports[`1. article with header 1`] = `
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }
