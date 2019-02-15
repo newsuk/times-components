@@ -6,6 +6,9 @@ const styles = {
     flexDirection: "row",
     padding: spacing(2)
   },
+  flagColour: {
+    color: colours.functional.greyLabel
+  },
   headline: {
     ...fontFactory({
       font: "headline",

@@ -14,7 +14,7 @@ const TileN = ({ onPress, tile }) => (
         uri={tile.article.leadAsset.crop11.url}
       />
       <TileSummary
-        flagColour={colours.functional.greyLabel}
+        flagColour={styles.flagColour}
         headlineStyle={styles.headline}
         labelColour={colours.functional.greyLabel}
         style={styles.summaryContainer}
