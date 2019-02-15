@@ -69,7 +69,12 @@ export default ({
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
-  flags: () => <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />,
+  flags: () => (
+    <ArticleFlags
+      flags={["UPDATED", "EXCLUSIVE"]}
+      style={{ marginBottom: 10 }}
+    />
+  ),
   headline: () => <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,

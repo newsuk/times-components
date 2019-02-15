@@ -72,10 +72,10 @@ const flagsMapping = color =>
     ["SPONSORED", <SponsoredArticleFlag color={color} />]
   ]);
 
-const ArticleFlags = ({ flags, color }) => {
+const ArticleFlags = ({ flags, color, style }) => {
   if (!flags || flags.length === 0) return null;
   return (
-    <View style={styles.flags}>
+    <View style={[styles.flags, style]}>
       {flags.map(flag => (
         <View key={flag} style={styles.flag}>
           {flagsMapping(color).get(flag)}
@@ -87,7 +87,8 @@ const ArticleFlags = ({ flags, color }) => {
 
 ArticleFlags.propTypes = articleFlagsPropTypes;
 ArticleFlags.defaultProps = {
-  flags: []
+  flags: [],
+  style: {}
 };
 
 export default ArticleFlag;

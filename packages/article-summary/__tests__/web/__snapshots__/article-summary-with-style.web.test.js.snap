@@ -54,6 +54,10 @@ exports[`1. article summary component with a single paragraph 1`] = `
   line-height: inherit;
   margin-bottom: 0px;
 }
+
+.IS1 {
+  margin-bottom: 10;
+}
 </style>
 
 <div
@@ -74,14 +78,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   >
     Test Headline
   </h3>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
   <div
     className="S4"
   >
@@ -93,6 +89,15 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </span>
   </div>
+  <ArticleFlags
+    className="IS1"
+    flags={
+      Array [
+        "UPDATED",
+        "EXCLUSIVE",
+      ]
+    }
+  />
   <div
     className="S5"
     data-testid="datePublication"

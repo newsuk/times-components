@@ -9,7 +9,8 @@ const styles = {
     ...fontFactory({
       font: "headline",
       fontSize: "infoTitle"
-    })
+    }),
+    paddingBottom: spacing(1)
   },
   imageContainer: {
     borderColor: colours.functional.contrast,

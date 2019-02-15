@@ -7,6 +7,7 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
+import styles from "./styles";
 
 const TileSummary = ({
   tile: {
@@ -27,7 +28,9 @@ const TileSummary = ({
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
         : undefined
     }
-    flags={() => <ArticleFlags {...flagColour} flags={flags} />}
+    flags={() => (
+      <ArticleFlags {...flagColour} flags={flags} style={styles.flag} />
+    )}
     headline={() => (
       <ArticleSummaryHeadline
         headline={headline || shortHeadline}

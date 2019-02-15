@@ -50,13 +50,6 @@ exports[`2. tile b 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
       <Text>
         <Text>
           
@@ -64,6 +57,13 @@ exports[`2. tile b 1`] = `
           ...
         </Text>
       </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </View>
   </View>
 </Link>
@@ -196,13 +196,6 @@ exports[`6. tile f 1`] = `
     >
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
     <Text>
       <Text>
         
@@ -210,6 +203,13 @@ exports[`6. tile f 1`] = `
         ...
       </Text>
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          "EXCLUSIVE",
+        ]
+      }
+    />
   </View>
 </Link>
 `;
@@ -392,6 +392,13 @@ exports[`12. tile n 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -400,13 +407,6 @@ exports[`12. tile n 1`] = `
           ]
         }
       />
-      <Text>
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
-      </Text>
     </View>
   </View>
 </Link>
