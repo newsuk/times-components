@@ -2,23 +2,27 @@
 import {
   acceptedWidths,
   convertToPixels,
-  normaliseWidth,
+  normaliseWidthForAssetRequestCache,
   screenWidth,
   screenWidthInPixels
 } from "../src";
 
 describe("screen utilities", () => {
-  context("normaliseWidth", () => {
+  context("normaliseWidthForAssetRequestCache", () => {
     it("should return the next highest value from the acceptedWidths array", () => {
       const firstAcceptedWidthItem = acceptedWidths[0];
       const width = firstAcceptedWidthItem - 1;
-      expect(normaliseWidth(width)).toEqual(firstAcceptedWidthItem);
+      expect(normaliseWidthForAssetRequestCache(width)).toEqual(
+        firstAcceptedWidthItem
+      );
     });
 
     it("should return the last highest value from the acceptedWidths array", () => {
       const lastAcceptedWidthItem = acceptedWidths[acceptedWidths.length - 1];
       const width = lastAcceptedWidthItem + 1;
-      expect(normaliseWidth(width)).toEqual(lastAcceptedWidthItem);
+      expect(normaliseWidthForAssetRequestCache(width)).toEqual(
+        lastAcceptedWidthItem
+      );
     });
   });
 

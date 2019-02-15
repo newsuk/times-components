@@ -12,6 +12,7 @@ const globalStyle = {
   gutter: {
     alignSelf: "center",
     backgroundColor: "#ffffff",
+    maxWidth: "100%",
     width: maxWidth
   },
   relatedArticlesTablet: {

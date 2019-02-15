@@ -8,7 +8,7 @@ import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
+import { screenWidth } from "@times-components/utils";
 import ArticleRow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import {
@@ -101,7 +101,7 @@ class ArticleSkeleton extends Component {
     if (props.data) {
       this.state = {
         dataSource: props.data,
-        width: normaliseWidth(screenWidthInPixels())
+        width: screenWidth()
       };
     } else {
       this.state = {

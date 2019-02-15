@@ -16,6 +16,7 @@ exports[`1. a secondary image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -27,6 +28,7 @@ exports[`1. a secondary image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -42,6 +44,7 @@ exports[`1. a secondary image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -53,6 +56,7 @@ exports[`1. a secondary image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -81,6 +85,7 @@ exports[`2. an inline image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -92,6 +97,7 @@ exports[`2. an inline image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -107,6 +113,7 @@ exports[`2. an inline image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
@@ -118,6 +125,7 @@ exports[`2. an inline image 1`] = `
             Object {
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
               "width": 1180,
             }
           }
