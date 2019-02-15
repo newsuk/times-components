@@ -1,9 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TileA } from "../../tiles";
+import { ResponsiveContext } from "@times-components/responsive";
+import { editionBreakpoints } from "@times-components/styleguide";
+import { TileA, TileR } from "../../tiles";
 
 const LeadOneFullWidthSlice = ({ slice: { lead }, onPress }) => (
-  <TileA onPress={onPress} tile={lead} />
+  <ResponsiveContext.Consumer>
+    {({ editionBreakpoint }) =>
+      editionBreakpoint === editionBreakpoints.small ? (
+        <TileA onPress={onPress} tile={lead} />
+      ) : (
+        <TileR onPress={onPress} tile={lead} />
+      )
+    }
+  </ResponsiveContext.Consumer>
 );
 
 LeadOneFullWidthSlice.propTypes = {

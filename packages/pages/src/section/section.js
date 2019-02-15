@@ -2,6 +2,7 @@ import React from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
 import sliceMap from "@times-components/edition-slices";
+import Responsive from "@times-components/responsive";
 import SectionItemSeparator from "./section-item-separator";
 import styles from "./styles";
 
@@ -11,15 +12,17 @@ const renderSlice = (slice, onPress) => {
 };
 
 const Section = ({ onPress, section: { slices } }) => (
-  <FlatList
-    data={slices}
-    ItemSeparatorComponent={() => (
-      <View style={styles.listItemSeparatorContainer}>
-        <SectionItemSeparator />
-      </View>
-    )}
-    renderItem={({ item: slice }) => renderSlice(slice, onPress)}
-  />
+  <Responsive>
+    <FlatList
+      data={slices}
+      ItemSeparatorComponent={() => (
+        <View style={styles.listItemSeparatorContainer}>
+          <SectionItemSeparator />
+        </View>
+      )}
+      renderItem={({ item: slice }) => renderSlice(slice, onPress)}
+    />
+  </Responsive>
 );
 
 Section.propTypes = {

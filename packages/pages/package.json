@@ -57,6 +57,7 @@
     "@times-components/context": "0.6.16",
     "@times-components/edition-slices": "0.12.0",
     "@times-components/provider": "1.12.3",
+    "@times-components/responsive": "0.2.16",
     "@times-components/schema": "0.2.8",
     "@times-components/styleguide": "3.21.0",
     "@times-components/topic": "4.3.26",

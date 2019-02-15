@@ -41,6 +41,7 @@
     "@times-components/icons": "2.4.0",
     "@times-components/image": "4.8.1",
     "@times-components/link": "3.2.16",
+    "@times-components/responsive": "0.2.16",
     "@times-components/slice-layout": "0.7.0",
     "@times-components/styleguide": "3.21.0",
     "prop-types": "15.6.2"
