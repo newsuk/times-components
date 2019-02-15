@@ -34,6 +34,19 @@ export default {
       ),
       name: "Byline with a single author",
       type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <ComponentWrapper>
+          <ArticleBylineOpinion
+            ast={authorsAST.singleAuthor}
+            {...getProps(decorateAction)}
+            opinionStyle={{ fontSize: 12, letterSpacong: 0.6, lineHeight: 12 }}
+          />
+        </ComponentWrapper>
+      ),
+      name: "Byline with a single author and style overriden",
+      type: "story"
     }
   ],
   name: "Primitives/Article Byline/Opinion"

@@ -17,6 +17,8 @@ import {
   TileM,
   TileN,
   TileO,
+  TileP,
+  TileQ,
   TileR,
   TileT,
   TileU
@@ -101,6 +103,14 @@ const tileStories = [
     Tile: TileO
   },
   {
+    name: "Tile P - Profile roundel image, 35pt headline, no teaser, central aligned summary",
+    Tile: TileP
+  },
+  {
+    name: "Tile Q - Image with padding",
+    Tile: TileQ
+  },
+  {
     name: "Tile R - Bottom image, 45pt headline, no teaser",
     Tile: TileR
   },
@@ -112,7 +122,6 @@ const tileStories = [
     name: "Tile U - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
     Tile: TileU
   }
-];
 
 export default {
   children: tileStories.map(({ name, Tile }) => ({

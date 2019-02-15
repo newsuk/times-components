@@ -10,10 +10,11 @@ import { colours } from "@times-components/styleguide";
 
 const TileSummary = ({
   tile: {
-    article: { flags, hasVideo, headline, label, section, shortHeadline }
+    article: { byline, flags, hasVideo, headline, label, section, shortHeadline }
   },
   byline,
   headlineStyle,
+  bylineStyle,
   strapline,
   straplineStyle,
   style,
@@ -23,7 +24,7 @@ const TileSummary = ({
   labelColour
 }) => (
   <ArticleSummary
-    bylineProps={byline ? { ast: byline } : null}
+    bylineProps={ byline && section === 'opinion' ? {ast: byline, isOpinionByline: true, opinionStyle: bylineStyle}: null}
     content={
       summary
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
