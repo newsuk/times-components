@@ -17,7 +17,6 @@ exports[`1. tile a 1`] = `
       Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
-      color={null}
       flags={
         Array [
           "EXCLUSIVE",
@@ -52,7 +51,6 @@ exports[`2. tile b 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -95,7 +93,6 @@ exports[`3. tile c 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -131,7 +128,6 @@ exports[`4. tile d 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -167,7 +163,6 @@ exports[`5. tile e 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -202,7 +197,6 @@ exports[`6. tile f 1`] = `
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </h4>
     <ArticleFlags
-      color={null}
       flags={
         Array [
           "EXCLUSIVE",
@@ -245,7 +239,6 @@ exports[`7. tile g 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -280,7 +273,6 @@ exports[`8. tile i 1`] = `
       Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
-      color={null}
       flags={
         Array [
           "EXCLUSIVE",
@@ -315,7 +307,6 @@ exports[`9. tile j 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -345,7 +336,6 @@ exports[`10. tile l 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
-        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -373,9 +363,7 @@ exports[`11. tile m 1`] = `
       >
         Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </h4>
-      <ArticleFlags
-        color={null}
-      />
+      <ArticleFlags />
     </div>
   </div>
 </Link>

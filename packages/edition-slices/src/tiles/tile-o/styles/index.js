@@ -6,6 +6,9 @@ const styles = {
     paddingHorizontal: 12,
     paddingVertical: spacing(2)
   },
+  flagColour: {
+    color: colours.functional.greyLabel
+  },
   headlineStyle: {
     color: colours.functional.white,
     fontFamily: fonts.headline,

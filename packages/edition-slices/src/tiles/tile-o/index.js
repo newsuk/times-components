@@ -9,7 +9,7 @@ const TileO = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileSummary
-        flagColour={colours.functional.greyLabel}
+        flagColour={styles.flagColour}
         headlineStyle={styles.headlineStyle}
         labelColour={colours.functional.greyLabel}
         tile={tile}

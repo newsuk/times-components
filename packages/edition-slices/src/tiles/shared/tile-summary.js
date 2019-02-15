@@ -27,7 +27,7 @@ const TileSummary = ({
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
         : undefined
     }
-    flags={() => <ArticleFlags color={flagColour} flags={flags} />}
+    flags={() => <ArticleFlags {...flagColour} flags={flags} />}
     headline={() => (
       <ArticleSummaryHeadline
         headline={headline || shortHeadline}
@@ -56,7 +56,7 @@ const TileSummary = ({
 );
 
 TileSummary.propTypes = {
-  flagColour: PropTypes.string,
+  flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
@@ -68,7 +68,7 @@ TileSummary.propTypes = {
 };
 
 TileSummary.defaultProps = {
-  flagColour: null,
+  flagColour: {},
   headlineStyle: null,
   labelColour: null,
   strapline: null,
