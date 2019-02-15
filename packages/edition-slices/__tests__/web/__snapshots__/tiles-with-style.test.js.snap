@@ -64,6 +64,7 @@ exports[`1. tile a 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </h3>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "NEW",
@@ -164,6 +165,7 @@ exports[`2. tile b 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -272,6 +274,7 @@ exports[`3. tile c 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -370,6 +373,7 @@ exports[`4. tile d 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -468,6 +472,7 @@ exports[`5. tile e 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -581,6 +586,7 @@ exports[`6. tile f 1`] = `
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </h4>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "EXCLUSIVE",
@@ -700,6 +706,7 @@ exports[`7. tile g 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -788,6 +795,7 @@ exports[`8. tile i 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </h3>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "NEW",
@@ -884,6 +892,7 @@ exports[`9. tile j 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -957,6 +966,7 @@ exports[`10. tile l 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -1008,7 +1018,220 @@ exports[`11. tile m 1`] = `
       >
         Prince Philip ‘could be prosecuted’ over car crash
       </h3>
-      <ArticleFlags />
+      <ArticleFlags
+        color={null}
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`12. tile n 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  width: 50%;
+}
+
+.IS2 {
+  color: rgba(204,204,204,1.00);
+}
+
+.IS3 {
+  color: rgba(255,255,255,1.00);
+  line-height: 22px;
+}
+
+.IS4 {
+  color: rgba(204,204,204,1.00);
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 50%;
+}
+
+.IS6 {
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS6 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </div>
+    <div
+      className="IS5 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <ArticleFlags
+        color="#CCC"
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <div
+        className="IS4 S5"
+      >
+        <span
+          className="S4"
+        >
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`13. tile o 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.IS1 {
+  color: rgba(204,204,204,1.00);
+}
+
+.IS2 {
+  color: rgba(255,255,255,1.00);
+  line-height: 22px;
+  margin-bottom: 11px;
+  margin-top: 5px;
+}
+
+.IS3 {
+  background-color: rgba(39,45,52,1.00);
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+</style>
+
+<Link>
+  <div
+    className="IS3 S2"
+  >
+    <div
+      className="S2"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="IS1 S1"
+        >
+          ROYALS
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </h3>
+      <ArticleFlags
+        color="#CCC"
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>

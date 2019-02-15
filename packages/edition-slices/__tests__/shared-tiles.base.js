@@ -3,6 +3,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
   mockLeadTwoNoPicAndTwoSlice,
+  mockLeadOneFullWidthSlice,
   mockSecondaryTwoNoPicAndTwoSlice
 } from "@times-components/fixture-generator";
 import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
@@ -18,7 +19,9 @@ import {
   TileI,
   TileJ,
   TileL,
-  TileM
+  TileM,
+  TileN,
+  TileO
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -100,7 +103,10 @@ export default () => {
       test: () => {
         const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
         const output = TestRenderer.create(
-          <TileG tile={secondaryTwoNoPicAndTwoData.support1} />
+          <TileG
+            onPress={() => {}}
+            tile={secondaryTwoNoPicAndTwoData.support1}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -110,7 +116,7 @@ export default () => {
       name: "tile i",
       test: () => {
         const output = TestRenderer.create(
-          <TileI tile={leadOneAndOneData.lead} />
+          <TileI onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -120,7 +126,7 @@ export default () => {
       name: "tile j",
       test: () => {
         const output = TestRenderer.create(
-          <TileJ tile={leadOneAndOneData.lead} />
+          <TileJ onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();
@@ -141,6 +147,27 @@ export default () => {
       test: () => {
         const output = TestRenderer.create(
           <TileM onPress={() => {}} tile={leadOneAndOneData.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile n",
+      test: () => {
+        const slice = mockLeadOneFullWidthSlice();
+        const output = TestRenderer.create(
+          <TileN onPress={() => {}} tile={slice.lead} />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tile o",
+      test: () => {
+        const output = TestRenderer.create(
+          <TileO onPress={() => {}} tile={leadOneAndOneData.lead} />
         );
 
         expect(output).toMatchSnapshot();

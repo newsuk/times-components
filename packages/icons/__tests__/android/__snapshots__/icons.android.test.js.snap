@@ -404,3 +404,55 @@ exports[`6. iconfacebook renders 1`] = `
   </ARTGroup>
 </ARTSurfaceView>
 `;
+
+exports[`7. thetimeslogo renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 20,
+      "width": 20,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        0.21052631578947367,
+        0,
+        0,
+        0.21052631578947367,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTShape
+      d="4ac8c91d91e5d81cca0a152cd054a1ad"
+      fill={
+        Array [
+          0,
+          1,
+          1,
+          1,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;

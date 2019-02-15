@@ -17,6 +17,7 @@ import {
   ListTwoAndSixNoPicSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
+  SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   LeadersSlice
@@ -149,6 +150,25 @@ export default {
         );
       },
       name: "Secondary Two And Two (CCGG)",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => {
+        const slice = mockSecondaryFourSlice();
+        return (
+          <ScrollView>
+            <SecondaryOneAndFourSlice
+              onPress={preventDefaultedAction(decorateAction)("onPress")}
+              secondary1={slice.secondary1}
+              support1={slice.secondary2}
+              support2={slice.secondary3}
+              support3={slice.secondary4}
+              support4={slice.secondary4}
+            />
+          </ScrollView>
+        );
+      },
+      name: "Supplement Secondary One And Four (NOOOO)",
       type: "story"
     },
     {

@@ -15,6 +15,7 @@ exports[`1. tile a 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "NEW",
@@ -47,6 +48,7 @@ exports[`2. tile b 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -91,6 +93,7 @@ exports[`3. tile c 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -124,6 +127,7 @@ exports[`4. tile d 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -157,6 +161,7 @@ exports[`5. tile e 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -191,6 +196,7 @@ exports[`6. tile f 1`] = `
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </Text>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "EXCLUSIVE",
@@ -233,6 +239,7 @@ exports[`7. tile g 1`] = `
         Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "EXCLUSIVE",
@@ -265,6 +272,7 @@ exports[`8. tile i 1`] = `
       Prince Philip ‘could be prosecuted’ over car crash
     </Text>
     <ArticleFlags
+      color={null}
       flags={
         Array [
           "NEW",
@@ -297,6 +305,7 @@ exports[`9. tile j 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -324,6 +333,7 @@ exports[`10. tile l 1`] = `
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
       <ArticleFlags
+        color={null}
         flags={
           Array [
             "NEW",
@@ -345,7 +355,80 @@ exports[`11. tile m 1`] = `
       >
         Prince Philip ‘could be prosecuted’ over car crash
       </Text>
-      <ArticleFlags />
+      <ArticleFlags
+        color={null}
+      />
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`12. tile n 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <ArticleFlags
+        color="#CCC"
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`13. tile o 1`] = `
+<Link>
+  <View>
+    <View>
+      <View>
+        <Text>
+          ROYALS
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Prince Philip ‘could be prosecuted’ over car crash
+      </Text>
+      <ArticleFlags
+        color="#CCC"
+        flags={
+          Array [
+            "NEW",
+          ]
+        }
+      />
     </View>
   </View>
 </Link>
