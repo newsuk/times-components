@@ -8,9 +8,11 @@ import {
   LeadersSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   TwoPicAndSixNoPicSlice,
-  Tile
+  Tile,
+  SecondaryOneAndFourSlice
 } from "./types";
 import MockArticle from "./mock-article";
 
@@ -38,7 +40,15 @@ interface SecondaryOneSliceWithName extends SecondaryOneSlice {
   name: string;
 }
 
+interface SecondaryOneAndFourSliceWithName extends SecondaryOneAndFourSlice {
+  name: string;
+}
+
 interface SecondaryFourSliceWithName extends SecondaryFourSlice {
+  name: string;
+}
+
+interface SecondaryTwoAndTwoSliceWithName extends SecondaryTwoAndTwoSlice {
   name: string;
 }
 
@@ -68,7 +78,7 @@ function getTiles(count: number): Array<Tile> {
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
   const tiles = getTiles(5);
   return <LeadOneAndFourSliceWithName>{
-    name: "LeadOneAndFourSliceWithName",
+    name: "LeadOneAndFourSlice",
     lead: tiles[0],
     items: tiles,
     support1: tiles[1],
@@ -129,6 +139,18 @@ function mockSecondaryOneSlice(): SecondaryOneSliceWithName {
   };
 }
 
+function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
+  const tiles = getTiles(5);
+  return <SecondaryOneAndFourSliceWithName>{
+    name: "SecondaryOneAndFourSlice",
+    secondary: tiles[0],
+    support1: tiles[1],
+    support2: tiles[2],
+    support3: tiles[3],
+    support4: tiles[4]
+  };
+}
+
 function mockSecondaryFourSlice(): SecondaryFourSliceWithName {
   const tiles = getTiles(4);
   return <SecondaryFourSliceWithName>{
@@ -153,7 +175,19 @@ function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSliceWithNam
   };
 }
 
-function mockList2AndSixNoPicSlice(): TwoPicAndSixNoPicSliceWithName {
+function mockSecondaryTwoAndTwoSlice(): SecondaryTwoAndTwoSliceWithName {
+  const tiles = getTiles(4);
+  return <SecondaryTwoAndTwoSliceWithName>{
+    name: "SecondaryTwoAndTwoSlice",
+    secondary1: tiles[0],
+    secondary2: tiles[1],
+    support1: tiles[2],
+    support2: tiles[3],
+    items: tiles
+  };
+}
+
+function mockListTwoAndSixNoPicSlice(): TwoPicAndSixNoPicSliceWithName {
   const tiles = getTiles(8);
   return <TwoPicAndSixNoPicSliceWithName>{
     name: "TwoPicAndSixNoPicSlice",
@@ -191,8 +225,10 @@ export {
   mockLeadOneAndTwoSlice,
   mockLeadTwoNoPicAndTwoSlice,
   mockLeadersSlice,
+  mockListTwoAndSixNoPicSlice,
   mockSecondaryOneSlice,
+  mockSecondaryOneAndFourSlice,
   mockSecondaryFourSlice,
-  mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice
+  mockSecondaryTwoAndTwoSlice,
+  mockSecondaryTwoNoPicAndTwoSlice
 };

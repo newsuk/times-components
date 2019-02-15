@@ -14,7 +14,7 @@ import {
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice
+  mockListTwoAndSixNoPicSlice
 } from "./mock-slice";
 import MockImage from "./mock-image";
 
@@ -28,7 +28,7 @@ function getSlices(): Array<ArticleSlice> {
     mockSecondaryOneSlice(),
     mockSecondaryFourSlice(),
     mockSecondaryTwoNoPicAndTwoSlice(),
-    mockList2AndSixNoPicSlice()
+    mockListTwoAndSixNoPicSlice()
   ];
 }
 

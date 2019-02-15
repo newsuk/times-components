@@ -15,7 +15,7 @@ const renderHead = () => (
   </View>
 );
 
-const LeadersSlice = ({ leader1, leader2, leader3, onPress }) => (
+const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => (
   <View style={styles.container}>
     {renderHead()}
     <Leaders
@@ -27,10 +27,12 @@ const LeadersSlice = ({ leader1, leader2, leader3, onPress }) => (
 );
 
 LeadersSlice.propTypes = {
-  leader1: PropTypes.shape({}).isRequired,
-  leader2: PropTypes.shape({}).isRequired,
-  leader3: PropTypes.shape({}).isRequired,
-  onPress: PropTypes.func.isRequired
+  onPress: PropTypes.func.isRequired,
+  slice: PropTypes.shape({
+    leader1: PropTypes.shape({}).isRequired,
+    leader2: PropTypes.shape({}).isRequired,
+    leader3: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default LeadersSlice;

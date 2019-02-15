@@ -340,7 +340,7 @@ exports[`5. iconfacebook renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`7. thetimeslogo renders 1`] = `
+exports[`6. thetimeslogo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {

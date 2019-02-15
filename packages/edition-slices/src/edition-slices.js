@@ -1,21 +1,29 @@
 import {
+  LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  LeadersSlice,
   ListTwoAndSixNoPicSlice,
+  SecondaryFourSlice,
+  SecondaryOneAndFourSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryTwoAndTwoSlice,
+  SecondaryTwoNoPicAndTwoSlice
 } from "./slices";
 
-export {
+const sliceMap = {
+  LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
-  LeadersSlice,
-  ListTwoAndSixNoPicSlice,
+  SecondaryFourSlice,
+  SecondaryOneAndFourSlice,
   SecondaryOneSlice,
-  SecondaryFourSlice
+  SecondaryTwoAndTwoSlice,
+  SecondaryTwoNoPicAndTwoSlice,
+  TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice
 };
+
+export default sliceMap;

@@ -4,6 +4,7 @@ exports[`section page 1`] = `
 <RCTScrollView>
   <View>
     <View>
+      <LeadOneAndFourSlice />
       <View>
         <View
           style={
@@ -42,6 +43,7 @@ exports[`section page 1`] = `
       </View>
     </View>
     <View>
+      <LeadOneAndTwoSlice />
       <View>
         <View
           style={
@@ -93,6 +95,7 @@ exports[`section page 1`] = `
       </View>
     </View>
     <View>
+      <SecondaryTwoNoPicAndTwoSlice />
       <View>
         <View
           style={
@@ -104,7 +107,9 @@ exports[`section page 1`] = `
         />
       </View>
     </View>
-    <View />
+    <View>
+      <ListTwoAndSixNoPicSlice />
+    </View>
   </View>
 </RCTScrollView>
 `;

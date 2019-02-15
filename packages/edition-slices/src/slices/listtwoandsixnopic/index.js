@@ -4,15 +4,17 @@ import { ListTwoAndSixNoPic } from "@times-components/slice-layout";
 import { TileL, TileC } from "../../tiles";
 
 const ListTwoAndSixNoPicSlice = ({
-  lead1,
-  lead2,
-  support1,
-  support2,
-  support3,
-  support4,
-  support5,
-  support6,
-  onPress
+  onPress,
+  slice: {
+    lead1,
+    lead2,
+    support1,
+    support2,
+    support3,
+    support4,
+    support5,
+    support6
+  }
 }) => (
   <ListTwoAndSixNoPic
     renderLead1={() => <TileC onPress={onPress} tile={lead1} />}
@@ -27,15 +29,17 @@ const ListTwoAndSixNoPicSlice = ({
 );
 
 ListTwoAndSixNoPicSlice.propTypes = {
-  lead1: PropTypes.shape({}).isRequired,
-  lead2: PropTypes.shape({}).isRequired,
   onPress: PropTypes.func.isRequired,
-  support1: PropTypes.shape({}).isRequired,
-  support2: PropTypes.shape({}).isRequired,
-  support3: PropTypes.shape({}).isRequired,
-  support4: PropTypes.shape({}).isRequired,
-  support5: PropTypes.shape({}).isRequired,
-  support6: PropTypes.shape({}).isRequired
+  slice: PropTypes.shape({
+    lead1: PropTypes.shape({}).isRequired,
+    lead2: PropTypes.shape({}).isRequired,
+    support1: PropTypes.shape({}).isRequired,
+    support2: PropTypes.shape({}).isRequired,
+    support3: PropTypes.shape({}).isRequired,
+    support4: PropTypes.shape({}).isRequired,
+    support5: PropTypes.shape({}).isRequired,
+    support6: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default ListTwoAndSixNoPicSlice;

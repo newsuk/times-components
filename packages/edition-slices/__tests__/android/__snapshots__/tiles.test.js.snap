@@ -1,24 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. tile a 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <Text>
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
       accessibilityRole="heading"
       aria-level="3"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags
       color={null}
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -26,43 +28,41 @@ exports[`1. tile a 1`] = `
   <View>
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </View>
 </Link>
 `;
 
 exports[`2. tile b 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
       <Text>
         <Text>
           
-          The 
-          <Text>
-            Duke of Edinburgh
-          </Text>
-           could be charged with driving without due care and attention after his car accident yesterday
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </Text>
       </Text>
@@ -72,31 +72,33 @@ exports[`2. tile b 1`] = `
 `;
 
 exports[`3. tile c 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <Image
         aspectRatio={1.7777777777777777}
-        uri="https://img/someImage"
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
       />
     </View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -106,31 +108,33 @@ exports[`3. tile c 1`] = `
 `;
 
 exports[`4. tile d 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <Image
         aspectRatio={1.5}
-        uri="https://img/someImage"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
       />
     </View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -140,31 +144,33 @@ exports[`4. tile d 1`] = `
 `;
 
 exports[`5. tile e 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <Image
         aspectRatio={0.8}
-        uri="http://image.io/4by5"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
       />
     </View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -252,30 +258,32 @@ exports[`7. tile g 1`] = `
 `;
 
 exports[`8. tile i 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </View>
   <View>
     <View>
       <Text>
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
       accessibilityRole="heading"
       aria-level="3"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags
       color={null}
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -284,31 +292,33 @@ exports[`8. tile i 1`] = `
 `;
 
 exports[`9. tile j 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <Image
         aspectRatio={1.5}
-        uri="https://img/someImage"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
       />
     </View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -318,25 +328,27 @@ exports[`9. tile j 1`] = `
 `;
 
 exports[`10. tile l 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -353,7 +365,13 @@ exports[`11. tile m 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Driving Off
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="4"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </Text>
       <ArticleFlags
         color={null}
@@ -407,25 +425,27 @@ exports[`12. tile n 1`] = `
 `;
 
 exports[`13. tile o 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <View>
     <View>
       <View>
         <Text>
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
         accessibilityRole="heading"
         aria-level="3"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags
         color="#CCC"
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />

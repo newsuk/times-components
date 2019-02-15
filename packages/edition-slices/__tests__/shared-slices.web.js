@@ -18,7 +18,7 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "className"
+        (value, key) => key === "style" || key === "className" || key === "tile"
       ),
       rnwTransform(AppRegistry)
     )

@@ -17,7 +17,7 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
             return <ActivityIndicator size="large" />;
           }
           if (error) {
-            return <Text>{error}</Text>;
+            return <Text>{JSON.stringify(error)}</Text>;
           }
           return edition.sections
             .filter(({ title }) => title === sectionTitle)

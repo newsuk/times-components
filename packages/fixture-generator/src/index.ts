@@ -8,30 +8,34 @@ import {
   mockStandardSection
 } from "./mock-section";
 import mockEditionSlice, {
+  mockLeadersSlice,
   mockLeadOneAndFourSlice,
-  mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,
+  mockLeadOneFullWidthSlice,
   mockLeadTwoNoPicAndTwoSlice,
-  mockLeadersSlice,
-  mockSecondaryOneSlice,
+  mockListTwoAndSixNoPicSlice,
   mockSecondaryFourSlice,
-  mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice
+  mockSecondaryOneSlice,
+  mockSecondaryOneAndFourSlice,
+  mockSecondaryTwoAndTwoSlice,
+  mockSecondaryTwoNoPicAndTwoSlice
 } from "./mock-slice";
 import MockTopic from "./mock-topic";
 
 export {
+  mockLeadersSlice,
   mockLeadOneAndFourSlice,
-  mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,
+  mockLeadOneFullWidthSlice,
   mockLeadTwoNoPicAndTwoSlice,
-  mockLeadersSlice,
-  mockSecondaryOneSlice,
+  mockListTwoAndSixNoPicSlice,
   mockSecondaryFourSlice,
+  mockSecondaryOneSlice,
+  mockSecondaryOneAndFourSlice,
+  mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice,
   mockMagazineSection,
   mockPuzzleSection,
   mockStandardSection,

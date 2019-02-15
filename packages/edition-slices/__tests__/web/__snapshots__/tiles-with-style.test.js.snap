@@ -22,7 +22,7 @@ exports[`1. tile a 1`] = `
 }
 
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS2 {
@@ -43,7 +43,9 @@ exports[`1. tile a 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS3"
   >
@@ -53,7 +55,7 @@ exports[`1. tile a 1`] = `
       <div
         className="IS1 S1"
       >
-        ROYALS
+        LABEL
       </div>
     </div>
     <h3
@@ -61,13 +63,13 @@ exports[`1. tile a 1`] = `
       className="IS2 S3"
       role="heading"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
       color={null}
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -77,7 +79,7 @@ exports[`1. tile a 1`] = `
   >
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
 </Link>
@@ -128,7 +130,7 @@ exports[`2. tile b 1`] = `
 }
 
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS2 {
@@ -141,7 +143,9 @@ exports[`2. tile b 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS3 S2"
   >
@@ -154,7 +158,7 @@ exports[`2. tile b 1`] = `
         <div
           className="IS1 S1"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -162,13 +166,13 @@ exports[`2. tile b 1`] = `
         className="IS2 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -179,13 +183,7 @@ exports[`2. tile b 1`] = `
           className="S4"
         >
           
-          The 
-          <span
-            className="S4"
-          >
-            Duke of Edinburgh
-          </span>
-           could be charged with driving without due care and attention after his car accident yesterday
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </span>
       </div>
@@ -225,7 +223,7 @@ exports[`3. tile c 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS3 {
@@ -242,7 +240,9 @@ exports[`3. tile c 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS4 S3"
   >
@@ -251,7 +251,7 @@ exports[`3. tile c 1`] = `
     >
       <Image
         aspectRatio={1.7777777777777777}
-        uri="https://img/someImage"
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
       />
     </div>
     <div
@@ -263,7 +263,7 @@ exports[`3. tile c 1`] = `
         <div
           className="IS2 S2"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -271,13 +271,13 @@ exports[`3. tile c 1`] = `
         className="IS3 S4"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -313,7 +313,7 @@ exports[`4. tile d 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS3 {
@@ -341,7 +341,9 @@ exports[`4. tile d 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS5 S1"
   >
@@ -350,7 +352,7 @@ exports[`4. tile d 1`] = `
     >
       <Image
         aspectRatio={1.5}
-        uri="https://img/someImage"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
       />
     </div>
     <div
@@ -362,7 +364,7 @@ exports[`4. tile d 1`] = `
         <div
           className="IS2 S2"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -370,13 +372,13 @@ exports[`4. tile d 1`] = `
         className="IS3 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -412,7 +414,7 @@ exports[`5. tile e 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS3 {
@@ -440,7 +442,9 @@ exports[`5. tile e 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS5 S1"
   >
@@ -449,7 +453,7 @@ exports[`5. tile e 1`] = `
     >
       <Image
         aspectRatio={0.8}
-        uri="http://image.io/4by5"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
       />
     </div>
     <div
@@ -461,7 +465,7 @@ exports[`5. tile e 1`] = `
         <div
           className="IS2 S2"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -469,13 +473,13 @@ exports[`5. tile e 1`] = `
         className="IS3 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -744,7 +748,7 @@ exports[`8. tile i 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS3 {
@@ -766,13 +770,15 @@ exports[`8. tile i 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS1 S1"
   >
     <Image
       aspectRatio={1.7777777777777777}
-      uri="https://img/someImage"
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
   <div
@@ -784,7 +790,7 @@ exports[`8. tile i 1`] = `
       <div
         className="IS2 S2"
       >
-        ROYALS
+        LABEL
       </div>
     </div>
     <h3
@@ -792,13 +798,13 @@ exports[`8. tile i 1`] = `
       className="IS3 S3"
       role="heading"
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </h3>
     <ArticleFlags
       color={null}
       flags={
         Array [
-          "NEW",
+          "EXCLUSIVE",
         ]
       }
     />
@@ -833,7 +839,7 @@ exports[`9. tile j 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS3 {
@@ -860,7 +866,9 @@ exports[`9. tile j 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS5 S1"
   >
@@ -869,7 +877,7 @@ exports[`9. tile j 1`] = `
     >
       <Image
         aspectRatio={1.5}
-        uri="https://img/someImage"
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
       />
     </div>
     <div
@@ -881,7 +889,7 @@ exports[`9. tile j 1`] = `
         <div
           className="IS2 S2"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -889,13 +897,13 @@ exports[`9. tile j 1`] = `
         className="IS3 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -926,7 +934,7 @@ exports[`10. tile l 1`] = `
 }
 
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: rgba(0,91,141,1.00);
 }
 
 .IS2 {
@@ -942,7 +950,9 @@ exports[`10. tile l 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS3 S2"
   >
@@ -955,7 +965,7 @@ exports[`10. tile l 1`] = `
         <div
           className="IS1 S1"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -963,13 +973,13 @@ exports[`10. tile l 1`] = `
         className="IS2 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color={null}
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />
@@ -989,6 +999,14 @@ exports[`11. tile m 1`] = `
 }
 
 .S2 {
+  color: rgba(105,105,105,1.00);
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.S3 {
   margin-bottom: 0px;
 }
 
@@ -999,6 +1017,11 @@ exports[`11. tile m 1`] = `
 }
 
 .IS2 {
+  font-family: TimesDigitalW04-Regular;
+  text-align: center;
+}
+
+.IS3 {
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -1006,18 +1029,25 @@ exports[`11. tile m 1`] = `
 
 <Link>
   <div
-    className="IS2 S2"
+    className="IS3 S3"
   >
     <div
-      className="S2"
+      className="S3"
     >
       <h3
         aria-level="3"
         className="IS1 S1"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Driving Off
       </h3>
+      <h4
+        aria-level="4"
+        className="IS2 S2"
+        role="heading"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </h4>
       <ArticleFlags
         color={null}
       />
@@ -1201,7 +1231,9 @@ exports[`13. tile o 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS3 S2"
   >
@@ -1214,7 +1246,7 @@ exports[`13. tile o 1`] = `
         <div
           className="IS1 S1"
         >
-          ROYALS
+          LABEL
         </div>
       </div>
       <h3
@@ -1222,13 +1254,13 @@ exports[`13. tile o 1`] = `
         className="IS2 S3"
         role="heading"
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </h3>
       <ArticleFlags
         color="#CCC"
         flags={
           Array [
-            "NEW",
+            "EXCLUSIVE",
           ]
         }
       />

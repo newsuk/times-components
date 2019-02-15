@@ -1,4 +1,4 @@
-import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice, mockList2AndSixNoPicSlice } from "../mock-slice";
+import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice } from "../mock-slice";
 
 describe("The Mock EditionSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
@@ -45,6 +45,15 @@ describe("The Mock EditionSlice", () => {
     expect(articleSlice.secondary).toBeDefined();
   });
 
+  it("returns SecondaryTwoAndTwoSlice", () => {
+    const articleSlice = mockSecondaryTwoAndTwoSlice();
+    expect(articleSlice.items.length).toBe(4);
+    expect(articleSlice.secondary1).toBeDefined();
+    expect(articleSlice.secondary1).toBeDefined();
+    expect(articleSlice.support1).toBeDefined();
+    expect(articleSlice.support2).toBeDefined();
+  });
+
   it("returns SecondaryTwoNoPicAndTwoSlice", () => {
     const articleSlice = mockSecondaryTwoNoPicAndTwoSlice();
     expect(articleSlice.items.length).toBe(4);
@@ -55,7 +64,7 @@ describe("The Mock EditionSlice", () => {
   });
 
   it("returns List2And6NoPicSlice", () => {
-    const articleSlice = mockList2AndSixNoPicSlice();
+    const articleSlice = mockListTwoAndSixNoPicSlice();
     expect(articleSlice.items.length).toBe(8);
     expect(articleSlice.lead1).toBeDefined();
     expect(articleSlice.lead2).toBeDefined();

@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  mockLeadOneAndFourSlice,
-  mockLeadOneFullWidthSlice,
-  mockLeadTwoNoPicAndTwoSlice,
-  mockSecondaryFourSlice
-} from "@times-components/fixture-generator";
+import { mockEditionSlice } from "@times-components/fixture-generator";
 
 import {
   TileA,
@@ -22,6 +17,7 @@ import {
   TileO
 } from "./src/tiles";
 
+const tile = mockEditionSlice(1).items[0];
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -30,180 +26,75 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const renderTile = Tile => (_, { decorateAction }) => (
+  <Tile
+    onPress={preventDefaultedAction(decorateAction)("onPress")}
+    tile={tile}
+  />
+);
+
+const tileStories = [
+  {
+    name: "Tile A - Bottom image, 35pt headline, no teaser",
+    Tile: TileA
+  },
+  {
+    name: "Tile B - No image, 22pt headline, with teaser",
+    Tile: TileB
+  },
+  {
+    name: "Tile C - Top image, 22pt headline, no teaser",
+    Tile: TileC
+  },
+  {
+    name: "Tile D - Side 3/2 image, 22pt headline, no teaser",
+    Tile: TileD
+  },
+  {
+    name: "Tile E - Side 4/5 image, 22pt headline, no teaser",
+    Tile: TileE
+  },
+  {
+    name: "Tile F - 35pt Headline, no image, strapline and teaser",
+    Tile: TileF
+  },
+  {
+    name: "Tile G - Roundel image, 22pt headline, no teaser",
+    Tile: TileG
+  },
+  {
+    name: "Tile I - Vertical, top image, centered aligned summary",
+    Tile: TileI
+  },
+  {
+    name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
+    Tile: TileJ
+  },
+  {
+    name: "Tile L - No image, 22pt headline, no teaser",
+    Tile: TileL
+  },
+  {
+    name:
+      "Tile M - No image, 22pt headline, no teaser, comment article, center align",
+    Tile: TileM
+  },
+  {
+    name: "Tile N - Square image, 22pt headline, white color, black background",
+    Tile: TileN
+  },
+  {
+    name:
+      "Tile O - No image, 20pt headline, no teaser, white color, black background",
+    Tile: TileO
+  }
+];
+
 export default {
-  children: [
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileA
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile A - Bottom image, 35pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileB
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile B - No image, 22pt headline, with teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockSecondaryFourSlice();
-        return (
-          <TileC
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.secondary1}
-          />
-        );
-      },
-      name: "Tile C - Top image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileD
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile D - Side 3/2 image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileE
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile E - Side 4/5 image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadTwoNoPicAndTwoSlice();
-        return (
-          <TileF
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead1}
-          />
-        );
-      },
-      name: "Tile F - 35pt Headline, no image, strapline and teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileG
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile G - Roundel image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneAndFourSlice();
-        return (
-          <TileI
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile I - Vertical, top image, centered aligned summary",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneAndFourSlice();
-        return (
-          <TileJ
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.support1}
-          />
-        );
-      },
-      name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileL
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name: "Tile L - No image, 22pt headline, no teaser",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileM
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name:
-        "Tile M - No image, 22pt headline, no teaser, comment article, center align",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileN
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name:
-        "Tile N - Square image, 22pt headline, white color, black background",
-      type: "story"
-    },
-    {
-      component: (_, { decorateAction }) => {
-        const slice = mockLeadOneFullWidthSlice();
-        return (
-          <TileO
-            onPress={preventDefaultedAction(decorateAction)("onPress")}
-            tile={slice.lead}
-          />
-        );
-      },
-      name:
-        "Tile O - No image, 20pt headline, no teaser, white color, black background",
-      type: "story"
-    }
-  ],
+  children: tileStories.map(({ name, Tile }) => ({
+    component: renderTile(Tile),
+    name,
+    type: "story"
+  })),
   name: "Composed/Edition/Tiles"
 };

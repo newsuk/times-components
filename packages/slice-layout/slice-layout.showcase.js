@@ -254,7 +254,7 @@ export default {
       component: () => (
         <ScrollView>
           <SecondaryOneAndFourSlice
-            renderSecondary1={() => <Support1 id="support1" />}
+            renderSecondary={() => <Support1 id="support1" />}
             renderSupport1={() => <Support2 id="support2" />}
             renderSupport2={() => <Support3 id="support3" />}
             renderSupport3={() => <Support4 id="support4" />}

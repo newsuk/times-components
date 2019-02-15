@@ -2,13 +2,18 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
+  mockLeadOneAndFourSlice,
+  mockLeadOneFullWidthSlice,
+  mockLeadOneAndOneSlice,
   mockLeadTwoNoPicAndTwoSlice,
+  mockLeadersSlice,
+  mockSecondaryOneSlice,
   mockSecondaryFourSlice,
+  mockListTwoAndSixNoPicSlice,
+  mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockList2AndSixNoPicSlice,
-  mockLeadersSlice
+  mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
-import leadOneAndOneDataGenerator from "../fixtures/leadoneandone";
 import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -23,6 +28,13 @@ import {
   SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
 
+jest.mock("../src/tiles", () => {
+  const tileMocks = {};
+  Object.keys(require.requireActual("../src/tiles")).forEach(key => {
+    tileMocks[key] = key;
+  });
+  return tileMocks;
+});
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
@@ -33,185 +45,75 @@ jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/link", () => "Link");
 jest.mock("@times-components/gradient", () => "Gradient");
 
-const leadOneAndOneData = leadOneAndOneDataGenerator({
-  imageUrl: "https://img/someImage"
-});
+const slices = [
+  {
+    mock: mockLeadOneFullWidthSlice(),
+    name: "lead one full width slice",
+    Slice: LeadOneFullWidthSlice
+  },
+  {
+    mock: mockLeadOneAndOneSlice(),
+    name: "lead one and one slice",
+    Slice: LeadOneAndOneSlice
+  },
+  {
+    mock: mockLeadOneAndFourSlice(),
+    name: "lead one and four slice",
+    Slice: LeadOneAndFourSlice
+  },
+  {
+    mock: mockLeadTwoNoPicAndTwoSlice(),
+    name: "lead Two No Pic And Two",
+    Slice: LeadTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockSecondaryOneSlice(),
+    name: "secondary one slice",
+    Slice: SecondaryOneSlice
+  },
+  {
+    mock: mockSecondaryFourSlice(),
+    name: "secondary four slice",
+    Slice: SecondaryFourSlice
+  },
+  {
+    mock: mockSecondaryOneAndFourSlice(),
+    name: "secondary one and four slice",
+    Slice: SecondaryOneAndFourSlice
+  },
+  {
+    mock: mockSecondaryTwoAndTwoSlice(),
+    name: "secondary two and two slice",
+    Slice: SecondaryTwoAndTwoSlice
+  },
+  {
+    mock: mockSecondaryTwoNoPicAndTwoSlice(),
+    name: "secondary two no pic and two slice",
+    Slice: SecondaryTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockListTwoAndSixNoPicSlice(),
+    name: "list two and six no pic slice",
+    Slice: ListTwoAndSixNoPicSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "leaders slice",
+    Slice: LeadersSlice
+  }
+];
 
 export default () => {
-  const tests = [
-    {
-      name: "lead one full width slice",
-      test: () => {
-        const output = TestRenderer.create(
-          <LeadOneFullWidthSlice
-            lead={leadOneAndOneData.lead}
-            onPress={() => {}}
-          />
-        );
+  const tests = slices.map(({ mock, name, Slice }) => ({
+    name,
+    test: () => {
+      const output = TestRenderer.create(
+        <Slice onPress={() => {}} slice={mock} />
+      );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "lead one and one slice",
-      test: () => {
-        const output = TestRenderer.create(
-          <LeadOneAndOneSlice
-            lead={leadOneAndOneData.lead}
-            onPress={() => {}}
-            support={leadOneAndOneData.support}
-          />
-        );
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "lead one and four slice",
-      test: () => {
-        const listTwoAndSixNoPic = mockList2AndSixNoPicSlice();
-        const output = TestRenderer.create(
-          <LeadOneAndFourSlice
-            lead={listTwoAndSixNoPic.lead1}
-            onPress={() => {}}
-            support1={listTwoAndSixNoPic.support1}
-            support2={listTwoAndSixNoPic.support2}
-            support3={listTwoAndSixNoPic.support3}
-            support4={listTwoAndSixNoPic.support4}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Lead Two No Pic And Two",
-      test: () => {
-        const leadTwoNoPicAndTwoData = mockLeadTwoNoPicAndTwoSlice();
-        const output = TestRenderer.create(
-          <LeadTwoNoPicAndTwoSlice
-            lead1={leadTwoNoPicAndTwoData.lead1}
-            lead2={leadTwoNoPicAndTwoData.lead2}
-            support1={leadTwoNoPicAndTwoData.support1}
-            support2={leadTwoNoPicAndTwoData.support2}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "secondary one slice",
-      test: () => {
-        const output = TestRenderer.create(
-          <SecondaryOneSlice
-            onPress={() => {}}
-            secondary={leadOneAndOneData.lead}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Secondary Four",
-      test: () => {
-        const secondaryFourData = mockSecondaryFourSlice();
-        const output = TestRenderer.create(
-          <SecondaryFourSlice
-            onPress={() => {}}
-            secondary1={secondaryFourData.secondary1}
-            secondary2={secondaryFourData.secondary2}
-            secondary3={secondaryFourData.secondary3}
-            secondary4={secondaryFourData.secondary4}
-          />
-        );
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Secondary One And Four",
-      test: () => {
-        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
-        const output = TestRenderer.create(
-          <SecondaryOneAndFourSlice
-            onPress={() => {}}
-            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
-            support1={secondaryTwoNoPicAndTwoData.support1}
-            support2={secondaryTwoNoPicAndTwoData.support2}
-            support3={secondaryTwoNoPicAndTwoData.support2}
-            support4={secondaryTwoNoPicAndTwoData.support2}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Secondary Two And Two",
-      test: () => {
-        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
-        const output = TestRenderer.create(
-          <SecondaryTwoAndTwoSlice
-            onPress={() => {}}
-            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
-            secondary2={secondaryTwoNoPicAndTwoData.secondary2}
-            support1={secondaryTwoNoPicAndTwoData.support1}
-            support2={secondaryTwoNoPicAndTwoData.support2}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Secondary Two No Pic And Two",
-      test: () => {
-        const secondaryTwoNoPicAndTwoData = mockSecondaryTwoNoPicAndTwoSlice();
-        const output = TestRenderer.create(
-          <SecondaryTwoNoPicAndTwoSlice
-            secondary1={secondaryTwoNoPicAndTwoData.secondary1}
-            secondary2={secondaryTwoNoPicAndTwoData.secondary2}
-            support1={secondaryTwoNoPicAndTwoData.support1}
-            support2={secondaryTwoNoPicAndTwoData.support2}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "List Two And Six No Pic",
-      test: () => {
-        const listTwoAndSixNoPic = mockList2AndSixNoPicSlice();
-        const output = TestRenderer.create(
-          <ListTwoAndSixNoPicSlice
-            lead1={listTwoAndSixNoPic.lead1}
-            lead2={listTwoAndSixNoPic.lead2}
-            onPress={() => {}}
-            support1={listTwoAndSixNoPic.support1}
-            support2={listTwoAndSixNoPic.support2}
-            support3={listTwoAndSixNoPic.support3}
-            support4={listTwoAndSixNoPic.support4}
-            support5={listTwoAndSixNoPic.support5}
-            support6={listTwoAndSixNoPic.support6}
-          />
-        );
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "Leaders",
-      test: () => {
-        const leadersData = mockLeadersSlice();
-        const output = TestRenderer.create(
-          <LeadersSlice
-            leader1={leadersData.leader1}
-            leader2={leadersData.leader2}
-            leader3={leadersData.leader3}
-            onPress={() => {}}
-          />
-        );
-        expect(output).toMatchSnapshot();
-      }
+      expect(output).toMatchSnapshot();
     }
-  ];
+  }));
 
   iterator(tests);
 };

@@ -10,7 +10,7 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <SecondaryOneAndFourSlice
-            renderSecondary1={() => createItem("secondary-1")}
+            renderSecondary={() => createItem("secondary-1")}
             renderSupport1={() => createItem("support-1")}
             renderSupport2={() => createItem("support-2")}
             renderSupport3={() => createItem("support-3")}

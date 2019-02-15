@@ -20,7 +20,7 @@ exports[`1. tile a 1`] = `
       <Text
         style={
           Object {
-            "color": "#1D1D1B",
+            "color": "#005B8D",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
@@ -30,7 +30,7 @@ exports[`1. tile a 1`] = `
           }
         }
       >
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
@@ -45,7 +45,7 @@ exports[`1. tile a 1`] = `
         }
       }
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags />
   </View>
@@ -82,7 +82,7 @@ exports[`2. tile b 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -92,7 +92,7 @@ exports[`2. tile b 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -107,7 +107,7 @@ exports[`2. tile b 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
       <Text
@@ -124,11 +124,7 @@ exports[`2. tile b 1`] = `
       >
         <Text>
           
-          The 
-          <Text>
-            Duke of Edinburgh
-          </Text>
-           could be charged with driving without due care and attention after his car accident yesterday
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </Text>
       </Text>
@@ -169,7 +165,7 @@ exports[`3. tile c 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -179,7 +175,7 @@ exports[`3. tile c 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -196,7 +192,7 @@ exports[`3. tile c 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -242,7 +238,7 @@ exports[`4. tile d 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -252,7 +248,7 @@ exports[`4. tile d 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -267,7 +263,7 @@ exports[`4. tile d 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -313,7 +309,7 @@ exports[`5. tile e 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -323,7 +319,7 @@ exports[`5. tile e 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -338,7 +334,7 @@ exports[`5. tile e 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -535,7 +531,7 @@ exports[`8. tile i 1`] = `
       <Text
         style={
           Object {
-            "color": "#1D1D1B",
+            "color": "#005B8D",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
@@ -545,7 +541,7 @@ exports[`8. tile i 1`] = `
           }
         }
       >
-        ROYALS
+        LABEL
       </Text>
     </View>
     <Text
@@ -561,7 +557,7 @@ exports[`8. tile i 1`] = `
         }
       }
     >
-      Prince Philip ‘could be prosecuted’ over car crash
+      Venezuela shows how Corbyn’s socialism works
     </Text>
     <ArticleFlags />
   </View>
@@ -607,7 +603,7 @@ exports[`9. tile j 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -617,7 +613,7 @@ exports[`9. tile j 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -632,7 +628,7 @@ exports[`9. tile j 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -661,7 +657,7 @@ exports[`10. tile l 1`] = `
         <Text
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#005B8D",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
@@ -671,7 +667,7 @@ exports[`10. tile l 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -687,7 +683,7 @@ exports[`10. tile l 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
@@ -720,7 +716,21 @@ exports[`11. tile m 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Driving Off
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "paddingBottom": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </Text>
       <ArticleFlags />
     </View>
@@ -850,7 +860,7 @@ exports[`13. tile o 1`] = `
             }
           }
         >
-          ROYALS
+          LABEL
         </Text>
       </View>
       <Text
@@ -866,7 +876,7 @@ exports[`13. tile o 1`] = `
           }
         }
       >
-        Prince Philip ‘could be prosecuted’ over car crash
+        Venezuela shows how Corbyn’s socialism works
       </Text>
       <ArticleFlags />
     </View>
