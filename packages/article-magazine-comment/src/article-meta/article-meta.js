@@ -7,20 +7,29 @@ import DatePublication from "@times-components/date-publication";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
+const Seperator = () => <View style={styles.seperator} />;
+
 const ArticleMeta = ({
   byline,
+  isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
-  <View style={styles.metaContainer}>
+  <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
     {byline && (
       <View style={styles.meta}>
         <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
       </View>
     )}
+    {isTablet ? <Seperator /> : null}
     <View style={styles.meta}>
-      <Text style={styles.datePublication}>
+      <Text
+        style={[
+          styles.datePublication,
+          isTablet && styles.datePublicationTablet
+        ]}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </Text>
     </View>
