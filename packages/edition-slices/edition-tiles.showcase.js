@@ -14,7 +14,8 @@ import {
   TileL,
   TileM,
   TileN,
-  TileO
+  TileO,
+  TileR
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -87,6 +88,11 @@ const tileStories = [
     name:
       "Tile O - No image, 20pt headline, no teaser, white color, black background",
     Tile: TileO
+  },
+  {
+    name:
+      "Tile R - Bottom image, 45pt headline, no teaser",
+    Tile: TileR
   }
 ];
 
