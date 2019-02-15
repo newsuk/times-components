@@ -1,5 +1,9 @@
 import { Dimensions } from "react-native";
-import { tabletRowPadding, tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import {
+  tabletRowPadding,
+  tabletWidth,
+  tabletWidthMax
+} from "@times-components/styleguide";
 
 export const acceptedWidths = [
   320,
