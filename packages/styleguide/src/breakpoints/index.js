@@ -1,4 +1,4 @@
-const nativeEditionBreakpoints = {
+const editionBreakpoints = {
   large: "large",
   medium: "medium",
   small: "small",
@@ -7,15 +7,15 @@ const nativeEditionBreakpoints = {
 
 const getEditionBreakpoint = width => {
   if (width < 768) {
-    return nativeEditionBreakpoints.small;
+    return editionBreakpoints.small;
   }
   if (width < 1024) {
-    return nativeEditionBreakpoints.medium;
+    return editionBreakpoints.medium;
   }
   if (width < 1366) {
-    return nativeEditionBreakpoints.large;
+    return editionBreakpoints.large;
   }
-  return nativeEditionBreakpoints.xlarge;
+  return editionBreakpoints.xlarge;
 };
 
 export default {
@@ -26,4 +26,4 @@ export default {
   small: 520,
   wide: 1024
 };
-export { getEditionBreakpoint, nativeEditionBreakpoints };
+export { editionBreakpoints, getEditionBreakpoint };
