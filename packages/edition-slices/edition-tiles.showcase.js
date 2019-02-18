@@ -17,6 +17,7 @@ import {
   TileM,
   TileN,
   TileO,
+  TileR,
   TileP,
   TileQ,
   TileR,
@@ -103,7 +104,8 @@ const tileStories = [
     Tile: TileO
   },
   {
-    name: "Tile P - Profile roundel image, 35pt headline, no teaser, central aligned summary",
+    name:
+      "Tile P - Profile roundel image, 35pt headline, no teaser, central aligned summary",
     Tile: TileP
   },
   {
