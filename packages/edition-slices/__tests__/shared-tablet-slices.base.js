@@ -1,6 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator, setDimension } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
+import { setDimension } from "@times-components/test-utils/dimensions";
 import { mockLeadOneFullWidthSlice } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";

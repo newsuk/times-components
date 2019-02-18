@@ -1377,6 +1377,10 @@ exports[`14. tile r 1`] = `
   margin-bottom: 5px;
 }
 
+.S4 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -1419,13 +1423,17 @@ exports[`14. tile r 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
     <div
       className="S2"

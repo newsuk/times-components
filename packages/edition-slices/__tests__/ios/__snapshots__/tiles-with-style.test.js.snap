@@ -1037,7 +1037,15 @@ exports[`14. tile r 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags />
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
     </View>
     <View>
       <Image />
