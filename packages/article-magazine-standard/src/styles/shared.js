@@ -57,7 +57,7 @@ const sharedStyles = {
   metaTablet: {
     paddingTop: spacing(1)
   },
-  seperator: {
+  separator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),
