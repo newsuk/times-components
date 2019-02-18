@@ -5,7 +5,10 @@ exports[`comments error 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "marginBottom": 25,
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 50,
       "width": "100%",
     }
   }
@@ -79,7 +82,10 @@ exports[`disabled comments 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "marginBottom": 25,
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 50,
       "width": "100%",
     }
   }
@@ -134,7 +140,10 @@ exports[`enabled comments 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "marginBottom": 25,
+      "borderStyle": "solid",
+      "borderTopColor": "#DBDBDB",
+      "borderTopWidth": 1,
+      "marginBottom": 50,
       "width": "100%",
     }
   }

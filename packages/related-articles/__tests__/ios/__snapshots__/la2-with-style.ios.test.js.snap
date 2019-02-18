@@ -35,9 +35,6 @@ exports[`default styles 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
           "width": "100%",
         }
       }

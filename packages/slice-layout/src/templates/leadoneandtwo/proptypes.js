@@ -3,12 +3,7 @@ import PropTypes from "prop-types";
 const propTypes = {
   renderLead: PropTypes.func.isRequired,
   renderSupport1: PropTypes.func.isRequired,
-  renderSupport2: PropTypes.func.isRequired,
-  withSeparators: PropTypes.bool
+  renderSupport2: PropTypes.func.isRequired
 };
 
-const defaultProps = {
-  withSeparators: false
-};
-
-export { propTypes, defaultProps };
+export default propTypes;

@@ -13,15 +13,30 @@ const OpinionOneAndTwoSlice = ({
   const support1 = renderSupport1(supportConfig);
   const support2 = renderSupport2(supportConfig);
   const supports = [support1, support2];
+
+  const filteredSupports = supports.filter(support => support);
   return (
     <View style={styles.container}>
-      <View style={styles.itemContainer}>
+      <View
+        style={
+          filteredSupports.length === 0
+            ? styles.itemContainerWithoutBorders
+            : styles.itemContainer
+        }
+      >
         <View style={[styles.item, opinionStyles.opinion]}>
           {renderOpinion(opinionConfig)}
         </View>
       </View>
-      {supports.filter(support => support).map(support => (
-        <View key={support.props.id} style={styles.itemContainer}>
+      {filteredSupports.map((support, index) => (
+        <View
+          key={support.props.id}
+          style={
+            index === filteredSupports.length - 1
+              ? styles.itemContainerWithoutBorders
+              : styles.itemContainer
+          }
+        >
           <View style={styles.item}>{support}</View>
         </View>
       ))}
