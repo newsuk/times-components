@@ -44,21 +44,23 @@ exports[`6. secondary four slice 1`] = `
 <div>
   <div>
     <div>
-      <TileC />
+      <div>
+        <TileC />
+      </div>
+      <div />
+      <div>
+        <TileC />
+      </div>
     </div>
     <div />
     <div>
-      <TileC />
-    </div>
-  </div>
-  <div />
-  <div>
-    <div>
-      <TileC />
-    </div>
-    <div />
-    <div>
-      <TileC />
+      <div>
+        <TileC />
+      </div>
+      <div />
+      <div>
+        <TileC />
+      </div>
     </div>
   </div>
 </div>

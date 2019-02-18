@@ -13,3 +13,91 @@ exports[`1. lead one full width tablet slice 1`] = `
   <TileR />
 </View>
 `;
+
+exports[`2. secondary four tablet slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+  </View>
+</View>
+`;
