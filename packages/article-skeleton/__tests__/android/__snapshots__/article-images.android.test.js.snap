@@ -6,7 +6,7 @@ exports[`1. a secondary image 1`] = `
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }
@@ -68,7 +68,7 @@ exports[`2. an inline image 1`] = `
     ListHeaderComponent={
       <Gutter>
         <Header
-          width={1180}
+          width={750}
         />
       </Gutter>
     }

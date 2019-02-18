@@ -7,7 +7,7 @@ const fontSize = (font, scale) => {
     },
     dropCap: {
       large: 115,
-      medium: 100,
+      medium: 96,
       xlarge: 124
     },
     stMagazine: {
@@ -28,24 +28,24 @@ const fontSize = (font, scale) => {
 const margins = (font, scale) => {
   const config = {
     cultureMagazine: {
-      large: { bottom: -20, top: 0 },
-      medium: { bottom: -30, top: 0 },
-      xlarge: { bottom: -22, top: 0 }
+      large: { bottom: -20, top: -23 },
+      medium: { bottom: -30, top: -17 },
+      xlarge: { bottom: -22, top: -26 }
     },
     dropCap: {
-      large: { bottom: -33, top: -14 },
-      medium: { bottom: -22, top: -12 },
-      xlarge: { bottom: -34, top: -16 }
+      large: { bottom: -26, top: -14 },
+      medium: { bottom: -30, top: -12 },
+      xlarge: { bottom: -22, top: -16 }
     },
     stMagazine: {
-      large: { bottom: -26, top: 0 },
-      medium: { bottom: -30, top: 0 },
-      xlarge: { bottom: -22, top: 0 }
+      large: { bottom: -26, top: -22 },
+      medium: { bottom: -30, top: -17 },
+      xlarge: { bottom: -22, top: -24 }
     },
     styleMagazine: {
-      large: { bottom: -26, top: 0 },
-      medium: { bottom: -30, top: 0 },
-      xlarge: { bottom: -22, top: 0 }
+      large: { bottom: -26, top: -25 },
+      medium: { bottom: -30, top: -17 },
+      xlarge: { bottom: -22, top: -26 }
     }
   };
 

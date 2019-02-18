@@ -3,21 +3,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import align from "./align";
 import InlineElement from "./inlineElement";
+import styles from "./styles";
 
 export { default as InlineElement } from "./inlineElement";
 
 export const measureContainer = children => (
-  <View
-    style={{
-      alignItems: "flex-start",
-      flex: 0,
-      flexDirection: "row",
-      height: 1,
-      justifyContent: "flex-start"
-    }}
-  >
-    {children}
-  </View>
+  <View style={styles.container}>{children}</View>
 );
 
 export const measureText = texts => {

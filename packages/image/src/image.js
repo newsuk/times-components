@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import {
   addMissingProtocol,
-  normaliseWidth,
+  normaliseWidthForAssetRequestCache,
   convertToPixels
 } from "@times-components/utils";
 import LazyLoadingImage from "./lazy-loading-image";
@@ -29,7 +29,7 @@ class TimesImage extends Component {
     }
   }) {
     const { highResSize } = this.props;
-    const imageRes = normaliseWidth(
+    const imageRes = normaliseWidthForAssetRequestCache(
       convertToPixels(highResSize ? Math.min(width, highResSize) : width)
     );
 

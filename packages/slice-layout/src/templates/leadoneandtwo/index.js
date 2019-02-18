@@ -1,36 +1,33 @@
 import React from "react";
 import { View } from "react-native";
 import { leadConfig, supportConfig } from "./config";
-import { defaultProps, propTypes } from "./proptypes";
+import propTypes from "./proptypes";
 import styles from "../styles";
 
-const LeadOneAndTwoSlice = ({
-  renderLead,
-  renderSupport1,
-  renderSupport2,
-  withSeparators
-}) => {
+const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
   const support1 = renderSupport1(supportConfig);
   const support2 = renderSupport2(supportConfig);
   const supports = [support1, support2];
+  const filteredSupports = supports.filter(support => support);
+
   return (
     <View style={styles.container}>
       <View
         style={
-          withSeparators
-            ? styles.itemContainer
-            : styles.itemContainerWithoutBorders
+          filteredSupports.length === 0
+            ? styles.itemContainerWithoutBorders
+            : styles.itemContainer
         }
       >
         <View style={styles.item}>{renderLead(leadConfig)}</View>
       </View>
-      {supports.filter(support => support).map(support => (
+      {filteredSupports.map((support, index) => (
         <View
           key={support.props.id}
           style={
-            withSeparators
-              ? styles.itemContainer
-              : styles.itemContainerWithoutBorders
+            index === filteredSupports.length - 1
+              ? styles.itemContainerWithoutBorders
+              : styles.itemContainer
           }
         >
           <View style={styles.item}>{support}</View>
@@ -41,6 +38,5 @@ const LeadOneAndTwoSlice = ({
 };
 
 LeadOneAndTwoSlice.propTypes = propTypes;
-LeadOneAndTwoSlice.defaultProps = defaultProps;
 
 export default LeadOneAndTwoSlice;

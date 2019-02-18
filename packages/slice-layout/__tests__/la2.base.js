@@ -13,7 +13,6 @@ export default renderComponent => {
             renderLead={() => createItem("lead")}
             renderSupport1={() => null}
             renderSupport2={() => null}
-            withSeparators
           />
         );
 
@@ -28,7 +27,6 @@ export default renderComponent => {
             renderLead={() => createItem("lead")}
             renderSupport1={() => createItem("support-1")}
             renderSupport2={() => null}
-            withSeparators
           />
         );
 
@@ -43,7 +41,6 @@ export default renderComponent => {
             renderLead={() => createItem("lead")}
             renderSupport1={() => createItem("support-1")}
             renderSupport2={() => createItem("support-2")}
-            withSeparators
           />
         );
 

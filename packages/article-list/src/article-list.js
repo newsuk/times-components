@@ -3,7 +3,10 @@ import { ActivityIndicator, FlatList, View } from "react-native";
 import Button from "@times-components/button";
 import { colours, tabletWidth } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
+import {
+  normaliseWidthForAssetRequestCache,
+  screenWidthInPixels
+} from "@times-components/utils";
 import ArticleListError from "./article-list-error";
 import ArticleListItemWithError from "./article-list-item-with-error";
 import ArticleListItemSeparator from "./article-list-item-separator";
@@ -25,7 +28,7 @@ class ArticleList extends Component {
     this.state = {
       loadingMore: false,
       loadMoreError: null,
-      width: normaliseWidth(screenWidthInPixels())
+      width: normaliseWidthForAssetRequestCache(screenWidthInPixels())
     };
   }
 
