@@ -10,6 +10,7 @@ import {
   TileE,
   TileF,
   TileG,
+  TileH,
   TileI,
   TileJ,
   TileL,
@@ -66,6 +67,11 @@ const tileStories = [
   {
     name: "Tile G - Roundel image, 22pt headline, no teaser",
     Tile: TileG
+  },
+  {
+    name:
+      "Tile H - 22pt headline, teaser, byline at bottom all on left. Right hand, bottom aligned 2:3 image",
+    Tile: TileH
   },
   {
     name: "Tile I - Vertical, top image, centered aligned summary",

@@ -12,6 +12,7 @@ const TileSummary = ({
   tile: {
     article: { flags, hasVideo, headline, label, section, shortHeadline }
   },
+  byline,
   headlineStyle,
   strapline,
   straplineStyle,
@@ -22,6 +23,7 @@ const TileSummary = ({
   labelColour
 }) => (
   <ArticleSummary
+    bylineProps={byline ? { ast: byline } : null}
     content={
       summary
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />

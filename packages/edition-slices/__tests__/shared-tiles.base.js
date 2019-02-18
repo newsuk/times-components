@@ -11,6 +11,7 @@ import {
   TileE,
   TileF,
   TileG,
+  TileH,
   TileI,
   TileJ,
   TileL,
@@ -64,6 +65,10 @@ export default () => {
     {
       name: "tile g",
       test: () => testTile(TileG)
+    },
+    {
+      name: "tile h",
+      test: () => testTile(TileH)
     },
     {
       name: "tile i",
