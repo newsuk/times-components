@@ -595,6 +595,7 @@ export default gql`
     ...teasers
     headline
     leadAsset {
+      __typename
       ... on Video {
         posterImage {
           ...sectionImageProps
@@ -618,6 +619,7 @@ export default gql`
     id
     label
     leadAsset {
+      __typename
       ... on Video {
         posterImage {
           ...sectionImageProps
