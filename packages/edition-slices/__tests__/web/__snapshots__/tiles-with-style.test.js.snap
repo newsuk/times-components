@@ -18,7 +18,10 @@ exports[`1. tile a 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -28,17 +31,16 @@ exports[`1. tile a 1`] = `
 .IS2 {
   font-size: 35px;
   line-height: 35px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  margin-top: 5px;
   margin-right: 10px;
-  margin-bottom: 5px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .IS4 {
-  margin-bottom: 10px;
   width: 100%;
 }
 </style>
@@ -47,7 +49,7 @@ exports[`1. tile a 1`] = `
   url="/article/123"
 >
   <div
-    className="IS3"
+    className="IS3 S2"
   >
     <div
       className="S2"
@@ -65,16 +67,20 @@ exports[`1. tile a 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
+    <div
+      className="S4"
+    >
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
   </div>
   <div
-    className="IS4"
+    className="IS4 S4"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -128,6 +134,10 @@ exports[`2. tile b 1`] = `
   margin-bottom: 10px;
 }
 
+.S6 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -139,6 +149,7 @@ exports[`2. tile b 1`] = `
 .IS3 {
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 </style>
 
@@ -167,13 +178,6 @@ exports[`2. tile b 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
       <div
         className="S5"
       >
@@ -184,6 +188,17 @@ exports[`2. tile b 1`] = `
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </span>
+      </div>
+      <div
+        className="S6"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
     </div>
   </div>
@@ -226,15 +241,14 @@ exports[`3. tile c 1`] = `
 
 .IS3 {
   line-height: 22px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 
 .IS4 {
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-bottom: 15px;
-  padding-top: 11px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 </style>
 
@@ -271,13 +285,17 @@ exports[`3. tile c 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S1"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -302,7 +320,11 @@ exports[`4. tile d 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -371,13 +393,17 @@ exports[`4. tile d 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -403,6 +429,10 @@ exports[`5. tile e 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -471,13 +501,17 @@ exports[`5. tile e 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -536,6 +570,10 @@ exports[`6. tile f 1`] = `
 }
 
 .S7 {
+  margin-bottom: 10px;
+}
+
+.S8 {
   margin-bottom: 5px;
 }
 
@@ -559,7 +597,7 @@ exports[`6. tile f 1`] = `
   url="/article/123"
 >
   <div
-    className="IS3 S7"
+    className="IS3 S8"
   >
     <div
       className="S2"
@@ -584,13 +622,6 @@ exports[`6. tile f 1`] = `
     >
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </h4>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
     <div
       className="S6"
     >
@@ -601,6 +632,17 @@ exports[`6. tile f 1`] = `
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
       </span>
+    </div>
+    <div
+      className="S7"
+    >
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>
@@ -628,6 +670,10 @@ exports[`7. tile g 1`] = `
   margin-bottom: 5px;
 }
 
+.S4 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
   border-top-color: rgba(255,255,255,1.00);
   border-right-color: rgba(255,255,255,1.00);
@@ -648,6 +694,7 @@ exports[`7. tile g 1`] = `
 
 .IS3 {
   line-height: 22px;
+  padding-bottom: 5px;
 }
 
 .IS4 {
@@ -703,13 +750,17 @@ exports[`7. tile g 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -734,6 +785,10 @@ exports[`8. tile i 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -793,13 +848,17 @@ exports[`8. tile i 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
+    <div
+      className="S4"
+    >
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
   </div>
 </Link>
 `;
@@ -823,7 +882,11 @@ exports[`9. tile j 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -891,13 +954,17 @@ exports[`9. tile j 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -924,6 +991,10 @@ exports[`10. tile l 1`] = `
   font-weight: 400;
 }
 
+.S4 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -936,8 +1007,8 @@ exports[`10. tile l 1`] = `
 
 .IS3 {
   padding-top: 10px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 </style>
 
@@ -966,13 +1037,17 @@ exports[`10. tile l 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -997,6 +1072,10 @@ exports[`11. tile m 1`] = `
 }
 
 .S3 {
+  margin-bottom: 10px;
+}
+
+.S4 {
   margin-bottom: 0px;
 }
 
@@ -1019,10 +1098,10 @@ exports[`11. tile m 1`] = `
 
 <Link>
   <div
-    className="IS3 S3"
+    className="IS3 S4"
   >
     <div
-      className="S3"
+      className="S4"
     >
       <h3
         aria-level="3"
@@ -1038,7 +1117,11 @@ exports[`11. tile m 1`] = `
       >
         Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </h4>
-      <ArticleFlags />
+      <div
+        className="S3"
+      >
+        <ArticleFlags />
+      </div>
     </div>
   </div>
 </Link>
@@ -1083,6 +1166,10 @@ exports[`12. tile n 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
   margin-bottom: 10px;
 }
 
@@ -1156,14 +1243,6 @@ exports[`12. tile n 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        color="#CCC"
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
       <div
         className="IS4 S5"
       >
@@ -1174,6 +1253,18 @@ exports[`12. tile n 1`] = `
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </span>
+      </div>
+      <div
+        className="S6"
+      >
+        <ArticleFlags
+          color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
     </div>
   </div>
@@ -1198,6 +1289,10 @@ exports[`13. tile o 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
+}
+
+.S4 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -1244,14 +1339,18 @@ exports[`13. tile o 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        color="#CCC"
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
