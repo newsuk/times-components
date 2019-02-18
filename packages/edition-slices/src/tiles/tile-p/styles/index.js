@@ -1,4 +1,9 @@
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const styles = {
   bylineOpinion: {
@@ -10,15 +15,15 @@ const styles = {
   },
   container: {
     alignItems: "center",
-    paddingVertical: 20
+    paddingVertical: spacing(4)
   },
   headline: {
-    color: "#1d1d1b",
-    fontFamily: "TimesModern-Bold",
-    fontSize: 35,
+    color: colours.functional.brandColour,
+    fontFamily: fonts.headline,
+    fontSize: fontSizes.tileLeadHeadline,
     lineHeight: 35,
-    paddingHorizontal: 10,
-    paddingTop: 10,
+    paddingHorizontal: spacing(2),
+    paddingTop: spacing(2),
     textAlign: "center"
   },
   imageContainer: {
@@ -28,14 +33,14 @@ const styles = {
     width: "30%"
   },
   strapline: {
-    color: "#696969",
-    fontSize: 14,
+    color: colours.functional.secondary,
+    fontSize: fontSizes.meta,
     lineHeight: 20,
-    paddingHorizontal: 40
+    paddingHorizontal: spacing(8)
   },
   summaryContainer: {
     alignItems: "center",
-    paddingTop: 10
+    paddingTop: spacing(2)
   }
 };
 
