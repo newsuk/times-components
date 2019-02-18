@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-paragraph",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Article Paragraph",
   "main": "dist/",
   "dev": "src/",
@@ -39,7 +39,7 @@
     "@times-components/markup-forest": "1.4.8",
     "@times-components/responsive": "0.2.16",
     "@times-components/styleguide": "3.21.0",
-    "@times-components/utils": "4.4.1",
+    "@times-components/utils": "4.4.2",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"

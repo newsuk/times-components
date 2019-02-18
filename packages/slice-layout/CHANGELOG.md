@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.7.0...@times-components/slice-layout@0.8.0) (2019-02-18)
+
+
+### Features
+
+* Keyline combinations for comments, related articles and topics ([#1703](https://github.com/newsuk/times-components/issues/1703)) ([bdb082e](https://github.com/newsuk/times-components/commit/bdb082e))
+
+
+
+
+
 # [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.6.5...@times-components/slice-layout@0.7.0) (2019-02-15)
 
 

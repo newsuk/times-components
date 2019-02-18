@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.3.23...@times-components/article-comments@0.4.0) (2019-02-18)
+
+
+### Features
+
+* Keyline combinations for comments, related articles and topics ([#1703](https://github.com/newsuk/times-components/issues/1703)) ([bdb082e](https://github.com/newsuk/times-components/commit/bdb082e))
+
+
+
+
+
 ## [0.3.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.3.22...@times-components/article-comments@0.3.23) (2019-02-15)
 
 **Note:** Version bump only for package @times-components/article-comments
