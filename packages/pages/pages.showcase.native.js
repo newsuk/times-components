@@ -2,7 +2,7 @@
 import React from "react";
 import { sections } from "@times-components/storybook";
 import Section from "./src/section";
-import { Article, AuthorProfile, Topic } from "./src/pages";
+import { Article, AuthorProfile, Section, Topic } from "./src/pages";
 
 export default {
   children: [
