@@ -27,7 +27,7 @@ export default {
       component: (_, { decorateAction }) => (
         <ComponentWrapper>
           <ArticleBylineOpinion
-            ast={authorsAST.singleAuthor}
+            ast={authorsAST.authorInTheBeginning}
             {...getProps(decorateAction)}
           />
         </ComponentWrapper>
@@ -39,9 +39,9 @@ export default {
       component: (_, { decorateAction }) => (
         <ComponentWrapper>
           <ArticleBylineOpinion
-            ast={authorsAST.singleAuthor}
+            ast={authorsAST.authorInTheBeginning}
             {...getProps(decorateAction)}
-            opinionStyle={{ fontSize: 12, letterSpacong: 0.6, lineHeight: 12 }}
+            opinionStyle={{ fontSize: 12, letterSpacing: 0.6, lineHeight: 12 }}
           />
         </ComponentWrapper>
       ),

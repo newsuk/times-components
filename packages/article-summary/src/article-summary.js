@@ -32,6 +32,8 @@ const ArticleSummary = props => {
     strapline
   } = props;
 
+  console.log('bylineProps are>>>>', bylineProps);
+
   const renderByline = () => {
     if (bylineProps.ast.length === 0) return null;
 

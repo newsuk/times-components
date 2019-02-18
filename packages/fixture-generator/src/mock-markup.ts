@@ -27,7 +27,7 @@ const markupTypes: Markup = {
       {
         name: "text",
         attributes: {
-          value: "Gregor Robertson"
+          value: "Libby Purves"
         },
         children: []
       }

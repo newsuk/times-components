@@ -122,6 +122,7 @@ const tileStories = [
     name: "Tile U - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
     Tile: TileU
   }
+];
 
 export default {
   children: tileStories.map(({ name, Tile }) => ({
