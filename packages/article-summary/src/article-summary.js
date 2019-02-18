@@ -67,8 +67,8 @@ const ArticleSummary = props => {
       {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
       {strapline()}
-      {flags()}
       {content()}
+      {flags() ? <View style={styles.flagWrapper}>{flags()}</View> : null}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">
           <DatePublication {...datePublicationProps} />

@@ -69,7 +69,7 @@ const sharedStyles = {
     flexDirection: "row",
     justifyContent: "center"
   },
-  seperator: {
+  separator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),

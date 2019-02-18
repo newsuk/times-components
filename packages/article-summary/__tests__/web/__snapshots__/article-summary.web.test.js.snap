@@ -14,20 +14,22 @@ exports[`1. article summary component with a single paragraph 1`] = `
   >
     Test Headline
   </h3>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
   <div>
     <span>
       
       Test paragraph
       ...
     </span>
+  </div>
+  <div>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
   </div>
   <div>
     <DatePublication
@@ -535,20 +537,22 @@ exports[`13. article summary component with a strapline 1`] = `
   >
     Test Strapline
   </h4>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
   <div>
     <span>
       
       Test paragraph
       ...
     </span>
+  </div>
+  <div>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
   </div>
   <div>
     <DatePublication

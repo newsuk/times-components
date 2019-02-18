@@ -16,13 +16,15 @@ exports[`1. tile a 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
+    <div>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
   </div>
   <div>
     <Image
@@ -50,19 +52,21 @@ exports[`2. tile b 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
       <div>
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </span>
+      </div>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
     </div>
   </div>
@@ -92,13 +96,15 @@ exports[`3. tile c 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -127,13 +133,15 @@ exports[`4. tile d 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -162,13 +170,15 @@ exports[`5. tile e 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -196,19 +206,21 @@ exports[`6. tile f 1`] = `
     >
       Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
     </h4>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
     <div>
       <span>
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
       </span>
+    </div>
+    <div>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>
@@ -238,13 +250,15 @@ exports[`7. tile g 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -272,13 +286,15 @@ exports[`8. tile i 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          "EXCLUSIVE",
-        ]
-      }
-    />
+    <div>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
+    </div>
   </div>
 </Link>
 `;
@@ -306,13 +322,15 @@ exports[`9. tile j 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -335,13 +353,15 @@ exports[`10. tile l 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -363,7 +383,9 @@ exports[`11. tile m 1`] = `
       >
         Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </h4>
-      <ArticleFlags />
+      <div>
+        <ArticleFlags />
+      </div>
     </div>
   </div>
 </Link>
@@ -392,20 +414,22 @@ exports[`12. tile n 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        color="#CCC"
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
       <div>
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </span>
+      </div>
+      <div>
+        <ArticleFlags
+          color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </div>
     </div>
   </div>
@@ -429,14 +453,16 @@ exports[`13. tile o 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <ArticleFlags
-        color="#CCC"
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <div>
+        <ArticleFlags
+          color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>

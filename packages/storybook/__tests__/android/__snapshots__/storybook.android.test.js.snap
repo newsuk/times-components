@@ -65,6 +65,16 @@ exports[`Lateral Spacing Decorator 1`] = `
 </View>
 `;
 
+exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  I am in Storybook!
+</Text>
+`;
+
 exports[`The showcase converter should add a decorator between stories 1`] = `
 Array [
   Object {
