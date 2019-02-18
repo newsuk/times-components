@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollView } from "react-native";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 
 import {
@@ -14,7 +15,8 @@ import {
   TileL,
   TileM,
   TileN,
-  TileO
+  TileO,
+  TileR
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -27,10 +29,12 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderTile = Tile => (_, { decorateAction }) => (
-  <Tile
-    onPress={preventDefaultedAction(decorateAction)("onPress")}
-    tile={tile}
-  />
+  <ScrollView>
+    <Tile
+      onPress={preventDefaultedAction(decorateAction)("onPress")}
+      tile={tile}
+    />
+  </ScrollView>
 );
 
 const tileStories = [
@@ -87,6 +91,10 @@ const tileStories = [
     name:
       "Tile O - No image, 20pt headline, no teaser, white color, black background",
     Tile: TileO
+  },
+  {
+    name: "Tile R - Bottom image, 45pt headline, no teaser",
+    Tile: TileR
   }
 ];
 

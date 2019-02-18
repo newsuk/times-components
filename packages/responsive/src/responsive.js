@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
-import { tabletWidth } from "@times-components/styleguide";
+import {
+  getEditionBreakpoint,
+  tabletWidth
+} from "@times-components/styleguide";
 import ResponsiveContext from "./context";
 
 const calculateState = width => ({
+  editionBreakpoint: getEditionBreakpoint(width),
   isTablet: width > tabletWidth,
   screenWidth: width
 });

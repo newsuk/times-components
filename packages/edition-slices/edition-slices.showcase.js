@@ -13,6 +13,7 @@ import {
   mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice
 } from "@times-components/fixture-generator";
+import Responsive from "@times-components/responsive";
 import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -36,12 +37,14 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
-  <ScrollView>
-    <Component
-      onPress={preventDefaultedAction(decorateAction)("onPress")}
-      slice={data}
-    />
-  </ScrollView>
+  <Responsive>
+    <ScrollView>
+      <Component
+        onPress={preventDefaultedAction(decorateAction)("onPress")}
+        slice={data}
+      />
+    </ScrollView>
+  </Responsive>
 );
 
 const sliceStories = [
@@ -57,7 +60,7 @@ const sliceStories = [
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "Lead One Full Width (A)",
+    name: "Lead One Full Width (Mobile: A, Tablet: R)",
     Slice: LeadOneFullWidthSlice
   },
   {

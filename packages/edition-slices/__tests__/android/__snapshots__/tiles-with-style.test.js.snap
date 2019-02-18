@@ -987,3 +987,69 @@ exports[`13. tile o 1`] = `
   </View>
 </Link>
 `;
+
+exports[`14. tile r 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingHorizontal": 20,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 45,
+            "fontWeight": "400",
+            "lineHeight": 45,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+    <View>
+      <Image />
+    </View>
+  </View>
+</Link>
+`;

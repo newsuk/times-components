@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. lead one full width tablet slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS1 S1"
+>
+  <TileR />
+</div>
+`;

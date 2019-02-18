@@ -14,6 +14,8 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
+import Responsive from "@times-components/responsive";
+import "./mocks";
 import {
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -27,23 +29,6 @@ import {
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice
 } from "../src/slices";
-
-jest.mock("../src/tiles", () => {
-  const tileMocks = {};
-  Object.keys(require.requireActual("../src/tiles")).forEach(key => {
-    tileMocks[key] = key;
-  });
-  return tileMocks;
-});
-jest.mock("@times-components/article-flag", () => ({
-  ArticleFlags: "ArticleFlags"
-}));
-jest.mock("@times-components/icons", () => ({
-  TheTimesLogo: "TheTimesLogo"
-}));
-jest.mock("@times-components/image", () => "Image");
-jest.mock("@times-components/link", () => "Link");
-jest.mock("@times-components/gradient", () => "Gradient");
 
 const slices = [
   {
@@ -108,7 +93,9 @@ export default () => {
     name,
     test: () => {
       const output = TestRenderer.create(
-        <Slice onPress={() => {}} slice={mock} />
+        <Responsive>
+          <Slice onPress={() => {}} slice={mock} />
+        </Responsive>
       );
 
       expect(output).toMatchSnapshot();

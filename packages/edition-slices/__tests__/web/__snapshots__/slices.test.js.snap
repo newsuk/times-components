@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width slice 1`] = `<TileA />`;
+exports[`1. lead one full width slice 1`] = `
+<div>
+  <TileR />
+</div>
+`;
 
 exports[`2. lead one and one slice 1`] = `
 <div>
