@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.3.10...@times-components/tracking@2.4.0) (2019-02-18)
+
+
+### Features
+
+* Article Magazine Standard tablet byline ([#1709](https://github.com/newsuk/times-components/issues/1709)) ([904cd23](https://github.com/newsuk/times-components/commit/904cd23))
+
+
+
+
+
 ## [2.3.10](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.3.9...@times-components/tracking@2.3.10) (2019-02-15)
 
 **Note:** Version bump only for package @times-components/tracking

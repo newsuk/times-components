@@ -1,6 +1,6 @@
 {
   "name": "@times-components/svgs",
-  "version": "2.3.8",
+  "version": "2.4.0",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
