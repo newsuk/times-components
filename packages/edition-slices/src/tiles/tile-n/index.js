@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
-import { TileImage, TileLink, TileSummary } from "../shared";
+import { getCrop, TileImage, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileN = ({ onPress, tile }) => (
@@ -11,7 +11,7 @@ const TileN = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={1}
         style={styles.imageContainer}
-        uri={tile.article.leadAsset.crop11.url}
+        uri={getCrop(tile.article.leadAsset, "crop11")}
       />
       <TileSummary
         flagColour={styles.flagColour}

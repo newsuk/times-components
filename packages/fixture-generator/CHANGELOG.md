@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.10.3...@times-components/fixture-generator@0.11.0) (2019-02-18)
+
+
+### Features
+
+* Article Magazine Standard tablet byline ([#1709](https://github.com/newsuk/times-components/issues/1709)) ([904cd23](https://github.com/newsuk/times-components/commit/904cd23))
+
+
+
+
+
 ## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.10.2...@times-components/fixture-generator@0.10.3) (2019-02-15)
 
 **Note:** Version bump only for package @times-components/fixture-generator
