@@ -59,13 +59,18 @@ class DropCapParagraph extends Component {
   }
 
   async calculateLayout() {
+    const { font, scale, isTablet } = this.props;
     const { elements, results } = measureElements(this.renderChildren());
+    const {
+      articleMainContentRow: { paddingLeft, paddingRight }
+    } = styleFactory(font, scale);
     const { screenWidth: width } = this.state;
     this.setState({
       content: elements
     });
     const sizes = await results;
-    const [laidOut, height] = layoutText(width, sizes);
+    const padding = isTablet ? width : width - (paddingLeft + paddingRight);
+    const [laidOut, height] = layoutText(padding, sizes);
     this.setState({
       content: laidOut,
       height,
