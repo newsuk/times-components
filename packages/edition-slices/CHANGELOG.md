@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.12.3...@times-components/edition-slices@0.13.0) (2019-02-18)
+
+
+### Features
+
+* Move article flag under teaser and design tweaks ([#1710](https://github.com/newsuk/times-components/issues/1710)) ([98d4ff2](https://github.com/newsuk/times-components/commit/98d4ff2))
+
+
+
+
+
 ## [0.12.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.12.2...@times-components/edition-slices@0.12.3) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/edition-slices

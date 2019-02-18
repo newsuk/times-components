@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.8.8...@times-components/article-summary@3.9.0) (2019-02-18)
+
+
+### Features
+
+* Move article flag under teaser and design tweaks ([#1710](https://github.com/newsuk/times-components/issues/1710)) ([98d4ff2](https://github.com/newsuk/times-components/commit/98d4ff2))
+
+
+
+
+
 ## [3.8.8](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.8.7...@times-components/article-summary@3.8.8) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/article-summary

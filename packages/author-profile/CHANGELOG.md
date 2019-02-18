@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.29](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.3.28...@times-components/author-profile@5.3.29) (2019-02-18)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
 ## [5.3.28](https://github.com/newsuk/times-components/compare/@times-components/author-profile@5.3.27...@times-components/author-profile@5.3.28) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/author-profile

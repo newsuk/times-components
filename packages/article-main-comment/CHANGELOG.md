@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.14.3...@times-components/article-main-comment@0.15.0) (2019-02-18)
+
+
+### Features
+
+* Article Magazine Comment - Tablet Byline ([#1705](https://github.com/newsuk/times-components/issues/1705)) ([739bb85](https://github.com/newsuk/times-components/commit/739bb85))
+
+
+
+
+
 ## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.14.2...@times-components/article-main-comment@0.14.3) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/article-main-comment
