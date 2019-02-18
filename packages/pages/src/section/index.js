@@ -7,7 +7,6 @@ import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};
 const SectionPage = ({ editionId, section, sectionTitle }) => {
-  console.log("SectionData:", section);
   const SectionPageView = withNativeProvider(
     section ? (
       <Section onPress={onPress} section={JSON.parse(section)} />
