@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.12.10...@times-components/pages@1.13.0) (2019-02-18)
+
+
+### Bug Fixes
+
+* section page ([#1715](https://github.com/newsuk/times-components/issues/1715)) ([8e7992c](https://github.com/newsuk/times-components/commit/8e7992c))
+
+
+### Features
+
+* Responsive Slice wrapper for tablet support & lead one  ([#1711](https://github.com/newsuk/times-components/issues/1711)) ([1cb01de](https://github.com/newsuk/times-components/commit/1cb01de))
+
+
+
+
+
 ## [1.12.10](https://github.com/newsuk/times-components/compare/@times-components/pages@1.12.9...@times-components/pages@1.12.10) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/pages
