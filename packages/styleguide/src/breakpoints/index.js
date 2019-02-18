@@ -5,8 +5,9 @@ const editionBreakpoints = {
   xlarge: "xlarge"
 };
 
-const editionBreakpointWidths = [768, 1024, 1366]
-const editionMaxWidth = editionBreakpointWidths[editionBreakpointWidths.length - 1];
+const editionBreakpointWidths = [768, 1024, 1366];
+const editionMaxWidth =
+  editionBreakpointWidths[editionBreakpointWidths.length - 1];
 const getEditionBreakpoint = width => {
   if (width < editionBreakpointWidths[0]) {
     return editionBreakpoints.small;
