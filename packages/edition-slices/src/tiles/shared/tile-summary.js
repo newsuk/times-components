@@ -67,8 +67,8 @@ const TileSummary = ({
 );
 
 TileSummary.propTypes = {
-  flagColour: PropTypes.shape({}),
   bylineStyle: PropTypes.shape({}),
+  flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
@@ -80,8 +80,8 @@ TileSummary.propTypes = {
 };
 
 TileSummary.defaultProps = {
-  flagColour: {},
   bylineStyle: null,
+  flagColour: {},
   headlineStyle: null,
   labelColour: null,
   strapline: null,

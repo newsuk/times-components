@@ -325,8 +325,8 @@ export default {
       component: () => (
         <ScrollView>
           <CommentLeadAndCartoon
-            renderLead={() => <Support1 id="support1" />}
             renderCartoon={() => <Support2 id="support2" />}
+            renderLead={() => <Support1 id="support1" />}
           />
         </ScrollView>
       ),

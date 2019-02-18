@@ -197,3 +197,13 @@ exports[`11. leaders slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`12. comment lead and cartoon slice 1`] = `
+<View>
+  <View>
+    <TileP />
+    <View />
+    <TileQ />
+  </View>
+</View>
+`;

@@ -3,12 +3,12 @@ import { View } from "react-native";
 import { ItemRowSeparator } from "../shared";
 import propTypes from "./proptypes";
 
-const CommentLeadAndCartoon = ({renderLead, renderCartoon}) => (
-<View>
+const CommentLeadAndCartoon = ({ renderLead, renderCartoon }) => (
+  <View>
     {renderLead()}
     <ItemRowSeparator />
     {renderCartoon()}
-</View>
+  </View>
 );
 
 CommentLeadAndCartoon.propTypes = propTypes;
