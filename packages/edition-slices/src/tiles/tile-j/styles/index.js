@@ -10,7 +10,8 @@ const styles = {
     ...fontFactory({
       font: "headline",
       fontSize: "infoTitle"
-    })
+    }),
+    marginBottom: spacing(2)
   },
   imageContainer: {
     width: "33.33%"

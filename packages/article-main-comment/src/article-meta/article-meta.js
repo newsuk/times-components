@@ -6,7 +6,7 @@ import DatePublication from "@times-components/date-publication";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
-const Seperator = () => <View style={styles.seperator} />;
+const Separator = () => <View style={styles.separator} />;
 
 const ArticleMeta = ({
   byline,
@@ -23,7 +23,7 @@ const ArticleMeta = ({
         </View>
       </Fragment>
     )}
-    {isTablet ? <Seperator /> : null}
+    {isTablet ? <Separator /> : null}
     <View style={styles.meta}>
       <Text
         style={[

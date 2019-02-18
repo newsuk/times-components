@@ -30,14 +30,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   >
     Test Headline
   </Text>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
   <Text
     style={
       Object {
@@ -56,6 +48,22 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </Text>
   </Text>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+      }
+    }
+  >
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </View>
   <Text
     style={
       Object {

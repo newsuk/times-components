@@ -4,7 +4,8 @@ const styles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 35,
-    lineHeight: 35
+    lineHeight: 35,
+    marginBottom: spacing(2)
   },
   imageContainer: {
     marginBottom: spacing(2),
@@ -12,7 +13,7 @@ const styles = {
   },
   summaryContainer: {
     marginHorizontal: spacing(2),
-    marginVertical: spacing(1)
+    marginTop: spacing(2)
   }
 };
 

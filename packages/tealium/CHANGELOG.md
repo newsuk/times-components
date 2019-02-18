@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.8.8...@times-components/tealium@1.9.0) (2019-02-18)
+
+
+### Features
+
+* Article Magazine Standard tablet byline ([#1709](https://github.com/newsuk/times-components/issues/1709)) ([904cd23](https://github.com/newsuk/times-components/commit/904cd23))
+
+
+
+
+
 ## [1.8.8](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.8.7...@times-components/tealium@1.8.8) (2019-02-15)
 
 **Note:** Version bump only for package @times-components/tealium

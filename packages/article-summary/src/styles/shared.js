@@ -2,6 +2,9 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, fonts, spacing } = styleguide();
 const sharedStyles = {
+  flagWrapper: {
+    marginBottom: spacing(2)
+  },
   headline: {
     color: colours.functional.primary,
     fontFamily: fonts.headline,

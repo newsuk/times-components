@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.4.8...@times-components/markup-forest@1.5.0) (2019-02-18)
+
+
+### Features
+
+* Article Magazine Standard tablet byline ([#1709](https://github.com/newsuk/times-components/issues/1709)) ([904cd23](https://github.com/newsuk/times-components/commit/904cd23))
+
+
+
+
+
 ## [1.4.8](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.4.7...@times-components/markup-forest@1.4.8) (2019-02-15)
 
 **Note:** Version bump only for package @times-components/markup-forest

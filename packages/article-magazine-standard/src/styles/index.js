@@ -1,13 +1,5 @@
 import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
-
-const nativeStyles = {
-  ...sharedStyles,
-  standFirst: {
-    ...sharedStyles.standFirst,
-    lineHeight: 25
-  }
-};
+import nativeStyles from "./native";
 
 const styles = StyleSheet.create({
   ...nativeStyles
