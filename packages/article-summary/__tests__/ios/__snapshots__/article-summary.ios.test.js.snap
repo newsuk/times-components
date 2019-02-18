@@ -21,14 +21,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </Text>
   </Text>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
+  <View>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </View>
   <Text>
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -554,14 +556,16 @@ exports[`13. article summary component with a strapline 1`] = `
       ...
     </Text>
   </Text>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
+  <View>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </View>
   <Text>
     <DatePublication
       date="2017-11-17T00:01:00.000Z"

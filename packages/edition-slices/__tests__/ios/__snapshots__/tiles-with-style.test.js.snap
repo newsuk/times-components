@@ -47,13 +47,15 @@ exports[`1. tile a 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </Text>
-    <ArticleFlags
+    <View
       style={
         Object {
           "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleFlags />
+    </View>
   </View>
   <View
     style={
@@ -134,13 +136,15 @@ exports[`2. tile b 1`] = `
           ...
         </Text>
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -206,13 +210,15 @@ exports[`3. tile c 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -283,13 +289,15 @@ exports[`4. tile d 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -360,13 +368,15 @@ exports[`5. tile e 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -450,13 +460,15 @@ exports[`6. tile f 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
+    <View
       style={
         Object {
           "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleFlags />
+    </View>
   </View>
 </Link>
 `;
@@ -530,13 +542,15 @@ exports[`7. tile g 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -602,13 +616,15 @@ exports[`8. tile i 1`] = `
     >
       Venezuela shows how Corbyn’s socialism works
     </Text>
-    <ArticleFlags
+    <View
       style={
         Object {
           "marginBottom": 10,
         }
       }
-    />
+    >
+      <ArticleFlags />
+    </View>
   </View>
 </Link>
 `;
@@ -679,13 +695,15 @@ exports[`9. tile j 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -739,13 +757,15 @@ exports[`10. tile l 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -792,13 +812,15 @@ exports[`11. tile m 1`] = `
       >
         Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -888,13 +910,15 @@ exports[`12. tile n 1`] = `
           ...
         </Text>
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -950,13 +974,15 @@ exports[`13. tile o 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </Text>
-      <ArticleFlags
+      <View
         style={
           Object {
             "marginBottom": 10,
           }
         }
-      />
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>

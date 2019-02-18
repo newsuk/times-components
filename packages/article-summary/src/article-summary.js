@@ -68,7 +68,7 @@ const ArticleSummary = props => {
       {headline()}
       {strapline()}
       {content()}
-      {flags()}
+      {flags() ? <View style={styles.flagWrapper}>{flags()}</View> : null}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">
           <DatePublication {...datePublicationProps} />

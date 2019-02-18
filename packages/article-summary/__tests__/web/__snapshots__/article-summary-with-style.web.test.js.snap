@@ -38,6 +38,10 @@ exports[`1. article summary component with a single paragraph 1`] = `
 }
 
 .S5 {
+  margin-bottom: 10px;
+}
+
+.S6 {
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -46,17 +50,13 @@ exports[`1. article summary component with a single paragraph 1`] = `
   margin-bottom: 5px;
 }
 
-.S6 {
+.S7 {
   color: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: inherit;
   line-height: inherit;
   margin-bottom: 0px;
-}
-
-.IS1 {
-  margin-bottom: 10;
 }
 </style>
 
@@ -89,17 +89,20 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </span>
   </div>
-  <ArticleFlags
-    className="IS1"
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
   <div
     className="S5"
+  >
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </div>
+  <div
+    className="S6"
     data-testid="datePublication"
   >
     <DatePublication
@@ -108,7 +111,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="S6"
+    className="S7"
   >
     <ArticleByline
       ast={

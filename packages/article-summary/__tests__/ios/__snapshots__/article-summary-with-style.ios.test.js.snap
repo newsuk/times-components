@@ -48,19 +48,22 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </Text>
   </Text>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
+  <View
     style={
       Object {
         "marginBottom": 10,
       }
     }
-  />
+  >
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </View>
   <Text
     style={
       Object {

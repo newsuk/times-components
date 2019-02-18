@@ -21,14 +21,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </span>
   </div>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
+  <div>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </div>
   <div>
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -542,14 +544,16 @@ exports[`13. article summary component with a strapline 1`] = `
       ...
     </span>
   </div>
-  <ArticleFlags
-    flags={
-      Array [
-        "UPDATED",
-        "EXCLUSIVE",
-      ]
-    }
-  />
+  <div>
+    <ArticleFlags
+      flags={
+        Array [
+          "UPDATED",
+          "EXCLUSIVE",
+        ]
+      }
+    />
+  </div>
   <div>
     <DatePublication
       date="2017-11-17T00:01:00.000Z"

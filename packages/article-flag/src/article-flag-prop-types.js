@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
 import { colours } from "@times-components/styleguide";
-
-const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const articleFlagPropTypes = {
   color: PropTypes.oneOfType([
@@ -19,8 +16,7 @@ const articleFlagPropTypes = {
 };
 
 const articleFlagsPropTypes = {
-  flags: PropTypes.arrayOf(PropTypes.string),
-  style: ViewStylePropTypes
+  flags: PropTypes.arrayOf(PropTypes.string)
 };
 
 const articleFlagDefaultProps = {
