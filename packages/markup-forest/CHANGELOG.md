@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.5.0...@times-components/markup-forest@1.5.1) (2019-02-18)
+
+
+### Bug Fixes
+
+* Use getcrop in tile-r ([#1718](https://github.com/newsuk/times-components/issues/1718)) ([610a878](https://github.com/newsuk/times-components/commit/610a878))
+
+
+
+
+
 # [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.4.8...@times-components/markup-forest@1.5.0) (2019-02-18)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.4.0...@times-components/watermark@2.4.1) (2019-02-18)
+
+
+### Bug Fixes
+
+* Use getcrop in tile-r ([#1718](https://github.com/newsuk/times-components/issues/1718)) ([610a878](https://github.com/newsuk/times-components/commit/610a878))
+
+
+
+
+
 # [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.3.8...@times-components/watermark@2.4.0) (2019-02-18)
 
 

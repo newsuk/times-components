@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.10](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.6.9...@times-components/article-paragraph@0.6.10) (2019-02-18)
+
+
+### Bug Fixes
+
+* more offset number tweaks ([#1717](https://github.com/newsuk/times-components/issues/1717)) ([4046ddd](https://github.com/newsuk/times-components/commit/4046ddd))
+
+
+
+
+
 ## [0.6.9](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.6.8...@times-components/article-paragraph@0.6.9) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/article-paragraph

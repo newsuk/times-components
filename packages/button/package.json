@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.3.25",
+  "version": "2.3.26",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.2.9",
+    "@times-components/jest-configurator": "2.2.10",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "3.3.11",
-    "@times-components/test-utils": "2.2.2",
+    "@times-components/storybook": "3.3.12",
+    "@times-components/test-utils": "2.2.3",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
@@ -63,8 +63,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.22.0",
-    "@times-components/utils": "4.5.0",
+    "@times-components/styleguide": "3.22.1",
+    "@times-components/utils": "4.5.1",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
