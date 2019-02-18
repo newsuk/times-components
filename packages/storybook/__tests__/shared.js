@@ -5,8 +5,11 @@ import {
   CenteredDecorator,
   BarSpacingDecorator,
   LateralSpacingDecorator,
+  select,
   WhiteBgColorDecorator
 } from "../src/storybook";
+import { reverseOptions } from "../src/select-shim";
+import { StrictWrapper } from "../src/showcase-to-storybook";
 import "./shared-showcase";
 
 const WrappedComponent = () => <Text>I am in Storybook!</Text>;
@@ -39,4 +42,16 @@ export default () => {
       .toJSON();
     expect(component).toMatchSnapshot();
   });
+
+  it("reverseOptions should reverse a set of options given to it.", () => {
+    const reverse = reverseOptions({test1: "testing1", test2: "testing2"})
+    expect(reverse).toEqual({ testing1: 'test1', testing2: 'test2' });
+  })
+
+  it("StrictWrapper to wrap child components in Strict Mode", () => {
+    const component = renderer
+      .create(<StrictWrapper><WrappedComponent /></StrictWrapper>)
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  })
 };
