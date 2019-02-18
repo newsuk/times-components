@@ -4,7 +4,7 @@ import { CommentLeadAndCartoon } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
 import { TileP, TileQ } from "../../tiles";
 
-const CommentLeadAndCartoonSlice = ({ lead, cartoon, onPress }) => (
+const CommentLeadAndCartoonSlice = ({ onPress, slice: {lead, cartoon} }) => (
   <View>
     <CommentLeadAndCartoon
       renderCartoon={() => <TileQ onPress={onPress} tile={cartoon} />}
@@ -14,9 +14,11 @@ const CommentLeadAndCartoonSlice = ({ lead, cartoon, onPress }) => (
 );
 
 CommentLeadAndCartoonSlice.propTypes = {
-  cartoon: PropTypes.shape({}).isRequired,
-  lead: PropTypes.shape({}).isRequired,
-  onPress: PropTypes.func.isRequired
+  onPress: PropTypes.func.isRequired,
+  slice: PropTypes.shape({
+    cartoon: PropTypes.shape({}).isRequired,
+    lead: PropTypes.shape({}).isRequired
+  }).isRequired
 };
 
 export default CommentLeadAndCartoonSlice;
