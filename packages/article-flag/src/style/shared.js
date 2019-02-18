@@ -7,7 +7,7 @@ const styles = {
     height: 5,
     width: 5
   },
-  flag: {
+  flagPadding: {
     marginRight: spacing(3)
   },
   flags: {
