@@ -80,7 +80,7 @@ const sharedStyles = {
     justifyContent: "center",
     width: "100%"
   },
-  seperator: {
+  separator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),

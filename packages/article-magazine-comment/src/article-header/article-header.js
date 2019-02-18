@@ -56,6 +56,7 @@ const ArticleHeader = ({
         <Standfirst standfirst={standfirst} />
         <Meta
           byline={byline}
+          isTablet={isTablet}
           onAuthorPress={onAuthorPress}
           publicationName={publicationName}
           publishedTime={publishedTime}
