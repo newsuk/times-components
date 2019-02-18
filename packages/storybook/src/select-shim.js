@@ -9,8 +9,7 @@ export const reverseOptions = options => {
 };
 
 // storybook 3.4 deprecated select, and the deprecation mechanism crashes storybook, so use selectV2
-const selectShim = (label, options, defaultValue, groupId) => {
-  return selectV2(label, reverseOptions(options), defaultValue, groupId);
-};
+const selectShim = (label, options, defaultValue, groupId) =>
+  selectV2(label, reverseOptions(options), defaultValue, groupId);
 
 export default selectShim;
