@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.22.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.21.1...@times-components/styleguide@3.22.0) (2019-02-18)
+
+
+### Features
+
+* Responsive Slice wrapper for tablet support & lead one  ([#1711](https://github.com/newsuk/times-components/issues/1711)) ([1cb01de](https://github.com/newsuk/times-components/commit/1cb01de))
+
+
+
+
+
 ## [3.21.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.21.0...@times-components/styleguide@3.21.1) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/styleguide

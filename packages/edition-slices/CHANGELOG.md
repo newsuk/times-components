@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.13.1...@times-components/edition-slices@0.14.0) (2019-02-18)
+
+
+### Bug Fixes
+
+* minor slice tweaks and article flags padding removal when only 1 flag ([#1713](https://github.com/newsuk/times-components/issues/1713)) ([c1d51ef](https://github.com/newsuk/times-components/commit/c1d51ef))
+* section page ([#1715](https://github.com/newsuk/times-components/issues/1715)) ([8e7992c](https://github.com/newsuk/times-components/commit/8e7992c))
+
+
+### Features
+
+* Responsive Slice wrapper for tablet support & lead one  ([#1711](https://github.com/newsuk/times-components/issues/1711)) ([1cb01de](https://github.com/newsuk/times-components/commit/1cb01de))
+
+
+
+
+
 ## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.13.0...@times-components/edition-slices@0.13.1) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/edition-slices
