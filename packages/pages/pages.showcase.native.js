@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { sections } from "@times-components/storybook";
-import Section from "./src/section";
 import { Article, AuthorProfile, Section, Topic } from "./src/pages";
 
 export default {
