@@ -31,3 +31,31 @@ exports[`1. four child element 1`] = `
   </View>
 </View>
 `;
+
+exports[`2. tablet - four child element 1`] = `
+<View>
+  <View>
+    <Text>
+      secondary-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      secondary-2
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      secondary-3
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      secondary-4
+    </Text>
+  </View>
+</View>
+`;

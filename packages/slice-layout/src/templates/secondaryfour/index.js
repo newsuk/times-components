@@ -41,15 +41,29 @@ const SecondaryFourSlice = ({
     );
   }
 
+  const renderCol = [
+    renderSecondary1(),
+    renderSecondary2(),
+    renderSecondary3(),
+    renderSecondary4()
+  ];
   return (
     <View style={styles.container}>
-      <View style={styles.item}>{renderSecondary1()}</View>
+      <View key={renderCol[0].props.id} style={styles.item}>
+        {renderCol[0]}
+      </View>
       <ItemColSeparator />
-      <View style={styles.item}>{renderSecondary2()}</View>
+      <View key={renderCol[1].props.id} style={styles.item}>
+        {renderCol[1]}
+      </View>
       <ItemColSeparator />
-      <View style={styles.item}>{renderSecondary3()}</View>
+      <View key={renderCol[2].props.id} style={styles.item}>
+        {renderCol[2]}
+      </View>
       <ItemColSeparator />
-      <View style={styles.item}>{renderSecondary4()}</View>
+      <View key={renderCol[3].props.id} style={styles.item}>
+        {renderCol[3]}
+      </View>
     </View>
   );
 };
