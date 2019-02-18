@@ -30,7 +30,7 @@ const ArticleMeta = ({
             )}
           </Context.Consumer>
         </View>
-        {isTablet && <View style={styles.seperator} />}
+        {isTablet && <View style={styles.separator} />}
       </Fragment>
     )}
     <View style={styles.meta}>
