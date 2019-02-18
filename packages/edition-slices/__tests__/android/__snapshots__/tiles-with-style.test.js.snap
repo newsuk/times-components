@@ -204,7 +204,6 @@ exports[`3. tile c 1`] = `
             "lineHeight": 22,
             "marginBottom": 5,
             "paddingBottom": 5,
-            "paddingTop": 5,
           }
         }
       >
@@ -387,87 +386,90 @@ exports[`6. tile f 1`] = `
   <View
     style={
       Object {
-        "marginHorizontal": 10,
-        "marginVertical": 5,
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
       }
     }
   >
-    <View
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-    >
-      <Text
+    <View>
+      <View
         style={
           Object {
-            "color": "#005B8D",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 14,
-            "marginBottom": 0,
+            "marginBottom": 5,
           }
         }
       >
-        LABEL
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "fontWeight": "400",
+            "lineHeight": 35,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
       </Text>
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 35,
-          "fontWeight": "400",
-          "lineHeight": 35,
-          "marginBottom": 5,
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 19,
+            "lineHeight": 21,
+            "paddingBottom": 10,
+          }
         }
-      }
-    >
-      Venezuela shows how Corbyn’s socialism works
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesModern-Regular",
-          "fontSize": 19,
-          "lineHeight": 21,
-          "paddingBottom": 10,
-        }
-      }
-    >
-      Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 10,
-        }
-      }
-    >
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </Text>
-    </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
         }
-      }
-    >
-      <ArticleFlags />
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
     </View>
   </View>
 </Link>
@@ -635,8 +637,7 @@ exports[`9. tile j 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 10,
-        "paddingVertical": 10,
+        "padding": 10,
       }
     }
   >
@@ -714,7 +715,8 @@ exports[`10. tile l 1`] = `
   <View
     style={
       Object {
-        "padding": 10,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
       }
     }
   >
@@ -750,8 +752,7 @@ exports[`10. tile l 1`] = `
             "fontSize": 22,
             "fontWeight": "400",
             "lineHeight": 22,
-            "marginBottom": 11,
-            "marginTop": 5,
+            "marginBottom": 10,
           }
         }
       >

@@ -191,36 +191,38 @@ exports[`6. tile f 1`] = `
   <div>
     <div>
       <div>
-        LABEL
+        <div>
+          LABEL
+        </div>
       </div>
-    </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Venezuela shows how Corbyn’s socialism works
-    </h3>
-    <h4
-      aria-level="4"
-      role="heading"
-    >
-      Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-    </h4>
-    <div>
-      <span>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </span>
-    </div>
-    <div>
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <h4
+        aria-level="4"
+        role="heading"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </h4>
+      <div>
+        <span>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>

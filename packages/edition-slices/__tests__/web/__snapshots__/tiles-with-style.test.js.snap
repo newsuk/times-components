@@ -242,7 +242,6 @@ exports[`3. tile c 1`] = `
 .IS3 {
   line-height: 22px;
   padding-bottom: 5px;
-  padding-top: 5px;
 }
 
 .IS4 {
@@ -573,10 +572,6 @@ exports[`6. tile f 1`] = `
   margin-bottom: 10px;
 }
 
-.S8 {
-  margin-bottom: 5px;
-}
-
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -587,9 +582,14 @@ exports[`6. tile f 1`] = `
 }
 
 .IS3 {
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-left: 10px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
@@ -597,52 +597,56 @@ exports[`6. tile f 1`] = `
   url="/article/123"
 >
   <div
-    className="IS3 S8"
+    className="IS3 S2"
   >
     <div
       className="S2"
     >
       <div
-        className="IS1 S1"
+        className="S2"
       >
-        LABEL
+        <div
+          className="IS1 S1"
+        >
+          LABEL
+        </div>
       </div>
-    </div>
-    <h3
-      aria-level="3"
-      className="IS2 S3"
-      role="heading"
-    >
-      Venezuela shows how Corbyn’s socialism works
-    </h3>
-    <h4
-      aria-level="4"
-      className="S4"
-      role="heading"
-    >
-      Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
-    </h4>
-    <div
-      className="S6"
-    >
-      <span
-        className="S5"
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
       >
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </span>
-    </div>
-    <div
-      className="S7"
-    >
-      <ArticleFlags
-        flags={
-          Array [
-            "EXCLUSIVE",
-          ]
-        }
-      />
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <h4
+        aria-level="4"
+        className="S4"
+        role="heading"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </h4>
+      <div
+        className="S6"
+      >
+        <span
+          className="S5"
+        >
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+      <div
+        className="S7"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </Link>
@@ -989,6 +993,7 @@ exports[`10. tile l 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .S4 {
@@ -1001,14 +1006,12 @@ exports[`10. tile l 1`] = `
 
 .IS2 {
   line-height: 22px;
-  margin-bottom: 11px;
-  margin-top: 5px;
 }
 
 .IS3 {
-  padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 </style>
 
