@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.15.0...@times-components/edition-slices@0.16.0) (2019-02-19)
+
+
+### Features
+
+* secondary 4 tablet ([#1721](https://github.com/newsuk/times-components/issues/1721)) ([2875f39](https://github.com/newsuk/times-components/commit/2875f39))
+
+
+
+
+
 # [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.14.1...@times-components/edition-slices@0.15.0) (2019-02-19)
 
 
