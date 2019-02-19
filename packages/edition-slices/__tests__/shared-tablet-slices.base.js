@@ -9,7 +9,11 @@ import {
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
-import { LeadOneAndOneSlice, LeadOneFullWidthSlice, SecondaryFourSlice } from "../src/slices";
+import {
+  LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  SecondaryFourSlice
+} from "../src/slices";
 
 const slices = [
   {
