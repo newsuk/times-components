@@ -4,6 +4,7 @@ import UUID from "./mock-UUID";
 interface TimesImage extends Image {
   crop11: Crop | null;
   crop169: Crop | null;
+  crop23: Crop | null;
   crop32: Crop | null;
   crop45: Crop | null;
 }
@@ -29,6 +30,11 @@ class MockImage {
         ratio: "16:9",
         url:
           "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+      },
+      crop23: {
+        ratio: "2:3",
+        url:
+          "//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
       },
       crop32: {
         ratio: "3:2",

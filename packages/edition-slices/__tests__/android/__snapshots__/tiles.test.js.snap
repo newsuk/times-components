@@ -266,7 +266,58 @@ exports[`7. tile g 1`] = `
 </Link>
 `;
 
-exports[`8. tile i 1`] = `
+exports[`8. tile h 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+      <Text>
+        <Text>
+          Gregor Robertson
+        </Text>
+      </Text>
+    </View>
+    <View>
+      <View>
+        <Image
+          aspectRatio={0.6666666666666666}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`9. tile i 1`] = `
 <Link
   url="/article/123"
 >
@@ -301,7 +352,7 @@ exports[`8. tile i 1`] = `
 </Link>
 `;
 
-exports[`9. tile j 1`] = `
+exports[`10. tile j 1`] = `
 <Link
   url="/article/123"
 >
@@ -338,7 +389,7 @@ exports[`9. tile j 1`] = `
 </Link>
 `;
 
-exports[`10. tile l 1`] = `
+exports[`11. tile l 1`] = `
 <Link
   url="/article/123"
 >
@@ -369,7 +420,7 @@ exports[`10. tile l 1`] = `
 </Link>
 `;
 
-exports[`11. tile m 1`] = `
+exports[`12. tile m 1`] = `
 <Link>
   <View>
     <View>
@@ -393,7 +444,7 @@ exports[`11. tile m 1`] = `
 </Link>
 `;
 
-exports[`12. tile n 1`] = `
+exports[`13. tile n 1`] = `
 <Link
   url="/article/123"
 >
@@ -438,7 +489,7 @@ exports[`12. tile n 1`] = `
 </Link>
 `;
 
-exports[`13. tile o 1`] = `
+exports[`14. tile o 1`] = `
 <Link
   url="/article/123"
 >
@@ -470,7 +521,7 @@ exports[`13. tile o 1`] = `
 </Link>
 `;
 
-exports[`14. tile r 1`] = `
+exports[`15. tile r 1`] = `
 <Link
   url="/article/123"
 >
@@ -507,7 +558,7 @@ exports[`14. tile r 1`] = `
 </Link>
 `;
 
-exports[`15. tile t 1`] = `
+exports[`16. tile t 1`] = `
 <Link
   url="/article/123"
 >

@@ -770,7 +770,180 @@ exports[`7. tile g 1`] = `
 </Link>
 `;
 
-exports[`8. tile i 1`] = `
+exports[`8. tile h 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 10px;
+}
+
+.S7 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.S8 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS2 {
+  line-height: 22px;
+}
+
+.IS3 {
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 55%;
+}
+
+.IS4 {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 10px;
+  width: 45%;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+}
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS5 S2"
+  >
+    <div
+      className="IS3 S2"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="IS1 S1"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <div
+        className="S5"
+      >
+        <span
+          className="S4"
+        >
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+      <div
+        className="S6"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          Gregor Robertson
+        </span>
+      </div>
+    </div>
+    <div
+      className="IS4 S2"
+    >
+      <div
+        className="S2"
+      >
+        <Image
+          aspectRatio={0.6666666666666666}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`9. tile i 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -867,7 +1040,7 @@ exports[`8. tile i 1`] = `
 </Link>
 `;
 
-exports[`9. tile j 1`] = `
+exports[`10. tile j 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -914,14 +1087,9 @@ exports[`9. tile j 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -974,7 +1142,7 @@ exports[`9. tile j 1`] = `
 </Link>
 `;
 
-exports[`10. tile l 1`] = `
+exports[`11. tile l 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1056,7 +1224,7 @@ exports[`10. tile l 1`] = `
 </Link>
 `;
 
-exports[`11. tile m 1`] = `
+exports[`12. tile m 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -1130,7 +1298,7 @@ exports[`11. tile m 1`] = `
 </Link>
 `;
 
-exports[`12. tile n 1`] = `
+exports[`13. tile n 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1202,14 +1370,9 @@ exports[`12. tile n 1`] = `
 
 .IS6 {
   background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1274,7 +1437,7 @@ exports[`12. tile n 1`] = `
 </Link>
 `;
 
-exports[`13. tile o 1`] = `
+exports[`14. tile o 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1359,7 +1522,7 @@ exports[`13. tile o 1`] = `
 </Link>
 `;
 
-exports[`14. tile r 1`] = `
+exports[`15. tile r 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1450,7 +1613,7 @@ exports[`14. tile r 1`] = `
 </Link>
 `;
 
-exports[`15. tile t 1`] = `
+exports[`16. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1497,14 +1660,9 @@ exports[`15. tile t 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
