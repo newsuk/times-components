@@ -7,6 +7,7 @@ import leadOneAndTwoRoles from "./templates/leadoneandtwo/roles";
 import LeadTwoNoPicAndTwoSlice from "./templates/leadtwonopicandtwo";
 import OpinionOneAndTwoSlice from "./templates/opiniononeandtwo";
 import opinionOneAndTwoRoles from "./templates/opiniononeandtwo/roles";
+import SecondaryOneAndColumnistSlice from "./templates/secondaryoneandcolumnist";
 import SecondaryFourSlice from "./templates/secondaryfour";
 import SecondaryTwoNoPicAndTwoSlice from "./templates/secondarytwonopicandtwo";
 import SecondaryTwoAndTwoSlice from "./templates/secondarytwoandtwo";
@@ -27,6 +28,7 @@ export {
   LeadTwoNoPicAndTwoSlice,
   OpinionOneAndTwoSlice,
   opinionOneAndTwoRoles,
+  SecondaryOneAndColumnistSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryOneAndFourSlice,

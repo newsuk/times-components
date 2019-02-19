@@ -572,7 +572,7 @@ exports[`8. tile h 1`] = `
         Object {
           "paddingRight": 10,
           "paddingVertical": 10,
-          "width": "55%",
+          "width": "50%",
         }
       }
     >
@@ -662,7 +662,7 @@ exports[`8. tile h 1`] = `
           "flexDirection": "column",
           "justifyContent": "flex-end",
           "paddingTop": 10,
-          "width": "45%",
+          "width": "50%",
         }
       }
     >
@@ -1324,7 +1324,7 @@ exports[`18. tile t 1`] = `
     <View
       style={
         Object {
-          "width": "45%",
+          "width": "50%",
         }
       }
     >
@@ -1335,7 +1335,7 @@ exports[`18. tile t 1`] = `
         Object {
           "paddingHorizontal": 10,
           "paddingVertical": 5,
-          "width": "55%",
+          "width": "50%",
         }
       }
     >

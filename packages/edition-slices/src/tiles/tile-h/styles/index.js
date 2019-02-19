@@ -19,12 +19,12 @@ const styles = {
     flexDirection: "column",
     justifyContent: "flex-end",
     paddingTop: spacing(2),
-    width: "45%"
+    width: "50%"
   },
   summaryContainer: {
     paddingRight: spacing(2),
     paddingVertical: spacing(2),
-    width: "55%"
+    width: "50%"
   }
 };
 
