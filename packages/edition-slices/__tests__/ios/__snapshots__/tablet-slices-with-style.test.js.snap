@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width tablet slice 1`] = `
+exports[`1. lead one and one tablet slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View>
+    <TileU />
+    <TileC />
+  </View>
+</View>
+`;
+
+exports[`2. lead one full width tablet slice 1`] = `
 <View
   style={
     Object {

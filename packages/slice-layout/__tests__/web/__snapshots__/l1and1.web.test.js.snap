@@ -10,3 +10,14 @@ exports[`1. lead one and one 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. tablet - lead one and one 1`] = `
+<div>
+  <div>
+    lead
+  </div>
+  <div>
+    support
+  </div>
+</div>
+`;

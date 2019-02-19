@@ -27,13 +27,25 @@ exports[`2. lead one and one slice 1`] = `
 .S1 {
   margin-bottom: 0px;
 }
+
+.IS1 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
-  className="S1"
+  className="IS1 S1"
 >
-  <TileA />
-  <TileB />
+  <div
+    className="S1"
+  >
+    <TileU />
+    <TileC />
+  </div>
 </div>
 `;
 
@@ -132,7 +144,23 @@ exports[`4. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`5. secondary one slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-bottom: 10px;
+}
+</style>
+
+<div
+  className="IS1 S1"
+>
+  <TileA />
+</div>
+`;
 
 exports[`6. secondary four slice 1`] = `
 <style>

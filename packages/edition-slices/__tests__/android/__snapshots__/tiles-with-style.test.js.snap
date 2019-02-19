@@ -60,7 +60,6 @@ exports[`1. tile a 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 10,
         "width": "100%",
       }
     }

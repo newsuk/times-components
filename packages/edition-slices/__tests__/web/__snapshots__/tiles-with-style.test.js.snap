@@ -80,7 +80,7 @@ exports[`1. tile a 1`] = `
     </div>
   </div>
   <div
-    className="IS4 S4"
+    className="IS4 S2"
   >
     <Image
       aspectRatio={1.7777777777777777}
