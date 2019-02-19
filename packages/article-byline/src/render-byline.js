@@ -12,7 +12,11 @@ const bylineRenderers = (renderAuthorComponent, textStyle, props = {}) => ({
   inline(key, attributes, children) {
     return {
       element: (
-        <Text className={props.className} key={key} style={textStyle}>
+        <Text
+          className={props.className}
+          key={key}
+          style={[textStyle, props.opinionStyle]}
+        >
           {children}
         </Text>
       )

@@ -2,6 +2,7 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
 import {
+  CommentLeadAndCartoon,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneAndTwoSlice,
@@ -318,6 +319,18 @@ export default {
         </ScrollView>
       ),
       name: "Leaders",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ScrollView>
+          <CommentLeadAndCartoon
+            renderCartoon={() => <Support2 id="support2" />}
+            renderLead={() => <Support1 id="support1" />}
+          />
+        </ScrollView>
+      ),
+      name: "CommentLeadAndCartoon",
       type: "story"
     },
     {
