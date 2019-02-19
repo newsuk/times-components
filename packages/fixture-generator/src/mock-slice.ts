@@ -224,7 +224,7 @@ function mockPuzzleSlice(): Puzzle {
   return <Puzzle>{
     title,
     url,
-    image: image.crop!.url
+    image
   };
 }
 

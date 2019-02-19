@@ -16,7 +16,7 @@ const Puzzle = ({ onPress, slice: { title, url, image } }) => {
           <ArticleSummaryHeadline headline={title} style={headLine} />
         </View>
         <View style={body}>
-          <Image aspectRatio={3 / 2} uri={image} />
+          <Image aspectRatio={3 / 2} uri={image.crop32.url} />
         </View>
       </View>
     </Link>

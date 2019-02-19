@@ -615,6 +615,7 @@ exports[`12. puzzle slice 1`] = `
       Object {
         "backgroundColor": "#F0F0F0",
         "flex": 1,
+        "margin": 10,
       }
     }
   >

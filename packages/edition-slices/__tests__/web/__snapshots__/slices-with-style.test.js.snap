@@ -823,6 +823,10 @@ exports[`12. puzzle slice 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -834,7 +838,7 @@ exports[`12. puzzle slice 1`] = `
   url="/crossword/123"
 >
   <div
-    className="IS4 S2"
+    className="IS4"
   >
     <div
       className="IS2 S2"

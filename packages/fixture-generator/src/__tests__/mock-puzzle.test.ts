@@ -11,7 +11,7 @@ describe("Mock Puzzle", () => {
 
   it("creates Puzzle image with crop url", () => {
     const puzzleImage = new PuzzleImage().get();
-    expect(puzzleImage.crop).toBeDefined();
-    expect(puzzleImage.crop!.url).toBeDefined();
+    expect(puzzleImage.crop32).toBeDefined();
+    expect(puzzleImage.crop32!.url).toBeDefined();
   });
 });

@@ -13,7 +13,7 @@ const sections = [
   "Money",
   "News",
   "News Review",
-  "Puzzle",
+  "Puzzles",
   "Register",
   "Saturday Review",
   "Scotland",

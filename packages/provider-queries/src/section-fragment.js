@@ -292,7 +292,7 @@ export default gql`
         title
         url
         image {
-          crop(ratio: "16:9") {
+          crop32: crop(ratio: "3:2") {
             ratio
             url
           }

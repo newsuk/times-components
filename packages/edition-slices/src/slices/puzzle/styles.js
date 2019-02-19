@@ -17,7 +17,8 @@ const styles = {
   },
   main: {
     backgroundColor: colours.functional.border,
-    flex: 1
+    flex: 1,
+    margin: spacing(2)
   }
 };
 
