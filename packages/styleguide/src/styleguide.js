@@ -3,7 +3,11 @@ import functionalColours from "./colours/functional";
 
 import FadeIn from "./animations";
 
-import breakpoints from "./breakpoints";
+import breakpoints, {
+  editionBreakpoints,
+  editionMaxWidth,
+  getEditionBreakpoint
+} from "./breakpoints";
 import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
@@ -36,9 +40,12 @@ export {
   Animations,
   breakpoints,
   colours,
+  editionBreakpoints,
+  editionMaxWidth,
   fonts,
   fontFactory,
   fontSizes,
+  getEditionBreakpoint,
   lineHeight,
   scales,
   spacing,

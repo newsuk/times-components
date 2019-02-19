@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.9...@times-components/article-main-standard@0.14.10) (2019-02-19)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [0.14.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.8...@times-components/article-main-standard@0.14.9) (2019-02-19)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [0.14.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.7...@times-components/article-main-standard@0.14.8) (2019-02-19)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [0.14.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.6...@times-components/article-main-standard@0.14.7) (2019-02-18)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [0.14.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.5...@times-components/article-main-standard@0.14.6) (2019-02-18)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [0.14.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@0.14.4...@times-components/article-main-standard@0.14.5) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/article-main-standard

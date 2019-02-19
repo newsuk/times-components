@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollView } from "react-native";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 
 import {
@@ -9,12 +10,16 @@ import {
   TileE,
   TileF,
   TileG,
+  TileH,
   TileI,
   TileJ,
   TileL,
   TileM,
   TileN,
-  TileO
+  TileO,
+  TileR,
+  TileT,
+  TileU
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -27,10 +32,12 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderTile = Tile => (_, { decorateAction }) => (
-  <Tile
-    onPress={preventDefaultedAction(decorateAction)("onPress")}
-    tile={tile}
-  />
+  <ScrollView>
+    <Tile
+      onPress={preventDefaultedAction(decorateAction)("onPress")}
+      tile={tile}
+    />
+  </ScrollView>
 );
 
 const tileStories = [
@@ -63,6 +70,11 @@ const tileStories = [
     Tile: TileG
   },
   {
+    name:
+      "Tile H - 22pt headline, teaser, byline at bottom all on left, image 2:3 right bottom",
+    Tile: TileH
+  },
+  {
     name: "Tile I - Vertical, top image, centered aligned summary",
     Tile: TileI
   },
@@ -87,6 +99,18 @@ const tileStories = [
     name:
       "Tile O - No image, 20pt headline, no teaser, white color, black background",
     Tile: TileO
+  },
+  {
+    name: "Tile R - Bottom image, 45pt headline, no teaser",
+    Tile: TileR
+  },
+  {
+    name: "Tile T - Side 16:9 image, 22pt headline, no teaser",
+    Tile: TileT
+  },
+  {
+    name: "Tile U - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
+    Tile: TileU
   }
 ];
 

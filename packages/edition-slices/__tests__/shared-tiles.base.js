@@ -11,12 +11,16 @@ import {
   TileE,
   TileF,
   TileG,
+  TileH,
   TileI,
   TileJ,
   TileL,
   TileM,
   TileN,
-  TileO
+  TileO,
+  TileR,
+  TileT,
+  TileU
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -64,6 +68,10 @@ export default () => {
       test: () => testTile(TileG)
     },
     {
+      name: "tile h",
+      test: () => testTile(TileH)
+    },
+    {
       name: "tile i",
       test: () => testTile(TileI)
     },
@@ -86,6 +94,18 @@ export default () => {
     {
       name: "tile O",
       test: () => testTile(TileO)
+    },
+    {
+      name: "tile R",
+      test: () => testTile(TileR)
+    },
+    {
+      name: "tile t",
+      test: () => testTile(TileT)
+    },
+    {
+      name: "tile U",
+      test: () => testTile(TileU)
     }
   ];
 

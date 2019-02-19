@@ -100,3 +100,89 @@ exports[`1. four child element 1`] = `
   </View>
 </View>
 `;
+
+exports[`2. tablet - four child element 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "marginHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <Text>
+      secondary-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <Text>
+      secondary-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <Text>
+      secondary-3
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <Text>
+      secondary-4
+    </Text>
+  </View>
+</View>
+`;

@@ -88,7 +88,17 @@ exports[`4. lead two no pic and two 1`] = `
 </View>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`5. secondary one slice 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 10,
+    }
+  }
+>
+  <TileA />
+</View>
+`;
 
 exports[`6. secondary four slice 1`] = `
 <View

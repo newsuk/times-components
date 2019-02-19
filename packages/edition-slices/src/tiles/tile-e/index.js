@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileImage, TileLink, TileSummary } from "../shared";
+import { getCrop, TileImage, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileE = ({ onPress, tile }) => (
@@ -10,7 +10,7 @@ const TileE = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={4 / 5}
         style={styles.imageContainer}
-        uri={tile.article.leadAsset.crop45.url}
+        uri={getCrop(tile.article.leadAsset, "crop45")}
       />
       <TileSummary
         headlineStyle={styles.headline}

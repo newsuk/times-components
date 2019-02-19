@@ -1,19 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width slice 1`] = `<TileA />`;
+exports[`1. lead one full width slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS1 S1"
+>
+  <TileR />
+</div>
+`;
 
 exports[`2. lead one and one slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
 }
+
+.IS1 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
-  className="S1"
+  className="IS1 S1"
 >
-  <TileA />
-  <TileB />
+  <div
+    className="S1"
+  >
+    <TileU />
+    <TileC />
+  </div>
 </div>
 `;
 
@@ -112,7 +144,23 @@ exports[`4. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`5. secondary one slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-bottom: 10px;
+}
+</style>
+
+<div
+  className="IS1 S1"
+>
+  <TileA />
+</div>
+`;
 
 exports[`6. secondary four slice 1`] = `
 <style>
@@ -191,46 +239,58 @@ exports[`6. secondary four slice 1`] = `
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
 }
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
-  className="IS10 S1"
+  className="IS11 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS10 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS4 S1"
     >
-      <TileC />
+      <div
+        className="IS1 S1"
+      >
+        <TileC />
+      </div>
+      <div
+        className="IS2"
+      />
+      <div
+        className="IS3 S1"
+      >
+        <TileC />
+      </div>
     </div>
     <div
-      className="IS2"
+      className="IS5 S1"
     />
     <div
-      className="IS3 S1"
+      className="IS9 S1"
     >
-      <TileC />
-    </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="IS9 S1"
-  >
-    <div
-      className="IS6 S1"
-    >
-      <TileC />
-    </div>
-    <div
-      className="IS7"
-    />
-    <div
-      className="IS8 S1"
-    >
-      <TileC />
+      <div
+        className="IS6 S1"
+      >
+        <TileC />
+      </div>
+      <div
+        className="IS7"
+      />
+      <div
+        className="IS8 S1"
+      >
+        <TileC />
+      </div>
     </div>
   </div>
 </div>

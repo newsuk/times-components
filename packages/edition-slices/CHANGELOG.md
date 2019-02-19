@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.17.0...@times-components/edition-slices@0.18.0) (2019-02-19)
+
+
+### Features
+
+* lead one and one tablet layout ([#1722](https://github.com/newsuk/times-components/issues/1722)) ([a894ca3](https://github.com/newsuk/times-components/commit/a894ca3))
+
+
+
+
+
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.16.0...@times-components/edition-slices@0.17.0) (2019-02-19)
+
+
+### Features
+
+* Edition Slice Tile - Tile H ([#1719](https://github.com/newsuk/times-components/issues/1719)) ([4e37fb4](https://github.com/newsuk/times-components/commit/4e37fb4))
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.15.0...@times-components/edition-slices@0.16.0) (2019-02-19)
+
+
+### Features
+
+* secondary 4 tablet ([#1721](https://github.com/newsuk/times-components/issues/1721)) ([2875f39](https://github.com/newsuk/times-components/commit/2875f39))
+
+
+
+
+
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.14.1...@times-components/edition-slices@0.15.0) (2019-02-19)
+
+
+### Features
+
+* Edition slice tile - Tile T ([#1714](https://github.com/newsuk/times-components/issues/1714)) ([c2e8da1](https://github.com/newsuk/times-components/commit/c2e8da1))
+
+
+
+
+
+## [0.14.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.14.0...@times-components/edition-slices@0.14.1) (2019-02-18)
+
+
+### Bug Fixes
+
+* Use getcrop in tile-r ([#1718](https://github.com/newsuk/times-components/issues/1718)) ([610a878](https://github.com/newsuk/times-components/commit/610a878))
+
+
+
+
+
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.13.1...@times-components/edition-slices@0.14.0) (2019-02-18)
+
+
+### Bug Fixes
+
+* minor slice tweaks and article flags padding removal when only 1 flag ([#1713](https://github.com/newsuk/times-components/issues/1713)) ([c1d51ef](https://github.com/newsuk/times-components/commit/c1d51ef))
+* section page ([#1715](https://github.com/newsuk/times-components/issues/1715)) ([8e7992c](https://github.com/newsuk/times-components/commit/8e7992c))
+
+
+### Features
+
+* Responsive Slice wrapper for tablet support & lead one  ([#1711](https://github.com/newsuk/times-components/issues/1711)) ([1cb01de](https://github.com/newsuk/times-components/commit/1cb01de))
+
+
+
+
+
 ## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.13.0...@times-components/edition-slices@0.13.1) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/edition-slices
