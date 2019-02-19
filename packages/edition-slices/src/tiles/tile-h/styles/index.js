@@ -16,8 +16,6 @@ const styles = {
     alignSelf: "flex-end"
   },
   imageContainer: {
-    // display: "flex",
-    // flexDirection: "column",
     flexDirection: "column",
     justifyContent: "flex-end",
     paddingTop: spacing(2),
