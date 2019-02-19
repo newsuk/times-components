@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.11.1...@times-components/fixture-generator@0.12.0) (2019-02-19)
+
+
+### Features
+
+* Edition Slice Tile - Tile H ([#1719](https://github.com/newsuk/times-components/issues/1719)) ([4e37fb4](https://github.com/newsuk/times-components/commit/4e37fb4))
+
+
+
+
+
 ## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.11.0...@times-components/fixture-generator@0.11.1) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/fixture-generator

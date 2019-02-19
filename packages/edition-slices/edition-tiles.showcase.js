@@ -19,6 +19,7 @@ import {
   TileO,
   TileR,
   TileT,
+  TileU,
   TileV
 } from "./src/tiles";
 
@@ -107,6 +108,10 @@ const tileStories = [
   {
     name: "Tile T - Side 16:9 image, 22pt headline, no teaser",
     Tile: TileT
+  },
+  {
+    name: "Tile U - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
+    Tile: TileU
   },
   {
     name: "TileV - Top image, 35pt headline, no teaser ",

@@ -26,3 +26,81 @@ exports[`1. lead one and one 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. tablet - lead one and one 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    className="S1"
+    style={
+      Object {
+        "width": "70%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      lead
+    </div>
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+    style={
+      Object {
+        "width": "30%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      support
+    </div>
+  </div>
+</div>
+`;

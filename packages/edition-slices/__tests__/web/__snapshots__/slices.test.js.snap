@@ -8,8 +8,10 @@ exports[`1. lead one full width slice 1`] = `
 
 exports[`2. lead one and one slice 1`] = `
 <div>
-  <TileA />
-  <TileB />
+  <div>
+    <TileU />
+    <TileC />
+  </div>
 </div>
 `;
 
@@ -38,7 +40,11 @@ exports[`4. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`5. secondary one slice 1`] = `
+<div>
+  <TileA />
+</div>
+`;
 
 exports[`6. secondary four slice 1`] = `
 <div>

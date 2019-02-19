@@ -20,6 +20,7 @@ import {
   TileO,
   TileR,
   TileT,
+  TileU,
   TileV
 } from "../src/tiles";
 
@@ -102,6 +103,10 @@ export default () => {
     {
       name: "tile t",
       test: () => testTile(TileT)
+    },
+    {
+      name: "tile U",
+      test: () => testTile(TileU)
     },
     {
       name: "tile v",
