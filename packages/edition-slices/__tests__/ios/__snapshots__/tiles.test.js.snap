@@ -595,7 +595,7 @@ exports[`16. tile t 1`] = `
 </Link>
 `;
 
-exports[`16. tile u 1`] = `
+exports[`17. tile u 1`] = `
 <Link
   url="/article/123"
 >

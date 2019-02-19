@@ -1715,7 +1715,7 @@ exports[`16. tile t 1`] = `
 </Link>
 `;
 
-exports[`16. tile u 1`] = `
+exports[`17. tile u 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1762,14 +1762,9 @@ exports[`16. tile u 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
