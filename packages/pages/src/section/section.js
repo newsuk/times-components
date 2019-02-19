@@ -10,17 +10,23 @@ const renderSlice = (slice, onPress) => {
   return Slice ? <Slice onPress={onPress} slice={slice} /> : null;
 };
 
-const Section = ({ onPress, section: { slices } }) => (
-  <FlatList
-    data={slices}
-    ItemSeparatorComponent={() => (
-      <View style={styles.listItemSeparatorContainer}>
-        <SectionItemSeparator />
-      </View>
-    )}
-    renderItem={({ item: slice }) => renderSlice(slice, onPress)}
-  />
-);
+const Section = ({ onPress, section: { slices, title } }) => {
+  const showSeparator = title !== "Puzzles";
+  return (
+    <FlatList
+      data={slices}
+      ItemSeparatorComponent={
+        showSeparator &&
+        (() => (
+          <View style={styles.listItemSeparatorContainer}>
+            <SectionItemSeparator />
+          </View>
+        ))
+      }
+      renderItem={({ item: slice }) => renderSlice(slice, onPress)}
+    />
+  );
+};
 
 Section.propTypes = {
   onPress: PropTypes.func,

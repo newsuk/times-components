@@ -18,7 +18,9 @@ const styles = {
   main: {
     backgroundColor: colours.functional.border,
     flex: 1,
-    margin: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
+    marginTop: spacing(2)
   }
 };
 
