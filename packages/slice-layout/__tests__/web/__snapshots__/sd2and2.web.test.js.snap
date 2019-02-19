@@ -37,3 +37,43 @@ exports[`1. four child elements 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. tablet - four child elements 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        dir="auto"
+      >
+        secondary-1
+      </div>
+    </div>
+    <div />
+    <div>
+      <div
+        dir="auto"
+      >
+        secondary-2
+      </div>
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <div
+        dir="auto"
+      >
+        support-1
+      </div>
+    </div>
+    <div />
+    <div>
+      <div
+        dir="auto"
+      >
+        support-2
+      </div>
+    </div>
+  </div>
+</div>
+`;
