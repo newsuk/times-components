@@ -53,7 +53,8 @@ interface SecondaryTwoAndTwoSliceWithName extends SecondaryTwoAndTwoSlice {
   name: string;
 }
 
-interface CommentLeadAndCartoonSliceWithName extends CommentLeadAndCartoonSlice {
+interface CommentLeadAndCartoonSliceWithName
+  extends CommentLeadAndCartoonSlice {
   name: string;
 }
 
