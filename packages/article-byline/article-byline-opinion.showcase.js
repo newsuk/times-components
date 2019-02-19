@@ -5,6 +5,12 @@ import { ArticleBylineOpinion } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
+const styles = {
+  fontSize: 12,
+  letterSpacing: 0.6,
+  lineHeight: 12
+};
+
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -41,7 +47,7 @@ export default {
           <ArticleBylineOpinion
             ast={authorsAST.authorInTheBeginning}
             {...getProps(decorateAction)}
-            opinionStyle={{ fontSize: 12, letterSpacing: 0.6, lineHeight: 12 }}
+            opinionStyle={styles}
           />
         </ComponentWrapper>
       ),
