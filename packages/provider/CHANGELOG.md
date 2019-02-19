@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.12.7...@times-components/provider@1.13.0) (2019-02-19)
+
+
+### Features
+
+* Edition Slice Tile - Tile H ([#1719](https://github.com/newsuk/times-components/issues/1719)) ([4e37fb4](https://github.com/newsuk/times-components/commit/4e37fb4))
+
+
+
+
+
 ## [1.12.7](https://github.com/newsuk/times-components/compare/@times-components/provider@1.12.6...@times-components/provider@1.12.7) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/provider

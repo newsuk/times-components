@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.13.14",
+  "version": "0.13.15",
   "license": "BSD-3-Clause",
   "scripts": {
     "build:android": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -15,7 +15,7 @@
     "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
-    "@times-components/pages": "1.13.3",
+    "@times-components/pages": "1.13.4",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-native": "0.55.4",
