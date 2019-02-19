@@ -500,6 +500,7 @@ exports[`7. tile g 1`] = `
     <View
       style={
         Object {
+          "justifyContent": "center",
           "paddingHorizontal": 10,
           "paddingTop": 5,
           "width": "70%",

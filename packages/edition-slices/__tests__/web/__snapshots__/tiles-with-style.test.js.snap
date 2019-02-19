@@ -702,10 +702,14 @@ exports[`7. tile g 1`] = `
 }
 
 .IS4 {
+  -webkit-justify-content: center;
+  justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
   width: 70%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 
 .IS5 {
