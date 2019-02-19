@@ -8,7 +8,6 @@ const styles = {
     marginBottom: spacing(2)
   },
   imageContainer: {
-    marginBottom: spacing(2),
     width: "100%"
   },
   summaryContainer: {

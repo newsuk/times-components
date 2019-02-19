@@ -10,3 +10,47 @@ exports[`1. lead one and one 1`] = `
   </Text>
 </View>
 `;
+
+exports[`2. tablet - lead one and one 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "70%",
+      }
+    }
+  >
+    <Text>
+      lead
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "30%",
+      }
+    }
+  >
+    <Text>
+      support
+    </Text>
+  </View>
+</View>
+`;

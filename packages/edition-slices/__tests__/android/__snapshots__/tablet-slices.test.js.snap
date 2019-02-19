@@ -1,12 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width tablet slice 1`] = `
+exports[`1. lead one and one tablet slice 1`] = `
+<View>
+  <View>
+    <TileU />
+    <TileC />
+  </View>
+</View>
+`;
+
+exports[`2. lead one full width tablet slice 1`] = `
 <View>
   <TileR />
 </View>
 `;
 
-exports[`2. secondary four tablet slice 1`] = `
+exports[`3. secondary four tablet slice 1`] = `
 <View>
   <View>
     <View>

@@ -3,14 +3,24 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
+  mockLeadOneAndOneSlice,
   mockLeadOneFullWidthSlice,
   mockSecondaryFourSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
-import { LeadOneFullWidthSlice, SecondaryFourSlice } from "../src/slices";
+import {
+  LeadOneAndOneSlice,
+  LeadOneFullWidthSlice,
+  SecondaryFourSlice
+} from "../src/slices";
 
 const slices = [
+  {
+    mock: mockLeadOneAndOneSlice(),
+    name: "lead one and one tablet slice",
+    Slice: LeadOneAndOneSlice
+  },
   {
     mock: mockLeadOneFullWidthSlice(),
     name: "lead one full width tablet slice",
