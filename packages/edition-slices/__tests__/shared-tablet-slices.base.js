@@ -4,11 +4,16 @@ import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
   mockLeadOneFullWidthSlice,
-  mockSecondaryFourSlice
+  mockSecondaryFourSlice,
+  mockSecondaryTwoAndTwoSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
-import { LeadOneFullWidthSlice, SecondaryFourSlice } from "../src/slices";
+import {
+  LeadOneFullWidthSlice,
+  SecondaryFourSlice,
+  SecondaryTwoAndTwoSlice
+} from "../src/slices";
 
 const slices = [
   {
@@ -20,6 +25,11 @@ const slices = [
     mock: mockSecondaryFourSlice(),
     name: "secondary four tablet slice",
     Slice: SecondaryFourSlice
+  },
+  {
+    mock: mockSecondaryTwoAndTwoSlice(),
+    name: "secondary two and two slice",
+    Slice: SecondaryTwoAndTwoSlice
   }
 ];
 
