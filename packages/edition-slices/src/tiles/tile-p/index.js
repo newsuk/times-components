@@ -14,6 +14,7 @@ const TileP = ({ onPress, tile }) => (
         uri={getCrop(tile.article.leadAsset, "crop11")}
       />
       <TileSummary
+        byline={tile.article.byline}
         bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
         strapline={tile.strapline}

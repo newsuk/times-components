@@ -558,7 +558,109 @@ exports[`7. tile g 1`] = `
 </Link>
 `;
 
-exports[`8. tile i 1`] = `
+exports[`8. tile h 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "paddingVertical": 10,
+          "width": "55%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 10,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+          "paddingTop": 10,
+          "width": "45%",
+        }
+      }
+    >
+      <View>
+        <Image />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`9. tile i 1`] = `
 <Link>
   <View
     style={
@@ -631,7 +733,7 @@ exports[`8. tile i 1`] = `
 </Link>
 `;
 
-exports[`9. tile j 1`] = `
+exports[`10. tile j 1`] = `
 <Link>
   <View
     style={
@@ -710,7 +812,7 @@ exports[`9. tile j 1`] = `
 </Link>
 `;
 
-exports[`10. tile l 1`] = `
+exports[`11. tile l 1`] = `
 <Link>
   <View
     style={
@@ -772,7 +874,7 @@ exports[`10. tile l 1`] = `
 </Link>
 `;
 
-exports[`11. tile m 1`] = `
+exports[`12. tile m 1`] = `
 <Link>
   <View
     style={
@@ -827,7 +929,7 @@ exports[`11. tile m 1`] = `
 </Link>
 `;
 
-exports[`12. tile n 1`] = `
+exports[`13. tile n 1`] = `
 <Link>
   <View
     style={
@@ -925,7 +1027,7 @@ exports[`12. tile n 1`] = `
 </Link>
 `;
 
-exports[`13. tile o 1`] = `
+exports[`14. tile o 1`] = `
 <Link>
   <View
     style={
@@ -989,7 +1091,7 @@ exports[`13. tile o 1`] = `
 </Link>
 `;
 
-exports[`14. tile p 1`] = `
+exports[`15. tile p 1`] = `
 <Link>
   <View
     style={
@@ -1087,7 +1189,7 @@ exports[`14. tile p 1`] = `
 </Link>
 `;
 
-exports[`15. tile q 1`] = `
+exports[`16. tile q 1`] = `
 <Link>
   <View
     style={
@@ -1112,7 +1214,7 @@ exports[`15. tile q 1`] = `
 </Link>
 `;
 
-exports[`16. tile r 1`] = `
+exports[`17. tile r 1`] = `
 <Link>
   <View
     style={
@@ -1178,7 +1280,7 @@ exports[`16. tile r 1`] = `
 </Link>
 `;
 
-exports[`17. tile t 1`] = `
+exports[`18. tile t 1`] = `
 <Link>
   <View
     style={
