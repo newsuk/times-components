@@ -70,7 +70,7 @@ const tileStories = [
   },
   {
     name:
-      "Tile H - 22pt headline, teaser, byline at bottom all on left. Right hand, bottom aligned 2:3 image",
+      "Tile H - 22pt headline, teaser, byline at bottom all on left, image 2:3 right bottom",
     Tile: TileH
   },
   {
