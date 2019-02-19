@@ -26,7 +26,7 @@ import {
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   LeadersSlice,
-  Puzzle
+  PuzzleSlice
 } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>
@@ -105,7 +105,7 @@ const sliceStories = [
   {
     mock: mockPuzzleSlice(),
     name: "Puzzle",
-    Slice: Puzzle
+    Slice: PuzzleSlice
   }
 ];
 

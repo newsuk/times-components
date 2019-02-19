@@ -14,7 +14,6 @@ import SecondaryOneAndFourSlice from "./templates/secondaryoneandfour";
 import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
 import Leaders from "./templates/leaders";
 import { ItemColSeparator, ItemRowSeparator } from "./templates/shared";
-import PuzzleSlice from "./templates/puzzle";
 
 export {
   StandardSlice,
@@ -33,6 +32,5 @@ export {
   Leaders,
   ListTwoAndSixNoPic,
   ItemColSeparator,
-  ItemRowSeparator,
-  PuzzleSlice
+  ItemRowSeparator
 };

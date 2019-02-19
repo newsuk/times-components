@@ -192,7 +192,7 @@ exports[`11. leaders slice 1`] = `
 
 exports[`12. puzzle slice 1`] = `
 <Link
-  url="/article/123"
+  url="/crossword/123"
 >
   <div>
     <div>
@@ -200,13 +200,13 @@ exports[`12. puzzle slice 1`] = `
         aria-level="3"
         role="heading"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Times Concise medium No 7881
       </h3>
     </div>
     <div>
       <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
       />
     </div>
   </div>

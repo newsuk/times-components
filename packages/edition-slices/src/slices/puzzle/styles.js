@@ -1,17 +1,21 @@
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing, colours, fonts } from "@times-components/styleguide";
 
 const styles = {
-  bodyContainer: {
+  body: {
     alignSelf: "flex-end",
     width: "85%"
   },
-  headerContainer: {
+  header: {
     paddingLeft: spacing(3),
     paddingRight: spacing(3),
     paddingTop: spacing(3),
     width: "85%"
   },
-  mainContainer: {
+  headLine: {
+    fontFamily: fonts.headline,
+    fontSize: 25
+  },
+  main: {
     backgroundColor: colours.functional.border,
     flex: 1
   }

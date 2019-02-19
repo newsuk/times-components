@@ -1,32 +1,28 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Image from "@times-components/image";
+import { View } from "react-native";
 import Link from "@times-components/link";
-import { PuzzleSlice } from "@times-components/slice-layout";
-import { fonts } from "@times-components/styleguide";
+import Image from "@times-components/image";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
+import propTypes from "./proptypes";
+import styles from "./styles";
 
-const Puzzle = ({ onPress, slice: { title, url, image } }) => (
-  <Link onPress={e => onPress(e, { url })} url={url}>
-    <PuzzleSlice
-      renderBody={() => <Image aspectRatio={3 / 2} uri={image} />}
-      renderHeader={() => (
-        <ArticleSummaryHeadline
-          headline={title}
-          style={{ fontFamily: fonts.headline, fontSize: 25 }}
-        />
-      )}
-    />
-  </Link>
-);
+const Puzzle = ({ onPress, slice: { title, url, image } }) => {
+  const { main, header, headLine, body } = styles;
 
-Puzzle.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  slice: PropTypes.shape({
-    image: PropTypes.string,
-    title: PropTypes.string,
-    url: PropTypes.string
-  }).isRequired
+  return (
+    <Link onPress={e => onPress(e, { url })} url={url}>
+      <View style={main}>
+        <View style={header}>
+          <ArticleSummaryHeadline headline={title} style={headLine} />
+        </View>
+        <View style={body}>
+          <Image aspectRatio={3 / 2} uri={image} />
+        </View>
+      </View>
+    </Link>
+  );
 };
+
+Puzzle.propTypes = propTypes;
 
 export default Puzzle;

@@ -27,7 +27,7 @@ import {
   SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
-  Puzzle
+  PuzzleSlice
 } from "../src/slices";
 
 jest.mock("../src/tiles", () => {
@@ -106,7 +106,7 @@ const slices = [
   {
     mock: mockPuzzleSlice(),
     name: "puzzle slice",
-    Slice: Puzzle
+    Slice: PuzzleSlice
   }
 ];
 

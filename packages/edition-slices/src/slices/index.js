@@ -8,7 +8,7 @@ export { default as SecondaryOneSlice } from "./secondaryone";
 export { default as SecondaryFourSlice } from "./secondaryfour";
 export { default as SecondaryOneAndFourSlice } from "./secondaryoneandfour";
 export { default as SecondaryTwoAndTwoSlice } from "./secondarytwoandtwo";
-export { default as Puzzle } from "./puzzle";
+export { default as PuzzleSlice } from "./puzzle";
 export {
   default as SecondaryTwoNoPicAndTwoSlice
 } from "./secondarytwonopicandtwo";

@@ -37,4 +37,5 @@ class MockPuzzle {
   }
 }
 
+export { PuzzleImage };
 export default MockPuzzle;
