@@ -1172,7 +1172,7 @@ exports[`15. tile r 1`] = `
 </Link>
 `;
 
-exports[`15. tile t 1`] = `
+exports[`16. tile t 1`] = `
 <Link>
   <View
     style={

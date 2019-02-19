@@ -1613,7 +1613,7 @@ exports[`15. tile r 1`] = `
 </Link>
 `;
 
-exports[`15. tile t 1`] = `
+exports[`16. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1660,14 +1660,9 @@ exports[`15. tile t 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
