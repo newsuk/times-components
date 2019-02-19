@@ -860,14 +860,10 @@ exports[`12. comment lead and cartoon slice 1`] = `
 <div
   className="S1"
 >
+  <TileP />
   <div
-    className="S1"
-  >
-    <TileP />
-    <div
-      className="IS1 S1"
-    />
-    <TileQ />
-  </div>
+    className="IS1 S1"
+  />
+  <TileQ />
 </div>
 `;

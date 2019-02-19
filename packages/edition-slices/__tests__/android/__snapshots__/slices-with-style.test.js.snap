@@ -620,19 +620,17 @@ exports[`11. leaders slice 1`] = `
 
 exports[`12. comment lead and cartoon slice 1`] = `
 <View>
-  <View>
-    <TileP />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
+  <TileP />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
       }
-    />
-    <TileQ />
-  </View>
+    }
+  />
+  <TileQ />
 </View>
 `;

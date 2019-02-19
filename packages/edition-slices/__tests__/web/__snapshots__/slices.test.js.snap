@@ -204,10 +204,8 @@ exports[`11. leaders slice 1`] = `
 
 exports[`12. comment lead and cartoon slice 1`] = `
 <div>
-  <div>
-    <TileP />
-    <div />
-    <TileQ />
-  </div>
+  <TileP />
+  <div />
+  <TileQ />
 </div>
 `;
