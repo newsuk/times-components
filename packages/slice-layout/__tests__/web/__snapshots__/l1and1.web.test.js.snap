@@ -14,10 +14,15 @@ exports[`1. lead one and one 1`] = `
 exports[`2. tablet - lead one and one 1`] = `
 <div>
   <div>
-    lead
+    <div>
+      lead
+    </div>
   </div>
+  <div />
   <div>
-    support
+    <div>
+      support
+    </div>
   </div>
 </div>
 `;
