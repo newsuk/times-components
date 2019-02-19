@@ -18,11 +18,8 @@ import {
   TileN,
   TileO,
   TileR,
-<<<<<<< HEAD
-  TileT
-=======
+  TileT,
   TileU
->>>>>>> feat: add Tile U to showcase
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
