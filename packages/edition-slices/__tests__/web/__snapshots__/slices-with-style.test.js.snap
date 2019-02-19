@@ -880,7 +880,7 @@ exports[`12. leaders slice 1`] = `
 </div>
 `;
 
-exports[`12. comment lead and cartoon slice 1`] = `
+exports[`13. comment lead and cartoon slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

@@ -10,6 +10,7 @@ const TileH = ({ onPress, tile }) => (
       <TileSummary
         byline={tile.article.byline}
         headlineStyle={styles.headline}
+        isOpinionByline={false}
         style={styles.summaryContainer}
         summary={tile.article.summary125}
         tile={tile}

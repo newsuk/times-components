@@ -635,7 +635,7 @@ exports[`12. leaders slice 1`] = `
 </View>
 `;
 
-exports[`12. comment lead and cartoon slice 1`] = `
+exports[`13. comment lead and cartoon slice 1`] = `
 <View>
   <TileP />
   <View
