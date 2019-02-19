@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "1.13.4",
+  "version": "1.13.5",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -52,10 +52,10 @@
     "webpack": "4.6.0"
   },
   "dependencies": {
-    "@times-components/article": "6.6.45",
+    "@times-components/article": "6.6.46",
     "@times-components/author-profile": "5.3.33",
     "@times-components/context": "0.6.19",
-    "@times-components/edition-slices": "0.17.0",
+    "@times-components/edition-slices": "0.18.0",
     "@times-components/provider": "1.13.0",
     "@times-components/responsive": "0.3.1",
     "@times-components/schema": "0.2.10",

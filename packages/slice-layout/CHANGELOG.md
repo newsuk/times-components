@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.9.0...@times-components/slice-layout@0.10.0) (2019-02-19)
+
+
+### Features
+
+* lead one and one tablet layout ([#1722](https://github.com/newsuk/times-components/issues/1722)) ([a894ca3](https://github.com/newsuk/times-components/commit/a894ca3))
+
+
+
+
+
 # [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.8.3...@times-components/slice-layout@0.9.0) (2019-02-19)
 
 
