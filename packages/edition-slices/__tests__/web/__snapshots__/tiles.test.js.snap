@@ -277,6 +277,11 @@ exports[`8. tile h 1`] = `
           LABEL
         </div>
       </div>
+      <div>
+        <span>
+          Libby Purves
+        </span>
+      </div>
       <h3
         aria-level="3"
         role="heading"
@@ -304,6 +309,7 @@ exports[`8. tile h 1`] = `
       <div>
         <Image
           aspectRatio={0.6666666666666666}
+          uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
         />
       </div>
     </div>
@@ -533,6 +539,11 @@ exports[`15. tile p 1`] = `
           LABEL
         </div>
       </div>
+      <div>
+        <span>
+          Libby Purves
+        </span>
+      </div>
       <h3
         aria-level="3"
         role="heading"
@@ -643,6 +654,43 @@ exports[`18. tile t 1`] = `
           }
         />
       </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`19. tile u 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <Image
+        aspectRatio={1.5}
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
     </div>
   </div>
 </Link>

@@ -17,7 +17,6 @@ import {
   TileM,
   TileN,
   TileO,
-  TileR,
   TileP,
   TileQ,
   TileR,

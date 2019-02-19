@@ -60,7 +60,6 @@ exports[`1. tile a 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 10,
         "width": "100%",
       }
     }
@@ -600,6 +599,21 @@ exports[`8. tile h 1`] = `
           LABEL
         </Text>
       </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 19,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
       <Text
         style={
           Object {
@@ -1144,6 +1158,22 @@ exports[`15. tile p 1`] = `
           LABEL
         </Text>
       </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
       <Text
         style={
           Object {
@@ -1354,6 +1384,85 @@ exports[`18. tile t 1`] = `
       >
         <ArticleFlags />
       </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`19. tile u 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingVertical": 5,
+          "width": "33.33%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 25,
+            "fontWeight": "400",
+            "lineHeight": 25,
+            "marginBottom": 5,
+            "paddingVertical": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "width": "66.66%",
+        }
+      }
+    >
+      <Image />
     </View>
   </View>
 </Link>
