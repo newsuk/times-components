@@ -16,11 +16,8 @@ import {
   TileM,
   TileN,
   TileO,
-<<<<<<< HEAD
-  TileR
-=======
+  TileR,
   TileT
->>>>>>> feat: Edition slice tile - Tile t
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -97,13 +94,12 @@ const tileStories = [
     Tile: TileO
   },
   {
-<<<<<<< HEAD
     name: "Tile R - Bottom image, 45pt headline, no teaser",
     Tile: TileR
-=======
+  },
+  {
     name: "Tile T - Side 16:9 image, 22pt headline, no teaser",
     Tile: TileT
->>>>>>> feat: Edition slice tile - Tile t
   }
 ];
 
