@@ -36,7 +36,8 @@ const styles = {
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,
     lineHeight: 20,
-    paddingHorizontal: spacing(8)
+    paddingHorizontal: spacing(8),
+    textAlign: "center"
   },
   summaryContainer: {
     alignItems: "center",

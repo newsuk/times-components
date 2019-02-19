@@ -780,24 +780,6 @@ exports[`8. tile h 1`] = `
 }
 
 .S3 {
-  color: rgba(133,0,41,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 27px;
-  margin-bottom: 0px;
-}
-
-.S4 {
-  color: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
-}
-
-.S5 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -805,7 +787,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S6 {
+.S4 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -814,7 +796,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 0px;
 }
 
-.S7 {
+.S5 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -827,8 +809,26 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S8 {
+.S6 {
   margin-bottom: 10px;
+}
+
+.S7 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.S8 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -883,27 +883,18 @@ exports[`8. tile h 1`] = `
           LABEL
         </div>
       </div>
-      <div
-        className="S4"
-      >
-        <span
-          className="S3"
-        >
-          Libby Purves
-        </span>
-      </div>
       <h3
         aria-level="3"
-        className="IS2 S5"
+        className="IS2 S3"
         role="heading"
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <div
-        className="S7"
+        className="S5"
       >
         <span
-          className="S6"
+          className="S4"
         >
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -911,7 +902,7 @@ exports[`8. tile h 1`] = `
         </span>
       </div>
       <div
-        className="S8"
+        className="S6"
       >
         <ArticleFlags
           flags={
@@ -920,6 +911,15 @@ exports[`8. tile h 1`] = `
             ]
           }
         />
+      </div>
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          Libby Purves
+        </span>
       </div>
     </div>
     <div
@@ -1082,14 +1082,9 @@ exports[`10. tile j 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1370,14 +1365,9 @@ exports[`13. tile n 1`] = `
 
 .IS6 {
   background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1542,29 +1532,12 @@ exports[`15. tile p 1`] = `
 }
 
 .S3 {
-  color: rgba(133,0,41,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.S4 {
-  color: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
-}
-
-.S5 {
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S6 {
+.S4 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
   font-size: 14px;
@@ -1573,8 +1546,24 @@ exports[`15. tile p 1`] = `
   margin-bottom: 0px;
 }
 
-.S7 {
+.S5 {
   margin-bottom: 10px;
+}
+
+.S6 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: inherit;
+  margin-bottom: 0px;
+}
+
+.S7 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -1596,11 +1585,6 @@ exports[`15. tile p 1`] = `
 }
 
 .IS3 {
-  letter-spacing: 0.6px;
-  line-height: 12px;
-}
-
-.IS4 {
   color: rgba(29,29,27,1.00);
   font-size: 35px;
   line-height: 35px;
@@ -1610,9 +1594,16 @@ exports[`15. tile p 1`] = `
   text-align: center;
 }
 
-.IS5 {
+.IS4 {
   padding-right: 40px;
   padding-left: 40px;
+  text-align: center;
+}
+
+.IS5 {
+  color: rgba(133,0,41,1.00);
+  letter-spacing: 0.6px;
+  line-height: 12px;
 }
 
 .IS6 {
@@ -1660,31 +1651,22 @@ exports[`15. tile p 1`] = `
           LABEL
         </div>
       </div>
-      <div
-        className="S4"
-      >
-        <span
-          className="IS3 S3"
-        >
-          Libby Purves
-        </span>
-      </div>
       <h3
         aria-level="3"
-        className="IS4 S5"
+        className="IS3 S3"
         role="heading"
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <h4
         aria-level="4"
-        className="IS5 S6"
+        className="IS4 S4"
         role="heading"
       >
         Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
       </h4>
       <div
-        className="S7"
+        className="S5"
       >
         <ArticleFlags
           flags={
@@ -1693,6 +1675,15 @@ exports[`15. tile p 1`] = `
             ]
           }
         />
+      </div>
+      <div
+        className="S7"
+      >
+        <span
+          className="IS5 S6"
+        >
+          Libby Purves
+        </span>
       </div>
     </div>
   </div>
@@ -1880,14 +1871,9 @@ exports[`18. tile t 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1987,14 +1973,9 @@ exports[`19. tile u 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
