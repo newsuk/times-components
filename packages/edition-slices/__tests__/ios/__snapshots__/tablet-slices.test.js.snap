@@ -5,3 +5,25 @@ exports[`1. lead one full width tablet slice 1`] = `
   <TileR />
 </View>
 `;
+
+exports[`2. secondary four tablet slice 1`] = `
+<View>
+  <View>
+    <View>
+      <TileC />
+    </View>
+    <View />
+    <View>
+      <TileC />
+    </View>
+    <View />
+    <View>
+      <TileC />
+    </View>
+    <View />
+    <View>
+      <TileC />
+    </View>
+  </View>
+</View>
+`;
