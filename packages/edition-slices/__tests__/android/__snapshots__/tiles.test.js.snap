@@ -277,6 +277,11 @@ exports[`8. tile h 1`] = `
           LABEL
         </Text>
       </View>
+      <Text>
+        <Text>
+          Libby Purves
+        </Text>
+      </Text>
       <Text
         accessibilityRole="heading"
         aria-level="3"
@@ -299,11 +304,6 @@ exports[`8. tile h 1`] = `
           }
         />
       </View>
-      <Text>
-        <Text>
-          Gregor Robertson
-        </Text>
-      </Text>
     </View>
     <View>
       <View>
@@ -521,7 +521,71 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile r 1`] = `
+exports[`15. tile p 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1}
+        borderRadius={187.5}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text>
+        <Text>
+          Libby Purves
+        </Text>
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="4"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`16. tile q 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1.5}
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`17. tile r 1`] = `
 <Link
   url="/article/123"
 >
@@ -558,7 +622,7 @@ exports[`15. tile r 1`] = `
 </Link>
 `;
 
-exports[`16. tile t 1`] = `
+exports[`18. tile t 1`] = `
 <Link
   url="/article/123"
 >
@@ -595,7 +659,7 @@ exports[`16. tile t 1`] = `
 </Link>
 `;
 
-exports[`17. tile u 1`] = `
+exports[`19. tile u 1`] = `
 <Link
   url="/article/123"
 >

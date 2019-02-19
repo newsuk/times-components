@@ -14,6 +14,7 @@ const TileSummary = ({
   },
   byline,
   headlineStyle,
+  bylineStyle,
   strapline,
   straplineStyle,
   style,
@@ -23,7 +24,11 @@ const TileSummary = ({
   labelColour
 }) => (
   <ArticleSummary
-    bylineProps={byline ? { ast: byline } : null}
+    bylineProps={
+      byline
+        ? { ast: byline, isOpinionByline: true, opinionStyle: bylineStyle }
+        : null
+    }
     content={
       summary
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
@@ -58,6 +63,7 @@ const TileSummary = ({
 );
 
 TileSummary.propTypes = {
+  bylineStyle: PropTypes.shape({}),
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
   labelColour: PropTypes.string,
@@ -70,6 +76,7 @@ TileSummary.propTypes = {
 };
 
 TileSummary.defaultProps = {
+  bylineStyle: null,
   flagColour: {},
   headlineStyle: null,
   labelColour: null,

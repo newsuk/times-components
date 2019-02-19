@@ -1,5 +1,6 @@
 import {
   ArticleSlice,
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
@@ -49,6 +50,15 @@ interface SecondaryFourSliceWithName extends SecondaryFourSlice {
 }
 
 interface SecondaryTwoAndTwoSliceWithName extends SecondaryTwoAndTwoSlice {
+  name: string;
+}
+
+interface CommentLeadAndCartoonSliceWithName
+  extends CommentLeadAndCartoonSlice {
+  name: string;
+}
+
+interface LeadersSliceWithName extends LeadersSlice {
   name: string;
 }
 
@@ -203,12 +213,27 @@ function mockListTwoAndSixNoPicSlice(): TwoPicAndSixNoPicSliceWithName {
   };
 }
 
-function mockLeadersSlice(): LeadersSlice {
+function mockLeadersSlice(): LeadersSliceWithName {
   const tiles = getTiles(3);
-  return <LeadersSlice>{
+  return <LeadersSliceWithName>{
+    name: "LeadersSlice",
     leader1: tiles[0],
     leader2: tiles[1],
     leader3: tiles[2],
+    items: tiles
+  };
+}
+
+function mockCommentLeadAndCartoonSlice(): CommentLeadAndCartoonSliceWithName {
+  const tiles = getTiles(2);
+  const leadTile = {
+    ...tiles[0],
+    article: { ...tiles[0].article, section: "opinion" }
+  };
+  return <CommentLeadAndCartoonSliceWithName>{
+    name: "CommentLeadAndCartoonSlice",
+    lead: leadTile,
+    cartoon: tiles[1],
     items: tiles
   };
 }
@@ -219,6 +244,7 @@ function mockArticleSlice(count: number): ArticleSlice {
 
 export default mockArticleSlice;
 export {
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,

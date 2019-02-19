@@ -5,6 +5,12 @@ import { ArticleBylineOpinion } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
+const styles = {
+  fontSize: 12,
+  letterSpacing: 0.6,
+  lineHeight: 12
+};
+
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -27,12 +33,25 @@ export default {
       component: (_, { decorateAction }) => (
         <ComponentWrapper>
           <ArticleBylineOpinion
-            ast={authorsAST.singleAuthor}
+            ast={authorsAST.authorInTheBeginning}
             {...getProps(decorateAction)}
           />
         </ComponentWrapper>
       ),
       name: "Byline with a single author",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <ComponentWrapper>
+          <ArticleBylineOpinion
+            ast={authorsAST.authorInTheBeginning}
+            {...getProps(decorateAction)}
+            opinionStyle={styles}
+          />
+        </ComponentWrapper>
+      ),
+      name: "Byline with a single author and style overriden",
       type: "story"
     }
   ],

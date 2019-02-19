@@ -201,3 +201,11 @@ exports[`11. leaders slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`12. comment lead and cartoon slice 1`] = `
+<div>
+  <TileP />
+  <div />
+  <TileQ />
+</div>
+`;

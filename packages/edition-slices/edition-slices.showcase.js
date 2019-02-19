@@ -2,6 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import {
   mockLeadOneAndFourSlice,
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadTwoNoPicAndTwoSlice,
@@ -15,6 +16,7 @@ import {
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import {
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
@@ -102,6 +104,11 @@ const sliceStories = [
     mock: mockLeadersSlice(),
     name: "Leaders (MMMM)",
     Slice: LeadersSlice
+  },
+  {
+    mock: mockCommentLeadAndCartoonSlice(),
+    name: "CommentLeadAndCartoonSlice (PQ)",
+    Slice: CommentLeadAndCartoonSlice
   }
 ];
 

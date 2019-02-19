@@ -599,6 +599,21 @@ exports[`8. tile h 1`] = `
           LABEL
         </Text>
       </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 19,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
       <Text
         style={
           Object {
@@ -640,21 +655,6 @@ exports[`8. tile h 1`] = `
       >
         <ArticleFlags />
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 19,
-            }
-          }
-        >
-          Gregor Robertson
-        </Text>
-      </Text>
     </View>
     <View
       style={
@@ -1105,7 +1105,146 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile r 1`] = `
+exports[`15. tile p 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "#FFFFFF",
+          "borderWidth": 1,
+          "overflow": "hidden",
+          "width": "30%",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "paddingTop": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "fontWeight": "400",
+            "lineHeight": 35,
+            "marginBottom": 5,
+            "paddingHorizontal": 10,
+            "paddingTop": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "paddingBottom": 10,
+            "paddingHorizontal": 40,
+          }
+        }
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`16. tile q 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <Image />
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`17. tile r 1`] = `
 <Link>
   <View
     style={
@@ -1171,7 +1310,7 @@ exports[`15. tile r 1`] = `
 </Link>
 `;
 
-exports[`16. tile t 1`] = `
+exports[`18. tile t 1`] = `
 <Link>
   <View
     style={
@@ -1250,7 +1389,7 @@ exports[`16. tile t 1`] = `
 </Link>
 `;
 
-exports[`17. tile u 1`] = `
+exports[`19. tile u 1`] = `
 <Link>
   <View
     style={

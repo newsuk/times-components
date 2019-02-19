@@ -18,6 +18,8 @@ import {
   TileM,
   TileN,
   TileO,
+  TileP,
+  TileQ,
   TileR,
   TileT,
   TileU
@@ -92,11 +94,19 @@ export default () => {
       test: () => testTile(TileN)
     },
     {
-      name: "tile O",
+      name: "tile o",
       test: () => testTile(TileO)
     },
     {
-      name: "tile R",
+      name: "tile p",
+      test: () => testTile(TileP)
+    },
+    {
+      name: "tile q",
+      test: () => testTile(TileQ)
+    },
+    {
+      name: "tile r",
       test: () => testTile(TileR)
     },
     {

@@ -842,3 +842,28 @@ exports[`11. leaders slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`12. comment lead and cartoon slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
+  className="S1"
+>
+  <TileP />
+  <div
+    className="IS1 S1"
+  />
+  <TileQ />
+</div>
+`;
