@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.13.6...@times-components/pages@1.14.0) (2019-02-20)
+
+
+### Features
+
+* Edition Slice - Mobile Only - Puzzles ([#1716](https://github.com/newsuk/times-components/issues/1716)) ([748d114](https://github.com/newsuk/times-components/commit/748d114))
+
+
+
+
+
 ## [1.13.6](https://github.com/newsuk/times-components/compare/@times-components/pages@1.13.5...@times-components/pages@1.13.6) (2019-02-19)
 
 **Note:** Version bump only for package @times-components/pages

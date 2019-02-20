@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.18.1...@times-components/edition-slices@0.19.0) (2019-02-20)
+
+
+### Bug Fixes
+
+* lead 1 and 1 slice title in storybook ([#1728](https://github.com/newsuk/times-components/issues/1728)) ([c7ef9b2](https://github.com/newsuk/times-components/commit/c7ef9b2))
+
+
+### Features
+
+* Edition Slice - Mobile Only - Puzzles ([#1716](https://github.com/newsuk/times-components/issues/1716)) ([748d114](https://github.com/newsuk/times-components/commit/748d114))
+
+
+
+
+
 ## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.18.0...@times-components/edition-slices@0.18.1) (2019-02-19)
 
 **Note:** Version bump only for package @times-components/edition-slices

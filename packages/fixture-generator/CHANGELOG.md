@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.12.1...@times-components/fixture-generator@0.13.0) (2019-02-20)
+
+
+### Features
+
+* Edition Slice - Mobile Only - Puzzles ([#1716](https://github.com/newsuk/times-components/issues/1716)) ([748d114](https://github.com/newsuk/times-components/commit/748d114))
+
+
+
+
+
 ## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.12.0...@times-components/fixture-generator@0.12.1) (2019-02-19)
 
 **Note:** Version bump only for package @times-components/fixture-generator
