@@ -1,12 +1,12 @@
 import React from "react";
-import { OverlayGradient } from "@times-components/gradient";
+import { View } from "react-native";
 import InnerSkySportsBanner from "./inner-sky-sports-banner";
 import styles from "./styles";
 
 const SkySportsBanner = () => (
-  <OverlayGradient degrees={180} style={styles.skySportsBanner}>
+  <View style={styles.skySportsBanner}>
     <InnerSkySportsBanner />
-  </OverlayGradient>
+  </View>
 );
 
 export default SkySportsBanner;

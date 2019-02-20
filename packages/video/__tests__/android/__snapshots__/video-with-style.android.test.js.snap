@@ -99,9 +99,10 @@ exports[`3. sky sports video 1`] = `
     }
   }
 >
-  <OverlayGradient
+  <View
     style={
       Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.5 )",
         "flex": 1,
         "flexDirection": "row",
         "height": 40,
@@ -137,7 +138,7 @@ exports[`3. sky sports video 1`] = `
         }
       }
     />
-  </OverlayGradient>
+  </View>
   <Image
     style={
       Object {
