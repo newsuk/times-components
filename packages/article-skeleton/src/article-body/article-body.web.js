@@ -150,7 +150,6 @@ const renderers = ({ observed, registerNode }) => ({
               <PullQuoteResp>
                 <PullQuote
                   caption={name}
-                  captionColour={sectionColour}
                   font={pullQuoteFont}
                   quoteColour={sectionColour}
                   text={text}

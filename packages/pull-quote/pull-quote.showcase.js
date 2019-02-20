@@ -27,7 +27,6 @@ export default {
         return (
           <PullQuotes
             caption={text("Caption: ", caption)}
-            captionColour={color("Caption Colour: ", "#850029")}
             font={theme.pullQuoteFont}
             onTwitterLinkPress={preventDefaultedAction(decorateAction)(
               "onTwitterLinkPress"

@@ -7,7 +7,6 @@ import {
 
 export const propTypes = {
   caption: PropTypes.string,
-  captionColour: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
   font: PropTypes.string,
   onTwitterLinkPress: twitterPropTypes.onTwitterLinkPress,
@@ -18,7 +17,6 @@ export const propTypes = {
 
 export const defaultProps = {
   caption: "",
-  captionColour: colours.functional.secondary,
   font: null,
   quoteColour: colours.functional.secondary,
   text: "",

@@ -10,7 +10,6 @@ export default renderComponent => {
     const output = renderComponent(
       <PullQuotes
         caption={caption}
-        captionColour="#850029"
         onTwitterLinkPress={() => null}
         quoteColour="#850029"
         twitter={twitter}

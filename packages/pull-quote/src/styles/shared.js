@@ -7,6 +7,7 @@ const sharedStyles = {
       font: "supporting",
       fontSize: "caption"
     }),
+    color: "#696969",
     marginBottom: 0
   },
   captionContainer: {
