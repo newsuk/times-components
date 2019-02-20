@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import sliceMap from "@times-components/edition-slices";
 import Responsive from "@times-components/responsive";
 import SectionItemSeparator from "./section-item-separator";
+import withTrackingContext from "./section-tracking-context";
 import styles from "./styles";
 
 const renderSlice = (slice, onPress) => {
@@ -39,4 +40,5 @@ Section.propTypes = {
 Section.defaultProps = {
   onPress: () => {}
 };
-export default Section;
+
+export default withTrackingContext(Section);

@@ -1,5 +1,6 @@
 import React from "react";
 import { mockStandardSection } from "@times-components/fixture-generator";
+import storybookReporter from "@times-components/tealium-utils";
 import Section from "./src/section";
 
 const preventDefaultedAction = decorateAction =>
@@ -14,6 +15,7 @@ export default {
     {
       component: (_, { decorateAction }) => (
         <Section
+          analyticsStream={storybookReporter}
           onPress={preventDefaultedAction(decorateAction)("onPress")}
           section={mockStandardSection("News")}
         />
