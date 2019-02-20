@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.31](https://github.com/newsuk/times-components/compare/@times-components/video@4.3.30...@times-components/video@4.3.31) (2019-02-20)
+
+
+### Bug Fixes
+
+* use sem-itransparent banner for video on android ([#1732](https://github.com/newsuk/times-components/issues/1732)) ([ec49823](https://github.com/newsuk/times-components/commit/ec49823))
+
+
+
+
+
 ## [4.3.30](https://github.com/newsuk/times-components/compare/@times-components/video@4.3.29...@times-components/video@4.3.30) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/video
