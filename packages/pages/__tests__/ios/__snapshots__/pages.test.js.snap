@@ -54,3 +54,12 @@ exports[`article page 1`] = `
   referralUrl={null}
 />
 `;
+
+exports[`section page 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#999999"
+  hidesWhenStopped={true}
+  size="large"
+/>
+`;
