@@ -385,7 +385,6 @@ exports[`6. tile f 1`] = `
   <View
     style={
       Object {
-        "flexDirection": "row",
         "paddingHorizontal": 10,
         "paddingTop": 10,
       }

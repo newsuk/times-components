@@ -20,7 +20,8 @@ import mockEditionSlice, {
   mockSecondaryOneSlice,
   mockSecondaryOneAndFourSlice,
   mockSecondaryTwoAndTwoSlice,
-  mockSecondaryTwoNoPicAndTwoSlice
+  mockSecondaryTwoNoPicAndTwoSlice,
+  mockPuzzleSlice
 } from "./mock-slice";
 import MockTopic from "./mock-topic";
 
@@ -46,5 +47,6 @@ export {
   mockEditionSlice,
   MockImage,
   MockAuthor,
-  MockTopic
+  MockTopic,
+  mockPuzzleSlice
 };

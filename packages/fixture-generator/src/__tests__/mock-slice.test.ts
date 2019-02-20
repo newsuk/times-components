@@ -1,4 +1,4 @@
-import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice } from "../mock-slice";
+import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice, mockPuzzleSlice } from "../mock-slice";
 
 describe("The Mock EditionSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
@@ -76,12 +76,18 @@ describe("The Mock EditionSlice", () => {
     expect(articleSlice.support6).toBeDefined();
   });
 
-
   it("returns LeadersSlice", () => {
     const articleSlice = mockLeadersSlice();
     expect(articleSlice.items.length).toBe(3);
     expect(articleSlice.leader1).toBeDefined();
     expect(articleSlice.leader2).toBeDefined();
     expect(articleSlice.leader3).toBeDefined();
+  });
+
+  it("returns PuzzleMock", () => {
+    const puzzleSice = mockPuzzleSlice();
+    expect(puzzleSice.title).toBeDefined();
+    expect(puzzleSice.url).toBeDefined();
+    expect(puzzleSice.image).toBeDefined();
   });
 });

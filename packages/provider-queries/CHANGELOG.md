@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.11.2...@times-components/provider-queries@1.12.0) (2019-02-20)
+
+
+### Features
+
+* Edition Slice - Mobile Only - Puzzles ([#1716](https://github.com/newsuk/times-components/issues/1716)) ([748d114](https://github.com/newsuk/times-components/commit/748d114))
+
+
+
+
+
 ## [1.11.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.11.1...@times-components/provider-queries@1.11.2) (2019-02-18)
 
 

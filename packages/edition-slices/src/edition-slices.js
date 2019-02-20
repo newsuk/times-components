@@ -10,7 +10,8 @@ import {
   SecondaryOneAndFourSlice,
   SecondaryOneSlice,
   SecondaryTwoAndTwoSlice,
-  SecondaryTwoNoPicAndTwoSlice
+  SecondaryTwoNoPicAndTwoSlice,
+  PuzzleSlice
 } from "./slices";
 
 const sliceMap = {
@@ -20,6 +21,7 @@ const sliceMap = {
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
+  Puzzle: PuzzleSlice,
   SecondaryFourSlice,
   SecondaryOneAndFourSlice,
   SecondaryOneSlice,

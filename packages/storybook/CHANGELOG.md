@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@3.3.12...@times-components/storybook@3.4.0) (2019-02-20)
+
+
+### Features
+
+* Edition Slice - Mobile Only - Puzzles ([#1716](https://github.com/newsuk/times-components/issues/1716)) ([748d114](https://github.com/newsuk/times-components/commit/748d114))
+
+
+
+
+
 ## [3.3.12](https://github.com/newsuk/times-components/compare/@times-components/storybook@3.3.11...@times-components/storybook@3.3.12) (2019-02-18)
 
 **Note:** Version bump only for package @times-components/storybook
