@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.9...@times-components/related-articles@5.5.10) (2019-02-20)
+
+
+### Bug Fixes
+
+* tile p style and byline ([#1729](https://github.com/newsuk/times-components/issues/1729)) ([61abb30](https://github.com/newsuk/times-components/commit/61abb30))
+
+
+
+
+
 ## [5.5.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.8...@times-components/related-articles@5.5.9) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/related-articles
