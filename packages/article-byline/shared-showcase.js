@@ -109,7 +109,7 @@ export default (Component, name) => ({
         <ComponentWrapper>
           <Component
             ast={authorsAST.authorInTheBeginning}
-            opinionStyle={styles}
+            bylineStyle={styles}
             {...getProps(decorateAction)}
           />
         </ComponentWrapper>
