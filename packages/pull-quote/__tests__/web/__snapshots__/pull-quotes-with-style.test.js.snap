@@ -40,18 +40,6 @@ exports[`different colours 1`] = `
 
 .S3 {
   border-left-width: 0px;
-  display: inline;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 13px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S4 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
   display: inline;
   font-family: GillSansMTStd-Medium;
@@ -63,7 +51,7 @@ exports[`different colours 1`] = `
   padding-left: 0px;
 }
 
-.S5 {
+.S4 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -83,7 +71,7 @@ exports[`different colours 1`] = `
   padding-left: 7px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -102,7 +90,7 @@ exports[`different colours 1`] = `
   padding-left: 0px;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -128,10 +116,6 @@ exports[`different colours 1`] = `
 }
 
 .IS2 {
-  color: rgba(133,0,41,1.00);
-}
-
-.IS3 {
   font-family: GillSansMTStd-Medium;
   font-size: 13;
   line-height: 13;
@@ -145,7 +129,7 @@ exports[`different colours 1`] = `
   url="https://twitter.com/@twitter"
 >
   <div
-    className="S7"
+    className="S6"
   >
     <div
       className="IS1 S1"
@@ -160,27 +144,27 @@ exports[`different colours 1`] = `
       </cite>
     </div>
     <div
-      className="S6"
+      className="S5"
     >
       <div
-        className="IS2 S3"
+        className="S3"
       >
         A caption
       </div>
       <div
-        className="S4"
+        className="S3"
       >
         
       </div>
       <div
-        className="S5"
+        className="S4"
       >
         <IconTwitter
           height={10}
           width={12}
         />
         <TextLink
-          className="IS3"
+          className="IS2"
           target="_blank"
           url="https://twitter.com/@twitter"
         >

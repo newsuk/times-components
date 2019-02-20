@@ -52,7 +52,7 @@ exports[`different colours 1`] = `
     <Text
       style={
         Object {
-          "color": "#850029",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": 13,

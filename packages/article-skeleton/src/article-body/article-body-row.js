@@ -148,7 +148,6 @@ const ArticleRow = ({
                   <View style={isTablet && styles.containerTablet}>
                     <PullQuote
                       caption={name}
-                      captionColour={sectionColour}
                       font={pullQuoteFont}
                       onTwitterLinkPress={onTwitterLinkPress}
                       quoteColour={sectionColour}

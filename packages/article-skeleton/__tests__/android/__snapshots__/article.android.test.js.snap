@@ -176,7 +176,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View>
             <PullQuote
               caption="AName"
-              captionColour="#FF0000"
               quoteColour="#FF0000"
               text="a text"
               twitter="@AName"

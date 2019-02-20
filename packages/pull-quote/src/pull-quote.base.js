@@ -8,7 +8,6 @@ import quoteStyleFactory from "./styles/quotes";
 
 const PullQuotes = ({
   caption,
-  captionColour,
   children,
   font,
   onTwitterLinkPress,
@@ -22,7 +21,7 @@ const PullQuotes = ({
     </Text>
     <PullQuoteContent>{children}</PullQuoteContent>
     <View style={styles.captionContainer}>
-      <Text style={[styles.caption, { color: captionColour }]}>{caption}</Text>
+      <Text style={[styles.caption]}>{caption}</Text>
       <Text style={styles.text}>{caption && text ? `, ${text}` : text}</Text>
       <PullQuoteTwitterLink
         onTwitterLinkPress={onTwitterLinkPress}
