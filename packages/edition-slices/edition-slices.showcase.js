@@ -59,7 +59,7 @@ const sliceStories = [
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "Lead One And One (AB)",
+    name: "Lead One And One (Mobile: AB, Tablet: UC)",
     Slice: LeadOneAndOneSlice
   },
   {
