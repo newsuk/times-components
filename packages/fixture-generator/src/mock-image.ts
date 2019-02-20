@@ -1,13 +1,6 @@
 import { Crop, Image } from "./types";
 import UUID from "./mock-UUID";
-
-interface TimesImage extends Image {
-  crop11: Crop | null;
-  crop169: Crop | null;
-  crop23: Crop | null;
-  crop32: Crop | null;
-  crop45: Crop | null;
-}
+import TimesImage from "./times-image";
 
 class MockImage {
   image: TimesImage;
