@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.29](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.28...@times-components/pull-quote@3.4.29) (2019-02-20)
+
+
+### Bug Fixes
+
+* pull quotes captions should not change colour based on section ([#1730](https://github.com/newsuk/times-components/issues/1730)) ([5b67bba](https://github.com/newsuk/times-components/commit/5b67bba))
+
+
+
+
+
 ## [3.4.28](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.27...@times-components/pull-quote@3.4.28) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/pull-quote

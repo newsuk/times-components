@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.19.0...@times-components/edition-slices@0.19.1) (2019-02-20)
+
+
+### Bug Fixes
+
+* tile f text wrap bug on web ([#1726](https://github.com/newsuk/times-components/issues/1726)) ([9d61f2e](https://github.com/newsuk/times-components/commit/9d61f2e))
+
+
+
+
+
 # [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.18.1...@times-components/edition-slices@0.19.0) (2019-02-20)
 
 

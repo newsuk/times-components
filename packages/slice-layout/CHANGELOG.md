@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.10.2...@times-components/slice-layout@0.10.3) (2019-02-20)
+
+
+### Bug Fixes
+
+* pull quotes captions should not change colour based on section ([#1730](https://github.com/newsuk/times-components/issues/1730)) ([5b67bba](https://github.com/newsuk/times-components/commit/5b67bba))
+
+
+
+
+
 ## [0.10.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.10.1...@times-components/slice-layout@0.10.2) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/slice-layout

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.3](https://github.com/newsuk/times-components/compare/@times-components/utils@4.5.2...@times-components/utils@4.5.3) (2019-02-20)
+
+
+### Bug Fixes
+
+* pull quotes captions should not change colour based on section ([#1730](https://github.com/newsuk/times-components/issues/1730)) ([5b67bba](https://github.com/newsuk/times-components/commit/5b67bba))
+
+
+
+
+
 ## [4.5.2](https://github.com/newsuk/times-components/compare/@times-components/utils@4.5.1...@times-components/utils@4.5.2) (2019-02-19)
 
 
