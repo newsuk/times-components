@@ -8,13 +8,13 @@ const renderAuthorComponent = (
   children,
   key,
   attributes,
-  { className, opinionStyle }
+  { className, bylineStyle }
 ) => ({
   element: (
     <Text
       className={className}
       key={key}
-      style={[styles.nonLinkText, opinionStyle]}
+      style={[styles.nonLinkText, bylineStyle]}
     >
       {children}
     </Text>
