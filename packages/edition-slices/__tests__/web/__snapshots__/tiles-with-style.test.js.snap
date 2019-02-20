@@ -582,14 +582,9 @@ exports[`6. tile f 1`] = `
 }
 
 .IS3 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
