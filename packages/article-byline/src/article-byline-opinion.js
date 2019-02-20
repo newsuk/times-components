@@ -4,18 +4,9 @@ import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
-const renderAuthorComponent = (
-  children,
-  key,
-  attributes,
-  { className, opinionStyle }
-) => ({
+const renderAuthorComponent = (children, key, attributes, { className }) => ({
   element: (
-    <Text
-      className={className}
-      key={key}
-      style={[styles.opinion, opinionStyle]}
-    >
+    <Text className={className} key={key} style={styles.opinion}>
       {children}
     </Text>
   )

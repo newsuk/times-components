@@ -277,11 +277,6 @@ exports[`8. tile h 1`] = `
           LABEL
         </div>
       </div>
-      <div>
-        <span>
-          Libby Purves
-        </span>
-      </div>
       <h3
         aria-level="3"
         role="heading"
@@ -303,6 +298,11 @@ exports[`8. tile h 1`] = `
             ]
           }
         />
+      </div>
+      <div>
+        <span>
+          Libby Purves
+        </span>
       </div>
     </div>
     <div>
@@ -539,11 +539,6 @@ exports[`15. tile p 1`] = `
           LABEL
         </div>
       </div>
-      <div>
-        <span>
-          Libby Purves
-        </span>
-      </div>
       <h3
         aria-level="3"
         role="heading"
@@ -564,6 +559,11 @@ exports[`15. tile p 1`] = `
             ]
           }
         />
+      </div>
+      <div>
+        <span>
+          Libby Purves
+        </span>
       </div>
     </div>
   </div>

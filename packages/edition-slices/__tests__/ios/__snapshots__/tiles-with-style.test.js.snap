@@ -598,21 +598,6 @@ exports[`8. tile h 1`] = `
           LABEL
         </Text>
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#850029",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 27,
-            }
-          }
-        >
-          Libby Purves
-        </Text>
-      </Text>
       <Text
         style={
           Object {
@@ -654,6 +639,21 @@ exports[`8. tile h 1`] = `
       >
         <ArticleFlags />
       </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
     </View>
     <View
       style={
@@ -1157,22 +1157,6 @@ exports[`15. tile p 1`] = `
           LABEL
         </Text>
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#850029",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "letterSpacing": 0.6,
-              "lineHeight": 12,
-            }
-          }
-        >
-          Libby Purves
-        </Text>
-      </Text>
       <Text
         style={
           Object {
@@ -1199,6 +1183,7 @@ exports[`15. tile p 1`] = `
             "lineHeight": 20,
             "paddingBottom": 10,
             "paddingHorizontal": 40,
+            "textAlign": "center",
           }
         }
       >
@@ -1213,6 +1198,22 @@ exports[`15. tile p 1`] = `
       >
         <ArticleFlags />
       </View>
+      <Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+            }
+          }
+        >
+          Libby Purves
+        </Text>
+      </Text>
     </View>
   </View>
 </Link>

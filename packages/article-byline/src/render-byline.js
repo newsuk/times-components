@@ -15,7 +15,7 @@ const bylineRenderers = (renderAuthorComponent, textStyle, props = {}) => ({
         <Text
           className={props.className}
           key={key}
-          style={[textStyle, props.opinionStyle]}
+          style={[textStyle, props.bylineStyle]}
         >
           {children}
         </Text>
