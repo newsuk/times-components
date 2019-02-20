@@ -37,6 +37,6 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
-  onPress: () => { }
+  onPress: () => {}
 };
 export default Section;

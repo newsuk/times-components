@@ -17,6 +17,8 @@ import {
   TileM,
   TileN,
   TileO,
+  TileP,
+  TileQ,
   TileR,
   TileT,
   TileU
@@ -99,6 +101,15 @@ const tileStories = [
     name:
       "Tile O - No image, 20pt headline, no teaser, white color, black background",
     Tile: TileO
+  },
+  {
+    name:
+      "Tile P - Profile roundel image, 35pt headline, no teaser, central aligned summary",
+    Tile: TileP
+  },
+  {
+    name: "Tile Q - Image with padding",
+    Tile: TileQ
   },
   {
     name: "Tile R - Bottom image, 45pt headline, no teaser",

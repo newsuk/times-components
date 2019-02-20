@@ -202,7 +202,15 @@ exports[`11. leaders slice 1`] = `
 </div>
 `;
 
-exports[`12. puzzle slice 1`] = `
+exports[`12. comment lead and cartoon slice 1`] = `
+<div>
+  <TileP />
+  <div />
+  <TileQ />
+</div>
+`;
+
+exports[`13. puzzle slice 1`] = `
 <Link
   url="/crossword/123"
 >

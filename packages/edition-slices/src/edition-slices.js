@@ -1,4 +1,5 @@
 import {
+  CommentLeadAndCartoonSlice,
   LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -14,6 +15,7 @@ import {
 } from "./slices";
 
 const sliceMap = {
+  CommentLeadAndCartoonSlice,
   LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,

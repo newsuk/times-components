@@ -12,6 +12,8 @@ export { default as TileL } from "./tile-l";
 export { default as TileM } from "./tile-m";
 export { default as TileN } from "./tile-n";
 export { default as TileO } from "./tile-o";
+export { default as TileP } from "./tile-p";
+export { default as TileQ } from "./tile-q";
 export { default as TileR } from "./tile-r";
 export { default as TileT } from "./tile-t";
 export { default as TileU } from "./tile-u";

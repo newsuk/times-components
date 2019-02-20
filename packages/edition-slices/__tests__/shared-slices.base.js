@@ -2,6 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
+  mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
@@ -18,6 +19,7 @@ import {
 import Responsive from "@times-components/responsive";
 import "./mocks";
 import {
+  CommentLeadAndCartoonSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
@@ -87,6 +89,11 @@ const slices = [
     mock: mockLeadersSlice(),
     name: "leaders slice",
     Slice: LeadersSlice
+  },
+  {
+    mock: mockCommentLeadAndCartoonSlice(),
+    name: "Comment lead and cartoon slice",
+    Slice: CommentLeadAndCartoonSlice
   },
   {
     mock: mockPuzzleSlice(),

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. two child element 1`] = `
+<div>
+  <div>
+    lead-1
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomWidth": "1px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    cartoon-1
+  </div>
+</div>
+`;

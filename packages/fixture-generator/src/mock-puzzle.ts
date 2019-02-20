@@ -14,6 +14,7 @@ class PuzzleImage {
           "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
       },
       crop11: null,
+      crop23: null,
       crop169: null,
       crop45: null
     };

@@ -785,6 +785,24 @@ exports[`8. tile h 1`] = `
 }
 
 .S3 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -792,7 +810,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S4 {
+.S6 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -801,7 +819,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 0px;
 }
 
-.S5 {
+.S7 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -814,26 +832,8 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S6 {
-  margin-bottom: 10px;
-}
-
-.S7 {
-  color: rgba(51,51,51,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  font-weight: inherit;
-  line-height: 15px;
-  margin-bottom: 0px;
-}
-
 .S8 {
-  color: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -888,18 +888,27 @@ exports[`8. tile h 1`] = `
           LABEL
         </div>
       </div>
+      <div
+        className="S4"
+      >
+        <span
+          className="S3"
+        >
+          Libby Purves
+        </span>
+      </div>
       <h3
         aria-level="3"
-        className="IS2 S3"
+        className="IS2 S5"
         role="heading"
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
       <div
-        className="S5"
+        className="S7"
       >
         <span
-          className="S4"
+          className="S6"
         >
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -907,7 +916,7 @@ exports[`8. tile h 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S8"
       >
         <ArticleFlags
           flags={
@@ -916,15 +925,6 @@ exports[`8. tile h 1`] = `
             ]
           }
         />
-      </div>
-      <div
-        className="S8"
-      >
-        <span
-          className="S7"
-        >
-          Gregor Robertson
-        </span>
       </div>
     </div>
     <div
@@ -1087,9 +1087,14 @@ exports[`10. tile j 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1370,9 +1375,14 @@ exports[`13. tile n 1`] = `
 
 .IS6 {
   background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1522,7 +1532,222 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile r 1`] = `
+exports[`15. tile p 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(133,0,41,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S6 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.S7 {
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  border-top-color: rgba(255,255,255,1.00);
+  border-right-color: rgba(255,255,255,1.00);
+  border-bottom-color: rgba(255,255,255,1.00);
+  border-left-color: rgba(255,255,255,1.00);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 30%;
+}
+
+.IS2 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS3 {
+  letter-spacing: 0.6px;
+  line-height: 12px;
+}
+
+.IS4 {
+  color: rgba(29,29,27,1.00);
+  font-size: 35px;
+  line-height: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.IS5 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.IS6 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 10px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS7 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS7 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1}
+        borderRadius={256}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </div>
+    <div
+      className="IS6 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          LABEL
+        </div>
+      </div>
+      <div
+        className="S4"
+      >
+        <span
+          className="IS3 S3"
+        >
+          Libby Purves
+        </span>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS4 S5"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <h4
+        aria-level="4"
+        className="IS5 S6"
+        role="heading"
+      >
+        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+      </h4>
+      <div
+        className="S7"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`16. tile q 1`] = `
+<style>
+.S1 {
+  margin-bottom: 10px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS2 S2"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="//thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`17. tile r 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1613,7 +1838,7 @@ exports[`15. tile r 1`] = `
 </Link>
 `;
 
-exports[`16. tile t 1`] = `
+exports[`18. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1660,9 +1885,14 @@ exports[`16. tile t 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1715,7 +1945,7 @@ exports[`16. tile t 1`] = `
 </Link>
 `;
 
-exports[`17. tile u 1`] = `
+exports[`19. tile u 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1762,9 +1992,14 @@ exports[`17. tile u 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
