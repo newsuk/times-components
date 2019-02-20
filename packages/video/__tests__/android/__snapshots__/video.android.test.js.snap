@@ -85,16 +85,14 @@ exports[`3. sky sports video 1`] = `
   accessibilityLabel="Video Splash"
   testID="splash-component"
 >
-  <OverlayGradient
-    degrees={180}
-  >
+  <View>
     <Text>
       Premier League clips powered by Sky Sports
     </Text>
     <Image
       source="a5e0ef52cbdc4afad634c328d59b22e5"
     />
-  </OverlayGradient>
+  </View>
   <Image
     uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
