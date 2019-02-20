@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width slice 1`] = `
+exports[`1. daily universal register slice 1`] = `
+<div>
+  <Image
+    aspectRatio={5.74}
+    uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+  />
+  <div>
+    Daily Universal Register
+  </div>
+  <TileS />
+  <div />
+  <TileS />
+  <div />
+  <Image
+    aspectRatio={1}
+    uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+  />
+  <TileS />
+  <div />
+  <Image
+    aspectRatio={1}
+    uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+  />
+  <TileS />
+</div>
+`;
+
+exports[`2. lead one full width slice 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -8,7 +35,7 @@ exports[`1. lead one full width slice 1`] = `
 </div>
 `;
 
-exports[`2. lead one and one slice 1`] = `
+exports[`3. lead one and one slice 1`] = `
 <div>
   <div>
     <TileU
@@ -21,7 +48,7 @@ exports[`2. lead one and one slice 1`] = `
 </div>
 `;
 
-exports[`3. lead one and four slice 1`] = `
+exports[`4. lead one and four slice 1`] = `
 <div>
   <TileI
     tileName="lead"
@@ -44,7 +71,7 @@ exports[`3. lead one and four slice 1`] = `
 </div>
 `;
 
-exports[`4. lead two no pic and two 1`] = `
+exports[`5. lead two no pic and two 1`] = `
 <div>
   <TileF
     tileName="lead1"
@@ -64,7 +91,7 @@ exports[`4. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`5. secondary one slice 1`] = `
+exports[`6. secondary one slice 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -72,7 +99,7 @@ exports[`5. secondary one slice 1`] = `
 </div>
 `;
 
-exports[`6. secondary one and columnist slice 1`] = `
+exports[`7. secondary one and columnist slice 1`] = `
 <div>
   <TileT
     tileName="secondary"
@@ -84,7 +111,7 @@ exports[`6. secondary one and columnist slice 1`] = `
 </div>
 `;
 
-exports[`7. secondary four slice 1`] = `
+exports[`8. secondary four slice 1`] = `
 <div>
   <div>
     <div>
@@ -116,7 +143,7 @@ exports[`7. secondary four slice 1`] = `
 </div>
 `;
 
-exports[`8. secondary one and four slice 1`] = `
+exports[`9. secondary one and four slice 1`] = `
 <div>
   <div>
     <TheTimesLogo
@@ -161,7 +188,7 @@ exports[`8. secondary one and four slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary two and two slice 1`] = `
+exports[`10. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
@@ -191,7 +218,7 @@ exports[`9. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`10. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two slice 1`] = `
 <div>
   <TileB
     tileName="secondary1"
@@ -211,7 +238,7 @@ exports[`10. secondary two no pic and two slice 1`] = `
 </div>
 `;
 
-exports[`11. list two and six no pic slice 1`] = `
+exports[`12. list two and six no pic slice 1`] = `
 Array [
   <div>
     <div>
@@ -265,7 +292,7 @@ Array [
 ]
 `;
 
-exports[`12. leaders slice 1`] = `
+exports[`13. leaders slice 1`] = `
 <div>
   <div>
     <Image
@@ -294,7 +321,7 @@ exports[`12. leaders slice 1`] = `
 </div>
 `;
 
-exports[`13. comment lead and cartoon slice 1`] = `
+exports[`14. comment lead and cartoon slice 1`] = `
 <div>
   <TileP
     tileName="lead"
@@ -306,7 +333,7 @@ exports[`13. comment lead and cartoon slice 1`] = `
 </div>
 `;
 
-exports[`14. puzzle slice 1`] = `
+exports[`15. puzzle slice 1`] = `
 <Link
   url="/crossword/123"
 >

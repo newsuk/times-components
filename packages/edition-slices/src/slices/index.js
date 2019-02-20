@@ -1,4 +1,5 @@
 export { default as CommentLeadAndCartoonSlice } from "./commentleadandcartoon";
+export { default as DailyRegisterLeadFourSlice } from "./dailyregisterleadfour";
 export { default as LeadOneAndFourSlice } from "./leadoneandfour";
 export { default as LeadOneAndOneSlice } from "./leadoneandone";
 export { default as LeadOneFullWidthSlice } from "./leadonefullwidth";

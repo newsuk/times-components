@@ -1,15 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width slice 1`] = `<TileA />`;
+exports[`1. daily universal register slice 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+>
+  <Image
+    style={
+      Object {
+        "height": 73,
+        "marginVertical": 10,
+        "width": 285,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 16,
+        "marginVertical": 25,
+      }
+    }
+  >
+    Daily Universal Register
+  </Text>
+  <TileS />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginBottom": 25,
+        "marginHorizontal": 10,
+        "width": "100%",
+      }
+    }
+  />
+  <TileS />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginBottom": 25,
+        "marginHorizontal": 10,
+        "width": "100%",
+      }
+    }
+  />
+  <Image
+    style={
+      Object {
+        "height": 45,
+        "width": 60,
+      }
+    }
+  />
+  <TileS />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginBottom": 25,
+        "marginHorizontal": 10,
+        "width": "100%",
+      }
+    }
+  />
+  <Image
+    style={
+      Object {
+        "height": 45,
+        "width": 60,
+      }
+    }
+  />
+  <TileS />
+</View>
+`;
 
-exports[`2. lead one and one slice 1`] = `
+exports[`2. lead one full width slice 1`] = `<TileA />`;
+
+exports[`3. lead one and one slice 1`] = `
 <View>
   <TileA />
   <TileB />
 </View>
 `;
 
-exports[`3. lead one and four slice 1`] = `
+exports[`4. lead one and four slice 1`] = `
 <View>
   <TileI />
   <TileJ />
@@ -49,7 +140,7 @@ exports[`3. lead one and four slice 1`] = `
 </View>
 `;
 
-exports[`4. lead two no pic and two 1`] = `
+exports[`5. lead two no pic and two 1`] = `
 <View>
   <TileF />
   <View
@@ -88,9 +179,9 @@ exports[`4. lead two no pic and two 1`] = `
 </View>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`6. secondary one slice 1`] = `<TileA />`;
 
-exports[`6. secondary one and columnist slice 1`] = `
+exports[`7. secondary one and columnist slice 1`] = `
 <View>
   <TileT />
   <View
@@ -107,7 +198,7 @@ exports[`6. secondary one and columnist slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary four slice 1`] = `
+exports[`8. secondary four slice 1`] = `
 Array [
   <View
     style={
@@ -196,7 +287,7 @@ Array [
 ]
 `;
 
-exports[`8. secondary one and four slice 1`] = `
+exports[`9. secondary one and four slice 1`] = `
 <View
   style={
     Object {
@@ -301,7 +392,7 @@ exports[`8. secondary one and four slice 1`] = `
 </View>
 `;
 
-exports[`9. secondary two and two slice 1`] = `
+exports[`10. secondary two and two slice 1`] = `
 Array [
   <View
     style={
@@ -369,7 +460,7 @@ Array [
 ]
 `;
 
-exports[`10. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two slice 1`] = `
 <View>
   <TileB />
   <View
@@ -408,7 +499,7 @@ exports[`10. secondary two no pic and two slice 1`] = `
 </View>
 `;
 
-exports[`11. list two and six no pic slice 1`] = `
+exports[`12. list two and six no pic slice 1`] = `
 Array [
   <View
     style={
@@ -530,7 +621,7 @@ Array [
 ]
 `;
 
-exports[`12. leaders slice 1`] = `
+exports[`13. leaders slice 1`] = `
 <View
   style={
     Object {
@@ -611,7 +702,7 @@ exports[`12. leaders slice 1`] = `
 </View>
 `;
 
-exports[`13. comment lead and cartoon slice 1`] = `
+exports[`14. comment lead and cartoon slice 1`] = `
 <View>
   <TileP />
   <View
@@ -628,7 +719,7 @@ exports[`13. comment lead and cartoon slice 1`] = `
 </View>
 `;
 
-exports[`14. puzzle slice 1`] = `
+exports[`15. puzzle slice 1`] = `
 <Link>
   <View
     style={

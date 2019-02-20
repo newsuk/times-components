@@ -1,7 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import { mockEditionSlice } from "@times-components/fixture-generator";
+import {
+  mockEditionSlice,
+  mockDailyRegisterSlice
+} from "@times-components/fixture-generator";
 
 import {
   TileA,
@@ -21,6 +24,7 @@ import {
   TileP,
   TileQ,
   TileR,
+  TileS,
   TileT,
   TileU,
   TileV,
@@ -35,9 +39,12 @@ jest.mock("@times-components/link", () => "Link");
 jest.mock("@times-components/gradient", () => "Gradient");
 
 const tile = mockEditionSlice(1).items[0];
+const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
 
-const testTile = Tile => {
-  const output = TestRenderer.create(<Tile onPress={() => {}} tile={tile} />);
+const testTile = (Tile, mockTile = tile) => {
+  const output = TestRenderer.create(
+    <Tile onPress={() => {}} tile={mockTile} />
+  );
   expect(output).toMatchSnapshot();
 };
 
@@ -110,6 +117,10 @@ export default () => {
     {
       name: "tile r",
       test: () => testTile(TileR)
+    },
+    {
+      name: "tile s",
+      test: () => testTile(TileS, dailyRegisterItem)
     },
     {
       name: "tile t",

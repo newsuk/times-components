@@ -1799,7 +1799,116 @@ exports[`17. tile r 1`] = `
 </Link>
 `;
 
-exports[`18. tile t 1`] = `
+exports[`18. tile s 1`] = `
+<style>
+.S1 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  margin-bottom: 15px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS4 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS5 {
+  margin-top: 10px;
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="IS2 S2"
+  >
+    <div
+      className="IS1 S1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="S3"
+  >
+    <p>
+      <b
+        className="IS3"
+      >
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b
+        className="IS4"
+      >
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="IS5 S4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;
+
+exports[`19. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1901,7 +2010,7 @@ exports[`18. tile t 1`] = `
 </Link>
 `;
 
-exports[`19. tile u 1`] = `
+exports[`20. tile u 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2003,7 +2112,7 @@ exports[`19. tile u 1`] = `
 </Link>
 `;
 
-exports[`20. tile v 1`] = `
+exports[`21. tile v 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -2098,7 +2207,7 @@ exports[`20. tile v 1`] = `
 </Link>
 `;
 
-exports[`21. tile w 1`] = `
+exports[`22. tile w 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;

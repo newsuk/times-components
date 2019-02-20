@@ -8,6 +8,7 @@ import {
   mockStandardSection
 } from "./mock-section";
 import mockEditionSlice, {
+  mockDailyRegisterSlice,
   mockLeadersSlice,
   mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
@@ -28,6 +29,7 @@ import MockTile from "./mock-tile";
 import MockTopic from "./mock-topic";
 
 export {
+  mockDailyRegisterSlice,
   mockLeadersSlice,
   mockCommentLeadAndCartoonSlice,
   mockLeadOneAndFourSlice,
