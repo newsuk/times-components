@@ -2,6 +2,15 @@
 
 import React from "react";
 import { View } from "react-native";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
+
+const styles = {
+  color: colours.section.comment,
+  fontFamily: fonts.supporting,
+  fontSize: fontSizes.cardMetaMobile,
+  letterSpacing: 0.6,
+  lineHeight: 12
+};
 
 const authorsAST = require("./fixtures/authors.json");
 
@@ -93,6 +102,19 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline that is very long",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <ComponentWrapper>
+          <Component
+            ast={authorsAST.authorInTheBeginning}
+            bylineStyle={styles}
+            {...getProps(decorateAction)}
+          />
+        </ComponentWrapper>
+      ),
+      name: "Byline with style overriden",
       type: "story"
     }
   ],

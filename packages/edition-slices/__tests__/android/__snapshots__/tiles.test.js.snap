@@ -277,11 +277,6 @@ exports[`8. tile h 1`] = `
           LABEL
         </Text>
       </View>
-      <Text>
-        <Text>
-          Libby Purves
-        </Text>
-      </Text>
       <Text
         accessibilityRole="heading"
         aria-level="3"
@@ -304,6 +299,11 @@ exports[`8. tile h 1`] = `
           }
         />
       </View>
+      <Text>
+        <Text>
+          Libby Purves
+        </Text>
+      </Text>
     </View>
     <View>
       <View>
@@ -539,11 +539,6 @@ exports[`15. tile p 1`] = `
           LABEL
         </Text>
       </View>
-      <Text>
-        <Text>
-          Libby Purves
-        </Text>
-      </Text>
       <Text
         accessibilityRole="heading"
         aria-level="3"
@@ -565,6 +560,11 @@ exports[`15. tile p 1`] = `
           }
         />
       </View>
+      <Text>
+        <Text>
+          Libby Purves
+        </Text>
+      </Text>
     </View>
   </View>
 </Link>

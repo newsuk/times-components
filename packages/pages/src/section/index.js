@@ -2,7 +2,7 @@ import React from "react";
 import { ActivityIndicator, Text } from "react-native";
 import PropTypes from "prop-types";
 import { EditionProvider } from "@times-components/provider";
-import Section from "./section";
+import Section from "@times-components/section";
 import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};

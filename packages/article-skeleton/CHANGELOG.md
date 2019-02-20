@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.12...@times-components/article-skeleton@0.12.13) (2019-02-20)
+
+
+### Bug Fixes
+
+* pull quotes captions should not change colour based on section ([#1730](https://github.com/newsuk/times-components/issues/1730)) ([5b67bba](https://github.com/newsuk/times-components/commit/5b67bba))
+
+
+
+
+
 ## [0.12.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.11...@times-components/article-skeleton@0.12.12) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton

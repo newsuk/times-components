@@ -118,9 +118,6 @@ class RelatedArticleItem extends Component {
               bylineProps={{
                 ast: byline,
                 bylineClass,
-                bylineStyle: isOpinionByline
-                  ? styles.opinionByline
-                  : styles.byline,
                 color: colours.section[section] || colours.section.default,
                 isOpinionByline
               }}

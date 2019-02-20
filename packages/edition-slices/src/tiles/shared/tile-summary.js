@@ -24,11 +24,7 @@ const TileSummary = ({
   labelColour
 }) => (
   <ArticleSummary
-    bylineProps={
-      byline
-        ? { ast: byline, isOpinionByline: true, opinionStyle: bylineStyle }
-        : null
-    }
+    bylineProps={byline ? { ast: byline, bylineStyle } : null}
     content={
       summary
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />

@@ -9,8 +9,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import "./mocks";
-import Section from "../src/section/section";
+import Section from "../src/section";
 
 jest.mock("@times-components/edition-slices", () => ({
   __esModule: true,
