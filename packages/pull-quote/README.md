@@ -7,8 +7,7 @@ which is the quote itself, and two optional strings called `caption` and
 `twitter`, which are typically used to attriute the citation (or quote) to a
 person, including their (optional) twitter handle.
 
-The colour props `captionColour` and `quoteColour` handle the colour of the
-`caption` text and the colour of the quotation marks, respectively.
+The colour prop `quoteColour` handles the colour of the colour of the quotation marks.
 
 ## Contributing
 
