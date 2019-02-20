@@ -36,3 +36,29 @@ exports[`3. secondary four tablet slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. secondary two and two slice 1`] = `
+<View>
+  <View>
+    <View>
+      <View>
+        <TileV />
+      </View>
+      <View />
+      <View>
+        <TileV />
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <TileG />
+      </View>
+      <View />
+      <View>
+        <TileG />
+      </View>
+    </View>
+  </View>
+</View>
+`;

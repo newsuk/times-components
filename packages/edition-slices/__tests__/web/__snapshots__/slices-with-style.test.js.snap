@@ -496,43 +496,55 @@ exports[`8. secondary two and two slice 1`] = `
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
 }
+
+.IS8 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
-  className="IS7 S1"
+  className="IS8 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS7 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS4 S1"
     >
-      <TileC />
+      <div
+        className="IS1 S1"
+      >
+        <TileV />
+      </div>
+      <div
+        className="IS2"
+      />
+      <div
+        className="IS3 S1"
+      >
+        <TileV />
+      </div>
     </div>
     <div
-      className="IS2"
+      className="IS5 S1"
     />
     <div
-      className="IS3 S1"
+      className="S1"
     >
-      <TileC />
+      <TileG />
     </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="S1"
-  >
-    <TileG />
-  </div>
-  <div
-    className="IS6 S1"
-  />
-  <div
-    className="S1"
-  >
-    <TileG />
+    <div
+      className="IS6 S1"
+    />
+    <div
+      className="S1"
+    >
+      <TileG />
+    </div>
   </div>
 </div>
 `;

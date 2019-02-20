@@ -111,20 +111,22 @@ exports[`8. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
-      <TileC />
+      <div>
+        <TileV />
+      </div>
+      <div />
+      <div>
+        <TileV />
+      </div>
     </div>
     <div />
     <div>
-      <TileC />
+      <TileG />
     </div>
-  </div>
-  <div />
-  <div>
-    <TileG />
-  </div>
-  <div />
-  <div>
-    <TileG />
+    <div />
+    <div>
+      <TileG />
+    </div>
   </div>
 </div>
 `;

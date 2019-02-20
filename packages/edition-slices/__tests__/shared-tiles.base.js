@@ -22,7 +22,8 @@ import {
   TileQ,
   TileR,
   TileT,
-  TileU
+  TileU,
+  TileV
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -116,6 +117,10 @@ export default () => {
     {
       name: "tile U",
       test: () => testTile(TileU)
+    },
+    {
+      name: "tile v",
+      test: () => testTile(TileV)
     }
   ];
 

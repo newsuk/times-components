@@ -19,6 +19,7 @@ const styles = {
     width: "30%"
   },
   summaryContainer: {
+    justifyContent: "center",
     paddingHorizontal: spacing(2),
     paddingTop: spacing(1),
     width: "70%"

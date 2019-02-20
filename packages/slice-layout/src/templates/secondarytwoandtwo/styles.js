@@ -1,4 +1,6 @@
-const styles = {
+import { editionBreakpoints, spacing } from "@times-components/styleguide";
+
+const smallBreakpointStyles = {
   container: {
     flex: 1
   },
@@ -10,4 +12,20 @@ const styles = {
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  container: {
+    flex: 1,
+    marginHorizontal: spacing(2)
+  },
+  item: {
+    width: "50%"
+  },
+  itemContainer: {
+    flexDirection: "row"
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : mediumBreakpointStyles;

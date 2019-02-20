@@ -182,3 +182,114 @@ exports[`3. secondary four tablet slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`4. secondary two and two slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 50%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS8 S1"
+>
+  <div
+    className="IS7 S1"
+  >
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="IS1 S1"
+      >
+        <TileV />
+      </div>
+      <div
+        className="IS2"
+      />
+      <div
+        className="IS3 S1"
+      >
+        <TileV />
+      </div>
+    </div>
+    <div
+      className="IS5 S1"
+    />
+    <div
+      className="S1"
+    >
+      <TileG />
+    </div>
+    <div
+      className="IS6 S1"
+    />
+    <div
+      className="S1"
+    >
+      <TileG />
+    </div>
+  </div>
+</div>
+`;
