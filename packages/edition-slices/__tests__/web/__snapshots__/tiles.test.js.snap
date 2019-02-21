@@ -205,7 +205,7 @@ exports[`6. tile f 1`] = `
         aria-level="4"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div>
         <span>
@@ -434,7 +434,7 @@ exports[`12. tile m 1`] = `
         aria-level="4"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div>
         <ArticleFlags />
@@ -467,13 +467,12 @@ exports[`13. tile n 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
+      <h4
+        aria-level="4"
+        role="heading"
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </h4>
       <div>
         <ArticleFlags
           color="#CCC"
@@ -549,7 +548,7 @@ exports[`15. tile p 1`] = `
         aria-level="4"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div>
         <ArticleFlags

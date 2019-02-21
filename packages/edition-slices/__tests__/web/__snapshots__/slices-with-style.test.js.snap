@@ -919,7 +919,7 @@ exports[`12. leaders slice 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 18px;
   text-align: center;
 }
 

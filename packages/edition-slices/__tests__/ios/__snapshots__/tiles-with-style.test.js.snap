@@ -108,9 +108,9 @@ exports[`2. tile b 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
+            "fontSize": 25,
             "fontWeight": "900",
-            "lineHeight": 22,
+            "lineHeight": 25,
             "marginBottom": 5,
           }
         }
@@ -245,8 +245,8 @@ exports[`4. tile d 1`] = `
     <View
       style={
         Object {
+          "paddingBottom": 5,
           "paddingHorizontal": 10,
-          "paddingVertical": 5,
           "width": "55%",
         }
       }
@@ -324,8 +324,8 @@ exports[`5. tile e 1`] = `
     <View
       style={
         Object {
+          "paddingBottom": 5,
           "paddingHorizontal": 10,
-          "paddingVertical": 5,
           "width": "55%",
         }
       }
@@ -440,7 +440,7 @@ exports[`6. tile f 1`] = `
           }
         }
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <Text
         style={
@@ -754,14 +754,15 @@ exports[`10. tile j 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "padding": 10,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "33.33%",
+          "width": "40%",
         }
       }
     >
@@ -772,7 +773,7 @@ exports[`10. tile j 1`] = `
         Object {
           "paddingHorizontal": 10,
           "paddingVertical": 5,
-          "width": "66.66%",
+          "width": "60%",
         }
       }
     >
@@ -895,7 +896,6 @@ exports[`12. tile m 1`] = `
     style={
       Object {
         "paddingBottom": 10,
-        "paddingHorizontal": 40,
       }
     }
   >
@@ -928,7 +928,7 @@ exports[`12. tile m 1`] = `
           }
         }
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <View
         style={
@@ -968,7 +968,6 @@ exports[`13. tile n 1`] = `
       style={
         Object {
           "paddingHorizontal": 10,
-          "paddingTop": 5,
           "width": "50%",
         }
       }
@@ -1013,20 +1012,15 @@ exports[`13. tile n 1`] = `
       <Text
         style={
           Object {
-            "color": "#CCC",
-            "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 14,
-            "lineHeight": 20,
-            "marginBottom": 10,
+            "color": "#696969",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 19,
+            "lineHeight": 21,
+            "paddingBottom": 10,
           }
         }
       >
-        <Text>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </Text>
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <View
         style={
@@ -1189,7 +1183,7 @@ exports[`15. tile p 1`] = `
           }
         }
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <View
         style={

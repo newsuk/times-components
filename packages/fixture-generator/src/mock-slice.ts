@@ -89,7 +89,7 @@ function getTile(): Tile {
     article,
     headline: article.headline,
     leadAsset: article.leadAsset,
-    strapline: article.standfirst
+    strapline: article.strapline
   };
 }
 
@@ -173,9 +173,13 @@ function mockSecondaryOneAndColumnistSlice(): SecondaryOneAndColumnistSliceWithN
 
 function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
   const tiles = getTiles(5);
+  const secondaryTile = {
+    ...tiles[0],
+    article: { ...tiles[0].article, strapline: "Readers share their top tips" }
+  };
   return <SecondaryOneAndFourSliceWithName>{
     name: "SecondaryOneAndFourSlice",
-    secondary: tiles[0],
+    secondary: secondaryTile,
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],
