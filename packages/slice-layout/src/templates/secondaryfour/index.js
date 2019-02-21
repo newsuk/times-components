@@ -17,7 +17,7 @@ const SecondaryFourSlice = ({
     const renderRowOne = [renderSecondary1(), renderSecondary2()];
     const renderRowTwo = [renderSecondary3(), renderSecondary4()];
     return (
-      <View style={styles.container}>
+      <View>
         <View style={styles.itemContainer}>
           <View key={renderRowOne[0].props.id} style={styles.item}>
             {renderRowOne[0]}
@@ -48,7 +48,7 @@ const SecondaryFourSlice = ({
     renderSecondary4()
   ];
   return (
-    <View style={styles.container}>
+    <View>
       <View key={renderCol[0].props.id} style={styles.item}>
         {renderCol[0]}
       </View>
