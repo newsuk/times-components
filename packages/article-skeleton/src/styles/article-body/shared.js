@@ -47,7 +47,7 @@ const sharedStyles = scale => {
     },
     interactiveContainerTablet: {
       alignSelf: "center",
-      maxWidth: tabletWidth
+      width: tabletWidth
     },
     leadAsset: {
       marginBottom: spacing(2)
