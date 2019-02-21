@@ -20,30 +20,26 @@ exports[`1. four child element 1`] = `
 
 <div
   className="S1"
-  style={
-    Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-    }
-  }
 >
   <div
     className="S1"
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
@@ -106,10 +102,20 @@ exports[`1. four child element 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
@@ -172,17 +178,6 @@ exports[`2. tablet - four child element 1`] = `
 
 <div
   className="S1"
-  style={
-    Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "flexDirection": "row",
-      "marginLeft": "10px",
-      "marginRight": "10px",
-      "msFlexDirection": "row",
-    }
-  }
 >
   <div
     className="S1"

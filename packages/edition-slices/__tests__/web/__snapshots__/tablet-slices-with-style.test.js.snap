@@ -74,9 +74,19 @@ exports[`3. secondary four tablet slice 1`] = `
 }
 
 .IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -107,27 +117,24 @@ exports[`3. secondary four tablet slice 1`] = `
 }
 
 .IS9 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS10 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS10 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -137,10 +144,10 @@ exports[`3. secondary four tablet slice 1`] = `
 </style>
 
 <div
-  className="IS11 S1"
+  className="IS10 S1"
 >
   <div
-    className="IS10 S1"
+    className="S1"
   >
     <div
       className="IS4 S1"

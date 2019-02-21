@@ -1,7 +1,7 @@
 const styles = {
   leadContainer: {
-    flexDirection: "row",
-    flex: 1
+    flex: 1,
+    flexDirection: "row"
   },
   leadItem: {
     paddingBottom: 5,
