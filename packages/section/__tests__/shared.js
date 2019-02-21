@@ -42,7 +42,11 @@ export default () => {
 
     expect(
       TestRenderer.create(
-        <Section onPress={() => {}} section={edition.sections[0]} />
+        <Section
+          analyticsStream={() => {}}
+          onPress={() => {}}
+          section={edition.sections[0]}
+        />
       ).toJSON()
     ).toMatchSnapshot();
   });
