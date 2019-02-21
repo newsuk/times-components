@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`section page tracking 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "Driving Off",
+    "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+    "articleUrl": "/article/123",
+    "sectionName": "News",
+    "sliceDepth": Object {
+      "itemNumber": 1,
+      "total": 9,
+    },
+    "sliceName": "LeadOneAndFourSlice",
+    "tileName": "lead",
+  },
+  "component": "Tile",
+  "object": "Slice",
+}
+`;
