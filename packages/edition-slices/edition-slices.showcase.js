@@ -116,7 +116,7 @@ const sliceStories = [
   },
   {
     mock: mockCommentLeadAndCartoonSlice(),
-    name: "CommentLeadAndCartoonSlice (PQ)",
+    name: "Comment Lead And Cartoon (PQ)",
     Slice: CommentLeadAndCartoonSlice
   },
   {
