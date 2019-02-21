@@ -220,7 +220,7 @@ exports[`13. comment lead and cartoon slice 1`] = `
 </div>
 `;
 
-exports[`13. puzzle slice 1`] = `
+exports[`14. puzzle slice 1`] = `
 <Link
   url="/crossword/123"
 >
