@@ -5,8 +5,10 @@ import { TileP, TileQ } from "../../tiles";
 
 const CommentLeadAndCartoonSlice = ({ onPress, slice: { lead, cartoon } }) => (
   <CommentLeadAndCartoon
-    renderCartoon={() => <TileQ onPress={onPress} tile={cartoon} />}
-    renderLead={() => <TileP onPress={onPress} tile={lead} />}
+    renderCartoon={() => (
+      <TileQ onPress={onPress} tile={cartoon} tileName="cartoon" />
+    )}
+    renderLead={() => <TileP onPress={onPress} tile={lead} tileName="lead" />}
   />
 );
 

@@ -6,7 +6,7 @@ import styles from "./styles";
 
 const SecondaryOneSlice = ({ onPress, slice: { secondary } }) => (
   <View style={styles.container}>
-    <TileA onPress={onPress} tile={secondary} />
+    <TileA onPress={onPress} tile={secondary} tileName="secondary" />
   </View>
 );
 

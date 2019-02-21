@@ -19,11 +19,21 @@ const SecondaryOneAndFour = ({
     </View>
     <ItemRowSeparator style={styles.separator} />
     <SecondaryOneAndFourSlice
-      renderSecondary={() => <TileN onPress={onPress} tile={secondary} />}
-      renderSupport1={() => <TileO onPress={onPress} tile={support1} />}
-      renderSupport2={() => <TileO onPress={onPress} tile={support2} />}
-      renderSupport3={() => <TileO onPress={onPress} tile={support3} />}
-      renderSupport4={() => <TileO onPress={onPress} tile={support4} />}
+      renderSecondary={() => (
+        <TileN onPress={onPress} tile={secondary} tileName="secondary" />
+      )}
+      renderSupport1={() => (
+        <TileO onPress={onPress} tile={support1} tileName="support1" />
+      )}
+      renderSupport2={() => (
+        <TileO onPress={onPress} tile={support2} tileName="support2" />
+      )}
+      renderSupport3={() => (
+        <TileO onPress={onPress} tile={support3} tileName="support3" />
+      )}
+      renderSupport4={() => (
+        <TileO onPress={onPress} tile={support4} tileName="support4" />
+      )}
     />
   </View>
 );

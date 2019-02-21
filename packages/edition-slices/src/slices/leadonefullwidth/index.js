@@ -5,8 +5,8 @@ import { ResponsiveSlice } from "../shared";
 
 const LeadOneFullWidthSlice = ({ slice: { lead }, onPress }) => (
   <ResponsiveSlice
-    renderMedium={() => <TileR onPress={onPress} tile={lead} />}
-    renderSmall={() => <TileA onPress={onPress} tile={lead} />}
+    renderMedium={() => <TileR onPress={onPress} tile={lead} tileName="lead" />}
+    renderSmall={() => <TileA onPress={onPress} tile={lead} tileName="lead" />}
   />
 );
 
