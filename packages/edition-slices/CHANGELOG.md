@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.20.0...@times-components/edition-slices@0.21.0) (2019-02-21)
+
+
+### Features
+
+* Secondary One and Columnist Slice ([#1725](https://github.com/newsuk/times-components/issues/1725)) ([49ccd22](https://github.com/newsuk/times-components/commit/49ccd22))
+
+
+
+
+
 # [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.19.2...@times-components/edition-slices@0.20.0) (2019-02-20)
 
 

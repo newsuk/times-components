@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.13.0...@times-components/fixture-generator@0.14.0) (2019-02-21)
+
+
+### Features
+
+* Secondary One and Columnist Slice ([#1725](https://github.com/newsuk/times-components/issues/1725)) ([49ccd22](https://github.com/newsuk/times-components/commit/49ccd22))
+
+
+
+
+
 # [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.12.1...@times-components/fixture-generator@0.13.0) (2019-02-20)
 
 
