@@ -1,26 +1,25 @@
 import { editionBreakpoints, spacing } from "@times-components/styleguide";
 
 const smallBreakpointStyles = {
-  container: {
-    flex: 1
-  },
-  itemContainer: {
-    flexDirection: "row"
-  },
   itemHalfWidth: {
     width: "50%"
+  },
+  itemContainer: {
+    flex: 1,
+    flexDirection: "row"
   }
 };
 
 const mediumBreakpointStyles = {
   container: {
-    flex: 1,
+    // flex: 1,
     marginHorizontal: spacing(2)
   },
   item: {
     width: "50%"
   },
   itemContainer: {
+    flex: 1,
     flexDirection: "row"
   }
 };

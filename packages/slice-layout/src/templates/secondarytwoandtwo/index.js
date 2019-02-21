@@ -17,7 +17,7 @@ const SecondaryTwoAndTwoSlice = ({
     const renderCol = [renderSecondary1(), renderSecondary2()];
     const renderRow = [renderSupport1(), renderSupport2()];
     return (
-      <View style={styles.container}>
+      <View>
         <View style={styles.itemContainer}>
           <View key={renderCol[0].props.id} style={styles.itemHalfWidth}>
             {renderCol[0]}
