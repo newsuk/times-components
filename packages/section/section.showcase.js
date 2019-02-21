@@ -1,5 +1,5 @@
 import React from "react";
-import { mockStandardSection } from "@times-components/fixture-generator";
+import { mockPuzzleSection, mockStandardSection } from "@times-components/fixture-generator";
 import storybookReporter from "@times-components/tealium-utils";
 import Section from "./src/section";
 
@@ -21,6 +21,17 @@ export default {
         />
       ),
       name: "News section",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <Section
+          analyticsStream={storybookReporter}
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          section={mockPuzzleSection("Puzzles")}
+        />
+      ),
+      name: "Puzzles section",
       type: "story"
     }
   ],

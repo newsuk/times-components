@@ -79,6 +79,10 @@ interface TwoPicAndSixNoPicSliceWithName extends TwoPicAndSixNoPicSlice {
   name: string;
 }
 
+interface PuzzleWithName extends Puzzle {
+  name: string;
+}
+
 function getTile(): Tile {
   const article = new MockArticle().get();
   return {
@@ -263,7 +267,8 @@ function mockArticleSlice(count: number): ArticleSlice {
 
 function mockPuzzleSlice(): Puzzle {
   const { title, url, image } = new MockPuzzle().get();
-  return <Puzzle>{
+  return <PuzzleWithName>{
+    name: "Puzzle",
     title,
     url,
     image
