@@ -19,6 +19,7 @@ import {
 } from "./types";
 import MockArticle from "./mock-article";
 import MockPuzzle from "./mock-puzzle";
+import MockTile from "./mock-tile";
 
 interface LeadOneAndFourSliceWithName extends LeadOneAndFourSlice {
   name: string;
@@ -83,18 +84,8 @@ interface PuzzleWithName extends Puzzle {
   name: string;
 }
 
-function getTile(): Tile {
-  const article = new MockArticle().get();
-  return {
-    article,
-    headline: article.headline,
-    leadAsset: article.leadAsset,
-    strapline: article.strapline
-  };
-}
-
 function getTiles(count: number): Array<Tile> {
-  return new Array(count).fill(0).map(() => getTile());
+  return new Array(count).fill(0).map(() => new MockTile().get());
 }
 
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
@@ -106,7 +97,8 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],
-    support4: tiles[4]
+    support4: tiles[4],
+    items: tiles
   };
 }
 

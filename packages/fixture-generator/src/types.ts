@@ -180,8 +180,6 @@ export interface Article {
   slug?: string | null;
   /** A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article */
   standfirst?: string | null;
-  /** Supporting text used on homepage tiles */
-  strapline?: string | null;
   /** A predefined truncated version of the article with a max length of the teaser, can optionally choose a shorter length. Use this to avoid ACS. */
   summary?: Markup | null;
 

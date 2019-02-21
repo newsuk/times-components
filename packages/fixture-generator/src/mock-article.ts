@@ -59,8 +59,6 @@ class MockArticle {
       shortIdentifier: "37b27qd2s",
       standfirst:
         "Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all",
-      strapline:
-        "The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed",
       title: "title",
       summary: new MockMarkup().addParagraphs().get(),
       summary105: new MockMarkup().addSummary("summary105").get(),

@@ -24,6 +24,7 @@ import mockEditionSlice, {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockPuzzleSlice
 } from "./mock-slice";
+import MockTile from "./mock-tile";
 import MockTopic from "./mock-topic";
 
 export {
@@ -49,6 +50,7 @@ export {
   mockEditionSlice,
   MockImage,
   MockAuthor,
+  MockTile,
   MockTopic,
   mockPuzzleSlice
 };
