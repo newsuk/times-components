@@ -175,7 +175,8 @@ function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],
-    support4: tiles[4]
+    support4: tiles[4],
+    items: tiles
   };
 }
 
