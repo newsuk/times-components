@@ -41,10 +41,18 @@ exports[`3. secondary four tablet slice 1`] = `
     }
   }
 >
-  <View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
     <View
       style={
         Object {
+          "flex": 1,
           "width": "25%",
         }
       }
@@ -64,6 +72,7 @@ exports[`3. secondary four tablet slice 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "width": "25%",
         }
       }
@@ -83,6 +92,7 @@ exports[`3. secondary four tablet slice 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "width": "25%",
         }
       }
@@ -102,6 +112,7 @@ exports[`3. secondary four tablet slice 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "width": "25%",
         }
       }
@@ -133,6 +144,7 @@ exports[`4. secondary two and two slice 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
         }
       }
@@ -179,6 +191,7 @@ exports[`4. secondary two and two slice 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
         }
       }

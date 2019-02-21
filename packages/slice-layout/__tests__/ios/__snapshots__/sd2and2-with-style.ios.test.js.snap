@@ -88,6 +88,7 @@ exports[`2. tablet - four child elements 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -138,6 +139,7 @@ exports[`2. tablet - four child elements 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }

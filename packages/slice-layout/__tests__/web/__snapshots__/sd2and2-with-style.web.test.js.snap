@@ -115,10 +115,20 @@ exports[`2. tablet - four child elements 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
@@ -172,10 +182,20 @@ exports[`2. tablet - four child elements 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
