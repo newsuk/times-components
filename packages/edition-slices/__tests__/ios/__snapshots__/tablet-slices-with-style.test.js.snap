@@ -41,14 +41,7 @@ exports[`3. secondary four tablet slice 1`] = `
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flexDirection": "row",
-        "marginHorizontal": 10,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {

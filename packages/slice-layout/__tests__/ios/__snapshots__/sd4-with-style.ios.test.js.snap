@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. four child element 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+<View>
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -61,6 +56,7 @@ exports[`1. four child element 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -102,14 +98,7 @@ exports[`1. four child element 1`] = `
 `;
 
 exports[`2. tablet - four child element 1`] = `
-<View
-  style={
-    Object {
-      "flexDirection": "row",
-      "marginHorizontal": 10,
-    }
-  }
->
+<View>
   <View
     style={
       Object {

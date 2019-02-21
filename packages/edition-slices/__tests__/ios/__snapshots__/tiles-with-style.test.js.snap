@@ -154,6 +154,7 @@ exports[`3. tile c 1`] = `
   <View
     style={
       Object {
+        "height": "100%",
         "paddingHorizontal": 10,
         "paddingTop": 10,
       }

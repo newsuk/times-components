@@ -5,8 +5,8 @@ const smallBreakpointStyles = {
     width: "50%"
   },
   itemContainer: {
-    flexDirection: "row",
-    flex: 1
+    flex: 1,
+    flexDirection: "row"
   }
 };
 

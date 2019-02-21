@@ -24,9 +24,9 @@ const SecondaryTwoAndTwoSlice = ({
         </View>
       </View>
       <ItemRowSeparator />
-        <View key={renderRowTwo[0].props.id}>{renderRowTwo[0]}</View>
-        <ItemRowSeparator />
-        <View key={renderRowTwo[1].props.id}>{renderRowTwo[1]}</View>
+      <View key={renderRowTwo[0].props.id}>{renderRowTwo[0]}</View>
+      <ItemRowSeparator />
+      <View key={renderRowTwo[1].props.id}>{renderRowTwo[1]}</View>
     </View>
   );
 };
