@@ -3,9 +3,6 @@ const styles = {
     flexDirection: "row",
     flex: 1
   },
-  itemColumnContainer: {
-    flex: 1
-  },
   itemHalfWidth: {
     width: "50%"
   }
