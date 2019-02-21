@@ -1,9 +1,10 @@
 const styles = {
-  container: {
+  itemRowContainer: {
+    flexDirection: "row",
     flex: 1
   },
-  itemContainer: {
-    flexDirection: "row"
+  itemColumnContainer: {
+    flex: 1
   },
   itemHalfWidth: {
     width: "50%"
