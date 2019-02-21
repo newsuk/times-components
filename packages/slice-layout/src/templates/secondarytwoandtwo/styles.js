@@ -12,7 +12,6 @@ const smallBreakpointStyles = {
 
 const mediumBreakpointStyles = {
   container: {
-    // flex: 1,
     marginHorizontal: spacing(2)
   },
   item: {
