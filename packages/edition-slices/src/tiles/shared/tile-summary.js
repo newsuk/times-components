@@ -13,8 +13,8 @@ const TileSummary = ({
     article: { flags, hasVideo, headline, label, section, shortHeadline }
   },
   byline,
-  headlineStyle,
   bylineStyle,
+  headlineStyle,
   strapline,
   straplineStyle,
   style,

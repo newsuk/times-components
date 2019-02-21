@@ -40,7 +40,15 @@ exports[`5. secondary one slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary four slice 1`] = `
+exports[`6. secondary one and columnist slice 1`] = `
+<View>
+  <TileT />
+  <View />
+  <TileH />
+</View>
+`;
+
+exports[`7. secondary four slice 1`] = `
 <View>
   <View>
     <View>
@@ -64,7 +72,7 @@ exports[`6. secondary four slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary one and four slice 1`] = `
+exports[`8. secondary one and four slice 1`] = `
 <View>
   <View>
     <TheTimesLogo
@@ -99,7 +107,7 @@ exports[`7. secondary one and four slice 1`] = `
 </View>
 `;
 
-exports[`8. secondary two and two slice 1`] = `
+exports[`9. secondary two and two slice 1`] = `
 <View>
   <View>
     <View>
@@ -121,7 +129,7 @@ exports[`8. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`9. secondary two no pic and two slice 1`] = `
+exports[`10. secondary two no pic and two slice 1`] = `
 <View>
   <TileB />
   <View />
@@ -133,7 +141,7 @@ exports[`9. secondary two no pic and two slice 1`] = `
 </View>
 `;
 
-exports[`10. list two and six no pic slice 1`] = `
+exports[`11. list two and six no pic slice 1`] = `
 <View>
   <View>
     <View>
@@ -171,7 +179,7 @@ exports[`10. list two and six no pic slice 1`] = `
 </View>
 `;
 
-exports[`11. leaders slice 1`] = `
+exports[`12. leaders slice 1`] = `
 <View>
   <View>
     <Image
@@ -198,7 +206,7 @@ exports[`11. leaders slice 1`] = `
 </View>
 `;
 
-exports[`12. comment lead and cartoon slice 1`] = `
+exports[`13. comment lead and cartoon slice 1`] = `
 <View>
   <TileP />
   <View />
@@ -206,7 +214,7 @@ exports[`12. comment lead and cartoon slice 1`] = `
 </View>
 `;
 
-exports[`13. puzzle slice 1`] = `
+exports[`14. puzzle slice 1`] = `
 <Link
   url="/crossword/123"
 >

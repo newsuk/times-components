@@ -9,6 +9,7 @@ import {
   mockLeadTwoNoPicAndTwoSlice,
   mockLeadersSlice,
   mockSecondaryOneSlice,
+  mockSecondaryOneAndColumnistSlice,
   mockSecondaryFourSlice,
   mockListTwoAndSixNoPicSlice,
   mockSecondaryTwoAndTwoSlice,
@@ -27,6 +28,7 @@ import {
   ListTwoAndSixNoPicSlice,
   LeadersSlice,
   SecondaryOneSlice,
+  SecondaryOneAndColumnistSlice,
   SecondaryFourSlice,
   SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
@@ -59,6 +61,11 @@ const slices = [
     mock: mockSecondaryOneSlice(),
     name: "secondary one slice",
     Slice: SecondaryOneSlice
+  },
+  {
+    mock: mockSecondaryOneAndColumnistSlice(),
+    name: "secondary one and columnist slice",
+    Slice: SecondaryOneAndColumnistSlice
   },
   {
     mock: mockSecondaryFourSlice(),

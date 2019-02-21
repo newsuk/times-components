@@ -6,6 +6,9 @@ export { default as LeadersSlice } from "./leaders";
 export { default as ListTwoAndSixNoPicSlice } from "./listtwoandsixnopic";
 export { default as LeadTwoNoPicAndTwoSlice } from "./leadtwonopicandtwo";
 export { default as SecondaryOneSlice } from "./secondaryone";
+export {
+  default as SecondaryOneAndColumnistSlice
+} from "./secondaryoneandcolumnist";
 export { default as SecondaryFourSlice } from "./secondaryfour";
 export { default as SecondaryOneAndFourSlice } from "./secondaryoneandfour";
 export { default as SecondaryTwoAndTwoSlice } from "./secondarytwoandtwo";

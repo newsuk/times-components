@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. secondary one and columnist 1`] = `
+<View>
+  <Text>
+    secondary
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Text>
+    columnist
+  </Text>
+</View>
+`;

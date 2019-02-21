@@ -1,4 +1,4 @@
-import mockArticleSlice, { mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice, mockPuzzleSlice } from "../mock-slice";
+import mockArticleSlice, { mockCommentLeadAndCartoonSlice, mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryOneAndColumnistSlice, mockSecondaryOneAndFourSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice, mockPuzzleSlice } from "../mock-slice";
 
 describe("The Mock EditionSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
@@ -43,6 +43,30 @@ describe("The Mock EditionSlice", () => {
     const articleSlice = mockSecondaryOneSlice();
     expect(articleSlice.items.length).toBe(1);
     expect(articleSlice.secondary).toBeDefined();
+  });
+
+  it("returns SecondaryOneAndColumnistSlice", () => {
+    const articleSlice = mockSecondaryOneAndColumnistSlice();
+    expect(articleSlice.items.length).toBe(2);
+    expect(articleSlice.secondary).toBeDefined();
+    expect(articleSlice.columnist).toBeDefined();
+  });
+
+  it("returns SecondaryOneAndFourSlice", () => {
+    const articleSlice = mockSecondaryOneAndFourSlice();
+    expect(articleSlice.items.length).toBe(5);
+    expect(articleSlice.secondary).toBeDefined();
+    expect(articleSlice.support1).toBeDefined();
+    expect(articleSlice.support2).toBeDefined();
+    expect(articleSlice.support3).toBeDefined();
+    expect(articleSlice.support4).toBeDefined();
+  });
+
+  it("returns CommentLeadAndCartoonSlice", () => {
+    const articleSlice = mockCommentLeadAndCartoonSlice();
+    expect(articleSlice.items.length).toBe(2);
+    expect(articleSlice.lead).toBeDefined();
+    expect(articleSlice.cartoon).toBeDefined();
   });
 
   it("returns SecondaryTwoAndTwoSlice", () => {

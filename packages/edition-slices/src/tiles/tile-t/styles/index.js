@@ -12,12 +12,12 @@ const styles = {
     })
   },
   imageContainer: {
-    width: "45%"
+    width: "50%"
   },
   summaryContainer: {
     paddingHorizontal: spacing(2),
     paddingVertical: spacing(1),
-    width: "55%"
+    width: "50%"
   }
 };
 

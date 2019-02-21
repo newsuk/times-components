@@ -162,7 +162,32 @@ exports[`5. secondary one slice 1`] = `
 </div>
 `;
 
-exports[`6. secondary four slice 1`] = `
+exports[`6. secondary one and columnist slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
+  className="S1"
+>
+  <TileT />
+  <div
+    className="IS1 S1"
+  />
+  <TileH />
+</div>
+`;
+
+exports[`7. secondary four slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -296,7 +321,7 @@ exports[`6. secondary four slice 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and four slice 1`] = `
+exports[`8. secondary one and four slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -438,7 +463,7 @@ exports[`7. secondary one and four slice 1`] = `
 </div>
 `;
 
-exports[`8. secondary two and two slice 1`] = `
+exports[`9. secondary two and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -549,7 +574,7 @@ exports[`8. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary two no pic and two slice 1`] = `
+exports[`10. secondary two no pic and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -596,7 +621,7 @@ exports[`9. secondary two no pic and two slice 1`] = `
 </div>
 `;
 
-exports[`10. list two and six no pic slice 1`] = `
+exports[`11. list two and six no pic slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -757,7 +782,7 @@ exports[`10. list two and six no pic slice 1`] = `
 </div>
 `;
 
-exports[`11. leaders slice 1`] = `
+exports[`12. leaders slice 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -855,7 +880,7 @@ exports[`11. leaders slice 1`] = `
 </div>
 `;
 
-exports[`12. comment lead and cartoon slice 1`] = `
+exports[`13. comment lead and cartoon slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -880,7 +905,7 @@ exports[`12. comment lead and cartoon slice 1`] = `
 </div>
 `;
 
-exports[`13. puzzle slice 1`] = `
+exports[`14. puzzle slice 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);

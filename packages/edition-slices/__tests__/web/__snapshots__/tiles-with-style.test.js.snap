@@ -846,14 +846,14 @@ exports[`8. tile h 1`] = `
 .IS3 {
   padding-top: 10px;
   padding-right: 10px;
-  width: 55%;
+  width: 50%;
 }
 
 .IS4 {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   padding-top: 10px;
-  width: 45%;
+  width: 50%;
   -ms-flex-pack: end;
   -webkit-box-pack: end;
 }
@@ -1855,7 +1855,7 @@ exports[`18. tile t 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  width: 50%;
 }
 
 .IS2 {
@@ -1871,7 +1871,7 @@ exports[`18. tile t 1`] = `
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  width: 55%;
+  width: 50%;
 }
 
 .IS5 {

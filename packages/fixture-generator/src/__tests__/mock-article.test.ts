@@ -14,6 +14,11 @@ describe("The mock Article", () => {
     expect(mockArticle.publicationName).toBe("SUNDAYTIMES");
   });
 
+  it("should return with comments enabled", () => {
+    const mockArticle = new MockArticle().setCommentsEnabled(true).get();
+    expect(mockArticle.commentsEnabled).toBe(true);
+  });
+
   it("should return x related articles", () => {
     const mockArticle = new MockArticle().setRelatedArticles(5).get();
     expect(mockArticle.relatedArticleSlice!.items.length).toBe(5);

@@ -8,6 +8,7 @@ import {
   LeadTwoNoPicAndTwoSlice,
   LeadersSlice,
   SecondaryOneSlice,
+  SecondaryOneAndColumnistSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
@@ -40,6 +41,11 @@ interface LeadTwoNoPicAndTwoSliceWithName extends LeadTwoNoPicAndTwoSlice {
 }
 
 interface SecondaryOneSliceWithName extends SecondaryOneSlice {
+  name: string;
+}
+
+interface SecondaryOneAndColumnistSliceWithName
+  extends SecondaryOneAndColumnistSlice {
   name: string;
 }
 
@@ -151,6 +157,16 @@ function mockSecondaryOneSlice(): SecondaryOneSliceWithName {
   };
 }
 
+function mockSecondaryOneAndColumnistSlice(): SecondaryOneAndColumnistSliceWithName {
+  const tiles = getTiles(2);
+  return <SecondaryOneAndColumnistSliceWithName>{
+    name: "SecondaryOneAndColumnistSlice",
+    secondary: tiles[0],
+    columnist: tiles[1],
+    items: tiles
+  };
+}
+
 function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
   const tiles = getTiles(5);
   return <SecondaryOneAndFourSliceWithName>{
@@ -159,7 +175,8 @@ function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],
-    support4: tiles[4]
+    support4: tiles[4],
+    items: tiles
   };
 }
 
@@ -264,6 +281,7 @@ export {
   mockLeadersSlice,
   mockListTwoAndSixNoPicSlice,
   mockSecondaryOneSlice,
+  mockSecondaryOneAndColumnistSlice,
   mockSecondaryOneAndFourSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoAndTwoSlice,
