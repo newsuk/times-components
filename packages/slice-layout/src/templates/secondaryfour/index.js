@@ -48,7 +48,7 @@ const SecondaryFourSlice = ({
     renderSecondary4()
   ];
   return (
-    <View>
+    <View style={styles.container}>
       <View key={renderCol[0].props.id} style={styles.item}>
         {renderCol[0]}
       </View>

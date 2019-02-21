@@ -13,7 +13,8 @@ const smallBreakpointStyles = {
 const mediumBreakpointStyles = {
   container: { flexDirection: "row", marginHorizontal: spacing(2) },
   item: {
-    width: "25%"
+    width: "25%",
+    flex: 1
   }
 };
 
