@@ -3,6 +3,7 @@ import { View } from "react-native";
 import Caption, { CentredCaption } from "@times-components/caption";
 import { ModalImage } from "@times-components/image";
 import InsetCaption from "./inset-caption";
+import InsetCenteredCaption from "./inset-centered-caption";
 import InlineImage from "./inline-image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
@@ -15,30 +16,28 @@ const captionStyle = {
   }
 };
 
-function getCaptionComponent(display, caption, credits) {
+function getCaptionComponent(template, display) {
   if (display === "primary") {
-    return <InsetCaption caption={caption} credits={credits} />;
+    return template === "indepth" ? InsetCenteredCaption : InsetCaption;
   }
 
-  const CaptionComponent = display === "fullwidth" ? CentredCaption : Caption;
-
-  return (
-    <CaptionComponent
-      credits={credits}
-      style={captionStyle[display]}
-      text={caption}
-    />
-  );
+  return display === "fullwidth" ? CentredCaption : Caption;
 }
 
-const renderCaption = (display, caption, credits) =>
-  caption || credits ? (
+const renderCaption = (template, display, caption, credits) => {
+  const CaptionComponent = getCaptionComponent(template, display);
+  return caption || credits ? (
     <View key="caption" style={styles[`${display}Caption`]}>
-      {getCaptionComponent(display, caption, credits)}
+      <CaptionComponent
+        credits={credits}
+        style={captionStyle[display]}
+        text={caption}
+      />
     </View>
   ) : null;
+};
 
-const ArticleImage = ({ imageOptions, captionOptions }) => {
+const ArticleImage = ({ imageOptions, captionOptions, template }) => {
   const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
@@ -51,7 +50,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
     );
   }
 
-  const children = [renderCaption(display, caption, credits)];
+  const children = [renderCaption(template, display, caption, credits)];
   if (!display || !ratio) {
     return children;
   }

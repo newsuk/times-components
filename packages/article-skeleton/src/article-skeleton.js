@@ -31,6 +31,7 @@ const viewabilityConfig = {
 };
 
 const renderRow = (
+  article,
   rowData,
   onAuthorPress,
   onCommentsPress,
@@ -53,6 +54,7 @@ const renderRow = (
           onLinkPress={onLinkPress}
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
+          template={article.template}
         />
       );
     }
@@ -188,6 +190,7 @@ class ArticleSkeleton extends Component {
               renderItem={({ item }) => (
                 <Gutter>
                   {renderRow(
+                    dataSource,
                     item,
                     onAuthorPress,
                     onCommentsPress,

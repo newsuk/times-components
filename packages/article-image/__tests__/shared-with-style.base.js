@@ -35,6 +35,8 @@ const portraitInlineImage = portraitInlineImageFixture(
   "Portrait credits"
 );
 
+const props = { template: "mainstandard" };
+
 export default makeTest => {
   const tests = [
     {
@@ -43,6 +45,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
@@ -57,6 +60,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
@@ -70,6 +74,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={fullwidthImage.captionOptions}
               imageOptions={fullwidthImage.imageOptions}
             />
@@ -84,6 +89,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={fullwidthImage.captionOptions}
               imageOptions={fullwidthImage.imageOptions}
             />
@@ -97,6 +103,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={secondaryImage.captionOptions}
               imageOptions={secondaryImage.imageOptions}
             />
@@ -110,6 +117,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={landscapeInlineImage.captionOptions}
               imageOptions={landscapeInlineImage.imageOptions}
             />
@@ -123,8 +131,24 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={portraitInlineImage.captionOptions}
               imageOptions={portraitInlineImage.imageOptions}
+            />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name: "primary image with caption and credits in-depth template",
+      test: () => {
+        expect(
+          makeTest(
+            <ArticleImage
+              {...props}
+              captionOptions={primaryImage.captionOptions}
+              imageOptions={primaryImage.imageOptions}
+              template="indepth"
             />
           )
         ).toMatchSnapshot();

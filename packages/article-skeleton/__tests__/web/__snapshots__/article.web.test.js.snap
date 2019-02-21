@@ -48,6 +48,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "uri": "https://image.io",
               }
             }
+            template="maincomment"
           />
         </div>
       </div>
@@ -71,6 +72,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "uri": "https://image.io/secondary",
               }
             }
+            template="maincomment"
           />
         </div>
       </div>
@@ -94,6 +96,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "uri": "https://image.io/inline",
               }
             }
+            template="maincomment"
           />
         </div>
       </div>

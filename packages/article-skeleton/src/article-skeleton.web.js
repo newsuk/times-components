@@ -114,6 +114,7 @@ class ArticleSkeleton extends Component {
                       observed={observed}
                       registerNode={registerNode}
                       section={section}
+                      template={template}
                     />
 
                     <ArticleTopics topics={topics} />

@@ -4,6 +4,8 @@ import ArticleImage from "../src/article-image";
 
 const testImageUrl = "https://img/someImage";
 
+const props = { template: "mainstandard" };
+
 export default makeTest => {
   const tests = [
     {
@@ -18,7 +20,9 @@ export default makeTest => {
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noDisplay.imageOptions} />)
+          makeTest(
+            <ArticleImage {...props} imageOptions={noDisplay.imageOptions} />
+          )
         ).toMatchSnapshot();
       }
     },
@@ -34,7 +38,9 @@ export default makeTest => {
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
+          makeTest(
+            <ArticleImage {...props} imageOptions={noRatio.imageOptions} />
+          )
         ).toMatchSnapshot();
       }
     },
@@ -51,7 +57,9 @@ export default makeTest => {
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
+          makeTest(
+            <ArticleImage {...props} imageOptions={noRatio.imageOptions} />
+          )
         ).toMatchSnapshot();
       }
     },
@@ -73,6 +81,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={noRatio.captionOptions}
               imageOptions={noRatio.imageOptions}
             />
@@ -94,6 +103,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               imageOptions={primaryImageNoCaptionProps.imageOptions}
             />
           )
@@ -118,6 +128,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={noCredits.captionOptions}
               imageOptions={noCredits.imageOptions}
             />
@@ -143,6 +154,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={noCredits.captionOptions}
               imageOptions={noCredits.imageOptions}
             />
@@ -168,6 +180,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
@@ -195,6 +208,7 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
+              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
