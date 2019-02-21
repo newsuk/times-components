@@ -21,8 +21,12 @@ exports[`1. lead one and one tablet slice 1`] = `
   <div
     className="S1"
   >
-    <TileU />
-    <TileC />
+    <TileU
+      tileName="lead"
+    />
+    <TileC
+      tileName="support"
+    />
   </div>
 </div>
 `;
@@ -45,7 +49,9 @@ exports[`2. lead one full width tablet slice 1`] = `
 <div
   className="IS1 S1"
 >
-  <TileR />
+  <TileR
+    tileName="lead"
+  />
 </div>
 `;
 
@@ -148,7 +154,9 @@ exports[`3. secondary four tablet slice 1`] = `
       <div
         className="IS1 S1"
       >
-        <TileC />
+        <TileC
+          tileName="secondary1"
+        />
       </div>
       <div
         className="IS2"
@@ -156,7 +164,9 @@ exports[`3. secondary four tablet slice 1`] = `
       <div
         className="IS3 S1"
       >
-        <TileC />
+        <TileC
+          tileName="secondary2"
+        />
       </div>
     </div>
     <div
@@ -168,7 +178,9 @@ exports[`3. secondary four tablet slice 1`] = `
       <div
         className="IS6 S1"
       >
-        <TileC />
+        <TileC
+          tileName="secondary3"
+        />
       </div>
       <div
         className="IS7"
@@ -176,7 +188,9 @@ exports[`3. secondary four tablet slice 1`] = `
       <div
         className="IS8 S1"
       >
-        <TileC />
+        <TileC
+          tileName="secondary4"
+        />
       </div>
     </div>
   </div>
@@ -263,7 +277,9 @@ exports[`4. secondary two and two slice 1`] = `
       <div
         className="IS1 S1"
       >
-        <TileV />
+        <TileV
+          tileName="secondary1"
+        />
       </div>
       <div
         className="IS2"
@@ -271,7 +287,9 @@ exports[`4. secondary two and two slice 1`] = `
       <div
         className="IS3 S1"
       >
-        <TileV />
+        <TileV
+          tileName="secondary2"
+        />
       </div>
     </div>
     <div
@@ -280,7 +298,9 @@ exports[`4. secondary two and two slice 1`] = `
     <div
       className="S1"
     >
-      <TileG />
+      <TileG
+        tileName="support1"
+      />
     </div>
     <div
       className="IS6 S1"
@@ -288,7 +308,9 @@ exports[`4. secondary two and two slice 1`] = `
     <div
       className="S1"
     >
-      <TileG />
+      <TileG
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
