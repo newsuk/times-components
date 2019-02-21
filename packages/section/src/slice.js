@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import sliceMap from "@times-components/edition-slices";
-import withSliceTracking from "./slice-tracking-events";
+import withSliceTrackingContext from "./slice-tracking-context";
 
 const Slice = ({ slice, onPress }) => {
   const Component = sliceMap[slice.name];
@@ -13,4 +13,4 @@ Slice.propTypes = {
   slice: PropTypes.shape({}).isRequired
 };
 
-export default withSliceTracking(Slice);
+export default withSliceTrackingContext(Slice);
