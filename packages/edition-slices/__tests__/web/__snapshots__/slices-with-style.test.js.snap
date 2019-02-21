@@ -151,14 +151,18 @@ exports[`5. secondary one slice 1`] = `
 }
 
 .IS1 {
-  padding-bottom: 10px;
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
 }
 </style>
 
 <div
   className="IS1 S1"
 >
-  <TileA />
+  <TileW />
 </div>
 `;
 

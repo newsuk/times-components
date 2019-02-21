@@ -1,13 +1,13 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileA } from "../../tiles";
-import styles from "./styles";
+import { TileA, TileW } from "../../tiles";
+import { ResponsiveSlice } from "../shared";
 
 const SecondaryOneSlice = ({ onPress, slice: { secondary } }) => (
-  <View style={styles.container}>
-    <TileA onPress={onPress} tile={secondary} />
-  </View>
+  <ResponsiveSlice
+    renderMedium={() => <TileW onPress={onPress} tile={secondary} />}
+    renderSmall={() => <TileA onPress={onPress} tile={secondary} />}
+  />
 );
 
 SecondaryOneSlice.propTypes = {
