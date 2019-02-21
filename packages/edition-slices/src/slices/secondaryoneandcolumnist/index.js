@@ -8,8 +8,12 @@ const SecondaryOneAndColumnist = ({
   slice: { columnist, secondary }
 }) => (
   <SecondaryOneAndColumnistSlice
-    renderColumnist={() => <TileH onPress={onPress} tile={columnist} />}
-    renderSecondary={() => <TileT onPress={onPress} tile={secondary} />}
+    renderColumnist={() => (
+      <TileH onPress={onPress} tile={columnist} tileName="columnist" />
+    )}
+    renderSecondary={() => (
+      <TileT onPress={onPress} tile={secondary} tileName="secondary" />
+    )}
   />
 );
 
