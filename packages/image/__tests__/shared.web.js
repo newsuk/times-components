@@ -141,6 +141,38 @@ export default () => {
 
         expect(testRenderer).toMatchSnapshot();
       }
+    },
+    {
+      name: "high res image should hide placeholder after loading",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image aspectRatio={3 / 2} highResSize={900} uri="https://image.io" />
+        );
+
+        const highResImage = testRenderer.root.findByType("img");
+
+        expect(testRenderer).toMatchSnapshot();
+
+        highResImage.props.onLoad();
+
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "low res image should hide placeholder after loading",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
+        );
+
+        const lowResImage = testRenderer.root.findByType("img");
+
+        expect(testRenderer).toMatchSnapshot();
+
+        lowResImage.props.onLoad();
+
+        expect(testRenderer).toMatchSnapshot();
+      }
     }
   ];
 
