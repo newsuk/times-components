@@ -149,13 +149,14 @@ export default () => {
           <Image aspectRatio={3 / 2} highResSize={900} uri="https://image.io" />
         );
 
+        let [, placeholder] = testRenderer.toJSON().children[0].children;
+        expect(placeholder).toBeDefined();
+
         const highResImage = testRenderer.root.findByType("img");
-
-        expect(testRenderer).toMatchSnapshot();
-
         highResImage.props.onLoad();
 
-        expect(testRenderer).toMatchSnapshot();
+        [, placeholder] = testRenderer.toJSON().children[0].children;
+        expect(placeholder).toBeUndefined();
       }
     },
     {
@@ -165,13 +166,14 @@ export default () => {
           <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
         );
 
+        let [, placeholder] = testRenderer.toJSON().children[0].children;
+        expect(placeholder).toBeDefined();
+
         const lowResImage = testRenderer.root.findByType("img");
-
-        expect(testRenderer).toMatchSnapshot();
-
         lowResImage.props.onLoad();
 
-        expect(testRenderer).toMatchSnapshot();
+        [, placeholder] = testRenderer.toJSON().children[0].children;
+        expect(placeholder).toBeUndefined();
       }
     }
   ];
