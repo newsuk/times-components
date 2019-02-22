@@ -3,7 +3,6 @@ import { spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     alignItems: "center",
-    paddingHorizontal: spacing(4),
     paddingVertical: spacing(2)
   },
   imageContainer: {

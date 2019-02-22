@@ -1227,7 +1227,6 @@ exports[`16. tile q 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "paddingHorizontal": 20,
         "paddingVertical": 10,
       }
     }
