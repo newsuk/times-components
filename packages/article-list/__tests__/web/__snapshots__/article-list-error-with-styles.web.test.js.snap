@@ -3,7 +3,7 @@
 exports[`1. page error 1`] = `
 .c2 {
   display: block;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
