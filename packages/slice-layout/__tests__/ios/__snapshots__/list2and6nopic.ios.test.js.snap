@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. eight child element 1`] = `
-<View>
+Array [
   <View>
     <View>
       <Text>
@@ -14,42 +14,42 @@ exports[`1. eight child element 1`] = `
         lead-2
       </Text>
     </View>
-  </View>
-  <View />
+  </View>,
+  <View />,
   <View>
     <Text>
       support-1
     </Text>
     <View />
-  </View>
+  </View>,
   <View>
     <Text>
       support-2
     </Text>
     <View />
-  </View>
+  </View>,
   <View>
     <Text>
       support-3
     </Text>
     <View />
-  </View>
+  </View>,
   <View>
     <Text>
       support-4
     </Text>
     <View />
-  </View>
+  </View>,
   <View>
     <Text>
       support-5
     </Text>
     <View />
-  </View>
+  </View>,
   <View>
     <Text>
       support-6
     </Text>
-  </View>
-</View>
+  </View>,
+]
 `;

@@ -74,9 +74,19 @@ exports[`3. secondary four tablet slice 1`] = `
 }
 
 .IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -107,27 +117,24 @@ exports[`3. secondary four tablet slice 1`] = `
 }
 
 .IS9 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS10 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS10 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -137,47 +144,43 @@ exports[`3. secondary four tablet slice 1`] = `
 </style>
 
 <div
-  className="IS11 S1"
+  className="IS10 S1"
 >
   <div
-    className="IS10 S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="IS9 S1"
+      className="IS3 S1"
     >
-      <div
-        className="IS6 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS8 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
+    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="IS9 S1"
+  >
+    <div
+      className="IS6 S1"
+    >
+      <TileC />
+    </div>
+    <div
+      className="IS7"
+    />
+    <div
+      className="IS8 S1"
+    >
+      <TileC />
     </div>
   </div>
 </div>
@@ -208,9 +211,19 @@ exports[`4. secondary two and two slice 1`] = `
 }
 
 .IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -230,19 +243,6 @@ exports[`4. secondary two and two slice 1`] = `
 }
 
 .IS7 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -252,44 +252,40 @@ exports[`4. secondary two and two slice 1`] = `
 </style>
 
 <div
-  className="IS8 S1"
+  className="IS7 S1"
 >
   <div
-    className="IS7 S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileV />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileV />
-      </div>
+      <TileV />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="S1"
+      className="IS3 S1"
     >
-      <TileG />
+      <TileV />
     </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
-      <TileG />
-    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
+  </div>
+  <div
+    className="IS6 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
   </div>
 </div>
 `;

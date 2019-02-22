@@ -108,16 +108,11 @@ exports[`6. secondary one and columnist slice 1`] = `
 `;
 
 exports[`7. secondary four slice 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -150,7 +145,7 @@ exports[`7. secondary four slice 1`] = `
     >
       <TileC />
     </View>
-  </View>
+  </View>,
   <View
     style={
       Object {
@@ -160,10 +155,11 @@ exports[`7. secondary four slice 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -196,8 +192,8 @@ exports[`7. secondary four slice 1`] = `
     >
       <TileC />
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`8. secondary one and four slice 1`] = `
@@ -306,16 +302,11 @@ exports[`8. secondary one and four slice 1`] = `
 `;
 
 exports[`9. secondary two and two slice 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -348,7 +339,7 @@ exports[`9. secondary two and two slice 1`] = `
     >
       <TileC />
     </View>
-  </View>
+  </View>,
   <View
     style={
       Object {
@@ -358,10 +349,10 @@ exports[`9. secondary two and two slice 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <View>
     <TileG />
-  </View>
+  </View>,
   <View
     style={
       Object {
@@ -371,11 +362,11 @@ exports[`9. secondary two and two slice 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <View>
     <TileG />
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`10. secondary two no pic and two slice 1`] = `
@@ -418,16 +409,11 @@ exports[`10. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`11. list two and six no pic slice 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -462,7 +448,7 @@ exports[`11. list two and six no pic slice 1`] = `
     >
       <TileC />
     </View>
-  </View>
+  </View>,
   <View
     style={
       Object {
@@ -472,7 +458,7 @@ exports[`11. list two and six no pic slice 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <View>
     <TileL />
     <View
@@ -485,7 +471,7 @@ exports[`11. list two and six no pic slice 1`] = `
         }
       }
     />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View
@@ -498,7 +484,7 @@ exports[`11. list two and six no pic slice 1`] = `
         }
       }
     />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View
@@ -511,7 +497,7 @@ exports[`11. list two and six no pic slice 1`] = `
         }
       }
     />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View
@@ -524,7 +510,7 @@ exports[`11. list two and six no pic slice 1`] = `
         }
       }
     />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View
@@ -537,11 +523,11 @@ exports[`11. list two and six no pic slice 1`] = `
         }
       }
     />
-  </View>
+  </View>,
   <View>
     <TileL />
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`12. leaders slice 1`] = `

@@ -1,8 +1,6 @@
 const styles = {
-  container: {
-    flex: 1
-  },
   leadContainer: {
+    flex: 1,
     flexDirection: "row"
   },
   leadItem: {

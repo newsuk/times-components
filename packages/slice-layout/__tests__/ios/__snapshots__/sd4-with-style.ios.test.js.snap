@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. four child element 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -47,7 +42,7 @@ exports[`1. four child element 1`] = `
         secondary-2
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     style={
       Object {
@@ -57,10 +52,11 @@ exports[`1. four child element 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
       }
     }
@@ -97,8 +93,8 @@ exports[`1. four child element 1`] = `
         secondary-4
       </Text>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`2. tablet - four child element 1`] = `
@@ -113,6 +109,7 @@ exports[`2. tablet - four child element 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "width": "25%",
       }
     }
@@ -134,6 +131,7 @@ exports[`2. tablet - four child element 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "width": "25%",
       }
     }
@@ -155,6 +153,7 @@ exports[`2. tablet - four child element 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "width": "25%",
       }
     }
@@ -176,6 +175,7 @@ exports[`2. tablet - four child element 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "width": "25%",
       }
     }

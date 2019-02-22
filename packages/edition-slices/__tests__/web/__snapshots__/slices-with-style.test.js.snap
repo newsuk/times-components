@@ -216,9 +216,19 @@ exports[`7. secondary four slice 1`] = `
 }
 
 .IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -249,27 +259,24 @@ exports[`7. secondary four slice 1`] = `
 }
 
 .IS9 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS10 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS10 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -279,47 +286,43 @@ exports[`7. secondary four slice 1`] = `
 </style>
 
 <div
-  className="IS11 S1"
+  className="IS10 S1"
 >
   <div
-    className="IS10 S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="IS9 S1"
+      className="IS3 S1"
     >
-      <div
-        className="IS6 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS8 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
+    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="IS9 S1"
+  >
+    <div
+      className="IS6 S1"
+    >
+      <TileC />
+    </div>
+    <div
+      className="IS7"
+    />
+    <div
+      className="IS8 S1"
+    >
+      <TileC />
     </div>
   </div>
 </div>
@@ -492,9 +495,19 @@ exports[`9. secondary two and two slice 1`] = `
 }
 
 .IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -514,19 +527,6 @@ exports[`9. secondary two and two slice 1`] = `
 }
 
 .IS7 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -536,44 +536,40 @@ exports[`9. secondary two and two slice 1`] = `
 </style>
 
 <div
-  className="IS8 S1"
+  className="IS7 S1"
 >
   <div
-    className="IS7 S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileV />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileV />
-      </div>
+      <TileV />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="S1"
+      className="IS3 S1"
     >
-      <TileG />
+      <TileV />
     </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
-      <TileG />
-    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
+  </div>
+  <div
+    className="IS6 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
   </div>
 </div>
 `;
@@ -626,7 +622,8 @@ exports[`10. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`11. list two and six no pic slice 1`] = `
-<style>
+Array [
+  <style>
 .S1 {
   margin-bottom: 0px;
 }
@@ -652,73 +649,25 @@ exports[`11. list two and six no pic slice 1`] = `
 }
 
 .IS4 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS7 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS8 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS9 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS10 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS11 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 </style>
 
 <div
-  className="IS11 S1"
->
-  <div
     className="IS4 S1"
   >
     <div
@@ -734,56 +683,140 @@ exports[`11. list two and six no pic slice 1`] = `
     >
       <TileC />
     </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
+    className="IS1 S1"
+  />,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
     <div
-      className="IS6 S1"
+      className="IS1 S1"
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
     <div
-      className="IS7 S1"
+      className="IS1 S1"
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
     <div
-      className="IS8 S1"
+      className="IS1 S1"
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
     <div
-      className="IS9 S1"
+      className="IS1 S1"
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
     <div
-      className="IS10 S1"
+      className="IS1 S1"
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  margin-bottom: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <TileL />
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`12. leaders slice 1`] = `

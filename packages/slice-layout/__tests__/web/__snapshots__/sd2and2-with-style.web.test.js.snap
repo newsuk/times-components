@@ -1,30 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. four child elements 1`] = `
-<div
-  style={
-    Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-    }
-  }
->
+Array [
   <div
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
@@ -63,7 +58,7 @@ exports[`1. four child elements 1`] = `
         secondary-2
       </div>
     </div>
-  </div>
+  </div>,
   <div
     style={
       Object {
@@ -73,12 +68,12 @@ exports[`1. four child elements 1`] = `
         "marginRight": "10px",
       }
     }
-  />
+  />,
   <div>
     <div>
       support-1
     </div>
-  </div>
+  </div>,
   <div
     style={
       Object {
@@ -88,13 +83,13 @@ exports[`1. four child elements 1`] = `
         "marginRight": "10px",
       }
     }
-  />
+  />,
   <div>
     <div>
       support-2
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`2. tablet - four child elements 1`] = `
@@ -120,10 +115,20 @@ exports[`2. tablet - four child elements 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >
@@ -177,10 +182,20 @@ exports[`2. tablet - four child elements 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
+        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
         "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
         "msFlexDirection": "row",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
     }
   >

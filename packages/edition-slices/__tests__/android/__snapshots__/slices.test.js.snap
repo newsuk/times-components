@@ -45,7 +45,7 @@ exports[`6. secondary one and columnist slice 1`] = `
 `;
 
 exports[`7. secondary four slice 1`] = `
-<View>
+Array [
   <View>
     <View>
       <TileC />
@@ -54,8 +54,8 @@ exports[`7. secondary four slice 1`] = `
     <View>
       <TileC />
     </View>
-  </View>
-  <View />
+  </View>,
+  <View />,
   <View>
     <View>
       <TileC />
@@ -64,8 +64,8 @@ exports[`7. secondary four slice 1`] = `
     <View>
       <TileC />
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`8. secondary one and four slice 1`] = `
@@ -104,7 +104,7 @@ exports[`8. secondary one and four slice 1`] = `
 `;
 
 exports[`9. secondary two and two slice 1`] = `
-<View>
+Array [
   <View>
     <View>
       <TileC />
@@ -113,16 +113,16 @@ exports[`9. secondary two and two slice 1`] = `
     <View>
       <TileC />
     </View>
-  </View>
-  <View />
+  </View>,
+  <View />,
   <View>
     <TileG />
-  </View>
-  <View />
+  </View>,
+  <View />,
   <View>
     <TileG />
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`10. secondary two no pic and two slice 1`] = `
@@ -138,7 +138,7 @@ exports[`10. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`11. list two and six no pic slice 1`] = `
-<View>
+Array [
   <View>
     <View>
       <TileC />
@@ -147,32 +147,32 @@ exports[`11. list two and six no pic slice 1`] = `
     <View>
       <TileC />
     </View>
-  </View>
-  <View />
+  </View>,
+  <View />,
   <View>
     <TileL />
     <View />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View />
-  </View>
+  </View>,
   <View>
     <TileL />
     <View />
-  </View>
+  </View>,
   <View>
     <TileL />
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`12. leaders slice 1`] = `
