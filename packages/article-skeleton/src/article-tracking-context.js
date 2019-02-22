@@ -13,9 +13,7 @@ export default Component =>
       referralUrl,
       section: pageSection || get(data, "section", ""),
       template: get(data, "template", "Default"),
-      topics: get(data, "topics", [])
-        .map(topic => topic.name)
-        .join(",")
+      topics: (get(data, "topics", []) || []).map(topic => topic.name).join(",")
     }),
     trackingObjectName: "Article"
   });
