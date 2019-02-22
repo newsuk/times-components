@@ -494,9 +494,9 @@ exports[`4. an article skeleton with responsive items 1`] = `
               Object {
                 "alignSelf": "center",
                 "marginBottom": 20,
-                "maxWidth": 660,
                 "paddingLeft": 10,
                 "paddingRight": 10,
+                "width": 660,
               }
             }
           >
