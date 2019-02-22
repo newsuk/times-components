@@ -19,23 +19,21 @@ exports[`3. secondary four tablet slice 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileC />
-      </div>
-      <div />
-      <div>
-        <TileC />
-      </div>
+      <TileC />
     </div>
     <div />
     <div>
-      <div>
-        <TileC />
-      </div>
-      <div />
-      <div>
-        <TileC />
-      </div>
+      <TileC />
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <TileC />
+    </div>
+    <div />
+    <div>
+      <TileC />
     </div>
   </div>
 </div>
@@ -45,22 +43,20 @@ exports[`4. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileV />
-      </div>
-      <div />
-      <div>
-        <TileV />
-      </div>
+      <TileV />
     </div>
     <div />
     <div>
-      <TileG />
+      <TileV />
     </div>
-    <div />
-    <div>
-      <TileG />
-    </div>
+  </div>
+  <div />
+  <div>
+    <TileG />
+  </div>
+  <div />
+  <div>
+    <TileG />
   </div>
 </div>
 `;

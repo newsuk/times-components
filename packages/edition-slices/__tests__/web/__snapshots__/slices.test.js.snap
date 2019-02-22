@@ -58,23 +58,21 @@ exports[`7. secondary four slice 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileC />
-      </div>
-      <div />
-      <div>
-        <TileC />
-      </div>
+      <TileC />
     </div>
     <div />
     <div>
-      <div>
-        <TileC />
-      </div>
-      <div />
-      <div>
-        <TileC />
-      </div>
+      <TileC />
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <TileC />
+    </div>
+    <div />
+    <div>
+      <TileC />
     </div>
   </div>
 </div>
@@ -119,22 +117,20 @@ exports[`9. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileV />
-      </div>
-      <div />
-      <div>
-        <TileV />
-      </div>
+      <TileV />
     </div>
     <div />
     <div>
-      <TileG />
+      <TileV />
     </div>
-    <div />
-    <div>
-      <TileG />
-    </div>
+  </div>
+  <div />
+  <div>
+    <TileG />
+  </div>
+  <div />
+  <div>
+    <TileG />
   </div>
 </div>
 `;
@@ -152,7 +148,7 @@ exports[`10. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`11. list two and six no pic slice 1`] = `
-<div>
+Array [
   <div>
     <div>
       <TileC />
@@ -161,32 +157,32 @@ exports[`11. list two and six no pic slice 1`] = `
     <div>
       <TileC />
     </div>
-  </div>
-  <div />
+  </div>,
+  <div />,
   <div>
     <TileL />
     <div />
-  </div>
+  </div>,
   <div>
     <TileL />
     <div />
-  </div>
+  </div>,
   <div>
     <TileL />
     <div />
-  </div>
+  </div>,
   <div>
     <TileL />
     <div />
-  </div>
+  </div>,
   <div>
     <TileL />
     <div />
-  </div>
+  </div>,
   <div>
     <TileL />
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`12. leaders slice 1`] = `

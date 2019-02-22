@@ -147,44 +147,40 @@ exports[`3. secondary four tablet slice 1`] = `
   className="IS10 S1"
 >
   <div
-    className="S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="IS9 S1"
+      className="IS3 S1"
     >
-      <div
-        className="IS6 S1"
-      >
-        <TileC />
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS8 S1"
-      >
-        <TileC />
-      </div>
+      <TileC />
+    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="IS9 S1"
+  >
+    <div
+      className="IS6 S1"
+    >
+      <TileC />
+    </div>
+    <div
+      className="IS7"
+    />
+    <div
+      className="IS8 S1"
+    >
+      <TileC />
     </div>
   </div>
 </div>
@@ -259,41 +255,37 @@ exports[`4. secondary two and two slice 1`] = `
   className="IS7 S1"
 >
   <div
-    className="S1"
+    className="IS4 S1"
   >
     <div
-      className="IS4 S1"
+      className="IS1 S1"
     >
-      <div
-        className="IS1 S1"
-      >
-        <TileV />
-      </div>
-      <div
-        className="IS2"
-      />
-      <div
-        className="IS3 S1"
-      >
-        <TileV />
-      </div>
+      <TileV />
     </div>
     <div
-      className="IS5 S1"
+      className="IS2"
     />
     <div
-      className="S1"
+      className="IS3 S1"
     >
-      <TileG />
+      <TileV />
     </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
-      <TileG />
-    </div>
+  </div>
+  <div
+    className="IS5 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
+  </div>
+  <div
+    className="IS6 S1"
+  />
+  <div
+    className="S1"
+  >
+    <TileG />
   </div>
 </div>
 `;

@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. eight child element 1`] = `
-<style>
+Array [
+  <style>
 .S1 {
   border-bottom-width: 0px;
   padding-top: 0px;
@@ -16,19 +17,9 @@ exports[`1. eight child element 1`] = `
   padding-right: 0px;
   padding-left: 0px;
 }
-
-.S3 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
 </style>
 
 <div
-  className="S1"
->
-  <div
     className="S1"
     style={
       Object {
@@ -94,9 +85,18 @@ exports[`1. eight child element 1`] = `
         lead-2
       </div>
     </div>
-  </div>
-  <div
-    className="S3"
+  </div>,
+  <style>
+.S1 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+    className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -105,8 +105,25 @@ exports[`1. eight child element 1`] = `
         "marginRight": "10px",
       }
     }
-  />
-  <div
+  />,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -115,7 +132,7 @@ exports[`1. eight child element 1`] = `
       support-1
     </div>
     <div
-      className="S3"
+      className="S2"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -125,8 +142,25 @@ exports[`1. eight child element 1`] = `
         }
       }
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -135,7 +169,7 @@ exports[`1. eight child element 1`] = `
       support-2
     </div>
     <div
-      className="S3"
+      className="S2"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -145,8 +179,25 @@ exports[`1. eight child element 1`] = `
         }
       }
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -155,7 +206,7 @@ exports[`1. eight child element 1`] = `
       support-3
     </div>
     <div
-      className="S3"
+      className="S2"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -165,8 +216,25 @@ exports[`1. eight child element 1`] = `
         }
       }
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -175,7 +243,7 @@ exports[`1. eight child element 1`] = `
       support-4
     </div>
     <div
-      className="S3"
+      className="S2"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -185,8 +253,25 @@ exports[`1. eight child element 1`] = `
         }
       }
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.S2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -195,7 +280,7 @@ exports[`1. eight child element 1`] = `
       support-5
     </div>
     <div
-      className="S3"
+      className="S2"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
@@ -205,8 +290,18 @@ exports[`1. eight child element 1`] = `
         }
       }
     />
-  </div>
-  <div
+  </div>,
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
     className="S1"
   >
     <div
@@ -214,6 +309,6 @@ exports[`1. eight child element 1`] = `
     >
       support-6
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
