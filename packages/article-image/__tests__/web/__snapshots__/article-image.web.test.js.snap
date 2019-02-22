@@ -24,19 +24,22 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 `;
 
 exports[`5. image with no caption 1`] = `
-<div>
+Array [
   <div>
     <div>
-      <img
-        alt=""
-        src="https://img/someImage"
-      />
       <div>
-        <div />
+        <img
+          alt=""
+          src="https://img/someImage"
+        />
+        <div>
+          <div />
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+  "",
+]
 `;
 
 exports[`6. image with no display only shows given caption 1`] = `

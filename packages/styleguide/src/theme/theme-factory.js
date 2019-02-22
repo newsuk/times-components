@@ -53,9 +53,18 @@ const magazineFontPicker = (
   return config[template][section] || defaultFont;
 };
 
+const imageCaptionAlignmentPicker = template => {
+  if (template === "indepth") {
+    return { primary: "center" };
+  }
+
+  return {};
+};
+
 export default (section, template) => ({
   dropCapFont: magazineFontPicker("dropCap", section, template),
   headlineFont: magazineFontPicker("headline", section, template),
+  imageCaptionAlignment: imageCaptionAlignmentPicker(template),
   pullQuoteFont: magazineFontPicker("headlineRegular", section, template),
   sectionColour: sectionColourPicker(section, template)
 });

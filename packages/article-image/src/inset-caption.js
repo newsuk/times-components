@@ -14,7 +14,7 @@ const CaptionComponentPrimaryNative = ({ text, credits, CaptionComponent }) => (
     {({ isTablet }) => (
       <CaptionComponent
         credits={credits}
-        style={!isTablet && captionStyle}
+        style={isTablet ? {} : captionStyle}
         text={text}
       />
     )}

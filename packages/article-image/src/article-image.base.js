@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import Caption, { CentredCaption } from "@times-components/caption";
+import Context from "@times-components/context";
 import { ModalImage } from "@times-components/image";
 import InsetCaption from "./inset-caption";
 import InsetCenteredCaption from "./inset-centered-caption";
@@ -16,18 +17,25 @@ const captionStyle = {
   }
 };
 
-function getCaptionComponent(template, display) {
+function getCaptionComponent(display, { imageCaptionAlignment }) {
   if (display === "primary") {
-    return template === "indepth" ? InsetCenteredCaption : InsetCaption;
+    return imageCaptionAlignment.primary === "center"
+      ? InsetCenteredCaption
+      : InsetCaption;
   }
 
-  return display === "fullwidth" ? CentredCaption : Caption;
+  if (display === "fullwidth" || imageCaptionAlignment[display] === "center") {
+    return CentredCaption;
+  }
+
+  return Caption;
 }
 
-const renderCaption = (template, display, caption, credits) => {
-  const CaptionComponent = getCaptionComponent(template, display);
+const renderCaption = (caption, credits, display, theme) => {
+  const CaptionComponent = getCaptionComponent(display, theme);
+
   return caption || credits ? (
-    <View key="caption" style={styles[`${display}Caption`]}>
+    <View style={styles[`${display}Caption`]}>
       <CaptionComponent
         credits={credits}
         style={captionStyle[display]}
@@ -37,7 +45,7 @@ const renderCaption = (template, display, caption, credits) => {
   ) : null;
 };
 
-const ArticleImage = ({ imageOptions, captionOptions, template }) => {
+const ArticleImage = ({ imageOptions, captionOptions }) => {
   const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
@@ -50,26 +58,33 @@ const ArticleImage = ({ imageOptions, captionOptions, template }) => {
     );
   }
 
-  const children = [renderCaption(template, display, caption, credits)];
+  const renderedCaption = (
+    <Context.Consumer>
+      {({ theme }) => renderCaption(caption, credits, display, theme)}
+    </Context.Consumer>
+  );
+
   if (!display || !ratio) {
-    return children;
+    return renderedCaption;
   }
 
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return [
-    <View key="img" style={styles[`${display}Image`]}>
-      <ModalImage
-        aspectRatio={aspectRatio}
-        caption={<Caption credits={credits} text={caption} />}
-        highResSize={highResSize}
-        lowResSize={lowResSize}
-        uri={uri}
-      />
-    </View>,
-    ...children
-  ];
+  return (
+    <Fragment>
+      <View style={styles[`${display}Image`]}>
+        <ModalImage
+          aspectRatio={aspectRatio}
+          caption={<Caption credits={credits} text={caption} />}
+          highResSize={highResSize}
+          lowResSize={lowResSize}
+          uri={uri}
+        />
+      </View>
+      {renderedCaption}
+    </Fragment>
+  );
 };
 
 ArticleImage.propTypes = propTypes;

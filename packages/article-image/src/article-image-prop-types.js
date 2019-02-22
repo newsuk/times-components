@@ -11,8 +11,7 @@ export const propTypes = {
     lowResSize: PropTypes.number,
     ratio: PropTypes.string,
     uri: PropTypes.string.isRequired
-  }).isRequired,
-  template: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export const defaultPropTypes = {

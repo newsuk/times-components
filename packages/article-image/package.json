@@ -69,6 +69,7 @@
   },
   "dependencies": {
     "@times-components/caption": "2.3.21",
+    "@times-components/context": "0.6.20",
     "@times-components/image": "4.8.10",
     "@times-components/responsive": "0.3.2",
     "@times-components/styleguide": "3.22.2",

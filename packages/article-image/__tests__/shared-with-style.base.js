@@ -1,5 +1,6 @@
 import React from "react";
 import { setIsTablet } from "@times-components/test-utils/dimensions";
+import Context from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
@@ -35,8 +36,6 @@ const portraitInlineImage = portraitInlineImageFixture(
   "Portrait credits"
 );
 
-const props = { template: "mainstandard" };
-
 export default makeTest => {
   const tests = [
     {
@@ -45,7 +44,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
@@ -60,7 +58,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
             />
@@ -74,7 +71,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={fullwidthImage.captionOptions}
               imageOptions={fullwidthImage.imageOptions}
             />
@@ -89,7 +85,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={fullwidthImage.captionOptions}
               imageOptions={fullwidthImage.imageOptions}
             />
@@ -103,7 +98,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={secondaryImage.captionOptions}
               imageOptions={secondaryImage.imageOptions}
             />
@@ -117,7 +111,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={landscapeInlineImage.captionOptions}
               imageOptions={landscapeInlineImage.imageOptions}
             />
@@ -131,7 +124,6 @@ export default makeTest => {
         expect(
           makeTest(
             <ArticleImage
-              {...props}
               captionOptions={portraitInlineImage.captionOptions}
               imageOptions={portraitInlineImage.imageOptions}
             />
@@ -140,16 +132,41 @@ export default makeTest => {
       }
     },
     {
-      name: "primary image with caption and credits in-depth template",
+      name:
+        "primary image with caption and credits with center caption override",
       test: () => {
         expect(
           makeTest(
-            <ArticleImage
-              {...props}
-              captionOptions={primaryImage.captionOptions}
-              imageOptions={primaryImage.imageOptions}
-              template="indepth"
-            />
+            <Context.Provider
+              value={{
+                theme: { imageCaptionAlignment: { primary: "center" } }
+              }}
+            >
+              <ArticleImage
+                captionOptions={primaryImage.captionOptions}
+                imageOptions={primaryImage.imageOptions}
+              />
+            </Context.Provider>
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name:
+        "secondary image with caption and credits with center caption override",
+      test: () => {
+        expect(
+          makeTest(
+            <Context.Provider
+              value={{
+                theme: { imageCaptionAlignment: { secondary: "center" } }
+              }}
+            >
+              <ArticleImage
+                captionOptions={secondaryImage.captionOptions}
+                imageOptions={secondaryImage.imageOptions}
+              />
+            </Context.Provider>
           )
         ).toMatchSnapshot();
       }
