@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import styles from "./styles";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
@@ -26,7 +26,7 @@ const ListTwoAndSixNoPic = ({
   const renderRowItem1 = renderLead1();
   const renderRowItem2 = renderLead2();
   return (
-    <View style={styles.container}>
+    <Fragment>
       <View style={styles.leadContainer}>
         <View key={renderRowItem1.props.id} style={styles.leadItem}>
           {renderRowItem1}
@@ -43,7 +43,7 @@ const ListTwoAndSixNoPic = ({
           {supportItems.length - 1 > index ? <ItemRowSeparator /> : null}
         </View>
       ))}
-    </View>
+    </Fragment>
   );
 };
 

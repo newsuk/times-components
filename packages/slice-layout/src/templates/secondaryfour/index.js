@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
@@ -17,7 +17,7 @@ const SecondaryFourSlice = ({
     const renderRowOne = [renderSecondary1(), renderSecondary2()];
     const renderRowTwo = [renderSecondary3(), renderSecondary4()];
     return (
-      <View style={styles.container}>
+      <Fragment>
         <View style={styles.itemContainer}>
           <View key={renderRowOne[0].props.id} style={styles.item}>
             {renderRowOne[0]}
@@ -37,7 +37,7 @@ const SecondaryFourSlice = ({
             {renderRowTwo[1]}
           </View>
         </View>
-      </View>
+      </Fragment>
     );
   }
 

@@ -1,13 +1,11 @@
 import { editionBreakpoints, spacing } from "@times-components/styleguide";
 
 const smallBreakpointStyles = {
-  container: {
-    flex: 1
-  },
   item: {
     width: "50%"
   },
   itemContainer: {
+    flex: 1,
     flexDirection: "row"
   }
 };
@@ -15,6 +13,7 @@ const smallBreakpointStyles = {
 const mediumBreakpointStyles = {
   container: { flexDirection: "row", marginHorizontal: spacing(2) },
   item: {
+    flex: 1,
     width: "25%"
   }
 };
