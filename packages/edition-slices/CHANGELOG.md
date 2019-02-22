@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.22.1...@times-components/edition-slices@0.23.0) (2019-02-22)
+
+
+### Features
+
+* section analytics ([#1741](https://github.com/newsuk/times-components/issues/1741)) ([70dc623](https://github.com/newsuk/times-components/commit/70dc623))
+
+
+
+
+
 ## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.22.0...@times-components/edition-slices@0.22.1) (2019-02-22)
 
 **Note:** Version bump only for package @times-components/edition-slices
