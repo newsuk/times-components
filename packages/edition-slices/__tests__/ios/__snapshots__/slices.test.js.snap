@@ -266,7 +266,7 @@ exports[`12. leaders slice 1`] = `
       resizeMode="contain"
       source={
         Object {
-          "testUri": "../../../packages/edition-slices/assets/leaders-masthead.png",
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
         }
       }
     />

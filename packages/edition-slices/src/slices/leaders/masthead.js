@@ -6,7 +6,7 @@ const MastHead = () => (
   <Image
     resizeMode="contain"
     // eslint-disable-next-line global-require
-    source={require("../../../assets/leaders-masthead.png")}
+    source={require("../../../assets/times-leading-header.png")}
     style={styles.mastheadStyle}
   />
 );

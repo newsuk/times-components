@@ -1713,8 +1713,6 @@ exports[`16. tile q 1`] = `
   -webkit-align-items: center;
   align-items: center;
   padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
