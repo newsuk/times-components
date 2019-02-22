@@ -22,7 +22,8 @@ import {
   TileR,
   TileT,
   TileU,
-  TileV
+  TileV,
+  TileW
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -82,7 +83,7 @@ const tileStories = [
     Tile: TileI
   },
   {
-    name: "Tile J - Horizontal, image left of article summary with 1:3 ratio",
+    name: "Tile J - Horizontal, image left of article summary with 2:3 ratio",
     Tile: TileJ
   },
   {
@@ -121,12 +122,17 @@ const tileStories = [
     Tile: TileT
   },
   {
-    name: "Tile U - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
+    name:
+      "Tile U - Horizontal, Flex: 1:3, Summary left no teaser, Image 3:2 right",
     Tile: TileU
   },
   {
-    name: "TileV - Top image, 35pt headline, no teaser ",
+    name: "Tile V - Top image, 35pt headline, no teaser ",
     Tile: TileV
+  },
+  {
+    name: "Tile W - Horizontal, Flex: 1:3, Summary left, Image 3:2 right",
+    Tile: TileW
   }
 ];
 

@@ -1541,3 +1541,100 @@ exports[`20. tile v 1`] = `
   </View>
 </Link>
 `;
+
+exports[`21. tile w 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "paddingVertical": 5,
+          "width": "33.33%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 25,
+            "fontWeight": "400",
+            "lineHeight": 25,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "width": "66.66%",
+        }
+      }
+    >
+      <Image />
+    </View>
+  </View>
+</Link>
+`;
