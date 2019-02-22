@@ -12,6 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import Image from "../src";
+import Placeholder from "../src/placeholder";
 import "./mocks";
 import shared from "./shared.base";
 
@@ -149,14 +150,16 @@ export default () => {
           <Image aspectRatio={3 / 2} highResSize={900} uri="https://image.io" />
         );
 
-        let [, placeholder] = testRenderer.toJSON().children[0].children;
-        expect(placeholder).toBeDefined();
+        let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(1);
 
         const highResImage = testRenderer.root.findByType("img");
         highResImage.props.onLoad();
 
-        [, placeholder] = testRenderer.toJSON().children[0].children;
-        expect(placeholder).toBeUndefined();
+        numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(0);
       }
     },
     {
@@ -166,14 +169,16 @@ export default () => {
           <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
         );
 
-        let [, placeholder] = testRenderer.toJSON().children[0].children;
-        expect(placeholder).toBeDefined();
+        let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(1);
 
         const lowResImage = testRenderer.root.findByType("img");
         lowResImage.props.onLoad();
 
-        [, placeholder] = testRenderer.toJSON().children[0].children;
-        expect(placeholder).toBeUndefined();
+        numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(0);
       }
     }
   ];
