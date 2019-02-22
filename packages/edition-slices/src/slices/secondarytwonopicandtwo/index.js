@@ -8,10 +8,18 @@ const SecondaryTwoNoPicAndTwo = ({
   slice: { secondary1, secondary2, support1, support2 }
 }) => (
   <SecondaryTwoNoPicAndTwoSlice
-    renderSecondary1={() => <TileB onPress={onPress} tile={secondary1} />}
-    renderSecondary2={() => <TileB onPress={onPress} tile={secondary2} />}
-    renderSupport1={() => <TileG onPress={onPress} tile={support1} />}
-    renderSupport2={() => <TileG onPress={onPress} tile={support2} />}
+    renderSecondary1={() => (
+      <TileB onPress={onPress} tile={secondary1} tileName="secondary1" />
+    )}
+    renderSecondary2={() => (
+      <TileB onPress={onPress} tile={secondary2} tileName="secondary2" />
+    )}
+    renderSupport1={() => (
+      <TileG onPress={onPress} tile={support1} tileName="support1" />
+    )}
+    renderSupport2={() => (
+      <TileG onPress={onPress} tile={support2} tileName="support2" />
+    )}
   />
 );
 

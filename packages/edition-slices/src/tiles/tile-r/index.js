@@ -1,7 +1,13 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { getCrop, TileImage, TileLink, TileSummary } from "../shared";
+import {
+  getCrop,
+  TileImage,
+  TileLink,
+  TileSummary,
+  withTileTracking
+} from "../shared";
 import styles from "./styles";
 
 const TileR = ({ onPress, tile }) => (
@@ -21,4 +27,4 @@ TileR.propTypes = {
   tile: PropTypes.shape({}).isRequired
 };
 
-export default TileR;
+export default withTileTracking(TileR);

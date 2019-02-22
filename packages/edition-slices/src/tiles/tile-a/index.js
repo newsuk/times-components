@@ -1,6 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { getCrop, TileImage, TileLink, TileSummary } from "../shared";
+import {
+  getCrop,
+  TileImage,
+  TileLink,
+  TileSummary,
+  withTileTracking
+} from "../shared";
 import styles from "./styles";
 
 const TileA = ({ onPress, tile }) => (
@@ -23,4 +29,4 @@ TileA.propTypes = {
   tile: PropTypes.shape({}).isRequired
 };
 
-export default TileA;
+export default withTileTracking(TileA);

@@ -44,6 +44,7 @@
     "@times-components/responsive": "0.3.2",
     "@times-components/slice-layout": "0.12.1",
     "@times-components/styleguide": "3.22.2",
+    "@times-components/tracking": "2.4.2",
     "prop-types": "15.6.2"
   },
   "devDependencies": {

@@ -5,8 +5,12 @@ import { ResponsiveSlice } from "../shared";
 
 const SecondaryOneSlice = ({ onPress, slice: { secondary } }) => (
   <ResponsiveSlice
-    renderMedium={() => <TileW onPress={onPress} tile={secondary} />}
-    renderSmall={() => <TileA onPress={onPress} tile={secondary} />}
+    renderMedium={() => (
+      <TileW onPress={onPress} tile={secondary} tileName="secondary" />
+    )}
+    renderSmall={() => (
+      <TileA onPress={onPress} tile={secondary} tileName="secondary" />
+    )}
   />
 );
 

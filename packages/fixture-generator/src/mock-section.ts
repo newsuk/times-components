@@ -11,6 +11,7 @@ import {
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,
   mockLeadTwoNoPicAndTwoSlice,
+  mockPuzzleSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
@@ -33,7 +34,15 @@ function getSlices(): Array<ArticleSlice> {
 }
 
 function getPuzzleSlices(): Array<PuzzleSectionSlice> {
-  return [];
+  return [
+    mockPuzzleSlice(),
+    mockPuzzleSlice(),
+    mockPuzzleSlice(),
+    mockPuzzleSlice(),
+    mockPuzzleSlice(),
+    mockPuzzleSlice(),
+    mockPuzzleSlice()
+  ];
 }
 
 function mockStandardSection(title: string): StandardSection {

@@ -1,46 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one full width slice 1`] = `<TileA />`;
+exports[`1. lead one full width slice 1`] = `
+<TileA
+  tileName="lead"
+/>
+`;
 
 exports[`2. lead one and one slice 1`] = `
 <View>
-  <TileA />
-  <TileB />
+  <TileA
+    tileName="lead"
+  />
+  <TileB
+    tileName="support"
+  />
 </View>
 `;
 
 exports[`3. lead one and four slice 1`] = `
 <View>
-  <TileI />
-  <TileJ />
+  <TileI
+    tileName="lead"
+  />
+  <TileJ
+    tileName="support1"
+  />
   <View />
-  <TileJ />
+  <TileJ
+    tileName="support2"
+  />
   <View />
-  <TileJ />
+  <TileJ
+    tileName="support3"
+  />
   <View />
-  <TileJ />
+  <TileJ
+    tileName="support4"
+  />
 </View>
 `;
 
 exports[`4. lead two no pic and two 1`] = `
 <View>
-  <TileF />
+  <TileF
+    tileName="lead1"
+  />
   <View />
-  <TileB />
+  <TileB
+    tileName="lead2"
+  />
   <View />
-  <TileD />
+  <TileD
+    tileName="support1"
+  />
   <View />
-  <TileE />
+  <TileE
+    tileName="support2"
+  />
 </View>
 `;
 
-exports[`5. secondary one slice 1`] = `<TileA />`;
+exports[`5. secondary one slice 1`] = `
+<TileA
+  tileName="secondary"
+/>
+`;
 
 exports[`6. secondary one and columnist slice 1`] = `
 <View>
-  <TileT />
+  <TileT
+    tileName="secondary"
+  />
   <View />
-  <TileH />
+  <TileH
+    tileName="columnist"
+  />
 </View>
 `;
 
@@ -48,21 +82,29 @@ exports[`7. secondary four slice 1`] = `
 Array [
   <View>
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary1"
+      />
     </View>
     <View />
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary2"
+      />
     </View>
   </View>,
   <View />,
   <View>
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary3"
+      />
     </View>
     <View />
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary4"
+      />
     </View>
   </View>,
 ]
@@ -80,24 +122,34 @@ exports[`8. secondary one and four slice 1`] = `
   <View>
     <View>
       <View>
-        <TileN />
+        <TileN
+          tileName="secondary"
+        />
       </View>
     </View>
     <View />
     <View>
-      <TileO />
+      <TileO
+        tileName="support1"
+      />
     </View>
     <View />
     <View>
-      <TileO />
+      <TileO
+        tileName="support2"
+      />
     </View>
     <View />
     <View>
-      <TileO />
+      <TileO
+        tileName="support3"
+      />
     </View>
     <View />
     <View>
-      <TileO />
+      <TileO
+        tileName="support4"
+      />
     </View>
   </View>
 </View>
@@ -107,33 +159,49 @@ exports[`9. secondary two and two slice 1`] = `
 Array [
   <View>
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary1"
+      />
     </View>
     <View />
     <View>
-      <TileC />
+      <TileC
+        tileName="secondary2"
+      />
     </View>
   </View>,
   <View />,
   <View>
-    <TileG />
+    <TileG
+      tileName="support1"
+    />
   </View>,
   <View />,
   <View>
-    <TileG />
+    <TileG
+      tileName="support2"
+    />
   </View>,
 ]
 `;
 
 exports[`10. secondary two no pic and two slice 1`] = `
 <View>
-  <TileB />
+  <TileB
+    tileName="secondary1"
+  />
   <View />
-  <TileB />
+  <TileB
+    tileName="secondary2"
+  />
   <View />
-  <TileG />
+  <TileG
+    tileName="support1"
+  />
   <View />
-  <TileG />
+  <TileG
+    tileName="support2"
+  />
 </View>
 `;
 
@@ -141,36 +209,52 @@ exports[`11. list two and six no pic slice 1`] = `
 Array [
   <View>
     <View>
-      <TileC />
+      <TileC
+        tileName="lead1"
+      />
     </View>
     <View />
     <View>
-      <TileC />
+      <TileC
+        tileName="lead2"
+      />
     </View>
   </View>,
   <View />,
   <View>
-    <TileL />
+    <TileL
+      tileName="support1"
+    />
     <View />
   </View>,
   <View>
-    <TileL />
+    <TileL
+      tileName="support2"
+    />
     <View />
   </View>,
   <View>
-    <TileL />
+    <TileL
+      tileName="support3"
+    />
     <View />
   </View>,
   <View>
-    <TileL />
+    <TileL
+      tileName="support4"
+    />
     <View />
   </View>,
   <View>
-    <TileL />
+    <TileL
+      tileName="support5"
+    />
     <View />
   </View>,
   <View>
-    <TileL />
+    <TileL
+      tileName="support6"
+    />
   </View>,
 ]
 `;
@@ -193,20 +277,30 @@ exports[`12. leaders slice 1`] = `
     </View>
   </View>
   <View>
-    <TileM />
+    <TileM
+      tileName="leader1"
+    />
     <View />
-    <TileM />
+    <TileM
+      tileName="leader2"
+    />
     <View />
-    <TileM />
+    <TileM
+      tileName="leader3"
+    />
   </View>
 </View>
 `;
 
 exports[`13. comment lead and cartoon slice 1`] = `
 <View>
-  <TileP />
+  <TileP
+    tileName="lead"
+  />
   <View />
-  <TileQ />
+  <TileQ
+    tileName="cartoon"
+  />
 </View>
 `;
 

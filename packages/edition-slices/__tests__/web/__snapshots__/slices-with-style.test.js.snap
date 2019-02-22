@@ -18,7 +18,9 @@ exports[`1. lead one full width slice 1`] = `
 <div
   className="IS1 S1"
 >
-  <TileR />
+  <TileR
+    tileName="lead"
+  />
 </div>
 `;
 
@@ -43,8 +45,12 @@ exports[`2. lead one and one slice 1`] = `
   <div
     className="S1"
   >
-    <TileU />
-    <TileC />
+    <TileU
+      tileName="lead"
+    />
+    <TileC
+      tileName="support"
+    />
   </div>
 </div>
 `;
@@ -80,20 +86,30 @@ exports[`3. lead one and four slice 1`] = `
 <div
   className="S1"
 >
-  <TileI />
-  <TileJ />
+  <TileI
+    tileName="lead"
+  />
+  <TileJ
+    tileName="support1"
+  />
   <div
     className="IS1 S1"
   />
-  <TileJ />
+  <TileJ
+    tileName="support2"
+  />
   <div
     className="IS2 S1"
   />
-  <TileJ />
+  <TileJ
+    tileName="support3"
+  />
   <div
     className="IS3 S1"
   />
-  <TileJ />
+  <TileJ
+    tileName="support4"
+  />
 </div>
 `;
 
@@ -128,19 +144,27 @@ exports[`4. lead two no pic and two 1`] = `
 <div
   className="S1"
 >
-  <TileF />
+  <TileF
+    tileName="lead1"
+  />
   <div
     className="IS1 S1"
   />
-  <TileB />
+  <TileB
+    tileName="lead2"
+  />
   <div
     className="IS2 S1"
   />
-  <TileD />
+  <TileD
+    tileName="support1"
+  />
   <div
     className="IS3 S1"
   />
-  <TileE />
+  <TileE
+    tileName="support2"
+  />
 </div>
 `;
 
@@ -162,7 +186,9 @@ exports[`5. secondary one slice 1`] = `
 <div
   className="IS1 S1"
 >
-  <TileW />
+  <TileW
+    tileName="secondary"
+  />
 </div>
 `;
 
@@ -183,11 +209,15 @@ exports[`6. secondary one and columnist slice 1`] = `
 <div
   className="S1"
 >
-  <TileT />
+  <TileT
+    tileName="secondary"
+  />
   <div
     className="IS1 S1"
   />
-  <TileH />
+  <TileH
+    tileName="columnist"
+  />
 </div>
 `;
 
@@ -294,7 +324,9 @@ exports[`7. secondary four slice 1`] = `
     <div
       className="IS1 S1"
     >
-      <TileC />
+      <TileC
+        tileName="secondary1"
+      />
     </div>
     <div
       className="IS2"
@@ -302,7 +334,9 @@ exports[`7. secondary four slice 1`] = `
     <div
       className="IS3 S1"
     >
-      <TileC />
+      <TileC
+        tileName="secondary2"
+      />
     </div>
   </div>
   <div
@@ -314,7 +348,9 @@ exports[`7. secondary four slice 1`] = `
     <div
       className="IS6 S1"
     >
-      <TileC />
+      <TileC
+        tileName="secondary3"
+      />
     </div>
     <div
       className="IS7"
@@ -322,7 +358,9 @@ exports[`7. secondary four slice 1`] = `
     <div
       className="IS8 S1"
     >
-      <TileC />
+      <TileC
+        tileName="secondary4"
+      />
     </div>
   </div>
 </div>
@@ -431,7 +469,9 @@ exports[`8. secondary one and four slice 1`] = `
       <div
         className="S1"
       >
-        <TileN />
+        <TileN
+          tileName="secondary"
+        />
       </div>
     </div>
     <div
@@ -440,7 +480,9 @@ exports[`8. secondary one and four slice 1`] = `
     <div
       className="S1"
     >
-      <TileO />
+      <TileO
+        tileName="support1"
+      />
     </div>
     <div
       className="IS5 S1"
@@ -448,7 +490,9 @@ exports[`8. secondary one and four slice 1`] = `
     <div
       className="S1"
     >
-      <TileO />
+      <TileO
+        tileName="support2"
+      />
     </div>
     <div
       className="IS6 S1"
@@ -456,7 +500,9 @@ exports[`8. secondary one and four slice 1`] = `
     <div
       className="S1"
     >
-      <TileO />
+      <TileO
+        tileName="support3"
+      />
     </div>
     <div
       className="IS7 S1"
@@ -464,7 +510,9 @@ exports[`8. secondary one and four slice 1`] = `
     <div
       className="S1"
     >
-      <TileO />
+      <TileO
+        tileName="support4"
+      />
     </div>
   </div>
 </div>
@@ -544,7 +592,9 @@ exports[`9. secondary two and two slice 1`] = `
     <div
       className="IS1 S1"
     >
-      <TileV />
+      <TileV
+        tileName="secondary1"
+      />
     </div>
     <div
       className="IS2"
@@ -552,7 +602,9 @@ exports[`9. secondary two and two slice 1`] = `
     <div
       className="IS3 S1"
     >
-      <TileV />
+      <TileV
+        tileName="secondary2"
+      />
     </div>
   </div>
   <div
@@ -561,7 +613,9 @@ exports[`9. secondary two and two slice 1`] = `
   <div
     className="S1"
   >
-    <TileG />
+    <TileG
+      tileName="support1"
+    />
   </div>
   <div
     className="IS6 S1"
@@ -569,7 +623,9 @@ exports[`9. secondary two and two slice 1`] = `
   <div
     className="S1"
   >
-    <TileG />
+    <TileG
+      tileName="support2"
+    />
   </div>
 </div>
 `;
@@ -605,19 +661,27 @@ exports[`10. secondary two no pic and two slice 1`] = `
 <div
   className="S1"
 >
-  <TileB />
+  <TileB
+    tileName="secondary1"
+  />
   <div
     className="IS1 S1"
   />
-  <TileB />
+  <TileB
+    tileName="secondary2"
+  />
   <div
     className="IS2 S1"
   />
-  <TileG />
+  <TileG
+    tileName="support1"
+  />
   <div
     className="IS3 S1"
   />
-  <TileG />
+  <TileG
+    tileName="support2"
+  />
 </div>
 `;
 
@@ -673,7 +737,9 @@ Array [
     <div
       className="IS1 S1"
     >
-      <TileC />
+      <TileC
+        tileName="lead1"
+      />
     </div>
     <div
       className="IS2"
@@ -681,7 +747,9 @@ Array [
     <div
       className="IS3 S1"
     >
-      <TileC />
+      <TileC
+        tileName="lead2"
+      />
     </div>
   </div>,
   <style>
@@ -716,7 +784,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support1"
+    />
     <div
       className="IS1 S1"
     />
@@ -737,7 +807,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support2"
+    />
     <div
       className="IS1 S1"
     />
@@ -758,7 +830,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support3"
+    />
     <div
       className="IS1 S1"
     />
@@ -779,7 +853,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support4"
+    />
     <div
       className="IS1 S1"
     />
@@ -800,7 +876,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support5"
+    />
     <div
       className="IS1 S1"
     />
@@ -814,7 +892,9 @@ Array [
 <div
     className="S1"
   >
-    <TileL />
+    <TileL
+      tileName="support6"
+    />
   </div>,
 ]
 `;
@@ -904,15 +984,21 @@ exports[`12. leaders slice 1`] = `
   <div
     className="IS7 S2"
   >
-    <TileM />
+    <TileM
+      tileName="leader1"
+    />
     <div
       className="IS5 S2"
     />
-    <TileM />
+    <TileM
+      tileName="leader2"
+    />
     <div
       className="IS6 S2"
     />
-    <TileM />
+    <TileM
+      tileName="leader3"
+    />
   </div>
 </div>
 `;
@@ -934,11 +1020,15 @@ exports[`13. comment lead and cartoon slice 1`] = `
 <div
   className="S1"
 >
-  <TileP />
+  <TileP
+    tileName="lead"
+  />
   <div
     className="IS1 S1"
   />
-  <TileQ />
+  <TileQ
+    tileName="cartoon"
+  />
 </div>
 `;
 

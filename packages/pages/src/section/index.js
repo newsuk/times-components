@@ -6,10 +6,15 @@ import Section from "@times-components/section";
 import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};
+const track = () => {};
 const SectionPage = ({ editionId, section, sectionTitle }) => {
   const SectionPageView = withNativeProvider(
     section ? (
-      <Section onPress={onPress} section={JSON.parse(section)} />
+      <Section
+        analyticsStream={track}
+        onPress={onPress}
+        section={JSON.parse(section)}
+      />
     ) : (
       <EditionProvider debounceTimeMs={0} id={editionId}>
         {({ edition, error, isLoading }) => {
@@ -22,7 +27,11 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
           return edition.sections
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
-              <Section onPress={onPress} section={sectionData} />
+              <Section
+                analyticsStream={track}
+                onPress={onPress}
+                section={sectionData}
+              />
             ));
         }}
       </EditionProvider>

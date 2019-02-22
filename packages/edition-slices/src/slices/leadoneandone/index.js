@@ -9,15 +9,23 @@ const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
     renderMedium={editionBreakpoint => (
       <LeadOneAndOneSlice
         editionBreakpoint={editionBreakpoint}
-        renderLead={() => <TileU onPress={onPress} tile={lead} />}
-        renderSupport={() => <TileC onPress={onPress} tile={support} />}
+        renderLead={() => (
+          <TileU onPress={onPress} tile={lead} tileName="lead" />
+        )}
+        renderSupport={() => (
+          <TileC onPress={onPress} tile={support} tileName="support" />
+        )}
       />
     )}
     renderSmall={editionBreakpoint => (
       <LeadOneAndOneSlice
         editionBreakpoint={editionBreakpoint}
-        renderLead={() => <TileA onPress={onPress} tile={lead} />}
-        renderSupport={() => <TileB onPress={onPress} tile={support} />}
+        renderLead={() => (
+          <TileA onPress={onPress} tile={lead} tileName="lead" />
+        )}
+        renderSupport={() => (
+          <TileB onPress={onPress} tile={support} tileName="support" />
+        )}
       />
     )}
   />

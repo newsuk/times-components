@@ -8,10 +8,18 @@ const LeadTwoNoPicAndTwo = ({
   slice: { lead1, lead2, support1, support2 }
 }) => (
   <LeadTwoNoPicAndTwoSlice
-    renderLead1={() => <TileF onPress={onPress} tile={lead1} />}
-    renderLead2={() => <TileB onPress={onPress} tile={lead2} />}
-    renderSupport1={() => <TileD onPress={onPress} tile={support1} />}
-    renderSupport2={() => <TileE onPress={onPress} tile={support2} />}
+    renderLead1={() => (
+      <TileF onPress={onPress} tile={lead1} tileName="lead1" />
+    )}
+    renderLead2={() => (
+      <TileB onPress={onPress} tile={lead2} tileName="lead2" />
+    )}
+    renderSupport1={() => (
+      <TileD onPress={onPress} tile={support1} tileName="support1" />
+    )}
+    renderSupport2={() => (
+      <TileE onPress={onPress} tile={support2} tileName="support2" />
+    )}
   />
 );
 

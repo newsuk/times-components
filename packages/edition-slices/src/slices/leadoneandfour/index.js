@@ -8,11 +8,19 @@ const LeadOneAndFour = ({
   slice: { lead, support1, support2, support3, support4 }
 }) => (
   <LeadOneAndFourSlice
-    renderLead={() => <TileI onPress={onPress} tile={lead} />}
-    renderSupport1={() => <TileJ onPress={onPress} tile={support1} />}
-    renderSupport2={() => <TileJ onPress={onPress} tile={support2} />}
-    renderSupport3={() => <TileJ onPress={onPress} tile={support3} />}
-    renderSupport4={() => <TileJ onPress={onPress} tile={support4} />}
+    renderLead={() => <TileI onPress={onPress} tile={lead} tileName="lead" />}
+    renderSupport1={() => (
+      <TileJ onPress={onPress} tile={support1} tileName="support1" />
+    )}
+    renderSupport2={() => (
+      <TileJ onPress={onPress} tile={support2} tileName="support2" />
+    )}
+    renderSupport3={() => (
+      <TileJ onPress={onPress} tile={support3} tileName="support3" />
+    )}
+    renderSupport4={() => (
+      <TileJ onPress={onPress} tile={support4} tileName="support4" />
+    )}
   />
 );
 
