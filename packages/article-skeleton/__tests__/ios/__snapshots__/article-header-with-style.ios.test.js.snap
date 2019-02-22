@@ -261,7 +261,6 @@ exports[`1. article with header 1`] = `
                   "uri": "http://image.io",
                 }
               }
-              template="mainstandard"
             />
           </View>
         </View>
@@ -342,7 +341,6 @@ exports[`1. article with header 1`] = `
                   "uri": "https://image.io",
                 }
               }
-              template="mainstandard"
             />
           </View>
         </View>

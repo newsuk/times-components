@@ -37,7 +37,7 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const renderers = ({ observed, registerNode, template }) => ({
+const renderers = ({ observed, registerNode }) => ({
   ...coreRenderers,
   ad(key, attributes) {
     return {
@@ -81,7 +81,6 @@ const renderers = ({ observed, registerNode, template }) => ({
                 ratio,
                 uri: url
               }}
-              template={template}
             />
           </MediaWrapper>
         </div>
@@ -212,12 +211,11 @@ const ArticleBody = ({
   contextUrl,
   observed,
   registerNode,
-  section,
-  template
+  section
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ observed, registerNode, template })
+    renderers({ observed, registerNode })
   );
 
 ArticleBody.propTypes = {

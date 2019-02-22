@@ -25,8 +25,7 @@ const ArticleRow = ({
   interactiveConfig,
   onLinkPress,
   onTwitterLinkPress,
-  onVideoPress,
-  template
+  onVideoPress
 }) =>
   renderTree(data, {
     ...coreRenderers,
@@ -56,7 +55,6 @@ const ArticleRow = ({
                 ratio,
                 uri: url
               }}
-              template={template}
             />
           </View>
         )
