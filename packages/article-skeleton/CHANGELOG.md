@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.16...@times-components/article-skeleton@0.12.17) (2019-02-22)
+
+
+### Bug Fixes
+
+* Interactives now display on tablets ([#1737](https://github.com/newsuk/times-components/issues/1737)) ([2053630](https://github.com/newsuk/times-components/commit/2053630))
+
+
+
+
+
 ## [0.12.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.15...@times-components/article-skeleton@0.12.16) (2019-02-21)
 
 **Note:** Version bump only for package @times-components/article-skeleton
