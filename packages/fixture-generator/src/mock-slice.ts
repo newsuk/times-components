@@ -1,6 +1,8 @@
 import {
   ArticleSlice,
   CommentLeadAndCartoonSlice,
+  DailyUniversalRegister,
+  DailyUniversalRegisterItem,
   LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
@@ -19,7 +21,9 @@ import {
 } from "./types";
 import MockArticle from "./mock-article";
 import MockPuzzle from "./mock-puzzle";
+
 import MockTile from "./mock-tile";
+import MockDailyRegister from "./mock-daily-register";
 
 interface LeadOneAndFourSliceWithName extends LeadOneAndFourSlice {
   name: string;
@@ -84,8 +88,21 @@ interface PuzzleWithName extends Puzzle {
   name: string;
 }
 
+function getDailyRegisterItem(): DailyUniversalRegisterItem {
+  const dailyRegisterItem = new MockDailyRegister().get();
+  return {
+    title: dailyRegisterItem.title,
+    byline: dailyRegisterItem.byline,
+    content: dailyRegisterItem.content
+  };
+}
+
 function getTiles(count: number): Array<Tile> {
   return new Array(count).fill(0).map(() => new MockTile().get());
+}
+
+function getDailyRegister(count: number): Array<DailyUniversalRegisterItem> {
+  return new Array(count).fill(0).map(() => getDailyRegisterItem());
 }
 
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
@@ -256,6 +273,17 @@ function mockCommentLeadAndCartoonSlice(): CommentLeadAndCartoonSliceWithName {
   };
 }
 
+function mockDailyRegisterSlice(): DailyUniversalRegister {
+  const dailyRegister = getDailyRegister(4);
+  return <DailyUniversalRegister>{
+    briefing: dailyRegister[0],
+    onThisDay: dailyRegister[1],
+    natureNotes: dailyRegister[2],
+    birthdaysToday: dailyRegister[3],
+    items: dailyRegister
+  };
+}
+
 function mockArticleSlice(count: number): ArticleSlice {
   return { items: getTiles(count) };
 }
@@ -273,6 +301,7 @@ function mockPuzzleSlice(): Puzzle {
 export default mockArticleSlice;
 export {
   mockCommentLeadAndCartoonSlice,
+  mockDailyRegisterSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,

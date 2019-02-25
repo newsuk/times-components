@@ -3,6 +3,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
   mockCommentLeadAndCartoonSlice,
+  mockDailyRegisterSlice,
   mockLeadOneAndFourSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
@@ -21,6 +22,7 @@ import Responsive from "@times-components/responsive";
 import "./mocks";
 import {
   CommentLeadAndCartoonSlice,
+  DailyRegisterLeadFourSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
@@ -37,6 +39,11 @@ import {
 } from "../src/slices";
 
 const slices = [
+  {
+    mock: mockDailyRegisterSlice(),
+    name: "daily universal register slice",
+    Slice: DailyRegisterLeadFourSlice
+  },
   {
     mock: mockLeadOneFullWidthSlice(),
     name: "lead one full width slice",

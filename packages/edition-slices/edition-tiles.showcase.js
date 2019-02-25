@@ -1,6 +1,9 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { mockEditionSlice } from "@times-components/fixture-generator";
+import {
+  mockEditionSlice,
+  mockDailyRegisterSlice
+} from "@times-components/fixture-generator";
 
 import {
   TileA,
@@ -20,6 +23,7 @@ import {
   TileP,
   TileQ,
   TileR,
+  TileS,
   TileT,
   TileU,
   TileV,
@@ -28,6 +32,8 @@ import {
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
+const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
+
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -36,11 +42,11 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const renderTile = Tile => (_, { decorateAction }) => (
+const renderTile = (Tile, mockTile = tile) => (_, { decorateAction }) => (
   <ScrollView>
     <Tile
       onPress={preventDefaultedAction(decorateAction)("onPress")}
-      tile={tile}
+      tile={mockTile}
     />
   </ScrollView>
 );
@@ -119,6 +125,12 @@ const tileStories = [
     Tile: TileR
   },
   {
+    mockTile: dailyRegisterItem,
+    name:
+      "Tile S - 22pt headline (centered), comment article, byline, left align",
+    Tile: TileS
+  },
+  {
     name: "Tile T - Side 16:9 image, 22pt headline, no teaser",
     Tile: TileT
   },
@@ -142,8 +154,8 @@ const tileStories = [
 ];
 
 export default {
-  children: tileStories.map(({ name, Tile }) => ({
-    component: renderTile(Tile),
+  children: tileStories.map(({ name, Tile, mockTile }) => ({
+    component: renderTile(Tile, mockTile),
     name,
     type: "story"
   })),

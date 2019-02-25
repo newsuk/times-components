@@ -621,7 +621,45 @@ exports[`17. tile r 1`] = `
 </Link>
 `;
 
-exports[`18. tile t 1`] = `
+exports[`18. tile s 1`] = `
+<View>
+  <View>
+    <Text>
+      Nature notes
+    </Text>
+  </View>
+  <Text>
+    <Text>
+      <Text>
+        Rick Astley
+      </Text>
+      , singer-songwriter, 
+      <Text>
+        Never Gonna Give You Up 
+      </Text>
+      (1987), 53; 
+      <Text>
+        Mike Batt
+      </Text>
+      , composer, songwriter, 
+      <Text>
+        Wombling Free 
+      </Text>
+      (1978), 
+      <Text>
+        Bright Eyes 
+      </Text>
+    </Text>
+  </Text>
+  <Text>
+    <Text>
+      Libby Purves
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`19. tile t 1`] = `
 <Link
   url="/article/123"
 >
@@ -658,7 +696,7 @@ exports[`18. tile t 1`] = `
 </Link>
 `;
 
-exports[`19. tile u 1`] = `
+exports[`20. tile u 1`] = `
 <Link
   url="/article/123"
 >
@@ -695,7 +733,7 @@ exports[`19. tile u 1`] = `
 </Link>
 `;
 
-exports[`20. tile v 1`] = `
+exports[`21. tile v 1`] = `
 <Link
   url="/article/123"
 >
@@ -732,7 +770,7 @@ exports[`20. tile v 1`] = `
 </Link>
 `;
 
-exports[`21. tile w 1`] = `
+exports[`22. tile w 1`] = `
 <Link
   url="/article/123"
 >

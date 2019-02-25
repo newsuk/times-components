@@ -1,5 +1,6 @@
 import {
   CommentLeadAndCartoonSlice,
+  DailyRegisterLeadFourSlice,
   LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -17,6 +18,7 @@ import {
 
 const sliceMap = {
   CommentLeadAndCartoonSlice,
+  DailyUniversalRegister: DailyRegisterLeadFourSlice,
   LeadersSlice,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
