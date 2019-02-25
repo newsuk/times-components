@@ -481,7 +481,7 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
 exports[`8. primary image with caption and credits with center caption override 1`] = `
 .c0 {
   display: block;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -549,7 +549,7 @@ Array [
 exports[`9. secondary image with caption and credits with center caption override 1`] = `
 .c0 {
   display: block;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
