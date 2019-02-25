@@ -1632,3 +1632,96 @@ exports[`21. tile w 1`] = `
   </View>
 </Link>
 `;
+
+exports[`22. tile x 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 45,
+            "fontWeight": "400",
+            "lineHeight": 45,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 25,
+            "lineHeight": 25,
+            "paddingBottom": 10,
+          }
+        }
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "flexWrap": "wrap",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take control of the Brexit process themselves. To do this a
+          ...
+        </Text>
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;

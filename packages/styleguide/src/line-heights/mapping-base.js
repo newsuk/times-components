@@ -8,7 +8,8 @@ const mapping = {
   },
   bodyRegular: {
     infoSubText: 23,
-    infoTitle: 30
+    infoTitle: 30,
+    pageComponentHeadline: 25
   },
   bodyRegularSmallCaps: {
     cardMetaMobile: 12,

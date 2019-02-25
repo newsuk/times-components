@@ -775,3 +775,47 @@ exports[`21. tile w 1`] = `
   </View>
 </Link>
 `;
+
+exports[`22. tile x 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="4"
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </Text>
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take control of the Brexit process themselves. To do this a
+          ...
+        </Text>
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
