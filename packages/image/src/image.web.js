@@ -11,8 +11,9 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      highResIsLoaded: props.lowResSize && props.highResSize,
+      highResIsLoaded: false,
       highResIsVisible: false,
+      imageIsLoaded: false,
       lowResIsLoaded: !props.fadeImageIn
     };
 
@@ -29,12 +30,14 @@ class TimesImage extends Component {
 
   handleHighResOnLoad() {
     this.setState({
-      highResIsLoaded: true
+      highResIsLoaded: true,
+      imageIsLoaded: true
     });
   }
 
   handleLowResOnLoad() {
     this.setState({
+      imageIsLoaded: true,
       lowResIsLoaded: true
     });
   }
@@ -45,7 +48,7 @@ class TimesImage extends Component {
       return (
         <StyledImage
           alt=""
-          isLoaded={lowResSize && highResSize ? highResIsLoaded : true}
+          isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
           src={appendSize(url, "resize", highResSize)}
@@ -76,6 +79,7 @@ class TimesImage extends Component {
 
   render() {
     const { aspectRatio, highResSize, lowResSize, style, uri } = this.props;
+    const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
 
     const styles = StyleSheet.create({
@@ -100,7 +104,7 @@ class TimesImage extends Component {
         <div style={StyleSheet.flatten(styles.wrapper)}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          <Placeholder style={styles.placeholder} />
+          {imageIsLoaded ? null : <Placeholder style={styles.placeholder} />}
         </div>
       </View>
     );

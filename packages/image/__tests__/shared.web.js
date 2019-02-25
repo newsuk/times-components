@@ -12,6 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import Image from "../src";
+import Placeholder from "../src/placeholder";
 import "./mocks";
 import shared from "./shared.base";
 
@@ -140,6 +141,44 @@ export default () => {
         );
 
         expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "high res image should hide placeholder after loading",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image aspectRatio={3 / 2} highResSize={900} uri="https://image.io" />
+        );
+
+        let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(1);
+
+        const highResImage = testRenderer.root.findByType("img");
+        highResImage.props.onLoad();
+
+        numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(0);
+      }
+    },
+    {
+      name: "low res image should hide placeholder after loading",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
+        );
+
+        let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(1);
+
+        const lowResImage = testRenderer.root.findByType("img");
+        lowResImage.props.onLoad();
+
+        numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
+          .length;
+        expect(numberOfPlaceholders).toBe(0);
       }
     }
   ];
