@@ -21,3 +21,4 @@ export { default as TileU } from "./tile-u";
 export { default as TileV } from "./tile-v";
 export { default as TileW } from "./tile-w";
 export { default as TileX } from "./tile-x";
+export { default as TileY } from "./tile-y";

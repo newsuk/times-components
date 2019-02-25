@@ -28,7 +28,8 @@ import {
   TileU,
   TileV,
   TileW,
-  TileX
+  TileX,
+  TileY
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -148,8 +149,13 @@ const tileStories = [
     Tile: TileW
   },
   {
+<<<<<<< HEAD
     name: "Tile X - No Image, 45pt Headline, Strapline, Teaser",
     Tile: TileX
+=======
+    name: "Tile Y - 35pt Headline, 225 teaser",
+    Tile: TileY
+>>>>>>> feat: Tile Y for Lead 2 no pic and 2
   }
 ];
 
