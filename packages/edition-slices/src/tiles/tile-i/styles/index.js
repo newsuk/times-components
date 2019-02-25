@@ -5,7 +5,7 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: 35,
     lineHeight: 35,
-    marginBottom: spacing(1),
+    marginBottom: spacing(2),
     textAlign: "center"
   },
   imageContainer: {
@@ -14,9 +14,9 @@ const styles = {
   summaryContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
-    paddingBottom: spacing(5),
+    paddingBottom: spacing(3),
     paddingHorizontal: spacing(8),
-    paddingTop: spacing(3)
+    paddingTop: spacing(4)
   }
 };
 

@@ -959,7 +959,7 @@ exports[`9. tile i 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .S4 {
@@ -986,8 +986,8 @@ exports[`9. tile i 1`] = `
   background-color: rgba(240,240,240,1.00);
   padding-right: 40px;
   padding-left: 40px;
-  padding-bottom: 25px;
-  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
@@ -1077,10 +1077,9 @@ exports[`10. tile j 1`] = `
 }
 
 .IS4 {
-  padding-top: 5px;
   padding-right: 10px;
-  padding-bottom: 5px;
   padding-left: 10px;
+  padding-bottom: 5px;
   width: 60%;
 }
 
@@ -2047,7 +2046,6 @@ exports[`20. tile u 1`] = `
 }
 
 .IS3 {
-  padding-top: 5px;
   padding-bottom: 5px;
   width: 33.33%;
 }
@@ -2259,14 +2257,13 @@ exports[`22. tile w 1`] = `
 }
 
 .IS2 {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 35px;
+  line-height: 35px;
 }
 
 .IS3 {
-  padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 10px;
+  padding-right: 20px;
   width: 33.33%;
 }
 
@@ -2276,8 +2273,8 @@ exports[`22. tile w 1`] = `
 
 .IS5 {
   padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 </style>
 
