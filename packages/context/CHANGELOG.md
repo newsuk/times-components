@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/context@0.6.20...@times-components/context@0.7.0) (2019-02-25)
+
+
+### Features
+
+* primary image captions center aligned on indepth articles ([#1740](https://github.com/newsuk/times-components/issues/1740)) ([226d20a](https://github.com/newsuk/times-components/commit/226d20a))
+
+
+
+
+
 ## [0.6.20](https://github.com/newsuk/times-components/compare/@times-components/context@0.6.19...@times-components/context@0.6.20) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/context

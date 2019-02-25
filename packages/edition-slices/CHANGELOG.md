@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.23.1...@times-components/edition-slices@0.23.2) (2019-02-25)
+
+
+### Bug Fixes
+
+* design review changes ([#1735](https://github.com/newsuk/times-components/issues/1735)) ([b756901](https://github.com/newsuk/times-components/commit/b756901))
+* Missing images working in storybook ([#1745](https://github.com/newsuk/times-components/issues/1745)) ([08e9b86](https://github.com/newsuk/times-components/commit/08e9b86))
+
+
+
+
+
 ## [0.23.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.23.0...@times-components/edition-slices@0.23.1) (2019-02-22)
 
 **Note:** Version bump only for package @times-components/edition-slices

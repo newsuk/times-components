@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.7.10...@times-components/article-image@4.8.0) (2019-02-25)
+
+
+### Bug Fixes
+
+* web - image component hides placeholder and loads images smoothly ([#1736](https://github.com/newsuk/times-components/issues/1736)) ([e4210e3](https://github.com/newsuk/times-components/commit/e4210e3))
+
+
+### Features
+
+* primary image captions center aligned on indepth articles ([#1740](https://github.com/newsuk/times-components/issues/1740)) ([226d20a](https://github.com/newsuk/times-components/commit/226d20a))
+
+
+
+
+
 ## [4.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.7.9...@times-components/article-image@4.7.10) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/article-image

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.34](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.4.33...@times-components/article-list@6.4.34) (2019-02-25)
+
+
+### Bug Fixes
+
+* web - image component hides placeholder and loads images smoothly ([#1736](https://github.com/newsuk/times-components/issues/1736)) ([e4210e3](https://github.com/newsuk/times-components/commit/e4210e3))
+
+
+
+
+
 ## [6.4.33](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.4.32...@times-components/article-list@6.4.33) (2019-02-22)
 
 **Note:** Version bump only for package @times-components/article-list

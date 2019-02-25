@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.32](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.31...@times-components/card@4.4.32) (2019-02-25)
+
+
+### Bug Fixes
+
+* web - image component hides placeholder and loads images smoothly ([#1736](https://github.com/newsuk/times-components/issues/1736)) ([e4210e3](https://github.com/newsuk/times-components/commit/e4210e3))
+
+
+
+
+
 ## [4.4.31](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.30...@times-components/card@4.4.31) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/card

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.15.0...@times-components/fixture-generator@0.15.1) (2019-02-25)
+
+
+### Bug Fixes
+
+* design review changes ([#1735](https://github.com/newsuk/times-components/issues/1735)) ([b756901](https://github.com/newsuk/times-components/commit/b756901))
+* Missing images working in storybook ([#1745](https://github.com/newsuk/times-components/issues/1745)) ([08e9b86](https://github.com/newsuk/times-components/commit/08e9b86))
+
+
+
+
+
 # [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.14.0...@times-components/fixture-generator@0.15.0) (2019-02-22)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.23.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.22.2...@times-components/styleguide@3.23.0) (2019-02-25)
+
+
+### Features
+
+* primary image captions center aligned on indepth articles ([#1740](https://github.com/newsuk/times-components/issues/1740)) ([226d20a](https://github.com/newsuk/times-components/commit/226d20a))
+
+
+
+
+
 ## [3.22.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.22.1...@times-components/styleguide@3.22.2) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/styleguide
