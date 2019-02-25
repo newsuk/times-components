@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.5.2...@times-components/markup-forest@1.6.0) (2019-02-25)
+
+
+### Features
+
+* Tile X required for Lead 2 No Pic and 2 ([#1746](https://github.com/newsuk/times-components/issues/1746)) ([66be08f](https://github.com/newsuk/times-components/commit/66be08f))
+
+
+
+
+
 ## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.5.1...@times-components/markup-forest@1.5.2) (2019-02-20)
 
 

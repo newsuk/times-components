@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/schema@0.2.11...@times-components/schema@0.3.0) (2019-02-25)
+
+
+### Features
+
+* Tile X required for Lead 2 No Pic and 2 ([#1746](https://github.com/newsuk/times-components/issues/1746)) ([66be08f](https://github.com/newsuk/times-components/commit/66be08f))
+
+
+
+
+
 ## [0.2.11](https://github.com/newsuk/times-components/compare/@times-components/schema@0.2.10...@times-components/schema@0.2.11) (2019-02-20)
 
 **Note:** Version bump only for package @times-components/schema

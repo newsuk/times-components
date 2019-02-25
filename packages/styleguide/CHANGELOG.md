@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.24.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.23.0...@times-components/styleguide@3.24.0) (2019-02-25)
+
+
+### Features
+
+* Tile X required for Lead 2 No Pic and 2 ([#1746](https://github.com/newsuk/times-components/issues/1746)) ([66be08f](https://github.com/newsuk/times-components/commit/66be08f))
+
+
+
+
+
 # [3.23.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.22.2...@times-components/styleguide@3.23.0) (2019-02-25)
 
 
