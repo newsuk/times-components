@@ -23,9 +23,8 @@ const TileN = ({ onPress, tile }) => (
         flagColour={styles.flagColour}
         headlineStyle={styles.headline}
         labelColour={colours.functional.greyLabel}
+        strapline={tile.strapline}
         style={styles.summaryContainer}
-        summary={tile.article.summary125}
-        summaryStyle={styles.summary}
         tile={tile}
       />
     </View>

@@ -50,7 +50,7 @@ const tileStories = [
     Tile: TileA
   },
   {
-    name: "Tile B - No image, 22pt headline, with teaser",
+    name: "Tile B - No image, 25pt headline, with teaser",
     Tile: TileB
   },
   {

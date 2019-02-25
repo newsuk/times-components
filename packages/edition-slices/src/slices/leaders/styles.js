@@ -9,7 +9,7 @@ const styles = {
     color: colours.section.comment,
     fontFamily: fonts.bodyRegular,
     fontSize: 16,
-    lineHeight: 15
+    lineHeight: 18
   },
   headingContainer: {
     paddingBottom: spacing(1),

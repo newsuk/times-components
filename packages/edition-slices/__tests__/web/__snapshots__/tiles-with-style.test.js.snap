@@ -107,7 +107,6 @@ exports[`2. tile b 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -143,7 +142,8 @@ exports[`2. tile b 1`] = `
 }
 
 .IS2 {
-  line-height: 22px;
+  font-size: 25px;
+  line-height: 25px;
 }
 
 .IS3 {
@@ -340,10 +340,9 @@ exports[`4. tile d 1`] = `
 }
 
 .IS4 {
-  padding-top: 5px;
   padding-right: 10px;
-  padding-bottom: 5px;
   padding-left: 10px;
+  padding-bottom: 5px;
   width: 55%;
 }
 
@@ -448,10 +447,9 @@ exports[`5. tile e 1`] = `
 }
 
 .IS4 {
-  padding-top: 5px;
   padding-right: 10px;
-  padding-bottom: 5px;
   padding-left: 10px;
+  padding-bottom: 5px;
   width: 55%;
 }
 
@@ -619,7 +617,7 @@ exports[`6. tile f 1`] = `
         className="S4"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div
         className="S6"
@@ -1067,7 +1065,7 @@ exports[`10. tile j 1`] = `
 }
 
 .IS1 {
-  width: 33.33%;
+  width: 40%;
 }
 
 .IS2 {
@@ -1083,13 +1081,13 @@ exports[`10. tile j 1`] = `
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  width: 66.66%;
+  width: 60%;
 }
 
 .IS5 {
-  padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 </style>
 
@@ -1260,16 +1258,11 @@ exports[`12. tile m 1`] = `
   font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
-
-.IS3 {
-  padding-right: 40px;
-  padding-left: 40px;
-}
 </style>
 
 <Link>
   <div
-    className="IS3 S4"
+    className="S4"
   >
     <div
       className="S4"
@@ -1286,7 +1279,7 @@ exports[`12. tile m 1`] = `
         className="IS2 S2"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div
         className="S3"
@@ -1320,27 +1313,15 @@ exports[`13. tile n 1`] = `
 }
 
 .S4 {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
+  color: rgba(105,105,105,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 19px;
   font-weight: inherit;
-  line-height: inherit;
+  line-height: 21px;
   margin-bottom: 0px;
 }
 
 .S5 {
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -1358,17 +1339,12 @@ exports[`13. tile n 1`] = `
 }
 
 .IS4 {
-  color: rgba(204,204,204,1.00);
-}
-
-.IS5 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 5px;
   width: 50%;
 }
 
-.IS6 {
+.IS5 {
   background-color: rgba(39,45,52,1.00);
   padding-top: 10px;
   padding-right: 10px;
@@ -1380,7 +1356,7 @@ exports[`13. tile n 1`] = `
   url="/article/123"
 >
   <div
-    className="IS6 S1"
+    className="IS5 S1"
   >
     <div
       className="IS1 S1"
@@ -1391,7 +1367,7 @@ exports[`13. tile n 1`] = `
       />
     </div>
     <div
-      className="IS5 S1"
+      className="IS4 S1"
     >
       <div
         className="S1"
@@ -1409,19 +1385,15 @@ exports[`13. tile n 1`] = `
       >
         Venezuela shows how Corbyn’s socialism works
       </h3>
-      <div
-        className="IS4 S5"
+      <h4
+        aria-level="4"
+        className="S4"
+        role="heading"
       >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </h4>
       <div
-        className="S6"
+        className="S5"
       >
         <ArticleFlags
           color="#CCC"
@@ -1668,7 +1640,7 @@ exports[`15. tile p 1`] = `
         className="IS4 S4"
         role="heading"
       >
-        Labour’s admiration for a regime that has squandered its resources and left its people in penury should be a warning to all
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div
         className="S5"

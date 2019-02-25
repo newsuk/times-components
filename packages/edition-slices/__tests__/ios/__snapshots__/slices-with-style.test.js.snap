@@ -568,7 +568,7 @@ exports[`12. leaders slice 1`] = `
             "color": "#850029",
             "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 16,
-            "lineHeight": 15,
+            "lineHeight": 18,
             "textAlign": "center",
           }
         }
