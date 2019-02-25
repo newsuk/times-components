@@ -7,7 +7,7 @@ const Logo = ({ imageSrc, style }) => (
 );
 
 Logo.propTypes = {
-  imageSrc: PropTypes.number.isRequired,
+  imageSrc: PropTypes.shape({}).isRequired,
   style: PropTypes.shape({}).isRequired
 };
 

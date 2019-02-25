@@ -6,7 +6,7 @@ exports[`1. daily universal register slice 1`] = `
     resizeMode="contain"
     source={
       Object {
-        "testUri": "../../../packages/edition-slices/assets/daily-register-logo.png",
+        "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
       }
     }
   />
