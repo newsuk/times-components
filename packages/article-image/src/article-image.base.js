@@ -17,7 +17,7 @@ const captionStyle = {
   }
 };
 
-function getCaptionComponent(display, { imageCaptionAlignment }) {
+function getCaptionComponent(display, { imageCaptionAlignment = {} }) {
   if (display === "primary") {
     return imageCaptionAlignment.primary === "center"
       ? InsetCenteredCaption
