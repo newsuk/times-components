@@ -5,7 +5,7 @@ import { ItemRowSeparator } from "@times-components/slice-layout";
 import { TileS } from "../../tiles";
 import leaves from "../../../assets/leaves.png";
 import cake from "../../../assets/cake.png";
-import registerLogo from "../../../assets/daily-register-logo.png";
+import registerLogo from "../../../assets/daily-universal-register.png";
 import styles from "./styles";
 import Logo from "./logo";
 
