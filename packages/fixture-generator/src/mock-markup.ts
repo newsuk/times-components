@@ -116,6 +116,20 @@ const markupTypes: Markup = {
         children: []
       }
     ]
+  },
+  summary300: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye."
+        },
+        children: []
+      }
+    ]
   }
 };
 

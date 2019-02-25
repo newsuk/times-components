@@ -633,6 +633,7 @@ export default gql`
     section
     shortHeadline
     summary125: summary(maxCharCount: 125)
+    summary300: summary(maxCharCount: 300)
     url
   }
 
