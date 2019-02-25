@@ -23,7 +23,7 @@ const TileN = ({ onPress, tile }) => (
         flagColour={styles.flagColour}
         headlineStyle={styles.headline}
         labelColour={colours.functional.greyLabel}
-        strapline={tile.article.strapline}
+        strapline={tile.strapline}
         style={styles.summaryContainer}
         tile={tile}
       />

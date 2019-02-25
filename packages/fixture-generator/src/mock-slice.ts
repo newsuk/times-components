@@ -93,7 +93,6 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
   return <LeadOneAndFourSliceWithName>{
     name: "LeadOneAndFourSlice",
     lead: tiles[0],
-    items: tiles,
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],
@@ -167,7 +166,7 @@ function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
   const tiles = getTiles(5);
   const secondaryTile = {
     ...tiles[0],
-    article: { ...tiles[0].article, strapline: "Readers share their top tips" }
+    strapline: "Readers share their top tips"
   };
   return <SecondaryOneAndFourSliceWithName>{
     name: "SecondaryOneAndFourSlice",
