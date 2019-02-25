@@ -1,10 +1,10 @@
 import React from "react";
-import Caption, { propTypes, defaultProps } from "@times-components/caption";
+import { propTypes, defaultProps } from "./inset-caption-prop-types";
 import { InsetCaptionStyle } from "./styles/responsive";
 
-const InsetCaptionWeb = ({ caption, credits }) => (
+const InsetCaptionWeb = ({ text, credits, CaptionComponent }) => (
   <InsetCaptionStyle>
-    <Caption credits={credits} text={caption} />
+    <CaptionComponent credits={credits} text={text} />
   </InsetCaptionStyle>
 );
 

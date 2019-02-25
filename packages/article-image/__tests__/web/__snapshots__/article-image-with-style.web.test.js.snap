@@ -477,3 +477,118 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
   </responsiveweb__InsetCaptionContainerStyle>
 </figure>
 `;
+
+exports[`8. primary image with caption and credits with center caption override 1`] = `
+.c0 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 10px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+  }
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div>
+    <InsetCenteredCaption
+      credits="Some credits"
+      text="Some caption"
+    >
+      <responsiveweb__InsetCaptionStyle>
+        <div
+          className="c1"
+        >
+          <CentredCaption
+            credits="Some credits"
+            text="Some caption"
+          >
+            <div>
+              <div>
+                <div>
+                  Some caption
+                </div>
+                <div>
+                  SOME CREDITS
+                </div>
+              </div>
+            </div>
+          </CentredCaption>
+        </div>
+      </responsiveweb__InsetCaptionStyle>
+    </InsetCenteredCaption>
+  </div>,
+]
+`;
+
+exports[`9. secondary image with caption and credits with center caption override 1`] = `
+.c0 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.5}
+      caption={
+        <Caption
+          credits="Other credits"
+          text="Another caption"
+        />
+      }
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div>
+    <CentredCaption
+      credits="Other credits"
+      text="Another caption"
+    >
+      <div>
+        <div>
+          <div>
+            Another caption
+          </div>
+          <div>
+            OTHER CREDITS
+          </div>
+        </div>
+      </div>
+    </CentredCaption>
+  </div>,
+]
+`;

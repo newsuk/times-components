@@ -1,5 +1,6 @@
 import React from "react";
 import { setIsTablet } from "@times-components/test-utils/dimensions";
+import Context from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
@@ -126,6 +127,46 @@ export default makeTest => {
               captionOptions={portraitInlineImage.captionOptions}
               imageOptions={portraitInlineImage.imageOptions}
             />
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name:
+        "primary image with caption and credits with center caption override",
+      test: () => {
+        expect(
+          makeTest(
+            <Context.Provider
+              value={{
+                theme: { imageCaptionAlignment: { primary: "center" } }
+              }}
+            >
+              <ArticleImage
+                captionOptions={primaryImage.captionOptions}
+                imageOptions={primaryImage.imageOptions}
+              />
+            </Context.Provider>
+          )
+        ).toMatchSnapshot();
+      }
+    },
+    {
+      name:
+        "secondary image with caption and credits with center caption override",
+      test: () => {
+        expect(
+          makeTest(
+            <Context.Provider
+              value={{
+                theme: { imageCaptionAlignment: { secondary: "center" } }
+              }}
+            >
+              <ArticleImage
+                captionOptions={secondaryImage.captionOptions}
+                imageOptions={secondaryImage.imageOptions}
+              />
+            </Context.Provider>
           )
         ).toMatchSnapshot();
       }

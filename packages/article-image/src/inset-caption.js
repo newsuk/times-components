@@ -1,7 +1,7 @@
 import React from "react";
-import Caption from "@times-components/caption";
 import { ResponsiveContext } from "@times-components/responsive";
 import { spacing } from "@times-components/styleguide";
+import { propTypes, defaultProps } from "./inset-caption-prop-types";
 
 const captionStyle = {
   container: {
@@ -9,23 +9,19 @@ const captionStyle = {
   }
 };
 
-const CaptionComponentPrimaryNative = ({ caption, credits }) => (
+const CaptionComponentPrimaryNative = ({ text, credits, CaptionComponent }) => (
   <ResponsiveContext>
     {({ isTablet }) => (
-      <Caption
+      <CaptionComponent
         credits={credits}
-        style={!isTablet && captionStyle}
-        text={caption}
+        style={isTablet ? {} : captionStyle}
+        text={text}
       />
     )}
   </ResponsiveContext>
 );
 
-CaptionComponentPrimaryNative.propTypes = {
-  ...Caption.propTypes
-};
-CaptionComponentPrimaryNative.defaultProps = {
-  ...Caption.defaultProps
-};
+CaptionComponentPrimaryNative.propTypes = propTypes;
+CaptionComponentPrimaryNative.defaultProps = defaultProps;
 
 export default CaptionComponentPrimaryNative;
