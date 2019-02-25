@@ -11,7 +11,7 @@ const TileX = ({ onPress, tile }) => (
         headlineStyle={styles.headline}
         strapline={tile.strapline}
         straplineStyle={styles.strapline}
-        summary={tile.article.summary225}
+        summary={tile.article.summary300}
         tile={tile}
       />
     </View>
