@@ -1,4 +1,4 @@
-import { fonts, spacing } from "@times-components/styleguide";
+import { fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -7,9 +7,10 @@ const styles = {
     paddingVertical: spacing(2)
   },
   headline: {
-    fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35
+    ...fontFactory({
+      font: "headline",
+      fontSize: "tileLeadHeadline"
+    })
   },
   imageContainer: {
     width: "66.66%"
