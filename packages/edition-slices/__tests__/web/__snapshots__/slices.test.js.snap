@@ -73,11 +73,11 @@ exports[`4. lead one and four slice 1`] = `
 
 exports[`5. lead two no pic and two 1`] = `
 <div>
-  <TileF
+  <TileX
     tileName="lead1"
   />
   <div />
-  <TileB
+  <TileY
     tileName="lead2"
   />
   <div />
@@ -85,7 +85,7 @@ exports[`5. lead two no pic and two 1`] = `
     tileName="support1"
   />
   <div />
-  <TileE
+  <TileZ
     tileName="support2"
   />
 </div>

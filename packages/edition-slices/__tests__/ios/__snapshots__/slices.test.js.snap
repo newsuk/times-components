@@ -80,23 +80,23 @@ exports[`4. lead one and four slice 1`] = `
 `;
 
 exports[`5. lead two no pic and two 1`] = `
-<View>
+Array [
   <TileF
     tileName="lead1"
-  />
-  <View />
+  />,
+  <View />,
   <TileB
     tileName="lead2"
-  />
-  <View />
+  />,
+  <View />,
   <TileD
     tileName="support1"
-  />
-  <View />
+  />,
+  <View />,
   <TileE
     tileName="support2"
-  />
-</View>
+  />,
+]
 `;
 
 exports[`6. secondary one slice 1`] = `

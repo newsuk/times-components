@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. two lead elements, two support elements 1`] = `
-<View>
+Array [
   <Text>
     lead-1
-  </Text>
+  </Text>,
   <View
     style={
       Object {
@@ -14,10 +14,10 @@ exports[`1. two lead elements, two support elements 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <Text>
     lead-2
-  </Text>
+  </Text>,
   <View
     style={
       Object {
@@ -27,10 +27,10 @@ exports[`1. two lead elements, two support elements 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <Text>
     support-1
-  </Text>
+  </Text>,
   <View
     style={
       Object {
@@ -40,9 +40,79 @@ exports[`1. two lead elements, two support elements 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
+  />,
   <Text>
     support-2
-  </Text>
+  </Text>,
+]
+`;
+
+exports[`2. tablet - two lead elements, two support elements 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <Text>
+      lead-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      lead-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      support-2
+    </Text>
+  </View>
 </View>
 `;
