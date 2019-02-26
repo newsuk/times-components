@@ -1,4 +1,5 @@
 import { spacing } from "@times-components/styleguide";
+
 const styles = {
   container: {
     flex: 1,
