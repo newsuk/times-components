@@ -895,3 +895,40 @@ exports[`24. tile y 1`] = `
   </div>
 </Link>
 `;
+
+exports[`25. tile z 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Venezuela shows how Corbyn’s socialism works
+      </h3>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <Image
+        aspectRatio={0.8}
+        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+      />
+    </div>
+  </div>
+</Link>
+`;
