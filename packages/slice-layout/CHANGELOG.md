@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.13.0...@times-components/slice-layout@0.14.0) (2019-02-26)
+
+
+### Features
+
+* Tile Z for Lead no pic and 2 ([#1749](https://github.com/newsuk/times-components/issues/1749)) ([a1db5c8](https://github.com/newsuk/times-components/commit/a1db5c8))
+
+
+
+
+
 # [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.12.2...@times-components/slice-layout@0.13.0) (2019-02-25)
 
 
