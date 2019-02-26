@@ -129,6 +129,7 @@ exports[`2. tablet - four child elements 1`] = `
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
+        "paddingBottom": "5px",
       }
     }
   >
@@ -196,6 +197,7 @@ exports[`2. tablet - four child elements 1`] = `
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
+        "paddingBottom": "5px",
       }
     }
   >
