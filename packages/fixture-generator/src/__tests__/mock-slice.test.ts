@@ -1,4 +1,4 @@
-import mockArticleSlice, { mockCommentLeadAndCartoonSlice, mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryOneAndColumnistSlice, mockSecondaryOneAndFourSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice, mockPuzzleSlice } from "../mock-slice";
+import mockArticleSlice, { mockCommentLeadAndCartoonSlice, mockDailyRegisterSlice, mockLeadOneAndFourSlice, mockLeadOneAndTwoSlice, mockLeadOneFullWidthSlice, mockLeadOneAndOneSlice, mockLeadersSlice, mockSecondaryOneSlice, mockSecondaryOneAndColumnistSlice, mockSecondaryOneAndFourSlice, mockSecondaryTwoNoPicAndTwoSlice, mockListTwoAndSixNoPicSlice, mockSecondaryTwoAndTwoSlice, mockPuzzleSlice } from "../mock-slice";
 
 describe("The Mock EditionSlice", () => {
   it("returns the minimum articleSlice requirements", () => {
@@ -67,6 +67,15 @@ describe("The Mock EditionSlice", () => {
     expect(articleSlice.items.length).toBe(2);
     expect(articleSlice.lead).toBeDefined();
     expect(articleSlice.cartoon).toBeDefined();
+  });
+
+  it("returns DailyRegisterSlice", () => {
+    const dailyRegisterSlice = mockDailyRegisterSlice();
+    expect(dailyRegisterSlice.items.length).toBe(4);
+    expect(dailyRegisterSlice.onThisDay).toBeDefined();
+    expect(dailyRegisterSlice.briefing).toBeDefined();
+    expect(dailyRegisterSlice.natureNotes).toBeDefined();
+    expect(dailyRegisterSlice.birthdaysToday).toBeDefined();
   });
 
   it("returns SecondaryTwoAndTwoSlice", () => {
