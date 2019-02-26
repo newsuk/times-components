@@ -90,6 +90,7 @@ exports[`2. tablet - four child elements 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
+        "paddingBottom": 5,
       }
     }
   >
@@ -141,6 +142,7 @@ exports[`2. tablet - four child elements 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
+        "paddingBottom": 5,
       }
     }
   >

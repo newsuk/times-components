@@ -53,6 +53,8 @@ exports[`2. tablet - lead one and one 1`] = `
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,

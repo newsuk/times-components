@@ -83,7 +83,7 @@ const sliceStories = [
   },
   {
     mock: mockSecondaryOneSlice(),
-    name: "Secondary One (A)",
+    name: "Secondary One (Mobile:A, Tablet: W)",
     Slice: SecondaryOneSlice
   },
   {

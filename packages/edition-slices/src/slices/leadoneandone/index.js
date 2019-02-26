@@ -8,7 +8,7 @@ const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
   <ResponsiveSlice
     renderMedium={editionBreakpoint => (
       <LeadOneAndOneSlice
-        editionBreakpoint={editionBreakpoint}
+        breakpoint={editionBreakpoint}
         renderLead={() => (
           <TileU onPress={onPress} tile={lead} tileName="lead" />
         )}
@@ -19,7 +19,7 @@ const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
     )}
     renderSmall={editionBreakpoint => (
       <LeadOneAndOneSlice
-        editionBreakpoint={editionBreakpoint}
+        breakpoint={editionBreakpoint}
         renderLead={() => (
           <TileA onPress={onPress} tile={lead} tileName="lead" />
         )}

@@ -17,6 +17,7 @@ exports[`2. tablet - lead one and one 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
+      "marginHorizontal": 10,
     }
   }
 >

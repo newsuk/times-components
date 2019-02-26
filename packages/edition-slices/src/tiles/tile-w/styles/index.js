@@ -1,21 +1,23 @@
-import { fonts, spacing } from "@times-components/styleguide";
+import { fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
     flexDirection: "row",
-    padding: spacing(2)
+    paddingHorizontal: spacing(4),
+    paddingVertical: spacing(2)
   },
   headline: {
-    fontFamily: fonts.headline,
-    fontSize: 25,
-    lineHeight: 25
+    ...fontFactory({
+      font: "headline",
+      fontSize: "tileLeadHeadline"
+    })
   },
   imageContainer: {
     width: "66.66%"
   },
   summaryContainer: {
-    paddingRight: spacing(2),
-    paddingVertical: spacing(1),
+    paddingBottom: spacing(1),
+    paddingRight: spacing(4),
     width: "33.33%"
   }
 };

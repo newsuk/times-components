@@ -1,7 +1,10 @@
+import { spacing } from "@times-components/styleguide";
+
 const styles = {
   container: {
     flex: 1,
-    flexDirection: "row"
+    flexDirection: "row",
+    marginHorizontal: spacing(2)
   },
   leadItem: {
     width: "70%"

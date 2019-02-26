@@ -10,9 +10,43 @@ exports[`1. lead one and one tablet slice 1`] = `
     }
   }
 >
-  <View>
-    <TileU />
-    <TileC />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "70%",
+        }
+      }
+    >
+      <TileU />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      <TileC />
+    </View>
   </View>
 </View>
 `;
@@ -146,6 +180,7 @@ exports[`4. secondary two and two slice 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
+          "paddingBottom": 5,
         }
       }
     >
@@ -193,6 +228,7 @@ exports[`4. secondary two and two slice 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
+          "paddingBottom": 5,
         }
       }
     >

@@ -3,12 +3,17 @@
 exports[`1. lead one and one tablet slice 1`] = `
 <View>
   <View>
-    <TileU
-      tileName="lead"
-    />
-    <TileC
-      tileName="support"
-    />
+    <View>
+      <TileU
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="support"
+      />
+    </View>
   </View>
 </View>
 `;

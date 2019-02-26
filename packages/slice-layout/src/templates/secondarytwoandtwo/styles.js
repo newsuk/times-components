@@ -20,7 +20,8 @@ const mediumBreakpointStyles = {
   },
   itemContainer: {
     flex: 1,
-    flexDirection: "row"
+    flexDirection: "row",
+    paddingBottom: spacing(1)
   }
 };
 
