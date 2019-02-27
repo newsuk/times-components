@@ -1,9 +1,9 @@
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   buttonContainer: {
-    marginLeft: 15,
-    marginTop: 15
+    marginLeft: spacing(3),
+    marginTop: spacing(3)
   },
   closeButton: {
     height: 24,
