@@ -36,6 +36,9 @@ const styles = {
   placeholderContainer: {
     alignItems: "center",
     justifyContent: "center"
+  },
+  safeViewContainer: {
+    flex: 1
   }
 };
 

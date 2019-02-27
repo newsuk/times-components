@@ -43,7 +43,7 @@ class ModalImage extends Component {
           visible={showModal}
         >
           <View style={styles.modal}>
-            <SafeAreaView style={{ flex: 1 }}>
+            <SafeAreaView style={styles.safeViewContainer}>
               <View style={styles.buttonContainer}>
                 <CloseButton onPress={this.hideModal} />
               </View>
