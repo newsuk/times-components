@@ -33,7 +33,7 @@ const TileSummary = ({
     flags={() => <ArticleFlags {...flagColour} flags={flags} />}
     headline={() => (
       <ArticleSummaryHeadline
-        headline={headline || shortHeadline}
+        headline={shortHeadline || headline}
         style={headlineStyle}
       />
     )}
