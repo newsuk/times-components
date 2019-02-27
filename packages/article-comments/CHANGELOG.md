@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.4.14...@times-components/article-comments@0.4.15) (2019-02-27)
+
+
+### Bug Fixes
+
+* Update offline message for comments ([#1753](https://github.com/newsuk/times-components/issues/1753)) ([66e7aa4](https://github.com/newsuk/times-components/commit/66e7aa4))
+
+
+
+
+
 ## [0.4.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.4.13...@times-components/article-comments@0.4.14) (2019-02-27)
 
 **Note:** Version bump only for package @times-components/article-comments
