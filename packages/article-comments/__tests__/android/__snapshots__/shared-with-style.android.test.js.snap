@@ -27,7 +27,7 @@ exports[`comments error 1`] = `
       }
     }
   >
-    You’re offline
+    Unable to load comments
   </Text>
   <Text
     style={
