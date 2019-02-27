@@ -8,7 +8,7 @@ import styles from "./styles";
 
 const CommentError = ({ refetch }) => (
   <View style={styles.container}>
-    <Text style={styles.headline}>You’re offline</Text>
+    <Text style={styles.headline}>Unable to load comments</Text>
     <Text style={styles.errorBody}>
       You must have a network connection to view and post comments. Please check
       your connection and retry.

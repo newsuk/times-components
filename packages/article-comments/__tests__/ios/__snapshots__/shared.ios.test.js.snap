@@ -3,7 +3,7 @@
 exports[`comments error 1`] = `
 <View>
   <Text>
-    You’re offline
+    Unable to load comments
   </Text>
   <Text>
     You must have a network connection to view and post comments. Please check your connection and retry.
