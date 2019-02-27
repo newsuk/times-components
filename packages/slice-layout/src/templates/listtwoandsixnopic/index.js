@@ -26,9 +26,10 @@ const ListTwoAndSixNoPic = ({
     renderSupport6
   ];
 
+  const renderRowItem1 = renderLead1();
+  const renderRowItem2 = renderLead2();
+
   if (breakpoint === editionBreakpoints.small) {
-    const renderRowItem1 = renderLead1();
-    const renderRowItem2 = renderLead2();
     return (
       <Fragment>
         <View style={styles.leadContainer}>
@@ -51,18 +52,16 @@ const ListTwoAndSixNoPic = ({
     );
   }
 
-  const renderColOneItem = renderLead1();
-  const renderColTwoItem = renderLead2();
   const supportItemsOne = supportItems.slice(0, 3);
-  const supportItemsTwo = supportItems.slice(4);
+  const supportItemsTwo = supportItems.slice(3);
   return (
     <View style={styles.container}>
-      <View key={renderColOneItem.props.id} style={styles.rowItemContainer}>
-        {renderColOneItem}
+      <View key={renderRowItem1.props.id} style={styles.rowItemContainer}>
+        {renderRowItem1}
       </View>
       <ItemColSeparator />
-      <View key={renderColTwoItem.props.id} style={styles.rowItemContainer}>
-        {renderColTwoItem}
+      <View key={renderRowItem2.props.id} style={styles.rowItemContainer}>
+        {renderRowItem2}
       </View>
       <ItemColSeparator />
       <View style={styles.rowItemContainer}>
