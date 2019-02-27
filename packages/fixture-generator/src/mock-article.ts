@@ -21,6 +21,7 @@ interface TimesArticle extends Article {
   summary160: Markup | null;
   summary175: Markup | null;
   summary225: Markup | null;
+  summary300: Markup | null;
 }
 
 class MockArticle {
@@ -66,7 +67,8 @@ class MockArticle {
       summary145: new MockMarkup().addSummary("summary145").get(),
       summary160: new MockMarkup().addSummary("summary160").get(),
       summary175: new MockMarkup().addSummary("summary175").get(),
-      summary225: new MockMarkup().addSummary("summary225").get()
+      summary225: new MockMarkup().addSummary("summary225").get(),
+      summary300: new MockMarkup().addSummary("summary300").get()
     };
   }
 

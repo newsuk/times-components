@@ -9,7 +9,7 @@ const TileY = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileSummary
         headlineStyle={styles.headline}
-        summary={tile.article.summary225}
+        summary={tile.article.summary300}
         tile={tile}
       />
     </View>
