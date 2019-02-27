@@ -110,7 +110,7 @@ exports[`5. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`5. lead one and four slice 1`] = `
+exports[`6. lead one and four slice 1`] = `
 <View>
   <View>
     <View>
