@@ -37,6 +37,12 @@ exports[`1. list two and six no pic 1`] = `
   <div>
     <div>
       <div>
+        support-4
+      </div>
+      <div />
+    </div>
+    <div>
+      <div>
         support-5
       </div>
       <div />
@@ -85,6 +91,12 @@ exports[`2. tablet - list two and six no pic 1`] = `
   </div>
   <div />
   <div>
+    <div>
+      <div>
+        support-4
+      </div>
+      <div />
+    </div>
     <div>
       <div>
         support-5

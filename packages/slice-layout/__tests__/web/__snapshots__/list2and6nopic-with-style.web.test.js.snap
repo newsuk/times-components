@@ -220,6 +220,26 @@ exports[`1. list two and six no pic 1`] = `
       <div
         className="S1"
       >
+        support-4
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
         support-5
       </div>
       <div
@@ -461,6 +481,26 @@ exports[`2. tablet - list two and six no pic 1`] = `
       }
     }
   >
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-4
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
     <div
       className="S1"
     >

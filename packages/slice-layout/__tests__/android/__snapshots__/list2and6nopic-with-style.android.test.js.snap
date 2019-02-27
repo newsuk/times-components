@@ -114,6 +114,21 @@ exports[`1. list two and six no pic 1`] = `
   >
     <View>
       <Text>
+        support-4
+      </Text>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+    </View>
+    <View>
+      <Text>
         support-5
       </Text>
       <View
@@ -248,6 +263,21 @@ exports[`2. tablet - list two and six no pic 1`] = `
       }
     }
   >
+    <View>
+      <Text>
+        support-4
+      </Text>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+    </View>
     <View>
       <Text>
         support-5
