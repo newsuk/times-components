@@ -3,7 +3,7 @@ import { colours } from "@times-components/styleguide";
 const styles = {
   buttonContainer: {
     marginLeft: 15,
-    marginTop: 20
+    marginTop: 15
   },
   closeButton: {
     height: 24,
