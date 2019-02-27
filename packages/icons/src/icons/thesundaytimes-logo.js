@@ -8,12 +8,12 @@ const TheSundayTimesLogo = ({
   fillColour,
   height,
   strokeColour,
-  title = "ST",
+  title = "The Times",
   width
 }) => (
   <Svg
     role="img"
-    viewBox="0 0 355.589 252.644"
+    viewBox="0 0 95 95"
     {...clean({
       height,
       title,

@@ -17,6 +17,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockPuzzleSlice
 } from "@times-components/fixture-generator";
+import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import {
   CommentLeadAndCartoonSlice,
@@ -44,6 +45,11 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
+const sliceWithContext = {
+  SecondaryOneAndFourSlice,
+  LeadersSlice
+};
+
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
     <ScrollView>
@@ -51,6 +57,19 @@ const renderSlice = (Component, data) => (_, { decorateAction }) => (
         onPress={preventDefaultedAction(decorateAction)("onPress")}
         slice={data}
       />
+    </ScrollView>
+  </Responsive>
+);
+
+const renderSliceWithContext = (Component, data) => (_, { decorateAction }) => (
+  <Responsive>
+    <ScrollView>
+      <Context.Provider value={{pubName: "STIMES"}}>
+        <Component
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          slice={data}
+        />
+      </Context.Provider>
     </ScrollView>
   </Responsive>
 );
@@ -135,7 +154,7 @@ const sliceStories = [
 
 export default {
   children: sliceStories.map(({ mock, name, Slice }) => ({
-    component: renderSlice(Slice, mock),
+    component: sliceWithContext[Slice.name] ? renderSliceWithContext(Slice, mock): renderSlice(Slice, mock),
     name,
     type: "story"
   })),
