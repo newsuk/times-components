@@ -3,8 +3,7 @@ import { fontFactory, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     flexDirection: "row",
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     ...fontFactory({
@@ -14,12 +13,11 @@ const styles = {
     marginBottom: spacing(2)
   },
   imageContainer: {
-    width: "40%"
+    width: "45%"
   },
   summaryContainer: {
-    paddingBottom: spacing(1),
     paddingHorizontal: spacing(2),
-    width: "60%"
+    width: "55%"
   }
 };
 

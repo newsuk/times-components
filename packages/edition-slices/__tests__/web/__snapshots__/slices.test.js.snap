@@ -50,24 +50,26 @@ exports[`3. lead one and one slice 1`] = `
 
 exports[`4. lead one and four slice 1`] = `
 <div>
-  <TileI
-    tileName="lead"
-  />
-  <TileJ
-    tileName="support1"
-  />
-  <div />
-  <TileJ
-    tileName="support2"
-  />
-  <div />
-  <TileJ
-    tileName="support3"
-  />
-  <div />
-  <TileJ
-    tileName="support4"
-  />
+  <div>
+    <TileI
+      tileName="lead"
+    />
+    <TileJ
+      tileName="support1"
+    />
+    <div />
+    <TileJ
+      tileName="support2"
+    />
+    <div />
+    <TileJ
+      tileName="support3"
+    />
+    <div />
+    <TileJ
+      tileName="support4"
+    />
+  </div>
 </div>
 `;
 

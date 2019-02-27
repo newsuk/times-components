@@ -22,3 +22,31 @@ exports[`1. lead one and four 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. tablet - lead one and four 1`] = `
+<div>
+  <div>
+    <div>
+      lead
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-1
+    </div>
+    <div />
+    <div>
+      support-2
+    </div>
+    <div />
+    <div>
+      support-3
+    </div>
+    <div />
+    <div>
+      support-4
+    </div>
+  </div>
+</div>
+`;

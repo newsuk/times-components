@@ -311,3 +311,131 @@ exports[`5. secondary two and two slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`5. lead one and four slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 10,
+          "width": "50%",
+        }
+      }
+    >
+      <TileI
+        style={
+          Object {
+            "container": Object {
+              "flex": 1,
+            },
+            "headline": Object {
+              "fontSize": 30,
+            },
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileJ
+        style={
+          Object {
+            "headline": Object {
+              "fontSize": 20,
+            },
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileJ
+        style={
+          Object {
+            "headline": Object {
+              "fontSize": 20,
+            },
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileJ
+        style={
+          Object {
+            "headline": Object {
+              "fontSize": 20,
+            },
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileJ
+        style={
+          Object {
+            "headline": Object {
+              "fontSize": 20,
+            },
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

@@ -374,3 +374,99 @@ exports[`5. secondary two and two slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`5. lead one and four slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  container: [object Object];
+  headline: [object Object];
+}
+
+.IS2 {
+  headline: [object Object];
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  headline: [object Object];
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  headline: [object Object];
+}
+
+.IS7 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS8 {
+  headline: [object Object];
+}
+
+.IS9 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS9 S1"
+>
+  <div
+    className="S1"
+  >
+    <TileI
+      className="IS1"
+      tileName="lead"
+    />
+    <TileJ
+      className="IS2"
+      tileName="support1"
+    />
+    <div
+      className="IS3 S1"
+    />
+    <TileJ
+      className="IS4"
+      tileName="support2"
+    />
+    <div
+      className="IS5 S1"
+    />
+    <TileJ
+      className="IS6"
+      tileName="support3"
+    />
+    <div
+      className="IS7 S1"
+    />
+    <TileJ
+      className="IS8"
+      tileName="support4"
+    />
+  </div>
+</div>
+`;

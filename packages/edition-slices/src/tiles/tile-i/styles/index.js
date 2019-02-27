@@ -14,9 +14,10 @@ const styles = {
   summaryContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
-    paddingBottom: spacing(3),
+    flex: 1,
+    justifyContent: "center",
     paddingHorizontal: spacing(8),
-    paddingTop: spacing(4)
+    paddingVertical: spacing(4)
   }
 };
 

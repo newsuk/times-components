@@ -691,9 +691,10 @@ exports[`9. tile i 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
-        "paddingBottom": 15,
+        "flex": 1,
+        "justifyContent": "center",
         "paddingHorizontal": 40,
-        "paddingTop": 20,
+        "paddingVertical": 20,
       }
     }
   >
@@ -754,15 +755,14 @@ exports[`10. tile j 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 10,
-        "paddingTop": 10,
+        "padding": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "40%",
+          "width": "45%",
         }
       }
     >
@@ -771,9 +771,8 @@ exports[`10. tile j 1`] = `
     <View
       style={
         Object {
-          "paddingBottom": 5,
           "paddingHorizontal": 10,
-          "width": "60%",
+          "width": "55%",
         }
       }
     >

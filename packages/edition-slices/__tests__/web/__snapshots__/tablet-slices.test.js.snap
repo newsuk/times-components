@@ -102,3 +102,28 @@ exports[`5. secondary two and two slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`5. lead one and four slice 1`] = `
+<div>
+  <div>
+    <TileI
+      tileName="lead"
+    />
+    <TileJ
+      tileName="support1"
+    />
+    <div />
+    <TileJ
+      tileName="support2"
+    />
+    <div />
+    <TileJ
+      tileName="support3"
+    />
+    <div />
+    <TileJ
+      tileName="support4"
+    />
+  </div>
+</div>
+`;
