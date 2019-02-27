@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.16.0...@times-components/fixture-generator@0.16.1) (2019-02-27)
+
+
+### Bug Fixes
+
+* Add missing test for fixture generator ([#1751](https://github.com/newsuk/times-components/issues/1751)) ([ee744b7](https://github.com/newsuk/times-components/commit/ee744b7))
+
+
+
+
+
 # [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.15.1...@times-components/fixture-generator@0.16.0) (2019-02-25)
 
 
