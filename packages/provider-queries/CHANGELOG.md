@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.12.0...@times-components/provider-queries@1.13.0) (2019-02-27)
+
+
+### Features
+
+* 300 article summary ([#1748](https://github.com/newsuk/times-components/issues/1748)) ([a0fcf3b](https://github.com/newsuk/times-components/commit/a0fcf3b))
+
+
+
+
+
 # [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.11.2...@times-components/provider-queries@1.12.0) (2019-02-20)
 
 
