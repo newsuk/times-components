@@ -14,7 +14,7 @@ exports[`1. tile a 1`] = `
       accessibilityRole="heading"
       aria-level="3"
     >
-      Venezuela shows how Corbyn’s socialism works
+      Driving Off
     </Text>
     <View>
       <ArticleFlags
@@ -50,7 +50,7 @@ exports[`2. tile b 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text>
         <Text>
@@ -94,7 +94,7 @@ exports[`3. tile c 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -131,7 +131,7 @@ exports[`4. tile d 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -168,7 +168,7 @@ exports[`5. tile e 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -199,7 +199,7 @@ exports[`6. tile f 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text
         accessibilityRole="heading"
@@ -250,7 +250,7 @@ exports[`7. tile g 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -281,7 +281,7 @@ exports[`8. tile h 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text>
         <Text>
@@ -337,7 +337,7 @@ exports[`9. tile i 1`] = `
       accessibilityRole="heading"
       aria-level="3"
     >
-      Venezuela shows how Corbyn’s socialism works
+      Driving Off
     </Text>
     <View>
       <ArticleFlags
@@ -373,7 +373,7 @@ exports[`10. tile j 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -404,7 +404,7 @@ exports[`11. tile l 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -465,7 +465,7 @@ exports[`13. tile n 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text
         accessibilityRole="heading"
@@ -503,7 +503,7 @@ exports[`14. tile o 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -542,7 +542,7 @@ exports[`15. tile p 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text
         accessibilityRole="heading"
@@ -599,7 +599,7 @@ exports[`17. tile r 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -680,7 +680,7 @@ exports[`19. tile t 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -711,7 +711,7 @@ exports[`20. tile u 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -754,7 +754,7 @@ exports[`21. tile v 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
@@ -785,7 +785,7 @@ exports[`22. tile w 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text>
         <Text>
@@ -829,7 +829,7 @@ exports[`23. tile x 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text
         accessibilityRole="heading"
@@ -873,7 +873,7 @@ exports[`24. tile y 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <Text>
         <Text>
@@ -911,7 +911,7 @@ exports[`25. tile z 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </Text>
       <View>
         <ArticleFlags
