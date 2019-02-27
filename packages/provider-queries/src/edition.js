@@ -8,6 +8,7 @@ export default addTypenameToDocument(
       edition(id: $id) {
         id
         publishedTime
+        publicationName
         updateText
         sections {
           id
