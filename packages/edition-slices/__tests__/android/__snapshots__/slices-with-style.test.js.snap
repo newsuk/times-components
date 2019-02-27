@@ -141,8 +141,8 @@ exports[`4. lead one and four slice 1`] = `
 `;
 
 exports[`5. lead two no pic and two 1`] = `
-<View>
-  <TileF />
+Array [
+  <TileF />,
   <View
     style={
       Object {
@@ -152,8 +152,8 @@ exports[`5. lead two no pic and two 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
-  <TileB />
+  />,
+  <TileB />,
   <View
     style={
       Object {
@@ -163,8 +163,8 @@ exports[`5. lead two no pic and two 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
-  <TileD />
+  />,
+  <TileD />,
   <View
     style={
       Object {
@@ -174,9 +174,9 @@ exports[`5. lead two no pic and two 1`] = `
         "marginHorizontal": 10,
       }
     }
-  />
-  <TileE />
-</View>
+  />,
+  <TileE />,
+]
 `;
 
 exports[`6. secondary one slice 1`] = `<TileA />`;

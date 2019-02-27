@@ -55,7 +55,70 @@ exports[`2. lead one full width tablet slice 1`] = `
 </div>
 `;
 
-exports[`3. secondary four tablet slice 1`] = `
+exports[`3. lead two no pic and two tablet slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS2 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS4 S1"
+>
+  <TileX
+    tileName="lead1"
+  />
+  <div
+    className="IS1 S1"
+  />
+  <TileY
+    tileName="lead2"
+  />
+  <div
+    className="IS2 S1"
+  />
+  <TileD
+    tileName="support1"
+  />
+  <div
+    className="IS3 S1"
+  />
+  <TileZ
+    tileName="support2"
+  />
+</div>
+`;
+
+exports[`4. secondary four tablet slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -200,7 +263,7 @@ exports[`3. secondary four tablet slice 1`] = `
 </div>
 `;
 
-exports[`4. secondary two and two slice 1`] = `
+exports[`5. secondary two and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

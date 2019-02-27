@@ -65,7 +65,54 @@ exports[`2. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. secondary four tablet slice 1`] = `
+exports[`3. lead two no pic and two tablet slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <TileX />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <TileY />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <TileD />
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <TileZ />
+</View>
+`;
+
+exports[`4. secondary four tablet slice 1`] = `
 <View
   style={
     Object {
@@ -157,7 +204,7 @@ exports[`3. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary two and two slice 1`] = `
+exports[`5. secondary two and two slice 1`] = `
 <View
   style={
     Object {

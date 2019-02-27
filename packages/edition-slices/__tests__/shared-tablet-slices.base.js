@@ -5,6 +5,7 @@ import { setDimension } from "@times-components/test-utils/dimensions";
 import {
   mockLeadOneAndOneSlice,
   mockLeadOneFullWidthSlice,
+  mockLeadTwoNoPicAndTwoSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoAndTwoSlice
 } from "@times-components/fixture-generator";
@@ -13,6 +14,7 @@ import "./mocks";
 import {
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadTwoNoPicAndTwoSlice,
   SecondaryFourSlice,
   SecondaryTwoAndTwoSlice
 } from "../src/slices";
@@ -27,6 +29,11 @@ const slices = [
     mock: mockLeadOneFullWidthSlice(),
     name: "lead one full width tablet slice",
     Slice: LeadOneFullWidthSlice
+  },
+  {
+    mock: mockLeadTwoNoPicAndTwoSlice(),
+    name: "lead two no pic and two tablet slice",
+    Slice: LeadTwoNoPicAndTwoSlice
   },
   {
     mock: mockSecondaryFourSlice(),
