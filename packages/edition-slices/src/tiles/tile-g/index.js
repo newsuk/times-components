@@ -11,12 +11,9 @@ import {
 import styles from "./styles";
 
 class TileG extends Component {
-  constructor() {
-    super();
-    this.state = {
-      containerWidth: Dimensions.get("window").width
-    };
-  }
+  state = {
+    containerWidth: Dimensions.get("window").width
+  };
 
   render() {
     const { onPress, tile } = this.props;
