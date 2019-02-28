@@ -9,45 +9,47 @@ exports[`1. modal image 1`] = `
   >
     <View>
       <View>
-        <View
-          pointerEvents="box-only"
-        >
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/close-button.png",
+        <View>
+          <View
+            pointerEvents="box-only"
+          >
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "testUri": "../../../packages/image/assets/close-button.png",
+                }
               }
-            }
-          />
+            />
+          </View>
         </View>
-      </View>
-      <View>
         <View>
           <View>
-            <View
-              aspectRatio={1.5}
-            >
-              <View>
-                <Gradient
-                  degrees={264}
+            <View>
+              <View
+                aspectRatio={1.5}
+              >
+                <View>
+                  <Gradient
+                    degrees={264}
+                  />
+                </View>
+                <Image
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
+                    }
+                  }
                 />
               </View>
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1440",
-                  }
-                }
-              />
             </View>
           </View>
         </View>
-      </View>
-      <View>
-        <Text>
-          Caption
-        </Text>
+        <View>
+          <Text>
+            Caption
+          </Text>
+        </View>
       </View>
     </View>
   </Modal>

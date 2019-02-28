@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, View } from "react-native";
+import { Modal, View, SafeAreaView } from "react-native";
 import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import CloseButton from "./close-button";
@@ -43,13 +43,15 @@ class ModalImage extends Component {
           visible={showModal}
         >
           <View style={styles.modal}>
-            <View style={styles.buttonContainer}>
-              <CloseButton onPress={this.hideModal} />
-            </View>
-            <Gestures style={styles.imageContainer}>
-              <Image {...this.props} style={styles.image} />
-            </Gestures>
-            {captionWithStyles}
+            <SafeAreaView style={styles.safeViewContainer}>
+              <View style={styles.buttonContainer}>
+                <CloseButton onPress={this.hideModal} />
+              </View>
+              <Gestures style={styles.imageContainer}>
+                <Image {...this.props} style={styles.image} />
+              </Gestures>
+              {captionWithStyles}
+            </SafeAreaView>
           </View>
         </Modal>
         <Button onPress={this.showModal}>
