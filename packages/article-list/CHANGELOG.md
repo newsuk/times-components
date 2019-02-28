@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.4.37...@times-components/article-list@6.5.0) (2019-02-28)
+
+
+### Features
+
+* Short Headline to be the primary headline for List Pages and Slices ([#1756](https://github.com/newsuk/times-components/issues/1756)) ([94ecbce](https://github.com/newsuk/times-components/commit/94ecbce))
+
+
+
+
+
 ## [6.4.37](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.4.36...@times-components/article-list@6.4.37) (2019-02-27)
 
 **Note:** Version bump only for package @times-components/article-list

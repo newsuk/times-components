@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.13](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.12...@times-components/image@4.8.13) (2019-02-28)
+
+
+### Bug Fixes
+
+* modal image close button should be in a safe area ([#1757](https://github.com/newsuk/times-components/issues/1757)) ([0e5e0da](https://github.com/newsuk/times-components/commit/0e5e0da))
+
+
+
+
+
 ## [4.8.12](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.11...@times-components/image@4.8.12) (2019-02-25)
 
 **Note:** Version bump only for package @times-components/image
