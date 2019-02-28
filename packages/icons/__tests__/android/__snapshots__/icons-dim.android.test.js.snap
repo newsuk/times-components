@@ -15,8 +15,8 @@ exports[`2. iconvideo sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 36.76470588235294,
-      "width": 62.5,
+      "height": 50,
+      "width": 85,
     }
   }
 />
