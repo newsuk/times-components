@@ -1,0 +1,554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. daily universal register slice 1`] = `
+<View>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+      }
+    }
+  />
+  <Text>
+    Daily Universal Register
+  </Text>
+  <TileS />
+  <View />
+  <TileS />
+  <View />
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/leaves.png",
+      }
+    }
+  />
+  <TileS />
+  <View />
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/cake.png",
+      }
+    }
+  />
+  <TileS />
+</View>
+`;
+
+exports[`1. secondary one and four slice 1`] = `
+Array [
+  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </View>
+    <View />
+    <View>
+      <View>
+        <View>
+          <TileN
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support2"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support3"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support4"
+        />
+      </View>
+    </View>
+  </View>,
+  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </View>
+    <View />
+    <View>
+      <View>
+        <View>
+          <TileN
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support2"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support3"
+        />
+      </View>
+      <View />
+      <View>
+        <TileO
+          tileName="support4"
+        />
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`2. lead one full width slice 1`] = `
+<TileA
+  tileName="lead"
+/>
+`;
+
+exports[`2. leaders slice 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/st-masthead.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View>
+    <TileM
+      tileName="leader1"
+    />
+    <View />
+    <TileM
+      tileName="leader2"
+    />
+    <View />
+    <TileM
+      tileName="leader3"
+    />
+  </View>
+</View>
+`;
+
+exports[`2. leaders slice 2`] = `
+Array [
+  <View>
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+          }
+        }
+      />
+      <View>
+        <Text>
+           Leading Articles 
+        </Text>
+      </View>
+    </View>
+    <View>
+      <TileM
+        tileName="leader1"
+      />
+      <View />
+      <TileM
+        tileName="leader2"
+      />
+      <View />
+      <TileM
+        tileName="leader3"
+      />
+    </View>
+  </View>,
+  <View>
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+          }
+        }
+      />
+      <View>
+        <Text>
+           Leading Articles 
+        </Text>
+      </View>
+    </View>
+    <View>
+      <TileM
+        tileName="leader1"
+      />
+      <View />
+      <TileM
+        tileName="leader2"
+      />
+      <View />
+      <TileM
+        tileName="leader3"
+      />
+    </View>
+  </View>,
+]
+`;
+
+exports[`3. lead one and one slice 1`] = `
+<View>
+  <TileA
+    tileName="lead"
+  />
+  <TileB
+    tileName="support"
+  />
+</View>
+`;
+
+exports[`4. lead one and four slice 1`] = `
+<View>
+  <TileI
+    tileName="lead"
+  />
+  <TileJ
+    tileName="support1"
+  />
+  <View />
+  <TileJ
+    tileName="support2"
+  />
+  <View />
+  <TileJ
+    tileName="support3"
+  />
+  <View />
+  <TileJ
+    tileName="support4"
+  />
+</View>
+`;
+
+exports[`5. lead two no pic and two 1`] = `
+Array [
+  <TileF
+    tileName="lead1"
+  />,
+  <View />,
+  <TileB
+    tileName="lead2"
+  />,
+  <View />,
+  <TileD
+    tileName="support1"
+  />,
+  <View />,
+  <TileE
+    tileName="support2"
+  />,
+]
+`;
+
+exports[`6. secondary one slice 1`] = `
+<TileA
+  tileName="secondary"
+/>
+`;
+
+exports[`7. secondary one and columnist slice 1`] = `
+<View>
+  <TileT
+    tileName="secondary"
+  />
+  <View />
+  <TileH
+    tileName="columnist"
+  />
+</View>
+`;
+
+exports[`8. secondary four slice 1`] = `
+Array [
+  <View>
+    <View>
+      <TileC
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary2"
+      />
+    </View>
+  </View>,
+  <View />,
+  <View>
+    <View>
+      <TileC
+        tileName="secondary3"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary4"
+      />
+    </View>
+  </View>,
+]
+`;
+
+exports[`9. secondary one and four slice 1`] = `
+<View>
+  <View>
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </View>
+  <View />
+  <View>
+    <View>
+      <View>
+        <TileN
+          tileName="secondary"
+        />
+      </View>
+    </View>
+    <View />
+    <View>
+      <TileO
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileO
+        tileName="support2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileO
+        tileName="support3"
+      />
+    </View>
+    <View />
+    <View>
+      <TileO
+        tileName="support4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`10. secondary two and two slice 1`] = `
+Array [
+  <View>
+    <View>
+      <TileC
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary2"
+      />
+    </View>
+  </View>,
+  <View />,
+  <View>
+    <TileG
+      tileName="support1"
+    />
+  </View>,
+  <View />,
+  <View>
+    <TileG
+      tileName="support2"
+    />
+  </View>,
+]
+`;
+
+exports[`11. secondary two no pic and two slice 1`] = `
+<View>
+  <TileB
+    tileName="secondary1"
+  />
+  <View />
+  <TileB
+    tileName="secondary2"
+  />
+  <View />
+  <TileG
+    tileName="support1"
+  />
+  <View />
+  <TileG
+    tileName="support2"
+  />
+</View>
+`;
+
+exports[`12. list two and six no pic slice 1`] = `
+Array [
+  <View>
+    <View>
+      <TileC
+        tileName="lead1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="lead2"
+      />
+    </View>
+  </View>,
+  <View />,
+  <View>
+    <TileL
+      tileName="support1"
+    />
+    <View />
+  </View>,
+  <View>
+    <TileL
+      tileName="support2"
+    />
+    <View />
+  </View>,
+  <View>
+    <TileL
+      tileName="support3"
+    />
+    <View />
+  </View>,
+  <View>
+    <TileL
+      tileName="support4"
+    />
+    <View />
+  </View>,
+  <View>
+    <TileL
+      tileName="support5"
+    />
+    <View />
+  </View>,
+  <View>
+    <TileL
+      tileName="support6"
+    />
+  </View>,
+]
+`;
+
+exports[`13. leaders slice 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View>
+    <TileM
+      tileName="leader1"
+    />
+    <View />
+    <TileM
+      tileName="leader2"
+    />
+    <View />
+    <TileM
+      tileName="leader3"
+    />
+  </View>
+</View>
+`;
+
+exports[`14. comment lead and cartoon slice 1`] = `
+<View>
+  <TileP
+    tileName="lead"
+  />
+  <View />
+  <TileQ
+    tileName="cartoon"
+  />
+</View>
+`;
+
+exports[`15. puzzle slice 1`] = `
+<Link
+  url="/crossword/123"
+>
+  <View>
+    <View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Times Concise medium No 7881
+      </Text>
+    </View>
+    <View>
+      <Image
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+      />
+    </View>
+  </View>
+</Link>
+`;

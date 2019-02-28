@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import { TheTimesLogo, TheSundayTimesLogo } from "@times-components/icons";
+import { TheSTLogo, TheTimesLogo } from "@times-components/icons";
 import {
   SecondaryOneAndFourSlice,
   ItemRowSeparator
@@ -18,10 +18,10 @@ const SecondaryOneAndFour = ({
     {({ pubName }) => (
       <View style={styles.sliceWrapper}>
         <View style={styles.logoContainer}>
-          {pubName === "Times" ? (
+          {pubName === "TIMES" ? (
             <TheTimesLogo height={40} width={40} />
           ) : (
-            <TheSundayTimesLogo height={40} width={40} />
+            <TheSTLogo height={40} width={40} />
           )}
         </View>
         <ItemRowSeparator style={styles.separator} />

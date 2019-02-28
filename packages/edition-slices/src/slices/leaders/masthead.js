@@ -10,6 +10,7 @@ const MastHead = ({ publicationName }) => {
 
   if (publicationName === "TIMES") {
     style = "mastheadStyleTimes";
+    // eslint-disable-next-line global-require
     source = require("../../../assets/times-leading-header.png");
   }
 

@@ -2,7 +2,7 @@ import { scales } from "@times-components/styleguide";
 
 export default {
   makeArticleUrl: () => {},
-  publicationName: "TIMES",
+  pubName: "TIMES",
   theme: {
     imageCaptionAlignment: {},
     scale: scales.medium

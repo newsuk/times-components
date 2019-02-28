@@ -1,0 +1,621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. daily universal register slice 1`] = `
+<div>
+  <Image
+    aspectRatio={5.74}
+    uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+  />
+  <div>
+    Daily Universal Register
+  </div>
+  <TileS />
+  <div />
+  <TileS />
+  <div />
+  <Image
+    aspectRatio={1}
+    uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+  />
+  <TileS />
+  <div />
+  <Image
+    aspectRatio={1}
+    uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+  />
+  <TileS />
+</div>
+`;
+
+exports[`1. secondary one and four slice 1`] = `
+Array [
+  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
+    <div>
+      <div>
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support3"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support4"
+        />
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
+    <div>
+      <div>
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support3"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support4"
+        />
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`1. secondary one and four slice 2`] = `
+Array [
+  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
+    <div>
+      <div>
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support3"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support4"
+        />
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
+    <div>
+      <div>
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support3"
+        />
+      </div>
+      <div />
+      <div>
+        <TileO
+          tileName="support4"
+        />
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`2. lead one full width slice 1`] = `
+<div>
+  <TileR
+    tileName="lead"
+  />
+</div>
+`;
+
+exports[`2. leaders slice 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.4}
+      uri="https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png"
+    />
+    <div>
+      <div>
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div>
+    <TileM
+      tileName="leader1"
+    />
+    <div />
+    <TileM
+      tileName="leader2"
+    />
+    <div />
+    <TileM
+      tileName="leader3"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. leaders slice 2`] = `
+Array [
+  <div>
+    <div>
+      <Image
+        aspectRatio={5.74}
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
+      <div>
+        <div>
+           Leading Articles 
+        </div>
+      </div>
+    </div>
+    <div>
+      <TileM
+        tileName="leader1"
+      />
+      <div />
+      <TileM
+        tileName="leader2"
+      />
+      <div />
+      <TileM
+        tileName="leader3"
+      />
+    </div>
+  </div>,
+  <div>
+    <div>
+      <Image
+        aspectRatio={5.74}
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
+      <div>
+        <div>
+           Leading Articles 
+        </div>
+      </div>
+    </div>
+    <div>
+      <TileM
+        tileName="leader1"
+      />
+      <div />
+      <TileM
+        tileName="leader2"
+      />
+      <div />
+      <TileM
+        tileName="leader3"
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`3. lead one and one slice 1`] = `
+<div>
+  <div>
+    <TileU
+      tileName="lead"
+    />
+    <TileC
+      tileName="support"
+    />
+  </div>
+</div>
+`;
+
+exports[`4. lead one and four slice 1`] = `
+<div>
+  <TileI
+    tileName="lead"
+  />
+  <TileJ
+    tileName="support1"
+  />
+  <div />
+  <TileJ
+    tileName="support2"
+  />
+  <div />
+  <TileJ
+    tileName="support3"
+  />
+  <div />
+  <TileJ
+    tileName="support4"
+  />
+</div>
+`;
+
+exports[`5. lead two no pic and two 1`] = `
+<div>
+  <TileX
+    tileName="lead1"
+  />
+  <div />
+  <TileY
+    tileName="lead2"
+  />
+  <div />
+  <TileD
+    tileName="support1"
+  />
+  <div />
+  <TileZ
+    tileName="support2"
+  />
+</div>
+`;
+
+exports[`6. secondary one slice 1`] = `
+<div>
+  <TileW
+    tileName="secondary"
+  />
+</div>
+`;
+
+exports[`7. secondary one and columnist slice 1`] = `
+<div>
+  <TileT
+    tileName="secondary"
+  />
+  <div />
+  <TileH
+    tileName="columnist"
+  />
+</div>
+`;
+
+exports[`8. secondary four slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileC
+        tileName="secondary1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="secondary2"
+      />
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <TileC
+        tileName="secondary3"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="secondary4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`9. secondary one and four slice 1`] = `
+<div>
+  <div>
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </div>
+  <div />
+  <div>
+    <div>
+      <div>
+        <TileN
+          tileName="secondary"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support3"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`10. secondary two and two slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileV
+        tileName="secondary1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileV
+        tileName="secondary2"
+      />
+    </div>
+  </div>
+  <div />
+  <div>
+    <TileG
+      tileName="support1"
+    />
+  </div>
+  <div />
+  <div>
+    <TileG
+      tileName="support2"
+    />
+  </div>
+</div>
+`;
+
+exports[`11. secondary two no pic and two slice 1`] = `
+<div>
+  <TileB
+    tileName="secondary1"
+  />
+  <div />
+  <TileB
+    tileName="secondary2"
+  />
+  <div />
+  <TileG
+    tileName="support1"
+  />
+  <div />
+  <TileG
+    tileName="support2"
+  />
+</div>
+`;
+
+exports[`12. list two and six no pic slice 1`] = `
+Array [
+  <div>
+    <div>
+      <TileC
+        tileName="lead1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="lead2"
+      />
+    </div>
+  </div>,
+  <div />,
+  <div>
+    <TileL
+      tileName="support1"
+    />
+    <div />
+  </div>,
+  <div>
+    <TileL
+      tileName="support2"
+    />
+    <div />
+  </div>,
+  <div>
+    <TileL
+      tileName="support3"
+    />
+    <div />
+  </div>,
+  <div>
+    <TileL
+      tileName="support4"
+    />
+    <div />
+  </div>,
+  <div>
+    <TileL
+      tileName="support5"
+    />
+    <div />
+  </div>,
+  <div>
+    <TileL
+      tileName="support6"
+    />
+  </div>,
+]
+`;
+
+exports[`13. leaders slice 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.74}
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div>
+      <div>
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div>
+    <TileM
+      tileName="leader1"
+    />
+    <div />
+    <TileM
+      tileName="leader2"
+    />
+    <div />
+    <TileM
+      tileName="leader3"
+    />
+  </div>
+</div>
+`;
+
+exports[`14. comment lead and cartoon slice 1`] = `
+<div>
+  <TileP
+    tileName="lead"
+  />
+  <div />
+  <TileQ
+    tileName="cartoon"
+  />
+</div>
+`;
+
+exports[`15. puzzle slice 1`] = `
+<Link
+  url="/crossword/123"
+>
+  <div>
+    <div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Times Concise medium No 7881
+      </h3>
+    </div>
+    <div>
+      <Image
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+      />
+    </div>
+  </div>
+</Link>
+`;
