@@ -56,7 +56,7 @@ exports[`2. iconvideo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 11.304347826086957,
+      "height": 11.764705882352942,
       "width": 20,
     }
   }
@@ -64,17 +64,17 @@ exports[`2. iconvideo renders 1`] = `
   <ARTGroup
     transform={
       Array [
-        0.8695652173913043,
+        0.29411764705882354,
         0,
         0,
-        0.8695652173913043,
+        0.29411764705882354,
         0,
         0,
       ]
     }
   >
     <ARTShape
-      d="449cccb3ac16d057a2c74d137cfbbbfb"
+      d="f7a00e51bbe09015abd28c5265dc80fd"
       fill={
         Array [
           0,
@@ -101,34 +101,7 @@ exports[`2. iconvideo renders 1`] = `
       }
     />
     <ARTShape
-      d="f2fe184e88869d0ef2eb25afbc19b807"
-      fill={
-        Array [
-          0,
-          0.11372549019607843,
-          0.11372549019607843,
-          0.10588235294117647,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-    <ARTShape
-      d="aa5d049c3b5acb33e4312411ca0e1c65"
+      d="4a12958bc1788eacc2b5e8cff1335641"
       fill={
         Array [
           0,

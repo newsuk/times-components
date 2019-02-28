@@ -25,10 +25,6 @@ Array [
     fill="#facade"
     stroke="#c0ffee"
   />,
-  <polygon
-    fill="#facade"
-    stroke="#c0ffee"
-  />,
 ]
 `;
 

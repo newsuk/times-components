@@ -21,7 +21,7 @@ exports[`2. iconvideo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
-  viewBox="7d01bea7ecb0281e219ae5357dfe4a3f"
+  viewBox="32c562c1b3cee8479f67d0cbd8edef4d"
   width={20}
 >
   <title>
@@ -29,18 +29,14 @@ exports[`2. iconvideo renders 1`] = `
   </title>
   <rect
     fill="#1D1D1B"
-    height="13.5721404"
-    width="15.4550103"
-    x="0.154639175"
-    y="0.139754386"
+    height="40"
+    width="50"
+    x="0"
+    y="0"
   />
   <polygon
     fill="#1D1D1B"
-    points="e6624ad17344f251daa0c00df406817b"
-  />
-  <polygon
-    fill="#1D1D1B"
-    points="26d8194b38b196f22e7d31ee45b19805"
+    points="5a4b8b2ca01315005e925a083a2b7521"
   />
 </svg>
 `;
