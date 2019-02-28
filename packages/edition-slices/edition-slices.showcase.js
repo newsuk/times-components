@@ -48,31 +48,37 @@ const preventDefaultedAction = decorateAction =>
 const sliceWithContext = {
   SecondaryOneAndFourSlice,
   LeadersSlice
+  // LeadersSlice,
+  LeadOneAndOneSlice
 };
 
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
     <ScrollView>
+    <Context.Provider value={{pubName: "STIMES"}}>
       <Component
         onPress={preventDefaultedAction(decorateAction)("onPress")}
         slice={data}
       />
-    </ScrollView>
-  </Responsive>
-);
-
-const renderSliceWithContext = (Component, data) => (_, { decorateAction }) => (
-  <Responsive>
-    <ScrollView>
-      <Context.Provider value={{pubName: "STIMES"}}>
-        <Component
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          slice={data}
-        />
       </Context.Provider>
     </ScrollView>
   </Responsive>
 );
+
+// const renderSliceWithContext = (Component, data) => (_, { decorateAction }) => {
+// console.log('Component is >>>>>>',Component);
+//   return (
+//   <Responsive>
+//     <ScrollView>
+//       <Context.Provider value={{pubName: "STIMES"}}>
+//         <Component
+//           onPress={preventDefaultedAction(decorateAction)("onPress")}
+//           slice={data}
+//         />
+//       </Context.Provider>
+//     </ScrollView>
+//   </Responsive>
+// )};
 
 const sliceStories = [
   {

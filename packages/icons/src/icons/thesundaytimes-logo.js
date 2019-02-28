@@ -8,7 +8,7 @@ const TheSundayTimesLogo = ({
   fillColour,
   height,
   strokeColour,
-  title = "The Times",
+  title = "ST",
   width
 }) => (
   <Svg
