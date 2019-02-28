@@ -8,8 +8,8 @@ import {
 
 export { acceptedWidths, normaliseWidthForAssetRequestCache, screenWidth };
 
-export const convertToPixels = points =>
-  PixelRatio.getPixelSizeForLayoutSize(points);
+// export const convertToPixels = points => PixelRatio.getPixelSizeForLayoutSize(points);
+export const convertToPixels = points => points;
 
 export const screenWidthInPixels = isTablet =>
   convertToPixels(screenWidth(isTablet));

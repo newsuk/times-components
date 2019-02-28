@@ -9,8 +9,6 @@ export const propTypes = {
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
-  onImageUriCalculate: PropTypes.func,
-  placeholderUri: PropTypes.string,
   style: ViewPropTypesStyle,
   uri: PropTypes.string
 };

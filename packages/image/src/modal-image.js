@@ -11,16 +11,20 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lowResUri: null,
+      lowResSize: null,
       showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
-    this.onLowResImageUriCalculate = this.onLowResImageUriCalculate.bind(this);
+    this.onLowResLayout = this.onLowResLayout.bind(this);
   }
 
-  onLowResImageUriCalculate({ uri }) {
-    this.setState({ lowResUri: uri });
+  onLowResLayout({
+    nativeEvent: {
+      layout: { width }
+    }
+  }) {
+    this.setState({ lowResSize: width });
   }
 
   hideModal() {
@@ -33,7 +37,7 @@ class ModalImage extends Component {
 
   render() {
     const { caption } = this.props;
-    const { showModal, lowResUri } = this.state;
+    const { showModal, lowResSize } = this.state;
 
     const captionWithStyles =
       caption &&
@@ -56,7 +60,7 @@ class ModalImage extends Component {
               <Gestures style={styles.imageContainer}>
                 <Image
                   {...this.props}
-                  placeholderUri={lowResUri}
+                  lowResSize={lowResSize}
                   style={styles.image}
                 />
               </Gestures>
@@ -65,10 +69,7 @@ class ModalImage extends Component {
           </View>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image
-            {...this.props}
-            onImageUriCalculate={this.onLowResImageUriCalculate}
-          />
+          <Image {...this.props} onLayout={this.onLowResLayout} />
         </Button>
       </View>
     );
