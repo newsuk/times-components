@@ -117,8 +117,34 @@ const slices = [
   }
 ];
 
+const slicesWithPubLogo = [
+  {
+    mock: mockSecondaryOneAndFourSlice(),
+    name: "secondary one and four slice",
+    Slice: SecondaryOneAndFourSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "leaders slice",
+    Slice: LeadersSlice
+  }
+];
+
 export default () => {
-  const tests = slices.map(({ mock, name, Slice }) => ({
+  const commonTests = slices.map(({ mock, name, Slice }) => ({
+    name,
+    test: () => {
+      const output = TestRenderer.create(
+        <Responsive>
+            <Slice onPress={() => {}} slice={mock} />
+        </Responsive>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  }));
+
+  const testsForTimes = slicesWithPubLogo.map(({ mock, name, Slice }) => ({
     name,
     test: () => {
       const output = TestRenderer.create(
@@ -134,5 +160,22 @@ export default () => {
     }
   }));
 
-  iterator(tests);
+  const testsForST = slicesWithPubLogo.map(({ mock, name, Slice }) => ({
+    name,
+    test: () => {
+      const output = TestRenderer.create(
+        <Responsive>
+          <Context.Provider value={{ pubName: "SUNDAYTIMES" }}>
+            <Slice onPress={() => {}} slice={mock} />
+          </Context.Provider>
+        </Responsive>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  }));
+
+  iterator(commonTests);
+  iterator(testsForST);
+  iterator(testsForTimes);
 };

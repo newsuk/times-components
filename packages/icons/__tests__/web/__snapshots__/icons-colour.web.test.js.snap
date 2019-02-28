@@ -79,3 +79,15 @@ Array [
   />,
 ]
 `;
+
+exports[`7. thesundaytimeslogo renders with different colours 1`] = `
+Array [
+  <title>
+    The Times
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
+`;
