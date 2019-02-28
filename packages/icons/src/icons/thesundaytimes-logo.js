@@ -4,11 +4,11 @@ import Svg, { Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
-const TheSundayTimesLogo = ({
+const TheTimesLogo = ({
   fillColour,
   height,
   strokeColour,
-  title = "ST",
+  title = "The Times",
   width
 }) => (
   <Svg
@@ -30,10 +30,10 @@ const TheSundayTimesLogo = ({
   </Svg>
 );
 
-TheSundayTimesLogo.propTypes = propTypes;
+TheTimesLogo.propTypes = propTypes;
 
-TheSundayTimesLogo.defaultProps = {
+TheTimesLogo.defaultProps = {
   fillColour: colours.functional.white
 };
 
-export default TheSundayTimesLogo;
+export default TheTimesLogo;
