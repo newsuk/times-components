@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { View } from "react-native";
+import React, { Fragment, Component } from "react";
+import { View, Image } from "react-native";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -28,39 +28,51 @@ class TimesImage extends Component {
       layout: { width }
     }
   }) {
-    const { highResSize } = this.props;
+    const { highResSize, onImageUriCalculate } = this.props;
     const imageRes = normaliseWidthForAssetRequestCache(
       convertToPixels(highResSize ? Math.min(width, highResSize) : width)
     );
 
     this.setState({ imageRes });
+
+    if (onImageUriCalculate) {
+      onImageUriCalculate({ uri: this.getImageUriForRes(imageRes) });
+    }
+  }
+
+  getImageUriForRes(imageRes) {
+    const { uri } = this.props;
+    const isDataImageUri = uri && uri.indexOf("data:") > -1;
+
+    return isDataImageUri
+      ? uri
+      : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
   }
 
   handleLoad() {
     this.setState({ isLoaded: true });
   }
 
+  renderPlaceholderImage() {
+    const { borderRadius, placeholderUri } = this.props;
+
+    if (placeholderUri) {
+      return (
+        <Image
+          borderRadius={borderRadius}
+          source={{ uri: placeholderUri }}
+          style={styles.imageBackground}
+        />
+      );
+    }
+
+    return null;
+  }
+
   render() {
-    const { aspectRatio, borderRadius, style, uri } = this.props;
+    const { aspectRatio, borderRadius, style } = this.props;
     const { isLoaded, imageRes } = this.state;
-
-    const isDataImageUri = uri && uri.indexOf("data:") > -1;
-
-    const srcUri = isDataImageUri
-      ? uri
-      : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
-
-    const props = {
-      borderRadius,
-      onLoad: this.handleLoad,
-      source:
-        srcUri && imageRes
-          ? {
-              uri: srcUri
-            }
-          : null,
-      style: styles.imageBackground
-    };
+    const srcUri = this.getImageUriForRes(imageRes);
 
     return (
       <View
@@ -68,8 +80,18 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={style}
       >
-        {isLoaded ? null : <Placeholder />}
-        <LazyLoadingImage {...props} />
+        {isLoaded ? null : (
+          <Fragment>
+            <Placeholder />
+            {this.renderPlaceholderImage()}
+          </Fragment>
+        )}
+        <LazyLoadingImage
+          borderRadius={borderRadius}
+          onLoad={this.handleLoad}
+          source={srcUri && imageRes ? { uri: srcUri } : null}
+          style={styles.imageBackground}
+        />
       </View>
     );
   }

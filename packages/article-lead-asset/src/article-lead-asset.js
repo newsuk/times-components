@@ -8,8 +8,8 @@ import {
 } from "./article-lead-asset-prop-types";
 import getRatio from "./get-ratio";
 
-const ArticleLeadAssetModalImage = ({ aspectRatio, caption, uri, width }) => (
-  <ModalImage {...{ aspectRatio, caption, uri, width }} />
+const ArticleLeadAssetModalImage = ({ aspectRatio, caption, uri }) => (
+  <ModalImage {...{ aspectRatio, caption, uri }} />
 );
 
 const ArticleLeadAsset = ({

@@ -11,23 +11,29 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      lowResUri: null,
       showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.onLowResImageUriCalculate = this.onLowResImageUriCalculate.bind(this);
   }
 
-  showModal() {
-    this.setState({ showModal: true });
+  onLowResImageUriCalculate({ uri }) {
+    this.setState({ lowResUri: uri });
   }
 
   hideModal() {
     this.setState({ showModal: false });
   }
 
+  showModal() {
+    this.setState({ showModal: true });
+  }
+
   render() {
     const { caption } = this.props;
-    const { showModal } = this.state;
+    const { showModal, lowResUri } = this.state;
 
     const captionWithStyles =
       caption &&
@@ -48,14 +54,21 @@ class ModalImage extends Component {
                 <CloseButton onPress={this.hideModal} />
               </View>
               <Gestures style={styles.imageContainer}>
-                <Image {...this.props} style={styles.image} />
+                <Image
+                  {...this.props}
+                  placeholderUri={lowResUri}
+                  style={styles.image}
+                />
               </Gestures>
               {captionWithStyles}
             </SafeAreaView>
           </View>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image {...this.props} />
+          <Image
+            {...this.props}
+            onImageUriCalculate={this.onLowResImageUriCalculate}
+          />
         </Button>
       </View>
     );
