@@ -136,7 +136,7 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-            <Slice onPress={() => {}} slice={mock} />
+          <Slice onPress={() => {}} slice={mock} />
         </Responsive>
       );
 
