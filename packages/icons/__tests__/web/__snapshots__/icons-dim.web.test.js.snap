@@ -14,7 +14,7 @@ exports[`2. iconvideo sets a width when height is set 1`] = `
   aria-label="[title]"
   height={50}
   role="img"
-  width={86}
+  width={85}
 />
 `;
 
