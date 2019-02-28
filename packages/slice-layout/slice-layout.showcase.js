@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView, View } from "react-native";
+import { editionBreakpoints } from "@times-components/styleguide";
+
 import {
   CommentLeadAndCartoon,
   LeadOneAndFourSlice,
@@ -54,12 +56,16 @@ const Support4 = () => (
   <View style={[{ minHeight: 150 }, { backgroundColor: "blue" }]} />
 );
 
+const breakpointSelect = select =>
+  select("Breakpoints:", editionBreakpoints, "small");
+
 export default {
   children: [
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <LeadOneAndFourSlice
+            breakpoint={breakpointSelect(select)}
             renderLead={() => <Support3 id="support1" />}
             renderSupport1={() => <Support1 id="support2" />}
             renderSupport2={() => <Support2 id="support3" />}
@@ -72,9 +78,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <LeadOneAndOneSlice
+            breakpoint={breakpointSelect(select)}
             renderLead={() => (
               <View
                 id="lead"
@@ -218,9 +225,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <SecondaryFourSlice
+            breakpoint={breakpointSelect(select)}
             renderSecondary1={() => <Support1 id="support1" />}
             renderSecondary2={() => <Support2 id="support2" />}
             renderSecondary3={() => <Support3 id="support3" />}
@@ -232,9 +240,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <SecondaryTwoAndTwoSlice
+            breakpoint={breakpointSelect(select)}
             renderSecondary1={() => <Support1 id="support1" />}
             renderSecondary2={() => <Support2 id="support2" />}
             renderSupport1={() => <Support3 id="support3" />}
@@ -248,9 +257,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <SecondaryOneAndFourSlice
+            breakpoint={breakpointSelect(select)}
             renderSecondary={() => <Support1 id="support1" />}
             renderSupport1={() => <Support2 id="support2" />}
             renderSupport2={() => <Support3 id="support3" />}
@@ -263,9 +273,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <SecondaryTwoNoPicAndTwoSlice
+            breakpoint={breakpointSelect(select)}
             renderSecondary1={() => <Support1 id="support1" />}
             renderSecondary2={() => <Support2 id="support2" />}
             renderSupport1={() => <Support3 id="support3" />}
@@ -277,9 +288,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <LeadTwoNoPicAndTwoSlice
+            breakpoint={breakpointSelect(select)}
             renderLead1={() => <Support1 id="support1" />}
             renderLead2={() => <Support2 id="support2" />}
             renderSupport1={() => <Support3 id="support3" />}
@@ -291,9 +303,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <ListTwoAndSixNoPic
+            breakpoint={breakpointSelect(select)}
             renderLead1={() => <Support3 id="support1" />}
             renderLead2={() => <Support4 id="support2" />}
             renderSupport1={() => <Support1 id="support3" />}
@@ -309,9 +322,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <Leaders
+            breakpoint={breakpointSelect(select)}
             renderLeader1={() => <Support1 id="support1" />}
             renderLeader2={() => <Support2 id="support2" />}
             renderLeader3={() => <Support3 id="support3" />}
@@ -322,9 +336,10 @@ export default {
       type: "story"
     },
     {
-      component: () => (
+      component: ({ select }) => (
         <ScrollView>
           <CommentLeadAndCartoon
+            breakpoint={breakpointSelect(select)}
             renderCartoon={() => <Support2 id="support2" />}
             renderLead={() => <Support1 id="support1" />}
           />
