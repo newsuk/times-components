@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.9.9",
+  "version": "3.9.10",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -68,7 +68,7 @@
     "@times-components/markup": "3.3.24",
     "@times-components/markup-forest": "1.6.0",
     "@times-components/styleguide": "3.24.0",
-    "@times-components/video-label": "2.2.31",
+    "@times-components/video-label": "2.2.32",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

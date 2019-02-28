@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.4.11...@times-components/icons@2.5.0) (2019-02-28)
+
+
+### Features
+
+* Updated video icon ([#1761](https://github.com/newsuk/times-components/issues/1761)) ([df51e7d](https://github.com/newsuk/times-components/commit/df51e7d))
+
+
+
+
+
 ## [2.4.11](https://github.com/newsuk/times-components/compare/@times-components/icons@2.4.10...@times-components/icons@2.4.11) (2019-02-25)
 
 **Note:** Version bump only for package @times-components/icons
