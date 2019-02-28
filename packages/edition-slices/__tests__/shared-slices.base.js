@@ -149,7 +149,6 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Slice onPress={() => {}} slice={mock} />
           <Context.Provider value={{ pubName: "TIMES" }}>
             <Slice onPress={() => {}} slice={mock} />
           </Context.Provider>
@@ -175,7 +174,7 @@ export default () => {
     }
   }));
 
-  iterator(commonTests);
+  // iterator(commonTests);
   iterator(testsForST);
-  iterator(testsForTimes);
+  // iterator(testsForTimes);
 };
