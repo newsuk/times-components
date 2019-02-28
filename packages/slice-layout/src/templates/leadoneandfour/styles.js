@@ -1,11 +1,13 @@
+import { spacing } from "@times-components/styleguide";
+
 const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: 10
+    paddingHorizontal: spacing(2)
   },
   leadContainer: {
-    padding: 10,
+    padding: spacing(2),
     width: "50%"
   },
   supportContainer: {
