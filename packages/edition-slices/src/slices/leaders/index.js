@@ -7,7 +7,7 @@ import { TileM } from "../../tiles";
 import styles from "./styles";
 import MastHead from "./masthead";
 
-const renderHead = (pubName) => (
+const renderHead = pubName => (
   <View style={styles.mastheadContainer}>
     <MastHead publicationName={pubName} />
     <View style={styles.headingContainer}>
@@ -16,16 +16,11 @@ const renderHead = (pubName) => (
   </View>
 );
 
-const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => {
-  console.log('inside is>>');
-  return (
+const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => (
   <Context.Consumer>
-    {
-      ({pubName}) => {
-        console.log('pubName is>>>>>>',pubName);
-        return (
-        <View style={styles.container}>
-        { renderHead(pubName) }
+    {({ pubName }) => (
+      <View style={styles.container}>
+        {renderHead(pubName)}
         <Leaders
           renderLeader1={() => (
             <TileM onPress={onPress} tile={leader1} tileName="leader1" />
@@ -37,12 +32,10 @@ const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => {
             <TileM onPress={onPress} tile={leader3} tileName="leader3" />
           )}
         />
-         </View>
-      )}
-    }
-
+      </View>
+    )}
   </Context.Consumer>
-)};
+);
 
 LeadersSlice.propTypes = {
   onPress: PropTypes.func.isRequired,

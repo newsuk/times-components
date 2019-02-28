@@ -25,14 +25,13 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
             return <Text>{JSON.stringify(error)}</Text>;
           }
           const { publicationName } = edition;
-          console.log('pubname in section is >>>>>>>>>', publicationName)
           return edition.sections
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
               <Section
                 analyticsStream={track}
                 onPress={onPress}
-                pubName = {publicationName}
+                pubName={publicationName}
                 section={sectionData}
               />
             ));

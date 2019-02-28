@@ -15,31 +15,34 @@ const SecondaryOneAndFour = ({
   slice: { secondary, support1, support2, support3, support4 }
 }) => (
   <Context.Consumer>
-    {
-      ( {pubName} ) => (
-    <View style={styles.sliceWrapper}>
-    <View style={styles.logoContainer}>
-      {(pubName === 'Times' ? <TheTimesLogo height={40} width={40} /> : <TheSundayTimesLogo height={40} width={40} />)}
-    </View>
-    <ItemRowSeparator style={styles.separator} />
-    <SecondaryOneAndFourSlice
-      renderSecondary={() => (
-        <TileN onPress={onPress} tile={secondary} tileName="secondary" />
-      )}
-      renderSupport1={() => (
-        <TileO onPress={onPress} tile={support1} tileName="support1" />
-      )}
-      renderSupport2={() => (
-        <TileO onPress={onPress} tile={support2} tileName="support2" />
-      )}
-      renderSupport3={() => (
-        <TileO onPress={onPress} tile={support3} tileName="support3" />
-      )}
-      renderSupport4={() => (
-        <TileO onPress={onPress} tile={support4} tileName="support4" />
-      )}
-    />
-  </View>
+    {({ pubName }) => (
+      <View style={styles.sliceWrapper}>
+        <View style={styles.logoContainer}>
+          {pubName === "Times" ? (
+            <TheTimesLogo height={40} width={40} />
+          ) : (
+            <TheSundayTimesLogo height={40} width={40} />
+          )}
+        </View>
+        <ItemRowSeparator style={styles.separator} />
+        <SecondaryOneAndFourSlice
+          renderSecondary={() => (
+            <TileN onPress={onPress} tile={secondary} tileName="secondary" />
+          )}
+          renderSupport1={() => (
+            <TileO onPress={onPress} tile={support1} tileName="support1" />
+          )}
+          renderSupport2={() => (
+            <TileO onPress={onPress} tile={support2} tileName="support2" />
+          )}
+          renderSupport3={() => (
+            <TileO onPress={onPress} tile={support3} tileName="support3" />
+          )}
+          renderSupport4={() => (
+            <TileO onPress={onPress} tile={support4} tileName="support4" />
+          )}
+        />
+      </View>
     )}
   </Context.Consumer>
 );

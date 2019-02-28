@@ -45,40 +45,18 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const sliceWithContext = {
-  SecondaryOneAndFourSlice,
-  LeadersSlice
-  // LeadersSlice,
-  LeadOneAndOneSlice
-};
-
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-    <Context.Provider value={{pubName: "STIMES"}}>
-      <Component
-        onPress={preventDefaultedAction(decorateAction)("onPress")}
-        slice={data}
-      />
+      <Context.Provider value={{ pubName: "SUNDAYTIMES" }}>
+        <Component
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          slice={data}
+        />
       </Context.Provider>
     </ScrollView>
   </Responsive>
 );
-
-// const renderSliceWithContext = (Component, data) => (_, { decorateAction }) => {
-// console.log('Component is >>>>>>',Component);
-//   return (
-//   <Responsive>
-//     <ScrollView>
-//       <Context.Provider value={{pubName: "STIMES"}}>
-//         <Component
-//           onPress={preventDefaultedAction(decorateAction)("onPress")}
-//           slice={data}
-//         />
-//       </Context.Provider>
-//     </ScrollView>
-//   </Responsive>
-// )};
 
 const sliceStories = [
   {
@@ -160,7 +138,7 @@ const sliceStories = [
 
 export default {
   children: sliceStories.map(({ mock, name, Slice }) => ({
-    component: sliceWithContext[Slice.name] ? renderSliceWithContext(Slice, mock): renderSlice(Slice, mock),
+    component: renderSlice(Slice, mock),
     name,
     type: "story"
   })),
