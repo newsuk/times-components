@@ -6,7 +6,7 @@ import propTypes from "./prop-types";
 
 const viewBox = "0 0 68 40";
 
-const ratio = 68 / 48;
+const ratio = 50 / 40;
 const IconVideo = ({
   fillColour,
   height,
