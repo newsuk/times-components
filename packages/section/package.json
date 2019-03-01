@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
+    "@times-components/context": "0.7.3",
     "@times-components/edition-slices": "0.28.3",
     "@times-components/responsive": "0.3.6",
     "@times-components/styleguide": "3.25.1",
