@@ -5,10 +5,7 @@ const sectionColourPicker = (
   template = "mainstandard"
 ) => {
   const config = {
-    indepth: {
-      ...sectionColours,
-      ...secondarySectionColours
-    },
+    indepth: {},
     magazinecomment: {
       ...sectionColours,
       ...secondarySectionColours
