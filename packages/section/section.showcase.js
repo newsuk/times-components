@@ -20,6 +20,7 @@ export default {
         <Section
           analyticsStream={storybookReporter}
           onPress={preventDefaultedAction(decorateAction)("onPress")}
+          pubName="TIMES"
           section={mockStandardSection("News")}
         />
       ),
@@ -31,6 +32,7 @@ export default {
         <Section
           analyticsStream={storybookReporter}
           onPress={preventDefaultedAction(decorateAction)("onPress")}
+          pubName="TIMES"
           section={mockPuzzleSection("Puzzles")}
         />
       ),
