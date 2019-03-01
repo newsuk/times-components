@@ -9,8 +9,8 @@ jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/icons", () => ({
-  TheTimesLogo: "TheTimesLogo",
-  TheSTLogo: "TheSTLogo"
+  TheSTLogo: "TheSTLogo",
+  TheTimesLogo: "TheTimesLogo"
 }));
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/link", () => "Link");
