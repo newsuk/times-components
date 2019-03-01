@@ -15,10 +15,10 @@ const SecondaryOneAndFour = ({
   slice: { secondary, support1, support2, support3, support4 }
 }) => (
   <Context.Consumer>
-    {({ pubName }) => (
+    {({ publicationName }) => (
       <View style={styles.sliceWrapper}>
         <View style={styles.logoContainer}>
-          {pubName === "TIMES" ? (
+          {publicationName === "TIMES" ? (
             <TheTimesLogo height={40} width={40} />
           ) : (
             <TheSTLogo height={40} width={40} />

@@ -48,7 +48,7 @@ const preventDefaultedAction = decorateAction =>
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-      <Context.Provider value={{ pubName: "TIMES" }}>
+      <Context.Provider value={{ publicationName: "TIMES" }}>
         <Component
           onPress={preventDefaultedAction(decorateAction)("onPress")}
           slice={data}

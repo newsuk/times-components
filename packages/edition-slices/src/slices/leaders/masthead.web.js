@@ -4,15 +4,15 @@ import styles from "./styles";
 import propTypes from "./proptypes";
 
 const MastHead = ({ publicationName }) => {
-  let uri =
-    "https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png";
-  let aspectRatio = 243 / 45;
-  let style = "mastheadStyleST";
+  let uri = "https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png";
+  let aspectRatio = 1435 / 250;
+  let style = "mastheadStyleTimes";
 
-  if (publicationName === "TIMES") {
-    style = "mastheadStyleTimes";
-    aspectRatio = 1435 / 250;
-    uri = "https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png";
+  if (publicationName !== "TIMES") {
+    style = "mastheadStyleST";
+    aspectRatio = 243 / 45;
+    uri =
+      "https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png";
   }
 
   return <Image aspectRatio={aspectRatio} style={styles[style]} uri={uri} />;

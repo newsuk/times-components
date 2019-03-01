@@ -31,7 +31,7 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
               <Section
                 analyticsStream={track}
                 onPress={onPress}
-                pubName={publicationName}
+                publicationName={publicationName}
                 section={sectionData}
               />
             ));

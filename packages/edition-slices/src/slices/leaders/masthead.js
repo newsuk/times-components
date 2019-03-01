@@ -4,14 +4,14 @@ import styles from "./styles";
 import propTypes from "./proptypes";
 
 const MastHead = ({ publicationName }) => {
-  let style = "mastheadStyleST";
+  let style = "mastheadStyleTimes";
   // eslint-disable-next-line global-require
-  let source = require("../../../assets/st-masthead.png");
+  let source = require("../../../assets/times-leading-header.png");
 
-  if (publicationName === "TIMES") {
-    style = "mastheadStyleTimes";
+  if (publicationName !== "TIMES") {
+    style = "mastheadStyleST";
     // eslint-disable-next-line global-require
-    source = require("../../../assets/times-leading-header.png");
+    source = require("../../../assets/st-masthead.png");
   }
 
   return <Image resizeMode="contain" source={source} style={styles[style]} />;

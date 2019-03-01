@@ -30,7 +30,7 @@ class Section extends Component {
   render() {
     const {
       onPress,
-      pubName,
+      publicationName,
       section: { slices, title },
       onViewed,
       receiveChildList
@@ -58,7 +58,7 @@ class Section extends Component {
           }
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={({ index, item: slice }) => (
-            <Context.Provider value={{ pubName }}>
+            <Context.Provider value={{ publicationName }}>
               <Slice
                 index={index}
                 length={slices.length}
@@ -80,7 +80,7 @@ class Section extends Component {
 Section.propTypes = {
   onPress: PropTypes.func,
   onViewed: PropTypes.func,
-  pubName: PropTypes.string.isRequired,
+  publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
   section: PropTypes.shape({}).isRequired
 };

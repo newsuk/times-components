@@ -149,7 +149,7 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Context.Provider value={{ pubName: "TIMES" }}>
+          <Context.Provider value={{ publicationName: "TIMES" }}>
             <Slice onPress={() => {}} slice={mock} />
           </Context.Provider>
         </Responsive>
@@ -164,7 +164,7 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Context.Provider value={{ pubName: "SUNDAYTIMES" }}>
+          <Context.Provider value={{ publicationName: "SUNDAYTIMES" }}>
             <Slice onPress={() => {}} slice={mock} />
           </Context.Provider>
         </Responsive>

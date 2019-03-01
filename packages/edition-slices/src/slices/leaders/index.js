@@ -7,9 +7,9 @@ import { TileM } from "../../tiles";
 import styles from "./styles";
 import MastHead from "./masthead";
 
-const renderHead = pubName => (
+const renderHead = publicationName => (
   <View style={styles.mastheadContainer}>
-    <MastHead publicationName={pubName} />
+    <MastHead publicationName={publicationName} />
     <View style={styles.headingContainer}>
       <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
     </View>
@@ -18,9 +18,9 @@ const renderHead = pubName => (
 
 const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => (
   <Context.Consumer>
-    {({ pubName }) => (
+    {({ publicationName }) => (
       <View style={styles.container}>
-        {renderHead(pubName)}
+        {renderHead(publicationName)}
         <Leaders
           renderLeader1={() => (
             <TileM onPress={onPress} tile={leader1} tileName="leader1" />
