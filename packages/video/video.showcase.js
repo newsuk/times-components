@@ -67,6 +67,36 @@ export default {
       type: "story"
     },
     {
+      component: () => {
+        const props = { playerId: "y4yoiFCf1", videoId: "5992442066001" };
+        return (
+          <View>
+            <Text
+              style={{
+                marginBottom: 10,
+                marginTop: 10
+              }}
+            >
+              Mobile size:
+            </Text>
+            <Video {...defaultVideoProps} {...props} />
+            <Text
+              style={{
+                marginBottom: 10,
+                marginTop: 20
+              }}
+            >
+              Desktop size:
+            </Text>
+            <Video {...defaultVideoProps} {...props} height={374} width={664} />
+          </View>
+        );
+      },
+      name: "360 player",
+      platform: "web",
+      type: "story"
+    },
+    {
       component: () => (
         <View>
           <Video {...defaultVideoProps} />
