@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-error",
-  "version": "0.2.31",
+  "version": "0.2.32",
   "description": "Article Error Template",
   "main": "dist/article-error",
   "dev": "src/article-error",
@@ -55,8 +55,8 @@
     "react-native-web": "0.9.0"
   },
   "dependencies": {
-    "@times-components/button": "2.3.31",
-    "@times-components/styleguide": "3.24.0",
+    "@times-components/button": "2.3.32",
+    "@times-components/styleguide": "3.25.0",
     "prop-types": "15.6.2"
   },
   "publishConfig": {

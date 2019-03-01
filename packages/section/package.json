@@ -1,6 +1,6 @@
 {
   "name": "@times-components/section",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",
@@ -35,9 +35,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/edition-slices": "0.28.1",
-    "@times-components/responsive": "0.3.4",
-    "@times-components/styleguide": "3.24.0",
+    "@times-components/edition-slices": "0.28.2",
+    "@times-components/responsive": "0.3.5",
+    "@times-components/styleguide": "3.25.0",
     "@times-components/tracking": "2.4.3",
     "prop-types": "15.6.2"
   },
@@ -47,7 +47,7 @@
     "@times-components/fixture-generator": "0.17.0",
     "@times-components/jest-configurator": "2.3.0",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/link": "3.2.22",
+    "@times-components/link": "3.2.23",
     "@times-components/storybook": "3.4.1",
     "@times-components/tealium-utils": "0.7.26",
     "@times-components/webpack-configurator": "2.0.15",

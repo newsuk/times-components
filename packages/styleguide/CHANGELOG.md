@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.25.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.24.0...@times-components/styleguide@3.25.0) (2019-03-01)
+
+
+### Features
+
+* Removing section colours for indepth template ([#1760](https://github.com/newsuk/times-components/issues/1760)) ([63c21cc](https://github.com/newsuk/times-components/commit/63c21cc))
+
+
+
+
+
 # [3.24.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.23.0...@times-components/styleguide@3.24.0) (2019-02-25)
 
 
