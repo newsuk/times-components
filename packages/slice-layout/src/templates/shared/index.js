@@ -1,3 +1,4 @@
 import { ItemColSeparator, ItemRowSeparator } from "./item-separators";
+import ColumnLayout from "./column-layout";
 
-export { ItemColSeparator, ItemRowSeparator };
+export { ColumnLayout, ItemColSeparator, ItemRowSeparator };

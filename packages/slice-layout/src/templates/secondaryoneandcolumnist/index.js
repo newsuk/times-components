@@ -1,17 +1,13 @@
 import React from "react";
 import { View } from "react-native";
 import propTypes from "./proptypes";
-import { ItemRowSeparator } from "../shared";
+import { ColumnLayout } from "../shared";
 
 const SecondaryOneAndColumnistSlice = ({
   renderSecondary,
   renderColumnist
 }) => (
-  <View>
-    {renderSecondary()}
-    <ItemRowSeparator />
-    {renderColumnist()}
-  </View>
+  <ColumnLayout tiles={[renderSecondary, renderColumnist]} />
 );
 
 SecondaryOneAndColumnistSlice.propTypes = propTypes;

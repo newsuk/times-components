@@ -1,14 +1,9 @@
 import React from "react";
-import { View } from "react-native";
-import { ItemRowSeparator } from "../shared";
+import { ColumnLayout } from "../shared";
 import propTypes from "./proptypes";
 
 const CommentLeadAndCartoon = ({ renderLead, renderCartoon }) => (
-  <View>
-    {renderLead()}
-    <ItemRowSeparator />
-    {renderCartoon()}
-  </View>
+  <ColumnLayout tiles={[renderLead, renderCartoon]} />
 );
 
 CommentLeadAndCartoon.propTypes = propTypes;
