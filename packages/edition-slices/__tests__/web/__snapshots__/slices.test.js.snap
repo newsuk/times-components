@@ -30,7 +30,7 @@ exports[`1. daily universal register slice 1`] = `
 exports[`1. secondary one and four slice 1`] = `
 <div>
   <div>
-    <TheTimesLogo
+    <TheSTLogo
       height={40}
       width={40}
     />
@@ -73,92 +73,48 @@ exports[`1. secondary one and four slice 1`] = `
 `;
 
 exports[`1. secondary one and four slice 2`] = `
-Array [
+<div>
+  <div>
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </div>
+  <div />
   <div>
     <div>
-      <TheTimesLogo
-        height={40}
-        width={40}
+      <div>
+        <TileN
+          tileName="secondary"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support1"
       />
     </div>
     <div />
     <div>
-      <div>
-        <div>
-          <TileN
-            tileName="secondary"
-          />
-        </div>
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support2"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support3"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support4"
-        />
-      </div>
-    </div>
-  </div>,
-  <div>
-    <div>
-      <TheTimesLogo
-        height={40}
-        width={40}
+      <TileO
+        tileName="support2"
       />
     </div>
     <div />
     <div>
-      <div>
-        <div>
-          <TileN
-            tileName="secondary"
-          />
-        </div>
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support2"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support3"
-        />
-      </div>
-      <div />
-      <div>
-        <TileO
-          tileName="support4"
-        />
-      </div>
+      <TileO
+        tileName="support3"
+      />
     </div>
-  </div>,
-]
+    <div />
+    <div>
+      <TileO
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
 `;
 
 exports[`2. lead one full width slice 1`] = `

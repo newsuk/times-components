@@ -210,7 +210,7 @@ exports[`1. secondary one and four slice 1`] = `
   <div
     className="IS1 S1"
   >
-    <TheTimesLogo
+    <TheSTLogo
       height={40}
       width={40}
     />
@@ -277,8 +277,7 @@ exports[`1. secondary one and four slice 1`] = `
 `;
 
 exports[`1. secondary one and four slice 2`] = `
-Array [
-  <style>
+<style>
 .S1 {
   margin-bottom: 0px;
 }
@@ -358,225 +357,75 @@ Array [
 </style>
 
 <div
-    className="IS9 S1"
+  className="IS9 S1"
+>
+  <div
+    className="IS1 S1"
+  >
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </div>
+  <div
+    className="IS2 S1"
+  />
+  <div
+    className="IS8 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS3 S1"
     >
-      <TheTimesLogo
-        height={40}
-        width={40}
-      />
+      <div
+        className="S1"
+      >
+        <TileN
+          tileName="secondary"
+        />
+      </div>
     </div>
     <div
-      className="IS2 S1"
+      className="IS4 S1"
     />
     <div
-      className="IS8 S1"
+      className="S1"
     >
-      <div
-        className="IS3 S1"
-      >
-        <div
-          className="S1"
-        >
-          <TileN
-            tileName="secondary"
-          />
-        </div>
-      </div>
-      <div
-        className="IS4 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="IS5 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support2"
-        />
-      </div>
-      <div
-        className="IS6 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support3"
-        />
-      </div>
-      <div
-        className="IS7 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support4"
-        />
-      </div>
-    </div>
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS2 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS3 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS4 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS7 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS8 {
-  background-color: rgba(39,45,52,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS9 {
-  background-color: rgba(39,45,52,1.00);
-}
-</style>
-
-<div
-    className="IS9 S1"
-  >
-    <div
-      className="IS1 S1"
-    >
-      <TheTimesLogo
-        height={40}
-        width={40}
+      <TileO
+        tileName="support1"
       />
     </div>
     <div
-      className="IS2 S1"
+      className="IS5 S1"
     />
     <div
-      className="IS8 S1"
+      className="S1"
     >
-      <div
-        className="IS3 S1"
-      >
-        <div
-          className="S1"
-        >
-          <TileN
-            tileName="secondary"
-          />
-        </div>
-      </div>
-      <div
-        className="IS4 S1"
+      <TileO
+        tileName="support2"
       />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="IS5 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support2"
-        />
-      </div>
-      <div
-        className="IS6 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support3"
-        />
-      </div>
-      <div
-        className="IS7 S1"
-      />
-      <div
-        className="S1"
-      >
-        <TileO
-          tileName="support4"
-        />
-      </div>
     </div>
-  </div>,
-]
+    <div
+      className="IS6 S1"
+    />
+    <div
+      className="S1"
+    >
+      <TileO
+        tileName="support3"
+      />
+    </div>
+    <div
+      className="IS7 S1"
+    />
+    <div
+      className="S1"
+    >
+      <TileO
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
 `;
 
 exports[`2. lead one full width slice 1`] = `
