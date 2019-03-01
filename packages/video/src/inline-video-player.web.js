@@ -18,11 +18,8 @@ const css = `
   height: 70px;
   margin-top: -35px;
   margin-left: -35px;
-
   background: rgba(0, 0, 0, 0.4);
-
   line-height: 65px;
-
   border-radius: 0;
   border-style: solid;
   border-width: 3px;
@@ -34,12 +31,9 @@ const css = `
 }
 
 .video-js video:not([data-player="default"]) ~ button, .video-js video:not([data-player="default"]) ~ button:hover {
-  display: block !important;
+  display: block;
   background: none !important;
   margin: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
