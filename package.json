@@ -13,8 +13,8 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
-    "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
+    "test": "jest ./lib --ci --bail --coverage",
+    "test:all": "lerna run test --since --stream && lerna run test:all --since --stream",
     "visual-snapshot-ios": "./lib/visual_snapshots/run-ios-dextrose.sh",
     "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",

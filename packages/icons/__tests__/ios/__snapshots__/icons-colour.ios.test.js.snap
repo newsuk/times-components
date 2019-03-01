@@ -131,7 +131,7 @@ exports[`5. iconfacebook renders with different colours 1`] = `
 />
 `;
 
-exports[`6. thetimeslogo renders with different colours 1`] = `
+exports[`6. thestlogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -153,7 +153,7 @@ exports[`6. thetimeslogo renders with different colours 1`] = `
 />
 `;
 
-exports[`7. thesundaytimeslogo renders with different colours 1`] = `
+exports[`7. thetimeslogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [

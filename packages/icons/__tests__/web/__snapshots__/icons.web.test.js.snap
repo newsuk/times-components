@@ -100,7 +100,7 @@ exports[`5. iconfacebook renders 1`] = `
 </svg>
 `;
 
-exports[`6. thetimeslogo renders 1`] = `
+exports[`6. thestlogo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -108,7 +108,7 @@ exports[`6. thetimeslogo renders 1`] = `
   width={20}
 >
   <title>
-    TheTimesLogo
+    TheSTLogo
   </title>
   <path
     d="d88c5eb2e78d8130ddd1354b0637b148"
@@ -117,7 +117,7 @@ exports[`6. thetimeslogo renders 1`] = `
 </svg>
 `;
 
-exports[`7. thesundaytimeslogo renders 1`] = `
+exports[`7. thetimeslogo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -125,7 +125,7 @@ exports[`7. thesundaytimeslogo renders 1`] = `
   width={20}
 >
   <title>
-    TheSundayTimesLogo
+    TheTimesLogo
   </title>
   <path
     d="d88c5eb2e78d8130ddd1354b0637b148"

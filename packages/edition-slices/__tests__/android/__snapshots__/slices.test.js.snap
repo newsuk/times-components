@@ -40,92 +40,48 @@ exports[`1. daily universal register slice 1`] = `
 `;
 
 exports[`1. secondary one and four slice 1`] = `
-Array [
+<View>
+  <View>
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </View>
+  <View />
   <View>
     <View>
-      <TheTimesLogo
-        height={40}
-        width={40}
+      <View>
+        <TileN
+          tileName="secondary"
+        />
+      </View>
+    </View>
+    <View />
+    <View>
+      <TileO
+        tileName="support1"
       />
     </View>
     <View />
     <View>
-      <View>
-        <View>
-          <TileN
-            tileName="secondary"
-          />
-        </View>
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support3"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support4"
-        />
-      </View>
-    </View>
-  </View>,
-  <View>
-    <View>
-      <TheTimesLogo
-        height={40}
-        width={40}
+      <TileO
+        tileName="support2"
       />
     </View>
     <View />
     <View>
-      <View>
-        <View>
-          <TileN
-            tileName="secondary"
-          />
-        </View>
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support3"
-        />
-      </View>
-      <View />
-      <View>
-        <TileO
-          tileName="support4"
-        />
-      </View>
+      <TileO
+        tileName="support3"
+      />
     </View>
-  </View>,
-]
+    <View />
+    <View>
+      <TileO
+        tileName="support4"
+      />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`2. lead one full width slice 1`] = `
@@ -168,68 +124,36 @@ exports[`2. leaders slice 1`] = `
 `;
 
 exports[`2. leaders slice 2`] = `
-Array [
+<View>
   <View>
-    <View>
-      <Image
-        resizeMode="contain"
-        source={
-          Object {
-            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
-          }
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
         }
-      />
-      <View>
-        <Text>
-           Leading Articles 
-        </Text>
-      </View>
-    </View>
+      }
+    />
     <View>
-      <TileM
-        tileName="leader1"
-      />
-      <View />
-      <TileM
-        tileName="leader2"
-      />
-      <View />
-      <TileM
-        tileName="leader3"
-      />
+      <Text>
+         Leading Articles 
+      </Text>
     </View>
-  </View>,
+  </View>
   <View>
-    <View>
-      <Image
-        resizeMode="contain"
-        source={
-          Object {
-            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
-          }
-        }
-      />
-      <View>
-        <Text>
-           Leading Articles 
-        </Text>
-      </View>
-    </View>
-    <View>
-      <TileM
-        tileName="leader1"
-      />
-      <View />
-      <TileM
-        tileName="leader2"
-      />
-      <View />
-      <TileM
-        tileName="leader3"
-      />
-    </View>
-  </View>,
-]
+    <TileM
+      tileName="leader1"
+    />
+    <View />
+    <TileM
+      tileName="leader2"
+    />
+    <View />
+    <TileM
+      tileName="leader3"
+    />
+  </View>
+</View>
 `;
 
 exports[`3. lead one and one slice 1`] = `
