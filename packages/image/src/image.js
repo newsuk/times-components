@@ -72,7 +72,8 @@ class TimesImage extends Component {
   render() {
     const { aspectRatio, borderRadius, highResSize, style, uri } = this.props;
     const { isLoaded, width } = this.state;
-    const srcUri = getUriAtRes(uri, highResSize || width);
+    const renderedRes = highResSize || width;
+    const srcUri = getUriAtRes(uri, renderedRes);
 
     return (
       <View
@@ -89,7 +90,7 @@ class TimesImage extends Component {
         <LazyLoadingImage
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
-          source={srcUri && width ? { uri: srcUri } : null}
+          source={srcUri && renderedRes ? { uri: srcUri } : null}
           style={styles.imageBackground}
         />
       </View>

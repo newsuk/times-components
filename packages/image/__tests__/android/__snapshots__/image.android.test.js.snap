@@ -126,7 +126,7 @@ exports[`5. handle onload event 2`] = `
 </View>
 `;
 
-exports[`7. uses highressize if it is smaller than layout width 1`] = `
+exports[`7. uses highressize if it exists 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -138,7 +138,7 @@ exports[`7. uses highressize if it is smaller than layout width 1`] = `
   <Image
     source={
       Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=320",
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
       }
     }
   />
@@ -156,7 +156,39 @@ exports[`9. image with borderradius 1`] = `
   </View>
   <Image
     borderRadius={10}
-    source={null}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`10. uses lowressize image as placeholder if passed 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+  </View>
+  <Image
+    borderRadius={10}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+      }
+    }
+  />
+  <Image
+    borderRadius={10}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308",
+      }
+    }
   />
 </View>
 `;
