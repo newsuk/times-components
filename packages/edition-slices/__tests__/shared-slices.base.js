@@ -174,7 +174,7 @@ export default () => {
     }
   }));
 
-  // iterator(commonTests);
+  iterator(commonTests);
   iterator(testsForST);
-  // iterator(testsForTimes);
+  iterator(testsForTimes);
 };
