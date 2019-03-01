@@ -56,6 +56,13 @@ const styles = {
     }),
     marginTop: spacing(2)
   },
+  video360Icon: {
+    left: "50%",
+    marginLeft: -35,
+    marginTop: -35,
+    position: "absolute",
+    top: "50%"
+  },
   videoTabletContainer: {
     alignSelf: "center"
   }

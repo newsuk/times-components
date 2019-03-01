@@ -5,3 +5,4 @@ export { default as IconStar } from "./icons/star";
 export { default as IconFacebook } from "./icons/facebook";
 export { default as TheSTLogo } from "./icons/thesundaytimes-logo";
 export { default as TheTimesLogo } from "./icons/thetimes-logo";
+export { default as IconVideo360Player } from "./icons/video-360-player";
