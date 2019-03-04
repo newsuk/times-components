@@ -1,18 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { SecondaryOneAndColumnistSlice } from "@times-components/slice-layout";
-import { TileH, TileT } from "../../tiles";
+import { TileH, TileT, TileAA, TileAB } from "../../tiles";
+import { ResponsiveSlice } from "../shared";
 
 const SecondaryOneAndColumnist = ({
   onPress,
   slice: { columnist, secondary }
 }) => (
-  <SecondaryOneAndColumnistSlice
-    renderColumnist={() => (
-      <TileH onPress={onPress} tile={columnist} tileName="columnist" />
+  <ResponsiveSlice
+    renderMedium={breakpoint => (
+      <SecondaryOneAndColumnistSlice
+        breakpoint={breakpoint}
+        renderColumnist={() => (
+          <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
+        )}
+        renderSecondary={() => (
+          <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
+        )}
+      />
     )}
-    renderSecondary={() => (
-      <TileT onPress={onPress} tile={secondary} tileName="secondary" />
+    renderSmall={breakpoint => (
+      <SecondaryOneAndColumnistSlice
+        breakpoint={breakpoint}
+        renderColumnist={() => (
+          <TileH onPress={onPress} tile={columnist} tileName="columnist" />
+        )}
+        renderSecondary={() => (
+          <TileT onPress={onPress} tile={secondary} tileName="secondary" />
+        )}
+      />
     )}
   />
 );
