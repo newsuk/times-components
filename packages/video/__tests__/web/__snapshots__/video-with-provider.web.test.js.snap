@@ -17,11 +17,10 @@ exports[`1. paidonly video for unpaid users 1`] = `
 exports[`2. paidonly video for paid users 1`] = `
 <div>
   <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-1"
-      poster="fa3ca0da118e3184f45765fbc02fb72f"
-    />
+    Video unable to play
+  </div>
+  <div>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>
 </div>
 `;
@@ -29,11 +28,10 @@ exports[`2. paidonly video for paid users 1`] = `
 exports[`3. non-paidonly video for unpaid users 1`] = `
 <div>
   <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-2"
-      poster="fa3ca0da118e3184f45765fbc02fb72f"
-    />
+    Video unable to play
+  </div>
+  <div>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>
 </div>
 `;
@@ -41,11 +39,10 @@ exports[`3. non-paidonly video for unpaid users 1`] = `
 exports[`4. non-paidonly video for paid users 1`] = `
 <div>
   <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-3"
-      poster="fa3ca0da118e3184f45765fbc02fb72f"
-    />
+    Video unable to play
+  </div>
+  <div>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>
 </div>
 `;
@@ -53,10 +50,10 @@ exports[`4. non-paidonly video for paid users 1`] = `
 exports[`5. video without a poster image 1`] = `
 <div>
   <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-4"
-    />
+    Video unable to play
+  </div>
+  <div>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>
 </div>
 `;

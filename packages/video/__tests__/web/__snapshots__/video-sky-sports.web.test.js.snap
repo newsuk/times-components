@@ -3,22 +3,10 @@
 exports[`1. video marked as sky sports 1`] = `
 <div>
   <div>
-    <div>
-      <div>
-        Premier League clips powered by Sky Sports
-      </div>
-      <div>
-        <div />
-        <img
-          alt=""
-          draggable={false}
-          src="a5e0ef52cbdc4afad634c328d59b22e5"
-        />
-      </div>
-    </div>
-    <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
-    />
+    Video unable to play
+  </div>
+  <div>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>
 </div>
 `;
