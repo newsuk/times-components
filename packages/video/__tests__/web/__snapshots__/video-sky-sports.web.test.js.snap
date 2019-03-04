@@ -10,13 +10,3 @@ exports[`1. video marked as sky sports 1`] = `
   </div>
 </div>
 `;
-
-exports[`2. no sky banner displayed on play 1`] = `
-<div>
-  <div>
-    <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
-    />
-  </div>
-</div>
-`;
