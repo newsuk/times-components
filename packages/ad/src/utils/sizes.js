@@ -53,6 +53,16 @@ const sizes = {
       height: 250,
       sizes: [[300, 250]],
       width: 300
+    },
+    {
+      height: 90,
+      sizes: [leaderboard],
+      width: 728
+    },
+    {
+      height: 250,
+      sizes: [billboard],
+      width: 970
     }
   ],
   pixel: [
