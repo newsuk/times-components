@@ -4,6 +4,7 @@ import { ScrollView, View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 
 import {
+  Column,
   CommentLeadAndCartoon,
   LeadOneAndFourSlice,
   LeadOneAndOneSlice,
@@ -61,6 +62,20 @@ const breakpointSelect = select =>
 
 export default {
   children: [
+    {
+      component: () => (
+        <ScrollView>
+          <Column
+            tiles={[
+              () => <Support3 id="support1" />,
+              () => <Support1 id="support2" />
+            ]}
+          />
+        </ScrollView>
+      ),
+      name: "Column - Generic Layout",
+      type: "story"
+    },
     {
       component: ({ select }) => (
         <ScrollView>

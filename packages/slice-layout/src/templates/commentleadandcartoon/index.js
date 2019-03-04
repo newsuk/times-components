@@ -1,9 +1,9 @@
 import React from "react";
-import { ColumnLayout } from "../shared";
+import Column from "../column";
 import propTypes from "./proptypes";
 
 const CommentLeadAndCartoon = ({ renderLead, renderCartoon }) => (
-  <ColumnLayout tiles={[renderLead, renderCartoon]} />
+  <Column tiles={[renderLead, renderCartoon]} />
 );
 
 CommentLeadAndCartoon.propTypes = propTypes;

@@ -1,7 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one and four 1`] = `
-<style>
+Array [
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+    className="S1"
+  >
+    lead
+  </div>,
+  <style>
 .S1 {
   border-bottom-width: 0px;
   padding-top: 0px;
@@ -19,65 +35,61 @@ exports[`1. lead one and four 1`] = `
 </style>
 
 <div
-  className="S1"
->
-  <div
     className="S1"
   >
-    lead
-  </div>
-  <div
-    className="S1"
-  >
-    support-1
-  </div>
-  <div
-    className="S2"
-    style={
-      Object {
-        "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomWidth": "1px",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+    <div
+      className="S1"
+    >
+      support-1
+    </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
       }
-    }
-  />
-  <div
-    className="S1"
-  >
-    support-2
-  </div>
-  <div
-    className="S2"
-    style={
-      Object {
-        "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomWidth": "1px",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+    />
+    <div
+      className="S1"
+    >
+      support-2
+    </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
       }
-    }
-  />
-  <div
-    className="S1"
-  >
-    support-3
-  </div>
-  <div
-    className="S2"
-    style={
-      Object {
-        "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomWidth": "1px",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+    />
+    <div
+      className="S1"
+    >
+      support-3
+    </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
       }
-    }
-  />
-  <div
-    className="S1"
-  >
-    support-4
-  </div>
-</div>
+    />
+    <div
+      className="S1"
+    >
+      support-4
+    </div>
+  </div>,
+]
 `;

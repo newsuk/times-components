@@ -1,51 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one and four 1`] = `
-<View>
+Array [
   <Text>
     lead
-  </Text>
-  <Text>
-    support-1
-  </Text>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+  </Text>,
+  <View>
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <Text>
-    support-2
-  </Text>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+    />
+    <Text>
+      support-2
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <Text>
-    support-3
-  </Text>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+    />
+    <Text>
+      support-3
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <Text>
-    support-4
-  </Text>
-</View>
+    />
+    <Text>
+      support-4
+    </Text>
+  </View>,
+]
 `;

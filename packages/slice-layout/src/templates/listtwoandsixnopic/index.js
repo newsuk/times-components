@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
+import Column from "../column";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
 import propTypes from "./proptypes";
 
@@ -42,12 +43,7 @@ const ListTwoAndSixNoPic = ({
           </View>
         </View>
         <ItemRowSeparator />
-        {supportItems.map((item, index) => (
-          <View key={item().props.id}>
-            {item()}
-            {supportItems.length - 1 > index ? <ItemRowSeparator /> : null}
-          </View>
-        ))}
+        <Column tiles={supportItems} />
       </Fragment>
     );
   }

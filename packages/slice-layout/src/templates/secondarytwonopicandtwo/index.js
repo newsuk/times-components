@@ -1,7 +1,6 @@
 import React from "react";
-import { View } from "react-native";
 import propTypes from "./proptypes";
-import { ColumnLayout } from "../shared";
+import Column from "../column";
 
 const SecondaryTwoNoPicAndTwoSlice = ({
   renderSecondary1,
@@ -9,7 +8,9 @@ const SecondaryTwoNoPicAndTwoSlice = ({
   renderSupport1,
   renderSupport2
 }) => (
-  <ColumnLayout tiles={[renderSecondary1, renderSecondary2, renderSupport1, renderSupport2]} />
+  <Column
+    tiles={[renderSecondary1, renderSecondary2, renderSupport1, renderSupport2]}
+  />
 );
 
 SecondaryTwoNoPicAndTwoSlice.propTypes = propTypes;
