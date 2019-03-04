@@ -53,24 +53,15 @@ class TimesImage extends Component {
     this.setState({ isLoaded: true });
   }
 
-  renderLowResPlaceholder() {
-    const { borderRadius, lowResSize, uri } = this.props;
-
-    if (lowResSize) {
-      return (
-        <Image
-          borderRadius={borderRadius}
-          source={{ uri: getUriAtRes(uri, lowResSize) }}
-          style={styles.imageBackground}
-        />
-      );
-    }
-
-    return null;
-  }
-
   render() {
-    const { aspectRatio, borderRadius, highResSize, style, uri } = this.props;
+    const {
+      aspectRatio,
+      borderRadius,
+      highResSize,
+      lowResSize,
+      style,
+      uri
+    } = this.props;
     const { isLoaded, width } = this.state;
     const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
@@ -84,7 +75,13 @@ class TimesImage extends Component {
         {isLoaded ? null : (
           <Fragment>
             <Placeholder />
-            {this.renderLowResPlaceholder()}
+            {lowResSize ? (
+              <Image
+                borderRadius={borderRadius}
+                source={{ uri: getUriAtRes(uri, lowResSize) }}
+                style={styles.imageBackground}
+              />
+            ) : null}
           </Fragment>
         )}
         <LazyLoadingImage

@@ -11,7 +11,7 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      placeholderSize: null,
+      lowResImageWidth: null,
       showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
@@ -24,8 +24,7 @@ class ModalImage extends Component {
       layout: { width }
     }
   }) {
-    const { highResSize } = this.props;
-    this.setState({ placeholderSize: highResSize || width });
+    this.setState({ lowResImageWidth: width });
   }
 
   hideModal() {
@@ -37,9 +36,9 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { caption } = this.props;
-    const { showModal, placeholderSize } = this.state;
-
+    const { caption, highResSize } = this.props;
+    const { showModal, lowResImageWidth } = this.state;
+    const lowResSize = highResSize || lowResImageWidth;
     const captionWithStyles =
       caption &&
       React.cloneElement(caption, {
@@ -61,7 +60,7 @@ class ModalImage extends Component {
               <Gestures style={styles.imageContainer}>
                 <Image
                   {...this.props}
-                  lowResSize={placeholderSize}
+                  lowResSize={lowResSize}
                   style={styles.image}
                 />
               </Gestures>
