@@ -45,10 +45,19 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const renderSlice = (Component, data) => (_, { decorateAction }) => (
+const publications = {
+  ST: "SUNDAYTIMES",
+  TIMES: "TIMES"
+};
+/* eslint-disable react/prop-types */
+const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-      <Context.Provider value={{ publicationName: "TIMES" }}>
+      <Context.Provider
+        value={{
+          publicationName: select("Publication:", publications, "TIMES")
+        }}
+      >
         <Component
           onPress={preventDefaultedAction(decorateAction)("onPress")}
           slice={data}
