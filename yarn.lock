@@ -1961,50 +1961,6 @@
     webpack-dev-server "3.1.7"
     webpack-merge "^4.1.1"
 
-"@times-components/icons@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.5.1.tgz#0116f2f4173f00133db58580e096220c1e9357b9"
-  integrity sha512-8QM9Z4JkDXStO7TUurrwtQOtTuyvTm07pbR1x9Y5VysVJToNA8hKc+8HUUGI5LhqWIkxG+q3qGWSx0Ilg0tsZw==
-  dependencies:
-    "@times-components/styleguide" "3.25.0"
-    "@times-components/svgs" "2.5.0"
-    "@times-components/utils" "4.6.0"
-    prop-types "15.6.2"
-
-"@times-components/styleguide@3.24.0":
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.24.0.tgz#e38a88a9240853396d043efb67a2df87ab8dd76e"
-  integrity sha512-59rmnpoDK9/SXL+bXgT3cWXuIX0+3ui54Xnv7zGCUWOEISxzrgjaEz32mfnmSz+BGsTIRvK70ZmbxI2gRtJ2qg==
-  dependencies:
-    prop-types "15.6.2"
-    styled-components "3.4.0"
-
-"@times-components/styleguide@3.25.0":
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.25.0.tgz#c3acd3c24571a6fcce6b3e693c6b3b8fd8239744"
-  integrity sha512-8deQgFVdgfoqUYOmxRNsrjLh94wP3CZcoqnnJwc8qfm9xL9MCbcneL3drkCycQAKkJXHFd6j+gJFWO55Z8cMGw==
-  dependencies:
-    prop-types "15.6.2"
-    styled-components "3.4.0"
-
-"@times-components/svgs@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.5.0.tgz#f2b7661dde29151740c98893e0295b4f54109089"
-  integrity sha512-Fmt69Uo3XEby+Fp+Tq/ZO4Lymdw35GOMwn3KrRNuuy0qhpPw2NNz6gn8H4ezmFVPNbmQf/IZX420HYXINVah1Q==
-  dependencies:
-    prop-types "15.6.2"
-    svgs "3.2.1"
-
-"@times-components/utils@4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-4.6.0.tgz#99d43cb3186bb3b2ec8aa721ab73ca23ff762707"
-  integrity sha512-k4S+rJiV3z9/Cbl77QLekLgt0QJoD0R5FyPyC/efH3mL+f0TnZkfwQlenPyMAdQ0EmfFZoLg6pJ8yFOg26XJ2g==
-  dependencies:
-    "@times-components/styleguide" "3.24.0"
-    lodash.omitby "4.6.0"
-    prop-types "15.6.2"
-    react-native "0.55.4"
-
 "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
