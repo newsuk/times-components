@@ -76,3 +76,14 @@ exports[`7. thetimeslogo sets a width when height is set 1`] = `
   }
 />
 `;
+
+exports[`8. iconvideo360player sets a width when height is set 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 50,
+      "width": 54,
+    }
+  }
+/>
+`;

@@ -416,3 +416,55 @@ exports[`7. thetimeslogo renders 1`] = `
   </ARTGroup>
 </ARTSurfaceView>
 `;
+
+exports[`8. iconvideo360player renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 18.51851851851852,
+      "width": 20,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        0.18518518518518517,
+        0,
+        0,
+        0.18518518518518517,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTShape
+      d="dd25590e8bea14b59c417927beaf48a4"
+      fill={
+        Array [
+          0,
+          0,
+          0.4,
+          0.6,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
