@@ -4,6 +4,8 @@ import Svg, { Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
+const ratio = 108 / 100;
+
 const IconVideo360Player = ({
   fillColour,
   height,
@@ -13,11 +15,11 @@ const IconVideo360Player = ({
 }) => (
   <Svg
     role="img"
-    viewBox="0 0 120 120"
+    viewBox="0 0 108 100"
     {...clean({
       height,
       title,
-      width: width || height
+      width: width || height * ratio
     })}
   >
     <Path
