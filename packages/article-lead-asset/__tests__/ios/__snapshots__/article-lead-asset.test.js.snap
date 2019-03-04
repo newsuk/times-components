@@ -15,7 +15,6 @@ exports[`1. renders correctly with an image lead asset 1`] = `
       </React.Fragment>
     }
     uri="https://crop169.io/"
-    width={600}
   />
   <Text>
     Chris Reynolds Gordon at one of his party venues in London
@@ -60,7 +59,6 @@ exports[`4. passes the caption rendered by rendermodalcaption to the modalimage 
         Modal Caption
       </Text>
     }
-    width={600}
   />
   <Text>
     Caption

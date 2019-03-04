@@ -164,7 +164,7 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
           "marginBottom": 20,
           "position": "absolute",
           "top": 0,
-          "width": 540,
+          "width": 560,
         }
       }
     >
