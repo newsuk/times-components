@@ -387,7 +387,7 @@ exports[`11. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`12. list two and six no pic slice 1`] = `
-Array [
+<div>
   <div>
     <div>
       <TileC
@@ -400,44 +400,48 @@ Array [
         tileName="lead2"
       />
     </div>
-  </div>,
-  <div />,
-  <div>
-    <TileL
-      tileName="support1"
-    />
     <div />
-  </div>,
-  <div>
-    <TileL
-      tileName="support2"
-    />
+    <div>
+      <div>
+        <TileL
+          tileName="support1"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support2"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support3"
+        />
+      </div>
+    </div>
     <div />
-  </div>,
-  <div>
-    <TileL
-      tileName="support3"
-    />
-    <div />
-  </div>,
-  <div>
-    <TileL
-      tileName="support4"
-    />
-    <div />
-  </div>,
-  <div>
-    <TileL
-      tileName="support5"
-    />
-    <div />
-  </div>,
-  <div>
-    <TileL
-      tileName="support6"
-    />
-  </div>,
-]
+    <div>
+      <div>
+        <TileL
+          tileName="support4"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support5"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support6"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`13. leaders slice 1`] = `

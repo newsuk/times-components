@@ -110,7 +110,7 @@ const sliceStories = [
   },
   {
     mock: mockSecondaryFourSlice(),
-    name: "Secondary Four (CCCC)",
+    name: "Secondary Four (Mobile, Tablet: CCCC)",
     Slice: SecondaryFourSlice
   },
   {
@@ -125,7 +125,7 @@ const sliceStories = [
   },
   {
     mock: mockListTwoAndSixNoPicSlice(),
-    name: "List Two And Six No Pic Four (CCLLLLLL)",
+    name: "List Two And Six No Pic (Mobile, Tablet: CCLLLLLL)",
     Slice: ListTwoAndSixNoPicSlice
   },
   {

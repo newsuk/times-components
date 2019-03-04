@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. eight child element 1`] = `
-Array [
-  <style>
+exports[`1. list two and six no pic 1`] = `
+<style>
 .S1 {
   border-bottom-width: 0px;
   padding-top: 0px;
@@ -12,29 +11,48 @@ Array [
 }
 
 .S2 {
-  border-bottom-width: 0px;
   padding-top: 0px;
   padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 0px;
 }
 </style>
 
 <div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "10px",
+      "marginRight": "10px",
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
     className="S1"
     style={
       Object {
-        "WebkitBoxDirection": "normal",
         "WebkitBoxFlex": 1,
-        "WebkitBoxOrient": "horizontal",
         "WebkitFlexBasis": "0%",
-        "WebkitFlexDirection": "row",
         "WebkitFlexGrow": 1,
         "WebkitFlexShrink": 1,
         "flexBasis": "0%",
-        "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "msFlexDirection": "row",
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
@@ -42,71 +60,215 @@ Array [
     }
   >
     <div
-      className="S2"
-      style={
-        Object {
-          "paddingBottom": "5px",
-          "width": "50%",
-        }
-      }
-    >
-      <div
-        className="S1"
-      >
-        lead-1
-      </div>
-    </div>
-    <div
       className="S1"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1.00)",
-          "marginBottom": "10px",
-          "marginTop": "10px",
-        }
-      }
-    />
-    <div
-      className="S2"
-      style={
-        Object {
-          "paddingBottom": "5px",
-          "width": "50%",
-        }
-      }
     >
-      <div
-        className="S1"
-      >
-        lead-2
-      </div>
+      lead-1
     </div>
-  </div>,
-  <style>
-.S1 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
+  </div>
+  <div
     className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomWidth": "1px",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
       }
     }
-  />,
-  <style>
+  />
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      lead-2
+    </div>
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-1
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-2
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-3
+      </div>
+    </div>
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-4
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-5
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-6
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. tablet - list two and six no pic 1`] = `
+<style>
 .S1 {
   border-bottom-width: 0px;
   padding-top: 0px;
@@ -124,191 +286,250 @@ Array [
 </style>
 
 <div
+  className="S1"
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "10px",
+      "marginRight": "10px",
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
     className="S1"
-  >
-    <div
-      className="S1"
-    >
-      support-1
-    </div>
-    <div
-      className="S2"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
-    />
-  </div>,
-  <style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
-    className="S1"
+    }
   >
     <div
       className="S1"
     >
-      support-2
+      lead-1
     </div>
-    <div
-      className="S2"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
       }
-    />
-  </div>,
-  <style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
+    }
+  />
+  <div
     className="S1"
-  >
-    <div
-      className="S1"
-    >
-      support-3
-    </div>
-    <div
-      className="S2"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
-    />
-  </div>,
-  <style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
-    className="S1"
+    }
   >
     <div
       className="S1"
     >
-      support-4
+      lead-2
     </div>
-    <div
-      className="S2"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
       }
-    />
-  </div>,
-  <style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
+    }
+  />
+  <div
     className="S1"
-  >
-    <div
-      className="S1"
-    >
-      support-5
-    </div>
-    <div
-      className="S2"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomWidth": "1px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-        }
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
       }
-    />
-  </div>,
-  <style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
-<div
-    className="S1"
+    }
   >
     <div
       className="S1"
     >
-      support-6
+      <div
+        className="S1"
+      >
+        support-1
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
     </div>
-  </div>,
-]
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-2
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-3
+      </div>
+    </div>
+  </div>
+  <div
+    className="S1"
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    className="S1"
+    style={
+      Object {
+        "WebkitBoxFlex": 1,
+        "WebkitFlexBasis": "0%",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "msFlexPreferredSize": "0%",
+      }
+    }
+  >
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-4
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-5
+      </div>
+      <div
+        className="S2"
+        style={
+          Object {
+            "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomWidth": "1px",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="S1"
+    >
+      <div
+        className="S1"
+      >
+        support-6
+      </div>
+    </div>
+  </div>
+</div>
 `;

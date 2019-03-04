@@ -1,55 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. eight child element 1`] = `
-Array [
+exports[`1. list two and six no pic 1`] = `
+<View>
+  <View>
+    <Text>
+      lead-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      lead-2
+    </Text>
+  </View>
+  <View />
   <View>
     <View>
       <Text>
-        lead-1
+        support-1
       </Text>
+      <View />
     </View>
-    <View />
     <View>
       <Text>
-        lead-2
+        support-2
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-3
       </Text>
     </View>
-  </View>,
-  <View />,
+  </View>
+  <View />
+  <View>
+    <View>
+      <Text>
+        support-4
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-5
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-6
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. tablet - list two and six no pic 1`] = `
+<View>
   <View>
     <Text>
-      support-1
+      lead-1
     </Text>
-    <View />
-  </View>,
+  </View>
+  <View />
   <View>
     <Text>
-      support-2
+      lead-2
     </Text>
-    <View />
-  </View>,
+  </View>
+  <View />
   <View>
-    <Text>
-      support-3
-    </Text>
-    <View />
-  </View>,
+    <View>
+      <Text>
+        support-1
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-2
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-3
+      </Text>
+    </View>
+  </View>
+  <View />
   <View>
-    <Text>
-      support-4
-    </Text>
-    <View />
-  </View>,
-  <View>
-    <Text>
-      support-5
-    </Text>
-    <View />
-  </View>,
-  <View>
-    <Text>
-      support-6
-    </Text>
-  </View>,
-]
+    <View>
+      <Text>
+        support-4
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-5
+      </Text>
+      <View />
+    </View>
+    <View>
+      <Text>
+        support-6
+      </Text>
+    </View>
+  </View>
+</View>
 `;

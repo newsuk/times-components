@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ListTwoAndSixNoPic } from "@times-components/slice-layout";
+import { ResponsiveSlice } from "../shared";
 import { TileL, TileC } from "../../tiles";
 
 const ListTwoAndSixNoPicSlice = ({
@@ -15,34 +16,41 @@ const ListTwoAndSixNoPicSlice = ({
     support5,
     support6
   }
-}) => (
-  <ListTwoAndSixNoPic
-    renderLead1={() => (
-      <TileC onPress={onPress} tile={lead1} tileName="lead1" />
-    )}
-    renderLead2={() => (
-      <TileC onPress={onPress} tile={lead2} tileName="lead2" />
-    )}
-    renderSupport1={() => (
-      <TileL onPress={onPress} tile={support1} tileName="support1" />
-    )}
-    renderSupport2={() => (
-      <TileL onPress={onPress} tile={support2} tileName="support2" />
-    )}
-    renderSupport3={() => (
-      <TileL onPress={onPress} tile={support3} tileName="support3" />
-    )}
-    renderSupport4={() => (
-      <TileL onPress={onPress} tile={support4} tileName="support4" />
-    )}
-    renderSupport5={() => (
-      <TileL onPress={onPress} tile={support5} tileName="support5" />
-    )}
-    renderSupport6={() => (
-      <TileL onPress={onPress} tile={support6} tileName="support6" />
-    )}
-  />
-);
+}) => {
+  const renderSlice = breakpoint => (
+    <ListTwoAndSixNoPic
+      breakpoint={breakpoint}
+      renderLead1={() => (
+        <TileC onPress={onPress} tile={lead1} tileName="lead1" />
+      )}
+      renderLead2={() => (
+        <TileC onPress={onPress} tile={lead2} tileName="lead2" />
+      )}
+      renderSupport1={() => (
+        <TileL onPress={onPress} tile={support1} tileName="support1" />
+      )}
+      renderSupport2={() => (
+        <TileL onPress={onPress} tile={support2} tileName="support2" />
+      )}
+      renderSupport3={() => (
+        <TileL onPress={onPress} tile={support3} tileName="support3" />
+      )}
+      renderSupport4={() => (
+        <TileL onPress={onPress} tile={support4} tileName="support4" />
+      )}
+      renderSupport5={() => (
+        <TileL onPress={onPress} tile={support5} tileName="support5" />
+      )}
+      renderSupport6={() => (
+        <TileL onPress={onPress} tile={support6} tileName="support6" />
+      )}
+    />
+  );
+
+  return (
+    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
+  );
+};
 
 ListTwoAndSixNoPicSlice.propTypes = {
   onPress: PropTypes.func.isRequired,

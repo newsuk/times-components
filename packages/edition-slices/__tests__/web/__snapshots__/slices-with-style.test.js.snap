@@ -1330,15 +1330,22 @@ exports[`11. secondary two no pic and two slice 1`] = `
 `;
 
 exports[`12. list two and six no pic slice 1`] = `
-Array [
-  <style>
+<style>
 .S1 {
   margin-bottom: 0px;
 }
 
 .IS1 {
-  padding-bottom: 5px;
-  width: 50%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -1352,11 +1359,93 @@ Array [
 }
 
 .IS3 {
-  padding-bottom: 5px;
-  width: 50%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS4 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS10 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS11 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS12 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -1366,6 +1455,8 @@ Array [
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1373,10 +1464,21 @@ Array [
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
+
+.IS13 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
-    className="IS4 S1"
+  className="IS13 S1"
+>
+  <div
+    className="IS12 S1"
   >
     <div
       className="IS1 S1"
@@ -1395,152 +1497,76 @@ Array [
         tileName="lead2"
       />
     </div>
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="IS1 S1"
-  />,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support1"
+    <div
+      className="IS4"
     />
     <div
-      className="IS1 S1"
-    />
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support2"
+      className="IS7 S1"
+    >
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support1"
+        />
+        <div
+          className="IS5 S1"
+        />
+      </div>
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support2"
+        />
+        <div
+          className="IS6 S1"
+        />
+      </div>
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support3"
+        />
+      </div>
+    </div>
+    <div
+      className="IS8"
     />
     <div
-      className="IS1 S1"
-    />
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support3"
-    />
-    <div
-      className="IS1 S1"
-    />
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support4"
-    />
-    <div
-      className="IS1 S1"
-    />
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support5"
-    />
-    <div
-      className="IS1 S1"
-    />
-  </div>,
-  <style>
-.S1 {
-  margin-bottom: 0px;
-}
-</style>
-
-<div
-    className="S1"
-  >
-    <TileL
-      tileName="support6"
-    />
-  </div>,
-]
+      className="IS11 S1"
+    >
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support4"
+        />
+        <div
+          className="IS9 S1"
+        />
+      </div>
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support5"
+        />
+        <div
+          className="IS10 S1"
+        />
+      </div>
+      <div
+        className="S1"
+      >
+        <TileL
+          tileName="support6"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`13. leaders slice 1`] = `
