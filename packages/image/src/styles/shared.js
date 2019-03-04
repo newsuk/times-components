@@ -5,7 +5,7 @@ const styles = {
     marginLeft: spacing(3),
     marginTop: spacing(3),
     position: "relative",
-    zIndex: 2
+    zIndex: 1
   },
   closeButton: {
     height: 24,
