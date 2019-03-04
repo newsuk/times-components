@@ -130,6 +130,22 @@ const slicesWithPubLogo = [
   }
 ];
 
+const testsWithPublictaion = publicationName =>
+  slicesWithPubLogo.map(({ mock, name, Slice }) => ({
+    name,
+    test: () => {
+      const output = TestRenderer.create(
+        <Responsive>
+          <Context.Provider value={{ publicationName }}>
+            <Slice onPress={() => {}} slice={mock} />
+          </Context.Provider>
+        </Responsive>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  }));
+
 export default () => {
   const commonTests = slices.map(({ mock, name, Slice }) => ({
     name,
@@ -144,35 +160,9 @@ export default () => {
     }
   }));
 
-  const testsForTimes = slicesWithPubLogo.map(({ mock, name, Slice }) => ({
-    name,
-    test: () => {
-      const output = TestRenderer.create(
-        <Responsive>
-          <Context.Provider value={{ publicationName: "TIMES" }}>
-            <Slice onPress={() => {}} slice={mock} />
-          </Context.Provider>
-        </Responsive>
-      );
+  const testsForTimes = testsWithPublictaion("TIMES");
 
-      expect(output).toMatchSnapshot();
-    }
-  }));
-
-  const testsForST = slicesWithPubLogo.map(({ mock, name, Slice }) => ({
-    name,
-    test: () => {
-      const output = TestRenderer.create(
-        <Responsive>
-          <Context.Provider value={{ publicationName: "SUNDAYTIMES" }}>
-            <Slice onPress={() => {}} slice={mock} />
-          </Context.Provider>
-        </Responsive>
-      );
-
-      expect(output).toMatchSnapshot();
-    }
-  }));
+  const testsForST = testsWithPublictaion("SUNDAYTIMES");
 
   iterator(commonTests);
   iterator(testsForST);
