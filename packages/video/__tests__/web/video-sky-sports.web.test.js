@@ -16,7 +16,6 @@ import InlineVideoPlayer from "../../src/inline-video-player";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
-jest.mock("@times-components/icons", () => "Icons");
 
 const omitProps = new Set(["className", "controls", "id", "style"]);
 

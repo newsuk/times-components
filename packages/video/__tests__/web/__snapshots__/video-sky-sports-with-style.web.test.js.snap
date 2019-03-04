@@ -4,16 +4,55 @@ exports[`1. video marked as sky sports 1`] = `
 <div
   style={
     Object {
-      "height": "200px",
-      "width": "300px",
+      "height": 200,
+      "width": 300,
     }
   }
 >
-  <div>
-    Video unable to play
-  </div>
-  <div>
-    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
+  <div
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      style="6ffd45e5c09db928c5dd19cf0d8b7c38"
+    >
+      <div>
+        Premier League clips powered by Sky Sports
+      </div>
+      <div
+        style={
+          Object {
+            "height": "17px",
+            "marginTop": "7px",
+            "width": "80px",
+          }
+        }
+      >
+        <div
+          style="ca94d3d8b1d6ecedc1f387601fe4065b"
+        />
+        <img />
+      </div>
+    </div>
+    <div>
+      <svg>
+        <title>
+          Video 360 Player Icon
+        </title>
+        <path />
+      </svg>
+    </div>
+    <video
+      style={
+        Object {
+          "height": 200,
+          "width": 300,
+        }
+      }
+    />
   </div>
 </div>
 `;
