@@ -17,6 +17,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockPuzzleSlice
 } from "@times-components/fixture-generator";
+import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import {
   CommentLeadAndCartoonSlice,
@@ -44,13 +45,24 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const renderSlice = (Component, data) => (_, { decorateAction }) => (
+const publications = {
+  ST: "SUNDAYTIMES",
+  TIMES: "TIMES"
+};
+/* eslint-disable react/prop-types */
+const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-      <Component
-        onPress={preventDefaultedAction(decorateAction)("onPress")}
-        slice={data}
-      />
+      <Context.Provider
+        value={{
+          publicationName: select("Publication:", publications, "TIMES")
+        }}
+      >
+        <Component
+          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          slice={data}
+        />
+      </Context.Provider>
     </ScrollView>
   </Responsive>
 );

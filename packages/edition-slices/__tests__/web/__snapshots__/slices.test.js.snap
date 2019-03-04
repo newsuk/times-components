@@ -27,11 +27,159 @@ exports[`1. daily universal register slice 1`] = `
 </div>
 `;
 
+exports[`1. secondary one and four slice 1`] = `
+<div>
+  <div>
+    <TheSTLogo
+      height={40}
+      width={40}
+    />
+  </div>
+  <div />
+  <div>
+    <div>
+      <div>
+        <TileN
+          tileName="secondary"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support3"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`1. secondary one and four slice 2`] = `
+<div>
+  <div>
+    <TheTimesLogo
+      height={40}
+      width={40}
+    />
+  </div>
+  <div />
+  <div>
+    <div>
+      <div>
+        <TileN
+          tileName="secondary"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support3"
+      />
+    </div>
+    <div />
+    <div>
+      <TileO
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`2. lead one full width slice 1`] = `
 <div>
   <TileR
     tileName="lead"
   />
+</div>
+`;
+
+exports[`2. leaders slice 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.4}
+      uri="https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png"
+    />
+    <div>
+      <div>
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div>
+    <TileM
+      tileName="leader1"
+    />
+    <div />
+    <TileM
+      tileName="leader2"
+    />
+    <div />
+    <TileM
+      tileName="leader3"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. leaders slice 2`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.74}
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div>
+      <div>
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div>
+    <TileM
+      tileName="leader1"
+    />
+    <div />
+    <TileM
+      tileName="leader2"
+    />
+    <div />
+    <TileM
+      tileName="leader3"
+    />
+  </div>
 </div>
 `;
 

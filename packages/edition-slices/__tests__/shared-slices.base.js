@@ -1,5 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import Context from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import {
   mockCommentLeadAndCartoonSlice,
@@ -116,8 +117,37 @@ const slices = [
   }
 ];
 
+const slicesWithPubLogo = [
+  {
+    mock: mockSecondaryOneAndFourSlice(),
+    name: "secondary one and four slice",
+    Slice: SecondaryOneAndFourSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "leaders slice",
+    Slice: LeadersSlice
+  }
+];
+
+const testsWithPublictaion = publicationName =>
+  slicesWithPubLogo.map(({ mock, name, Slice }) => ({
+    name,
+    test: () => {
+      const output = TestRenderer.create(
+        <Responsive>
+          <Context.Provider value={{ publicationName }}>
+            <Slice onPress={() => {}} slice={mock} />
+          </Context.Provider>
+        </Responsive>
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  }));
+
 export default () => {
-  const tests = slices.map(({ mock, name, Slice }) => ({
+  const commonTests = slices.map(({ mock, name, Slice }) => ({
     name,
     test: () => {
       const output = TestRenderer.create(
@@ -130,5 +160,11 @@ export default () => {
     }
   }));
 
-  iterator(tests);
+  const testsForTimes = testsWithPublictaion("TIMES");
+
+  const testsForST = testsWithPublictaion("SUNDAYTIMES");
+
+  iterator(commonTests);
+  iterator(testsForST);
+  iterator(testsForTimes);
 };

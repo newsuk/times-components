@@ -68,7 +68,19 @@ Array [
 ]
 `;
 
-exports[`6. thetimeslogo renders with different colours 1`] = `
+exports[`6. thestlogo renders with different colours 1`] = `
+Array [
+  <title>
+    ST
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
+`;
+
+exports[`7. thetimeslogo renders with different colours 1`] = `
 Array [
   <title>
     The Times

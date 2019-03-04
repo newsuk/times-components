@@ -38,6 +38,7 @@
   "dependencies": {
     "@times-components/article-flag": "2.5.13",
     "@times-components/article-summary": "3.9.12",
+    "@times-components/context": "0.7.3",
     "@times-components/icons": "2.5.2",
     "@times-components/image": "4.8.15",
     "@times-components/link": "3.2.24",

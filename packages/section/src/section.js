@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
+import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
@@ -29,6 +30,7 @@ class Section extends Component {
   render() {
     const {
       onPress,
+      publicationName,
       section: { slices, title },
       onViewed,
       receiveChildList
@@ -56,12 +58,14 @@ class Section extends Component {
           }
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={({ index, item: slice }) => (
-            <Slice
-              index={index}
-              length={slices.length}
-              onPress={onPress}
-              slice={slice}
-            />
+            <Context.Provider value={{ publicationName }}>
+              <Slice
+                index={index}
+                length={slices.length}
+                onPress={onPress}
+                slice={slice}
+              />
+            </Context.Provider>
           )}
           viewabilityConfig={{
             viewAreaCoveragePercentThreshold: 10,
@@ -76,6 +80,7 @@ class Section extends Component {
 Section.propTypes = {
   onPress: PropTypes.func,
   onViewed: PropTypes.func,
+  publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
   section: PropTypes.shape({}).isRequired
 };
