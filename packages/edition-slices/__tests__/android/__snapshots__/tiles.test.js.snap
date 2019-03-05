@@ -932,3 +932,41 @@ exports[`25. tile z 1`] = `
   </View>
 </Link>
 `;
+
+exports[`26. tile ae 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        Driving Off
+      </Text>
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
