@@ -1,10 +1,10 @@
 import React from "react";
 import { View } from "react-native";
-import Column from "../column";
 import { editionBreakpoints } from "@times-components/styleguide";
+import Column from "../column";
 import styleFactory from "./styles";
 import propTypes from "./proptypes";
-import { ItemRowSeparator, ItemColSeparator } from "../shared";
+import { ItemColSeparator } from "../shared";
 
 const SecondaryOneAndColumnistSlice = ({
   breakpoint,
