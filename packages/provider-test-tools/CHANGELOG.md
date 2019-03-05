@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.19](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.18...@times-components/provider-test-tools@1.13.19) (2019-03-05)
+
+
+### Bug Fixes
+
+* Attempt to fix Edition Provider Test Tools ([#1773](https://github.com/newsuk/times-components/issues/1773)) ([15553ec](https://github.com/newsuk/times-components/commit/15553ec))
+
+
+
+
+
 ## [1.13.18](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.17...@times-components/provider-test-tools@1.13.18) (2019-03-01)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

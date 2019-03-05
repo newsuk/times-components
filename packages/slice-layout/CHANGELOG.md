@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.15.2...@times-components/slice-layout@0.16.0) (2019-03-05)
+
+
+### Features
+
+* List 2 no pic 6 tablet ([#1758](https://github.com/newsuk/times-components/issues/1758)) ([1e9c3d7](https://github.com/newsuk/times-components/commit/1e9c3d7))
+
+
+
+
+
 ## [0.15.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.15.1...@times-components/slice-layout@0.15.2) (2019-03-01)
 
 **Note:** Version bump only for package @times-components/slice-layout

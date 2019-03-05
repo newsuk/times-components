@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/newsuk/times-components/compare/@times-components/utils@4.6.1...@times-components/utils@4.7.0) (2019-03-05)
+
+
+### Features
+
+* using low res image for modal placeholders (& drop-cap improvements) ([#1765](https://github.com/newsuk/times-components/issues/1765)) ([6bd4676](https://github.com/newsuk/times-components/commit/6bd4676))
+
+
+
+
+
 ## [4.6.1](https://github.com/newsuk/times-components/compare/@times-components/utils@4.6.0...@times-components/utils@4.6.1) (2019-03-01)
 
 **Note:** Version bump only for package @times-components/utils
