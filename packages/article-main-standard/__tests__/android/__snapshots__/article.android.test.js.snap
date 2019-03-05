@@ -14,7 +14,6 @@ exports[`1. an article 1`] = `
             />
           }
           uri="https://crop169.io"
-          width={660}
         />
       </View>
     </View>

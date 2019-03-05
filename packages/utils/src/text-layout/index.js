@@ -28,6 +28,10 @@ export const measureText = texts => {
                 width: e.nativeEvent.layout.width
               };
               resolve(result);
+            },
+            style: {
+              ...text.props.style,
+              color: "white"
             }
           })
         );

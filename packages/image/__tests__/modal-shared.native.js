@@ -37,7 +37,6 @@ export default () => {
   const props = {
     aspectRatio: 3 / 2,
     caption: <MockCaption />,
-    highResSize: 1440,
     uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };
 
@@ -46,6 +45,22 @@ export default () => {
       name: "modal image",
       test() {
         const testInstance = TestRenderer.create(<ModalImage {...props} />);
+
+        testInstance.root.findAllByType(Image).forEach(img =>
+          img.children[0].props.onLayout({
+            nativeEvent: { layout: { width: 700 } }
+          })
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "modal image with custom highResSize",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} highResSize={900} />
+        );
 
         testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({

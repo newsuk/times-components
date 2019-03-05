@@ -26,6 +26,8 @@ exports[`1. default modal 1`] = `
             Object {
               "marginLeft": 15,
               "marginTop": 15,
+              "position": "relative",
+              "zIndex": 1,
             }
           }
         >

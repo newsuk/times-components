@@ -1,5 +1,7 @@
-import React, { Component } from "react";
-import { View } from "react-native";
+import React, { Component, Fragment } from "react";
+import { View, Image } from "react-native";
+import PropTypes from "prop-types";
+import memoize from "lodash.memoize";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -11,29 +13,40 @@ import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
 
+const getUriAtRes = memoize(
+  (uri, resInPoints) => {
+    const isDataImageUri = uri && uri.indexOf("data:") > -1;
+    const resInPixels = normaliseWidthForAssetRequestCache(
+      convertToPixels(resInPoints)
+    );
+
+    return isDataImageUri
+      ? uri
+      : addMissingProtocol(appendToUrl(uri, "resize", resInPixels));
+  },
+  (a, b) => a + b
+);
+
 class TimesImage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      imageRes: null,
-      isLoaded: false
+      isLoaded: false,
+      width: null
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
-  onImageLayout({
-    nativeEvent: {
-      layout: { width }
-    }
-  }) {
-    const { highResSize } = this.props;
-    const imageRes = normaliseWidthForAssetRequestCache(
-      convertToPixels(highResSize ? Math.min(width, highResSize) : width)
-    );
+  onImageLayout(evt) {
+    const { onLayout } = this.props;
 
-    this.setState({ imageRes });
+    this.setState({ width: evt.nativeEvent.layout.width });
+
+    if (onLayout) {
+      onLayout(evt);
+    }
   }
 
   handleLoad() {
@@ -41,26 +54,17 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { aspectRatio, borderRadius, style, uri } = this.props;
-    const { isLoaded, imageRes } = this.state;
-
-    const isDataImageUri = uri && uri.indexOf("data:") > -1;
-
-    const srcUri = isDataImageUri
-      ? uri
-      : addMissingProtocol(appendToUrl(uri, "resize", imageRes));
-
-    const props = {
+    const {
+      aspectRatio,
       borderRadius,
-      onLoad: this.handleLoad,
-      source:
-        srcUri && imageRes
-          ? {
-              uri: srcUri
-            }
-          : null,
-      style: styles.imageBackground
-    };
+      highResSize,
+      lowResSize,
+      style,
+      uri
+    } = this.props;
+    const { isLoaded, width } = this.state;
+    const renderedRes = highResSize || width;
+    const srcUri = getUriAtRes(uri, renderedRes);
 
     return (
       <View
@@ -68,14 +72,33 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={style}
       >
-        {isLoaded ? null : <Placeholder />}
-        <LazyLoadingImage {...props} />
+        {isLoaded ? null : (
+          <Fragment>
+            <Placeholder />
+            {lowResSize ? (
+              <Image
+                borderRadius={borderRadius}
+                source={{ uri: getUriAtRes(uri, lowResSize) }}
+                style={styles.imageBackground}
+              />
+            ) : null}
+          </Fragment>
+        )}
+        <LazyLoadingImage
+          borderRadius={borderRadius}
+          onLoad={this.handleLoad}
+          source={srcUri && renderedRes ? { uri: srcUri } : null}
+          style={styles.imageBackground}
+        />
       </View>
     );
   }
 }
 
 TimesImage.defaultProps = defaultProps;
-TimesImage.propTypes = propTypes;
+TimesImage.propTypes = {
+  ...propTypes,
+  onLayout: PropTypes.func
+};
 
 export default TimesImage;
