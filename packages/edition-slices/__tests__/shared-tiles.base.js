@@ -8,6 +8,7 @@ import {
 
 import {
   TileA,
+  TileAE,
   TileB,
   TileC,
   TileD,
@@ -152,6 +153,10 @@ export default () => {
     {
       name: "tile z",
       test: () => testTile(TileZ)
+    },
+    {
+      name: "tile ae",
+      test: () => testTile(TileAE)
     }
   ];
 
