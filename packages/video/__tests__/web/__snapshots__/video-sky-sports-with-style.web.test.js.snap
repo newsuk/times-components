@@ -38,12 +38,7 @@ exports[`1. video marked as sky sports 1`] = `
       </div>
     </div>
     <div>
-      <svg>
-        <title>
-          Video 360 Player Icon
-        </title>
-        <path />
-      </svg>
+      <IconVideo360Player />
     </div>
     <video
       style={
