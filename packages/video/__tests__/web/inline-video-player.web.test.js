@@ -4,6 +4,10 @@ import { shallow } from "enzyme";
 import InlineVideoPlayer from "../../src/inline-video-player.web";
 import defaultVideoProps from "../default-video-props";
 
+jest.mock("@times-components/icons", () => ({
+  IconVideo360Player: "IconVideo360Player"
+}));
+
 describe("InlineVideoPlayer", () => {
   afterEach(() => {
     delete window.bc;
