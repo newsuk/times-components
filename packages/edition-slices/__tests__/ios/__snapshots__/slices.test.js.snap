@@ -56,26 +56,19 @@ exports[`1. secondary one and four slice 1`] = `
         />
       </View>
     </View>
-    <View />
     <View>
       <TileO
         tileName="support1"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support2"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support3"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support4"
       />
@@ -101,26 +94,19 @@ exports[`1. secondary one and four slice 2`] = `
         />
       </View>
     </View>
-    <View />
     <View>
       <TileO
         tileName="support1"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support2"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support3"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support4"
       />
@@ -213,46 +199,48 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-<View>
+Array [
   <TileI
     tileName="lead"
-  />
-  <TileJ
-    tileName="support1"
-  />
-  <View />
-  <TileJ
-    tileName="support2"
-  />
-  <View />
-  <TileJ
-    tileName="support3"
-  />
-  <View />
-  <TileJ
-    tileName="support4"
-  />
-</View>
+  />,
+  <View>
+    <TileJ
+      tileName="support1"
+    />
+    <View />
+    <TileJ
+      tileName="support2"
+    />
+    <View />
+    <TileJ
+      tileName="support3"
+    />
+    <View />
+    <TileJ
+      tileName="support4"
+    />
+  </View>,
+]
 `;
 
 exports[`5. lead two no pic and two 1`] = `
-Array [
+<View>
   <TileF
     tileName="lead1"
-  />,
-  <View />,
+  />
+  <View />
   <TileB
     tileName="lead2"
-  />,
-  <View />,
+  />
+  <View />
   <TileD
     tileName="support1"
-  />,
-  <View />,
+  />
+  <View />
   <TileE
     tileName="support2"
-  />,
-]
+  />
+</View>
 `;
 
 exports[`6. secondary one slice 1`] = `
@@ -322,26 +310,19 @@ exports[`9. secondary one and four slice 1`] = `
         />
       </View>
     </View>
-    <View />
     <View>
       <TileO
         tileName="support1"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support2"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support3"
       />
-    </View>
-    <View />
-    <View>
+      <View />
       <TileO
         tileName="support4"
       />
@@ -421,32 +402,22 @@ Array [
       tileName="support1"
     />
     <View />
-  </View>,
-  <View>
     <TileL
       tileName="support2"
     />
     <View />
-  </View>,
-  <View>
     <TileL
       tileName="support3"
     />
     <View />
-  </View>,
-  <View>
     <TileL
       tileName="support4"
     />
     <View />
-  </View>,
-  <View>
     <TileL
       tileName="support5"
     />
     <View />
-  </View>,
-  <View>
     <TileL
       tileName="support6"
     />

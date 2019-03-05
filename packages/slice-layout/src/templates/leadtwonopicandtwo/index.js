@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 
+import Column from "../column";
 import { ItemColSeparator, ItemRowSeparator } from "../shared";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles";
@@ -32,15 +33,9 @@ const LeadTwoNoPicAndTwoSlice = ({
   }
 
   return (
-    <Fragment>
-      {renderLead1()}
-      <ItemRowSeparator />
-      {renderLead2()}
-      <ItemRowSeparator />
-      {renderSupport1()}
-      <ItemRowSeparator />
-      {renderSupport2()}
-    </Fragment>
+    <Column
+      tiles={[renderLead1, renderLead2, renderSupport1, renderSupport2]}
+    />
   );
 };
 

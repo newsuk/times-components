@@ -1,7 +1,6 @@
-import React from "react";
-import { View } from "react-native";
-import { ItemRowSeparator } from "../shared";
+import React, { Fragment } from "react";
 import propTypes from "./proptypes";
+import Column from "../column";
 
 const leadOneAndFourSlice = ({
   renderLead,
@@ -10,16 +9,12 @@ const leadOneAndFourSlice = ({
   renderSupport3,
   renderSupport4
 }) => (
-  <View>
+  <Fragment>
     {renderLead()}
-    {renderSupport1()}
-    <ItemRowSeparator />
-    {renderSupport2()}
-    <ItemRowSeparator />
-    {renderSupport3()}
-    <ItemRowSeparator />
-    {renderSupport4()}
-  </View>
+    <Column
+      tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
+    />
+  </Fragment>
 );
 
 leadOneAndFourSlice.propTypes = propTypes;

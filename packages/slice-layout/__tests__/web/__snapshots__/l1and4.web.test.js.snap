@@ -1,24 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one and four 1`] = `
-<div>
+Array [
   <div>
     lead
-  </div>
+  </div>,
   <div>
-    support-1
-  </div>
-  <div />
-  <div>
-    support-2
-  </div>
-  <div />
-  <div>
-    support-3
-  </div>
-  <div />
-  <div>
-    support-4
-  </div>
-</div>
+    <div>
+      support-1
+    </div>
+    <div />
+    <div>
+      support-2
+    </div>
+    <div />
+    <div>
+      support-3
+    </div>
+    <div />
+    <div>
+      support-4
+    </div>
+  </div>,
+]
 `;

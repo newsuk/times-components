@@ -158,34 +158,27 @@ exports[`1. secondary one and four slice 1`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS6 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS7 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS8 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -199,13 +192,13 @@ exports[`1. secondary one and four slice 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS8 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="IS8 S1"
 >
   <div
     className="IS1 S1"
@@ -219,7 +212,7 @@ exports[`1. secondary one and four slice 1`] = `
     className="IS2 S1"
   />
   <div
-    className="IS8 S1"
+    className="IS7 S1"
   >
     <div
       className="IS3 S1"
@@ -233,41 +226,26 @@ exports[`1. secondary one and four slice 1`] = `
       </div>
     </div>
     <div
-      className="IS4 S1"
-    />
-    <div
       className="S1"
     >
       <TileO
         tileName="support1"
       />
-    </div>
-    <div
-      className="IS5 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS4 S1"
+      />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS5 S1"
+      />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div
-      className="IS7 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS6 S1"
+      />
       <TileO
         tileName="support4"
       />
@@ -310,34 +288,27 @@ exports[`1. secondary one and four slice 2`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS6 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS7 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS8 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -351,13 +322,13 @@ exports[`1. secondary one and four slice 2`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS8 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="IS8 S1"
 >
   <div
     className="IS1 S1"
@@ -371,7 +342,7 @@ exports[`1. secondary one and four slice 2`] = `
     className="IS2 S1"
   />
   <div
-    className="IS8 S1"
+    className="IS7 S1"
   >
     <div
       className="IS3 S1"
@@ -385,41 +356,26 @@ exports[`1. secondary one and four slice 2`] = `
       </div>
     </div>
     <div
-      className="IS4 S1"
-    />
-    <div
       className="S1"
     >
       <TileO
         tileName="support1"
       />
-    </div>
-    <div
-      className="IS5 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS4 S1"
+      />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS5 S1"
+      />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div
-      className="IS7 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS6 S1"
+      />
       <TileO
         tileName="support4"
       />
@@ -692,7 +648,11 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-<style>
+Array [
+  <TileI
+    tileName="lead"
+  />,
+  <style>
 .S1 {
   margin-bottom: 0px;
 }
@@ -720,33 +680,31 @@ exports[`4. lead one and four slice 1`] = `
 </style>
 
 <div
-  className="S1"
->
-  <TileI
-    tileName="lead"
-  />
-  <TileJ
-    tileName="support1"
-  />
-  <div
-    className="IS1 S1"
-  />
-  <TileJ
-    tileName="support2"
-  />
-  <div
-    className="IS2 S1"
-  />
-  <TileJ
-    tileName="support3"
-  />
-  <div
-    className="IS3 S1"
-  />
-  <TileJ
-    tileName="support4"
-  />
-</div>
+    className="S1"
+  >
+    <TileJ
+      tileName="support1"
+    />
+    <div
+      className="IS1 S1"
+    />
+    <TileJ
+      tileName="support2"
+    />
+    <div
+      className="IS2 S1"
+    />
+    <TileJ
+      tileName="support3"
+    />
+    <div
+      className="IS3 S1"
+    />
+    <TileJ
+      tileName="support4"
+    />
+  </div>,
+]
 `;
 
 exports[`5. lead two no pic and two 1`] = `
@@ -788,27 +746,31 @@ exports[`5. lead two no pic and two 1`] = `
 <div
   className="IS4 S1"
 >
-  <TileX
-    tileName="lead1"
-  />
   <div
-    className="IS1 S1"
-  />
-  <TileY
-    tileName="lead2"
-  />
-  <div
-    className="IS2 S1"
-  />
-  <TileD
-    tileName="support1"
-  />
-  <div
-    className="IS3 S1"
-  />
-  <TileZ
-    tileName="support2"
-  />
+    className="S1"
+  >
+    <TileX
+      tileName="lead1"
+    />
+    <div
+      className="IS1 S1"
+    />
+    <TileY
+      tileName="lead2"
+    />
+    <div
+      className="IS2 S1"
+    />
+    <TileD
+      tileName="support1"
+    />
+    <div
+      className="IS3 S1"
+    />
+    <TileZ
+      tileName="support2"
+    />
+  </div>
 </div>
 `;
 
@@ -1044,34 +1006,27 @@ exports[`9. secondary one and four slice 1`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS6 {
-  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS7 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS8 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -1085,13 +1040,13 @@ exports[`9. secondary one and four slice 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS8 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="IS8 S1"
 >
   <div
     className="IS1 S1"
@@ -1105,7 +1060,7 @@ exports[`9. secondary one and four slice 1`] = `
     className="IS2 S1"
   />
   <div
-    className="IS8 S1"
+    className="IS7 S1"
   >
     <div
       className="IS3 S1"
@@ -1119,41 +1074,26 @@ exports[`9. secondary one and four slice 1`] = `
       </div>
     </div>
     <div
-      className="IS4 S1"
-    />
-    <div
       className="S1"
     >
       <TileO
         tileName="support1"
       />
-    </div>
-    <div
-      className="IS5 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS4 S1"
+      />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div
-      className="IS6 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS5 S1"
+      />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div
-      className="IS7 S1"
-    />
-    <div
-      className="S1"
-    >
+      <div
+        className="IS6 S1"
+      />
       <TileO
         tileName="support4"
       />
