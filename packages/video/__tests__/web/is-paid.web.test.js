@@ -1,9 +1,5 @@
 import { isPaidOnly } from "../../src/video.web";
 
-jest.mock("@times-components/icons", () => ({
-  IconVideo360Player: "IconVideo360Player"
-}));
-
 it("isPaidOnly true should be true", () => {
   expect(isPaidOnly(true)).toBe(true);
 });
