@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndFourSlice } from "@times-components/slice-layout";
-import { TileI, TileJ } from "../../tiles";
+import { TileAC, TileAD, TileI, TileJ } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
-import styles from "./styles";
 
 const LeadOneAndFour = ({
   onPress,
@@ -14,44 +13,19 @@ const LeadOneAndFour = ({
       <LeadOneAndFourSlice
         breakpoint={breakpoint}
         renderLead={() => (
-          <TileI
-            onPress={onPress}
-            style={styles.lead}
-            tile={lead}
-            tileName="lead"
-          />
+          <TileAC onPress={onPress} tile={lead} tileName="lead" />
         )}
         renderSupport1={() => (
-          <TileJ
-            onPress={onPress}
-            style={styles.support}
-            tile={support1}
-            tileName="support1"
-          />
+          <TileAD onPress={onPress} tile={support1} tileName="support1" />
         )}
         renderSupport2={() => (
-          <TileJ
-            onPress={onPress}
-            style={styles.support}
-            tile={support2}
-            tileName="support2"
-          />
+          <TileAD onPress={onPress} tile={support2} tileName="support2" />
         )}
         renderSupport3={() => (
-          <TileJ
-            onPress={onPress}
-            style={styles.support}
-            tile={support3}
-            tileName="support3"
-          />
+          <TileAD onPress={onPress} tile={support3} tileName="support3" />
         )}
         renderSupport4={() => (
-          <TileJ
-            onPress={onPress}
-            style={styles.support}
-            tile={support4}
-            tileName="support4"
-          />
+          <TileAD onPress={onPress} tile={support4} tileName="support4" />
         )}
       />
     )}

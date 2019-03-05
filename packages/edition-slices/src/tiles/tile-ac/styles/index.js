@@ -1,9 +1,12 @@
 import { colours, fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
+  container: {
+    flex: 1
+  },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 35,
+    fontSize: 30,
     lineHeight: 35,
     marginBottom: spacing(2),
     textAlign: "center"
@@ -14,9 +17,10 @@ const styles = {
   summaryContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
-    paddingBottom: spacing(3),
+    flex: 1,
+    justifyContent: "center",
     paddingHorizontal: spacing(8),
-    paddingTop: spacing(4)
+    paddingVertical: spacing(4)
   }
 };
 
