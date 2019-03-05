@@ -8,6 +8,7 @@ const mediumBreakpointStyles = {
     flexDirection: "row"
   },
   secondaryContainer: {
+    paddingTop: 10,
     width: "33%"
   },
   columnistContainer: {
