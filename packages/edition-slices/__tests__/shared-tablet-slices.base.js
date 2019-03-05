@@ -9,6 +9,7 @@ import {
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
+  mockSecondaryOneAndColumnistSlice,
   mockSecondaryTwoAndTwoSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
@@ -20,6 +21,7 @@ import {
   SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
+  SecondaryOneAndColumnistSlice,
   SecondaryTwoAndTwoSlice
 } from "../src/slices";
 
@@ -48,6 +50,11 @@ const slices = [
     mock: mockSecondaryFourSlice(),
     name: "secondary four tablet slice",
     Slice: SecondaryFourSlice
+  },
+  {
+    mock: mockSecondaryOneAndColumnistSlice(),
+    name: "secondary one and columnist",
+    Slice: SecondaryOneAndColumnistSlice
   },
   {
     mock: mockSecondaryTwoAndTwoSlice(),

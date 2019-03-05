@@ -169,7 +169,8 @@ const tileStories = [
     Tile: TileAA
   },
   {
-    name: "Tile AB - 30pt headline, teaser, byline at bottom, image 2:3 right at the top",
+    name:
+      "Tile AB - 30pt headline, teaser, byline at bottom, image 2:3 right at the top",
     Tile: TileAB
   },
   {

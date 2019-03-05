@@ -17,15 +17,11 @@ const SecondaryOneAndColumnistSlice = ({
   }
 
   return (
-      <View style={styles.container}>
-        <View style={styles.secondaryContainer}>
-          {renderSecondary()}
-        </View>
-        <ItemColSeparator />
-        <View style={styles.columnistContainer}>
-          {renderColumnist()}
-        </View>
-      </View>
+    <View style={styles.container}>
+      <View style={styles.secondaryContainer}>{renderSecondary()}</View>
+      <ItemColSeparator />
+      <View style={styles.columnistContainer}>{renderColumnist()}</View>
+    </View>
   );
 };
 

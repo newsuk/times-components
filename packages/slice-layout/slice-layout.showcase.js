@@ -369,8 +369,8 @@ export default {
         <ScrollView>
           <SecondaryOneAndColumnistSlice
             breakpoint={breakpointSelect(select)}
-            renderSecondary={() => <Support2 id="secondary" />}
             renderColumnist={() => <Support1 id="columnist" />}
+            renderSecondary={() => <Support2 id="secondary" />}
           />
         </ScrollView>
       ),

@@ -6,8 +6,8 @@ const styles = {
     paddingHorizontal: spacing(2)
   },
   headline: {
-    fontSize: 30,
     fontFamily: fonts.headline,
+    fontSize: 30,
     lineHeight: 30,
     marginBottom: spacing(2)
   },
