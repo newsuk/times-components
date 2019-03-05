@@ -94,27 +94,31 @@ exports[`3. lead two no pic and two tablet slice 1`] = `
 <div
   className="IS4 S1"
 >
-  <TileX
-    tileName="lead1"
-  />
   <div
-    className="IS1 S1"
-  />
-  <TileY
-    tileName="lead2"
-  />
-  <div
-    className="IS2 S1"
-  />
-  <TileD
-    tileName="support1"
-  />
-  <div
-    className="IS3 S1"
-  />
-  <TileZ
-    tileName="support2"
-  />
+    className="S1"
+  >
+    <TileX
+      tileName="lead1"
+    />
+    <div
+      className="IS1 S1"
+    />
+    <TileY
+      tileName="lead2"
+    />
+    <div
+      className="IS2 S1"
+    />
+    <TileD
+      tileName="support1"
+    />
+    <div
+      className="IS3 S1"
+    />
+    <TileZ
+      tileName="support2"
+    />
+  </div>
 </div>
 `;
 

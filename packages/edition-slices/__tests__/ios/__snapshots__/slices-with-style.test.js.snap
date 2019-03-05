@@ -140,56 +140,40 @@ exports[`1. secondary one and four slice 1`] = `
         <TileN />
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
     <View>
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
     </View>
   </View>
@@ -245,56 +229,40 @@ exports[`1. secondary one and four slice 2`] = `
         <TileN />
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
     <View>
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
     </View>
   </View>
@@ -473,48 +441,50 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-<View>
-  <TileI />
-  <TileJ />
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+Array [
+  <TileI />,
+  <View>
+    <TileJ />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <TileJ />
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+    />
+    <TileJ />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <TileJ />
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+    />
+    <TileJ />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
       }
-    }
-  />
-  <TileJ />
-</View>
+    />
+    <TileJ />
+  </View>,
+]
 `;
 
 exports[`5. lead two no pic and two 1`] = `
-Array [
-  <TileF />,
+<View>
+  <TileF />
   <View
     style={
       Object {
@@ -524,8 +494,8 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
-  <TileB />,
+  />
+  <TileB />
   <View
     style={
       Object {
@@ -535,8 +505,8 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
-  <TileD />,
+  />
+  <TileD />
   <View
     style={
       Object {
@@ -546,9 +516,9 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
-  <TileE />,
-]
+  />
+  <TileE />
+</View>
 `;
 
 exports[`6. secondary one slice 1`] = `<TileA />`;
@@ -708,56 +678,40 @@ exports[`9. secondary one and four slice 1`] = `
         <TileN />
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
     <View>
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#4D4D4D",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View>
+      />
       <TileO />
     </View>
   </View>
@@ -934,8 +888,6 @@ Array [
         }
       }
     />
-  </View>,
-  <View>
     <TileL />
     <View
       style={
@@ -947,8 +899,6 @@ Array [
         }
       }
     />
-  </View>,
-  <View>
     <TileL />
     <View
       style={
@@ -960,8 +910,6 @@ Array [
         }
       }
     />
-  </View>,
-  <View>
     <TileL />
     <View
       style={
@@ -973,8 +921,6 @@ Array [
         }
       }
     />
-  </View>,
-  <View>
     <TileL />
     <View
       style={
@@ -986,8 +932,6 @@ Array [
         }
       }
     />
-  </View>,
-  <View>
     <TileL />
   </View>,
 ]

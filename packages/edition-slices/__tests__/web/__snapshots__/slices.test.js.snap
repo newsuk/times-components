@@ -44,26 +44,19 @@ exports[`1. secondary one and four slice 1`] = `
         />
       </div>
     </div>
-    <div />
     <div>
       <TileO
         tileName="support1"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support4"
       />
@@ -89,26 +82,19 @@ exports[`1. secondary one and four slice 2`] = `
         />
       </div>
     </div>
-    <div />
     <div>
       <TileO
         tileName="support1"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support4"
       />
@@ -197,45 +183,49 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-<div>
+Array [
   <TileI
     tileName="lead"
-  />
-  <TileJ
-    tileName="support1"
-  />
-  <div />
-  <TileJ
-    tileName="support2"
-  />
-  <div />
-  <TileJ
-    tileName="support3"
-  />
-  <div />
-  <TileJ
-    tileName="support4"
-  />
-</div>
+  />,
+  <div>
+    <TileJ
+      tileName="support1"
+    />
+    <div />
+    <TileJ
+      tileName="support2"
+    />
+    <div />
+    <TileJ
+      tileName="support3"
+    />
+    <div />
+    <TileJ
+      tileName="support4"
+    />
+  </div>,
+]
 `;
 
 exports[`5. lead two no pic and two 1`] = `
 <div>
-  <TileX
-    tileName="lead1"
-  />
-  <div />
-  <TileY
-    tileName="lead2"
-  />
-  <div />
-  <TileD
-    tileName="support1"
-  />
-  <div />
-  <TileZ
-    tileName="support2"
-  />
+  <div>
+    <TileX
+      tileName="lead1"
+    />
+    <div />
+    <TileY
+      tileName="lead2"
+    />
+    <div />
+    <TileD
+      tileName="support1"
+    />
+    <div />
+    <TileZ
+      tileName="support2"
+    />
+  </div>
 </div>
 `;
 
@@ -308,26 +298,19 @@ exports[`9. secondary one and four slice 1`] = `
         />
       </div>
     </div>
-    <div />
     <div>
       <TileO
         tileName="support1"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support2"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support3"
       />
-    </div>
-    <div />
-    <div>
+      <div />
       <TileO
         tileName="support4"
       />
