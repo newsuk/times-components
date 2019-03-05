@@ -14,7 +14,6 @@ exports[`1. secondary one and columnist 1`] = `
   border-bottom-width: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S3 {
@@ -51,6 +50,7 @@ exports[`1. secondary one and columnist 1`] = `
     className="S2"
     style={
       Object {
+        "paddingLeft": "10px",
         "paddingTop": "10px",
         "width": "33%",
       }
@@ -80,7 +80,7 @@ exports[`1. secondary one and columnist 1`] = `
     className="S3"
     style={
       Object {
-        "paddingRight": "20px",
+        "paddingRight": "10px",
         "width": "67%",
       }
     }
@@ -108,7 +108,6 @@ exports[`2. tablet - secondary one and columnist 1`] = `
   border-bottom-width: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S3 {
@@ -145,6 +144,7 @@ exports[`2. tablet - secondary one and columnist 1`] = `
     className="S2"
     style={
       Object {
+        "paddingLeft": "10px",
         "paddingTop": "10px",
         "width": "33%",
       }
@@ -174,7 +174,7 @@ exports[`2. tablet - secondary one and columnist 1`] = `
     className="S3"
     style={
       Object {
-        "paddingRight": "20px",
+        "paddingRight": "10px",
         "width": "67%",
       }
     }

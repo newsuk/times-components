@@ -12,6 +12,7 @@ exports[`1. secondary one and columnist 1`] = `
   <View
     style={
       Object {
+        "paddingLeft": 10,
         "paddingTop": 10,
         "width": "33%",
       }
@@ -34,7 +35,7 @@ exports[`1. secondary one and columnist 1`] = `
   <View
     style={
       Object {
-        "paddingRight": 20,
+        "paddingRight": 10,
         "width": "67%",
       }
     }
@@ -58,6 +59,7 @@ exports[`2. tablet - secondary one and columnist 1`] = `
   <View
     style={
       Object {
+        "paddingLeft": 10,
         "paddingTop": 10,
         "width": "33%",
       }
@@ -80,7 +82,7 @@ exports[`2. tablet - secondary one and columnist 1`] = `
   <View
     style={
       Object {
-        "paddingRight": 20,
+        "paddingRight": 10,
         "width": "67%",
       }
     }

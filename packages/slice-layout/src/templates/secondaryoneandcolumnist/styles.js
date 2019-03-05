@@ -4,7 +4,7 @@ const smallBreakpointStyles = {};
 
 const mediumBreakpointStyles = {
   columnistContainer: {
-    paddingRight: spacing(4),
+    paddingRight: spacing(2),
     width: "67%"
   },
   container: {
@@ -12,6 +12,7 @@ const mediumBreakpointStyles = {
     flexDirection: "row"
   },
   secondaryContainer: {
+    paddingLeft: spacing(2),
     paddingTop: spacing(2),
     width: "33%"
   }
