@@ -62,7 +62,7 @@ class ArticleListItem extends Component {
     } = this.props;
 
     const {
-      byline,
+      bylines,
       hasVideo,
       label,
       publicationName,
@@ -95,9 +95,9 @@ class ArticleListItem extends Component {
                   >
                     <ArticleSummary
                       bylineProps={
-                        byline
+                        bylines
                           ? {
-                              ast: byline,
+                              ast: bylines,
                               color: colours.section.default
                             }
                           : null

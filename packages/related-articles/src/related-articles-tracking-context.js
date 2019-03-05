@@ -1,4 +1,3 @@
-import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
   standardRoles,
@@ -19,14 +18,14 @@ export default Component =>
           .filter(support => support !== undefined)
           .map(({ article }, index) => {
             const {
-              byline,
+              bylines,
               headline,
               id,
               publishedTime,
               shortHeadline
             } = article;
             return {
-              byline: get(byline, "[0].children[0].attributes.value", ""),
+              bylines,
               headline: getHeadline(headline, shortHeadline),
               id,
               publishedTime,
@@ -37,14 +36,14 @@ export default Component =>
       const standardTracking = () =>
         items.map(({ article }, index) => {
           const {
-            byline,
+            bylines,
             headline,
             id,
             publishedTime,
             shortHeadline
           } = article;
           return {
-            byline: get(byline, "[0].children[0].attributes.value", ""),
+            bylines,
             headline: getHeadline(headline, shortHeadline),
             id,
             publishedTime,
@@ -54,9 +53,9 @@ export default Component =>
 
       const leadOneAndTwoTracking = () => {
         const { article } = lead;
-        const { byline, headline, id, publishedTime, shortHeadline } = article;
+        const { bylines, headline, id, publishedTime, shortHeadline } = article;
         const leadOneAndTwoTrackingObject = {
-          byline: get(byline, "[0].children[0].attributes.value", ""),
+          bylines,
           headline: getHeadline(headline, shortHeadline),
           id,
           publishedTime,
@@ -70,9 +69,9 @@ export default Component =>
 
       const opinionOneAndTwoTracking = () => {
         const { article } = opinion;
-        const { byline, headline, id, publishedTime, shortHeadline } = article;
+        const { bylines, headline, id, publishedTime, shortHeadline } = article;
         const opinionOneAndTwoTrackingObject = {
-          byline: get(byline, "[0].children[0].attributes.value", ""),
+          bylines,
           headline: getHeadline(headline, shortHeadline),
           id,
           publishedTime,

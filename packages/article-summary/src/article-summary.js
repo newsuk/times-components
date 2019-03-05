@@ -33,7 +33,7 @@ const ArticleSummary = props => {
   } = props;
 
   const renderByline = () => {
-    if (bylineProps.ast.length === 0) return null;
+    if (!bylineProps.ast || bylineProps.ast.length === 0) return null;
 
     const Byline = bylineProps.isOpinionByline
       ? ArticleBylineOpinion

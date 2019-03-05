@@ -38,32 +38,40 @@ exports[`6. article meta 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {
-              "slug": "kaya-burgess",
-            },
-            "children": Array [
+            "byline": Array [
               Object {
                 "attributes": Object {
-                  "value": "Kaya Burgess",
+                  "slug": "kaya-burgess",
                 },
-                "children": Array [],
-                "name": "text",
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Kaya Burgess",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "author",
               },
             ],
-            "name": "author",
           },
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": ", Religious Affairs Correspondent",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": ", Religious Affairs Correspondent",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }

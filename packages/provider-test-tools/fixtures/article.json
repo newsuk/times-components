@@ -40,22 +40,6 @@
       }
     }
   ],
-  "byline": [
-    {
-      "name": "inline",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value": "Rick Broadbent"
-          },
-          "children": []
-        }
-      ]
-    }
-  ],
-  "paywalledContent": true,
   "commentCount": 65,
   "commentsEnabled": true,
   "dropcapsDisabled": false,
@@ -1110,15 +1094,19 @@
     "__typename": "StandardSlice",
     "items": [
       {
-        "byline": [
+        "bylines": [
           {
-            "name": "inline",
-            "attributes": {},
-            "children": [
+            "byline": [
               {
-                "name": "text",
-                "attributes": { "value": "Patrick Kidd" },
-                "children": []
+                "name": "inline",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": { "value": "Patrick Kidd" },
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -1343,17 +1331,21 @@
         "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
       },
       {
-        "byline": [
+        "bylines": [
           {
-            "name": "inline",
-            "attributes": {},
-            "children": [
+            "byline": [
               {
-                "name": "text",
-                "attributes": {
-                  "value": "Graeme Paton Transport Correspondent"
-                },
-                "children": []
+                "name": "inline",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Graeme Paton Transport Correspondent"
+                    },
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -1514,17 +1506,21 @@
         "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
       },
       {
-        "byline": [
+        "bylines": [
           {
-            "name": "inline",
-            "attributes": {},
-            "children": [
+            "byline": [
               {
-                "name": "text",
-                "attributes": {
-                  "value": "Jack Malvern Arts Correspondent Dominic Kennedy"
-                },
-                "children": []
+                "name": "inline",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jack Malvern Arts Correspondent Dominic Kennedy"
+                    },
+                    "children": []
+                  }
+                ]
               }
             ]
           }

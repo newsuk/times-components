@@ -642,7 +642,20 @@ exports[`8. tile h 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>
@@ -1271,7 +1284,21 @@ exports[`16. tile p 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>
@@ -2207,7 +2234,20 @@ exports[`28. tile ab 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>

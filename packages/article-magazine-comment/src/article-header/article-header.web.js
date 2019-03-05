@@ -22,7 +22,7 @@ import {
 
 const ArticleHeader = ({
   authorImage,
-  byline,
+  bylines,
   flags,
   hasVideo,
   headline,
@@ -53,7 +53,7 @@ const ArticleHeader = ({
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta
-          byline={byline}
+          bylines={bylines}
           publicationName={publicationName}
           publishedTime={publishedTime}
         />

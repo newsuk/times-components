@@ -12,7 +12,21 @@ export default addTypenameToDocument(gql`
       articles {
         count
         list(first: $first, skip: $skip) {
-          byline
+          bylines {
+            ... on Byline {
+              byline
+              image {
+                id
+                caption
+                credits
+                title
+                crop(ratio: "1:1") {
+                  ratio
+                  url
+                }
+              }
+            }
+          }
           hasVideo
           headline
           id

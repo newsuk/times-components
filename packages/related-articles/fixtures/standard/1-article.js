@@ -139,34 +139,42 @@ export default ({
       items: [
         {
           article: {
-            byline: [
+            bylines: [
               {
-                attributes: {
-                  slug: "camilla-long"
-                },
-                children: [
+                byline: [
                   {
                     attributes: {
-                      value: "Camilla Long"
+                      slug: "camilla-long"
                     },
-                    children: [],
-                    name: "text"
+                    children: [
+                      {
+                        attributes: {
+                          value: "Camilla Long"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "author"
                   }
-                ],
-                name: "author"
+                ]
               },
               {
-                attributes: {},
-                children: [
+                byline: [
                   {
-                    attributes: {
-                      value: ", Environment Editor"
-                    },
-                    children: [],
-                    name: "text"
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: ", Environment Editor"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "inline"
                   }
-                ],
-                name: "inline"
+                ]
               }
             ],
             hasVideo,

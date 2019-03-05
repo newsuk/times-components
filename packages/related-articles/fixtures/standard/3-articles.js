@@ -529,19 +529,23 @@ export default ({
       items: [
         {
           article: {
-            byline: [
+            bylines: [
               {
-                attributes: {},
-                children: [
+                byline: [
                   {
-                    attributes: {
-                      value: "Camilla Long, Environment Editor"
-                    },
-                    children: [],
-                    name: "text"
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: "Camilla Long, Environment Editor"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "inline"
                   }
-                ],
-                name: "inline"
+                ]
               }
             ],
             headline: firstHeadline,
@@ -571,19 +575,23 @@ export default ({
         },
         {
           article: {
-            byline: [
+            bylines: [
               {
-                attributes: {},
-                children: [
+                byline: [
                   {
-                    attributes: {
-                      value: "Camilla Long, Environment Editor"
-                    },
-                    children: [],
-                    name: "text"
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: "Camilla Long, Environment Editor"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "inline"
                   }
-                ],
-                name: "inline"
+                ]
               }
             ],
             headline: secondHeadline,
@@ -612,19 +620,23 @@ export default ({
         },
         {
           article: {
-            byline: [
+            bylines: [
               {
-                attributes: {},
-                children: [
+                byline: [
                   {
-                    attributes: {
-                      value: "Camilla Long, Environment Editor"
-                    },
-                    children: [],
-                    name: "text"
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: "Camilla Long, Environment Editor"
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "inline"
                   }
-                ],
-                name: "inline"
+                ]
               }
             ],
             headline: thirdHeadline,

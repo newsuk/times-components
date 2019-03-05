@@ -1,31 +1,39 @@
 export const bylineWithLink = () => [
   {
-    attributes: {
-      slug: "kaya-burgess"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Kaya Burgess"
+          slug: "kaya-burgess"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Kaya Burgess"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   },
   {
-    attributes: {},
-    children: [
+    byline: [
       {
-        attributes: {
-          value: ", Religious Affairs Correspondent"
-        },
-        children: [],
-        name: "text"
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Religious Affairs Correspondent"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
       }
-    ],
-    name: "inline"
+    ]
   }
 ];
 
@@ -663,118 +671,150 @@ export const videoLeadAsset = ({
   }
 });
 
-const defaultByline = [
+const defaultBylines = [
   {
-    attributes: {
-      slug: "camilla-long"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Camilla Long"
+          slug: "camilla-long"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   },
   {
-    attributes: {},
-    children: [
+    byline: [
       {
-        attributes: {
-          value: ", Environment Editor"
-        },
-        children: [],
-        name: "text"
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
       }
-    ],
-    name: "inline"
+    ]
   },
   {
-    attributes: {
-      slug: "camilla-long"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Camilla Long"
+          slug: "camilla-long"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   },
   {
-    attributes: {},
-    children: [
+    byline: [
       {
-        attributes: {
-          value: ", Environment Editor"
-        },
-        children: [],
-        name: "text"
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
       }
-    ],
-    name: "inline"
+    ]
   },
   {
-    attributes: {
-      slug: "camilla-long"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Camilla Long"
+          slug: "camilla-long"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   },
   {
-    attributes: {},
-    children: [
+    byline: [
       {
-        attributes: {
-          value: ", Environment Editor"
-        },
-        children: [],
-        name: "text"
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
       }
-    ],
-    name: "inline"
+    ]
   },
   {
-    attributes: {
-      slug: "camilla-long"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Camilla Long"
+          slug: "camilla-long"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   },
   {
-    attributes: {},
-    children: [
+    byline: [
       {
-        attributes: {
-          value: ", Environment Editor"
-        },
-        children: [],
-        name: "text"
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
       }
-    ],
-    name: "inline"
+    ]
   }
 ];
 const defaultCommentCount = 65;
@@ -1344,19 +1384,23 @@ const defaultRelatedArticleSlice = {
     {
       article: {
         __typename: "Article",
-        byline: [
+        bylines: [
           {
-            attributes: {},
-            children: [
+            byline: [
               {
-                attributes: {
-                  value: "Patrick Kidd"
-                },
-                children: [],
-                name: "text"
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Patrick Kidd"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
               }
-            ],
-            name: "inline"
+            ]
           }
         ],
         headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
@@ -1608,19 +1652,23 @@ const defaultRelatedArticleSlice = {
     {
       article: {
         __typename: "Article",
-        byline: [
+        bylines: [
           {
-            attributes: {},
-            children: [
+            byline: [
               {
-                attributes: {
-                  value: "Graeme Paton Transport Correspondent"
-                },
-                children: [],
-                name: "text"
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Graeme Paton Transport Correspondent"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
               }
-            ],
-            name: "inline"
+            ]
           }
         ],
         headline:
@@ -1794,18 +1842,23 @@ const defaultRelatedArticleSlice = {
     {
       article: {
         __typename: "Article",
-        byline: [
+        bylines: [
           {
-            children: [
+            byline: [
               {
-                attributes: {
-                  value: "John Simpson, Crime Correspondent | Will Humphries"
-                },
-                children: [],
-                name: "text"
+                children: [
+                  {
+                    attributes: {
+                      value:
+                        "John Simpson, Crime Correspondent | Will Humphries"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
               }
-            ],
-            name: "inline"
+            ]
           }
         ],
         headline: "YouTube ignored police pleas to remove threatening videos",
@@ -1979,7 +2032,7 @@ const addProp = (obj, key, value) => {
 };
 
 const makeDefaultConfig = ({
-  byline = defaultByline,
+  bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
@@ -1998,7 +2051,7 @@ const makeDefaultConfig = ({
   topics = defaultTopics,
   url = defaultUrl
 } = {}) => ({
-  byline,
+  bylines,
   commentCount,
   commentsEnabled,
   content,
@@ -2043,19 +2096,23 @@ export default ({ withAds = true, ...config } = {}) => {
 
 export const testFixture = {
   __typename: "Article",
-  byline: [
+  bylines: [
     {
-      attributes: {},
-      children: [
+      byline: [
         {
-          attributes: {
-            value: "Some byline"
-          },
-          children: [],
-          name: "text"
+          attributes: {},
+          children: [
+            {
+              attributes: {
+                value: "Some byline"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "inline"
         }
-      ],
-      name: "inline"
+      ]
     }
   ],
   commentCount: 65,
@@ -2122,7 +2179,7 @@ export const testFixture = {
       {
         article: {
           __typename: "Article",
-          byline: [],
+          bylines: [],
           hasVideo: false,
           headline: "RA Headline",
           id: "ra-1",

@@ -30,17 +30,21 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Some byline",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
                 },
               ]
             }
@@ -107,7 +111,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                 Object {
                   "article": Object {
                     "__typename": "Article",
-                    "byline": Array [],
+                    "bylines": Array [],
                     "hasVideo": false,
                     "headline": "RA Headline",
                     "id": "ra-1",
@@ -179,17 +183,21 @@ exports[`4. an article with ads 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Some byline",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
                 },
               ]
             }
@@ -258,7 +266,7 @@ exports[`4. an article with ads 1`] = `
                 Object {
                   "article": Object {
                     "__typename": "Article",
-                    "byline": Array [],
+                    "bylines": Array [],
                     "hasVideo": false,
                     "headline": "RA Headline",
                     "id": "ra-1",

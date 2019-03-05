@@ -28,7 +28,7 @@ const ArticleListItem = props => {
   } = props;
 
   const {
-    byline,
+    bylines,
     hasVideo,
     headline,
     label,
@@ -57,9 +57,9 @@ const ArticleListItem = props => {
   }
 
   const childProps = {
-    bylineProps: byline
+    bylineProps: bylines
       ? {
-          ast: byline,
+          ast: bylines,
           color: colours.section.default
         }
       : null,

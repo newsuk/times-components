@@ -14,7 +14,7 @@ const TileH = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileSummary
-        byline={tile.article.byline}
+        bylines={tile.article.bylines}
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
         summary={tile.teaser125 || tile.article.summary125}

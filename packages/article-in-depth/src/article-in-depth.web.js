@@ -21,7 +21,7 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const {
       backgroundColour,
-      byline,
+      bylines,
       expirableFlags,
       hasVideo,
       headline,
@@ -53,7 +53,7 @@ class ArticlePage extends Component {
         <HeaderContainer style={styles.metaContainer}>
           <Meta
             backgroundColour={backgroundColour}
-            byline={byline}
+            bylines={bylines}
             publicationName={publicationName}
             publishedTime={publishedTime}
             textColour={textColour}

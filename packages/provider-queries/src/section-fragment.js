@@ -623,9 +623,6 @@ export default gql`
         briefing {
           ...durItem
         }
-        briefing {
-          ...durItem
-        }
         onThisDay {
           ...durItem
         }
@@ -1233,7 +1230,21 @@ export default gql`
   }
 
   fragment baseArticleProps on Article {
-    byline
+    bylines {
+      ... on Byline {
+        byline
+        image {
+          id
+          caption
+          credits
+          title
+          crop(ratio: "1:1") {
+            ratio
+            url
+          }
+        }
+      }
+    }
     expirableFlags {
       type
       expiryTime

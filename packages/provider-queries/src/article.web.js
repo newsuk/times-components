@@ -4,21 +4,6 @@ import gql from "graphql-tag";
 export default addTypenameToDocument(gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
-      bylines {
-        ... on Byline {
-          byline
-          image {
-            id
-            caption
-            credits
-            title
-            crop(ratio: "1:1") {
-              ratio
-              url
-            }
-          }
-        }
-      }
       backgroundColour {
         rgba {
           red
@@ -132,7 +117,21 @@ export default addTypenameToDocument(gql`
   }
 
   fragment articleProps on Article {
-    byline
+    bylines {
+      ... on Byline {
+        byline
+        image {
+          id
+          caption
+          credits
+          title
+          crop(ratio: "1:1") {
+            ratio
+            url
+          }
+        }
+      }
+    }
     hasVideo
     headline
     id

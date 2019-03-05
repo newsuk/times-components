@@ -329,7 +329,10 @@ exports[`8. tile h 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>
@@ -648,7 +651,10 @@ exports[`16. tile p 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>
@@ -1127,7 +1133,10 @@ exports[`28. tile ab 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>

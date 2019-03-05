@@ -5,7 +5,11 @@ export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, referralUrl = "" }) => ({
       articleId: get(data, "id", ""),
-      byline: get(data, "byline[0].children[0].attributes.value", ""),
+      bylines: get(
+        data,
+        "bylines[0].byline[0].children[0].attributes.value",
+        ""
+      ),
       headline: get(data, "headline", ""),
       label: get(data, "label", ""),
       pageName: `${get(data, "slug", "")}-${get(data, "shortIdentifier", "")}`,

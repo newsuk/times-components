@@ -13,15 +13,15 @@ import {
 } from "../styles/responsive.web";
 import styles from "../styles";
 
-const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
+const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
-    {byline && (
+    {bylines && (
       <Fragment>
         <Meta style={styles.meta}>
           <Context.Consumer>
             {({ theme: { sectionColour } }) => (
               <ArticleBylineWithLinks
-                ast={byline}
+                ast={bylines}
                 color={sectionColour || colours.section.default}
               />
             )}

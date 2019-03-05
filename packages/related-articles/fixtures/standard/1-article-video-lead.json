@@ -106,32 +106,40 @@
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "label": "BAYEUX TAPESTRY",
             "url": "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
-            "byline": [
+            "bylines": [
               {
-                "name": "author",
-                "attributes": {
-                  "slug": "camilla-long"
-                },
-                "children": [
+                "byline": [
                   {
-                    "name": "text",
+                    "name": "author",
                     "attributes": {
-                      "value": "Camilla Long"
+                      "slug": "camilla-long"
                     },
-                    "children": []
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Camilla Long"
+                        },
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "name": "inline",
-                "attributes": {},
-                "children": [
+                "byline": [
                   {
-                    "name": "text",
-                    "attributes": {
-                      "value": ", Environment Editor"
-                    },
-                    "children": []
+                    "name": "inline",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": ", Environment Editor"
+                        },
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }

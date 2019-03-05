@@ -63,7 +63,7 @@ class RelatedArticleItem extends Component {
   render() {
     const {
       article: {
-        byline,
+        bylines,
         hasVideo,
         headline,
         label,
@@ -116,7 +116,7 @@ class RelatedArticleItem extends Component {
           >
             <ArticleSummary
               bylineProps={{
-                ast: byline,
+                ast: bylines,
                 bylineClass,
                 color: colours.section[section] || colours.section.default,
                 isOpinionByline

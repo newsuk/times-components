@@ -29,8 +29,6 @@ export interface ArticleInput {
 
   authors: Slug[];
 
-  byline: Markup;
-
   bylines?: (BylineInput | null)[] | null;
 
   backgroundColour?: ColourInput | null;
@@ -928,8 +926,6 @@ export interface AuthorArticles {
 export interface Article {
   /** Used for indepth templates to define the background colour to be used. */
   backgroundColour?: Colour | null;
-  /** An AST of one or more authors that may contain job titles and/or locations */
-  byline?: Markup | null;
   /** Text or structured bylines for one or more authors */
   bylines?: (ArticleByline | null)[] | null;
   /** The content for the article in the shape of an AST */

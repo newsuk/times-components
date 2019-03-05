@@ -10,7 +10,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <View>
       <Image
         aspectRatio={1}
-        uri="https://image.io"
+        uri={null}
       />
       <Text>
         Some Short Headline
@@ -21,17 +21,21 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
                 },
               ]
             }
@@ -54,7 +58,7 @@ exports[`4. an article with ads 1`] = `
     <View>
       <Image
         aspectRatio={1}
-        uri="https://image.io"
+        uri={null}
       />
       <Text>
         Some Headline
@@ -65,17 +69,21 @@ exports[`4. an article with ads 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
                 },
               ]
             }

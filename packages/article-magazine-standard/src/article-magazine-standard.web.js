@@ -23,7 +23,7 @@ class ArticlePage extends Component {
   renderHeader({ width }) {
     const { article } = this.props;
     const {
-      byline,
+      bylines,
       expirableFlags,
       hasVideo,
       headline,
@@ -37,7 +37,7 @@ class ArticlePage extends Component {
     return (
       <Fragment>
         <ArticleHeader
-          byline={byline}
+          bylines={bylines}
           flags={expirableFlags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
