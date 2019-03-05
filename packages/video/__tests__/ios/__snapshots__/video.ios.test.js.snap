@@ -136,3 +136,46 @@ exports[`3. sky sports video 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. 360 video 1`] = `
+<View
+  accessibilityLabel="Video Splash"
+  testID="splash-component"
+>
+  <View>
+    <Image
+      uri="b9a31d3949b1882a09ed2f8508d538f3"
+    />
+    <View>
+      <View>
+        <Svg
+          height={70}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <Rect
+            fill="#000000"
+            fillOpacity="0.4"
+            height="100"
+            width="100"
+            x="0"
+            y="0"
+          />
+          <Rect
+            height="100"
+            stroke="#FFFFFF"
+            strokeWidth="8"
+            width="100"
+            x="0"
+            y="0"
+          />
+          <Polygon
+            fill="#FFFFFF"
+            points="30,20 70,50 30,80"
+          />
+        </Svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;

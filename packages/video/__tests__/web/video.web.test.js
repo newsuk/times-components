@@ -60,6 +60,29 @@ const tests = [
 
       expect(testInstance).toMatchSnapshot();
     }
+  },
+  {
+    name: "360 video",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} playerId="foo" />
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
+    }
+  },
+  {
+    name: "no sky banner displayed on play",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} playerId="foo" />
+      );
+
+      const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);
+      VideoComponent[0].instance.handlePlay();
+
+      expect(testInstance).toMatchSnapshot();
+    }
   }
 ];
 

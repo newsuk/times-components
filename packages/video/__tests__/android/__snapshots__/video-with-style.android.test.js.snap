@@ -172,3 +172,47 @@ exports[`3. sky sports video 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. 360 video 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <Image
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 200,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 300,
+        "zIndex": 2,
+      }
+    }
+  >
+    <View>
+      <Svg>
+        <Rect />
+        <Rect />
+        <Polygon />
+      </Svg>
+    </View>
+  </View>
+</View>
+`;
