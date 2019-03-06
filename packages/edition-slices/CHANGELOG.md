@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.29.0...@times-components/edition-slices@0.30.0) (2019-03-05)
+
+
+### Features
+
+* Tile AE ([#1772](https://github.com/newsuk/times-components/issues/1772)) ([6564a30](https://github.com/newsuk/times-components/commit/6564a30))
+
+
+
+
+
 # [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.28.3...@times-components/edition-slices@0.29.0) (2019-03-05)
 
 

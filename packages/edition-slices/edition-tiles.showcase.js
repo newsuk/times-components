@@ -9,6 +9,7 @@ import {
   TileA,
   TileAC,
   TileAD,
+  TileAE,
   TileB,
   TileC,
   TileD,
@@ -172,6 +173,10 @@ const tileStories = [
   {
     name: "Tile Z - 35pt Headline, no teaser, 4:5 image",
     Tile: TileZ
+  },
+  {
+    name: "Tile AE - 35pt headline, 125 teaser, no image",
+    Tile: TileAE
   }
 ];
 
