@@ -341,18 +341,7 @@ exports[`6. lead one and four slice 1`] = `
         }
       }
     >
-      <TileI
-        style={
-          Object {
-            "container": Object {
-              "flex": 1,
-            },
-            "headline": Object {
-              "fontSize": 30,
-            },
-          }
-        }
-      />
+      <TileAC />
     </View>
     <View
       style={
@@ -371,15 +360,7 @@ exports[`6. lead one and four slice 1`] = `
         }
       }
     >
-      <TileJ
-        style={
-          Object {
-            "headline": Object {
-              "fontSize": 20,
-            },
-          }
-        }
-      />
+      <TileAD />
       <View
         style={
           Object {
@@ -390,15 +371,7 @@ exports[`6. lead one and four slice 1`] = `
           }
         }
       />
-      <TileJ
-        style={
-          Object {
-            "headline": Object {
-              "fontSize": 20,
-            },
-          }
-        }
-      />
+      <TileAD />
       <View
         style={
           Object {
@@ -409,15 +382,7 @@ exports[`6. lead one and four slice 1`] = `
           }
         }
       />
-      <TileJ
-        style={
-          Object {
-            "headline": Object {
-              "fontSize": 20,
-            },
-          }
-        }
-      />
+      <TileAD />
       <View
         style={
           Object {
@@ -428,15 +393,7 @@ exports[`6. lead one and four slice 1`] = `
           }
         }
       />
-      <TileJ
-        style={
-          Object {
-            "headline": Object {
-              "fontSize": 20,
-            },
-          }
-        }
-      />
+      <TileAD />
     </View>
   </View>
 </View>

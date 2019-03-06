@@ -19,11 +19,16 @@ const leadOneAndFourSlice = ({
   if (editionBreakpoints.small === breakpoint) {
     return (
       <Fragment>
-      {renderLead()}
-      <Column
-        tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
-      />
-    </Fragment>
+        {renderLead()}
+        <Column
+          tiles={[
+            renderSupport1,
+            renderSupport2,
+            renderSupport3,
+            renderSupport4
+          ]}
+        />
+      </Fragment>
     );
   }
 

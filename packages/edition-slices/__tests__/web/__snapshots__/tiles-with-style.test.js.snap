@@ -984,26 +984,12 @@ exports[`9. tile i 1`] = `
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding-top: 20px;
   padding-right: 40px;
-  padding-bottom: 20px;
   padding-left: 40px;
+  padding-bottom: 15px;
+  padding-top: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 </style>
 
@@ -1079,7 +1065,7 @@ exports[`10. tile j 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  width: 40%;
 }
 
 .IS2 {
@@ -1093,13 +1079,14 @@ exports[`10. tile j 1`] = `
 .IS4 {
   padding-right: 10px;
   padding-left: 10px;
-  width: 55%;
+  padding-bottom: 5px;
+  width: 60%;
 }
 
 .IS5 {
-  padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 </style>
 

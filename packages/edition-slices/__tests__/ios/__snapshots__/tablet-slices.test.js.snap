@@ -116,25 +116,25 @@ exports[`6. lead one and four slice 1`] = `
 <View>
   <View>
     <View>
-      <TileI
+      <TileAC
         tileName="lead"
       />
     </View>
     <View />
     <View>
-      <TileJ
+      <TileAD
         tileName="support1"
       />
       <View />
-      <TileJ
+      <TileAD
         tileName="support2"
       />
       <View />
-      <TileJ
+      <TileAD
         tileName="support3"
       />
       <View />
-      <TileJ
+      <TileAD
         tileName="support4"
       />
     </View>

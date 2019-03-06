@@ -107,23 +107,23 @@ exports[`5. secondary two and two slice 1`] = `
 
 exports[`6. lead one and four slice 1`] = `
 <div>
+  <TileAC
+    tileName="lead"
+  />
   <div>
-    <TileI
-      tileName="lead"
-    />
-    <TileJ
+    <TileAD
       tileName="support1"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support2"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support3"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support4"
     />
   </div>
