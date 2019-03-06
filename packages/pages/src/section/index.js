@@ -8,19 +8,13 @@ import withNativeProvider from "../with-native-provider";
 const onPress = () => {};
 const track = () => {};
 const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
-  console.time("sectionParse");
-  const t0 = performance.now();
-  const parsedSection = JSON.parse(section);
-  const t1 = performance.now();
-  console.timeEnd("sectionParse");
-  console.log("sectionParse with len:", section.length, t1 - t0);
   const SectionPageView = withNativeProvider(
     section ? (
       <Section
         analyticsStream={track}
         onPress={onPress}
         publicationName={publicationName}
-        section={parsedSection}
+        section={JSON.parse(section)}
       />
     ) : (
       <EditionProvider debounceTimeMs={0} id={editionId}>
