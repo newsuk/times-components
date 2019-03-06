@@ -91,6 +91,9 @@ class Gestures extends Component {
       onPanResponderStart: evt => {
         this.handlePinchStart(evt);
       },
+      // Required for iOS support
+      // https://github.com/facebook/react-native/issues/14295#issuecomment-389971835
+      onPanResponderTerminationRequest: () => false,
       onStartShouldSetPanResponder: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
       onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
