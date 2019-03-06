@@ -129,3 +129,35 @@ exports[`6. lead one and four slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`7. secondary two no pic and two slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAE
+        tileName="secondary1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <TileG
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileG
+        tileName="support2"
+      />
+    </div>
+  </div>
+</div>
+`;
