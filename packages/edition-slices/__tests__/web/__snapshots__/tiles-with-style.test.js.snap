@@ -2722,8 +2722,8 @@ exports[`26. tile aa 1`] = `
 }
 
 .IS5 {
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 </style>
 

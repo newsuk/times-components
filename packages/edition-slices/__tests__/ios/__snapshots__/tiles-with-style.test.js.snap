@@ -1985,8 +1985,7 @@ exports[`26. tile aa 1`] = `
   <View
     style={
       Object {
-        "paddingLeft": 10,
-        "paddingRight": 10,
+        "paddingHorizontal": 10,
       }
     }
   >
