@@ -10,7 +10,7 @@ const track = () => {};
 const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
   console.time("sectionParse");
   const t0 = performance.now();
-  const sectionData = JSON.parse(section);
+  const parsedSection = JSON.parse(section);
   const t1 = performance.now();
   console.timeEnd("sectionParse");
   console.log("sectionParse with len:", section.length, t1 - t0);
@@ -20,7 +20,7 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
         analyticsStream={track}
         onPress={onPress}
         publicationName={publicationName}
-        section={sectionData}
+        section={parsedSection}
       />
     ) : (
       <EditionProvider debounceTimeMs={0} id={editionId}>
@@ -31,14 +31,14 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
           if (error) {
             return <Text>{JSON.stringify(error)}</Text>;
           }
-          const { publicationName } = edition;
+          const { publicationName: pubName } = edition;
           return edition.sections
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
               <Section
                 analyticsStream={track}
                 onPress={onPress}
-                publicationName={publicationName}
+                publicationName={pubName}
                 section={sectionData}
               />
             ));
