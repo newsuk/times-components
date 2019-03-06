@@ -58,12 +58,12 @@ export default gql`
         cartoon {
           headline
           leadAsset {
-            ...leadAsset169
+            ...leadAsset32
           }
           article {
             ...baseArticleProps
             leadAsset {
-              ...leadAsset169
+              ...leadAsset32
             }
           }
         }
@@ -1041,23 +1041,6 @@ export default gql`
           article {
             ...baseArticleProps
           }
-        }
-      }
-      ... on DailyUniversalRegister {
-        briefing {
-          ...durItem
-        }
-        briefing {
-          ...durItem
-        }
-        onThisDay {
-          ...durItem
-        }
-        natureNotes {
-          ...durItem
-        }
-        birthdaysToday {
-          ...durItem
         }
       }
     }

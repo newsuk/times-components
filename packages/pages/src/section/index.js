@@ -7,13 +7,20 @@ import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};
 const track = () => {};
-const SectionPage = ({ editionId, section, sectionTitle }) => {
+const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
+  console.time("sectionParse");
+  const t0 = performance.now();
+  const sectionData = JSON.parse(section);
+  const t1 = performance.now();
+  console.timeEnd("sectionParse");
+  console.log("sectionParse with len:", section.length, t1 - t0);
   const SectionPageView = withNativeProvider(
     section ? (
       <Section
         analyticsStream={track}
         onPress={onPress}
-        section={JSON.parse(section)}
+        publicationName={publicationName}
+        section={sectionData}
       />
     ) : (
       <EditionProvider debounceTimeMs={0} id={editionId}>
@@ -44,12 +51,14 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
 
 SectionPage.propTypes = {
   editionId: PropTypes.string,
+  publicationName: PropTypes.string,
   section: PropTypes.shape({}),
   sectionTitle: PropTypes.string
 };
 
 SectionPage.defaultProps = {
   editionId: null,
+  publicationName: "TIMES",
   section: null,
   sectionTitle: null
 };
