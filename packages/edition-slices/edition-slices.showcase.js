@@ -120,7 +120,7 @@ const sliceStories = [
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
-    name: "Secondary Two No Pic And Two (BBGG)",
+    name: "Secondary Two No Pic And Two (Mobile: B,B,G,G - Tablet: AE,AE,G,G)",
     Slice: SecondaryTwoNoPicAndTwoSlice
   },
   {

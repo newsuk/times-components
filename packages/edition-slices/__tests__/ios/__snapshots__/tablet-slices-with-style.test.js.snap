@@ -313,3 +313,102 @@ exports[`5. secondary two and two slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`6. secondary two no pic and two slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+  </View>
+</View>
+`;
