@@ -7,12 +7,13 @@ import withNativeProvider from "../with-native-provider";
 
 const onPress = () => {};
 const track = () => {};
-const SectionPage = ({ editionId, section, sectionTitle }) => {
+const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
   const SectionPageView = withNativeProvider(
     section ? (
       <Section
         analyticsStream={track}
         onPress={onPress}
+        publicationName={publicationName}
         section={JSON.parse(section)}
       />
     ) : (
@@ -24,14 +25,14 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
           if (error) {
             return <Text>{JSON.stringify(error)}</Text>;
           }
-          const { publicationName } = edition;
+          const { publicationName: pubName } = edition;
           return edition.sections
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
               <Section
                 analyticsStream={track}
                 onPress={onPress}
-                publicationName={publicationName}
+                publicationName={pubName}
                 section={sectionData}
               />
             ));
@@ -44,12 +45,14 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
 
 SectionPage.propTypes = {
   editionId: PropTypes.string,
+  publicationName: PropTypes.string,
   section: PropTypes.shape({}),
   sectionTitle: PropTypes.string
 };
 
 SectionPage.defaultProps = {
   editionId: null,
+  publicationName: "TIMES",
   section: null,
   sectionTitle: null
 };
