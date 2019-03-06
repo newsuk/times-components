@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Linking, Platform, View, WebView } from "react-native";
 import PropTypes from "prop-types";
+import webviewEventCallbackSetup from "./webview-event-callback-setup";
 
 const editorialLambdaProtocol = "https://";
 const editorialLambdaOrigin = "cwfiyvo20d.execute-api.eu-west-1.amazonaws.com";
@@ -9,10 +10,16 @@ const editorialLambdaSlug = "dev/component";
 class InteractiveWrapper extends Component {
   static postMessageBugWorkaround() {
     return Platform.select({
+      android: {
+        injectedJavaScript: `(${webviewEventCallbackSetup})({window, os: "${
+          Platform.OS
+        }"});`
+      },
       // https://github.com/facebook/react-native/issues/10865
       ios: {
-        injectedJavaScript:
-          "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+        injectedJavaScript: `window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage'); (${webviewEventCallbackSetup})({window, os: "${
+          Platform.OS
+        }"});`
       }
     });
   }
@@ -64,7 +71,7 @@ class InteractiveWrapper extends Component {
     ) {
       // Need to handle native routing when something is clicked.
       InteractiveWrapper.openURLInBrowser(data.url);
-      this.webview.stopLoading();
+      this.webview.reload();
     }
   }
 
