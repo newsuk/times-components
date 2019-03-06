@@ -48,7 +48,15 @@ exports[`3. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary four tablet slice 1`] = `
+exports[`4. secondary one tablet slice 1`] = `
+<View>
+  <TileW
+    tileName="secondary"
+  />
+</View>
+`;
+
+exports[`5. secondary four tablet slice 1`] = `
 <View>
   <View>
     <View>
@@ -78,7 +86,7 @@ exports[`4. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary two and two slice 1`] = `
+exports[`6. secondary two and two slice 1`] = `
 <View>
   <View>
     <View>
@@ -112,7 +120,7 @@ exports[`5. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary two no pic and two slice 1`] = `
+exports[`7. secondary two no pic and two slice 1`] = `
 <View>
   <View>
     <View>

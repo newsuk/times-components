@@ -6,6 +6,7 @@ import {
   mockLeadOneAndOneSlice,
   mockLeadOneFullWidthSlice,
   mockLeadTwoNoPicAndTwoSlice,
+  mockSecondaryOneSlice,
   mockSecondaryFourSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryTwoAndTwoSlice
@@ -16,6 +17,7 @@ import {
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
+  SecondaryOneSlice,
   SecondaryFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
   SecondaryTwoAndTwoSlice
@@ -36,6 +38,11 @@ const slices = [
     mock: mockLeadTwoNoPicAndTwoSlice(),
     name: "lead two no pic and two tablet slice",
     Slice: LeadTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockSecondaryOneSlice(),
+    name: "secondary one tablet slice",
+    Slice: SecondaryOneSlice
   },
   {
     mock: mockSecondaryFourSlice(),
