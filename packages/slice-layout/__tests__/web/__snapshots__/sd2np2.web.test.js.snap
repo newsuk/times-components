@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. four child elements 1`] = `
+exports[`1. secondary two no pic and two layout - small 1`] = `
 <div>
   <div>
     secondary-1
@@ -18,4 +18,36 @@ exports[`1. four child elements 1`] = `
     support-2
   </div>
 </div>
+`;
+
+exports[`2. secondary two no pic and two layout - medium 1`] = `
+Array [
+  <div>
+    <div>
+      <div>
+        secondary-1
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        secondary-2
+      </div>
+    </div>
+  </div>,
+  <div />,
+  <div>
+    <div>
+      <div>
+        support-1
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        support-2
+      </div>
+    </div>
+  </div>,
+]
 `;

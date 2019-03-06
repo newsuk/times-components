@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { SecondaryTwoNoPicAndTwoSlice } from "@times-components/slice-layout";
 import { TileAE, TileB, TileG } from "../../tiles";
+import { ResponsiveSlice } from "../shared";
 
 const SecondaryTwoNoPicAndTwo = ({
   onPress,

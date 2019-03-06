@@ -111,3 +111,35 @@ exports[`5. secondary two and two slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`6. secondary two no pic and two slice 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAE
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAE
+        tileName="secondary2"
+      />
+    </View>
+  </View>
+  <View />
+  <View>
+    <View>
+      <TileG
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileG
+        tileName="support2"
+      />
+    </View>
+  </View>
+</View>
+`;
