@@ -1,18 +1,23 @@
 import React from "react";
-import { ActivityIndicator, Text } from "react-native";
+import { ActivityIndicator, NativeModules, Text } from "react-native";
 import PropTypes from "prop-types";
 import { EditionProvider } from "@times-components/provider";
 import Section from "@times-components/section";
 import withNativeProvider from "../with-native-provider";
 
-const onPress = () => {};
+const { onArticlePress, onPuzzlePress } = NativeModules.SectionEvents || {
+  onArticlePress: url => console.log("onArticlePress", url),
+  onPuzzlePress: url => console.log("onPuzzlePress", url)
+};
+
 const track = () => {};
 const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
   const SectionPageView = withNativeProvider(
     section ? (
       <Section
         analyticsStream={track}
-        onPress={onPress}
+        onArticlePress={(_, { url }) => onArticlePress(url)}
+        onPuzzlePress={(_, { url }) => onPuzzlePress(url)}
         publicationName={publicationName}
         section={JSON.parse(section)}
       />
@@ -31,7 +36,8 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
             .map(sectionData => (
               <Section
                 analyticsStream={track}
-                onPress={onPress}
+                onArticlePress={(_, { url }) => onArticlePress(url)}
+                onPuzzlePress={(_, { url }) => onPuzzlePress(url)}
                 publicationName={pubName}
                 section={sectionData}
               />
