@@ -17,7 +17,6 @@ exports[`1. default modal 1`] = `
       <View
         style={
           Object {
-            "display": "flex",
             "flex": 1,
           }
         }

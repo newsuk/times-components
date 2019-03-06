@@ -40,7 +40,6 @@ const styles = {
     justifyContent: "center"
   },
   safeViewContainer: {
-    display: "flex",
     flex: 1
   },
   safeViewInnerContainer: {
