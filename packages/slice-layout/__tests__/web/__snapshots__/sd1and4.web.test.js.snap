@@ -11,32 +11,25 @@ exports[`1. four child elements 1`] = `
       </div>
     </div>
   </div>
-  <div />
   <div>
     <div
       dir="auto"
     >
       support-1
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div
       dir="auto"
     >
       support-2
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div
       dir="auto"
     >
       support-3
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div
       dir="auto"
     >

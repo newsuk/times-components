@@ -23,21 +23,23 @@ exports[`2. lead one full width tablet slice 1`] = `
 
 exports[`3. lead two no pic and two tablet slice 1`] = `
 <div>
-  <TileX
-    tileName="lead1"
-  />
-  <div />
-  <TileY
-    tileName="lead2"
-  />
-  <div />
-  <TileD
-    tileName="support1"
-  />
-  <div />
-  <TileZ
-    tileName="support2"
-  />
+  <div>
+    <TileX
+      tileName="lead1"
+    />
+    <div />
+    <TileY
+      tileName="lead2"
+    />
+    <div />
+    <TileD
+      tileName="support1"
+    />
+    <div />
+    <TileZ
+      tileName="support2"
+    />
+  </div>
 </div>
 `;
 

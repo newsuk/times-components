@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.28.3...@times-components/edition-slices@0.29.0) (2019-03-05)
+
+
+### Features
+
+* List 2 no pic 6 tablet ([#1758](https://github.com/newsuk/times-components/issues/1758)) ([1e9c3d7](https://github.com/newsuk/times-components/commit/1e9c3d7))
+
+
+
+
+
+## [0.28.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.28.2...@times-components/edition-slices@0.28.3) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.28.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.28.1...@times-components/edition-slices@0.28.2) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.28.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.28.0...@times-components/edition-slices@0.28.1) (2019-02-28)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.27.0...@times-components/edition-slices@0.28.0) (2019-02-28)
+
+
+### Bug Fixes
+
+* Roundel images working across ios and android ([#1754](https://github.com/newsuk/times-components/issues/1754)) ([82ff8ad](https://github.com/newsuk/times-components/commit/82ff8ad))
+* update snapshots ([#1759](https://github.com/newsuk/times-components/issues/1759)) ([8232b43](https://github.com/newsuk/times-components/commit/8232b43))
+
+
+### Features
+
+* Short Headline to be the primary headline for List Pages and Slices ([#1756](https://github.com/newsuk/times-components/issues/1756)) ([94ecbce](https://github.com/newsuk/times-components/commit/94ecbce))
+
+
+
+
+
 # [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.26.0...@times-components/edition-slices@0.27.0) (2019-02-27)
 
 

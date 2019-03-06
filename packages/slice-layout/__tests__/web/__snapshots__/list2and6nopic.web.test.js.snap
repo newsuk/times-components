@@ -1,55 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. eight child element 1`] = `
-Array [
+exports[`1. list two and six no pic 1`] = `
+<div>
+  <div>
+    <div>
+      lead-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      lead-2
+    </div>
+  </div>
+  <div />
   <div>
     <div>
       <div>
-        lead-1
+        support-1
       </div>
+      <div />
     </div>
-    <div />
     <div>
       <div>
-        lead-2
+        support-2
+      </div>
+      <div />
+    </div>
+    <div>
+      <div>
+        support-3
       </div>
     </div>
-  </div>,
-  <div />,
+  </div>
+  <div />
   <div>
     <div>
-      support-1
+      <div>
+        support-4
+      </div>
+      <div />
     </div>
-    <div />
-  </div>,
+    <div>
+      <div>
+        support-5
+      </div>
+      <div />
+    </div>
+    <div>
+      <div>
+        support-6
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. tablet - list two and six no pic 1`] = `
+<div>
   <div>
     <div>
-      support-2
+      lead-1
     </div>
-    <div />
-  </div>,
+  </div>
+  <div />
   <div>
     <div>
-      support-3
+      lead-2
     </div>
-    <div />
-  </div>,
+  </div>
+  <div />
   <div>
     <div>
-      support-4
+      <div>
+        support-1
+      </div>
+      <div />
     </div>
-    <div />
-  </div>,
+    <div>
+      <div>
+        support-2
+      </div>
+      <div />
+    </div>
+    <div>
+      <div>
+        support-3
+      </div>
+    </div>
+  </div>
+  <div />
   <div>
     <div>
-      support-5
+      <div>
+        support-4
+      </div>
+      <div />
     </div>
-    <div />
-  </div>,
-  <div>
     <div>
-      support-6
+      <div>
+        support-5
+      </div>
+      <div />
     </div>
-  </div>,
-]
+    <div>
+      <div>
+        support-6
+      </div>
+    </div>
+  </div>
+</div>
 `;

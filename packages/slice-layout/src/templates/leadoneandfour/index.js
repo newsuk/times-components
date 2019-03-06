@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
-import styles from "./styles";
 import { defaultProps, propTypes } from "./proptypes";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
+import Column from "../column";
+import styles from "./styles";
 
 const leadOneAndFourSlice = ({
   breakpoint,
@@ -17,16 +18,12 @@ const leadOneAndFourSlice = ({
 
   if (editionBreakpoints.small === breakpoint) {
     return (
-      <View>
-        {renderLead()}
-        {renderSupport1()}
-        <ItemRowSeparator />
-        {renderSupport2()}
-        <ItemRowSeparator />
-        {renderSupport3()}
-        <ItemRowSeparator />
-        {renderSupport4()}
-      </View>
+      <Fragment>
+      {renderLead()}
+      <Column
+        tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
+      />
+    </Fragment>
     );
   }
 

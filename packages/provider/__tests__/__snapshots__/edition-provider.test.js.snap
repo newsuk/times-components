@@ -4,6 +4,7 @@ exports[`Edition provider returns query result 1`] = `
 Object {
   "__typename": "Edition",
   "id": "a-u-u-i-d",
+  "publicationName": "TIMES",
   "publishedTime": "2018-10-25",
   "sections": Array [
     Object {

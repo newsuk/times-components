@@ -1,7 +1,6 @@
 import React from "react";
-import { View } from "react-native";
 import propTypes from "./proptypes";
-import { ItemRowSeparator } from "../shared";
+import Column from "../column";
 
 const SecondaryTwoNoPicAndTwoSlice = ({
   renderSecondary1,
@@ -9,15 +8,9 @@ const SecondaryTwoNoPicAndTwoSlice = ({
   renderSupport1,
   renderSupport2
 }) => (
-  <View>
-    {renderSecondary1()}
-    <ItemRowSeparator />
-    {renderSecondary2()}
-    <ItemRowSeparator />
-    {renderSupport1()}
-    <ItemRowSeparator />
-    {renderSupport2()}
-  </View>
+  <Column
+    tiles={[renderSecondary1, renderSecondary2, renderSupport1, renderSupport2]}
+  />
 );
 
 SecondaryTwoNoPicAndTwoSlice.propTypes = propTypes;

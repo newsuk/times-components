@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.9.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.15...@times-components/image@4.9.0) (2019-03-05)
+
+
+### Features
+
+* using low res image for modal placeholders (& drop-cap improvements) ([#1765](https://github.com/newsuk/times-components/issues/1765)) ([6bd4676](https://github.com/newsuk/times-components/commit/6bd4676))
+
+
+
+
+
+## [4.8.15](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.14...@times-components/image@4.8.15) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [4.8.14](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.13...@times-components/image@4.8.14) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [4.8.13](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.12...@times-components/image@4.8.13) (2019-02-28)
+
+
+### Bug Fixes
+
+* modal image close button should be in a safe area ([#1757](https://github.com/newsuk/times-components/issues/1757)) ([0e5e0da](https://github.com/newsuk/times-components/commit/0e5e0da))
+
+
+
+
+
 ## [4.8.12](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.11...@times-components/image@4.8.12) (2019-02-25)
 
 **Note:** Version bump only for package @times-components/image

@@ -24,12 +24,14 @@ const SectionPage = ({ editionId, section, sectionTitle }) => {
           if (error) {
             return <Text>{JSON.stringify(error)}</Text>;
           }
+          const { publicationName } = edition;
           return edition.sections
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
               <Section
                 analyticsStream={track}
                 onPress={onPress}
+                publicationName={publicationName}
                 section={sectionData}
               />
             ));

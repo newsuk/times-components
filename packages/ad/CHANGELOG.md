@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.35...@times-components/ad@2.5.0) (2019-03-05)
+
+
+### Features
+
+* Additional ad sizes for larger widths ([#1768](https://github.com/newsuk/times-components/issues/1768)) ([f8a2972](https://github.com/newsuk/times-components/commit/f8a2972))
+
+
+
+
+
+## [2.4.35](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.34...@times-components/ad@2.4.35) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.4.34](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.33...@times-components/ad@2.4.34) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 ## [2.4.33](https://github.com/newsuk/times-components/compare/@times-components/ad@2.4.32...@times-components/ad@2.4.33) (2019-02-25)
 
 **Note:** Version bump only for package @times-components/ad

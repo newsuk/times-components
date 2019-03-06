@@ -18,7 +18,11 @@ const styles = {
   mastheadContainer: {
     alignItems: "center"
   },
-  mastheadStyle: {
+  mastheadStyleST: {
+    height: 54,
+    width: 283
+  },
+  mastheadStyleTimes: {
     height: 51,
     width: 283
   },

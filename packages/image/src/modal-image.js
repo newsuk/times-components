@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, View } from "react-native";
+import { Modal, View, SafeAreaView } from "react-native";
 import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import CloseButton from "./close-button";
@@ -11,24 +11,34 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      lowResImageWidth: null,
       showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.onLowResLayout = this.onLowResLayout.bind(this);
   }
 
-  showModal() {
-    this.setState({ showModal: true });
+  onLowResLayout({
+    nativeEvent: {
+      layout: { width }
+    }
+  }) {
+    this.setState({ lowResImageWidth: width });
   }
 
   hideModal() {
     this.setState({ showModal: false });
   }
 
-  render() {
-    const { caption } = this.props;
-    const { showModal } = this.state;
+  showModal() {
+    this.setState({ showModal: true });
+  }
 
+  render() {
+    const { caption, highResSize } = this.props;
+    const { showModal, lowResImageWidth } = this.state;
+    const lowResSize = highResSize || lowResImageWidth;
     const captionWithStyles =
       caption &&
       React.cloneElement(caption, {
@@ -43,17 +53,23 @@ class ModalImage extends Component {
           visible={showModal}
         >
           <View style={styles.modal}>
-            <View style={styles.buttonContainer}>
-              <CloseButton onPress={this.hideModal} />
-            </View>
-            <Gestures style={styles.imageContainer}>
-              <Image {...this.props} style={styles.image} />
-            </Gestures>
-            {captionWithStyles}
+            <SafeAreaView style={styles.safeViewContainer}>
+              <View style={styles.buttonContainer}>
+                <CloseButton onPress={this.hideModal} />
+              </View>
+              <Gestures style={styles.imageContainer}>
+                <Image
+                  {...this.props}
+                  lowResSize={lowResSize}
+                  style={styles.image}
+                />
+              </Gestures>
+              {captionWithStyles}
+            </SafeAreaView>
           </View>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image {...this.props} />
+          <Image {...this.props} onLayout={this.onLowResLayout} />
         </Button>
       </View>
     );

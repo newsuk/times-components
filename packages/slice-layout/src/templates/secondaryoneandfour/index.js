@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
 import propTypes from "./proptypes";
-import { ItemRowSeparator } from "../shared";
+import Column from "../column";
 
 const SecondaryOneAndFourSlice = ({
   renderSecondary,
@@ -13,24 +13,17 @@ const SecondaryOneAndFourSlice = ({
 }) => {
   const renderRowOne = renderSecondary();
   const renderFourRows = [
-    renderSupport1(),
-    renderSupport2(),
-    renderSupport3(),
-    renderSupport4()
+    renderSupport1,
+    renderSupport2,
+    renderSupport3,
+    renderSupport4
   ];
   return (
     <View style={styles.container}>
       <View style={styles.itemContainer}>
         <View key={renderRowOne.props.id}>{renderRowOne}</View>
       </View>
-      <ItemRowSeparator style={styles.separator} />
-      <View key={renderFourRows[0].props.id}>{renderFourRows[0]}</View>
-      <ItemRowSeparator style={styles.separator} />
-      <View key={renderFourRows[1].props.id}>{renderFourRows[1]}</View>
-      <ItemRowSeparator style={styles.separator} />
-      <View key={renderFourRows[2].props.id}>{renderFourRows[2]}</View>
-      <ItemRowSeparator style={styles.separator} />
-      <View key={renderFourRows[3].props.id}>{renderFourRows[3]}</View>
+      <Column tiles={renderFourRows} />
     </View>
   );
 };

@@ -15,9 +15,11 @@ import SecondaryOneAndFourSlice from "./templates/secondaryoneandfour";
 import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
 import Leaders from "./templates/leaders";
 import CommentLeadAndCartoon from "./templates/commentleadandcartoon";
+import Column from "./templates/column";
 import { ItemColSeparator, ItemRowSeparator } from "./templates/shared";
 
 export {
+  Column,
   CommentLeadAndCartoon,
   StandardSlice,
   standardRoles,

@@ -93,10 +93,10 @@ export default () => {
       }
     },
     {
-      name: "uses highResSize if it is smaller than layout width",
+      name: "uses highResSize if it exists",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image {...props} highResSize={10} />
+          <Image {...props} highResSize={600} />
         );
 
         testInstance.root.children[0].props.onLayout(
@@ -137,6 +137,34 @@ export default () => {
           />
         );
         expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "uses lowResSize image as placeholder if passed",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Image
+            aspectRatio={3 / 2}
+            borderRadius={10}
+            highResSize={2000}
+            lowResSize={800}
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+          />
+        );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "handle onLayout event",
+      test: () => {
+        const mockEvt = getLayoutEventForWidth(700);
+        const mockOnLayout = jest.fn();
+        const testInstance = TestRenderer.create(
+          <Image {...props} onLayout={mockOnLayout} />
+        );
+
+        testInstance.root.children[0].props.onLayout(mockEvt);
+        expect(mockOnLayout).toHaveBeenCalledWith(mockEvt);
       }
     }
   ];

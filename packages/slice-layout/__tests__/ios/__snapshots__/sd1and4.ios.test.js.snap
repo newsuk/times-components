@@ -9,26 +9,19 @@ exports[`1. four child elements 1`] = `
       </Text>
     </View>
   </View>
-  <View />
   <View>
     <Text>
       support-1
     </Text>
-  </View>
-  <View />
-  <View>
+    <View />
     <Text>
       support-2
     </Text>
-  </View>
-  <View />
-  <View>
+    <View />
     <Text>
       support-3
     </Text>
-  </View>
-  <View />
-  <View>
+    <View />
     <Text>
       support-4
     </Text>

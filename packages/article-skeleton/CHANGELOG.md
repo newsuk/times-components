@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.30...@times-components/article-skeleton@0.13.0) (2019-03-05)
+
+
+### Features
+
+* using low res image for modal placeholders (& drop-cap improvements) ([#1765](https://github.com/newsuk/times-components/issues/1765)) ([6bd4676](https://github.com/newsuk/times-components/commit/6bd4676))
+
+
+
+
+
+## [0.12.30](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.29...@times-components/article-skeleton@0.12.30) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.12.29](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.28...@times-components/article-skeleton@0.12.29) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.12.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.27...@times-components/article-skeleton@0.12.28) (2019-02-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.12.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.26...@times-components/article-skeleton@0.12.27) (2019-02-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [0.12.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.12.25...@times-components/article-skeleton@0.12.26) (2019-02-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton

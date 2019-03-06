@@ -166,7 +166,7 @@ exports[`1. article with header 1`] = `
           <View>
             <Video
               accountId="5436121857001"
-              height={360}
+              height={371.25}
               policyKey="1.2.3.4"
               poster={
                 Object {
@@ -174,7 +174,7 @@ exports[`1. article with header 1`] = `
                 }
               }
               videoId="5831024132001"
-              width={640}
+              width={660}
             />
             <View>
               <View>
@@ -224,7 +224,7 @@ exports[`1. article with header 1`] = `
           <View>
             <Video
               accountId="5436121857001"
-              height={360}
+              height={371.25}
               policyKey="1.2.3.4"
               poster={
                 Object {
@@ -232,7 +232,7 @@ exports[`1. article with header 1`] = `
                 }
               }
               videoId="5831024132001"
-              width={640}
+              width={660}
             />
             <View>
               <View>

@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. two lead elements, two support elements 1`] = `
-Array [
+<View>
   <Text>
     lead-1
-  </Text>,
+  </Text>
   <View
     style={
       Object {
@@ -14,10 +14,10 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
+  />
   <Text>
     lead-2
-  </Text>,
+  </Text>
   <View
     style={
       Object {
@@ -27,10 +27,10 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
+  />
   <Text>
     support-1
-  </Text>,
+  </Text>
   <View
     style={
       Object {
@@ -40,11 +40,11 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
+  />
   <Text>
     support-2
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`2. tablet - two lead elements, two support elements 1`] = `

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.26...@times-components/article-in-depth@0.16.0) (2019-03-05)
+
+
+### Features
+
+* using low res image for modal placeholders (& drop-cap improvements) ([#1765](https://github.com/newsuk/times-components/issues/1765)) ([6bd4676](https://github.com/newsuk/times-components/commit/6bd4676))
+
+
+
+
+
+## [0.15.26](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.25...@times-components/article-in-depth@0.15.26) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [0.15.25](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.24...@times-components/article-in-depth@0.15.25) (2019-03-01)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [0.15.24](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.23...@times-components/article-in-depth@0.15.24) (2019-02-28)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [0.15.23](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.22...@times-components/article-in-depth@0.15.23) (2019-02-28)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [0.15.22](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.15.21...@times-components/article-in-depth@0.15.22) (2019-02-27)
 
 **Note:** Version bump only for package @times-components/article-in-depth

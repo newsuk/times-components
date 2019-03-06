@@ -22,7 +22,7 @@ exports[`1. tile g - layout change 1`] = `
         aria-level="3"
         role="heading"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </h3>
       <div>
         <ArticleFlags
@@ -60,7 +60,7 @@ exports[`2. tile p - layout change 1`] = `
         aria-level="3"
         role="heading"
       >
-        Venezuela shows how Corbyn’s socialism works
+        Driving Off
       </h3>
       <h4
         aria-level="4"

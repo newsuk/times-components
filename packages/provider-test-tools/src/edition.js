@@ -51,6 +51,7 @@ export default ({ variables = () => {} } = {}) => {
             return {};
           },
           Media: () => ({ __typename: "Image" }),
+          PublicationName: () => "TIMES",
           Ratio: () => "16:9",
           Section: () => ({
             __typename: "StandardSection",
