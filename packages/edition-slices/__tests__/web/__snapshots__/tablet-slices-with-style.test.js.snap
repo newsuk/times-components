@@ -403,7 +403,7 @@ exports[`6. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`6. secondary two no pic and two slice 1`] = `
+exports[`7. secondary two no pic and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

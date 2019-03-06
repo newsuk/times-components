@@ -328,7 +328,7 @@ exports[`6. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary two no pic and two slice 1`] = `
+exports[`7. secondary two no pic and two slice 1`] = `
 <View
   style={
     Object {
