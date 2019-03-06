@@ -2,8 +2,7 @@ import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2)
+    paddingHorizontal: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
