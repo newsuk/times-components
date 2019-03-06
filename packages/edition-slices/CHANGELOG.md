@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.31.0...@times-components/edition-slices@0.32.0) (2019-03-06)
+
+
+### Features
+
+* Better test coverage on shared tile components ([#1776](https://github.com/newsuk/times-components/issues/1776)) ([d32a302](https://github.com/newsuk/times-components/commit/d32a302))
+
+
+
+
+
 # [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.30.0...@times-components/edition-slices@0.31.0) (2019-03-06)
 
 

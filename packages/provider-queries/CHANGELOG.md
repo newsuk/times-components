@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.13.1...@times-components/provider-queries@1.13.2) (2019-03-06)
+
+
+### Bug Fixes
+
+* improve section query ([#1778](https://github.com/newsuk/times-components/issues/1778)) ([9eb7076](https://github.com/newsuk/times-components/commit/9eb7076))
+
+
+
+
+
 ## [1.13.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.13.0...@times-components/provider-queries@1.13.1) (2019-03-05)
 
 **Note:** Version bump only for package @times-components/provider-queries
