@@ -5,12 +5,15 @@ import { ItemRowSeparator } from "../shared";
 
 const Column = ({ style, tiles }) => (
   <View style={style}>
-    {tiles.map((tile, index) => (
-      <Fragment key={tile().props.id}>
-        {tile()}
-        {index !== tiles.length - 1 ? <ItemRowSeparator /> : null}
-      </Fragment>
-    ))}
+    {tiles.map((tile, index) => {
+      const renderTile = tile();
+      return (
+        <Fragment key={`${renderTile.props.tileName}`}>
+          {renderTile}
+          {index !== tiles.length - 1 ? <ItemRowSeparator /> : null}
+        </Fragment>
+      );
+    })}
   </View>
 );
 
