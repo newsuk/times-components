@@ -23,6 +23,9 @@ const defaultWebVideoProps = {
 };
 
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/icons", () => ({
+  IconVideo360Player: "IconVideo360Player"
+}));
 
 const omitProps = new Set(["className", "style"]);
 

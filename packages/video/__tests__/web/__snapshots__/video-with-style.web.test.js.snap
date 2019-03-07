@@ -48,3 +48,34 @@ exports[`1. video marked as sky sports 1`] = `
   </div>
 </div>
 `;
+
+exports[`2. 360 video 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <div>
+      <IconVideo360Player />
+    </div>
+    <video
+      style={
+        Object {
+          "height": 200,
+          "width": 300,
+        }
+      }
+    />
+  </div>
+</div>
+`;

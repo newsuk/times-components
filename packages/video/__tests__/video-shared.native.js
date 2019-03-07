@@ -75,6 +75,16 @@ export default () => {
 
         expect(testInstance.toJSON()).toMatchSnapshot();
       }
+    },
+    {
+      name: "360 video",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Video {...defaultVideoProps} playerId="foo" />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 

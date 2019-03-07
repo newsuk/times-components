@@ -127,7 +127,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <figure>
           <div>
             <div>
-              <div>
+              <div
+                data-is-360={false}
+              >
                 <div>
                   <video
                     controls={true}

@@ -2,6 +2,7 @@
 
 exports[`1. video with data attributes 1`] = `
 <div
+  data-is-360={false}
   data-testid="video-component"
 >
   <div>
@@ -9,7 +10,7 @@ exports[`1. video with data attributes 1`] = `
       data-account="[account id]"
       data-application-id={true}
       data-embed="default"
-      data-player="[player id]"
+      data-player="default"
       data-video-id="[video id]"
     />
   </div>

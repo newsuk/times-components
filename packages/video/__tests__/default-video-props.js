@@ -3,7 +3,7 @@ const videoProps = {
   height: 200,
   onVideoPress: () => {},
   paidOnly: false,
-  playerId: "[player id]",
+  playerId: "default",
   policyKey: "[policy key]",
   poster: {
     uri:

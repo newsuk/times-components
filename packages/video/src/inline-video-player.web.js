@@ -1,9 +1,14 @@
 /* eslint-env browser */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { propTypes, defaultProps } from "./video-prop-types";
 import SkySportsBanner from "./sky-sports-banner";
+import Video360Icon from "./video-360-icon";
 
 const css = `
+div[data-is-360="true"] button {
+  display: none !important;
+}
+
 .video-js .vjs-big-play-button {
   width: 70px;
   height: 70px;
@@ -68,7 +73,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      showSkyBanner: props.skySports
+      hasVideoPlayed: false
     };
 
     InlineVideoPlayer.index += 1;
@@ -104,17 +109,13 @@ class InlineVideoPlayer extends Component {
   };
 
   handlePlay = () => {
-    this.hideSkyBanner();
+    this.setState({ hasVideoPlayed: true });
 
     InlineVideoPlayer.activePlayers.forEach(video => {
       if (video !== this && video.player) {
         video.player.pause();
       }
     });
-  };
-
-  hideSkyBanner = () => {
-    this.setState({ showSkyBanner: false });
   };
 
   loadBrightcoveSDKIfRequired() {
@@ -161,8 +162,17 @@ class InlineVideoPlayer extends Component {
   }
 
   render() {
-    const { width, height, poster, videoId, accountId, playerId } = this.props;
-    const { error, showSkyBanner } = this.state;
+    const {
+      width,
+      height,
+      poster,
+      videoId,
+      accountId,
+      playerId,
+      skySports
+    } = this.props;
+    const { error, hasVideoPlayed } = this.state;
+    const is360Video = playerId !== "default"; // Will get an explicit boolean from CMS and this inference can then go
 
     if (error) {
       throw new Error(); // caught by parent ErrorView
@@ -171,9 +181,18 @@ class InlineVideoPlayer extends Component {
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
-      <div data-testid="video-component" style={{ height, width }}>
+      <div
+        data-is-360={is360Video}
+        data-testid="video-component"
+        style={{ height, width }}
+      >
         <div style={{ position: "relative" }}>
-          {showSkyBanner && <SkySportsBanner />}
+          {!hasVideoPlayed && (
+            <Fragment>
+              {skySports && <SkySportsBanner />}
+              {is360Video && <Video360Icon />}
+            </Fragment>
+          )}
           <video
             id={this.id}
             style={{ height, width }}

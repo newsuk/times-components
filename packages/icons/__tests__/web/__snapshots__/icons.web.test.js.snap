@@ -133,3 +133,20 @@ exports[`7. thetimeslogo renders 1`] = `
   />
 </svg>
 `;
+
+exports[`8. iconvideo360player renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="544726bb051c5bacf72288529e947083"
+  width={20}
+>
+  <title>
+    IconVideo360Player
+  </title>
+  <path
+    d="92444cc628d352fe07031cfb7b426ccf"
+    fill="#006699"
+  />
+</svg>
+`;

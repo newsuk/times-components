@@ -15,6 +15,9 @@ import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/icons", () => ({
+  IconVideo360Player: "IconVideo360Player"
+}));
 
 const styles = [
   "backgroundColor",
@@ -50,6 +53,16 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <Video {...defaultVideoProps} skySports />
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
+    }
+  },
+  {
+    name: "360 video",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} playerId="foo" />
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();
