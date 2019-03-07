@@ -54,17 +54,19 @@ class ModalImage extends Component {
         >
           <View style={styles.modal}>
             <SafeAreaView style={styles.safeViewContainer}>
-              <View style={styles.buttonContainer}>
-                <CloseButton onPress={this.hideModal} />
+              <View style={styles.safeViewInnerContainer}>
+                <View style={styles.buttonContainer}>
+                  <CloseButton onPress={this.hideModal} />
+                </View>
+                <Gestures style={styles.imageContainer}>
+                  <Image
+                    {...this.props}
+                    lowResSize={lowResSize}
+                    style={styles.image}
+                  />
+                </Gestures>
+                {captionWithStyles}
               </View>
-              <Gestures style={styles.imageContainer}>
-                <Image
-                  {...this.props}
-                  lowResSize={lowResSize}
-                  style={styles.image}
-                />
-              </Gestures>
-              {captionWithStyles}
             </SafeAreaView>
           </View>
         </Modal>

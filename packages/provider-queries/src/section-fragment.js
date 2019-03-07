@@ -17,277 +17,11 @@ export default gql`
     ...puzzleSection
   }
 
-  fragment magazineSection on MagazineSection {
-    name: __typename
-    slices {
-      ... on StandardSlice {
-        name: __typename
-        items {
-          ...tile
-        }
-      }
-      ... on CommentLeadAndCartoonSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        cartoon {
-          ...tile
-        }
-      }
-      ... on LetterThundererPodcastSlice {
-        name: __typename
-        letter {
-          ...tile
-        }
-        thunderer {
-          ...tile
-        }
-        podcast {
-          ...tile
-        }
-      }
-      ... on CommentTwoAndNotebookSlice {
-        name: __typename
-        main1 {
-          ...tile
-        }
-        main2 {
-          ...tile
-        }
-        notebook {
-          ...tile
-        }
-      }
-      ... on FocusSlice {
-        name: __typename
-        main {
-          ...tile
-        }
-      }
-      ... on LeadersSlice {
-        name: __typename
-        leader1 {
-          ...tile
-        }
-        leader2 {
-          ...tile
-        }
-        leader3 {
-          ...tile
-        }
-      }
-      ... on LeadOneAndFourSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-        support3 {
-          ...tile
-        }
-        support4 {
-          ...tile
-        }
-      }
-      ... on LeadOneAndOneSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support {
-          ...tile
-        }
-      }
-      ... on LeadOneAndTwoSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-      }
-      ... on LeadOneFullWidthSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-      }
-      ... on LeadOneNoPicAndOneAndPortraitSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support {
-          ...tile
-        }
-        portrait {
-          ...tile
-        }
-      }
-      ... on LeadTwoNoPicAndTwoSlice {
-        name: __typename
-        lead1 {
-          ...tile
-        }
-        lead2 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on ObituariesLeadAndTwoSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on OpinionOneAndTwoSlice {
-        name: __typename
-        opinion {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on SecondaryFourSlice {
-        name: __typename
-        secondary1 {
-          ...tile
-        }
-        secondary2 {
-          ...tile
-        }
-        secondary3 {
-          ...tile
-        }
-        secondary4 {
-          ...tile
-        }
-      }
-      ... on SecondaryOneSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-      }
-      ... on SecondaryOneAndColumnistSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-        columnist {
-          ...tile
-        }
-      }
-      ... on SecondaryOneAndFourSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          article {
-            id
-          }
-        }
-        support3 {
-          ...tile
-        }
-        support4 {
-          ...tile
-        }
-      }
-      ... on SecondaryTwoAndTwoSlice {
-        name: __typename
-        secondary1 {
-          ...tile
-        }
-        secondary2 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on SecondaryTwoNoPicAndTwoSlice {
-        name: __typename
-        secondary1 {
-          ...tile
-        }
-        secondary2 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on TwoPicAndSixNoPicSlice {
-        name: __typename
-        lead1 {
-          ...tile
-        }
-        lead2 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-        support3 {
-          ...tile
-        }
-        support4 {
-          ...tile
-        }
-        support5 {
-          ...tile
-        }
-        support6 {
-          ...tile
-        }
-      }
-    }
-  }
-
   fragment puzzleSection on PuzzleSection {
     name: __typename
     slices {
+      name: __typename
       ... on Puzzle {
-        name: __typename
         id
         title
         url
@@ -304,268 +38,498 @@ export default gql`
   fragment standardSection on StandardSection {
     name: __typename
     slices {
-      ... on StandardSlice {
-        name: __typename
-        items {
-          ...tile
-        }
-      }
+      name: __typename
       ... on CommentLeadAndCartoonSlice {
-        name: __typename
         lead {
-          ...tile
+          headline
+          strapline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
         }
         cartoon {
-          ...tile
-        }
-      }
-      ... on LetterThundererPodcastSlice {
-        name: __typename
-        letter {
-          ...tile
-        }
-        thunderer {
-          ...tile
-        }
-        podcast {
-          ...tile
-        }
-      }
-      ... on CommentTwoAndNotebookSlice {
-        name: __typename
-        main1 {
-          ...tile
-        }
-        main2 {
-          ...tile
-        }
-        notebook {
-          ...tile
-        }
-      }
-      ... on FocusSlice {
-        name: __typename
-        main {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
         }
       }
       ... on LeadersSlice {
-        name: __typename
         leader1 {
-          ...tile
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
         }
         leader2 {
-          ...tile
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
         }
         leader3 {
-          ...tile
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
         }
       }
       ... on LeadOneAndFourSlice {
-        name: __typename
         lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-        support3 {
-          ...tile
-        }
-        support4 {
-          ...tile
-        }
-      }
-      ... on LeadOneAndOneSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support {
-          ...tile
-        }
-      }
-      ... on LeadOneAndTwoSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-      }
-      ... on LeadOneFullWidthSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-      }
-      ... on LeadOneNoPicAndOneAndPortraitSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support {
-          ...tile
-        }
-        portrait {
-          ...tile
-        }
-      }
-      ... on LeadTwoNoPicAndTwoSlice {
-        name: __typename
-        lead1 {
-          ...tile
-        }
-        lead2 {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on ObituariesLeadAndTwoSlice {
-        name: __typename
-        lead {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on OpinionOneAndTwoSlice {
-        name: __typename
-        opinion {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
-          ...tile
-        }
-      }
-      ... on SecondaryFourSlice {
-        name: __typename
-        secondary1 {
-          ...tile
-        }
-        secondary2 {
-          ...tile
-        }
-        secondary3 {
-          ...tile
-        }
-        secondary4 {
-          ...tile
-        }
-      }
-      ... on SecondaryOneSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-      }
-      ... on SecondaryOneAndColumnistSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-        columnist {
-          ...tile
-        }
-      }
-      ... on SecondaryOneAndFourSlice {
-        name: __typename
-        secondary {
-          ...tile
-        }
-        support1 {
-          ...tile
-        }
-        support2 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
           article {
-            id
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
           }
         }
         support3 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
         }
         support4 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+      }
+      ... on LeadOneAndOneSlice {
+        lead {
+          headline
+          leadAsset {
+            ...leadAsset169and32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169and32
+            }
+          }
+        }
+        support {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on LeadOneFullWidthSlice {
+        lead {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+      }
+      ... on LeadTwoNoPicAndTwoSlice {
+        lead1 {
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+            summary300: summary(maxCharCount: 300)
+          }
+          teaser125: teaser(maxCharCount: 125)
+          teaser300: teaser(maxCharCount: 300)
+        }
+        lead2 {
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+            summary300: summary(maxCharCount: 300)
+          }
+          teaser125: teaser(maxCharCount: 125)
+          teaser300: teaser(maxCharCount: 300)
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset45
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset45
+            }
+          }
+        }
+      }
+      ... on SecondaryFourSlice {
+        secondary1 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary2 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary3 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary4 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+      }
+      ... on SecondaryOneSlice {
+        secondary {
+          headline
+          leadAsset {
+            ...leadAsset169and32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169and32
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on SecondaryOneAndColumnistSlice {
+        secondary {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        columnist {
+          headline
+          leadAsset {
+            ...leadAsset23
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset23
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on SecondaryOneAndFourSlice {
+        secondary {
+          headline
+          strapline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+        support1 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support2 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support3 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support4 {
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
       }
       ... on SecondaryTwoAndTwoSlice {
-        name: __typename
         secondary1 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
         }
         secondary2 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
         }
         support1 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
         }
         support2 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
         }
       }
       ... on SecondaryTwoNoPicAndTwoSlice {
-        name: __typename
         secondary1 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary2 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
         }
         support1 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
         }
         support2 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
         }
       }
       ... on TwoPicAndSixNoPicSlice {
-        name: __typename
         lead1 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
         }
         lead2 {
-          ...tile
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
         }
         support1 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
         support2 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
         support3 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
         support4 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
         support5 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
         support6 {
-          ...tile
+          headline
+          article {
+            ...baseArticleProps
+          }
         }
       }
       ... on DailyUniversalRegister {
-        name: __typename
         briefing {
           ...durItem
         }
@@ -585,78 +549,633 @@ export default gql`
     }
   }
 
+  fragment magazineSection on MagazineSection {
+    name: __typename
+    slices {
+      name: __typename
+      ... on CommentLeadAndCartoonSlice {
+        lead {
+          headline
+          strapline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+        cartoon {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+      }
+      ... on LeadersSlice {
+        leader1 {
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
+        }
+        leader2 {
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
+        }
+        leader3 {
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+          }
+        }
+      }
+      ... on LeadOneAndFourSlice {
+        lead {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support3 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support4 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+      }
+      ... on LeadOneAndOneSlice {
+        lead {
+          headline
+          leadAsset {
+            ...leadAsset169and32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169and32
+            }
+          }
+        }
+        support {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on LeadOneFullWidthSlice {
+        lead {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+      }
+      ... on LeadTwoNoPicAndTwoSlice {
+        lead1 {
+          headline
+          strapline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+            summary300: summary(maxCharCount: 300)
+          }
+          teaser125: teaser(maxCharCount: 125)
+          teaser300: teaser(maxCharCount: 300)
+        }
+        lead2 {
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+            summary300: summary(maxCharCount: 300)
+          }
+          teaser125: teaser(maxCharCount: 125)
+          teaser300: teaser(maxCharCount: 300)
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset45
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset45
+            }
+          }
+        }
+      }
+      ... on SecondaryFourSlice {
+        secondary1 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary2 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary3 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary4 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+      }
+      ... on SecondaryOneSlice {
+        secondary {
+          headline
+          leadAsset {
+            ...leadAsset169and32
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169and32
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on SecondaryOneAndColumnistSlice {
+        secondary {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        columnist {
+          headline
+          leadAsset {
+            ...leadAsset23
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset23
+            }
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+      }
+      ... on SecondaryOneAndFourSlice {
+        secondary {
+          headline
+          strapline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+        support1 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support2 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support3 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support4 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+      }
+      ... on SecondaryTwoAndTwoSlice {
+        secondary1 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        secondary2 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+      }
+      ... on SecondaryTwoNoPicAndTwoSlice {
+        secondary1 {
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+        secondary2 {
+          headline
+          article {
+            ...baseArticleProps
+            summary125: summary(maxCharCount: 125)
+          }
+          teaser125: teaser(maxCharCount: 125)
+        }
+        support1 {
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+        support2 {
+          headline
+          leadAsset {
+            ...leadAsset11
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset11
+            }
+          }
+        }
+      }
+      ... on TwoPicAndSixNoPicSlice {
+        lead1 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        lead2 {
+          headline
+          leadAsset {
+            ...leadAsset169
+          }
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset169
+            }
+          }
+        }
+        support1 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support2 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support3 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support4 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support5 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+        support6 {
+          headline
+          article {
+            ...baseArticleProps
+          }
+        }
+      }
+    }
+  }
+
   fragment durItem on DailyUniversalRegisterItem {
     title
     byline
     content
   }
 
-  fragment tile on Tile {
-    ...teasers
-    headline
-    leadAsset {
-      __typename
-      ... on Video {
-        posterImage {
-          ...sectionImageProps
-        }
-      }
-      ... on Image {
-        ...sectionImageProps
-      }
-    }
-    strapline
-    article {
-      ...sectionArticle
-    }
-  }
-
-  fragment sectionArticle on Article {
+  fragment baseArticleProps on Article {
     byline
     flags
     hasVideo
     headline
     id
     label
-    leadAsset {
-      __typename
-      ... on Video {
-        posterImage {
-          ...sectionImageProps
-        }
-      }
-      ... on Image {
-        ...sectionImageProps
-      }
-    }
-    publicationName
-    section
     shortHeadline
-    summary125: summary(maxCharCount: 125)
-    summary300: summary(maxCharCount: 300)
     url
   }
 
-  fragment sectionImageProps on Image {
-    crop169: crop(ratio: "16:9") {
-      ratio
-      url
+  fragment leadAsset169 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop169: crop(ratio: "16:9") {
+          ratio
+          url
+        }
+      }
     }
-    crop32: crop(ratio: "3:2") {
-      ratio
-      url
-    }
-    crop11: crop(ratio: "1:1") {
-      ratio
-      url
-    }
-    crop45: crop(ratio: "4:5") {
-      ratio
-      url
+    ... on Image {
+      crop169: crop(ratio: "16:9") {
+        ratio
+        url
+      }
     }
   }
 
-  fragment teasers on Tile {
-    teaser125: teaser(maxCharCount: 125)
+  fragment leadAsset32 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop32: crop(ratio: "3:2") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop32: crop(ratio: "3:2") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment leadAsset11 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop11: crop(ratio: "1:1") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop11: crop(ratio: "1:1") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment leadAsset45 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop45: crop(ratio: "4:5") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop45: crop(ratio: "4:5") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment leadAsset23 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop23: crop(ratio: "2:3") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop23: crop(ratio: "2:3") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment leadAsset169and32 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop32: crop(ratio: "3:2") {
+          ratio
+          url
+        }
+        crop169: crop(ratio: "16:9") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop32: crop(ratio: "3:2") {
+        ratio
+        url
+      }
+      crop169: crop(ratio: "16:9") {
+        ratio
+        url
+      }
+    }
   }
 `;

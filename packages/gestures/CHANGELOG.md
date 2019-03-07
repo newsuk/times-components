@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.25](https://github.com/newsuk/times-components/compare/@times-components/gestures@3.3.24...@times-components/gestures@3.3.25) (2019-03-06)
+
+
+### Bug Fixes
+
+* pinch to zoom on iOS & alignment ([#1777](https://github.com/newsuk/times-components/issues/1777)) ([be3bb43](https://github.com/newsuk/times-components/commit/be3bb43))
+
+
+
+
+
 ## [3.3.24](https://github.com/newsuk/times-components/compare/@times-components/gestures@3.3.23...@times-components/gestures@3.3.24) (2019-03-01)
 
 **Note:** Version bump only for package @times-components/gestures

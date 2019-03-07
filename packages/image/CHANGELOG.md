@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.9.1](https://github.com/newsuk/times-components/compare/@times-components/image@4.9.0...@times-components/image@4.9.1) (2019-03-06)
+
+
+### Bug Fixes
+
+* pinch to zoom on iOS & alignment ([#1777](https://github.com/newsuk/times-components/issues/1777)) ([be3bb43](https://github.com/newsuk/times-components/commit/be3bb43))
+
+
+
+
+
 # [4.9.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.8.15...@times-components/image@4.9.0) (2019-03-05)
 
 

@@ -2,9 +2,9 @@ import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   buttonContainer: {
-    marginLeft: spacing(3),
-    marginTop: spacing(3),
-    position: "relative",
+    left: spacing(3),
+    position: "absolute",
+    top: spacing(3),
     zIndex: 1
   },
   closeButton: {
@@ -41,13 +41,19 @@ const styles = {
   },
   safeViewContainer: {
     flex: 1
+  },
+  safeViewInnerContainer: {
+    flex: 1,
+    position: "relative"
   }
 };
 
 export const captionStyles = {
   container: {
-    marginBottom: 14,
-    marginHorizontal: 16
+    bottom: 14,
+    left: 16,
+    position: "absolute",
+    right: 16
   },
   text: {
     color: colours.functional.white

@@ -24,132 +24,143 @@ exports[`1. default modal 1`] = `
         <View
           style={
             Object {
-              "alignItems": "flex-end",
-              "margin": 16,
-            }
-          }
-        >
-          <View>
-            <Image
-              style={
-                Object {
-                  "height": 24,
-                  "width": 24,
-                }
-              }
-            />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "flexGrow": 1,
+              "flex": 1,
+              "position": "relative",
             }
           }
         >
           <View
             style={
               Object {
+                "alignItems": "flex-end",
+                "margin": 16,
+              }
+            }
+          >
+            <View>
+              <Image
+                style={
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
                 "flexGrow": 1,
-                "justifyContent": "center",
               }
             }
           >
             <View
               style={
                 Object {
-                  "transform": Array [
-                    Object {
-                      "translateX": -0,
-                    },
-                    Object {
-                      "translateY": -0,
-                    },
-                    Object {
-                      "translateX": 0,
-                    },
-                    Object {
-                      "translateY": 0,
-                    },
-                    Object {
-                      "scale": 1,
-                    },
-                    Object {
-                      "translateX": -0,
-                    },
-                    Object {
-                      "translateY": -0,
-                    },
-                    Object {
-                      "translateX": 0,
-                    },
-                    Object {
-                      "translateY": 0,
-                    },
-                    Object {
-                      "rotate": "0 deg",
-                    },
-                    Object {
-                      "perspective": 1000,
-                    },
-                  ],
+                  "flexGrow": 1,
+                  "justifyContent": "center",
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "opacity": 1,
-                    "width": "100%",
+                    "transform": Array [
+                      Object {
+                        "translateX": -0,
+                      },
+                      Object {
+                        "translateY": -0,
+                      },
+                      Object {
+                        "translateX": 0,
+                      },
+                      Object {
+                        "translateY": 0,
+                      },
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "translateX": -0,
+                      },
+                      Object {
+                        "translateY": -0,
+                      },
+                      Object {
+                        "translateX": 0,
+                      },
+                      Object {
+                        "translateY": 0,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "flex": 1,
+                      "opacity": 1,
+                      "width": "100%",
                     }
                   }
                 >
-                  <Gradient
+                  <View
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
+                  >
+                    <Gradient
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                  <Image
+                    style={
+                      Object {
+                        "height": "100%",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
                   />
                 </View>
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "width": "100%",
-                      "zIndex": 1,
-                    }
-                  }
-                />
               </View>
             </View>
           </View>
-        </View>
-        <View
-          style={
-            Object {
-              "marginBottom": 14,
-              "marginHorizontal": 16,
-            }
-          }
-        >
-          <Text
+          <View
             style={
               Object {
-                "color": "#FFFFFF",
+                "bottom": 14,
+                "left": 16,
+                "position": "absolute",
+                "right": 16,
               }
             }
           >
-            Caption
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                }
+              }
+            >
+              Caption
+            </Text>
+          </View>
         </View>
       </View>
     </View>
