@@ -57,7 +57,7 @@ export default () => {
     const interactiveWrapper = new InteractiveWrapper();
     interactiveWrapper.webview = {
       postMessage: jest.fn(),
-      stopLoading: jest.fn()
+      reload: jest.fn()
     };
     return interactiveWrapper;
   };
@@ -159,13 +159,13 @@ export default () => {
     done();
   });
 
-  it("handleNavigationStateChange should prevent webview from loading when it opens a link", () => {
+  it("handleNavigationStateChange should reload the webview when it opens a link", () => {
     const component = setUpNavigationTest(() => Promise.resolve(true));
     jest.spyOn(InteractiveWrapper, "openURLInBrowser");
     component.handleNavigationStateChange({
       url: "https://www.thetimes.co.uk"
     });
-    expect(component.webview.stopLoading).toHaveBeenCalled();
+    expect(component.webview.reload).toHaveBeenCalled();
     expect(InteractiveWrapper.openURLInBrowser).toHaveBeenCalled();
   });
 
