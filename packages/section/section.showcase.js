@@ -19,7 +19,12 @@ export default {
       component: (_, { decorateAction }) => (
         <Section
           analyticsStream={storybookReporter}
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          onArticlePress={preventDefaultedAction(decorateAction)(
+            "onArticlePress"
+          )}
+          onPuzzlePress={preventDefaultedAction(decorateAction)(
+            "onPuzzlePress"
+          )}
           publicationName="TIMES"
           section={mockStandardSection("News")}
         />
@@ -31,7 +36,12 @@ export default {
       component: (_, { decorateAction }) => (
         <Section
           analyticsStream={storybookReporter}
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
+          onArticlePress={preventDefaultedAction(decorateAction)(
+            "onArticlePress"
+          )}
+          onPuzzlePress={preventDefaultedAction(decorateAction)(
+            "onPuzzlePress"
+          )}
           publicationName="TIMES"
           section={mockPuzzleSection("Puzzles")}
         />
