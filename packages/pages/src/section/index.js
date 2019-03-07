@@ -6,8 +6,8 @@ import Section from "@times-components/section";
 import withNativeProvider from "../with-native-provider";
 
 const { onArticlePress, onPuzzlePress } = NativeModules.SectionEvents || {
-  onArticlePress: url => console.log("onArticlePress", url),
-  onPuzzlePress: url => console.log("onPuzzlePress", url)
+  onArticlePress: () => {},
+  onPuzzlePress: () => {}
 };
 
 const track = () => {};
