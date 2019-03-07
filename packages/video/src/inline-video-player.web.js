@@ -5,7 +5,7 @@ import SkySportsBanner from "./sky-sports-banner";
 import Video360Icon from "./video-360-icon";
 
 const css = `
-div[data-is-360="true"] button {
+div[data-is-360="true"] button.vjs-big-play-button {
   display: none !important;
 }
 
