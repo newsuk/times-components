@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.17.1...@times-components/slice-layout@0.18.0) (2019-03-07)
+
+
+### Features
+
+* Secondary one and Columnist - tablet ([#1774](https://github.com/newsuk/times-components/issues/1774)) ([51eb3ee](https://github.com/newsuk/times-components/commit/51eb3ee))
+
+
+
+
+
 ## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.17.0...@times-components/slice-layout@0.17.1) (2019-03-07)
 
 
