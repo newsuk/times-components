@@ -9,6 +9,7 @@ const SecondaryOneAndColumnist = ({
   slice: { columnist, secondary }
 }) => (
   <ResponsiveSlice
+    renderHuge={() => null}
     renderMedium={breakpoint => (
       <SecondaryOneAndColumnistSlice
         breakpoint={breakpoint}
@@ -31,6 +32,7 @@ const SecondaryOneAndColumnist = ({
         )}
       />
     )}
+    renderWide={() => null}
   />
 );
 

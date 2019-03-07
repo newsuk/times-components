@@ -196,23 +196,7 @@ exports[`5. lead two no pic and two 1`] = `<div />`;
 
 exports[`6. secondary one slice 1`] = `<div />`;
 
-exports[`7. secondary one and columnist slice 1`] = `
-<div>
-  <div>
-    <div>
-      <TileAA
-        tileName="secondary"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAB
-        tileName="columnist"
-      />
-    </div>
-  </div>
-</div>
-`;
+exports[`7. secondary one and columnist slice 1`] = `<div />`;
 
 exports[`8. secondary four slice 1`] = `<div />`;
 
