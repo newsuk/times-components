@@ -70,17 +70,17 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
 const sliceStories = [
   {
     mock: mockDailyRegisterSlice(),
-    name: "Daily Register Lead Four (SSSS)",
+    name: "Daily Register Lead Four (S,S,S,S)",
     Slice: DailyRegisterLeadFourSlice
   },
   {
     mock: mockLeadOneAndFourSlice(),
-    name: "Lead One And Four (IJJJJ)",
+    name: "Lead One And Four (I,J,J,J,J)",
     Slice: LeadOneAndFourSlice
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "Lead One And One (Mobile: AB, Tablet: UC)",
+    name: "Lead One And One (Mobile: A,B, Tablet: U,C)",
     Slice: LeadOneAndOneSlice
   },
   {
@@ -90,7 +90,7 @@ const sliceStories = [
   },
   {
     mock: mockLeadTwoNoPicAndTwoSlice(),
-    name: "Lead Two no pic and Two (Mobile: FBDE, Tablet: XYDZ)",
+    name: "Lead Two no pic and Two (Mobile: F,B,D,E, Tablet: X,Y,D,Z)",
     Slice: LeadTwoNoPicAndTwoSlice
   },
   {
@@ -100,22 +100,22 @@ const sliceStories = [
   },
   {
     mock: mockSecondaryOneAndColumnistSlice(),
-    name: "Secondary One and Columnist (Mobile: TH, Tablet: AA AB)",
+    name: "Secondary One and Columnist (Mobile: T,H, Tablet: AA,AB)",
     Slice: SecondaryOneAndColumnistSlice
   },
   {
     mock: mockSecondaryOneAndFourSlice(),
-    name: "Supplement Secondary One And Four (NOOOO)",
+    name: "Supplement Secondary One And Four (N,O,O,O,O)",
     Slice: SecondaryOneAndFourSlice
   },
   {
     mock: mockSecondaryFourSlice(),
-    name: "Secondary Four (Mobile, Tablet: CCCC)",
+    name: "Secondary Four (Mobile, Tablet: C,C,C,C)",
     Slice: SecondaryFourSlice
   },
   {
     mock: mockSecondaryTwoAndTwoSlice(),
-    name: "Secondary Two And Two (Mobile: CCGG, Tablet: VVGG)",
+    name: "Secondary Two And Two (Mobile: C,C,G,G, Tablet: V,V,G,G)",
     Slice: SecondaryTwoAndTwoSlice
   },
   {
@@ -125,17 +125,17 @@ const sliceStories = [
   },
   {
     mock: mockListTwoAndSixNoPicSlice(),
-    name: "List Two And Six No Pic (Mobile, Tablet: CCLLLLLL)",
+    name: "List Two And Six No Pic (Mobile, Tablet: C,C,L,L,L,L,L,L)",
     Slice: ListTwoAndSixNoPicSlice
   },
   {
     mock: mockLeadersSlice(),
-    name: "Leaders (MMMM)",
+    name: "Leaders (M,M,M,M)",
     Slice: LeadersSlice
   },
   {
     mock: mockCommentLeadAndCartoonSlice(),
-    name: "Comment Lead And Cartoon (PQ)",
+    name: "Comment Lead And Cartoon (P,Q)",
     Slice: CommentLeadAndCartoonSlice
   },
   {
