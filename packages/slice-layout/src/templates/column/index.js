@@ -8,7 +8,7 @@ const Column = ({ style, tiles }) => (
     {tiles.map((tile, index) => {
       const renderTile = tile();
       return (
-        <Fragment key={`${renderTile.props.tileName}.${index}`}>
+        <Fragment key={`${renderTile.props.tileName}`}>
           {renderTile}
           {index !== tiles.length - 1 ? <ItemRowSeparator /> : null}
         </Fragment>
