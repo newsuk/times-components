@@ -1,6 +1,6 @@
 {
   "name": "@times-components/interactive-wrapper",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "description": "Wrapper for legacy Interactive components",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
