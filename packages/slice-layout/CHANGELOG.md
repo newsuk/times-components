@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.17.0...@times-components/slice-layout@0.17.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* Add keys to flatlists ([#1780](https://github.com/newsuk/times-components/issues/1780)) ([9bc4e6a](https://github.com/newsuk/times-components/commit/9bc4e6a))
+
+
+
+
+
 # [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.16.0...@times-components/slice-layout@0.17.0) (2019-03-06)
 
 
