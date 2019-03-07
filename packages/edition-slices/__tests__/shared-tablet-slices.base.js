@@ -86,7 +86,7 @@ export default () => {
   const tests = slices.map(({ mock, name, Slice }) => ({
     name,
     test: () => {
-      setDimension(1000);
+      setDimension({ width: 1000 });
       const output = TestRenderer.create(
         <Responsive>
           <Slice onPress={() => {}} slice={mock} />

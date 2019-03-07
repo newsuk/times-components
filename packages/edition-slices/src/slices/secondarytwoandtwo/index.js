@@ -9,6 +9,7 @@ const SecondaryTwoAndTwo = ({
   slice: { secondary1, secondary2, support1, support2 }
 }) => (
   <ResponsiveSlice
+    renderHuge={() => null}
     renderMedium={breakpoint => (
       <SecondaryTwoAndTwoSlice
         breakpoint={breakpoint}
@@ -43,6 +44,7 @@ const SecondaryTwoAndTwo = ({
         )}
       />
     )}
+    renderWide={() => null}
   />
 );
 

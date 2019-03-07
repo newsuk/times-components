@@ -9,6 +9,7 @@ const LeadTwoNoPicAndTwo = ({
   slice: { lead1, lead2, support1, support2 }
 }) => (
   <ResponsiveSlice
+    renderHuge={() => null}
     renderMedium={editionBreakpoint => (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={editionBreakpoint}
@@ -43,6 +44,7 @@ const LeadTwoNoPicAndTwo = ({
         )}
       />
     )}
+    renderWide={() => null}
   />
 );
 

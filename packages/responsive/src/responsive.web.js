@@ -1,13 +1,20 @@
 import React from "react";
 import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
+import { getEditionBreakpoint } from "@times-components/styleguide";
 import ResponsiveContext from "./context";
 
 const Responsive = ({ children }) => {
   const { width } = Dimensions.get("window");
 
   return (
-    <ResponsiveContext.Provider value={{ isTablet: false, screenWidth: width }}>
+    <ResponsiveContext.Provider
+      value={{
+        editionBreakpoint: getEditionBreakpoint(width),
+        isTablet: false,
+        screenWidth: width
+      }}
+    >
       {children}
     </ResponsiveContext.Provider>
   );

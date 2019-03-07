@@ -27,7 +27,12 @@ const SecondaryFour = ({
   );
 
   return (
-    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
+    <ResponsiveSlice
+      renderHuge={() => null}
+      renderMedium={renderSlice}
+      renderSmall={renderSlice}
+      renderWide={() => null}
+    />
   );
 };
 
