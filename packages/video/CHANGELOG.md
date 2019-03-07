@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.4.0...@times-components/video@4.4.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* bug whereby pause and fullscreen buttons were hidden for 360 videos ([#1782](https://github.com/newsuk/times-components/issues/1782)) ([fde2ace](https://github.com/newsuk/times-components/commit/fde2ace))
+
+
+
+
+
 # [4.4.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.3.38...@times-components/video@4.4.0) (2019-03-07)
 
 
