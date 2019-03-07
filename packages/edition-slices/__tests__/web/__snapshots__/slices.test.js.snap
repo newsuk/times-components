@@ -239,13 +239,19 @@ exports[`6. secondary one slice 1`] = `
 
 exports[`7. secondary one and columnist slice 1`] = `
 <div>
-  <TileT
-    tileName="secondary"
-  />
-  <div />
-  <TileH
-    tileName="columnist"
-  />
+  <div>
+    <div>
+      <TileAA
+        tileName="secondary"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAB
+        tileName="columnist"
+      />
+    </div>
+  </div>
 </div>
 `;
 

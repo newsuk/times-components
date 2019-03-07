@@ -1,22 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. secondary one and columnist 1`] = `
-<View>
-  <Text>
-    secondary
-  </Text>
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
+        "paddingLeft": 10,
+        "paddingTop": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      secondary
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 10,
       }
     }
   />
-  <Text>
-    columnist
-  </Text>
+  <View
+    style={
+      Object {
+        "paddingRight": 10,
+        "width": "67%",
+      }
+    }
+  >
+    <Text>
+      columnist
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. tablet - secondary one and columnist 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      secondary
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingRight": 10,
+        "width": "67%",
+      }
+    }
+  >
+    <Text>
+      columnist
+    </Text>
+  </View>
 </View>
 `;

@@ -220,7 +220,60 @@ exports[`5. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary two and two slice 1`] = `
+exports[`6. secondary one and columnist 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 10,
+          "width": "33%",
+        }
+      }
+    >
+      <TileAA />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "width": "67%",
+        }
+      }
+    >
+      <TileAB />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`7. secondary two and two slice 1`] = `
 <View
   style={
     Object {
@@ -328,7 +381,7 @@ exports[`6. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary two no pic and two slice 1`] = `
+exports[`8. secondary two no pic and two slice 1`] = `
 <View
   style={
     Object {

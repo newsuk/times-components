@@ -31,7 +31,9 @@ import {
   TileW,
   TileX,
   TileY,
-  TileZ
+  TileZ,
+  TileAA,
+  TileAB
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -161,6 +163,15 @@ const tileStories = [
   {
     name: "Tile Z - 35pt Headline, no teaser, 4:5 image",
     Tile: TileZ
+  },
+  {
+    name: "Tile AA - Side 16:9 image, 30pt headline, no teaser",
+    Tile: TileAA
+  },
+  {
+    name:
+      "Tile AB - 30pt headline, teaser, byline at bottom, image 2:3 right at the top",
+    Tile: TileAB
   },
   {
     name: "Tile AE - 35pt headline, 125 teaser, no image",

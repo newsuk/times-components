@@ -86,7 +86,25 @@ exports[`5. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary two and two slice 1`] = `
+exports[`6. secondary one and columnist 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAA
+        tileName="secondary"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAB
+        tileName="columnist"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`7. secondary two and two slice 1`] = `
 <View>
   <View>
     <View>
@@ -120,7 +138,7 @@ exports[`6. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary two no pic and two slice 1`] = `
+exports[`8. secondary two no pic and two slice 1`] = `
 <View>
   <View>
     <View>

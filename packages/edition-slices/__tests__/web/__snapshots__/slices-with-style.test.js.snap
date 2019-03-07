@@ -805,25 +805,77 @@ exports[`7. secondary one and columnist slice 1`] = `
 }
 
 .IS1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 33%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  padding-right: 10px;
+  width: 67%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="S1"
+  className="IS5 S1"
 >
-  <TileT
-    tileName="secondary"
-  />
   <div
-    className="IS1 S1"
-  />
-  <TileH
-    tileName="columnist"
-  />
+    className="IS4 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAA
+        tileName="secondary"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS3 S1"
+    >
+      <TileAB
+        tileName="columnist"
+      />
+    </div>
+  </div>
 </div>
 `;
 

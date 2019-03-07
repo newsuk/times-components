@@ -83,7 +83,25 @@ exports[`5. secondary four tablet slice 1`] = `
 </div>
 `;
 
-exports[`6. secondary two and two slice 1`] = `
+exports[`6. secondary one and columnist 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAA
+        tileName="secondary"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAB
+        tileName="columnist"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`7. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
@@ -113,7 +131,7 @@ exports[`6. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`7. secondary two no pic and two slice 1`] = `
+exports[`8. secondary two no pic and two slice 1`] = `
 <div>
   <div>
     <div>

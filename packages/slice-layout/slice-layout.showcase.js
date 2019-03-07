@@ -13,6 +13,7 @@ import {
   OpinionOneAndTwoSlice,
   StandardSlice,
   SecondaryFourSlice,
+  SecondaryOneAndColumnistSlice,
   SecondaryOneAndFourSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
@@ -361,6 +362,19 @@ export default {
         </ScrollView>
       ),
       name: "CommentLeadAndCartoon",
+      type: "story"
+    },
+    {
+      component: ({ select }) => (
+        <ScrollView>
+          <SecondaryOneAndColumnistSlice
+            breakpoint={breakpointSelect(select)}
+            renderColumnist={() => <Support1 id="columnist" />}
+            renderSecondary={() => <Support2 id="secondary" />}
+          />
+        </ScrollView>
+      ),
+      name: "SecondaryOneAndColumnistSlice",
       type: "story"
     },
     {

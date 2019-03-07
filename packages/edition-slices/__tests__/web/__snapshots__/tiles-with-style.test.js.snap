@@ -2677,7 +2677,274 @@ exports[`25. tile z 1`] = `
 </Link>
 `;
 
-exports[`26. tile ae 1`] = `
+exports[`26. tile aa 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S4 {
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  padding-bottom: 5px;
+}
+
+.IS2 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.IS4 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS5 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`27. tile ab 1`] = `
+<style>
+.S1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.S4 {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.S5 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.S6 {
+  margin-bottom: 10px;
+}
+
+.S7 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.S8 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.IS3 {
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.IS4 {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 10px;
+  width: 50%;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS5 S2"
+  >
+    <div
+      className="IS3 S2"
+    >
+      <div
+        className="S2"
+      >
+        <div
+          className="IS1 S1"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS2 S3"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <div
+        className="S5"
+      >
+        <span
+          className="S4"
+        >
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+      <div
+        className="S6"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          Libby Purves
+        </span>
+      </div>
+    </div>
+    <div
+      className="IS4 S2"
+    >
+      <div
+        className="S2"
+      >
+        <Image
+          aspectRatio={0.6666666666666666}
+          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`28. tile ae 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;

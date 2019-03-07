@@ -3,11 +3,31 @@
 exports[`1. secondary one and columnist 1`] = `
 <div>
   <div>
-    secondary
+    <div>
+      secondary
+    </div>
   </div>
   <div />
   <div>
-    columnist
+    <div>
+      columnist
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. tablet - secondary one and columnist 1`] = `
+<div>
+  <div>
+    <div>
+      secondary
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      columnist
+    </div>
   </div>
 </div>
 `;
