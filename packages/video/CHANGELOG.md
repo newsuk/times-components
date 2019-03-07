@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.3.38...@times-components/video@4.4.0) (2019-03-07)
+
+
+### Features
+
+* 360 video ([#1770](https://github.com/newsuk/times-components/issues/1770)) ([c50e002](https://github.com/newsuk/times-components/commit/c50e002))
+
+
+
+
+
 ## [4.3.38](https://github.com/newsuk/times-components/compare/@times-components/video@4.3.37...@times-components/video@4.3.38) (2019-03-06)
 
 **Note:** Version bump only for package @times-components/video
