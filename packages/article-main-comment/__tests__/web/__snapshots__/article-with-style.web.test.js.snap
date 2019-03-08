@@ -383,7 +383,7 @@ exports[`full article with style 1`] = `
 
 .S5 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 0px;
