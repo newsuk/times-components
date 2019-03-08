@@ -8,19 +8,18 @@ const nativeStyles = {
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
     fontWeight: "700",
-    marginTop: spacing(3)
+    marginTop: spacing(1)
   },
   articleLabelWrapper: {
-    marginBottom: spacing(-2.75),
+    marginBottom: spacing(0),
     marginTop: spacing(2)
-  },
-  flags: {
-    ...sharedStyles.flags,
-    marginTop: spacing(1)
   },
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
+  },
+  standFirstWithoutFlags: {
+    paddingBottom: spacing(4)
   }
 };
 

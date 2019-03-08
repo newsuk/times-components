@@ -10,22 +10,21 @@ const androidStyles = {
     fontSize: fontSizes.headline,
     fontWeight: "400",
     lineHeight: 33,
-    marginBottom: spacing(3),
-    marginTop: spacing(3)
+    marginBottom: spacing(2),
+    marginTop: spacing(1)
   },
   articleLabelWrapper: {
-    marginBottom: spacing(-2.75),
+    marginBottom: spacing(0),
     marginTop: spacing(2)
-  },
-  flags: {
-    ...sharedStyles.flags,
-    marginTop: spacing(1)
   },
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 28,
-    marginTop: -7,
+    marginTop: -2,
     paddingBottom: 12
+  },
+  standFirstWithoutFlags: {
+    paddingBottom: spacing(4)
   }
 };
 
