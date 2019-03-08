@@ -44,7 +44,9 @@ export default () => {
       TestRenderer.create(
         <Section
           analyticsStream={() => {}}
-          onPress={() => {}}
+          onArticlePress={() => {}}
+          onPuzzlePress={() => {}}
+          publicationName="TIMES"
           section={edition.sections[0]}
         />
       ).toJSON()

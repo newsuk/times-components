@@ -45,7 +45,19 @@ function getPuzzleSlices(): Array<PuzzleSectionSlice> {
   ];
 }
 
-function mockStandardSection(title: string): StandardSection {
+interface StandardSectionWithName extends StandardSection {
+  name: string;
+}
+
+interface PuzzleSectionWithName extends PuzzleSection {
+  name: string;
+}
+
+interface MagazineSectionWithName extends MagazineSection {
+  name: string;
+}
+
+function mockStandardSection(title: string): StandardSectionWithName {
   return {
     colour: {
       rgba: {
@@ -56,13 +68,14 @@ function mockStandardSection(title: string): StandardSection {
       }
     },
     id: "dummy-section-id",
+    name: "StandardSection",
     slices: getSlices(),
     slug: "dummy-section-slug",
     title
   };
 }
 
-function mockPuzzleSection(title: string): PuzzleSection {
+function mockPuzzleSection(title: string): PuzzleSectionWithName {
   return {
     colour: {
       rgba: {
@@ -73,13 +86,14 @@ function mockPuzzleSection(title: string): PuzzleSection {
       }
     },
     id: "dummy-section-id",
+    name: "PuzzleSection",
     slices: getPuzzleSlices(),
     slug: "dummy-section-slug",
     title
   };
 }
 
-function mockMagazineSection(title: string): MagazineSection {
+function mockMagazineSection(title: string): MagazineSectionWithName {
   return {
     colour: {
       rgba: {
@@ -91,6 +105,7 @@ function mockMagazineSection(title: string): MagazineSection {
     },
     cover: new MockImage().get(),
     id: "dummy-section-id",
+    name: "MagazineSection",
     slices: getSlices(),
     slug: "dummy-section-slug",
     title

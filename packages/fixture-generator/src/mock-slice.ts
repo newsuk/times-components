@@ -289,9 +289,10 @@ function mockArticleSlice(count: number): ArticleSlice {
 }
 
 function mockPuzzleSlice(): Puzzle {
-  const { title, url, image } = new MockPuzzle().get();
+  const { id, title, url, image } = new MockPuzzle().get();
   return <PuzzleWithName>{
     name: "Puzzle",
+    id,
     title,
     url,
     image
