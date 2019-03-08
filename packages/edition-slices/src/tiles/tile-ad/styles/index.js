@@ -7,15 +7,14 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 20,
-    marginBottom: spacing(2)
+    fontSize: 20
   },
   imageContainer: {
-    width: "45%"
+    width: "30%"
   },
   summaryContainer: {
     paddingHorizontal: spacing(2),
-    width: "55%"
+    width: "70%"
   }
 };
 

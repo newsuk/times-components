@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import { defaultProps, propTypes } from "./proptypes";
-import { ItemRowSeparator, ItemColSeparator } from "../shared";
+import { ItemColSeparator } from "../shared";
 import Column from "../column";
 import styles from "./styles";
 
@@ -36,15 +36,14 @@ const leadOneAndFourSlice = ({
     <View style={container}>
       <View style={leadContainer}>{renderLead()}</View>
       <ItemColSeparator />
-      <View style={supportContainer}>
-        {renderSupport1()}
-        <ItemRowSeparator />
-        {renderSupport2()}
-        <ItemRowSeparator />
-        {renderSupport3()}
-        <ItemRowSeparator />
-        {renderSupport4()}
-      </View>
+      <Column style={supportContainer}
+          tiles={[
+            renderSupport1,
+            renderSupport2,
+            renderSupport3,
+            renderSupport4
+          ]}
+        />
     </View>
   );
 };
