@@ -39,8 +39,8 @@ exports[`full article with style 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "lineHeight": 35,
-          "marginBottom": 10,
+          "lineHeight": 33,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -64,7 +64,7 @@ exports[`full article with style 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -166,7 +166,7 @@ exports[`full article with style in the culture magazine 1`] = `
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -190,7 +190,7 @@ exports[`full article with style in the culture magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -292,7 +292,7 @@ exports[`full article with style in the style magazine 1`] = `
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -316,7 +316,7 @@ exports[`full article with style in the style magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -418,7 +418,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -442,7 +442,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -544,7 +544,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -568,7 +568,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -670,7 +670,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -694,7 +694,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -796,7 +796,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -820,7 +820,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }

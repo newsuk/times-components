@@ -12,11 +12,18 @@ const Separator = () => <View style={styles.separator} />;
 const ArticleMeta = ({
   byline,
   isTablet,
+  hasElementsAbove,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
-  <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
+  <View
+    style={[
+      styles.metaContainer,
+      !hasElementsAbove && styles.metaSpacer,
+      isTablet && styles.metaContainerTablet
+    ]}
+  >
     {byline && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
