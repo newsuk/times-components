@@ -22,7 +22,7 @@ const ArticleHeader = ({
       isTablet && styles.headerTablet
     ]}
   >
-    {label && <HeaderLabel isVideo={hasVideo} label={label} />}
+    <HeaderLabel isVideo={hasVideo} label={label} />
     <Text
       selectable
       style={[

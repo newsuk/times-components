@@ -10,12 +10,19 @@ const Separator = () => <View style={styles.separator} />;
 
 const ArticleMeta = ({
   byline,
+  hasStandfirst,
   isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
-  <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
+  <View
+    style={[
+      styles.metaContainer,
+      !hasStandfirst && styles.metaFlagSpacer,
+      isTablet && styles.metaContainerTablet
+    ]}
+  >
     {byline && (
       <Fragment>
         <View style={styles.meta}>

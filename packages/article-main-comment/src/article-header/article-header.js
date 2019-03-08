@@ -39,12 +39,15 @@ const ArticleHeader = ({
           >
             {headline}
           </Text>
-          <View style={styles.flags}>
-            <ArticleFlags flags={flags} />
-          </View>
+          {flags.length > 0 && (
+            <View style={styles.flags}>
+              <ArticleFlags flags={flags} />
+            </View>
+          )}
           <Standfirst standfirst={standfirst} />
           <Meta
             byline={byline}
+            hasStandfirst={standfirst}
             isTablet={isTablet}
             onAuthorPress={onAuthorPress}
             publicationName={publicationName}
