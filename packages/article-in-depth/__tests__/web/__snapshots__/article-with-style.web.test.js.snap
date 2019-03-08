@@ -372,7 +372,7 @@ exports[`full article with style 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 0px;
@@ -1096,7 +1096,7 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 0px;
@@ -1821,7 +1821,7 @@ exports[`full article with style in the style magazine 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 0px;
@@ -2546,7 +2546,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 10px;
   padding-top: 0px;

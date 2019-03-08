@@ -5,7 +5,8 @@ const nativeStyles = {
   ...sharedStyles,
   standFirst: {
     ...sharedStyles.standFirst,
-    lineHeight: 25
+    lineHeight: 25,
+    marginBottom: 0
   }
 };
 
