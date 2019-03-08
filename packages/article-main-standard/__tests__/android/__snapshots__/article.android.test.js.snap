@@ -35,13 +35,15 @@ exports[`1. an article 1`] = `
       >
         Some Standfirst
       </Text>
-      <ArticleFlags
-        flags={
-          Array [
-            "NEW",
-          ]
-        }
-      />
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "NEW",
+            ]
+          }
+        />
+      </View>
     </View>
     <View>
       <View>
@@ -89,7 +91,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       >
         Some Short Headline
       </Text>
-      <ArticleFlags />
     </View>
     <View>
       <View>
@@ -112,7 +113,6 @@ exports[`4. an article with ads 1`] = `
       >
         Some Headline
       </Text>
-      <ArticleFlags />
     </View>
     <View>
       <View>
