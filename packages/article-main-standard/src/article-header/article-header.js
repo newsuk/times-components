@@ -32,10 +32,12 @@ const ArticleHeader = ({
     >
       {headline}
     </Text>
-    <HeaderStandfirst standfirst={standfirst} hasFlags={flags.length > 0} />
-    {flags.length > 0 && <View style={styles.flags}>
-      <ArticleFlags flags={flags} />
-    </View>}
+    <HeaderStandfirst hasFlags={flags.length > 0} standfirst={standfirst} />
+    {flags.length > 0 && (
+      <View style={styles.flags}>
+        <ArticleFlags flags={flags} />
+      </View>
+    )}
   </View>
 );
 
