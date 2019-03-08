@@ -933,7 +933,95 @@ exports[`25. tile z 1`] = `
 </Link>
 `;
 
-exports[`26. tile ae 1`] = `
+exports[`26. tile aa 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <Image
+        aspectRatio={1.7777777777777777}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+      />
+    </div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`27. tile ab 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <div>
+        <span>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </span>
+      </div>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
+      </div>
+      <div>
+        <span>
+          Libby Purves
+        </span>
+      </div>
+    </div>
+    <div>
+      <div>
+        <Image
+          aspectRatio={0.6666666666666666}
+          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`28. tile ae 1`] = `
 <Link
   url="/article/123"
 >

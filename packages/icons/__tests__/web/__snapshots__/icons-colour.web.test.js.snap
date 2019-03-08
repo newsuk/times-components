@@ -91,3 +91,15 @@ Array [
   />,
 ]
 `;
+
+exports[`8. iconvideo360player renders with different colours 1`] = `
+Array [
+  <title>
+    Video 360 Player Icon
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
+`;

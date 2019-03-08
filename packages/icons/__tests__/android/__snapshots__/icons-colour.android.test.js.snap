@@ -174,3 +174,25 @@ exports[`7. thetimeslogo renders with different colours 1`] = `
   }
 />
 `;
+
+exports[`8. iconvideo360player renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;

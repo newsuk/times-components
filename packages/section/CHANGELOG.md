@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.20](https://github.com/newsuk/times-components/compare/@times-components/section@0.2.19...@times-components/section@0.2.20) (2019-03-08)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.2.19](https://github.com/newsuk/times-components/compare/@times-components/section@0.2.18...@times-components/section@0.2.19) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.2.18](https://github.com/newsuk/times-components/compare/@times-components/section@0.2.17...@times-components/section@0.2.18) (2019-03-07)
+
+
+### Bug Fixes
+
+* Add keys to flatlists ([#1780](https://github.com/newsuk/times-components/issues/1780)) ([9bc4e6a](https://github.com/newsuk/times-components/commit/9bc4e6a))
+
+
+
+
+
+## [0.2.17](https://github.com/newsuk/times-components/compare/@times-components/section@0.2.16...@times-components/section@0.2.17) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
 ## [0.2.16](https://github.com/newsuk/times-components/compare/@times-components/section@0.2.15...@times-components/section@0.2.16) (2019-03-06)
 
 **Note:** Version bump only for package @times-components/section

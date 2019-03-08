@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.3...@times-components/article-skeleton@0.14.4) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.2...@times-components/article-skeleton@0.14.3) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.14.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.1...@times-components/article-skeleton@0.14.2) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [0.14.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.0...@times-components/article-skeleton@0.14.1) (2019-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.13.2...@times-components/article-skeleton@0.14.0) (2019-03-07)
+
+
+### Features
+
+* 360 video ([#1770](https://github.com/newsuk/times-components/issues/1770)) ([c50e002](https://github.com/newsuk/times-components/commit/c50e002))
+
+
+
+
+
 ## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.13.1...@times-components/article-skeleton@0.13.2) (2019-03-06)
 
 **Note:** Version bump only for package @times-components/article-skeleton

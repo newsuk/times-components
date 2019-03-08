@@ -16,6 +16,9 @@ import InlineVideoPlayer from "../../src/inline-video-player";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/icons", () => ({
+  IconVideo360Player: "IconVideo360Player"
+}));
 
 const omitProps = new Set(["className", "controls", "id", "style"]);
 
@@ -50,6 +53,29 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <Video {...defaultVideoProps} skySports />
+      );
+
+      const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);
+      VideoComponent[0].instance.handlePlay();
+
+      expect(testInstance).toMatchSnapshot();
+    }
+  },
+  {
+    name: "360 video",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} playerId="foo" />
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
+    }
+  },
+  {
+    name: "no sky banner displayed on play",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} playerId="foo" />
       );
 
       const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);

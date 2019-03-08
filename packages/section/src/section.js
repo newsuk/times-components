@@ -56,6 +56,7 @@ class Section extends Component {
               </View>
             ))
           }
+          keyExtractor={item => item.elementId}
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={({ index, item: slice }) => (
             <Context.Provider value={{ publicationName }}>

@@ -36,14 +36,10 @@ const leadOneAndFourSlice = ({
     <View style={container}>
       <View style={leadContainer}>{renderLead()}</View>
       <ItemColSeparator />
-      <Column style={supportContainer}
-          tiles={[
-            renderSupport1,
-            renderSupport2,
-            renderSupport3,
-            renderSupport4
-          ]}
-        />
+      <Column
+        style={supportContainer}
+        tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
+      />
     </View>
   );
 };

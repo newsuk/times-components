@@ -16,6 +16,9 @@ import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/icons", () => ({
+  IconVideo360Player: "IconVideo360Player"
+}));
 
 const omitProps = new Set(["className", "controls", "id", "style"]);
 
