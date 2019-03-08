@@ -75,7 +75,7 @@ const tests = [
     name: "no sky banner displayed on play",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} playerId="foo" />
+        <Video {...defaultVideoProps} />
       );
 
       const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);

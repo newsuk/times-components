@@ -204,6 +204,7 @@ class InlineVideoPlayer extends Component {
             data-embed="default"
             data-player={playerId}
             data-video-id={videoId}
+            {...(is360Video ? { playsinline: "true" } : {})}
           />
         </div>
       </div>

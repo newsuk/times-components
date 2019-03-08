@@ -43,6 +43,7 @@ exports[`3. 360 video 1`] = `
       />
     </div>
     <video
+      playsinline="true"
       poster="b9a31d3949b1882a09ed2f8508d538f3"
     />
   </div>
