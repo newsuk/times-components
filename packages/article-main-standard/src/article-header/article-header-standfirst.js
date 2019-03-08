@@ -19,6 +19,7 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
 };
 
 HeaderStandfirst.propTypes = {
+  hasFlags: PropTypes.bool.isRequired,
   standfirst: PropTypes.string
 };
 

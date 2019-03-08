@@ -43,9 +43,9 @@ const ArticleHeader = ({
         >
           {headline}
         </Text>
-        <View style={styles.flags}>
+        {flags.length > 0 && <View style={styles.flags}>
           <ArticleFlags flags={flags} />
-        </View>
+        </View>}
         <Standfirst standfirst={standfirst} />
         <Meta
           byline={byline}
