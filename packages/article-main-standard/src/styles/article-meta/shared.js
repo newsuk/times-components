@@ -20,7 +20,7 @@ const sharedStyles = {
     marginRight: 0
   },
   articleMiddleContainer: {
-    paddingTop: 9
+    // paddingTop: spacing(2.5)
   },
   byline: {
     ...fontFactory({

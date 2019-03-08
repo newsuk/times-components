@@ -22,7 +22,7 @@ const ArticleHeader = ({
       isTablet && styles.headerTablet
     ]}
   >
-    <HeaderLabel isVideo={hasVideo} label={label} />
+    {label && <HeaderLabel isVideo={hasVideo} label={label} />}
     <Text
       selectable
       style={[
@@ -32,8 +32,10 @@ const ArticleHeader = ({
     >
       {headline}
     </Text>
-    <HeaderStandfirst standfirst={standfirst} />
-    <ArticleFlags flags={flags} />
+    <HeaderStandfirst standfirst={standfirst} hasFlags={flags.length > 0} />
+    {flags.length > 0 && <View style={styles.flags}>
+      <ArticleFlags flags={flags} />
+    </View>}
   </View>
 );
 

@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import { Text } from "react-native";
 import styles from "../styles/article-header";
 
-const HeaderStandfirst = ({ standfirst }) => {
+const HeaderStandfirst = ({ hasFlags, standfirst }) => {
   if (!standfirst) return null;
 
   return (
     <Text
       accessibilityRole="heading"
       aria-level="2"
-      style={[styles.standFirst]}
+      style={[styles.standFirst, !hasFlags && styles.standFirstWithoutFlags]}
       testID="standfirst"
     >
       {standfirst}

@@ -1,4 +1,4 @@
-import styleguideFactory from "@times-components/styleguide";
+import styleguideFactory, { spacing } from "@times-components/styleguide";
 
 const { fontFactory } = styleguideFactory();
 
@@ -8,7 +8,7 @@ const styles = {
     flexDirection: "row"
   },
   iconContainer: {
-    paddingBottom: 2
+    paddingBottom: spacing(1)
   },
   title: {
     ...fontFactory({
