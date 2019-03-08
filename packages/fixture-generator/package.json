@@ -1,6 +1,6 @@
 {
   "name": "@times-components/fixture-generator",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "description": "Creates fixture data for testing",
   "main": "build/index.js",
   "types": "build/index.d.ts",
