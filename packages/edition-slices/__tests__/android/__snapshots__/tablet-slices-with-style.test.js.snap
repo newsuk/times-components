@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register tablet slice 1`] = `
+exports[`1. daily universal register tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -101,7 +101,7 @@ exports[`1. daily universal register tablet slice 1`] = `
 </View>
 `;
 
-exports[`2. lead one and one tablet slice 1`] = `
+exports[`2. lead one and one tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -152,7 +152,7 @@ exports[`2. lead one and one tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -166,7 +166,7 @@ exports[`3. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -238,7 +238,7 @@ exports[`4. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary one tablet slice 1`] = `
+exports[`5. secondary one tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -252,7 +252,7 @@ exports[`5. secondary one tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary four tablet slice 1`] = `
+exports[`6. secondary four tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -344,7 +344,7 @@ exports[`6. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`7. secondary one and columnist - medium 1`] = `
 <View
   style={
     Object {
@@ -397,7 +397,7 @@ exports[`7. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`8. secondary two and two slice 1`] = `
+exports[`8. secondary two and two slice - medium 1`] = `
 <View
   style={
     Object {
@@ -687,4 +687,196 @@ exports[`10. secondary two no pic and two slice 1`] = `
     </View>
   </View>
 </View>
+`;
+
+exports[`11. lead one and one tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`12. lead one full width tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`13. lead two no pic and two tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`14. secondary one tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`15. secondary four tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`16. secondary one and columnist - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`17. secondary two and two slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`18. secondary two no pic and two slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`20. lead one and one tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`21. lead one full width tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`22. lead two no pic and two tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`23. secondary one tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`24. secondary four tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`25. secondary one and columnist - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`26. secondary two and two slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
+`;
+
+exports[`27. secondary two no pic and two slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+/>
 `;
