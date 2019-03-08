@@ -32,11 +32,11 @@ class Section extends Component {
       onArticlePress,
       onPuzzlePress,
       publicationName,
-      section: { slices, title },
+      section: { name, slices },
       onViewed,
       receiveChildList
     } = this.props;
-    const isPuzzle = title === "Puzzles";
+    const isPuzzle = name === "PuzzleSection";
 
     const data = slices.map((slice, index) => ({
       ...slice,
