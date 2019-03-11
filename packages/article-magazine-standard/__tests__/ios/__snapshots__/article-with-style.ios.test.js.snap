@@ -373,7 +373,7 @@ exports[`phone full article with style 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "lineHeight": 35,
+          "lineHeight": 33,
           "marginBottom": 10,
           "textAlign": "center",
         }
@@ -488,7 +488,7 @@ exports[`tablet full article with style 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "lineHeight": 35,
+          "lineHeight": 33,
           "marginBottom": 10,
           "textAlign": "center",
         }
