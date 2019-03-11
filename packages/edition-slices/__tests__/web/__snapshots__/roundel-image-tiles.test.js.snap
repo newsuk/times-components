@@ -2,6 +2,7 @@
 
 exports[`1. tile g - layout change 1`] = `
 <Link
+  linkStyle={null}
   url="/article/123"
 >
   <div>
@@ -40,6 +41,7 @@ exports[`1. tile g - layout change 1`] = `
 
 exports[`2. tile p - layout change 1`] = `
 <Link
+  linkStyle={null}
   url="/article/123"
 >
   <div>

@@ -2,7 +2,6 @@ import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    height: "100%",
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2)
   },
@@ -15,6 +14,9 @@ const styles = {
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"
+  },
+  link: {
+    flex: 1
   }
 };
 

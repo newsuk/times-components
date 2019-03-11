@@ -14,28 +14,28 @@ const LeadTwoNoPicAndTwoSlice = ({
   renderSupport1,
   renderSupport2
 }) => {
-  if (breakpoint === editionBreakpoints.medium) {
+  if (breakpoint === editionBreakpoints.small) {
     return (
-      <View style={styles.container}>
-        <View style={styles.column}>
-          {renderLead1()}
-          <ItemRowSeparator />
-          {renderLead2()}
-        </View>
-        <ItemColSeparator />
-        <View style={styles.column}>
-          {renderSupport1()}
-          <ItemRowSeparator />
-          {renderSupport2()}
-        </View>
-      </View>
+      <Column
+        tiles={[renderLead1, renderLead2, renderSupport1, renderSupport2]}
+      />
     );
   }
 
   return (
-    <Column
-      tiles={[renderLead1, renderLead2, renderSupport1, renderSupport2]}
-    />
+    <View style={styles.container}>
+      <View style={styles.column}>
+        {renderLead1()}
+        <ItemRowSeparator />
+        {renderLead2()}
+      </View>
+      <ItemColSeparator />
+      <View style={styles.column}>
+        {renderSupport1()}
+        <ItemRowSeparator />
+        {renderSupport2()}
+      </View>
+    </View>
   );
 };
 

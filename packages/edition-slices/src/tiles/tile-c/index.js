@@ -11,7 +11,7 @@ import {
 import styles from "./styles";
 
 const TileC = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} tile={tile}>
+  <TileLink onPress={onPress} style={styles.link} tile={tile}>
     <View style={styles.container}>
       <TileImage
         aspectRatio={16 / 9}
