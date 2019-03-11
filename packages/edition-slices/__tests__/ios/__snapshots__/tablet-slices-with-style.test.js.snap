@@ -1,6 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one and one tablet slice 1`] = `
+exports[`1. daily universal register tablet slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "paddingHorizontal": "20%",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 73,
+          "marginVertical": 10,
+          "width": 285,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "marginVertical": 25,
+        }
+      }
+    >
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
+`;
+
+exports[`2. lead one and one tablet slice 1`] = `
 <View
   style={
     Object {
@@ -51,7 +152,7 @@ exports[`1. lead one and one tablet slice 1`] = `
 </View>
 `;
 
-exports[`2. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice 1`] = `
 <View
   style={
     Object {
@@ -65,7 +166,7 @@ exports[`2. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice 1`] = `
 <View
   style={
     Object {
@@ -114,7 +215,7 @@ exports[`3. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary one tablet slice 1`] = `
+exports[`5. secondary one tablet slice 1`] = `
 <View
   style={
     Object {
@@ -128,7 +229,7 @@ exports[`4. secondary one tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary four tablet slice 1`] = `
+exports[`6. secondary four tablet slice 1`] = `
 <View
   style={
     Object {
@@ -220,7 +321,7 @@ exports[`5. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary one and columnist 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <View
   style={
     Object {
@@ -273,7 +374,7 @@ exports[`6. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`7. secondary two and two slice 1`] = `
+exports[`8. secondary two and two slice 1`] = `
 <View
   style={
     Object {
@@ -381,7 +482,7 @@ exports[`7. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`8. secondary two no pic and two slice 1`] = `
+exports[`9. secondary two no pic and two slice 1`] = `
 <View
   style={
     Object {

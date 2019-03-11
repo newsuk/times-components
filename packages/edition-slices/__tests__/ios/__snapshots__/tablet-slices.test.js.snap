@@ -1,6 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one and one tablet slice 1`] = `
+exports[`1. daily universal register tablet slice 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+        }
+      }
+    />
+    <Text>
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/leaves.png",
+        }
+      }
+    />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/cake.png",
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
+`;
+
+exports[`2. lead one and one tablet slice 1`] = `
 <View>
   <View>
     <View>
@@ -18,7 +59,7 @@ exports[`1. lead one and one tablet slice 1`] = `
 </View>
 `;
 
-exports[`2. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice 1`] = `
 <View>
   <TileR
     tileName="lead"
@@ -26,7 +67,7 @@ exports[`2. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice 1`] = `
 <View>
   <View>
     <TileX
@@ -48,7 +89,7 @@ exports[`3. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. secondary one tablet slice 1`] = `
+exports[`5. secondary one tablet slice 1`] = `
 <View>
   <TileW
     tileName="secondary"
@@ -56,7 +97,7 @@ exports[`4. secondary one tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary four tablet slice 1`] = `
+exports[`6. secondary four tablet slice 1`] = `
 <View>
   <View>
     <View>
@@ -86,7 +127,7 @@ exports[`5. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary one and columnist 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <View>
   <View>
     <View>
@@ -104,7 +145,7 @@ exports[`6. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`7. secondary two and two slice 1`] = `
+exports[`8. secondary two and two slice 1`] = `
 <View>
   <View>
     <View>
@@ -138,7 +179,7 @@ exports[`7. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`8. secondary two no pic and two slice 1`] = `
+exports[`9. secondary two no pic and two slice 1`] = `
 <View>
   <View>
     <View>
