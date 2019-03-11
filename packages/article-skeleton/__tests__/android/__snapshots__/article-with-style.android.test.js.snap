@@ -17,7 +17,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -29,7 +29,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -45,7 +45,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -69,7 +69,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -85,7 +85,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -101,7 +101,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -117,7 +117,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -145,7 +145,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -161,7 +161,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -187,7 +187,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -205,7 +205,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -274,7 +274,7 @@ exports[`2. an article with no content 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -286,7 +286,7 @@ exports[`2. an article with no content 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -311,7 +311,7 @@ exports[`2. an article with no content 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -327,7 +327,7 @@ exports[`2. an article with no content 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -356,7 +356,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -368,7 +368,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -392,7 +392,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -416,7 +416,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -428,7 +428,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -457,7 +457,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -469,7 +469,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -485,7 +485,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -511,7 +511,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -527,7 +527,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -543,7 +543,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -559,7 +559,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -587,7 +587,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -603,7 +603,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -629,7 +629,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -654,7 +654,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
