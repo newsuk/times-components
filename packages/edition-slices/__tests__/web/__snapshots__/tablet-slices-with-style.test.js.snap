@@ -72,8 +72,8 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 25%;
+  padding-left: 25%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -334,7 +334,174 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`5. secondary one tablet slice - medium 1`] = `
+exports[`5. leaders slice - medium 1`] = `
+<style>
+.S1 {
+  font-weight: inherit;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  height: 51;
+  width: 283;
+}
+
+.IS2 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.IS3 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+</style>
+
+<div
+  className="IS12 S2"
+>
+  <div
+    className="IS4 S2"
+  >
+    <Image
+      aspectRatio={5.74}
+      className="IS1"
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div
+      className="IS3 S2"
+    >
+      <div
+        className="IS2 S1"
+      >
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div
+    className="IS11 S2"
+  >
+    <div
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. secondary one tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -358,7 +525,7 @@ exports[`5. secondary one tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`6. secondary four tablet slice - medium 1`] = `
+exports[`7. secondary four tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -516,7 +683,7 @@ exports[`6. secondary four tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and columnist - medium 1`] = `
+exports[`8. secondary one and columnist - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -597,7 +764,7 @@ exports[`7. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
-exports[`8. secondary two and two slice - medium 1`] = `
+exports[`9. secondary two and two slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -763,7 +930,7 @@ exports[`8. secondary two and two slice - medium 1`] = `
 </div>
 `;
 
-exports[`9. lead one and four slice - medium 1`] = `
+exports[`10. lead one and four slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -886,7 +1053,7 @@ exports[`9. lead one and four slice - medium 1`] = `
 </div>
 `;
 
-exports[`10. secondary two no pic and two slice - medium 1`] = `
+exports[`11. secondary two no pic and two slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1035,7 +1202,7 @@ exports[`10. secondary two no pic and two slice - medium 1`] = `
 </div>
 `;
 
-exports[`11. daily universal register tablet slice - wide 1`] = `
+exports[`12. daily universal register tablet slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1107,8 +1274,8 @@ exports[`11. daily universal register tablet slice - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 25%;
+  padding-left: 25%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -1169,7 +1336,7 @@ exports[`11. daily universal register tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`12. lead one and one tablet slice - wide 1`] = `
+exports[`13. lead one and one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1249,7 +1416,7 @@ exports[`12. lead one and one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`13. lead one full width tablet slice - wide 1`] = `
+exports[`14. lead one full width tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1273,7 +1440,7 @@ exports[`13. lead one full width tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`14. lead two no pic and two tablet slice - wide 1`] = `
+exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1369,7 +1536,174 @@ exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`15. secondary one tablet slice - wide 1`] = `
+exports[`16. leaders slice - wide 1`] = `
+<style>
+.S1 {
+  font-weight: inherit;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  height: 51;
+  width: 283;
+}
+
+.IS2 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.IS3 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+</style>
+
+<div
+  className="IS12 S2"
+>
+  <div
+    className="IS4 S2"
+  >
+    <Image
+      aspectRatio={5.74}
+      className="IS1"
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div
+      className="IS3 S2"
+    >
+      <div
+        className="IS2 S1"
+      >
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div
+    className="IS11 S2"
+  >
+    <div
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`17. secondary one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1393,7 +1727,7 @@ exports[`15. secondary one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`16. secondary four tablet slice - wide 1`] = `
+exports[`18. secondary four tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1551,7 +1885,7 @@ exports[`16. secondary four tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`17. secondary one and columnist - wide 1`] = `
+exports[`19. secondary one and columnist - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1632,7 +1966,7 @@ exports[`17. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary two and two slice - wide 1`] = `
+exports[`20. secondary two and two slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1798,7 +2132,7 @@ exports[`18. secondary two and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`19. lead one and four slice - wide 1`] = `
+exports[`21. lead one and four slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1921,7 +2255,7 @@ exports[`19. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-exports[`20. secondary two no pic and two slice - wide 1`] = `
+exports[`22. secondary two no pic and two slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2070,7 +2404,7 @@ exports[`20. secondary two no pic and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`21. daily universal register tablet slice - huge 1`] = `
+exports[`23. daily universal register tablet slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2142,8 +2476,8 @@ exports[`21. daily universal register tablet slice - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 25%;
+  padding-left: 25%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -2204,7 +2538,7 @@ exports[`21. daily universal register tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`22. lead one and one tablet slice - huge 1`] = `
+exports[`24. lead one and one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2284,7 +2618,7 @@ exports[`22. lead one and one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`23. lead one full width tablet slice - huge 1`] = `
+exports[`25. lead one full width tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2308,7 +2642,7 @@ exports[`23. lead one full width tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`24. lead two no pic and two tablet slice - huge 1`] = `
+exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2404,7 +2738,174 @@ exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`25. secondary one tablet slice - huge 1`] = `
+exports[`27. leaders slice - huge 1`] = `
+<style>
+.S1 {
+  font-weight: inherit;
+  margin-bottom: 0px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  height: 51;
+  width: 283;
+}
+
+.IS2 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.IS3 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS5 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+</style>
+
+<div
+  className="IS12 S2"
+>
+  <div
+    className="IS4 S2"
+  >
+    <Image
+      aspectRatio={5.74}
+      className="IS1"
+      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+    />
+    <div
+      className="IS3 S2"
+    >
+      <div
+        className="IS2 S1"
+      >
+         Leading Articles 
+      </div>
+    </div>
+  </div>
+  <div
+    className="IS11 S2"
+  >
+    <div
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`28. secondary one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2428,7 +2929,7 @@ exports[`25. secondary one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`26. secondary four tablet slice - huge 1`] = `
+exports[`29. secondary four tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2586,7 +3087,7 @@ exports[`26. secondary four tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`27. secondary one and columnist - huge 1`] = `
+exports[`30. secondary one and columnist - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2667,7 +3168,7 @@ exports[`27. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`28. secondary two and two slice - huge 1`] = `
+exports[`31. secondary two and two slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2833,7 +3334,7 @@ exports[`28. secondary two and two slice - huge 1`] = `
 </div>
 `;
 
-exports[`29. lead one and four slice - huge 1`] = `
+exports[`32. lead one and four slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2956,7 +3457,7 @@ exports[`29. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-exports[`30. secondary two no pic and two slice - huge 1`] = `
+exports[`33. secondary two no pic and two slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

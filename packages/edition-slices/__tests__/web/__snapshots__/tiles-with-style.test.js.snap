@@ -3050,3 +3050,77 @@ exports[`28. tile ae 1`] = `
   </div>
 </Link>
 `;
+
+exports[`29. tile ag 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  color: rgba(105,105,105,1.00);
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  margin-bottom: 10px;
+}
+
+.S4 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.IS2 {
+  font-family: TimesDigitalW04-Regular;
+  text-align: center;
+}
+
+.IS3 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+</style>
+
+<Link>
+  <div
+    className="IS3 S4"
+  >
+    <div
+      className="S4"
+    >
+      <h3
+        aria-level="3"
+        className="IS1 S1"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <h4
+        aria-level="4"
+        className="IS2 S2"
+        role="heading"
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </h4>
+      <div
+        className="S3"
+      >
+        <ArticleFlags />
+      </div>
+    </div>
+  </div>
+</Link>
+`;

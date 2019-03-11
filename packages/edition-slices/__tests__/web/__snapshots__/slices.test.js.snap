@@ -127,17 +127,25 @@ exports[`2. leaders slice 1`] = `
     </div>
   </div>
   <div>
-    <TileM
-      tileName="leader1"
-    />
-    <div />
-    <TileM
-      tileName="leader2"
-    />
-    <div />
-    <TileM
-      tileName="leader3"
-    />
+    <div>
+      <div>
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -156,17 +164,25 @@ exports[`2. leaders slice 2`] = `
     </div>
   </div>
   <div>
-    <TileM
-      tileName="leader1"
-    />
-    <div />
-    <TileM
-      tileName="leader2"
-    />
-    <div />
-    <TileM
-      tileName="leader3"
-    />
+    <div>
+      <div>
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -477,17 +493,25 @@ exports[`13. leaders slice 1`] = `
     </div>
   </div>
   <div>
-    <TileM
-      tileName="leader1"
-    />
-    <div />
-    <TileM
-      tileName="leader2"
-    />
-    <div />
-    <TileM
-      tileName="leader3"
-    />
+    <div>
+      <div>
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;

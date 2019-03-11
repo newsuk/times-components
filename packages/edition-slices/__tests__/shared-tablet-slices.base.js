@@ -5,6 +5,7 @@ import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
   mockDailyRegisterSlice,
+  mockLeadersSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneFullWidthSlice,
   mockLeadTwoNoPicAndTwoSlice,
@@ -21,6 +22,7 @@ import {
   DailyRegisterLeadFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadersSlice,
   LeadTwoNoPicAndTwoSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
@@ -50,6 +52,11 @@ const slices = [
     mock: mockLeadTwoNoPicAndTwoSlice(),
     name: "lead two no pic and two tablet slice",
     Slice: LeadTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "leaders slice",
+    Slice: LeadersSlice
   },
   {
     mock: mockSecondaryOneSlice(),

@@ -238,7 +238,127 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </View>
 `;
 
-exports[`5. secondary one tablet slice - medium 1`] = `
+exports[`5. leaders slice - medium 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 40,
+      "paddingTop": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 51,
+          "width": 283,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 16,
+            "lineHeight": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "maxWidth": "100%",
+        "width": 1366,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileM />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileM />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileM />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. secondary one tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -252,7 +372,7 @@ exports[`5. secondary one tablet slice - medium 1`] = `
 </View>
 `;
 
-exports[`6. secondary four tablet slice - medium 1`] = `
+exports[`7. secondary four tablet slice - medium 1`] = `
 <View
   style={
     Object {
@@ -344,7 +464,7 @@ exports[`6. secondary four tablet slice - medium 1`] = `
 </View>
 `;
 
-exports[`7. secondary one and columnist - medium 1`] = `
+exports[`8. secondary one and columnist - medium 1`] = `
 <View
   style={
     Object {
@@ -397,7 +517,7 @@ exports[`7. secondary one and columnist - medium 1`] = `
 </View>
 `;
 
-exports[`8. secondary two and two slice - medium 1`] = `
+exports[`9. secondary two and two slice - medium 1`] = `
 <View
   style={
     Object {
@@ -505,7 +625,7 @@ exports[`8. secondary two and two slice - medium 1`] = `
 </View>
 `;
 
-exports[`9. lead one and four slice - medium 1`] = `
+exports[`10. lead one and four slice - medium 1`] = `
 <View
   style={
     Object {
@@ -590,7 +710,7 @@ exports[`9. lead one and four slice - medium 1`] = `
 </View>
 `;
 
-exports[`10. secondary two no pic and two slice - medium 1`] = `
+exports[`11. secondary two no pic and two slice - medium 1`] = `
 <View
   style={
     Object {
@@ -689,7 +809,7 @@ exports[`10. secondary two no pic and two slice - medium 1`] = `
 </View>
 `;
 
-exports[`11. daily universal register tablet slice - wide 1`] = `
+exports[`12. daily universal register tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -705,7 +825,7 @@ exports[`11. daily universal register tablet slice - wide 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "paddingHorizontal": "20%",
+        "paddingHorizontal": "25%",
       }
     }
   >
@@ -790,7 +910,7 @@ exports[`11. daily universal register tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`12. lead one and one tablet slice - wide 1`] = `
+exports[`13. lead one and one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -841,7 +961,7 @@ exports[`12. lead one and one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`13. lead one full width tablet slice - wide 1`] = `
+exports[`14. lead one full width tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -855,7 +975,7 @@ exports[`13. lead one full width tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`14. lead two no pic and two tablet slice - wide 1`] = `
+exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -927,7 +1047,127 @@ exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`15. secondary one tablet slice - wide 1`] = `
+exports[`16. leaders slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 40,
+      "paddingTop": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 51,
+          "width": 283,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 16,
+            "lineHeight": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "maxWidth": "100%",
+        "width": 1366,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`17. secondary one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -941,7 +1181,7 @@ exports[`15. secondary one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`16. secondary four tablet slice - wide 1`] = `
+exports[`18. secondary four tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1033,7 +1273,7 @@ exports[`16. secondary four tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`17. secondary one and columnist - wide 1`] = `
+exports[`19. secondary one and columnist - wide 1`] = `
 <View
   style={
     Object {
@@ -1086,7 +1326,7 @@ exports[`17. secondary one and columnist - wide 1`] = `
 </View>
 `;
 
-exports[`18. secondary two and two slice - wide 1`] = `
+exports[`20. secondary two and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1194,7 +1434,7 @@ exports[`18. secondary two and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`19. lead one and four slice - wide 1`] = `
+exports[`21. lead one and four slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1279,7 +1519,7 @@ exports[`19. lead one and four slice - wide 1`] = `
 </View>
 `;
 
-exports[`20. secondary two no pic and two slice - wide 1`] = `
+exports[`22. secondary two no pic and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1378,7 +1618,7 @@ exports[`20. secondary two no pic and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`21. daily universal register tablet slice - huge 1`] = `
+exports[`23. daily universal register tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1394,7 +1634,7 @@ exports[`21. daily universal register tablet slice - huge 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "paddingHorizontal": "20%",
+        "paddingHorizontal": "25%",
       }
     }
   >
@@ -1479,7 +1719,7 @@ exports[`21. daily universal register tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`22. lead one and one tablet slice - huge 1`] = `
+exports[`24. lead one and one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1530,7 +1770,7 @@ exports[`22. lead one and one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`23. lead one full width tablet slice - huge 1`] = `
+exports[`25. lead one full width tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1544,7 +1784,7 @@ exports[`23. lead one full width tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`24. lead two no pic and two tablet slice - huge 1`] = `
+exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1616,7 +1856,127 @@ exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`25. secondary one tablet slice - huge 1`] = `
+exports[`27. leaders slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 40,
+      "paddingTop": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 51,
+          "width": 283,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 16,
+            "lineHeight": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "maxWidth": "100%",
+        "width": 1366,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 10,
+            "width": "33%",
+          }
+        }
+      >
+        <TileAG />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`28. secondary one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1630,7 +1990,7 @@ exports[`25. secondary one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`26. secondary four tablet slice - huge 1`] = `
+exports[`29. secondary four tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1722,7 +2082,7 @@ exports[`26. secondary four tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`27. secondary one and columnist - huge 1`] = `
+exports[`30. secondary one and columnist - huge 1`] = `
 <View
   style={
     Object {
@@ -1775,7 +2135,7 @@ exports[`27. secondary one and columnist - huge 1`] = `
 </View>
 `;
 
-exports[`28. secondary two and two slice - huge 1`] = `
+exports[`31. secondary two and two slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1883,7 +2243,7 @@ exports[`28. secondary two and two slice - huge 1`] = `
 </View>
 `;
 
-exports[`29. lead one and four slice - huge 1`] = `
+exports[`32. lead one and four slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1968,7 +2328,7 @@ exports[`29. lead one and four slice - huge 1`] = `
 </View>
 `;
 
-exports[`30. secondary two no pic and two slice - huge 1`] = `
+exports[`33. secondary two no pic and two slice - huge 1`] = `
 <View
   style={
     Object {

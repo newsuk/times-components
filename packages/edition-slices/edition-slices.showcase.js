@@ -130,7 +130,7 @@ const sliceStories = [
   },
   {
     mock: mockLeadersSlice(),
-    name: "Leaders (M,M,M,M)",
+    name: "Leaders (Mobile, Tablet: M,M,M,M)",
     Slice: LeadersSlice
   },
   {
