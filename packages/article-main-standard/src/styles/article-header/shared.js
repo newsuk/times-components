@@ -10,6 +10,9 @@ const sharedStyles = {
     color: colours.functional.brandColour,
     marginBottom: 7
   },
+  articleHeadlineSpacer: {
+    marginBottom: spacing(3)
+  },
   articleHeadLineTextTablet: {
     ...fontFactory({
       font: "headline",

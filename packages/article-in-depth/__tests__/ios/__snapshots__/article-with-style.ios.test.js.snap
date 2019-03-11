@@ -9,7 +9,7 @@ exports[`full article with style 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -142,7 +142,7 @@ exports[`full article with style in the culture magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -275,7 +275,7 @@ exports[`full article with style in the style magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -408,7 +408,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -541,7 +541,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -674,7 +674,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -807,7 +807,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }

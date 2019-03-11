@@ -27,6 +27,7 @@ const ArticleHeader = ({
       selectable
       style={[
         styles.articleHeadLineText,
+        !(flags.length > 0 || standfirst) && styles.articleHeadlineSpacer,
         isTablet && styles.articleHeadLineTextTablet
       ]}
     >
