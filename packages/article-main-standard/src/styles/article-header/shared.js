@@ -2,6 +2,9 @@ import styleguide from "@times-components/styleguide";
 
 const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
+  articleHeadlineSpacer: {
+    marginBottom: spacing(3)
+  },
   articleHeadLineText: {
     ...fontFactory({
       font: "headline",
@@ -9,9 +12,6 @@ const sharedStyles = {
     }),
     color: colours.functional.brandColour,
     marginBottom: 7
-  },
-  articleHeadlineSpacer: {
-    marginBottom: spacing(3)
   },
   articleHeadLineTextTablet: {
     ...fontFactory({

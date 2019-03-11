@@ -36,10 +36,7 @@ export default () => {
 
         const testInstance = TestRenderer.create(
           <Responsive>
-            <ArticleMainStandard
-              {...articleProps}
-              article={articleFixture()}
-            />
+            <ArticleMainStandard {...articleProps} article={articleFixture()} />
           </Responsive>
         );
 
