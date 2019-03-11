@@ -80,38 +80,38 @@ exports[`3. tile c 1`] = `
   linkStyle={
     Object {
       "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
 >
   <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </div>
+  <div>
     <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Driving Off
+    </h3>
     <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <div>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
-      </div>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>
