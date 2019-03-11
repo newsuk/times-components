@@ -591,6 +591,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            standfirst
           }
         }
         leader2 {
@@ -598,6 +599,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            standfirst
           }
         }
         leader3 {
@@ -605,6 +607,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            standfirst
           }
         }
       }
