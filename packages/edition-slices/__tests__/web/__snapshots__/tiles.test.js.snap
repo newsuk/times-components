@@ -887,38 +887,42 @@ exports[`23. tile x 1`] = `
 
 exports[`24. tile y 1`] = `
 <Link
-  linkStyle={null}
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <div>
-        <span>
-          
-          ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-          ...
-        </span>
-      </div>
-      <div>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
-      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Driving Off
+    </h3>
+    <div>
+      <span>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </span>
+    </div>
+    <div>
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>
