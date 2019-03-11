@@ -1,6 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one and one tablet slice 1`] = `
+exports[`1. daily universal register tablet slice 1`] = `
+<div>
+  <div>
+    <Image
+      aspectRatio={5.74}
+      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+    />
+    <div>
+      Daily Universal Register
+    </div>
+    <TileS />
+    <div />
+    <TileS />
+    <div />
+    <Image
+      aspectRatio={1}
+      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+    />
+    <TileS />
+    <div />
+    <Image
+      aspectRatio={1}
+      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+    />
+    <TileS />
+  </div>
+</div>
+`;
+
+exports[`2. lead one and one tablet slice 1`] = `
 <div>
   <div>
     <TileU
@@ -13,7 +42,7 @@ exports[`1. lead one and one tablet slice 1`] = `
 </div>
 `;
 
-exports[`2. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -21,7 +50,7 @@ exports[`2. lead one full width tablet slice 1`] = `
 </div>
 `;
 
-exports[`3. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice 1`] = `
 <div>
   <div>
     <TileX
@@ -43,7 +72,7 @@ exports[`3. lead two no pic and two tablet slice 1`] = `
 </div>
 `;
 
-exports[`4. secondary one tablet slice 1`] = `
+exports[`5. secondary one tablet slice 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -51,7 +80,7 @@ exports[`4. secondary one tablet slice 1`] = `
 </div>
 `;
 
-exports[`5. secondary four tablet slice 1`] = `
+exports[`6. secondary four tablet slice 1`] = `
 <div>
   <div>
     <div>
@@ -83,7 +112,7 @@ exports[`5. secondary four tablet slice 1`] = `
 </div>
 `;
 
-exports[`6. secondary one and columnist 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <div>
   <div>
     <div>
@@ -101,7 +130,7 @@ exports[`6. secondary one and columnist 1`] = `
 </div>
 `;
 
-exports[`7. secondary two and two slice 1`] = `
+exports[`8. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
@@ -131,7 +160,7 @@ exports[`7. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`8. secondary two no pic and two slice 1`] = `
+exports[`9. secondary two no pic and two slice 1`] = `
 <div>
   <div>
     <div>
