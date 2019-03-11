@@ -5,7 +5,7 @@ import Image from "@times-components/image";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import propTypes from "./proptypes";
 import styles from "./styles";
-import withTileTracking from "../../tiles/shared/tile-tracking-events";
+import withTracking from "./puzzle-tracking-events";
 
 const Puzzle = ({ onPress, slice: { title, url, image } }) => {
   const { main, header, headLine, body } = styles;
@@ -26,4 +26,4 @@ const Puzzle = ({ onPress, slice: { title, url, image } }) => {
 
 Puzzle.propTypes = propTypes;
 
-export default withTileTracking(Puzzle);
+export default withTracking(Puzzle);

@@ -29,14 +29,14 @@ class Section extends Component {
 
   render() {
     const {
-      onPress,
+      onArticlePress,
+      onPuzzlePress,
       publicationName,
-      section: { slices, title },
+      section: { name, slices },
       onViewed,
       receiveChildList
     } = this.props;
-
-    const showSeparator = title !== "Puzzles";
+    const isPuzzle = name === "PuzzleSection";
 
     const data = slices.map((slice, index) => ({
       ...slice,
@@ -49,7 +49,7 @@ class Section extends Component {
         <FlatList
           data={data}
           ItemSeparatorComponent={
-            showSeparator &&
+            !isPuzzle &&
             (() => (
               <View style={styles.listItemSeparatorContainer}>
                 <SectionItemSeparator />
@@ -63,7 +63,7 @@ class Section extends Component {
               <Slice
                 index={index}
                 length={slices.length}
-                onPress={onPress}
+                onPress={isPuzzle ? onPuzzlePress : onArticlePress}
                 slice={slice}
               />
             </Context.Provider>
@@ -79,7 +79,8 @@ class Section extends Component {
 }
 
 Section.propTypes = {
-  onPress: PropTypes.func,
+  onArticlePress: PropTypes.func,
+  onPuzzlePress: PropTypes.func,
   onViewed: PropTypes.func,
   publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
@@ -87,7 +88,8 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
-  onPress: () => {},
+  onArticlePress: () => {},
+  onPuzzlePress: () => {},
   onViewed: () => {},
   receiveChildList: () => {}
 };

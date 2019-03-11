@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.16.22...@times-components/pages@1.17.0) (2019-03-08)
+
+
+### Features
+
+* section press events ([#1784](https://github.com/newsuk/times-components/issues/1784)) ([c51f59b](https://github.com/newsuk/times-components/commit/c51f59b))
+
+
+
+
+
 ## [1.16.22](https://github.com/newsuk/times-components/compare/@times-components/pages@1.16.21...@times-components/pages@1.16.22) (2019-03-08)
 
 **Note:** Version bump only for package @times-components/pages

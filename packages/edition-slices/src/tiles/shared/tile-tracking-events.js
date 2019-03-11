@@ -7,7 +7,7 @@ export default Component =>
         actionName: "Pressed",
         eventName: "onPress",
         getAttrs: ({
-          tile: { article: { headline, id, shortHeadline, url } } = {
+          tile: { article: { headline, id, shortHeadline, url } = {} } = {
             article: {}
           },
           tileName
