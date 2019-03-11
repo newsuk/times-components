@@ -2,28 +2,30 @@
 
 exports[`1. daily universal register slice 1`] = `
 <div>
-  <Image
-    aspectRatio={5.74}
-    uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-  />
   <div>
-    Daily Universal Register
+    <Image
+      aspectRatio={5.74}
+      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+    />
+    <div>
+      Daily Universal Register
+    </div>
+    <TileS />
+    <div />
+    <TileS />
+    <div />
+    <Image
+      aspectRatio={1}
+      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+    />
+    <TileS />
+    <div />
+    <Image
+      aspectRatio={1}
+      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+    />
+    <TileS />
   </div>
-  <TileS />
-  <div />
-  <TileS />
-  <div />
-  <Image
-    aspectRatio={1}
-    uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-  />
-  <TileS />
-  <div />
-  <Image
-    aspectRatio={1}
-    uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-  />
-  <TileS />
 </div>
 `;
 
