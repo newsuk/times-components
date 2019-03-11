@@ -13,8 +13,8 @@ import Responsive from "@times-components/responsive";
 import { iterator } from "@times-components/test-utils";
 import { setIsTablet } from "@times-components/test-utils/dimensions";
 
-import ArticleMagazineComment from "../src/article-magazine-comment";
-import sharedProps from "./shared-props";
+import ArticleMainStandard from "../src/article-main-standard";
+import articleProps from "./shared-article-props";
 import articleFixture from "../fixtures/full-article";
 
 export default () => {
@@ -30,14 +30,14 @@ export default () => {
 
   const tests = [
     {
-      name: "Article Magazine Comment - Tablet",
+      name: "Article Main Standard - Tablet",
       test() {
         setIsTablet(true);
 
         const testInstance = TestRenderer.create(
           <Responsive>
-            <ArticleMagazineComment
-              {...sharedProps}
+            <ArticleMainStandard
+              {...articleProps}
               article={articleFixture()}
             />
           </Responsive>

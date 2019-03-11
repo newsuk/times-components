@@ -30,7 +30,7 @@ export default () => {
 
   const tests = [
     {
-      name: "Article In Depth - Tablet",
+      name: "Article Magazine Standard - Tablet",
       test() {
         setIsTablet(true);
 

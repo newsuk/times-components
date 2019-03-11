@@ -53,6 +53,16 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "loading",
+    test() {
+      const output = renderComponent(
+        <ArticleMainStandard {...articleProps} isLoading />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "an error",
     test() {
       const props = {
