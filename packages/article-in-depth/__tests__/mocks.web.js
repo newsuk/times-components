@@ -14,3 +14,4 @@ jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/link", () => "Link");
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
+jest.mock("@times-components/video-label", () => "VideoLabel");

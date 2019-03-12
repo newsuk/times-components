@@ -11,7 +11,7 @@ exports[`1. article standfirst with content 1`] = `
 
 exports[`2. article standfirst with no content 1`] = `null`;
 
-exports[`3. article label uses default section colour 1`] = `
+exports[`3. article label uses a colour if override is provided 1`] = `
 <div>
   <div>
     RANDOM LABEL
@@ -19,9 +19,18 @@ exports[`3. article label uses default section colour 1`] = `
 </div>
 `;
 
-exports[`4. article label renders null if there is no text 1`] = `null`;
+exports[`4. article label uses the video label when isvideo is truthy 1`] = `
+<div>
+  <VideoLabel
+    color="#1D1D1B"
+    title="Random Label"
+  />
+</div>
+`;
 
-exports[`5. article meta uses default section colour 1`] = `
+exports[`5. article label renders null if there is no text 1`] = `null`;
+
+exports[`6. article meta uses default section colour 1`] = `
 <div>
   <div>
     <ArticleBylineWithLinks

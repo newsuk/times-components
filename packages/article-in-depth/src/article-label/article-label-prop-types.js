@@ -8,7 +8,7 @@ const articleLabelPropTypes = {
 };
 
 const articleLabelDefaultProps = {
-  color: colours.functional.white,
+  color: colours.section.default,
   isVideo: false,
   label: null
 };

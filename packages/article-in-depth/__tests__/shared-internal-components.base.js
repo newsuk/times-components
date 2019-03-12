@@ -27,16 +27,21 @@ const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "article label uses default section colour",
+    name: "article label uses a colour if override is provided",
     test() {
       const output = renderComponent(
-        <Context.Provider
-          value={{
-            theme: { sectionColour: null }
-          }}
-        >
-          <Label label="Random Label" />
-        </Context.Provider>
+
+          <Label label="Random Label" color="#000000" />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "article label uses the video label when isVideo is truthy",
+    test() {
+      const output = renderComponent(
+          <Label label="Random Label" isVideo />
       );
 
       expect(output).toMatchSnapshot();

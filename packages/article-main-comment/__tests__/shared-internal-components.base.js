@@ -51,6 +51,14 @@ const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "article label shows video label is isVideo is truthy",
+    test() {
+      const output = renderComponent(<Label label="Random Label" isVideo />);
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "article meta",
     test() {
       const output = renderComponent(

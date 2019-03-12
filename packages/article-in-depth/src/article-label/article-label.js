@@ -17,7 +17,7 @@ const HeaderLabel = ({ color, isVideo, label }) => {
 
   return (
     <View style={styles.label}>
-      <Label color={color || colours.section.default} title={label} />
+      <Label color={color} title={label} />
     </View>
   );
 };
