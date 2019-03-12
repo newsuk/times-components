@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {
@@ -42,7 +42,7 @@
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.2",
     "@times-components/styleguide": "3.25.1",
-    "@times-components/test-utils": "2.2.8",
+    "@times-components/test-utils": "2.2.9",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -68,7 +68,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.25.1",
+    "@times-components/styleguide": "3.25.2",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },

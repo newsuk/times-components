@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.6...@times-components/article-skeleton@0.14.7) (2019-03-12)
+
+
+### Bug Fixes
+
+* update max width so that gutters do not show on landscape iPad Pro 11" ([#1793](https://github.com/newsuk/times-components/issues/1793)) ([a0fef36](https://github.com/newsuk/times-components/commit/a0fef36))
+
+
+
+
+
 ## [0.14.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@0.14.5...@times-components/article-skeleton@0.14.6) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton
