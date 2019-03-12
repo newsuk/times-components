@@ -618,7 +618,77 @@ exports[`8. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary two no pic and two slice 1`] = `
+exports[`9. lead one and four slice 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS2 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS4 S1"
+>
+  <TileAC
+    tileName="lead"
+  />
+  <div
+    className="S1"
+  >
+    <TileAD
+      tileName="support1"
+    />
+    <div
+      className="IS1 S1"
+    />
+    <TileAD
+      tileName="support2"
+    />
+    <div
+      className="IS2 S1"
+    />
+    <TileAD
+      tileName="support3"
+    />
+    <div
+      className="IS3 S1"
+    />
+    <TileAD
+      tileName="support4"
+    />
+  </div>
+</div>
+`;
+
+exports[`10. secondary two no pic and two slice 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

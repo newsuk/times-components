@@ -133,7 +133,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
   style={
     Object {
       "marginBottom": 10,
-      "maxWidth": 1180,
+      "maxWidth": 1194,
     }
   }
 >
@@ -206,7 +206,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
   style={
     Object {
       "marginBottom": 10,
-      "maxWidth": 1180,
+      "maxWidth": 1194,
     }
   }
 >

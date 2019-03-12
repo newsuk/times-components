@@ -658,11 +658,7 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-Array [
-  <TileI
-    tileName="lead"
-  />,
-  <style>
+<style>
 .S1 {
   margin-bottom: 0px;
 }
@@ -687,34 +683,48 @@ Array [
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.IS4 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
+  className="IS4 S1"
+>
+  <TileAC
+    tileName="lead"
+  />
+  <div
     className="S1"
   >
-    <TileJ
+    <TileAD
       tileName="support1"
     />
     <div
       className="IS1 S1"
     />
-    <TileJ
+    <TileAD
       tileName="support2"
     />
     <div
       className="IS2 S1"
     />
-    <TileJ
+    <TileAD
       tileName="support3"
     />
     <div
       className="IS3 S1"
     />
-    <TileJ
+    <TileAD
       tileName="support4"
     />
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`5. lead two no pic and two 1`] = `

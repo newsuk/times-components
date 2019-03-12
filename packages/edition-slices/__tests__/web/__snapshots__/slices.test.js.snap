@@ -185,28 +185,28 @@ exports[`3. lead one and one slice 1`] = `
 `;
 
 exports[`4. lead one and four slice 1`] = `
-Array [
-  <TileI
+<div>
+  <TileAC
     tileName="lead"
-  />,
+  />
   <div>
-    <TileJ
+    <TileAD
       tileName="support1"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support2"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support3"
     />
     <div />
-    <TileJ
+    <TileAD
       tileName="support4"
     />
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`5. lead two no pic and two 1`] = `
