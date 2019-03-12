@@ -2,10 +2,11 @@ import {
   colours,
   spacing,
   fonts,
-  fontSizes
+  fontSizes,
+  editionBreakpoints
 } from "@times-components/styleguide";
 
-const styles = {
+const smallBreakpointStyles = {
   container: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
@@ -34,4 +35,16 @@ const styles = {
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  container: {
+    alignItems: "center",
+    backgroundColor: colours.functional.border,
+    flex: 1,
+    paddingHorizontal: "20%"
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : { ...smallBreakpointStyles, ...mediumBreakpointStyles };

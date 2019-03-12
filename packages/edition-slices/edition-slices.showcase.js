@@ -70,7 +70,7 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
 const sliceStories = [
   {
     mock: mockDailyRegisterSlice(),
-    name: "Daily Register Lead Four (S,S,S,S)",
+    name: "Daily Register Lead Four (Mobile, Tablet: S,S,S,S)",
     Slice: DailyRegisterLeadFourSlice
   },
   {

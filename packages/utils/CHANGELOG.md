@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.1](https://github.com/newsuk/times-components/compare/@times-components/utils@4.7.0...@times-components/utils@4.7.1) (2019-03-12)
+
+
+### Bug Fixes
+
+* inappropriate text wrapping during layout calculation ([#1791](https://github.com/newsuk/times-components/issues/1791)) ([bf836b8](https://github.com/newsuk/times-components/commit/bf836b8))
+
+
+
+
+
 # [4.7.0](https://github.com/newsuk/times-components/compare/@times-components/utils@4.6.1...@times-components/utils@4.7.0) (2019-03-05)
 
 
