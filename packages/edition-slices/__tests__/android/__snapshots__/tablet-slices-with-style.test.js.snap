@@ -176,41 +176,64 @@ exports[`4. lead two no pic and two tablet slice 1`] = `
     }
   }
 >
-  <View>
-    <TileX />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "paddingHorizontal": 20,
+      }
+    }
+  >
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+          "width": "50%",
         }
       }
-    />
-    <TileY />
+    >
+      <TileX />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileY />
+    </View>
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginHorizontal": 10,
+          "marginVertical": 10,
         }
       }
     />
-    <TileD />
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
+          "width": "50%",
         }
       }
-    />
-    <TileZ />
+    >
+      <TileD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileZ />
+    </View>
   </View>
 </View>
 `;
