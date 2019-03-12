@@ -46,7 +46,6 @@ exports[`1. tile a 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -155,7 +154,6 @@ exports[`2. tile b 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -358,7 +356,6 @@ exports[`4. tile d 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -466,7 +463,6 @@ exports[`5. tile e 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -588,7 +584,6 @@ exports[`6. tile f 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -720,7 +715,6 @@ exports[`7. tile g 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -871,7 +865,6 @@ exports[`8. tile h 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -997,7 +990,6 @@ exports[`9. tile i 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1094,7 +1086,6 @@ exports[`10. tile j 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1185,7 +1176,6 @@ exports[`11. tile l 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1264,9 +1254,7 @@ exports[`12. tile m 1`] = `
 }
 </style>
 
-<Link
-  linkStyle={null}
->
+<Link>
   <div
     className="S4"
   >
@@ -1359,7 +1347,6 @@ exports[`13. tile n 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1460,7 +1447,6 @@ exports[`14. tile o 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1610,7 +1596,6 @@ exports[`15. tile p 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1700,7 +1685,6 @@ exports[`16. tile q 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1761,7 +1745,6 @@ exports[`17. tile r 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -1973,7 +1956,6 @@ exports[`19. tile t 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2075,7 +2057,6 @@ exports[`20. tile u 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2171,7 +2152,6 @@ exports[`21. tile v 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2294,7 +2274,6 @@ exports[`22. tile w 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2430,7 +2409,6 @@ exports[`23. tile x 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2643,7 +2621,6 @@ exports[`25. tile z 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2743,7 +2720,6 @@ exports[`26. tile aa 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -2888,7 +2864,6 @@ exports[`27. tile ab 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
@@ -3025,7 +3000,6 @@ exports[`28. tile ae 1`] = `
 </style>
 
 <Link
-  linkStyle={null}
   url="/article/123"
 >
   <div
