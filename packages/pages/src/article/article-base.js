@@ -6,13 +6,12 @@ import { themeFactory } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
 import filterInteractives from "./filter-interactives";
+import trackArticle from "./track-article";
 
 const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
 
-const { track } = NativeModules.ReactAnalytics;
 const {
   onArticlePress,
-  onArticleLoaded,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -60,13 +59,7 @@ const ArticleBase = ({
     <Context.Provider value={{ theme }}>
       <Article
         adConfig={adConfig}
-        analyticsStream={event => {
-          if (event.object === "Article" && event.action === "Viewed") {
-            onArticleLoaded(event.attrs.articleId, event);
-          } else {
-            track(event);
-          }
-        }}
+        analyticsStream={trackArticle}
         article={showInteractives ? article : filterInteractives(article)}
         error={omitErrors ? null : error}
         interactiveConfig={interactiveConfig}
