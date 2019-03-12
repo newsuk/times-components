@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "2.5.14",
+  "version": "2.5.15",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.25.1",
-    "@times-components/utils": "4.7.0",
+    "@times-components/utils": "4.7.1",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
