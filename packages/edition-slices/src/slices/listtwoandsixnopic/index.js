@@ -48,12 +48,7 @@ const ListTwoAndSixNoPicSlice = ({
   );
 
   return (
-    <ResponsiveSlice
-      renderHuge={() => null}
-      renderMedium={renderSlice}
-      renderSmall={renderSlice}
-      renderWide={() => null}
-    />
+    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
   );
 };
 

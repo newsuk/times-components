@@ -16,11 +16,27 @@ const ResponsiveSlice = ({
         case editionBreakpoints.small:
           return renderSmall(editionBreakpoint);
         case editionBreakpoints.medium:
-          return <Gutter>{renderMedium(editionBreakpoint)}</Gutter>;
+          return (
+            <Gutter>
+              {(renderMedium && renderMedium(editionBreakpoint)) ||
+                renderSmall(editionBreakpoint)}
+            </Gutter>
+          );
         case editionBreakpoints.wide:
-          return <Gutter>{renderWide(editionBreakpoint)}</Gutter>;
+          return (
+            <Gutter>
+              {(renderWide && renderWide(editionBreakpoint)) ||
+                (renderMedium && renderMedium(editionBreakpoint))}
+            </Gutter>
+          );
         case editionBreakpoints.huge:
-          return <Gutter>{renderHuge(editionBreakpoint)}</Gutter>;
+          return (
+            <Gutter>
+              {(renderHuge && renderHuge(editionBreakpoint)) ||
+                (renderWide && renderWide(editionBreakpoint)) ||
+                (renderMedium && renderMedium(editionBreakpoint))}
+            </Gutter>
+          );
         default:
           return renderSmall(editionBreakpoint);
       }

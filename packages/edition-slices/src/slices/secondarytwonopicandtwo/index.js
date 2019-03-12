@@ -9,7 +9,6 @@ const SecondaryTwoNoPicAndTwo = ({
   slice: { secondary1, secondary2, support1, support2 }
 }) => (
   <ResponsiveSlice
-    renderHuge={() => null}
     renderMedium={editionBreakpoint => (
       <SecondaryTwoNoPicAndTwoSlice
         breakpoint={editionBreakpoint}
@@ -44,7 +43,6 @@ const SecondaryTwoNoPicAndTwo = ({
         )}
       />
     )}
-    renderWide={() => null}
   />
 );
 

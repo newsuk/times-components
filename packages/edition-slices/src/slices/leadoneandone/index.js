@@ -6,7 +6,6 @@ import { ResponsiveSlice } from "../shared";
 
 const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
   <ResponsiveSlice
-    renderHuge={() => null}
     renderMedium={editionBreakpoint => (
       <LeadOneAndOneSlice
         breakpoint={editionBreakpoint}
@@ -29,7 +28,6 @@ const LeadOneAndOne = ({ onPress, slice: { lead, support } }) => (
         )}
       />
     )}
-    renderWide={() => null}
   />
 );
 

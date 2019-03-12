@@ -689,6 +689,107 @@ exports[`10. secondary two no pic and two slice 1`] = `
 </View>
 `;
 
+exports[`10. daily universal register tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "paddingHorizontal": "20%",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 73,
+          "marginVertical": 10,
+          "width": 285,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "marginVertical": 25,
+        }
+      }
+    >
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
+`;
+
 exports[`11. lead one and one tablet slice - wide 1`] = `
 <View
   style={
@@ -698,7 +799,46 @@ exports[`11. lead one and one tablet slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "70%",
+        }
+      }
+    >
+      <TileU />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`12. lead one full width tablet slice - wide 1`] = `
@@ -710,7 +850,9 @@ exports[`12. lead one full width tablet slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <TileR />
+</View>
 `;
 
 exports[`13. lead two no pic and two tablet slice - wide 1`] = `
@@ -722,7 +864,44 @@ exports[`13. lead two no pic and two tablet slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View>
+    <TileX />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileY />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileD />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileZ />
+  </View>
+</View>
 `;
 
 exports[`14. secondary one tablet slice - wide 1`] = `
@@ -734,7 +913,9 @@ exports[`14. secondary one tablet slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <TileW />
+</View>
 `;
 
 exports[`15. secondary four tablet slice - wide 1`] = `
@@ -746,7 +927,87 @@ exports[`15. secondary four tablet slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`16. secondary one and columnist - wide 1`] = `
@@ -758,7 +1019,48 @@ exports[`16. secondary one and columnist - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 10,
+          "width": "33%",
+        }
+      }
+    >
+      <TileAA />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "width": "67%",
+        }
+      }
+    >
+      <TileAB />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`17. secondary two and two slice - wide 1`] = `
@@ -770,7 +1072,103 @@ exports[`17. secondary two and two slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileV />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileV />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileG />
+      </View>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`18. secondary two no pic and two slice - wide 1`] = `
@@ -782,7 +1180,195 @@ exports[`18. secondary two no pic and two slice - wide 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`19. daily universal register tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "paddingHorizontal": "20%",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "height": 73,
+          "marginVertical": 10,
+          "width": 285,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "marginVertical": 25,
+        }
+      }
+    >
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginBottom": 25,
+          "marginHorizontal": 10,
+          "width": "100%",
+        }
+      }
+    />
+    <Image
+      style={
+        Object {
+          "height": 45,
+          "width": 60,
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
 `;
 
 exports[`20. lead one and one tablet slice - huge 1`] = `
@@ -794,7 +1380,46 @@ exports[`20. lead one and one tablet slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "70%",
+        }
+      }
+    >
+      <TileU />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`21. lead one full width tablet slice - huge 1`] = `
@@ -806,7 +1431,9 @@ exports[`21. lead one full width tablet slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <TileR />
+</View>
 `;
 
 exports[`22. lead two no pic and two tablet slice - huge 1`] = `
@@ -818,7 +1445,44 @@ exports[`22. lead two no pic and two tablet slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View>
+    <TileX />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileY />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileD />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <TileZ />
+  </View>
+</View>
 `;
 
 exports[`23. secondary one tablet slice - huge 1`] = `
@@ -830,7 +1494,9 @@ exports[`23. secondary one tablet slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <TileW />
+</View>
 `;
 
 exports[`24. secondary four tablet slice - huge 1`] = `
@@ -842,7 +1508,87 @@ exports[`24. secondary four tablet slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "width": "25%",
+        }
+      }
+    >
+      <TileC />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`25. secondary one and columnist - huge 1`] = `
@@ -854,7 +1600,48 @@ exports[`25. secondary one and columnist - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingLeft": 10,
+          "paddingTop": 10,
+          "width": "33%",
+        }
+      }
+    >
+      <TileAA />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "width": "67%",
+        }
+      }
+    >
+      <TileAB />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`26. secondary two and two slice - huge 1`] = `
@@ -866,7 +1653,103 @@ exports[`26. secondary two and two slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileV />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileV />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <TileG />
+      </View>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`27. secondary two no pic and two slice - huge 1`] = `
@@ -878,5 +1761,92 @@ exports[`27. secondary two no pic and two slice - huge 1`] = `
       "width": 1366,
     }
   }
-/>
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAE />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileG />
+    </View>
+  </View>
+</View>
 `;

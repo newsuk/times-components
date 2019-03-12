@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register tablet slice 1`] = `
+exports[`1. daily universal register tablet slice - medium 1`] = `
 <View>
   <View>
     <Image
@@ -41,7 +41,7 @@ exports[`1. daily universal register tablet slice 1`] = `
 </View>
 `;
 
-exports[`2. lead one and one tablet slice 1`] = `
+exports[`2. lead one and one tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -59,7 +59,7 @@ exports[`2. lead one and one tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice - medium 1`] = `
 <View>
   <TileR
     tileName="lead"
@@ -67,7 +67,7 @@ exports[`3. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -93,7 +93,7 @@ exports[`4. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary one tablet slice 1`] = `
+exports[`5. secondary one tablet slice - medium 1`] = `
 <View>
   <TileW
     tileName="secondary"
@@ -101,7 +101,7 @@ exports[`5. secondary one tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary four tablet slice 1`] = `
+exports[`6. secondary four tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -131,7 +131,7 @@ exports[`6. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`7. secondary one and columnist - medium 1`] = `
 <View>
   <View>
     <View>
@@ -149,7 +149,7 @@ exports[`7. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`8. secondary two and two slice 1`] = `
+exports[`8. secondary two and two slice - medium 1`] = `
 <View>
   <View>
     <View>

@@ -105,7 +105,13 @@ exports[`1. secondary one and four slice 2`] = `
 </div>
 `;
 
-exports[`2. lead one full width slice 1`] = `<div />`;
+exports[`2. lead one full width slice 1`] = `
+<div>
+  <TileR
+    tileName="lead"
+  />
+</div>
+`;
 
 exports[`2. leaders slice 1`] = `
 <div>
@@ -165,7 +171,23 @@ exports[`2. leaders slice 2`] = `
 </div>
 `;
 
-exports[`3. lead one and one slice 1`] = `<div />`;
+exports[`3. lead one and one slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileU
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="support"
+      />
+    </div>
+  </div>
+</div>
+`;
 
 exports[`4. lead one and four slice 1`] = `
 <div>
@@ -192,13 +214,83 @@ exports[`4. lead one and four slice 1`] = `
 </div>
 `;
 
-exports[`5. lead two no pic and two 1`] = `<div />`;
+exports[`5. lead two no pic and two 1`] = `
+<div>
+  <div>
+    <TileX
+      tileName="lead1"
+    />
+    <div />
+    <TileY
+      tileName="lead2"
+    />
+    <div />
+    <TileD
+      tileName="support1"
+    />
+    <div />
+    <TileZ
+      tileName="support2"
+    />
+  </div>
+</div>
+`;
 
-exports[`6. secondary one slice 1`] = `<div />`;
+exports[`6. secondary one slice 1`] = `
+<div>
+  <TileW
+    tileName="secondary"
+  />
+</div>
+`;
 
-exports[`7. secondary one and columnist slice 1`] = `<div />`;
+exports[`7. secondary one and columnist slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAA
+        tileName="secondary"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAB
+        tileName="columnist"
+      />
+    </div>
+  </div>
+</div>
+`;
 
-exports[`8. secondary four slice 1`] = `<div />`;
+exports[`8. secondary four slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileC
+        tileName="secondary1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="secondary2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="secondary3"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="secondary4"
+      />
+    </div>
+  </div>
+</div>
+`;
 
 exports[`9. secondary one and four slice 1`] = `
 <div>
@@ -238,11 +330,129 @@ exports[`9. secondary one and four slice 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two slice 1`] = `<div />`;
+exports[`10. secondary two and two slice 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <TileV
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileV
+          tileName="secondary2"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        <TileG
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          tileName="support2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
-exports[`11. secondary two no pic and two slice 1`] = `<div />`;
+exports[`11. secondary two no pic and two slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAE
+        tileName="secondary1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      <TileG
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileG
+        tileName="support2"
+      />
+    </div>
+  </div>
+</div>
+`;
 
-exports[`12. list two and six no pic slice 1`] = `<div />`;
+exports[`12. list two and six no pic slice 1`] = `
+<div>
+  <div>
+    <div>
+      <TileC
+        tileName="lead1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="lead2"
+      />
+    </div>
+    <div />
+    <div>
+      <div>
+        <TileL
+          tileName="support1"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support2"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support3"
+        />
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        <TileL
+          tileName="support4"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support5"
+        />
+        <div />
+      </div>
+      <div>
+        <TileL
+          tileName="support6"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`13. leaders slice 1`] = `
 <div>
