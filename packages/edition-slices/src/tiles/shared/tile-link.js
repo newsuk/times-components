@@ -23,7 +23,7 @@ TileLink.propTypes = {
 };
 
 TileLink.defaultProps = {
-  style: {}
+  style: null
 };
 
 export default TileLink;

@@ -754,8 +754,7 @@ exports[`10. tile j 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 10,
-        "paddingTop": 10,
+        "padding": 10,
       }
     }
   >
@@ -771,7 +770,6 @@ exports[`10. tile j 1`] = `
     <View
       style={
         Object {
-          "paddingBottom": 5,
           "paddingHorizontal": 10,
           "width": "60%",
         }
