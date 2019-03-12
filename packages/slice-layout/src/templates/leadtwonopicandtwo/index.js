@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 
 import Column from "../column";
-import { ItemColSeparator, ItemRowSeparator } from "../shared";
+import { ItemColSeparator } from "../shared";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles";
 
@@ -24,17 +24,9 @@ const LeadTwoNoPicAndTwoSlice = ({
 
   return (
     <View style={styles.container}>
-      <View style={styles.column}>
-        {renderLead1()}
-        <ItemRowSeparator />
-        {renderLead2()}
-      </View>
+      <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
       <ItemColSeparator />
-      <View style={styles.column}>
-        {renderSupport1()}
-        <ItemRowSeparator />
-        {renderSupport2()}
-      </View>
+      <Column style={styles.column} tiles={[renderSupport1, renderSupport2]} />
     </View>
   );
 };
