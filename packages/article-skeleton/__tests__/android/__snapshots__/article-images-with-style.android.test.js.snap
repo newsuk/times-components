@@ -17,7 +17,7 @@ exports[`1. a secondary image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -29,7 +29,7 @@ exports[`1. a secondary image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -45,7 +45,7 @@ exports[`1. a secondary image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -57,7 +57,7 @@ exports[`1. a secondary image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -86,7 +86,7 @@ exports[`2. an inline image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -98,7 +98,7 @@ exports[`2. an inline image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
@@ -114,7 +114,7 @@ exports[`2. an inline image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         />
@@ -126,7 +126,7 @@ exports[`2. an inline image 1`] = `
               "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1180,
+              "width": 1194,
             }
           }
         >
