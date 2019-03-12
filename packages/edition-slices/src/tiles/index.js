@@ -1,4 +1,6 @@
 export { default as TileA } from "./tile-a";
+export { default as TileAC } from "./tile-ac";
+export { default as TileAD } from "./tile-ad";
 export { default as TileAE } from "./tile-ae";
 export { default as TileB } from "./tile-b";
 export { default as TileC } from "./tile-c";

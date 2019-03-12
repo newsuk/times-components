@@ -24,3 +24,31 @@ Array [
   </View>,
 ]
 `;
+
+exports[`2. tablet - lead one and four 1`] = `
+<View>
+  <View>
+    <Text>
+      lead
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-1
+    </Text>
+    <View />
+    <Text>
+      support-2
+    </Text>
+    <View />
+    <Text>
+      support-3
+    </Text>
+    <View />
+    <Text>
+      support-4
+    </Text>
+  </View>
+</View>
+`;

@@ -1079,14 +1079,13 @@ exports[`10. tile j 1`] = `
 .IS4 {
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 5px;
   width: 60%;
 }
 
 .IS5 {
+  padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
 }
 </style>
 

@@ -51,3 +51,88 @@ Array [
   </View>,
 ]
 `;
+
+exports[`2. tablet - lead one and four 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "paddingHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "padding": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <Text>
+      lead
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      support-2
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      support-3
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      support-4
+    </Text>
+  </View>
+</View>
+`;

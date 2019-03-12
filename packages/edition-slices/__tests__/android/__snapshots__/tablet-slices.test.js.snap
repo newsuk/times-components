@@ -179,7 +179,37 @@ exports[`8. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`9. secondary two no pic and two slice 1`] = `
+exports[`9. lead one and four slice 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAC
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAD
+        tileName="support1"
+      />
+      <View />
+      <TileAD
+        tileName="support2"
+      />
+      <View />
+      <TileAD
+        tileName="support3"
+      />
+      <View />
+      <TileAD
+        tileName="support4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`10. secondary two no pic and two slice 1`] = `
 <View>
   <View>
     <View>

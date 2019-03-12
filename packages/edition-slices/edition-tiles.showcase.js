@@ -7,6 +7,8 @@ import {
 
 import {
   TileA,
+  TileAC,
+  TileAD,
   TileAE,
   TileB,
   TileC,
@@ -95,8 +97,18 @@ const tileStories = [
     Tile: TileI
   },
   {
+    name:
+      "Tile AC - Vertical, top image, centered aligned summary. Font size 30",
+    Tile: TileAC
+  },
+  {
     name: "Tile J - Horizontal, image left of article summary with 2:3 ratio",
     Tile: TileJ
+  },
+  {
+    name:
+      "Tile AD - Horizontal, image left of article summary with 2:3 ratio. Font size 20",
+    Tile: TileAD
   },
   {
     name: "Tile L - No image, 22pt headline, no teaser",

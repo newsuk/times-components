@@ -5,11 +5,12 @@ import Link from "@times-components/link";
 const TileLink = ({
   children,
   onPress,
+  style,
   tile: {
     article: { url }
   }
 }) => (
-  <Link onPress={e => onPress(e, { url })} url={url}>
+  <Link linkStyle={style} onPress={e => onPress(e, { url })} url={url}>
     {children}
   </Link>
 );
@@ -17,7 +18,12 @@ const TileLink = ({
 TileLink.propTypes = {
   children: PropTypes.node.isRequired,
   onPress: PropTypes.func.isRequired,
+  style: PropTypes.shape({}),
   tile: PropTypes.shape({}).isRequired
+};
+
+TileLink.defaultProps = {
+  style: {}
 };
 
 export default TileLink;
