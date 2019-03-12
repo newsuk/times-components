@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.5](https://github.com/newsuk/times-components/compare/@times-components/provider@1.14.4...@times-components/provider@1.14.5) (2019-03-12)
+
+
+### Bug Fixes
+
+* Tablet (768) slices ([#1792](https://github.com/newsuk/times-components/issues/1792)) ([23323bd](https://github.com/newsuk/times-components/commit/23323bd))
+
+
+
+
+
 ## [1.14.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.14.3...@times-components/provider@1.14.4) (2019-03-08)
 
 **Note:** Version bump only for package @times-components/provider

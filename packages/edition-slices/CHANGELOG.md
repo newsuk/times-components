@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.36.0...@times-components/edition-slices@0.36.1) (2019-03-12)
+
+
+### Bug Fixes
+
+* Tablet (768) slices ([#1792](https://github.com/newsuk/times-components/issues/1792)) ([23323bd](https://github.com/newsuk/times-components/commit/23323bd))
+
+
+
+
+
 # [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.35.1...@times-components/edition-slices@0.36.0) (2019-03-12)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.22](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.21...@times-components/provider-test-tools@1.13.22) (2019-03-12)
+
+
+### Bug Fixes
+
+* Tablet (768) slices ([#1792](https://github.com/newsuk/times-components/issues/1792)) ([23323bd](https://github.com/newsuk/times-components/commit/23323bd))
+
+
+
+
+
 ## [1.13.21](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.20...@times-components/provider-test-tools@1.13.21) (2019-03-08)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
