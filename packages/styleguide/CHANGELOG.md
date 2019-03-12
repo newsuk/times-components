@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.25.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.25.1...@times-components/styleguide@3.25.2) (2019-03-12)
+
+
+### Bug Fixes
+
+* update max width so that gutters do not show on landscape iPad Pro 11" ([#1793](https://github.com/newsuk/times-components/issues/1793)) ([a0fef36](https://github.com/newsuk/times-components/commit/a0fef36))
+
+
+
+
+
 ## [3.25.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.25.0...@times-components/styleguide@3.25.1) (2019-03-01)
 
 **Note:** Version bump only for package @times-components/styleguide
