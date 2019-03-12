@@ -3,15 +3,12 @@ import { colours } from "@times-components/styleguide";
 import { defaultProps, propTypes } from "./gradient-prop-types";
 import GradientBase from "./gradient.base";
 
-const Gradient = ({ children, degrees, style }) => (
+const Gradient = props => (
   <GradientBase
-    degrees={degrees}
+    {...props}
     endColour={colours.functional.backgroundSecondary}
     startColour={colours.functional.backgroundPrimary}
-    style={style}
-  >
-    {children}
-  </GradientBase>
+  />
 );
 
 Gradient.propTypes = propTypes;

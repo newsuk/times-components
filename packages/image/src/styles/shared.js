@@ -16,7 +16,12 @@ const styles = {
   },
   image: {
     opacity: 1,
-    width: "100%"
+    /*
+     * Due to our use of SafeAreaView, on layout is called multiple times meaning
+     * the placeholder may appear outside of the bounds of the image momentarily
+     * causing a white flash. This prevents that from occurring
+     */
+    overflow: "hidden"
   },
   imageBackground: {
     height: "100%",
@@ -25,9 +30,12 @@ const styles = {
     zIndex: 1
   },
   imageContainer: {
+    alignItems: "center",
     flexGrow: 1,
     justifyContent: "center"
   },
+  imageFullHeight: { height: "100%" },
+  imageFullWidth: { width: "100%" },
   modal: {
     backgroundColor: colours.functional.brandColour,
     flexDirection: "column",

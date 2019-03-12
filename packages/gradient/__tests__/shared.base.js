@@ -1,6 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
-import { shallow } from "enzyme";
+import { ART, Text } from "react-native";
 import { iterator } from "@times-components/test-utils";
 import Gradient, { OverlayGradient } from "../src/gradient";
 import GradientBase from "../src/gradient.base";
@@ -53,20 +52,63 @@ export default renderMethod => {
       }
     },
     {
-      name:
-        "when receiving a width and height from native, the state is correctly set",
+      name: "gradient defaults to size of its container",
       test: () => {
-        const component = shallow(
+        const testRenderer = renderMethod(
           <GradientBase endColour="#FFFFFF" startColour="#000000" />
         );
-        component.instance().onLayout(
+        const testInstance = testRenderer.root;
+        const view = testInstance.find(child => !!child.props.onLayout);
+
+        view.props.onLayout(
           makeMessageEvent({
             height: 100,
             width: 100
           })
         );
-        expect(component.state().width).toEqual(100);
-        expect(component.state().height).toEqual(100);
+        const surface = testInstance.findByType(ART.Surface);
+
+        expect(surface.props).toEqual(
+          expect.objectContaining({ height: 100, width: 100 })
+        );
+      }
+    },
+    {
+      name: "can override gradient size with custom width and height",
+      test: () => {
+        const testRenderer = renderMethod(
+          <GradientBase
+            endColour="#FFFFFF"
+            height={200}
+            startColour="#000000"
+            width={300}
+          />
+        );
+        const testInstance = testRenderer.root;
+        const surface = testInstance.findByType(ART.Surface);
+
+        expect(surface.props).toEqual(
+          expect.objectContaining({ height: 200, width: 300 })
+        );
+      }
+    },
+    {
+      name: "does not use onLayout when custom width and height passed",
+      test: () => {
+        const testRenderer = renderMethod(
+          <GradientBase
+            endColour="#FFFFFF"
+            height={200}
+            startColour="#000000"
+            width={300}
+          />
+        );
+        const testInstance = testRenderer.root;
+        const onLayoutViews = testInstance.findAll(
+          child => !!child.props.onLayout
+        );
+
+        expect(onLayoutViews).toHaveLength(0);
       }
     }
   ];

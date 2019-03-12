@@ -32,6 +32,7 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
+      height: null,
       isLoaded: false,
       width: null
     };
@@ -41,8 +42,9 @@ class TimesImage extends Component {
 
   onImageLayout(evt) {
     const { onLayout } = this.props;
+    const { height, width } = evt.nativeEvent.layout;
 
-    this.setState({ width: evt.nativeEvent.layout.width });
+    this.setState({ height, width });
 
     if (onLayout) {
       onLayout(evt);
@@ -62,7 +64,7 @@ class TimesImage extends Component {
       style,
       uri
     } = this.props;
-    const { isLoaded, width } = this.state;
+    const { isLoaded, width, height } = this.state;
     const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
 
@@ -74,7 +76,7 @@ class TimesImage extends Component {
       >
         {isLoaded ? null : (
           <Fragment>
-            <Placeholder />
+            <Placeholder height={height} width={width} />
             {lowResSize ? (
               <Image
                 borderRadius={borderRadius}

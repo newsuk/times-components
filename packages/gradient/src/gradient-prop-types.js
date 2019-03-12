@@ -1,19 +1,17 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+import {
+  propTypes as sharedPropTypes,
+  defaultProps as sharedDefaultProps
+} from "./gradient-prop-types-shared";
 
 export const propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]),
-  degrees: PropTypes.number,
-  style: ViewPropTypesStyle
+  ...sharedPropTypes,
+  height: PropTypes.number,
+  width: PropTypes.number
 };
 
 export const defaultProps = {
-  children: null,
-  degrees: 265,
-  style: null
+  ...sharedDefaultProps,
+  height: 0,
+  width: 0
 };
