@@ -101,10 +101,22 @@ exports[`card with reversed layout 1`] = `
 }
 
 .IS2 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
   flex: 1;
 }
 
 .IS3 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
   flex: 1;
 }
 
