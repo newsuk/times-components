@@ -243,59 +243,55 @@ exports[`3. tile c 1`] = `
   line-height: 22px;
   padding-bottom: 5px;
 }
-
-.IS4 {
-  height: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS4 S3"
+    className="IS1 S1"
   >
-    <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </div>
+  <div
+    className="S3"
+  >
     <div
       className="S3"
     >
       <div
-        className="S3"
+        className="IS2 S2"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S4"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <div
-        className="S1"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
-      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S4"
+      role="heading"
+    >
+      Driving Off
+    </h3>
+    <div
+      className="S1"
+    >
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>
@@ -2526,61 +2522,58 @@ exports[`24. tile y 1`] = `
   font-size: 35px;
   line-height: 35px;
 }
-
-.IS3 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS3 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
-        className="S2"
+        className="IS1 S1"
       >
-        <div
-          className="IS1 S1"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      Driving Off
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
       >
-        Driving Off
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
-      </div>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
+    >
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </div>
   </div>
 </Link>

@@ -154,70 +154,60 @@ exports[`3. tile c 1`] = `
   <View
     style={
       Object {
-        "height": "100%",
-        "paddingHorizontal": 10,
-        "paddingTop": 10,
+        "marginBottom": 10,
+        "width": "100%",
       }
     }
   >
+    <Image />
+  </View>
+  <View>
     <View
       style={
         Object {
-          "marginBottom": 10,
-          "width": "100%",
+          "marginBottom": 0,
         }
       }
     >
-      <Image />
-    </View>
-    <View>
-      <View
+      <Text
         style={
           Object {
+            "color": "#005B8D",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
             "marginBottom": 0,
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "#005B8D",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "letterSpacing": 1.2,
-              "lineHeight": 14,
-              "marginBottom": 0,
-            }
-          }
-        >
-          LABEL
-        </Text>
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "900",
-            "lineHeight": 22,
-            "marginBottom": 5,
-            "paddingBottom": 5,
-          }
-        }
-      >
-        Driving Off
+        LABEL
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "900",
+          "lineHeight": 22,
+          "marginBottom": 5,
+          "paddingBottom": 5,
         }
-      >
-        <ArticleFlags />
-      </View>
+      }
+    >
+      Driving Off
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <ArticleFlags />
     </View>
   </View>
 </Link>
@@ -1836,79 +1826,70 @@ exports[`23. tile x 1`] = `
 
 exports[`24. tile y 1`] = `
 <Link>
-  <View
-    style={
-      Object {
-        "paddingHorizontal": 10,
-        "paddingTop": 10,
+  <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
       }
-    }
-  >
-    <View>
-      <View
+    >
+      <Text
         style={
           Object {
+            "color": "#005B8D",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 14,
             "marginBottom": 0,
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "#005B8D",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "letterSpacing": 1.2,
-              "lineHeight": 14,
-              "marginBottom": 0,
-            }
-          }
-        >
-          LABEL
-        </Text>
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 35,
-            "fontWeight": "900",
-            "lineHeight": 35,
-            "marginBottom": 5,
-          }
-        }
-      >
-        Driving Off
+        LABEL
       </Text>
-      <Text
-        style={
-          Object {
-            "color": "#696969",
-            "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 14,
-            "lineHeight": 20,
-            "marginBottom": 10,
-          }
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "fontWeight": "900",
+          "lineHeight": 35,
+          "marginBottom": 5,
         }
-      >
-        <Text>
-          
-          ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-          ...
-        </Text>
+      }
+    >
+      Driving Off
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
         }
-      >
-        <ArticleFlags />
-      </View>
+      }
+    >
+      <ArticleFlags />
     </View>
   </View>
 </Link>
