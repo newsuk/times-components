@@ -14,8 +14,7 @@ import {
   mockListTwoAndSixNoPicSlice,
   mockSecondaryOneAndFourSlice,
   mockSecondaryTwoAndTwoSlice,
-  mockSecondaryTwoNoPicAndTwoSlice,
-  mockPuzzleSlice
+  mockSecondaryTwoNoPicAndTwoSlice
 } from "@times-components/fixture-generator";
 import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
@@ -33,7 +32,6 @@ import {
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   LeadersSlice,
-  PuzzleSlice,
   DailyRegisterLeadFourSlice
 } from "./src/slices";
 
@@ -137,11 +135,6 @@ const sliceStories = [
     mock: mockCommentLeadAndCartoonSlice(),
     name: "Comment Lead And Cartoon (P,Q)",
     Slice: CommentLeadAndCartoonSlice
-  },
-  {
-    mock: mockPuzzleSlice(),
-    name: "Puzzle",
-    Slice: PuzzleSlice
   }
 ];
 

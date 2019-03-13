@@ -27,6 +27,23 @@ class Section extends Component {
       .map(viewableItem => onViewed(viewableItem.item, slices));
   }
 
+  splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) => {
+    return puzzles.reduce((slices, puzzle, index) => {
+      const sliceIndex = Math.floor(index / numberOfTilesPerSlice);
+      const { name, id } = puzzle;
+
+      slices[sliceIndex] = slices[sliceIndex] || { name, id };
+      slices[sliceIndex].tiles = [...(slices[sliceIndex].tiles || []), puzzle];
+
+      return slices;
+    }, []);
+  }
+
+  buildData = slices => slices.map((slice, index) => ({
+    ...slice,
+    elementId: `${slice.id}.${index}`
+  }));
+
   render() {
     const {
       onArticlePress,
@@ -37,11 +54,8 @@ class Section extends Component {
       receiveChildList
     } = this.props;
     const isPuzzle = name === "PuzzleSection";
+    const data = isPuzzle ? this.buildData(this.splitPuzzlesBySlices(slices)) : this.buildData(slices);
 
-    const data = slices.map((slice, index) => ({
-      ...slice,
-      elementId: `${slice.id}.${index}`
-    }));
     if (slices) receiveChildList(data);
 
     return (
@@ -88,10 +102,10 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
-  onArticlePress: () => {},
-  onPuzzlePress: () => {},
-  onViewed: () => {},
-  receiveChildList: () => {}
+  onArticlePress: () => { },
+  onPuzzlePress: () => { },
+  onViewed: () => { },
+  receiveChildList: () => { }
 };
 
 export default withTrackingContext(withTrackScrollDepth(Section));
