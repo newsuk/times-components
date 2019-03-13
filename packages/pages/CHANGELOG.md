@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.5](https://github.com/newsuk/times-components/compare/@times-components/pages@1.17.4...@times-components/pages@1.17.5) (2019-03-13)
+
+
+### Bug Fixes
+
+* iOS article load and section load analytics ([#1797](https://github.com/newsuk/times-components/issues/1797)) ([ba0c67e](https://github.com/newsuk/times-components/commit/ba0c67e))
+
+
+
+
+
 ## [1.17.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.17.3...@times-components/pages@1.17.4) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/pages
