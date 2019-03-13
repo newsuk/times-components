@@ -16,11 +16,7 @@ const ResponsiveSlice = ({
         case editionBreakpoints.small:
           return renderSmall(editionBreakpoint);
         case editionBreakpoints.medium:
-          return (
-            <Gutter>
-              {renderMedium(editionBreakpoint)}
-            </Gutter>
-          );
+          return <Gutter>{renderMedium(editionBreakpoint)}</Gutter>;
         case editionBreakpoints.wide:
           return (
             <Gutter>
