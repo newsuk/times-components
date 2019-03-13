@@ -252,20 +252,41 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 }
 
 .IS2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS3 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS4 {
+.IS5 {
+  width: 50%;
+}
+
+.IS6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS7 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -275,32 +296,40 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </style>
 
 <div
-  className="IS4 S1"
+  className="IS7 S1"
 >
   <div
-    className="S1"
+    className="IS6 S1"
   >
-    <TileX
-      tileName="lead1"
-    />
-    <div
-      className="IS1 S1"
-    />
-    <TileY
-      tileName="lead2"
-    />
     <div
       className="IS2 S1"
-    />
-    <TileD
-      tileName="support1"
+    >
+      <TileX
+        tileName="lead1"
+      />
+      <div
+        className="IS1 S1"
+      />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="IS3"
     />
     <div
-      className="IS3 S1"
-    />
-    <TileZ
-      tileName="support2"
-    />
+      className="IS5 S1"
+    >
+      <TileD
+        tileName="support1"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -1258,20 +1287,41 @@ exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 }
 
 .IS2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS3 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS4 {
+.IS5 {
+  width: 50%;
+}
+
+.IS6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS7 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1281,32 +1331,40 @@ exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 </style>
 
 <div
-  className="IS4 S1"
+  className="IS7 S1"
 >
   <div
-    className="S1"
+    className="IS6 S1"
   >
-    <TileX
-      tileName="lead1"
-    />
-    <div
-      className="IS1 S1"
-    />
-    <TileY
-      tileName="lead2"
-    />
     <div
       className="IS2 S1"
-    />
-    <TileD
-      tileName="support1"
+    >
+      <TileX
+        tileName="lead1"
+      />
+      <div
+        className="IS1 S1"
+      />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="IS3"
     />
     <div
-      className="IS3 S1"
-    />
-    <TileZ
-      tileName="support2"
-    />
+      className="IS5 S1"
+    >
+      <TileD
+        tileName="support1"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -2264,20 +2322,41 @@ exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 }
 
 .IS2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS3 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS4 {
+.IS5 {
+  width: 50%;
+}
+
+.IS6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS7 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2287,32 +2366,40 @@ exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 </style>
 
 <div
-  className="IS4 S1"
+  className="IS7 S1"
 >
   <div
-    className="S1"
+    className="IS6 S1"
   >
-    <TileX
-      tileName="lead1"
-    />
-    <div
-      className="IS1 S1"
-    />
-    <TileY
-      tileName="lead2"
-    />
     <div
       className="IS2 S1"
-    />
-    <TileD
-      tileName="support1"
+    >
+      <TileX
+        tileName="lead1"
+      />
+      <div
+        className="IS1 S1"
+      />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="IS3"
     />
     <div
-      className="IS3 S1"
-    />
-    <TileZ
-      tileName="support2"
-    />
+      className="IS5 S1"
+    >
+      <TileD
+        tileName="support1"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;

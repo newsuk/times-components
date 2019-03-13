@@ -315,21 +315,25 @@ exports[`13. lead one full width tablet slice - wide 1`] = `
 exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 <View>
   <View>
-    <TileX
-      tileName="lead1"
-    />
+    <View>
+      <TileX
+        tileName="lead1"
+      />
+      <View />
+      <TileY
+        tileName="lead2"
+      />
+    </View>
     <View />
-    <TileY
-      tileName="lead2"
-    />
-    <View />
-    <TileD
-      tileName="support1"
-    />
-    <View />
-    <TileZ
-      tileName="support2"
-    />
+    <View>
+      <TileD
+        tileName="support1"
+      />
+      <View />
+      <TileZ
+        tileName="support2"
+      />
+    </View>
   </View>
 </View>
 `;
@@ -556,21 +560,25 @@ exports[`23. lead one full width tablet slice - huge 1`] = `
 exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 <View>
   <View>
-    <TileX
-      tileName="lead1"
-    />
+    <View>
+      <TileX
+        tileName="lead1"
+      />
+      <View />
+      <TileY
+        tileName="lead2"
+      />
+    </View>
     <View />
-    <TileY
-      tileName="lead2"
-    />
-    <View />
-    <TileD
-      tileName="support1"
-    />
-    <View />
-    <TileZ
-      tileName="support2"
-    />
+    <View>
+      <TileD
+        tileName="support1"
+      />
+      <View />
+      <TileZ
+        tileName="support2"
+      />
+    </View>
   </View>
 </View>
 `;

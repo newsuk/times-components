@@ -58,21 +58,25 @@ exports[`3. lead one full width tablet slice - medium 1`] = `
 exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 <div>
   <div>
-    <TileX
-      tileName="lead1"
-    />
+    <div>
+      <TileX
+        tileName="lead1"
+      />
+      <div />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
     <div />
-    <TileY
-      tileName="lead2"
-    />
-    <div />
-    <TileD
-      tileName="support1"
-    />
-    <div />
-    <TileZ
-      tileName="support2"
-    />
+    <div>
+      <TileD
+        tileName="support1"
+      />
+      <div />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -287,21 +291,25 @@ exports[`13. lead one full width tablet slice - wide 1`] = `
 exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 <div>
   <div>
-    <TileX
-      tileName="lead1"
-    />
+    <div>
+      <TileX
+        tileName="lead1"
+      />
+      <div />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
     <div />
-    <TileY
-      tileName="lead2"
-    />
-    <div />
-    <TileD
-      tileName="support1"
-    />
-    <div />
-    <TileZ
-      tileName="support2"
-    />
+    <div>
+      <TileD
+        tileName="support1"
+      />
+      <div />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -516,21 +524,25 @@ exports[`23. lead one full width tablet slice - huge 1`] = `
 exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 <div>
   <div>
-    <TileX
-      tileName="lead1"
-    />
+    <div>
+      <TileX
+        tileName="lead1"
+      />
+      <div />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
     <div />
-    <TileY
-      tileName="lead2"
-    />
-    <div />
-    <TileD
-      tileName="support1"
-    />
-    <div />
-    <TileZ
-      tileName="support2"
-    />
+    <div>
+      <TileD
+        tileName="support1"
+      />
+      <div />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;

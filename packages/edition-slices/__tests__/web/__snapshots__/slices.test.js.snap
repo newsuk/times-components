@@ -222,21 +222,25 @@ exports[`4. lead one and four slice 1`] = `
 exports[`5. lead two no pic and two 1`] = `
 <div>
   <div>
-    <TileX
-      tileName="lead1"
-    />
+    <div>
+      <TileX
+        tileName="lead1"
+      />
+      <div />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
     <div />
-    <TileY
-      tileName="lead2"
-    />
-    <div />
-    <TileD
-      tileName="support1"
-    />
-    <div />
-    <TileZ
-      tileName="support2"
-    />
+    <div>
+      <TileD
+        tileName="support1"
+      />
+      <div />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
