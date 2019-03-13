@@ -20,6 +20,17 @@ Object {
 }
 `;
 
+exports[`default section page click tracking: onArticlePress 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+      "url": "/article/123",
+    },
+  ],
+]
+`;
+
 exports[`puzzle section page click tracking 1`] = `
 Object {
   "action": "Pressed",
@@ -38,4 +49,16 @@ Object {
   "component": "Tile",
   "object": "Slice",
 }
+`;
+
+exports[`puzzle section page click tracking: onPuzzlePress 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+      "title": "Times Concise medium No 7881",
+      "url": "/crossword/123",
+    },
+  ],
+]
 `;

@@ -64,7 +64,7 @@ export default () => {
     const [[call]] = stream.mock.calls;
 
     expect(call).toMatchSnapshot();
-    expect(onArticlePress.mock.calls.length).toBeGreaterThan(0);
+    expect(onArticlePress.mock.calls).toMatchSnapshot("onArticlePress");
   });
 
   it("puzzle section page click tracking", () => {
@@ -89,6 +89,6 @@ export default () => {
     const [[call]] = stream.mock.calls;
 
     expect(call).toMatchSnapshot();
-    expect(onPuzzlePress.mock.calls.length).toBeGreaterThan(0);
+    expect(onPuzzlePress.mock.calls).toMatchSnapshot("onPuzzlePress");
   });
 };
