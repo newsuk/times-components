@@ -30,8 +30,7 @@ const snapshotTests = renderComponent => [
     name: "article label uses a colour if override is provided",
     test() {
       const output = renderComponent(
-
-          <Label label="Random Label" color="#000000" />
+        <Label color="#000000" label="Random Label" />
       );
 
       expect(output).toMatchSnapshot();
@@ -40,9 +39,7 @@ const snapshotTests = renderComponent => [
   {
     name: "article label uses the video label when isVideo is truthy",
     test() {
-      const output = renderComponent(
-          <Label label="Random Label" isVideo />
-      );
+      const output = renderComponent(<Label isVideo label="Random Label" />);
 
       expect(output).toMatchSnapshot();
     }

@@ -53,7 +53,7 @@ const snapshotTests = renderComponent => [
   {
     name: "article label shows video label is isVideo is truthy",
     test() {
-      const output = renderComponent(<Label label="Random Label" isVideo />);
+      const output = renderComponent(<Label isVideo label="Random Label" />);
 
       expect(output).toMatchSnapshot();
     }
