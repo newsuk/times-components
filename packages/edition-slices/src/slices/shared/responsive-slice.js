@@ -4,21 +4,46 @@ import { ResponsiveContext } from "@times-components/responsive";
 import { editionBreakpoints } from "@times-components/styleguide";
 import Gutter from "./gutter";
 
-const ResponsiveSlice = ({ renderSmall, renderMedium }) => (
+const ResponsiveSlice = ({
+  renderSmall,
+  renderMedium,
+  renderWide,
+  renderHuge
+}) => (
   <ResponsiveContext.Consumer>
-    {({ editionBreakpoint }) =>
-      editionBreakpoint === editionBreakpoints.small ? (
-        renderSmall(editionBreakpoint)
-      ) : (
-        <Gutter>{renderMedium(editionBreakpoint)}</Gutter>
-      )
-    }
+    {({ editionBreakpoint }) => {
+      switch (editionBreakpoint) {
+        case editionBreakpoints.small:
+          return renderSmall(editionBreakpoint);
+        case editionBreakpoints.medium:
+          return <Gutter>{renderMedium(editionBreakpoint)}</Gutter>;
+        case editionBreakpoints.wide:
+          return (
+            <Gutter>
+              {(renderWide && renderWide(editionBreakpoint)) ||
+                (renderMedium && renderMedium(editionBreakpoint))}
+            </Gutter>
+          );
+        case editionBreakpoints.huge:
+          return (
+            <Gutter>
+              {(renderHuge && renderHuge(editionBreakpoint)) ||
+                (renderWide && renderWide(editionBreakpoint)) ||
+                (renderMedium && renderMedium(editionBreakpoint))}
+            </Gutter>
+          );
+        default:
+          return renderSmall(editionBreakpoint);
+      }
+    }}
   </ResponsiveContext.Consumer>
 );
 
 ResponsiveSlice.propTypes = {
+  renderHuge: PropTypes.func.isRequired,
   renderMedium: PropTypes.func.isRequired,
-  renderSmall: PropTypes.func.isRequired
+  renderSmall: PropTypes.func.isRequired,
+  renderWide: PropTypes.func.isRequired
 };
 
 export default ResponsiveSlice;

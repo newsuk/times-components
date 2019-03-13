@@ -174,37 +174,47 @@ exports[`2. leaders slice 2`] = `
 exports[`3. lead one and one slice 1`] = `
 <div>
   <div>
-    <TileU
-      tileName="lead"
-    />
-    <TileC
-      tileName="support"
-    />
+    <div>
+      <TileU
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileC
+        tileName="support"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`4. lead one and four slice 1`] = `
 <div>
-  <TileAC
-    tileName="lead"
-  />
   <div>
-    <TileAD
-      tileName="support1"
-    />
+    <div>
+      <TileAC
+        tileName="lead"
+      />
+    </div>
     <div />
-    <TileAD
-      tileName="support2"
-    />
-    <div />
-    <TileAD
-      tileName="support3"
-    />
-    <div />
-    <TileAD
-      tileName="support4"
-    />
+    <div>
+      <TileAD
+        tileName="support1"
+      />
+      <div />
+      <TileAD
+        tileName="support2"
+      />
+      <div />
+      <TileAD
+        tileName="support3"
+      />
+      <div />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -212,21 +222,25 @@ exports[`4. lead one and four slice 1`] = `
 exports[`5. lead two no pic and two 1`] = `
 <div>
   <div>
-    <TileX
-      tileName="lead1"
-    />
+    <div>
+      <TileX
+        tileName="lead1"
+      />
+      <div />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
     <div />
-    <TileY
-      tileName="lead2"
-    />
-    <div />
-    <TileD
-      tileName="support1"
-    />
-    <div />
-    <TileZ
-      tileName="support2"
-    />
+    <div>
+      <TileD
+        tileName="support1"
+      />
+      <div />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -271,9 +285,7 @@ exports[`8. secondary four slice 1`] = `
         tileName="secondary2"
       />
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div>
       <TileC
         tileName="secondary3"
@@ -331,28 +343,32 @@ exports[`10. secondary two and two slice 1`] = `
 <div>
   <div>
     <div>
-      <TileV
-        tileName="secondary1"
-      />
+      <div>
+        <TileV
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileV
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileV
-        tileName="secondary2"
-      />
+      <div>
+        <TileG
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          tileName="support2"
+        />
+      </div>
     </div>
-  </div>
-  <div />
-  <div>
-    <TileG
-      tileName="support1"
-    />
-  </div>
-  <div />
-  <div>
-    <TileG
-      tileName="support2"
-    />
   </div>
 </div>
 `;

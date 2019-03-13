@@ -1,5 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
@@ -82,11 +83,11 @@ const slices = [
   }
 ];
 
-export default () => {
-  const tests = slices.map(({ mock, name, Slice }) => ({
-    name,
+const tabletTester = type =>
+  slices.map(({ mock, name, Slice }) => ({
+    name: `${name} - ${type}`,
     test: () => {
-      setDimension(1000);
+      setDimension({ width: editionBreakpointWidths[type] });
       const output = TestRenderer.create(
         <Responsive>
           <Slice onPress={() => {}} slice={mock} />
@@ -96,6 +97,13 @@ export default () => {
       expect(output).toMatchSnapshot();
     }
   }));
+
+export default () => {
+  const tests = [
+    ...tabletTester("medium"),
+    ...tabletTester("wide"),
+    ...tabletTester("huge")
+  ];
 
   iterator(tests);
 };
