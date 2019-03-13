@@ -133,10 +133,6 @@ exports[`7. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports[`7. secondary one and columnist 1`] = `
-=======
 exports[`8. secondary two and two slice - medium 1`] = `
 <div>
   <div>
@@ -171,7 +167,37 @@ exports[`8. secondary two and two slice - medium 1`] = `
 </div>
 `;
 
-exports[`9. secondary two no pic and two slice - medium 1`] = `
+exports[`9. lead one and four slice - medium 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAD
+        tileName="support1"
+      />
+      <div />
+      <TileAD
+        tileName="support2"
+      />
+      <div />
+      <TileAD
+        tileName="support3"
+      />
+      <div />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`10. secondary two no pic and two slice - medium 1`] = `
 <div>
   <div>
     <div>
@@ -203,7 +229,7 @@ exports[`9. secondary two no pic and two slice - medium 1`] = `
 </div>
 `;
 
-exports[`10. daily universal register tablet slice - wide 1`] = `
+exports[`11. daily universal register tablet slice - wide 1`] = `
 <div>
   <div>
     <Image
@@ -232,7 +258,7 @@ exports[`10. daily universal register tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`11. lead one and one tablet slice - wide 1`] = `
+exports[`12. lead one and one tablet slice - wide 1`] = `
 <div>
   <div>
     <div>
@@ -250,7 +276,7 @@ exports[`11. lead one and one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`12. lead one full width tablet slice - wide 1`] = `
+exports[`13. lead one full width tablet slice - wide 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -258,7 +284,7 @@ exports[`12. lead one full width tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`13. lead two no pic and two tablet slice - wide 1`] = `
+exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 <div>
   <div>
     <TileX
@@ -280,7 +306,7 @@ exports[`13. lead two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`14. secondary one tablet slice - wide 1`] = `
+exports[`15. secondary one tablet slice - wide 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -288,7 +314,7 @@ exports[`14. secondary one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`15. secondary four tablet slice - wide 1`] = `
+exports[`16. secondary four tablet slice - wide 1`] = `
 <div>
   <div>
     <div>
@@ -318,8 +344,7 @@ exports[`15. secondary four tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`16. secondary one and columnist - wide 1`] = `
->>>>>>> chore: Code review updates
+exports[`17. secondary one and columnist - wide 1`] = `
 <div>
   <div>
     <div>
@@ -337,14 +362,7 @@ exports[`16. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`8. secondary two and two slice 1`] = `
-<div>
-  <div>
-    <div>
-      <TileV
-=======
-exports[`17. secondary two and two slice - wide 1`] = `
+exports[`18. secondary two and two slice - wide 1`] = `
 <div>
   <div>
     <div>
@@ -378,39 +396,53 @@ exports[`17. secondary two and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary two no pic and two slice - wide 1`] = `
+exports[`19. lead one and four slice - wide 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAD
+        tileName="support1"
+      />
+      <div />
+      <TileAD
+        tileName="support2"
+      />
+      <div />
+      <TileAD
+        tileName="support3"
+      />
+      <div />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`20. secondary two no pic and two slice - wide 1`] = `
 <div>
   <div>
     <div>
       <TileAE
->>>>>>> chore: Code review updates
         tileName="secondary1"
       />
     </div>
     <div />
     <div>
-<<<<<<< HEAD
-      <TileV
-=======
       <TileAE
->>>>>>> chore: Code review updates
         tileName="secondary2"
       />
     </div>
   </div>
   <div />
   <div>
-<<<<<<< HEAD
-    <TileG
-      tileName="support1"
-    />
-  </div>
-  <div />
-  <div>
-    <TileG
-      tileName="support2"
-    />
-=======
     <div>
       <TileG
         tileName="support1"
@@ -426,7 +458,7 @@ exports[`18. secondary two no pic and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`19. daily universal register tablet slice - huge 1`] = `
+exports[`21. daily universal register tablet slice - huge 1`] = `
 <div>
   <div>
     <Image
@@ -451,34 +483,11 @@ exports[`19. daily universal register tablet slice - huge 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
     />
     <TileS />
->>>>>>> chore: Code review updates
   </div>
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`9. lead one and four slice 1`] = `
-<div>
-  <TileAC
-    tileName="lead"
-  />
-  <div>
-    <TileAD
-      tileName="support1"
-    />
-    <div />
-    <TileAD
-      tileName="support2"
-    />
-    <div />
-    <TileAD
-      tileName="support3"
-    />
-    <div />
-    <TileAD
-      tileName="support4"
-=======
-exports[`20. lead one and one tablet slice - huge 1`] = `
+exports[`22. lead one and one tablet slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -496,7 +505,7 @@ exports[`20. lead one and one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`21. lead one full width tablet slice - huge 1`] = `
+exports[`23. lead one full width tablet slice - huge 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -504,7 +513,7 @@ exports[`21. lead one full width tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`22. lead two no pic and two tablet slice - huge 1`] = `
+exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 <div>
   <div>
     <TileX
@@ -521,16 +530,12 @@ exports[`22. lead two no pic and two tablet slice - huge 1`] = `
     <div />
     <TileZ
       tileName="support2"
->>>>>>> chore: Code review updates
     />
   </div>
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`10. secondary two no pic and two slice 1`] = `
-=======
-exports[`23. secondary one tablet slice - huge 1`] = `
+exports[`25. secondary one tablet slice - huge 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -538,7 +543,7 @@ exports[`23. secondary one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`24. secondary four tablet slice - huge 1`] = `
+exports[`26. secondary four tablet slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -568,7 +573,7 @@ exports[`24. secondary four tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`25. secondary one and columnist - huge 1`] = `
+exports[`27. secondary one and columnist - huge 1`] = `
 <div>
   <div>
     <div>
@@ -586,7 +591,7 @@ exports[`25. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`26. secondary two and two slice - huge 1`] = `
+exports[`28. secondary two and two slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -620,8 +625,37 @@ exports[`26. secondary two and two slice - huge 1`] = `
 </div>
 `;
 
-exports[`27. secondary two no pic and two slice - huge 1`] = `
->>>>>>> chore: Code review updates
+exports[`29. lead one and four slice - huge 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAD
+        tileName="support1"
+      />
+      <div />
+      <TileAD
+        tileName="support2"
+      />
+      <div />
+      <TileAD
+        tileName="support3"
+      />
+      <div />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`30. secondary two no pic and two slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -652,9 +686,3 @@ exports[`27. secondary two no pic and two slice - huge 1`] = `
   </div>
 </div>
 `;
-<<<<<<< HEAD
-=======
-exports[`9. secondary two no pic and two slice 1`] = `<div />`;
->>>>>>> feat: Huge and Wide support for slices
-=======
->>>>>>> chore: Code review updates

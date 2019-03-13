@@ -191,25 +191,30 @@ exports[`3. lead one and one slice 1`] = `
 
 exports[`4. lead one and four slice 1`] = `
 <div>
-  <TileAC
-    tileName="lead"
-  />
   <div>
-    <TileAD
-      tileName="support1"
-    />
+    <div>
+      <TileAC
+        tileName="lead"
+      />
+    </div>
     <div />
-    <TileAD
-      tileName="support2"
-    />
-    <div />
-    <TileAD
-      tileName="support3"
-    />
-    <div />
-    <TileAD
-      tileName="support4"
-    />
+    <div>
+      <TileAD
+        tileName="support1"
+      />
+      <div />
+      <TileAD
+        tileName="support2"
+      />
+      <div />
+      <TileAD
+        tileName="support3"
+      />
+      <div />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
   </div>
 </div>
 `;

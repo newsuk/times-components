@@ -568,77 +568,7 @@ exports[`7. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
-exports[`9. lead one and four slice 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS4 {
-  -webkit-align-self: center;
-  align-self: center;
-  max-width: 100%;
-  width: 1366px;
-  -ms-flex-item-align: center;
-}
-</style>
-
-<div
-  className="IS4 S1"
->
-  <TileAC
-    tileName="lead"
-  />
-  <div
-    className="S1"
-  >
-    <TileAD
-      tileName="support1"
-    />
-    <div
-      className="IS1 S1"
-    />
-    <TileAD
-      tileName="support2"
-    />
-    <div
-      className="IS2 S1"
-    />
-    <TileAD
-      tileName="support3"
-    />
-    <div
-      className="IS3 S1"
-    />
-    <TileAD
-      tileName="support4"
-    />
-  </div>
-</div>
-`;
-
-exports[`10. secondary two no pic and two slice 1`] = `
+exports[`8. secondary two and two slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -804,7 +734,130 @@ exports[`10. secondary two no pic and two slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary two no pic and two slice - medium 1`] = `
+exports[`9. lead one and four slice - medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 50%;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS8 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS8 S1"
+>
+  <div
+    className="IS7 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS6 S1"
+    >
+      <TileAD
+        tileName="support1"
+      />
+      <div
+        className="IS3 S1"
+      />
+      <TileAD
+        tileName="support2"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileAD
+        tileName="support3"
+      />
+      <div
+        className="IS5 S1"
+      />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`10. secondary two no pic and two slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -953,7 +1006,7 @@ exports[`9. secondary two no pic and two slice - medium 1`] = `
 </div>
 `;
 
-exports[`10. daily universal register tablet slice - wide 1`] = `
+exports[`11. daily universal register tablet slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1087,7 +1140,7 @@ exports[`10. daily universal register tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`11. lead one and one tablet slice - wide 1`] = `
+exports[`12. lead one and one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1167,7 +1220,7 @@ exports[`11. lead one and one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`12. lead one full width tablet slice - wide 1`] = `
+exports[`13. lead one full width tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1191,7 +1244,7 @@ exports[`12. lead one full width tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`13. lead two no pic and two tablet slice - wide 1`] = `
+exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1258,7 +1311,7 @@ exports[`13. lead two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`14. secondary one tablet slice - wide 1`] = `
+exports[`15. secondary one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1282,7 +1335,7 @@ exports[`14. secondary one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`15. secondary four tablet slice - wide 1`] = `
+exports[`16. secondary four tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1440,7 +1493,7 @@ exports[`15. secondary four tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`16. secondary one and columnist - wide 1`] = `
+exports[`17. secondary one and columnist - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1521,7 +1574,7 @@ exports[`16. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`17. secondary two and two slice - wide 1`] = `
+exports[`18. secondary two and two slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1687,7 +1740,130 @@ exports[`17. secondary two and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary two no pic and two slice - wide 1`] = `
+exports[`19. lead one and four slice - wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 50%;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS8 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS8 S1"
+>
+  <div
+    className="IS7 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS6 S1"
+    >
+      <TileAD
+        tileName="support1"
+      />
+      <div
+        className="IS3 S1"
+      />
+      <TileAD
+        tileName="support2"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileAD
+        tileName="support3"
+      />
+      <div
+        className="IS5 S1"
+      />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`20. secondary two no pic and two slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1836,7 +2012,7 @@ exports[`18. secondary two no pic and two slice - wide 1`] = `
 </div>
 `;
 
-exports[`19. daily universal register tablet slice - huge 1`] = `
+exports[`21. daily universal register tablet slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1970,7 +2146,7 @@ exports[`19. daily universal register tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`20. lead one and one tablet slice - huge 1`] = `
+exports[`22. lead one and one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2050,7 +2226,7 @@ exports[`20. lead one and one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`21. lead one full width tablet slice - huge 1`] = `
+exports[`23. lead one full width tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2074,7 +2250,7 @@ exports[`21. lead one full width tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`22. lead two no pic and two tablet slice - huge 1`] = `
+exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2141,7 +2317,7 @@ exports[`22. lead two no pic and two tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`23. secondary one tablet slice - huge 1`] = `
+exports[`25. secondary one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2165,7 +2341,7 @@ exports[`23. secondary one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`24. secondary four tablet slice - huge 1`] = `
+exports[`26. secondary four tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2323,7 +2499,7 @@ exports[`24. secondary four tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`25. secondary one and columnist - huge 1`] = `
+exports[`27. secondary one and columnist - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2404,7 +2580,7 @@ exports[`25. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`26. secondary two and two slice - huge 1`] = `
+exports[`28. secondary two and two slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2570,7 +2746,130 @@ exports[`26. secondary two and two slice - huge 1`] = `
 </div>
 `;
 
-exports[`27. secondary two no pic and two slice - huge 1`] = `
+exports[`29. lead one and four slice - huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 50%;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS8 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS8 S1"
+>
+  <div
+    className="IS7 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS6 S1"
+    >
+      <TileAD
+        tileName="support1"
+      />
+      <div
+        className="IS3 S1"
+      />
+      <TileAD
+        tileName="support2"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileAD
+        tileName="support3"
+      />
+      <div
+        className="IS5 S1"
+      />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`30. secondary two no pic and two slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

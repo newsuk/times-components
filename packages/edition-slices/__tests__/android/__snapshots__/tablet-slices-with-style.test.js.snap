@@ -505,7 +505,7 @@ exports[`8. secondary two and two slice - medium 1`] = `
 </View>
 `;
 
-exports[`9. lead one and four slice 1`] = `
+exports[`9. lead one and four slice - medium 1`] = `
 <View
   style={
     Object {
@@ -590,7 +590,7 @@ exports[`9. lead one and four slice 1`] = `
 </View>
 `;
 
-exports[`10. secondary two no pic and two slice 1`] = `
+exports[`10. secondary two no pic and two slice - medium 1`] = `
 <View
   style={
     Object {
@@ -689,7 +689,7 @@ exports[`10. secondary two no pic and two slice 1`] = `
 </View>
 `;
 
-exports[`10. daily universal register tablet slice - wide 1`] = `
+exports[`11. daily universal register tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -790,7 +790,7 @@ exports[`10. daily universal register tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`11. lead one and one tablet slice - wide 1`] = `
+exports[`12. lead one and one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -841,7 +841,7 @@ exports[`11. lead one and one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`12. lead one full width tablet slice - wide 1`] = `
+exports[`13. lead one full width tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -855,7 +855,7 @@ exports[`12. lead one full width tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`13. lead two no pic and two tablet slice - wide 1`] = `
+exports[`14. lead two no pic and two tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -904,7 +904,7 @@ exports[`13. lead two no pic and two tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`14. secondary one tablet slice - wide 1`] = `
+exports[`15. secondary one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -918,7 +918,7 @@ exports[`14. secondary one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`15. secondary four tablet slice - wide 1`] = `
+exports[`16. secondary four tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1010,7 +1010,7 @@ exports[`15. secondary four tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`16. secondary one and columnist - wide 1`] = `
+exports[`17. secondary one and columnist - wide 1`] = `
 <View
   style={
     Object {
@@ -1063,7 +1063,7 @@ exports[`16. secondary one and columnist - wide 1`] = `
 </View>
 `;
 
-exports[`17. secondary two and two slice - wide 1`] = `
+exports[`18. secondary two and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1171,7 +1171,92 @@ exports[`17. secondary two and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`18. secondary two no pic and two slice - wide 1`] = `
+exports[`19. lead one and four slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 10,
+          "width": "50%",
+        }
+      }
+    >
+      <TileAC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`20. secondary two no pic and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1270,7 +1355,7 @@ exports[`18. secondary two no pic and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`19. daily universal register tablet slice - huge 1`] = `
+exports[`21. daily universal register tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1371,7 +1456,7 @@ exports[`19. daily universal register tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`20. lead one and one tablet slice - huge 1`] = `
+exports[`22. lead one and one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1422,7 +1507,7 @@ exports[`20. lead one and one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`21. lead one full width tablet slice - huge 1`] = `
+exports[`23. lead one full width tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1436,7 +1521,7 @@ exports[`21. lead one full width tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`22. lead two no pic and two tablet slice - huge 1`] = `
+exports[`24. lead two no pic and two tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1485,7 +1570,7 @@ exports[`22. lead two no pic and two tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`23. secondary one tablet slice - huge 1`] = `
+exports[`25. secondary one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1499,7 +1584,7 @@ exports[`23. secondary one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`24. secondary four tablet slice - huge 1`] = `
+exports[`26. secondary four tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1591,7 +1676,7 @@ exports[`24. secondary four tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`25. secondary one and columnist - huge 1`] = `
+exports[`27. secondary one and columnist - huge 1`] = `
 <View
   style={
     Object {
@@ -1644,7 +1729,7 @@ exports[`25. secondary one and columnist - huge 1`] = `
 </View>
 `;
 
-exports[`26. secondary two and two slice - huge 1`] = `
+exports[`28. secondary two and two slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1752,7 +1837,92 @@ exports[`26. secondary two and two slice - huge 1`] = `
 </View>
 `;
 
-exports[`27. secondary two no pic and two slice - huge 1`] = `
+exports[`29. lead one and four slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 10,
+          "width": "50%",
+        }
+      }
+    >
+      <TileAC />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
+        }
+      />
+      <TileAD />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`30. secondary two no pic and two slice - huge 1`] = `
 <View
   style={
     Object {
