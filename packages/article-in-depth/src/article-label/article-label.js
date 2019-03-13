@@ -2,7 +2,6 @@ import React from "react";
 import { View } from "react-native";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
-import { colours } from "@times-components/styleguide";
 
 import {
   articleLabelPropTypes,
@@ -17,7 +16,7 @@ const HeaderLabel = ({ color, isVideo, label }) => {
 
   return (
     <View style={styles.label}>
-      <Label color={color || colours.section.default} title={label} />
+      <Label color={color} title={label} />
     </View>
   );
 };
