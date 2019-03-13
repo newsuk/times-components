@@ -29,8 +29,8 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
     section ? (
       <Section
         analyticsStream={analyticsStream}
-        onArticlePress={(_, { url }) => onArticlePress(url)}
-        onPuzzlePress={(_, { url }) => onPuzzlePress(url)}
+        onArticlePress={({ id, url }) => onArticlePress(url, id)}
+        onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
         publicationName={publicationName}
         section={JSON.parse(section)}
       />
