@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.37.0...@times-components/edition-slices@0.38.0) (2019-03-13)
+
+
+### Features
+
+* Add new params to section clicks ([#1798](https://github.com/newsuk/times-components/issues/1798)) ([20ffde0](https://github.com/newsuk/times-components/commit/20ffde0))
+* Implement Leaders Slice for Tablet ([#1787](https://github.com/newsuk/times-components/issues/1787)) ([4b26eb2](https://github.com/newsuk/times-components/commit/4b26eb2))
+
+
+
+
+
 # [0.37.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.36.2...@times-components/edition-slices@0.37.0) (2019-03-13)
 
 

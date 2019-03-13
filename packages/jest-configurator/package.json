@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",
@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@times-components/test-utils": "2.2.11",
+    "@times-components/test-utils": "2.2.12",
     "babel-core": "6.26.0",
     "babel-jest": "23.4.2",
     "babel-plugin-istanbul": "4.1.6",

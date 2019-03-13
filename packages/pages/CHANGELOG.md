@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.17.6...@times-components/pages@1.18.0) (2019-03-13)
+
+
+### Features
+
+* Add new params to section clicks ([#1798](https://github.com/newsuk/times-components/issues/1798)) ([20ffde0](https://github.com/newsuk/times-components/commit/20ffde0))
+
+
+
+
+
 ## [1.17.6](https://github.com/newsuk/times-components/compare/@times-components/pages@1.17.5...@times-components/pages@1.17.6) (2019-03-13)
 
 **Note:** Version bump only for package @times-components/pages
