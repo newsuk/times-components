@@ -53,7 +53,10 @@ class GradientBase extends Component {
     const onLayoutProps = height && width ? {} : { onLayout: this.onLayout };
 
     return (
-      <View {...onLayoutProps} style={[styles.container, style]}>
+      <View
+        {...onLayoutProps}
+        style={[{ backgroundColor: startColour }, styles.container, style]}
+      >
         <Surface height={height} style={styles.surface} width={width}>
           <Shape
             d={d}

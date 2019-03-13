@@ -8,14 +8,15 @@ import T from "./t";
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 function Placeholder({ height, style, width }) {
+  const hasDimensions = width !== null && height !== null;
   return (
     <Gradient
       degrees={264}
       height={height}
-      style={[style, !width && !height && { flex: 1 }]}
+      style={[style, !hasDimensions && { flex: 1 }]}
       width={width}
     >
-      {width ? (
+      {width !== null ? (
         <View style={[styles.container, styles.placeholderContainer]}>
           <T width={width} />
         </View>

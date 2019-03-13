@@ -1,3 +1,5 @@
 {
-  "maxAttributeStringLength": 64
+  "maxAttributeStringLength": 64,
+  "maxDepth": 13,
+  "maxFileSize": 12000
 }

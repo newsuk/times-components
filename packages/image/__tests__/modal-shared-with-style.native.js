@@ -11,7 +11,7 @@ import {
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import "./mocks";
-import { ModalImage } from "../src";
+import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
 const MockCaption = ({ style: { text, container } }) => (
@@ -21,7 +21,6 @@ const MockCaption = ({ style: { text, container } }) => (
 );
 
 const props = {
-  aspectRatio: 3 / 2,
   caption: <MockCaption />,
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
@@ -39,9 +38,33 @@ export default () => {
 
   const tests = [
     {
-      name: "default modal",
+      name: "landscape default modal",
       test: () => {
-        const testInstance = TestRenderer.create(<ModalImage {...props} />);
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} aspectRatio={2} />
+        );
+
+        testInstance.root.findAllByType(Image).forEach(img =>
+          img.children[0].props.onLayout({
+            nativeEvent: { layout: { height: 350, width: 700 } }
+          })
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "portrait default modal",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} aspectRatio={0.5} />
+        );
+
+        testInstance.root.findAllByType(Image).forEach(img =>
+          img.children[0].props.onLayout({
+            nativeEvent: { layout: { height: 700, width: 350 } }
+          })
+        );
 
         expect(testInstance).toMatchSnapshot();
       }
