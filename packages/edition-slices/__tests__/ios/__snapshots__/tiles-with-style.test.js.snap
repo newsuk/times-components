@@ -2232,3 +2232,58 @@ exports[`28. tile ae 1`] = `
   </View>
 </Link>
 `;
+
+exports[`29. tile ag 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "paddingBottom": 10,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 30,
+            "fontWeight": "900",
+            "lineHeight": 30,
+            "marginBottom": 5,
+            "marginTop": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Driving Off
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "paddingBottom": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;

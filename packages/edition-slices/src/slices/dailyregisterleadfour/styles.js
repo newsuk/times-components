@@ -44,7 +44,22 @@ const mediumBreakpointStyles = {
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles
-    : { ...smallBreakpointStyles, ...mediumBreakpointStyles };
+const wideBreakpointStyle = {
+  container: {
+    alignItems: "center",
+    backgroundColor: colours.functional.border,
+    flex: 1,
+    paddingHorizontal: "25%"
+  }
+};
+
+export default breakpoint => {
+  if (breakpoint === editionBreakpoints.small) {
+    return smallBreakpointStyles;
+  }
+  if (breakpoint === editionBreakpoints.medium) {
+    return { ...smallBreakpointStyles, ...mediumBreakpointStyles };
+  }
+
+  return { ...smallBreakpointStyles, ...wideBreakpointStyle };
+};

@@ -1068,3 +1068,27 @@ exports[`28. tile ae 1`] = `
   </div>
 </Link>
 `;
+
+exports[`29. tile ag 1`] = `
+<Link>
+  <div>
+    <div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        Driving Off
+      </h3>
+      <h4
+        aria-level="4"
+        role="heading"
+      >
+        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+      </h4>
+      <div>
+        <ArticleFlags />
+      </div>
+    </div>
+  </div>
+</Link>
+`;

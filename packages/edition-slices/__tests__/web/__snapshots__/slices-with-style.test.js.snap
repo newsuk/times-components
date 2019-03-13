@@ -72,8 +72,8 @@ exports[`1. daily universal register slice 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 25%;
+  padding-left: 25%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -455,24 +455,71 @@ exports[`2. leaders slice 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -480,7 +527,7 @@ exports[`2. leaders slice 1`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -501,23 +548,39 @@ exports[`2. leaders slice 1`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -559,24 +622,71 @@ exports[`2. leaders slice 2`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -584,7 +694,7 @@ exports[`2. leaders slice 2`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -605,23 +715,39 @@ exports[`2. leaders slice 2`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -1910,24 +2036,71 @@ exports[`13. leaders slice 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -1935,7 +2108,7 @@ exports[`13. leaders slice 1`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -1956,23 +2129,39 @@ exports[`13. leaders slice 1`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
