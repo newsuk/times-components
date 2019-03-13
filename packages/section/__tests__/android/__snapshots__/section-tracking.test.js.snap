@@ -20,7 +20,7 @@ Object {
 }
 `;
 
-exports[`default section page click tracking 2`] = `
+exports[`default section page click tracking: onArticlePress 1`] = `
 Array [
   Array [
     Object {
@@ -51,7 +51,7 @@ Object {
 }
 `;
 
-exports[`puzzle section page click tracking 2`] = `
+exports[`puzzle section page click tracking: onPuzzlePress 1`] = `
 Array [
   Array [
     Object {
