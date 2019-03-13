@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article summary headline component 1`] = `
+<h3
+  aria-level="3"
+  className="bigOne"
+  role="heading"
+>
+  PM hails breakthrough ahead of key Commons vote
+</h3>
+`;
+
+exports[`2. article summary strapline component 1`] = `
+<h4
+  aria-level="4"
+  role="heading"
+>
+  PM hails breakthrough ahead of key Commons vote
+</h4>
+`;
