@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.36.2...@times-components/edition-slices@0.37.0) (2019-03-13)
+
+
+### Features
+
+* Huge and Wide support for slices ([#1783](https://github.com/newsuk/times-components/issues/1783)) ([5f1cdc0](https://github.com/newsuk/times-components/commit/5f1cdc0))
+
+
+
+
+
 ## [0.36.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.36.1...@times-components/edition-slices@0.36.2) (2019-03-13)
 
 **Note:** Version bump only for package @times-components/edition-slices

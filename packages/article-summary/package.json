@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.9.18",
+  "version": "3.9.19",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -40,7 +40,7 @@
     "@times-components/jest-configurator": "2.3.2",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.3",
-    "@times-components/test-utils": "2.2.10",
+    "@times-components/test-utils": "2.2.11",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -61,14 +61,14 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.1.30",
-    "@times-components/article-flag": "2.5.17",
-    "@times-components/article-label": "2.3.37",
-    "@times-components/date-publication": "0.20.26",
-    "@times-components/markup": "3.3.28",
+    "@times-components/article-byline": "3.1.31",
+    "@times-components/article-flag": "2.5.18",
+    "@times-components/article-label": "2.3.38",
+    "@times-components/date-publication": "0.20.27",
+    "@times-components/markup": "3.3.29",
     "@times-components/markup-forest": "1.6.2",
-    "@times-components/styleguide": "3.25.3",
-    "@times-components/video-label": "2.2.39",
+    "@times-components/styleguide": "3.26.0",
+    "@times-components/video-label": "2.2.40",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
