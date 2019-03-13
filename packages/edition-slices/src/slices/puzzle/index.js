@@ -11,7 +11,7 @@ const Puzzle = ({ onPress, slice: { id, title, url, image } }) => {
   const { main, header, headLine, body } = styles;
 
   return (
-    <Link onPress={e => onPress({ id, title, url })} url={url}>
+    <Link onPress={() => onPress({ id, title, url })} url={url}>
       <View style={main}>
         <View style={header}>
           <ArticleSummaryHeadline headline={title} style={headLine} />

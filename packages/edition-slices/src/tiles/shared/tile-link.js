@@ -10,7 +10,7 @@ const TileLink = ({
     article: { id, url }
   }
 }) => (
-  <Link linkStyle={style} onPress={e => onPress({ id, url })} url={url}>
+  <Link linkStyle={style} onPress={() => onPress({ id, url })} url={url}>
     {children}
   </Link>
 );
