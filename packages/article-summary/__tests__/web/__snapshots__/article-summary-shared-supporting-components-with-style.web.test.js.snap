@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article summary headline component 1`] = `
+<style>
+.S1 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  color: rgba(0,0,0,1.00);
+}
+</style>
+
+<h3
+  aria-level="3"
+  className="bigOne IS1 S1"
+  role="heading"
+>
+  PM hails breakthrough ahead of key Commons vote
+</h3>
+`;
+
+exports[`2. article summary strapline component 1`] = `
+<style>
+.S1 {
+  font-family: TimesModern-Regular;
+  font-size: 19px;
+  font-weight: inherit;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  color: rgba(0,0,0,1.00);
+}
+</style>
+
+<h4
+  aria-level="4"
+  className="IS1 S1"
+  role="heading"
+>
+  PM hails breakthrough ahead of key Commons vote
+</h4>
+`;
