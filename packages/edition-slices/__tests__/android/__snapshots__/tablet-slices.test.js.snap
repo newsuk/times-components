@@ -93,6 +93,7 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`5. leaders slice - medium 1`] = `
 <View>
   <View>
@@ -128,6 +129,53 @@ exports[`5. leaders slice - medium 1`] = `
         <TileM
           tileName="leader3"
         />
+=======
+exports[`5. secondary one and four tablet slice - medium 1`] = `
+<View>
+  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </View>
+    <View />
+    <View>
+      <View>
+        <View>
+          <TileN
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support3"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support2"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support4"
+          />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -172,7 +220,11 @@ exports[`7. secondary four tablet slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`8. secondary one and columnist - medium 1`] = `
+=======
+exports[`8. secondary one and columnist tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -190,7 +242,11 @@ exports[`8. secondary one and columnist - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`9. secondary two and two slice - medium 1`] = `
+=======
+exports[`9. secondary two and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -254,7 +310,11 @@ exports[`10. lead one and four slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`11. secondary two no pic and two slice - medium 1`] = `
+=======
+exports[`11. secondary two no pic and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -379,6 +439,7 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`16. leaders slice - wide 1`] = `
 <View>
   <View>
@@ -414,6 +475,53 @@ exports[`16. leaders slice - wide 1`] = `
         <TileAG
           tileName="leader3"
         />
+=======
+exports[`16. secondary one and four tablet slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </View>
+    <View />
+    <View>
+      <View>
+        <View>
+          <TileN
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support3"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support2"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support4"
+          />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -458,7 +566,11 @@ exports[`18. secondary four tablet slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`19. secondary one and columnist - wide 1`] = `
+=======
+exports[`19. secondary one and columnist tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -476,7 +588,11 @@ exports[`19. secondary one and columnist - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`20. secondary two and two slice - wide 1`] = `
+=======
+exports[`20. secondary two and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -540,7 +656,11 @@ exports[`21. lead one and four slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`22. secondary two no pic and two slice - wide 1`] = `
+=======
+exports[`22. secondary two no pic and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -665,6 +785,7 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`27. leaders slice - huge 1`] = `
 <View>
   <View>
@@ -700,6 +821,53 @@ exports[`27. leaders slice - huge 1`] = `
         <TileAG
           tileName="leader3"
         />
+=======
+exports[`27. secondary one and four tablet slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </View>
+    <View />
+    <View>
+      <View>
+        <View>
+          <TileN
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support3"
+          />
+        </View>
+      </View>
+      <View />
+      <View>
+        <View>
+          <TileO
+            tileName="support2"
+          />
+        </View>
+        <View />
+        <View>
+          <TileO
+            tileName="support4"
+          />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -744,7 +912,11 @@ exports[`29. secondary four tablet slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`30. secondary one and columnist - huge 1`] = `
+=======
+exports[`30. secondary one and columnist tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -762,7 +934,11 @@ exports[`30. secondary one and columnist - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`31. secondary two and two slice - huge 1`] = `
+=======
+exports[`31. secondary two and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>
@@ -826,7 +1002,11 @@ exports[`32. lead one and four slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`33. secondary two no pic and two slice - huge 1`] = `
+=======
+exports[`33. secondary two no pic and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View>
   <View>
     <View>

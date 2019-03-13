@@ -47,6 +47,7 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -60,6 +61,7 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -81,6 +83,7 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -195,8 +198,8 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -225,8 +228,8 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -238,18 +241,29 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`5. leaders slice - medium 1`] = `
 <View
   style={
     Object {
       "paddingHorizontal": 40,
       "paddingTop": 20,
+=======
+exports[`5. secondary one and four tablet slice - medium 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+>>>>>>> feat: secondary one and four on tablet
     }
   }
 >
   <View
     style={
       Object {
+<<<<<<< HEAD
         "alignItems": "center",
       }
     }
@@ -300,23 +314,71 @@ exports[`5. leaders slice - medium 1`] = `
           "flex": 1,
           "flexDirection": "row",
           "paddingBottom": 5,
+=======
+        "backgroundColor": "#272D34",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 0,
+        }
+      }
+    >
+      <TheTimesLogo />
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+>>>>>>> feat: secondary one and four on tablet
         }
       }
     >
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileM />
+=======
+            "width": "50%",
+          }
+        }
+      >
+        <View>
+          <TileN />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -326,17 +388,44 @@ exports[`5. leaders slice - medium 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileM />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -346,12 +435,35 @@ exports[`5. leaders slice - medium 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileM />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -464,7 +576,11 @@ exports[`7. secondary four tablet slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`8. secondary one and columnist - medium 1`] = `
+=======
+exports[`8. secondary one and columnist tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -517,7 +633,11 @@ exports[`8. secondary one and columnist - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`9. secondary two and two slice - medium 1`] = `
+=======
+exports[`9. secondary two and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -576,8 +696,8 @@ exports[`9. secondary two and two slice - medium 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -675,8 +795,8 @@ exports[`10. lead one and four slice - medium 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -686,8 +806,8 @@ exports[`10. lead one and four slice - medium 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -697,8 +817,8 @@ exports[`10. lead one and four slice - medium 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -710,7 +830,11 @@ exports[`10. lead one and four slice - medium 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`11. secondary two no pic and two slice - medium 1`] = `
+=======
+exports[`11. secondary two no pic and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -761,8 +885,8 @@ exports[`11. secondary two no pic and two slice - medium 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -856,6 +980,7 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -869,6 +994,7 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -890,6 +1016,7 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -1004,8 +1131,8 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1034,8 +1161,8 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1047,18 +1174,29 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`16. leaders slice - wide 1`] = `
 <View
   style={
     Object {
       "paddingHorizontal": 40,
       "paddingTop": 20,
+=======
+exports[`16. secondary one and four tablet slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+>>>>>>> feat: secondary one and four on tablet
     }
   }
 >
   <View
     style={
       Object {
+<<<<<<< HEAD
         "alignItems": "center",
       }
     }
@@ -1109,23 +1247,71 @@ exports[`16. leaders slice - wide 1`] = `
           "flex": 1,
           "flexDirection": "row",
           "paddingBottom": 5,
+=======
+        "backgroundColor": "#272D34",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 0,
+        }
+      }
+    >
+      <TheTimesLogo />
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+>>>>>>> feat: secondary one and four on tablet
         }
       }
     >
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "50%",
+          }
+        }
+      >
+        <View>
+          <TileN />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -1135,17 +1321,44 @@ exports[`16. leaders slice - wide 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -1155,12 +1368,35 @@ exports[`16. leaders slice - wide 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -1273,7 +1509,11 @@ exports[`18. secondary four tablet slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`19. secondary one and columnist - wide 1`] = `
+=======
+exports[`19. secondary one and columnist tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -1326,7 +1566,11 @@ exports[`19. secondary one and columnist - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`20. secondary two and two slice - wide 1`] = `
+=======
+exports[`20. secondary two and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -1385,8 +1629,8 @@ exports[`20. secondary two and two slice - wide 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -1484,8 +1728,8 @@ exports[`21. lead one and four slice - wide 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1495,8 +1739,8 @@ exports[`21. lead one and four slice - wide 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1506,8 +1750,8 @@ exports[`21. lead one and four slice - wide 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1519,7 +1763,11 @@ exports[`21. lead one and four slice - wide 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`22. secondary two no pic and two slice - wide 1`] = `
+=======
+exports[`22. secondary two no pic and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -1570,8 +1818,8 @@ exports[`22. secondary two no pic and two slice - wide 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -1665,6 +1913,7 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -1678,6 +1927,7 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -1699,6 +1949,7 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
         Object {
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginBottom": 25,
           "marginHorizontal": 10,
@@ -1813,8 +2064,8 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1843,8 +2094,8 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -1856,18 +2107,29 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`27. leaders slice - huge 1`] = `
 <View
   style={
     Object {
       "paddingHorizontal": 40,
       "paddingTop": 20,
+=======
+exports[`27. secondary one and four tablet slice - huge 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+>>>>>>> feat: secondary one and four on tablet
     }
   }
 >
   <View
     style={
       Object {
+<<<<<<< HEAD
         "alignItems": "center",
       }
     }
@@ -1918,23 +2180,71 @@ exports[`27. leaders slice - huge 1`] = `
           "flex": 1,
           "flexDirection": "row",
           "paddingBottom": 5,
+=======
+        "backgroundColor": "#272D34",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 0,
+        }
+      }
+    >
+      <TheTimesLogo />
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+>>>>>>> feat: secondary one and four on tablet
         }
       }
     >
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "50%",
+          }
+        }
+      >
+        <View>
+          <TileN />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -1944,17 +2254,44 @@ exports[`27. leaders slice - huge 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
       <View
         style={
           Object {
+<<<<<<< HEAD
             "borderColor": "#DBDBDB",
+=======
+            "borderColor": "#4D4D4D",
+>>>>>>> feat: secondary one and four on tablet
             "borderRightWidth": 1,
             "borderStyle": "solid",
             "marginVertical": 10,
@@ -1964,12 +2301,35 @@ exports[`27. leaders slice - huge 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingHorizontal": 10,
             "width": "33%",
           }
         }
       >
         <TileAG />
+=======
+            "width": "25%",
+          }
+        }
+      >
+        <View>
+          <TileO />
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View>
+          <TileO />
+        </View>
+>>>>>>> feat: secondary one and four on tablet
       </View>
     </View>
   </View>
@@ -2082,7 +2442,11 @@ exports[`29. secondary four tablet slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`30. secondary one and columnist - huge 1`] = `
+=======
+exports[`30. secondary one and columnist tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -2135,7 +2499,11 @@ exports[`30. secondary one and columnist - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`31. secondary two and two slice - huge 1`] = `
+=======
+exports[`31. secondary two and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -2194,8 +2562,8 @@ exports[`31. secondary two and two slice - huge 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -2293,8 +2661,8 @@ exports[`32. lead one and four slice - huge 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -2304,8 +2672,8 @@ exports[`32. lead one and four slice - huge 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -2315,8 +2683,8 @@ exports[`32. lead one and four slice - huge 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -2328,7 +2696,11 @@ exports[`32. lead one and four slice - huge 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 exports[`33. secondary two no pic and two slice - huge 1`] = `
+=======
+exports[`33. secondary two no pic and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <View
   style={
     Object {
@@ -2379,8 +2751,8 @@ exports[`33. secondary two no pic and two slice - huge 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }

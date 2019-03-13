@@ -28,6 +28,9 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
 .IS3 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -37,6 +40,9 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
 .IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -51,6 +57,9 @@ exports[`1. daily universal register tablet slice - medium 1`] = `
 .IS6 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -245,8 +254,11 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 }
 
 .IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -266,8 +278,11 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -334,6 +349,7 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`5. leaders slice - medium 1`] = `
 <style>
 .S1 {
@@ -342,10 +358,16 @@ exports[`5. leaders slice - medium 1`] = `
 }
 
 .S2 {
+=======
+exports[`5. secondary one and four tablet slice - medium 1`] = `
+<style>
+.S1 {
+>>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
+<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -397,11 +419,68 @@ exports[`5. leaders slice - medium 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+=======
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+>>>>>>> feat: secondary one and four on tablet
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -423,17 +502,47 @@ exports[`5. leaders slice - medium 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+=======
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+>>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
+<<<<<<< HEAD
+=======
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+>>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
+<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -495,6 +604,88 @@ exports[`5. leaders slice - medium 1`] = `
         <TileAG
           tileName="leader3"
         />
+=======
+</style>
+
+<div
+  className="IS12 S1"
+>
+  <div
+    className="IS11 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div
+      className="IS2 S1"
+    />
+    <div
+      className="IS10 S1"
+    >
+      <div
+        className="IS3 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="IS4"
+      />
+      <div
+        className="IS6 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div
+          className="IS5 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
+      <div
+        className="IS7"
+      />
+      <div
+        className="IS9 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div
+          className="IS8 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support4"
+          />
+        </div>
+>>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
@@ -683,7 +874,11 @@ exports[`7. secondary four tablet slice - medium 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`8. secondary one and columnist - medium 1`] = `
+=======
+exports[`8. secondary one and columnist tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -764,7 +959,11 @@ exports[`8. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`9. secondary two and two slice - medium 1`] = `
+=======
+exports[`9. secondary two and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -808,8 +1007,11 @@ exports[`9. secondary two and two slice - medium 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -955,22 +1157,31 @@ exports[`10. lead one and four slice - medium 1`] = `
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1053,7 +1264,11 @@ exports[`10. lead one and four slice - medium 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`11. secondary two no pic and two slice - medium 1`] = `
+=======
+exports[`11. secondary two no pic and two tablet slice - medium 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1098,8 +1313,11 @@ exports[`11. secondary two no pic and two slice - medium 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1230,6 +1448,9 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
 .IS3 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -1239,6 +1460,9 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
 .IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -1253,6 +1477,9 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
 .IS6 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -1447,8 +1674,11 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 }
 
 .IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1468,8 +1698,11 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1536,6 +1769,7 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`16. leaders slice - wide 1`] = `
 <style>
 .S1 {
@@ -1544,10 +1778,16 @@ exports[`16. leaders slice - wide 1`] = `
 }
 
 .S2 {
+=======
+exports[`16. secondary one and four tablet slice - wide 1`] = `
+<style>
+.S1 {
+>>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
+<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -1599,11 +1839,68 @@ exports[`16. leaders slice - wide 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+=======
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+>>>>>>> feat: secondary one and four on tablet
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -1625,17 +1922,47 @@ exports[`16. leaders slice - wide 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+=======
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+>>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
+<<<<<<< HEAD
+=======
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+>>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
+<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -1697,6 +2024,88 @@ exports[`16. leaders slice - wide 1`] = `
         <TileAG
           tileName="leader3"
         />
+=======
+</style>
+
+<div
+  className="IS12 S1"
+>
+  <div
+    className="IS11 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div
+      className="IS2 S1"
+    />
+    <div
+      className="IS10 S1"
+    >
+      <div
+        className="IS3 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="IS4"
+      />
+      <div
+        className="IS6 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div
+          className="IS5 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
+      <div
+        className="IS7"
+      />
+      <div
+        className="IS9 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div
+          className="IS8 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support4"
+          />
+        </div>
+>>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
@@ -1885,7 +2294,11 @@ exports[`18. secondary four tablet slice - wide 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`19. secondary one and columnist - wide 1`] = `
+=======
+exports[`19. secondary one and columnist tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1966,7 +2379,11 @@ exports[`19. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`20. secondary two and two slice - wide 1`] = `
+=======
+exports[`20. secondary two and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2010,8 +2427,11 @@ exports[`20. secondary two and two slice - wide 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2157,22 +2577,31 @@ exports[`21. lead one and four slice - wide 1`] = `
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2255,7 +2684,11 @@ exports[`21. lead one and four slice - wide 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`22. secondary two no pic and two slice - wide 1`] = `
+=======
+exports[`22. secondary two no pic and two tablet slice - wide 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2300,8 +2733,11 @@ exports[`22. secondary two no pic and two slice - wide 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2432,6 +2868,9 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
 .IS3 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -2441,6 +2880,9 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
 .IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -2455,6 +2897,9 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
 .IS6 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 25px;
@@ -2649,8 +3094,11 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 }
 
 .IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2670,8 +3118,11 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2738,6 +3189,7 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`27. leaders slice - huge 1`] = `
 <style>
 .S1 {
@@ -2746,10 +3198,16 @@ exports[`27. leaders slice - huge 1`] = `
 }
 
 .S2 {
+=======
+exports[`27. secondary one and four tablet slice - huge 1`] = `
+<style>
+.S1 {
+>>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
+<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -2801,11 +3259,68 @@ exports[`27. leaders slice - huge 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+=======
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+>>>>>>> feat: secondary one and four on tablet
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -2827,17 +3342,47 @@ exports[`27. leaders slice - huge 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+=======
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+>>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
+<<<<<<< HEAD
+=======
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+>>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
+<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -2899,6 +3444,88 @@ exports[`27. leaders slice - huge 1`] = `
         <TileAG
           tileName="leader3"
         />
+=======
+</style>
+
+<div
+  className="IS12 S1"
+>
+  <div
+    className="IS11 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div
+      className="IS2 S1"
+    />
+    <div
+      className="IS10 S1"
+    >
+      <div
+        className="IS3 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileN
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="IS4"
+      />
+      <div
+        className="IS6 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div
+          className="IS5 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
+      <div
+        className="IS7"
+      />
+      <div
+        className="IS9 S1"
+      >
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div
+          className="IS8 S1"
+        />
+        <div
+          className="S1"
+        >
+          <TileO
+            tileName="support4"
+          />
+        </div>
+>>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
@@ -3087,7 +3714,11 @@ exports[`29. secondary four tablet slice - huge 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`30. secondary one and columnist - huge 1`] = `
+=======
+exports[`30. secondary one and columnist tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3168,7 +3799,11 @@ exports[`30. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`31. secondary two and two slice - huge 1`] = `
+=======
+exports[`31. secondary two and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3212,8 +3847,11 @@ exports[`31. secondary two and two slice - huge 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -3359,22 +3997,31 @@ exports[`32. lead one and four slice - huge 1`] = `
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -3457,7 +4104,11 @@ exports[`32. lead one and four slice - huge 1`] = `
 </div>
 `;
 
+<<<<<<< HEAD
 exports[`33. secondary two no pic and two slice - huge 1`] = `
+=======
+exports[`33. secondary two no pic and two tablet slice - huge 1`] = `
+>>>>>>> feat: secondary one and four on tablet
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3502,8 +4153,11 @@ exports[`33. secondary two no pic and two slice - huge 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
   margin-right: 10px;
   margin-left: 10px;
 }

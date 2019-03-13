@@ -12,8 +12,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -25,8 +25,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -38,8 +38,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -97,8 +97,8 @@ exports[`2. tablet - lead one and four 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -110,8 +110,8 @@ exports[`2. tablet - lead one and four 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -123,8 +123,8 @@ exports[`2. tablet - lead one and four 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }

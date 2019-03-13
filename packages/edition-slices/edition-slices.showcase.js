@@ -105,7 +105,7 @@ const sliceStories = [
   },
   {
     mock: mockSecondaryOneAndFourSlice(),
-    name: "Supplement Secondary One And Four (N,O,O,O,O)",
+    name: "Supplement Secondary One And Four (Mobile, Tablet: N,O,O,O,O)",
     Slice: SecondaryOneAndFourSlice
   },
   {
