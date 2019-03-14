@@ -36,7 +36,7 @@ import {
   TileZ,
   TileAA,
   TileAB,
-  TileAG
+  TileAG,
   TileAH,
   TileAI
 } from "./src/tiles";
@@ -194,17 +194,17 @@ const tileStories = [
   },
   {
     name:
-<<<<<<< HEAD
       "Tile AG - No image, 30pt headline, no teaser, comment article, center align",
     Tile: TileAG
-=======
+  },
+  {
+    name:
       "Tile AH - Profile roundel image, 25pt headline, no teaser, central aligned summary",
     Tile: TileAH
   },
   {
     name: "Tile AI - Image with padding",
     Tile: TileAI
->>>>>>> feat: slice working
   }
 ];
 
