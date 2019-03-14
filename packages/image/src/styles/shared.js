@@ -58,10 +58,13 @@ const styles = {
 
 export const captionStyles = {
   container: {
-    bottom: 14,
-    left: 16,
+    backgroundColor: colours.functional.brandColourOverlay,
+    bottom: 0,
+    left: 0,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
     position: "absolute",
-    right: 16
+    right: 0
   },
   text: {
     color: colours.functional.white
