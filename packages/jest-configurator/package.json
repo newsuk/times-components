@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@times-components/test-utils": "2.2.12",
+    "@times-components/test-utils": "2.2.13",
     "babel-core": "6.26.0",
     "babel-jest": "23.4.2",
     "babel-plugin-istanbul": "4.1.6",
