@@ -81,7 +81,7 @@ const makeArticle = configuration => article => {
   const configuredArticle = { ...article };
 
   if (!(configuration & FLAGS)) {
-    configuredArticle.flags = [];
+    configuredArticle.expirableFlags = [];
   }
 
   if (!(configuration & HEADLINE)) {
@@ -192,6 +192,9 @@ const renderArticle = ({
         template,
         textColour: inDepthTextColour
       };
+
+      console.log('data', data);
+      
       return (
         <Context.Provider
           value={{

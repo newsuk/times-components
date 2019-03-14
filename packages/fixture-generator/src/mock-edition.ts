@@ -12,7 +12,7 @@ class MockEdition {
     this.edition = {
       id: "2b6e462c-225f-11e9-b782-40e94f317da5",
       publishedTime: "2019-02-06T17:00:00.000Z",
-      publicationName: PublicationName.TIMES,
+      publicationName: PublicationName.Times,
       sections: this.getSections()
     };
   }

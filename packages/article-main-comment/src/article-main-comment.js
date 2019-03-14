@@ -20,7 +20,7 @@ class ArticlePage extends Component {
     const { article, onAuthorPress } = this.props;
     const {
       bylines,
-      flags,
+      expirableFlags,
       hasVideo,
       headline,
       label,
@@ -48,7 +48,7 @@ class ArticlePage extends Component {
       <ArticleHeader
         authorImage={authorImage}
         byline={authorByline}
-        flags={flags}
+        flags={expirableFlags}
         hasVideo={hasVideo}
         headline={getHeadline(headline, shortHeadline)}
         label={label}

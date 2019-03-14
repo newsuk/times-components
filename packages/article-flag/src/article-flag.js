@@ -78,7 +78,7 @@ const ArticleFlags = ({ flags, color }) => {
     <View style={styles.flags}>
       {flags.map(flag => (
         <View key={flag} style={flags.length > 1 && styles.flagPadding}>
-          {flagsMapping(color).get(flag)}
+          {flagsMapping(color).get(flag.type)}
         </View>
       ))}
     </View>

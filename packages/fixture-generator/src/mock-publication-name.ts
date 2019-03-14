@@ -1,7 +1,7 @@
 import { PublicationName } from "./types";
 
 function mockPublicationName(
-  name: PublicationName = PublicationName.TIMES
+  name: PublicationName = PublicationName.Times
 ): PublicationName {
   return name;
 }

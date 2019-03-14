@@ -32,7 +32,7 @@ class ArticlePage extends Component {
     const { article, onAuthorPress, onVideoPress } = this.props;
     const {
       byline,
-      flags,
+      expirableFlags,
       hasVideo,
       headline,
       label,
@@ -64,7 +64,7 @@ class ArticlePage extends Component {
           const header = (
             <Fragment key="header">
               <ArticleHeader
-                flags={flags}
+                flags={expirableFlags}
                 hasVideo={hasVideo}
                 headline={getHeadline(headline, shortHeadline)}
                 isTablet={isTablet}

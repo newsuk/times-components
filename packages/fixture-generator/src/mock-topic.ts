@@ -15,7 +15,16 @@ class MockTopic {
       articles: getTopicArticles(0),
       description: new MockMarkup().addParagraphs(1).get(),
       name: "Topic Page",
-      slug: "topic-page"
+      slug: "topic-page",
+      tagConnection: {
+        edges: [],
+        nodes: [],
+        pageInfo: {
+          hasNextPage: false,
+          hasPreviousPage: false
+        },
+        totalCount: 0
+      }
     };
   }
 

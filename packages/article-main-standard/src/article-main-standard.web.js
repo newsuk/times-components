@@ -31,7 +31,7 @@ class ArticlePage extends Component {
       byline,
       hasVideo,
       headline,
-      flags,
+      expirableFlags,
       label,
       publicationName,
       publishedTime,
@@ -43,7 +43,7 @@ class ArticlePage extends Component {
       <Fragment>
         <HeaderContainer>
           <ArticleHeader
-            flags={flags}
+            flags={expirableFlags}
             hasVideo={hasVideo}
             headline={getHeadline(headline, shortHeadline)}
             label={label}

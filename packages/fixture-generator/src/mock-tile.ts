@@ -8,6 +8,7 @@ class MockTile {
     const article = new MockArticle().get();
 
     this.tile = {
+      articleId: "dc4ed2e8-4584-11e9-924d-9729bcd51a7f",
       article,
       headline: article.headline,
       leadAsset: article.leadAsset,

@@ -35,7 +35,14 @@ export default {
       type: "story"
     },
     {
-      component: () => <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />,
+      component: () => (
+        <ArticleFlags
+          flags={[
+            { expiryTime: "2030-03-14T12:00:00.000Z", type: "UPDATED" },
+            { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+          ]}
+        />
+      ),
       name: "Article Flags",
       type: "story"
     }
