@@ -1,8 +1,13 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const nativeStyles = {
   ...sharedStyles,
+  articleHeadline: {
+    ...sharedStyles.articleHeadline,
+    marginBottom: spacing(2.75)
+  },
   authorImage: {
     ...sharedStyles.authorImage,
     borderRadius: 50,

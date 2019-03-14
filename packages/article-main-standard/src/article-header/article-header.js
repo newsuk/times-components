@@ -27,13 +27,18 @@ const ArticleHeader = ({
       selectable
       style={[
         styles.articleHeadLineText,
+        !(flags.length > 0 || standfirst) && styles.articleHeadlineSpacer,
         isTablet && styles.articleHeadLineTextTablet
       ]}
     >
       {headline}
     </Text>
-    <HeaderStandfirst standfirst={standfirst} />
-    <ArticleFlags flags={flags} />
+    <HeaderStandfirst hasFlags={flags.length > 0} standfirst={standfirst} />
+    {flags.length > 0 && (
+      <View style={styles.flags}>
+        <ArticleFlags flags={flags} />
+      </View>
+    )}
   </View>
 );
 
