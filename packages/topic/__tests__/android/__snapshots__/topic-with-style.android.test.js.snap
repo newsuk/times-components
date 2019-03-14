@@ -26,7 +26,7 @@ exports[`1. an article list header 1`] = `
     <Text
       style={
         Object {
-          "color": "#1D1D1B",
+          "color": "rgb(29, 29, 27)",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
           "lineHeight": 40,

@@ -11,7 +11,7 @@ exports[`1. an article list header 1`] = `
 .c1 {
   font-family: "TimesModern-Bold";
   font-size: 40px;
-  color: #1D1D1B;
+  color: rgb(29,29,27);
   padding-bottom: 20px;
   text-align: center;
 }

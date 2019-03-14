@@ -11,7 +11,7 @@ exports[`1. iconemail renders 1`] = `
     IconEmail
   </title>
   <g
-    fill="#1D1D1B"
+    fill="rgb(29, 29, 27)"
     fillRule="nonzero"
   >
     <path
@@ -32,7 +32,7 @@ exports[`2. iconfacebook renders 1`] = `
     IconFacebook
   </title>
   <g
-    fill="#1D1D1B"
+    fill="rgb(29, 29, 27)"
     fillRule="nonzero"
   >
     <path
@@ -69,7 +69,7 @@ exports[`4. iconstar renders 1`] = `
     IconStar
   </title>
   <polygon
-    fill="#1D1D1B"
+    fill="rgb(29, 29, 27)"
     points="03c58ab70fd52f598d210973eeea7848"
   />
 </svg>
@@ -103,14 +103,14 @@ exports[`6. iconvideo renders 1`] = `
     IconVideo
   </title>
   <rect
-    fill="#1D1D1B"
+    fill="rgb(29, 29, 27)"
     height="40"
     width="50"
     x="0"
     y="0"
   />
   <polygon
-    fill="#1D1D1B"
+    fill="rgb(29, 29, 27)"
     points="5a4b8b2ca01315005e925a083a2b7521"
   />
 </svg>

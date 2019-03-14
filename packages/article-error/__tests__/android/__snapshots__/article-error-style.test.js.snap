@@ -36,7 +36,7 @@ exports[`renders correctly with style 1`] = `
           style={
             Object {
               "alignSelf": "center",
-              "color": "#1D1D1B",
+              "color": "rgb(29, 29, 27)",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 26,
               "marginBottom": 10,
