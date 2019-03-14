@@ -16,8 +16,8 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
     section ? (
       <Section
         analyticsStream={trackSection}
-        onArticlePress={({ id, url }) => onArticlePress(url, id)}
-        onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
+        onArticlePress={(_, { id, url }) => onArticlePress(url, id)}
+        onPuzzlePress={(_, { id, title, url }) => onPuzzlePress(url, title, id)}
         publicationName={publicationName}
         section={JSON.parse(section)}
       />
