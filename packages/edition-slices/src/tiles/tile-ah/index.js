@@ -10,7 +10,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-class TileP extends Component {
+class TileAH extends Component {
   state = {
     containerWidth: Dimensions.get("window").width
   };
@@ -47,9 +47,9 @@ class TileP extends Component {
   }
 }
 
-TileP.propTypes = {
+TileAH.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 
-export default withTileTracking(TileP);
+export default withTileTracking(TileAH);
