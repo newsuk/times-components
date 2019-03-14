@@ -2831,3 +2831,54 @@ exports[`36. secondary two no pic and two - huge 1`] = `
   </View>
 </View>
 `;
+
+exports[`11. comment lead and cartoon 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "paddingRight": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAH />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "67%",
+        }
+      }
+    >
+      <TileAI />
+    </View>
+  </View>
+</View>
+`;

@@ -962,3 +962,21 @@ exports[`36. secondary two no pic and two - huge 1`] = `
   </div>
 </div>
 `;
+
+exports[`11. comment lead and cartoon 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;

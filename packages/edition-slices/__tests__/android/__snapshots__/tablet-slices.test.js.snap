@@ -1010,3 +1010,21 @@ exports[`36. secondary two no pic and two - huge 1`] = `
   </View>
 </View>
 `;
+
+exports[`11. comment lead and cartoon 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAH
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAI
+        tileName="cartoon"
+      />
+    </View>
+  </View>
+</View>
+`;
