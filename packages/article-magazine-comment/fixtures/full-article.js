@@ -1325,12 +1325,12 @@ const defaultContent = [
 ];
 const defaultExpirableFlags = [
   {
-    "expiryTime": "2019-03-14T12:00:00.000Z",
-    "type": "NEW"
+    expiryTime: "2019-03-14T12:00:00.000Z",
+    type: "NEW"
   },
   {
-    "expiryTime": "2019-03-14T12:00:00.000Z",
-    "type": "EXCLUSIVE"
+    expiryTime: "2019-03-14T12:00:00.000Z",
+    type: "EXCLUSIVE"
   }
 ];
 const defaultHasVideo = false;
@@ -2119,10 +2119,12 @@ export const testFixture = {
       name: "paragraph"
     }
   ],
-  expirableFlags: [{
-    "expiryTime": "2019-03-14T12:00:00.000Z",
-    "type": "NEW"
-  }],
+  expirableFlags: [
+    {
+      expiryTime: "2019-03-14T12:00:00.000Z",
+      type: "NEW"
+    }
+  ],
   hasVideo: false,
   headline: "Some Headline",
   label: "Some Label",

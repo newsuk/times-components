@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { ArticleFlags } from "@times-components/article-flag";
+import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
 import Context from "@times-components/context";
 import { fontFactory } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
@@ -55,7 +55,7 @@ const ArticleHeader = ({
               {headline}
             </Text>
 
-            {flags.length > 0 && (
+            {getActiveFlags(flags).length > 0 && (
               <View style={styles.flags}>
                 <ArticleFlags color={textColour} flags={flags} />
               </View>

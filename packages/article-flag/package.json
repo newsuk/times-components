@@ -58,7 +58,7 @@
     "react-native": "0.55.4",
     "react-native-web": "0.9.0",
     "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0",
+    "webpack": "4.29.6",
     "webpack-cli": "2.1.4"
   },
   "dependencies": {

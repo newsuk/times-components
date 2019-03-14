@@ -33,7 +33,7 @@ export default addTypenameToDocument(gql`
       expirableFlags {
         type
         expiryTime
-      }      
+      }
       keywords
       leadAsset {
         ... on Video {

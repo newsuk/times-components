@@ -10,7 +10,14 @@ import { colours } from "@times-components/styleguide";
 
 const TileSummary = ({
   tile: {
-    article: { flags, hasVideo, headline, label, section, shortHeadline }
+    article: {
+      expirableFlags,
+      hasVideo,
+      headline,
+      label,
+      section,
+      shortHeadline
+    }
   },
   byline,
   bylineStyle,
@@ -30,7 +37,7 @@ const TileSummary = ({
         ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
         : undefined
     }
-    flags={() => <ArticleFlags {...flagColour} flags={flags} />}
+    flags={() => <ArticleFlags {...flagColour} flags={expirableFlags} />}
     headline={() => (
       <ArticleSummaryHeadline
         headline={shortHeadline || headline}

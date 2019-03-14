@@ -32,7 +32,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     Some Standfirst
   </h2>
-  new
   <span>
     <span>
       Some byline
