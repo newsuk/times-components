@@ -1,27 +1,57 @@
-import { spacing, colours, fonts } from "@times-components/styleguide";
+import {
+  editionBreakpoints,
+  spacing,
+  colours
+} from "@times-components/styleguide";
 
-const styles = {
-  body: {
-    alignSelf: "flex-end",
-    width: "85%"
+const smallBreakpointStyles = {
+  container: {
+    flex: 1,
+    paddingHorizontal: spacing(2),
+    paddingTop: spacing(2)
   },
   header: {
-    paddingLeft: spacing(3),
-    paddingRight: spacing(3),
+    paddingHorizontal: spacing(3),
     paddingTop: spacing(3),
     width: "85%"
   },
   headLine: {
-    fontFamily: fonts.headline,
     fontSize: 25
   },
-  main: {
+  imageContainer: {
+    alignSelf: "flex-end",
+    width: "85%"
+  },
+  link: {
+    flex: 1
+  },
+  puzzleContainer: {
     backgroundColor: colours.functional.border,
     flex: 1,
-    marginLeft: spacing(2),
-    marginRight: spacing(2),
     marginTop: spacing(2)
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  ...smallBreakpointStyles,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+    paddingHorizontal: spacing(3),
+    paddingTop: spacing(2)
+  },
+  headLine: {
+    fontSize: 22
+  },
+  puzzleContainer: {
+    backgroundColor: colours.functional.border,
+    flex: 1,
+    marginHorizontal: spacing(1)
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : mediumBreakpointStyles;

@@ -33,7 +33,7 @@ class Section extends Component {
       const { name, id } = puzzle;
 
       slices[sliceIndex] = slices[sliceIndex] || { name, id };
-      slices[sliceIndex].tiles = [...(slices[sliceIndex].tiles || []), puzzle];
+      slices[sliceIndex].puzzles = [...(slices[sliceIndex].puzzles || []), puzzle];
 
       return slices;
     }, []);
