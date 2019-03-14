@@ -16,7 +16,7 @@ exports[`1. watermark 1`] = `
   >
     <Path
       d="53a8dae08c4e492d934bf2f094a46ab4"
-      fill="rgb(29, 29, 27)"
+      fill="#1D1D1B"
       id="shape"
     />
   </G>

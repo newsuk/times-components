@@ -26,7 +26,7 @@ exports[`1. page error 1`] = `
       style={
         Object {
           "alignSelf": "center",
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
           "lineHeight": 26,

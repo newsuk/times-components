@@ -79,7 +79,7 @@ exports[`full article with style 1`] = `
 
 .c4 {
   font-size: 30px;
-  color: rgb(29,29,27);
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;

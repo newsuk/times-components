@@ -1882,12 +1882,12 @@ exports[`18. tile s 1`] = `
 }
 
 .IS3 {
-  color: rgb(29, 29, 27);
+  color: #1D1D1B;
   font-weight: bold;
 }
 
 .IS4 {
-  color: rgb(29, 29, 27);
+  color: #1D1D1B;
   font-weight: bold;
 }
 

@@ -12,7 +12,7 @@ exports[`1. an article list header 1`] = `
 }
 
 .c3 {
-  color: rgb(29,29,27);
+  color: #1D1D1B;
   font-family: "TimesModern-Bold";
   font-size: 30px;
 }

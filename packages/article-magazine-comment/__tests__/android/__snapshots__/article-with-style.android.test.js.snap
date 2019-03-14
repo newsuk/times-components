@@ -36,7 +36,7 @@ exports[`full article with style 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
           "lineHeight": 33,
@@ -162,7 +162,7 @@ exports[`full article with style in the culture magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
@@ -288,7 +288,7 @@ exports[`full article with style in the style magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
@@ -414,7 +414,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,
@@ -540,7 +540,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
@@ -666,7 +666,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
@@ -792,7 +792,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,

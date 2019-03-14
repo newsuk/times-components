@@ -45,7 +45,7 @@ exports[`phone full article with style 1`] = `
       <Text
         style={
           Object {
-            "color": "rgb(29, 29, 27)",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "lineHeight": 33,
@@ -171,7 +171,7 @@ exports[`tablet full article with style 1`] = `
       <Text
         style={
           Object {
-            "color": "rgb(29, 29, 27)",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "lineHeight": 33,

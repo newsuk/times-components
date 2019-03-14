@@ -6,7 +6,7 @@ exports[`1. landscape default modal 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "rgb(29, 29, 27)",
+          "backgroundColor": "#1D1D1B",
           "flexDirection": "column",
           "height": "100%",
           "justifyContent": "space-between",
@@ -166,7 +166,7 @@ exports[`1. landscape default modal 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "rgba(29, 29, 27, 0.5)",
+                "backgroundColor": "#1D1D1B80",
                 "bottom": 0,
                 "left": 0,
                 "paddingHorizontal": 16,

@@ -1144,7 +1144,7 @@ exports[`15. tile p 1`] = `
       <Text
         style={
           Object {
-            "color": "rgb(29, 29, 27)",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 35,
             "fontWeight": "900",
@@ -1311,7 +1311,7 @@ exports[`18. tile s 1`] = `
     <Text
       style={
         Object {
-          "color": "rgb(29, 29, 27)",
+          "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
           "marginBottom": 15,
@@ -1335,7 +1335,7 @@ exports[`18. tile s 1`] = `
       <Text
         style={
           Object {
-            "color": "rgb(29, 29, 27)",
+            "color": "#1D1D1B",
             "fontWeight": "bold",
           }
         }
@@ -1356,7 +1356,7 @@ exports[`18. tile s 1`] = `
       <Text
         style={
           Object {
-            "color": "rgb(29, 29, 27)",
+            "color": "#1D1D1B",
             "fontWeight": "bold",
           }
         }
