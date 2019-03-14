@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "4.7.3",
+  "version": "4.7.4",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -33,9 +33,9 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.3.3",
+    "@times-components/jest-configurator": "2.3.4",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/test-utils": "2.2.13",
+    "@times-components/test-utils": "2.2.14",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -51,7 +51,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.26.2",
+    "@times-components/styleguide": "3.26.3",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.2",
     "react-native": "0.55.4"
