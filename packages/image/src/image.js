@@ -62,7 +62,8 @@ class TimesImage extends Component {
       highResSize,
       lowResSize,
       style,
-      uri
+      uri,
+      resizeMode
     } = this.props;
     const { isLoaded, width, height } = this.state;
     const renderedRes = highResSize || width;
@@ -81,6 +82,7 @@ class TimesImage extends Component {
               <Image
                 borderRadius={borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
+                resizeMode={resizeMode}
                 style={styles.imageBackground}
               />
             ) : null}
@@ -90,6 +92,7 @@ class TimesImage extends Component {
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
+          resizeMode={resizeMode}
           style={styles.imageBackground}
         />
       </View>

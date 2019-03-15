@@ -2,14 +2,13 @@ import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   buttonContainer: {
-    left: spacing(3),
-    position: "absolute",
-    top: spacing(3),
-    zIndex: 1
+    backgroundColor: '#0000FF80',
+    marginHorizontal: spacing(3),
+    marginVertical: spacing(3),
   },
   buttonContainerTablet: {
-    left: spacing(4),
-    top: spacing(4)
+    marginHorizontal: spacing(4),
+    marginVertical: spacing(4),
   },
   closeButton: {
     alignItems: "center",
@@ -38,21 +37,31 @@ const styles = {
      * the placeholder may appear outside of the bounds of the image momentarily
      * causing a white flash. This prevents that from occurring
      */
-    overflow: "hidden"
+    overflow: "hidden",
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1
   },
   imageBackground: {
-    height: "100%",
-    position: "absolute",
-    width: "100%",
-    zIndex: 1
+    resizeMode: "contain"
   },
   imageContainer: {
     alignItems: "center",
+    backgroundColor: '#00FF0080',
     flexGrow: 1,
-    justifyContent: "center"
+    justifyContent: "center",
+    margin: 10,
+    // overflow: "hidden",
+    position: "relative"
   },
-  imageFullHeight: { height: "100%" },
-  imageFullWidth: { width: "100%" },
+  // imageFullHeight: { flex: 1 },
+  // imageFullWidth: { width: "100%" },
   modal: {
     backgroundColor: colours.functional.brandColour,
     flexDirection: "column",
@@ -68,8 +77,9 @@ const styles = {
     flex: 1
   },
   safeViewInnerContainer: {
-    flex: 1,
-    position: "relative"
+    flexGrow: 0,
+    height: "100%",
+    backgroundColor: "red"
   }
 };
 
@@ -79,12 +89,9 @@ export const captionStyles = {
     lineHeight: 19
   },
   container: {
-    bottom: 0,
-    left: 0,
-    paddingHorizontal: spacing(3),
-    paddingVertical: spacing(3),
-    position: "absolute",
-    right: 0
+    backgroundColor: '#FF000080',
+    marginHorizontal: spacing(3),
+    marginVertical: spacing(3),
   },
   credits: {
     fontSize: 10,
@@ -100,8 +107,8 @@ export const tabletCaptionStyles = {
   ...captionStyles,
   container: {
     ...captionStyles.container,
-    paddingHorizontal: spacing(4),
-    paddingVertical: spacing(4)
+    marginHorizontal: spacing(4),
+    marginVertical: spacing(4)
   }
 };
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, View, SafeAreaView } from "react-native";
+import { Modal, View, SafeAreaView, Image as RNImage } from "react-native";
 import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
@@ -48,7 +48,7 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { highResSize, aspectRatio } = this.props;
+    const { highResSize, aspectRatio, uri } = this.props;
     const { showModal, lowResImageWidth } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
 
@@ -57,7 +57,8 @@ class ModalImage extends Component {
         <Modal
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
-          visible={showModal}
+          // visible={showModal}
+          visible
         >
           <ResponsiveContext.Consumer>
             {({ isTablet }) => (
@@ -75,18 +76,16 @@ class ModalImage extends Component {
                         onPress={this.hideModal}
                       />
                     </View>
-                    <Gestures style={styles.imageContainer}>
-                      <Image
-                        {...this.props}
-                        lowResSize={lowResSize}
-                        style={[
-                          styles.image,
-                          aspectRatio >= 1
-                            ? styles.imageFullWidth
-                            : styles.imageFullHeight
-                        ]}
-                      />
-                    </Gestures>
+                    {/*<Gestures style={styles.imageContainer}>*/}
+                    <View style={styles.imageContainer}>
+                      <RNImage source={{ uri }} resizeMode="contain" style={styles.image} />
+                      {/*<Image*/}
+                        {/*{...this.props}*/}
+                        {/*lowResSize={lowResSize}*/}
+                        {/*style={styles.image}*/}
+                      {/*/>*/}
+                    </View>
+                    {/*</Gestures>*/}
                     {this.renderCaption({ isTablet })}
                   </View>
                 </SafeAreaView>
