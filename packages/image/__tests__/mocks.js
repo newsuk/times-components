@@ -1,4 +1,9 @@
+// eslint-disable-next-line import/prefer-default-export
+export { setIsTablet } from "@times-components/test-utils/dimensions";
+
+jest.mock("@times-components/gestures", () => "Gestures");
 jest.mock("@times-components/gradient", () => "Gradient");
+
 // eslint-disable-next-line global-require
 jest.mock("@times-components/svgs", () => require("./mock-svg"));
 

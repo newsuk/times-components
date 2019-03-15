@@ -7,6 +7,10 @@ const styles = {
     top: spacing(3),
     zIndex: 1
   },
+  buttonContainerTablet: {
+    left: spacing(4),
+    top: spacing(4)
+  },
   closeButton: {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -18,6 +22,11 @@ const styles = {
   closeButtonImage: {
     height: "85%",
     width: "85%"
+  },
+  closeButtonTablet: {
+    borderRadius: 40,
+    height: 40,
+    width: 40
   },
   container: {
     flex: 1
@@ -84,6 +93,15 @@ export const captionStyles = {
   },
   text: {
     color: colours.functional.white
+  }
+};
+
+export const tabletCaptionStyles = {
+  ...captionStyles,
+  container: {
+    ...captionStyles.container,
+    paddingHorizontal: spacing(4),
+    paddingVertical: spacing(4)
   }
 };
 

@@ -69,113 +69,43 @@ exports[`1. landscape default modal 1`] = `
               </View>
             </View>
           </View>
-          <View
+          <Gestures
             style={
               Object {
+                "alignItems": "center",
                 "flexGrow": 1,
+                "justifyContent": "center",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
-                  "flexGrow": 1,
-                  "justifyContent": "center",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "width": "100%",
                 }
               }
             >
-              <View
+              <Gradient
                 style={
                   Object {
-                    "transform": Array [
-                      Object {
-                        "translateX": -0,
-                      },
-                      Object {
-                        "translateY": -0,
-                      },
-                      Object {
-                        "translateX": 0,
-                      },
-                      Object {
-                        "translateY": 0,
-                      },
-                      Object {
-                        "scale": 1,
-                      },
-                      Object {
-                        "translateX": -0,
-                      },
-                      Object {
-                        "translateY": -0,
-                      },
-                      Object {
-                        "translateX": 0,
-                      },
-                      Object {
-                        "translateY": 0,
-                      },
-                      Object {
-                        "rotate": "0 deg",
-                      },
-                      Object {
-                        "perspective": 1000,
-                      },
-                    ],
+                    "flex": 1,
                   }
                 }
-              >
-                <View
-                  style={
-                    Object {
-                      "opacity": 1,
-                      "overflow": "hidden",
-                      "width": "100%",
-                    }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
                   }
-                >
-                  <Gradient>
-                    <View
-                      style={
-                        Object {
-                          "alignItems": "center",
-                          "flex": 1,
-                          "justifyContent": "center",
-                        }
-                      }
-                    >
-                      <Svg>
-                        <G>
-                          <Path />
-                        </G>
-                      </Svg>
-                    </View>
-                  </Gradient>
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                </View>
-              </View>
+                }
+              />
             </View>
-          </View>
+          </Gestures>
           <View
             style={
               Object {
@@ -192,10 +122,24 @@ exports[`1. landscape default modal 1`] = `
               style={
                 Object {
                   "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 19,
                 }
               }
             >
               Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 20,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
             </Text>
           </View>
         </View>
@@ -210,23 +154,13 @@ exports[`1. landscape default modal 1`] = `
     }
   >
     <View>
-      <Gradient>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "justifyContent": "center",
-            }
+      <Gradient
+        style={
+          Object {
+            "flex": 1,
           }
-        >
-          <Svg>
-            <G>
-              <Path />
-            </G>
-          </Svg>
-        </View>
-      </Gradient>
+        }
+      />
       <Image
         style={
           Object {
@@ -311,113 +245,43 @@ exports[`2. portrait default modal 1`] = `
               </View>
             </View>
           </View>
-          <View
+          <Gestures
             style={
               Object {
+                "alignItems": "center",
                 "flexGrow": 1,
+                "justifyContent": "center",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
-                  "flexGrow": 1,
-                  "justifyContent": "center",
+                  "height": "100%",
+                  "opacity": 1,
+                  "overflow": "hidden",
                 }
               }
             >
-              <View
+              <Gradient
                 style={
                   Object {
-                    "transform": Array [
-                      Object {
-                        "translateX": -0,
-                      },
-                      Object {
-                        "translateY": -0,
-                      },
-                      Object {
-                        "translateX": 0,
-                      },
-                      Object {
-                        "translateY": 0,
-                      },
-                      Object {
-                        "scale": 1,
-                      },
-                      Object {
-                        "translateX": -0,
-                      },
-                      Object {
-                        "translateY": -0,
-                      },
-                      Object {
-                        "translateX": 0,
-                      },
-                      Object {
-                        "translateY": 0,
-                      },
-                      Object {
-                        "rotate": "0 deg",
-                      },
-                      Object {
-                        "perspective": 1000,
-                      },
-                    ],
+                    "flex": 1,
                   }
                 }
-              >
-                <View
-                  style={
-                    Object {
-                      "height": "100%",
-                      "opacity": 1,
-                      "overflow": "hidden",
-                    }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
                   }
-                >
-                  <Gradient>
-                    <View
-                      style={
-                        Object {
-                          "alignItems": "center",
-                          "flex": 1,
-                          "justifyContent": "center",
-                        }
-                      }
-                    >
-                      <Svg>
-                        <G>
-                          <Path />
-                        </G>
-                      </Svg>
-                    </View>
-                  </Gradient>
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                </View>
-              </View>
+                }
+              />
             </View>
-          </View>
+          </Gestures>
           <View
             style={
               Object {
@@ -434,10 +298,24 @@ exports[`2. portrait default modal 1`] = `
               style={
                 Object {
                   "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 19,
                 }
               }
             >
               Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 20,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
             </Text>
           </View>
         </View>
@@ -452,23 +330,385 @@ exports[`2. portrait default modal 1`] = `
     }
   >
     <View>
-      <Gradient>
+      <Gradient
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. tablet landscape default modal 1`] = `
+<View>
+  <Modal>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#1D1D1B",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "alignItems": "center",
               "flex": 1,
-              "justifyContent": "center",
+              "position": "relative",
             }
           }
         >
-          <Svg>
-            <G>
-              <Path />
-            </G>
-          </Svg>
+          <View
+            style={
+              Object {
+                "left": 20,
+                "position": "absolute",
+                "top": 20,
+                "zIndex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                    "borderRadius": 40,
+                    "height": 40,
+                    "justifyContent": "center",
+                    "width": 40,
+                  }
+                }
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "85%",
+                      "width": "85%",
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <Gestures
+            style={
+              Object {
+                "alignItems": "center",
+                "flexGrow": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              <Gradient
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+            </View>
+          </Gestures>
+          <View
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "paddingHorizontal": 20,
+                "paddingVertical": 20,
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 19,
+                }
+              }
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 20,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
         </View>
-      </Gradient>
+      </RCTSafeAreaView>
+    </View>
+  </Modal>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View>
+      <Gradient
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. tablet portrait default modal 1`] = `
+<View>
+  <Modal>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#1D1D1B",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "position": "relative",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "left": 20,
+                "position": "absolute",
+                "top": 20,
+                "zIndex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                    "borderRadius": 40,
+                    "height": 40,
+                    "justifyContent": "center",
+                    "width": 40,
+                  }
+                }
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "85%",
+                      "width": "85%",
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <Gestures
+            style={
+              Object {
+                "alignItems": "center",
+                "flexGrow": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <Gradient
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+            </View>
+          </Gestures>
+          <View
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "paddingHorizontal": 20,
+                "paddingVertical": 20,
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 19,
+                }
+              }
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 20,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+  </Modal>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View>
+      <Gradient
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
       <Image
         style={
           Object {

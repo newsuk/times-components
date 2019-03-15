@@ -67,6 +67,7 @@
     "@times-components/gestures": "3.3.31",
     "@times-components/gradient": "2.3.31",
     "@times-components/link": "3.2.30",
+    "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",
     "@times-components/svgs": "2.5.4",
     "@times-components/utils": "4.7.4",

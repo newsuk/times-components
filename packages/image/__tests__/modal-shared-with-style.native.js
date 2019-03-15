@@ -10,13 +10,16 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import "./mocks";
-import Image, { ModalImage } from "../src";
+import Responsive from "@times-components/responsive";
+import { setIsTablet } from "./mocks";
+
+import ModalImage from "../src/modal-image";
 
 // eslint-disable-next-line react/prop-types
-const MockCaption = ({ style: { text, container } }) => (
+const MockCaption = ({ style: { text, caption, credits, container } }) => (
   <View style={container}>
-    <Text style={text}>Caption</Text>
+    <Text style={{ ...text, ...caption }}>Caption</Text>
+    <Text style={{ ...text, ...credits }}>Credits</Text>
   </View>
 );
 
@@ -24,6 +27,12 @@ const props = {
   caption: <MockCaption />,
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
+
+function callOnLayout(testRenderer, layout = { height: 700, width: 300 }) {
+  testRenderer.root.children[0].instance.onLowResLayout({
+    nativeEvent: { layout }
+  });
+}
 
 export default () => {
   addSerializers(
@@ -40,33 +49,55 @@ export default () => {
     {
       name: "landscape default modal",
       test: () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} aspectRatio={2} />
+        const testRenderer = TestRenderer.create(
+          <Responsive>
+            <ModalImage {...props} aspectRatio={2} />
+          </Responsive>
         );
 
-        testInstance.root.findAllByType(Image).forEach(img =>
-          img.children[0].props.onLayout({
-            nativeEvent: { layout: { height: 350, width: 700 } }
-          })
-        );
-
-        expect(testInstance).toMatchSnapshot();
+        expect(testRenderer).toMatchSnapshot();
       }
     },
     {
       name: "portrait default modal",
       test: () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} aspectRatio={0.5} />
+        const testRenderer = TestRenderer.create(
+          <Responsive>
+            <ModalImage {...props} aspectRatio={0.5} />
+          </Responsive>
         );
 
-        testInstance.root.findAllByType(Image).forEach(img =>
-          img.children[0].props.onLayout({
-            nativeEvent: { layout: { height: 700, width: 350 } }
-          })
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tablet landscape default modal",
+      test: () => {
+        setIsTablet(true);
+        const testRenderer = TestRenderer.create(
+          <Responsive>
+            <ModalImage {...props} aspectRatio={2} />
+          </Responsive>
         );
 
-        expect(testInstance).toMatchSnapshot();
+        callOnLayout(testRenderer, { height: 1300, width: 700 });
+
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "tablet portrait default modal",
+      test: () => {
+        setIsTablet(true);
+        const testRenderer = TestRenderer.create(
+          <Responsive>
+            <ModalImage {...props} aspectRatio={0.5} />
+          </Responsive>
+        );
+
+        callOnLayout(testRenderer, { height: 700, width: 1300 });
+
+        expect(testRenderer).toMatchSnapshot();
       }
     }
   ];

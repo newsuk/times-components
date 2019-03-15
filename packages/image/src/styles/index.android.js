@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import sharedStyles, { captionStyles } from "./shared";
+import sharedStyles, { captionStyles, tabletCaptionStyles } from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
@@ -9,5 +9,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export { captionStyles };
+export { captionStyles, tabletCaptionStyles };
 export default styles;
