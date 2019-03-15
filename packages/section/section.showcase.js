@@ -8,8 +8,7 @@ import Section from "./src/section";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
-    ([e, ...args]) => {
-      e.preventDefault();
+    args => {
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
     }
   ]);
