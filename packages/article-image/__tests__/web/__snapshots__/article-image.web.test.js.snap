@@ -32,9 +32,7 @@ Array [
           alt=""
           src="https://img/someImage"
         />
-        <div>
-          <div />
-        </div>
+        <div />
       </div>
     </div>
   </div>,
@@ -75,9 +73,7 @@ Array [
           alt=""
           src="https://img/someImage"
         />
-        <div>
-          <div />
-        </div>
+        <div />
       </div>
     </div>
   </div>,
@@ -111,9 +107,7 @@ Array [
           alt=""
           src="https://img/someImage?resize=50"
         />
-        <div>
-          <div />
-        </div>
+        <div />
       </div>
     </div>
   </div>,

@@ -3,15 +3,43 @@
 exports[`1. three child element 1`] = `
 <div>
   <div>
-    leader-1
+    <div>
+      leader-2
+    </div>
   </div>
   <div />
   <div>
-    leader-2
+    <div>
+      leader-1
+    </div>
   </div>
   <div />
   <div>
-    leader-3
+    <div>
+      leader-3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. tablet - three child element 1`] = `
+<div>
+  <div>
+    <div>
+      leader-2
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      leader-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      leader-3
+    </div>
   </div>
 </div>
 `;

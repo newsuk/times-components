@@ -10,7 +10,12 @@ import styles from "./styles";
 const { puzzleContainer, header, headLine, imageContainer, link } = styles;
 
 const TileAK = ({ id, image, onPress, title, url }) => (
-  <Link key={id} linkStyle={link} onPress={e => onPress(e, { url })} url={url}>
+  <Link
+    key={id}
+    linkStyle={link}
+    onPress={() => onPress({ id, title, url })}
+    url={url}
+  >
     <View style={puzzleContainer}>
       <View style={header}>
         <ArticleSummaryHeadline headline={title} style={headLine} />

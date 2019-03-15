@@ -4,33 +4,20 @@ import PropTypes from "prop-types";
 import { EditionProvider } from "@times-components/provider";
 import Section from "@times-components/section";
 import withNativeProvider from "../with-native-provider";
+import trackSection from "./track-section";
 
-const { track } = NativeModules.ReactAnalytics;
-const {
-  onArticlePress,
-  onPuzzlePress,
-  onSectionLoaded
-} = NativeModules.SectionEvents || {
+const { onArticlePress, onPuzzlePress } = NativeModules.SectionEvents || {
   onArticlePress: () => {},
-  onPuzzlePress: () => {},
-  onSectionLoaded: () => {}
-};
-
-const analyticsStream = event => {
-  if (event.object === "Section" && event.action === "Viewed") {
-    onSectionLoaded(event.attrs.sectionName, event);
-  } else {
-    track(event);
-  }
+  onPuzzlePress: () => {}
 };
 
 const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
   const SectionPageView = withNativeProvider(
     section ? (
       <Section
-        analyticsStream={analyticsStream}
-        onArticlePress={(_, { url }) => onArticlePress(url)}
-        onPuzzlePress={(_, { url }) => onPuzzlePress(url)}
+        analyticsStream={trackSection}
+        onArticlePress={({ id, url }) => onArticlePress(url, id)}
+        onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
         publicationName={publicationName}
         section={JSON.parse(section)}
       />
@@ -48,7 +35,7 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
             .filter(({ title }) => title === sectionTitle)
             .map(sectionData => (
               <Section
-                analyticsStream={analyticsStream}
+                analyticsStream={trackSection}
                 onArticlePress={(_, { url }) => onArticlePress(url)}
                 onPuzzlePress={(_, { url }) => onPuzzlePress(url)}
                 publicationName={pubName}

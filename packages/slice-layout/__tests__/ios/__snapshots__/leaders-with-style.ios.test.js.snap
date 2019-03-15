@@ -4,38 +4,136 @@ exports[`1. three child element 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
+      "flexDirection": "row",
       "paddingBottom": 5,
     }
   }
 >
-  <Text>
-    leader-1
-  </Text>
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "paddingHorizontal": 10,
+        "width": "33%",
       }
     }
-  />
-  <Text>
-    leader-2
-  </Text>
+  >
+    <Text>
+      leader-2
+    </Text>
+  </View>
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 10,
       }
     }
   />
-  <Text>
-    leader-3
-  </Text>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-3
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. tablet - three child element 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "paddingBottom": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 10,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-3
+    </Text>
+  </View>
 </View>
 `;

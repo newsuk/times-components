@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article summary headline component 1`] = `
+<Text
+  accessibilityRole="heading"
+  aria-level="3"
+  style={
+    Object {
+      "color": "black",
+      "fontFamily": "TimesModern-Bold",
+      "fontSize": 22,
+      "fontWeight": "900",
+      "lineHeight": 25,
+      "marginBottom": 5,
+    }
+  }
+>
+  PM hails breakthrough ahead of key Commons vote
+</Text>
+`;
+
+exports[`2. article summary strapline component 1`] = `
+<Text
+  accessibilityRole="heading"
+  aria-level="4"
+  style={
+    Object {
+      "color": "black",
+      "fontFamily": "TimesModern-Regular",
+      "fontSize": 19,
+      "lineHeight": 21,
+      "paddingBottom": 10,
+    }
+  }
+>
+  PM hails breakthrough ahead of key Commons vote
+</Text>
+`;

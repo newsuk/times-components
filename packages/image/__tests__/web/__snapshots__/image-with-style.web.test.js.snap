@@ -17,30 +17,6 @@ exports[`1. default image 1`] = `
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-  bottom: 0px;
-  display: flex;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  left: 0px;
-  padding-bottom: 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  z-index: 0;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
@@ -53,6 +29,12 @@ exports[`1. default image 1`] = `
 }
 
 .IS1 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
   flex: 1;
 }
 
@@ -65,7 +47,7 @@ exports[`1. default image 1`] = `
 </style>
 
 <div
-  className="S2"
+  className="S1"
 >
   <div
     className="IS2"
@@ -73,13 +55,9 @@ exports[`1. default image 1`] = `
     <img
       className="c0"
     />
-    <div
-      className="S1"
-    >
-      <Gradient
-        className="IS1"
-      />
-    </div>
+    <Gradient
+      className="IS1"
+    />
   </div>
 </div>
 `;
@@ -101,30 +79,6 @@ exports[`2. default modal 1`] = `
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-  bottom: 0px;
-  display: flex;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  left: 0px;
-  padding-bottom: 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  z-index: 0;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
@@ -137,6 +91,12 @@ exports[`2. default modal 1`] = `
 }
 
 .IS1 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
   flex: 1;
 }
 
@@ -149,7 +109,7 @@ exports[`2. default modal 1`] = `
 </style>
 
 <div
-  className="S2"
+  className="S1"
 >
   <div
     className="IS2"
@@ -157,13 +117,9 @@ exports[`2. default modal 1`] = `
     <img
       className="c0"
     />
-    <div
-      className="S1"
-    >
-      <Gradient
-        className="IS1"
-      />
-    </div>
+    <Gradient
+      className="IS1"
+    />
   </div>
 </div>
 `;

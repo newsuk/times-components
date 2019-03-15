@@ -10,8 +10,7 @@ class GradientBase extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      height: 0,
-      width: 0
+      dimensions: null
     };
   }
 
@@ -21,13 +20,26 @@ class GradientBase extends Component {
     }
   }) => {
     this.setState({
-      height,
-      width
+      dimensions: {
+        height,
+        width
+      }
     });
   };
 
+  getDimensions() {
+    const { dimensions } = this.state;
+    const { height, width } = this.props;
+
+    if (dimensions) {
+      return dimensions;
+    }
+
+    return { height, width };
+  }
+
   render() {
-    const { height, width } = this.state;
+    const { height, width } = this.getDimensions();
     const { children, degrees, startColour, endColour, style } = this.props;
 
     const { start, end } = angleToPoints(((degrees + 90) / 180) * Math.PI);
@@ -38,8 +50,13 @@ class GradientBase extends Component {
       .line(-width, 0)
       .line(0, -height);
 
+    const onLayoutProps = height && width ? {} : { onLayout: this.onLayout };
+
     return (
-      <View onLayout={this.onLayout} style={[styles.container, style]}>
+      <View
+        {...onLayoutProps}
+        style={[{ backgroundColor: startColour }, styles.container, style]}
+      >
         <Surface height={height} style={styles.surface} width={width}>
           <Shape
             d={d}

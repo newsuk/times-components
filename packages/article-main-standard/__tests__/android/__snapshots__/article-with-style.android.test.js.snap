@@ -25,7 +25,7 @@ exports[`full article with style on mobile 1`] = `
       <View
         style={
           Object {
-            "marginBottom": -13.75,
+            "marginBottom": 0,
             "marginTop": 10,
           }
         }
@@ -40,8 +40,8 @@ exports[`full article with style on mobile 1`] = `
             "fontSize": 30,
             "fontWeight": "400",
             "lineHeight": 33,
-            "marginBottom": 15,
-            "marginTop": 15,
+            "marginBottom": 10,
+            "marginTop": 5,
           }
         }
       >
@@ -54,14 +54,22 @@ exports[`full article with style on mobile 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 28,
-            "marginTop": -7,
+            "marginTop": -2,
             "paddingBottom": 12,
           }
         }
       >
         Some Standfirst
       </Text>
-      <ArticleFlags />
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
     </View>
     <View
       style={
@@ -73,7 +81,6 @@ exports[`full article with style on mobile 1`] = `
           "marginRight": 10,
           "paddingLeft": 0,
           "paddingRight": 0,
-          "paddingTop": 9,
         }
       }
     >
@@ -153,7 +160,7 @@ exports[`full article with style on tablet 1`] = `
       <View
         style={
           Object {
-            "marginBottom": -13.75,
+            "marginBottom": 0,
             "marginTop": 10,
           }
         }
@@ -168,8 +175,8 @@ exports[`full article with style on tablet 1`] = `
             "fontSize": 30,
             "fontWeight": "400",
             "lineHeight": 33,
-            "marginBottom": 15,
-            "marginTop": 15,
+            "marginBottom": 10,
+            "marginTop": 5,
           }
         }
       >
@@ -182,14 +189,22 @@ exports[`full article with style on tablet 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 28,
-            "marginTop": -7,
+            "marginTop": -2,
             "paddingBottom": 12,
           }
         }
       >
         Some Standfirst
       </Text>
-      <ArticleFlags />
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
     </View>
     <View
       style={
@@ -201,7 +216,6 @@ exports[`full article with style on tablet 1`] = `
           "marginRight": 10,
           "paddingLeft": 0,
           "paddingRight": 0,
-          "paddingTop": 9,
         }
       }
     >

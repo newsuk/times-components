@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.60](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.59...@times-components/ios-app@0.7.60) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.59](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.58...@times-components/ios-app@0.7.59) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.58](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.57...@times-components/ios-app@0.7.58) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.57](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.56...@times-components/ios-app@0.7.57) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.56](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.55...@times-components/ios-app@0.7.56) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.55](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.54...@times-components/ios-app@0.7.55) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.54](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.53...@times-components/ios-app@0.7.54) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.53](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.52...@times-components/ios-app@0.7.53) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 ## [0.7.52](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.51...@times-components/ios-app@0.7.52) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/ios-app

@@ -15,7 +15,7 @@ import Image from "../src";
 import shared from "./shared.base";
 
 const getLayoutEventForWidth = width => ({
-  nativeEvent: { layout: { width } }
+  nativeEvent: { layout: { height: width / 2, width } }
 });
 
 export default () => {
@@ -32,7 +32,7 @@ export default () => {
   );
 
   const props = {
-    aspectRatio: 3 / 2,
+    aspectRatio: 2,
     highResSize: 900,
     uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };
@@ -112,7 +112,7 @@ export default () => {
         const uri =
           "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100";
         const testInstance = TestRenderer.create(
-          <Image aspectRatio={3 / 2} highResSize={999} uri={uri} />
+          <Image {...props} uri={uri} />
         );
 
         testInstance.root.children[0].props.onLayout(
@@ -129,12 +129,7 @@ export default () => {
       name: "image with borderRadius",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image
-            aspectRatio={3 / 2}
-            borderRadius={10}
-            highResSize={1000}
-            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
-          />
+          <Image {...props} borderRadius={10} />
         );
         expect(testInstance).toMatchSnapshot();
       }
@@ -143,13 +138,7 @@ export default () => {
       name: "uses lowResSize image as placeholder if passed",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Image
-            aspectRatio={3 / 2}
-            borderRadius={10}
-            highResSize={2000}
-            lowResSize={800}
-            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
-          />
+          <Image {...props} highResSize={2000} lowResSize={800} />
         );
         expect(testInstance).toMatchSnapshot();
       }
@@ -165,6 +154,16 @@ export default () => {
 
         testInstance.root.children[0].props.onLayout(mockEvt);
         expect(mockOnLayout).toHaveBeenCalledWith(mockEvt);
+      }
+    },
+    {
+      name: "handle layout change",
+      test() {
+        const testRenderer = TestRenderer.create(<Image {...props} />);
+
+        testRenderer.getInstance().onImageLayout(getLayoutEventForWidth(600));
+
+        expect(testRenderer).toMatchSnapshot();
       }
     }
   ];

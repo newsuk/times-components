@@ -72,8 +72,8 @@ exports[`1. daily universal register slice 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 25%;
+  padding-left: 25%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -455,24 +455,71 @@ exports[`2. leaders slice 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -480,7 +527,7 @@ exports[`2. leaders slice 1`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -501,23 +548,39 @@ exports[`2. leaders slice 1`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -559,24 +622,71 @@ exports[`2. leaders slice 2`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -584,7 +694,7 @@ exports[`2. leaders slice 2`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -605,23 +715,39 @@ exports[`2. leaders slice 2`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -633,6 +759,44 @@ exports[`3. lead one and one slice 1`] = `
 }
 
 .IS1 {
+  width: 70%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  width: 30%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -642,17 +806,28 @@ exports[`3. lead one and one slice 1`] = `
 </style>
 
 <div
-  className="IS1 S1"
+  className="IS5 S1"
 >
   <div
-    className="S1"
+    className="IS4 S1"
   >
-    <TileU
-      tileName="lead"
+    <div
+      className="IS1 S1"
+    >
+      <TileU
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
     />
-    <TileC
-      tileName="support"
-    />
+    <div
+      className="IS3 S1"
+    >
+      <TileC
+        tileName="support"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -664,17 +839,21 @@ exports[`4. lead one and four slice 1`] = `
 }
 
 .IS1 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 50%;
 }
 
 .IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -685,6 +864,44 @@ exports[`4. lead one and four slice 1`] = `
 }
 
 .IS4 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-bottom-width: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 50%;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -694,35 +911,46 @@ exports[`4. lead one and four slice 1`] = `
 </style>
 
 <div
-  className="IS4 S1"
+  className="IS8 S1"
 >
-  <TileAC
-    tileName="lead"
-  />
   <div
-    className="S1"
+    className="IS7 S1"
   >
-    <TileAD
-      tileName="support1"
-    />
     <div
       className="IS1 S1"
-    />
-    <TileAD
-      tileName="support2"
+    >
+      <TileAC
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
     />
     <div
-      className="IS2 S1"
-    />
-    <TileAD
-      tileName="support3"
-    />
-    <div
-      className="IS3 S1"
-    />
-    <TileAD
-      tileName="support4"
-    />
+      className="IS6 S1"
+    >
+      <TileAD
+        tileName="support1"
+      />
+      <div
+        className="IS3 S1"
+      />
+      <TileAD
+        tileName="support2"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileAD
+        tileName="support3"
+      />
+      <div
+        className="IS5 S1"
+      />
+      <TileAD
+        tileName="support4"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -741,20 +969,41 @@ exports[`5. lead two no pic and two 1`] = `
 }
 
 .IS2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS3 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS4 {
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.IS4 {
+.IS5 {
+  width: 50%;
+}
+
+.IS6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS7 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -764,32 +1013,40 @@ exports[`5. lead two no pic and two 1`] = `
 </style>
 
 <div
-  className="IS4 S1"
+  className="IS7 S1"
 >
   <div
-    className="S1"
+    className="IS6 S1"
   >
-    <TileX
-      tileName="lead1"
-    />
-    <div
-      className="IS1 S1"
-    />
-    <TileY
-      tileName="lead2"
-    />
     <div
       className="IS2 S1"
-    />
-    <TileD
-      tileName="support1"
+    >
+      <TileX
+        tileName="lead1"
+      />
+      <div
+        className="IS1 S1"
+      />
+      <TileY
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="IS3"
     />
     <div
-      className="IS3 S1"
-    />
-    <TileZ
-      tileName="support2"
-    />
+      className="IS5 S1"
+    >
+      <TileD
+        tileName="support1"
+      />
+      <div
+        className="IS4 S1"
+      />
+      <TileZ
+        tileName="support2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -906,7 +1163,17 @@ exports[`8. secondary four slice 1`] = `
 }
 
 .IS1 {
-  width: 50%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  width: 25%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -920,39 +1187,20 @@ exports[`8. secondary four slice 1`] = `
 }
 
 .IS3 {
-  width: 50%;
-}
-
-.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 
-.IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 50%;
-}
-
-.IS7 {
+.IS4 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -962,29 +1210,55 @@ exports[`8. secondary four slice 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
-  width: 50%;
-}
-
-.IS9 {
+.IS5 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+}
+
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  width: 25%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
-.IS10 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -994,10 +1268,10 @@ exports[`8. secondary four slice 1`] = `
 </style>
 
 <div
-  className="IS10 S1"
+  className="IS9 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -1016,25 +1290,21 @@ exports[`8. secondary four slice 1`] = `
         tileName="secondary2"
       />
     </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="IS9 S1"
-  >
     <div
-      className="IS6 S1"
+      className="IS4"
+    />
+    <div
+      className="IS5 S1"
     >
       <TileC
         tileName="secondary3"
       />
     </div>
     <div
-      className="IS7"
+      className="IS6"
     />
     <div
-      className="IS8 S1"
+      className="IS7 S1"
     >
       <TileC
         tileName="secondary4"
@@ -1208,6 +1478,7 @@ exports[`10. secondary two and two slice 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1224,13 +1495,58 @@ exports[`10. secondary two and two slice 1`] = `
 }
 
 .IS6 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS7 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS8 {
+  width: 50%;
+}
+
+.IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1240,48 +1556,56 @@ exports[`10. secondary two and two slice 1`] = `
 </style>
 
 <div
-  className="IS7 S1"
+  className="IS11 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS10 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS4 S1"
     >
-      <TileV
-        tileName="secondary1"
+      <div
+        className="IS1 S1"
+      >
+        <TileV
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="IS2"
       />
+      <div
+        className="IS3 S1"
+      >
+        <TileV
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div
-      className="IS2"
+      className="IS5 S1"
     />
     <div
-      className="IS3 S1"
+      className="IS9 S1"
     >
-      <TileV
-        tileName="secondary2"
+      <div
+        className="IS6 S1"
+      >
+        <TileG
+          tileName="support1"
+        />
+      </div>
+      <div
+        className="IS7"
       />
+      <div
+        className="IS8 S1"
+      >
+        <TileG
+          tileName="support2"
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="S1"
-  >
-    <TileG
-      tileName="support1"
-    />
-  </div>
-  <div
-    className="IS6 S1"
-  />
-  <div
-    className="S1"
-  >
-    <TileG
-      tileName="support2"
-    />
   </div>
 </div>
 `;
@@ -1712,24 +2036,71 @@ exports[`13. leaders slice 1`] = `
 }
 
 .IS5 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  margin-right: 10px;
-  margin-left: 10px;
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS7 {
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
 }
 
 .IS8 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+
+.IS12 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -1737,7 +2108,7 @@ exports[`13. leaders slice 1`] = `
 </style>
 
 <div
-  className="IS8 S2"
+  className="IS12 S2"
 >
   <div
     className="IS4 S2"
@@ -1758,23 +2129,39 @@ exports[`13. leaders slice 1`] = `
     </div>
   </div>
   <div
-    className="IS7 S2"
+    className="IS11 S2"
   >
-    <TileM
-      tileName="leader1"
-    />
     <div
-      className="IS5 S2"
-    />
-    <TileM
-      tileName="leader2"
-    />
-    <div
-      className="IS6 S2"
-    />
-    <TileM
-      tileName="leader3"
-    />
+      className="IS10 S2"
+    >
+      <div
+        className="IS5 S2"
+      >
+        <TileAG
+          tileName="leader2"
+        />
+      </div>
+      <div
+        className="IS6"
+      />
+      <div
+        className="IS7 S2"
+      >
+        <TileAG
+          tileName="leader1"
+        />
+      </div>
+      <div
+        className="IS8"
+      />
+      <div
+        className="IS9 S2"
+      >
+        <TileAG
+          tileName="leader3"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;

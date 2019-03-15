@@ -19,9 +19,6 @@ const sharedStyles = {
     marginLeft: 0,
     marginRight: 0
   },
-  articleMiddleContainer: {
-    paddingTop: 9
-  },
   byline: {
     ...fontFactory({
       font: "supporting",

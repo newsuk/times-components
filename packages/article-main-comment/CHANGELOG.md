@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.46](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.45...@times-components/article-main-comment@0.15.46) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.45](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.44...@times-components/article-main-comment@0.15.45) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.44](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.43...@times-components/article-main-comment@0.15.44) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.43](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.42...@times-components/article-main-comment@0.15.43) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.42](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.41...@times-components/article-main-comment@0.15.42) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.41](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.40...@times-components/article-main-comment@0.15.41) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.40](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.39...@times-components/article-main-comment@0.15.40) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.15.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.38...@times-components/article-main-comment@0.15.39) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [0.15.38](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.15.37...@times-components/article-main-comment@0.15.38) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article-main-comment

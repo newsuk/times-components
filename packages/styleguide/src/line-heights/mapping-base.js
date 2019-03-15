@@ -22,7 +22,7 @@ const mapping = {
   headline: {
     articleHeadline: 45,
     commentsHeadline: 29,
-    headline: 35,
+    headline: 33,
     infoTitle: 22,
     leadHeadline: 26,
     pageComponentHeadline: 27,

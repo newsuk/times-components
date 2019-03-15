@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.60](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.59...@times-components/android-app@0.13.60) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.59](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.58...@times-components/android-app@0.13.59) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.58](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.57...@times-components/android-app@0.13.58) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.57](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.56...@times-components/android-app@0.13.57) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.56](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.55...@times-components/android-app@0.13.56) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.55](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.54...@times-components/android-app@0.13.55) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.54](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.53...@times-components/android-app@0.13.54) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.13.53](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.52...@times-components/android-app@0.13.53) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.13.52](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.51...@times-components/android-app@0.13.52) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/android-app

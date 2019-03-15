@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.20.3...@times-components/slice-layout@0.20.4) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.20.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.20.2...@times-components/slice-layout@0.20.3) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.20.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.20.1...@times-components/slice-layout@0.20.2) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.20.0...@times-components/slice-layout@0.20.1) (2019-03-13)
+
+
+### Bug Fixes
+
+* deps ([#1803](https://github.com/newsuk/times-components/issues/1803)) ([7b0861d](https://github.com/newsuk/times-components/commit/7b0861d))
+
+
+
+
+
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.19.3...@times-components/slice-layout@0.20.0) (2019-03-13)
+
+
+### Features
+
+* Implement Leaders Slice for Tablet ([#1787](https://github.com/newsuk/times-components/issues/1787)) ([4b26eb2](https://github.com/newsuk/times-components/commit/4b26eb2))
+
+
+
+
+
+## [0.19.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.19.2...@times-components/slice-layout@0.19.3) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.19.1...@times-components/slice-layout@0.19.2) (2019-03-13)
+
+
+### Bug Fixes
+
+* iOS article load and section load analytics ([#1797](https://github.com/newsuk/times-components/issues/1797)) ([ba0c67e](https://github.com/newsuk/times-components/commit/ba0c67e))
+
+
+
+
+
 ## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.19.0...@times-components/slice-layout@0.19.1) (2019-03-12)
 
 

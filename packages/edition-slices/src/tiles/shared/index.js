@@ -5,4 +5,11 @@ import TileSummary from "./tile-summary";
 import withTileTracking from "./tile-tracking-events";
 import withPuzzleTileTracking from "./puzzle-tracking-events";
 
-export { getCrop, TileImage, TileLink, TileSummary, withPuzzleTileTracking, withTileTracking };
+export {
+  getCrop,
+  TileImage,
+  TileLink,
+  TileSummary,
+  withPuzzleTileTracking,
+  withTileTracking
+};

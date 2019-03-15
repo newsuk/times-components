@@ -5,14 +5,12 @@ import Context, { defaults } from "@times-components/context";
 import { themeFactory } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
-import filterInteractives from "./filter-interactives";
+import trackArticle from "./track-article";
 
 const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
 
-const { track } = NativeModules.ReactAnalytics;
 const {
   onArticlePress,
-  onArticleLoaded,
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
@@ -31,8 +29,7 @@ const ArticleBase = ({
   refetch,
   omitErrors,
   scale,
-  sectionName: pageSection,
-  showInteractives
+  sectionName: pageSection
 }) => {
   const { section: articleSection, template } = article || {};
   const section = pageSection || articleSection || "default";
@@ -60,14 +57,8 @@ const ArticleBase = ({
     <Context.Provider value={{ theme }}>
       <Article
         adConfig={adConfig}
-        analyticsStream={event => {
-          if (event.object === "Article" && event.action === "Viewed") {
-            onArticleLoaded(event.attrs.articleId, event);
-          } else {
-            track(event);
-          }
-        }}
-        article={showInteractives ? article : filterInteractives(article)}
+        analyticsStream={trackArticle}
+        article={article}
         error={omitErrors ? null : error}
         interactiveConfig={interactiveConfig}
         isLoading={isLoading || (omitErrors && error)}

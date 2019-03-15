@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.46](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.45...@times-components/card@4.4.46) (2019-03-15)
+
+
+### Bug Fixes
+
+* portrait images in modals ([#1800](https://github.com/newsuk/times-components/issues/1800)) ([73f62b2](https://github.com/newsuk/times-components/commit/73f62b2))
+
+
+
+
+
+## [4.4.45](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.44...@times-components/card@4.4.45) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [4.4.44](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.43...@times-components/card@4.4.44) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [4.4.43](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.42...@times-components/card@4.4.43) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [4.4.42](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.41...@times-components/card@4.4.42) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
 ## [4.4.41](https://github.com/newsuk/times-components/compare/@times-components/card@4.4.40...@times-components/card@4.4.41) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/card

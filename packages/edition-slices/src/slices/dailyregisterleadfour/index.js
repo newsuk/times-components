@@ -45,7 +45,12 @@ const DailyRegisterLeadFour = ({
   };
 
   return (
-    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
+    <ResponsiveSlice
+      renderHuge={renderSlice}
+      renderMedium={renderSlice}
+      renderSmall={renderSlice}
+      renderWide={renderSlice}
+    />
   );
 };
 

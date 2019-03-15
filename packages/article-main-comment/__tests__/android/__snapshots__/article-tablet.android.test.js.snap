@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article main comment - tablet 1`] = `
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "marginBottom": 20,
+        "paddingBottom": 25,
+        "paddingTop": 35,
+        "width": 660,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "width": 660,
+        }
+      }
+    >
+      <Image
+        style={
+          Object {
+            "borderRadius": 50,
+            "height": 100,
+            "marginBottom": 25,
+            "overflow": "hidden",
+            "width": 100,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleLabel />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 45,
+            "lineHeight": 45,
+            "marginBottom": 13.75,
+            "textAlign": "center",
+          }
+        }
+      >
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 15,
+            "marginTop": 5,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 20,
+            "lineHeight": 25,
+            "marginBottom": 15,
+            "paddingHorizontal": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <ArticleBylineWithLinks />
+        </View>
+        <View
+          style={
+            Object {
+              "borderRightColor": "#DBDBDB",
+              "borderRightWidth": 1,
+              "height": 15,
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+                "marginTop": "auto",
+              }
+            }
+          >
+            Friday March 13 2015, 6:54pm, The Times
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
+`;

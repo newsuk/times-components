@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.4...@times-components/section@0.4.5) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.3...@times-components/section@0.4.4) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.2...@times-components/section@0.4.3) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.1...@times-components/section@0.4.2) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.0...@times-components/section@0.4.1) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.3.6...@times-components/section@0.4.0) (2019-03-13)
+
+
+### Features
+
+* Add new params to section clicks ([#1798](https://github.com/newsuk/times-components/issues/1798)) ([20ffde0](https://github.com/newsuk/times-components/commit/20ffde0))
+
+
+
+
+
+## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/section@0.3.5...@times-components/section@0.3.6) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/section@0.3.4...@times-components/section@0.3.5) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
 ## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/section@0.3.3...@times-components/section@0.3.4) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/section

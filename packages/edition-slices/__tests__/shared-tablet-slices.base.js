@@ -1,9 +1,11 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
   mockDailyRegisterSlice,
+  mockLeadersSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneFullWidthSlice,
   mockLeadTwoNoPicAndTwoSlice,
@@ -21,6 +23,7 @@ import {
   DailyRegisterLeadFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
+  LeadersSlice,
   LeadTwoNoPicAndTwoSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
@@ -51,6 +54,11 @@ const slices = [
     mock: mockLeadTwoNoPicAndTwoSlice(),
     name: "lead two no pic and two tablet slice",
     Slice: LeadTwoNoPicAndTwoSlice
+  },
+  {
+    mock: mockLeadersSlice(),
+    name: "leaders slice",
+    Slice: LeadersSlice
   },
   {
     mock: mockSecondaryOneSlice(),
@@ -89,11 +97,11 @@ const slices = [
   }
 ];
 
-export default () => {
-  const tests = slices.map(({ mock, name, Slice }) => ({
-    name,
+const tabletTester = type =>
+  slices.map(({ mock, name, Slice }) => ({
+    name: `${name} - ${type}`,
     test: () => {
-      setDimension(1000);
+      setDimension({ width: editionBreakpointWidths[type] });
       const output = TestRenderer.create(
         <Responsive>
           <Slice onPress={() => {}} slice={mock} />
@@ -103,6 +111,13 @@ export default () => {
       expect(output).toMatchSnapshot();
     }
   }));
+
+export default () => {
+  const tests = [
+    ...tabletTester("medium"),
+    ...tabletTester("wide"),
+    ...tabletTester("huge")
+  ];
 
   iterator(tests);
 };

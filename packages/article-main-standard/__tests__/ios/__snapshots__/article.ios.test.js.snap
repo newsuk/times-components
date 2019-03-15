@@ -35,13 +35,15 @@ exports[`1. an article 1`] = `
       >
         Some Standfirst
       </Text>
-      <ArticleFlags
-        flags={
-          Array [
-            "NEW",
-          ]
-        }
-      />
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              "NEW",
+            ]
+          }
+        />
+      </View>
     </View>
     <View>
       <View>
@@ -77,9 +79,11 @@ exports[`1. an article 1`] = `
 </ArticleSkeleton>
 `;
 
-exports[`2. an error 1`] = `<ArticleError />`;
+exports[`2. loading 1`] = `null`;
 
-exports[`3. an article with no headline falls back to use shortheadline 1`] = `
+exports[`3. an error 1`] = `<ArticleError />`;
+
+exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <ArticleSkeleton>
   <View>
     <View />
@@ -89,7 +93,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       >
         Some Short Headline
       </Text>
-      <ArticleFlags />
     </View>
     <View>
       <View>
@@ -102,7 +105,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 </ArticleSkeleton>
 `;
 
-exports[`4. an article with ads 1`] = `
+exports[`5. an article with ads 1`] = `
 <ArticleSkeleton>
   <View>
     <View />
@@ -112,7 +115,6 @@ exports[`4. an article with ads 1`] = `
       >
         Some Headline
       </Text>
-      <ArticleFlags />
     </View>
     <View>
       <View>

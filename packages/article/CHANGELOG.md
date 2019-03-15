@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.86](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.85...@times-components/article@6.6.86) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.85](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.84...@times-components/article@6.6.85) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.84](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.83...@times-components/article@6.6.84) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.83](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.82...@times-components/article@6.6.83) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.82](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.81...@times-components/article@6.6.82) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.81](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.80...@times-components/article@6.6.81) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.80](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.79...@times-components/article@6.6.80) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [6.6.79](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.78...@times-components/article@6.6.79) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [6.6.78](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.77...@times-components/article@6.6.78) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article

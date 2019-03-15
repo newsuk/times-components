@@ -39,8 +39,8 @@ exports[`full article with style 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "lineHeight": 35,
-          "marginBottom": 10,
+          "lineHeight": 33,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -51,7 +51,7 @@ exports[`full article with style 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -166,7 +166,7 @@ exports[`full article with style in the culture magazine 1`] = `
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -177,7 +177,7 @@ exports[`full article with style in the culture magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -292,7 +292,7 @@ exports[`full article with style in the style magazine 1`] = `
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -303,7 +303,7 @@ exports[`full article with style in the style magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -418,7 +418,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -429,7 +429,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -544,7 +544,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
           "fontFamily": "Flama-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -555,7 +555,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -670,7 +670,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
           "fontFamily": "CenturyGothic-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -681,7 +681,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -796,7 +796,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
           "fontFamily": "Tiempos-Headline-Bold",
           "fontSize": 30,
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 5,
           "textAlign": "center",
         }
       }
@@ -807,7 +807,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >

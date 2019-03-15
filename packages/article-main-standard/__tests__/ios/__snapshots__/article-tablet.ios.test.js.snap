@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article main standard - tablet 1`] = `
+<ArticleSkeleton>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "width": 660,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "marginTop": 30,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "width": 660,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginTop": 10,
+          }
+        }
+      >
+        <ArticleLabel />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 45,
+            "fontWeight": "700",
+            "lineHeight": 45,
+            "marginBottom": 7,
+            "marginTop": 5,
+          }
+        }
+      >
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 20,
+            "lineHeight": 25,
+            "paddingBottom": 10,
+          }
+        }
+      >
+        How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 1,
+          "marginBottom": 20,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "paddingBottom": 4,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          <ArticleBylineWithLinks />
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "paddingBottom": 4,
+            "paddingTop": 9,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "paddingBottom": 10,
+          }
+        }
+      >
+        <ModalImage />
+        <Caption />
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
+`;

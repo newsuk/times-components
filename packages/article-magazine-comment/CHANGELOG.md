@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.18...@times-components/article-magazine-comment@0.15.19) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.18](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.17...@times-components/article-magazine-comment@0.15.18) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.17](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.16...@times-components/article-magazine-comment@0.15.17) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.16](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.15...@times-components/article-magazine-comment@0.15.16) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.15](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.14...@times-components/article-magazine-comment@0.15.15) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.14](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.13...@times-components/article-magazine-comment@0.15.14) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.12...@times-components/article-magazine-comment@0.15.13) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [0.15.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.11...@times-components/article-magazine-comment@0.15.12) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [0.15.11](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@0.15.10...@times-components/article-magazine-comment@0.15.11) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

@@ -54,9 +54,12 @@ const ArticleHeader = ({
             >
               {headline}
             </Text>
-            <View style={styles.flags}>
-              <ArticleFlags color={textColour} flags={flags} />
-            </View>
+
+            {flags.length > 0 && (
+              <View style={styles.flags}>
+                <ArticleFlags color={textColour} flags={flags} />
+              </View>
+            )}
             <Standfirst color={textColour} standfirst={standfirst} />
           </View>
         </View>

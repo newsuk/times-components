@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register tablet slice 1`] = `
+exports[`1. daily universal register tablet slice - medium 1`] = `
 <View>
   <View>
     <Image
@@ -41,7 +41,7 @@ exports[`1. daily universal register tablet slice 1`] = `
 </View>
 `;
 
-exports[`2. lead one and one tablet slice 1`] = `
+exports[`2. lead one and one tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -59,7 +59,7 @@ exports[`2. lead one and one tablet slice 1`] = `
 </View>
 `;
 
-exports[`3. lead one full width tablet slice 1`] = `
+exports[`3. lead one full width tablet slice - medium 1`] = `
 <View>
   <TileR
     tileName="lead"
@@ -67,7 +67,7 @@ exports[`3. lead one full width tablet slice 1`] = `
 </View>
 `;
 
-exports[`4. lead two no pic and two tablet slice 1`] = `
+exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -93,7 +93,48 @@ exports[`4. lead two no pic and two tablet slice 1`] = `
 </View>
 `;
 
-exports[`5. secondary one tablet slice 1`] = `
+exports[`5. leaders slice - medium 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <View>
+        <TileM
+          tileName="leader2"
+        />
+      </View>
+      <View />
+      <View>
+        <TileM
+          tileName="leader1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileM
+          tileName="leader3"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. secondary one tablet slice - medium 1`] = `
 <View>
   <TileW
     tileName="secondary"
@@ -101,7 +142,7 @@ exports[`5. secondary one tablet slice 1`] = `
 </View>
 `;
 
-exports[`6. secondary four tablet slice 1`] = `
+exports[`7. secondary four tablet slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -131,7 +172,7 @@ exports[`6. secondary four tablet slice 1`] = `
 </View>
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`8. secondary one and columnist - medium 1`] = `
 <View>
   <View>
     <View>
@@ -149,7 +190,7 @@ exports[`7. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`8. secondary two and two slice 1`] = `
+exports[`9. secondary two and two slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -183,7 +224,7 @@ exports[`8. secondary two and two slice 1`] = `
 </View>
 `;
 
-exports[`9. lead one and four slice 1`] = `
+exports[`10. lead one and four slice - medium 1`] = `
 <View>
   <View>
     <View>
@@ -213,7 +254,579 @@ exports[`9. lead one and four slice 1`] = `
 </View>
 `;
 
-exports[`10. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two slice - medium 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAE
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAE
+        tileName="secondary2"
+      />
+    </View>
+  </View>
+  <View />
+  <View>
+    <View>
+      <TileG
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileG
+        tileName="support2"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`12. daily universal register tablet slice - wide 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+        }
+      }
+    />
+    <Text>
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/leaves.png",
+        }
+      }
+    />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/cake.png",
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
+`;
+
+exports[`13. lead one and one tablet slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileU
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="support"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`14. lead one full width tablet slice - wide 1`] = `
+<View>
+  <TileR
+    tileName="lead"
+  />
+</View>
+`;
+
+exports[`15. lead two no pic and two tablet slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileX
+        tileName="lead1"
+      />
+      <View />
+      <TileY
+        tileName="lead2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileD
+        tileName="support1"
+      />
+      <View />
+      <TileZ
+        tileName="support2"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`16. leaders slice - wide 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <View>
+        <TileAG
+          tileName="leader2"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAG
+          tileName="leader1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAG
+          tileName="leader3"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`17. secondary one tablet slice - wide 1`] = `
+<View>
+  <TileW
+    tileName="secondary"
+  />
+</View>
+`;
+
+exports[`18. secondary four tablet slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileC
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary3"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`19. secondary one and columnist - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAA
+        tileName="secondary"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAB
+        tileName="columnist"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`20. secondary two and two slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <View>
+        <TileV
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileV
+          tileName="secondary2"
+        />
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <TileG
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileG
+          tileName="support2"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`21. lead one and four slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAC
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAD
+        tileName="support1"
+      />
+      <View />
+      <TileAD
+        tileName="support2"
+      />
+      <View />
+      <TileAD
+        tileName="support3"
+      />
+      <View />
+      <TileAD
+        tileName="support4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`22. secondary two no pic and two slice - wide 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAE
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAE
+        tileName="secondary2"
+      />
+    </View>
+  </View>
+  <View />
+  <View>
+    <View>
+      <TileG
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileG
+        tileName="support2"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`23. daily universal register tablet slice - huge 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+        }
+      }
+    />
+    <Text>
+      Daily Universal Register
+    </Text>
+    <TileS />
+    <View />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/leaves.png",
+        }
+      }
+    />
+    <TileS />
+    <View />
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/cake.png",
+        }
+      }
+    />
+    <TileS />
+  </View>
+</View>
+`;
+
+exports[`24. lead one and one tablet slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TileU
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="support"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`25. lead one full width tablet slice - huge 1`] = `
+<View>
+  <TileR
+    tileName="lead"
+  />
+</View>
+`;
+
+exports[`26. lead two no pic and two tablet slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TileX
+        tileName="lead1"
+      />
+      <View />
+      <TileY
+        tileName="lead2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileD
+        tileName="support1"
+      />
+      <View />
+      <TileZ
+        tileName="support2"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`27. leaders slice - huge 1`] = `
+<View>
+  <View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+        }
+      }
+    />
+    <View>
+      <Text>
+         Leading Articles 
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <View>
+        <TileAG
+          tileName="leader2"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAG
+          tileName="leader1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAG
+          tileName="leader3"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`28. secondary one tablet slice - huge 1`] = `
+<View>
+  <TileW
+    tileName="secondary"
+  />
+</View>
+`;
+
+exports[`29. secondary four tablet slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TileC
+        tileName="secondary1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary3"
+      />
+    </View>
+    <View />
+    <View>
+      <TileC
+        tileName="secondary4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`30. secondary one and columnist - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAA
+        tileName="secondary"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAB
+        tileName="columnist"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`31. secondary two and two slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <View>
+        <TileV
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileV
+          tileName="secondary2"
+        />
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <TileG
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileG
+          tileName="support2"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`32. lead one and four slice - huge 1`] = `
+<View>
+  <View>
+    <View>
+      <TileAC
+        tileName="lead"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAD
+        tileName="support1"
+      />
+      <View />
+      <TileAD
+        tileName="support2"
+      />
+      <View />
+      <TileAD
+        tileName="support3"
+      />
+      <View />
+      <TileAD
+        tileName="support4"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`33. secondary two no pic and two slice - huge 1`] = `
 <View>
   <View>
     <View>

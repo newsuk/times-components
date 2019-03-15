@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.39](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.38...@times-components/related-articles@5.5.39) (2019-03-15)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.38](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.37...@times-components/related-articles@5.5.38) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.37](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.36...@times-components/related-articles@5.5.37) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.36](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.35...@times-components/related-articles@5.5.36) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.35](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.34...@times-components/related-articles@5.5.35) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.34](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.33...@times-components/related-articles@5.5.34) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.33](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.32...@times-components/related-articles@5.5.33) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.32](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.31...@times-components/related-articles@5.5.32) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [5.5.31](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.30...@times-components/related-articles@5.5.31) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/related-articles

@@ -9,7 +9,7 @@ exports[`full article with style 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -36,7 +36,7 @@ exports[`full article with style 1`] = `
             "color": "rgba(255, 255, 255, 1)",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 35,
+            "lineHeight": 33,
             "marginBottom": 10,
             "textAlign": "center",
           }
@@ -61,7 +61,7 @@ exports[`full article with style 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -142,7 +142,7 @@ exports[`full article with style in the culture magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -194,7 +194,7 @@ exports[`full article with style in the culture magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -275,7 +275,7 @@ exports[`full article with style in the style magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -327,7 +327,7 @@ exports[`full article with style in the style magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -408,7 +408,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -460,7 +460,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -541,7 +541,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -593,7 +593,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -674,7 +674,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -726,7 +726,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }
@@ -807,7 +807,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
         "backgroundColor": "rgba(60, 129, 190, 1)",
         "paddingBottom": 45,
         "paddingHorizontal": 20,
-        "paddingTop": 60,
+        "paddingTop": 45,
         "width": "100%",
       }
     }
@@ -859,7 +859,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 25,
-            "marginBottom": 15,
+            "marginBottom": 0,
             "paddingHorizontal": 10,
             "textAlign": "center",
           }

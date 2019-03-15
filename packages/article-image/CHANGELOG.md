@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.14](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.13...@times-components/article-image@4.8.14) (2019-03-15)
+
+
+### Bug Fixes
+
+* portrait images in modals ([#1800](https://github.com/newsuk/times-components/issues/1800)) ([73f62b2](https://github.com/newsuk/times-components/commit/73f62b2))
+
+
+
+
+
+## [4.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.12...@times-components/article-image@4.8.13) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [4.8.12](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.11...@times-components/article-image@4.8.12) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [4.8.11](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.10...@times-components/article-image@4.8.11) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [4.8.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.9...@times-components/article-image@4.8.10) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
 ## [4.8.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@4.8.8...@times-components/article-image@4.8.9) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article-image

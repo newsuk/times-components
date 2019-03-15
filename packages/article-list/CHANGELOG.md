@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.15...@times-components/article-list@6.5.16) (2019-03-15)
+
+
+### Bug Fixes
+
+* portrait images in modals ([#1800](https://github.com/newsuk/times-components/issues/1800)) ([73f62b2](https://github.com/newsuk/times-components/commit/73f62b2))
+
+
+
+
+
+## [6.5.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.14...@times-components/article-list@6.5.15) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [6.5.14](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.13...@times-components/article-list@6.5.14) (2019-03-14)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.12...@times-components/article-list@6.5.13) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.11...@times-components/article-list@6.5.12) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.10...@times-components/article-list@6.5.11) (2019-03-13)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/article-list@6.5.9...@times-components/article-list@6.5.10) (2019-03-12)
 
 **Note:** Version bump only for package @times-components/article-list

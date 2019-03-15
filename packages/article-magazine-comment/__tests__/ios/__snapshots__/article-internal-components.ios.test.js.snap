@@ -22,7 +22,16 @@ exports[`3. article label uses default section colour 1`] = `
 
 exports[`4. article label renders null if there is no text 1`] = `null`;
 
-exports[`5. article meta 1`] = `
+exports[`5. article label shows video label is isvideo is truthy 1`] = `
+<View>
+  <VideoLabel
+    color="#1D1D1B"
+    title="Random Label"
+  />
+</View>
+`;
+
+exports[`6. article meta 1`] = `
 <View>
   <View>
     <ArticleBylineWithLinks

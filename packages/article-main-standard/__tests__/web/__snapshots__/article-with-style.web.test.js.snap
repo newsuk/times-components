@@ -382,7 +382,7 @@ exports[`full article with style 1`] = `
 
 .S4 {
   font-weight: inherit;
-  line-height: 35px;
+  line-height: 33px;
   margin-top: 0px;
   margin-bottom: 7px;
   padding-top: 0px;
@@ -440,8 +440,8 @@ exports[`full article with style 1`] = `
   flex-basis: auto;
   margin-top: 0px;
   margin-bottom: 20px;
+  padding-top: 0px;
   padding-bottom: 0px;
-  padding-top: 9px;
 }
 
 .S10 {
