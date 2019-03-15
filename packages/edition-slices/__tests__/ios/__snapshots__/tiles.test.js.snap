@@ -17,7 +17,13 @@ exports[`1. tile a 1`] = `
       Driving Off
     </Text>
     <View>
-      <ArticleFlags />
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </View>
   </View>
   <View>
@@ -54,7 +60,13 @@ exports[`2. tile b 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -91,7 +103,13 @@ exports[`3. tile c 1`] = `
       Driving Off
     </Text>
     <View>
-      <ArticleFlags />
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </View>
   </View>
 </Link>
@@ -121,7 +139,13 @@ exports[`4. tile d 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -152,7 +176,13 @@ exports[`5. tile e 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -190,7 +220,13 @@ exports[`6. tile f 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -222,7 +258,13 @@ exports[`7. tile g 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -254,7 +296,13 @@ exports[`8. tile h 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
       <Text>
         <Text>
@@ -297,7 +345,13 @@ exports[`9. tile i 1`] = `
       Driving Off
     </Text>
     <View>
-      <ArticleFlags />
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </View>
   </View>
 </Link>
@@ -327,7 +381,13 @@ exports[`10. tile j 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -352,7 +412,13 @@ exports[`11. tile l 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -415,6 +481,11 @@ exports[`13. tile n 1`] = `
       <View>
         <ArticleFlags
           color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
         />
       </View>
     </View>
@@ -442,6 +513,11 @@ exports[`14. tile o 1`] = `
       <View>
         <ArticleFlags
           color="#CCC"
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
         />
       </View>
     </View>
@@ -480,7 +556,13 @@ exports[`15. tile p 1`] = `
         The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
       <Text>
         <Text>
@@ -525,7 +607,13 @@ exports[`17. tile r 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
     <View>
@@ -600,7 +688,13 @@ exports[`19. tile t 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -625,7 +719,13 @@ exports[`20. tile u 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
     <View>
@@ -662,7 +762,13 @@ exports[`21. tile v 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -694,7 +800,13 @@ exports[`22. tile w 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
     <View>
@@ -738,7 +850,13 @@ exports[`23. tile x 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -776,7 +894,13 @@ exports[`24. tile y 1`] = `
       </Text>
     </Text>
     <View>
-      <ArticleFlags />
+      <ArticleFlags
+        flags={
+          Array [
+            "EXCLUSIVE",
+          ]
+        }
+      />
     </View>
   </View>
 </Link>
@@ -800,7 +924,13 @@ exports[`25. tile z 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
     <View>
@@ -837,7 +967,13 @@ exports[`26. tile aa 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -869,7 +1005,13 @@ exports[`27. tile ab 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
       <Text>
         <Text>
@@ -914,7 +1056,13 @@ exports[`28. tile ae 1`] = `
         </Text>
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              "EXCLUSIVE",
+            ]
+          }
+        />
       </View>
     </View>
   </View>
