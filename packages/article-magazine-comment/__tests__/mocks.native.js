@@ -11,7 +11,7 @@ jest.mock("@times-components/article-comments", () => "ArticleComments");
 jest.mock("@times-components/article-error", () => "ArticleError");
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags",
-  getActiveFlags: "getActiveFlags"
+  getActiveFlags: flags => flags
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-label", () => "ArticleLabel");
