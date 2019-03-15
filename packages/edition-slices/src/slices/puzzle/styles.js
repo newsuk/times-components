@@ -7,8 +7,7 @@ import {
 const smallBreakpointStyles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    paddingHorizontal: spacing(2)
   },
   header: {
     paddingHorizontal: spacing(3),

@@ -16,10 +16,10 @@ import {
   mockListTwoAndSixNoPicSlice,
   mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockSecondaryOneAndFourSlice,
-  mockPuzzleSlice
+  mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
+import getPuzzleSlice from "./utils";
 import "./mocks";
 import {
   CommentLeadAndCartoonSlice,
@@ -111,7 +111,7 @@ const slices = [
     Slice: CommentLeadAndCartoonSlice
   },
   {
-    mock: mockPuzzleSlice(),
+    mock: getPuzzleSlice(3),
     name: "puzzle slice",
     Slice: PuzzleSlice
   }

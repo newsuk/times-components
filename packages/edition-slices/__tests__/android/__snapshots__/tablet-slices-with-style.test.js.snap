@@ -688,3 +688,166 @@ exports[`10. secondary two no pic and two slice 1`] = `
   </View>
 </View>
 `;
+
+exports[`11. puzzle slice 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingHorizontal": 15,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Link>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F0F0F0",
+            "flex": 1,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 15,
+              "paddingTop": 15,
+              "width": "85%",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 27,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Times Concise medium No 7881
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "flex-end",
+              "width": "85%",
+            }
+          }
+        >
+          <Image />
+        </View>
+      </View>
+    </Link>
+    <Link>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F0F0F0",
+            "flex": 1,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 15,
+              "paddingTop": 15,
+              "width": "85%",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 27,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Times Concise medium No 7881
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "flex-end",
+              "width": "85%",
+            }
+          }
+        >
+          <Image />
+        </View>
+      </View>
+    </Link>
+    <Link>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F0F0F0",
+            "flex": 1,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 15,
+              "paddingTop": 15,
+              "width": "85%",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 27,
+                "marginBottom": 5,
+              }
+            }
+          >
+            Times Concise medium No 7881
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "flex-end",
+              "width": "85%",
+            }
+          }
+        >
+          <Image />
+        </View>
+      </View>
+    </Link>
+  </View>
+</View>
+`;

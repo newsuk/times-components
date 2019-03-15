@@ -15,6 +15,7 @@ import {
   mockSecondaryTwoAndTwoSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
+import getPuzzleSlice from "./utils";
 import "./mocks";
 import {
   DailyRegisterLeadFourSlice,
@@ -26,7 +27,8 @@ import {
   LeadOneAndFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
   SecondaryOneAndColumnistSlice,
-  SecondaryTwoAndTwoSlice
+  SecondaryTwoAndTwoSlice,
+  PuzzleSlice
 } from "../src/slices";
 
 const slices = [
@@ -79,6 +81,11 @@ const slices = [
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
     name: "secondary two no pic and two slice",
     Slice: SecondaryTwoNoPicAndTwoSlice
+  },
+  {
+    mock: getPuzzleSlice(3),
+    name: "puzzle slice",
+    Slice: PuzzleSlice
   }
 ];
 

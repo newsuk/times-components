@@ -1,8 +1,8 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { mockPuzzleSlice } from "@times-components/fixture-generator";
 import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
+import { mockPuzzleSlice } from "@times-components/fixture-generator";
 import { PuzzleSlice } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>
@@ -35,21 +35,21 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   </Responsive>
 );
 
-const getPuzzleslice = count => {
-  const puzzles = new Array(count).fill(0).map(() => mockPuzzleSlice());
-  const { id, name } = puzzles[0];
-
-  return { id, name, puzzles };
+const getPuzzleSlice = count => {
+  const puzzles = new Array(count)
+    .fill(0)
+    .map((_, index) => ({ ...mockPuzzleSlice(), id: `${index}` }));
+  return { puzzles };
 };
 
 const sliceStories = [
   {
-    mock: getPuzzleslice(1),
+    mock: getPuzzleSlice(1),
     name: "Single Puzzle",
     Slice: PuzzleSlice
   },
   {
-    mock: getPuzzleslice(3),
+    mock: getPuzzleSlice(3),
     name: "Multiple Puzzles",
     Slice: PuzzleSlice
   }

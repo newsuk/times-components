@@ -836,3 +836,246 @@ exports[`10. secondary two no pic and two slice 1`] = `
   </div>
 </div>
 `;
+
+exports[`11. puzzle slice 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  font-size: 25px;
+}
+
+.IS2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS3 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS4 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS5 {
+  font-size: 25px;
+}
+
+.IS6 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS7 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS8 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS9 {
+  font-size: 25px;
+}
+
+.IS10 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS11 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS12 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS13 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS14 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS14 S2"
+>
+  <div
+    className="IS13 S2"
+  >
+    <Link
+      linkStyle={
+        Object {
+          "flex": 1,
+        }
+      }
+      url="/crossword/123"
+    >
+      <div
+        className="IS4 S2"
+      >
+        <div
+          className="IS2 S2"
+        >
+          <h3
+            aria-level="3"
+            className="IS1 S1"
+            role="heading"
+          >
+            Times Concise medium No 7881
+          </h3>
+        </div>
+        <div
+          className="IS3 S2"
+        >
+          <Image
+            aspectRatio={1.5}
+            uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+          />
+        </div>
+      </div>
+    </Link>
+    <Link
+      linkStyle={
+        Object {
+          "flex": 1,
+        }
+      }
+      url="/crossword/123"
+    >
+      <div
+        className="IS8 S2"
+      >
+        <div
+          className="IS6 S2"
+        >
+          <h3
+            aria-level="3"
+            className="IS5 S1"
+            role="heading"
+          >
+            Times Concise medium No 7881
+          </h3>
+        </div>
+        <div
+          className="IS7 S2"
+        >
+          <Image
+            aspectRatio={1.5}
+            uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+          />
+        </div>
+      </div>
+    </Link>
+    <Link
+      linkStyle={
+        Object {
+          "flex": 1,
+        }
+      }
+      url="/crossword/123"
+    >
+      <div
+        className="IS12 S2"
+      >
+        <div
+          className="IS10 S2"
+        >
+          <h3
+            aria-level="3"
+            className="IS9 S1"
+            role="heading"
+          >
+            Times Concise medium No 7881
+          </h3>
+        </div>
+        <div
+          className="IS11 S2"
+        >
+          <Image
+            aspectRatio={1.5}
+            uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+          />
+        </div>
+      </div>
+    </Link>
+  </div>
+</div>
+`;
