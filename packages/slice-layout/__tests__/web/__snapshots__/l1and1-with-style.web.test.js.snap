@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. lead one and one 1`] = `
+exports[`1. lead one and one - small 1`] = `
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -27,7 +27,7 @@ exports[`1. lead one and one 1`] = `
 </div>
 `;
 
-exports[`2. tablet - lead one and one 1`] = `
+exports[`2. lead one and one - medium 1`] = `
 <style>
 .S1 {
   border-bottom-width: 0px;
