@@ -38,14 +38,27 @@ exports[`1. landscape default modal 1`] = `
             }
           >
             <View>
-              <Image
+              <View
                 style={
                   Object {
-                    "height": 24,
-                    "width": 24,
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                    "borderRadius": 30,
+                    "height": 30,
+                    "justifyContent": "center",
+                    "width": 30,
                   }
                 }
-              />
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "85%",
+                      "width": "85%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
           <View
@@ -254,14 +267,27 @@ exports[`2. portrait default modal 1`] = `
             }
           >
             <View>
-              <Image
+              <View
                 style={
                   Object {
-                    "height": 24,
-                    "width": 24,
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                    "borderRadius": 30,
+                    "height": 30,
+                    "justifyContent": "center",
+                    "width": 30,
                   }
                 }
-              />
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "85%",
+                      "width": "85%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
           <View
@@ -374,10 +400,13 @@ exports[`2. portrait default modal 1`] = `
           <View
             style={
               Object {
-                "bottom": 14,
-                "left": 16,
+                "backgroundColor": "#1D1D1B80",
+                "bottom": 0,
+                "left": 0,
+                "paddingHorizontal": 16,
+                "paddingVertical": 14,
                 "position": "absolute",
-                "right": 16,
+                "right": 0,
               }
             }
           >

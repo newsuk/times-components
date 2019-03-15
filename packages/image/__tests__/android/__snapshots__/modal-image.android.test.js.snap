@@ -14,14 +14,16 @@ exports[`1. modal image 1`] = `
             <View
               pointerEvents="box-only"
             >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+              <View>
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/close-button.png",
+                    }
                   }
-                }
-              />
+                />
+              </View>
             </View>
           </View>
           <View>
@@ -141,14 +143,16 @@ exports[`2. modal image with custom highressize 1`] = `
             <View
               pointerEvents="box-only"
             >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+              <View>
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/close-button.png",
+                    }
                   }
-                }
-              />
+                />
+              </View>
             </View>
           </View>
           <View>

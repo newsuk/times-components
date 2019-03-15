@@ -8,8 +8,16 @@ const styles = {
     zIndex: 1
   },
   closeButton: {
-    height: 24,
-    width: 24
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    borderRadius: 30,
+    height: 30,
+    justifyContent: "center",
+    width: 30
+  },
+  closeButtonImage: {
+    height: "85%",
+    width: "85%"
   },
   container: {
     flex: 1
