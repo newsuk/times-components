@@ -7,7 +7,7 @@ const styles = {
     width: "85%"
   },
   headLine: {
-    fontSize: 25
+    fontSize: 22
   },
   imageContainer: {
     alignSelf: "flex-end",

@@ -3,7 +3,8 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
   mockEditionSlice,
-  mockDailyRegisterSlice
+  mockDailyRegisterSlice,
+  mockPuzzleSlice
 } from "@times-components/fixture-generator";
 
 import {
@@ -35,7 +36,9 @@ import {
   TileZ,
   TileAA,
   TileAB,
-  TileAG
+  TileAG,
+  TileAJ,
+  TileAK
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -51,6 +54,20 @@ const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
 const testTile = (Tile, mockTile = tile) => {
   const output = TestRenderer.create(
     <Tile onPress={() => {}} tile={mockTile} />
+  );
+  expect(output).toMatchSnapshot();
+};
+
+const testPuzzleTile = Tile => {
+  const puzzle = mockPuzzleSlice();
+  const output = TestRenderer.create(
+    <Tile
+      id={puzzle.id}
+      image={puzzle.image}
+      onPress={() => {}}
+      title={puzzle.title}
+      url={puzzle.url}
+    />
   );
   expect(output).toMatchSnapshot();
 };
@@ -172,6 +189,14 @@ export default () => {
     {
       name: "tile ag",
       test: () => testTile(TileAG)
+    },
+    {
+      name: "tile aj",
+      test: () => testPuzzleTile(TileAJ)
+    },
+    {
+      name: "tile ak",
+      test: () => testPuzzleTile(TileAK)
     }
   ];
 
