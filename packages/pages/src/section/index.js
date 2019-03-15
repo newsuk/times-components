@@ -37,7 +37,9 @@ const SectionPage = ({ editionId, publicationName, section, sectionTitle }) => {
               <Section
                 analyticsStream={trackSection}
                 onArticlePress={({ id, url }) => onArticlePress(url, id)}
-                onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
+                onPuzzlePress={({ id, title, url }) =>
+                  onPuzzlePress(url, title, id)
+                }
                 publicationName={pubName}
                 section={sectionData}
               />
