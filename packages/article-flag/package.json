@@ -64,6 +64,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.26.3",
     "@times-components/utils": "4.7.4",
+    "mockdate": "2.0.2",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

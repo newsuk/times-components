@@ -193,8 +193,6 @@ const renderArticle = ({
         textColour: inDepthTextColour
       };
 
-      console.log("data", data);
-
       return (
         <Context.Provider
           value={{
