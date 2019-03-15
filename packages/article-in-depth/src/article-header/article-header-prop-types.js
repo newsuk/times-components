@@ -9,7 +9,12 @@ const articleHeaderPropTypes = {
       red: PropTypes.number
     })
   }),
-  flags: PropTypes.arrayOf(PropTypes.string),
+  flags: PropTypes.arrayOf(
+    PropTypes.shape({
+      expiryTime: PropTypes.string,
+      type: PropTypes.string
+    })
+  ),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
@@ -33,7 +38,7 @@ const articleHeaderDefaultProps = {
       red: 255
     }
   },
-  flags: null,
+  flags: [],
   hasVideo: false,
   label: null,
   standfirst: null,
