@@ -42,22 +42,22 @@ import {
 const slices = [
   {
     mock: mockDailyRegisterSlice(),
-    name: "daily universal register slice",
+    name: "daily universal register",
     Slice: DailyRegisterLeadFourSlice
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "lead one full width slice",
+    name: "lead one full width",
     Slice: LeadOneFullWidthSlice
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "lead one and one slice",
+    name: "lead one and one",
     Slice: LeadOneAndOneSlice
   },
   {
     mock: mockLeadOneAndFourSlice(),
-    name: "lead one and four slice",
+    name: "lead one and four",
     Slice: LeadOneAndFourSlice
   },
   {
@@ -67,52 +67,52 @@ const slices = [
   },
   {
     mock: mockSecondaryOneSlice(),
-    name: "secondary one slice",
+    name: "secondary one",
     Slice: SecondaryOneSlice
   },
   {
     mock: mockSecondaryOneAndColumnistSlice(),
-    name: "secondary one and columnist slice",
+    name: "secondary one and columnist",
     Slice: SecondaryOneAndColumnistSlice
   },
   {
     mock: mockSecondaryFourSlice(),
-    name: "secondary four slice",
+    name: "secondary four",
     Slice: SecondaryFourSlice
   },
   {
     mock: mockSecondaryOneAndFourSlice(),
-    name: "secondary one and four slice",
+    name: "secondary one and four",
     Slice: SecondaryOneAndFourSlice
   },
   {
     mock: mockSecondaryTwoAndTwoSlice(),
-    name: "secondary two and two slice",
+    name: "secondary two and two",
     Slice: SecondaryTwoAndTwoSlice
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
-    name: "secondary two no pic and two slice",
+    name: "secondary two no pic and two",
     Slice: SecondaryTwoNoPicAndTwoSlice
   },
   {
     mock: mockListTwoAndSixNoPicSlice(),
-    name: "list two and six no pic slice",
+    name: "list two and six no pic",
     Slice: ListTwoAndSixNoPicSlice
   },
   {
     mock: mockLeadersSlice(),
-    name: "leaders slice",
+    name: "leaders",
     Slice: LeadersSlice
   },
   {
     mock: mockCommentLeadAndCartoonSlice(),
-    name: "Comment lead and cartoon slice",
+    name: "Comment lead and cartoon",
     Slice: CommentLeadAndCartoonSlice
   },
   {
     mock: mockPuzzleSlice(),
-    name: "puzzle slice",
+    name: "puzzle",
     Slice: PuzzleSlice
   }
 ];
@@ -120,12 +120,12 @@ const slices = [
 const slicesWithPubLogo = [
   {
     mock: mockSecondaryOneAndFourSlice(),
-    name: "secondary one and four slice",
+    name: "secondary one and four",
     Slice: SecondaryOneAndFourSlice
   },
   {
     mock: mockLeadersSlice(),
-    name: "leaders slice",
+    name: "leaders",
     Slice: LeadersSlice
   }
 ];

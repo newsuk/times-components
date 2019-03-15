@@ -25,13 +25,7 @@ exports[`1. tile g - layout change 1`] = `
         Driving Off
       </Text>
       <View>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -69,13 +63,7 @@ exports[`2. tile p - layout change 1`] = `
         The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </Text>
       <View>
-        <ArticleFlags
-          flags={
-            Array [
-              "EXCLUSIVE",
-            ]
-          }
-        />
+        <ArticleFlags />
       </View>
       <Text>
         <Text>

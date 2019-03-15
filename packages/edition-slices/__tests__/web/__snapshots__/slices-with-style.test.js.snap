@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register slice 1`] = `
+exports[`1. daily universal register 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -143,7 +143,7 @@ exports[`1. daily universal register slice 1`] = `
 </div>
 `;
 
-exports[`1. secondary one and four slice 1`] = `
+exports[`1. secondary one and four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -330,7 +330,7 @@ exports[`1. secondary one and four slice 1`] = `
 </div>
 `;
 
-exports[`1. secondary one and four slice 2`] = `
+exports[`1. secondary one and four 2`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -517,7 +517,7 @@ exports[`1. secondary one and four slice 2`] = `
 </div>
 `;
 
-exports[`2. lead one full width slice 1`] = `
+exports[`2. lead one full width 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -541,7 +541,7 @@ exports[`2. lead one full width slice 1`] = `
 </div>
 `;
 
-exports[`2. leaders slice 1`] = `
+exports[`2. leaders 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -708,7 +708,7 @@ exports[`2. leaders slice 1`] = `
 </div>
 `;
 
-exports[`2. leaders slice 2`] = `
+exports[`2. leaders 2`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -875,7 +875,7 @@ exports[`2. leaders slice 2`] = `
 </div>
 `;
 
-exports[`3. lead one and one slice 1`] = `
+exports[`3. lead one and one 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -955,7 +955,7 @@ exports[`3. lead one and one slice 1`] = `
 </div>
 `;
 
-exports[`4. lead one and four slice 1`] = `
+exports[`4. lead one and four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1189,7 +1189,7 @@ exports[`5. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`6. secondary one slice 1`] = `
+exports[`6. secondary one 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1213,7 +1213,7 @@ exports[`6. secondary one slice 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and columnist slice 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1294,7 +1294,7 @@ exports[`7. secondary one and columnist slice 1`] = `
 </div>
 `;
 
-exports[`8. secondary four slice 1`] = `
+exports[`8. secondary four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1452,7 +1452,7 @@ exports[`8. secondary four slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and four slice 1`] = `
+exports[`9. secondary one and four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1639,7 +1639,7 @@ exports[`9. secondary one and four slice 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two slice 1`] = `
+exports[`10. secondary two and two 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1808,7 +1808,7 @@ exports[`10. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`11. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1960,7 +1960,7 @@ exports[`11. secondary two no pic and two slice 1`] = `
 </div>
 `;
 
-exports[`12. list two and six no pic slice 1`] = `
+exports[`12. list two and six no pic 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2212,7 +2212,7 @@ exports[`12. list two and six no pic slice 1`] = `
 </div>
 `;
 
-exports[`13. leaders slice 1`] = `
+exports[`13. leaders 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2379,7 +2379,7 @@ exports[`13. leaders slice 1`] = `
 </div>
 `;
 
-exports[`14. comment lead and cartoon slice 1`] = `
+exports[`14. comment lead and cartoon 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2411,7 +2411,7 @@ exports[`14. comment lead and cartoon slice 1`] = `
 </div>
 `;
 
-exports[`15. puzzle slice 1`] = `
+exports[`15. puzzle 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);

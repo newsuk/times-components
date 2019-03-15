@@ -37,22 +37,22 @@ import {
 const slices = [
   {
     mock: mockDailyRegisterSlice(),
-    name: "daily universal register tablet slice",
+    name: "daily universal register",
     Slice: DailyRegisterLeadFourSlice
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "lead one and one tablet slice",
+    name: "lead one and one",
     Slice: LeadOneAndOneSlice
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "lead one full width tablet slice",
+    name: "lead one full width",
     Slice: LeadOneFullWidthSlice
   },
   {
     mock: mockLeadTwoNoPicAndTwoSlice(),
-    name: "lead two no pic and two tablet slice",
+    name: "lead two no pic and two",
     Slice: LeadTwoNoPicAndTwoSlice
   },
   {
@@ -62,27 +62,27 @@ const slices = [
   },
   {
     mock: mockSecondaryOneAndFourSlice(),
-    name: "secondary one and four tablet slice",
+    name: "secondary one and four",
     Slice: SecondaryOneAndFourSlice
   },
   {
     mock: mockSecondaryOneSlice(),
-    name: "secondary one tablet slice",
+    name: "secondary one",
     Slice: SecondaryOneSlice
   },
   {
     mock: mockSecondaryFourSlice(),
-    name: "secondary four tablet slice",
+    name: "secondary four",
     Slice: SecondaryFourSlice
   },
   {
     mock: mockSecondaryOneAndColumnistSlice(),
-    name: "secondary one and columnist tablet slice",
+    name: "secondary one and columnist",
     Slice: SecondaryOneAndColumnistSlice
   },
   {
     mock: mockSecondaryTwoAndTwoSlice(),
-    name: "secondary two and two tablet slice",
+    name: "secondary two and two",
     Slice: SecondaryTwoAndTwoSlice
   },
   {
@@ -92,7 +92,7 @@ const slices = [
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
-    name: "secondary two no pic and two tablet slice",
+    name: "secondary two no pic and two",
     Slice: SecondaryTwoNoPicAndTwoSlice
   }
 ];
