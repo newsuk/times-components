@@ -2208,12 +2208,22 @@ exports[`15. puzzle slice 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 10px;
-  padding-left: 10px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 
 .IS2 {
@@ -2231,7 +2241,7 @@ exports[`15. puzzle slice 1`] = `
   <div
     className="IS1 S1"
   >
-    <TileAJ
+    <TileAK
       id="0"
       image={
         Object {
@@ -2249,7 +2259,7 @@ exports[`15. puzzle slice 1`] = `
       title="Times Concise medium No 7881"
       url="/crossword/123"
     />
-    <TileAJ
+    <TileAK
       id="1"
       image={
         Object {
@@ -2267,7 +2277,7 @@ exports[`15. puzzle slice 1`] = `
       title="Times Concise medium No 7881"
       url="/crossword/123"
     />
-    <TileAJ
+    <TileAK
       id="2"
       image={
         Object {

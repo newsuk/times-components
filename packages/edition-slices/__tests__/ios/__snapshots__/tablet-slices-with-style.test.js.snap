@@ -809,7 +809,35 @@ exports[`11. secondary two no pic and two slice - medium 1`] = `
 </View>
 `;
 
-exports[`12. daily universal register tablet slice - wide 1`] = `
+exports[`12. puzzle slice - medium 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingHorizontal": 15,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <TileAK />
+    <TileAK />
+    <TileAK />
+  </View>
+</View>
+`;
+
+exports[`13. daily universal register tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -910,7 +938,7 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`13. lead one and one tablet slice - wide 1`] = `
+exports[`14. lead one and one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -961,7 +989,7 @@ exports[`13. lead one and one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`14. lead one full width tablet slice - wide 1`] = `
+exports[`15. lead one full width tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -975,7 +1003,7 @@ exports[`14. lead one full width tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`15. lead two no pic and two tablet slice - wide 1`] = `
+exports[`16. lead two no pic and two tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1047,7 +1075,7 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`16. leaders slice - wide 1`] = `
+exports[`17. leaders slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1167,7 +1195,7 @@ exports[`16. leaders slice - wide 1`] = `
 </View>
 `;
 
-exports[`17. secondary one tablet slice - wide 1`] = `
+exports[`18. secondary one tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1181,7 +1209,7 @@ exports[`17. secondary one tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`18. secondary four tablet slice - wide 1`] = `
+exports[`19. secondary four tablet slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1273,7 +1301,7 @@ exports[`18. secondary four tablet slice - wide 1`] = `
 </View>
 `;
 
-exports[`19. secondary one and columnist - wide 1`] = `
+exports[`20. secondary one and columnist - wide 1`] = `
 <View
   style={
     Object {
@@ -1326,7 +1354,7 @@ exports[`19. secondary one and columnist - wide 1`] = `
 </View>
 `;
 
-exports[`20. secondary two and two slice - wide 1`] = `
+exports[`21. secondary two and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1434,7 +1462,7 @@ exports[`20. secondary two and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`21. lead one and four slice - wide 1`] = `
+exports[`22. lead one and four slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1519,7 +1547,7 @@ exports[`21. lead one and four slice - wide 1`] = `
 </View>
 `;
 
-exports[`22. secondary two no pic and two slice - wide 1`] = `
+exports[`23. secondary two no pic and two slice - wide 1`] = `
 <View
   style={
     Object {
@@ -1618,7 +1646,35 @@ exports[`22. secondary two no pic and two slice - wide 1`] = `
 </View>
 `;
 
-exports[`23. daily universal register tablet slice - huge 1`] = `
+exports[`24. puzzle slice - wide 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "width": 1366,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingHorizontal": 15,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <TileAK />
+    <TileAK />
+    <TileAK />
+  </View>
+</View>
+`;
+
+exports[`25. daily universal register tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1719,7 +1775,7 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`24. lead one and one tablet slice - huge 1`] = `
+exports[`26. lead one and one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1770,7 +1826,7 @@ exports[`24. lead one and one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`25. lead one full width tablet slice - huge 1`] = `
+exports[`27. lead one full width tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1784,7 +1840,7 @@ exports[`25. lead one full width tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`26. lead two no pic and two tablet slice - huge 1`] = `
+exports[`28. lead two no pic and two tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1856,7 +1912,7 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`27. leaders slice - huge 1`] = `
+exports[`29. leaders slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1976,7 +2032,7 @@ exports[`27. leaders slice - huge 1`] = `
 </View>
 `;
 
-exports[`28. secondary one tablet slice - huge 1`] = `
+exports[`30. secondary one tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -1990,7 +2046,7 @@ exports[`28. secondary one tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`29. secondary four tablet slice - huge 1`] = `
+exports[`31. secondary four tablet slice - huge 1`] = `
 <View
   style={
     Object {
@@ -2082,7 +2138,7 @@ exports[`29. secondary four tablet slice - huge 1`] = `
 </View>
 `;
 
-exports[`30. secondary one and columnist - huge 1`] = `
+exports[`32. secondary one and columnist - huge 1`] = `
 <View
   style={
     Object {
@@ -2135,7 +2191,7 @@ exports[`30. secondary one and columnist - huge 1`] = `
 </View>
 `;
 
-exports[`31. secondary two and two slice - huge 1`] = `
+exports[`33. secondary two and two slice - huge 1`] = `
 <View
   style={
     Object {
@@ -2243,7 +2299,7 @@ exports[`31. secondary two and two slice - huge 1`] = `
 </View>
 `;
 
-exports[`32. lead one and four slice - huge 1`] = `
+exports[`34. lead one and four slice - huge 1`] = `
 <View
   style={
     Object {
@@ -2328,7 +2384,7 @@ exports[`32. lead one and four slice - huge 1`] = `
 </View>
 `;
 
-exports[`33. secondary two no pic and two slice - huge 1`] = `
+exports[`35. secondary two no pic and two slice - huge 1`] = `
 <View
   style={
     Object {
@@ -2427,7 +2483,7 @@ exports[`33. secondary two no pic and two slice - huge 1`] = `
 </View>
 `;
 
-exports[`11. puzzle slice 1`] = `
+exports[`36. puzzle slice - huge 1`] = `
 <View
   style={
     Object {

@@ -531,7 +531,7 @@ exports[`14. comment lead and cartoon slice 1`] = `
 exports[`15. puzzle slice 1`] = `
 <div>
   <div>
-    <TileAJ
+    <TileAK
       id="0"
       image={
         Object {
@@ -549,7 +549,7 @@ exports[`15. puzzle slice 1`] = `
       title="Times Concise medium No 7881"
       url="/crossword/123"
     />
-    <TileAJ
+    <TileAK
       id="1"
       image={
         Object {
@@ -567,7 +567,7 @@ exports[`15. puzzle slice 1`] = `
       title="Times Concise medium No 7881"
       url="/crossword/123"
     />
-    <TileAJ
+    <TileAK
       id="2"
       image={
         Object {
