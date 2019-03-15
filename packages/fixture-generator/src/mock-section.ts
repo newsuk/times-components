@@ -34,7 +34,9 @@ function getSlices(): Array<ArticleSlice> {
 }
 
 function getPuzzleSlices(count: number): Array<PuzzleSectionSlice> {
-  return new Array(count).fill(0).map((_, index) => ({ ...mockPuzzleSlice(), id: `${index}` }));
+  return new Array(count)
+    .fill(0)
+    .map((_, index) => ({ ...mockPuzzleSlice(), id: `${index}` }));
 }
 
 interface StandardSectionWithName extends StandardSection {
@@ -104,4 +106,9 @@ function mockMagazineSection(title: string): MagazineSectionWithName {
   };
 }
 
-export { getPuzzleSlices, mockMagazineSection, mockPuzzleSection, mockStandardSection };
+export {
+  getPuzzleSlices,
+  mockMagazineSection,
+  mockPuzzleSection,
+  mockStandardSection
+};

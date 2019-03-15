@@ -6,7 +6,7 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onPress",
-        getAttrs: ({ slice: { id, title, url } }) => ({
+        getAttrs: ({ id, title, url }) => ({
           puzzleId: id,
           puzzleTitle: title,
           puzzleUrl: url,
