@@ -65,14 +65,22 @@ const styles = {
 };
 
 export const captionStyles = {
+  caption: {
+    fontSize: 15,
+    lineHeight: 19
+  },
   container: {
-    backgroundColor: colours.functional.brandColourOverlay,
     bottom: 0,
     left: 0,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
+    paddingHorizontal: spacing(3),
+    paddingVertical: spacing(3),
     position: "absolute",
     right: 0
+  },
+  credits: {
+    fontSize: 10,
+    lineHeight: 20,
+    marginTop: 5
   },
   text: {
     color: colours.functional.white

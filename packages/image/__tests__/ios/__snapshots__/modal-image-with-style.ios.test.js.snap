@@ -179,11 +179,10 @@ exports[`1. landscape default modal 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "#1D1D1B80",
                 "bottom": 0,
                 "left": 0,
-                "paddingHorizontal": 16,
-                "paddingVertical": 14,
+                "paddingHorizontal": 15,
+                "paddingVertical": 15,
                 "position": "absolute",
                 "right": 0,
               }
@@ -422,11 +421,10 @@ exports[`2. portrait default modal 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "#1D1D1B80",
                 "bottom": 0,
                 "left": 0,
-                "paddingHorizontal": 16,
-                "paddingVertical": 14,
+                "paddingHorizontal": 15,
+                "paddingVertical": 15,
                 "position": "absolute",
                 "right": 0,
               }

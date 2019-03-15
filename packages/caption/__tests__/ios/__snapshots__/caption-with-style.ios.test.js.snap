@@ -1,46 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`caption with only container styles 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "blue",
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 16,
-        }
-      }
-    >
-      Some caption text goes in here
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "lineHeight": 16,
-        }
-      }
-    >
-      JUST CREDITS
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`caption with specific styles 1`] = `
+exports[`1. caption with container and text styles 1`] = `
 <View>
   <View
     style={
@@ -66,6 +26,86 @@ exports[`caption with specific styles 1`] = `
       style={
         Object {
           "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. caption with container, caption, and credit styles 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "red",
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 10,
+          "lineHeight": 16,
+        }
+      }
+    >
+      Some caption text goes in here
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 8,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`3. caption with only container styles 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+        }
+      }
+    >
+      Some caption text goes in here
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 9,
           "fontWeight": "400",
