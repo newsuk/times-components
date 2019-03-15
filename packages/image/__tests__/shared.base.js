@@ -1,10 +1,9 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import Image from "../src";
-import Placeholder from "../src/placeholder";
 
 const props = {
-  aspectRatio: 3 / 2,
+  aspectRatio: 2,
   highResSize: 800,
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
@@ -27,25 +26,11 @@ export default (renderComponent, platformTests = []) => {
     {
       name: "default layout without uri",
       test: () => {
-        const output = renderComponent(<Image aspectRatio={3 / 2} />);
-
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "handle layout change",
-      test() {
-        const testInstance = renderComponent(<Image {...props} />);
-
-        const placeholder = testInstance.root.find(
-          node => node.type === Placeholder
+        const output = renderComponent(
+          <Image aspectRatio={props.aspectRatio} />
         );
 
-        placeholder.instance.handleLayout({
-          nativeEvent: { layout: { width: 600 } }
-        });
-
-        expect(testInstance).toMatchSnapshot();
+        expect(output).toMatchSnapshot();
       }
     },
     ...platformTests

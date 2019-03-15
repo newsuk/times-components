@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. default modal 1`] = `
+exports[`1. landscape default modal 1`] = `
 <View>
   <Modal>
     <View
@@ -58,6 +58,7 @@ exports[`1. default modal 1`] = `
             <View
               style={
                 Object {
+                  "alignItems": "center",
                   "flexGrow": 1,
                   "justifyContent": "center",
                 }
@@ -108,25 +109,38 @@ exports[`1. default modal 1`] = `
                   style={
                     Object {
                       "opacity": 1,
+                      "overflow": "hidden",
                       "width": "100%",
                     }
                   }
                 >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <Gradient
+                  <Gradient>
+                    <View
                       style={
                         Object {
+                          "alignItems": "center",
                           "flex": 1,
+                          "justifyContent": "center",
                         }
                       }
-                    />
-                  </View>
+                    >
+                      <Svg>
+                        <G>
+                          <Path />
+                        </G>
+                      </Svg>
+                    </View>
+                  </Gradient>
+                  <Image
+                    style={
+                      Object {
+                        "height": "100%",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
                   <Image
                     style={
                       Object {
@@ -167,6 +181,52 @@ exports[`1. default modal 1`] = `
   </Modal>
   <View>
     <View>
+      <Gradient>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Svg>
+            <G>
+              <Path />
+            </G>
+          </Svg>
+        </View>
+      </Gradient>
+      <Image
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. portrait default modal 1`] = `
+<View>
+  <Modal>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#1D1D1B",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
       <View
         style={
           Object {
@@ -174,14 +234,183 @@ exports[`1. default modal 1`] = `
           }
         }
       >
-        <Gradient
+        <View
           style={
             Object {
               "flex": 1,
+              "position": "relative",
             }
           }
-        />
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "margin": 16,
+              }
+            }
+          >
+            <View>
+              <Image
+                style={
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "translateX": -0,
+                      },
+                      Object {
+                        "translateY": -0,
+                      },
+                      Object {
+                        "translateX": 0,
+                      },
+                      Object {
+                        "translateY": 0,
+                      },
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "translateX": -0,
+                      },
+                      Object {
+                        "translateY": -0,
+                      },
+                      Object {
+                        "translateX": 0,
+                      },
+                      Object {
+                        "translateY": 0,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "height": "100%",
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Gradient>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flex": 1,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Svg>
+                        <G>
+                          <Path />
+                        </G>
+                      </Svg>
+                    </View>
+                  </Gradient>
+                  <Image
+                    style={
+                      Object {
+                        "height": "100%",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <Image
+                    style={
+                      Object {
+                        "height": "100%",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 14,
+                "left": 16,
+                "position": "absolute",
+                "right": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                }
+              }
+            >
+              Caption
+            </Text>
+          </View>
+        </View>
       </View>
+    </View>
+  </Modal>
+  <View>
+    <View>
+      <Gradient>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Svg>
+            <G>
+              <Path />
+            </G>
+          </Svg>
+        </View>
+      </Gradient>
       <Image
         style={
           Object {

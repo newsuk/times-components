@@ -80,28 +80,6 @@ exports[`1. page error 1`] = `
   align-items: stretch;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   bottom: 0px;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
@@ -117,6 +95,28 @@ exports[`1. page error 1`] = `
   padding-bottom: 0px;
   position: absolute;
   right: 0px;
+}
+
+.S2 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  min-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
 }
 
 .S3 {
@@ -154,6 +154,16 @@ exports[`1. page error 1`] = `
 
 .IS1 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -171,13 +181,13 @@ exports[`1. page error 1`] = `
 </style>
 
 <div
-  className="c0 S1"
+  className="c0 S2"
 >
   <div
-    className="c1 S1"
+    className="c1 S2"
   >
     <div
-      className="S1"
+      className="S2"
     >
       <div
         className="IS2"
@@ -186,17 +196,13 @@ exports[`1. page error 1`] = `
           className="c2"
         />
         <div
-          className="S2"
-        >
-          <div
-            className="S1 IS1"
-          />
-        </div>
+          className="S1 IS1"
+        />
       </div>
     </div>
   </div>
   <div
-    className="c3 S1"
+    className="c3 S2"
   >
     <div
       className="S3"

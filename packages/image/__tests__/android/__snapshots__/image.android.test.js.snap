@@ -4,11 +4,32 @@ exports[`1. default layout 1`] = `
 <View
   aspectRatio={1.5}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191.87817258883248}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191.87817258883248}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
   <Image
     source={
       Object {
@@ -21,68 +42,70 @@ exports[`1. default layout 1`] = `
 
 exports[`2. default layout without uri 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191.87817258883248}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191.87817258883248}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
   <Image
     source={null}
   />
 </View>
 `;
 
-exports[`3. handle layout change 1`] = `
+exports[`3. prepend https schema 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    >
-      <View>
-        <Svg
-          height={164.46700507614213}
-          version="1.1"
-          viewBox="145 50 108 120"
-          width={164.46700507614213}
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191.87817258883248}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191.87817258883248}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
         >
-          <G
-            fill="none"
-            fillRule="evenodd"
-            stroke="none"
-            strokeWidth="1"
-          >
-            <Path
-              d="6a6c07166e9c40e4f62e57af2b507822"
-              fill="#FFFFFF"
-            />
-          </G>
-        </Svg>
-      </View>
-    </Gradient>
-  </View>
-  <Image
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-      }
-    }
-  />
-</View>
-`;
-
-exports[`4. prepend https schema 1`] = `
-<View
-  aspectRatio={1.5}
->
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
   <Image
     source={
       Object {
@@ -93,15 +116,36 @@ exports[`4. prepend https schema 1`] = `
 </View>
 `;
 
-exports[`5. handle onload event 1`] = `
+exports[`4. handle onload event 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191.87817258883248}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191.87817258883248}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
   <Image
     source={
       Object {
@@ -112,9 +156,9 @@ exports[`5. handle onload event 1`] = `
 </View>
 `;
 
-exports[`5. handle onload event 2`] = `
+exports[`4. handle onload event 2`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
   <Image
     source={
@@ -126,15 +170,36 @@ exports[`5. handle onload event 2`] = `
 </View>
 `;
 
-exports[`7. uses highressize if it exists 1`] = `
+exports[`6. uses highressize if it exists 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191.87817258883248}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191.87817258883248}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
   <Image
     source={
       Object {
@@ -145,15 +210,15 @@ exports[`7. uses highressize if it exists 1`] = `
 </View>
 `;
 
-exports[`9. image with borderradius 1`] = `
+exports[`8. image with borderradius 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={null}
+    width={null}
+  />
   <Image
     borderRadius={10}
     source={
@@ -165,17 +230,16 @@ exports[`9. image with borderradius 1`] = `
 </View>
 `;
 
-exports[`10. uses lowressize image as placeholder if passed 1`] = `
+exports[`9. uses lowressize image as placeholder if passed 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View>
-    <Gradient
-      degrees={264}
-    />
-  </View>
+  <Gradient
+    degrees={264}
+    height={null}
+    width={null}
+  />
   <Image
-    borderRadius={10}
     source={
       Object {
         "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
@@ -183,10 +247,49 @@ exports[`10. uses lowressize image as placeholder if passed 1`] = `
     }
   />
   <Image
-    borderRadius={10}
     source={
       Object {
         "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`11. handle layout change 1`] = `
+<View
+  aspectRatio={2}
+>
+  <Gradient
+    degrees={264}
+    height={300}
+    width={600}
+  >
+    <View>
+      <Svg
+        height={164.46700507614213}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={164.46700507614213}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
+  <Image
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
       }
     }
   />

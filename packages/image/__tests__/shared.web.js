@@ -11,9 +11,9 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
+import "./mocks";
 import Image from "../src";
 import Placeholder from "../src/placeholder";
-import "./mocks";
 import shared from "./shared.base";
 
 export default () => {
@@ -37,7 +37,7 @@ export default () => {
       name: "an invalid uri",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image aspectRatio={3 / 2} highResSize={1400} uri="not-valid" />
+          <Image aspectRatio={2} highResSize={1400} uri="not-valid" />
         );
 
         expect(testRenderer).toMatchSnapshot();
@@ -51,7 +51,7 @@ export default () => {
         delete window.URL;
 
         const testInstance = TestRenderer.create(
-          <Image aspectRatio={3 / 2} highResSize={1400} uri="not-valid" />
+          <Image aspectRatio={2} highResSize={1400} uri="not-valid" />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -63,11 +63,7 @@ export default () => {
       name: "with existing URL params",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image
-            aspectRatio={3 / 2}
-            highResSize={1400}
-            uri="https://image.io"
-          />
+          <Image aspectRatio={2} highResSize={1400} uri="https://image.io" />
         );
 
         expect(testRenderer).toMatchSnapshot();
@@ -79,7 +75,7 @@ export default () => {
       test: () => {
         const testRenderer = TestRenderer.create(
           <Image
-            aspectRatio={3 / 2}
+            aspectRatio={2}
             highResSize={1400}
             lowResSize={200}
             uri="https://image.io"
@@ -101,7 +97,7 @@ export default () => {
       name: "only a low res image",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
+          <Image aspectRatio={2} lowResSize={200} uri="https://image.io" />
         );
 
         expect(testRenderer).toMatchSnapshot();
@@ -112,7 +108,7 @@ export default () => {
       test: () => {
         const testRenderer = TestRenderer.create(
           <Image
-            aspectRatio={3 / 2}
+            aspectRatio={2}
             fadeImageIn
             lowResSize={200}
             uri="https://image.io"
@@ -133,7 +129,7 @@ export default () => {
       test: () => {
         const testRenderer = TestRenderer.create(
           <Image
-            aspectRatio={3 / 2}
+            aspectRatio={2}
             highResSize={900}
             lowResSize={200}
             uri="https://image.io"
@@ -147,7 +143,7 @@ export default () => {
       name: "high res image should hide placeholder after loading",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image aspectRatio={3 / 2} highResSize={900} uri="https://image.io" />
+          <Image aspectRatio={2} highResSize={900} uri="https://image.io" />
         );
 
         let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)
@@ -166,7 +162,7 @@ export default () => {
       name: "low res image should hide placeholder after loading",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image aspectRatio={3 / 2} lowResSize={200} uri="https://image.io" />
+          <Image aspectRatio={2} lowResSize={200} uri="https://image.io" />
         );
 
         let numberOfPlaceholders = testRenderer.root.findAllByType(Placeholder)

@@ -2,21 +2,13 @@
 
 exports[`1. default image 1`] = `
 <View>
-  <View
+  <Gradient
     style={
       Object {
         "flex": 1,
       }
     }
-  >
-    <Gradient
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-  </View>
+  />
   <Image
     style={
       Object {

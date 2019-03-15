@@ -48,7 +48,7 @@ export default () => {
 
         testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
-            nativeEvent: { layout: { width: 700 } }
+            nativeEvent: { layout: { height: 350, width: 700 } }
           })
         );
 
@@ -64,7 +64,7 @@ export default () => {
 
         testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
-            nativeEvent: { layout: { width: 700 } }
+            nativeEvent: { layout: { height: 350, width: 700 } }
           })
         );
 

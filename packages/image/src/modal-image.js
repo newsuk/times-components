@@ -36,7 +36,7 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { caption, highResSize } = this.props;
+    const { caption, highResSize, aspectRatio } = this.props;
     const { showModal, lowResImageWidth } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
     const captionWithStyles =
@@ -62,7 +62,12 @@ class ModalImage extends Component {
                   <Image
                     {...this.props}
                     lowResSize={lowResSize}
-                    style={styles.image}
+                    style={[
+                      styles.image,
+                      aspectRatio >= 1
+                        ? styles.imageFullWidth
+                        : styles.imageFullHeight
+                    ]}
                   />
                 </Gestures>
                 {captionWithStyles}

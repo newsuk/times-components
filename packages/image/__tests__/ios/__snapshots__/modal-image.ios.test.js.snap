@@ -28,11 +28,32 @@ exports[`1. modal image 1`] = `
                 <View
                   aspectRatio={1.5}
                 >
-                  <View>
-                    <Gradient
-                      degrees={264}
-                    />
-                  </View>
+                  <Gradient
+                    degrees={264}
+                    height={350}
+                    width={700}
+                  >
+                    <View>
+                      <Svg
+                        height={191.87817258883248}
+                        version="1.1"
+                        viewBox="145 50 108 120"
+                        width={191.87817258883248}
+                      >
+                        <G
+                          fill="none"
+                          fillRule="evenodd"
+                          stroke="none"
+                          strokeWidth="1"
+                        >
+                          <Path
+                            d="6a6c07166e9c40e4f62e57af2b507822"
+                            fill="#FFFFFF"
+                          />
+                        </G>
+                      </Svg>
+                    </View>
+                  </Gradient>
                   <Image
                     source={
                       Object {
@@ -64,11 +85,32 @@ exports[`1. modal image 1`] = `
     <View
       aspectRatio={1.5}
     >
-      <View>
-        <Gradient
-          degrees={264}
-        />
-      </View>
+      <Gradient
+        degrees={264}
+        height={350}
+        width={700}
+      >
+        <View>
+          <Svg
+            height={191.87817258883248}
+            version="1.1"
+            viewBox="145 50 108 120"
+            width={191.87817258883248}
+          >
+            <G
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <Path
+                d="6a6c07166e9c40e4f62e57af2b507822"
+                fill="#FFFFFF"
+              />
+            </G>
+          </Svg>
+        </View>
+      </Gradient>
       <Image
         source={
           Object {
@@ -109,11 +151,32 @@ exports[`2. modal image with custom highressize 1`] = `
                 <View
                   aspectRatio={1.5}
                 >
-                  <View>
-                    <Gradient
-                      degrees={264}
-                    />
-                  </View>
+                  <Gradient
+                    degrees={264}
+                    height={350}
+                    width={700}
+                  >
+                    <View>
+                      <Svg
+                        height={191.87817258883248}
+                        version="1.1"
+                        viewBox="145 50 108 120"
+                        width={191.87817258883248}
+                      >
+                        <G
+                          fill="none"
+                          fillRule="evenodd"
+                          stroke="none"
+                          strokeWidth="1"
+                        >
+                          <Path
+                            d="6a6c07166e9c40e4f62e57af2b507822"
+                            fill="#FFFFFF"
+                          />
+                        </G>
+                      </Svg>
+                    </View>
+                  </Gradient>
                   <Image
                     source={
                       Object {
@@ -145,11 +208,32 @@ exports[`2. modal image with custom highressize 1`] = `
     <View
       aspectRatio={1.5}
     >
-      <View>
-        <Gradient
-          degrees={264}
-        />
-      </View>
+      <Gradient
+        degrees={264}
+        height={350}
+        width={700}
+      >
+        <View>
+          <Svg
+            height={191.87817258883248}
+            version="1.1"
+            viewBox="145 50 108 120"
+            width={191.87817258883248}
+          >
+            <G
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <Path
+                d="6a6c07166e9c40e4f62e57af2b507822"
+                fill="#FFFFFF"
+              />
+            </G>
+          </Svg>
+        </View>
+      </Gradient>
       <Image
         source={
           Object {
