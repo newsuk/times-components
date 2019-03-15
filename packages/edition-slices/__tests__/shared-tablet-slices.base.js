@@ -15,7 +15,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryOneAndColumnistSlice,
   mockSecondaryOneAndFourSlice,
-  mockSecondaryTwoAndTwoSlice,
+  mockSecondaryTwoAndTwoSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
@@ -56,15 +56,14 @@ const slices = [
     Slice: LeadTwoNoPicAndTwoSlice
   },
   {
-<<<<<<< HEAD
     mock: mockLeadersSlice(),
     name: "leaders slice",
     Slice: LeadersSlice
-=======
+  },
+  {
     mock: mockSecondaryOneAndFourSlice(),
     name: "secondary one and four tablet slice",
     Slice: SecondaryOneAndFourSlice
->>>>>>> feat: secondary one and four on tablet
   },
   {
     mock: mockSecondaryOneSlice(),

@@ -349,7 +349,6 @@ exports[`4. lead two no pic and two tablet slice - medium 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
 exports[`5. leaders slice - medium 1`] = `
 <style>
 .S1 {
@@ -358,16 +357,10 @@ exports[`5. leaders slice - medium 1`] = `
 }
 
 .S2 {
-=======
-exports[`5. secondary one and four tablet slice - medium 1`] = `
-<style>
-.S1 {
->>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
-<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -419,68 +412,11 @@ exports[`5. secondary one and four tablet slice - medium 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-=======
-  background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS2 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS3 {
-  width: 50%;
-}
-
-.IS4 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 25%;
-}
-
-.IS7 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
->>>>>>> feat: secondary one and four on tablet
-  border-right-width: 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -502,47 +438,17 @@ exports[`5. secondary one and four tablet slice - medium 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-=======
-.IS8 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS9 {
-  width: 25%;
-}
-
-.IS10 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
->>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
-<<<<<<< HEAD
-=======
-  background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.IS12 {
->>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
-<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -604,7 +510,113 @@ exports[`5. secondary one and four tablet slice - medium 1`] = `
         <TileAG
           tileName="leader3"
         />
-=======
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. secondary one and four tablet slice - medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
@@ -685,14 +697,13 @@ exports[`5. secondary one and four tablet slice - medium 1`] = `
             tileName="support4"
           />
         </div>
->>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`6. secondary one tablet slice - medium 1`] = `
+exports[`7. secondary one tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -716,7 +727,7 @@ exports[`6. secondary one tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`7. secondary four tablet slice - medium 1`] = `
+exports[`8. secondary four tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -874,11 +885,7 @@ exports[`7. secondary four tablet slice - medium 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`8. secondary one and columnist - medium 1`] = `
-=======
-exports[`8. secondary one and columnist tablet slice - medium 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`9. secondary one and columnist tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -959,11 +966,7 @@ exports[`8. secondary one and columnist tablet slice - medium 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`9. secondary two and two slice - medium 1`] = `
-=======
-exports[`9. secondary two and two tablet slice - medium 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`10. secondary two and two tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1132,7 +1135,7 @@ exports[`9. secondary two and two tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`10. lead one and four slice - medium 1`] = `
+exports[`11. lead one and four slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1264,11 +1267,7 @@ exports[`10. lead one and four slice - medium 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`11. secondary two no pic and two slice - medium 1`] = `
-=======
-exports[`11. secondary two no pic and two tablet slice - medium 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`12. secondary two no pic and two tablet slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1420,7 +1419,7 @@ exports[`11. secondary two no pic and two tablet slice - medium 1`] = `
 </div>
 `;
 
-exports[`12. daily universal register tablet slice - wide 1`] = `
+exports[`13. daily universal register tablet slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1563,7 +1562,7 @@ exports[`12. daily universal register tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`13. lead one and one tablet slice - wide 1`] = `
+exports[`14. lead one and one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1643,7 +1642,7 @@ exports[`13. lead one and one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`14. lead one full width tablet slice - wide 1`] = `
+exports[`15. lead one full width tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1667,7 +1666,7 @@ exports[`14. lead one full width tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`15. lead two no pic and two tablet slice - wide 1`] = `
+exports[`16. lead two no pic and two tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1769,8 +1768,7 @@ exports[`15. lead two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`16. leaders slice - wide 1`] = `
+exports[`17. leaders slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1778,16 +1776,10 @@ exports[`16. leaders slice - wide 1`] = `
 }
 
 .S2 {
-=======
-exports[`16. secondary one and four tablet slice - wide 1`] = `
-<style>
-.S1 {
->>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
-<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -1839,68 +1831,11 @@ exports[`16. secondary one and four tablet slice - wide 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-=======
-  background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS2 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS3 {
-  width: 50%;
-}
-
-.IS4 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 25%;
-}
-
-.IS7 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
->>>>>>> feat: secondary one and four on tablet
-  border-right-width: 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -1922,47 +1857,17 @@ exports[`16. secondary one and four tablet slice - wide 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-=======
-.IS8 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS9 {
-  width: 25%;
-}
-
-.IS10 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
->>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
-<<<<<<< HEAD
-=======
-  background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.IS12 {
->>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
-<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -2024,7 +1929,113 @@ exports[`16. secondary one and four tablet slice - wide 1`] = `
         <TileAG
           tileName="leader3"
         />
-=======
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`18. secondary one and four tablet slice - wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
@@ -2105,14 +2116,13 @@ exports[`16. secondary one and four tablet slice - wide 1`] = `
             tileName="support4"
           />
         </div>
->>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`17. secondary one tablet slice - wide 1`] = `
+exports[`19. secondary one tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2136,7 +2146,7 @@ exports[`17. secondary one tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary four tablet slice - wide 1`] = `
+exports[`20. secondary four tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2294,11 +2304,7 @@ exports[`18. secondary four tablet slice - wide 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`19. secondary one and columnist - wide 1`] = `
-=======
-exports[`19. secondary one and columnist tablet slice - wide 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`21. secondary one and columnist tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2379,11 +2385,7 @@ exports[`19. secondary one and columnist tablet slice - wide 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`20. secondary two and two slice - wide 1`] = `
-=======
-exports[`20. secondary two and two tablet slice - wide 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`22. secondary two and two tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2552,7 +2554,7 @@ exports[`20. secondary two and two tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`21. lead one and four slice - wide 1`] = `
+exports[`23. lead one and four slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2684,11 +2686,7 @@ exports[`21. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`22. secondary two no pic and two slice - wide 1`] = `
-=======
-exports[`22. secondary two no pic and two tablet slice - wide 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`24. secondary two no pic and two tablet slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2840,7 +2838,7 @@ exports[`22. secondary two no pic and two tablet slice - wide 1`] = `
 </div>
 `;
 
-exports[`23. daily universal register tablet slice - huge 1`] = `
+exports[`25. daily universal register tablet slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2983,7 +2981,7 @@ exports[`23. daily universal register tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`24. lead one and one tablet slice - huge 1`] = `
+exports[`26. lead one and one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3063,7 +3061,7 @@ exports[`24. lead one and one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`25. lead one full width tablet slice - huge 1`] = `
+exports[`27. lead one full width tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3087,7 +3085,7 @@ exports[`25. lead one full width tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`26. lead two no pic and two tablet slice - huge 1`] = `
+exports[`28. lead two no pic and two tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3189,8 +3187,7 @@ exports[`26. lead two no pic and two tablet slice - huge 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`27. leaders slice - huge 1`] = `
+exports[`29. leaders slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -3198,16 +3195,10 @@ exports[`27. leaders slice - huge 1`] = `
 }
 
 .S2 {
-=======
-exports[`27. secondary one and four tablet slice - huge 1`] = `
-<style>
-.S1 {
->>>>>>> feat: secondary one and four on tablet
   margin-bottom: 0px;
 }
 
 .IS1 {
-<<<<<<< HEAD
   height: 51;
   width: 283;
 }
@@ -3259,68 +3250,11 @@ exports[`27. secondary one and four tablet slice - huge 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-=======
-  background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS2 {
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS3 {
-  width: 50%;
-}
-
-.IS4 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 25%;
-}
-
-.IS7 {
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
->>>>>>> feat: secondary one and four on tablet
-  border-right-width: 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-<<<<<<< HEAD
 .IS9 {
   padding-right: 10px;
   padding-left: 10px;
@@ -3342,47 +3276,17 @@ exports[`27. secondary one and four tablet slice - huge 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-=======
-.IS8 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(77,77,77,1.00);
-  border-right-color: rgba(77,77,77,1.00);
-  border-bottom-color: rgba(77,77,77,1.00);
-  border-left-color: rgba(77,77,77,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS9 {
-  width: 25%;
-}
-
-.IS10 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
->>>>>>> feat: secondary one and four on tablet
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS11 {
-<<<<<<< HEAD
-=======
-  background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.IS12 {
->>>>>>> feat: secondary one and four on tablet
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
   width: 1366px;
   -ms-flex-item-align: center;
 }
-<<<<<<< HEAD
 
 .IS12 {
   padding-right: 40px;
@@ -3444,7 +3348,113 @@ exports[`27. secondary one and four tablet slice - huge 1`] = `
         <TileAG
           tileName="leader3"
         />
-=======
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`30. secondary one and four tablet slice - huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  background-color: rgba(39,45,52,1.00);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  width: 50%;
+}
+
+.IS4 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  width: 25%;
+}
+
+.IS7 {
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS8 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(77,77,77,1.00);
+  border-right-color: rgba(77,77,77,1.00);
+  border-bottom-color: rgba(77,77,77,1.00);
+  border-left-color: rgba(77,77,77,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS9 {
+  width: 25%;
+}
+
+.IS10 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
+  background-color: rgba(39,45,52,1.00);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.IS12 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
 </style>
 
 <div
@@ -3525,14 +3535,13 @@ exports[`27. secondary one and four tablet slice - huge 1`] = `
             tileName="support4"
           />
         </div>
->>>>>>> feat: secondary one and four on tablet
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`28. secondary one tablet slice - huge 1`] = `
+exports[`31. secondary one tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3556,7 +3565,7 @@ exports[`28. secondary one tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`29. secondary four tablet slice - huge 1`] = `
+exports[`32. secondary four tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3714,11 +3723,7 @@ exports[`29. secondary four tablet slice - huge 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`30. secondary one and columnist - huge 1`] = `
-=======
-exports[`30. secondary one and columnist tablet slice - huge 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`33. secondary one and columnist tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3799,11 +3804,7 @@ exports[`30. secondary one and columnist tablet slice - huge 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`31. secondary two and two slice - huge 1`] = `
-=======
-exports[`31. secondary two and two tablet slice - huge 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`34. secondary two and two tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3972,7 +3973,7 @@ exports[`31. secondary two and two tablet slice - huge 1`] = `
 </div>
 `;
 
-exports[`32. lead one and four slice - huge 1`] = `
+exports[`35. lead one and four slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4104,11 +4105,7 @@ exports[`32. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD
-exports[`33. secondary two no pic and two slice - huge 1`] = `
-=======
-exports[`33. secondary two no pic and two tablet slice - huge 1`] = `
->>>>>>> feat: secondary one and four on tablet
+exports[`36. secondary two no pic and two tablet slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
