@@ -5,7 +5,8 @@ import MockEdition from "./mock-edition";
 import {
   mockMagazineSection,
   mockPuzzleSection,
-  mockStandardSection
+  mockStandardSection,
+  getPuzzleSlices
 } from "./mock-section";
 import mockEditionSlice, {
   mockDailyRegisterSlice,
@@ -46,6 +47,7 @@ export {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockMagazineSection,
   mockPuzzleSection,
+  getPuzzleSlices,
   mockStandardSection,
   MockArticle,
   MockEdition,
