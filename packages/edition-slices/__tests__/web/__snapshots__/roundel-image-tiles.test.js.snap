@@ -25,7 +25,16 @@ exports[`1. tile g - layout change 1`] = `
         Driving Off
       </h3>
       <div>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
       </div>
     </div>
   </div>
@@ -63,7 +72,16 @@ exports[`2. tile p - layout change 1`] = `
         The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
       </h4>
       <div>
-        <ArticleFlags />
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
       </div>
       <div>
         <span>
