@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register slice 1`] = `
+exports[`1. daily universal register 1`] = `
 <View
   style={
     Object {
@@ -38,6 +38,7 @@ exports[`1. daily universal register slice 1`] = `
       Object {
         "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginBottom": 25,
         "marginHorizontal": 10,
@@ -51,6 +52,7 @@ exports[`1. daily universal register slice 1`] = `
       Object {
         "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginBottom": 25,
         "marginHorizontal": 10,
@@ -72,6 +74,7 @@ exports[`1. daily universal register slice 1`] = `
       Object {
         "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginBottom": 25,
         "marginHorizontal": 10,
@@ -91,7 +94,7 @@ exports[`1. daily universal register slice 1`] = `
 </View>
 `;
 
-exports[`1. secondary one and four slice 1`] = `
+exports[`1. secondary one and four 1`] = `
 <View
   style={
     Object {
@@ -116,6 +119,7 @@ exports[`1. secondary one and four slice 1`] = `
       Object {
         "borderBottomColor": "#4D4D4D",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -145,8 +149,8 @@ exports[`1. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -156,8 +160,8 @@ exports[`1. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -167,8 +171,8 @@ exports[`1. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -180,7 +184,7 @@ exports[`1. secondary one and four slice 1`] = `
 </View>
 `;
 
-exports[`1. secondary one and four slice 2`] = `
+exports[`1. secondary one and four 2`] = `
 <View
   style={
     Object {
@@ -205,6 +209,7 @@ exports[`1. secondary one and four slice 2`] = `
       Object {
         "borderBottomColor": "#4D4D4D",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -234,8 +239,8 @@ exports[`1. secondary one and four slice 2`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -245,8 +250,8 @@ exports[`1. secondary one and four slice 2`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -256,8 +261,8 @@ exports[`1. secondary one and four slice 2`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -269,9 +274,9 @@ exports[`1. secondary one and four slice 2`] = `
 </View>
 `;
 
-exports[`2. lead one full width slice 1`] = `<TileA />`;
+exports[`2. lead one full width 1`] = `<TileA />`;
 
-exports[`2. leaders slice 1`] = `
+exports[`2. leaders 1`] = `
 <View
   style={
     Object {
@@ -329,8 +334,8 @@ exports[`2. leaders slice 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -340,8 +345,8 @@ exports[`2. leaders slice 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -352,7 +357,7 @@ exports[`2. leaders slice 1`] = `
 </View>
 `;
 
-exports[`2. leaders slice 2`] = `
+exports[`2. leaders 2`] = `
 <View
   style={
     Object {
@@ -410,8 +415,8 @@ exports[`2. leaders slice 2`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -421,8 +426,8 @@ exports[`2. leaders slice 2`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -433,14 +438,14 @@ exports[`2. leaders slice 2`] = `
 </View>
 `;
 
-exports[`3. lead one and one slice 1`] = `
+exports[`3. lead one and one 1`] = `
 <View>
   <TileA />
   <TileB />
 </View>
 `;
 
-exports[`4. lead one and four slice 1`] = `
+exports[`4. lead one and four 1`] = `
 Array [
   <TileI />,
   <View>
@@ -448,8 +453,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -459,8 +464,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -470,8 +475,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -488,8 +493,8 @@ exports[`5. lead two no pic and two 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -499,8 +504,8 @@ exports[`5. lead two no pic and two 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -510,8 +515,8 @@ exports[`5. lead two no pic and two 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -521,16 +526,16 @@ exports[`5. lead two no pic and two 1`] = `
 </View>
 `;
 
-exports[`6. secondary one slice 1`] = `<TileA />`;
+exports[`6. secondary one 1`] = `<TileA />`;
 
-exports[`7. secondary one and columnist slice 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <View>
   <TileT />
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -540,7 +545,7 @@ exports[`7. secondary one and columnist slice 1`] = `
 </View>
 `;
 
-exports[`8. secondary four slice 1`] = `
+exports[`8. secondary four 1`] = `
 Array [
   <View
     style={
@@ -582,8 +587,8 @@ Array [
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -629,7 +634,7 @@ Array [
 ]
 `;
 
-exports[`9. secondary one and four slice 1`] = `
+exports[`9. secondary one and four 1`] = `
 <View
   style={
     Object {
@@ -654,6 +659,7 @@ exports[`9. secondary one and four slice 1`] = `
       Object {
         "borderBottomColor": "#4D4D4D",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -683,8 +689,8 @@ exports[`9. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -694,8 +700,8 @@ exports[`9. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -705,8 +711,8 @@ exports[`9. secondary one and four slice 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -718,7 +724,7 @@ exports[`9. secondary one and four slice 1`] = `
 </View>
 `;
 
-exports[`10. secondary two and two slice 1`] = `
+exports[`10. secondary two and two 1`] = `
 Array [
   <View
     style={
@@ -760,8 +766,8 @@ Array [
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -773,8 +779,8 @@ Array [
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -786,14 +792,14 @@ Array [
 ]
 `;
 
-exports[`11. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two 1`] = `
 <View>
   <TileB />
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -803,8 +809,8 @@ exports[`11. secondary two no pic and two slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -814,8 +820,8 @@ exports[`11. secondary two no pic and two slice 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -825,7 +831,7 @@ exports[`11. secondary two no pic and two slice 1`] = `
 </View>
 `;
 
-exports[`12. list two and six no pic slice 1`] = `
+exports[`12. list two and six no pic 1`] = `
 Array [
   <View
     style={
@@ -869,8 +875,8 @@ Array [
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -881,8 +887,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -892,8 +898,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -903,8 +909,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -914,8 +920,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -925,8 +931,8 @@ Array [
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -937,7 +943,7 @@ Array [
 ]
 `;
 
-exports[`13. leaders slice 1`] = `
+exports[`13. leaders 1`] = `
 <View
   style={
     Object {
@@ -995,8 +1001,8 @@ exports[`13. leaders slice 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -1006,8 +1012,8 @@ exports[`13. leaders slice 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -1018,14 +1024,14 @@ exports[`13. leaders slice 1`] = `
 </View>
 `;
 
-exports[`14. comment lead and cartoon slice 1`] = `
+exports[`14. comment lead and cartoon 1`] = `
 <View>
   <TileP />
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -1035,7 +1041,7 @@ exports[`14. comment lead and cartoon slice 1`] = `
 </View>
 `;
 
-exports[`15. puzzle slice 1`] = `
+exports[`15. puzzle 1`] = `
 <Link>
   <View
     style={

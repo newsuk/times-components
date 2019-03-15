@@ -1,31 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. four child elements 1`] = `
+exports[`1. secondary one and four - small 1`] = `
 <div
   style={
     Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "backgroundColor": "rgba(39,45,52,1.00)",
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "flexDirection": "row",
+      "msFlexDirection": "row",
     }
   }
 >
   <div
     style={
       Object {
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "flexDirection": "row",
-        "msFlexDirection": "row",
+        "width": "50%",
       }
     }
   >
@@ -35,48 +25,208 @@ exports[`1. four child elements 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(77,77,77,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
     <div>
-      support-1
+      <div>
+        support-1
+      </div>
     </div>
     <div
       style={
         Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomColor": "rgba(77,77,77,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(77,77,77,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div>
-      support-2
+      <div>
+        support-3
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(77,77,77,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <div>
+      <div>
+        support-2
+      </div>
     </div>
     <div
       style={
         Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomColor": "rgba(77,77,77,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(77,77,77,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div>
-      support-3
+      <div>
+        support-4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. secondary one and four - medium 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "flexDirection": "row",
+      "msFlexDirection": "row",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <div>
+      <div>
+        secondary-1
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(77,77,77,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <div>
+      <div>
+        support-1
+      </div>
     </div>
     <div
       style={
         Object {
-          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomColor": "rgba(77,77,77,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(77,77,77,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div>
-      support-4
+      <div>
+        support-3
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(77,77,77,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "25%",
+      }
+    }
+  >
+    <div>
+      <div>
+        support-2
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(77,77,77,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
+    <div>
+      <div>
+        support-4
+      </div>
     </div>
   </div>
 </div>

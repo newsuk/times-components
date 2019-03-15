@@ -92,6 +92,9 @@ Array [
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomWidth": "1px",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderTopColor": "rgba(219,219,219,1.00)",
         "marginLeft": "10px",
         "marginRight": "10px",
       }

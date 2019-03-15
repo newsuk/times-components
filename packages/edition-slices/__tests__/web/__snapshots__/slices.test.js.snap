@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register slice 1`] = `
+exports[`1. daily universal register 1`] = `
 <div>
   <div>
     <Image
@@ -29,83 +29,109 @@ exports[`1. daily universal register slice 1`] = `
 </div>
 `;
 
-exports[`1. secondary one and four slice 1`] = `
+exports[`1. secondary one and four 1`] = `
 <div>
   <div>
-    <TheSTLogo
-      height={40}
-      width={40}
-    />
-  </div>
-  <div />
-  <div>
+    <div>
+      <TheSTLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
     <div>
       <div>
-        <TileN
-          tileName="secondary"
-        />
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
       </div>
-    </div>
-    <div>
-      <TileO
-        tileName="support1"
-      />
       <div />
-      <TileO
-        tileName="support2"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
       <div />
-      <TileO
-        tileName="support3"
-      />
-      <div />
-      <TileO
-        tileName="support4"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support4"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`1. secondary one and four slice 2`] = `
+exports[`1. secondary one and four 2`] = `
 <div>
   <div>
-    <TheTimesLogo
-      height={40}
-      width={40}
-    />
-  </div>
-  <div />
-  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
     <div>
       <div>
-        <TileN
-          tileName="secondary"
-        />
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
       </div>
-    </div>
-    <div>
-      <TileO
-        tileName="support1"
-      />
       <div />
-      <TileO
-        tileName="support2"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
       <div />
-      <TileO
-        tileName="support3"
-      />
-      <div />
-      <TileO
-        tileName="support4"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support4"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`2. lead one full width slice 1`] = `
+exports[`2. lead one full width 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -113,7 +139,7 @@ exports[`2. lead one full width slice 1`] = `
 </div>
 `;
 
-exports[`2. leaders slice 1`] = `
+exports[`2. leaders 1`] = `
 <div>
   <div>
     <Image
@@ -150,7 +176,7 @@ exports[`2. leaders slice 1`] = `
 </div>
 `;
 
-exports[`2. leaders slice 2`] = `
+exports[`2. leaders 2`] = `
 <div>
   <div>
     <Image
@@ -187,7 +213,7 @@ exports[`2. leaders slice 2`] = `
 </div>
 `;
 
-exports[`3. lead one and one slice 1`] = `
+exports[`3. lead one and one 1`] = `
 <div>
   <div>
     <div>
@@ -205,7 +231,7 @@ exports[`3. lead one and one slice 1`] = `
 </div>
 `;
 
-exports[`4. lead one and four slice 1`] = `
+exports[`4. lead one and four 1`] = `
 <div>
   <div>
     <div>
@@ -261,7 +287,7 @@ exports[`5. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`6. secondary one slice 1`] = `
+exports[`6. secondary one 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -269,7 +295,7 @@ exports[`6. secondary one slice 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and columnist slice 1`] = `
+exports[`7. secondary one and columnist 1`] = `
 <div>
   <div>
     <div>
@@ -287,7 +313,7 @@ exports[`7. secondary one and columnist slice 1`] = `
 </div>
 `;
 
-exports[`8. secondary four slice 1`] = `
+exports[`8. secondary four 1`] = `
 <div>
   <div>
     <div>
@@ -317,45 +343,58 @@ exports[`8. secondary four slice 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and four slice 1`] = `
+exports[`9. secondary one and four 1`] = `
 <div>
   <div>
-    <TheTimesLogo
-      height={40}
-      width={40}
-    />
-  </div>
-  <div />
-  <div>
+    <div>
+      <TheTimesLogo
+        height={40}
+        width={40}
+      />
+    </div>
+    <div />
     <div>
       <div>
-        <TileN
-          tileName="secondary"
-        />
+        <div>
+          <TileN
+            tileName="secondary"
+          />
+        </div>
       </div>
-    </div>
-    <div>
-      <TileO
-        tileName="support1"
-      />
       <div />
-      <TileO
-        tileName="support2"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support1"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support3"
+          />
+        </div>
+      </div>
       <div />
-      <TileO
-        tileName="support3"
-      />
-      <div />
-      <TileO
-        tileName="support4"
-      />
+      <div>
+        <div>
+          <TileO
+            tileName="support2"
+          />
+        </div>
+        <div />
+        <div>
+          <TileO
+            tileName="support4"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`10. secondary two and two slice 1`] = `
+exports[`10. secondary two and two 1`] = `
 <div>
   <div>
     <div>
@@ -389,7 +428,7 @@ exports[`10. secondary two and two slice 1`] = `
 </div>
 `;
 
-exports[`11. secondary two no pic and two slice 1`] = `
+exports[`11. secondary two no pic and two 1`] = `
 <div>
   <div>
     <div>
@@ -421,7 +460,7 @@ exports[`11. secondary two no pic and two slice 1`] = `
 </div>
 `;
 
-exports[`12. list two and six no pic slice 1`] = `
+exports[`12. list two and six no pic 1`] = `
 <div>
   <div>
     <div>
@@ -479,7 +518,7 @@ exports[`12. list two and six no pic slice 1`] = `
 </div>
 `;
 
-exports[`13. leaders slice 1`] = `
+exports[`13. leaders 1`] = `
 <div>
   <div>
     <Image
@@ -516,7 +555,7 @@ exports[`13. leaders slice 1`] = `
 </div>
 `;
 
-exports[`14. comment lead and cartoon slice 1`] = `
+exports[`14. comment lead and cartoon 1`] = `
 <div>
   <TileP
     tileName="lead"
@@ -528,7 +567,7 @@ exports[`14. comment lead and cartoon slice 1`] = `
 </div>
 `;
 
-exports[`15. puzzle slice 1`] = `
+exports[`15. puzzle 1`] = `
 <Link
   url="/crossword/123"
 >

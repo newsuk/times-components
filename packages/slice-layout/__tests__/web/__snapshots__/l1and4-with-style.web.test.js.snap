@@ -48,6 +48,9 @@ Array [
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -64,6 +67,9 @@ Array [
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -80,6 +86,9 @@ Array [
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -197,6 +206,9 @@ exports[`2. tablet - lead one and four 1`] = `
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -213,6 +225,9 @@ exports[`2. tablet - lead one and four 1`] = `
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -229,6 +244,9 @@ exports[`2. tablet - lead one and four 1`] = `
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "marginLeft": "10px",
           "marginRight": "10px",
         }

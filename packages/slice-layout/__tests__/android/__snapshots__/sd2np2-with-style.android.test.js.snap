@@ -8,8 +8,8 @@ exports[`1. secondary two no pic and two layout - small 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -21,8 +21,8 @@ exports[`1. secondary two no pic and two layout - small 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -34,8 +34,8 @@ exports[`1. secondary two no pic and two layout - small 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -94,8 +94,8 @@ Array [
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }

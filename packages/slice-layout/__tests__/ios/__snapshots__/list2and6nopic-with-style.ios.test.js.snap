@@ -66,8 +66,8 @@ exports[`1. list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -81,8 +81,8 @@ exports[`1. list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -119,8 +119,8 @@ exports[`1. list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -134,8 +134,8 @@ exports[`1. list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -217,8 +217,8 @@ exports[`2. tablet - list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -232,8 +232,8 @@ exports[`2. tablet - list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -270,8 +270,8 @@ exports[`2. tablet - list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
@@ -285,8 +285,8 @@ exports[`2. tablet - list two and six no pic 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "marginHorizontal": 10,
           }
