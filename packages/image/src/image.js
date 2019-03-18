@@ -83,7 +83,7 @@ class TimesImage extends Component {
       >
         {isLoaded ? null : (
           <Fragment>
-            <Placeholder height={height} width={width} />
+            {height && width && <Placeholder height={height} width={width} />}
             {lowResSize ? (
               <Image
                 borderRadius={borderRadius}

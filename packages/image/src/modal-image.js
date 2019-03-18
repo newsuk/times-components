@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import { Modal, View, SafeAreaView, Image as RNImage } from "react-native";
+import React, { Component, Fragment } from "react";
+import { Modal, View } from "react-native";
 import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
+import SaferAreaView from "./safer-area-view";
 import CloseButton from "./close-button";
 import Image from "./image";
 import { modalPropTypes, modalDefaultProps } from "./modal-image-prop-types";
@@ -55,35 +56,37 @@ class ModalImage extends Component {
           presentationStyle="fullScreen"
           visible={showModal}
         >
-          <ResponsiveContext.Consumer>
-            {({ isTablet }) => (
-              <View style={styles.modal}>
-                <SafeAreaView style={styles.safeViewContainer}>
-                  <View style={styles.safeViewInnerContainer}>
-                    <View
-                      style={[
-                        styles.buttonContainer,
-                        isTablet && styles.buttonContainerTablet
-                      ]}
-                    >
-                      <CloseButton
-                        isTablet={isTablet}
-                        onPress={this.hideModal}
-                      />
-                    </View>
-                    <Gestures style={styles.imageContainer}>
-                      <Image
-                        {...this.props}
-                        lowResSize={lowResSize}
-                        style={styles.image}
-                      />
-                    </Gestures>
-                    {this.renderCaption({ isTablet })}
-                  </View>
-                </SafeAreaView>
+          <View style={styles.modal}>
+            <SaferAreaView style={styles.safeViewContainer}>
+              <View style={styles.safeViewInnerContainer}>
+                <ResponsiveContext.Consumer>
+                  {({ isTablet }) => (
+                    <Fragment>
+                      <View
+                        style={[
+                          styles.buttonContainer,
+                          isTablet && styles.buttonContainerTablet
+                        ]}
+                      >
+                        <CloseButton
+                          isTablet={isTablet}
+                          onPress={this.hideModal}
+                        />
+                      </View>
+                      <Gestures style={styles.imageContainer}>
+                        <Image
+                          {...this.props}
+                          lowResSize={lowResSize}
+                          style={styles.image}
+                        />
+                      </Gestures>
+                      {this.renderCaption({ isTablet })}
+                    </Fragment>
+                  )}
+                </ResponsiveContext.Consumer>
               </View>
-            )}
-          </ResponsiveContext.Consumer>
+            </SaferAreaView>
+          </View>
         </Modal>
         <Button onPress={this.showModal}>
           <Image {...this.props} onImageLayout={this.onLowResLayout} />

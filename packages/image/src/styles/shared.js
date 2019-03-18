@@ -30,17 +30,17 @@ const styles = {
     flex: 1
   },
   image: {
+    alignItems: "center",
     bottom: 0,
     height: "100%",
+    justifyContent: "center",
     left: 0,
     maxHeight: "100%",
     maxWidth: "100%",
     position: "absolute",
     right: 0,
     top: 0,
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "center"
+    width: "100%"
   },
   imageBackground: {
     bottom: 0,

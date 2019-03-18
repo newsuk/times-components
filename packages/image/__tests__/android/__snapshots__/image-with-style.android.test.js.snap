@@ -2,18 +2,16 @@
 
 exports[`1. default image 1`] = `
 <View>
-  <Gradient
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  />
   <Image
     style={
       Object {
+        "bottom": 0,
         "height": "100%",
+        "left": 0,
         "position": "absolute",
+        "resizeMode": "contain",
+        "right": 0,
+        "top": 0,
         "width": "100%",
         "zIndex": 1,
       }

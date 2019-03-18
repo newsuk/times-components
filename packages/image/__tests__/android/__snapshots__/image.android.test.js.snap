@@ -7,14 +7,14 @@ exports[`1. default layout 1`] = `
   <Gradient
     degrees={264}
     height={350}
-    width={700}
+    width={525}
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={143.90862944162436}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={143.90862944162436}
       >
         <G
           fill="none"
@@ -214,11 +214,6 @@ exports[`8. image with borderradius 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
-    height={null}
-    width={null}
-  />
   <Image
     borderRadius={10}
     source={
@@ -234,11 +229,6 @@ exports[`9. uses lowressize image as placeholder if passed 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
-    height={null}
-    width={null}
-  />
   <Image
     source={
       Object {

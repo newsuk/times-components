@@ -8,7 +8,6 @@ const functionalColours = {
   backgroundSecondary: "#EDEDED",
   border: "#F0F0F0",
   brandColour: "#1D1D1B",
-  brandColourOverlay: "#1D1D1B80",
   bullet: "#103546",
   contrast: "#FFFFFF",
   darkSupplement: "#272D34",
