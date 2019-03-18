@@ -4,6 +4,7 @@ import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import { setDimension } from "@times-components/test-utils/dimensions";
 import {
+  mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
   mockLeadersSlice,
   mockLeadOneAndOneSlice,
@@ -20,6 +21,7 @@ import {
 import Responsive from "@times-components/responsive";
 import "./mocks";
 import {
+  CommentLeadAndCartoonSlice,
   DailyRegisterLeadFourSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
@@ -35,6 +37,11 @@ import {
 } from "../src/slices";
 
 const slices = [
+  {
+    mock: mockCommentLeadAndCartoonSlice(),
+    name: "comment lead and cartoon",
+    Slice: CommentLeadAndCartoonSlice
+  },
   {
     mock: mockDailyRegisterSlice(),
     name: "daily universal register",

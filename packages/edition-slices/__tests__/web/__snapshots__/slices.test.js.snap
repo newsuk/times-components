@@ -557,13 +557,19 @@ exports[`13. leaders 1`] = `
 
 exports[`14. comment lead and cartoon 1`] = `
 <div>
-  <TileP
-    tileName="lead"
-  />
-  <div />
-  <TileQ
-    tileName="cartoon"
-  />
+  <div>
+    <div>
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
 </div>
 `;
 

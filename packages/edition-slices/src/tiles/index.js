@@ -29,3 +29,5 @@ export { default as TileZ } from "./tile-z";
 export { default as TileAA } from "./tile-aa";
 export { default as TileAB } from "./tile-ab";
 export { default as TileAG } from "./tile-ag";
+export { default as TileAH } from "./tile-ah";
+export { default as TileAI } from "./tile-ai";

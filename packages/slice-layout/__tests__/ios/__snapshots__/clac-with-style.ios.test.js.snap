@@ -1,22 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. two child element 1`] = `
-<View>
-  <Text>
-    lead-1
-  </Text>
+exports[`1. comment lead and cartoon - small 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "paddingRight": 20,
+    }
+  }
+>
   <View
     style={
       Object {
-        "borderBottomWidth": 1,
+        "width": "37.5%",
+      }
+    }
+  >
+    <Text>
+      lead-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
         "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 10,
       }
     }
   />
-  <Text>
-    cartoon-1
-  </Text>
+  <View
+    style={
+      Object {
+        "width": "62.5%",
+      }
+    }
+  >
+    <Text>
+      cartoon-1
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`2. comment lead and cartoon - medium 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "paddingRight": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "37.5%",
+      }
+    }
+  >
+    <Text>
+      lead-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "62.5%",
+      }
+    }
+  >
+    <Text>
+      cartoon-1
+    </Text>
+  </View>
 </View>
 `;
