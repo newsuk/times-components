@@ -75,7 +75,14 @@ export default ({
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
-  flags: () => <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />,
+  flags: () => (
+    <ArticleFlags
+      flags={[
+        { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
+        { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+      ]}
+    />
+  ),
   headline: () => <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,

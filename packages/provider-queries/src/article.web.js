@@ -30,7 +30,10 @@ export default addTypenameToDocument(gql`
       commentsEnabled
       content: paywalledContent
       dropcapsDisabled
-      flags
+      expirableFlags {
+        type
+        expiryTime
+      }
       keywords
       leadAsset {
         ... on Video {

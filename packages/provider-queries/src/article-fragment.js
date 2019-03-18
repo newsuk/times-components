@@ -27,7 +27,10 @@ export default gql`
     }
     content
     dropcapsDisabled
-    flags
+    expirableFlags {
+      type
+      expiryTime
+    }
     keywords
     leadAsset {
       ... on Video {

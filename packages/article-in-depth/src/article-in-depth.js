@@ -31,7 +31,7 @@ class ArticleInDepth extends Component {
     const {
       backgroundColour,
       byline,
-      flags,
+      expirableFlags,
       hasVideo,
       headline,
       label,
@@ -47,7 +47,7 @@ class ArticleInDepth extends Component {
           <Fragment>
             <ArticleHeader
               backgroundColour={backgroundColour}
-              flags={flags}
+              flags={expirableFlags}
               hasVideo={hasVideo}
               headline={getHeadline(headline, shortHeadline)}
               isTablet={isTablet}

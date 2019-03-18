@@ -33,7 +33,10 @@ exports[`1. an article 1`] = `
           <ArticleFlags
             flags={
               Array [
-                "NEW",
+                Object {
+                  "expiryTime": "2019-03-14T12:00:00.000Z",
+                  "type": "NEW",
+                },
               ]
             }
           />

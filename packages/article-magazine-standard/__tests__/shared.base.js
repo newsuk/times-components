@@ -17,7 +17,7 @@ const findComponents = (testInstance, componentName) =>
   });
 
 const emptyArticle = {
-  flags: [],
+  expirableFlags: [],
   label: null,
   standfirst: null
 };

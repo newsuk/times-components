@@ -25,8 +25,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
     <ArticleFlags
       flags={
         Array [
-          "UPDATED",
-          "EXCLUSIVE",
+          Object {
+            "expiryTime": "2020-03-13T12:00:00.000Z",
+            "type": "UPDATED",
+          },
+          Object {
+            "expiryTime": "2019-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
         ]
       }
     />
@@ -548,8 +554,14 @@ exports[`13. article summary component with a strapline 1`] = `
     <ArticleFlags
       flags={
         Array [
-          "UPDATED",
-          "EXCLUSIVE",
+          Object {
+            "expiryTime": "2020-03-13T12:00:00.000Z",
+            "type": "UPDATED",
+          },
+          Object {
+            "expiryTime": "2019-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
         ]
       }
     />

@@ -33,7 +33,10 @@ jest.mock("@times-components/video-label", () => "VideoLabel");
 
 export default () => {
   const byline = "A byline";
-  const flags = ["UPDATED"];
+  const flags = [
+    { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
+    { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+  ];
   const headline = "Test Headline";
   const label = "Test label";
   const paragraph = "Test paragraph";

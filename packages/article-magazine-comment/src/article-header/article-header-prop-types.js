@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 const articleHeaderPropTypes = {
   authorImage: PropTypes.string.isRequired,
   byline: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  flags: PropTypes.arrayOf(PropTypes.string),
+  flags: PropTypes.arrayOf(
+    PropTypes.shape({
+      expiryTime: PropTypes.string,
+      type: PropTypes.string
+    })
+  ),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
@@ -13,7 +18,7 @@ const articleHeaderPropTypes = {
 };
 
 const articleHeaderDefaultProps = {
-  flags: null,
+  flags: [],
   hasVideo: false,
   label: null,
   standfirst: null

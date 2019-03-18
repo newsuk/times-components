@@ -24,7 +24,7 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const {
       byline,
-      flags,
+      expirableFlags,
       hasVideo,
       headline,
       label,
@@ -38,7 +38,7 @@ class ArticlePage extends Component {
       <Fragment>
         <ArticleHeader
           byline={byline}
-          flags={flags}
+          flags={expirableFlags}
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}

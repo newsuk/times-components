@@ -44,10 +44,15 @@ class MockArticle {
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 0,
-      template: TemplateType.mainstandard,
+      template: TemplateType.Mainstandard,
       byline: new MockMarkup().addInlines().get(),
       bylines: [],
-      flags: [Flag.EXCLUSIVE],
+      expirableFlags: [
+        {
+          type: Flag.Exclusive,
+          expiryTime: "2030-03-14T12:00:00.000Z"
+        }
+      ],
       label: "label",
       content: new MockMarkup()
         .addParagraphs(3)
@@ -55,7 +60,7 @@ class MockArticle {
         .get(),
       headline: "Venezuela shows how Corbyn’s socialism works",
       publishedTime: new Date(0),
-      section: SectionName.business,
+      section: SectionName.Business,
       shortHeadline: "Driving Off",
       shortIdentifier: "37b27qd2s",
       standfirst:
@@ -89,7 +94,7 @@ class MockArticle {
 
   sundayTimes() {
     this.article.publicationName = getPublicationName(
-      PublicationName.SUNDAYTIMES
+      PublicationName.Sundaytimes
     );
     return this;
   }
