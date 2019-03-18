@@ -8,8 +8,8 @@ const styles = {
     marginVertical: spacing(2)
   },
   itemRowSeparator: {
-    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
+    borderColor: colours.functional.keyline,
     borderStyle: "solid",
     marginHorizontal: spacing(2)
   }

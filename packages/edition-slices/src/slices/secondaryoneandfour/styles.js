@@ -1,6 +1,10 @@
-import { colours, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const smallBreakpointStyles = {
   logoContainer: {
     backgroundColor: colours.functional.darkSupplement,
     flexDirection: "row",
@@ -15,4 +19,14 @@ const styles = {
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  sliceWrapper: {
+    backgroundColor: colours.functional.darkSupplement,
+    paddingHorizontal: spacing(2)
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : { ...smallBreakpointStyles, ...mediumBreakpointStyles };

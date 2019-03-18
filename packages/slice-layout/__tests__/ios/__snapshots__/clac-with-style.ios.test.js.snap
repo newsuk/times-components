@@ -8,8 +8,8 @@ exports[`1. two child element 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }

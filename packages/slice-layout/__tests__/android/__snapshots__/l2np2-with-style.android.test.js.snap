@@ -8,8 +8,8 @@ exports[`1. two lead elements, two support elements 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -21,8 +21,8 @@ exports[`1. two lead elements, two support elements 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -34,8 +34,8 @@ exports[`1. two lead elements, two support elements 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "marginHorizontal": 10,
       }
@@ -69,8 +69,8 @@ exports[`2. tablet - two lead elements, two support elements 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
@@ -103,8 +103,8 @@ exports[`2. tablet - two lead elements, two support elements 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }

@@ -15,7 +15,8 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryOneAndColumnistSlice,
   mockSecondaryTwoAndTwoSlice,
-  getPuzzleSlices
+  getPuzzleSlices,
+  mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
@@ -25,6 +26,7 @@ import {
   LeadOneFullWidthSlice,
   LeadersSlice,
   LeadTwoNoPicAndTwoSlice,
+  SecondaryOneAndFourSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
   LeadOneAndFourSlice,
@@ -37,22 +39,22 @@ import {
 const slices = [
   {
     mock: mockDailyRegisterSlice(),
-    name: "daily universal register tablet slice",
+    name: "daily universal register",
     Slice: DailyRegisterLeadFourSlice
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "lead one and one tablet slice",
+    name: "lead one and one",
     Slice: LeadOneAndOneSlice
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "lead one full width tablet slice",
+    name: "lead one full width",
     Slice: LeadOneFullWidthSlice
   },
   {
     mock: mockLeadTwoNoPicAndTwoSlice(),
-    name: "lead two no pic and two tablet slice",
+    name: "lead two no pic and two",
     Slice: LeadTwoNoPicAndTwoSlice
   },
   {
@@ -61,13 +63,18 @@ const slices = [
     Slice: LeadersSlice
   },
   {
+    mock: mockSecondaryOneAndFourSlice(),
+    name: "secondary one and four",
+    Slice: SecondaryOneAndFourSlice
+  },
+  {
     mock: mockSecondaryOneSlice(),
-    name: "secondary one tablet slice",
+    name: "secondary one",
     Slice: SecondaryOneSlice
   },
   {
     mock: mockSecondaryFourSlice(),
-    name: "secondary four tablet slice",
+    name: "secondary four",
     Slice: SecondaryFourSlice
   },
   {
@@ -77,7 +84,7 @@ const slices = [
   },
   {
     mock: mockSecondaryTwoAndTwoSlice(),
-    name: "secondary two and two slice",
+    name: "secondary two and two",
     Slice: SecondaryTwoAndTwoSlice
   },
   {
@@ -87,7 +94,7 @@ const slices = [
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
-    name: "secondary two no pic and two slice",
+    name: "secondary two no pic and two",
     Slice: SecondaryTwoNoPicAndTwoSlice
   },
   {

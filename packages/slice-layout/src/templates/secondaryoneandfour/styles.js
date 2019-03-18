@@ -1,6 +1,6 @@
-import { colours } from "@times-components/styleguide";
+import { colours, editionBreakpoints } from "@times-components/styleguide";
 
-const styles = {
+const smallBreakpointStyles = {
   container: {
     backgroundColor: colours.functional.darkSupplement,
     flex: 1
@@ -9,8 +9,26 @@ const styles = {
     flexDirection: "row"
   },
   separator: {
-    borderBottomColor: colours.functional.tertiary
+    borderColor: colours.functional.tertiary
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  container: {
+    flexDirection: "row"
+  },
+  itemContainer: {
+    width: "25%"
+  },
+  secondaryItemContainer: {
+    width: "50%"
+  },
+  separator: {
+    borderColor: colours.functional.tertiary
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : mediumBreakpointStyles;

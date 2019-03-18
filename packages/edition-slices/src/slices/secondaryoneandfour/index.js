@@ -8,44 +8,59 @@ import {
   ItemRowSeparator
 } from "@times-components/slice-layout";
 import { TileO, TileN } from "../../tiles";
-import styles from "./styles";
+import styleFactory from "./styles";
+import { ResponsiveSlice } from "../shared";
 
 const SecondaryOneAndFour = ({
   onPress,
   slice: { secondary, support1, support2, support3, support4 }
-}) => (
-  <Context.Consumer>
-    {({ publicationName }) => (
-      <View style={styles.sliceWrapper}>
-        <View style={styles.logoContainer}>
-          {publicationName === "TIMES" ? (
-            <TheTimesLogo height={40} width={40} />
-          ) : (
-            <TheSTLogo height={40} width={40} />
-          )}
-        </View>
-        <ItemRowSeparator style={styles.separator} />
-        <SecondaryOneAndFourSlice
-          renderSecondary={() => (
-            <TileN onPress={onPress} tile={secondary} tileName="secondary" />
-          )}
-          renderSupport1={() => (
-            <TileO onPress={onPress} tile={support1} tileName="support1" />
-          )}
-          renderSupport2={() => (
-            <TileO onPress={onPress} tile={support2} tileName="support2" />
-          )}
-          renderSupport3={() => (
-            <TileO onPress={onPress} tile={support3} tileName="support3" />
-          )}
-          renderSupport4={() => (
-            <TileO onPress={onPress} tile={support4} tileName="support4" />
-          )}
-        />
-      </View>
-    )}
-  </Context.Consumer>
-);
+}) => {
+  const renderSlice = breakpoint => {
+    const styles = styleFactory(breakpoint);
+    return (
+      <Context.Consumer>
+        {({ publicationName }) => (
+          <View style={styles.sliceWrapper}>
+            <View style={styles.logoContainer}>
+              {publicationName === "TIMES" ? (
+                <TheTimesLogo height={40} width={40} />
+              ) : (
+                <TheSTLogo height={40} width={40} />
+              )}
+            </View>
+            <ItemRowSeparator style={styles.separator} />
+            <SecondaryOneAndFourSlice
+              breakpoint={breakpoint}
+              renderSecondary={() => (
+                <TileN
+                  onPress={onPress}
+                  tile={secondary}
+                  tileName="secondary"
+                />
+              )}
+              renderSupport1={() => (
+                <TileO onPress={onPress} tile={support1} tileName="support1" />
+              )}
+              renderSupport2={() => (
+                <TileO onPress={onPress} tile={support2} tileName="support2" />
+              )}
+              renderSupport3={() => (
+                <TileO onPress={onPress} tile={support3} tileName="support3" />
+              )}
+              renderSupport4={() => (
+                <TileO onPress={onPress} tile={support4} tileName="support4" />
+              )}
+            />
+          </View>
+        )}
+      </Context.Consumer>
+    );
+  };
+
+  return (
+    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
+  );
+};
 
 SecondaryOneAndFour.propTypes = {
   onPress: PropTypes.func.isRequired,
