@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.18.3...@times-components/fixture-generator@0.19.0) (2019-03-18)
+
+
+### Features
+
+* Flag expiry ([#1809](https://github.com/newsuk/times-components/issues/1809)) ([ecaef57](https://github.com/newsuk/times-components/commit/ecaef57))
+
+
+
+
+
 ## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.18.2...@times-components/fixture-generator@0.18.3) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/fixture-generator

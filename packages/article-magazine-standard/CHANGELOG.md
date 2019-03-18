@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@0.16.20...@times-components/article-magazine-standard@0.17.0) (2019-03-18)
+
+
+### Features
+
+* Flag expiry ([#1809](https://github.com/newsuk/times-components/issues/1809)) ([ecaef57](https://github.com/newsuk/times-components/commit/ecaef57))
+
+
+
+
+
 ## [0.16.20](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@0.16.19...@times-components/article-magazine-standard@0.16.20) (2019-03-15)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

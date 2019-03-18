@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.24...@times-components/provider-test-tools@1.14.0) (2019-03-18)
+
+
+### Features
+
+* Flag expiry ([#1809](https://github.com/newsuk/times-components/issues/1809)) ([ecaef57](https://github.com/newsuk/times-components/commit/ecaef57))
+
+
+
+
+
 ## [1.13.24](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.13.23...@times-components/provider-test-tools@1.13.24) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

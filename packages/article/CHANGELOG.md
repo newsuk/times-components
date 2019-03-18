@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.87...@times-components/article@6.7.0) (2019-03-18)
+
+
+### Features
+
+* Flag expiry ([#1809](https://github.com/newsuk/times-components/issues/1809)) ([ecaef57](https://github.com/newsuk/times-components/commit/ecaef57))
+
+
+
+
+
 ## [6.6.87](https://github.com/newsuk/times-components/compare/@times-components/article@6.6.86...@times-components/article@6.6.87) (2019-03-15)
 
 **Note:** Version bump only for package @times-components/article
