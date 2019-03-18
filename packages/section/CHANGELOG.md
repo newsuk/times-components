@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.7...@times-components/section@0.4.8) (2019-03-18)
+
+
+### Bug Fixes
+
+* Fix broken snapshot click event ([#1807](https://github.com/newsuk/times-components/issues/1807)) ([5fec490](https://github.com/newsuk/times-components/commit/5fec490))
+
+
+
+
+
 ## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.6...@times-components/section@0.4.7) (2019-03-18)
 
 **Note:** Version bump only for package @times-components/section
