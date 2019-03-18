@@ -567,10 +567,8 @@ exports[`14. comment lead and cartoon 1`] = `
 </div>
 `;
 
-exports[`15. puzzle 1`] = `
-<Link
-  url="/crossword/123"
->
+exports[`15. puzzle slice 1`] = `
+<div>
   <div>
     <TileAK
       id="0"

@@ -321,7 +321,68 @@ exports[`12. secondary two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`13. daily universal register - wide 1`] = `
+exports[`13. puzzle slice - medium 1`] = `
+<div>
+  <div>
+    <TileAK
+      id="0"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="1"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="2"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+  </div>
+</div>
+`;
+
+exports[`14. daily universal register - wide 1`] = `
 <div>
   <div>
     <Image
@@ -350,7 +411,7 @@ exports[`13. daily universal register - wide 1`] = `
 </div>
 `;
 
-exports[`14. lead one and one - wide 1`] = `
+exports[`15. lead one and one - wide 1`] = `
 <div>
   <div>
     <div>
@@ -368,7 +429,7 @@ exports[`14. lead one and one - wide 1`] = `
 </div>
 `;
 
-exports[`15. lead one full width - wide 1`] = `
+exports[`16. lead one full width - wide 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -376,7 +437,7 @@ exports[`15. lead one full width - wide 1`] = `
 </div>
 `;
 
-exports[`16. lead two no pic and two - wide 1`] = `
+exports[`17. lead two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -402,7 +463,7 @@ exports[`16. lead two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`17. leaders slice - wide 1`] = `
+exports[`18. leaders slice - wide 1`] = `
 <div>
   <div>
     <Image
@@ -439,7 +500,7 @@ exports[`17. leaders slice - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary one and four - wide 1`] = `
+exports[`19. secondary one and four - wide 1`] = `
 <div>
   <div>
     <div>
@@ -490,7 +551,7 @@ exports[`18. secondary one and four - wide 1`] = `
 </div>
 `;
 
-exports[`19. secondary one - wide 1`] = `
+exports[`20. secondary one - wide 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -498,7 +559,7 @@ exports[`19. secondary one - wide 1`] = `
 </div>
 `;
 
-exports[`20. secondary four - wide 1`] = `
+exports[`21. secondary four - wide 1`] = `
 <div>
   <div>
     <div>
@@ -528,7 +589,7 @@ exports[`20. secondary four - wide 1`] = `
 </div>
 `;
 
-exports[`21. secondary one and columnist - wide 1`] = `
+exports[`22. secondary one and columnist - wide 1`] = `
 <div>
   <div>
     <div>
@@ -546,7 +607,7 @@ exports[`21. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`22. secondary two and two - wide 1`] = `
+exports[`23. secondary two and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -580,7 +641,7 @@ exports[`22. secondary two and two - wide 1`] = `
 </div>
 `;
 
-exports[`23. lead one and four slice - wide 1`] = `
+exports[`24. lead one and four slice - wide 1`] = `
 <div>
   <div>
     <div>
@@ -610,7 +671,7 @@ exports[`23. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-exports[`24. secondary two no pic and two - wide 1`] = `
+exports[`25. secondary two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -642,7 +703,68 @@ exports[`24. secondary two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`25. daily universal register - huge 1`] = `
+exports[`26. puzzle slice - wide 1`] = `
+<div>
+  <div>
+    <TileAK
+      id="0"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="1"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="2"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+  </div>
+</div>
+`;
+
+exports[`27. daily universal register - huge 1`] = `
 <div>
   <div>
     <Image
@@ -671,7 +793,7 @@ exports[`25. daily universal register - huge 1`] = `
 </div>
 `;
 
-exports[`26. lead one and one - huge 1`] = `
+exports[`28. lead one and one - huge 1`] = `
 <div>
   <div>
     <div>
@@ -689,7 +811,7 @@ exports[`26. lead one and one - huge 1`] = `
 </div>
 `;
 
-exports[`27. lead one full width - huge 1`] = `
+exports[`29. lead one full width - huge 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -697,7 +819,7 @@ exports[`27. lead one full width - huge 1`] = `
 </div>
 `;
 
-exports[`28. lead two no pic and two - huge 1`] = `
+exports[`30. lead two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>
@@ -723,7 +845,7 @@ exports[`28. lead two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`29. leaders slice - huge 1`] = `
+exports[`31. leaders slice - huge 1`] = `
 <div>
   <div>
     <Image
@@ -760,7 +882,7 @@ exports[`29. leaders slice - huge 1`] = `
 </div>
 `;
 
-exports[`30. secondary one and four - huge 1`] = `
+exports[`32. secondary one and four - huge 1`] = `
 <div>
   <div>
     <div>
@@ -811,7 +933,7 @@ exports[`30. secondary one and four - huge 1`] = `
 </div>
 `;
 
-exports[`31. secondary one - huge 1`] = `
+exports[`33. secondary one - huge 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -819,7 +941,7 @@ exports[`31. secondary one - huge 1`] = `
 </div>
 `;
 
-exports[`32. secondary four - huge 1`] = `
+exports[`34. secondary four - huge 1`] = `
 <div>
   <div>
     <div>
@@ -849,7 +971,7 @@ exports[`32. secondary four - huge 1`] = `
 </div>
 `;
 
-exports[`33. secondary one and columnist - huge 1`] = `
+exports[`35. secondary one and columnist - huge 1`] = `
 <div>
   <div>
     <div>
@@ -867,7 +989,7 @@ exports[`33. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`34. secondary two and two - huge 1`] = `
+exports[`36. secondary two and two - huge 1`] = `
 <div>
   <div>
     <div>
@@ -901,7 +1023,7 @@ exports[`34. secondary two and two - huge 1`] = `
 </div>
 `;
 
-exports[`35. lead one and four slice - huge 1`] = `
+exports[`37. lead one and four slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -931,7 +1053,7 @@ exports[`35. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-exports[`36. secondary two no pic and two - huge 1`] = `
+exports[`38. secondary two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>
@@ -963,7 +1085,7 @@ exports[`36. secondary two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`36. puzzle slice - huge 1`] = `
+exports[`39. puzzle slice - huge 1`] = `
 <div>
   <div>
     <TileAK
