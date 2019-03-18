@@ -3,12 +3,10 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import Column from "../column";
 import propTypes from "./proptypes";
-import styleFactory from "./styles";
+import styles from "./styles";
 import { ItemColSeparator } from "../shared";
 
 const CommentLeadAndCartoon = ({ breakpoint, renderLead, renderCartoon }) => {
-  const styles = styleFactory(breakpoint);
-
   if (breakpoint === editionBreakpoints.small) {
     return <Column tiles={[renderLead, renderCartoon]} />;
   }

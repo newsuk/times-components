@@ -7,7 +7,7 @@ import { CommentLeadAndCartoon } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "comment lead and cartoon",
+      name: "comment lead and cartoon - small",
       test() {
         const output = renderComponent(
           <CommentLeadAndCartoon
@@ -20,7 +20,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - comment lead and cartoon",
+      name: "comment lead and cartoon - medium",
       test() {
         const output = renderComponent(
           <CommentLeadAndCartoon

@@ -38,6 +38,11 @@ import {
 
 const slices = [
   {
+    mock: mockCommentLeadAndCartoonSlice(),
+    name: "comment lead and cartoon",
+    Slice: CommentLeadAndCartoonSlice
+  },
+  {
     mock: mockDailyRegisterSlice(),
     name: "daily universal register",
     Slice: DailyRegisterLeadFourSlice
@@ -96,11 +101,6 @@ const slices = [
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
     name: "secondary two no pic and two",
     Slice: SecondaryTwoNoPicAndTwoSlice
-  },
-  {
-    mock: mockCommentLeadAndCartoonSlice(),
-    name: "comment lead and cartoon",
-    Slice: CommentLeadAndCartoonSlice
   }
 ];
 
