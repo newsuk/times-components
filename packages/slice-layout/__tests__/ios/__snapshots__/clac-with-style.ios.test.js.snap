@@ -13,7 +13,7 @@ exports[`1. comment lead and cartoon - small 1`] = `
   <View
     style={
       Object {
-        "width": "33%",
+        "width": "37.5%",
       }
     }
   >
@@ -34,7 +34,7 @@ exports[`1. comment lead and cartoon - small 1`] = `
   <View
     style={
       Object {
-        "width": "67%",
+        "width": "62.5%",
       }
     }
   >
@@ -58,7 +58,7 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   <View
     style={
       Object {
-        "width": "33%",
+        "width": "37.5%",
       }
     }
   >
@@ -79,7 +79,7 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   <View
     style={
       Object {
-        "width": "67%",
+        "width": "62.5%",
       }
     }
   >

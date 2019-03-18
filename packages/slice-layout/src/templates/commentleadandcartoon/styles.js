@@ -2,7 +2,7 @@ import { spacing } from "@times-components/styleguide";
 
 const styles = {
   cartoon: {
-    width: "67%"
+    width: "62.5%"
   },
   container: {
     flex: 1,
@@ -10,7 +10,7 @@ const styles = {
     paddingRight: spacing(4)
   },
   lead: {
-    width: "33%"
+    width: "37.5%"
   }
 };
 
