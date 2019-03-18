@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. two lead elements, two support elements 1`] = `
+exports[`1. lead two no pic and two - small 1`] = `
 <View>
   <Text>
     lead-1
@@ -20,7 +20,7 @@ exports[`1. two lead elements, two support elements 1`] = `
 </View>
 `;
 
-exports[`2. tablet - two lead elements, two support elements 1`] = `
+exports[`2. lead two no pic and two - medium 1`] = `
 <View>
   <View>
     <Text>

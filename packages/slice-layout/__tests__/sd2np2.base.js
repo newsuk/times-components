@@ -7,7 +7,7 @@ import { SecondaryTwoNoPicAndTwoSlice } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "Secondary two no pic and two layout - Small",
+      name: "secondary two no pic and two - small",
       test() {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice
@@ -23,7 +23,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "Secondary two no pic and two layout - Medium",
+      name: "secondary two no pic and two - medium",
       test() {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice

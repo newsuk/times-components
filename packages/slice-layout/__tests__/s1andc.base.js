@@ -7,7 +7,7 @@ import { SecondaryOneAndColumnistSlice } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "secondary one and columnist",
+      name: "secondary one and columnist - small",
       test() {
         const output = renderComponent(
           <SecondaryOneAndColumnistSlice
@@ -20,7 +20,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - secondary one and columnist",
+      name: "secondary one and columnist - medium",
       test() {
         const output = renderComponent(
           <SecondaryOneAndColumnistSlice

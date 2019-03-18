@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. secondary one and columnist 1`] = `
+exports[`1. secondary one and columnist - small 1`] = `
 <div>
   <div>
     <div>
@@ -16,7 +16,7 @@ exports[`1. secondary one and columnist 1`] = `
 </div>
 `;
 
-exports[`2. tablet - secondary one and columnist 1`] = `
+exports[`2. secondary one and columnist - medium 1`] = `
 <div>
   <div>
     <div>

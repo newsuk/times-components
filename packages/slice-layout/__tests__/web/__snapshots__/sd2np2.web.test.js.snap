@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. secondary two no pic and two layout - small 1`] = `
+exports[`1. secondary two no pic and two - small 1`] = `
 <div>
   <div>
     secondary-1
@@ -20,7 +20,7 @@ exports[`1. secondary two no pic and two layout - small 1`] = `
 </div>
 `;
 
-exports[`2. secondary two no pic and two layout - medium 1`] = `
+exports[`2. secondary two no pic and two - medium 1`] = `
 Array [
   <div>
     <div>
