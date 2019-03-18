@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. comment lead and cartoon 1`] = `
+exports[`1. comment lead and cartoon - small 1`] = `
 <View>
   <View>
     <Text>
@@ -16,7 +16,7 @@ exports[`1. comment lead and cartoon 1`] = `
 </View>
 `;
 
-exports[`2. tablet - comment lead and cartoon 1`] = `
+exports[`2. comment lead and cartoon - medium 1`] = `
 <View>
   <View>
     <Text>

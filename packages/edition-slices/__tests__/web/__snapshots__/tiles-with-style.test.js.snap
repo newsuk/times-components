@@ -70,16 +70,7 @@ exports[`1. tile a 1`] = `
     <div
       className="S4"
     >
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
+      <ArticleFlags />
     </div>
   </div>
   <div
@@ -195,16 +186,7 @@ exports[`2. tile b 1`] = `
       <div
         className="S6"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -291,16 +273,7 @@ exports[`3. tile c 1`] = `
     <div
       className="S1"
     >
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
+      <ArticleFlags />
     </div>
   </div>
 </Link>
@@ -400,16 +373,7 @@ exports[`4. tile d 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -510,16 +474,7 @@ exports[`5. tile e 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -644,16 +599,7 @@ exports[`6. tile f 1`] = `
       <div
         className="S7"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -769,16 +715,7 @@ exports[`7. tile g 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -924,16 +861,7 @@ exports[`8. tile h 1`] = `
       <div
         className="S6"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
       <div
         className="S8"
@@ -1046,16 +974,7 @@ exports[`9. tile i 1`] = `
     <div
       className="S4"
     >
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
+      <ArticleFlags />
     </div>
   </div>
 </Link>
@@ -1148,16 +1067,7 @@ exports[`10. tile j 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -1233,16 +1143,7 @@ exports[`11. tile l 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -1424,14 +1325,6 @@ exports[`13. tile n 1`] = `
       >
         <ArticleFlags
           color="#CCC"
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
         />
       </div>
     </div>
@@ -1512,14 +1405,6 @@ exports[`14. tile o 1`] = `
       >
         <ArticleFlags
           color="#CCC"
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
         />
       </div>
     </div>
@@ -1678,16 +1563,7 @@ exports[`15. tile p 1`] = `
       <div
         className="S5"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
       <div
         className="S7"
@@ -1814,16 +1690,7 @@ exports[`17. tile r 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
     <div
@@ -2036,16 +1903,7 @@ exports[`19. tile t 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -2132,16 +1990,7 @@ exports[`20. tile u 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
     <div
@@ -2238,16 +2087,7 @@ exports[`21. tile v 1`] = `
       <div
         className="S1"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -2366,16 +2206,7 @@ exports[`22. tile w 1`] = `
       <div
         className="S6"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
     <div
@@ -2511,16 +2342,7 @@ exports[`23. tile x 1`] = `
       <div
         className="S7"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -2627,16 +2449,7 @@ exports[`24. tile y 1`] = `
     <div
       className="S6"
     >
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
+      <ArticleFlags />
     </div>
   </div>
 </Link>
@@ -2711,16 +2524,7 @@ exports[`25. tile z 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
     <div
@@ -2821,16 +2625,7 @@ exports[`26. tile aa 1`] = `
       <div
         className="S4"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
@@ -2971,16 +2766,7 @@ exports[`27. tile ab 1`] = `
       <div
         className="S6"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
       <div
         className="S8"
@@ -3110,16 +2896,7 @@ exports[`28. tile ae 1`] = `
       <div
         className="S6"
       >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <ArticleFlags />
       </div>
     </div>
   </div>
