@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
+import { contain } from "intrinsic-scale";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -41,13 +42,19 @@ class TimesImage extends Component {
   }
 
   onImageLayout(evt) {
-    const { onLayout } = this.props;
-    const { height, width } = evt.nativeEvent.layout;
+    const { aspectRatio, onImageLayout } = this.props;
+    const { layout } = evt.nativeEvent;
+    const { height, width } = contain(
+      layout.width,
+      layout.height,
+      layout.width,
+      layout.width / aspectRatio
+    );
 
     this.setState({ height, width });
 
-    if (onLayout) {
-      onLayout(evt);
+    if (onImageLayout) {
+      onImageLayout({ height, width });
     }
   }
 
@@ -62,8 +69,7 @@ class TimesImage extends Component {
       highResSize,
       lowResSize,
       style,
-      uri,
-      resizeMode
+      uri
     } = this.props;
     const { isLoaded, width, height } = this.state;
     const renderedRes = highResSize || width;
@@ -82,7 +88,6 @@ class TimesImage extends Component {
               <Image
                 borderRadius={borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
-                resizeMode={resizeMode}
                 style={styles.imageBackground}
               />
             ) : null}
@@ -92,7 +97,6 @@ class TimesImage extends Component {
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
-          resizeMode={resizeMode}
           style={styles.imageBackground}
         />
       </View>
@@ -103,7 +107,7 @@ class TimesImage extends Component {
 TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = {
   ...propTypes,
-  onLayout: PropTypes.func
+  onImageLayout: PropTypes.func
 };
 
 export default TimesImage;

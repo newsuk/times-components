@@ -20,11 +20,7 @@ class ModalImage extends Component {
     this.onLowResLayout = this.onLowResLayout.bind(this);
   }
 
-  onLowResLayout({
-    nativeEvent: {
-      layout: { width }
-    }
-  }) {
+  onLowResLayout({ width }) {
     this.setState({ lowResImageWidth: width });
   }
 
@@ -48,7 +44,7 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { highResSize, aspectRatio, uri } = this.props;
+    const { highResSize } = this.props;
     const { showModal, lowResImageWidth } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
 
@@ -57,8 +53,7 @@ class ModalImage extends Component {
         <Modal
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
-          // visible={showModal}
-          visible
+          visible={showModal}
         >
           <ResponsiveContext.Consumer>
             {({ isTablet }) => (
@@ -76,16 +71,13 @@ class ModalImage extends Component {
                         onPress={this.hideModal}
                       />
                     </View>
-                    {/*<Gestures style={styles.imageContainer}>*/}
-                    <View style={styles.imageContainer}>
-                      <RNImage source={{ uri }} resizeMode="contain" style={styles.image} />
-                      {/*<Image*/}
-                        {/*{...this.props}*/}
-                        {/*lowResSize={lowResSize}*/}
-                        {/*style={styles.image}*/}
-                      {/*/>*/}
-                    </View>
-                    {/*</Gestures>*/}
+                    <Gestures style={styles.imageContainer}>
+                      <Image
+                        {...this.props}
+                        lowResSize={lowResSize}
+                        style={styles.image}
+                      />
+                    </Gestures>
                     {this.renderCaption({ isTablet })}
                   </View>
                 </SafeAreaView>
@@ -94,7 +86,7 @@ class ModalImage extends Component {
           </ResponsiveContext.Consumer>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image {...this.props} onLayout={this.onLowResLayout} />
+          <Image {...this.props} onImageLayout={this.onLowResLayout} />
         </Button>
       </View>
     );

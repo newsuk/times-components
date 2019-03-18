@@ -139,7 +139,7 @@ class Gestures extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, style } = this.props;
     const { angle, center, viewLayout, zoomRatio } = this.state;
 
     const transformStyle = {
@@ -167,13 +167,13 @@ class Gestures extends Component {
     return (
       <View
         onLayout={this.onViewLayout}
-        style={{ flexGrow: 1 }}
+        style={style}
         {...this.panResponder.panHandlers}
       >
         <TouchableWithoutFeedback>
-          <View {...this.props}>
-            <Animated.View style={transformStyle}>{children}</Animated.View>
-          </View>
+          <Animated.View {...this.props} style={[{ flexGrow: 1 }, transformStyle]}>
+            {children}
+          </Animated.View>
         </TouchableWithoutFeedback>
       </View>
     );

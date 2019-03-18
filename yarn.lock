@@ -11250,6 +11250,11 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
+intrinsic-scale@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/intrinsic-scale/-/intrinsic-scale-3.0.3.tgz#a940efda97e81f783f73c450618c46c1c1fbd008"
+  integrity sha1-qUDv2pfoH3g/c8RQYYxGwcH70Ag=
+
 invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"

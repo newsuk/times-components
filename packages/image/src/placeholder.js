@@ -13,7 +13,7 @@ function Placeholder({ height, style, width }) {
     <Gradient
       degrees={264}
       height={height}
-      style={[style, !hasDimensions && { flex: 1 }]}
+      style={[style, !hasDimensions && { flex: 1, width: "100%" }]}
       width={width}
     >
       {width !== null ? (
