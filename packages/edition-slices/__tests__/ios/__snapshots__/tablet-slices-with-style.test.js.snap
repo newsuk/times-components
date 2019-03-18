@@ -22,7 +22,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "37.5%",
         }
       }
     >
@@ -41,7 +41,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
     <View
       style={
         Object {
-          "width": "67%",
+          "width": "62.5%",
         }
       }
     >
@@ -1017,7 +1017,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "37.5%",
         }
       }
     >
@@ -1036,7 +1036,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
     <View
       style={
         Object {
-          "width": "67%",
+          "width": "62.5%",
         }
       }
     >
@@ -2012,7 +2012,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "37.5%",
         }
       }
     >
@@ -2031,7 +2031,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
     <View
       style={
         Object {
-          "width": "67%",
+          "width": "62.5%",
         }
       }
     >

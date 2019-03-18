@@ -2386,7 +2386,7 @@ exports[`14. comment lead and cartoon 1`] = `
 }
 
 .IS1 {
-  width: 33%;
+  width: 37.5%;
 }
 
 .IS2 {
@@ -2400,7 +2400,7 @@ exports[`14. comment lead and cartoon 1`] = `
 }
 
 .IS3 {
-  width: 67%;
+  width: 62.5%;
 }
 
 .IS4 {

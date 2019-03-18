@@ -7,7 +7,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
 }
 
 .IS1 {
-  width: 33%;
+  width: 37.5%;
 }
 
 .IS2 {
@@ -21,7 +21,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
 }
 
 .IS3 {
-  width: 67%;
+  width: 62.5%;
 }
 
 .IS4 {
@@ -1505,7 +1505,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
 }
 
 .IS1 {
-  width: 33%;
+  width: 37.5%;
 }
 
 .IS2 {
@@ -1519,7 +1519,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
 }
 
 .IS3 {
-  width: 67%;
+  width: 62.5%;
 }
 
 .IS4 {
@@ -3003,7 +3003,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
 }
 
 .IS1 {
-  width: 33%;
+  width: 37.5%;
 }
 
 .IS2 {
@@ -3017,7 +3017,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
 }
 
 .IS3 {
-  width: 67%;
+  width: 62.5%;
 }
 
 .IS4 {
