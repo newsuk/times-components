@@ -53,6 +53,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
+    "@times-components/caption": "2.3.31",
     "@times-components/image": "4.9.9",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/test-utils": "2.2.14",

@@ -46,7 +46,6 @@ export default {
           getImageCrop={() => imageLeadAsset.crop169}
           leadAsset={imageLeadAsset}
           renderCaption={createCaption("caption")}
-          renderModalCaption={createCaption("modal caption")}
           width={400}
         />
       ),
@@ -63,7 +62,6 @@ export default {
           leadAsset={videoLeadAsset}
           onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
           renderCaption={createCaption("caption")}
-          renderModalCaption={createCaption("modal caption")}
           width={400}
         />
       ),
