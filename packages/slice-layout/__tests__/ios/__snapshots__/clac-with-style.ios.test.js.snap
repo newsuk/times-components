@@ -7,13 +7,14 @@ exports[`1. comment lead and cartoon - small 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingRight": 20,
+      "paddingTop": 10,
     }
   }
 >
   <View
     style={
       Object {
-        "width": "37.5%",
+        "width": "33.3%",
       }
     }
   >
@@ -34,7 +35,7 @@ exports[`1. comment lead and cartoon - small 1`] = `
   <View
     style={
       Object {
-        "width": "62.5%",
+        "width": "66.7%",
       }
     }
   >
@@ -52,13 +53,14 @@ exports[`2. comment lead and cartoon - medium 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingRight": 20,
+      "paddingTop": 10,
     }
   }
 >
   <View
     style={
       Object {
-        "width": "37.5%",
+        "width": "33.3%",
       }
     }
   >
@@ -79,7 +81,7 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   <View
     style={
       Object {
-        "width": "62.5%",
+        "width": "66.7%",
       }
     }
   >

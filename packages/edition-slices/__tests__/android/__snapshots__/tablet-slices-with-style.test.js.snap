@@ -16,13 +16,14 @@ exports[`1. comment lead and cartoon - medium 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "paddingRight": 20,
+        "paddingTop": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "37.5%",
+          "width": "33.3%",
         }
       }
     >
@@ -41,7 +42,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
     <View
       style={
         Object {
-          "width": "62.5%",
+          "width": "66.7%",
         }
       }
     >
@@ -1011,13 +1012,14 @@ exports[`14. comment lead and cartoon - wide 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "paddingRight": 20,
+        "paddingTop": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "37.5%",
+          "width": "33.3%",
         }
       }
     >
@@ -1036,7 +1038,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
     <View
       style={
         Object {
-          "width": "62.5%",
+          "width": "66.7%",
         }
       }
     >
@@ -2006,13 +2008,14 @@ exports[`27. comment lead and cartoon - huge 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "paddingRight": 20,
+        "paddingTop": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "37.5%",
+          "width": "33.3%",
         }
       }
     >
@@ -2031,7 +2034,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
     <View
       style={
         Object {
-          "width": "62.5%",
+          "width": "66.7%",
         }
       }
     >

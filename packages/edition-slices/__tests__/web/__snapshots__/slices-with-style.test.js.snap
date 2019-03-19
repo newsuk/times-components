@@ -2386,7 +2386,7 @@ exports[`14. comment lead and cartoon 1`] = `
 }
 
 .IS1 {
-  width: 37.5%;
+  width: 33.3%;
 }
 
 .IS2 {
@@ -2400,7 +2400,7 @@ exports[`14. comment lead and cartoon 1`] = `
 }
 
 .IS3 {
-  width: 62.5%;
+  width: 66.7%;
 }
 
 .IS4 {
@@ -2414,6 +2414,7 @@ exports[`14. comment lead and cartoon 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   padding-right: 20px;
+  padding-top: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
