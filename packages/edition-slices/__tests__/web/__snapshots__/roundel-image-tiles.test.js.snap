@@ -28,7 +28,10 @@ exports[`1. tile g - layout change 1`] = `
         <ArticleFlags
           flags={
             Array [
-              "EXCLUSIVE",
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
             ]
           }
         />
@@ -72,7 +75,10 @@ exports[`2. tile p - layout change 1`] = `
         <ArticleFlags
           flags={
             Array [
-              "EXCLUSIVE",
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
             ]
           }
         />

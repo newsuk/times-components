@@ -1,6 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register - medium 1`] = `
+exports[`1. comment lead and cartoon - medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 37.5%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  width: 62.5%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS5 S1"
+>
+  <div
+    className="IS4 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS3 S1"
+    >
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. daily universal register - medium 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -143,7 +222,7 @@ exports[`1. daily universal register - medium 1`] = `
 </div>
 `;
 
-exports[`2. lead one and one - medium 1`] = `
+exports[`3. lead one and one - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -223,7 +302,7 @@ exports[`2. lead one and one - medium 1`] = `
 </div>
 `;
 
-exports[`3. lead one full width - medium 1`] = `
+exports[`4. lead one full width - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -247,7 +326,7 @@ exports[`3. lead one full width - medium 1`] = `
 </div>
 `;
 
-exports[`4. lead two no pic and two - medium 1`] = `
+exports[`5. lead two no pic and two - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -349,7 +428,7 @@ exports[`4. lead two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`5. leaders slice - medium 1`] = `
+exports[`6. leaders slice - medium 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -516,7 +595,7 @@ exports[`5. leaders slice - medium 1`] = `
 </div>
 `;
 
-exports[`6. secondary one and four - medium 1`] = `
+exports[`7. secondary one and four - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -703,7 +782,7 @@ exports[`6. secondary one and four - medium 1`] = `
 </div>
 `;
 
-exports[`7. secondary one - medium 1`] = `
+exports[`8. secondary one - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -727,7 +806,7 @@ exports[`7. secondary one - medium 1`] = `
 </div>
 `;
 
-exports[`8. secondary four - medium 1`] = `
+exports[`9. secondary four - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -885,7 +964,7 @@ exports[`8. secondary four - medium 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and columnist - medium 1`] = `
+exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -966,7 +1045,7 @@ exports[`9. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two - medium 1`] = `
+exports[`11. secondary two and two - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1135,7 +1214,7 @@ exports[`10. secondary two and two - medium 1`] = `
 </div>
 `;
 
-exports[`11. lead one and four slice - medium 1`] = `
+exports[`12. lead one and four slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1267,7 +1346,7 @@ exports[`11. lead one and four slice - medium 1`] = `
 </div>
 `;
 
-exports[`12. secondary two no pic and two - medium 1`] = `
+exports[`13. secondary two no pic and two - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1419,7 +1498,7 @@ exports[`12. secondary two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`13. puzzle slice - medium 1`] = `
+exports[`14. puzzle slice - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1519,7 +1598,86 @@ exports[`13. puzzle slice - medium 1`] = `
 </div>
 `;
 
-exports[`14. daily universal register - wide 1`] = `
+exports[`15. comment lead and cartoon - wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 37.5%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  width: 62.5%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS5 S1"
+>
+  <div
+    className="IS4 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS3 S1"
+    >
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`16. daily universal register - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1662,7 +1820,7 @@ exports[`14. daily universal register - wide 1`] = `
 </div>
 `;
 
-exports[`15. lead one and one - wide 1`] = `
+exports[`17. lead one and one - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1742,7 +1900,7 @@ exports[`15. lead one and one - wide 1`] = `
 </div>
 `;
 
-exports[`16. lead one full width - wide 1`] = `
+exports[`18. lead one full width - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1766,7 +1924,7 @@ exports[`16. lead one full width - wide 1`] = `
 </div>
 `;
 
-exports[`17. lead two no pic and two - wide 1`] = `
+exports[`19. lead two no pic and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1868,7 +2026,7 @@ exports[`17. lead two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`18. leaders slice - wide 1`] = `
+exports[`20. leaders slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2035,7 +2193,7 @@ exports[`18. leaders slice - wide 1`] = `
 </div>
 `;
 
-exports[`19. secondary one and four - wide 1`] = `
+exports[`21. secondary one and four - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2222,7 +2380,7 @@ exports[`19. secondary one and four - wide 1`] = `
 </div>
 `;
 
-exports[`20. secondary one - wide 1`] = `
+exports[`22. secondary one - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2246,7 +2404,7 @@ exports[`20. secondary one - wide 1`] = `
 </div>
 `;
 
-exports[`21. secondary four - wide 1`] = `
+exports[`23. secondary four - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2404,7 +2562,7 @@ exports[`21. secondary four - wide 1`] = `
 </div>
 `;
 
-exports[`22. secondary one and columnist - wide 1`] = `
+exports[`24. secondary one and columnist - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2485,7 +2643,7 @@ exports[`22. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`23. secondary two and two - wide 1`] = `
+exports[`25. secondary two and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2654,7 +2812,7 @@ exports[`23. secondary two and two - wide 1`] = `
 </div>
 `;
 
-exports[`24. lead one and four slice - wide 1`] = `
+exports[`26. lead one and four slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2786,7 +2944,7 @@ exports[`24. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-exports[`25. secondary two no pic and two - wide 1`] = `
+exports[`27. secondary two no pic and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2938,7 +3096,7 @@ exports[`25. secondary two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`26. puzzle slice - wide 1`] = `
+exports[`28. puzzle slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3038,7 +3196,86 @@ exports[`26. puzzle slice - wide 1`] = `
 </div>
 `;
 
-exports[`27. daily universal register - huge 1`] = `
+exports[`29. comment lead and cartoon - huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 37.5%;
+}
+
+.IS2 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  width: 62.5%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS5 S1"
+>
+  <div
+    className="IS4 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="IS2"
+    />
+    <div
+      className="IS3 S1"
+    >
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`30. daily universal register - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -3181,7 +3418,7 @@ exports[`27. daily universal register - huge 1`] = `
 </div>
 `;
 
-exports[`28. lead one and one - huge 1`] = `
+exports[`31. lead one and one - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3261,7 +3498,7 @@ exports[`28. lead one and one - huge 1`] = `
 </div>
 `;
 
-exports[`29. lead one full width - huge 1`] = `
+exports[`32. lead one full width - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3285,7 +3522,7 @@ exports[`29. lead one full width - huge 1`] = `
 </div>
 `;
 
-exports[`30. lead two no pic and two - huge 1`] = `
+exports[`33. lead two no pic and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3387,7 +3624,7 @@ exports[`30. lead two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`31. leaders slice - huge 1`] = `
+exports[`34. leaders slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -3554,7 +3791,7 @@ exports[`31. leaders slice - huge 1`] = `
 </div>
 `;
 
-exports[`32. secondary one and four - huge 1`] = `
+exports[`35. secondary one and four - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3741,7 +3978,7 @@ exports[`32. secondary one and four - huge 1`] = `
 </div>
 `;
 
-exports[`33. secondary one - huge 1`] = `
+exports[`36. secondary one - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3765,7 +4002,7 @@ exports[`33. secondary one - huge 1`] = `
 </div>
 `;
 
-exports[`34. secondary four - huge 1`] = `
+exports[`37. secondary four - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3923,7 +4160,7 @@ exports[`34. secondary four - huge 1`] = `
 </div>
 `;
 
-exports[`35. secondary one and columnist - huge 1`] = `
+exports[`38. secondary one and columnist - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4004,7 +4241,7 @@ exports[`35. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`36. secondary two and two - huge 1`] = `
+exports[`39. secondary two and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4173,7 +4410,7 @@ exports[`36. secondary two and two - huge 1`] = `
 </div>
 `;
 
-exports[`37. lead one and four slice - huge 1`] = `
+exports[`40. lead one and four slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4305,7 +4542,7 @@ exports[`37. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-exports[`38. secondary two no pic and two - huge 1`] = `
+exports[`41. secondary two no pic and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4457,7 +4694,7 @@ exports[`38. secondary two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`39. puzzle slice - huge 1`] = `
+exports[`42. puzzle slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

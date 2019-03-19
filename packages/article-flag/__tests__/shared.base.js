@@ -1,4 +1,5 @@
 import React from "react";
+import mockDate from "mockdate";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import ArticleFlag, {
@@ -10,6 +11,15 @@ import ArticleFlag, {
 } from "../src/article-flag";
 
 export default () => {
+  //  GMT: Thursday, 14 March 2019 16:22:54
+  beforeEach(() => {
+    mockDate.set(1552580574000, 0);
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+  });
+
   const tests = [
     {
       name: "article flag",
@@ -95,8 +105,21 @@ export default () => {
       name: "article flags",
       test: () => {
         const testInstance = TestRenderer.create(
-          <ArticleFlags flags={["UPDATED", "EXCLUSIVE"]} />
+          <ArticleFlags
+            flags={[
+              { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
+              { expiryTime: "2020-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+            ]}
+          />
         );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article flags with no flags",
+      test: () => {
+        const testInstance = TestRenderer.create(<ArticleFlags flags={[]} />);
 
         expect(testInstance).toMatchSnapshot();
       }

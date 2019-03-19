@@ -39,7 +39,10 @@ exports[`1. an article 1`] = `
         <ArticleFlags
           flags={
             Array [
-              "NEW",
+              Object {
+                "expiryTime": "2019-03-14T12:00:00.000Z",
+                "type": "NEW",
+              },
             ]
           }
         />
@@ -93,6 +96,9 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       >
         Some Short Headline
       </Text>
+      <View>
+        <ArticleFlags />
+      </View>
     </View>
     <View>
       <View>
@@ -115,6 +121,9 @@ exports[`5. an article with ads 1`] = `
       >
         Some Headline
       </Text>
+      <View>
+        <ArticleFlags />
+      </View>
     </View>
     <View>
       <View>

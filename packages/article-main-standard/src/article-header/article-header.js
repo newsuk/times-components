@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text, View } from "react-native";
-import { ArticleFlags } from "@times-components/article-flag";
+import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -27,14 +27,18 @@ const ArticleHeader = ({
       selectable
       style={[
         styles.articleHeadLineText,
-        !(flags.length > 0 || standfirst) && styles.articleHeadlineSpacer,
+        !(getActiveFlags(flags).length > 0 || standfirst) &&
+          styles.articleHeadlineSpacer,
         isTablet && styles.articleHeadLineTextTablet
       ]}
     >
       {headline}
     </Text>
-    <HeaderStandfirst hasFlags={flags.length > 0} standfirst={standfirst} />
-    {flags.length > 0 && (
+    <HeaderStandfirst
+      hasFlags={getActiveFlags(flags).length > 0}
+      standfirst={standfirst}
+    />
+    {getActiveFlags(flags).length > 0 && (
       <View style={styles.flags}>
         <ArticleFlags flags={flags} />
       </View>

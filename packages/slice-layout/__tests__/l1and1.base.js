@@ -7,7 +7,7 @@ import { LeadOneAndOneSlice } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "lead one and one",
+      name: "lead one and one - small",
       test() {
         const output = renderComponent(
           <LeadOneAndOneSlice
@@ -20,7 +20,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - lead one and one",
+      name: "lead one and one - medium",
       test() {
         const output = renderComponent(
           <LeadOneAndOneSlice

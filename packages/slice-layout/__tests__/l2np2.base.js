@@ -7,7 +7,7 @@ import { LeadTwoNoPicAndTwoSlice } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "Two Lead Elements, Two Support Elements",
+      name: "lead two no pic and two - small",
       test() {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice
@@ -22,7 +22,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - Two Lead Elements, Two Support Elements",
+      name: "lead two no pic and two - medium",
       test() {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice

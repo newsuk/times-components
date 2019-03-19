@@ -1290,7 +1290,16 @@ const defaultContent = [
     name: "paragraph"
   }
 ];
-const defaultFlags = ["NEW", "EXCLUSIVE"];
+const defaultExpirableFlags = [
+  {
+    expiryTime: "2020-03-14T12:00:00.000Z",
+    type: "NEW"
+  },
+  {
+    expiryTime: "2019-03-14T12:00:00.000Z",
+    type: "EXCLUSIVE"
+  }
+];
 const defaultHasVideo = false;
 const defaultHeadline =
   "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record";
@@ -2012,7 +2021,7 @@ const makeDefaultConfig = ({
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
-  flags = defaultFlags,
+  expirableFlags = defaultExpirableFlags,
   hasVideo = defaultHasVideo,
   headline = defaultHeadline,
   keywords = defaultKeywords,
@@ -2033,7 +2042,7 @@ const makeDefaultConfig = ({
   commentCount,
   commentsEnabled,
   content,
-  flags,
+  expirableFlags,
   hasVideo,
   headline,
   keywords,
@@ -2109,7 +2118,12 @@ export const testFixture = {
       name: "paragraph"
     }
   ],
-  flags: ["NEW"],
+  expirableFlags: [
+    {
+      expiryTime: "2020-03-14T12:00:00.000Z",
+      type: "NEW"
+    }
+  ],
   hasVideo: false,
   headline: "Some Headline",
   label: "Some Label",

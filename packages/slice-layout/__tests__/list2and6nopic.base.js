@@ -7,7 +7,7 @@ import { ListTwoAndSixNoPic } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "list two and six no pic",
+      name: "list two and six no pic - small",
       test() {
         const output = renderComponent(
           <ListTwoAndSixNoPic
@@ -26,7 +26,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - list two and six no pic",
+      name: "list two and six no pic - medium",
       test() {
         const output = renderComponent(
           <ListTwoAndSixNoPic

@@ -1054,7 +1054,10 @@ export default gql`
 
   fragment baseArticleProps on Article {
     byline
-    flags
+    expirableFlags {
+      type
+      expiryTime
+    }
     hasVideo
     headline
     id

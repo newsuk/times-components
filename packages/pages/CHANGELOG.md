@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.5](https://github.com/newsuk/times-components/compare/@times-components/pages@1.19.4...@times-components/pages@1.19.5) (2019-03-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.19.3...@times-components/pages@1.19.4) (2019-03-18)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/pages@1.19.2...@times-components/pages@1.19.3) (2019-03-18)
+
+
+### Bug Fixes
+
+* Fix broken snapshot click event ([#1807](https://github.com/newsuk/times-components/issues/1807)) ([5fec490](https://github.com/newsuk/times-components/commit/5fec490))
+
+
+
+
+
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/pages@1.19.1...@times-components/pages@1.19.2) (2019-03-18)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [1.19.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.19.0...@times-components/pages@1.19.1) (2019-03-15)
 
 **Note:** Version bump only for package @times-components/pages

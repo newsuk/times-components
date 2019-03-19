@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. four child elements 1`] = `
+exports[`1. secondary two and two - small 1`] = `
 Array [
   <div
     style={
@@ -98,7 +98,7 @@ Array [
 ]
 `;
 
-exports[`2. tablet - four child elements 1`] = `
+exports[`2. secondary two and two - medium 1`] = `
 <div
   style={
     Object {

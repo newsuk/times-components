@@ -112,3 +112,5 @@ exports[`9. article flags 1`] = `
   </View>
 </View>
 `;
+
+exports[`10. article flags with no flags 1`] = `null`;

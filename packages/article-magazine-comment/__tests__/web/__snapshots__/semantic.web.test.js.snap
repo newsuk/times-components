@@ -29,7 +29,6 @@ exports[`1. a full article 1`] = `
   >
     Some Headline
   </h1>
-  new
   <h2
     aria-level="2"
     data-testid="standfirst"

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 import styles from "./style";
+import getActiveFlags from "./get-active-flags";
 import {
   articleFlagPropTypes,
   articleFlagsPropTypes,
@@ -73,12 +74,14 @@ const flagsMapping = color =>
   ]);
 
 const ArticleFlags = ({ flags, color }) => {
-  if (!flags || flags.length === 0) return null;
+  const activeFlags = getActiveFlags(flags);
+  if (!activeFlags || activeFlags.length === 0) return null;
+
   return (
     <View style={styles.flags}>
-      {flags.map(flag => (
-        <View key={flag} style={flags.length > 1 && styles.flagPadding}>
-          {flagsMapping(color).get(flag)}
+      {activeFlags.map(flag => (
+        <View key={flag.type} style={flags.length > 1 && styles.flagPadding}>
+          {flagsMapping(color).get(flag.type)}
         </View>
       ))}
     </View>
@@ -93,6 +96,7 @@ ArticleFlags.defaultProps = {
 export default ArticleFlag;
 
 export {
+  getActiveFlags,
   ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,

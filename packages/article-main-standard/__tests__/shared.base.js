@@ -19,7 +19,7 @@ const findComponents = (testInstance, componentName) =>
 
 const emptyArticle = {
   byline: null,
-  flags: null,
+  expirableFlags: null,
   hasVideo: null,
   label: null,
   leadAsset: null,

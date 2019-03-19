@@ -1,25 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. two child element 1`] = `
-<div>
-  <div>
-    lead-1
+exports[`1. comment lead and cartoon - small 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+      "paddingRight": "20px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "37.5%",
+      }
+    }
+  >
+    <div>
+      lead-1
+    </div>
   </div>
   <div
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+        "marginBottom": "10px",
+        "marginTop": "10px",
       }
     }
   />
-  <div>
-    cartoon-1
+  <div
+    style={
+      Object {
+        "width": "62.5%",
+      }
+    }
+  >
+    <div>
+      cartoon-1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. comment lead and cartoon - medium 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+      "paddingRight": "20px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "37.5%",
+      }
+    }
+  >
+    <div>
+      lead-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "62.5%",
+      }
+    }
+  >
+    <div>
+      cartoon-1
+    </div>
   </div>
 </div>
 `;

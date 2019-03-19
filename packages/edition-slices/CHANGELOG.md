@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.40.1...@times-components/edition-slices@0.41.0) (2019-03-18)
+
+
+### Features
+
+* Tablet - Comment Lead and Cartoon ([#1806](https://github.com/newsuk/times-components/issues/1806)) ([f54dd32](https://github.com/newsuk/times-components/commit/f54dd32))
+
+
+
+
+
+## [0.40.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.40.0...@times-components/edition-slices@0.40.1) (2019-03-18)
+
+
+### Bug Fixes
+
+* Fix broken snapshot click event ([#1807](https://github.com/newsuk/times-components/issues/1807)) ([5fec490](https://github.com/newsuk/times-components/commit/5fec490))
+
+
+
+
+
+# [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.39.0...@times-components/edition-slices@0.40.0) (2019-03-18)
+
+
+### Features
+
+* Flag expiry ([#1809](https://github.com/newsuk/times-components/issues/1809)) ([ecaef57](https://github.com/newsuk/times-components/commit/ecaef57))
+
+
+
+
+
 # [0.39.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.38.5...@times-components/edition-slices@0.39.0) (2019-03-15)
 
 

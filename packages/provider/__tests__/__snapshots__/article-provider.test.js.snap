@@ -74,9 +74,17 @@ Object {
     },
   ],
   "dropcapsDisabled": false,
-  "flags": Array [
-    "NEW",
-    "EXCLUSIVE",
+  "expirableFlags": Array [
+    Object {
+      "__typename": "ExpirableFlag",
+      "expiryTime": "2020-03-13T15:00:00.000Z",
+      "type": "NEW",
+    },
+    Object {
+      "__typename": "ExpirableFlag",
+      "expiryTime": "2019-03-13T13:00:00.000Z",
+      "type": "UPDATED",
+    },
   ],
   "hasVideo": true,
   "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",

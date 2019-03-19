@@ -89,8 +89,12 @@ Object {
                   },
                 ],
                 "dropcapsDisabled": false,
-                "flags": Array [
-                  "EXCLUSIVE",
+                "expirableFlags": Array [
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
                 ],
                 "hasVideo": false,
                 "headline": "Venezuela shows how Corbyn’s socialism works",
@@ -543,8 +547,12 @@ Object {
                   },
                 ],
                 "dropcapsDisabled": false,
-                "flags": Array [
-                  "EXCLUSIVE",
+                "expirableFlags": Array [
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
                 ],
                 "hasVideo": false,
                 "headline": "Venezuela shows how Corbyn’s socialism works",
@@ -951,9 +959,17 @@ Object {
                   "name": "inline",
                 },
               ],
-              "flags": Array [
-                "NEW",
-                "EXCLUSIVE",
+              "expirableFlags": Array [
+                Object {
+                  "__typename": "ExpirableFlag",
+                  "expiryTime": "2020-03-13T15:00:00.000Z",
+                  "type": "NEW",
+                },
+                Object {
+                  "__typename": "ExpirableFlag",
+                  "expiryTime": "2019-03-13T13:00:00.000Z",
+                  "type": "UPDATED",
+                },
               ],
               "hasVideo": true,
               "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
@@ -1021,9 +1037,17 @@ Object {
                   "name": "inline",
                 },
               ],
-              "flags": Array [
-                "NEW",
-                "EXCLUSIVE",
+              "expirableFlags": Array [
+                Object {
+                  "__typename": "ExpirableFlag",
+                  "expiryTime": "2020-03-13T15:00:00.000Z",
+                  "type": "NEW",
+                },
+                Object {
+                  "__typename": "ExpirableFlag",
+                  "expiryTime": "2019-03-13T13:00:00.000Z",
+                  "type": "UPDATED",
+                },
               ],
               "hasVideo": true,
               "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",

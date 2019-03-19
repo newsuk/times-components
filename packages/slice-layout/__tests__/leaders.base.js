@@ -7,7 +7,7 @@ import { Leaders } from "../src/slice-layout";
 export default renderComponent => {
   const tests = [
     {
-      name: "three child element",
+      name: "leaders - small",
       test() {
         const output = renderComponent(
           <Leaders
@@ -21,7 +21,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "tablet - three child element",
+      name: "leaders - medium",
       test() {
         const output = renderComponent(
           <Leaders

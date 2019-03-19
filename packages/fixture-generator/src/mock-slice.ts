@@ -285,7 +285,7 @@ function mockDailyRegisterSlice(): DailyUniversalRegister {
 }
 
 function mockArticleSlice(count: number): ArticleSlice {
-  return { items: getTiles(count) };
+  return { items: getTiles(count), sections: [] };
 }
 
 function mockPuzzleSlice(): Puzzle {

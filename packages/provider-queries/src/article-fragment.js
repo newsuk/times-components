@@ -27,9 +27,13 @@ export default gql`
     }
     content
     dropcapsDisabled
-    flags
+    expirableFlags {
+      type
+      expiryTime
+    }
     keywords
     leadAsset {
+      __typename
       ... on Video {
         brightcoveAccountId
         brightcovePolicyKey
@@ -44,6 +48,7 @@ export default gql`
       }
     }
     relatedArticleSlice {
+      __typename
       ... on StandardSlice {
         items {
           ...relatedProps
@@ -141,6 +146,7 @@ export default gql`
 
   fragment relatedProps on Tile {
     leadAsset {
+      __typename
       ... on Image {
         crop169: crop(ratio: "16:9") {
           url
@@ -166,6 +172,7 @@ export default gql`
     }
     article {
       leadAsset {
+        __typename
         ... on Image {
           crop169: crop(ratio: "16:9") {
             url

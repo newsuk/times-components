@@ -37,10 +37,7 @@ import {
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
-    ([e, ...args]) => {
-      e.preventDefault();
-      return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    args => ["[SyntheticEvent (storybook prevented default)]", ...args]
   ]);
 
 const publications = {
@@ -133,7 +130,7 @@ const sliceStories = [
   },
   {
     mock: mockCommentLeadAndCartoonSlice(),
-    name: "Comment Lead And Cartoon (P,Q)",
+    name: "Comment Lead And Cartoon (Mobile: P,Q, Tablet: AH, AI)",
     Slice: CommentLeadAndCartoonSlice
   }
 ];

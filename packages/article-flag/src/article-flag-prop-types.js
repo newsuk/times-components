@@ -16,7 +16,12 @@ const articleFlagPropTypes = {
 };
 
 const articleFlagsPropTypes = {
-  flags: PropTypes.arrayOf(PropTypes.string)
+  flags: PropTypes.arrayOf(
+    PropTypes.shape({
+      expiryTime: PropTypes.string,
+      type: PropTypes.string
+    })
+  )
 };
 
 const articleFlagDefaultProps = {
