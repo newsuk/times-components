@@ -11,7 +11,6 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "center",
     paddingHorizontal: spacing(3),
     paddingTop: spacing(2)
   }

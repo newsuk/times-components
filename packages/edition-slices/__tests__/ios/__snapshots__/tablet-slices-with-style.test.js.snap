@@ -959,7 +959,6 @@ exports[`13. puzzle slice - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
         "paddingHorizontal": 15,
         "paddingTop": 10,
       }
@@ -1931,7 +1930,6 @@ exports[`26. puzzle slice - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
         "paddingHorizontal": 15,
         "paddingTop": 10,
       }
@@ -2903,7 +2901,6 @@ exports[`39. puzzle slice - huge 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
         "paddingHorizontal": 15,
         "paddingTop": 10,
       }
