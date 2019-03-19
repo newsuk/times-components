@@ -3,6 +3,7 @@
 exports[`1. daily universal register 1`] = `
 <View>
   <Image
+    accessibilityLabel="Daily Universal Register logo"
     resizeMode="contain"
     source={
       Object {
@@ -10,7 +11,10 @@ exports[`1. daily universal register 1`] = `
       }
     }
   />
-  <Text>
+  <Text
+    accessibilityLabel="Daily Universal Register"
+    accessibilityRole="heading"
+  >
     Daily Universal Register
   </Text>
   <TileS />
@@ -18,6 +22,7 @@ exports[`1. daily universal register 1`] = `
   <TileS />
   <View />
   <Image
+    accessibilityLabel="Nature Notes logo"
     resizeMode="contain"
     source={
       Object {
@@ -28,6 +33,7 @@ exports[`1. daily universal register 1`] = `
   <TileS />
   <View />
   <Image
+    accessibilityLabel="Birthdays logo"
     resizeMode="contain"
     source={
       Object {
@@ -125,6 +131,7 @@ exports[`2. leaders 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -133,8 +140,11 @@ exports[`2. leaders 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -158,6 +168,7 @@ exports[`2. leaders 2`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -166,8 +177,11 @@ exports[`2. leaders 2`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -429,6 +443,7 @@ exports[`13. leaders 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -437,8 +452,11 @@ exports[`13. leaders 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>

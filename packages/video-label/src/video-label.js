@@ -4,16 +4,19 @@ import { IconVideo } from "@times-components/icons";
 import PropTypes from "prop-types";
 import styles from "./style";
 
-const VideoLabel = ({ color, title }) => (
-  <View style={styles.container}>
-    <View style={styles.iconContainer}>
-      <IconVideo fillColour={color} height={9} />
+const VideoLabel = ({ color, title }) => {
+  const label = title ? title.toUpperCase() : "VIDEO";
+  return (
+    <View style={styles.container}>
+      <View style={styles.iconContainer}>
+        <IconVideo fillColour={color} height={9} />
+      </View>
+      <Text accessibilityLabel={`${label}.`} style={[styles.title, { color }]}>
+        {label}
+      </Text>
     </View>
-    <Text style={[styles.title, { color }]}>
-      {title ? title.toUpperCase() : "VIDEO"}
-    </Text>
-  </View>
-);
+  );
+};
 
 VideoLabel.propTypes = {
   color: PropTypes.string,

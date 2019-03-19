@@ -9,6 +9,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -113,6 +114,7 @@ exports[`2. article summary with opinion byline 1`] = `
     />
   </Text>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -137,6 +139,7 @@ exports[`2. article summary with opinion byline 1`] = `
 exports[`3. article summary component with multiple paragraphs 1`] = `
 <View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -236,6 +239,7 @@ exports[`5. article summary component containing links 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -273,6 +277,7 @@ exports[`6. article summary component with headline and no content 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -296,6 +301,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -348,6 +354,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
 exports[`8. article summary component with no byline 1`] = `
 <View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -372,6 +379,7 @@ exports[`8. article summary component with no byline 1`] = `
 exports[`9. article summary component with no label 1`] = `
 <View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -447,6 +455,7 @@ exports[`11. article summary component with no date publication 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -493,6 +502,7 @@ exports[`12. article summary component with a video label 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
@@ -544,12 +554,14 @@ exports[`13. article summary component with a strapline 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
   >
     Test Headline
   </Text>
   <Text
+    accessibilityLabel="Test Strapline."
     accessibilityRole="heading"
     aria-level="4"
   >

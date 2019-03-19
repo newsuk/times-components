@@ -4,7 +4,7 @@ exports[`1. article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="No Colour Flag"
+    aria-label="No Colour Flag."
   >
     no colour
   </div>
@@ -15,7 +15,7 @@ exports[`2. red article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="Coloured Red Flag"
+    aria-label="Coloured Red Flag."
   >
     coloured red
   </div>
@@ -26,7 +26,7 @@ exports[`3. hex colour article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="Coloured Red Flag"
+    aria-label="Coloured Red Flag."
   >
     coloured red
   </div>
@@ -37,7 +37,7 @@ exports[`4. rgba colour article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="Coloured Red Flag"
+    aria-label="Coloured Red Flag."
   >
     coloured red
   </div>
@@ -48,7 +48,7 @@ exports[`5. new article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="new Flag"
+    aria-label="new Flag."
   >
     new
   </div>
@@ -59,7 +59,7 @@ exports[`6. updated article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="updated Flag"
+    aria-label="updated Flag."
   >
     updated
   </div>
@@ -70,7 +70,7 @@ exports[`7. exclusive article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="exclusive Flag"
+    aria-label="exclusive Flag."
   >
     exclusive
   </div>
@@ -81,7 +81,7 @@ exports[`8. sponsored article flag 1`] = `
 <div>
   <div />
   <div
-    aria-label="sponsored Flag"
+    aria-label="sponsored Flag."
   >
     sponsored
   </div>
@@ -94,7 +94,7 @@ exports[`9. article flags 1`] = `
     <div>
       <div />
       <div
-        aria-label="updated Flag"
+        aria-label="updated Flag."
       >
         updated
       </div>
@@ -104,7 +104,7 @@ exports[`9. article flags 1`] = `
     <div>
       <div />
       <div
-        aria-label="exclusive Flag"
+        aria-label="exclusive Flag."
       >
         exclusive
       </div>

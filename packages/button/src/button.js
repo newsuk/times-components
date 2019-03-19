@@ -14,7 +14,6 @@ const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
       accessibilityComponentType="button"
       accessibilityLabel={transformedTitle}
       accessibilityRole="button"
-      accessibilityTraits="button"
       activeOpacity={1}
       onPress={onPress}
       style={[styles.button, style]}

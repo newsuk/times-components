@@ -7,6 +7,8 @@ import { TileS } from "../../tiles";
 import styleFactory from "./styles";
 import Logo from "./logo";
 
+const headline = "Daily Universal Register";
+
 const DailyRegisterLeadFour = ({
   slice: { birthdaysToday, briefing, natureNotes, onThisDay }
 }) => {
@@ -15,17 +17,25 @@ const DailyRegisterLeadFour = ({
     return (
       <View style={styles.container}>
         <Logo
+          accessibilityLabel={`${headline} logo`}
           imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
           ratio={1435 / 250}
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text style={styles.title}>Daily Universal Register</Text>
+        <Text
+          accessibilityLabel={headline}
+          accessibilityRole="heading"
+          style={styles.title}
+        >
+          {headline}
+        </Text>
         <TileS tile={briefing} />
         <ItemRowSeparator style={styles.separator} />
         <TileS tile={onThisDay} />
         <ItemRowSeparator style={styles.separator} />
         <Logo
+          accessibilityLabel="Nature Notes logo"
           imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
           ratio={1 / 1}
           style={styles.imageWrapper}
@@ -34,6 +44,7 @@ const DailyRegisterLeadFour = ({
         <TileS tile={natureNotes} />
         <ItemRowSeparator style={styles.separator} />
         <Logo
+          accessibilityLabel="Birthdays logo"
           imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
           ratio={1 / 1}
           style={styles.imageWrapper}

@@ -2,6 +2,7 @@
 
 exports[`Article Label test on web renders ArticleLabel 1`] = `
 <div
+  aria-label="swimming."
   dir="auto"
   style={
     Object {
@@ -15,6 +16,7 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
 
 exports[`Article Label test on web renders ArticleLabel with GraphQL Colour type 1`] = `
 <div
+  aria-label="swimming."
   dir="auto"
   style={
     Object {

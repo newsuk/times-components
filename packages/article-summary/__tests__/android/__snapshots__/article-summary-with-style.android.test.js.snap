@@ -15,6 +15,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </View>
   <Text
+    accessibilityLabel="Test Headline."
     accessibilityRole="heading"
     aria-level="3"
     style={

@@ -5,7 +5,6 @@ exports[`accessible button 1`] = `
   accessibilityComponentType="button"
   accessibilityLabel="Test button"
   accessibilityRole="button"
-  accessibilityTraits="button"
 >
   <Text>
     Test button

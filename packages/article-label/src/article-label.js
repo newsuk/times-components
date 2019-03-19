@@ -5,7 +5,10 @@ import PropTypes from "prop-types";
 import styles from "./style";
 
 const ArticleLabel = ({ color, title }) => (
-  <Text style={[styles.title, { color: gqlRgbaToHex(color) || color }]}>
+  <Text
+    accessibilityLabel={`${title}.`}
+    style={[styles.title, { color: gqlRgbaToHex(color) || color }]}
+  >
     {title.toUpperCase()}
   </Text>
 );

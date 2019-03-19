@@ -111,11 +111,13 @@ exports[`1. daily universal register 1`] = `
       className="IS1"
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
-    <div
+    <h1
+      aria-label="Daily Universal Register"
       className="IS2 S1"
+      role="heading"
     >
       Daily Universal Register
-    </div>
+    </h1>
     <TileS />
     <div
       className="IS3"
@@ -666,11 +668,13 @@ exports[`2. leaders 1`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div
@@ -834,11 +838,13 @@ exports[`2. leaders 2`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div
@@ -2339,11 +2345,13 @@ exports[`13. leaders 1`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div

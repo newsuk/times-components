@@ -6,11 +6,14 @@ exports[`1. tile a 1`] = `
 >
   <View>
     <View>
-      <Text>
+      <Text
+        accessibilityLabel="label."
+      >
         LABEL
       </Text>
     </View>
     <Text
+      accessibilityLabel="This is tile headline."
       accessibilityRole="heading"
       aria-level="3"
     >
@@ -45,11 +48,14 @@ exports[`2. tile b 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -98,11 +104,14 @@ exports[`3. tile c 1`] = `
   </View>
   <View>
     <View>
-      <Text>
+      <Text
+        accessibilityLabel="label."
+      >
         LABEL
       </Text>
     </View>
     <Text
+      accessibilityLabel="This is tile headline."
       accessibilityRole="heading"
       aria-level="3"
     >
@@ -137,11 +146,14 @@ exports[`4. tile d 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -177,11 +189,14 @@ exports[`5. tile e 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -211,17 +226,21 @@ exports[`6. tile f 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
         This is tile headline
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -265,11 +284,14 @@ exports[`7. tile g 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -299,11 +321,14 @@ exports[`8. tile h 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -358,11 +383,14 @@ exports[`9. tile i 1`] = `
   </View>
   <View>
     <View>
-      <Text>
+      <Text
+        accessibilityLabel="label."
+      >
         LABEL
       </Text>
     </View>
     <Text
+      accessibilityLabel="This is tile headline."
       accessibilityRole="heading"
       aria-level="3"
     >
@@ -397,11 +425,14 @@ exports[`10. tile j 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -431,11 +462,14 @@ exports[`11. tile l 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -465,12 +499,14 @@ exports[`12. tile m 1`] = `
   <View>
     <View>
       <Text
+        accessibilityLabel="Driving Off."
         accessibilityRole="heading"
         aria-level="3"
       >
         Driving Off
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -497,17 +533,21 @@ exports[`13. tile n 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
         This is tile headline
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -538,11 +578,14 @@ exports[`14. tile o 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -580,17 +623,21 @@ exports[`15. tile p 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
         This is tile headline
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -640,11 +687,14 @@ exports[`17. tile r 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -676,7 +726,10 @@ exports[`17. tile r 1`] = `
 exports[`18. tile s 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      accessibilityLabel="Nature notes"
+      accessibilityRole="heading"
+    >
       Nature notes
     </Text>
   </View>
@@ -724,11 +777,14 @@ exports[`19. tile t 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -758,11 +814,14 @@ exports[`20. tile u 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -804,11 +863,14 @@ exports[`21. tile v 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -838,11 +900,14 @@ exports[`22. tile w 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -885,17 +950,21 @@ exports[`23. tile x 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
         This is tile headline
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -938,11 +1007,14 @@ exports[`24. tile y 1`] = `
 >
   <View>
     <View>
-      <Text>
+      <Text
+        accessibilityLabel="label."
+      >
         LABEL
       </Text>
     </View>
     <Text
+      accessibilityLabel="This is tile headline."
       accessibilityRole="heading"
       aria-level="3"
     >
@@ -978,11 +1050,14 @@ exports[`25. tile z 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -1024,11 +1099,14 @@ exports[`26. tile aa 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -1058,11 +1136,14 @@ exports[`27. tile ab 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -1112,11 +1193,14 @@ exports[`28. tile ae 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -1153,12 +1237,14 @@ exports[`29. tile ag 1`] = `
   <View>
     <View>
       <Text
+        accessibilityLabel="Driving Off."
         accessibilityRole="heading"
         aria-level="3"
       >
         Driving Off
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >
@@ -1184,6 +1270,7 @@ exports[`30. tile aj 1`] = `
   <View>
     <View>
       <Text
+        accessibilityLabel="Times Concise medium No 7881."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -1212,6 +1299,7 @@ exports[`31. tile ak 1`] = `
   <View>
     <View>
       <Text
+        accessibilityLabel="Times Concise medium No 7881."
         accessibilityRole="heading"
         aria-level="3"
       >

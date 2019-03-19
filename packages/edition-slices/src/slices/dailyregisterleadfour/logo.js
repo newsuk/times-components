@@ -11,11 +11,18 @@ const images = {
   "nature notes": leaves
 };
 
-const Logo = ({ type, style }) => (
-  <Image resizeMode="contain" source={images[type]} style={style} />
+const Logo = ({ type, style, accessibilityLabel }) => (
+  <Image
+    accessibilityLabel={accessibilityLabel}
+    accessible
+    resizeMode="contain"
+    source={images[type]}
+    style={style}
+  />
 );
 
 Logo.propTypes = {
+  accessibilityLabel: PropTypes.string.isRequired,
   style: PropTypes.shape({}).isRequired,
   type: PropTypes.string.isRequired
 };

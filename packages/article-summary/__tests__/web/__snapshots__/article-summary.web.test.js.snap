@@ -9,12 +9,15 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -113,12 +116,15 @@ exports[`2. article summary with opinion byline 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -137,12 +143,15 @@ exports[`2. article summary with opinion byline 1`] = `
 exports[`3. article summary component with multiple paragraphs 1`] = `
 <div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph 1.
@@ -185,7 +194,9 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
 
 exports[`4. article summary component with content including line breaks 1`] = `
 <div>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       <b>
@@ -224,12 +235,15 @@ exports[`5. article summary component containing links 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       <span>
@@ -261,6 +275,7 @@ exports[`6. article summary component with headline and no content 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
@@ -284,12 +299,15 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph 1.
@@ -336,12 +354,15 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
 exports[`8. article summary component with no byline 1`] = `
 <div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -360,12 +381,15 @@ exports[`8. article summary component with no byline 1`] = `
 exports[`9. article summary component with no label 1`] = `
 <div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -410,7 +434,9 @@ exports[`10. article summary component with no headline 1`] = `
       title="Test label"
     />
   </div>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -435,12 +461,15 @@ exports[`11. article summary component with no date publication 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -481,12 +510,15 @@ exports[`12. article summary component with a video label 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph
@@ -532,18 +564,22 @@ exports[`13. article summary component with a strapline 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     role="heading"
   >
     Test Headline
   </h3>
   <h4
+    aria-label="Test Strapline."
     aria-level="4"
     role="heading"
   >
     Test Strapline
   </h4>
-  <div>
+  <div
+    tabIndex="0"
+  >
     <span>
       
       Test paragraph

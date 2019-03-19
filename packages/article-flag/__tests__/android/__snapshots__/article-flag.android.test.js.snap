@@ -4,7 +4,7 @@ exports[`1. article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="No Colour Flag"
+    accessibilityLabel="No Colour Flag."
   >
     no colour
   </Text>
@@ -15,7 +15,7 @@ exports[`2. red article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="Coloured Red Flag"
+    accessibilityLabel="Coloured Red Flag."
   >
     coloured red
   </Text>
@@ -26,7 +26,7 @@ exports[`3. hex colour article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="Coloured Red Flag"
+    accessibilityLabel="Coloured Red Flag."
   >
     coloured red
   </Text>
@@ -37,7 +37,7 @@ exports[`4. rgba colour article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="Coloured Red Flag"
+    accessibilityLabel="Coloured Red Flag."
   >
     coloured red
   </Text>
@@ -48,7 +48,7 @@ exports[`5. new article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="new Flag"
+    accessibilityLabel="new Flag."
   >
     new
   </Text>
@@ -59,7 +59,7 @@ exports[`6. updated article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="updated Flag"
+    accessibilityLabel="updated Flag."
   >
     updated
   </Text>
@@ -70,7 +70,7 @@ exports[`7. exclusive article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="exclusive Flag"
+    accessibilityLabel="exclusive Flag."
   >
     exclusive
   </Text>
@@ -81,7 +81,7 @@ exports[`8. sponsored article flag 1`] = `
 <View>
   <View />
   <Text
-    accessibilityLabel="sponsored Flag"
+    accessibilityLabel="sponsored Flag."
   >
     sponsored
   </Text>
@@ -94,7 +94,7 @@ exports[`9. article flags 1`] = `
     <View>
       <View />
       <Text
-        accessibilityLabel="updated Flag"
+        accessibilityLabel="updated Flag."
       >
         updated
       </Text>
@@ -104,7 +104,7 @@ exports[`9. article flags 1`] = `
     <View>
       <View />
       <Text
-        accessibilityLabel="exclusive Flag"
+        accessibilityLabel="exclusive Flag."
       >
         exclusive
       </Text>

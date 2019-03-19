@@ -20,7 +20,7 @@ const ArticleFlag = ({ title, color }) => (
       ]}
     />
     <Text
-      accessibilityLabel={`${title} Flag`}
+      accessibilityLabel={`${title} Flag.`}
       style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >

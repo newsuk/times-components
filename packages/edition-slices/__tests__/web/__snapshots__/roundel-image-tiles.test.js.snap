@@ -14,11 +14,14 @@ exports[`1. tile g - layout change 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -55,17 +58,21 @@ exports[`2. tile p - layout change 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >

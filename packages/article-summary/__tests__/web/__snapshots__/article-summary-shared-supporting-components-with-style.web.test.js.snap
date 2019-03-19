@@ -16,6 +16,7 @@ exports[`1. article summary headline component 1`] = `
 </style>
 
 <h3
+  aria-label="PM hails breakthrough ahead of key Commons vote."
   aria-level="3"
   className="bigOne IS1 S1"
   role="heading"
@@ -40,6 +41,7 @@ exports[`2. article summary strapline component 1`] = `
 </style>
 
 <h4
+  aria-label="PM hails breakthrough ahead of key Commons vote."
   aria-level="4"
   className="IS1 S1"
   role="heading"

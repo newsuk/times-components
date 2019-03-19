@@ -2,6 +2,7 @@
 
 exports[`1. article summary headline component 1`] = `
 <Text
+  accessibilityLabel="PM hails breakthrough ahead of key Commons vote."
   accessibilityRole="heading"
   aria-level="3"
 >
@@ -11,6 +12,7 @@ exports[`1. article summary headline component 1`] = `
 
 exports[`2. article summary strapline component 1`] = `
 <Text
+  accessibilityLabel="PM hails breakthrough ahead of key Commons vote."
   accessibilityRole="heading"
   aria-level="4"
 >

@@ -6,11 +6,14 @@ exports[`1. tile a 1`] = `
 >
   <div>
     <div>
-      <div>
+      <div
+        aria-label="label."
+      >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       role="heading"
     >
@@ -45,17 +48,22 @@ exports[`2. tile b 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -98,11 +106,14 @@ exports[`3. tile c 1`] = `
   </div>
   <div>
     <div>
-      <div>
+      <div
+        aria-label="label."
+      >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       role="heading"
     >
@@ -137,11 +148,14 @@ exports[`4. tile d 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -177,11 +191,14 @@ exports[`5. tile e 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -211,23 +228,29 @@ exports[`6. tile f 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
         Three Conservative MPs resign
       </h4>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -265,11 +288,14 @@ exports[`7. tile g 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -299,17 +325,22 @@ exports[`8. tile h 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -358,11 +389,14 @@ exports[`9. tile i 1`] = `
   </div>
   <div>
     <div>
-      <div>
+      <div
+        aria-label="label."
+      >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       role="heading"
     >
@@ -397,11 +431,14 @@ exports[`10. tile j 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -431,11 +468,14 @@ exports[`11. tile l 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -465,12 +505,14 @@ exports[`12. tile m 1`] = `
   <div>
     <div>
       <h3
+        aria-label="Driving Off."
         aria-level="3"
         role="heading"
       >
         Driving Off
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
@@ -497,17 +539,21 @@ exports[`13. tile n 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
@@ -538,11 +584,14 @@ exports[`14. tile o 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -580,17 +629,21 @@ exports[`15. tile p 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
@@ -640,11 +693,14 @@ exports[`17. tile r 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -676,9 +732,12 @@ exports[`17. tile r 1`] = `
 exports[`18. tile s 1`] = `
 <div>
   <div>
-    <div>
+    <h1
+      aria-label="Nature notes"
+      role="heading"
+    >
       Nature notes
-    </div>
+    </h1>
   </div>
   <div>
     <p>
@@ -724,11 +783,14 @@ exports[`19. tile t 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -758,11 +820,14 @@ exports[`20. tile u 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -804,11 +869,14 @@ exports[`21. tile v 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -838,17 +906,22 @@ exports[`22. tile w 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -885,23 +958,29 @@ exports[`23. tile x 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
         Three Conservative MPs resign
       </h4>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -938,17 +1017,22 @@ exports[`24. tile y 1`] = `
 >
   <div>
     <div>
-      <div>
+      <div
+        aria-label="label."
+      >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       role="heading"
     >
       This is tile headline
     </h3>
-    <div>
+    <div
+      tabIndex="0"
+    >
       <span>
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -978,11 +1062,14 @@ exports[`25. tile z 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -1024,11 +1111,14 @@ exports[`26. tile aa 1`] = `
     </div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
@@ -1058,17 +1148,22 @@ exports[`27. tile ab 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -1112,17 +1207,22 @@ exports[`28. tile ae 1`] = `
   <div>
     <div>
       <div>
-        <div>
+        <div
+          aria-label="label."
+        >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         role="heading"
       >
         This is tile headline
       </h3>
-      <div>
+      <div
+        tabIndex="0"
+      >
         <span>
           
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -1153,12 +1253,14 @@ exports[`29. tile ag 1`] = `
   <div>
     <div>
       <h3
+        aria-label="Driving Off."
         aria-level="3"
         role="heading"
       >
         Driving Off
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         role="heading"
       >
@@ -1184,6 +1286,7 @@ exports[`30. tile aj 1`] = `
   <div>
     <div>
       <h3
+        aria-label="Times Concise medium No 7881."
         aria-level="3"
         role="heading"
       >
@@ -1212,6 +1315,7 @@ exports[`31. tile ak 1`] = `
   <div>
     <div>
       <h3
+        aria-label="Times Concise medium No 7881."
         aria-level="3"
         role="heading"
       >

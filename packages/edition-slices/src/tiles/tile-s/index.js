@@ -16,7 +16,13 @@ function renderAst(ast) {
 const TileS = ({ tile }) => (
   <View style={styles.container}>
     <View style={styles.titleWrapper}>
-      <Text style={styles.title}>{tile.title}</Text>
+      <Text
+        accessibilityLabel={`${tile.title}`}
+        accessibilityRole="heading"
+        style={styles.title}
+      >
+        {tile.title}
+      </Text>
     </View>
     <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
     <Text style={styles.byline}>{renderAst(tile.byline)}</Text>

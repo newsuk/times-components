@@ -22,6 +22,7 @@ exports[`2. daily universal register - medium 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Daily Universal Register logo"
       resizeMode="contain"
       source={
         Object {
@@ -29,7 +30,10 @@ exports[`2. daily universal register - medium 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      accessibilityLabel="Daily Universal Register"
+      accessibilityRole="heading"
+    >
       Daily Universal Register
     </Text>
     <TileS />
@@ -37,6 +41,7 @@ exports[`2. daily universal register - medium 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Nature Notes logo"
       resizeMode="contain"
       source={
         Object {
@@ -47,6 +52,7 @@ exports[`2. daily universal register - medium 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Birthdays logo"
       resizeMode="contain"
       source={
         Object {
@@ -115,6 +121,7 @@ exports[`6. leaders slice - medium 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -123,8 +130,11 @@ exports[`6. leaders slice - medium 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -444,6 +454,7 @@ exports[`16. daily universal register - wide 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Daily Universal Register logo"
       resizeMode="contain"
       source={
         Object {
@@ -451,7 +462,10 @@ exports[`16. daily universal register - wide 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      accessibilityLabel="Daily Universal Register"
+      accessibilityRole="heading"
+    >
       Daily Universal Register
     </Text>
     <TileS />
@@ -459,6 +473,7 @@ exports[`16. daily universal register - wide 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Nature Notes logo"
       resizeMode="contain"
       source={
         Object {
@@ -469,6 +484,7 @@ exports[`16. daily universal register - wide 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Birthdays logo"
       resizeMode="contain"
       source={
         Object {
@@ -537,6 +553,7 @@ exports[`20. leaders slice - wide 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -545,8 +562,11 @@ exports[`20. leaders slice - wide 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -866,6 +886,7 @@ exports[`30. daily universal register - huge 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Daily Universal Register logo"
       resizeMode="contain"
       source={
         Object {
@@ -873,7 +894,10 @@ exports[`30. daily universal register - huge 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      accessibilityLabel="Daily Universal Register"
+      accessibilityRole="heading"
+    >
       Daily Universal Register
     </Text>
     <TileS />
@@ -881,6 +905,7 @@ exports[`30. daily universal register - huge 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Nature Notes logo"
       resizeMode="contain"
       source={
         Object {
@@ -891,6 +916,7 @@ exports[`30. daily universal register - huge 1`] = `
     <TileS />
     <View />
     <Image
+      accessibilityLabel="Birthdays logo"
       resizeMode="contain"
       source={
         Object {
@@ -959,6 +985,7 @@ exports[`34. leaders slice - huge 1`] = `
 <View>
   <View>
     <Image
+      accessibilityLabel="Leading Articles logo"
       resizeMode="contain"
       source={
         Object {
@@ -967,8 +994,11 @@ exports[`34. leaders slice - huge 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        accessibilityLabel="Leading Articles"
+        accessibilityRole="heading"
+      >
+        Leading Articles
       </Text>
     </View>
   </View>

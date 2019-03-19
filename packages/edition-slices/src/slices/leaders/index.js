@@ -8,11 +8,19 @@ import styles from "./styles";
 import { ResponsiveSlice } from "../shared";
 import MastHead from "./masthead";
 
+const headline = "Leading Articles";
+
 const renderHead = publicationName => (
   <View style={styles.mastheadContainer}>
     <MastHead publicationName={publicationName} />
     <View style={styles.headingContainer}>
-      <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
+      <Text
+        accessibilityLabel={headline}
+        accessibilityRole="heading"
+        style={[styles.heading, styles.text]}
+      >
+        {headline}
+      </Text>
     </View>
   </View>
 );

@@ -72,6 +72,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <h3
+    aria-label="Test Headline."
     aria-level="3"
     className="S2"
     role="heading"
@@ -80,6 +81,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </h3>
   <div
     className="S4"
+    tabIndex="0"
   >
     <span
       className="S3"
@@ -184,6 +186,7 @@ exports[`2. article summary content component with the given style 1`] = `
 
 <div
   className="S2"
+  tabIndex="0"
 >
   <span
     className="S1"

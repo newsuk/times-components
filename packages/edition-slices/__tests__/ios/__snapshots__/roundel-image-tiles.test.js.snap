@@ -14,11 +14,14 @@ exports[`1. tile g - layout change 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
@@ -55,17 +58,21 @@ exports[`2. tile p - layout change 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          accessibilityLabel="label."
+        >
           LABEL
         </Text>
       </View>
       <Text
+        accessibilityLabel="This is tile headline."
         accessibilityRole="heading"
         aria-level="3"
       >
         This is tile headline
       </Text>
       <Text
+        accessibilityLabel="Three Conservative MPs resign."
         accessibilityRole="heading"
         aria-level="4"
       >

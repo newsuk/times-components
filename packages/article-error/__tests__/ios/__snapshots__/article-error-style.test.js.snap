@@ -64,7 +64,6 @@ exports[`renders correctly with style 1`] = `
       <View
         accessibilityComponentType="button"
         accessibilityLabel="Retry"
-        accessibilityTraits="button"
         style={
           Object {
             "alignItems": "center",

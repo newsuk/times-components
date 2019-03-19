@@ -191,11 +191,13 @@ exports[`2. daily universal register - medium 1`] = `
       className="IS1"
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
-    <div
+    <h1
+      aria-label="Daily Universal Register"
       className="IS2 S1"
+      role="heading"
     >
       Daily Universal Register
-    </div>
+    </h1>
     <TileS />
     <div
       className="IS3"
@@ -552,11 +554,13 @@ exports[`6. leaders slice - medium 1`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div
@@ -1815,11 +1819,13 @@ exports[`16. daily universal register - wide 1`] = `
       className="IS1"
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
-    <div
+    <h1
+      aria-label="Daily Universal Register"
       className="IS2 S1"
+      role="heading"
     >
       Daily Universal Register
-    </div>
+    </h1>
     <TileS />
     <div
       className="IS3"
@@ -2176,11 +2182,13 @@ exports[`20. leaders slice - wide 1`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div
@@ -3439,11 +3447,13 @@ exports[`30. daily universal register - huge 1`] = `
       className="IS1"
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
-    <div
+    <h1
+      aria-label="Daily Universal Register"
       className="IS2 S1"
+      role="heading"
     >
       Daily Universal Register
-    </div>
+    </h1>
     <TileS />
     <div
       className="IS3"
@@ -3800,11 +3810,13 @@ exports[`34. leaders slice - huge 1`] = `
     <div
       className="IS3 S2"
     >
-      <div
+      <h1
+        aria-label="Leading Articles"
         className="IS2 S1"
+        role="heading"
       >
-         Leading Articles 
-      </div>
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div

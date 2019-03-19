@@ -46,10 +46,7 @@ const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
-    ([e, ...args]) => {
-      e.preventDefault();
-      return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    args => ["[SyntheticEvent (storybook prevented default)]", ...args]
   ]);
 
 const renderTile = (Tile, mockTile = tile) => (_, { decorateAction }) => (

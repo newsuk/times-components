@@ -14,7 +14,15 @@ const MastHead = ({ publicationName }) => {
     source = require("../../../assets/st-masthead.png");
   }
 
-  return <Image resizeMode="contain" source={source} style={styles[style]} />;
+  return (
+    <Image
+      accessibilityLabel="Leading Articles logo"
+      accessible
+      resizeMode="contain"
+      source={source}
+      style={styles[style]}
+    />
+  );
 };
 
 MastHead.propTypes = propTypes;

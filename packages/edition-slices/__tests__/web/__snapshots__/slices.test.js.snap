@@ -7,9 +7,12 @@ exports[`1. daily universal register 1`] = `
       aspectRatio={5.74}
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
-    <div>
+    <h1
+      aria-label="Daily Universal Register"
+      role="heading"
+    >
       Daily Universal Register
-    </div>
+    </h1>
     <TileS />
     <div />
     <TileS />
@@ -147,9 +150,12 @@ exports[`2. leaders 1`] = `
       uri="https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png"
     />
     <div>
-      <div>
-         Leading Articles 
-      </div>
+      <h1
+        aria-label="Leading Articles"
+        role="heading"
+      >
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div>
@@ -184,9 +190,12 @@ exports[`2. leaders 2`] = `
       uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
     />
     <div>
-      <div>
-         Leading Articles 
-      </div>
+      <h1
+        aria-label="Leading Articles"
+        role="heading"
+      >
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div>
@@ -526,9 +535,12 @@ exports[`13. leaders 1`] = `
       uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
     />
     <div>
-      <div>
-         Leading Articles 
-      </div>
+      <h1
+        aria-label="Leading Articles"
+        role="heading"
+      >
+        Leading Articles
+      </h1>
     </div>
   </div>
   <div>

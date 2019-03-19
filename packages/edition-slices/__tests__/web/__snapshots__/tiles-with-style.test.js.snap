@@ -55,12 +55,14 @@ exports[`1. tile a 1`] = `
       className="S2"
     >
       <div
+        aria-label="label."
         className="IS1 S1"
       >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       className="IS2 S3"
       role="heading"
@@ -169,12 +171,14 @@ exports[`2. tile b 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -183,6 +187,7 @@ exports[`2. tile b 1`] = `
       </h3>
       <div
         className="S5"
+        tabIndex="0"
       >
         <span
           className="S4"
@@ -276,12 +281,14 @@ exports[`3. tile c 1`] = `
       className="S3"
     >
       <div
+        aria-label="label."
         className="IS2 S2"
       >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       className="IS3 S4"
       role="heading"
@@ -385,12 +392,14 @@ exports[`4. tile d 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -495,12 +504,14 @@ exports[`5. tile e 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -611,12 +622,14 @@ exports[`6. tile f 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -624,6 +637,7 @@ exports[`6. tile f 1`] = `
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="S4"
         role="heading"
@@ -632,6 +646,7 @@ exports[`6. tile f 1`] = `
       </h4>
       <div
         className="S6"
+        tabIndex="0"
       >
         <span
           className="S5"
@@ -754,12 +769,14 @@ exports[`7. tile g 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -898,12 +915,14 @@ exports[`8. tile h 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -912,6 +931,7 @@ exports[`8. tile h 1`] = `
       </h3>
       <div
         className="S5"
+        tabIndex="0"
       >
         <span
           className="S4"
@@ -1031,12 +1051,14 @@ exports[`9. tile i 1`] = `
       className="S1"
     >
       <div
+        aria-label="label."
         className="IS2 S2"
       >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       className="IS3 S3"
       role="heading"
@@ -1133,12 +1155,14 @@ exports[`10. tile j 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -1218,12 +1242,14 @@ exports[`11. tile l 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -1297,6 +1323,7 @@ exports[`12. tile m 1`] = `
       className="S4"
     >
       <h3
+        aria-label="Driving Off."
         aria-level="3"
         className="IS1 S1"
         role="heading"
@@ -1304,6 +1331,7 @@ exports[`12. tile m 1`] = `
         Driving Off
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="IS2 S2"
         role="heading"
@@ -1402,12 +1430,14 @@ exports[`13. tile n 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -1415,6 +1445,7 @@ exports[`13. tile n 1`] = `
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="S4"
         role="heading"
@@ -1497,12 +1528,14 @@ exports[`14. tile o 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -1658,12 +1691,14 @@ exports[`15. tile p 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -1671,6 +1706,7 @@ exports[`15. tile p 1`] = `
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="IS4 S4"
         role="heading"
@@ -1801,12 +1837,14 @@ exports[`17. tile r 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -1904,11 +1942,13 @@ exports[`18. tile s 1`] = `
   <div
     className="IS2 S2"
   >
-    <div
+    <h1
+      aria-label="Nature notes"
       className="IS1 S1"
+      role="heading"
     >
       Nature notes
-    </div>
+    </h1>
   </div>
   <div
     className="S3"
@@ -2023,12 +2063,14 @@ exports[`19. tile t 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -2129,12 +2171,14 @@ exports[`20. tile u 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -2235,12 +2279,14 @@ exports[`21. tile v 1`] = `
         className="S3"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S4"
         role="heading"
@@ -2352,12 +2398,14 @@ exports[`22. tile w 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -2366,6 +2414,7 @@ exports[`22. tile w 1`] = `
       </h3>
       <div
         className="S5"
+        tabIndex="0"
       >
         <span
           className="S4"
@@ -2491,12 +2540,14 @@ exports[`23. tile x 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -2504,6 +2555,7 @@ exports[`23. tile x 1`] = `
         This is tile headline
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="IS3 S4"
         role="heading"
@@ -2512,6 +2564,7 @@ exports[`23. tile x 1`] = `
       </h4>
       <div
         className="S6"
+        tabIndex="0"
       >
         <span
           className="S5"
@@ -2614,12 +2667,14 @@ exports[`24. tile y 1`] = `
       className="S2"
     >
       <div
+        aria-label="label."
         className="IS1 S1"
       >
         LABEL
       </div>
     </div>
     <h3
+      aria-label="This is tile headline."
       aria-level="3"
       className="IS2 S3"
       role="heading"
@@ -2628,6 +2683,7 @@ exports[`24. tile y 1`] = `
     </h3>
     <div
       className="S5"
+      tabIndex="0"
     >
       <span
         className="S4"
@@ -2709,12 +2765,14 @@ exports[`25. tile z 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -2818,12 +2876,14 @@ exports[`26. tile aa 1`] = `
         className="S1"
       >
         <div
+          aria-label="label."
           className="IS2 S2"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS3 S3"
         role="heading"
@@ -2957,12 +3017,14 @@ exports[`27. tile ab 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -2971,6 +3033,7 @@ exports[`27. tile ab 1`] = `
       </h3>
       <div
         className="S5"
+        tabIndex="0"
       >
         <span
           className="S4"
@@ -3096,12 +3159,14 @@ exports[`28. tile ae 1`] = `
         className="S2"
       >
         <div
+          aria-label="label."
           className="IS1 S1"
         >
           LABEL
         </div>
       </div>
       <h3
+        aria-label="This is tile headline."
         aria-level="3"
         className="IS2 S3"
         role="heading"
@@ -3110,6 +3175,7 @@ exports[`28. tile ae 1`] = `
       </h3>
       <div
         className="S5"
+        tabIndex="0"
       >
         <span
           className="S4"
@@ -3191,6 +3257,7 @@ exports[`29. tile ag 1`] = `
       className="S4"
     >
       <h3
+        aria-label="Driving Off."
         aria-level="3"
         className="IS1 S1"
         role="heading"
@@ -3198,6 +3265,7 @@ exports[`29. tile ag 1`] = `
         Driving Off
       </h3>
       <h4
+        aria-label="Three Conservative MPs resign."
         aria-level="4"
         className="IS2 S2"
         role="heading"
@@ -3274,6 +3342,7 @@ exports[`30. tile aj 1`] = `
       className="IS1 S2"
     >
       <h3
+        aria-label="Times Concise medium No 7881."
         aria-level="3"
         className="S1"
         role="heading"
@@ -3357,6 +3426,7 @@ exports[`31. tile ak 1`] = `
       className="IS2 S2"
     >
       <h3
+        aria-label="Times Concise medium No 7881."
         aria-level="3"
         className="IS1 S1"
         role="heading"

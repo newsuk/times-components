@@ -7,6 +7,7 @@ const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <Text
+    accessibilityLabel={`${headline}.`}
     accessibilityRole="heading"
     aria-level="3"
     className={className}

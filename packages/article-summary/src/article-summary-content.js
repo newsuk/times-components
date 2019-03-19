@@ -7,7 +7,7 @@ import styles from "./styles";
 
 const ArticleSummaryContent = ({ ast, className, style }) =>
   ast.length > 0 ? (
-    <Text className={className} style={[styles.text, style]}>
+    <Text accessible className={className} style={[styles.text, style]}>
       {renderAst(ast)}
     </Text>
   ) : null;
