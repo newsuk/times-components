@@ -37,28 +37,26 @@ exports[`1. landscape default modal 1`] = `
               }
             }
           >
-            <View>
-              <View
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                  "borderRadius": 30,
+                  "height": 30,
+                  "justifyContent": "center",
+                  "width": 30,
+                }
+              }
+            >
+              <Image
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                    "borderRadius": 30,
-                    "height": 30,
-                    "justifyContent": "center",
-                    "width": 30,
+                    "height": "85%",
+                    "width": "85%",
                   }
                 }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "85%",
-                      "width": "85%",
-                    }
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
           <Gestures
@@ -199,28 +197,26 @@ exports[`2. portrait default modal 1`] = `
               }
             }
           >
-            <View>
-              <View
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                  "borderRadius": 30,
+                  "height": 30,
+                  "justifyContent": "center",
+                  "width": 30,
+                }
+              }
+            >
+              <Image
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                    "borderRadius": 30,
-                    "height": 30,
-                    "justifyContent": "center",
-                    "width": 30,
+                    "height": "85%",
+                    "width": "85%",
                   }
                 }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "85%",
-                      "width": "85%",
-                    }
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
           <Gestures
@@ -363,28 +359,26 @@ exports[`3. tablet landscape default modal 1`] = `
               }
             }
           >
-            <View>
-              <View
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "justifyContent": "center",
+                  "width": 40,
+                }
+              }
+            >
+              <Image
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                    "borderRadius": 40,
-                    "height": 40,
-                    "justifyContent": "center",
-                    "width": 40,
+                    "height": "85%",
+                    "width": "85%",
                   }
                 }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "85%",
-                      "width": "85%",
-                    }
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
           <Gestures
@@ -527,28 +521,26 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
-            <View>
-              <View
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "justifyContent": "center",
+                  "width": 40,
+                }
+              }
+            >
+              <Image
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                    "borderRadius": 40,
-                    "height": 40,
-                    "justifyContent": "center",
-                    "width": 40,
+                    "height": "85%",
+                    "width": "85%",
                   }
                 }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "85%",
-                      "width": "85%",
-                    }
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
           <Gestures

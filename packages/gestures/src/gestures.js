@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  Animated,
-  PanResponder,
-  TouchableWithoutFeedback,
-  View
-} from "react-native";
+import { Animated, PanResponder, View } from "react-native";
 import PropTypes from "prop-types";
 
 const distanceBetweenTouches = ([
@@ -170,11 +165,12 @@ class Gestures extends Component {
         style={style}
         {...this.panResponder.panHandlers}
       >
-        <TouchableWithoutFeedback>
-          <Animated.View {...this.props} style={[{ flexGrow: 1 }, transformStyle]}>
-            {children}
-          </Animated.View>
-        </TouchableWithoutFeedback>
+        <Animated.View
+          {...this.props}
+          style={[{ flexGrow: 1 }, transformStyle]}
+        >
+          {children}
+        </Animated.View>
       </View>
     );
   }
