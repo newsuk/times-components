@@ -10,7 +10,7 @@ const TileQ = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={3 / 2}
         style={styles.imageContainer}
-        uri={getCrop(tile.article.leadAsset, "crop32")}
+        uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop32")}
       />
     </View>
   </TileLink>

@@ -19,7 +19,7 @@ const TileA = ({ onPress, tile }) => (
     <TileImage
       aspectRatio={16 / 9}
       style={styles.imageContainer}
-      uri={getCrop(tile.article.leadAsset, "crop169")}
+      uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop169")}
     />
   </TileLink>
 );

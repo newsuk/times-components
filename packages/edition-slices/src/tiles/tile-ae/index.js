@@ -9,7 +9,7 @@ const TileAE = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileSummary
         headlineStyle={styles.headline}
-        summary={tile.article.summary125}
+        summary={tile.summary125 || tile.article.summary125}
         tile={tile}
       />
     </View>
