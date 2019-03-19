@@ -5,7 +5,7 @@ import { View } from "react-native";
 import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
-import Caption, { CentredCaption } from "@times-components/caption";
+import { CentredCaption } from "@times-components/caption";
 import { ResponsiveContext } from "@times-components/responsive";
 import {
   getHeadline,
@@ -60,7 +60,6 @@ class ArticleInDepth extends Component {
               getImageCrop={getStandardTemplateCrop}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) => <CentredCaption {...caption} />}
-              renderModalCaption={({ caption }) => <Caption {...caption} />}
               style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
               width={width}
             />

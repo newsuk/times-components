@@ -8,7 +8,7 @@ import {
   getLeadAsset,
   getStandardTemplateCrop
 } from "@times-components/utils";
-import Caption, { CentredCaption } from "@times-components/caption";
+import { CentredCaption } from "@times-components/caption";
 import { ResponsiveContext } from "@times-components/responsive";
 import { tabletWidth } from "@times-components/styleguide";
 import LeadAsset from "@times-components/article-lead-asset";
@@ -60,7 +60,6 @@ class ArticleMagazineStandard extends Component {
               getImageCrop={getStandardTemplateCrop}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) => <CentredCaption {...caption} />}
-              renderModalCaption={({ caption }) => <Caption {...caption} />}
               style={[
                 styles.leadAssetContainer,
                 isTablet && styles.leadAssetContainerTablet,
