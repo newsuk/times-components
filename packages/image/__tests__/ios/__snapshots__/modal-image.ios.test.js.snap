@@ -35,10 +35,10 @@ exports[`1. modal image 1`] = `
               >
                 <View>
                   <Svg
-                    height={143.90862944162436}
+                    height={143}
                     version="1.1"
                     viewBox="145 50 108 120"
-                    width={143.90862944162436}
+                    width={143}
                   >
                     <G
                       fill="none"
@@ -90,10 +90,10 @@ exports[`1. modal image 1`] = `
       >
         <View>
           <Svg
-            height={143.90862944162436}
+            height={143}
             version="1.1"
             viewBox="145 50 108 120"
-            width={143.90862944162436}
+            width={143}
           >
             <G
               fill="none"
@@ -156,10 +156,10 @@ exports[`2. modal image with custom highressize 1`] = `
               >
                 <View>
                   <Svg
-                    height={143.90862944162436}
+                    height={143}
                     version="1.1"
                     viewBox="145 50 108 120"
-                    width={143.90862944162436}
+                    width={143}
                   >
                     <G
                       fill="none"
@@ -211,10 +211,10 @@ exports[`2. modal image with custom highressize 1`] = `
       >
         <View>
           <Svg
-            height={143.90862944162436}
+            height={143}
             version="1.1"
             viewBox="145 50 108 120"
-            width={143.90862944162436}
+            width={143}
           >
             <G
               fill="none"
