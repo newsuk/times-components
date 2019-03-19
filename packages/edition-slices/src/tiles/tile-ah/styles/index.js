@@ -15,8 +15,9 @@ const styles = {
   },
   container: {
     alignItems: "center",
+    paddingBottom: 15,
     paddingHorizontal: spacing(4),
-    paddingVertical: spacing(3)
+    paddingTop: 10
   },
   headline: {
     color: colours.functional.brandColour,

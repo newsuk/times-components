@@ -20,13 +20,14 @@ exports[`1. comment lead and cartoon - small 1`] = `
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
       "paddingRight": "20px",
+      "paddingTop": "10px",
     }
   }
 >
   <div
     style={
       Object {
-        "width": "37.5%",
+        "width": "33.3%",
       }
     }
   >
@@ -50,7 +51,7 @@ exports[`1. comment lead and cartoon - small 1`] = `
   <div
     style={
       Object {
-        "width": "62.5%",
+        "width": "66.7%",
       }
     }
   >
@@ -81,13 +82,14 @@ exports[`2. comment lead and cartoon - medium 1`] = `
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
       "paddingRight": "20px",
+      "paddingTop": "10px",
     }
   }
 >
   <div
     style={
       Object {
-        "width": "37.5%",
+        "width": "33.3%",
       }
     }
   >
@@ -111,7 +113,7 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   <div
     style={
       Object {
-        "width": "62.5%",
+        "width": "66.7%",
       }
     }
   >
