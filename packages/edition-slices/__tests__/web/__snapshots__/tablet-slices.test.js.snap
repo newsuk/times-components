@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. daily universal register - medium 1`] = `
+exports[`1. comment lead and cartoon - medium 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. daily universal register - medium 1`] = `
 <div>
   <div>
     <Image
@@ -29,7 +47,7 @@ exports[`1. daily universal register - medium 1`] = `
 </div>
 `;
 
-exports[`2. lead one and one - medium 1`] = `
+exports[`3. lead one and one - medium 1`] = `
 <div>
   <div>
     <div>
@@ -47,7 +65,7 @@ exports[`2. lead one and one - medium 1`] = `
 </div>
 `;
 
-exports[`3. lead one full width - medium 1`] = `
+exports[`4. lead one full width - medium 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -55,7 +73,7 @@ exports[`3. lead one full width - medium 1`] = `
 </div>
 `;
 
-exports[`4. lead two no pic and two - medium 1`] = `
+exports[`5. lead two no pic and two - medium 1`] = `
 <div>
   <div>
     <div>
@@ -81,7 +99,7 @@ exports[`4. lead two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`5. leaders slice - medium 1`] = `
+exports[`6. leaders slice - medium 1`] = `
 <div>
   <div>
     <Image
@@ -118,7 +136,7 @@ exports[`5. leaders slice - medium 1`] = `
 </div>
 `;
 
-exports[`6. secondary one and four - medium 1`] = `
+exports[`7. secondary one and four - medium 1`] = `
 <div>
   <div>
     <div>
@@ -169,7 +187,7 @@ exports[`6. secondary one and four - medium 1`] = `
 </div>
 `;
 
-exports[`7. secondary one - medium 1`] = `
+exports[`8. secondary one - medium 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -177,7 +195,7 @@ exports[`7. secondary one - medium 1`] = `
 </div>
 `;
 
-exports[`8. secondary four - medium 1`] = `
+exports[`9. secondary four - medium 1`] = `
 <div>
   <div>
     <div>
@@ -207,7 +225,7 @@ exports[`8. secondary four - medium 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and columnist - medium 1`] = `
+exports[`10. secondary one and columnist - medium 1`] = `
 <div>
   <div>
     <div>
@@ -225,7 +243,7 @@ exports[`9. secondary one and columnist - medium 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two - medium 1`] = `
+exports[`11. secondary two and two - medium 1`] = `
 <div>
   <div>
     <div>
@@ -259,7 +277,7 @@ exports[`10. secondary two and two - medium 1`] = `
 </div>
 `;
 
-exports[`11. lead one and four slice - medium 1`] = `
+exports[`12. lead one and four slice - medium 1`] = `
 <div>
   <div>
     <div>
@@ -289,7 +307,7 @@ exports[`11. lead one and four slice - medium 1`] = `
 </div>
 `;
 
-exports[`12. secondary two no pic and two - medium 1`] = `
+exports[`13. secondary two no pic and two - medium 1`] = `
 <div>
   <div>
     <div>
@@ -321,7 +339,25 @@ exports[`12. secondary two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`13. daily universal register - wide 1`] = `
+exports[`14. comment lead and cartoon - wide 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`15. daily universal register - wide 1`] = `
 <div>
   <div>
     <Image
@@ -350,7 +386,7 @@ exports[`13. daily universal register - wide 1`] = `
 </div>
 `;
 
-exports[`14. lead one and one - wide 1`] = `
+exports[`16. lead one and one - wide 1`] = `
 <div>
   <div>
     <div>
@@ -368,7 +404,7 @@ exports[`14. lead one and one - wide 1`] = `
 </div>
 `;
 
-exports[`15. lead one full width - wide 1`] = `
+exports[`17. lead one full width - wide 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -376,7 +412,7 @@ exports[`15. lead one full width - wide 1`] = `
 </div>
 `;
 
-exports[`16. lead two no pic and two - wide 1`] = `
+exports[`18. lead two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -402,7 +438,7 @@ exports[`16. lead two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`17. leaders slice - wide 1`] = `
+exports[`19. leaders slice - wide 1`] = `
 <div>
   <div>
     <Image
@@ -439,7 +475,7 @@ exports[`17. leaders slice - wide 1`] = `
 </div>
 `;
 
-exports[`18. secondary one and four - wide 1`] = `
+exports[`20. secondary one and four - wide 1`] = `
 <div>
   <div>
     <div>
@@ -490,7 +526,7 @@ exports[`18. secondary one and four - wide 1`] = `
 </div>
 `;
 
-exports[`19. secondary one - wide 1`] = `
+exports[`21. secondary one - wide 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -498,7 +534,7 @@ exports[`19. secondary one - wide 1`] = `
 </div>
 `;
 
-exports[`20. secondary four - wide 1`] = `
+exports[`22. secondary four - wide 1`] = `
 <div>
   <div>
     <div>
@@ -528,7 +564,7 @@ exports[`20. secondary four - wide 1`] = `
 </div>
 `;
 
-exports[`21. secondary one and columnist - wide 1`] = `
+exports[`23. secondary one and columnist - wide 1`] = `
 <div>
   <div>
     <div>
@@ -546,7 +582,7 @@ exports[`21. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`22. secondary two and two - wide 1`] = `
+exports[`24. secondary two and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -580,7 +616,7 @@ exports[`22. secondary two and two - wide 1`] = `
 </div>
 `;
 
-exports[`23. lead one and four slice - wide 1`] = `
+exports[`25. lead one and four slice - wide 1`] = `
 <div>
   <div>
     <div>
@@ -610,7 +646,7 @@ exports[`23. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-exports[`24. secondary two no pic and two - wide 1`] = `
+exports[`26. secondary two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
@@ -642,7 +678,25 @@ exports[`24. secondary two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`25. daily universal register - huge 1`] = `
+exports[`27. comment lead and cartoon - huge 1`] = `
+<div>
+  <div>
+    <div>
+      <TileAH
+        tileName="lead"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAI
+        tileName="cartoon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`28. daily universal register - huge 1`] = `
 <div>
   <div>
     <Image
@@ -671,7 +725,7 @@ exports[`25. daily universal register - huge 1`] = `
 </div>
 `;
 
-exports[`26. lead one and one - huge 1`] = `
+exports[`29. lead one and one - huge 1`] = `
 <div>
   <div>
     <div>
@@ -689,7 +743,7 @@ exports[`26. lead one and one - huge 1`] = `
 </div>
 `;
 
-exports[`27. lead one full width - huge 1`] = `
+exports[`30. lead one full width - huge 1`] = `
 <div>
   <TileR
     tileName="lead"
@@ -697,7 +751,7 @@ exports[`27. lead one full width - huge 1`] = `
 </div>
 `;
 
-exports[`28. lead two no pic and two - huge 1`] = `
+exports[`31. lead two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>
@@ -723,7 +777,7 @@ exports[`28. lead two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`29. leaders slice - huge 1`] = `
+exports[`32. leaders slice - huge 1`] = `
 <div>
   <div>
     <Image
@@ -760,7 +814,7 @@ exports[`29. leaders slice - huge 1`] = `
 </div>
 `;
 
-exports[`30. secondary one and four - huge 1`] = `
+exports[`33. secondary one and four - huge 1`] = `
 <div>
   <div>
     <div>
@@ -811,7 +865,7 @@ exports[`30. secondary one and four - huge 1`] = `
 </div>
 `;
 
-exports[`31. secondary one - huge 1`] = `
+exports[`34. secondary one - huge 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -819,7 +873,7 @@ exports[`31. secondary one - huge 1`] = `
 </div>
 `;
 
-exports[`32. secondary four - huge 1`] = `
+exports[`35. secondary four - huge 1`] = `
 <div>
   <div>
     <div>
@@ -849,7 +903,7 @@ exports[`32. secondary four - huge 1`] = `
 </div>
 `;
 
-exports[`33. secondary one and columnist - huge 1`] = `
+exports[`36. secondary one and columnist - huge 1`] = `
 <div>
   <div>
     <div>
@@ -867,7 +921,7 @@ exports[`33. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`34. secondary two and two - huge 1`] = `
+exports[`37. secondary two and two - huge 1`] = `
 <div>
   <div>
     <div>
@@ -901,7 +955,7 @@ exports[`34. secondary two and two - huge 1`] = `
 </div>
 `;
 
-exports[`35. lead one and four slice - huge 1`] = `
+exports[`38. lead one and four slice - huge 1`] = `
 <div>
   <div>
     <div>
@@ -931,7 +985,7 @@ exports[`35. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-exports[`36. secondary two no pic and two - huge 1`] = `
+exports[`39. secondary two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>

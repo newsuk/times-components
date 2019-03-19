@@ -1,13 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. two child element 1`] = `
+exports[`1. comment lead and cartoon - small 1`] = `
 <div>
   <div>
-    lead-1
+    <div>
+      lead-1
+    </div>
   </div>
   <div />
   <div>
-    cartoon-1
+    <div>
+      cartoon-1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. comment lead and cartoon - medium 1`] = `
+<div>
+  <div>
+    <div>
+      lead-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      cartoon-1
+    </div>
   </div>
 </div>
 `;
