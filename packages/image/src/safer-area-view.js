@@ -31,18 +31,20 @@ class SaferAreaView extends Component {
   }
 
   render() {
-    const { children, ...props } = this.props;
+    const { children, onLayout, ...props } = this.props;
     const { hasFinishedSafeViewCalculation } = this.state;
 
     return (
       <SafeAreaView
         {...props}
-        onLayout={hasFinishedSafeViewCalculation ? null : this.onLayout}
+        onLayout={hasFinishedSafeViewCalculation ? onLayout : this.onLayout}
       >
         {hasFinishedSafeViewCalculation ? children : null}
       </SafeAreaView>
     );
   }
 }
+
+SaferAreaView.propTypes = SafeAreaView.propTypes;
 
 export default SaferAreaView;
