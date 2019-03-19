@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.4.28",
+  "version": "0.4.29",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
@@ -39,7 +39,7 @@
     "@times-components/button": "2.3.41",
     "@times-components/context": "0.7.10",
     "@times-components/link": "3.2.30",
-    "@times-components/provider": "1.15.0",
+    "@times-components/provider": "1.15.1",
     "@times-components/styleguide": "3.26.3",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
@@ -49,7 +49,7 @@
     "@times-components/eslint-config-thetimes": "0.8.9",
     "@times-components/jest-configurator": "2.3.4",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/provider-test-tools": "1.14.0",
+    "@times-components/provider-test-tools": "1.14.1",
     "@times-components/storybook": "3.4.5",
     "@times-components/test-utils": "2.2.14",
     "@times-components/webpack-configurator": "2.0.15",
