@@ -144,16 +144,18 @@ export default () => {
       }
     },
     {
-      name: "handle onLayout event",
+      name: "handle onImageLayout event",
       test: () => {
         const mockEvt = getLayoutEventForWidth(700);
-        const mockOnLayout = jest.fn();
+        const mockOnImageLayout = jest.fn();
         const testInstance = TestRenderer.create(
-          <Image {...props} onLayout={mockOnLayout} />
+          <Image {...props} onImageLayout={mockOnImageLayout} />
         );
 
         testInstance.root.children[0].props.onLayout(mockEvt);
-        expect(mockOnLayout).toHaveBeenCalledWith(mockEvt);
+        expect(mockOnImageLayout).toHaveBeenCalledWith(
+          mockEvt.nativeEvent.layout
+        );
       }
     },
     {

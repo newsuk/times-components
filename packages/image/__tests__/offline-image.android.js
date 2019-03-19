@@ -6,7 +6,7 @@ import "./mocks";
 import Image from "../src";
 
 const getLayoutEventForWidth = width => ({
-  nativeEvent: { layout: { width } }
+  nativeEvent: { layout: { height: width * 0.5, width } }
 });
 
 export default () => {

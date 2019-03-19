@@ -33,16 +33,15 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      height: null,
-      isLoaded: false,
-      width: null
+      dimensions: null,
+      isLoaded: false
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
   onImageLayout(evt) {
-    const { aspectRatio, onImageLayout } = this.props;
+    const { aspectRatio, onImageLayout, onLayout } = this.props;
     const { layout } = evt.nativeEvent;
     const { height, width } = contain(
       layout.width,
@@ -51,7 +50,11 @@ class TimesImage extends Component {
       layout.width / aspectRatio
     );
 
-    this.setState({ height, width });
+    this.setState({ dimensions: { height, width } });
+
+    if (onLayout) {
+      onLayout(evt);
+    }
 
     if (onImageLayout) {
       onImageLayout({ height, width });
@@ -71,8 +74,8 @@ class TimesImage extends Component {
       style,
       uri
     } = this.props;
-    const { isLoaded, width, height } = this.state;
-    const renderedRes = highResSize || width;
+    const { isLoaded, dimensions } = this.state;
+    const renderedRes = highResSize || (dimensions ? dimensions.width : null);
     const srcUri = getUriAtRes(uri, renderedRes);
 
     return (
@@ -83,7 +86,7 @@ class TimesImage extends Component {
       >
         {isLoaded ? null : (
           <Fragment>
-            {height && width && <Placeholder height={height} width={width} />}
+            <Placeholder dimensions={dimensions} />
             {lowResSize ? (
               <Image
                 borderRadius={borderRadius}

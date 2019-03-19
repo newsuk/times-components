@@ -24,18 +24,16 @@ exports[`1. landscape default modal 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
-              "position": "relative",
+              "flexGrow": 0,
+              "height": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "left": 15,
-                "position": "absolute",
-                "top": 15,
-                "zIndex": 1,
+                "marginHorizontal": 15,
+                "marginVertical": 15,
               }
             }
           >
@@ -72,33 +70,39 @@ exports[`1. landscape default modal 1`] = `
           <Gestures
             style={
               Object {
-                "alignItems": "center",
                 "flexGrow": 1,
-                "justifyContent": "center",
+                "position": "relative",
+                "zIndex": 1,
               }
             }
           >
             <View
               style={
                 Object {
-                  "opacity": 1,
-                  "overflow": "hidden",
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
             >
-              <Gradient
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
               <Image
                 style={
                   Object {
+                    "bottom": 0,
                     "height": "100%",
+                    "left": 0,
                     "position": "absolute",
+                    "resizeMode": "contain",
+                    "right": 0,
+                    "top": 0,
                     "width": "100%",
                     "zIndex": 1,
                   }
@@ -109,12 +113,8 @@ exports[`1. landscape default modal 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "paddingHorizontal": 15,
-                "paddingVertical": 15,
-                "position": "absolute",
-                "right": 0,
+                "marginHorizontal": 15,
+                "marginVertical": 15,
               }
             }
           >
@@ -154,18 +154,16 @@ exports[`1. landscape default modal 1`] = `
     }
   >
     <View>
-      <Gradient
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      />
       <Image
         style={
           Object {
+            "bottom": 0,
             "height": "100%",
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "contain",
+            "right": 0,
+            "top": 0,
             "width": "100%",
             "zIndex": 1,
           }
@@ -200,18 +198,16 @@ exports[`2. portrait default modal 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
-              "position": "relative",
+              "flexGrow": 0,
+              "height": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "left": 15,
-                "position": "absolute",
-                "top": 15,
-                "zIndex": 1,
+                "marginHorizontal": 15,
+                "marginVertical": 15,
               }
             }
           >
@@ -248,33 +244,39 @@ exports[`2. portrait default modal 1`] = `
           <Gestures
             style={
               Object {
-                "alignItems": "center",
                 "flexGrow": 1,
-                "justifyContent": "center",
+                "position": "relative",
+                "zIndex": 1,
               }
             }
           >
             <View
               style={
                 Object {
+                  "alignItems": "center",
+                  "bottom": 0,
                   "height": "100%",
-                  "opacity": 1,
-                  "overflow": "hidden",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
                 }
               }
             >
-              <Gradient
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
               <Image
                 style={
                   Object {
+                    "bottom": 0,
                     "height": "100%",
+                    "left": 0,
                     "position": "absolute",
+                    "resizeMode": "contain",
+                    "right": 0,
+                    "top": 0,
                     "width": "100%",
                     "zIndex": 1,
                   }
@@ -285,12 +287,8 @@ exports[`2. portrait default modal 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "paddingHorizontal": 15,
-                "paddingVertical": 15,
-                "position": "absolute",
-                "right": 0,
+                "marginHorizontal": 15,
+                "marginVertical": 15,
               }
             }
           >
@@ -330,18 +328,16 @@ exports[`2. portrait default modal 1`] = `
     }
   >
     <View>
-      <Gradient
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      />
       <Image
         style={
           Object {
+            "bottom": 0,
             "height": "100%",
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "contain",
+            "right": 0,
+            "top": 0,
             "width": "100%",
             "zIndex": 1,
           }
@@ -376,18 +372,16 @@ exports[`3. tablet landscape default modal 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
-              "position": "relative",
+              "flexGrow": 0,
+              "height": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "left": 20,
-                "position": "absolute",
-                "top": 20,
-                "zIndex": 1,
+                "marginHorizontal": 20,
+                "marginVertical": 20,
               }
             }
           >
@@ -424,43 +418,39 @@ exports[`3. tablet landscape default modal 1`] = `
           <Gestures
             style={
               Object {
-                "alignItems": "center",
                 "flexGrow": 1,
-                "justifyContent": "center",
+                "position": "relative",
+                "zIndex": 1,
               }
             }
           >
             <View
               style={
                 Object {
-                  "opacity": 1,
-                  "overflow": "hidden",
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
             >
-              <Gradient
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
               <Image
                 style={
                   Object {
+                    "bottom": 0,
                     "height": "100%",
+                    "left": 0,
                     "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 1,
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "right": 0,
+                    "top": 0,
                     "width": "100%",
                     "zIndex": 1,
                   }
@@ -471,12 +461,8 @@ exports[`3. tablet landscape default modal 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "paddingHorizontal": 20,
-                "paddingVertical": 20,
-                "position": "absolute",
-                "right": 0,
+                "marginHorizontal": 20,
+                "marginVertical": 20,
               }
             }
           >
@@ -516,18 +502,16 @@ exports[`3. tablet landscape default modal 1`] = `
     }
   >
     <View>
-      <Gradient
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      />
       <Image
         style={
           Object {
+            "bottom": 0,
             "height": "100%",
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "contain",
+            "right": 0,
+            "top": 0,
             "width": "100%",
             "zIndex": 1,
           }
@@ -562,18 +546,16 @@ exports[`4. tablet portrait default modal 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
-              "position": "relative",
+              "flexGrow": 0,
+              "height": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "left": 20,
-                "position": "absolute",
-                "top": 20,
-                "zIndex": 1,
+                "marginHorizontal": 20,
+                "marginVertical": 20,
               }
             }
           >
@@ -610,43 +592,39 @@ exports[`4. tablet portrait default modal 1`] = `
           <Gestures
             style={
               Object {
-                "alignItems": "center",
                 "flexGrow": 1,
-                "justifyContent": "center",
+                "position": "relative",
+                "zIndex": 1,
               }
             }
           >
             <View
               style={
                 Object {
+                  "alignItems": "center",
+                  "bottom": 0,
                   "height": "100%",
-                  "opacity": 1,
-                  "overflow": "hidden",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
                 }
               }
             >
-              <Gradient
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
               <Image
                 style={
                   Object {
+                    "bottom": 0,
                     "height": "100%",
+                    "left": 0,
                     "position": "absolute",
-                    "width": "100%",
-                    "zIndex": 1,
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "right": 0,
+                    "top": 0,
                     "width": "100%",
                     "zIndex": 1,
                   }
@@ -657,12 +635,8 @@ exports[`4. tablet portrait default modal 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "paddingHorizontal": 20,
-                "paddingVertical": 20,
-                "position": "absolute",
-                "right": 0,
+                "marginHorizontal": 20,
+                "marginVertical": 20,
               }
             }
           >
@@ -702,18 +676,16 @@ exports[`4. tablet portrait default modal 1`] = `
     }
   >
     <View>
-      <Gradient
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      />
       <Image
         style={
           Object {
+            "bottom": 0,
             "height": "100%",
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "contain",
+            "right": 0,
+            "top": 0,
             "width": "100%",
             "zIndex": 1,
           }
