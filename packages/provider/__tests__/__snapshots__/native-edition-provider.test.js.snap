@@ -92,8 +92,13 @@ Object {
                 "expirableFlags": Array [
                   Object {
                     "__typename": "ExpirableFlag",
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
+                    "expiryTime": "2020-03-13T15:00:00.000Z",
+                    "type": "NEW",
+                  },
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2019-03-13T13:00:00.000Z",
+                    "type": "UPDATED",
                   },
                 ],
                 "hasVideo": false,
@@ -550,8 +555,13 @@ Object {
                 "expirableFlags": Array [
                   Object {
                     "__typename": "ExpirableFlag",
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
+                    "expiryTime": "2020-03-13T15:00:00.000Z",
+                    "type": "NEW",
+                  },
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2019-03-13T13:00:00.000Z",
+                    "type": "UPDATED",
                   },
                 ],
                 "hasVideo": false,
