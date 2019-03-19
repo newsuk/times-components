@@ -73,11 +73,11 @@ class ModalImage extends Component {
                           onPress={this.hideModal}
                         />
                       </View>
-                      <Gestures style={styles.imageContainer}>
+                      <Gestures style={styles.gestureContainer}>
                         <Image
                           {...this.props}
                           lowResSize={lowResSize}
-                          style={styles.image}
+                          style={styles.modalImageContainer}
                         />
                       </Gestures>
                       {this.renderCaption({ isTablet })}

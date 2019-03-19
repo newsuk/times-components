@@ -72,15 +72,9 @@ exports[`1. landscape default modal 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "bottom": 0,
                   "height": "100%",
                   "justifyContent": "center",
-                  "left": 0,
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
                   "position": "absolute",
-                  "right": 0,
-                  "top": 0,
                   "width": "100%",
                 }
               }
@@ -88,15 +82,10 @@ exports[`1. landscape default modal 1`] = `
               <Image
                 style={
                   Object {
-                    "bottom": 0,
                     "height": "100%",
-                    "left": 0,
                     "position": "absolute",
                     "resizeMode": "contain",
-                    "right": 0,
-                    "top": 0,
                     "width": "100%",
-                    "zIndex": 1,
                   }
                 }
               />
@@ -139,19 +128,20 @@ exports[`1. landscape default modal 1`] = `
     </View>
   </Modal>
   <View>
-    <View>
+    <View
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
       <Image
         style={
           Object {
-            "bottom": 0,
             "height": "100%",
-            "left": 0,
             "position": "absolute",
             "resizeMode": "contain",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
           }
         }
       />
@@ -232,15 +222,9 @@ exports[`2. portrait default modal 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "bottom": 0,
                   "height": "100%",
                   "justifyContent": "center",
-                  "left": 0,
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
                   "position": "absolute",
-                  "right": 0,
-                  "top": 0,
                   "width": "100%",
                 }
               }
@@ -248,15 +232,10 @@ exports[`2. portrait default modal 1`] = `
               <Image
                 style={
                   Object {
-                    "bottom": 0,
                     "height": "100%",
-                    "left": 0,
                     "position": "absolute",
                     "resizeMode": "contain",
-                    "right": 0,
-                    "top": 0,
                     "width": "100%",
-                    "zIndex": 1,
                   }
                 }
               />
@@ -299,19 +278,20 @@ exports[`2. portrait default modal 1`] = `
     </View>
   </Modal>
   <View>
-    <View>
+    <View
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
       <Image
         style={
           Object {
-            "bottom": 0,
             "height": "100%",
-            "left": 0,
             "position": "absolute",
             "resizeMode": "contain",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
           }
         }
       />
@@ -394,15 +374,9 @@ exports[`3. tablet landscape default modal 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "bottom": 0,
                   "height": "100%",
                   "justifyContent": "center",
-                  "left": 0,
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
                   "position": "absolute",
-                  "right": 0,
-                  "top": 0,
                   "width": "100%",
                 }
               }
@@ -410,15 +384,10 @@ exports[`3. tablet landscape default modal 1`] = `
               <Image
                 style={
                   Object {
-                    "bottom": 0,
                     "height": "100%",
-                    "left": 0,
                     "position": "absolute",
                     "resizeMode": "contain",
-                    "right": 0,
-                    "top": 0,
                     "width": "100%",
-                    "zIndex": 1,
                   }
                 }
               />
@@ -461,19 +430,20 @@ exports[`3. tablet landscape default modal 1`] = `
     </View>
   </Modal>
   <View>
-    <View>
+    <View
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
       <Image
         style={
           Object {
-            "bottom": 0,
             "height": "100%",
-            "left": 0,
             "position": "absolute",
             "resizeMode": "contain",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
           }
         }
       />
@@ -556,15 +526,9 @@ exports[`4. tablet portrait default modal 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "bottom": 0,
                   "height": "100%",
                   "justifyContent": "center",
-                  "left": 0,
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
                   "position": "absolute",
-                  "right": 0,
-                  "top": 0,
                   "width": "100%",
                 }
               }
@@ -572,15 +536,10 @@ exports[`4. tablet portrait default modal 1`] = `
               <Image
                 style={
                   Object {
-                    "bottom": 0,
                     "height": "100%",
-                    "left": 0,
                     "position": "absolute",
                     "resizeMode": "contain",
-                    "right": 0,
-                    "top": 0,
                     "width": "100%",
-                    "zIndex": 1,
                   }
                 }
               />
@@ -623,19 +582,20 @@ exports[`4. tablet portrait default modal 1`] = `
     </View>
   </Modal>
   <View>
-    <View>
+    <View
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
       <Image
         style={
           Object {
-            "bottom": 0,
             "height": "100%",
-            "left": 0,
             "position": "absolute",
             "resizeMode": "contain",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
           }
         }
       />

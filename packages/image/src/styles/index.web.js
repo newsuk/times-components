@@ -10,7 +10,8 @@ const styles = {
   wrapper: {
     display: "table",
     height: 0,
-    overflow: "hidden"
+    overflow: "hidden",
+    position: "relative"
   }
 };
 

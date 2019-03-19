@@ -1,19 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. default image 1`] = `
-<View>
+<View
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
   <Image
     style={
       Object {
-        "bottom": 0,
         "height": "100%",
-        "left": 0,
         "position": "absolute",
         "resizeMode": "contain",
-        "right": 0,
-        "top": 0,
         "width": "100%",
-        "zIndex": 1,
       }
     }
   />

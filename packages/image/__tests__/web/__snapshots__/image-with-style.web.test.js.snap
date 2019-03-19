@@ -32,6 +32,7 @@ exports[`1. default image 1`] = `
   display: table;
   height: 0;
   overflow: hidden;
+  position: relative;
   padding-bottom: 66.66666666666667%;
 }
 </style>
@@ -81,6 +82,7 @@ exports[`2. default modal 1`] = `
   display: table;
   height: 0;
   overflow: hidden;
+  position: relative;
   padding-bottom: 66.66666666666667%;
 }
 </style>

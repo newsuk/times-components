@@ -29,40 +29,32 @@ const styles = {
   container: {
     flex: 1
   },
-  image: {
-    alignItems: "center",
-    bottom: 0,
-    height: "100%",
-    justifyContent: "center",
-    left: 0,
-    maxHeight: "100%",
-    maxWidth: "100%",
-    position: "absolute",
-    right: 0,
-    top: 0,
-    width: "100%"
-  },
-  imageBackground: {
-    bottom: 0,
-    height: "100%",
-    left: 0,
-    position: "absolute",
-    resizeMode: "contain",
-    right: 0,
-    top: 0,
-    width: "100%",
-    zIndex: 1
-  },
-  imageContainer: {
+  gestureContainer: {
     flexGrow: 1,
     position: "relative",
     zIndex: 1
+  },
+  image: {
+    height: "100%",
+    position: "absolute",
+    resizeMode: "contain",
+    width: "100%"
+  },
+  imageContainer: {
+    position: "relative"
   },
   modal: {
     backgroundColor: colours.functional.brandColour,
     flexDirection: "column",
     height: "100%",
     justifyContent: "space-between",
+    width: "100%"
+  },
+  modalImageContainer: {
+    alignItems: "center",
+    height: "100%",
+    justifyContent: "center",
+    position: "absolute",
     width: "100%"
   },
   placeholderContainer: {

@@ -82,7 +82,7 @@ class TimesImage extends Component {
       <View
         aspectRatio={aspectRatio}
         onLayout={this.onImageLayout}
-        style={style}
+        style={[styles.imageContainer, style]}
       >
         {isLoaded ? null : (
           <Fragment>
@@ -91,7 +91,7 @@ class TimesImage extends Component {
               <Image
                 borderRadius={borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
-                style={styles.imageBackground}
+                style={styles.image}
               />
             ) : null}
           </Fragment>
@@ -100,7 +100,7 @@ class TimesImage extends Component {
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
-          style={styles.imageBackground}
+          style={styles.image}
         />
       </View>
     );
