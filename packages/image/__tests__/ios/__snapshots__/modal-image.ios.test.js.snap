@@ -57,6 +57,18 @@ exports[`1. modal image 1`] = `
                 show={false}
                 source={
                   Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
+                  }
+                }
+              />
+              <Image
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={false}
+                source={
+                  Object {
                     "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                   }
                 }
@@ -113,6 +125,18 @@ exports[`1. modal image 1`] = `
       aspectRatio={2}
     >
       <View>
+        <Image
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={false}
+          source={
+            Object {
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
+            }
+          }
+        />
         <Image
           caption={<MockCaption />}
           fadeDuration={0}
@@ -341,6 +365,18 @@ exports[`3. modal image with custom highressize 1`] = `
                 show={false}
                 source={
                   Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
+                  }
+                }
+              />
+              <Image
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={false}
+                source={
+                  Object {
                     "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                   }
                 }
@@ -397,6 +433,18 @@ exports[`3. modal image with custom highressize 1`] = `
       aspectRatio={2}
     >
       <View>
+        <Image
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={false}
+          source={
+            Object {
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true",
+            }
+          }
+        />
         <Image
           caption={<MockCaption />}
           fadeDuration={0}

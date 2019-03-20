@@ -1,5 +1,5 @@
 import React from "react";
-import { Image as ReactNativeImage, Platform } from "react-native";
+import { Image as ReactNativeImage } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -163,13 +163,8 @@ export default () => {
     {
       name: "do not append resize if url already contains resize",
       test: () => {
-        let uri =
-          "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100";
-
-        if (Platform.OS === "android") {
-          uri =
-            "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2";
-        }
+        const uri =
+          "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2";
 
         const testInstance = TestRenderer.create(
           <Image {...props} uri={uri} />
