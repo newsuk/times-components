@@ -470,7 +470,7 @@ exports[`14. comment lead and cartoon 1`] = `
 </View>
 `;
 
-exports[`15. puzzle slice 1`] = `
+exports[`15. puzzle 1`] = `
 <View>
   <TileAJ
     id="0"

@@ -1498,7 +1498,7 @@ exports[`13. secondary two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`14. puzzle slice - medium 1`] = `
+exports[`14. puzzle - medium 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3096,7 +3096,7 @@ exports[`27. secondary two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`28. puzzle slice - wide 1`] = `
+exports[`28. puzzle - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4694,7 +4694,7 @@ exports[`41. secondary two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`42. puzzle slice - huge 1`] = `
+exports[`42. puzzle - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
