@@ -1,29 +1,39 @@
 import React from "react";
 import { View } from "react-native";
-import Link from "@times-components/link";
-import Image from "@times-components/image";
-import { ArticleSummaryHeadline } from "@times-components/article-summary";
+import { editionBreakpoints } from "@times-components/styleguide";
 import propTypes from "./proptypes";
-import styles from "./styles";
-import withTracking from "./puzzle-tracking-events";
+import stylesFactory from "./styles";
+import { ResponsiveSlice } from "../shared";
+import { TileAJ, TileAK } from "../../tiles";
 
-const Puzzle = ({ onPress, slice: { id, title, url, image } }) => {
-  const { main, header, headLine, body } = styles;
+const Puzzle = ({ onPress, slice: { puzzles } }) => {
+  const renderPuzzles = (breakpoint = editionBreakpoints.small) => {
+    const { container } = stylesFactory(breakpoint);
+    const Tile = breakpoint === editionBreakpoints.small ? TileAJ : TileAK;
+
+    return (
+      <View style={container}>
+        {puzzles.map(({ id, title, url, image }) => (
+          <Tile
+            id={id}
+            image={image}
+            onPress={onPress}
+            title={title}
+            url={url}
+          />
+        ))}
+      </View>
+    );
+  };
 
   return (
-    <Link onPress={() => onPress({ id, title, url })} url={url}>
-      <View style={main}>
-        <View style={header}>
-          <ArticleSummaryHeadline headline={title} style={headLine} />
-        </View>
-        <View style={body}>
-          <Image aspectRatio={3 / 2} uri={image.crop32.url} />
-        </View>
-      </View>
-    </Link>
+    <ResponsiveSlice
+      renderMedium={breakpoint => renderPuzzles(breakpoint)}
+      renderSmall={breakpoint => renderPuzzles(breakpoint)}
+    />
   );
 };
 
 Puzzle.propTypes = propTypes;
 
-export default withTracking(Puzzle);
+export default Puzzle;

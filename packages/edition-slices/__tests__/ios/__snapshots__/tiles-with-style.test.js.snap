@@ -2287,3 +2287,101 @@ exports[`29. tile ag 1`] = `
   </View>
 </Link>
 `;
+
+exports[`30. tile aj 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "marginTop": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 15,
+          "paddingTop": 15,
+          "width": "85%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 25,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Times Concise medium No 7881
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+          "width": "85%",
+        }
+      }
+    >
+      <Image />
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`31. tile ak 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "marginHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 15,
+          "paddingTop": 15,
+          "width": "85%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 25,
+            "fontWeight": "900",
+            "lineHeight": 25,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Times Concise medium No 7881
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+          "width": "85%",
+        }
+      }
+    >
+      <Image />
+    </View>
+  </View>
+</Link>
+`;

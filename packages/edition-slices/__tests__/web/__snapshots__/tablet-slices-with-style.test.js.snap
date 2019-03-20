@@ -1499,7 +1499,107 @@ exports[`13. secondary two no pic and two - medium 1`] = `
 </div>
 `;
 
-exports[`14. comment lead and cartoon - wide 1`] = `
+exports[`14. puzzle - medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS2 S1"
+>
+  <div
+    className="IS1 S1"
+  >
+    <TileAK
+      id="0"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="1"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="2"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+  </div>
+</div>
+`;
+
+exports[`15. comment lead and cartoon - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1579,7 +1679,7 @@ exports[`14. comment lead and cartoon - wide 1`] = `
 </div>
 `;
 
-exports[`15. daily universal register - wide 1`] = `
+exports[`16. daily universal register - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -1722,7 +1822,7 @@ exports[`15. daily universal register - wide 1`] = `
 </div>
 `;
 
-exports[`16. lead one and one - wide 1`] = `
+exports[`17. lead one and one - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1802,7 +1902,7 @@ exports[`16. lead one and one - wide 1`] = `
 </div>
 `;
 
-exports[`17. lead one full width - wide 1`] = `
+exports[`18. lead one full width - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1826,7 +1926,7 @@ exports[`17. lead one full width - wide 1`] = `
 </div>
 `;
 
-exports[`18. lead two no pic and two - wide 1`] = `
+exports[`19. lead two no pic and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1928,7 +2028,7 @@ exports[`18. lead two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`19. leaders slice - wide 1`] = `
+exports[`20. leaders slice - wide 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2095,7 +2195,7 @@ exports[`19. leaders slice - wide 1`] = `
 </div>
 `;
 
-exports[`20. secondary one and four - wide 1`] = `
+exports[`21. secondary one and four - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2282,7 +2382,7 @@ exports[`20. secondary one and four - wide 1`] = `
 </div>
 `;
 
-exports[`21. secondary one - wide 1`] = `
+exports[`22. secondary one - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2306,7 +2406,7 @@ exports[`21. secondary one - wide 1`] = `
 </div>
 `;
 
-exports[`22. secondary four - wide 1`] = `
+exports[`23. secondary four - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2464,7 +2564,7 @@ exports[`22. secondary four - wide 1`] = `
 </div>
 `;
 
-exports[`23. secondary one and columnist - wide 1`] = `
+exports[`24. secondary one and columnist - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2545,7 +2645,7 @@ exports[`23. secondary one and columnist - wide 1`] = `
 </div>
 `;
 
-exports[`24. secondary two and two - wide 1`] = `
+exports[`25. secondary two and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2714,7 +2814,7 @@ exports[`24. secondary two and two - wide 1`] = `
 </div>
 `;
 
-exports[`25. lead one and four slice - wide 1`] = `
+exports[`26. lead one and four slice - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2846,7 +2946,7 @@ exports[`25. lead one and four slice - wide 1`] = `
 </div>
 `;
 
-exports[`26. secondary two no pic and two - wide 1`] = `
+exports[`27. secondary two no pic and two - wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2998,7 +3098,107 @@ exports[`26. secondary two no pic and two - wide 1`] = `
 </div>
 `;
 
-exports[`27. comment lead and cartoon - huge 1`] = `
+exports[`28. puzzle - wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS2 S1"
+>
+  <div
+    className="IS1 S1"
+  >
+    <TileAK
+      id="0"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="1"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="2"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+  </div>
+</div>
+`;
+
+exports[`29. comment lead and cartoon - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3078,7 +3278,7 @@ exports[`27. comment lead and cartoon - huge 1`] = `
 </div>
 `;
 
-exports[`28. daily universal register - huge 1`] = `
+exports[`30. daily universal register - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -3221,7 +3421,7 @@ exports[`28. daily universal register - huge 1`] = `
 </div>
 `;
 
-exports[`29. lead one and one - huge 1`] = `
+exports[`31. lead one and one - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3301,7 +3501,7 @@ exports[`29. lead one and one - huge 1`] = `
 </div>
 `;
 
-exports[`30. lead one full width - huge 1`] = `
+exports[`32. lead one full width - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3325,7 +3525,7 @@ exports[`30. lead one full width - huge 1`] = `
 </div>
 `;
 
-exports[`31. lead two no pic and two - huge 1`] = `
+exports[`33. lead two no pic and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3427,7 +3627,7 @@ exports[`31. lead two no pic and two - huge 1`] = `
 </div>
 `;
 
-exports[`32. leaders slice - huge 1`] = `
+exports[`34. leaders slice - huge 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -3594,7 +3794,7 @@ exports[`32. leaders slice - huge 1`] = `
 </div>
 `;
 
-exports[`33. secondary one and four - huge 1`] = `
+exports[`35. secondary one and four - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3781,7 +3981,7 @@ exports[`33. secondary one and four - huge 1`] = `
 </div>
 `;
 
-exports[`34. secondary one - huge 1`] = `
+exports[`36. secondary one - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3805,7 +4005,7 @@ exports[`34. secondary one - huge 1`] = `
 </div>
 `;
 
-exports[`35. secondary four - huge 1`] = `
+exports[`37. secondary four - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3963,7 +4163,7 @@ exports[`35. secondary four - huge 1`] = `
 </div>
 `;
 
-exports[`36. secondary one and columnist - huge 1`] = `
+exports[`38. secondary one and columnist - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4044,7 +4244,7 @@ exports[`36. secondary one and columnist - huge 1`] = `
 </div>
 `;
 
-exports[`37. secondary two and two - huge 1`] = `
+exports[`39. secondary two and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4213,7 +4413,7 @@ exports[`37. secondary two and two - huge 1`] = `
 </div>
 `;
 
-exports[`38. lead one and four slice - huge 1`] = `
+exports[`40. lead one and four slice - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4345,7 +4545,7 @@ exports[`38. lead one and four slice - huge 1`] = `
 </div>
 `;
 
-exports[`39. secondary two no pic and two - huge 1`] = `
+exports[`41. secondary two no pic and two - huge 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -4493,6 +4693,106 @@ exports[`39. secondary two no pic and two - huge 1`] = `
         tileName="support2"
       />
     </div>
+  </div>
+</div>
+`;
+
+exports[`42. puzzle - huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS2 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS2 S1"
+>
+  <div
+    className="IS1 S1"
+  >
+    <TileAK
+      id="0"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="1"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
+    <TileAK
+      id="2"
+      image={
+        Object {
+          "crop11": null,
+          "crop169": null,
+          "crop23": null,
+          "crop32": Object {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+          },
+          "crop45": null,
+          "crops": Array [],
+          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        }
+      }
+      title="Times Concise medium No 7881"
+      url="/crossword/123"
+    />
   </div>
 </div>
 `;
