@@ -1,6 +1,8 @@
 const styles = {
   placeholder: {
+    alignItems: "center",
     bottom: 0,
+    justifyContent: "center",
     left: 0,
     position: "absolute",
     right: 0,
