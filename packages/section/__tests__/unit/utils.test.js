@@ -26,7 +26,7 @@ describe("splitPuzzlesBySlices", () => {
     expect(chunked[1].puzzles.length).toBe(1);
   });
 
-  it("should return empty array in puzzles are 0", () => {
+  it("should return an empty array if puzzles are 0", () => {
     const puzzles = [];
     const chunked = splitPuzzlesBySlices(puzzles);
 
@@ -35,7 +35,7 @@ describe("splitPuzzlesBySlices", () => {
 });
 
 describe("buildSliceData", () => {
-  it("should create slice with elemenId", () => {
+  it("should create slice with elementId", () => {
     const slices = [{ id: "a", name: "sliceA" }, { id: "b", name: "sliceB" }];
     const withElementId = buildSliceData(slices);
 

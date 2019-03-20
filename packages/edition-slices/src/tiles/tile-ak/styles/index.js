@@ -6,7 +6,7 @@ const styles = {
     paddingTop: spacing(3),
     width: "85%"
   },
-  headLine: {
+  headline: {
     fontSize: 25
   },
   imageContainer: {

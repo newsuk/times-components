@@ -7,7 +7,7 @@ import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { withPuzzleTileTracking } from "../shared";
 import styles from "./styles";
 
-const { puzzleContainer, header, headLine, imageContainer, link } = styles;
+const { puzzleContainer, header, headline, imageContainer, link } = styles;
 
 const TileAJ = ({ id, image, onPress, title, url }) => (
   <Link
@@ -18,7 +18,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => (
   >
     <View style={puzzleContainer}>
       <View style={header}>
-        <ArticleSummaryHeadline headline={title} style={headLine} />
+        <ArticleSummaryHeadline headline={title} style={headline} />
       </View>
       <View style={imageContainer}>
         <Image aspectRatio={3 / 2} uri={image.crop32.url} />

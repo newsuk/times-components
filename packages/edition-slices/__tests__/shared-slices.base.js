@@ -112,7 +112,7 @@ const slices = [
   },
   {
     mock: { puzzles: getPuzzleSlices(3) },
-    name: "puzzle slice",
+    name: "puzzle",
     Slice: PuzzleSlice
   }
 ];

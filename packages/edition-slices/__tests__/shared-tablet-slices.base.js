@@ -27,15 +27,15 @@ import {
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadersSlice,
+  LeadOneAndFourSlice,
   LeadTwoNoPicAndTwoSlice,
+  PuzzleSlice,
   SecondaryOneAndFourSlice,
   SecondaryOneSlice,
   SecondaryFourSlice,
-  LeadOneAndFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
   SecondaryOneAndColumnistSlice,
-  SecondaryTwoAndTwoSlice,
-  PuzzleSlice
+  SecondaryTwoAndTwoSlice
 } from "../src/slices";
 
 const slices = [
@@ -106,7 +106,7 @@ const slices = [
   },
   {
     mock: { puzzles: getPuzzleSlices(3) },
-    name: "puzzle slice",
+    name: "puzzle",
     Slice: PuzzleSlice
   }
 ];

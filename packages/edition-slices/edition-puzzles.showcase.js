@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import { getPuzzleSlices } from "@times-components/fixture-generator";
 import { PuzzleSlice } from "./src/slices";
@@ -13,26 +12,16 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const publications = {
-  ST: "SUNDAYTIMES",
-  TIMES: "TIMES"
-};
 /* eslint-disable react/prop-types */
-const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
+const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-      <Context.Provider
-        value={{
-          publicationName: select("Publication:", publications, "TIMES")
-        }}
-      >
-        <Component
-          onPress={preventDefaultedAction(decorateAction)("onPress")}
-          slice={data}
-        />
-      </Context.Provider>
+      <Component
+        onPress={preventDefaultedAction(decorateAction)("onPress")}
+        slice={data}
+      />
     </ScrollView>
-  </Responsive>
+  </Responsive >
 );
 
 const sliceStories = [
