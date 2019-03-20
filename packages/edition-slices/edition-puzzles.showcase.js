@@ -21,7 +21,7 @@ const renderSlice = (Component, data) => (_, { decorateAction }) => (
         slice={data}
       />
     </ScrollView>
-  </Responsive >
+  </Responsive>
 );
 
 const sliceStories = [
