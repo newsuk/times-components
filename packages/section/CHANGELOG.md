@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.10...@times-components/section@0.5.0) (2019-03-20)
+
+
+### Features
+
+* Puzzles 768px breakpoint ([#1811](https://github.com/newsuk/times-components/issues/1811)) ([fe1c47a](https://github.com/newsuk/times-components/commit/fe1c47a))
+
+
+
+
+
 ## [0.4.10](https://github.com/newsuk/times-components/compare/@times-components/section@0.4.9...@times-components/section@0.4.10) (2019-03-19)
 
 **Note:** Version bump only for package @times-components/section

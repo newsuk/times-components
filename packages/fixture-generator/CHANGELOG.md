@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.19.0...@times-components/fixture-generator@0.20.0) (2019-03-20)
+
+
+### Features
+
+* Puzzles 768px breakpoint ([#1811](https://github.com/newsuk/times-components/issues/1811)) ([fe1c47a](https://github.com/newsuk/times-components/commit/fe1c47a))
+
+
+
+
+
 # [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.18.3...@times-components/fixture-generator@0.19.0) (2019-03-18)
 
 

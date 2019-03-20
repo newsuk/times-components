@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.42.0...@times-components/edition-slices@0.43.0) (2019-03-20)
+
+
+### Features
+
+* Puzzles 768px breakpoint ([#1811](https://github.com/newsuk/times-components/issues/1811)) ([fe1c47a](https://github.com/newsuk/times-components/commit/fe1c47a))
+
+
+
+
+
 # [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.41.0...@times-components/edition-slices@0.42.0) (2019-03-19)
 
 
