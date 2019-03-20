@@ -7,10 +7,10 @@ const styles = {
     marginHorizontal: spacing(2)
   },
   leadItem: {
-    width: "70%"
+    width: "80%"
   },
   supportItem: {
-    width: "30%"
+    width: "20%"
   }
 };
 

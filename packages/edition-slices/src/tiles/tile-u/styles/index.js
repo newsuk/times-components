@@ -2,6 +2,7 @@ import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
+    flex: 1,
     flexDirection: "row",
     padding: spacing(2)
   },
@@ -12,11 +13,11 @@ const styles = {
     paddingVertical: spacing(1)
   },
   imageContainer: {
-    width: "66.66%"
+    width: "60%"
   },
   summaryContainer: {
     paddingBottom: spacing(1),
-    width: "33.33%"
+    width: "40%"
   }
 };
 

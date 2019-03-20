@@ -13,7 +13,7 @@ class MockTile {
       headline: article.headline,
       leadAsset: article.leadAsset,
       strapline:
-        "The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed"
+        "Three Conservative MPs resign"
     };
   }
 

@@ -229,7 +229,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS1 {
-  width: 70%;
+  width: 80%;
 }
 
 .IS2 {
@@ -243,7 +243,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS3 {
-  width: 30%;
+  width: 20%;
 }
 
 .IS4 {
@@ -374,8 +374,8 @@ exports[`5. lead two no pic and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -983,7 +983,6 @@ exports[`10. secondary one and columnist - medium 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -1032,7 +1031,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       />
     </div>
     <div
-      className="IS2"
+      className="IS2 S1"
     />
     <div
       className="IS3 S1"
@@ -1727,7 +1726,7 @@ exports[`16. lead one and one - wide 1`] = `
 }
 
 .IS1 {
-  width: 70%;
+  width: 80%;
 }
 
 .IS2 {
@@ -1741,7 +1740,7 @@ exports[`16. lead one and one - wide 1`] = `
 }
 
 .IS3 {
-  width: 30%;
+  width: 20%;
 }
 
 .IS4 {
@@ -1872,8 +1871,8 @@ exports[`18. lead two no pic and two - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -2481,7 +2480,6 @@ exports[`23. secondary one and columnist - wide 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -2530,7 +2528,7 @@ exports[`23. secondary one and columnist - wide 1`] = `
       />
     </div>
     <div
-      className="IS2"
+      className="IS2 S1"
     />
     <div
       className="IS3 S1"
@@ -3225,7 +3223,7 @@ exports[`29. lead one and one - huge 1`] = `
 }
 
 .IS1 {
-  width: 70%;
+  width: 80%;
 }
 
 .IS2 {
@@ -3239,7 +3237,7 @@ exports[`29. lead one and one - huge 1`] = `
 }
 
 .IS3 {
-  width: 30%;
+  width: 20%;
 }
 
 .IS4 {
@@ -3370,8 +3368,8 @@ exports[`31. lead two no pic and two - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -3979,7 +3977,6 @@ exports[`36. secondary one and columnist - huge 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -4028,7 +4025,7 @@ exports[`36. secondary one and columnist - huge 1`] = `
       />
     </div>
     <div
-      className="IS2"
+      className="IS2 S1"
     />
     <div
       className="IS3 S1"

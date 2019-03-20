@@ -15,6 +15,9 @@ const mediumBreakpointStyles = {
     paddingLeft: spacing(2),
     paddingTop: spacing(2),
     width: "33%"
+  },
+  separator: {
+    marginBottom: 0
   }
 };
 

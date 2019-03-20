@@ -71,7 +71,6 @@ exports[`1. secondary one and columnist - small 1`] = `
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
@@ -165,7 +164,6 @@ exports[`2. secondary one and columnist - medium 1`] = `
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "marginBottom": "10px",
         "marginTop": "10px",
       }
     }

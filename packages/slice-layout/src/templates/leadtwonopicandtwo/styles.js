@@ -6,7 +6,7 @@ const styles = {
   },
   container: {
     flexDirection: "row",
-    paddingHorizontal: spacing(4)
+    paddingHorizontal: spacing(2)
   }
 };
 

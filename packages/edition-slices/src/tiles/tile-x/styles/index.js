@@ -15,7 +15,8 @@ const styles = {
     ...fontFactory({
       font: "bodyRegular",
       fontSize: "pageComponentHeadline"
-    })
+    }),
+    paddingBottom: spacing(1)
   },
   summaryContainer: {
     marginHorizontal: spacing(2),
