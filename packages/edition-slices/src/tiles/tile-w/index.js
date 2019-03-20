@@ -16,7 +16,7 @@ const TileW = ({ onPress, tile }) => (
       <TileSummary
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
-        summary={tile.summary125 || tile.article.summary125}
+        summary={tile.teaser125 || tile.article.summary125}
         summaryStyle={styles.summary}
         tile={tile}
       />
