@@ -6,6 +6,7 @@ import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
+import PuzzleNotificationBar from "./puzzle-notification-bar";
 import Slice from "./slice";
 import styles from "./styles";
 import { splitPuzzlesBySlices, buildSliceData } from "./utils";
@@ -31,9 +32,11 @@ class Section extends Component {
   render() {
     const {
       onArticlePress,
+      onPuzzleNotificationBarPress,
       onPuzzlePress,
       publicationName,
       section: { name, slices },
+      savedPuzzleCount,
       onViewed,
       receiveChildList
     } = this.props;
@@ -46,6 +49,12 @@ class Section extends Component {
 
     return (
       <Responsive>
+        {isPuzzle && (
+          <PuzzleNotificationBar
+            count={savedPuzzleCount}
+            onPress={onPuzzleNotificationBarPress}
+          />
+        )}
         <FlatList
           data={data}
           ItemSeparatorComponent={
@@ -80,18 +89,22 @@ class Section extends Component {
 
 Section.propTypes = {
   onArticlePress: PropTypes.func,
+  onPuzzleNotificationBarPress: PropTypes.func,
   onPuzzlePress: PropTypes.func,
   onViewed: PropTypes.func,
   publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
+  savedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}).isRequired
 };
 
 Section.defaultProps = {
   onArticlePress: () => {},
+  onPuzzleNotificationBarPress: () => {},
   onPuzzlePress: () => {},
   onViewed: () => {},
-  receiveChildList: () => {}
+  receiveChildList: () => {},
+  savedPuzzleCount: 0
 };
 
 export default withTrackingContext(withTrackScrollDepth(Section));

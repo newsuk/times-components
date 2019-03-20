@@ -19,6 +19,9 @@ export default {
           onArticlePress={preventDefaultedAction(decorateAction)(
             "onArticlePress"
           )}
+          onPuzzleNotificationBarPress={preventDefaultedAction(decorateAction)(
+            "onPuzzleNotificationBarPress"
+          )}
           onPuzzlePress={preventDefaultedAction(decorateAction)(
             "onPuzzlePress"
           )}
@@ -36,10 +39,14 @@ export default {
           onArticlePress={preventDefaultedAction(decorateAction)(
             "onArticlePress"
           )}
+          onPuzzleNotificationBarPress={preventDefaultedAction(decorateAction)(
+            "onPuzzleNotificationBarPress"
+          )}
           onPuzzlePress={preventDefaultedAction(decorateAction)(
             "onPuzzlePress"
           )}
           publicationName="TIMES"
+          savedPuzzleCount={3}
           section={mockPuzzleSection("Puzzles")}
         />
       ),
