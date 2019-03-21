@@ -6,16 +6,11 @@ import Section from "@times-components/section";
 import trackSection from "./track-section";
 
 const {
-  getOpenedPuzzleCount = () => {
-    Promise.resolve(12);
-  },
+  getOpenedPuzzleCount,
   onArticlePress,
   onPuzzleBarPress = () => {},
   onPuzzlePress
 } = NativeModules.SectionEvents || {
-  getOpenedPuzzleCount: () => {
-    Promise.resolve(12);
-  },
   onArticlePress: () => {},
   onPuzzleBarPress: () => {},
   onPuzzlePress: () => {}
@@ -49,7 +44,7 @@ class SectionPage extends Component {
     const {
       section: { name }
     } = this.props;
-    if (name === "PuzzleSection") {
+    if (name === "PuzzleSection" && getOpenedPuzzleCount) {
       getOpenedPuzzleCount().then(count => {
         this.setState({ recentlyOpenedPuzzleCount: count });
       });
