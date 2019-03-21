@@ -10,6 +10,7 @@ import {
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import Section from "../src/section";
+import PuzzleBar from "../src/puzzle-bar";
 
 jest.mock("@times-components/edition-slices", () => ({
   __esModule: true,
@@ -56,6 +57,18 @@ export default () => {
           section={edition.sections[0]}
         />
       ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("puzzle bar with one puzzle", () => {
+    expect(
+      TestRenderer.create(<PuzzleBar count={1} onPress={() => {}} />).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("puzzle bar with more than one puzzle", () => {
+    expect(
+      TestRenderer.create(<PuzzleBar count={3} onPress={() => {}} />).toJSON()
     ).toMatchSnapshot();
   });
 };
