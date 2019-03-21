@@ -26,6 +26,10 @@ jest.mock("@times-components/edition-slices", () => ({
   }
 }));
 
+jest.mock("@times-components/icons", () => ({
+  IconForwardArrow: "IconForwardArrow"
+}));
+
 export default () => {
   addSerializers(
     expect,
@@ -46,7 +50,9 @@ export default () => {
           analyticsStream={() => {}}
           onArticlePress={() => {}}
           onPuzzlePress={() => {}}
+          onPuzzleNotificationBarPress={() => {}}
           publicationName="TIMES"
+          savedPuzzleCount={1}
           section={edition.sections[0]}
         />
       ).toJSON()

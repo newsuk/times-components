@@ -11,21 +11,20 @@ const styles = StyleSheet.create({
     height: 1
   },
   puzzleNotificationBarArrow: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "flex-end",
+    paddingLeft: spacing(2),
     paddingTop: spacing(1)
   },
   puzzleNotificationBarContainer: {
+    borderBottomWidth: 1,
+    borderColor: colours.functional.keyline,
     flexDirection: "row",
-    paddingLeft: spacing(5),
-    paddingRight: spacing(2),
-    paddingVertical: spacing(2)
+    justifyContent: "center",
+    paddingVertical: spacing(4)
   },
   puzzleNotificationBarText: {
-    color: colours.functional.primary,
-    fontFamily: fonts.headline,
-    fontSize: 18
+    color: colours.functional.brandColour,
+    fontFamily: fonts.headlineRegular,
+    fontSize: 20
   }
 });
 
