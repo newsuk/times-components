@@ -10,7 +10,7 @@ class MockTile {
     this.tile = {
       articleId: "dc4ed2e8-4584-11e9-924d-9729bcd51a7f",
       article,
-      headline: article.headline,
+      headline: "This is tile headline",
       leadAsset: article.leadAsset,
       strapline:
         "The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed"

@@ -22,7 +22,7 @@ exports[`1. tile g - layout change 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Driving Off
+        This is tile headline
       </Text>
       <View>
         <ArticleFlags
@@ -63,7 +63,7 @@ exports[`2. tile p - layout change 1`] = `
         accessibilityRole="heading"
         aria-level="3"
       >
-        Driving Off
+        This is tile headline
       </Text>
       <Text
         accessibilityRole="heading"

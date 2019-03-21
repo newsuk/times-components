@@ -15,7 +15,7 @@ export default Component =>
           },
           tileName
         }) => ({
-          articleHeadline: shortHeadline || tileHeadline || headline,
+          articleHeadline: tileHeadline || shortHeadline || headline,
           articleId: id,
           articleUrl: url,
           tileName
