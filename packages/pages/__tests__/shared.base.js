@@ -17,12 +17,6 @@ export default makeTest => {
     ).toMatchSnapshot();
   });
 
-  it("section page", () => {
-    expect(
-      makeTest(<Section editionId="test-edition-id" sectionTitle="News" />)
-    ).toMatchSnapshot();
-  });
-
   it("adConfig is set correctly", () => {
     const article = {
       headline: "This is a headline",
