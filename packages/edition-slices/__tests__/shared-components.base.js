@@ -18,15 +18,15 @@ export default () => {
   const tests = [
     {
       name:
-        "Tile summary falls back to tileHeadline if shortHeadline is unavailable",
+        "Tile summary falls back to shortHeadline if tileHeadline is unavailable",
       test: () => {
         const tileWithoutShortHeadline = {
           ...tile,
           article: {
             ...tile.article,
-            shortHeadline: ""
+            shortHeadline: "This is shortheadlin"
           },
-          headline: "This is overriden headline"
+          headline: ""
         };
 
         const output = TestRenderer.create(
@@ -35,7 +35,7 @@ export default () => {
 
         expect(
           output.root.findByType(ArticleSummaryHeadline).props.headline
-        ).toEqual(tileWithoutShortHeadline.headline);
+        ).toEqual(tileWithoutShortHeadline.article.shortHeadline);
       }
     },
     {
