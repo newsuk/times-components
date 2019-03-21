@@ -4,7 +4,7 @@ exports[`default section page click tracking 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleHeadline": "Driving Off",
+    "articleHeadline": "This is tile headline",
     "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "articleUrl": "/article/123",
     "sectionName": "News",
