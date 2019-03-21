@@ -28,6 +28,7 @@ exports[`1. secondary one and columnist - small 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
+        "marginBottom": 0,
         "marginVertical": 10,
       }
     }
@@ -75,6 +76,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
+        "marginBottom": 0,
         "marginVertical": 10,
       }
     }

@@ -35,7 +35,7 @@ exports[`puzzle section page click tracking 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "puzzleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+    "puzzleId": "0",
     "puzzleTitle": "Times Concise medium No 7881",
     "puzzleUrl": "/crossword/123",
     "sectionName": "Puzzles",
@@ -55,7 +55,7 @@ exports[`puzzle section page click tracking: onPuzzlePress 1`] = `
 Array [
   Array [
     Object {
-      "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+      "id": "0",
       "title": "Times Concise medium No 7881",
       "url": "/crossword/123",
     },

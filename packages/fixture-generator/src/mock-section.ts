@@ -33,16 +33,10 @@ function getSlices(): Array<ArticleSlice> {
   ];
 }
 
-function getPuzzleSlices(): Array<PuzzleSectionSlice> {
-  return [
-    mockPuzzleSlice(),
-    mockPuzzleSlice(),
-    mockPuzzleSlice(),
-    mockPuzzleSlice(),
-    mockPuzzleSlice(),
-    mockPuzzleSlice(),
-    mockPuzzleSlice()
-  ];
+function getPuzzleSlices(count: number): Array<PuzzleSectionSlice> {
+  return new Array(count)
+    .fill(0)
+    .map((_, index) => ({ ...mockPuzzleSlice(), id: `${index}` }));
 }
 
 interface StandardSectionWithName extends StandardSection {
@@ -87,7 +81,7 @@ function mockPuzzleSection(title: string): PuzzleSectionWithName {
     },
     id: "dummy-section-id",
     name: "PuzzleSection",
-    slices: getPuzzleSlices(),
+    slices: getPuzzleSlices(7),
     slug: "dummy-section-slug",
     title
   };
@@ -112,4 +106,9 @@ function mockMagazineSection(title: string): MagazineSectionWithName {
   };
 }
 
-export { mockMagazineSection, mockPuzzleSection, mockStandardSection };
+export {
+  getPuzzleSlices,
+  mockMagazineSection,
+  mockPuzzleSection,
+  mockStandardSection
+};

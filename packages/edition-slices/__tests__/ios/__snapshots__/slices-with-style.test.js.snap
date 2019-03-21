@@ -1042,53 +1042,16 @@ exports[`14. comment lead and cartoon 1`] = `
 `;
 
 exports[`15. puzzle 1`] = `
-<Link>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#F0F0F0",
-        "flex": 1,
-        "marginLeft": 10,
-        "marginRight": 10,
-        "marginTop": 10,
-      }
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
     }
-  >
-    <View
-      style={
-        Object {
-          "paddingLeft": 15,
-          "paddingRight": 15,
-          "paddingTop": 15,
-          "width": "85%",
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 25,
-            "fontWeight": "900",
-            "lineHeight": 25,
-            "marginBottom": 5,
-          }
-        }
-      >
-        Times Concise medium No 7881
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignSelf": "flex-end",
-          "width": "85%",
-        }
-      }
-    >
-      <Image />
-    </View>
-  </View>
-</Link>
+  }
+>
+  <TileAJ />
+  <TileAJ />
+  <TileAJ />
+</View>
 `;

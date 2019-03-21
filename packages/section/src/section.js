@@ -8,6 +8,7 @@ import withTrackingContext from "./section-tracking-context";
 import Slice from "./slice";
 import PuzzleBar from "./dummy-puzzle-bar";
 import styles from "./styles";
+import { splitPuzzlesBySlices, buildSliceData } from "./utils";
 
 class Section extends Component {
   constructor(props) {
@@ -54,11 +55,10 @@ class Section extends Component {
       receiveChildList
     } = this.props;
     const isPuzzle = name === "PuzzleSection";
+    const data = isPuzzle
+      ? buildSliceData(splitPuzzlesBySlices(slices))
+      : buildSliceData(slices);
 
-    const data = slices.map((slice, index) => ({
-      ...slice,
-      elementId: `${slice.id}.${index}`
-    }));
     if (slices) receiveChildList(data);
 
     return (

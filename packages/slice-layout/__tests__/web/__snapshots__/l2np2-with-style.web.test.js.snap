@@ -119,8 +119,8 @@ exports[`2. lead two no pic and two - medium 1`] = `
       "WebkitFlexDirection": "row",
       "flexDirection": "row",
       "msFlexDirection": "row",
-      "paddingLeft": "20px",
-      "paddingRight": "20px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
     }
   }
 >

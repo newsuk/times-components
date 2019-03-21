@@ -628,7 +628,7 @@ exports[`6. tile f 1`] = `
         className="S4"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S6"
@@ -1306,7 +1306,7 @@ exports[`12. tile m 1`] = `
         className="IS2 S2"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S3"
@@ -1417,7 +1417,7 @@ exports[`13. tile n 1`] = `
         className="S4"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S5"
@@ -1673,7 +1673,7 @@ exports[`15. tile p 1`] = `
         className="IS4 S4"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S5"
@@ -2090,17 +2090,27 @@ exports[`20. tile u 1`] = `
 
 .IS3 {
   padding-bottom: 5px;
-  width: 33.33%;
+  width: 40%;
 }
 
 .IS4 {
-  width: 66.66%;
+  width: 60%;
 }
 
 .IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -2456,6 +2466,7 @@ exports[`23. tile x 1`] = `
   font-family: TimesDigitalW04-Regular;
   font-size: 25px;
   line-height: 25px;
+  padding-bottom: 5px;
 }
 
 .IS4 {
@@ -2495,7 +2506,7 @@ exports[`23. tile x 1`] = `
         className="IS3 S4"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S6"
@@ -2776,7 +2787,6 @@ exports[`26. tile aa 1`] = `
 .IS4 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 50%;
 }
 
 .IS5 {
@@ -2855,7 +2865,7 @@ exports[`27. tile ab 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .S4 {
@@ -3188,13 +3198,175 @@ exports[`29. tile ag 1`] = `
         className="IS2 S2"
         role="heading"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </h4>
       <div
         className="S3"
       >
         <ArticleFlags />
       </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`30. tile aj 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS2 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS3 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  url="/crossword/123"
+>
+  <div
+    className="IS3 S2"
+  >
+    <div
+      className="IS1 S2"
+    >
+      <h3
+        aria-level="3"
+        className="S1"
+        role="heading"
+      >
+        Times Concise medium No 7881
+      </h3>
+    </div>
+    <div
+      className="IS2 S2"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+      />
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`31. tile ak 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.S2 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  font-size: 25px;
+}
+
+.IS2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS3 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  width: 85%;
+  -ms-flex-item-align: end;
+}
+
+.IS4 {
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 5px;
+  margin-left: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "width": "33%",
+    }
+  }
+  url="/crossword/123"
+>
+  <div
+    className="IS4 S2"
+  >
+    <div
+      className="IS2 S2"
+    >
+      <h3
+        aria-level="3"
+        className="IS1 S1"
+        role="heading"
+      >
+        Times Concise medium No 7881
+      </h3>
+    </div>
+    <div
+      className="IS3 S2"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+      />
     </div>
   </div>
 </Link>
