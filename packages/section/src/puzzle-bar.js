@@ -5,22 +5,22 @@ import { IconForwardArrow } from "@times-components/icons";
 import { colours } from "@times-components/styleguide";
 import styles from "./styles";
 
-const PuzzleNotificationBar = ({ count, onPress }) =>
+const PuzzleBar = ({ count, onPress }) =>
   count ? (
-    <View style={styles.puzzleNotificationBarContainer}>
-      <Text onPress={onPress} style={styles.puzzleNotificationBarText}>
+    <View style={styles.puzzleBarContainer}>
+      <Text onPress={onPress} style={styles.puzzleBarText}>
         {count} recently opened puzzle
         {count > 1 && "s"}
       </Text>
-      <View style={styles.puzzleNotificationBarArrow}>
+      <View style={styles.puzzleBarArrow}>
         <IconForwardArrow fillColour={colours.section.puzzle} />
       </View>
     </View>
   ) : null;
 
-PuzzleNotificationBar.propTypes = {
+PuzzleBar.propTypes = {
   count: PropTypes.number.isRequired,
   onPress: PropTypes.func.isRequired
 };
 
-export default PuzzleNotificationBar;
+export default PuzzleBar;

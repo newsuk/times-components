@@ -49,10 +49,10 @@ export default () => {
         <Section
           analyticsStream={() => {}}
           onArticlePress={() => {}}
+          onPuzzleBarPress={() => {}}
           onPuzzlePress={() => {}}
-          onPuzzleNotificationBarPress={() => {}}
           publicationName="TIMES"
-          savedPuzzleCount={1}
+          recentlyOpenedPuzzleCount={1}
           section={edition.sections[0]}
         />
       ).toJSON()

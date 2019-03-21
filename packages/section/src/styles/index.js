@@ -10,18 +10,18 @@ const styles = StyleSheet.create({
     backgroundColor: colours.functional.keyline,
     height: 1
   },
-  puzzleNotificationBarArrow: {
+  puzzleBarArrow: {
     paddingLeft: spacing(2),
     paddingTop: spacing(1)
   },
-  puzzleNotificationBarContainer: {
+  puzzleBarContainer: {
     borderBottomWidth: 1,
     borderColor: colours.functional.keyline,
     flexDirection: "row",
     justifyContent: "center",
     paddingVertical: spacing(4)
   },
-  puzzleNotificationBarText: {
+  puzzleBarText: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headlineRegular,
     fontSize: 20
