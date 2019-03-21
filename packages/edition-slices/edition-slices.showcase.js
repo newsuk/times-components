@@ -17,7 +17,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockPuzzleSlice
 } from "@times-components/fixture-generator";
-import Context from "@times-components/context";
+import { SectionContext } from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import {
   CommentLeadAndCartoonSlice,
@@ -50,7 +50,7 @@ const publications = {
 const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   <Responsive>
     <ScrollView>
-      <Context.Provider
+      <SectionContext.Provider
         value={{
           publicationName: select("Publication:", publications, "TIMES")
         }}
@@ -59,7 +59,7 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
           onPress={preventDefaultedAction(decorateAction)("onPress")}
           slice={data}
         />
-      </Context.Provider>
+      </SectionContext.Provider>
     </ScrollView>
   </Responsive>
 );

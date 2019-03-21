@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import Context from "@times-components/context";
+import { SectionContext } from "@times-components/context";
 import { Leaders } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
 import { TileM, TileAG } from "../../tiles";
@@ -49,7 +49,7 @@ const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => {
   );
 
   return (
-    <Context.Consumer>
+    <SectionContext.Consumer>
       {({ publicationName }) => (
         <View style={styles.container}>
           {renderHead(publicationName)}
@@ -61,7 +61,7 @@ const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => {
           />
         </View>
       )}
-    </Context.Consumer>
+    </SectionContext.Consumer>
   );
 };
 LeadersSlice.propTypes = {

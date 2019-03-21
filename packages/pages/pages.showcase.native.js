@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { ActivityIndicator, Text } from "react-native";
 import { sections } from "@times-components/storybook";
-import { Article, AuthorProfile, Section, Topic } from "./src/pages";
+import { EditionProvider } from "@times-components/provider";
+import { Article, AuthorProfile, Topic } from "./src/pages";
+import Section from "./src/section/section";
+import withNativeProvider from "./src/with-native-provider";
 
 export default {
   children: [
@@ -34,7 +38,24 @@ export default {
         );
         const sectionTitle = sections[select("Section", sections, "News")];
 
-        return <Section editionId={editionId} sectionTitle={sectionTitle} />;
+        return withNativeProvider(
+          <EditionProvider debounceTimeMs={0} id={editionId}>
+            {({ edition, error, isLoading }) => {
+              if (isLoading) {
+                return <ActivityIndicator size="large" />;
+              }
+              if (error) {
+                return <Text>{JSON.stringify(error)}</Text>;
+              }
+              const { publicationName: pubName } = edition;
+              return edition.sections
+                .filter(({ title }) => title === sectionTitle)
+                .map(sectionData => (
+                  <Section publicationName={pubName} section={sectionData} />
+                ));
+            }}
+          </EditionProvider>
+        );
       },
       name: "Section",
       type: "story"
