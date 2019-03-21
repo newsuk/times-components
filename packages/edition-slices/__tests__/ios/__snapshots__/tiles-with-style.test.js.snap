@@ -430,7 +430,7 @@ exports[`6. tile f 1`] = `
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <Text
         style={
@@ -916,7 +916,7 @@ exports[`12. tile m 1`] = `
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View
         style={
@@ -1008,7 +1008,7 @@ exports[`13. tile n 1`] = `
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View
         style={
@@ -1171,7 +1171,7 @@ exports[`15. tile p 1`] = `
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View
         style={
@@ -1486,6 +1486,7 @@ exports[`20. tile u 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
         "padding": 10,
       }
@@ -1495,7 +1496,7 @@ exports[`20. tile u 1`] = `
       style={
         Object {
           "paddingBottom": 5,
-          "width": "33.33%",
+          "width": "40%",
         }
       }
     >
@@ -1550,7 +1551,7 @@ exports[`20. tile u 1`] = `
     <View
       style={
         Object {
-          "width": "66.66%",
+          "width": "60%",
         }
       }
     >
@@ -1786,11 +1787,11 @@ exports[`23. tile x 1`] = `
             "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 25,
             "lineHeight": 25,
-            "paddingBottom": 10,
+            "paddingBottom": 5,
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <Text
         style={
@@ -1981,7 +1982,6 @@ exports[`26. tile aa 1`] = `
       style={
         Object {
           "paddingVertical": 5,
-          "width": "50%",
         }
       }
     >
@@ -2086,7 +2086,7 @@ exports[`27. tile ab 1`] = `
             "fontSize": 30,
             "fontWeight": "900",
             "lineHeight": 30,
-            "marginBottom": 10,
+            "marginBottom": 5,
           }
         }
       >
@@ -2272,7 +2272,7 @@ exports[`29. tile ag 1`] = `
           }
         }
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View
         style={

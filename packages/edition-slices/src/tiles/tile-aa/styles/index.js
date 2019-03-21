@@ -13,8 +13,7 @@ const styles = {
     paddingBottom: spacing(1)
   },
   summaryContainer: {
-    paddingVertical: spacing(1),
-    width: "50%"
+    paddingVertical: spacing(1)
   }
 };
 

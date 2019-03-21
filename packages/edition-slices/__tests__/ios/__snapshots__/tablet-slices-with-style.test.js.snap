@@ -178,7 +178,7 @@ exports[`3. lead one and one - medium 1`] = `
     <View
       style={
         Object {
-          "width": "70%",
+          "width": "80%",
         }
       }
     >
@@ -197,7 +197,7 @@ exports[`3. lead one and one - medium 1`] = `
     <View
       style={
         Object {
-          "width": "30%",
+          "width": "20%",
         }
       }
     >
@@ -235,7 +235,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 20,
+        "paddingHorizontal": 10,
       }
     }
   >
@@ -686,6 +686,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
+          "marginBottom": 0,
           "marginVertical": 10,
         }
       }
@@ -1201,7 +1202,7 @@ exports[`17. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "70%",
+          "width": "80%",
         }
       }
     >
@@ -1220,7 +1221,7 @@ exports[`17. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "30%",
+          "width": "20%",
         }
       }
     >
@@ -1258,7 +1259,7 @@ exports[`19. lead two no pic and two - wide 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 20,
+        "paddingHorizontal": 10,
       }
     }
   >
@@ -1709,6 +1710,7 @@ exports[`24. secondary one and columnist - wide 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
+          "marginBottom": 0,
           "marginVertical": 10,
         }
       }
@@ -2224,7 +2226,7 @@ exports[`31. lead one and one - huge 1`] = `
     <View
       style={
         Object {
-          "width": "70%",
+          "width": "80%",
         }
       }
     >
@@ -2243,7 +2245,7 @@ exports[`31. lead one and one - huge 1`] = `
     <View
       style={
         Object {
-          "width": "30%",
+          "width": "20%",
         }
       }
     >
@@ -2281,7 +2283,7 @@ exports[`33. lead two no pic and two - huge 1`] = `
     style={
       Object {
         "flexDirection": "row",
-        "paddingHorizontal": 20,
+        "paddingHorizontal": 10,
       }
     }
   >
@@ -2732,6 +2734,7 @@ exports[`38. secondary one and columnist - huge 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
+          "marginBottom": 0,
           "marginVertical": 10,
         }
       }

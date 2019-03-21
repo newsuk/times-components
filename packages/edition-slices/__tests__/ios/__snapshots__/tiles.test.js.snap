@@ -225,7 +225,7 @@ exports[`6. tile f 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <Text>
         <Text>
@@ -472,7 +472,7 @@ exports[`12. tile m 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View>
         <ArticleFlags />
@@ -509,7 +509,7 @@ exports[`13. tile n 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View>
         <ArticleFlags
@@ -592,7 +592,7 @@ exports[`15. tile p 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View>
         <ArticleFlags
@@ -897,7 +897,7 @@ exports[`23. tile x 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <Text>
         <Text>
@@ -1158,7 +1158,7 @@ exports[`29. tile ag 1`] = `
         accessibilityRole="heading"
         aria-level="4"
       >
-        The resignation of three Conservative MPs has shown up the divisions in their party that mirror those in Labour. A greater realignment may be needed
+        Three Conservative MPs resign
       </Text>
       <View>
         <ArticleFlags />

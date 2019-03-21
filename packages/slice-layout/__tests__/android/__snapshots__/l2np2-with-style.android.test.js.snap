@@ -52,7 +52,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
   style={
     Object {
       "flexDirection": "row",
-      "paddingHorizontal": 20,
+      "paddingHorizontal": 10,
     }
   }
 >
