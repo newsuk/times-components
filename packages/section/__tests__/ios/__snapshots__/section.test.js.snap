@@ -1,5 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`puzzle bar with more than one puzzle 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomWidth": 1,
+      "borderColor": "#DBDBDB",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 20,
+      }
+    }
+  >
+    3
+     recently opened puzzle
+    s
+  </Text>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 5,
+      }
+    }
+  >
+    <IconForwardArrow />
+  </View>
+</View>
+`;
+
+exports[`puzzle bar with no puzzles 1`] = `null`;
+
+exports[`puzzle bar with one puzzle 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomWidth": 1,
+      "borderColor": "#DBDBDB",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 20,
+      }
+    }
+  >
+    1
+     recently opened puzzle
+  </Text>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 5,
+      }
+    }
+  >
+    <IconForwardArrow />
+  </View>
+</View>
+`;
+
 exports[`section page 1`] = `
 <RCTScrollView>
   <View>

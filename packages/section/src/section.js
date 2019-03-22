@@ -6,6 +6,7 @@ import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
+import PuzzleBar from "./puzzle-bar";
 import Slice from "./slice";
 import styles from "./styles";
 import { splitPuzzlesBySlices, buildSliceData } from "./utils";
@@ -31,9 +32,11 @@ class Section extends Component {
   render() {
     const {
       onArticlePress,
+      onPuzzleBarPress,
       onPuzzlePress,
       publicationName,
       section: { name, slices },
+      recentlyOpenedPuzzleCount,
       onViewed,
       receiveChildList
     } = this.props;
@@ -57,6 +60,14 @@ class Section extends Component {
             ))
           }
           keyExtractor={item => item.elementId}
+          ListHeaderComponent={
+            isPuzzle ? (
+              <PuzzleBar
+                count={recentlyOpenedPuzzleCount}
+                onPress={onPuzzleBarPress}
+              />
+            ) : null
+          }
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={({ index, item: slice }) => (
             <Context.Provider value={{ publicationName }}>
@@ -80,18 +91,22 @@ class Section extends Component {
 
 Section.propTypes = {
   onArticlePress: PropTypes.func,
+  onPuzzleBarPress: PropTypes.func,
   onPuzzlePress: PropTypes.func,
   onViewed: PropTypes.func,
   publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
+  recentlyOpenedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}).isRequired
 };
 
 Section.defaultProps = {
   onArticlePress: () => {},
+  onPuzzleBarPress: () => {},
   onPuzzlePress: () => {},
   onViewed: () => {},
-  receiveChildList: () => {}
+  receiveChildList: () => {},
+  recentlyOpenedPuzzleCount: 0
 };
 
 export default withTrackingContext(withTrackScrollDepth(Section));
