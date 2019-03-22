@@ -1,5 +1,6 @@
 import React from "react";
 import { MockEdition } from "@times-components/fixture-generator";
+import { SectionContext } from "@times-components/context";
 import {
   addSerializers,
   compose,
@@ -62,19 +63,31 @@ export default () => {
 
   it("puzzle bar with no puzzles", () => {
     expect(
-      TestRenderer.create(<PuzzleBar count={0} onPress={() => {}} />).toJSON()
+      TestRenderer.create(
+        <SectionContext.Provider value={{ recentlyOpenedPuzzleCount: 0 }}>
+          <PuzzleBar onPress={() => {}} />
+        </SectionContext.Provider>
+      ).toJSON()
     ).toMatchSnapshot();
   });
 
   it("puzzle bar with one puzzle", () => {
     expect(
-      TestRenderer.create(<PuzzleBar count={1} onPress={() => {}} />).toJSON()
+      TestRenderer.create(
+        <SectionContext.Provider value={{ recentlyOpenedPuzzleCount: 1 }}>
+          <PuzzleBar onPress={() => {}} />
+        </SectionContext.Provider>
+      ).toJSON()
     ).toMatchSnapshot();
   });
 
   it("puzzle bar with more than one puzzle", () => {
     expect(
-      TestRenderer.create(<PuzzleBar count={3} onPress={() => {}} />).toJSON()
+      TestRenderer.create(
+        <SectionContext.Provider value={{ recentlyOpenedPuzzleCount: 3 }}>
+          <PuzzleBar onPress={() => {}} />
+        </SectionContext.Provider>
+      ).toJSON()
     ).toMatchSnapshot();
   });
 };
