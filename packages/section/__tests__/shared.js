@@ -60,6 +60,12 @@ export default () => {
     ).toMatchSnapshot();
   });
 
+  it("puzzle bar with no puzzles", () => {
+    expect(
+      TestRenderer.create(<PuzzleBar count={0} onPress={() => {}} />).toJSON()
+    ).toMatchSnapshot();
+  });
+
   it("puzzle bar with one puzzle", () => {
     expect(
       TestRenderer.create(<PuzzleBar count={1} onPress={() => {}} />).toJSON()

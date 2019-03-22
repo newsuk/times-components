@@ -38,6 +38,8 @@ exports[`puzzle bar with more than one puzzle 1`] = `
 </View>
 `;
 
+exports[`puzzle bar with no puzzles 1`] = `null`;
+
 exports[`puzzle bar with one puzzle 1`] = `
 <View
   style={
