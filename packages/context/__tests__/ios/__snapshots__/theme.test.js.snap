@@ -1,5 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`with default values 1`] = `"{\\"publicationName\\":\\"TIMES\\",\\"theme\\":{\\"imageCaptionAlignment\\":{},\\"scale\\":\\"medium\\"}}"`;
+exports[`article context with default values 1`] = `"{\\"theme\\":{\\"imageCaptionAlignment\\":{},\\"scale\\":\\"medium\\"}}"`;
 
-exports[`with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+
+exports[`section context with default values 1`] = `"{\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0}"`;
+
+exports[`section context with inline values 1`] = `"{\\"publicationName\\":\\"SUNDAYTIMES\\",\\"recentlyOpenedPuzzleCount\\":123}"`;
