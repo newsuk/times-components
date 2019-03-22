@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "5.5.44",
+  "version": "5.5.45",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -66,7 +66,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-summary": "3.10.0",
+    "@times-components/article-summary": "3.10.1",
     "@times-components/card": "4.4.46",
     "@times-components/context": "0.7.10",
     "@times-components/link": "3.2.30",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-comment",
-  "version": "0.16.5",
+  "version": "0.16.6",
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",
@@ -64,8 +64,8 @@
     "@times-components/article-error": "0.2.41",
     "@times-components/article-flag": "2.6.0",
     "@times-components/article-label": "2.3.41",
-    "@times-components/article-lead-asset": "0.5.11",
-    "@times-components/article-skeleton": "0.14.23",
+    "@times-components/article-lead-asset": "0.5.12",
+    "@times-components/article-skeleton": "0.14.24",
     "@times-components/caption": "2.3.31",
     "@times-components/context": "0.7.10",
     "@times-components/date-publication": "0.20.30",
@@ -73,7 +73,7 @@
     "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",
     "@times-components/utils": "4.7.4",
-    "@times-components/video-label": "2.2.43",
+    "@times-components/video-label": "2.2.44",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
