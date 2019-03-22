@@ -38,7 +38,12 @@ export default () => {
 
   it("section context with inline values", () => {
     const testInstance = TestRenderer.create(
-      <SectionContext.Provider value={{ publicationName: "SUNDAYTIMES", recentlyOpenedPuzzleCount: 123 }}>
+      <SectionContext.Provider
+        value={{
+          publicationName: "SUNDAYTIMES",
+          recentlyOpenedPuzzleCount: 123
+        }}
+      >
         <SectionContext.Consumer>
           {context => JSON.stringify(context)}
         </SectionContext.Consumer>
