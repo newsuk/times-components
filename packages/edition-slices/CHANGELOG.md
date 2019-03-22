@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.45.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.44.1...@times-components/edition-slices@0.45.0) (2019-03-22)
+
+
+### Features
+
+* Add overrides ([#1815](https://github.com/newsuk/times-components/issues/1815)) ([47f62fc](https://github.com/newsuk/times-components/commit/47f62fc))
+
+
+
+
+
 ## [0.44.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.44.0...@times-components/edition-slices@0.44.1) (2019-03-22)
 
 **Note:** Version bump only for package @times-components/edition-slices
