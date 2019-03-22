@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. icontwitter renders with different colours 1`] = `
+exports[`1. iconemail renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -22,7 +22,88 @@ exports[`1. icontwitter renders with different colours 1`] = `
 />
 `;
 
-exports[`2. iconvideo renders with different colours 1`] = `
+exports[`2. iconfacebook renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`3. iconforwardarrow renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={null}
+/>
+`;
+
+exports[`4. iconstar renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`5. icontwitter renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`6. iconvideo renders with different colours 1`] = `
 Array [
   <ARTShape
     fill={
@@ -65,7 +146,7 @@ Array [
 ]
 `;
 
-exports[`3. iconemail renders with different colours 1`] = `
+exports[`7. iconvideo360player renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -87,7 +168,7 @@ exports[`3. iconemail renders with different colours 1`] = `
 />
 `;
 
-exports[`4. iconstar renders with different colours 1`] = `
+exports[`8. thestlogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -109,73 +190,7 @@ exports[`4. iconstar renders with different colours 1`] = `
 />
 `;
 
-exports[`5. iconfacebook renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
-`;
-
-exports[`6. thestlogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
-`;
-
-exports[`7. thetimeslogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
-`;
-
-exports[`8. iconvideo360player renders with different colours 1`] = `
+exports[`9. thetimeslogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [

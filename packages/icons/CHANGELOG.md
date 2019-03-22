@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.6.7...@times-components/icons@2.7.0) (2019-03-22)
+
+
+### Features
+
+* Puzzle notification bar ([#1819](https://github.com/newsuk/times-components/issues/1819)) ([9aa836b](https://github.com/newsuk/times-components/commit/9aa836b))
+
+
+
+
+
 ## [2.6.7](https://github.com/newsuk/times-components/compare/@times-components/icons@2.6.6...@times-components/icons@2.6.7) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/icons

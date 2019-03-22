@@ -7,12 +7,15 @@ export default Component =>
         actionName: "Pressed",
         eventName: "onPress",
         getAttrs: ({
-          tile: { article: { headline, id, shortHeadline, url } = {} } = {
+          tile: {
+            headline: tileHeadline,
+            article: { headline, id, shortHeadline, url } = {}
+          } = {
             article: {}
           },
           tileName
         }) => ({
-          articleHeadline: shortHeadline || headline,
+          articleHeadline: tileHeadline || shortHeadline || headline,
           articleId: id,
           articleUrl: url,
           tileName

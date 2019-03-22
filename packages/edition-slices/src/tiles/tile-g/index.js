@@ -30,7 +30,7 @@ class TileG extends Component {
             aspectRatio={1}
             borderRadius={containerWidth * 0.15}
             style={styles.imageContainer}
-            uri={getCrop(tile.article.leadAsset, "crop11")}
+            uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop11")}
           />
           <TileSummary
             headlineStyle={styles.headline}

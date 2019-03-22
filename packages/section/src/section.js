@@ -5,8 +5,8 @@ import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
+import PuzzleBar from "./puzzle-bar";
 import Slice from "./slice";
-import PuzzleBar from "./dummy-puzzle-bar";
 import styles from "./styles";
 import { splitPuzzlesBySlices, buildSliceData } from "./utils";
 

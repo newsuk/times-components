@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -66,7 +66,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/fixture-generator": "0.21.0",
+    "@times-components/fixture-generator": "0.22.0",
     "@times-components/provider-queries": "1.14.1",
     "@times-components/schema": "0.3.4",
     "apollo-cache-inmemory": "1.3.11",

@@ -5,6 +5,10 @@ import Link from "@times-components/link";
 import TestRenderer from "react-test-renderer";
 import Section from "../src/section";
 
+jest.mock("@times-components/icons", () => ({
+  IconForwardArrow: "IconForwardArrow"
+}));
+
 class WithTrackingContext extends Component {
   getChildContext() {
     const { stream } = this.props;
