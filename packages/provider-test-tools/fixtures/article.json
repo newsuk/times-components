@@ -74,6 +74,17 @@
       ]
     },
     {
+      "name": "image",
+      "attributes": {
+        "display": "primary",
+        "caption": "Key stage: on the punishing Alpe d’Huez, Thomas pushes ahead of his teammate Chris Froome in this year’s pivotal stage 12 victory",
+        "credits": "PA",
+        "ratio": "1500:1000",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0"
+      },
+      "children": []
+    },
+    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -85,6 +96,17 @@
           "children": []
         }
       ]
+    },
+    {
+      "name": "image",
+      "attributes": {
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0"
+      },
+      "children": []
     },
     {
       "name": "paragraph",
@@ -536,6 +558,17 @@
       ]
     },
     {
+      "name": "image",
+      "attributes": {
+        "display": "primary",
+        "caption": "Key stage: on the punishing Alpe d’Huez, Thomas pushes ahead of his teammate Chris Froome in this year’s pivotal stage 12 victory",
+        "credits": "PA",
+        "ratio": "1500:1000",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0"
+      },
+      "children": []
+    },
+    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -547,6 +580,17 @@
           "children": []
         }
       ]
+    },
+    {
+      "name": "image",
+      "attributes": {
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0"
+      },
+      "children": []
     },
     {
       "name": "paragraph",
@@ -865,6 +909,7 @@
         }
       ]
     },
+
     {
       "name": "paragraph",
       "attributes": {},

@@ -17,8 +17,8 @@ const renderCaption = (display, caption, credits) => {
   );
 };
 
-const InlineImage = ({ imageOptions, captionOptions }) => {
-  const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
+const InlineImage = ({ imageOptions, captionOptions, onImagePress }) => {
+  const { display, highResSize, lowResSize, index, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
   const imgCaption = [renderCaption(display, caption, credits)];
@@ -36,7 +36,9 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
         aspectRatio={aspectRatio}
         caption={<Caption credits={credits} text={caption} />}
         highResSize={highResSize}
+        index={index}
         lowResSize={lowResSize}
+        onImagePress={onImagePress}
         uri={uri}
       />
     </View>,

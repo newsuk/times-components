@@ -10,6 +10,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
         text="Chris Reynolds Gordon at one of his party venues in London"
       />
     }
+    index={0}
     uri="https://crop169.io/"
   />
   <Text>

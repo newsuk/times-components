@@ -114,6 +114,24 @@ export default () => {
 
         expect(modal.props.visible).toBe(false);
       }
+    },
+    {
+      name: "image with onImagePress prop should not have Modal",
+      test: () => {
+        const onImagePress = () => {};
+        const propWithImagePress = { ...props, onImagePress };
+        const testInstance = TestRenderer.create(
+          <ModalImage {...propWithImagePress} />
+        );
+
+        try {
+          testInstance.root.findByType(Modal);
+        } catch (error) {
+          expect(error.toString()).toBe(
+            'Error: No instances found with node type: "Component"'
+          );
+        }
+      }
     }
   ];
 
