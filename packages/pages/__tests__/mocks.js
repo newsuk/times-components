@@ -25,6 +25,13 @@ jest.mock("react-native", () => {
     graphqlEndPont: "dummy-end-point",
     operatingSystemVersion: "123"
   };
+  rn.NativeModules.SectionEvents = {
+    getOpenedPuzzleCount: jest.fn(),
+    onArticlePress: () => {},
+    onPuzzleBarPress: () => {},
+    onPuzzlePress: () => {},
+    onSectionLoaded: () => {}
+  };
   rn.NativeModules.TopicEvents = {
     onArticlePress: () => {}
   };

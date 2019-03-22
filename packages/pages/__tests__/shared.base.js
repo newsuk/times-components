@@ -1,7 +1,7 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
-import { Article, Section } from "../src/pages";
+import { Article } from "../src/pages";
 import getAdTargetingConfig from "../src/article/ad-targeting-config";
 
 export default makeTest => {
