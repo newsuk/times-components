@@ -10,6 +10,7 @@ import { colours } from "@times-components/styleguide";
 
 const TileSummary = ({
   tile: {
+    headline: tileHeadline,
     article: {
       expirableFlags,
       hasVideo,
@@ -40,7 +41,7 @@ const TileSummary = ({
     flags={() => <ArticleFlags {...flagColour} flags={expirableFlags} />}
     headline={() => (
       <ArticleSummaryHeadline
-        headline={shortHeadline || headline}
+        headline={tileHeadline || shortHeadline || headline}
         style={headlineStyle}
       />
     )}

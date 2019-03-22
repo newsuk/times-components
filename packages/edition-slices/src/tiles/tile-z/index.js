@@ -16,7 +16,7 @@ const TileZ = ({ onPress, tile }) => (
       <TileSummary headlineStyle={styles.headline} tile={tile} />
       <TileImage
         aspectRatio={4 / 5}
-        uri={getCrop(tile.article.leadAsset, "crop45")}
+        uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop45")}
       />
     </View>
   </TileLink>

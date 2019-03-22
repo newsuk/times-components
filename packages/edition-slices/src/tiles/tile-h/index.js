@@ -17,13 +17,13 @@ const TileH = ({ onPress, tile }) => (
         byline={tile.article.byline}
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
-        summary={tile.article.summary125}
+        summary={tile.teaser125 || tile.article.summary125}
         tile={tile}
       />
       <View style={styles.imageContainer}>
         <TileImage
           aspectRatio={2 / 3}
-          uri={getCrop(tile.article.leadAsset, "crop23")}
+          uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop23")}
         />
       </View>
     </View>

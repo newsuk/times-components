@@ -16,14 +16,14 @@ const TileW = ({ onPress, tile }) => (
       <TileSummary
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
-        summary={tile.article.summary125}
+        summary={tile.teaser125 || tile.article.summary125}
         summaryStyle={styles.summary}
         tile={tile}
       />
       <TileImage
         aspectRatio={3 / 2}
         style={styles.imageContainer}
-        uri={getCrop(tile.article.leadAsset, "crop32")}
+        uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop32")}
       />
     </View>
   </TileLink>
