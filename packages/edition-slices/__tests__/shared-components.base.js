@@ -24,7 +24,7 @@ export default () => {
           ...tile,
           article: {
             ...tile.article,
-            shortHeadline: "This is shortheadlin"
+            shortHeadline: "This is shortheadline"
           },
           headline: ""
         };
