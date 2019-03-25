@@ -60,9 +60,6 @@ class ArticleInDepth extends Component {
               getImageCrop={getStandardTemplateCrop}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) => <CentredCaption {...caption} />}
-              renderModalCaption={({ caption }) => (
-                <CentredCaption {...caption} />
-              )}
               style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
               width={width}
             />

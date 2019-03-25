@@ -8,7 +8,7 @@ const renderCredits = (style, credits) => {
     return null;
   }
   return (
-    <Text style={[styles.text, styles.credits, style.text]}>
+    <Text style={[styles.text, styles.credits, style.text, style.credits]}>
       {credits.toUpperCase()}
     </Text>
   );
@@ -19,7 +19,7 @@ const renderText = (style, text) => {
     return null;
   }
 
-  return <Text style={[styles.text, style.text]}>{text}</Text>;
+  return <Text style={[styles.text, style.text, style.caption]}>{text}</Text>;
 };
 
 const Caption = ({ children, credits, style, text }) => (

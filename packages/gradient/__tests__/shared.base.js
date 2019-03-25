@@ -91,25 +91,6 @@ export default renderMethod => {
           expect.objectContaining({ height: 200, width: 300 })
         );
       }
-    },
-    {
-      name: "does not use onLayout when custom width and height passed",
-      test: () => {
-        const testRenderer = renderMethod(
-          <GradientBase
-            endColour="#FFFFFF"
-            height={200}
-            startColour="#000000"
-            width={300}
-          />
-        );
-        const testInstance = testRenderer.root;
-        const onLayoutViews = testInstance.findAll(
-          child => !!child.props.onLayout
-        );
-
-        expect(onLayoutViews).toHaveLength(0);
-      }
     }
   ];
 

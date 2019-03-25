@@ -10,7 +10,7 @@ class GradientBase extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dimensions: null
+      dimensions: { height: null, width: null }
     };
   }
 
@@ -31,11 +31,11 @@ class GradientBase extends Component {
     const { dimensions } = this.state;
     const { height, width } = this.props;
 
-    if (dimensions) {
-      return dimensions;
+    if (height || width) {
+      return { height, width };
     }
 
-    return { height, width };
+    return dimensions;
   }
 
   render() {
@@ -50,12 +50,14 @@ class GradientBase extends Component {
       .line(-width, 0)
       .line(0, -height);
 
-    const onLayoutProps = height && width ? {} : { onLayout: this.onLayout };
-
     return (
       <View
-        {...onLayoutProps}
-        style={[{ backgroundColor: startColour }, styles.container, style]}
+        onLayout={this.onLayout}
+        style={[
+          { backgroundColor: startColour, height, width },
+          styles.container,
+          style
+        ]}
       >
         <Surface height={height} style={styles.surface} width={width}>
           <Shape

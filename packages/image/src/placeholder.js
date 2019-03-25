@@ -7,34 +7,33 @@ import T from "./t";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-function Placeholder({ height, style, width }) {
-  const hasDimensions = width !== null && height !== null;
+function Placeholder({ dimensions, style }) {
+  if (!dimensions) {
+    return null;
+  }
+
+  const { height, width } = dimensions;
+
   return (
-    <Gradient
-      degrees={264}
-      height={height}
-      style={[style, !hasDimensions && { flex: 1 }]}
-      width={width}
-    >
-      {width !== null ? (
-        <View style={[styles.container, styles.placeholderContainer]}>
-          <T width={width} />
-        </View>
-      ) : null}
+    <Gradient degrees={264} height={height} style={style} width={width}>
+      <View style={[styles.container, styles.placeholderContainer]}>
+        <T width={width} />
+      </View>
     </Gradient>
   );
 }
 
 Placeholder.propTypes = {
-  height: PropTypes.number,
-  style: ViewPropTypesStyle,
-  width: PropTypes.number
+  dimensions: PropTypes.shape({
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired
+  }),
+  style: ViewPropTypesStyle
 };
 
 Placeholder.defaultProps = {
-  height: null,
-  style: null,
-  width: null
+  dimensions: null,
+  style: null
 };
 
 export default Placeholder;

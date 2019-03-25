@@ -55,7 +55,6 @@ class ArticlePage extends Component {
                 renderCaption={({ caption }) =>
                   isTablet && <Caption {...caption} />
                 }
-                renderModalCaption={({ caption }) => <Caption {...caption} />}
                 style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
                 width={Math.min(parentProps.width, tabletWidth)}
               />

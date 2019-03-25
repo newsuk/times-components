@@ -80,30 +80,6 @@ exports[`1. page error 1`] = `
   align-items: stretch;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  bottom: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: absolute;
-  right: 0px;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -119,7 +95,7 @@ exports[`1. page error 1`] = `
   position: relative;
 }
 
-.S3 {
+.S2 {
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
@@ -137,7 +113,7 @@ exports[`1. page error 1`] = `
   text-align: center;
 }
 
-.S4 {
+.S3 {
   border-top-width: 0px;
   border-bottom-width: 0px;
   color: rgba(105,105,105,1.00);
@@ -153,27 +129,14 @@ exports[`1. page error 1`] = `
 }
 
 .IS1 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
+  position: relative;
   padding-bottom: 110%;
 }
 
-.IS3 {
+.IS2 {
   align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -181,41 +144,38 @@ exports[`1. page error 1`] = `
 </style>
 
 <div
-  className="c0 S2"
+  className="c0 S1"
 >
   <div
-    className="c1 S2"
+    className="c1 S1"
   >
     <div
-      className="S2"
+      className="S1"
     >
       <div
-        className="IS2"
+        className="IS1"
       >
         <img
           className="c2"
-        />
-        <div
-          className="S1 IS1"
         />
       </div>
     </div>
   </div>
   <div
-    className="c3 S2"
+    className="c3 S1"
   >
     <div
-      className="S3"
+      className="S2"
     >
       Something's gone wrong
     </div>
     <div
-      className="S4"
+      className="S3"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS3"
+      className="IS2"
     />
   </div>
 </div>

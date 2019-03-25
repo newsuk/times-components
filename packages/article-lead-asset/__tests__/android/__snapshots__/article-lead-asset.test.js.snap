@@ -5,14 +5,10 @@ exports[`1. renders correctly with an image lead asset 1`] = `
   <ModalImage
     aspectRatio={1.7777777777777777}
     caption={
-      <React.Fragment>
-        <Text>
-          Chris Reynolds Gordon at one of his party venues in London
-        </Text>
-        <Text>
-          The credits
-        </Text>
-      </React.Fragment>
+      <Caption
+        credits="The credits"
+        text="Chris Reynolds Gordon at one of his party venues in London"
+      />
     }
     uri="https://crop169.io/"
   />
@@ -50,20 +46,4 @@ exports[`2. renders correctly with a video lead asset 1`] = `
 
 exports[`3. renders correctly when there is no lead asset 1`] = `null`;
 
-exports[`4. passes the caption rendered by rendermodalcaption to the modalimage 1`] = `
-<View>
-  <ModalImage
-    aspectRatio={1}
-    caption={
-      <Text>
-        Modal Caption
-      </Text>
-    }
-  />
-  <Text>
-    Caption
-  </Text>
-</View>
-`;
-
-exports[`5. renders correctly when there is no available crop 1`] = `null`;
+exports[`4. renders correctly when there is no available crop 1`] = `null`;

@@ -9,10 +9,10 @@ const T_SHAPE =
 
 const T = ({ width }) => (
   <Svg
-    height={width * SCALING_FACTOR}
+    height={Math.floor(width * SCALING_FACTOR)}
     version="1.1"
     viewBox="145 50 108 120"
-    width={width * SCALING_FACTOR}
+    width={Math.floor(width * SCALING_FACTOR)}
   >
     <G fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
       <Path d={T_SHAPE} fill={colours.functional.contrast} />

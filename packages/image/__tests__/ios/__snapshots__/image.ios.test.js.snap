@@ -7,14 +7,14 @@ exports[`1. default layout 1`] = `
   <Gradient
     degrees={264}
     height={350}
-    width={700}
+    width={525}
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={143}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={143}
       >
         <G
           fill="none"
@@ -51,10 +51,10 @@ exports[`2. default layout without uri 1`] = `
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={191}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={191}
       >
         <G
           fill="none"
@@ -87,10 +87,10 @@ exports[`3. prepend https schema 1`] = `
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={191}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={191}
       >
         <G
           fill="none"
@@ -127,10 +127,10 @@ exports[`4. handle onload event 1`] = `
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={191}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={191}
       >
         <G
           fill="none"
@@ -181,10 +181,10 @@ exports[`6. uses highressize if it exists 1`] = `
   >
     <View>
       <Svg
-        height={191.87817258883248}
+        height={191}
         version="1.1"
         viewBox="145 50 108 120"
-        width={191.87817258883248}
+        width={191}
       >
         <G
           fill="none"
@@ -214,11 +214,6 @@ exports[`8. image with borderradius 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
-    height={null}
-    width={null}
-  />
   <Image
     borderRadius={10}
     source={
@@ -234,11 +229,6 @@ exports[`9. uses lowressize image as placeholder if passed 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
-    height={null}
-    width={null}
-  />
   <Image
     source={
       Object {
@@ -267,10 +257,10 @@ exports[`11. handle layout change 1`] = `
   >
     <View>
       <Svg
-        height={164.46700507614213}
+        height={164}
         version="1.1"
         viewBox="145 50 108 120"
-        width={164.46700507614213}
+        width={164}
       >
         <G
           fill="none"

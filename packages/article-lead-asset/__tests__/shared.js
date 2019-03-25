@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -22,23 +21,6 @@ addSerializers(
 export default () =>
   iterator([
     ...shared(),
-    {
-      name:
-        "passes the caption rendered by renderModalCaption to the ModalImage",
-      test() {
-        const testRenderer = TestRenderer.create(
-          <ArticleLeadAsset
-            getImageCrop={() => ({ ratio: "1:1", uri: "http://image" })}
-            leadAsset={{}}
-            renderCaption={() => <Text>Caption</Text>}
-            renderModalCaption={() => <Text>Modal Caption</Text>}
-            width={600}
-          />
-        );
-
-        expect(testRenderer).toMatchSnapshot();
-      }
-    },
     {
       name: "renders correctly when there is no available crop",
       test() {

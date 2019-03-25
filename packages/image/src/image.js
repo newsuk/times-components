@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
+import { contain } from "intrinsic-scale";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -32,22 +33,31 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      height: null,
-      isLoaded: false,
-      width: null
+      dimensions: null,
+      isLoaded: false
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
   onImageLayout(evt) {
-    const { onLayout } = this.props;
-    const { height, width } = evt.nativeEvent.layout;
+    const { aspectRatio, onImageLayout, onLayout } = this.props;
+    const { layout } = evt.nativeEvent;
+    const { height, width } = contain(
+      layout.width,
+      layout.height,
+      layout.width,
+      layout.width / aspectRatio
+    );
 
-    this.setState({ height, width });
+    this.setState({ dimensions: { height, width } });
 
     if (onLayout) {
       onLayout(evt);
+    }
+
+    if (onImageLayout) {
+      onImageLayout({ height, width });
     }
   }
 
@@ -64,24 +74,24 @@ class TimesImage extends Component {
       style,
       uri
     } = this.props;
-    const { isLoaded, width, height } = this.state;
-    const renderedRes = highResSize || width;
+    const { isLoaded, dimensions } = this.state;
+    const renderedRes = highResSize || (dimensions ? dimensions.width : null);
     const srcUri = getUriAtRes(uri, renderedRes);
 
     return (
       <View
         aspectRatio={aspectRatio}
         onLayout={this.onImageLayout}
-        style={style}
+        style={[styles.imageContainer, style]}
       >
         {isLoaded ? null : (
           <Fragment>
-            <Placeholder height={height} width={width} />
+            <Placeholder dimensions={dimensions} />
             {lowResSize ? (
               <Image
                 borderRadius={borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
-                style={styles.imageBackground}
+                style={styles.image}
               />
             ) : null}
           </Fragment>
@@ -90,7 +100,7 @@ class TimesImage extends Component {
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
-          style={styles.imageBackground}
+          style={styles.image}
         />
       </View>
     );
@@ -100,7 +110,7 @@ class TimesImage extends Component {
 TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = {
   ...propTypes,
-  onLayout: PropTypes.func
+  onImageLayout: PropTypes.func
 };
 
 export default TimesImage;

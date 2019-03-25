@@ -67,9 +67,11 @@
     "@times-components/gestures": "3.3.31",
     "@times-components/gradient": "2.3.31",
     "@times-components/link": "3.2.30",
+    "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",
     "@times-components/svgs": "2.5.4",
     "@times-components/utils": "4.7.4",
+    "intrinsic-scale": "3.0.3",
     "lodash.memoize": "4.1.2",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"

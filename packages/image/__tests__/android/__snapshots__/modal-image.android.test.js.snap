@@ -24,56 +24,52 @@ exports[`1. modal image 1`] = `
               />
             </View>
           </View>
-          <View>
-            <View>
-              <View>
-                <View
-                  aspectRatio={1.5}
-                >
-                  <Gradient
-                    degrees={264}
-                    height={350}
-                    width={700}
+          <Gestures>
+            <View
+              aspectRatio={1.5}
+            >
+              <Gradient
+                degrees={264}
+                height={350}
+                width={525}
+              >
+                <View>
+                  <Svg
+                    height={143}
+                    version="1.1"
+                    viewBox="145 50 108 120"
+                    width={143}
                   >
-                    <View>
-                      <Svg
-                        height={191.87817258883248}
-                        version="1.1"
-                        viewBox="145 50 108 120"
-                        width={191.87817258883248}
-                      >
-                        <G
-                          fill="none"
-                          fillRule="evenodd"
-                          stroke="none"
-                          strokeWidth="1"
-                        >
-                          <Path
-                            d="6a6c07166e9c40e4f62e57af2b507822"
-                            fill="#FFFFFF"
-                          />
-                        </G>
-                      </Svg>
-                    </View>
-                  </Gradient>
-                  <Image
-                    source={
-                      Object {
-                        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                      }
-                    }
-                  />
-                  <Image
-                    source={
-                      Object {
-                        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                      }
-                    }
-                  />
+                    <G
+                      fill="none"
+                      fillRule="evenodd"
+                      stroke="none"
+                      strokeWidth="1"
+                    >
+                      <Path
+                        d="6a6c07166e9c40e4f62e57af2b507822"
+                        fill="#FFFFFF"
+                      />
+                    </G>
+                  </Svg>
                 </View>
-              </View>
+              </Gradient>
+              <Image
+                source={
+                  Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+                  }
+                }
+              />
+              <Image
+                source={
+                  Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+                  }
+                }
+              />
             </View>
-          </View>
+          </Gestures>
           <View>
             <Text>
               Caption
@@ -92,14 +88,14 @@ exports[`1. modal image 1`] = `
       <Gradient
         degrees={264}
         height={350}
-        width={700}
+        width={525}
       >
         <View>
           <Svg
-            height={191.87817258883248}
+            height={143}
             version="1.1"
             viewBox="145 50 108 120"
-            width={191.87817258883248}
+            width={143}
           >
             <G
               fill="none"
@@ -118,7 +114,7 @@ exports[`1. modal image 1`] = `
       <Image
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
           }
         }
       />
@@ -127,7 +123,7 @@ exports[`1. modal image 1`] = `
 </View>
 `;
 
-exports[`2. modal image with custom highressize 1`] = `
+exports[`2. modal image with no caption 1`] = `
 <View>
   <Modal
     hardwareAccelerated={false}
@@ -151,56 +147,103 @@ exports[`2. modal image with custom highressize 1`] = `
               />
             </View>
           </View>
+          <Gestures>
+            <View
+              aspectRatio={1.5}
+            >
+              <Image
+                source={null}
+              />
+            </View>
+          </Gestures>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. modal image with custom highressize 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    visible={false}
+  >
+    <View>
+      <View>
+        <View>
           <View>
-            <View>
-              <View>
-                <View
-                  aspectRatio={1.5}
-                >
-                  <Gradient
-                    degrees={264}
-                    height={350}
-                    width={700}
-                  >
-                    <View>
-                      <Svg
-                        height={191.87817258883248}
-                        version="1.1"
-                        viewBox="145 50 108 120"
-                        width={191.87817258883248}
-                      >
-                        <G
-                          fill="none"
-                          fillRule="evenodd"
-                          stroke="none"
-                          strokeWidth="1"
-                        >
-                          <Path
-                            d="6a6c07166e9c40e4f62e57af2b507822"
-                            fill="#FFFFFF"
-                          />
-                        </G>
-                      </Svg>
-                    </View>
-                  </Gradient>
-                  <Image
-                    source={
-                      Object {
-                        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                      }
-                    }
-                  />
-                  <Image
-                    source={
-                      Object {
-                        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                      }
-                    }
-                  />
-                </View>
-              </View>
+            <View
+              pointerEvents="box-only"
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../packages/image/assets/close-button.png",
+                  }
+                }
+              />
             </View>
           </View>
+          <Gestures>
+            <View
+              aspectRatio={1.5}
+            >
+              <Gradient
+                degrees={264}
+                height={350}
+                width={525}
+              >
+                <View>
+                  <Svg
+                    height={143}
+                    version="1.1"
+                    viewBox="145 50 108 120"
+                    width={143}
+                  >
+                    <G
+                      fill="none"
+                      fillRule="evenodd"
+                      stroke="none"
+                      strokeWidth="1"
+                    >
+                      <Path
+                        d="6a6c07166e9c40e4f62e57af2b507822"
+                        fill="#FFFFFF"
+                      />
+                    </G>
+                  </Svg>
+                </View>
+              </Gradient>
+              <Image
+                source={
+                  Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+                  }
+                }
+              />
+              <Image
+                source={
+                  Object {
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+                  }
+                }
+              />
+            </View>
+          </Gestures>
           <View>
             <Text>
               Caption
@@ -219,14 +262,14 @@ exports[`2. modal image with custom highressize 1`] = `
       <Gradient
         degrees={264}
         height={350}
-        width={700}
+        width={525}
       >
         <View>
           <Svg
-            height={191.87817258883248}
+            height={143}
             version="1.1"
             viewBox="145 50 108 120"
-            width={191.87817258883248}
+            width={143}
           >
             <G
               fill="none"

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import appendSize from "./utils";
+import styles from "./styles";
 import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {
@@ -11,12 +12,11 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      height: null,
+      dimensions: null,
       highResIsLoaded: false,
       highResIsVisible: false,
       imageIsLoaded: false,
-      lowResIsLoaded: !props.fadeImageIn,
-      width: null
+      lowResIsLoaded: !props.fadeImageIn
     };
 
     this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
@@ -29,7 +29,7 @@ class TimesImage extends Component {
     const { onLayout } = this.props;
     const { height, width } = evt.nativeEvent.layout;
 
-    this.setState({ height, width });
+    this.setState({ dimensions: { height, width } });
 
     if (onLayout) {
       onLayout(evt);
@@ -93,37 +93,18 @@ class TimesImage extends Component {
 
   render() {
     const { aspectRatio, highResSize, lowResSize, style, uri } = this.props;
-    const { height, imageIsLoaded, width } = this.state;
+    const { dimensions, imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
-
-    const styles = StyleSheet.create({
-      placeholder: {
-        bottom: 0,
-        left: 0,
-        position: "absolute",
-        right: 0,
-        top: 0,
-        zIndex: 0
-      },
-      wrapper: {
-        display: "table",
-        height: 0,
-        overflow: "hidden",
-        paddingBottom: `${100 / aspectRatio}%`
-      }
-    });
 
     return (
       <View onLayout={this.onImageLayout} style={style}>
-        <div style={StyleSheet.flatten(styles.wrapper)}>
+        <div
+          style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
+        >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
           {imageIsLoaded ? null : (
-            <Placeholder
-              height={height}
-              style={styles.placeholder}
-              width={width}
-            />
+            <Placeholder dimensions={dimensions} style={styles.placeholder} />
           )}
         </div>
       </View>

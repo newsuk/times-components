@@ -29,19 +29,10 @@ exports[`1. default image 1`] = `
 }
 
 .IS1 {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  flex: 1;
-}
-
-.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
+  position: relative;
   padding-bottom: 66.66666666666667%;
 }
 </style>
@@ -50,13 +41,10 @@ exports[`1. default image 1`] = `
   className="S1"
 >
   <div
-    className="IS2"
+    className="IS1"
   >
     <img
       className="c0"
-    />
-    <Gradient
-      className="IS1"
     />
   </div>
 </div>
@@ -91,19 +79,10 @@ exports[`2. default modal 1`] = `
 }
 
 .IS1 {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  flex: 1;
-}
-
-.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
+  position: relative;
   padding-bottom: 66.66666666666667%;
 }
 </style>
@@ -112,13 +91,10 @@ exports[`2. default modal 1`] = `
   className="S1"
 >
   <div
-    className="IS2"
+    className="IS1"
   >
     <img
       className="c0"
-    />
-    <Gradient
-      className="IS1"
     />
   </div>
 </div>
