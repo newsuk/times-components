@@ -119,7 +119,54 @@ exports[`1. modal image 1`] = `
 </View>
 `;
 
-exports[`2. modal image with custom highressize 1`] = `
+exports[`2. modal image with no caption 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    visible={false}
+  >
+    <View>
+      <RCTSafeAreaView>
+        <View>
+          <View>
+            <View>
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../packages/image/assets/close-button.png",
+                  }
+                }
+              />
+            </View>
+          </View>
+          <Gestures>
+            <View
+              aspectRatio={1.5}
+            >
+              <Image
+                source={null}
+              />
+            </View>
+          </Gestures>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+  </Modal>
+  <View>
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. modal image with custom highressize 1`] = `
 <View>
   <Modal
     hardwareAccelerated={false}

@@ -56,6 +56,16 @@ export default () => {
       }
     },
     {
+      name: "modal image with no caption",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} caption={null} />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "modal image with custom highResSize",
       test() {
         const testInstance = TestRenderer.create(

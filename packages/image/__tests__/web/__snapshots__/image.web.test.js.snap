@@ -17,6 +17,32 @@ exports[`1. default layout 1`] = `
       alt=""
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -38,6 +64,32 @@ exports[`2. default layout without uri 1`] = `
       alt=""
       src={null}
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -59,6 +111,32 @@ exports[`3. an invalid uri 1`] = `
       alt=""
       src="not-valid"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -80,6 +158,32 @@ exports[`4. no url in environment 1`] = `
       alt=""
       src="not-valid?resize=1400"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -101,6 +205,32 @@ exports[`5. with existing url params 1`] = `
       alt=""
       src="https://image.io?resize=1400"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -178,6 +308,32 @@ exports[`7. only a low res image 1`] = `
       alt=""
       src="https://image.io?resize=200"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -199,6 +355,32 @@ exports[`8. fade in the low res image 1`] = `
       alt=""
       src="https://image.io?resize=200"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
@@ -255,6 +437,32 @@ exports[`9. both high and low res sizes 1`] = `
       alt=""
       src="https://image.io?resize=200"
     />
+    <Gradient
+      degrees={264}
+      height={400}
+      width={800}
+    >
+      <div>
+        <Svg
+          height={219}
+          version="1.1"
+          viewBox="145 50 108 120"
+          width={219}
+        >
+          <G
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <Path
+              d="6a6c07166e9c40e4f62e57af2b507822"
+              fill="#FFFFFF"
+            />
+          </G>
+        </Svg>
+      </div>
+    </Gradient>
   </div>
 </div>
 `;
