@@ -82,7 +82,7 @@ export const captionStyles = {
   credits: {
     fontSize: 10,
     lineHeight: 20,
-    marginTop: 5
+    marginTop: spacing(1)
   },
   text: {
     color: colours.functional.white
