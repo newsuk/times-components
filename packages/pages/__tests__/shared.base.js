@@ -1,7 +1,7 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
-import { Article, Section } from "../src/pages";
+import { Article } from "../src/pages";
 import getAdTargetingConfig from "../src/article/ad-targeting-config";
 
 export default makeTest => {
@@ -14,12 +14,6 @@ export default makeTest => {
           sectionName="News"
         />
       )
-    ).toMatchSnapshot();
-  });
-
-  it("section page", () => {
-    expect(
-      makeTest(<Section editionId="test-edition-id" sectionTitle="News" />)
     ).toMatchSnapshot();
   });
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
+import { SectionContext } from "@times-components/context";
 import { TheSTLogo, TheTimesLogo } from "@times-components/icons";
 import {
   SecondaryOneAndFourSlice,
@@ -18,7 +18,7 @@ const SecondaryOneAndFour = ({
   const renderSlice = breakpoint => {
     const styles = styleFactory(breakpoint);
     return (
-      <Context.Consumer>
+      <SectionContext.Consumer>
         {({ publicationName }) => (
           <View style={styles.sliceWrapper}>
             <View style={styles.logoContainer}>
@@ -53,7 +53,7 @@ const SecondaryOneAndFour = ({
             />
           </View>
         )}
-      </Context.Consumer>
+      </SectionContext.Consumer>
     );
   };
 

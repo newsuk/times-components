@@ -1,10 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components/styleguide";
-import Context from "../src/context";
+import Context, { SectionContext } from "../src/context";
 
 export default () => {
-  it("with default values", () => {
+  it("article context with default values", () => {
     const testInstance = TestRenderer.create(
       <Context.Consumer>{context => JSON.stringify(context)}</Context.Consumer>
     );
@@ -12,7 +12,7 @@ export default () => {
     expect(testInstance).toMatchSnapshot();
   });
 
-  it("with inline values", () => {
+  it("article context with inline values", () => {
     const scale = scales.large;
     const sectionColour = "#FFFFFF";
     const testInstance = TestRenderer.create(
@@ -21,6 +21,33 @@ export default () => {
           {context => JSON.stringify(context)}
         </Context.Consumer>
       </Context.Provider>
+    );
+
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("section context with default values", () => {
+    const testInstance = TestRenderer.create(
+      <SectionContext.Consumer>
+        {context => JSON.stringify(context)}
+      </SectionContext.Consumer>
+    );
+
+    expect(testInstance).toMatchSnapshot();
+  });
+
+  it("section context with inline values", () => {
+    const testInstance = TestRenderer.create(
+      <SectionContext.Provider
+        value={{
+          publicationName: "SUNDAYTIMES",
+          recentlyOpenedPuzzleCount: 123
+        }}
+      >
+        <SectionContext.Consumer>
+          {context => JSON.stringify(context)}
+        </SectionContext.Consumer>
+      </SectionContext.Provider>
     );
 
     expect(testInstance).toMatchSnapshot();

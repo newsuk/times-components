@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
 import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
@@ -14,6 +13,7 @@ import { splitPuzzlesBySlices, buildSliceData } from "./utils";
 class Section extends Component {
   constructor(props) {
     super(props);
+    this.renderItem = this.renderItem.bind(this);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
@@ -29,14 +29,28 @@ class Section extends Component {
       .map(viewableItem => onViewed(viewableItem.item, slices));
   }
 
-  render() {
+  renderItem({ index, item: slice }) {
     const {
       onArticlePress,
-      onPuzzleBarPress,
       onPuzzlePress,
-      publicationName,
+      section: { name, slices }
+    } = this.props;
+    const isPuzzle = name === "PuzzleSection";
+
+    return (
+      <Slice
+        index={index}
+        length={slices.length}
+        onPress={isPuzzle ? onPuzzlePress : onArticlePress}
+        slice={slice}
+      />
+    );
+  }
+
+  render() {
+    const {
+      onPuzzleBarPress,
       section: { name, slices },
-      recentlyOpenedPuzzleCount,
       onViewed,
       receiveChildList
     } = this.props;
@@ -61,28 +75,10 @@ class Section extends Component {
           }
           keyExtractor={item => item.elementId}
           ListHeaderComponent={
-            isPuzzle ? (
-              <PuzzleBar
-                count={recentlyOpenedPuzzleCount}
-                onPress={onPuzzleBarPress}
-              />
-            ) : null
+            isPuzzle ? <PuzzleBar onPress={onPuzzleBarPress} /> : null
           }
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          renderItem={({ index, item: slice }) => (
-            <Context.Provider value={{ publicationName }}>
-              <Slice
-                index={index}
-                length={slices.length}
-                onPress={isPuzzle ? onPuzzlePress : onArticlePress}
-                slice={slice}
-              />
-            </Context.Provider>
-          )}
-          viewabilityConfig={{
-            viewAreaCoveragePercentThreshold: 10,
-            waitForInteraction: false
-          }}
+          renderItem={this.renderItem}
         />
       </Responsive>
     );
@@ -94,9 +90,7 @@ Section.propTypes = {
   onPuzzleBarPress: PropTypes.func,
   onPuzzlePress: PropTypes.func,
   onViewed: PropTypes.func,
-  publicationName: PropTypes.string.isRequired,
   receiveChildList: PropTypes.func,
-  recentlyOpenedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}).isRequired
 };
 
@@ -105,8 +99,7 @@ Section.defaultProps = {
   onPuzzleBarPress: () => {},
   onPuzzlePress: () => {},
   onViewed: () => {},
-  receiveChildList: () => {},
-  recentlyOpenedPuzzleCount: 0
+  receiveChildList: () => {}
 };
 
 export default withTrackingContext(withTrackScrollDepth(Section));

@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import { SectionContext } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import {
   mockCommentLeadAndCartoonSlice,
@@ -136,9 +136,9 @@ const testsWithPublictaion = publicationName =>
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Context.Provider value={{ publicationName }}>
+          <SectionContext.Provider value={{ publicationName }}>
             <Slice onPress={() => {}} slice={mock} />
-          </Context.Provider>
+          </SectionContext.Provider>
         </Responsive>
       );
 
