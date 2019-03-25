@@ -14,7 +14,7 @@ const styles = {
     width: "85%"
   },
   link: {
-    width: "33%"
+    flex: 1
   },
   puzzleContainer: {
     backgroundColor: colours.functional.border,
