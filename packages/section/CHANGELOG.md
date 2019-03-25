@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.7.0...@times-components/section@0.8.0) (2019-03-25)
+
+
+### Features
+
+* ios recent puzzles bridge ([#1821](https://github.com/newsuk/times-components/issues/1821)) ([704d51d](https://github.com/newsuk/times-components/commit/704d51d))
+
+
+
+
+
 # [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.6.0...@times-components/section@0.7.0) (2019-03-22)
 
 

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.17.7...@times-components/article-in-depth@1.0.0) (2019-03-25)
+
+
+### Features
+
+* modal images elements should never overlay the image & captions should always be left aligned.  ([#1804](https://github.com/newsuk/times-components/issues/1804)) ([5cc5c1b](https://github.com/newsuk/times-components/commit/5cc5c1b))
+
+
+### BREAKING CHANGES
+
+* remove renderModalCaption from article-lead-asset as it is now always left aligned
+
+* chore: remove renderModalCaption from the templates
+
+* chore: clean up image placeholder & tests
+
+* chore: floor T dimensions for perf
+
+* chore: simplify tree
+
+* chore: simplify styles
+
+* chore: safer-area-view tests
+
+* chore: tests & linting
+
+* chore: fix web placeholder
+
+* chore: web snapshots
+
+* chore: web snapshots
+
+* chore: PR fixes
+
+* chore: improve code coverage
+
+
+
+
+
 ## [0.17.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@0.17.6...@times-components/article-in-depth@0.17.7) (2019-03-22)
 
 **Note:** Version bump only for package @times-components/article-in-depth
