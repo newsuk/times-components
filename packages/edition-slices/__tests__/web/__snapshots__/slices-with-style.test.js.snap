@@ -112,7 +112,6 @@ exports[`1. daily universal register 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <h1
-      aria-label="Daily Universal Register"
       className="IS2 S1"
       role="heading"
     >
@@ -669,7 +668,6 @@ exports[`2. leaders 1`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >
@@ -839,7 +837,6 @@ exports[`2. leaders 2`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >
@@ -2346,7 +2343,6 @@ exports[`13. leaders 1`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >

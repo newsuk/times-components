@@ -23,11 +23,7 @@ const DailyRegisterLeadFour = ({
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text
-          accessibilityLabel={headline}
-          accessibilityRole="heading"
-          style={styles.title}
-        >
+        <Text accessibilityRole="heading" style={styles.title}>
           {headline}
         </Text>
         <TileS tile={briefing} />

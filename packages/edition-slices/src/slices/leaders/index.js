@@ -14,11 +14,7 @@ const renderHead = publicationName => (
   <View style={styles.mastheadContainer}>
     <MastHead publicationName={publicationName} />
     <View style={styles.headingContainer}>
-      <Text
-        accessibilityLabel={headline}
-        accessibilityRole="heading"
-        style={[styles.heading, styles.text]}
-      >
+      <Text accessibilityRole="heading" style={[styles.heading, styles.text]}>
         {headline}
       </Text>
     </View>

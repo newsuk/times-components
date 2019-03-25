@@ -727,7 +727,7 @@ exports[`18. tile s 1`] = `
 <View>
   <View>
     <Text
-      accessibilityLabel="Nature notes"
+      accessibilityLabel="Nature notes."
       accessibilityRole="heading"
     >
       Nature notes

@@ -31,7 +31,6 @@ exports[`2. daily universal register - medium 1`] = `
       }
     />
     <Text
-      accessibilityLabel="Daily Universal Register"
       accessibilityRole="heading"
     >
       Daily Universal Register
@@ -131,7 +130,6 @@ exports[`6. leaders slice - medium 1`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles
@@ -463,7 +461,6 @@ exports[`16. daily universal register - wide 1`] = `
       }
     />
     <Text
-      accessibilityLabel="Daily Universal Register"
       accessibilityRole="heading"
     >
       Daily Universal Register
@@ -563,7 +560,6 @@ exports[`20. leaders slice - wide 1`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles
@@ -895,7 +891,6 @@ exports[`30. daily universal register - huge 1`] = `
       }
     />
     <Text
-      accessibilityLabel="Daily Universal Register"
       accessibilityRole="heading"
     >
       Daily Universal Register
@@ -995,7 +990,6 @@ exports[`34. leaders slice - huge 1`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles

@@ -8,7 +8,6 @@ exports[`1. daily universal register 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <h1
-      aria-label="Daily Universal Register"
       role="heading"
     >
       Daily Universal Register
@@ -151,7 +150,6 @@ exports[`2. leaders 1`] = `
     />
     <div>
       <h1
-        aria-label="Leading Articles"
         role="heading"
       >
         Leading Articles
@@ -191,7 +189,6 @@ exports[`2. leaders 2`] = `
     />
     <div>
       <h1
-        aria-label="Leading Articles"
         role="heading"
       >
         Leading Articles
@@ -536,7 +533,6 @@ exports[`13. leaders 1`] = `
     />
     <div>
       <h1
-        aria-label="Leading Articles"
         role="heading"
       >
         Leading Articles

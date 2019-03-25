@@ -733,7 +733,7 @@ exports[`18. tile s 1`] = `
 <div>
   <div>
     <h1
-      aria-label="Nature notes"
+      aria-label="Nature notes."
       role="heading"
     >
       Nature notes

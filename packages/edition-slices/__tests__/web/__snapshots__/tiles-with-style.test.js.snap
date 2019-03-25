@@ -1943,7 +1943,7 @@ exports[`18. tile s 1`] = `
     className="IS2 S2"
   >
     <h1
-      aria-label="Nature notes"
+      aria-label="Nature notes."
       className="IS1 S1"
       role="heading"
     >

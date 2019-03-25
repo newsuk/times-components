@@ -12,7 +12,6 @@ exports[`1. daily universal register 1`] = `
     }
   />
   <Text
-    accessibilityLabel="Daily Universal Register"
     accessibilityRole="heading"
   >
     Daily Universal Register
@@ -141,7 +140,6 @@ exports[`2. leaders 1`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles
@@ -178,7 +176,6 @@ exports[`2. leaders 2`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles
@@ -453,7 +450,6 @@ exports[`13. leaders 1`] = `
     />
     <View>
       <Text
-        accessibilityLabel="Leading Articles"
         accessibilityRole="heading"
       >
         Leading Articles

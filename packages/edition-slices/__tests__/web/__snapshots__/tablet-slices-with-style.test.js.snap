@@ -192,7 +192,6 @@ exports[`2. daily universal register - medium 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <h1
-      aria-label="Daily Universal Register"
       className="IS2 S1"
       role="heading"
     >
@@ -555,7 +554,6 @@ exports[`6. leaders slice - medium 1`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >
@@ -1820,7 +1818,6 @@ exports[`16. daily universal register - wide 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <h1
-      aria-label="Daily Universal Register"
       className="IS2 S1"
       role="heading"
     >
@@ -2183,7 +2180,6 @@ exports[`20. leaders slice - wide 1`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >
@@ -3448,7 +3444,6 @@ exports[`30. daily universal register - huge 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <h1
-      aria-label="Daily Universal Register"
       className="IS2 S1"
       role="heading"
     >
@@ -3811,7 +3806,6 @@ exports[`34. leaders slice - huge 1`] = `
       className="IS3 S2"
     >
       <h1
-        aria-label="Leading Articles"
         className="IS2 S1"
         role="heading"
       >

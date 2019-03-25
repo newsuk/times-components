@@ -17,7 +17,7 @@ const TileS = ({ tile }) => (
   <View style={styles.container}>
     <View style={styles.titleWrapper}>
       <Text
-        accessibilityLabel={`${tile.title}`}
+        accessibilityLabel={`${tile.title}.`}
         accessibilityRole="heading"
         style={styles.title}
       >
