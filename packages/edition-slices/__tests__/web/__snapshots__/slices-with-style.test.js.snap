@@ -157,6 +157,7 @@ exports[`1. secondary one and four 1`] = `
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -253,11 +254,11 @@ exports[`1. secondary one and four 1`] = `
     className="IS11 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS1"
     >
       <TheSTLogo
         height={40}
-        width={40}
+        width={60}
       />
     </div>
     <div
@@ -344,6 +345,7 @@ exports[`1. secondary one and four 2`] = `
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -440,11 +442,11 @@ exports[`1. secondary one and four 2`] = `
     className="IS11 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS1"
     >
       <TheTimesLogo
         height={40}
-        width={40}
+        width={42}
       />
     </div>
     <div
@@ -1465,6 +1467,7 @@ exports[`9. secondary one and four 1`] = `
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -1561,11 +1564,11 @@ exports[`9. secondary one and four 1`] = `
     className="IS11 S1"
   >
     <div
-      className="IS1 S1"
+      className="IS1"
     >
       <TheTimesLogo
         height={40}
-        width={40}
+        width={42}
       />
     </div>
     <div

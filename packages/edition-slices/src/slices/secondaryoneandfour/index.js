@@ -23,9 +23,9 @@ const SecondaryOneAndFour = ({
           <View style={styles.sliceWrapper}>
             <View style={styles.logoContainer}>
               {publicationName === "TIMES" ? (
-                <TheTimesLogo height={40} width={40} />
+                <TheTimesLogo height={40} width={42} />
               ) : (
-                <TheSTLogo height={40} width={40} />
+                <TheSTLogo height={40} width={60} />
               )}
             </View>
             <ItemRowSeparator style={styles.separator} />
