@@ -332,7 +332,9 @@ exports[`7. an article with no author 1`] = `
         />
       </div>
       <div>
-        <div>
+        <div
+          aria-label="Some Label."
+        >
           SOME LABEL
         </div>
       </div>

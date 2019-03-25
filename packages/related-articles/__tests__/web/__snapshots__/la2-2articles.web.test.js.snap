@@ -39,13 +39,16 @@ exports[`1. one lead and one support related article 1`] = `
                     />
                   </div>
                   <h3
+                    aria-label="First Short Headline."
                     aria-level="3"
                     role="heading"
                   >
                     First Short Headline
                   </h3>
                   <div>
-                    <div>
+                    <div
+                      tabIndex="0"
+                    >
                       <span>
                         
                         Summary 125
@@ -98,6 +101,7 @@ exports[`1. one lead and one support related article 1`] = `
                       />
                     </div>
                     <h3
+                      aria-label="Second Short Headline."
                       aria-level="3"
                       role="heading"
                     >

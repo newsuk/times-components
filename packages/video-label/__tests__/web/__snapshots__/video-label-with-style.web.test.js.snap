@@ -91,6 +91,7 @@ exports[`1. video label with a title 1`] = `
       />
     </div>
     <div
+      aria-label="SWIMMING."
       className="IS2 S2"
     >
       SWIMMING
@@ -190,6 +191,7 @@ exports[`2. video label without a title shows video 1`] = `
       />
     </div>
     <div
+      aria-label="VIDEO."
       className="IS2 S2"
     >
       VIDEO
@@ -289,6 +291,7 @@ exports[`3. video label with the black default colour 1`] = `
       />
     </div>
     <div
+      aria-label="VIDEO."
       className="IS2 S2"
     >
       VIDEO

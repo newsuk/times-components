@@ -44,20 +44,25 @@ exports[`1. no short headline 1`] = `
                     </span>
                   </div>
                   <h3
+                    aria-label="Test Headline."
                     aria-level="3"
                     role="heading"
                   >
                     Test Headline
                   </h3>
                   <div>
-                    <div>
+                    <div
+                      tabIndex="0"
+                    >
                       <span>
                         
                         Summary 125
                         ...
                       </span>
                     </div>
-                    <div>
+                    <div
+                      tabIndex="0"
+                    >
                       <span>
                         
                         The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias

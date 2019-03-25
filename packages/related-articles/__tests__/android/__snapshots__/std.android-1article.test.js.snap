@@ -39,6 +39,7 @@ exports[`1. a single related article 1`] = `
                   />
                 </View>
                 <Text
+                  accessibilityLabel="Test Short Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >

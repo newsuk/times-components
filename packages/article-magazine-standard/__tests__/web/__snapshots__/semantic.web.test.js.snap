@@ -138,6 +138,7 @@ exports[`1. a full article 1`] = `
       />
       RA LABEL
       <h3
+        aria-label="Headline."
         aria-level="3"
         role="heading"
       >

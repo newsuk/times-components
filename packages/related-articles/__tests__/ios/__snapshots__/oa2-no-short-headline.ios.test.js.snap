@@ -53,6 +53,7 @@ exports[`1. no short headline 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  accessibilityLabel="Test Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >

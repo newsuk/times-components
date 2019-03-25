@@ -38,6 +38,7 @@ exports[`1. no short headline 1`] = `
                   />
                 </View>
                 <Text
+                  accessibilityLabel="Test Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >

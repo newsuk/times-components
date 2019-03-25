@@ -39,6 +39,7 @@ exports[`1. has video 1`] = `
                   />
                 </View>
                 <Text
+                  accessibilityLabel="Test Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >

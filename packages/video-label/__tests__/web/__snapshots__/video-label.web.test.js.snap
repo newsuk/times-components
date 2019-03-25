@@ -12,7 +12,9 @@ exports[`1. video label with a title 1`] = `
         height={9}
       />
     </div>
-    <div>
+    <div
+      aria-label="SWIMMING."
+    >
       SWIMMING
     </div>
   </div>
@@ -31,7 +33,9 @@ exports[`2. video label without a title shows video 1`] = `
         height={9}
       />
     </div>
-    <div>
+    <div
+      aria-label="VIDEO."
+    >
       VIDEO
     </div>
   </div>
@@ -50,7 +54,9 @@ exports[`3. video label with null title shows video 1`] = `
         height={9}
       />
     </div>
-    <div>
+    <div
+      aria-label="VIDEO."
+    >
       VIDEO
     </div>
   </div>
@@ -69,7 +75,9 @@ exports[`4. video label with the black default colour 1`] = `
         height={9}
       />
     </div>
-    <div>
+    <div
+      aria-label="VIDEO."
+    >
       VIDEO
     </div>
   </div>

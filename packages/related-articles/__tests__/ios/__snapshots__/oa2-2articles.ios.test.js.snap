@@ -53,6 +53,7 @@ exports[`1. one opinion and one support related article 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  accessibilityLabel="First Short Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >
@@ -103,6 +104,7 @@ exports[`1. one opinion and one support related article 1`] = `
                   />
                 </View>
                 <Text
+                  accessibilityLabel="Second Short Headline."
                   accessibilityRole="heading"
                   aria-level="3"
                 >

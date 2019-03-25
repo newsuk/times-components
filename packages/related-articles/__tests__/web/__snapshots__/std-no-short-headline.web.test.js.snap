@@ -40,13 +40,16 @@ exports[`1. no short headline 1`] = `
                     />
                   </div>
                   <h3
+                    aria-label="Test Headline."
                     aria-level="3"
                     role="heading"
                   >
                     Test Headline
                   </h3>
                   <div>
-                    <div>
+                    <div
+                      tabIndex="0"
+                    >
                       <span>
                         
                         Summary 125
