@@ -459,7 +459,9 @@ exports[`11. tile l 1`] = `
 `;
 
 exports[`12. tile m 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <div>
     <div>
       <h3
@@ -1145,7 +1147,9 @@ exports[`28. tile ae 1`] = `
 `;
 
 exports[`29. tile ag 1`] = `
-<Link>
+<Link
+  url="/article/123"
+>
   <div>
     <div>
       <h3
