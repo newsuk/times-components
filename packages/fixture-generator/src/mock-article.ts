@@ -30,6 +30,7 @@ class MockArticle {
   constructor() {
     this.article = {
       leadAsset: new MockImage().get(),
+      listingAsset: new MockImage().get(),
       hasVideo: false,
       commentsEnabled: false,
       isBookmarked: false,
