@@ -280,6 +280,7 @@ exports[`2. leaders 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }
@@ -361,6 +362,7 @@ exports[`2. leaders 2`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }
@@ -947,6 +949,7 @@ exports[`13. leaders 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }

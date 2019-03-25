@@ -643,6 +643,7 @@ exports[`2. leaders 1`] = `
 }
 
 .IS12 {
+  background-color: rgba(240,240,240,1.00);
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -810,6 +811,7 @@ exports[`2. leaders 2`] = `
 }
 
 .IS12 {
+  background-color: rgba(240,240,240,1.00);
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -2313,6 +2315,7 @@ exports[`13. leaders 1`] = `
 }
 
 .IS12 {
+  background-color: rgba(240,240,240,1.00);
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
