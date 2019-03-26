@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.46.0...@times-components/edition-slices@0.46.1) (2019-03-26)
+
+
+### Bug Fixes
+
+* puzzle tiles widths aligned to breakpoints ([#1825](https://github.com/newsuk/times-components/issues/1825)) ([864ad41](https://github.com/newsuk/times-components/commit/864ad41))
+
+
+
+
+
 # [0.46.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.45.0...@times-components/edition-slices@0.46.0) (2019-03-25)
 
 
