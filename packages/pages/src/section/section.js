@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AppState, NativeModules } from "react-native";
+import { AppState, DeviceEventEmitter, NativeModules } from "react-native";
 import PropTypes from "prop-types";
 import { SectionContext } from "@times-components/context";
 import Section from "@times-components/section";
@@ -7,9 +7,11 @@ import trackSection from "./track-section";
 
 const {
   getOpenedPuzzleCount,
+  getSavedArticles,
   onArticlePress,
   onPuzzleBarPress = () => {},
-  onPuzzlePress
+  onPuzzlePress,
+  onSaveStarPress
 } = NativeModules.SectionEvents || {
   onArticlePress: () => {},
   onPuzzleBarPress: () => {},
@@ -20,27 +22,30 @@ class SectionPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0
+      recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
+      savedArticles: null
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
   }
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
-    this.updatePuzzleCount();
+    DeviceEventEmitter.addListener("sectionDataUpdated", this.syncAppData);
+    this.syncAppData();
   }
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
+    DeviceEventEmitter.removeAllListeners("sectionDataUpdated");
   }
 
   onAppStateChange(nextAppState) {
     if (nextAppState === "active") {
-      this.updatePuzzleCount();
+      this.syncAppData();
     }
   }
 
-  updatePuzzleCount() {
+  syncAppData() {
     const {
       section: { name }
     } = this.props;
@@ -49,14 +54,27 @@ class SectionPage extends Component {
         this.setState({ recentlyOpenedPuzzleCount: count });
       });
     }
+
+    if (getSavedArticles) {
+      getSavedArticles().then(articleIds => {
+        this.setState({
+          savedArticles: articleIds.map(id => ({ [id]: true }))
+        });
+      });
+    }
   }
 
   render() {
     const { publicationName, section } = this.props;
-    const { recentlyOpenedPuzzleCount } = this.state;
+    const { recentlyOpenedPuzzleCount, savedArticles } = this.state;
     return (
       <SectionContext.Provider
-        value={{ publicationName, recentlyOpenedPuzzleCount }}
+        value={{
+          onSaveStarPress,
+          publicationName,
+          recentlyOpenedPuzzleCount,
+          savedArticles
+        }}
       >
         <Section
           analyticsStream={trackSection}
