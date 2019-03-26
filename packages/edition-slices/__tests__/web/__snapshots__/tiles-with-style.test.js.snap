@@ -1287,7 +1287,9 @@ exports[`12. tile m 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="S4"
   >
@@ -3179,7 +3181,9 @@ exports[`29. tile ag 1`] = `
 }
 </style>
 
-<Link>
+<Link
+  url="/article/123"
+>
   <div
     className="IS3 S4"
   >

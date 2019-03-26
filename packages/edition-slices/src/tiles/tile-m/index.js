@@ -7,9 +7,9 @@ import styles from "./styles";
 const TileM = ({ onPress, tile }) => {
   const {
     strapline,
-    article: { shortHeadline }
+    article: { id, shortHeadline, url }
   } = tile;
-  const tileWithoutLabelAndFlags = { article: { shortHeadline } };
+  const tileWithoutLabelAndFlags = { article: { id, shortHeadline, url } };
 
   return (
     <TileLink onPress={onPress} tile={tileWithoutLabelAndFlags}>
