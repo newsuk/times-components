@@ -2,7 +2,6 @@
 
 exports[`accessible button 1`] = `
 <TouchableHighlight
-  accessibilityComponentType="button"
   accessibilityLabel="Test button"
   accessibilityRole="button"
 >

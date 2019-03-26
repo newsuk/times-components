@@ -11,7 +11,6 @@ const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
   const lineHeightStyle = lineHeight ? { lineHeight } : null;
   return (
     <TouchableHighlight
-      accessibilityComponentType="button"
       accessibilityLabel={transformedTitle}
       accessibilityRole="button"
       activeOpacity={1}

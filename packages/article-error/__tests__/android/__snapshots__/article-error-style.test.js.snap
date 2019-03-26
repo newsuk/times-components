@@ -62,7 +62,6 @@ exports[`renders correctly with style 1`] = `
         </Text>
       </View>
       <View
-        accessibilityComponentType="button"
         accessibilityLabel="Retry"
         style={
           Object {

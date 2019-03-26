@@ -6,9 +6,7 @@ exports[`1. group of topics 1`] = `
     <View>
       <View>
         <Text
-          accessibilityComponentType="button"
           accessibilityRole="button"
-          accessibilityTraits="button"
         >
           Football
         </Text>
@@ -19,9 +17,7 @@ exports[`1. group of topics 1`] = `
     <View>
       <View>
         <Text
-          accessibilityComponentType="button"
           accessibilityRole="button"
-          accessibilityTraits="button"
         >
           Manchester United FC
         </Text>
@@ -32,9 +28,7 @@ exports[`1. group of topics 1`] = `
     <View>
       <View>
         <Text
-          accessibilityComponentType="button"
           accessibilityRole="button"
-          accessibilityTraits="button"
         >
           Chelsea FC
         </Text>
@@ -45,9 +39,7 @@ exports[`1. group of topics 1`] = `
     <View>
       <View>
         <Text
-          accessibilityComponentType="button"
           accessibilityRole="button"
-          accessibilityTraits="button"
         >
           Arsenal
         </Text>
@@ -58,9 +50,7 @@ exports[`1. group of topics 1`] = `
     <View>
       <View>
         <Text
-          accessibilityComponentType="button"
           accessibilityRole="button"
-          accessibilityTraits="button"
         >
           Rugby Union
         </Text>
