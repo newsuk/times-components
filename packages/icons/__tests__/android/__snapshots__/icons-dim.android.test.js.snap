@@ -81,7 +81,7 @@ exports[`8. thestlogo sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 50,
+      "height": 34.48275862068965,
       "width": 50,
     }
   }

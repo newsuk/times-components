@@ -434,7 +434,7 @@ exports[`8. thestlogo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 20,
+      "height": 13.793103448275863,
       "width": 20,
     }
   }
@@ -442,17 +442,17 @@ exports[`8. thestlogo renders 1`] = `
   <ARTGroup
     transform={
       Array [
-        0.21052631578947367,
+        0.6896551724137931,
         0,
         0,
-        0.21052631578947367,
+        0.6896551724137931,
         0,
         0,
       ]
     }
   >
     <ARTShape
-      d="4ac8c91d91e5d81cca0a152cd054a1ad"
+      d="1eb07cf37395652eb77ce12e07d4c54c"
       fill={
         Array [
           0,
@@ -494,17 +494,17 @@ exports[`9. thetimeslogo renders 1`] = `
   <ARTGroup
     transform={
       Array [
-        0.21052631578947367,
+        1,
         0,
         0,
-        0.21052631578947367,
+        1,
         0,
         0,
       ]
     }
   >
     <ARTShape
-      d="4ac8c91d91e5d81cca0a152cd054a1ad"
+      d="f87f0407d885886d4487da38b34054e1"
       fill={
         Array [
           0,
