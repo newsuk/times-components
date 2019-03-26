@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.7.0...@times-components/icons@2.8.0) (2019-03-26)
+
+
+### Features
+
+* Use T and ST svgs for Supplement Secondary one and four slice ([#1824](https://github.com/newsuk/times-components/issues/1824)) ([a126a9c](https://github.com/newsuk/times-components/commit/a126a9c))
+
+
+
+
+
 # [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.6.7...@times-components/icons@2.7.0) (2019-03-22)
 
 

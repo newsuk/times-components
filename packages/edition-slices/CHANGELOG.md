@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.46.1...@times-components/edition-slices@0.47.0) (2019-03-26)
+
+
+### Bug Fixes
+
+* add grey background to the leaders slice ([#1822](https://github.com/newsuk/times-components/issues/1822)) ([1e68701](https://github.com/newsuk/times-components/commit/1e68701))
+
+
+### Features
+
+* Use T and ST svgs for Supplement Secondary one and four slice ([#1824](https://github.com/newsuk/times-components/issues/1824)) ([a126a9c](https://github.com/newsuk/times-components/commit/a126a9c))
+
+
+
+
+
 ## [0.46.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.46.0...@times-components/edition-slices@0.46.1) (2019-03-26)
 
 
