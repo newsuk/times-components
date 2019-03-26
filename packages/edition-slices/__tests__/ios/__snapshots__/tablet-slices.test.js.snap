@@ -158,7 +158,7 @@ exports[`7. secondary one and four - medium 1`] = `
     <View>
       <TheTimesLogo
         height={40}
-        width={40}
+        width={42}
       />
     </View>
     <View />
@@ -580,7 +580,7 @@ exports[`21. secondary one and four - wide 1`] = `
     <View>
       <TheTimesLogo
         height={40}
-        width={40}
+        width={42}
       />
     </View>
     <View />
@@ -1002,7 +1002,7 @@ exports[`35. secondary one and four - huge 1`] = `
     <View>
       <TheTimesLogo
         height={40}
-        width={40}
+        width={42}
       />
     </View>
     <View />

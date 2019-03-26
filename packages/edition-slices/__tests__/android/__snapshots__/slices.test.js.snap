@@ -44,7 +44,7 @@ exports[`1. secondary one and four 1`] = `
   <View>
     <TheSTLogo
       height={40}
-      width={40}
+      width={60}
     />
   </View>
   <View />
@@ -82,7 +82,7 @@ exports[`1. secondary one and four 2`] = `
   <View>
     <TheTimesLogo
       height={40}
-      width={40}
+      width={42}
     />
   </View>
   <View />
@@ -298,7 +298,7 @@ exports[`9. secondary one and four 1`] = `
   <View>
     <TheTimesLogo
       height={40}
-      width={40}
+      width={42}
     />
   </View>
   <View />

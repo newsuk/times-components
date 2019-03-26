@@ -9,7 +9,7 @@ const smallBreakpointStyles = {
     backgroundColor: colours.functional.darkSupplement,
     flexDirection: "row",
     margin: spacing(2),
-    marginBottom: 0
+    marginBottom: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.tertiary
