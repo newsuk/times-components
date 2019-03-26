@@ -108,7 +108,7 @@ exports[`1. secondary one and four 1`] = `
         "backgroundColor": "#272D34",
         "flexDirection": "row",
         "margin": 10,
-        "marginBottom": 0,
+        "marginBottom": 10,
       }
     }
   >
@@ -198,7 +198,7 @@ exports[`1. secondary one and four 2`] = `
         "backgroundColor": "#272D34",
         "flexDirection": "row",
         "margin": 10,
-        "marginBottom": 0,
+        "marginBottom": 10,
       }
     }
   >
@@ -648,7 +648,7 @@ exports[`9. secondary one and four 1`] = `
         "backgroundColor": "#272D34",
         "flexDirection": "row",
         "margin": 10,
-        "marginBottom": 0,
+        "marginBottom": 10,
       }
     }
   >
