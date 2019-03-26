@@ -8,7 +8,7 @@ const Link = ({ children, linkStyle, onPress }) => (
     onPress={onPress}
     useForeground={TouchableNativeFeedback.canUseNativeForeground()}
   >
-    <View pointerEvents="box-only" style={linkStyle}>
+    <View style={linkStyle}>
       {children}
     </View>
   </TouchableNativeFeedback>
