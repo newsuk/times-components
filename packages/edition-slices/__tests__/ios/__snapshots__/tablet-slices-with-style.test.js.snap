@@ -297,6 +297,7 @@ exports[`6. leaders slice - medium 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }
@@ -1345,6 +1346,7 @@ exports[`20. leaders slice - wide 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }
@@ -2393,6 +2395,7 @@ exports[`34. leaders slice - huge 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F0F0F0",
       "paddingHorizontal": 40,
       "paddingTop": 20,
     }
