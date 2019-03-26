@@ -358,60 +358,66 @@ exports[`13. secondary two no pic and two - medium 1`] = `
 exports[`14. puzzle - medium 1`] = `
 <View>
   <View>
-    <TileAK
-      id="0"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+    <View>
+      <TileAK
+        id="0"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="1"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="1"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="2"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="2"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
   </View>
 </View>
 `;
@@ -774,60 +780,66 @@ exports[`27. secondary two no pic and two - wide 1`] = `
 exports[`28. puzzle - wide 1`] = `
 <View>
   <View>
-    <TileAK
-      id="0"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+    <View>
+      <TileAK
+        id="0"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="1"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="1"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="2"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="2"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
   </View>
 </View>
 `;
@@ -1190,60 +1202,66 @@ exports[`41. secondary two no pic and two - huge 1`] = `
 exports[`42. puzzle - huge 1`] = `
 <View>
   <View>
-    <TileAK
-      id="0"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+    <View>
+      <TileAK
+        id="0"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="1"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="1"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
-    <TileAK
-      id="2"
-      image={
-        Object {
-          "crop11": null,
-          "crop169": null,
-          "crop23": null,
-          "crop32": Object {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-          },
-          "crop45": null,
-          "crops": Array [],
-          "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
+    <View>
+      <TileAK
+        id="2"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+          }
         }
-      }
-      title="Times Concise medium No 7881"
-      url="/crossword/123"
-    />
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </View>
   </View>
 </View>
 `;

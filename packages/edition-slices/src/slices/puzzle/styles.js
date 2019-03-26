@@ -4,6 +4,9 @@ const smallBreakpointStyles = {
   container: {
     flex: 1,
     paddingHorizontal: spacing(2)
+  },
+  tileContainer: {
+    flex: 1
   }
 };
 
@@ -13,6 +16,9 @@ const mediumBreakpointStyles = {
     flexDirection: "row",
     paddingHorizontal: spacing(3),
     paddingTop: spacing(2)
+  },
+  tileContainer: {
+    width: "33%"
   }
 };
 

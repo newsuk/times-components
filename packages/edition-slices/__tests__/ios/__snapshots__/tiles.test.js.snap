@@ -1200,7 +1200,7 @@ exports[`31. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
-      "width": "33%",
+      "flex": 1,
     }
   }
   url="/crossword/123"

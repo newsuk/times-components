@@ -1017,9 +1017,33 @@ exports[`14. puzzle - medium 1`] = `
       }
     }
   >
-    <TileAK />
-    <TileAK />
-    <TileAK />
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
   </View>
 </View>
 `;
@@ -2041,9 +2065,33 @@ exports[`28. puzzle - wide 1`] = `
       }
     }
   >
-    <TileAK />
-    <TileAK />
-    <TileAK />
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
   </View>
 </View>
 `;
@@ -3065,9 +3113,33 @@ exports[`42. puzzle - huge 1`] = `
       }
     }
   >
-    <TileAK />
-    <TileAK />
-    <TileAK />
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    >
+      <TileAK />
+    </View>
   </View>
 </View>
 `;

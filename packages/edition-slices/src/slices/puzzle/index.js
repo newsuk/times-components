@@ -8,19 +8,21 @@ import { TileAJ, TileAK } from "../../tiles";
 
 const Puzzle = ({ onPress, slice: { puzzles } }) => {
   const renderPuzzles = (breakpoint = editionBreakpoints.small) => {
-    const { container } = stylesFactory(breakpoint);
+    const { container, tileContainer } = stylesFactory(breakpoint);
     const Tile = breakpoint === editionBreakpoints.small ? TileAJ : TileAK;
 
     return (
       <View style={container}>
         {puzzles.map(({ id, title, url, image }) => (
-          <Tile
-            id={id}
-            image={image}
-            onPress={onPress}
-            title={title}
-            url={url}
-          />
+          <View style={tileContainer}>
+            <Tile
+              id={id}
+              image={image}
+              onPress={onPress}
+              title={title}
+              url={url}
+            />
+          </View>
         ))}
       </View>
     );

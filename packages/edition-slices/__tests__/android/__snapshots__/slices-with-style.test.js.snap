@@ -1050,8 +1050,32 @@ exports[`15. puzzle 1`] = `
     }
   }
 >
-  <TileAJ />
-  <TileAJ />
-  <TileAJ />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TileAJ />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TileAJ />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TileAJ />
+  </View>
 </View>
 `;
