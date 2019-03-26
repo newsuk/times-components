@@ -57,8 +57,13 @@ class SectionPage extends Component {
 
     if (getSavedArticles) {
       getSavedArticles().then(articleIds => {
+        const savedArticles = articleIds ? {} : null;
+        articleIds.forEach(id => {
+          savedArticles[id] = true;
+        });
+
         this.setState({
-          savedArticles: articleIds.map(id => ({ [id]: true }))
+          savedArticles
         });
       });
     }
