@@ -1422,6 +1422,24 @@ export default gql`
     }
   }
 
+  fragment listingAsset169 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop169: crop(ratio: "16:9") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop169: crop(ratio: "16:9") {
+        ratio
+        url
+      }
+    }
+  }
+
   fragment leadAsset169and32 on Media {
     __typename
     ... on Video {
