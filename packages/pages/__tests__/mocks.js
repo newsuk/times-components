@@ -27,9 +27,11 @@ jest.mock("react-native", () => {
   };
   rn.NativeModules.SectionEvents = {
     getOpenedPuzzleCount: jest.fn(),
+    getSavedArticles: jest.fn().mockReturnValue(Promise.resolve([])),
     onArticlePress: () => {},
     onPuzzleBarPress: () => {},
     onPuzzlePress: () => {},
+    onSaveStarPress: jest.fn().mockReturnValue(Promise.resolve(true)),
     onSectionLoaded: () => {}
   };
   rn.NativeModules.TopicEvents = {
