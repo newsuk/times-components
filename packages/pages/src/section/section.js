@@ -72,10 +72,22 @@ class SectionPage extends Component {
   render() {
     const { publicationName, section } = this.props;
     const { recentlyOpenedPuzzleCount, savedArticles } = this.state;
+
     return (
       <SectionContext.Provider
         value={{
-          onSaveStarPress,
+          onSaveStarPress: onSaveStarPress
+            ? (save, articleId) =>
+                onSaveStarPress(save, articleId).then(() => {
+                  if (save) {
+                    savedArticles[articleId] = true;
+                  } else {
+                    savedArticles[articleId] = undefined;
+                  }
+
+                  this.setState({ savedArticles });
+                })
+            : null,
           publicationName,
           recentlyOpenedPuzzleCount,
           savedArticles
