@@ -30,13 +30,13 @@ class SectionPage extends Component {
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.addListener("sectionDataUpdated", this.syncAppData);
+    DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
     this.syncAppData();
   }
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.removeAllListeners("sectionDataUpdated");
+    DeviceEventEmitter.removeAllListeners("updateSavedArticles");
   }
 
   onAppStateChange(nextAppState) {
