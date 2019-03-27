@@ -19,6 +19,7 @@ import {
   TileH,
   TileI,
   TileJ,
+  TileK,
   TileL,
   TileM,
   TileN,
@@ -108,6 +109,11 @@ const tileStories = [
   {
     name: "Tile J - Horizontal, image left of article summary with 2:3 ratio",
     Tile: TileJ
+  },
+  {
+    name:
+      "Tile K - Horizontal Aligned - Image left to Article summary Flex: 2:2 ratio",
+    Tile: TileK
   },
   {
     name:

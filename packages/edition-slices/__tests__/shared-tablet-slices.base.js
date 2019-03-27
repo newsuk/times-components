@@ -16,6 +16,7 @@ import {
   mockSecondaryTwoNoPicAndTwoSlice,
   mockSecondaryOneAndColumnistSlice,
   mockSecondaryTwoAndTwoSlice,
+  mockStandardSlice,
   getPuzzleSlices,
   mockSecondaryOneAndFourSlice
 } from "@times-components/fixture-generator";
@@ -35,7 +36,8 @@ import {
   SecondaryFourSlice,
   SecondaryTwoNoPicAndTwoSlice,
   SecondaryOneAndColumnistSlice,
-  SecondaryTwoAndTwoSlice
+  SecondaryTwoAndTwoSlice,
+  StandardSlice
 } from "../src/slices";
 
 const slices = [
@@ -98,6 +100,11 @@ const slices = [
     mock: mockLeadOneAndFourSlice(),
     name: "lead one and four slice",
     Slice: LeadOneAndFourSlice
+  },
+  {
+    mock: mockStandardSlice(),
+    name: "standard slice",
+    Slice: StandardSlice
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
