@@ -38,7 +38,8 @@ import {
   TileAB,
   TileAG,
   TileAH,
-  TileAI
+  TileAI,
+  TileAL
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -112,6 +113,11 @@ const tileStories = [
     name:
       "Tile AD - Horizontal, image left of article summary with 2:3 ratio. Font size 20",
     Tile: TileAD
+  },
+  {
+    name:
+      "Tile AL - Vertical, top image with 2:3 ratio, 22pt headline, centered aligned summary",
+    Tile: TileAL
   },
   {
     name: "Tile L - No image, 22pt headline, no teaser",

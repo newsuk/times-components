@@ -235,6 +235,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
     style={
       Object {
         "flexDirection": "row",
+        "justifyContent": "center",
         "paddingHorizontal": 10,
       }
     }
@@ -1284,6 +1285,7 @@ exports[`19. lead two no pic and two - wide 1`] = `
     style={
       Object {
         "flexDirection": "row",
+        "justifyContent": "center",
         "paddingHorizontal": 10,
       }
     }
@@ -1291,7 +1293,7 @@ exports[`19. lead two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "42%",
         }
       }
     >
@@ -1321,21 +1323,29 @@ exports[`19. lead two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "16%",
         }
       }
     >
-      <TileD />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      <TileAL />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
-      />
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "42%",
+        }
+      }
+    >
       <TileZ />
     </View>
   </View>
@@ -2333,6 +2343,7 @@ exports[`33. lead two no pic and two - huge 1`] = `
     style={
       Object {
         "flexDirection": "row",
+        "justifyContent": "center",
         "paddingHorizontal": 10,
       }
     }
@@ -2340,7 +2351,7 @@ exports[`33. lead two no pic and two - huge 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "36%",
         }
       }
     >
@@ -2370,21 +2381,29 @@ exports[`33. lead two no pic and two - huge 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "14%",
         }
       }
     >
-      <TileD />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      <TileAL />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
         }
-      />
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "36%",
+        }
+      }
+    >
       <TileZ />
     </View>
   </View>

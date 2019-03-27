@@ -275,10 +275,12 @@ exports[`5. lead two no pic and two 1`] = `
     </div>
     <div />
     <div>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div />
+    </div>
+    <div />
+    <div>
       <TileZ
         tileName="support2"
       />

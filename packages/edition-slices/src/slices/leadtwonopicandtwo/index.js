@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadTwoNoPicAndTwoSlice } from "@times-components/slice-layout";
-import { TileB, TileD, TileE, TileF, TileX, TileY, TileZ } from "../../tiles";
+import {
+  TileB,
+  TileD,
+  TileE,
+  TileF,
+  TileX,
+  TileY,
+  TileZ,
+  TileAL
+} from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadTwoNoPicAndTwo extends Component {
@@ -9,6 +18,7 @@ class LeadTwoNoPicAndTwo extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.renderWide = this.renderWide.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -30,6 +40,30 @@ class LeadTwoNoPicAndTwo extends Component {
         )}
         renderSupport2={() => (
           <TileE onPress={onPress} tile={support2} tileName="support2" />
+        )}
+      />
+    );
+  }
+
+  renderWide(breakpoint) {
+    const {
+      onPress,
+      slice: { lead1, lead2, support1, support2 }
+    } = this.props;
+    return (
+      <LeadTwoNoPicAndTwoSlice
+        breakpoint={breakpoint}
+        renderLead1={() => (
+          <TileX onPress={onPress} tile={lead1} tileName="lead1" />
+        )}
+        renderLead2={() => (
+          <TileY onPress={onPress} tile={lead2} tileName="lead2" />
+        )}
+        renderSupport1={() => (
+          <TileAL onPress={onPress} tile={support1} tileName="support1" />
+        )}
+        renderSupport2={() => (
+          <TileZ onPress={onPress} tile={support2} tileName="support2" />
         )}
       />
     );
@@ -62,8 +96,10 @@ class LeadTwoNoPicAndTwo extends Component {
   render() {
     return (
       <ResponsiveSlice
+        renderHuge={this.renderWide}
         renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderWide={this.renderWide}
       />
     );
   }
