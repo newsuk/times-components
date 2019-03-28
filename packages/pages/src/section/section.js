@@ -79,12 +79,7 @@ class SectionPage extends Component {
           onSaveStarPress: onSaveStarPress
             ? (save, articleId) =>
                 onSaveStarPress(save, articleId).then(() => {
-                  if (save) {
-                    savedArticles[articleId] = true;
-                  } else {
-                    savedArticles[articleId] = undefined;
-                  }
-
+                  savedArticles[articleId] = save || undefined;
                   this.setState({ savedArticles });
                 })
             : null,
