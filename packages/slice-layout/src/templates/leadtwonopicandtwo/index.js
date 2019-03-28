@@ -7,26 +7,22 @@ import { ItemColSeparator } from "../shared";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles";
 
-const LeadTwoNoPicAndTwoSlice = ({
-  breakpoint,
-  renderLead1,
-  renderLead2,
-  renderSupport1,
-  renderSupport2
-}) => {
+const LeadTwoNoPicAndTwoSlice = ({ breakpoint, children }) => {
   if (breakpoint === editionBreakpoints.small) {
-    return (
-      <Column
-        tiles={[renderLead1, renderLead2, renderSupport1, renderSupport2]}
-      />
-    );
+    return <Column>{children}</Column>;
   }
 
   return (
     <View style={styles.container}>
-      <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+      <Column style={styles.column}>
+        {children[0]}
+        {children[1]}
+      </Column>
       <ItemColSeparator />
-      <Column style={styles.column} tiles={[renderSupport1, renderSupport2]} />
+      <Column style={styles.column}>
+        {children[2]}
+        {children[3]}
+      </Column>
     </View>
   );
 };

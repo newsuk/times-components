@@ -298,7 +298,7 @@ exports[`1. secondary one and four 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -312,7 +312,7 @@ exports[`1. secondary one and four 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div
@@ -486,7 +486,7 @@ exports[`1. secondary one and four 2`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -500,7 +500,7 @@ exports[`1. secondary one and four 2`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div
@@ -669,7 +669,7 @@ exports[`2. leaders 1`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>
@@ -837,7 +837,7 @@ exports[`2. leaders 2`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>
@@ -1610,7 +1610,7 @@ exports[`9. secondary one and four 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -1624,7 +1624,7 @@ exports[`9. secondary one and four 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div
@@ -2342,7 +2342,7 @@ exports[`13. leaders 1`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>

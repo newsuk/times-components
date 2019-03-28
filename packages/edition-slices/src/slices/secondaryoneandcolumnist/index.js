@@ -17,15 +17,10 @@ class SecondaryOneAndColumnist extends Component {
       slice: { columnist, secondary }
     } = this.props;
     return (
-      <SecondaryOneAndColumnistSlice
-        breakpoint={breakpoint}
-        renderColumnist={() => (
-          <TileH onPress={onPress} tile={columnist} tileName="columnist" />
-        )}
-        renderSecondary={() => (
-          <TileT onPress={onPress} tile={secondary} tileName="secondary" />
-        )}
-      />
+      <SecondaryOneAndColumnistSlice breakpoint={breakpoint}>
+        <TileT onPress={onPress} tile={secondary} tileName="secondary" />
+        <TileH onPress={onPress} tile={columnist} tileName="columnist" />
+      </SecondaryOneAndColumnistSlice>
     );
   }
 
@@ -35,15 +30,10 @@ class SecondaryOneAndColumnist extends Component {
       slice: { columnist, secondary }
     } = this.props;
     return (
-      <SecondaryOneAndColumnistSlice
-        breakpoint={breakpoint}
-        renderColumnist={() => (
-          <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
-        )}
-        renderSecondary={() => (
-          <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
-        )}
-      />
+      <SecondaryOneAndColumnistSlice breakpoint={breakpoint}>
+        <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
+        <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
+      </SecondaryOneAndColumnistSlice>
     );
   }
 

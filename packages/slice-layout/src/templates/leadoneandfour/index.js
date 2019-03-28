@@ -6,40 +6,23 @@ import { ItemColSeparator } from "../shared";
 import Column from "../column";
 import styles from "./styles";
 
-const leadOneAndFourSlice = ({
-  breakpoint,
-  renderLead,
-  renderSupport1,
-  renderSupport2,
-  renderSupport3,
-  renderSupport4
-}) => {
+const leadOneAndFourSlice = ({ breakpoint, children: [lead, ...supports] }) => {
   const { container, leadContainer, supportContainer } = styles;
 
   if (editionBreakpoints.small === breakpoint) {
     return (
       <Fragment>
-        {renderLead()}
-        <Column
-          tiles={[
-            renderSupport1,
-            renderSupport2,
-            renderSupport3,
-            renderSupport4
-          ]}
-        />
+        {lead}
+        <Column>{supports}</Column>
       </Fragment>
     );
   }
 
   return (
     <View style={container}>
-      <View style={leadContainer}>{renderLead()}</View>
+      <View style={leadContainer}>{lead}</View>
       <ItemColSeparator />
-      <Column
-        style={supportContainer}
-        tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
-      />
+      <Column style={supportContainer}>{supports}</Column>
     </View>
   );
 };

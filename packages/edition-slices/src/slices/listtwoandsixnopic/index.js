@@ -26,33 +26,16 @@ class ListTwoAndSixNoPicSlice extends Component {
     } = this.props;
 
     return (
-      <ListTwoAndSixNoPic
-        breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileC onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileC onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
-          <TileL onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileL onPress={onPress} tile={support2} tileName="support2" />
-        )}
-        renderSupport3={() => (
-          <TileL onPress={onPress} tile={support3} tileName="support3" />
-        )}
-        renderSupport4={() => (
-          <TileL onPress={onPress} tile={support4} tileName="support4" />
-        )}
-        renderSupport5={() => (
-          <TileL onPress={onPress} tile={support5} tileName="support5" />
-        )}
-        renderSupport6={() => (
-          <TileL onPress={onPress} tile={support6} tileName="support6" />
-        )}
-      />
+      <ListTwoAndSixNoPic breakpoint={breakpoint}>
+        <TileC onPress={onPress} tile={lead1} tileName="lead1" />
+        <TileC onPress={onPress} tile={lead2} tileName="lead2" />
+        <TileL onPress={onPress} tile={support1} tileName="support1" />
+        <TileL onPress={onPress} tile={support2} tileName="support2" />
+        <TileL onPress={onPress} tile={support3} tileName="support3" />
+        <TileL onPress={onPress} tile={support4} tileName="support4" />
+        <TileL onPress={onPress} tile={support5} tileName="support5" />
+        <TileL onPress={onPress} tile={support6} tileName="support6" />
+      </ListTwoAndSixNoPic>
     );
   }
 

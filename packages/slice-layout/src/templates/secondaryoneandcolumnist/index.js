@@ -6,21 +6,17 @@ import styleFactory from "./styles";
 import propTypes from "./proptypes";
 import { ItemColSeparator } from "../shared";
 
-const SecondaryOneAndColumnistSlice = ({
-  breakpoint,
-  renderSecondary,
-  renderColumnist
-}) => {
+const SecondaryOneAndColumnistSlice = ({ breakpoint, children }) => {
   const styles = styleFactory(breakpoint);
   if (breakpoint === editionBreakpoints.small) {
-    return <Column tiles={[renderSecondary, renderColumnist]} />;
+    return <Column>{children}</Column>;
   }
 
   return (
     <View style={styles.container}>
-      <View style={styles.secondaryContainer}>{renderSecondary()}</View>
+      <View style={styles.secondaryContainer}>{children[0]}</View>
       <ItemColSeparator style={styles.separator} />
-      <View style={styles.columnistContainer}>{renderColumnist()}</View>
+      <View style={styles.columnistContainer}>{children[1]}</View>
     </View>
   );
 };

@@ -18,24 +18,13 @@ class LeadOneAndFour extends Component {
     } = this.props;
 
     return (
-      <LeadOneAndFourSlice
-        breakpoint={breakpoint}
-        renderLead={() => (
-          <TileI onPress={onPress} tile={lead} tileName="lead" />
-        )}
-        renderSupport1={() => (
-          <TileJ onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileJ onPress={onPress} tile={support2} tileName="support2" />
-        )}
-        renderSupport3={() => (
-          <TileJ onPress={onPress} tile={support3} tileName="support3" />
-        )}
-        renderSupport4={() => (
-          <TileJ onPress={onPress} tile={support4} tileName="support4" />
-        )}
-      />
+      <LeadOneAndFourSlice breakpoint={breakpoint}>
+        <TileI onPress={onPress} tile={lead} tileName="lead" />
+        <TileJ onPress={onPress} tile={support1} tileName="support1" />
+        <TileJ onPress={onPress} tile={support2} tileName="support2" />
+        <TileJ onPress={onPress} tile={support3} tileName="support3" />
+        <TileJ onPress={onPress} tile={support4} tileName="support4" />
+      </LeadOneAndFourSlice>
     );
   }
 
@@ -46,24 +35,13 @@ class LeadOneAndFour extends Component {
     } = this.props;
 
     return (
-      <LeadOneAndFourSlice
-        breakpoint={breakpoint}
-        renderLead={() => (
-          <TileAC onPress={onPress} tile={lead} tileName="lead" />
-        )}
-        renderSupport1={() => (
-          <TileAD onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileAD onPress={onPress} tile={support2} tileName="support2" />
-        )}
-        renderSupport3={() => (
-          <TileAD onPress={onPress} tile={support3} tileName="support3" />
-        )}
-        renderSupport4={() => (
-          <TileAD onPress={onPress} tile={support4} tileName="support4" />
-        )}
-      />
+      <LeadOneAndFourSlice breakpoint={breakpoint}>
+        <TileAC onPress={onPress} tile={lead} tileName="lead" />
+        <TileAD onPress={onPress} tile={support1} tileName="support1" />
+        <TileAD onPress={onPress} tile={support2} tileName="support2" />
+        <TileAD onPress={onPress} tile={support3} tileName="support3" />
+        <TileAD onPress={onPress} tile={support4} tileName="support4" />
+      </LeadOneAndFourSlice>
     );
   }
 

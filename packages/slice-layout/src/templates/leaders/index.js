@@ -6,30 +6,20 @@ import Column from "../column";
 import { ItemColSeparator } from "../shared";
 import propTypes from "./proptypes";
 
-const Leaders = ({
-  renderLeader1,
-  renderLeader2,
-  renderLeader3,
-  breakpoint
-}) => {
+const Leaders = ({ breakpoint, children }) => {
   const styles = styleFactory(breakpoint);
 
   if (breakpoint === editionBreakpoints.small) {
-    return (
-      <Column
-        style={styles.container}
-        tiles={[renderLeader1, renderLeader2, renderLeader3]}
-      />
-    );
+    return <Column style={styles.container}>{children}</Column>;
   }
 
   return (
     <View style={styles.container}>
-      <View style={styles.columnItems}>{renderLeader2()}</View>
+      <View style={styles.columnItems}>{children[1]}</View>
       <ItemColSeparator />
-      <View style={styles.columnItems}>{renderLeader1()}</View>
+      <View style={styles.columnItems}>{children[0]}</View>
       <ItemColSeparator />
-      <View style={styles.columnItems}>{renderLeader3()}</View>
+      <View style={styles.columnItems}>{children[2]}</View>
     </View>
   );
 };

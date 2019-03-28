@@ -17,21 +17,12 @@ class SecondaryFour extends Component {
     } = this.props;
 
     return (
-      <SecondaryFourSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileC onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileC onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSecondary3={() => (
-          <TileC onPress={onPress} tile={secondary3} tileName="secondary3" />
-        )}
-        renderSecondary4={() => (
-          <TileC onPress={onPress} tile={secondary4} tileName="secondary4" />
-        )}
-      />
+      <SecondaryFourSlice breakpoint={breakpoint}>
+        <TileC onPress={onPress} tile={secondary1} tileName="secondary1" />
+        <TileC onPress={onPress} tile={secondary2} tileName="secondary2" />
+        <TileC onPress={onPress} tile={secondary3} tileName="secondary3" />
+        <TileC onPress={onPress} tile={secondary4} tileName="secondary4" />
+      </SecondaryFourSlice>
     );
   }
 

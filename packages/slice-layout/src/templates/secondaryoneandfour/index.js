@@ -8,56 +8,43 @@ import { ItemColSeparator, ItemRowSeparator } from "../shared";
 
 const SecondaryOneAndFourSlice = ({
   breakpoint,
-  renderSecondary,
-  renderSupport1,
-  renderSupport2,
-  renderSupport3,
-  renderSupport4
+  children: [secondary, ...supports]
 }) => {
   const styles = styleFactory(breakpoint);
-  const renderRowOne = renderSecondary();
   if (breakpoint === editionBreakpoints.small) {
-    const renderFourRows = [
-      renderSupport1,
-      renderSupport2,
-      renderSupport3,
-      renderSupport4
-    ];
     return (
       <View style={styles.container}>
         <View style={styles.itemContainer}>
-          <View key={renderRowOne.props.id}>{renderRowOne}</View>
+          <View key={secondary.props.id}>{secondary}</View>
         </View>
-        <Column tiles={renderFourRows} />
+        <Column>{supports}</Column>
       </View>
     );
   }
 
-  const renderColTwo = [renderSupport1(), renderSupport3()];
-  const renderColThree = [renderSupport2(), renderSupport4()];
   return (
     <View style={styles.container}>
       <View style={styles.secondaryItemContainer}>
-        <View key={renderRowOne.props.id}>{renderRowOne}</View>
+        <View key={secondary.props.id}>{secondary}</View>
       </View>
       <ItemColSeparator style={styles.separator} />
       <View style={styles.itemContainer}>
-        <View key={renderColTwo[0].props.id} style={styles.item}>
-          {renderColTwo[0]}
+        <View key={supports[0].props.id} style={styles.item}>
+          {supports[0]}
         </View>
         <ItemRowSeparator style={styles.separator} />
-        <View key={renderColTwo[1].props.id} style={styles.item}>
-          {renderColTwo[1]}
+        <View key={supports[1].props.id} style={styles.item}>
+          {supports[1]}
         </View>
       </View>
       <ItemColSeparator style={styles.separator} />
       <View style={styles.itemContainer}>
-        <View key={renderColThree[0].props.id} style={styles.item}>
-          {renderColThree[0]}
+        <View key={supports[2].props.id} style={styles.item}>
+          {supports[2]}
         </View>
         <ItemRowSeparator style={styles.separator} />
-        <View key={renderColThree[1].props.id} style={styles.item}>
-          {renderColThree[1]}
+        <View key={supports[3].props.id} style={styles.item}>
+          {supports[3]}
         </View>
       </View>
     </View>

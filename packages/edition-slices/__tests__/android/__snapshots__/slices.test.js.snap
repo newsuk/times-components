@@ -134,7 +134,7 @@ exports[`2. leaders 1`] = `
     />
     <View>
       <Text>
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -167,7 +167,7 @@ exports[`2. leaders 2`] = `
     />
     <View>
       <Text>
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -438,7 +438,7 @@ exports[`13. leaders 1`] = `
     />
     <View>
       <Text>
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>

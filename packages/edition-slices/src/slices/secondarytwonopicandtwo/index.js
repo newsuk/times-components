@@ -18,21 +18,12 @@ class SecondaryTwoNoPicAndTwo extends Component {
     } = this.props;
 
     return (
-      <SecondaryTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileB onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileB onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <SecondaryTwoNoPicAndTwoSlice breakpoint={breakpoint}>
+        <TileB onPress={onPress} tile={secondary1} tileName="secondary1" />
+        <TileB onPress={onPress} tile={secondary2} tileName="secondary2" />
+        <TileG onPress={onPress} tile={support1} tileName="support1" />
+        <TileG onPress={onPress} tile={support2} tileName="support2" />
+      </SecondaryTwoNoPicAndTwoSlice>
     );
   }
 
@@ -43,21 +34,12 @@ class SecondaryTwoNoPicAndTwo extends Component {
     } = this.props;
 
     return (
-      <SecondaryTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileAE onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileAE onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <SecondaryTwoNoPicAndTwoSlice breakpoint={breakpoint}>
+        <TileAE onPress={onPress} tile={secondary1} tileName="secondary1" />
+        <TileAE onPress={onPress} tile={secondary2} tileName="secondary2" />
+        <TileG onPress={onPress} tile={support1} tileName="support1" />
+        <TileG onPress={onPress} tile={support2} tileName="support2" />
+      </SecondaryTwoNoPicAndTwoSlice>
     );
   }
 

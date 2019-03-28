@@ -5,21 +5,21 @@ import { defaultProps, propTypes } from "./proptypes";
 import { ItemColSeparator } from "../shared";
 import styles from "./styles";
 
-const leadOneAndOneSlice = ({ breakpoint, renderLead, renderSupport }) => {
+const leadOneAndOneSlice = ({ breakpoint, children: [lead, support] }) => {
   if (breakpoint === editionBreakpoints.small) {
     return (
       <View>
-        {renderLead()}
-        {renderSupport()}
+        {lead}
+        {support}
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <View style={styles.leadItem}>{renderLead()}</View>
+      <View style={styles.leadItem}>{lead}</View>
       <ItemColSeparator />
-      <View style={styles.supportItem}>{renderSupport()}</View>
+      <View style={styles.supportItem}>{support}</View>
     </View>
   );
 };

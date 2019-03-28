@@ -555,7 +555,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>
@@ -752,7 +752,7 @@ exports[`7. secondary one and four - medium 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -766,7 +766,7 @@ exports[`7. secondary one and four - medium 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div
@@ -2179,7 +2179,7 @@ exports[`20. leaders slice - wide 1`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>
@@ -2376,7 +2376,7 @@ exports[`21. secondary one and four - wide 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -2390,7 +2390,7 @@ exports[`21. secondary one and four - wide 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div
@@ -3803,7 +3803,7 @@ exports[`34. leaders slice - huge 1`] = `
       <div
         className="IS2 S1"
       >
-         Leading Articles 
+        Leading Articles
       </div>
     </div>
   </div>
@@ -4000,7 +4000,7 @@ exports[`35. secondary one and four - huge 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support3"
+            tileName="support2"
           />
         </div>
       </div>
@@ -4014,7 +4014,7 @@ exports[`35. secondary one and four - huge 1`] = `
           className="S1"
         >
           <TileO
-            tileName="support2"
+            tileName="support3"
           />
         </div>
         <div

@@ -11,41 +11,31 @@ class CommentLeadAndCartoonSlice extends Component {
     this.renderMedium = this.renderMedium.bind(this);
   }
 
-  renderSmall(editionBreakpoint) {
+  renderSmall(breakpoint) {
     const {
       onPress,
       slice: { lead, cartoon }
     } = this.props;
 
     return (
-      <CommentLeadAndCartoon
-        breakpoint={editionBreakpoint}
-        renderCartoon={() => (
-          <TileQ onPress={onPress} tile={cartoon} tileName="cartoon" />
-        )}
-        renderLead={() => (
-          <TileP onPress={onPress} tile={lead} tileName="lead" />
-        )}
-      />
+      <CommentLeadAndCartoon breakpoint={breakpoint}>
+        <TileP onPress={onPress} tile={lead} tileName="lead" />
+        <TileQ onPress={onPress} tile={cartoon} tileName="cartoon" />
+      </CommentLeadAndCartoon>
     );
   }
 
-  renderMedium(editionBreakpoint) {
+  renderMedium(breakpoint) {
     const {
       onPress,
       slice: { lead, cartoon }
     } = this.props;
 
     return (
-      <CommentLeadAndCartoon
-        breakpoint={editionBreakpoint}
-        renderCartoon={() => (
-          <TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />
-        )}
-        renderLead={() => (
-          <TileAH onPress={onPress} tile={lead} tileName="lead" />
-        )}
-      />
+      <CommentLeadAndCartoon breakpoint={breakpoint}>
+        <TileAH onPress={onPress} tile={lead} tileName="lead" />
+        <TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />
+      </CommentLeadAndCartoon>
     );
   }
 

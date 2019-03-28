@@ -337,7 +337,7 @@ exports[`6. leaders slice - medium 1`] = `
           }
         }
       >
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -1386,7 +1386,7 @@ exports[`20. leaders slice - wide 1`] = `
           }
         }
       >
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>
@@ -2435,7 +2435,7 @@ exports[`34. leaders slice - huge 1`] = `
           }
         }
       >
-         Leading Articles 
+        Leading Articles
       </Text>
     </View>
   </View>

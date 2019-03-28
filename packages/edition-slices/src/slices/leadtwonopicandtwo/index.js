@@ -17,21 +17,12 @@ class LeadTwoNoPicAndTwo extends Component {
       slice: { lead1, lead2, support1, support2 }
     } = this.props;
     return (
-      <LeadTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileF onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileB onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
-          <TileD onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileE onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <LeadTwoNoPicAndTwoSlice breakpoint={breakpoint}>
+        <TileF onPress={onPress} tile={lead1} tileName="lead1" />
+        <TileB onPress={onPress} tile={lead2} tileName="lead2" />
+        <TileD onPress={onPress} tile={support1} tileName="support1" />
+        <TileE onPress={onPress} tile={support2} tileName="support2" />
+      </LeadTwoNoPicAndTwoSlice>
     );
   }
 
@@ -41,21 +32,12 @@ class LeadTwoNoPicAndTwo extends Component {
       slice: { lead1, lead2, support1, support2 }
     } = this.props;
     return (
-      <LeadTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileX onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileY onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
-          <TileD onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileZ onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <LeadTwoNoPicAndTwoSlice breakpoint={breakpoint}>
+        <TileX onPress={onPress} tile={lead1} tileName="lead1" />
+        <TileY onPress={onPress} tile={lead2} tileName="lead2" />
+        <TileD onPress={onPress} tile={support1} tileName="support1" />
+        <TileZ onPress={onPress} tile={support2} tileName="support2" />
+      </LeadTwoNoPicAndTwoSlice>
     );
   }
 

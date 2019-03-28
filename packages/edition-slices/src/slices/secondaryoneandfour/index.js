@@ -25,9 +25,9 @@ class SecondaryOneAndFour extends Component {
 
     const styles = styleFactory(breakpoint);
     return (
-      <SectionContext.Consumer>
-        {({ publicationName }) => (
-          <View style={styles.sliceWrapper}>
+      <View style={styles.sliceWrapper}>
+        <SectionContext.Consumer>
+          {({ publicationName }) => (
             <View style={styles.logoContainer}>
               {publicationName === "TIMES" ? (
                 <TheTimesLogo height={40} width={42} />
@@ -35,32 +35,17 @@ class SecondaryOneAndFour extends Component {
                 <TheSTLogo height={40} width={60} />
               )}
             </View>
-            <ItemRowSeparator style={styles.separator} />
-            <SecondaryOneAndFourSlice
-              breakpoint={breakpoint}
-              renderSecondary={() => (
-                <TileN
-                  onPress={onPress}
-                  tile={secondary}
-                  tileName="secondary"
-                />
-              )}
-              renderSupport1={() => (
-                <TileO onPress={onPress} tile={support1} tileName="support1" />
-              )}
-              renderSupport2={() => (
-                <TileO onPress={onPress} tile={support2} tileName="support2" />
-              )}
-              renderSupport3={() => (
-                <TileO onPress={onPress} tile={support3} tileName="support3" />
-              )}
-              renderSupport4={() => (
-                <TileO onPress={onPress} tile={support4} tileName="support4" />
-              )}
-            />
-          </View>
-        )}
-      </SectionContext.Consumer>
+          )}
+        </SectionContext.Consumer>
+        <ItemRowSeparator style={styles.separator} />
+        <SecondaryOneAndFourSlice breakpoint={breakpoint}>
+          <TileN onPress={onPress} tile={secondary} tileName="secondary" />
+          <TileO onPress={onPress} tile={support1} tileName="support1" />
+          <TileO onPress={onPress} tile={support2} tileName="support2" />
+          <TileO onPress={onPress} tile={support3} tileName="support3" />
+          <TileO onPress={onPress} tile={support4} tileName="support4" />
+        </SecondaryOneAndFourSlice>
+      </View>
     );
   }
 

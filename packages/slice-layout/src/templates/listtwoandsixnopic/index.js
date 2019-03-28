@@ -8,62 +8,44 @@ import propTypes from "./proptypes";
 
 const ListTwoAndSixNoPic = ({
   breakpoint,
-  renderLead1,
-  renderLead2,
-  renderSupport1,
-  renderSupport2,
-  renderSupport3,
-  renderSupport4,
-  renderSupport5,
-  renderSupport6
+  children: [lead1, lead2, ...supports]
 }) => {
   const styles = styleFactory(breakpoint);
-  const supportItems = [
-    renderSupport1,
-    renderSupport2,
-    renderSupport3,
-    renderSupport4,
-    renderSupport5,
-    renderSupport6
-  ];
-
-  const renderRowItem1 = renderLead1();
-  const renderRowItem2 = renderLead2();
 
   if (breakpoint === editionBreakpoints.small) {
     return (
       <Fragment>
         <View style={styles.leadContainer}>
-          <View key={renderRowItem1.props.id} style={styles.leadItem}>
-            {renderRowItem1}
+          <View key={lead1.props.id} style={styles.leadItem}>
+            {lead1}
           </View>
           <ItemColSeparator />
-          <View key={renderRowItem2.props.id} style={styles.leadItem}>
-            {renderRowItem2}
+          <View key={lead2.props.id} style={styles.leadItem}>
+            {lead2}
           </View>
         </View>
         <ItemRowSeparator />
-        <Column tiles={supportItems} />
+        <Column>{supports}</Column>
       </Fragment>
     );
   }
 
-  const supportItemsOne = supportItems.slice(0, 3);
-  const supportItemsTwo = supportItems.slice(3);
+  const supportItemsOne = supports.slice(0, 3);
+  const supportItemsTwo = supports.slice(3);
   return (
     <View style={styles.container}>
-      <View key={renderRowItem1.props.id} style={styles.rowItemContainer}>
-        {renderRowItem1}
+      <View key={lead1.props.id} style={styles.rowItemContainer}>
+        {lead1}
       </View>
       <ItemColSeparator />
-      <View key={renderRowItem2.props.id} style={styles.rowItemContainer}>
-        {renderRowItem2}
+      <View key={lead2.props.id} style={styles.rowItemContainer}>
+        {lead2}
       </View>
       <ItemColSeparator />
       <View style={styles.rowItemContainer}>
         {supportItemsOne.map((item, index) => (
-          <View key={item().props.id}>
-            {item()}
+          <View key={item.props.id}>
+            {item}
             {supportItemsOne.length - 1 > index ? <ItemRowSeparator /> : null}
           </View>
         ))}
@@ -71,8 +53,8 @@ const ListTwoAndSixNoPic = ({
       <ItemColSeparator />
       <View style={styles.rowItemContainer}>
         {supportItemsTwo.map((item, index) => (
-          <View key={item().props.id}>
-            {item()}
+          <View key={item.props.id}>
+            {item}
             {supportItemsTwo.length - 1 > index ? <ItemRowSeparator /> : null}
           </View>
         ))}

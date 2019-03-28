@@ -8,19 +8,6 @@ import styles from "./styles";
 import { ResponsiveSlice } from "../shared";
 import MastHead from "./masthead";
 
-const renderHead = () => (
-  <SectionContext.Consumer>
-    {({ publicationName }) => (
-      <View style={styles.mastheadContainer}>
-        <MastHead publicationName={publicationName} />
-        <View style={styles.headingContainer}>
-          <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
-        </View>
-      </View>
-    )}
-  </SectionContext.Consumer>
-);
-
 class LeadersSlice extends Component {
   constructor(props) {
     super(props);
@@ -35,18 +22,11 @@ class LeadersSlice extends Component {
     } = this.props;
 
     return (
-      <Leaders
-        breakpoint={breakpoint}
-        renderLeader1={() => (
-          <TileM onPress={onPress} tile={leader1} tileName="leader1" />
-        )}
-        renderLeader2={() => (
-          <TileM onPress={onPress} tile={leader2} tileName="leader2" />
-        )}
-        renderLeader3={() => (
-          <TileM onPress={onPress} tile={leader3} tileName="leader3" />
-        )}
-      />
+      <Leaders breakpoint={breakpoint}>
+        <TileM onPress={onPress} tile={leader1} tileName="leader1" />
+        <TileM onPress={onPress} tile={leader2} tileName="leader2" />
+        <TileM onPress={onPress} tile={leader3} tileName="leader3" />
+      </Leaders>
     );
   }
 
@@ -57,25 +37,29 @@ class LeadersSlice extends Component {
     } = this.props;
 
     return (
-      <Leaders
-        breakpoint={breakpoint}
-        renderLeader1={() => (
-          <TileAG onPress={onPress} tile={leader1} tileName="leader1" />
-        )}
-        renderLeader2={() => (
-          <TileAG onPress={onPress} tile={leader2} tileName="leader2" />
-        )}
-        renderLeader3={() => (
-          <TileAG onPress={onPress} tile={leader3} tileName="leader3" />
-        )}
-      />
+      <Leaders breakpoint={breakpoint}>
+        <TileAG onPress={onPress} tile={leader1} tileName="leader1" />
+        <TileAG onPress={onPress} tile={leader2} tileName="leader2" />
+        <TileAG onPress={onPress} tile={leader3} tileName="leader3" />
+      </Leaders>
     );
   }
 
   render() {
     return (
       <View style={styles.container}>
-        {renderHead()}
+        <SectionContext.Consumer>
+          {({ publicationName }) => (
+            <View style={styles.mastheadContainer}>
+              <MastHead publicationName={publicationName} />
+              <View style={styles.headingContainer}>
+                <Text style={[styles.heading, styles.text]}>
+                  Leading Articles
+                </Text>
+              </View>
+            </View>
+          )}
+        </SectionContext.Consumer>
         <ResponsiveSlice
           renderHuge={this.renderHuge}
           renderMedium={this.renderSmall}

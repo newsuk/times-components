@@ -18,21 +18,12 @@ class SecondaryTwoAndTwo extends Component {
     } = this.props;
 
     return (
-      <SecondaryTwoAndTwoSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileC onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileC onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <SecondaryTwoAndTwoSlice breakpoint={breakpoint}>
+        <TileC onPress={onPress} tile={secondary1} tileName="secondary1" />
+        <TileC onPress={onPress} tile={secondary2} tileName="secondary2" />
+        <TileG onPress={onPress} tile={support1} tileName="support1" />
+        <TileG onPress={onPress} tile={support2} tileName="support2" />
+      </SecondaryTwoAndTwoSlice>
     );
   }
 
@@ -43,21 +34,12 @@ class SecondaryTwoAndTwo extends Component {
     } = this.props;
 
     return (
-      <SecondaryTwoAndTwoSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileV onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileV onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
+      <SecondaryTwoAndTwoSlice breakpoint={breakpoint}>
+        <TileV onPress={onPress} tile={secondary1} tileName="secondary1" />
+        <TileV onPress={onPress} tile={secondary2} tileName="secondary2" />
+        <TileG onPress={onPress} tile={support1} tileName="support1" />
+        <TileG onPress={onPress} tile={support2} tileName="support2" />
+      </SecondaryTwoAndTwoSlice>
     );
   }
 

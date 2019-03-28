@@ -17,15 +17,10 @@ class LeadOneAndOne extends Component {
       slice: { lead, support }
     } = this.props;
     return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        renderLead={() => (
-          <TileA onPress={onPress} tile={lead} tileName="lead" />
-        )}
-        renderSupport={() => (
-          <TileB onPress={onPress} tile={support} tileName="support" />
-        )}
-      />
+      <LeadOneAndOneSlice breakpoint={breakpoint}>
+        <TileA onPress={onPress} tile={lead} tileName="lead" />
+        <TileB onPress={onPress} tile={support} tileName="support" />
+      </LeadOneAndOneSlice>
     );
   }
 
@@ -35,15 +30,10 @@ class LeadOneAndOne extends Component {
       slice: { lead, support }
     } = this.props;
     return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        renderLead={() => (
-          <TileU onPress={onPress} tile={lead} tileName="lead" />
-        )}
-        renderSupport={() => (
-          <TileC onPress={onPress} tile={support} tileName="support" />
-        )}
-      />
+      <LeadOneAndOneSlice breakpoint={breakpoint}>
+        <TileU onPress={onPress} tile={lead} tileName="lead" />
+        <TileC onPress={onPress} tile={support} tileName="support" />
+      </LeadOneAndOneSlice>
     );
   }
 
