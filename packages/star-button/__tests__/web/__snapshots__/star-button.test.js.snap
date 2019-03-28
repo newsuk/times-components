@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders default 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1otgn73 rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-zIndex-1lgpqti"
+  data-focusable={true}
+  disabled={false}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  tabIndex="0"
+>
+  <svg
+    aria-label="[title]"
+    height={18}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 21 20"
+    width={18}
+  >
+    <title>
+      Save star
+    </title>
+    <path
+      d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
+      fill="none"
+      opacity="1"
+      stroke="#696969"
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`renders disabled 1`] = `
+<div
+  aria-disabled={true}
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-zIndex-1lgpqti"
+  disabled={true}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <svg
+    aria-label="[title]"
+    height={18}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 21 20"
+    width={18}
+  >
+    <title>
+      Save star
+    </title>
+    <path
+      d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
+      fill="none"
+      opacity="0.4"
+      stroke="#696969"
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`renders selected 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1otgn73 rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-zIndex-1lgpqti"
+  data-focusable={true}
+  disabled={false}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  tabIndex="0"
+>
+  <svg
+    aria-label="[title]"
+    height={18}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 21 20"
+    width={18}
+  >
+    <title>
+      Save star
+    </title>
+    <path
+      d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
+      fill="#006699"
+      opacity="1"
+      stroke="none"
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;

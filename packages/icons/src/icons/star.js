@@ -7,6 +7,7 @@ import propTypes from "./prop-types";
 const IconStar = ({
   fillColour,
   height,
+  opacity,
   strokeColour,
   title = "Save star",
   width
@@ -23,6 +24,7 @@ const IconStar = ({
     <Path
       {...clean({
         fill: fillColour,
+        opacity: opacity,
         stroke: strokeColour
       })}
       d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"

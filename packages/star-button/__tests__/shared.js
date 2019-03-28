@@ -3,9 +3,23 @@ import TestRenderer from "react-test-renderer";
 import StarButton from "../src/star-button";
 
 export default () => {
-  it("renders correctly", () => {
+  it("renders default", () => {
+    const testInstance = TestRenderer.create(<StarButton onPress={() => {}} />);
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
+  });
+
+  it("renders selected", () => {
     const testInstance = TestRenderer.create(
-      <StarButton />
+      <StarButton onPress={() => {}} starState="selected" />
+    );
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
+  });
+
+  it("renders disabled", () => {
+    const testInstance = TestRenderer.create(
+      <StarButton onPress={() => {}} starState="disabled" />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();

@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders default 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Array [
+        undefined,
+        Object {
+          "height": 17.142857142857142,
+          "width": 18,
+        },
+      ]
+    }
+  >
+    <ARTGroup
+      opacity={1}
+      transform={
+        Array [
+          0.8571428571428571,
+          0,
+          0,
+          0.8571428571428571,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d={
+          Array [
+            0,
+            16.0321915,
+            18.681086,
+            2,
+            13.9014848,
+            12.1628241,
+            2,
+            19.4524784,
+            8.14270857,
+            2,
+            12.6019503,
+            8.15770268,
+            2,
+            10.5,
+            1.63105093,
+            2,
+            8.39804966,
+            8.15770268,
+            2,
+            1.54752164,
+            8.14270857,
+            2,
+            7.09851524,
+            12.1628241,
+            2,
+            4.96780845,
+            18.681086,
+            2,
+            10.5,
+            14.6375865,
+            2,
+            16.0321915,
+            18.681086,
+            1,
+          ]
+        }
+        fill={null}
+        opacity={1}
+        stroke={
+          Array [
+            0.4117647058823529,
+            0.4117647058823529,
+            0.4117647058823529,
+            1,
+          ]
+        }
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`renders disabled 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Array [
+        undefined,
+        Object {
+          "height": 17.142857142857142,
+          "width": 18,
+        },
+      ]
+    }
+  >
+    <ARTGroup
+      opacity={1}
+      transform={
+        Array [
+          0.8571428571428571,
+          0,
+          0,
+          0.8571428571428571,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d={
+          Array [
+            0,
+            16.0321915,
+            18.681086,
+            2,
+            13.9014848,
+            12.1628241,
+            2,
+            19.4524784,
+            8.14270857,
+            2,
+            12.6019503,
+            8.15770268,
+            2,
+            10.5,
+            1.63105093,
+            2,
+            8.39804966,
+            8.15770268,
+            2,
+            1.54752164,
+            8.14270857,
+            2,
+            7.09851524,
+            12.1628241,
+            2,
+            4.96780845,
+            18.681086,
+            2,
+            10.5,
+            14.6375865,
+            2,
+            16.0321915,
+            18.681086,
+            1,
+          ]
+        }
+        fill={null}
+        opacity={0.4}
+        stroke={
+          Array [
+            0.4117647058823529,
+            0.4117647058823529,
+            0.4117647058823529,
+            1,
+          ]
+        }
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`renders selected 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Array [
+        undefined,
+        Object {
+          "height": 17.142857142857142,
+          "width": 18,
+        },
+      ]
+    }
+  >
+    <ARTGroup
+      opacity={1}
+      transform={
+        Array [
+          0.8571428571428571,
+          0,
+          0,
+          0.8571428571428571,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d={
+          Array [
+            0,
+            16.0321915,
+            18.681086,
+            2,
+            13.9014848,
+            12.1628241,
+            2,
+            19.4524784,
+            8.14270857,
+            2,
+            12.6019503,
+            8.15770268,
+            2,
+            10.5,
+            1.63105093,
+            2,
+            8.39804966,
+            8.15770268,
+            2,
+            1.54752164,
+            8.14270857,
+            2,
+            7.09851524,
+            12.1628241,
+            2,
+            4.96780845,
+            18.681086,
+            2,
+            10.5,
+            14.6375865,
+            2,
+            16.0321915,
+            18.681086,
+            1,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0,
+            0.4,
+            0.6,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTSurfaceView>
+</View>
+`;

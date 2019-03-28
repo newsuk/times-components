@@ -54,7 +54,8 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.26.3",
-    "@times-components/icons": "2.8.0"
+    "@times-components/icons": "2.8.0",
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": ">=16.5",
