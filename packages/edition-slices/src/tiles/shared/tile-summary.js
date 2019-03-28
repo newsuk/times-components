@@ -20,9 +20,7 @@ class TileSummary extends Component {
   renderContent() {
     const { summary, summaryStyle } = this.props;
 
-    return summary
-      ? () => <ArticleSummaryContent ast={summary} style={summaryStyle} />
-      : undefined;
+    return <ArticleSummaryContent ast={summary} style={summaryStyle} />;
   }
 
   renderFlags() {
@@ -56,14 +54,9 @@ class TileSummary extends Component {
   renderStrapline() {
     const { strapline, straplineStyle } = this.props;
 
-    return strapline
-      ? () => (
-          <ArticleSummaryStrapline
-            strapline={strapline}
-            style={straplineStyle}
-          />
-        )
-      : undefined;
+    return (
+      <ArticleSummaryStrapline strapline={strapline} style={straplineStyle} />
+    );
   }
 
   render() {
@@ -73,14 +66,16 @@ class TileSummary extends Component {
       },
       byline,
       bylineStyle,
+      strapline,
       style,
+      summary,
       labelColour
     } = this.props;
 
     return (
       <ArticleSummary
         bylineProps={byline ? { ast: byline, bylineStyle } : null}
-        content={this.renderContent}
+        content={summary ? this.renderContent : undefined}
         flags={this.renderFlags}
         headline={this.renderHeadline}
         label={label}
@@ -91,7 +86,7 @@ class TileSummary extends Component {
           isVideo: hasVideo,
           title: label
         }}
-        strapline={this.renderStrapline}
+        strapline={strapline ? this.renderStrapline : undefined}
         style={style}
       />
     );
