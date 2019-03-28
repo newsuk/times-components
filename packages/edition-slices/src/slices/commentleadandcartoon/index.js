@@ -1,23 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import { CommentLeadAndCartoon } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
 import { TileP, TileQ, TileAH, TileAI } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const CommentLeadAndCartoonSlice = ({ onPress, slice: { lead, cartoon } }) => (
-  <ResponsiveSlice
-    renderMedium={editionBreakpoint => (
-      <CommentLeadAndCartoon
-        breakpoint={editionBreakpoint}
-        renderCartoon={() => (
-          <TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />
-        )}
-        renderLead={() => (
-          <TileAH onPress={onPress} tile={lead} tileName="lead" />
-        )}
-      />
-    )}
-    renderSmall={editionBreakpoint => (
+class CommentLeadAndCartoonSlice extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSmall = this.renderSmall.bind(this);
+    this.renderMedium = this.renderMedium.bind(this);
+  }
+
+  renderSmall(editionBreakpoint) {
+    const {
+      onPress,
+      slice: { lead, cartoon }
+    } = this.props;
+
+    return (
       <CommentLeadAndCartoon
         breakpoint={editionBreakpoint}
         renderCartoon={() => (
@@ -27,9 +27,37 @@ const CommentLeadAndCartoonSlice = ({ onPress, slice: { lead, cartoon } }) => (
           <TileP onPress={onPress} tile={lead} tileName="lead" />
         )}
       />
-    )}
-  />
-);
+    );
+  }
+
+  renderMedium(editionBreakpoint) {
+    const {
+      onPress,
+      slice: { lead, cartoon }
+    } = this.props;
+
+    return (
+      <CommentLeadAndCartoon
+        breakpoint={editionBreakpoint}
+        renderCartoon={() => (
+          <TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />
+        )}
+        renderLead={() => (
+          <TileAH onPress={onPress} tile={lead} tileName="lead" />
+        )}
+      />
+    );
+  }
+
+  render() {
+    return (
+      <ResponsiveSlice
+        renderMedium={this.renderMedium}
+        renderSmall={this.renderSmall}
+      />
+    );
+  }
+}
 
 CommentLeadAndCartoonSlice.propTypes = {
   onPress: PropTypes.func.isRequired,

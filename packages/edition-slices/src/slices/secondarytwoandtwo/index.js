@@ -1,32 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { SecondaryTwoAndTwoSlice } from "@times-components/slice-layout";
 import { TileC, TileG, TileV } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const SecondaryTwoAndTwo = ({
-  onPress,
-  slice: { secondary1, secondary2, support1, support2 }
-}) => (
-  <ResponsiveSlice
-    renderMedium={breakpoint => (
-      <SecondaryTwoAndTwoSlice
-        breakpoint={breakpoint}
-        renderSecondary1={() => (
-          <TileV onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
-          <TileV onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
-      />
-    )}
-    renderSmall={breakpoint => (
+class SecondaryTwoAndTwo extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSmall = this.renderSmall.bind(this);
+    this.renderMedium = this.renderMedium.bind(this);
+  }
+
+  renderSmall(breakpoint) {
+    const {
+      onPress,
+      slice: { secondary1, secondary2, support1, support2 }
+    } = this.props;
+
+    return (
       <SecondaryTwoAndTwoSlice
         breakpoint={breakpoint}
         renderSecondary1={() => (
@@ -42,9 +33,43 @@ const SecondaryTwoAndTwo = ({
           <TileG onPress={onPress} tile={support2} tileName="support2" />
         )}
       />
-    )}
-  />
-);
+    );
+  }
+
+  renderMedium(breakpoint) {
+    const {
+      onPress,
+      slice: { secondary1, secondary2, support1, support2 }
+    } = this.props;
+
+    return (
+      <SecondaryTwoAndTwoSlice
+        breakpoint={breakpoint}
+        renderSecondary1={() => (
+          <TileV onPress={onPress} tile={secondary1} tileName="secondary1" />
+        )}
+        renderSecondary2={() => (
+          <TileV onPress={onPress} tile={secondary2} tileName="secondary2" />
+        )}
+        renderSupport1={() => (
+          <TileG onPress={onPress} tile={support1} tileName="support1" />
+        )}
+        renderSupport2={() => (
+          <TileG onPress={onPress} tile={support2} tileName="support2" />
+        )}
+      />
+    );
+  }
+
+  render() {
+    return (
+      <ResponsiveSlice
+        renderMedium={this.renderMedium}
+        renderSmall={this.renderSmall}
+      />
+    );
+  }
+}
 
 SecondaryTwoAndTwo.propTypes = {
   onPress: PropTypes.func.isRequired,
