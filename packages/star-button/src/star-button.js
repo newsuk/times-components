@@ -4,19 +4,25 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { IconStar } from "@times-components/icons";
 
+const starStates = {
+  disabled: "disabled",
+  initial: "initial",
+  selected: "selected"
+};
+
 class StarButton extends Component {
   constructor(props) {
     super(props);
 
     const stars = {
-      default: {
-        fillColour: "none",
-        opacity: "1",
-        strokeColour: colours.functional.secondary
-      },
       disabled: {
         fillColour: "none",
         opacity: "0.4",
+        strokeColour: colours.functional.secondary
+      },
+      initial: {
+        fillColour: "none",
+        opacity: "1",
         strokeColour: colours.functional.secondary
       },
       selected: {
@@ -30,12 +36,12 @@ class StarButton extends Component {
   }
 
   render() {
-    const { height, onPress } = this.props;
+    const { height, onPress, starState } = this.props;
     const { star: { fillColour, opacity, strokeColour } } = this.state;
-    const disabled = this.props.starState === 'disabled';
-    
+    const disabled = starState === starStates.disabled;
+
     return (
-      <TouchableOpacity onPress={onPress} disabled={disabled}>
+      <TouchableOpacity disabled={disabled} onPress={onPress}>
         <IconStar
           fillColour={fillColour}
           height={height}
@@ -50,12 +56,13 @@ class StarButton extends Component {
 StarButton.propTypes = {
   height: PropTypes.number,
   onPress: PropTypes.func.isRequired,
-  starState: PropTypes.oneOf(["default", "disabled", "selected"])
+  starState: PropTypes.oneOf(Object.keys(starStates))
 };
 
 StarButton.defaultProps = {
   height: 18,
-  starState: "default"
+  starState: starStates.initial
 };
 
+export { starStates };
 export default StarButton;
