@@ -47,7 +47,7 @@ class TimesImage extends Component {
       layout.width,
       layout.height,
       layout.width,
-      layout.width / aspectRatio
+      aspectRatio ? layout.width / aspectRatio : layout.height
     );
 
     this.setState({ dimensions: { height, width } });
