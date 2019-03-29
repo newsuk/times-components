@@ -145,48 +145,13 @@ exports[`section page 1`] = `
         />
       </View>
     </View>
-    <View>
-      <SecondaryOneSlice />
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <SecondaryFourSlice />
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <SecondaryTwoNoPicAndTwoSlice />
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <ListTwoAndSixNoPicSlice />
-    </View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
   </View>
 </RCTScrollView>
 `;

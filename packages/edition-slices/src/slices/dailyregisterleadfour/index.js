@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import { ItemRowSeparator } from "@times-components/slice-layout";
@@ -7,11 +7,18 @@ import { TileS } from "../../tiles";
 import styleFactory from "./styles";
 import Logo from "./logo";
 
-const DailyRegisterLeadFour = ({
-  slice: { birthdaysToday, briefing, natureNotes, onThisDay }
-}) => {
-  const renderSlice = breakpoint => {
+class DailyRegisterLeadFour extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSlice = this.renderSlice.bind(this);
+  }
+
+  renderSlice(breakpoint) {
+    const {
+      slice: { birthdaysToday, briefing, natureNotes, onThisDay }
+    } = this.props;
     const styles = styleFactory(breakpoint);
+
     return (
       <View style={styles.container}>
         <Logo
@@ -42,17 +49,19 @@ const DailyRegisterLeadFour = ({
         <TileS tile={birthdaysToday} />
       </View>
     );
-  };
+  }
 
-  return (
-    <ResponsiveSlice
-      renderHuge={renderSlice}
-      renderMedium={renderSlice}
-      renderSmall={renderSlice}
-      renderWide={renderSlice}
-    />
-  );
-};
+  render() {
+    return (
+      <ResponsiveSlice
+        renderHuge={this.renderSlice}
+        renderMedium={this.renderSlice}
+        renderSmall={this.renderSlice}
+        renderWide={this.renderSlice}
+      />
+    );
+  }
+}
 
 DailyRegisterLeadFour.propTypes = {
   slice: PropTypes.shape({

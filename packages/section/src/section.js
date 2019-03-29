@@ -65,6 +65,7 @@ class Section extends Component {
       <Responsive>
         <FlatList
           data={data}
+          initialNumToRender={5}
           ItemSeparatorComponent={
             !isPuzzle &&
             (() => (
@@ -79,6 +80,7 @@ class Section extends Component {
           }
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={this.renderItem}
+          windowSize={5}
         />
       </Responsive>
     );

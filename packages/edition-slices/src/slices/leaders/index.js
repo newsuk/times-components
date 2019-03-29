@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text } from "react-native";
 import { SectionContext } from "@times-components/context";
 import { Leaders } from "@times-components/slice-layout";
@@ -8,62 +8,85 @@ import styles from "./styles";
 import { ResponsiveSlice } from "../shared";
 import MastHead from "./masthead";
 
-const renderHead = publicationName => (
-  <View style={styles.mastheadContainer}>
-    <MastHead publicationName={publicationName} />
-    <View style={styles.headingContainer}>
-      <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
-    </View>
-  </View>
+const renderHead = () => (
+  <SectionContext.Consumer>
+    {({ publicationName }) => (
+      <View style={styles.mastheadContainer}>
+        <MastHead publicationName={publicationName} />
+        <View style={styles.headingContainer}>
+          <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
+        </View>
+      </View>
+    )}
+  </SectionContext.Consumer>
 );
 
-const LeadersSlice = ({ onPress, slice: { leader1, leader2, leader3 } }) => {
-  const renderSmallSlice = breakpoint => (
-    <Leaders
-      breakpoint={breakpoint}
-      renderLeader1={() => (
-        <TileM onPress={onPress} tile={leader1} tileName="leader1" />
-      )}
-      renderLeader2={() => (
-        <TileM onPress={onPress} tile={leader2} tileName="leader2" />
-      )}
-      renderLeader3={() => (
-        <TileM onPress={onPress} tile={leader3} tileName="leader3" />
-      )}
-    />
-  );
+class LeadersSlice extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSmall = this.renderSmall.bind(this);
+    this.renderHuge = this.renderHuge.bind(this);
+  }
 
-  const renderHugeSlice = breakpoint => (
-    <Leaders
-      breakpoint={breakpoint}
-      renderLeader1={() => (
-        <TileAG onPress={onPress} tile={leader1} tileName="leader1" />
-      )}
-      renderLeader2={() => (
-        <TileAG onPress={onPress} tile={leader2} tileName="leader2" />
-      )}
-      renderLeader3={() => (
-        <TileAG onPress={onPress} tile={leader3} tileName="leader3" />
-      )}
-    />
-  );
+  renderSmall(breakpoint) {
+    const {
+      onPress,
+      slice: { leader1, leader2, leader3 }
+    } = this.props;
 
-  return (
-    <SectionContext.Consumer>
-      {({ publicationName }) => (
-        <View style={styles.container}>
-          {renderHead(publicationName)}
-          <ResponsiveSlice
-            renderHuge={renderHugeSlice}
-            renderMedium={renderSmallSlice}
-            renderSmall={renderSmallSlice}
-            renderWide={renderHugeSlice}
-          />
-        </View>
-      )}
-    </SectionContext.Consumer>
-  );
-};
+    return (
+      <Leaders
+        breakpoint={breakpoint}
+        renderLeader1={() => (
+          <TileM onPress={onPress} tile={leader1} tileName="leader1" />
+        )}
+        renderLeader2={() => (
+          <TileM onPress={onPress} tile={leader2} tileName="leader2" />
+        )}
+        renderLeader3={() => (
+          <TileM onPress={onPress} tile={leader3} tileName="leader3" />
+        )}
+      />
+    );
+  }
+
+  renderHuge(breakpoint) {
+    const {
+      onPress,
+      slice: { leader1, leader2, leader3 }
+    } = this.props;
+
+    return (
+      <Leaders
+        breakpoint={breakpoint}
+        renderLeader1={() => (
+          <TileAG onPress={onPress} tile={leader1} tileName="leader1" />
+        )}
+        renderLeader2={() => (
+          <TileAG onPress={onPress} tile={leader2} tileName="leader2" />
+        )}
+        renderLeader3={() => (
+          <TileAG onPress={onPress} tile={leader3} tileName="leader3" />
+        )}
+      />
+    );
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        {renderHead()}
+        <ResponsiveSlice
+          renderHuge={this.renderHuge}
+          renderMedium={this.renderSmall}
+          renderSmall={this.renderSmall}
+          renderWide={this.renderHuge}
+        />
+      </View>
+    );
+  }
+}
+
 LeadersSlice.propTypes = {
   onPress: PropTypes.func.isRequired,
   slice: PropTypes.shape({

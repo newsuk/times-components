@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import propTypes from "./proptypes";
@@ -6,8 +6,17 @@ import stylesFactory from "./styles";
 import { ResponsiveSlice } from "../shared";
 import { TileAJ, TileAK } from "../../tiles";
 
-const Puzzle = ({ onPress, slice: { puzzles } }) => {
-  const renderPuzzles = (breakpoint = editionBreakpoints.small) => {
+class Puzzle extends Component {
+  constructor(props) {
+    super(props);
+    this.renderPuzzles = this.renderPuzzles.bind(this);
+  }
+
+  renderPuzzles(breakpoint) {
+    const {
+      onPress,
+      slice: { puzzles }
+    } = this.props;
     const { container, tileContainer } = stylesFactory(breakpoint);
     const Tile = breakpoint === editionBreakpoints.small ? TileAJ : TileAK;
 
@@ -26,15 +35,17 @@ const Puzzle = ({ onPress, slice: { puzzles } }) => {
         ))}
       </View>
     );
-  };
+  }
 
-  return (
-    <ResponsiveSlice
-      renderMedium={breakpoint => renderPuzzles(breakpoint)}
-      renderSmall={breakpoint => renderPuzzles(breakpoint)}
-    />
-  );
-};
+  render() {
+    return (
+      <ResponsiveSlice
+        renderMedium={this.renderPuzzles}
+        renderSmall={this.renderPuzzles}
+      />
+    );
+  }
+}
 
 Puzzle.propTypes = propTypes;
 
