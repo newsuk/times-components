@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.0...@times-components/fixture-generator@0.22.1) (2019-03-29)
+
+
+### Bug Fixes
+
+* Use listing asset override ([#1826](https://github.com/newsuk/times-components/issues/1826)) ([ba9822a](https://github.com/newsuk/times-components/commit/ba9822a))
+
+
+
+
+
 # [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.21.0...@times-components/fixture-generator@0.22.0) (2019-03-22)
 
 
