@@ -118,6 +118,7 @@ exports[`1. article in depth - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
+            "justifyContent": "center",
           }
         }
       >
@@ -139,6 +140,7 @@ exports[`1. article in depth - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
+            "justifyContent": "center",
           }
         }
       >

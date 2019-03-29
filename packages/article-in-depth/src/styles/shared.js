@@ -58,7 +58,8 @@ const sharedStyles = {
   },
   meta: {
     flexDirection: "row",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: "center"
   },
   metaContainer: {
     alignItems: "center",
