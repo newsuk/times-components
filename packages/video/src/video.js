@@ -33,6 +33,7 @@ const Video = ({
       {skySports && <SkySportsBanner />}
       {poster ? (
         <Image
+          aspectRatio={width / height}
           style={{
             height,
             width
