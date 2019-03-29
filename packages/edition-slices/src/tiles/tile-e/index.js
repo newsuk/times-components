@@ -16,7 +16,10 @@ const TileE = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={4 / 5}
         style={styles.imageContainer}
-        uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop45")}
+        uri={getCrop(
+          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
+          "crop45"
+        )}
       />
       <TileSummary
         headlineStyle={styles.headline}

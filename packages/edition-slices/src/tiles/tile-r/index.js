@@ -16,7 +16,10 @@ const TileR = ({ onPress, tile }) => (
       <TileSummary headlineStyle={styles.headline} tile={tile} />
       <TileImage
         aspectRatio={16 / 9}
-        uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop169")}
+        uri={getCrop(
+          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
+          "crop169"
+        )}
       />
     </View>
   </TileLink>

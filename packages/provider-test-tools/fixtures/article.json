@@ -1028,6 +1028,37 @@
     "title": "Chris Reynolds Gordon at one of his party venues in London",
     "__typename": "Image"
   },
+  "listingAsset": {
+    "caption": "Chris Reynolds Gordon at one of his party venues in London-la",
+    "credits": "Gareth Philips",
+    "crop169": {
+      "ratio": "16:9",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0"
+    },
+    "crop32": {
+      "ratio": "3:2",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=4272%2C2848%2C0%2C0"
+    },
+    "crop1251": {
+      "ratio": "1.25:1",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=3560%2C2848%2C356%2C0"
+    },
+    "crop11": {
+      "ratio": "1:1",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2848%2C2848%2C712%2C0"
+    },
+    "crop45": {
+      "ratio": "4:5",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2278%2C2848%2C997%2C0"
+    },
+    "crop23": {
+      "ratio": "2:3",
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=1899%2C2848%2C1187%2C0"
+    },
+    "id": "363b03a1-2ce6-4b94-b053-0d35316548c5",
+    "title": "Chris Reynolds Gordon at one of his party venues in London-la",
+    "__typename": "Image"
+  },
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
   "relatedArticleSlice": {

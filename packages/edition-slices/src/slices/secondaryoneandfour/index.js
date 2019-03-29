@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { SectionContext } from "@times-components/context";
@@ -11,11 +11,18 @@ import { TileO, TileN } from "../../tiles";
 import styleFactory from "./styles";
 import { ResponsiveSlice } from "../shared";
 
-const SecondaryOneAndFour = ({
-  onPress,
-  slice: { secondary, support1, support2, support3, support4 }
-}) => {
-  const renderSlice = breakpoint => {
+class SecondaryOneAndFour extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSlice = this.renderSlice.bind(this);
+  }
+
+  renderSlice(breakpoint) {
+    const {
+      onPress,
+      slice: { secondary, support1, support2, support3, support4 }
+    } = this.props;
+
     const styles = styleFactory(breakpoint);
     return (
       <SectionContext.Consumer>
@@ -55,12 +62,17 @@ const SecondaryOneAndFour = ({
         )}
       </SectionContext.Consumer>
     );
-  };
+  }
 
-  return (
-    <ResponsiveSlice renderMedium={renderSlice} renderSmall={renderSlice} />
-  );
-};
+  render() {
+    return (
+      <ResponsiveSlice
+        renderMedium={this.renderSlice}
+        renderSmall={this.renderSlice}
+      />
+    );
+  }
+}
 
 SecondaryOneAndFour.propTypes = {
   onPress: PropTypes.func.isRequired,

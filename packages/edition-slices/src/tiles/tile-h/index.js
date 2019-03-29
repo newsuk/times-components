@@ -23,7 +23,12 @@ const TileH = ({ onPress, tile }) => (
       <View style={styles.imageContainer}>
         <TileImage
           aspectRatio={2 / 3}
-          uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop23")}
+          uri={getCrop(
+            tile.leadAsset ||
+              tile.article.listingAsset ||
+              tile.article.leadAsset,
+            "crop23"
+          )}
         />
       </View>
     </View>

@@ -6,7 +6,7 @@ import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import { TileH } from "../src/tiles";
-import { getCrop, TileLink, TileSummary } from "../src/tiles/shared";
+import { getCrop, TileImage, TileLink, TileSummary } from "../src/tiles/shared";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -100,7 +100,15 @@ export default () => {
       test: () => {
         const tileWithLeadAssetOverride = {
           article: {
-            ...tile.article
+            ...tile.article,
+            listingAsset: {
+              crop23: {
+                ratio: "2:3",
+                url:
+                  "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fef809506-4b04-11e9-b472-f58a50a13bbb.jpg?crop=620%2C348%2C0%2C23"
+              },
+              id: "ef809506-4b04-11e9-b472-f58a50a13bbb"
+            }
           },
           ...tile,
           leadAsset: {
@@ -119,6 +127,35 @@ export default () => {
 
         expect(output.root.findByType(Image).props.uri).toEqual(
           tileWithLeadAssetOverride.leadAsset.crop23.url
+        );
+      }
+    },
+    {
+      name:
+        "Tile summary displays tile listingAsset override if no tile override is available",
+      test: () => {
+        const tileWithListingAssetOverride = {
+          ...tile,
+          article: {
+            ...tile.article,
+            listingAsset: {
+              crop23: {
+                ratio: "2:3",
+                url:
+                  "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fwf809506-4b04-11e9-b472-f58a50a13bbb.jpg?crop=620%2C348%2C0%2C23"
+              },
+              id: "wf809506-4b04-11e9-b472-f58a50a13bbb"
+            }
+          },
+          leadAsset: null
+        };
+
+        const output = TestRenderer.create(
+          <TileH onPress={() => {}} tile={tileWithListingAssetOverride} />
+        );
+
+        expect(output.root.findByType(TileImage).props.uri).toEqual(
+          tileWithListingAssetOverride.article.listingAsset.crop23.url
         );
       }
     },

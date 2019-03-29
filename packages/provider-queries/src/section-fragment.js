@@ -51,6 +51,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
             summary125: summary(maxCharCount: 125)
           }
           teaser125: teaser(maxCharCount: 125)
@@ -64,6 +67,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
             }
           }
         }
@@ -102,6 +108,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         support1 {
@@ -113,6 +122,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
             }
           }
         }
@@ -126,6 +138,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support3 {
@@ -138,6 +153,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support4 {
@@ -149,6 +167,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
             }
           }
         }
@@ -164,6 +185,9 @@ export default gql`
             leadAsset {
               ...leadAsset169and32
             }
+            listingAsset {
+              ...listingAsset169and32
+            }
           }
         }
         support {
@@ -175,6 +199,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -191,6 +218,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -227,6 +257,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support2 {
@@ -238,6 +271,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset45
+            }
+            listingAsset {
+              ...listingAsset45
             }
           }
         }
@@ -253,6 +289,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary2 {
@@ -264,6 +303,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -277,6 +319,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary4 {
@@ -288,6 +333,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -302,6 +350,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169and32
+            }
+            listingAsset {
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -319,6 +370,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         columnist {
@@ -330,6 +384,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset23
+            }
+            listingAsset {
+              ...listingAsset23
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -347,6 +404,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -386,6 +446,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary2 {
@@ -397,6 +460,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -410,6 +476,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
           }
         }
         support2 {
@@ -421,6 +490,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -452,6 +524,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
           }
         }
         support2 {
@@ -463,6 +538,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -478,6 +556,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         lead2 {
@@ -489,6 +570,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -565,6 +649,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
             summary125: summary(maxCharCount: 125)
           }
           teaser125: teaser(maxCharCount: 125)
@@ -578,6 +665,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -616,6 +706,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         support1 {
@@ -627,6 +720,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
             }
           }
         }
@@ -640,6 +736,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support3 {
@@ -652,6 +751,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support4 {
@@ -663,6 +765,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
             }
           }
         }
@@ -678,6 +783,9 @@ export default gql`
             leadAsset {
               ...leadAsset169and32
             }
+            listingAsset {
+              ...listingAsset169and32
+            }
           }
         }
         support {
@@ -689,6 +797,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -705,6 +816,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -741,6 +855,9 @@ export default gql`
             leadAsset {
               ...leadAsset32
             }
+            listingAsset {
+              ...listingAsset32
+            }
           }
         }
         support2 {
@@ -752,6 +869,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset45
+            }
+            listingAsset {
+              ...listingAsset45
             }
           }
         }
@@ -767,6 +887,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary2 {
@@ -778,6 +901,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -791,6 +917,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary4 {
@@ -802,6 +931,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -816,6 +948,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169and32
+            }
+            listingAsset {
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -833,6 +968,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         columnist {
@@ -844,6 +982,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset23
+            }
+            listingAsset {
+              ...listingAsset23
             }
             summary125: summary(maxCharCount: 125)
           }
@@ -861,6 +1002,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -900,6 +1044,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         secondary2 {
@@ -911,6 +1058,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -924,6 +1074,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
           }
         }
         support2 {
@@ -935,6 +1088,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -966,6 +1122,9 @@ export default gql`
             leadAsset {
               ...leadAsset11
             }
+            listingAsset {
+              ...listingAsset11
+            }
           }
         }
         support2 {
@@ -977,6 +1136,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset11
+            }
+            listingAsset {
+              ...listingAsset11
             }
           }
         }
@@ -992,6 +1154,9 @@ export default gql`
             leadAsset {
               ...leadAsset169
             }
+            listingAsset {
+              ...listingAsset169
+            }
           }
         }
         lead2 {
@@ -1003,6 +1168,9 @@ export default gql`
             ...baseArticleProps
             leadAsset {
               ...leadAsset169
+            }
+            listingAsset {
+              ...listingAsset169
             }
           }
         }
@@ -1084,6 +1252,104 @@ export default gql`
     }
   }
 
+  fragment listingAsset32 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop32: crop(ratio: "3:2") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop32: crop(ratio: "3:2") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment listingAsset11 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop11: crop(ratio: "1:1") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop11: crop(ratio: "1:1") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment listingAsset45 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop45: crop(ratio: "4:5") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop45: crop(ratio: "4:5") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment listingAsset23 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop23: crop(ratio: "2:3") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop23: crop(ratio: "2:3") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment listingAsset169and32 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop32: crop(ratio: "3:2") {
+          ratio
+          url
+        }
+        crop169: crop(ratio: "16:9") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop32: crop(ratio: "3:2") {
+        ratio
+        url
+      }
+      crop169: crop(ratio: "16:9") {
+        ratio
+        url
+      }
+    }
+  }
+
   fragment leadAsset32 on Media {
     __typename
     ... on Video {
@@ -1150,6 +1416,24 @@ export default gql`
     }
     ... on Image {
       crop23: crop(ratio: "2:3") {
+        ratio
+        url
+      }
+    }
+  }
+
+  fragment listingAsset169 on Media {
+    __typename
+    ... on Video {
+      posterImage {
+        crop169: crop(ratio: "16:9") {
+          ratio
+          url
+        }
+      }
+    }
+    ... on Image {
+      crop169: crop(ratio: "16:9") {
         ratio
         url
       }
