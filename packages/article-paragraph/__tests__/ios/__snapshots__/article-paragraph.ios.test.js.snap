@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. paragraph 1`] = `
+<View>
+  <Text
+    selectable={true}
+  >
+    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  </Text>
+</View>
+`;
+
+exports[`2. empty paragraph 1`] = `null`;
+
+exports[`3. paragraph with a drop cap 1`] = `
+<View>
+  <View>
+    <View>
+      <Text
+        selectable={true}
+      >
+        T
+      </Text>
+    </View>
+    <Text>
+      his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.  
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`4. paragraph with a short text and a drop cap 1`] = `
+<View>
+  <View>
+    <View>
+      <Text
+        selectable={true}
+      >
+        T
+      </Text>
+    </View>
+    <Text>
+      his being Black History  
+    </Text>
+  </View>
+</View>
+`;
