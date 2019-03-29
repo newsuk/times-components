@@ -5,7 +5,7 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import Column from "../column";
 import { ItemColSeparator } from "../shared";
 import { propTypes, defaultProps } from "./proptypes";
-import styles from "./styles";
+import styleFactory from "./styles";
 
 const LeadTwoNoPicAndTwoSlice = ({
   breakpoint,
@@ -14,6 +14,32 @@ const LeadTwoNoPicAndTwoSlice = ({
   renderSupport1,
   renderSupport2
 }) => {
+  const styles = styleFactory(breakpoint);
+
+  if (breakpoint === editionBreakpoints.huge) {
+    return (
+      <View style={styles.container}>
+        <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+        <ItemColSeparator />
+        <View style={styles.middleTile}>{renderSupport1()}</View>
+        <ItemColSeparator />
+        <View style={styles.column}>{renderSupport2()}</View>
+      </View>
+    );
+  }
+
+  if (breakpoint === editionBreakpoints.wide) {
+    return (
+      <View style={styles.container}>
+        <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+        <ItemColSeparator />
+        <View style={styles.middleTile}>{renderSupport1()}</View>
+        <ItemColSeparator />
+        <View style={styles.column}>{renderSupport2()}</View>
+      </View>
+    );
+  }
+
   if (breakpoint === editionBreakpoints.small) {
     return (
       <Column

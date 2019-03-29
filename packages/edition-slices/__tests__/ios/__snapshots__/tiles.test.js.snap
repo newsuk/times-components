@@ -1227,3 +1227,50 @@ exports[`31. tile ak 1`] = `
   </View>
 </Link>
 `;
+
+exports[`32. tile al 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1.5}
+        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        This is tile headline
+      </Text>
+      <Text>
+        <Text>
+          
+          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+          ...
+        </Text>
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
