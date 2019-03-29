@@ -39,7 +39,8 @@ import {
   TileAG,
   TileAH,
   TileAI,
-  TileAM
+  TileAM,
+  TileAN
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -210,6 +211,10 @@ const tileStories = [
   {
     name: "Tile AM - Top image, 35pt headline, with teaser",
     Tile: TileAM
+  },
+  {
+    name: "Tile AN - Roundel image, 22pt headline, with teaser",
+    Tile: TileAN
   }
 ];
 
