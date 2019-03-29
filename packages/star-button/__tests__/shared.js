@@ -2,6 +2,10 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import StarButton from "../src/star-button";
 
+jest.mock("@times-components/icons", () => ({
+  IconStar: "IconStar"
+}));
+
 export default () => {
   it("renders default", () => {
     const testInstance = TestRenderer.create(<StarButton onPress={() => {}} />);

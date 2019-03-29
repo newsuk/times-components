@@ -13,6 +13,10 @@ jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 
+jest.mock("@times-components/icons", () => ({
+  IconStar: "IconStar"
+}));
+
 const tile = mockEditionSlice(1).items[0];
 
 export default () => {

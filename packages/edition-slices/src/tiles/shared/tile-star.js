@@ -8,11 +8,8 @@ class TileStar extends Component {
     super(props);
 
     const { articleId, savedArticles } = props;
-    this.setStarState(savedArticles, articleId);
-  }
-
-  setStarState(savedArticles, articleId) {
     const starState = this.getStarState(savedArticles, articleId);
+
     this.state = { starState };
   }
 
@@ -27,9 +24,10 @@ class TileStar extends Component {
 
   onStarPress = () => {
     const { articleId, onArticleSavePress, savedArticles } = this.props;
-    this.setStarState(savedArticles, articleId);
-
+    const starState = this.getStarState(savedArticles, articleId);
     const isSaved = savedArticles && savedArticles[articleId];
+
+    this.setState({ starState });
     onArticleSavePress(!isSaved, articleId);
   };
 
@@ -43,6 +41,17 @@ class TileStar extends Component {
   }
 }
 
+TileStar.propTypes = {
+  articleId: PropTypes.string.isRequired,
+  onArticleSavePress: PropTypes.func,
+  savedArticles: PropTypes.shape({})
+};
+
+TileStar.defaultProps = {
+  onArticleSavePress: () => {},
+  savedArticles: null
+};
+
 const TileStarProvider = ({ articleId }) => (
   <SectionContext.Consumer>
     {({ onArticleSavePress, savedArticles }) => (
@@ -54,17 +63,6 @@ const TileStarProvider = ({ articleId }) => (
     )}
   </SectionContext.Consumer>
 );
-
-TileStar.propTypes = {
-  articleId: PropTypes.string.isRequired,
-  onArticleSavePress: PropTypes.func,
-  savedArticles: PropTypes.shape({})
-};
-
-TileStar.defaultProps = {
-  onArticleSavePress: () => {},
-  savedArticles: null
-};
 
 TileStarProvider.propTypes = {
   articleId: PropTypes.string.isRequired
