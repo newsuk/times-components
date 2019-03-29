@@ -18,10 +18,13 @@ class StarButton extends Component {
 
   render() {
     const { height, onPress, starState } = this.props;
-    const { star: { fillColour, opacity, strokeColour } } = this.state;
+    const {
+      star: { fillColour, opacity, strokeColour }
+    } = this.state;
     const disabled = starState === starStates.disabled;
 
     return (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <Link disabled={disabled} onPress={onPress}>
         <IconStar
           fillColour={fillColour}

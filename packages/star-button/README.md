@@ -11,8 +11,7 @@ A star button component which is clickable and exposes three states: `initial`, 
 import StarButton, { starStates } from "@times-components/star-button";
 
 // works this way
-<StarButton onPress={this.onStarPress} starState={starState} />
-
+<StarButton onPress={this.onStarPress} starState={starState} />;
 ```
 
 `starState` prop controls the state of the star. It changes colours and opacity based on the different state.
