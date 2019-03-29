@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.47.1...@times-components/edition-slices@0.48.0) (2019-03-29)
+
+
+### Features
+
+* section perf improvements ([#1830](https://github.com/newsuk/times-components/issues/1830)) ([b2bdd57](https://github.com/newsuk/times-components/commit/b2bdd57))
+
+
+
+
+
 ## [0.47.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.47.0...@times-components/edition-slices@0.47.1) (2019-03-29)
 
 
