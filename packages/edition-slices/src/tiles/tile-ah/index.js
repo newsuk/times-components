@@ -30,7 +30,12 @@ class TileAH extends Component {
             aspectRatio={1}
             borderRadius={containerWidth * 0.15}
             style={styles.imageContainer}
-            uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop11")}
+            uri={getCrop(
+              tile.leadAsset ||
+                tile.article.listingAsset ||
+                tile.article.leadAsset,
+              "crop11"
+            )}
           />
           <TileSummary
             byline={tile.article.byline}
