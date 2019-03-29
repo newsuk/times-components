@@ -27,7 +27,7 @@ class ArticleInDepth extends Component {
   }
 
   renderHeader({ width }) {
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
     const {
       backgroundColour,
       byline,
@@ -58,6 +58,7 @@ class ArticleInDepth extends Component {
             <ArticleLeadAsset
               {...getLeadAsset(article)}
               getImageCrop={getStandardTemplateCrop}
+              onImagePress={onImagePress}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) => <CentredCaption {...caption} />}
               style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
@@ -104,6 +105,7 @@ class ArticleInDepth extends Component {
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
+      onImagePress,
       onLinkPress,
       onRelatedArticlePress,
       onTopicPress,
@@ -123,6 +125,7 @@ class ArticleInDepth extends Component {
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
+        onImagePress={onImagePress}
         onLinkPress={onLinkPress}
         onRelatedArticlePress={onRelatedArticlePress}
         onTopicPress={onTopicPress}
