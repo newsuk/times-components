@@ -294,10 +294,13 @@ export const ArticleRowFlow = ({
         return {
           element: new Layout.InlineBlock({
             width: width * 0.35,
-            height: width * 0.35,
+            height: 100,
+            prevHeight: 0,
             getComponent() {
               return (
-                <View key={key}>
+                <View key={key} onLayout={e => {
+                  this.height = e.nativeEvent.layout.height
+                }}>
                   <ArticleImage
                     captionOptions={{
                       caption,

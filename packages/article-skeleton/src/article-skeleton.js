@@ -82,13 +82,18 @@ class ArticleSkeleton extends Component {
     if (props.data) {
       this.state = {
         dataSource: props.data,
-        width: screenWidth()
+        width: screenWidth(),
+        content: null
       };
     } else {
       this.state = {
         dataSource: {}
       };
     }
+  }
+
+  componentWillMount() {
+    this.layout()
   }
 
   onViewableItemsChanged(info) {
@@ -102,7 +107,14 @@ class ArticleSkeleton extends Component {
       .map(viewableItem => onViewed(viewableItem.item, dataSource));
   }
 
-  render() {
+  layout() {
+    if (this.state.content) {
+      this.state.content.layout()
+      this.setState({
+        content: this.state.content
+      })
+      return
+    }
     const {
       adConfig,
       analyticsStream,
@@ -166,59 +178,9 @@ class ArticleSkeleton extends Component {
 
     receiveChildList(articleData);
 
-    return (
-      <AdComposer adConfig={adConfig}>
-        <Responsive>
-          <View style={styles.articleContainer}>
-            <ScrollView>
-              <Gutter>
-                <Header width={Math.min(maxWidth, width)} />
-              </Gutter>
-              <View>
-              {
-                textFlow.block.children.map(block => {
-                  if (block instanceof Layout.InlineBlock) {
-                    return (<View style={{
-                      position: 'absolute',
-                      top: block.y,
-                      left: block.x,
-                      width: Math.min(maxWidth, width) * 0.35,
-                      zIndex: 1
-                    }}>
-                      {block.getComponent()}
-                    </View>)
-                  }
-                  if (block instanceof Layout.Block) {
-                    return block.getComponent()
-                  }
-                  if (block instanceof FText.Text) {
-                    return <Gutter>{block.getComponent(style => <View style={{ height: block.measuredHeight }}>
-                      {
-                        block.block.children.map(line =>
-                          line.idealSpans.map(span => (
-                            <Text
-                              style={{
-                                ...style,
-                                fontFamily: span.style.font,
-                                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
-                                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
-                                position: 'absolute',
-                                top: span.y - block.y,
-                                left: span.x
-                              }}
-                            >
-                              {span.text}
-                            </Text>))
-                        )
-                      }
-                    </View>
-                    )}</Gutter>
-                  }
-                })
-              }
-              </View>
-            </ScrollView></View></Responsive></AdComposer>
-    )
+    this.setState({
+      content: textFlow
+    })
     /*
     return (
       <AdComposer adConfig={adConfig}>
@@ -244,9 +206,9 @@ class ArticleSkeleton extends Component {
                 <Gutter>
                   {renderRow(
                     item,
+                    onAuthorPress,
                     onCommentsPress,
                     onCommentGuidelinesPress,
-                    onImagePress,
                     onLinkPress,
                     onRelatedArticlePress,
                     onTopicPress,
@@ -266,6 +228,77 @@ class ArticleSkeleton extends Component {
       </AdComposer>
     );
     */
+  }
+
+  render() {
+    console.log('render')
+    const {
+      adConfig,
+      Header,
+    } = this.props;
+    const { width } = this.state;
+    if (!this.state.content) {
+      return null
+    }
+    const textFlow = this.state.content
+    return (
+      <AdComposer adConfig={adConfig}>
+        <Responsive>
+          <View style={styles.articleContainer}>
+            <ScrollView>
+              <Gutter>
+                <Header width={Math.min(maxWidth, width)} />
+              </Gutter>
+              <View>
+              {
+                textFlow.block.children.map(block => {
+                  if (block instanceof Layout.InlineBlock) {
+                    return (<View onLayout={e => {
+                      //if (block.prevHeight !== block.height) {
+                      //  this.layout()
+                      //}
+                      block.prevHeight = block.height
+                    }} style={{
+                      position: 'absolute',
+                      top: block.y,
+                      left: block.x,
+                      width: Math.min(maxWidth, width) * 0.35,
+                      zIndex: 1
+                    }}>
+                      {block.getComponent()}
+                    </View>)
+                  }
+                  if (block instanceof Layout.Block) {
+                    return block.getComponent()
+                  }
+                  if (block instanceof FText.Text) {
+                    return <Gutter>{block.getComponent(style => <View style={{ height: block.measuredHeight }}>
+                      {
+                        block.block.children.map(line =>
+                          line.idealSpans.map(span => (
+                            <Text
+                              style={{
+                                ...style,
+                                fontFamily: span.style.font,
+                                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
+                                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
+                                position: 'absolute',
+                                top: span.y - block.y,
+                                left: block.x + span.x
+                              }}
+                            >
+                              {span.text}
+                            </Text>))
+                        )
+                      }
+                    </View>
+                    )}</Gutter>
+                  }
+                })
+              }
+              </View>
+            </ScrollView></View></Responsive></AdComposer>
+    )
   }
 }
 

@@ -16,6 +16,7 @@ export default class TextFlow extends Container {
   }
 
   layout() {
+    // FUTURE: this should be idempotent (return the same results if nothing changed)
     this.block = new Container();
     let vPosition = 0
     for (let i = 0; i < this.children.length; i++) {
