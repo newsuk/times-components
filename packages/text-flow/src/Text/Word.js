@@ -30,7 +30,7 @@ export default class Word extends Container {
         span.text = char.character
         span.measuredWidth = char.measuredWidth
         span.measuredHeight = char.measuredHeight
-        span.x = this.x + char.x
+        span.x = char.x
         span.y = this.y + char.y
         span.href = href
         spans.push(span)

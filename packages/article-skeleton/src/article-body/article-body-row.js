@@ -241,7 +241,8 @@ export const ArticleRowFlow = ({
   interactiveConfig,
   onLinkPress,
   onTwitterLinkPress,
-  onVideoPress
+  onVideoPress,
+  width
 }) =>
   renderTree(data, {
     ...flow,
@@ -266,27 +267,53 @@ export const ArticleRowFlow = ({
         })
       }
     },
-    image(key, { display, ratio, url, caption, credits }) {
-      return {
-        element: new Layout.Block({
-          getComponent() {
-            return (
-              <View key={key}>
-                <ArticleImage
-                  captionOptions={{
-                    caption,
-                    credits
-                  }}
-                  imageOptions={{
-                    display,
-                    ratio,
-                    uri: url
-                  }}
-                />
-              </View>
-            )
-          }
-        })
+    image(key, { display, ratio, url, caption, credits }, children, indx, node) {
+      if (display !== 'inline') {
+        return {
+          element: new Layout.Block({
+            getComponent() {
+              return (
+                <View key={key}>
+                  <ArticleImage
+                    captionOptions={{
+                      caption,
+                      credits
+                    }}
+                    imageOptions={{
+                      display,
+                      ratio,
+                      uri: url
+                    }}
+                  />
+                </View>
+              )
+            }
+          })
+        }
+      } else {
+        return {
+          element: new Layout.InlineBlock({
+            width: width * 0.35,
+            height: width * 0.35,
+            getComponent() {
+              return (
+                <View key={key}>
+                  <ArticleImage
+                    captionOptions={{
+                      caption,
+                      credits
+                    }}
+                    imageOptions={{
+                      display,
+                      ratio,
+                      uri: url
+                    }}
+                  />
+                </View>
+              )
+            }
+          })
+        }
       }
     },
     interactive(key, { id }) {
@@ -371,7 +398,8 @@ export const ArticleRowFlow = ({
           markup: children,
           font: 'TimesDigitalW04-Regular',
           size: 18,
-          lineHeight: 30
+          lineHeight: 30,
+          width: 660
         })
       }
     },

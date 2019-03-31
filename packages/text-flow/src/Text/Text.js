@@ -34,6 +34,7 @@ export default class Text extends Container {
   missingGlyphs = null;
   renderCycle = true;
   lineWidths = [660]
+  inlined = false
 
   //accessibility
   accessibilityText = null;
@@ -261,11 +262,15 @@ export default class Text extends Container {
     if (currentWord.children.length == 0) {
       var lw = this.words.pop();
       currentWord = this.words[this.words.length - 1];
-      hPosition = currentWord.measuredWidth;
-      vPosition = currentWord.measuredHeight;
+      if (currentWord) {
+        hPosition = currentWord.measuredWidth;
+        vPosition = currentWord.measuredHeight;
+      }
     }
-    currentWord.measuredWidth = hPosition;
-    currentWord.measuredHeight = vPosition;
+    if (currentWord) {
+      currentWord.measuredWidth = hPosition;
+      currentWord.measuredHeight = vPosition;
+    }
 
     return true;
   }

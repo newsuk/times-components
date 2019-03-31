@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
   },
   inlineCaption: {
     paddingLeft: spacing(2),
-    paddingTop: 0,
-    width: "50%"
+    paddingTop: 0
   },
   inlineContainer: {
     flexDirection: "row",
@@ -39,10 +38,12 @@ const styles = StyleSheet.create({
   inlineContainerTablet: {
     ...containerShared,
     paddingLeft: spacing(0),
-    paddingRight: spacing(0)
+    paddingRight: spacing(0),
+    width: '100%',
+    flexWrap: 'wrap'
   },
   inlineImage: {
-    width: "50%"
+    width: "100%"
   },
   primaryContainer: {
     flexDirection: "column",

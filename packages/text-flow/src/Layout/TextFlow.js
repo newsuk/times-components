@@ -65,7 +65,7 @@ export default class TextFlow extends Container {
               }
             });
           }
-          this.block.addChild(next)
+          next.inlined = true
           if (this.block.measuredWidth < (next.measuredWidth + child.measuredWidth)) {
             this.block.measuredWidth = next.measuredWidth + child.measuredWidth
           }

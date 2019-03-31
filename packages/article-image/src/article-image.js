@@ -14,6 +14,7 @@ const ArticleImageNative = props => {
     <ResponsiveContext.Consumer>
       {({ isTablet }) => (
         <View
+          onLayout={props.onLayout}
           key={uri}
           style={[
             styles[`${display}Container`],
