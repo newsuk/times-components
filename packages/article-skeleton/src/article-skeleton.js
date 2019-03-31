@@ -186,6 +186,9 @@ class ArticleSkeleton extends Component {
                             <Text
                               style={{
                                 ...style,
+                                fontFamily: span.style.font,
+                                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
+                                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
                                 position: 'absolute',
                                 top: span.y - block.y,
                                 left: span.x
