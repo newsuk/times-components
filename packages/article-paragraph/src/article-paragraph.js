@@ -20,9 +20,9 @@ const BodyParagraph = props => (
           {({ theme: { dropCapFont, scale } }) => {
             const stylesScaled = styleFactory(dropCapFont, scale);
             return (
-              <Text selectable style={stylesScaled.articleTextElement}>
-                {props.children}
-              </Text>
+              //<Text selectable style={stylesScaled.articleTextElement}>
+                props.children(stylesScaled.articleTextElement)
+              //</Text>
             );
           }}
         </Context.Consumer>
