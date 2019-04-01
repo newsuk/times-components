@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.14](https://github.com/newsuk/times-components/compare/@times-components/video@4.4.13...@times-components/video@4.4.14) (2019-04-01)
+
+
+### Bug Fixes
+
+* Handle null aspect ratio case in images ([#1836](https://github.com/newsuk/times-components/issues/1836)) ([8a8675c](https://github.com/newsuk/times-components/commit/8a8675c))
+
+
+
+
+
 ## [4.4.13](https://github.com/newsuk/times-components/compare/@times-components/video@4.4.12...@times-components/video@4.4.13) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/video

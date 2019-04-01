@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.1...@times-components/image@5.0.2) (2019-04-01)
+
+
+### Bug Fixes
+
+* Handle null aspect ratio case in images ([#1836](https://github.com/newsuk/times-components/issues/1836)) ([8a8675c](https://github.com/newsuk/times-components/commit/8a8675c))
+
+
+
+
+
 ## [5.0.1](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.0...@times-components/image@5.0.1) (2019-04-01)
 
 
