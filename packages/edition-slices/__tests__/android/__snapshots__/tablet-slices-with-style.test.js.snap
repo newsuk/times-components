@@ -87,7 +87,7 @@ exports[`2. daily universal register - medium 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
-          "marginVertical": 25,
+          "marginBottom": 25,
         }
       }
     >
@@ -1207,7 +1207,7 @@ exports[`17. daily universal register - wide 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
-          "marginVertical": 25,
+          "marginBottom": 25,
         }
       }
     >
@@ -2335,7 +2335,7 @@ exports[`32. daily universal register - huge 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
-          "marginVertical": 25,
+          "marginBottom": 25,
         }
       }
     >

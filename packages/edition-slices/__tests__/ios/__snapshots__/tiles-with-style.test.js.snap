@@ -1403,7 +1403,7 @@ exports[`19. tile s 1`] = `
     style={
       Object {
         "color": "#696969",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesDigitalW04",
         "fontSize": 14,
         "lineHeight": 20,
       }

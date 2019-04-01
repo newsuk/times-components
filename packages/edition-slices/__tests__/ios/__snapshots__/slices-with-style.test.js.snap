@@ -26,7 +26,7 @@ exports[`1. daily universal register 1`] = `
         "color": "#850029",
         "fontFamily": "TimesDigitalW04",
         "fontSize": 16,
-        "marginVertical": 25,
+        "marginBottom": 25,
       }
     }
   >
