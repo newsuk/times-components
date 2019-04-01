@@ -41,7 +41,7 @@ class TileP extends Component {
             byline={tile.article.byline}
             bylineStyle={styles.bylineOpinion}
             headlineStyle={styles.headline}
-            strapline={tile.strapline}
+            strapline={tile.strapline || tile.article.strapline}
             straplineStyle={styles.strapline}
             style={styles.summaryContainer}
             tile={tile}
