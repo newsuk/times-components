@@ -59,6 +59,7 @@ const styles = {
   },
   placeholderContainer: {
     alignItems: "center",
+    backgroundColor: colours.functional.backgroundSecondary,
     justifyContent: "center"
   },
   safeViewContainer: {

@@ -1,13 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
-import Gradient from "@times-components/gradient";
+import { Image, View } from "react-native";
 import styles from "./styles/index";
-import T from "./t";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
-function Placeholder({ dimensions, style }) {
+function Placeholder({ dimensions }) {
   if (!dimensions) {
     return null;
   }
@@ -15,11 +11,22 @@ function Placeholder({ dimensions, style }) {
   const { height, width } = dimensions;
 
   return (
-    <Gradient degrees={264} height={height} style={style} width={width}>
-      <View style={[styles.container, styles.placeholderContainer]}>
-        <T width={width} />
-      </View>
-    </Gradient>
+    <View
+      height={height}
+      style={[
+        styles.container,
+        styles.placeholderContainer,
+        styles.placeholderBackground
+      ]}
+      width={width}
+    >
+      <Image
+        resizeMode="contain"
+        // eslint-disable-next-line global-require
+        source={require("../assets/t.png")}
+        style={{ width: Math.floor(width / 4) }}
+      />
+    </View>
   );
 }
 
@@ -27,13 +34,11 @@ Placeholder.propTypes = {
   dimensions: PropTypes.shape({
     height: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired
-  }),
-  style: ViewPropTypesStyle
+  })
 };
 
 Placeholder.defaultProps = {
-  dimensions: null,
-  style: null
+  dimensions: null
 };
 
 export default Placeholder;
