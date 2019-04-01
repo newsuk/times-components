@@ -18,7 +18,11 @@ const TileAM = ({ onPress, tile }) => (
         style={styles.imageContainer}
         uri={getCrop(tile.leadAsset || tile.article.leadAsset, "crop169")}
       />
-      <TileSummary headlineStyle={styles.headline} tile={tile} summary={tile.teaser125 || tile.article.summary125} />
+      <TileSummary
+        headlineStyle={styles.headline}
+        summary={tile.teaser125 || tile.article.summary125}
+        tile={tile}
+      />
     </View>
   </TileLink>
 );

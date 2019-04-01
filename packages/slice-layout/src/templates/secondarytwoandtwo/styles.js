@@ -54,10 +54,10 @@ const hugeBreakpointStyles = {
 };
 
 const stylesToReturn = {
+  huge: hugeBreakpointStyles,
   medium: mediumBreakpointStyles,
   small: smallBreakpointStyles,
-  wide: wideBreakpointStyles,
-  huge: hugeBreakpointStyles
+  wide: wideBreakpointStyles
 };
 
 export default breakpoint =>

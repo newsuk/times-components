@@ -14,10 +14,10 @@ const styles = {
   },
   imageContainer: {
     borderColor: colours.functional.contrast,
+    borderRadius: 9999,
     borderWidth: 1,
     overflow: "hidden",
-    width: "30%",
-    borderRadius: 9999
+    width: "30%"
   },
   summaryContainer: {
     justifyContent: "center",

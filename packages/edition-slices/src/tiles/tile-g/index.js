@@ -17,9 +17,7 @@ const TileG = ({ onPress, tile }) => (
         aspectRatio={1}
         style={styles.imageContainer}
         uri={getCrop(
-          tile.leadAsset ||
-          tile.article.listingAsset ||
-          tile.article.leadAsset,
+          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
           "crop11"
         )}
       />

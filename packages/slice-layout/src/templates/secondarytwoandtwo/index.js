@@ -70,23 +70,23 @@ const SecondaryTwoAndTwoSlice = ({
     renderSupport2()
   ];
   return (
-      <View style={styles.container}>
-        <View key={renderRow[0].props.id} style={styles.secondaryItemContainer}>
-          {renderRow[0]}
-        </View>
-        <ItemColSeparator />
-        <View key={renderRow[1].props.id} style={styles.supportItemContainer}>
-          {renderRow[1]}
-        </View>
-        <ItemColSeparator />
-        <View key={renderRow[2].props.id} style={styles.secondaryItemContainer}>
-          {renderRow[2]}
-        </View>
-        <ItemColSeparator />
-        <View key={renderRow[3].props.id} style={styles.supportItemContainer}>
-          {renderRow[3]}
-        </View>
+    <View style={styles.container}>
+      <View key={renderRow[0].props.id} style={styles.secondaryItemContainer}>
+        {renderRow[0]}
       </View>
+      <ItemColSeparator />
+      <View key={renderRow[1].props.id} style={styles.supportItemContainer}>
+        {renderRow[1]}
+      </View>
+      <ItemColSeparator />
+      <View key={renderRow[2].props.id} style={styles.secondaryItemContainer}>
+        {renderRow[2]}
+      </View>
+      <ItemColSeparator />
+      <View key={renderRow[3].props.id} style={styles.supportItemContainer}>
+        {renderRow[3]}
+      </View>
+    </View>
   );
 };
 
