@@ -24,7 +24,7 @@ exports[`1. tile a 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -94,7 +94,7 @@ exports[`2. tile b 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -176,7 +176,7 @@ exports[`3. tile c 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -255,7 +255,7 @@ exports[`4. tile d 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -334,7 +334,7 @@ exports[`5. tile e 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -396,7 +396,7 @@ exports[`6. tile f 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -510,7 +510,7 @@ exports[`7. tile g 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -581,7 +581,7 @@ exports[`8. tile h 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -701,7 +701,7 @@ exports[`9. tile i 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -779,7 +779,7 @@ exports[`10. tile j 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -857,7 +857,7 @@ exports[`11. tile k 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -919,7 +919,7 @@ exports[`12. tile l 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1052,7 +1052,7 @@ exports[`14. tile n 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1128,7 +1128,7 @@ exports[`15. tile o 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1210,7 +1210,7 @@ exports[`16. tile p 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1331,7 +1331,7 @@ exports[`18. tile r 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1522,7 +1522,7 @@ exports[`20. tile t 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1592,7 +1592,7 @@ exports[`21. tile u 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1674,7 +1674,7 @@ exports[`22. tile v 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1746,7 +1746,7 @@ exports[`23. tile w 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1835,7 +1835,7 @@ exports[`24. tile x 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1920,7 +1920,7 @@ exports[`25. tile y 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -1998,7 +1998,7 @@ exports[`26. tile z 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2077,7 +2077,7 @@ exports[`27. tile aa 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2147,7 +2147,7 @@ exports[`28. tile ab 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2256,7 +2256,7 @@ exports[`29. tile ae 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2499,7 +2499,7 @@ exports[`33. tile al 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
