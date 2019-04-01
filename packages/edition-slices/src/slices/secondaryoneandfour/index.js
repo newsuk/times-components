@@ -38,25 +38,25 @@ class SecondaryOneAndFour extends Component {
             <ItemRowSeparator style={styles.separator} />
             <SecondaryOneAndFourSlice
               breakpoint={breakpoint}
-              renderSecondary={() => (
+              secondary={
                 <TileN
                   onPress={onPress}
                   tile={secondary}
                   tileName="secondary"
                 />
-              )}
-              renderSupport1={() => (
+              }
+              support1={
                 <TileO onPress={onPress} tile={support1} tileName="support1" />
-              )}
-              renderSupport2={() => (
+              }
+              support2={
                 <TileO onPress={onPress} tile={support2} tileName="support2" />
-              )}
-              renderSupport3={() => (
+              }
+              support3={
                 <TileO onPress={onPress} tile={support3} tileName="support3" />
-              )}
-              renderSupport4={() => (
+              }
+              support4={
                 <TileO onPress={onPress} tile={support4} tileName="support4" />
-              )}
+              }
             />
           </View>
         )}

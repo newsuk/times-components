@@ -688,7 +688,6 @@ exports[`10. secondary one and columnist - medium 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginBottom": 0,
           "marginVertical": 10,
         }
       }
@@ -1816,7 +1815,6 @@ exports[`25. secondary one and columnist - wide 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginBottom": 0,
           "marginVertical": 10,
         }
       }
@@ -2973,7 +2971,6 @@ exports[`40. secondary one and columnist - huge 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginBottom": 0,
           "marginVertical": 10,
         }
       }

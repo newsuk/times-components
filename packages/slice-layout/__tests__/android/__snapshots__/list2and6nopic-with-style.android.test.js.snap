@@ -59,41 +59,35 @@ exports[`1. list two and six no pic - small 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        support-1
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-2
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      }
+    />
+    <Text>
+      support-2
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-3
-      </Text>
-    </View>
+      }
+    />
+    <Text>
+      support-3
+    </Text>
   </View>
   <View
     style={
@@ -112,41 +106,35 @@ exports[`1. list two and six no pic - small 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        support-4
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+    <Text>
+      support-4
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-5
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      }
+    />
+    <Text>
+      support-5
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-6
-      </Text>
-    </View>
+      }
+    />
+    <Text>
+      support-6
+    </Text>
   </View>
 </View>
 `;
@@ -210,41 +198,35 @@ exports[`2. list two and six no pic - medium 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        support-1
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+    <Text>
+      support-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-2
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      }
+    />
+    <Text>
+      support-2
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-3
-      </Text>
-    </View>
+      }
+    />
+    <Text>
+      support-3
+    </Text>
   </View>
   <View
     style={
@@ -263,41 +245,35 @@ exports[`2. list two and six no pic - medium 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        support-4
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+    <Text>
+      support-4
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-5
-      </Text>
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
-          }
+      }
+    />
+    <Text>
+      support-5
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
-      />
-    </View>
-    <View>
-      <Text>
-        support-6
-      </Text>
-    </View>
+      }
+    />
+    <Text>
+      support-6
+    </Text>
   </View>
 </View>
 `;

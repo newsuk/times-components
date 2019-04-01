@@ -20,12 +20,8 @@ class CommentLeadAndCartoonSlice extends Component {
     return (
       <CommentLeadAndCartoon
         breakpoint={editionBreakpoint}
-        renderCartoon={() => (
-          <TileQ onPress={onPress} tile={cartoon} tileName="cartoon" />
-        )}
-        renderLead={() => (
-          <TileP onPress={onPress} tile={lead} tileName="lead" />
-        )}
+        cartoon={<TileQ onPress={onPress} tile={cartoon} tileName="cartoon" />}
+        lead={<TileP onPress={onPress} tile={lead} tileName="lead" />}
       />
     );
   }
@@ -39,12 +35,8 @@ class CommentLeadAndCartoonSlice extends Component {
     return (
       <CommentLeadAndCartoon
         breakpoint={editionBreakpoint}
-        renderCartoon={() => (
-          <TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />
-        )}
-        renderLead={() => (
-          <TileAH onPress={onPress} tile={lead} tileName="lead" />
-        )}
+        cartoon={<TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />}
+        lead={<TileAH onPress={onPress} tile={lead} tileName="lead" />}
       />
     );
   }

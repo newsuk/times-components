@@ -11,10 +11,10 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <SecondaryFourSlice
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSecondary3={() => createItem("secondary-3")}
-            renderSecondary4={() => createItem("secondary-4")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            secondary3={createItem("secondary-3")}
+            secondary4={createItem("secondary-4")}
           />
         );
 
@@ -27,10 +27,10 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryFourSlice
             breakpoint={editionBreakpoints.medium}
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSecondary3={() => createItem("secondary-3")}
-            renderSecondary4={() => createItem("secondary-4")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            secondary3={createItem("secondary-3")}
+            secondary4={createItem("secondary-4")}
           />
         );
 

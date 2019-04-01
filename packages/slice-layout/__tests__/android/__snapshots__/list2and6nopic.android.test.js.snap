@@ -15,43 +15,31 @@ exports[`1. list two and six no pic - small 1`] = `
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-1
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-2
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-3
-      </Text>
-    </View>
+    <Text>
+      support-1
+    </Text>
+    <View />
+    <Text>
+      support-2
+    </Text>
+    <View />
+    <Text>
+      support-3
+    </Text>
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-4
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-5
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-6
-      </Text>
-    </View>
+    <Text>
+      support-4
+    </Text>
+    <View />
+    <Text>
+      support-5
+    </Text>
+    <View />
+    <Text>
+      support-6
+    </Text>
   </View>
 </View>
 `;
@@ -71,43 +59,31 @@ exports[`2. list two and six no pic - medium 1`] = `
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-1
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-2
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-3
-      </Text>
-    </View>
+    <Text>
+      support-1
+    </Text>
+    <View />
+    <Text>
+      support-2
+    </Text>
+    <View />
+    <Text>
+      support-3
+    </Text>
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-4
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-5
-      </Text>
-      <View />
-    </View>
-    <View>
-      <Text>
-        support-6
-      </Text>
-    </View>
+    <Text>
+      support-4
+    </Text>
+    <View />
+    <Text>
+      support-5
+    </Text>
+    <View />
+    <Text>
+      support-6
+    </Text>
   </View>
 </View>
 `;

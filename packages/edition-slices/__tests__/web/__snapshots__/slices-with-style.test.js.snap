@@ -1358,6 +1358,7 @@ exports[`8. secondary one and columnist 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -1406,7 +1407,7 @@ exports[`8. secondary one and columnist 1`] = `
       />
     </div>
     <div
-      className="IS2 S1"
+      className="IS2"
     />
     <div
       className="IS3 S1"
@@ -2209,33 +2210,21 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="IS7 S1"
     >
+      <TileL
+        tileName="support1"
+      />
       <div
-        className="S1"
-      >
-        <TileL
-          tileName="support1"
-        />
-        <div
-          className="IS5 S1"
-        />
-      </div>
+        className="IS5 S1"
+      />
+      <TileL
+        tileName="support2"
+      />
       <div
-        className="S1"
-      >
-        <TileL
-          tileName="support2"
-        />
-        <div
-          className="IS6 S1"
-        />
-      </div>
-      <div
-        className="S1"
-      >
-        <TileL
-          tileName="support3"
-        />
-      </div>
+        className="IS6 S1"
+      />
+      <TileL
+        tileName="support3"
+      />
     </div>
     <div
       className="IS8"
@@ -2243,33 +2232,21 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="IS11 S1"
     >
+      <TileL
+        tileName="support4"
+      />
       <div
-        className="S1"
-      >
-        <TileL
-          tileName="support4"
-        />
-        <div
-          className="IS9 S1"
-        />
-      </div>
+        className="IS9 S1"
+      />
+      <TileL
+        tileName="support5"
+      />
       <div
-        className="S1"
-      >
-        <TileL
-          tileName="support5"
-        />
-        <div
-          className="IS10 S1"
-        />
-      </div>
-      <div
-        className="S1"
-      >
-        <TileL
-          tileName="support6"
-        />
-      </div>
+        className="IS10 S1"
+      />
+      <TileL
+        tileName="support6"
+      />
     </div>
   </div>
 </div>

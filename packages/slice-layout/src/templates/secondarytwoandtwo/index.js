@@ -3,90 +3,67 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
 import { defaultProps, propTypes } from "./proptypes";
-import { ItemColSeparator, ItemRowSeparator } from "../shared";
+import { ItemRowSeparator } from "../shared";
+import HorizontalLayout from "../horizontallayout";
 
 const SecondaryTwoAndTwoSlice = ({
   breakpoint,
-  renderSecondary1,
-  renderSecondary2,
-  renderSupport1,
-  renderSupport2
+  secondary1,
+  secondary2,
+  support1,
+  support2
 }) => {
   const styles = styleFactory(breakpoint);
   if (breakpoint === editionBreakpoints.small) {
-    const renderCol = [renderSecondary1(), renderSecondary2()];
-    const renderRow = [renderSupport1(), renderSupport2()];
     return (
       <Fragment>
-        <View style={styles.itemContainer}>
-          <View key={renderCol[0].props.id} style={styles.itemHalfWidth}>
-            {renderCol[0]}
-          </View>
-          <ItemColSeparator />
-          <View key={renderCol[1].props.id} style={styles.itemHalfWidth}>
-            {renderCol[1]}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.itemContainer}
+          tiles={[
+            { style: styles.itemHalfWidth, tile: secondary1 },
+            { style: styles.itemHalfWidth, tile: secondary2 }
+          ]}
+        />
         <ItemRowSeparator />
-        <View key={renderRow[0].props.id}>{renderRow[0]}</View>
+        <View>{support1}</View>
         <ItemRowSeparator />
-        <View key={renderRow[1].props.id}>{renderRow[1]}</View>
+        <View>{support2}</View>
       </Fragment>
     );
   }
 
   if (breakpoint === editionBreakpoints.medium) {
-    const renderRowOne = [renderSecondary1(), renderSecondary2()];
-    const renderRowTwo = [renderSupport1(), renderSupport2()];
     return (
       <View style={styles.container}>
-        <View style={styles.itemContainer}>
-          <View key={renderRowOne[0].props.id} style={styles.item}>
-            {renderRowOne[0]}
-          </View>
-          <ItemColSeparator />
-          <View key={renderRowOne[1].props.id} style={styles.item}>
-            {renderRowOne[1]}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.itemContainer}
+          tiles={[
+            { style: styles.item, tile: secondary1 },
+            { style: styles.item, tile: secondary2 }
+          ]}
+        />
         <ItemRowSeparator />
-        <View style={styles.itemContainer}>
-          <View key={renderRowTwo[0].props.id} style={styles.item}>
-            {renderRowTwo[0]}
-          </View>
-          <ItemColSeparator />
-          <View key={renderRowTwo[1].props.id} style={styles.item}>
-            {renderRowTwo[1]}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.itemContainer}
+          tiles={[
+            { style: styles.item, tile: support1 },
+            { style: styles.item, tile: support2 }
+          ]}
+        />
       </View>
     );
   }
 
-  const renderRow = [
-    renderSecondary1(),
-    renderSupport1(),
-    renderSecondary2(),
-    renderSupport2()
-  ];
   return (
-    <View style={styles.container}>
-      <View key={renderRow[0].props.id} style={styles.secondaryItemContainer}>
-        {renderRow[0]}
-      </View>
-      <ItemColSeparator />
-      <View key={renderRow[1].props.id} style={styles.supportItemContainer}>
-        {renderRow[1]}
-      </View>
-      <ItemColSeparator />
-      <View key={renderRow[2].props.id} style={styles.secondaryItemContainer}>
-        {renderRow[2]}
-      </View>
-      <ItemColSeparator />
-      <View key={renderRow[3].props.id} style={styles.supportItemContainer}>
-        {renderRow[3]}
-      </View>
-    </View>
+    <HorizontalLayout
+      containerStyle={styles.container}
+      tiles={[
+        { style: styles.secondaryItemContainer, tile: secondary1 },
+        { style: styles.supportItemContainer, tile: support1 },
+        { style: styles.secondaryItemContainer, tile: secondary2 },
+        { style: styles.supportItemContainer, tile: support2 }
+      ]}
+    />
   );
 };
 
