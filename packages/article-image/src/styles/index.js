@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     paddingLeft: spacing(0),
     paddingRight: spacing(0),
     width: '100%',
-    flexWrap: 'wrap'
+    flexDirection: 'column'
   },
   inlineImage: {
     width: "100%"

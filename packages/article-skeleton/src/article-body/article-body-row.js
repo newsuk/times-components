@@ -298,7 +298,7 @@ export const ArticleRowFlow = ({
             prevHeight: 0,
             getComponent() {
               return (
-                <View key={key} onLayout={e => {
+                <View key={key} style={{backgroundColor: 'red'}} onLayout={e => {
                   this.height = e.nativeEvent.layout.height
                 }}>
                   <ArticleImage

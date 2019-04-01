@@ -2,13 +2,14 @@ import Container from "./Container";
 import Text from "../Text/Text";
 import Block from "./Block";
 import InlineBlock from './InlineBlock'
-import BlockAlign from "./BlockAlign";
 
 export default class TextFlow extends Container {
   block = null
   width = 100
   height = 20
+  flow = []
 
+  // TODO: operate only on args and block, not children
   constructor(props = {}) {
     super()
     Object.assign(this, props)
@@ -16,14 +17,17 @@ export default class TextFlow extends Container {
   }
 
   layout() {
-    // FUTURE: this should be idempotent (return the same results if nothing changed)
     this.block = new Container();
     let vPosition = 0
-    for (let i = 0; i < this.children.length; i++) {
-      const child = this.children[i];
+    let i = 0
+    for (;i < this.flow.length;) {
+      const child = this.flow[i];
+      if (!child) {
+        break
+      }
       if (child instanceof InlineBlock) {
         let grabbed = i + 1
-        let next = this.children[grabbed]
+        let next = this.flow[grabbed]
 
         if (!(next instanceof Text)) {
           throw new Error("Float stacking is not supported")
@@ -39,8 +43,8 @@ export default class TextFlow extends Container {
         }
         elLines.push(this.width)
 
+        child.y = vPosition;
         this.block.addChild(child)
-        child.moveY(vPosition)
         let pulledLines = 0
         while (true) {
           if (!(next instanceof Text)) {
@@ -51,42 +55,28 @@ export default class TextFlow extends Container {
           next.lineWidths = elLines.slice(pulledLines)
           next.width = this.width
           next.layout()
-          next.moveY(vPosition)
-          next.moveX(child.x)
-          if (child.alignment === BlockAlign.LEFT) {
-            next.lines.forEach((line, indx) => {
-              if (next.lineWidths[indx] !== undefined && next.lineWidths[indx] !== next.width) {
-                line.x += child.width
-                line.children.forEach(word => {
-                  word.x += child.width
-                  word.children.forEach(char => {
-                    char.x += child.width
-                  })
-                })
-              }
-            });
-          }
-          next.inlined = true
           if (this.block.measuredWidth < (next.measuredWidth + child.measuredWidth)) {
             this.block.measuredWidth = next.measuredWidth + child.measuredWidth
           }
-          child.measuredHeight += next.measuredHeight
+          next.y = vPosition
           vPosition += next.measuredHeight
           pulledLines += next.lines.length + 1
-          child.addChild(next)
-          if (pulledLines >= elNumLines) {
-            break
-          }
+          next.block.children.forEach((line, i) => {
+            if (next.lineWidths[i] < this.width) {
+              line.x = child.width
+              line.children.forEach(word => {
+                word.moveX(child.width)
+              })
+            }
+          })
+          this.block.addChild(next)
           grabbed += 1
-          next = this.children[grabbed]
-          if (!next) {
+          next = this.flow[grabbed]
+          if (pulledLines >= elNumLines || !next) {
             break
           }
         }
         i = grabbed
-        if (child.alignment === BlockAlign.RIGHT) {
-          child.moveX(next.lines[0].measuredWidth)
-        }
         if (child.measuredHeight < child.height) {
           vPosition += child.height - child.measuredHeight
           this.block.measuredHeight += child.height
@@ -101,8 +91,9 @@ export default class TextFlow extends Container {
         if (this.block.measuredWidth < child.measuredWidth) {
           this.block.measuredWidth = child.measuredWidth
         }
-        child.moveY(vPosition)
+        child.y = vPosition
         vPosition += child.measuredHeight
+        i += 1
         continue
       }
       if (child instanceof Text) {
@@ -111,8 +102,9 @@ export default class TextFlow extends Container {
         if (this.block.measuredWidth < child.measuredWidth) {
           this.block.measuredWidth = child.measuredWidth
         }
-        child.moveY(vPosition)
+        child.y = vPosition
         vPosition += child.measuredHeight
+        i += 1
       }
     }
     this.measuredHeight = this.block.measuredHeight

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { ResponsiveContext } from "@times-components/responsive";

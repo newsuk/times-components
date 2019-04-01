@@ -162,7 +162,7 @@ class ArticleSkeleton extends Component {
 
     const textFlow = new Layout.TextFlow({
       width: 660,
-      children: rows.map(rowData => {
+      flow: rows.map(rowData => {
         return (
           ArticleRowFlow({
             content: rowData,
@@ -231,7 +231,6 @@ class ArticleSkeleton extends Component {
   }
 
   render() {
-    console.log('render')
     const {
       adConfig,
       Header,
@@ -250,52 +249,53 @@ class ArticleSkeleton extends Component {
                 <Header width={Math.min(maxWidth, width)} />
               </Gutter>
               <View>
-              {
-                textFlow.block.children.map(block => {
-                  if (block instanceof Layout.InlineBlock) {
-                    return (<View onLayout={e => {
-                      //if (block.prevHeight !== block.height) {
-                      //  this.layout()
-                      //}
-                      block.prevHeight = block.height
-                    }} style={{
-                      position: 'absolute',
-                      top: block.y,
-                      left: block.x,
-                      width: Math.min(maxWidth, width) * 0.35,
-                      zIndex: 1
-                    }}>
-                      {block.getComponent()}
-                    </View>)
-                  }
-                  if (block instanceof Layout.Block) {
-                    return block.getComponent()
-                  }
-                  if (block instanceof FText.Text) {
-                    return <Gutter>{block.getComponent(style => <View style={{ height: block.measuredHeight }}>
-                      {
-                        block.block.children.map(line =>
-                          line.idealSpans.map(span => (
-                            <Text
-                              style={{
-                                ...style,
-                                fontFamily: span.style.font,
-                                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
-                                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
-                                position: 'absolute',
-                                top: span.y - block.y,
-                                left: block.x + span.x
-                              }}
-                            >
-                              {span.text}
-                            </Text>))
-                        )
-                      }
-                    </View>
-                    )}</Gutter>
-                  }
-                })
-              }
+                {
+                  textFlow.block.children.map(block => {
+                    if (block instanceof Layout.InlineBlock) {
+                      return (<View onLayout={e => {
+                        if (block.prevHeight !== block.height) {
+                          this.layout()
+                        }
+                        block.prevHeight = block.height
+                      }} style={{
+                        position: 'absolute',
+                        top: block.y,
+                        left: block.x + 60,
+                        width: Math.min(maxWidth, width) * 0.35,
+                        height: block.height,
+                        zIndex: 1,
+                      }}>
+                        {block.getComponent()}
+                      </View>)
+                    }
+                    if (block instanceof Layout.Block) {
+                      return block.getComponent()
+                    }
+                    if (block instanceof FText.Text) {
+                      return <Gutter>{block.getComponent(style => <View style={{ height: block.measuredHeight }}>
+                        {
+                          block.block.children.map(line =>
+                            line.idealSpans.map(span => (
+                              <Text
+                                style={{
+                                  ...style,
+                                  fontFamily: span.style.font,
+                                  fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
+                                  fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
+                                  position: 'absolute',
+                                  top: span.y,
+                                  left: block.x + span.x
+                                }}
+                              >
+                                {span.text}
+                              </Text>))
+                          )
+                        }
+                      </View>
+                      )}</Gutter>
+                    }
+                  })
+                }
               </View>
             </ScrollView></View></Responsive></AdComposer>
     )
