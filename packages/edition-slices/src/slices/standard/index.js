@@ -7,6 +7,13 @@ import { ResponsiveSlice } from "../shared";
 import styles from "./styles";
 
 class Standard extends Component {
+  constructor() {
+    super();
+
+    this.renderMedium = this.renderMedium.bind(this);
+    this.renderSmall = this.renderSmall.bind(this);
+  }
+
   getTiles() {
     const {
       slice: { items },
@@ -16,13 +23,17 @@ class Standard extends Component {
     return items.map(tile => () => <TileK onPress={onPress} tile={tile} />);
   }
 
-  renderMedium = () => (
-    <View style={styles.container}>
-      <Column tiles={this.getTiles()} />
-    </View>
-  );
+  renderMedium() {
+    return (
+      <View style={styles.container}>
+        <Column tiles={this.getTiles()} />
+      </View>
+    );
+  }
 
-  renderSmall = () => <Column tiles={this.getTiles()} />;
+  renderSmall() {
+    return <Column tiles={this.getTiles()} />;
+  }
 
   render() {
     return (
