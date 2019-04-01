@@ -248,3 +248,217 @@ exports[`2. secondary two and two - medium 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. secondary two and two - wide 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "33.4%",
+      }
+    }
+  >
+    <div>
+      secondary-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "16.6%",
+      }
+    }
+  >
+    <div>
+      support-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "33.4%",
+      }
+    }
+  >
+    <div>
+      secondary-2
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "16.6%",
+      }
+    }
+  >
+    <div>
+      support-2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. secondary two and two - huge 1`] = `
+<div
+  style={
+    Object {
+      "WebkitAlignSelf": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignSelf": "center",
+      "flexDirection": "row",
+      "msFlexDirection": "row",
+      "msFlexItemAlign": "center",
+      "width": "86%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "33.4%",
+      }
+    }
+  >
+    <div>
+      secondary-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "16.6%",
+      }
+    }
+  >
+    <div>
+      support-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "width": "33.4%",
+      }
+    }
+  >
+    <div>
+      secondary-2
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "marginBottom": "10px",
+        "marginTop": "10px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "16.6%",
+      }
+    }
+  >
+    <div>
+      support-2
+    </div>
+  </div>
+</div>
+`;

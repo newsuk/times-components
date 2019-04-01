@@ -61,3 +61,59 @@ exports[`2. secondary two and two - medium 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. secondary two and two - wide 1`] = `
+<View>
+  <View>
+    <Text>
+      secondary-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      secondary-2
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`4. secondary two and two - huge 1`] = `
+<View>
+  <View>
+    <Text>
+      secondary-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      secondary-2
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      support-2
+    </Text>
+  </View>
+</View>
+`;

@@ -247,31 +247,27 @@ exports[`11. secondary two and two - medium 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileV
-          tileName="secondary1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileV
-          tileName="secondary2"
-        />
-      </div>
+      <TileAM
+        tileName="secondary1"
+      />
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          tileName="support1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileG
-          tileName="support2"
-        />
-      </div>
+      <TileAN
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAM
+        tileName="secondary2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAN
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -653,31 +649,27 @@ exports[`25. secondary two and two - wide 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileV
-          tileName="secondary1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileV
-          tileName="secondary2"
-        />
-      </div>
+      <TileAM
+        tileName="secondary1"
+      />
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          tileName="support1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileG
-          tileName="support2"
-        />
-      </div>
+      <TileAN
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAM
+        tileName="secondary2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAN
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -1059,31 +1051,27 @@ exports[`39. secondary two and two - huge 1`] = `
 <div>
   <div>
     <div>
-      <div>
-        <TileV
-          tileName="secondary1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileV
-          tileName="secondary2"
-        />
-      </div>
+      <TileAM
+        tileName="secondary1"
+      />
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          tileName="support1"
-        />
-      </div>
-      <div />
-      <div>
-        <TileG
-          tileName="support2"
-        />
-      </div>
+      <TileAN
+        tileName="support1"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAM
+        tileName="secondary2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAN
+        tileName="support2"
+      />
     </div>
   </div>
 </div>

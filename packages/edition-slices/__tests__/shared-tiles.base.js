@@ -38,7 +38,9 @@ import {
   TileAB,
   TileAG,
   TileAJ,
-  TileAK
+  TileAK,
+  TileAM,
+  TileAN
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -197,6 +199,14 @@ export default () => {
     {
       name: "tile ak",
       test: () => testPuzzleTile(TileAK)
+    },
+    {
+      name: "tile am",
+      test: () => testTile(TileAM)
+    },
+    {
+      name: "tile an",
+      test: () => testTile(TileAN)
     }
   ];
 
