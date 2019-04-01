@@ -298,7 +298,7 @@ export const ArticleRowFlow = ({
             prevHeight: 0,
             getComponent() {
               return (
-                <View key={key} style={{backgroundColor: 'red'}} onLayout={e => {
+                <View key={key} onLayout={e => {
                   this.height = e.nativeEvent.layout.height
                 }}>
                   <ArticleImage
@@ -364,7 +364,7 @@ export const ArticleRowFlow = ({
 
       return {
         element: new Markup.Link({
-          href: "",
+          href: url,
           getComponent() {
             return (
               <ArticleLink

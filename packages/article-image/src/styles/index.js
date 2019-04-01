@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
   inlineContainerTablet: {
     ...containerShared,
     paddingLeft: spacing(0),
-    paddingRight: spacing(0),
     width: '100%',
     flexDirection: 'column'
   },

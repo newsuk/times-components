@@ -49,7 +49,6 @@ export default class TextFlow extends Container {
         while (true) {
           if (!(next instanceof Text)) {
             // Support merging of inlines one day
-            grabbed -= 1
             break
           }
           next.lineWidths = elLines.slice(pulledLines)
@@ -60,7 +59,7 @@ export default class TextFlow extends Container {
           }
           next.y = vPosition
           vPosition += next.measuredHeight
-          pulledLines += next.lines.length + 1
+          pulledLines += next.lines.length - 1
           next.block.children.forEach((line, i) => {
             if (next.lineWidths[i] < this.width) {
               line.x = child.width
@@ -81,7 +80,7 @@ export default class TextFlow extends Container {
           vPosition += child.height - child.measuredHeight
           this.block.measuredHeight += child.height
         } else {
-          this.block.measuredHeight += child.measuredHeight
+          this.block.measuredHeight += child.height
         }
         continue
       }
