@@ -28,7 +28,6 @@ class TileG extends Component {
         >
           <TileImage
             aspectRatio={1}
-            borderRadius={containerWidth * 0.15}
             style={styles.imageContainer}
             uri={getCrop(
               tile.leadAsset ||

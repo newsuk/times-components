@@ -16,7 +16,8 @@ const styles = {
     borderColor: colours.functional.contrast,
     borderWidth: 1,
     overflow: "hidden",
-    width: "30%"
+    width: "30%",
+    borderRadius: 9999
   },
   summaryContainer: {
     justifyContent: "center",
