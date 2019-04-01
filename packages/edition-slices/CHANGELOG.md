@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.3...@times-components/edition-slices@0.49.4) (2019-04-01)
+
+
+### Bug Fixes
+
+* decrease letter spacing on article label text ([#1841](https://github.com/newsuk/times-components/issues/1841)) ([bb42126](https://github.com/newsuk/times-components/commit/bb42126))
+
+
+
+
+
 ## [0.49.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.2...@times-components/edition-slices@0.49.3) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/edition-slices

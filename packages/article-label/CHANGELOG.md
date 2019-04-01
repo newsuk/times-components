@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.43](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.42...@times-components/article-label@2.3.43) (2019-04-01)
+
+
+### Bug Fixes
+
+* decrease letter spacing on article label text ([#1841](https://github.com/newsuk/times-components/issues/1841)) ([bb42126](https://github.com/newsuk/times-components/commit/bb42126))
+
+
+
+
+
 ## [2.3.42](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.41...@times-components/article-label@2.3.42) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/article-label
