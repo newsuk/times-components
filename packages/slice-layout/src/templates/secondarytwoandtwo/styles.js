@@ -38,10 +38,26 @@ const wideBreakpointStyles = {
   }
 };
 
+const hugeBreakpointStyles = {
+  container: {
+    alignSelf: "center",
+    flexDirection: "row",
+    width: "86%"
+  },
+  secondaryItemContainer: {
+    width: "33.4%"
+  },
+  supportItemContainer: {
+    paddingHorizontal: spacing(2),
+    width: "16.6%"
+  }
+};
+
 const stylesToReturn = {
   medium: mediumBreakpointStyles,
   small: smallBreakpointStyles,
-  wide: wideBreakpointStyles
+  wide: wideBreakpointStyles,
+  huge: hugeBreakpointStyles
 };
 
 export default breakpoint =>

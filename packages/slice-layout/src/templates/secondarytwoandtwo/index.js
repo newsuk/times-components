@@ -70,7 +70,6 @@ const SecondaryTwoAndTwoSlice = ({
     renderSupport2()
   ];
   return (
-    <Fragment>
       <View style={styles.container}>
         <View key={renderRow[0].props.id} style={styles.secondaryItemContainer}>
           {renderRow[0]}
@@ -88,7 +87,6 @@ const SecondaryTwoAndTwoSlice = ({
           {renderRow[3]}
         </View>
       </View>
-    </Fragment>
   );
 };
 

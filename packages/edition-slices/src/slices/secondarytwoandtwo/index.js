@@ -61,7 +61,7 @@ class SecondaryTwoAndTwo extends Component {
       />
     );
   }
-  
+
   renderWide(breakpoint) {
     const {
       onPress,
@@ -69,22 +69,21 @@ class SecondaryTwoAndTwo extends Component {
     } = this.props;
 
     return (
-      
-        <SecondaryTwoAndTwoSlice
-          breakpoint={breakpoint}
-          renderSecondary1={() => (
-            <TileAM onPress={onPress} tile={secondary1} tileName="secondary1" />
-          )}
-          renderSecondary2={() => (
-            <TileAM onPress={onPress} tile={secondary2} tileName="secondary2" />
-          )}
-          renderSupport1={() => (
-            <TileAN onPress={onPress} tile={support1} tileName="support1" />
-          )}
-          renderSupport2={() => (
-            <TileAN onPress={onPress} tile={support2} tileName="support2" />
-          )}
-        />
+      <SecondaryTwoAndTwoSlice
+        breakpoint={breakpoint}
+        renderSecondary1={() => (
+          <TileAM onPress={onPress} tile={secondary1} tileName="secondary1" />
+        )}
+        renderSecondary2={() => (
+          <TileAM onPress={onPress} tile={secondary2} tileName="secondary2" />
+        )}
+        renderSupport1={() => (
+          <TileAN onPress={onPress} tile={support1} tileName="support1" />
+        )}
+        renderSupport2={() => (
+          <TileAN onPress={onPress} tile={support2} tileName="support2" />
+        )}
+      />
     );
   }
 
