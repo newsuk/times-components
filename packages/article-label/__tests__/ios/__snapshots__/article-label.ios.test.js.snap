@@ -11,7 +11,7 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
       "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
-      "letterSpacing": 1.2,
+      "letterSpacing": 0.6,
       "lineHeight": 14,
       "marginBottom": 0,
     }
@@ -32,7 +32,7 @@ exports[`Article Label test on ios renders ArticleLabel with GraphQL Colour type
       "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
-      "letterSpacing": 1.2,
+      "letterSpacing": 0.6,
       "lineHeight": 14,
       "marginBottom": 0,
     }

@@ -1716,7 +1716,6 @@ exports[`16. tile p 1`] = `
 
 .IS5 {
   color: rgba(133,0,41,1.00);
-  letter-spacing: 0.6px;
   line-height: 12px;
 }
 
