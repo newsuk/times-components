@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.5](https://github.com/newsuk/times-components/compare/@times-components/utils@4.7.4...@times-components/utils@4.7.5) (2019-04-01)
+
+
+### Bug Fixes
+
+* ios offscreen dropcaps ([#1837](https://github.com/newsuk/times-components/issues/1837)) ([8bfa167](https://github.com/newsuk/times-components/commit/8bfa167))
+
+
+
+
+
 ## [4.7.4](https://github.com/newsuk/times-components/compare/@times-components/utils@4.7.3...@times-components/utils@4.7.4) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/utils

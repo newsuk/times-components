@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "4.7.4",
+  "version": "4.7.5",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",

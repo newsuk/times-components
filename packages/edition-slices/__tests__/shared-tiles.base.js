@@ -39,6 +39,7 @@ import {
   TileAG,
   TileAJ,
   TileAK,
+  TileAL,
   TileAM,
   TileAN
 } from "../src/tiles";
@@ -199,6 +200,10 @@ export default () => {
     {
       name: "tile ak",
       test: () => testPuzzleTile(TileAK)
+    },
+    {
+      name: "tile al",
+      test: () => testTile(TileAL)
     },
     {
       name: "tile am",

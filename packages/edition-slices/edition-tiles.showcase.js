@@ -39,6 +39,7 @@ import {
   TileAG,
   TileAH,
   TileAI,
+  TileAL,
   TileAM,
   TileAN
 } from "./src/tiles";
@@ -114,6 +115,11 @@ const tileStories = [
     name:
       "Tile AD - Horizontal, image left of article summary with 2:3 ratio. Font size 20",
     Tile: TileAD
+  },
+  {
+    name:
+      "Tile AL - Vertical, top image with 2:3 ratio, 22pt headline, centered aligned summary",
+    Tile: TileAL
   },
   {
     name: "Tile L - No image, 22pt headline, no teaser",

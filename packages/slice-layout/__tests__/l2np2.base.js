@@ -36,6 +36,38 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "lead two no pic and two - wide",
+      test() {
+        const output = renderComponent(
+          <LeadTwoNoPicAndTwoSlice
+            breakpoint={editionBreakpoints.wide}
+            renderLead1={() => createItem("lead-1")}
+            renderLead2={() => createItem("lead-2")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => createItem("support-2")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "lead two no pic and two - huge",
+      test() {
+        const output = renderComponent(
+          <LeadTwoNoPicAndTwoSlice
+            breakpoint={editionBreakpoints.huge}
+            renderLead1={() => createItem("lead-1")}
+            renderLead2={() => createItem("lead-2")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => createItem("support-2")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 
