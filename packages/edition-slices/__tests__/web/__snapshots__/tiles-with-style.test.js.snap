@@ -687,18 +687,10 @@ exports[`7. tile g 1`] = `
 }
 
 .IS1 {
-  border-top-color: rgba(255,255,255,1.00);
-  border-right-color: rgba(255,255,255,1.00);
-  border-bottom-color: rgba(255,255,255,1.00);
-  border-left-color: rgba(255,255,255,1.00);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-bottom-left-radius: 9999px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 30%;
@@ -1582,18 +1574,10 @@ exports[`15. tile p 1`] = `
 }
 
 .IS1 {
-  border-top-color: rgba(255,255,255,1.00);
-  border-right-color: rgba(255,255,255,1.00);
-  border-bottom-color: rgba(255,255,255,1.00);
-  border-left-color: rgba(255,255,255,1.00);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-bottom-left-radius: 9999px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 30%;
@@ -3692,18 +3676,10 @@ exports[`34. tile an 1`] = `
 }
 
 .IS1 {
-  border-top-color: rgba(255,255,255,1.00);
-  border-right-color: rgba(255,255,255,1.00);
-  border-bottom-color: rgba(255,255,255,1.00);
-  border-left-color: rgba(255,255,255,1.00);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-bottom-left-radius: 9999px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
   overflow-x: hidden;
   overflow-y: hidden;
 }

@@ -477,9 +477,7 @@ exports[`7. tile g 1`] = `
     <View
       style={
         Object {
-          "borderColor": "#FFFFFF",
           "borderRadius": 9999,
-          "borderWidth": 1,
           "overflow": "hidden",
           "width": "30%",
         }
@@ -1102,9 +1100,7 @@ exports[`15. tile p 1`] = `
     <View
       style={
         Object {
-          "borderColor": "#FFFFFF",
           "borderRadius": 9999,
-          "borderWidth": 1,
           "overflow": "hidden",
           "width": "30%",
         }
@@ -2582,9 +2578,7 @@ exports[`34. tile an 1`] = `
     <View
       style={
         Object {
-          "borderColor": "#FFFFFF",
           "borderRadius": 9999,
-          "borderWidth": 1,
           "overflow": "hidden",
         }
       }
