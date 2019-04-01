@@ -1,26 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { SecondaryOneAndColumnistSlice } from "@times-components/slice-layout";
 import { TileH, TileT, TileAA, TileAB } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const SecondaryOneAndColumnist = ({
-  onPress,
-  slice: { columnist, secondary }
-}) => (
-  <ResponsiveSlice
-    renderMedium={breakpoint => (
-      <SecondaryOneAndColumnistSlice
-        breakpoint={breakpoint}
-        renderColumnist={() => (
-          <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
-        )}
-        renderSecondary={() => (
-          <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
-        )}
-      />
-    )}
-    renderSmall={breakpoint => (
+class SecondaryOneAndColumnist extends Component {
+  constructor(props) {
+    super(props);
+    this.renderSmall = this.renderSmall.bind(this);
+    this.renderMedium = this.renderMedium.bind(this);
+  }
+
+  renderSmall(breakpoint) {
+    const {
+      onPress,
+      slice: { columnist, secondary }
+    } = this.props;
+    return (
       <SecondaryOneAndColumnistSlice
         breakpoint={breakpoint}
         renderColumnist={() => (
@@ -30,9 +26,36 @@ const SecondaryOneAndColumnist = ({
           <TileT onPress={onPress} tile={secondary} tileName="secondary" />
         )}
       />
-    )}
-  />
-);
+    );
+  }
+
+  renderMedium(breakpoint) {
+    const {
+      onPress,
+      slice: { columnist, secondary }
+    } = this.props;
+    return (
+      <SecondaryOneAndColumnistSlice
+        breakpoint={breakpoint}
+        renderColumnist={() => (
+          <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
+        )}
+        renderSecondary={() => (
+          <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
+        )}
+      />
+    );
+  }
+
+  render() {
+    return (
+      <ResponsiveSlice
+        renderMedium={this.renderMedium}
+        renderSmall={this.renderSmall}
+      />
+    );
+  }
+}
 
 SecondaryOneAndColumnist.propTypes = {
   onPress: PropTypes.func.isRequired,

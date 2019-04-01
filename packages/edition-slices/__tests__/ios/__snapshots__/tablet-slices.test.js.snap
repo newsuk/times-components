@@ -521,10 +521,12 @@ exports[`19. lead two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <View />
+    </View>
+    <View />
+    <View>
       <TileZ
         tileName="support2"
       />
@@ -943,10 +945,12 @@ exports[`33. lead two no pic and two - huge 1`] = `
     </View>
     <View />
     <View>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <View />
+    </View>
+    <View />
+    <View>
       <TileZ
         tileName="support2"
       />

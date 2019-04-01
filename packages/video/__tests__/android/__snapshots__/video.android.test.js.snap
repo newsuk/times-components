@@ -6,6 +6,7 @@ exports[`1. video 1`] = `
   testID="splash-component"
 >
   <Image
+    aspectRatio={1.5}
     uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
   <View>
@@ -94,6 +95,7 @@ exports[`3. sky sports video 1`] = `
     />
   </View>
   <Image
+    aspectRatio={1.5}
     uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
   <View>
@@ -135,6 +137,7 @@ exports[`4. 360 video 1`] = `
   testID="splash-component"
 >
   <Image
+    aspectRatio={1.5}
     uri="b9a31d3949b1882a09ed2f8508d538f3"
   />
   <View>

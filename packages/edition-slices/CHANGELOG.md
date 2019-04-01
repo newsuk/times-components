@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.0...@times-components/edition-slices@0.49.1) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.49.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.48.0...@times-components/edition-slices@0.49.0) (2019-03-29)
+
+
+### Features
+
+* implement l2np2 for wide and huge ([#1832](https://github.com/newsuk/times-components/issues/1832)) ([48df861](https://github.com/newsuk/times-components/commit/48df861))
+
+
+
+
+
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.47.1...@times-components/edition-slices@0.48.0) (2019-03-29)
+
+
+### Features
+
+* section perf improvements ([#1830](https://github.com/newsuk/times-components/issues/1830)) ([b2bdd57](https://github.com/newsuk/times-components/commit/b2bdd57))
+
+
+
+
+
+## [0.47.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.47.0...@times-components/edition-slices@0.47.1) (2019-03-29)
+
+
+### Bug Fixes
+
+* Use listing asset override ([#1826](https://github.com/newsuk/times-components/issues/1826)) ([ba9822a](https://github.com/newsuk/times-components/commit/ba9822a))
+
+
+
+
+
 # [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.46.1...@times-components/edition-slices@0.47.0) (2019-03-26)
 
 

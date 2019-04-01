@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`10. tile star is rendered as already saved 1`] = `
+exports[`11. tile star is rendered as already saved 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
@@ -28,7 +28,7 @@ exports[`10. tile star is rendered as already saved 1`] = `
 </View>
 `;
 
-exports[`11. tile star is rendered as not yet saved 1`] = `
+exports[`12. tile star is rendered as not yet saved 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
@@ -56,7 +56,7 @@ exports[`11. tile star is rendered as not yet saved 1`] = `
 </View>
 `;
 
-exports[`12. tile star is disabled 1`] = `
+exports[`13. tile star is disabled 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}

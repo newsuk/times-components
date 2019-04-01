@@ -52,6 +52,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
   style={
     Object {
       "flexDirection": "row",
+      "justifyContent": "center",
       "paddingHorizontal": 10,
     }
   }
@@ -110,6 +111,164 @@ exports[`2. lead two no pic and two - medium 1`] = `
         }
       }
     />
+    <Text>
+      support-2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`3. lead two no pic and two - wide 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "42%",
+      }
+    }
+  >
+    <Text>
+      lead-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      lead-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "16%",
+      }
+    }
+  >
+    <Text>
+      support-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "42%",
+      }
+    }
+  >
+    <Text>
+      support-2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`4. lead two no pic and two - huge 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "36%",
+      }
+    }
+  >
+    <Text>
+      lead-1
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      lead-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "14%",
+      }
+    }
+  >
+    <Text>
+      support-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "36%",
+      }
+    }
+  >
     <Text>
       support-2
     </Text>

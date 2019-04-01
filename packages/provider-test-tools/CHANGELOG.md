@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.14.4...@times-components/provider-test-tools@1.14.5) (2019-03-29)
+
+
+### Bug Fixes
+
+* Use listing asset override ([#1826](https://github.com/newsuk/times-components/issues/1826)) ([ba9822a](https://github.com/newsuk/times-components/commit/ba9822a))
+
+
+
+
+
 ## [1.14.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.14.3...@times-components/provider-test-tools@1.14.4) (2019-03-22)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

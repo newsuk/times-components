@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.0...@times-components/image@5.0.1) (2019-04-01)
+
+
+### Bug Fixes
+
+* Remove safer area view on android ([#1838](https://github.com/newsuk/times-components/issues/1838)) ([397a413](https://github.com/newsuk/times-components/commit/397a413))
+
+
+
+
+
 # [5.0.0](https://github.com/newsuk/times-components/compare/@times-components/image@4.9.9...@times-components/image@5.0.0) (2019-03-25)
 
 

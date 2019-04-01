@@ -76,7 +76,45 @@ exports[`2. default layout without uri 1`] = `
 </View>
 `;
 
-exports[`3. prepend https schema 1`] = `
+exports[`3. default layout without aspect ratio 1`] = `
+<View>
+  <Gradient
+    degrees={264}
+    height={350}
+    width={700}
+  >
+    <View>
+      <Svg
+        height={191}
+        version="1.1"
+        viewBox="145 50 108 120"
+        width={191}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
+  <Image
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`4. prepend https schema 1`] = `
 <View
   aspectRatio={2}
 >
@@ -116,7 +154,7 @@ exports[`3. prepend https schema 1`] = `
 </View>
 `;
 
-exports[`4. handle onload event 1`] = `
+exports[`5. handle onload event 1`] = `
 <View
   aspectRatio={2}
 >
@@ -156,7 +194,7 @@ exports[`4. handle onload event 1`] = `
 </View>
 `;
 
-exports[`4. handle onload event 2`] = `
+exports[`5. handle onload event 2`] = `
 <View
   aspectRatio={2}
 >
@@ -170,7 +208,7 @@ exports[`4. handle onload event 2`] = `
 </View>
 `;
 
-exports[`6. uses highressize if it exists 1`] = `
+exports[`7. uses highressize if it exists 1`] = `
 <View
   aspectRatio={2}
 >
@@ -210,7 +248,7 @@ exports[`6. uses highressize if it exists 1`] = `
 </View>
 `;
 
-exports[`8. image with borderradius 1`] = `
+exports[`9. image with borderradius 1`] = `
 <View
   aspectRatio={2}
 >
@@ -225,7 +263,7 @@ exports[`8. image with borderradius 1`] = `
 </View>
 `;
 
-exports[`9. uses lowressize image as placeholder if passed 1`] = `
+exports[`10. uses lowressize image as placeholder if passed 1`] = `
 <View
   aspectRatio={2}
 >
@@ -246,7 +284,7 @@ exports[`9. uses lowressize image as placeholder if passed 1`] = `
 </View>
 `;
 
-exports[`11. handle layout change 1`] = `
+exports[`12. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >

@@ -87,10 +87,12 @@ exports[`5. lead two no pic and two - medium 1`] = `
     </div>
     <div />
     <div>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div />
+    </div>
+    <div />
+    <div>
       <TileZ
         tileName="support2"
       />
@@ -493,10 +495,12 @@ exports[`19. lead two no pic and two - wide 1`] = `
     </div>
     <div />
     <div>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div />
+    </div>
+    <div />
+    <div>
       <TileZ
         tileName="support2"
       />
@@ -899,10 +903,12 @@ exports[`33. lead two no pic and two - huge 1`] = `
     </div>
     <div />
     <div>
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div />
+    </div>
+    <div />
+    <div>
       <TileZ
         tileName="support2"
       />

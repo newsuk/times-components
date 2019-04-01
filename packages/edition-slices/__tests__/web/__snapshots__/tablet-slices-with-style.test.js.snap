@@ -344,7 +344,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS2 {
-  width: 50%;
+  width: 42%;
 }
 
 .IS3 {
@@ -358,30 +358,38 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS4 {
-  border-bottom-width: 1px;
+  width: 16%;
+}
+
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
-  width: 50%;
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS6 {
+  width: 42%;
+}
+
+.IS7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 
-.IS7 {
+.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -391,10 +399,10 @@ exports[`5. lead two no pic and two - medium 1`] = `
 </style>
 
 <div
-  className="IS7 S1"
+  className="IS8 S1"
 >
   <div
-    className="IS6 S1"
+    className="IS7 S1"
   >
     <div
       className="IS2 S1"
@@ -413,14 +421,18 @@ exports[`5. lead two no pic and two - medium 1`] = `
       className="IS3"
     />
     <div
-      className="IS5 S1"
+      className="IS4 S1"
     >
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div
-        className="IS4 S1"
-      />
+    </div>
+    <div
+      className="IS5"
+    />
+    <div
+      className="IS6 S1"
+    >
       <TileZ
         tileName="support2"
       />
@@ -1968,7 +1980,7 @@ exports[`19. lead two no pic and two - wide 1`] = `
 }
 
 .IS2 {
-  width: 50%;
+  width: 42%;
 }
 
 .IS3 {
@@ -1982,30 +1994,38 @@ exports[`19. lead two no pic and two - wide 1`] = `
 }
 
 .IS4 {
-  border-bottom-width: 1px;
+  width: 16%;
+}
+
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
-  width: 50%;
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS6 {
+  width: 42%;
+}
+
+.IS7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 
-.IS7 {
+.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2015,10 +2035,10 @@ exports[`19. lead two no pic and two - wide 1`] = `
 </style>
 
 <div
-  className="IS7 S1"
+  className="IS8 S1"
 >
   <div
-    className="IS6 S1"
+    className="IS7 S1"
   >
     <div
       className="IS2 S1"
@@ -2037,14 +2057,18 @@ exports[`19. lead two no pic and two - wide 1`] = `
       className="IS3"
     />
     <div
-      className="IS5 S1"
+      className="IS4 S1"
     >
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div
-        className="IS4 S1"
-      />
+    </div>
+    <div
+      className="IS5"
+    />
+    <div
+      className="IS6 S1"
+    >
       <TileZ
         tileName="support2"
       />
@@ -3592,7 +3616,7 @@ exports[`33. lead two no pic and two - huge 1`] = `
 }
 
 .IS2 {
-  width: 50%;
+  width: 42%;
 }
 
 .IS3 {
@@ -3606,30 +3630,38 @@ exports[`33. lead two no pic and two - huge 1`] = `
 }
 
 .IS4 {
-  border-bottom-width: 1px;
+  width: 16%;
+}
+
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
-  width: 50%;
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS6 {
+  width: 42%;
+}
+
+.IS7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 
-.IS7 {
+.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -3639,10 +3671,10 @@ exports[`33. lead two no pic and two - huge 1`] = `
 </style>
 
 <div
-  className="IS7 S1"
+  className="IS8 S1"
 >
   <div
-    className="IS6 S1"
+    className="IS7 S1"
   >
     <div
       className="IS2 S1"
@@ -3661,14 +3693,18 @@ exports[`33. lead two no pic and two - huge 1`] = `
       className="IS3"
     />
     <div
-      className="IS5 S1"
+      className="IS4 S1"
     >
-      <TileD
+      <TileAL
         tileName="support1"
       />
-      <div
-        className="IS4 S1"
-      />
+    </div>
+    <div
+      className="IS5"
+    />
+    <div
+      className="IS6 S1"
+    >
       <TileZ
         tileName="support2"
       />
