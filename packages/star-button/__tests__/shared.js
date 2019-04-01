@@ -15,7 +15,7 @@ export default () => {
 
   it("renders selected", () => {
     const testInstance = TestRenderer.create(
-      <StarButton onPress={() => {}} starState="selected" />
+      <StarButton onPress={() => {}} selected />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();
@@ -23,7 +23,7 @@ export default () => {
 
   it("renders disabled", () => {
     const testInstance = TestRenderer.create(
-      <StarButton onPress={() => {}} starState="disabled" />
+      <StarButton disabled onPress={() => {}} />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();

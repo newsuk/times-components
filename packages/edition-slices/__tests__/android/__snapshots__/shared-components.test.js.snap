@@ -4,17 +4,20 @@ exports[`10. tile star is rendered as already saved 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+  pointerEvents="box-only"
+  style={Object {}}
 >
   <IconStar
     fillColour="#006699"
@@ -29,17 +32,20 @@ exports[`11. tile star is rendered as not yet saved 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+  pointerEvents="box-only"
+  style={Object {}}
 >
   <IconStar
     fillColour="none"
@@ -54,17 +60,20 @@ exports[`12. tile star is disabled 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+  pointerEvents="box-only"
+  style={Object {}}
 >
   <IconStar
     fillColour="none"

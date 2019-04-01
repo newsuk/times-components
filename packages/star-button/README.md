@@ -1,21 +1,26 @@
 # Star Button
 
-A star button component which is clickable and exposes three states: `initial`, `selected`, `disabled`
+A star button component which is clickable and has three states: `default`, `selected`, `disabled`
 
-- `StarButton` - wraps any star svg and is clicable. Can be disabled.
-- `starStates` - enum for the button states.
+- `StarButton` - wraps a star svg and is clicable.
 
 ## How to use
 
 ```js
-import StarButton, { starStates } from "@times-components/star-button";
+import StarButton from "@times-components/star-button";
 
 // works this way
-<StarButton onPress={this.onStarPress} starState={starState} />;
+<StarButton onPress={this.onStarPress} />;
+<StarButton onPress={this.onStarPress} disabled={true} />;
+<StarButton onPress={this.onStarPress} selected={true}/>;
 ```
 
-`starState` prop controls the state of the star. It changes colours and opacity based on the different state.
-`Diabled` would not allow the star to be clicked.
+It changes colours and opacity based on the different state it has.
+`default` star is clickable and has default colour.
+`disabled` would not allow the star to be clicked.
+`selected` would change the star colour.
+
+If `disabled` and `selected` are both true - `disabled` take precedence.
 
 ## Contributing
 

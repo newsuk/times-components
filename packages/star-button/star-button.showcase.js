@@ -1,5 +1,5 @@
 import React from "react";
-import StarButton, { starStates } from "./src/star-button";
+import StarButton from "./src/star-button";
 
 export default {
   children: [
@@ -9,16 +9,12 @@ export default {
       type: "story"
     },
     {
-      component: () => (
-        <StarButton onPress={() => {}} starState={starStates.selected} />
-      ),
+      component: () => <StarButton onPress={() => {}} selected />,
       name: "Selected",
       type: "story"
     },
     {
-      component: () => (
-        <StarButton onPress={() => {}} starState={starStates.disabled} />
-      ),
+      component: () => <StarButton disabled onPress={() => {}} />,
       name: "Disabled",
       type: "story"
     }
