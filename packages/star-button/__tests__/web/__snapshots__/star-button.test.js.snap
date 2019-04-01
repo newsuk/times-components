@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders default 1`] = `
-<a
-  onClick={[Function]}
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -15,17 +11,13 @@ exports[`renders default 1`] = `
     opacity="1"
     strokeColour="#696969"
   />
-</a>
+</Link>
 `;
 
 exports[`renders disabled 1`] = `
-<a
-  onClick={[Function]}
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
+<Link
+  disabled={true}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -33,17 +25,13 @@ exports[`renders disabled 1`] = `
     opacity="0.4"
     strokeColour="#696969"
   />
-</a>
+</Link>
 `;
 
 exports[`renders selected 1`] = `
-<a
-  onClick={[Function]}
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="#006699"
@@ -51,5 +39,5 @@ exports[`renders selected 1`] = `
     opacity="1"
     strokeColour="none"
   />
-</a>
+</Link>
 `;

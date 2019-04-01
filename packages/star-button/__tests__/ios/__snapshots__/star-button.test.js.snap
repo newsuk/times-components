@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders default 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -22,24 +11,13 @@ exports[`renders default 1`] = `
     opacity="1"
     strokeColour="#696969"
   />
-</View>
+</Link>
 `;
 
 exports[`renders disabled 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+<Link
+  disabled={true}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -47,24 +25,13 @@ exports[`renders disabled 1`] = `
     opacity="0.4"
     strokeColour="#696969"
   />
-</View>
+</Link>
 `;
 
 exports[`renders selected 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="#006699"
@@ -72,5 +39,5 @@ exports[`renders selected 1`] = `
     opacity="1"
     strokeColour="none"
   />
-</View>
+</Link>
 `;

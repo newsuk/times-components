@@ -1,23 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`11. tile star is rendered as already saved 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  style={Object {}}
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="#006699"
@@ -25,27 +11,13 @@ exports[`11. tile star is rendered as already saved 1`] = `
     opacity="1"
     strokeColour="none"
   />
-</View>
+</Link>
 `;
 
 exports[`12. tile star is rendered as not yet saved 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  style={Object {}}
+<Link
+  disabled={false}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -53,27 +25,13 @@ exports[`12. tile star is rendered as not yet saved 1`] = `
     opacity="1"
     strokeColour="#696969"
   />
-</View>
+</Link>
 `;
 
 exports[`13. tile star is disabled 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  style={Object {}}
+<Link
+  disabled={true}
+  onPress={[Function]}
 >
   <IconStar
     fillColour="none"
@@ -81,5 +39,5 @@ exports[`13. tile star is disabled 1`] = `
     opacity="0.4"
     strokeColour="#696969"
   />
-</View>
+</Link>
 `;

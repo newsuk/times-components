@@ -2,6 +2,8 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import StarButton from "../src/star-button";
 
+jest.mock("@times-components/link", () => "Link");
+
 jest.mock("@times-components/icons", () => ({
   IconStar: "IconStar"
 }));
