@@ -24,13 +24,13 @@ export default class Word extends Container {
     let href = undefined
     for (let i = 0; i < this.children.length; i += 1) {
       const char = this.children[i]
-      if (style !== char.style || href !== char.href) {
+      if ((style !== char.style) || (href !== char.href)) {
         const span = new Span()
         span.style = char.style
         span.text = char.character
-        span.measuredWidth = char.measuredWidth
+        span.measuredWidth += Math.floor(char.getWidth())
         span.measuredHeight = char.measuredHeight
-        span.x = char.x
+        span.x = Math.floor(char.x)
         span.y = this.y + char.y
         span.href = href
         spans.push(span)
@@ -38,7 +38,11 @@ export default class Word extends Container {
         href = char.href
       } else {
         const span = spans[spans.length - 1]
-        span.measuredWidth += char.measuredWidth
+        if (char.character !== " ") {
+          span.measuredWidth += Math.floor(char.getWidth())
+        } else {
+          span.measuredWidth - this.spaceOffset
+        }
         span.text += char.character
       }
     }
@@ -51,7 +55,7 @@ export default class Word extends Container {
         word: this,
         value: this.children.map(char => char.character).join(''),
         width: this.children.reduce(
-          (width, char) => width + char.measuredWidth
+          (width, char) => width + char.getWidth()
           , 0)
       }),
       ...(
@@ -73,8 +77,8 @@ export default class Word extends Container {
         this.hasSpace ?
           [new Glue({
             width: 0,
-            stretch: 12,
-            shrink: 0
+            stretch: this.spaceOffset,
+            shrink: this.spaceOffset / 3
           })] : []
       )
     ]

@@ -27,8 +27,15 @@ export default class Line extends Container {
       } else {
         const prevSpan = spans[spans.length - 1]
         prevSpan.text += span.text
-        prevSpan.measuredWidth += span.measuredWidth
+        prevSpan.measuredWidth += Math.floor(span.measuredWidth)
       }
+    }
+    if (spans.length) {
+      let hPosition = 0
+      spans.forEach(span => {
+        span.x = hPosition
+        hPosition += Math.floor(span.measuredWidth)
+      })
     }
     return spans
   }

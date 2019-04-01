@@ -18,7 +18,7 @@ export default class Text extends Container {
   height = 20;
   align = Align.TOP_LEFT;
   characterCase = Case.NORMAL;
-  size = 12;
+  size = 18;
   font = "TimesDigitalW04-Regular";
   tracking = 0;
   ligatures = false;
@@ -96,19 +96,6 @@ export default class Text extends Container {
     this.lineLayout();
   }
 
-  static styleEqual(a, b) {
-    if (!a || !b) {
-      return false
-    }
-    return a.size === b.size &&
-      a.font === b.font &&
-      a.tracking === b.tracking &&
-      a.characterCase === b.characterCase &&
-      a.fillColor === b.fillColor &&
-      a.strokeColor === b.strokeColor &&
-      a.strokeWidth === b.strokeWidth
-  }
-
   //place characters in words
   characterLayout() {
     //characterlayout adds Charcters to words and measures true height. LineHeight is not a factor til Line layout.
@@ -169,13 +156,7 @@ export default class Text extends Container {
       }
 
       // create character
-      if (i !== 0 && Text.styleEqual(
-        this.characters[i - 1].style, this.characters[i].style
-      )) {
-        char = new Character(this.characters[i].character, this.characters[i - 1].style, i);
-      } else {
-        char = new Character(this.characters[i].character, currentStyle, i);
-      }
+      char = new Character(this.characters[i].character, currentStyle, i);
 
       if (char.missing) {
         if (this.missingGlyphs == null) {

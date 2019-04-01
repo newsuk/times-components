@@ -1,5 +1,6 @@
 import TextStyle from "./TextStyle";
 import Markup from "./Markup";
+import Character from "../Text/Character";
 
 export default class StyledText extends Markup {
   style = new TextStyle()
@@ -16,7 +17,11 @@ export default class StyledText extends Markup {
       .reduce((acc, child) => [
         ...acc,
         ...child.characters(this.style).map(c => {
-          c.style = {...c.style, ...this.style}
+          Object.keys(this.style).forEach(key => {
+            if (c.style[key] !== this.style[key]) {
+              c.style[key] = this.style[key]
+            }
+          })
           return c
         })
       ], []);

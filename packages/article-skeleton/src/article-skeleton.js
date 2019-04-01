@@ -284,7 +284,7 @@ class ArticleSkeleton extends Component {
                                   fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
                                   position: 'absolute',
                                   top: span.y,
-                                  left: block.x + span.x
+                                  left: span.x
                                 }}
                               >
                                 {span.text}
