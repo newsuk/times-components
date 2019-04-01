@@ -18,9 +18,7 @@ import {
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
-
 jest.mock("@times-components/link", () => "Link");
-
 jest.mock("@times-components/icons", () => ({
   IconStar: "IconStar"
 }));
