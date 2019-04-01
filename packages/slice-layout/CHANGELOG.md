@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.24.0...@times-components/slice-layout@0.25.0) (2019-03-29)
+
+
+### Features
+
+* implement l2np2 for wide and huge ([#1832](https://github.com/newsuk/times-components/issues/1832)) ([48df861](https://github.com/newsuk/times-components/commit/48df861))
+
+
+
+
+
 # [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.23.0...@times-components/slice-layout@0.24.0) (2019-03-21)
 
 

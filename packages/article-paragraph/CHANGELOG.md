@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.9](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.7.8...@times-components/article-paragraph@0.7.9) (2019-04-01)
+
+
+### Bug Fixes
+
+* ios offscreen dropcaps ([#1837](https://github.com/newsuk/times-components/issues/1837)) ([8bfa167](https://github.com/newsuk/times-components/commit/8bfa167))
+
+
+
+
+
 ## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@0.7.7...@times-components/article-paragraph@0.7.8) (2019-03-25)
 
 **Note:** Version bump only for package @times-components/article-paragraph
