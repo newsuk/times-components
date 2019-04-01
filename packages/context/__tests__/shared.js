@@ -40,7 +40,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <SectionContext.Provider
         value={{
-          onSaveStarPress: () => {},
+          onArticleSavePress: () => {},
           publicationName: "SUNDAYTIMES",
           recentlyOpenedPuzzleCount: 123,
           savedArticles: {

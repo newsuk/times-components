@@ -11,7 +11,7 @@ const {
   onArticlePress,
   onPuzzleBarPress = () => {},
   onPuzzlePress,
-  onSaveStarPress
+  onArticleSavePress
 } = NativeModules.SectionEvents || {
   onArticlePress: () => {},
   onPuzzleBarPress: () => {},
@@ -76,9 +76,9 @@ class SectionPage extends Component {
     return (
       <SectionContext.Provider
         value={{
-          onSaveStarPress: onSaveStarPress
+          onArticleSavePress: onArticleSavePress
             ? (save, articleId) =>
-                onSaveStarPress(save, articleId).then(() => {
+                onArticleSavePress(save, articleId).then(() => {
                   savedArticles[articleId] = save || undefined;
                   this.setState({ savedArticles });
                 })

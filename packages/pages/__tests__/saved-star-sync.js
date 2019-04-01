@@ -11,8 +11,8 @@ jest.mock("@times-components/section", () => {
 
   return () => (
     <SectionContext.Consumer>
-      {({ onSaveStarPress, savedArticles }) => (
-        <RNView onPress={onSaveStarPress}>
+      {({ onArticleSavePress, savedArticles }) => (
+        <RNView onPress={onArticleSavePress}>
           {`Saved Articles: ${JSON.stringify(savedArticles)}`}
         </RNView>
       )}
@@ -23,11 +23,11 @@ jest.mock("@times-components/section", () => {
 export default () => {
   it("saved article integration", async () => {
     const {
-      SectionEvents: { getSavedArticles, onSaveStarPress }
+      SectionEvents: { getSavedArticles, onArticleSavePress }
     } = NativeModules;
 
     getSavedArticles.mockReturnValue(Promise.resolve(["123", "456"]));
-    onSaveStarPress.mockReturnValue(Promise.resolve(true));
+    onArticleSavePress.mockReturnValue(Promise.resolve(true));
 
     const testInstance = TestRenderer.create(
       <SectionPage section={{ name: "News", slices: [] }} />
