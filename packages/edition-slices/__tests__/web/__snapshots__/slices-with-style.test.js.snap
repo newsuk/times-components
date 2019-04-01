@@ -1091,7 +1091,113 @@ exports[`4. lead one and four 1`] = `
 </div>
 `;
 
-exports[`5. lead two no pic and two 1`] = `
+exports[`5. standard 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS2 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS3 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS4 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 50px;
+  padding-left: 50px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS6 {
+  -webkit-align-self: center;
+  align-self: center;
+  max-width: 100%;
+  width: 1366px;
+  -ms-flex-item-align: center;
+}
+</style>
+
+<div
+  className="IS6 S1"
+>
+  <div
+    className="IS5 S1"
+  >
+    <div
+      className="S1"
+    >
+      <TileK />
+      <div
+        className="IS1 S1"
+      />
+      <TileK />
+      <div
+        className="IS2 S1"
+      />
+      <TileK />
+      <div
+        className="IS3 S1"
+      />
+      <TileK />
+      <div
+        className="IS4 S1"
+      />
+      <TileK />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. lead two no pic and two 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1205,7 +1311,7 @@ exports[`5. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`6. secondary one 1`] = `
+exports[`7. secondary one 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1229,7 +1335,7 @@ exports[`6. secondary one 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`8. secondary one and columnist 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1309,7 +1415,7 @@ exports[`7. secondary one and columnist 1`] = `
 </div>
 `;
 
-exports[`8. secondary four 1`] = `
+exports[`9. secondary four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1467,7 +1573,7 @@ exports[`8. secondary four 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and four 1`] = `
+exports[`10. secondary one and four 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1655,7 +1761,7 @@ exports[`9. secondary one and four 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two 1`] = `
+exports[`11. secondary two and two 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1824,7 +1930,7 @@ exports[`10. secondary two and two 1`] = `
 </div>
 `;
 
-exports[`11. secondary two no pic and two 1`] = `
+exports[`12. secondary two no pic and two 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1976,7 +2082,7 @@ exports[`11. secondary two no pic and two 1`] = `
 </div>
 `;
 
-exports[`12. list two and six no pic 1`] = `
+exports[`13. list two and six no pic 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2228,7 +2334,7 @@ exports[`12. list two and six no pic 1`] = `
 </div>
 `;
 
-exports[`13. leaders 1`] = `
+exports[`14. leaders 1`] = `
 <style>
 .S1 {
   font-weight: inherit;
@@ -2396,7 +2502,7 @@ exports[`13. leaders 1`] = `
 </div>
 `;
 
-exports[`14. comment lead and cartoon 1`] = `
+exports[`15. comment lead and cartoon 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2476,7 +2582,7 @@ exports[`14. comment lead and cartoon 1`] = `
 </div>
 `;
 
-exports[`15. puzzle 1`] = `
+exports[`16. puzzle 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

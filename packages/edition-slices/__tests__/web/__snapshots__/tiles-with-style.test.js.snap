@@ -1164,7 +1164,109 @@ exports[`10. tile j 1`] = `
 </Link>
 `;
 
-exports[`11. tile l 1`] = `
+exports[`11. tile k 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.S4 {
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  padding-right: 10px;
+  width: 50%;
+}
+
+.IS2 {
+  color: rgba(0,91,141,1.00);
+}
+
+.IS3 {
+  line-height: 22px;
+}
+
+.IS4 {
+  width: 50%;
+}
+
+.IS5 {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+</style>
+
+<Link
+  url="/article/123"
+>
+  <div
+    className="IS5 S1"
+  >
+    <div
+      className="IS1 S1"
+    >
+      <Image
+        aspectRatio={1.5}
+        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </div>
+    <div
+      className="IS4 S1"
+    >
+      <div
+        className="S1"
+      >
+        <div
+          className="IS2 S2"
+        >
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        className="IS3 S3"
+        role="heading"
+      >
+        This is tile headline
+      </h3>
+      <div
+        className="S4"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`12. tile l 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1249,7 +1351,7 @@ exports[`11. tile l 1`] = `
 </Link>
 `;
 
-exports[`12. tile m 1`] = `
+exports[`13. tile m 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -1320,7 +1422,7 @@ exports[`12. tile m 1`] = `
 </Link>
 `;
 
-exports[`13. tile n 1`] = `
+exports[`14. tile n 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1441,7 +1543,7 @@ exports[`13. tile n 1`] = `
 </Link>
 `;
 
-exports[`14. tile o 1`] = `
+exports[`15. tile o 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1529,7 +1631,7 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile p 1`] = `
+exports[`16. tile p 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1705,7 +1807,7 @@ exports[`15. tile p 1`] = `
 </Link>
 `;
 
-exports[`16. tile q 1`] = `
+exports[`17. tile q 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -1746,7 +1848,7 @@ exports[`16. tile q 1`] = `
 </Link>
 `;
 
-exports[`17. tile r 1`] = `
+exports[`18. tile r 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -1840,7 +1942,7 @@ exports[`17. tile r 1`] = `
 </Link>
 `;
 
-exports[`18. tile s 1`] = `
+exports[`19. tile s 1`] = `
 <style>
 .S1 {
   font-family: TimesModern-Bold;
@@ -1949,7 +2051,7 @@ exports[`18. tile s 1`] = `
 </div>
 `;
 
-exports[`19. tile t 1`] = `
+exports[`20. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2054,7 +2156,7 @@ exports[`19. tile t 1`] = `
 </Link>
 `;
 
-exports[`20. tile u 1`] = `
+exports[`21. tile u 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2168,7 +2270,7 @@ exports[`20. tile u 1`] = `
 </Link>
 `;
 
-exports[`21. tile v 1`] = `
+exports[`22. tile v 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -2266,7 +2368,7 @@ exports[`21. tile v 1`] = `
 </Link>
 `;
 
-exports[`22. tile w 1`] = `
+exports[`23. tile w 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2402,7 +2504,7 @@ exports[`22. tile w 1`] = `
 </Link>
 `;
 
-exports[`23. tile x 1`] = `
+exports[`24. tile x 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2540,7 +2642,7 @@ exports[`23. tile x 1`] = `
 </Link>
 `;
 
-exports[`24. tile y 1`] = `
+exports[`25. tile y 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2655,7 +2757,7 @@ exports[`24. tile y 1`] = `
 </Link>
 `;
 
-exports[`25. tile z 1`] = `
+exports[`26. tile z 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -2748,7 +2850,7 @@ exports[`25. tile z 1`] = `
 </Link>
 `;
 
-exports[`26. tile aa 1`] = `
+exports[`27. tile aa 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2849,7 +2951,7 @@ exports[`26. tile aa 1`] = `
 </Link>
 `;
 
-exports[`27. tile ab 1`] = `
+exports[`28. tile ab 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -3020,7 +3122,7 @@ exports[`27. tile ab 1`] = `
 </Link>
 `;
 
-exports[`28. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
@@ -3138,7 +3240,7 @@ exports[`28. tile ae 1`] = `
 </Link>
 `;
 
-exports[`29. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -3214,7 +3316,7 @@ exports[`29. tile ag 1`] = `
 </Link>
 `;
 
-exports[`30. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -3293,7 +3395,7 @@ exports[`30. tile aj 1`] = `
 </Link>
 `;
 
-exports[`31. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -3376,7 +3478,7 @@ exports[`31. tile ak 1`] = `
 </Link>
 `;
 
-exports[`32. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
