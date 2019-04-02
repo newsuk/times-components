@@ -10,7 +10,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-const TileAH = ({ onPress, tile }) => (
+const TileAN = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileImage
@@ -22,21 +22,18 @@ const TileAH = ({ onPress, tile }) => (
         )}
       />
       <TileSummary
-        byline={tile.article.byline}
-        bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
-        strapline={tile.strapline || tile.article.strapline}
-        straplineStyle={styles.strapline}
         style={styles.summaryContainer}
+        summary={tile.teaser125 || tile.article.summary125}
         tile={tile}
       />
     </View>
   </TileLink>
 );
 
-TileAH.propTypes = {
+TileAN.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 
-export default withTileTracking(TileAH);
+export default withTileTracking(TileAN);

@@ -705,31 +705,27 @@ exports[`26. secondary two and two - wide 1`] = `
 <View>
   <View>
     <View>
-      <View>
-        <TileV
-          tileName="secondary1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileV
-          tileName="secondary2"
-        />
-      </View>
+      <TileAM
+        tileName="secondary1"
+      />
     </View>
     <View />
     <View>
-      <View>
-        <TileG
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileG
-          tileName="support2"
-        />
-      </View>
+      <TileAN
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAM
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAN
+        tileName="support2"
+      />
     </View>
   </View>
 </View>
@@ -1147,31 +1143,27 @@ exports[`41. secondary two and two - huge 1`] = `
 <View>
   <View>
     <View>
-      <View>
-        <TileV
-          tileName="secondary1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileV
-          tileName="secondary2"
-        />
-      </View>
+      <TileAM
+        tileName="secondary1"
+      />
     </View>
     <View />
     <View>
-      <View>
-        <TileG
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileG
-          tileName="support2"
-        />
-      </View>
+      <TileAN
+        tileName="support1"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAM
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAN
+        tileName="support2"
+      />
     </View>
   </View>
 </View>
