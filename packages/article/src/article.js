@@ -4,7 +4,7 @@ import ArticleInDepth from "@times-components/article-in-depth";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
-import { getMediaList, addIdsToInlineImages } from "./utils";
+import { getMediaList, addIndexesToInlineImages } from "./utils";
 
 export const templates = {
   indepth: ArticleInDepth,
@@ -22,7 +22,7 @@ const Article = props => {
   let onImagePressArticle = null;
 
   if (onImagePress) {
-    content = addIdsToInlineImages(content, leadAsset);
+    content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
     onImagePressArticle = () => onImagePress(mediaList);
   }

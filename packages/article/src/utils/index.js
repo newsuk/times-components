@@ -21,13 +21,12 @@ const getMediaList = (content, leadAsset) => {
     let inlineMedia;
 
     if (item.name === "video") {
-      const { caption, display, posterImageUrl, skySports } = item.attributes;
+      const { caption, posterImageUrl, skySports } = item.attributes;
       inlineMedia = {
         index,
         name: "inlineVideo",
         value: {
           caption,
-          display,
           posterImageUrl,
           skySports
         }
@@ -46,7 +45,7 @@ const getMediaList = (content, leadAsset) => {
   return mediaList;
 };
 
-const addIdsToInlineImages = (content, leadAsset) => {
+const addIndexesToInlineImages = (content, leadAsset) => {
   const mutatedContent = content || [];
   let index = leadAsset ? 1 : 0;
 
@@ -61,4 +60,4 @@ const addIdsToInlineImages = (content, leadAsset) => {
   return mutatedContent;
 };
 
-export { addIdsToInlineImages, getMediaList };
+export { addIndexesToInlineImages, getMediaList };

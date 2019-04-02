@@ -2,46 +2,22 @@ import { getMediaList } from "../src/utils";
 
 const content = [
   {
-    children: [
-      {
-        attributes: {
-          value: "text"
-        },
-        name: "text"
-      }
-    ],
-    name: "paragraph"
+    name: "foo"
   },
   {
     attributes: {
       caption: "caption",
       credits: "PA",
-      display: "primary",
-      ratio: "1500:1000",
       url: "image.com"
     },
     name: "image"
   },
   {
-    children: [
-      {
-        attributes: {
-          value: "more text"
-        },
-        name: "text"
-      }
-    ],
-    name: "paragraph"
+    name: "foo"
   },
   {
     attributes: {
-      brightcoveAccountId: "5436121856001",
-      brightcovePlayerId: "default",
-      brightcovePolicyKey: "foo",
-      brightcoveVideoId: "6014234295001",
-      caption: "Scores killed after gunman opens fire",
-      display: "primary",
-      paidOnly: false,
+      caption: "caption",
       posterImageUrl: "image.com",
       skySports: false
     },
@@ -50,18 +26,12 @@ const content = [
 ];
 
 const videoLeadAsset = {
-  brightcoveAccountId: "5436121856001",
-  brightcovePlayerId: "default",
-  brightcovePolicyKey: "foo",
-  brightcoveVideoId: "6018770071001",
-  paidOnly: false,
   posterImage: {
     caption: null,
     credits: null,
     crop169: {
       url: "image.com"
     },
-    id: "72f59afd-7c91-4e0b-a1d2-9ce0eae63e75",
     title: ""
   },
   skySports: false,
@@ -71,16 +41,10 @@ const videoLeadAsset = {
 const imageLeadAsset = {
   caption: null,
   credits: "image credits",
-  crop11: null,
-  crop23: null,
-  crop32: null,
-  crop45: null,
   crop169: {
     url: "image.com"
   },
-  crop1251: null,
-  id: "2e7670f9-e035-48ba-aa69-f4bbbae7df30",
-  title: "Geraint Thomas",
+  title: "image title",
   type: "Image"
 };
 
@@ -94,16 +58,10 @@ describe("getMediaList", () => {
         value: {
           caption: null,
           credits: "image credits",
-          crop11: null,
-          crop23: null,
-          crop32: null,
-          crop45: null,
           crop169: {
             url: "image.com"
           },
-          crop1251: null,
-          id: "2e7670f9-e035-48ba-aa69-f4bbbae7df30",
-          title: "Geraint Thomas",
+          title: "image title",
           type: "Image"
         }
       },
@@ -113,8 +71,6 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          display: "primary",
-          ratio: "1500:1000",
           url: "image.com"
         }
       },
@@ -122,8 +78,7 @@ describe("getMediaList", () => {
         index: 2,
         name: "inlineVideo",
         value: {
-          caption: "Scores killed after gunman opens fire",
-          display: "primary",
+          caption: "caption",
           posterImageUrl: "image.com",
           skySports: false
         }
@@ -141,18 +96,12 @@ describe("getMediaList", () => {
         index: 0,
         name: "leadAsset",
         value: {
-          brightcoveAccountId: "5436121856001",
-          brightcovePlayerId: "default",
-          brightcovePolicyKey: "foo",
-          brightcoveVideoId: "6018770071001",
-          paidOnly: false,
           posterImage: {
             caption: null,
             credits: null,
             crop169: {
               url: "image.com"
             },
-            id: "72f59afd-7c91-4e0b-a1d2-9ce0eae63e75",
             title: ""
           },
           skySports: false,
@@ -165,8 +114,6 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          display: "primary",
-          ratio: "1500:1000",
           url: "image.com"
         }
       },
@@ -174,8 +121,7 @@ describe("getMediaList", () => {
         index: 2,
         name: "inlineVideo",
         value: {
-          caption: "Scores killed after gunman opens fire",
-          display: "primary",
+          caption: "caption",
           posterImageUrl: "image.com",
           skySports: false
         }
@@ -196,8 +142,6 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          display: "primary",
-          ratio: "1500:1000",
           url: "image.com"
         }
       },
@@ -205,8 +149,7 @@ describe("getMediaList", () => {
         index: 1,
         name: "inlineVideo",
         value: {
-          caption: "Scores killed after gunman opens fire",
-          display: "primary",
+          caption: "caption",
           posterImageUrl: "image.com",
           skySports: false
         }
@@ -225,18 +168,12 @@ describe("getMediaList", () => {
         index: 0,
         name: "leadAsset",
         value: {
-          brightcoveAccountId: "5436121856001",
-          brightcovePlayerId: "default",
-          brightcovePolicyKey: "foo",
-          brightcoveVideoId: "6018770071001",
-          paidOnly: false,
           posterImage: {
             caption: null,
             credits: null,
             crop169: {
               url: "image.com"
             },
-            id: "72f59afd-7c91-4e0b-a1d2-9ce0eae63e75",
             title: ""
           },
           skySports: false,
@@ -257,18 +194,12 @@ describe("getMediaList", () => {
         index: 0,
         name: "leadAsset",
         value: {
-          brightcoveAccountId: "5436121856001",
-          brightcovePlayerId: "default",
-          brightcovePolicyKey: "foo",
-          brightcoveVideoId: "6018770071001",
-          paidOnly: false,
           posterImage: {
             caption: null,
             credits: null,
             crop169: {
               url: "image.com"
             },
-            id: "72f59afd-7c91-4e0b-a1d2-9ce0eae63e75",
             title: ""
           },
           skySports: false,
