@@ -7,7 +7,7 @@ import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import StarButton from "@times-components/star-button";
-import { TileH } from "../src/tiles";
+import { TileH, TileX } from "../src/tiles";
 import {
   getCrop,
   TileImage,
@@ -24,6 +24,28 @@ const tile = mockEditionSlice(1).items[0];
 
 export default () => {
   const tests = [
+    {
+      name:
+        "Tile summary falls back to article strapline if strapline is unavailable",
+      test: () => {
+        const tileWithoutStrapline = {
+          ...tile,
+          article: {
+            ...tile.article,
+            strapline: "This is strapline"
+          },
+          strapline: ""
+        };
+
+        const output = TestRenderer.create(
+          <TileX onPress={() => {}} tile={tileWithoutStrapline} />
+        );
+
+        expect(output.root.findByType(TileSummary).props.strapline).toEqual(
+          tileWithoutStrapline.article.strapline
+        );
+      }
+    },
     {
       name:
         "Tile summary falls back to shortHeadline if tileHeadline is unavailable",
