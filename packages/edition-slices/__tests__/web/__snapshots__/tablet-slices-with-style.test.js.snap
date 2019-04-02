@@ -101,7 +101,6 @@ exports[`2. daily universal register - medium 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 16px;
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -1843,7 +1842,6 @@ exports[`17. daily universal register - wide 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 16px;
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -3585,7 +3583,6 @@ exports[`32. daily universal register - huge 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 16px;
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 

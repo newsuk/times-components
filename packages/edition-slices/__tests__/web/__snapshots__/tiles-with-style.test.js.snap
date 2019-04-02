@@ -1956,7 +1956,7 @@ exports[`19. tile s 1`] = `
 
 .S3 {
   color: rgba(105,105,105,1.00);
-  font-family: TimesModern-Bold;
+  font-family: TimesDigitalW04;
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
