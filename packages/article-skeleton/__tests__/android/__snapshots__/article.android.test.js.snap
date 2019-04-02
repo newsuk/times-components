@@ -83,6 +83,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "uri": "https://image.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -105,6 +106,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "uri": "https://image.io/secondary",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -127,6 +129,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "uri": "https://image.io/inline",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>

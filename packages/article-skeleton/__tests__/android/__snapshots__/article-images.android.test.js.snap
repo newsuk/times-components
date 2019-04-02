@@ -43,6 +43,7 @@ exports[`1. a secondary image 1`] = `
                   "uri": "https://image-2.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -106,6 +107,7 @@ exports[`2. an inline image 1`] = `
                   "uri": "https://image-inline.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
