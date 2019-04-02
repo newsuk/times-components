@@ -38,7 +38,8 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
     template &&
     templateWithDropCaps.includes(template) &&
     !isDropcapDisabled &&
-    children.length
+    children.length >= 1 &&
+    children[0].name === "paragraph"
   ) {
     const firstTextChild = children[0].children[0]
     const [dropcap, ...rest] = insertDropcap(firstTextChild, children[0].children)
