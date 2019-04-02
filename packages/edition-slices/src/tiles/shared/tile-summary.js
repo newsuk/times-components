@@ -1,12 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
   ArticleSummaryHeadline,
   ArticleSummaryStrapline
 } from "@times-components/article-summary";
+import { SectionContext } from "@times-components/context";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
+import TileStar from "./tile-star";
+import styles from "./styles";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -26,12 +30,34 @@ class TileSummary extends Component {
   renderFlags() {
     const {
       tile: {
-        article: { expirableFlags }
+        article: { expirableFlags,  articleId}
       },
-      flagColour
+      flagColour,
+      starStyle
     } = this.props;
 
-    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    const onArticleSavePress = () => {};
+    const savedArticles = [{1: true}];
+
+    const tileStyle = starStyle ? starStyle : styles;
+
+    return (
+    <View style={tileStyle.container}>
+      <View style={tileStyle.flagStyle}>
+        <ArticleFlags {...flagColour} flags={expirableFlags} />
+      </View>
+      <SectionContext.Provider
+        value={{
+          onArticleSavePress,
+          savedArticles
+        }}
+      >
+        <View style={tileStyle.starButton}>
+          <TileStar articleId="1" />
+        </View>
+      </SectionContext.Provider>
+    </View>
+    );
   }
 
   renderHeadline() {
@@ -67,6 +93,7 @@ class TileSummary extends Component {
       byline,
       bylineStyle,
       strapline,
+      starStyle,
       style,
       summary,
       labelColour

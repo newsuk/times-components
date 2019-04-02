@@ -11,6 +11,18 @@ const styles = {
   imageContainer: {
     width: "100%"
   },
+  star: {
+    container: {
+      flexDirection: "column"
+    },
+    flagStyle: {
+
+    },
+    starButton: {
+      textAlign: "center",
+      marginTop: 10
+    }
+  },
   summaryContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
