@@ -21,7 +21,7 @@ export const defaultProps = {
   fadeImageIn: false,
   highResSize: null,
   lowResSize: null,
-  onImagePress: () => null,
+  onImagePress: null,
   style: {},
   uri: null
 };
