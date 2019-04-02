@@ -11,15 +11,7 @@ function Placeholder({ dimensions }) {
   const { height, width } = dimensions;
 
   return (
-    <View
-      height={height}
-      style={[
-        styles.container,
-        styles.placeholderContainer,
-        styles.placeholderBackground
-      ]}
-      width={width}
-    >
+    <View height={height} style={styles.placeholderContainer} width={width}>
       <Image
         resizeMode="contain"
         // eslint-disable-next-line global-require
