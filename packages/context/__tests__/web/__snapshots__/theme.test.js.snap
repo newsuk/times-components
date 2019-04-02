@@ -4,6 +4,6 @@ exports[`article context with default values 1`] = `"{\\"theme\\":{\\"imageCapti
 
 exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
 
-exports[`section context with default values 1`] = `"{\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0}"`;
+exports[`section context with default values 1`] = `"{\\"onArticleSavePress\\":null,\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0,\\"savedArticles\\":null}"`;
 
-exports[`section context with inline values 1`] = `"{\\"publicationName\\":\\"SUNDAYTIMES\\",\\"recentlyOpenedPuzzleCount\\":123}"`;
+exports[`section context with inline values 1`] = `"{\\"publicationName\\":\\"SUNDAYTIMES\\",\\"recentlyOpenedPuzzleCount\\":123,\\"savedArticles\\":{\\"dummy-article-id-1\\":true,\\"dummy-article-id-2\\":true}}"`;

@@ -1,14 +1,6 @@
 import React from "react";
 import { NativeModules } from "react-native";
 import TestRenderer from "react-test-renderer";
-import {
-  addSerializers,
-  compose,
-  flattenStyleTransform,
-  minimaliseTransform,
-  minimalNativeTransform,
-  print
-} from "@times-components/jest-serializer";
 import { delay } from "@times-components/test-utils";
 import "./mocks";
 import SectionPage from "../src/section/section";
@@ -24,16 +16,6 @@ jest.mock("@times-components/section", () => {
 });
 
 export default () => {
-  addSerializers(
-    expect,
-    compose(
-      print,
-      flattenStyleTransform,
-      minimalNativeTransform,
-      minimaliseTransform((value, key) => key === "style")
-    )
-  );
-
   it("puzzle count uses initial prop and gets updated with the bridge", async () => {
     const {
       SectionEvents: { getOpenedPuzzleCount }

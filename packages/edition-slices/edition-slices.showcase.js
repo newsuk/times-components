@@ -3,6 +3,7 @@ import { ScrollView } from "react-native";
 import {
   mockDailyRegisterSlice,
   mockLeadOneAndFourSlice,
+  mockStandardSlice,
   mockCommentLeadAndCartoonSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
@@ -32,7 +33,8 @@ import {
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
   LeadersSlice,
-  DailyRegisterLeadFourSlice
+  DailyRegisterLeadFourSlice,
+  StandardSlice
 } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>
@@ -70,8 +72,13 @@ const sliceStories = [
   },
   {
     mock: mockLeadOneAndFourSlice(),
-    name: "Lead One And Four (I,J,J,J,J)",
+    name: "Lead One And Four (Mobile: I,J,J,J,J, Tablet: AC,AD,AD,AD,AD)",
     Slice: LeadOneAndFourSlice
+  },
+  {
+    mock: mockStandardSlice(),
+    name: "Standard Slice (K*)",
+    Slice: StandardSlice
   },
   {
     mock: mockLeadOneAndOneSlice(),

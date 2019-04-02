@@ -223,7 +223,21 @@ Array [
 ]
 `;
 
-exports[`5. lead two no pic and two 1`] = `
+exports[`5. standard 1`] = `
+<View>
+  <TileK />
+  <View />
+  <TileK />
+  <View />
+  <TileK />
+  <View />
+  <TileK />
+  <View />
+  <TileK />
+</View>
+`;
+
+exports[`6. lead two no pic and two 1`] = `
 <View>
   <TileF
     tileName="lead1"
@@ -243,13 +257,13 @@ exports[`5. lead two no pic and two 1`] = `
 </View>
 `;
 
-exports[`6. secondary one 1`] = `
+exports[`7. secondary one 1`] = `
 <TileA
   tileName="secondary"
 />
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`8. secondary one and columnist 1`] = `
 <View>
   <TileT
     tileName="secondary"
@@ -261,7 +275,7 @@ exports[`7. secondary one and columnist 1`] = `
 </View>
 `;
 
-exports[`8. secondary four 1`] = `
+exports[`9. secondary four 1`] = `
 Array [
   <View>
     <View>
@@ -293,7 +307,7 @@ Array [
 ]
 `;
 
-exports[`9. secondary one and four 1`] = `
+exports[`10. secondary one and four 1`] = `
 <View>
   <View>
     <TheTimesLogo
@@ -331,7 +345,7 @@ exports[`9. secondary one and four 1`] = `
 </View>
 `;
 
-exports[`10. secondary two and two 1`] = `
+exports[`11. secondary two and two 1`] = `
 Array [
   <View>
     <View>
@@ -361,7 +375,7 @@ Array [
 ]
 `;
 
-exports[`11. secondary two no pic and two 1`] = `
+exports[`12. secondary two no pic and two 1`] = `
 <View>
   <TileB
     tileName="secondary1"
@@ -381,7 +395,7 @@ exports[`11. secondary two no pic and two 1`] = `
 </View>
 `;
 
-exports[`12. list two and six no pic 1`] = `
+exports[`13. list two and six no pic 1`] = `
 Array [
   <View>
     <View>
@@ -425,7 +439,7 @@ Array [
 ]
 `;
 
-exports[`13. leaders 1`] = `
+exports[`14. leaders 1`] = `
 <View>
   <View>
     <Image
@@ -458,7 +472,7 @@ exports[`13. leaders 1`] = `
 </View>
 `;
 
-exports[`14. comment lead and cartoon 1`] = `
+exports[`15. comment lead and cartoon 1`] = `
 <View>
   <TileP
     tileName="lead"
@@ -470,7 +484,7 @@ exports[`14. comment lead and cartoon 1`] = `
 </View>
 `;
 
-exports[`15. puzzle 1`] = `
+exports[`16. puzzle 1`] = `
 <View>
   <View>
     <TileAJ
