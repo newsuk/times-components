@@ -48,6 +48,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            strapline
             leadAsset {
               ...leadAsset11
             }
@@ -80,6 +81,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
         leader2 {
@@ -87,6 +89,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
         leader3 {
@@ -94,6 +97,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
       }
@@ -231,6 +235,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
           }
@@ -402,6 +407,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            strapline
             leadAsset {
               ...leadAsset11
             }
@@ -646,6 +652,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            strapline
             leadAsset {
               ...leadAsset11
             }
@@ -678,6 +685,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
         leader2 {
@@ -685,6 +693,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
         leader3 {
@@ -692,6 +701,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
           }
         }
       }
@@ -829,6 +839,7 @@ export default gql`
           strapline
           article {
             ...baseArticleProps
+            strapline
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
           }
@@ -1000,6 +1011,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            strapline
             leadAsset {
               ...leadAsset11
             }
