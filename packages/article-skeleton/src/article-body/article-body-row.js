@@ -230,7 +230,7 @@ ArticleRow.propTypes = {
 };
 
 ArticleRow.defaultProps = {
-  onImagePress: () => null
+  onImagePress: null
 };
 
 export default ArticleRow;

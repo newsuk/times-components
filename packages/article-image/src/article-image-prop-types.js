@@ -20,5 +20,5 @@ export const defaultPropTypes = {
     caption: null,
     credits: null
   },
-  onImagePress: () => null
+  onImagePress: null
 };
