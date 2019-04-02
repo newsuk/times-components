@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.50.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.7...@times-components/edition-slices@0.50.0) (2019-04-02)
+
+
+### Features
+
+* save star button package ([#1831](https://github.com/newsuk/times-components/issues/1831)) ([67a39b5](https://github.com/newsuk/times-components/commit/67a39b5))
+
+
+
+
+
 ## [0.49.7](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.6...@times-components/edition-slices@0.49.7) (2019-04-02)
 
 **Note:** Version bump only for package @times-components/edition-slices

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/newsuk/times-components/compare/@times-components/image@5.1.0...@times-components/image@5.1.1) (2019-04-02)
+
+
+### Bug Fixes
+
+* remove android specific modal x margin ([#1846](https://github.com/newsuk/times-components/issues/1846)) ([9690c1e](https://github.com/newsuk/times-components/commit/9690c1e))
+
+
+
+
+
 # [5.1.0](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.2...@times-components/image@5.1.0) (2019-04-02)
 
 
