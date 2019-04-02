@@ -167,7 +167,7 @@ ArticlePage.propTypes = {
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   interactiveConfig: {},
-  onImagePress: () => null,
+  onImagePress: null,
   referralUrl: null
 };
 

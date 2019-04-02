@@ -20,7 +20,7 @@ const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: () => null
+  onImagePress: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };
