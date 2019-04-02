@@ -54,7 +54,7 @@ const styles = {
     position: "absolute",
     width: "100%"
   },
-  placeholderContainer: {
+  placeholder: {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundSecondary,
     flex: 1,
