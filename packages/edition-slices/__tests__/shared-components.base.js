@@ -2,11 +2,19 @@ import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Image from "@times-components/image";
+import { SectionContext } from "@times-components/context";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
+import StarButton from "@times-components/star-button";
 import { TileH, TileX } from "../src/tiles";
-import { getCrop, TileImage, TileLink, TileSummary } from "../src/tiles/shared";
+import {
+  getCrop,
+  TileImage,
+  TileLink,
+  TileStar,
+  TileSummary
+} from "../src/tiles/shared";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -255,6 +263,68 @@ export default () => {
           }
         };
         expect(getCrop(leadAsset, "crop45")).toEqual(undefined);
+      }
+    },
+    {
+      name: "Tile Star is rendered as already saved",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = { "1": true };
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="1" />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.selected).toEqual(true);
+      }
+    },
+    {
+      name: "Tile Star is rendered as not yet saved",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = { "1": true };
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="I am not saved yet" />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.selected).toEqual(
+          false
+        );
+      }
+    },
+    {
+      name: "Tile Star is disabled",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = null;
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="1" />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.disabled).toEqual(true);
       }
     }
   ];
