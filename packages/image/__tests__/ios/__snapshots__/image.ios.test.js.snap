@@ -4,32 +4,19 @@ exports[`1. default layout 1`] = `
 <View
   aspectRatio={1.5}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={525}
   >
-    <View>
-      <Svg
-        height={143}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={143}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {
@@ -44,32 +31,19 @@ exports[`2. default layout without uri 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={700}
   >
-    <View>
-      <Svg
-        height={191}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={191}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={null}
   />
@@ -78,32 +52,19 @@ exports[`2. default layout without uri 1`] = `
 
 exports[`3. default layout without aspect ratio 1`] = `
 <View>
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={700}
   >
-    <View>
-      <Svg
-        height={191}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={191}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {
@@ -118,32 +79,19 @@ exports[`4. prepend https schema 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={700}
   >
-    <View>
-      <Svg
-        height={191}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={191}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {
@@ -158,32 +106,19 @@ exports[`5. handle onload event 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={700}
   >
-    <View>
-      <Svg
-        height={191}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={191}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {
@@ -212,32 +147,19 @@ exports[`7. uses highressize if it exists 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={350}
     width={700}
   >
-    <View>
-      <Svg
-        height={191}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={191}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {
@@ -288,32 +210,19 @@ exports[`12. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >
-  <Gradient
-    degrees={264}
+  <View
     height={300}
     width={600}
   >
-    <View>
-      <Svg
-        height={164}
-        version="1.1"
-        viewBox="145 50 108 120"
-        width={164}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
-    </View>
-  </Gradient>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../packages/image/assets/t.png",
+        }
+      }
+    />
+  </View>
   <Image
     source={
       Object {

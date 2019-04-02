@@ -28,32 +28,19 @@ exports[`1. modal image 1`] = `
             <View
               aspectRatio={1.5}
             >
-              <Gradient
-                degrees={264}
+              <View
                 height={350}
                 width={525}
               >
-                <View>
-                  <Svg
-                    height={143}
-                    version="1.1"
-                    viewBox="145 50 108 120"
-                    width={143}
-                  >
-                    <G
-                      fill="none"
-                      fillRule="evenodd"
-                      stroke="none"
-                      strokeWidth="1"
-                    >
-                      <Path
-                        d="6a6c07166e9c40e4f62e57af2b507822"
-                        fill="#FFFFFF"
-                      />
-                    </G>
-                  </Svg>
-                </View>
-              </Gradient>
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
+                  }
+                />
+              </View>
               <Image
                 source={
                   Object {
@@ -85,32 +72,19 @@ exports[`1. modal image 1`] = `
     <View
       aspectRatio={1.5}
     >
-      <Gradient
-        degrees={264}
+      <View
         height={350}
         width={525}
       >
-        <View>
-          <Svg
-            height={143}
-            version="1.1"
-            viewBox="145 50 108 120"
-            width={143}
-          >
-            <G
-              fill="none"
-              fillRule="evenodd"
-              stroke="none"
-              strokeWidth="1"
-            >
-              <Path
-                d="6a6c07166e9c40e4f62e57af2b507822"
-                fill="#FFFFFF"
-              />
-            </G>
-          </Svg>
-        </View>
-      </Gradient>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/image/assets/t.png",
+            }
+          }
+        />
+      </View>
       <Image
         source={
           Object {
@@ -202,32 +176,19 @@ exports[`3. modal image with custom highressize 1`] = `
             <View
               aspectRatio={1.5}
             >
-              <Gradient
-                degrees={264}
+              <View
                 height={350}
                 width={525}
               >
-                <View>
-                  <Svg
-                    height={143}
-                    version="1.1"
-                    viewBox="145 50 108 120"
-                    width={143}
-                  >
-                    <G
-                      fill="none"
-                      fillRule="evenodd"
-                      stroke="none"
-                      strokeWidth="1"
-                    >
-                      <Path
-                        d="6a6c07166e9c40e4f62e57af2b507822"
-                        fill="#FFFFFF"
-                      />
-                    </G>
-                  </Svg>
-                </View>
-              </Gradient>
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
+                  }
+                />
+              </View>
               <Image
                 source={
                   Object {
@@ -259,32 +220,19 @@ exports[`3. modal image with custom highressize 1`] = `
     <View
       aspectRatio={1.5}
     >
-      <Gradient
-        degrees={264}
+      <View
         height={350}
         width={525}
       >
-        <View>
-          <Svg
-            height={143}
-            version="1.1"
-            viewBox="145 50 108 120"
-            width={143}
-          >
-            <G
-              fill="none"
-              fillRule="evenodd"
-              stroke="none"
-              strokeWidth="1"
-            >
-              <Path
-                d="6a6c07166e9c40e4f62e57af2b507822"
-                fill="#FFFFFF"
-              />
-            </G>
-          </Svg>
-        </View>
-      </Gradient>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/image/assets/t.png",
+            }
+          }
+        />
+      </View>
       <Image
         source={
           Object {
