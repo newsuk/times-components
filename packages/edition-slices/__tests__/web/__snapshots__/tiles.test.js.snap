@@ -1313,7 +1313,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`33. tile am 1`] = `
+exports[`34. tile am 1`] = `
 <Link
   url="/article/123"
 >
@@ -1360,7 +1360,7 @@ exports[`33. tile am 1`] = `
 </Link>
 `;
 
-exports[`34. tile an 1`] = `
+exports[`35. tile an 1`] = `
 <Link
   url="/article/123"
 >

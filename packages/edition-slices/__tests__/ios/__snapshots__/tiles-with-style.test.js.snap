@@ -2553,7 +2553,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`33. tile am 1`] = `
+exports[`34. tile am 1`] = `
 <Link>
   <View
     style={
@@ -2588,7 +2588,7 @@ exports[`33. tile am 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2644,7 +2644,7 @@ exports[`33. tile am 1`] = `
 </Link>
 `;
 
-exports[`34. tile an 1`] = `
+exports[`35. tile an 1`] = `
 <Link>
   <View
     style={
@@ -2686,7 +2686,7 @@ exports[`34. tile an 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
