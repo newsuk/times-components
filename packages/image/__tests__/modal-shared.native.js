@@ -124,13 +124,7 @@ export default () => {
           <ModalImage {...propWithImagePress} />
         );
 
-        try {
-          testInstance.root.findByType(Modal);
-        } catch (error) {
-          expect(error.toString()).toBe(
-            'Error: No instances found with node type: "Component"'
-          );
-        }
+        expect(testInstance.root.findAllByType(Modal).length).toBe(0);
       }
     }
   ];
