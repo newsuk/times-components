@@ -25,6 +25,9 @@ export default class TextFlow extends Container {
       if (!child) {
         break
       }
+      if (child instanceof TextFlow) {
+        throw new Error("Nested text flows is not supported")
+      }
       if (child instanceof InlineBlock) {
         let grabbed = i + 1
         let next = this.flow[grabbed]
@@ -58,7 +61,6 @@ export default class TextFlow extends Container {
             this.block.measuredWidth = next.measuredWidth + child.measuredWidth
           }
           next.y = vPosition
-          vPosition += next.measuredHeight
           pulledLines += next.lines.length - 1
           next.block.children.forEach((line, i) => {
             if (next.lineWidths[i] < this.width) {
@@ -68,6 +70,7 @@ export default class TextFlow extends Container {
               })
             }
           })
+          vPosition += next.measuredHeight
           this.block.addChild(next)
           grabbed += 1
           next = this.flow[grabbed]
@@ -76,12 +79,7 @@ export default class TextFlow extends Container {
           }
         }
         i = grabbed
-        if (child.measuredHeight < child.height) {
-          vPosition += child.height - child.measuredHeight
-          this.block.measuredHeight += child.height
-        } else {
-          this.block.measuredHeight += child.height
-        }
+        this.block.measuredHeight += child.height
         continue
       }
       if (child instanceof Block) {

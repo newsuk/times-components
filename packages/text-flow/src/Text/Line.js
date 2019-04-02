@@ -19,6 +19,7 @@ export default class Line extends Container {
     let href = undefined
     for (let i = 0; i < flatSpans.length; i += 1) {
       const span = flatSpans[i]
+      span.line = this
       if (span.style !== style || span.href !== href) {
         spans.push(span)
         href = span.href
@@ -31,7 +32,7 @@ export default class Line extends Container {
       }
     }
     if (spans.length) {
-      let hPosition = 0
+      let hPosition = this.x
       spans.forEach(span => {
         span.x = hPosition
         hPosition += Math.floor(span.measuredWidth)

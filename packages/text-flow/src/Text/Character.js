@@ -16,7 +16,6 @@ export default class Character extends Positioned {
   strokeWidth = null;
   measuredWidth = null;
   measuredHeight = null;
-  hPosition = null;
   missing = false;
   link = null;
   style = null;

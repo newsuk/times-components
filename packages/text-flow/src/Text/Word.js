@@ -26,6 +26,7 @@ export default class Word extends Container {
       const char = this.children[i]
       if ((style !== char.style) || (href !== char.href)) {
         const span = new Span()
+        span.word = this
         span.style = char.style
         span.text = char.character
         span.measuredWidth += Math.floor(char.getWidth())
@@ -38,11 +39,7 @@ export default class Word extends Container {
         href = char.href
       } else {
         const span = spans[spans.length - 1]
-        if (char.character !== " ") {
-          span.measuredWidth += Math.floor(char.getWidth())
-        } else {
-          span.measuredWidth - this.spaceOffset
-        }
+        span.measuredWidth += Math.floor(char.getWidth())
         span.text += char.character
       }
     }
@@ -55,8 +52,9 @@ export default class Word extends Container {
         word: this,
         value: this.children.map(char => char.character).join(''),
         width: this.children.reduce(
-          (width, char) => width + char.getWidth()
-          , 0)
+          (width, char) => {
+            return width + char.getWidth()
+          }, 0)
       }),
       ...(
         this.hasNewLine ?

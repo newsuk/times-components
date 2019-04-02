@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph from "@times-components/article-paragraph";
@@ -17,7 +17,8 @@ import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
-import { Markup, Layout, Text } from "@times-components/text-flow"
+import { Markup, Layout, Text as FlowText } from "@times-components/text-flow"
+import DropCap from "@times-components/article-paragraph/src/drop-cap";
 
 const styles = styleFactory();
 
@@ -246,9 +247,33 @@ export const ArticleRowFlow = ({
 }) =>
   renderTree(data, {
     ...flow,
-    dropCap() {
+    dropCap(key, { value }, children, indx, node) {
+      const text = new FlowText.Text({
+        font: 'TimesDigitalW04-Regular',
+        size: 90,
+        lineHeight: 90,
+        markup: [new Markup.MarkupString(value)]
+      });
+      const width = text.characters[0].getWidth()
+      const height = 90
       return {
-        element: new Markup.MarkupString("")
+        element: new Layout.InlineBlock({
+          getComponent() {
+            return (<Context.Consumer key={key}>
+              {({
+                theme: { dropCapFont, sectionColour = colours.section.default, scale }
+              }) => (
+                  <DropCap
+                    dropCap={value}
+                    font={dropCapFont}
+                    scale={scale}
+                    colour={sectionColour}/>
+                )}
+            </Context.Consumer>)
+          },
+          width,
+          height
+        })
       }
     },
     ad(key, attributes) {
@@ -291,15 +316,19 @@ export const ArticleRowFlow = ({
           })
         }
       } else {
+        const [ratioWidth, ratioHeight] = ratio.split(":");
+        const aspectRatio = ratioHeight / ratioWidth;
         return {
           element: new Layout.InlineBlock({
             width: width * 0.35,
-            height: 100,
+            height: (width * 0.35) * aspectRatio,
+            layoutDone: false,
             prevHeight: 0,
             getComponent() {
               return (
                 <View key={key} onLayout={e => {
                   this.height = e.nativeEvent.layout.height
+                  this.layoutDone = true
                 }}>
                   <ArticleImage
                     captionOptions={{
@@ -382,7 +411,7 @@ export const ArticleRowFlow = ({
     },
     paragraph(key, attributes, children, indx, node) {
       return {
-        element: new Text.Text({
+        element: new FlowText.Text({
           getComponent(children) {
             return (<Context.Consumer key={key}>
               {({

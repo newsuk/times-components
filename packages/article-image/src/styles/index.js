@@ -39,7 +39,10 @@ const styles = StyleSheet.create({
     ...containerShared,
     paddingLeft: spacing(0),
     width: '100%',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingTop: 0,
+    marginTop: 0,
+    paddingBottom: spacing(10)
   },
   inlineImage: {
     width: "100%"

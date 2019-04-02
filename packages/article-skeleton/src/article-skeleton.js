@@ -137,10 +137,10 @@ class ArticleSkeleton extends Component {
       return null;
     }
 
-    const newContent = [...dataSource.content];
+    let newContent = [...dataSource.content]
     if (newContent && newContent.length > 0) {
-      newContent[0] = insertDropcapIntoAST(
-        newContent[0],
+      newContent = insertDropcapIntoAST(
+        newContent,
         template,
         dropcapsDisabled
       );
@@ -159,7 +159,7 @@ class ArticleSkeleton extends Component {
     const rows = articleData
       .filter(row => row.type === "articleBodyRow")
       .map(({ data }) => data);
-
+    
     const textFlow = new Layout.TextFlow({
       width: 660,
       flow: rows.map(rowData => {

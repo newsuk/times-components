@@ -6,7 +6,7 @@ const defaults = () => ({
     flagged: 100,
     line: 10
   },
-  tolerance: 1
+  tolerance: 3
 });
 
 export const infinity = 10000;
