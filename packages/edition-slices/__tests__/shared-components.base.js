@@ -6,6 +6,7 @@ import { SectionContext } from "@times-components/context";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
+import StarButton from "@times-components/star-button";
 import { TileH } from "../src/tiles";
 import {
   getCrop,
@@ -17,10 +18,6 @@ import {
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
-}));
-jest.mock("@times-components/link", () => "Link");
-jest.mock("@times-components/icons", () => ({
-  IconStar: "IconStar"
 }));
 
 const tile = mockEditionSlice(1).items[0];
@@ -263,7 +260,7 @@ export default () => {
           </SectionContext.Provider>
         );
 
-        expect(output).toMatchSnapshot();
+        expect(output.root.findByType(StarButton).props.selected).toEqual(true);
       }
     },
     {
@@ -283,7 +280,9 @@ export default () => {
           </SectionContext.Provider>
         );
 
-        expect(output).toMatchSnapshot();
+        expect(output.root.findByType(StarButton).props.selected).toEqual(
+          false
+        );
       }
     },
     {
@@ -303,7 +302,7 @@ export default () => {
           </SectionContext.Provider>
         );
 
-        expect(output).toMatchSnapshot();
+        expect(output.root.findByType(StarButton).props.disabled).toEqual(true);
       }
     }
   ];
