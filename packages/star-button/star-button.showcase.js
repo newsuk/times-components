@@ -19,5 +19,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/StarButton"
+  name: "Primitives/Star Button"
 };
