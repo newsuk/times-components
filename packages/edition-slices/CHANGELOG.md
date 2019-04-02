@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.6](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.5...@times-components/edition-slices@0.49.6) (2019-04-02)
+
+
+### Bug Fixes
+
+* DUR and Leaders slice issues ([#1844](https://github.com/newsuk/times-components/issues/1844)) ([0090552](https://github.com/newsuk/times-components/commit/0090552))
+
+
+
+
+
 ## [0.49.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.49.4...@times-components/edition-slices@0.49.5) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/edition-slices

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.2...@times-components/image@5.1.0) (2019-04-02)
+
+
+### Features
+
+* Replace gradient and svg with solid background and image in native ([#1845](https://github.com/newsuk/times-components/issues/1845)) ([7d54118](https://github.com/newsuk/times-components/commit/7d54118))
+
+
+
+
+
 ## [5.0.2](https://github.com/newsuk/times-components/compare/@times-components/image@5.0.1...@times-components/image@5.0.2) (2019-04-01)
 
 
