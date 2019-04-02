@@ -33,7 +33,6 @@ exports[`1. landscape default modal 1`] = `
             style={
               Object {
                 "alignItems": "flex-end",
-                "margin": 16,
               }
             }
           >
@@ -183,7 +182,6 @@ exports[`2. portrait default modal 1`] = `
             style={
               Object {
                 "alignItems": "flex-end",
-                "margin": 16,
               }
             }
           >
@@ -333,7 +331,6 @@ exports[`3. tablet landscape default modal 1`] = `
             style={
               Object {
                 "alignItems": "flex-end",
-                "margin": 16,
                 "marginHorizontal": 20,
                 "marginVertical": 20,
               }
@@ -485,7 +482,6 @@ exports[`4. tablet portrait default modal 1`] = `
             style={
               Object {
                 "alignItems": "flex-end",
-                "margin": 16,
                 "marginHorizontal": 20,
                 "marginVertical": 20,
               }
