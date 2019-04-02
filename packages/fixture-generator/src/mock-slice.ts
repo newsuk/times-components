@@ -3,6 +3,7 @@ import {
   CommentLeadAndCartoonSlice,
   DailyUniversalRegister,
   DailyUniversalRegisterItem,
+  StandardSlice,
   LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
   LeadOneAndOneSlice,
@@ -26,6 +27,9 @@ import MockTile from "./mock-tile";
 import MockDailyRegister from "./mock-daily-register";
 
 interface LeadOneAndFourSliceWithName extends LeadOneAndFourSlice {
+  name: string;
+}
+interface StandardSliceWithName extends StandardSlice {
   name: string;
 }
 
@@ -114,6 +118,14 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
     support2: tiles[2],
     support3: tiles[3],
     support4: tiles[4],
+    items: tiles
+  };
+}
+
+function mockStandardSlice(): StandardSliceWithName {
+  const tiles = getTiles(5);
+  return <StandardSliceWithName>{
+    name: "MagazineSlice",
     items: tiles
   };
 }
@@ -304,6 +316,7 @@ export {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
   mockLeadOneAndFourSlice,
+  mockStandardSlice,
   mockLeadOneFullWidthSlice,
   mockLeadOneAndOneSlice,
   mockLeadOneAndTwoSlice,

@@ -24,7 +24,7 @@ exports[`1. tile a 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -94,7 +94,7 @@ exports[`2. tile b 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -176,7 +176,7 @@ exports[`3. tile c 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -255,7 +255,7 @@ exports[`4. tile d 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -334,7 +334,7 @@ exports[`5. tile e 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -396,7 +396,7 @@ exports[`6. tile f 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -509,7 +509,7 @@ exports[`7. tile g 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -580,7 +580,7 @@ exports[`8. tile h 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -700,7 +700,7 @@ exports[`9. tile i 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -778,7 +778,7 @@ exports[`10. tile j 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -815,7 +815,85 @@ exports[`10. tile j 1`] = `
 </Link>
 `;
 
-exports[`11. tile l 1`] = `
+exports[`11. tile k 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingRight": 10,
+          "width": "50%",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "400",
+            "lineHeight": 22,
+            "marginBottom": 10,
+          }
+        }
+      >
+        This is tile headline
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`12. tile l 1`] = `
 <Link>
   <View
     style={
@@ -840,7 +918,7 @@ exports[`11. tile l 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -877,7 +955,7 @@ exports[`11. tile l 1`] = `
 </Link>
 `;
 
-exports[`12. tile m 1`] = `
+exports[`13. tile m 1`] = `
 <Link>
   <View
     style={
@@ -931,7 +1009,7 @@ exports[`12. tile m 1`] = `
 </Link>
 `;
 
-exports[`13. tile n 1`] = `
+exports[`14. tile n 1`] = `
 <Link>
   <View
     style={
@@ -973,7 +1051,7 @@ exports[`13. tile n 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1023,7 +1101,7 @@ exports[`13. tile n 1`] = `
 </Link>
 `;
 
-exports[`14. tile o 1`] = `
+exports[`15. tile o 1`] = `
 <Link>
   <View
     style={
@@ -1049,7 +1127,7 @@ exports[`14. tile o 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1087,7 +1165,7 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile p 1`] = `
+exports[`16. tile p 1`] = `
 <Link>
   <View
     style={
@@ -1130,7 +1208,7 @@ exports[`15. tile p 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1201,7 +1279,7 @@ exports[`15. tile p 1`] = `
 </Link>
 `;
 
-exports[`16. tile q 1`] = `
+exports[`17. tile q 1`] = `
 <Link>
   <View
     style={
@@ -1225,7 +1303,7 @@ exports[`16. tile q 1`] = `
 </Link>
 `;
 
-exports[`17. tile r 1`] = `
+exports[`18. tile r 1`] = `
 <Link>
   <View
     style={
@@ -1251,7 +1329,7 @@ exports[`17. tile r 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1291,7 +1369,7 @@ exports[`17. tile r 1`] = `
 </Link>
 `;
 
-exports[`18. tile s 1`] = `
+exports[`19. tile s 1`] = `
 <View
   style={
     Object {
@@ -1323,7 +1401,7 @@ exports[`18. tile s 1`] = `
     style={
       Object {
         "color": "#696969",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesDigitalW04",
         "fontSize": 14,
         "lineHeight": 20,
       }
@@ -1400,7 +1478,7 @@ exports[`18. tile s 1`] = `
 </View>
 `;
 
-exports[`19. tile t 1`] = `
+exports[`20. tile t 1`] = `
 <Link>
   <View
     style={
@@ -1442,7 +1520,7 @@ exports[`19. tile t 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1479,7 +1557,7 @@ exports[`19. tile t 1`] = `
 </Link>
 `;
 
-exports[`20. tile u 1`] = `
+exports[`21. tile u 1`] = `
 <Link>
   <View
     style={
@@ -1512,7 +1590,7 @@ exports[`20. tile u 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1559,7 +1637,7 @@ exports[`20. tile u 1`] = `
 </Link>
 `;
 
-exports[`21. tile v 1`] = `
+exports[`22. tile v 1`] = `
 <Link>
   <View
     style={
@@ -1594,7 +1672,7 @@ exports[`21. tile v 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1632,7 +1710,7 @@ exports[`21. tile v 1`] = `
 </Link>
 `;
 
-exports[`22. tile w 1`] = `
+exports[`23. tile w 1`] = `
 <Link>
   <View
     style={
@@ -1666,7 +1744,7 @@ exports[`22. tile w 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1730,7 +1808,7 @@ exports[`22. tile w 1`] = `
 </Link>
 `;
 
-exports[`23. tile x 1`] = `
+exports[`24. tile x 1`] = `
 <Link>
   <View
     style={
@@ -1755,7 +1833,7 @@ exports[`23. tile x 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1823,7 +1901,7 @@ exports[`23. tile x 1`] = `
 </Link>
 `;
 
-exports[`24. tile y 1`] = `
+exports[`25. tile y 1`] = `
 <Link>
   <View>
     <View
@@ -1840,7 +1918,7 @@ exports[`24. tile y 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 12,
             "fontWeight": "400",
-            "letterSpacing": 1.2,
+            "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginBottom": 0,
           }
@@ -1894,7 +1972,7 @@ exports[`24. tile y 1`] = `
 </Link>
 `;
 
-exports[`25. tile z 1`] = `
+exports[`26. tile z 1`] = `
 <Link>
   <View
     style={
@@ -1918,7 +1996,7 @@ exports[`25. tile z 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -1958,7 +2036,7 @@ exports[`25. tile z 1`] = `
 </Link>
 `;
 
-exports[`26. tile aa 1`] = `
+exports[`27. tile aa 1`] = `
 <Link>
   <View
     style={
@@ -1997,7 +2075,7 @@ exports[`26. tile aa 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2034,7 +2112,7 @@ exports[`26. tile aa 1`] = `
 </Link>
 `;
 
-exports[`27. tile ab 1`] = `
+exports[`28. tile ab 1`] = `
 <Link>
   <View
     style={
@@ -2067,7 +2145,7 @@ exports[`27. tile ab 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2151,7 +2229,7 @@ exports[`27. tile ab 1`] = `
 </Link>
 `;
 
-exports[`28. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <Link>
   <View
     style={
@@ -2176,7 +2254,7 @@ exports[`28. tile ae 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }
@@ -2231,7 +2309,7 @@ exports[`28. tile ae 1`] = `
 </Link>
 `;
 
-exports[`29. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <Link>
   <View
     style={
@@ -2286,7 +2364,7 @@ exports[`29. tile ag 1`] = `
 </Link>
 `;
 
-exports[`30. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <Link>
   <View
     style={
@@ -2335,7 +2413,7 @@ exports[`30. tile aj 1`] = `
 </Link>
 `;
 
-exports[`31. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <Link>
   <View
     style={
@@ -2384,7 +2462,7 @@ exports[`31. tile ak 1`] = `
 </Link>
 `;
 
-exports[`32. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <Link>
   <View
     style={
@@ -2419,7 +2497,7 @@ exports[`32. tile al 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 12,
               "fontWeight": "400",
-              "letterSpacing": 1.2,
+              "letterSpacing": 0.6,
               "lineHeight": 14,
               "marginBottom": 0,
             }

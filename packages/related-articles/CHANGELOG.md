@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.54](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.53...@times-components/related-articles@5.5.54) (2019-04-02)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.53](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.52...@times-components/related-articles@5.5.53) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.52](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.51...@times-components/related-articles@5.5.52) (2019-04-01)
+
+
+### Bug Fixes
+
+* decrease letter spacing on article label text ([#1841](https://github.com/newsuk/times-components/issues/1841)) ([bb42126](https://github.com/newsuk/times-components/commit/bb42126))
+
+
+
+
+
+## [5.5.51](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.50...@times-components/related-articles@5.5.51) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.50](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.49...@times-components/related-articles@5.5.50) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [5.5.49](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.48...@times-components/related-articles@5.5.49) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/related-articles

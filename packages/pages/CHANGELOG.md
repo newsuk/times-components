@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.1](https://github.com/newsuk/times-components/compare/@times-components/pages@1.21.0...@times-components/pages@1.21.1) (2019-04-02)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+# [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.20.9...@times-components/pages@1.21.0) (2019-04-01)
+
+
+### Features
+
+* Section pages save star bridge ([#1827](https://github.com/newsuk/times-components/issues/1827)) ([a5b132c](https://github.com/newsuk/times-components/commit/a5b132c))
+
+
+
+
+
+## [1.20.9](https://github.com/newsuk/times-components/compare/@times-components/pages@1.20.8...@times-components/pages@1.20.9) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [1.20.8](https://github.com/newsuk/times-components/compare/@times-components/pages@1.20.7...@times-components/pages@1.20.8) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [1.20.7](https://github.com/newsuk/times-components/compare/@times-components/pages@1.20.6...@times-components/pages@1.20.7) (2019-04-01)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [1.20.6](https://github.com/newsuk/times-components/compare/@times-components/pages@1.20.5...@times-components/pages@1.20.6) (2019-04-01)
 
 **Note:** Version bump only for package @times-components/pages

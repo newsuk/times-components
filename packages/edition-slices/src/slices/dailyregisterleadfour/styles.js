@@ -31,7 +31,7 @@ const smallBreakpointStyles = {
     color: colours.section.comment,
     fontFamily: fonts.body,
     fontSize: fontSizes.secondary,
-    marginVertical: spacing(5)
+    marginBottom: spacing(5)
   }
 };
 

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`saved article integration: initial sync 1`] = `
+<View
+  onPress={[Function]}
+>
+  Saved Articles: {"123":true,"456":true}
+</View>
+`;
+
+exports[`saved article integration: save article 789 1`] = `
+<View
+  onPress={[Function]}
+>
+  Saved Articles: {"123":true,"456":true,"789":true}
+</View>
+`;
+
+exports[`saved article integration: unsave article 456 1`] = `
+<View
+  onPress={[Function]}
+>
+  Saved Articles: {"123":true,"789":true}
+</View>
+`;

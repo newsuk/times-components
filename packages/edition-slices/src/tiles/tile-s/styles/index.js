@@ -1,4 +1,5 @@
 import {
+  fontFactory,
   fonts,
   spacing,
   fontSizes,
@@ -21,9 +22,10 @@ const styles = {
   },
   paragraph: {
     color: colours.functional.secondary,
-    fontFamily: fonts.headline,
-    fontSize: 14,
-    lineHeight: 20
+    ...fontFactory({
+      font: "body",
+      fontSize: "teaser"
+    })
   },
   title: {
     color: colours.functional.brandColour,
