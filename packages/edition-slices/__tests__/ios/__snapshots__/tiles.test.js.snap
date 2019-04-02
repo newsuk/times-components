@@ -424,7 +424,47 @@ exports[`10. tile j 1`] = `
 </Link>
 `;
 
-exports[`11. tile l 1`] = `
+exports[`11. tile k 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1.5}
+        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        This is tile headline
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`12. tile l 1`] = `
 <Link
   url="/article/123"
 >
@@ -458,7 +498,7 @@ exports[`11. tile l 1`] = `
 </Link>
 `;
 
-exports[`12. tile m 1`] = `
+exports[`13. tile m 1`] = `
 <Link
   url="/article/123"
 >
@@ -484,7 +524,7 @@ exports[`12. tile m 1`] = `
 </Link>
 `;
 
-exports[`13. tile n 1`] = `
+exports[`14. tile n 1`] = `
 <Link
   url="/article/123"
 >
@@ -531,7 +571,7 @@ exports[`13. tile n 1`] = `
 </Link>
 `;
 
-exports[`14. tile o 1`] = `
+exports[`15. tile o 1`] = `
 <Link
   url="/article/123"
 >
@@ -566,7 +606,7 @@ exports[`14. tile o 1`] = `
 </Link>
 `;
 
-exports[`15. tile p 1`] = `
+exports[`16. tile p 1`] = `
 <Link
   url="/article/123"
 >
@@ -618,7 +658,7 @@ exports[`15. tile p 1`] = `
 </Link>
 `;
 
-exports[`16. tile q 1`] = `
+exports[`17. tile q 1`] = `
 <Link
   url="/article/123"
 >
@@ -633,7 +673,7 @@ exports[`16. tile q 1`] = `
 </Link>
 `;
 
-exports[`17. tile r 1`] = `
+exports[`18. tile r 1`] = `
 <Link
   url="/article/123"
 >
@@ -673,7 +713,7 @@ exports[`17. tile r 1`] = `
 </Link>
 `;
 
-exports[`18. tile s 1`] = `
+exports[`19. tile s 1`] = `
 <View>
   <View>
     <Text>
@@ -711,7 +751,7 @@ exports[`18. tile s 1`] = `
 </View>
 `;
 
-exports[`19. tile t 1`] = `
+exports[`20. tile t 1`] = `
 <Link
   url="/article/123"
 >
@@ -751,7 +791,7 @@ exports[`19. tile t 1`] = `
 </Link>
 `;
 
-exports[`20. tile u 1`] = `
+exports[`21. tile u 1`] = `
 <Link
   url="/article/123"
 >
@@ -791,7 +831,7 @@ exports[`20. tile u 1`] = `
 </Link>
 `;
 
-exports[`21. tile v 1`] = `
+exports[`22. tile v 1`] = `
 <Link
   url="/article/123"
 >
@@ -831,7 +871,7 @@ exports[`21. tile v 1`] = `
 </Link>
 `;
 
-exports[`22. tile w 1`] = `
+exports[`23. tile w 1`] = `
 <Link
   url="/article/123"
 >
@@ -878,7 +918,7 @@ exports[`22. tile w 1`] = `
 </Link>
 `;
 
-exports[`23. tile x 1`] = `
+exports[`24. tile x 1`] = `
 <Link
   url="/article/123"
 >
@@ -925,7 +965,7 @@ exports[`23. tile x 1`] = `
 </Link>
 `;
 
-exports[`24. tile y 1`] = `
+exports[`25. tile y 1`] = `
 <Link
   linkStyle={
     Object {
@@ -971,7 +1011,7 @@ exports[`24. tile y 1`] = `
 </Link>
 `;
 
-exports[`25. tile z 1`] = `
+exports[`26. tile z 1`] = `
 <Link
   url="/article/123"
 >
@@ -1011,7 +1051,7 @@ exports[`25. tile z 1`] = `
 </Link>
 `;
 
-exports[`26. tile aa 1`] = `
+exports[`27. tile aa 1`] = `
 <Link
   url="/article/123"
 >
@@ -1051,7 +1091,7 @@ exports[`26. tile aa 1`] = `
 </Link>
 `;
 
-exports[`27. tile ab 1`] = `
+exports[`28. tile ab 1`] = `
 <Link
   url="/article/123"
 >
@@ -1105,7 +1145,7 @@ exports[`27. tile ab 1`] = `
 </Link>
 `;
 
-exports[`28. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <Link
   url="/article/123"
 >
@@ -1146,7 +1186,7 @@ exports[`28. tile ae 1`] = `
 </Link>
 `;
 
-exports[`29. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <Link
   url="/article/123"
 >
@@ -1172,7 +1212,7 @@ exports[`29. tile ag 1`] = `
 </Link>
 `;
 
-exports[`30. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1200,7 +1240,7 @@ exports[`30. tile aj 1`] = `
 </Link>
 `;
 
-exports[`31. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1228,7 +1268,7 @@ exports[`31. tile ak 1`] = `
 </Link>
 `;
 
-exports[`32. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <Link
   url="/article/123"
 >

@@ -64,7 +64,7 @@ exports[`default styles 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 12,
                         "fontWeight": "400",
-                        "letterSpacing": 1.2,
+                        "letterSpacing": 0.6,
                         "lineHeight": 14,
                         "marginBottom": 0,
                       }

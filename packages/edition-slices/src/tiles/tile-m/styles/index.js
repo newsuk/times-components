@@ -1,4 +1,4 @@
-import { fonts, spacing } from "@times-components/styleguide";
+import { colours, fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -13,6 +13,7 @@ const styles = {
     textAlign: "center"
   },
   strapline: {
+    color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,
     fontSize: 14,
     lineHeight: 20,

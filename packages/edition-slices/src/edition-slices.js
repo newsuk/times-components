@@ -3,6 +3,7 @@ import {
   DailyRegisterLeadFourSlice,
   LeadersSlice,
   LeadOneAndFourSlice,
+  StandardSlice,
   LeadOneAndOneSlice,
   LeadOneFullWidthSlice,
   LeadTwoNoPicAndTwoSlice,
@@ -31,6 +32,7 @@ const sliceMap = {
   SecondaryOneSlice,
   SecondaryTwoAndTwoSlice,
   SecondaryTwoNoPicAndTwoSlice,
+  StandardSlice,
   TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice
 };
 

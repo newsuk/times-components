@@ -261,7 +261,25 @@ exports[`4. lead one and four 1`] = `
 </div>
 `;
 
-exports[`5. lead two no pic and two 1`] = `
+exports[`5. standard 1`] = `
+<div>
+  <div>
+    <div>
+      <TileK />
+      <div />
+      <TileK />
+      <div />
+      <TileK />
+      <div />
+      <TileK />
+      <div />
+      <TileK />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`6. lead two no pic and two 1`] = `
 <div>
   <div>
     <div>
@@ -289,7 +307,7 @@ exports[`5. lead two no pic and two 1`] = `
 </div>
 `;
 
-exports[`6. secondary one 1`] = `
+exports[`7. secondary one 1`] = `
 <div>
   <TileW
     tileName="secondary"
@@ -297,7 +315,7 @@ exports[`6. secondary one 1`] = `
 </div>
 `;
 
-exports[`7. secondary one and columnist 1`] = `
+exports[`8. secondary one and columnist 1`] = `
 <div>
   <div>
     <div>
@@ -315,7 +333,7 @@ exports[`7. secondary one and columnist 1`] = `
 </div>
 `;
 
-exports[`8. secondary four 1`] = `
+exports[`9. secondary four 1`] = `
 <div>
   <div>
     <div>
@@ -345,7 +363,7 @@ exports[`8. secondary four 1`] = `
 </div>
 `;
 
-exports[`9. secondary one and four 1`] = `
+exports[`10. secondary one and four 1`] = `
 <div>
   <div>
     <div>
@@ -396,7 +414,7 @@ exports[`9. secondary one and four 1`] = `
 </div>
 `;
 
-exports[`10. secondary two and two 1`] = `
+exports[`11. secondary two and two 1`] = `
 <div>
   <div>
     <div>
@@ -430,7 +448,7 @@ exports[`10. secondary two and two 1`] = `
 </div>
 `;
 
-exports[`11. secondary two no pic and two 1`] = `
+exports[`12. secondary two no pic and two 1`] = `
 <div>
   <div>
     <div>
@@ -462,7 +480,7 @@ exports[`11. secondary two no pic and two 1`] = `
 </div>
 `;
 
-exports[`12. list two and six no pic 1`] = `
+exports[`13. list two and six no pic 1`] = `
 <div>
   <div>
     <div>
@@ -520,7 +538,7 @@ exports[`12. list two and six no pic 1`] = `
 </div>
 `;
 
-exports[`13. leaders 1`] = `
+exports[`14. leaders 1`] = `
 <div>
   <div>
     <Image
@@ -557,7 +575,7 @@ exports[`13. leaders 1`] = `
 </div>
 `;
 
-exports[`14. comment lead and cartoon 1`] = `
+exports[`15. comment lead and cartoon 1`] = `
 <div>
   <div>
     <div>
@@ -575,7 +593,7 @@ exports[`14. comment lead and cartoon 1`] = `
 </div>
 `;
 
-exports[`15. puzzle 1`] = `
+exports[`16. puzzle 1`] = `
 <div>
   <div>
     <div>

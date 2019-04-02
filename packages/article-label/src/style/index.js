@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
       fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
-    letterSpacing: 1.2,
+    letterSpacing: 0.6,
     marginBottom: 0
   }
 });

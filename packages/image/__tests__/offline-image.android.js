@@ -24,16 +24,16 @@ export default () => {
           getLayoutEventForWidth(700)
         );
 
-        const onlineImage = testInstance.root.find(
+        const onlineImage = testInstance.root.findAll(
           node => node.type === ReactNativeImage
-        );
+        )[1];
         onlineImage.props.onError({ nativeEvent: { error: "Mock Error" } });
 
         const images = testInstance.root.findAll(
           node => node.type === ReactNativeImage
         );
-        expect(images[0].props.source.uri).toEqual(`${uri}&offline=true`);
-        expect(images[1].props.source.uri).toEqual(uri);
+        expect(images[1].props.source.uri).toEqual(`${uri}&offline=true`);
+        expect(images[2].props.source.uri).toEqual(uri);
       }
     }
   ];

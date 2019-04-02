@@ -66,12 +66,7 @@ export default {
     {
       component: () => (
         <ScrollView>
-          <Column
-            tiles={[
-              () => <Support3 id="support1" />,
-              () => <Support1 id="support2" />
-            ]}
-          />
+          <Column tiles={[() => <Support3 />, () => <Support1 />]} />
         </ScrollView>
       ),
       name: "Column - Generic Layout",
@@ -82,11 +77,11 @@ export default {
         <ScrollView>
           <LeadOneAndFourSlice
             breakpoint={breakpointSelect(select)}
-            renderLead={() => <Support3 id="support1" />}
-            renderSupport1={() => <Support1 id="support2" />}
-            renderSupport2={() => <Support2 id="support3" />}
-            renderSupport3={() => <Support3 id="support4" />}
-            renderSupport4={() => <Support4 id="support5" />}
+            renderLead={() => <Support3 />}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
+            renderSupport3={() => <Support3 />}
+            renderSupport4={() => <Support4 />}
           />
         </ScrollView>
       ),
@@ -107,7 +102,7 @@ export default {
                 }}
               />
             )}
-            renderSupport={() => <Support1 id="support1" />}
+            renderSupport={() => <Support1 />}
           />
         </ScrollView>
       ),
@@ -148,7 +143,7 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 id="support1" />}
+            renderSupport1={() => <Support1 />}
             renderSupport2={() => null}
           />
         </ScrollView>
@@ -169,8 +164,8 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 id="support1" />}
-            renderSupport2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
           />
         </ScrollView>
       ),
@@ -211,7 +206,7 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 id="support1" />}
+            renderSupport1={() => <Support1 />}
             renderSupport2={() => null}
           />
         </ScrollView>
@@ -232,8 +227,8 @@ export default {
                 }}
               />
             )}
-            renderSupport1={() => <Support1 id="support1" />}
-            renderSupport2={() => <Support2 id="support2" />}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
           />
         </ScrollView>
       ),
@@ -245,10 +240,10 @@ export default {
         <ScrollView>
           <SecondaryFourSlice
             breakpoint={breakpointSelect(select)}
-            renderSecondary1={() => <Support1 id="support1" />}
-            renderSecondary2={() => <Support2 id="support2" />}
-            renderSecondary3={() => <Support3 id="support3" />}
-            renderSecondary4={() => <Support4 id="support4" />}
+            renderSecondary1={() => <Support1 />}
+            renderSecondary2={() => <Support2 />}
+            renderSecondary3={() => <Support3 />}
+            renderSecondary4={() => <Support4 />}
           />
         </ScrollView>
       ),
@@ -260,12 +255,12 @@ export default {
         <ScrollView>
           <SecondaryTwoAndTwoSlice
             breakpoint={breakpointSelect(select)}
-            renderSecondary1={() => <Support1 id="support1" />}
-            renderSecondary2={() => <Support2 id="support2" />}
-            renderSupport1={() => <Support3 id="support3" />}
-            renderSupport2={() => <Support4 id="support4" />}
-            renderSupport3={() => <Support1 id="support5" />}
-            renderSupport4={() => <Support2 id="support6" />}
+            renderSecondary1={() => <Support1 />}
+            renderSecondary2={() => <Support2 />}
+            renderSupport1={() => <Support3 />}
+            renderSupport2={() => <Support4 />}
+            renderSupport3={() => <Support1 />}
+            renderSupport4={() => <Support2 />}
           />
         </ScrollView>
       ),
@@ -277,11 +272,11 @@ export default {
         <ScrollView>
           <SecondaryOneAndFourSlice
             breakpoint={breakpointSelect(select)}
-            renderSecondary={() => <Support1 id="support1" />}
-            renderSupport1={() => <Support2 id="support2" />}
-            renderSupport2={() => <Support3 id="support3" />}
-            renderSupport3={() => <Support4 id="support4" />}
-            renderSupport4={() => <Support1 id="support5" />}
+            renderSecondary={() => <Support1 />}
+            renderSupport1={() => <Support2 />}
+            renderSupport2={() => <Support3 />}
+            renderSupport3={() => <Support4 />}
+            renderSupport4={() => <Support1 />}
           />
         </ScrollView>
       ),
@@ -293,10 +288,10 @@ export default {
         <ScrollView>
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={breakpointSelect(select)}
-            renderSecondary1={() => <Support1 id="support1" />}
-            renderSecondary2={() => <Support2 id="support2" />}
-            renderSupport1={() => <Support3 id="support3" />}
-            renderSupport2={() => <Support4 id="support4" />}
+            renderSecondary1={() => <Support1 />}
+            renderSecondary2={() => <Support2 />}
+            renderSupport1={() => <Support3 />}
+            renderSupport2={() => <Support4 />}
           />
         </ScrollView>
       ),
@@ -308,10 +303,10 @@ export default {
         <ScrollView>
           <LeadTwoNoPicAndTwoSlice
             breakpoint={breakpointSelect(select)}
-            renderLead1={() => <Support1 id="support1" />}
-            renderLead2={() => <Support2 id="support2" />}
-            renderSupport1={() => <Support3 id="support3" />}
-            renderSupport2={() => <Support4 id="support4" />}
+            renderLead1={() => <Support1 />}
+            renderLead2={() => <Support2 />}
+            renderSupport1={() => <Support3 />}
+            renderSupport2={() => <Support4 />}
           />
         </ScrollView>
       ),
@@ -323,14 +318,14 @@ export default {
         <ScrollView>
           <ListTwoAndSixNoPic
             breakpoint={breakpointSelect(select)}
-            renderLead1={() => <Support3 id="support1" />}
-            renderLead2={() => <Support4 id="support2" />}
-            renderSupport1={() => <Support1 id="support3" />}
-            renderSupport2={() => <Support2 id="support4" />}
-            renderSupport3={() => <Support3 id="support5" />}
-            renderSupport4={() => <Support4 id="support6" />}
-            renderSupport5={() => <Support1 id="support7" />}
-            renderSupport6={() => <Support2 id="support8" />}
+            renderLead1={() => <Support3 />}
+            renderLead2={() => <Support4 />}
+            renderSupport1={() => <Support1 />}
+            renderSupport2={() => <Support2 />}
+            renderSupport3={() => <Support3 />}
+            renderSupport4={() => <Support4 />}
+            renderSupport5={() => <Support1 />}
+            renderSupport6={() => <Support2 />}
           />
         </ScrollView>
       ),
@@ -342,9 +337,9 @@ export default {
         <ScrollView>
           <Leaders
             breakpoint={breakpointSelect(select)}
-            renderLeader1={() => <Support1 id="support1" />}
-            renderLeader2={() => <Support2 id="support2" />}
-            renderLeader3={() => <Support3 id="support3" />}
+            renderLeader1={() => <Support1 />}
+            renderLeader2={() => <Support2 />}
+            renderLeader3={() => <Support3 />}
           />
         </ScrollView>
       ),
@@ -356,8 +351,8 @@ export default {
         <ScrollView>
           <CommentLeadAndCartoon
             breakpoint={breakpointSelect(select)}
-            renderCartoon={() => <Support2 id="support2" />}
-            renderLead={() => <Support1 id="support1" />}
+            renderCartoon={() => <Support2 />}
+            renderLead={() => <Support1 />}
           />
         </ScrollView>
       ),
@@ -369,8 +364,8 @@ export default {
         <ScrollView>
           <SecondaryOneAndColumnistSlice
             breakpoint={breakpointSelect(select)}
-            renderColumnist={() => <Support1 id="columnist" />}
-            renderSecondary={() => <Support2 id="secondary" />}
+            renderColumnist={() => <Support1 />}
+            renderSecondary={() => <Support2 />}
           />
         </ScrollView>
       ),

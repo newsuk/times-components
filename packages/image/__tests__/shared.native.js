@@ -67,7 +67,7 @@ export default () => {
         expect(testInstance).toMatchSnapshot();
 
         testInstance.root
-          .findAll(node => node.type === ReactNativeImage)[0]
+          .findAll(node => node.type === ReactNativeImage)[1]
           .props.onLoad();
 
         expect(testInstance).toMatchSnapshot();
@@ -87,7 +87,7 @@ export default () => {
         );
 
         expect(
-          testInstance.root.findAll(node => node.type === ReactNativeImage)[0]
+          testInstance.root.findAll(node => node.type === ReactNativeImage)[1]
             .props.source.uri
         ).toEqual(dataUri);
       }

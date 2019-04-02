@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/context@0.8.0...@times-components/context@0.9.0) (2019-04-01)
+
+
+### Features
+
+* Section pages save star bridge ([#1827](https://github.com/newsuk/times-components/issues/1827)) ([a5b132c](https://github.com/newsuk/times-components/commit/a5b132c))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/context@0.7.10...@times-components/context@0.8.0) (2019-03-25)
 
 
