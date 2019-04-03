@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingTop: 0,
     marginTop: 0,
-    paddingBottom: spacing(10)
+    paddingBottom: 0
   },
   inlineImage: {
     width: "100%"
