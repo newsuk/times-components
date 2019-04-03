@@ -70,7 +70,7 @@
       "<rootDir>/node_modules/"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!react-native|react-navigation|@times-components)",
+      "node_modules/(?!react-native|react-native-svg|@times-components)",
       "packages/?!author-profile"
     ]
   },
