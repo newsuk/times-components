@@ -13,7 +13,7 @@ exports[`full article with style 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -139,7 +139,7 @@ exports[`full article with style in the culture magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -265,7 +265,7 @@ exports[`full article with style in the style magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -391,7 +391,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -517,7 +517,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -643,7 +643,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
@@ -769,7 +769,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       }
     }
   >
-    <Image
+    <ModalImage
       style={
         Object {
           "borderRadius": 50,
