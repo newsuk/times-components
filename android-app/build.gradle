@@ -41,7 +41,7 @@ task removePreviousReactArchives(type: Delete) {
 task generateReactArchives {
     subprojects { subproject ->
         apply plugin: 'maven'
-        def reactProjects = []
+        def reactProjects = ["react-native-svg"]
 
         if (reactProjects.contains(subproject.name)) {
             task generateReactArchive(type: Upload) {

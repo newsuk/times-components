@@ -75,4 +75,7 @@ android {
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
+    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {	
+        exclude group: "com.facebook.react"	
+    }
 }
