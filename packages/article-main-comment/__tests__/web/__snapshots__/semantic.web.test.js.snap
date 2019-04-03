@@ -20,7 +20,7 @@ exports[`1. a full article 1`] = `
   ADVERTISEMENT
   <img
     alt=""
-    src={null}
+    src="https://image.io"
   />
   SOME LABEL
   <h1

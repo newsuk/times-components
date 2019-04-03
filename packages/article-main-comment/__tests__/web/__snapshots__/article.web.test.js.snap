@@ -18,7 +18,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <div>
         <Image
           aspectRatio={1}
-          uri={null}
+          uri="https://image.io"
         />
       </div>
       <h1
@@ -51,6 +51,13 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                       "name": "inline",
                     },
                   ],
+                  "image": Object {
+                    "crop": Object {
+                      "ratio": "1:1",
+                      "url": "https://image.io",
+                    },
+                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                  },
                 },
               ]
             }
@@ -157,7 +164,7 @@ exports[`4. an article with ads 1`] = `
       <div>
         <Image
           aspectRatio={1}
-          uri={null}
+          uri="https://image.io"
         />
       </div>
       <h1
@@ -190,6 +197,13 @@ exports[`4. an article with ads 1`] = `
                       "name": "inline",
                     },
                   ],
+                  "image": Object {
+                    "crop": Object {
+                      "ratio": "1:1",
+                      "url": "https://image.io",
+                    },
+                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                  },
                 },
               ]
             }

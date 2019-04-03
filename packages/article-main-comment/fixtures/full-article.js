@@ -1989,9 +1989,6 @@ export default ({ withAds = true, ...config } = {}) => {
 
 export const testFixture = {
   __typename: "Article",
-  author: {
-    image: "https://image.io"
-  },
   bylines: [
     {
       byline: [
@@ -2008,9 +2005,23 @@ export const testFixture = {
           ],
           name: "inline"
         }
-      ]
+      ],
+      image: {
+        id: "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+        crop: {
+          ratio: "1:1",
+          url: "https://image.io"
+        }
+      }
     }
   ],
+  image: {
+    id: "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+    crop: {
+      ratio: "1:1",
+      url: "https://image.io"
+    }
+  },
   commentCount: 65,
   commentsEnabled: true,
   content: [
