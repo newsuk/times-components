@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
 export { setIsTablet } from "@times-components/test-utils/dimensions";
+export { default as Gestures } from "@times-components/gestures";
 
 jest.mock("react-native-safe-area-view", () => "SafeAreaView");
 

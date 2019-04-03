@@ -84,7 +84,10 @@ class ModalImage extends Component {
                   forceInset={{ horizontal: "always", vertical: "always" }}
                   style={styles.middleSafeView}
                 >
-                  <Gestures style={styles.gestureContainer}>
+                  <Gestures
+                    onSwipeDown={this.hideModal}
+                    style={styles.gestureContainer}
+                  >
                     <Image
                       {...this.props}
                       lowResSize={lowResSize}

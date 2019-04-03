@@ -18,8 +18,9 @@ const makeTouchEvent = (active, history = []) => ({
     touches: active.map(mapTouches)
   },
   touchHistory: {
-    numberActiveTouches: history.length,
-    touchBank: history.map(mapTouches)
+    indexOfSingleActiveTouch: active.length === 1 ? 0 : undefined,
+    numberActiveTouches: active.length,
+    touchBank: [...active, ...history].map(mapTouches)
   }
 });
 
@@ -250,7 +251,75 @@ export default () => {
         }
       },
       {
-        name: "not intercept 1 finger gestures",
+        name: "trigger onSwipeDown when swiping down past the threshold",
+        test() {
+          const onSwipeDown = jest.fn();
+          const testRenderer = TestRenderer.create(
+            <Gesture onSwipeDown={onSwipeDown}>
+              <Text>Hello world!</Text>
+            </Gesture>
+          );
+          testRenderer
+            .getInstance()
+            .onGestureMove(null, { dy: 50, numberActiveTouches: 1 });
+
+          expect(onSwipeDown).toHaveBeenCalled();
+        }
+      },
+      {
+        name:
+          "does not trigger onSwipeDown when swiping down not past the threshold",
+        test() {
+          const onSwipeDown = jest.fn();
+          const testRenderer = TestRenderer.create(
+            <Gesture onSwipeDown={onSwipeDown}>
+              <Text>Hello world!</Text>
+            </Gesture>
+          );
+          testRenderer
+            .getInstance()
+            .onGestureMove(null, { dy: 49, numberActiveTouches: 1 });
+
+          expect(onSwipeDown).not.toHaveBeenCalled();
+        }
+      },
+      {
+        name: "does not trigger onSwipeDown when swiping up",
+        test() {
+          const onSwipeDown = jest.fn();
+          const testRenderer = TestRenderer.create(
+            <Gesture onSwipeDown={onSwipeDown}>
+              <Text>Hello world!</Text>
+            </Gesture>
+          );
+          testRenderer
+            .getInstance()
+            .onGestureMove(null, { dy: -50, numberActiveTouches: 1 });
+
+          expect(onSwipeDown).not.toHaveBeenCalled();
+        }
+      },
+      {
+        name: "does not trigger onSwipeDown when using multiple fingers",
+        test() {
+          const onSwipeDown = jest.fn();
+          const testRenderer = TestRenderer.create(
+            <Gesture onSwipeDown={onSwipeDown}>
+              <Text>Hello world!</Text>
+            </Gesture>
+          );
+          testRenderer
+            .getInstance()
+            .onGestureMove(
+              { nativeEvent: { touches: [] } },
+              { dy: -50, numberActiveTouches: 2 }
+            );
+
+          expect(onSwipeDown).not.toHaveBeenCalled();
+        }
+      },
+      {
+        name: "intercept 1 finger gestures",
         test() {
           const {
             onStartShouldSetResponder,
@@ -270,10 +339,10 @@ export default () => {
           const respondedStart = onStartShouldSetResponder(emptyTouchEvent);
           const respondedMove = onMoveShouldSetResponder(emptyTouchEvent);
 
-          expect(capturedStart).toBe(false);
-          expect(capturedMove).toBe(false);
-          expect(respondedStart).toBe(false);
-          expect(respondedMove).toBe(false);
+          expect(capturedStart).toBe(true);
+          expect(capturedMove).toBe(true);
+          expect(respondedStart).toBe(true);
+          expect(respondedMove).toBe(true);
         }
       },
       {

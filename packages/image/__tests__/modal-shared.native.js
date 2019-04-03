@@ -11,7 +11,7 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
-import "./mocks";
+import { Gestures } from "./mocks";
 import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
@@ -109,6 +109,22 @@ export default () => {
         );
 
         closeButton.props.onPress();
+
+        const modal = testInstance.root.find(node => node.type === Modal);
+
+        expect(modal.props.visible).toBe(false);
+      }
+    },
+    {
+      name: "handle onSwipeDown on the gesture controller",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onSwipeDown();
 
         const modal = testInstance.root.find(node => node.type === Modal);
 
