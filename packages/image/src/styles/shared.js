@@ -1,35 +1,41 @@
 import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
+  bottomSafeView: {
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    flex: 0,
+    marginTop: "auto",
+    position: "relative",
+    zIndex: 2
+  },
   buttonContainer: {
-    marginHorizontal: spacing(3),
-    marginVertical: spacing(3)
+    padding: spacing(3),
+    position: "relative",
+    zIndex: 2
   },
   buttonContainerTablet: {
-    marginHorizontal: spacing(4),
-    marginVertical: spacing(4)
+    padding: spacing(4)
   },
   closeButton: {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
-    borderRadius: 30,
-    height: 30,
+    borderRadius: 25,
+    height: 25,
     justifyContent: "center",
-    width: 30
+    width: 25
   },
   closeButtonImage: {
     height: "85%",
     width: "85%"
   },
   closeButtonTablet: {
-    borderRadius: 40,
-    height: 40,
-    width: 40
+    borderRadius: 30,
+    height: 30,
+    width: 30
   },
   gestureContainer: {
-    flexGrow: 1,
-    position: "relative",
-    zIndex: 1
+    height: "100%",
+    width: "100%"
   },
   image: {
     height: "100%",
@@ -40,12 +46,26 @@ const styles = {
   imageContainer: {
     position: "relative"
   },
+  middleSafeView: {
+    bottom: 0,
+    height: "100%",
+    left: 0,
+    position: "absolute",
+    right: 0,
+    top: 0,
+    width: "100%",
+    zIndex: 1
+  },
   modal: {
-    backgroundColor: colours.functional.brandColour,
+    backgroundColor: "#000000",
     flexDirection: "column",
     height: "100%",
     justifyContent: "space-between",
     width: "100%"
+  },
+  modalBackground: {
+    backgroundColor: "#000000",
+    flex: 1
   },
   modalImageContainer: {
     alignItems: "center",
@@ -60,27 +80,23 @@ const styles = {
     flex: 1,
     justifyContent: "center"
   },
-  safeViewContainer: {
-    flex: 1
-  },
-  safeViewInnerContainer: {
-    flexGrow: 0,
-    height: "100%"
+  topSafeView: {
+    backgroundColor: "#000000",
+    flex: 0
   }
 };
 
 export const captionStyles = {
   caption: {
     fontSize: 15,
-    lineHeight: 19
+    lineHeight: 15
   },
   container: {
-    marginHorizontal: spacing(3),
-    marginVertical: spacing(3)
+    margin: spacing(3)
   },
   credits: {
     fontSize: 10,
-    lineHeight: 20,
+    lineHeight: 10,
     marginTop: spacing(1)
   },
   text: {
@@ -92,8 +108,7 @@ export const tabletCaptionStyles = {
   ...captionStyles,
   container: {
     ...captionStyles.container,
-    marginHorizontal: spacing(4),
-    marginVertical: spacing(4)
+    margin: spacing(4)
   }
 };
 

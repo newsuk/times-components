@@ -73,6 +73,7 @@
     "intrinsic-scale": "3.0.3",
     "lodash.memoize": "4.1.2",
     "prop-types": "15.6.2",
+    "react-native-safe-area-view": "0.13.1",
     "styled-components": "3.4.0"
   },
   "peerDependencies": {

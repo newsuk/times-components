@@ -8,60 +8,85 @@ exports[`1. modal image 1`] = `
     visible={false}
   >
     <View>
-      <RCTSafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
         <View>
-          <View>
-            <View>
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <View
+              height={350}
+              width={525}
+            >
               <Image
                 resizeMode="contain"
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+                    "testUri": "../../../packages/image/assets/t.png",
                   }
                 }
               />
             </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                height={350}
-                width={525}
-              >
-                <Image
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                  }
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
                 }
-              />
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                  }
+              }
+            />
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
                 }
-              />
-            </View>
-          </Gestures>
-          <View>
-            <Text>
-              Caption
-            </Text>
+              }
+            />
           </View>
+        </Gestures>
+      </SafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "always",
+            "horizontal": "always",
+            "top": "never",
+          }
+        }
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </Modal>
   <View>
@@ -101,31 +126,55 @@ exports[`2. modal image with no caption 1`] = `
     visible={false}
   >
     <View>
-      <RCTSafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
         <View>
-          <View>
-            <View>
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <Image
-                source={null}
-              />
-            </View>
-          </Gestures>
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
         </View>
-      </RCTSafeAreaView>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "always",
+            "horizontal": "always",
+            "top": "never",
+          }
+        }
+        pointerEvents="none"
+      />
     </View>
   </Modal>
   <View>
@@ -148,60 +197,85 @@ exports[`3. modal image with custom highressize 1`] = `
     visible={false}
   >
     <View>
-      <RCTSafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
         <View>
-          <View>
-            <View>
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <View
+              height={350}
+              width={525}
+            >
               <Image
                 resizeMode="contain"
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+                    "testUri": "../../../packages/image/assets/t.png",
                   }
                 }
               />
             </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                height={350}
-                width={525}
-              >
-                <Image
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                  }
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
                 }
-              />
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                  }
+              }
+            />
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
                 }
-              />
-            </View>
-          </Gestures>
-          <View>
-            <Text>
-              Caption
-            </Text>
+              }
+            />
           </View>
+        </Gestures>
+      </SafeAreaView>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "always",
+            "horizontal": "always",
+            "top": "never",
+          }
+        }
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </Modal>
   <View>
