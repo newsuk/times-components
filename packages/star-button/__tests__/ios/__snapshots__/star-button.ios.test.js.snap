@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders default 1`] = `
+<Link
+  disabled={false}
+>
+  <IconStar
+    fillColour="none"
+    height={18}
+    opacity="1"
+    strokeColour="#696969"
+  />
+</Link>
+`;
+
+exports[`2. renders selected 1`] = `
+<Link
+  disabled={false}
+>
+  <IconStar
+    fillColour="#006699"
+    height={18}
+    opacity="1"
+    strokeColour="none"
+  />
+</Link>
+`;
+
+exports[`3. renders disabled 1`] = `
+<Link
+  disabled={true}
+>
+  <IconStar
+    fillColour="none"
+    height={18}
+    opacity="0.4"
+    strokeColour="#696969"
+  />
+</Link>
+`;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { SecondaryTwoAndTwoSlice } from "@times-components/slice-layout";
-import { TileC, TileG, TileV } from "../../tiles";
+import { TileC, TileG, TileV, TileAM, TileAN } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryTwoAndTwo extends Component {
@@ -9,6 +9,7 @@ class SecondaryTwoAndTwo extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.renderWide = this.renderWide.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -61,11 +62,38 @@ class SecondaryTwoAndTwo extends Component {
     );
   }
 
+  renderWide(breakpoint) {
+    const {
+      onPress,
+      slice: { secondary1, secondary2, support1, support2 }
+    } = this.props;
+
+    return (
+      <SecondaryTwoAndTwoSlice
+        breakpoint={breakpoint}
+        renderSecondary1={() => (
+          <TileAM onPress={onPress} tile={secondary1} tileName="secondary1" />
+        )}
+        renderSecondary2={() => (
+          <TileAM onPress={onPress} tile={secondary2} tileName="secondary2" />
+        )}
+        renderSupport1={() => (
+          <TileAN onPress={onPress} tile={support1} tileName="support1" />
+        )}
+        renderSupport2={() => (
+          <TileAN onPress={onPress} tile={support2} tileName="support2" />
+        )}
+      />
+    );
+  }
+
   render() {
     return (
       <ResponsiveSlice
+        renderHuge={this.renderWide}
         renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderWide={this.renderWide}
       />
     );
   }

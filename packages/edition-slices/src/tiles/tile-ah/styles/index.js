@@ -28,8 +28,7 @@ const styles = {
     textAlign: "center"
   },
   imageContainer: {
-    borderColor: colours.functional.contrast,
-    borderWidth: 1,
+    borderRadius: 9999,
     overflow: "hidden",
     width: "30%"
   },

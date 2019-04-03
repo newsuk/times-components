@@ -4,8 +4,7 @@ import sharedStyles, { captionStyles, tabletCaptionStyles } from "./shared";
 const styles = StyleSheet.create({
   ...sharedStyles,
   buttonContainer: {
-    alignItems: "flex-end",
-    margin: 16
+    alignItems: "flex-end"
   }
 });
 

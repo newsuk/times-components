@@ -39,9 +39,9 @@ exports[`3. iconforwardarrow renders with different colours 1`] = `
 exports[`4. iconstar renders with different colours 1`] = `
 Array [
   <title>
-    Star Icon
+    Save star
   </title>,
-  <polygon
+  <path
     fill="#facade"
     stroke="#c0ffee"
   />,
