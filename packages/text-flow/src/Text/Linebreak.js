@@ -6,12 +6,12 @@ const defaults = () => ({
     flagged: 100,
     line: 10
   },
-  tolerance: 3
+  tolerance: 1
 });
 
 export const infinity = 10000;
 
-export default (nodes, lines, settings = defaults()) => {
+const linebreak = (nodes, lines, settings = defaults()) => {
   const options = defaults();
 
   if (settings.tolerance) {
@@ -266,5 +266,11 @@ export default (nodes, lines, settings = defaults()) => {
     }
   }
 
-  return breaks.reverse();
+  const lineBreaks = breaks.reverse();
+  if (!lineBreaks.length) {
+    return linebreak(nodes, lines, { tolerance: options.tolerance + 1})
+  }
+  return lineBreaks
 };
+
+export default linebreak

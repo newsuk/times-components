@@ -34,8 +34,7 @@ const sharedStyles = scale => {
       marginBottom: spacing(5)
     },
     containerTablet: {
-      alignSelf: "center",
-      width: tabletWidth
+      alignSelf: "center"
     },
     imageContainerTablet: {
       alignSelf: "center"

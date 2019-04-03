@@ -249,12 +249,12 @@ export const ArticleRowFlow = ({
     ...flow,
     dropCap(key, { value }, children, indx, node) {
       const text = new FlowText.Text({
-        font: 'TimesDigitalW04-Regular',
+        font: 'TimesModern-Regular',
         size: 90,
         lineHeight: 90,
         markup: [new Markup.MarkupString(value)]
       });
-      const width = text.characters[0].getWidth()
+      const width = text.characters[0].getWidth() + 10
       const height = 90
       return {
         element: new Layout.InlineBlock({
@@ -440,10 +440,25 @@ export const ArticleRowFlow = ({
       {
         caption: { name, text, twitter }
       },
-      children
+      children,
+      indx,
+      node
     ) {
+      const content = node.children[0].attributes.value;
+      // TODO: measureText function?
+      const quote = new FlowText.Text({
+        font: 'TimesModern-Regular',
+        size: 25,
+        lineHeight: 25 * 1.3,
+        width: width * 0.35,
+        markup: [new Markup.MarkupString(content)]
+      });
+      const height = quote.measuredHeight
       return {
-        element: new Layout.Block({
+        shouldRenderChildren: false,
+        element: new Layout.InlineBlock({
+          width: width * 0.35,
+          height: height + 20,
           getComponent() {
             return (<Context.Consumer key={key}>
               {({
@@ -460,7 +475,7 @@ export const ArticleRowFlow = ({
                           text={text}
                           twitter={twitter}
                         >
-                          {children}
+                          {content}
                         </PullQuote>
                       </View>
                     )}
