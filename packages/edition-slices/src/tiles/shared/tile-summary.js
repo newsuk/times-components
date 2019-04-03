@@ -10,7 +10,7 @@ import { SectionContext } from "@times-components/context";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
-import styles from "./styles";
+import { horizontalStyles } from "./styles";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class TileSummary extends Component {
     const onArticleSavePress = () => {};
     const savedArticles = [{1: true}];
 
-    const tileStyle = starStyle ? starStyle : styles;
+    const tileStyle = starStyle ? starStyle : horizontalStyles;
 
     return (
     <View style={tileStyle.container}>

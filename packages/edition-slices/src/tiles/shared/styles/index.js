@@ -1,4 +1,4 @@
-const styles = {
+const horizontalStyles = {
     container: {
         flexDirection: "row"
     },
@@ -12,4 +12,17 @@ const styles = {
     }
 };
 
-export default styles;
+const verticalStyles = {
+    container: {
+        flexDirection: "column"
+      },
+      flagStyle: {
+
+      },
+      starButton: {
+        textAlign: "center",
+        marginTop: 10
+      }
+};
+
+export {horizontalStyles, verticalStyles};

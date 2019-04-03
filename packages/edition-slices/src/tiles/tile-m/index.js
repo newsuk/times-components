@@ -20,6 +20,7 @@ const TileM = ({ onPress, tile }) => {
       <View style={styles.container}>
         <TileSummary
           headlineStyle={styles.headline}
+          starStyle={styles.star}
           strapline={getTileStrapline(tile)}
           straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}

@@ -1,4 +1,5 @@
 import { colours, fonts, spacing } from "@times-components/styleguide";
+import { verticalStyles } from "../../shared/styles";
 
 const styles = {
   headline: {
@@ -12,16 +13,7 @@ const styles = {
     width: "100%"
   },
   star: {
-    container: {
-      flexDirection: "column"
-    },
-    flagStyle: {
-
-    },
-    starButton: {
-      textAlign: "center",
-      marginTop: 10
-    }
+    ...verticalStyles
   },
   summaryContainer: {
     alignItems: "center",

@@ -23,6 +23,7 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
       />
       <TileSummary
         headlineStyle={headline}
+        starStyle={styles.star}
         style={summaryContainer}
         tile={tile}
       />
