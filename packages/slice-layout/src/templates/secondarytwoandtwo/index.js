@@ -35,28 +35,56 @@ const SecondaryTwoAndTwoSlice = ({
     );
   }
 
-  const renderRowOne = [renderSecondary1(), renderSecondary2()];
-  const renderRowTwo = [renderSupport1(), renderSupport2()];
-  return (
-    <View style={styles.container}>
-      <View style={styles.itemContainer}>
-        <View key={renderRowOne[0].props.id} style={styles.item}>
-          {renderRowOne[0]}
+  if (breakpoint === editionBreakpoints.medium) {
+    const renderRowOne = [renderSecondary1(), renderSecondary2()];
+    const renderRowTwo = [renderSupport1(), renderSupport2()];
+    return (
+      <View style={styles.container}>
+        <View style={styles.itemContainer}>
+          <View key={renderRowOne[0].props.id} style={styles.item}>
+            {renderRowOne[0]}
+          </View>
+          <ItemColSeparator />
+          <View key={renderRowOne[1].props.id} style={styles.item}>
+            {renderRowOne[1]}
+          </View>
         </View>
-        <ItemColSeparator />
-        <View key={renderRowOne[1].props.id} style={styles.item}>
-          {renderRowOne[1]}
+        <ItemRowSeparator />
+        <View style={styles.itemContainer}>
+          <View key={renderRowTwo[0].props.id} style={styles.item}>
+            {renderRowTwo[0]}
+          </View>
+          <ItemColSeparator />
+          <View key={renderRowTwo[1].props.id} style={styles.item}>
+            {renderRowTwo[1]}
+          </View>
         </View>
       </View>
-      <ItemRowSeparator />
-      <View style={styles.itemContainer}>
-        <View key={renderRowTwo[0].props.id} style={styles.item}>
-          {renderRowTwo[0]}
-        </View>
-        <ItemColSeparator />
-        <View key={renderRowTwo[1].props.id} style={styles.item}>
-          {renderRowTwo[1]}
-        </View>
+    );
+  }
+
+  const renderRow = [
+    renderSecondary1(),
+    renderSupport1(),
+    renderSecondary2(),
+    renderSupport2()
+  ];
+  return (
+    <View style={styles.container}>
+      <View key={renderRow[0].props.id} style={styles.secondaryItemContainer}>
+        {renderRow[0]}
+      </View>
+      <ItemColSeparator />
+      <View key={renderRow[1].props.id} style={styles.supportItemContainer}>
+        {renderRow[1]}
+      </View>
+      <ItemColSeparator />
+      <View key={renderRow[2].props.id} style={styles.secondaryItemContainer}>
+        {renderRow[2]}
+      </View>
+      <ItemColSeparator />
+      <View key={renderRow[3].props.id} style={styles.supportItemContainer}>
+        {renderRow[3]}
       </View>
     </View>
   );

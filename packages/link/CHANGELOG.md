@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/newsuk/times-components/compare/@times-components/link@3.2.30...@times-components/link@3.3.0) (2019-04-02)
+
+
+### Features
+
+* save star button package ([#1831](https://github.com/newsuk/times-components/issues/1831)) ([67a39b5](https://github.com/newsuk/times-components/commit/67a39b5))
+
+
+
+
+
 ## [3.2.30](https://github.com/newsuk/times-components/compare/@times-components/link@3.2.29...@times-components/link@3.2.30) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/link

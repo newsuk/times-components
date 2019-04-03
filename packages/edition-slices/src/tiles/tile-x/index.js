@@ -9,7 +9,7 @@ const TileX = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileSummary
         headlineStyle={styles.headline}
-        strapline={tile.strapline}
+        strapline={tile.strapline || tile.article.strapline}
         straplineStyle={styles.strapline}
         summary={tile.teaser300 || tile.article.summary300}
         tile={tile}

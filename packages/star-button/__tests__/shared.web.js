@@ -2,24 +2,18 @@ import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
-  enzymeTreeSerializer,
-  minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
-import shared from "./shared-roundel-image-tiles.base";
+import shared from "./shared.base";
 
 export default () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
     compose(
-      print,
+      stylePrinter,
       minimalWebTransform,
-      minimaliseTransform(
-        (value, key) => key === "style" || key === "className"
-      ),
       rnwTransform(AppRegistry)
     )
   );
