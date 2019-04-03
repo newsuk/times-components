@@ -11,6 +11,7 @@ class DailyRegisterLeadFour extends Component {
   constructor(props) {
     super(props);
     this.renderSlice = this.renderSlice.bind(this);
+    this.renderHuge = this.renderHuge.bind(this);
   }
 
   renderSlice(breakpoint) {
@@ -51,10 +52,63 @@ class DailyRegisterLeadFour extends Component {
     );
   }
 
+  renderHuge(breakpoint) {
+    const {
+      slice: { birthdaysToday, briefing, natureNotes, onThisDay }
+    } = this.props;
+    const styles = styleFactory(breakpoint);
+
+    return (
+      <View style={styles.container}>
+        <Logo
+          imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+          ratio={1435 / 250}
+          style={styles.mastheadLogo}
+          type="logo"
+        />
+        <Text style={styles.title}>Daily Universal Register</Text>
+        <ItemRowSeparator style={styles.separator} />
+        <View style={styles.rowItems}>
+          <View style={styles.item}>
+            <TileS tile={briefing} />
+          </View>
+          <View style={styles.item}>
+            <TileS tile={onThisDay} />
+          </View>
+        </View>
+        <ItemRowSeparator style={styles.separator} />
+        <View style={styles.rowItems}>
+          <View style={styles.columnItems}>
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1 / 1}
+              style={styles.imageWrapper}
+              type="nature notes"
+            />
+            <View style={styles.item}>
+              <TileS tile={natureNotes} />
+            </View>
+          </View>
+          <View style={styles.columnItems}>
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1 / 1}
+              style={styles.imageWrapper}
+              type="birthdays"
+            />
+            <View style={styles.item}>
+              <TileS tile={birthdaysToday} />
+            </View>
+          </View>
+        </View>
+      </View>
+    );
+  }
+
   render() {
     return (
       <ResponsiveSlice
-        renderHuge={this.renderSlice}
+        renderHuge={this.renderHuge}
         renderMedium={this.renderSlice}
         renderSmall={this.renderSlice}
         renderWide={this.renderSlice}
