@@ -1,100 +1,206 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. iconemail sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="68.75"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 68.75,
     }
   }
+  title="Email Icon"
+  vbHeight={16}
+  vbWidth={22}
 />
 `;
 
 exports[`2. iconfacebook sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="25"
+  meetOrSlice={0}
+  minX={14}
+  minY={10}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 25,
     }
   }
+  title="Facebook Icon"
+  vbHeight={20.397258758544922}
+  vbWidth={10.592460632324219}
 />
 `;
 
 exports[`3. iconforwardarrow sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="12"
+  bbWidth="7"
+  meetOrSlice={0}
+  minX={42}
+  minY={12}
   style={
     Object {
-      "height": 14,
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 12,
       "width": 7,
     }
   }
+  vbHeight={120}
+  vbWidth={60}
 />
 `;
 
 exports[`4. iconstar sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="50"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 50,
     }
   }
+  title="Save star"
+  vbHeight={20}
+  vbWidth={20}
 />
 `;
 
 exports[`5. icontwitter sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="62.5"
+  meetOrSlice={0}
+  minX={-354.2}
+  minY={-279.4}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 62.5,
     }
   }
+  title="Twitter Icon"
+  vbHeight={600}
+  vbWidth={750}
 />
 `;
 
 exports[`6. iconvideo sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="85"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 85,
     }
   }
+  title="Video Icon"
+  vbHeight={40}
+  vbWidth={68}
 />
 `;
 
 exports[`7. iconvideo360player sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="54"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 54,
     }
   }
+  title="Video 360 Player Icon"
+  vbHeight={100}
+  vbWidth={108}
 />
 `;
 
 exports[`8. thestlogo sets a width when height is set 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="50"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 34.48275862068965,
-      "width": 50,
-    }
-  }
-/>
-`;
-
-exports[`9. thetimeslogo sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
       "height": 50,
       "width": 50,
     }
   }
+  title="ST"
+  vbHeight={20}
+  vbWidth={29}
+/>
+`;
+
+exports[`9. thetimeslogo sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="50"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 50,
+      "width": 50,
+    }
+  }
+  title="The Times"
+  vbHeight={20}
+  vbWidth={20}
 />
 `;

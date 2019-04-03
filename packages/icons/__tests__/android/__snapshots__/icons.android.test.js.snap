@@ -1,28 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. iconemail renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 14.545454545454545,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconEmail"
+  vbHeight={16}
+  vbWidth={22}
 >
-  <ARTGroup
-    transform={
+  <RNSVGGroup
+    fill={
       Array [
-        0.9090909090909091,
+        0,
+        0.11372549019607843,
+        0.11372549019607843,
+        0.10588235294117647,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    font={Object {}}
+    matrix={
+      Array [
+        1,
         0,
         0,
-        0.9090909090909091,
+        1,
         0,
         0,
       ]
     }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+        "fillRule",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
   >
-    <ARTGroup
-      transform={
+    <RNSVGPath
+      d="1d7aae45398f94fa23694b6080b89032"
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
         Array [
           1,
           0,
@@ -32,62 +88,108 @@ exports[`1. iconemail renders 1`] = `
           0,
         ]
       }
-    >
-      <ARTShape
-        d="4c3e2447d8a07529d4601a20e2be1f86"
-        fill={
-          Array [
-            0,
-            0.11372549019607843,
-            0.11372549019607843,
-            0.10588235294117647,
-            1,
-          ]
-        }
-        stroke={null}
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+      originX={0}
+      originY={0}
+      propList={Array []}
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth="1"
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`2. iconfacebook renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={14}
+  minY={10}
+  role="img"
   style={
     Object {
-      "height": 40,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconFacebook"
+  vbHeight={20.397258758544922}
+  vbWidth={10.592460632324219}
 >
-  <ARTGroup
-    transform={
+  <RNSVGGroup
+    fill={
       Array [
-        2,
         0,
-        0,
-        2,
-        -28,
-        -20,
+        0.11372549019607843,
+        0.11372549019607843,
+        0.10588235294117647,
+        1,
       ]
     }
+    fillOpacity={1}
+    fillRule={1}
+    font={Object {}}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+        "fillRule",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
   >
-    <ARTGroup
-      transform={
+    <RNSVGPath
+      d="ff2ae287381fd0583b3a4df9bc45c5be"
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
         Array [
           1,
           0,
@@ -97,62 +199,108 @@ exports[`2. iconfacebook renders 1`] = `
           0,
         ]
       }
-    >
-      <ARTShape
-        d="2189892cba14977e0cdb05b5f065a642"
-        fill={
-          Array [
-            0,
-            0.11372549019607843,
-            0.11372549019607843,
-            0.10588235294117647,
-            1,
-          ]
-        }
-        stroke={null}
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+      originX={0}
+      originY={0}
+      propList={Array []}
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth="1"
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`3. iconforwardarrow renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="12"
+  bbWidth="7"
+  meetOrSlice={0}
+  minX={42}
+  minY={12}
   style={
     Object {
-      "height": 14,
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 12,
       "width": 7,
     }
   }
+  vbHeight={120}
+  vbWidth={60}
 >
-  <ARTGroup
-    transform={
+  <RNSVGGroup
+    fill={
       Array [
-        0.11666666666666667,
         0,
         0,
-        0.11666666666666667,
-        -4.9,
-        -1.4,
+        0.4,
+        0.6,
+        1,
       ]
     }
+    fillOpacity={1}
+    fillRule={1}
+    font={Object {}}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
   >
-    <ARTGroup
-      transform={
+    <RNSVGPath
+      d="cf23b8f47ac97eeec14ee4c65e472078"
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
         Array [
           1,
           0,
@@ -162,50 +310,61 @@ exports[`3. iconforwardarrow renders 1`] = `
           0,
         ]
       }
-    >
-      <ARTShape
-        d="e19ed863bb3beeae8cbbf42938be46be"
-        fill={
-          Array [
-            0,
-            0,
-            0.4,
-            0.6,
-            1,
-          ]
-        }
-        stroke={null}
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+      originX={0}
+      originY={0}
+      propList={Array []}
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth="1"
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`4. iconstar renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 20,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconStar"
+  vbHeight={20}
+  vbWidth={20}
 >
-  <ARTGroup
-    transform={
+  <RNSVGPath
+    d="53af37f285b7e6e57da32c1366718e90"
+    fill={
+      Array [
+        0,
+        0,
+        0.4,
+        0.6,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
       Array [
         1,
         0,
@@ -215,284 +374,381 @@ exports[`4. iconstar renders 1`] = `
         0,
       ]
     }
-  >
-    <ARTShape
-      d="4e2aaf4bf21b71962808897581776e47"
-      fill={
-        Array [
-          0,
-          0,
-          0.4,
-          0.6,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;
 
 exports[`5. icontwitter renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={-354.2}
+  minY={-279.4}
+  role="img"
   style={
     Object {
-      "height": 16,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconTwitter"
+  vbHeight={600}
+  vbWidth={750}
 >
-  <ARTGroup
-    transform={
+  <RNSVGPath
+    d="0407fd6a3edc199eb6063d0ebd2c66ad"
+    fill={
       Array [
-        0.02666666666666667,
         0,
         0,
-        0.02666666666666667,
-        9.440000000000001,
-        7.44,
+        0.4,
+        0.6,
+        1,
       ]
     }
-  >
-    <ARTShape
-      d="2b20b5d514bdec5d4c2f5d1eb0ad437c"
-      fill={
-        Array [
-          0,
-          0,
-          0.4,
-          0.6,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;
 
 exports[`6. iconvideo renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 11.764705882352942,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconVideo"
+  vbHeight={40}
+  vbWidth={68}
 >
-  <ARTGroup
-    transform={
+  <RNSVGRect
+    fill={
       Array [
-        0.29411764705882354,
+        0,
+        0.11372549019607843,
+        0.11372549019607843,
+        0.10588235294117647,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    height="40"
+    matrix={
+      Array [
+        1,
         0,
         0,
-        0.29411764705882354,
+        1,
         0,
         0,
       ]
     }
-  >
-    <ARTShape
-      d="f7a00e51bbe09015abd28c5265dc80fd"
-      fill={
-        Array [
-          0,
-          0.11372549019607843,
-          0.11372549019607843,
-          0.10588235294117647,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-    <ARTShape
-      d="4a12958bc1788eacc2b5e8cff1335641"
-      fill={
-        Array [
-          0,
-          0.11372549019607843,
-          0.11372549019607843,
-          0.10588235294117647,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    rx="0"
+    ry="0"
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    width="50"
+    x="0"
+    y="0"
+  />
+  <RNSVGPath
+    d="171e0421ab3c212b8bbf45e8c85e924b"
+    fill={
+      Array [
+        0,
+        0.11372549019607843,
+        0.11372549019607843,
+        0.10588235294117647,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;
 
 exports[`7. iconvideo360player renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 18.51851851851852,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="IconVideo360Player"
+  vbHeight={100}
+  vbWidth={108}
 >
-  <ARTGroup
-    transform={
+  <RNSVGPath
+    d="92444cc628d352fe07031cfb7b426ccf"
+    fill={
       Array [
-        0.18518518518518517,
         0,
         0,
-        0.18518518518518517,
+        0.4,
+        0.6,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
         0,
         0,
       ]
     }
-  >
-    <ARTShape
-      d="dd25590e8bea14b59c417927beaf48a4"
-      fill={
-        Array [
-          0,
-          0,
-          0.4,
-          0.6,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;
 
 exports[`8. thestlogo renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 13.793103448275863,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="TheSTLogo"
+  vbHeight={20}
+  vbWidth={29}
 >
-  <ARTGroup
-    transform={
+  <RNSVGPath
+    d="0f4e958f2b4ff0e7612914c8ca56d8f6"
+    fill={
       Array [
-        0.6896551724137931,
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
         0,
         0,
-        0.6896551724137931,
+        1,
         0,
         0,
       ]
     }
-  >
-    <ARTShape
-      d="1eb07cf37395652eb77ce12e07d4c54c"
-      fill={
-        Array [
-          0,
-          1,
-          1,
-          1,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;
 
 exports[`9. thetimeslogo renders 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="undefined"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
   style={
     Object {
-      "height": 20,
-      "width": 20,
+      "backgroundColor": "transparent",
     }
   }
+  title="TheTimesLogo"
+  vbHeight={20}
+  vbWidth={20}
 >
-  <ARTGroup
-    transform={
+  <RNSVGPath
+    d="9d34e249e9f10c48ae181fd7ef01d8e7"
+    fill={
+      Array [
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
       Array [
         1,
         0,
@@ -502,34 +758,28 @@ exports[`9. thetimeslogo renders 1`] = `
         0,
       ]
     }
-  >
-    <ARTShape
-      d="f87f0407d885886d4487da38b34054e1"
-      fill={
-        Array [
-          0,
-          1,
-          1,
-          1,
-          1,
-        ]
-      }
-      stroke={null}
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
 `;

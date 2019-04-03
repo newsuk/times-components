@@ -1,5 +1,6 @@
 {
   "maxAttributeArrayLength": 6,
-  "maxAttributes": 8,
-  "maxAttributeStringLength": 32
+  "maxAttributes": 26,
+  "maxAttributeStringLength": 32,
+  "maxFileSize": 12022
 }
