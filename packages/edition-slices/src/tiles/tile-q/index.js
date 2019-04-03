@@ -5,11 +5,17 @@ import {
   getTileImageUri,
   TileImage,
   TileLink,
+  TileStar,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
 
-const TileQ = ({ onPress, tile }) => (
+const TileQ = ({ onPress, tile }) => {
+
+  const onArticleSavePress = () => {};
+  const savedArticles = [{1: true}];
+
+  return (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileImage
@@ -17,9 +23,19 @@ const TileQ = ({ onPress, tile }) => (
         style={styles.imageContainer}
         uri={getTileImageUri(tile, "crop32")}
       />
-    </View>
+      <SectionContext.Provider
+        value={{
+          onArticleSavePress,
+          savedArticles
+        }}
+      >
+        <View style={styles.starButton}>
+          <TileStar articleId="1" />
+        </View>
+      </SectionContext.Provider>
+      </View>
   </TileLink>
-);
+)};
 
 TileQ.propTypes = {
   onPress: PropTypes.func.isRequired,
