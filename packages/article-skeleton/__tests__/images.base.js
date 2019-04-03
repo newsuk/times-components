@@ -35,6 +35,7 @@ export default () =>
                     caption: "A Caption",
                     credits: "Some Credits",
                     display: "secondary",
+                    imageIndex: 1,
                     ratio: "3:2",
                     url: "https://image-2.io"
                   },
@@ -75,6 +76,7 @@ export default () =>
                     caption: "A Caption",
                     credits: "Some Credits",
                     display: "inline",
+                    imageIndex: 1,
                     ratio: "9:4",
                     url: "https://image-inline.io"
                   },

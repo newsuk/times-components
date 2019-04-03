@@ -35,6 +35,7 @@ const renderRow = (
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
+  onImagePress,
   onLinkPress,
   onRelatedArticlePress,
   onTopicPress,
@@ -50,6 +51,7 @@ const renderRow = (
         <ArticleRow
           content={rowData}
           interactiveConfig={interactiveConfig}
+          onImagePress={onImagePress}
           onLinkPress={onLinkPress}
           onTwitterLinkPress={onTwitterLinkPress}
           onVideoPress={onVideoPress}
@@ -130,6 +132,7 @@ class ArticleSkeleton extends Component {
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
+      onImagePress,
       onLinkPress,
       onRelatedArticlePress,
       onTopicPress,
@@ -192,6 +195,7 @@ class ArticleSkeleton extends Component {
                     onAuthorPress,
                     onCommentsPress,
                     onCommentGuidelinesPress,
+                    onImagePress,
                     onLinkPress,
                     onRelatedArticlePress,
                     onTopicPress,

@@ -26,7 +26,7 @@ class ArticleMagazineComment extends Component {
   }
 
   renderHeader({ width }) {
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -73,6 +73,7 @@ class ArticleMagazineComment extends Component {
             <ArticleLeadAsset
               {...getLeadAsset(article)}
               getImageCrop={getStandardTemplateCrop}
+              onImagePress={onImagePress}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) => <CentredCaption {...caption} />}
               style={[
@@ -106,6 +107,7 @@ class ArticleMagazineComment extends Component {
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
+      onImagePress,
       onLinkPress,
       onRelatedArticlePress,
       onTopicPress,
@@ -125,6 +127,7 @@ class ArticleMagazineComment extends Component {
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
+        onImagePress={onImagePress}
         onLinkPress={onLinkPress}
         onRelatedArticlePress={onRelatedArticlePress}
         onTopicPress={onTopicPress}

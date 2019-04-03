@@ -19,6 +19,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
           text="Some caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -84,6 +85,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
           text="Some caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -146,6 +148,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
           text="Some caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -219,6 +222,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
           text="Some caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -303,6 +307,7 @@ exports[`5. secondary image with caption and credits 1`] = `
           text="Another caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -384,6 +389,7 @@ exports[`6. inline image (landscape) with caption and credits 1`] = `
           text="Landscape caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -465,6 +471,7 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
           text="Portrait caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -537,6 +544,7 @@ exports[`8. primary image with caption and credits with center caption override 
           text="Some caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>
@@ -614,6 +622,7 @@ exports[`9. secondary image with caption and credits with center caption overrid
           text="Another caption"
         />
       }
+      onImagePress={null}
       uri="https://img/someImage"
     />
   </View>

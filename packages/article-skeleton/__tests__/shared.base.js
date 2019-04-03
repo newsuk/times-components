@@ -68,6 +68,7 @@ export const fixtureArgs = {
         caption: "An image caption",
         credits: "The image credits",
         display: "primary",
+        imageIndex: 1,
         ratio: "1500:1000",
         url: "https://image.io"
       },
@@ -79,6 +80,7 @@ export const fixtureArgs = {
         caption: "A secondary image caption",
         credits: "The secondary image credits",
         display: "secondary",
+        imageIndex: 2,
         ratio: "1500:1000",
         url: "https://image.io/secondary"
       },
@@ -90,6 +92,7 @@ export const fixtureArgs = {
         caption: "An inline image caption",
         credits: "The inline image credits",
         display: "inline",
+        imageIndex: 3,
         ratio: "1500:1000",
         url: "https://image.io/inline"
       },
@@ -156,6 +159,7 @@ export const fixtureArgs = {
         brightcoveVideoId: "4084164751001",
         caption: "This is video caption",
         display: "primary",
+        imageIndex: 4,
         paidOnly: "false",
         posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
         posterImageUrl: "https://image.io",
